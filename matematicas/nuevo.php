@@ -7,6 +7,7 @@ $envio="";
 
 $contador=0;
 $contador2=0;
+$contador3=0;
 
 $olvido2='';
 
@@ -638,6 +639,23 @@ $vecubo1 = $cubo1===''?'':($cubo1 === 'x(x+3)(x<sup>2</sup>-3x+9)'?'correcto':'i
                 <button class="btn btn-primary"type="submit" Value="Enviar">Enviar</button>
                 <?php echo isset($dependiente1)?$dependiente1:""; ?>
                                 <br><br>
+        <script>
+            function mostrarImagen100() {
+            var imagen = document.getElementById('imagen100');
+
+            // Mostrar la imagen
+            imagen.style.display = 'block';
+            }
+
+            function ocultarImagen100() {
+            var imagen = document.getElementById('imagen100');
+
+            // Ocultar la imagen al soltar el botón
+            imagen.style.display = 'none';
+            }
+        </script>
+                <button onmousedown="mostrarImagen100()" onmouseup="ocultarImagen100()">Ayuda</button>
+                <img id="imagen100" src="../img/Captura de pantalla 2024-06-19 074100.png" style="display: none; max-width: 100%">
                 Es la division donde se sacan los posibles ceros:
                 <br><br>
 
@@ -802,6 +820,27 @@ $vecubo1 = $cubo1===''?'':($cubo1 === 'x(x+3)(x<sup>2</sup>-3x+9)'?'correcto':'i
                 <?php echo $contador === 12 ? $dibujo : ''; ?>
             
             </div>
+            <button onmousedown="mostrarImagenlu()" onmouseup="ocultarImagenlu()">Ayuda</button>
+            <!-- Elemento para mostrar la imagen -->
+
+            <img id="imagenMostradalu" src="../img/Captura de pantalla 2024-12-02 104657.png" style="display: none; max-width: 100%">
+
+            <script>
+                function mostrarImagenlu() {
+                    var imagenMostradalu = document.getElementById('imagenMostradalu');
+
+                    // Mostrar la imagen
+                    imagenMostradalu.style.display = 'block';
+                }
+
+                function ocultarImagenlu() {
+                    var imagenMostradalu = document.getElementById('imagenMostradalu');
+
+                    // Ocultar la imagen al soltar el botón
+                    imagenMostradalu.style.display = 'none';
+                }
+            </script>
+            <br><br><br>
             </li>    
             <li class="mi-lista">
                 Factorice en dos terminos:  x<sup>3</sup>-3x<sup>2</sup>-4x+12 <br><br> 
@@ -840,6 +879,7 @@ $vecubo1 = $cubo1===''?'':($cubo1 === 'x(x+3)(x<sup>2</sup>-3x+9)'?'correcto':'i
 
                         <input type="text" size="4" name="fact5" value="<?php echo isset($fact5) ? $fact5 : ''; ?>">)
                     </div>
+
                 </div>
             <br><br>
 
@@ -858,6 +898,27 @@ $vecubo1 = $cubo1===''?'':($cubo1 === 'x(x+3)(x<sup>2</sup>-3x+9)'?'correcto':'i
                     <?php echo isset($contador3)? ($contador === 8 ? $dibujo : ''):''; ?>
                             
                     </div>
+                <br>
+                <button onmousedown="mostrarImagenul()" onmouseup="ocultarImagenul()">Ayuda</button>
+                <!-- Elemento para mostrar la imagen -->
+
+                <img id="imagenMostradaul" src="../img/Captura de pantalla 2024-12-02 105511.png" style="display: none; max-width: 100%">
+
+                <script>
+                    function mostrarImagenul() {
+                        var imagenMostradaul = document.getElementById('imagenMostradaul');
+
+                        // Mostrar la imagen
+                        imagenMostradaul.style.display = 'block';
+                    }
+
+                    function ocultarImagenul() {
+                        var imagenMostradaul = document.getElementById('imagenMostradaul');
+
+                        // Ocultar la imagen al soltar el botón
+                        imagenMostradaul.style.display = 'none';
+                    }
+                </script>
             </div>
 
 
@@ -932,18 +993,18 @@ $vecubo1 = $cubo1===''?'':($cubo1 === 'x(x+3)(x<sup>2</sup>-3x+9)'?'correcto':'i
 
 
                         <!-- -->
-                    <button  class="btn btn-info"onmousedown=mostrarImagen() onmouseup=ocultaImagen()>Ayuda</button>
+                    <button  class="btn btn-info" onmousedown=mostrarImagenEjer4() onmouseup=ocultarImagenEjer4()>Ayuda</button>
                     
                     <img id="imagenMostrada3" src="../img/Productos notables-d180d4ea-6b60-44bf-94b4-19a9b2e49cc3.webp" style="display: none; max-width: 50%">
                         <script>
-                        function mostrarImagen() {
+                        function mostrarImagenEjer4() {
                         var imagenMostrada = document.getElementById('imagenMostrada3');
 
                         // Mostrar la imagen
                         imagenMostrada.style.display = 'block';
                         }
 
-                        function ocultarImagen() {
+                        function ocultarImagenEjer4() {
                         var imagenMostrada = document.getElementById('imagenMostrada3');
 
                         // Ocultar la imagen al soltar el botón
@@ -1133,7 +1194,7 @@ $vecubo1 = $cubo1===''?'':($cubo1 === 'x(x+3)(x<sup>2</sup>-3x+9)'?'correcto':'i
         name="siguiente"
         id="siguiente"
         class="btn btn-success"
-        href="nuevo2.php"
+        href="tercero.php"
         role="button"
         width="50px"
         height="50px"

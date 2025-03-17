@@ -134,6 +134,24 @@ if ($_POST) {
                 <input style="margin-left: 50px;"  type="radio" name="opcion6[]" value="8/1"  id="opcion6_8/1">8/1 <br><br>
                 <button type="submit" class="btn btn-success">Submit</button>
                 <?php echo $_POST && !empty($pregunta6) ? $respuesta6 : ''; ?>
+                <script>
+                    function mostrarImagen100() {
+                    var imagen = document.getElementById('imagen100');
+
+                    // Mostrar la imagen
+                    imagen.style.display = 'block';
+                    }
+
+                    function ocultarImagen100() {
+                    var imagen = document.getElementById('imagen100');
+
+                    // Ocultar la imagen al soltar el botón
+                    imagen.style.display = 'none';
+                    }
+                </script>
+
+                <button onmousedown="mostrarImagen100()" onmouseup="ocultarImagen100()">Ayuda</button>
+                <img id="imagen100" src="../img/Captura de pantalla 2024-06-19 081635.png" style="display: none; max-width: 100%">
                 <br><br><br><br><br><br>
             </li>
         </ul>
@@ -184,8 +202,7 @@ if ($_POST) {
     
                 Ejercicio 3: <br><br>
     
-                <img src="../img/Captura de pantalla 2024-01-23 084415.png" alt=""><br><br>
-    
+                <img src="../img/Captura de pantalla 2024-06-19 081030.png" alt=""><br><br>
                 <label for="eleccion3_1" style="font-size: 16px;">
     
                 <input type="radio" name="eleccion3[]" value="&lt;Sup&gt;x &lt;/sup&gt; / &lt;sub&gt; 9 y&lt;sup&gt;7&lt;/sup&gt; &lt;/sub&gt;" id="eleccion3_1"><Sup>x </Sup> / <Sub> 9 y<Sup>6</Sup> </Sub>
