@@ -1124,7 +1124,7 @@ if ($respuesta_110 === '264') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style4.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
@@ -1486,7 +1486,7 @@ fibIter(1, 0, 5)
 
     <hr>
 
-
+    <br><br>
     <strong>Recursión Estructural y Generativa</strong>
 
 <strong>Recursión Estructural</strong>
@@ -1516,6 +1516,8 @@ fibIter(1, 0, 5)
     Esta técnica descompone un problema en subproblemas más pequeños, los resuelve 
     recursivamente y luego combina las soluciones para obtener el resultado final.
 </p>
+
+
     </form>
 </div>
 
@@ -1524,7 +1526,87 @@ fibIter(1, 0, 5)
 
 <div class="seccion derecha">
     <form action="./cuarto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <h3>Bucles y expresiones for</h3>
+    <p>La palabra clave <code>for</code> se usa para crear un bucle <code>for</code>. Este ejemplo muestra cómo imprimir cada elemento en una lista:</p>
+    <code>
+val ints = List(1, 2, 3, 4, 5)
+
+for (i <- ints) println(i)
+    </code>
+    <p>El código <code>i <- ints</code> se conoce como un generador. En cualquier generador <code>p <- e</code>, la expresión <code>e</code> puede generar cero o más enlaces al patrón <code>p</code>. El código que sigue al paréntesis de cierre del generador es el cuerpo del bucle.</p>
+    <code>
+val ints = List(1, 2, 3, 4, 5)
+
+for i <- ints do println(i)
+    </code>
+    <p>El código <code>i <- ints</code> se conoce como un generador, y el código que sigue a la palabra clave <code>do</code> es el cuerpo del bucle.</p>
+    <code> i <- ints </code> significa que i tomará cada valor de la lista ints (como en los ejemplos de Java y Python).
+    <br>
+    En java seria:
+    <br>
+    <code> List<Integer> ints = Arrays.asList(1, 2, 3, 4, 5);
+    <br><br>
+    for (int i : ints) { <br><br>
+        System.out.println(i); <br><br>
+    }
+    </code>
     
+
+
+
+    <h3>Bucles for en Scala</h3>
+    <p>En Scala 3, la sintaxis de los bucles <code>for</code> ha cambiado ligeramente, introduciendo <code>do</code> para mejorar la claridad.</p>
+    
+    <h3>Ejemplo en Scala 3 sin <code>do</code></h3>
+    <p>Si el cuerpo del <code>for</code> tiene solo una línea, no es necesario usar <code>do</code>:</p>
+    <code>
+for i <- List(1, 2, 3, 4, 5) println(i)
+    </code>
+    
+    <h3>Ejemplo en Scala 3 con <code>do</code></h3>
+    <p>Si hay varias líneas en el cuerpo del bucle, se debe usar <code>do</code>:</p>
+    <code>
+for i <- List(1, 2, 3, 4, 5) do
+  val cuadrado = i * i
+  println(s"El cuadrado de $i es $cuadrado")
+    </code>
+    
+    <h3>Ejemplo incorrecto (sin <code>do</code> y varias líneas)</h3>
+    <p>Esto no funcionará en Scala 3 porque Scala espera que el cuerpo del <code>for</code> comience inmediatamente después:</p>
+    <code>
+for i <- List(1, 2, 3, 4, 5)
+  val cuadrado = i * i  // Esto generará un error
+  println(s"El cuadrado de $i es $cuadrado")
+    </code>
+
+
+
+
+
+
+
+    <h2>Scala Try/Catch/Finally</h2>
+    <p>Scala’s <code>try/catch/finally</code> control structure lets you catch exceptions. It’s similar to Java, but its syntax is consistent with match expressions:</p>
+
+    <pre><code>try {
+  writeTextToFile(text)
+} catch {
+  case ioe: IOException => println("Got an IOException.")
+  case nfe: NumberFormatException => println("Got a NumberFormatException.")
+} finally {
+  println("Clean up your resources here.")
+}</code></pre>
+
+    <p>También se puede escribir de la siguiente manera:</p>
+
+    <pre><code>try
+  writeTextToFile(text)
+catch
+  case ioe: IOException => println("Got an IOException.")
+  case nfe: NumberFormatException => println("Got a NumberFormatException.")
+finally
+  println("Clean up your resources here.")</code></pre>
+</body>
 
     </form>
 </div>
@@ -1534,7 +1616,7 @@ fibIter(1, 0, 5)
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="cuarto.php"
+        href="quinto.php"
         role="button"
         width="50px"
         height="50px"

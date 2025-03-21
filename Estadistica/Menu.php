@@ -1,3 +1,4 @@
+/*<a class="btn" href=".\Conceptos\index.php">Conceptos (no se ha hecho nada)</a>*/
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -33,7 +34,8 @@
         <a class="btn" href=".\Muestreo\index.php">Muestreo</a>
         <a class="btn" href=".\EstimacionPuntual\index.php">Estimacion Puntual</a>
         <a class="btn" href=".\EstimacionPuntual_2\index.php">Estimacion Puntual(2.0)</a>
-        <a class="btn" href=".\Conceptos\index.php">Conceptos (no se ha hecho nada)</a>
+        
+        <a class="btn" href=".\PruebaHipotesis\index.php">Prueba de Hipotesis</a>
       
     </div>
 </body>

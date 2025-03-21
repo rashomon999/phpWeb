@@ -1620,8 +1620,119 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
     <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <h2> 3: Control y libertad del usuario</h2>
+    <p>
+    Los usuarios suelen realizar acciones por error. Necesitan una "salida de emergencia" claramente marcada
+    para abandonar la acción no deseada sin tener que pasar por un proceso extenso.
+    </p>
+ 
+    <p>Cuando es fácil para los usuarios salir de un proceso o deshacer una acción, se fomenta una sensación
+    de libertad y confianza. Las salidas permiten a los usuarios mantener el control del sistema y evitar 
+    atascarse y sentirse frustrados.
+    </p>
+    <h2>Ejemplos</h2>
+    <ul>
+        <li>Los espacios digitales necesitan salidas de emergencia rápidas, al igual que los espacios físicos. 
+        (img:  puerta de salida de establecimiento).
+        </li>
+        <li>Funciones deshacer y rehacer</li>
+        <li>Botones de retroceso</li>
+        <li>Cancelar opciones</li>
+ 
+    </ul>
+    <h2>Consejos</h2>
+    <ul>
+        <li>Admite deshacer y rehacer .</li>
+        <li>Muestra una forma clara de salir de la interacción actual, como un botón Cancelar .</li>
+        <li>Asegúrese de que la salida esté claramente etiquetada y sea visible.</li>
+    </ul>
+ 
+    <hr>
+    <h2>4: Coherencia y estándares</h2>
+    <p>Los usuarios no deberían tener que preguntarse si diferentes palabras, situaciones o acciones significan
+    lo mismo. Siga las convenciones de la plataforma y del sector.
+    </p>
     
-    </form>
+    <p>La Ley de Jakob establece que las personas pasan la mayor parte de su tiempo usando productos digitales 
+    distintos a los suyos . Las experiencias de los usuarios con esos otros productos determinan sus expectativas. 
+    La falta de consistencia puede aumentar la  carga cognitiva de los usuarios , obligándolos a aprender algo nuevo.
+    </p>
+    
+    <h2>Ejemplos:</h2>
+    <li>Los mostradores de facturación suelen estar ubicados en la entrada de los hoteles. Esta consistencia cumple con 
+    las expectativas de los clientes.</li>
+    <li>Los sitios web tienen un proceso muy similar para iniciar sesión, ya sea por correo y contraseña,
+    o a través de alguna red social.</li>
+    <li>La mayoría de las tiendas en línea tienen una sección de categorías que le permite a los usuarios buscar 
+    productos de forma más rápida.</li>
+     
+
+    <h2>Consejos:</h2>
+    <li>Mejore la capacidad de aprendizaje manteniendo ambos tipos de consistencia: interna y externa.</li>
+    <li>Mantener la consistencia  dentro de un solo producto o de una familia de productos (consistencia interna).</li>
+    <li>Seguir las convenciones establecidas de la industria (consistencia externa).</li>
+
+    <hr>
+    <h2>5: Prevención de errores</h2>
+    <p>Los buenos mensajes de error son importantes, pero los mejores diseños previenen cuidadosamente la 
+    aparición de problemas desde el principio. Elimine las condiciones propensas a errores o verifique si
+    existen y ofrezca a los usuarios una opción de confirmación antes de que realicen la acción.
+    </p>
+    
+    <p>Hay dos tipos de errores: deslices y equivocaciones . Los deslices son errores inconscientes causados 
+    por la falta de atención. Los errores son errores conscientes basados ​​en una discrepancia entre el modelo mental
+    del usuario y el diseño.
+    </p>
+    
+    <h2>Ejemplos:</h2>
+    <li>Ejemplo de heurística de usabilidad n.° 5: Las 
+    barandillas</li>
+    <li> Cuando abres una cuenta en Paypal te dice los lineamientos para crear una contraseña dentro de su plataforma, 
+    lo que ahorra tiempo al usuario de crear una contraseña no válida y tener que seleccionar otra.</li>
+    <li>Gmail despliega un aviso cuando detecta que escribiste en el cuerpo de tu correo electrónico las palabras “Adjunto 
+    archivo” y olvidaste adjuntar archivos, para evitar que cometas este clásico error.</li>
+    <h2>Consejos:</h2>
+    <li>Prioriza tu esfuerzo: previene primero los errores de alto costo y luego las pequeñas frustraciones.
+    </li>
+    <li> Evite errores ofreciendo restricciones útiles y buenos valores predeterminados .
+    </li>
+    <li> Evite errores eliminando cargas de memoria, permitiendo deshacer operaciones y advirtiendo a sus usuarios
+    </li>
+     
+
+    <hr>
+    <h2>  6: Reconocimiento en lugar de recuerdo </h2>
+    <p> Minimice la carga de memoria del usuario haciendo visibles los elementos, acciones y opciones. 
+    El usuario no debería tener que recordar información de una parte a otra de la interfaz.
+    La información necesaria para usar el diseño (por ejemplo, etiquetas de campos o elementos de menú)
+    debería ser visible o fácilmente recuperable cuando se necesite.
+    </p>
+    
+    <p>Los humanos tienen una memoria a corto plazo limitada . Las interfaces que promueven el reconocimiento 
+    reducen el esfuerzo cognitivo de los usuarios.
+    </p>
+
+    <h2>Ejemplos: </h2>
+    <li>
+    A la mayoría de las personas les resulta más fácil reconocer las capitales de los países que tener que recordarlas.
+    Es más probable que las personas respondan correctamente a la pregunta " ¿Es Lisboa la capital de Portugal?" 
+    que a " ¿Cuál es la capital de Portugal?".  
+    </li>
+    <li>En el menú inferior de la aplicación móvil de Linkedin hay botones con íconos y textos para que el usuario 
+    pueda realizar rápidamente la acción deseada.</li>
+    <img src="..\..\img\reconocimiento.png" alt="" height="200">
+
+    <h2>Consejos: </h2>
+    <li>Permitir que las personas reconozcan la información en la interfaz, en lugar de obligarlas a recordarla.
+    </li>
+    <li> Ofrecer  ayuda en contexto , en lugar de dar a los usuarios un largo tutorial para memorizar.
+    </li>
+    <li> Reducir la información que los usuarios tienen que recordar.
+    </li>
+     
+
+     
+</form>
 </div>
 
 <div class="centered-container">
@@ -1629,7 +1740,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="segundo.php"
+        href="tercero.php"
         role="button"
         width="50px"
         height="50px"

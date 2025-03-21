@@ -1,0 +1,20 @@
+{
+  "name": "scala-cli",
+  "argv": [
+    "C:\\ScalaCLI\\scala-cli.exe",
+    "bsp",
+    "--json-options",
+    "C:\\xampp\\htdocs\\php_web\\scala\\Codigo\\.scala-build\\ide-options-v2.json",
+    "--json-launcher-options",
+    "C:\\xampp\\htdocs\\php_web\\scala\\Codigo\\.scala-build\\ide-launcher-options.json",
+    "--envs-file",
+    "C:\\xampp\\htdocs\\php_web\\scala\\Codigo\\.scala-build\\ide-envs.json",
+    "C:\\xampp\\htdocs\\php_web\\scala\\Codigo\\temp.scala"
+  ],
+  "version": "1.7.1",
+  "bspVersion": "2.1.1",
+  "languages": [
+    "scala",
+    "java"
+  ]
+}
