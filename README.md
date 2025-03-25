@@ -20,6 +20,6 @@ Esto es una guia rapida, no se guardo la que tenia, ademas, si se comprende el c
 
 Ahora, estos son cambios/nuevas cosas que hago (es una guia para mi):
 
-____<input type="text" name="respuesta_1" value="<?php echo htmlspecialchars($respuesta_1, ENT_QUOTES, 'UTF-8'); ?>" size="18">___
+input type="text" name="respuesta_1" value="<?php echo htmlspecialchars($respuesta_1, ENT_QUOTES, 'UTF-8'); ?>" size="18"
 
 evita que cuando se envie codigo en un input se borre parte de el cuando se hace el POST.
