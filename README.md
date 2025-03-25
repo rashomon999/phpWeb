@@ -17,3 +17,7 @@ luego, para cargar las paginas que yo hice, deben comenzar a llenar la base de d
 pero para ingresar el usiario y contraseña, mirenlo primero en C:\xampp\htdocs\php_web\administrador\index.php.
 
 Esto es una guia rapida, no se guardo la que tenia, ademas, si se comprende el codigo y guiandose de los mensajes, no es dificil cargar todo.
+
+Ahora, estos son cambios/nuevas cosas que hago (es una guia para mi):
+<input type="text" name="respuesta_1" value="<?php echo htmlspecialchars($respuesta_1, ENT_QUOTES, 'UTF-8'); ?>" size="18">
+evita que cuando se envie codigo en un input se borre parte de el cuando se hace el POST.
