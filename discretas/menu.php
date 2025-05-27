@@ -30,10 +30,14 @@
 <body>
     <div class="centered-container">
         <a class="btn" href="index.php">relaciones</a>
-        <a class="btn" href=".\induccion\index.php">induccion_5_2</a>
-        <a class="btn" href=".\induccion_1\index.php">induccion_5_1</a>
-        <a class="btn" href=".\recursividad_5_3\index.php">recursividad_5_3</a>
-         
+        <br>
+        <br>
+        <strong>4 libros principales:</strong>
+        <br><br>
+        <a class="btn" href=".\structureInterpretation\Menu.php">structure and interpretation</a>
+        <a class="btn" href=".\Rosen\Menu.php">Rosen</a>
+        <a class="btn" href=".\Programming_in_Scala\Menu.php">Programming_in_Scala</a>
+        <a class="btn" href=".\introduction_to_algorithms\Menu.php"> introduction_to_algorithms (cormen)</a>
     </div>
 </body>
 </html>

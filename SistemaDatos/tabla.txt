@@ -1,0 +1,21 @@
+   <table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>SQL Parte</th>
+      <th>Álgebra Relacional</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WHERE</td>
+        <td>\( \sigma \) (selección)</td>
+      <td>Filtra filas (tuplas) según condición.</td>
+    </tr>
+    <tr>
+      <td>SELECT (columnas)</td>
+      <td> \( \pi \) (proyección)</td>
+      <td>Selecciona columnas (atributos).</td>
+    </tr>
+  </tbody>
+</table>

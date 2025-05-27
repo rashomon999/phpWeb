@@ -31,6 +31,8 @@
     <div class="centered-container">
         <a class="btn" href=".\conceptosBasicos\index.php">ConceptosBasicos</a>
         <a class="btn" href=".\ingesoft_3\index.php">Ingesoft_3</a>
+        <a class="btn" href=".\diseño\index.php"> diseño </a>
+        <a class="btn" href=".\calidad_pruebas\index.php">calidad y pruebas </a>
     </div>
 </body>
 </html>

@@ -1,0 +1,67 @@
+ total preguntas: 4
+
+
+def numeros = List(1, 2, 3, 4, 5)
+println(numeros)
+
+
+
+  def sumaRecursionLineal(l:List[Int]):Int = {
+    l match {
+      case Nil => 0
+      case x::xs => x + sumaRecursionLineal(xs)
+    }
+  }
+
+
+  @tailrec
+  final def sumaRecursionCola(l:List[Int], acc:Int=0):Int = {
+    l match {
+      case Nil => acc
+      case x::xs => sumaRecursionCola(xs, acc+x)
+    }
+  }
+  
+  def sumaRecursiva(l:List[Int]): Unit = {
+    @tailrec
+    def sumaRecursivaAux(l:List[Int], acc:Int):Int = {
+      l match {
+        case Nil => acc
+        case x::xs => sumaRecursivaAux(xs, acc+x)
+      }
+    }
+    sumaRecursivaAux(l, 0)
+  }
+
+ object Main extends App {
+  def insert(e:Int, l:List[Int]): List[Int] = {
+l   match {
+  case Nil => List(e)
+  case x :: xs if e <=  x =>  e :: l
+  case x :: xs => x :: insert(e,xs)
+  }
+  }
+  println(insert(4,List(1,3,5)))
+  }
+
+
+
+problema 3:
+
+def readInts(line: String): List[Int] = line.split(" ").toList.map(_.toInt)
+
+    o
+
+   def readInts(line: String): List[Int] = {
+
+    @tailrec
+    def helper(parts: List[String], acc: List[Int] = Nil): List[Int] =
+
+      parts match {
+        case Nil => acc.reverse
+        case h :: t => helper(t, h.toInt :: acc)
+      }
+
+    helper(line.split(" ").toList)
+
+  }

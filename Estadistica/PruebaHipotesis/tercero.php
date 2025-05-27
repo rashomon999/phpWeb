@@ -1540,7 +1540,117 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
     <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-     
+    <p>
+    El departamento de desarrollo de una compañía desea probar dos métodos de
+    capacitación a los nuevos vendedores que entran a la compañía. El primer método se
+    aplica a 22 vendedores cuya calificación promedio fue de 78.65 puntos con una
+    desviación estándar de 2.78 puntos; el segundo método se aplicó a 28 nuevos
+    vendedores que obtuvieron calificación promedio de 80.1 puntos con una desviación
+    estándar 4.01 puntos.
+    </p>
+
+    <p>
+    a. Con una significancia del 5%, se puede afirmar que hay una diferencia en los
+    resultados entre los métodos de capacitación?
+    </p>
+    <p>b. Construya un intervalo de confianza del 95% para la diferencia de los promedios de
+    las calificaciones entre los dos métodos.</p>
+
+
+
+    <strong>Interpretacion solucion inciso b):</strong>
+    construimos el intervalo 
+    de confianza del 95% para la diferencia de medias, encontramos que el intervalo era algo como:
+    [−3.47,0.57]
+    <br><br>
+    <strong>Interpretación</strong>
+    <p></p>
+    <li>    Este intervalo nos dice que la diferencia real entre los métodos puede estar en cualquier valor entre -3.47 y 0.57.
+    </li>
+        
+    <li>
+    El método 1 podría estar hasta 3.47 puntos por debajo del método 2 (cuando la diferencia es negativa).
+    </li>
+        
+    <li>    O el método 1 podría estar hasta 0.57 puntos por encima del método 2.
+    </li>
+ 
+    <li>    Dado que el intervalo incluye el 0, no podemos afirmar con seguridad que haya una diferencia significativa entre los métodos.
+    </li>
+
+    <hr>
+    <strong>Interpretacion solucion inciso b):</strong>
+    <br><br>
+    <p>Existen dos tipos de plástico apropiados para su uso por un fabricante de componentes
+    electrónicos. La tensión de ruptura del plástico es un parámetro importante. La
+    desviación estándar de los plásticos es 1.0 psi. Se toma una muestra de 10 y 12
+    elementos del tipo de plástico A y plástico B respectivamente, los cuales arrojan una
+    resistencia promedio a la tensión de 162.5 y 155.0 psi respectivamente. La compañía
+    adoptará el plástico A si la tensión de ruptura de este es mayor a la del plástico B.
+    </p>
+    <p>
+    a. Con base en esta información, la compañía puede adoptar el uso del plástico A?
+    Utilice una significancia del 2.5%.
+    </p>
+    <p>
+    b. Construya un intervalo de confianza del 95% para la diferencia promedio de la
+    resistencia a la tensión entre los plásticos.
+    </p>
+    <strong>Interpretación del Intervalo de Confianza</strong>
+    <br><br> 
+    Supongamos que el intervalo calculado fue: [6.72,9.28]
+    <p>    Este intervalo representa los valores posibles para la diferencia real entre las resistencias a la tensión 
+    de los dos plásticos.
+    </p>
+ 
+    Cómo interpretar el resultado:
+    <p>
+    Con un 95% de confianza, el plástico A supera al plástico B en resistencia a la tensión entre 6.7 y 8.3 psi.
+    (interpretacion dada en clase)
+    </p>
+    <li>    La diferencia real en la resistencia a la tensión entre los plásticos A y B está entre 6.72 y 9.28 psi.
+    </li>
+    <li>    Como el intervalo es completamente positivo, significa que el plástico A es significativamente más resistente que el plástico B.
+    </li>
+    <li>    No incluye el 0, lo que refuerza la decisión tomada en el inciso (a), donde rechazamos \(H_0\) y concluimos que el plástico A es mejor.
+    </li>
+    
+
+
+
+    <hr>
+    <h3>Tipos de Pruebas de Hipótesis</h3>
+
+<h3>1️ Prueba Bilateral (Dos colas, α/2)</h3>
+<p><strong>Hipótesis:</strong> H₁: μ₁ ≠ μ₂</p>
+<p>Queremos saber si hay una diferencia entre los dos grupos, sin importar la dirección.</p>
+<p><strong>Región de rechazo:</strong></p>
+<ul>
+    <li>Se divide el nivel de significancia en dos partes (α/2 en cada cola).</li>
+    <li>Se rechaza H₀ si el estadístico de prueba está en cualquiera de las dos regiones críticas.</li>
+</ul>
+<p><strong>Criterio de rechazo:</strong> Rechazamos H₀ si t_c > t_{α/2, gl} o t_c < -t_{α/2, gl}</p>
+
+<h3>2️ Prueba Unilateral Derecha (Una cola, α)</h3>
+<p><strong>Hipótesis:</strong> H₁: μ₁ > μ₂</p>
+<p>Queremos probar si un grupo tiene un valor significativamente mayor que el otro.</p>
+<p><strong>Región de rechazo:</strong></p>
+<ul>
+    <li>Toda la significancia α está en la cola derecha.</li>
+    <li>Se rechaza H₀ si el estadístico de prueba cae en esa región.</li>
+</ul>
+<p><strong>Criterio de rechazo:</strong> Rechazamos H₀ si t_c > t_{α, gl}</p>
+
+<h3>3️ Prueba Unilateral Izquierda (Una cola, α)</h3>
+<p><strong>Hipótesis:</strong> H₁: μ₁ < μ₂</p>
+<p>Queremos probar si un grupo tiene un valor significativamente menor que el otro.</p>
+<p><strong>Región de rechazo:</strong></p>
+<ul>
+    <li>Toda la significancia α está en la cola izquierda.</li>
+    <li>Se rechaza H₀ si el estadístico de prueba cae en esa región.</li>
+</ul>
+<p><strong>Criterio de rechazo:</strong> Rechazamos H₀ si t_c < -t_{α, gl}</p>
+
     </form>
 </div>
 
@@ -1549,7 +1659,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="tercero.php"
+        href="cuarto.php"
         role="button"
         width="50px"
         height="50px"

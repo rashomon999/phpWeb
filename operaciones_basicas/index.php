@@ -1132,6 +1132,12 @@ if ($respuesta_110 === '264') {
         max-width: 100%;
         height: auto;
     }
+    .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 370vh;
+    }
 </style>
  
 <script>
@@ -1472,6 +1478,7 @@ function ocultarMensaje4() {
             14 * 11 = <input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>"><br>
             14 * 12 = <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>"><br>
             <button type="submit">Enviar</button>
+            
             <?php echo $verificar_12 ?>
 <?php echo $verificar_13 ?>
 <?php echo $verificar_14 ?>

@@ -1,6 +1,18 @@
 {
+  "name": "mi-servidor-scala",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+     "start": "node scala/scala-server-2/server.js",
+    "dev": "nodemon server.js"
+  },
   "dependencies": {
     "body-parser": "^1.20.3",
-    "express": "^4.21.2"
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
   }
 }

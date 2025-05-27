@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinea arriba, pero puedes cambiar a center si quieres centrado total */
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+/* Contenedor único que reemplaza a .seccion y .centered-container */
+.container {
+    width: 90%; /* Puedes ajustar este valor según tu necesidad */
+    padding: 20px; /* importante este padding */
+    box-sizing: border-box;
+    height: 400vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Tabla de entrada */
+.input-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Líneas verticales */
+.middle {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+/* Inputs */
+.input-cell input {
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Pie centrado dentro del contenedor */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+.centered-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Asegura que esté por encima de todo */
+}

@@ -1132,6 +1132,14 @@ if ($respuesta_110 === '264') {
         max-width: 100%;
         height: auto;
     }
+
+    
+    .seccion {
+        width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+        padding: 20px; /* importante este padding*/
+        box-sizing: border-box;
+        height: 320vh;
+    }
 </style>
  
 <script>
@@ -1523,6 +1531,32 @@ function ocultarMensaje4() {
     \]
     lo que da \( \frac{\delta z}{z} \), como se requería.
     </p>
+    <hr>
+    <p>
+    \[ \frac{\partial f}{\partial x} \]
+    </p>
+    <p>
+    se lee como "la derivada parcial de \( f \) con respecto a \( x \)", esto es un 
+    concepto del cálculo diferencial multivariable.
+    </p>
+    <hr>
+    Cuando una función depende de más de una variable, por ejemplo:
+
+    \[
+    f(x, y) = x^2 + 3xy + y^2
+    \]
+
+    Entonces, la derivada parcial te dice cómo cambia \( f \) si solo varías una de las variables (como \( x \)), y mantienes la otra constante (como \( y \)).
+
+    Así:
+
+    \[
+    \frac{\partial f}{\partial x}
+    \]
+
+    mide cuánto cambia \( f \) cuando solo cambia \( x \).
+    <hr>
+
     </form>
 </div>
 
@@ -1532,6 +1566,153 @@ function ocultarMensaje4() {
 <div class="seccion derecha">
     <form action="./quinto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
     
+
+    <p>Vamos paso a paso para que entiendas cómo calcular la <strong>incertidumbre</strong> en una función con varias variables, como esta:</p>
+
+    <p>\[ g = \frac{2y}{t^2} \]</p>
+
+    <div class="nota">
+        <p>Esto viene de la fórmula de la aceleración en caída libre:</p>
+        <p>\[ y = \frac{1}{2}gt^2 \quad \Rightarrow \quad g = \frac{2y}{t^2} \]</p>
+    </div>
+
+    <p>Entonces, \( g \) depende de dos variables:</p>
+    <ul>
+        <li>\( y \): posición</li>
+        <li>\( t \): tiempo</li>
+    </ul>
+
+    <p>Y cada una tiene su incertidumbre:</p>
+    <ul>
+        <li>\( \delta y \)</li>
+        <li>\( \delta t \)</li>
+    </ul>
+
+
+    <strong>Ejemplo aplicacion calculo de incertidumbre: </strong>
+
+    <p><strong> 1. Usamos la fórmula del método general (derivadas parciales)</strong></p>
+
+    <p>
+    \[
+    \delta g = \left| \frac{\partial g}{\partial y} \right| \delta y + \left| \frac{\partial g}{\partial t} \right| \delta t
+    \]
+    </p>
+
+    <p><strong> 2. Calculamos las derivadas parciales</strong></p>
+
+    <p>La función es:</p>
+
+    <p>
+    \[
+    g = \frac{2y}{t^2}
+    \]
+    </p>
+
+    <p>Derivada de \( g \) con respecto a \( y \):</p>
+
+    <p>
+    \[
+    \frac{\partial g}{\partial y} = \frac{2}{t^2}
+    \]
+    </p>
+
+
+
+    <p>Derivada de g con respecto a t:</p>
+
+    <p><strong> Paso a paso:</strong></p>
+
+    <p>
+    \[
+    \frac{\partial g}{\partial t} = \frac{d}{dt} \left( \frac{2y}{t^2} \right)
+    \]
+    </p>
+
+    <p>Sabemos que \( y \) es constante → sácala fuera:</p>
+
+    <p>
+    \[
+    = 2y \cdot \frac{d}{dt}(t^{-2}) = 2y \cdot (-2)t^{-3}
+    \]
+    </p>
+
+    <p>
+    \[
+    = -4y \cdot \frac{1}{t^3} = \frac{-4y}{t^3}
+    \]
+    </p>
+
+    <p><strong> Resultado:</strong></p>
+    <p>
+    \[
+    \frac{\partial g}{\partial t} = \frac{-4y}{t^3}
+    \]
+    </p>
+
+
+    <strong>3. Aplicamos la fórmula</strong>
+    <p>
+    \[
+    \delta g = \left| \frac{2}{t^2} \right| \delta y + \left| \frac{-4y}{t^3} \right| \delta t 
+    = \frac{2}{t^2} \delta y + \frac{4y}{t^3} \delta t
+    \]
+    </p>
+    <p>
+    Esto te da la incertidumbre absoluta en \( g \) (en unidades de m/s²).
+    </p>
+
+    <strong>4. Si quieres la incertidumbre relativa, divides entre \( g \):</strong>
+    <p>
+    \[
+    g = \frac{2y}{t^2} \Rightarrow \frac{\delta g}{g} = \frac{\delta y}{y} + 2 \cdot \frac{\delta t}{t}
+    \]
+    </p>
+    <hr>
+
+    <strong>Calcular la incertidumbre en fórmula linealizada:</strong>
+    <p>En el análisis, puedes aproximar:</p>
+
+    <p><strong>\[ y(t) \approx -\tfrac{1}{2}gt^2 + v_0t \]</strong></p>
+
+    <strong>¿Y por qué es útil?</strong>
+    <p>¡Porque esto ya es una ecuación lineal!</p>
+
+    <p>Tiene la forma:</p>
+    <p><strong>\[ \text{algo} = \text{pendiente} \cdot t + \text{intercepto} \]</strong></p>
+
+    <p>Entonces, cuando haces regresión lineal de <strong>\( y(t) \)</strong> vs. <strong>\( t \)</strong>, la pendiente te da:</p>
+    <p><strong>\[ m = -\tfrac{1}{2}g \Rightarrow g = -2m \]</strong></p>
+
+    <div class="highlight">
+    <strong>En resumen:</strong>
+    <ul>
+        <li>El truco de dividir entre \( t \) convierte una parábola en una línea.</li>
+        <li>Se desprecia \( y_0 \) porque es muy pequeño para tiempos grandes.</li>
+        <li>Te permite aplicar regresión lineal, que es más fácil y directa de analizar.</li>
+    </ul>
+    </div>
+
+    <p>La incertidumbre se puede calcular derivando, y eso es precisamente lo que se llama el <strong>método general para la incertidumbre en funciones de varias variables</strong>.</p>
+
+    <strong>Supongamos que calculas:</strong>
+    <p><strong>\[ g = -2m \]</strong></p>
+
+    <p>Y tú ya tienes el valor de la pendiente \( m \) (por ejemplo, te lo dio Excel o Tracker al hacer el ajuste lineal), con su incertidumbre, es decir:</p>
+
+    <p><strong>\[ m = -4.889 \pm 0.054 \]</strong></p>
+
+    <strong>¿Cómo calculo la incertidumbre en \( g \)?</strong>
+ 
+    <p>Como:</p>
+    <p><strong>\[ g = f(m) = -2m \]</strong></p>
+
+    <p>Y aplicamos el método general de propagación de incertidumbre, que dice:</p>
+    <p><strong>\[ \delta g = \left| \frac{d(-2m)}{dm} \right| \cdot \delta m = 2 \cdot \delta m \]</strong></p>
+
+    <strong>Así de fácil:</strong>
+    <p><strong>\[ \delta g = 2 \cdot \delta m \]</strong></p>
+    <hr>
     </form>
 </div>
 

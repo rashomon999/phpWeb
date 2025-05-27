@@ -32,6 +32,8 @@
         <a class="btn" href="index.php">Sistema de unidades/Vectores</a>
         <a class="btn" href=".\movimiento\index.php">Movimiento</a>
         <a class="btn" href=".\laboratorio\index.php">Laboratorio</a>
+        <br>
+        <a class="btn" href=".\Serway\Menu.php">Serway</a>
     </div>
 </body>
 </html>

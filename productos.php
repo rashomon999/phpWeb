@@ -5,7 +5,10 @@
 $sentenciaSQL= $conexion->prepare("SELECT * FROM libros");
 $sentenciaSQL->execute();
 $listaLibros= $sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
-$links = ["matematicas/index.php", "musica/CM.php", "ecuaciones/index.php", "series/index.php", "fracciones/index.php", "libro/Primero.php", "java/index.php","libro2_0/index.php", "derivadas/index.php","formulas/index.php","graficas/index.php","fisica/Menu.php","trigonometricas/index.php","integrales/Menu.php","Limites/index.php","Taylor/index.php","operaciones_basicas/index.php","SistemaDatos/Menu.php","Estadistica/Menu.php","discretas/menu.php","scala/Menu.php","ingesoft/Menu.php"];
+$links = ["matematicas/index.php", "musica/CM.php", "ecuaciones/Menu.php", "series/index.php", "algebra_lineal/Menu.php", "libro/Primero.php", "java/index.php","libro2_0/index.php", "derivadas/index.php","formulas/index.php","graficas/index.php","fisica/Menu.php","trigonometricas/index.php","integrales/Menu.php","Limites/index.php","Taylor/index.php","operaciones_basicas/index.php","SistemaDatos/Menu.php","Estadistica/Menu.php","discretas/menu.php","scala/Menu.php","ingesoft/Menu.php","Superficies/Menu.php"];
+
+echo "<p>Consulta SQL: <code>SELECT * FROM libros ORDER BY nombre ASC;</code></p>";
+
 
 ?>
 

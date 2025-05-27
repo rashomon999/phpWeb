@@ -23,9 +23,11 @@ $error =  '<svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill=
   <link href="style.css" rel="stylesheet">
   
   <title>Botón Triángulo</title>
+  <strong>El unico que no acepta b en lugar de # es este.</strong>
 </head>
 <body>
   <div class="contenedor">
+  
     <div class="inner-circle">
         <button class="triangulo-rectangulo" onclick="escribirTexto('D#m')"></button>
         <button class="triangulo-rectangulo-dos" onclick="escribirTexto('G#m')"></button>

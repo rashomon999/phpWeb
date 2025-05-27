@@ -29,9 +29,9 @@
 </head>
 <body>
     <div class="centered-container">
-        <a class="btn" href="index.php">Inicio</a>
+        <a class="btn" href=".\basico\index.php">Inicio</a>
         <a class="btn" href=".\Codigo\index.php">Codigo</a>
-       
+        <a class="btn" href=".\conceptos\Menu.php">Conceptos</a>
       
     </div>
 </body>

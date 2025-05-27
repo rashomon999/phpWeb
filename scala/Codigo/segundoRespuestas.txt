@@ -1,0 +1,28 @@
+def search(i: Int, j: Int, x: Int, a: List[Int]): Int = {
+  if (i > j) 0 // fuera de rango
+  else if (a(i - 1) == x) i
+  else if (i == j) 0
+  else search(i + 1, j, x, a)
+}
+
+
+val lista = List(5, 8, 3, 7, 1)
+val resultado = search(1, lista.length, 7, lista)
+
+println(resultado) // Imprime: 4
+
+
+
+2) pregunta (mismo anterior pero con pattern matching)
+
+def search(i: Int, j: Int, x: Int, a: List[Int]): Int = 
+(i > j, i <= j && a(i - 1) == x, i == j) match {
+  case (true, _, _)    => 0  // Caso 1: i > j (fuera de rango)
+  case (_, true, _)    => i  // Caso 2: a(i-1) == x (encontrado)
+  case (_, _, true)    => 0  // Caso 3: i == j y no encontrado
+  case _               => search(i + 1, j, x, a) // Caso 4: llamada recursiva
+}
+
+val lista = List(5, 8, 3, 7, 1)
+val resultado = search(1, lista.length, 7, lista)
+println(resultado) // Output: 4

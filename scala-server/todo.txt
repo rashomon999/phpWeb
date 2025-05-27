@@ -1,0 +1,99 @@
+app.post("/ejecutar3_2", (req, res) => {
+    const codigo3_2 = req.body.codigo3_2; // Extraer el código enviado
+    const archivoScala3_2 = "codigo3_2.scala";
+
+    fs.writeFileSync(archivoScala3_2, codigo3_2);
+
+    exec(`scala ${archivoScala3_2}`, (error, stdout, stderr) => {
+        if (error) {
+            res.json({ error: stderr || error.message });
+        } else {
+            res.json({ salida3_2: stdout });
+        }
+    });
+});
+
+
+
+
+ 
+     
+<script>
+    async function ejecutarCodigo3_2() {
+    const codigo3_2 = document.getElementById("codigo3_2").value;
+
+    const formData = new FormData();
+    formData.append("codigo3_2", codigo3_2);
+
+    const respuesta3_2 = await fetch("index.php", {
+        method: "POST",
+        body: formData
+    });
+
+    const resultado3_2 = await respuesta3_2.text();
+    document.getElementById("resultado3_2").textContent = resultado3_2;
+    }
+    </script>
+
+
+    <textarea id="codigo3_2" name="codigo3_2" rows="10" cols="50" value="<?php echo $codigo3_2; ?>"><?php echo htmlspecialchars($codigo3_2); ?></textarea>
+    <br>
+    <button onclick="ejecutarCodigo3_2()">Ejecutar</button>
+     <?php echo $verificar_3_2 ?>
+    <p>Resultado:</p>
+    <pre id="resultado3_2"></pre>
+    <?php echo $salida3_2 ?>
+    <pre><code>
+
+
+
+
+    if (isset($_POST['codigo3_2'])) {
+        $codigo3_2 = $_POST["codigo3_2"];
+    
+        // Envolver el código en un objeto válido de Scala 3 si no tiene "object" o "@main"
+        if (!str_contains($codigo3_2, "object") && !str_contains($codigo3_2, "@main")) {
+            $codigoFinal3_2 = "object Main extends App {\n" . $codigo3_2 . "\n}";
+        } else {
+            $codigoFinal3_2 = $codigo3_2;  // Mantener código tal cual si ya está en formato correcto
+        }
+    
+        // Guardar el código en un archivo temporal
+        $archivoScala3_2 = "codigo3_2.scala";
+        file_put_contents($archivoScala3_2, $codigoFinal3_2);
+    
+        usleep(10000);  
+    
+        // Ejecutar el código Scala y capturar la salida
+        $salida3_2 = shell_exec("scala-cli run $archivoScala3_2 2>&1");
+    
+        // Filtrar salida para eliminar mensajes de compilación
+        $lineas3_2 = explode("\n", $salida3_2);
+        $salidaLimpia3_2 = [];
+        foreach ($lineas3_2 as $linea3_2) {
+            if (!str_contains($linea3_2, "Compiling project") && !str_contains($linea3_2, "Compiled project")) {
+                $salidaLimpia3_2[] = $linea3_2;
+            }
+        }
+    
+        // Guardar la salida en una variable limpia
+        $resultadoScala3_2 = implode("\n", $salidaLimpia3_2);
+        $resultadoScala3_2_2 = trim(implode("\n", $salidaLimpia));
+
+        // Salida esperada para la validación
+        $salida_esperada3_2 = "21";   
+    
+        if ((int)$resultadoScala3_2 === (int)$salida_esperada3_2) {  
+            $verificar_3_2 = "correcto";
+        } elseif ($resultadoScala3_2 === '') {
+            $verificar_3_2 = 'sin salida';
+        } else {
+            $verificar_3_2 = "incorrecto";
+        }
+    
+    } else {
+        $codigo3_2 = "";
+        $verificar_3_2 = "";
+        $resultadoScala3_2 = "";
+        exit(); 
+    }

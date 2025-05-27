@@ -29,9 +29,10 @@
 </head>
 <body>
     <div class="centered-container">
-        <a class="btn" href="index.php">Conceptos</a>
-        <a class="btn" href=".\DataBase\index.php">DataBase/MER</a>
-        <a class="btn" href=".\algebra\index.php">algebra</a>
+        <a class="btn" href=".\apuntes_clases\Menu.php">apuntes clases</a>
+        <a class="btn" href=".\connolly\Menu.php">connolly</a>
+
+        
     </div>
 </body>
 </html>
