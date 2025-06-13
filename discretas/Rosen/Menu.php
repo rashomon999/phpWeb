@@ -10,7 +10,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 120vh;
+            height: 160vh;
         }
         .btn {
             display: block;
@@ -71,12 +71,25 @@
                 <li class="subchapter">8.6 Applications of Inclusion–Exclusion ...... 585</li>
                 <li class="end-material">End-of-Chapter Material ...... 592</li>
             </ul>
-        </ul>
+            <li  class="chapter">9 Relation</li>
+            <ul>
+                <li class="subchapter">9.1 Relations and Their Properties</li>
+                <li class="subchapter">9.2 n-ary Relations and Their Applications</li>
+                <li class="subchapter">9.3 Representing Relations</li>
+                <li class="subchapter">9.4 Closures of Relations</li>
+                <li class="subchapter">9.5 Equivalence Relations</li>
+                <li class="subchapter">9.6 Partial Orderings</li>
+            </ul>
 
-        <a class="btn" href=".\Rosen_3\index.php">Rosen capitulo 3</a>
+        </ul>
+        
+       
+
+        <a class="btn" href=".\Rosen_3\Menu.php">Rosen capitulo 3</a>
         <a class="btn" href=".\Rosen_4\Menu.php">Rosen capitulo 4</a>
         <a class="btn" href=".\Rosen_5\Menu.php">Rosen capitulo 5</a>
         <a class="btn" href=".\Rosen_8\Menu.php">Rosen capitulo 8</a>
+        <a class="btn" href=".\Rosen_9\Menu.php">Rosen capitulo 9</a>
     </div>
 </body>
 </html>

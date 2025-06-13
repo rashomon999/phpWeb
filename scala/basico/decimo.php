@@ -1547,6 +1547,8 @@ println(resultado) // 6
             <td>sumar(lista: _*)</td>
         </tr>
     </table>
+    <hr>
+    
     </form>
 </div>
 

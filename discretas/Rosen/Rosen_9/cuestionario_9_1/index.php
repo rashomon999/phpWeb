@@ -90,7 +90,7 @@ $verificar_61 = ''; $verificar_62 = ''; $verificar_63 = ''; $verificar_64 = ''; 
 
 if ($_POST) {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '26') {  
+   if ($respuesta_1 === 'subconjunto') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -100,7 +100,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === '39') {  
+   if ($respuesta_2 === 'relacionado') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -110,7 +110,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === '52') {  
+   if ($respuesta_3 === 'un elemento') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -120,7 +120,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === '65') {  
+   if ($respuesta_4 === 'cada') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -130,7 +130,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === '78') {  
+   if ($respuesta_5 === 'conjunto') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -140,7 +140,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === '91') {  
+   if ($respuesta_6 === 'pares ordenados') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -150,9 +150,10 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === '104') {  
+   $limpia = $limpia = str_replace(' ', '', $respuesta_7); // "holamundo"
+   if ($limpia === '(a,b)') {  
        $verificar_7 = "correcto";
-   } elseif ($respuesta_7 === '') {
+   } elseif ($limpia === '') {
        $verificar_7 = '';
    } else {
        $verificar_7 = "incorrecto";
@@ -160,7 +161,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === '117') {  
+   if ($respuesta_8 === 'b = f(a)') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -170,7 +171,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === '130') {  
+   if ($respuesta_9 === 'subconjunto') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -180,9 +181,10 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === '143') {  
+   $limpia_10 = str_replace(' ','',$respuesta_10 );
+   if ($limpia_10 === 'AxB') {  
        $verificar_10 = "correcto";
-   } elseif ($respuesta_10 === '') {
+   } elseif ($limpia_10 === '') {
        $verificar_10 = '';
    } else {
        $verificar_10 = "incorrecto";
@@ -190,7 +192,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === '156') {  
+   if ($respuesta_11 === 'A') {  
        $verificar_11 = "correcto";
    } elseif ($respuesta_11 === '') {
        $verificar_11 = '';
@@ -201,7 +203,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
      $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-     if ($respuesta_12 === '28') {  
+     if ($respuesta_12 === 'B') {  
          $verificar_12 = "correcto";
      } elseif ($respuesta_12 === '') {
          $verificar_12 = '';
@@ -211,7 +213,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la segunda pregunta
      $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-     if ($respuesta_13 === '42') { 
+     if ($respuesta_13 === 'primer') { 
          $verificar_13 = "correcto";
      } elseif ($respuesta_13 === '') {
          $verificar_13 = '';
@@ -221,7 +223,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la tercera pregunta
      $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-     if ($respuesta_14 === '56') {  
+     if ($respuesta_14 === 'primer') {  
          $verificar_14 = "correcto";
      } elseif ($respuesta_14 === '') {
          $verificar_14 = '';
@@ -231,7 +233,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la cuarta pregunta
      $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-     if ($respuesta_15 === '70') { 
+     if ($respuesta_15 === 'uno a muchos') { 
          $verificar_15 = "correcto";
      } elseif ($respuesta_15 === '') {
          $verificar_15 = '';
@@ -241,7 +243,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la quinta pregunta
      $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-     if ($respuesta_16 === '84') {  
+     if ($respuesta_16 === 'mas') {  
          $verificar_16 = "correcto";
      } elseif ($respuesta_16 === '') {
          $verificar_16 = '';
@@ -251,7 +253,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la sexta pregunta
      $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-     if ($respuesta_17 === '98') {  
+     if ($respuesta_17 === 'exactamente un elemento de B') {  
          $verificar_17 = "correcto";
      } elseif ($respuesta_17 === '') {
          $verificar_17 = '';
@@ -261,7 +263,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la séptima pregunta
      $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-     if ($respuesta_18 === '112') {  
+     if ($respuesta_18 === '(a,f(a))') {  
          $verificar_18 = "correcto";
      } elseif ($respuesta_18 === '') {
          $verificar_18 = '';
@@ -271,7 +273,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la octava pregunta
      $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-     if ($respuesta_19 === '126') {  
+     if ($respuesta_19 === 'relacion') {  
          $verificar_19 = "correcto";
      } elseif ($respuesta_19 === '') {
          $verificar_19 = '';
@@ -281,7 +283,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la novena pregunta
      $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
-     if ($respuesta_20 === '140') {  
+     if ($respuesta_20 === 'A') {  
          $verificar_20 = "correcto";
      } elseif ($respuesta_20 === '') {
          $verificar_20 = '';
@@ -291,7 +293,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la décima pregunta
      $respuesta_21 = isset($_POST['respuesta_21']) ? $_POST['respuesta_21'] : '';
-     if ($respuesta_21 === '154') {  
+     if ($respuesta_21 === 'A') {  
          $verificar_21 = "correcto";
      } elseif ($respuesta_21 === '') {
          $verificar_21 = '';
@@ -301,7 +303,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la undécima pregunta
      $respuesta_22 = isset($_POST['respuesta_22']) ? $_POST['respuesta_22'] : '';
-     if ($respuesta_22 === '168') {  
+     if ($respuesta_22 === 'relacion') {  
          $verificar_22 = "correcto";
      } elseif ($respuesta_22 === '') {
          $verificar_22 = '';
@@ -311,7 +313,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
    $respuesta_23 = isset($_POST['respuesta_23']) ? $_POST['respuesta_23'] : '';
-   if ($respuesta_23 === '30') {  
+   if ($respuesta_23 === 'conjunto') {  
        $verificar_23 = "correcto";
    } elseif ($respuesta_23 === '') {
        $verificar_23 = '';
@@ -321,7 +323,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_24 = isset($_POST['respuesta_24']) ? $_POST['respuesta_24'] : '';
-   if ($respuesta_24 === '45') {  
+   if ($respuesta_24 === 'subconjunto') {  
        $verificar_24 = "correcto";
    } elseif ($respuesta_24 === '') {
        $verificar_24 = '';
@@ -331,7 +333,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_25 = isset($_POST['respuesta_25']) ? $_POST['respuesta_25'] : '';
-   if ($respuesta_25 === '60') { 
+   if ($respuesta_25 === 'AxA') { 
        $verificar_25 = "correcto";
    } elseif ($respuesta_25 === '') {
        $verificar_25 = '';
@@ -341,7 +343,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_26 = isset($_POST['respuesta_26']) ? $_POST['respuesta_26'] : '';
-   if ($respuesta_26 === '75') {  
+   if ($respuesta_26 === 'AxA') {  
        $verificar_26 = "correcto";
    } elseif ($respuesta_26 === '') {
        $verificar_26 = '';
@@ -351,7 +353,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_27 = isset($_POST['respuesta_27']) ? $_POST['respuesta_27'] : '';
-   if ($respuesta_27 === '90') {  
+   if ($respuesta_27 === 'n^2') {  
        $verificar_27 = "correcto";
    } elseif ($respuesta_27 === '') {
        $verificar_27 = '';
@@ -361,7 +363,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_28 = isset($_POST['respuesta_28']) ? $_POST['respuesta_28'] : '';
-   if ($respuesta_28 === '105') {  
+   if ($respuesta_28 === '2^m') {  
        $verificar_28 = "correcto";
    } elseif ($respuesta_28 === '') {
        $verificar_28 = '';
@@ -371,7 +373,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_29 = isset($_POST['respuesta_29']) ? $_POST['respuesta_29'] : '';
-   if ($respuesta_29 === '120') {  
+   if ($respuesta_29 === 'subconjuntos') {  
        $verificar_29 = "correcto";
    } elseif ($respuesta_29 === '') {
        $verificar_29 = '';
@@ -381,7 +383,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_30 = isset($_POST['respuesta_30']) ? $_POST['respuesta_30'] : '';
-   if ($respuesta_30 === '135') {  
+   if ($respuesta_30 === '(b,a)') {  
        $verificar_30 = "correcto";
    } elseif ($respuesta_30 === '') {
        $verificar_30 = '';
@@ -391,7 +393,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_31 = isset($_POST['respuesta_31']) ? $_POST['respuesta_31'] : '';
-   if ($respuesta_31 === '150') {  
+   if ($respuesta_31 === '(a,b)') {  
        $verificar_31 = "correcto";
    } elseif ($respuesta_31 === '') {
        $verificar_31 = '';
@@ -401,7 +403,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_32 = isset($_POST['respuesta_32']) ? $_POST['respuesta_32'] : '';
-   if ($respuesta_32 === '165') {  
+   if ($respuesta_32 === 'a,b') {  
        $verificar_32 = "correcto";
    } elseif ($respuesta_32 === '') {
        $verificar_32 = '';
@@ -411,7 +413,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_33 = isset($_POST['respuesta_33']) ? $_POST['respuesta_33'] : '';
-   if ($respuesta_33 === '180') {  
+   if ($respuesta_33 === 'A') {  
        $verificar_33 = "correcto";
    } elseif ($respuesta_33 === '') {
        $verificar_33 = '';
@@ -420,7 +422,7 @@ if ($_POST) {
    }
 
  $respuesta_34 = isset($_POST['respuesta_34']) ? $_POST['respuesta_34'] : '';
-if ($respuesta_34 === '32') { 
+if ($respuesta_34 === 'R') { 
     $verificar_34 = "correcto";
 } elseif ($respuesta_34 === '') {
     $verificar_34 = '';
@@ -429,7 +431,7 @@ if ($respuesta_34 === '32') {
 }
 
  $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
-if ($respuesta_35 === '48') { 
+if ($respuesta_35 === 'A') { 
     $verificar_35 = "correcto";
 } elseif ($respuesta_35 === '') {
     $verificar_35 = '';
@@ -438,7 +440,7 @@ if ($respuesta_35 === '48') {
 }
 
  $respuesta_36 = isset($_POST['respuesta_36']) ? $_POST['respuesta_36'] : '';
-if ($respuesta_36 === '64') { 
+if ($respuesta_36 === 'A') { 
     $verificar_36 = "correcto";
 } elseif ($respuesta_36 === '') {
     $verificar_36 = '';
@@ -447,7 +449,7 @@ if ($respuesta_36 === '64') {
 }
 
  $respuesta_37 = isset($_POST['respuesta_37']) ? $_POST['respuesta_37'] : '';
-if ($respuesta_37 === '80') { 
+if ($respuesta_37 === 'R') { 
     $verificar_37 = "correcto";
 } elseif ($respuesta_37 === '') {
     $verificar_37 = '';
@@ -456,7 +458,7 @@ if ($respuesta_37 === '80') {
 }
 
  $respuesta_38 = isset($_POST['respuesta_38']) ? $_POST['respuesta_38'] : '';
-if ($respuesta_38 === '96') { 
+if ($respuesta_38 === 'a=b') { 
     $verificar_38 = "correcto";
 } elseif ($respuesta_38 === '') {
     $verificar_38 = '';
@@ -465,7 +467,7 @@ if ($respuesta_38 === '96') {
 }
 
  $respuesta_39 = isset($_POST['respuesta_39']) ? $_POST['respuesta_39'] : '';
-if ($respuesta_39 === '112') { 
+if ($respuesta_39 === '(a,b)') { 
     $verificar_39 = "correcto";
 } elseif ($respuesta_39 === '') {
     $verificar_39 = '';
@@ -474,7 +476,7 @@ if ($respuesta_39 === '112') {
 }
 
  $respuesta_40 = isset($_POST['respuesta_40']) ? $_POST['respuesta_40'] : '';
-if ($respuesta_40 === '128') { 
+if ($respuesta_40 === '(b,c)') { 
     $verificar_40 = "correcto";
 } elseif ($respuesta_40 === '') {
     $verificar_40 = '';
@@ -483,7 +485,7 @@ if ($respuesta_40 === '128') {
 }
 
  $respuesta_41 = isset($_POST['respuesta_41']) ? $_POST['respuesta_41'] : '';
-if ($respuesta_41 === '144') { 
+if ($respuesta_41 === '(a,a)') { 
     $verificar_41 = "correcto";
 } elseif ($respuesta_41 === '') {
     $verificar_41 = '';
@@ -492,7 +494,7 @@ if ($respuesta_41 === '144') {
 }
 
  $respuesta_42 = isset($_POST['respuesta_42']) ? $_POST['respuesta_42'] : '';
-if ($respuesta_42 === '160') { 
+if ($respuesta_42 === 'A') { 
     $verificar_42 = "correcto";
 } elseif ($respuesta_42 === '') {
     $verificar_42 = '';
@@ -501,7 +503,7 @@ if ($respuesta_42 === '160') {
 }
 
  $respuesta_43 = isset($_POST['respuesta_43']) ? $_POST['respuesta_43'] : '';
-if ($respuesta_43 === '176') { 
+if ($respuesta_43 === 'antisimetrica') { 
     $verificar_43 = "correcto";
 } elseif ($respuesta_43 === '') {
     $verificar_43 = '';
@@ -1123,14 +1125,21 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
-    .imagen { 
+    .imagen {
         max-width: 100%;
         height: auto;
+    }
+    
+    .seccion {
+        width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+        padding: 20px; /* importante este padding*/
+        box-sizing: border-box;
+        height: 250vh;
     }
 </style>
  
@@ -1434,107 +1443,163 @@ function ocultarMensaje4() {
 <body>
 <div class="seccion izquierda">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h3>✅ Sobre la línea continua y discontinua</h3>
-    <img src="../../../img/personal.png" alt="">
-    <ul>
-    <li>
-    <strong>🔹 Línea continua (<em>subordinado</em>)</strong><br>
-    Generalmente indica una <strong>relación obligatoria</strong> (participación total):<br>
-    &rarr; <em>Debe</em> existir un subordinado (es decir, el directivo <em>debe</em> tener al menos un subordinado).
-    </li>
-    <br>
-    <li>
-    <strong>🔹 Línea discontinua (<em>directivo</em>)</strong><br>
-    Suele indicar una <strong>relación opcional</strong> (participación parcial):<br>
-    &rarr; Un <code>PERSONAL</code> <em>puede o no</em> tener un directivo (es decir, algunos empleados no tienen jefe, como el director general).
-    </li>
-    </ul>
-
+    <h2>Definición</h2>
+        <p>Sean <strong>A</strong> y <strong>B</strong> dos conjuntos.
+        
+        Una <strong>relación binaria</strong> de <strong>A</strong>
+        en <strong>B</strong> es un 
+        <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="8">
+        de <strong>A × B</strong>.</p>
+        <p>Se utiliza la notación \( a R b \) para denotar que \( (a, b) \in R \) y
+         \( a \not\mathrel{R} b \) para denotar que \( (a, b) \notin R \).</p>
+        <p>Además, cuando \( (a, b) \) pertenece a \( R \), se dice que \( a \) está 
+        <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="8">
+         con \( b \) mediante \( R \).</p>
+         <button type="submit">Enviar</button>
+         <?php echo $verificar_1 ?>
+         <?php echo $verificar_2 ?>
     <hr>
-    los subtipos tambien garantizan que sea excluyente.
-    <br><br>
-    " Por último, el personal que realiza funciones de directivo no aparecerá nunca
-    como personal de planta y ni al contrario."
-    <br><br>
-    <img src="../../../img/subtipo.png" alt="" width="600">
-    <br><br>
-    <img src="../../../img/subtipo_2.png" alt="" width="600">
+    <h2>Ejemplo 2</h2>
+        <p>Sea <strong>A</strong> el conjunto de ciudades en los Estados Unidos y <strong>B</strong> el conjunto de los 50 estados de los Estados Unidos.</p>
+        <p>Definimos la relación <strong>R</strong> especificando que <strong>(a, b)</strong> pertenece a <strong>R</strong> si una ciudad con el nombre <strong>a</strong> se encuentra en el estado <strong>b</strong>.</p>
+        <p>Por ejemplo, los siguientes pares pertenecen a <strong>R</strong>:</p>
+        <ul>
+            <li>(Boulder, Colorado)</li>
+            <li>(Bangor, Maine)</li>
+            <li>(Ann Arbor, Michigan)</li>
+            <li>(Middletown, New Jersey)</li>
+            <li>(Middletown, New York)</li>
+            <li>(Cupertino, California)</li>
+            <li>(Red Bank, New Jersey)</li>
+        </ul>
     <hr>
-    1. Relación 1:N (Uno a Muchos) →
-    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_1 ?>
+    <h2>9.1.2 Funciones como Relaciones</h2>
+        <p>Recordemos que una función <strong>f</strong> de un conjunto 
+        <strong>A</strong> a un conjunto <strong>B</strong> asigna exactamente         
+        <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="8">
+        de <strong>B</strong> a 
+        <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="8">
+        elemento de <strong>A</strong>.
+        <br><br>
+        El
+        <strong>gráfico</strong> de <strong>f</strong> es el 
+        <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="8">
+        de 
+        <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="18">
 
+        <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="8">
 
-    <br><br>
+        tales que <strong>
+        <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="8">  </strong>.
+        
+        Debido a que el gráfico 
+        de <strong>f</strong> es un 
+        <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="8"> 
+        de <strong>
+        <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="8"> 
+        </strong>, se considera una 
+        relación de <strong>
+        <input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="8"> 
 
-    2. Relación N:M (Muchos a Muchos) →
-    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_2 ?>
-    <br><br>
+        </strong> a <strong>
+        <input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="8"> 
 
-    3. Relación 1:1 (Uno a Uno) →
-    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="10"> 
-    se crea una tabla extra.
-    Se maneja FK unica, excepto en casos especificos. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_3 ?>
-    <br><br>
-    <hr>
+        </strong>.</p>
+        <p>Además, el gráfico de una función tiene la propiedad de que <strong>cada elemento de
+        A</strong> es el <strong>
+        <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="8">     
+        elemento de exactamente un par ordenado</strong> 
+        en el gráfico.</p>
 
-    Si existe una relación (fuerte o débil), la entidad dependiente SIEMPRE tendrá una
-    clave foránea como atributo que hace referencia a la entidad principal.    
+        <button type="submit">Enviar</button>
+        <?php echo $verificar_3 ?>
+        <?php echo $verificar_4 ?>
+        <?php echo $verificar_5 ?>
+        <?php echo $verificar_6 ?>
+        <?php echo $verificar_7 ?>
+        <?php echo $verificar_8 ?>
+        <?php echo $verificar_9 ?>
+        <?php echo $verificar_10 ?>
+        <?php echo $verificar_11 ?>
+        <?php echo $verificar_12 ?>
+        <?php echo $verificar_13 ?>
 
-    <hr>
-    <li>
-    Si la relación es 1:N (débil) → La entidad dependiente tendrá una clave foránea (FK), pero su clave primaria (PK)
-    se mantiene independiente.
-    </li>
-    <li>
-    Si la relación es 1:N (fuerte/identificadora) → La entidad dependiente tendrá una clave foránea (FK), pero esta 
-    también formará parte de su clave primaria (PK).
-    </li>
-    <li>
-    Si la relación es N:M → Se crea una tabla intermedia, donde ambas claves foráneas (de las entidades relacionadas)
-    forman la clave primaria compuesta.
-    </li>
-     <hr>
+        <p>Por otro lado, si <strong>R</strong> es una relación de <strong>A</strong>
+        a <strong>B</strong> y cada elemento en <strong>A</strong> es el <strong>
+        <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="8"> 
+        elemento de exactamente un par ordenado</strong> en <strong>R</strong>, entonces 
+        se puede definir una función tomando <strong>R</strong> como su gráfico. Esto se 
+        logra asignando a cada elemento <strong>a</strong> de <strong>A</strong> el único 
+        elemento <strong>b ∈ B</strong> tal que <strong>(a, b) ∈ R</strong>.</p>
 
+        <p><em>(Cabe destacar que la relación R en el Ejemplo 2 no es el gráfico de una 
+        función porque <strong>Middletown</strong> aparece más de una vez como primer 
+        elemento en un par ordenado de <strong>R</strong>).</em></p>
 
-    <strong>¿Qué significa "Origen Opcional"?</strong>
-    <br><br>
-    <strong>Especifica si la existencia de la entidad hija (lado N) depende o no de la entidad padre (lado 1).</strong>
-    <br><br>
-    <strong>Si "Origen Opcional" está MARCADO:</strong>
-    <p>
-    <li>La relación se considera débil (no identificadora).</li>
-    <li>La entidad hija puede existir sin la entidad padre.</li>
-    <li> Se dibuja una línea discontinua con flecha.</li>
-    <li>Ejemplo:
-    Una persona puede existir sin estar asociada a una casa.</li>
-    </p>
-     
-    <strong>Si "Origen Opcional" está DESMARCADO:</strong>
-    <li>La relación se considera fuerte (identificadora).</li>
-    <li>La entidad hija depende completamente de la entidad padre.</li>
-    <li>Se dibuja una línea sólida.</li>
-    <li>Ejemplo:
-    Si Persona no puede existir sin una Casa, se forzaría a que ID_CASA forme parte de su clave primaria.
-    </li>
+        <p>Una <strong>relación</strong> puede expresar una correspondencia de <strong>
+            
+        <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="13"> 
+
+        </strong> entre los elementos de los conjuntos <strong>A</strong> y
+        <strong>B</strong> (como en el <strong>Ejemplo 2</strong>), donde un elemento de 
+        <strong>A</strong> puede estar relacionado con 
+        <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="8"> 
+        de un elemento de <strong>B</strong>.</p>
+        <p>En cambio, una <strong>función</strong> representa una relación en 
+        la que <strong>
+        <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="26"> 
+        </strong> está relacionado con 
+        cada elemento de <strong>A</strong>.</p>
+
+        <p>Las <strong>relaciones</strong> son una generalización de los gráficos de funciones,
+        ya que pueden usarse para expresar una clase mucho más amplia de relaciones entre
+        conjuntos.</p>
+        
+        <p><em>(Recordemos que el gráfico de la función <strong>f</strong> de
+        <strong>A</strong> a <strong>B</strong> es el conjunto de pares ordenados 
+        <strong>
+        <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="8"> 
+        </strong> para <strong>a ∈ A</strong>).</em></p>
+        <button type="submit">Enviar</button>
+        <?php echo $verificar_14 ?>
+        <?php echo $verificar_15 ?>
+        <?php echo $verificar_16 ?>
+        <?php echo $verificar_17 ?>
+        <?php echo $verificar_18 ?>
+        <hr>
+        <h2>9.1.3 Relaciones en un Conjunto</h2>
+        <p>Las relaciones de un conjunto <strong>A</strong> consigo mismo son de especial interés.</p>
+        <strong>Def:</strong>
+        <p>Una relación en un conjunto <strong>A</strong> es una 
+        <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="8"> 
+        de <strong>
+        <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="8"> 
+        </strong>
+        en <strong>
+        <input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>" size="8"> 
+        </strong>.</p>
+        <p>En otras palabras, una 
+        <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="8"> 
     
-    <hr>
-    Cuando en un Modelo Entidad-Relación (MER) te dan un atributo en una relación (especialmente en relaciones
-    muchos a muchos), lo habitual es:
-    <br><br>
-    ✅ Lo que sucede:
-    <li>La relación con atributo se convierte en una entidad asociativa o entidad débil en el MER.</li> 
-    <li>Esta entidad asociativa "intermedia" representa la relación y contiene el atributo extra.
-    </li>
-    <br>
- </form>
+        en un 
+        <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="8"> 
+        <strong>A</strong> es un 
+        <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="8"> 
+
+        de 
+        <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="8"> 
+        .</p>
+        <br>
+        <button type="submit">Enviar</button>
+        <?php echo $verificar_19 ?>
+        <?php echo $verificar_20 ?>
+        <?php echo $verificar_21 ?>
+        <?php echo $verificar_22 ?>
+        <?php echo $verificar_23 ?>
+        <?php echo $verificar_24 ?>
+        <?php echo $verificar_25 ?>
+        <hr>
+        </form>
 </div>
 
 
@@ -1542,8 +1607,155 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    
+    Nota: ingrese cuando sea necesario en notacion latex <br><br>
+    <h2>Ejemplo 6 - ¿Cuántas relaciones existen en un conjunto con n elementos?</h2>
+    <p><strong>Solución:</strong> Una relación en un conjunto <strong>A</strong> es 
+    un subconjunto de 
+    <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="8"> 
 
+    . Como <strong>A × A</strong> tiene 
+    <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="8"> 
+
+    elementos cuando <strong>A</strong> tiene <strong>n</strong> elementos, y un conjunto
+    con <strong>m</strong> elementos tiene 
+    <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="8"> 
+    <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="8"> 
+    , entonces 
+    hay <strong> \( 2^{n^2} \)</strong> subconjuntos de <strong>A × A</strong>.</p>
+    <p>Por lo tanto, existen <strong>\( 2^{n^2} \)</strong> relaciones en un conjunto con 
+    <strong>n</strong> elementos.</p>
+    <p>Por ejemplo, para el conjunto <strong>{a, b, c}</strong>, hay:</p>
+    <p><strong> \( 2^{3^2}   = 2^9 = 512 \)</strong> relaciones.</p>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_26 ?>
+    <?php echo $verificar_27 ?>
+    <?php echo $verificar_28 ?>
+    <?php echo $verificar_29 ?>
+    <hr>
+    <h2>9.1.4 Propiedades de las Relaciones</h2>
+    <strong>Definición 3: Relación Reflexiva</strong>
+     
+    <p>Una relación \( R \) en un conjunto \( A \) se llama <strong>reflexiva</strong> si:</p>
+
+    <p>
+    <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="8">     
+    \(
+     \in R, \quad \text{para todo } a \in \)
+    <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="8"> 
+    .
+    </p>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_41 ?>
+    <?php echo $verificar_42 ?>
+
+    <hr>
+    <strong>Definición 4</strong>
+    <p>Una relación <strong>R</strong> en un conjunto <strong>A</strong> se llama 
+    <strong>simétrica</strong> si <strong>
+    <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="8"> 
+    
+    ∈ R</strong> siempre que 
+    <strong>
+    <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="8">     
+    ∈ R</strong>, para todos 
+    <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="8"> 
+    ∈
+    <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="8"> 
+    .</p>
+
+    <p>Una relación 
+    <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="8"> 
+    en un conjunto 
+    <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="8"> 
+
+        se llama 
+        <strong>antisimétrica</strong> para todos <strong>a, b ∈ 
+        <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="8"> 
+
+        </strong>, si <strong>(a, b) ∈ 
+        <input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="8"> 
+
+        </strong> y <strong>(b, a) ∈ R</strong>, entonces 
+        <input type="text" name="respuesta_38" value="<?php echo $respuesta_38; ?>" size="8"> 
+
+        .</p>
+        <button type="submit">Enviar</button>
+
+        <?php echo $verificar_30 ?>
+        <?php echo $verificar_31 ?>
+        <?php echo $verificar_32 ?>
+        <?php echo $verificar_33 ?>
+        <?php echo $verificar_34 ?>
+        <?php echo $verificar_35 ?>
+        <?php echo $verificar_36 ?>
+        <?php echo $verificar_37 ?>
+        <?php echo $verificar_38 ?>
+    <hr>
+        <strong>Observación</strong>
+         <p>Usando cuantificadores, vemos que la relación <strong>R</strong> en el conjunto
+        <strong>A</strong> es <strong>simétrica</strong> si:</p>
+        
+        <p>∀a∀b((a, b) ∈ R → (b, a) ∈ R).</p>
+        <p>De manera similar, la relación <strong>R</strong> en el conjunto <strong>A</strong> es 
+        <strong>antisimétrica</strong> si:</p>
+        <p>∀a∀b(((a, b) ∈ R ∧ (b, a) ∈ R) → (a = b)).</p>
+        <p>En otras palabras, una relación es <strong>simétrica</strong> si y solo si el hecho 
+        de que <strong>a</strong> esté relacionado con <strong>b</strong> siempre implica que
+        <strong>b</strong> está relacionado con <strong>a</strong>. Por ejemplo, la relación
+        de <strong>igualdad</strong> es simétrica porque <strong>a = b</strong> si y solo si
+        <strong>b = a</strong>.</p>
+
+        <p>Una relación es <strong>antisimétrica</strong> si y solo si <strong>no existen
+        pares de elementos distintos</strong> <strong>a</strong> y <strong>b</strong> tales
+        que <strong>a</strong> esté relacionado con <strong>b</strong> y <strong>b</strong> 
+        esté relacionado con <strong>a</strong>. Es decir, la única forma en la que
+        <strong>a</strong> esté relacionado con <strong>b</strong> y <strong>b</strong> esté
+        relacionado con <strong>a</strong> es que <strong>a</strong> y <strong>b</strong> 
+        sean el mismo elemento.</p>
+
+        <p>Por ejemplo, la relación <strong>"menor o igual que"</strong> (<strong>≤</strong>)
+        es <strong>
+            
+        <input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="8"> 
+
+        </strong>. Para verlo, notemos que si <strong>a ≤ b</strong> 
+        y <strong>b ≤ a</strong>, entonces <strong>a = b</strong>.</p>
+
+        <p>Los términos <strong>simétrico</strong> y <strong>antisimétrico</strong> no son
+        opuestos, ya que una relación puede tener ambas propiedades o carecer de ambas
+        (ver <strong>Ejercicio 10</strong>). Una relación <strong>no</strong> puede ser 
+        <strong>simétrica y antisimétrica</strong> al mismo tiempo si contiene algún par 
+        <strong>(a, b)</strong> donde <strong>a ≠ b</strong>.</p>
+        <strong>Observación</strong>
+         <p>Aunque relativamente pocas de las <strong>2ⁿ²</strong> relaciones en un conjunto
+        con <strong>n</strong> elementos son <strong>simétricas o antisimétricas</strong>, 
+        como pueden demostrar los argumentos de conteo, muchas relaciones importantes poseen
+        una de estas propiedades (ver <strong>Ejercicio 49</strong>).</p>
+        <hr>
+
+        <strong>Definición 5: Relación Transitiva</strong>
+         <p>Una relación \( R \) en un conjunto \( A \) se llama <strong>transitiva</strong> 
+        si, siempre que:</p>
+        <p> 
+        <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="8"> 
+        \(\in R \quad \text{y} \quad \)
+        <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="8"> 
+        \(
+        \in R
+        \)</p>
+        <p>entonces:</p>
+        <p>\(
+        (a, c) \in R
+        \)</p>
+        <p>para todos \( a, b, c \in A \).</p>
+         <button type="submit">Enviar</button>
+        <?php echo $verificar_39 ?>
+        <?php echo $verificar_40 ?>
+        <?php echo $verificar_43 ?>
+
+        <hr>
+        
+        
     </form>
 </div>
 

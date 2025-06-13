@@ -10,7 +10,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            height: 120vh;
         }
         .btn {
             display: block;
@@ -29,17 +29,15 @@
 </head>
 <body>
     <div class="centered-container">
-         <a class="btn" href=".\huffman\index.php">HUFMANN</a>
-        <a class="btn" href=".\checksum\index.php">CHECKSUM</a>
-        <a class="btn" href=".\huffmanIngles\index.php">Huffman ingles</a>
-        <br>
-        <br>
-        <strong>4 libros principales:</strong>
+      
+        <a class="btn" href=".\capitulo_9_1\index.php">capitulo 9.1</a>
+        <a class="btn" href=".\cuestionario_9_1\index.php">cuestionario 9.1</a>
         <br><br>
-        <a class="btn" href=".\structureInterpretation\Menu.php">structure and interpretation</a>
-        <a class="btn" href=".\Rosen\Menu.php">Rosen</a>
-        <a class="btn" href=".\Programming_in_Scala\Menu.php">Programming_in_Scala</a>
-        <a class="btn" href=".\introduction_to_algorithms\Menu.php"> introduction_to_algorithms (cormen)</a>
+        <a class="btn" href=".\capitulo_9_2\index.php">capitulo 9.2</a>
+        <a class="btn" href=".\capitulo_9_3\index.php">capitulo 9.3</a>
+        <a class="btn" href=".\capitulo_9_4\index.php">capitulo 9.4</a>
+
     </div>
 </body>
 </html>
+

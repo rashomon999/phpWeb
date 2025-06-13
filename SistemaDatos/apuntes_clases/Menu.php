@@ -38,10 +38,10 @@
     
         <a class="btn" href=".\algebra\index.php">Relacional</a>
         <a class="btn" href=".\Ejercicio\index.php">Ejercicio SQL</a>
-        <a class="btn" href=".\MER\index.php">MER</a>
-        <a class="btn" href=".\solucion_3FN\index.php">Solucion 3FN</a>
         <a class="btn" href=".\ER\index.php">ER</a>
-        <a class="btn" href=".\Normalizacion\index.php">Normalizacion</a>
+        <a class="btn" href=".\solucion_3FN\index.php">Solucion 3FN</a>
+        <a class="btn" href=".\MER_ER\index.php">ER -> MER (normalizacion)</a>
+        <a class="btn" href=".\Parcial_3\index.php">solucion parcial 3</a>
         <a class="btn" href=".\pl_sql\Menu.php"> pl / sql</a>
     </div>
 </body>

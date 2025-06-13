@@ -90,7 +90,7 @@ $verificar_61 = ''; $verificar_62 = ''; $verificar_63 = ''; $verificar_64 = ''; 
 
 if ($_POST) {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '26') {  
+   if ($respuesta_1 === 'subconjunto') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -100,7 +100,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === '39') {  
+   if ($respuesta_2 === 'relacionado') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -110,7 +110,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === '52') {  
+   if ($respuesta_3 === 'un elemento') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -120,7 +120,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === '65') {  
+   if ($respuesta_4 === 'cada') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -130,7 +130,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === '78') {  
+   if ($respuesta_5 === 'conjunto') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -140,7 +140,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === '91') {  
+   if ($respuesta_6 === 'pares ordendos') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -150,7 +150,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === '104') {  
+   if ($respuesta_7 === '(a,b)') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -160,7 +160,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === '117') {  
+   if ($respuesta_8 === 'b = f(a)') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -170,7 +170,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === '130') {  
+   if ($respuesta_9 === 'subconjunto') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -180,7 +180,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === '143') {  
+   if ($respuesta_10 === 'AxB') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -190,7 +190,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === '156') {  
+   if ($respuesta_11 === 'A') {  
        $verificar_11 = "correcto";
    } elseif ($respuesta_11 === '') {
        $verificar_11 = '';
@@ -201,7 +201,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
      $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-     if ($respuesta_12 === '28') {  
+     if ($respuesta_12 === 'B') {  
          $verificar_12 = "correcto";
      } elseif ($respuesta_12 === '') {
          $verificar_12 = '';
@@ -211,7 +211,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la segunda pregunta
      $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-     if ($respuesta_13 === '42') { 
+     if ($respuesta_13 === 'primer') { 
          $verificar_13 = "correcto";
      } elseif ($respuesta_13 === '') {
          $verificar_13 = '';
@@ -221,7 +221,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la tercera pregunta
      $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-     if ($respuesta_14 === '56') {  
+     if ($respuesta_14 === 'primer') {  
          $verificar_14 = "correcto";
      } elseif ($respuesta_14 === '') {
          $verificar_14 = '';
@@ -231,7 +231,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la cuarta pregunta
      $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-     if ($respuesta_15 === '70') { 
+     if ($respuesta_15 === 'uno a muchos') { 
          $verificar_15 = "correcto";
      } elseif ($respuesta_15 === '') {
          $verificar_15 = '';
@@ -241,7 +241,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la quinta pregunta
      $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-     if ($respuesta_16 === '84') {  
+     if ($respuesta_16 === 'mas') {  
          $verificar_16 = "correcto";
      } elseif ($respuesta_16 === '') {
          $verificar_16 = '';
@@ -251,7 +251,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la sexta pregunta
      $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-     if ($respuesta_17 === '98') {  
+     if ($respuesta_17 === 'exactamente un elemento de B') {  
          $verificar_17 = "correcto";
      } elseif ($respuesta_17 === '') {
          $verificar_17 = '';
@@ -261,7 +261,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la séptima pregunta
      $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-     if ($respuesta_18 === '112') {  
+     if ($respuesta_18 === '(a,f(a))') {  
          $verificar_18 = "correcto";
      } elseif ($respuesta_18 === '') {
          $verificar_18 = '';
@@ -271,7 +271,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la octava pregunta
      $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-     if ($respuesta_19 === '126') {  
+     if ($respuesta_19 === 'relacion') {  
          $verificar_19 = "correcto";
      } elseif ($respuesta_19 === '') {
          $verificar_19 = '';
@@ -281,7 +281,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la novena pregunta
      $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
-     if ($respuesta_20 === '140') {  
+     if ($respuesta_20 === 'A') {  
          $verificar_20 = "correcto";
      } elseif ($respuesta_20 === '') {
          $verificar_20 = '';
@@ -291,7 +291,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la décima pregunta
      $respuesta_21 = isset($_POST['respuesta_21']) ? $_POST['respuesta_21'] : '';
-     if ($respuesta_21 === '154') {  
+     if ($respuesta_21 === 'A') {  
          $verificar_21 = "correcto";
      } elseif ($respuesta_21 === '') {
          $verificar_21 = '';
@@ -301,7 +301,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la undécima pregunta
      $respuesta_22 = isset($_POST['respuesta_22']) ? $_POST['respuesta_22'] : '';
-     if ($respuesta_22 === '168') {  
+     if ($respuesta_22 === 'relacion') {  
          $verificar_22 = "correcto";
      } elseif ($respuesta_22 === '') {
          $verificar_22 = '';
@@ -311,7 +311,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
    $respuesta_23 = isset($_POST['respuesta_23']) ? $_POST['respuesta_23'] : '';
-   if ($respuesta_23 === '30') {  
+   if ($respuesta_23 === 'conjunto') {  
        $verificar_23 = "correcto";
    } elseif ($respuesta_23 === '') {
        $verificar_23 = '';
@@ -321,7 +321,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_24 = isset($_POST['respuesta_24']) ? $_POST['respuesta_24'] : '';
-   if ($respuesta_24 === '45') {  
+   if ($respuesta_24 === 'subconjunto') {  
        $verificar_24 = "correcto";
    } elseif ($respuesta_24 === '') {
        $verificar_24 = '';
@@ -331,7 +331,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_25 = isset($_POST['respuesta_25']) ? $_POST['respuesta_25'] : '';
-   if ($respuesta_25 === '60') { 
+   if ($respuesta_25 === 'AxA') { 
        $verificar_25 = "correcto";
    } elseif ($respuesta_25 === '') {
        $verificar_25 = '';
@@ -341,7 +341,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_26 = isset($_POST['respuesta_26']) ? $_POST['respuesta_26'] : '';
-   if ($respuesta_26 === '75') {  
+   if ($respuesta_26 === 'AxA') {  
        $verificar_26 = "correcto";
    } elseif ($respuesta_26 === '') {
        $verificar_26 = '';
@@ -351,7 +351,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_27 = isset($_POST['respuesta_27']) ? $_POST['respuesta_27'] : '';
-   if ($respuesta_27 === '90') {  
+   if ($respuesta_27 === 'n^2') {  
        $verificar_27 = "correcto";
    } elseif ($respuesta_27 === '') {
        $verificar_27 = '';
@@ -361,7 +361,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_28 = isset($_POST['respuesta_28']) ? $_POST['respuesta_28'] : '';
-   if ($respuesta_28 === '105') {  
+   if ($respuesta_28 === '2^m') {  
        $verificar_28 = "correcto";
    } elseif ($respuesta_28 === '') {
        $verificar_28 = '';
@@ -371,7 +371,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_29 = isset($_POST['respuesta_29']) ? $_POST['respuesta_29'] : '';
-   if ($respuesta_29 === '120') {  
+   if ($respuesta_29 === 'subconjuntos') {  
        $verificar_29 = "correcto";
    } elseif ($respuesta_29 === '') {
        $verificar_29 = '';
@@ -381,7 +381,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_30 = isset($_POST['respuesta_30']) ? $_POST['respuesta_30'] : '';
-   if ($respuesta_30 === '135') {  
+   if ($respuesta_30 === '(b,a)') {  
        $verificar_30 = "correcto";
    } elseif ($respuesta_30 === '') {
        $verificar_30 = '';
@@ -391,7 +391,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_31 = isset($_POST['respuesta_31']) ? $_POST['respuesta_31'] : '';
-   if ($respuesta_31 === '150') {  
+   if ($respuesta_31 === '(a,b)') {  
        $verificar_31 = "correcto";
    } elseif ($respuesta_31 === '') {
        $verificar_31 = '';
@@ -401,7 +401,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_32 = isset($_POST['respuesta_32']) ? $_POST['respuesta_32'] : '';
-   if ($respuesta_32 === '165') {  
+   if ($respuesta_32 === 'a,b') {  
        $verificar_32 = "correcto";
    } elseif ($respuesta_32 === '') {
        $verificar_32 = '';
@@ -411,7 +411,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_33 = isset($_POST['respuesta_33']) ? $_POST['respuesta_33'] : '';
-   if ($respuesta_33 === '180') {  
+   if ($respuesta_33 === 'A') {  
        $verificar_33 = "correcto";
    } elseif ($respuesta_33 === '') {
        $verificar_33 = '';
@@ -420,7 +420,7 @@ if ($_POST) {
    }
 
  $respuesta_34 = isset($_POST['respuesta_34']) ? $_POST['respuesta_34'] : '';
-if ($respuesta_34 === '32') { 
+if ($respuesta_34 === 'R') { 
     $verificar_34 = "correcto";
 } elseif ($respuesta_34 === '') {
     $verificar_34 = '';
@@ -429,7 +429,7 @@ if ($respuesta_34 === '32') {
 }
 
  $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
-if ($respuesta_35 === '48') { 
+if ($respuesta_35 === 'A') { 
     $verificar_35 = "correcto";
 } elseif ($respuesta_35 === '') {
     $verificar_35 = '';
@@ -438,7 +438,7 @@ if ($respuesta_35 === '48') {
 }
 
  $respuesta_36 = isset($_POST['respuesta_36']) ? $_POST['respuesta_36'] : '';
-if ($respuesta_36 === '64') { 
+if ($respuesta_36 === 'A') { 
     $verificar_36 = "correcto";
 } elseif ($respuesta_36 === '') {
     $verificar_36 = '';
@@ -447,7 +447,7 @@ if ($respuesta_36 === '64') {
 }
 
  $respuesta_37 = isset($_POST['respuesta_37']) ? $_POST['respuesta_37'] : '';
-if ($respuesta_37 === '80') { 
+if ($respuesta_37 === 'R') { 
     $verificar_37 = "correcto";
 } elseif ($respuesta_37 === '') {
     $verificar_37 = '';
@@ -456,7 +456,7 @@ if ($respuesta_37 === '80') {
 }
 
  $respuesta_38 = isset($_POST['respuesta_38']) ? $_POST['respuesta_38'] : '';
-if ($respuesta_38 === '96') { 
+if ($respuesta_38 === 'a=b') { 
     $verificar_38 = "correcto";
 } elseif ($respuesta_38 === '') {
     $verificar_38 = '';
@@ -465,7 +465,7 @@ if ($respuesta_38 === '96') {
 }
 
  $respuesta_39 = isset($_POST['respuesta_39']) ? $_POST['respuesta_39'] : '';
-if ($respuesta_39 === '112') { 
+if ($respuesta_39 === '(a,b)') { 
     $verificar_39 = "correcto";
 } elseif ($respuesta_39 === '') {
     $verificar_39 = '';
@@ -474,7 +474,7 @@ if ($respuesta_39 === '112') {
 }
 
  $respuesta_40 = isset($_POST['respuesta_40']) ? $_POST['respuesta_40'] : '';
-if ($respuesta_40 === '128') { 
+if ($respuesta_40 === '(b,c)') { 
     $verificar_40 = "correcto";
 } elseif ($respuesta_40 === '') {
     $verificar_40 = '';
@@ -483,7 +483,7 @@ if ($respuesta_40 === '128') {
 }
 
  $respuesta_41 = isset($_POST['respuesta_41']) ? $_POST['respuesta_41'] : '';
-if ($respuesta_41 === '144') { 
+if ($respuesta_41 === '(a,a)') { 
     $verificar_41 = "correcto";
 } elseif ($respuesta_41 === '') {
     $verificar_41 = '';
@@ -492,7 +492,7 @@ if ($respuesta_41 === '144') {
 }
 
  $respuesta_42 = isset($_POST['respuesta_42']) ? $_POST['respuesta_42'] : '';
-if ($respuesta_42 === '160') { 
+if ($respuesta_42 === 'A') { 
     $verificar_42 = "correcto";
 } elseif ($respuesta_42 === '') {
     $verificar_42 = '';
@@ -1123,15 +1123,128 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
-    .imagen { 
+    .imagen {
         max-width: 100%;
         height: auto;
     }
+    
+    .seccion {
+        width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+        padding: 20px; /* importante este padding*/
+        box-sizing: border-box;
+        height: 360vh;
+    }
+
+      .title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #2d3748;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .bit-diagram {
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.8;
+            background: #f7fafc;
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid #e2e8f0;
+            margin: 20px 0;
+        }
+        
+        .bit-row {
+            margin: 15px 0;
+            position: relative;
+        }
+        
+        .bit-sections {
+            font-weight: bold;
+            color: #1a202c;
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+        
+        .bit-b {
+            color: #e53e3e;
+            background: rgba(229, 62, 62, 0.1);
+            padding: 5px 10px;
+            border-radius: 8px;
+            margin: 0 5px;
+        }
+        
+        .bit-a {
+            color: #3182ce;
+            background: rgba(49, 130, 206, 0.1);
+            padding: 5px 10px;
+            border-radius: 8px;
+            margin: 0 5px;
+        }
+        
+        .arrows {
+            font-size: 14px;
+            color: #718096;
+            margin: 10px 0;
+            letter-spacing: 1px;
+        }
+        
+        .labels {
+            font-weight: bold;
+            color: #4a5568;
+            font-size: 14px;
+            margin-top: 15px;
+        }
+        
+        .label-high {
+            color: #e53e3e;
+            margin-right: 80px;
+        }
+        
+        .label-low {
+            color: #3182ce;
+        }
+        
+        .highlight {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.7;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        .info-box {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .info-box h3 {
+            margin: 0 0 10px 0;
+            font-size: 18px;
+        }
+        
+        .info-box p {
+            margin: 5px 0;
+            opacity: 0.9;
+        }
 </style>
  
 <script>
@@ -1434,107 +1547,151 @@ function ocultarMensaje4() {
 <body>
 <div class="seccion izquierda">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h3>✅ Sobre la línea continua y discontinua</h3>
-    <img src="../../../img/personal.png" alt="">
-    <ul>
-    <li>
-    <strong>🔹 Línea continua (<em>subordinado</em>)</strong><br>
-    Generalmente indica una <strong>relación obligatoria</strong> (participación total):<br>
-    &rarr; <em>Debe</em> existir un subordinado (es decir, el directivo <em>debe</em> tener al menos un subordinado).
-    </li>
-    <br>
-    <li>
-    <strong>🔹 Línea discontinua (<em>directivo</em>)</strong><br>
-    Suele indicar una <strong>relación opcional</strong> (participación parcial):<br>
-    &rarr; Un <code>PERSONAL</code> <em>puede o no</em> tener un directivo (es decir, algunos empleados no tienen jefe, como el director general).
-    </li>
-    </ul>
+    <h2>🔧 3. ¿Qué hace la operación <code>|</code> (OR bit a bit)?</h2>
+  <p>La operación OR bit a bit (<code>|</code>) compara dos números <strong>bit a bit</strong>.</p>
+  <p>Por cada posición, el resultado será <strong>1</strong> si <em>al menos uno</em> de los bits es 1.</p>
 
+  <p><strong>Tabla de verdad para OR (<code>|</code>):</strong></p>
+  <table border="1" cellpadding="10" cellspacing="0">
+  <thead>
+    <tr>
+      <th>A</th>
+      <th>B</th>
+      <th>A | B</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+  <h2>🧠 4. ¿Cómo se usa <code>|</code> y <code>&lt;&lt;</code> (desplazamiento) en lógica de checksums?</h2>
+  <p><strong>Caso:</strong> combinar dos bytes (por ejemplo, en Adler-32)</p>
+  <p>Supón que tienes:</p>
+  <ul>
+    <li><code>a = 389</code> → en binario: <code>00000001 10000101</code></li>
+    <li><code>b = 938</code> → en binario: <code>00000011 10101010</code></li>
+  </ul>
+
+  <h3>Paso 1: <code>b &lt;&lt; 16</code></h3>
+  <p>Desplazamos los bits de <code>b</code> 16 posiciones a la izquierda:</p>
+  <pre>
+b = 00000011 10101010 → se convierte en:
+b << 16 = 00000011 10101010 00000000 00000000
+  </pre>
+
+  <h3>Paso 2: <code>| a</code></h3>
+  <p>Luego se hace una operación OR con <code>a</code> para insertar sus bits al final:</p>
+  <pre>
+b desplazado:   00000011 10101010 00000000 00000000
+a en 16 bits:                         00000001 10000101
+Resultado OR (|): 00000011 10101010 00000001 10000101
+  </pre>
+  <p>Esto da un número de 32 bits: <strong>61415477</strong> en decimal.</p>
+
+  <h2>✅ En resumen</h2>
+  <table class="resumen">
+    <tr><th>Concepto</th><th>Significado</th></tr>
+    <tr><td>Bit</td><td>Unidad mínima de información (0 o 1).</td></tr>
+    <tr><td>Byte</td><td>Grupo de 8 bits (puede representar un número o carácter).</td></tr>
+    <tr><td><code>|</code> OR bit a bit</td><td>Combina bits: si alguno es 1, da 1.</td></tr>
+    <tr><td><code>&lt;&lt;</code> desplazamiento</td><td>Mueve bits hacia la izquierda, multiplicando por potencias de 2.</td></tr>
+    <tr><td>Lógica</td><td>Se usa para ensamblar partes (<code>a</code> y <code>b</code>) en un número mayor (como un checksum de 32 bits).</td></tr>
+  </table>
     <hr>
-    los subtipos tambien garantizan que sea excluyente.
-    <br><br>
-    " Por último, el personal que realiza funciones de directivo no aparecerá nunca
-    como personal de planta y ni al contrario."
-    <br><br>
-    <img src="../../../img/subtipo.png" alt="" width="600">
-    <br><br>
-    <img src="../../../img/subtipo_2.png" alt="" width="600">
-    <hr>
-    1. Relación 1:N (Uno a Muchos) →
-    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_1 ?>
 
-
-    <br><br>
-
-    2. Relación N:M (Muchos a Muchos) →
-    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_2 ?>
-    <br><br>
-
-    3. Relación 1:1 (Uno a Uno) →
-    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="10"> 
-    se crea una tabla extra.
-    Se maneja FK unica, excepto en casos especificos. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_3 ?>
-    <br><br>
-    <hr>
-
-    Si existe una relación (fuerte o débil), la entidad dependiente SIEMPRE tendrá una
-    clave foránea como atributo que hace referencia a la entidad principal.    
-
-    <hr>
-    <li>
-    Si la relación es 1:N (débil) → La entidad dependiente tendrá una clave foránea (FK), pero su clave primaria (PK)
-    se mantiene independiente.
-    </li>
-    <li>
-    Si la relación es 1:N (fuerte/identificadora) → La entidad dependiente tendrá una clave foránea (FK), pero esta 
-    también formará parte de su clave primaria (PK).
-    </li>
-    <li>
-    Si la relación es N:M → Se crea una tabla intermedia, donde ambas claves foráneas (de las entidades relacionadas)
-    forman la clave primaria compuesta.
-    </li>
-     <hr>
-
-
-    <strong>¿Qué significa "Origen Opcional"?</strong>
-    <br><br>
-    <strong>Especifica si la existencia de la entidad hija (lado N) depende o no de la entidad padre (lado 1).</strong>
-    <br><br>
-    <strong>Si "Origen Opcional" está MARCADO:</strong>
     <p>
-    <li>La relación se considera débil (no identificadora).</li>
-    <li>La entidad hija puede existir sin la entidad padre.</li>
-    <li> Se dibuja una línea discontinua con flecha.</li>
-    <li>Ejemplo:
-    Una persona puede existir sin estar asociada a una casa.</li>
-    </p>
-     
-    <strong>Si "Origen Opcional" está DESMARCADO:</strong>
-    <li>La relación se considera fuerte (identificadora).</li>
-    <li>La entidad hija depende completamente de la entidad padre.</li>
-    <li>Se dibuja una línea sólida.</li>
-    <li>Ejemplo:
-    Si Persona no puede existir sin una Casa, se forzaría a que ID_CASA forme parte de su clave primaria.
-    </li>
-    
-    <hr>
-    Cuando en un Modelo Entidad-Relación (MER) te dan un atributo en una relación (especialmente en relaciones
-    muchos a muchos), lo habitual es:
-    <br><br>
-    ✅ Lo que sucede:
-    <li>La relación con atributo se convierte en una entidad asociativa o entidad débil en el MER.</li> 
-    <li>Esta entidad asociativa "intermedia" representa la relación y contiene el atributo extra.
-    </li>
-    <br>
- </form>
+    <code>0xff</code> en binario de 32 bits es:  
+    <code>00000000 00000000 00000000 11111111</code>  
+    (<strong>24 ceros</strong> + <strong>8 unos</strong>).
+  </p>
+
+  <h2>¿Por qué?</h2>
+  <p>
+    <code>0xff</code> es un literal hexadecimal en Scala/Java que representa el valor <strong>255</strong> en decimal.
+  </p>
+
+     <p>
+    <code>&amp; 0xff</code> es una máscara de bits (<em>bitmask</em>) porque opera a nivel binario, "enmascarando" (filtrando) los bits que no nos interesan.
+  </p>
+
+  <h2>¿Por qué se llama "máscara"?</h2>
+  <p>
+    Imagina que <code>0xff</code> (que en binario es <code>11111111</code>) actúa como una plantilla que:
+  </p>
+  <ul>
+    <li>Permite pasar los bits que coinciden con <strong>1</strong>.</li>
+    <li>Bloquea los bits que coinciden con <strong>0</strong>.</li>
+  </ul>
+  <p>
+    En este caso, como <code>0xff</code> tiene sus últimos 8 bits en 1 y el resto en 0, la operación <code>&amp; 0xff</code> aísla los 8 bits menos significativos de un número, descartando el resto.
+  </p>
+
+  <h2>Ejemplo concreto: Convertir Byte negativo a Int positivo</h2>
+  <p>Un <code>Byte</code> en Java/Scala es con signo:</p>
+  <ul>
+    <li>Rango: -128 a 127.</li>
+  </ul>
+  <p>
+    Ejemplo: <code>-42</code> en binario (8 bits) es <code>11010110</code> (complemento a 2).
+  </p>
+  <p>
+    Cuando conviertes un <code>Byte</code> a <code>Int</code>, se extiende el signo:
+  </p>
+  <pre><code>
+-42 (Byte) → 11111111 11111111 11111111 11010110 (32 bits, conservando el signo negativo)
+  </code></pre>
+
+  <p>Aplicando la máscara <code>&amp; 0xff</code>:</p>
+  <pre><code>
+0xff en binario (32 bits): 00000000 00000000 00000000 11111111
+
+Operación AND bit a bit (&):
+11111111 11111111 11111111 11010110  (-42 extendido a Int)  
+&amp;
+00000000 00000000 00000000 11111111  (0xff)  
+--------------------------------
+00000000 00000000 00000000 11010110  (Resultado: 214)
+  </code></pre>
+
+  <p><strong>Efecto:</strong></p>
+  <ul>
+    <li>Los primeros 24 bits se "enmascaran" (se vuelven 0).</li>
+    <li>Solo los últimos 8 bits (el Byte original) se conservan, pero ahora como un valor positivo (<code>214</code>).</li>
+  </ul>
+
+  <h2>¿Por qué es necesario en <code>getBytes()</code>?</h2>
+  <p>
+    Cuando llamas a <code>text.getBytes("UTF-8")</code>, algunos caracteres (como <code>ñ</code>, <code>á</code>, emojis, etc.) se codifican como bytes negativos (por ejemplo, <code>-61</code>, <code>-111</code> para <code>ñ</code>).
+  </p>
+  <p>
+    Si no usas <code>&amp; 0xff</code>, al convertirlos a <code>Int</code> seguirían siendo negativos, lo que es incorrecto para procesamiento de bytes sin signo.
+  </p>
+
+  <h3>Ejemplo sin máscara (incorrecto):</h3>
+  <pre><code class="language-scala">
+val bytes = "ñ".getBytes("UTF-8")  // Array(-61, -111)
+bytes.map(_.toInt)                 // Array(-61, -111) ← ¡Negativos!
+  </code></pre>
+    </form>
 </div>
 
 
@@ -1542,8 +1699,132 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    
+    <code>   val text = "holañ"</code>
+    <br><br>
+   <img src="../../img/mascara.png" alt="" width="550">
+   <img src="../../img/mascara2.png" alt="" width="550">
+   <br>
+   <strong>con la palabra hola los resultados con mascara o sin mascara serian iguales, dado que no hay un caracter 
+    "estraño" como lo es: ñ.
+   </strong>
+   <br><br>
+    <table>
+        <caption>Conversión de Texto a Bytes</caption>
+        <thead>
+            <tr>
+                <th>Parte</th>
+                <th>Rol</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>UTF-8</td>
+                <td>Codifica el texto como bytes (binarios)</td>
+            </tr>
+            <tr>
+                <td>Byte en Scala/Java</td>
+                <td>Interpreta esos 8 bits como número con signo (de -128 a 127)</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <div class="container">
+        <h1 class="title">Valor Final de 32 Bits</h1>
+        
+        <div class="bit-diagram">
+            <div class="bit-row bit-sections">
+                [<span class="bit-b highlight">16 bits de B</span>][<span class="bit-a highlight">16 bits de A</span>]
+            </div>
+            
+            <div class="bit-row arrows">
+                ^^^^^^^^^^^^ ^^^^^^^^^^^^
+            </div>
+            
+            <div class="bit-row labels">
+                <span class="label-high">Bits altos</span>
+                <span class="label-low">Bits bajos</span>
+            </div>
+        </div>
+        
+        <div class="info-box">
+            <h3>Estructura de 32 bits</h3>
+            <p><strong>Bits 31-16:</strong> Valor B (bits más significativos)</p>
+            <p><strong>Bits 15-0:</strong> Valor A (bits menos significativos)</p>
+        </div>
+    </div>
 
+     <h1 class="title">Ejemplo: Valor Final de 32 Bits</h1>
+        
+        <div class="bit-diagram">
+            <div class="bit-row bit-sections">
+                [<span class="bit-b highlight">00000011 10101010</span>][<span class="bit-a highlight">00000000 00000000</span>]
+            </div>
+            
+            <div class="bit-row arrows">
+                ^^^^^^^^^^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^^^^^^^^^^
+            </div>
+            
+            <div class="bit-row labels">
+                <span class="label-high">Bits altos (31-16)</span>
+                <span class="label-low">Bits bajos (15-0)</span>
+            </div>
+        </div>
+        
+        <div class="info-box">
+            <h3>Análisis del valor específico</h3>
+            <p><strong>Bits altos (31-16):</strong> 00000011 10101010 = 0x03AA = 938 decimal</p>
+            <p><strong>Bits bajos (15-0):</strong> 00000000 00000000 = 0x0000 = 0 decimal</p>
+            <p><strong>Valor completo:</strong> 0x03AA0000 = 61,865,984 decimal</p>
+        </div>
+            <hr>
+      <img src="../../img/constante.png" alt="" width="550">
+         <img src="../../img/constante1.png" alt="" width="550">
+           <p>
+    <code>b</code> y <code>a</code> son <code>Int</code> (32 bits cada uno), pero solo usan los primeros 16 bits porque el módulo <code>adMOD = 65521</code> garantiza que nunca excedan 16 bits.
+  </p>
+      <p>Para saber si un número excede los 16 bits, lo más directo y preciso es fijarse en su representación binaria, pero hay una regla práctica sencilla:</p>
+
+  <p class="icon">✔ Regla rápida (sin convertir a binario):</p>
+  <ul>
+    <li>Un número entero <strong>sin signo</strong> cabe en 16 bits si está entre <code>0</code> y <code>65535</code>.</li>
+    <li>Un número entero <strong>con signo</strong> (como en Java/Scala <code>Short</code>) cabe en 16 bits si está entre <code>-32,768</code> y <code>32,767</code>.</li>
+  </ul>
+
+  <h3>¿Qué pasa con el número 16?</h3>
+  <p><code>16</code> en binario es <code>0000 0000 0001 0000</code> (5 bits realmente significativos).</p>
+  <p class="warning">❗ No excede los 16 bits, porque solo usa 5 bits.</p>
+
+  <p>De hecho, cualquier número entre <code>0</code> y <code>65535</code> cabe en 16 bits sin signo, y puedes verificarlo sin binario si está dentro de ese rango.</p>
+
+  <p class="icon">✔ Regla práctica:</p>
+  <p>Si estás trabajando con números positivos y el valor es menor o igual a <code>65535</code>, entonces 
+  <strong>no excede los 16 bits</strong>.</p>
+ 
+   <h2>Conversión de texto a bytes y procesamiento en Scala</h2>
+
+  <p><code>text.getBytes("UTF-8")</code> &rarr; Convierte el <code>String</code> a <code>Array[Byte]</code></p>
+
+  <p>Cada <code>Byte</code> tiene valores de <strong>-128 a 127</strong> (con signo, 8 bits).</p>
+
+  <p><code>.map(_ & 0xff)</code> &rarr; Aplica máscara para convertir a sin signo.</p>
+
+  <ul>
+    <li><code>& 0xff</code> convierte bytes con signo a valores <strong>0–255</strong></li>
+    <li>Ejemplo:
+      <ul>
+        <li><code>byte -1</code> se convierte en <code>255</code></li>
+        <li><code>byte -128</code> se convierte en <code>128</code></li>
+      </ul>
+    </li>
+  </ul>
+
+  <p><code>.toList</code> &rarr; Convierte a <code>List[Int]</code></p>
+
+
+
+    
+    </div>
+ 
     </form>
 </div>
 
@@ -1552,7 +1833,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="segundo.php"
+        href="tercero.php"
         role="button"
         width="50px"
         height="50px"

@@ -1124,7 +1124,7 @@ if ($respuesta_110 === '264') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
     <link rel="stylesheet" href="../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
@@ -1132,6 +1132,14 @@ if ($respuesta_110 === '264') {
         max-width: 100%;
         height: auto;
     }
+
+    .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 460vh;
+    }
+
 </style>
  
 <script>
@@ -1434,107 +1442,107 @@ function ocultarMensaje4() {
 <body>
 <div class="seccion izquierda">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h3>✅ Sobre la línea continua y discontinua</h3>
-    <img src="../../../img/personal.png" alt="">
-    <ul>
-    <li>
-    <strong>🔹 Línea continua (<em>subordinado</em>)</strong><br>
-    Generalmente indica una <strong>relación obligatoria</strong> (participación total):<br>
-    &rarr; <em>Debe</em> existir un subordinado (es decir, el directivo <em>debe</em> tener al menos un subordinado).
-    </li>
+    <strong>Relacion uno a muchos:</strong>
+    <img src="../../../img/chofer.png" alt="" width="600">
     <br>
-    <li>
-    <strong>🔹 Línea discontinua (<em>directivo</em>)</strong><br>
-    Suele indicar una <strong>relación opcional</strong> (participación parcial):<br>
-    &rarr; Un <code>PERSONAL</code> <em>puede o no</em> tener un directivo (es decir, algunos empleados no tienen jefe, como el director general).
-    </li>
-    </ul>
+    <strong>Siempre una relacion se lee en ambos sentidos</strong>
+    <br>
+      <h6>Desde CHOFER hacia CARRO:</h6>
+  <div class="section">
+    <p class="quote">"Un chofer debe conducir al menos un carro."</p>
+    <p>La línea continua sugiere que no puede existir un chofer sin carro asignado (participación total del lado del chofer).</p>
+  </div>
 
-    <hr>
-    los subtipos tambien garantizan que sea excluyente.
+  <h6>Desde CARRO hacia CHOFER:</h6>
+  <div class="section">
+    <p class="quote">"Un carro debe ser conducido por exactamente un chofer."</p>
+    <p>Esto ya era obligatorio por la cardinalidad implícita (N:1), pero la línea continua refuerza que el carro no puede existir sin chofer.</p>
+  </div> 
+  
+    Tambien es valido: 
+    <p><strong>Muchos carros deben ser conducidos por un chofer</strong></p>
+  <br>
+    <img src="../../../img/carro_chofer.png" alt="" width="600">
     <br><br>
-    " Por último, el personal que realiza funciones de directivo no aparecerá nunca
-    como personal de planta y ni al contrario."
-    <br><br>
-    <img src="../../../img/subtipo.png" alt="" width="600">
-    <br><br>
-    <img src="../../../img/subtipo_2.png" alt="" width="600">
-    <hr>
-    1. Relación 1:N (Uno a Muchos) →
-    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_1 ?>
+    <div class="explicacion">
+        <p>En el modelo relacional, cuando tienes una relación <strong>1:N (uno a muchos)</strong>, la <span class="clave">clave foránea</span> va en el lado <strong>"muchos"</strong>, y por tanto:</p>
+        <p class="flecha"> La flecha conceptual apunta hacia el lado <strong>"1"</strong>.</p>
+    </div>
+   
+    <div class="relacion">
+        <p><span class="importante">La flecha conceptual en el modelo relacional apunta de <strong>CARRO</strong> hacia <strong>CHOFER</strong>.</span></p>
+        <p>Por tanto, la tabla <strong>CARRO</strong> tendrá un campo <code>id_chofer</code> como <strong>clave foránea</strong>.</p>
+    </div>
 
-
-    <br><br>
-
-    2. Relación N:M (Muchos a Muchos) →
-    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_2 ?>
-    <br><br>
-
-    3. Relación 1:1 (Uno a Uno) →
-    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="10"> 
-    se crea una tabla extra.
-    Se maneja FK unica, excepto en casos especificos. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_3 ?>
-    <br><br>
-    <hr>
-
-    Si existe una relación (fuerte o débil), la entidad dependiente SIEMPRE tendrá una
-    clave foránea como atributo que hace referencia a la entidad principal.    
-
-    <hr>
-    <li>
-    Si la relación es 1:N (débil) → La entidad dependiente tendrá una clave foránea (FK), pero su clave primaria (PK)
-    se mantiene independiente.
-    </li>
-    <li>
-    Si la relación es 1:N (fuerte/identificadora) → La entidad dependiente tendrá una clave foránea (FK), pero esta 
-    también formará parte de su clave primaria (PK).
-    </li>
-    <li>
-    Si la relación es N:M → Se crea una tabla intermedia, donde ambas claves foráneas (de las entidades relacionadas)
-    forman la clave primaria compuesta.
-    </li>
-     <hr>
-
-
-    <strong>¿Qué significa "Origen Opcional"?</strong>
-    <br><br>
-    <strong>Especifica si la existencia de la entidad hija (lado N) depende o no de la entidad padre (lado 1).</strong>
-    <br><br>
-    <strong>Si "Origen Opcional" está MARCADO:</strong>
     <p>
-    <li>La relación se considera débil (no identificadora).</li>
-    <li>La entidad hija puede existir sin la entidad padre.</li>
-    <li> Se dibuja una línea discontinua con flecha.</li>
-    <li>Ejemplo:
-    Una persona puede existir sin estar asociada a una casa.</li>
+    <strong>¿Por qué la clave foránea va en el lado "muchos"?</strong> 
     </p>
-     
-    <strong>Si "Origen Opcional" está DESMARCADO:</strong>
-    <li>La relación se considera fuerte (identificadora).</li>
-    <li>La entidad hija depende completamente de la entidad padre.</li>
-    <li>Se dibuja una línea sólida.</li>
-    <li>Ejemplo:
-    Si Persona no puede existir sin una Casa, se forzaría a que ID_CASA forme parte de su clave primaria.
-    </li>
-    
+    <p>
+    Porque cada registro del lado "muchos" necesita saber a cuál registro del lado "uno" pertenece.
+    </p>
     <hr>
-    Cuando en un Modelo Entidad-Relación (MER) te dan un atributo en una relación (especialmente en relaciones
-    muchos a muchos), lo habitual es:
+    <strong>Relacion uno a uno (con carateristica anormal)</strong>
+    <img src="../../../img/datamodeler.png" alt="" width="600">
+     
+    <img src="../../../img/datamodeler_dos.png" alt="" width="600">
+
+
+    <h2>Diferencias entre Modelo Entidad-Relación y Modelo Relacional</h2>
+
+<div class="model-section">
+    <h3>En el Modelo Entidad-Relación:</h3>
+    <ul>
+        <li>Las relaciones pueden ser opcionales (ej: "un recolector PUEDE realizar recolecciones")</li>
+        <li>Se representan con cardinalidad (0..1, 1..1, 0..*, 1..*)</li>
+    </ul>
+</div>
+
+<div class="model-section">
+    <h3>En el Modelo Relacional:</h3>
+    <ul>
+        <li>La obligatoriedad se implementa con <code>NOT NULL</code> en las FK</li>
+        <li>Si una FK permite <code>NULL</code>, la relación es opcional</li>
+    </ul>
+</div>
+
+<h3>4. ¿Podrían ser opcionales?</h3>
+<p class="important">Sí, si el negocio lo permitiera. Por ejemplo, si:</p>
+<ul>
+    <li>Un recolector pudiera existir sin haber hecho recolecciones (FK nullable)</li>
+    <li>Una fruta pudiera existir sin estar asignada a zona (FK nullable)</li>
+</ul>
+
+ 
+<hr>
+<strong>El ejemplo de una person y records es cuando una relacion de 1 a 1 al tener elementos transitivos involucro otra tabla:</strong>
+<img src="../../../img/diagrama_dos.png" alt="" width="600">
+ <br>
+  <br>
+ <img src="../../../img/diagram.png" alt="" width="600">
+ <br> <br>
+<img src="../../../img/estudio.png" alt="" width="600">
+<br><br>
+<img src="../../../img/estudio_1.png" alt="" width="600">
     <br><br>
-    ✅ Lo que sucede:
-    <li>La relación con atributo se convierte en una entidad asociativa o entidad débil en el MER.</li> 
-    <li>Esta entidad asociativa "intermedia" representa la relación y contiene el atributo extra.
-    </li>
-    <br>
- </form>
+    <div class="cardinality-container">
+    <h3>Cardinalidades:</h3>
+    
+    <div class="cardinality-item">
+        <div class="cardinality-header">PERSONS (1,1)</div>
+        <div class="cardinality-desc">Cada persona se inscribe exactamente en un hobby</div>
+    </div>
+    
+    <div class="cardinality-item">
+        <div class="cardinality-header">HOBBIES (0,N)</div>
+        <div class="cardinality-desc">Un hobby puede tener desde cero hasta muchas personas inscritas</div>
+    </div>
+    
+    <div class="attributes-note">
+        Atributos: No tiene atributos propios (solo las FK)
+    </div>
+</div>
+<hr>
+   </form>
 </div>
 
 
@@ -1542,8 +1550,78 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <strong>Relaciones opcionales:</strong>
+    <img src="../../../img/producto.png" alt="" width="600">
+    <p>no hay asterisco, una categoria puede no tener, o tener uno o muchos productos</p>
+    <hr>
+    <strong>Tabla intermedia</strong>
+    <img src="../../../img/intermedia.png" alt="" width="600">
+    <br><br>
+    <img src="../../../img/intermedia_dos.png" alt="" width="600">
+    <br><br>
+    <strong>En esta ocasion dado que ambas relaciones de uno a muchos apuntan a una tabla, esta no tendra su Foreign key, 
+    sino su primary foreign key.
+    </strong>
+    <p><strong>Notece que en el modelo MER la tabla recoleccion no tenia primary key</strong></p>
     
+    <hr>
+    <p>
+    Todos los empleados deben estar afiliados a una EPS. El empleado, puede tener estado activo, retirado, jubilado, etc.
+    La fecha de salida, es la fecha de retiro, despido o jubilación dependiendo del caso.  La empresa tiene definidos
+    los cargos y estos dependen del departamento y aunque tienen definido un salario para cada cargo, también se requiere
+    almacenar el salario que tuvo en el momento que estuvo en el cargo.   
+    </p>
+    <img src="../../../img/empleado.png" alt="" width="600">
+    <br><br>
+    <img src="../../../img/empleado_dos.png" alt="" width="600">
+    <hr>
+    <strong>Relacion unitaria</strong>
+    <br><br>
+    <img src="../../../img/unitaria.png" alt="" width="600">
+    <br><br>
+    <img src="../../../img/unitaria_dos.png" alt="" width="600">
+     <br><br>
+     <h2>El Problema Fundamental (Relación Bidireccional)</h2>
 
+<p>Imagina dos tablas:</p>
+
+<pre>
+HOMBRE
+Tiene un campo que dice: "Mi esposa es [ID de MUJER]"
+
+MUJER
+Tiene un campo que dice: "Mi esposo es [ID de HOMBRE]"
+</pre>
+
+<p>Esto crea un círculo vicioso al insertar datos:</p>
+
+<ul>
+  <li>Para insertar un <strong>HOMBRE</strong>, necesitas saber primero qué <strong>MUJER</strong> es su esposa.</li>
+  <li>Pero para insertar esa <strong>MUJER</strong>, necesitas saber qué <strong>HOMBRE</strong> es su esposo.</li>
+  <li><strong>¡Ninguno puede existir sin que el otro exista primero!</strong></li>
+</ul>
+
+<h3>¿Por qué es malo técnicamente?</h3>
+
+<ul>
+  <li><strong>Imposibilidad de inserción:</strong> No puedes crear ningún registro porque cada uno depende del otro.</li>
+  <li><strong>Inconsistencia potencial:</strong></li>
+</ul>
+
+<pre>
+Si Juan dice que su esposa es María (ID 123)
+Pero María dice que su esposo es Pedro (ID 456)
+¡Los datos se contradicen!
+</pre>
+
+<ul>
+  <li><strong>Mantenimiento difícil:</strong></li>
+  <ul>
+    <li>Si eliminas un hombre, debes actualizar su mujer.</li>
+    <li>Si actualizas una mujer, debes actualizar su hombre.</li>
+  </ul>
+</ul>
+    <hr>
     </form>
 </div>
 

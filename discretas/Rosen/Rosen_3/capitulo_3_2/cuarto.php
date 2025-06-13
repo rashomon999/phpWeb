@@ -1123,14 +1123,20 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
-    .imagen { 
+    .imagen {
         max-width: 100%;
         height: auto;
+    }
+    .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 380vh;
     }
 </style>
  
@@ -1431,119 +1437,337 @@ function ocultarMensaje4() {
 </script>
     
 </head>
-<body>
+<body> 
 <div class="seccion izquierda">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h3>✅ Sobre la línea continua y discontinua</h3>
-    <img src="../../../img/personal.png" alt="">
-    <ul>
-    <li>
-    <strong>🔹 Línea continua (<em>subordinado</em>)</strong><br>
-    Generalmente indica una <strong>relación obligatoria</strong> (participación total):<br>
-    &rarr; <em>Debe</em> existir un subordinado (es decir, el directivo <em>debe</em> tener al menos un subordinado).
-    </li>
-    <br>
-    <li>
-    <strong>🔹 Línea discontinua (<em>directivo</em>)</strong><br>
-    Suele indicar una <strong>relación opcional</strong> (participación parcial):<br>
-    &rarr; Un <code>PERSONAL</code> <em>puede o no</em> tener un directivo (es decir, algunos empleados no tienen jefe, como el director general).
-    </li>
-    </ul>
+    <form action="./sexto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+        
+  <h3>Ejemplo 8: Orden de Crecimiento</h3>
+  <p>Ordena las funciones para que cada una sea Big-O de la siguiente:</p>
+  <ul>
+    <li>\( f_2(n) = (\log n)^2 \)</li>
+    <li>\( f_1(n) = 8\sqrt{n} = 8n^{1/2} \)</li>
+    <li>\( f_3(n) = 2n \log n \)</li>
+    <li>\( f_6(n) = n^2 \)</li>
+    <li>\( f_5(n) = (1.1)^n \)</li>
+    <li>\( f_4(n) = n! \)</li>
+  </ul>
+  <p>Por lo tanto, el orden de menor a mayor crecimiento es:</p>
+  <p>
+    \[
+      (\log n)^2 < 8\sqrt{n} < 2n \log n < n^2 < (1.1)^n < n!
+    \]
+  </p>
+  <hr>
+  <h2>3.2.4 El crecimiento de combinaciones de funciones</h2>
+
+<p>Muchos algoritmos están compuestos por dos o más subprocedimientos separados. El número de pasos que una computadora utiliza para resolver un problema con una entrada de tamaño dado usando un algoritmo así es la <strong>suma</strong> del número de pasos utilizados por estos subprocedimientos.</p>
+
+<p>Para dar una estimación Big-O del número total de pasos necesarios, es necesario encontrar estimaciones Big-O para cada subprocedimiento y luego combinarlas.</p>
+
+<p>Se pueden proporcionar estimaciones Big-O de combinaciones de funciones, siempre que se tenga cuidado al combinar diferentes estimaciones. En particular, a menudo es necesario estimar el crecimiento de la <strong>suma</strong> y del <strong>producto</strong> de dos funciones.</p>
+
+<p>¿Qué se puede decir si ya se conocen las estimaciones Big-O de dos funciones? Supongamos que:</p>
+
+<ul>
+  <li>\( f_1(x) = O(g_1(x)) \)</li>
+  <li>\( f_2(x) = O(g_2(x)) \)</li>
+</ul>
+
+<p>A partir de la definición de notación Big-O, existen constantes \( C_1, C_2, k_1, k_2 \) tales que:</p>
+
+<ul>
+  <li>\( |f_1(x)| \leq C_1 |g_1(x)| \) cuando \( x > k_1 \)</li>
+  <li>\( |f_2(x)| \leq C_2 |g_2(x)| \) cuando \( x > k_2 \)</li>
+</ul>
+
+<p>Para estimar la <strong>suma</strong> de \( f_1(x) \) y \( f_2(x) \), usamos la desigualdad triangular:</p>
+
+<p>\[
+| (f_1 + f_2)(x) | = | f_1(x) + f_2(x) | \leq |f_1(x)| + |f_2(x)|
+\]</p>
+
+<p>Cuando \( x > \max(k_1, k_2) \), se cumple que:</p>
+
+<p>\[
+|f_1(x)| + |f_2(x)| \leq C_1 |g_1(x)| + C_2 |g_2(x)| \leq C_1 |g(x)| + C_2 |g(x)| = (C_1 + C_2)|g(x)| = C|g(x)|
+\]</p>
+
+<p>donde:</p>
+<ul>
+  <li>\( g(x) = \max(|g_1(x)|, |g_2(x)|) \)</li>
+  <li>\( C = C_1 + C_2 \)</li>
+</ul>
+
+<p>Entonces:</p>
+
+<p>\[
+|(f_1 + f_2)(x)| \leq C \cdot g(x) \quad \text{cuando} \quad x > \max(k_1, k_2)
+\]</p>
+
+<h3>Teorema 2</h3>
+<p>Si \( f_1(x) = O(g_1(x)) \) y \( f_2(x) = O(g_2(x)) \), entonces:</p>
+
+<p>\[
+(f_1 + f_2)(x) = O(g(x)) \quad \text{donde} \quad g(x) = \max(|g_1(x)|, |g_2(x)|)
+\]</p>
+
+<h3>Corolario 1</h3>
+<p>Si tanto \( f_1(x) \) como \( f_2(x) \) son \( O(g(x)) \), entonces también lo es su suma:</p>
+
+<p>\[
+(f_1 + f_2)(x) = O(g(x))
+\]</p>
 
     <hr>
-    los subtipos tambien garantizan que sea excluyente.
-    <br><br>
-    " Por último, el personal que realiza funciones de directivo no aparecerá nunca
-    como personal de planta y ni al contrario."
-    <br><br>
-    <img src="../../../img/subtipo.png" alt="" width="600">
-    <br><br>
-    <img src="../../../img/subtipo_2.png" alt="" width="600">
-    <hr>
-    1. Relación 1:N (Uno a Muchos) →
-    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_1 ?>
+    <h1>Estimaciones Big-O para Productos de Funciones</h1>
 
+  <p>De manera similar, se pueden derivar estimaciones Big-O para el <strong>producto</strong> de las funciones \( f_1 \) y \( f_2 \).</p>
 
-    <br><br>
+  <p>Cuando \( x > \max(k_1, k_2) \), se cumple que:</p>
 
-    2. Relación N:M (Muchos a Muchos) →
-    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_2 ?>
-    <br><br>
+  <p>
+    \[
+    |(f_1 f_2)(x)| = |f_1(x)| \cdot |f_2(x)| \leq C_1 |g_1(x)| \cdot C_2 |g_2(x)| = C_1 C_2 |(g_1 g_2)(x)| \leq C |(g_1 g_2)(x)|
+    \]
+  </p>
 
-    3. Relación 1:1 (Uno a Uno) →
-    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="10"> 
-    se crea una tabla extra.
-    Se maneja FK unica, excepto en casos especificos. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_3 ?>
-    <br><br>
-    <hr>
+  <p>donde \( C = C_1 C_2 \).</p>
 
-    Si existe una relación (fuerte o débil), la entidad dependiente SIEMPRE tendrá una
-    clave foránea como atributo que hace referencia a la entidad principal.    
+  <p>Esto implica que \( f_1(x) f_2(x) = O(g_1(x) g_2(x)) \).</p>
 
-    <hr>
+  <h2>Teorema 3</h2>
+  <p>Si \( f_1(x) = O(g_1(x)) \) y \( f_2(x) = O(g_2(x)) \), entonces:</p>
+
+  <p>\[
+  (f_1 f_2)(x) = O(g_1(x) g_2(x))
+  \]</p>
+
+  <hr>
+
+  <h2>Ejemplo 9</h2>
+  <p>Dar una estimación Big-O para:</p>
+  <p>\[
+  f(n) = 3n \cdot \log(n!) + (n^2 + 3) \cdot \log n
+  \]</p>
+
+  <h3>Solución:</h3>
+  <ul>
     <li>
-    Si la relación es 1:N (débil) → La entidad dependiente tendrá una clave foránea (FK), pero su clave primaria (PK)
-    se mantiene independiente.
+      Sabemos que \( \log(n!) = O(n \log n) \), y \( 3n = O(n) \), entonces:
+      \[
+      3n \cdot \log(n!) = O(n^2 \log n)
+      \]
     </li>
     <li>
-    Si la relación es 1:N (fuerte/identificadora) → La entidad dependiente tendrá una clave foránea (FK), pero esta 
-    también formará parte de su clave primaria (PK).
+      Para \( n > 2 \), \( n^2 + 3 < 2n^2 \), por lo tanto:
+      \[
+      (n^2 + 3) \cdot \log n = O(n^2 \log n)
+      \]
     </li>
     <li>
-    Si la relación es N:M → Se crea una tabla intermedia, donde ambas claves foráneas (de las entidades relacionadas)
-    forman la clave primaria compuesta.
+      Combinando ambos términos:
+      \[
+      f(n) = O(n^2 \log n)
+      \]
     </li>
-     <hr>
+  </ul>
 
+  <hr>
 
-    <strong>¿Qué significa "Origen Opcional"?</strong>
-    <br><br>
-    <strong>Especifica si la existencia de la entidad hija (lado N) depende o no de la entidad padre (lado 1).</strong>
-    <br><br>
-    <strong>Si "Origen Opcional" está MARCADO:</strong>
-    <p>
-    <li>La relación se considera débil (no identificadora).</li>
-    <li>La entidad hija puede existir sin la entidad padre.</li>
-    <li> Se dibuja una línea discontinua con flecha.</li>
-    <li>Ejemplo:
-    Una persona puede existir sin estar asociada a una casa.</li>
-    </p>
-     
-    <strong>Si "Origen Opcional" está DESMARCADO:</strong>
-    <li>La relación se considera fuerte (identificadora).</li>
-    <li>La entidad hija depende completamente de la entidad padre.</li>
-    <li>Se dibuja una línea sólida.</li>
-    <li>Ejemplo:
-    Si Persona no puede existir sin una Casa, se forzaría a que ID_CASA forme parte de su clave primaria.
+  <h2>Ejemplo 10</h2>
+  <p>Dar una estimación Big-O para:</p>
+  <p>\[
+  f(x) = (x + 1) \cdot \log(x^2 + 1) + 3x^2
+  \]</p>
+
+  <h3>Solución:</h3>
+  <ul>
+    <li>
+      \( x + 1 = O(x) \) y para \( x > 1 \), se cumple:
+      \[
+      \log(x^2 + 1) \leq \log(2x^2) = \log 2 + 2 \log x \leq 3 \log x
+      \]
+      entonces:
+      \[
+      (x + 1) \cdot \log(x^2 + 1) = O(x \log x)
+      \]
     </li>
-    
-    <hr>
-    Cuando en un Modelo Entidad-Relación (MER) te dan un atributo en una relación (especialmente en relaciones
-    muchos a muchos), lo habitual es:
-    <br><br>
-    ✅ Lo que sucede:
-    <li>La relación con atributo se convierte en una entidad asociativa o entidad débil en el MER.</li> 
-    <li>Esta entidad asociativa "intermedia" representa la relación y contiene el atributo extra.
+    <li>
+      \( 3x^2 = O(x^2) \)
     </li>
-    <br>
- </form>
+    <li>
+      Como \( x \log x \leq x^2 \) para \( x > 1 \), entonces:
+      \[
+      f(x) = O(x^2)
+      \]
+    </li>
+  </ul>
+
+    </form>
 </div>
 
 
 
 
 <div class="seccion derecha">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    
+    <form action="./sexto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <h2>Definición: Desigualdad Triangular</h2>
+  <p>
+    La <strong>desigualdad triangular</strong> es una propiedad fundamental de los números reales, los vectores y otros espacios métricos. 
+    Establece que para cualesquiera dos números reales, vectores o funciones, se cumple que:
+  </p>
 
+  <p style="font-size: 1.2em; font-weight: bold;">
+    \[ |a + b| \leq |a| + |b| \]
+  </p>
+
+  <p>
+    Esta desigualdad indica que la magnitud (o longitud) de la suma de dos elementos nunca supera la suma de sus magnitudes individuales.
+    En geometría, representa que el lado de un triángulo no puede ser más largo que la suma de los otros dos lados.
+  </p>
+
+  <p>
+    En espacios vectoriales normados, se generaliza como:
+  </p>
+
+  <p style="font-size: 1.2em; font-weight: bold;">
+    \[ \|x + y\| \leq \|x\| + \|y\| \]
+  </p>
+
+  <p>
+    Esta propiedad es clave en el análisis matemático, especialmente en teoría de normas, geometría y topología.
+  </p>
+        <img src="../../img/desigualdad_triangular.png" alt="">
+        <h3>Ejemplo 1:</h3>
+  <ul>
+    <li><strong>a = 3</strong></li>
+    <li><strong>b = 5</strong></li>
+    <li>|a + b| = |3 + 5| = |8| = 8</li>
+    <li>|a| + |b| = |3| + |5| = 3 + 5 = 8</li>
+    <li><strong>Resultado: 8 ≤ 8 → Se cumple la desigualdad.</strong></li>
+  </ul>
+
+  <h3>Ejemplo 2:</h3>
+  <ul>
+    <li><strong>a = -4</strong></li>
+    <li><strong>b = 2</strong></li>
+    <li>|a + b| = |-4 + 2| = |-2| = 2</li>
+    <li>|a| + |b| = |−4| + |2| = 4 + 2 = 6</li>
+    <li><strong>Resultado: 2 ≤ 6 → Se cumple la desigualdad.</strong></li>
+  </ul>
+
+  <h3>Ejemplo 3:</h3>
+  <ul>
+    <li><strong>a = -7</strong></li>
+    <li><strong>b = -3</strong></li>
+    <li>|a + b| = |-7 + (-3)| = |-10| = 10</li>
+    <li>|a| + |b| = 7 + 3 = 10</li>
+    <li><strong>Resultado: 10 ≤ 10 → Se cumple la desigualdad.</strong></li>
+  </ul>
+    <hr>
+
+
+
+    <h2> Combinación de funciones en notación Big-O</h2>
+
+<h3>🔹 Regla para la <u>suma</u></h3>
+<p>
+Si tienes dos funciones: <code>f(x) = O(a(x))</code> y <code>g(x) = O(b(x))</code>,
+entonces:
+</p>
+<pre><code>f(x) + g(x) = O(max(a(x), b(x)))</code></pre>
+
+<p><strong>Ejemplo:</strong></p>
+<ul>
+  <li>f(x) = O(x)</li>
+  <li>g(x) = O(x²)</li>
+  <li><strong>Entonces:</strong> f(x) + g(x) = O(x²)</li>
+</ul>
+
+<hr>
+
+<h3>🔹 Regla para el <u>producto</u></h3>
+<p>
+Si tienes dos funciones: <code>f(x) = O(a(x))</code> y <code>g(x) = O(b(x))</code>,
+entonces:
+</p>
+<pre><code>f(x) * g(x) = O(a(x) * b(x))</code></pre>
+
+<p><strong>Ejemplo:</strong></p>
+<ul>
+  <li>f(x) = O(x)</li>
+  <li>g(x) = O(x)</li>
+  <li><strong>Entonces:</strong> f(x) * g(x) = O(x²)</li>
+</ul>
+
+<hr>
+
+<h3> Nota clave:</h3>
+<p>
+La suma toma el crecimiento más rápido de los dos (<code>max</code>), mientras que la multiplicación combina los crecimientos.
+</p>
+        <hr>
+
+
+
+    <h1>Notaciones Big-O, Big-Omega y Big-Theta</h1>
+
+  <h2>Limitaciones de Big-O</h2>
+  <p>
+    La notación <strong>Big-O</strong> describe una <strong>cota superior</strong> del crecimiento de una función. Es decir, si 
+    \( f(x) = O(g(x)) \), entonces \( f(x) \) no crece más rápido que \( g(x) \) para valores grandes de \( x \). 
+    Pero no dice nada sobre cuánto <em>mínimo</em> crece. Para eso usamos otras notaciones.
+  </p>
+
+  <h2>Notación Big-Omega \(\Omega\)</h2>
+  <p>
+    Decimos que \( f(x) = \Omega(g(x)) \) si existen constantes positivas \( C \) y \( k \) tal que:
+  </p>
+  <p style="text-align: center;">
+    \( |f(x)| \geq C|g(x)| \quad \text{para todo } x > k \)
+  </p>
+  <p>
+    Esto significa que \( f(x) \) <strong>crece al menos tan rápido</strong> como \( g(x) \). También se cumple que 
+    \( f(x) = \Omega(g(x)) \) si y solo si \( g(x) = O(f(x)) \).
+  </p>
+
+  <h3>Ejemplo:</h3>
+  <p>
+    Sea \( f(x) = 8x^3 + 5x^2 + 7 \). Para \( x > 0 \), claramente se cumple que:
+    <br>
+    \( f(x) \geq 8x^3 \Rightarrow f(x) = \Omega(x^3) \)
+  </p>
+
+  <h2>Notación Big-Theta \(\Theta\)</h2>
+  <p>
+    Cuando queremos establecer tanto una cota superior como una inferior, usamos \( \Theta \). Decimos que:
+    <br>
+    \( f(x) = \Theta(g(x)) \)
+  </p>
+  <p>
+    si existen constantes positivas \( C_1 \), \( C_2 \) y \( k \) tales que:
+  </p>
+  <p style="text-align: center;">
+    \( C_1|g(x)| \leq |f(x)| \leq C_2|g(x)| \quad \text{para todo } x > k \)
+    </p>
+
+    <h3>Ejemplo:</h3>
+    <p>
+    Sea \( f(n) = 1 + 2 + 3 + \ldots + n \). Sabemos que \( f(n) = O(n^2) \).
+    <br>
+    Ahora vamos a estimar una cota inferior:
+    <br>
+    Tomamos solo la mitad superior de los términos, desde \( \lceil n/2 \rceil \) hasta \( n \). Entonces:
+    </p>
+    <p style="text-align: center;">
+    \( f(n) \geq \left(\frac{n}{2}\right)^2 = \frac{n^2}{4} \Rightarrow f(n) = \Omega(n^2) \)
+    </p>
+    <p>
+    Como es \( O(n^2) \) y también \( \Omega(n^2) \), concluimos que \( f(n) = \Theta(n^2) \)
+    </p>
+
+    <hr>
+    
     </form>
 </div>
 
@@ -1552,7 +1776,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="segundo.php"
+        href="quinto.php"
         role="button"
         width="50px"
         height="50px"

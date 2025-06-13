@@ -1123,12 +1123,12 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
-    .imagen { 
+    .imagen {
         max-width: 100%;
         height: auto;
     }
@@ -1431,110 +1431,67 @@ function ocultarMensaje4() {
 </script>
     
 </head>
-<body>
+<body> 
 <div class="seccion izquierda">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h3>✅ Sobre la línea continua y discontinua</h3>
-    <img src="../../../img/personal.png" alt="">
+    comenzamos en la seccion 3.1
+    <br><br>
+    <h1>3.1.1 Introducción</h1>
+    <p>Existen muchas clases generales de problemas que surgen en matemáticas discretas. Por ejemplo: dado una secuencia de enteros, encontrar el más grande; dado un conjunto, listar todos sus subconjuntos; dado un conjunto de enteros, ordenarlos de menor a mayor; dado una red, encontrar el camino más corto entre dos vértices. Cuando se presenta un problema de este tipo, lo primero que se debe hacer es construir un modelo que traduzca el problema a un contexto matemático. Las estructuras discretas usadas en tales modelos incluyen conjuntos, secuencias y funciones—estructuras discutidas en el Capítulo 2—, así como otras estructuras como permutaciones, relaciones, grafos, árboles, redes y máquinas de estados finitos—conceptos que se discutirán en capítulos posteriores.</p>
+
+    <p>Establecer el modelo matemático adecuado es solo parte de la solución. Para completar la solución, se necesita un método que resuelva el problema general usando el modelo. Idealmente, lo que se requiere es un procedimiento que siga una secuencia de pasos que conduzca a la respuesta deseada. Tal secuencia de pasos se llama un algoritmo.</p>
+
+    <h2>Definición 1</h2>
+    <p>Un algoritmo es una secuencia finita de instrucciones precisas para realizar un cálculo o para resolver un problema. El término algoritmo es una corrupción del nombre al-Juarismi, un matemático del siglo IX, cuyo libro sobre los números hindúes es la base de la notación decimal moderna. Originalmente, la palabra <em>algorismo</em> se usaba para referirse a las reglas para realizar aritmética utilizando la notación decimal. El <em>algorismo</em> evolucionó a la palabra <em>algoritmo</em> en el siglo XVIII. Con el creciente interés en las máquinas de computación, el concepto de algoritmo adquirió un significado más general, para incluir todos los procedimientos definidos para resolver problemas, no solo los procedimientos para realizar aritmética. (Discutiremos algoritmos para realizar aritmética con enteros en el Capítulo 4.)</p>
+
+    <p>En este libro, discutiremos algoritmos que resuelven una amplia variedad de problemas. En esta sección, utilizaremos el problema de encontrar el entero más grande en una secuencia finita de enteros para ilustrar el concepto de un algoritmo y las propiedades que tienen los algoritmos. Además, describiremos algoritmos para localizar un elemento particular en un conjunto finito. En secciones posteriores, se discutirán procedimientos para encontrar el máximo común divisor de dos enteros, para encontrar el camino más corto entre dos puntos en una red, para multiplicar matrices, y así sucesivamente.</p>
+    <hr>
+
+    <h2>PROPIEDADES DE LOS ALGORITMOS</h2>
+    <p>Existen varias propiedades que los algoritmos generalmente comparten. Son útiles para tenerlas en cuenta cuando se describen algoritmos. Estas propiedades son:</p>
     <ul>
-    <li>
-    <strong>🔹 Línea continua (<em>subordinado</em>)</strong><br>
-    Generalmente indica una <strong>relación obligatoria</strong> (participación total):<br>
-    &rarr; <em>Debe</em> existir un subordinado (es decir, el directivo <em>debe</em> tener al menos un subordinado).
-    </li>
-    <br>
-    <li>
-    <strong>🔹 Línea discontinua (<em>directivo</em>)</strong><br>
-    Suele indicar una <strong>relación opcional</strong> (participación parcial):<br>
-    &rarr; Un <code>PERSONAL</code> <em>puede o no</em> tener un directivo (es decir, algunos empleados no tienen jefe, como el director general).
-    </li>
+        <li><strong>Entrada.</strong> Un algoritmo tiene valores de entrada provenientes de un conjunto especificado.</li>
+        <li><strong>Salida.</strong> A partir de cada conjunto de valores de entrada, un algoritmo produce valores de salida provenientes de un conjunto especificado. Los valores de salida son la solución al problema.</li>
+        <li><strong>Definición.</strong> Los pasos de un algoritmo deben estar definidos de manera precisa.</li>
+        <li><strong>Correctitud.</strong> Un algoritmo debe producir los valores de salida correctos para cada conjunto de valores de entrada.</li>
+        <li><strong>Finitud.</strong> Un algoritmo debe producir la salida deseada después de un número finito (pero quizás grande) de pasos para cualquier entrada en el conjunto.</li>
+        <li><strong>Efectividad.</strong> Debe ser posible realizar cada paso de un algoritmo de manera exacta y en una cantidad finita de tiempo.</li>
     </ul>
-
     <hr>
-    los subtipos tambien garantizan que sea excluyente.
-    <br><br>
-    " Por último, el personal que realiza funciones de directivo no aparecerá nunca
-    como personal de planta y ni al contrario."
-    <br><br>
-    <img src="../../../img/subtipo.png" alt="" width="600">
-    <br><br>
-    <img src="../../../img/subtipo_2.png" alt="" width="600">
-    <hr>
-    1. Relación 1:N (Uno a Muchos) →
-    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_1 ?>
-
-
-    <br><br>
-
-    2. Relación N:M (Muchos a Muchos) →
-    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_2 ?>
-    <br><br>
-
-    3. Relación 1:1 (Uno a Uno) →
-    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="10"> 
-    se crea una tabla extra.
-    Se maneja FK unica, excepto en casos especificos. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_3 ?>
-    <br><br>
+    <h2>ALGORITMO 1: Encontrar el Elemento Máximo en una Secuencia Finita</h2>
+    <p><code style="font-size: 20px;">procedure max(a1, a2, ..., an: integers)</code></p>
+    <p><code style="font-size: 20px;">max := a1</code></p>
+    <p><code style="font-size: 20px;">for i := 2 to n</code></p>
+    <p><code style="font-size: 20px;">if max < ai then max := ai</code></p>
+    <p><code style="font-size: 20px;">return max {max es el elemento más grande}</code></p>
     <hr>
 
-    Si existe una relación (fuerte o débil), la entidad dependiente SIEMPRE tendrá una
-    clave foránea como atributo que hace referencia a la entidad principal.    
 
-    <hr>
-    <li>
-    Si la relación es 1:N (débil) → La entidad dependiente tendrá una clave foránea (FK), pero su clave primaria (PK)
-    se mantiene independiente.
-    </li>
-    <li>
-    Si la relación es 1:N (fuerte/identificadora) → La entidad dependiente tendrá una clave foránea (FK), pero esta 
-    también formará parte de su clave primaria (PK).
-    </li>
-    <li>
-    Si la relación es N:M → Se crea una tabla intermedia, donde ambas claves foráneas (de las entidades relacionadas)
-    forman la clave primaria compuesta.
-    </li>
-     <hr>
-
-
-    <strong>¿Qué significa "Origen Opcional"?</strong>
-    <br><br>
-    <strong>Especifica si la existencia de la entidad hija (lado N) depende o no de la entidad padre (lado 1).</strong>
-    <br><br>
-    <strong>Si "Origen Opcional" está MARCADO:</strong>
-    <p>
-    <li>La relación se considera débil (no identificadora).</li>
-    <li>La entidad hija puede existir sin la entidad padre.</li>
-    <li> Se dibuja una línea discontinua con flecha.</li>
-    <li>Ejemplo:
-    Una persona puede existir sin estar asociada a una casa.</li>
-    </p>
-     
-    <strong>Si "Origen Opcional" está DESMARCADO:</strong>
-    <li>La relación se considera fuerte (identificadora).</li>
-    <li>La entidad hija depende completamente de la entidad padre.</li>
-    <li>Se dibuja una línea sólida.</li>
-    <li>Ejemplo:
-    Si Persona no puede existir sin una Casa, se forzaría a que ID_CASA forme parte de su clave primaria.
-    </li>
+    <h2>3.1.2 Algoritmos de Búsqueda</h2>
+    <p>El problema de localizar un elemento en una lista ordenada ocurre en muchos contextos. Por ejemplo, un programa que verifica la ortografía de palabras las busca en un diccionario, que es solo una lista ordenada de palabras. Los problemas de este tipo se llaman problemas de búsqueda. Discutiremos varios algoritmos para la búsqueda en esta sección. Estudiaremos la cantidad de pasos que utiliza cada uno de estos algoritmos en la Sección 3.3.</p>
     
-    <hr>
-    Cuando en un Modelo Entidad-Relación (MER) te dan un atributo en una relación (especialmente en relaciones
-    muchos a muchos), lo habitual es:
-    <br><br>
-    ✅ Lo que sucede:
-    <li>La relación con atributo se convierte en una entidad asociativa o entidad débil en el MER.</li> 
-    <li>Esta entidad asociativa "intermedia" representa la relación y contiene el atributo extra.
-    </li>
-    <br>
- </form>
+    <p>El problema general de búsqueda se puede describir de la siguiente manera: Localizar un elemento x en una lista de elementos distintos a<sub>1</sub>, a<sub>2</sub>, …, a<sub>n</sub>, o determinar que no está en la lista. La solución a este problema de búsqueda es la ubicación del término en la lista que es igual a x (es decir, i es la solución si x = a<sub>i</sub>) y es 0 si x no está en la lista.</p>
+    
+    <h3>LA BÚSQUEDA LINEAL</h3>
+    <p>El primer algoritmo que presentaremos se llama algoritmo de búsqueda lineal, o búsqueda secuencial. El algoritmo de búsqueda lineal comienza comparando x con a<sub>1</sub>. Cuando x = a<sub>1</sub>, la solución es la ubicación de a<sub>1</sub>, es decir, 1. Cuando x ≠ a<sub>1</sub>, compara x con a<sub>2</sub>. Si x = a<sub>2</sub>, la solución es la ubicación de a<sub>2</sub>, es decir, 2. Cuando x ≠ a<sub>2</sub>, compara x con a<sub>3</sub>. Continúa este proceso, comparando x sucesivamente con cada término de la lista hasta que se encuentre una coincidencia, donde la solución es la ubicación de ese término, a menos que no ocurra ninguna coincidencia. Si toda la lista se ha buscado sin localizar x, la solución es 0. El pseudocódigo para el algoritmo de búsqueda lineal se muestra como el Algoritmo 2.</p>
+
+    <h3>ALGORITMO 2: El Algoritmo de Búsqueda Lineal</h3>
+    <pre>
+procedure linear search(x: integer, a1, a2,… , an: distinct integers)
+    i := 1
+    while (i ≤ n and x ≠ ai)
+        i := i + 1
+    if i ≤ n then location := i
+    else location := 0
+    return location{location is the subscript of the term that equals x, or is 0 if x is not found}
+    </pre>
+
+    <h3>LA BÚSQUEDA BINARIA</h3>
+    <p>Ahora consideraremos otro algoritmo de búsqueda. Este algoritmo puede ser utilizado cuando la lista tiene términos que ocurren en orden creciente (por ejemplo: si los términos son números, están listados de menor a mayor; si son palabras, están listadas en orden léxico o alfabético). Este segundo algoritmo de búsqueda se llama algoritmo de búsqueda binaria. Procede comparando el elemento que se desea localizar con el término medio de la lista. Luego, la lista se divide en dos sublistas más pequeñas del mismo tamaño, o donde una de estas sublistas tiene un término menos que la otra. La búsqueda continúa restringiendo la búsqueda a la sublista apropiada según la comparación del elemento que se desea localizar y el término medio. En la Sección 3.3, se mostrará que el algoritmo de búsqueda binaria es mucho más eficiente que el algoritmo de búsqueda lineal. El Ejemplo 3 demuestra cómo funciona una búsqueda binaria.</p>
+
+    
+
+    </form>
 </div>
 
 
@@ -1542,8 +1499,62 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <h3>Ejemplo 3</h3>
+    <p>Para buscar 19 en la lista:</p>
+    <pre>
+    1 2 3 5 6 7 8 10 12 13 15 16 18 19 20 22
+    </pre>
+    <p>Primero, divide esta lista, que tiene 16 términos, en dos listas más pequeñas con ocho términos cada una:</p>
+    <pre>
+    1 2 3 5 6 7 8 10   12 13 15 16 18 19 20 22
+    </pre>
     
 
+    <p>Luego, compara 19 con el mayor término de la primera lista. Como 10 < 19, la búsqueda de 19 puede restringirse a la lista que contiene los términos 9 al 16 de la lista original. Después, divide esta lista, que tiene ocho términos, en dos listas más pequeñas de cuatro términos cada una:</p>
+    <pre>
+    12 13 15 16   18 19 20 22
+    </pre>
+    <p>Como 16 < 19 (comparando 19 con el mayor término de la primera lista), la búsqueda se restringe a la segunda de estas listas, que contiene los términos 13 al 16 de la lista original. La lista 18 19 20 22 se divide en dos listas, a saber:</p>
+    <pre>
+    18 19   20 22
+    </pre>
+    <p>Como 19 no es mayor que el mayor término de la primera de estas dos listas, que también es 19, la búsqueda se restringe a la primera lista: 18 19, que contiene los términos 13 y 14 de la lista original. Luego, esta lista de dos términos se divide en dos listas de un término cada una: 18 y 19. Como 18 < 19, la búsqueda se restringe a la segunda lista: la lista que contiene el término 14 de la lista, que es 19. Ahora que la búsqueda se ha reducido a un solo término, se realiza una comparación y se localiza 19 como el término 14 en la lista original.</p>
+
+    <p>Ahora especificamos los pasos del algoritmo de búsqueda binaria. Para buscar el entero x en la lista a<sub>1</sub>, a<sub>2</sub>, …, a<sub>n</sub>, donde a<sub>1</sub> < a<sub>2</sub> < ⋯ < a<sub>n</sub>, comience comparando x con el término medio a<sub>m</sub> de la lista, donde m = ⌊(n + 1) / 2⌋. (Recuerde que ⌊x⌋ es el mayor entero que no excede a x.) Si x > a<sub>m</sub>, la búsqueda de x se restringe a la segunda mitad de la lista, que es a<sub>m+1</sub>, a<sub>m+2</sub>, …, a<sub>n</sub>. Si x no es mayor que a<sub>m</sub>, la búsqueda de x se restringe a la primera mitad de la lista, que es a<sub>1</sub>, a<sub>2</sub>, …, a<sub>m</sub>.</p>
+
+    <h3>ALGORITMO 3: El Algoritmo de Búsqueda Binaria</h3>
+    <pre>
+procedure binary search (x: integer, a1, a2,… , an: increasing integers)
+    i := 1{ i is left endpoint of search interval }
+    j := n { j is right endpoint of search interval }
+    while i < j
+        m := ⌊(i + j) / 2⌋
+        if x > am then i := m + 1
+        else j := m
+        if x = ai then location := i
+        else location := 0
+    return location{location is the subscript i of the term ai equal to x,
+         or 0 if x is not found}
+    </pre>
+
+    <p>El Algoritmo 3 procede sucesivamente restringiendo la parte de la secuencia que se está buscando.
+         En cualquier etapa dada, solo se consideran los términos desde a<sub>i</sub> hasta a<sub>j</sub>. En otras palabras, i y j son los subíndices más pequeños y más grandes de los términos restantes, respectivamente. El Algoritmo 3 continúa restringiendo la parte de la secuencia que se está buscando hasta que solo queda un término de la secuencia. Cuando esto se hace, se realiza una comparación para ver si este término es igual a x.</p>
+
+    <hr>
+
+    <h2>3.1.3 Ordenamiento</h2>
+
+<p>Ordenar los elementos de una lista es un problema que aparece en muchos contextos. Por ejemplo, para producir un directorio telefónico es necesario ordenar alfabéticamente los nombres de los suscriptores. De manera similar, producir un directorio de canciones disponibles para descarga requiere que sus títulos se ordenen alfabéticamente. Ordenar direcciones en una lista de correos electrónicos puede determinar si hay direcciones duplicadas. Crear un diccionario útil requiere que las palabras se ordenen alfabéticamente. Del mismo modo, generar una lista de piezas requiere ordenarlas según un número de parte creciente.</p>
+
+<p>Supongamos que tenemos una lista de elementos de un conjunto. Además, supongamos que tenemos una manera de ordenar los elementos del conjunto. (La noción de ordenar elementos de conjuntos se discutirá en detalle en la Sección 9.6). Ordenar es colocar estos elementos en una lista en la que los elementos estén en orden creciente. Por ejemplo, ordenar la lista 7, 2, 1, 4, 5, 9 produce la lista 1, 2, 4, 5, 7, 9. Ordenar la lista d, h, c, a, f (usando el orden alfabético) produce la lista a, c, d, f, h.</p>
+
+<p>Un porcentaje sorprendentemente grande de los recursos de cómputo se dedica a ordenar una cosa u otra. Por lo tanto, se ha dedicado mucho esfuerzo al desarrollo de algoritmos de ordenamiento. Un número sorprendentemente grande de algoritmos de ordenamiento se ha ideado utilizando estrategias distintas, ¡y continuamente se introducen nuevos! En el tercer volumen de su obra fundamental <i>The Art of Computer Programming</i> [Kn98], Donald Knuth dedica cerca de 400 páginas al ordenamiento, cubriendo en profundidad alrededor de 15 algoritmos diferentes. Se han ideado más de 100 algoritmos de ordenamiento, y sorprende cuán a menudo se desarrollan nuevos. Entre los algoritmos de ordenamiento más recientes que han ganado popularidad se encuentra un algoritmo ampliamente útil llamado <i>Timsort</i>, que fue inventado en 2002, y el <i>library sort</i>, también conocido como <i>gapped insertion sort</i>, inventado en 2006. El ordenamiento se considera el problema resuelto por la mayor cantidad de algoritmos fundamentalmente diferentes.</p>
+
+<p>Existen muchas razones por las cuales los algoritmos de ordenamiento interesan a los científicos de la computación y a los matemáticos. Entre estas razones están que algunos algoritmos son más fáciles de implementar, algunos son más eficientes (ya sea en general o cuando se les da una entrada con ciertas características, como listas ligeramente desordenadas), algunos algoritmos aprovechan arquitecturas particulares de computadoras, y algunos son particularmente ingeniosos. En esta sección introduciremos dos algoritmos de ordenamiento: el ordenamiento burbuja y el ordenamiento por inserción. Otros dos algoritmos, el ordenamiento por selección y el ordenamiento binario por inserción, se presentan en los ejercicios, y el ordenamiento tipo shaker se introduce en los Ejercicios Suplementarios. En la Sección 5.4 discutiremos el ordenamiento por mezcla (<i>merge sort</i>) e introduciremos el ordenamiento rápido (<i>quick sort</i>) en los ejercicios de esa sección; el ordenamiento por torneo (<i>tournament sort</i>) se introduce en el conjunto de ejercicios de la Sección 11.2. Cubrimos algoritmos de ordenamiento tanto porque el ordenamiento es un problema importante como porque estos algoritmos pueden servir como ejemplos de muchos conceptos importantes.</p>
+
+<h3>EL ORDENAMIENTO BURBUJA</h3>
+<p>El ordenamiento burbuja es uno de los algoritmos de ordenamiento más simples, aunque no uno de los más eficientes. Pone una lista en orden creciente comparando sucesivamente elementos adyacentes e intercambiándolos si están en el orden incorrecto. Para llevar a cabo el ordenamiento burbuja, realizamos la operación básica, es decir, intercambiar un elemento mayor con uno menor que lo sigue, comenzando al inicio de la lista, en un recorrido completo. Iteramos este procedimiento hasta que el ordenamiento esté completo. El pseudocódigo para el ordenamiento burbuja se presenta como el Algoritmo 4. Podemos imaginar los elementos de la lista colocados en una columna. En el ordenamiento burbuja, los elementos más pequeños "flotan" hacia la parte superior al ser intercambiados con elementos mayores. Los elementos más grandes "se hunden" hacia el fondo. Esto se ilustra en el Ejemplo 4.</p>
+ 
     </form>
 </div>
 

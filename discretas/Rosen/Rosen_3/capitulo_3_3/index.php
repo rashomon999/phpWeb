@@ -1123,14 +1123,20 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
-    .imagen { 
+    .imagen {
         max-width: 100%;
         height: auto;
+    }
+    .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 380vh;
     }
 </style>
  
@@ -1431,119 +1437,293 @@ function ocultarMensaje4() {
 </script>
     
 </head>
-<body>
+<body> 
 <div class="seccion izquierda">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h3>✅ Sobre la línea continua y discontinua</h3>
-    <img src="../../../img/personal.png" alt="">
+    <form action="./octavo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+                    
+<p><strong>Caso while:</strong> A diferencia del <code>for</code>, este aumenta a medida que avanza, ejecutándose <em>n</em> veces en lugar de <em>n − 1</em>.</p>
+
+<h2>Algoritmo: Búsqueda Lineal</h2>
+<pre>
+procedure linear_search(x: integer, a₁, a₂,… , aₙ: distinct integers)
+  i := 1
+  while (i ≤ n and x ≠ aᵢ)
+    i := i + 1
+  if i ≤ n then location := i
+  else location := 0
+  return location
+</pre>
+
+    <h3>¿Cómo se mide entonces la complejidad si depende?</h3>
+    <p>Lo que hacemos es análisis de casos:</p>
+
+    <h4>Caso 1: Mejor caso (cuando x es el primer elemento a₁)</h4>
+    <p>
+    El <code>while</code> se ejecuta una sola vez y se rompe inmediatamente porque \( x = a_1 \).<br>
+    Se hacen solo 1 comparación de control (\( i \leq n \)) y 1 comparación de igualdad (\( x \neq a_1 \)).<br>
+    <strong>Total:</strong> 2 comparaciones dentro del bucle, + 1 fuera del bucle.<br>
+    Muy rápido, complejidad constante → <strong>\( \Theta(1) \)</strong>.
+    </p>
+
+    <h4>Caso 2: Peor caso (cuando x NO está en la lista)</h4>
+    <p>
+    El <code>while</code> se ejecuta <strong>n</strong> veces, porque nunca encuentra a <em>x</em> y llega hasta el final.<br>
+    En cada iteración se hacen:
     <ul>
-    <li>
-    <strong>🔹 Línea continua (<em>subordinado</em>)</strong><br>
-    Generalmente indica una <strong>relación obligatoria</strong> (participación total):<br>
-    &rarr; <em>Debe</em> existir un subordinado (es decir, el directivo <em>debe</em> tener al menos un subordinado).
-    </li>
-    <br>
-    <li>
-    <strong>🔹 Línea discontinua (<em>directivo</em>)</strong><br>
-    Suele indicar una <strong>relación opcional</strong> (participación parcial):<br>
-    &rarr; Un <code>PERSONAL</code> <em>puede o no</em> tener un directivo (es decir, algunos empleados no tienen jefe, como el director general).
-    </li>
+    <li>Una comparación \( i \leq n \)</li>
+    <li>Una comparación \( x \neq a_i \)</li>
+    </ul>
+    Luego se suman:
+    <ul>
+    <li>Una comparación más de \( i \leq n \) que falla y termina el bucle.</li>
+    <li>Una más fuera del bucle (\( \text{if } i \leq n \)).</li>
+    </ul>
+    <strong>Total:</strong> \( 2n \) (dentro del bucle) + 1 (salida del bucle) + 1 (después del bucle) = <strong>\( 2n + 2 \)</strong> comparaciones.
+    </p>
+
+    <h4>¿El bucle es dependiente, pero igual se puede contar?</h4>
+    <p>
+    Sí, el número de iteraciones del <code>while</code> depende del valor de <em>x</em> y su posición, pero en análisis de algoritmos evaluamos:
+    <ul>
+    <li><strong>Peor caso:</strong> ¿cuántas veces como máximo puede ejecutarse?</li>
+    <li><strong>Mejor caso:</strong> ¿cuántas veces como mínimo puede ejecutarse?</li>
+    </ul>
+    Nos interesa el peor caso porque garantiza que el algoritmo nunca tardará más que eso.
+    </p>
+
+    <h3>Conclusión</h3>
+    <p>
+    Cuando <strong>x</strong> no está en la lista, se utilizan \( 2n + 2 \) comparaciones.<br>
+    Por lo tanto, la búsqueda lineal requiere <strong>\( \Theta(n) \)</strong> comparaciones en el <strong>peor caso</strong>, ya que \( 2n + 2 \in \Theta(n) \).
+    </p>
+
+    <p>
+    Aunque el <code>while</code> dependa del contenido, el número de ejecuciones se puede contar:<br>
+    <ul>
+    <li>Cada iteración hace 2 comparaciones.</li>
+    <li>El bucle se ejecuta hasta que se encuentra <em>x</em> o se llega al final.</li>
+    </ul>
+    Entonces, en el peor caso, se ejecuta <strong>n</strong> veces → complejidad <strong>\( \Theta(n) \)</strong>.
+    </p>
+
+    <h3>¿Y qué pasa con \( \Theta(n) \)?</h3>
+    <p>
+    Para demostrar que también es \( \Omega(n) \) (cota inferior), notamos que incluso en el mejor caso hay al menos 3 comparaciones.<br>
+    Si <em>x</em> está en la posición <em>i</em>, se hacen \( 2i + 1 \) comparaciones.<br>
+    Esto crece linealmente con <em>n</em> en el peor caso (cuando <em>x</em> está al final o no está).
+    </p>
+
+    <pre>
+    f(n) ∈ Ω(n) y f(n) ∈ O(n) ⇒ f(n) ∈ Θ(n)
+    </pre>
+
+    <h3>Conclusión Final</h3>
+    <p>
+    El número total de comparaciones depende de la posición de <em>x</em>, pero en el peor caso es proporcional a <em>n</em>.<br>
+    Entonces: la búsqueda lineal tiene <strong>\( \Theta(n) \)</strong> de complejidad temporal en el peor caso.
+    </p>
+    <hr>
+    <strong>Si multiplico por la base 3 veces el mismo numero, puedo dividir por el mismo numero
+    el resultado 3 veces</strong>
+    <hr>
+    <h2> ALGORITMO 3: El Algoritmo de Búsqueda Binaria</h2>
+  <pre>
+    procedure binary_search(x: entero, a₁, a₂,… , aₙ: enteros en orden creciente)
+        i := 1     {i es el extremo izquierdo del intervalo de búsqueda}
+        j := n     {j es el extremo derecho del intervalo de búsqueda}
+        while i < j
+            m := ⌊(i + j) / 2⌋
+            if x > aₘ then i := m + 1
+            else j := m
+        if x = aᵢ then location := i
+        else location := 0
+        return location
+        {location es el subíndice i del término aᵢ igual a x, o 0 si x no se encuentra}
+  </pre>
+
+  <h2> EJEMPLO 3: Complejidad Temporal de la Búsqueda Binaria</h2>
+
+  <div class="highlight">
+    <strong>Descripción:</strong> Vamos a describir la complejidad temporal del algoritmo de búsqueda binaria en términos del número de comparaciones utilizadas (ignorando el tiempo que toma calcular m = ⌊(i + j)/2⌋ en cada iteración del bucle).
+  </div>
+
+  <h3> Suposición inicial:</h3>
+  <p>Supongamos, para simplificar, que hay <strong>n = 2<sup>k</sup></strong> elementos en la lista a₁, a₂, ..., aₙ, donde <strong>k</strong> es un entero no negativo. Observa que <strong>k = log n</strong>.</p>
+  <p>(Si n no es una potencia de 2, se puede imaginar como parte de una lista más grande con <strong>2<sup>k+1</sup></strong> elementos, donde <strong>2<sup>k</sup> &lt; n &lt; 2<sup>k+1</sup></strong>. Aquí, <strong>2<sup>k+1</sup></strong> es la menor potencia de 2 mayor que n).</p>
+
+  <h3> ¿Qué sucede en cada etapa?</h3>
+  <ul>
+    <li>Se comparan las posiciones <strong>i</strong> y <strong>j</strong> para ver si el intervalo aún contiene más de un elemento.</li>
+    <li>Si <strong>i &lt; j</strong>, se hace una comparación para ver si <strong>x &gt; aₘ</strong>, donde m es el índice medio.</li>
+    <li>Entonces, se hacen <strong>dos comparaciones por etapa</strong>: una para decidir si continuar, otra para decidir cómo dividir.</li>
+  </ul>
+
+    <h3> Progreso del algoritmo:</h3>
+    <ul>
+    <li>Primera etapa: lista de <strong>2<sup>k</sup></strong> elementos → 2 comparaciones.</li>
+    <li>Segunda etapa: se reduce a <strong>2<sup>k−1</sup></strong> elementos → 2 comparaciones más.</li>
+    <li>... y así sucesivamente.</li>
+    <li>Cuando quedan solo 2 elementos → 2 comparaciones.</li>
+    <li>Finalmente, queda 1 término → se hacen 2 comparaciones más.</li>
     </ul>
 
-    <hr>
-    los subtipos tambien garantizan que sea excluyente.
-    <br><br>
-    " Por último, el personal que realiza funciones de directivo no aparecerá nunca
-    como personal de planta y ni al contrario."
-    <br><br>
-    <img src="../../../img/subtipo.png" alt="" width="600">
-    <br><br>
-    <img src="../../../img/subtipo_2.png" alt="" width="600">
-    <hr>
-    1. Relación 1:N (Uno a Muchos) →
-    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_1 ?>
-
-
-    <br><br>
-
-    2. Relación N:M (Muchos a Muchos) →
-    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_2 ?>
-    <br><br>
-
-    3. Relación 1:1 (Uno a Uno) →
-    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="10"> 
-    se crea una tabla extra.
-    Se maneja FK unica, excepto en casos especificos. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_3 ?>
-    <br><br>
-    <hr>
-
-    Si existe una relación (fuerte o débil), la entidad dependiente SIEMPRE tendrá una
-    clave foránea como atributo que hace referencia a la entidad principal.    
-
-    <hr>
-    <li>
-    Si la relación es 1:N (débil) → La entidad dependiente tendrá una clave foránea (FK), pero su clave primaria (PK)
-    se mantiene independiente.
-    </li>
-    <li>
-    Si la relación es 1:N (fuerte/identificadora) → La entidad dependiente tendrá una clave foránea (FK), pero esta 
-    también formará parte de su clave primaria (PK).
-    </li>
-    <li>
-    Si la relación es N:M → Se crea una tabla intermedia, donde ambas claves foráneas (de las entidades relacionadas)
-    forman la clave primaria compuesta.
-    </li>
-     <hr>
-
-
-    <strong>¿Qué significa "Origen Opcional"?</strong>
-    <br><br>
-    <strong>Especifica si la existencia de la entidad hija (lado N) depende o no de la entidad padre (lado 1).</strong>
-    <br><br>
-    <strong>Si "Origen Opcional" está MARCADO:</strong>
-    <p>
-    <li>La relación se considera débil (no identificadora).</li>
-    <li>La entidad hija puede existir sin la entidad padre.</li>
-    <li> Se dibuja una línea discontinua con flecha.</li>
-    <li>Ejemplo:
-    Una persona puede existir sin estar asociada a una casa.</li>
-    </p>
-     
-    <strong>Si "Origen Opcional" está DESMARCADO:</strong>
-    <li>La relación se considera fuerte (identificadora).</li>
-    <li>La entidad hija depende completamente de la entidad padre.</li>
-    <li>Se dibuja una línea sólida.</li>
-    <li>Ejemplo:
-    Si Persona no puede existir sin una Casa, se forzaría a que ID_CASA forme parte de su clave primaria.
-    </li>
-    
-    <hr>
-    Cuando en un Modelo Entidad-Relación (MER) te dan un atributo en una relación (especialmente en relaciones
-    muchos a muchos), lo habitual es:
-    <br><br>
-    ✅ Lo que sucede:
-    <li>La relación con atributo se convierte en una entidad asociativa o entidad débil en el MER.</li> 
-    <li>Esta entidad asociativa "intermedia" representa la relación y contiene el atributo extra.
-    </li>
-    <br>
- </form>
+    <h3> Total de comparaciones:</h3>
+    <p>Se hacen 2 comparaciones por cada etapa, y hay <strong>k = log n</strong> etapas, más 2 comparaciones finales. Entonces:</p>
+    <p><strong>Total = 2 log n + 2</strong></p>
+ 
+    </form>
 </div>
 
 
 
 
 <div class="seccion derecha">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    
+    <form action="./octavo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+        
+    <h3> Conclusión:</h3>
+    <ul>
+    <li>Si la lista tiene <strong>n</strong> elementos y <strong>n = 2<sup>k</sup></strong>, se requieren a lo sumo <strong>2 log n + 2</strong> comparaciones.</li>
+    <li>Si <strong>n</strong> no es potencia de 2, se extiende a una lista de <strong>2<sup>k+1</sup></strong>, con <strong>k = ⌊log n⌋</strong>, y se requieren como máximo <strong>2 ⌈log n⌉ + 2</strong> comparaciones.</li>
+    <li>En cualquier caso, el peor caso requiere <strong>O(log n)</strong> comparaciones.</li>
+    <li>Como el número de comparaciones también es al menos proporcional a <strong>log n</strong>, se concluye que:</li>
+    </ul>
 
+    <p><strong>La búsqueda binaria tiene complejidad Θ(log n) en el peor caso.</strong></p>
+
+    <h3> Comparación:</h3>
+    <p>Este resultado muestra que, en el peor caso, la búsqueda binaria es más eficiente que la búsqueda lineal,
+    que tenía complejidad <strong>Θ(n)</strong> según el Ejemplo 2.</p>
+    <hr>
+    Mas que cuantas comparaciones se hacen por cada etapa, lo que interesa es cuantas etapas son,
+    por eso despejamos el exponente.
+    <hr>
+    <p>
+      Se usa \( 2^k \) porque la búsqueda binaria divide el espacio en dos partes iguales en cada etapa.
+      Esa división por 2 en cada paso está en la naturaleza del algoritmo, por eso:
+    </p>
+
+    <p>
+      <strong>Tamaño después de \( k \) pasos:</strong><br>
+      \( \frac{n}{2^k} \)
+    </p>
+
+    <p>
+      Queremos saber cuántas veces puedo dividir por 2 hasta que me quede 1 solo elemento:
+    </p>
+
+    <p>
+      \[
+      \frac{n}{2^k} = 1 \Rightarrow n = 2^k \Rightarrow k = \log_2 n
+      \]
+    </p>
+    <hr>
+    <strong>El algoritmo no cambia si no es potencia de 2, pero si hace mas dificil la pregunta: cuantas veces se dividira 
+    el algoritmo?
+    </strong>
+    <h2> Suposición: \( n = 2^k \)</h2>
+    <p>Esta suposición se hace solo para simplificar el análisis del algoritmo. Por ejemplo:</p>
+
+    <p>Si \( n = 8 \), entonces:</p>
+    <p>\( 2^k = 8 \Rightarrow k = 3 \), porque \( 2^3 = 8 \)</p>
+
+    <p>La búsqueda binaria va dividiendo así:</p>
+    <p><code>8 → 4 → 2 → 1</code></p>
+    <p>Eso son 3 divisiones → \( k = 3 \)</p>
+
+    <p>Esto es limpio y fácil de analizar porque 8 es una potencia exacta de 2.</p>
+
+    <h2> ¿Qué pasa si \( n \) no es potencia de 2?</h2>
+    <p>Por ejemplo, si tienes \( n = 10 \) elementos:</p>
+
+    <p>No hay ningún \( k \) entero tal que \( 2^k = 10 \)</p>
+
+    <p>Pero sabemos que:</p>
+    <p>\( 2^3 = 8 < 10 < 16 = 2^4 \)</p>
+    <p>Entonces: \( \lfloor \log_2 10 \rfloor = 3 \), y \( \lceil \log_2 10 \rceil = 4 \)</p>
+
+    <p>Entonces se dice:</p>
+    <blockquote>
+    “Imaginemos que esta lista de 10 elementos está dentro de una lista más grande con 16 elementos (\( 2^4 \)).”
+    </blockquote>
+
+    <p>Esto permite seguir aplicando el análisis como si fuera potencia de 2. Así, podemos decir que en el peor caso, la búsqueda binaria con 10 elementos requerirá como mucho lo que requeriría una lista de 16 elementos.</p>
+
+    <h2> Ejemplo práctico:</h2>
+    <p>Supón que estás buscando un número en una lista de 10 elementos:</p>
+
+    <pre>[1, 3, 4, 6, 7, 9, 10, 12, 14, 16]</pre>
+
+    <p><strong>Pasos de búsqueda binaria:</strong></p>
+    <ul>
+    <li>Medio: posición 5 → valor 7</li>
+    <li>Dependiendo de si el número es mayor o menor, la lista se reduce a 5 elementos</li>
+    <li>Luego 2–3 elementos</li>
+    <li>Luego 1</li>
+    </ul>
+    
+    <p>Aunque el número de pasos no es exactamente \( \log_2 10 \), nunca pasará de 4 comparaciones principales, porque \( \lceil \log_2 10 \rceil = 4 \)</p>
+
+    <h2> Conclusión</h2>
+    <ul>
+        <li>Se usa la potencia de 2 para analizar fácilmente cuántas veces se puede dividir la lista.</li>
+        <li>Cuando \( n \) no es una potencia de 2, se aproxima con la potencia de 2 más cercana por encima.</li>
+        <li>En el análisis, esto solo cambia que usamos \( \lceil \log_2 n \rceil \) en vez de \( \log_2 n \) exacto.</li>
+    </ul>
+    <hr>
+    <strong>tampoco cambia nada en el algoritmo si el numero es impar: </strong>
+    <p><code>val mid = (left + r) / 2</code></p>
+
+    <p>Esto está haciendo una <strong>división entera</strong> entre dos valores enteros. En Scala, cuando hacés:</p>
+
+    \[ \frac{5}{2} \]
+
+    <p>El resultado es <strong>2</strong>, no <strong>2.5</strong>. Es decir, descarta la parte decimal 
+    (equivalente a <code>floor</code>).</p>
+    <hr>
+
+
+    <h2>Explicacion:  \( 2^{k-1} \)</h2>
+
+  <h3> Contexto: Búsqueda binaria</h3>
+  <p>Estamos analizando el progreso del algoritmo de búsqueda binaria, y partimos de una suposición:</p>
+  <p>Supongamos que la lista tiene \( n = 2^k \) elementos.</p>
+  <p>En cada paso de la búsqueda binaria, la lista se divide en dos mitades.</p>
+
+  <h3> Etapas del algoritmo</h3>
+
+  <ul>
+    <li>
+      <strong>Primera etapa:</strong><br>
+      La lista tiene \( 2^k \) elementos.<br>
+      Se hace una comparación para decidir si buscamos en la mitad izquierda o derecha.
+    </li>
+
+    <li>
+      <strong>Segunda etapa:</strong><br>
+      La mitad de \( 2^k \) es \( 2^{k-1} \).<br>
+      Entonces ahora trabajamos con \( 2^{k-1} \) elementos.
+    </li>
+
+    <li>
+      <strong>Tercera etapa:</strong><br>
+      Mitad de \( 2^{k-1} \) es \( 2^{k-2} \), y así sucesivamente…
+    </li>
+  </ul>
+
+  <h3>¿Por qué baja el exponente?</h3>
+  <p>Porque en cada paso estás dividiendo por 2, así que:</p>
+
+  <p>
+    \( 2^k \rightarrow 2^{k-1} \rightarrow 2^{k-2} \rightarrow \cdots \rightarrow 2^1 \rightarrow 2^0 = 1 \)
+  </p>
+
+  <p>Cada vez que dividís por 2, el exponente disminuye en 1.</p>
+
+
+
+
+    <hr>
+    
     </form>
 </div>
 

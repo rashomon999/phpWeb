@@ -1823,7 +1823,62 @@ function ocultarMensaje4() {
   Sin embargo, hay esperanza de que los nuevos avances conduzcan a sistemas completamente homomórficos prácticos en un futuro no muy lejano.
 </p>
 
+    <hr>
+    <strong>Ejemplo consiso de cifrado y descifrado: </strong>
+    <br><br>
+    <h2> RSA - Ejemplo completo con el mensaje <strong>STOP</strong></h2>
 
+<h3>1. Datos de la clave RSA</h3>
+<ul>
+  <li>Primos: <strong>p = 43</strong>, <strong>q = 59</strong></li>
+  <li><strong>n = p ⋅ q = 43 ⋅ 59 = 2537</strong></li>
+  <li><strong>ϕ(n) = (p − 1)(q − 1) = 42 ⋅ 58 = 2436</strong></li>
+  <li>Exponente público: <strong>e = 13</strong>, cumple que <code>gcd(13, 2436) = 1</code></li>
+  <li>Exponente privado: <strong>d = 937</strong>, tal que <code>13 ⋅ d ≡ 1 mod 2436</code></li>
+</ul>
+
+<h3> CIFRADO del mensaje "STOP"</h3>
+<h4>Paso 1: Codificar letras en números</h4>
+<p>Usamos la codificación (A=00, B=01, ..., Z=25):</p>
+<ul>
+  <li>S → 18</li>
+  <li>T → 19</li>
+  <li>O → 14</li>
+  <li>P → 15</li>
+</ul>
+<p>Mensaje codificado como: <code>18 19 14 15</code></p>
+<p><strong>m: mensaje original (en forma de número (18 19 14 15)).</strong></p>
+ 
+<p>Bloques de 4 dígitos: <strong>1819</strong>, <strong>1415</strong></p>
+
+<h4>Paso 2: Aplicar fórmula RSA para cifrar</h4>
+<p>Fórmula: <code>c = m^e mod n = m^13 mod 2537</code></p>
+<ul>
+  <li><code>c₁ = 1819^13 mod 2537 = 2081</code></li>
+  <li><code>c₂ = 1415^13 mod 2537 = 2182</code></li>
+</ul>
+
+<h4> Resultado del cifrado:</h4>
+<p><strong>2081 2182</strong></p>
+
+<h3> DESCIFRADO del mensaje "2081 2182"</h3>
+<h4>Paso 1: Aplicar fórmula RSA para descifrar</h4>
+<p>Fórmula: <code>m = c^d mod n = c^937 mod 2537</code></p>
+<ul>
+  <li><code>m₁ = 2081^937 mod 2537 = 1819</code></li>
+  <li><code>m₂ = 2182^937 mod 2537 = 1415</code></li>
+</ul>
+
+<h4>Paso 2: Traducir los bloques numéricos</h4>
+<ul>
+  <li>1819 → 18 19 → S T</li>
+  <li>1415 → 14 15 → O P</li>
+</ul>
+
+<h4>✅ Mensaje original recuperado:</h4>
+<p><strong>STOP</strong></p>
+    <hr>
+    
     </form>
 </div>
 
@@ -1832,7 +1887,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="tercero.php"
+        href="cuarto.php"
         role="button"
         width="50px"
         height="50px"

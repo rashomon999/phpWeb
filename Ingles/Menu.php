@@ -29,17 +29,9 @@
 </head>
 <body>
     <div class="centered-container">
-         <a class="btn" href=".\huffman\index.php">HUFMANN</a>
-        <a class="btn" href=".\checksum\index.php">CHECKSUM</a>
-        <a class="btn" href=".\huffmanIngles\index.php">Huffman ingles</a>
-        <br>
-        <br>
-        <strong>4 libros principales:</strong>
-        <br><br>
-        <a class="btn" href=".\structureInterpretation\Menu.php">structure and interpretation</a>
-        <a class="btn" href=".\Rosen\Menu.php">Rosen</a>
-        <a class="btn" href=".\Programming_in_Scala\Menu.php">Programming_in_Scala</a>
-        <a class="btn" href=".\introduction_to_algorithms\Menu.php"> introduction_to_algorithms (cormen)</a>
+         <a class="btn" href=".\NoCountry\index.php">No country</a>
+          <a class="btn" href=".\WillHunting\index.php">Will Hunting</a>
+
     </div>
 </body>
 </html>

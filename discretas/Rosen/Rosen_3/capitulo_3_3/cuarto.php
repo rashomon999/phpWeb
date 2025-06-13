@@ -1123,14 +1123,20 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
-    .imagen { 
+    .imagen {
         max-width: 100%;
         height: auto;
+    }
+    .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 370vh;
     }
 </style>
  
@@ -1431,117 +1437,83 @@ function ocultarMensaje4() {
 </script>
     
 </head>
-<body>
+<body> 
 <div class="seccion izquierda">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h3>✅ Sobre la línea continua y discontinua</h3>
-    <img src="../../../img/personal.png" alt="">
-    <ul>
-    <li>
-    <strong>🔹 Línea continua (<em>subordinado</em>)</strong><br>
-    Generalmente indica una <strong>relación obligatoria</strong> (participación total):<br>
-    &rarr; <em>Debe</em> existir un subordinado (es decir, el directivo <em>debe</em> tener al menos un subordinado).
-    </li>
-    <br>
-    <li>
-    <strong>🔹 Línea discontinua (<em>directivo</em>)</strong><br>
-    Suele indicar una <strong>relación opcional</strong> (participación parcial):<br>
-    &rarr; Un <code>PERSONAL</code> <em>puede o no</em> tener un directivo (es decir, algunos empleados no tienen jefe, como el director general).
-    </li>
-    </ul>
+    <form action="./once.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <p>Es importante tener una estimación razonable de cuánto tiempo tomará a una computadora resolver un problema. 
+    Por ejemplo, si un algoritmo requiere aproximadamente 10 horas, puede valer la pena usar el tiempo de computadora 
+    (y el dinero) necesario para resolverlo. Pero si requiere aproximadamente 10 mil millones de años, sería irracional
+    usar recursos para implementarlo.</p>
 
+    <p>Uno de los fenómenos más interesantes de la tecnología moderna es el tremendo aumento en la velocidad y memoria
+    de las computadoras. Otro factor importante que reduce el tiempo necesario para resolver problemas en computadoras
+    es el <strong>procesamiento en paralelo</strong>, que consiste en realizar operaciones de manera simultánea.</p>
+
+    <p>Los algoritmos eficientes, incluyendo la mayoría de los algoritmos con complejidad polinomial, se benefician
+    más de las mejoras tecnológicas significativas. Sin embargo, estas mejoras ofrecen poca ayuda para superar la 
+    complejidad de algoritmos de tiempo exponencial o factorial. Gracias al aumento de la velocidad de cómputo, el
+    incremento de memoria, y el uso de algoritmos que aprovechan el procesamiento en paralelo, muchos problemas que 
+    se consideraban imposibles de resolver hace cinco años ahora se resuelven rutinariamente. Y seguramente, dentro 
+    de cinco años, esto seguirá siendo cierto, incluso si los algoritmos usados son intractables.</p>
     <hr>
-    los subtipos tambien garantizan que sea excluyente.
-    <br><br>
-    " Por último, el personal que realiza funciones de directivo no aparecerá nunca
-    como personal de planta y ni al contrario."
-    <br><br>
-    <img src="../../../img/subtipo.png" alt="" width="600">
-    <br><br>
-    <img src="../../../img/subtipo_2.png" alt="" width="600">
+    <strong>Resumen parte interesante:</strong>
+    <h2>¿Qué significa que un problema está en NP?</h2>
+<p><strong>NP</strong> significa <em>Nondeterministic Polynomial time</em> (tiempo polinómico no determinista), pero no te preocupes por el nombre técnico.</p>
+
+<p>La idea central es esta:</p>
+
+<p>Un problema está en <strong>NP</strong> si, aunque no sepamos cómo encontrar la solución rápidamente, <strong>sí podemos verificar una solución rápidamente</strong>, si alguien nos la da.</p>
+
+<h3>Ejemplo fácil:</h3>
+<p>Imagina que alguien te da un <strong>rompecabezas muy difícil</strong>.</p>
+
+<ul>
+  <li>Tú no sabes cómo resolverlo por tu cuenta rápido.</li>
+  <li>Pero si alguien te muestra una solución completa, tú puedes <strong>verificar en poco tiempo</strong> si está bien hecha o no (si todas las piezas encajan).</li>
+</ul>
+
+<p>Eso es un problema NP:</p>
+<ul>
+  <li>🔸 Difícil de resolver</li>
+  <li>🔹 Fácil de verificar</li>
+</ul>
+
+<hr>
+
+<h2> ¿Qué es un problema P?</h2>
+<p>Un problema está en la clase <strong>P</strong> si puede resolverse en <strong>tiempo polinómico</strong>. Es decir, existe un algoritmo que lo resuelve "rápido" (rápido en teoría significa: el tiempo de ejecución crece de forma razonable cuando crece el tamaño del input).</p>
+
+<p> <strong>Tiempo polinómico</strong> = como máximo algo así como <code>n</code>, <code>n²</code>, <code>n³</code>, etc.</p>
+
+<p> Estos problemas se consideran <strong>tractables</strong> o <strong>eficientemente resolubles</strong>.</p>
+
+<h3> Ejemplos de problemas en P:</h3>
+<ul>
+  <li>Ordenar una lista (con <code>mergesort</code>, <code>quicksort</code>…)</li>
+  <li>Buscar un elemento en una lista ordenada (búsqueda binaria)</li>
+  <li>Encontrar el camino más corto en un grafo sin pesos negativos (algoritmo de Dijkstra)</li>
+</ul>
     <hr>
-    1. Relación 1:N (Uno a Muchos) →
-    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_1 ?>
-
-
-    <br><br>
-
-    2. Relación N:M (Muchos a Muchos) →
-    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_2 ?>
-    <br><br>
-
-    3. Relación 1:1 (Uno a Uno) →
-    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="10"> 
-    se crea una tabla extra.
-    Se maneja FK unica, excepto en casos especificos. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_3 ?>
-    <br><br>
-    <hr>
-
-    Si existe una relación (fuerte o débil), la entidad dependiente SIEMPRE tendrá una
-    clave foránea como atributo que hace referencia a la entidad principal.    
-
-    <hr>
-    <li>
-    Si la relación es 1:N (débil) → La entidad dependiente tendrá una clave foránea (FK), pero su clave primaria (PK)
-    se mantiene independiente.
-    </li>
-    <li>
-    Si la relación es 1:N (fuerte/identificadora) → La entidad dependiente tendrá una clave foránea (FK), pero esta 
-    también formará parte de su clave primaria (PK).
-    </li>
-    <li>
-    Si la relación es N:M → Se crea una tabla intermedia, donde ambas claves foráneas (de las entidades relacionadas)
-    forman la clave primaria compuesta.
-    </li>
-     <hr>
-
-
-    <strong>¿Qué significa "Origen Opcional"?</strong>
-    <br><br>
-    <strong>Especifica si la existencia de la entidad hija (lado N) depende o no de la entidad padre (lado 1).</strong>
-    <br><br>
-    <strong>Si "Origen Opcional" está MARCADO:</strong>
     <p>
-    <li>La relación se considera débil (no identificadora).</li>
-    <li>La entidad hija puede existir sin la entidad padre.</li>
-    <li> Se dibuja una línea discontinua con flecha.</li>
-    <li>Ejemplo:
-    Una persona puede existir sin estar asociada a una casa.</li>
-    </p>
-     
-    <strong>Si "Origen Opcional" está DESMARCADO:</strong>
-    <li>La relación se considera fuerte (identificadora).</li>
-    <li>La entidad hija depende completamente de la entidad padre.</li>
-    <li>Se dibuja una línea sólida.</li>
-    <li>Ejemplo:
-    Si Persona no puede existir sin una Casa, se forzaría a que ID_CASA forme parte de su clave primaria.
-    </li>
-    
-    <hr>
-    Cuando en un Modelo Entidad-Relación (MER) te dan un atributo en una relación (especialmente en relaciones
-    muchos a muchos), lo habitual es:
-    <br><br>
-    ✅ Lo que sucede:
-    <li>La relación con atributo se convierte en una entidad asociativa o entidad débil en el MER.</li> 
-    <li>Esta entidad asociativa "intermedia" representa la relación y contiene el atributo extra.
-    </li>
-    <br>
- </form>
+    <p>
+  <strong>P</strong> incluye todo lo que se puede hacer en tiempo 
+  \( O(n^k) \) para algún \( k \) fijo, pero también acepta tiempos como 
+  \( O(n \log n) \) o \( O(\log n) \), porque siguen siendo eficientes y razonables.
+</p>
+
+<p>
+  Por eso, <strong>mergesort</strong> y <strong>búsqueda binaria</strong> son considerados problemas en 
+  <strong>P</strong>, es decir, <em>eficientemente resolubles</em>.
+</p>
+
+    </form>
 </div>
 
 
 
 
 <div class="seccion derecha">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <form action="./once.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
     
 
     </form>
@@ -1552,7 +1524,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="segundo.php"
+        href="once.php"
         role="button"
         width="50px"
         height="50px"

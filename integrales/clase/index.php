@@ -1505,8 +1505,19 @@ function ocultarMensaje4() {
     <button type="submit">Enviar</button>
     <?php echo $verificar_6 ?>
 
-    
+    <hr>
+     <p><strong>Partición regular e irregular</strong> se usa sobre todo en contextos de integración, muestreo, mallas, etc. Te lo aclaro:</p>
 
+    <h3>1️⃣ Partición regular</h3>
+    <p>Los puntos (o subintervalos) están espaciados uniformemente.</p>
+    <p><strong>Ejemplo:</strong> si divides [0,10] en 5 partes iguales → cada subintervalo mide 2.</p>
+    <p>Se usa mucho en integrales de Riemann, gráficos de funciones bien definidas, muestreo uniforme, etc.</p>
+
+    <h3>2️⃣ Partición irregular</h3>
+    <p>Los puntos no están espaciados uniformemente.</p>
+    <p><strong>Ejemplo:</strong> divides [0,10] en intervalos de longitud 1, 3, 2, 4.</p>
+    <p>Aparece cuando los datos vienen de observaciones experimentales, señales no controladas, o procesos aleatorios.</p>
+ 
  </p>
      
 </div>

@@ -1123,14 +1123,20 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
-    .imagen { 
+    .imagen {
         max-width: 100%;
         height: auto;
+    }
+    .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 330vh;
     }
 </style>
  
@@ -1431,118 +1437,249 @@ function ocultarMensaje4() {
 </script>
     
 </head>
-<body>
+<body> 
 <div class="seccion izquierda">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h3>✅ Sobre la línea continua y discontinua</h3>
-    <img src="../../../img/personal.png" alt="">
-    <ul>
-    <li>
-    <strong>🔹 Línea continua (<em>subordinado</em>)</strong><br>
-    Generalmente indica una <strong>relación obligatoria</strong> (participación total):<br>
-    &rarr; <em>Debe</em> existir un subordinado (es decir, el directivo <em>debe</em> tener al menos un subordinado).
-    </li>
-    <br>
-    <li>
-    <strong>🔹 Línea discontinua (<em>directivo</em>)</strong><br>
-    Suele indicar una <strong>relación opcional</strong> (participación parcial):<br>
-    &rarr; Un <code>PERSONAL</code> <em>puede o no</em> tener un directivo (es decir, algunos empleados no tienen jefe, como el director general).
-    </li>
-    </ul>
+    <form action="./quinto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <h2>Ejemplo 6: Estimaciones Big-O para la función factorial y su logaritmo</h2>
 
+<div class="section">
+  <h3>¿Qué es la función factorial?</h3>
+  <p>Se define así:</p>
+  <p>\( n! = 1 \cdot 2 \cdot 3 \cdots n \quad \text{(para todo } n \geq 1 \text{)}, \quad \text{y por definición } 0! = 1 \)</p>
+
+  <p>Ejemplos:</p>
+  <ul>
+    <li>\( 1! = 1 \)</li>
+    <li>\( 2! = 1 \cdot 2 = 2 \)</li>
+    <li>\( 3! = 1 \cdot 2 \cdot 3 = 6 \)</li>
+    <li>\( 4! = 1 \cdot 2 \cdot 3 \cdot 4 = 24 \)</li>
+    <li>\( 20! = 2,432,902,008,176,640,000 \quad \leftarrow \text{¡Crecimiento explosivo!} \)</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h3>¿Qué se quiere hacer?</h3>
+  <p>Queremos encontrar estimaciones Big-O (cotas superiores de crecimiento) para:</p>
+  <ul>
+    <li>\( n! \)</li>
+    <li>\( \log(n!) \)</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h3>Paso 1: Estimar una cota superior para \( n! \)</h3>
+  <p>Sabemos que:</p>
+  <p>\( n! = 1 \cdot 2 \cdot 3 \cdots n \)</p>
+  <p>Cada uno de los factores es menor o igual a \( n \). Así que podemos decir que:</p>
+  <p>\( n! \leq n \cdot n \cdots n = n^n \quad \text{(hay } n \text{ factores)} \)</p>
+  <p>Por lo tanto: \( n! \leq n^n \Rightarrow n! = O(n^n) \)</p>
+  <p>Es una cota general pero suficiente para Big-O. Se toman testigos \( C = 1 \) y \( k = 1 \).</p>
+</div>
+
+<div class="section">
+  <h3>Paso 2: ¿Qué pasa con \( \log(n!) \)?</h3>
+  <p>Aplicamos logaritmo en ambos lados de la desigualdad:</p>
+  <p>\( \log(n!) \leq \log(n^n) = n \cdot \log n \)</p>
+  <p>Entonces: \( \log(n!) = O(n \log n) \)</p>
+
+  <hr>
+  <p><strong>Proceso más completo del paso 2:</strong></p>
+  <p>Sabemos que:</p>
+  <p>\( n! \leq n^n \)</p>
+
+  <p>Entonces si aplicamos logaritmo a ambos lados:</p>
+  <p>\( \log(n!) \leq \log(n^n) \)</p>
+
+  <p>Y ahora usamos la propiedad del logaritmo:</p>
+  <p>\( \log(n^n) = n \cdot \log n \)</p>
+
+  <p>Entonces obtenemos:</p>
+  <p>\( \log(n!) \leq n \cdot \log n \)</p>
+</div>
+
+<hr>
+
+<div class="section">
+  <h3>Conclusión</h3>
+  <ul>
+    <li>\( n! = O(n^n) \) → porque como mucho estamos multiplicando \( n \) veces el número \( n \).</li>
+    <li>\( \log(n!) = O(n \log n) \) → usando propiedades del logaritmo.</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h3>¿Y por qué importa esto?</h3>
+  <p>Estas estimaciones se usan, por ejemplo:</p>
+  <ul>
+    <li>Para analizar la complejidad de algoritmos (como ordenamientos).</li>
+    <li>Para estimar cuántos pasos requiere cierto algoritmo en el peor caso.</li>
+    <li>Para trabajar con fórmulas asintóticas como la de Stirling, que también aproxima \( n! \).</li>
+  </ul>
+</div>
     <hr>
-    los subtipos tambien garantizan que sea excluyente.
-    <br><br>
-    " Por último, el personal que realiza funciones de directivo no aparecerá nunca
-    como personal de planta y ni al contrario."
-    <br><br>
-    <img src="../../../img/subtipo.png" alt="" width="600">
-    <br><br>
-    <img src="../../../img/subtipo_2.png" alt="" width="600">
-    <hr>
-    1. Relación 1:N (Uno a Muchos) →
-    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_1 ?>
+    <h3>Ejemplo 7</h3>
+  <p>
+    En la Sección 5.1 mostraremos que \( n &lt; 2^n \) siempre que \( n \) sea un número entero positivo.
+    Muestra que esta desigualdad implica que \( n = O(2^n) \), y usa esta desigualdad para demostrar que
+    \( \log n = O(n) \).
+  </p>
 
+  <h4> Solución:</h4>
+  <p>
+    Usando la desigualdad \( n &lt; 2^n \), podemos concluir rápidamente que \( n = O(2^n) \) tomando
+    \( C = 1 \) y \( k = 1 \) como testigos.
+  </p>
 
-    <br><br>
+  <p>
+    Dado que la función logaritmo es creciente, al aplicar logaritmos (en base 2) a ambos lados de la desigualdad
+    obtenemos:
+  </p>
+  <p>\( \log n &lt; n \)</p>
 
-    2. Relación N:M (Muchos a Muchos) →
-    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_2 ?>
-    <br><br>
+  <p>
+    Por lo tanto:<br>
+    \( \log n = O(n) \)
+  </p>
+  <p>(Nuevamente tomamos \( C = 1 \) y \( k = 1 \) como testigos.)</p>
 
-    3. Relación 1:1 (Uno a Uno) →
-    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="10"> 
-    se crea una tabla extra.
-    Se maneja FK unica, excepto en casos especificos. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_3 ?>
-    <br><br>
-    <hr>
+  <p>
+    Si tenemos logaritmos en base \( b \), donde \( b \ne 2 \), aún se cumple que \( \log_b n = O(n) \),
+    porque:
+  </p>
+  <p>\( \log_b n = \frac{\log n}{\log b} &lt; \frac{n}{\log b} \)</p>
 
-    Si existe una relación (fuerte o débil), la entidad dependiente SIEMPRE tendrá una
-    clave foránea como atributo que hace referencia a la entidad principal.    
+  <p>
+    Siempre que \( n \) sea un entero positivo. En este caso, tomamos \( C = \frac{1}{\log b} \) y
+    \( k = 1 \) como testigos. (Usamos el Teorema 3 del Apéndice 2, que dice que
+    \( \log_b n = \frac{\log n}{\log b} \).)
+  </p>
 
-    <hr>
-    <li>
-    Si la relación es 1:N (débil) → La entidad dependiente tendrá una clave foránea (FK), pero su clave primaria (PK)
-    se mantiene independiente.
-    </li>
-    <li>
-    Si la relación es 1:N (fuerte/identificadora) → La entidad dependiente tendrá una clave foránea (FK), pero esta 
-    también formará parte de su clave primaria (PK).
-    </li>
-    <li>
-    Si la relación es N:M → Se crea una tabla intermedia, donde ambas claves foráneas (de las entidades relacionadas)
-    forman la clave primaria compuesta.
-    </li>
-     <hr>
+  <h4> Nota adicional</h4>
+  <p>
+    Como se mencionó anteriormente, la notación Big-O se utiliza para estimar el número de operaciones necesarias
+    para resolver un problema utilizando un procedimiento o algoritmo específico. Las funciones que comúnmente aparecen
+    en estas estimaciones incluyen:
+  </p>
+  <p>\( 1, \log n, n, n \log n, n^2, 2^n, n! \)</p>
 
+  <p>
+    Usando cálculo, se puede demostrar que cada función de la lista crece más lentamente que la siguiente.
+    Es decir, el cociente entre una función y la que le sigue tiende a cero cuando \( n \to \infty \).
+  </p>
 
-    <strong>¿Qué significa "Origen Opcional"?</strong>
-    <br><br>
-    <strong>Especifica si la existencia de la entidad hija (lado N) depende o no de la entidad padre (lado 1).</strong>
-    <br><br>
-    <strong>Si "Origen Opcional" está MARCADO:</strong>
-    <p>
-    <li>La relación se considera débil (no identificadora).</li>
-    <li>La entidad hija puede existir sin la entidad padre.</li>
-    <li> Se dibuja una línea discontinua con flecha.</li>
-    <li>Ejemplo:
-    Una persona puede existir sin estar asociada a una casa.</li>
-    </p>
-     
-    <strong>Si "Origen Opcional" está DESMARCADO:</strong>
-    <li>La relación se considera fuerte (identificadora).</li>
-    <li>La entidad hija depende completamente de la entidad padre.</li>
-    <li>Se dibuja una línea sólida.</li>
-    <li>Ejemplo:
-    Si Persona no puede existir sin una Casa, se forzaría a que ID_CASA forme parte de su clave primaria.
-    </li>
-    
-    <hr>
-    Cuando en un Modelo Entidad-Relación (MER) te dan un atributo en una relación (especialmente en relaciones
-    muchos a muchos), lo habitual es:
-    <br><br>
-    ✅ Lo que sucede:
-    <li>La relación con atributo se convierte en una entidad asociativa o entidad débil en el MER.</li> 
-    <li>Esta entidad asociativa "intermedia" representa la relación y contiene el atributo extra.
-    </li>
-    <br>
- </form>
+ 
+
+        
+    </form>
 </div>
 
 
 
 
 <div class="seccion derecha">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    
+    <form action="./quinto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <p>
+    La Figura 3 muestra las gráficas de estas funciones, usando una escala para los valores que se duplica en cada
+    marca del eje vertical. Es decir, la escala vertical en este gráfico es <strong>logarítmica</strong>.
+  </p>
+    <img src="../../img/graficas_Big_O.png" alt="">
+    <hr>
+    <h2>¿Por qué no importa la base del logaritmo en notación Big-O?</h2>
+
+<h3> Idea clave:</h3>
+<p>Cuando hablamos de <strong>notación Big-O</strong>, solo nos importa el <em>comportamiento de crecimiento</em> de una función cuando \( n \) crece mucho.</p>
+<p><strong>No</strong> nos importan las constantes multiplicativas.</p>
+<p>Por eso, cambiar la base del logaritmo <strong>no cambia su clase de crecimiento</strong>.</p>
+
+<h3> Veamos esto con una propiedad matemática importante:</h3>
+<p>Cualquier logaritmo en base \( b \) se puede expresar en otra base \( k \) así:</p>
+
+<p style="text-align: center;">
+  \[
+  \log_b n = \frac{\log_k n}{\log_k b}
+  \]
+</p>
+
+<p>Esto significa que el logaritmo en una base cualquiera es igual al logaritmo en otra base, multiplicado por una constante.</p>
+
+<h3>Ejemplo concreto:</h3>
+<p style="text-align: center;">
+  \[
+  \log_2 n = \frac{\log_{10} n}{\log_{10} 2} \approx \frac{\log_{10} n}{0.3010} \approx 3.32 \cdot \log_{10} n
+  \]
+</p>
+
+<h3>¿Y qué tiene que ver eso con Big-O?</h3>
+<p>En notación Big-O, escribimos:</p>
+
+<p style="text-align: center;">
+  \[
+  f(n) = O(g(n))
+  \]
+</p>
+
+<p>...si existe una constante \( C \) tal que:</p>
+
+<p style="text-align: center;">
+  \[
+  f(n) \leq C \cdot g(n) \quad \text{para todo } n \geq k
+  \]
+</p>
+
+<p>Entonces:</p>
+
+<p style="text-align: center;">
+  \[
+  \log_2 n \leq 3.32 \cdot \log_{10} n \quad \text{para todo } n > 1
+  \]
+</p>
+
+<p>¡Eso cumple perfectamente la definición de Big-O! Solo hay una constante (\( C = 3.32 \)), y eso está permitido.</p>
+
+<h3>Por lo tanto:</h3>
+<p style="text-align: center;">
+  \[
+  \log_2 n = O(\log_{10} n) \quad \text{y también} \quad \log_{10} n = O(\log_2 n)
+  \]
+</p>
+    <hr>
+
+    <h2>Estimaciones &Uacute;tiles de Big-O con Logaritmos, Potencias y Exponenciales</h2>
+  <p>Estos hechos nos ayudan a determinar relaciones Big-O entre funciones como potencias, logaritmos y funciones exponenciales \( b^n \) con \( b > 1 \).</p>
+
+  <h3>1. Polinomios</h3>
+  <p>Si \( f(n) \) es un polinomio de grado \( d \), entonces:</p>
+  <p>
+    \[ f(n) = O(n^d) \]
+    <br>
+    Si \( d > c > 1 \), entonces:
+    \[ n^c = O(n^d) \quad \text{pero} \quad n^d \neq O(n^c) \]
+  </p>
+
+  <h3>2. Logaritmos</h3>
+  <p>Si \( b > 1 \), \( c > 0 \), \( d > 0 \), entonces:</p>
+  <p>
+    \[ (\log_b n)^c = O(n^d) \quad \text{pero} \quad n^d \neq O((\log_b n)^c) \]
+  </p>
+
+  <h3>3. Exponenciales vs Polinomios</h3>
+  <p>Para todo \( d > 0 \) y \( b > 1 \):</p>
+  <p>
+    \[ n^d = O(b^n) \quad \text{pero} \quad b^n \neq O(n^d) \]
+  </p>
+
+  <h3>4. Comparando Exponenciales</h3>
+  <p>Si \( c > b > 1 \), entonces:</p>
+  <p>
+    \[ b^n = O(c^n) \quad \text{pero} \quad c^n \neq O(b^n) \]
+  </p>
+
+  <h3>5. Factorial</h3>
+  <p>Si \( c > 1 \), entonces:</p>
+  <p>
+    \[ c^n = O(n!) \quad \text{pero} \quad n! \neq O(c^n) \]
+  </p>
+ 
 
     </form>
 </div>
@@ -1552,7 +1689,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="segundo.php"
+        href="cuarto.php"
         role="button"
         width="50px"
         height="50px"

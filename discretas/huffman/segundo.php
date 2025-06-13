@@ -90,7 +90,7 @@ $verificar_61 = ''; $verificar_62 = ''; $verificar_63 = ''; $verificar_64 = ''; 
 
 if ($_POST) {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '26') {  
+   if ($respuesta_1 === 'subconjunto') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -100,7 +100,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === '39') {  
+   if ($respuesta_2 === 'relacionado') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -110,7 +110,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === '52') {  
+   if ($respuesta_3 === 'un elemento') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -120,7 +120,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === '65') {  
+   if ($respuesta_4 === 'cada') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -130,7 +130,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === '78') {  
+   if ($respuesta_5 === 'conjunto') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -140,7 +140,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === '91') {  
+   if ($respuesta_6 === 'pares ordendos') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -150,7 +150,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === '104') {  
+   if ($respuesta_7 === '(a,b)') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -160,7 +160,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === '117') {  
+   if ($respuesta_8 === 'b = f(a)') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -170,7 +170,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === '130') {  
+   if ($respuesta_9 === 'subconjunto') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -180,7 +180,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === '143') {  
+   if ($respuesta_10 === 'AxB') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -190,7 +190,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === '156') {  
+   if ($respuesta_11 === 'A') {  
        $verificar_11 = "correcto";
    } elseif ($respuesta_11 === '') {
        $verificar_11 = '';
@@ -201,7 +201,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
      $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-     if ($respuesta_12 === '28') {  
+     if ($respuesta_12 === 'B') {  
          $verificar_12 = "correcto";
      } elseif ($respuesta_12 === '') {
          $verificar_12 = '';
@@ -211,7 +211,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la segunda pregunta
      $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-     if ($respuesta_13 === '42') { 
+     if ($respuesta_13 === 'primer') { 
          $verificar_13 = "correcto";
      } elseif ($respuesta_13 === '') {
          $verificar_13 = '';
@@ -221,7 +221,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la tercera pregunta
      $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-     if ($respuesta_14 === '56') {  
+     if ($respuesta_14 === 'primer') {  
          $verificar_14 = "correcto";
      } elseif ($respuesta_14 === '') {
          $verificar_14 = '';
@@ -231,7 +231,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la cuarta pregunta
      $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-     if ($respuesta_15 === '70') { 
+     if ($respuesta_15 === 'uno a muchos') { 
          $verificar_15 = "correcto";
      } elseif ($respuesta_15 === '') {
          $verificar_15 = '';
@@ -241,7 +241,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la quinta pregunta
      $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-     if ($respuesta_16 === '84') {  
+     if ($respuesta_16 === 'mas') {  
          $verificar_16 = "correcto";
      } elseif ($respuesta_16 === '') {
          $verificar_16 = '';
@@ -251,7 +251,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la sexta pregunta
      $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-     if ($respuesta_17 === '98') {  
+     if ($respuesta_17 === 'exactamente un elemento de B') {  
          $verificar_17 = "correcto";
      } elseif ($respuesta_17 === '') {
          $verificar_17 = '';
@@ -261,7 +261,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la séptima pregunta
      $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-     if ($respuesta_18 === '112') {  
+     if ($respuesta_18 === '(a,f(a))') {  
          $verificar_18 = "correcto";
      } elseif ($respuesta_18 === '') {
          $verificar_18 = '';
@@ -271,7 +271,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la octava pregunta
      $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-     if ($respuesta_19 === '126') {  
+     if ($respuesta_19 === 'relacion') {  
          $verificar_19 = "correcto";
      } elseif ($respuesta_19 === '') {
          $verificar_19 = '';
@@ -281,7 +281,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la novena pregunta
      $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
-     if ($respuesta_20 === '140') {  
+     if ($respuesta_20 === 'A') {  
          $verificar_20 = "correcto";
      } elseif ($respuesta_20 === '') {
          $verificar_20 = '';
@@ -291,7 +291,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la décima pregunta
      $respuesta_21 = isset($_POST['respuesta_21']) ? $_POST['respuesta_21'] : '';
-     if ($respuesta_21 === '154') {  
+     if ($respuesta_21 === 'A') {  
          $verificar_21 = "correcto";
      } elseif ($respuesta_21 === '') {
          $verificar_21 = '';
@@ -301,7 +301,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la undécima pregunta
      $respuesta_22 = isset($_POST['respuesta_22']) ? $_POST['respuesta_22'] : '';
-     if ($respuesta_22 === '168') {  
+     if ($respuesta_22 === 'relacion') {  
          $verificar_22 = "correcto";
      } elseif ($respuesta_22 === '') {
          $verificar_22 = '';
@@ -311,7 +311,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
    $respuesta_23 = isset($_POST['respuesta_23']) ? $_POST['respuesta_23'] : '';
-   if ($respuesta_23 === '30') {  
+   if ($respuesta_23 === 'conjunto') {  
        $verificar_23 = "correcto";
    } elseif ($respuesta_23 === '') {
        $verificar_23 = '';
@@ -321,7 +321,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_24 = isset($_POST['respuesta_24']) ? $_POST['respuesta_24'] : '';
-   if ($respuesta_24 === '45') {  
+   if ($respuesta_24 === 'subconjunto') {  
        $verificar_24 = "correcto";
    } elseif ($respuesta_24 === '') {
        $verificar_24 = '';
@@ -331,7 +331,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_25 = isset($_POST['respuesta_25']) ? $_POST['respuesta_25'] : '';
-   if ($respuesta_25 === '60') { 
+   if ($respuesta_25 === 'AxA') { 
        $verificar_25 = "correcto";
    } elseif ($respuesta_25 === '') {
        $verificar_25 = '';
@@ -341,7 +341,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_26 = isset($_POST['respuesta_26']) ? $_POST['respuesta_26'] : '';
-   if ($respuesta_26 === '75') {  
+   if ($respuesta_26 === 'AxA') {  
        $verificar_26 = "correcto";
    } elseif ($respuesta_26 === '') {
        $verificar_26 = '';
@@ -351,7 +351,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_27 = isset($_POST['respuesta_27']) ? $_POST['respuesta_27'] : '';
-   if ($respuesta_27 === '90') {  
+   if ($respuesta_27 === 'n^2') {  
        $verificar_27 = "correcto";
    } elseif ($respuesta_27 === '') {
        $verificar_27 = '';
@@ -361,7 +361,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_28 = isset($_POST['respuesta_28']) ? $_POST['respuesta_28'] : '';
-   if ($respuesta_28 === '105') {  
+   if ($respuesta_28 === '2^m') {  
        $verificar_28 = "correcto";
    } elseif ($respuesta_28 === '') {
        $verificar_28 = '';
@@ -371,7 +371,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_29 = isset($_POST['respuesta_29']) ? $_POST['respuesta_29'] : '';
-   if ($respuesta_29 === '120') {  
+   if ($respuesta_29 === 'subconjuntos') {  
        $verificar_29 = "correcto";
    } elseif ($respuesta_29 === '') {
        $verificar_29 = '';
@@ -381,7 +381,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_30 = isset($_POST['respuesta_30']) ? $_POST['respuesta_30'] : '';
-   if ($respuesta_30 === '135') {  
+   if ($respuesta_30 === '(b,a)') {  
        $verificar_30 = "correcto";
    } elseif ($respuesta_30 === '') {
        $verificar_30 = '';
@@ -391,7 +391,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_31 = isset($_POST['respuesta_31']) ? $_POST['respuesta_31'] : '';
-   if ($respuesta_31 === '150') {  
+   if ($respuesta_31 === '(a,b)') {  
        $verificar_31 = "correcto";
    } elseif ($respuesta_31 === '') {
        $verificar_31 = '';
@@ -401,7 +401,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_32 = isset($_POST['respuesta_32']) ? $_POST['respuesta_32'] : '';
-   if ($respuesta_32 === '165') {  
+   if ($respuesta_32 === 'a,b') {  
        $verificar_32 = "correcto";
    } elseif ($respuesta_32 === '') {
        $verificar_32 = '';
@@ -411,7 +411,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_33 = isset($_POST['respuesta_33']) ? $_POST['respuesta_33'] : '';
-   if ($respuesta_33 === '180') {  
+   if ($respuesta_33 === 'A') {  
        $verificar_33 = "correcto";
    } elseif ($respuesta_33 === '') {
        $verificar_33 = '';
@@ -420,7 +420,7 @@ if ($_POST) {
    }
 
  $respuesta_34 = isset($_POST['respuesta_34']) ? $_POST['respuesta_34'] : '';
-if ($respuesta_34 === '32') { 
+if ($respuesta_34 === 'R') { 
     $verificar_34 = "correcto";
 } elseif ($respuesta_34 === '') {
     $verificar_34 = '';
@@ -429,7 +429,7 @@ if ($respuesta_34 === '32') {
 }
 
  $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
-if ($respuesta_35 === '48') { 
+if ($respuesta_35 === 'A') { 
     $verificar_35 = "correcto";
 } elseif ($respuesta_35 === '') {
     $verificar_35 = '';
@@ -438,7 +438,7 @@ if ($respuesta_35 === '48') {
 }
 
  $respuesta_36 = isset($_POST['respuesta_36']) ? $_POST['respuesta_36'] : '';
-if ($respuesta_36 === '64') { 
+if ($respuesta_36 === 'A') { 
     $verificar_36 = "correcto";
 } elseif ($respuesta_36 === '') {
     $verificar_36 = '';
@@ -447,7 +447,7 @@ if ($respuesta_36 === '64') {
 }
 
  $respuesta_37 = isset($_POST['respuesta_37']) ? $_POST['respuesta_37'] : '';
-if ($respuesta_37 === '80') { 
+if ($respuesta_37 === 'R') { 
     $verificar_37 = "correcto";
 } elseif ($respuesta_37 === '') {
     $verificar_37 = '';
@@ -456,7 +456,7 @@ if ($respuesta_37 === '80') {
 }
 
  $respuesta_38 = isset($_POST['respuesta_38']) ? $_POST['respuesta_38'] : '';
-if ($respuesta_38 === '96') { 
+if ($respuesta_38 === 'a=b') { 
     $verificar_38 = "correcto";
 } elseif ($respuesta_38 === '') {
     $verificar_38 = '';
@@ -465,7 +465,7 @@ if ($respuesta_38 === '96') {
 }
 
  $respuesta_39 = isset($_POST['respuesta_39']) ? $_POST['respuesta_39'] : '';
-if ($respuesta_39 === '112') { 
+if ($respuesta_39 === '(a,b)') { 
     $verificar_39 = "correcto";
 } elseif ($respuesta_39 === '') {
     $verificar_39 = '';
@@ -474,7 +474,7 @@ if ($respuesta_39 === '112') {
 }
 
  $respuesta_40 = isset($_POST['respuesta_40']) ? $_POST['respuesta_40'] : '';
-if ($respuesta_40 === '128') { 
+if ($respuesta_40 === '(b,c)') { 
     $verificar_40 = "correcto";
 } elseif ($respuesta_40 === '') {
     $verificar_40 = '';
@@ -483,7 +483,7 @@ if ($respuesta_40 === '128') {
 }
 
  $respuesta_41 = isset($_POST['respuesta_41']) ? $_POST['respuesta_41'] : '';
-if ($respuesta_41 === '144') { 
+if ($respuesta_41 === '(a,a)') { 
     $verificar_41 = "correcto";
 } elseif ($respuesta_41 === '') {
     $verificar_41 = '';
@@ -492,7 +492,7 @@ if ($respuesta_41 === '144') {
 }
 
  $respuesta_42 = isset($_POST['respuesta_42']) ? $_POST['respuesta_42'] : '';
-if ($respuesta_42 === '160') { 
+if ($respuesta_42 === 'A') { 
     $verificar_42 = "correcto";
 } elseif ($respuesta_42 === '') {
     $verificar_42 = '';
@@ -1123,14 +1123,21 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
-    .imagen { 
+    .imagen {
         max-width: 100%;
         height: auto;
+    }
+    
+    .seccion {
+        width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+        padding: 20px; /* importante este padding*/
+        box-sizing: border-box;
+        height: 250vh;
     }
 </style>
  
@@ -1434,107 +1441,83 @@ function ocultarMensaje4() {
 <body>
 <div class="seccion izquierda">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h3>✅ Sobre la línea continua y discontinua</h3>
-    <img src="../../../img/personal.png" alt="">
-    <ul>
-    <li>
-    <strong>🔹 Línea continua (<em>subordinado</em>)</strong><br>
-    Generalmente indica una <strong>relación obligatoria</strong> (participación total):<br>
-    &rarr; <em>Debe</em> existir un subordinado (es decir, el directivo <em>debe</em> tener al menos un subordinado).
+    <h1>Árbol Huffman: Codificación y Decodificación</h1>
+
+<p>El árbol Huffman solo se construye con nodos que guardan los símbolos y sus frecuencias, usando comparaciones para unir nodos de menor frecuencia en nodos internos, pero <strong>no almacena explícitamente los códigos binarios</strong> (los 0 y 1) en sus nodos.</p>
+
+<h2>¿Dónde se asignan los códigos 0 y 1?</h2>
+<p>La asignación de los códigos binarios (la codificación Huffman) se hace en un método aparte, típicamente en el <code>main</code> o en una función dedicada, que recorre el árbol desde la raíz hacia las hojas y va construyendo los códigos de esta forma:</p>
+<ul>
+    <li>Al ir hacia el hijo izquierdo se agrega un <code>'0'</code> al código parcial.</li>
+    <li>Al ir hacia el hijo derecho se agrega un <code>'1'</code>.</li>
+</ul>
+<p>Este proceso es recursivo y no modifica el árbol, solo genera un mapa de códigos (<code>Map[Char, String]</code>) donde cada símbolo tiene su secuencia binaria.</p>
+
+<h2>En tu código</h2>
+<pre><code>def generarCodigosHuffman(nodo: HuffmanNode, prefijo: String = ""): Map[Char, String] = nodo match {
+case Leaf(caracter, _) => Map(caracter -> prefijo)
+case InternalNode(izq, der) =>
+generarCodigosHuffman(izq, prefijo + "0") ++
+generarCodigosHuffman(der, prefijo + "1")
+}</code></pre>
+<p>Este método recorre el árbol, y cuando llega a una hoja (<code>Leaf</code>), asigna el código construido. Cuando está en un nodo interno, sigue hacia hijos agregando 0 o 1 al prefijo.</p>
+
+<h2>Resumen rápido</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Construcción del árbol</th>
+            <th>Asignación de códigos 0/1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Solo usa frecuencias y comparaciones para combinar nodos en un árbol</td>
+            <td>Recorre el árbol y asigna códigos según recorrido (izquierda = 0, derecha = 1)</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Función para decodificar el texto codificado</h2>
+<pre><code>def decodificarHuffman(raiz: HuffmanNode, codigo: String): String = {
+def decodificarAux(nodoActual: HuffmanNode, bits: List[Char], resultado: String): String = {
+nodoActual match {
+  case Leaf(caracter, _) if bits.isEmpty => resultado + caracter
+  case Leaf(caracter, _) => decodificarAux(raiz, bits, resultado + caracter)
+  case InternalNode(izq, der) => bits match {
+    case '0' :: resto => decodificarAux(izq, resto, resultado)
+    case '1' :: resto => decodificarAux(der, resto, resultado)
+    case _ => resultado // Caso de error (no debería ocurrir con código válido)
+  }
+}
+}
+decodificarAux(raiz, codigo.toList, "")
+}</code></pre>
+
+<p>Estos métodos son recorridos especializados del árbol de Huffman que cumplen funciones concretas:</p>
+<ol>
+    <li><strong>generarCodigosHuffman</strong><br>
+        Es un recorrido recursivo del árbol.<br>
+        Se puede considerar un recorrido preorden donde al bajar por el hijo izquierdo se añade "0" al prefijo, y por el derecho se añade "1".<br>
+        Cuando llega a una hoja (<code>Leaf</code>), asigna el código binario acumulado (prefijo) al carácter.<br>
+        Al final, genera un mapa de caracteres a sus códigos Huffman.
     </li>
-    <br>
-    <li>
-    <strong>🔹 Línea discontinua (<em>directivo</em>)</strong><br>
-    Suele indicar una <strong>relación opcional</strong> (participación parcial):<br>
-    &rarr; Un <code>PERSONAL</code> <em>puede o no</em> tener un directivo (es decir, algunos empleados no tienen jefe, como el director general).
+    <li><strong>decodificarHuffman</strong><br>
+        Es otro recorrido, esta vez guiado por una lista de bits (cadena de '0' y '1').<br>
+        Va bajando por el árbol según el bit: '0' → hijo izquierdo, '1' → hijo derecho.<br>
+        Cuando llega a una hoja, añade el carácter al resultado y vuelve a la raíz para continuar con los bits restantes.<br>
+        Es un recorrido guiado por los datos codificados, no un recorrido libre.
     </li>
-    </ul>
+</ol>
 
-    <hr>
-    los subtipos tambien garantizan que sea excluyente.
-    <br><br>
-    " Por último, el personal que realiza funciones de directivo no aparecerá nunca
-    como personal de planta y ni al contrario."
-    <br><br>
-    <img src="../../../img/subtipo.png" alt="" width="600">
-    <br><br>
-    <img src="../../../img/subtipo_2.png" alt="" width="600">
-    <hr>
-    1. Relación 1:N (Uno a Muchos) →
-    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_1 ?>
+<h2>En resumen</h2>
+<p>Sí, ambos son recorridos en el árbol adaptados a la lógica Huffman:</p>
+<ul>
+    <li>Uno recorre para generar códigos (codificación).</li>
+    <li>Otro recorre para traducir la secuencia de bits en texto (decodificación).</li>
+</ul>
 
-
-    <br><br>
-
-    2. Relación N:M (Muchos a Muchos) →
-    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_2 ?>
-    <br><br>
-
-    3. Relación 1:1 (Uno a Uno) →
-    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="10"> 
-    se crea una tabla extra.
-    Se maneja FK unica, excepto en casos especificos. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_3 ?>
-    <br><br>
-    <hr>
-
-    Si existe una relación (fuerte o débil), la entidad dependiente SIEMPRE tendrá una
-    clave foránea como atributo que hace referencia a la entidad principal.    
-
-    <hr>
-    <li>
-    Si la relación es 1:N (débil) → La entidad dependiente tendrá una clave foránea (FK), pero su clave primaria (PK)
-    se mantiene independiente.
-    </li>
-    <li>
-    Si la relación es 1:N (fuerte/identificadora) → La entidad dependiente tendrá una clave foránea (FK), pero esta 
-    también formará parte de su clave primaria (PK).
-    </li>
-    <li>
-    Si la relación es N:M → Se crea una tabla intermedia, donde ambas claves foráneas (de las entidades relacionadas)
-    forman la clave primaria compuesta.
-    </li>
-     <hr>
-
-
-    <strong>¿Qué significa "Origen Opcional"?</strong>
-    <br><br>
-    <strong>Especifica si la existencia de la entidad hija (lado N) depende o no de la entidad padre (lado 1).</strong>
-    <br><br>
-    <strong>Si "Origen Opcional" está MARCADO:</strong>
-    <p>
-    <li>La relación se considera débil (no identificadora).</li>
-    <li>La entidad hija puede existir sin la entidad padre.</li>
-    <li> Se dibuja una línea discontinua con flecha.</li>
-    <li>Ejemplo:
-    Una persona puede existir sin estar asociada a una casa.</li>
-    </p>
-     
-    <strong>Si "Origen Opcional" está DESMARCADO:</strong>
-    <li>La relación se considera fuerte (identificadora).</li>
-    <li>La entidad hija depende completamente de la entidad padre.</li>
-    <li>Se dibuja una línea sólida.</li>
-    <li>Ejemplo:
-    Si Persona no puede existir sin una Casa, se forzaría a que ID_CASA forme parte de su clave primaria.
-    </li>
-    
-    <hr>
-    Cuando en un Modelo Entidad-Relación (MER) te dan un atributo en una relación (especialmente en relaciones
-    muchos a muchos), lo habitual es:
-    <br><br>
-    ✅ Lo que sucede:
-    <li>La relación con atributo se convierte en una entidad asociativa o entidad débil en el MER.</li> 
-    <li>Esta entidad asociativa "intermedia" representa la relación y contiene el atributo extra.
-    </li>
-    <br>
- </form>
+    </form>
 </div>
 
 
@@ -1542,8 +1525,112 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    
+    <div class="explicacion">
+    <h2>Un símbolo más frecuente queda más cerca de la raíz porque se inserta de último</h2>
 
+    <p>🔁 <strong>¿Por qué pasa esto?</strong></p>
+
+    <ul>
+      <li>Cuando construyes el árbol de Huffman:</li>
+      <li>Empiezas combinando los nodos de menor frecuencia.</li>
+      <li>Estos se van agrupando y convirtiéndose en subárboles más grandes.</li>
+      <li>Los nodos de mayor frecuencia no se combinan hasta el final, cuando ya hay varios subárboles de símbolos menos frecuentes.</li>
+      <li>Por eso, el símbolo más frecuente termina más arriba en el árbol, cerca de la raíz.</li>
+    </ul>
+  </div>
+
+  <div class="bloque">
+    <h2> Veámoslo con un ejemplo reducido</h2>
+    
+    <p>Supón estas frecuencias:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Símbolo</th>
+          <th>Frecuencia</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>A</td><td>1</td></tr>
+        <tr><td>B</td><td>2</td></tr>
+        <tr><td>C</td><td>8</td></tr>
+      </tbody>
+    </table>
+
+    <p><strong>Paso 1:</strong> Insertar todos en la <code>PriorityQueue</code> (orden por frecuencia ascendente)</p>
+    <div class="codigo">[A(1), B(2), C(8)]</div>
+
+    <p><strong>Paso 2:</strong> Combinar A(1) y B(2) → AB(3)</p>
+    <div class="codigo">[AB(3), C(8)]</div>
+
+    <p><strong>Paso 3:</strong> Combinar AB(3) y C(8) → raíz ABC(11)</p>
+
+    <h3> ¿Qué pasó aquí?</h3>
+    <ul>
+      <li>A y B, los menos frecuentes, fueron combinados primero → más profundos en el árbol.</li>
+      <li>C, que tenía frecuencia alta (8), no se tocó hasta el final, por eso su nodo quedó más arriba, cerca de la raíz.</li>
+    </ul>
+
+    <h3> Conclusión</h3>
+    <p>
+      Sí, el símbolo más frecuente termina más cerca de la raíz porque se inserta (o se combina) al final, 
+      cuando ya hay subárboles construidos con los símbolos menos frecuentes.
+    </p>
+    <p>
+      Y por eso, su código binario es más corto: necesita recorrer menos niveles para llegar a la hoja correspondiente.
+    </p>
+
+
+    <pre style="font-family: monospace; background-color: #f9f9f9; padding: 10px; border-left: 5px solid #4CAF50;">
+        [11]
+       /    \
+     [3]     C(8)
+    /   \
+  A(1)  B(2)
+</pre>
+  </div>
+  <hr>
+     <h4>🌳 ¿Qué representa la raíz del árbol de Huffman?</h4>
+  <p>En Huffman, la raíz del árbol representa <strong>la suma total de las frecuencias</strong> de todos los símbolos. Te lo explico con claridad:</p>
+
+  <h4>🌳 ¿Cómo se construye el árbol de Huffman?</h4>
+  <ul>
+    <li>Cada símbolo (carácter) es una hoja del árbol, con su frecuencia.</li>
+    <li>Se combinan los dos nodos con menor frecuencia, sumando sus pesos.</li>
+    <li>Ese nuevo nodo se vuelve padre de los dos.</li>
+    <li>Se repite hasta que quede un solo nodo, que será la raíz del árbol.</li>
+  </ul>
+
+  <h4>🟢 Ejemplo simple:</h4>
+  <p>Supongamos que tenés estos caracteres y frecuencias:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Carácter</th>
+        <th>Frecuencia</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>A</td><td>5</td></tr>
+      <tr><td>B</td><td>9</td></tr>
+      <tr><td>C</td><td>12</td></tr>
+      <tr><td>D</td><td>13</td></tr>
+      <tr><td>E</td><td>16</td></tr>
+      <tr><td>F</td><td>45</td></tr>
+    </tbody>
+  </table>
+
+  <p><strong>Total de frecuencias:</strong><br>
+  5 + 9 + 12 + 13 + 16 + 45 = <strong>100</strong></p>
+
+  <h4>✅ Resultado:</h4>
+  <p>La raíz del árbol de Huffman tiene frecuencia <strong>100</strong>.</p>
+  <p>Esta raíz <strong>no representa un carácter</strong>, solo es un nodo que agrupa a todos los demás.</p>
+  <p>Sirve como punto de partida para codificar o decodificar.</p>
+
+ 
     </form>
 </div>
 
@@ -1552,7 +1639,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="segundo.php"
+        href="tercero.php"
         role="button"
         width="50px"
         height="50px"

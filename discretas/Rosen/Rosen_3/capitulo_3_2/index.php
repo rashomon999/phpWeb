@@ -1123,12 +1123,12 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
-    .imagen { 
+    .imagen {
         max-width: 100%;
         height: auto;
     }
@@ -1431,118 +1431,319 @@ function ocultarMensaje4() {
 </script>
     
 </head>
-<body>
+<body> 
 <div class="seccion izquierda">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h3>✅ Sobre la línea continua y discontinua</h3>
-    <img src="../../../img/personal.png" alt="">
-    <ul>
-    <li>
-    <strong>🔹 Línea continua (<em>subordinado</em>)</strong><br>
-    Generalmente indica una <strong>relación obligatoria</strong> (participación total):<br>
-    &rarr; <em>Debe</em> existir un subordinado (es decir, el directivo <em>debe</em> tener al menos un subordinado).
-    </li>
+    <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <h2 > ¿Qué es <code>k</code>?</h2>
+  <p>
+    En la definición:
+  </p>
+  <p style="text-align: center;">
+    \( f(x) \text{ es } O(g(x)) \text{ si existen constantes } C \text{ y } k \text{ tales que} \)
     <br>
-    <li>
-    <strong>🔹 Línea discontinua (<em>directivo</em>)</strong><br>
-    Suele indicar una <strong>relación opcional</strong> (participación parcial):<br>
-    &rarr; Un <code>PERSONAL</code> <em>puede o no</em> tener un directivo (es decir, algunos empleados no tienen jefe, como el director general).
-    </li>
-    </ul>
+    \( |f(x)| \leq C \cdot |g(x)| \quad \text{siempre que } x > k \)
+  </p>
+  <p>
+    <code>k</code> representa el punto a partir del cual la desigualdad empieza a cumplirse. Es decir, la función \( f(x) \) puede comportarse como quiera para valores pequeños de \( x \), pero a partir de cierto valor (\( x > k \)), ya se comporta "como mucho" como \( g(x) \) multiplicado por una constante.
+  </p>
 
-    <hr>
-    los subtipos tambien garantizan que sea excluyente.
-    <br><br>
-    " Por último, el personal que realiza funciones de directivo no aparecerá nunca
-    como personal de planta y ni al contrario."
-    <br><br>
-    <img src="../../../img/subtipo.png" alt="" width="600">
-    <br><br>
-    <img src="../../../img/subtipo_2.png" alt="" width="600">
-    <hr>
-    1. Relación 1:N (Uno a Muchos) →
-    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_1 ?>
+  <h2  > ¿Por qué necesitamos esa condición "<code>x > k</code>"?</h2>
+  <p>
+    Porque a veces, para valores pequeños, \( f(x) \) puede ser más grande que \( C \cdot g(x) \), pero lo que nos interesa en notación Big-O es cómo crece \( f(x) \) cuando \( x \) se hace muy grande. Big-O estudia el comportamiento <strong>asintótico</strong> de las funciones.
+  </p>
 
+  <h2 > Ejemplo sencillo</h2>
+  <p>Supón que:</p>
+  <p style="text-align: center;">
+    \( f(x) = 5x^2 + 3x + 7 \) <br>
+    \( g(x) = x^2 \)
+  </p>
 
-    <br><br>
+    <p>Queremos probar que \( f(x) \) es \( O(x^2) \).</p>
+    <p>Para eso necesitamos encontrar \( C \) y \( k \) tal que:</p>
 
-    2. Relación N:M (Muchos a Muchos) →
-    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_2 ?>
-    <br><br>
-
-    3. Relación 1:1 (Uno a Uno) →
-    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="10"> 
-    se crea una tabla extra.
-    Se maneja FK unica, excepto en casos especificos. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_3 ?>
-    <br><br>
-    <hr>
-
-    Si existe una relación (fuerte o débil), la entidad dependiente SIEMPRE tendrá una
-    clave foránea como atributo que hace referencia a la entidad principal.    
-
-    <hr>
-    <li>
-    Si la relación es 1:N (débil) → La entidad dependiente tendrá una clave foránea (FK), pero su clave primaria (PK)
-    se mantiene independiente.
-    </li>
-    <li>
-    Si la relación es 1:N (fuerte/identificadora) → La entidad dependiente tendrá una clave foránea (FK), pero esta 
-    también formará parte de su clave primaria (PK).
-    </li>
-    <li>
-    Si la relación es N:M → Se crea una tabla intermedia, donde ambas claves foráneas (de las entidades relacionadas)
-    forman la clave primaria compuesta.
-    </li>
-     <hr>
-
-
-    <strong>¿Qué significa "Origen Opcional"?</strong>
-    <br><br>
-    <strong>Especifica si la existencia de la entidad hija (lado N) depende o no de la entidad padre (lado 1).</strong>
-    <br><br>
-    <strong>Si "Origen Opcional" está MARCADO:</strong>
-    <p>
-    <li>La relación se considera débil (no identificadora).</li>
-    <li>La entidad hija puede existir sin la entidad padre.</li>
-    <li> Se dibuja una línea discontinua con flecha.</li>
-    <li>Ejemplo:
-    Una persona puede existir sin estar asociada a una casa.</li>
+    <p style="text-align: center;">
+    \( |5x^2 + 3x + 7| \leq C \cdot |x^2| \quad \text{para todo } x > k \)
     </p>
-     
-    <strong>Si "Origen Opcional" está DESMARCADO:</strong>
-    <li>La relación se considera fuerte (identificadora).</li>
-    <li>La entidad hija depende completamente de la entidad padre.</li>
-    <li>Se dibuja una línea sólida.</li>
-    <li>Ejemplo:
-    Si Persona no puede existir sin una Casa, se forzaría a que ID_CASA forme parte de su clave primaria.
-    </li>
-    
-    <hr>
-    Cuando en un Modelo Entidad-Relación (MER) te dan un atributo en una relación (especialmente en relaciones
-    muchos a muchos), lo habitual es:
-    <br><br>
-    ✅ Lo que sucede:
-    <li>La relación con atributo se convierte en una entidad asociativa o entidad débil en el MER.</li> 
-    <li>Esta entidad asociativa "intermedia" representa la relación y contiene el atributo extra.
-    </li>
+
+    <p>Después de probar un poco, encontramos que si \( C = 16 \) y \( k = 1 \), la desigualdad se cumple.</p>
+
+    <p>Entonces podemos decir:</p>
+
+    <p style="text-align: center;">
+    \( f(x) = 5x^2 + 3x + 7 \text{ es } O(x^2) \),
     <br>
- </form>
+    porque para todo \( x > 1 \), se cumple que \( f(x) \leq 16x^2 \).
+    </p>
+
+    <h2  > Conclusión</h2>
+    <p>
+    \( k \) es el <strong>umbral</strong> a partir del cual la desigualdad se cumple.
+    </p>  
+    <p>
+    En Big-O no nos importa lo que pase para valores pequeños de \( x \).
+    </p>
+    <p>
+    Solo queremos ver cómo se comporta la función cuando \( x \) crece mucho (cuando \( x \to \infty \)).
+    </p>
+    <hr>
+    <p><strong>k</strong> es el número más pequeño a partir del cual se empieza a cumplir la desigualdad</p>
+    <p>
+    <span style="display: block; text-align: center;">
+    \( |f(x)| \leq C \cdot |g(x)| \)
+    </span>
+    </p>
+    <p>
+    Cualquier número mayor que <strong>k</strong>, es decir \( k' > k \), también funciona, porque si algo
+    se cumple desde \( x > k \), también se va a cumplir para cualquier \( x > k' \).
+    </p>
+    <hr>    
+
+    <h3> ¿Qué significa que “también es cierto que \(1 \leq x^2\)”?</h3>
+
+    <p>Cuando tú sabes que algo es <strong>estrictamente mayor</strong> —por ejemplo:</p>
+
+    <p>\[ x^2 > 1 \]</p>
+
+    <p>Entonces eso automáticamente implica que también se cumple lo siguiente:</p>
+
+    <p>\[ 1 \leq x^2 \]</p>
+
+    <h4>¿Por qué?</h4>
+
+    <p>Porque toda cantidad que sea mayor que 1 también es, por definición, “mayor o igual” que 1. Esto es parte 
+    de la lógica básica de los símbolos de desigualdad.</p>
+    <hr>
+    <h2> TRABAJAR CON LA DEFINICIÓN DE LA NOTACIÓN BIG-O</h2>
+
+<p>
+Un enfoque útil para encontrar un par de <strong>testigos</strong> es seleccionar primero un valor de \( k \)
+para el cual el tamaño de \( |f(x)| \) pueda estimarse fácilmente cuando \( x > k \),
+y ver si podemos usar esta estimación para encontrar un valor de \( C \)
+tal que \( |f(x)| \leq C|g(x)| \) para \( x > k \).
+Este enfoque se ilustra en el Ejemplo 1.
+</p>
+
+<h3> EJEMPLO 1</h3>
+<p>
+Demuestra que \( f(x) = x^2 + 2x + 1 \) es \( O(x^2) \).
+</p>
+
+<p><strong>Solución:</strong> Observamos que podemos estimar fácilmente el tamaño de \( f(x) \)
+cuando \( x > 1 \), porque \( x < x^2 \) y \( 1 < x^2 \) cuando \( x > 1 \).
+Se deduce que:
+</p>
+
+<p>\[
+0 \leq x^2 + 2x + 1 \leq x^2 + 2x^2 + x^2 = 4x^2
+\]</p>
+
+<p>
+Siempre que \( x > 1 \), como se muestra en la Figura 1.
+En consecuencia, podemos tomar \( C = 4 \) y \( k = 1 \) como testigos
+para demostrar que \( f(x) \) es \( O(x^2) \).
+Es decir:
+</p>
+
+<p>\[
+f(x) = x^2 + 2x + 1 < 4x^2 \quad \text{siempre que } x > 1
+\]</p>
+
+<p>
+(Notar que no es necesario usar valores absolutos aquí porque todas las funciones
+en estas igualdades son positivas cuando \( x \) es positivo.)
+</p>
+
+<p>
+Alternativamente, podemos estimar el tamaño de \( f(x) \) cuando \( x > 2 \).
+Cuando \( x > 2 \), tenemos que \( 2x \leq x^2 \) y \( 1 \leq x^2 \).
+En consecuencia, si \( x > 2 \), tenemos:
+</p>
+
+<p>\[
+0 \leq x^2 + 2x + 1 \leq x^2 + x^2 + x^2 = 3x^2
+\]</p>
+
+<p>
+Se deduce que \( C = 3 \) y \( k = 2 \) también son testigos para la relación
+\( f(x) \) es \( O(x^2) \).
+</p>
+
+<p>
+Observa que en la relación “\( f(x) \) es \( O(x^2) \)”,
+\( x^2 \) puede ser reemplazada por cualquier función que tenga valores mayores
+que \( x^2 \) para todo \( x \geq k \), para algún número real positivo \( k \).
+Por ejemplo:
+</p>
+
+<ul>
+  <li>\( f(x) \) es \( O(x^3) \)</li>
+  <li>\( f(x) \) es \( O(x^2 + x + 7) \)</li>
+</ul>
+
+<p>
+También es cierto que \( x^2 \) es \( O(x^2 + 2x + 1) \), porque
+\( x^2 < x^2 + 2x + 1 \) siempre que \( x > 1 \).
+Esto significa que \( C = 1 \) y \( k = 1 \) son testigos de la relación:
+</p>
+
+<p>\[
+x^2 \text{ es } O(x^2 + 2x + 1)
+\]</p>
+
+
+
+    <hr>
+    <h4>¿Por qué se reemplazan <code>2x</code> por <code>2x²</code> y <code>1</code> por <code>x²</code>?</h4>
+
+<p>
+Vamos a aclarar por qué en ese paso se reemplazan \( 2x \) por \( 2x^2 \) y \( 1 \) por \( x^2 \) en la desigualdad:
+</p>
+
+<p>
+\[
+x^2 + 2x + 1 \leq x^2 + 2x^2 + x^2 = 4x^2
+\]
+</p>
+
+<h4>¿Qué está pasando aquí?</h4>
+
+<p>
+Lo que se está haciendo es encontrar una <strong>cota superior</strong> (un valor que siempre sea mayor o igual que la expresión original) para \( f(x) = x^2 + 2x + 1 \), cuando \( x > 1 \).
+</p>
+
+<p>
+Para eso, se aprovecha el hecho de que:
+</p>
+
+<ul>
+  <li>Cuando \( x > 1 \), se cumple que \( x < x^2 \)</li>
+  <li>También, \( 1 < x^2 \)</li>
+  <li>Y claramente \( 2x < 2x^2 \)</li>
+</ul>
+
+ 
+ 
+    </form>
 </div>
 
 
-
-
 <div class="seccion derecha">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <p>
+    <p>
+Entonces, podemos hacer estas <strong>sustituciones conservadoras</strong>:
+</p>
+
+<ul>
+  <li>\( x^2 \) lo dejamos igual.</li>
+  <li>\( 2x \leq 2x^2 \), porque estamos reemplazando \( 2x \) por algo más grande o igual.</li>
+  <li>\( 1 \leq x^2 \), así que también lo reemplazamos por algo más grande.</li>
+</ul>
+
+Esto nos da:
+</p>
+
+<p>
+\[
+x^2 + 2x + 1 \leq x^2 + 2x^2 + x^2 = 4x^2
+\]
+</p>
+
+<h3>¿Por qué hacemos esto?</h3>
+
+<p>
+Porque queremos que toda la expresión \( f(x) \) esté acotada por \( C \cdot x^2 \), y estamos construyendo una forma de ver que sí lo está, para un \( C = 4 \) y un \( k = 1 \).
+</p>
+
+<p>
+Lo importante es que las sustituciones siempre <strong>aumentan el valor o lo dejan igual</strong>, para que la desigualdad siga siendo válida.
+</p>
+
+
+    <hr>
+    <p>El valor <strong>C = 4</strong> sale directamente de la operación final de la desigualdad:</p>
+
+<p><em>x<sup>2</sup> + 2x + 1 ≤ x<sup>2</sup> + 2x<sup>2</sup> + x<sup>2</sup> = 4x<sup>2</sup></em></p>
+
+<p>Lo que se está diciendo ahí es: la función <strong>f(x) = x<sup>2</sup> + 2x + 1</strong> es menor o igual a <strong>4x<sup>2</sup></strong> cuando <strong>x > 1</strong>.</p>
+
+<p>Entonces, en términos de la definición formal de notación Big-O:</p>
+
+<ul>
+  <li>Se encontró un número <strong>k = 1</strong> a partir del cual se puede acotar <strong>f(x)</strong>.</li>
+  <li>Se encontró un número <strong>C = 4</strong> tal que se cumple que:<br>
+    <em>|f(x)| ≤ C · |g(x)|</em> para todo <em>x > k</em>
+  </li>
+</ul>
+
+<p>En este caso, <strong>g(x) = x<sup>2</sup></strong>.</p>
+
+<p>Por eso, decimos que <strong>f(x) = x<sup>2</sup> + 2x + 1</strong> es <strong>O(x<sup>2</sup>)</strong>, con testigos <strong>C = 4</strong> y <strong>k = 1</strong>. ✅</p>
+
+    <hr>
+    <p>En el ejemplo anterior, <i>g(x) = x²</i>.</p>
+
+<p>En la notación Big-O, <i>g(x)</i> es una función de referencia (en este caso <i>x²</i>) que se utiliza para comparar el comportamiento asintótico de <i>f(x)</i>. El objetivo es mostrar que <i>f(x)</i> crece a lo sumo como <i>g(x)</i> multiplicado por una constante <i>C</i>, cuando <i>x</i> es suficientemente grande.</p>
+
+<p>En el caso que mencionas:</p>
+
+<ul>
+    <li>La función <i>f(x) = x² + 2x + 1</i> se está comparando con <i>g(x) = x²</i>.</li>
+    <li>Al demostrar que <i>f(x)</i> es <i>O(x²)</i>, mostramos que <i>f(x)</i> está acotada superiormente por una constante <i>C</i> multiplicada por <i>x²</i> para valores suficientemente grandes de <i>x</i>.</li>
+</ul>
+
+<p>Así, <i>g(x) = x²</i> en este contexto.</p>
+    <hr>
+
+
+    <img src="../../img/Big_O.png" alt="">
+    <p><strong>Nota:</strong> En el Ejemplo 1, tenemos dos funciones, <i>f(x) = x<sup>2</sup> + 2x + 1</i> y <i>g(x) = x<sup>2</sup></i>, tales que <i>f(x)</i> es <i>O(g(x))</i> y <i>g(x)</i> es <i>O(f(x))</i>—este último hecho se sigue de la desigualdad <i>x<sup>2</sup> &le; x<sup>2</sup> + 2x + 1</i>, que se cumple para todos los números reales no negativos <i>x</i>. Decimos que dos funciones <i>f(x)</i> y <i>g(x)</i> que cumplen ambas relaciones de Big-O son de la misma orden. Volveremos a esta noción más adelante en esta sección.</p>
+
+<p><strong>Observación:</strong> El hecho de que <i>f(x)</i> sea <i>O(g(x))</i> a veces se escribe <i>f(x) = O(g(x))</i>. Sin embargo, el signo igual en esta notación no representa una igualdad genuina. Más bien, esta notación nos dice que se cumple una desigualdad que relaciona los valores de las funciones <i>f</i> y <i>g</i> para números suficientemente grandes en los dominios de estas funciones. No obstante, es aceptable escribir <i>f(x) &isin; O(g(x))</i> porque <i>O(g(x))</i> representa el conjunto de funciones que son <i>O(g(x))</i>.</p>
+
+<p>Cuando <i>f(x)</i> es <i>O(g(x))</i>, y <i>h(x)</i> es una función que tiene valores absolutos mayores que los de <i>g(x)</i> para valores suficientemente grandes de <i>x</i>, se sigue que <i>f(x)</i> es <i>O(h(x))</i>. En otras palabras, la función <i>g(x)</i> en la relación <i>f(x)</i> es <i>O(g(x))</i> puede ser reemplazada por una función con valores absolutos mayores. Para ver esto, nota que si:</p>
+
+<pre><code>| f(x) | &le; C | g(x) | &nbsp; si &nbsp; x &gt; k,</code></pre>
+
+<p>y si <i>|h(x)| &gt; |g(x)|</i> para todo <i>x &gt; k</i>, entonces:</p>
+
+<pre><code>| f(x) | &le; C | h(x) | &nbsp; si &nbsp; x &gt; k.</code></pre>
+
+<p>Por lo tanto, <i>f(x)</i> es <i>O(h(x))</i>.</p>
+
+<p>Cuando se usa la notación Big-O, la función <i>g</i> en la relación <i>f(x)</i> es <i>O(g(x))</i> a menudo se elige para tener la tasa de crecimiento más pequeña de las funciones que pertenecen a un conjunto de funciones de referencia, tales como funciones de la forma <i>x<sup>n</sup></i>, donde <i>n</i> es un número real positivo. (Las funciones de referencia importantes se discuten más adelante en esta sección).</p>
+
+<p>En las discusiones posteriores, casi siempre tratamos con funciones que solo toman valores positivos. Todas las referencias a valores absolutos se pueden omitir cuando se trabaja con estimaciones Big-O para tales funciones. La Figura 2 ilustra la relación <i>f(x)</i> es <i>O(g(x))</i>.</p>
     
+
+    <hr>
+    <p>En el caso de <strong>f(x) = x² + 2x + 1</strong> y <strong>g(x) = x²</strong>, la notación <strong>f(x) = O(g(x))</strong> significa que la función <strong>f(x)</strong> está acotada superiormente por una constante <strong>C</strong> multiplicada por <strong>g(x)</strong>, para valores suficientemente grandes de <strong>x</strong>.</p>
+
+<p>Es decir, la notación <strong>f(x) = O(g(x))</strong> implica que existe una constante <strong>C</strong> y un valor de <strong>k</strong> tal que, para <strong>x > k</strong>:</p>
+
+<p><strong>|f(x)| ≤ C ⋅ |g(x)|</strong></p>
+
+<p>En tu ejemplo:</p>
+
+<ul>
+  <li><strong>f(x) = x² + 2x + 1</strong></li>
+  <li><strong>g(x) = x²</strong></li>
+</ul>
+
+<p>Se quiere encontrar una constante <strong>C</strong> tal que, para valores suficientemente grandes de <strong>x</strong>, la desigualdad</p>
+
+<p><strong>x² + 2x + 1 ≤ C ⋅ x²</strong></p>
+
+<p>se cumpla.</p>
+    <hr>
+    Es decir que f(x) es O(g(x)) quiere decir que se tiene alguna funcion que cumple la desigualdad propuesta.
+    <br><br>
+    <p>Cuando decimos que una función <i>f(x)</i> está acotada superiormente por una función <i>g(x)</i>,
+    lo que estamos afirmando es que para valores suficientemente grandes de <i>x</i> (es decir, cuando
+    <i>x > k</i> para algún <i>k</i> específico), la función <i>f(x)</i> no crece más rápido que <i>g(x)</i> 
+    multiplicada por una constante <i>C</i>.</p>
+
 
     </form>
 </div>

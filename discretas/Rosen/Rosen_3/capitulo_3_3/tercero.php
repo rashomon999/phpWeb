@@ -1123,14 +1123,20 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
-    .imagen { 
+    .imagen {
         max-width: 100%;
         height: auto;
+    }
+    .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 375vh;
     }
 </style>
  
@@ -1431,120 +1437,271 @@ function ocultarMensaje4() {
 </script>
     
 </head>
-<body>
+<body> 
 <div class="seccion izquierda">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h3>✅ Sobre la línea continua y discontinua</h3>
-    <img src="../../../img/personal.png" alt="">
-    <ul>
-    <li>
-    <strong>🔹 Línea continua (<em>subordinado</em>)</strong><br>
-    Generalmente indica una <strong>relación obligatoria</strong> (participación total):<br>
-    &rarr; <em>Debe</em> existir un subordinado (es decir, el directivo <em>debe</em> tener al menos un subordinado).
-    </li>
+    <form action="./decimo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <strong>es una matrix por que por cada punto (primer for), compara los anteriores (segundo for).</strong>
     <br>
-    <li>
-    <strong>🔹 Línea discontinua (<em>directivo</em>)</strong><br>
-    Suele indicar una <strong>relación opcional</strong> (participación parcial):<br>
-    &rarr; Un <code>PERSONAL</code> <em>puede o no</em> tener un directivo (es decir, algunos empleados no tienen jefe, como el director general).
-    </li>
-    </ul>
+    <h2>¿Qué hace el algoritmo con ese par de puntos?</h2>
+  <p>
+    En cada combinación de índices \( (i, j) \), se calcula la distancia entre esos dos puntos:
+  </p>
+  <p>
+    \( (x_j - x_i)^2 + (y_j - y_i)^2 \)
+  </p>
+  <p>
+    <strong>Nota:</strong> Se usa la distancia al cuadrado para evitar calcular raíces cuadradas, lo cual es innecesario si solo queremos saber cuál es menor.
+  </p>
 
+  <pre><code>if distancia_actual < min then
+    min := distancia_actual
+    closest pair := ((xi, yi), (xj, yj))</code></pre>
+
+  <p>Se guarda ese par si es el más cercano que hemos encontrado hasta ahora.</p>
+
+  <h2>Resumen del significado</h2>
+  <table border="1" cellpadding="6" cellspacing="0">
+    <tr>
+      <th>Variable</th>
+      <th>Representa</th>
+      <th>Ejemplo</th>
+    </tr>
+    <tr>
+      <td><code>i</code></td>
+      <td>Índice del punto actual que se compara</td>
+      <td>Si <code>i = 4</code>, estamos mirando el cuarto punto</td>
+    </tr>
+    <tr>
+      <td><code>j</code></td>
+      <td>Índice de un punto anterior al actual (<code>i</code>)</td>
+      <td>Si <code>j = 2</code>, comparamos el punto 4 con el punto 2</td>
+    </tr>
+    <tr>
+      <td>\((x_i, y_i)\)</td>
+      <td>Coordenadas del punto actual</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>\((x_j, y_j)\)</td>
+      <td>Coordenadas del punto anterior con el que se compara</td>
+      <td></td>
+    </tr>
+  </table>     
     <hr>
-    los subtipos tambien garantizan que sea excluyente.
-    <br><br>
-    " Por último, el personal que realiza funciones de directivo no aparecerá nunca
-    como personal de planta y ni al contrario."
-    <br><br>
-    <img src="../../../img/subtipo.png" alt="" width="600">
-    <br><br>
-    <img src="../../../img/subtipo_2.png" alt="" width="600">
-    <hr>
-    1. Relación 1:N (Uno a Muchos) →
-    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_1 ?>
+    <h2> Resumen claro y directo:</h2>
 
+  <p>
+    Cada punto con índice \( i \) (empezando desde 2) se compara con todos los anteriores: \( j = 1 \) hasta \( i - 1 \).
+  </p>
 
-    <br><br>
+  <p>
+    Por eso, el número de comparaciones que se hacen para cada \( i \) es \( i - 1 \).
+  </p>
 
-    2. Relación N:M (Muchos a Muchos) →
-    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_2 ?>
-    <br><br>
+  <p>
+    Entonces, el total de comparaciones es la suma:
+  </p>
 
-    3. Relación 1:1 (Uno a Uno) →
-    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="10"> 
-    se crea una tabla extra.
-    Se maneja FK unica, excepto en casos especificos. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_3 ?>
-    <br><br>
-    <hr>
+  <p>
+    \( 1 + 2 + 3 + \dots + (n - 1) \)
+  </p>
 
-    Si existe una relación (fuerte o débil), la entidad dependiente SIEMPRE tendrá una
-    clave foránea como atributo que hace referencia a la entidad principal.    
+  <p>
+    Esa suma tiene una fórmula:
+  </p>
 
-    <hr>
-    <li>
-    Si la relación es 1:N (débil) → La entidad dependiente tendrá una clave foránea (FK), pero su clave primaria (PK)
-    se mantiene independiente.
-    </li>
-    <li>
-    Si la relación es 1:N (fuerte/identificadora) → La entidad dependiente tendrá una clave foránea (FK), pero esta 
-    también formará parte de su clave primaria (PK).
-    </li>
-    <li>
-    Si la relación es N:M → Se crea una tabla intermedia, donde ambas claves foráneas (de las entidades relacionadas)
-    forman la clave primaria compuesta.
-    </li>
-     <hr>
-
-
-    <strong>¿Qué significa "Origen Opcional"?</strong>
-    <br><br>
-    <strong>Especifica si la existencia de la entidad hija (lado N) depende o no de la entidad padre (lado 1).</strong>
-    <br><br>
-    <strong>Si "Origen Opcional" está MARCADO:</strong>
-    <p>
-    <li>La relación se considera débil (no identificadora).</li>
-    <li>La entidad hija puede existir sin la entidad padre.</li>
-    <li> Se dibuja una línea discontinua con flecha.</li>
-    <li>Ejemplo:
-    Una persona puede existir sin estar asociada a una casa.</li>
-    </p>
-     
-    <strong>Si "Origen Opcional" está DESMARCADO:</strong>
-    <li>La relación se considera fuerte (identificadora).</li>
-    <li>La entidad hija depende completamente de la entidad padre.</li>
-    <li>Se dibuja una línea sólida.</li>
-    <li>Ejemplo:
-    Si Persona no puede existir sin una Casa, se forzaría a que ID_CASA forme parte de su clave primaria.
-    </li>
+  <p>
+    \(  \frac{(n - 1)n}{2}  \) 
+  </p>
+  <hr>
     
+
+
+
+
+  <h3>3.3.5 Comprendiendo la Complejidad de los Algoritmos</h3>
+
+<p>La <strong>Tabla 1</strong> muestra algunos términos comunes usados para describir la complejidad temporal de los algoritmos.</p>
+
+<p>Por ejemplo, un algoritmo que encuentra el mayor de los primeros 100 elementos de una lista de <em>n</em> elementos, aplicando el Algoritmo 1 a la secuencia de los primeros 100 términos (donde <em>n</em> es un entero con <em>n ≥ 100</em>), tiene <strong>complejidad constante</strong> porque realiza 99 comparaciones sin importar cuál sea el valor de <em>n</em> (como puede comprobar el lector).</p>
+
+<p>El algoritmo de búsqueda lineal tiene <strong>complejidad lineal</strong> (en el peor o promedio de los casos), y el algoritmo de búsqueda binaria tiene <strong>complejidad logarítmica</strong> (en el peor de los casos).</p>
+
+<p>Muchos algoritmos importantes tienen una complejidad <strong>linealítmica</strong> (<em>n log n</em>, en el peor de los casos), como el ordenamiento por mezcla (<em>merge sort</em>), que presentaremos en el Capítulo 4. (La palabra <em>linealítmica</em> es una combinación de los términos <em>lineal</em> y <em>logarítmica</em>).</p>
+
+<h4>Tabla 1. Terminología comúnmente usada para describir la complejidad de algoritmos</h4>
+
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Notación</th>
+      <th>Terminología de Complejidad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Θ(1)</td>
+      <td>Complejidad constante</td>
+    </tr>
+    <tr>
+      <td>Θ(log n)</td>
+      <td>Complejidad logarítmica</td>
+    </tr>
+    <tr>
+      <td>Θ(n)</td>
+      <td>Complejidad lineal</td>
+    </tr>
+    <tr>
+      <td>Θ(n log n)</td>
+      <td>Complejidad linealítmica</td>
+    </tr>
+    <tr>
+      <td>Θ(n<sup>b</sup>)</td>
+      <td>Complejidad polinomial</td>
+    </tr>
+    <tr>
+      <td>Θ(b<sup>n</sup>), donde b &gt; 1</td>
+      <td>Complejidad exponencial</td>
+    </tr>
+    <tr>
+      <td>Θ(n!)</td>
+      <td>Complejidad factorial</td>
+    </tr>
+  </tbody>
+</table>
+
     <hr>
-    Cuando en un Modelo Entidad-Relación (MER) te dan un atributo en una relación (especialmente en relaciones
-    muchos a muchos), lo habitual es:
-    <br><br>
-    ✅ Lo que sucede:
-    <li>La relación con atributo se convierte en una entidad asociativa o entidad débil en el MER.</li> 
-    <li>Esta entidad asociativa "intermedia" representa la relación y contiene el atributo extra.
-    </li>
-    <br>
- </form>
+    <strong>Importante comprender analizando complejidad: </strong>
+    <h2> En general:</h2>
+<p>
+  Si tienes dos funciones:
+</p>
+<ul>
+  <li>\( f(n) = n^c \), donde \( c > 1 \)</li>
+  <li>\( g(n) = n \)</li>
+</ul>
+<p>
+  Entonces:
+</p>
+<p style="text-align: center;">
+  \( f(n) = \omega(n) \)
+</p>
+<p>
+  O sea: \( n^c \) crece más rápido que \( n \)
+</p>
+<p>
+  Incluso si \( c > 1 \) por muy poquito, como \( c = 1.01 \), a la larga \( n^{1.01} > n \)
+</p>
+
+<h3> ¿Y si \( 0 < c < 1 \)?</h3>
+<p>
+  Entonces, por el contrario:
+</p>
+<p>
+  \( f(n) = n^c \) crece más lento que \( n \)
+</p>
+<p>
+  Ejemplo: \( n^{0.5} = \sqrt{n} < n \)
+</p>
+
+<h3> Conclusión rápida:</h3>
+<table border="1" cellpadding="8" style="border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th>Exponente \( c \) en \( n^c \)</th>
+      <th>Comparación con \( n \)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>\( c > 1 \)</td>
+      <td>\( n^c > n \) (crece más rápido)</td>
+    </tr>
+    <tr>
+      <td>\( c = 1 \)</td>
+      <td>\( n^c = n \) (igual crecimiento)</td>
+    </tr>
+    <tr>
+      <td>\( 0 < c < 1 \)</td>
+      <td>\( n^c < n \) (crece más lento)</td>
+    </tr>
+  </tbody>
+</table>
+    <hr>
+    <h2>Complejidad de Algoritmos</h2>
+
+<p>Un algoritmo tiene complejidad polinomial si su complejidad es Θ(n<sup>b</sup>), donde <em>b</em> es un entero con <em>b ≥ 1</em>. Por ejemplo, el algoritmo de ordenamiento por burbuja (bubble sort) es un algoritmo de tiempo polinomial porque utiliza Θ(n<sup>2</sup>) comparaciones en el peor de los casos. Un algoritmo tiene complejidad exponencial si tiene complejidad temporal Θ(b<sup>n</sup>), donde <em>b > 1</em>. El algoritmo que determina si una proposición compuesta con <em>n</em> variables es satisfacible comprobando todas las posibles asignaciones de valores de verdad es un algoritmo con complejidad exponencial, porque utiliza Θ(2<sup>n</sup>) operaciones. Finalmente, un algoritmo tiene complejidad factorial si su complejidad es Θ(n!), como el algoritmo que encuentra todos los órdenes posibles en los que un vendedor viajero podría visitar <em>n</em> ciudades; este algoritmo se discutirá en el Capítulo 9.</p>
+
+ 
+    </form>
 </div>
 
 
 
 
 <div class="seccion derecha">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    
+    <form action="./decimo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <h3>Tractabilidad</h3>
+<p>Un problema que puede resolverse usando un algoritmo con complejidad polinomial (o mejor) en el peor caso se denomina <strong>tractable</strong> (tratabale), porque se espera que el algoritmo produzca una solución en un tiempo relativamente corto para entradas de tamaño razonable. Sin embargo, si el polinomio en la estimación en big-Θ tiene un grado alto (como 100) o si los coeficientes son extremadamente grandes, el algoritmo podría tardar mucho tiempo en resolver el problema. Por lo tanto, que un problema pueda resolverse usando un algoritmo con complejidad temporal polinomial en el peor caso no garantiza que pueda resolverse en un tiempo razonable para valores pequeños de entrada. Afortunadamente, en la práctica, el grado y los coeficientes de los polinomios en tales estimaciones suelen ser pequeños.</p>
 
-    </form>
+<p>La situación es mucho peor para los problemas que no pueden resolverse mediante un algoritmo con complejidad polinomial en el peor caso. Estos problemas se denominan <strong>intractables</strong>. Generalmente, aunque no siempre, se requiere una cantidad de tiempo extremadamente grande para resolver el problema en los peores casos, incluso con entradas pequeñas. Sin embargo, en la práctica, puede haber situaciones en las que un algoritmo con cierta complejidad temporal en el peor caso puede resolver un problema mucho más rápido en la mayoría de los casos que en su peor caso. Cuando estamos dispuestos a aceptar que algunos casos, quizás pocos, no se resuelvan en un tiempo razonable, la complejidad temporal en el caso promedio es una mejor medida del tiempo que tarda un algoritmo en resolver un problema.</p>
+
+<p>Muchos problemas importantes en la industria se consideran intractables, pero pueden resolverse prácticamente para casi todos los conjuntos de entrada que surgen en la vida diaria. Otra forma de abordar los problemas intractables en aplicaciones prácticas es buscar soluciones aproximadas en lugar de exactas. Puede suceder que existan algoritmos rápidos para encontrar tales soluciones aproximadas, incluso con la garantía de que no se desvían mucho de una solución exacta.</p>
+
+<p>Incluso existen problemas para los que se ha demostrado que no existe ningún algoritmo que los resuelva. Estos problemas se llaman <strong>no resolubles</strong> (en oposición a los problemas resolubles que pueden resolverse con un algoritmo). La primera demostración de que existen problemas no resolubles fue realizada por el gran matemático e informático inglés Alan Turing, cuando demostró que el problema de la parada es irresoluble. (Recuerda que demostramos que el problema de la parada es irresoluble en la Sección 3.1. Una biografía de Alan Turing y una descripción de algunos de sus otros trabajos se pueden encontrar en el Capítulo 13).</p>
+
+
+
+
+<h3>P versus NP</h3>
+<p>El estudio de la complejidad de los algoritmos va mucho más allá de lo que podemos describir aquí. Sin embargo, ten en cuenta que muchos problemas resolubles se cree que no pueden resolverse con un algoritmo con complejidad temporal polinomial en el peor caso, pero que una solución, si se conoce, puede verificarse en tiempo polinomial. Los problemas para los que una solución puede verificarse en tiempo polinomial pertenecen a la clase <strong>NP</strong> (los problemas tratables pertenecen a la clase <strong>P</strong>). La abreviatura NP significa <em>tiempo polinomial no determinista</em>.</p>
+
+<p>El problema de la satisfacibilidad, discutido en la Sección 1.3, es un ejemplo de un problema NP: podemos verificar rápidamente si una asignación de valores de verdad a las variables de una proposición compuesta la hace verdadera, pero no se ha descubierto ningún algoritmo de tiempo polinomial que encuentre dicha asignación. (Por ejemplo, una búsqueda exhaustiva de todos los posibles valores de verdad requiere Ω(2<sup>n</sup>) operaciones de bits, donde <em>n</em> es el número de variables).</p>
+
+<p>También existe una clase importante de problemas, llamados <strong>problemas NP-completos</strong>, con la propiedad de que si alguno de estos problemas puede resolverse con un algoritmo de tiempo polinomial en el peor caso, entonces todos los problemas en la clase NP pueden resolverse con algoritmos de tiempo polinomial en el peor caso. El problema de la satisfacibilidad también es un ejemplo de problema NP-completo. Es un problema NP, y si se conociera un algoritmo polinomial para resolverlo, existirían algoritmos polinomiales para todos los problemas conocidos en esta clase (y hay muchos problemas importantes en esta clase). Esta última afirmación se basa en el hecho de que todo problema en NP puede reducirse en tiempo polinomial al problema de la satisfacibilidad.</p>
+
+<p>Aunque ahora se conocen más de 3000 problemas NP-completos, el problema de la satisfacibilidad fue el primero en demostrarse como tal. El teorema que afirma esto se conoce como el <strong>teorema de Cook-Levin</strong>, en honor a Stephen Cook y Leonid Levin, quienes lo demostraron independientemente a principios de los años 1970.</p>
+
+<p>El problema de <strong>P versus NP</strong> pregunta si NP, la clase de problemas cuyas soluciones pueden verificarse en tiempo polinomial, es igual a P, la clase de problemas tratables. Si <em>P ≠ NP</em>, existirían problemas que no pueden resolverse en tiempo polinomial, pero cuyas soluciones podrían verificarse en tiempo polinomial. El concepto de NP-completitud es útil en la investigación sobre el problema P versus NP, ya que los problemas NP-completos son considerados los más probablemente fuera de P, dado que todo problema en NP puede reducirse a un problema NP-completo en tiempo polinomial.</p>
+
+<p>Una gran mayoría de científicos de la computación teórica cree que <em>P ≠ NP</em>, lo que significaría que ningún problema NP-completo puede resolverse en tiempo polinomial. Una razón para esta creencia es que, a pesar de una investigación extensa, nadie ha logrado demostrar que <em>P = NP</em>. En particular, nadie ha podido encontrar un algoritmo con complejidad temporal polinomial en el peor caso que resuelva algún problema NP-completo. El problema P versus NP es uno de los problemas no resueltos más famosos de las ciencias matemáticas (que incluyen la informática teórica). Es uno de los siete famosos <strong>Problemas del Premio del Milenio</strong>, de los cuales seis siguen sin resolverse. El Instituto Clay de Matemáticas ofrece un premio de $1,000,000 por su solución.</p>
+
+
+    <hr>
+    <h3>Enlace</h3>
+<p>Para más información sobre la complejidad de algoritmos, consulta las referencias, incluyendo [CoLeRiSt09], de esta sección listadas al final del libro. (Además, para una discusión más formal sobre la complejidad computacional en términos de máquinas de Turing, consulta la Sección 13.5).</p>
+
+<h3>Consideraciones Prácticas</h3>
+<p>Observa que una estimación big-Θ de la complejidad temporal de un algoritmo expresa cómo aumenta el tiempo requerido para resolver el problema conforme crece el tamaño de entrada. En la práctica, se usa la mejor estimación (es decir, con la función de referencia más pequeña) que se pueda demostrar. Sin embargo, las estimaciones big-Θ no se pueden traducir directamente en el tiempo real de computadora usado. Una razón es que una estimación big-Θ f(n) = Θ(g(n)), donde f(n) es la complejidad temporal de un algoritmo y g(n) es una función de referencia, significa que C₁g(n) ≤ f(n) ≤ C₂g(n) cuando n > k, donde C₁, C₂ y k son constantes. Por lo tanto, sin conocer estas constantes, no se puede determinar un límite inferior ni superior en el número de operaciones usadas en el peor caso.</p>
+
+<p>Además, el tiempo requerido para una operación depende del tipo de operación y de la computadora utilizada. A menudo, en lugar de una estimación big-Θ de la complejidad temporal en el peor caso de un algoritmo, solo se tiene una estimación big-O. Una estimación big-O proporciona un límite superior, pero no un límite inferior, del tiempo requerido en el peor caso en función del tamaño de la entrada. No obstante, por simplicidad, usaremos frecuentemente estimaciones big-O al describir la complejidad temporal de algoritmos, entendiendo que las estimaciones big-Θ proporcionarían más información.</p>
+
+<h4>Tabla 2. Tiempo de Computadora Usado por Algoritmos</h4>
+<table border="1">
+  <thead>
+    <tr>
+      <th>Tamaño del Problema</th>
+      <th>log n</th>
+      <th>n</th>
+      <th>n log n</th>
+      <th>n<sup>2</sup></th>
+      <th>2<sup>n</sup></th>
+      <th>n!</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>10</td><td>3 × 10⁻¹¹ s</td><td>10⁻¹⁰ s</td><td>3 × 10⁻¹⁰ s</td><td>10⁻⁹ s</td><td>10⁻⁸ s</td><td>3 × 10⁻⁷ s</td></tr>
+    <tr><td>10²</td><td>7 × 10⁻¹¹ s</td><td>10⁻⁹ s</td><td>7 × 10⁻⁹ s</td><td>10⁻⁷ s</td><td>4 × 10¹¹ años *</td><td>*</td></tr>
+    <tr><td>10³</td><td>1.0 × 10⁻¹⁰ s</td><td>10⁻⁸ s</td><td>1 × 10⁻⁷ s</td><td>10⁻⁵ s</td><td>*</td><td>*</td></tr>
+    <tr><td>10⁴</td><td>1.3 × 10⁻¹⁰ s</td><td>10⁻⁷ s</td><td>1 × 10⁻⁶ s</td><td>10⁻³ s</td><td>*</td><td>*</td></tr>
+    <tr><td>10⁵</td><td>1.7 × 10⁻¹⁰ s</td><td>10⁻⁶ s</td><td>2 × 10⁻⁵ s</td><td>0.1 s</td><td>*</td><td>*</td></tr>
+    <tr><td>10⁶</td><td>2 × 10⁻¹⁰ s</td><td>10⁻⁵ s</td><td>2 × 10⁻⁴ s</td><td>0.17 min</td><td>*</td><td>*</td></tr>
+  </tbody>
+</table>
+
+<p>En el futuro, estos tiempos disminuirán a medida que se desarrollen computadoras más rápidas. Podemos usar los tiempos mostrados en la Tabla 2 para ver si es razonable esperar una solución para un problema de un tamaño específico usando un algoritmo con complejidad temporal conocida cuando se ejecuta en una computadora moderna.</p>
+
+     </form>
 </div>
 
 <div class="centered-container">
@@ -1552,7 +1709,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="segundo.php"
+        href="cuarto.php"
         role="button"
         width="50px"
         height="50px"

@@ -1123,12 +1123,12 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
-    .imagen { 
+    .imagen {
         max-width: 100%;
         height: auto;
     }
@@ -1431,119 +1431,185 @@ function ocultarMensaje4() {
 </script>
     
 </head>
-<body>
+<body> 
 <div class="seccion izquierda">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h3>✅ Sobre la línea continua y discontinua</h3>
-    <img src="../../../img/personal.png" alt="">
-    <ul>
-    <li>
-    <strong>🔹 Línea continua (<em>subordinado</em>)</strong><br>
-    Generalmente indica una <strong>relación obligatoria</strong> (participación total):<br>
-    &rarr; <em>Debe</em> existir un subordinado (es decir, el directivo <em>debe</em> tener al menos un subordinado).
-    </li>
-    <br>
-    <li>
-    <strong>🔹 Línea discontinua (<em>directivo</em>)</strong><br>
-    Suele indicar una <strong>relación opcional</strong> (participación parcial):<br>
-    &rarr; Un <code>PERSONAL</code> <em>puede o no</em> tener un directivo (es decir, algunos empleados no tienen jefe, como el director general).
-    </li>
-    </ul>
+    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+           
+<h4>Ejemplo 4</h4>
+<p>Usar el ordenamiento burbuja para poner 3, 2, 4, 1, 5 en orden creciente.</p>
+<p><b>Solución:</b> Los pasos de este algoritmo se ilustran en la Figura 1. Comenzamos comparando los dos primeros elementos, 3 y 2. Como 3 > 2, se intercambian, produciendo la lista 2, 3, 4, 1, 5. Como 3 < 4, se continúa comparando 4 y 1. Como 4 > 1, se intercambian, produciendo la lista 2, 3, 1, 4, 5. Como 4 < 5, la primera pasada se completa. Esta garantiza que el mayor elemento, 5, esté en la posición correcta.</p>
 
-    <hr>
-    los subtipos tambien garantizan que sea excluyente.
-    <br><br>
-    " Por último, el personal que realiza funciones de directivo no aparecerá nunca
-    como personal de planta y ni al contrario."
-    <br><br>
-    <img src="../../../img/subtipo.png" alt="" width="600">
-    <br><br>
-    <img src="../../../img/subtipo_2.png" alt="" width="600">
-    <hr>
-    1. Relación 1:N (Uno a Muchos) →
-    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_1 ?>
+<p>La segunda pasada comienza comparando 2 y 3. Como están en el orden correcto, se comparan 3 y 1. Como 3 > 1, se intercambian, produciendo 2, 1, 3, 4, 5. Como 3 < 4, estos están en orden correcto. No es necesario hacer más comparaciones en esta pasada porque 5 ya está en la posición correcta. Esta pasada garantiza que los dos mayores elementos, 4 y 5, estén en sus posiciones correctas.</p>
 
+<p>La tercera pasada comienza comparando 2 y 1. Se intercambian porque 2 > 1, produciendo 1, 2, 3, 4, 5. Como 2 < 3, estos dos elementos están en orden correcto. No se necesitan más comparaciones en esta pasada porque 4 y 5 ya están en sus posiciones correctas. Esta pasada garantiza que los tres elementos más grandes, 3, 4 y 5, estén en su lugar.</p>
 
-    <br><br>
+<p>La cuarta pasada consiste en una sola comparación, entre 1 y 2. Como 1 < 2, están en orden. Esto completa el ordenamiento burbuja.</p>
 
-    2. Relación N:M (Muchos a Muchos) →
-    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_2 ?>
-    <br><br>
+<h3>ALGORITMO 4 El ordenamiento burbuja</h3>
+<pre><code>procedure bubblesort(a1,… , an : real numbers with n ≥ 2)
+for i := 1 to n − 1
+    for j := 1 to n − i
+        if aj > aj+1 then interchange aj and aj+1
+{a1,… , an is in increasing order}</code></pre>
 
-    3. Relación 1:1 (Uno a Uno) →
-    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="10"> 
-    se crea una tabla extra.
-    Se maneja FK unica, excepto en casos especificos. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_3 ?>
-    <br><br>
+    <img src="../../img/insertion_sort.png" alt="">
     <hr>
 
-    Si existe una relación (fuerte o débil), la entidad dependiente SIEMPRE tendrá una
-    clave foránea como atributo que hace referencia a la entidad principal.    
+    <h3>EL ORDENAMIENTO POR INSERCIÓN</h3>
+
+<p>El ordenamiento por inserción es un algoritmo de ordenamiento sencillo, aunque usualmente no es el más eficiente. Para ordenar una lista con <i>n</i> elementos, el ordenamiento por inserción comienza con el segundo elemento. Este segundo elemento se compara con el primero y se inserta antes de él si no lo supera, o después si lo supera. En este punto, los dos primeros elementos están en el orden correcto. Luego, el tercer elemento se compara con el primero, y si es mayor, se compara con el segundo; se inserta en la posición correcta entre los tres primeros elementos.</p>
+
+<p>En general, en el paso <i>j</i> del ordenamiento por inserción, el elemento <i>j</i> de la lista se inserta en la posición correcta dentro de la lista previamente ordenada de <i>j − 1</i> elementos. Para insertar el elemento <i>j</i> en la lista, se utiliza una técnica de búsqueda lineal (ver Ejercicio 45); el elemento <i>j</i> se compara sucesivamente con los <i>j − 1</i> elementos ya ordenados al inicio de la lista hasta que se encuentra el primer elemento que no es menor o hasta que ha sido comparado con todos los <i>j − 1</i> elementos. El elemento <i>j</i> se inserta en la posición correcta de manera que los primeros <i>j</i> elementos queden ordenados. El algoritmo continúa hasta que el último elemento se coloca en la posición correcta respecto a la lista ya ordenada de los primeros <i>n − 1</i> elementos. El ordenamiento por inserción se describe en pseudocódigo en el Algoritmo 5.</p>
+
+<h4>Ejemplo 5</h4>
+<p>Usar el ordenamiento por inserción para poner los elementos de la lista 3, 2, 4, 1, 5 en orden creciente.</p>
+<p><b>Solución:</b> El ordenamiento por inserción primero compara 2 y 3. Como 3 &gt; 2, coloca 2 en la primera posición, produciendo la lista 2, 3, 4, 1, 5 (la parte ordenada de la lista se muestra en color). En este punto, 2 y 3 están en el orden correcto. Luego, inserta el tercer elemento, 4, en la parte ya ordenada de la lista haciendo las comparaciones 4 &gt; 2 y 4 &gt; 3. Como 4 &gt; 3, 4 permanece en la tercera posición. En este punto, la lista es 2, 3, 4, 1, 5 y sabemos que el orden de los tres primeros elementos es correcto. A continuación, encontramos el lugar correcto para el cuarto elemento, 1, entre los elementos ya ordenados 2, 3, 4. Como 1 &lt; 2, obtenemos la lista 1, 2, 3, 4, 5. Finalmente, insertamos el 5 en la posición correcta comparándolo sucesivamente con 1, 2, 3 y 4. Como 5 &gt; 4, permanece al final de la lista, produciendo el orden correcto de toda la lista.</p>
+
+<h3>ALGORITMO 5 El ordenamiento por inserción</h3>
+<pre><code>procedure insertion sort(a1, a2,… , an: real numbers with n ≥ 2)
+for j := 2 to n
+    i := 1
+    while aj > ai
+        i := i + 1
+    m := aj
+    for k := 0 to j − i − 1
+        aj−k := aj−k−1
+    ai := m
+{a1,… , an is in increasing order}</code></pre>
+
 
     <hr>
-    <li>
-    Si la relación es 1:N (débil) → La entidad dependiente tendrá una clave foránea (FK), pero su clave primaria (PK)
-    se mantiene independiente.
-    </li>
-    <li>
-    Si la relación es 1:N (fuerte/identificadora) → La entidad dependiente tendrá una clave foránea (FK), pero esta 
-    también formará parte de su clave primaria (PK).
-    </li>
-    <li>
-    Si la relación es N:M → Se crea una tabla intermedia, donde ambas claves foráneas (de las entidades relacionadas)
-    forman la clave primaria compuesta.
-    </li>
-     <hr>
+    <h3>3.1.4 Coincidencia de Cadenas</h3>
 
+<p>Aunque la búsqueda y el ordenamiento son los problemas más comúnmente encontrados en la informática, muchos otros problemas surgen con frecuencia. Uno de estos problemas pregunta dónde ocurre una cadena particular de caracteres <b>P</b>, llamada el <i>patrón</i>, dentro de otra cadena <b>T</b>, llamada el <i>texto</i>, si es que ocurre. Por ejemplo, podemos preguntar si el patrón <code>101</code> se encuentra dentro de la cadena <code>11001011</code>. A simple vista podemos ver que el patrón <code>101</code> aparece en el texto <code>11001011</code> con un desplazamiento de cuatro caracteres, porque <code>101</code> es la subcadena formada por el quinto, sexto y séptimo caracteres del texto. Por otro lado, el patrón <code>111</code> no aparece dentro del texto <code>110110001101</code>.</p>
 
-    <strong>¿Qué significa "Origen Opcional"?</strong>
-    <br><br>
-    <strong>Especifica si la existencia de la entidad hija (lado N) depende o no de la entidad padre (lado 1).</strong>
-    <br><br>
-    <strong>Si "Origen Opcional" está MARCADO:</strong>
-    <p>
-    <li>La relación se considera débil (no identificadora).</li>
-    <li>La entidad hija puede existir sin la entidad padre.</li>
-    <li> Se dibuja una línea discontinua con flecha.</li>
-    <li>Ejemplo:
-    Una persona puede existir sin estar asociada a una casa.</li>
-    </p>
+<p>Encontrar dónde ocurre un patrón en una cadena de texto se llama <b>coincidencia de cadenas</b> (o <i>string matching</i>). La coincidencia de cadenas desempeña un papel esencial en una gran variedad de aplicaciones, incluyendo la edición de texto, filtros de spam, sistemas que detectan ataques en redes informáticas, motores de búsqueda, detección de plagio, bioinformática y muchas otras aplicaciones importantes. Por ejemplo, en la edición de texto, el problema de coincidencia de cadenas aparece cada vez que necesitamos encontrar todas las apariciones de una cadena para poder reemplazarla por otra diferente. Los motores de búsqueda buscan coincidencias entre palabras clave de búsqueda y palabras en páginas web. Muchos problemas en bioinformática surgen en el estudio de las moléculas de ADN, las cuales están compuestas por cuatro bases: timina (T), adenina (A), citosina (C) y guanina (G). El proceso de secuenciación de ADN consiste en determinar el orden de estas cuatro bases en el ADN. Esto lleva a problemas de coincidencia de cadenas con cadenas formadas por las cuatro letras T, A, C y G. Por ejemplo, podemos preguntar si el patrón <code>CAG</code> ocurre en el texto <code>CATCACAGAGA</code>. La respuesta es sí, porque aparece con un desplazamiento de cinco caracteres. Resolver preguntas sobre el genoma requiere el uso de algoritmos eficientes para coincidencia de cadenas, especialmente porque una cadena que representa el genoma humano contiene aproximadamente 3 × 10<sup>9</sup> caracteres.</p>
+
+ 
      
-    <strong>Si "Origen Opcional" está DESMARCADO:</strong>
-    <li>La relación se considera fuerte (identificadora).</li>
-    <li>La entidad hija depende completamente de la entidad padre.</li>
-    <li>Se dibuja una línea sólida.</li>
-    <li>Ejemplo:
-    Si Persona no puede existir sin una Casa, se forzaría a que ID_CASA forme parte de su clave primaria.
-    </li>
-    
-    <hr>
-    Cuando en un Modelo Entidad-Relación (MER) te dan un atributo en una relación (especialmente en relaciones
-    muchos a muchos), lo habitual es:
-    <br><br>
-    ✅ Lo que sucede:
-    <li>La relación con atributo se convierte en una entidad asociativa o entidad débil en el MER.</li> 
-    <li>Esta entidad asociativa "intermedia" representa la relación y contiene el atributo extra.
-    </li>
-    <br>
- </form>
+    </form>
 </div>
 
 
 
 
 <div class="seccion derecha">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
     
+    <p>Ahora describiremos un algoritmo de fuerza bruta, el <b>Algoritmo 6</b>, para coincidencia 
+    de cadenas, llamado el <i>comparador de cadenas ingenuo</i>. La entrada de este algoritmo es el
+    patrón que deseamos buscar, <b>P = p₁p₂ … pₘ</b>, y el texto <b>T = t₁t₂ … tₙ</b>. Cuando este patrón 
+    comienza en la posición <b>s + 1</b> del texto <b>T</b>, decimos que <b>P</b> ocurre con
+    desplazamiento <b>s</b> en <b>T</b>, es decir, cuando <code>t<sub>s+1</sub> = p₁</code>,
+    <code>t<sub>s+2</sub> = p₂</code>, …, <code>t<sub>s+m</sub> = pₘ</code>. Para encontrar todos los 
+    desplazamientos válidos, el comparador ingenuo recorre todos los posibles desplazamientos <b>s</b> 
+    desde <b>s = 0</b> hasta <b>s = n − m</b>, comprobando si <b>s</b> es un desplazamiento válido. En 
+    la Figura 2 se muestra cómo opera el Algoritmo 6 al buscar el patrón <code>eye</code> en el texto 
+    <code>eceyeye</code>.</p>
 
+
+    <h4>ALGORITMO 6 Comparador de Cadenas Ingenuo</h4>
+    <pre><code>procedure string match (n, m: positive integers, m ≤ n, t1, t2,… , tn, p1, p2,… , pm: characters)
+        for s := 0 to n − m
+            j := 1
+            while ( j ≤ m and ts+j = pj )
+                j := j + 1
+            if j > m then print “s is a valid shift”</code></pre>
+
+
+            <h2>3.1.6 El Problema de la Detención</h2>
+<p>
+Ahora describiremos una demostración de uno de los teoremas más famosos en la informática.
+Mostraremos que existe un problema que no puede resolverse utilizando ningún procedimiento.
+Es decir, mostraremos que hay problemas irresolubles. El problema que estudiaremos es el 
+<strong>problema de la detención</strong>. Este plantea si existe un procedimiento que haga lo siguiente: 
+tome como entrada un programa de computadora y una entrada para ese programa, y determine 
+si el programa eventualmente se detendrá al ejecutarse con esa entrada.
+</p>
+
+    <p>
+    Sería conveniente tener tal procedimiento, si existiera. Ciertamente, poder comprobar si un 
+    programa entra en un bucle infinito sería útil al escribir y depurar programas. Sin embargo, 
+    en 1936 Alan Turing demostró que <strong>no existe tal procedimiento</strong> (ver su biografía en la 
+    Sección 13.4).
+    </p>
+
+    <p>
+    Antes de presentar una demostración de que el problema de la detención es irresoluble, 
+    observa primero que no podemos simplemente ejecutar un programa y observar qué hace para 
+    determinar si se detiene cuando se ejecuta.
+    </p>
+    <hr>
+    <h1>3.2 El Crecimiento de las Funciones</h1>
+
+<h2>3.2.1 Introducción</h2>
+<p>
+  En la Sección 3.1 discutimos el concepto de un algoritmo. Introdujimos algoritmos que resuelven una variedad de problemas, incluyendo la búsqueda de un elemento en una lista y la ordenación de una lista. En la Sección 3.3 estudiaremos la cantidad de operaciones utilizadas por estos algoritmos. En particular, estimaremos la cantidad de comparaciones utilizadas por los algoritmos de búsqueda lineal y binaria para encontrar un elemento en una secuencia de \( n \) elementos. También estimaremos la cantidad de comparaciones utilizadas por el ordenamiento burbuja y por el ordenamiento por inserción para ordenar una lista de \( n \) elementos.
+</p>
+
+<p>
+  El tiempo requerido para resolver un problema depende de más que solo la cantidad de operaciones que utiliza. El tiempo también depende del hardware y el software utilizados para ejecutar el programa que implementa el algoritmo. Sin embargo, cuando cambiamos el hardware y software utilizados para implementar un algoritmo, podemos aproximar de cerca el tiempo requerido para resolver un problema de tamaño \( n \) multiplicando el tiempo anterior por una constante. Por ejemplo, en una supercomputadora podríamos resolver un problema de tamaño \( n \) un millón de veces más rápido que en una PC. Sin embargo, este factor de un millón no dependerá de \( n \) (excepto tal vez de manera menor).
+</p>
+
+<p>
+  Una de las ventajas de usar la notación big-O, que introducimos en esta sección, es que podemos estimar el crecimiento de una función sin preocuparnos por multiplicadores constantes o términos de orden menor. Esto significa que, usando notación big-O, no tenemos que preocuparnos por el hardware y software utilizados para implementar un algoritmo. Además, usando notación big-O, podemos asumir que las diferentes operaciones utilizadas en un algoritmo toman el mismo tiempo, lo cual simplifica considerablemente el análisis.
+</p>
+
+<p>
+  La notación big-O se usa ampliamente para estimar la cantidad de operaciones que un algoritmo utiliza a medida que crece su entrada. Con la ayuda de esta notación, podemos determinar si es práctico usar un algoritmo en particular para resolver un problema conforme crece el tamaño de la entrada. Además, usando la notación big-O, podemos comparar dos algoritmos para determinar cuál es más eficiente a medida que crece el tamaño de la entrada. Por ejemplo, si tenemos dos algoritmos para resolver un problema, uno que usa \( 100n^2 + 17n + 4 \) operaciones y otro que usa \( n^3 \) operaciones, la notación big-O puede ayudarnos a ver que el primer algoritmo utiliza muchas menos operaciones cuando \( n \) es grande, aunque use más operaciones para valores pequeños de \( n \), como \( n = 10 \).
+</p>
+
+<p>
+  Esta sección introduce la notación big-O y las notaciones relacionadas big-Omega y big-Theta. Explicaremos cómo se construyen las estimaciones big-O, big-Omega y big-Theta, y estableceremos estimaciones para algunas funciones importantes que se usan en el análisis de algoritmos.
+</p>
+
+<h2>3.2.2 Notación Big-O</h2>
+<p>
+  El crecimiento de las funciones se describe a menudo utilizando una notación especial. La Definición 1 describe esta notación.
+</p>
+
+<h3>Definición 1</h3>
+<p>
+  Sean \( f \) y \( g \) funciones del conjunto de los enteros o del conjunto de los números reales al conjunto de los números reales. Decimos que \( f(x) \) es \( O(g(x)) \) si existen constantes \( C \) y \( k \) tales que
+</p>
+
+<p style="text-align: center;">
+  \( |f(x)| \leq C |g(x)| \)
+  <br>
+  siempre que \( x > k \).
+</p>
+
+<p>
+  [Esto se lee como “\( f(x) \) es big-oh de \( g(x) \)”.]
+</p>
+
+<h3>Observación</h3>
+<p>
+  Intuitivamente, la definición de que \( f(x) \) es \( O(g(x)) \) dice que \( f(x) \) crece más lento que algún múltiplo fijo de \( g(x) \) a medida que \( x \) crece sin límite.
+</p>
+
+<p>
+  Las constantes \( C \) y \( k \) en la definición de la notación big-O se llaman <em>testigos</em> de la relación \( f(x) \) es \( O(g(x)) \). Para establecer que \( f(x) \) es \( O(g(x)) \) solo necesitamos un par de testigos para esta relación. Es decir, para mostrar que \( f(x) \) es \( O(g(x)) \), solo necesitamos encontrar un par de constantes \( C \) y \( k \), los testigos, tal que \( |f(x)| \leq C|g(x)| \) siempre que \( x > k \).
+</p>
+
+<p>
+  Observa que cuando existe un par de testigos para la relación \( f(x) \) es \( O(g(x)) \), existen infinitos pares de testigos. Para ver esto, nota que si \( C \) y \( k \) son un par de testigos, entonces cualquier par \( C' \) y \( k' \), donde \( C < C' \) y \( k < k' \), también es un par de testigos, porque
+</p>
+
+<p style="text-align: center;">
+  \( |f(x)| \leq C|g(x)| \leq C'|g(x)| \)
+  <br>
+  siempre que \( x > k' > k \).
+</p>
+
+<h2>LA HISTORIA DE LA NOTACIÓN BIG-O</h2>
+<p>
+  La notación <strong>big-O</strong> se ha utilizado en matemáticas durante más de un siglo.
+  En ciencias de la computación, se utiliza ampliamente en el análisis de algoritmos, como se verá en la Sección 3.3.
+  El matemático alemán <strong>Paul Bachmann</strong> introdujo por primera vez la notación big-O en 1892 en un importante libro sobre teoría de números.
+  El símbolo big-O a veces se llama <em>símbolo de Landau</em>, en honor al matemático alemán <strong>Edmund Landau</strong>, quien utilizó esta notación en toda su obra.
+  El uso de la notación big-O en ciencias de la computación fue popularizado por <strong>Donald Knuth</strong>, quien también introdujo las notaciones <strong>big-Ω</strong> y <strong>big-Θ</strong> que se definen más adelante en esta sección.
+</p>
     </form>
 </div>
 
@@ -1552,7 +1618,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="segundo.php"
+        href="tercero.php"
         role="button"
         width="50px"
         height="50px"

@@ -1123,14 +1123,20 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
-    .imagen { 
+    .imagen {
         max-width: 100%;
         height: auto;
+    }
+    .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 390vh;
     }
 </style>
  
@@ -1431,119 +1437,324 @@ function ocultarMensaje4() {
 </script>
     
 </head>
-<body>
+<body> 
 <div class="seccion izquierda">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h3>✅ Sobre la línea continua y discontinua</h3>
-    <img src="../../../img/personal.png" alt="">
-    <ul>
-    <li>
-    <strong>🔹 Línea continua (<em>subordinado</em>)</strong><br>
-    Generalmente indica una <strong>relación obligatoria</strong> (participación total):<br>
-    &rarr; <em>Debe</em> existir un subordinado (es decir, el directivo <em>debe</em> tener al menos un subordinado).
-    </li>
+    <form action="./septimo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <h3>Otro Ejemplo:</h3>
+  <p>
+    \( f(x) = 3x^2 + 8x \log x \)
     <br>
-    <li>
-    <strong>🔹 Línea discontinua (<em>directivo</em>)</strong><br>
-    Suele indicar una <strong>relación opcional</strong> (participación parcial):<br>
-    &rarr; Un <code>PERSONAL</code> <em>puede o no</em> tener un directivo (es decir, algunos empleados no tienen jefe, como el director general).
-    </li>
-    </ul>
+    Como \( 8x \log x \leq 8x^2 \), entonces:
+    <br>
+    \( f(x) \leq 11x^2 \Rightarrow f(x) = O(x^2) \)
+    <br>
+    Y claramente \( x^2 = O(f(x)) \), entonces \( f(x) = \Theta(x^2) \)
+  </p>
 
+  <h2>Teorema (Grado del Polinomio)</h2>
+  <p>
+    Si \( f(x) = a_nx^n + \dots + a_1x + a_0 \) y \( a_n \neq 0 \), entonces:
+    <br>
+    \( f(x) = \Theta(x^n) \)
+  </p>
+
+  <h3>Ejemplos:</h3>
+  <ul>
+    <li> \( 3x^8 + 10x^7 + 221x^2 + 1444 \Rightarrow \Theta(x^8) \)</li>
+    <li> \( x^{19} - 18x^4 - 10112 \Rightarrow \Theta(x^{19}) \)</li>
+    <li> \( -x^{99} + 40001x^{98} + 100003x \Rightarrow \Theta(x^{99}) \)</li>
+  </ul>
+
+  <h2>Advertencia</h2>
+  <p>
+    Como señaló Donald Knuth, es común encontrar el uso de notación Big-O como si también implicara 
+    una cota inferior, lo cual es incorrecto. Siempre que necesitemos expresar el crecimiento real de una función 
+    (con ambas cotas), debemos usar \( \Theta \).
+  </p>      
     <hr>
-    los subtipos tambien garantizan que sea excluyente.
-    <br><br>
-    " Por último, el personal que realiza funciones de directivo no aparecerá nunca
-    como personal de planta y ni al contrario."
-    <br><br>
-    <img src="../../../img/subtipo.png" alt="" width="600">
-    <br><br>
-    <img src="../../../img/subtipo_2.png" alt="" width="600">
-    <hr>
-    1. Relación 1:N (Uno a Muchos) →
-    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_1 ?>
+    <h2>Ejercicio 1: Determinar si f(x) es O(x)</h2>
 
+<h3>a) \( f(x) = 10 \)</h3>
+<p>
+Buscamos constantes \( C \) y \( k \) tal que:
+\[
+|f(x)| = 10 \leq Cx \quad \text{cuando } x > k
+\]
+Dividiendo:
+\[
+\frac{10}{x} \leq C
+\]
+Esto se cumple si elegimos \( C = 10 \), \( k = 1 \), ya que \( \frac{10}{x} < 10 \) para \( x > 1 \).
+</p>
+<p><strong>Conclusión:</strong> \( f(x) = 10 \) es \( O(x) \).</p>
 
-    <br><br>
+<h3>b) \( f(x) = 3x + 7 \)</h3>
+<p>
+\[
+f(x) = 3x + 7 \leq 3x + 7x = 10x \quad \text{cuando } x > 1
+\]
+(Ya que \( 7 < 7x \) cuando \( x > 1 \)).
+</p>
+<p><strong>Conclusión:</strong> \( f(x) = 3x + 7 \) es \( O(x) \) con \( C = 10 \), \( k = 1 \).</p>
 
-    2. Relación N:M (Muchos a Muchos) →
-    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_2 ?>
-    <br><br>
+<h3>c) \( f(x) = x^2 + x + 1 \)</h3>
+<p>
+\[
+f(x) = x^2 + x + 1
+\]
+El término dominante es \( x^2 \), que crece más rápido que \( x \), así que no podemos acotarlo superiormente por \( Cx \).
+</p>
+<p><strong>Conclusión:</strong> \( f(x) \) <strong>no</strong> es \( O(x) \).</p>
 
-    3. Relación 1:1 (Uno a Uno) →
-    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="10"> 
-    se crea una tabla extra.
-    Se maneja FK unica, excepto en casos especificos. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_3 ?>
-    <br><br>
-    <hr>
-
-    Si existe una relación (fuerte o débil), la entidad dependiente SIEMPRE tendrá una
-    clave foránea como atributo que hace referencia a la entidad principal.    
-
-    <hr>
-    <li>
-    Si la relación es 1:N (débil) → La entidad dependiente tendrá una clave foránea (FK), pero su clave primaria (PK)
-    se mantiene independiente.
-    </li>
-    <li>
-    Si la relación es 1:N (fuerte/identificadora) → La entidad dependiente tendrá una clave foránea (FK), pero esta 
-    también formará parte de su clave primaria (PK).
-    </li>
-    <li>
-    Si la relación es N:M → Se crea una tabla intermedia, donde ambas claves foráneas (de las entidades relacionadas)
-    forman la clave primaria compuesta.
-    </li>
-     <hr>
-
-
-    <strong>¿Qué significa "Origen Opcional"?</strong>
-    <br><br>
-    <strong>Especifica si la existencia de la entidad hija (lado N) depende o no de la entidad padre (lado 1).</strong>
-    <br><br>
-    <strong>Si "Origen Opcional" está MARCADO:</strong>
+    <h3>d) \( f(x) = 5 \log x \)</h3>
     <p>
-    <li>La relación se considera débil (no identificadora).</li>
-    <li>La entidad hija puede existir sin la entidad padre.</li>
-    <li> Se dibuja una línea discontinua con flecha.</li>
-    <li>Ejemplo:
-    Una persona puede existir sin estar asociada a una casa.</li>
+    \[
+    \log x < x \quad \text{para } x > 1 \Rightarrow 5 \log x < 5x
+    \]
+    \[
+    |f(x)| = 5 \log x \leq 5x
+    \]
     </p>
-     
-    <strong>Si "Origen Opcional" está DESMARCADO:</strong>
-    <li>La relación se considera fuerte (identificadora).</li>
-    <li>La entidad hija depende completamente de la entidad padre.</li>
-    <li>Se dibuja una línea sólida.</li>
-    <li>Ejemplo:
-    Si Persona no puede existir sin una Casa, se forzaría a que ID_CASA forme parte de su clave primaria.
-    </li>
-    
+    <p><strong>Conclusión:</strong> \( f(x) = 5 \log x \) es \( O(x) \) con \( C = 5 \), \( k = 1 \).</p>
+
+    <h3>e) \( f(x) = \lfloor x \rfloor \)</h3>
+    <p>
+    \[
+    \lfloor x \rfloor \leq x \Rightarrow |f(x)| \leq x
+    \]
+    </p>
+    <p><strong>Conclusión:</strong> \( f(x) \) es \( O(x) \) con \( C = 1 \), \( k = 1 \).</p>
+
+    <h3>f) \( f(x) = \lceil x/2 \rceil \)</h3>
+    <p>
+    \[
+    \lceil x/2 \rceil \leq x/2 + 1 \leq x \quad \text{cuando } x > 2
+    \Rightarrow |f(x)| \leq x
+    \]
+    </p>
+    <p><strong>Conclusión:</strong> \( f(x) \) es \( O(x) \) con \( C = 1 \), \( k = 2 \).</p>
     <hr>
-    Cuando en un Modelo Entidad-Relación (MER) te dan un atributo en una relación (especialmente en relaciones
-    muchos a muchos), lo habitual es:
-    <br><br>
-    ✅ Lo que sucede:
-    <li>La relación con atributo se convierte en una entidad asociativa o entidad débil en el MER.</li> 
-    <li>Esta entidad asociativa "intermedia" representa la relación y contiene el atributo extra.
-    </li>
-    <br>
- </form>
+
+
+
+
+
+
+
+    <h2>Ejercicio: Determinar si \( f(x) = O(x^2) \)</h2>
+
+  <h3>a) \( f(x) = 17x + 11 \)</h3>
+  <p>
+    Para \( x > 1 \):<br>
+    \( 17x + 11 \leq 28x \leq 28x^2 \)<br>
+    Entonces, con \( C = 28 \), \( k = 1 \), se concluye:<br>
+    \( f(x) = O(x^2) \)
+  </p>
+
+  <h3>b) \( f(x) = x^2 + 1000 \)</h3>
+  <p>
+    Para \( x > 10 \):<br>
+    \( x^2 + 1000 \leq 2x^2 \)<br>
+    Entonces, con \( C = 2 \), \( k = 10 \):<br>
+    \( f(x) = O(x^2) \)
+  </p>
+
+  <h3>c) \( f(x) = x \log x \)</h3>
+  <p>
+    Para \( x > 1 \):<br>
+    \( \log x \leq x \Rightarrow x \log x \leq x^2 \)<br>
+    Entonces, con \( C = 1 \), \( k = 1 \):<br>
+    \( f(x) = O(x^2) \)
+  </p>
+
+  <h3>d) \( f(x) = \frac{x^4}{2} \)</h3>
+  <p>
+    Para valores grandes de \( x \), \( \frac{x^4}{2} \gg x^2 \)<br>
+    No existe un \( C \) tal que \( \frac{x^4}{2} \leq Cx^2 \)<br>
+    <strong>Conclusión:</strong> \( f(x) \notin O(x^2) \)
+  </p>
+
+  <h3>e) \( f(x) = 2^x \)</h3>
+  <p>
+    \( 2^x \) crece más rápido que cualquier polinomio.<br>
+    No se puede acotar superiormente por \( x^2 \).<br>
+    <strong>Conclusión:</strong> \( f(x) \notin O(x^2) \)
+  </p>
+
+  <h3>f) \( f(x) = \lfloor x \rfloor \cdot \lceil x \rceil \)</h3>
+  <p>
+    \( \lfloor x \rfloor \leq x \), \( \lceil x \rceil \leq x + 1 \Rightarrow f(x) \leq x(x + 1) = x^2 + x \leq 2x^2 \)<br>
+    Entonces, con \( C = 2 \), \( k = 1 \):<br>
+    \( f(x) = O(x^2) \)
+  </p>
+
+  <h3>Resumen:</h3>
+  <ul>
+    <li>a) ✅ Sí</li>
+    <li>b) ✅ Sí</li>
+    <li>c) ✅ Sí</li>
+    <li>d) ❌ No</li>
+    <li>e) ❌ No</li>
+    <li>f) ✅ Sí</li>
+  </ul>
+    </form>
 </div>
 
 
 
 
 <div class="seccion derecha">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    
+    <form action="./septimo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <h2>Demuestre que \( f(x) = 2^x + 17 \) es \( O(3^x) \)</h2>
 
+<h3>Paso 1: Definición formal</h3>
+<p>
+Una función \( f(x) \) es \( O(g(x)) \) si existen constantes positivas \( C \) y \( k \) tales que:
+</p>
+<p>
+\[
+|f(x)| \leq C \cdot |g(x)| \quad \text{para todo } x > k
+\]
+</p>
+
+<h3>Paso 2: Análisis de crecimiento</h3>
+<p>
+Sabemos que \( 3^x > 2^x \) para todo \( x > 0 \), y que \( 3^x > 17 \) cuando \( x > 2 \), porque:
+</p>
+<ul>
+  <li>\( 3^2 = 9 \)</li>
+  <li>\( 3^3 = 27 \Rightarrow 3^x > 17 \) cuando \( x > 2 \)</li>
+</ul>
+
+<h3>Paso 3: Acotación</h3>
+<p>
+Dado que para \( x > 2 \) se cumple:
+</p>
+<p>
+\[
+2^x < 3^x \quad \text{y} \quad 17 < 3^x
+\]
+</p>
+<p>
+Entonces:
+</p>
+<p>
+\[
+2^x + 17 < 3^x + 3^x = 2 \cdot 3^x
+\]
+</p>
+
+<h3>Paso 4: Conclusión</h3>
+<p>
+Hemos encontrado constantes:
+</p>
+<ul>
+  <li>\( C = 2 \)</li>
+  <li>\( k = 2 \)</li>
+</ul>
+<p>
+Tales que:
+</p>
+<p>
+\[
+|2^x + 17| \leq 2 \cdot 3^x \quad \text{para } x > 2
+\]
+</p>
+<p>
+Por lo tanto, \( f(x) = 2^x + 17 \) es \( O(3^x) \).
+</p>
+    <hr>
+    <h2>3.3 Complejidad de los algoritmos</h2>
+
+<h3>3.3.1 Introducción</h3>
+
+<p>
+¿Cuándo un algoritmo ofrece una solución satisfactoria a un problema? Primero, debe <strong>producir siempre la respuesta correcta</strong>. Cómo se puede demostrar esto se discutirá en el <em>Capítulo 5</em>. Segundo, debe ser <strong>eficiente</strong>. La eficiencia de los algoritmos se abordará en esta sección.
+</p>
+
+<p>
+¿Cómo se puede analizar la eficiencia de un algoritmo? Una medida de eficiencia es el <strong>tiempo que utiliza una computadora</strong> para resolver un problema usando el algoritmo, cuando los valores de entrada tienen un tamaño especificado. Una segunda medida es la <strong>cantidad de memoria</strong> que requiere la computadora para implementar el algoritmo, también cuando los valores de entrada tienen un tamaño determinado.
+</p>
+
+<p>
+Preguntas como estas involucran la <strong>complejidad computacional</strong> del algoritmo. Un análisis del tiempo requerido para resolver un problema de cierto tamaño implica estudiar la <strong>complejidad temporal</strong> del algoritmo. Un análisis de la memoria necesaria implica estudiar la <strong>complejidad espacial</strong> del algoritmo.
+</p>
+
+<p>
+Las consideraciones de complejidad temporal y espacial son esenciales al implementar algoritmos. Es importante saber si un algoritmo dará una respuesta en <em>un microsegundo</em>, <em>un minuto</em>, o <em>mil millones de años</em>. De manera similar, la memoria requerida debe estar disponible para poder resolver un problema, por lo que la <strong>complejidad espacial</strong> también debe tomarse en cuenta.
+</p>
+
+<p>
+Las consideraciones sobre la complejidad espacial están relacionadas con las estructuras de datos específicas que se usan para implementar el algoritmo. Como las estructuras de datos no se tratan en detalle en este libro, <strong>no se considerará la complejidad espacial</strong>. Nos <strong>limitaremos a estudiar la complejidad temporal</strong>.
+</p>
+
+    <hr>
+    <h2>3.3.2 Complejidad Temporal</h2>
+
+  <p>
+    La complejidad temporal de un algoritmo puede expresarse en términos de la cantidad de operaciones que realiza el algoritmo cuando la entrada tiene un tamaño determinado.
+    Las operaciones utilizadas para medir la complejidad temporal pueden incluir: la comparación de enteros, la suma de enteros, la multiplicación de enteros, la división de enteros, u otras operaciones básicas.
+  </p>
+
+  <p>
+    La complejidad temporal se describe en función del número de operaciones requeridas en lugar del tiempo real de ejecución, debido a que diferentes computadoras requieren distintos tiempos para realizar operaciones básicas.
+    Además, descomponer todas las operaciones hasta el nivel de operaciones básicas con bits puede ser bastante complejo.
+  </p>
+
+  <p>
+    Por otro lado, las computadoras más rápidas del mundo pueden realizar operaciones básicas con bits (como sumar, multiplicar, comparar o intercambiar dos bits) en 
+    <strong>10⁻¹¹ segundos</strong> (10 picosegundos), mientras que una computadora personal puede requerir 
+    <strong>10⁻⁸ segundos</strong> (10 nanosegundos) para hacer las mismas operaciones, es decir, <strong>1000 veces más tiempo</strong>.
+  </p>
+    <hr>
+    <h2>Algoritmo dado:</h2>
+<pre>
+procedure max(a₁, a₂, …, aₙ: integers)
+  max := a₁
+  for i := 2 to n
+    if max &lt; aᵢ then
+      max := aᵢ
+  return max
+</pre>
+
+    <h2>Objetivo:</h2>
+    <p>Contar cuántas comparaciones se hacen para determinar la complejidad temporal en función de \( n \) (tamaño del conjunto de entrada).</p>
+
+    <h2>¿Qué operaciones se consideran "comparaciones"?</h2>
+
+    <ul>
+    <li><strong>Comparación de control del bucle:</strong><br>
+    Cada vez que se ejecuta <code>for i := 2 to n</code>, la máquina debe comparar si \( i \leq n \) para saber si debe continuar con otra iteración.<br>
+    → Esto cuenta como <strong>una comparación</strong>.
+    </li>
+    <li><strong>Comparación del valor máximo:</strong><br>
+    Dentro del bucle hay una línea que dice <code>if max &lt; aᵢ then</code>.<br>
+    Esta también es una <strong>comparación</strong>, para decidir si el valor actual supera al máximo temporal.<br>
+    → Esto también cuenta como <strong>otra comparación</strong>.
+    </li>
+    </ul>
+
+    <h2>Entonces, por cada iteración del bucle:</h2>
+    <ul>
+        <li>1 comparación para saber si seguimos (\( i \leq n \))</li>
+        <li>1 comparación para comparar el valor actual con el máximo temporal (\( \text{max} < a_i \))</li>
+    </ul>
+
+    <p>→ 2 comparaciones por iteración</p>
+
+    <h2>¿Cuántas iteraciones hay?</h2>
+    <p>El bucle va de \( i = 2 \) hasta \( i = n \), o sea, se ejecuta \( (n - 1) \) veces.</p>
+
+    <p>Cada una de esas iteraciones hace 2 comparaciones. → Total: \( 2(n - 1) \)</p>
+
+    <p>Además, se hace una comparación extra al final para que el bucle termine cuando \( i = n + 1 \) 
+    (el bucle comprueba \( i \leq n \), y al fallar, sale del bucle).</p>
+
+    <h2>→ Comparaciones totales:</h2>
+    <p>\[
+    2(n - 1) + 1 = 2n - 1
+    \]</p>
+    es \( \Theta(n) \)
     </form>
 </div>
 
@@ -1552,7 +1763,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="segundo.php"
+        href="quinto.php"
         role="button"
         width="50px"
         height="50px"

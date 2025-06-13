@@ -90,7 +90,7 @@ $verificar_61 = ''; $verificar_62 = ''; $verificar_63 = ''; $verificar_64 = ''; 
 
 if ($_POST) {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '26') {  
+   if ($respuesta_1 === 'a') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -1124,7 +1124,7 @@ if ($respuesta_110 === '264') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
     <link rel="stylesheet" href="../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
@@ -1132,6 +1132,14 @@ if ($respuesta_110 === '264') {
         max-width: 100%;
         height: auto;
     }
+
+    .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 700vh;
+    }
+
 </style>
  
 <script>
@@ -1434,107 +1442,320 @@ function ocultarMensaje4() {
 <body>
 <div class="seccion izquierda">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h3>✅ Sobre la línea continua y discontinua</h3>
-    <img src="../../../img/personal.png" alt="">
-    <ul>
-    <li>
-    <strong>🔹 Línea continua (<em>subordinado</em>)</strong><br>
-    Generalmente indica una <strong>relación obligatoria</strong> (participación total):<br>
-    &rarr; <em>Debe</em> existir un subordinado (es decir, el directivo <em>debe</em> tener al menos un subordinado).
-    </li>
-    <br>
-    <li>
-    <strong>🔹 Línea discontinua (<em>directivo</em>)</strong><br>
-    Suele indicar una <strong>relación opcional</strong> (participación parcial):<br>
-    &rarr; Un <code>PERSONAL</code> <em>puede o no</em> tener un directivo (es decir, algunos empleados no tienen jefe, como el director general).
-    </li>
-    </ul>
+     <h3>De acuerdo al siguiente fragmento de un modelo ER, la línea punteada en el conector entre <strong>Employee</strong> y <strong>Department</strong> representa:</h3>
 
-    <hr>
-    los subtipos tambien garantizan que sea excluyente.
+  <form>
+    <label>
+      <input type="radio" name="respuesta_1" value="a">
+      a. La participación de la entidad Employee en la relación "manages"
+    </label>
+    <br>
+
+    <label>
+      <input type="radio" name="respuesta_1" value="b">
+      b. Un atributo de la relación "manages"
+    </label>
+    <br>
+
+    <label>
+      <input type="radio" name="respuesta_1" value="c">
+      c. La cardinalidad de la entidad Employee en la relación "manages"
+    </label>
+    <br>
+
+    <label>
+      <input type="radio" name="respuesta_1" value="d">
+      d. El rol de la entidad Employee en la relación "manages"
+    </label>
     <br><br>
-    " Por último, el personal que realiza funciones de directivo no aparecerá nunca
-    como personal de planta y ni al contrario."
+    <img src="../../../img/pregunta_1.png" alt="">
     <br><br>
-    <img src="../../../img/subtipo.png" alt="" width="600">
-    <br><br>
-    <img src="../../../img/subtipo_2.png" alt="" width="600">
-    <hr>
-    1. Relación 1:N (Uno a Muchos) →
-    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="10"> 
-    se crea una tabla extra. <br>
     <button type="submit">Enviar</button>
     <?php echo $verificar_1 ?>
+    <h3>Explicación sobre la línea punteada en el modelo ER</h3>
 
-
-    <br><br>
-
-    2. Relación N:M (Muchos a Muchos) →
-    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_2 ?>
-    <br><br>
-
-    3. Relación 1:1 (Uno a Uno) →
-    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="10"> 
-    se crea una tabla extra.
-    Se maneja FK unica, excepto en casos especificos. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_3 ?>
-    <br><br>
-    <hr>
-
-    Si existe una relación (fuerte o débil), la entidad dependiente SIEMPRE tendrá una
-    clave foránea como atributo que hace referencia a la entidad principal.    
-
-    <hr>
-    <li>
-    Si la relación es 1:N (débil) → La entidad dependiente tendrá una clave foránea (FK), pero su clave primaria (PK)
-    se mantiene independiente.
-    </li>
-    <li>
-    Si la relación es 1:N (fuerte/identificadora) → La entidad dependiente tendrá una clave foránea (FK), pero esta 
-    también formará parte de su clave primaria (PK).
-    </li>
-    <li>
-    Si la relación es N:M → Se crea una tabla intermedia, donde ambas claves foráneas (de las entidades relacionadas)
-    forman la clave primaria compuesta.
-    </li>
-     <hr>
-
-
-    <strong>¿Qué significa "Origen Opcional"?</strong>
-    <br><br>
-    <strong>Especifica si la existencia de la entidad hija (lado N) depende o no de la entidad padre (lado 1).</strong>
-    <br><br>
-    <strong>Si "Origen Opcional" está MARCADO:</strong>
     <p>
-    <li>La relación se considera débil (no identificadora).</li>
-    <li>La entidad hija puede existir sin la entidad padre.</li>
-    <li> Se dibuja una línea discontinua con flecha.</li>
-    <li>Ejemplo:
-    Una persona puede existir sin estar asociada a una casa.</li>
+    En el modelo entidad-relación (ER) que se muestra, la <strong>línea punteada entre Employee y Department</strong>, 
+    asociada con la relación "<strong>manages</strong>", indica la <strong>participación parcial</strong> de la entidad 
+    <em>Employee</em> en dicha relación.
     </p>
-     
-    <strong>Si "Origen Opcional" está DESMARCADO:</strong>
-    <li>La relación se considera fuerte (identificadora).</li>
-    <li>La entidad hija depende completamente de la entidad padre.</li>
-    <li>Se dibuja una línea sólida.</li>
-    <li>Ejemplo:
-    Si Persona no puede existir sin una Casa, se forzaría a que ID_CASA forme parte de su clave primaria.
-    </li>
-    
+
+    <p>
+    Esto significa que <strong>no todos los empleados gestionan un departamento</strong>, por eso su participación en 
+    la relación "<em>manages</em>" no es obligatoria.
+    </p>
+
+    <p><strong>Por lo tanto, la respuesta correcta es:</strong></p>
+    <p style="margin-left: 20px;"><strong>a.</strong> La participación de la entidad Employee en la relación "manages"</p>
+
+    <p><strong>Nota:</strong> La opción marcada actualmente (<strong>c</strong>) sobre la cardinalidad es incorrecta, ya que 
+    la <em>cardinalidad</em> se representa mediante números (como <code>1:N</code>, <code>N:M</code>, etc.), y no mediante 
+    líneas punteadas. 
+    Las <strong>líneas punteadas</strong> indican <em>participación opcional o parcial</em>.</p>
+
+     <h3>Participación en los diagramas Entidad-Relación (ER)</h3>
+
+  <p>
+    <strong>Línea punteada</strong>: indica <em>participación parcial</em> (no obligatoria) de una entidad en una relación. 
+    Esto significa que <strong>no todos los empleados participan en la relación "manages"</strong> (es decir, no todos son gerentes).
+  </p>
+
+  <p>
+    <strong>Línea continua</strong>: indica <em>participación total</em> (obligatoria) de la entidad en la relación.
+  </p>
+
     <hr>
-    Cuando en un Modelo Entidad-Relación (MER) te dan un atributo en una relación (especialmente en relaciones
-    muchos a muchos), lo habitual es:
+     <h3>De la siguiente tabla de <strong>SUCURSALES</strong>, se puede decir:</h3>
+        <img src="../../../img/pregunta_2.png" alt="">
+  <form>
+    <label>
+      <input type="checkbox" name="respuesta" value="a">
+      a. Está en 1FN, porque no cumple para estar en 2FN.
+    </label>
     <br><br>
-    ✅ Lo que sucede:
-    <li>La relación con atributo se convierte en una entidad asociativa o entidad débil en el MER.</li> 
-    <li>Esta entidad asociativa "intermedia" representa la relación y contiene el atributo extra.
-    </li>
+
+    <label>
+      <input type="checkbox" name="respuesta" value="b">
+      b. Todos los atributos son univaluados.
+    </label>
+    <br><br>
+
+    <label>
+      <input type="checkbox" name="respuesta" value="c">
+      c. Está en 1FN porque los atributos nombre_emp_dirige y el cargo_emp_dirige, dependen del id_emp_dirige.
+    </label>
+    <br><br>
+
+    <label>
+      <input type="checkbox" name="respuesta" value="d">
+      d. Todos los atributos no clave dependen por completo de la clave primaria.
+    </label>
+    <br><br>
+
+    <label>
+      <input type="checkbox" name="respuesta" value="e">
+      e. Está en 3FN, cumple todo para estar en esta forma normal.
+    </label>
+    <br><br>
+
+    <label>
+      <input type="checkbox" name="respuesta" value="f">
+      f. Todos los atributos dependen de la clave primaria.
+    </label>
+    <br><br>
+
+    <button type="submit">Enviar</button>
     <br>
- </form>
+  <h3 style="color: red;">Incorrecta</h3>
+      <p><strong>d.</strong> Todos los atributos no clave dependen por completo de la clave primaria.</p>
+
+  <h4>Explicación:</h4>
+  <p>
+    La <strong>Tercera Forma Normal (3FN)</strong> establece que:
+  </p>
+
+  <blockquote>
+    "Los atributos no clave deben depender solo y directamente de la clave primaria, no de otra columna que a su vez dependa de la clave primaria."
+  </blockquote>
+
+  <p>
+    En este caso, los atributos <code>nombre_emp_dirige</code> y <code>cargo_emp_dirige</code> dependen de <code>ID_Emp_dirige</code>, 
+    y <code>ID_Emp_dirige</code> a su vez depende de <code>ID_Sucursal</code>, por lo tanto <strong>se rompe la 3FN</strong>.
+  </p>
+    <hr>
+
+    <img src="../../../img/pregunta_5.png" alt="">
+      <h1>Entidad débil (dependiente) = clave primaria compuesta</h1>
+    
+    <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Participación</th>
+                <th>Notación</th>
+                <th>Dependencia</th>
+                <th>PK típica</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Total</td>
+                <td>`- <`</td>
+                <td>Dependiente</td>
+                <td>Compuesta</td>
+            </tr>
+            <tr>
+                <td>Parcial</td>
+                <td>-<</td>
+                <td>Independiente</td>
+                <td>Simple (ID propio)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>En tu modelo:</h2>
+    <p>Como el Data Modeler generó <code>-|&lt;</code> de <strong>PROYECTO</strong> hacia <strong>TAREA</strong>:</p>
+    <p>Lo modeló como dependiente.</p>
+    <p>Por eso el script resultó con la PK compuesta en <strong>TAREA</strong>.</p>
+
+    <h3>¿Por qué la clave compuesta?</h3>
+    <p>Porque, como depende 100% del padre, muchas veces la identidad de la entidad hija se construye a partir de su relación con el padre.</p>
+
+    <h4>Ejemplo:</h4>
+    <ul>
+        <li>Proyecto 1, Tarea 1</li>
+        <li>Proyecto 2, Tarea 1</li>
+    </ul>
+
+    <p>→ el <code>idTarea</code> solo tiene sentido dentro de un proyecto.</p>
+    <p>Por eso la PK natural es (<code>idProyecto</code>, <code>idTarea</code>).</p>
+
+
+    <h1>Modelo de Datos: PROYECTO y TAREA</h1>
+
+<h2>Tabla PROYECTO</h2>
+<ul>
+    <li><strong>idProyecto</strong> (PK)</li>
+    <li><strong>nombre</strong> (faltó especificar tamaño del VARCHAR2)</li>
+</ul>
+
+<h3>SQL:</h3>
+<pre>
+CREATE TABLE PROYECTO 
+( 
+ idProyecto INTEGER NOT NULL, 
+ nombre VARCHAR2 NOT NULL 
+);
+ALTER TABLE PROYECTO ADD CONSTRAINT PROYECTO_PK PRIMARY KEY (idProyecto);
+</pre>
+
+<h2>Tabla TAREA</h2>
+<ul>
+    <li><strong>idTarea</strong></li>
+    <li><strong>descripcion</strong> (VARCHAR2(20))</li>
+    <li><strong>duracion</strong></li>
+    <li><strong>PROYECTO_idProyecto</strong> (FK a PROYECTO.idProyecto)</li>
+    <li><strong>PK</strong> compuesta por (idTarea, PROYECTO_idProyecto)</li>
+</ul>
+
+<h3>SQL:</h3>
+<pre>
+CREATE TABLE TAREA 
+( 
+ idTarea INTEGER NOT NULL, 
+ descripcion VARCHAR2(20 CHAR) NOT NULL, 
+ duracion INTEGER NOT NULL, 
+ PROYECTO_idProyecto INTEGER NOT NULL
+);
+ALTER TABLE TAREA ADD CONSTRAINT TAREA_PK PRIMARY KEY (idTarea, PROYECTO_idProyecto);
+ALTER TABLE TAREA ADD CONSTRAINT TAREA_PROYECTO_FK FOREIGN KEY (PROYECTO_idProyecto) REFERENCES PROYECTO (idProyecto);
+</pre>
+
+<h2>Resumen:</h2>
+<ul>
+    <li>Hay 2 tablas: PROYECTO y TAREA.</li>
+    <li>PK de PROYECTO: idProyecto</li>
+    <li>PK de TAREA: (idTarea, PROYECTO_idProyecto)</li>
+    <li>FK de TAREA: PROYECTO_idProyecto → PROYECTO.idProyecto</li>
+</ul>
+
+<h2>Opciones analizadas:</h2>
+
+<h3>a) Ninguna es correcta</h3>
+<p>Aún no sabemos, seguimos revisando.</p>
+
+<h3>b)</h3>
+<pre>
+CREATE TABLE PROYECTO (
+idProyecto INT PRIMARY KEY,
+nombre VARCHAR(255) NOT NULL,
+FOREIGN KEY (idProyecto) REFERENCES Tarea (idProyecto)
+);
+CREATE TABLE Tarea (
+idProyecto INT NOT NULL,
+idTarea INT NOT NULL,
+descripcion VARCHAR(255),
+duracion INTEGER NOT NULL
+PRIMARY KEY (idProyecto, idTarea),
+FOREIGN KEY (idProyecto) REFERENCES Proyecto (idProyecto)
+);
+</pre>
+<p class="incorrecta">INCORRECTA</p>
+<p>Error: en PROYECTO hay un FK a Tarea, que no existe en tu modelo. Además, en PROYECTO no debe haber FK.</p>
+
+<h3>c)</h3>
+<pre>
+CREATE TABLE PROYECTO ();
+idProyecto INT PRIMARY KEY,
+nombre VARCHAR(255) NOT NULL
+
+CREATE TABLE TAREA ();
+idTarea INT PRIMARY KEY,
+descripcion VARCHAR(255),
+duracion INTEGER NOT NULL
+
+CREATE TABLE PROYECTOTAREA ();
+idProyecto INT NOT NULL,
+idTarea INT NOT NULL,
+PRIMARY KEY (idProyecto, idTarea),
+FOREIGN KEY (idProyecto) REFERENCES PROYECTO (idProyecto),
+FOREIGN KEY (idTarea) REFERENCES TAREA (idTarea)
+</pre>
+<p class="incorrecta">INCORRECTA</p>
+<p>Aquí se introduce una tabla adicional PROYECTOTAREA que no existe en tu modelo. Además hay errores de sintaxis.</p>
+
+<h3>d)</h3>
+<pre>
+CREATE TABLE Tareas_Proyecto (
+idProyecto INT NOT NULL,
+nombreProyecto VARCHAR(255) NOT NULL,
+idTarea INT NOT NULL,
+descripcionTarea VARCHAR(255),
+duracionTarea INT NOT NULL,
+PRIMARY KEY (idProyecto, idTarea)
+);
+</pre>
+<p class="incorrecta">INCORRECTA</p>
+<p>Solo hay una tabla. Fusiona PROYECTO y TAREA, lo cual no corresponde al modelo original.</p>
+
+<h3>e)</h3>
+<pre>
+CREATE TABLE Proyecto (
+idProyecto INT PRIMARY KEY,
+nombre VARCHAR(255) NOT NULL
+);
+CREATE TABLE Tarea (
+idProyecto INT NOT NULL,
+idTarea INT NOT NULL,
+descripcion VARCHAR(255),
+PRIMARY KEY (idTarea),
+FOREIGN KEY (idProyecto) REFERENCES Proyecto (idProyecto)
+);
+</pre>
+<p class="incorrecta">INCORRECTA</p>
+<p>La PK de Tarea debería ser compuesta (idTarea, idProyecto), como en el modelo original. Aquí la PK es solo idTarea.</p>
+
+<h3>f)</h3>
+<pre>
+CREATE TABLE PROYECTO (
+idProyecto INT PRIMARY KEY,
+nombre VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Tarea (
+idProyecto INT NOT NULL,
+idTarea INT NOT NULL,
+descripcion VARCHAR(255),
+duracion INTEGER NOT NULL
+PRIMARY KEY (idProyecto, idTarea),
+FOREIGN KEY (idProyecto) REFERENCES Proyecto (idProyecto)
+);
+</pre>
+<p class="correcta">CORRECTA ✅</p>
+<p>Dos tablas: PROYECTO y TAREA. PK de PROYECTO: idProyecto. PK de TAREA: (idProyecto, idTarea). FK correcto.</p>
+
+<h2>Respuesta final:</h2>
+<p>La opción correcta es la <strong>f)</strong>.</p>
+    </form>
 </div>
 
 
@@ -1542,7 +1763,24 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    
+        <img src="../../../img/pregunta_9.png" alt="">
+        <br>
+        Cuál sería la opción correcta al transformarlo al modelo relacional?
+        <br>
+        <img src="../../../img/pregunta_9_2.png" alt="" width="700">
+        <br>
+        <strong>La respuesta correcta es la opcion b.</strong> <br>
+        <strong>No se crea otra tabla porque el muchos solo va en una direccion, no es reciproco</strong>
+        <hr>
+        <img src="../../../img/pregunta_10.png" alt="" width="700">
+        <br>
+        <strong>opcion d correcta</strong>
+        <hr>
+        <img src="../../../img/pregunta_6.png" alt="" width="700">
+        <img src="../../../img/pregunta_6_2.png" alt="" width="700">
+        <hr>
+        <img src="../../../img/pregunta_7.png" alt="" width="700">
+
 
     </form>
 </div>

@@ -1262,7 +1262,7 @@ function handleSubmit(event) {
     \]
   </p>
 </div>
-
+    <hr>
     </form>
 </div>
 

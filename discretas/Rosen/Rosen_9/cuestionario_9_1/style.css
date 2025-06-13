@@ -1,0 +1,66 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Previene scroll horizontal */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Cambiamos a columna para mejor flujo */
+    min-height: 100vh; /* Usamos viewport height en lugar de % */
+}
+
+.contenedor-principal {
+    display: flex;
+    flex: 1; /* Ocupa todo el espacio disponible */
+    width: 100%;
+    position: relative;
+}
+
+.seccion {
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Scroll interno si el contenido es muy largo */
+    height: calc(100vh - 60px); /* Altura ajustada al viewport menos el footer */
+}
+
+/* Sección izquierda - 50% del ancho */
+.seccion.izquierda {
+    width: 50%;
+    background-color: #e0e0e0;
+}
+
+/* Sección derecha - 50% del ancho */
+.seccion.derecha {
+    width: 50%;
+    background-color: #f0f0f0;
+}
+
+/* Contenedor de botones fijo en la parte inferior */
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #f8f9fa;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+}
+
+/* Ajustes para los inputs */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.input-cell input {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}

@@ -1123,14 +1123,20 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
-    .imagen { 
+    .imagen {
         max-width: 100%;
         height: auto;
+    }
+    .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 400vh;
     }
 </style>
  
@@ -1431,119 +1437,261 @@ function ocultarMensaje4() {
 </script>
     
 </head>
-<body>
+<body> 
 <div class="seccion izquierda">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h3>✅ Sobre la línea continua y discontinua</h3>
-    <img src="../../../img/personal.png" alt="">
+    <form action="./noveno.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <h2>COMPLEJIDAD EN EL CASO PROMEDIO</h2>
+
+    <p>
+    Otro tipo importante de análisis de complejidad, además del análisis del peor caso, es el llamado 
+    <strong>análisis del caso promedio</strong>. En este tipo de análisis, se calcula el número promedio de operaciones 
+    utilizadas para resolver el problema considerando <em>todas las posibles entradas de un tamaño dado</em>.
+    </p>
+
+    <p>
+    El análisis de la complejidad temporal en el caso promedio suele ser 
+    <strong>mucho más complicado</strong> que el análisis del peor caso. 
+    Sin embargo, el análisis del caso promedio para el 
+    <strong>algoritmo de búsqueda lineal</strong> se puede hacer 
+    <strong>sin dificultad</strong>, como se muestra en el Ejemplo 4.
+    </p>
+    <hr>
+    En el caso de la búsqueda lineal, el peor caso y el caso promedio son ambos Θ(n), pero no significan lo mismo,
+    ni son siempre iguales en otros algoritmos.
+    <hr>
+    <h2> EJEMPLO 4: Descripción del rendimiento promedio del algoritmo de búsqueda lineal</h2>
+
+    <p><strong>Objetivo:</strong> Describir el comportamiento promedio del algoritmo de búsqueda lineal en
+    términos del número promedio de comparaciones realizadas, <strong>asumiendo que el entero \(x\) está
+    en la lista</strong> y que es <strong>igualmente probable que \(x\) esté en cualquier posición</strong>.</p>
+
+    <h3> Solución:</h3>
+
+    <p>Según la hipótesis, el entero \(x\) es uno de los elementos \(a_1, a_2, ..., a_n\) de la lista.</p>
+
     <ul>
-    <li>
-    <strong>🔹 Línea continua (<em>subordinado</em>)</strong><br>
-    Generalmente indica una <strong>relación obligatoria</strong> (participación total):<br>
-    &rarr; <em>Debe</em> existir un subordinado (es decir, el directivo <em>debe</em> tener al menos un subordinado).
-    </li>
-    <br>
-    <li>
-    <strong>🔹 Línea discontinua (<em>directivo</em>)</strong><br>
-    Suele indicar una <strong>relación opcional</strong> (participación parcial):<br>
-    &rarr; Un <code>PERSONAL</code> <em>puede o no</em> tener un directivo (es decir, algunos empleados no tienen jefe, como el director general).
-    </li>
+    <li>Si \(x\) es el primer elemento \(a_1\):</li>
+    <ul>
+        <li>Se realizan <strong>tres comparaciones</strong>:
+        <ol>
+            <li>Una comparación \(i \leq n\) para saber si se ha llegado al final de la lista,</li>
+            <li>Una comparación \(x \neq a_i\) para comparar \(x\) con el primer término,</li>
+            <li>Una comparación \(i \leq n\) fuera del bucle.</li>
+        </ol>
+        </li>
+    </ul>
+    <li>Si \(x\) es el segundo elemento \(a_2\), se necesitan dos comparaciones más, haciendo un total de <strong>cinco comparaciones</strong>.</li>
+    <li>En general, si \(x\) es el <em>i-ésimo</em> elemento \(a_i\):</li>
+    <ul>
+        <li>Se hacen <strong>dos comparaciones por cada uno de los \(i\) pasos</strong> dentro del bucle,</li>
+        <li>Más <strong>una comparación fuera del bucle</strong>,</li>
+        <li>Para un total de:  
+        <br><br>
+        \[
+        2i + 1 \text{ comparaciones}.
+        \]
+        </li>
+    </ul>
     </ul>
 
-    <hr>
-    los subtipos tambien garantizan que sea excluyente.
-    <br><br>
-    " Por último, el personal que realiza funciones de directivo no aparecerá nunca
-    como personal de planta y ni al contrario."
-    <br><br>
-    <img src="../../../img/subtipo.png" alt="" width="600">
-    <br><br>
-    <img src="../../../img/subtipo_2.png" alt="" width="600">
-    <hr>
-    1. Relación 1:N (Uno a Muchos) →
-    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_1 ?>
+    <h3> ¿Cuál es el número promedio de comparaciones?</h3>
 
+    <p>La suma de comparaciones para todas las posibles posiciones de \(x\) es:</p>
 
-    <br><br>
+    \[
+    \frac{3 + 5 + 7 + \cdots + (2n + 1)}{n} = \frac{2(1 + 2 + 3 + \cdots + n) + n}{n}
+    \]
 
-    2. Relación N:M (Muchos a Muchos) →
-    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_2 ?>
-    <br><br>
+    <p>Sabemos que:</p>
 
-    3. Relación 1:1 (Uno a Uno) →
-    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="10"> 
-    se crea una tabla extra.
-    Se maneja FK unica, excepto en casos especificos. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_3 ?>
-    <br><br>
-    <hr>
+    \[
+    1 + 2 + 3 + \cdots + n = \frac{n(n + 1)}{2}
+    \]
 
-    Si existe una relación (fuerte o débil), la entidad dependiente SIEMPRE tendrá una
-    clave foránea como atributo que hace referencia a la entidad principal.    
+    <p>Sustituyendo:</p>
 
-    <hr>
-    <li>
-    Si la relación es 1:N (débil) → La entidad dependiente tendrá una clave foránea (FK), pero su clave primaria (PK)
-    se mantiene independiente.
-    </li>
-    <li>
-    Si la relación es 1:N (fuerte/identificadora) → La entidad dependiente tendrá una clave foránea (FK), pero esta 
-    también formará parte de su clave primaria (PK).
-    </li>
-    <li>
-    Si la relación es N:M → Se crea una tabla intermedia, donde ambas claves foráneas (de las entidades relacionadas)
-    forman la clave primaria compuesta.
-    </li>
-     <hr>
+    \[
+    \frac{2 \cdot \frac{n(n + 1)}{2} + n}{n} = \frac{n(n + 1) + n}{n} = n + 1 + 1 = n + 2
+    \]
 
+    <h3> Conclusión:</h3>
 
-    <strong>¿Qué significa "Origen Opcional"?</strong>
-    <br><br>
-    <strong>Especifica si la existencia de la entidad hija (lado N) depende o no de la entidad padre (lado 1).</strong>
-    <br><br>
-    <strong>Si "Origen Opcional" está MARCADO:</strong>
-    <p>
-    <li>La relación se considera débil (no identificadora).</li>
-    <li>La entidad hija puede existir sin la entidad padre.</li>
-    <li> Se dibuja una línea discontinua con flecha.</li>
-    <li>Ejemplo:
-    Una persona puede existir sin estar asociada a una casa.</li>
-    </p>
-     
-    <strong>Si "Origen Opcional" está DESMARCADO:</strong>
-    <li>La relación se considera fuerte (identificadora).</li>
-    <li>La entidad hija depende completamente de la entidad padre.</li>
-    <li>Se dibuja una línea sólida.</li>
-    <li>Ejemplo:
-    Si Persona no puede existir sin una Casa, se forzaría a que ID_CASA forme parte de su clave primaria.
-    </li>
+    <p>El número <strong>promedio de comparaciones</strong> que realiza el algoritmo de búsqueda lineal, cuando se sabe que \(x\) está en la lista, es:</p>
+
+    \[
+    n + 2
+    \]
+
+    <p>lo cual se expresa como complejidad <strong>\(\Theta(n)\)</strong>.</p>
+
+    <h3> Observaciones:</h3>
+
+    <ul>
+    <li>En este análisis se <strong>asumió que \(x\) sí está en la lista</strong>. También se puede realizar un análisis del caso promedio cuando \(x\) <strong>podría no estar</strong> en la lista (ver Ejercicio 23).</li>
+    <li>Aunque aquí se cuentan las comparaciones para saber si se ha llegado al final del bucle, <strong>esas comparaciones a menudo no se consideran</strong>. A partir de ahora, <strong>ignoraremos esas comparaciones</strong>.</li>
+    </ul>
+
+    <h2> Complejidad en el peor caso de dos algoritmos de ordenamiento</h2>
+    <p>A continuación se analizará la complejidad en el <strong>peor caso</strong> del algoritmo <em>bubble sort</em> y del <em>insertion sort</em> en los Ejemplos 5 y 6.</p>
     
     <hr>
-    Cuando en un Modelo Entidad-Relación (MER) te dan un atributo en una relación (especialmente en relaciones
-    muchos a muchos), lo habitual es:
-    <br><br>
-    ✅ Lo que sucede:
-    <li>La relación con atributo se convierte en una entidad asociativa o entidad débil en el MER.</li> 
-    <li>Esta entidad asociativa "intermedia" representa la relación y contiene el atributo extra.
-    </li>
-    <br>
- </form>
+    <h2> EJEMPLO 5: ¿Cuál es la complejidad en el peor caso del <em>bubble sort</em> en términos del número de comparaciones realizadas?</h2>
+
+<p><strong>Solución:</strong> El algoritmo de <em>bubble sort</em> descrito antes del Ejemplo 4 en la Sección 3.1 ordena una lista mediante una secuencia de pasadas a través de la lista. En cada pasada, el algoritmo compara sucesivamente elementos adyacentes e intercambia sus posiciones si es necesario.</p>
+
+<p>Cuando comienza la <em>i-ésima</em> pasada, los \(i - 1\) elementos más grandes ya están en sus posiciones correctas. Durante esa pasada se hacen \(n - i\) comparaciones.</p>
+
+<p>Por lo tanto, el número total de comparaciones que realiza el algoritmo bubble sort para ordenar una lista de \(n\) elementos es:</p>
+
+\[
+(n - 1) + (n - 2) + \cdots + 2 + 1 = \frac{(n - 1)n}{2}
+\]
+
+<p>usando la fórmula de suma mostrada en la línea 2 de la Tabla 2 de la Sección 2.4 (y también el Ejercicio 37(b) de la misma sección).</p>
+
+<p>Observación: el algoritmo <em>bubble sort</em> realiza exactamente esta cantidad de comparaciones, incluso si la lista ya está completamente ordenada en algún paso intermedio.</p>
+
+<p>Por lo tanto, bubble sort realiza \(\frac{(n - 1)n}{2}\) comparaciones, lo cual implica una <strong>complejidad en el peor caso de \(\Theta(n^2)\)</strong> en términos del número de comparaciones.</p>
+
+<hr>
+
+<h2> EJEMPLO 6: ¿Cuál es la complejidad en el peor caso del <em>insertion sort</em> en términos del número de comparaciones realizadas?</h2>
+
+<p><strong>Solución:</strong> El algoritmo de <em>insertion sort</em> (descrito en la Sección 3.1) inserta el elemento \(a_j\) en la posición correcta entre los primeros \(j - 1\) elementos que ya están ordenados.</p>
+
+<p>Lo hace mediante una búsqueda lineal, comparando sucesivamente el elemento \(a_j\) con los anteriores hasta encontrar uno que sea mayor o igual. También puede compararse consigo mismo y detenerse si no es menor que sí mismo.</p>
+
+<p>En el <strong>peor caso</strong>, se requieren \(j\) comparaciones para insertar el elemento \(a_j\).</p>
+
+<p>Por lo tanto, el número total de comparaciones que realiza <em>insertion sort</em> para ordenar una lista de \(n\) elementos es:</p>
+
+\[
+2 + 3 + \cdots + n = \frac{n(n + 1)}{2} - 1
+\]
+
+<p>usando la fórmula de la suma de enteros consecutivos de la línea 2 de la Tabla 2 de la Sección 2.4 (y también el Ejercicio 37(b)), y notando que se omite el primer término \(1\).</p>
+
+<p>Observación: el algoritmo <em>insertion sort</em> podría hacer muchas menos comparaciones si los elementos más pequeños estuvieran al final de la lista inicialmente.</p>
+
+<p>Se concluye que el <em>insertion sort</em> tiene <strong>complejidad en el peor caso \(\Theta(n^2)\)</strong>.</p>
+
+
+    </form>
 </div>
 
 
-
-
 <div class="seccion derecha">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    
+    <form action="./noveno.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+     
+    <h2> Comparación entre Algoritmos de Ordenamiento</h2>
 
+<p>En los Ejemplos 5 y 6 mostramos que tanto el algoritmo de <strong>bubble sort</strong> como el de <strong>insertion sort</strong> tienen una <strong>complejidad temporal en el peor caso de</strong> \(\Theta(n^2)\).</p>
+
+<p>Sin embargo, los algoritmos de ordenamiento más eficientes pueden ordenar \(n\) elementos en un tiempo de <strong>\(O(n \log n)\)</strong>, como se demostrará en las Secciones 8.3 y 11.1, usando técnicas que se desarrollan en dichas secciones.</p>
+
+<p>A partir de ahora, asumiremos que ordenar \(n\) elementos puede hacerse en <strong>\(O(n \log n)\)</strong> tiempo.</p>
+
+<hr>
+    <strong>salto, parte de multiplicacion de matrices:</strong>
+    <hr>
+    <h3>3.3.4 Paradigmas Algorítmicos</h3>
+
+<p>En la Sección 3.1 introdujimos la noción básica de algoritmo. Proporcionamos ejemplos de muchos algoritmos diferentes, incluidos algoritmos de búsqueda y ordenamiento. También introdujimos el concepto de un algoritmo voraz (<i>greedy</i>), dando ejemplos de varios problemas que pueden resolverse mediante este tipo de algoritmos. Los algoritmos voraces son un ejemplo de <strong>paradigma algorítmico</strong>, es decir, un enfoque general basado en un concepto particular que puede utilizarse para construir algoritmos que resuelvan una variedad de problemas.</p>
+
+<p>En este libro construiremos algoritmos para resolver muchos problemas diferentes basados en una variedad de paradigmas algorítmicos, incluidos los más utilizados. Estos paradigmas pueden servir como base para construir algoritmos eficientes que resuelvan una amplia gama de problemas.</p>
+
+<p>Algunos de los algoritmos que ya hemos estudiado se basan en un paradigma algorítmico conocido como <strong>fuerza bruta</strong>, que describiremos en esta sección. Paradigmas algorítmicos que se estudiarán más adelante en este libro incluyen los algoritmos de <em>divide y vencerás</em> (Capítulo 8), <em>programación dinámica</em> (también en el Capítulo 8), <em>backtracking</em> (Capítulo 10), y <em>algoritmos probabilísticos</em> (Capítulo 7). Existen muchos otros paradigmas algorítmicos importantes además de los que se describen en este libro. Consultá libros sobre diseño de algoritmos como [KlTa06] para aprender más sobre ellos.</p>
+
+<h4>Algoritmos de Fuerza Bruta</h4>
+
+<p>La <strong>fuerza bruta</strong> es un paradigma algorítmico importante y básico. En un algoritmo de fuerza bruta, un problema se resuelve de la manera más directa posible, basándose únicamente en el enunciado del problema y en las definiciones involucradas. Los algoritmos de fuerza bruta están diseñados sin tener en cuenta los recursos computacionales requeridos. Por ejemplo, en algunos algoritmos de fuerza bruta la solución se obtiene examinando <strong>todas</strong> las soluciones posibles y eligiendo la mejor.</p>
+
+<p>En general, los algoritmos de fuerza bruta son enfoques <em>ingenuos</em> para resolver problemas que no aprovechan ninguna estructura especial del problema ni ideas ingeniosas.</p>
+
+<p>Observá que el Algoritmo 1 en la Sección 3.1 para encontrar el número máximo en una secuencia es un algoritmo de fuerza bruta porque examina cada uno de los \( n \) números para encontrar el valor máximo. El algoritmo que suma \( n \) números agregando uno por uno también es de fuerza bruta, al igual que el algoritmo de multiplicación de matrices basado en su definición (Algoritmo 1). Los algoritmos de ordenamiento burbuja, inserción y selección también se consideran algoritmos de fuerza bruta; los tres son enfoques directos y mucho menos eficientes que otros algoritmos como <em>merge sort</em> y <em>quick sort</em>, discutidos en los Capítulos 5 y 8.</p>
+
+<p>Aunque los algoritmos de fuerza bruta suelen ser ineficientes, muchas veces resultan útiles. Un algoritmo de fuerza bruta puede resolver instancias <strong>prácticas</strong> de problemas, especialmente si la entrada no es demasiado grande, incluso si el mismo algoritmo es <strong>inviable</strong> para entradas más grandes. Además, al diseñar nuevos algoritmos, el objetivo suele ser encontrar uno más eficiente que el de fuerza bruta. Uno de esos problemas se describe en el siguiente ejemplo:</p>
+
+<h4>Ejemplo 10</h4>
+
+<p><strong> un algoritmo de fuerza bruta para encontrar el par de puntos más cercanos en un conjunto de \( n \) puntos en el plano, y proporcioná una estimación del caso peor en notación Big-O del número de operaciones a nivel de bits usadas por el algoritmo.</strong></p>
+
+<p><strong>Solución:</strong><br>
+Supongamos que nos dan como entrada los puntos \( (x_1, y_1), (x_2, y_2), \dots, (x_n, y_n) \). Recordá que la distancia entre \( (x_i, y_i) \) y \( (x_j, y_j) \) es</p>
+
+<p>\[
+\sqrt{(x_j - x_i)^2 + (y_j - y_i)^2}
+\]</p>
+
+<p>Un algoritmo de fuerza bruta puede encontrar el par más cercano de estos puntos calculando la distancia entre todos los pares posibles y determinando cuál es la menor. (Podemos hacer una pequeña simplificación: en lugar de calcular la distancia, podemos calcular el <em>cuadrado</em> de la distancia, ya que también permite encontrar el par más cercano sin usar raíces cuadradas.)</p>
+
+<p><strong>ALGORITMO 3: Fuerza Bruta para el Par de Puntos Más Cercanos</strong></p>
+
+<pre>
+procedure closest-pair((x1, y1),(x2, y2),… ,(xn, yn): pairs of real numbers)
+min = ∞
+for i := 2 to n
+  for j := 1 to i − 1
+    if (xj − xi)^2 + (yj − yi)^2 < min then
+      min := (xj − xi)^2 + (yj − yi)^2
+      closest pair := ((xi, yi), (xj, yj))
+return closest pair
+</pre>
+
+    <p>Para estimar el número de operaciones utilizadas por el algoritmo, primero notá que hay 
+    \( \frac{n(n - 1)}{2} \) pares de puntos \( ((x_i, y_i), (x_j, y_j)) \) por los que iteramos. 
+    Para cada par, se calcula \( (x_j - x_i)^2 + (y_j - y_i)^2 \), se compara con el valor actual de
+    <code>min</code>, y si es menor, se actualiza. Por lo tanto, este algoritmo utiliza \( \Theta(n^2) \)
+    operaciones, en términos de operaciones aritméticas y comparaciones.</p>
+
+    <p>En el Capítulo 8 vamos a desarrollar un algoritmo que encuentra el par de puntos más cercano 
+    entre \( n \) puntos del plano con una complejidad en el peor caso de \( O(n \log n) \). El descubrimiento 
+    original de dicho algoritmo, mucho más eficiente que el enfoque de fuerza bruta, fue considerado bastante
+    sorprendente.</p>
+    <hr>
+
+    <h2> ¿Qué representan <code>i</code> y <code>j</code>?</h2>
+  <p>
+    Supongamos que tienes una lista de <em>n</em> puntos:
+  </p>
+  <p>
+    \( (x_1, y_1), (x_2, y_2), (x_3, y_3), \dots, (x_n, y_n) \)
+  </p>
+  <p>
+    Estos puntos están almacenados en una secuencia, por ejemplo, una lista o arreglo.<br>
+    Cada punto tiene un índice: el punto número 1 es \( (x_1, y_1) \), el número 2 es \( (x_2, y_2) \), y así sucesivamente.
+  </p>
+
+  <h2>¿Qué hace el bucle con <code>i</code>?</h2>
+  <pre><code>for i := 2 to n</code></pre>
+  <p>
+    La variable <code>i</code> representa el índice del punto actual que se está comparando con los anteriores.<br>
+    Comienza desde 2 porque para hacer comparaciones con puntos anteriores, necesitamos al menos dos puntos.
+  </p>
+  <p>
+    En la iteración con <code>i = 4</code>, por ejemplo, se está diciendo: “Voy a comparar el cuarto punto con todos los puntos anteriores (el 1, 2 y 3)”.
+  </p>
+
+  <h2>¿Qué hace el bucle con <code>j</code>?</h2>
+  <pre><code>for j := 1 to i - 1</code></pre>
+  <p>
+    La variable <code>j</code> representa el índice de los puntos anteriores a <code>i</code>.<br>
+    Se usa para recorrer todos los puntos anteriores al actual (<code>i</code>) y calcular la distancia entre ellos.
+  </p>
+
+  <p>Así se comparan los pares:</p>
+  <ul>
+    <li><code>i = 2, j = 1</code> → comparas punto 2 con punto 1</li>
+    <li><code>i = 3, j = 1</code> → comparas punto 3 con punto 1</li>
+    <li><code>i = 3, j = 2</code> → comparas punto 3 con punto 2</li>
+    <li>… y así hasta llegar a <code>i = n</code></li>
+  </ul>
+
+  <p>
+    Entonces, cada combinación \( (i, j) \) representa un par distinto de puntos donde \( j &lt; i \).
+  </p>
+
+  
     </form>
 </div>
 
@@ -1552,7 +1700,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="segundo.php"
+        href="tercero.php"
         role="button"
         width="50px"
         height="50px"

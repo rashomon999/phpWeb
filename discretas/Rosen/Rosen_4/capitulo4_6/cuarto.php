@@ -1123,14 +1123,20 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
-    .imagen { 
+    .imagen {
         max-width: 100%;
         height: auto;
+    }
+    .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 410vh;
     }
 </style>
  
@@ -1431,119 +1437,206 @@ function ocultarMensaje4() {
 </script>
     
 </head>
-<body>
 <div class="seccion izquierda">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h3>✅ Sobre la línea continua y discontinua</h3>
-    <img src="../../../img/personal.png" alt="">
-    <ul>
-    <li>
-    <strong>🔹 Línea continua (<em>subordinado</em>)</strong><br>
-    Generalmente indica una <strong>relación obligatoria</strong> (participación total):<br>
-    &rarr; <em>Debe</em> existir un subordinado (es decir, el directivo <em>debe</em> tener al menos un subordinado).
-    </li>
-    <br>
-    <li>
-    <strong>🔹 Línea discontinua (<em>directivo</em>)</strong><br>
-    Suele indicar una <strong>relación opcional</strong> (participación parcial):<br>
-    &rarr; Un <code>PERSONAL</code> <em>puede o no</em> tener un directivo (es decir, algunos empleados no tienen jefe, como el director general).
-    </li>
-    </ul>
+    <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <h2>¿Para qué sirve <code>ϕ(n)</code> en RSA?</h2>
+
+<p>La función <code>ϕ(n)</code> (función phi de Euler) <span class="important">no solo sirve para comparar si se puede usar una clave pública válida</span>, sino que es fundamental en varios aspectos del algoritmo RSA.</p>
+
+<h3>1. Verificar que el exponente público \( e \) sea válido</h3>
+<p>Para que RSA funcione correctamente, el exponente público \( e \) debe cumplir:</p>
+<p style="text-align:center;">
+  \[
+    \gcd(e, \varphi(n)) = 1
+  \]
+</p>
+<p>Esto garantiza que \( e \) tenga un inverso modular respecto a \( \varphi(n) \), lo cual es necesario para el descifrado.</p>
+
+<h3>2. Calcular el exponente privado \( d \)</h3>
+<p>Usando \( \varphi(n) \), calculamos \( d \) como el inverso modular de \( e \) módulo \( \varphi(n) \):</p>
+<p style="text-align:center;">
+  \[
+    d \equiv e^{-1} \pmod{\varphi(n)}
+  \]
+</p>
+<p>Esto quiere decir:</p>
+<p style="text-align:center;">
+  \[
+    e \cdot d \equiv 1 \pmod{\varphi(n)}
+  \]
+</p>
+<p>El exponente \( d \) se usa para <strong>descifrar</strong> el mensaje cifrado.</p>
+
+<h3>3. Fundamento matemático: Teorema de Euler</h3>
+<p>RSA se basa en que:</p>
+<p style="text-align:center;">
+  \[
+    m^{e \cdot d} \equiv m \pmod{n}
+  \]
+</p>
+<p>Esto se cumple gracias al teorema de Euler, que usa el valor:</p>
+<p style="text-align:center;">
+  \[
+    \varphi(n) = (p - 1)(q - 1)
+  \]
+</p>
+<p>donde \( n = p \cdot q \) y \( p \), \( q \) son primos.</p>
+
+<hr />
+
+<h2>Aplicación en el ejemplo RSA con el mensaje <em>STOP</em></h2>
+
+<ul>
+  <li>Primero, calculamos \( \varphi(n) \):</li>
+  <li>\( p = 43 \), \( q = 59 \)</li>
+  <li>\( n = p \cdot q = 43 \times 59 = 2537 \)</li>
+  <li>\( \varphi(n) = (p - 1)(q - 1) = 42 \times 58 = 2436 \)</li>
+</ul>
+
+<p>El exponente público es \( e = 13 \) y cumple:</p>
+<p style="text-align:center;">
+  \[
+    \gcd(13, 2436) = 1
+  \]
+</p>
+<p>Por lo tanto, existe un inverso modular \( d \) de \( 13 \) módulo \( 2436 \), que en este caso es:</p>
+<p style="text-align:center;">
+  \[
+    d = 937
+  \]
+</p>
+
+<p>Esto significa que:</p>
+<p style="text-align:center;">
+  \[
+    13 \times 937 \equiv 1 \pmod{2436}
+  \]
+</p>
+
+<p>Usamos \( d = 937 \) para descifrar el mensaje cifrado.</p>
+<hr>
+<p>En RSA, el inverso multiplicativo de <em>e</em> módulo <em>ϕ(n)</em> es justamente <em>d</em>, el exponente privado.</p>
+
+<p>O sea:</p>
+
+<p>
+  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+    <mi>d</mi>
+    <mo>≡</mo>
+    <msup>
+      <mi>e</mi>
+      <mo>-1</mo>
+    </msup>
+    <mo>(</mo>
+    <mi>mod</mi>
+    <mi>ϕ</mi>
+    <mo>(</mo>
+    <mi>n</mi>
+    <mo>)</mo>
+    <mo>)</mo>
+    <mo>.</mo>
+  </math>
+</p>
+
+<p>Eso significa que <em>d</em> es el número que satisface</p>
+
+<p>
+  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+    <mi>e</mi>
+    <mo>×</mo>
+    <mi>d</mi>
+    <mo>≡</mo>
+    <mn>1</mn>
+    <mo>(</mo>
+    <mi>mod</mi>
+    <mi>ϕ</mi>
+    <mo>(</mo>
+    <mi>n</mi>
+    <mo>)</mo>
+    <mo>)</mo>
+    <mo>.</mo>
+  </math>
+</p>
+
+<p>Este <em>d</em> sirve para descifrar los mensajes cifrados con <em>e</em>.</p>
 
     <hr>
-    los subtipos tambien garantizan que sea excluyente.
-    <br><br>
-    " Por último, el personal que realiza funciones de directivo no aparecerá nunca
-    como personal de planta y ni al contrario."
-    <br><br>
-    <img src="../../../img/subtipo.png" alt="" width="600">
-    <br><br>
-    <img src="../../../img/subtipo_2.png" alt="" width="600">
+    <h1>Ejercicios Resueltos (18-22)</h1>
+
+  <h2>Ejercicio 18</h2>
+  <p>
+    Suponiendo que m₁, m₂, ..., mₙ son enteros primos relativos dos a dos y mayores o iguales que 2 y sea m su producto.
+    Según el Teorema chino del resto, se puede ver que un entero a tal que 0 ≤ a &lt; m, se puede representar de manera única mediante:
+  </p>
+  <ul>
+    <li>A. (a | m₁, a | m₂, ..., a | mₙ)</li>
+    <li>B. (m₁ mod a, m₂ mod a, ..., mₙ mod a)</li>
+    <li><strong>C. (a mod m₁, a mod m₂, ..., a mod mₙ)</strong></li>
+    <li>D. (m₁ div a, m₂ div a, ..., mₙ div a)</li>
+  </ul>
+  <p><strong>Explicación:</strong> El Teorema Chino del Resto garantiza una representación única de un entero a través de sus residuos módulo mᵢ.</p>
+
+  <h2>Ejercicio 19</h2>
+  <p>
+    Si p es primo y a es un entero no divisible por p, entonces según el pequeño teorema de Fermat tenemos que:
+  </p>
+  <ul>
+    <li><strong>A. a<sup>p−1</sup> ≡ 1 (mod p)</strong></li>
+    <li>B. a<sup>p+1</sup> ≡ a<sup>2</sup> (mod p)</li>
+    <li>C. a<sup>p</sup> = a + kp, k ∈ ℤ</li>
+    <li>D. a<sup>p</sup> ≡ a (mod p)</li>
+  </ul>
+  <p><strong>Explicación:</strong> El pequeño teorema de Fermat establece que a<sup>p−1</sup> ≡ 1 (mod p) si a no es divisible por p.</p>
+
+  <h2>Ejercicio 20</h2>
+  <p>
+    Sea b un entero positivo. Si n es un entero positivo compuesto y b<sup>n−1</sup> ≡ 1 (mod n) entonces n se dice que es un:
+  </p>
+  <ul>
+    <li>A. Número de Fermat si además mcd(b, n) = 1</li>
+    <li><strong>B. Pseudoprimo para la base b</strong></li>
+    <li>C. Número de Carmichael si además mcd(b, n) = 1</li>
+    <li>D. Primo aleatorio para la base b</li>
+  </ul>
+  <p><strong>Explicación:</strong> Un pseudoprimo en base b cumple b<sup>n−1</sup> ≡ 1 mod n para algún b tal que mcd(b, n) = 1, aunque n no sea primo.</p>
+
+  <h2>Ejercicio 21</h2>
+  <p>
+    Sea n = pq, donde p y q son primos grandes y sea e un exponente primo relativo con (p − 1)(q − 1).
+    El proceso de cifrado RSA se desarrolla transformando el entero M en:
+  </p>
+  <ul>
+    <li>A. C ≡ M<sup>n</sup> mod e</li>
+    <li>B. C = M<sup>n</sup> mod e</li>
+    <li><strong>C. C = M<sup>e</sup> mod pq</strong></li>
+    <li>D. e ≡ M<sup>n</sup> mod C</li>
+  </ul>
+  <p><strong>Explicación:</strong> En RSA, el mensaje se cifra con la fórmula C = M<sup>e</sup> mod n, donde n = pq.</p>
+
+  <h2>Ejercicio 22</h2>
+  <p>
+    Teniendo el mensaje cifrado C, mediante el sistema RSA, el mensaje original M se puede recuperar con rapidez cuando se conoce la clave de descifrado d:
+  </p>
+  <ul>
+    <li>A. C = M<sup>d</sup> (mod pq)</li>
+    <li>B. C<sup>d</sup> ≡ M (mod (p − 1)(q − 1))</li>
+    <li>C. C = M<sup>d</sup> (mod (p − 1)(q − 1))</li>
+    <li>D. C<sup>d</sup> ≡ M (mod n)</li>
+    <li><strong>E. C<sup>d</sup> ≡ M (mod pq)</strong></li>
+  </ul>
+  <p><strong>Explicación:</strong> El mensaje original M se recupera con la fórmula M = C<sup>d</sup> mod n, donde n = pq.</p>
+
     <hr>
-    1. Relación 1:N (Uno a Muchos) →
-    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_1 ?>
-
-
-    <br><br>
-
-    2. Relación N:M (Muchos a Muchos) →
-    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_2 ?>
-    <br><br>
-
-    3. Relación 1:1 (Uno a Uno) →
-    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="10"> 
-    se crea una tabla extra.
-    Se maneja FK unica, excepto en casos especificos. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_3 ?>
-    <br><br>
-    <hr>
-
-    Si existe una relación (fuerte o débil), la entidad dependiente SIEMPRE tendrá una
-    clave foránea como atributo que hace referencia a la entidad principal.    
-
-    <hr>
-    <li>
-    Si la relación es 1:N (débil) → La entidad dependiente tendrá una clave foránea (FK), pero su clave primaria (PK)
-    se mantiene independiente.
-    </li>
-    <li>
-    Si la relación es 1:N (fuerte/identificadora) → La entidad dependiente tendrá una clave foránea (FK), pero esta 
-    también formará parte de su clave primaria (PK).
-    </li>
-    <li>
-    Si la relación es N:M → Se crea una tabla intermedia, donde ambas claves foráneas (de las entidades relacionadas)
-    forman la clave primaria compuesta.
-    </li>
-     <hr>
-
-
-    <strong>¿Qué significa "Origen Opcional"?</strong>
-    <br><br>
-    <strong>Especifica si la existencia de la entidad hija (lado N) depende o no de la entidad padre (lado 1).</strong>
-    <br><br>
-    <strong>Si "Origen Opcional" está MARCADO:</strong>
-    <p>
-    <li>La relación se considera débil (no identificadora).</li>
-    <li>La entidad hija puede existir sin la entidad padre.</li>
-    <li> Se dibuja una línea discontinua con flecha.</li>
-    <li>Ejemplo:
-    Una persona puede existir sin estar asociada a una casa.</li>
-    </p>
-     
-    <strong>Si "Origen Opcional" está DESMARCADO:</strong>
-    <li>La relación se considera fuerte (identificadora).</li>
-    <li>La entidad hija depende completamente de la entidad padre.</li>
-    <li>Se dibuja una línea sólida.</li>
-    <li>Ejemplo:
-    Si Persona no puede existir sin una Casa, se forzaría a que ID_CASA forme parte de su clave primaria.
-    </li>
     
-    <hr>
-    Cuando en un Modelo Entidad-Relación (MER) te dan un atributo en una relación (especialmente en relaciones
-    muchos a muchos), lo habitual es:
-    <br><br>
-    ✅ Lo que sucede:
-    <li>La relación con atributo se convierte en una entidad asociativa o entidad débil en el MER.</li> 
-    <li>Esta entidad asociativa "intermedia" representa la relación y contiene el atributo extra.
-    </li>
-    <br>
- </form>
+    </form>
 </div>
 
 
 
 
 <div class="seccion derecha">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    
-
+    <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+ 
     </form>
 </div>
 
@@ -1552,7 +1645,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="segundo.php"
+        href="cuarto.php"
         role="button"
         width="50px"
         height="50px"

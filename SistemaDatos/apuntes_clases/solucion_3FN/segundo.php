@@ -1124,7 +1124,7 @@ if ($respuesta_110 === '264') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
     <link rel="stylesheet" href="../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
@@ -1132,6 +1132,14 @@ if ($respuesta_110 === '264') {
         max-width: 100%;
         height: auto;
     }
+
+    .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 475vh;
+    }
+
 </style>
  
 <script>
@@ -1434,116 +1442,166 @@ function ocultarMensaje4() {
 <body>
 <div class="seccion izquierda">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h3>✅ Sobre la línea continua y discontinua</h3>
-    <img src="../../../img/personal.png" alt="">
-    <ul>
-    <li>
-    <strong>🔹 Línea continua (<em>subordinado</em>)</strong><br>
-    Generalmente indica una <strong>relación obligatoria</strong> (participación total):<br>
-    &rarr; <em>Debe</em> existir un subordinado (es decir, el directivo <em>debe</em> tener al menos un subordinado).
-    </li>
+    <h1>Ejercicio 4:</h1>
+    <strong>Un grupo puede ser una cosa:</strong>
     <br>
-    <li>
-    <strong>🔹 Línea discontinua (<em>directivo</em>)</strong><br>
-    Suele indicar una <strong>relación opcional</strong> (participación parcial):<br>
-    &rarr; Un <code>PERSONAL</code> <em>puede o no</em> tener un directivo (es decir, algunos empleados no tienen jefe, como el director general).
-    </li>
+    <p><strong>
+LOS SALONES (S) ADMITEN UN MÁXIMO DE 35 ESTUDIANTES. POR ELLO, LOS ESTUDIANTES MATRICULADOS EN UNA ASIGNATURA SE DIVIDEN EN GRUPOS (G), CON UN MÁXIMO DE 35 ESTUDIANTES POR GRUPO.
+</strong></p>
+    <div>
+  <p><strong>✅ EA → G</strong><br>
+  (Estudiante en una Asignatura determina el Grupo al que pertenece).</p>
+
+  <h3>📌 ¿Por qué EA → G?</h3>
+  <p><strong>Desglosémoslo:</strong></p>
+  <ul>
+    <li><strong>E</strong> = Estudiante</li>
+    <li><strong>A</strong> = Asignatura</li>
+    <li><strong>G</strong> = Grupo</li>
+  </ul>
+
+  <p>El enunciado dice que, debido a la limitación de los salones (máximo 35 estudiantes), los estudiantes matriculados en una asignatura se dividen en grupos.</p>
+
+  <p>Esto implica que:</p>
+  <p>🔹 Dado un estudiante específico <strong>E</strong> en una asignatura concreta <strong>A</strong>, ese estudiante pertenece a un único grupo <strong>G</strong>.</p>
+
+  <p>Por tanto, la combinación de estudiante y asignatura determina un grupo único al que fue asignado para esa asignatura:</p>
+
+  <p><strong>✅ EA → G</strong><br>
+  (Conjunto clave parcial, porque cada estudiante en cada asignatura solo está en un grupo).</p>
+</div>
+
+    <hr>
+    <div class="section">
+    <h2>🧾 Frase original:</h2>
+    <p><strong>"Los estudiantes reciben una calificación (C) en todos los exámenes parciales (Q) de las asignaturas en que estén matriculados."</strong></p>
+  </div>
+
+  <div class="highlight">
+    <h3>📌 Análisis:</h3>
+
+    <h4>🔎 Entidades involucradas:</h4>
+    <ul>
+      <li><strong>Estudiante (E)</strong></li>
+      <li><strong>Asignatura (A)</strong></li>
+      <li><strong>Examen parcial (Q)</strong></li>
+      <li><strong>Calificación (C)</strong></li>
     </ul>
 
+    <h4>🧠 ¿Qué determina una calificación?</h4>
+    <p>La calificación depende de quién es el estudiante, en qué asignatura está, y de qué parcial se trata. Es decir:</p>
+    <p>✔️ <code>(E, A, Q) → C</code></p>
+
+    <p>Esto es porque:</p>
+    <ul>
+      <li>Un estudiante puede estar en varias asignaturas.</li>
+      <li>En cada asignatura hay varios parciales.</li>
+      <li>Cada estudiante tiene una calificación específica en cada parcial de cada asignatura.</li>
+    </ul>
+  </div>
+
+  <div class="conclusion">
+    <h3>✅ Conclusión:</h3>
+    <p>La dependencia funcional correcta es:</p>
+    <p><strong>📌 <code>(E, A, Q) → C</code></strong></p>
+    <p>Porque la calificación está determinada por el estudiante, la asignatura y el examen parcial específico.</p>
+  </div>
     <hr>
-    los subtipos tambien garantizan que sea excluyente.
-    <br><br>
-    " Por último, el personal que realiza funciones de directivo no aparecerá nunca
-    como personal de planta y ni al contrario."
-    <br><br>
-    <img src="../../../img/subtipo.png" alt="" width="600">
-    <br><br>
-    <img src="../../../img/subtipo_2.png" alt="" width="600">
-    <hr>
-    1. Relación 1:N (Uno a Muchos) →
-    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_1 ?>
+    <div class="section">
+    <h2>🧾 Frase original:</h2>
+    <p><strong>"Todos los grupos de una asignatura siguen el mismo programa (R) y un programa es único para cada asignatura."</strong></p>
+  </div>
 
+  <div class="highlight">
+    <h3>📌 Análisis:</h3>
 
-    <br><br>
+    <h4>🔎 Entidades involucradas:</h4>
+    <ul>
+      <li><strong>Asignatura (A)</strong></li>
+      <li><strong>Grupo (G)</strong></li>
+      <li><strong>Programa (R)</strong></li>
+    </ul>
 
-    2. Relación N:M (Muchos a Muchos) →
-    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="10"> 
-    se crea una tabla extra. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_2 ?>
-    <br><br>
+    <h4>🧠 Interpretación:</h4>
+    <p>👉 <strong>Primera parte:</strong> “Todos los grupos de una asignatura siguen el mismo programa”</p>
+    <p>Esto indica que el programa depende únicamente de la asignatura:</p>
+    <p>✔️ <code>A → R</code></p>
 
-    3. Relación 1:1 (Uno a Uno) →
-    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="10"> 
-    se crea una tabla extra.
-    Se maneja FK unica, excepto en casos especificos. <br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_3 ?>
-    <br><br>
-    <hr>
+    <p>👉 <strong>Segunda parte:</strong> “Un programa es único para cada asignatura”</p>
+    <p>Esto implica que el programa también determina la asignatura:</p>
+    <p>✔️ <code>R → A</code></p>
+  </div>
 
-    Si existe una relación (fuerte o débil), la entidad dependiente SIEMPRE tendrá una
-    clave foránea como atributo que hace referencia a la entidad principal.    
+  <div class="conclusion">
+    <h3>✅ Conclusión – Dependencias funcionales:</h3>
+    <ul>
+      <li><code>A → R</code>: la asignatura determina el programa.</li>
+      <li><code>R → A</code>: el programa identifica de forma única a la asignatura.</li>
+    </ul>
+    <p><strong>📌 Entonces:</strong> existe una dependencia funcional bidireccional:</p>
+    <p><strong><code>A ↔ R</code></strong></p>
+  </div>
 
-    <hr>
-    <li>
-    Si la relación es 1:N (débil) → La entidad dependiente tendrá una clave foránea (FK), pero su clave primaria (PK)
-    se mantiene independiente.
-    </li>
-    <li>
-    Si la relación es 1:N (fuerte/identificadora) → La entidad dependiente tendrá una clave foránea (FK), pero esta 
-    también formará parte de su clave primaria (PK).
-    </li>
-    <li>
-    Si la relación es N:M → Se crea una tabla intermedia, donde ambas claves foráneas (de las entidades relacionadas)
-    forman la clave primaria compuesta.
-    </li>
-     <hr>
-
-
-    <strong>¿Qué significa "Origen Opcional"?</strong>
-    <br><br>
-    <strong>Especifica si la existencia de la entidad hija (lado N) depende o no de la entidad padre (lado 1).</strong>
-    <br><br>
-    <strong>Si "Origen Opcional" está MARCADO:</strong>
-    <p>
-    <li>La relación se considera débil (no identificadora).</li>
-    <li>La entidad hija puede existir sin la entidad padre.</li>
-    <li> Se dibuja una línea discontinua con flecha.</li>
-    <li>Ejemplo:
-    Una persona puede existir sin estar asociada a una casa.</li>
-    </p>
-     
-    <strong>Si "Origen Opcional" está DESMARCADO:</strong>
-    <li>La relación se considera fuerte (identificadora).</li>
-    <li>La entidad hija depende completamente de la entidad padre.</li>
-    <li>Se dibuja una línea sólida.</li>
-    <li>Ejemplo:
-    Si Persona no puede existir sin una Casa, se forzaría a que ID_CASA forme parte de su clave primaria.
-    </li>
-    
-    <hr>
-    Cuando en un Modelo Entidad-Relación (MER) te dan un atributo en una relación (especialmente en relaciones
-    muchos a muchos), lo habitual es:
-    <br><br>
-    ✅ Lo que sucede:
-    <li>La relación con atributo se convierte en una entidad asociativa o entidad débil en el MER.</li> 
-    <li>Esta entidad asociativa "intermedia" representa la relación y contiene el atributo extra.
-    </li>
-    <br>
- </form>
+   </form>
 </div>
+
 
 
 
 
 <div class="seccion derecha">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    
+    <h1>Ejercicio 5</h1>
+    <div class="section">
+    <h2>🧾 Información dada:</h2>
+    <ul>
+      <li>No todos los camiones pueden transportar todos los productos, aunque sí más de uno.</li>
+      <li>Los camiones están agrupados por tipos (<strong>Y</strong>): cisterna, refrigerador, etc.</li>
+      <li>Un camión está asignado a una sola fábrica.</li>
+    </ul>
+  </div>
 
+  <div class="highlight">
+    <h3>📌 Análisis de dependencias funcionales:</h3>
+
+    <h4>🔹 Entidades clave:</h4>
+    <ul>
+      <li><strong>Producto (P)</strong></li>
+      <li><strong>Camión (C)</strong></li>
+      <li><strong>Tipo de camión (Y)</strong></li>
+      <li><strong>Fábrica (F)</strong></li>
+    </ul>
+
+    <h4>🔍 Relación entre camión y producto:</h4>
+    <p>✔️ No todos los camiones pueden transportar todos los productos, pero sí más de uno. Esto implica una relación muchos-a-muchos (<code>N:M</code>) entre <code>C</code> y <code>P</code>.</p>
+    <p><strong>No existe dependencia funcional directa</strong> entre ellos.</p>
+
+    <h4>🔍 Tipo de camión:</h4>
+    <p>✔️ Cada camión tiene un único tipo, entonces:</p>
+    <p><code>C → Y</code> (El camión determina su tipo).</p>
+
+    <h4>🔍 Fábrica asignada:</h4>
+    <p>✔️ Cada camión está asignado a una única fábrica:</p>
+    <p><code>C → F</code> (El camión determina la fábrica a la que pertenece).</p>
+  </div>
+
+  <div class="conclusion">
+    <h3>✅ Resumen de dependencias funcionales:</h3>
+    <table>
+      <tr><th>Dependencia</th><th>Significado</th></tr>
+      <tr><td><code>C → Y</code></td><td>El camión determina su tipo.</td></tr>
+      <tr><td><code>C → F</code></td><td>El camión determina a qué fábrica pertenece.</td></tr>
+      <tr><td><code>(C, P)</code></td><td>Relación N:M entre camión y producto, sin dependencia funcional directa.</td></tr>
+    </table>
+  </div>
+    <hr>
+    <strong>"agrupados"</strong>:
+    <p>
+    LOS CLIENTES (Ci) EN NÚMERO TOTAL DE 35000 ESTÁN AGRUPADOS POR ZONAS (Z), CORRESPONDIENTE CADA UNA DE ELLAS A CADA UNA DE LAS 10 FÁBRICAS.
+    </p>
+    <p>
+        <strong>Ci -> Z, F -> Z, Z -> F</strong>
+    </p>
     </form>
 </div>
 

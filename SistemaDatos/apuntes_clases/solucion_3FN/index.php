@@ -1137,7 +1137,7 @@ if ($respuesta_110 === '264') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 415vh;
+    height: 475vh;
     }
 
 </style>
@@ -1442,7 +1442,8 @@ function ocultarMensaje4() {
 <body>
 <div class="seccion izquierda">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <strong>Atencion a todos los : "un"</strong> 
+    <strong>Atencion a todos los : "un","unico (siempre a la derecha)", "caracteristicas: del beneficio economico 
+        que aporta un proyecto"</strong> 
     <br><br>
     ej:recibe "un" porcentaje %   
     <hr>
@@ -1507,6 +1508,9 @@ function ocultarMensaje4() {
     proyecto, los investigadores reciben un porcentaje (%).”</strong>
     <p>    🔍 Análisis:
     </p>
+    <p>
+        notece que F -> B, como F nos da B, no hay necedidad de F,B,P ->%.
+    </p>
 <ul>
 Esta frase nos dice que el porcentaje que recibe un investigador (%) está determinado por dos cosas:
     <li>La función que desempeña (F)</li>
@@ -1540,6 +1544,34 @@ Esta frase nos dice que el porcentaje que recibe un investigador (%) está deter
     Cada proyecto puede pertenecer a una o más áreas → A es multivaluado, por tanto no puede
     formar una dependencia funcional como P → A.
     </ul>
+    <hr>
+    
+  <p>“Dependiendo de la función desempeñada y del beneficio económico (<strong>B</strong>) que aporta el proyecto, los investigadores reciben un porcentaje (%)”.</p>
+
+<div class="highlight">
+  📌 <strong>Pensar en el beneficio económico (B) como un atributo del proyecto (P)</strong> es la clave para entender por qué la dependencia funcional es:<br>
+  <code>P → B</code>
+</div>
+
+<h3>🧠 ¿Por qué?</h3>
+<p>Cuando algo depende exclusivamente de una entidad, como en este caso “el proyecto”, entonces lo tratamos como un <strong>atributo propio de esa entidad</strong>. En otras palabras:</p>
+
+<ul>
+  <li>El beneficio económico es una <strong>característica fija del proyecto</strong>.</li>
+  <li>Igual que su <em>estado</em>, <em>fecha de inicio</em>, o <em>fecha de finalización</em>.</li>
+</ul>
+
+<div class="conclusion">
+  ✅ <strong>Conclusión:</strong><br>
+  Sí, ver <strong>B</strong> como un atributo del proyecto es una forma directa y correcta de justificar la dependencia funcional:<br>
+  📌 <code>P → B</code> porque <strong>B</strong> es un atributo propio del proyecto.
+</div>
+
+
+
+
+
+
     <hr>
     <h4>Texto clave:</h4>
     <p>
@@ -1640,6 +1672,159 @@ Esta frase nos dice que el porcentaje que recibe un investigador (%) está deter
     ej: Todo estudiante tiene mas de una calificacion parcial por asignatura. ❌
      Entonces, para un par dado (Estudiante, Asignatura), existen varias calificaciones parciales.
     <hr>
+    <h1>2 ejercicio:</h1>
+    <strong>UNA ASIGNATURA SÓLO SE IMPARTE EN UN PROGRAMA (A -> P)</strong>
+    <br><br>
+    pensar: p -> a, ahora, porque no seria a -> p, porque si trocamos la frase, quedaria: un programa solo imparte 
+    una asignatura. ademas de nuestro conocimiento, un programa puede tener varias asignaturas. 
+    <br>
+    <br>
+    <p>en el parrafo anterior ya nos lo dicen: <strong>"CADA PROGRAMA DE DOCTORADO POSEE VARIAS ASIGNATURAS(A) DE LAS CUALES EL
+    ESTUDIANTE (E) SE MATRICULA EN ALGUNAS. "</strong></p>
+    <hr>
+    <strong>A->D</strong>
+    <p>
+    UNA ASIGNATURA SÓLO SE IMPARTE EN UN PROGRAMA <strong>Y SÓLO LA PUEDE IMPARTIR UN ÚNICO DEPARTAMENTO DE LA FACULTAD</strong>    
+    </p>
+    <br>
+    la contraposicion D -> A, si lo pensamos, como un departamento va a impartir solo una asignatura, tipo, el departamento 
+    de matemáticas solo impartir algebra. 
+    <br>
+    <p>
+    "AUNQUE UN DEPARTAMENTO PUEDE IMPARTIR VARIAS ASIGNATURAS DE UNO O VARIOS PROGRAMAS."
+    </p>
+    <hr>
+    <strong>E -> T</strong>
+    <p>
+    CADA ESTUDIANTE POSEE UN ÚNICO TUTOR (t), AUNQUE UN TUTOR PUEDE SERLO DE VARIOS ESTUDIANTES, 
+    </p>
+    nos dan la relacion y la restriccion de vuelta.
+    <hr>
+    <strong>PT -> E</strong>
+    <p>
+    AUNQUE UN TUTOR PUEDE SERLO DE VARIOS ESTUDIANTES, PERO SÓLO DE UNO POR PROGRAMA DE DOCTORADO.   
+    </p>
+    <hr>
+    <h1>Ejercicio 3:</h1>
+    <br>
+    <p><strong> -CÓDIGO DE LA SESIÓN (A).
+    -NOMBRE DE LA SESIÓN (B) (AL IGUAL QUE EL CÓDIGO ES ÚNICO, PERO ES MAS 
+    ACLARATORIO DE LA SESIÓN A LA QUE IDENTIFICA).
+    </strong></p>
+
+    <div class="section">
+    <h2> Información dada:</h2>
+    <ul>
+      <li><strong>Código de la sesión (A)</strong>: es único.</li>
+      <li><strong>Nombre de la sesión (B)</strong>: también es único, y describe a la sesión, pero de forma más clara.</li>
+    </ul>
+  </div>
+
+  <div class="section highlight">
+    <h3> ¿Qué implican esas condiciones?</h3>
+    <p>Ambos atributos identifican de manera única a una sesión.</p>
+    <p>Por tanto, hay dos dependencias funcionales válidas:</p>
+    <ul>
+      <li><code>A → B</code> (el código determina el nombre)</li>
+      <li><code>B → A</code> (el nombre determina el código)</li>
+    </ul>
+  </div>
+
+  <div class="section conclusion">
+    <h3> Conclusión:</h3>
+    <p>Dado que ambos son únicos y se refieren a la misma entidad (la sesión):</p>
+    <p><strong> <code>A ↔ B</code></strong> (dependencia funcional bidireccional)</p>
+    <p>Esto significa que tanto <code>A</code> como <code>B</code> son claves candidatas de la relación <strong>SESIÓN(A, B)</strong>.</p>
+  </div>
+
+  <div class="section">
+    <h3> Representación formal:</h3>
+    <p><strong>Dependencias funcionales:</strong></p>
+    <ul>
+      <li><code>A → B</code></li>
+      <li><code>B → A</code></li>
+    </ul>
+  </div>
+  <hr>
+  <div class="section">
+    <h2>📌 Análisis de cada una:</h2>
+
+    <div class="highlight">
+      <h3>1. “Una sesión tiene lugar en un solo día”</h3>
+      <p>Esto implica que <strong>el día depende de la sesión</strong>.<br>
+      Si representamos a la sesión por algún identificador único (por ejemplo, <code>A</code>), entonces:</p>
+      <p>✅ <code>A → C</code><br>
+      (El código de la sesión determina el día en que ocurre).</p>
+    </div>
+
+    <div class="highlight">
+      <h3>2. “Una ponencia se presenta en una única sesión”</h3>
+      <p>Esto implica que <strong>la sesión depende de la ponencia</strong>, es decir, cada ponencia está asociada con una sola sesión.<br>
+      Si usamos <code>H</code> para el nombre de la ponencia y <code>A</code> para el código de la sesión:</p>
+      <p>✅ <code>H → A</code><br>
+      (El nombre de la ponencia determina a qué sesión pertenece).</p>
+    </div>
+    <br> 
+    <strong>Conlusion: aveces nos cambian el orden.</strong>
+    <hr>
+    <strong>palabra clave: duracion</strong>
+    <br>
+    <div class="section">
+    <h2>🧾 Información proporcionada:</h2>
+    <ul>
+      <li><strong>Hora en que comienza la sesión (D)</strong></li>
+      <li><strong>Hora en que finaliza la sesión (E)</strong></li>
+    </ul>
+    <p><em>"Las sesiones tienen una duración fijada de antemano, idéntica para todas las sesiones."</em></p>
+  </div>
+
+  <div class="highlight">
+    <h3>📌 ¿Qué significa esto?</h3>
+
+    <h4>🕒 1. Hora de inicio (D):</h4>
+    <p>Cada sesión tiene su propia hora de inicio.</p>
+    <p>Si usamos <code>A</code> como el identificador único de sesión (por ejemplo, código de sesión), entonces:</p>
+    <p>✅ <code>A → D</code><br>
+    (La sesión determina su hora de inicio).</p>
+
+    <h4>🕘 2. Hora de finalización (E):</h4>
+    <p>Como la duración es fija para todas las sesiones, la hora de finalización se puede calcular automáticamente a partir de la hora de inicio (<code>D</code>).</p>
+    <p>Por lo tanto, no depende directamente de la sesión, sino de la hora de inicio:</p>
+    <p>✅ <code>D → E</code><br>
+    (La hora de inicio determina la hora de finalización, porque la duración es constante).</p>
+
+    <h4>🔁 Deducción por transitividad:</h4>
+    <p>Si <code>A → D</code> y <code>D → E</code>, entonces también:</p>
+    <p>✅ <code>A → E</code></p>
+  </div>
+
+  <div class="conclusion">
+    <h3>✅ Conclusión – Dependencias funcionales:</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>DF</th>
+          <th>Significado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>A → D</code></td>
+          <td>Una sesión determina su hora de inicio.</td>
+        </tr>
+        <tr>
+          <td><code>D → E</code></td>
+          <td>La hora de inicio determina la hora de finalización (duración fija).</td>
+        </tr>
+        <tr>
+          <td><code>A → E</code></td>
+          <td>(por transitividad) La sesión determina su hora de finalización.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+    <strong>de las 4 quedan 3 por el recubrimiento minimal.</strong>
     </form>
 </div>
 
