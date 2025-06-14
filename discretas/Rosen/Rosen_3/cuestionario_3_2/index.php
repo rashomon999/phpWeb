@@ -90,7 +90,7 @@ $verificar_61 = ''; $verificar_62 = ''; $verificar_63 = ''; $verificar_64 = ''; 
 
 if ($_POST) {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '26') {  
+   if ($respuesta_1 === 'crece') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -100,7 +100,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === '39') {  
+   if ($respuesta_2 === 'tamaño') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -110,7 +110,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === '52') {  
+   if ($respuesta_3 === 'f') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -120,7 +120,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === '65') {  
+   if ($respuesta_4 === 'g') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -130,7 +130,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === '78') {  
+   if ($respuesta_5 === 'funciones') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -140,7 +140,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === '91') {  
+   if ($respuesta_6 === 'f(x)') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -150,7 +150,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === '104') {  
+   if ($respuesta_7 === 'O(g(x))') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -160,7 +160,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === '117') {  
+   if ($respuesta_8 === 'C') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -170,7 +170,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === '130') {  
+   if ($respuesta_9 === 'K') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -180,9 +180,11 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === '143') {  
+   $respuesta_10_dos = str_replace(' ','',$respuesta_10);
+
+   if ($respuesta_10_dos === '|f(x)|\leqC|g(x)|') {  
        $verificar_10 = "correcto";
-   } elseif ($respuesta_10 === '') {
+   } elseif ($respuesta_10_dos === '') {
        $verificar_10 = '';
    } else {
        $verificar_10 = "incorrecto";
@@ -190,9 +192,11 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === '156') {  
+      $respuesta_11_dos = str_replace(' ','',$respuesta_11);
+
+   if ($respuesta_11_dos === 'siemprequex>k') {  
        $verificar_11 = "correcto";
-   } elseif ($respuesta_11 === '') {
+   } elseif ($respuesta_11_dos === '') {
        $verificar_11 = '';
    } else {
        $verificar_11 = "incorrecto";
@@ -201,7 +205,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
      $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-     if ($respuesta_12 === '28') {  
+     if ($respuesta_12 === 'conjunto') {  
          $verificar_12 = "correcto";
      } elseif ($respuesta_12 === '') {
          $verificar_12 = '';
@@ -211,7 +215,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la segunda pregunta
      $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-     if ($respuesta_13 === '42') { 
+     if ($respuesta_13 === 'enteros') { 
          $verificar_13 = "correcto";
      } elseif ($respuesta_13 === '') {
          $verificar_13 = '';
@@ -221,7 +225,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la tercera pregunta
      $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-     if ($respuesta_14 === '56') {  
+     if ($respuesta_14 === 'conjunto') {  
          $verificar_14 = "correcto";
      } elseif ($respuesta_14 === '') {
          $verificar_14 = '';
@@ -231,7 +235,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la cuarta pregunta
      $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-     if ($respuesta_15 === '70') { 
+     if ($respuesta_15 === 'reales') { 
          $verificar_15 = "correcto";
      } elseif ($respuesta_15 === '') {
          $verificar_15 = '';
@@ -241,7 +245,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la quinta pregunta
      $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-     if ($respuesta_16 === '84') {  
+     if ($respuesta_16 === 'reales') {  
          $verificar_16 = "correcto";
      } elseif ($respuesta_16 === '') {
          $verificar_16 = '';
@@ -251,7 +255,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la sexta pregunta
      $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-     if ($respuesta_17 === '98') {  
+     if ($respuesta_17 === 'f(x)') {  
          $verificar_17 = "correcto";
      } elseif ($respuesta_17 === '') {
          $verificar_17 = '';
@@ -261,7 +265,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la séptima pregunta
      $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-     if ($respuesta_18 === '112') {  
+     if ($respuesta_18 === 'g(x)') {  
          $verificar_18 = "correcto";
      } elseif ($respuesta_18 === '') {
          $verificar_18 = '';
@@ -271,7 +275,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la octava pregunta
      $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-     if ($respuesta_19 === '126') {  
+     if ($respuesta_19 === 'f(x)') {  
          $verificar_19 = "correcto";
      } elseif ($respuesta_19 === '') {
          $verificar_19 = '';
@@ -281,7 +285,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la novena pregunta
      $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
-     if ($respuesta_20 === '140') {  
+     if ($respuesta_20 === 'maximo') {  
          $verificar_20 = "correcto";
      } elseif ($respuesta_20 === '') {
          $verificar_20 = '';
@@ -291,7 +295,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la décima pregunta
      $respuesta_21 = isset($_POST['respuesta_21']) ? $_POST['respuesta_21'] : '';
-     if ($respuesta_21 === '154') {  
+     if ($respuesta_21 === 'rapido') {  
          $verificar_21 = "correcto";
      } elseif ($respuesta_21 === '') {
          $verificar_21 = '';
@@ -301,7 +305,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la undécima pregunta
      $respuesta_22 = isset($_POST['respuesta_22']) ? $_POST['respuesta_22'] : '';
-     if ($respuesta_22 === '168') {  
+     if ($respuesta_22 === 'g(x)') {  
          $verificar_22 = "correcto";
      } elseif ($respuesta_22 === '') {
          $verificar_22 = '';
@@ -311,7 +315,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
    $respuesta_23 = isset($_POST['respuesta_23']) ? $_POST['respuesta_23'] : '';
-   if ($respuesta_23 === '30') {  
+   if ($respuesta_23 === 'constante') {  
        $verificar_23 = "correcto";
    } elseif ($respuesta_23 === '') {
        $verificar_23 = '';
@@ -321,7 +325,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_24 = isset($_POST['respuesta_24']) ? $_POST['respuesta_24'] : '';
-   if ($respuesta_24 === '45') {  
+   if ($respuesta_24 === 'lento') {  
        $verificar_24 = "correcto";
    } elseif ($respuesta_24 === '') {
        $verificar_24 = '';
@@ -331,7 +335,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_25 = isset($_POST['respuesta_25']) ? $_POST['respuesta_25'] : '';
-   if ($respuesta_25 === '60') { 
+   if ($respuesta_25 === 'multiplo') { 
        $verificar_25 = "correcto";
    } elseif ($respuesta_25 === '') {
        $verificar_25 = '';
@@ -341,7 +345,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_26 = isset($_POST['respuesta_26']) ? $_POST['respuesta_26'] : '';
-   if ($respuesta_26 === '75') {  
+   if ($respuesta_26 === 'g(x)') {  
        $verificar_26 = "correcto";
    } elseif ($respuesta_26 === '') {
        $verificar_26 = '';
@@ -351,7 +355,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_27 = isset($_POST['respuesta_27']) ? $_POST['respuesta_27'] : '';
-   if ($respuesta_27 === '90') {  
+   if ($respuesta_27 === 'x') {  
        $verificar_27 = "correcto";
    } elseif ($respuesta_27 === '') {
        $verificar_27 = '';
@@ -361,7 +365,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_28 = isset($_POST['respuesta_28']) ? $_POST['respuesta_28'] : '';
-   if ($respuesta_28 === '105') {  
+   if ($respuesta_28 === 'crece') {  
        $verificar_28 = "correcto";
    } elseif ($respuesta_28 === '') {
        $verificar_28 = '';
@@ -371,7 +375,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_29 = isset($_POST['respuesta_29']) ? $_POST['respuesta_29'] : '';
-   if ($respuesta_29 === '120') {  
+   if ($respuesta_29 === 'C') {  
        $verificar_29 = "correcto";
    } elseif ($respuesta_29 === '') {
        $verificar_29 = '';
@@ -381,7 +385,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_30 = isset($_POST['respuesta_30']) ? $_POST['respuesta_30'] : '';
-   if ($respuesta_30 === '135') {  
+   if ($respuesta_30 === 'K') {  
        $verificar_30 = "correcto";
    } elseif ($respuesta_30 === '') {
        $verificar_30 = '';
@@ -391,7 +395,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_31 = isset($_POST['respuesta_31']) ? $_POST['respuesta_31'] : '';
-   if ($respuesta_31 === '150') {  
+   if ($respuesta_31 === 'f(x)') {  
        $verificar_31 = "correcto";
    } elseif ($respuesta_31 === '') {
        $verificar_31 = '';
@@ -401,7 +405,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_32 = isset($_POST['respuesta_32']) ? $_POST['respuesta_32'] : '';
-   if ($respuesta_32 === '165') {  
+   if ($respuesta_32 === 'O(g(x)') {  
        $verificar_32 = "correcto";
    } elseif ($respuesta_32 === '') {
        $verificar_32 = '';
@@ -411,7 +415,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_33 = isset($_POST['respuesta_33']) ? $_POST['respuesta_33'] : '';
-   if ($respuesta_33 === '180') {  
+   if ($respuesta_33 === 'infinitos') {  
        $verificar_33 = "correcto";
    } elseif ($respuesta_33 === '') {
        $verificar_33 = '';
@@ -420,43 +424,50 @@ if ($_POST) {
    }
 
  $respuesta_34 = isset($_POST['respuesta_34']) ? $_POST['respuesta_34'] : '';
-if ($respuesta_34 === '32') { 
+  $respuesta_34_dos = str_replace(" ","",strtolower($respuesta_34));
+
+if ($respuesta_34_dos === "c<c'") { 
     $verificar_34 = "correcto";
-} elseif ($respuesta_34 === '') {
+} elseif ($respuesta_34_dos === '') {
     $verificar_34 = '';
 } else {
     $verificar_34 = "incorrecto";
 }
 
  $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
-if ($respuesta_35 === '48') { 
+ $respuesta_35_dos = str_replace(" ","",strtolower($respuesta_35));
+if ($respuesta_35_dos === "k<k'") { 
     $verificar_35 = "correcto";
-} elseif ($respuesta_35 === '') {
+} elseif ($respuesta_35_dos === '') {
     $verificar_35 = '';
 } else {
     $verificar_35 = "incorrecto";
 }
 
  $respuesta_36 = isset($_POST['respuesta_36']) ? $_POST['respuesta_36'] : '';
-if ($respuesta_36 === '64') { 
+ $respuesta_36_dos = str_replace(" ","",strtolower($respuesta_36));
+
+if ($respuesta_36_dos === "|f(x)|\leqc|g(x)|\leqc'|g(x)|") { 
     $verificar_36 = "correcto";
-} elseif ($respuesta_36 === '') {
+} elseif ($respuesta_36_dos === '') {
     $verificar_36 = '';
 } else {
     $verificar_36 = "incorrecto";
 }
 
  $respuesta_37 = isset($_POST['respuesta_37']) ? $_POST['respuesta_37'] : '';
-if ($respuesta_37 === '80') { 
+ $respuesta_37_dos = str_replace(" ","",strtolower($respuesta_37));
+
+if ($respuesta_37_dos === "siemprequex>k'>k") { 
     $verificar_37 = "correcto";
-} elseif ($respuesta_37 === '') {
+} elseif ($respuesta_37_dos === '') {
     $verificar_37 = '';
 } else {
     $verificar_37 = "incorrecto";
 }
 
  $respuesta_38 = isset($_POST['respuesta_38']) ? $_POST['respuesta_38'] : '';
-if ($respuesta_38 === '96') { 
+if ($respuesta_38 === 'Paul Bachmann') { 
     $verificar_38 = "correcto";
 } elseif ($respuesta_38 === '') {
     $verificar_38 = '';
@@ -465,7 +476,7 @@ if ($respuesta_38 === '96') {
 }
 
  $respuesta_39 = isset($_POST['respuesta_39']) ? $_POST['respuesta_39'] : '';
-if ($respuesta_39 === '112') { 
+if ($respuesta_39 === '1892') { 
     $verificar_39 = "correcto";
 } elseif ($respuesta_39 === '') {
     $verificar_39 = '';
@@ -474,7 +485,7 @@ if ($respuesta_39 === '112') {
 }
 
  $respuesta_40 = isset($_POST['respuesta_40']) ? $_POST['respuesta_40'] : '';
-if ($respuesta_40 === '128') { 
+if ($respuesta_40 === 'Landau') { 
     $verificar_40 = "correcto";
 } elseif ($respuesta_40 === '') {
     $verificar_40 = '';
@@ -483,7 +494,7 @@ if ($respuesta_40 === '128') {
 }
 
  $respuesta_41 = isset($_POST['respuesta_41']) ? $_POST['respuesta_41'] : '';
-if ($respuesta_41 === '144') { 
+if ($respuesta_41 === 'Edmund Landau') { 
     $verificar_41 = "correcto";
 } elseif ($respuesta_41 === '') {
     $verificar_41 = '';
@@ -492,7 +503,7 @@ if ($respuesta_41 === '144') {
 }
 
  $respuesta_42 = isset($_POST['respuesta_42']) ? $_POST['respuesta_42'] : '';
-if ($respuesta_42 === '160') { 
+if ($respuesta_42 === 'Donald Knuth') { 
     $verificar_42 = "correcto";
 } elseif ($respuesta_42 === '') {
     $verificar_42 = '';
@@ -500,44 +511,52 @@ if ($respuesta_42 === '160') {
     $verificar_42 = "incorrecto";
 }
 
- $respuesta_43 = isset($_POST['respuesta_43']) ? $_POST['respuesta_43'] : '';
-if ($respuesta_43 === '176') { 
+$respuesta_43 = isset($_POST['respuesta_43']) ? $_POST['respuesta_43'] : '';
+$respuesta_43_dos = str_replace(" ","",strtolower($respuesta_43));
+
+if ($respuesta_43_dos === 'x^2>x') { 
     $verificar_43 = "correcto";
-} elseif ($respuesta_43 === '') {
+} elseif ($respuesta_43_dos === '') {
     $verificar_43 = '';
 } else {
     $verificar_43 = "incorrecto";
 }
 
  $respuesta_44 = isset($_POST['respuesta_44']) ? $_POST['respuesta_44'] : '';
-if ($respuesta_44 === '192') { 
+ $respuesta_44_dos = str_replace(" ","",strtolower($respuesta_44));
+
+if ($respuesta_44_dos === 'x>1') { 
     $verificar_44 = "correcto";
-} elseif ($respuesta_44 === '') {
+} elseif ($respuesta_44_dos === '') {
     $verificar_44 = '';
 } else {
     $verificar_44 = "incorrecto";
 }
 
  $respuesta_45 = isset($_POST['respuesta_45']) ? $_POST['respuesta_45'] : '';
-if ($respuesta_45 === '34') { 
+ $respuesta_45_dos = str_replace(" ","",strtolower($respuesta_45));
+
+if ($respuesta_45_dos === 'x^2>1') { 
     $verificar_45 = "correcto";
-} elseif ($respuesta_45 === '') {
+} elseif ($respuesta_45_dos === '') {
     $verificar_45 = '';
 } else {
     $verificar_45 = "incorrecto";
 }
 
  $respuesta_46 = isset($_POST['respuesta_46']) ? $_POST['respuesta_46'] : '';
-if ($respuesta_46 === '51') { 
+  $respuesta_46_dos = str_replace(" ","",strtolower($respuesta_46));
+
+if ($respuesta_46_dos === 'x>1') { 
     $verificar_46 = "correcto";
-} elseif ($respuesta_46 === '') {
+} elseif ($respuesta_46_dos === '') {
     $verificar_46 = '';
 } else {
     $verificar_46 = "incorrecto";
 }
 
  $respuesta_47 = isset($_POST['respuesta_47']) ? $_POST['respuesta_47'] : '';
-if ($respuesta_47 === '68') { 
+if ($respuesta_47 === '4') { 
     $verificar_47 = "correcto";
 } elseif ($respuesta_47 === '') {
     $verificar_47 = '';
@@ -546,7 +565,7 @@ if ($respuesta_47 === '68') {
 }
 
  $respuesta_48 = isset($_POST['respuesta_48']) ? $_POST['respuesta_48'] : '';
-if ($respuesta_48 === '85') { 
+if ($respuesta_48 === '1') { 
     $verificar_48 = "correcto";
 } elseif ($respuesta_48 === '') {
     $verificar_48 = '';
@@ -555,7 +574,7 @@ if ($respuesta_48 === '85') {
 }
 
  $respuesta_49 = isset($_POST['respuesta_49']) ? $_POST['respuesta_49'] : '';
-if ($respuesta_49 === '102') { 
+if ($respuesta_49 === '7' || $respuesta_49 === '7') { 
     $verificar_49 = "correcto";
 } elseif ($respuesta_49 === '') {
     $verificar_49 = '';
@@ -564,7 +583,7 @@ if ($respuesta_49 === '102') {
 }
 
  $respuesta_50 = isset($_POST['respuesta_50']) ? $_POST['respuesta_50'] : '';
-if ($respuesta_50 === '119') { 
+if ($respuesta_50 === '1' || $respuesta_50 === '1' ) { 
     $verificar_50 = "correcto";
 } elseif ($respuesta_50 === '') {
     $verificar_50 = '';
@@ -573,7 +592,7 @@ if ($respuesta_50 === '119') {
 }
 
  $respuesta_51 = isset($_POST['respuesta_51']) ? $_POST['respuesta_51'] : '';
-if ($respuesta_51 === '136') { 
+if ($respuesta_51 === 'dividir') { 
     $verificar_51 = "correcto";
 } elseif ($respuesta_51 === '') {
     $verificar_51 = '';
@@ -582,7 +601,7 @@ if ($respuesta_51 === '136') {
 }
 
  $respuesta_52 = isset($_POST['respuesta_52']) ? $_POST['respuesta_52'] : '';
-if ($respuesta_52 === '153') { 
+if ($respuesta_52 === 'n') { 
     $verificar_52 = "correcto";
 } elseif ($respuesta_52 === '') {
     $verificar_52 = '';
@@ -591,7 +610,7 @@ if ($respuesta_52 === '153') {
 }
 
  $respuesta_53 = isset($_POST['respuesta_53']) ? $_POST['respuesta_53'] : '';
-if ($respuesta_53 === '170') { 
+if ($respuesta_53 === 'C') { 
     $verificar_53 = "correcto";
 } elseif ($respuesta_53 === '') {
     $verificar_53 = '';
@@ -600,7 +619,7 @@ if ($respuesta_53 === '170') {
 }
 
  $respuesta_54 = isset($_POST['respuesta_54']) ? $_POST['respuesta_54'] : '';
-if ($respuesta_54 === '187') { 
+if ($respuesta_54 === 'n') { 
     $verificar_54 = "correcto";
 } elseif ($respuesta_54 === '') {
     $verificar_54 = '';
@@ -609,7 +628,7 @@ if ($respuesta_54 === '187') {
 }
 
  $respuesta_55 = isset($_POST['respuesta_55']) ? $_POST['respuesta_55'] : '';
-if ($respuesta_55 === '204') { 
+if ($respuesta_55 === 'depender') { 
     $verificar_55 = "correcto";
 } elseif ($respuesta_55 === '') {
     $verificar_55 = '';
@@ -618,26 +637,30 @@ if ($respuesta_55 === '204') {
 }
 
 
- $respuesta_56 = isset($_POST['respuesta_56']) ? $_POST['respuesta_56'] : '';
-if ($respuesta_56 === '36') { 
+$respuesta_56 = isset($_POST['respuesta_56']) ? $_POST['respuesta_56'] : '';
+$respuesta_56_dos = str_replace(" ","",strtolower($respuesta_56));
+
+if ($respuesta_56_dos === 'f(x)=a_nx^n+a_{n-1}x^{n-1}+\cdots+a_1x+a_0') { 
     $verificar_56 = "correcto";
-} elseif ($respuesta_56 === '') {
+} elseif ($respuesta_56_dos === '') {
     $verificar_56 = '';
 } else {
     $verificar_56 = "incorrecto";
 }
 
  $respuesta_57 = isset($_POST['respuesta_57']) ? $_POST['respuesta_57'] : '';
-if ($respuesta_57 === '54') { 
+ $respuesta_57_dos = str_replace(" ","",strtolower($respuesta_57));
+
+if ($respuesta_57_dos === 'a_0,a_1,\cdots,a_{n-1},a_n') { 
     $verificar_57 = "correcto";
-} elseif ($respuesta_57 === '') {
+} elseif ($respuesta_57_dos === '') {
     $verificar_57 = '';
 } else {
     $verificar_57 = "incorrecto";
 }
 
  $respuesta_58 = isset($_POST['respuesta_58']) ? $_POST['respuesta_58'] : '';
-if ($respuesta_58 === '72') { 
+if ($respuesta_58 === 'numeros') { 
     $verificar_58 = "correcto";
 } elseif ($respuesta_58 === '') {
     $verificar_58 = '';
@@ -646,7 +669,7 @@ if ($respuesta_58 === '72') {
 }
 
  $respuesta_59 = isset($_POST['respuesta_59']) ? $_POST['respuesta_59'] : '';
-if ($respuesta_59 === '90') { 
+if ($respuesta_59 === 'reales') { 
     $verificar_59 = "correcto";
 } elseif ($respuesta_59 === '') {
     $verificar_59 = '';
@@ -1174,7 +1197,7 @@ function handleSubmit(event) {
 function actualizarFormula() {
     // Obtener los valores de los inputs
    
-    var f = document.getElementById('respuesta_11').value || "";
+    var f = document.getElementById('respuesta_10').value || "";
  
 
 
@@ -1194,7 +1217,7 @@ function actualizarFormula() {
 function actualizarFormula2() {
     // Obtener los valores de los inputs
    
-    var f = document.getElementById('respuesta_13').value || "";
+    var f = document.getElementById('respuesta_36').value || "";
   
     // Construir la fórmula dinámica
     var formula = ` \\ ${f}  \\, `;
@@ -1213,7 +1236,7 @@ function actualizarFormula2() {
 function actualizarFormula3() {
     // Obtener los valores de los inputs
    
-    var f = document.getElementById('respuesta_27').value || "";
+    var f = document.getElementById('respuesta_56').value || "";
  
 
 
@@ -1221,7 +1244,7 @@ function actualizarFormula3() {
     var formula = ` \\ ${f}  \\, `;
 
     // Actualizar el contenido de la fórmula en el DOM
-    document.getElementById('formula3').innerHTML = `$$ ${formula} $$`;
+    document.getElementById('formula3').innerHTML = `\\(${formula}\\)`;
 
     // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
@@ -1231,13 +1254,13 @@ function actualizarFormula3() {
 
 function actualizarFormula4() {
     // Obtener los valores de los inputs
-    var f = document.getElementById('respuesta_29').value || "";
+    var f = document.getElementById('respuesta_57').value || "";
    
 
     // Construir la fórmula dinámica
     var formula = ` \\ ${f}  \\, `;
     // Actualizar el contenido de la fórmula en el DOM
-    document.getElementById('formula4').innerHTML = `$$ ${formula} $$`;
+    document.getElementById('formula4').innerHTML = `\\( ${formula} \\)`;
 
     // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
@@ -1433,60 +1456,298 @@ function ocultarMensaje4() {
 </head>
 <body> 
 <div class="seccion izquierda">
-    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-           
-<h4>Ejemplo 4</h4>
-<p>Usar el ordenamiento burbuja para poner 3, 2, 4, 1, 5 en orden creciente.</p>
-<p><b>Solución:</b> Los pasos de este algoritmo se ilustran en la Figura 1. Comenzamos comparando los dos primeros elementos, 3 y 2. Como 3 > 2, se intercambian, produciendo la lista 2, 3, 4, 1, 5. Como 3 < 4, se continúa comparando 4 y 1. Como 4 > 1, se intercambian, produciendo la lista 2, 3, 1, 4, 5. Como 4 < 5, la primera pasada se completa. Esta garantiza que el mayor elemento, 5, esté en la posición correcta.</p>
-
-<p>La segunda pasada comienza comparando 2 y 3. Como están en el orden correcto, se comparan 3 y 1. Como 3 > 1, se intercambian, produciendo 2, 1, 3, 4, 5. Como 3 < 4, estos están en orden correcto. No es necesario hacer más comparaciones en esta pasada porque 5 ya está en la posición correcta. Esta pasada garantiza que los dos mayores elementos, 4 y 5, estén en sus posiciones correctas.</p>
-
-<p>La tercera pasada comienza comparando 2 y 1. Se intercambian porque 2 > 1, produciendo 1, 2, 3, 4, 5. Como 2 < 3, estos dos elementos están en orden correcto. No se necesitan más comparaciones en esta pasada porque 4 y 5 ya están en sus posiciones correctas. Esta pasada garantiza que los tres elementos más grandes, 3, 4 y 5, estén en su lugar.</p>
-
-<p>La cuarta pasada consiste en una sola comparación, entre 1 y 2. Como 1 < 2, están en orden. Esto completa el ordenamiento burbuja.</p>
-
-<h3>ALGORITMO 4 El ordenamiento burbuja</h3>
-<pre><code>procedure bubblesort(a1,… , an : real numbers with n ≥ 2)
-for i := 1 to n − 1
-    for j := 1 to n − i
-        if aj > aj+1 then interchange aj and aj+1
-{a1,… , an is in increasing order}</code></pre>
-
-    <img src="../../../../img/insertion_sort.png" alt="">
+    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <p>
+    Usando la notación big-O, 
+    podemos comparar dos algoritmos para determinar cuál es más eficiente a medida que 
+    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="8">    
+    el 
+    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="8">    
+    de la entrada. 
+    Por ejemplo, si tenemos dos algoritmos para resolver un problema, uno que usa \( 100n^2 + 17n + 4 \) operaciones
+    y otro que usa \( n^3 \) operaciones, la notación big-O puede ayudarnos a ver que el primer algoritmo utiliza
+    muchas menos operaciones cuando \( n \) es grande, aunque use más operaciones para valores pequeños de \( n \),
+    como \( n = 10 \).
+    </p>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_1 ?>
+    <?php echo $verificar_2 ?>
     <hr>
 
-    <h3>EL ORDENAMIENTO POR INSERCIÓN</h3>
 
-<p>El ordenamiento por inserción es un algoritmo de ordenamiento sencillo, aunque usualmente no es el más eficiente. Para ordenar una lista con <i>n</i> elementos, el ordenamiento por inserción comienza con el segundo elemento. Este segundo elemento se compara con el primero y se inserta antes de él si no lo supera, o después si lo supera. En este punto, los dos primeros elementos están en el orden correcto. Luego, el tercer elemento se compara con el primero, y si es mayor, se compara con el segundo; se inserta en la posición correcta entre los tres primeros elementos.</p>
+    <h2>3.2.2 Notación Big-O</h2>
+    <p>
+    El crecimiento de las funciones se describe a menudo utilizando una notación especial. La Definición 1 
+    describe esta notación.
+    </p>
 
-<p>En general, en el paso <i>j</i> del ordenamiento por inserción, el elemento <i>j</i> de la lista se inserta en la posición correcta dentro de la lista previamente ordenada de <i>j − 1</i> elementos. Para insertar el elemento <i>j</i> en la lista, se utiliza una técnica de búsqueda lineal (ver Ejercicio 45); el elemento <i>j</i> se compara sucesivamente con los <i>j − 1</i> elementos ya ordenados al inicio de la lista hasta que se encuentra el primer elemento que no es menor o hasta que ha sido comparado con todos los <i>j − 1</i> elementos. El elemento <i>j</i> se inserta en la posición correcta de manera que los primeros <i>j</i> elementos queden ordenados. El algoritmo continúa hasta que el último elemento se coloca en la posición correcta respecto a la lista ya ordenada de los primeros <i>n − 1</i> elementos. El ordenamiento por inserción se describe en pseudocódigo en el Algoritmo 5.</p>
+    <h3>Definición 1</h3>
+    <p>
+    Sean 
+    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="2">    
+    y 
+    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="2">    
+    <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="8">    
+    del 
+    <input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="8">    
+    de los 
+    <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="8">
+    o del 
+    <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="8">
+    de los números 
+    <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="8">
+    al conjunto
+    de los números 
+    <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="8">
+    . Decimos que 
+    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="4">    
+    es
+    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="4">    
+    si existen constantes 
+    <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="4">    
+    y 
+    <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="4">    
+    tales que
+    </p>
+    <span id="formula">
+        \(    \)
+    </span> 
+    <input type="text" name="respuesta_10" size="14" id="respuesta_10" oninput="actualizarFormula()"
+    value="<?php echo $respuesta_10?>">
+    <br><br>
+    <input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="17">    
 
-<h4>Ejemplo 5</h4>
-<p>Usar el ordenamiento por inserción para poner los elementos de la lista 3, 2, 4, 1, 5 en orden creciente.</p>
-<p><b>Solución:</b> El ordenamiento por inserción primero compara 2 y 3. Como 3 &gt; 2, coloca 2 en la primera posición, produciendo la lista 2, 3, 4, 1, 5 (la parte ordenada de la lista se muestra en color). En este punto, 2 y 3 están en el orden correcto. Luego, inserta el tercer elemento, 4, en la parte ya ordenada de la lista haciendo las comparaciones 4 &gt; 2 y 4 &gt; 3. Como 4 &gt; 3, 4 permanece en la tercera posición. En este punto, la lista es 2, 3, 4, 1, 5 y sabemos que el orden de los tres primeros elementos es correcto. A continuación, encontramos el lugar correcto para el cuarto elemento, 1, entre los elementos ya ordenados 2, 3, 4. Como 1 &lt; 2, obtenemos la lista 1, 2, 3, 4, 5. Finalmente, insertamos el 5 en la posición correcta comparándolo sucesivamente con 1, 2, 3 y 4. Como 5 &gt; 4, permanece al final de la lista, produciendo el orden correcto de toda la lista.</p>
-
-<h3>ALGORITMO 5 El ordenamiento por inserción</h3>
-<pre><code>procedure insertion sort(a1, a2,… , an: real numbers with n ≥ 2)
-for j := 2 to n
-    i := 1
-    while aj > ai
-        i := i + 1
-    m := aj
-    for k := 0 to j − i − 1
-        aj−k := aj−k−1
-    ai := m
-{a1,… , an is in increasing order}</code></pre>
-
-
+ <br>
+<p>
+  Esto se lee como “
+    <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="8">
+  es big-oh de 
+    <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="8">
+  ”.]
+</p>
+<br>
+<button type="submit">Enviar</button>
+    <?php echo $verificar_3 ?>
+    <?php echo $verificar_4 ?>
+    <?php echo $verificar_5 ?>
+    <?php echo $verificar_6 ?>
+    <?php echo $verificar_7 ?>
+    <?php echo $verificar_8 ?>
+    <?php echo $verificar_9 ?>
+    <?php echo $verificar_10 ?>
+    <?php echo $verificar_11 ?>
+    <?php echo $verificar_12 ?>
+    <?php echo $verificar_13 ?>
+    <?php echo $verificar_14 ?>
+    <?php echo $verificar_15 ?>
+    <?php echo $verificar_16 ?>
+    <?php echo $verificar_17 ?>
+    <?php echo $verificar_18 ?>
     <hr>
-    <h3>3.1.4 Coincidencia de Cadenas</h3>
+    <p>
+    Significa que <span>
+    <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="8">
+    </span> crece como 
+    <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="8">
+    tan 
+    <input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>" size="8">
+    como 
+    <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="8">
+    , 
+    salvo por una 
+    <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="8">
+    multiplicativa, cuando <span>\( x \)</span> es suficientemente grande. 
+    <span>\( g(x) \)</span> sirve como una <strong>cota superior</strong> (una función que domina) a 
+    <span>\( f(x) \)</span>, hasta una constante.
+    </p>
 
-<p>Aunque la búsqueda y el ordenamiento son los problemas más comúnmente encontrados en la informática, muchos otros problemas surgen con frecuencia. Uno de estos problemas pregunta dónde ocurre una cadena particular de caracteres <b>P</b>, llamada el <i>patrón</i>, dentro de otra cadena <b>T</b>, llamada el <i>texto</i>, si es que ocurre. Por ejemplo, podemos preguntar si el patrón <code>101</code> se encuentra dentro de la cadena <code>11001011</code>. A simple vista podemos ver que el patrón <code>101</code> aparece en el texto <code>11001011</code> con un desplazamiento de cuatro caracteres, porque <code>101</code> es la subcadena formada por el quinto, sexto y séptimo caracteres del texto. Por otro lado, el patrón <code>111</code> no aparece dentro del texto <code>110110001101</code>.</p>
+    <h3>Observación</h3>
+    <p>
+    Intuitivamente, la definición de que \( f(x) \) es \( O(g(x)) \) dice que \( f(x) \) crece más 
+    <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="8">
+    que algún 
+    <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="8">
+    fijo de 
+    <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="8">
+    a medida que 
+    <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="8">
+    <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="8">
+     sin límite.
+    </p>
 
-<p>Encontrar dónde ocurre un patrón en una cadena de texto se llama <b>coincidencia de cadenas</b> (o <i>string matching</i>). La coincidencia de cadenas desempeña un papel esencial en una gran variedad de aplicaciones, incluyendo la edición de texto, filtros de spam, sistemas que detectan ataques en redes informáticas, motores de búsqueda, detección de plagio, bioinformática y muchas otras aplicaciones importantes. Por ejemplo, en la edición de texto, el problema de coincidencia de cadenas aparece cada vez que necesitamos encontrar todas las apariciones de una cadena para poder reemplazarla por otra diferente. Los motores de búsqueda buscan coincidencias entre palabras clave de búsqueda y palabras en páginas web. Muchos problemas en bioinformática surgen en el estudio de las moléculas de ADN, las cuales están compuestas por cuatro bases: timina (T), adenina (A), citosina (C) y guanina (G). El proceso de secuenciación de ADN consiste en determinar el orden de estas cuatro bases en el ADN. Esto lleva a problemas de coincidencia de cadenas con cadenas formadas por las cuatro letras T, A, C y G. Por ejemplo, podemos preguntar si el patrón <code>CAG</code> ocurre en el texto <code>CATCACAGAGA</code>. La respuesta es sí, porque aparece con un desplazamiento de cinco caracteres. Resolver preguntas sobre el genoma requiere el uso de algoritmos eficientes para coincidencia de cadenas, especialmente porque una cadena que representa el genoma humano contiene aproximadamente 3 × 10<sup>9</sup> caracteres.</p>
+    <p>
+    Las constantes 
+     <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="8">
+    y 
+     <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="8">
+    en la definición de la notación big-O se llaman <em>testigos</em> 
+    de la relación \( f(x) \) es \( O(g(x)) \). Para establecer que \( f(x) \) es \( O(g(x)) \) solo
+    necesitamos un par de testigos para esta relación. Es decir, para mostrar que \( f(x) \) es \( O(g(x)) \), 
+    solo necesitamos encontrar un par de constantes \( C \) y \( k \), los testigos, tal que \( |f(x)| \leq C|g(x)| \) 
+    siempre que \( x > k \).
+    </p>
 
- 
-     
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_19 ?>
+<?php echo $verificar_20 ?>
+<?php echo $verificar_21 ?>
+<?php echo $verificar_22 ?>
+ <?php echo $verificar_23 ?>
+<?php echo $verificar_24 ?>
+<?php echo $verificar_25 ?>
+<?php echo $verificar_26 ?>
+<?php echo $verificar_27 ?>
+<?php echo $verificar_28 ?>
+<?php echo $verificar_29 ?>
+<?php echo $verificar_30 ?>
+    
+    <hr>
+    <p>
+    Observa que cuando existe un par de testigos para la relación 
+    <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="8">
+    es 
+    <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="8">
+    , existen 
+    <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="8">
+    pares de testigos. Para ver esto, nota que si \( C \) y \( k \) son un par de testigos, entonces cualquier 
+    par \( C' \) y \( k' \), donde  
+    <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="8">
+    y 
+    <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="8">
+    , también es un par de testigos, porque
+    </p>
+
+    <span id="formula2">
+        \(    \)
+    </span> 
+    <input type="text" name="respuesta_36" size="25" id="respuesta_36" oninput="actualizarFormula2()"
+    value="<?php echo $respuesta_36?>">
+    <br><br>
+    <input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="25">    
+    
+    <h2>LA HISTORIA DE LA NOTACIÓN BIG-O</h2>
+    <p>
+    La notación <strong>big-O</strong> se ha utilizado en matemáticas durante más de un siglo.
+    En ciencias de la computación, se utiliza ampliamente en el análisis de algoritmos, como se verá en la Sección 3.3.
+    El matemático alemán 
+    <input type="text" name="respuesta_38" value="<?php echo $respuesta_38; ?>" size="14">
+    introdujo por primera vez la notación big-O en 
+    <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="4">
+    en un
+    importante libro sobre teoría de números.
+    El símbolo big-O a veces se llama <em>símbolo de  </em>
+    <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="4">
+    , en honor al matemático alemán 
+    <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="12">
+    , quien utilizó esta notación en toda su obra.
+    El uso de la notación big-O en ciencias de la computación fue popularizado por
+    <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="12">
+    ,quien también introdujo las notaciones <strong>big-Ω</strong> y <strong>big-Θ</strong> que se definen más 
+    adelante en esta sección.
+    </p>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_31 ?>
+    <?php echo $verificar_32 ?>
+    <?php echo $verificar_33 ?>
+    <?php echo $verificar_34 ?>
+    <?php echo $verificar_35 ?>
+    <?php echo $verificar_36 ?>
+    <?php echo $verificar_37 ?>
+    <?php echo $verificar_38 ?>
+    <?php echo $verificar_39 ?>
+    <?php echo $verificar_40 ?>
+    <?php echo $verificar_41 ?>
+    <?php echo $verificar_42 ?>
+    <hr>
+    <p>
+    Demuestra que \( f(x) = x^2 + 2x + 1 \) es \( O(x^2) \).
+    </p>
+    <p><strong>Queremos comparar:</strong></p>
+
+    <ul>
+    <li>\( 2x < 2x^2 \)</li>
+    <li>\( 1 < x^2 \)</l>
+    </ul>
+
+    <p><strong>Para que estas desigualdades sean verdaderas, necesitas que:</strong></p>
+
+    <ul>
+    <li>
+    <input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="12">    
+     , lo cual se cumple cuando 
+    <input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>" size="12">
+    </li>
+    <li>
+    <input type="text" name="respuesta_45" value="<?php echo $respuesta_45; ?>" size="12">    
+    , que también se cumple cuando 
+    <input type="text" name="respuesta_46" value="<?php echo $respuesta_46; ?>" size="12">
+    </li>
+    </ul>
+    <br>
+    <strong>Entonces, resuelve y :</strong>
+    C:<input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="12">
+    k:<input type="text" name="respuesta_48" value="<?php echo $respuesta_48; ?>" size="12">
+    <br>
+    es decir formamos una funcion con multiplo \( x^2 \) que asegura que es mayor a f(x) con x>1
+    <br><br>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_43 ?>
+    <?php echo $verificar_44 ?>
+    <?php echo $verificar_45 ?>
+    <?php echo $verificar_46 ?>
+    <?php echo $verificar_47 ?>
+    <?php echo $verificar_48 ?>
+    <hr>
+    <strong>Demostrar \(7x^2\) es \( O(x^3) \) </strong>
+    <br><br>
+    C:<input type="text" name="respuesta_49" value="<?php echo $respuesta_49; ?>" size="12">
+    k:<input type="text" name="respuesta_50" value="<?php echo $respuesta_50; ?>" size="12">
+    <br>
+    <br>
+     <button type="submit">Enviar</button>
+    <?php echo $verificar_49 ?>
+    <?php echo $verificar_50 ?>
+    <hr>
+    <p><strong>Ejemplo 3</strong> Muestra que <code>n²</code> no es <code>O(n)</code>.</p>
+    <p><strong>Solución:</strong> Para mostrar que <code>n²</code> no es <code>O(n)</code>, debemos demostrar
+    que no existe ningún par de testigos <code>C</code> y <code>k</code> tales que <code>n² ≤ Cn</code> siempre
+    que <code>n > k</code>. Utilizaremos una demostración por contradicción para mostrar esto.</p>
+    <p>Supongamos que existen las constantes <code>C</code> y <code>k</code> para las cuales <code>n² ≤ Cn</code>
+    siempre que <code>n > k</code>. Observa que cuando <code>n > 0</code>, podemos 
+    <input type="text" name="respuesta_51" value="<?php echo $respuesta_51; ?>" size="8">
+    ambos lados de la 
+    desigualdad <code>n² ≤ Cn</code> por 
+    <input type="text" name="respuesta_52" value="<?php echo $respuesta_52; ?>" size="8">
+    para obtener la desigualdad equivalente <code>n ≤ C</code>.
+    Sin embargo, no importa cuáles sean <code>C</code> y <code>k</code>, la desigualdad <code>n ≤ C</code> no puede
+    mantenerse para todos los <code>n</code> con <code>n > k</code>. En particular, una vez que fijamos un valor de
+    <code>k</code>, vemos que cuando <code>n</code> es mayor que el máximo entre <code>k</code> y <code>C</code>, no 
+    es cierto que <code>n ≤ C</code> aunque <code>n > k</code>. Esta contradicción demuestra que <code>n²</code> no 
+    es <code>O(n)</code>.</p>
+    <p>Puedes elegir cualquier constante \( C > 0 \) que te ayude a demostrar la desigualdad.</p>
+
+<p>También puedes elegir cualquier \( k \geq 0 \) como “el punto a partir del cual empieza a cumplirse la desigualdad”.</p>
+
+<p><strong> Pero lo que no puedes hacer:</strong></p>
+<ul>
+  <li>No puedes cambiar 
+      <input type="text" name="respuesta_53" value="<?php echo $respuesta_53; ?>" size="12">  
+  según el valor de
+      <input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>" size="12">
+  .</li>
+  <li>Una vez eliges una constante \( C \), debe funcionar para todos los \( n > k \).</li>
+  <li>\( C \) no puede 
+   <input type="text" name="respuesta_55" value="<?php echo $respuesta_55; ?>" size="12">  
+  de \( n \).</li>
+  <li>Si dependiera de \( n \), ya no sería una constante, y eso rompe la definición de Big-O.</li>
+</ul>
+    <br>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_51 ?>
+    <?php echo $verificar_52 ?>
+    <?php echo $verificar_53 ?>
+    <?php echo $verificar_54 ?>
+    <?php echo $verificar_55 ?>
     </form>
 </div>
 
@@ -1494,137 +1755,69 @@ for j := 2 to n
 
 
 <div class="seccion derecha">
-    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <strong>utiliza: \cdots</strong>
+    <br><br>
+   <h2>Teorema 1</h2>
+<p>
+  Sea 
+    <span id="formula3">
+      \(    \)
+    </span> 
+  
+  , donde
+   <span id="formula4">
+      \(    \)
+    </span> 
+    son 
+    <input type="text" name="respuesta_58" value="<?php echo $respuesta_58; ?>" size="12">  
     
-    <p>Ahora describiremos un algoritmo de fuerza bruta, el <b>Algoritmo 6</b>, para coincidencia 
-    de cadenas, llamado el <i>comparador de cadenas ingenuo</i>. La entrada de este algoritmo es el
-    patrón que deseamos buscar, <b>P = p₁p₂ … pₘ</b>, y el texto <b>T = t₁t₂ … tₙ</b>. Cuando este patrón 
-    comienza en la posición <b>s + 1</b> del texto <b>T</b>, decimos que <b>P</b> ocurre con
-    desplazamiento <b>s</b> en <b>T</b>, es decir, cuando <code>t<sub>s+1</sub> = p₁</code>,
-    <code>t<sub>s+2</sub> = p₂</code>, …, <code>t<sub>s+m</sub> = pₘ</code>. Para encontrar todos los 
-    desplazamientos válidos, el comparador ingenuo recorre todos los posibles desplazamientos <b>s</b> 
-    desde <b>s = 0</b> hasta <b>s = n − m</b>, comprobando si <b>s</b> es un desplazamiento válido. En 
-    la Figura 2 se muestra cómo opera el Algoritmo 6 al buscar el patrón <code>eye</code> en el texto 
-    <code>eceyeye</code>.</p>
-
-
-    <h4>ALGORITMO 6 Comparador de Cadenas Ingenuo</h4>
-    <pre><code>procedure string match (n, m: positive integers, m ≤ n, t1, t2,… , tn, p1, p2,… , pm: characters)
-        for s := 0 to n − m
-            j := 1
-            while ( j ≤ m and ts+j = pj )
-                j := j + 1
-            if j > m then print “s is a valid shift”</code></pre>
-
-
-            <h2>3.1.6 El Problema de la Detención</h2>
-<p>
-Ahora describiremos una demostración de uno de los teoremas más famosos en la informática.
-Mostraremos que existe un problema que no puede resolverse utilizando ningún procedimiento.
-Es decir, mostraremos que hay problemas irresolubles. El problema que estudiaremos es el 
-<strong>problema de la detención</strong>. Este plantea si existe un procedimiento que haga lo siguiente: 
-tome como entrada un programa de computadora y una entrada para ese programa, y determine 
-si el programa eventualmente se detendrá al ejecutarse con esa entrada.
+    <input type="text" name="respuesta_59" value="<?php echo $respuesta_59; ?>" size="12">  
+       .<br>
+  Entonces \( f(x) \) es \( O(x^n) \).
 </p>
 
-    <p>
-    Sería conveniente tener tal procedimiento, si existiera. Ciertamente, poder comprobar si un 
-    programa entra en un bucle infinito sería útil al escribir y depurar programas. Sin embargo, 
-    en 1936 Alan Turing demostró que <strong>no existe tal procedimiento</strong> (ver su biografía en la 
-    Sección 13.4).
-    </p>
-
-    <p>
-    Antes de presentar una demostración de que el problema de la detención es irresoluble, 
-    observa primero que no podemos simplemente ejecutar un programa y observar qué hace para 
-    determinar si se detiene cuando se ejecuta.
-    </p>
-    <hr>
-    <h1>3.2 El Crecimiento de las Funciones</h1>
-
-<h2>3.2.1 Introducción</h2>
+<h3>Demostración:</h3>
 <p>
-  En la Sección 3.1 discutimos el concepto de un algoritmo. Introdujimos algoritmos que resuelven una variedad de problemas, incluyendo la búsqueda de un elemento en una lista y la ordenación de una lista. En la Sección 3.3 estudiaremos la cantidad de operaciones utilizadas por estos algoritmos. En particular, estimaremos la cantidad de comparaciones utilizadas por los algoritmos de búsqueda lineal y binaria para encontrar un elemento en una secuencia de \( n \) elementos. También estimaremos la cantidad de comparaciones utilizadas por el ordenamiento burbuja y por el ordenamiento por inserción para ordenar una lista de \( n \) elementos.
+  Usando la desigualdad triangular (ver Ejercicio 9 en la Sección 1.8), si \( x > 1 \) tenemos que:
 </p>
 
 <p>
-  El tiempo requerido para resolver un problema depende de más que solo la cantidad de operaciones que utiliza. 
-  El tiempo también depende del hardware y el software utilizados para ejecutar el programa que implementa el 
-  algoritmo. Sin embargo, cuando cambiamos el hardware y software utilizados para implementar un algoritmo, 
-  podemos aproximar de cerca el tiempo requerido para resolver un problema de tamaño \( n \) multiplicando el
-tiempo anterior por una constante. Por ejemplo, en una supercomputadora podríamos resolver un problema de tamaño
- \( n \) un millón de veces más rápido que en una PC. Sin embargo, este factor de un millón no dependerá de \( n \)
-  (excepto tal vez de manera menor).
+\[
+\begin{align*}
+|f(x)| &= |a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0| \quad \text{(escribimos la definición de } f(x) \\
+&\leq |a_n| x^n + |a_{n-1}| x^{n-1} + \cdots + |a_1| x + |a_0| \quad \text{(usamos la desigualdad triangular)} \\
+&= x^n \left( |a_n| + \frac{|a_{n-1}|}{x} + \cdots + \frac{|a_1|}{x^{n-1}} + \frac{|a_0|}{x^n} \right) \quad \text{(factorizamos } x^n \text{)} \\
+&\leq x^n (|a_n| + |a_{n-1}| + \cdots + |a_1| + |a_0|) \quad \text{(como } x > 1, \text{ todas las fracciones son } < 1) \\
+\end{align*}
+\]
 </p>
+
 
 <p>
-  Una de las ventajas de usar la notación big-O, que introducimos en esta sección, es que podemos estimar el crecimiento de una función sin preocuparnos por multiplicadores constantes o términos de orden menor. Esto significa que, usando notación big-O, no tenemos que preocuparnos por el hardware y software utilizados para implementar un algoritmo. Además, usando notación big-O, podemos asumir que las diferentes operaciones utilizadas en un algoritmo toman el mismo tiempo, lo cual simplifica considerablemente el análisis.
+Por lo tanto, \( |f(x)| \leq Cx^n \), donde \( C = |a_n| + |a_{n-1}| + \cdots + |a_0| \), siempre que \( x > 1 \).<br>
+Así, los testigos \( C \) y \( k = 1 \) muestran que \( f(x) \) es \( O(x^n) \).
 </p>
-
 <p>
-  La notación big-O se usa ampliamente para estimar la cantidad de operaciones que un algoritmo utiliza a medida 
-  que crece su entrada. Con la ayuda de esta notación, podemos determinar si es práctico usar un algoritmo en
-   particular para resolver un problema conforme crece el tamaño de la entrada. Además, usando la notación big-O, 
-   podemos comparar dos algoritmos para determinar cuál es más eficiente a medida que crece el tamaño de la entrada. 
-   Por ejemplo, si tenemos dos algoritmos para resolver un problema, uno que usa \( 100n^2 + 17n + 4 \) operaciones
-    y otro que usa \( n^3 \) operaciones, la notación big-O puede ayudarnos a ver que el primer algoritmo utiliza
-     muchas menos operaciones cuando \( n \) es grande, aunque use más operaciones para valores pequeños de \( n \),
-      como \( n = 10 \).
+sustituimos cada término con una cota más grande:<br>
+\[
+\frac{|a_{n-1}|}{x} \leq |a_{n-1}|,\quad \frac{|a_{n-2}|}{x^2} \leq |a_{n-2}|,\quad \ldots
+\]
 </p>
+    
+   
+    <input type="text" name="respuesta_56" size="42" id="respuesta_56" oninput="actualizarFormula3()"
+    value="<?php echo $respuesta_56?>">
+    <br>
+    <input type="text" name="respuesta_57" size="42" id="respuesta_57" oninput="actualizarFormula4()"
+    value="<?php echo $respuesta_57?>">
 
-<p>
-  Esta sección introduce la notación big-O y las notaciones relacionadas big-Omega y big-Theta. Explicaremos 
-  cómo se construyen las estimaciones big-O, big-Omega y big-Theta, y estableceremos estimaciones para algunas 
-  funciones importantes que se usan en el análisis de algoritmos.
-</p>
-
-<h2>3.2.2 Notación Big-O</h2>
-<p>
-  El crecimiento de las funciones se describe a menudo utilizando una notación especial. La Definición 1 describe esta notación.
-</p>
-
-<h3>Definición 1</h3>
-<p>
-  Sean \( f \) y \( g \) funciones del conjunto de los enteros o del conjunto de los números reales al conjunto de los números reales. Decimos que \( f(x) \) es \( O(g(x)) \) si existen constantes \( C \) y \( k \) tales que
-</p>
-
-<p style="text-align: center;">
-  \( |f(x)| \leq C |g(x)| \)
-  <br>
-  siempre que \( x > k \).
-</p>
-
-<p>
-  [Esto se lee como “\( f(x) \) es big-oh de \( g(x) \)”.]
-</p>
-
-<h3>Observación</h3>
-<p>
-  Intuitivamente, la definición de que \( f(x) \) es \( O(g(x)) \) dice que \( f(x) \) crece más lento que algún múltiplo fijo de \( g(x) \) a medida que \( x \) crece sin límite.
-</p>
-
-<p>
-  Las constantes \( C \) y \( k \) en la definición de la notación big-O se llaman <em>testigos</em> de la relación \( f(x) \) es \( O(g(x)) \). Para establecer que \( f(x) \) es \( O(g(x)) \) solo necesitamos un par de testigos para esta relación. Es decir, para mostrar que \( f(x) \) es \( O(g(x)) \), solo necesitamos encontrar un par de constantes \( C \) y \( k \), los testigos, tal que \( |f(x)| \leq C|g(x)| \) siempre que \( x > k \).
-</p>
-
-<p>
-  Observa que cuando existe un par de testigos para la relación \( f(x) \) es \( O(g(x)) \), existen infinitos pares de testigos. Para ver esto, nota que si \( C \) y \( k \) son un par de testigos, entonces cualquier par \( C' \) y \( k' \), donde \( C < C' \) y \( k < k' \), también es un par de testigos, porque
-</p>
-
-<p style="text-align: center;">
-  \( |f(x)| \leq C|g(x)| \leq C'|g(x)| \)
-  <br>
-  siempre que \( x > k' > k \).
-</p>
-
-<h2>LA HISTORIA DE LA NOTACIÓN BIG-O</h2>
-<p>
-  La notación <strong>big-O</strong> se ha utilizado en matemáticas durante más de un siglo.
-  En ciencias de la computación, se utiliza ampliamente en el análisis de algoritmos, como se verá en la Sección 3.3.
-  El matemático alemán <strong>Paul Bachmann</strong> introdujo por primera vez la notación big-O en 1892 en un importante libro sobre teoría de números.
-  El símbolo big-O a veces se llama <em>símbolo de Landau</em>, en honor al matemático alemán <strong>Edmund Landau</strong>, quien utilizó esta notación en toda su obra.
-  El uso de la notación big-O en ciencias de la computación fue popularizado por <strong>Donald Knuth</strong>, quien también introdujo las notaciones <strong>big-Ω</strong> y <strong>big-Θ</strong> que se definen más adelante en esta sección.
-</p>
+    <br><br>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_56 ?>
+    <?php echo $verificar_57 ?>
+    <?php echo $verificar_58 ?>
+    <?php echo $verificar_59 ?>
     </form>
 </div>
 
@@ -1633,7 +1826,7 @@ tiempo anterior por una constante. Por ejemplo, en una supercomputadora podríam
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="tercero.php"
+        href="segundo.php"
         role="button"
         width="50px"
         height="50px"

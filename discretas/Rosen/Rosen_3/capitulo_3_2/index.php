@@ -1697,7 +1697,7 @@ Lo importante es que las sustituciones siempre <strong>aumentan el valor o lo de
     <hr>
 
 
-    <img src="../../img/Big_O.png" alt="">
+    <img src="../../../../img/Big_O.png" alt="">
     <p><strong>Nota:</strong> En el Ejemplo 1, tenemos dos funciones, <i>f(x) = x<sup>2</sup> + 2x + 1</i> y <i>g(x) = x<sup>2</sup></i>, tales que <i>f(x)</i> es <i>O(g(x))</i> y <i>g(x)</i> es <i>O(f(x))</i>—este último hecho se sigue de la desigualdad <i>x<sup>2</sup> &le; x<sup>2</sup> + 2x + 1</i>, que se cumple para todos los números reales no negativos <i>x</i>. Decimos que dos funciones <i>f(x)</i> y <i>g(x)</i> que cumplen ambas relaciones de Big-O son de la misma orden. Volveremos a esta noción más adelante en esta sección.</p>
 
 <p><strong>Observación:</strong> El hecho de que <i>f(x)</i> sea <i>O(g(x))</i> a veces se escribe <i>f(x) = O(g(x))</i>. Sin embargo, el signo igual en esta notación no representa una igualdad genuina. Más bien, esta notación nos dice que se cumple una desigualdad que relaciona los valores de las funciones <i>f</i> y <i>g</i> para números suficientemente grandes en los dominios de estas funciones. No obstante, es aceptable escribir <i>f(x) &isin; O(g(x))</i> porque <i>O(g(x))</i> representa el conjunto de funciones que son <i>O(g(x))</i>.</p>

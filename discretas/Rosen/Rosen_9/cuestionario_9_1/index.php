@@ -87,8 +87,143 @@ $verificar_61 = ''; $verificar_62 = ''; $verificar_63 = ''; $verificar_64 = ''; 
      $verificar_109 = '';
      $verificar_110 = '';
      
-
+ $mostrar_solucion = '';
+ $verificar_solucion = '';
 if ($_POST) {
+    $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
+  
+    if ($mostrar_solucion === 'mostrar_solucion') {  
+        // Establecer todas las respuestas correctas
+        $respuesta_1 = 'subconjunto';
+        $verificar_1 = "correcto";
+        
+        $respuesta_2 = 'relacionado';
+        $verificar_2 = "correcto";
+        
+        $respuesta_3 = 'un elemento';
+        $verificar_3 = "correcto";
+        
+        $respuesta_4 = 'cada';
+        $verificar_4 = "correcto";
+        
+        $respuesta_5 = 'conjunto';
+        $verificar_5 = "correcto";
+        
+        $respuesta_6 = 'pares ordenados';
+        $verificar_6 = "correcto";
+        
+        $respuesta_7 = '(a,b)';
+        $verificar_7 = "correcto";
+        
+        $respuesta_8 = 'b = f(a)';
+        $verificar_8 = "correcto";
+        
+        $respuesta_9 = 'subconjunto';
+        $verificar_9 = "correcto";
+        
+        $respuesta_10 = 'AxB';
+        $verificar_10 = "correcto";
+        
+        $respuesta_11 = 'A';
+        $verificar_11 = "correcto";
+        
+        $respuesta_12 = 'B';
+        $verificar_12 = "correcto";
+        
+        $respuesta_13 = 'primer';
+        $verificar_13 = "correcto";
+        
+        $respuesta_14 = 'primer';
+        $verificar_14 = "correcto";
+        
+        $respuesta_15 = 'uno a muchos';
+        $verificar_15 = "correcto";
+        
+        $respuesta_16 = 'mas';
+        $verificar_16 = "correcto";
+        
+        $respuesta_17 = 'exactamente un elemento de B';
+        $verificar_17 = "correcto";
+        
+        $respuesta_18 = '(a,f(a))';
+        $verificar_18 = "correcto";
+        
+        $respuesta_19 = 'relacion';
+        $verificar_19 = "correcto";
+        
+        $respuesta_20 = 'A';
+        $verificar_20 = "correcto";
+        
+        $respuesta_21 = 'A';
+        $verificar_21 = "correcto";
+        
+        $respuesta_22 = 'relacion';
+        $verificar_22 = "correcto";
+        
+        $respuesta_23 = 'conjunto';
+        $verificar_23 = "correcto";
+        
+        $respuesta_24 = 'subconjunto';
+        $verificar_24 = "correcto";
+        
+        $respuesta_25 = 'AxA';
+        $verificar_25 = "correcto";
+        
+        $respuesta_26 = 'AxA';
+        $verificar_26 = "correcto";
+        
+        $respuesta_27 = 'n^2';
+        $verificar_27 = "correcto";
+        
+        $respuesta_28 = '2^m';
+        $verificar_28 = "correcto";
+        
+        $respuesta_29 = 'subconjuntos';
+        $verificar_29 = "correcto";
+        
+        $respuesta_30 = '(b,a)';
+        $verificar_30 = "correcto";
+        
+        $respuesta_31 = '(a,b)';
+        $verificar_31 = "correcto";
+        
+        $respuesta_32 = 'a,b';
+        $verificar_32 = "correcto";
+        
+        $respuesta_33 = 'A';
+        $verificar_33 = "correcto";
+        
+        $respuesta_34 = 'R';
+        $verificar_34 = "correcto";
+        
+        $respuesta_35 = 'A';
+        $verificar_35 = "correcto";
+        
+        $respuesta_36 = 'A';
+        $verificar_36 = "correcto";
+        
+        $respuesta_37 = 'R';
+        $verificar_37 = "correcto";
+        
+        $respuesta_38 = 'a=b';
+        $verificar_38 = "correcto";
+        
+        $respuesta_39 = '(a,b)';
+        $verificar_39 = "correcto";
+        
+        $respuesta_40 = '(b,c)';
+        $verificar_40 = "correcto";
+        
+        $respuesta_41 = '(a,a)';
+        $verificar_41 = "correcto";
+        
+        $respuesta_42 = 'A';
+        $verificar_42 = "correcto";
+        
+        $respuesta_43 = 'antisimetrica';
+        $verificar_43 = "correcto";
+        
+    } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
    if ($respuesta_1 === 'subconjunto') {  
        $verificar_1 = "correcto";
@@ -1118,6 +1253,7 @@ if ($respuesta_110 === '264') {
 
 
 }
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -1139,7 +1275,7 @@ if ($respuesta_110 === '264') {
         width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
         padding: 20px; /* importante este padding*/
         box-sizing: border-box;
-        height: 250vh;
+        height: 255vh;
     }
 </style>
  
@@ -1754,7 +1890,10 @@ function ocultarMensaje4() {
         <?php echo $verificar_43 ?>
 
         <hr>
-        
+     <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
+    <br>
+    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
+    <button type="submit"   >Mostrar Solución</button>
         
     </form>
 </div>
