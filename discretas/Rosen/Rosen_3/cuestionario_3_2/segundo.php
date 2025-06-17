@@ -89,8 +89,10 @@ $verificar_61 = ''; $verificar_62 = ''; $verificar_63 = ''; $verificar_64 = ''; 
      
 
 if ($_POST) {
+
+    
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '26') {  
+   if ($respuesta_1 === 'crecimiento') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -100,7 +102,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === '39') {  
+   if ($respuesta_2 === 'n') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -110,7 +112,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === '52') {  
+   if ($respuesta_3 === 'constantes') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -120,7 +122,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === '65') {  
+   if ($respuesta_4 === 'multiplicativas') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -130,7 +132,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === '78') {  
+   if ($respuesta_5 === 'cambiar') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -140,7 +142,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === '91') {  
+   if ($respuesta_6 === 'base') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -150,7 +152,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === '104') {  
+   if ($respuesta_7 === 'logaritmo') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -160,7 +162,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === '117') {  
+   if ($respuesta_8 === 'b') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -170,7 +172,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === '130') {  
+   if ($respuesta_9 === 'expresar') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -180,7 +182,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === '143') {  
+   if ($respuesta_10 === 'otra') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -190,7 +192,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === '156') {  
+   if ($respuesta_11 === 'base') {  
        $verificar_11 = "correcto";
    } elseif ($respuesta_11 === '') {
        $verificar_11 = '';
@@ -199,11 +201,13 @@ if ($_POST) {
    }
 
 
-     // Verificar la respuesta de la primera pregunta
-     $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-     if ($respuesta_12 === '28') {  
+    // Verificar la respuesta de la primera pregunta
+    $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
+    $respuesta_12_dos =  str_replace(' ','',$respuesta_12);
+     
+    if ($respuesta_12_dos === '\frac{\log_kn}{\log_kb}') {  
          $verificar_12 = "correcto";
-     } elseif ($respuesta_12 === '') {
+     } elseif ($respuesta_12_dos === '') {
          $verificar_12 = '';
      } else {
          $verificar_12 = "incorrecto";
@@ -211,9 +215,11 @@ if ($_POST) {
   
      // Verificar la respuesta de la segunda pregunta
      $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-     if ($respuesta_13 === '42') { 
+     $respuesta_13_dos =  str_replace(' ','',$respuesta_13);
+
+     if ($respuesta_13_dos === ' \frac{\log_{10}n}{\log_{10}2}') { 
          $verificar_13 = "correcto";
-     } elseif ($respuesta_13 === '') {
+     } elseif ($respuesta_13_dos === '') {
          $verificar_13 = '';
      } else {
          $verificar_13 = "incorrecto";
@@ -221,7 +227,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la tercera pregunta
      $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-     if ($respuesta_14 === '56') {  
+     if ($respuesta_14 === 'O(n^d)') {  
          $verificar_14 = "correcto";
      } elseif ($respuesta_14 === '') {
          $verificar_14 = '';
@@ -231,7 +237,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la cuarta pregunta
      $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-     if ($respuesta_15 === '70') { 
+     if ($respuesta_15 === 'O(n^d)') { 
          $verificar_15 = "correcto";
      } elseif ($respuesta_15 === '') {
          $verificar_15 = '';
@@ -241,9 +247,11 @@ if ($_POST) {
   
      // Verificar la respuesta de la quinta pregunta
      $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-     if ($respuesta_16 === '84') {  
+     $respuesta_16_dos =  str_replace(' ','',$respuesta_16);
+
+     if ($respuesta_16_dos === '(\log_bn)^c=O(n^d)') {  
          $verificar_16 = "correcto";
-     } elseif ($respuesta_16 === '') {
+     } elseif ($respuesta_16_dos === '') {
          $verificar_16 = '';
      } else {
          $verificar_16 = "incorrecto";
@@ -251,7 +259,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la sexta pregunta
      $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-     if ($respuesta_17 === '98') {  
+     if ($respuesta_17 === 'n^d=O(b^n)') {  
          $verificar_17 = "correcto";
      } elseif ($respuesta_17 === '') {
          $verificar_17 = '';
@@ -261,7 +269,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la séptima pregunta
      $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-     if ($respuesta_18 === '112') {  
+     if ($respuesta_18 === 'menor') {  
          $verificar_18 = "correcto";
      } elseif ($respuesta_18 === '') {
          $verificar_18 = '';
@@ -271,19 +279,23 @@ if ($_POST) {
   
      // Verificar la respuesta de la octava pregunta
      $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-     if ($respuesta_19 === '126') {  
+
+     $respuesta_19_dos =  str_replace(' ','',$respuesta_19);
+     if ($respuesta_19_dos === 'b^n=O(c^n)') {  
          $verificar_19 = "correcto";
-     } elseif ($respuesta_19 === '') {
+     } elseif ($respuesta_19_dos === '') {
          $verificar_19 = '';
      } else {
          $verificar_19 = "incorrecto";
      }
   
      // Verificar la respuesta de la novena pregunta
-     $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
-     if ($respuesta_20 === '140') {  
+    $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
+    $respuesta_20_dos =  str_replace(' ','',$respuesta_20);
+    
+    if ($respuesta_20_dos === 'c^n=O(n!)') {  
          $verificar_20 = "correcto";
-     } elseif ($respuesta_20 === '') {
+     } elseif ($respuesta_20_dos === '') {
          $verificar_20 = '';
      } else {
          $verificar_20 = "incorrecto";
@@ -291,7 +303,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la décima pregunta
      $respuesta_21 = isset($_POST['respuesta_21']) ? $_POST['respuesta_21'] : '';
-     if ($respuesta_21 === '154') {  
+     if ($respuesta_21 === '2') {  
          $verificar_21 = "correcto";
      } elseif ($respuesta_21 === '') {
          $verificar_21 = '';
@@ -301,7 +313,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la undécima pregunta
      $respuesta_22 = isset($_POST['respuesta_22']) ? $_POST['respuesta_22'] : '';
-     if ($respuesta_22 === '168') {  
+     if ($respuesta_22 === '1') {  
          $verificar_22 = "correcto";
      } elseif ($respuesta_22 === '') {
          $verificar_22 = '';
@@ -311,7 +323,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
    $respuesta_23 = isset($_POST['respuesta_23']) ? $_POST['respuesta_23'] : '';
-   if ($respuesta_23 === '30') {  
+   if ($respuesta_23 === '3') {  
        $verificar_23 = "correcto";
    } elseif ($respuesta_23 === '') {
        $verificar_23 = '';
@@ -321,7 +333,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_24 = isset($_POST['respuesta_24']) ? $_POST['respuesta_24'] : '';
-   if ($respuesta_24 === '45') {  
+   if ($respuesta_24 === '6') {  
        $verificar_24 = "correcto";
    } elseif ($respuesta_24 === '') {
        $verificar_24 = '';
@@ -331,7 +343,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_25 = isset($_POST['respuesta_25']) ? $_POST['respuesta_25'] : '';
-   if ($respuesta_25 === '60') { 
+   if ($respuesta_25 === '5') { 
        $verificar_25 = "correcto";
    } elseif ($respuesta_25 === '') {
        $verificar_25 = '';
@@ -341,7 +353,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_26 = isset($_POST['respuesta_26']) ? $_POST['respuesta_26'] : '';
-   if ($respuesta_26 === '75') {  
+   if ($respuesta_26 === '4') {  
        $verificar_26 = "correcto";
    } elseif ($respuesta_26 === '') {
        $verificar_26 = '';
@@ -351,7 +363,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_27 = isset($_POST['respuesta_27']) ? $_POST['respuesta_27'] : '';
-   if ($respuesta_27 === '90') {  
+   if ($respuesta_27 === 'lento') {  
        $verificar_27 = "correcto";
    } elseif ($respuesta_27 === '') {
        $verificar_27 = '';
@@ -361,7 +373,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_28 = isset($_POST['respuesta_28']) ? $_POST['respuesta_28'] : '';
-   if ($respuesta_28 === '105') {  
+   if ($respuesta_28 === 'nlogn') {  
        $verificar_28 = "correcto";
    } elseif ($respuesta_28 === '') {
        $verificar_28 = '';
@@ -371,7 +383,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_29 = isset($_POST['respuesta_29']) ? $_POST['respuesta_29'] : '';
-   if ($respuesta_29 === '120') {  
+   if ($respuesta_29 === 'n^1/2') {  
        $verificar_29 = "correcto";
    } elseif ($respuesta_29 === '') {
        $verificar_29 = '';
@@ -381,7 +393,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_30 = isset($_POST['respuesta_30']) ? $_POST['respuesta_30'] : '';
-   if ($respuesta_30 === '135') {  
+   if ($respuesta_30 === 'n^2') {  
        $verificar_30 = "correcto";
    } elseif ($respuesta_30 === '') {
        $verificar_30 = '';
@@ -1123,7 +1135,7 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-  <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -1136,8 +1148,8 @@ if ($respuesta_110 === '264') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 380vh;
-}
+    height: 395vh;
+    }
 </style>
  
 <script>
@@ -1177,15 +1189,22 @@ function handleSubmit(event) {
     });
 }
 
+ 
+function mostrarImagen() {
+  document.getElementById("contenedor").innerHTML = 
+    "<img src='../../../../img/respuesta.png' alt='Imagen'>";
+}
+ 
+
 function actualizarFormula() {
     // Obtener los valores de los inputs
    
-    var f = document.getElementById('respuesta_11').value || "";
+    var f = document.getElementById('respuesta_12').value || "";
  
 
 
     // Construir la fórmula dinámica
-    var formula = ` \\  ${f} \\, `;
+    var formula = ` \\ log_b n = ${f} \\, `;
 
     // Actualizar el contenido de la fórmula en el DOM
     document.getElementById('formula').innerHTML = `$$ ${formula} $$`;
@@ -1203,7 +1222,7 @@ function actualizarFormula2() {
     var f = document.getElementById('respuesta_13').value || "";
   
     // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
+    var formula = ` \\ log_2 n = ${f}  \\, `;
 
     // Actualizar el contenido de la fórmula en el DOM
     document.getElementById('formula2').innerHTML = `$$ ${formula} $$`;
@@ -1219,7 +1238,7 @@ function actualizarFormula2() {
 function actualizarFormula3() {
     // Obtener los valores de los inputs
    
-    var f = document.getElementById('respuesta_27').value || "";
+    var f = document.getElementById('respuesta_16').value || "";
  
 
 
@@ -1227,7 +1246,7 @@ function actualizarFormula3() {
     var formula = ` \\ ${f}  \\, `;
 
     // Actualizar el contenido de la fórmula en el DOM
-    document.getElementById('formula3').innerHTML = `$$ ${formula} $$`;
+    document.getElementById('formula3').innerHTML = `\\(${formula}\\)`;
 
     // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
@@ -1237,13 +1256,13 @@ function actualizarFormula3() {
 
 function actualizarFormula4() {
     // Obtener los valores de los inputs
-    var f = document.getElementById('respuesta_29').value || "";
+    var f = document.getElementById('respuesta_17').value || "";
    
 
     // Construir la fórmula dinámica
     var formula = ` \\ ${f}  \\, `;
     // Actualizar el contenido de la fórmula en el DOM
-    document.getElementById('formula4').innerHTML = `$$ ${formula} $$`;
+    document.getElementById('formula4').innerHTML = `\\( ${formula} \\)`;
 
     // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
@@ -1254,7 +1273,7 @@ function actualizarFormula4() {
 
 function actualizarFormula5() {
     // Obtener los valores de los inputs
-    var f = document.getElementById('respuesta_30').value || "";
+    var f = document.getElementById('respuesta_19').value || "";
   
 
     // Construir la fórmula dinámica
@@ -1272,7 +1291,7 @@ function actualizarFormula5() {
 
 function actualizarFormula6() {
     // Obtener los valores de los inputs
-    var f = document.getElementById('respuesta_6').value || "";
+    var f = document.getElementById('respuesta_20').value || "";
   
 
     // Construir la fórmula dinámica
@@ -1289,7 +1308,7 @@ function actualizarFormula6() {
 
 function actualizarFormula7() {
     // Obtener los valores de los inputs
-    var f = document.getElementById('respuesta_7').value || "";
+    var f = document.getElementById('respuesta_76').value || "";
   
 
     // Construir la fórmula dinámica
@@ -1305,13 +1324,13 @@ function actualizarFormula7() {
 
 function actualizarFormula8() {
     // Obtener los valores de los inputs
-    var f = document.getElementById('respuesta_8').value || "";
+    var f = document.getElementById('respuesta_88').value || "";
   
 
     // Construir la fórmula dinámica
     var formula = ` \\ ${f}  \\, `;
     // Actualizar el contenido de la fórmula en el DOM
-    document.getElementById('formula8').innerHTML = `$$ ${formula} $$`;
+    document.getElementById('formula8').innerHTML = `\\( ${formula} \\)`;
 
     // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
@@ -1322,13 +1341,13 @@ function actualizarFormula8() {
 
 function actualizarFormula9() {
     // Obtener los valores de los inputs
-    var f = document.getElementById('respuesta_9').value || "";
+    var f = document.getElementById('respuesta_89').value || "";
   
 
     // Construir la fórmula dinámica
     var formula = ` \\ ${f}  \\, `;
     // Actualizar el contenido de la fórmula en el DOM
-    document.getElementById('formula9').innerHTML = `$$ ${formula} $$`;
+    document.getElementById('formula9').innerHTML = `\\( ${formula} \\)`;
 
     // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
@@ -1340,13 +1359,13 @@ function actualizarFormula9() {
 
 function actualizarFormula10() {
     // Obtener los valores de los inputs
-    var f = document.getElementById('respuesta_10').value || "";
+    var f = document.getElementById('respuesta_90').value || "";
   
 
     // Construir la fórmula dinámica
     var formula = ` \\ ${f}  \\, `;
     // Actualizar el contenido de la fórmula en el DOM
-    document.getElementById('formula10').innerHTML = `$$ ${formula} $$`;
+    document.getElementById('formula10').innerHTML = `\\( ${formula} \\)`;
 
     // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
@@ -1435,83 +1454,236 @@ function ocultarMensaje4() {
 
 
 </script>
-    
+ 
+ 
 </head>
 <body> 
 <div class="seccion izquierda">
-    <form action="./cuarto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <img src="../../../../img/Big_O_2.png" alt="">
+    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+     <h2>¿Por qué no importa la base del logaritmo en notación Big-O?</h2>
+
+    <h3> Idea clave:</h3>
+    <p>Cuando hablamos de <strong>notación Big-O</strong>, solo nos importa el <em>comportamiento de 
+    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="8">   
+    </em> 
+    de una función cuando 
+    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="8">   
+    crece mucho.</p>
+    <p><strong>No</strong> nos importan las 
+    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="8">   
+    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="8">   
+    .</p>
+    <p>Por eso, 
+    <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="8">       
+    la 
+    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="8">  
+    del 
+    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="8">  
+    <strong>no cambia su clase de crecimiento</strong>.</p>
+
+    <h3> Veamos esto con una propiedad matemática importante:</h3>
+    <p>Cualquier logaritmo en base 
+    <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="8">      
+    se puede 
+    <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="8">  
+    en 
+    <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="8">   
+    <input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="8">  
+    k
+    así ( <strong>utilizar \log </strong> ):</p>
+
+
+    <span id="formula">
+        \(  log_b n =   \)
+    </span> 
+    <input type="text" name="respuesta_12" size="19" id="respuesta_12" oninput="actualizarFormula()"
+    value="<?php echo $respuesta_12?>">
+    <br>
+  
+    <br>
+   <button type="submit">Enviar</button>
+    <?php echo $verificar_1 ?>
+    <?php echo $verificar_2 ?>
+    <?php echo $verificar_3 ?>
+    <?php echo $verificar_4 ?>
+    <?php echo $verificar_5 ?>
+    <?php echo $verificar_6 ?>
+    <?php echo $verificar_7 ?>
+    <?php echo $verificar_8 ?>
+    <?php echo $verificar_9 ?>
+    <?php echo $verificar_10 ?>
+    <?php echo $verificar_11 ?>
+    <?php echo $verificar_12 ?>
     <hr>
-    <h3><p>Queremos demostrar que:<br></p></h3>
-     
-<code>7x<sup>2</sup> = O(x<sup>3</sup>)</code><br>
-Eso significa que existe una constante <strong>C</strong> y un número <strong>k</strong> tal que:<br>
-<code>7x<sup>2</sup> ≤ C ⋅ x<sup>3</sup></code> para todo <code>x > k</code> 
 
-<h3>🔹 Opción 1: usar la cota más ajustada posible</h3>
-<p>Decimos:<br>
-"Cuando <code>x > 7</code>, se cumple que <code>7x<sup>2</sup> < x<sup>3</sup></code>"</p>
 
-<p>Porque si multiplicamos ambos lados de <code>x > 7</code> por <code>x<sup>2</sup></code>, tenemos:</p>
-<p><code>x > 7 ⇒ x<sup>3</sup> > 7x<sup>2</sup></code></p>
+      con k = 10 y b = 2. notamos que ( escriba como fraccion con log ):
+   
+    <span id="formula2">
+        \[  log_2 n =   \]
+    </span> 
+    <br>
+    <input type="text" name="respuesta_13" size="25" id="respuesta_13" oninput="actualizarFormula2()"
+    value="<?php echo $respuesta_13?>">
 
-<p>Entonces, la desigualdad que queremos demostrar se cumple si tomamos:<br>
-<strong>C = 1</strong><br>
-<strong>k = 7</strong></p>
 
-<p>Es decir:<br>
-<code>7x<sup>2</sup> ≤ 1 ⋅ x<sup>3</sup></code> para todo <code>x > 7</code><br>
- ¡Perfecto! Pero solo funciona a partir de x = 7.</p>
+    <p>Entonces:</p>
 
-<h3>🔹 Opción 2: usar una cota más "floja" pero más fácil</h3>
-<p>En lugar de buscar una constante tan pequeña como 1, decimos:<br>
-"Cuando <code>x > 1</code>, se cumple que <code>7x<sup>2</sup> < 7x<sup>3</sup></code>"</p>
+    <p style="text-align: center;">
+    \[
+    \log_2 n \leq 3.32 \cdot \log_{10} n \quad \text{para todo } n > 1
+    \]
+    </p>
+    
+ 
+    <p>¡Eso cumple perfectamente la definición de Big-O! Solo hay una constante (\( C = 3.32 \)), y eso está permitido.</p>
 
-<p>¿Y por qué? Porque:</p>
-<p><code>x > 1 ⇒ x<sup>3</sup> > x<sup>2</sup> ⇒ 7x<sup>3</sup> > 7x<sup>2</sup></code></p>
-
-<p>Entonces:<br>
-<code>7x<sup>2</sup> < 7x<sup>3</sup></code></p>
-
-<p>Y eso nos da:<br>
-<strong>C = 7</strong><br>
-<strong>k = 1</strong></p>
-
-<p>También cumple la definición, porque:<br>
-<code>7x<sup>2</sup> ≤ 7x<sup>3</sup></code> para todo <code>x > 1</code></p>
-
-<h3> Conclusión:</h3>
-<p>Ambas formas son válidas, pero hay un intercambio:</p>
-<ul>
-  <li>Si eliges un C más pequeño, necesitas un k más grande.</li>
-  <li>Si aceptas un C más grande, puedes usar un k más pequeño.</li>
-</ul>
-<p>Eso es totalmente válido en notación Big-O, porque lo único que importa es que exista alguna constante <strong>C</strong> y algún <strong>k</strong> que cumplan la desigualdad.</p>
+    <h3>Por lo tanto:</h3>
+    <p style="text-align: center;">
+    \[
+    \log_2 n = O(\log_{10} n) \quad \text{y también} \quad \log_{10} n = O(\log_2 n)
+    \]
+    </p>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_13 ?>
 
     <hr>
+
+
+      <h2>Estimaciones &Uacute;tiles de Big-O con Logaritmos, Potencias y Exponenciales</h2>
+  <p>Estos hechos nos ayudan a determinar relaciones Big-O entre funciones como potencias, logaritmos y funciones exponenciales \( b^n \) con \( b > 1 \).</p>
+
+  <h3>1. Polinomios</h3>
+  <p>Si \( f(n) \) es un polinomio de grado \( d \), entonces:</p>
+ 
+    \( f(n) =   \)
+   <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="8">  
+
+    <br><br>
+    Si \( d > c > 1 \), entonces:
+    \( n^c =    \)
+
+    <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="8">  
+
+    \( \quad 
+    \text{pero} \quad n^d \neq O(n^c) \)
+  
+    <br>
+  <h3>2. Logaritmos</h3>
+  <p>Si \( b > 1 \), \( c > 0 \), \( d > 0 \), entonces (c y d exponentes):</p>
+ 
+    <span id="formula3">
+        \(      =    \)
+    </span> 
+    <br>
+    <input type="text" name="respuesta_16" size="25" id="respuesta_16" oninput="actualizarFormula3()"
+    value="<?php echo $respuesta_16?>">
+
+    \(  \text{pero} \quad n^d \neq O((\log_b n)^c) \)
+    <br><br>
+
+
+    <h3>3. Exponenciales vs Polinomios</h3>
+    <p>Para todo \( d > 0 \) y \( b > 1 \):</p>
+      
+    <span id="formula4">
+        \(       =    \)
+    </span> 
+    <br>
+    <input type="text" name="respuesta_17" size="25" id="respuesta_17" oninput="actualizarFormula4()"
+    value="<?php echo $respuesta_17?>">
+    \( \quad \text{pero} \quad b^n \neq O(n^d) \)
     <p>
-        <strong>LaTeX</strong>
-  está formado por un gran conjunto de macros de TeX, escrito por Leslie Lamport en 1984 con la intención de facilitar el uso del lenguaje de composición tipográfica 
-<strong>TeX</strong>, creado por Donald Knuth. Se utiliza mucho para la composición de artículos académicos, tesis y libros técnicos, dado que la calidad tipográfica de los documentos realizados en LaTeX se considera adecuada a las necesidades de una editorial científica de primera línea, muchas de las cuales ya lo emplean.
-</p>
+    El crecimiento polinómico es 
+    <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="8">  
+    que el crecimiento exponencial, especialmente cuando analizamos el comportamiento asintótico (cuando 
+    \( x \to \infty \)).
+    </p>
+
+
+  <h3>4. Comparando Exponenciales</h3>
+  <p>Si \( c > b > 1 \), entonces:</p>
+    
+    <span id="formula5">
+        \(       =    \)
+    </span> 
+    <br>
+    <input type="text" name="respuesta_19" size="25" id="respuesta_19" oninput="actualizarFormula5()"
+    value="<?php echo $respuesta_19?>">
+    \( \text{pero} \quad c^n \neq O(b^n) \)
+   
+
+    <h3>5. Factorial</h3>
+    <p>Si \( c > 1 \), entonces:</p>
+ 
+     
+    <span id="formula6">
+        \(       =    \)
+    </span> 
+    <br>
+    <input type="text" name="respuesta_20" size="25" id="respuesta_20" oninput="actualizarFormula6()"
+    value="<?php echo $respuesta_20?>">  
+      
+      \( \quad \text{pero} \quad n! \neq O(c^n) \)
+ 
+ 
+    <br><br>
+    <button type="submit">Emviar</button>
+    <?php echo $verificar_13 ?>
+    <?php echo $verificar_14 ?>
+    <?php echo $verificar_15 ?>
+    <?php echo $verificar_16 ?>
+    <?php echo $verificar_17 ?>
+    <?php echo $verificar_18 ?>
+    <?php echo $verificar_19 ?>
+    <?php echo $verificar_20 ?>
     <hr>
-    <h2>DONALD E. KNUTH (NACIDO EN 1938)</h2>
 
-<p>Knuth creció en Milwaukee, donde su padre enseñaba contabilidad en una escuela secundaria luterana y era dueño de una pequeña imprenta. Fue un excelente estudiante, ganando premios por logros académicos. Aplicó su inteligencia de formas poco convencionales, ganando un concurso cuando estaba en octavo grado al encontrar más de 4500 palabras que podían formarse con las letras de “Ziegler’s Giant Bar”. Esto le valió un televisor para su escuela y una barra de dulce para cada uno de sus compañeros.</p>
+      <h3>Ejemplo 8: Orden de Crecimiento</h3>
+  <p>Ordena las funciones para que cada una sea Big-O de la siguiente:</p>
+  <ul>
+    <li>\( f_1(n) = 8\sqrt{n} = 8n^{1/2} \)</li>
+    <li>\( f_2(n) = (\log n)^2 \)</li>
+    <li>\( f_3(n) = 2n \log n \)</li>
+    <li>\( f_4(n) = n! \)</li>
+     <li>\( f_5(n) = (1.1)^n \)</li>
+    <li>\( f_6(n) = n^2 \)</li>
+   
+  </ul>
+  <p>Por lo tanto, el orden de menor a mayor crecimiento es ( <strong>introdusca el numero del subindice</strong> ) :</p>
+     <input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>" size="8">  
+    <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="8">  
+    <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="8">  
+    <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="8">  
+    <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="8">  
+    <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="8"> 
+    <br><br>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_21 ?>
+    <?php echo $verificar_22 ?>    
+    <?php echo $verificar_23 ?>
+    <?php echo $verificar_24 ?>
+    <?php echo $verificar_25 ?>
+    <?php echo $verificar_26 ?>
 
-<p>Knuth tuvo dificultades para elegir entre física y música como carrera principal en el Case Institute of Technology. Luego cambió de física a matemáticas y en 1960 recibió su licenciatura en ciencias, recibiendo al mismo tiempo una maestría en ciencias gracias a un reconocimiento especial de la facultad, que consideró su trabajo sobresaliente. En Case, fue gerente del equipo de baloncesto y aplicó su talento construyendo una fórmula para calcular el valor de cada jugador. Este enfoque novedoso fue cubierto por <em>Newsweek</em> y por Walter Cronkite en la cadena de televisión CBS.</p>
-
-<p>Knuth comenzó sus estudios de posgrado en el Instituto de Tecnología de California en 1960 y recibió su doctorado allí en 1963. Durante ese tiempo trabajó como consultor, escribiendo compiladores para diferentes computadoras. Se unió al personal del Instituto de Tecnología de California en 1963, donde permaneció hasta 1968, cuando aceptó un puesto como profesor titular en la Universidad de Stanford. Se retiró como profesor emérito en 1992 para concentrarse en la escritura.</p>
-
-<p>Está especialmente interesado en actualizar y completar nuevos volúmenes de su serie <em>The Art of Computer Programming</em>, una obra que ha tenido una profunda influencia en el desarrollo de la informática, y que comenzó a escribir cuando era estudiante de posgrado en 1962, enfocándose en compiladores. En el lenguaje común, “Knuth”, refiriéndose a <em>The Art of Computer Programming</em>, se ha convertido en la referencia que responde todas las preguntas sobre estructuras de datos y algoritmos.</p>
-
-<p>Knuth es considerado el fundador del estudio moderno de la complejidad computacional. Ha hecho contribuciones fundamentales en el tema de los compiladores. Su insatisfacción con la tipografía matemática lo llevó a inventar los sistemas TeX y Metafont, ahora ampliamente utilizados. TeX se ha convertido en un lenguaje estándar para la tipografía informática. Entre los muchos premios que ha recibido Knuth están el Premio Turing en 1974 y la Medalla Nacional de Tecnología en 1979, otorgada por el presidente Carter.</p>
-
-<p>Knuth ha escrito para una amplia gama de revistas profesionales en informática y matemáticas. Sin embargo, su primera publicación, en 1957, cuando era un estudiante universitario de primer año, fue una parodia del sistema métrico llamada <em>The Potrzebie System of Weights and Measures</em>, que apareció en la revista <em>MAD</em> y ha sido reimpresa varias veces. Es organista de iglesia, como lo fue su padre. También es compositor de música para órgano. Knuth cree que escribir programas de computadora puede ser una experiencia estética, muy parecida a escribir poesía o componer música.</p>
-
-<p>Knuth paga $2.56 a la primera persona que encuentre cada error en sus libros y $0.32 por sugerencias significativas. Si le envías una carta con un error (debes usar correo postal, porque ha dejado de leer correos electrónicos), eventualmente te informará si fuiste la primera persona en señalar ese error. Prepárate para una larga espera, ya que recibe una cantidad abrumadora de correspondencia. (El autor recibió una carta años después de enviar un informe de error a Knuth, en la que se indicaba que ese informe había llegado varios meses después del primer reporte del mismo error).</p>
     <hr>
-
+    En Big O se busca la funcion con mas 
+    <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="8"> 
+    crecimiento.
+    <br><br>
+    <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="8"> 
+    esta entre 
+    <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="8"> 
+    y
+    <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="8"> 
+    en terminos de crecimiento.
+    <br><br>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_27 ?>
+    <?php echo $verificar_28 ?>
+    <?php echo $verificar_29 ?>
+    <?php echo $verificar_30 ?>
+    <hr>
     </form>
 </div>
 
@@ -1519,104 +1691,8 @@ Eso significa que existe una constante <strong>C</strong> y un número <strong>k
 
 
 <div class="seccion derecha">
-    <form action="./cuarto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <p><strong>Observación:</strong> En el <em>Ejemplo 2</em> no elegimos la potencia más pequeña posible de <code>x</code> como función de referencia en la estimación con notación <strong>big-O</strong>. Observa que <code>7x²</code> también es <code>O(x²)</code>, y <code>x²</code> crece mucho más lento que <code>x³</code>. De hecho, <code>x²</code> sería la potencia más pequeña posible de <code>x</code> adecuada como función de referencia en la estimación big-O.</p>
-
-<p>El <strong>Ejemplo 3</strong> ilustra cómo demostrar que una relación de tipo <strong>big-O</strong> <em>no</em> se cumple.</p>
-    <hr>
-    <p><strong>Ejemplo 3</strong> Muestra que <code>n²</code> no es <code>O(n)</code>.</p>
-<p><strong>Solución:</strong> Para mostrar que <code>n²</code> no es <code>O(n)</code>, debemos demostrar que no existe ningún par de testigos <code>C</code> y <code>k</code> tales que <code>n² ≤ Cn</code> siempre que <code>n > k</code>. Utilizaremos una demostración por contradicción para mostrar esto.</p>
-<p>Supongamos que existen las constantes <code>C</code> y <code>k</code> para las cuales <code>n² ≤ Cn</code> siempre que <code>n > k</code>. Observa que cuando <code>n > 0</code>, podemos dividir ambos lados de la desigualdad <code>n² ≤ Cn</code> por <code>n</code> para obtener la desigualdad equivalente <code>n ≤ C</code>. Sin embargo, no importa cuáles sean <code>C</code> y <code>k</code>, la desigualdad <code>n ≤ C</code> no puede mantenerse para todos los <code>n</code> con <code>n > k</code>. En particular, una vez que fijamos un valor de <code>k</code>, vemos que cuando <code>n</code> es mayor que el máximo entre <code>k</code> y <code>C</code>, no es cierto que <code>n ≤ C</code> aunque <code>n > k</code>. Esta contradicción demuestra que <code>n²</code> no es <code>O(n)</code>.</p>
-    
-
-
-
-    <hr>
-<p><strong>Ejemplo 4</strong> El <strong>Ejemplo 2</strong> muestra que <code>7x²</code> es <code>O(x³)</code>. ¿Es también cierto que <code>x³</code> es <code>O(7x²)</code>?</p>
-<p><strong>Solución:</strong> Para determinar si <code>x³</code> es <code>O(7x²)</code>, necesitamos determinar si existen testigos <code>C</code> y <code>k</code> tales que <code>x³ ≤ C(7x²)</code> siempre que <code>x > k</code>. Mostraremos que no existen tales testigos utilizando una demostración por contradicción.</p>
-<p>Si existen testigos <code>C</code> y <code>k</code>, la desigualdad <code>x³ ≤ C(7x²)</code> se cumple para todo <code>x > k</code>. Observa que la desigualdad <code>x³ ≤ C(7x²)</code> es equivalente a la desigualdad <code>x ≤ 7C</code>, que se obtiene dividiendo ambos lados por la cantidad positiva <code>x²</code>. Sin embargo, no importa cuál sea <code>C</code>, no es cierto que <code>x ≤ 7C</code> para todo <code>x > k</code>, sin importar qué valor tenga <code>k</code>, porque <code>x</code> puede hacerse arbitrariamente grande. Por lo tanto, no existen testigos <code>C</code> y <code>k</code> para esta relación de tipo <code>big-O</code> propuesta. Por lo tanto, <code>x³</code> no es <code>O(7x²)</code>.</p>
-
-    <hr>
-    <p>La clave aquí está en cómo crece <i>n</i> y por qué no podemos encontrar un valor constante de <i>C</i> que se mantenga para todos los <i>n > k</i>. Vamos a desglosarlo mejor.</p>
-
-<h3>Crecimiento de <i>n</i> vs. constante <i>C</i></h3>
-<p>Cuando hablamos de la relación <i>n² ≤ C ⋅ n</i>, estamos tratando de ver si existe una constante <i>C</i> tal que esta desigualdad se cumpla para todos los valores <i>n > k</i>.</p>
-
-<p>Cuando dividimos ambos lados de la desigualdad por <i>n</i> (suponiendo <i>n > 0</i>), obtenemos:</p>
-
-<p><i>n ≤ C</i></p>
-<p>Esto implica que <i>n</i> debe ser siempre menor o igual a <i>C</i> para que la desigualdad se cumpla. Pero, aquí está la cuestión importante:</p>
-
-<h3>Crecimiento de <i>n</i></h3>
-<p>El valor de <i>n</i> siempre crece más rápido que cualquier constante <i>C</i>. Es decir, no importa cuán grande sea <i>C</i>, eventualmente <i>n</i> va a ser más grande que <i>C</i> porque <i>n</i> sigue aumentando indefinidamente.</p>
-
-<p>Por ejemplo:</p>
-<ul>
-    <li>Si tienes <i>C = 100</i>, puedes encontrar un <i>n</i> grande suficiente (digamos <i>n = 200</i>) que ya sea mayor que <i>C</i>.</li>
-    <li>Si tomas <i>C = 1000</i>, eventualmente <i>n</i> seguirá creciendo y llegará a un punto donde <i>n > 1000</i>, y así sucesivamente.</li>
-</ul>
-
-<h3>Por qué la desigualdad no se puede mantener</h3>
-<p>La desigualdad <i>n ≤ C</i> significa que, para todo <i>n > k</i>, el valor de <i>n</i> debe ser siempre menor o igual a <i>C</i>. Pero esto no es posible porque <i>n</i> sigue creciendo.</p>
-
-<p>Esto es lo que genera la contradicción: no importa qué valor tomes para <i>C</i>, no vas a poder mantener <i>n ≤ C</i> cuando <i>n</i> crezca lo suficiente. Por lo tanto, la relación no se cumple y <i>n²</i> no es <i>O(n)</i>.</p>
-
-<h3>Resumen</h3>
-<p>La idea clave aquí es que <i>n</i> siempre crecerá más rápido que cualquier constante <i>C</i>. Esto hace imposible que una relación como <i>n² ≤ C ⋅ n</i> se cumpla para todos los <i>n > k</i>, lo cual lleva a la conclusión de que <i>n²</i> no es <i>O(n)</i>.</p>
-
-    <hr>
-    <h1>3.2.3 Estimaciones Big-O para algunas funciones importantes</h1>
-
-  <p>
-    Los polinomios pueden utilizarse frecuentemente para estimar el crecimiento de funciones.
-    En lugar de analizar el crecimiento de un polinomio cada vez que aparece, queremos un resultado
-    que siempre pueda usarse para estimar el crecimiento de un polinomio. El <strong>Teorema 1</strong> cumple con esto.
-    Muestra que el término principal de un polinomio domina su crecimiento, al afirmar que un polinomio de grado <em>n</em> o menor es <code>O(xⁿ)</code>.
-  </p>
-
-  <h2>Teorema 1</h2>
-  <p>
-    Sea <code>f(x) = aₙxⁿ + aₙ₋₁xⁿ⁻¹ + ⋯ + a₁x + a₀</code>, donde <code>a₀, a₁, ..., aₙ₋₁, aₙ</code> son números reales.<br>
-    Entonces <code>f(x)</code> es <code>O(xⁿ)</code>.
-  </p>
-
-  <h3>Demostración:</h3>
-  <p>
-    Usando la desigualdad triangular (ver Ejercicio 9 en la Sección 1.8), si <code>x &gt; 1</code> tenemos que:
-  </p>
-  <pre>
-|f(x)| = |aₙxⁿ + aₙ₋₁xⁿ⁻¹ + ⋯ + a₁x + a₀|
-       ≤ |aₙ|xⁿ + |aₙ₋₁|xⁿ⁻¹ + ⋯ + |a₁|x + |a₀|
-       = xⁿ (|aₙ| + |aₙ₋₁|/x + ⋯ + |a₁|/xⁿ⁻¹ + |a₀|/xⁿ)
-       ≤ xⁿ (|aₙ| + |aₙ₋₁| + ⋯ + |a₁| + |a₀|)
-
-⇒ |f(x)| ≤ Cxⁿ, donde C = |aₙ| + |aₙ₋₁| + ⋯ + |a₀|
-  </pre>
-  <p>
-    Siempre que <code>x &gt; 1</code>. Por lo tanto, los testigos <code>C</code> y <code>k = 1</code> muestran que <code>f(x)</code> es <code>O(xⁿ)</code>.
-  </p>
-
-  <div class="example">
-    <h3>Ejemplo 5</h3>
-    <p><strong>¿Cómo puede usarse la notación Big-O para estimar la suma de los primeros <em>n</em> enteros positivos?</strong></p>
-    <p>
-      Dado que cada uno de los enteros en la suma de los primeros <em>n</em> enteros positivos no excede a <code>n</code>, se tiene que:
-    </p>
-    <pre>1 + 2 + ⋯ + n ≤ n + n + ⋯ + n = n²</pre>
-    <br><br>
-    \(n^2\) sale de que la suma de n terminos es n veces n (n*n).
-    <p>
-      A partir de esta desigualdad se deduce que <code>1 + 2 + 3 + ⋯ + n</code> es <code>O(n²)</code>, tomando <code>C = 1</code> y <code>k = 1</code> como testigos.
-      (En este ejemplo, los dominios de las funciones en la relación Big-O son el conjunto de los enteros positivos).
-    </p>
-  </div>
-
-  <p>
-    En el <strong>Ejemplo 6</strong> se desarrollarán estimaciones Big-O para la función factorial y su logaritmo.
-    Estas estimaciones serán importantes en el análisis del número de pasos utilizados en procedimientos de ordenamiento.
-  </p>
-    <hr>
-    
+    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+     
     </form>
 </div>
 
@@ -1625,7 +1701,7 @@ Eso significa que existe una constante <strong>C</strong> y un número <strong>k
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="tercero.php"
+        href="segundo.php"
         role="button"
         width="50px"
         height="50px"

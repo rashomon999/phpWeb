@@ -89,6 +89,9 @@ $verificar_61 = ''; $verificar_62 = ''; $verificar_63 = ''; $verificar_64 = ''; 
      
 
 if ($_POST) {
+
+    
+
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
    if ($respuesta_1 === 'crece') {  
        $verificar_1 = "correcto";
@@ -393,6 +396,19 @@ if ($_POST) {
        $verificar_30 = "incorrecto";
    }
 
+
+   // Verificar la respuesta de la octava pregunta
+   $respuesta_30_1 = isset($_POST['respuesta_30_1']) ? $_POST['respuesta_30_1'] : '';
+   $respuesta_30_1_dos =  str_replace(' ','',$respuesta_30_1);
+   
+   if ($respuesta_30_1_dos === 'x>k') {  
+       $verificar_30_1 = "correcto";
+   } elseif ($respuesta_30_1_dos === '') {
+       $verificar_30_1 = '';
+   } else {
+       $verificar_30_1 = "incorrecto";
+   }
+
    // Verificar la respuesta de la novena pregunta
    $respuesta_31 = isset($_POST['respuesta_31']) ? $_POST['respuesta_31'] : '';
    if ($respuesta_31 === 'f(x)') {  
@@ -458,7 +474,7 @@ if ($respuesta_36_dos === "|f(x)|\leqc|g(x)|\leqc'|g(x)|") {
  $respuesta_37 = isset($_POST['respuesta_37']) ? $_POST['respuesta_37'] : '';
  $respuesta_37_dos = str_replace(" ","",strtolower($respuesta_37));
 
-if ($respuesta_37_dos === "siemprequex>k'>k") { 
+if ($respuesta_37_dos === "x>k") { 
     $verificar_37 = "correcto";
 } elseif ($respuesta_37_dos === '') {
     $verificar_37 = '';
@@ -678,7 +694,7 @@ if ($respuesta_59 === 'reales') {
 }
 
  $respuesta_60 = isset($_POST['respuesta_60']) ? $_POST['respuesta_60'] : '';
-if ($respuesta_60 === '108') { 
+if ($respuesta_60 === 'n') { 
     $verificar_60 = "correcto";
 } elseif ($respuesta_60 === '') {
     $verificar_60 = '';
@@ -686,17 +702,20 @@ if ($respuesta_60 === '108') {
     $verificar_60 = "incorrecto";
 }
 
- $respuesta_61 = isset($_POST['respuesta_61']) ? $_POST['respuesta_61'] : '';
-if ($respuesta_61 === '126') { 
+$respuesta_61 = isset($_POST['respuesta_61']) ? $_POST['respuesta_61'] : '';
+$respuesta_61_dos = str_replace(" ","",strtolower($respuesta_61));
+
+
+if ($respuesta_61_dos === '1+2+\cdots+n\leqn+n+\cdots+n=n^2') { 
     $verificar_61 = "correcto";
-} elseif ($respuesta_61 === '') {
+} elseif ($respuesta_61_dos === '') {
     $verificar_61 = '';
 } else {
     $verificar_61 = "incorrecto";
 }
 
  $respuesta_62 = isset($_POST['respuesta_62']) ? $_POST['respuesta_62'] : '';
-if ($respuesta_62 === '144') { 
+if ($respuesta_62 === 'n^2') { 
     $verificar_62 = "correcto";
 } elseif ($respuesta_62 === '') {
     $verificar_62 = '';
@@ -705,7 +724,7 @@ if ($respuesta_62 === '144') {
 }
 
  $respuesta_63 = isset($_POST['respuesta_63']) ? $_POST['respuesta_63'] : '';
-if ($respuesta_63 === '162') { 
+if ($respuesta_63 === 'n') { 
     $verificar_63 = "correcto";
 } elseif ($respuesta_63 === '') {
     $verificar_63 = '';
@@ -714,7 +733,7 @@ if ($respuesta_63 === '162') {
 }
 
  $respuesta_64 = isset($_POST['respuesta_64']) ? $_POST['respuesta_64'] : '';
-if ($respuesta_64 === '180') { 
+if ($respuesta_64 === 'n') { 
     $verificar_64 = "correcto";
 } elseif ($respuesta_64 === '') {
     $verificar_64 = '';
@@ -723,7 +742,7 @@ if ($respuesta_64 === '180') {
 }
 
  $respuesta_65 = isset($_POST['respuesta_65']) ? $_POST['respuesta_65'] : '';
-if ($respuesta_65 === '198') { 
+if ($respuesta_65 === 'n') { 
     $verificar_65 = "correcto";
 } elseif ($respuesta_65 === '') {
     $verificar_65 = '';
@@ -732,7 +751,7 @@ if ($respuesta_65 === '198') {
 }
 
  $respuesta_66 = isset($_POST['respuesta_66']) ? $_POST['respuesta_66'] : '';
-if ($respuesta_66 === '216') { 
+if ($respuesta_66 === 'n*n') { 
     $verificar_66 = "correcto";
 } elseif ($respuesta_66 === '') {
     $verificar_66 = '';
@@ -741,7 +760,7 @@ if ($respuesta_66 === '216') {
 }
 
  $respuesta_67 = isset($_POST['respuesta_67']) ? $_POST['respuesta_67'] : '';
-if ($respuesta_67 === '38') { 
+if ($respuesta_67 === 'O(n^2)') { 
     $verificar_67 = "correcto";
 } elseif ($respuesta_67 === '') {
     $verificar_67 = '';
@@ -750,7 +769,7 @@ if ($respuesta_67 === '38') {
 }
 
  $respuesta_68 = isset($_POST['respuesta_68']) ? $_POST['respuesta_68'] : '';
-if ($respuesta_68 === '57') { 
+if ($respuesta_68 === '1') { 
     $verificar_68 = "correcto";
 } elseif ($respuesta_68 === '') {
     $verificar_68 = '';
@@ -759,7 +778,7 @@ if ($respuesta_68 === '57') {
 }
 
  $respuesta_69 = isset($_POST['respuesta_69']) ? $_POST['respuesta_69'] : '';
-if ($respuesta_69 === '76') { 
+if ($respuesta_69 === '1') { 
     $verificar_69 = "correcto";
 } elseif ($respuesta_69 === '') {
     $verificar_69 = '';
@@ -768,7 +787,7 @@ if ($respuesta_69 === '76') {
 }
 
  $respuesta_70 = isset($_POST['respuesta_70']) ? $_POST['respuesta_70'] : '';
-if ($respuesta_70 === '95') { 
+if ($respuesta_70 === 'desigualdad') { 
     $verificar_70 = "correcto";
 } elseif ($respuesta_70 === '') {
     $verificar_70 = '';
@@ -777,16 +796,18 @@ if ($respuesta_70 === '95') {
 }
 
  $respuesta_71 = isset($_POST['respuesta_71']) ? $_POST['respuesta_71'] : '';
-if ($respuesta_71 === '114') { 
+ $respuesta_71_dos = str_replace(" ","",strtolower($respuesta_71));
+
+if ($respuesta_71_dos === '1\cdot2\cdotsn\leqn\cdotn\cdotsn') { 
     $verificar_71 = "correcto";
-} elseif ($respuesta_71 === '') {
+} elseif ($respuesta_71_dos === '') {
     $verificar_71 = '';
 } else {
     $verificar_71 = "incorrecto";
 }
 
  $respuesta_72 = isset($_POST['respuesta_72']) ? $_POST['respuesta_72'] : '';
-if ($respuesta_72 === '133') { 
+if ($respuesta_72 === 'O(n^n)') { 
     $verificar_72 = "correcto";
 } elseif ($respuesta_72 === '') {
     $verificar_72 = '';
@@ -795,7 +816,7 @@ if ($respuesta_72 === '133') {
 }
 
  $respuesta_73 = isset($_POST['respuesta_73']) ? $_POST['respuesta_73'] : '';
-if ($respuesta_73 === '152') { 
+if ($respuesta_73 === '1') { 
     $verificar_73 = "correcto";
 } elseif ($respuesta_73 === '') {
     $verificar_73 = '';
@@ -804,7 +825,7 @@ if ($respuesta_73 === '152') {
 }
 
  $respuesta_74 = isset($_POST['respuesta_74']) ? $_POST['respuesta_74'] : '';
-if ($respuesta_74 === '171') { 
+if ($respuesta_74 === '1') { 
     $verificar_74 = "correcto";
 } elseif ($respuesta_74 === '') {
     $verificar_74 = '';
@@ -813,7 +834,7 @@ if ($respuesta_74 === '171') {
 }
 
  $respuesta_75 = isset($_POST['respuesta_75']) ? $_POST['respuesta_75'] : '';
-if ($respuesta_75 === '190') { 
+if ($respuesta_75 === 'n^n') { 
     $verificar_75 = "correcto";
 } elseif ($respuesta_75 === '') {
     $verificar_75 = '';
@@ -821,17 +842,19 @@ if ($respuesta_75 === '190') {
     $verificar_75 = "incorrecto";
 }
 
- $respuesta_76 = isset($_POST['respuesta_76']) ? $_POST['respuesta_76'] : '';
-if ($respuesta_76 === '209') { 
+$respuesta_76 = isset($_POST['respuesta_76']) ? $_POST['respuesta_76'] : '';
+$respuesta_76_dos = str_replace(" ","",strtolower($respuesta_76));
+
+if ($respuesta_76_dos === '\log(n!)\leq\log(n^n)') { 
     $verificar_76 = "correcto";
-} elseif ($respuesta_76 === '') {
+} elseif ($respuesta_76_dos === '') {
     $verificar_76 = '';
 } else {
     $verificar_76 = "incorrecto";
 }
 
  $respuesta_77 = isset($_POST['respuesta_77']) ? $_POST['respuesta_77'] : '';
-if ($respuesta_77 === '228') { 
+if ($respuesta_77 === 'nlogn') { 
     $verificar_77 = "correcto";
 } elseif ($respuesta_77 === '') {
     $verificar_77 = '';
@@ -840,7 +863,7 @@ if ($respuesta_77 === '228') {
 }
 
  $respuesta_78 = isset($_POST['respuesta_78']) ? $_POST['respuesta_78'] : '';
-if ($respuesta_78 === '40') { 
+if ($respuesta_78 === 'O(nlogn)') { 
     $verificar_78 = "correcto";
 } elseif ($respuesta_78 === '') {
     $verificar_78 = '';
@@ -849,7 +872,7 @@ if ($respuesta_78 === '40') {
 }
 
  $respuesta_79 = isset($_POST['respuesta_79']) ? $_POST['respuesta_79'] : '';
-if ($respuesta_79 === '60') { 
+if ($respuesta_79 === 'O(2^n)') { 
     $verificar_79 = "correcto";
 } elseif ($respuesta_79 === '') {
     $verificar_79 = '';
@@ -858,7 +881,7 @@ if ($respuesta_79 === '60') {
 }
 
  $respuesta_80 = isset($_POST['respuesta_80']) ? $_POST['respuesta_80'] : '';
-if ($respuesta_80 === '80') { 
+if ($respuesta_80 === '1') { 
     $verificar_80 = "correcto";
 } elseif ($respuesta_80 === '') {
     $verificar_80 = '';
@@ -867,7 +890,7 @@ if ($respuesta_80 === '80') {
 }
 
  $respuesta_81 = isset($_POST['respuesta_81']) ? $_POST['respuesta_81'] : '';
-if ($respuesta_81 === '100') { 
+if ($respuesta_81 === '1') { 
     $verificar_81 = "correcto";
 } elseif ($respuesta_81 === '') {
     $verificar_81 = '';
@@ -876,7 +899,7 @@ if ($respuesta_81 === '100') {
 }
 
  $respuesta_82 = isset($_POST['respuesta_82']) ? $_POST['respuesta_82'] : '';
-if ($respuesta_82 === '120') { 
+if ($respuesta_82 === '1') { 
     $verificar_82 = "correcto";
 } elseif ($respuesta_82 === '') {
     $verificar_82 = '';
@@ -885,7 +908,7 @@ if ($respuesta_82 === '120') {
 }
 
  $respuesta_83 = isset($_POST['respuesta_83']) ? $_POST['respuesta_83'] : '';
-if ($respuesta_83 === '140') { 
+if ($respuesta_83 === '1') { 
     $verificar_83 = "correcto";
 } elseif ($respuesta_83 === '') {
     $verificar_83 = '';
@@ -894,7 +917,7 @@ if ($respuesta_83 === '140') {
 }
 
  $respuesta_84 = isset($_POST['respuesta_84']) ? $_POST['respuesta_84'] : '';
-if ($respuesta_84 === '160') { 
+if ($respuesta_84 === 'logaritmos') { 
     $verificar_84 = "correcto";
 } elseif ($respuesta_84 === '') {
     $verificar_84 = '';
@@ -903,7 +926,7 @@ if ($respuesta_84 === '160') {
 }
 
  $respuesta_85 = isset($_POST['respuesta_85']) ? $_POST['respuesta_85'] : '';
-if ($respuesta_85 === '180') { 
+if ($respuesta_85 === '2') { 
     $verificar_85 = "correcto";
 } elseif ($respuesta_85 === '') {
     $verificar_85 = '';
@@ -911,17 +934,19 @@ if ($respuesta_85 === '180') {
     $verificar_85 = "incorrecto";
 }
 
- $respuesta_86 = isset($_POST['respuesta_86']) ? $_POST['respuesta_86'] : '';
-if ($respuesta_86 === '200') { 
+$respuesta_86 = isset($_POST['respuesta_86']) ? $_POST['respuesta_86'] : '';
+$respuesta_86_dos = str_replace(" ","",strtolower($respuesta_86));
+
+if ($respuesta_86_dos === 'logn<n') { 
     $verificar_86 = "correcto";
-} elseif ($respuesta_86 === '') {
+} elseif ($respuesta_86_dos === '') {
     $verificar_86 = '';
 } else {
     $verificar_86 = "incorrecto";
 }
 
  $respuesta_87 = isset($_POST['respuesta_87']) ? $_POST['respuesta_87'] : '';
-if ($respuesta_87 === '220') { 
+if ($respuesta_87 === 'O(n)') { 
     $verificar_87 = "correcto";
 } elseif ($respuesta_87 === '') {
     $verificar_87 = '';
@@ -930,27 +955,32 @@ if ($respuesta_87 === '220') {
 }
 
  $respuesta_88 = isset($_POST['respuesta_88']) ? $_POST['respuesta_88'] : '';
-if ($respuesta_88 === '240') { 
+ $respuesta_88_dos = str_replace(" ","",strtolower($respuesta_88));
+
+if ($respuesta_88_dos === '\log_bn=O(n)') { 
     $verificar_88 = "correcto";
-} elseif ($respuesta_88 === '') {
+} elseif ($respuesta_88_dos === '') {
     $verificar_88 = '';
 } else {
     $verificar_88 = "incorrecto";
 }
 
  $respuesta_89 = isset($_POST['respuesta_89']) ? $_POST['respuesta_89'] : '';
-if ($respuesta_89 === '42') { 
+ $respuesta_89_dos = str_replace(" ","",strtolower($respuesta_89));
+if ($respuesta_89_dos === '\frac{\logn}{\logb}<\frac{n}{\logb}') { 
     $verificar_89 = "correcto";
-} elseif ($respuesta_89 === '') {
+} elseif ($respuesta_89_dos === '') {
     $verificar_89 = '';
 } else {
     $verificar_89 = "incorrecto";
 }
 
  $respuesta_90 = isset($_POST['respuesta_90']) ? $_POST['respuesta_90'] : '';
-if ($respuesta_90 === '63') { 
+  $respuesta_90_dos = str_replace(" ","",strtolower($respuesta_90));
+
+if ($respuesta_90_dos === '\frac{1}{\logb}' || $respuesta_90_dos === '\frac{1}{logb}') { 
     $verificar_90 = "correcto";
-} elseif ($respuesta_90 === '') {
+} elseif ($respuesta_90_dos === '') {
     $verificar_90 = '';
 } else {
     $verificar_90 = "incorrecto";
@@ -1155,6 +1185,12 @@ if ($respuesta_110 === '264') {
         max-width: 100%;
         height: auto;
     }
+    .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 395vh;
+    }
 </style>
  
 <script>
@@ -1193,6 +1229,13 @@ function handleSubmit(event) {
         console.error('Error al enviar el formulario:', error);
     });
 }
+
+ 
+function mostrarImagen() {
+  document.getElementById("contenedor").innerHTML = 
+    "<img src='../../../../img/respuesta.png' alt='Imagen'>";
+}
+ 
 
 function actualizarFormula() {
     // Obtener los valores de los inputs
@@ -1271,7 +1314,7 @@ function actualizarFormula4() {
 
 function actualizarFormula5() {
     // Obtener los valores de los inputs
-    var f = document.getElementById('respuesta_30').value || "";
+    var f = document.getElementById('respuesta_61').value || "";
   
 
     // Construir la fórmula dinámica
@@ -1289,7 +1332,7 @@ function actualizarFormula5() {
 
 function actualizarFormula6() {
     // Obtener los valores de los inputs
-    var f = document.getElementById('respuesta_6').value || "";
+    var f = document.getElementById('respuesta_71').value || "";
   
 
     // Construir la fórmula dinámica
@@ -1306,7 +1349,7 @@ function actualizarFormula6() {
 
 function actualizarFormula7() {
     // Obtener los valores de los inputs
-    var f = document.getElementById('respuesta_7').value || "";
+    var f = document.getElementById('respuesta_76').value || "";
   
 
     // Construir la fórmula dinámica
@@ -1322,13 +1365,13 @@ function actualizarFormula7() {
 
 function actualizarFormula8() {
     // Obtener los valores de los inputs
-    var f = document.getElementById('respuesta_8').value || "";
+    var f = document.getElementById('respuesta_88').value || "";
   
 
     // Construir la fórmula dinámica
     var formula = ` \\ ${f}  \\, `;
     // Actualizar el contenido de la fórmula en el DOM
-    document.getElementById('formula8').innerHTML = `$$ ${formula} $$`;
+    document.getElementById('formula8').innerHTML = `\\( ${formula} \\)`;
 
     // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
@@ -1339,13 +1382,13 @@ function actualizarFormula8() {
 
 function actualizarFormula9() {
     // Obtener los valores de los inputs
-    var f = document.getElementById('respuesta_9').value || "";
+    var f = document.getElementById('respuesta_89').value || "";
   
 
     // Construir la fórmula dinámica
     var formula = ` \\ ${f}  \\, `;
     // Actualizar el contenido de la fórmula en el DOM
-    document.getElementById('formula9').innerHTML = `$$ ${formula} $$`;
+    document.getElementById('formula9').innerHTML = `\\( ${formula} \\)`;
 
     // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
@@ -1357,13 +1400,13 @@ function actualizarFormula9() {
 
 function actualizarFormula10() {
     // Obtener los valores de los inputs
-    var f = document.getElementById('respuesta_10').value || "";
+    var f = document.getElementById('respuesta_90').value || "";
   
 
     // Construir la fórmula dinámica
     var formula = ` \\ ${f}  \\, `;
     // Actualizar el contenido de la fórmula en el DOM
-    document.getElementById('formula10').innerHTML = `$$ ${formula} $$`;
+    document.getElementById('formula10').innerHTML = `\\( ${formula} \\)`;
 
     // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
@@ -1452,7 +1495,8 @@ function ocultarMensaje4() {
 
 
 </script>
-    
+ 
+ 
 </head>
 <body> 
 <div class="seccion izquierda">
@@ -1584,7 +1628,9 @@ function ocultarMensaje4() {
     de la relación \( f(x) \) es \( O(g(x)) \). Para establecer que \( f(x) \) es \( O(g(x)) \) solo
     necesitamos un par de testigos para esta relación. Es decir, para mostrar que \( f(x) \) es \( O(g(x)) \), 
     solo necesitamos encontrar un par de constantes \( C \) y \( k \), los testigos, tal que \( |f(x)| \leq C|g(x)| \) 
-    siempre que \( x > k \).
+    siempre que 
+    <input type="text" name="respuesta_30_1" value="<?php echo $respuesta_30_1; ?>" size="8">
+    
     </p>
 
     <button type="submit">Enviar</button>
@@ -1600,7 +1646,9 @@ function ocultarMensaje4() {
 <?php echo $verificar_28 ?>
 <?php echo $verificar_29 ?>
 <?php echo $verificar_30 ?>
-    
+<?php echo $verificar_30_1 ?>
+
+     
     <hr>
     <p>
     Observa que cuando existe un par de testigos para la relación 
@@ -1623,7 +1671,8 @@ function ocultarMensaje4() {
     <input type="text" name="respuesta_36" size="25" id="respuesta_36" oninput="actualizarFormula2()"
     value="<?php echo $respuesta_36?>">
     <br><br>
-    <input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="25">    
+    siempre que
+    <input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="8">    
     
     <h2>LA HISTORIA DE LA NOTACIÓN BIG-O</h2>
     <p>
@@ -1818,6 +1867,238 @@ sustituimos cada término con una cota más grande:<br>
     <?php echo $verificar_57 ?>
     <?php echo $verificar_58 ?>
     <?php echo $verificar_59 ?>
+    <hr>
+    
+<h3>Ejemplo 5</h3>
+<strong>estructura: numero+numero+...+ultimo</strong>
+<p><strong>¿Cómo puede usarse la notación Big-O para estimar la suma de los primeros <em>n</em> enteros positivos?</strong></p>
+<p>
+  Dado que cada uno de los enteros en la suma de los primeros <em>n</em> enteros positivos no excede a 
+      <input type="text" name="respuesta_60" value="<?php echo $respuesta_60; ?>" size="12">  
+    , se tiene que:
+</p>
+<p>
+       <span id="formula5">
+      \(    \)
+    </span> 
+ 
+</p>
+<p>
+    <input type="text" name="respuesta_62" value="<?php echo $respuesta_62; ?>" size="8">  
+    sale de que la suma de 
+    <input type="text" name="respuesta_63" value="<?php echo $respuesta_63; ?>" size="8">  
+    términos es 
+     <input type="text" name="respuesta_64" value="<?php echo $respuesta_64; ?>" size="8"> 
+    veces 
+    <input type="text" name="respuesta_65" value="<?php echo $respuesta_65; ?>" size="8"> 
+    : 
+    <input type="text" name="respuesta_66" value="<?php echo $respuesta_66; ?>" size="8"> 
+    .
+</p>
+<p>
+  A partir de esta desigualdad se deduce que \( 1 + 2 + 3 + \cdots + n \) es 
+   <input type="text" name="respuesta_67" value="<?php echo $respuesta_67; ?>" size="8">
+  , tomando 
+  \( C = \)
+  <input type="text" name="respuesta_68" value="<?php echo $respuesta_68; ?>" size="8">
+  y \( k =  \) 
+  <input type="text" name="respuesta_69" value="<?php echo $respuesta_69; ?>" size="8">
+  como testigos.
+  (En este ejemplo, los dominios de las funciones en la relación Big-O son el conjunto de los enteros positivos).
+</p>
+ 
+    <input type="text" name="respuesta_61" size="42" id="respuesta_61" oninput="actualizarFormula5()"
+    value="<?php echo $respuesta_61?>">
+
+    <br><br>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_60 ?>
+    <?php echo $verificar_61 ?>
+    <?php echo $verificar_62 ?>
+    <?php echo $verificar_63 ?>
+    <?php echo $verificar_64 ?>
+    <?php echo $verificar_65 ?>
+    <?php echo $verificar_66 ?>
+    <?php echo $verificar_67 ?>
+    <?php echo $verificar_68 ?>
+    <?php echo $verificar_69 ?>
+    <br><br>
+
+    
+    <button onmousedown="mostrarImagen2()" onmouseup="ocultarImagen2()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada2" src="../../../../img/respuesta.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen2() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+
+        // Mostrar la imagen
+        imagenMostrada2.style.display = 'block';
+        }
+
+        function ocultarImagen2() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada2.style.display = 'none';
+        }
+    </script>
+    <hr>
+    para una estimacion Big O hay que establecer/resolver una 
+    <input type="text" name="respuesta_70" value="<?php echo $respuesta_70; ?>" size="8">
+    <br><br>
+    <strong>escribir desigualdad : num*num ... numfinal < , > num*num*...*numfinal</strong>
+    <br>
+    <strong>utilizar: \cdots, \cdot</strong>
+     <h3>Ejemplo 6: Estimaciones Big-O para la función factorial y su logaritmo</h3>
+
+     <h6>¿Qué es la función factorial?</h6>
+  <p>Se define así:</p>
+  <p>\( n! = 1 \cdot 2 \cdot 3 \cdots n \quad \text{(para todo } n \geq 1 \text{)}, \quad \text{y por definición } 0! = 1 \)</p>
+
+  <h6>¿Qué se quiere hacer?</h6>
+  <p>Queremos encontrar estimaciones Big-O (cotas superiores de crecimiento) para:</p>
+  <ul>
+    <li>\( n! \)</li>
+    <li>\( \log(n!) \)</li>
+  </ul>
+
+
+    <h6> Estimar una cota superior para \( n! \)</h6>
+
+    Estimacion Big O:
+
+    </p>
+    <span id="formula6">
+      \(    \)
+    </span> 
+    <p> = <input type="text" name="respuesta_75" value="<?php echo $respuesta_75; ?>" size="4"></p>
+
+    <input type="text" name="respuesta_71" size="42" id="respuesta_71" oninput="actualizarFormula6()"
+    value="<?php echo $respuesta_71?>">
+
+     <p>Es una cota general pero suficiente para Big-O. Se toman testigos \( C = \)
+    <input type="text" name="respuesta_73" value="<?php echo $respuesta_73; ?>" size="4">    
+    y \( k =  \)
+    <input type="text" name="respuesta_74" value="<?php echo $respuesta_74; ?>" size="4">
+    .
+    
+    <p>Entonces: \( n! = \)
+    <input type="text" name="respuesta_72" value="<?php echo $respuesta_72; ?>" size="8">
+    </p>
+
+    <h6>Estimar una cota superior para \( \log(n!) \)?</h6>
+    <p>Estimacion Big O:</p>
+    <span id="formula7">
+      \(    \)
+    </span> 
+    
+    <br><input type="text" name="respuesta_76" size="42" id="respuesta_76" oninput="actualizarFormula7()"
+    value="<?php echo $respuesta_76?>">
+
+
+    <p>    
+    =
+    <input type="text" name="respuesta_77" value="<?php echo $respuesta_77; ?>" size="8">
+    </p>
+    <p>Entonces: \( \log(n!) =   \) 
+    <input type="text" name="respuesta_78" value="<?php echo $respuesta_78; ?>" size="8">
+    </p>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_70 ?>
+    <?php echo $verificar_71 ?>
+    <?php echo $verificar_72 ?>
+    <?php echo $verificar_73 ?>
+    <?php echo $verificar_74 ?>
+    <?php echo $verificar_75 ?>
+    <?php echo $verificar_76 ?>
+    <?php echo $verificar_77 ?>
+    <?php echo $verificar_78 ?>
+    <hr>
+    <h3>Ejemplo 7</h3>
+    <p>
+    En la Sección 5.1 mostraremos que \( n &lt; 2^n \) siempre que \( n \) sea un número entero positivo.
+    Muestra que esta desigualdad implica que \( n = O(2^n) \), y usa esta desigualdad para demostrar que
+    \( \log n = O(n) \).
+    </p>
+
+    <h4> Solución:</h4>
+    <p>
+    Usando la desigualdad \( n &lt; 2^n \), podemos concluir rápidamente que \( n = \)
+    <input type="text" name="respuesta_79" value="<?php echo $respuesta_79; ?>" size="8">
+    tomando
+    \( C =  \)
+    <input type="text" name="respuesta_82" value="<?php echo $respuesta_82; ?>" size="8">
+    y \( k =  \) 
+    <input type="text" name="respuesta_83" value="<?php echo $respuesta_83; ?>" size="8">
+    como testigos.
+    </p>
+
+    <p>
+    Dado que la función logaritmo es creciente, al aplicar 
+    <input type="text" name="respuesta_84" value="<?php echo $respuesta_84; ?>" size="8">
+    (en base 
+    <input type="text" name="respuesta_85" value="<?php echo $respuesta_85; ?>" size="8">
+    ) a ambos lados de la desigualdad
+    obtenemos:
+    </p>
+ 
+    <br><input type="text" name="respuesta_86" size="8"    value="<?php echo $respuesta_86?>">
+
+    <p>
+    Por lo tanto:<br>
+    \( \log n =  \) <input type="text" name="respuesta_87" size="8"    value="<?php echo $respuesta_87?>">
+    </p>
+ 
+    <p>(Nuevamente tomamos \( C =  \) 
+    <input type="text" name="respuesta_80" value="<?php echo $respuesta_80; ?>" size="8">    
+    y \( k =  \)
+    <input type="text" name="respuesta_81" value="<?php echo $respuesta_81; ?>" size="8">
+    como testigos.)</p>
+    <p>
+    Si tenemos logaritmos en base \( b \), donde \( b \ne 2 \), aún se cumple que 
+    <span id="formula8">
+      \(    \)
+    </span> ,
+    
+    <br><input type="text" name="respuesta_88" size="30" id="respuesta_88" oninput="actualizarFormula8()"
+    value="<?php echo $respuesta_88?>">
+
+    porque ( <strong>utilizar \log:</strong> ):
+    </p>
+    <p>\( \log_b n =   \)
+    <span id="formula9">
+      \(    \)
+    </span> ,
+    
+    <br><input type="text" name="respuesta_89" size="42" id="respuesta_89" oninput="actualizarFormula9()"
+    value="<?php echo $respuesta_89?>">
+    </p>
+
+    <p>
+    Siempre que \( n \) sea un entero positivo. En este caso, tomamos \( C =  \)
+     <span id="formula10">
+      \(    \)
+    </span> , <input type="text" name="respuesta_90" size="15" id="respuesta_90" oninput="actualizarFormula10()"
+    value="<?php echo $respuesta_90?>">
+    y
+    \( k = 1 \) como testigos.
+    </p>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_79 ?>
+<?php echo $verificar_80 ?>
+<?php echo $verificar_81 ?>
+<?php echo $verificar_82 ?>
+<?php echo $verificar_83 ?>
+<?php echo $verificar_84 ?>
+<?php echo $verificar_85 ?>
+<?php echo $verificar_86 ?>
+<?php echo $verificar_87 ?>
+<?php echo $verificar_88 ?>
+<?php echo $verificar_89 ?>
+<?php echo $verificar_90 ?>
     </form>
 </div>
 

@@ -1582,14 +1582,15 @@ function ocultarMensaje4() {
     La Figura 3 muestra las gráficas de estas funciones, usando una escala para los valores que se duplica en cada
     marca del eje vertical. Es decir, la escala vertical en este gráfico es <strong>logarítmica</strong>.
   </p>
-    <img src="../../img/graficas_Big_O.png" alt="">
+    <img src="../../../../img/graficas_Big_O.png" alt="">
     <hr>
     <h2>¿Por qué no importa la base del logaritmo en notación Big-O?</h2>
 
-<h3> Idea clave:</h3>
-<p>Cuando hablamos de <strong>notación Big-O</strong>, solo nos importa el <em>comportamiento de crecimiento</em> de una función cuando \( n \) crece mucho.</p>
-<p><strong>No</strong> nos importan las constantes multiplicativas.</p>
-<p>Por eso, cambiar la base del logaritmo <strong>no cambia su clase de crecimiento</strong>.</p>
+    <h3> Idea clave:</h3>
+    <p>Cuando hablamos de <strong>notación Big-O</strong>, solo nos importa el <em>comportamiento de crecimiento</em> 
+    de una función cuando \( n \) crece mucho.</p>
+    <p><strong>No</strong> nos importan las constantes multiplicativas.</p>
+    <p>Por eso, cambiar la base del logaritmo <strong>no cambia su clase de crecimiento</strong>.</p>
 
 <h3> Veamos esto con una propiedad matemática importante:</h3>
 <p>Cualquier logaritmo en base \( b \) se puede expresar en otra base \( k \) así:</p>
