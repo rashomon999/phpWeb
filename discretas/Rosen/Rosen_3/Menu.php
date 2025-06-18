@@ -33,7 +33,9 @@
         <a class="btn" href=".\capitulo_3_1\index.php">capitulo 3.1</a>
         <a class="btn" href=".\cuestionario_3_1\index.php">cuestionario 3.1</a>
         <br><br>
-         <a class="btn" href=".\capitulo_3_2\index.php">capitulo 3.2</a>
+        <a class="btn" href=".\capitulo_3_2\index.php">capitulo 3.2</a>
+        <a class="btn" href=".\cuestionario_3_2\index.php">cuestionario 3.2</a>
+        <br><br>
         <a class="btn" href=".\capitulo_3_3\index.php">capitulo 3.3</a>
         <a class="btn" href=".\capitulo_3_4\index.php">capitulo 3.4</a>
 

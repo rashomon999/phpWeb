@@ -523,7 +523,7 @@ if ($respuesta_43 === 'x>1') {
 }
 
  $respuesta_44 = isset($_POST['respuesta_44']) ? $_POST['respuesta_44'] : '';
-if ($respuesta_44 === '192') { 
+if ($respuesta_44 === '10') { 
     $verificar_44 = "correcto";
 } elseif ($respuesta_44 === '') {
     $verificar_44 = '';
@@ -532,7 +532,7 @@ if ($respuesta_44 === '192') {
 }
 
  $respuesta_45 = isset($_POST['respuesta_45']) ? $_POST['respuesta_45'] : '';
-if ($respuesta_45 === '34') { 
+if ($respuesta_45 === '1') { 
     $verificar_45 = "correcto";
 } elseif ($respuesta_45 === '') {
     $verificar_45 = '';
@@ -541,7 +541,7 @@ if ($respuesta_45 === '34') {
 }
 
  $respuesta_46 = isset($_POST['respuesta_46']) ? $_POST['respuesta_46'] : '';
-if ($respuesta_46 === '51') { 
+if ($respuesta_46 === 'x>1') { 
     $verificar_46 = "correcto";
 } elseif ($respuesta_46 === '') {
     $verificar_46 = '';
@@ -550,7 +550,7 @@ if ($respuesta_46 === '51') {
 }
 
  $respuesta_47 = isset($_POST['respuesta_47']) ? $_POST['respuesta_47'] : '';
-if ($respuesta_47 === '68') { 
+if ($respuesta_47 === 'O(x)') { 
     $verificar_47 = "correcto";
 } elseif ($respuesta_47 === '') {
     $verificar_47 = '';
@@ -559,7 +559,7 @@ if ($respuesta_47 === '68') {
 }
 
  $respuesta_48 = isset($_POST['respuesta_48']) ? $_POST['respuesta_48'] : '';
-if ($respuesta_48 === '85') { 
+if ($respuesta_48 === 'O(x)') { 
     $verificar_48 = "correcto";
 } elseif ($respuesta_48 === '') {
     $verificar_48 = '';
@@ -568,7 +568,7 @@ if ($respuesta_48 === '85') {
 }
 
  $respuesta_49 = isset($_POST['respuesta_49']) ? $_POST['respuesta_49'] : '';
-if ($respuesta_49 === '102') { 
+if ($respuesta_49 === 'no') { 
     $verificar_49 = "correcto";
 } elseif ($respuesta_49 === '') {
     $verificar_49 = '';
@@ -577,7 +577,7 @@ if ($respuesta_49 === '102') {
 }
 
  $respuesta_50 = isset($_POST['respuesta_50']) ? $_POST['respuesta_50'] : '';
-if ($respuesta_50 === '119') { 
+if ($respuesta_50 === 'no') { 
     $verificar_50 = "correcto";
 } elseif ($respuesta_50 === '') {
     $verificar_50 = '';
@@ -586,7 +586,7 @@ if ($respuesta_50 === '119') {
 }
 
  $respuesta_51 = isset($_POST['respuesta_51']) ? $_POST['respuesta_51'] : '';
-if ($respuesta_51 === '136') { 
+if ($respuesta_51 === 'no') { 
     $verificar_51 = "correcto";
 } elseif ($respuesta_51 === '') {
     $verificar_51 = '';
@@ -595,7 +595,7 @@ if ($respuesta_51 === '136') {
 }
 
  $respuesta_52 = isset($_POST['respuesta_52']) ? $_POST['respuesta_52'] : '';
-if ($respuesta_52 === '153') { 
+if ($respuesta_52 === 'no') { 
     $verificar_52 = "correcto";
 } elseif ($respuesta_52 === '') {
     $verificar_52 = '';
@@ -604,7 +604,7 @@ if ($respuesta_52 === '153') {
 }
 
  $respuesta_53 = isset($_POST['respuesta_53']) ? $_POST['respuesta_53'] : '';
-if ($respuesta_53 === '170') { 
+if ($respuesta_53 === '5') { 
     $verificar_53 = "correcto";
 } elseif ($respuesta_53 === '') {
     $verificar_53 = '';
@@ -613,7 +613,7 @@ if ($respuesta_53 === '170') {
 }
 
  $respuesta_54 = isset($_POST['respuesta_54']) ? $_POST['respuesta_54'] : '';
-if ($respuesta_54 === '187') { 
+if ($respuesta_54 === '1') { 
     $verificar_54 = "correcto";
 } elseif ($respuesta_54 === '') {
     $verificar_54 = '';
@@ -622,7 +622,7 @@ if ($respuesta_54 === '187') {
 }
 
  $respuesta_55 = isset($_POST['respuesta_55']) ? $_POST['respuesta_55'] : '';
-if ($respuesta_55 === '204') { 
+if ($respuesta_55 === 'x>1') { 
     $verificar_55 = "correcto";
 } elseif ($respuesta_55 === '') {
     $verificar_55 = '';
@@ -632,7 +632,7 @@ if ($respuesta_55 === '204') {
 
 
  $respuesta_56 = isset($_POST['respuesta_56']) ? $_POST['respuesta_56'] : '';
-if ($respuesta_56 === '36') { 
+if ($respuesta_56 === 'O(x)') { 
     $verificar_56 = "correcto";
 } elseif ($respuesta_56 === '') {
     $verificar_56 = '';
@@ -641,7 +641,7 @@ if ($respuesta_56 === '36') {
 }
 
  $respuesta_57 = isset($_POST['respuesta_57']) ? $_POST['respuesta_57'] : '';
-if ($respuesta_57 === '54') { 
+if ($respuesta_57 === '1') { 
     $verificar_57 = "correcto";
 } elseif ($respuesta_57 === '') {
     $verificar_57 = '';
@@ -650,7 +650,7 @@ if ($respuesta_57 === '54') {
 }
 
  $respuesta_58 = isset($_POST['respuesta_58']) ? $_POST['respuesta_58'] : '';
-if ($respuesta_58 === '72') { 
+if ($respuesta_58 === '1') { 
     $verificar_58 = "correcto";
 } elseif ($respuesta_58 === '') {
     $verificar_58 = '';
@@ -659,7 +659,7 @@ if ($respuesta_58 === '72') {
 }
 
  $respuesta_59 = isset($_POST['respuesta_59']) ? $_POST['respuesta_59'] : '';
-if ($respuesta_59 === '90') { 
+if ($respuesta_59 === 'x>1') { 
     $verificar_59 = "correcto";
 } elseif ($respuesta_59 === '') {
     $verificar_59 = '';
@@ -668,7 +668,7 @@ if ($respuesta_59 === '90') {
 }
 
  $respuesta_60 = isset($_POST['respuesta_60']) ? $_POST['respuesta_60'] : '';
-if ($respuesta_60 === '108') { 
+if ($respuesta_60 === 'O(x)') { 
     $verificar_60 = "correcto";
 } elseif ($respuesta_60 === '') {
     $verificar_60 = '';
@@ -677,7 +677,7 @@ if ($respuesta_60 === '108') {
 }
 
  $respuesta_61 = isset($_POST['respuesta_61']) ? $_POST['respuesta_61'] : '';
-if ($respuesta_61 === '126') { 
+if ($respuesta_61 === '1') { 
     $verificar_61 = "correcto";
 } elseif ($respuesta_61 === '') {
     $verificar_61 = '';
@@ -686,7 +686,7 @@ if ($respuesta_61 === '126') {
 }
 
  $respuesta_62 = isset($_POST['respuesta_62']) ? $_POST['respuesta_62'] : '';
-if ($respuesta_62 === '144') { 
+if ($respuesta_62 === '2') { 
     $verificar_62 = "correcto";
 } elseif ($respuesta_62 === '') {
     $verificar_62 = '';
@@ -695,7 +695,7 @@ if ($respuesta_62 === '144') {
 }
 
  $respuesta_63 = isset($_POST['respuesta_63']) ? $_POST['respuesta_63'] : '';
-if ($respuesta_63 === '162') { 
+if ($respuesta_63 === 'x>2') { 
     $verificar_63 = "correcto";
 } elseif ($respuesta_63 === '') {
     $verificar_63 = '';
@@ -704,7 +704,7 @@ if ($respuesta_63 === '162') {
 }
 
  $respuesta_64 = isset($_POST['respuesta_64']) ? $_POST['respuesta_64'] : '';
-if ($respuesta_64 === '180') { 
+if ($respuesta_64 === 'O(x)') { 
     $verificar_64 = "correcto";
 } elseif ($respuesta_64 === '') {
     $verificar_64 = '';
@@ -1891,7 +1891,7 @@ Tomamos desde \( \frac{n}{2} + 1 \) hasta \( n \). Hay aproximadamente \( \frac{
     <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="4">
     </strong> </p>
     <p>
-    <strong>Si se cumple de los valores correpondientes</strong>
+    <strong>Si se cumple, escriba los valores correpondientes, sino, escriba no</strong>
     </p>
     <h4>a) \( f(x) = 10 \)</h4>
     <p>
@@ -1904,57 +1904,111 @@ Tomamos desde \( \frac{n}{2} + 1 \) hasta \( n \). Hay aproximadamente \( \frac{
     <input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="4">
     .
     </p>
-    <p><strong>Conclusión:</strong> \( f(x) = 10 \) es \( O(x) \).</p>
+    <p><strong>Conclusión:</strong> \( f(x) = 10 \) es .
+    <input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="4">
+    </p>
 
     <br><br>
     <h4>b) \( f(x) = 3x + 7 \)</h4>
-    <p>
-    \[
-    f(x) = 3x + 7 \leq 3x + 7x = 10x \quad \text{cuando } x > 1
-    \]
-    (Ya que \( 7 < 7x \) cuando \( x > 1 \)).
-    </p>
-    <p><strong>Conclusión:</strong> \( f(x) = 3x + 7 \) es \( O(x) \) con \( C = 10 \), \( k = 1 \).</p>
+     <p>
 
-<h3>c) \( f(x) = x^2 + x + 1 \)</h3>
-<p>
-\[
-f(x) = x^2 + x + 1
-\]
-El término dominante es \( x^2 \), que crece más rápido que \( x \), así que no podemos acotarlo superiormente por \( Cx \).
-</p>
-<p><strong>Conclusión:</strong> \( f(x) \) <strong>no</strong> es \( O(x) \).</p>
-
-    <h3>d) \( f(x) = 5 \log x \)</h3>
-    <p>
-    \[
-    \log x < x \quad \text{para } x > 1 \Rightarrow 5 \log x < 5x
-    \]
-    \[
-    |f(x)| = 5 \log x \leq 5x
-    \]
+    Esto se cumple si elegimos \( C =  \)
+    <input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>" size="4">
+    , \( k =  \)
+    <input type="text" name="respuesta_45" value="<?php echo $respuesta_45; ?>" size="4">
+    ,  para 
+    <input type="text" name="respuesta_46" value="<?php echo $respuesta_46; ?>" size="4">
+    .
     </p>
-    <p><strong>Conclusión:</strong> \( f(x) = 5 \log x \) es \( O(x) \) con \( C = 5 \), \( k = 1 \).</p>
+    <p><strong>Conclusión:</strong> \( f(x) = 3x + 7 \) es  
+    <input type="text" name="respuesta_48" value="<?php echo $respuesta_48; ?>" size="4"></p>
+
+    <h4>c) \( f(x) = x^2 + x + 1 \)</h4>
+    Esto se cumple si elegimos \( C =  \)
+    <input type="text" name="respuesta_49" value="<?php echo $respuesta_49; ?>" size="4">
+    , \( k =  \)
+    <input type="text" name="respuesta_50" value="<?php echo $respuesta_50; ?>" size="4">
+    ,  para 
+    <input type="text" name="respuesta_51" value="<?php echo $respuesta_51; ?>" size="4">
+    .
+    </p>
+    <p><strong>Conclusión:</strong> \( f(x) = x^2 + x + 1\) es  
+    <input type="text" name="respuesta_52" value="<?php echo $respuesta_52; ?>" size="4"></p>
+ 
+
+    <h4>d) \( f(x) = 5 \log x \)</h4>
+        Esto se cumple si elegimos \( C =  \)
+    <input type="text" name="respuesta_53" value="<?php echo $respuesta_53; ?>" size="4">
+    , \( k =  \)
+    <input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>" size="4">
+    ,  para 
+    <input type="text" name="respuesta_55" value="<?php echo $respuesta_55; ?>" size="4">
+    .
+    </p>
+ 
+
+    <p><strong>Conclusión:</strong> \( f(x) = 5 \log x \) es 
+    <input type="text" name="respuesta_56" value="<?php echo $respuesta_56; ?>" size="4">
+    .</p>
+
 
     <h3>e) \( f(x) = \lfloor x \rfloor \)</h3>
-    <p>
-    \[
-    \lfloor x \rfloor \leq x \Rightarrow |f(x)| \leq x
-    \]
+    Esto se cumple si elegimos \( C =  \)
+    <input type="text" name="respuesta_57" value="<?php echo $respuesta_57; ?>" size="4">
+    , \( k =  \)
+    <input type="text" name="respuesta_58" value="<?php echo $respuesta_58; ?>" size="4">
+    ,  para 
+    <input type="text" name="respuesta_59" value="<?php echo $respuesta_59; ?>" size="4">
+    .
     </p>
-    <p><strong>Conclusión:</strong> \( f(x) \) es \( O(x) \) con \( C = 1 \), \( k = 1 \).</p>
+ 
+
+    <p><strong>Conclusión:</strong> \( f(x) = \lfloor x \rfloor\) es 
+    <input type="text" name="respuesta_60" value="<?php echo $respuesta_60; ?>" size="4">
+    </p>
+   
 
     <h3>f) \( f(x) = \lceil x/2 \rceil \)</h3>
-    <p>
-    \[
-    \lceil x/2 \rceil \leq x/2 + 1 \leq x \quad \text{cuando } x > 2
-    \Rightarrow |f(x)| \leq x
-    \]
+    Esto se cumple si elegimos \( C =  \)
+    <input type="text" name="respuesta_61" value="<?php echo $respuesta_61; ?>" size="4">
+    , \( k =  \)
+    <input type="text" name="respuesta_62" value="<?php echo $respuesta_62; ?>" size="4">
+    ,  para 
+    <input type="text" name="respuesta_63" value="<?php echo $respuesta_63; ?>" size="4">
+    .
     </p>
-    <p><strong>Conclusión:</strong> \( f(x) \) es \( O(x) \) con \( C = 1 \), \( k = 2 \).</p>
+ 
+
+    <p><strong>Conclusión:</strong> \( f(x) = \lfloor x \rfloor\) es 
+    <input type="text" name="respuesta_64" value="<?php echo $respuesta_64; ?>" size="4">
+    <br><br>
+     <button type="submit">Enviar</button>
+    <?php echo $verificar_40 ?>
+<?php echo $verificar_41 ?>
+<?php echo $verificar_42 ?>
+<?php echo $verificar_43 ?>
+<?php echo $verificar_44 ?>
+ <?php echo $verificar_45 ?>
+        <?php echo $verificar_46 ?>
+        <?php echo $verificar_47 ?>
+        <?php echo $verificar_48 ?>
+        <?php echo $verificar_49 ?>
+        <?php echo $verificar_50 ?>
+        <?php echo $verificar_51 ?>
+        <?php echo $verificar_52 ?>
+        <?php echo $verificar_53 ?>
+        <?php echo $verificar_54 ?>
+        <?php echo $verificar_55 ?>
+        <?php echo $verificar_56 ?>
+<?php echo $verificar_57 ?>
+<?php echo $verificar_58 ?>
+<?php echo $verificar_59 ?>
+<?php echo $verificar_60 ?>
+<?php echo $verificar_61 ?>
+<?php echo $verificar_62 ?>
+<?php echo $verificar_63 ?>
+<?php echo $verificar_64 ?>
     <hr>
-
-
     </form>
 </div>
 
