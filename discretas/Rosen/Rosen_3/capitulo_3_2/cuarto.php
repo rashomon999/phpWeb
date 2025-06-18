@@ -1727,7 +1727,7 @@ La suma toma el crecimiento más rápido de los dos (<code>max</code>), mientras
     \( |f(x)| \geq C|g(x)| \quad \text{para todo } x > k \)
   </p>
   <p>
-    Esto significa que \( f(x) \) <strong>crece al menos tan rápido</strong> como \( g(x) \). También se cumple que 
+     se cumple que 
     \( f(x) = \Omega(g(x)) \) si y solo si \( g(x) = O(f(x)) \).
   </p>
 
