@@ -90,7 +90,7 @@ $verificar_61 = ''; $verificar_62 = ''; $verificar_63 = ''; $verificar_64 = ''; 
 
 if ($_POST) {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === 'Demandas' || $respuesta_1 === 'demandas') {  
+   if ($respuesta_1 === 'dependen') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -100,7 +100,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === 'crecientes') {  
+   if ($respuesta_2 === 'avanzados') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -110,7 +110,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === 'exigencias') {  
+   if ($respuesta_3 === 'confiables') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -120,7 +120,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === 'construirse') {  
+   if ($respuesta_4 === 'seguros') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -130,7 +130,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === 'rapidamente') {  
+   if ($respuesta_5 === 'economica') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -140,7 +140,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === 'grandes') {  
+   if ($respuesta_6 === 'rapida') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -150,7 +150,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === 'complejos') {  
+   if ($respuesta_7 === 'proceso') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -160,7 +160,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === 'tecnicas') {  
+   if ($respuesta_8 === 'secuencia') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -170,7 +170,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === 'Bajas' || $respuesta_9 === 'bajas') {  
+   if ($respuesta_9 === 'actividades') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -180,7 +180,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === 'expectativas') {  
+   if ($respuesta_10 === 'conduce') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -190,7 +190,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === 'evolucionado') {  
+   if ($respuesta_11 === 'produccion') {  
        $verificar_11 = "correcto";
    } elseif ($respuesta_11 === '') {
        $verificar_11 = '';
@@ -201,7 +201,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
      $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-     if ($respuesta_12 === '1968') {  
+     if ($respuesta_12 === 'producto') {  
          $verificar_12 = "correcto";
      } elseif ($respuesta_12 === '') {
          $verificar_12 = '';
@@ -211,7 +211,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la segunda pregunta
      $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-     if ($respuesta_13 === 'conferencia') { 
+     if ($respuesta_13 === 'software') { 
          $verificar_13 = "correcto";
      } elseif ($respuesta_13 === '') {
          $verificar_13 = '';
@@ -221,7 +221,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la tercera pregunta
      $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-     if ($respuesta_14 === 'crisis') {  
+     if ($respuesta_14 === 'comunes') {  
          $verificar_14 = "correcto";
      } elseif ($respuesta_14 === '') {
          $verificar_14 = '';
@@ -231,7 +231,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la cuarta pregunta
      $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-     if ($respuesta_15 === '1970') { 
+     if ($respuesta_15 === 'Especificacion' || $respuesta_15 === 'especificacion') { 
          $verificar_15 = "correcto";
      } elseif ($respuesta_15 === '') {
          $verificar_15 = '';
@@ -241,7 +241,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la quinta pregunta
      $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-     if ($respuesta_16 === '1980') {  
+     if ($respuesta_16 === 'clientes') {  
          $verificar_16 = "correcto";
      } elseif ($respuesta_16 === '') {
          $verificar_16 = '';
@@ -251,7 +251,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la sexta pregunta
      $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-     if ($respuesta_17 === 'Programas' || $respuesta_17 === 'programas') {  
+     if ($respuesta_17 === 'definen') {  
          $verificar_17 = "correcto";
      } elseif ($respuesta_17 === '') {
          $verificar_17 = '';
@@ -261,7 +261,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la séptima pregunta
      $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-     if ($respuesta_18 === 'computadora') {  
+     if ($respuesta_18 === 'software') {  
          $verificar_18 = "correcto";
      } elseif ($respuesta_18 === '') {
          $verificar_18 = '';
@@ -271,7 +271,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la octava pregunta
      $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-     if ($respuesta_19 === 'documentacion') {  
+     if ($respuesta_19 === 'producir') {  
          $verificar_19 = "correcto";
      } elseif ($respuesta_19 === '') {
          $verificar_19 = '';
@@ -281,7 +281,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la novena pregunta
      $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
-     if ($respuesta_20 === 'funcionalidad') {  
+     if ($respuesta_20 === 'restricciones') {  
          $verificar_20 = "correcto";
      } elseif ($respuesta_20 === '') {
          $verificar_20 = '';
@@ -291,7 +291,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la décima pregunta
      $respuesta_21 = isset($_POST['respuesta_21']) ? $_POST['respuesta_21'] : '';
-     if ($respuesta_21 === 'rendimiento') {  
+     if ($respuesta_21 === 'funcionamiento') {  
          $verificar_21 = "correcto";
      } elseif ($respuesta_21 === '') {
          $verificar_21 = '';
@@ -301,7 +301,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la undécima pregunta
      $respuesta_22 = isset($_POST['respuesta_22']) ? $_POST['respuesta_22'] : '';
-     if ($respuesta_22 === 'usuario') {  
+     if ($respuesta_22 === 'Desarrollo' || $respuesta_22 === 'desarrollo') {  
          $verificar_22 = "correcto";
      } elseif ($respuesta_22 === '') {
          $verificar_22 = '';
@@ -311,7 +311,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
    $respuesta_23 = isset($_POST['respuesta_23']) ? $_POST['respuesta_23'] : '';
-   if ($respuesta_23 === 'mantenible') {  
+   if ($respuesta_23 === 'diseña') {  
        $verificar_23 = "correcto";
    } elseif ($respuesta_23 === '') {
        $verificar_23 = '';
@@ -321,7 +321,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_24 = isset($_POST['respuesta_24']) ? $_POST['respuesta_24'] : '';
-   if ($respuesta_24 === 'confiable') {  
+   if ($respuesta_24 === 'programa') {  
        $verificar_24 = "correcto";
    } elseif ($respuesta_24 === '') {
        $verificar_24 = '';
@@ -331,7 +331,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_25 = isset($_POST['respuesta_25']) ? $_POST['respuesta_25'] : '';
-   if ($respuesta_25 === 'facil') { 
+   if ($respuesta_25 === 'Validacion') { 
        $verificar_25 = "correcto";
    } elseif ($respuesta_25 === '') {
        $verificar_25 = '';
@@ -341,7 +341,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_26 = isset($_POST['respuesta_26']) ? $_POST['respuesta_26'] : '';
-   if ($respuesta_26 === 'usar') {  
+   if ($respuesta_26 === 'verifica') {  
        $verificar_26 = "correcto";
    } elseif ($respuesta_26 === '') {
        $verificar_26 = '';
@@ -351,7 +351,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_27 = isset($_POST['respuesta_27']) ? $_POST['respuesta_27'] : '';
-   if ($respuesta_27 === 'aspectos') {  
+   if ($respuesta_27 === 'cumpla') {  
        $verificar_27 = "correcto";
    } elseif ($respuesta_27 === '') {
        $verificar_27 = '';
@@ -361,7 +361,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_28 = isset($_POST['respuesta_28']) ? $_POST['respuesta_28'] : '';
-   if ($respuesta_28 === 'producción') {  
+   if ($respuesta_28 === 'Evolucion') {  
        $verificar_28 = "correcto";
    } elseif ($respuesta_28 === '') {
        $verificar_28 = '';
@@ -371,7 +371,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_29 = isset($_POST['respuesta_29']) ? $_POST['respuesta_29'] : '';
-   if ($respuesta_29 === 'software') {  
+   if ($respuesta_29 === 'modifica') {  
        $verificar_29 = "correcto";
    } elseif ($respuesta_29 === '') {
        $verificar_29 = '';
@@ -381,7 +381,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_30 = isset($_POST['respuesta_30']) ? $_POST['respuesta_30'] : '';
-   if ($respuesta_30 === 'Especificacion' || $respuesta_30 === 'especificacion') {  
+   if ($respuesta_30 === 'requerimientos') {  
        $verificar_30 = "correcto";
    } elseif ($respuesta_30 === '') {
        $verificar_30 = '';
@@ -391,7 +391,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_31 = isset($_POST['respuesta_31']) ? $_POST['respuesta_31'] : '';
-   if ($respuesta_31 === 'desarrollo') {  
+   if ($respuesta_31 === 'especificado') {  
        $verificar_31 = "correcto";
    } elseif ($respuesta_31 === '') {
        $verificar_31 = '';
@@ -401,7 +401,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_32 = isset($_POST['respuesta_32']) ? $_POST['respuesta_32'] : '';
-   if ($respuesta_32 === 'validacion') {  
+   if ($respuesta_32 === 'especificacion') {  
        $verificar_32 = "correcto";
    } elseif ($respuesta_32 === '') {
        $verificar_32 = '';
@@ -411,7 +411,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_33 = isset($_POST['respuesta_33']) ? $_POST['respuesta_33'] : '';
-   if ($respuesta_33 === 'evolución') {  
+   if ($respuesta_33 === 'programa') {  
        $verificar_33 = "correcto";
    } elseif ($respuesta_33 === '') {
        $verificar_33 = '';
@@ -420,7 +420,7 @@ if ($_POST) {
    }
 
  $respuesta_34 = isset($_POST['respuesta_34']) ? $_POST['respuesta_34'] : '';
-if ($respuesta_34 === 'teoria') { 
+if ($respuesta_34 === 'desarrollan') { 
     $verificar_34 = "correcto";
 } elseif ($respuesta_34 === '') {
     $verificar_34 = '';
@@ -429,7 +429,7 @@ if ($respuesta_34 === 'teoria') {
 }
 
  $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
-if ($respuesta_35 === 'fundamentos') { 
+if ($respuesta_35 === 'distintas') { 
     $verificar_35 = "correcto";
 } elseif ($respuesta_35 === '') {
     $verificar_35 = '';
@@ -438,7 +438,7 @@ if ($respuesta_35 === 'fundamentos') {
 }
 
  $respuesta_36 = isset($_POST['respuesta_36']) ? $_POST['respuesta_36'] : '';
-if ($respuesta_36 === 'practicos') { 
+if ($respuesta_36 === '12207') { 
     $verificar_36 = "correcto";
 } elseif ($respuesta_36 === '') {
     $verificar_36 = '';
@@ -447,7 +447,7 @@ if ($respuesta_36 === 'practicos') {
 }
 
  $respuesta_37 = isset($_POST['respuesta_37']) ? $_POST['respuesta_37'] : '';
-if ($respuesta_37 === 'desarrollo') { 
+if ($respuesta_37 === 'procesos') { 
     $verificar_37 = "correcto";
 } elseif ($respuesta_37 === '') {
     $verificar_37 = '';
@@ -456,7 +456,7 @@ if ($respuesta_37 === 'desarrollo') {
 }
 
  $respuesta_38 = isset($_POST['respuesta_38']) ? $_POST['respuesta_38'] : '';
-if ($respuesta_38 === 'entrega') { 
+if ($respuesta_38 === 'ciclo') { 
     $verificar_38 = "correcto";
 } elseif ($respuesta_38 === '') {
     $verificar_38 = '';
@@ -465,7 +465,7 @@ if ($respuesta_38 === 'entrega') {
 }
 
  $respuesta_39 = isset($_POST['respuesta_39']) ? $_POST['respuesta_39'] : '';
-if ($respuesta_39 === 'todos') { 
+if ($respuesta_39 === 'vida') { 
     $verificar_39 = "correcto";
 } elseif ($respuesta_39 === '') {
     $verificar_39 = '';
@@ -474,7 +474,7 @@ if ($respuesta_39 === 'todos') {
 }
 
  $respuesta_40 = isset($_POST['respuesta_40']) ? $_POST['respuesta_40'] : '';
-if ($respuesta_40 === 'desarrollo') { 
+if ($respuesta_40 === '15288') { 
     $verificar_40 = "correcto";
 } elseif ($respuesta_40 === '') {
     $verificar_40 = '';
@@ -483,7 +483,7 @@ if ($respuesta_40 === 'desarrollo') {
 }
 
  $respuesta_41 = isset($_POST['respuesta_41']) ? $_POST['respuesta_41'] : '';
-if ($respuesta_41 === 'hardware') { 
+if ($respuesta_41 === 'procesos') { 
     $verificar_41 = "correcto";
 } elseif ($respuesta_41 === '') {
     $verificar_41 = '';
@@ -492,7 +492,7 @@ if ($respuesta_41 === 'hardware') {
 }
 
  $respuesta_42 = isset($_POST['respuesta_42']) ? $_POST['respuesta_42'] : '';
-if ($respuesta_42 === 'software') { 
+if ($respuesta_42 === 'ciclo') { 
     $verificar_42 = "correcto";
 } elseif ($respuesta_42 === '') {
     $verificar_42 = '';
@@ -501,7 +501,7 @@ if ($respuesta_42 === 'software') {
 }
 
  $respuesta_43 = isset($_POST['respuesta_43']) ? $_POST['respuesta_43'] : '';
-if ($respuesta_43 === 'procesos') { 
+if ($respuesta_43 === 'vida') { 
     $verificar_43 = "correcto";
 } elseif ($respuesta_43 === '') {
     $verificar_43 = '';
@@ -510,7 +510,7 @@ if ($respuesta_43 === 'procesos') {
 }
 
  $respuesta_44 = isset($_POST['respuesta_44']) ? $_POST['respuesta_44'] : '';
-if ($respuesta_44 === 'parte') { 
+if ($respuesta_44 === '12207') { 
     $verificar_44 = "correcto";
 } elseif ($respuesta_44 === '') {
     $verificar_44 = '';
@@ -519,7 +519,7 @@ if ($respuesta_44 === 'parte') {
 }
 
  $respuesta_45 = isset($_POST['respuesta_45']) ? $_POST['respuesta_45'] : '';
-if ($respuesta_45 === 'general') { 
+if ($respuesta_45 === '15288') { 
     $verificar_45 = "correcto";
 } elseif ($respuesta_45 === '') {
     $verificar_45 = '';
@@ -528,7 +528,7 @@ if ($respuesta_45 === 'general') {
 }
 
  $respuesta_46 = isset($_POST['respuesta_46']) ? $_POST['respuesta_46'] : '';
-if ($respuesta_46 === 'tiempos') { 
+if ($respuesta_46 === 'hardware') { 
     $verificar_46 = "correcto";
 } elseif ($respuesta_46 === '') {
     $verificar_46 = '';
@@ -537,7 +537,7 @@ if ($respuesta_46 === 'tiempos') {
 }
 
  $respuesta_47 = isset($_POST['respuesta_47']) ? $_POST['respuesta_47'] : '';
-if ($respuesta_47 === 'confiable') { 
+if ($respuesta_47 === 'software') { 
     $verificar_47 = "correcto";
 } elseif ($respuesta_47 === '') {
     $verificar_47 = '';
@@ -546,7 +546,7 @@ if ($respuesta_47 === 'confiable') {
 }
 
  $respuesta_48 = isset($_POST['respuesta_48']) ? $_POST['respuesta_48'] : '';
-if ($respuesta_48 === '60%') { 
+if ($respuesta_48 === 'procesos') { 
     $verificar_48 = "correcto";
 } elseif ($respuesta_48 === '') {
     $verificar_48 = '';
@@ -555,7 +555,7 @@ if ($respuesta_48 === '60%') {
 }
 
  $respuesta_49 = isset($_POST['respuesta_49']) ? $_POST['respuesta_49'] : '';
-if ($respuesta_49 === 'desarrollo') { 
+if ($respuesta_49 === 'humanos') { 
     $verificar_49 = "correcto";
 } elseif ($respuesta_49 === '') {
     $verificar_49 = '';
@@ -564,7 +564,7 @@ if ($respuesta_49 === 'desarrollo') {
 }
 
  $respuesta_50 = isset($_POST['respuesta_50']) ? $_POST['respuesta_50'] : '';
-if ($respuesta_50 === '40%') { 
+if ($respuesta_50 === 'Heterogeneidad') { 
     $verificar_50 = "correcto";
 } elseif ($respuesta_50 === '') {
     $verificar_50 = '';
@@ -573,7 +573,7 @@ if ($respuesta_50 === '40%') {
 }
 
  $respuesta_51 = isset($_POST['respuesta_51']) ? $_POST['respuesta_51'] : '';
-if ($respuesta_51 === 'pruebas') { 
+if ($respuesta_51 === 'Cambio empresarial y social') { 
     $verificar_51 = "correcto";
 } elseif ($respuesta_51 === '') {
     $verificar_51 = '';
@@ -582,7 +582,7 @@ if ($respuesta_51 === 'pruebas') {
 }
 
  $respuesta_52 = isset($_POST['respuesta_52']) ? $_POST['respuesta_52'] : '';
-if ($respuesta_52 === 'evolucion') { 
+if ($respuesta_52 === 'Seguridad y confianza') { 
     $verificar_52 = "correcto";
 } elseif ($respuesta_52 === '') {
     $verificar_52 = '';
@@ -591,7 +591,7 @@ if ($respuesta_52 === 'evolucion') {
 }
 
  $respuesta_53 = isset($_POST['respuesta_53']) ? $_POST['respuesta_53'] : '';
-if ($respuesta_53 === 'desarrollo') { 
+if ($respuesta_53 === 'no') { 
     $verificar_53 = "correcto";
 } elseif ($respuesta_53 === '') {
     $verificar_53 = '';
@@ -600,7 +600,7 @@ if ($respuesta_53 === 'desarrollo') {
 }
 
  $respuesta_54 = isset($_POST['respuesta_54']) ? $_POST['respuesta_54'] : '';
-if ($respuesta_54 === 'diferentes') { 
+if ($respuesta_54 === 'independientes') { 
     $verificar_54 = "correcto";
 } elseif ($respuesta_54 === '') {
     $verificar_54 = '';
@@ -609,7 +609,7 @@ if ($respuesta_54 === 'diferentes') {
 }
 
  $respuesta_55 = isset($_POST['respuesta_55']) ? $_POST['respuesta_55'] : '';
-if ($respuesta_55 === 'diferentes') { 
+if ($respuesta_55 === 'generales') { 
     $verificar_55 = "correcto";
 } elseif ($respuesta_55 === '') {
     $verificar_55 = '';
@@ -619,7 +619,7 @@ if ($respuesta_55 === 'diferentes') {
 
 
  $respuesta_56 = isset($_POST['respuesta_56']) ? $_POST['respuesta_56'] : '';
-if ($respuesta_56 === 'servicios') { 
+if ($respuesta_56 === 'No' || $respuesta_56 === 'no') { 
     $verificar_56 = "correcto";
 } elseif ($respuesta_56 === '') {
     $verificar_56 = '';
@@ -628,7 +628,7 @@ if ($respuesta_56 === 'servicios') {
 }
 
  $respuesta_57 = isset($_POST['respuesta_57']) ? $_POST['respuesta_57'] : '';
-if ($respuesta_57 === 'genericos') { 
+if ($respuesta_57 === 'Desarrollo') { 
     $verificar_57 = "correcto";
 } elseif ($respuesta_57 === '') {
     $verificar_57 = '';
@@ -637,7 +637,7 @@ if ($respuesta_57 === 'genericos') {
 }
 
  $respuesta_58 = isset($_POST['respuesta_58']) ? $_POST['respuesta_58'] : '';
-if ($respuesta_58 === 'personalizados') { 
+if ($respuesta_58 === 'diseño') { 
     $verificar_58 = "correcto";
 } elseif ($respuesta_58 === '') {
     $verificar_58 = '';
@@ -646,7 +646,7 @@ if ($respuesta_58 === 'personalizados') {
 }
 
  $respuesta_59 = isset($_POST['respuesta_59']) ? $_POST['respuesta_59'] : '';
-if ($respuesta_59 === 'disciplina') { 
+if ($respuesta_59 === 'programacion') { 
     $verificar_59 = "correcto";
 } elseif ($respuesta_59 === '') {
     $verificar_59 = '';
@@ -655,7 +655,7 @@ if ($respuesta_59 === 'disciplina') {
 }
 
  $respuesta_60 = isset($_POST['respuesta_60']) ? $_POST['respuesta_60'] : '';
-if ($respuesta_60 === 'ocupa') { 
+if ($respuesta_60 === 'pruebas') { 
     $verificar_60 = "correcto";
 } elseif ($respuesta_60 === '') {
     $verificar_60 = '';
@@ -664,7 +664,7 @@ if ($respuesta_60 === 'ocupa') {
 }
 
  $respuesta_61 = isset($_POST['respuesta_61']) ? $_POST['respuesta_61'] : '';
-if ($respuesta_61 === 'todos') { 
+if ($respuesta_61 === 'mantenimiento') { 
     $verificar_61 = "correcto";
 } elseif ($respuesta_61 === '') {
     $verificar_61 = '';
@@ -673,7 +673,7 @@ if ($respuesta_61 === 'todos') {
 }
 
  $respuesta_62 = isset($_POST['respuesta_62']) ? $_POST['respuesta_62'] : '';
-if ($respuesta_62 === 'produccion') { 
+if ($respuesta_62 === 'Diseño') { 
     $verificar_62 = "correcto";
 } elseif ($respuesta_62 === '') {
     $verificar_62 = '';
@@ -682,7 +682,7 @@ if ($respuesta_62 === 'produccion') {
 }
 
  $respuesta_63 = isset($_POST['respuesta_63']) ? $_POST['respuesta_63'] : '';
-if ($respuesta_63 === 'especificacion') { 
+if ($respuesta_63 === 'integracion') { 
     $verificar_63 = "correcto";
 } elseif ($respuesta_63 === '') {
     $verificar_63 = '';
@@ -691,7 +691,7 @@ if ($respuesta_63 === 'especificacion') {
 }
 
  $respuesta_64 = isset($_POST['respuesta_64']) ? $_POST['respuesta_64'] : '';
-if ($respuesta_64 === 'matenimiento') { 
+if ($respuesta_64 === 'hardware') { 
     $verificar_64 = "correcto";
 } elseif ($respuesta_64 === '') {
     $verificar_64 = '';
@@ -700,7 +700,7 @@ if ($respuesta_64 === 'matenimiento') {
 }
 
  $respuesta_65 = isset($_POST['respuesta_65']) ? $_POST['respuesta_65'] : '';
-if ($respuesta_65 === 'teorias') { 
+if ($respuesta_65 === 'software') { 
     $verificar_65 = "correcto";
 } elseif ($respuesta_65 === '') {
     $verificar_65 = '';
@@ -709,7 +709,7 @@ if ($respuesta_65 === 'teorias') {
 }
 
  $respuesta_66 = isset($_POST['respuesta_66']) ? $_POST['respuesta_66'] : '';
-if ($respuesta_66 === 'metodos') { 
+if ($respuesta_66 === 'redes') { 
     $verificar_66 = "correcto";
 } elseif ($respuesta_66 === '') {
     $verificar_66 = '';
@@ -718,7 +718,7 @@ if ($respuesta_66 === 'metodos') {
 }
 
  $respuesta_67 = isset($_POST['respuesta_67']) ? $_POST['respuesta_67'] : '';
-if ($respuesta_67 === 'herramientas') { 
+if ($respuesta_67 === 'procesos') { 
     $verificar_67 = "correcto";
 } elseif ($respuesta_67 === '') {
     $verificar_67 = '';
@@ -727,7 +727,7 @@ if ($respuesta_67 === 'herramientas') {
 }
 
  $respuesta_68 = isset($_POST['respuesta_68']) ? $_POST['respuesta_68'] : '';
-if ($respuesta_68 === 'selectiva') { 
+if ($respuesta_68 === 'evolucion') { 
     $verificar_68 = "correcto";
 } elseif ($respuesta_68 === '') {
     $verificar_68 = '';
@@ -736,7 +736,7 @@ if ($respuesta_68 === 'selectiva') {
 }
 
  $respuesta_69 = isset($_POST['respuesta_69']) ? $_POST['respuesta_69'] : '';
-if ($respuesta_69 === 'restricciones') { 
+if ($respuesta_69 === 'completo') { 
     $verificar_69 = "correcto";
 } elseif ($respuesta_69 === '') {
     $verificar_69 = '';
@@ -745,7 +745,7 @@ if ($respuesta_69 === 'restricciones') {
 }
 
  $respuesta_70 = isset($_POST['respuesta_70']) ? $_POST['respuesta_70'] : '';
-if ($respuesta_70 === 'no') { 
+if ($respuesta_70 === 'implementacion') { 
     $verificar_70 = "correcto";
 } elseif ($respuesta_70 === '') {
     $verificar_70 = '';
@@ -754,7 +754,7 @@ if ($respuesta_70 === 'no') {
 }
 
  $respuesta_71 = isset($_POST['respuesta_71']) ? $_POST['respuesta_71'] : '';
-if ($respuesta_71 === 'ocupa') { 
+if ($respuesta_71 === 'arquitectura') { 
     $verificar_71 = "correcto";
 } elseif ($respuesta_71 === '') {
     $verificar_71 = '';
@@ -763,7 +763,7 @@ if ($respuesta_71 === 'ocupa') {
 }
 
  $respuesta_72 = isset($_POST['respuesta_72']) ? $_POST['respuesta_72'] : '';
-if ($respuesta_72 === 'tecnicos') { 
+if ($respuesta_72 === 'desarrollo') { 
     $verificar_72 = "correcto";
 } elseif ($respuesta_72 === '') {
     $verificar_72 = '';
@@ -772,7 +772,7 @@ if ($respuesta_72 === 'tecnicos') {
 }
 
  $respuesta_73 = isset($_POST['respuesta_73']) ? $_POST['respuesta_73'] : '';
-if ($respuesta_73 === 'gestion') { 
+if ($respuesta_73 === 'sistematico') { 
     $verificar_73 = "correcto";
 } elseif ($respuesta_73 === '') {
     $verificar_73 = '';
@@ -781,7 +781,7 @@ if ($respuesta_73 === 'gestion') {
 }
 
  $respuesta_74 = isset($_POST['respuesta_74']) ? $_POST['respuesta_74'] : '';
-if ($respuesta_74 === 'perfeccionistas') { 
+if ($respuesta_74 === 'produccion') { 
     $verificar_74 = "correcto";
 } elseif ($respuesta_74 === '') {
     $verificar_74 = '';
@@ -790,7 +790,7 @@ if ($respuesta_74 === 'perfeccionistas') {
 }
 
  $respuesta_75 = isset($_POST['respuesta_75']) ? $_POST['respuesta_75'] : '';
-if ($respuesta_75 === '9126') { 
+if ($respuesta_75 === 'metodos') { 
     $verificar_75 = "correcto";
 } elseif ($respuesta_75 === '') {
     $verificar_75 = '';
@@ -799,7 +799,7 @@ if ($respuesta_75 === '9126') {
 }
 
  $respuesta_76 = isset($_POST['respuesta_76']) ? $_POST['respuesta_76'] : '';
-if ($respuesta_76 === '14598') { 
+if ($respuesta_76 === 'tecnicas') { 
     $verificar_76 = "correcto";
 } elseif ($respuesta_76 === '') {
     $verificar_76 = '';
@@ -808,7 +808,7 @@ if ($respuesta_76 === '14598') {
 }
 
  $respuesta_77 = isset($_POST['respuesta_77']) ? $_POST['respuesta_77'] : '';
-if ($respuesta_77 === 'coordinadas') { 
+if ($respuesta_77 === 'aplicacion') { 
     $verificar_77 = "correcto";
 } elseif ($respuesta_77 === '') {
     $verificar_77 = '';
@@ -817,7 +817,7 @@ if ($respuesta_77 === 'coordinadas') {
 }
 
  $respuesta_78 = isset($_POST['respuesta_78']) ? $_POST['respuesta_78'] : '';
-if ($respuesta_78 === 'ciclo') { 
+if ($respuesta_78 === 'Aplicaciones independientes') { 
     $verificar_78 = "correcto";
 } elseif ($respuesta_78 === '') {
     $verificar_78 = '';
@@ -826,7 +826,7 @@ if ($respuesta_78 === 'ciclo') {
 }
 
  $respuesta_79 = isset($_POST['respuesta_79']) ? $_POST['respuesta_79'] : '';
-if ($respuesta_79 === 'vida') { 
+if ($respuesta_79 === 'local') { 
     $verificar_79 = "correcto";
 } elseif ($respuesta_79 === '') {
     $verificar_79 = '';
@@ -835,7 +835,7 @@ if ($respuesta_79 === 'vida') {
 }
 
  $respuesta_80 = isset($_POST['respuesta_80']) ? $_POST['respuesta_80'] : '';
-if ($respuesta_80 === 'calidad') { 
+if ($respuesta_80 === 'red') { 
     $verificar_80 = "correcto";
 } elseif ($respuesta_80 === '') {
     $verificar_80 = '';
@@ -844,7 +844,7 @@ if ($respuesta_80 === 'calidad') {
 }
 
  $respuesta_81 = isset($_POST['respuesta_81']) ? $_POST['respuesta_81'] : '';
-if ($respuesta_81 === 'requisitos') { 
+if ($respuesta_81 === 'oficina') { 
     $verificar_81 = "correcto";
 } elseif ($respuesta_81 === '') {
     $verificar_81 = '';
@@ -853,7 +853,7 @@ if ($respuesta_81 === 'requisitos') {
 }
 
  $respuesta_82 = isset($_POST['respuesta_82']) ? $_POST['respuesta_82'] : '';
-if ($respuesta_82 === 'medicion') { 
+if ($respuesta_82 === 'Aplicaciones interactivas basadas en transacciones') { 
     $verificar_82 = "correcto";
 } elseif ($respuesta_82 === '') {
     $verificar_82 = '';
@@ -862,7 +862,7 @@ if ($respuesta_82 === 'medicion') {
 }
 
  $respuesta_83 = isset($_POST['respuesta_83']) ? $_POST['respuesta_83'] : '';
-if ($respuesta_83 === 'evalucion') { 
+if ($respuesta_83 === 'remota') { 
     $verificar_83 = "correcto";
 } elseif ($respuesta_83 === '') {
     $verificar_83 = '';
@@ -871,7 +871,7 @@ if ($respuesta_83 === 'evalucion') {
 }
 
  $respuesta_84 = isset($_POST['respuesta_84']) ? $_POST['respuesta_84'] : '';
-if ($respuesta_84 === 'SQuaRE') { 
+if ($respuesta_84 === 'empresariales') { 
     $verificar_84 = "correcto";
 } elseif ($respuesta_84 === '') {
     $verificar_84 = '';
@@ -880,7 +880,7 @@ if ($respuesta_84 === 'SQuaRE') {
 }
 
  $respuesta_85 = isset($_POST['respuesta_85']) ? $_POST['respuesta_85'] : '';
-if ($respuesta_85 === '25000') { 
+if ($respuesta_85 === 'Sistemas de control embebidos') { 
     $verificar_85 = "correcto";
 } elseif ($respuesta_85 === '') {
     $verificar_85 = '';
@@ -889,7 +889,7 @@ if ($respuesta_85 === '25000') {
 }
 
  $respuesta_86 = isset($_POST['respuesta_86']) ? $_POST['respuesta_86'] : '';
-if ($respuesta_86 === '25099') { 
+if ($respuesta_86 === 'controlan') { 
     $verificar_86 = "correcto";
 } elseif ($respuesta_86 === '') {
     $verificar_86 = '';
@@ -898,7 +898,7 @@ if ($respuesta_86 === '25099') {
 }
 
  $respuesta_87 = isset($_POST['respuesta_87']) ? $_POST['respuesta_87'] : '';
-if ($respuesta_87 === 'modelo') { 
+if ($respuesta_87 === 'dispositivos') { 
     $verificar_87 = "correcto";
 } elseif ($respuesta_87 === '') {
     $verificar_87 = '';
@@ -907,7 +907,7 @@ if ($respuesta_87 === 'modelo') {
 }
 
  $respuesta_88 = isset($_POST['respuesta_88']) ? $_POST['respuesta_88'] : '';
-if ($respuesta_88 === 'calidad') { 
+if ($respuesta_88 === 'software') { 
     $verificar_88 = "correcto";
 } elseif ($respuesta_88 === '') {
     $verificar_88 = '';
@@ -916,7 +916,7 @@ if ($respuesta_88 === 'calidad') {
 }
 
  $respuesta_89 = isset($_POST['respuesta_89']) ? $_POST['respuesta_89'] : '';
-if ($respuesta_89 === 'sistemas') { 
+if ($respuesta_89 === 'embebidos') { 
     $verificar_89 = "correcto";
 } elseif ($respuesta_89 === '') {
     $verificar_89 = '';
@@ -925,7 +925,7 @@ if ($respuesta_89 === 'sistemas') {
 }
 
  $respuesta_90 = isset($_POST['respuesta_90']) ? $_POST['respuesta_90'] : '';
-if ($respuesta_90 === 'productos') { 
+if ($respuesta_90 === 'telefono movil') { 
     $verificar_90 = "correcto";
 } elseif ($respuesta_90 === '') {
     $verificar_90 = '';
@@ -934,7 +934,7 @@ if ($respuesta_90 === 'productos') {
 }
 
  $respuesta_91 = isset($_POST['respuesta_91']) ? $_POST['respuesta_91'] : '';
-if ($respuesta_91 === 'uso') { 
+if ($respuesta_91 === 'Sistemas de procesamiento por lotes') { 
     $verificar_91 = "correcto";
 } elseif ($respuesta_91 === '') {
     $verificar_91 = '';
@@ -943,7 +943,7 @@ if ($respuesta_91 === 'uso') {
 }
 
  $respuesta_92 = isset($_POST['respuesta_92']) ? $_POST['respuesta_92'] : '';
-if ($respuesta_92 === '9126-1') { 
+if ($respuesta_92 === 'datos') { 
     $verificar_92 = "correcto";
 } elseif ($respuesta_92 === '') {
     $verificar_92 = '';
@@ -952,7 +952,7 @@ if ($respuesta_92 === '9126-1') {
 }
 
  $respuesta_93 = isset($_POST['respuesta_93']) ? $_POST['respuesta_93'] : '';
-if ($respuesta_93 === '14598-1') { 
+if ($respuesta_93 === 'lotes') { 
     $verificar_93 = "correcto";
 } elseif ($respuesta_93 === '') {
     $verificar_93 = '';
@@ -961,7 +961,7 @@ if ($respuesta_93 === '14598-1') {
 }
 
  $respuesta_94 = isset($_POST['respuesta_94']) ? $_POST['respuesta_94'] : '';
-if ($respuesta_94 === '14598') { 
+if ($respuesta_94 === 'facturacion') { 
     $verificar_94 = "correcto";
 } elseif ($respuesta_94 === '') {
     $verificar_94 = '';
@@ -970,7 +970,7 @@ if ($respuesta_94 === '14598') {
 }
 
  $respuesta_95 = isset($_POST['respuesta_95']) ? $_POST['respuesta_95'] : '';
-if ($respuesta_95 === 'evaluacion') { 
+if ($respuesta_95 === 'Sistemas de entretenimiento') { 
     $verificar_95 = "correcto";
 } elseif ($respuesta_95 === '') {
     $verificar_95 = '';
@@ -979,7 +979,7 @@ if ($respuesta_95 === 'evaluacion') {
 }
 
  $respuesta_96 = isset($_POST['respuesta_96']) ? $_POST['respuesta_96'] : '';
-if ($respuesta_96 === 'producto') { 
+if ($respuesta_96 === 'personal') { 
     $verificar_96 = "correcto";
 } elseif ($respuesta_96 === '') {
     $verificar_96 = '';
@@ -988,7 +988,7 @@ if ($respuesta_96 === 'producto') {
 }
 
  $respuesta_97 = isset($_POST['respuesta_97']) ? $_POST['respuesta_97'] : '';
-if ($respuesta_97 === '1992') { 
+if ($respuesta_97 === 'juego') { 
     $verificar_97 = "correcto";
 } elseif ($respuesta_97 === '') {
     $verificar_97 = '';
@@ -997,7 +997,7 @@ if ($respuesta_97 === '1992') {
 }
 
  $respuesta_98 = isset($_POST['respuesta_98']) ? $_POST['respuesta_98'] : '';
-if ($respuesta_98 === 'funcionalidad') { 
+if ($respuesta_98 === 'Sistemas de modelado y simulación') { 
     $verificar_98 = "correcto";
 } elseif ($respuesta_98 === '') {
     $verificar_98 = '';
@@ -1006,7 +1006,7 @@ if ($respuesta_98 === 'funcionalidad') {
 }
 
  $respuesta_99 = isset($_POST['respuesta_99']) ? $_POST['respuesta_99'] : '';
-if ($respuesta_99 === 'confiabilidad') { 
+if ($respuesta_99 === 'fisicos') { 
     $verificar_99 = "correcto";
 } elseif ($respuesta_99 === '') {
     $verificar_99 = '';
@@ -1016,7 +1016,7 @@ if ($respuesta_99 === 'confiabilidad') {
 
 
  $respuesta_100 = isset($_POST['respuesta_100']) ? $_POST['respuesta_100'] : '';
-if ($respuesta_100 === 'usabilidad') { 
+if ($respuesta_100 === 'Sistemas de recolección de datos') { 
     $verificar_100 = "correcto";
 } elseif ($respuesta_100 === '') {
     $verificar_100 = '';
@@ -1025,7 +1025,7 @@ if ($respuesta_100 === 'usabilidad') {
 }
 
  $respuesta_101 = isset($_POST['respuesta_101']) ? $_POST['respuesta_101'] : '';
-if ($respuesta_101 === 'eficiencia') { 
+if ($respuesta_101 === 'datos') { 
     $verificar_101 = "correcto";
 } elseif ($respuesta_101 === '') {
     $verificar_101 = '';
@@ -1034,7 +1034,7 @@ if ($respuesta_101 === 'eficiencia') {
 }
 
  $respuesta_102 = isset($_POST['respuesta_102']) ? $_POST['respuesta_102'] : '';
-if ($respuesta_102 === 'mantenibilidad') { 
+if ($respuesta_102 === 'sensores') { 
     $verificar_102 = "correcto";
 } elseif ($respuesta_102 === '') {
     $verificar_102 = '';
@@ -1043,7 +1043,7 @@ if ($respuesta_102 === 'mantenibilidad') {
 }
 
  $respuesta_103 = isset($_POST['respuesta_103']) ? $_POST['respuesta_103'] : '';
-if ($respuesta_103 === 'portabilidad') { 
+if ($respuesta_103 === 'Sistemas de sistemas') { 
     $verificar_103 = "correcto";
 } elseif ($respuesta_103 === '') {
     $verificar_103 = '';
@@ -1052,7 +1052,7 @@ if ($respuesta_103 === 'portabilidad') {
 }
 
  $respuesta_104 = isset($_POST['respuesta_104']) ? $_POST['respuesta_104'] : '';
-if ($respuesta_104 === '3') { 
+if ($respuesta_104 === 'compuestos') { 
     $verificar_104 = "correcto";
 } elseif ($respuesta_104 === '') {
     $verificar_104 = '';
@@ -1061,7 +1061,7 @@ if ($respuesta_104 === '3') {
 }
 
  $respuesta_105 = isset($_POST['respuesta_105']) ? $_POST['respuesta_105'] : '';
-if ($respuesta_105 === 'complementarias') { 
+if ($respuesta_105 === 'sistemas') { 
     $verificar_105 = "correcto";
 } elseif ($respuesta_105 === '') {
     $verificar_105 = '';
@@ -1070,7 +1070,7 @@ if ($respuesta_105 === 'complementarias') {
 }
 
  $respuesta_106 = isset($_POST['respuesta_106']) ? $_POST['respuesta_106'] : '';
-if ($respuesta_106 === '2023') { 
+if ($respuesta_106 === 'difusos') { 
     $verificar_106 = "correcto";
 } elseif ($respuesta_106 === '') {
     $verificar_106 = '';
@@ -1079,7 +1079,7 @@ if ($respuesta_106 === '2023') {
 }
 
  $respuesta_107 = isset($_POST['respuesta_107']) ? $_POST['respuesta_107'] : '';
-if ($respuesta_107 === '2024') { 
+if ($respuesta_107 === '198') { 
     $verificar_107 = "correcto";
 } elseif ($respuesta_107 === '') {
     $verificar_107 = '';
@@ -1088,7 +1088,7 @@ if ($respuesta_107 === '2024') {
 }
 
  $respuesta_108 = isset($_POST['respuesta_108']) ? $_POST['respuesta_108'] : '';
-if ($respuesta_108 === '9') { 
+if ($respuesta_108 === '220') { 
     $verificar_108 = "correcto";
 } elseif ($respuesta_108 === '') {
     $verificar_108 = '';
@@ -1136,7 +1136,7 @@ if ($respuesta_110 === '264') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 370vh;
+    height: 380vh;
     }
 </style>
  
@@ -1439,307 +1439,289 @@ function ocultarMensaje4() {
 </head>
 <body> 
 <div class="seccion izquierda">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <p>Todavía se reportan muchos casos de proyectos de software fallidos y “fallos de software”. 
-    La ingeniería de software es criticada por ser inadecuada para el desarrollo de software moderno.
-    Sin embargo, en mi opinión, muchas de estas llamadas fallas de software son consecuencia de dos factores:</p>
+    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+     <h4>Importancia de la ingeniería de software</h4>
+
+<p>La ingeniería de software es importante por dos razones:</p>
+
+<ol>
+  <li>Cada vez más, tanto los individuos como la sociedad 
+  <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="8">   
+  de sistemas de software 
+  <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="8"> 
+  .
+    Necesitamos ser capaces de producir sistemas 
+    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="8"> 
+    y 
+    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="8"> 
+    de forma 
+    <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="8"> 
+    y 
+    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="8"> 
+    .</li>
+    
+    <p>El enfoque sistemático que se utiliza en la ingeniería de software a veces se denomina
+    <strong>
+    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="8">     
+    de software</strong>. Un 
+    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="8" readonly >
+    de software es una 
+    <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="8">
+    de 
+    <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="8">
+    que 
+    <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="8">
+    a la 
+    <input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="8">
+    de un 
+    <input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="8">
+    de 
+    <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="8">
+    . Existen cuatro actividades fundamentales 
+    que son 
+    <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="8">
+    a todos los procesos de software. Estas actividades son:</>
 
     <ol>
     <li><strong>
-    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="8">    
-    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="8">
-    </strong>: A medida que las nuevas técnicas de ingeniería de software nos 
-    ayudan a construir sistemas más grandes y complejos, las 
-    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="8">
-    cambian. Los sistemas deben 
-    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="8">
-    y entregarse más 
-    <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="8">
-    ; se requieren sistemas aún más 
-    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="8">
-    y 
-    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="8">
-    ; los sistemas deben tener 
-    nuevas capacidades que antes se consideraban imposibles. Los métodos existentes de ingeniería de software 
-    no pueden lidiar con esto, y deben desarrollarse nuevas 
-    <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="8">
-    de ingeniería de software para satisfacer
-    estas nuevas demandas.</li>
-
-    <li><strong>
-    <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="8">
-    <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="8">    
-    </strong>: Es relativamente fácil escribir programas de computadora sin utilizar
-    métodos y técnicas de ingeniería de software. Muchas empresas han incursionado en el desarrollo de software
-    a medida que sus productos y servicios han 
-    <input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="8">  
-    . No utilizan métodos de ingeniería de software en
-    su trabajo cotidiano. Como resultado, su software suele ser más costoso y menos confiable de lo que debería
-    ser. Necesitamos una mejor educación y capacitación en ingeniería de software para abordar este problema.</li>
-    </ol>
-     
-<button type="submit">Enviar</button> 
-            <?php echo $verificar_1 ?>
-<?php echo $verificar_2 ?>
-<?php echo $verificar_3 ?>
-<?php echo $verificar_4 ?>
-<?php echo $verificar_5 ?>
-<?php echo $verificar_6 ?>
-<?php echo $verificar_7 ?>
-<?php echo $verificar_8 ?>
-<?php echo $verificar_9 ?>
-<?php echo $verificar_10 ?>
-<?php echo $verificar_11 ?>
-    <hr>
-
-    <p>La noción de "ingeniería de software" fue propuesta por primera vez en
-    <input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="8">     
-    en una 
-    <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="8">
-    realizada para discutir lo que entonces se llamaba la "
-    <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="8">
-    del software" (Naur y Randell, 1969). 
-    Quedó claro que los enfoques individuales para el desarrollo de programas no se escalaban bien a
-    sistemas de software grandes y complejos. Estos eran poco confiables, costaban más de lo esperado y
-    se entregaban con retraso.</p>
-
-    <p>A lo largo de las décadas de 
     <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="8">    
-    y 
+    del software</strong>, donde los 
     <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="8">
-    , se desarrollaron una variedad de nuevas técnicas y métodos
-    de ingeniería de software, como la programación estructurada, el ocultamiento de información y el desarrollo
-    orientado a objetos. Se desarrollaron herramientas y notaciones estándar que ahora se utilizan ampliamente.</p>
-     <button type="submit">Enviar</button>
-            
-            <?php echo $verificar_12 ?>
-<?php echo $verificar_13 ?>
-<?php echo $verificar_14 ?>
-<?php echo $verificar_15 ?>
-<?php echo $verificar_16 ?>
+    e ingenieros 
+    <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="8">
+    el 
+    <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="8">
+    que se va a 
+    <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="8">
+    y las 
+    <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="8">
+    sobre su 
+    <input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>" size="8">
+    .</li>
+    <li><strong>
+    <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="8">    
+    del software</strong>, donde el software se 
+    <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="8">  
+    y se 
+    <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="8">  
+    .</li>
+    <li><strong>
+    <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="8">     
+    del software</strong>, donde se 
+    <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="8"> 
+    que el software 
+    <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="8"> 
+    con lo que 
+    el cliente requiere.</li>
+    <li><strong>
+    <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="8">    
+    del software</strong>, donde el software se 
+    <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="8"> 
+    para reflejar los cambios
+    en los 
+    <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="8"> 
+    del cliente y del mercado.</li>
+    </ol>
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_1 ?>
+    <?php echo $verificar_2 ?>
+    <?php echo $verificar_3 ?>
+    <?php echo $verificar_4 ?>
+    <?php echo $verificar_5 ?>
+    <?php echo $verificar_6 ?>
+    <?php echo $verificar_7 ?>
+    <?php echo $verificar_8 ?>
+    <?php echo $verificar_9 ?>
+    <?php echo $verificar_10 ?>
+    <?php echo $verificar_11 ?>
+    <?php echo $verificar_12 ?>
+    <?php echo $verificar_13 ?>
+    <?php echo $verificar_14 ?>
+    <?php echo $verificar_15 ?>
+    <?php echo $verificar_16 ?>
+    <?php echo $verificar_17 ?>
+    <?php echo $verificar_18 ?>
+    <?php echo $verificar_19 ?>
+    <?php echo $verificar_20 ?>
+    <?php echo $verificar_21 ?>
+    <?php echo $verificar_22 ?> 
+    <?php echo $verificar_23 ?>
+    <?php echo $verificar_24 ?>
+    <?php echo $verificar_25 ?>
+    <?php echo $verificar_26 ?>
+    <?php echo $verificar_27 ?>
+    <?php echo $verificar_28 ?>
+    <?php echo $verificar_29 ?>
+    <?php echo $verificar_30 ?>
     <hr>
 
-    <h3>¿Qué es el software?</h3>
-<p>
-  <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="8"> de 
-  <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="8"> y 
-  <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="8"> asociada.
-  Los productos de software pueden desarrollarse para un cliente en particular o para un mercado general.
-</p>
-
-<h3>¿Cuáles son los atributos de un buen software?</h3>
-<p>
-  Un buen software debe ofrecer la 
-  <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="8"> y el 
-  <input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>" size="8"> requeridos para el 
-  <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="8">, y debe ser 
-  <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="8">, 
-  <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="8"> y 
-  <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="8"> de 
-  <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="8">.
-</p>
-
-<h3>¿Qué es la ingeniería de software?</h3>
-<p>
-  La ingeniería de software es una disciplina de la ingeniería que se ocupa de todos los 
-  <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="8"> de la 
-  <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="8"> de 
-  <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="8">.
-</p>
-
-<h3>¿Cuáles son las actividades fundamentales de la ingeniería de software?</h3>
-<p>
-  <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="8"> del software, 
-  <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="8"> de software, 
-  <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="8"> del software y 
-  <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="8"> del software.
-</p>
-
-<button type="submit">Enviar</button>
-<?php echo $verificar_17 ?>
-<?php echo $verificar_18 ?>
-<?php echo $verificar_19 ?>
-<?php echo $verificar_20 ?>
-<?php echo $verificar_21 ?>
-<?php echo $verificar_22 ?>
-<?php echo $verificar_23 ?>
-<?php echo $verificar_24 ?>
-<?php echo $verificar_25 ?>
-<?php echo $verificar_26 ?>
-<?php echo $verificar_27 ?>
-<?php echo $verificar_28 ?>
-<?php echo $verificar_29 ?>
-<?php echo $verificar_30 ?>
-<?php echo $verificar_31 ?>
-<?php echo $verificar_32 ?>
-<?php echo $verificar_33 ?>
-<hr>
-<h3>¿Cuál es la diferencia entre ingeniería de software y ciencias de la computación?</h3>
-<p>
-  La ciencia de la computación se enfoca en la 
-  <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="8"> y los 
-  <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="8">; 
-  la ingeniería de software se ocupa de los aspectos 
-  <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="8"> del 
-  <input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="8"> y 
-  <input type="text" name="respuesta_38" value="<?php echo $respuesta_38; ?>" size="8"> de software útil.
-</p>
-
-<h3>¿Cuál es la diferencia entre ingeniería de software e ingeniería de sistemas?</h3>
-<p>
-  La ingeniería de sistemas se ocupa de 
-  <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="8"> los aspectos del 
-  <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="8"> de sistemas 
-  basados en computadora, incluyendo 
-  <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="8">, 
-  <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="8"> e ingeniería de 
-  <input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="8">. 
-  La ingeniería de software es 
-  <input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>" size="8"> de este proceso 
-  <input type="text" name="respuesta_45" value="<?php echo $respuesta_45; ?>" size="8">.
-</p>
-
-<h3>¿Cuáles son los desafíos clave que enfrenta la ingeniería de software?</h3>
-<p>
-  Enfrentar una diversidad creciente, demandas de 
-  <input type="text" name="respuesta_46" value="<?php echo $respuesta_46; ?>" size="8"> de entrega reducidos y el 
-  desarrollo de software 
-  <input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="8">.
-</p>
-
- <button type="submit">Enviar</button>
-            <?php echo $verificar_34 ?>
-<?php echo $verificar_35 ?>
-<?php echo $verificar_36 ?>
-<?php echo $verificar_37 ?>
-<?php echo $verificar_38 ?>
-<?php echo $verificar_39 ?>
-<?php echo $verificar_40 ?>
-<?php echo $verificar_41 ?>
-<?php echo $verificar_42 ?>
-<?php echo $verificar_43 ?>
-<?php echo $verificar_44 ?>
-<?php echo $verificar_45 ?>
-        <?php echo $verificar_46 ?>
-        <?php echo $verificar_47 ?>
-<hr>
-<h3>¿Cuáles son los costos de la ingeniería de software?</h3>
-<p>
-  Aproximadamente el 
-  <input type="text" name="respuesta_48" value="<?php echo $respuesta_48; ?>" size="8"> de los costos del software son de 
-  <input type="text" name="respuesta_49" value="<?php echo $respuesta_49; ?>" size="8">; el 
-  <input type="text" name="respuesta_50" value="<?php echo $respuesta_50; ?>" size="8"> son de 
-  <input type="text" name="respuesta_51" value="<?php echo $respuesta_51; ?>" size="8">.
-  En el caso del software a medida, los costos de 
-  <input type="text" name="respuesta_52" value="<?php echo $respuesta_52; ?>" size="8"> a menudo superan a los costos de 
-  <input type="text" name="respuesta_53" value="<?php echo $respuesta_53; ?>" size="8">.
-</p>
-
-<h3>¿Cuáles son las mejores técnicas y métodos de ingeniería de software?</h3>
-<p>
-  Aunque todos los proyectos de software deben ser gestionados y desarrollados profesionalmente, 
-  <input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>" size="8"> técnicas son apropiadas para 
-  <input type="text" name="respuesta_55" value="<?php echo $respuesta_55; ?>" size="8"> tipos de sistemas. 
-  Por ejemplo, los videojuegos deben desarrollarse siempre mediante una serie de prototipos, mientras que los sistemas de control críticos para la seguridad requieren una especificación completa y analizables. 
-  Por lo tanto, no se puede decir que un método sea mejor que otro.
-</p>
-
-<h3>¿Qué diferencias ha traído la Web a la ingeniería de software?</h3>
-<p>
-  La Web ha permitido la disponibilidad de 
-  <input type="text" name="respuesta_56" value="<?php echo $respuesta_56; ?>" size="8"> de software y la posibilidad de desarrollar sistemas altamente distribuidos basados en servicios. 
-  El desarrollo de sistemas basados en la Web ha conducido a avances importantes en los lenguajes de programación y en la reutilización de software.
-</p>
-
+    <p>Diferentes tipos de sistemas requieren diferentes procesos de desarrollo. Por ejemplo, el software 
+    en tiempo real de una aeronave debe estar completamente 
+    <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="8"> 
+    antes de que comience el desarrollo. 
+    En los sistemas de comercio electrónico, la 
+    <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="10"> 
+    y el 
+    <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="8"> 
+    usualmente se 
+    <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="8"> 
+    de manera conjunta.
+    En consecuencia, estas actividades genéricas pueden organizarse de 
+    <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="8"> 
+    formas y 
+    describirse con diferentes niveles de detalle, dependiendo del tipo de software que se esté desarrollando.
+    </p>
+    
     <button type="submit">Enviar</button>
+    <?php echo $verificar_31 ?>
+    <?php echo $verificar_32 ?>
+    <?php echo $verificar_33 ?>
+    <?php echo $verificar_34 ?>
+    <?php echo $verificar_35 ?>
+    <hr>
+    <strong>diferencia entre ingenieria de sistemas e ingenieria de software:</strong>
+
+    <p><strong>Fuentes confiables para definir esta diferencia:</strong></p>
+    <ol>
+    <li><strong>ISO / IEC / IEEE Normas</strong><br>
+    Aunque no hay una norma ISO que defina directamente la diferencia entre ambas disciplinas, las normas como:
+    <ul>
+      <li><em>ISO/IEC/IEEE 
+      <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="8">   
+      </em> (
+      <input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="8">  
+        de 
+        <input type="text" name="respuesta_38" value="<?php echo $respuesta_38; ?>" size="8">
+        de 
+        <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="8">
+        del software)</li>
+      <li><em>ISO/IEC/IEEE 
+      <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="8">  
+      </em> (
+        <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="8">
+         de 
+         <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="8">
+         de 
+         <input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="8">
+         de sistemas)</li>
+    </ul>
+    ...ayudan a entender que:
+    <ul>
+      <li> 
+      <input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>" size="8">  
+      se centra en software</li>
+      <li>
+      <input type="text" name="respuesta_45" value="<?php echo $respuesta_45; ?>" size="8">  
+       en sistemas (
+       <input type="text" name="respuesta_46" value="<?php echo $respuesta_46; ?>" size="8"> ,
+       <input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="8"> ,
+       <input type="text" name="respuesta_48" value="<?php echo $respuesta_48; ?>" size="8"> ,
+       <input type="text" name="respuesta_49" value="<?php echo $respuesta_49; ?>" size="8"> ,
+         etc.)</li>
+    </ul>
+    <p> Estas normas distinguen los ámbitos, así que sirven como referencia técnica normativa.</p>
+    </li>
+    </ol>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_36 ?>
+    <?php echo $verificar_37 ?>
+    <?php echo $verificar_38 ?>
+    <?php echo $verificar_39 ?>
+    <?php echo $verificar_40 ?>
+    <?php echo $verificar_41 ?>
+    <?php echo $verificar_42 ?>
+    <?php echo $verificar_43 ?>
+    <?php echo $verificar_44 ?>    
+    <?php echo $verificar_45 ?>
+    <?php echo $verificar_46 ?>
+    <?php echo $verificar_47 ?>
     <?php echo $verificar_48 ?>
     <?php echo $verificar_49 ?>
-    <?php echo $verificar_50 ?>
-    <?php echo $verificar_51 ?>
-    <?php echo $verificar_52 ?>
-    <?php echo $verificar_53 ?>
-    <?php echo $verificar_54 ?>
-    <?php echo $verificar_55 ?>
-    <?php echo $verificar_56 ?>
     <hr>
+    <h2>Retos generales en la ingeniería de software</h2>
 
-    <p>Los ingenieros de software se ocupan del desarrollo de productos de software (es decir, software
-    que puede ser vendido a un cliente). Existen dos tipos de productos de software:</p>
-
-    <strong>Productos 
-    <input type="text" name="respuesta_57" value="<?php echo $respuesta_57; ?>" size="12">        
-    </strong>
-    <br><br>
-    <strong>Productos 
-    <input type="text" name="respuesta_58" value="<?php echo $respuesta_58; ?>" size="12">    
-    (o a medida): </strong>
-    <br><br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_57 ?>
-    <?php echo $verificar_58 ?>
-    <hr>
-    </form>
-</div>
-
-
-
-
-<div class="seccion derecha">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h2>1.1.1 Ingeniería de software</h2>
-
-    <p>La ingeniería de software es una
-    <input type="text" name="respuesta_59" value="<?php echo $respuesta_59; ?>" size="8">        
-    de la ingeniería que se 
-    <input type="text" name="respuesta_60" value="<?php echo $respuesta_60; ?>" size="8">
-    de 
-    <input type="text" name="respuesta_61" value="<?php echo $respuesta_61; ?>" size="8">
-    los aspectos 
-    de la 
-    <input type="text" name="respuesta_62" value="<?php echo $respuesta_62; ?>" size="8">
-    de software, desde las primeras etapas de la 
-    <input type="text" name="respuesta_63" value="<?php echo $respuesta_63; ?>" size="8">
-    del sistema hasta el 
-    <input type="text" name="respuesta_64" value="<?php echo $respuesta_64; ?>" size="8">
-    del sistema una vez que se ha puesto en uso. En esta definición, hay dos frases clave:</p>
-
-    <ol>
-    <li><strong>Disciplina de la ingeniería:</strong> Los ingenieros hacen que las cosas funcionen. Aplican 
-    <input type="text" name="respuesta_65" value="<?php echo $respuesta_65; ?>" size="8">
-    , 
-    <input type="text" name="respuesta_66" value="<?php echo $respuesta_66; ?>" size="8">
-    y 
-    <input type="text" name="respuesta_67" value="<?php echo $respuesta_67; ?>" size="8"> 
-    cuando son apropiados. Sin embargo, los usan de forma 
-    <input type="text" name="respuesta_68" value="<?php echo $respuesta_68; ?>" size="8">
-    y siempre tratan de 
-    descubrir soluciones a los problemas incluso cuando no existen teorías y métodos aplicables. Los ingenieros 
-    también reconocen que deben trabajar bajo 
-    <input type="text" name="respuesta_69" value="<?php echo $respuesta_69; ?>" size="8">
-    organizacionales y financieras, por lo que buscan 
-    soluciones dentro de estos límites.</li>
-
-    <li><strong>Todos los aspectos de la producción de software:</strong> La ingeniería de software 
-    <input type="text" name="respuesta_70" value="<?php echo $respuesta_70; ?>" size="8">
-    solo 
-    se 
-    <input type="text" name="respuesta_71" value="<?php echo $respuesta_71; ?>" size="8">
-    de los procesos 
-    <input type="text" name="respuesta_72" value="<?php echo $respuesta_72; ?>" size="8">
-    del desarrollo de software. También incluye actividades como la 
-    <input type="text" name="respuesta_73" value="<?php echo $respuesta_73; ?>" size="8">
-    de proyectos de software y el desarrollo de herramientas, métodos y teorías que apoyen la producción de 
-    software.</li>
-    </ol>
-
-    <p>La ingeniería consiste en obtener resultados de la calidad requerida dentro del cronograma y
-    presupuesto establecidos. Esto a menudo implica hacer compromisos: los ingenieros no pueden ser 
-    <input type="text" name="respuesta_74" value="<?php echo $respuesta_74; ?>" size="8">
-    . Sin embargo, las personas que escriben programas para sí mismas pueden dedicar tanto 
-    tiempo como deseen al desarrollo del programa.</p>
-
-   <button type="submit">Enviar</button>
+<p>Como se discute en la siguiente sección, existen muchos tipos diferentes de software. 
+<input type="text" name="respuesta_56" value="<?php echo $respuesta_56; ?>" size="8">    
+ hay un método o técnica universal de ingeniería de software que sea aplicable a
+     todos ellos. Sin embargo, hay tres cuestiones 
+     <input type="text" name="respuesta_55" value="<?php echo $respuesta_55; ?>" size="8">
+     que afectan a muchos tipos distintos de software:</p>
+<p>  
+    <input type="text" name="respuesta_50" value="<?php echo $respuesta_50; ?>" size="8"> ,
+</p>
+<p>  
+    <input type="text" name="respuesta_51" value="<?php echo $respuesta_51; ?>" size="30"> 
+    ,
+</p>
+<p>  
+    <input type="text" name="respuesta_52" value="<?php echo $respuesta_52; ?>" size="25"> ,
+</p>
  
+ 
+<p>Por supuesto, estos 
+<input type="text" name="respuesta_53" value="<?php echo $respuesta_53; ?>" size="8">    
+son problemas 
+<input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>" size="12">
+. Por ejemplo, puede ser necesario realizar cambios 
+rápidos a un sistema heredado para proporcionarle una interfaz de servicio web. Para abordar estos desafíos,
+ necesitaremos nuevas herramientas y técnicas, así como formas innovadoras de combinar y utilizar los métodos
+  existentes de ingeniería de software.</p>
+    <button type="submit">Enviar</button>
+        <?php echo $verificar_50 ?>
+        <?php echo $verificar_51 ?>
+        <?php echo $verificar_52 ?>
+        <?php echo $verificar_53 ?>
+        <?php echo $verificar_54 ?>
+        <?php echo $verificar_55 ?>
+         <?php echo $verificar_56 ?>
+    <hr>
+
+    <h5>dos comparativas</h5>
+    <h5>Aspecto: Enfoque principal</h5>
+    <ul>
+
+    <li><strong>Ingeniería de Software:</strong> 
+    <input type="text" name="respuesta_57" value="<?php echo $respuesta_57; ?>" size="8">
+    de software: 
+    <input type="text" name="respuesta_58" value="<?php echo $respuesta_58; ?>" size="8">
+    ,
+    <input type="text" name="respuesta_59" value="<?php echo $respuesta_59; ?>" size="8">
+    , 
+    <input type="text" name="respuesta_60" value="<?php echo $respuesta_60; ?>" size="8">
+    , 
+    <input type="text" name="respuesta_61" value="<?php echo $respuesta_61; ?>" size="8">
+    </li>
+  <li><strong>Ingeniería de Sistemas:</strong> 
+  <input type="text" name="respuesta_62" value="<?php echo $respuesta_62; ?>" size="8">
+  e 
+  <input type="text" name="respuesta_63" value="<?php echo $respuesta_63; ?>" size="8">
+  de 
+  sistemas completos: 
+  <input type="text" name="respuesta_64" value="<?php echo $respuesta_64; ?>" size="8">
+  , 
+  <input type="text" name="respuesta_65" value="<?php echo $respuesta_65; ?>" size="8">
+  , 
+  <input type="text" name="respuesta_66" value="<?php echo $respuesta_66; ?>" size="8">
+  , 
+    <input type="text" name="respuesta_67" value="<?php echo $respuesta_67; ?>" size="8">
+    </li>
+    </ul>
+
+<h5>Aspecto: Alcance</h5>
+<ul>
+  <li><strong>Ingeniería de Software:</strong> Ciclo de vida del software, desde requisitos hasta 
+ <input type="text" name="respuesta_68" value="<?php echo $respuesta_68; ?>" size="8">
+</li>
+  <li><strong>Ingeniería de Sistemas:</strong> Ciclo 
+   <input type="text" name="respuesta_69" value="<?php echo $respuesta_69; ?>" size="8">
+  del sistema, desde análisis de requisitos hasta 
+  <input type="text" name="respuesta_70" value="<?php echo $respuesta_70; ?>" size="8">
+  y soporte</li>
+</ul>
+<br>
+<button type="submit">Enviar</button>
+<?php echo $verificar_57 ?>
+<?php echo $verificar_58 ?>
 <?php echo $verificar_59 ?>
 <?php echo $verificar_60 ?>
 <?php echo $verificar_61 ?>
@@ -1752,157 +1734,188 @@ function ocultarMensaje4() {
 <?php echo $verificar_68 ?>
 <?php echo $verificar_69 ?>
 <?php echo $verificar_70 ?>
-<?php echo $verificar_71 ?>
-<?php echo $verificar_72 ?>
-<?php echo $verificar_73 ?>
-<?php echo $verificar_74 ?>
 <hr>
 
-<h3>¿Por qué se creó ISO/IEC 25000?</h3>
-<p>
-  Porque <strong>ISO/IEC 
- <input type="text" name="respuesta_75" value="<?php echo $respuesta_75; ?>" size="8">
-  </strong> y
-  <input type="text" name="respuesta_76" value="<?php echo $respuesta_76; ?>" size="8">
-    eran útiles pero tenían problemas:
-</p>
-    <ul>
-    <li>No estaban bien 
-    <input type="text" name="respuesta_77" value="<?php echo $respuesta_77; ?>" size="8">  
-    entre sí.</li>
-    <li>No cubrían todos los aspectos del 
-    <input type="text" name="respuesta_78" value="<?php echo $respuesta_78; ?>" size="8">  
-    de 
-    <input type="text" name="respuesta_79" value="<?php echo $respuesta_79; ?>" size="8">
-    de 
-    <input type="text" name="respuesta_80" value="<?php echo $respuesta_80; ?>" size="8">
-    .</li>
-    <li>No definían claramente cómo aplicar 
-    <input type="text" name="respuesta_81" value="<?php echo $respuesta_81; ?>" size="8">  
-    , 
-    <input type="text" name="respuesta_82" value="<?php echo $respuesta_82; ?>" size="8">
-    y 
-    <input type="text" name="respuesta_83" value="<?php echo $respuesta_83; ?>" size="8">
-    .</li>
-    </ul>
-    <p>
-    <strong>ISO/IEC </strong>
-    <input type="text" name="respuesta_94" value="<?php echo $respuesta_94; ?>" size="8">
-    era complementaria, enfocada en la 
-    <input type="text" name="respuesta_95" value="<?php echo $respuesta_95; ?>" size="8">
-    del 
-    <input type="text" name="respuesta_96" value="<?php echo $respuesta_96; ?>" size="8">
 
-    </p>
-    <p>
-        Por eso, ISO creó
-        <input type="text" name="respuesta_84" value="<?php echo $respuesta_84; ?>" size="8">
-        (<em>Software product Quality Requirements and Evaluation</em>), que incluye las normas 
-        <strong>ISO/IEC 
-        <input type="text" name="respuesta_85" value="<?php echo $respuesta_85; ?>" size="8">    
-        a
-        <input type="text" name="respuesta_86" value="<?php echo $respuesta_86; ?>" size="8">
-        </strong>.
-    </p>
-
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_75 ?>
-    <?php echo $verificar_76 ?>
-    <?php echo $verificar_77 ?>
-    <?php echo $verificar_78 ?>
-    <?php echo $verificar_79 ?>
-    <?php echo $verificar_80 ?>
-    <?php echo $verificar_81 ?>
-    <?php echo $verificar_82 ?>
-    <?php echo $verificar_83 ?>
-    <?php echo $verificar_84 ?>
-    <?php echo $verificar_85 ?>
-    <?php echo $verificar_86 ?>
-    <hr>
-
- 
+<h3>Interacción entre ambos roles</h3>
 <ul>
+  <li>El <strong>ingeniero de sistemas</strong> define requisitos y 
+  <input type="text" name="respuesta_71" value="<?php echo $respuesta_71; ?>" size="8">
+   del sistema completo.</li>
+  <li>El <strong>ingeniero de software</strong> se centra en construir el software dentro de esa arquitectura.</li>
+  <li>Trabajan juntos: el primero coordina, el segundo ejecuta el 
+  <input type="text" name="respuesta_72" value="<?php echo $respuesta_72; ?>" size="8">  
+  de software.</li>
+</ul>
+<br>
+<button type="submit">Enviar</button>
+<?php echo $verificar_71 ?>
+<?php echo $verificar_72 ?>
+    <hr>
+    
+    <h2>1.1.2 Diversidad en la ingeniería de software</h2>
+
+<p>La ingeniería de software es un enfoque 
+  <input type="text" name="respuesta_73" value="<?php echo $respuesta_73; ?>" size="8">     
+para la 
+  <input type="text" name="respuesta_74" value="<?php echo $respuesta_74; ?>" size="8"> 
+de software que toma en cuenta aspectos prácticos como el costo, el cronograma y la confiabilidad, así como las necesidades de los clientes y productores de software. La forma en que este enfoque sistemático se implementa en la práctica varía enormemente dependiendo de la organización que desarrolla el software, del tipo de software, y de las personas involucradas en el proceso de desarrollo.</p>
+
+ 
+<p>Quizás el factor más significativo para determinar qué 
+  <input type="text" name="respuesta_75" value="<?php echo $respuesta_75; ?>" size="8">     
+y 
+  <input type="text" name="respuesta_76" value="<?php echo $respuesta_76; ?>" size="8"> 
+de ingeniería de software 
+son más importantes es el tipo de 
+  <input type="text" name="respuesta_77" value="<?php echo $respuesta_77; ?>" size="8"> 
+que se está desarrollando. Existen muchos tipos diferentes de aplicaciones, incluyendo:</p>
+
+<ol>
   <li>
-    <strong>ISO/IEC 25010 - Modelo de calidad:</strong>
-    <p>Describe el 
-    <input type="text" name="respuesta_87" value="<?php echo $respuesta_87; ?>" size="8">    
-    para la <em>
-    <input type="text" name="respuesta_88" value="<?php echo $respuesta_88; ?>" size="8">     
-    de 
-    <input type="text" name="respuesta_89" value="<?php echo $respuesta_89; ?>" size="8"> 
-    y 
-    <input type="text" name="respuesta_90" value="<?php echo $respuesta_90; ?>" size="8"> 
-    de software</em> y la <em>calidad en 
-    <input type="text" name="respuesta_91" value="<?php echo $respuesta_91; ?>" size="8">     
-
-    </em>.</p>
-    <p>Este documento presenta <strong>características</strong> y <strong>subcaracterísticas</strong> 
-    tanto para la calidad del producto como para la calidad en uso.</p>
-    <p><em>Reemplaza a las normas ISO/IEC 
-    <input type="text" name="respuesta_92" value="<?php echo $respuesta_92; ?>" size="8">     
-    e ISO/IEC 
-    <input type="text" name="respuesta_93" value="<?php echo $respuesta_93; ?>" size="8"> 
-    .</em></p>
+    <strong>
+    <input type="text" name="respuesta_78" value="<?php echo $respuesta_78; ?>" size="25">     
+    </strong>: Son sistemas de aplicación que se ejecutan en una computadora 
+      <input type="text" name="respuesta_79" value="<?php echo $respuesta_79; ?>" size="8"> 
+    , como un PC. Incluyen toda la funcionalidad necesaria y no necesitan estar conectadas 
+    a una 
+    <input type="text" name="respuesta_80" value="<?php echo $respuesta_80; ?>" size="8"> 
+    . Ejemplos de este tipo de aplicaciones son programas de 
+    <input type="text" name="respuesta_81" value="<?php echo $respuesta_81; ?>" size="8"> 
+    en un PC, software de CAD, programas
+     de edición de fotos, etc.
   </li>
- 
-    <button onmousedown="mostrarImagen2()" onmouseup="ocultarImagen2()">Ayuda</button>
-    <!-- Elemento para mostrar la imagen -->
- 
-    <img id="imagenMostrada2" src="../../../../img/iso.png"  style="display: none; max-width: 100%" width="460">
+</ol>
 
-    <script>
-        function mostrarImagen2() {
-        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+<button type="submit">Enviar</button>
+<?php echo $verificar_73 ?>
+<?php echo $verificar_74 ?>
+<?php echo $verificar_75 ?>
+<?php echo $verificar_76 ?>
+<?php echo $verificar_77 ?>
+<?php echo $verificar_78 ?>
+<?php echo $verificar_79 ?>
+<?php echo $verificar_80 ?>
+<?php echo $verificar_81 ?>
+    </form>
+</div>
 
-        // Mostrar la imagen
-        imagenMostrada2.style.display = 'block';
-        }
 
-        function ocultarImagen2() {
-        var imagenMostrada2 = document.getElementById('imagenMostrada2');
 
-        // Ocultar la imagen al soltar el botón
-        imagenMostrada2.style.display = 'none';
-        }
-    </script>
-    <br><br>
+
+<div class="seccion derecha">
+    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+
+ <ol start="3">
+       <li>
+    <strong> 
+<input type="text" name="respuesta_82" value="<?php echo $respuesta_82; ?>" size="45"> 
+</strong>: Son aplicaciones que se ejecutan en una computadora 
+<input type="text" name="respuesta_83" value="<?php echo $respuesta_83; ?>" size="8"> 
+y a las que los usuarios acceden desde sus propios PCs o terminales. Obviamente, esto incluye aplicaciones web 
+como las de comercio electrónico, donde se puede interactuar con un sistema remoto para comprar bienes y servicios.
+ Esta clase de aplicaciones también incluye sistemas 
+ <input type="text" name="respuesta_84" value="<?php echo $respuesta_84; ?>" size="12">
+ , donde una empresa proporciona acceso a sus
+  sistemas a través de un navegador web o de un programa cliente de propósito específico.
+  </li>
+
+  <li>
+    <strong>
+    <input type="text" name="respuesta_85" value="<?php echo $respuesta_85; ?>" size="35">     
+    </strong>: Son sistemas de software que 
+    <input type="text" name="respuesta_86" value="<?php echo $respuesta_86; ?>" size="9"> 
+    y gestionan 
+    <input type="text" name="respuesta_87" value="<?php echo $respuesta_87; ?>" size="9"> 
+    de 
+    <input type="text" name="respuesta_88" value="<?php echo $respuesta_88; ?>" size="9"> 
+    . Numéricamente, probablemente existen más sistemas 
+    <input type="text" name="respuesta_89" value="<?php echo $respuesta_89; ?>" size="9"> 
+    que cualquier otro tipo de sistema.
+     Ejemplos incluyen el software en un 
+    <input type="text" name="respuesta_90" value="<?php echo $respuesta_90; ?>" size="15"> 
+    </li>
+  <li>
+    <strong>
+    <input type="text" name="respuesta_91" value="<?php echo $respuesta_91; ?>" size="38">     
+    </strong>: Son
+     sistemas empresariales diseñados para procesar 
+     <input type="text" name="respuesta_92" value="<?php echo $respuesta_92; ?>" size="8"> 
+     en grandes 
+     <input type="text" name="respuesta_93" value="<?php echo $respuesta_93; ?>" size="8"> 
+     . Procesan grandes
+      cantidades de entradas individuales para generar salidas correspondientes. Ejemplos 
+      incluyen sistemas de 
+      <input type="text" name="respuesta_94" value="<?php echo $respuesta_94; ?>" size="8">
+      periódica.
+  </li>
+        <br><br>
         <button type="submit">Enviar</button>
+<?php echo $verificar_82 ?>
+<?php echo $verificar_83 ?>
+<?php echo $verificar_84 ?>
+<?php echo $verificar_85 ?>
+<?php echo $verificar_86 ?>
 <?php echo $verificar_87 ?>
 <?php echo $verificar_88 ?>
+
 <?php echo $verificar_89 ?>
 <?php echo $verificar_90 ?>
 <?php echo $verificar_91 ?>
 <?php echo $verificar_92 ?>
 <?php echo $verificar_93 ?>
-   
-</ul>
+<?php echo $verificar_94 ?>
+<hr>
+<br>
 
-    <hr>
-    version 9126:
-    <h2>2. Norma ISO 9126</h2>
-<p>
-  Esta norma fue publicada en 
-  <input type="text" name="respuesta_97" value="<?php echo $respuesta_97; ?>" size="8">
-  bajo el nombre de 
-  <em>Information technology - Software product evaluation: Quality characteristics and guidelines for their use</em> 
-  (Tecnologías de la información - Evaluación de productos de software: Características de calidad y lineamientos para su uso).
-</p>
-
-<p>
-  La evaluación de la calidad de esta certificación toma como base seis aspectos:
-</p>
-
-<ul>
-  <li><input type="text" name="respuesta_98" value="<?php echo $respuesta_98; ?>" size="8"></li>
-  <li><input type="text" name="respuesta_99" value="<?php echo $respuesta_99; ?>" size="8"></li>
-  <li><input type="text" name="respuesta_100" value="<?php echo $respuesta_100; ?>" size="8"></li>
-  <li><input type="text" name="respuesta_101" value="<?php echo $respuesta_101; ?>" size="8"></li>
-  <li><input type="text" name="respuesta_102" value="<?php echo $respuesta_102; ?>" size="8"></li>
-  <li><input type="text" name="respuesta_103" value="<?php echo $respuesta_103; ?>" size="8"></li>
-</ul>
-
-
-<button type="submit">Enviar</button>
+  <li>
+    <strong>
+    <input type="text" name="respuesta_95" value="<?php echo $respuesta_95; ?>" size="38">        
+    </strong>: Son sistemas destinados 
+    principalmente al uso 
+    <input type="text" name="respuesta_96" value="<?php echo $respuesta_96; ?>" size="8"> 
+    y cuyo objetivo es entretener al usuario. La mayoría de estos
+    sistemas son algún tipo de 
+    <input type="text" name="respuesta_97" value="<?php echo $respuesta_97; ?>" size="8"> 
+    . La calidad de la interacción del usuario es la característica
+    distintiva más importante en estos sistemas.
+  </li>
+  <li>
+    <strong>
+    <input type="text" name="respuesta_98" value="<?php echo $respuesta_98; ?>" size="38">     
+    </strong>: Son
+    sistemas desarrollados por científicos e ingenieros para modelar procesos 
+    <input type="text" name="respuesta_99" value="<?php echo $respuesta_99; ?>" size="8"> 
+    o situaciones 
+    que incluyen muchos objetos separados e interrelacionados. Suelen requerir gran capacidad de cálculo
+    y necesitan sistemas paralelos de alto rendimiento para su ejecución.
+  </li>
+  <li>
+    <strong>
+    <input type="text" name="respuesta_100" value="<?php echo $respuesta_100; ?>" size="38">     
+    </strong>: Son sistemas que recopilan
+    <input type="text" name="respuesta_101" value="<?php echo $respuesta_101; ?>" size="9">
+     del entorno utilizando un conjunto de 
+     <input type="text" name="respuesta_102" value="<?php echo $respuesta_102; ?>" size="9">
+     y envían esos datos a otros sistemas para su 
+    procesamiento. El software debe interactuar con los sensores y, a menudo, se instala en ambientes hostiles, 
+    como dentro de un motor o en una ubicación remota.
+  </li>
+  <li>
+    <strong>
+     <input type="text" name="respuesta_103" value="<?php echo $respuesta_103; ?>" size="38">    
+     </strong>: Son sistemas 
+       <input type="text" name="respuesta_104" value="<?php echo $respuesta_104; ?>" size="8">  
+     por varios otros
+      <input type="text" name="respuesta_105" value="<?php echo $respuesta_105; ?>" size="8">  
+      de software. Algunos pueden ser productos de software genéricos, como un programa de hoja de
+    cálculo. Otros sistemas en la ensambladura pueden estar especialmente escritos para ese entorno.
+  </li>
+</ol>
+    <br>
+    <button type="submit">Enviar</button>
+<?php echo $verificar_95 ?>
+<?php echo $verificar_96 ?>
 <?php echo $verificar_97 ?>
 <?php echo $verificar_98 ?>
 <?php echo $verificar_99 ?>
@@ -1910,54 +1923,17 @@ function ocultarMensaje4() {
 <?php echo $verificar_101 ?>
 <?php echo $verificar_102 ?>
 <?php echo $verificar_103 ?>
-<hr>
-
-<p>
-  El <strong>ISO/IEC 25010:2011</strong> fue reemplazado y expandido en 
-   <input type="text" name="respuesta_104" value="<?php echo $respuesta_104; ?>" size="8"> 
-  normas 
-  <input type="text" name="respuesta_105" value="<?php echo $respuesta_105; ?>" size="8"> 
-  , 
-  publicadas entre 
-  <input type="text" name="respuesta_106" value="<?php echo $respuesta_106; ?>" size="8"> 
-  y 
-  <input type="text" name="respuesta_107" value="<?php echo $respuesta_107; ?>" size="8"> 
-  .
-</p>
-    <button type="submit">Enviar</button>
 <?php echo $verificar_104 ?>
 <?php echo $verificar_105 ?>
+   <hr>
+      <p>
+Por supuesto, los límites entre estos tipos de sistemas son 
+      <input type="text" name="respuesta_106" value="<?php echo $respuesta_106; ?>" size="8">  
+
+. Si desarrollas un juego para un teléfono móvil, debes tener en cuenta las mismas restricciones (energía, interacción con el hardware) que los desarrolladores del software del teléfono. Los sistemas de procesamiento por lotes a menudo se utilizan junto con sistemas basados en la web. Por ejemplo, en una empresa, los reclamos de gastos de viaje pueden enviarse a través de una aplicación web pero procesarse en una aplicación por lotes para el pago mensual.
+</p>
+ <button type="submit">Enviar</button>
 <?php echo $verificar_106 ?>
-<?php echo $verificar_107 ?>
-
- <button  class="btn btn-info"onmousedown=mostrarImagen10() onmouseup=ocultaImagen10()>Ayuda</button>
-                    
-        <img id="imagenMostrada10" src="../../../../img/historica.png" alt='' style="display: none; max-width: 50%">
-                    <script>
-                        function mostrarImagen10() {
-                        var imagenMostrada = document.getElementById('imagenMostrada10');
-
-                        // Mostrar la imagen
-                        imagenMostrada.style.display = 'block';
-                        }
-
-                        function ocultarImagen10() {
-                        var imagenMostrada = document.getElementById('imagenMostrada10');
-
-                        // Ocultar la imagen al soltar el botón
-                        imagenMostrada.style.display = 'none';
-                         }
-                    </script>
-
-    <hr>
-    Actualmente El modelo define 
-    <input type="text" name="respuesta_108" value="<?php echo $respuesta_108; ?>" size="8"> 
-    características de calidad, cada una con subcaracterísticas.
-    <br><br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_108 ?>
-    <hr>
-    <strong>Fin de la hora actual, se llego al limite de inputs.</strong>
     </form>
 </div>
 

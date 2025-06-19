@@ -106,7 +106,11 @@ function handleSubmit(event) {
   <li><strong>Evolución del software</strong>, donde el software se modifica para reflejar los cambios en los requerimientos del cliente y del mercado.</li>
 </ol>
 
-<p>Diferentes tipos de sistemas requieren diferentes procesos de desarrollo. Por ejemplo, el software en tiempo real de una aeronave debe estar completamente especificado antes de que comience el desarrollo. En los sistemas de comercio electrónico, la especificación y el programa usualmente se desarrollan de manera conjunta. En consecuencia, estas actividades genéricas pueden organizarse de distintas formas y describirse con diferentes niveles de detalle, dependiendo del tipo de software que se esté desarrollando. Describo los procesos de software con más detalle en el Capítulo 2.</p>
+<p>Diferentes tipos de sistemas requieren diferentes procesos de desarrollo. Por ejemplo, el software en 
+    tiempo real de una aeronave debe estar completamente especificado antes de que comience el desarrollo.
+     En los sistemas de comercio electrónico, la especificación y el programa usualmente se desarrollan de 
+     manera conjunta. En consecuencia, estas actividades genéricas pueden organizarse de distintas formas y 
+     describirse con diferentes niveles de detalle, dependiendo del tipo de software que se esté desarrollando. Describo los procesos de software con más detalle en el Capítulo 2.</p>
 
 <h3>Relación de la ingeniería de software con otras disciplinas</h3>
 
