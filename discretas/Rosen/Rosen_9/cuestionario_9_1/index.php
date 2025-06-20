@@ -1896,7 +1896,7 @@ function ocultarMensaje4() {
     <button type="submit"   >Mostrar Solución</button>
         
     </form>
-</div>
+</div> 
 
 <div class="centered-container">
     <a

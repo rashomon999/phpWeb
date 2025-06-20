@@ -1585,7 +1585,8 @@ tiempo anterior por una constante. Por ejemplo, en una supercomputadora podríam
 
 <h3>Definición 1</h3>
 <p>
-  Sean \( f \) y \( g \) funciones del conjunto de los enteros o del conjunto de los números reales al conjunto de los números reales. Decimos que \( f(x) \) es \( O(g(x)) \) si existen constantes \( C \) y \( k \) tales que
+  Sean \( f \) y \( g \) funciones del conjunto de los enteros o del conjunto de los números reales al conjunto de los
+   números reales. Decimos que \( f(x) \) es \( O(g(x)) \) si existen constantes \( C \) y \( k \) tales que
 </p>
 
 <p style="text-align: center;">

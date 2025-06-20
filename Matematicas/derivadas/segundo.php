@@ -12,8 +12,6 @@ $antiderivada2_resp = '';
 $constante_efecto = '';
 $igual_derivada = '';
 $derivada_cero = '';
-//
-//
 
 $pregunta_fu = "";
 $pregunta_du = "";
@@ -21,7 +19,6 @@ $pregunta_du2 = "";
 $pregunta_dx = "";
 $pregunta_x = "";
 $pregunta_fr = "";
-
 
 $verificar_du = "";
 $verificar_du2 = "";
@@ -62,208 +59,287 @@ $verificar_d13 = "";
 $verificar_d14 = "";
 $verificar_d15 = "";
 
+$mostrar_solucion = '';
+
 // Procesar el formulario cuando se envía
 if ($_POST) {
-    // Capturar las respuestas enviadas
-    $antiderivada = isset($_POST['antiderivada']) ? $_POST['antiderivada'] : '';
-    $antiderivada2_resp = isset($_POST['antiderivada2_resp']) ? $_POST['antiderivada2_resp'] : '';
-    $constante_efecto = isset($_POST['constante_efecto']) ? $_POST['constante_efecto'] : '';
-    $igual_derivada = isset($_POST['igual_derivada']) ? $_POST['igual_derivada'] : '';
-    $derivada_cero = isset($_POST['derivada_cero']) ? $_POST['derivada_cero'] : '';
-    $proceso = isset($_POST['proceso']) ? $_POST['proceso'] : '';
-
-    // Verificar las respuestas
-    // Verificar la primera pregunta
-    if ($antiderivada === 'es_f') {
+    $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
+    
+    if ($mostrar_solucion === 'mostrar_solucion') {  
+        // Establecer todas las respuestas correctas
         $verificar_1 = "correcto";
-    } else {
-        $verificar_1 = "incorrecto";
-    }
-
-    // Verificar la segunda pregunta
-    if (strtolower(trim($antiderivada2_resp)) === 'x^3 + c') {
         $verificar_2 = "correcto";
-    } else {
-        $verificar_2 = "incorrecto";
-    }
-
-    // Verificar la tercera pregunta
-    if ($constante_efecto === 'es_aditiva') {
         $verificar_3 = "correcto";
-    } else {
-        $verificar_3 = "incorrecto";
-    }
-
-    // Verificar la cuarta pregunta
-    if ($igual_derivada === 'diferencia_constante') {
         $verificar_4 = "correcto";
-    } else {
-        $verificar_4 = "incorrecto";
-    }
-
-    // Verificar la quinta pregunta
-    if ($derivada_cero === 'constante') {
         $verificar_5 = "correcto";
-    } else {
-        $verificar_5 = "incorrecto";
-    }
-
-    $pregunta_fu = isset($_POST['fu']) ? $_POST['fu'] : '';
-    if ($pregunta_fu === "F'(u(x))") {
+        
+        // Establecer los valores correctos
+        $antiderivada = 'es_f';
+        $antiderivada2_resp = 'x^3 + c';
+        $constante_efecto = 'es_aditiva';
+        $igual_derivada = 'diferencia_constante';
+        $derivada_cero = 'constante';
+        
+        // Variables de sustitución
+        $pregunta_fu = "F'(u(x))";
         $verificar_fu = "correcto";
-    } else {
-        $verificar_fu = "incorrecto";
-    }
-
-    $pregunta_du = isset($_POST['du']) ? $_POST['du'] : '';
-    if ($pregunta_du === "F") {
+        
+        $pregunta_du = "F";
         $verificar_du = "correcto";
-    }    else {
-        $verificar_du = "incorrecto";
-    }
-
-    $pregunta_du2 = isset($_POST['du2']) ? $_POST['du2'] : '';
-    if ($pregunta_du2 === "u") {
+        
+        $pregunta_du2 = "u";
         $verificar_du2 = "correcto";
-    }    else {
-        $verificar_du2 = "incorrecto";
-    }
-
-    $pregunta_dx = isset($_POST['dx']) ? $_POST['dx'] : '';
-    if ($pregunta_dx === "du/dx") {
+        
+        $pregunta_dx = "du/dx";
         $verificar_dx = "correcto";
-    }    else {
-        $verificar_dx = "incorrecto";
-    }
-
-
-    $pregunta_fr = isset($_POST['fr']) ? $_POST['fr'] : '';
-    if ($pregunta_fr === "u(x)") {
+        
+        $pregunta_fr = "u(x)";
         $verificar_fr = "correcto";
-    }    else {
-        $verificar_fr = "incorrecto";
-    }
-
-    $pregunta_x = isset($_POST['x']) ? $_POST['x'] : '';
-    if ($pregunta_x === "x") {
+        
+        $pregunta_x = "x";
         $verificar_x = "correcto";
-    }    else {
-        $verificar_x = "incorrecto";
-    }
-
-    $pregunta_d1 = isset($_POST['d1']) ? $_POST['d1'] : '';
-    if ($pregunta_d1 === "f'(x)") {
+        
+        // Reglas de derivación
+        $pregunta_d1 = "f'(x)";
         $verificar_d1 = "correcto";
-    }    else {
-        $verificar_d1 = "incorrecto";
+        
+        $pregunta_d2 = "g(x)";
+        $verificar_d2 = "correcto";
+        
+        $pregunta_d3 = "+";
+        $verificar_d3 = "correcto";
+        
+        $pregunta_d4 = "f(x)";
+        $verificar_d4 = "correcto";
+        
+        $pregunta_d5 = "g'(x)";
+        $verificar_d5 = "correcto";
+        
+        $pregunta_d6 = "f'(x)";
+        $verificar_d6 = "correcto";
+        
+        $pregunta_d7 = "g(x)";
+        $verificar_d7 = "correcto";
+        
+        $pregunta_d8 = "-";
+        $verificar_d8 = "correcto";
+        
+        $pregunta_d9 = "f(x)";
+        $verificar_d9 = "correcto";
+        
+        $pregunta_d10 = "g'(x)";
+        $verificar_d10 = "correcto";
+        
+        $pregunta_d11 = "(g(x))^2";
+        $verificar_d11 = "correcto";
+        
+        $pregunta_d12 = "n*u^n-1*u'";
+        $verificar_d12 = "correcto";
+        
+        $pregunta_d13 = "u'";
+        $verificar_d13 = "correcto";
+        
+        $pregunta_d14 = "2";
+        $verificar_d14 = "correcto";
+        
+        $pregunta_d15 = "\sqrt{u}";
+        $verificar_d15 = "correcto";
+    } else {
+        // Capturar las respuestas enviadas
+        $antiderivada = isset($_POST['antiderivada']) ? $_POST['antiderivada'] : '';
+        $antiderivada2_resp = isset($_POST['antiderivada2_resp']) ? $_POST['antiderivada2_resp'] : '';
+        $constante_efecto = isset($_POST['constante_efecto']) ? $_POST['constante_efecto'] : '';
+        $igual_derivada = isset($_POST['igual_derivada']) ? $_POST['igual_derivada'] : '';
+        $derivada_cero = isset($_POST['derivada_cero']) ? $_POST['derivada_cero'] : '';
+        $proceso = isset($_POST['proceso']) ? $_POST['proceso'] : '';
+
+        // Verificar las respuestas
+        if ($antiderivada === 'es_f') {
+            $verificar_1 = "correcto";
+        } else {
+            $verificar_1 = "incorrecto";
+        }
+
+        if (strtolower(trim($antiderivada2_resp)) === 'x^3 + c') {
+            $verificar_2 = "correcto";
+        } else {
+            $verificar_2 = "incorrecto";
+        }
+
+        if ($constante_efecto === 'es_aditiva') {
+            $verificar_3 = "correcto";
+        } else {
+            $verificar_3 = "incorrecto";
+        }
+
+        if ($igual_derivada === 'diferencia_constante') {
+            $verificar_4 = "correcto";
+        } else {
+            $verificar_4 = "incorrecto";
+        }
+
+        if ($derivada_cero === 'constante') {
+            $verificar_5 = "correcto";
+        } else {
+            $verificar_5 = "incorrecto";
+        }
+
+        $pregunta_fu = isset($_POST['fu']) ? $_POST['fu'] : '';
+        if ($pregunta_fu === "F'(u(x))") {
+            $verificar_fu = "correcto";
+        } else {
+            $verificar_fu = "incorrecto";
+        }
+
+        $pregunta_du = isset($_POST['du']) ? $_POST['du'] : '';
+        if ($pregunta_du === "F") {
+            $verificar_du = "correcto";
+        } else {
+            $verificar_du = "incorrecto";
+        }
+
+        $pregunta_du2 = isset($_POST['du2']) ? $_POST['du2'] : '';
+        if ($pregunta_du2 === "u") {
+            $verificar_du2 = "correcto";
+        } else {
+            $verificar_du2 = "incorrecto";
+        }
+
+        $pregunta_dx = isset($_POST['dx']) ? $_POST['dx'] : '';
+        if ($pregunta_dx === "du/dx") {
+            $verificar_dx = "correcto";
+        } else {
+            $verificar_dx = "incorrecto";
+        }
+
+        $pregunta_fr = isset($_POST['fr']) ? $_POST['fr'] : '';
+        if ($pregunta_fr === "u(x)") {
+            $verificar_fr = "correcto";
+        } else {
+            $verificar_fr = "incorrecto";
+        }
+
+        $pregunta_x = isset($_POST['x']) ? $_POST['x'] : '';
+        if ($pregunta_x === "x") {
+            $verificar_x = "correcto";
+        } else {
+            $verificar_x = "incorrecto";
+        }
+
+        $pregunta_d1 = isset($_POST['d1']) ? $_POST['d1'] : '';
+        if ($pregunta_d1 === "f'(x)") {
+            $verificar_d1 = "correcto";
+        } else {
+            $verificar_d1 = "incorrecto";
+        }
+
+        $pregunta_d2 = isset($_POST['d2']) ? $_POST['d2'] : '';
+        if ($pregunta_d2 === "g(x)") {
+            $verificar_d2 = "correcto";
+        } else {
+            $verificar_d2 = "incorrecto";
+        }
+
+        $pregunta_d3 = isset($_POST['d3']) ? $_POST['d3'] : '';
+        if ($pregunta_d3 === "+") {
+            $verificar_d3 = "correcto";
+        } else {
+            $verificar_d3 = "incorrecto";
+        }
+
+        $pregunta_d4 = isset($_POST['d4']) ? $_POST['d4'] : '';
+        if ($pregunta_d4 === "f(x)") {
+            $verificar_d4 = "correcto";
+        } else {
+            $verificar_d4 = "incorrecto";
+        }
+
+        $pregunta_d5 = isset($_POST['d5']) ? $_POST['d5'] : '';
+        if ($pregunta_d5 === "g'(x)") {
+            $verificar_d5 = "correcto";
+        } else {
+            $verificar_d5 = "incorrecto";
+        }
+
+        $pregunta_d6 = isset($_POST['d6']) ? $_POST['d6'] : '';
+        if ($pregunta_d6 === "f'(x)") {
+            $verificar_d6 = "correcto";
+        } else {
+            $verificar_d6 = "incorrecto";
+        }
+
+        $pregunta_d7 = isset($_POST['d7']) ? $_POST['d7'] : '';
+        if ($pregunta_d7 === "g(x)") {
+            $verificar_d7 = "correcto";
+        } else {
+            $verificar_d7 = "incorrecto";
+        }
+
+        $pregunta_d8 = isset($_POST['d8']) ? $_POST['d8'] : '';
+        if ($pregunta_d8 === "-") {
+            $verificar_d8 = "correcto";
+        } else {
+            $verificar_d8 = "incorrecto";
+        }
+
+        $pregunta_d9 = isset($_POST['d9']) ? $_POST['d9'] : '';
+        if ($pregunta_d9 === "f(x)") {
+            $verificar_d9 = "correcto";
+        } else {
+            $verificar_d9 = "incorrecto";
+        }
+
+        $pregunta_d10 = isset($_POST['d10']) ? $_POST['d10'] : '';
+        if ($pregunta_d10 === "g'(x)") {
+            $verificar_d10 = "correcto";
+        } else {
+            $verificar_d10 = "incorrecto";
+        }
+
+        $pregunta_d11 = isset($_POST['d11']) ? $_POST['d11'] : '';
+        if ($pregunta_d11 === "(g(x))^2") {
+            $verificar_d11 = "correcto";
+        } else {
+            $verificar_d11 = "incorrecto";
+        }
+
+        $pregunta_d12 = isset($_POST['d12']) ? $_POST['d12'] : '';
+        if ($pregunta_d12 === "n*u^n-1*u'") {
+            $verificar_d12 = "correcto";
+        } else {
+            $verificar_d12 = "incorrecto";
+        }
+
+        $pregunta_d13 = isset($_POST['d13']) ? $_POST['d13'] : '';
+        if ($pregunta_d13 === "u'") {
+            $verificar_d13 = "correcto";
+        } else {
+            $verificar_d13 = "incorrecto";
+        }
+
+        $pregunta_d14 = isset($_POST['d14']) ? $_POST['d14'] : '';
+        if ($pregunta_d14 === "2") {
+            $verificar_d14 = "correcto";
+        } else {
+            $verificar_d14 = "incorrecto";
+        }
+
+        $pregunta_d15 = isset($_POST['d15']) ? $_POST['d15'] : '';
+        if ($pregunta_d15 === "\sqrt{u}") {
+            $verificar_d15 = "correcto";
+        } else {
+            $verificar_d15 = "incorrecto";
+        }
     }
-
-    $pregunta_d2 = isset($_POST['d2']) ? $_POST['d2'] : '';
-if ($pregunta_d2 === "g(x)") {
-    $verificar_d2 = "correcto";
-} else {
-    $verificar_d2 = "incorrecto";
-}
-
-$pregunta_d3 = isset($_POST['d3']) ? $_POST['d3'] : '';
-if ($pregunta_d3 === "+") {
-    $verificar_d3 = "correcto";
-} else {
-    $verificar_d3 = "incorrecto";
-}
-
-$pregunta_d4 = isset($_POST['d4']) ? $_POST['d4'] : '';
-if ($pregunta_d4 === "f(x)") {
-    $verificar_d4 = "correcto";
-} else {
-    $verificar_d4 = "incorrecto";
-}
-
-$pregunta_d5 = isset($_POST['d5']) ? $_POST['d5'] : '';
-if ($pregunta_d5 === "g'(x)") {
-    $verificar_d5 = "correcto";
-} else {
-    $verificar_d5 = "incorrecto";
-}
-
-$pregunta_d6 = isset($_POST['d6']) ? $_POST['d6'] : '';
-if ($pregunta_d6 === "f'(x)") {
-    $verificar_d6 = "correcto";
-} else {
-    $verificar_d6 = "incorrecto";
-}
-
-$pregunta_d7 = isset($_POST['d7']) ? $_POST['d7'] : '';
-if ($pregunta_d7 === "g(x)") {
-    $verificar_d7 = "correcto";
-} else {
-    $verificar_d7 = "incorrecto";
-}
-
-$pregunta_d8 = isset($_POST['d8']) ? $_POST['d8'] : '';
-if ($pregunta_d8 === "-") {
-    $verificar_d8 = "correcto";
-} else {
-    $verificar_d8 = "incorrecto";
-}
-
-$pregunta_d9 = isset($_POST['d9']) ? $_POST['d9'] : '';
-if ($pregunta_d9 === "f(x)") {
-    $verificar_d9 = "correcto";
-} else {
-    $verificar_d9 = "incorrecto";
-}
-
-$pregunta_d10 = isset($_POST['d10']) ? $_POST['d10'] : '';
-if ($pregunta_d10 === "g'(x)") {
-    $verificar_d10 = "correcto";
-} else {
-    $verificar_d10 = "incorrecto";
-}
-
-$pregunta_d11 = isset($_POST['d11']) ? $_POST['d11'] : '';
-if ($pregunta_d11 === "(g(x))^2") {
-    $verificar_d11 = "correcto";
-} else {
-    $verificar_d11 = "incorrecto";
-}
-
-$pregunta_d12 = isset($_POST['d12']) ? $_POST['d12'] : '';
-if ($pregunta_d12 === "n*u^n-1*u'") {
-    $verificar_d12 = "correcto";
-} else {
-    $verificar_d12 = "incorrecto";
-}
-
-$pregunta_d13 = isset($_POST['d13']) ? $_POST['d13'] : '';
-if ($pregunta_d13 === "u'") {
-    $verificar_d13 = "correcto";
-} else {
-    $verificar_d13 = "incorrecto";
-}
-$pregunta_d14 = isset($_POST['d14']) ? $_POST['d14'] : '';
-if ($pregunta_d14 === "2") {
-    $verificar_d14 = "correcto";
-} else {
-    $verificar_d14 = "incorrecto";
-}
-
-$pregunta_d15 = isset($_POST['d15']) ? $_POST['d15'] : '';
-if ($pregunta_d15 === "\sqrt{u}") {
-    $verificar_d15 = "correcto";
-} else {
-    $verificar_d15 = "incorrecto";
-}
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -272,6 +348,13 @@ if ($pregunta_d15 === "\sqrt{u}") {
     .imagen {
         max-width: 100%;
         height: auto;
+    }
+
+    .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 420vh;
     }
 </style>
 <script>
@@ -488,7 +571,7 @@ function actualizarFormula() {
 
     <br>
     <div>
-      
+      <hr>
     </div>
     </div>
 
@@ -556,6 +639,12 @@ function actualizarFormula() {
     Resultado: <?php echo $verificar_d13 ?>
     Resultado: <?php echo $verificar_d14 ?>
     Resultado: <?php echo $verificar_d15 ?>
+    <hr>
+    <strong>Si desea ver las soluciones escribir: mostrar_solucion</strong>
+<br>
+<input type="text" id="mostrar_solucion" name="mostrar_solucion" value="<?php echo htmlspecialchars($mostrar_solucion); ?>">
+<button type="submit">Mostrar Solución</button>
+
 </form>
 </div>
 
