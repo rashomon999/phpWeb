@@ -163,8 +163,7 @@ if ($_POST) {
 
             updateSentence(); // Initialize on page load
         });
-
-        
+ 
         function mostrarMensaje() {
             var mensaje = document.getElementById('mensaje');
             mensaje.style.display = 'block';
