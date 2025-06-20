@@ -32,7 +32,7 @@ if($boolean === 'true'){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../style.css">
     <title>Ecuaciones</title>
     <script>
@@ -76,7 +76,7 @@ if($boolean === 'true'){
         <form action="./index.php" method="POST" onsubmit="handleSubmit(event)">
         <span class="titulo_1"><h2>ejercicio_1:</h2></span>
         <br><br>
-        <img src="../../img/Captura de pantalla 2024-02-12 103212.png" alt=""><br><br>
+        <img src="../../../img/Captura de pantalla 2024-02-12 103212.png" alt=""><br><br>
         El resultado de multiplicar por -2 a ambos lados es: <br><br>
         <input style="margin:10px;" value="-6x+4y < -8z-10" type="radio" name="primero" id="primero1" <?php echo isset($primero) && ($primero === '-6x+4y < -8z-10')?'checked':''; ?>>-6x+4y < -8z-10
 
@@ -89,7 +89,7 @@ if($boolean === 'true'){
         <!-- ///////// -->
         <span class="titulo_1"><h2>ejercicio_2:</h2></span>
         <br><br>
-        <img src="../../img/Captura de pantalla 2024-02-12 120811.png" alt="">
+        <img src="../../../img/Captura de pantalla 2024-02-12 120811.png" alt="">
         <br><br>
         Es cierta la igualdad?<br><br>
         <input type="radio" name="boolean" id="" value="true" <?php echo isset($boolean) && $boolean === 'true'?'checked':''; ?>>True

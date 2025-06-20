@@ -30,8 +30,8 @@
 <body>
     <div class="centered-container">
         <a class="btn" href=".\ejercicios\index.php">inecuaciones</a>
-        <a class="btn" href=".\ecuaciones\index.php">ecuaciones</a>
-        <a class="btn" href=".\ejercicios_ecuaciones\index.php">ejercicios_ecuaciones</a>
+        <a class="btn" href=".\ecuaciones\index.php">ecuaciones _ recurrencia</a>
+        <a class="btn" href=".\ejercicios_ecuaciones\index.php">ejercicios_ecuaciones recurrencia</a>
         <a class="btn" href=".\EjerciciosTeoremaMaestro\index.php">Ejercicios Teorema maestro  </a>
         <a class="btn" href=".\TeoremaMaestro\index.php">Teorema maestro </a>
 

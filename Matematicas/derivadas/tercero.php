@@ -18,7 +18,52 @@ $verificar_21 = '';  $verificar_22 = '';  $verificar_23 = '';   $verificar_24 = 
 $verificar_26 = '';  $verificar_27= ''; $verificar_28= '';  $verificar_29= '';  $verificar_30 = ''; 
  
 
+$mostrar_solucion = '';
 if ($_POST) {
+    $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
+    
+    if ($mostrar_solucion === 'mostrar_solucion') {  
+        // Establecer todas las respuestas correctas
+        $verificar_1 = $verificar_2 = $verificar_3 = $verificar_3_2 = $verificar_4 = $verificar_5 = 
+        $verificar_6 = $verificar_7 = $verificar_8 = $verificar_9 = $verificar_10 = 
+        $verificar_11 = $verificar_12 = $verificar_13 = $verificar_14 = $verificar_15 = 
+        $verificar_16 = $verificar_17 = $verificar_18 = $verificar_19 = $verificar_20 = 
+        $verificar_21 = $verificar_22 = $verificar_23 = $verificar_24 = $verificar_25 = 
+        $verificar_26 = $verificar_27 = $verificar_28 = $verificar_29 = $verificar_30 = "correcto";
+        
+        // Establecer los valores correctos en las respuestas
+        $respuesta_1 = '0';
+        $respuesta_2 = '1';
+        $respuesta_3 = '2x';
+        $respuesta_3_2 = '5x^4';
+        $respuesta_4 = '\frac{1}{2\sqrt{x}}';
+        $respuesta_5 = 'e^x';
+        $respuesta_6 = '2^xln(2)';
+        $respuesta_7 = '\frac{1}{x}';
+        $respuesta_8 = '\frac{1}{x}log_{2}e';
+        $respuesta_9 = '\frac{1}{ln(3)(x+2)}';
+        $respuesta_10 = '\frac{1}{x+2}log_{3}e';
+        $respuesta_11 = '-5';
+        $respuesta_12 = '\frac{1}{ln(3)(x+2)}';
+        $respuesta_13 = 'inferior';
+        $respuesta_14 = 'inferior';
+        $respuesta_15 = 'superior';
+        $respuesta_16 = '\frac{A_L+A_R}{2}';
+        $respuesta_17 = 'f(x_{i-1})';
+        $respuesta_18 = 'f(x_i)';
+        $respuesta_19 = 'x_{i-1}';
+        $respuesta_20 = 'x_{i}';
+        $respuesta_21 = 'A_M=h\sum_{i=1}^nf(a+(i-\frac{1}{2})h)';
+        $respuesta_22 = 'A_S=\frac{1}{3}A_T+\frac{2}{3}A_M';
+        $respuesta_23 = 'A_S=\frac{A_T+2A_M}{3}';
+        $respuesta_24 = 'C\frac{1}{n}';
+        $respuesta_25 = '0';
+        $respuesta_26 = '\int_{a}^{b}cdx=c(b-a)';
+        $respuesta_27 = '|\int_{a}^{b}f(x)\,dx-\sum_{i=1}^{n}f(c_i)\Delta x_i |<\epsilon';
+        $respuesta_28 = 'n';
+        $respuesta_29 = '\sum_{i=1}^nf(c_i)\Delta x_i';
+        $respuesta_30 = 'A_R=\Delta x\sum_{i=1}^nf(a+i\Delta x)';
+    } else {
    // Verificar la respuesta de la primera pregunta
    $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
    if ($respuesta_1 === '0') {
@@ -311,6 +356,7 @@ if ($_POST) {
     } else {
         $verificar_30 = "incorrecto";
     }
+}
 }
 ?>
 <!DOCTYPE html>
@@ -630,6 +676,8 @@ function ocultarMensaje4() {
 <body>
 <div class="seccion izquierda">
     <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <strong>ingresar tipo markdown/latex</strong>
+    <br><br>
     Ingrese la derivada de 5:
     <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>"><br>
     <button type="submit">Enviar</button>
@@ -646,28 +694,28 @@ function ocultarMensaje4() {
     <?php echo $verificar_3 ?>
     <br>
     Ingrese la derivada de \(x^5\):
-    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>"><br>
+    <input type="text" name="respuesta_3_2" value="<?php echo $respuesta_3_2; ?>"><br>
     <button type="submit">Enviar</button>
     <?php echo $verificar_4 ?>
     <br>
     Ingrese la derivada de \(\sqrt{x}\):
-    <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>"><br>
+    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>"><br>
     <button type="submit">Enviar</button>
     <?php echo $verificar_5 ?>
     <br>
     Ingrese la derivada de \(e^x\):
-    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>"><br>
+    <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>"><br>
     <button type="submit">Enviar</button>
     <?php echo $verificar_6 ?>
     <br>
     Ingrese la derivada de \(2^x\):
-    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>"><br>
+    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>"><br>
     <button type="submit">Enviar</button>
     <?php echo $verificar_7 ?>
     <br>
 
     Ingrese la derivada de \(Lnx\):
-    <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>"><br>
+    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>"><br>
     <button type="submit">Enviar</button>
     <?php echo $verificar_8 ?>
     <br>
@@ -702,6 +750,11 @@ function ocultarMensaje4() {
     <?php echo $verificar_11 ?>
     <br>
 
+    <hr>
+    <strong>Si desea ver las soluciones escribir: mostrar_solucion</strong>
+<br>
+<input type="text" id="mostrar_solucion" name="mostrar_solucion" value="<?php echo htmlspecialchars($mostrar_solucion); ?>">
+<button type="submit">Mostrar Solución</button>
 
      </form>
 </div>

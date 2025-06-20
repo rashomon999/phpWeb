@@ -1,84 +1,58 @@
 <?php
 // Variables para verificar las respuestas
-$verificar_1 = '';
-$verificar_2 = '';
-$verificar_3 = '';
-$verificar_4 = ''; 
-$verificar_5 = ''; 
-$verificar_6 = ''; 
-$verificar_7 = ''; 
-//
-$verificar_8 = '';
-$verificar_9 = '';
-$verificar_10 = ''; 
-$verificar_11 = ''; 
-$verificar_12 = ''; 
-$verificar_13 = ''; 
-$verificar_14 = ''; 
-///
-$pregunta_8 = "";
-$pregunta_9 = "";
-$pregunta_10 = "";
-$pregunta_11 = "";
-$pregunta_12 = "";
-$pregunta_13 = "";
-$pregunta_14 = "";
-///
-$verificar_15 = '';
-$verificar_16 = '';
-$pregunta_15 = "";
-$pregunta_16 = "";
+$verificar_1 = $verificar_2 = $verificar_3 = $verificar_4 = $verificar_5 = $verificar_6 = $verificar_7 = 
+$verificar_8 = $verificar_9 = $verificar_10 = $verificar_11 = $verificar_12 = $verificar_13 = $verificar_14 = 
+$verificar_15 = $verificar_16 = $verificar_18 = $verificar_a = $verificar_b = $verificar_t1 = $verificar_t2 = 
+$verificar_t3 = $verificar_t4 = $verificar_t5 = $verificar_s1 = $verificar_v1 = $verificar_v2 = $verificar_v3 = 
+$verificar_v4 = $verificar_a4 = $verificar_a5 = $verificar_a6 = $verificar_a7 = $verificar_a8 = '';
 
-//
-$pregunta_18 = "";
+// Variables para las respuestas del formulario
+$pregunta_1 = $pregunta_2 = $pregunta_3 = $pregunta_4 = $pregunta_5 = $pregunta_6 = $pregunta_7 = 
+$pregunta_8 = $pregunta_9 = $pregunta_10 = $pregunta_11 = $pregunta_12 = $pregunta_13 = $pregunta_14 = 
+$pregunta_15 = $pregunta_16 = $pregunta_18 = $pregunta_a = $pregunta_b = $pregunta_t1 = $pregunta_t2 = 
+$pregunta_t3 = $pregunta_t4 = $pregunta_t5 = $pregunta_s1 = $pregunta_v1 = $pregunta_v2 = $pregunta_v3 = 
+$pregunta_v4 = $pregunta_a4 = $pregunta_a5 = $pregunta_a6 = $pregunta_a7 = $pregunta_a8 = '';
 
-$pregunta_a = "";
-$pregunta_b = "";
-$verificar_a = "";
-$verificar_b = "";
-//
-//
-$pregunta_t1 = "";
-$pregunta_t2 = "";
-$pregunta_t3 = "";
-$pregunta_t4 = "";
-$pregunta_t5 = "";
-
-$verificar_t1 = "";
-$verificar_t2 = "";
-$verificar_t3 = "";
-$verificar_t4 = "";
-$verificar_t5 = "";
-//
-$pregunta_s1 = "";
-
-$pregunta_v1 = "";
-$pregunta_v2 = "";
-$pregunta_v3 = "";
-$pregunta_v4 = "";
-
-//
-$verificar_s1 = "";
-$verificar_v1 = "";
-$verificar_v2 = "";
-$verificar_v3 = "";
-$verificar_v4 = "";
-
-$pregunta_a4  = "";
-$pregunta_a5  = "";
-$pregunta_a6  = "";
-$pregunta_a7  = "";
-$pregunta_a8  = "";
-
-
-$verificar_a4 = "";
-$verificar_a5 = "";
-$verificar_a6 = "";
-$verificar_a7 = "";
-$verificar_a8 = "";
+$mostrar_solucion = '';
 
 // Procesar el formulario cuando se envía
 if ($_POST) {
+    $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
+    
+    if ($mostrar_solucion === 'mostrar_solucion') {  
+        // Establecer todas las verificaciones como correctas
+        $verificar_1 = $verificar_2 = $verificar_3 = $verificar_4 = $verificar_5 = $verificar_6 = $verificar_7 = 
+        $verificar_8 = $verificar_9 = $verificar_10 = $verificar_11 = $verificar_12 = $verificar_13 = $verificar_14 = 
+        $verificar_15 = $verificar_16 = $verificar_18 = $verificar_a = $verificar_b = $verificar_t1 = $verificar_t2 = 
+        $verificar_t3 = $verificar_t4 = $verificar_t5 = $verificar_s1 = $verificar_v1 = $verificar_v2 = $verificar_v3 = 
+        $verificar_v4 = $verificar_a4 = $verificar_a5 = $verificar_a6 = $verificar_a7 = $verificar_a8 = "correcto";
+        
+        // Establecer los valores correctos en las respuestas
+        $pregunta_1 = $pregunta_2 = $pregunta_3 = $pregunta_4 = $pregunta_5 = $pregunta_6 = $pregunta_7 = 'correcto';
+        $pregunta_8 = 'epsilon';
+        $pregunta_9 = 'cero';
+        $pregunta_10 = 'delta';
+        $pregunta_11 = $pregunta_12 = 'cero';
+        $pregunta_13 = 'delta';
+        $pregunta_14 = 'epsilon';
+        $pregunta_15 = $pregunta_16 = $pregunta_18 = 'correcto';
+        $pregunta_a = '0';
+        $pregunta_b = '1';
+        $pregunta_t1 = 'continua';
+        $pregunta_t2 = 'intervalo';
+        $pregunta_t3 = 'cerrado';
+        $pregunta_t4 = 'm';
+        $pregunta_t5 = 'c';
+        $pregunta_s1 = 'distintos';
+        $pregunta_v1 = $pregunta_v3 = 'a1';
+        $pregunta_v2 = 'b1';
+        $pregunta_v4 = 'c1';
+        $pregunta_a4 = 'mx+b';
+        $pregunta_a5 = 'y';
+        $pregunta_a6 = 'y1';
+        $pregunta_a7 = 'm';
+        $pregunta_a8 = '(x-x1)';
+    } else {
   
         $pregunta_1 = isset($_POST['pregunta_1']) ? $_POST['pregunta_1'] : '';
         if ($pregunta_1 === '') {
@@ -392,6 +366,7 @@ if ($_POST) {
             $verificar_a8 = "incorrecto";
         }
 }
+}
 ?>
 
 <!DOCTYPE html>
@@ -400,7 +375,7 @@ if ($_POST) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre la Circunferencia</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -409,6 +384,14 @@ if ($_POST) {
         max-width: 100%;
         height: auto;
     }
+
+    .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 410vh;
+    }
+
 </style>
  
 <script>
@@ -545,13 +528,13 @@ function actualizarFormula() {
           <h1>Limite y secuencias: </h1>
         <!-- Pregunta 8 -->
         <h3>Completa la definición formal del límite:</h3>
-        <p>Si, para cada <input type="text" name="pregunta_8" value="<?php echo $pregunta_8; ?>"> >
-         <input type="text" name="pregunta_9" value="<?php echo $pregunta_9; ?>"> existe un 
-         <input type="text" name="pregunta_10" value="<?php echo $pregunta_10; ?>"> >
-          <input type="text" name="pregunta_11" value="<?php echo $pregunta_11; ?>"> 
-          tal que si <input type="text" name="pregunta_12" value="<?php echo $pregunta_12; ?>"> 
-          < |x − a| < <input type="text" name="pregunta_13" value="<?php echo $pregunta_13; ?>"> 
-          entonces |f(x) − L| < <input type="text" name="pregunta_14" value="<?php echo $pregunta_14; ?>">
+        <p>Si, para cada <input type="text" name="pregunta_8" value="<?php echo $pregunta_8; ?>" size="4"> >
+         <input type="text" name="pregunta_9" value="<?php echo $pregunta_9; ?>" size="4"> existe un 
+         <input type="text" name="pregunta_10" value="<?php echo $pregunta_10; ?>" size="4"> >
+          <input type="text" name="pregunta_11" value="<?php echo $pregunta_11; ?>" size="4"> 
+          tal que si <input type="text" name="pregunta_12" value="<?php echo $pregunta_12; ?>" size="4"> 
+          < |x − a| < <input type="text" name="pregunta_13" value="<?php echo $pregunta_13; ?>" size="4"> 
+          entonces |f(x) − L| < <input type="text" name="pregunta_14" value="<?php echo $pregunta_14; ?>" size="4">
         </p>
         
         <!-- Respuestas -->
@@ -567,8 +550,12 @@ function actualizarFormula() {
         <input type="submit" value="Verificar Respuestas">
         <br><br>
         <img src="../img/Captura de pantalla 2024-12-04 075049.png" alt=""> <br>
-        Estos gráficos muestran los posibles valores de  δ
-        , dadas opciones sucesivamente más pequeñas de ε.
+    <p>
+    Estos gráficos muestran los posibles valores de \( \delta \), dadas opciones sucesivamente 
+    más pequeñas de \( \varepsilon \).
+    </p>
+
+        <hr>
         </form>
     </div>
     
@@ -763,6 +750,15 @@ function actualizarFormula() {
         <p>Resultado5: <?php echo $verificar_a5; ?></p> 
         <p>Resultado6: <?php echo $verificar_a6; ?></p> 
         <p>Resultado7: <?php echo $verificar_a7; ?> Resultado8: <?php echo $verificar_a8; ?></p> <br>
+
+
+        
+    <hr>
+     <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
+    <br>
+    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
+    <button type="submit"   >Mostrar Solución</button>
+        
     </form>
     
 </div>

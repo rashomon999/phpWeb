@@ -1695,7 +1695,12 @@ function ocultarMensaje4() {
 <?php echo $verificar_110 ?>
 <br><br><br>
 
-
+    <hr>
+     <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
+    <br>
+    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
+    <button type="submit"   >Mostrar Solución</button>
+        
     </form>
 </div>
 
