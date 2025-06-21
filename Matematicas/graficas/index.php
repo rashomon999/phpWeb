@@ -1,159 +1,162 @@
 <?php
+// Variables para las preguntas
+$pregunta_1 = $pregunta_2 = $pregunta_3 = $pregunta_4 = $pregunta_5 = 
+$pregunta_6 = $pregunta_7 = $pregunta_8 = $text1 = $text2 = 
+$grado_num = $grado_den = $respuesta_limite = '';
+
 // Variables para verificar las respuestas
-$pregunta_1 = "";
-$pregunta_2 = "";
-$pregunta_3 = "";
-$pregunta_4 = "";
+$verificar_1 = $verificar_2 = $verificar_3 = $verificar_4 = $verificar_5 = 
+$verificar_6 = $verificar_7 = $verificar_8 = $verificar_t1 = $verificar_t2 = 
+$verificar_grados = $verificar_limite = '';
 
-$pregunta_6 = "";
-$pregunta_7 = "";
-$pregunta_8 = "";
+$mostrar_solucion = '';
 
-$verificar_1 = '';
-$verificar_2 = '';
-$verificar_3 = '';
-$verificar_4 = '';
-
-$verificar_5 = '';
-$verificar_6 = '';
-$verificar_7 = '';
-$verificar_8 = '';
-///////////////////7
-$text1 = "";
-$text2 = "";
-$grado_num = "";
-$grado_den = "";
-$respuesta_limite = "";
-
-$verificar_t1 = '';
-$verificar_t2 = '';
-$verificar_grados = "";
-$verificar_limite = "";
-// Procesar el formulario
-
+// Procesar el formulario cuando se envía
 if ($_POST) {
-    // Validar pregunta 1
-    $pregunta_1 = isset($_POST['pregunta_1']) ? $_POST['pregunta_1'] : '';
-    if ($pregunta_1 === 'opcion_1') {
+    $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
+    
+    if ($mostrar_solucion === 'mostrar_solucion') {  
+        // Establecer todas las verificaciones como correctas
         $verificar_1 = "Correcto: Línea recta inclinada con pendiente positiva.";
-    } elseif ($pregunta_1 === 'opcion_2' || $pregunta_1 === 'opcion_3' ) {
-        $verificar_1 = "Incorrecto.";
-    } else {
-        $verificar_1 = "";
-    }
-
-    // Validar pregunta 2
-    $pregunta_2 = isset($_POST['pregunta_2']) ? $_POST['pregunta_2'] : '';
-    if ($pregunta_2 === 'opcion_3') {
         $verificar_2 = "Correcto: Línea recta desplazada hacia arriba.";
-    } elseif ($pregunta_2 === 'opcion_2' || $pregunta_2 === 'opcion_1') {
-        $verificar_2 = "Incorrecto.";
-    } else {
-        $verificar_2 = "";
-    }
-
-    // Validar pregunta 3
-    $pregunta_3 = isset($_POST['pregunta_3']) ? $_POST['pregunta_3'] : '';
-    if ($pregunta_3 === 'opcion_3') {
         $verificar_3 = "Correcto..";
-    } elseif ($pregunta_3 === 'opcion_2' || $pregunta_3 === 'opcion_1') {
-        $verificar_3 = "Incorrecto.";
-    } else {
-        $verificar_3 = " ";
-    }
-
-    // Validar pregunta 4
-    $pregunta_4 = isset($_POST['pregunta_4']) ? $_POST['pregunta_4'] : '';
-    if ($pregunta_4 === 'opcion_2') {
         $verificar_4 = "Correcto..";
-    } elseif ($pregunta_4 === 'opcion_3' || $pregunta_4 === 'opcion_1') {
-        $verificar_4 = "Incorrecto.";
-    } else {
-        $verificar_4 = " ";
-    }
-
-
-    $pregunta_5 = isset($_POST['pregunta_5']) ? $_POST['pregunta_5'] : '';
-    if ($pregunta_5 === 'opcion_1') {
         $verificar_5 = "Correcto..";
-    } elseif ($pregunta_5 === 'opcion_3' || $pregunta_5 === 'opcion_2') {
-        $verificar_5 = "Incorrecto.";
-    } else {
-        $verificar_5 = " ";
-    }
-
-    $pregunta_6 = isset($_POST['pregunta_6']) ? $_POST['pregunta_6'] : '';
-    if ($pregunta_6 === 'cocientes') {
         $verificar_6 = "Correcto..";
-    } elseif ($pregunta_6 === '' ) {
-        $verificar_6 = "";
-    } else {
-        $verificar_6 = "incorrecto";
-    }
-
-    $pregunta_7 = isset($_POST['pregunta_7']) ? $_POST['pregunta_7'] : '';
-    if ($pregunta_7 === '\frac{3}{2}') {
         $verificar_7 = "Correcto..";
-    } elseif ($pregunta_7 === '' ) {
-        $verificar_7 = "";
-    } else {
-        $verificar_7 = "incorrecto";
-    }
-
-    $pregunta_8 = isset($_POST['pregunta_8']) ? $_POST['pregunta_8'] : '';
-    if ($pregunta_8 === '0' || $pregunta_8 === 'cero') {
         $verificar_8 = "Correcto..";
-    } elseif ($pregunta_8 === '' ) {
-        $verificar_8 = "";
-    } else {
-        $verificar_8 = "incorrecto";
-    }
-    ////
-
-    $text1 = isset($_POST['text1']) ? $_POST['text1'] : '';
-
-    if ($text1 === 'denominador') {
         $verificar_t1 = "correcto";
-    } elseif ($text1 === '') {
-        $verificar_t1 = '';
-    } else {
-        $verificar_t1 = "incorrecto";
-    }
-
-
-    $text2 = isset($_POST['text2']) ? $_POST['text2'] : '';
-
-    if ($text2 === 'cero') {
         $verificar_t2 = "correcto";
-    } elseif ($text2 === '') {
-        $verificar_t2 = '';
-    } else {
-        $verificar_t2 = "incorrecto";
-    }
-
-
-
-
-    $grado_num = isset($_POST['grado_num']) ? $_POST['grado_num'] : '';
-    $grado_den = isset($_POST['grado_den']) ? $_POST['grado_den'] : '';
-
-    if ($grado_num === "igual" && $grado_den === "igual") {
         $verificar_grados = "Correcto: Existe una asíntota horizontal.";
-    } elseif ($grado_num === "menor" && $grado_den === "mayor") {
-        $verificar_grados = "Correcto: Existe una asíntota horizontal.";
-    } else {
-        $verificar_grados = "Incorrecto: Revisa las condiciones.";
-    }
-
-
-
-
-    $respuesta_limite = isset($_POST['respuesta_limite']) ? strtolower(trim($_POST['respuesta_limite'])) : '';
-
-    if ($respuesta_limite === "límite" || $respuesta_limite === "limite") {
         $verificar_limite = "Correcto: Usamos el límite cuando \( x \\to \infty \).";
+        
+        // Establecer los valores correctos en las respuestas
+        $pregunta_1 = 'opcion_1';
+        $pregunta_2 = 'opcion_3';
+        $pregunta_3 = 'opcion_3';
+        $pregunta_4 = 'opcion_2';
+        $pregunta_5 = 'opcion_1';
+        $pregunta_6 = 'cocientes';
+        $pregunta_7 = '\frac{3}{2}';
+        $pregunta_8 = '0';
+        $text1 = 'denominador';
+        $text2 = 'cero';
+        $grado_num = "igual";
+        $grado_den = "igual";
+        $respuesta_limite = "límite";
     } else {
-        $verificar_limite = "Incorrecto: La respuesta correcta es 'límite'.";
+        // Procesamiento normal cuando no se solicita mostrar soluciones
+        
+        // Validar pregunta 1
+        $pregunta_1 = isset($_POST['pregunta_1']) ? $_POST['pregunta_1'] : '';
+        if ($pregunta_1 === 'opcion_1') {
+            $verificar_1 = "Correcto: Línea recta inclinada con pendiente positiva.";
+        } elseif ($pregunta_1 === 'opcion_2' || $pregunta_1 === 'opcion_3' ) {
+            $verificar_1 = "Incorrecto.";
+        } else {
+            $verificar_1 = "";
+        }
+
+        // Validar pregunta 2
+        $pregunta_2 = isset($_POST['pregunta_2']) ? $_POST['pregunta_2'] : '';
+        if ($pregunta_2 === 'opcion_3') {
+            $verificar_2 = "Correcto: Línea recta desplazada hacia arriba.";
+        } elseif ($pregunta_2 === 'opcion_2' || $pregunta_2 === 'opcion_1') {
+            $verificar_2 = "Incorrecto.";
+        } else {
+            $verificar_2 = "";
+        }
+
+        // Validar pregunta 3
+        $pregunta_3 = isset($_POST['pregunta_3']) ? $_POST['pregunta_3'] : '';
+        if ($pregunta_3 === 'opcion_3') {
+            $verificar_3 = "Correcto..";
+        } elseif ($pregunta_3 === 'opcion_2' || $pregunta_3 === 'opcion_1') {
+            $verificar_3 = "Incorrecto.";
+        } else {
+            $verificar_3 = " ";
+        }
+
+        // Validar pregunta 4
+        $pregunta_4 = isset($_POST['pregunta_4']) ? $_POST['pregunta_4'] : '';
+        if ($pregunta_4 === 'opcion_2') {
+            $verificar_4 = "Correcto..";
+        } elseif ($pregunta_4 === 'opcion_3' || $pregunta_4 === 'opcion_1') {
+            $verificar_4 = "Incorrecto.";
+        } else {
+            $verificar_4 = " ";
+        }
+
+        $pregunta_5 = isset($_POST['pregunta_5']) ? $_POST['pregunta_5'] : '';
+        if ($pregunta_5 === 'opcion_1') {
+            $verificar_5 = "Correcto..";
+        } elseif ($pregunta_5 === 'opcion_3' || $pregunta_5 === 'opcion_2') {
+            $verificar_5 = "Incorrecto.";
+        } else {
+            $verificar_5 = " ";
+        }
+
+        $pregunta_6 = isset($_POST['pregunta_6']) ? $_POST['pregunta_6'] : '';
+        if ($pregunta_6 === 'cocientes') {
+            $verificar_6 = "Correcto..";
+        } elseif ($pregunta_6 === '' ) {
+            $verificar_6 = "";
+        } else {
+            $verificar_6 = "incorrecto";
+        }
+
+        $pregunta_7 = isset($_POST['pregunta_7']) ? $_POST['pregunta_7'] : '';
+        if ($pregunta_7 === '\frac{3}{2}') {
+            $verificar_7 = "Correcto..";
+        } elseif ($pregunta_7 === '' ) {
+            $verificar_7 = "";
+        } else {
+            $verificar_7 = "incorrecto";
+        }
+
+        $pregunta_8 = isset($_POST['pregunta_8']) ? $_POST['pregunta_8'] : '';
+        if ($pregunta_8 === '0' || $pregunta_8 === 'cero') {
+            $verificar_8 = "Correcto..";
+        } elseif ($pregunta_8 === '' ) {
+            $verificar_8 = "";
+        } else {
+            $verificar_8 = "incorrecto";
+        }
+
+        $text1 = isset($_POST['text1']) ? $_POST['text1'] : '';
+        if ($text1 === 'denominador') {
+            $verificar_t1 = "correcto";
+        } elseif ($text1 === '') {
+            $verificar_t1 = '';
+        } else {
+            $verificar_t1 = "incorrecto";
+        }
+
+        $text2 = isset($_POST['text2']) ? $_POST['text2'] : '';
+        if ($text2 === 'cero') {
+            $verificar_t2 = "correcto";
+        } elseif ($text2 === '') {
+            $verificar_t2 = '';
+        } else {
+            $verificar_t2 = "incorrecto";
+        }
+
+        $grado_num = isset($_POST['grado_num']) ? $_POST['grado_num'] : '';
+        $grado_den = isset($_POST['grado_den']) ? $_POST['grado_den'] : '';
+        if ($grado_num === "igual" && $grado_den === "igual") {
+            $verificar_grados = "Correcto: Existe una asíntota horizontal.";
+        } elseif ($grado_num === "menor" && $grado_den === "mayor") {
+            $verificar_grados = "Correcto: Existe una asíntota horizontal.";
+        } else {
+            $verificar_grados = "Incorrecto: Revisa las condiciones.";
+        }
+
+        $respuesta_limite = isset($_POST['respuesta_limite']) ? strtolower(trim($_POST['respuesta_limite'])) : '';
+        if ($respuesta_limite === "límite" || $respuesta_limite === "limite") {
+            $verificar_limite = "Correcto: Usamos el límite cuando \( x \\to \infty \).";
+        } else {
+            $verificar_limite = "Incorrecto: La respuesta correcta es 'límite'.";
+        }
     }
 }
 ?>
@@ -164,7 +167,7 @@ if ($_POST) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas Matemáticas - Gráficos</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -172,6 +175,13 @@ if ($_POST) {
     .imagen {
         max-width: 100%;
         height: auto;
+    }
+
+     .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 270vh;
     }
 </style>
 <script>
@@ -216,7 +226,7 @@ function handleSubmit(event) {
             <!-- Pregunta 1 -->
             <div class="question-container">
                 <h3>¿Cuál es el gráfico correcto para \( f(x) = x \) ?</h3>
-                <img src="../img/Captura de pantalla 2024-12-06 124413.png"  class="imagen" height="300">
+                <img src="../../img/Captura de pantalla 2024-12-06 124413.png"  class="imagen" height="300">
                 <div>
                     <input type="radio" name="pregunta_1" value="opcion_1"> Opción 1: Línea recta inclinada con pendiente positiva.
                     <br>
@@ -233,7 +243,7 @@ function handleSubmit(event) {
             <!-- Pregunta 2 -->
             <div class="question-container">
                 <h3>¿Cuál es el gráfico mostrado ?</h3>
-                <img src="../img/Captura de pantalla 2024-12-06 131048.png"  class="imagen">
+                <img src="../../img/Captura de pantalla 2024-12-06 131048.png"  class="imagen">
                 <div>
                     <input type="radio" name="pregunta_2" value="opcion_1">  f(x) = x - 2 
                     <br>
@@ -249,7 +259,7 @@ function handleSubmit(event) {
             <!-- Pregunta 3 -->
             <div class="question-container">
                 <h3>Cual es el grafico mostrado? </h3>
-                <img src="../img/Captura de pantalla 2024-12-06 133555.png"  class="imagen">
+                <img src="../../img/Captura de pantalla 2024-12-06 133555.png"  class="imagen">
                 <div>
                     <input type="radio" name="pregunta_3" value="opcion_1"> f(x) = 3 + 2x
                     <br>
@@ -263,7 +273,7 @@ function handleSubmit(event) {
             </div>
 
              
-
+        <hr>
         </form>
     </div>
 
@@ -286,7 +296,7 @@ function handleSubmit(event) {
 
         <br><br>
         Que funcion es esta: 
-        <img src="../img/Captura de pantalla 2024-12-16 192504.png" alt="" width="500"> <br>
+        <img src="../../img/Captura de pantalla 2024-12-16 192504.png" alt="" width="500"> <br>
         <input type="radio" name="pregunta_5" value="opcion_1"> racional
                     <br>
         <input type="radio" name="pregunta_5" value="opcion_2"> cuadratica
@@ -357,6 +367,12 @@ function handleSubmit(event) {
         <input type="text" name="pregunta_8" id="" value=<?php echo $pregunta_8  ?>>
         <button type="submit">enviar</button> 
         <?php echo $verificar_8 ?>
+        <hr>
+      <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
+    <br>
+    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
+    <button type="submit"   >Mostrar Solución</button>
+        
     </form>
     </div>
 

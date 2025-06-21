@@ -1,152 +1,146 @@
 <?php
+// Variables para las preguntas
+$pregunta_a1 = $pregunta_a2 = $pregunta_a3 = $pregunta_a4 = $pregunta_a5 = $pregunta_a6 = 
+$pregunta_a7 = $pregunta_a8 = $pregunta_a9 = $pregunta_a10 = $pregunta_a11 = $pregunta_a12 = '';
 
-$pregunta_a1 = "";
-$pregunta_a2 = "";
-$pregunta_a3 = "";
-$pregunta_a4 = "";
-$pregunta_a5 = "";
-$pregunta_a6 = "";
-$pregunta_a7 = "";
-$pregunta_a8 = "";
-$pregunta_a9 = "";
-$pregunta_a10 = "";
-$pregunta_a11 = "";
-$pregunta_a12 = "";
- 
+// Variables para verificar las respuestas
+$verificar_a1 = $verificar_a2 = $verificar_a3 = $verificar_a4 = $verificar_a5 = $verificar_a6 = 
+$verificar_a7 = $verificar_a8 = $verificar_a9 = $verificar_a10 = $verificar_a11 = $verificar_a12 = '';
 
-$verificar_a1 = '';
-$verificar_a2 = '';
-$verificar_a3 = '';
-$verificar_a4 = '';
-$verificar_a5 = '';
-$verificar_a6 = '';
-$verificar_a7 = '';
-$verificar_a8 = '';
-$verificar_a9 = '';
-$verificar_a10 = '';
-$verificar_a12 = '';
- 
- 
+$mostrar_solucion = '';
+
 // Procesar el formulario cuando se envía
 if ($_POST) {
+    $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
     
-    ///
-    $pregunta_a1 = isset($_POST['a1']) ? $_POST['a1'] : '';
-    if ($pregunta_a1 === 'afin') {
-        $verificar_a1 = "correcto";
-    } elseif ($pregunta_a1 === '') {
-        $verificar_a1 = "";
+    if ($mostrar_solucion === 'mostrar_solucion') {  
+        // Establecer todas las verificaciones como correctas
+        $verificar_a1 = $verificar_a2 = $verificar_a3 = $verificar_a4 = $verificar_a5 = $verificar_a6 = 
+        $verificar_a7 = $verificar_a8 = $verificar_a9 = $verificar_a10 = $verificar_a11 = $verificar_a12 = "correcto";
+        
+        // Establecer los valores correctos en las respuestas
+        $pregunta_a1 = 'afin';
+        $pregunta_a2 = 'aproxima';
+        $pregunta_a3 = '1';
+        $pregunta_a4 = 'm(x-1)+1';
+        $pregunta_a5 = 'f(x)';
+        $pregunta_a6 = '-';
+        $pregunta_a7 = 'T(x)';
+        $pregunta_a8 = 'm';
+        $pregunta_a9 = 'h+1';
+        $pregunta_a10 = '1-2m';
+        $pregunta_a11 = 'm^2h^2';
+        $pregunta_a12 = 'dividimos';
     } else {
-        $verificar_a1 = "incorrecto";
-    }
+        // Procesamiento normal cuando no se solicita mostrar soluciones
+        $pregunta_a1 = isset($_POST['a1']) ? $_POST['a1'] : '';
+        if ($pregunta_a1 === '') {
+            $verificar_a1 = "";
+        } elseif ($pregunta_a1 === 'afin') {
+            $verificar_a1 = "correcto";
+        } else {
+            $verificar_a1 = "incorrecto";
+        }
 
-    $pregunta_a2 = isset($_POST['a2']) ? $_POST['a2'] : '';
-    if ($pregunta_a2 === 'aproxima') {
-        $verificar_a2 = "correcto";
-    } elseif ($pregunta_a2 === '') {
-        $verificar_a2 = "";
-    } else {
-        $verificar_a2 = "incorrecto";
-    }
+        $pregunta_a2 = isset($_POST['a2']) ? $_POST['a2'] : '';
+        if ($pregunta_a2 === '') {
+            $verificar_a2 = "";
+        } elseif ($pregunta_a2 === 'aproxima') {
+            $verificar_a2 = "correcto";
+        } else {
+            $verificar_a2 = "incorrecto";
+        }
 
-    $pregunta_a3 = isset($_POST['a3']) ? $_POST['a3'] : '';
-    if ($pregunta_a3 === '1') {
-        $verificar_a3 = "correcto";
-    } elseif ($pregunta_a3 === '') {
-        $verificar_a3 = "";
-    } else {
-        $verificar_a3 = "incorrecto";
-    }
+        $pregunta_a3 = isset($_POST['a3']) ? $_POST['a3'] : '';
+        if ($pregunta_a3 === '') {
+            $verificar_a3 = "";
+        } elseif ($pregunta_a3 === '1') {
+            $verificar_a3 = "correcto";
+        } else {
+            $verificar_a3 = "incorrecto";
+        }
 
-    $pregunta_a4 = isset($_POST['a4']) ? $_POST['a4'] : '';
-    if ($pregunta_a4 === 'm(x-1)+1') {
-        $verificar_a4 = "correcto";
-    } elseif ($pregunta_a4 === '') {
-        $verificar_a4 = "";
-    } else {
-        $verificar_a4 = "incorrecto";
-    }
+        $pregunta_a4 = isset($_POST['a4']) ? $_POST['a4'] : '';
+        if ($pregunta_a4 === '') {
+            $verificar_a4 = "";
+        } elseif ($pregunta_a4 === 'm(x-1)+1') {
+            $verificar_a4 = "correcto";
+        } else {
+            $verificar_a4 = "incorrecto";
+        }
 
-    // Pregunta 5
-$pregunta_a5 = isset($_POST['a5']) ? $_POST['a5'] : '';
-if ($pregunta_a5 === 'f(x)') {
-    $verificar_a5 = "correcto";
-} elseif ($pregunta_a5 === '') {
-    $verificar_a5 = "";
-} else {
-    $verificar_a5 = "incorrecto";
-}
+        $pregunta_a5 = isset($_POST['a5']) ? $_POST['a5'] : '';
+        if ($pregunta_a5 === '') {
+            $verificar_a5 = "";
+        } elseif ($pregunta_a5 === 'f(x)') {
+            $verificar_a5 = "correcto";
+        } else {
+            $verificar_a5 = "incorrecto";
+        }
 
-// Pregunta 6
-$pregunta_a6 = isset($_POST['a6']) ? $_POST['a6'] : '';
-if ($pregunta_a6 === '-') {
-    $verificar_a6 = "correcto";
-} elseif ($pregunta_a6 === '') {
-    $verificar_a6 = "";
-} else {
-    $verificar_a6 = "incorrecto";
-}
+        $pregunta_a6 = isset($_POST['a6']) ? $_POST['a6'] : '';
+        if ($pregunta_a6 === '') {
+            $verificar_a6 = "";
+        } elseif ($pregunta_a6 === '-') {
+            $verificar_a6 = "correcto";
+        } else {
+            $verificar_a6 = "incorrecto";
+        }
 
-// Pregunta 7
-$pregunta_a7 = isset($_POST['a7']) ? $_POST['a7'] : '';
-if ($pregunta_a7 === 'T(x)') {
-    $verificar_a7 = "correcto";
-} elseif ($pregunta_a7 === '') {
-    $verificar_a7 = "";
-} else {
-    $verificar_a7 = "incorrecto";
-}
+        $pregunta_a7 = isset($_POST['a7']) ? $_POST['a7'] : '';
+        if ($pregunta_a7 === '') {
+            $verificar_a7 = "";
+        } elseif ($pregunta_a7 === 'T(x)') {
+            $verificar_a7 = "correcto";
+        } else {
+            $verificar_a7 = "incorrecto";
+        }
 
- $pregunta_a8 = isset($_POST['a8']) ? $_POST['a8'] : '';
-if ($pregunta_a8 === 'm') {
-    $verificar_a8 = "correcto";
-} elseif ($pregunta_a8 === '') {
-    $verificar_a8 = "";
-} else {
-    $verificar_a8 = "incorrecto";
-}
+        $pregunta_a8 = isset($_POST['a8']) ? $_POST['a8'] : '';
+        if ($pregunta_a8 === '') {
+            $verificar_a8 = "";
+        } elseif ($pregunta_a8 === 'm') {
+            $verificar_a8 = "correcto";
+        } else {
+            $verificar_a8 = "incorrecto";
+        }
   
- $pregunta_a9 = isset($_POST['a9']) ? $_POST['a9'] : '';
-if ($pregunta_a9 === 'h+1') {
-    $verificar_a9 = "correcto";
-} elseif ($pregunta_a9 === '') {
-    $verificar_a9 = "";
-} else {
-    $verificar_a9 = "incorrecto";
-}
+        $pregunta_a9 = isset($_POST['a9']) ? $_POST['a9'] : '';
+        if ($pregunta_a9 === '') {
+            $verificar_a9 = "";
+        } elseif ($pregunta_a9 === 'h+1') {
+            $verificar_a9 = "correcto";
+        } else {
+            $verificar_a9 = "incorrecto";
+        }
 
-$pregunta_a10 = isset($_POST['a10']) ? $_POST['a10'] : '';
-if ($pregunta_a10 === '1-2m') {
-    $verificar_a10 = "correcto";
-} elseif ($pregunta_a10 === '') {
-    $verificar_a10 = "";
-} else {
-    $verificar_a10 = "incorrecto";
-}
+        $pregunta_a10 = isset($_POST['a10']) ? $_POST['a10'] : '';
+        if ($pregunta_a10 === '') {
+            $verificar_a10 = "";
+        } elseif ($pregunta_a10 === '1-2m') {
+            $verificar_a10 = "correcto";
+        } else {
+            $verificar_a10 = "incorrecto";
+        }
 
-
-$pregunta_a11 = isset($_POST['a11']) ? $_POST['a11'] : '';
-if ($pregunta_a11 === 'm^2h^2') {
-    $verificar_a11 = "correcto";
-} elseif ($pregunta_a11 === '') {
-    $verificar_a11 = "";
-} else {
-    $verificar_a11 = "incorrecto";
-}
+        $pregunta_a11 = isset($_POST['a11']) ? $_POST['a11'] : '';
+        if ($pregunta_a11 === '') {
+            $verificar_a11 = "";
+        } elseif ($pregunta_a11 === 'm^2h^2') {
+            $verificar_a11 = "correcto";
+        } else {
+            $verificar_a11 = "incorrecto";
+        }
  
-
-$pregunta_a12 = isset($_POST['a12']) ? $_POST['a12'] : '';
-if ($pregunta_a12 === 'dividimos') {
-    $verificar_a12 = "correcto";
-} elseif ($pregunta_a12 === '') {
-    $verificar_a12 = "";
-} else {
-    $verificar_a12 = "incorrecto";
-}
-
-
- 
-
+        $pregunta_a12 = isset($_POST['a12']) ? $_POST['a12'] : '';
+        if ($pregunta_a12 === '') {
+            $verificar_a12 = "";
+        } elseif ($pregunta_a12 === 'dividimos') {
+            $verificar_a12 = "correcto";
+        } else {
+            $verificar_a12 = "incorrecto";
+        }
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -155,7 +149,7 @@ if ($pregunta_a12 === 'dividimos') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -163,6 +157,13 @@ if ($pregunta_a12 === 'dividimos') {
     .imagen {
         max-width: 100%;
         height: auto;
+    }
+
+      .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 390vh;
     }
 </style>
 <script>
@@ -215,7 +216,7 @@ function handleSubmit(event) {
         <button type="submit">enviar</button>
         <p>Resultado3: <?php echo $verificar_a3; ?></p> <br>
 
-        Si necesitamos que T(x) sea una ecuacion que represente rectas afines: <br><br>
+        Si necesitamos que T(x) sea una ecuacion que represente rectas afines que pasen por el punto (1,1): <br><br>
         T(x) = <input type="text"  id="" size="5"  name="a4" value="<?php echo ($pregunta_a4); ?>"> <br><br>
         <button type="submit">enviar</button>
         <p>Resultado4: <?php echo $verificar_a4; ?></p> <br>
@@ -313,8 +314,11 @@ function handleSubmit(event) {
     <input type="text"  id="" size="5"  name="a12" value="<?php echo ($pregunta_a12); ?>"> <br><br>
     <button type="submit">enviar</button><br>
     Resultado12: <?php echo $verificar_a12; ?> 
-    <hr>
-    <br><br><br>
+        <hr>
+     <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
+    <br>
+    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
+    <button type="submit"   >Mostrar Solución</button>
 
     
       </form>

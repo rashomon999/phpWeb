@@ -90,7 +90,7 @@ $verificar_61 = ''; $verificar_62 = ''; $verificar_63 = ''; $verificar_64 = ''; 
 
 if ($_POST) {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === 'C\frac{1}{n}') {  
+   if ($respuesta_1 === 'proceso') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -100,7 +100,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === 'C\frac{1}{n^2}') {  
+   if ($respuesta_2 === 'discreta') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -110,7 +110,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === 'C\frac{1}{n^2}') {  
+   if ($respuesta_3 === 'inicio') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -120,7 +120,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === 'C\frac{1}{n^4}') {  
+   if ($respuesta_4 === 'continua') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -130,7 +130,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === 'par') {  
+   if ($respuesta_5 === 'configuracion') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -140,7 +140,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === '91') {  
+   if ($respuesta_6 === 'gestiona') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -150,7 +150,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === '104') {  
+   if ($respuesta_7 === 'practicas') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -160,7 +160,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === '117') {  
+   if ($respuesta_8 === 'gestión de configuracion') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -170,7 +170,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === '130') {  
+   if ($respuesta_9 === 'productos') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -180,7 +180,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === '143') {  
+   if ($respuesta_10 === 'procesos') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -190,7 +190,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === '156') {  
+   if ($respuesta_11 === 'ciclo de vida') {  
        $verificar_11 = "correcto";
    } elseif ($respuesta_11 === '') {
        $verificar_11 = '';
@@ -201,7 +201,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
      $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-     if ($respuesta_12 === '28') {  
+     if ($respuesta_12 === 'adaptarse') {  
          $verificar_12 = "correcto";
      } elseif ($respuesta_12 === '') {
          $verificar_12 = '';
@@ -211,7 +211,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la segunda pregunta
      $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-     if ($respuesta_13 === '42') { 
+     if ($respuesta_13 === 'obtencion') { 
          $verificar_13 = "correcto";
      } elseif ($respuesta_13 === '') {
          $verificar_13 = '';
@@ -221,7 +221,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la tercera pregunta
      $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-     if ($respuesta_14 === '56') {  
+     if ($respuesta_14 === 'analisis') {  
          $verificar_14 = "correcto";
      } elseif ($respuesta_14 === '') {
          $verificar_14 = '';
@@ -231,7 +231,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la cuarta pregunta
      $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-     if ($respuesta_15 === '70') { 
+     if ($respuesta_15 === 'especificacion') { 
          $verificar_15 = "correcto";
      } elseif ($respuesta_15 === '') {
          $verificar_15 = '';
@@ -241,7 +241,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la quinta pregunta
      $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-     if ($respuesta_16 === '84') {  
+     if ($respuesta_16 === 'validacion') {  
          $verificar_16 = "correcto";
      } elseif ($respuesta_16 === '') {
          $verificar_16 = '';
@@ -251,7 +251,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la sexta pregunta
      $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-     if ($respuesta_17 === '98') {  
+     if ($respuesta_17 === 'proyectos') {  
          $verificar_17 = "correcto";
      } elseif ($respuesta_17 === '') {
          $verificar_17 = '';
@@ -261,7 +261,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la séptima pregunta
      $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-     if ($respuesta_18 === '112') {  
+     if ($respuesta_18 === 'restricciones') {  
          $verificar_18 = "correcto";
      } elseif ($respuesta_18 === '') {
          $verificar_18 = '';
@@ -271,7 +271,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la octava pregunta
      $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-     if ($respuesta_19 === '126') {  
+     if ($respuesta_19 === 'actividades') {  
          $verificar_19 = "correcto";
      } elseif ($respuesta_19 === '') {
          $verificar_19 = '';
@@ -281,7 +281,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la novena pregunta
      $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
-     if ($respuesta_20 === '140') {  
+     if ($respuesta_20 === 'informacion') {  
          $verificar_20 = "correcto";
      } elseif ($respuesta_20 === '') {
          $verificar_20 = '';
@@ -291,7 +291,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la décima pregunta
      $respuesta_21 = isset($_POST['respuesta_21']) ? $_POST['respuesta_21'] : '';
-     if ($respuesta_21 === '154') {  
+     if ($respuesta_21 === 'mercado') {  
          $verificar_21 = "correcto";
      } elseif ($respuesta_21 === '') {
          $verificar_21 = '';
@@ -301,7 +301,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la undécima pregunta
      $respuesta_22 = isset($_POST['respuesta_22']) ? $_POST['respuesta_22'] : '';
-     if ($respuesta_22 === '168') {  
+     if ($respuesta_22 === 'viabilidad') {  
          $verificar_22 = "correcto";
      } elseif ($respuesta_22 === '') {
          $verificar_22 = '';
@@ -311,7 +311,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
    $respuesta_23 = isset($_POST['respuesta_23']) ? $_POST['respuesta_23'] : '';
-   if ($respuesta_23 === '30') {  
+   if ($respuesta_23 === 'Actores' || $respuesta_23 === 'actores') {  
        $verificar_23 = "correcto";
    } elseif ($respuesta_23 === '') {
        $verificar_23 = '';
@@ -321,7 +321,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_24 = isset($_POST['respuesta_24']) ? $_POST['respuesta_24'] : '';
-   if ($respuesta_24 === '45') {  
+   if ($respuesta_24 === 'interdisciplinario') {  
        $verificar_24 = "correcto";
    } elseif ($respuesta_24 === '') {
        $verificar_24 = '';
@@ -331,7 +331,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_25 = isset($_POST['respuesta_25']) ? $_POST['respuesta_25'] : '';
-   if ($respuesta_25 === '60') { 
+   if ($respuesta_25 === 'especialista') { 
        $verificar_25 = "correcto";
    } elseif ($respuesta_25 === '') {
        $verificar_25 = '';
@@ -341,7 +341,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_26 = isset($_POST['respuesta_26']) ? $_POST['respuesta_26'] : '';
-   if ($respuesta_26 === '75') {  
+   if ($respuesta_26 === 'mediar') {  
        $verificar_26 = "correcto";
    } elseif ($respuesta_26 === '') {
        $verificar_26 = '';
@@ -351,7 +351,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_27 = isset($_POST['respuesta_27']) ? $_POST['respuesta_27'] : '';
-   if ($respuesta_27 === '90') {  
+   if ($respuesta_27 === 'dominio') {  
        $verificar_27 = "correcto";
    } elseif ($respuesta_27 === '') {
        $verificar_27 = '';
@@ -361,7 +361,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_28 = isset($_POST['respuesta_28']) ? $_POST['respuesta_28'] : '';
-   if ($respuesta_28 === '105') {  
+   if ($respuesta_28 === 'interesado') {  
        $verificar_28 = "correcto";
    } elseif ($respuesta_28 === '') {
        $verificar_28 = '';
@@ -371,7 +371,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_29 = isset($_POST['respuesta_29']) ? $_POST['respuesta_29'] : '';
-   if ($respuesta_29 === '120') {  
+   if ($respuesta_29 === 'interes') {  
        $verificar_29 = "correcto";
    } elseif ($respuesta_29 === '') {
        $verificar_29 = '';
@@ -381,7 +381,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_30 = isset($_POST['respuesta_30']) ? $_POST['respuesta_30'] : '';
-   if ($respuesta_30 === '135') {  
+   if ($respuesta_30 === 'usuarios') {  
        $verificar_30 = "correcto";
    } elseif ($respuesta_30 === '') {
        $verificar_30 = '';
@@ -391,7 +391,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_31 = isset($_POST['respuesta_31']) ? $_POST['respuesta_31'] : '';
-   if ($respuesta_31 === '150') {  
+   if ($respuesta_31 === 'operadores') {  
        $verificar_31 = "correcto";
    } elseif ($respuesta_31 === '') {
        $verificar_31 = '';
@@ -401,7 +401,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_32 = isset($_POST['respuesta_32']) ? $_POST['respuesta_32'] : '';
-   if ($respuesta_32 === '165') {  
+   if ($respuesta_32 === 'clientes') {  
        $verificar_32 = "correcto";
    } elseif ($respuesta_32 === '') {
        $verificar_32 = '';
@@ -411,7 +411,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_33 = isset($_POST['respuesta_33']) ? $_POST['respuesta_33'] : '';
-   if ($respuesta_33 === '180') {  
+   if ($respuesta_33 === 'usuarios') {  
        $verificar_33 = "correcto";
    } elseif ($respuesta_33 === '') {
        $verificar_33 = '';
@@ -420,7 +420,7 @@ if ($_POST) {
    }
 
  $respuesta_34 = isset($_POST['respuesta_34']) ? $_POST['respuesta_34'] : '';
-if ($respuesta_34 === '32') { 
+if ($respuesta_34 === 'clientes') { 
     $verificar_34 = "correcto";
 } elseif ($respuesta_34 === '') {
     $verificar_34 = '';
@@ -429,7 +429,7 @@ if ($respuesta_34 === '32') {
 }
 
  $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
-if ($respuesta_35 === '48') { 
+if ($respuesta_35 === 'objetivo') { 
     $verificar_35 = "correcto";
 } elseif ($respuesta_35 === '') {
     $verificar_35 = '';
@@ -438,7 +438,7 @@ if ($respuesta_35 === '48') {
 }
 
  $respuesta_36 = isset($_POST['respuesta_36']) ? $_POST['respuesta_36'] : '';
-if ($respuesta_36 === '64') { 
+if ($respuesta_36 === 'Analistas de mercado' || $respuesta_36 === 'analistas de mercado') { 
     $verificar_36 = "correcto";
 } elseif ($respuesta_36 === '') {
     $verificar_36 = '';
@@ -447,7 +447,7 @@ if ($respuesta_36 === '64') {
 }
 
  $respuesta_37 = isset($_POST['respuesta_37']) ? $_POST['respuesta_37'] : '';
-if ($respuesta_37 === '80') { 
+if ($respuesta_37 === 'Reguladores') { 
     $verificar_37 = "correcto";
 } elseif ($respuesta_37 === '') {
     $verificar_37 = '';
@@ -456,7 +456,7 @@ if ($respuesta_37 === '80') {
 }
 
  $respuesta_38 = isset($_POST['respuesta_38']) ? $_POST['respuesta_38'] : '';
-if ($respuesta_38 === '96') { 
+if ($respuesta_38 === 'Ingenieros de software' || $respuesta_38 === 'ingenieros de software') { 
     $verificar_38 = "correcto";
 } elseif ($respuesta_38 === '') {
     $verificar_38 = '';
@@ -1123,14 +1123,20 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
     .imagen {
         max-width: 100%;
         height: auto;
+    }
+    .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 370vh;
     }
 </style>
  
@@ -1428,58 +1434,234 @@ function ocultarMensaje4() {
 
 
 
+function mostrarMensaje() {
+    var mensaje = document.getElementById('mensaje');
+    mensaje.style.display = 'block';
+}
+
+function ocultarMensaje() {
+    var mensaje = document.getElementById('mensaje');
+    mensaje.style.display = 'none';
+}
+
 </script>
     
 </head>
-<body>
+<body> 
 <div class="seccion izquierda">
-    <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-        Cual es el error del metodo numerico de la mano derecha o izquierda es:
-        <br>
-        <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="12">
-        <br>
-        decrece a un fator de \( \frac{1}{4} \) cuando duplicamos el numero de intervalos.
-        <br><br>
-        Cual es el error del metodo numerico del trapecio:
-        <br>
-        <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="12">
-        <br>
+    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <h3>2. 
+    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="8">   
+    de requerimientos</h3>
 
-        Cual es el error del metodo numerico del punto medio:
-        <br>
-        <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="12">
-        <br>
-        Cual es el error del metodo numerico de Simpson's:
-        <br>
-        <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="12">
-        <br>
-        <hr>
-        casos raros suma: no hay datos hasta al 6, pero con la regla de la suma izquierda podemos calculaar, 
-        cuando calculasmos izquierda, vemos que cuando pasa por 0 es por la regla de suma es 0.
-        <hr>
-        en solidos de revolucion, en stewart me dicen o dan como ejemplos que para arandelas es la interseccion
-        entre 2 rectas, pero en clase vimos que cuando la linea no es recta esto pasa, es decir, si es lineal 
-        es discos, si es diagmos cuadratica es arandelas.
-        <hr>
-        Elija la respuesta correcta. Cuando se utiliza la regla de Simpson para aproximar la integral definida, es necesario 
-        que el número de particiones sea
-        <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="8">
-        <br><br>
-        <button type="submit">Enviar</button><br><br>
-        <?php echo $verificar_1 ?>
-        <?php echo $verificar_2 ?>
-        <?php echo $verificar_3 ?>
-        <?php echo $verificar_4 ?>
-        <?php echo $verificar_5 ?>
-        </form>
+    <h4>2.1. Modelos de 
+    <input type="text"  value="<?php echo $respuesta_1; ?>" size="8" readonly>     
+    </h4>
+
+    <p>
+    El objetivo de este tema es proporcionar una comprensión de que el proceso de requisitos:
+    </p>
+
+    <ul>
+    <li>
+    no es una actividad 
+    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="8">
+    al 
+    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="8">
+    del ciclo de vida del software, sino más bien un proceso que se inicia al comienzo de 
+    un proyecto y que 
+    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="8">
+    refinándose a lo largo del ciclo de vida;
+    </li>
+    <li>
+    identifica los requerimientos del software como elementos de 
+    <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="8">
+    y los 
+    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="8">
+    utilizando las mismas 
+    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="8">
+    de 
+    <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="20">
+    de software que los demás 
+    <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="8">
+    de los 
+    <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="8">
+    del 
+    <input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="21">
+    del software;
+    </li>
+    <li>
+    necesita 
+    <input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="8">
+    al contexto de la organización y del proyecto.
+    </li>
+    </ul>
+
+    <p>
+    En particular, el tema se ocupa de cómo se configuran las actividades de 
+    <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="8">
+    , 
+    <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="8">
+    ,
+    <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="8">
+    y 
+    <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="8">
+    para diferentes tipos de 
+    <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="8">
+    y 
+    <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="8">
+    . 
+    El tema también incluye 
+    <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="8">
+    que aportan 
+    <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="8">
+    al proceso de requerimientos, tales como
+    estudios de 
+    <input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>" size="8">
+    y estudios de 
+    <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="8">
+    .
+    </p>
+
+      <button type="submit">Enviar</button> 
+            <?php echo $verificar_1 ?>
+<?php echo $verificar_2 ?>
+<?php echo $verificar_3 ?>
+<?php echo $verificar_4 ?>
+<?php echo $verificar_5 ?>
+<?php echo $verificar_6 ?>
+<?php echo $verificar_7 ?>
+<?php echo $verificar_8 ?>
+<?php echo $verificar_9 ?>
+<?php echo $verificar_10 ?>
+<?php echo $verificar_11 ?>
+ <?php echo $verificar_12 ?>
+<?php echo $verificar_13 ?>
+<?php echo $verificar_14 ?>
+<?php echo $verificar_15 ?>
+<?php echo $verificar_16 ?>
+<?php echo $verificar_17 ?>
+<?php echo $verificar_18 ?>
+<?php echo $verificar_19 ?>
+<?php echo $verificar_20 ?>
+<?php echo $verificar_21 ?>
+<?php echo $verificar_22 ?>
+<hr>
+    <h4>2.2. 
+    <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="8">    
+    del 
+    <input type="text"  value="<?php echo $respuesta_1; ?>" size="8" readonly>      
+    </h4>
+
+    <p>
+    Este tema presenta los roles de las personas que participan en el proceso de requerimientos. 
+    Este proceso es fundamentalmente 
+    <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="8"> 
+    , y el 
+    <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="8">
+    en requerimientos necesita 
+    <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="8">
+    entre el 
+    <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="8">
+    del 
+    <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="8">
+    y el de la ingeniería de software. 
+    A menudo hay muchas personas involucradas además del 
+    <input type="text" value="<?php echo $respuesta_25; ?>" size="8" readonly>
+    en requerimientos, cada una de las cuales tiene un 
+    <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="8">
+    en el software. 
+    Los interesados variarán de un proyecto a otro, pero siempre incluirán a 
+    <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="8">
+    /
+    <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="8">
+    y 
+    <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="8">
+    (que no necesariamente son los mismos).
+    </p>
+
+    <p>
+    Ejemplos típicos de interesados en el software incluyen (pero no se limitan a) los siguientes:
+    </p>
+    <ul>
+    <li>
+    <strong>
+    <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="8">    
+    :</strong> Este grupo está compuesto por quienes operarán el software. 
+    A menudo es un grupo heterogéneo que incluye personas con diferentes roles y requisitos.
+    </li>
+    <li>
+    <strong>
+    <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="8">    
+    :</strong> Este grupo está compuesto por quienes han encargado el software o quienes representan
+    el mercado 
+    <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="8">
+    del software.
+    </li>
+    <li>
+    <strong>
+    <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="20">    
+    </strong>
+    </li>
+    <li>
+    <strong>
+    <input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="8">       
+    </strong>
+    </li>
+    <li>
+    <strong>
+    <input type="text" name="respuesta_38" value="<?php echo $respuesta_38; ?>" size="20">        
+    </strong>
+    </li>
+    </ul>
+
+    <p>
+    No será posible 
+    <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="20"> 
+    perfectamente los requerimientos de todos los 
+    <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="20"> 
+    , y es tarea del ingeniero de
+    software negociar compromisos que sean aceptables para los principales interesados y que estén dentro de las 
+    restricciones presupuestarias, técnicas, regulatorias y de otro tipo. 
+    Un requisito previo para esto es que todos los interesados sean identificados, que se analice la naturaleza
+    de su “interés” y que se obtengan sus requerimientos.
+    </p>
+    <button onmousedown="mostrarMensaje()" onmouseup="ocultarMensaje()">Dato</button>
+    <p id="mensaje" style="display:none;"> 
+    <strong>parentesis</strong>
+    El “interés” del ingeniero de software en este contexto se refiere a: <br>
+    Crear soluciones eficientes. <br>
+    Reutilizar componentes ya probados (ahorra tiempo, reduce errores). <br>
+    Mantener una arquitectura limpia, sostenible y escalable.
+    
+    </p>
+
+   <button type="submit">Enviar</button>
+            <?php echo $verificar_23 ?>
+<?php echo $verificar_24 ?>
+<?php echo $verificar_25 ?>
+<?php echo $verificar_26 ?>
+<?php echo $verificar_27 ?>
+<?php echo $verificar_28 ?>
+<?php echo $verificar_29 ?>
+<?php echo $verificar_30 ?>
+<?php echo $verificar_31 ?>
+<?php echo $verificar_32 ?>
+<?php echo $verificar_33 ?>
+  <?php echo $verificar_34 ?>
+<?php echo $verificar_35 ?>
+<?php echo $verificar_36 ?>
+<?php echo $verificar_37 ?>
+<?php echo $verificar_38 ?>
+<?php echo $verificar_39 ?>
+<?php echo $verificar_40 ?>
+<hr>
+    </form>
 </div>
 
-
-
-
 <div class="seccion derecha">
-    <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-   
+    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    
     </form>
 </div>
 

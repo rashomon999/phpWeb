@@ -1,24 +1,67 @@
 <?php
- 
- 
-$respuesta_1 = ''; $respuesta_2 = ''; $respuesta_3 = ''; $respuesta_3_2 = ''; $respuesta_4 = ''; $respuesta_5 = ''; 
-$respuesta_6 = ''; $respuesta_7 = ''; $respuesta_8 = ''; $respuesta_9 = '';  $respuesta_10 = '';
-$respuesta_11 = ''; $respuesta_12 = ''; $respuesta_13 = ''; $respuesta_14 = ''; $respuesta_15 = '';
-$respuesta_16 = ''; $respuesta_17 = ''; $respuesta_18 = ''; $respuesta_19 = ''; $respuesta_20 = '';
-$respuesta_21 = ''; $respuesta_22 = '';  $respuesta_23 = '';  $respuesta_24 = '';
-$respuesta_25 = ''; $respuesta_26 = ''; $respuesta_27 = ''; $respuesta_28 = ''; $respuesta_29 = '';
-$respuesta_30 = '';
- 
+// Inicialización de variables para respuestas
+$respuesta_1 = $respuesta_2 = $respuesta_3 = $respuesta_3_2 = $respuesta_4 = $respuesta_5 = 
+$respuesta_6 = $respuesta_7 = $respuesta_8 = $respuesta_9 = $respuesta_10 = 
+$respuesta_11 = $respuesta_12 = $respuesta_13 = $respuesta_14 = $respuesta_15 = 
+$respuesta_16 = $respuesta_17 = $respuesta_18 = $respuesta_19 = $respuesta_20 = 
+$respuesta_21 = $respuesta_22 = $respuesta_23 = $respuesta_24 = $respuesta_25 = 
+$respuesta_26 = $respuesta_27 = $respuesta_28 = $respuesta_29 = $respuesta_30 = '';
 
-$verificar_1 = ''; $verificar_2 = ''; $verificar_3 = '';  $verificar_3_2 = ''; $verificar_4 = ''; $verificar_5 = ''; 
-$verificar_6 = ''; $verificar_7 = '';  $verificar_8 = ''; $verificar_9 = ''; $verificar_10 = ''; 
-$verificar_11 = ''; $verificar_12 = ''; $verificar_13 = ''; $verificar_14 = ''; $verificar_15 = ''; 
-$verificar_16 = '';  $verificar_17 = ''; $verificar_18 = ''; $verificar_19 = ''; $verificar_20 = '';  
-$verificar_21 = '';  $verificar_22 = '';  $verificar_23 = '';   $verificar_24 = '';   $verificar_25 = '';  
-$verificar_26 = '';  $verificar_27= ''; $verificar_28= '';  $verificar_29= '';  $verificar_30 = ''; 
- 
+// Inicialización de variables para verificaciones
+$verificar_1 = $verificar_2 = $verificar_3 = $verificar_3_2 = $verificar_4 = $verificar_5 = 
+$verificar_6 = $verificar_7 = $verificar_8 = $verificar_9 = $verificar_10 = 
+$verificar_11 = $verificar_12 = $verificar_13 = $verificar_14 = $verificar_15 = 
+$verificar_16 = $verificar_17 = $verificar_18 = $verificar_19 = $verificar_20 = 
+$verificar_21 = $verificar_22 = $verificar_23 = $verificar_24 = $verificar_25 = 
+$verificar_26 = $verificar_27 = $verificar_28 = $verificar_29 = $verificar_30 = '';
+
+$mostrar_solucion = '';
 
 if ($_POST) {
+    $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
+    
+    if ($mostrar_solucion === 'mostrar_solucion') {
+        // Establecer todas las respuestas correctas
+        $respuesta_1 = 'definida';
+        $respuesta_2 = '[a,b]';
+        $respuesta_3 = 'P={x_0,x_1,x_2,...,x_n}';
+        $respuesta_3_2 = 'x_0';
+        $respuesta_4 = 'x_n';
+        $respuesta_5 = 'b';
+        $respuesta_6 = '[a,b]';
+        $respuesta_7 = 'n';
+        $respuesta_8 = 'm';
+        $respuesta_9 = 'M';
+        $respuesta_10 = 'f,p';
+        $respuesta_11 = '\sum_{i=1}^n M_i*\Delta x_i';
+        $respuesta_12 = 'f,p';
+        $respuesta_13 = '\sum_{i=1}^n m_i*\Delta x_i';
+        $respuesta_14 = 'L(f,p)';
+        $respuesta_15 = 'U(f,p)';
+        $respuesta_16 = 'integrable';
+        $respuesta_17 = 'L(f,p)';
+        $respuesta_18 = 'I';
+        $respuesta_19 = 'U(f,p)';
+        $respuesta_20 = 'c_i';
+        $respuesta_21 = 'm_i';
+        $respuesta_22 = 'f(c_i)';
+        $respuesta_23 = 'M_i';
+        $respuesta_24 = 'E';
+        $respuesta_25 = '0';
+        $respuesta_26 = 'N';
+        $respuesta_27 = '|\int_{a}^{b}f(x)\,dx-\sum_{i=1}^{n}f(c_i)\Delta x_i |<\epsilon';
+        $respuesta_28 = 'n';
+        $respuesta_29 = '\sum_{i=1}^nf(c_i)\Delta x_i';
+        $respuesta_30 = 'A_R=\Delta x\sum_{i=1}^nf(a+i\Delta x)';
+        
+        // Marcar todas como correctas
+        $verificar_1 = $verificar_2 = $verificar_3 = $verificar_3_2 = $verificar_4 = $verificar_5 = 
+        $verificar_6 = $verificar_7 = $verificar_8 = $verificar_9 = $verificar_10 = 
+        $verificar_11 = $verificar_12 = $verificar_13 = $verificar_14 = $verificar_15 = 
+        $verificar_16 = $verificar_17 = $verificar_18 = $verificar_19 = $verificar_20 = 
+        $verificar_21 = $verificar_22 = $verificar_23 = $verificar_24 = $verificar_25 = 
+        $verificar_26 = $verificar_27 = $verificar_28 = $verificar_29 = $verificar_30 = "correcto";
+    } else {
    // Verificar la respuesta de la primera pregunta
    $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
    if ($respuesta_1 === 'definida') {
@@ -322,6 +365,7 @@ if ($_POST) {
         $verificar_30 = "incorrecto";
     }
 }
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -329,7 +373,7 @@ if ($_POST) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -338,6 +382,14 @@ if ($_POST) {
         max-width: 100%;
         height: auto;
     }
+
+    .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 230vh;
+    }
+
 </style>
  
 <script>
@@ -663,6 +715,17 @@ function ocultarMensaje4() {
     intervalos \( [  x_{i-1} - x_i ]\) de longitud  <br><br>
     \[ \Delta x_i = x_{i-1} - x_i  \]
     <br><br>
+
+       <button type="submit">enviar final</button> <br> <br>
+    <?php echo $verificar_1 ?>
+    <?php echo $verificar_2 ?>
+    <?php echo $verificar_3 ?>
+    <?php echo $verificar_3_2 ?>
+    <?php echo $verificar_4 ?>  
+    <?php echo $verificar_5 ?>
+    <?php echo $verificar_6 ?>
+    <?php echo $verificar_7 ?>
+    <hr>
     <strong> Suma de rectangulos inscritos y circunscristos (U,L): </strong>
     <br><br>
     Se cumple lo anterior y <br><br>
@@ -698,14 +761,6 @@ function ocultarMensaje4() {
     id="respuesta_13" oninput="actualizarFormula2()" value="<?php echo $respuesta_13 ?>">
     <br>   <br>   
     <button type="submit">enviar final</button> <br> <br>
-    <?php echo $verificar_1 ?>
-    <?php echo $verificar_2 ?>
-    <?php echo $verificar_3 ?>
-    <?php echo $verificar_3_2 ?>
-    <?php echo $verificar_4 ?>  
-    <?php echo $verificar_5 ?>
-    <?php echo $verificar_6 ?>
-    <?php echo $verificar_7 ?>
     <?php echo $verificar_8 ?>
     <?php echo $verificar_9 ?>
     <?php echo $verificar_10 ?>
@@ -773,7 +828,7 @@ function ocultarMensaje4() {
     <?php echo $verificar_17 ?>
     <?php echo $verificar_18 ?>
     <?php echo $verificar_19 ?>
- 
+    <hr>
     </form>
 </div>
 
@@ -894,6 +949,15 @@ function ocultarMensaje4() {
     <br> <br> 
     <button type="submit">enviar final</button> <br> 
     <?php echo $verificar_30 ?>
+    <hr>
+
+     <hr>
+     <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
+    <br>
+    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
+    <button type="submit"   >Mostrar Solución</button>
+        
+    
     </form>
 </div>
 <div class="centered-container">

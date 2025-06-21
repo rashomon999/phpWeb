@@ -1635,7 +1635,7 @@ function ocultarMensaje4() {
 <button type="submit">Enviar</button>
 <?php echo $verificar_78 ?>
 <?php echo $verificar_79 ?>
-<?php echo $verificar_80 ?>
+<?php echo $verificar_80 ?> 
 <?php echo $verificar_81 ?>
 <?php echo $verificar_82 ?>
 <?php echo $verificar_83 ?>
@@ -1696,7 +1696,7 @@ function ocultarMensaje4() {
 <br><br><br>
 
     <hr>
-     <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
+    <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
     <br>
     <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
     <button type="submit"   >Mostrar Solución</button>

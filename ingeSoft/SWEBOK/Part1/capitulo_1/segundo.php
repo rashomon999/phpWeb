@@ -322,94 +322,97 @@ function ocultarMensaje4() {
 <body> 
 <div class="seccion izquierda">
     <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h3>2. Proceso de Requisitos</h3>
-<p>[1*, c4s4] [2*, c1–4, c6, c22, c23]</p>
+    <h3>2. Proceso de requerimientos</h3>
+    <p>[1*, c4s4] [2*, c1–4, c6, c22, c23]</p>
 
-<p>
-Esta sección introduce el proceso de requisitos de software, orientando los cinco temas restantes y mostrando cómo el proceso de requisitos se acopla con el proceso general de ingeniería de software.
-</p>
+    <p>
+    Esta sección introduce el proceso de requisitos de software, orientando los cinco temas restantes 
+    y mostrando cómo el proceso de requisitos se acopla con el proceso general de ingeniería de software.
+    </p>
 
-<h4>2.1. Modelos de Proceso</h4>
+    <h4>2.1. Modelos de Proceso</h4>
 
-<p>
-El objetivo de este tema es proporcionar una comprensión de que el proceso de requisitos:
-</p>
-<ul>
-  <li>
+    <p>
+    El objetivo de este tema es proporcionar una comprensión de que el proceso de requisitos:
+    </p>
+    <ul>
+    <li>
     no es una actividad discreta al inicio del ciclo de vida del software, sino más bien un proceso que se inicia al comienzo de un proyecto y que continúa refinándose a lo largo del ciclo de vida;
-  </li>
-  <li>
+    </li>
+    <li>
     identifica los requisitos del software como elementos de configuración y los gestiona utilizando las mismas prácticas de gestión de configuración de software que los demás productos de los procesos del ciclo de vida del software;
-  </li>
-  <li>
+    </li>
+    <li>
     necesita adaptarse al contexto de la organización y del proyecto.
-  </li>
-</ul>
+    </li>
+    </ul>
 
-<p>
-En particular, el tema se ocupa de cómo se configuran las actividades de obtención, análisis, especificación y validación para diferentes tipos de proyectos y restricciones. 
-El tema también incluye actividades que aportan información al proceso de requisitos, tales como estudios de mercado y estudios de viabilidad.
-</p>
+    <p>
+    En particular, el tema se ocupa de cómo se configuran las actividades de obtención, análisis,
+    especificación y validación para diferentes tipos de proyectos y restricciones. 
+    El tema también incluye actividades que aportan información al proceso de requisitos, tales como
+    estudios de mercado y estudios de viabilidad.
+    </p>
 
-<h4>2.2. Actores del Proceso</h4>
+    <h4>2.2. Actores del Proceso</h4>
 
-<p>
-Este tema presenta los roles de las personas que participan en el proceso de requisitos. 
-Este proceso es fundamentalmente interdisciplinario, y el especialista en requisitos necesita mediar entre el dominio del interesado y el de la ingeniería de software. 
-A menudo hay muchas personas involucradas además del especialista en requisitos, cada una de las cuales tiene un interés en el software. 
-Los interesados variarán de un proyecto a otro, pero siempre incluirán a usuarios/operadores y clientes (que no necesariamente son los mismos).
-</p>
+    <p>
+    Este tema presenta los roles de las personas que participan en el proceso de requerimientos. 
+    Este proceso es fundamentalmente interdisciplinario, y el especialista en requerimientos necesita mediar entre el dominio del interesado y el de la ingeniería de software. 
+    A menudo hay muchas personas involucradas además del especialista en requerimientos, cada una de las cuales tiene un interés en el software. 
+    Los interesados variarán de un proyecto a otro, pero siempre incluirán a usuarios/operadores y clientes (que no necesariamente son los mismos).
+    </p>
 
-<p>
-Ejemplos típicos de interesados en el software incluyen (pero no se limitan a) los siguientes:
-</p>
-<ul>
-  <li>
+    <p>
+    Ejemplos típicos de interesados en el software incluyen (pero no se limitan a) los siguientes:
+    </p>
+    <ul>
+    <li>
     <strong>Usuarios:</strong> Este grupo está compuesto por quienes operarán el software. 
     A menudo es un grupo heterogéneo que incluye personas con diferentes roles y requisitos.
-  </li>
-  <li>
+    </li>
+    <li>
     <strong>Clientes:</strong> Este grupo está compuesto por quienes han encargado el software o quienes representan el mercado objetivo del software.
-  </li>
-  <li>
+    </li>
+    <li>
     <strong>Analistas de mercado:</strong> Un producto dirigido al mercado masivo no tendrá un cliente específico que lo encargue, por lo que frecuentemente se necesita al personal de mercadeo para establecer lo que el mercado necesita y actuar como clientes sustitutos.
-  </li>
-  <li>
+    </li>
+    <li>
     <strong>Reguladores:</strong> Muchos dominios de aplicación, como la banca y el transporte público, están regulados. El software en estos dominios debe cumplir con los requisitos de las autoridades regulatorias.
-  </li>
-  <li>
+    </li>
+    <li>
     <strong>Ingenieros de software:</strong> Estos individuos tienen un interés legítimo en beneficiarse del desarrollo del software, por ejemplo, reutilizando componentes en otros productos o desde ellos. 
     Si, en este escenario, un cliente de un producto particular tiene requisitos específicos que comprometen el potencial de reutilización de componentes, los ingenieros de software deben sopesar cuidadosamente su propio interés frente a los del cliente. 
     Requisitos específicos, en particular restricciones, pueden tener un impacto importante en el costo del proyecto o en su entrega, debido a que se ajusten bien o mal al conjunto de habilidades de los ingenieros. 
     Deberían identificarse compromisos importantes entre tales requisitos.
-  </li>
-</ul>
+    </li>
+    </ul>
 
-<p>
-No será posible satisfacer perfectamente los requisitos de todos los interesados, y es tarea del ingeniero de software negociar compromisos que sean aceptables para los principales interesados y que estén dentro de las restricciones presupuestarias, técnicas, regulatorias y de otro tipo. 
-Un requisito previo para esto es que todos los interesados sean identificados, que se analice la naturaleza de su “interés” y que se obtengan sus requisitos.
-</p>
+    <p>
+    No será posible satisfacer perfectamente los requisitos de todos los interesados, y es tarea del ingeniero de software negociar compromisos que sean aceptables para los principales interesados y que estén dentro de las restricciones presupuestarias, técnicas, regulatorias y de otro tipo. 
+    Un requisito previo para esto es que todos los interesados sean identificados, que se analice la naturaleza de su “interés” y que se obtengan sus requisitos.
+    </p>
     <hr>
     <strong>parentesis</strong>
     <p>El “interés” del ingeniero de software en este contexto se refiere a:</p>
 
-<ul>
-  <li>Crear soluciones eficientes.</li>
-  <li>Reutilizar componentes ya probados (ahorra tiempo, reduce errores).</li>
-  <li>Mantener una arquitectura limpia, sostenible y escalable.</li>
-</ul>
+    <ul>
+    <li>Crear soluciones eficientes.</li>
+    <li>Reutilizar componentes ya probados (ahorra tiempo, reduce errores).</li>
+    <li>Mantener una arquitectura limpia, sostenible y escalable.</li>
+    </ul>
 
     <hr>
 
     <h4>2.3. Apoyo y Gestión del Proceso</h4>
 
-<p>
-Esta sección introduce los recursos de gestión de proyectos que son requeridos y consumidos por el proceso de requisitos. 
-Establece el contexto para el primer tema (Iniciación y Definición del Alcance) del área de conocimiento de Gestión de la Ingeniería de Software. 
-Su propósito principal es establecer el vínculo entre las actividades del proceso identificadas en la sección 2.1 y los aspectos de costo, recursos humanos, capacitación y herramientas.
-</p>
+    <p>
+    Esta sección introduce los recursos de gestión de proyectos que son requeridos y consumidos por el proceso de requisitos. 
+    Establece el contexto para el primer tema (Iniciación y Definición del Alcance) del área de conocimiento de Gestión de la Ingeniería de Software. 
+    Su propósito principal es establecer el vínculo entre las actividades del proceso identificadas en la sección 2.1 y los aspectos de costo, recursos humanos, capacitación y herramientas.
+    </p>
 
-<h4>2.4. Calidad del Proceso y Mejora</h4>
+    <h4>2.4. Calidad del Proceso y Mejora</h4>
 
 <p>
 Este tema se ocupa de la evaluación de la calidad y la mejora del proceso de requisitos. 

@@ -1,20 +1,50 @@
 <?php
- 
- 
-$respuesta_1 = ''; $respuesta_2 = ''; $respuesta_3 = ''; $respuesta_4 = ''; $respuesta_5 = ''; 
-$respuesta_6 = ''; $respuesta_7 = ''; $respuesta_8 = ''; $respuesta_9 = '';  $respuesta_10 = '';
-$respuesta_11 = ''; $respuesta_12 = ''; $respuesta_13 = ''; $respuesta_14 = ''; $respuesta_15 = '';
-$respuesta_16 = ''; $respuesta_17 = ''; $respuesta_18 = ''; $respuesta_19 = ''; $respuesta_20 = '';
+// Inicialización de variables para respuestas
+$respuesta_1 = $respuesta_2 = $respuesta_3 = $respuesta_4 = $respuesta_5 = 
+$respuesta_6 = $respuesta_7 = $respuesta_8 = $respuesta_9 = $respuesta_10 = 
+$respuesta_11 = $respuesta_12 = $respuesta_13 = $respuesta_14 = $respuesta_15 = 
+$respuesta_16 = $respuesta_17 = $respuesta_18 = $respuesta_19 = $respuesta_20 = '';
 
+// Inicialización de variables para verificaciones
+$verificar_1 = $verificar_2 = $verificar_3 = $verificar_4 = $verificar_5 = 
+$verificar_6 = $verificar_7 = $verificar_8 = $verificar_9 = $verificar_10 = 
+$verificar_11 = $verificar_12 = $verificar_13 = $verificar_14 = $verificar_15 = 
+$verificar_16 = $verificar_17 = $verificar_18 = $verificar_19 = $verificar_20 = '';
 
-$verificar_1 = ''; $verificar_2 = ''; $verificar_3 = ''; $verificar_4 = ''; $verificar_5 = ''; 
-$verificar_6 = ''; $verificar_7 = '';  $verificar_8 = ''; $verificar_9 = ''; $verificar_10 = ''; 
-$verificar_11 = ''; $verificar_12 = ''; $verificar_13 = ''; $verificar_14 = ''; $verificar_15 = ''; 
-$verificar_16 = '';  $verificar_17 = ''; $verificar_18 = ''; $verificar_19 = ''; $verificar_20 = '';  
-
- 
+$mostrar_solucion = '';
 
 if ($_POST) {
+    $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
+    
+    if ($mostrar_solucion === 'mostrar_solucion') {
+        // Establecer todas las respuestas correctas
+        $respuesta_1 = 'Sin(a)';
+        $respuesta_2 = 'Csc(a)';
+        $respuesta_3 = '1';
+        $respuesta_4 = 'Cos(a)';
+        $respuesta_5 = 'Sec(a)';
+        $respuesta_6 = '1';
+        $respuesta_7 = 'Tan(a)';
+        $respuesta_8 = 'Cot(a)';
+        $respuesta_9 = '1';
+        $respuesta_10 = 'Tan(a)=\frac{Sen(a)}{Cos(a)}';
+        $respuesta_11 = 'Cot=\frac{Cos(a)}{Sen(a)}';
+        $respuesta_12 = 'Sen^2(a)+Cos^2(a)=1';
+        $respuesta_13 = '1-Cos^2(a)';
+        $respuesta_14 = '1-Sen^2(a)';
+        $respuesta_15 = 'Tan^2(a)+1=Sec^2(a)';
+        $respuesta_16 = 'Tan^2(a)=Sec^2(a)-1';
+        $respuesta_17 = '1=Sec^2(a)-Tan^2(a)';
+        $respuesta_18 = 'Csc^2(a)=1+Cot^2(a)';
+        $respuesta_19 = 'Cot^2(a)=Csc^2(a)-1';
+        $respuesta_20 = '1=Csc^2(a)-Cot^2(a)';
+        
+        // Marcar todas como correctas
+        $verificar_1 = $verificar_2 = $verificar_3 = $verificar_4 = $verificar_5 = 
+        $verificar_6 = $verificar_7 = $verificar_8 = $verificar_9 = $verificar_10 = 
+        $verificar_11 = $verificar_12 = $verificar_13 = $verificar_14 = $verificar_15 = 
+        $verificar_16 = $verificar_17 = $verificar_18 = $verificar_19 = $verificar_20 = "correcto";
+    } else {
    // Verificar la respuesta de la primera pregunta
    $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
    if ($respuesta_1 === 'Sin(a)') {
@@ -207,6 +237,7 @@ if ($_POST) {
        $verificar_20 = "incorrecto";
    }
 }
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -214,7 +245,7 @@ if ($_POST) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -222,6 +253,12 @@ if ($_POST) {
     .imagen {
         max-width: 100%;
         height: auto;
+    }
+      .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 250vh;
     }
 </style>
  
@@ -607,6 +644,7 @@ function ocultarMensaje4() {
     <button type="submit">enviar</button>
     <?php echo $verificar_13 ?>
     <?php echo $verificar_14 ?>
+    <hr>
     </form>
 </div>
 
@@ -717,7 +755,12 @@ function ocultarMensaje4() {
     <img src="..\img\Captura de pantalla 2024-12-31 082158.png" alt="" width="250">    
     </p>
     <hr>
-    
+        <hr>
+     <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
+    <br>
+    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
+    <button type="submit"   >Mostrar Solución</button>
+        <hr>
     </form>
 </div>
 <div class="centered-container">

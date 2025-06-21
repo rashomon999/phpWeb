@@ -1,20 +1,48 @@
-<?php
- 
- 
+<?php 
 $respuesta_1 = ''; $respuesta_2 = ''; $respuesta_3 = ''; $respuesta_4 = ''; $respuesta_5 = ''; 
-$respuesta_6 = ''; $respuesta_7 = ''; $respuesta_8 = ''; $respuesta_9 = '';  $respuesta_10 = '';
+$respuesta_6 = ''; $respuesta_7 = ''; $respuesta_8 = ''; $respuesta_9 = ''; $respuesta_10 = '';
 $respuesta_11 = ''; $respuesta_12 = ''; $respuesta_13 = ''; $respuesta_14 = ''; $respuesta_15 = '';
 $respuesta_16 = ''; $respuesta_17 = ''; $respuesta_18 = ''; $respuesta_19 = ''; $respuesta_20 = '';
 
-
 $verificar_1 = ''; $verificar_2 = ''; $verificar_3 = ''; $verificar_4 = ''; $verificar_5 = ''; 
-$verificar_6 = ''; $verificar_7 = '';  $verificar_8 = ''; $verificar_9 = ''; $verificar_10 = ''; 
+$verificar_6 = ''; $verificar_7 = ''; $verificar_8 = ''; $verificar_9 = ''; $verificar_10 = ''; 
 $verificar_11 = ''; $verificar_12 = ''; $verificar_13 = ''; $verificar_14 = ''; $verificar_15 = ''; 
-$verificar_16 = '';  $verificar_17 = ''; $verificar_18 = ''; $verificar_19 = ''; $verificar_20 = '';  
+$verificar_16 = ''; $verificar_17 = ''; $verificar_18 = ''; $verificar_19 = ''; $verificar_20 = '';  
 
- 
+$mostrar_solucion = '';
 
 if ($_POST) {
+    $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
+    
+    if ($mostrar_solucion === 'mostrar_solucion') {
+        // Establecer todas las respuestas correctas
+        $respuesta_1 = '\frac{CO}{H}';
+        $respuesta_2 = '\frac{CA}{H}';
+        $respuesta_3 = '\frac{CO}{CA}';
+        $respuesta_4 = '\frac{CA}{CO}';
+        $respuesta_5 = '\frac{H}{CA}';
+        $respuesta_6 = '\frac{H}{CO}';
+        $respuesta_7 = '\frac{Cos(a)}{Cot(a)}';
+        $respuesta_8 = '\frac{Sin(a)}{Tan(a)}';
+        $respuesta_9 = '\frac{Sin(a)}{Cos(a)}';
+        $respuesta_10 = '\frac{Cos(a)}{Sin(a)}';
+        $respuesta_11 = '\frac{Tan(a)}{Sin(a)}';
+        $respuesta_12 = '\frac{Cot(a)}{Cos(a)}';
+        $respuesta_13 = '1-Cos^2(a)';
+        $respuesta_14 = '1-Sen^2(a)';
+        $respuesta_15 = 'Tan^2(a)+1=Sec^2(a)';
+        $respuesta_16 = 'Tan^2(a)=Sec^2(a)-1';
+        $respuesta_17 = '1=Sec^2(a)-Tan^2(a)';
+        $respuesta_18 = 'Csc^2(a)=1+Cot^2(a)';
+        $respuesta_19 = 'Cot^2(a)=Csc^2(a)-1';
+        $respuesta_20 = '1=Csc^2(a)-Cot^2(a)';
+        
+        // Marcar todas como correctas
+        $verificar_1 = $verificar_2 = $verificar_3 = $verificar_4 = $verificar_5 = 
+        $verificar_6 = $verificar_7 = $verificar_8 = $verificar_9 = $verificar_10 = 
+        $verificar_11 = $verificar_12 = $verificar_13 = $verificar_14 = $verificar_15 = 
+        $verificar_16 = $verificar_17 = $verificar_18 = $verificar_19 = $verificar_20 = "correcto";
+    } else {
    // Verificar la respuesta de la primera pregunta
    $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
    if ($respuesta_1 === '\frac{CO}{H}' || $respuesta_1 === '\frac{Co}{H}') {
@@ -207,6 +235,7 @@ if ($_POST) {
        $verificar_20 = "incorrecto";
    }
 }
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -214,7 +243,7 @@ if ($_POST) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="style2.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -632,7 +661,12 @@ function ocultarMensaje4() {
     <?php echo $verificar_10 ?>
     <?php echo $verificar_11 ?>
     <?php echo $verificar_12 ?>
-
+  <hr>
+     <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
+    <br>
+    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
+    <button type="submit"   >Mostrar Solución</button>
+        
     </form>
 </div>
 <div class="centered-container">

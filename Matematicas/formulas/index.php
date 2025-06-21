@@ -549,7 +549,7 @@ function actualizarFormula() {
         <!-- Enviar formulario -->
         <input type="submit" value="Verificar Respuestas">
         <br><br>
-        <img src="../img/Captura de pantalla 2024-12-04 075049.png" alt=""> <br>
+        <img src="../../img/Captura de pantalla 2024-12-04 075049.png" alt=""> <br>
     <p>
     Estos gráficos muestran los posibles valores de \( \delta \), dadas opciones sucesivamente 
     más pequeñas de \( \varepsilon \).
