@@ -41,7 +41,7 @@ $respuesta_107 = '';
 $respuesta_108 = '';
 $respuesta_109 = '';
 $respuesta_110 = '';
-
+$respuesta_111 = '';
 
  
 
@@ -86,7 +86,7 @@ $verificar_61 = ''; $verificar_62 = ''; $verificar_63 = ''; $verificar_64 = ''; 
      $verificar_108 = '';
      $verificar_109 = '';
      $verificar_110 = '';
-     
+     $verificar_111 = '';
 
 if ($_POST) {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
@@ -465,7 +465,7 @@ if ($respuesta_38 === 'Ingenieros de software' || $respuesta_38 === 'ingenieros 
 }
 
  $respuesta_39 = isset($_POST['respuesta_39']) ? $_POST['respuesta_39'] : '';
-if ($respuesta_39 === '112') { 
+if ($respuesta_39 === 'satisfacer') { 
     $verificar_39 = "correcto";
 } elseif ($respuesta_39 === '') {
     $verificar_39 = '';
@@ -474,7 +474,7 @@ if ($respuesta_39 === '112') {
 }
 
  $respuesta_40 = isset($_POST['respuesta_40']) ? $_POST['respuesta_40'] : '';
-if ($respuesta_40 === '128') { 
+if ($respuesta_40 === 'interesados') { 
     $verificar_40 = "correcto";
 } elseif ($respuesta_40 === '') {
     $verificar_40 = '';
@@ -483,7 +483,7 @@ if ($respuesta_40 === '128') {
 }
 
  $respuesta_41 = isset($_POST['respuesta_41']) ? $_POST['respuesta_41'] : '';
-if ($respuesta_41 === '144') { 
+if ($respuesta_41 === 'calidad') { 
     $verificar_41 = "correcto";
 } elseif ($respuesta_41 === '') {
     $verificar_41 = '';
@@ -492,7 +492,7 @@ if ($respuesta_41 === '144') {
 }
 
  $respuesta_42 = isset($_POST['respuesta_42']) ? $_POST['respuesta_42'] : '';
-if ($respuesta_42 === '160') { 
+if ($respuesta_42 === 'proceso') { 
     $verificar_42 = "correcto";
 } elseif ($respuesta_42 === '') {
     $verificar_42 = '';
@@ -501,7 +501,7 @@ if ($respuesta_42 === '160') {
 }
 
  $respuesta_43 = isset($_POST['respuesta_43']) ? $_POST['respuesta_43'] : '';
-if ($respuesta_43 === '176') { 
+if ($respuesta_43 === 'proceso') { 
     $verificar_43 = "correcto";
 } elseif ($respuesta_43 === '') {
     $verificar_43 = '';
@@ -510,7 +510,7 @@ if ($respuesta_43 === '176') {
 }
 
  $respuesta_44 = isset($_POST['respuesta_44']) ? $_POST['respuesta_44'] : '';
-if ($respuesta_44 === '192') { 
+if ($respuesta_44 === 'mejora') { 
     $verificar_44 = "correcto";
 } elseif ($respuesta_44 === '') {
     $verificar_44 = '';
@@ -519,7 +519,7 @@ if ($respuesta_44 === '192') {
 }
 
  $respuesta_45 = isset($_POST['respuesta_45']) ? $_POST['respuesta_45'] : '';
-if ($respuesta_45 === '34') { 
+if ($respuesta_45 === 'conocimiento de calidad del software') { 
     $verificar_45 = "correcto";
 } elseif ($respuesta_45 === '') {
     $verificar_45 = '';
@@ -528,7 +528,7 @@ if ($respuesta_45 === '34') {
 }
 
  $respuesta_46 = isset($_POST['respuesta_46']) ? $_POST['respuesta_46'] : '';
-if ($respuesta_46 === '51') { 
+if ($respuesta_46 === 'proceso de ingenieria de software') { 
     $verificar_46 = "correcto";
 } elseif ($respuesta_46 === '') {
     $verificar_46 = '';
@@ -537,7 +537,7 @@ if ($respuesta_46 === '51') {
 }
 
  $respuesta_47 = isset($_POST['respuesta_47']) ? $_POST['respuesta_47'] : '';
-if ($respuesta_47 === '68') { 
+if ($respuesta_47 === 'benchmarking') { 
     $verificar_47 = "correcto";
 } elseif ($respuesta_47 === '') {
     $verificar_47 = '';
@@ -546,7 +546,7 @@ if ($respuesta_47 === '68') {
 }
 
  $respuesta_48 = isset($_POST['respuesta_48']) ? $_POST['respuesta_48'] : '';
-if ($respuesta_48 === '85') { 
+if ($respuesta_48 === 'origen') { 
     $verificar_48 = "correcto";
 } elseif ($respuesta_48 === '') {
     $verificar_48 = '';
@@ -555,7 +555,7 @@ if ($respuesta_48 === '85') {
 }
 
  $respuesta_49 = isset($_POST['respuesta_49']) ? $_POST['respuesta_49'] : '';
-if ($respuesta_49 === '102') { 
+if ($respuesta_49 === 'recopilarlos') { 
     $verificar_49 = "correcto";
 } elseif ($respuesta_49 === '') {
     $verificar_49 = '';
@@ -564,7 +564,7 @@ if ($respuesta_49 === '102') {
 }
 
  $respuesta_50 = isset($_POST['respuesta_50']) ? $_POST['respuesta_50'] : '';
-if ($respuesta_50 === '119') { 
+if ($respuesta_50 === 'primera etapa') { 
     $verificar_50 = "correcto";
 } elseif ($respuesta_50 === '') {
     $verificar_50 = '';
@@ -573,7 +573,7 @@ if ($respuesta_50 === '119') {
 }
 
  $respuesta_51 = isset($_POST['respuesta_51']) ? $_POST['respuesta_51'] : '';
-if ($respuesta_51 === '136') { 
+if ($respuesta_51 === 'comprension') { 
     $verificar_51 = "correcto";
 } elseif ($respuesta_51 === '') {
     $verificar_51 = '';
@@ -582,7 +582,7 @@ if ($respuesta_51 === '136') {
 }
 
  $respuesta_52 = isset($_POST['respuesta_52']) ? $_POST['respuesta_52'] : '';
-if ($respuesta_52 === '153') { 
+if ($respuesta_52 === 'problema') { 
     $verificar_52 = "correcto";
 } elseif ($respuesta_52 === '') {
     $verificar_52 = '';
@@ -591,7 +591,7 @@ if ($respuesta_52 === '153') {
 }
 
  $respuesta_53 = isset($_POST['respuesta_53']) ? $_POST['respuesta_53'] : '';
-if ($respuesta_53 === '170') { 
+if ($respuesta_53 === 'identifican') { 
     $verificar_53 = "correcto";
 } elseif ($respuesta_53 === '') {
     $verificar_53 = '';
@@ -600,7 +600,7 @@ if ($respuesta_53 === '170') {
 }
 
  $respuesta_54 = isset($_POST['respuesta_54']) ? $_POST['respuesta_54'] : '';
-if ($respuesta_54 === '187') { 
+if ($respuesta_54 === 'interesados') { 
     $verificar_54 = "correcto";
 } elseif ($respuesta_54 === '') {
     $verificar_54 = '';
@@ -609,7 +609,7 @@ if ($respuesta_54 === '187') {
 }
 
  $respuesta_55 = isset($_POST['respuesta_55']) ? $_POST['respuesta_55'] : '';
-if ($respuesta_55 === '204') { 
+if ($respuesta_55 === 'captura') { 
     $verificar_55 = "correcto";
 } elseif ($respuesta_55 === '') {
     $verificar_55 = '';
@@ -619,7 +619,7 @@ if ($respuesta_55 === '204') {
 
 
  $respuesta_56 = isset($_POST['respuesta_56']) ? $_POST['respuesta_56'] : '';
-if ($respuesta_56 === '36') { 
+if ($respuesta_56 === 'comunicacion') { 
     $verificar_56 = "correcto";
 } elseif ($respuesta_56 === '') {
     $verificar_56 = '';
@@ -628,7 +628,7 @@ if ($respuesta_56 === '36') {
 }
 
  $respuesta_57 = isset($_POST['respuesta_57']) ? $_POST['respuesta_57'] : '';
-if ($respuesta_57 === '54') { 
+if ($respuesta_57 === 'informar') { 
     $verificar_57 = "correcto";
 } elseif ($respuesta_57 === '') {
     $verificar_57 = '';
@@ -637,7 +637,7 @@ if ($respuesta_57 === '54') {
 }
 
  $respuesta_58 = isset($_POST['respuesta_58']) ? $_POST['respuesta_58'] : '';
-if ($respuesta_58 === '72') { 
+if ($respuesta_58 === 'alcance') { 
     $verificar_58 = "correcto";
 } elseif ($respuesta_58 === '') {
     $verificar_58 = '';
@@ -646,7 +646,7 @@ if ($respuesta_58 === '72') {
 }
 
  $respuesta_59 = isset($_POST['respuesta_59']) ? $_POST['respuesta_59'] : '';
-if ($respuesta_59 === '90') { 
+if ($respuesta_59 === 'proyecto') { 
     $verificar_59 = "correcto";
 } elseif ($respuesta_59 === '') {
     $verificar_59 = '';
@@ -655,7 +655,7 @@ if ($respuesta_59 === '90') {
 }
 
  $respuesta_60 = isset($_POST['respuesta_60']) ? $_POST['respuesta_60'] : '';
-if ($respuesta_60 === '108') { 
+if ($respuesta_60 === 'descripcion') { 
     $verificar_60 = "correcto";
 } elseif ($respuesta_60 === '') {
     $verificar_60 = '';
@@ -664,7 +664,7 @@ if ($respuesta_60 === '108') {
 }
 
  $respuesta_61 = isset($_POST['respuesta_61']) ? $_POST['respuesta_61'] : '';
-if ($respuesta_61 === '126') { 
+if ($respuesta_61 === 'especificar') { 
     $verificar_61 = "correcto";
 } elseif ($respuesta_61 === '') {
     $verificar_61 = '';
@@ -673,7 +673,7 @@ if ($respuesta_61 === '126') {
 }
 
  $respuesta_62 = isset($_POST['respuesta_62']) ? $_POST['respuesta_62'] : '';
-if ($respuesta_62 === '144') { 
+if ($respuesta_62 === 'proposito') { 
     $verificar_62 = "correcto";
 } elseif ($respuesta_62 === '') {
     $verificar_62 = '';
@@ -682,7 +682,7 @@ if ($respuesta_62 === '144') {
 }
 
  $respuesta_63 = isset($_POST['respuesta_63']) ? $_POST['respuesta_63'] : '';
-if ($respuesta_63 === '162') { 
+if ($respuesta_63 === 'priorizar') { 
     $verificar_63 = "correcto";
 } elseif ($respuesta_63 === '') {
     $verificar_63 = '';
@@ -691,7 +691,7 @@ if ($respuesta_63 === '162') {
 }
 
  $respuesta_64 = isset($_POST['respuesta_64']) ? $_POST['respuesta_64'] : '';
-if ($respuesta_64 === '180') { 
+if ($respuesta_64 === 'importantes') { 
     $verificar_64 = "correcto";
 } elseif ($respuesta_64 === '') {
     $verificar_64 = '';
@@ -700,7 +700,7 @@ if ($respuesta_64 === '180') {
 }
 
  $respuesta_65 = isset($_POST['respuesta_65']) ? $_POST['respuesta_65'] : '';
-if ($respuesta_65 === '198') { 
+if ($respuesta_65 === 'escalable') { 
     $verificar_65 = "correcto";
 } elseif ($respuesta_65 === '') {
     $verificar_65 = '';
@@ -709,7 +709,7 @@ if ($respuesta_65 === '198') {
 }
 
  $respuesta_66 = isset($_POST['respuesta_66']) ? $_POST['respuesta_66'] : '';
-if ($respuesta_66 === '216') { 
+if ($respuesta_66 === 'extensible') { 
     $verificar_66 = "correcto";
 } elseif ($respuesta_66 === '') {
     $verificar_66 = '';
@@ -718,7 +718,7 @@ if ($respuesta_66 === '216') {
 }
 
  $respuesta_67 = isset($_POST['respuesta_67']) ? $_POST['respuesta_67'] : '';
-if ($respuesta_67 === '38') { 
+if ($respuesta_67 === 'fuentes') { 
     $verificar_67 = "correcto";
 } elseif ($respuesta_67 === '') {
     $verificar_67 = '';
@@ -727,7 +727,7 @@ if ($respuesta_67 === '38') {
 }
 
  $respuesta_68 = isset($_POST['respuesta_68']) ? $_POST['respuesta_68'] : '';
-if ($respuesta_68 === '57') { 
+if ($respuesta_68 === 'identificadas') { 
     $verificar_68 = "correcto";
 } elseif ($respuesta_68 === '') {
     $verificar_68 = '';
@@ -736,7 +736,7 @@ if ($respuesta_68 === '57') {
 }
 
  $respuesta_69 = isset($_POST['respuesta_69']) ? $_POST['respuesta_69'] : '';
-if ($respuesta_69 === '76') { 
+if ($respuesta_69 === 'evaluadas') { 
     $verificar_69 = "correcto";
 } elseif ($respuesta_69 === '') {
     $verificar_69 = '';
@@ -745,7 +745,7 @@ if ($respuesta_69 === '76') {
 }
 
  $respuesta_70 = isset($_POST['respuesta_70']) ? $_POST['respuesta_70'] : '';
-if ($respuesta_70 === '95') { 
+if ($respuesta_70 === 'objetivos') { 
     $verificar_70 = "correcto";
 } elseif ($respuesta_70 === '') {
     $verificar_70 = '';
@@ -754,7 +754,7 @@ if ($respuesta_70 === '95') {
 }
 
  $respuesta_71 = isset($_POST['respuesta_71']) ? $_POST['respuesta_71'] : '';
-if ($respuesta_71 === '114') { 
+if ($respuesta_71 === 'objetivo') { 
     $verificar_71 = "correcto";
 } elseif ($respuesta_71 === '') {
     $verificar_71 = '';
@@ -763,7 +763,7 @@ if ($respuesta_71 === '114') {
 }
 
  $respuesta_72 = isset($_POST['respuesta_72']) ? $_POST['respuesta_72'] : '';
-if ($respuesta_72 === '133') { 
+if ($respuesta_72 === 'interes comercial') { 
     $verificar_72 = "correcto";
 } elseif ($respuesta_72 === '') {
     $verificar_72 = '';
@@ -772,7 +772,7 @@ if ($respuesta_72 === '133') {
 }
 
  $respuesta_73 = isset($_POST['respuesta_73']) ? $_POST['respuesta_73'] : '';
-if ($respuesta_73 === '152') { 
+if ($respuesta_73 === 'generales') { 
     $verificar_73 = "correcto";
 } elseif ($respuesta_73 === '') {
     $verificar_73 = '';
@@ -781,7 +781,7 @@ if ($respuesta_73 === '152') {
 }
 
  $respuesta_74 = isset($_POST['respuesta_74']) ? $_POST['respuesta_74'] : '';
-if ($respuesta_74 === '171') { 
+if ($respuesta_74 === 'Conocimiento del dominio' || $respuesta_74 === 'conocimiento del dominio') { 
     $verificar_74 = "correcto";
 } elseif ($respuesta_74 === '') {
     $verificar_74 = '';
@@ -790,7 +790,7 @@ if ($respuesta_74 === '171') {
 }
 
  $respuesta_75 = isset($_POST['respuesta_75']) ? $_POST['respuesta_75'] : '';
-if ($respuesta_75 === '190') { 
+if ($respuesta_75 === 'adquirir') { 
     $verificar_75 = "correcto";
 } elseif ($respuesta_75 === '') {
     $verificar_75 = '';
@@ -799,7 +799,7 @@ if ($respuesta_75 === '190') {
 }
 
  $respuesta_76 = isset($_POST['respuesta_76']) ? $_POST['respuesta_76'] : '';
-if ($respuesta_76 === '209') { 
+if ($respuesta_76 === 'tener') { 
     $verificar_76 = "correcto";
 } elseif ($respuesta_76 === '') {
     $verificar_76 = '';
@@ -808,7 +808,7 @@ if ($respuesta_76 === '209') {
 }
 
  $respuesta_77 = isset($_POST['respuesta_77']) ? $_POST['respuesta_77'] : '';
-if ($respuesta_77 === '228') { 
+if ($respuesta_77 === 'conocimiento') { 
     $verificar_77 = "correcto";
 } elseif ($respuesta_77 === '') {
     $verificar_77 = '';
@@ -817,7 +817,7 @@ if ($respuesta_77 === '228') {
 }
 
  $respuesta_78 = isset($_POST['respuesta_78']) ? $_POST['respuesta_78'] : '';
-if ($respuesta_78 === '40') { 
+if ($respuesta_78 === 'dominio') { 
     $verificar_78 = "correcto";
 } elseif ($respuesta_78 === '') {
     $verificar_78 = '';
@@ -826,7 +826,7 @@ if ($respuesta_78 === '40') {
 }
 
  $respuesta_79 = isset($_POST['respuesta_79']) ? $_POST['respuesta_79'] : '';
-if ($respuesta_79 === '60') { 
+if ($respuesta_79 === 'interpretarse') { 
     $verificar_79 = "correcto";
 } elseif ($respuesta_79 === '') {
     $verificar_79 = '';
@@ -835,7 +835,7 @@ if ($respuesta_79 === '60') {
 }
 
  $respuesta_80 = isset($_POST['respuesta_80']) ? $_POST['respuesta_80'] : '';
-if ($respuesta_80 === '80') { 
+if ($respuesta_80 === 'interesados' || $respuesta_80 === 'interesados') { 
     $verificar_80 = "correcto";
 } elseif ($respuesta_80 === '') {
     $verificar_80 = '';
@@ -844,7 +844,7 @@ if ($respuesta_80 === '80') {
 }
 
  $respuesta_81 = isset($_POST['respuesta_81']) ? $_POST['respuesta_81'] : '';
-if ($respuesta_81 === '100') { 
+if ($respuesta_81 === 'insatisfactorios') { 
     $verificar_81 = "correcto";
 } elseif ($respuesta_81 === '') {
     $verificar_81 = '';
@@ -853,7 +853,7 @@ if ($respuesta_81 === '100') {
 }
 
  $respuesta_82 = isset($_POST['respuesta_82']) ? $_POST['respuesta_82'] : '';
-if ($respuesta_82 === '120') { 
+if ($respuesta_82 === 'Reglas de negocio' || $respuesta_82 === 'reglas de negocio') { 
     $verificar_82 = "correcto";
 } elseif ($respuesta_82 === '') {
     $verificar_82 = '';
@@ -862,7 +862,7 @@ if ($respuesta_82 === '120') {
 }
 
  $respuesta_83 = isset($_POST['respuesta_83']) ? $_POST['respuesta_83'] : '';
-if ($respuesta_83 === '140') { 
+if ($respuesta_83 === 'declaraciones') { 
     $verificar_83 = "correcto";
 } elseif ($respuesta_83 === '') {
     $verificar_83 = '';
@@ -871,7 +871,7 @@ if ($respuesta_83 === '140') {
 }
 
  $respuesta_84 = isset($_POST['respuesta_84']) ? $_POST['respuesta_84'] : '';
-if ($respuesta_84 === '160') { 
+if ($respuesta_84 === 'definen') { 
     $verificar_84 = "correcto";
 } elseif ($respuesta_84 === '') {
     $verificar_84 = '';
@@ -880,7 +880,7 @@ if ($respuesta_84 === '160') {
 }
 
  $respuesta_85 = isset($_POST['respuesta_85']) ? $_POST['respuesta_85'] : '';
-if ($respuesta_85 === '180') { 
+if ($respuesta_85 === 'restringen') { 
     $verificar_85 = "correcto";
 } elseif ($respuesta_85 === '') {
     $verificar_85 = '';
@@ -889,7 +889,7 @@ if ($respuesta_85 === '180') {
 }
 
  $respuesta_86 = isset($_POST['respuesta_86']) ? $_POST['respuesta_86'] : '';
-if ($respuesta_86 === '200') { 
+if ($respuesta_86 === 'El entorno operativo' || $respuesta_86 === 'el entorno operativo') { 
     $verificar_86 = "correcto";
 } elseif ($respuesta_86 === '') {
     $verificar_86 = '';
@@ -898,7 +898,7 @@ if ($respuesta_86 === '200') {
 }
 
  $respuesta_87 = isset($_POST['respuesta_87']) ? $_POST['respuesta_87'] : '';
-if ($respuesta_87 === '220') { 
+if ($respuesta_87 === 'derivan') { 
     $verificar_87 = "correcto";
 } elseif ($respuesta_87 === '') {
     $verificar_87 = '';
@@ -907,7 +907,7 @@ if ($respuesta_87 === '220') {
 }
 
  $respuesta_88 = isset($_POST['respuesta_88']) ? $_POST['respuesta_88'] : '';
-if ($respuesta_88 === '240') { 
+if ($respuesta_88 === 'entorno') { 
     $verificar_88 = "correcto";
 } elseif ($respuesta_88 === '') {
     $verificar_88 = '';
@@ -916,7 +916,7 @@ if ($respuesta_88 === '240') {
 }
 
  $respuesta_89 = isset($_POST['respuesta_89']) ? $_POST['respuesta_89'] : '';
-if ($respuesta_89 === '42') { 
+if ($respuesta_89 === 'El entorno organizacional' || $respuesta_89 === 'el entorno organizacional') { 
     $verificar_89 = "correcto";
 } elseif ($respuesta_89 === '') {
     $verificar_89 = '';
@@ -925,7 +925,7 @@ if ($respuesta_89 === '42') {
 }
 
  $respuesta_90 = isset($_POST['respuesta_90']) ? $_POST['respuesta_90'] : '';
-if ($respuesta_90 === '63') { 
+if ($respuesta_90 === 'empresarial') { 
     $verificar_90 = "correcto";
 } elseif ($respuesta_90 === '') {
     $verificar_90 = '';
@@ -934,7 +934,7 @@ if ($respuesta_90 === '63') {
 }
 
  $respuesta_91 = isset($_POST['respuesta_91']) ? $_POST['respuesta_91'] : '';
-if ($respuesta_91 === '84') { 
+if ($respuesta_91 === 'condicionada') { 
     $verificar_91 = "correcto";
 } elseif ($respuesta_91 === '') {
     $verificar_91 = '';
@@ -943,7 +943,7 @@ if ($respuesta_91 === '84') {
 }
 
  $respuesta_92 = isset($_POST['respuesta_92']) ? $_POST['respuesta_92'] : '';
-if ($respuesta_92 === '105') { 
+if ($respuesta_92 === 'estructura') { 
     $verificar_92 = "correcto";
 } elseif ($respuesta_92 === '') {
     $verificar_92 = '';
@@ -952,7 +952,7 @@ if ($respuesta_92 === '105') {
 }
 
  $respuesta_93 = isset($_POST['respuesta_93']) ? $_POST['respuesta_93'] : '';
-if ($respuesta_93 === '126') { 
+if ($respuesta_93 === 'origen') { 
     $verificar_93 = "correcto";
 } elseif ($respuesta_93 === '') {
     $verificar_93 = '';
@@ -961,7 +961,7 @@ if ($respuesta_93 === '126') {
 }
 
  $respuesta_94 = isset($_POST['respuesta_94']) ? $_POST['respuesta_94'] : '';
-if ($respuesta_94 === '147') { 
+if ($respuesta_94 === 'Técnicas de Elicitacion' || $respuesta_94 === 'tecnicas de elicitacion') { 
     $verificar_94 = "correcto";
 } elseif ($respuesta_94 === '') {
     $verificar_94 = '';
@@ -970,7 +970,7 @@ if ($respuesta_94 === '147') {
 }
 
  $respuesta_95 = isset($_POST['respuesta_95']) ? $_POST['respuesta_95'] : '';
-if ($respuesta_95 === '168') { 
+if ($respuesta_95 === 'fuentes') { 
     $verificar_95 = "correcto";
 } elseif ($respuesta_95 === '') {
     $verificar_95 = '';
@@ -979,7 +979,7 @@ if ($respuesta_95 === '168') {
 }
 
  $respuesta_96 = isset($_POST['respuesta_96']) ? $_POST['respuesta_96'] : '';
-if ($respuesta_96 === '189') { 
+if ($respuesta_96 === 'elicita') { 
     $verificar_96 = "correcto";
 } elseif ($respuesta_96 === '') {
     $verificar_96 = '';
@@ -988,7 +988,7 @@ if ($respuesta_96 === '189') {
 }
 
  $respuesta_97 = isset($_POST['respuesta_97']) ? $_POST['respuesta_97'] : '';
-if ($respuesta_97 === '210') { 
+if ($respuesta_97 === 'formula') { 
     $verificar_97 = "correcto";
 } elseif ($respuesta_97 === '') {
     $verificar_97 = '';
@@ -997,7 +997,7 @@ if ($respuesta_97 === '210') {
 }
 
  $respuesta_98 = isset($_POST['respuesta_98']) ? $_POST['respuesta_98'] : '';
-if ($respuesta_98 === '231') { 
+if ($respuesta_98 === 'informacion') { 
     $verificar_98 = "correcto";
 } elseif ($respuesta_98 === '') {
     $verificar_98 = '';
@@ -1006,7 +1006,7 @@ if ($respuesta_98 === '231') {
 }
 
  $respuesta_99 = isset($_POST['respuesta_99']) ? $_POST['respuesta_99'] : '';
-if ($respuesta_99 === '252') { 
+if ($respuesta_99 === 'pasiva') { 
     $verificar_99 = "correcto";
 } elseif ($respuesta_99 === '') {
     $verificar_99 = '';
@@ -1016,7 +1016,7 @@ if ($respuesta_99 === '252') {
 
 
  $respuesta_100 = isset($_POST['respuesta_100']) ? $_POST['respuesta_100'] : '';
-if ($respuesta_100 === '44') { 
+if ($respuesta_100 === 'interesados') { 
     $verificar_100 = "correcto";
 } elseif ($respuesta_100 === '') {
     $verificar_100 = '';
@@ -1025,7 +1025,7 @@ if ($respuesta_100 === '44') {
 }
 
  $respuesta_101 = isset($_POST['respuesta_101']) ? $_POST['respuesta_101'] : '';
-if ($respuesta_101 === '66') { 
+if ($respuesta_101 === 'planificacion') { 
     $verificar_101 = "correcto";
 } elseif ($respuesta_101 === '') {
     $verificar_101 = '';
@@ -1034,7 +1034,7 @@ if ($respuesta_101 === '66') {
 }
 
  $respuesta_102 = isset($_POST['respuesta_102']) ? $_POST['respuesta_102'] : '';
-if ($respuesta_102 === '88') { 
+if ($respuesta_102 === 'verificacion') { 
     $verificar_102 = "correcto";
 } elseif ($respuesta_102 === '') {
     $verificar_102 = '';
@@ -1043,7 +1043,7 @@ if ($respuesta_102 === '88') {
 }
 
  $respuesta_103 = isset($_POST['respuesta_103']) ? $_POST['respuesta_103'] : '';
-if ($respuesta_103 === '110') { 
+if ($respuesta_103 === 'validacion') { 
     $verificar_103 = "correcto";
 } elseif ($respuesta_103 === '') {
     $verificar_103 = '';
@@ -1052,7 +1052,7 @@ if ($respuesta_103 === '110') {
 }
 
  $respuesta_104 = isset($_POST['respuesta_104']) ? $_POST['respuesta_104'] : '';
-if ($respuesta_104 === '132') { 
+if ($respuesta_104 === 'Entrevistas' || $respuesta_104 === 'entrevistas') { 
     $verificar_104 = "correcto";
 } elseif ($respuesta_104 === '') {
     $verificar_104 = '';
@@ -1061,7 +1061,7 @@ if ($respuesta_104 === '132') {
 }
 
  $respuesta_105 = isset($_POST['respuesta_105']) ? $_POST['respuesta_105'] : '';
-if ($respuesta_105 === '154') { 
+if ($respuesta_105 === 'Entrevistar' || $respuesta_105 === 'entrevistar') { 
     $verificar_105 = "correcto";
 } elseif ($respuesta_105 === '') {
     $verificar_105 = '';
@@ -1070,7 +1070,7 @@ if ($respuesta_105 === '154') {
 }
 
  $respuesta_106 = isset($_POST['respuesta_106']) ? $_POST['respuesta_106'] : '';
-if ($respuesta_106 === '176') { 
+if ($respuesta_106 === 'ventajas') { 
     $verificar_106 = "correcto";
 } elseif ($respuesta_106 === '') {
     $verificar_106 = '';
@@ -1079,7 +1079,7 @@ if ($respuesta_106 === '176') {
 }
 
  $respuesta_107 = isset($_POST['respuesta_107']) ? $_POST['respuesta_107'] : '';
-if ($respuesta_107 === '198') { 
+if ($respuesta_107 === 'limitaciones') { 
     $verificar_107 = "correcto";
 } elseif ($respuesta_107 === '') {
     $verificar_107 = '';
@@ -1097,7 +1097,7 @@ if ($respuesta_108 === '220') {
 }
 
  $respuesta_109 = isset($_POST['respuesta_109']) ? $_POST['respuesta_109'] : '';
-if ($respuesta_109 === '242') { 
+if ($respuesta_109 === 'contexto') { 
     $verificar_109 = "correcto";
 } elseif ($respuesta_109 === '') {
     $verificar_109 = '';
@@ -1106,7 +1106,7 @@ if ($respuesta_109 === '242') {
 }
 
  $respuesta_110 = isset($_POST['respuesta_110']) ? $_POST['respuesta_110'] : '';
-if ($respuesta_110 === '264') { 
+if ($respuesta_110 === 'escenario') { 
     $verificar_110 = "correcto";
 } elseif ($respuesta_110 === '') {
     $verificar_110 = '';
@@ -1114,8 +1114,17 @@ if ($respuesta_110 === '264') {
     $verificar_110 = "incorrecto";
 }
 
-
+ 
+ $respuesta_111 = isset($_POST['respuesta_111']) ? $_POST['respuesta_111'] : '';
+if ($respuesta_111 === 'casos de uso') { 
+    $verificar_111 = "correcto";
+} elseif ($respuesta_111 === '') {
+    $verificar_111 = '';
+} else {
+    $verificar_111 = "incorrecto";
 }
+
+ }
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -1617,7 +1626,7 @@ function ocultarMensaje() {
 
     <p>
     No será posible 
-    <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="20"> 
+    <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="8"> 
     perfectamente los requerimientos de todos los 
     <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="20"> 
     , y es tarea del ingeniero de
@@ -1656,12 +1665,417 @@ function ocultarMensaje() {
 <?php echo $verificar_39 ?>
 <?php echo $verificar_40 ?>
 <hr>
+
+    <h4>2.3. Apoyo y Gestión del Proceso</h4>
+
+    <p>
+    Esta sección introduce los requerimientos de gestión de proyectos que son requeridos y consumidos por
+    el proceso de requisitos. 
+    </p>
+
+
+    <h4>2.4. Calidad del Proceso y Mejora</h4>
+
+<p>
+Este tema se ocupa de la evaluación de la 
+    <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="8"> 
+y la mejora del 
+<input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="8"> 
+de requisitos. 
+Su objetivo es enfatizar el papel clave que desempeña el proceso de requisitos en términos de costo 
+y puntualidad de un producto de software, y en la satisfacción del cliente con dicho producto. 
+También ayudará a orientar el proceso de requisitos conforme a normas de calidad y modelos 
+de mejora de procesos para software y sistemas.
+</p>
+
+<p>
+La calidad del 
+<input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="8"> 
+y su 
+<input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>" size="8"> 
+están estrechamente relacionadas tanto con el área de 
+<input type="text" name="respuesta_45" value="<?php echo $respuesta_45; ?>" size="37">
+  como con la de 
+  <input type="text" name="respuesta_46" value="<?php echo $respuesta_46; ?>" size="37">
+  , e incluyen:
+</p>
+<ul>
+  <li>Cobertura del proceso de requisitos por normas y modelos de mejora de procesos;</li>
+  <li>Medidas del proceso de requisitos y evaluación comparativa (
+    <input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="12">
+    );</li>
+  <li>Planificación e implementación de mejoras;</li>
+  <li>Mejora/planificación e implementación de seguridad / CIA (Confidencialidad, Integridad y Disponibilidad).</li>
+</ul>
+
+   <button type="submit">Enviar</button>
+            <?php echo $verificar_34 ?>
+<?php echo $verificar_41 ?>
+<?php echo $verificar_42 ?>
+<?php echo $verificar_43 ?>
+<?php echo $verificar_44 ?>
+<button type="submit">Enviar</button>
+            <?php echo $verificar_45 ?>
+        <?php echo $verificar_46 ?>
+        <?php echo $verificar_47 ?>
+        <hr>
+
+
+
+        
+       <h3>3. Elicitación de Requisitos</h3>
+<p>[1*, c4s5] [2*, c5, c6, c9]</p>
+
+<p>
+La elicitación de requisitos se ocupa del 
+ <input type="text" name="respuesta_48" value="<?php echo $respuesta_48; ?>" size="8">
+ de los requerimientos del software y de cómo el ingeniero de software puede 
+ <input type="text" name="respuesta_49" value="<?php echo $respuesta_49; ?>" size="8">
+  . 
+Es la 
+ <input type="text" name="respuesta_50" value="<?php echo $respuesta_50; ?>" size="12">
+  para construir una 
+   <input type="text" name="respuesta_51" value="<?php echo $respuesta_51; ?>" size="9">
+  del 
+  <input type="text" name="respuesta_52" value="<?php echo $respuesta_52; ?>" size="9">
+  que el software debe resolver. 
+Es, fundamentalmente, una actividad humana y es donde se 
+  <input type="text" name="respuesta_53" value="<?php echo $respuesta_53; ?>" size="9">
+los 
+  <input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>" size="9">
+y se establecen 
+las relaciones entre el equipo de desarrollo y el cliente.
+</p>
+
+<p>
+Se le denomina de diversas maneras, tales como “
+ <input type="text" name="respuesta_55" value="<?php echo $respuesta_55; ?>" size="9">
+de requisitos”, “descubrimiento de requisitos” y “adquisición de requisitos”.
+</p>
+
+
+   <p>
+Uno de los principios fundamentales de un buen proceso de elicitación de requisitos es la 
+ <input type="text" name="respuesta_56" value="<?php echo $respuesta_56; ?>" size="9">
+ efectiva entre los distintos interesados. 
+Esta comunicación continúa a lo largo de todo el proceso del Ciclo de Vida del Desarrollo de Software (SDLC) 
+con diferentes interesados en distintos momentos del tiempo. 
+Antes de que comience el desarrollo, los especialistas en requisitos pueden servir como canal para esta comunicación. 
+Deben mediar entre el dominio de los usuarios del software (y otros interesados) y el mundo técnico del ingeniero de software. 
+Un conjunto de modelos internamente consistentes en diferentes niveles de abstracción facilita la
+ comunicación entre los usuarios/interesados del software y los ingenieros de software.
+</p>
+
+<p>
+Un elemento crítico en la elicitación de requisitos es 
+ <input type="text" name="respuesta_57" value="<?php echo $respuesta_57; ?>" size="9">
+sobre el 
+ <input type="text" name="respuesta_58" value="<?php echo $respuesta_58; ?>" size="9">
+del 
+ <input type="text" name="respuesta_59" value="<?php echo $respuesta_59; ?>" size="9">
+. 
+Esto implica proporcionar una 
+<input type="text" name="respuesta_60" value="<?php echo $respuesta_60; ?>" size="9">
+del software que se va a 
+<input type="text" name="respuesta_61" value="<?php echo $respuesta_61; ?>" size="9">
+y su 
+<input type="text" name="respuesta_62" value="<?php echo $respuesta_62; ?>" size="9">
+, así como
+<input type="text" name="respuesta_63" value="<?php echo $respuesta_63; ?>" size="9">
+ los entregables para asegurar que se satisfagan primero las necesidades comerciales más 
+ <input type="text" name="respuesta_64" value="<?php echo $respuesta_64; ?>" size="9">
+ del cliente. 
+Esto minimiza el riesgo de que los especialistas en requisitos dediquen tiempo a elicitar requisitos de baja 
+importancia o que resulten irrelevantes cuando se entregue el software. 
+Por otro lado, la descripción debe ser 
+ <input type="text" name="respuesta_65" value="<?php echo $respuesta_65; ?>" size="9">
+  y 
+ <input type="text" name="respuesta_66" value="<?php echo $respuesta_66; ?>" size="9">
+  para aceptar futuros requisitos no expresados 
+en las primeras listas formales, y ser compatible con los anteriores como lo contemplan los métodos recursivos.
+</p>
+     <button type="submit">Enviar</button>
+        <?php echo $verificar_48 ?>
+        <?php echo $verificar_49 ?>
+        <?php echo $verificar_50 ?>
+        <?php echo $verificar_51 ?>
+        <?php echo $verificar_52 ?>
+        <?php echo $verificar_53 ?>
+        <?php echo $verificar_54 ?>
+        <?php echo $verificar_55 ?>
+        <?php echo $verificar_56 ?>
+<?php echo $verificar_57 ?>
+<?php echo $verificar_58 ?>
+<?php echo $verificar_59 ?>
+<?php echo $verificar_60 ?>
+<?php echo $verificar_61 ?>
+<?php echo $verificar_62 ?>
+<?php echo $verificar_63 ?>
+<?php echo $verificar_64 ?>
+<?php echo $verificar_65 ?>
+<?php echo $verificar_66 ?>
+    <hr>
     </form>
 </div>
 
 <div class="seccion derecha">
     <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
     
+<h4>3.1. 
+ <input type="text" name="respuesta_67" value="<?php echo $respuesta_67; ?>" size="9">    
+de Requisitos</h4>
+
+<p>
+Los requerimientos en un software típico tienen muchas fuentes, y es esencial que todas las fuentes 
+potenciales sean 
+ <input type="text" name="respuesta_68" value="<?php echo $respuesta_68; ?>" size="9">    
+y 
+ <input type="text" name="respuesta_69" value="<?php echo $respuesta_69; ?>" size="9">    
+. 
+Este tema está diseñado para fomentar la conciencia sobre las diversas fuentes de requisitos de software 
+y sobre los marcos para gestionarlas. 
+Los puntos principales que se abordan son los siguientes:
+</p>
+
+<ul>
+  <li>
+    <strong> <input type="text" name="respuesta_70" value="<?php echo $respuesta_70; ?>" size="9"> :</strong>
+     El término 
+     "<strong> <input type="text" name="respuesta_71" value="<?php echo $respuesta_71; ?>" size="9"></strong>"
+     (a veces llamado “
+     <strong> <input type="text" name="respuesta_72" value="<?php echo $respuesta_72; ?>" size="9"></strong>
+     ” o “factor crítico de éxito”).
+    se refiere a los 
+    <input type="text"  value="<?php echo $respuesta_70; ?>" size="9" readonly>
+    <input type="text" name="respuesta_73" value="<?php echo $respuesta_73; ?>" size="9">
+    y de alto nivel del software. 
+  </li>
+
+  <li>
+    <strong>
+    <input type="text" name="respuesta_74" value="<?php echo $respuesta_74; ?>" size="25">    
+    :</strong> El ingeniero de software necesita 
+    <input type="text" name="respuesta_75" value="<?php echo $respuesta_75; ?>" size="8"> 
+    o 
+    <input type="text" name="respuesta_76" value="<?php echo $respuesta_76; ?>" size="8"> 
+    disponible 
+    <input type="text" name="respuesta_77" value="<?php echo $respuesta_77; ?>" size="8"> 
+    sobre el 
+    <input type="text" name="respuesta_78" value="<?php echo $respuesta_78; ?>" size="8"> 
+    de la aplicación. 
+    El 
+    <input type="text"   value="<?php echo $respuesta_77; ?>" size="8" readonly> 
+    del 
+     <input type="text"  value="<?php echo $respuesta_78; ?>" size="8" readonly> 
+    proporciona el contexto contra el cual debe 
+    <input type="text" name="respuesta_79" value="<?php echo $respuesta_79; ?>" size="8"> 
+    todo el 
+    <input type="text"   value="<?php echo $respuesta_77; ?>" size="8" readonly> 
+    de requisitos elicitado para poder comprenderlo. 
+  </li>
+
+  <li>
+    <strong><input type="text" name="respuesta_80" value="<?php echo $respuesta_80; ?>" size="8"> :</strong> 
+    Muchos desarrollos de software han resultado
+    <input type="text" name="respuesta_81" value="<?php echo $respuesta_81; ?>" size="8">
+     porque se enfocaron excesivamente en los 
+    requisitos de un grupo de 
+    <input type="text" value="<?php echo $respuesta_80; ?>" size="8" readonly> 
+    en detrimento de otros. 
+   </li>
+
+  <li>
+    <strong>
+    <input type="text" name="respuesta_82" value="<?php echo $respuesta_82; ?>" size="8">    
+    :</strong> Son 
+     <input type="text" name="respuesta_83" value="<?php echo $respuesta_83; ?>" size="8"> 
+      que 
+      <input type="text" name="respuesta_84" value="<?php echo $respuesta_84; ?>" size="8"> 
+      o 
+      <input type="text" name="respuesta_85" value="<?php echo $respuesta_85; ?>" size="8">
+      algún aspecto de la estructura o del
+    comportamiento del negocio en sí. 
+
+       <button onmousedown="mostrarMensaje2()" onmouseup="ocultarMensaje2()">Dato</button>
+    <p id="mensaje2" style="display:none;"> 
+    “Un estudiante no puede registrarse en los cursos del próximo semestre si tiene cuotas de matrícula
+    pendientes de pago” sería un ejemplo de una regla de negocio que funcionaría como fuente de requisitos
+    para un sistema de registro de cursos universitario.
+    </p>
+ 
+  </li>
+
+  <li>
+    <strong>
+    <input type="text" name="respuesta_86" value="<?php echo $respuesta_86; ?>" size="15">    
+    :</strong> Los requerimientos se 
+    <input type="text" name="respuesta_87" value="<?php echo $respuesta_87; ?>" size="8">   
+    del 
+    <input type="text" name="respuesta_88" value="<?php echo $respuesta_88; ?>" size="8">   
+    en el cual se ejecutará el software. 
+    Estos pueden ser, por ejemplo, restricciones de tiempo en software en tiempo real o restricciones de
+    rendimiento en un 
+    <input type="text" value="<?php echo $respuesta_88; ?>" size="8" readonly>  
+    empresarial. 
+  </li>
+
+  <li>
+    <strong>
+    <input type="text" name="respuesta_89" value="<?php echo $respuesta_89; ?>" size="15">       
+     :</strong> El software a menudo debe apoyar un proceso 
+     <input type="text" name="respuesta_90" value="<?php echo $respuesta_90; ?>" size="8">  
+     ,
+     cuya selección puede estar 
+     <input type="text" name="respuesta_91" value="<?php echo $respuesta_91; ?>" size="8"> 
+     por la 
+     <input type="text" name="respuesta_92" value="<?php echo $respuesta_92; ?>" size="8"> 
+     , la cultura y la política interna de la organización. 
+    El ingeniero de software debe ser sensible a estos factores, ya que, en general, el nuevo software no 
+    debería imponer un cambio no planificado al proceso empresarial.
+  </li>
+
+    </ul>
+    <hr>
+    <strong>parentesis:</strong>
+    <p>En este contexto, el término <strong>“fuente”</strong> se refiere al 
+    <input type="text" name="respuesta_93" value="<?php echo $respuesta_93; ?>" size="8">
+    desde el cual se pueden obtener (elicitar) los requisitos del software.</p>
+
+    
+       <button onmousedown="mostrarMensaje3()" onmouseup="mostrarMensaje3()">Dato</button>
+    <p id="mensaje3" style="display:none;"> 
+Es decir, una fuente de requisitos es cualquier persona, documento, conocimiento, sistema 
+    o necesidad que pueda proporcionar información relevante sobre lo que el software debe hacer,
+     cómo debe comportarse, o cuáles son sus restricciones.
+    </p>
+ 
+    <button type="submit">Enviar</button>
+<?php echo $verificar_67 ?>
+<?php echo $verificar_68 ?>
+<?php echo $verificar_69 ?>
+<?php echo $verificar_70 ?>
+<?php echo $verificar_71 ?>
+<?php echo $verificar_72 ?>
+<?php echo $verificar_73 ?>
+<?php echo $verificar_74 ?>
+<?php echo $verificar_75 ?>
+<?php echo $verificar_76 ?>
+<?php echo $verificar_77 ?>
+<?php echo $verificar_78 ?>
+<?php echo $verificar_79 ?>
+<?php echo $verificar_80 ?> 
+<?php echo $verificar_81 ?>
+<?php echo $verificar_82 ?>
+<?php echo $verificar_83 ?>
+<?php echo $verificar_84 ?>
+<?php echo $verificar_85 ?>
+<?php echo $verificar_86 ?>
+<?php echo $verificar_87 ?>
+<?php echo $verificar_88 ?>
+<?php echo $verificar_89 ?>
+<?php echo $verificar_90 ?>
+<?php echo $verificar_91 ?>
+<?php echo $verificar_92 ?>
+<?php echo $verificar_93 ?>
+<hr>
+
+    <h4>3.2.
+    <input type="text" name="respuesta_94" value="<?php echo $respuesta_94; ?>" size="25">    
+     </h4>
+
+<p>
+Una vez identificadas las 
+ <input type="text" name="respuesta_95" value="<?php echo $respuesta_95; ?>" size="8"> 
+de requisitos, el ingeniero de software puede comenzar a elicitar información de
+ requisitos a partir de ellas. 
+Tenga en cuenta que los requisitos rara vez se presentan ya preparados. 
+Más bien, el ingeniero de software 
+ <input type="text" name="respuesta_96" value="<?php echo $respuesta_96; ?>" size="8"> 
+información a partir de la cual 
+ <input type="text" name="respuesta_97" value="<?php echo $respuesta_97; ?>" size="8"> 
+los requisitos.
+Este tema se centra en técnicas para lograr que los interesados humanos expresen
+ <input type="text" name="respuesta_98" value="<?php echo $respuesta_98; ?>" size="8"> 
+ relevante para los requisitos.
+Es una tarea muy difícil y el ingeniero de software debe ser consciente de que (por ejemplo) los
+ usuarios pueden tener dificultades para describir sus tareas, pueden omitir información importante o 
+ pueden no estar dispuestos o no ser capaces de cooperar.
+</p>
+<button type="submit">Enviar</button>
+<?php echo $verificar_94 ?>
+<?php echo $verificar_95 ?>
+<?php echo $verificar_96 ?>
+<?php echo $verificar_97 ?>
+<?php echo $verificar_98 ?>
+
+    <hr>
+    <p>
+Es particularmente importante entender que la elicitación no es una actividad 
+ <input type="text" name="respuesta_99" value="<?php echo $respuesta_99; ?>" size="8"> 
+y que, incluso si se dispone de 
+<input type="text" name="respuesta_100" value="<?php echo $respuesta_100; ?>" size="8"> 
+cooperativos y elocuentes, el ingeniero de software debe trabajar arduamente para obtener la información adecuada. 
+Muchos requisitos comerciales o técnicos son tácitos o están en retroalimentaciones que aún no se han
+ obtenido de los usuarios finales. 
+La importancia de la 
+<input type="text" name="respuesta_101" value="<?php echo $respuesta_101; ?>" size="8"> 
+, 
+<input type="text" name="respuesta_102" value="<?php echo $respuesta_102; ?>" size="8"> 
+y 
+<input type="text" name="respuesta_103" value="<?php echo $respuesta_103; ?>" size="8"> 
+en la elicitación de requisitos no puede subestimarse.
+Existe una variedad de técnicas para la elicitación de requisitos; las principales son:
+</p>
+
+
+<ul>
+  <li>
+    <strong>
+    <input type="text" name="respuesta_104" value="<?php echo $respuesta_104; ?>" size="8">     
+    :</strong> 
+    <input type="text" name="respuesta_105" value="<?php echo $respuesta_105; ?>" size="8">
+    a los interesados es un medio “tradicional” de elicitar requisitos. 
+    Es importante comprender las 
+    <input type="text" name="respuesta_106" value="<?php echo $respuesta_106; ?>" size="8">
+    y 
+    <input type="text" name="respuesta_107" value="<?php echo $respuesta_107; ?>" size="8">
+    de las 
+    <input type="text"   value="<?php echo $respuesta_104; ?>" size="8">     
+    y cómo deben ser conducidas.
+  </li>
+
+  <li>
+    <strong>
+    <input type="text" name="respuesta_108" value="<?php echo $respuesta_108; ?>" size="8">    
+    :</strong> Los 
+    <input type="text" value="<?php echo $respuesta_108; ?>" size="8" readonly> 
+    ofrecen un medio valioso para proporcionar 
+    <input type="text" name="respuesta_109" value="<?php echo $respuesta_109; ?>" size="8">    
+    a la elicitación de requisitos de usuario. 
+    Permiten al ingeniero de software establecer un marco para preguntas sobre tareas del usuario mediante preguntas del tipo “¿qué pasaría si...?” o “¿cómo se hace esto?”. 
+    El tipo más común de 
+    <input type="text" name="respuesta_110" value="<?php echo $respuesta_110; ?>" size="8"> 
+     es la descripción de 
+    <input type="text" name="respuesta_111" value="<?php echo $respuesta_111; ?>" size="15"> 
+  </li>
+
+
+  <button type="submit">Enviar</button>
+<?php echo $verificar_99 ?>
+<?php echo $verificar_100 ?>
+<?php echo $verificar_101 ?>
+<?php echo $verificar_102 ?>
+<?php echo $verificar_103 ?>
+<?php echo $verificar_104 ?>
+<?php echo $verificar_105 ?>
+<?php echo $verificar_106 ?>
+<?php echo $verificar_107 ?>
+<?php echo $verificar_108 ?>
+<?php echo $verificar_109 ?>
+<?php echo $verificar_110 ?>
+<?php echo $verificar_111 ?>
+<hr>
+<strong>limite de inputs alcanzado</strong>
     </form>
 </div>
 
@@ -1670,7 +2084,7 @@ function ocultarMensaje() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="segundo.php"
+        href="tercero.php"
         role="button"
         width="50px"
         height="50px"
