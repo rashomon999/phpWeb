@@ -362,7 +362,7 @@ para determinar los requisitos detallados del software del ABS.
 El diseño arquitectónico está estrechamente vinculado al <a href="#4.2.-modelado-conceptual">Modelado Conceptual</a>.
 </p>
 
-<h3>4.4. Negociación de Requisitos</h3>
+<h3>4.4. Negociación de requerimientos </h3>
 
 <p>
 Otro término común para este subtema es <strong>resolución de conflictos</strong>. Trata de resolver problemas con requisitos cuando existen 
