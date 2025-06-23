@@ -55,26 +55,302 @@ if ($_POST) {
     <title>Examen Diagnóstico</title>
     <link rel="stylesheet" href="styleindex.css">
      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>
-        function handleSubmit(event) {
-            event.preventDefault();
+    
+<script>
+function handleSubmit(event) {
+    event.preventDefault();
 
-            const formData = new FormData(event.target);
+    const formData = new FormData(event.target);
 
-            fetch(event.target.action, {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => response.text())
-            .then(html => {
-                document.body.innerHTML = html;
-            })
-            .catch(error => {
-                console.error('Error al enviar el formulario:', error);
-            });
+    fetch(event.target.action, {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.text())
+    .then(html => {
+        document.body.innerHTML = html;
+
+        // Asegúrate de que MathJax procese el nuevo contenido
+        if (window.MathJax) {
+            MathJax.typeset();
         }
-    </script>
+        actualizarFormula();
+        actualizarFormula2();
+        actualizarFormula3();
+        actualizarFormula4();
+        actualizarFormula5();
+        actualizarFormula6();
+        actualizarFormula7();
+        actualizarFormula8();
+        actualizarFormula9();
+        actualizarFormula10();
+        actualizarFormula11();
+        actualizarFormula12();
+      
+    })
+    .catch(error => {
+        console.error('Error al enviar el formulario:', error);
+    });
+}
 
+function actualizarFormula() {
+    // Obtener los valores de los inputs
+   
+    var f = document.getElementById('respuesta_11').value || "";
+ 
+
+
+    // Construir la fórmula dinámica
+    var formula = ` \\  ${f} \\, `;
+
+    // Actualizar el contenido de la fórmula en el DOM
+    document.getElementById('formula').innerHTML = `$$ ${formula} $$`;
+
+    // Re-renderizar MathJax para mostrar los cambios
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+ 
+
+function actualizarFormula2() {
+    // Obtener los valores de los inputs
+   
+    var f = document.getElementById('respuesta_13').value || "";
+  
+    // Construir la fórmula dinámica
+    var formula = ` \\ ${f}  \\, `;
+
+    // Actualizar el contenido de la fórmula en el DOM
+    document.getElementById('formula2').innerHTML = `$$ ${formula} $$`;
+
+    // Re-renderizar MathJax para mostrar los cambios
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+
+
+function actualizarFormula3() {
+    // Obtener los valores de los inputs
+   
+    var f = document.getElementById('respuesta_27').value || "";
+ 
+
+
+    // Construir la fórmula dinámica
+    var formula = ` \\ ${f}  \\, `;
+
+    // Actualizar el contenido de la fórmula en el DOM
+    document.getElementById('formula3').innerHTML = `$$ ${formula} $$`;
+
+    // Re-renderizar MathJax para mostrar los cambios
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula4() {
+    // Obtener los valores de los inputs
+    var f = document.getElementById('respuesta_29').value || "";
+   
+
+    // Construir la fórmula dinámica
+    var formula = ` \\ ${f}  \\, `;
+    // Actualizar el contenido de la fórmula en el DOM
+    document.getElementById('formula4').innerHTML = `$$ ${formula} $$`;
+
+    // Re-renderizar MathJax para mostrar los cambios
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+
+function actualizarFormula5() {
+    // Obtener los valores de los inputs
+    var f = document.getElementById('respuesta_30').value || "";
+  
+
+    // Construir la fórmula dinámica
+    var formula = ` \\ ${f}  \\, `;
+    // Actualizar el contenido de la fórmula en el DOM
+    document.getElementById('formula5').innerHTML = `$$ ${formula} $$`;
+
+    // Re-renderizar MathJax para mostrar los cambios
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+
+
+function actualizarFormula6() {
+    // Obtener los valores de los inputs
+    var f = document.getElementById('respuesta_6').value || "";
+  
+
+    // Construir la fórmula dinámica
+    var formula = ` \\ ${f}  \\, `;
+    // Actualizar el contenido de la fórmula en el DOM
+    document.getElementById('formula6').innerHTML = `$$ ${formula} $$`;
+
+    // Re-renderizar MathJax para mostrar los cambios
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+
+function actualizarFormula7() {
+    // Obtener los valores de los inputs
+    var f = document.getElementById('respuesta_7').value || "";
+  
+
+    // Construir la fórmula dinámica
+    var formula = ` \\ ${f}  \\, `;
+    // Actualizar el contenido de la fórmula en el DOM
+    document.getElementById('formula7').innerHTML = `$$ ${formula} $$`;
+
+    // Re-renderizar MathJax para mostrar los cambios
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula8() {
+    // Obtener los valores de los inputs
+    var f = document.getElementById('respuesta_8').value || "";
+  
+
+    // Construir la fórmula dinámica
+    var formula = ` \\ ${f}  \\, `;
+    // Actualizar el contenido de la fórmula en el DOM
+    document.getElementById('formula8').innerHTML = `$$ ${formula} $$`;
+
+    // Re-renderizar MathJax para mostrar los cambios
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+
+function actualizarFormula9() {
+    // Obtener los valores de los inputs
+    var f = document.getElementById('respuesta_9').value || "";
+  
+
+    // Construir la fórmula dinámica
+    var formula = ` \\ ${f}  \\, `;
+    // Actualizar el contenido de la fórmula en el DOM
+    document.getElementById('formula9').innerHTML = `$$ ${formula} $$`;
+
+    // Re-renderizar MathJax para mostrar los cambios
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+
+
+function actualizarFormula10() {
+    // Obtener los valores de los inputs
+    var f = document.getElementById('respuesta_10').value || "";
+  
+
+    // Construir la fórmula dinámica
+    var formula = ` \\ ${f}  \\, `;
+    // Actualizar el contenido de la fórmula en el DOM
+    document.getElementById('formula10').innerHTML = `$$ ${formula} $$`;
+
+    // Re-renderizar MathJax para mostrar los cambios
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+
+function actualizarFormula11() {
+    // Obtener los valores de los inputs
+    var f = document.getElementById('respuesta_11').value || "";
+  
+
+    // Construir la fórmula dinámica
+    var formula = ` \\ ${f}  \\, `;
+    // Actualizar el contenido de la fórmula en el DOM
+    document.getElementById('formula11').innerHTML = `$$ ${formula} $$`;
+
+    // Re-renderizar MathJax para mostrar los cambios
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+
+function actualizarFormula12() {
+    // Obtener los valores de los inputs
+    var f = document.getElementById('respuesta_12').value || "";
+  
+
+    // Construir la fórmula dinámica
+    var formula = ` \\ ${f}  \\, `;
+    // Actualizar el contenido de la fórmula en el DOM
+    document.getElementById('formula12').innerHTML = `$$ ${formula} $$`;
+
+    // Re-renderizar MathJax para mostrar los cambios
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function mostrarMensaje() {
+    document.getElementById("mensaje").style.display = 'block';
+    // Asegúrate de que MathJax procese el nuevo contenido
+    MathJax.typeset([document.getElementById("mensaje")]);
+}
+
+function ocultarMensaje() {
+    document.getElementById("mensaje").style.display = 'none';
+}
+
+
+function mostrarMensaje2() {
+    document.getElementById("mensaje2").style.display = 'block';
+    // Asegúrate de que MathJax procese el nuevo contenido
+    MathJax.typeset([document.getElementById("mensaje")]);
+}
+
+function ocultarMensaje2() {
+    document.getElementById("mensaje2").style.display = 'none';
+}
+
+
+
+function mostrarMensaje3() {
+    document.getElementById("mensaje3").style.display = 'block';
+    // Asegúrate de que MathJax procese el nuevo contenido
+    MathJax.typeset([document.getElementById("mensaje3")]);
+}
+
+function ocultarMensaje3() {
+    document.getElementById("mensaje3").style.display = 'none';
+}
+
+function mostrarMensaje4() {
+    document.getElementById("mensaje4").style.display = 'block';
+    // Asegúrate de que MathJax procese el nuevo contenido
+    MathJax.typeset([document.getElementById("mensaje4")]);
+}
+
+function ocultarMensaje4() {
+    document.getElementById("mensaje4").style.display = 'none';
+}
+
+
+
+
+</script>
     
 <style>
     .imagen {
@@ -147,14 +423,9 @@ if ($_POST) {
                 <br><br><br><br>
             </li>
 
-            <li class="mi-lista">Ejercicio 6: <br><br><br><br>
-                <img class="container" src="../../img/Captura de pantalla 2024-01-02 173249.png" alt=""><br>
-                <input type="radio" name="opcion6[]" value="1/8" id="opcion6_1/8">\( \frac{1}{8} \)
-                <input style="margin-left: 50px;"  type="radio" name="opcion6[]" value="8/1"  id="opcion6_8/1"> \( \frac{8}{1} \)
-                <br><br>
-                <button type="submit" class="btn btn-success">Submit</button>
-                <?php echo $_POST && !empty($pregunta6) ? $respuesta6 : ''; ?>
-                <script>
+            <li class="mi-lista">Ejercicio 6: <br><br>
+             <button onmousedown="mostrarImagen100()" onmouseup="ocultarImagen100()">Ayuda</button>
+             <script>
                     function mostrarImagen100() {
                     var imagen = document.getElementById('imagen100');
 
@@ -170,9 +441,17 @@ if ($_POST) {
                     }
                 </script>
 
-                <button onmousedown="mostrarImagen100()" onmouseup="ocultarImagen100()">Ayuda</button>
+               
                 <img id="imagen100" src="../../img/Captura de pantalla 2024-06-19 081635.png" style="display: none; max-width: 100%">
-                <br><br><br><br><br><br>
+ 
+             <br><br>
+                <img class="container" src="../../img/Captura de pantalla 2024-01-02 173249.png" alt=""><br>
+                <input type="radio" name="opcion6[]" value="1/8" id="opcion6_1/8">\( \frac{1}{8} \)
+                <input style="margin-left: 50px;"  type="radio" name="opcion6[]" value="8/1"  id="opcion6_8/1"> \( \frac{8}{1} \)
+                <br><br>
+                <button type="submit" class="btn btn-success">Submit</button>
+                <?php echo $_POST && !empty($pregunta6) ? $respuesta6 : ''; ?>
+                                <br><br><br><br><br><br>
             </li>
         </ul>
     </form>
@@ -223,8 +502,7 @@ if ($_POST) {
     
                 Ejercicio 3: <br><br>
     
-                <img src="../../img/Captura de pantalla 2024-06-19 081030.png" alt=""><br><br>
-                <label for="eleccion3_1" style="font-size: 16px;">
+ <p>\( \left( \frac{3x^{3/2}y^3}{x^2y^{-1/2}} \right)^{-2} \)</p>                <label for="eleccion3_1" style="font-size: 16px;">
     
                 <input type="radio" name="eleccion3[]" value="&lt;Sup&gt;x &lt;/sup&gt; / &lt;sub&gt; 9 y&lt;sup&gt;7&lt;/sup&gt; &lt;/sub&gt;" id="eleccion3_1">
                  \( \frac{x}{9y^6} \)

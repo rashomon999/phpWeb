@@ -34,13 +34,20 @@ if ($_POST) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="Infinito.css">
     <style>
         .imagen {
             max-width: 100%;
             height: auto;
         }
+
+           .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 240vh;
+    }
     </style>
     <script>
         function handleSubmit(event) {
@@ -65,28 +72,28 @@ if ($_POST) {
 <body>
 <div class="seccion izquierda">
     <form action="./Infinito.php" method="POST" onsubmit="handleSubmit(event)">
-        <img src="..\img\Captura de pantalla 2024-07-03 144825.png" alt=""> <br><br>
-        <img src="..\img\Captura de pantalla 2024-07-03 144922.png" alt=""> <br><br>
+        <img src="..\..\img\Captura de pantalla 2024-07-03 144825.png" alt=""> <br><br>
+        <img src="..\..\img\Captura de pantalla 2024-07-03 144922.png" alt=""> <br><br>
         <span><h3>Ejercicios:</h3> </span> <br>
         <span><h4>1. Punto</h4></span> <br><br>
-        <img src="..\img\Captura de pantalla 2024-07-03 151156.png" alt=""> <br><br>
-        <img src="..\img\Captura de pantalla 2024-07-03 151612.png" alt=""> <br><br>
+        <img src="..\..\img\Captura de pantalla 2024-07-03 151156.png" alt=""> <br><br>
+        <img src="..\..\img\Captura de pantalla 2024-07-03 151612.png" alt=""> <br><br>
     </form>
 </div>
 
 <div class="seccion derecha">
     <form action="./Infinito.php" method="POST" onsubmit="handleSubmit(event)">
-    <img src="..\img\Captura de pantalla 2024-07-03 151347.png" alt="">
-    <img src="..\img\Captura de pantalla 2024-07-03 151829.png" alt=""> <br>
+    <img src="..\..\img\Captura de pantalla 2024-07-03 151347.png" alt="">
+    <img src="..\..\img\Captura de pantalla 2024-07-03 151829.png" alt=""> <br>
     <span><h4>Un poco sobre codigo antes de continuar: </h4></span> <br>
-    <img src="..\img\Captura de pantalla 2024-07-03 164932.png" alt="">
-    <img src="..\img\Captura de pantalla 2024-07-03 165231.png" alt="">
+    <img src="..\..\img\Captura de pantalla 2024-07-03 164932.png" alt="">
+    <img src="..\..\img\Captura de pantalla 2024-07-03 165231.png" alt="">
     <br> 
     Al ser continua, observese como 2n es diferente (no maker ni style)
     <br>
     sub.plot es solo para ver las 4 funciones en un mismo marco:
-    <img src="..\img\Captura de pantalla 2024-07-03 165357.png" alt="">
-    <img src="..\img\Captura de pantalla 2024-07-03 170112.png" alt="">
+    <img src="..\..\img\Captura de pantalla 2024-07-03 165357.png" alt="">
+    <img src="..\..\img\Captura de pantalla 2024-07-03 170112.png" alt="">
 
     </form>
 </div>

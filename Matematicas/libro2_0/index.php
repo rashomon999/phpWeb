@@ -36,13 +36,20 @@ if ($_POST) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <style>
         .imagen {
             max-width: 100%;
             height: auto;
         }
+
+         .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 250vh;
+    }
     </style>
     <script>
         function handleSubmit(event) {
@@ -105,7 +112,7 @@ if ($_POST) {
              <li>
                 El rectángulo con base [x<sub>i-1</sub>, 𝑥<sub>i</sub> ] y altura 𝑚<sub>i</sub> es un rectángulo inscrito.
              </li>
-             <img src="../img/Captura de pantalla 2024-12-02 150643.png" alt=""> <br> <br>
+             <img src="../../img/Captura de pantalla 2024-12-02 150643.png" alt=""> <br> <br>
              <p>
             Llamamos a un conjunto P = {x<sub>0</sub>, x<sub>1</sub>, &hellip;, x<sub>n</sub>}</math> 
             una partición del intervalo [a, b]</math> si a = x<sub>0</sub> &lt; x<sub>1</sub> &lt; x<sub>2</sub> &lt; &hellip; &lt; x<sub>n</sub> = b</math>.
@@ -118,11 +125,11 @@ if ($_POST) {
 
 
              <br><br>
-             <img src="../img/Captura de pantalla 2024-12-02 160017.png" alt="">
+             <img src="../../img/Captura de pantalla 2024-12-02 160017.png" alt="">
              <br><br>
-             <img src="../img/Captura de pantalla 2024-12-02 163019.png" alt="">
+             <img src="../../img/Captura de pantalla 2024-12-02 163019.png" alt="">
              <br><br>
-             <img src="../img/Captura de pantalla 2024-12-02 163123.png" alt="">
+             <img src="../../img/Captura de pantalla 2024-12-02 163123.png" alt="">
         </p>
 
     </form>
@@ -130,8 +137,8 @@ if ($_POST) {
 <div class="seccion derecha">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)">
         Si es continua, es integrable. <br><br>
-        <img src="../img/Captura de pantalla 2024-12-03 080732.png" alt="">  <br><br>
-        <img src="../img/Captura de pantalla 2024-12-03 080744.png" alt=""> <br><br>
+        <img src="../../img/Captura de pantalla 2024-12-03 080732.png" alt="">  <br><br>
+        <img src="../../img/Captura de pantalla 2024-12-03 080744.png" alt=""> <br><br>
         Ingrese la ecuacion de la circunferencia con centro en el origen. <br>
         <input   type="text" value="<?php echo $texto1?>" name="segundo" id="" style="width: 50px;">
         <input  type="text"  value="<?php echo $texto2?>" name="segundo_1"  id="" style="width: 50px;">
@@ -147,14 +154,14 @@ if ($_POST) {
         <?php echo !empty($texto4) && !empty($texto4) ? $resultado4 : ""; ?> 
 
         <br><br>
-        <img src="../img/Captura de pantalla 2024-12-03 095223.png" alt="">
-        <img src="../img/Captura de pantalla 2024-12-03 095232.png" alt="">
+        <img src="../../img/Captura de pantalla 2024-12-03 095223.png" alt="">
+        <img src="../../img/Captura de pantalla 2024-12-03 095232.png" alt="">
         <p>Ahora, la suma de todas las longitudes de los subintervalos Δ𝑥<sub>i</sub> en una partición de 
         [0,1] es simplemente 1. Es decir, la partición P cubre todo el intervalo de 0 a 1, por lo que la
          suma de las longitudes de los subintervalos es igual a la longitud total del intervalo, que es 1</p>
         Lo anterior, claro esta, para U(f,p). En el otro caso de L(f, p) la suma seria 0.
         <br><br>
-        <img src="../img/Captura de pantalla 2024-12-03 101659.png" alt="">
+        <img src="../../img/Captura de pantalla 2024-12-03 101659.png" alt="">
         </form>
 </div>
 <div class="centered-container">

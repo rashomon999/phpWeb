@@ -1457,6 +1457,7 @@ function ocultarMensaje4() {
 <body> 
 <div class="seccion izquierda">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <strong>aviso: este cuestionario se hizo con la version 3</strong>
     <p>Las versiones de SWEBOK son:</p>
     
     <ul>

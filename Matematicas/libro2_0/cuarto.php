@@ -33,7 +33,7 @@ if ($_POST) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -41,6 +41,13 @@ if ($_POST) {
     .imagen {
         max-width: 100%;
         height: auto;
+    }
+
+     .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 280vh;
     }
 </style>
 <script>
@@ -71,8 +78,8 @@ function handleSubmit(event) {
 <body>
 <div class="seccion izquierda">
     <form action="./Comienzo.php" method="POST" onsubmit="handleSubmit(event)">
-        <img src="../img/Captura de pantalla 2024-12-08 161907.png" alt="" width="600"><br> <br>
-        <img src="../img/Captura de pantalla 2024-12-08 161907.png" alt="" width="600"> <br><br>
+        <img src="../../img/Captura de pantalla 2024-12-08 161907.png" alt="" width="600"><br> <br>
+        <img src="../../img/Captura de pantalla 2024-12-08 161907.png" alt="" width="600"> <br><br>
         <h1>Fundamental Theorem of Integral Calculus</h1>
         <p>
             Si \( f \) es integrable en \([a, b]\) y \( F \) es una antiderivada de \( f \) en \((a, b)\) que es continua en \([a, b]\), entonces:
@@ -214,7 +221,7 @@ function handleSubmit(event) {
 
 <br>
 
-<img src="../img/Captura de pantalla 2024-12-08 183131.png" alt="">    
+<img src="../../img/Captura de pantalla 2024-12-08 183131.png" alt="">    
 
 </form>
 </div>

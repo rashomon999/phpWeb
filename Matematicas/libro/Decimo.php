@@ -34,13 +34,20 @@ if ($_POST) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="Decimo.css">
     <style>
         .imagen {
             max-width: 100%;
             height: auto;
         }
+
+         .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 215vh;
+    }
     </style>
     <script>
         function handleSubmit(event) {
@@ -65,23 +72,23 @@ if ($_POST) {
 <body>
 <div class="seccion izquierda">
     <form action="./Decimo.php" method="POST" onsubmit="handleSubmit(event)">
-       <img src="..\img\Captura de pantalla 2024-07-10 080000.png" alt="">
-       <img src="..\img\Captura de pantalla 2024-07-10 080013.png" alt="" width="480">
-       <img src="..\img\Captura de pantalla 2024-07-10 080049.png" alt=""> <br><br>
+       <img src="..\..\img\Captura de pantalla 2024-07-10 080000.png" alt="">
+       <img src="..\..\img\Captura de pantalla 2024-07-10 080013.png" alt="" width="480">
+       <img src="..\..\img\Captura de pantalla 2024-07-10 080049.png" alt=""> <br><br>
        <hr> <br>
-       <img src="..\img\Captura de pantalla 2024-07-10 081724.png" alt=""> <br><br>
-       <img src="..\img\Captura de pantalla 2024-07-10 082000.png" alt="">
+       <img src="..\..\img\Captura de pantalla 2024-07-10 081724.png" alt=""> <br><br>
+       <img src="..\..\img\Captura de pantalla 2024-07-10 082000.png" alt="">
     </form>
 </div>
 
 <div class="seccion derecha">
     <form action="./Decimo.php" method="POST" onsubmit="handleSubmit(event)"> 
-        <img src="..\img\Captura de pantalla 2024-07-10 082009.png" alt="">
-        <img src="..\img\Captura de pantalla 2024-07-10 082135.png" alt="">
-        <img src="..\img\Captura de pantalla 2024-07-10 082221.png" alt=""> <br>
+        <img src="..\..\img\Captura de pantalla 2024-07-10 082009.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-10 082135.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-10 082221.png" alt=""> <br>
         Antes de seguir es importante notar las secuencias geometricas: <br>
-        <img src="..\img\Captura de pantalla 2024-07-10 084602.png" alt="">
-        <img src="..\img\Captura de pantalla 2024-07-10 084833.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-10 084602.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-10 084833.png" alt="">
 
     </form>
 </div>

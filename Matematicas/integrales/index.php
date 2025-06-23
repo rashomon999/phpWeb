@@ -387,7 +387,7 @@ if ($_POST) {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 230vh;
+    height: 260vh;
     }
 
 </style>

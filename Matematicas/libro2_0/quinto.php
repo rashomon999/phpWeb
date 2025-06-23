@@ -1,31 +1,58 @@
-
 <?php
-$pregunta_f ="";
-$pregunta_g ="";
-$pregunta_d ="";
+// Variables para preguntas
+$pregunta_f = "";
+$pregunta_g = "";
+$pregunta_d = "";
 
+// Variables para verificaciones
 $verificar_f = "";
 $verificar_g = "";
 $verificar_d = "";
 
-
+// Variables para preguntas adicionales
 $pregunta_fu = "";
 $pregunta_du = "";
 $pregunta_du2 = "";
 $pregunta_dx = "";
 
-
+// Variables para verificaciones adicionales
 $verificar_du = "";
 $verificar_du2 = "";
 $verificar_dx = "";
 $verificar_fu = "";
 
+// Variables para preguntas ux y gx
 $pregunta_ux = "";
 $verificar_ux = "";
 
 $pregunta_gx = "";
 $verificar_gx = "";
+
+// Variable para controlar mostrar soluciones
+$mostrar_solucion = "";
+
 if ($_POST) {
+    $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
+    
+    if ($mostrar_solucion === 'mostrar_solucion') {
+        // Establecer todas las respuestas correctas
+        $pregunta_f = 'f(g(x))';
+        $pregunta_g = "g'(x)";
+        $pregunta_d = "dx";
+        
+        $pregunta_fu = 'f(u)';
+        $pregunta_du = "du";
+        $pregunta_du2 = "dx";
+        $pregunta_dx = "dx";
+        
+        $pregunta_ux = "2+x^2";
+        $pregunta_gx = "2x";
+        
+        // Marcar todas como correctas
+        $verificar_f = $verificar_g = $verificar_d = 
+        $verificar_fu = $verificar_du = $verificar_du2 = 
+        $verificar_dx = $verificar_ux = $verificar_gx = "correcto";
+    } else {
     $pregunta_f = isset($_POST['f']) ? $_POST['f'] : '';
     if ($pregunta_f === 'f(g(x))') {
         $verificar_f = "correcto";
@@ -92,6 +119,7 @@ if ($_POST) {
     }
 
 }
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -99,7 +127,7 @@ if ($_POST) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="style3.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -107,6 +135,13 @@ if ($_POST) {
     .imagen {
         max-width: 100%;
         height: auto;
+    }
+
+     .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 300vh;
     }
 </style>
  
@@ -201,7 +236,7 @@ function actualizarFormula2() {
     para terminos con potencia: ahora como sabemos que se resto, entonces aumentamos en 1 al exponente y 
     divimos, dado que sabemos que cuando se deriva se pasa a multiplicar (hacemos lo contrario, sumamos y dividimos).
     <br><br>
-    <img src="../img/Captura de pantalla 2024-12-09 093851.png" alt="">
+    <img src="../../img/Captura de pantalla 2024-12-09 093851.png" alt="">
 
     <h1>Por qué se divide en integración</h1>
     <p>
@@ -402,6 +437,11 @@ function actualizarFormula2() {
 
     </p>
 
+    <hr>
+    <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
+    <br>
+    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
+    <button type="submit"   >Mostrar Solución</button>
 </form>
 </div>
 <div class="centered-container">

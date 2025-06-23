@@ -33,7 +33,7 @@ if ($_POST) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -41,6 +41,13 @@ if ($_POST) {
     .imagen {
         max-width: 100%;
         height: auto;
+    }
+
+     .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 260vh;
     }
 </style>
 <script>
@@ -71,8 +78,8 @@ function handleSubmit(event) {
 <body>
 <div class="seccion izquierda">
     <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)">
-        <img src="../img/Captura de pantalla 2024-12-04 192115.png" alt=""> <br><br>
-        <img src="../img/Captura de pantalla 2024-12-05 154301.png" alt=""> <br>
+        <img src="../../img/Captura de pantalla 2024-12-04 192115.png" alt=""> <br><br>
+        <img src="../../img/Captura de pantalla 2024-12-05 154301.png" alt=""> <br>
         La particion, por ejemplo, de p6, queda con una longitud de n+1, {7 puntos}.
 
         Ahora tomemos por ejemplo a (4 - x^2), en esta grafica por ejemplo, los intervalos [2/3 ,0] y [0 ,2.3]
@@ -86,7 +93,7 @@ function handleSubmit(event) {
         Un rectángulo inscrito, que utiliza el valor mínimo de 
         f(x) en el subintervalo.
         <br><br>
-        <img src="../img/Captura de pantalla 2024-12-05 210257.png" alt=""> <br>
+        <img src="../../img/Captura de pantalla 2024-12-05 210257.png" alt=""> <br>
         Segun lo anterior, cual es el resultado de esta integral: <br> 
         <p>\[\int_0^5 3 \, dx =\]</p> <br>
         <input type="radio" name="primero" value="n" <?php echo ($verificar_1 === 'incorrecto') ? 'checked' : ''; ?>> 10<br>
@@ -101,7 +108,7 @@ function handleSubmit(event) {
         <br><br>
         Asi sacamos la integral en geogebra: Integral(f,x(A),x(B)). con A=(-π,cos(-π)) y B=(π,cos(π)).
         <br>
-        <img src="../img/Captura de pantalla 2024-12-06 082056.png" alt="" width="600"> <br>
+        <img src="../../img/Captura de pantalla 2024-12-06 082056.png" alt="" width="600"> <br>
         Notese como la suma de las areas negativas se resta con la suma de las positivas, por lo que da 0.
         <br>
         Sí, se podría decir que, en las partes donde la función cos(x) es cóncava hacia arriba, los valores 
@@ -120,7 +127,7 @@ function handleSubmit(event) {
         la aproximación numérica. <br>
         Aqui nos hablan de la similitud que pensabamos sobre upper y lower con left and right sums:
         <br>
-        <img src="../img/Captura de pantalla 2024-12-07 081432.png" alt=""> <br>
+        <img src="../../img/Captura de pantalla 2024-12-07 081432.png" alt=""> <br>
         pensar en el ejemplo de una decreciente como 2 - x. para cada intervalo el de la izquierda es mayor.
         <br>
         <p>Lamamos a:</p>
@@ -133,11 +140,11 @@ function handleSubmit(event) {
         $$ \int_a^b f(x) \, dx $$
     </p>
     <br>
-    <img src="../img/Captura de pantalla 2024-12-07 165713.png" alt="">
+    <img src="../../img/Captura de pantalla 2024-12-07 165713.png" alt="">
 
     <br>
     <br>
-    <img src="../img/Captura de pantalla 2024-12-07 170200.png" alt="">
+    <img src="../../img/Captura de pantalla 2024-12-07 170200.png" alt="">
     <br><br>
     4.3 El Teorema Fundamental del Cálculo
     Estamos listos para establecer la conexión largamente prometida entre la diferenciación
@@ -145,7 +152,7 @@ function handleSubmit(event) {
      ambos conocidos como el Teorema Fundamental del Cálculo. Llamaremos al primero de estos el 
      Teorema Fundamental del Cálculo Integral.
      <br>
-     <img src="../img/Captura de pantalla 2024-12-08 161854.png" alt="">
+     <img src="../../img/Captura de pantalla 2024-12-08 161854.png" alt="">
     </form>
 </div>
 <div class="centered-container">

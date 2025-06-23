@@ -34,13 +34,20 @@ if ($_POST) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="Catorce.css">
     <style>
         .imagen {
             max-width: 100%;
             height: auto;
         }
+
+           .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 150vh;
+    }
     </style>
     <script>
         function handleSubmit(event) {
@@ -65,19 +72,19 @@ if ($_POST) {
 <body>
 <div class="seccion izquierda">
     <form action="Catorce.php" method="POST" onsubmit="handleSubmit(event)">
-        <img src="..\img\Captura de pantalla 2024-07-11 123630.png" alt=""> <br><br>
-        <img src="..\img\Captura de pantalla 2024-07-11 124606.png" alt="" width="600"> <br><br>
+        <img src="..\..\img\Captura de pantalla 2024-07-11 123630.png" alt=""> <br><br>
+        <img src="..\..\img\Captura de pantalla 2024-07-11 124606.png" alt="" width="600"> <br><br>
        <span><h5>Suma de una funcion lineal negativa y una funcion lineal positiva</h5></span>
-        <img src="..\img\Captura de pantalla 2024-07-11 125332.png" alt="" width="600">
+        <img src="..\..\img\Captura de pantalla 2024-07-11 125332.png" alt="" width="600">
     </form>
 </div>
 
 <div class="seccion derecha">
     <form action="./Catorce.php" method="POST" onsubmit="handleSubmit(event)"> 
-        <img src="..\img\Captura de pantalla 2024-07-11 130657.png" alt=""> <br><br>
-        <img src="..\img\Captura de pantalla 2024-07-11 130515.png" alt="">
-        <img src="..\img\Captura de pantalla 2024-07-11 125834.png" alt="" width="600">
-        <img src="..\img\Captura de pantalla 2024-07-11 131238.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-11 130657.png" alt=""> <br><br>
+        <img src="..\..\img\Captura de pantalla 2024-07-11 130515.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-11 125834.png" alt="" width="600">
+        <img src="..\..\img\Captura de pantalla 2024-07-11 131238.png" alt="">
     </form>
 </div>
 

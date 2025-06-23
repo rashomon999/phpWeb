@@ -34,13 +34,20 @@ if ($_POST) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="Sexto.css">
     <style>
         .imagen {
             max-width: 100%;
             height: auto;
         }
+
+         .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 220vh;
+    }
     </style>
     <script>
         function handleSubmit(event) {
@@ -65,25 +72,25 @@ if ($_POST) {
 <body>
 <div class="seccion izquierda">
     <form action="./Sexto.php" method="POST" onsubmit="handleSubmit(event)">
-        <img src="..\img\Captura de pantalla 2024-07-05 091157.png" alt="">
-        <img src="..\img\Captura de pantalla 2024-07-05 091217.png" alt="" width="600">
-        <img src="..\img\Captura de pantalla 2024-07-05 091252.png" alt="" width="600">
-        <img src="..\img\Captura de pantalla 2024-07-05 091306.png" alt="" width="600">
+        <img src="..\..\img\Captura de pantalla 2024-07-05 091157.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-05 091217.png" alt="" width="600">
+        <img src="..\..\img\Captura de pantalla 2024-07-05 091252.png" alt="" width="600">
+        <img src="..\..\img\Captura de pantalla 2024-07-05 091306.png" alt="" width="600">
         <br><br>
-        <img src="..\img\Captura de pantalla 2024-07-05 154019.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-05 154019.png" alt="">
         <br>
         Podemos utilizar el teorema de sandwich <br>
-        <img src="..\img\Captura de pantalla 2024-07-05 155430.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-05 155430.png" alt="">
    
     </form>
 </div>
 
 <div class="seccion derecha">
     <form action="./Sexto.php" method="POST" onsubmit="handleSubmit(event)"> 
-        <img src="..\img\Captura de pantalla 2024-07-05 154541.png" alt=""> <br><br>
-        <img src="..\img\Captura de pantalla 2024-07-05 154628.png" alt="" width="600"> <br><br>
-        <img src="..\img\Captura de pantalla 2024-07-05 154657.png" alt="" width="600"> <br><br>
-        <img src="..\img\Captura de pantalla 2024-07-05 154712.png" alt="" width="550">
+        <img src="..\..\img\Captura de pantalla 2024-07-05 154541.png" alt=""> <br><br>
+        <img src="..\..\img\Captura de pantalla 2024-07-05 154628.png" alt="" width="600"> <br><br>
+        <img src="..\..\img\Captura de pantalla 2024-07-05 154657.png" alt="" width="600"> <br><br>
+        <img src="..\..\img\Captura de pantalla 2024-07-05 154712.png" alt="" width="550">
     </form>
 </div>
 

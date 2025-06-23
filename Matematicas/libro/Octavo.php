@@ -34,13 +34,20 @@ if ($_POST) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="octavo.css">
     <style>
         .imagen {
             max-width: 100%;
             height: auto;
         }
+
+         .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 170vh;
+    }
     </style>
     <script>
         function handleSubmit(event) {
@@ -66,12 +73,12 @@ if ($_POST) {
 <div class="seccion izquierda">
     <form action="./octavo.php" method="POST" onsubmit="handleSubmit(event)">
         <img src="..\img\Captura de pantalla 2024-07-06 094015.png" alt="">
-        <img src="..\img\Captura de pantalla 2024-07-06 094122.png" alt=""><br>
+        <img src="..\..\img\Captura de pantalla 2024-07-06 094122.png" alt=""><br>
         Encontramos el valor que satisface la igualdad (con limite definido como e=2,71828) <br>
-        <img src="..\img\Captura de pantalla 2024-07-06 094201.png" alt="" width="520"> <br>
+        <img src="..\..\img\Captura de pantalla 2024-07-06 094201.png" alt="" width="520"> <br>
         Deseamos encontrar el valor para el que a_n=2,71828. usamos round y nos costo 200000 n definidos. <br>
-        <img src="..\img\Captura de pantalla 2024-07-06 094215.png" alt="" width="520">
-        <img src="..\img\Captura de pantalla 2024-07-06 094259.png" alt="" width="600"> <br><br>
+        <img src="..\..\img\Captura de pantalla 2024-07-06 094215.png" alt="" width="520">
+        <img src="..\..\img\Captura de pantalla 2024-07-06 094259.png" alt="" width="600"> <br><br>
      
 
     </form>
@@ -79,10 +86,10 @@ if ($_POST) {
 
 <div class="seccion derecha">
     <form action="./octavo.php" method="POST" onsubmit="handleSubmit(event)"> 
-        <img src="..\img\Captura de pantalla 2024-07-06 095457.png" alt="">
-        <img src="..\img\Captura de pantalla 2024-07-06 095538.png" alt=""> <br><br>
-        <img src="..\img\Captura de pantalla 2024-07-06 100138.png" alt=""> <br><br>
-        <img src="..\img\Captura de pantalla 2024-07-06 100214.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-06 095457.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-06 095538.png" alt=""> <br><br>
+        <img src="..\..\img\Captura de pantalla 2024-07-06 100138.png" alt=""> <br><br>
+        <img src="..\..\img\Captura de pantalla 2024-07-06 100214.png" alt="">
     </form>
 </div>
 

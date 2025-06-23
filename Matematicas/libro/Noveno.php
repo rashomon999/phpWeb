@@ -34,13 +34,20 @@ if ($_POST) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="Noveno.css">
     <style>
         .imagen {
             max-width: 100%;
             height: auto;
         }
+
+         .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 190vh;
+    }
     </style>
     <script>
         function handleSubmit(event) {
@@ -65,11 +72,11 @@ if ($_POST) {
 <body>
 <div class="seccion izquierda">
     <form action="./Noveno.php" method="POST" onsubmit="handleSubmit(event)">
-        <img src="..\img\Captura de pantalla 2024-07-06 105335.png" alt="">
-        <img src="..\img\Captura de pantalla 2024-07-06 105349.png" alt="">
-        <img src="..\img\Captura de pantalla 2024-07-06 105404.png" alt="" width="600">
-        <img src="..\img\Captura de pantalla 2024-07-06 112019.png" alt="" width="600">
-        <img src="..\img\Captura de pantalla 2024-07-06 112213.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-06 105335.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-06 105349.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-06 105404.png" alt="" width="600">
+        <img src="..\..\img\Captura de pantalla 2024-07-06 112019.png" alt="" width="600">
+        <img src="..\..\img\Captura de pantalla 2024-07-06 112213.png" alt="">
     </form>
 </div>
 
@@ -77,10 +84,10 @@ if ($_POST) {
     <form action="./Noveno.php" method="POST" onsubmit="handleSubmit(event)"> 
         Nota: Dividir un número entre otro es lo mismo que multiplicar el primer número por el recíproco del segundo número
         <br>
-        <img src="..\img\Captura de pantalla 2024-07-10 074953.png" alt=""> <br>
-        <img src="..\img\Captura de pantalla 2024-07-10 075238.png" alt="">
-        <img src="..\img\Captura de pantalla 2024-07-10 075259.png" alt="" width="600">
-        <img src="..\img\Captura de pantalla 2024-07-10 075517.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-10 074953.png" alt=""> <br>
+        <img src="..\..\img\Captura de pantalla 2024-07-10 075238.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-10 075259.png" alt="" width="600">
+        <img src="..\..\img\Captura de pantalla 2024-07-10 075517.png" alt="">
     </form>
 </div>
 

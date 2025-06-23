@@ -34,13 +34,20 @@ if ($_POST) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="Tercero.css">
     <style>
         .imagen {
             max-width: 100%;
             height: auto;
         }
+
+         .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 320vh;
+    }
     </style>
     <script>
         function handleSubmit(event) {
@@ -65,33 +72,33 @@ if ($_POST) {
 <body>
 <div class="seccion izquierda">
     <form action="./Tercero.php" method="POST" onsubmit="handleSubmit(event)">
-       <img src="..\img\Captura de pantalla 2024-07-04 073708.png" alt="">
-       <img src="..\img\Captura de pantalla 2024-07-04 084359.png" alt="">
-       <img src="..\img\Captura de pantalla 2024-07-04 075113.png" alt="" width="600">
-       <img src="..\img\Captura de pantalla 2024-07-04 075534.png" alt="" width="600">
-       <img src="..\img\Captura de pantalla 2024-07-04 075609.png" alt=""> <br>
+       <img src="..\..\img\Captura de pantalla 2024-07-04 073708.png" alt="">
+       <img src="..\..\img\Captura de pantalla 2024-07-04 084359.png" alt="">
+       <img src="..\..\img\Captura de pantalla 2024-07-04 075113.png" alt="" width="600">
+       <img src="..\..\img\Captura de pantalla 2024-07-04 075534.png" alt="" width="600">
+       <img src="..\..\img\Captura de pantalla 2024-07-04 075609.png" alt=""> <br>
        <span><h4>converge a 1.5</h4></span>
        <br>
-       <img src="..\img\Captura de pantalla 2024-07-04 080532.png" alt=""> <br>
-       <img src="..\img\Captura de pantalla 2024-07-04 081137.png" alt="" width="600">
-       <img src="..\img\Captura de pantalla 2024-07-04 081714.png" alt="" width="600">
-       <img src="..\img\Captura de pantalla 2024-07-04 081756.png" alt="" width="600">
+       <img src="..\..\img\Captura de pantalla 2024-07-04 080532.png" alt=""> <br>
+       <img src="..\..\img\Captura de pantalla 2024-07-04 081137.png" alt="" width="600">
+       <img src="..\..\img\Captura de pantalla 2024-07-04 081714.png" alt="" width="600">
+       <img src="..\..\img\Captura de pantalla 2024-07-04 081756.png" alt="" width="600">
        
     </form>
 </div>
 
 <div class="seccion derecha">
     <form action="./Tercero.php" method="POST" onsubmit="handleSubmit(event)"> <br> 
-        <img src="..\img\Captura de pantalla 2024-07-04 082357.png" alt="">
-        <img src="..\img\Captura de pantalla 2024-07-04 083823.png" alt="">
-        <img src="..\img\Captura de pantalla 2024-07-04 084034.png" alt="">
-        <img src="..\img\Captura de pantalla 2024-07-04 084916.png" alt="">
-        <img src="..\img\Captura de pantalla 2024-07-04 085003.png" alt="" width="600"> <br>
+        <img src="..\..\img\Captura de pantalla 2024-07-04 082357.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-04 083823.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-04 084034.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-04 084916.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-04 085003.png" alt="" width="600"> <br>
         <span><h4>tiende a infinito</h4></span> <br>
-        <img src="..\img\Captura de pantalla 2024-07-04 100320.png" alt="">
-        <img src="..\img\Captura de pantalla 2024-07-04 101701.png" alt="">
-        <img src="..\img\Captura de pantalla 2024-07-04 101756.png" alt="">
-        <img src="..\img\Captura de pantalla 2024-07-04 102027.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-04 100320.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-04 101701.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-04 101756.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-04 102027.png" alt="">
     </form>
 </div>
 

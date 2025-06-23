@@ -34,13 +34,20 @@ if ($_POST) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="Quinto.css">
     <style>
         .imagen {
             max-width: 100%;
             height: auto;
         }
+
+         .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 210vh;
+    }
     </style>
     <script>
         function handleSubmit(event) {
@@ -65,11 +72,11 @@ if ($_POST) {
 <body>
 <div class="seccion izquierda">
     <form action="./Quinto.php" method="POST" onsubmit="handleSubmit(event)">
-        <img src="..\img\Captura de pantalla 2024-07-05 075510.png" alt="" >
-        <img src="..\img\Captura de pantalla 2024-07-05 080913.png" alt="" width="600">
-        <img src="..\img\Captura de pantalla 2024-07-05 080933.png" alt="" width="600">
-        <img src="..\img\Captura de pantalla 2024-07-05 080951.png" alt="" width="600">
-        <img src="..\img\Captura de pantalla 2024-07-05 081031.png" alt=""> <br><br>
+        <img src="..\..\img\Captura de pantalla 2024-07-05 075510.png" alt="" >
+        <img src="..\..\img\Captura de pantalla 2024-07-05 080913.png" alt="" width="600">
+        <img src="..\..\img\Captura de pantalla 2024-07-05 080933.png" alt="" width="600">
+        <img src="..\..\img\Captura de pantalla 2024-07-05 080951.png" alt="" width="600">
+        <img src="..\..\img\Captura de pantalla 2024-07-05 081031.png" alt=""> <br><br>
         Se puede simplificar una fraccion elevando al cuadrado? <br><br>
         <input type="radio" value="falso" name="primero" id="primero1"> Verdadero
         <input type="radio" value="verdad" name="primero" id="primero2">Falso
@@ -81,11 +88,11 @@ if ($_POST) {
 
 <div class="seccion derecha">
     <form action="./Quinto.php" method="POST" onsubmit="handleSubmit(event)"> 
-        <img src="..\img\Captura de pantalla 2024-07-05 081533.png" alt="">
-        <img src="..\img\Captura de pantalla 2024-07-05 082841.png" alt="" width="600">
-        <img src="..\img\Captura de pantalla 2024-07-05 082859.png" alt="" width="600">
-        <img src="..\img\Captura de pantalla 2024-07-05 083249.png" alt="" width="600">
-        <img src="..\img\Captura de pantalla 2024-07-05 083259.png" alt="" width="600">
+        <img src="..\..\img\Captura de pantalla 2024-07-05 081533.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-05 082841.png" alt="" width="600">
+        <img src="..\..\img\Captura de pantalla 2024-07-05 082859.png" alt="" width="600">
+        <img src="..\..\img\Captura de pantalla 2024-07-05 083249.png" alt="" width="600">
+        <img src="..\..\img\Captura de pantalla 2024-07-05 083259.png" alt="" width="600">
     </form>
 </div>
 

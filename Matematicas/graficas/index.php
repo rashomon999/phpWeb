@@ -355,7 +355,7 @@ function handleSubmit(event) {
         <?php echo $verificar_6 ?>
         <br>
         <hr>
-        Ingrese el resultado de: <br><br>
+        Ingrese la asintota horizontal de: <br><br>
         \( f(x) = \frac{3x^2 + 5x + 1}{2x^2 - 4x + 7} \) <br>
         <input type="text" name="pregunta_7" id="" value=<?php echo $pregunta_7  ?>>
         <button type="submit">enviar</button> 

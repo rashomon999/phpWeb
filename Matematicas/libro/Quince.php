@@ -34,13 +34,20 @@ if ($_POST) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="Quince.css">
     <style>
         .imagen {
             max-width: 100%;
             height: auto;
         }
+
+          .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 150vh;
+    }
     </style>
     <script>
         function handleSubmit(event) {
@@ -66,16 +73,16 @@ if ($_POST) {
 <div class="seccion izquierda">
     <form action="Quince.php" method="POST" onsubmit="handleSubmit(event)">
         suma de una secuencia: <br><br>
-        <img src="..\img\Captura de pantalla 2024-07-24 074400.png" alt="" >
-        <img src="..\img\Captura de pantalla 2024-07-24 074645.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-24 074400.png" alt="" >
+        <img src="..\..\img\Captura de pantalla 2024-07-24 074645.png" alt="">
     </form>
 </div>
 
 <div class="seccion derecha">
     <form action="./Quince.php" method="POST" onsubmit="handleSubmit(event)"> 
-        <img src="..\img\Captura de pantalla 2024-07-24 075810.png" alt="">
-        <img src="..\img\Captura de pantalla 2024-07-24 075832.png" alt="">
-        <img src="..\img\Captura de pantalla 2024-07-24 081207.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-24 075810.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-24 075832.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-24 081207.png" alt="">
     </form>
 </div>
 

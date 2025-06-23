@@ -34,13 +34,20 @@ if ($_POST) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="Septimo.css">
     <style>
         .imagen {
             max-width: 100%;
             height: auto;
         }
+
+         .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 280vh;
+    }
     </style>
     <script>
         function handleSubmit(event) {
@@ -65,26 +72,26 @@ if ($_POST) {
 <body>
 <div class="seccion izquierda">
     <form action="./Septimo.php" method="POST" onsubmit="handleSubmit(event)">
-        <img src="..\img\Captura de pantalla 2024-07-05 182018.png" alt="">
-        <img src="..\img\Captura de pantalla 2024-07-05 184501.png" alt="">
-        <img src="..\img\Captura de pantalla 2024-07-05 184520.png" alt="">
-        <img src=".\img\Captura de pantalla 2024-07-05 184536.png" alt="">
-        <img src="..\img\Captura de pantalla 2024-07-05 184549.png" alt="">
-        <img src="..\img\Captura de pantalla 2024-07-05 184604.png" alt="" width="622"> <br>
+        <img src="..\..\img\Captura de pantalla 2024-07-05 182018.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-05 184501.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-05 184520.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-05 184536.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-05 184549.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-05 184604.png" alt="" width="622"> <br>
         Explicacion (Se reescribe en forma de cociente: ) <br>
-        <img src="..\img\Captura de pantalla 2024-07-05 193557.png" alt="" width="600">
+        <img src="..\..\img\Captura de pantalla 2024-07-05 193557.png" alt="" width="600">
     </form>
 </div>
 
 <div class="seccion derecha">
     <form action="./Septimo.php" method="POST" onsubmit="handleSubmit(event)"> 
         Explicación (deshacer del logaritmo) para obtener y,e
-        <img src="..\img\Captura de pantalla 2024-07-05 194829.png" alt="" width="600">
-        <img src="..\img\Captura de pantalla 2024-07-05 194850.png" alt="" width="600">
-        <img src="..\img\Captura de pantalla 2024-07-05 194901.png" alt="" width="600"> <br><br>
-        <img src="..\img\Captura de pantalla 2024-07-06 092938.png" alt=""> <br><br>
-        <img src="..\img\Captura de pantalla 2024-07-06 093140.png" alt="">
-        <img src="..\img\Captura de pantalla 2024-07-06 093155.png" alt="" width="600">
+        <img src="..\..\img\Captura de pantalla 2024-07-05 194829.png" alt="" width="600">
+        <img src="..\..\img\Captura de pantalla 2024-07-05 194850.png" alt="" width="600">
+        <img src="..\..\img\Captura de pantalla 2024-07-05 194901.png" alt="" width="600"> <br><br>
+        <img src="..\..\img\Captura de pantalla 2024-07-06 092938.png" alt=""> <br><br>
+        <img src="..\..\img\Captura de pantalla 2024-07-06 093140.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-06 093155.png" alt="" width="600">
     </form>
 </div>
 

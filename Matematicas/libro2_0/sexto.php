@@ -1,218 +1,192 @@
 <?php
-// Variable para la primera pregunta
+// Variables para verificaciones
 $verificar_u = '';
+$verificar_1 = $verificar_2 = $verificar_3 = $verificar_4 = $verificar_5 = 
+$verificar_6 = $verificar_7 = $verificar_8 = $verificar_9 = $verificar_10 = 
+$verificar_11 = $verificar_12 = $verificar_13 = $verificar_14 = $verificar_15 = '';
 
-$verificar_1 = '';
-$verificar_2 = '';
-$verificar_3 = '';
-$verificar_4 = '';
-$verificar_5 = '';
-$verificar_6 = '';
-$verificar_7 = '';
-$verificar_8 = '';
-$verificar_9 = '';
-$verificar_10 = '';
-$verificar_11 = '';
-$verificar_12 = '';
-$verificar_13 = '';
-$verificar_14 = '';
-$verificar_15 = '';
+// Variables para respuestas
+$ultimo = $primero = $segundo = $tercero = $cuarto = $quinto = 
+$sexto = $septimo = $octavo = $noveno = $decimo = 
+$undecimo = $duodecimo = $decimotercero = $decimocuarto = $decimoquinto = '';
 
-$ultimo ="";
-$primero = "";
-$segundo = "";
-$tercero = "";
-$cuarto = "";
-$quinto = "";
-$sexto = "";
-$septimo = "";
-$octavo = "";
-$noveno = "";
-$decimo = "";
-$undecimo = "";
-$duodecimo ="";
-$decimotercero ="";
-$decimocuarto ="";
-$decimoquinto = "";
+// Variable para controlar mostrar soluciones
+$mostrar_solucion = '';
 
 // Procesar el formulario cuando se envía
 if ($_POST) {
-    // Verificar la respuesta de la primera pregunta
-    $ultimo = isset($_POST['ultimo']) ? $_POST['ultimo'] : '';
-
-    if ($ultimo === '-x^-1+C') {
-        $verificar_u = "correcto";
-    } elseif ($ultimo === '') {
-        $verificar_u = '';
-    } else {
-        $verificar_u = "incorrecto";
-    }
-
-    ///
-    $primero = isset($_POST['primero']) ? $_POST['primero'] : '';
-
-    if ($primero === 'cx+C' || $primero === 'xc+C') {
-        $verificar_1 = "correcto";
-    } elseif ($primero === '') {
-        $verificar_1 = '';
-    } else {
-        $verificar_1 = "incorrecto";
-    }
-
-    // Verificar la respuesta de la segunda pregunta
-    $segundo = isset($_POST['segundo']) ? $_POST['segundo'] : '';
-
-    if ($segundo === 'x') {
-        $verificar_2 = "correcto";
-    } elseif ($segundo === '') {
-        $verificar_2 = '';
-    } else {
-        $verificar_2 = "incorrecto";
-    }
-
-    // Verificar la respuesta de la segunda pregunta
-    $tercero = isset($_POST['tercero']) ? $_POST['tercero'] : '';
-
-    if ($tercero === 'xu+c' || $tercero === 'xu+C') {
-        $verificar_3 = "correcto";
-    } elseif ($tercero === '') {
-        $verificar_3 = '';
-    } else {
-        $verificar_3 = "incorrecto";
-    }
-
-    // Verificar la respuesta de la segunda pregunta
-    $cuarto = isset($_POST['cuarto']) ? $_POST['cuarto'] : '';
-
-    if ($cuarto === 'x') {
-        $verificar_4 = "correcto";
-    } elseif ($cuarto === '') {
-        $verificar_4 = '';
-    } else {
-        $verificar_4 = "incorrecto";
-    }
-
+    $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
     
-    // Verificar la respuesta de la segunda pregunta
-    $quinto = isset($_POST['quinto']) ? $_POST['quinto'] : '';
-
-    if ($quinto === 'n+1') {
-        $verificar_5 = "correcto";
-    } elseif ($quinto === '') {
-        $verificar_5 = '';
+    if ($mostrar_solucion === 'mostrar_solucion') {
+        // Establecer todas las respuestas correctas
+        $ultimo = '-x^-1+C';
+        $primero = 'cx+C';
+        $segundo = 'x';
+        $tercero = 'xu+C';
+        $cuarto = 'x';
+        $quinto = 'n+1';
+        $sexto = 'n+1';
+        $septimo = '+C';
+        $octavo = 'x';
+        $noveno = '2';
+        $decimo = '2';
+        $undecimo = '+C';
+        $duodecimo = 'x';
+        $decimotercero = '3';
+        $decimocuarto = '3';
+        $decimoquinto = '+C';
+        
+        // Marcar todas como correctas
+        $verificar_u = $verificar_1 = $verificar_2 = $verificar_3 = $verificar_4 = 
+        $verificar_5 = $verificar_6 = $verificar_7 = $verificar_8 = $verificar_9 = 
+        $verificar_10 = $verificar_11 = $verificar_12 = $verificar_13 = $verificar_14 = 
+        $verificar_15 = "correcto";
     } else {
-        $verificar_5 = "incorrecto";
+        // Verificar respuestas individualmente
+        $ultimo = isset($_POST['ultimo']) ? $_POST['ultimo'] : '';
+        if ($ultimo === '-x^-1+C') {
+            $verificar_u = "correcto";
+        } elseif ($ultimo === '') {
+            $verificar_u = '';
+        } else {
+            $verificar_u = "incorrecto";
+        }
+
+        $primero = isset($_POST['primero']) ? $_POST['primero'] : '';
+        if ($primero === 'cx+C' || $primero === 'xc+C') {
+            $verificar_1 = "correcto";
+        } elseif ($primero === '') {
+            $verificar_1 = '';
+        } else {
+            $verificar_1 = "incorrecto";
+        }
+
+        $segundo = isset($_POST['segundo']) ? $_POST['segundo'] : '';
+        if ($segundo === 'x') {
+            $verificar_2 = "correcto";
+        } elseif ($segundo === '') {
+            $verificar_2 = '';
+        } else {
+            $verificar_2 = "incorrecto";
+        }
+
+        $tercero = isset($_POST['tercero']) ? $_POST['tercero'] : '';
+        if ($tercero === 'xu+c' || $tercero === 'xu+C') {
+            $verificar_3 = "correcto";
+        } elseif ($tercero === '') {
+            $verificar_3 = '';
+        } else {
+            $verificar_3 = "incorrecto";
+        }
+
+        $cuarto = isset($_POST['cuarto']) ? $_POST['cuarto'] : '';
+        if ($cuarto === 'x') {
+            $verificar_4 = "correcto";
+        } elseif ($cuarto === '') {
+            $verificar_4 = '';
+        } else {
+            $verificar_4 = "incorrecto";
+        }
+
+        $quinto = isset($_POST['quinto']) ? $_POST['quinto'] : '';
+        if ($quinto === 'n+1') {
+            $verificar_5 = "correcto";
+        } elseif ($quinto === '') {
+            $verificar_5 = '';
+        } else {
+            $verificar_5 = "incorrecto";
+        }
+
+        $sexto = isset($_POST['sexto']) ? $_POST['sexto'] : '';
+        if ($sexto === 'n+1') {
+            $verificar_6 = "correcto";
+        } elseif ($sexto === '') {
+            $verificar_6 = '';
+        } else {
+            $verificar_6 = "incorrecto";
+        }
+
+        $septimo = isset($_POST['septimo']) ? $_POST['septimo'] : '';
+        if ($septimo === '+C') {
+            $verificar_7 = "correcto";
+        } elseif ($septimo === '') {
+            $verificar_7 = '';
+        } else {
+            $verificar_7 = "incorrecto";
+        }
+
+        $octavo = isset($_POST['octavo']) ? $_POST['octavo'] : '';
+        if ($octavo === 'x') {
+            $verificar_8 = "correcto";
+        } elseif ($octavo === '') {
+            $verificar_8 = '';
+        } else {
+            $verificar_8 = "incorrecto";
+        }
+
+        $noveno = isset($_POST['noveno']) ? $_POST['noveno'] : '';
+        if ($noveno === '2') {
+            $verificar_9 = "correcto";
+        } elseif ($noveno === '') {
+            $verificar_9 = '';
+        } else {
+            $verificar_9 = "incorrecto";
+        }
+
+        $decimo = isset($_POST['decimo']) ? $_POST['decimo'] : '';
+        if ($decimo === '2') {
+            $verificar_10 = "correcto";
+        } elseif ($decimo === '') {
+            $verificar_10 = '';
+        } else {
+            $verificar_10 = "incorrecto";
+        }
+
+        $undecimo = isset($_POST['undecimo']) ? $_POST['undecimo'] : '';
+        if ($undecimo === '+C') {
+            $verificar_11 = "correcto";
+        } elseif ($undecimo === '') {
+            $verificar_11 = '';
+        } else {
+            $verificar_11 = "incorrecto";
+        }
+
+        $duodecimo = isset($_POST['duodecimo']) ? $_POST['duodecimo'] : '';
+        if ($duodecimo === 'x') {
+            $verificar_12 = "correcto";
+        } elseif ($duodecimo === '') {
+            $verificar_12 = '';
+        } else {
+            $verificar_12 = "incorrecto";
+        }
+
+        $decimotercero = isset($_POST['decimotercero']) ? $_POST['decimotercero'] : '';
+        if ($decimotercero === '3') {
+            $verificar_13 = "correcto";
+        } elseif ($decimotercero === '') {
+            $verificar_13 = '';
+        } else {
+            $verificar_13 = "incorrecto";
+        }
+
+        $decimocuarto = isset($_POST['decimocuarto']) ? $_POST['decimocuarto'] : '';
+        if ($decimocuarto === '3') {
+            $verificar_14 = "correcto";
+        } elseif ($decimocuarto === '') {
+            $verificar_14 = '';
+        } else {
+            $verificar_14 = "incorrecto";
+        }
+
+        $decimoquinto = isset($_POST['decimoquinto']) ? $_POST['decimoquinto'] : '';
+        if ($decimoquinto === '+C') {
+            $verificar_15 = "correcto";
+        } elseif ($decimoquinto === '') {
+            $verificar_15 = '';
+        } else {
+            $verificar_15 = "incorrecto";
+        }
     }
-
-    
-    // Verificar la respuesta de la segunda pregunta
-    $sexto = isset($_POST['sexto']) ? $_POST['sexto'] : '';
-
-    if ($sexto === 'n+1') {
-        $verificar_6 = "correcto";
-    } elseif ($sexto === '') {
-        $verificar_6 = '';
-    } else {
-        $verificar_6 = "incorrecto";
-    }
-
-    
-    // Verificar la respuesta de la segunda pregunta
-    $septimo = isset($_POST['septimo']) ? $_POST['septimo'] : '';
-
-    if ($septimo === '+C') {
-        $verificar_7 = "correcto";
-    } elseif ($septimo === '') {
-        $verificar_7 = '';
-    } else {
-        $verificar_7 = "incorrecto";
-    }
-
-    // Verificar la respuesta de la octava pregunta
-$octavo = isset($_POST['octavo']) ? $_POST['octavo'] : '';
-
-if ($octavo === 'x') {
-    $verificar_8 = "correcto";
-} elseif ($octavo === '') {
-    $verificar_8 = '';
-} else {
-    $verificar_8 = "incorrecto";
-}
-
-// Verificar la respuesta de la novena pregunta
-$noveno = isset($_POST['noveno']) ? $_POST['noveno'] : '';
-
-if ($noveno === '2') {
-    $verificar_9 = "correcto";
-} elseif ($noveno === '') {
-    $verificar_9 = '';
-} else {
-    $verificar_9 = "incorrecto";
-}
-
-// Verificar la respuesta de la décima pregunta
-$decimo = isset($_POST['decimo']) ? $_POST['decimo'] : '';
-
-if ($decimo === '2') {
-    $verificar_10 = "correcto";
-} elseif ($decimo === '') {
-    $verificar_10 = '';
-} else {
-    $verificar_10 = "incorrecto";
-}
-
-// Verificar la respuesta de la undécima pregunta
-$undecimo = isset($_POST['undecimo']) ? $_POST['undecimo'] : '';
-
-if ($undecimo === '+C') {
-    $verificar_11 = "correcto";
-} elseif ($undecimo === '') {
-    $verificar_11 = '';
-} else {
-    $verificar_11 = "incorrecto";
-}
-
-
-// Verificar la respuesta de la duodécima pregunta
-$duodecimo = isset($_POST['duodecimo']) ? $_POST['duodecimo'] : '';
-if ($duodecimo === 'x') {
-    $verificar_12 = "correcto";
-} elseif ($duodecimo === '') {
-    $verificar_12 = '';
-} else {
-    $verificar_12 = "incorrecto";
-}
-
-// Verificar la respuesta de la decimotercera pregunta
-$decimotercero = isset($_POST['decimotercero']) ? $_POST['decimotercero'] : '';
-if ($decimotercero === '3') {
-    $verificar_13 = "correcto";
-} elseif ($decimotercero === '') {
-    $verificar_13 = '';
-} else {
-    $verificar_13 = "incorrecto";
-}
-
-// Verificar la respuesta de la decimocuarta pregunta
-$decimocuarto = isset($_POST['decimocuarto']) ? $_POST['decimocuarto'] : '';
-if ($decimocuarto === '3') {
-    $verificar_14 = "correcto";
-} elseif ($decimocuarto === '') {
-    $verificar_14 = '';
-} else {
-    $verificar_14 = "incorrecto";
-}
-
-// Verificar la respuesta de la decimoquinta pregunta
-$decimoquinto = isset($_POST['decimoquinto']) ? $_POST['decimoquinto'] : '';
-if ($decimoquinto === '+C') {
-    $verificar_15 = "correcto";
-} elseif ($decimoquinto === '') {
-    $verificar_15 = '';
-} else {
-    $verificar_15 = "incorrecto";
-}
-
 }
 ?>
 <!DOCTYPE html>
@@ -221,7 +195,7 @@ if ($decimoquinto === '+C') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -229,6 +203,13 @@ if ($decimoquinto === '+C') {
     .imagen {
         max-width: 100%;
         height: auto;
+    }
+
+    .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 290vh;
     }
 </style>
  
@@ -562,7 +543,15 @@ function actualizarFormula3() {
     </p>
     <button type="submit">enviar</button>
     <?php echo $verificar_u ?><br>
-     </form>
+
+    
+    <hr>
+    <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
+    <br>
+    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
+    <button type="submit"   >Mostrar Solución</button>
+
+    </form>
 </div>
 <div class="centered-container">
     <a

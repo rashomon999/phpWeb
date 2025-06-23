@@ -34,13 +34,20 @@ if ($_POST) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="Estudio.css">
     <style>
         .imagen {
             max-width: 100%;
             height: auto;
         }
+
+          .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 170vh;
+    }
     </style>
     <script>
         function handleSubmit(event) {
@@ -67,20 +74,20 @@ if ($_POST) {
     <form action="./Estudio.php" method="POST" onsubmit="handleSubmit(event)">
         <span><h4>2.punto: </h4></span>
         <img src="..\img\Captura de pantalla 2024-07-03 174710.png" alt="">
-        <img src="..\img\Captura de pantalla 2024-07-03 174606.png" alt="">
-        <img src="..\img\Captura de pantalla 2024-07-03 175007.png" alt="" width="600"> <br>
+        <img src="..\..\img\Captura de pantalla 2024-07-03 174606.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-03 175007.png" alt="" width="600"> <br>
         recordemos: <br>
-        <img src="..\img\Captura de pantalla 2024-07-03 175140.png" alt=""> <br><br>
+        <img src="..\..\img\Captura de pantalla 2024-07-03 175140.png" alt=""> <br><br>
         <span><h4>Decimos que converge a 0</h4></span>
     </form>
 </div>
 
 <div class="seccion derecha">
     <form action="./Estudio.php" method="POST" onsubmit="handleSubmit(event)"> <br> 
-        <img src="..\img\Captura de pantalla 2024-07-04 071934.png" alt=""> <br>
-        <img src="..\img\Captura de pantalla 2024-07-04 072905.png" alt="" width="650">
-        <img src="..\img\Captura de pantalla 2024-07-04 073028.png" alt=""> <br><br>
-        <img src="..\img\Captura de pantalla 2024-07-04 073116.png" alt="" width="650"> <br><br>
+        <img src="..\..\img\Captura de pantalla 2024-07-04 071934.png" alt=""> <br>
+        <img src="..\..\img\Captura de pantalla 2024-07-04 072905.png" alt="" width="650">
+        <img src="..\..\img\Captura de pantalla 2024-07-04 073028.png" alt=""> <br><br>
+        <img src="..\..\img\Captura de pantalla 2024-07-04 073116.png" alt="" width="650"> <br><br>
         <span><h4>Decimos que diverge</h4></span>
     </form>
 </div>

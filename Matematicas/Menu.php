@@ -29,6 +29,9 @@
 </head>
 <body>
     <div class="centered-container">
+         <a class="btn" href=".\libro\comienzo.php">libro (secuencias)</a>
+          <a class="btn" href=".\libro2_0\index.php">libro 2.0</a>
+    <br><br>
         <a class="btn" href=".\basico\index.php">basico</a>
         <a class="btn" href=".\algebra_lineal\Menu.php">algebra lineal</a>
         <a class="btn" href=".\derivadas\index.php">derivadas</a>

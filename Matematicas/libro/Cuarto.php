@@ -34,13 +34,20 @@ if ($_POST) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="Cuarto.css">
     <style>
         .imagen {
             max-width: 100%;
             height: auto;
         }
+
+         .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 290vh;
+    }
     </style>
     <script>
         function handleSubmit(event) {
@@ -65,14 +72,14 @@ if ($_POST) {
 <body>
 <div class="seccion izquierda">
     <form action="./Cuarto.php" method="POST" onsubmit="handleSubmit(event)">
-       <img src="..\img\Captura de pantalla 2024-07-04 104403.png" alt="">
-       <img src="..\img\Captura de pantalla 2024-07-04 105005.png" alt="" >
-       <img src="..\img\Captura de pantalla 2024-07-04 105342.png" alt="" width="600">
-       <img src="..\img\Captura de pantalla 2024-07-04 105142.png" alt=""> <br><br>
-       <img src="..\img\Captura de pantalla 2024-07-04 110515.png" alt="">
-       <img src="..\img\Captura de pantalla 2024-07-04 113111.png" alt="" width="600">
-       <img src="..\img\Captura de pantalla 2024-07-04 113130.png" alt="" width="600">
-       <img src="..\img\Captura de pantalla 2024-07-04 114634.png" alt="" width="600"> <br>
+       <img src="..\..\img\Captura de pantalla 2024-07-04 104403.png" alt="">
+       <img src="..\..\img\Captura de pantalla 2024-07-04 105005.png" alt="" >
+       <img src="..\..\img\Captura de pantalla 2024-07-04 105342.png" alt="" width="600">
+       <img src="..\..\img\Captura de pantalla 2024-07-04 105142.png" alt=""> <br><br>
+       <img src="..\..\img\Captura de pantalla 2024-07-04 110515.png" alt="">
+       <img src="..\..\img\Captura de pantalla 2024-07-04 113111.png" alt="" width="600">
+       <img src="..\..\img\Captura de pantalla 2024-07-04 113130.png" alt="" width="600">
+       <img src="..\..\img\Captura de pantalla 2024-07-04 114634.png" alt="" width="600"> <br>
        <span><h4>limite es 1.5</h4></span>
        
     </form>
@@ -82,13 +89,13 @@ if ($_POST) {
     <form action="./Cuarto.php" method="POST" onsubmit="handleSubmit(event)"> <br> 
         La clave es: <br>
         plt.yscale('symlog')  # Escala logarítmica simétrica en el eje y <br><br><br>
-        <img src="..\img\Captura de pantalla 2024-07-04 115941.png" alt=""> <br><br>
-        <img src="..\img\Captura de pantalla 2024-07-04 122842.png" alt="" ><br><br>
-        <img src="..\img\Captura de pantalla 2024-07-04 122921.png" alt="" width="600"><br><br>
-        <img src="..\img\Captura de pantalla 2024-07-04 122947.png" alt="" width="600"> <br><br>
-        <img src="..\img\Captura de pantalla 2024-07-04 123002.png" alt="" width="600" > <br><br>
+        <img src="..\..\img\Captura de pantalla 2024-07-04 115941.png" alt=""> <br><br>
+        <img src="..\..\img\Captura de pantalla 2024-07-04 122842.png" alt="" ><br><br>
+        <img src="..\..\img\Captura de pantalla 2024-07-04 122921.png" alt="" width="600"><br><br>
+        <img src="..\..\img\Captura de pantalla 2024-07-04 122947.png" alt="" width="600"> <br><br>
+        <img src="..\..\img\Captura de pantalla 2024-07-04 123002.png" alt="" width="600" > <br><br>
         Otra manera de verlo: <br> <br>
-        <img src="..\img\Captura de pantalla 2024-07-04 124419.png" alt="" width="600">
+        <img src="..\..\img\Captura de pantalla 2024-07-04 124419.png" alt="" width="600">
     
     </form>
 </div>

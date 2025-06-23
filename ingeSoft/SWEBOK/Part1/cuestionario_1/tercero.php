@@ -361,7 +361,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_28 = isset($_POST['respuesta_28']) ? $_POST['respuesta_28'] : '';
-   if ($respuesta_28 === '105') {  
+   if ($respuesta_28 === 'Analisis' || $respuesta_28 === 'analisis') {  
        $verificar_28 = "correcto";
    } elseif ($respuesta_28 === '') {
        $verificar_28 = '';
@@ -371,7 +371,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_29 = isset($_POST['respuesta_29']) ? $_POST['respuesta_29'] : '';
-   if ($respuesta_29 === '120') {  
+   if ($respuesta_29 === 'Detectar' || $respuesta_29 === 'detectar') {  
        $verificar_29 = "correcto";
    } elseif ($respuesta_29 === '') {
        $verificar_29 = '';
@@ -381,7 +381,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_30 = isset($_POST['respuesta_30']) ? $_POST['respuesta_30'] : '';
-   if ($respuesta_30 === '135') {  
+   if ($respuesta_30 === 'resolver') {  
        $verificar_30 = "correcto";
    } elseif ($respuesta_30 === '') {
        $verificar_30 = '';
@@ -391,7 +391,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_31 = isset($_POST['respuesta_31']) ? $_POST['respuesta_31'] : '';
-   if ($respuesta_31 === '150') {  
+   if ($respuesta_31 === 'limites') {  
        $verificar_31 = "correcto";
    } elseif ($respuesta_31 === '') {
        $verificar_31 = '';
@@ -401,7 +401,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_32 = isset($_POST['respuesta_32']) ? $_POST['respuesta_32'] : '';
-   if ($respuesta_32 === '165') {  
+   if ($respuesta_32 === 'interactuar') {  
        $verificar_32 = "correcto";
    } elseif ($respuesta_32 === '') {
        $verificar_32 = '';
@@ -411,7 +411,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_33 = isset($_POST['respuesta_33']) ? $_POST['respuesta_33'] : '';
-   if ($respuesta_33 === '180') {  
+   if ($respuesta_33 === 'organizacional') {  
        $verificar_33 = "correcto";
    } elseif ($respuesta_33 === '') {
        $verificar_33 = '';
@@ -420,7 +420,7 @@ if ($_POST) {
    }
 
  $respuesta_34 = isset($_POST['respuesta_34']) ? $_POST['respuesta_34'] : '';
-if ($respuesta_34 === '32') { 
+if ($respuesta_34 === 'operativo') { 
     $verificar_34 = "correcto";
 } elseif ($respuesta_34 === '') {
     $verificar_34 = '';
@@ -429,7 +429,7 @@ if ($respuesta_34 === '32') {
 }
 
  $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
-if ($respuesta_35 === '48') { 
+if ($respuesta_35 === 'sistema') { 
     $verificar_35 = "correcto";
 } elseif ($respuesta_35 === '') {
     $verificar_35 = '';
@@ -438,7 +438,7 @@ if ($respuesta_35 === '48') {
 }
 
  $respuesta_36 = isset($_POST['respuesta_36']) ? $_POST['respuesta_36'] : '';
-if ($respuesta_36 === '64') { 
+if ($respuesta_36 === 'software') { 
     $verificar_36 = "correcto";
 } elseif ($respuesta_36 === '') {
     $verificar_36 = '';
@@ -447,7 +447,7 @@ if ($respuesta_36 === '64') {
 }
 
  $respuesta_37 = isset($_POST['respuesta_37']) ? $_POST['respuesta_37'] : '';
-if ($respuesta_37 === '80') { 
+if ($respuesta_37 === 'modelado conceptual') { 
     $verificar_37 = "correcto";
 } elseif ($respuesta_37 === '') {
     $verificar_37 = '';
@@ -456,7 +456,7 @@ if ($respuesta_37 === '80') {
 }
 
  $respuesta_38 = isset($_POST['respuesta_38']) ? $_POST['respuesta_38'] : '';
-if ($respuesta_38 === '96') { 
+if ($respuesta_38 === 'clasificacion de requisitos') { 
     $verificar_38 = "correcto";
 } elseif ($respuesta_38 === '') {
     $verificar_38 = '';
@@ -1576,6 +1576,57 @@ function ocultarMensaje4() {
 <?php echo $verificar_26 ?>
 <?php echo $verificar_27 ?>
 <hr>
+
+
+<h2>4. 
+<input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="8">     
+de Requisitos</h2>
+
+<p>
+Este tema se ocupa del proceso de 
+<input type="text"   value="<?php echo $respuesta_28; ?>" size="8" readonly>   
+de los requisitos con los siguientes propósitos:
+</p>
+
+<ul>
+  <li>
+  <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="8">   
+  y 
+  <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="8"> 
+  conflictos entre requisitos.</li>
+  <li>Descubrir los 
+  <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="8">  
+  del software y cómo debe 
+    <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="8"> 
+  con su entorno 
+  <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="8">
+  y 
+  <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="8">
+  .</li>
+  <li>Elaborar los requisitos del 
+    <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="8">  
+  para derivar los requisitos del 
+    <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="8">
+  .</li>
+</ul>
+
+<p>
+La visión tradicional del análisis de requisitos ha sido que se reduce a un
+<input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="18">
+  utilizando uno de varios métodos de análisis, como el método de análisis estructurado. 
+Aunque el 
+<input type="text"  value="<?php echo $respuesta_37; ?>" size="18" readonly>
+es importante, aquí se incluye también la 
+<input type="text" name="respuesta_38" value="<?php echo $respuesta_38; ?>" size="22">
+como apoyo para informar 
+los compromisos entre requisitos (<input type="text"  value="<?php echo $respuesta_38; ?>" size="22" readonly>)
+ y el proceso para establecer estos compromisos (negociación de requisitos).
+</p>
+
+<p>
+Debe tenerse cuidado al describir los requisitos con la suficiente precisión para permitir que sean validados, que su implementación sea verificada y que sus costos sean estimados.
+</p>
+
     </form>
 </div>
 

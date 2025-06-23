@@ -304,7 +304,7 @@ if ($pregunta_31 === '') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -313,6 +313,13 @@ if ($pregunta_31 === '') {
             max-width: 100%;
             height: auto;
         }
+
+         .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 270vh;
+    }
     </style>
     <script>
     function handleSubmit(event) {
@@ -346,11 +353,11 @@ if ($pregunta_31 === '') {
         Si la funcion es continua o si la funcion tiene una cantidad finita de saltos discontinuos, entonces
         es integrable y el limite existe.
         <br><br>
-        <img src="../img/Captura de pantalla 2024-12-03 111107.png" alt=""> <br><br>
-        <img src="../img/Captura de pantalla 2024-12-03 111116.png" alt=""> <br><br>
-        <img src="../img/Captura de pantalla 2024-12-03 111148.png" alt=""> <br><br>
-        <img src="../img/Captura de pantalla 2024-12-03 111218.png" alt=""> <br><br>
-        <img src="../img/Captura de pantalla 2024-12-03 111307.png" alt=""> <br><br>
+        <img src="../../img/Captura de pantalla 2024-12-03 111107.png" alt=""> <br><br>
+        <img src="../../img/Captura de pantalla 2024-12-03 111116.png" alt=""> <br><br>
+        <img src="../../img/Captura de pantalla 2024-12-03 111148.png" alt=""> <br><br>
+        <img src="../../img/Captura de pantalla 2024-12-03 111218.png" alt=""> <br><br>
+        <img src="../../img/Captura de pantalla 2024-12-03 111307.png" alt=""> <br><br>
         La integral definida se puede entender como el límite de la suma de Riemann cuando
         n tiende a infinito.
         <br>

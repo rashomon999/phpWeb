@@ -1,153 +1,107 @@
 <?php
-// Variable para la primera pregunta
-$verificar_1 = '';
-$verificar_2 = '';
-$verificar_3 = '';
-$verificar_4 = '';
-$verificar_5 = '';
-$verificar_6 = '';
-$verificar_7 = '';
-$verificar_8 = '';
-$verificar_9 = '';
-$verificar_10 = '';
-$verificar_11 = '';
-$verificar_12 = '';
-$verificar_13 = '';
-$verificar_14 = '';
-$verificar_15 = '';
-// Inicializar variables
-$verificar_16 = '';
-$verificar_17 = '';
-$verificar_18 = '';
-$verificar_19 = '';
-$verificar_20 = '';
-$verificar_21 = '';
-$verificar_22 = '';
-$verificar_23 = '';
-$verificar_24 = '';
-$verificar_25 = '';
-$verificar_26 = '';
-$verificar_27 = '';
-$verificar_28 = '';
-$verificar_29 = '';
-$verificar_30 = '';
-$verificar_31 = '';
-$verificar_32 = '';
-$verificar_33 = '';
-$verificar_34 = '';
-$verificar_35 = '';
-$verificar_36 = '';
-$verificar_37 = '';
-$verificar_38 = '';
-$verificar_39 = '';
-$verificar_40 = '';
-$verificar_41 = '';
-$verificar_42 = '';
-$verificar_43 = '';
+// Inicialización de variables para verificaciones
+$verificar_1 = $verificar_2 = $verificar_3 = $verificar_4 = $verificar_5 = $verificar_6 = $verificar_7 = 
+$verificar_8 = $verificar_9 = $verificar_10 = $verificar_11 = $verificar_12 = $verificar_13 = $verificar_14 = 
+$verificar_15 = $verificar_16 = $verificar_17 = $verificar_18 = $verificar_19 = $verificar_20 = $verificar_21 = 
+$verificar_22 = $verificar_23 = $verificar_24 = $verificar_25 = $verificar_26 = $verificar_27 = $verificar_28 = 
+$verificar_29 = $verificar_30 = $verificar_31 = $verificar_32 = $verificar_33 = $verificar_34 = $verificar_35 = 
+$verificar_36 = $verificar_37 = $verificar_38 = $verificar_39 = $verificar_40 = $verificar_41 = $verificar_42 = 
+$verificar_43 = $verificar_44 = $verificar_45 = $verificar_46 = $verificar_47 = $verificar_48 = $verificar_49 = 
+$verificar_50 = $verificar_51 = $verificar_52 = $verificar_53 = $verificar_54 = $verificar_55 = $verificar_56 = 
+$verificar_57 = $verificar_58 = $verificar_59 = '';
 
-$verificar_44 = '';
-$verificar_45 = '';
-$verificar_46 = '';
-$verificar_47 = '';
+// Inicialización de variables para respuestas
+$primero = $segundo = $tercero = $cuarto = $quinto = $sexto = $septimo = $octavo = $noveno = $decimo = 
+$undecimo = $duodecimo = $decimotercero = $decimocuarto = $decimoquinto = $decimosexto = $decimoseptimo = 
+$decimooctavo = $decimonoveno = $vigesimo = $vigesp = $vigesimo_segundo = $vigesimo_tercero = $vigesimo_cuarto = 
+$vigesimo_quinto = $vigesimo_sexto = $vigesimo_septimo = $vigesimo_octavo = $vigesimo_noveno = $trigesimo = 
+$trigesimo_primero = $trigesimo_segundo = $trigesimo_tercero = $trigesimo_cuarto = $trigesimo_quinto = 
+$trigesimo_sexto = $trigesimo_septimo = $trigesimo_octavo = $trigesimo_noveno = $cuadragesimo = 
+$cuadragesimo_primero = $cuadragesimo_segundo = $cuadragesimo_tercero = $cuadragesimo_cuarto = 
+$cuadragesimo_quinto = $cuadragesimo_sexto = $cuadragesimo_septimo = $cuadragesimo_octavo = 
+$cuadragesimo_noveno = $quincuagesimo = $quincuagesimo_primero = $quincuagesimo_segundo = 
+$quincuagesimo_tercero = $quincuagesimo_cuarto = $quincuagesimo_quinto = $quincuagesimo_sexto = 
+$quincuagesimo_septimo = $quincuagesimo_octavo = $quincuagesimo_noveno = '';
 
-$verificar_48 = '';
-$verificar_49 = '';
-$verificar_50 = '';
-$verificar_51 = '';
+// Variable para controlar mostrar soluciones
+$mostrar_solucion = '';
 
- 
-$verificar_52 = '';
-$verificar_53 = '';
-$verificar_54 = '';
-$verificar_55 = '';
-
-$verificar_56 = '';
-$verificar_57 = '';
-$verificar_58 = '';
-$verificar_59 = '';
-
- 
-
- 
-
- 
-$primero = "";
-$segundo = "";
-$tercero = "";
-$cuarto = "";
-$quinto = "";
-$sexto = "";
-$septimo = "";
-$octavo = "";
-$noveno = "";
-$decimo = "";
-$undecimo = "";
-$duodecimo ="";
-$decimotercero ="";
-$decimocuarto ="";
-$decimoquinto = "";
-$decimosexto = "";
-$decimoseptimo = "";
-$decimooctavo = "";
-$decimonoveno = "";
-$vigesimo = "";
-$vigesp = "";
-$vigesimo_segundo = "";
-$vigesimo_tercero = "";
-
-$vigesimo_cuarto = "";
-$vigesimo_quinto = "";
-$vigesimo_sexto = "";
-$vigesimo_septimo = "";
-
-
-
-
-$vigesimo_octavo = "";
-$vigesimo_noveno = "";
-$trigesimo = "";
-$trigesimo_primero = "";
-
-
-$trigesimo_segundo = "";
-$trigesimo_tercero = "";
-$trigesimo_cuarto = "";
-$trigesimo_quinto = "";
-
-$trigesimo_sexto = "";
-$trigesimo_septimo = "";
-$trigesimo_octavo = "";
-$trigesimo_noveno = "";
-
-$cuadragesimo = "";
-$cuadragesimo_primero = "";
-$cuadragesimo_segundo = "";
-$cuadragesimo_tercero = "";
-
-
-$cuadragesimo_cuarto = "";
-$cuadragesimo_quinto = "";
-$cuadragesimo_sexto = "";
-$cuadragesimo_septimo = "";
-
-
-$cuadragesimo_octavo = "";
-$cuadragesimo_noveno = "";
-$quincuagesimo = "";
-$quincuagesimo_primero = "";
-
-
-$quincuagesimo_segundo = "";
-$quincuagesimo_tercero = "";
-$quincuagesimo_cuarto = "";
-$quincuagesimo_quinto = "";
-
-$quincuagesimo_sexto = "";
-$quincuagesimo_septimo = "";
-$quincuagesimo_octavo = "";
-$quincuagesimo_noveno = "";
-// Procesar el formulario cuando se envía
 if ($_POST) {
+    $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
+    
+    if ($mostrar_solucion === 'mostrar_solucion') {
+        // Establecer todas las respuestas correctas
+        $primero = 'cx+C';
+        $segundo = 'x';
+        $tercero = 'xu+c';
+        $cuarto = '\frac{8}{105}';
+        $quinto = '\sqrt{(5x^3-3)^7}';
+        $sexto = '+C';
+        $septimo = '+C';
+        $octavo = '\frac{1}{4}';
+        $noveno = '(x^3-3)^8';
+        $decimo = '+\frac{6}{7}';
+        $undecimo = '(x^3-3)^6';
+        $duodecimo = '\frac{3}{2}';
+        $decimotercero = '\sqrt[3]{(3x^2+5x)^2}';
+        $decimocuarto = '+C';
+        $decimoquinto = '+C';
+        $decimosexto = '6^{3x^2+1}';
+        $decimoseptimo = 'ln6';
+        $decimooctavo = '3';
+        $decimonoveno = '+C';
+        $vigesimo = '2e^{3x}';
+        $vigesp = '+C';
+        $vigesimo_segundo = '3';
+        $vigesimo_tercero = '+C';
+        $vigesimo_cuarto = '\frac{1}{10}';
+        $vigesimo_quinto = 'e^{5x}';
+        $vigesimo_sexto = '+C';
+        $vigesimo_septimo = '+C';
+        $vigesimo_octavo = '\frac{1}{2}';
+        $vigesimo_noveno = 'e^{x^2}';
+        $trigesimo = '3';
+        $trigesimo_primero = '+C';
+        $trigesimo_segundo = '\frac{1}{3}';
+        $trigesimo_tercero = 'ln^2x';
+        $trigesimo_cuarto = '+C';
+        $trigesimo_quinto = '+C';
+        $trigesimo_sexto = 'Ln';
+        $trigesimo_septimo = '|lnx|';
+        $trigesimo_octavo = '+C';
+        $trigesimo_noveno = '+C';
+        $cuadragesimo = '5';
+        $cuadragesimo_primero = '4';
+        $cuadragesimo_segundo = 'Ln|x|';
+        $cuadragesimo_tercero = '+C';
+        $cuadragesimo_cuarto = '3';
+        $cuadragesimo_quinto = '5';
+        $cuadragesimo_sexto = '3';
+        $cuadragesimo_septimo = 'x^5';
+        $cuadragesimo_octavo = '2';
+        $cuadragesimo_noveno = '3x^3';
+        $quincuagesimo = '3';
+        $quincuagesimo_primero = '+C';
+        $quincuagesimo_segundo = '8';
+        $quincuagesimo_tercero = '3';
+        $quincuagesimo_cuarto = '2';
+        $quincuagesimo_quinto = 'x^3';
+        $quincuagesimo_sexto = '-4';
+        $quincuagesimo_septimo = '2';
+        $quincuagesimo_octavo = 'x';
+        $quincuagesimo_noveno = '+C';
+        
+        // Marcar todas como correctas
+        $verificar_1 = $verificar_2 = $verificar_3 = $verificar_4 = $verificar_5 = $verificar_6 = $verificar_7 = 
+        $verificar_8 = $verificar_9 = $verificar_10 = $verificar_11 = $verificar_12 = $verificar_13 = $verificar_14 = 
+        $verificar_15 = $verificar_16 = $verificar_17 = $verificar_18 = $verificar_19 = $verificar_20 = $verificar_21 = 
+        $verificar_22 = $verificar_23 = $verificar_24 = $verificar_25 = $verificar_26 = $verificar_27 = $verificar_28 = 
+        $verificar_29 = $verificar_30 = $verificar_31 = $verificar_32 = $verificar_33 = $verificar_34 = $verificar_35 = 
+        $verificar_36 = $verificar_37 = $verificar_38 = $verificar_39 = $verificar_40 = $verificar_41 = $verificar_42 = 
+        $verificar_43 = $verificar_44 = $verificar_45 = $verificar_46 = $verificar_47 = $verificar_48 = $verificar_49 = 
+        $verificar_50 = $verificar_51 = $verificar_52 = $verificar_53 = $verificar_54 = $verificar_55 = $verificar_56 = 
+        $verificar_57 = $verificar_58 = $verificar_59 = "correcto";
+    } else {
     // Verificar la respuesta de la primera pregunta
     $primero = isset($_POST['primero']) ? $_POST['primero'] : '';
 
@@ -728,6 +682,7 @@ if ($quincuagesimo_noveno === '+C') {
     $verificar_59 = "incorrecto";
 }
 }
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -735,7 +690,7 @@ if ($quincuagesimo_noveno === '+C') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -1308,6 +1263,11 @@ function actualizarFormula14() {
     <?php echo $verificar_37 ?>
     <?php echo $verificar_38 ?>
     <hr>
+       <hr>
+    <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
+    <br>
+    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
+    <button type="submit"   >Mostrar Solución</button>
 
       </form>
 </div>

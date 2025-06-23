@@ -34,13 +34,20 @@ if ($_POST) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="Dieciseis.css">
     <style>
         .imagen {
             max-width: 100%;
             height: auto;
         }
+
+           .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 150vh;
+    }
     </style>
     <script>
         function handleSubmit(event) {
@@ -65,16 +72,16 @@ if ($_POST) {
 <body>
 <div class="seccion izquierda">
     <form action="./Dieciseis.php" method="POST" onsubmit="handleSubmit(event)">
-        <img src="..\img\Captura de pantalla 2024-07-24 092142.png" alt="">
-        <img src="..\img\Captura de pantalla 2024-07-24 092155.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-24 092142.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-24 092155.png" alt="">
     </form>
 </div>
 
 <div class="seccion derecha">
     <form action="./Dieciseis.php" method="POST" onsubmit="handleSubmit(event)"> 
-        <img src="..\img\Captura de pantalla 2024-07-24 100048.png" alt="">
-        <img src="..\img\Captura de pantalla 2024-07-24 100111.png" alt=""  width="600">
-        <img src="..\img\Captura de pantalla 2024-07-24 100127.png" alt="" width="600">
+        <img src="..\..\img\Captura de pantalla 2024-07-24 100048.png" alt="">
+        <img src="..\..\img\Captura de pantalla 2024-07-24 100111.png" alt=""  width="600">
+        <img src="..\..\img\Captura de pantalla 2024-07-24 100127.png" alt="" width="600">
     </form>
 </div>
 

@@ -34,13 +34,20 @@ if ($_POST) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="Trece.css">
     <style>
         .imagen {
             max-width: 100%;
             height: auto;
         }
+
+         .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 150vh;
+    }
     </style>
     <script>
         function handleSubmit(event) {
@@ -65,18 +72,18 @@ if ($_POST) {
 <body>
 <div class="seccion izquierda">
     <form action="Trece.php" method="POST" onsubmit="handleSubmit(event)">
-        <img src="..\img\Captura de pantalla 2024-07-11 120623.png" alt=""> <br><br>
-        <img src="..\img\Captura de pantalla 2024-07-11 120011.png" alt="" width="600"> 
-        <img src="..\img\Captura de pantalla 2024-07-11 120035.png" alt="" width="600">
-        <img src="..\img\Captura de pantalla 2024-07-11 120054.png" alt="" width="600">
+        <img src="..\..\img\Captura de pantalla 2024-07-11 120623.png" alt=""> <br><br>
+        <img src="..\..\img\Captura de pantalla 2024-07-11 120011.png" alt="" width="600"> 
+        <img src="..\..\img\Captura de pantalla 2024-07-11 120035.png" alt="" width="600">
+        <img src="..\..\img\Captura de pantalla 2024-07-11 120054.png" alt="" width="600">
     </form>
 </div>
 
 <div class="seccion derecha">
     <form action="./Trece.php" method="POST" onsubmit="handleSubmit(event)"> 
-        <img src="..\img\Captura de pantalla 2024-07-11 120736.png" alt="" width="600">
-        <img src="..\img\Captura de pantalla 2024-07-11 120748.png" alt="" width="600">
-        <img src="..\img\Captura de pantalla 2024-07-11 120816.png" alt="" width="600">
+        <img src="..\..\img\Captura de pantalla 2024-07-11 120736.png" alt="" width="600">
+        <img src="..\..\img\Captura de pantalla 2024-07-11 120748.png" alt="" width="600">
+        <img src="..\..\img\Captura de pantalla 2024-07-11 120816.png" alt="" width="600">
     </form>
 </div>
 

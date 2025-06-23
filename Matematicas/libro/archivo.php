@@ -123,7 +123,7 @@ if ($_POST) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="Primero.css">
     <title>Ejercicios de Cálculo</title>
     <script>
@@ -293,7 +293,7 @@ if ($_POST) {
             <span class="titulo_1"><h2>Pregunta 8:</h2></span>
             <br><br>
             El círculo a continuación es de radio 1. ¿Cuál es la altura de los triángulos formados?<br><br>
-            <img src="../img/main-qimg-4a7c59773032eee7f3d4c623d8c5243b-pjlq.jpeg" alt="" width="200" height="200"><br>
+            <img src="../../img/main-qimg-4a7c59773032eee7f3d4c623d8c5243b-pjlq.jpeg" alt="" width="200" height="200"><br>
             <input style="margin:10px;" value="cos(θ)" type="radio" name="nueve" id="nueve1" <?php echo isset($nueve) && ($nueve === 'cos(θ)') ? 'checked' : ''; ?>>cos(θ)
             <input style="margin:10px;" value="sen(θ)" type="radio" name="nueve" id="nueve2" <?php if ($nueve === 'sen(θ)') echo 'checked'; ?>>sen(θ)
             <input style="margin:10px;" value="tan(θ)" type="radio" name="nueve" id="nueve3" <?php if ($nueve === 'tan(θ)') echo 'checked'; ?>>tan(θ)
@@ -331,7 +331,7 @@ if ($_POST) {
         <span class="titulo_1"><h2>Pregunta 9:</h2></span>
             <br><br>
             El círculo a continuación es de radio 1. ¿Cuál es la base de los triángulos formados?<br><br>
-            <img src="../img/main-qimg-4a7c59773032eee7f3d4c623d8c5243b-pjlq.jpeg" alt="" width="200" height="200"><br>
+            <img src="../../img/main-qimg-4a7c59773032eee7f3d4c623d8c5243b-pjlq.jpeg" alt="" width="200" height="200"><br>
             <input style="margin:10px;" value="cos(θ)" type="radio" name="diez" id="diez1" <?php echo isset($diez) && ($diez === 'cos(θ)') ? 'checked' : ''; ?>>cos(θ)
             <input style="margin:10px;" value="sen(θ)" type="radio" name="diez" id="diez2" <?php if ($diez === 'sen(θ)') echo 'checked'; ?>>sen(θ)
             <input style="margin:10px;" value="2sin(pi/n)" type="radio" name="diez" id="diez3" <?php if ($diez === '2sin(pi/n)') echo 'checked'; ?>>2sin(pi/n)
