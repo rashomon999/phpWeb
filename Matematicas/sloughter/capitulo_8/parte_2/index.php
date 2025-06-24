@@ -1123,7 +1123,7 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
- <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../../../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -1136,7 +1136,7 @@ if ($respuesta_110 === '264') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 395vh;
+    height: 445vh;
     }
 </style>
  
@@ -1439,137 +1439,125 @@ function ocultarMensaje4() {
 </head>
 <body> 
 <div class="seccion izquierda">
-    <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-      <p>
-con la condición inicial \( v(0) = 0 \). La siguiente tabla da los resultados al aplicar el método de Runge-Kutta de segundo orden con tamaño de paso \( h = 0.1 \) en el intervalo \([0, 70]\):
-</p>
+    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <h1>8.2 Separación de variables</h1>
+  <p>
+    En la sección anterior discutimos dos métodos para aproximar la solución de una ecuación diferencial
+    $$\dot{x} = f(x, t)$$
+    con condición inicial \( x(t_0) = x_0 \). Ahora consideraremos, en esta sección así como en las Secciones 8.3 y 8.4, técnicas para encontrar soluciones en forma cerrada para tales ecuaciones, es decir, soluciones que puedan expresarse en términos de las funciones elementales del cálculo. Para lograrlo, será necesario considerar distintas clases de ecuaciones dependiendo de la forma de la función \( f \). Como en la integración ordinaria, encontrar una expresión en forma cerrada para la solución de una ecuación diferencial es con frecuencia un problema difícil, si no imposible, que requiere aprovechar cualquier información que podamos obtener de la forma de la función.
+  </p>
+  <p>
+    En esta sección consideraremos una clase de ecuaciones conocidas como ecuaciones separables y en las Secciones 8.3 y 8.4 consideraremos ecuaciones lineales.
+  </p>
+  <p>
+    Llamamos a una ecuación diferencial
+    $$\dot{x} = f(x, t) \tag{8.2.1}$$
+    con condición inicial \( x(t_0) = x_0 \), separable, o decimos que tiene variables separables, si \( f(x, t) = g(x)h(t) \) para algunas funciones \( g \) y \( h \), donde \( g \) depende solo de \( x \) y \( h \) depende solo de \( t \). Supondremos que \( g \) y \( h \) son ambas funciones continuas y, por lo tanto, en particular, integrables.
+  </p>
+  <p>
+    En ese caso, (8.2.1) se convierte en:
+    $$\dot{x} = g(x)h(t) \tag{8.2.2}$$
+    lo cual implica que:
+    $$\frac{\dot{x}}{g(x)} = h(t) \tag{8.2.3}$$
+    en todos los puntos para los cuales \( g(x) \ne 0 \). Integrando (8.2.3) desde \( t_0 \) hasta \( t \) (suponiendo que \( g(x(s)) \ne 0 \) para todo \( s \) entre \( t_0 \) y \( t \)), tenemos:
+    $$\int_{t_0}^{t} \frac{1}{g(x(s))} \dot{x}(s)\,ds = \int_{t_0}^{t} h(s)\,ds \tag{8.2.4}$$
+    donde hemos usado \( s \) como variable de integración para que nuestra respuesta esté en términos de \( t \). Ahora, usando el cambio de variable:
+    \[
+    u = x(s), \quad du = \dot{x}(s)\,ds
+    \]
+    obtenemos:
+    $$\int_{t_0}^{t} \frac{1}{g(x(s))} \dot{x}(s)\,ds = \int_{x(t_0)}^{x(t)} \frac{1}{g(u)}\,du = \int_{x_0}^{x} \frac{1}{g(u)}\,du \tag{8.2.5}$$
+    para la integral del lado izquierdo. Por lo tanto, combinando (8.2.4) y (8.2.5), se tiene:
+    $$\int_{x_0}^{x} \frac{1}{g(u)}\,du = \int_{t_0}^{t} h(s)\,ds \tag{8.2.6}$$
+  </p>
+  <p>
+    Así, podemos resolver una ecuación con variables separables siempre que podamos evaluar ambas integrales en (8.2.6) y luego resolver la ecuación resultante para \( x \). El proceso puede fallar en alguno de estos dos pasos finales, en cuyo caso debemos recurrir a aproximaciones numéricas, aun cuando la ecuación sea separable.
+  </p>
+  <h3>Proposición 8.2.1 (Separación de variables)</h3>
+  <p>
+    Si \( g \) y \( h \) son funciones continuas de \( x \) y \( t \), respectivamente, y \( x \) satisface la ecuación diferencial
+    $$\dot{x} = g(x)h(t) \tag{8.2.7}$$
+    con \( x(t_0) = x_0 \), entonces
+    $$\int_{x_0}^{x} \frac{1}{g(u)}\,du = \int_{t_0}^{t} h(s)\,ds \tag{8.2.8}$$
+    siempre que \( g(u) \ne 0 \) para todo \( u \) entre \( x_0 \) y \( x \).
+  </p>
+  <p>
+    Nótese que este es el mismo método que usamos para resolver la ecuación del modelo de crecimiento inhibido en la Sección 6.3.
+  </p>
+  <h3>Ejemplo 8.2.1</h3>
+  <p>
+    Consideremos la ecuación:
+    $$
+    \dot{x} = 0.4x
+    $$
+    con \( x(0) = 100 \). Esta es una ecuación separable con, en la notación usada anteriormente,
+    \( g(x) = x \) y \( h(t) = 0.4 \). (Nótese que las elecciones para \( g \) y \( h \) no son únicas.)
+    Usando (8.2.8), tenemos:
+    $$
+    \int_{100}^{x} \frac{1}{u}\,du = \int_0^{t} 0.4\,ds.
+    $$
+    Ahora, suponiendo que \( x > 0 \),
+    $$
+    \int_{100}^{x} \frac{1}{u}\,du = \log(u) \bigg|_{100}^{x} = \log(x) - \log(100) = \log\left(\frac{x}{100}\right),
+    $$
+    y
+    $$
+    \int_0^{t} 0.4\,ds = 0.4s \bigg|_0^{t} = 0.4t.
+    $$
+    Por lo tanto, tenemos:
+    $$
+    \log\left(\frac{x}{100}\right) = 0.4t,
+    $$
+    de donde obtenemos:
+    $$
+    \frac{x}{100} = e^{0.4t},
+    $$
+    y, finalmente:
+    $$
+    x = 100e^{0.4t}.
+    $$
+    Nótese que esta es la solución que deberíamos esperar de nuestro estudio de ecuaciones de esta forma en las Secciones 6.1 y 6.3.
+  </p>
 
-<table border="1" cellpadding="6" cellspacing="0">
-  <thead>
-    <tr><th>t</th><th>\( v_{10t} \) (≈ \( v(t) \))</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>0</td><td>0.0</td></tr>
-    <tr><td>5</td><td>-125.9</td></tr>
-    <tr><td>10</td><td>-202.3</td></tr>
-    <tr><td>15</td><td>-248.6</td></tr>
-    <tr><td>20</td><td>-276.7</td></tr>
-    <tr><td>25</td><td>-293.7</td></tr>
-    <tr><td>30</td><td>-304.1</td></tr>
-    <tr><td>35</td><td>-310.3</td></tr>
-    <tr><td>40</td><td>-314.1</td></tr>
-    <tr><td>45</td><td>-316.4</td></tr>
-    <tr><td>50</td><td>-317.8</td></tr>
-    <tr><td>55</td><td>-318.7</td></tr>
-    <tr><td>60</td><td>-319.2</td></tr>
-    <tr><td>65</td><td>-319.5</td></tr>
-    <tr><td>70</td><td>-319.7</td></tr>
-  </tbody>
-</table>
-
-<p>
-A partir de la tabla de valores y de la gráfica de la solución aproximada en la Figura 8.1.3, parece que la velocidad del cuerpo se aproxima a un valor límite. Veremos en la siguiente sección que esto es efectivamente cierto. Para este ejemplo, la velocidad se aproximará a −320 pies por segundo. Llamamos a esta velocidad la <strong>velocidad terminal</strong> del cuerpo.
-</p>     
-<img src="../../../../img/figura3.png" alt="">
-
-    <hr>
-    <h2>Método de Euler y la Aproximación por la Recta Tangente</h2>
-<p>
-El método de Euler es conceptualmente similar a la <strong>aproximación por la recta tangente</strong>, que utiliza la derivada en un solo punto para aproximar el valor de una función en un entorno cercano. Sin embargo, a diferencia de la aproximación por la recta tangente tradicional —que emplea una <em>pendiente fija</em> tomada únicamente desde el punto inicial—, el método de Euler actualiza continuamente la pendiente en cada paso.
-</p>
-<p>
-Es decir, por cada incremento \( h \) a lo largo del eje \( t \) (o eje \( x \)), el método de Euler recalcula la pendiente usando la ecuación diferencial \( \dot{x} = f(x, t) \). Al hacer esto, “sigue” la curva más de cerca, paso a paso, y da como resultado una mejor aproximación en un intervalo.
-</p>
-<p>
-Cada pequeño paso en el método de Euler es esencialmente una aproximación lineal local (por una recta tangente), pero <strong>ajusta la pendiente en cada punto</strong>, no solo una vez. Este proceso reduce la acumulación de errores en comparación con una única aproximación lineal y nos permite trazar iterativamente una curva solución aproximada.
-</p>
- <hr>
-
-
-     <h1>Problemas 8.1 (1)</h1>
-     <p>
-(1) Resuelve cada una de las siguientes ecuaciones diferenciales usando la condición inicial dada.
-</p>
-
-<p>
-(a) \(\dot{x} = t^2 - 2,\quad x(0) = 3\)
-</p>
-
-<p>
-(b) \(\dot{x} = -\sin(t),\quad x(0) = 2\)
-</p>
-
-<p>
-(c) \(\dot{y} = \sqrt{t},\quad y(1) = -3\)
-</p>
-
-<p>
-(d) \(\dot{w} = te^{-t},\quad w(0) = 2\)
-</p>
-
-
-    <p><strong>solucion: </strong></p>
-
-    <h2>(a)</h2>
-    <p>
-        Ecuación: \( \dot{x}(t) = t^2 - 2 \), &nbsp;&nbsp; Condición inicial: \( x(0) = 3 \)
-    </p>
-    <p>
-        \( x(t) = \int (t^2 - 2) \, dt = \frac{t^3}{3} - 2t + C \)
-    </p>
-    <p>
-        Usando la condición inicial: \( x(0) = 3 \Rightarrow C = 3 \)
-    </p>
-    <p>
-        <strong>Solución:</strong> \( \boxed{x(t) = \frac{t^3}{3} - 2t + 3} \)
-    </p>
-
-    <h2>(b)</h2>
-    <p>
-        Ecuación: \( \dot{x}(t) = -\sin(t) \), &nbsp;&nbsp; Condición inicial: \( x(0) = 2 \)
-    </p>
-    <p>
-        \( x(t) = \int -\sin(t) \, dt = \cos(t) + C \)
-    </p>
-    <p>
-        \( x(0) = 2 \Rightarrow C = 1 \)
-    </p>
-    <p>
-        <strong>Solución:</strong> \( \boxed{x(t) = \cos(t) + 1} \)
-    </p>
-
-    <h2>(c)</h2>
-    <p>
-        Ecuación: \( \dot{y}(t) = \sqrt{t} \), &nbsp;&nbsp; Condición inicial: \( y(1) = -3 \)
-    </p>
-    <p>
-        \( y(t) = \int \sqrt{t} \, dt = \frac{2}{3} t^{3/2} + C \)
-    </p>
-    <p>
-        \( y(1) = -3 \Rightarrow C = -\frac{11}{3} \)
-    </p>
-    <p>
-        <strong>Solución:</strong> \( \boxed{y(t) = \frac{2}{3} t^{3/2} - \frac{11}{3}} \)
-    </p>
-
-    <h2>(d)</h2>
-    <p>
-        Ecuación: \( \dot{w}(t) = t e^{-t} \), &nbsp;&nbsp; Condición inicial: \( w(0) = 2 \)
-    </p>
-    <p>
-        Usamos integración por partes:
-        <br>
-        \( \int t e^{-t} \, dt = -t e^{-t} - e^{-t} + C \)
-    </p>
-    <p>
-        \( w(t) = -t e^{-t} - e^{-t} + C \)
-    </p>
-    <p>
-        \( w(0) = 2 \Rightarrow C = 3 \)
-    </p>
-    <p>
-        <strong>Solución:</strong> \( \boxed{w(t) = -t e^{-t} - e^{-t} + 3} \)
-    </p>
+  <h3>Ejemplo 8.2.2</h3>
+  <p>
+    Consideremos la ecuación:
+    $$
+    \dot{y} = -2yt \tag{8.2.9}
+    $$
+    con \( y(0) = y_0 \ne 0 \). Esta es una ecuación separable con, en la notación usada anteriormente,
+    \( g(y) = y \) y \( h(t) = -2t \). Usando (8.2.8), tenemos:
+    $$
+    \int_{y_0}^{y} \frac{1}{u}\,du = -\int_0^{t} 2s\,ds.
+    $$
+    Ahora:
+    $$
+    \int_{y_0}^{y} \frac{1}{u}\,du = \log|u| \bigg|_{y_0}^{y} = \log|y| - \log|y_0| = \log\left|\frac{y}{y_0}\right|,
+    $$
+    y
+    $$
+    -\int_0^{t} 2s\,ds = -s^2 \bigg|_0^{t} = -t^2.
+    $$
+    Por lo tanto, tenemos:
+    $$
+    \log\left|\frac{y}{y_0}\right| = -t^2,
+    $$
+    de donde se sigue que:
+    $$
+    \left|\frac{y}{y_0}\right| = e^{-t^2}.
+    $$
+    Ahora, \( e^{-t^2} > 0 \) para todo \( t \), por lo que \( y(t) \) nunca es cero. Dado que \( y \) es continua (lo cual se sigue de que es diferenciable), esto significa que o bien \( y(t) > 0 \) para todo \( t \), o bien \( y(t) < 0 \) para todo \( t \). Ya que \( y(0) = y_0 \), se tiene que:
+  </p>
+  <ul>
+    <li>Si \( y_0 > 0 \), entonces \( y(t) > 0 \) para todo \( t \).</li>
+    <li>Si \( y_0 < 0 \), entonces \( y(t) < 0 \) para todo \( t \).</li>
+  </ul>
+  <p>
+    En cualquier caso:
+    $$
+    \frac{y(t)}{y_0} > 0.
+    $$
+  </p>
     </form>
 </div>
 
@@ -1577,217 +1565,93 @@ Cada pequeño paso en el método de Euler es esencialmente una aproximación lin
 
 
 <div class="seccion derecha">
-    <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-     <p>
-(2) Sea \( x(t) \), \( v(t) \) y \( a(t) \) la altura, velocidad y aceleración, respectivamente, de un objeto de masa \( m \) en caída libre cerca de la superficie de la Tierra. Sean \( x_0 \) y \( v_0 \) la altura y la velocidad, respectivamente, del objeto en el instante \( t_0 \).
-</p>
+    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+        <img src="../../../../img/familia.png" alt="" width="700">
 
-<p>
-Si ignoramos los efectos de la resistencia del aire, la fuerza que actúa sobre el cuerpo es \( -mg \), donde \( g \) es una constante<br>
-(\( g = 9.8 \) metros/segundo<sup>2</sup> o \( g = 32 \) pies/segundo<sup>2</sup>).
-</p>
+        <p>
+    Para todo \( t \), se cumple que
+    $$
+    \left| \frac{y}{y_0} \right| = \frac{y}{y_0}.
+    $$
+    Por lo tanto:
+    $$
+    \frac{y}{y_0} = e^{-t^2}, \quad \text{o bien} \quad y = y_0 e^{-t^2}. \tag{8.2.10}
+    $$
+    Nótese que (8.2.10) también especifica una solución de (8.2.9) cuando \( y_0 = 0 \), a saber, la solución \( y(t) = 0 \) para todo \( t \). Al dejar el valor de \( y_0 \) sin especificar, hemos encontrado la forma general de todas las soluciones posibles para la ecuación. Llamamos a la familia de todas las soluciones posibles dadas por (8.2.10) la <strong>solución general</strong> de la ecuación (8.2.9). Cualquier solución obtenida al especificar un valor de \( y_0 \), por ejemplo \( y_0 = 10 \), se llama una <strong>solución particular</strong> de la ecuación.
+  </p>
+  <p>
+    Como se indica en el primer ejemplo, las elecciones para \( g \) y \( h \) no son únicas. Por ejemplo, en el segundo ejemplo podríamos haber tomado \( g(y) = 2y \) y \( h(t) = t \). Sin embargo, uno debe intentar elegir \( g \) y \( h \) de tal manera que los pasos subsiguientes de la solución sean lo más simples posible.
+  </p>
 
-<p>
-Así, por la segunda ley de Newton del movimiento,
-</p>
+  <h3>Ejemplo 8.2.3</h3>
+  <p>
+    Consideremos la ecuación:
+    $$
+    \dot{x} = -\frac{t}{x}
+    $$
+    con \( x(0) = x_0 \ne 0 \). Separando las variables, tenemos:
+    $$
+    \int_{x_0}^{x} u\,du = -\int_0^t s\,ds.
+    $$
+    Ahora:
+    $$
+    \int_{x_0}^{x} u\,du = \frac{1}{2}u^2 \bigg|_{x_0}^{x} = \frac{1}{2}(x^2 - x_0^2),
+    $$
+    y
+    $$
+    -\int_0^t s\,ds = -\frac{1}{2}s^2 \bigg|_0^t = -\frac{1}{2}t^2.
+    $$
+    Por lo tanto:
+    $$
+    \frac{1}{2}(x^2 - x_0^2) = -\frac{1}{2}t^2 \quad \Rightarrow \quad x^2 + t^2 = x_0^2.
+    $$
+    Esta ecuación define implícitamente \( x \) como función de \( t \). De hecho, a partir de esta ecuación podemos ver que la gráfica de \( x \) es parte de un círculo de radio \( x_0 \) centrado en el origen. Resolviendo explícitamente para \( x \), tenemos:
+    <ul>
+      <li>Si \( x_0 > 0 \), entonces \( x = \sqrt{x_0^2 - t^2} \).</li>
+      <li>Si \( x_0 < 0 \), entonces \( x = -\sqrt{x_0^2 - t^2} \).</li>
+    </ul>
+    Nótese que \( x \) solo está definida para \( -x_0 < t < x_0 \).
+  </p>
 
-<p>
-\[
--ma(t) = -mg
-\]
-</p>
-
-<p>
-y por lo tanto,
-</p>
-
-<p>
-\[
-a(t) = -g
-\]
-</p>
-
-<p>
-Demuestra que
-</p>
-
-<p>
-\[
-x(t) = -\frac{1}{2}gt^2 + v_0 t + x_0
-\]
-</p>
-
-    <strong>solucion</strong>    
-      <h5>Problema 8.1 (2)</h5>
-
-    <p>
-        Dado que \( a(t) = \ddot{x}(t) \) es la aceleración del cuerpo y la única fuerza que actúa es la gravedad,
-        por la segunda ley de Newton se tiene:
-    </p>
-
-    <p>
-        \[
-        F = ma(t) = -mg \Rightarrow a(t) = -g
-        \]
-    </p>
-
-    <h5>Paso 1: Obtener la velocidad</h5>
-   <p>
-        Cuando decimos:
-    </p>
-
-    <p>
-        \[
-        \frac{dv}{dt} = -g
-        \]
-    </p>
-    <p>
-         Como \( \frac{dv}{dt} = a(t) = -g \)
-    </p>    
-    <p>
-        Estamos diciendo que la derivada de la función velocidad \( v(t) \) respecto al tiempo \( t \) es igual a la constante \( -g \).
-    </p>
- 
-    <p>
-        Esto significa aplicar la integral a cada lado de la ecuación, con respecto a la variable \( t \):
-    </p>
-
-    <p>
-        \[
-        \int \frac{dv}{dt} \, dt = \int -g \, dt
-        \]
-    </p>
-
-    <p>
-        \[
-        v(t) = \int -g \, dt = -gt + C_1
-        \]
-    </p>
-
-    <p>
-        Usando la condición inicial \( v(0) = v_0 \):
-    </p>
-
-    <p>
-        \[
-        v_0 = -g(0) + C_1 \Rightarrow C_1 = v_0
-        \]
-
-        Por tanto:
-
-        \[
-        v(t) = -gt + v_0
-        \]
-    </p>
-
-    <h5>Paso 2: Obtener la posición</h5>
-    <p>
-        Como \( \frac{dx}{dt} = v(t) = -gt + v_0 \), integramos nuevamente:
-    </p>
-
-    <p>
-        \[
-        x(t) = \int (-gt + v_0) \, dt = -\frac{1}{2}gt^2 + v_0 t + C_2
-        \]
-    </p>
-
-    <p>
-        Usando la condición inicial \( x(0) = x_0 \):
-    </p>
-
-    <p>
-        \[
-        x_0 = -\frac{1}{2}g(0)^2 + v_0(0) + C_2 \Rightarrow C_2 = x_0
-        \]
-
-        Finalmente:
-
-        \[
-        \boxed{x(t) = -\frac{1}{2}gt^2 + v_0 t + x_0}
-        \]
-    </p>
-    <hr>
-    <strong>de donde sale el v(t): </strong>
-    <p>
-    \[
-    \int \frac{dv}{dt} \, dt \quad \text{"se cancela" el } dt \Rightarrow \int dv = v(t)
-    \]
-</p>
-
-    <hr>
-    <p>
-(3) Supón que un objeto es proyectado verticalmente hacia arriba desde una altura de 100 pies con una velocidad inicial de 20 pies por segundo. Usa el Problema 2 para responder las siguientes preguntas.
-</p>
-
-<p>
-(a) Encuentra \( x(t) \), la altura del objeto en el instante \( t \).
-</p>
-
-<p>
-(b) ¿En qué instante alcanza el objeto su altura máxima?
-</p>
-
-<p>
-(c) ¿Cuál es la altura máxima que alcanza el objeto?
-</p>
-
-<p>
-(d) ¿En qué instante el objeto golpeará el suelo?
-</p>
-
-
-         <h5>Problema 8.1 (3)</h5>
-
-  <p>Supón que un objeto es proyectado verticalmente hacia arriba desde una altura de 100 pies con una velocidad inicial de 20 pies por segundo.</p>
-
-  <h5>Datos:</h5>
-  <ul>
-    <li>Altura inicial: \( x_0 = 100 \)</li>
-    <li>Velocidad inicial: \( v_0 = 20 \)</li>
-    <li>Gravedad: \( g = 32 \, \text{ft/s}^2 \)</li>
-  </ul>
-
-  <p>Utilizamos la fórmula general del movimiento vertical bajo gravedad:</p>
-  <p>\[
-  x(t) = -\frac{1}{2}gt^2 + v_0 t + x_0
-  \]</p>
-
-  <h5>(a) Encuentra \( x(t) \)</h5>
-  <p>\[
-  x(t) = -16t^2 + 20t + 100
-  \]</p>
-
-  <h5>(b) ¿Cuándo alcanza la altura máxima?</h5>
-  <p>La altura máxima se alcanza cuando la velocidad es 0:</p>
-  <p>\[
-  v(t) = -gt + v_0 = 0 \Rightarrow -32t + 20 = 0 \Rightarrow t = \frac{5}{8} = 0.625 \, \text{segundos}
-  \]</p>
-
-  <h5>(c) ¿Cuál es la altura máxima?</h5>
-  <p>Sustituimos \( t = \frac{5}{8} \) en \( x(t) \):</p>
-  <p>\[
-  x\left(\frac{5}{8}\right) = -16\left(\frac{5}{8}\right)^2 + 20\left(\frac{5}{8}\right) + 100 = 106.25 \, \text{pies}
-  \]</p>
-
-  <h5>(d) ¿Cuándo tocará el suelo (es decir, cuando \( x(t) = 0 \))?</h5>
-  <p>Resolvemos la ecuación cuadrática:</p>
-  <p>\[
-  -16t^2 + 20t + 100 = 0 \Rightarrow 16t^2 - 20t - 100 = 0
-  \]</p>
-  <p>\[
-  t = \frac{20 \pm \sqrt{(-20)^2 - 4(16)(-100)}}{2(16)} = \frac{20 \pm \sqrt{6800}}{32}
-  \]</p>
-  <p>\[
-  \sqrt{6800} \approx 82.46 \Rightarrow t \approx \frac{102.46}{32} \approx 3.20 \, \text{segundos}
-  \]</p>
-
-  <h5>Resumen de respuestas:</h5>
-  <ul>
-    <li><strong>(a)</strong> \( x(t) = -16t^2 + 20t + 100 \)</li>
-    <li><strong>(b)</strong> \( t = \frac{5}{8} = 0.625 \, \text{segundos} \)</li>
-    <li><strong>(c)</strong> Altura máxima: \( 106.25 \, \text{pies} \)</li>
-    <li><strong>(d)</strong> Tiempo cuando toca el suelo: \( \approx 3.20 \, \text{segundos} \)</li>
-  </ul>
+  <h3>Ejemplo 8.2.4</h3>
+  <p>
+    En la Sección 8.1 consideramos la ecuación:
+    $$
+    \dot{v} = -g - \frac{k}{m}v,
+    $$
+    con \( v(0) = 0 \), como modelo para la velocidad de un objeto en caída libre cerca de la superficie de la Tierra cuando la fuerza debida a la resistencia del aire es proporcional a la velocidad. Aquí \( v \) es la velocidad del objeto, \( g \), como es habitual, es 32 pies/seg² o 9.8 m/s², \( m \) es la masa del objeto y \( k > 0 \) es una constante que depende de la resistencia del aire del objeto en particular.
+  </p>
+  <p>
+    Si escribimos esta ecuación en la forma:
+    $$
+    \dot{v} = -g \left(1 + \frac{k}{gm}v \right) \tag{8.2.11}
+    $$
+    y separamos variables usando:
+    $$
+    f(v) = 1 + \frac{k}{gm}v, \quad h(t) = -g,
+    $$
+    entonces tenemos:
+    $$
+    \int_0^v \frac{1}{1 + \frac{k}{gm}u}\,du = -\int_0^t g\,ds.
+    $$
+    Ahora,
+    $$
+    \int_0^v \frac{1}{1 + \frac{k}{gm}u}\,du = \frac{gm}{k} \log\left|1 + \frac{k}{gm}v\right|,
+    $$
+    y
+    $$
+    -\int_0^t g\,ds = -gt.
+    $$
+    Por lo tanto,
+    $$
+    \frac{gm}{k} \log\left|1 + \frac{k}{gm}v\right| = -gt,
+    $$
+    de donde se sigue que:
+    $$
+    \log\left|1 + \frac{k}{gm}v\right| = -\frac{kt}{m}.
+    $$
+  </p>
+  
     </form>
 </div>
 
@@ -1796,7 +1660,7 @@ x(t) = -\frac{1}{2}gt^2 + v_0 t + x_0
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="cuarto.php"
+        href="segundo.php"
         role="button"
         width="50px"
         height="50px"

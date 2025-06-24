@@ -90,7 +90,7 @@ $verificar_61 = ''; $verificar_62 = ''; $verificar_63 = ''; $verificar_64 = ''; 
 
 if ($_POST) {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '26') {  
+   if ($respuesta_1 === 'funcion desconocida') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -100,7 +100,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === '39') {  
+   if ($respuesta_2 === 'una o mas') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -110,7 +110,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === '52') {  
+   if ($respuesta_3 === 'derivadas') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -120,7 +120,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === '65') {  
+   if ($respuesta_4 === 'numero') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -130,7 +130,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === '78') {  
+   if ($respuesta_5 === 'funcion') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -140,7 +140,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === '91') {  
+   if ($respuesta_6 === 'depende') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -150,7 +150,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === '104') {  
+   if ($respuesta_7 === 'una o mas') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -160,7 +160,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === '117') {  
+   if ($respuesta_8 === 'independientes') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -170,7 +170,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === '130') {  
+   if ($respuesta_9 === 'participa') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -180,7 +180,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === '143') {  
+   if ($respuesta_10 === 'incognita') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -190,7 +190,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === '156') {  
+   if ($respuesta_11 === 'derivadas') {  
        $verificar_11 = "correcto";
    } elseif ($respuesta_11 === '') {
        $verificar_11 = '';
@@ -201,7 +201,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
      $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-     if ($respuesta_12 === '28') {  
+     if ($respuesta_12 === 'f(x)') {  
          $verificar_12 = "correcto";
      } elseif ($respuesta_12 === '') {
          $verificar_12 = '';
@@ -211,7 +211,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la segunda pregunta
      $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-     if ($respuesta_13 === '42') { 
+     if ($respuesta_13 === 'y(x)') { 
          $verificar_13 = "correcto";
      } elseif ($respuesta_13 === '') {
          $verificar_13 = '';
@@ -221,7 +221,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la tercera pregunta
      $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-     if ($respuesta_14 === '56') {  
+     if ($respuesta_14 === 'una o mas') {  
          $verificar_14 = "correcto";
      } elseif ($respuesta_14 === '') {
          $verificar_14 = '';
@@ -231,7 +231,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la cuarta pregunta
      $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-     if ($respuesta_15 === '70') { 
+     if ($respuesta_15 === 'derivadas') { 
          $verificar_15 = "correcto";
      } elseif ($respuesta_15 === '') {
          $verificar_15 = '';
@@ -241,7 +241,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la quinta pregunta
      $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-     if ($respuesta_16 === '84') {  
+     if ($respuesta_16 === 'tres veces') {  
          $verificar_16 = "correcto";
      } elseif ($respuesta_16 === '') {
          $verificar_16 = '';
@@ -251,7 +251,9 @@ if ($_POST) {
   
      // Verificar la respuesta de la sexta pregunta
      $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-     if ($respuesta_17 === '98') {  
+      $respuesta_17 = strtolower($respuesta_17); // Convertir a minúsculas para comparación
+
+     if ($respuesta_17 === 'ecuaciones diferenciales ordinarias') {  
          $verificar_17 = "correcto";
      } elseif ($respuesta_17 === '') {
          $verificar_17 = '';
@@ -261,7 +263,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la séptima pregunta
      $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-     if ($respuesta_18 === '112') {  
+     if ($respuesta_18 === 'EDO') {  
          $verificar_18 = "correcto";
      } elseif ($respuesta_18 === '') {
          $verificar_18 = '';
@@ -271,7 +273,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la octava pregunta
      $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-     if ($respuesta_19 === '126') {  
+     if ($respuesta_19 === 'derivada') {  
          $verificar_19 = "correcto";
      } elseif ($respuesta_19 === '') {
          $verificar_19 = '';
@@ -281,7 +283,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la novena pregunta
      $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
-     if ($respuesta_20 === '140') {  
+     if ($respuesta_20 === 'variable independiente') {  
          $verificar_20 = "correcto";
      } elseif ($respuesta_20 === '') {
          $verificar_20 = '';
@@ -291,7 +293,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la décima pregunta
      $respuesta_21 = isset($_POST['respuesta_21']) ? $_POST['respuesta_21'] : '';
-     if ($respuesta_21 === '154') {  
+     if ($respuesta_21 === 'x o t') {  
          $verificar_21 = "correcto";
      } elseif ($respuesta_21 === '') {
          $verificar_21 = '';
@@ -301,7 +303,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la undécima pregunta
      $respuesta_22 = isset($_POST['respuesta_22']) ? $_POST['respuesta_22'] : '';
-     if ($respuesta_22 === '168') {  
+     if ($respuesta_22 === 'incognita') {  
          $verificar_22 = "correcto";
      } elseif ($respuesta_22 === '') {
          $verificar_22 = '';
@@ -311,7 +313,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
    $respuesta_23 = isset($_POST['respuesta_23']) ? $_POST['respuesta_23'] : '';
-   if ($respuesta_23 === '30') {  
+   if ($respuesta_23 === 'funcion') {  
        $verificar_23 = "correcto";
    } elseif ($respuesta_23 === '') {
        $verificar_23 = '';
@@ -321,7 +323,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_24 = isset($_POST['respuesta_24']) ? $_POST['respuesta_24'] : '';
-   if ($respuesta_24 === '45') {  
+   if ($respuesta_24 === 'unica variable') {  
        $verificar_24 = "correcto";
    } elseif ($respuesta_24 === '') {
        $verificar_24 = '';
@@ -331,7 +333,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_25 = isset($_POST['respuesta_25']) ? $_POST['respuesta_25'] : '';
-   if ($respuesta_25 === '60') { 
+   if ($respuesta_25 === 'derivadas') { 
        $verificar_25 = "correcto";
    } elseif ($respuesta_25 === '') {
        $verificar_25 = '';
@@ -341,7 +343,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_26 = isset($_POST['respuesta_26']) ? $_POST['respuesta_26'] : '';
-   if ($respuesta_26 === '75') {  
+   if ($respuesta_26 === 'respecto') {  
        $verificar_26 = "correcto";
    } elseif ($respuesta_26 === '') {
        $verificar_26 = '';
@@ -351,7 +353,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_27 = isset($_POST['respuesta_27']) ? $_POST['respuesta_27'] : '';
-   if ($respuesta_27 === '90') {  
+   if ($respuesta_27 === 'unica variable') {  
        $verificar_27 = "correcto";
    } elseif ($respuesta_27 === '') {
        $verificar_27 = '';
@@ -361,7 +363,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_28 = isset($_POST['respuesta_28']) ? $_POST['respuesta_28'] : '';
-   if ($respuesta_28 === '105') {  
+   if ($respuesta_28 === 'x') {  
        $verificar_28 = "correcto";
    } elseif ($respuesta_28 === '') {
        $verificar_28 = '';
@@ -371,7 +373,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_29 = isset($_POST['respuesta_29']) ? $_POST['respuesta_29'] : '';
-   if ($respuesta_29 === '120') {  
+   if ($respuesta_29 === 'y(x)') {  
        $verificar_29 = "correcto";
    } elseif ($respuesta_29 === '') {
        $verificar_29 = '';
@@ -381,7 +383,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_30 = isset($_POST['respuesta_30']) ? $_POST['respuesta_30'] : '';
-   if ($respuesta_30 === '135') {  
+   if ($respuesta_30 === 'derivadas') {  
        $verificar_30 = "correcto";
    } elseif ($respuesta_30 === '') {
        $verificar_30 = '';
@@ -391,7 +393,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_31 = isset($_POST['respuesta_31']) ? $_POST['respuesta_31'] : '';
-   if ($respuesta_31 === '150') {  
+   if ($respuesta_31 === 'x') {  
        $verificar_31 = "correcto";
    } elseif ($respuesta_31 === '') {
        $verificar_31 = '';
@@ -401,7 +403,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_32 = isset($_POST['respuesta_32']) ? $_POST['respuesta_32'] : '';
-   if ($respuesta_32 === '165') {  
+   if ($respuesta_32 === 'mas de una variable independiente') {  
        $verificar_32 = "correcto";
    } elseif ($respuesta_32 === '') {
        $verificar_32 = '';
@@ -411,7 +413,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_33 = isset($_POST['respuesta_33']) ? $_POST['respuesta_33'] : '';
-   if ($respuesta_33 === '180') {  
+   if ($respuesta_33 === 'varias variables') {  
        $verificar_33 = "correcto";
    } elseif ($respuesta_33 === '') {
        $verificar_33 = '';
@@ -420,7 +422,7 @@ if ($_POST) {
    }
 
  $respuesta_34 = isset($_POST['respuesta_34']) ? $_POST['respuesta_34'] : '';
-if ($respuesta_34 === '32') { 
+if ($respuesta_34 === 'derivadas parciales') { 
     $verificar_34 = "correcto";
 } elseif ($respuesta_34 === '') {
     $verificar_34 = '';
@@ -429,7 +431,7 @@ if ($respuesta_34 === '32') {
 }
 
  $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
-if ($respuesta_35 === '48') { 
+if ($respuesta_35 === 'independientes') { 
     $verificar_35 = "correcto";
 } elseif ($respuesta_35 === '') {
     $verificar_35 = '';
@@ -438,7 +440,7 @@ if ($respuesta_35 === '48') {
 }
 
  $respuesta_36 = isset($_POST['respuesta_36']) ? $_POST['respuesta_36'] : '';
-if ($respuesta_36 === '64') { 
+if ($respuesta_36 === 'derivadas') { 
     $verificar_36 = "correcto";
 } elseif ($respuesta_36 === '') {
     $verificar_36 = '';
@@ -447,7 +449,7 @@ if ($respuesta_36 === '64') {
 }
 
  $respuesta_37 = isset($_POST['respuesta_37']) ? $_POST['respuesta_37'] : '';
-if ($respuesta_37 === '80') { 
+if ($respuesta_37 === 'orden') { 
     $verificar_37 = "correcto";
 } elseif ($respuesta_37 === '') {
     $verificar_37 = '';
@@ -456,7 +458,7 @@ if ($respuesta_37 === '80') {
 }
 
  $respuesta_38 = isset($_POST['respuesta_38']) ? $_POST['respuesta_38'] : '';
-if ($respuesta_38 === '96') { 
+if ($respuesta_38 === 'grado') { 
     $verificar_38 = "correcto";
 } elseif ($respuesta_38 === '') {
     $verificar_38 = '';
@@ -465,7 +467,7 @@ if ($respuesta_38 === '96') {
 }
 
  $respuesta_39 = isset($_POST['respuesta_39']) ? $_POST['respuesta_39'] : '';
-if ($respuesta_39 === '112') { 
+if ($respuesta_39 === 'derivada mas alta') { 
     $verificar_39 = "correcto";
 } elseif ($respuesta_39 === '') {
     $verificar_39 = '';
@@ -474,7 +476,7 @@ if ($respuesta_39 === '112') {
 }
 
  $respuesta_40 = isset($_POST['respuesta_40']) ? $_POST['respuesta_40'] : '';
-if ($respuesta_40 === '128') { 
+if ($respuesta_40 === 'linealidad') { 
     $verificar_40 = "correcto";
 } elseif ($respuesta_40 === '') {
     $verificar_40 = '';
@@ -483,7 +485,7 @@ if ($respuesta_40 === '128') {
 }
 
  $respuesta_41 = isset($_POST['respuesta_41']) ? $_POST['respuesta_41'] : '';
-if ($respuesta_41 === '144') { 
+if ($respuesta_41 === 'Lineales' || $respuesta_41 === 'lineales') { 
     $verificar_41 = "correcto";
 } elseif ($respuesta_41 === '') {
     $verificar_41 = '';
@@ -492,7 +494,7 @@ if ($respuesta_41 === '144') {
 }
 
  $respuesta_42 = isset($_POST['respuesta_42']) ? $_POST['respuesta_42'] : '';
-if ($respuesta_42 === '160') { 
+if ($respuesta_42 === 'derivadas') { 
     $verificar_42 = "correcto";
 } elseif ($respuesta_42 === '') {
     $verificar_42 = '';
@@ -501,7 +503,7 @@ if ($respuesta_42 === '160') {
 }
 
  $respuesta_43 = isset($_POST['respuesta_43']) ? $_POST['respuesta_43'] : '';
-if ($respuesta_43 === '176') { 
+if ($respuesta_43 === 'lineal') { 
     $verificar_43 = "correcto";
 } elseif ($respuesta_43 === '') {
     $verificar_43 = '';
@@ -510,7 +512,7 @@ if ($respuesta_43 === '176') {
 }
 
  $respuesta_44 = isset($_POST['respuesta_44']) ? $_POST['respuesta_44'] : '';
-if ($respuesta_44 === '192') { 
+if ($respuesta_44 === 'No lineales' || $respuesta_44 === 'no lineales') { 
     $verificar_44 = "correcto";
 } elseif ($respuesta_44 === '') {
     $verificar_44 = '';
@@ -519,7 +521,7 @@ if ($respuesta_44 === '192') {
 }
 
  $respuesta_45 = isset($_POST['respuesta_45']) ? $_POST['respuesta_45'] : '';
-if ($respuesta_45 === '34') { 
+if ($respuesta_45 === 'potencias') { 
     $verificar_45 = "correcto";
 } elseif ($respuesta_45 === '') {
     $verificar_45 = '';
@@ -528,7 +530,7 @@ if ($respuesta_45 === '34') {
 }
 
  $respuesta_46 = isset($_POST['respuesta_46']) ? $_POST['respuesta_46'] : '';
-if ($respuesta_46 === '51') { 
+if ($respuesta_46 === 'x es una funcion de t') { 
     $verificar_46 = "correcto";
 } elseif ($respuesta_46 === '') {
     $verificar_46 = '';
@@ -537,7 +539,7 @@ if ($respuesta_46 === '51') {
 }
 
  $respuesta_47 = isset($_POST['respuesta_47']) ? $_POST['respuesta_47'] : '';
-if ($respuesta_47 === '68') { 
+if ($respuesta_47 === 'x(t)') { 
     $verificar_47 = "correcto";
 } elseif ($respuesta_47 === '') {
     $verificar_47 = '';
@@ -546,7 +548,7 @@ if ($respuesta_47 === '68') {
 }
 
  $respuesta_48 = isset($_POST['respuesta_48']) ? $_POST['respuesta_48'] : '';
-if ($respuesta_48 === '85') { 
+if ($respuesta_48 === 'f(x(t),t)') { 
     $verificar_48 = "correcto";
 } elseif ($respuesta_48 === '') {
     $verificar_48 = '';
@@ -555,7 +557,9 @@ if ($respuesta_48 === '85') {
 }
 
  $respuesta_49 = isset($_POST['respuesta_49']) ? $_POST['respuesta_49'] : '';
-if ($respuesta_49 === '102') { 
+ $respuesta_49 = str_replace(' ', '', $respuesta_49); // Eliminar espacios en blanco para comparación
+
+if ($respuesta_49 === '\dot{x}(t)=f(x(t),t)') { 
     $verificar_49 = "correcto";
 } elseif ($respuesta_49 === '') {
     $verificar_49 = '';
@@ -564,7 +568,7 @@ if ($respuesta_49 === '102') {
 }
 
  $respuesta_50 = isset($_POST['respuesta_50']) ? $_POST['respuesta_50'] : '';
-if ($respuesta_50 === '119') { 
+if ($respuesta_50 === 'x') { 
     $verificar_50 = "correcto";
 } elseif ($respuesta_50 === '') {
     $verificar_50 = '';
@@ -573,7 +577,7 @@ if ($respuesta_50 === '119') {
 }
 
  $respuesta_51 = isset($_POST['respuesta_51']) ? $_POST['respuesta_51'] : '';
-if ($respuesta_51 === '136') { 
+if ($respuesta_51 === 'funcion') { 
     $verificar_51 = "correcto";
 } elseif ($respuesta_51 === '') {
     $verificar_51 = '';
@@ -582,7 +586,7 @@ if ($respuesta_51 === '136') {
 }
 
  $respuesta_52 = isset($_POST['respuesta_52']) ? $_POST['respuesta_52'] : '';
-if ($respuesta_52 === '153') { 
+if ($respuesta_52 === 't') { 
     $verificar_52 = "correcto";
 } elseif ($respuesta_52 === '') {
     $verificar_52 = '';
@@ -591,7 +595,7 @@ if ($respuesta_52 === '153') {
 }
 
  $respuesta_53 = isset($_POST['respuesta_53']) ? $_POST['respuesta_53'] : '';
-if ($respuesta_53 === '170') { 
+if ($respuesta_53 === 'funcion') { 
     $verificar_53 = "correcto";
 } elseif ($respuesta_53 === '') {
     $verificar_53 = '';
@@ -600,7 +604,7 @@ if ($respuesta_53 === '170') {
 }
 
  $respuesta_54 = isset($_POST['respuesta_54']) ? $_POST['respuesta_54'] : '';
-if ($respuesta_54 === '187') { 
+if ($respuesta_54 === 'x') { 
     $verificar_54 = "correcto";
 } elseif ($respuesta_54 === '') {
     $verificar_54 = '';
@@ -609,7 +613,7 @@ if ($respuesta_54 === '187') {
 }
 
  $respuesta_55 = isset($_POST['respuesta_55']) ? $_POST['respuesta_55'] : '';
-if ($respuesta_55 === '204') { 
+if ($respuesta_55 === 't') { 
     $verificar_55 = "correcto";
 } elseif ($respuesta_55 === '') {
     $verificar_55 = '';
@@ -619,7 +623,7 @@ if ($respuesta_55 === '204') {
 
 
  $respuesta_56 = isset($_POST['respuesta_56']) ? $_POST['respuesta_56'] : '';
-if ($respuesta_56 === '36') { 
+if ($respuesta_56 === 'primer orden') { 
     $verificar_56 = "correcto";
 } elseif ($respuesta_56 === '') {
     $verificar_56 = '';
@@ -628,7 +632,7 @@ if ($respuesta_56 === '36') {
 }
 
  $respuesta_57 = isset($_POST['respuesta_57']) ? $_POST['respuesta_57'] : '';
-if ($respuesta_57 === '54') { 
+if ($respuesta_57 === 'funcion x') { 
     $verificar_57 = "correcto";
 } elseif ($respuesta_57 === '') {
     $verificar_57 = '';
@@ -637,7 +641,7 @@ if ($respuesta_57 === '54') {
 }
 
  $respuesta_58 = isset($_POST['respuesta_58']) ? $_POST['respuesta_58'] : '';
-if ($respuesta_58 === '72') { 
+if ($respuesta_58 === 'variable independiente t') { 
     $verificar_58 = "correcto";
 } elseif ($respuesta_58 === '') {
     $verificar_58 = '';
@@ -646,7 +650,7 @@ if ($respuesta_58 === '72') {
 }
 
  $respuesta_59 = isset($_POST['respuesta_59']) ? $_POST['respuesta_59'] : '';
-if ($respuesta_59 === '90') { 
+if ($respuesta_59 === 't') { 
     $verificar_59 = "correcto";
 } elseif ($respuesta_59 === '') {
     $verificar_59 = '';
@@ -655,7 +659,7 @@ if ($respuesta_59 === '90') {
 }
 
  $respuesta_60 = isset($_POST['respuesta_60']) ? $_POST['respuesta_60'] : '';
-if ($respuesta_60 === '108') { 
+if ($respuesta_60 === 'aproximaciones') { 
     $verificar_60 = "correcto";
 } elseif ($respuesta_60 === '') {
     $verificar_60 = '';
@@ -1123,7 +1127,7 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
- <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../../../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -1136,7 +1140,7 @@ if ($respuesta_110 === '264') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 395vh;
+    height: 445vh;
     }
 </style>
  
@@ -1180,7 +1184,7 @@ function handleSubmit(event) {
 function actualizarFormula() {
     // Obtener los valores de los inputs
    
-    var f = document.getElementById('respuesta_11').value || "";
+    var f = document.getElementById('respuesta_49').value || "";
  
 
 
@@ -1439,137 +1443,322 @@ function ocultarMensaje4() {
 </head>
 <body> 
 <div class="seccion izquierda">
-    <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-      <p>
-con la condición inicial \( v(0) = 0 \). La siguiente tabla da los resultados al aplicar el método de Runge-Kutta de segundo orden con tamaño de paso \( h = 0.1 \) en el intervalo \([0, 70]\):
-</p>
+    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <p>Una <strong>ecuación diferencial</strong> es una ecuación matemática que relaciona una 
+    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="16">
+    con 
+    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="8">
+    de sus 
+    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="8">
+    . Estas ecuaciones son fundamentales en las ciencias 
+    porque permiten modelar fenómenos que implican tasas de cambio, como el crecimiento poblacional, 
+    el movimiento de un objeto, la disipación de calor, o el comportamiento eléctrico en un circuito.
+    </p>
+    <p>
+    Es decir, la incognita no es un 
+    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="8">
+    , sino una 
+    <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="8">
+    que 
+    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="8">
+    de 
+    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="8">
+    variables 
+    <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="8">
+    .
+    y la palabra diferencial viene porque en esa ecuacion no solo 
+    <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="8">
+    la función 
+    <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="8">
+    , sino también sus 
+    <input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="8">.
+    </p>
+    <p>
+    para mayor claridad, muchas veces se denota y en lugar de 
+    <input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="8">
+    .
+    </p>
+    <h3>Definición formal</h3>
+    <p>Una ecuación diferencial es una ecuación que involucra una función \( y =  \)
+    <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="8">  
+    y 
+    <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="8"> 
+    de sus 
+    <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="8"> 
+    , como \( \frac{dy}{dx} \), \( \frac{d^2y}{dx^2} \), etc.</p>
 
-<table border="1" cellpadding="6" cellspacing="0">
-  <thead>
-    <tr><th>t</th><th>\( v_{10t} \) (≈ \( v(t) \))</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>0</td><td>0.0</td></tr>
-    <tr><td>5</td><td>-125.9</td></tr>
-    <tr><td>10</td><td>-202.3</td></tr>
-    <tr><td>15</td><td>-248.6</td></tr>
-    <tr><td>20</td><td>-276.7</td></tr>
-    <tr><td>25</td><td>-293.7</td></tr>
-    <tr><td>30</td><td>-304.1</td></tr>
-    <tr><td>35</td><td>-310.3</td></tr>
-    <tr><td>40</td><td>-314.1</td></tr>
-    <tr><td>45</td><td>-316.4</td></tr>
-    <tr><td>50</td><td>-317.8</td></tr>
-    <tr><td>55</td><td>-318.7</td></tr>
-    <tr><td>60</td><td>-319.2</td></tr>
-    <tr><td>65</td><td>-319.5</td></tr>
-    <tr><td>70</td><td>-319.7</td></tr>
-  </tbody>
-</table>
+  <p><strong>Ejemplo:</strong></p>
+  <p>\[
+  \frac{dy}{dx} = 3y
+  \]</p>
+  <p>Esta ecuación dice que la derivada de \( y \) respecto a \( x \) es 
+    <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="8">   
+  \( y \) mismo.</p>
 
-<p>
-A partir de la tabla de valores y de la gráfica de la solución aproximada en la Figura 8.1.3, parece que la velocidad del cuerpo se aproxima a un valor límite. Veremos en la siguiente sección que esto es efectivamente cierto. Para este ejemplo, la velocidad se aproximará a −320 pies por segundo. Llamamos a esta velocidad la <strong>velocidad terminal</strong> del cuerpo.
-</p>     
-<img src="../../../../img/figura3.png" alt="">
-
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_1 ?>
+    <?php echo $verificar_2 ?>
+    <?php echo $verificar_3 ?>
+    <?php echo $verificar_4 ?>
+    <?php echo $verificar_5 ?>
+    <?php echo $verificar_6 ?>
+    <?php echo $verificar_7 ?>
+    <?php echo $verificar_8 ?>
+    <?php echo $verificar_9 ?>
+    <?php echo $verificar_10 ?>
+    <?php echo $verificar_11 ?>
+    <?php echo $verificar_12 ?>
+    <?php echo $verificar_13 ?>
+    <?php echo $verificar_14 ?>
+    <?php echo $verificar_15 ?>
+    <?php echo $verificar_16 ?>
     <hr>
-    <h2>Método de Euler y la Aproximación por la Recta Tangente</h2>
-<p>
-El método de Euler es conceptualmente similar a la <strong>aproximación por la recta tangente</strong>, que utiliza la derivada en un solo punto para aproximar el valor de una función en un entorno cercano. Sin embargo, a diferencia de la aproximación por la recta tangente tradicional —que emplea una <em>pendiente fija</em> tomada únicamente desde el punto inicial—, el método de Euler actualiza continuamente la pendiente en cada paso.
-</p>
-<p>
-Es decir, por cada incremento \( h \) a lo largo del eje \( t \) (o eje \( x \)), el método de Euler recalcula la pendiente usando la ecuación diferencial \( \dot{x} = f(x, t) \). Al hacer esto, “sigue” la curva más de cerca, paso a paso, y da como resultado una mejor aproximación en un intervalo.
-</p>
-<p>
-Cada pequeño paso en el método de Euler es esencialmente una aproximación lineal local (por una recta tangente), pero <strong>ajusta la pendiente en cada punto</strong>, no solo una vez. Este proceso reduce la acumulación de errores en comparación con una única aproximación lineal y nos permite trazar iterativamente una curva solución aproximada.
-</p>
- <hr>
+  <h3>Clasificación de las ecuaciones diferenciales</h3>
+
+    <h4>Según el tipo de 
+    <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="8">    
+    :</h4>
+ 
+    <h5> 
+    <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="32">    
+    <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="4">  
+    </h5>
+    
+    <ul>
+    <li>Involucran una <strong>única 
+    <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="12">     
+    </strong>, normalmente denotada como 
+    <input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>" size="6"> 
+    .</li>
+    <li>La 
+    <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="8">     
+    es una 
+    <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="8"> 
+    de esa 
+    <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="15"> 
+    : por ejemplo, \( y = y(x) \).</li>
+    <li>Las 
+    <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="8">     
+    que aparecen son 
+    <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="8"> 
+    a esa 
+    <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="15"> 
+    :
+      \[
+      y',\quad y'',\quad \frac{dy}{dx},\quad \frac{d^2y}{dx^2},\ \text{etc.}
+      \]
+    </li>
+    <li>Solo aparecen 
+    <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="2">     
+    , 
+    <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="2"> 
+    , y sus 
+    <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="8"> 
+    respecto a 
+    <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="2"> 
+    .</li>
+  </ul>
+  <p><strong>Ejemplo de EDO:</strong></p>
+  <p>\[
+  \frac{dy}{dx} + y = \sin(x)
+  \]</p>
+
+  <h5> Ecuaciones en Derivadas Parciales (EDP)</h5>
+  <ul>
+    <li>Involucran 
+    <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="30">    
+    , por ejemplo \( x \), \( y \), \( t \), etc.</li>
+    <li>La incógnita es una función de 
+    <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="15">     
+    : por ejemplo, \( u = u(x, y) \) o \( T(x,t) \).</li>
+    <li>Las derivadas que aparecen son 
+    <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="15">      
+    :
+      \[
+      \frac{\partial u}{\partial x},\quad \frac{\partial^2 u}{\partial t^2},\quad \frac{\partial^2 u}{\partial x \partial y},\ \text{etc.}
+      \]
+    </li>
+    <li>Pueden participar varias combinaciones de variables 
+     <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="8">     
+    y 
+     <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="8"> 
+    cruzadas.</li>
+  </ul>
+  <p><strong>Ejemplo de EDP:</strong></p>
+  <p>\[
+  \frac{\partial u}{\partial t} = k \frac{\partial^2 u}{\partial x^2}
+  \]</p>
+     <button type="submit">Enviar</button>
+<?php echo $verificar_17 ?>
+<?php echo $verificar_18 ?>
+<?php echo $verificar_19 ?>
+<?php echo $verificar_20 ?>
+<?php echo $verificar_21 ?>
+<?php echo $verificar_22 ?>
+ <?php echo $verificar_23 ?>
+<?php echo $verificar_24 ?>
+<?php echo $verificar_25 ?>
+<?php echo $verificar_26 ?>
+<?php echo $verificar_27 ?>
+<?php echo $verificar_28 ?>
+<?php echo $verificar_29 ?>
+<?php echo $verificar_30 ?>
+<?php echo $verificar_31 ?>
+<?php echo $verificar_32 ?>
+<?php echo $verificar_33 ?>
+<?php echo $verificar_34 ?>
+<?php echo $verificar_35 ?>
+<?php echo $verificar_36 ?>
+<hr>
+  <h4>Según el 
+    <input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="8">   
+  :</h4>
+  <p>El 
+  <input type="text" value="<?php echo $respuesta_37; ?>" size="8" readonly>   
+  es el 
+   <input type="text" name="respuesta_38" value="<?php echo $respuesta_38; ?>" size="8"> 
+  de la 
+  <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="15"> 
+  presente en la ecuación.</p>
+  <ul>
+    <li>Ejemplo de 
+    <input type="text" value="<?php echo $respuesta_37; ?>" size="8" readonly>       
+    1: \( \frac{dy}{dx} = y \)</li>
+    <li>Ejemplo de 
+    <input type="text" value="<?php echo $respuesta_37; ?>" size="8" readonly>       
+    2: \( \frac{d^2y}{dx^2} - 4\frac{dy}{dx} + 4y = 0 \)</li>
+  </ul>
+
+  <h4>Según su  <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="8"> :</h4>
+  <ul>
+    <li><strong>
+    <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="8">    
+    :</strong> la función y sus 
+     <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="8">  
+    aparecen en forma 
+    <input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="8">  
+    .<br>
+    Ejemplo: \( \frac{dy}{dx} + p(x)y = q(x) \)
+    </li>
+    <li><strong>
+    <input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>" size="8">     
+    :</strong> contienen productos o 
+     <input type="text" name="respuesta_45" value="<?php echo $respuesta_45; ?>" size="8">  
+    de \( y \) o sus derivadas.<br>
+    Ejemplo: \( \left( \frac{dy}{dx} \right)^2 + y = x \)
+    </li>
+  </ul>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_37 ?>
+    <?php echo $verificar_38 ?>
+    <?php echo $verificar_39 ?>
+    <?php echo $verificar_40 ?>
+    <?php echo $verificar_41 ?>
+    <?php echo $verificar_42 ?>
+    <?php echo $verificar_43 ?>
+    <?php echo $verificar_44 ?>
+    <?php echo $verificar_45 ?>
+    <hr>
+
+     <p>En la ecuación:</p>
+  <p>\[
+  \dot{x} = f(x, t)
+  \]</p>
+  <p>lo que realmente está ocurriendo es que 
+  <input type="text" name="respuesta_46" value="<?php echo $respuesta_46; ?>" size="8">    
+  , es decir:</p>
+  <p>\(
+  x = \)<input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="2">  
+   </p>
+  <p>Pero por convención y para no sobrecargar la notación, no se escribe siempre explícitamente como:</p>
+  <p>\(
+    x = \)<input type="text" name="respuesta_48" value="<?php echo $respuesta_48; ?>" size="8"> 
+     </p>
+
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_46 ?>
+    <?php echo $verificar_47 ?>
+    <?php echo $verificar_48 ?>
+    <hr>
+
+    <h1>8.1 Soluciones numéricas</h1>
+
+    <p>
+    Si 
+    <input type="text" name="respuesta_50" value="<?php echo $respuesta_50; ?>" size="8"> 
+    es una 
+    <input type="text" name="respuesta_51" value="<?php echo $respuesta_51; ?>" size="8"> 
+    de una variable real 
+    <input type="text" name="respuesta_52" value="<?php echo $respuesta_52; ?>" size="8"> 
+    y \( f \) es una 
+    <input type="text" name="respuesta_53" value="<?php echo $respuesta_53; ?>" size="8"> 
+    tanto de 
+    <input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>" size="8"> 
+    como de 
+    <input type="text" name="respuesta_55" value="<?php echo $respuesta_55; ?>" size="8"> 
+    , entonces la ecuación
+    </p>
+
+    <span id="formula">
+            \(   (8.1.1)\)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_49" size="10" id="respuesta_49" oninput="actualizarFormula()" 
+    value="<?php echo $respuesta_49?>" size="15" >
 
 
-     <h1>Problemas 8.1 (1)</h1>
-     <p>
-(1) Resuelve cada una de las siguientes ecuaciones diferenciales usando la condición inicial dada.
-</p>
-
-<p>
-(a) \(\dot{x} = t^2 - 2,\quad x(0) = 3\)
-</p>
-
-<p>
-(b) \(\dot{x} = -\sin(t),\quad x(0) = 2\)
-</p>
-
-<p>
-(c) \(\dot{y} = \sqrt{t},\quad y(1) = -3\)
-</p>
-
-<p>
-(d) \(\dot{w} = te^{-t},\quad w(0) = 2\)
-</p>
-
-
-    <p><strong>solucion: </strong></p>
-
-    <h2>(a)</h2>
-    <p>
-        Ecuación: \( \dot{x}(t) = t^2 - 2 \), &nbsp;&nbsp; Condición inicial: \( x(0) = 3 \)
-    </p>
-    <p>
-        \( x(t) = \int (t^2 - 2) \, dt = \frac{t^3}{3} - 2t + C \)
-    </p>
-    <p>
-        Usando la condición inicial: \( x(0) = 3 \Rightarrow C = 3 \)
-    </p>
-    <p>
-        <strong>Solución:</strong> \( \boxed{x(t) = \frac{t^3}{3} - 2t + 3} \)
+    <p> 
+    se llama una ecuación diferencial de 
+    <input type="text" name="respuesta_56" value="<?php echo $respuesta_56; ?>" size="12"> 
+    . Resolver tal ecuación implica más que manipulación 
+    algebraica; de hecho, aunque la ecuación misma involucra tres cantidades, \( x \), \( t \) y \( \dot{x} \), 
+    para encontrar una solución debemos identificar una 
+    <input type="text" name="respuesta_57" value="<?php echo $respuesta_57; ?>" size="12"> 
+    , definida únicamente en términos de la
+    <input type="text" name="respuesta_58" value="<?php echo $respuesta_58; ?>" size="22"> 
+    , que satisfaga la relación de (8.1.1) para todo 
+    <input type="text" name="respuesta_59" value="<?php echo $respuesta_59; ?>" size="2"> 
+    en algún intervalo 
+    abierto. Para muchas ecuaciones, encontrar una solución exacta no es posible y tenemos que recurrir a 
+    <input type="text" name="respuesta_60" value="<?php echo $respuesta_60; ?>" size="8">
+    . En este capítulo discutiremos técnicas para encontrar tanto soluciones aproximadas como, 
+    cuando sea posible, soluciones exactas a ecuaciones diferenciales.
     </p>
 
-    <h2>(b)</h2>
     <p>
-        Ecuación: \( \dot{x}(t) = -\sin(t) \), &nbsp;&nbsp; Condición inicial: \( x(0) = 2 \)
-    </p>
-    <p>
-        \( x(t) = \int -\sin(t) \, dt = \cos(t) + C \)
-    </p>
-    <p>
-        \( x(0) = 2 \Rightarrow C = 1 \)
-    </p>
-    <p>
-        <strong>Solución:</strong> \( \boxed{x(t) = \cos(t) + 1} \)
+    Ya hemos visto muchos ejemplos de ecuaciones diferenciales: en la Sección 4.8 cuando discutimos cómo encontrar 
+    la posición de un objeto que se mueve en línea recta dada su función de velocidad y su posición inicial, en 
+    la Sección 6.3 cuando discutimos modelos de crecimiento y decaimiento, en la Sección 7.3 cuando discutimos
+    el movimiento de un proyectil, y en la Sección 7.4 cuando consideramos el problema de dos cuerpos. De 
+    hecho, en muchos sentidos, el estudio de las ecuaciones diferenciales está en el corazón del cálculo.
+    Estudiar la interacción de cuerpos físicos en el mundo es estudiar las ramificaciones de leyes físicas
+    como la ley de la gravitación y la segunda ley del movimiento de Newton, leyes que con frecuencia conducen, 
+    como vimos en la Sección 7.4, a preguntas que involucran la solución de ecuaciones diferenciales. Newton fue
+    el primero en darse cuenta del poder del cálculo para resolver una vasta variedad de problemas físicos. 
     </p>
 
-    <h2>(c)</h2>
     <p>
-        Ecuación: \( \dot{y}(t) = \sqrt{t} \), &nbsp;&nbsp; Condición inicial: \( y(1) = -3 \)
-    </p>
-    <p>
-        \( y(t) = \int \sqrt{t} \, dt = \frac{2}{3} t^{3/2} + C \)
-    </p>
-    <p>
-        \( y(1) = -3 \Rightarrow C = -\frac{11}{3} \)
-    </p>
-    <p>
-        <strong>Solución:</strong> \( \boxed{y(t) = \frac{2}{3} t^{3/2} - \frac{11}{3}} \)
+    Los matemáticos que lo siguieron ampliaron y refinaron sus técnicas hasta que comenzaron a creer que todo el 
+    futuro del universo, así como su pasado, podía discernirse a partir del conocimiento de las posiciones y
+    velocidades actuales de todos los cuerpos físicos y de las fuerzas que actúan entre ellos. En tal visión del
+    mundo, nada está indeterminado en sí mismo; lo que nos parece indeterminado es simplemente un reflejo de nuestra 
+    ignorancia sobre las fuerzas involucradas. Como ejemplo de esta visión, escribiendo en 1795, Pierre Simon 
+    Laplace (1749-1827) dijo:
     </p>
 
-    <h2>(d)</h2>
     <p>
-        Ecuación: \( \dot{w}(t) = t e^{-t} \), &nbsp;&nbsp; Condición inicial: \( w(0) = 2 \)
+    Dada por un instante una inteligencia que pudiera comprender todas las fuerzas por las cuales la naturaleza 
+    está animada y la situación respectiva de los seres que la componen — una inteligencia suficientemente vasta 
+    como para someter estos datos a análisis — abarcaría en una misma fórmula los movimientos de los cuerpos más 
+    grandes del universo y los del átomo más ligero; para ella, nada sería incierto y el futuro, al igual que el 
+    pasado, estaría presente ante sus ojos.<sup>1</sup>
     </p>
+
     <p>
-        Usamos integración por partes:
-        <br>
-        \( \int t e^{-t} \, dt = -t e^{-t} - e^{-t} + C \)
+    Hoy sabemos más sobre los límites de nuestro conocimiento, pero, sin embargo, el estudio de las ecuaciones
+    diferenciales sigue siendo un componente clave de nuestra comprensión del universo.
     </p>
-    <p>
-        \( w(t) = -t e^{-t} - e^{-t} + C \)
-    </p>
-    <p>
-        \( w(0) = 2 \Rightarrow C = 3 \)
-    </p>
-    <p>
-        <strong>Solución:</strong> \( \boxed{w(t) = -t e^{-t} - e^{-t} + 3} \)
-    </p>
+
     </form>
 </div>
 
@@ -1577,217 +1766,8 @@ Cada pequeño paso en el método de Euler es esencialmente una aproximación lin
 
 
 <div class="seccion derecha">
-    <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-     <p>
-(2) Sea \( x(t) \), \( v(t) \) y \( a(t) \) la altura, velocidad y aceleración, respectivamente, de un objeto de masa \( m \) en caída libre cerca de la superficie de la Tierra. Sean \( x_0 \) y \( v_0 \) la altura y la velocidad, respectivamente, del objeto en el instante \( t_0 \).
-</p>
-
-<p>
-Si ignoramos los efectos de la resistencia del aire, la fuerza que actúa sobre el cuerpo es \( -mg \), donde \( g \) es una constante<br>
-(\( g = 9.8 \) metros/segundo<sup>2</sup> o \( g = 32 \) pies/segundo<sup>2</sup>).
-</p>
-
-<p>
-Así, por la segunda ley de Newton del movimiento,
-</p>
-
-<p>
-\[
--ma(t) = -mg
-\]
-</p>
-
-<p>
-y por lo tanto,
-</p>
-
-<p>
-\[
-a(t) = -g
-\]
-</p>
-
-<p>
-Demuestra que
-</p>
-
-<p>
-\[
-x(t) = -\frac{1}{2}gt^2 + v_0 t + x_0
-\]
-</p>
-
-    <strong>solucion</strong>    
-      <h5>Problema 8.1 (2)</h5>
-
-    <p>
-        Dado que \( a(t) = \ddot{x}(t) \) es la aceleración del cuerpo y la única fuerza que actúa es la gravedad,
-        por la segunda ley de Newton se tiene:
-    </p>
-
-    <p>
-        \[
-        F = ma(t) = -mg \Rightarrow a(t) = -g
-        \]
-    </p>
-
-    <h5>Paso 1: Obtener la velocidad</h5>
-   <p>
-        Cuando decimos:
-    </p>
-
-    <p>
-        \[
-        \frac{dv}{dt} = -g
-        \]
-    </p>
-    <p>
-         Como \( \frac{dv}{dt} = a(t) = -g \)
-    </p>    
-    <p>
-        Estamos diciendo que la derivada de la función velocidad \( v(t) \) respecto al tiempo \( t \) es igual a la constante \( -g \).
-    </p>
- 
-    <p>
-        Esto significa aplicar la integral a cada lado de la ecuación, con respecto a la variable \( t \):
-    </p>
-
-    <p>
-        \[
-        \int \frac{dv}{dt} \, dt = \int -g \, dt
-        \]
-    </p>
-
-    <p>
-        \[
-        v(t) = \int -g \, dt = -gt + C_1
-        \]
-    </p>
-
-    <p>
-        Usando la condición inicial \( v(0) = v_0 \):
-    </p>
-
-    <p>
-        \[
-        v_0 = -g(0) + C_1 \Rightarrow C_1 = v_0
-        \]
-
-        Por tanto:
-
-        \[
-        v(t) = -gt + v_0
-        \]
-    </p>
-
-    <h5>Paso 2: Obtener la posición</h5>
-    <p>
-        Como \( \frac{dx}{dt} = v(t) = -gt + v_0 \), integramos nuevamente:
-    </p>
-
-    <p>
-        \[
-        x(t) = \int (-gt + v_0) \, dt = -\frac{1}{2}gt^2 + v_0 t + C_2
-        \]
-    </p>
-
-    <p>
-        Usando la condición inicial \( x(0) = x_0 \):
-    </p>
-
-    <p>
-        \[
-        x_0 = -\frac{1}{2}g(0)^2 + v_0(0) + C_2 \Rightarrow C_2 = x_0
-        \]
-
-        Finalmente:
-
-        \[
-        \boxed{x(t) = -\frac{1}{2}gt^2 + v_0 t + x_0}
-        \]
-    </p>
-    <hr>
-    <strong>de donde sale el v(t): </strong>
-    <p>
-    \[
-    \int \frac{dv}{dt} \, dt \quad \text{"se cancela" el } dt \Rightarrow \int dv = v(t)
-    \]
-</p>
-
-    <hr>
-    <p>
-(3) Supón que un objeto es proyectado verticalmente hacia arriba desde una altura de 100 pies con una velocidad inicial de 20 pies por segundo. Usa el Problema 2 para responder las siguientes preguntas.
-</p>
-
-<p>
-(a) Encuentra \( x(t) \), la altura del objeto en el instante \( t \).
-</p>
-
-<p>
-(b) ¿En qué instante alcanza el objeto su altura máxima?
-</p>
-
-<p>
-(c) ¿Cuál es la altura máxima que alcanza el objeto?
-</p>
-
-<p>
-(d) ¿En qué instante el objeto golpeará el suelo?
-</p>
-
-
-         <h5>Problema 8.1 (3)</h5>
-
-  <p>Supón que un objeto es proyectado verticalmente hacia arriba desde una altura de 100 pies con una velocidad inicial de 20 pies por segundo.</p>
-
-  <h5>Datos:</h5>
-  <ul>
-    <li>Altura inicial: \( x_0 = 100 \)</li>
-    <li>Velocidad inicial: \( v_0 = 20 \)</li>
-    <li>Gravedad: \( g = 32 \, \text{ft/s}^2 \)</li>
-  </ul>
-
-  <p>Utilizamos la fórmula general del movimiento vertical bajo gravedad:</p>
-  <p>\[
-  x(t) = -\frac{1}{2}gt^2 + v_0 t + x_0
-  \]</p>
-
-  <h5>(a) Encuentra \( x(t) \)</h5>
-  <p>\[
-  x(t) = -16t^2 + 20t + 100
-  \]</p>
-
-  <h5>(b) ¿Cuándo alcanza la altura máxima?</h5>
-  <p>La altura máxima se alcanza cuando la velocidad es 0:</p>
-  <p>\[
-  v(t) = -gt + v_0 = 0 \Rightarrow -32t + 20 = 0 \Rightarrow t = \frac{5}{8} = 0.625 \, \text{segundos}
-  \]</p>
-
-  <h5>(c) ¿Cuál es la altura máxima?</h5>
-  <p>Sustituimos \( t = \frac{5}{8} \) en \( x(t) \):</p>
-  <p>\[
-  x\left(\frac{5}{8}\right) = -16\left(\frac{5}{8}\right)^2 + 20\left(\frac{5}{8}\right) + 100 = 106.25 \, \text{pies}
-  \]</p>
-
-  <h5>(d) ¿Cuándo tocará el suelo (es decir, cuando \( x(t) = 0 \))?</h5>
-  <p>Resolvemos la ecuación cuadrática:</p>
-  <p>\[
-  -16t^2 + 20t + 100 = 0 \Rightarrow 16t^2 - 20t - 100 = 0
-  \]</p>
-  <p>\[
-  t = \frac{20 \pm \sqrt{(-20)^2 - 4(16)(-100)}}{2(16)} = \frac{20 \pm \sqrt{6800}}{32}
-  \]</p>
-  <p>\[
-  \sqrt{6800} \approx 82.46 \Rightarrow t \approx \frac{102.46}{32} \approx 3.20 \, \text{segundos}
-  \]</p>
-
-  <h5>Resumen de respuestas:</h5>
-  <ul>
-    <li><strong>(a)</strong> \( x(t) = -16t^2 + 20t + 100 \)</li>
-    <li><strong>(b)</strong> \( t = \frac{5}{8} = 0.625 \, \text{segundos} \)</li>
-    <li><strong>(c)</strong> Altura máxima: \( 106.25 \, \text{pies} \)</li>
-    <li><strong>(d)</strong> Tiempo cuando toca el suelo: \( \approx 3.20 \, \text{segundos} \)</li>
-  </ul>
+    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+  
     </form>
 </div>
 
@@ -1796,7 +1776,7 @@ x(t) = -\frac{1}{2}gt^2 + v_0 t + x_0
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="cuarto.php"
+        href="segundo.php"
         role="button"
         width="50px"
         height="50px"

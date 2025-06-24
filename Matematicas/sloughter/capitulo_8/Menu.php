@@ -29,7 +29,10 @@
 </head>
 <body>
     <div class="centered-container">
-         <a class="btn" href=".\parte_1\index.php">subcapitulo 8.1</a>
-      </div>
+        <a class="btn" href=".\parte_1\index.php">subcapitulo 8.1  Numerical solutions</a>
+        <a class="btn" href=".\cuestionario_1\index.php">cuestionario_1 </a>
+        <br><br>
+        <a class="btn" href=".\parte_2\index.php">subcapitulo 8.2  Separation of variables</a>
+    </div>
 </body>
 </html>

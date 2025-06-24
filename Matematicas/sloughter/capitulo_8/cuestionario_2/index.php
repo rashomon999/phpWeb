@@ -1123,7 +1123,7 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
- <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../../../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -1136,7 +1136,7 @@ if ($respuesta_110 === '264') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 395vh;
+    height: 445vh;
     }
 </style>
  
@@ -1439,137 +1439,8 @@ function ocultarMensaje4() {
 </head>
 <body> 
 <div class="seccion izquierda">
-    <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-      <p>
-con la condición inicial \( v(0) = 0 \). La siguiente tabla da los resultados al aplicar el método de Runge-Kutta de segundo orden con tamaño de paso \( h = 0.1 \) en el intervalo \([0, 70]\):
-</p>
-
-<table border="1" cellpadding="6" cellspacing="0">
-  <thead>
-    <tr><th>t</th><th>\( v_{10t} \) (≈ \( v(t) \))</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>0</td><td>0.0</td></tr>
-    <tr><td>5</td><td>-125.9</td></tr>
-    <tr><td>10</td><td>-202.3</td></tr>
-    <tr><td>15</td><td>-248.6</td></tr>
-    <tr><td>20</td><td>-276.7</td></tr>
-    <tr><td>25</td><td>-293.7</td></tr>
-    <tr><td>30</td><td>-304.1</td></tr>
-    <tr><td>35</td><td>-310.3</td></tr>
-    <tr><td>40</td><td>-314.1</td></tr>
-    <tr><td>45</td><td>-316.4</td></tr>
-    <tr><td>50</td><td>-317.8</td></tr>
-    <tr><td>55</td><td>-318.7</td></tr>
-    <tr><td>60</td><td>-319.2</td></tr>
-    <tr><td>65</td><td>-319.5</td></tr>
-    <tr><td>70</td><td>-319.7</td></tr>
-  </tbody>
-</table>
-
-<p>
-A partir de la tabla de valores y de la gráfica de la solución aproximada en la Figura 8.1.3, parece que la velocidad del cuerpo se aproxima a un valor límite. Veremos en la siguiente sección que esto es efectivamente cierto. Para este ejemplo, la velocidad se aproximará a −320 pies por segundo. Llamamos a esta velocidad la <strong>velocidad terminal</strong> del cuerpo.
-</p>     
-<img src="../../../../img/figura3.png" alt="">
-
-    <hr>
-    <h2>Método de Euler y la Aproximación por la Recta Tangente</h2>
-<p>
-El método de Euler es conceptualmente similar a la <strong>aproximación por la recta tangente</strong>, que utiliza la derivada en un solo punto para aproximar el valor de una función en un entorno cercano. Sin embargo, a diferencia de la aproximación por la recta tangente tradicional —que emplea una <em>pendiente fija</em> tomada únicamente desde el punto inicial—, el método de Euler actualiza continuamente la pendiente en cada paso.
-</p>
-<p>
-Es decir, por cada incremento \( h \) a lo largo del eje \( t \) (o eje \( x \)), el método de Euler recalcula la pendiente usando la ecuación diferencial \( \dot{x} = f(x, t) \). Al hacer esto, “sigue” la curva más de cerca, paso a paso, y da como resultado una mejor aproximación en un intervalo.
-</p>
-<p>
-Cada pequeño paso en el método de Euler es esencialmente una aproximación lineal local (por una recta tangente), pero <strong>ajusta la pendiente en cada punto</strong>, no solo una vez. Este proceso reduce la acumulación de errores en comparación con una única aproximación lineal y nos permite trazar iterativamente una curva solución aproximada.
-</p>
- <hr>
-
-
-     <h1>Problemas 8.1 (1)</h1>
-     <p>
-(1) Resuelve cada una de las siguientes ecuaciones diferenciales usando la condición inicial dada.
-</p>
-
-<p>
-(a) \(\dot{x} = t^2 - 2,\quad x(0) = 3\)
-</p>
-
-<p>
-(b) \(\dot{x} = -\sin(t),\quad x(0) = 2\)
-</p>
-
-<p>
-(c) \(\dot{y} = \sqrt{t},\quad y(1) = -3\)
-</p>
-
-<p>
-(d) \(\dot{w} = te^{-t},\quad w(0) = 2\)
-</p>
-
-
-    <p><strong>solucion: </strong></p>
-
-    <h2>(a)</h2>
-    <p>
-        Ecuación: \( \dot{x}(t) = t^2 - 2 \), &nbsp;&nbsp; Condición inicial: \( x(0) = 3 \)
-    </p>
-    <p>
-        \( x(t) = \int (t^2 - 2) \, dt = \frac{t^3}{3} - 2t + C \)
-    </p>
-    <p>
-        Usando la condición inicial: \( x(0) = 3 \Rightarrow C = 3 \)
-    </p>
-    <p>
-        <strong>Solución:</strong> \( \boxed{x(t) = \frac{t^3}{3} - 2t + 3} \)
-    </p>
-
-    <h2>(b)</h2>
-    <p>
-        Ecuación: \( \dot{x}(t) = -\sin(t) \), &nbsp;&nbsp; Condición inicial: \( x(0) = 2 \)
-    </p>
-    <p>
-        \( x(t) = \int -\sin(t) \, dt = \cos(t) + C \)
-    </p>
-    <p>
-        \( x(0) = 2 \Rightarrow C = 1 \)
-    </p>
-    <p>
-        <strong>Solución:</strong> \( \boxed{x(t) = \cos(t) + 1} \)
-    </p>
-
-    <h2>(c)</h2>
-    <p>
-        Ecuación: \( \dot{y}(t) = \sqrt{t} \), &nbsp;&nbsp; Condición inicial: \( y(1) = -3 \)
-    </p>
-    <p>
-        \( y(t) = \int \sqrt{t} \, dt = \frac{2}{3} t^{3/2} + C \)
-    </p>
-    <p>
-        \( y(1) = -3 \Rightarrow C = -\frac{11}{3} \)
-    </p>
-    <p>
-        <strong>Solución:</strong> \( \boxed{y(t) = \frac{2}{3} t^{3/2} - \frac{11}{3}} \)
-    </p>
-
-    <h2>(d)</h2>
-    <p>
-        Ecuación: \( \dot{w}(t) = t e^{-t} \), &nbsp;&nbsp; Condición inicial: \( w(0) = 2 \)
-    </p>
-    <p>
-        Usamos integración por partes:
-        <br>
-        \( \int t e^{-t} \, dt = -t e^{-t} - e^{-t} + C \)
-    </p>
-    <p>
-        \( w(t) = -t e^{-t} - e^{-t} + C \)
-    </p>
-    <p>
-        \( w(0) = 2 \Rightarrow C = 3 \)
-    </p>
-    <p>
-        <strong>Solución:</strong> \( \boxed{w(t) = -t e^{-t} - e^{-t} + 3} \)
-    </p>
+    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    
     </form>
 </div>
 
@@ -1577,217 +1448,8 @@ Cada pequeño paso en el método de Euler es esencialmente una aproximación lin
 
 
 <div class="seccion derecha">
-    <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-     <p>
-(2) Sea \( x(t) \), \( v(t) \) y \( a(t) \) la altura, velocidad y aceleración, respectivamente, de un objeto de masa \( m \) en caída libre cerca de la superficie de la Tierra. Sean \( x_0 \) y \( v_0 \) la altura y la velocidad, respectivamente, del objeto en el instante \( t_0 \).
-</p>
-
-<p>
-Si ignoramos los efectos de la resistencia del aire, la fuerza que actúa sobre el cuerpo es \( -mg \), donde \( g \) es una constante<br>
-(\( g = 9.8 \) metros/segundo<sup>2</sup> o \( g = 32 \) pies/segundo<sup>2</sup>).
-</p>
-
-<p>
-Así, por la segunda ley de Newton del movimiento,
-</p>
-
-<p>
-\[
--ma(t) = -mg
-\]
-</p>
-
-<p>
-y por lo tanto,
-</p>
-
-<p>
-\[
-a(t) = -g
-\]
-</p>
-
-<p>
-Demuestra que
-</p>
-
-<p>
-\[
-x(t) = -\frac{1}{2}gt^2 + v_0 t + x_0
-\]
-</p>
-
-    <strong>solucion</strong>    
-      <h5>Problema 8.1 (2)</h5>
-
-    <p>
-        Dado que \( a(t) = \ddot{x}(t) \) es la aceleración del cuerpo y la única fuerza que actúa es la gravedad,
-        por la segunda ley de Newton se tiene:
-    </p>
-
-    <p>
-        \[
-        F = ma(t) = -mg \Rightarrow a(t) = -g
-        \]
-    </p>
-
-    <h5>Paso 1: Obtener la velocidad</h5>
-   <p>
-        Cuando decimos:
-    </p>
-
-    <p>
-        \[
-        \frac{dv}{dt} = -g
-        \]
-    </p>
-    <p>
-         Como \( \frac{dv}{dt} = a(t) = -g \)
-    </p>    
-    <p>
-        Estamos diciendo que la derivada de la función velocidad \( v(t) \) respecto al tiempo \( t \) es igual a la constante \( -g \).
-    </p>
- 
-    <p>
-        Esto significa aplicar la integral a cada lado de la ecuación, con respecto a la variable \( t \):
-    </p>
-
-    <p>
-        \[
-        \int \frac{dv}{dt} \, dt = \int -g \, dt
-        \]
-    </p>
-
-    <p>
-        \[
-        v(t) = \int -g \, dt = -gt + C_1
-        \]
-    </p>
-
-    <p>
-        Usando la condición inicial \( v(0) = v_0 \):
-    </p>
-
-    <p>
-        \[
-        v_0 = -g(0) + C_1 \Rightarrow C_1 = v_0
-        \]
-
-        Por tanto:
-
-        \[
-        v(t) = -gt + v_0
-        \]
-    </p>
-
-    <h5>Paso 2: Obtener la posición</h5>
-    <p>
-        Como \( \frac{dx}{dt} = v(t) = -gt + v_0 \), integramos nuevamente:
-    </p>
-
-    <p>
-        \[
-        x(t) = \int (-gt + v_0) \, dt = -\frac{1}{2}gt^2 + v_0 t + C_2
-        \]
-    </p>
-
-    <p>
-        Usando la condición inicial \( x(0) = x_0 \):
-    </p>
-
-    <p>
-        \[
-        x_0 = -\frac{1}{2}g(0)^2 + v_0(0) + C_2 \Rightarrow C_2 = x_0
-        \]
-
-        Finalmente:
-
-        \[
-        \boxed{x(t) = -\frac{1}{2}gt^2 + v_0 t + x_0}
-        \]
-    </p>
-    <hr>
-    <strong>de donde sale el v(t): </strong>
-    <p>
-    \[
-    \int \frac{dv}{dt} \, dt \quad \text{"se cancela" el } dt \Rightarrow \int dv = v(t)
-    \]
-</p>
-
-    <hr>
-    <p>
-(3) Supón que un objeto es proyectado verticalmente hacia arriba desde una altura de 100 pies con una velocidad inicial de 20 pies por segundo. Usa el Problema 2 para responder las siguientes preguntas.
-</p>
-
-<p>
-(a) Encuentra \( x(t) \), la altura del objeto en el instante \( t \).
-</p>
-
-<p>
-(b) ¿En qué instante alcanza el objeto su altura máxima?
-</p>
-
-<p>
-(c) ¿Cuál es la altura máxima que alcanza el objeto?
-</p>
-
-<p>
-(d) ¿En qué instante el objeto golpeará el suelo?
-</p>
-
-
-         <h5>Problema 8.1 (3)</h5>
-
-  <p>Supón que un objeto es proyectado verticalmente hacia arriba desde una altura de 100 pies con una velocidad inicial de 20 pies por segundo.</p>
-
-  <h5>Datos:</h5>
-  <ul>
-    <li>Altura inicial: \( x_0 = 100 \)</li>
-    <li>Velocidad inicial: \( v_0 = 20 \)</li>
-    <li>Gravedad: \( g = 32 \, \text{ft/s}^2 \)</li>
-  </ul>
-
-  <p>Utilizamos la fórmula general del movimiento vertical bajo gravedad:</p>
-  <p>\[
-  x(t) = -\frac{1}{2}gt^2 + v_0 t + x_0
-  \]</p>
-
-  <h5>(a) Encuentra \( x(t) \)</h5>
-  <p>\[
-  x(t) = -16t^2 + 20t + 100
-  \]</p>
-
-  <h5>(b) ¿Cuándo alcanza la altura máxima?</h5>
-  <p>La altura máxima se alcanza cuando la velocidad es 0:</p>
-  <p>\[
-  v(t) = -gt + v_0 = 0 \Rightarrow -32t + 20 = 0 \Rightarrow t = \frac{5}{8} = 0.625 \, \text{segundos}
-  \]</p>
-
-  <h5>(c) ¿Cuál es la altura máxima?</h5>
-  <p>Sustituimos \( t = \frac{5}{8} \) en \( x(t) \):</p>
-  <p>\[
-  x\left(\frac{5}{8}\right) = -16\left(\frac{5}{8}\right)^2 + 20\left(\frac{5}{8}\right) + 100 = 106.25 \, \text{pies}
-  \]</p>
-
-  <h5>(d) ¿Cuándo tocará el suelo (es decir, cuando \( x(t) = 0 \))?</h5>
-  <p>Resolvemos la ecuación cuadrática:</p>
-  <p>\[
-  -16t^2 + 20t + 100 = 0 \Rightarrow 16t^2 - 20t - 100 = 0
-  \]</p>
-  <p>\[
-  t = \frac{20 \pm \sqrt{(-20)^2 - 4(16)(-100)}}{2(16)} = \frac{20 \pm \sqrt{6800}}{32}
-  \]</p>
-  <p>\[
-  \sqrt{6800} \approx 82.46 \Rightarrow t \approx \frac{102.46}{32} \approx 3.20 \, \text{segundos}
-  \]</p>
-
-  <h5>Resumen de respuestas:</h5>
-  <ul>
-    <li><strong>(a)</strong> \( x(t) = -16t^2 + 20t + 100 \)</li>
-    <li><strong>(b)</strong> \( t = \frac{5}{8} = 0.625 \, \text{segundos} \)</li>
-    <li><strong>(c)</strong> Altura máxima: \( 106.25 \, \text{pies} \)</li>
-    <li><strong>(d)</strong> Tiempo cuando toca el suelo: \( \approx 3.20 \, \text{segundos} \)</li>
-  </ul>
+    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+  
     </form>
 </div>
 
@@ -1796,7 +1458,7 @@ x(t) = -\frac{1}{2}gt^2 + v_0 t + x_0
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="cuarto.php"
+        href="segundo.php"
         role="button"
         width="50px"
         height="50px"
