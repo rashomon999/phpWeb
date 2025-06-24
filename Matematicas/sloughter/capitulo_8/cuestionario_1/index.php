@@ -668,7 +668,7 @@ if ($respuesta_60 === 'aproximaciones') {
 }
 
  $respuesta_61 = isset($_POST['respuesta_61']) ? $_POST['respuesta_61'] : '';
-if ($respuesta_61 === '126') { 
+if ($respuesta_61 === 'x_0') { 
     $verificar_61 = "correcto";
 } elseif ($respuesta_61 === '') {
     $verificar_61 = '';
@@ -677,7 +677,7 @@ if ($respuesta_61 === '126') {
 }
 
  $respuesta_62 = isset($_POST['respuesta_62']) ? $_POST['respuesta_62'] : '';
-if ($respuesta_62 === '144') { 
+if ($respuesta_62 === 'x(t)') { 
     $verificar_62 = "correcto";
 } elseif ($respuesta_62 === '') {
     $verificar_62 = '';
@@ -686,7 +686,7 @@ if ($respuesta_62 === '144') {
 }
 
  $respuesta_63 = isset($_POST['respuesta_63']) ? $_POST['respuesta_63'] : '';
-if ($respuesta_63 === '162') { 
+if ($respuesta_63 === 'g(t)') { 
     $verificar_63 = "correcto";
 } elseif ($respuesta_63 === '') {
     $verificar_63 = '';
@@ -695,7 +695,7 @@ if ($respuesta_63 === '162') {
 }
 
  $respuesta_64 = isset($_POST['respuesta_64']) ? $_POST['respuesta_64'] : '';
-if ($respuesta_64 === '180') { 
+if ($respuesta_64 === 't') { 
     $verificar_64 = "correcto";
 } elseif ($respuesta_64 === '') {
     $verificar_64 = '';
@@ -703,26 +703,30 @@ if ($respuesta_64 === '180') {
     $verificar_64 = "incorrecto";
 }
 
- $respuesta_65 = isset($_POST['respuesta_65']) ? $_POST['respuesta_65'] : '';
-if ($respuesta_65 === '198') { 
+$respuesta_65 = isset($_POST['respuesta_65']) ? $_POST['respuesta_65'] : '';
+$respuesta_65_dos = str_replace(' ', '', $respuesta_65); // Eliminar espacios en blanco para comparación
+$respuesta_65_dos = str_replace([' ', '\,'], '', $respuesta_65); // Eliminar espacios y "\,"
+
+if ($respuesta_65_dos === '\int_{t_0}^{t}\dot{x}(s)ds=\int_{t_0}^{t}g(s)ds') { 
     $verificar_65 = "correcto";
-} elseif ($respuesta_65 === '') {
+} elseif ($respuesta_65_dos === '') {
     $verificar_65 = '';
 } else {
     $verificar_65 = "incorrecto";
 }
 
- $respuesta_66 = isset($_POST['respuesta_66']) ? $_POST['respuesta_66'] : '';
-if ($respuesta_66 === '216') { 
+$respuesta_66 = isset($_POST['respuesta_66']) ? $_POST['respuesta_66'] : '';
+$respuesta_66_dos = str_replace([' ', '\,'], '', $respuesta_66); // Eliminar espacios y "\,"
+if ($respuesta_66_dos === 'x(t)=x(t_0)+\int_{t_0}^{t}g(s)ds') { 
     $verificar_66 = "correcto";
-} elseif ($respuesta_66 === '') {
+} elseif ($respuesta_66_dos === '') {
     $verificar_66 = '';
 } else {
     $verificar_66 = "incorrecto";
 }
 
  $respuesta_67 = isset($_POST['respuesta_67']) ? $_POST['respuesta_67'] : '';
-if ($respuesta_67 === '38') { 
+if ($respuesta_67 === '5') { 
     $verificar_67 = "correcto";
 } elseif ($respuesta_67 === '') {
     $verificar_67 = '';
@@ -731,7 +735,7 @@ if ($respuesta_67 === '38') {
 }
 
  $respuesta_68 = isset($_POST['respuesta_68']) ? $_POST['respuesta_68'] : '';
-if ($respuesta_68 === '57') { 
+if ($respuesta_68 === '5 no es') { 
     $verificar_68 = "correcto";
 } elseif ($respuesta_68 === '') {
     $verificar_68 = '';
@@ -740,7 +744,7 @@ if ($respuesta_68 === '57') {
 }
 
  $respuesta_69 = isset($_POST['respuesta_69']) ? $_POST['respuesta_69'] : '';
-if ($respuesta_69 === '76') { 
+if ($respuesta_69 === 'x') { 
     $verificar_69 = "correcto";
 } elseif ($respuesta_69 === '') {
     $verificar_69 = '';
@@ -749,7 +753,7 @@ if ($respuesta_69 === '76') {
 }
 
  $respuesta_70 = isset($_POST['respuesta_70']) ? $_POST['respuesta_70'] : '';
-if ($respuesta_70 === '95') { 
+if ($respuesta_70 === 't') { 
     $verificar_70 = "correcto";
 } elseif ($respuesta_70 === '') {
     $verificar_70 = '';
@@ -758,7 +762,7 @@ if ($respuesta_70 === '95') {
 }
 
  $respuesta_71 = isset($_POST['respuesta_71']) ? $_POST['respuesta_71'] : '';
-if ($respuesta_71 === '114') { 
+if ($respuesta_71 === 'x') { 
     $verificar_71 = "correcto";
 } elseif ($respuesta_71 === '') {
     $verificar_71 = '';
@@ -767,7 +771,7 @@ if ($respuesta_71 === '114') {
 }
 
  $respuesta_72 = isset($_POST['respuesta_72']) ? $_POST['respuesta_72'] : '';
-if ($respuesta_72 === '133') { 
+if ($respuesta_72 === 'integrar') { 
     $verificar_72 = "correcto";
 } elseif ($respuesta_72 === '') {
     $verificar_72 = '';
@@ -776,7 +780,7 @@ if ($respuesta_72 === '133') {
 }
 
  $respuesta_73 = isset($_POST['respuesta_73']) ? $_POST['respuesta_73'] : '';
-if ($respuesta_73 === '152') { 
+if ($respuesta_73 === 'aproximacion') { 
     $verificar_73 = "correcto";
 } elseif ($respuesta_73 === '') {
     $verificar_73 = '';
@@ -785,7 +789,7 @@ if ($respuesta_73 === '152') {
 }
 
  $respuesta_74 = isset($_POST['respuesta_74']) ? $_POST['respuesta_74'] : '';
-if ($respuesta_74 === '171') { 
+if ($respuesta_74 === 'desconocida') { 
     $verificar_74 = "correcto";
 } elseif ($respuesta_74 === '') {
     $verificar_74 = '';
@@ -794,7 +798,7 @@ if ($respuesta_74 === '171') {
 }
 
  $respuesta_75 = isset($_POST['respuesta_75']) ? $_POST['respuesta_75'] : '';
-if ($respuesta_75 === '190') { 
+if ($respuesta_75 === 'afin') { 
     $verificar_75 = "correcto";
 } elseif ($respuesta_75 === '') {
     $verificar_75 = '';
@@ -812,25 +816,27 @@ if ($respuesta_76 === '209') {
 }
 
  $respuesta_77 = isset($_POST['respuesta_77']) ? $_POST['respuesta_77'] : '';
-if ($respuesta_77 === '228') { 
+$respuesta_77_dos = str_replace([' ', '\,'], '', $respuesta_77); // Eliminar espacios y "\,"
+if ($respuesta_77_dos === 'T(t)=x_0+\dot{x}(t_0)(t-t_0)') { 
     $verificar_77 = "correcto";
-} elseif ($respuesta_77 === '') {
+} elseif ($respuesta_77_dos === '') {
     $verificar_77 = '';
 } else {
     $verificar_77 = "incorrecto";
 }
 
  $respuesta_78 = isset($_POST['respuesta_78']) ? $_POST['respuesta_78'] : '';
-if ($respuesta_78 === '40') { 
+$respuesta_78_dos = str_replace([' ', '\,'], '', $respuesta_78); // Eliminar espacios y "\,"
+if ($respuesta_78_dos === 'x_1=x_0+hf(x_0,t_0)') { 
     $verificar_78 = "correcto";
-} elseif ($respuesta_78 === '') {
+} elseif ($respuesta_78_dos === '') {
     $verificar_78 = '';
 } else {
     $verificar_78 = "incorrecto";
 }
 
  $respuesta_79 = isset($_POST['respuesta_79']) ? $_POST['respuesta_79'] : '';
-if ($respuesta_79 === '60') { 
+if ($respuesta_79 === 'x(t_0+h)') { 
     $verificar_79 = "correcto";
 } elseif ($respuesta_79 === '') {
     $verificar_79 = '';
@@ -839,7 +845,7 @@ if ($respuesta_79 === '60') {
 }
 
  $respuesta_80 = isset($_POST['respuesta_80']) ? $_POST['respuesta_80'] : '';
-if ($respuesta_80 === '80') { 
+if ($respuesta_80 === 'h') { 
     $verificar_80 = "correcto";
 } elseif ($respuesta_80 === '') {
     $verificar_80 = '';
@@ -848,7 +854,7 @@ if ($respuesta_80 === '80') {
 }
 
  $respuesta_81 = isset($_POST['respuesta_81']) ? $_POST['respuesta_81'] : '';
-if ($respuesta_81 === '100') { 
+if ($respuesta_81 === 'x_1') { 
     $verificar_81 = "correcto";
 } elseif ($respuesta_81 === '') {
     $verificar_81 = '';
@@ -857,7 +863,7 @@ if ($respuesta_81 === '100') {
 }
 
  $respuesta_82 = isset($_POST['respuesta_82']) ? $_POST['respuesta_82'] : '';
-if ($respuesta_82 === '120') { 
+if ($respuesta_82 === 't_0+kh') { 
     $verificar_82 = "correcto";
 } elseif ($respuesta_82 === '') {
     $verificar_82 = '';
@@ -866,7 +872,7 @@ if ($respuesta_82 === '120') {
 }
 
  $respuesta_83 = isset($_POST['respuesta_83']) ? $_POST['respuesta_83'] : '';
-if ($respuesta_83 === '140') { 
+if ($respuesta_83 === 'x(t_0)') { 
     $verificar_83 = "correcto";
 } elseif ($respuesta_83 === '') {
     $verificar_83 = '';
@@ -875,7 +881,7 @@ if ($respuesta_83 === '140') {
 }
 
  $respuesta_84 = isset($_POST['respuesta_84']) ? $_POST['respuesta_84'] : '';
-if ($respuesta_84 === '160') { 
+if ($respuesta_84 === '0') { 
     $verificar_84 = "correcto";
 } elseif ($respuesta_84 === '') {
     $verificar_84 = '';
@@ -884,7 +890,7 @@ if ($respuesta_84 === '160') {
 }
 
  $respuesta_85 = isset($_POST['respuesta_85']) ? $_POST['respuesta_85'] : '';
-if ($respuesta_85 === '180') { 
+if ($respuesta_85 === 't_1') { 
     $verificar_85 = "correcto";
 } elseif ($respuesta_85 === '') {
     $verificar_85 = '';
@@ -893,7 +899,7 @@ if ($respuesta_85 === '180') {
 }
 
  $respuesta_86 = isset($_POST['respuesta_86']) ? $_POST['respuesta_86'] : '';
-if ($respuesta_86 === '200') { 
+if ($respuesta_86 === 's_k+1' || $respuesta_86 === 's_{k+1}') { 
     $verificar_86 = "correcto";
 } elseif ($respuesta_86 === '') {
     $verificar_86 = '';
@@ -902,34 +908,38 @@ if ($respuesta_86 === '200') {
 }
 
  $respuesta_87 = isset($_POST['respuesta_87']) ? $_POST['respuesta_87'] : '';
-if ($respuesta_87 === '220') { 
+$respuesta_87_dos = str_replace([' ', '\,'], '', $respuesta_87); // Eliminar espacios y "\,"
+if ($respuesta_87_dos === 'x(t_0)=x_0') { 
     $verificar_87 = "correcto";
-} elseif ($respuesta_87 === '') {
+} elseif ($respuesta_87_dos === '') {
     $verificar_87 = '';
 } else {
     $verificar_87 = "incorrecto";
 }
 
  $respuesta_88 = isset($_POST['respuesta_88']) ? $_POST['respuesta_88'] : '';
-if ($respuesta_88 === '240') { 
+$respuesta_88_dos = str_replace([' ', '\,'], '', $respuesta_88); // Eliminar espacios y "\,"
+if ($respuesta_88_dos === 't_0+nh geqt_1') { 
     $verificar_88 = "correcto";
-} elseif ($respuesta_88 === '') {
+} elseif ($respuesta_88_dos === '') {
     $verificar_88 = '';
 } else {
     $verificar_88 = "incorrecto";
 }
+ 
 
  $respuesta_89 = isset($_POST['respuesta_89']) ? $_POST['respuesta_89'] : '';
-if ($respuesta_89 === '42') { 
+$respuesta_89_dos = str_replace([' ', '\,'], '', $respuesta_89); // Eliminar espacios y "\,"
+if ($respuesta_89_dos === 'x_{k+1}=x_k+hf(x_k,s_k)') { 
     $verificar_89 = "correcto";
-} elseif ($respuesta_89 === '') {
+} elseif ($respuesta_89_dos === '') {
     $verificar_89 = '';
 } else {
     $verificar_89 = "incorrecto";
 }
 
  $respuesta_90 = isset($_POST['respuesta_90']) ? $_POST['respuesta_90'] : '';
-if ($respuesta_90 === '63') { 
+if ($respuesta_90 === 'diferencias') { 
     $verificar_90 = "correcto";
 } elseif ($respuesta_90 === '') {
     $verificar_90 = '';
@@ -1204,7 +1214,7 @@ function actualizarFormula() {
 function actualizarFormula2() {
     // Obtener los valores de los inputs
    
-    var f = document.getElementById('respuesta_13').value || "";
+    var f = document.getElementById('respuesta_65').value || "";
   
     // Construir la fórmula dinámica
     var formula = ` \\ ${f}  \\, `;
@@ -1223,7 +1233,7 @@ function actualizarFormula2() {
 function actualizarFormula3() {
     // Obtener los valores de los inputs
    
-    var f = document.getElementById('respuesta_27').value || "";
+    var f = document.getElementById('respuesta_66').value || "";
  
 
 
@@ -1241,7 +1251,7 @@ function actualizarFormula3() {
 
 function actualizarFormula4() {
     // Obtener los valores de los inputs
-    var f = document.getElementById('respuesta_29').value || "";
+    var f = document.getElementById('respuesta_77').value || "";
    
 
     // Construir la fórmula dinámica
@@ -1258,7 +1268,7 @@ function actualizarFormula4() {
 
 function actualizarFormula5() {
     // Obtener los valores de los inputs
-    var f = document.getElementById('respuesta_30').value || "";
+    var f = document.getElementById('respuesta_78').value || "";
   
 
     // Construir la fórmula dinámica
@@ -1276,13 +1286,13 @@ function actualizarFormula5() {
 
 function actualizarFormula6() {
     // Obtener los valores de los inputs
-    var f = document.getElementById('respuesta_6').value || "";
+    var f = document.getElementById('respuesta_87').value || "";
   
 
     // Construir la fórmula dinámica
     var formula = ` \\ ${f}  \\, `;
     // Actualizar el contenido de la fórmula en el DOM
-    document.getElementById('formula6').innerHTML = `$$ ${formula} $$`;
+    document.getElementById('formula6').innerHTML = `\\( ${formula} \\)`;
 
     // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
@@ -1293,13 +1303,13 @@ function actualizarFormula6() {
 
 function actualizarFormula7() {
     // Obtener los valores de los inputs
-    var f = document.getElementById('respuesta_7').value || "";
+    var f = document.getElementById('respuesta_88').value || "";
   
 
     // Construir la fórmula dinámica
     var formula = ` \\ ${f}  \\, `;
     // Actualizar el contenido de la fórmula en el DOM
-    document.getElementById('formula7').innerHTML = `$$ ${formula} $$`;
+    document.getElementById('formula7').innerHTML = `\\( ${formula} \\)`;
 
     // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
@@ -1309,11 +1319,11 @@ function actualizarFormula7() {
 
 function actualizarFormula8() {
     // Obtener los valores de los inputs
-    var f = document.getElementById('respuesta_8').value || "";
+    var f = document.getElementById('respuesta_89').value || "";
   
 
     // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
+    var formula = ` \\ ${f} \\,\\,\\,  \\tag{8.1.12} \\, `;
     // Actualizar el contenido de la fórmula en el DOM
     document.getElementById('formula8').innerHTML = `$$ ${formula} $$`;
 
@@ -1681,7 +1691,7 @@ function ocultarMensaje4() {
     <?php echo $verificar_48 ?>
     <hr>
 
-    <h1>8.1 Soluciones numéricas</h1>
+    <h5>8.1 Soluciones numéricas</h5>
 
     <p>
     Si 
@@ -1725,40 +1735,103 @@ function ocultarMensaje4() {
     cuando sea posible, soluciones exactas a ecuaciones diferenciales.
     </p>
 
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_45 ?>
+    <?php echo $verificar_46 ?>
+    <?php echo $verificar_47 ?>
+    <?php echo $verificar_48 ?>
+    <?php echo $verificar_49 ?>
+    <?php echo $verificar_50 ?>
+    <?php echo $verificar_51 ?>
+    <?php echo $verificar_52 ?>
+    <?php echo $verificar_53 ?>
+    <?php echo $verificar_54 ?>
+    <?php echo $verificar_55 ?>
+    <?php echo $verificar_56 ?>
+    <?php echo $verificar_57 ?>
+    <?php echo $verificar_58 ?>
+    <?php echo $verificar_59 ?>
+    <?php echo $verificar_60 ?>
+    
+    <hr>
+
     <p>
-    Ya hemos visto muchos ejemplos de ecuaciones diferenciales: en la Sección 4.8 cuando discutimos cómo encontrar 
-    la posición de un objeto que se mueve en línea recta dada su función de velocidad y su posición inicial, en 
-    la Sección 6.3 cuando discutimos modelos de crecimiento y decaimiento, en la Sección 7.3 cuando discutimos
-    el movimiento de un proyectil, y en la Sección 7.4 cuando consideramos el problema de dos cuerpos. De 
-    hecho, en muchos sentidos, el estudio de las ecuaciones diferenciales está en el corazón del cálculo.
-    Estudiar la interacción de cuerpos físicos en el mundo es estudiar las ramificaciones de leyes físicas
-    como la ley de la gravitación y la segunda ley del movimiento de Newton, leyes que con frecuencia conducen, 
-    como vimos en la Sección 7.4, a preguntas que involucran la solución de ecuaciones diferenciales. Newton fue
-    el primero en darse cuenta del poder del cálculo para resolver una vasta variedad de problemas físicos. 
+    Para comenzar nuestro estudio, consideremos la ecuación
+    </p>
+
+    <p style="text-align: center;">
+    \[\dot{x}(t) = f(x(t), t) \tag{8.1.2}\]
     </p>
 
     <p>
-    Los matemáticos que lo siguieron ampliaron y refinaron sus técnicas hasta que comenzaron a creer que todo el 
-    futuro del universo, así como su pasado, podía discernirse a partir del conocimiento de las posiciones y
-    velocidades actuales de todos los cuerpos físicos y de las fuerzas que actúan entre ellos. En tal visión del
-    mundo, nada está indeterminado en sí mismo; lo que nos parece indeterminado es simplemente un reflejo de nuestra 
-    ignorancia sobre las fuerzas involucradas. Como ejemplo de esta visión, escribiendo en 1795, Pierre Simon 
-    Laplace (1749-1827) dijo:
+    con la condición inicial \( x(t_0) =  \)
+    <input type="text" name="respuesta_61" value="<?php echo $respuesta_61; ?>" size="8">
+    . Para simplificar la notación, con frecuencia omitiremos la
+    variable independiente al referirnos a 
+    <input type="text" name="respuesta_62" value="<?php echo $respuesta_62; ?>" size="8">
+    y escribiremos simplemente
+    </p>
+
+    <p style="text-align: center;">
+    \[\dot{x} = f(x, t). \tag{8.1.3}\]
     </p>
 
     <p>
-    Dada por un instante una inteligencia que pudiera comprender todas las fuerzas por las cuales la naturaleza 
-    está animada y la situación respectiva de los seres que la componen — una inteligencia suficientemente vasta 
-    como para someter estos datos a análisis — abarcaría en una misma fórmula los movimientos de los cuerpos más 
-    grandes del universo y los del átomo más ligero; para ella, nada sería incierto y el futuro, al igual que el 
-    pasado, estaría presente ante sus ojos.<sup>1</sup>
+    Ahora bien, si \( f(x, t) \) depende solo del valor de \( t \), es decir, si \( f(x, t) =  \) 
+    <input type="text" name="respuesta_63" value="<?php echo $respuesta_63; ?>" size="8">
+    para
+    todos los valores de \( x \), donde \( g \) es una función únicamente de 
+    <input type="text" name="respuesta_64" value="<?php echo $respuesta_64; ?>" size="8">
+    , entonces podemos
+    resolver (8.1.3) mediante integración. Es decir, al integrar ambos lados de (8.1.3) obtenemos
+    </p>
+ 
+ 
+
+    <span id="formula2">
+            \(    {8.1.4} \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_65" size="50" id="respuesta_65" oninput="actualizarFormula2()" 
+    value="<?php echo $respuesta_65?>"   >
+  
+    
+    <p>
+    Sustituyendo
+    </p>
+
+    <p style="text-align: center;">
+    \[\int_{t_0}^{t} \dot{x}(s)\, ds = x(t) - x(t_0)\]
     </p>
 
     <p>
-    Hoy sabemos más sobre los límites de nuestro conocimiento, pero, sin embargo, el estudio de las ecuaciones
-    diferenciales sigue siendo un componente clave de nuestra comprensión del universo.
+    en (8.1.4), tenemos
     </p>
 
+  
+    
+    <span id="formula3">
+            \(    {8.1.5} \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_66" size="50" id="respuesta_66" oninput="actualizarFormula3()" 
+    value="<?php echo $respuesta_66?>"   >
+
+
+    <p>
+    Suponiendo que podemos calcular la integral definida, lo cual, dado que \( g \) es continua, al menos 
+    siempre puede hacerse numéricamente, hemos resuelto la ecuación diferencial. Este es el tipo de ecuación
+    diferencial que consideramos en la Sección 4.8.
+    </p>
+
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_61 ?>
+    <?php echo $verificar_62 ?>
+    <?php echo $verificar_63 ?>
+    <?php echo $verificar_64 ?>
+    <?php echo $verificar_65 ?>
+    <?php echo $verificar_66 ?>
+    <hr>
     </form>
 </div>
 
@@ -1767,7 +1840,276 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-  
+      <h2>Ejemplo 8.1.1</h2>
+
+<p>
+Consideremos la ecuación
+</p>
+
+<p style="text-align: center;">
+\[\dot{x} = 4 \sin(3t)\]
+</p>
+
+<p>
+con la condición inicial \( x(0) = 5 \). Entonces
+</p>
+
+<p style="text-align: center;">
+\(
+x(t) = \) 
+ <input type="text" name="respuesta_67" value="<?php echo $respuesta_67; ?>" size="8">
+\( + \int_{0}^{t} 4 \sin(3s)\, ds  \)
+<br><br>
+<input type="text" name="respuesta_68" value="<?php echo $respuesta_68; ?>" size="8">parte de la evalucion de la integral.
+<br><br>
+\( =  \)
+
+ \( - \frac{4}{3} \cos(3s)\bigg|_0^t \)
+<br><br>
+\(= 5 - \frac{4}{3} \cos(3t) + \frac{4}{3}  \)
+<br><br>
+\(= \frac{1}{3}(19 - 4 \cos(3t))   \)
+</p>
+
+<p>
+Más generalmente, supongamos que \( f \) en (8.1.3) depende tanto de 
+<input type="text" name="respuesta_69" value="<?php echo $respuesta_69; ?>" size="8">
+como de 
+<input type="text" name="respuesta_70" value="<?php echo $respuesta_70; ?>" size="8">
+. En ese caso, dado que el lado derecho de la ecuación involucra la función desconocida 
+<input type="text" name="respuesta_71" value="<?php echo $respuesta_71; ?>" size="8">
+, no podemos simplemente 
+<input type="text" name="respuesta_72" value="<?php echo $respuesta_72; ?>" size="8">
+ambos lados de la ecuación. Ya hemos resuelto algunas
+ ecuaciones como esta en secciones anteriores, como el modelo de crecimiento poblacional inhibido:
+</p>
+
+<p style="text-align: center;">
+\[\dot{x} = \alpha \frac{x(M - x)}{M} \tag{8.1.6}\]
+</p>
+
+<p>
+muchas, si no la mayoría, de las
+ecuaciones diferenciales pueden resolverse solo mediante 
+<input type="text" name="respuesta_73" value="<?php echo $respuesta_73; ?>" size="8">
+numérica.
+</p>
+<button type="submit">Enviar</button>
+<?php echo $verificar_67 ?>
+<?php echo $verificar_68 ?>
+<?php echo $verificar_69 ?>
+<?php echo $verificar_70 ?>
+<?php echo $verificar_71 ?>
+<?php echo $verificar_72 ?>
+<?php echo $verificar_73 ?>
+<hr>
+
+
+    
+<p>
+Aunque la función \( x \) en la ecuación (8.1.3) es 
+<input type="text" name="respuesta_74" value="<?php echo $respuesta_74; ?>" size="8">
+, tenemos suficiente información para 
+encontrar su mejor aproximación 
+<input type="text" name="respuesta_75" value="<?php echo $respuesta_75; ?>" size="8">
+en 
+<input type="text" name="respuesta_76" value="<?php echo $respuesta_76; ?>" size="8">
+. Es decir, la mejor aproximación 
+<input type="text"  value="<?php echo $respuesta_75; ?>" size="8" readonly>
+a \( x \)
+en 
+<input type="text"  value="<?php echo $respuesta_76; ?>" size="8" readonly>
+es
+</p>
+
+<p style="text-align: center;">
+\[
+   \tag{8.1.7}
+\]
+</p>
+    
+<span id="formula4">
+    \(    {8.1.5} \)
+</span> 
+<br><br>
+<input type="text" name="respuesta_77" size="50" id="respuesta_77" oninput="actualizarFormula4()" 
+value="<?php echo $respuesta_77?>"   >
+
+    <button onmousedown="mostrarMensaje2()" onmouseup="ocultarMensaje2()">sigue</button>
+    
+    <p id="mensaje2" style="display:none;">
+    \( = x_0 + f(x_0, t_0)(t - t_0) \)
+    </p>
+
+ 
+ 
+
+<p>
+Por lo tanto, a partir de nuestro trabajo con el teorema de Taylor en la Sección 5.2 y asumiendo que \( f(x(t), t) \) es una función continua, tenemos:
+</p>
+
+<p style="text-align: center;">
+\[
+x(t) = x_0 + f(x_0, t_0)(t - t_0) + \mathcal{O}((t - t_0)^2). \tag{8.1.8}
+\]
+</p>
+
+<p>
+De forma equivalente:
+</p>
+
+<p style="text-align: center;">
+\[
+x(t_0 + h) = x_0 + h f(x_0, t_0) + \mathcal{O}(h^2). \tag{8.1.9}
+\]
+</p>
+
+<p>
+Así, para un valor pequeño de \( h \),
+</p>
+    
+<span id="formula5">
+    \(    \tag{8.1.10} \)
+</span> 
+<br><br>
+<input type="text" name="respuesta_78" size="50" id="respuesta_78" oninput="actualizarFormula5()" 
+value="<?php echo $respuesta_78?>"   >
+<p style="text-align: center;">
+</p>
+
+<p>
+proporcionará una buena aproximación de 
+<input type="text" name="respuesta_79" value="<?php echo $respuesta_79; ?>" size="8">
+. Sin embargo, queremos hacer más que esto;
+ dado que \( x \) es una función, queremos poder aproximar sus valores sobre todo un intervalo, digamos 
+ \([t_0, t_1]\). Para hacerlo, elegimos un valor pequeño para 
+ <input type="text" name="respuesta_80" value="<?php echo $respuesta_80; ?>" size="8">
+ e iteramos el proceso que nos dio 
+<input type="text" name="respuesta_81" value="<?php echo $respuesta_81; ?>" size="8">
+ . Específicamente, tomamos \( s_k =   \)
+ <input type="text" name="respuesta_82" value="<?php echo $respuesta_82; ?>" size="8">
+ , para \( k = 0, 1, \ldots, n \), donde \( n \)
+  se elige lo suficientemente grande como para que \( s_n \geq t_1 \), y calculamos
+</p>
+
+<p style="text-align: center;">
+\[
+x_{k+1} = x_k + h f(x_k, s_k) \tag{8.1.11}
+\]
+</p>
+
+<p>
+para \( k = 0, 1, \ldots, n - 1 \). Es decir, calculamos una aproximación para  
+x(<input type="text" name="respuesta_86" value="<?php echo $respuesta_86; ?>" size="8">) 
+ aplicando la mejor aproximación afín a nuestra aproximación para \( x(s_k) \), repitiendo el proceso suficientes veces hasta que hayamos aproximado \( x \) sobre todo el intervalo \([t_0, t_1]\). Este método de aproximación se conoce como el <strong>método de Euler</strong>.
+</p>
+
+    <hr>
+   <div class="math-container">
+        \( x_0 \) es el valor de la función desconocida \( x(t) \) evaluada en el tiempo \( t_0 \).
+    </div>
+    
+    <div class="math-container">
+        Es decir:
+        \( x_0 =   \)
+ <input type="text" name="respuesta_83" value="<?php echo $respuesta_83; ?>" size="8">
+
+    </div>
+    
+    <div class="math-container">
+        Por ejemplo, en tu problema anterior:
+        \[ x(t) = 5 + \int_0^t 4\sin(3s)\,ds \quad \text{(con condición inicial } x(0) = 5\text{)} \]
+    </div>
+    
+    <div class="math-container">
+        Aquí:
+        \(
+        t_0 =  \)
+        <input type="text" name="respuesta_84" value="<?php echo $respuesta_84; ?>" size="8">
+        ,  
+        <br><br>
+        \( x_0 = x(0) = 5.  \)
+    <hr>
+    <input type="text" name="respuesta_85" value="<?php echo $respuesta_85; ?>" size="8">
+    es el valor de la variable independiente que quiero evaluar
+        <br><br>
+    <button type="submit">Enviar</button>
+<?php echo $verificar_74 ?>
+<?php echo $verificar_75 ?>
+<?php echo $verificar_76 ?>
+<?php echo $verificar_77 ?>
+<?php echo $verificar_78 ?>
+<?php echo $verificar_79 ?>
+<?php echo $verificar_80 ?> 
+<?php echo $verificar_81 ?>
+<?php echo $verificar_82 ?>
+<?php echo $verificar_83 ?>
+<?php echo $verificar_84 ?>
+    <?php echo $verificar_85 ?>
+    <?php echo $verificar_86 ?>
+
+<hr>
+
+       <h2>Definición 8.1.1 (Método de Euler)</h2>
+
+<p>
+Para aproximar una solución de la ecuación
+</p>
+
+<p style="text-align: center;">
+\[\dot{x} = f(x, t)\]
+</p>
+
+<p>
+con la condición inicial
+<span id="formula6">
+    \(      \)
+</span> 
+<input type="text" name="respuesta_87" size="8" id="respuesta_87" oninput="actualizarFormula6()" 
+value="<?php echo $respuesta_87?>"   >
+ 
+
+en un intervalo \([t_0, t_1]\), elige un valor pequeño \( h > 0 \) y un entero \( n \) tal que 
+<span id="formula7">
+    \(      \)
+</span> 
+<input type="text" name="respuesta_88" size="12" id="respuesta_88" oninput="actualizarFormula7()" 
+value="<?php echo $respuesta_88?>"   >
+ 
+
+Definiendo \( s_k = t_0 + kh \), para \( k = 0, 1, \ldots, n \), 
+calcula \( x_1, x_2, \ldots, x_n \) usando la ecuación en diferencias:
+</p>
+ 
+
+
+
+<span id="formula8">
+    \(    \tag{8.1.12}  \)
+</span> 
+<input type="text" name="respuesta_89" size="22" id="respuesta_89" oninput="actualizarFormula8()" 
+value="<?php echo $respuesta_89?>"   >
+
+
+<p>
+Entonces \( x_k \) es una aproximación de \( x(t_0 + kh) \).
+</p>
+
+<p>
+Nótese que (8.1.12) hace uso de una ecuación en 
+<input type="text" name="respuesta_90" value="<?php echo $respuesta_90; ?>" size="8">
+, una ecuación en
+ tiempo discreto que encontramos por primera vez en la Sección 1.4, para aproximar
+  la solución de una ecuación diferencial.
+</p>
+
+<button type="submit">Enviar</button>
+    <?php echo $verificar_87 ?>
+    <?php echo $verificar_88 ?>
+    <?php echo $verificar_89 ?>
+    <?php echo $verificar_90 ?>
+    <hr>
+    </div>
     </form>
 </div>
 
