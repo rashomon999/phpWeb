@@ -560,7 +560,7 @@ function ocultarMensaje4() {
     cosecante y cotangente. <Strong>Nota: ingresar tipo: \frac{}{}...</Strong>
     <br><br>
     variables a usar: CO, CA, H. <br><br>
-    Sen(a)= <input type="text"  size="8"  name="respuesta_1" 
+    Sen(a)= <input type="text"  size="12"  name="respuesta_1" 
     id="respuesta_1" oninput="actualizarFormula()" value="<?php echo $respuesta_1 ?>"    >
     <span id="formula">
             \( \frac{0}{0} \)
@@ -618,7 +618,7 @@ function ocultarMensaje4() {
     Nota: anteriormente se hizo Tan y Cot, saltarse estos.
     <br><br>
 
-    Sen(a)= <input type="text"  size="8"  name="respuesta_7" 
+    Sen(a)= <input type="text"  size="14"  name="respuesta_7" 
     id="respuesta_7" oninput="actualizarFormula7()" value="<?php echo $respuesta_7 ?>"    >
     <span id="formula7">
             \( \frac{0}{0} \)
