@@ -9,3 +9,10 @@ Una vez ya esten en http://localhost/phpmyadmin/ crear una base de datos (Nueva,
 luego, para cargar las paginas que yo hice, deben comenzar a llenar la base de datos con los nombres en: C:\xampp\htdocs\php_web\productos.php), esto se hace en http://127.0.0.1/php_web/administrador/seccion/productos.php, pero para ingresar el usiario y contraseña, mirenlo primero en C:\xampp\htdocs\php_web\administrador\index.php.
 
 Esto es una guia rapida, no se guardo la que tenia, ademas, si se comprende el codigo y guiandose de los mensajes, no es dificil cargar todo..
+
+
+
+--------
+https://phpweb-production.up.railway.app/productos.php
+
+el transpaso de los datos se hizo con DBeaver
