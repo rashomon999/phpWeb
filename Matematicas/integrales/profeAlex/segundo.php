@@ -50,7 +50,7 @@ $verificar_106 = '';$verificar_107 = '';$verificar_108 = '';$verificar_109 = '';
 
 if ($_POST) {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '26') {  
+   if ($respuesta_1 === 'Ln|x|+C') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -91,7 +91,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === '\frac{\sqrt{3}}{2x}Ln|x|+C') {  
+   if ($respuesta_5 === '\frac{\sqrt{3}}{2}Ln|x|+C') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -164,7 +164,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
      $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-     if ($respuesta_12 === '\frac{x}{2}+\frac{5x^3}{3}-x^2+x+C') {  
+     if ($respuesta_12 === '\frac{x^4}{2}+\frac{5x^3}{3}-x^2+x+C') {  
          $verificar_12 = "correcto";
      } elseif ($respuesta_12 === '') {
          $verificar_12 = '';
@@ -214,7 +214,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la sexta pregunta
      $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-     if ($respuesta_17 === '\frac{5x^2}{4}-\frac{3x}{2}+\frac{1}{x}+C') {  
+     if ($respuesta_17 === '\frac{5x^2}{4}-\frac{3x}{2}-\frac{1}{x}+C') {  
          $verificar_17 = "correcto";
      } elseif ($respuesta_17 === '') {
          $verificar_17 = '';

@@ -50,7 +50,7 @@ $verificar_106 = '';$verificar_107 = '';$verificar_108 = '';$verificar_109 = '';
 
 if ($_POST) {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '26') {  
+   if ($respuesta_1 === '\frac{6x^5}{5}-5x^3+C') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -60,7 +60,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === '39') {  
+   if ($respuesta_2 === '\frac{2x^7}{7}-\frac{2x^6}{3}+\frac{2x^5}{5}+\frac{3x^4}{2}+C') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -70,7 +70,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === '52') {  
+   if ($respuesta_3 === '\frac{3x^4}{2}-\frac{7x^3}{3}-10x^2+C') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -80,7 +80,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === '65') {  
+   if ($respuesta_4 === '\frac{3x^5}{5}-\frac{4x^3}{3}-15x+C') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -1140,7 +1140,7 @@ function handleSubmit(event) {
 function actualizarFormula() {
     var f = document.getElementById('respuesta_1').value || "";
     var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula1').innerHTML = `$$ ${formula} $$`;
+    document.getElementById('formula').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
         MathJax.typeset();
     }
@@ -1369,7 +1369,64 @@ function ocultarMensaje4() {
 <body> 
 <div class="seccion izquierda">
     <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-         
+    
+    
+    <p style="text-align: center;">
+    \(  \int 3x^2(2x^2-5) dx \) = 
+    <span id="formula">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_1"   id="respuesta_1" oninput="actualizarFormula()" 
+    value="<?php echo $respuesta_1?>" size="25" >
+    </p>
+     <hr> 
+
+
+
+
+ 
+     <p style="text-align: center;">
+    \(  \int 2x^3(x^3-2x^2+x+3) dx \) = 
+    <span id="formula2">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_2"   id="respuesta_2" oninput="actualizarFormula2()" 
+    value="<?php echo $respuesta_2?>" size="25" >
+    </p>
+     <hr> 
+
+
+
+
+
+ 
+    <p style="text-align: center;">
+    \(  \int (2x-5)(3x^2+4x) dx \) = 
+    <span id="formula3">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_3"   id="respuesta_3" oninput="actualizarFormula3()" 
+    value="<?php echo $respuesta_3?>" size="25" >
+    </p>
+    <hr> 
+    
+
+
+
+
+    <p style="text-align: center;">
+    \(  \int (3x^2+5)(x^2-3) dx \) = 
+    <span id="formula4">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_4"   id="respuesta_4" oninput="actualizarFormula4()" 
+    value="<?php echo $respuesta_4?>" size="25" >
+    </p>
+    <hr> 
     </form>
 </div>
 
