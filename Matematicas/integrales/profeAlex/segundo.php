@@ -60,7 +60,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === '39') {  
+   if ($respuesta_2 === '3Ln|u|+C') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -70,7 +70,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === '52') {  
+   if ($respuesta_3 === '\frac{5}{4}Ln|x|+C') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -78,9 +78,10 @@ if ($_POST) {
        $verificar_3 = "incorrecto";
    }
 
+
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === '65') {  
+   if ($respuesta_4 === 'Ln|x|+C') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -90,7 +91,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === '78') {  
+   if ($respuesta_5 === '\frac{\sqrt{3}}{2x}Ln|x|+C') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -100,7 +101,9 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === '91') {  
+   if ($respuesta_6 === '\frac{2x^{\frac{3}{2}}}{3}+C' || $respuesta_6 === '\frac{2\sqrt{x^3}}{3}+C'
+   || $respuesta_6 === '\frac{2}{3}\sqrt{x^3}+C'
+   ) {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -108,9 +111,9 @@ if ($_POST) {
        $verificar_6 = "incorrecto";
    }
 
-   // Verificar la respuesta de la séptima pregunta
+   // Verificar la respuesta de la séptima pregunta 
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === '104') {  
+   if ($respuesta_7 === '\frac{3}{5}\sqrt[3]{x^5}+C' || $respuesta_7 === '\frac{3x^{5/3}}{5}+C') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -120,7 +123,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === '117') {  
+   if ($respuesta_8 === '\frac{2\sqrt{3x^3}}{3}+C') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -130,7 +133,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === '130') {  
+   if ($respuesta_9 === '\frac{8}{3}x\sqrt{x}+C' || $respuesta_9 === '\frac{8}{3}\sqrt{x^3}+C') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -140,7 +143,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === '143') {  
+   if ($respuesta_10 === '10\sqrt{x}+C') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -150,7 +153,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === '156') {  
+   if ($respuesta_11 === '\frac{-4}{\sqrt{x}}+C') {  
        $verificar_11 = "correcto";
    } elseif ($respuesta_11 === '') {
        $verificar_11 = '';
@@ -161,7 +164,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
      $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-     if ($respuesta_12 === '28') {  
+     if ($respuesta_12 === '\frac{x}{2}+\frac{5x^3}{3}-x^2+x+C') {  
          $verificar_12 = "correcto";
      } elseif ($respuesta_12 === '') {
          $verificar_12 = '';
@@ -171,7 +174,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la segunda pregunta
      $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-     if ($respuesta_13 === '42') { 
+     if ($respuesta_13 === '\frac{x^6}{6}-\frac{x^4}{2}+C') { 
          $verificar_13 = "correcto";
      } elseif ($respuesta_13 === '') {
          $verificar_13 = '';
@@ -181,7 +184,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la tercera pregunta
      $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-     if ($respuesta_14 === '56') {  
+     if ($respuesta_14 === '\frac{3x^5}{5}-x^4+2x^3-\frac{x^2}{4}+3x+C') {  
          $verificar_14 = "correcto";
      } elseif ($respuesta_14 === '') {
          $verificar_14 = '';
@@ -191,7 +194,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la cuarta pregunta
      $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-     if ($respuesta_15 === '70') { 
+     if ($respuesta_15 === '\frac{x^4}{2}-\frac{4x^3}{3}+\frac{x^2}{2}+C') { 
          $verificar_15 = "correcto";
      } elseif ($respuesta_15 === '') {
          $verificar_15 = '';
@@ -201,7 +204,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la quinta pregunta
      $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-     if ($respuesta_16 === '84') {  
+     if ($respuesta_16 === '\frac{4x^3}{9}-\frac{2x}{3}+C') {  
          $verificar_16 = "correcto";
      } elseif ($respuesta_16 === '') {
          $verificar_16 = '';
@@ -211,7 +214,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la sexta pregunta
      $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-     if ($respuesta_17 === '98') {  
+     if ($respuesta_17 === '\frac{5x^2}{4}-\frac{3x}{2}+\frac{1}{x}+C') {  
          $verificar_17 = "correcto";
      } elseif ($respuesta_17 === '') {
          $verificar_17 = '';
@@ -221,7 +224,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la séptima pregunta
      $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-     if ($respuesta_18 === '112') {  
+     if ($respuesta_18 === '\frac{5x}{4}+\frac{1}{2x}-\frac{1}{4x^2}+C') {  
          $verificar_18 = "correcto";
      } elseif ($respuesta_18 === '') {
          $verificar_18 = '';
@@ -1083,8 +1086,8 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
@@ -1096,7 +1099,7 @@ if ($respuesta_110 === '264') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 370vh;
+    height: 200vh;
     }
 </style>
  
@@ -1140,7 +1143,7 @@ function handleSubmit(event) {
 function actualizarFormula() {
     var f = document.getElementById('respuesta_1').value || "";
     var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula1').innerHTML = `$$ ${formula} $$`;
+    document.getElementById('formula').innerHTML = `\\( ${formula} \\)`;
     if (window.MathJax) {
         MathJax.typeset();
     }
@@ -1368,20 +1371,126 @@ function ocultarMensaje4() {
 </head>
 <body> 
 <div class="seccion izquierda">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-            
-            13 * 2 = <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>"><br>
-            13 * 3 = <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>"><br>
-            13 * 4 = <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>"><br>
-            13 * 5 = <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>"><br>
-            13 * 6 = <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>"><br>
-            13 * 7 = <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>"><br>
-            13 * 8 = <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>"><br>
-            13 * 9 = <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>"><br>
-            13 * 10 = <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>"><br>
-            13 * 11 = <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>"><br>
-            13 * 12 = <input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>"><br>
-            <button type="submit">Enviar</button> 
+    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+        <strong>se recomienda expresar en raiz y en una sola</strong>
+    <br><br>
+
+    <p style="text-align: center;">
+    \(  \int x^{-1} dx \) = 
+    <span id="formula">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_1"   id="respuesta_1" oninput="actualizarFormula()" 
+    value="<?php echo $respuesta_1?>" size="25" >
+    </p>
+     <hr>  
+     
+     
+
+    <p style="text-align: center;">
+    \(  \int \frac{3}{u} du \) = 
+    <span id="formula2">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_2"   id="respuesta_2" oninput="actualizarFormula2()" 
+    value="<?php echo $respuesta_2?>" size="25" >
+    </p>
+    <hr>   
+
+
+
+    <p style="text-align: center;">
+    \(  \int \frac{5}{4x} dx \) = 
+    <span id="formula3">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_3" id="respuesta_3" oninput="actualizarFormula3()" 
+    value="<?php echo $respuesta_3?>" size="25" >
+    </p>
+    <hr>   
+
+
+    <p style="text-align: center;">
+    \(  \int \frac{1}{x} dx \) = 
+    <span id="formula4">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_4" id="respuesta_4" oninput="actualizarFormula4()" 
+    value="<?php echo $respuesta_4?>" size="25" >
+    </p>
+    <hr>
+
+    <p style="text-align: center;">
+    \(  \int \frac{\sqrt3}{2x} dx \) = 
+    <span id="formula5">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_5" id="respuesta_5" oninput="actualizarFormula5()" 
+    value="<?php echo $respuesta_5?>" size="25" >
+    </p>
+    <hr>
+
+
+
+
+    <p style="text-align: center;">
+    \(  \int \sqrt{x} \,\, dx \) = 
+    <span id="formula6">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_6" id="respuesta_6" oninput="actualizarFormula6()" 
+    value="<?php echo $respuesta_6?>" size="25" >
+    </p>
+    <hr>
+
+
+    <p style="text-align: center;">
+    \(  \int \sqrt[3]{x^2} \,\, dx \) = 
+    <span id="formula7">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_7" id="respuesta_7" oninput="actualizarFormula7()" 
+    value="<?php echo $respuesta_7?>" size="25" >
+    </p>
+    <hr>
+
+
+
+
+
+
+    <p style="text-align: center;">
+    \(  \int \sqrt{3x} \,\, dx \) = 
+    <span id="formula8">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_8" id="respuesta_8" oninput="actualizarFormula8()" 
+    value="<?php echo $respuesta_8?>" size="25" >
+    </p>
+    <hr>
+
+
+
+    <p style="text-align: center;">
+    \(  \int \sqrt{16x} \,\, dx \) = 
+    <span id="formula9">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_9" id="respuesta_9" oninput="actualizarFormula9()" 
+    value="<?php echo $respuesta_9?>" size="25" >
+    </p>
+    <hr>
+
+    <button type="submit">Enviar</button> 
             <?php echo $verificar_1 ?>
 <?php echo $verificar_2 ?>
 <?php echo $verificar_3 ?>
@@ -1391,109 +1500,6 @@ function ocultarMensaje4() {
 <?php echo $verificar_7 ?>
 <?php echo $verificar_8 ?>
 <?php echo $verificar_9 ?>
-<?php echo $verificar_10 ?>
-<?php echo $verificar_11 ?>
-            <br><br><br>
-
-            14 * 2 = <input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>"><br>
-            14 * 3 = <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>"><br>
-            14 * 4 = <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>"><br>
-            14 * 5 = <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>"><br>
-            14 * 6 = <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>"><br>
-            14 * 7 = <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>"><br>
-            14 * 8 = <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>"><br>
-            14 * 9 = <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>"><br>
-            14 * 10 = <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>"><br>
-            14 * 11 = <input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>"><br>
-            14 * 12 = <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>"><br>
-            <button type="submit">Enviar</button>
-            
-            <?php echo $verificar_12 ?>
-<?php echo $verificar_13 ?>
-<?php echo $verificar_14 ?>
-<?php echo $verificar_15 ?>
-<?php echo $verificar_16 ?>
-<?php echo $verificar_17 ?>
-<?php echo $verificar_18 ?>
-<?php echo $verificar_19 ?>
-<?php echo $verificar_20 ?>
-<?php echo $verificar_21 ?>
-<?php echo $verificar_22 ?>
-            <br><br><br>
-
-            15 * 2 = <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>"><br>
-            15 * 3 = <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>"><br>
-            15 * 4 = <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>"><br>
-            15 * 5 = <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>"><br>
-            15 * 6 = <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>"><br>
-            15 * 7 = <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>"><br>
-            15 * 8 = <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>"><br>
-            15 * 9 = <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>"><br>
-            15 * 10 = <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>"><br>
-            15 * 11 = <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>"><br>
-            15 * 12 = <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>"><br>
-            <button type="submit">Enviar</button>
-            <?php echo $verificar_23 ?>
-<?php echo $verificar_24 ?>
-<?php echo $verificar_25 ?>
-<?php echo $verificar_26 ?>
-<?php echo $verificar_27 ?>
-<?php echo $verificar_28 ?>
-<?php echo $verificar_29 ?>
-<?php echo $verificar_30 ?>
-<?php echo $verificar_31 ?>
-<?php echo $verificar_32 ?>
-<?php echo $verificar_33 ?>
-             <br><br><br>
-
-            16 * 2 = <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>"><br>
-            16 * 3 = <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>"><br>
-            16 * 4 = <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>"><br>
-            16 * 5 = <input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>"><br>
-            16 * 6 = <input type="text" name="respuesta_38" value="<?php echo $respuesta_38; ?>"><br>
-            16 * 7 = <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>"><br>
-            16 * 8 = <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>"><br>
-            16 * 9 = <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>"><br>
-            16 * 10 = <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>"><br>
-            16 * 11 = <input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>"><br>
-            16 * 12 = <input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>"><br>
-            <button type="submit">Enviar</button>
-            <?php echo $verificar_34 ?>
-<?php echo $verificar_35 ?>
-<?php echo $verificar_36 ?>
-<?php echo $verificar_37 ?>
-<?php echo $verificar_38 ?>
-<?php echo $verificar_39 ?>
-<?php echo $verificar_40 ?>
-<?php echo $verificar_41 ?>
-<?php echo $verificar_42 ?>
-<?php echo $verificar_43 ?>
-<?php echo $verificar_44 ?>
-            <br><br><br>
-
-            17 * 2 = <input type="text" name="respuesta_45" value="<?php echo $respuesta_45; ?>"><br>
-            17 * 3 = <input type="text" name="respuesta_46" value="<?php echo $respuesta_46; ?>"><br>
-            17 * 4 = <input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>"><br>
-            17 * 5 = <input type="text" name="respuesta_48" value="<?php echo $respuesta_48; ?>"><br>
-            17 * 6 = <input type="text" name="respuesta_49" value="<?php echo $respuesta_49; ?>"><br>
-            17 * 7 = <input type="text" name="respuesta_50" value="<?php echo $respuesta_50; ?>"><br>
-            17 * 8 = <input type="text" name="respuesta_51" value="<?php echo $respuesta_51; ?>"><br>
-            17 * 9 = <input type="text" name="respuesta_52" value="<?php echo $respuesta_52; ?>"><br>
-            17 * 10 = <input type="text" name="respuesta_53" value="<?php echo $respuesta_53; ?>"><br>
-            17 * 11 = <input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>"><br>
-            17 * 12 = <input type="text" name="respuesta_55" value="<?php echo $respuesta_55; ?>"><br>
-            <button type="submit">Enviar</button>
-            <?php echo $verificar_45 ?>
-        <?php echo $verificar_46 ?>
-        <?php echo $verificar_47 ?>
-        <?php echo $verificar_48 ?>
-        <?php echo $verificar_49 ?>
-        <?php echo $verificar_50 ?>
-        <?php echo $verificar_51 ?>
-        <?php echo $verificar_52 ?>
-        <?php echo $verificar_53 ?>
-        <?php echo $verificar_54 ?>
-        <?php echo $verificar_55 ?>
     </form>
 </div>
 
@@ -1501,135 +1507,132 @@ function ocultarMensaje4() {
 
 
 <div class="seccion derecha">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    18 * 2 = <input type="text" name="respuesta_56" value="<?php echo $respuesta_56; ?>"><br>
-18 * 3 = <input type="text" name="respuesta_57" value="<?php echo $respuesta_57; ?>"><br>
-18 * 4 = <input type="text" name="respuesta_58" value="<?php echo $respuesta_58; ?>"><br>
-18 * 5 = <input type="text" name="respuesta_59" value="<?php echo $respuesta_59; ?>"><br>
-18 * 6 = <input type="text" name="respuesta_60" value="<?php echo $respuesta_60; ?>"><br>
-18 * 7 = <input type="text" name="respuesta_61" value="<?php echo $respuesta_61; ?>"><br>
-18 * 8 = <input type="text" name="respuesta_62" value="<?php echo $respuesta_62; ?>"><br>
-18 * 9 = <input type="text" name="respuesta_63" value="<?php echo $respuesta_63; ?>"><br>
-18 * 10 = <input type="text" name="respuesta_64" value="<?php echo $respuesta_64; ?>"><br>
-18 * 11 = <input type="text" name="respuesta_65" value="<?php echo $respuesta_65; ?>"><br>
-18 * 12 = <input type="text" name="respuesta_66" value="<?php echo $respuesta_66; ?>"><br>
-<button type="submit">Enviar</button>
-<?php echo $verificar_56 ?>
-<?php echo $verificar_57 ?>
-<?php echo $verificar_58 ?>
-<?php echo $verificar_59 ?>
-<?php echo $verificar_60 ?>
-<?php echo $verificar_61 ?>
-<?php echo $verificar_62 ?>
-<?php echo $verificar_63 ?>
-<?php echo $verificar_64 ?>
-<?php echo $verificar_65 ?>
-<?php echo $verificar_66 ?>
-<br><br><br>
-19 * 2 = <input type="text" name="respuesta_67" value="<?php echo $respuesta_67; ?>"><br>
-19 * 3 = <input type="text" name="respuesta_68" value="<?php echo $respuesta_68; ?>"><br>
-19 * 4 = <input type="text" name="respuesta_69" value="<?php echo $respuesta_69; ?>"><br>
-19 * 5 = <input type="text" name="respuesta_70" value="<?php echo $respuesta_70; ?>"><br>
-19 * 6 = <input type="text" name="respuesta_71" value="<?php echo $respuesta_71; ?>"><br>
-19 * 7 = <input type="text" name="respuesta_72" value="<?php echo $respuesta_72; ?>"><br>
-19 * 8 = <input type="text" name="respuesta_73" value="<?php echo $respuesta_73; ?>"><br>
-19 * 9 = <input type="text" name="respuesta_74" value="<?php echo $respuesta_74; ?>"><br>
-19 * 10 = <input type="text" name="respuesta_75" value="<?php echo $respuesta_75; ?>"><br>
-19 * 11 = <input type="text" name="respuesta_76" value="<?php echo $respuesta_76; ?>"><br>
-19 * 12 = <input type="text" name="respuesta_77" value="<?php echo $respuesta_77; ?>"><br>
-<button type="submit">Enviar</button>
-<?php echo $verificar_67 ?>
-<?php echo $verificar_68 ?>
-<?php echo $verificar_69 ?>
-<?php echo $verificar_70 ?>
-<?php echo $verificar_71 ?>
-<?php echo $verificar_72 ?>
-<?php echo $verificar_73 ?>
-<?php echo $verificar_74 ?>
-<?php echo $verificar_75 ?>
-<?php echo $verificar_76 ?>
-<?php echo $verificar_77 ?>
-<br><br><br>
-20 * 2 = <input type="text" name="respuesta_78" value="<?php echo $respuesta_78; ?>"><br>
-20 * 3 = <input type="text" name="respuesta_79" value="<?php echo $respuesta_79; ?>"><br>
-20 * 4 = <input type="text" name="respuesta_80" value="<?php echo $respuesta_80; ?>"><br>
-20 * 5 = <input type="text" name="respuesta_81" value="<?php echo $respuesta_81; ?>"><br>
-20 * 6 = <input type="text" name="respuesta_82" value="<?php echo $respuesta_82; ?>"><br>
-20 * 7 = <input type="text" name="respuesta_83" value="<?php echo $respuesta_83; ?>"><br>
-20 * 8 = <input type="text" name="respuesta_84" value="<?php echo $respuesta_84; ?>"><br>
-20 * 9 = <input type="text" name="respuesta_85" value="<?php echo $respuesta_85; ?>"><br>
-20 * 10 = <input type="text" name="respuesta_86" value="<?php echo $respuesta_86; ?>"><br>
-20 * 11 = <input type="text" name="respuesta_87" value="<?php echo $respuesta_87; ?>"><br>
-20 * 12 = <input type="text" name="respuesta_88" value="<?php echo $respuesta_88; ?>"><br>
-<button type="submit">Enviar</button>
-<?php echo $verificar_78 ?>
-<?php echo $verificar_79 ?>
-<?php echo $verificar_80 ?> 
-<?php echo $verificar_81 ?>
-<?php echo $verificar_82 ?>
-<?php echo $verificar_83 ?>
-<?php echo $verificar_84 ?>
-<?php echo $verificar_85 ?>
-<?php echo $verificar_86 ?>
-<?php echo $verificar_87 ?>
-<?php echo $verificar_88 ?>
-<br><br><br>
-21 * 2 = <input type="text" name="respuesta_89" value="<?php echo $respuesta_89; ?>"><br>
-21 * 3 = <input type="text" name="respuesta_90" value="<?php echo $respuesta_90; ?>"><br>
-21 * 4 = <input type="text" name="respuesta_91" value="<?php echo $respuesta_91; ?>"><br>
-21 * 5 = <input type="text" name="respuesta_92" value="<?php echo $respuesta_92; ?>"><br>
-21 * 6 = <input type="text" name="respuesta_93" value="<?php echo $respuesta_93; ?>"><br>
-21 * 7 = <input type="text" name="respuesta_94" value="<?php echo $respuesta_94; ?>"><br>
-21 * 8 = <input type="text" name="respuesta_95" value="<?php echo $respuesta_95; ?>"><br>
-21 * 9 = <input type="text" name="respuesta_96" value="<?php echo $respuesta_96; ?>"><br>
-21 * 10 = <input type="text" name="respuesta_97" value="<?php echo $respuesta_97; ?>"><br>
-21 * 11 = <input type="text" name="respuesta_98" value="<?php echo $respuesta_98; ?>"><br>
-21 * 12 = <input type="text" name="respuesta_99" value="<?php echo $respuesta_99; ?>"><br>
-<button type="submit">Enviar</button>
+    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <br><br>
 
-<?php echo $verificar_89 ?>
-<?php echo $verificar_90 ?>
-<?php echo $verificar_91 ?>
-<?php echo $verificar_92 ?>
-<?php echo $verificar_93 ?>
-<?php echo $verificar_94 ?>
-<?php echo $verificar_95 ?>
-<?php echo $verificar_96 ?>
-<?php echo $verificar_97 ?>
-<?php echo $verificar_98 ?>
-<?php echo $verificar_99 ?>
-<br><br><br>
-22 * 2 = <input type="text" name="respuesta_100" value="<?php echo $respuesta_100; ?>"><br>
-22 * 3 = <input type="text" name="respuesta_101" value="<?php echo $respuesta_101; ?>"><br>
-22 * 4 = <input type="text" name="respuesta_102" value="<?php echo $respuesta_102; ?>"><br>
-22 * 5 = <input type="text" name="respuesta_103" value="<?php echo $respuesta_103; ?>"><br>
-22 * 6 = <input type="text" name="respuesta_104" value="<?php echo $respuesta_104; ?>"><br>
-22 * 7 = <input type="text" name="respuesta_105" value="<?php echo $respuesta_105; ?>"><br>
-22 * 8 = <input type="text" name="respuesta_106" value="<?php echo $respuesta_106; ?>"><br>
-22 * 9 = <input type="text" name="respuesta_107" value="<?php echo $respuesta_107; ?>"><br>
-22 * 10 = <input type="text" name="respuesta_108" value="<?php echo $respuesta_108; ?>"><br>
-22 * 11 = <input type="text" name="respuesta_109" value="<?php echo $respuesta_109; ?>"><br>
-22 * 12 = <input type="text" name="respuesta_110" value="<?php echo $respuesta_110; ?>"><br>
-<button type="submit">Enviar</button>
-<?php echo $verificar_100 ?>
-<?php echo $verificar_101 ?>
-<?php echo $verificar_102 ?>
-<?php echo $verificar_103 ?>
-<?php echo $verificar_104 ?>
-<?php echo $verificar_105 ?>
-<?php echo $verificar_106 ?>
-<?php echo $verificar_107 ?>
-<?php echo $verificar_108 ?>
-<?php echo $verificar_109 ?>
-<?php echo $verificar_110 ?>
-<br><br><br>
-
+    
+    <p style="text-align: center;">
+    \(  \int \frac{5}{\sqrt{x}} \,\, dx \) = 
+    <span id="formula10">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_10" id="respuesta_10" oninput="actualizarFormula10()" 
+    value="<?php echo $respuesta_10?>" size="25" >
+    </p>
     <hr>
-    <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
-    <br>
-    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
-    <button type="submit"   >Mostrar Solución</button>
-        
+    
+
+
+    <p style="text-align: center;">
+    \(  \int \frac{2}{\sqrt{x^3}} \,\, dx \) = 
+    <span id="formula11">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_11" id="respuesta_11" oninput="actualizarFormula11()" 
+    value="<?php echo $respuesta_11?>" size="25" >
+    </p>
+    <hr>
+
+
+    <p style="text-align: center;">
+    \(  \int (2x^3+5x^2-2x+1) \,\, dx \) = 
+    <span id="formula12">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_12" id="respuesta_12" oninput="actualizarFormula12()" 
+    value="<?php echo $respuesta_12?>" size="35" >
+    </p>
+    <hr>
+
+
+
+    <p style="text-align: center;">
+    \(  \int (x^5-2x^3) \,\, dx \) = 
+    <span id="formula13">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_13" id="respuesta_13" oninput="actualizarFormula13()" 
+    value="<?php echo $respuesta_13?>" size="35" >
+    </p>
+    <hr>
+
+
+
+    <p style="text-align: center;">
+    \(  \int (3x^4-4x^3+6x^2-\frac{x}{2}+3) \,\, dx \) = 
+    <span id="formula14">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_14" id="respuesta_14" oninput="actualizarFormula14()" 
+    value="<?php echo $respuesta_14?>" size="40" >
+    </p> 
+    <hr>
+
+
+
+    <p style="text-align: center;">
+    \(  \int  \frac{6x^5-12x^4+3x^3}{3x^2}  \,\, dx \) = 
+    <span id="formula15">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_15" id="respuesta_15" oninput="actualizarFormula15()" 
+    value="<?php echo $respuesta_15?>" size="40" >
+    </p> 
+    <hr>
+    
+
+    <p style="text-align: center;">
+    \(  \int  \frac{8x^3-4x}{6x}  \,\, dx \) = 
+    <span id="formula16">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_16" id="respuesta_16" oninput="actualizarFormula16()" 
+    value="<?php echo $respuesta_16?>" size="40" >
+    </p> 
+    <hr>
+    
+
+    <p style="text-align: center;">
+    \(  \int  \frac{5x^3-3x^2+2}{2x^2}  \,\, dx \) = 
+    <span id="formula17">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_17" id="respuesta_17" oninput="actualizarFormula17()" 
+    value="<?php echo $respuesta_17?>" size="40" >
+    </p> 
+    <hr>
+ 
+
+
+    <p style="text-align: center;">
+    \(  \int  \frac{5x^3-2x+2}{4x^3}  \,\, dx \) = 
+    <span id="formula18">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_18" id="respuesta_18" oninput="actualizarFormula18()" 
+    value="<?php echo $respuesta_18?>" size="40" >
+    </p> 
+    <hr>
+ <button type="submit">Enviar</button> 
+<?php echo $verificar_10 ?>
+<?php echo $verificar_11 ?>
+ <?php echo $verificar_12 ?>
+<?php echo $verificar_13 ?>
+<?php echo $verificar_14 ?>
+<?php echo $verificar_15 ?>
+<?php echo $verificar_16 ?>
+<?php echo $verificar_17 ?>
+<?php echo $verificar_18 ?>
+ 
     </form>
 </div>
 
@@ -1638,7 +1641,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="segundo.php"
+        href="tercero.php"
         role="button"
         width="50px"
         height="50px"

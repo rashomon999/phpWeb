@@ -948,16 +948,17 @@ if ($respuesta_90 === 'diferencias') {
 }
 
  $respuesta_91 = isset($_POST['respuesta_91']) ? $_POST['respuesta_91'] : '';
-if ($respuesta_91 === '84') { 
+$respuesta_91_dos = str_replace([' ', '\,'], '', $respuesta_91); // Eliminar espacios y "\,"
+if ($respuesta_91_dos === 'x(t)=40e^{0.04t}') { 
     $verificar_91 = "correcto";
-} elseif ($respuesta_91 === '') {
+} elseif ($respuesta_91_dos === '') {
     $verificar_91 = '';
 } else {
     $verificar_91 = "incorrecto";
 }
 
  $respuesta_92 = isset($_POST['respuesta_92']) ? $_POST['respuesta_92'] : '';
-if ($respuesta_92 === '105') { 
+if ($respuesta_92 === '40') { 
     $verificar_92 = "correcto";
 } elseif ($respuesta_92 === '') {
     $verificar_92 = '';
@@ -966,7 +967,7 @@ if ($respuesta_92 === '105') {
 }
 
  $respuesta_93 = isset($_POST['respuesta_93']) ? $_POST['respuesta_93'] : '';
-if ($respuesta_93 === '126') { 
+if ($respuesta_93 === '1') { 
     $verificar_93 = "correcto";
 } elseif ($respuesta_93 === '') {
     $verificar_93 = '';
@@ -975,7 +976,7 @@ if ($respuesta_93 === '126') {
 }
 
  $respuesta_94 = isset($_POST['respuesta_94']) ? $_POST['respuesta_94'] : '';
-if ($respuesta_94 === '147') { 
+if ($respuesta_94 === '41.60') { 
     $verificar_94 = "correcto";
 } elseif ($respuesta_94 === '') {
     $verificar_94 = '';
@@ -984,7 +985,7 @@ if ($respuesta_94 === '147') {
 }
 
  $respuesta_95 = isset($_POST['respuesta_95']) ? $_POST['respuesta_95'] : '';
-if ($respuesta_95 === '168') { 
+if ($respuesta_95 === 'diferencia') { 
     $verificar_95 = "correcto";
 } elseif ($respuesta_95 === '') {
     $verificar_95 = '';
@@ -993,7 +994,7 @@ if ($respuesta_95 === '168') {
 }
 
  $respuesta_96 = isset($_POST['respuesta_96']) ? $_POST['respuesta_96'] : '';
-if ($respuesta_96 === '189') { 
+if ($respuesta_96 === 'x_k') { 
     $verificar_96 = "correcto";
 } elseif ($respuesta_96 === '') {
     $verificar_96 = '';
@@ -1002,7 +1003,7 @@ if ($respuesta_96 === '189') {
 }
 
  $respuesta_97 = isset($_POST['respuesta_97']) ? $_POST['respuesta_97'] : '';
-if ($respuesta_97 === '210') { 
+if ($respuesta_97 === 'x(k)') { 
     $verificar_97 = "correcto";
 } elseif ($respuesta_97 === '') {
     $verificar_97 = '';
@@ -1011,7 +1012,7 @@ if ($respuesta_97 === '210') {
 }
 
  $respuesta_98 = isset($_POST['respuesta_98']) ? $_POST['respuesta_98'] : '';
-if ($respuesta_98 === '231') { 
+if ($respuesta_98 === 'acumula') { 
     $verificar_98 = "correcto";
 } elseif ($respuesta_98 === '') {
     $verificar_98 = '';
@@ -1020,7 +1021,7 @@ if ($respuesta_98 === '231') {
 }
 
  $respuesta_99 = isset($_POST['respuesta_99']) ? $_POST['respuesta_99'] : '';
-if ($respuesta_99 === '252') { 
+if ($respuesta_99 === 'reducir') { 
     $verificar_99 = "correcto";
 } elseif ($respuesta_99 === '') {
     $verificar_99 = '';
@@ -1030,7 +1031,7 @@ if ($respuesta_99 === '252') {
 
 
  $respuesta_100 = isset($_POST['respuesta_100']) ? $_POST['respuesta_100'] : '';
-if ($respuesta_100 === '44') { 
+if ($respuesta_100 === 'tamaño') { 
     $verificar_100 = "correcto";
 } elseif ($respuesta_100 === '') {
     $verificar_100 = '';
@@ -1336,7 +1337,7 @@ function actualizarFormula8() {
 
 function actualizarFormula9() {
     // Obtener los valores de los inputs
-    var f = document.getElementById('respuesta_9').value || "";
+    var f = document.getElementById('respuesta_91').value || "";
   
 
     // Construir la fórmula dinámica
@@ -2108,6 +2109,80 @@ Nótese que (8.1.12) hace uso de una ecuación en
     <?php echo $verificar_88 ?>
     <?php echo $verificar_89 ?>
     <?php echo $verificar_90 ?>
+    <hr>
+
+
+    
+    <h5>Ejemplo 8.1.2</h5>
+
+    <p>
+    Considera la ecuación diferencial \( \dot{x} = 0.04x \) con condición inicial \( x(0) = 40 \). Por
+    nuestro trabajo en el Capítulo 6 sabemos que la solución de esta ecuación es:
+    </p>
+ 
+<span id="formula9">
+    \(     \)
+</span> 
+<input type="text" name="respuesta_91" size="22" id="respuesta_91" oninput="actualizarFormula9()" 
+value="<?php echo $respuesta_91?>"   >
+
+    <p>
+    En particular, \( x(50) = 40e^2 = 295.56 \), redondeando a dos cifras decimales. Para 
+    aproximar \( x \) en el intervalo \([0, 50]\) usando el método de Euler, tomaremos primero
+    \( h = 1 \) y, comenzando con \( x_0 = 40 \), calculamos \( x_1, x_2, \ldots, x_{50} \),
+    donde en este caso \( x_k \) aproximará \( x(k) \). Usando (8.1.12) con \( f(x, t) = 0.04x \)
+    y redondeando a dos cifras decimales, tenemos:
+    </p>
+
+    <ul>
+    <li>\( x_1 = x_0 + h(0.04x_0) =  \)
+    <input type="text" name="respuesta_92" value="<?php echo $respuesta_92; ?>" size="1">    
+    \(   + (     \)
+    <input type="text" name="respuesta_93" value="<?php echo $respuesta_93; ?>" size="1">
+    \(             )(0.04)(40) = 40 + 1.6 = 41.60 \),</li>
+    <li> \( x_2 = x_1 + h(0.04x_1) =  \)
+    <input type="text" name="respuesta_94" value="<?php echo $respuesta_94; ?>" size="1">    
+    \(    + (1)(0.04)(41.60) = 41.60 + 1.66 = 43.26 \),</li>
+    <li>\( x_3 = x_2 + h(0.04x_2) = 43.26 + (1)(0.04)(43.26) = 43.26 + 1.73 = 44.99 \),</li>
+    </ul>
+
+    <p>
+    y así sucesivamente, terminando con \( x_{50} = 284.27 \).
+    </p>
+
+    <p>
+    Observa que el error en nuestra aproximación, es decir, la 
+    <input type="text" name="respuesta_95" value="<?php echo $respuesta_95; ?>" size="9">    
+    entre 
+    <input type="text" name="respuesta_96" value="<?php echo $respuesta_96; ?>" size="9">  
+    y 
+    <input type="text" name="respuesta_97" value="<?php echo $respuesta_97; ?>" size="9"> 
+    , 
+    aumenta a medida que \( k \) crece.  
+    </p>
+
+    <p>
+    Esto debe esperarse, ya que el error de la aproximación en cada paso se 
+    <input type="text" name="respuesta_98" value="<?php echo $respuesta_98; ?>" size="9">
+    con los errores 
+    cometidos en los pasos anteriores. La única forma de controlar la cantidad de error en nuestras 
+    aproximaciones es 
+     <input type="text" name="respuesta_99" value="<?php echo $respuesta_99; ?>" size="9">
+    el 
+     <input type="text" name="respuesta_100" value="<?php echo $respuesta_100; ?>" size="9">
+    del paso. Por ejemplo, si reducimos el tamaño del paso a \( h = 0.1 \).
+    </p>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_91 ?>
+    <?php echo $verificar_92 ?>
+    <?php echo $verificar_93 ?>
+    <?php echo $verificar_94 ?>
+    <?php echo $verificar_95 ?>
+    <?php echo $verificar_96 ?>
+    <?php echo $verificar_97 ?>
+    <?php echo $verificar_98 ?>
+    <?php echo $verificar_99 ?>
+    <?php echo $verificar_100 ?>
     <hr>
     </div>
     </form>

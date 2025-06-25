@@ -1,0 +1,16 @@
+FROM php:8.2-apache
+
+# Copia tus archivos al contenedor
+COPY . /var/www/html/
+
+# Habilita el módulo de reescritura (útil si usas .htaccess)
+RUN a2enmod rewrite
+
+# Expone el puerto 8080 porque Railway lo requiere
+EXPOSE 8080
+
+# Cambia el puerto de Apache a 8080 (por defecto es 80)
+RUN sed -i 's/80/8080/g' /etc/apache2/ports.conf /etc/apache2/sites-enabled/000-default.conf
+
+# Inicia Apache en primer plano
+CMD ["apache2-foreground"]

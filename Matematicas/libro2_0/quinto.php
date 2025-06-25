@@ -216,7 +216,7 @@ function actualizarFormula2() {
 </head>
 <body>
 <div class="seccion izquierda">
-    <form action="./Comienzo.php" method="POST" onsubmit="handleSubmit(event)">
+    <form action="./Comienzo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
     resumen: para establecer el teorema, despejamos F(x) y derivamos si igualdad para comprobar que es igual a f(x).
     <br><br>
     <p>
@@ -314,7 +314,7 @@ function actualizarFormula2() {
     </form>
 </div>
 <div class="seccion derecha">
-    <form action="./quinto.php" method="POST" onsubmit="handleSubmit(event)">
+    <form action="./quinto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
     <h2>Paso 2: Resolver la Integral</h2>
     <p>
         Ahora que hemos hecho la sustitución, resolvemos la integral en términos de la nueva variable \( u \). La integral de \( \sqrt{u} \) es:

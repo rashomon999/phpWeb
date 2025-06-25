@@ -807,6 +807,10 @@ function ocultarMensaje4() {
 <body>
 <div class="seccion izquierda">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <p>
+    Se llaman identidades recíprocas porque cada una de esas funciones es el recíproco multiplicativo
+     (la inversa respecto a la multiplicación) de otra función trigonométrica.
+    </p>
     <strong>identidades reciprocas: </strong> <br><br>
     denotar el angulo como a, ej: Cos(a).
     <br><br>
@@ -915,7 +919,7 @@ function ocultarMensaje4() {
 
 
 <div class="seccion derecha">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)">
+    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
     identidad pitagorica de tan y sec: <br><br>
 
 
@@ -1015,7 +1019,7 @@ function ocultarMensaje4() {
     <button onmousedown="mostrarMensaje()" onmouseup="ocultarMensaje()">Pista</button>
     <br><br>
     <p id="mensaje" style="display:none;">
-    <img src="..\img\Captura de pantalla 2024-12-31 082158.png" alt="" width="250">    
+    <img src="..\..\img\Captura de pantalla 2024-12-31 082158.png" alt="" width="250">    
     </p>
     <hr>
     <p><strong> Enunciado del Teorema de Pitágoras:</strong></p>

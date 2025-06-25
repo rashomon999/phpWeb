@@ -307,7 +307,7 @@ function actualizarFormula3() {
 </head>
 <body>
 <div class="seccion izquierda">
-    <form action="./sexto.php" method="POST" onsubmit="handleSubmit(event)">
+    <form action="./sexto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
 
     <p>La integral a resolver es:</p>
 <p> \( \int 5x \cos(x^2) \, dx \) </p>
@@ -396,7 +396,7 @@ function actualizarFormula3() {
     </form>
 </div>
 <div class="seccion derecha">
-    <form action="./sexto.php" method="POST" onsubmit="handleSubmit(event)">
+    <form action="./sexto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
 
     <h2>Paso 5: Integrar</h2>
     <p>
