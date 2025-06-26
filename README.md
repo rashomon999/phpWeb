@@ -15,4 +15,4 @@ Esto es una guia rapida, no se guardo la que tenia, ademas, si se comprende el c
 --------
 https://phpweb-production.up.railway.app/productos.php
 
-el transpaso de los datos se hizo con DBeaver
+el transpaso de los datos se hizo con DBeaver. el railway vale 5$ despues de un mes o algo asi, entonces dejara de funcionar.

@@ -41,10 +41,10 @@ $respuesta_107 = '';
 $respuesta_108 = '';
 $respuesta_109 = '';
 $respuesta_110 = '';
-
+$respuesta_61_1 = $respuesta_61_2 = $respuesta_61_3 = $respuesta_61_4 = '';
 
  
-
+$verificar_61_1 = $verificar_61_2 =$verificar_61_3 = $verificar_61_4 = '';
 $verificar_1 = ''; $verificar_2 = ''; $verificar_3 = '';  $verificar_3_2 = ''; $verificar_4 = ''; $verificar_5 = ''; 
 $verificar_6 = ''; $verificar_7 = '';  $verificar_8 = ''; $verificar_9 = ''; $verificar_10 = ''; 
 $verificar_11 = ''; $verificar_12 = ''; $verificar_13 = ''; $verificar_14 = ''; $verificar_15 = ''; 
@@ -674,6 +674,45 @@ if ($respuesta_61 === 'Elicitacion' || $respuesta_61 === 'elicitacion') {
     $verificar_61 = "incorrecto";
 }
 
+$respuesta_61_1 = isset($_POST['respuesta_61_1']) ? $_POST['respuesta_61_1'] : '';
+if ($respuesta_61_1 === 'Desarrollo' || $respuesta_61_1 === 'desarrollo') {
+    $verificar_61_1 = "correcto";
+} elseif ($respuesta_61_1 === '') {
+    $verificar_61_1 = '';
+} else {
+    $verificar_61_1 = "incorrecto";
+}
+
+$respuesta_61_2 = isset($_POST['respuesta_61_2']) ? $_POST['respuesta_61_2'] : '';
+if ($respuesta_61_2 === 'Development' || $respuesta_61_2 === 'development') {
+    $verificar_61_2 = "correcto";
+} elseif ($respuesta_61_2 === '') {
+    $verificar_61_2 = '';
+} else {
+    $verificar_61_2 = "incorrecto";
+}
+
+$respuesta_61_3 = isset($_POST['respuesta_61_3']) ? $_POST['respuesta_61_3'] : '';
+if ($respuesta_61_3 === 'Gestion' || $respuesta_61_3 === 'gestion') {
+    $verificar_61_3 = "correcto";
+} elseif ($respuesta_61_3 === '') {
+    $verificar_61_3 = '';
+} else {
+    $verificar_61_3 = "incorrecto";
+}
+
+$respuesta_61_4 = isset($_POST['respuesta_61_4']) ? $_POST['respuesta_61_4'] : '';
+if ($respuesta_61_4 === 'Management' || $respuesta_61_4 === 'management') {
+    $verificar_61_4 = "correcto";
+} elseif ($respuesta_61_4 === '') {
+    $verificar_61_4 = '';
+} else {
+    $verificar_61_4 = "incorrecto";
+}
+
+
+
+
  $respuesta_62 = isset($_POST['respuesta_62']) ? $_POST['respuesta_62'] : '';
 if ($respuesta_62 === 'Analisis' || $respuesta_62 === 'analisis') { 
     $verificar_62 = "correcto";
@@ -729,7 +768,7 @@ if ($respuesta_67 === 'Correspondencia con el Alcance' || $respuesta_67 === 'cor
 }
 
  $respuesta_68 = isset($_POST['respuesta_68']) ? $_POST['respuesta_68'] : '';
-if ($respuesta_68 === '57') { 
+if ($respuesta_68 === 'de proceso') { 
     $verificar_68 = "correcto";
 } elseif ($respuesta_68 === '') {
     $verificar_68 = '';
@@ -738,7 +777,7 @@ if ($respuesta_68 === '57') {
 }
 
  $respuesta_69 = isset($_POST['respuesta_69']) ? $_POST['respuesta_69'] : '';
-if ($respuesta_69 === '76') { 
+if ($respuesta_69 === 'no funcional') { 
     $verificar_69 = "correcto";
 } elseif ($respuesta_69 === '') {
     $verificar_69 = '';
@@ -747,7 +786,7 @@ if ($respuesta_69 === '76') {
 }
 
  $respuesta_70 = isset($_POST['respuesta_70']) ? $_POST['respuesta_70'] : '';
-if ($respuesta_70 === '95') { 
+if ($respuesta_70 === 'tecnologicas') { 
     $verificar_70 = "correcto";
 } elseif ($respuesta_70 === '') {
     $verificar_70 = '';
@@ -756,7 +795,7 @@ if ($respuesta_70 === '95') {
 }
 
  $respuesta_71 = isset($_POST['respuesta_71']) ? $_POST['respuesta_71'] : '';
-if ($respuesta_71 === '114') { 
+if ($respuesta_71 === 'calidad') { 
     $verificar_71 = "correcto";
 } elseif ($respuesta_71 === '') {
     $verificar_71 = '';
@@ -765,7 +804,7 @@ if ($respuesta_71 === '114') {
 }
 
  $respuesta_72 = isset($_POST['respuesta_72']) ? $_POST['respuesta_72'] : '';
-if ($respuesta_72 === '133') { 
+if ($respuesta_72 === 'producto') { 
     $verificar_72 = "correcto";
 } elseif ($respuesta_72 === '') {
     $verificar_72 = '';
@@ -1757,10 +1796,14 @@ expresarse cuantitativamente.
         <?php echo $verificar_60 ?>
 
     <hr>
-    <h2>Requerimientos</h2>
+    <h2>Requerimientos (actividades)</h2>
 <ul>
   <li>
-    <strong>Desarrollo de Requerimientos (Requirements Development)</strong>
+    <strong>
+    <input type="text" name="respuesta_61_1" value="<?php echo $respuesta_61_1; ?>" size="9">     
+    de Requerimientos (Requirements 
+    <input type="text" name="respuesta_61_2" value="<?php echo $respuesta_61_2; ?>" size="9"> 
+     )</strong>
     <ul>
       <li>
        <input type="text" name="respuesta_61" value="<?php echo $respuesta_61; ?>" size="9">   
@@ -1777,7 +1820,11 @@ expresarse cuantitativamente.
     </ul>
   </li>
   <li>
-    <strong>Gestión de Requerimientos (Requirements Management)</strong>
+    <strong>
+    <input type="text" name="respuesta_61_3" value="<?php echo $respuesta_61_3; ?>" size="9">     
+    de Requerimientos (Requirements 
+     <input type="text" name="respuesta_61_4" value="<?php echo $respuesta_61_4; ?>" size="9"> 
+     )</strong>
     <ul>
       <li>
          <input type="text" name="respuesta_65" value="<?php echo $respuesta_65; ?>" size="9"> 
@@ -1793,6 +1840,10 @@ expresarse cuantitativamente.
 </ul>
     <button type="submit">Enviar</button>
 <?php echo $verificar_61 ?>
+ <?php echo $verificar_61_1 ?>
+ <?php echo $verificar_61_2 ?>
+ <?php echo $verificar_61_3 ?>
+ <?php echo $verificar_61_4 ?>
 <?php echo $verificar_62 ?>
 <?php echo $verificar_63 ?>
 <?php echo $verificar_64 ?>
@@ -1800,6 +1851,45 @@ expresarse cuantitativamente.
 <?php echo $verificar_66 ?>
 <?php echo $verificar_67 ?>
 <hr>
+
+
+
+
+
+     <h3>Requerimiento 
+     <input type="text" name="respuesta_68" value="<?php echo $respuesta_68; ?>" size="25">    
+     :</h3>
+  <blockquote>
+    "El desarrollo del software deberá realizarse utilizando el marco Scrum."
+  </blockquote>
+  <p> <strong>Afecta a la forma de trabajar del equipo.</strong></p>
+
+  <h3>Requerimiento 
+  <input type="text" name="respuesta_69" value="<?php echo $respuesta_69; ?>" size="25">  
+  :</h3>
+  <blockquote>
+    "El sistema deberá tener una disponibilidad del 99.9%."
+  </blockquote>
+  <p> <strong>Afecta a una propiedad del sistema que el usuario final percibe.</strong></p>
+
+    <p>
+    los requerimientos no funcionales (Restricciones 
+    <input type="text" name="respuesta_70" value="<?php echo $respuesta_70; ?>" size="8">  
+     y Restricciones de 
+     <input type="text" name="respuesta_71" value="<?php echo $respuesta_71; ?>" size="8">
+     ), funcionales.
+    hacen parte de requerimientos de 
+    <input type="text" name="respuesta_72" value="<?php echo $respuesta_72; ?>" size="8">
+    .
+
+    </p>
+<button type="submit">Enviar</button>
+<?php echo $verificar_68 ?>
+<?php echo $verificar_69 ?>
+<?php echo $verificar_70 ?>
+<?php echo $verificar_71 ?>
+<?php echo $verificar_72 ?>
+    <hr>
     </form>
 </div>
 

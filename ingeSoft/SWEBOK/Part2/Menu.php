@@ -29,10 +29,8 @@
 </head>
 <body>
     <div class="centered-container">
-        <a class="btn" href=".\introduccion.php">Introduccion</a>
-        <a class="btn" href=".\Part1\Menu.php">Parte 1 SOFTWARE REQUIREMENTS</a>
-        <a class="btn" href=".\Part2\Menu.php">Parte 2  Software Architecture</a>
-       
+        <a class="btn" href=".\capitulo_2\index.php">capitulo 2</a>
+        <a class="btn" href=".\cuestionario_2\index.php">cuestionario 2</a>
     </div>
 </body>
 </html>
