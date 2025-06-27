@@ -334,7 +334,7 @@ function ocultarMensaje4() {
   <h2>DESGLOSE DE TEMAS DE LA ARQUITECTURA DE SOFTWARE</h2>
   <p>
     El desglose de temas para el área de conocimiento de Arquitectura de Software se muestra en la Figura 2.1.
-  </p>
+  </p> 
 
   <h3>1. Fundamentos de la Arquitectura de Software</h3>
   <h4>1.1. Los sentidos de “Arquitectura”</h4>
@@ -390,6 +390,7 @@ function ocultarMensaje4() {
 
   <hr>
 
+  
 
    
     </form>
