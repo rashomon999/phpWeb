@@ -18,7 +18,7 @@
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 300vh;
+    height: 305vh;
     }
 </style>
  
@@ -567,22 +567,13 @@ function ocultarMensaje4() {
   <p>
     Al igual que los manuales de ingeniería, los <strong>viewpoints</strong> de propósito general y especializados proporcionan un medio para documentar enfoques repetibles o reutilizables a problemas recurrentes del software.
   </p>
-
-  <p>
-    Clements et al. han introducido el concepto de <strong>viewtypes</strong>, que establecen una categorización triple de los <strong>viewpoints</strong>. Estas categorías son:
-  </p>
-
-  <ul>
-    <li><strong>Module viewtype</strong></li>
-    <li><strong>Component and connector viewtype</strong></li>
-    <li><strong>Allocation viewtype</strong> [9]</li>
-  </ul>
+ 
     </form>
 </div>
 
 <div class="centered-container">
     <a
-        name="siguiente"
+        name="siguiente" 
         id="siguiente"
         class="btn btn-primary"
         href="tercero.php"
