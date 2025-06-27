@@ -5,6 +5,7 @@ $txtID=(isset($_POST['txtID']))?($_POST['txtID']):"";
 $txtNombre=(isset($_POST['txtNombre']))?($_POST['txtNombre']):"";
 $txtImagen=(isset($_FILES["txtImagen"]['name']))?($_FILES["txtImagen"]['name']):"";
 $accion=(isset($_POST['accion']))?($_POST['accion']):"";
+$txtCategoria = (isset($_POST['txtCategoria'])) ? $_POST['txtCategoria'] : "principal"; // Nueva variable
 
 
 include("../config/bd.php"); 
@@ -15,6 +16,7 @@ switch($accion){
         case "Agregar":
             $sentenciaSQL= $conexion->prepare("INSERT INTO `libros` (nombre,imagen ) VALUES (:nombre,:imagen);");
             $sentenciaSQL->bindParam(':nombre',$txtNombre);
+            $sentenciaSQL->bindParam(':categoria', $txtCategoria); // Nueva línea
 
 
             $fecha= new DateTime();
@@ -36,41 +38,43 @@ switch($accion){
             break;
 
             case "Modificar":
-                if ($txtImagen != "") {
-                    $fecha = new DateTime();
-                    $nombreArchivo = $fecha->getTimestamp() . "_" . $_FILES["txtImagen"]["name"];
-                    $tmpImagen = $_FILES["txtImagen"]["tmp_name"];
-                    move_uploaded_file($tmpImagen, "../../img/" . $nombreArchivo);
-            
-                    // Obtener el nombre del libro actual antes de la actualización
-                    $sentenciaSQLNombreActual = $conexion->prepare("SELECT nombre, imagen FROM libros WHERE id=:id");
-                    $sentenciaSQLNombreActual->bindParam(':id', $txtID);
-                    $sentenciaSQLNombreActual->execute();
-                    $libroActual = $sentenciaSQLNombreActual->fetch(PDO::FETCH_ASSOC);
-            
-                    // Actualizar la información del libro con el nuevo nombre y la nueva imagen
-                    $sentenciaSQLActualizar = $conexion->prepare("UPDATE libros SET nombre=:nombre, imagen=:imagen WHERE id=:id");
-                    $sentenciaSQLActualizar->bindParam(':nombre', $txtNombre);
-                    $sentenciaSQLActualizar->bindParam(':imagen', $nombreArchivo);
-                    $sentenciaSQLActualizar->bindParam(':id', $txtID);
-                    $sentenciaSQLActualizar->execute();
-            
-                    // Eliminar la imagen anterior si existe y no es "imagen.jpg"
-                    if ($libroActual && $libroActual['imagen'] != "imagen.jpg") {
-                        $rutaImagenAnterior = "../../img/" . $libroActual['imagen'];
-                        if (file_exists($rutaImagenAnterior)) {
-                            unlink($rutaImagenAnterior);
-                        }
-                    }
-                } else {
-                    // Si no se selecciona una nueva imagen, solo actualizar el nombre del libro
-                    $sentenciaSQL = $conexion->prepare("UPDATE libros SET nombre=:nombre WHERE id=:id");
-                    $sentenciaSQL->bindParam(':nombre', $txtNombre);
-                    $sentenciaSQL->bindParam(':id', $txtID);
-                    $sentenciaSQL->execute();
-                }
-                header("Location: productos.php");
-                break;
+    if ($txtImagen != "") {
+        $fecha = new DateTime();
+        $nombreArchivo = $fecha->getTimestamp() . "_" . $_FILES["txtImagen"]["name"];
+        $tmpImagen = $_FILES["txtImagen"]["tmp_name"];
+        move_uploaded_file($tmpImagen, "../../img/" . $nombreArchivo);
+
+        // Obtener el nombre del libro actual antes de la actualización
+        $sentenciaSQLNombreActual = $conexion->prepare("SELECT nombre, imagen FROM libros WHERE id=:id");
+        $sentenciaSQLNombreActual->bindParam(':id', $txtID);
+        $sentenciaSQLNombreActual->execute();
+        $libroActual = $sentenciaSQLNombreActual->fetch(PDO::FETCH_ASSOC);
+
+        // Actualizar TODOS los campos incluyendo la categoría
+        $sentenciaSQLActualizar = $conexion->prepare("UPDATE libros SET nombre=:nombre, imagen=:imagen, categoria=:categoria WHERE id=:id");
+        $sentenciaSQLActualizar->bindParam(':nombre', $txtNombre);
+        $sentenciaSQLActualizar->bindParam(':imagen', $nombreArchivo);
+        $sentenciaSQLActualizar->bindParam(':categoria', $txtCategoria); // Asegúrate de incluir este
+        $sentenciaSQLActualizar->bindParam(':id', $txtID);
+        $sentenciaSQLActualizar->execute();
+
+        // Eliminar la imagen anterior si existe
+        if ($libroActual && $libroActual['imagen'] != "imagen.jpg") {
+            $rutaImagenAnterior = "../../img/" . $libroActual['imagen'];
+            if (file_exists($rutaImagenAnterior)) {
+                unlink($rutaImagenAnterior);
+            }
+        }
+    } else {
+        // Si no se cambia la imagen, actualizar solo nombre y categoría
+        $sentenciaSQL = $conexion->prepare("UPDATE libros SET nombre=:nombre, categoria=:categoria WHERE id=:id");
+        $sentenciaSQL->bindParam(':nombre', $txtNombre);
+        $sentenciaSQL->bindParam(':categoria', $txtCategoria); // Asegúrate de incluir este
+        $sentenciaSQL->bindParam(':id', $txtID);
+        $sentenciaSQL->execute();
+    }
+    header("Location: productos.php");
+    break;
             
 
         case "Cancelar":
@@ -89,6 +93,7 @@ switch($accion){
             
             $txtNombre=$libro['nombre'];
             $txtImagen=$libro['imagen'];
+            $txtCategoria = $libro['categoria']; // Nueva línea
             //print_r($libro['imagen']);
             break;
         case "borrar";
@@ -143,6 +148,14 @@ $listaLibros= $sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
         <input type="text" class="form-control" value="<?php echo $txtNombre?>" name="txtNombre"id="txtNombre" placeholder="Nombre">
         </div>
 
+        <div class="form-group">
+    <label for="txtCategoria">Categoría:</label>
+    <select class="form-control" name="txtCategoria" id="txtCategoria">
+        <option value="principal" <?php echo ($txtCategoria == 'principal') ? 'selected' : ''; ?>>Principal</option>
+        <option value="especial" <?php echo ($txtCategoria == 'especial') ? 'selected' : ''; ?>>Especial</option>
+    </select>
+</div>
+
         <div class = "form-group">
         <label for="txt.Nombre">Imagen:</label>
         
@@ -193,6 +206,7 @@ $listaLibros= $sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
                     <th>ID</th>
                     <th>Nombre</th>
                     <th>Imagen</th>
+                     <th>Categoría</th> 
                     <th>Acciones</th>
                 </tr>
             </thead>
@@ -204,6 +218,7 @@ $listaLibros= $sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
                     
                     <td><?php echo $libro['id'];?></td>
                     <td><?php echo $libro['nombre'];?></td>
+                    <td><?php echo $libro['categoria']; ?></td> <!-- Nueva celda -->
                     <td>
                 
                     <img src="../../img/<?php echo $libro['imagen'];?>" width=200 height=200 alt="">
