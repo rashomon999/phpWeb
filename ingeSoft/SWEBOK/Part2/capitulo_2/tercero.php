@@ -324,7 +324,8 @@ function ocultarMensaje4() {
     <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
   
   <p>
-    Clements et al. han introducido el concepto de <strong>viewtypes</strong>, que establecen una categorización triple de los <strong>viewpoints</strong>. Estas categorías son:
+    Clements et al. han introducido el concepto de <strong>viewtypes</strong>, que establecen 
+    una categorización triple de los <strong>viewpoints</strong>. Estas categorías son:
   </p>
 
   <ul>
@@ -351,6 +352,9 @@ function ocultarMensaje4() {
   </ul>
   <hr>
 
+
+
+  
   <p>
     Las <strong>architecture descriptions</strong> suelen utilizar múltiples <strong>architecture views</strong> para representar las diversas estructuras necesarias que abordan las diferentes preocupaciones de los distintos interesados.
   </p>

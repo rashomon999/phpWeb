@@ -50,7 +50,7 @@ $verificar_106 = '';$verificar_107 = '';$verificar_108 = '';$verificar_109 = '';
 
 if ($_POST) {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === 'diseño') {  
+   if ($respuesta_1 === 'manifiestan') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -60,7 +60,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === 'disciplina') {  
+   if ($respuesta_2 === 'formas') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -70,7 +70,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === 'arte') {  
+   if ($respuesta_3 === 'requerimientos') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -80,7 +80,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === 'ciencia') {  
+   if ($respuesta_4 === 'atributos de calidad') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -90,7 +90,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === 'construir') {  
+   if ($respuesta_5 === 'propiedades emergentes') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -100,7 +100,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === 'conceptos') {  
+   if ($respuesta_6 === 'restricciones') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -110,7 +110,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === 'principios') {  
+   if ($respuesta_7 === 'forma') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -120,7 +120,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === 'procesos') {  
+   if ($respuesta_8 === 'arquitectura') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -130,7 +130,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === 'materializa') {  
+   if ($respuesta_9 === 'productos') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -140,7 +140,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === 'disciplina') {  
+   if ($respuesta_10 === 'estaticas') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -150,7 +150,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === 'diseño de software') {  
+   if ($respuesta_11 === 'evolucionan') {  
        $verificar_11 = "correcto";
    } elseif ($respuesta_11 === '') {
        $verificar_11 = '';
@@ -161,7 +161,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
      $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-     if ($respuesta_12 === 'diseño arquitectonico') {  
+     if ($respuesta_12 === 'preocupaciones') {  
          $verificar_12 = "correcto";
      } elseif ($respuesta_12 === '') {
          $verificar_12 = '';
@@ -171,7 +171,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la segunda pregunta
      $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-     if ($respuesta_13 === 'diseño de alto nivel') { 
+     if ($respuesta_13 === 'proporcionar') { 
          $verificar_13 = "correcto";
      } elseif ($respuesta_13 === '') {
          $verificar_13 = '';
@@ -181,7 +181,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la tercera pregunta
      $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-     if ($respuesta_14 === ' diseño detallado') {  
+     if ($respuesta_14 === 'comprension') {  
          $verificar_14 = "correcto";
      } elseif ($respuesta_14 === '') {
          $verificar_14 = '';
@@ -191,7 +191,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la cuarta pregunta
      $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-     if ($respuesta_15 === 'resultado') { 
+     if ($respuesta_15 === 'guie') { 
          $verificar_15 = "correcto";
      } elseif ($respuesta_15 === '') {
          $verificar_15 = '';
@@ -201,7 +201,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la quinta pregunta
      $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-     if ($respuesta_16 === 'aplicar') {  
+     if ($respuesta_16 === 'diseño y construccion') {  
          $verificar_16 = "correcto";
      } elseif ($respuesta_16 === '') {
          $verificar_16 = '';
@@ -211,7 +211,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la sexta pregunta
      $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-     if ($respuesta_17 === 'disciplina') {  
+     if ($respuesta_17 === 'preliminar') {  
          $verificar_17 = "correcto";
      } elseif ($respuesta_17 === '') {
          $verificar_17 = '';
@@ -221,7 +221,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la séptima pregunta
      $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-     if ($respuesta_18 === 'procesos') {  
+     if ($respuesta_18 === 'base') {  
          $verificar_18 = "correcto";
      } elseif ($respuesta_18 === '') {
          $verificar_18 = '';
@@ -231,7 +231,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la octava pregunta
      $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-     if ($respuesta_19 === '126') {  
+     if ($respuesta_19 === 'inversa') {  
          $verificar_19 = "correcto";
      } elseif ($respuesta_19 === '') {
          $verificar_19 = '';
@@ -241,7 +241,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la novena pregunta
      $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
-     if ($respuesta_20 === 'arquitecturas') {  
+     if ($respuesta_20 === 'documentada') {  
          $verificar_20 = "correcto";
      } elseif ($respuesta_20 === '') {
          $verificar_20 = '';
@@ -251,7 +251,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la décima pregunta
      $respuesta_21 = isset($_POST['respuesta_21']) ? $_POST['respuesta_21'] : '';
-     if ($respuesta_21 === 'sistemas') {  
+     if ($respuesta_21 === 'diseños') {  
          $verificar_21 = "correcto";
      } elseif ($respuesta_21 === '') {
          $verificar_21 = '';
@@ -261,7 +261,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la undécima pregunta
      $respuesta_22 = isset($_POST['respuesta_22']) ? $_POST['respuesta_22'] : '';
-     if ($respuesta_22 === 'descripciones') {  
+     if ($respuesta_22 === 'copias') {  
          $verificar_22 = "correcto";
      } elseif ($respuesta_22 === '') {
          $verificar_22 = '';
@@ -271,7 +271,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
    $respuesta_23 = isset($_POST['respuesta_23']) ? $_POST['respuesta_23'] : '';
-   if ($respuesta_23 === '1990') {  
+   if ($respuesta_23 === 'comunicacion') {  
        $verificar_23 = "correcto";
    } elseif ($respuesta_23 === '') {
        $verificar_23 = '';
@@ -281,7 +281,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_24 = isset($_POST['respuesta_24']) ? $_POST['respuesta_24'] : '';
-   if ($respuesta_24 === 'estructura organizacional') {  
+   if ($respuesta_24 === 'comunicacion') {  
        $verificar_24 = "correcto";
    } elseif ($respuesta_24 === '') {
        $verificar_24 = '';
@@ -291,7 +291,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_25 = isset($_POST['respuesta_25']) ? $_POST['respuesta_25'] : '';
-   if ($respuesta_25 === 'sistema o componente') { 
+   if ($respuesta_25 === 'mejorar la comunicacion') { 
        $verificar_25 = "correcto";
    } elseif ($respuesta_25 === '') {
        $verificar_25 = '';
@@ -301,7 +301,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_26 = isset($_POST['respuesta_26']) ? $_POST['respuesta_26'] : '';
-   if ($respuesta_26 === 'evolutivo') {  
+   if ($respuesta_26 === 'reutilizacion') {  
        $verificar_26 = "correcto";
    } elseif ($respuesta_26 === '') {
        $verificar_26 = '';
@@ -311,7 +311,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_27 = isset($_POST['respuesta_27']) ? $_POST['respuesta_27'] : '';
-   if ($respuesta_27 === 'distinguir') {  
+   if ($respuesta_27 === 'comunes') {  
        $verificar_27 = "correcto";
    } elseif ($respuesta_27 === '') {
        $verificar_27 = '';
@@ -321,7 +321,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_28 = isset($_POST['respuesta_28']) ? $_POST['respuesta_28'] : '';
-   if ($respuesta_28 === 'estructura organizacional') {  
+   if ($respuesta_28 === 'entorno') {  
        $verificar_28 = "correcto";
    } elseif ($respuesta_28 === '') {
        $verificar_28 = '';
@@ -331,7 +331,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_29 = isset($_POST['respuesta_29']) ? $_POST['respuesta_29'] : '';
-   if ($respuesta_29 === 'sistema o componente') {  
+   if ($respuesta_29 === 'interesado') {  
        $verificar_29 = "correcto";
    } elseif ($respuesta_29 === '') {
        $verificar_29 = '';
@@ -341,7 +341,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_30 = isset($_POST['respuesta_30']) ? $_POST['respuesta_30'] : '';
-   if ($respuesta_30 === 'codigo') {  
+   if ($respuesta_30 === 'fundamental') {  
        $verificar_30 = "correcto";
    } elseif ($respuesta_30 === '') {
        $verificar_30 = '';
@@ -351,7 +351,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_31 = isset($_POST['respuesta_31']) ? $_POST['respuesta_31'] : '';
-   if ($respuesta_31 === 'sistema') {  
+   if ($respuesta_31 === 'mental') {  
        $verificar_31 = "correcto";
    } elseif ($respuesta_31 === '') {
        $verificar_31 = '';
@@ -361,7 +361,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_32 = isset($_POST['respuesta_32']) ? $_POST['respuesta_32'] : '';
-   if ($respuesta_32 === 'conjunto de estructuras') {  
+   if ($respuesta_32 === 'tangible') {  
        $verificar_32 = "correcto";
    } elseif ($respuesta_32 === '') {
        $verificar_32 = '';
@@ -371,7 +371,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_33 = isset($_POST['respuesta_33']) ? $_POST['respuesta_33'] : '';
-   if ($respuesta_33 === 'necesarias') {  
+   if ($respuesta_33 === 'analizar') {  
        $verificar_33 = "correcto";
    } elseif ($respuesta_33 === '') {
        $verificar_33 = '';
@@ -380,7 +380,7 @@ if ($_POST) {
    }
 
  $respuesta_34 = isset($_POST['respuesta_34']) ? $_POST['respuesta_34'] : '';
-if ($respuesta_34 === 'razonar') { 
+if ($respuesta_34 === 'organizar') { 
     $verificar_34 = "correcto";
 } elseif ($respuesta_34 === '') {
     $verificar_34 = '';
@@ -389,7 +389,7 @@ if ($respuesta_34 === 'razonar') {
 }
 
  $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
-if ($respuesta_35 === 'sistema') { 
+if ($respuesta_35 === 'diseño') { 
     $verificar_35 = "correcto";
 } elseif ($respuesta_35 === '') {
     $verificar_35 = '';
@@ -398,7 +398,7 @@ if ($respuesta_35 === 'sistema') {
 }
 
  $respuesta_36 = isset($_POST['respuesta_36']) ? $_POST['respuesta_36'] : '';
-if ($respuesta_36 === 'elementos de software') { 
+if ($respuesta_36 === 'guiar') { 
     $verificar_36 = "correcto";
 } elseif ($respuesta_36 === '') {
     $verificar_36 = '';
@@ -407,7 +407,7 @@ if ($respuesta_36 === 'elementos de software') {
 }
 
  $respuesta_37 = isset($_POST['respuesta_37']) ? $_POST['respuesta_37'] : '';
-if ($respuesta_37 === 'relaciones entre ellos') { 
+if ($respuesta_37 === 'implementacion') { 
     $verificar_37 = "correcto";
 } elseif ($respuesta_37 === '') {
     $verificar_37 = '';
@@ -416,7 +416,7 @@ if ($respuesta_37 === 'relaciones entre ellos') {
 }
 
  $respuesta_38 = isset($_POST['respuesta_38']) ? $_POST['respuesta_38'] : '';
-if ($respuesta_38 === 'propiedades de ambos') { 
+if ($respuesta_38 === 'descripciones de arquitectura') { 
     $verificar_38 = "correcto";
 } elseif ($respuesta_38 === '') {
     $verificar_38 = '';
@@ -425,7 +425,7 @@ if ($respuesta_38 === 'propiedades de ambos') {
 }
 
  $respuesta_39 = isset($_POST['respuesta_39']) ? $_POST['respuesta_39'] : '';
-if ($respuesta_39 === 'estructuras') { 
+if ($respuesta_39 === 'architecture descriptions') { 
     $verificar_39 = "correcto";
 } elseif ($respuesta_39 === '') {
     $verificar_39 = '';
@@ -434,7 +434,7 @@ if ($respuesta_39 === 'estructuras') {
 }
 
  $respuesta_40 = isset($_POST['respuesta_40']) ? $_POST['respuesta_40'] : '';
-if ($respuesta_40 === 'no son arquitectura') { 
+if ($respuesta_40 === 'documentan') { 
     $verificar_40 = "correcto";
 } elseif ($respuesta_40 === '') {
     $verificar_40 = '';
@@ -442,8 +442,9 @@ if ($respuesta_40 === 'no son arquitectura') {
     $verificar_40 = "incorrecto";
 }
 
+
  $respuesta_41 = isset($_POST['respuesta_41']) ? $_POST['respuesta_41'] : '';
-if ($respuesta_41 === '1990') { 
+if ($respuesta_41 === 'diseñadores') { 
     $verificar_41 = "correcto";
 } elseif ($respuesta_41 === '') {
     $verificar_41 = '';
@@ -452,7 +453,7 @@ if ($respuesta_41 === '1990') {
 }
 
  $respuesta_42 = isset($_POST['respuesta_42']) ? $_POST['respuesta_42'] : '';
-if ($respuesta_42 === 'disciplina') { 
+if ($respuesta_42 === 'ingenieros') { 
     $verificar_42 = "correcto";
 } elseif ($respuesta_42 === '') {
     $verificar_42 = '';
@@ -461,7 +462,7 @@ if ($respuesta_42 === 'disciplina') {
 }
 
  $respuesta_43 = isset($_POST['respuesta_43']) ? $_POST['respuesta_43'] : '';
-if ($respuesta_43 === 'estudio mas generico') { 
+if ($respuesta_43 === 'programadores') { 
     $verificar_43 = "correcto";
 } elseif ($respuesta_43 === '') {
     $verificar_43 = '';
@@ -470,7 +471,7 @@ if ($respuesta_43 === 'estudio mas generico') {
 }
 
  $respuesta_44 = isset($_POST['respuesta_44']) ? $_POST['respuesta_44'] : '';
-if ($respuesta_44 === 'estructuras') { 
+if ($respuesta_44 === 'practicas') { 
     $verificar_44 = "correcto";
 } elseif ($respuesta_44 === '') {
     $verificar_44 = '';
@@ -479,7 +480,7 @@ if ($respuesta_44 === 'estructuras') {
 }
 
  $respuesta_45 = isset($_POST['respuesta_45']) ? $_POST['respuesta_45'] : '';
-if ($respuesta_45 === 'arquitecturas') { 
+if ($respuesta_45 === 'vistas de arquitectura') { 
     $verificar_45 = "correcto";
 } elseif ($respuesta_45 === '') {
     $verificar_45 = '';
@@ -488,7 +489,7 @@ if ($respuesta_45 === 'arquitecturas') {
 }
 
  $respuesta_46 = isset($_POST['respuesta_46']) ? $_POST['respuesta_46'] : '';
-if ($respuesta_46 === 'software') { 
+if ($respuesta_46 === 'representa') { 
     $verificar_46 = "correcto";
 } elseif ($respuesta_46 === '') {
     $verificar_46 = '';
@@ -497,7 +498,7 @@ if ($respuesta_46 === 'software') {
 }
 
  $respuesta_47 = isset($_POST['respuesta_47']) ? $_POST['respuesta_47'] : '';
-if ($respuesta_47 === 'estructura del codigo') { 
+if ($respuesta_47 === 'aspectos') { 
     $verificar_47 = "correcto";
 } elseif ($respuesta_47 === '') {
     $verificar_47 = '';
@@ -506,7 +507,7 @@ if ($respuesta_47 === 'estructura del codigo') {
 }
 
  $respuesta_48 = isset($_POST['respuesta_48']) ? $_POST['respuesta_48'] : '';
-if ($respuesta_48 === 'implicaciones') { 
+if ($respuesta_48 === 'arquitectura') { 
     $verificar_48 = "correcto";
 } elseif ($respuesta_48 === '') {
     $verificar_48 = '';
@@ -515,7 +516,7 @@ if ($respuesta_48 === 'implicaciones') {
 }
 
  $respuesta_49 = isset($_POST['respuesta_49']) ? $_POST['respuesta_49'] : '';
-if ($respuesta_49 === 'interacciones') { 
+if ($respuesta_49 === 'una o mas preocupaciones') { 
     $verificar_49 = "correcto";
 } elseif ($respuesta_49 === '') {
     $verificar_49 = '';
@@ -524,7 +525,7 @@ if ($respuesta_49 === 'interacciones') {
 }
 
  $respuesta_50 = isset($_POST['respuesta_50']) ? $_POST['respuesta_50'] : '';
-if ($respuesta_50 === 'estructuras diferentes') { 
+if ($respuesta_50 === 'preocupaciones') { 
     $verificar_50 = "correcto";
 } elseif ($respuesta_50 === '') {
     $verificar_50 = '';
@@ -533,7 +534,7 @@ if ($respuesta_50 === 'estructuras diferentes') {
 }
 
  $respuesta_51 = isset($_POST['respuesta_51']) ? $_POST['respuesta_51'] : '';
-if ($respuesta_51 === 'Conceptos o propiedades' || $respuesta_51 === 'conceptos o propiedades') { 
+if ($respuesta_51 === 'distintas') { 
     $verificar_51 = "correcto";
 } elseif ($respuesta_51 === '') {
     $verificar_51 = '';
@@ -542,7 +543,7 @@ if ($respuesta_51 === 'Conceptos o propiedades' || $respuesta_51 === 'conceptos 
 }
 
  $respuesta_52 = isset($_POST['respuesta_52']) ? $_POST['respuesta_52'] : '';
-if ($respuesta_52 === 'sistema en su entorno') { 
+if ($respuesta_52 === 'logical view' || $respuesta_52 === 'vista logica') { 
     $verificar_52 = "correcto";
 } elseif ($respuesta_52 === '') {
     $verificar_52 = '';
@@ -551,7 +552,7 @@ if ($respuesta_52 === 'sistema en su entorno') {
 }
 
  $respuesta_53 = isset($_POST['respuesta_53']) ? $_POST['respuesta_53'] : '';
-if ($respuesta_53 === 'elementos') { 
+if ($respuesta_53 === 'satisfara') { 
     $verificar_53 = "correcto";
 } elseif ($respuesta_53 === '') {
     $verificar_53 = '';
@@ -560,7 +561,7 @@ if ($respuesta_53 === 'elementos') {
 }
 
  $respuesta_54 = isset($_POST['respuesta_54']) ? $_POST['respuesta_54'] : '';
-if ($respuesta_54 === 'relaciones') { 
+if ($respuesta_54 === 'los requerimientos funcionales') { 
     $verificar_54 = "correcto";
 } elseif ($respuesta_54 === '') {
     $verificar_54 = '';
@@ -569,7 +570,7 @@ if ($respuesta_54 === 'relaciones') {
 }
 
  $respuesta_55 = isset($_POST['respuesta_55']) ? $_POST['respuesta_55'] : '';
-if ($respuesta_55 === 'principios') { 
+if ($respuesta_55 === 'process view' || $respuesta_55 === 'vista de procesos' ) { 
     $verificar_55 = "correcto";
 } elseif ($respuesta_55 === '') {
     $verificar_55 = '';
@@ -579,7 +580,7 @@ if ($respuesta_55 === 'principios') {
 
 
  $respuesta_56 = isset($_POST['respuesta_56']) ? $_POST['respuesta_56'] : '';
-if ($respuesta_56 === 'diseño') { 
+if ($respuesta_56 === 'utilizara concurrencia') { 
     $verificar_56 = "correcto";
 } elseif ($respuesta_56 === '') {
     $verificar_56 = '';
@@ -588,7 +589,7 @@ if ($respuesta_56 === 'diseño') {
 }
 
  $respuesta_57 = isset($_POST['respuesta_57']) ? $_POST['respuesta_57'] : '';
-if ($respuesta_57 === 'evolucion') { 
+if ($respuesta_57 === 'physical view' || $respuesta_57 === 'vista fisica') { 
     $verificar_57 = "correcto";
 } elseif ($respuesta_57 === '') {
     $verificar_57 = '';
@@ -597,7 +598,7 @@ if ($respuesta_57 === 'evolucion') {
 }
 
  $respuesta_58 = isset($_POST['respuesta_58']) ? $_POST['respuesta_58'] : '';
-if ($respuesta_58 === 'fundamental') { 
+if ($respuesta_58 === 'desplegado') { 
     $verificar_58 = "correcto";
 } elseif ($respuesta_58 === '') {
     $verificar_58 = '';
@@ -606,7 +607,7 @@ if ($respuesta_58 === 'fundamental') {
 }
 
  $respuesta_59 = isset($_POST['respuesta_59']) ? $_POST['respuesta_59'] : '';
-if ($respuesta_59 === 'elemento') { 
+if ($respuesta_59 === 'distribuido') { 
     $verificar_59 = "correcto";
 } elseif ($respuesta_59 === '') {
     $verificar_59 = '';
@@ -615,7 +616,7 @@ if ($respuesta_59 === 'elemento') {
 }
 
  $respuesta_60 = isset($_POST['respuesta_60']) ? $_POST['respuesta_60'] : '';
-if ($respuesta_60 === 'entorno') { 
+if ($respuesta_60 === 'sistema') { 
     $verificar_60 = "correcto";
 } elseif ($respuesta_60 === '') {
     $verificar_60 = '';
@@ -624,7 +625,7 @@ if ($respuesta_60 === 'entorno') {
 }
 
  $respuesta_61 = isset($_POST['respuesta_61']) ? $_POST['respuesta_61'] : '';
-if ($respuesta_61 === 'exterior') { 
+if ($respuesta_61 === 'development view' || $respuesta_61 === 'vista de desarrollo') { 
     $verificar_61 = "correcto";
 } elseif ($respuesta_61 === '') {
     $verificar_61 = '';
@@ -633,7 +634,7 @@ if ($respuesta_61 === 'exterior') {
 }
 
  $respuesta_62 = isset($_POST['respuesta_62']) ? $_POST['respuesta_62'] : '';
-if ($respuesta_62 === 'contexto') { 
+if ($respuesta_62 === 'descompone') { 
     $verificar_62 = "correcto";
 } elseif ($respuesta_62 === '') {
     $verificar_62 = '';
@@ -642,7 +643,7 @@ if ($respuesta_62 === 'contexto') {
 }
 
  $respuesta_63 = isset($_POST['respuesta_63']) ? $_POST['respuesta_63'] : '';
-if ($respuesta_63 === 'personas') { 
+if ($respuesta_63 === 'alto nivel') { 
     $verificar_63 = "correcto";
 } elseif ($respuesta_63 === '') {
     $verificar_63 = '';
@@ -651,7 +652,7 @@ if ($respuesta_63 === 'personas') {
 }
 
  $respuesta_64 = isset($_POST['respuesta_64']) ? $_POST['respuesta_64'] : '';
-if ($respuesta_64 === 'organizaciones') { 
+if ($respuesta_64 === 'unidades') { 
     $verificar_64 = "correcto";
 } elseif ($respuesta_64 === '') {
     $verificar_64 = '';
@@ -660,7 +661,7 @@ if ($respuesta_64 === 'organizaciones') {
 }
 
  $respuesta_65 = isset($_POST['respuesta_65']) ? $_POST['respuesta_65'] : '';
-if ($respuesta_65 === 'software') { 
+if ($respuesta_65 === 'dependencias') { 
     $verificar_65 = "correcto";
 } elseif ($respuesta_65 === '') {
     $verificar_65 = '';
@@ -669,7 +670,7 @@ if ($respuesta_65 === 'software') {
 }
 
  $respuesta_66 = isset($_POST['respuesta_66']) ? $_POST['respuesta_66'] : '';
-if ($respuesta_66 === 'interactuar') { 
+if ($respuesta_66 === 'construira') { 
     $verificar_66 = "correcto";
 } elseif ($respuesta_66 === '') {
     $verificar_66 = '';
@@ -678,7 +679,7 @@ if ($respuesta_66 === 'interactuar') {
 }
 
  $respuesta_67 = isset($_POST['respuesta_67']) ? $_POST['respuesta_67'] : '';
-if ($respuesta_67 === 'interesados') { 
+if ($respuesta_67 === 'preocupaciones') { 
     $verificar_67 = "correcto";
 } elseif ($respuesta_67 === '') {
     $verificar_67 = '';
@@ -687,7 +688,7 @@ if ($respuesta_67 === 'interesados') {
 }
 
  $respuesta_68 = isset($_POST['respuesta_68']) ? $_POST['respuesta_68'] : '';
-if ($respuesta_68 === 'roles') { 
+if ($respuesta_68 === 'convenciones') { 
     $verificar_68 = "correcto";
 } elseif ($respuesta_68 === '') {
     $verificar_68 = '';
@@ -696,7 +697,7 @@ if ($respuesta_68 === 'roles') {
 }
 
  $respuesta_69 = isset($_POST['respuesta_69']) ? $_POST['respuesta_69'] : '';
-if ($respuesta_69 === 'intereses') { 
+if ($respuesta_69 === 'convenciones') { 
     $verificar_69 = "correcto";
 } elseif ($respuesta_69 === '') {
     $verificar_69 = '';
@@ -705,7 +706,7 @@ if ($respuesta_69 === 'intereses') {
 }
 
  $respuesta_70 = isset($_POST['respuesta_70']) ? $_POST['respuesta_70'] : '';
-if ($respuesta_70 === 'preocupaciones') { 
+if ($respuesta_70 === '95') { 
     $verificar_70 = "correcto";
 } elseif ($respuesta_70 === '') {
     $verificar_70 = '';
@@ -714,7 +715,7 @@ if ($respuesta_70 === 'preocupaciones') {
 }
 
  $respuesta_71 = isset($_POST['respuesta_71']) ? $_POST['respuesta_71'] : '';
-if ($respuesta_71 === 'concerns') { 
+if ($respuesta_71 === 'documentan') { 
     $verificar_71 = "correcto";
 } elseif ($respuesta_71 === '') {
     $verificar_71 = '';
@@ -723,7 +724,7 @@ if ($respuesta_71 === 'concerns') {
 }
 
  $respuesta_72 = isset($_POST['respuesta_72']) ? $_POST['respuesta_72'] : '';
-if ($respuesta_72 === 'profundidad') { 
+if ($respuesta_72 === 'architecture viewpoint' || $respuesta_72 === 'punto de vista de arquitectura') { 
     $verificar_72 = "correcto";
 } elseif ($respuesta_72 === '') {
     $verificar_72 = '';
@@ -732,7 +733,7 @@ if ($respuesta_72 === 'profundidad') {
 }
 
  $respuesta_73 = isset($_POST['respuesta_73']) ? $_POST['respuesta_73'] : '';
-if ($respuesta_73 === 'aspecto') { 
+if ($respuesta_73 === 'viewpoints') { 
     $verificar_73 = "correcto";
 } elseif ($respuesta_73 === '') {
     $verificar_73 = '';
@@ -741,7 +742,7 @@ if ($respuesta_73 === 'aspecto') {
 }
 
  $respuesta_74 = isset($_POST['respuesta_74']) ? $_POST['respuesta_74'] : '';
-if ($respuesta_74 === 'aislada') { 
+if ($respuesta_74 === 'creacion') { 
     $verificar_74 = "correcto";
 } elseif ($respuesta_74 === '') {
     $verificar_74 = '';
@@ -750,7 +751,7 @@ if ($respuesta_74 === 'aislada') {
 }
 
  $respuesta_75 = isset($_POST['respuesta_75']) ? $_POST['respuesta_75'] : '';
-if ($respuesta_75 === 'punto de vista') { 
+if ($respuesta_75 === 'architecture views') { 
     $verificar_75 = "correcto";
 } elseif ($respuesta_75 === '') {
     $verificar_75 = '';
@@ -759,7 +760,7 @@ if ($respuesta_75 === 'punto de vista') {
 }
 
  $respuesta_76 = isset($_POST['respuesta_76']) ? $_POST['respuesta_76'] : '';
-if ($respuesta_76 === 'simultaneamente') { 
+if ($respuesta_76 === 'viewpoint') { 
     $verificar_76 = "correcto";
 } elseif ($respuesta_76 === '') {
     $verificar_76 = '';
@@ -768,7 +769,7 @@ if ($respuesta_76 === 'simultaneamente') {
 }
 
  $respuesta_77 = isset($_POST['respuesta_77']) ? $_POST['respuesta_77'] : '';
-if ($respuesta_77 === 'la separacion de preocupaciones') { 
+if ($respuesta_77 === 'convenciones') { 
     $verificar_77 = "correcto";
 } elseif ($respuesta_77 === '') {
     $verificar_77 = '';
@@ -777,7 +778,7 @@ if ($respuesta_77 === 'la separacion de preocupaciones') {
 }
 
  $respuesta_78 = isset($_POST['respuesta_78']) ? $_POST['respuesta_78'] : '';
-if ($respuesta_78 === 'fundamental') { 
+if ($respuesta_78 === 'viewpoint') { 
     $verificar_78 = "correcto";
 } elseif ($respuesta_78 === '') {
     $verificar_78 = '';
@@ -785,8 +786,8 @@ if ($respuesta_78 === 'fundamental') {
     $verificar_78 = "incorrecto";
 }
 
- $respuesta_79 = isset($_POST['respuesta_79']) ? $_POST['respuesta_79'] : '';
-if ($respuesta_79 === 'preocupaciones') { 
+ $respuesta_79 = isset($_POST['respuesta_79']) ? $_POST['respuesta_79'] : ''; 
+if ($respuesta_79 === 'Module viewpoint' || $respuesta_79 === 'module viewpoint' || $respuesta_79 === 'vista de modulos') { 
     $verificar_79 = "correcto";
 } elseif ($respuesta_79 === '') {
     $verificar_79 = '';
@@ -795,7 +796,7 @@ if ($respuesta_79 === 'preocupaciones') {
 }
 
  $respuesta_80 = isset($_POST['respuesta_80']) ? $_POST['respuesta_80'] : '';
-if ($respuesta_80 === 'roles') { 
+if ($respuesta_80 === 'implementacion') { 
     $verificar_80 = "correcto";
 } elseif ($respuesta_80 === '') {
     $verificar_80 = '';
@@ -804,7 +805,7 @@ if ($respuesta_80 === 'roles') {
 }
 
  $respuesta_81 = isset($_POST['respuesta_81']) ? $_POST['respuesta_81'] : '';
-if ($respuesta_81 === 'cuando') { 
+if ($respuesta_81 === 'modulos') { 
     $verificar_81 = "correcto";
 } elseif ($respuesta_81 === '') {
     $verificar_81 = '';
@@ -813,7 +814,7 @@ if ($respuesta_81 === 'cuando') {
 }
 
  $respuesta_82 = isset($_POST['respuesta_82']) ? $_POST['respuesta_82'] : '';
-if ($respuesta_82 === 'cuanto costara') { 
+if ($respuesta_82 === 'organizacion') { 
     $verificar_82 = "correcto";
 } elseif ($respuesta_82 === '') {
     $verificar_82 = '';
@@ -822,7 +823,11 @@ if ($respuesta_82 === 'cuanto costara') {
 }
 
  $respuesta_83 = isset($_POST['respuesta_83']) ? $_POST['respuesta_83'] : '';
-if ($respuesta_83 === 'hace') { 
+if ($respuesta_83 === 'Component and Connector Viewpoint'
+    || $respuesta_83 === 'component and Connector Viewpoint'
+|| $respuesta_83 === 'Punto de vista de componentes y conectores'
+||  $respuesta_83 === 'punto de vista de componentes y conectores'
+) { 
     $verificar_83 = "correcto";
 } elseif ($respuesta_83 === '') {
     $verificar_83 = '';
@@ -831,7 +836,7 @@ if ($respuesta_83 === 'hace') {
 }
 
  $respuesta_84 = isset($_POST['respuesta_84']) ? $_POST['respuesta_84'] : '';
-if ($respuesta_84 === 'como usarlo') { 
+if ($respuesta_84 === 'organizacion') { 
     $verificar_84 = "correcto";
 } elseif ($respuesta_84 === '') {
     $verificar_84 = '';
@@ -840,7 +845,7 @@ if ($respuesta_84 === 'como usarlo') {
 }
 
  $respuesta_85 = isset($_POST['respuesta_85']) ? $_POST['respuesta_85'] : '';
-if ($respuesta_85 === 'influencia') { 
+if ($respuesta_85 === 'tiempo de ejecucion') { 
     $verificar_85 = "correcto";
 } elseif ($respuesta_85 === '') {
     $verificar_85 = '';
@@ -849,7 +854,7 @@ if ($respuesta_85 === 'influencia') {
 }
 
  $respuesta_86 = isset($_POST['respuesta_86']) ? $_POST['respuesta_86'] : '';
-if ($respuesta_86 === 'entorno') { 
+if ($respuesta_86 === 'escala') { 
     $verificar_86 = "correcto";
 } elseif ($respuesta_86 === '') {
     $verificar_86 = '';
@@ -858,7 +863,7 @@ if ($respuesta_86 === 'entorno') {
 }
 
  $respuesta_87 = isset($_POST['respuesta_87']) ? $_POST['respuesta_87'] : '';
-if ($respuesta_87 === 'funcionales') { 
+if ($respuesta_87 === 'interacciones') { 
     $verificar_87 = "correcto";
 } elseif ($respuesta_87 === '') {
     $verificar_87 = '';
@@ -866,8 +871,11 @@ if ($respuesta_87 === 'funcionales') {
     $verificar_87 = "incorrecto";
 }
 
- $respuesta_88 = isset($_POST['respuesta_88']) ? $_POST['respuesta_88'] : '';
-if ($respuesta_88 === 'no funcionales') { 
+ $respuesta_88 = isset($_POST['respuesta_88']) ? $_POST['respuesta_88'] : ''; 
+if ($respuesta_88 === 'Logical viewpoint' || $respuesta_88 === 'logical viewpoint' ||
+$respuesta_88 === 'Punto de vista logico'||
+$respuesta_88 === 'punto de vista logico'
+) { 
     $verificar_88 = "correcto";
 } elseif ($respuesta_88 === '') {
     $verificar_88 = '';
@@ -876,7 +884,7 @@ if ($respuesta_88 === 'no funcionales') {
 }
 
  $respuesta_89 = isset($_POST['respuesta_89']) ? $_POST['respuesta_89'] : '';
-if ($respuesta_89 === 'restricciones') { 
+if ($respuesta_89 === 'conceptos fundamentales') { 
     $verificar_89 = "correcto";
 } elseif ($respuesta_89 === '') {
     $verificar_89 = '';
@@ -885,7 +893,7 @@ if ($respuesta_89 === 'restricciones') {
 }
 
  $respuesta_90 = isset($_POST['respuesta_90']) ? $_POST['respuesta_90'] : '';
-if ($respuesta_90 === '63') { 
+if ($respuesta_90 === 'dominio') { 
     $verificar_90 = "correcto";
 } elseif ($respuesta_90 === '') {
     $verificar_90 = '';
@@ -894,7 +902,7 @@ if ($respuesta_90 === '63') {
 }
 
  $respuesta_91 = isset($_POST['respuesta_91']) ? $_POST['respuesta_91'] : '';
-if ($respuesta_91 === '84') { 
+if ($respuesta_91 === 'capacidades') { 
     $verificar_91 = "correcto";
 } elseif ($respuesta_91 === '') {
     $verificar_91 = '';
@@ -903,7 +911,9 @@ if ($respuesta_91 === '84') {
 }
 
  $respuesta_92 = isset($_POST['respuesta_92']) ? $_POST['respuesta_92'] : '';
-if ($respuesta_92 === '105') { 
+if ($respuesta_92 === 'Scenarios' || $respuesta_92 === 'use cases viewpoint'
+|| $respuesta_92 === 'scenarios'
+) { 
     $verificar_92 = "correcto";
 } elseif ($respuesta_92 === '') {
     $verificar_92 = '';
@@ -912,7 +922,7 @@ if ($respuesta_92 === '105') {
 }
 
  $respuesta_93 = isset($_POST['respuesta_93']) ? $_POST['respuesta_93'] : '';
-if ($respuesta_93 === '126') { 
+if ($respuesta_93 === 'interactuan') { 
     $verificar_93 = "correcto";
 } elseif ($respuesta_93 === '') {
     $verificar_93 = '';
@@ -921,7 +931,7 @@ if ($respuesta_93 === '126') {
 }
 
  $respuesta_94 = isset($_POST['respuesta_94']) ? $_POST['respuesta_94'] : '';
-if ($respuesta_94 === '147') { 
+if ($respuesta_94 === 'usuarios') { 
     $verificar_94 = "correcto";
 } elseif ($respuesta_94 === '') {
     $verificar_94 = '';
@@ -930,7 +940,7 @@ if ($respuesta_94 === '147') {
 }
 
  $respuesta_95 = isset($_POST['respuesta_95']) ? $_POST['respuesta_95'] : '';
-if ($respuesta_95 === '168') { 
+if ($respuesta_95 === 'sistema') { 
     $verificar_95 = "correcto";
 } elseif ($respuesta_95 === '') {
     $verificar_95 = '';
@@ -939,7 +949,11 @@ if ($respuesta_95 === '168') {
 }
 
  $respuesta_96 = isset($_POST['respuesta_96']) ? $_POST['respuesta_96'] : '';
-if ($respuesta_96 === '189') { 
+if ($respuesta_96 === 'Information viewpoint' || $respuesta_96 === 'information viewpoint' ||
+$respuesta_96 === 'Punto de vista logico'  || 
+$respuesta_96 === 'punto de vista logico'  
+
+) { 
     $verificar_96 = "correcto";
 } elseif ($respuesta_96 === '') {
     $verificar_96 = '';
@@ -948,7 +962,7 @@ if ($respuesta_96 === '189') {
 }
 
  $respuesta_97 = isset($_POST['respuesta_97']) ? $_POST['respuesta_97'] : '';
-if ($respuesta_97 === '210') { 
+if ($respuesta_97 === 'elementos clave') { 
     $verificar_97 = "correcto";
 } elseif ($respuesta_97 === '') {
     $verificar_97 = '';
@@ -957,7 +971,7 @@ if ($respuesta_97 === '210') {
 }
 
  $respuesta_98 = isset($_POST['respuesta_98']) ? $_POST['respuesta_98'] : '';
-if ($respuesta_98 === '231') { 
+if ($respuesta_98 === 'informacion') { 
     $verificar_98 = "correcto";
 } elseif ($respuesta_98 === '') {
     $verificar_98 = '';
@@ -966,7 +980,7 @@ if ($respuesta_98 === '231') {
 }
 
  $respuesta_99 = isset($_POST['respuesta_99']) ? $_POST['respuesta_99'] : '';
-if ($respuesta_99 === '252') { 
+if ($respuesta_99 === 'accede') { 
     $verificar_99 = "correcto";
 } elseif ($respuesta_99 === '') {
     $verificar_99 = '';
@@ -976,7 +990,7 @@ if ($respuesta_99 === '252') {
 
 
  $respuesta_100 = isset($_POST['respuesta_100']) ? $_POST['respuesta_100'] : '';
-if ($respuesta_100 === '44') { 
+if ($respuesta_100 === 'almacenan') { 
     $verificar_100 = "correcto";
 } elseif ($respuesta_100 === '') {
     $verificar_100 = '';
@@ -985,7 +999,8 @@ if ($respuesta_100 === '44') {
 }
 
  $respuesta_101 = isset($_POST['respuesta_101']) ? $_POST['respuesta_101'] : '';
-if ($respuesta_101 === '66') { 
+if ($respuesta_101 === 'Deployment viewpoint' || $respuesta_101 === 'deployment viewpoint'
+|| $respuesta_101 === 'Punto de vista de despliegue' || $respuesta_101 === 'punto de vista de despliegue') { 
     $verificar_101 = "correcto";
 } elseif ($respuesta_101 === '') {
     $verificar_101 = '';
@@ -994,7 +1009,7 @@ if ($respuesta_101 === '66') {
 }
 
  $respuesta_102 = isset($_POST['respuesta_102']) ? $_POST['respuesta_102'] : '';
-if ($respuesta_102 === '88') { 
+if ($respuesta_102 === 'configura') { 
     $verificar_102 = "correcto";
 } elseif ($respuesta_102 === '') {
     $verificar_102 = '';
@@ -1003,7 +1018,7 @@ if ($respuesta_102 === '88') {
 }
 
  $respuesta_103 = isset($_POST['respuesta_103']) ? $_POST['respuesta_103'] : '';
-if ($respuesta_103 === '110') { 
+if ($respuesta_103 === 'despliega') { 
     $verificar_103 = "correcto";
 } elseif ($respuesta_103 === '') {
     $verificar_103 = '';
@@ -1012,7 +1027,7 @@ if ($respuesta_103 === '110') {
 }
 
  $respuesta_104 = isset($_POST['respuesta_104']) ? $_POST['respuesta_104'] : '';
-if ($respuesta_104 === '132') { 
+if ($respuesta_104 === 'operacion') { 
     $verificar_104 = "correcto";
 } elseif ($respuesta_104 === '') {
     $verificar_104 = '';
@@ -1021,7 +1036,7 @@ if ($respuesta_104 === '132') {
 }
 
  $respuesta_105 = isset($_POST['respuesta_105']) ? $_POST['respuesta_105'] : '';
-if ($respuesta_105 === '154') { 
+if ($respuesta_105 === 'vocabulario') { 
     $verificar_105 = "correcto";
 } elseif ($respuesta_105 === '') {
     $verificar_105 = '';
@@ -1030,7 +1045,7 @@ if ($respuesta_105 === '154') {
 }
 
  $respuesta_106 = isset($_POST['respuesta_106']) ? $_POST['respuesta_106'] : '';
-if ($respuesta_106 === '176') { 
+if ($respuesta_106 === 'lenguaje') { 
     $verificar_106 = "correcto";
 } elseif ($respuesta_106 === '') {
     $verificar_106 = '';
@@ -1039,7 +1054,7 @@ if ($respuesta_106 === '176') {
 }
 
  $respuesta_107 = isset($_POST['respuesta_107']) ? $_POST['respuesta_107'] : '';
-if ($respuesta_107 === '198') { 
+if ($respuesta_107 === 'especificar') { 
     $verificar_107 = "correcto";
 } elseif ($respuesta_107 === '') {
     $verificar_107 = '';
@@ -1048,7 +1063,7 @@ if ($respuesta_107 === '198') {
 }
 
  $respuesta_108 = isset($_POST['respuesta_108']) ? $_POST['respuesta_108'] : '';
-if ($respuesta_108 === '220') { 
+if ($respuesta_108 === 'trabajo') { 
     $verificar_108 = "correcto";
 } elseif ($respuesta_108 === '') {
     $verificar_108 = '';
@@ -1057,7 +1072,7 @@ if ($respuesta_108 === '220') {
 }
 
  $respuesta_109 = isset($_POST['respuesta_109']) ? $_POST['respuesta_109'] : '';
-if ($respuesta_109 === '242') { 
+if ($respuesta_109 === 'comunidad') { 
     $verificar_109 = "correcto";
 } elseif ($respuesta_109 === '') {
     $verificar_109 = '';
@@ -1092,11 +1107,11 @@ if ($respuesta_110 === '264') {
         max-width: 100%;
         height: auto;
     }
-    .seccion {
+     .seccion {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 308vh;
+    height: 305vh;
     }
 </style>
  
@@ -1368,69 +1383,58 @@ function ocultarMensaje4() {
 </head>
 <body> 
 <div class="seccion izquierda">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    
-    
-    <h3>INTRODUCCIÓN</h3>
+    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
     <p>
-    En contraste con la edición anterior, esta edición crea un área de conocimiento (KA) de arquitectura de 
-    software, separada del área de conocimiento de 
-    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="8">  
-    de software, debido al significativo interés y 
-    crecimiento de la disciplina desde los años 90.
+    Las preocupaciones se
+    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="8"> 
+    en varias 
+    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="8"> 
+    familiares, incluyendo 
+    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="10"> 
+    , 
+    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="20"> 
+    o "ilities", 
+    <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="20"> 
+    (que pueden ser deseadas o prohibidas) y varios tipos de 
+    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="10">
+    (como las mencionadas 
+    anteriormente). Véase el área de conocimiento de Calidad de Software.
     </p>
 
-   
-  <h3>1. Fundamentos de la Arquitectura de Software</h3>
-  <h4>1.1. Los sentidos de “Arquitectura”</h4>
-  <p>
-    La ingeniería de software y disciplinas relacionadas usan muchos sentidos del término “arquitectura”. 
-  </p>
-  <p>
-    Primero, “arquitectura” a menudo se refiere a una 
-    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="8">  
-    : el 
-    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="8">
-    y la 
-    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="8">
-    de 
-    <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="8">
-    cosas — en este caso, sistemas intensivos en software. La disciplina involucra 
-    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="8">
-    , 
-    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="8">
-    ,
-     procesos y métodos que la comunidad ha descubierto y adoptado.
-  </p>
-  <p>
-    Segundo, “arquitectura” se refiere a los
-    diversos
-    <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="8">
-    mediante los cuales se 
-    <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="8">
-    esa 
-    <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="8">
-    . La arquitectura de software también se 
-    considera parte del 
-    <input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="15">
-    ; generalmente se considera un proceso de múltiples etapas,
-    dividido en las siguientes etapas:
-  </p>
-  <ul>
-    <li>Etapa de 
-    <input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="19">    
-    </li>
-    <li>Etapa de 
-    <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="19">        
-    </li>
-    <li>Etapa de 
-    <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="19">        
-    </li>
-  </ul>
+    <p>
+    El tema 2, <em>Descripción de la Arquitectura de Software</em>, muestra cómo las preocupaciones
+    dan 
+    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="10">
+    a la 
+    <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="10">
+    y a los 
+    <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="10">
+    de trabajo que describen esas arquitecturas.
+    </p>
 
+    <p>
+    Ejemplos de preocupaciones se ilustran en la Figura 2.2.
+    </p>
 
-  <hr>
-    <button type="submit">Enviar</button> 
+    <p>
+    Las preocupaciones no son 
+    <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="10">
+    ; 
+    <input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="10">
+    a lo largo del ciclo de vida de un sistema y a medida 
+    que 
+    <input type="text" value="<?php echo $respuesta_11; ?>" size="10" readonly>
+    las tecnologías, políticas y otras influencias.
+    </p>
+
+    <p>
+    Por ejemplo, debido al aumento de la conciencia sobre el cambio climático, hay un creciente interés 
+    en 
+    <input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="10">
+    como la eficiencia energética y la sostenibilidad [24].
+    </p>
+
+     <button type="submit">Enviar</button> 
             <?php echo $verificar_1 ?>
 <?php echo $verificar_2 ?>
 <?php echo $verificar_3 ?>
@@ -1442,87 +1446,89 @@ function ocultarMensaje4() {
 <?php echo $verificar_9 ?>
 <?php echo $verificar_10 ?>
 <?php echo $verificar_11 ?>
- <?php echo $verificar_12 ?>
-<?php echo $verificar_13 ?>
-<?php echo $verificar_14 ?>
-<hr>
-  <p>
-    El diseño de software es el foco del Capítulo 3. Este capítulo se enfoca en la arquitectura y el diseño arquitectónico.
-  </p>
-  <p>
-    Tercero, “arquitectura” se refiere al 
-    <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="8">
-    resultado de 
-    <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="8">
-    la 
-    <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="8">
-    y los
-    <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="8">
-    del 
-    <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="20">
-    para idear 
-    <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="11">
-    para 
-    <input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>" size="11">
-    de software. Las arquitecturas como resultados se expresan en 
-    <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="11">
-    de arquitectura. 
-    Esto se discute en el tema correspondiente.
-  </p>
-  <p>
-    El concepto de arquitectura ha evolucionado, y hoy en día existen muchas definiciones en uso. 
-    Una definición temprana de arquitectura, de 
-    <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="8">
-    , enfatizaba la estructura del software:
-  </p>
-  <blockquote>
-    <strong>Arquitectura.</strong> La 
-    <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="22">
-    de un 
-    <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="22">
-    . [de: IEEE Std 610.12-1990, 
-    IEEE Glossary of Software Engineering Terminology]
-  </blockquote>
-  <p>
-    Esta definición no hacía justicia al pensamiento 
-    <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="8">
-    sobre arquitectura; por ejemplo, esta definición 
-    no nos permite 
-    <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="8">
-    el diseño detallado de un módulo de su archivo <code>Makefile</code>. Cualquiera 
-    de los ejemplos refleja una
-    <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="24">
-    del 
-    <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="24">
-    de software, pero no debería 
-    considerarse arquitectura. 
-  </p>
-  <p>
-    Además, el énfasis en la estructura a menudo se limitaba a la estructura del 
-    <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="8">
-    y no lograba abarcar todas
-    las estructuras del sistema de software:
-  </p>
-  <blockquote>
-    La arquitectura de software de un 
-    <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="8">
-    es el 
-    <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="19">
-    <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="8">
-    para 
-    <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="8">
-    sobre el 
-    <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="8">
-    .
-    Estas estructuras comprenden 
-    <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="20">,
-    <input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="20">, y 
-    <input type="text" name="respuesta_38" value="<?php echo $respuesta_38; ?>" size="20">
-    .[2*]
-  </blockquote>
+<?php echo $verificar_12 ?>
+<br><br>
+<button onmousedown="mostrarMensaje()" onmouseup="ocultarMensaje()">Ejemplos</button>
+
+<div id="mensaje" style="display:none;">
+ <h4>Ejemplos de preocupaciones arquitectónicas (Figura 2.2):</h4>
+    <ul>
+    <li>Modos de operación</li>
+    <li>Estructura del software</li>
+    <li>Integración de subsistemas</li>
+    <li>Sostenibilidad</li>
+    <li>Características del sistema</li>
+    <li>Capacidad de prueba (<em>testability</em>)</li>
+    <li>Usabilidad</li>
+    <li>Uso</li>
+    <li>Experiencia del usuario</li>
+    </ul>
+</div>
+
 
     <hr>
-       <button type="submit">Enviar</button>
+      
+
+
+
+
+
+    <h3>1.3. Usos de la Arquitectura</h3>
+
+  <p>
+    Uno de los usos principales de la arquitectura de un sistema de software es 
+    <input type="text" name="respuesta_12" value="<?php echo $respuesta_13; ?>" size="10">
+    a quienes 
+    trabajan con él una 
+    <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="10">
+    compartida del sistema que 
+    <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="10">
+    su 
+    <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="17">
+    .
+  </p>
+
+  <p>
+    Una arquitectura también sirve como una concepción 
+    <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="10">
+    del sistema de software que proporciona 
+    una 
+    <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="6">
+    para analizar y evaluar alternativas.
+  </p>
+
+    <p>
+    Un tercer uso común es permitir la ingeniería 
+    <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="8">
+    (o arquitectura 
+    <input type="text" value="<?php echo $respuesta_18; ?>" size="6" readonly>
+    ) al ayudar a quienes
+    trabajan con el sistema a entender un sistema de software existente antes de emprender tareas de
+    mantenimiento, mejora o modificación.
+    </p>
+
+    <p>
+    Para respaldar estos usos, la arquitectura debe estar 
+    <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="10">
+    (véase el tema <em>Descripción de 
+    la Arquitectura de Software</em>).
+    </p>
+
+    <p>
+    La Ley de Conway postula que “las organizaciones que diseñan sistemas... están forzadas a producir 
+    <input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>" size="10">
+    que son 
+    <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="10">
+    de las estructuras de 
+    <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="10">
+    de estas organizaciones” [11]. 
+    </p>
+
+<button type="submit">Enviar</button>
+            
+            <?php echo $verificar_12 ?>
+<?php echo $verificar_13 ?>
+<?php echo $verificar_14 ?>
 <?php echo $verificar_15 ?>
 <?php echo $verificar_16 ?>
 <?php echo $verificar_17 ?>
@@ -1531,10 +1537,119 @@ function ocultarMensaje4() {
 <?php echo $verificar_20 ?>
 <?php echo $verificar_21 ?>
 <?php echo $verificar_22 ?>
-    <?php echo $verificar_23 ?>
-<?php echo $verificar_24 ?>
-<?php echo $verificar_25 ?>
-<?php echo $verificar_26 ?>
+<?php echo $verificar_23 ?>
+
+    <hr>
+    <p>
+    Estudios empíricos han observado que las arquitecturas de estos sistemas a menudo reflejan las estructuras
+    de 
+    <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="10">
+    de esas organizaciones [28]. Dependiendo del sistema de software y de la organización, esto 
+    puede ser una fortaleza o una debilidad.
+    </p>
+
+    <p>
+    La arquitectura puede 
+    <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="20">
+    dentro de un equipo grande o comprometerla. Cada parte de 
+    la organización puede basar sus actividades de planificación, costos y cronogramas en su conocimiento 
+    de la arquitectura.
+    </p>
+
+    <p>
+    Crear una arquitectura bien planificada y documentada es un enfoque para aumentar la aplicabilidad y 
+    <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="9">
+    de diseños y componentes de software.
+    </p>
+
+    <p>
+    La arquitectura forma la base para diseñar familias de programas o líneas de productos de software. Esto 
+    puede lograrse identificando las características 
+    <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="9">
+    entre los miembros de dichas familias y diseñando
+    componentes reutilizables y personalizables para abordar la variabilidad entre los miembros de la familia.
+    </p>
+
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_24 ?>
+    <?php echo $verificar_25 ?>
+    <?php echo $verificar_26 ?>
+    <?php echo $verificar_27 ?>
+    <hr>
+
+
+    <h3>2. Descripción de la Arquitectura de Software</h3>
+
+    <p>
+    En el tema 1, <em>Fundamentos de la Arquitectura de Software</em>, se definió la arquitectura de software 
+    como los 
+    <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="35">
+    de un sistema de software en su 
+    <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="8">
+    .
+    </p>
+
+    <p>
+    Pero cada 
+    <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="8">
+    puede tener una noción diferente de lo que es 
+    <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="9">
+    para ese sistema de software,
+    dada su perspectiva.
+    </p>
+
+    <p>
+    Tener un modelo 
+    <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="9">
+    de la arquitectura de un sistema puede estar bien para sistemas pequeños 
+    y para personas que trabajan solas. Sin embargo, para sistemas grandes y complejos desarrollados 
+    y operados por equipos, una representación 
+    <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="9">
+    es invaluable, especialmente a medida que la 
+    concepción del sistema evoluciona y que personas se integran o abandonan el equipo.
+    </p>
+
+    <p>
+    Tener una representación concreta como producto de trabajo también puede servir como base para 
+    <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="9">
+    la arquitectura, 
+    <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="9">
+    su 
+    <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="9">
+    y 
+    <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="9">
+    su 
+    <input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="12">
+    . Estos productos de 
+    trabajo se llaman 
+    <input type="text" name="respuesta_38" value="<?php echo $respuesta_38; ?>" size="25">
+    (
+    <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="25">    
+    <em>ADs</em>).
+    </p>
+
+
+  
+    <p>
+    Las <strong>descripciones de arquitectura</strong> (ADs) 
+    <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="9">
+    la arquitectura de un sistema de software. Están dirigidas a aquellos interesados del sistema 
+    que tienen preocupaciones sobre el sistema de software que son respondidas por la arquitectura.
+    </p>
+
+    <p>
+    Como se indicó en el tema 1, <em>Fundamentos de la Arquitectura de Software</em>, una audiencia 
+    principal está compuesta por los 
+    <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="9">,
+    <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="9">, y
+    <input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="9">
+    cuyas preocupaciones 
+    están relacionadas con la construcción del sistema. Para estos interesados, las ADs sirven 
+    como un plano para guiar la construcción del sistema de software.
+    </p>
+
+    
+<button type="submit">Enviar</button>
 <?php echo $verificar_27 ?>
 <?php echo $verificar_28 ?>
 <?php echo $verificar_29 ?>
@@ -1547,33 +1662,12 @@ function ocultarMensaje4() {
 <?php echo $verificar_36 ?>
 <?php echo $verificar_37 ?>
 <?php echo $verificar_38 ?>
-    <hr>
-  <img src="../../../../img/mapa.png" alt="">
-<hr>
-
-  <p><strong>Paréntesis</strong></p>
-
-  <p>El texto está criticando definiciones de <strong>"arquitectura de software"</strong> que eran demasiado vagas, al punto que no diferenciaban entre:</p>
-
-  <ul>
-    <li>Decisiones de <strong>alto nivel</strong> (arquitectura verdadera), y</li>
-    <li>Decisiones de <strong>bajo nivel o de implementación</strong> (como <code>Makefiles</code> o diseño detallado de funciones).</li>
-  </ul>
-
-  <p>Ambos (diseño detallado y <code>Makefile</code>) muestran 
-  <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="20">
-  , <strong>pero 
-  <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="20">  
-  </strong>.</p>
-
-  <button type="submit">Enviar</button>
 <?php echo $verificar_39 ?>
 <?php echo $verificar_40 ?>
-
-  <hr>
-
-
-
+<?php echo $verificar_41 ?>
+<?php echo $verificar_42 ?>
+<?php echo $verificar_43 ?>
+    <hr>
     </form>
 </div>
 
@@ -1581,115 +1675,94 @@ function ocultarMensaje4() {
 
 
 <div class="seccion derecha">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h4>Evolución de la Disciplina</h4>
+    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
     
     <p>
-    Sin embargo, a mediados de los años 
-    <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="4"> 
-    , la arquitectura de software emergió como una 
-    <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="8"> 
-    más amplia que involucra un 
-    <input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="18">
-    de las 
-    <input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>" size="8">
-     y 
-    <input type="text" name="respuesta_45" value="<?php echo $respuesta_45; ?>" size="8">
-     de 
-    <input type="text" name="respuesta_46" value="<?php echo $respuesta_46; ?>" size="8">
-    .
-    </p>
-    
-    <p>
-    Muchas estructuras de sistemas de software no se reflejan directamente en la 
-    <input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="20">
-    .
-    Ambos tipos de estructuras tienen 
-    <input type="text" name="respuesta_48" value="<?php echo $respuesta_48; ?>" size="10">
-    para el sistema en su totalidad: ¿Qué comportamientos 
-    es capaz de realizar el sistema? ¿Qué 
-    <input type="text" name="respuesta_49" value="<?php echo $respuesta_49; ?>" size="10">
-    tiene con otros sistemas? ¿Cómo se manejan propiedades
-    como la seguridad y la protección?
-    </p>
-    
-    <p>
-    El reconocimiento de que el software contiene muchas 
-    <input type="text" name="respuesta_50" value="<?php echo $respuesta_50; ?>" size="16">
-    ha motivado la discusión
-    de varios conceptos interesantes sobre la arquitectura de software (y el diseño de software en general),
-    lo cual ha llevado a definiciones actuales como la siguiente:
+    Frecuentemente, estas representaciones están especializadas en función de 
+    las 
+    <input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>" size="9">
+    existentes de las comunidades o disciplinas involucradas, con el fin 
+    de abordar eficazmente esta variedad de interesados y preocupaciones.
     </p>
 
-<button type="submit">Enviar</button>
-<?php echo $verificar_41 ?>
-<?php echo $verificar_42 ?>
-<?php echo $verificar_43 ?>
-<?php echo $verificar_44 ?>
+    <p>
+    Estas diversas representaciones se denominan 
+    <input type="text" name="respuesta_45" value="<?php echo $respuesta_45; ?>" size="18">
+    .
+    </p>
+
+    
+
+    
+    <h3>2.1. Architecture Views and Viewpoints</h3>
+
+    <p>
+    Una <strong>architecture view</strong> 
+    <input type="text" name="respuesta_46" value="<?php echo $respuesta_46; ?>" size="10">
+    uno o más 
+    <input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="10">
+    de una 
+    <input type="text" name="respuesta_48" value="<?php echo $respuesta_48; ?>" size="10">
+    para abordar 
+    <input type="text" name="respuesta_49" value="<?php echo $respuesta_49; ?>" size="25">
+    (<em>concerns</em>) [38*]. Las <strong>views</strong> abordan 
+    <input type="text" name="respuesta_50" value="<?php echo $respuesta_50; ?>" size="12">
+    <input type="text" name="respuesta_51" value="<?php echo $respuesta_51; ?>" size="8">
+    — por ejemplo:
+    </p>
+    
+    <ul>
+    <li>Una 
+    <input type="text" name="respuesta_52" value="<?php echo $respuesta_52; ?>" size="14">
+    (representa cómo el sistema 
+    <input type="text" name="respuesta_53" value="<?php echo $respuesta_53; ?>" size="8">
+    <input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>" size="25">
+    );</li>
+    <li>Una <em>
+    <input type="text" name="respuesta_55" value="<?php echo $respuesta_55; ?>" size="14">    
+    </em> (representa cómo el sistema 
+    <input type="text" name="respuesta_56" value="<?php echo $respuesta_56; ?>" size="17">  
+    );</li>
+    <li>Una
+    <input type="text" name="respuesta_57" value="<?php echo $respuesta_57; ?>" size="14">     
+    (representa cómo será 
+    <input type="text" name="respuesta_58" value="<?php echo $respuesta_58; ?>" size="10">  
+    y 
+    <input type="text" name="respuesta_59" value="<?php echo $respuesta_59; ?>" size="10">  
+    el 
+    <input type="text" name="respuesta_60" value="<?php echo $respuesta_60; ?>" size="10">  
+    );</li>
+    <li>Una <em>
+    <input type="text" name="respuesta_61" value="<?php echo $respuesta_61; ?>" size="14">    
+    </em> (representa cómo se 
+    <input type="text" name="respuesta_62" value="<?php echo $respuesta_62; ?>" size="10"> 
+    el diseño de 
+    <input type="text" name="respuesta_63" value="<?php echo $respuesta_63; ?>" size="10"> 
+    en 
+    <input type="text" name="respuesta_64" value="<?php echo $respuesta_64; ?>" size="10"> 
+    de implementación, las 
+    <input type="text" name="respuesta_65" value="<?php echo $respuesta_65; ?>" size="10"> 
+    entre ellas y cómo se 
+    <input type="text" name="respuesta_66" value="<?php echo $respuesta_66; ?>" size="10"> 
+    la implementación).</li>
+    </ul>
+
+  <p>
+    Separar 
+    <input type="text" name="respuesta_67" value="<?php echo $respuesta_67; ?>" size="10">
+    por <strong>view</strong> permite que los interesados se concentren en unos pocos aspectos 
+    a la vez y proporciona un medio para gestionar la comprensibilidad y complejidad general de la arquitectura.
+  </p>
+
+    <button type="submit">Enviar</button>
+    
+            <?php echo $verificar_44 ?>
             <?php echo $verificar_45 ?>
         <?php echo $verificar_46 ?>
         <?php echo $verificar_47 ?>
         <?php echo $verificar_48 ?>
         <?php echo $verificar_49 ?>
         <?php echo $verificar_50 ?>
-
-
-    <hr>
-    <blockquote>
-    <strong>Arquitectura (de un sistema).</strong> 
-    <input type="text" name="respuesta_51" value="<?php echo $respuesta_51; ?>" size="25">
-    fundamentales de un 
-    <input type="text" name="respuesta_52" value="<?php echo $respuesta_52; ?>" size="25">
-    , plasmados en sus 
-    <input type="text" name="respuesta_53" value="<?php echo $respuesta_53; ?>" size="9">
-    , 
-    <input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>" size="9">
-    y en los 
-    <input type="text" name="respuesta_55" value="<?php echo $respuesta_55; ?>" size="9">
-    de su 
-    <input type="text" name="respuesta_56" value="<?php echo $respuesta_56; ?>" size="9">
-    y 
-    <input type="text" name="respuesta_57" value="<?php echo $respuesta_57; ?>" size="9">
-    . [23]
-    </blockquote>
-  
-    <p>
-    Las ideas clave en esa definición son las siguientes:
-    </p>
-    
-    <ol>
-    <li>
-    La arquitectura trata sobre lo que es 
-    <input type="text" name="respuesta_58" value="<?php echo $respuesta_58; ?>" size="9">
-    para un sistema de software; no todo 
-    <input type="text" name="respuesta_59" value="<?php echo $respuesta_59; ?>" size="9">
-    , interconexión o interfaz se considera 
-    <input type="text"  value="<?php echo $respuesta_58; ?>" size="9" readonly>
-    .
-    </li>
-    <li>
-    La arquitectura considera un sistema en su 
-    <input type="text" name="respuesta_60" value="<?php echo $respuesta_60; ?>" size="9">
-    . Al igual que la arquitectura de edificios, 
-    la arquitectura de software tiene una mirada hacia el 
-    <input type="text" name="respuesta_61" value="<?php echo $respuesta_61; ?>" size="9">
-    ; considera el 
-    <input type="text" name="respuesta_62" value="<?php echo $respuesta_62; ?>" size="9">
-    del sistema
-    más allá de sus límites, incluyendo las 
-    <input type="text" name="respuesta_63" value="<?php echo $respuesta_63; ?>" size="9">
-    , 
-    <input type="text" name="respuesta_64" value="<?php echo $respuesta_64; ?>" size="9">
-    , 
-    <input type="text" name="respuesta_65" value="<?php echo $respuesta_65; ?>" size="9">
-    , hardware y otros 
-    dispositivos con los que el sistema debe 
-    <input type="text" name="respuesta_66" value="<?php echo $respuesta_66; ?>" size="9">
-    .
-    </li>
-    </ol>
-  
- <button type="submit">Enviar</button>
         <?php echo $verificar_51 ?>
         <?php echo $verificar_52 ?>
         <?php echo $verificar_53 ?>
@@ -1706,60 +1779,43 @@ function ocultarMensaje4() {
 <?php echo $verificar_64 ?>
 <?php echo $verificar_65 ?>
 <?php echo $verificar_66 ?>
-    <hr>
+<?php echo $verificar_67 ?>
+  <hr>
+  <p>
+    La práctica de la arquitectura ha evolucionado del uso de texto y diagramas informales al 
+    uso de representaciones más rigurosas. Cada <strong>architecture view</strong> representa elementos 
+    arquitectónicos del sistema utilizando 
+    <input type="text" name="respuesta_68" value="<?php echo $respuesta_68; ?>" size="10">
+    , notaciones y modelos bien definidos [38*].
+  </p>
 
+  <p>
+    Las 
+    <input type="text" name="respuesta_69" value="<?php echo $respuesta_69; ?>" size="10">
+    de cada <strong>view</strong> se 
+    <input type="text" name="respuesta_71" value="<?php echo $respuesta_71; ?>" size="10">
+    como un 
+    <input type="text" name="respuesta_72" value="<?php echo $respuesta_72; ?>" size="20">
+    [23]. Los 
+    <input type="text" name="respuesta_73" value="<?php echo $respuesta_73; ?>" size="11">
+    guían la 
+    <input type="text" name="respuesta_74" value="<?php echo $respuesta_74; ?>" size="11">
+    , interpretación y uso 
+    de las 
+    <input type="text" name="respuesta_75" value="<?php echo $respuesta_75; ?>" size="11">
+    . Cada 
+    <input type="text" name="respuesta_76" value="<?php echo $respuesta_76; ?>" size="11">
+    vincula las 
+    preocupaciones de la audiencia interesada con un conjunto de 
+    <input type="text" name="respuesta_77" value="<?php echo $respuesta_77; ?>" size="11">
+    . En la arquitectura 
+    basada en modelos, cada <strong>view</strong> puede ser verificada automáticamente contra 
+    su 
+    <input type="text" name="respuesta_78" value="<?php echo $respuesta_78; ?>" size="11">
+    .
+  </p>
 
-    
-
-
-    <h4>1.2. Interesados y Preocupaciones</h4>
- 
-    <p>
-    Un sistema de software tiene muchos 
-    <input type="text" name="respuesta_67" value="<?php echo $respuesta_67; ?>" size="9">
-    con 
-    <input type="text" name="respuesta_68" value="<?php echo $respuesta_68; ?>" size="9">
-    e 
-    <input type="text" name="respuesta_69" value="<?php echo $respuesta_69; ?>" size="9">
-    diversos respecto a ese sistema. 
-    Estos intereses variados se denominan <em>
-    <input type="text" name="respuesta_70" value="<?php echo $respuesta_70; ?>" size="9">    
-    preocupaciones
-    (
-    <input type="text" name="respuesta_71" value="<?php echo $respuesta_71; ?>" size="9">    
-    )
-    </em>
-    , siguiendo la separación de 
-    preocupaciones de Dijkstra:
-    </p>
-
-    <blockquote>
-    Permítanme tratar de explicarles lo que, a mi gusto, es característico de todo pensamiento inteligente.
-    Es estar dispuesto a estudiar en 
-    <input type="text" name="respuesta_72" value="<?php echo $respuesta_72; ?>" size="9"> 
-    un 
-    <input type="text" name="respuesta_73" value="<?php echo $respuesta_73; ?>" size="9"> 
-    de un tema de forma 
-    <input type="text" name="respuesta_74" value="<?php echo $respuesta_74; ?>" size="9"> 
-    por el bien de su 
-    propia coherencia, sabiendo todo el tiempo que uno se está ocupando solo de uno de los aspectos. Sabemos 
-    que un programa debe ser correcto y podemos estudiarlo solo desde ese 
-    <input type="text" name="respuesta_75" value="<?php echo $respuesta_75; ?>" size="15"> 
-    ; también sabemos que 
-    debe ser eficiente y podemos estudiar su eficiencia en otro momento, por así decirlo. En otro estado de ánimo 
-    podemos preguntarnos si el programa es deseable y, si lo es, por qué. Pero no se gana nada — ¡al contrario! — 
-    tratando de abordar estos diversos aspectos 
-    <input type="text" name="respuesta_76" value="<?php echo $respuesta_76; ?>" size="15"> 
-    . Es lo que a veces he llamado "
-    <input type="text" name="respuesta_77" value="<?php echo $respuesta_77; ?>" size="22"> 
-    ", que, aunque no sea perfectamente posible, es sin embargo la única técnica disponible para 
-    ordenar efectivamente los pensamientos, que yo conozco. Esto es lo que quiero decir con "[centrar] la atención 
-    en algún aspecto": no significa ignorar los otros aspectos, simplemente es hacer justicia al hecho de que, desde 
-    el punto de vista de este aspecto, los otros son irrelevantes. Es tener una mentalidad tanto única como múltiple 
-    a la vez. [12]
-    </blockquote>
-
-    <button type="submit">Enviar</button>
+<button type="submit">Enviar</button>
 <?php echo $verificar_67 ?>
 <?php echo $verificar_68 ?>
 <?php echo $verificar_69 ?>
@@ -1771,94 +1827,74 @@ function ocultarMensaje4() {
 <?php echo $verificar_75 ?>
 <?php echo $verificar_76 ?>
 <?php echo $verificar_77 ?>
-
-    <hr>
-    <p>
-    Lo que es 
-    <input type="text" name="respuesta_78" value="<?php echo $respuesta_78; ?>" size="9">
-    acerca de un sistema varía según las 
-    <input type="text" name="respuesta_79" value="<?php echo $respuesta_79; ?>" size="10">
-    y los 
-    <input type="text" name="respuesta_80" value="<?php echo $respuesta_80; ?>" size="10">
-    de los interesados. 
-    Por lo tanto, las estructuras de software también varían con los 
-    <input type="text"  value="<?php echo $respuesta_80; ?>" size="10" readonly>
-    y 
-    <input type="text"  value="<?php echo $respuesta_79; ?>" size="10" readonly>
-    de los interesados. 
-    (Véase también el tema <em>Métodos de Diseño</em> en el área de conocimiento de Diseño de Software).
-    </p>
-
-    <p>
-    El cliente de un sistema de software está más interesado en saber 
-    <input type="text" name="respuesta_81" value="<?php echo $respuesta_81; ?>" size="10">
-    estará listo el sistema y 
-    <input type="text" name="respuesta_82" value="<?php echo $respuesta_82; ?>" size="10">
-    construirlo y operarlo.       
-    </p>
-
-    <p>
-    Los usuarios están más interesados en qué 
-    <input type="text" name="respuesta_83" value="<?php echo $respuesta_83; ?>" size="10">
-    el sistema y 
-    <input type="text" name="respuesta_84" value="<?php echo $respuesta_84; ?>" size="10">
-    . Los diseñadores y programadores que 
-    construyen el sistema tienen sus propias preocupaciones, como si un algoritmo cumplirá con los requerimientos 
-    del sistema. Aquellos responsables de asegurar que el sistema sea seguro para operar tienen preocupaciones diferentes.
-    </p>
-<button type="submit">Enviar</button>
 <?php echo $verificar_78 ?>
-<?php echo $verificar_79 ?>
-<?php echo $verificar_80 ?> 
-<?php echo $verificar_81 ?>
-<?php echo $verificar_82 ?>
-<?php echo $verificar_83 ?>
-<?php echo $verificar_84 ?>
-    
-    <hr>
-     <button onmousedown="mostrarImagen2()" onmouseup="ocultarImagen2()">Figura 2.2</button>
-
-    <img id="imagenMostrada2" src="../../../../img/concerns.png" style="display: none; max-width: 100%" width="350">
-
-    <script>
-        function mostrarImagen2() {
-        var imagenMostrada2 = document.getElementById('imagenMostrada2');
-
-        // Mostrar la imagen
-        imagenMostrada2.style.display = 'block';
-        }
-
-        function ocultarImagen2() {
-        var imagenMostrada2 = document.getElementById('imagenMostrada2');
-
-        // Ocultar la imagen al soltar el botón
-        imagenMostrada2.style.display = 'none';
-        }
-    </script>
-
-     
-
-    <br><br>
-    <p>
-    Las preocupaciones abarcan una amplia gama de aspectos, posiblemente relacionados con cualquier 
-    <input type="text" name="respuesta_85" value="<?php echo $respuesta_85; ?>" size="10">
-    sobre 
-    un sistema en su 
-    <input type="text" name="respuesta_86" value="<?php echo $respuesta_86; ?>" size="10">
-    , incluyendo influencias de tipo desarrollador, tecnológico, empresarial, operativo, 
-    organizacional, político, económico, legal, regulatorio, ecológico y social.
-    </p>
-
-    <p>
-    Al igual que los requerimientos de software, las preocupaciones pueden clasificarse como 
-     <input type="text" name="respuesta_87" value="<?php echo $respuesta_87; ?>" size="10">
-    , 
-     <input type="text" name="respuesta_88" value="<?php echo $respuesta_88; ?>" size="10">
-    o 
-     <input type="text" name="respuesta_89" value="<?php echo $respuesta_89; ?>" size="10">
-    . (Véase el área de conocimiento de Requerimientos de Software).
-    </p>
-
+  <hr>
+  <p>
+    Los <strong>viewpoints</strong> comunes incluyen:
+  </p>
+  <ul>
+    <li><strong>
+    <input type="text" name="respuesta_79" value="<?php echo $respuesta_79; ?>" size="15">    
+    </strong>: usado para expresar la 
+    <input type="text" name="respuesta_80" value="<?php echo $respuesta_80; ?>" size="15"> 
+    de un sistema de software en términos de 
+    sus 
+    <input type="text" name="respuesta_81" value="<?php echo $respuesta_81; ?>" size="15"> 
+    y su 
+    <input type="text" name="respuesta_82" value="<?php echo $respuesta_82; ?>" size="15"> 
+    [2*];</li>
+    <li><strong>
+    <input type="text" name="respuesta_83" value="<?php echo $respuesta_83; ?>" size="34">     
+    </strong>: usado para expresar la 
+    <input type="text" name="respuesta_84" value="<?php echo $respuesta_84; ?>" size="11">  
+    en 
+    <input type="text" name="respuesta_85" value="<?php echo $respuesta_85; ?>" size="16">  
+    a gran 
+    <input type="text" name="respuesta_86" value="<?php echo $respuesta_86; ?>" size="8">
+    del software y sus 
+    <input type="text" name="respuesta_87" value="<?php echo $respuesta_87; ?>" size="8">
+    [2*];</li>
+    <li><strong>
+    <input type="text" name="respuesta_88" value="<?php echo $respuesta_88; ?>" size="19">    
+    </strong>: usado para expresar 
+    <input type="text" name="respuesta_89" value="<?php echo $respuesta_89; ?>" size="22">
+    del 
+    <input type="text" name="respuesta_90" value="<?php echo $respuesta_90; ?>" size="8">
+    del 
+    software y sus 
+    <input type="text" name="respuesta_91" value="<?php echo $respuesta_91; ?>" size="8">
+    [25];</li>
+    <li><strong>
+    <input type="text" name="respuesta_92" value="<?php echo $respuesta_92; ?>" size="20">    
+    </strong>: 
+    usado para expresar cómo 
+    <input type="text" name="respuesta_93" value="<?php echo $respuesta_93; ?>" size="12"> 
+    los 
+    <input type="text" name="respuesta_94" value="<?php echo $respuesta_94; ?>" size="8"> 
+    con el 
+    <input type="text" name="respuesta_95" value="<?php echo $respuesta_95; ?>" size="8"> 
+    [25];</li>
+    <li><strong>
+    <input type="text" name="respuesta_96" value="<?php echo $respuesta_96; ?>" size="20">     
+    </strong>: usado para expresar los
+    <input type="text" name="respuesta_97" value="<?php echo $respuesta_97; ?>" size="14"> 
+    de 
+    <input type="text" name="respuesta_98" value="<?php echo $respuesta_98; ?>" size="14"> 
+    de un sistema y cómo se 
+    <input type="text" name="respuesta_99" value="<?php echo $respuesta_99; ?>" size="14"> 
+    a ellos y se 
+    <input type="text" name="respuesta_100" value="<?php echo $respuesta_100; ?>" size="14"> 
+    [38*];</li>
+    <li><strong>
+    <input type="text" name="respuesta_101" value="<?php echo $respuesta_101; ?>" size="22">    
+    </strong>: usado para expresar cómo se 
+    <input type="text" name="respuesta_102" value="<?php echo $respuesta_102; ?>" size="9">
+    y 
+    <input type="text" name="respuesta_103" value="<?php echo $respuesta_103; ?>" size="9">
+    un sistema para su 
+    <input type="text" name="respuesta_104" value="<?php echo $respuesta_104; ?>" size="9">
+    [38*].</li>
+  </ul>
 <button type="submit">Enviar</button>
 <?php echo $verificar_78 ?>
 <?php echo $verificar_79 ?>
@@ -1872,7 +1908,126 @@ function ocultarMensaje4() {
 <?php echo $verificar_87 ?>
 <?php echo $verificar_88 ?>
 <?php echo $verificar_89 ?>
+<?php echo $verificar_90 ?>
+<?php echo $verificar_91 ?>
+<?php echo $verificar_92 ?>
+<?php echo $verificar_93 ?>
+<?php echo $verificar_94 ?>
+<?php echo $verificar_95 ?>
+<?php echo $verificar_96 ?>
+<?php echo $verificar_97 ?>
+<?php echo $verificar_98 ?>
+<?php echo $verificar_99 ?>
+<?php echo $verificar_100 ?>
+<?php echo $verificar_101 ?>
+<?php echo $verificar_102 ?>
+<?php echo $verificar_103 ?>
+<?php echo $verificar_104 ?>
 <hr>
+    <p>
+    Otros <strong>viewpoints</strong> documentados incluyen aquellos para disponibilidad, comportamiento, 
+    comunicaciones, manejo de excepciones, rendimiento, confiabilidad, seguridad y protección.
+    </p>
+
+    <p>
+    Cada <strong>viewpoint</strong> proporciona un 
+    <input type="text" name="respuesta_105" value="<?php echo $respuesta_105; ?>" size="9">o
+    <input type="text" name="respuesta_106" value="<?php echo $respuesta_106; ?>" size="9">
+    para hablar sobre un conjunto de preocupaciones y los mecanismos para abordarlas. El 
+    <input type="text" value="<?php echo $respuesta_106; ?>" size="9" readonly>
+    del
+    <strong>viewpoint</strong> brinda a los interesados un medio de expresión compartido.
+    </p>
+
+    <p>
+    Cuando se usan representaciones genéricas como el Lenguaje Unificado de Modelado (UML), estas pueden 
+    especializarse para el sistema, su dominio o las organizaciones involucradas.
+    </p>
+
+
+
+<button type="submit">Enviar</button>
+<?php echo $verificar_105 ?>
+<?php echo $verificar_106 ?>
+<?php echo $verificar_107 ?>
+<?php echo $verificar_108 ?>
+<?php echo $verificar_109 ?>
+<?php echo $verificar_110 ?>
+    <hr>
+
+
+
+
+
+
+ 
+
+
+  
+<hr>
+<button onmousedown="mostrarMensaje2()" onmouseup="ocultarMensaje2()">Pista</button>
+
+<div id="mensaje2" style="display:none;">
+ <span> Views (Vistas)</span>
+    <p>
+      Son formas específicas de representar ciertos aspectos de la arquitectura dentro de un AD. Cada vista se enfoca en una preocupación o conjunto de preocupaciones particular. Por ejemplo:
+    </p>
+    <ul>
+      <li><strong>Vista lógica</strong> → requisitos funcionales</li>
+      <li><strong>Vista de procesos</strong> → concurrencia</li>
+      <li><strong>Vista física</strong> → despliegue</li>
+      <li><strong>Vista de desarrollo</strong> → implementación</li>
+    </ul>
+
+
+     <span> Viewpoints (Puntos de vista)</span>
+    <p>
+      Son conjuntos de reglas o convenciones que definen cómo construir una vista. Es decir, guían cómo se debe crear e interpretar cada tipo de vista.
+    </p>
+
+      <p><strong> En resumen:</strong><br>
+    <strong>AD</strong> = conjunto estructurado de vistas, y<br>
+    cada <strong>vista</strong> = una representación parcial del sistema, orientada a ciertos interesados o preocupaciones.<br>
+    Cada vista se basa en un <strong>viewpoint</strong>.
+    </p>
+
+
+</div>
+
+   <h3>2.3. Architecture Description Languages and Architecture Frameworks</h3>
+
+  <p>
+    Más allá de 
+    <input type="text" name="respuesta_107" value="<?php echo $respuesta_107; ?>" size="9">
+    formas de representación, un <strong>architecture viewpoint</strong> puede
+     capturar las formas de 
+      <input type="text" name="respuesta_108" value="<?php echo $respuesta_108; ?>" size="9">
+     dentro de una disciplina o 
+       <input type="text" name="respuesta_109" value="<?php echo $respuesta_109; ?>" size="9">
+     de práctica.
+  </p>
+
+  <p>
+    Por ejemplo, un <em>software reliability viewpoint</em> captura prácticas existentes de 
+    la comunidad de confiabilidad de software para identificar y analizar problemas de confiabilidad, 
+    formular alternativas y sintetizar y representar soluciones.
+  </p>
+
+  <p>
+    Al igual que los manuales de ingeniería, los <strong>viewpoints</strong> de propósito general y especializados proporcionan un medio para documentar enfoques repetibles o reutilizables a problemas recurrentes del software.
+  </p>
+ 
+
+
+    <button type="submit">Enviar</button>
+<?php echo $verificar_105 ?>
+<?php echo $verificar_106 ?>
+<?php echo $verificar_107 ?>
+<?php echo $verificar_108 ?>
+<?php echo $verificar_109 ?>
+<?php echo $verificar_110 ?>
+ 
+ <hr>
     </form>
 </div>
 
@@ -1881,7 +2036,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="segundo.php"
+        href="tercero.php"
         role="button"
         width="50px"
         height="50px"
