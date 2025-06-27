@@ -113,7 +113,7 @@ if ($_POST) {
    }
 
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === '\frac{Sin(a)}{Tan(a)}') {
+   if ($respuesta_8 === '\frac{Sin(a)}{Tan(a)}' || $respuesta_8 === '\frac{Sen(a)}{Tan(a)}') {
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -122,7 +122,7 @@ if ($_POST) {
    }
 
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === '\frac{Sin(a)}{Cos(a)}') {
+   if ($respuesta_9 === '\frac{Sin(a)}{Cos(a)}' || $respuesta_9 === '\frac{Sen(a)}{Cos(a)}') {
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -132,7 +132,7 @@ if ($_POST) {
     
 
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === '\frac{Cos(a)}{Sin(a)}') {
+   if ($respuesta_10 === '\frac{Cos(a)}{Sin(a)}' || $respuesta_10 === '\frac{Cos(a)}{Sen(a)}') {
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -141,7 +141,7 @@ if ($_POST) {
    }
    
    $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === '\frac{Tan(a)}{Sin(a)}') {
+   if ($respuesta_11 === '\frac{Tan(a)}{Sin(a)}' || $respuesta_11 === '\frac{Tan(a)}{Sen(a)}') {
        $verificar_11 = "correcto";
    } elseif ($respuesta_11 === '') {
        $verificar_11 = '';
@@ -171,7 +171,7 @@ if ($_POST) {
 
 
    $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-   if ($respuesta_14 === '1-Sen^2(a)') {
+   if ($respuesta_14 === '1-Sen^2(a)' || $respuesta_14 === '1-Sin^2(a)') {
        $verificar_14 = "correcto";
    } elseif ($respuesta_14 === '') {
        $verificar_14 = '';
@@ -595,6 +595,29 @@ function ocultarMensaje4() {
     <span id="formula6">
             \( \frac{0}{0} \)
     </span> 
+
+    <br><br>
+     <button onmousedown="mostrarImagen2()" onmouseup="ocultarImagen2()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada2" src="../../img/catetos.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen2() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+
+        // Mostrar la imagen
+        imagenMostrada2.style.display = 'block';
+        }
+
+        function ocultarImagen2() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada2.style.display = 'none';
+        }
+    </script>
+
     <br><br>
     <button type="submit">Enviar</button>
     <?php echo $verificar_1 ?>
@@ -664,6 +687,31 @@ function ocultarMensaje4() {
   <hr>
      <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
     <br>
+ 
+             <button onmousedown="mostrarImagen3()" onmouseup="ocultarImagen3()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada3" src="../../img/origen.png" style="display: none; max-width: 100%" width="460">
+
+        
+        <script>
+        function mostrarImagen3() {
+        var imagenMostrada3 = document.getElementById('imagenMostrada3');
+
+        // Mostrar la imagen
+        imagenMostrada3.style.display = 'block';
+        }
+
+        function ocultarImagen3() {
+        var imagenMostrada3 = document.getElementById('imagenMostrada3');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada3.style.display = 'none';
+        }
+    </script>
+    
+    <br><br>
+
     <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
     <button type="submit"   >Mostrar Solución</button>
         

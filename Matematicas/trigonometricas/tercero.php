@@ -20,7 +20,7 @@ if ($_POST) {
         // Establecer todas las respuestas correctas
         $respuesta_1 = 'a^2=b^2+c^2-2bc*CosA';
         $respuesta_2 = 'A=Cos^{-1}(\frac{b^2+c^2-a^2}{2bc})';
-        $respuesta_3 = '\frac{a}{sen(a)}+\frac{b}{sen(b)}=\frac{c}{sen(c)}';
+        $respuesta_3 = '\frac{a}{sen(a)}=\frac{b}{sen(b)}=\frac{c}{sen(c)}';
         $respuesta_4 = 'Sin^2(x)=\frac{1}{2}-\frac{1}{2}Cos(2x)';
         $respuesta_5 = 'Cos^2(x)=\frac{1}{2}+\frac{1}{2}Cos(2x)';
         $respuesta_6 = 'Tan^2(x)=\frac{1-Cos(2x)}{1+Cos(2x)}';
@@ -64,7 +64,7 @@ if ($_POST) {
         }
 
         $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-        if ($respuesta_3 === '\frac{a}{sen(a)}+\frac{b}{sen(b)}=\frac{c}{sen(c)}') {
+        if ($respuesta_3 === '\frac{a}{sen(a)}=\frac{b}{sen(b)}=\frac{c}{sen(c)}') {
             $verificar_3 = "correcto";
         } elseif ($respuesta_3 === '') {
             $verificar_3 = '';
@@ -99,131 +99,175 @@ if ($_POST) {
             $verificar_6 = "incorrecto";
         }
 
-        $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-        if ($respuesta_7 === '\frac{Cos(a)}{Cot(a)}') {
-            $verificar_7 = "correcto";
-        } elseif ($respuesta_7 === '') {
-            $verificar_7 = '';
-        } else {
-            $verificar_7 = "incorrecto";
-        }
+       
 
-        $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-        if ($respuesta_8 === '\frac{Sin(a)}{Tan(a)}') {
-            $verificar_8 = "correcto";
-        } elseif ($respuesta_8 === '') {
-            $verificar_8 = '';
-        } else {
-            $verificar_8 = "incorrecto";
-        }
 
-        $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-        if ($respuesta_9 === '\frac{Sin(a)}{Cos(a)}') {
-            $verificar_9 = "correcto";
-        } elseif ($respuesta_9 === '') {
-            $verificar_9 = '';
-        } else {
-            $verificar_9 = "incorrecto";
-        }
+        
+   // Verificar la respuesta de la séptima pregunta
+   $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
+   if ($respuesta_7 === 'no es rectangulo') {  
+       $verificar_7 = "correcto";
+   } elseif ($respuesta_7 === '') {
+       $verificar_7 = '';
+   } else {
+       $verificar_7 = "incorrecto";
+   }
 
-        $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-        if ($respuesta_10 === '\frac{Cos(a)}{Sin(a)}') {
-            $verificar_10 = "correcto";
-        } elseif ($respuesta_10 === '') {
-            $verificar_10 = '';
-        } else {
-            $verificar_10 = "incorrecto";
-        }
+   // Verificar la respuesta de la octava pregunta
+   $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
+   if ($respuesta_8 === 'triangulos rectangulos') {  
+       $verificar_8 = "correcto";
+   } elseif ($respuesta_8 === '') {
+       $verificar_8 = '';
+   } else {
+       $verificar_8 = "incorrecto";
+   }
 
-        $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-        if ($respuesta_11 === '\frac{Tan(a)}{Sin(a)}') {
-            $verificar_11 = "correcto";
-        } elseif ($respuesta_11 === '') {
-            $verificar_11 = '';
-        } else {
-            $verificar_11 = "incorrecto";
-        }
+   // Verificar la respuesta de la novena pregunta
+   $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
+   if ($respuesta_9 === '130') {  
+       $verificar_9 = "correcto";
+   } elseif ($respuesta_9 === '') {
+       $verificar_9 = '';
+   } else {
+       $verificar_9 = "incorrecto";
+   }
 
-        $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-        if ($respuesta_12 === '\frac{Cot(a)}{Cos(a)}') {
-            $verificar_12 = "correcto";
-        } elseif ($respuesta_12 === '') {
-            $verificar_12 = '';
-        } else {
-            $verificar_12 = "incorrecto";
-        }
+   // Verificar la respuesta de la décima pregunta
+   $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
+   if ($respuesta_10 === '143') {  
+       $verificar_10 = "correcto";
+   } elseif ($respuesta_10 === '') {
+       $verificar_10 = '';
+   } else {
+       $verificar_10 = "incorrecto";
+   }
 
-        $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-        if ($respuesta_13 === '1-Cos^2(a)') {
-            $verificar_13 = "correcto";
-        } elseif ($respuesta_13 === '') {
-            $verificar_13 = '';
-        } else {
-            $verificar_13 = "incorrecto";
-        }
+   // Verificar la respuesta de la undécima pregunta
+   $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
+   if ($respuesta_11 === '156') {  
+       $verificar_11 = "correcto";
+   } elseif ($respuesta_11 === '') {
+       $verificar_11 = '';
+   } else {
+       $verificar_11 = "incorrecto";
+   }
 
-        $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-        if ($respuesta_14 === '1-Sen^2(a)') {
-            $verificar_14 = "correcto";
-        } elseif ($respuesta_14 === '') {
-            $verificar_14 = '';
-        } else {
-            $verificar_14 = "incorrecto";
-        }
 
-        $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-        if ($respuesta_15 === 'Tan^2(a)+1=Sec^2(a)' || $respuesta_15 === 'Sec^2(a)=1+Tan^2(a)' || $respuesta_15 === 'Sec^2(a)=Tan^2(a)+1') {
-            $verificar_15 = "correcto";
-        } elseif ($respuesta_15 === '') {
-            $verificar_15 = '';
-        } else {
-            $verificar_15 = "incorrecto";
-        }
+     // Verificar la respuesta de la primera pregunta
+     $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
+     if ($respuesta_12 === '28') {  
+         $verificar_12 = "correcto";
+     } elseif ($respuesta_12 === '') {
+         $verificar_12 = '';
+     } else {
+         $verificar_12 = "incorrecto";
+     }
+  
+     // Verificar la respuesta de la segunda pregunta
+     $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
+     if ($respuesta_13 === '42') { 
+         $verificar_13 = "correcto";
+     } elseif ($respuesta_13 === '') {
+         $verificar_13 = '';
+     } else {
+         $verificar_13 = "incorrecto";
+     }
+  
+     // Verificar la respuesta de la tercera pregunta
+     $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
+     if ($respuesta_14 === '56') {  
+         $verificar_14 = "correcto";
+     } elseif ($respuesta_14 === '') {
+         $verificar_14 = '';
+     } else {
+         $verificar_14 = "incorrecto";
+     }
+  
+     // Verificar la respuesta de la cuarta pregunta
+     $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
+     if ($respuesta_15 === '70') { 
+         $verificar_15 = "correcto";
+     } elseif ($respuesta_15 === '') {
+         $verificar_15 = '';
+     } else {
+         $verificar_15 = "incorrecto";
+     }
+  
+     // Verificar la respuesta de la quinta pregunta
+     $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
+     if ($respuesta_16 === '84') {  
+         $verificar_16 = "correcto";
+     } elseif ($respuesta_16 === '') {
+         $verificar_16 = '';
+     } else {
+         $verificar_16 = "incorrecto";
+     }
+  
+     // Verificar la respuesta de la sexta pregunta
+     $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
+     if ($respuesta_17 === '98') {  
+         $verificar_17 = "correcto";
+     } elseif ($respuesta_17 === '') {
+         $verificar_17 = '';
+     } else {
+         $verificar_17 = "incorrecto";
+     }
+  
+     // Verificar la respuesta de la séptima pregunta
+     $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
+     if ($respuesta_18 === '112') {  
+         $verificar_18 = "correcto";
+     } elseif ($respuesta_18 === '') {
+         $verificar_18 = '';
+     } else {
+         $verificar_18 = "incorrecto";
+     }
+  
+     // Verificar la respuesta de la octava pregunta
+     $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
+     if ($respuesta_19 === '126') {  
+         $verificar_19 = "correcto";
+     } elseif ($respuesta_19 === '') {
+         $verificar_19 = '';
+     } else {
+         $verificar_19 = "incorrecto";
+     }
+  
+     // Verificar la respuesta de la novena pregunta
+     $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
+     if ($respuesta_20 === '140') {  
+         $verificar_20 = "correcto";
+     } elseif ($respuesta_20 === '') {
+         $verificar_20 = '';
+     } else {
+         $verificar_20 = "incorrecto";
+     }
+  
+     // Verificar la respuesta de la décima pregunta
+     $respuesta_21 = isset($_POST['respuesta_21']) ? $_POST['respuesta_21'] : '';
+     if ($respuesta_21 === '154') {  
+         $verificar_21 = "correcto";
+     } elseif ($respuesta_21 === '') {
+         $verificar_21 = '';
+     } else {
+         $verificar_21 = "incorrecto";
+     }
+  
+     // Verificar la respuesta de la undécima pregunta
+     $respuesta_22 = isset($_POST['respuesta_22']) ? $_POST['respuesta_22'] : '';
+     if ($respuesta_22 === '168') {  
+         $verificar_22 = "correcto";
+     } elseif ($respuesta_22 === '') {
+         $verificar_22 = '';
+     } else {
+         $verificar_22 = "incorrecto";
+     }
 
-        $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-        if ($respuesta_16 === 'Tan^2(a)=Sec^2(a)-1') {
-            $verificar_16 = "correcto";
-        } elseif ($respuesta_16 === '') {
-            $verificar_16 = '';
-        } else {
-            $verificar_16 = "incorrecto";
-        }
 
-        $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-        if ($respuesta_17 === '1=Sec^2(a)-Tan^2(a)') {
-            $verificar_17 = "correcto";
-        } elseif ($respuesta_17 === '') {
-            $verificar_17 = '';
-        } else {
-            $verificar_17 = "incorrecto";
-        }
 
-        $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-        if ($respuesta_18 === 'Csc^2(a)=1+Cot^2(a)') {
-            $verificar_18 = "correcto";
-        } elseif ($respuesta_18 === '') {
-            $verificar_18 = '';
-        } else {
-            $verificar_18 = "incorrecto";
-        }
 
-        $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-        if ($respuesta_19 === 'Cot^2(a)=Csc^2(a)-1') {
-            $verificar_19 = "correcto";
-        } elseif ($respuesta_19 === '') {
-            $verificar_19 = '';
-        } else {
-            $verificar_19 = "incorrecto";
-        }
 
-        $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
-        if ($respuesta_20 === '1=Csc^2(a)-Cot^2(a)') {
-            $verificar_20 = "correcto";
-        } elseif ($respuesta_20 === '') {
-            $verificar_20 = '';
-        } else {
-            $verificar_20 = "incorrecto";
-        }
     }
 }
 ?>
@@ -538,9 +582,17 @@ function ocultarMensaje4() {
 </head>
 <body>
 <div class="seccion izquierda">
-    <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)">
-    <strong>En un triangulo no rectangulo </strong> (aunque este teorema aplica para triangulos rectangulos, 
-        solo que ese tipo de triangulo tiene un teorema mas sencillo) 
+    <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+   <p>
+    En un triángulo que  
+    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="16">
+    (aunque este teorema también aplica a 
+    <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="18">
+    , 
+    los cuales tienen una versión más sencilla), podemos encontrar muchos de sus valores utilizando este teorema:
+
+
+   </p>
         
     <strong>podemos hallar muchos de sus valores 
     con este teorema:</strong>       <br><br>
@@ -555,8 +607,8 @@ function ocultarMensaje4() {
     <br>
     <button type="submit">enviar</button>
     <?php echo $verificar_1 ?>
-    
-    
+     <?php echo $verificar_7 ?>
+     <?php echo $verificar_8 ?>
     
     <br><br>
 
