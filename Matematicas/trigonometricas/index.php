@@ -875,8 +875,7 @@ function ocultarMensaje4() {
 
 
 
-
-
+ 
     <br><br>
     <hr>
     <Strong>identidades pitagoricas: </Strong>(suma de cuadrados), x=a <br><br>
@@ -920,7 +919,10 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    identidad pitagorica de tan y sec: <br><br>
+
+    
+
+    siguiente identidad pitagorica: <br><br>
 
 
 
@@ -937,6 +939,30 @@ function ocultarMensaje4() {
 
     <button type="submit">enviar</button>
     <?php echo $verificar_15 ?> <br><br>
+
+ <button onmousedown="mostrarImagen2()" onmouseup="ocultarImagen2()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada2" src="../../img/tangente.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen2() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+
+        // Mostrar la imagen
+        imagenMostrada2.style.display = 'block';
+        }
+
+        function ocultarImagen2() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada2.style.display = 'none';
+        }
+    </script>
+
+        <br><br>
+
     De esta se deriva: <br><br>
 
 
@@ -972,7 +998,7 @@ function ocultarMensaje4() {
 
 
 
-    Identidad pitagorica cot y csc <br>
+    siguiente Identidad pitagoric:<br>
 
     <input type="text"  oninput="actualizarFormula9()"
     id="respuesta_18"
@@ -985,7 +1011,7 @@ function ocultarMensaje4() {
     <button type="submit">enviar</button>
     <?php echo $verificar_18 ?> 
     <br><br>
-    despejar Csc: <br><br>
+    despejar : <br><br>
 
 
 
@@ -1000,7 +1026,7 @@ function ocultarMensaje4() {
     <button type="submit">enviar</button>
     <?php echo $verificar_19 ?>
     <br><br>
-    despejar a Cot: <br><br>
+    despejar : <br><br>
 
     <input type="text"  oninput="actualizarFormula11()"
     id="respuesta_20"
@@ -1019,7 +1045,7 @@ function ocultarMensaje4() {
     <button onmousedown="mostrarMensaje()" onmouseup="ocultarMensaje()">Pista</button>
     <br><br>
     <p id="mensaje" style="display:none;">
-    <img src="..\..\img\Captura de pantalla 2024-12-31 082158.png" alt="" width="250">    
+    <img src="../../img/Captura de pantalla 2024-12-31 082158.png" alt="" width="250">    
     </p>
     <hr>
     <p><strong> Enunciado del Teorema de Pitágoras:</strong></p>
