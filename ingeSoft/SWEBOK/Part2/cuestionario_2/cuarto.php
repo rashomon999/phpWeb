@@ -50,7 +50,7 @@ $verificar_106 = '';$verificar_107 = '';$verificar_108 = '';$verificar_109 = '';
 
 if ($_POST) {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '26') {  
+   if ($respuesta_1 === 'captura') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -1369,26 +1369,32 @@ function ocultarMensaje4() {
 <body> 
 <div class="seccion izquierda">
     <form action="./cuarto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-<p>
-    Un <strong>architecture framework</strong> captura las “convenciones, principios y prácticas para la descripción de arquitecturas establecidas dentro de un dominio de aplicación específico y/o comunidad de interesados” [23].
-  </p>
+    
+    <p>
+    Un <strong>architecture framework</strong> 
+    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="8">
+    las “convenciones, principios y prácticas para 
+    la descripción de arquitecturas establecidas dentro de un dominio de aplicación específico y/o 
+    comunidad de interesados” [23].
+    </p>
 
 
-   <p>
-    Los <strong>frameworks</strong> codifican prácticas recomendadas dentro de un dominio específico y se implementan como un conjunto interrelacionado de <strong>viewpoints</strong> o <strong>ADLs</strong>.
-  </p>
+    <p>
+    Los <strong>frameworks</strong> codifican prácticas recomendadas dentro de un dominio específico 
+    y se implementan como un conjunto interrelacionado de <strong>viewpoints</strong> o <strong>ADLs</strong>.
+    </p>
 
-  <p>
+    <p>
     Ejemplos de <strong>architecture frameworks</strong> incluyen:
-  </p>
+    </p>
 
-  <ul>
+    <ul>
     <li><strong>AUTOSAR</strong> para la industria automotriz,</li>
     <li>el <strong>Unified Architecture Framework (UAF®)</strong> de OMG,</li>
     <li>y el <strong>ISO Reference Model for Open Distributed Processing</strong>.</li>
-  </ul>
+    </ul>
 
-
+ 
     </form>
 </div>
 

@@ -335,7 +335,7 @@ function ocultarMensaje4() {
   <p>
     Ejemplos de <strong>architecture frameworks</strong> incluyen:
   </p>
-
+ 
   <ul>
     <li><strong>AUTOSAR</strong> para la industria automotriz,</li>
     <li>el <strong>Unified Architecture Framework (UAF®)</strong> de OMG,</li>

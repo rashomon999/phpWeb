@@ -20,8 +20,16 @@ $respuesta_90 = ''; $respuesta_91 = '';$respuesta_92 = '';$respuesta_93 = '';$re
 $respuesta_99 = '';$respuesta_100 = '';$respuesta_101 = '';$respuesta_102 = '';$respuesta_103 = '';$respuesta_104 = '';$respuesta_105 = '';
 $respuesta_106 = '';$respuesta_107 = '';$respuesta_108 = '';$respuesta_109 = '';$respuesta_110 = '';
 
+/////
+ // Agrega estas variables junto con las demás (antes del if $_POST)
+$respuesta_111 = ''; $respuesta_112 = ''; $respuesta_113 = ''; $respuesta_114 = ''; $respuesta_115 = ''; 
+$respuesta_116 = ''; $respuesta_117 = ''; $respuesta_118 = ''; $respuesta_119 = ''; $respuesta_120 = ''; 
+$respuesta_121 = ''; $respuesta_122 = '';
 
- 
+$verificar_111 = ''; $verificar_112 = ''; $verificar_113 = ''; $verificar_114 = ''; $verificar_115 = ''; 
+$verificar_116 = ''; $verificar_117 = ''; $verificar_118 = ''; $verificar_119 = ''; $verificar_120 = ''; 
+$verificar_121 = ''; $verificar_122 = '';
+////
 
 $verificar_1 = ''; $verificar_2 = ''; $verificar_3 = '';  $verificar_3_2 = ''; $verificar_4 = ''; $verificar_5 = ''; 
 $verificar_6 = ''; $verificar_7 = '';  $verificar_8 = ''; $verificar_9 = ''; $verificar_10 = ''; 
@@ -1074,7 +1082,105 @@ if ($respuesta_110 === '264') {
     $verificar_110 = "incorrecto";
 }
 
+// Tabla del 12
+$respuesta_111 = isset($_POST['respuesta_111']) ? $_POST['respuesta_111'] : '';
+if ($respuesta_111 === '24') {  
+    $verificar_111 = "correcto";
+} elseif ($respuesta_111 === '') {
+    $verificar_111 = '';
+} else {
+    $verificar_111 = "incorrecto";
+}
 
+$respuesta_112 = isset($_POST['respuesta_112']) ? $_POST['respuesta_112'] : '';
+if ($respuesta_112 === '36') {  
+    $verificar_112 = "correcto";
+} elseif ($respuesta_112 === '') {
+    $verificar_112 = '';
+} else {
+    $verificar_112 = "incorrecto";
+}
+
+$respuesta_113 = isset($_POST['respuesta_113']) ? $_POST['respuesta_113'] : '';
+if ($respuesta_113 === '48') {  
+    $verificar_113 = "correcto";
+} elseif ($respuesta_113 === '') {
+    $verificar_113 = '';
+} else {
+    $verificar_113 = "incorrecto";
+}
+
+$respuesta_114 = isset($_POST['respuesta_114']) ? $_POST['respuesta_114'] : '';
+if ($respuesta_114 === '60') {  
+    $verificar_114 = "correcto";
+} elseif ($respuesta_114 === '') {
+    $verificar_114 = '';
+} else {
+    $verificar_114 = "incorrecto";
+}
+
+$respuesta_115 = isset($_POST['respuesta_115']) ? $_POST['respuesta_115'] : '';
+if ($respuesta_115 === '72') {  
+    $verificar_115 = "correcto";
+} elseif ($respuesta_115 === '') {
+    $verificar_115 = '';
+} else {
+    $verificar_115 = "incorrecto";
+}
+
+$respuesta_116 = isset($_POST['respuesta_116']) ? $_POST['respuesta_116'] : '';
+if ($respuesta_116 === '84') {  
+    $verificar_116 = "correcto";
+} elseif ($respuesta_116 === '') {
+    $verificar_116 = '';
+} else {
+    $verificar_116 = "incorrecto";
+}
+
+$respuesta_117 = isset($_POST['respuesta_117']) ? $_POST['respuesta_117'] : '';
+if ($respuesta_117 === '96') {  
+    $verificar_117 = "correcto";
+} elseif ($respuesta_117 === '') {
+    $verificar_117 = '';
+} else {
+    $verificar_117 = "incorrecto";
+}
+
+$respuesta_118 = isset($_POST['respuesta_118']) ? $_POST['respuesta_118'] : '';
+if ($respuesta_118 === '108') {  
+    $verificar_118 = "correcto";
+} elseif ($respuesta_118 === '') {
+    $verificar_118 = '';
+} else {
+    $verificar_118 = "incorrecto";
+}
+
+$respuesta_119 = isset($_POST['respuesta_119']) ? $_POST['respuesta_119'] : '';
+if ($respuesta_119 === '120') {  
+    $verificar_119 = "correcto";
+} elseif ($respuesta_119 === '') {
+    $verificar_119 = '';
+} else {
+    $verificar_119 = "incorrecto";
+}
+
+$respuesta_120 = isset($_POST['respuesta_120']) ? $_POST['respuesta_120'] : '';
+if ($respuesta_120 === '132') {  
+    $verificar_120 = "correcto";
+} elseif ($respuesta_120 === '') {
+    $verificar_120 = '';
+} else {
+    $verificar_120 = "incorrecto";
+}
+
+$respuesta_121 = isset($_POST['respuesta_121']) ? $_POST['respuesta_121'] : '';
+if ($respuesta_121 === '144') {  
+    $verificar_121 = "correcto";
+} elseif ($respuesta_121 === '') {
+    $verificar_121 = '';
+} else {
+    $verificar_121 = "incorrecto";
+}
 }
 ?>
 <!DOCTYPE html>
@@ -1369,7 +1475,33 @@ function ocultarMensaje4() {
 <body> 
 <div class="seccion izquierda">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-            
+                   <h4>Tabla del 12</h4>
+        12 * 2 = <input type="text" name="respuesta_111" value="<?php echo $respuesta_111; ?>"><br>
+        12 * 3 = <input type="text" name="respuesta_112" value="<?php echo $respuesta_112; ?>"><br>
+        12 * 4 = <input type="text" name="respuesta_113" value="<?php echo $respuesta_113; ?>"><br>
+        12 * 5 = <input type="text" name="respuesta_114" value="<?php echo $respuesta_114; ?>"><br>
+        12 * 6 = <input type="text" name="respuesta_115" value="<?php echo $respuesta_115; ?>"><br>
+        12 * 7 = <input type="text" name="respuesta_116" value="<?php echo $respuesta_116; ?>"><br>
+        12 * 8 = <input type="text" name="respuesta_117" value="<?php echo $respuesta_117; ?>"><br>
+        12 * 9 = <input type="text" name="respuesta_118" value="<?php echo $respuesta_118; ?>"><br>
+        12 * 10 = <input type="text" name="respuesta_119" value="<?php echo $respuesta_119; ?>"><br>
+        12 * 11 = <input type="text" name="respuesta_120" value="<?php echo $respuesta_120; ?>"><br>
+        12 * 12 = <input type="text" name="respuesta_121" value="<?php echo $respuesta_121; ?>"><br>
+        <button type="submit">Enviar</button>
+
+        <?php echo $verificar_111 ?>
+        <?php echo $verificar_112 ?>
+        <?php echo $verificar_113 ?>
+        <?php echo $verificar_114 ?>
+        <?php echo $verificar_115 ?>
+        <?php echo $verificar_116 ?>
+        <?php echo $verificar_117 ?>
+        <?php echo $verificar_118 ?>
+        <?php echo $verificar_119 ?>
+        <?php echo $verificar_120 ?>
+        <?php echo $verificar_121 ?>
+
+    <br><br>
             13 * 2 = <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>"><br>
             13 * 3 = <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>"><br>
             13 * 4 = <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>"><br>
