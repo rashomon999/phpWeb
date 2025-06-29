@@ -333,7 +333,9 @@ function ocultarMensaje4() {
 
   <h4>3.2.3. Evaluación de Arquitectura</h4>
   <p>
-    La <strong>evaluación de arquitectura</strong> valida si las soluciones elegidas satisfacen los ASRs y cuándo y dónde se requiere retrabajo. Los métodos de evaluación de arquitectura se discuten en el tema 4, <em>Software Architecture Evaluation</em>.
+    La <strong>evaluación de arquitectura</strong> valida si las soluciones elegidas satisfacen los ASRs y 
+    cuándo y dónde se requiere retrabajo. Los métodos de evaluación de arquitectura se discuten en el tema 4, 
+    <em>Software Architecture Evaluation</em>.
   </p>
 
   <h3>3.3. Prácticas, Métodos y Tácticas de Arquitectura</h3>
@@ -368,7 +370,7 @@ function ocultarMensaje4() {
   
 
 
-   <h2>4. Evaluación de Arquitectura de Software</h2>
+  <h2>4. Evaluación de Arquitectura de Software</h2>
   <p><strong>[2*c21, 38*c14, 41*c8, 10, 31, 33]</strong></p>
 
   <h3>4.1. “Bondad” en la Arquitectura</h3>

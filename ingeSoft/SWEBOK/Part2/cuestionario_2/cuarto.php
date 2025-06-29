@@ -1850,6 +1850,26 @@ function ocultarMensaje4() {
     Frecuentemente, estas tres actividades se realizan de forma concurrente en varios niveles de granularidad.
     </p>
 
+  <button onmousedown="mostrarImagen2()" onmouseup="ocultarImagen2()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+ 
+    <img id="imagenMostrada2" src="../../../../img/general.png"  style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen2() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+
+        // Mostrar la imagen
+        imagenMostrada2.style.display = 'block';
+        }
+
+        function ocultarImagen2() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada2.style.display = 'none';
+        }
+    </script>
 <button type="submit">Enviar</button>
 <?php echo $verificar_70 ?>
 <?php echo $verificar_71 ?>
