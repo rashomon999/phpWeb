@@ -1728,7 +1728,7 @@ function ocultarMensaje4() {
 <?php echo $verificar_95 ?>
 <?php echo $verificar_96 ?>
 <?php echo $verificar_97 ?>
-<?php echo $verificar_98 ?>
+<?php echo $verificar_98 ?> 
 <?php echo $verificar_99 ?>
 <br><br><br>
 22 * 2 = <input type="text" name="respuesta_100" value="<?php echo $respuesta_100; ?>"><br>

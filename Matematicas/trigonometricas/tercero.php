@@ -26,8 +26,8 @@ if ($_POST) {
         $respuesta_6 = 'Tan^2(x)=\frac{1-Cos(2x)}{1+Cos(2x)}';
         $respuesta_7 = '\frac{Cos(a)}{Cot(a)}';
         $respuesta_8 = '\frac{Sin(a)}{Tan(a)}';
-        $respuesta_9 = '\frac{Sin(a)}{Cos(a)}';
-        $respuesta_10 = '\frac{Cos(a)}{Sin(a)}';
+        $respuesta_9 = 'angulo opuesto';
+        $respuesta_10 = 'lado a';
         $respuesta_11 = '\frac{Tan(a)}{Sin(a)}';
         $respuesta_12 = '\frac{Cot(a)}{Cos(a)}';
         $respuesta_13 = '1-Cos^2(a)';
@@ -125,7 +125,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === '130') {  
+   if ($respuesta_9 === 'angulo opuesto') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -135,7 +135,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === '143') {  
+   if ($respuesta_10 === 'lado a') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -611,9 +611,24 @@ function ocultarMensaje4() {
      <?php echo $verificar_8 ?>
     
     <br><br>
+    <hr>
+    En la formula A
+    es el 
+    <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="15">
+    al 
+    <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="15">
+    <p>
+        <button type="submit">Enviar</button>
+        <?php echo $verificar_9 ?>
+        <?php echo $verificar_10 ?>
+    </p>
+    <hr>
 
+    <strong>explicacion:</strong> <a href="explicacion.php">
+    <button type="button">explicacion</button>
+    </a>
 
-
+    <br><br>
     Ahora despeja el angulo A e introduce la formula: <br><br>
     Nota1: si la fundamental era a, b, c, en esta el numerador ira b, c, a <br><br>
     Nota2: Hay una simplificacion donde se multiplifica el numerador y denominador por -1, hazlo. <br><br>
