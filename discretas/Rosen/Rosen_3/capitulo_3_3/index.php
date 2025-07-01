@@ -1136,7 +1136,7 @@ if ($respuesta_110 === '264') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 380vh;
+    height: 530vh;
     }
 </style>
  
@@ -1440,7 +1440,101 @@ function ocultarMensaje4() {
 <body> 
 <div class="seccion izquierda">
     <form action="./octavo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-                    
+     <h2>3.3 Complejidad de los algoritmos</h2>
+
+<h3>3.3.1 Introducción</h3>
+
+<p>
+¿Cuándo un algoritmo ofrece una solución satisfactoria a un problema? Primero, debe <strong>producir siempre la respuesta correcta</strong>. Cómo se puede demostrar esto se discutirá en el <em>Capítulo 5</em>. Segundo, debe ser <strong>eficiente</strong>. La eficiencia de los algoritmos se abordará en esta sección.
+</p>
+
+<p>
+¿Cómo se puede analizar la eficiencia de un algoritmo? Una medida de eficiencia es el <strong>tiempo que utiliza una computadora</strong> para resolver un problema usando el algoritmo, cuando los valores de entrada tienen un tamaño especificado. Una segunda medida es la <strong>cantidad de memoria</strong> que requiere la computadora para implementar el algoritmo, también cuando los valores de entrada tienen un tamaño determinado.
+</p>
+
+<p>
+Preguntas como estas involucran la <strong>complejidad computacional</strong> del algoritmo. Un análisis del tiempo requerido para resolver un problema de cierto tamaño implica estudiar la <strong>complejidad temporal</strong> del algoritmo. Un análisis de la memoria necesaria implica estudiar la <strong>complejidad espacial</strong> del algoritmo.
+</p>
+
+<p>
+Las consideraciones de complejidad temporal y espacial son esenciales al implementar algoritmos. Es importante saber si un algoritmo dará una respuesta en <em>un microsegundo</em>, <em>un minuto</em>, o <em>mil millones de años</em>. De manera similar, la memoria requerida debe estar disponible para poder resolver un problema, por lo que la <strong>complejidad espacial</strong> también debe tomarse en cuenta.
+</p>
+
+<p>
+Las consideraciones sobre la complejidad espacial están relacionadas con las estructuras de datos específicas que se usan para implementar el algoritmo. Como las estructuras de datos no se tratan en detalle en este libro, <strong>no se considerará la complejidad espacial</strong>. Nos <strong>limitaremos a estudiar la complejidad temporal</strong>.
+</p>
+
+    <hr>
+    <h2>3.3.2 Complejidad Temporal</h2>
+
+  <p>
+    La complejidad temporal de un algoritmo puede expresarse en términos de la cantidad de operaciones que realiza el algoritmo cuando la entrada tiene un tamaño determinado.
+    Las operaciones utilizadas para medir la complejidad temporal pueden incluir: la comparación de enteros, la suma de enteros, la multiplicación de enteros, la división de enteros, u otras operaciones básicas.
+  </p>
+
+  <p>
+    La complejidad temporal se describe en función del número de operaciones requeridas en lugar del tiempo real de ejecución, debido a que diferentes computadoras requieren distintos tiempos para realizar operaciones básicas.
+    Además, descomponer todas las operaciones hasta el nivel de operaciones básicas con bits puede ser bastante complejo.
+  </p>
+
+  <p>
+    Por otro lado, las computadoras más rápidas del mundo pueden realizar operaciones básicas con bits (como sumar, multiplicar, comparar o intercambiar dos bits) en 
+    <strong>10⁻¹¹ segundos</strong> (10 picosegundos), mientras que una computadora personal puede requerir 
+    <strong>10⁻⁸ segundos</strong> (10 nanosegundos) para hacer las mismas operaciones, es decir, <strong>1000 veces más tiempo</strong>.
+  </p>
+    <hr>
+    <h2>Algoritmo dado:</h2>
+<pre>
+procedure max(a₁, a₂, …, aₙ: integers)
+  max := a₁
+  for i := 2 to n
+    if max &lt; aᵢ then
+      max := aᵢ
+  return max
+</pre>
+
+    <h2>Objetivo:</h2>
+    <p>Contar cuántas comparaciones se hacen para determinar la complejidad temporal en función de \( n \) (tamaño del conjunto de entrada).</p>
+
+    <h2>¿Qué operaciones se consideran "comparaciones"?</h2>
+
+    <ul>
+    <li><strong>Comparación de control del bucle:</strong><br>
+    Cada vez que se ejecuta <code>for i := 2 to n</code>, la máquina debe comparar si \( i \leq n \) para saber si debe continuar con otra iteración.<br>
+    → Esto cuenta como <strong>una comparación</strong>.
+    </li>
+    <li><strong>Comparación del valor máximo:</strong><br>
+    Dentro del bucle hay una línea que dice <code>if max &lt; aᵢ then</code>.<br>
+    Esta también es una <strong>comparación</strong>, para decidir si el valor actual supera al máximo temporal.<br>
+    → Esto también cuenta como <strong>otra comparación</strong>.
+    </li>
+    </ul>
+
+    <h2>Entonces, por cada iteración del bucle:</h2>
+    <ul>
+        <li>1 comparación para saber si seguimos (\( i \leq n \))</li>
+        <li>1 comparación para comparar el valor actual con el máximo temporal (\( \text{max} < a_i \))</li>
+    </ul>
+
+    <p>→ 2 comparaciones por iteración</p>
+
+    <h2>¿Cuántas iteraciones hay?</h2>
+    <p>El bucle va de \( i = 2 \) hasta \( i = n \), o sea, se ejecuta \( (n - 1) \) veces.</p>
+
+    <p>Cada una de esas iteraciones hace 2 comparaciones. → Total: \( 2(n - 1) \)</p>
+
+    <p>Además, se hace una comparación extra al final para que el bucle termine cuando \( i = n + 1 \) 
+    (el bucle comprueba \( i \leq n \), y al fallar, sale del bucle).</p>
+
+    <h2>→ Comparaciones totales:</h2> 
+    <p>\[
+    2(n - 1) + 1 = 2n - 1
+    \]</p>
+    es \( \Theta(n) \)
+    
+
+
+
 <p><strong>Caso while:</strong> A diferencia del <code>for</code>, este aumenta a medida que avanza, ejecutándose <em>n</em> veces en lugar de <em>n − 1</em>.</p>
 
 <h2>Algoritmo: Búsqueda Lineal</h2>
@@ -1526,7 +1620,20 @@ procedure linear_search(x: integer, a₁, a₂,… , aₙ: distinct integers)
     <strong>Si multiplico por la base 3 veces el mismo numero, puedo dividir por el mismo numero
     el resultado 3 veces</strong>
     <hr>
-    <h2> ALGORITMO 3: El Algoritmo de Búsqueda Binaria</h2>
+    
+ 
+ 
+    </form>
+</div>
+
+
+
+
+<div class="seccion derecha">
+    <form action="./octavo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+
+
+     <h2> ALGORITMO 3: El Algoritmo de Búsqueda Binaria</h2>
   <pre>
     procedure binary_search(x: entero, a₁, a₂,… , aₙ: enteros en orden creciente)
         i := 1     {i es el extremo izquierdo del intervalo de búsqueda}
@@ -1541,7 +1648,7 @@ procedure linear_search(x: integer, a₁, a₂,… , aₙ: distinct integers)
         {location es el subíndice i del término aᵢ igual a x, o 0 si x no se encuentra}
   </pre>
 
-  <h2> EJEMPLO 3: Complejidad Temporal de la Búsqueda Binaria</h2>
+     <h2> EJEMPLO 3: Complejidad Temporal de la Búsqueda Binaria</h2>
 
   <div class="highlight">
     <strong>Descripción:</strong> Vamos a describir la complejidad temporal del algoritmo de búsqueda binaria en términos del número de comparaciones utilizadas (ignorando el tiempo que toma calcular m = ⌊(i + j)/2⌋ en cada iteración del bucle).
@@ -1570,16 +1677,8 @@ procedure linear_search(x: integer, a₁, a₂,… , aₙ: distinct integers)
     <h3> Total de comparaciones:</h3>
     <p>Se hacen 2 comparaciones por cada etapa, y hay <strong>k = log n</strong> etapas, más 2 comparaciones finales. Entonces:</p>
     <p><strong>Total = 2 log n + 2</strong></p>
- 
-    </form>
-</div>
-
-
-
-
-<div class="seccion derecha">
-    <form action="./octavo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-        
+    
+    
     <h3> Conclusión:</h3>
     <ul>
     <li>Si la lista tiene <strong>n</strong> elementos y <strong>n = 2<sup>k</sup></strong>, se requieren a lo sumo <strong>2 log n + 2</strong> comparaciones.</li>

@@ -788,7 +788,10 @@ if ($respuesta_77 === 'proceso') {
 }
 
  $respuesta_78 = isset($_POST['respuesta_78']) ? $_POST['respuesta_78'] : '';
-if ($respuesta_78 === '40') { 
+if ($respuesta_78 === 'Fundamentos de la Arquitectura de Software'
+    || $respuesta_78 === 'Fundamentos de la arquitectura de software'
+    || $respuesta_78 === 'fundamentos de la arquitectura de software'
+) { 
     $verificar_78 = "correcto";
 } elseif ($respuesta_78 === '') {
     $verificar_78 = '';
@@ -797,7 +800,7 @@ if ($respuesta_78 === '40') {
 }
 
  $respuesta_79 = isset($_POST['respuesta_79']) ? $_POST['respuesta_79'] : '';
-if ($respuesta_79 === '60') { 
+if ($respuesta_79 === 'Los sentidos de "arquitectura"') { 
     $verificar_79 = "correcto";
 } elseif ($respuesta_79 === '') {
     $verificar_79 = '';
@@ -806,7 +809,7 @@ if ($respuesta_79 === '60') {
 }
 
  $respuesta_80 = isset($_POST['respuesta_80']) ? $_POST['respuesta_80'] : '';
-if ($respuesta_80 === '80') { 
+if ($respuesta_80 === 'Partes interesadas y preocupaciones') { 
     $verificar_80 = "correcto";
 } elseif ($respuesta_80 === '') {
     $verificar_80 = '';
@@ -815,7 +818,7 @@ if ($respuesta_80 === '80') {
 }
 
  $respuesta_81 = isset($_POST['respuesta_81']) ? $_POST['respuesta_81'] : '';
-if ($respuesta_81 === '100') { 
+if ($respuesta_81 === 'Usos de la arquitectura') { 
     $verificar_81 = "correcto";
 } elseif ($respuesta_81 === '') {
     $verificar_81 = '';
@@ -824,7 +827,10 @@ if ($respuesta_81 === '100') {
 }
 
  $respuesta_82 = isset($_POST['respuesta_82']) ? $_POST['respuesta_82'] : '';
-if ($respuesta_82 === '120') { 
+if ($respuesta_82 === 'Descripcion de la Arquitectura de Software'
+|| $respuesta_82 === 'Descripcion de la arquitectura de software'
+|| $respuesta_82 === 'descripcion de la arquitectura de software'
+) { 
     $verificar_82 = "correcto";
 } elseif ($respuesta_82 === '') {
     $verificar_82 = '';
@@ -833,7 +839,12 @@ if ($respuesta_82 === '120') {
 }
 
  $respuesta_83 = isset($_POST['respuesta_83']) ? $_POST['respuesta_83'] : '';
-if ($respuesta_83 === '140') { 
+if ($respuesta_83 === 'Vistas y puntos de vista de la arquitectura'
+|| $respuesta_83 === 'vistas y puntos de vista de la arquitectura'
+|| $respuesta_83 === 'Architecture Views and Viewpoints' 
+|| $respuesta_83 === 'Architecture views and viewpoints' 
+|| $respuesta_83 === 'architecture views and viewpoints' 
+) { 
     $verificar_83 = "correcto";
 } elseif ($respuesta_83 === '') {
     $verificar_83 = '';
@@ -842,7 +853,7 @@ if ($respuesta_83 === '140') {
 }
 
  $respuesta_84 = isset($_POST['respuesta_84']) ? $_POST['respuesta_84'] : '';
-if ($respuesta_84 === '160') { 
+if ($respuesta_84 === 'Estilos y patrones de arquitectura') { 
     $verificar_84 = "correcto";
 } elseif ($respuesta_84 === '') {
     $verificar_84 = '';
@@ -851,7 +862,7 @@ if ($respuesta_84 === '160') {
 }
 
  $respuesta_85 = isset($_POST['respuesta_85']) ? $_POST['respuesta_85'] : '';
-if ($respuesta_85 === '180') { 
+if ($respuesta_85 === 'Descripcion de la arquitectura') { 
     $verificar_85 = "correcto";
 } elseif ($respuesta_85 === '') {
     $verificar_85 = '';
@@ -860,7 +871,11 @@ if ($respuesta_85 === '180') {
 }
 
  $respuesta_86 = isset($_POST['respuesta_86']) ? $_POST['respuesta_86'] : '';
-if ($respuesta_86 === '200') { 
+if ($respuesta_86 === 'Lenguaje de arquitectura y marco de arquitectura'
+|| $respuesta_86 === 'Architecture Language and Architecture Framework'
+|| $respuesta_86 === 'Architecture language and architecture framework'
+|| $respuesta_86 === 'architecture language and architecture framework'
+) {  
     $verificar_86 = "correcto";
 } elseif ($respuesta_86 === '') {
     $verificar_86 = '';
@@ -869,7 +884,9 @@ if ($respuesta_86 === '200') {
 }
 
  $respuesta_87 = isset($_POST['respuesta_87']) ? $_POST['respuesta_87'] : '';
-if ($respuesta_87 === '220') { 
+if ($respuesta_87 === 'Arquitectura como decisiones significativas'
+|| $respuesta_87 === 'arquitectura como decisiones significativas'
+) { 
     $verificar_87 = "correcto";
 } elseif ($respuesta_87 === '') {
     $verificar_87 = '';
@@ -878,7 +895,10 @@ if ($respuesta_87 === '220') {
 }
 
  $respuesta_88 = isset($_POST['respuesta_88']) ? $_POST['respuesta_88'] : '';
-if ($respuesta_88 === '240') { 
+if ($respuesta_88 === 'Proceso de Arquitectura de Software'
+|| $respuesta_88 === 'Proceso de arquitectura de software'
+|| $respuesta_88 === 'proceso de arquitectura de software'
+) { 
     $verificar_88 = "correcto";
 } elseif ($respuesta_88 === '') {
     $verificar_88 = '';
@@ -887,7 +907,9 @@ if ($respuesta_88 === '240') {
 }
 
  $respuesta_89 = isset($_POST['respuesta_89']) ? $_POST['respuesta_89'] : '';
-if ($respuesta_89 === '42') { 
+if ($respuesta_89 === 'Arquitectura en contexto'
+|| $respuesta_89 === 'arquitectura en contexto'
+) { 
     $verificar_89 = "correcto";
 } elseif ($respuesta_89 === '') {
     $verificar_89 = '';
@@ -896,7 +918,9 @@ if ($respuesta_89 === '42') {
 }
 
  $respuesta_90 = isset($_POST['respuesta_90']) ? $_POST['respuesta_90'] : '';
-if ($respuesta_90 === '63') { 
+if ($respuesta_90 === 'Diseño arquitectonico'
+|| $respuesta_90 === 'diseño arquitectonico'
+) { 
     $verificar_90 = "correcto";
 } elseif ($respuesta_90 === '') {
     $verificar_90 = '';
@@ -905,7 +929,9 @@ if ($respuesta_90 === '63') {
 }
 
  $respuesta_91 = isset($_POST['respuesta_91']) ? $_POST['respuesta_91'] : '';
-if ($respuesta_91 === '84') { 
+if ($respuesta_91 === 'Metodos y tacticas de arquitectura'
+|| $respuesta_91 === 'metodos y tacticas de arquitectura'
+) { 
     $verificar_91 = "correcto";
 } elseif ($respuesta_91 === '') {
     $verificar_91 = '';
@@ -914,7 +940,9 @@ if ($respuesta_91 === '84') {
 }
 
  $respuesta_92 = isset($_POST['respuesta_92']) ? $_POST['respuesta_92'] : '';
-if ($respuesta_92 === '105') { 
+if ($respuesta_92 === 'Arquitectura a gran escala'
+|| $respuesta_92 === 'arquitectura a gran escala'
+) { 
     $verificar_92 = "correcto";
 } elseif ($respuesta_92 === '') {
     $verificar_92 = '';
@@ -923,7 +951,10 @@ if ($respuesta_92 === '105') {
 }
 
  $respuesta_93 = isset($_POST['respuesta_93']) ? $_POST['respuesta_93'] : '';
-if ($respuesta_93 === '126') { 
+if ($respuesta_93 === 'Evaluacion de la Arquitectura de Software'
+|| $respuesta_93 === 'Evaluacion de la arquitectura de software'
+|| $respuesta_93 === 'evaluacion de la arquitectura de software'
+) { 
     $verificar_93 = "correcto";
 } elseif ($respuesta_93 === '') {
     $verificar_93 = '';
@@ -932,7 +963,13 @@ if ($respuesta_93 === '126') {
 }
 
  $respuesta_94 = isset($_POST['respuesta_94']) ? $_POST['respuesta_94'] : '';
-if ($respuesta_94 === '147') { 
+if ($respuesta_94 === 'Calidad en la arquitectura'
+|| $respuesta_94 === 'calidad en la arquitectura'
+|| $respuesta_94 === 'Goodness in Architecture'
+|| $respuesta_94 === 'Goodness in architecture'
+|| $respuesta_94 === 'goodness in architecture'
+|| $respuesta_94 === '"Bondad" en la Arquitectura' 
+) { 
     $verificar_94 = "correcto";
 } elseif ($respuesta_94 === '') {
     $verificar_94 = '';
@@ -941,7 +978,7 @@ if ($respuesta_94 === '147') {
 }
 
  $respuesta_95 = isset($_POST['respuesta_95']) ? $_POST['respuesta_95'] : '';
-if ($respuesta_95 === '168') { 
+if ($respuesta_95 === 'Razonamiento sobre arquitecturas') { 
     $verificar_95 = "correcto";
 } elseif ($respuesta_95 === '') {
     $verificar_95 = '';
@@ -950,7 +987,9 @@ if ($respuesta_95 === '168') {
 }
 
  $respuesta_96 = isset($_POST['respuesta_96']) ? $_POST['respuesta_96'] : '';
-if ($respuesta_96 === '189') { 
+if ($respuesta_96 === 'Revisiones de arquitectura'
+|| $respuesta_96 === 'revisiones de arquitectura'
+) { 
     $verificar_96 = "correcto";
 } elseif ($respuesta_96 === '') {
     $verificar_96 = '';
@@ -959,7 +998,9 @@ if ($respuesta_96 === '189') {
 }
 
  $respuesta_97 = isset($_POST['respuesta_97']) ? $_POST['respuesta_97'] : '';
-if ($respuesta_97 === '210') { 
+if ($respuesta_97 === 'Metricas de arquitectura'
+|| $respuesta_97 === 'metricas de arquitectura'
+) { 
     $verificar_97 = "correcto";
 } elseif ($respuesta_97 === '') {
     $verificar_97 = '';
@@ -1949,6 +1990,109 @@ function ocultarMensaje4() {
 
     <hr>
     <strong>fin</strong>
+    <hr>
+
+
+      <h1>Arquitectura de Software</h1>
+    
+    <ul>
+        <li class="tema">
+        <input type="text" name="respuesta_78" value="<?php echo $respuesta_78; ?>" size="40">    
+            <ul>
+                <li class="subtema">
+                <input type="text" name="respuesta_79" value="<?php echo $respuesta_79; ?>" size="40">      
+                </li>
+                <li class="subtema">
+                <input type="text" name="respuesta_80" value="<?php echo $respuesta_80; ?>" size="40">    
+                </li>
+                <li class="subtema">
+                <input type="text" name="respuesta_81" value="<?php echo $respuesta_81; ?>" size="40">       
+                </li>
+            </ul>
+        </li>
+        
+        <li class="tema">
+        <input type="text" name="respuesta_82" value="<?php echo $respuesta_82; ?>" size="40">     
+         
+            <ul>
+                <li class="subtema">
+                <input type="text" name="respuesta_83" value="<?php echo $respuesta_83; ?>" size="40">    
+                </li>
+                <li class="subtema">
+                <input type="text" name="respuesta_84" value="<?php echo $respuesta_84; ?>" size="40">      
+                </li>
+                <li class="subtema">
+                <input type="text" name="respuesta_85" value="<?php echo $respuesta_85; ?>" size="40">     
+                </li>
+                <li class="subtema">
+                <input type="text" name="respuesta_86" value="<?php echo $respuesta_86; ?>" size="40">     
+                </li>
+                <li class="subtema">
+                <input type="text" name="respuesta_87" value="<?php echo $respuesta_87; ?>" size="40">     
+                </li>
+            </ul>
+        </li>
+        
+        <li class="tema">
+        <input type="text" name="respuesta_88" value="<?php echo $respuesta_88; ?>" size="40">     
+            <ul>
+                <li class="subtema">
+                <input type="text" name="respuesta_89" value="<?php echo $respuesta_89; ?>" size="40">     
+                </li>
+                <li class="subtema">
+                <input type="text" name="respuesta_90" value="<?php echo $respuesta_90; ?>" size="40">    
+                </li>
+                <li class="subtema">
+                <input type="text" name="respuesta_91" value="<?php echo $respuesta_91; ?>" size="40">      
+                </li>
+                <li class="subtema">
+                <input type="text" name="respuesta_92" value="<?php echo $respuesta_92; ?>" size="40">     
+                </li>
+            </ul>
+        </li>
+        
+        <li class="tema">
+        <input type="text" name="respuesta_93" value="<?php echo $respuesta_93; ?>" size="40">     
+            <ul>
+                <li class="subtema">
+                <input type="text" name="respuesta_94" value="<?php echo $respuesta_94; ?>" size="40">    
+                </li>
+                <li class="subtema">
+                 <input type="text" name="respuesta_95" value="<?php echo $respuesta_95; ?>" size="40">      
+                 </li>
+                <li class="subtema">
+                <input type="text" name="respuesta_96" value="<?php echo $respuesta_96; ?>" size="40">     
+                 </li>
+                <li class="subtema">
+                <input type="text" name="respuesta_97" value="<?php echo $respuesta_97; ?>" size="40">     
+                 </li>
+            </ul>
+        </li>
+    </ul>
+    
+<button type="submit">Enviar</button>
+<?php echo $verificar_78 ?>
+<?php echo $verificar_79 ?>
+<?php echo $verificar_80 ?> 
+<?php echo $verificar_81 ?>
+<?php echo $verificar_82 ?>
+<?php echo $verificar_83 ?>
+<?php echo $verificar_84 ?>
+<?php echo $verificar_85 ?>
+<?php echo $verificar_86 ?>
+<?php echo $verificar_87 ?>
+<?php echo $verificar_88 ?>
+<?php echo $verificar_89 ?>
+<?php echo $verificar_90 ?>
+<?php echo $verificar_91 ?>
+<?php echo $verificar_92 ?>
+<?php echo $verificar_93 ?>
+<?php echo $verificar_94 ?>
+<?php echo $verificar_95 ?>
+<?php echo $verificar_96 ?>
+<?php echo $verificar_97 ?>
+<hr>
+
     </form>
 </div>
 

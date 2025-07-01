@@ -11,39 +11,25 @@ $respuesta_30 = ''; $respuesta_31 = ''; $respuesta_32 = ''; $respuesta_33 = ''; 
 $respuesta_39 = ''; $respuesta_40 = ''; $respuesta_41 = ''; $respuesta_42 = ''; $respuesta_43 = '';
 $respuesta_44 = ''; $respuesta_45 = ''; $respuesta_46 = ''; $respuesta_47 = ''; $respuesta_48 = '';
 $respuesta_49 = ''; $respuesta_50 = ''; $respuesta_51 = ''; $respuesta_52 = ''; $respuesta_53 = '';
-$respuesta_54 = ''; $respuesta_55 = ''; $respuesta_56 = '';
-$respuesta_57 = ''; $respuesta_58 = ''; $respuesta_59 = ''; $respuesta_60 = '';
-$respuesta_61 = '';$respuesta_62 = '';$respuesta_63 = '';$respuesta_64 = '';
-$respuesta_65 = '';$respuesta_66 = '';$respuesta_67 = '';$respuesta_68 = '';
-$respuesta_69 = '';$respuesta_70 = '';$respuesta_71 = '';$respuesta_72 = '';
-$respuesta_73 = '';$respuesta_74 = '';$respuesta_75 = '';$respuesta_76 = '';
-$respuesta_77 = '';$respuesta_78 = '';$respuesta_79 = '';$respuesta_80 = '';
-$respuesta_81 = '';$respuesta_82 = '';$respuesta_83 = '';$respuesta_84 = '';
+$respuesta_54 = ''; $respuesta_55 = ''; $respuesta_56 = '';$respuesta_57 = ''; $respuesta_58 = ''; $respuesta_59 = ''; $respuesta_60 = '';
+$respuesta_61 = '';$respuesta_62 = '';$respuesta_63 = '';$respuesta_64 = '';$respuesta_65 = '';$respuesta_66 = '';$respuesta_67 = '';$respuesta_68 = '';
+$respuesta_69 = '';$respuesta_70 = '';$respuesta_71 = '';$respuesta_72 = '';$respuesta_73 = '';$respuesta_74 = '';$respuesta_75 = '';$respuesta_76 = '';
+$respuesta_77 = '';$respuesta_78 = '';$respuesta_79 = '';$respuesta_80 = '';$respuesta_81 = '';$respuesta_82 = '';$respuesta_83 = '';$respuesta_84 = '';
 $respuesta_85 = '';$respuesta_86 = '';$respuesta_87 = '';$respuesta_88 = ''; $respuesta_89 = '';
-$respuesta_90 = '';
-$respuesta_91 = '';
-$respuesta_92 = '';
-$respuesta_93 = '';
-$respuesta_94 = '';
-$respuesta_95 = '';
-$respuesta_96 = '';
-$respuesta_97 = '';
-$respuesta_98 = '';
-$respuesta_99 = '';
-$respuesta_100 = '';
-$respuesta_101 = '';
-$respuesta_102 = '';
-$respuesta_103 = '';
-$respuesta_104 = '';
-$respuesta_105 = '';
-$respuesta_106 = '';
-$respuesta_107 = '';
-$respuesta_108 = '';
-$respuesta_109 = '';
-$respuesta_110 = '';
+$respuesta_90 = ''; $respuesta_91 = '';$respuesta_92 = '';$respuesta_93 = '';$respuesta_94 = '';$respuesta_95 = '';$respuesta_96 = '';$respuesta_97 = '';$respuesta_98 = '';
+$respuesta_99 = '';$respuesta_100 = '';$respuesta_101 = '';$respuesta_102 = '';$respuesta_103 = '';$respuesta_104 = '';$respuesta_105 = '';
+$respuesta_106 = '';$respuesta_107 = '';$respuesta_108 = '';$respuesta_109 = '';$respuesta_110 = '';
 
+/////
+ // Agrega estas variables junto con las demás (antes del if $_POST)
+$respuesta_111 = ''; $respuesta_112 = ''; $respuesta_113 = ''; $respuesta_114 = ''; $respuesta_115 = ''; 
+$respuesta_116 = ''; $respuesta_117 = ''; $respuesta_118 = ''; $respuesta_119 = ''; $respuesta_120 = ''; 
+$respuesta_121 = ''; $respuesta_122 = '';
 
- 
+$verificar_111 = ''; $verificar_112 = ''; $verificar_113 = ''; $verificar_114 = ''; $verificar_115 = ''; 
+$verificar_116 = ''; $verificar_117 = ''; $verificar_118 = ''; $verificar_119 = ''; $verificar_120 = ''; 
+$verificar_121 = ''; $verificar_122 = '';
+////
 
 $verificar_1 = ''; $verificar_2 = ''; $verificar_3 = '';  $verificar_3_2 = ''; $verificar_4 = ''; $verificar_5 = ''; 
 $verificar_6 = ''; $verificar_7 = '';  $verificar_8 = ''; $verificar_9 = ''; $verificar_10 = ''; 
@@ -59,60 +45,200 @@ $verificar_49 = ''; $verificar_50 = ''; $verificar_51 = ''; $verificar_52 = ''; 
 $verificar_54 = ''; $verificar_55 = '';
 $verificar_56 = ''; $verificar_57 = ''; $verificar_58 = ''; $verificar_59 = ''; $verificar_60 = ''; 
 $verificar_61 = ''; $verificar_62 = ''; $verificar_63 = ''; $verificar_64 = ''; $verificar_65 = '';
- $verificar_66 = ''; $verificar_67 = ''; $verificar_68 = ''; $verificar_69 = ''; $verificar_70 = '';
-  $verificar_71 = ''; $verificar_72 = ''; $verificar_73 = ''; $verificar_74 = ''; $verificar_75 = '';
-   $verificar_76 = ''; $verificar_77 = ''; $verificar_78 = ''; $verificar_79 = ''; $verificar_80 = '';
-    $verificar_81 = ''; $verificar_82 = ''; $verificar_83 = ''; $verificar_84 = ''; $verificar_85 = '';
-     $verificar_86 = ''; $verificar_87 = ''; $verificar_88 = '';
-     $verificar_89 = '';
-     $verificar_90 = '';
-     $verificar_91 = '';
-     $verificar_92 = '';
-     $verificar_93 = '';
-     $verificar_94 = '';
-     $verificar_95 = '';
-     $verificar_96 = '';
-     $verificar_97 = '';
-     $verificar_98 = '';
-     $verificar_99 = '';
-     $verificar_100 = '';
-     $verificar_101 = '';
-     $verificar_102 = '';
-     $verificar_103 = '';
-     $verificar_104 = '';
-     $verificar_105 = '';
-     $verificar_106 = '';
-     $verificar_107 = '';
-     $verificar_108 = '';
-     $verificar_109 = '';
-     $verificar_110 = '';
+$verificar_66 = ''; $verificar_67 = ''; $verificar_68 = ''; $verificar_69 = ''; $verificar_70 = '';
+$verificar_71 = ''; $verificar_72 = ''; $verificar_73 = ''; $verificar_74 = ''; $verificar_75 = '';
+$verificar_76 = ''; $verificar_77 = ''; $verificar_78 = ''; $verificar_79 = ''; $verificar_80 = '';
+$verificar_81 = ''; $verificar_82 = ''; $verificar_83 = ''; $verificar_84 = ''; $verificar_85 = '';
+$verificar_86 = ''; $verificar_87 = ''; $verificar_88 = '';$verificar_89 = ''; $verificar_90 = '';$verificar_91 = '';
+$verificar_92 = '';$verificar_93 = '';$verificar_94 = ''; $verificar_95 = '';
+$verificar_96 = ''; $verificar_97 = ''; $verificar_98 = ''; $verificar_99 = ''; $verificar_100 = '';
+$verificar_101 = '';$verificar_102 = '';$verificar_103 = '';$verificar_104 = '';$verificar_105 = '';
+$verificar_106 = '';$verificar_107 = '';$verificar_108 = '';$verificar_109 = '';$verificar_110 = '';
      
 
+$mostrar_solucion = '';
 if ($_POST) {
+    $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
+    
+    if ($mostrar_solucion === 'mostrar_solucion') {
+        // Establecer todas las respuestas correctas para las tablas de multiplicar
+        
+        // Tabla del 12
+        $respuesta_111 = '24';
+        $respuesta_112 = '36';
+        $respuesta_113 = '48';
+        $respuesta_114 = '60';
+        $respuesta_115 = '72';
+        $respuesta_116 = '84';
+        $respuesta_117 = '96';
+        $respuesta_118 = '108';
+        $respuesta_119 = '120';
+        $respuesta_120 = '132';
+        $respuesta_121 = '144';
+        
+        // Tabla del 13
+        $respuesta_1 = '26';
+        $respuesta_2 = '39';
+        $respuesta_3 = '52';
+        $respuesta_4 = '65';
+        $respuesta_5 = '78';
+        $respuesta_6 = '91';
+        $respuesta_7 = '104';
+        $respuesta_8 = '117';
+        $respuesta_9 = '130';
+        $respuesta_10 = '143';
+        $respuesta_11 = '156';
+        
+        // Tabla del 14
+        $respuesta_12 = '28';
+        $respuesta_13 = '42';
+        $respuesta_14 = '56';
+        $respuesta_15 = '70';
+        $respuesta_16 = '84';
+        $respuesta_17 = '98';
+        $respuesta_18 = '112';
+        $respuesta_19 = '126';
+        $respuesta_20 = '140';
+        $respuesta_21 = '154';
+        $respuesta_22 = '168';
+        
+        // Tabla del 15
+        $respuesta_23 = '30';
+        $respuesta_24 = '45';
+        $respuesta_25 = '60';
+        $respuesta_26 = '75';
+        $respuesta_27 = '90';
+        $respuesta_28 = '105';
+        $respuesta_29 = '120';
+        $respuesta_30 = '135';
+        $respuesta_31 = '150';
+        $respuesta_32 = '165';
+        $respuesta_33 = '180';
+        
+        // Tabla del 16
+        $respuesta_34 = '32';
+        $respuesta_35 = '48';
+        $respuesta_36 = '64';
+        $respuesta_37 = '80';
+        $respuesta_38 = '96';
+        $respuesta_39 = '112';
+        $respuesta_40 = '128';
+        $respuesta_41 = '144';
+        $respuesta_42 = '160';
+        $respuesta_43 = '176';
+        $respuesta_44 = '192';
+        
+        // Tabla del 17
+        $respuesta_45 = '34';
+        $respuesta_46 = '51';
+        $respuesta_47 = '68';
+        $respuesta_48 = '85';
+        $respuesta_49 = '102';
+        $respuesta_50 = '119';
+        $respuesta_51 = '136';
+        $respuesta_52 = '153';
+        $respuesta_53 = '170';
+        $respuesta_54 = '187';
+        $respuesta_55 = '204';
+        
+        // Tabla del 18
+        $respuesta_56 = '36';
+        $respuesta_57 = '54';
+        $respuesta_58 = '72';
+        $respuesta_59 = '90';
+        $respuesta_60 = '108';
+        $respuesta_61 = '126';
+        $respuesta_62 = '144';
+        $respuesta_63 = '162';
+        $respuesta_64 = '180';
+        $respuesta_65 = '198';
+        $respuesta_66 = '216';
+        
+        // Tabla del 19
+        $respuesta_67 = '38';
+        $respuesta_68 = '57';
+        $respuesta_69 = '76';
+        $respuesta_70 = '95';
+        $respuesta_71 = '114';
+        $respuesta_72 = '133';
+        $respuesta_73 = '152';
+        $respuesta_74 = '171';
+        $respuesta_75 = '190';
+        $respuesta_76 = '209';
+        $respuesta_77 = '228';
+        
+        // Tabla del 20
+        $respuesta_78 = '40';
+        $respuesta_79 = '60';
+        $respuesta_80 = '80';
+        $respuesta_81 = '100';
+        $respuesta_82 = '120';
+        $respuesta_83 = '140';
+        $respuesta_84 = '160';
+        $respuesta_85 = '180';
+        $respuesta_86 = '200';
+        $respuesta_87 = '220';
+        $respuesta_88 = '240';
+        
+        // Tabla del 21
+        $respuesta_89 = '42';
+        $respuesta_90 = '63';
+        $respuesta_91 = '84';
+        $respuesta_92 = '105';
+        $respuesta_93 = '126';
+        $respuesta_94 = '147';
+        $respuesta_95 = '168';
+        $respuesta_96 = '189';
+        $respuesta_97 = '210';
+        $respuesta_98 = '231';
+        $respuesta_99 = '252';
+        
+        // Tabla del 22
+        $respuesta_100 = '44';
+        $respuesta_101 = '66';
+        $respuesta_102 = '88';
+        $respuesta_103 = '110';
+        $respuesta_104 = '132';
+        $respuesta_105 = '154';
+        $respuesta_106 = '176';
+        $respuesta_107 = '198';
+        $respuesta_108 = '220';
+        $respuesta_109 = '242';
+        $respuesta_110 = '264';
+        
+        // Marcar todas como correctas
+        $verificar_1 = $verificar_2 = $verificar_3 = /* ... todas las variables de verificación ... */ $verificar_122 = "correcto";
+    } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '26') {  
+    $respuesta_1_dos = str_replace('',' ', $respuesta_1);
+
+   if ($respuesta_1_dos === '\frac{n(n+1)}{2}') {  
        $verificar_1 = "correcto";
-   } elseif ($respuesta_1 === '') {
+   } elseif ($respuesta_1_dos === '') {
        $verificar_1 = '';
    } else {
        $verificar_1 = "incorrecto";
    }
 
-   // Verificar la respuesta de la segunda pregunta
-   $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === '39') {  
+    // Verificar la respuesta de la segunda pregunta
+    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
+    $respuesta_2_dos = str_replace('',' ', $respuesta_2);
+
+    if ($respuesta_2_dos === 'n(n+1)+n') {  
        $verificar_2 = "correcto";
-   } elseif ($respuesta_2 === '') {
+    } elseif ($respuesta_2_dos === '') {
        $verificar_2 = '';
-   } else {
+    } else {
        $verificar_2 = "incorrecto";
-   }
+    }
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === '52') {  
+   $respuesta_3_dos = str_replace('',' ', $respuesta_3);
+
+   if ($respuesta_3_dos === '\frac{n(n+1)+n}{n}') {  
        $verificar_3 = "correcto";
-   } elseif ($respuesta_3 === '') {
+   } elseif ($respuesta_3_dos === '') {
        $verificar_3 = '';
    } else {
        $verificar_3 = "incorrecto";
@@ -120,7 +246,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === '65') {  
+   if ($respuesta_4 === 'n+2') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -130,7 +256,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === '78') {  
+   if ($respuesta_5 === 'n(n+1)') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -140,7 +266,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === '91') {  
+   if ($respuesta_6 === 'compara') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -150,7 +276,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === '104') {  
+   if ($respuesta_7 === 'intercambia') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -160,19 +286,21 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === '117') {  
+   $respuesta_8_dos = str_replace('',' ', $respuesta_8);
+   if ($respuesta_8_dos === 'i-1') {  
        $verificar_8 = "correcto";
-   } elseif ($respuesta_8 === '') {
+   } elseif ($respuesta_8_dos === '') {
        $verificar_8 = '';
    } else {
        $verificar_8 = "incorrecto";
    }
 
    // Verificar la respuesta de la novena pregunta
-   $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === '130') {  
+    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
+    $respuesta_9_dos = str_replace('',' ', $respuesta_9);
+   if ($respuesta_9_dos === 'n-i') {  
        $verificar_9 = "correcto";
-   } elseif ($respuesta_9 === '') {
+   } elseif ($respuesta_9_dos === '') {
        $verificar_9 = '';
    } else {
        $verificar_9 = "incorrecto";
@@ -180,9 +308,11 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === '143') {  
+   $respuesta_10_dos = str_replace('',' ', $respuesta_10);
+
+   if ($respuesta_10_dos === '\frac{(n-1)n}{2}') {  
        $verificar_10 = "correcto";
-   } elseif ($respuesta_10 === '') {
+   } elseif ($respuesta_10_dos === '') {
        $verificar_10 = '';
    } else {
        $verificar_10 = "incorrecto";
@@ -190,7 +320,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === '156') {  
+   if ($respuesta_11 === 'ordenada') {  
        $verificar_11 = "correcto";
    } elseif ($respuesta_11 === '') {
        $verificar_11 = '';
@@ -201,7 +331,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
      $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-     if ($respuesta_12 === '28') {  
+     if ($respuesta_12 === 'n^2') {  
          $verificar_12 = "correcto";
      } elseif ($respuesta_12 === '') {
          $verificar_12 = '';
@@ -211,7 +341,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la segunda pregunta
      $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-     if ($respuesta_13 === '42') { 
+     if ($respuesta_13 === '2') { 
          $verificar_13 = "correcto";
      } elseif ($respuesta_13 === '') {
          $verificar_13 = '';
@@ -221,7 +351,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la tercera pregunta
      $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-     if ($respuesta_14 === '56') {  
+     if ($respuesta_14 === '1') {  
          $verificar_14 = "correcto";
      } elseif ($respuesta_14 === '') {
          $verificar_14 = '';
@@ -1114,7 +1244,106 @@ if ($respuesta_110 === '264') {
     $verificar_110 = "incorrecto";
 }
 
+// Tabla del 12
+$respuesta_111 = isset($_POST['respuesta_111']) ? $_POST['respuesta_111'] : '';
+if ($respuesta_111 === '24') {  
+    $verificar_111 = "correcto";
+} elseif ($respuesta_111 === '') {
+    $verificar_111 = '';
+} else {
+    $verificar_111 = "incorrecto";
+}
 
+$respuesta_112 = isset($_POST['respuesta_112']) ? $_POST['respuesta_112'] : '';
+if ($respuesta_112 === '36') {  
+    $verificar_112 = "correcto";
+} elseif ($respuesta_112 === '') {
+    $verificar_112 = '';
+} else {
+    $verificar_112 = "incorrecto";
+}
+
+$respuesta_113 = isset($_POST['respuesta_113']) ? $_POST['respuesta_113'] : '';
+if ($respuesta_113 === '48') {  
+    $verificar_113 = "correcto";
+} elseif ($respuesta_113 === '') {
+    $verificar_113 = '';
+} else {
+    $verificar_113 = "incorrecto";
+}
+
+$respuesta_114 = isset($_POST['respuesta_114']) ? $_POST['respuesta_114'] : '';
+if ($respuesta_114 === '60') {  
+    $verificar_114 = "correcto";
+} elseif ($respuesta_114 === '') {
+    $verificar_114 = '';
+} else {
+    $verificar_114 = "incorrecto";
+}
+
+$respuesta_115 = isset($_POST['respuesta_115']) ? $_POST['respuesta_115'] : '';
+if ($respuesta_115 === '72') {  
+    $verificar_115 = "correcto";
+} elseif ($respuesta_115 === '') {
+    $verificar_115 = '';
+} else {
+    $verificar_115 = "incorrecto";
+}
+
+$respuesta_116 = isset($_POST['respuesta_116']) ? $_POST['respuesta_116'] : '';
+if ($respuesta_116 === '84') {  
+    $verificar_116 = "correcto";
+} elseif ($respuesta_116 === '') {
+    $verificar_116 = '';
+} else {
+    $verificar_116 = "incorrecto";
+}
+
+$respuesta_117 = isset($_POST['respuesta_117']) ? $_POST['respuesta_117'] : '';
+if ($respuesta_117 === '96') {  
+    $verificar_117 = "correcto";
+} elseif ($respuesta_117 === '') {
+    $verificar_117 = '';
+} else {
+    $verificar_117 = "incorrecto";
+}
+
+$respuesta_118 = isset($_POST['respuesta_118']) ? $_POST['respuesta_118'] : '';
+if ($respuesta_118 === '108') {  
+    $verificar_118 = "correcto";
+} elseif ($respuesta_118 === '') {
+    $verificar_118 = '';
+} else {
+    $verificar_118 = "incorrecto";
+}
+
+$respuesta_119 = isset($_POST['respuesta_119']) ? $_POST['respuesta_119'] : '';
+if ($respuesta_119 === '120') {  
+    $verificar_119 = "correcto";
+} elseif ($respuesta_119 === '') {
+    $verificar_119 = '';
+} else {
+    $verificar_119 = "incorrecto";
+}
+
+$respuesta_120 = isset($_POST['respuesta_120']) ? $_POST['respuesta_120'] : '';
+if ($respuesta_120 === '132') {  
+    $verificar_120 = "correcto";
+} elseif ($respuesta_120 === '') {
+    $verificar_120 = '';
+} else {
+    $verificar_120 = "incorrecto";
+}
+
+$respuesta_121 = isset($_POST['respuesta_121']) ? $_POST['respuesta_121'] : '';
+if ($respuesta_121 === '144') {  
+    $verificar_121 = "correcto";
+} elseif ($respuesta_121 === '') {
+    $verificar_121 = '';
+} else {
+    $verificar_121 = "incorrecto";
+}
+}
 }
 ?>
 <!DOCTYPE html>
@@ -1123,7 +1352,7 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-  <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
+       <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -1136,7 +1365,7 @@ if ($respuesta_110 === '264') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 390vh;
+    height: 320vh;
     }
 </style>
  
@@ -1178,211 +1407,180 @@ function handleSubmit(event) {
 }
 
 function actualizarFormula() {
-    // Obtener los valores de los inputs
-   
-    var f = document.getElementById('respuesta_11').value || "";
- 
-
-
-    // Construir la fórmula dinámica
-    var formula = ` \\  ${f} \\, `;
-
-    // Actualizar el contenido de la fórmula en el DOM
+    var f = document.getElementById('respuesta_1').value || "";
+    var formula = ` \\  \\sum_{i=1}^{n} i =  ${f} \\, `;
     document.getElementById('formula').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
- 
 
 function actualizarFormula2() {
-    // Obtener los valores de los inputs
-   
-    var f = document.getElementById('respuesta_13').value || "";
-  
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-
-    // Actualizar el contenido de la fórmula en el DOM
+    var f = document.getElementById('respuesta_2').value || "";
+    var formula = ` \\ \\sum_{i=1}^{n} (2i + 1) =  ${f} \\, `;
     document.getElementById('formula2').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
 
-
-
 function actualizarFormula3() {
-    // Obtener los valores de los inputs
-   
-    var f = document.getElementById('respuesta_27').value || "";
- 
-
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-
-    // Actualizar el contenido de la fórmula en el DOM
+    var f = document.getElementById('respuesta_3').value || "";
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula3').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
 
 function actualizarFormula4() {
-    // Obtener los valores de los inputs
-    var f = document.getElementById('respuesta_29').value || "";
-   
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var f = document.getElementById('respuesta_5').value || "";
+    var formula = ` \\ 2 \\sum_{i=1}^{n} i  =  ${f} \\, `;
     document.getElementById('formula4').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
-
 
 function actualizarFormula5() {
-    // Obtener los valores de los inputs
-    var f = document.getElementById('respuesta_30').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var f = document.getElementById('respuesta_10').value || "";
+    var formula = ` \\ (n - 1) + (n - 2) + \\cdots + 2 + 1 = ${f} \\, `;
     document.getElementById('formula5').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
-
-
 
 function actualizarFormula6() {
-    // Obtener los valores de los inputs
-    var f = document.getElementById('respuesta_6').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
-    document.getElementById('formula6').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
+    var f = document.getElementById('respuesta_12').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula6').innerHTML = `\\( ${formula} \\)`;
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
 
-
 function actualizarFormula7() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_7').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula7').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
 
 function actualizarFormula8() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_8').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula8').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
-
 
 function actualizarFormula9() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_9').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula9').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
-
-
 
 function actualizarFormula10() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_10').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula10').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
-
 
 function actualizarFormula11() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_11').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula11').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
 
-
 function actualizarFormula12() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_12').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula12').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
 
-    // Re-renderizar MathJax para mostrar los cambios
+function actualizarFormula13() {
+    var f = document.getElementById('respuesta_13').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula13').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula14() {
+    var f = document.getElementById('respuesta_14').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula14').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula15() {
+    var f = document.getElementById('respuesta_15').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula15').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula16() {
+    var f = document.getElementById('respuesta_16').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula16').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula17() {
+    var f = document.getElementById('respuesta_17').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula17').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula18() {
+    var f = document.getElementById('respuesta_18').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula18').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula19() {
+    var f = document.getElementById('respuesta_19').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula19').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula20() {
+    var f = document.getElementById('respuesta_20').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula20').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
         MathJax.typeset();
     }
@@ -1439,164 +1637,160 @@ function ocultarMensaje4() {
 </head>
 <body> 
 <div class="seccion izquierda">
-    <form action="./septimo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h3>Otro Ejemplo:</h3>
-  <p>
-    \( f(x) = 3x^2 + 8x \log x \)
-    <br>
-    Como \( 8x \log x \leq 8x^2 \), entonces:
-    <br>
-    \( f(x) \leq 11x^2 \Rightarrow f(x) = O(x^2) \)
-    <br>
-    Y claramente \( x^2 = O(f(x)) \), entonces \( f(x) = \Theta(x^2) \)
-  </p>
+    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+       <h4> Paso 2: Expandimos la suma</h4>
+<p>Usamos propiedad distributiva:</p>
+<p>\[
+\sum_{i=1}^{n} (2i + 1) = \sum_{i=1}^{n} 2i + \sum_{i=1}^{n} 1 = 2\sum_{i=1}^{n} i + n
+\]</p>
 
-  <h2>Teorema (Grado del Polinomio)</h2>
-  <p>
-    Si \( f(x) = a_nx^n + \dots + a_1x + a_0 \) y \( a_n \neq 0 \), entonces:
-    <br>
-    \( f(x) = \Theta(x^n) \)
-  </p>
+<p>Recordamos que:</p>
 
-  <h3>Ejemplos:</h3>
-  <ul>
-    <li> \( 3x^8 + 10x^7 + 221x^2 + 1444 \Rightarrow \Theta(x^8) \)</li>
-    <li> \( x^{19} - 18x^4 - 10112 \Rightarrow \Theta(x^{19}) \)</li>
-    <li> \( -x^{99} + 40001x^{98} + 100003x \Rightarrow \Theta(x^{99}) \)</li>
-  </ul>
+    <span id="formula">
+        \[ \sum_{i=1}^{n} i =     \]
+    </span> 
+    <input type="text"  id="respuesta_1" name="respuesta_1" value="<?php echo $respuesta_1; ?>" 
+    oninput="actualizarFormula()"
+    size="19">
 
-  <h2>Advertencia</h2>
-  <p>
-    Como señaló Donald Knuth, es común encontrar el uso de notación Big-O como si también implicara 
-    una cota inferior, lo cual es incorrecto. Siempre que necesitemos expresar el crecimiento real de una función 
-    (con ambas cotas), debemos usar \( \Theta \).
-  </p>      
-    <hr>
-    <h2>Ejercicio 1: Determinar si f(x) es O(x)</h2>
+<br>
 
-<h3>a) \( f(x) = 10 \)</h3>
-<p>
-Buscamos constantes \( C \) y \( k \) tal que:
-\[
-|f(x)| = 10 \leq Cx \quad \text{cuando } x > k
-\]
-Dividiendo:
-\[
-\frac{10}{x} \leq C
-\]
-Esto se cumple si elegimos \( C = 10 \), \( k = 1 \), ya que \( \frac{10}{x} < 10 \) para \( x > 1 \).
-</p>
-<p><strong>Conclusión:</strong> \( f(x) = 10 \) es \( O(x) \).</p>
+<p>Entonces:</p>
 
-<h3>b) \( f(x) = 3x + 7 \)</h3>
-<p>
-\[
-f(x) = 3x + 7 \leq 3x + 7x = 10x \quad \text{cuando } x > 1
-\]
-(Ya que \( 7 < 7x \) cuando \( x > 1 \)).
-</p>
-<p><strong>Conclusión:</strong> \( f(x) = 3x + 7 \) es \( O(x) \) con \( C = 10 \), \( k = 1 \).</p>
+ <span id="formula4">
+        \[ 2\sum_{i=1}^{n} i  =    \]
+    </span> 
+    <input type="text"  id="respuesta_5" name="respuesta_5" value="<?php echo $respuesta_5; ?>" 
+    oninput="actualizarFormula4()" size="19">
 
-<h3>c) \( f(x) = x^2 + x + 1 \)</h3>
-<p>
-\[
-f(x) = x^2 + x + 1
-\]
-El término dominante es \( x^2 \), que crece más rápido que \( x \), así que no podemos acotarlo superiormente por \( Cx \).
-</p>
-<p><strong>Conclusión:</strong> \( f(x) \) <strong>no</strong> es \( O(x) \).</p>
 
-    <h3>d) \( f(x) = 5 \log x \)</h3>
-    <p>
-    \[
-    \log x < x \quad \text{para } x > 1 \Rightarrow 5 \log x < 5x
-    \]
-    \[
-    |f(x)| = 5 \log x \leq 5x
-    \]
-    </p>
-    <p><strong>Conclusión:</strong> \( f(x) = 5 \log x \) es \( O(x) \) con \( C = 5 \), \( k = 1 \).</p>
 
-    <h3>e) \( f(x) = \lfloor x \rfloor \)</h3>
-    <p>
-    \[
-    \lfloor x \rfloor \leq x \Rightarrow |f(x)| \leq x
-    \]
-    </p>
-    <p><strong>Conclusión:</strong> \( f(x) \) es \( O(x) \) con \( C = 1 \), \( k = 1 \).</p>
 
-    <h3>f) \( f(x) = \lceil x/2 \rceil \)</h3>
-    <p>
-    \[
-    \lceil x/2 \rceil \leq x/2 + 1 \leq x \quad \text{cuando } x > 2
-    \Rightarrow |f(x)| \leq x
-    \]
-    </p>
-    <p><strong>Conclusión:</strong> \( f(x) \) es \( O(x) \) con \( C = 1 \), \( k = 2 \).</p>
+<p>Y la suma total:</p>
+ 
+
+
+    <span id="formula2">
+        \[  \sum_{i=1}^{n} (2i + 1) =    \]
+    </span> 
+    <input type="text"  id="respuesta_2" name="respuesta_2" value="<?php echo $respuesta_2; ?>" 
+    oninput="actualizarFormula2()" size="19">
+
+
+<h4> Paso 3: Ponemos todo en la fracción</h4>
+<p>Así que el promedio es:</p>
+<p>\[
+\frac{3 + 5 + 7 + \cdots + (2n + 1)}{n} = \frac{\sum_{i=1}^{n} (2i + 1)}{n} =  
+\]</p>
+
+
+    <span id="formula3">
+        \[  =    \]
+    </span> 
+    <input type="text"  id="respuesta_3" name="respuesta_3" value="<?php echo $respuesta_3; ?>" 
+    oninput="actualizarFormula3()" size="19">
+
+
+
+<p>Factorizamos, resolvemos:</p>
+=
+<input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="9"> 
+
+
+
+
+     <h3> Conclusión:</h3>
+
+    <p>El número <strong>promedio de comparaciones</strong> que realiza el algoritmo de búsqueda lineal, cuando se sabe que \(x\) está en la lista, es:</p>
+
+    <input type="text"  value="<?php echo $respuesta_4; ?>" size="9" readonly> 
+
+    <p>lo cual se expresa como complejidad <strong>\(\Theta(n)\)</strong>.</p>
+
+    <h3> Observaciones:</h3>
+
+    <ul>
+    <li>En este análisis se <strong>asumió que \(x\) sí está en la lista</strong>. También se puede realizar un análisis del caso promedio cuando \(x\) <strong>podría no estar</strong> en la lista (ver Ejercicio 23).</li>
+    <li>Aunque aquí se cuentan las comparaciones para saber si se ha llegado al final del bucle, <strong>esas comparaciones a menudo no se consideran</strong>. A partir de ahora, <strong>ignoraremos esas comparaciones</strong>.</li>
+    </ul>
+
+    <h2> Complejidad en el peor caso de dos algoritmos de ordenamiento</h2>
+    <p>A continuación se analizará la complejidad en el <strong>peor caso</strong> del algoritmo <em>bubble sort</em> y del <em>insertion sort</em> en los Ejemplos 5 y 6.</p>
+    
     <hr>
 
 
 
+    <h3>ALGORITMO 4 El ordenamiento burbuja</h3>
+<pre><code>procedure bubblesort(a1,… , an : real numbers with n ≥ 2)
+for i := 1 to n − 1
+    for j := 1 to n − i
+        if aj > aj+1 then interchange aj and aj+1
+{a1,… , an is in increasing order}</code></pre>
+
+ <h4> EJEMPLO 5: ¿Cuál es la complejidad en el peor caso del <em>bubble sort</em> en términos del número de 
+ comparaciones realizadas?</h4>
+
+    <p><strong>Solución:</strong> El algoritmo de <em>bubble sort</em> descrito antes del Ejemplo 4 en la Sección 3.1 
+    ordena una lista mediante una secuencia de pasadas a través de la lista. En cada pasada, el algoritmo 
+    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="9">  
+    sucesivamente elementos adyacentes e 
+    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="9"> 
+    sus posiciones si es necesario.</p>
+
+    <p>Cuando comienza la <em>i-ésima</em> pasada, los 
+    <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="9">
+    elementos más grandes ya están en sus posiciones correctas. 
+    Durante esa pasada, el algoritmo compara los elementos desde el inicio hasta el índice 
+    <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="9">
+    , haciendo un 
+    total de 
+    <input type="text"   value="<?php echo $respuesta_9; ?>" size="9" readonly>
+   comparaciones.</p>
+
+
+    <p>Por lo tanto, el número total de comparaciones que realiza el algoritmo bubble sort para ordenar 
+    una lista de \(n\) elementos es:</p>
+
+    
+
+    <span id="formula5">
+        \[  (n - 1) + (n - 2) + \cdots + 2 + 1 =    \]
+    </span> 
+    <input type="text"  id="respuesta_10" name="respuesta_10" value="<?php echo $respuesta_10; ?>" 
+    oninput="actualizarFormula5()" size="19">
 
 
 
+    <p>usando la fórmula de suma mostrada en la línea 2 de la Tabla 2 de la Sección 2.4 (y también el 
+        Ejercicio 37(b) de la misma sección).</p>
 
-    <h2>Ejercicio: Determinar si \( f(x) = O(x^2) \)</h2>
+    <p>Observación: el algoritmo <em>bubble sort</em> realiza exactamente esta cantidad de comparaciones, 
+    incluso si la lista ya está completamente 
+    <input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="9">
+    en algún paso intermedio.</p>
 
-  <h3>a) \( f(x) = 17x + 11 \)</h3>
-  <p>
-    Para \( x > 1 \):<br>
-    \( 17x + 11 \leq 28x \leq 28x^2 \)<br>
-    Entonces, con \( C = 28 \), \( k = 1 \), se concluye:<br>
-    \( f(x) = O(x^2) \)
-  </p>
+    <p>lo anterior implica una 
+    <strong>complejidad en el peor caso de \(\Theta( \)
+    <span id="formula6">
+        \(     \)
+    </span> 
+    <input type="text"id="respuesta_12" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="9"
+     oninput="actualizarFormula6()">    
+    \( )\)</strong> en términos del número de comparaciones.</p>
 
-  <h3>b) \( f(x) = x^2 + 1000 \)</h3>
-  <p>
-    Para \( x > 10 \):<br>
-    \( x^2 + 1000 \leq 2x^2 \)<br>
-    Entonces, con \( C = 2 \), \( k = 10 \):<br>
-    \( f(x) = O(x^2) \)
-  </p>
+    <p>
+    En la sumatoria podemos notar como en Bubble Sort las últimas dos pasadas hacen 
+    <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="9">
+    y 
+    <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="9">
+    comparaciones respectivamente.
+    </p>
 
-  <h3>c) \( f(x) = x \log x \)</h3>
-  <p>
-    Para \( x > 1 \):<br>
-    \( \log x \leq x \Rightarrow x \log x \leq x^2 \)<br>
-    Entonces, con \( C = 1 \), \( k = 1 \):<br>
-    \( f(x) = O(x^2) \)
-  </p>
 
-  <h3>d) \( f(x) = \frac{x^4}{2} \)</h3>
-  <p>
-    Para valores grandes de \( x \), \( \frac{x^4}{2} \gg x^2 \)<br>
-    No existe un \( C \) tal que \( \frac{x^4}{2} \leq Cx^2 \)<br>
-    <strong>Conclusión:</strong> \( f(x) \notin O(x^2) \)
-  </p>
 
-  <h3>e) \( f(x) = 2^x \)</h3>
-  <p>
-    \( 2^x \) crece más rápido que cualquier polinomio.<br>
-    No se puede acotar superiormente por \( x^2 \).<br>
-    <strong>Conclusión:</strong> \( f(x) \notin O(x^2) \)
-  </p>
+  
 
-  <h3>f) \( f(x) = \lfloor x \rfloor \cdot \lceil x \rceil \)</h3>
-  <p>
-    \( \lfloor x \rfloor \leq x \), \( \lceil x \rceil \leq x + 1 \Rightarrow f(x) \leq x(x + 1) = x^2 + x \leq 2x^2 \)<br>
-    Entonces, con \( C = 2 \), \( k = 1 \):<br>
-    \( f(x) = O(x^2) \)
-  </p>
-
-  <h3>Resumen:</h3>
-  <ul>
-    <li>a) ✅ Sí</li>
-    <li>b) ✅ Sí</li>
-    <li>c) ✅ Sí</li>
-    <li>d) ❌ No</li>
-    <li>e) ❌ No</li>
-    <li>f) ✅ Sí</li>
-  </ul>
     </form>
 </div>
 
@@ -1604,67 +1798,42 @@ El término dominante es \( x^2 \), que crece más rápido que \( x \), así que
 
 
 <div class="seccion derecha">
-    <form action="./septimo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h2>Demuestre que \( f(x) = 2^x + 17 \) es \( O(3^x) \)</h2>
+    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+      <h4> EJEMPLO 6: ¿Cuál es la complejidad en el peor caso del <em>insertion sort</em> en términos del 
+    número de comparaciones realizadas?</h4>
 
-<h3>Paso 1: Definición formal</h3>
-<p>
-Una función \( f(x) \) es \( O(g(x)) \) si existen constantes positivas \( C \) y \( k \) tales que:
-</p>
-<p>
-\[
-|f(x)| \leq C \cdot |g(x)| \quad \text{para todo } x > k
-\]
-</p>
+    <pre><code>procedure insertion sort(a1, a2,… , an: real numbers with n ≥ 2)
+for j := 2 to n
+    i := 1
+    while aj > ai
+        i := i + 1
+    m := aj
+    for k := 0 to j − i − 1
+        aj−k := aj−k−1
+    ai := m
+{a1,… , an is in increasing order}</code></pre>
 
-<h3>Paso 2: Análisis de crecimiento</h3>
-<p>
-Sabemos que \( 3^x > 2^x \) para todo \( x > 0 \), y que \( 3^x > 17 \) cuando \( x > 2 \), porque:
-</p>
-<ul>
-  <li>\( 3^2 = 9 \)</li>
-  <li>\( 3^3 = 27 \Rightarrow 3^x > 17 \) cuando \( x > 2 \)</li>
-</ul>
+    <p><strong>Solución:</strong> El algoritmo de <em>insertion sort</em> (descrito en la Sección 3.1) 
+    inserta el elemento \(a_j\) en la posición correcta entre los primeros \(j - 1\) elementos que 
+    ya están ordenados.</p>
 
-<h3>Paso 3: Acotación</h3>
-<p>
-Dado que para \( x > 2 \) se cumple:
-</p>
-<p>
-\[
-2^x < 3^x \quad \text{y} \quad 17 < 3^x
-\]
-</p>
-<p>
-Entonces:
-</p>
-<p>
-\[
-2^x + 17 < 3^x + 3^x = 2 \cdot 3^x
-\]
-</p>
+<p>Lo hace mediante una búsqueda lineal, comparando sucesivamente el elemento \(a_j\) con los anteriores hasta encontrar uno que sea mayor o igual. También puede compararse consigo mismo y detenerse si no es menor que sí mismo.</p>
 
-<h3>Paso 4: Conclusión</h3>
-<p>
-Hemos encontrado constantes:
-</p>
-<ul>
-  <li>\( C = 2 \)</li>
-  <li>\( k = 2 \)</li>
-</ul>
-<p>
-Tales que:
-</p>
-<p>
+<p>En el <strong>peor caso</strong>, se requieren \(j\) comparaciones para insertar el elemento \(a_j\).</p>
+
+<p>Por lo tanto, el número total de comparaciones que realiza <em>insertion sort</em> para ordenar una lista de \(n\) elementos es:</p>
+
 \[
-|2^x + 17| \leq 2 \cdot 3^x \quad \text{para } x > 2
+2 + 3 + \cdots + n = \frac{n(n + 1)}{2} - 1
 \]
-</p>
-<p>
-Por lo tanto, \( f(x) = 2^x + 17 \) es \( O(3^x) \).
-</p>
-    <hr>
-    
+
+<p>usando la fórmula de la suma de enteros consecutivos de la línea 2 de la Tabla 2 de la Sección 2.4 (y también el Ejercicio 37(b)), y notando que se omite el primer término \(1\).</p>
+
+<p>Observación: el algoritmo <em>insertion sort</em> podría hacer muchas menos comparaciones si los elementos más pequeños estuvieran al final de la lista inicialmente.</p>
+
+<p>Se concluye que el <em>insertion sort</em> tiene <strong>complejidad en el peor caso \(\Theta(n^2)\)</strong>.</p>
+
+        
     </form>
 </div>
 
@@ -1673,7 +1842,7 @@ Por lo tanto, \( f(x) = 2^x + 17 \) es \( O(3^x) \).
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="quinto.php"
+        href="segundo.php"
         role="button"
         width="50px"
         height="50px"
