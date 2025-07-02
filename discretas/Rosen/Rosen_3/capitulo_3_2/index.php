@@ -1132,6 +1132,13 @@ if ($respuesta_110 === '264') {
         max-width: 100%;
         height: auto;
     }
+
+     .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 500vh;
+    }
 </style>
  
 <script>
@@ -1434,6 +1441,94 @@ function ocultarMensaje4() {
 <body> 
 <div class="seccion izquierda">
     <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+     <h1>3.2 El Crecimiento de las Funciones</h1>
+
+<h2>3.2.1 Introducción</h2>
+<p>
+  En la Sección 3.1 discutimos el concepto de un algoritmo. Introdujimos algoritmos que resuelven una variedad de problemas, incluyendo la búsqueda de un elemento en una lista y la ordenación de una lista. En la Sección 3.3 estudiaremos la cantidad de operaciones utilizadas por estos algoritmos. En particular, estimaremos la cantidad de comparaciones utilizadas por los algoritmos de búsqueda lineal y binaria para encontrar un elemento en una secuencia de \( n \) elementos. También estimaremos la cantidad de comparaciones utilizadas por el ordenamiento burbuja y por el ordenamiento por inserción para ordenar una lista de \( n \) elementos.
+</p>
+
+<p>
+  El tiempo requerido para resolver un problema depende de más que solo la cantidad de operaciones que utiliza. 
+  El tiempo también depende del hardware y el software utilizados para ejecutar el programa que implementa el 
+  algoritmo. Sin embargo, cuando cambiamos el hardware y software utilizados para implementar un algoritmo, 
+  podemos aproximar de cerca el tiempo requerido para resolver un problema de tamaño \( n \) multiplicando el
+tiempo anterior por una constante. Por ejemplo, en una supercomputadora podríamos resolver un problema de tamaño
+ \( n \) un millón de veces más rápido que en una PC. Sin embargo, este factor de un millón no dependerá de \( n \)
+  (excepto tal vez de manera menor).
+</p>
+
+<p>
+  Una de las ventajas de usar la notación big-O, que introducimos en esta sección, es que podemos estimar el crecimiento de una función sin preocuparnos por multiplicadores constantes o términos de orden menor. Esto significa que, usando notación big-O, no tenemos que preocuparnos por el hardware y software utilizados para implementar un algoritmo. Además, usando notación big-O, podemos asumir que las diferentes operaciones utilizadas en un algoritmo toman el mismo tiempo, lo cual simplifica considerablemente el análisis.
+</p>
+
+<p>
+  La notación big-O se usa ampliamente para estimar la cantidad de operaciones que un algoritmo utiliza a medida 
+  que crece su entrada. Con la ayuda de esta notación, podemos determinar si es práctico usar un algoritmo en
+   particular para resolver un problema conforme crece el tamaño de la entrada. Además, usando la notación big-O, 
+   podemos comparar dos algoritmos para determinar cuál es más eficiente a medida que crece el tamaño de la entrada. 
+   Por ejemplo, si tenemos dos algoritmos para resolver un problema, uno que usa \( 100n^2 + 17n + 4 \) operaciones
+    y otro que usa \( n^3 \) operaciones, la notación big-O puede ayudarnos a ver que el primer algoritmo utiliza
+     muchas menos operaciones cuando \( n \) es grande, aunque use más operaciones para valores pequeños de \( n \),
+      como \( n = 10 \).
+</p>
+
+<p>
+  Esta sección introduce la notación big-O y las notaciones relacionadas big-Omega y big-Theta. Explicaremos 
+  cómo se construyen las estimaciones big-O, big-Omega y big-Theta, y estableceremos estimaciones para algunas 
+  funciones importantes que se usan en el análisis de algoritmos.
+</p>
+
+<h2>3.2.2 Notación Big-O</h2>
+<p>
+  El crecimiento de las funciones se describe a menudo utilizando una notación especial. La Definición 1 describe esta notación.
+</p>
+
+<h3>Definición 1</h3>
+<p>
+  Sean \( f \) y \( g \) funciones del conjunto de los enteros o del conjunto de los números reales al conjunto de los
+   números reales. Decimos que \( f(x) \) es \( O(g(x)) \) si existen constantes \( C \) y \( k \) tales que
+</p>
+
+<p style="text-align: center;">
+  \( |f(x)| \leq C |g(x)| \)
+  <br>
+  siempre que \( x > k \).
+</p>
+
+<p>
+  [Esto se lee como “\( f(x) \) es big-oh de \( g(x) \)”.]
+</p>
+
+<h3>Observación</h3>
+<p>
+  Intuitivamente, la definición de que \( f(x) \) es \( O(g(x)) \) dice que \( f(x) \) crece más lento que algún múltiplo fijo de \( g(x) \) a medida que \( x \) crece sin límite.
+</p>
+
+<p>
+  Las constantes \( C \) y \( k \) en la definición de la notación big-O se llaman <em>testigos</em> de la relación \( f(x) \) es \( O(g(x)) \). Para establecer que \( f(x) \) es \( O(g(x)) \) solo necesitamos un par de testigos para esta relación. Es decir, para mostrar que \( f(x) \) es \( O(g(x)) \), solo necesitamos encontrar un par de constantes \( C \) y \( k \), los testigos, tal que \( |f(x)| \leq C|g(x)| \) siempre que \( x > k \).
+</p>
+
+<p>
+  Observa que cuando existe un par de testigos para la relación \( f(x) \) es \( O(g(x)) \), existen infinitos pares de testigos. Para ver esto, nota que si \( C \) y \( k \) son un par de testigos, entonces cualquier par \( C' \) y \( k' \), donde \( C < C' \) y \( k < k' \), también es un par de testigos, porque
+</p>
+
+<p style="text-align: center;">
+  \( |f(x)| \leq C|g(x)| \leq C'|g(x)| \)
+  <br>
+  siempre que \( x > k' > k \).
+</p>
+
+<h2>LA HISTORIA DE LA NOTACIÓN BIG-O</h2>
+<p>
+  La notación <strong>big-O</strong> se ha utilizado en matemáticas durante más de un siglo.
+  En ciencias de la computación, se utiliza ampliamente en el análisis de algoritmos, como se verá en la Sección 3.3.
+  El matemático alemán <strong>Paul Bachmann</strong> introdujo por primera vez la notación big-O en 1892 en un importante libro sobre teoría de números.
+  El símbolo big-O a veces se llama <em>símbolo de Landau</em>, en honor al matemático alemán <strong>Edmund Landau</strong>, quien utilizó esta notación en toda su obra.
+  El uso de la notación big-O en ciencias de la computación fue popularizado por <strong>Donald Knuth</strong>, quien también introdujo las notaciones <strong>big-Ω</strong> y <strong>big-Θ</strong> que se definen más adelante en esta sección.
+</p>
+
+
     <h2 > ¿Qué es <code>k</code>?</h2>
   <p>
     En la definición:
@@ -1514,7 +1609,9 @@ function ocultarMensaje4() {
     <p>Porque toda cantidad que sea mayor que 1 también es, por definición, “mayor o igual” que 1. Esto es parte 
     de la lógica básica de los símbolos de desigualdad.</p>
     <hr>
-    <h2> TRABAJAR CON LA DEFINICIÓN DE LA NOTACIÓN BIG-O</h2>
+  
+ 
+   <h2> TRABAJAR CON LA DEFINICIÓN DE LA NOTACIÓN BIG-O</h2>
 
 <p>
 Un enfoque útil para encontrar un par de <strong>testigos</strong> es seleccionar primero un valor de \( k \)
@@ -1523,6 +1620,7 @@ y ver si podemos usar esta estimación para encontrar un valor de \( C \)
 tal que \( |f(x)| \leq C|g(x)| \) para \( x > k \).
 Este enfoque se ilustra en el Ejemplo 1.
 </p>
+
 
 <h3> EJEMPLO 1</h3>
 <p>
@@ -1537,6 +1635,17 @@ Se deduce que:
 <p>\[
 0 \leq x^2 + 2x + 1 \leq x^2 + 2x^2 + x^2 = 4x^2
 \]</p>
+
+    </form>
+</div>
+
+
+<div class="seccion derecha">
+    <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+
+ 
+
+ 
 
 <p>
 Siempre que \( x > 1 \), como se muestra en la Figura 1.
@@ -1622,14 +1731,7 @@ Para eso, se aprovecha el hecho de que:
   <li>Y claramente \( 2x < 2x^2 \)</li>
 </ul>
 
- 
- 
-    </form>
-</div>
 
-
-<div class="seccion derecha">
-    <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
     <p>
     <p>
 Entonces, podemos hacer estas <strong>sustituciones conservadoras</strong>:

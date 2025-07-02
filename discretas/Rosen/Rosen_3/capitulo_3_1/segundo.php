@@ -1540,92 +1540,44 @@ si el programa eventualmente se detendrá al ejecutarse con esa entrada.
     determinar si se detiene cuando se ejecuta.
     </p>
     <hr>
-    <h1>3.2 El Crecimiento de las Funciones</h1>
+    <strong>problema que dejamos pasar</strong>
 
-<h2>3.2.1 Introducción</h2>
-<p>
-  En la Sección 3.1 discutimos el concepto de un algoritmo. Introdujimos algoritmos que resuelven una variedad de problemas, incluyendo la búsqueda de un elemento en una lista y la ordenación de una lista. En la Sección 3.3 estudiaremos la cantidad de operaciones utilizadas por estos algoritmos. En particular, estimaremos la cantidad de comparaciones utilizadas por los algoritmos de búsqueda lineal y binaria para encontrar un elemento en una secuencia de \( n \) elementos. También estimaremos la cantidad de comparaciones utilizadas por el ordenamiento burbuja y por el ordenamiento por inserción para ordenar una lista de \( n \) elementos.
-</p>
+    <h3>3.1.5 Algoritmos Voraces</h3>
 
-<p>
-  El tiempo requerido para resolver un problema depende de más que solo la cantidad de operaciones que utiliza. 
-  El tiempo también depende del hardware y el software utilizados para ejecutar el programa que implementa el 
-  algoritmo. Sin embargo, cuando cambiamos el hardware y software utilizados para implementar un algoritmo, 
-  podemos aproximar de cerca el tiempo requerido para resolver un problema de tamaño \( n \) multiplicando el
-tiempo anterior por una constante. Por ejemplo, en una supercomputadora podríamos resolver un problema de tamaño
- \( n \) un millón de veces más rápido que en una PC. Sin embargo, este factor de un millón no dependerá de \( n \)
-  (excepto tal vez de manera menor).
-</p>
+<p>Muchos de los algoritmos que estudiaremos en este libro están diseñados para resolver problemas de optimización. El objetivo de tales problemas es encontrar una solución al problema dado que minimice o maximice el valor de algún parámetro.</p>
 
-<p>
-  Una de las ventajas de usar la notación big-O, que introducimos en esta sección, es que podemos estimar el crecimiento de una función sin preocuparnos por multiplicadores constantes o términos de orden menor. Esto significa que, usando notación big-O, no tenemos que preocuparnos por el hardware y software utilizados para implementar un algoritmo. Además, usando notación big-O, podemos asumir que las diferentes operaciones utilizadas en un algoritmo toman el mismo tiempo, lo cual simplifica considerablemente el análisis.
-</p>
+<blockquote>
+<p>“La codicia es buena... la codicia es correcta, la codicia funciona. La codicia aclara...” – dicho por el personaje Gordon Gecko en la película <em>Wall Street</em>.</p>
+</blockquote>
 
-<p>
-  La notación big-O se usa ampliamente para estimar la cantidad de operaciones que un algoritmo utiliza a medida 
-  que crece su entrada. Con la ayuda de esta notación, podemos determinar si es práctico usar un algoritmo en
-   particular para resolver un problema conforme crece el tamaño de la entrada. Además, usando la notación big-O, 
-   podemos comparar dos algoritmos para determinar cuál es más eficiente a medida que crece el tamaño de la entrada. 
-   Por ejemplo, si tenemos dos algoritmos para resolver un problema, uno que usa \( 100n^2 + 17n + 4 \) operaciones
-    y otro que usa \( n^3 \) operaciones, la notación big-O puede ayudarnos a ver que el primer algoritmo utiliza
-     muchas menos operaciones cuando \( n \) es grande, aunque use más operaciones para valores pequeños de \( n \),
-      como \( n = 10 \).
-</p>
+<p>Los problemas de optimización que se estudian más adelante en este texto incluyen encontrar una ruta entre dos ciudades con la menor distancia total, determinar una forma de codificar mensajes usando la menor cantidad de bits posible, y encontrar un conjunto de enlaces de fibra entre nodos de red utilizando la menor cantidad de fibra.</p>
 
-<p>
-  Esta sección introduce la notación big-O y las notaciones relacionadas big-Omega y big-Theta. Explicaremos 
-  cómo se construyen las estimaciones big-O, big-Omega y big-Theta, y estableceremos estimaciones para algunas 
-  funciones importantes que se usan en el análisis de algoritmos.
-</p>
+<p>Sorprendentemente, uno de los enfoques más simples a menudo conduce a una solución de un problema de optimización. Este enfoque selecciona la mejor opción en cada paso, en lugar de considerar todas las secuencias de pasos que podrían conducir a una solución óptima. Los algoritmos que hacen lo que parece ser la “mejor” elección en cada paso se llaman <strong>algoritmos voraces</strong>. Una vez que sabemos que un algoritmo voraz encuentra una solución factible, necesitamos determinar si ha encontrado una solución óptima. (Observa que llamamos al algoritmo “voraz” <em>ya sea que encuentre o no</em> una solución óptima). Para ello, o bien probamos que la solución es óptima o mostramos que existe un contraejemplo donde el algoritmo produce una solución no óptima.</p>
 
-<h2>3.2.2 Notación Big-O</h2>
-<p>
-  El crecimiento de las funciones se describe a menudo utilizando una notación especial. La Definición 1 describe esta notación.
-</p>
+<p>Para hacer estos conceptos más concretos, consideraremos el algoritmo del cajero que da cambio usando monedas. (Este algoritmo se llama el <em>algoritmo del cajero</em> porque los cajeros solían usar este algoritmo para dar cambio en los días antes de que las cajas registradoras se volvieran electrónicas.)</p>
 
-<h3>Definición 1</h3>
-<p>
-  Sean \( f \) y \( g \) funciones del conjunto de los enteros o del conjunto de los números reales al conjunto de los
-   números reales. Decimos que \( f(x) \) es \( O(g(x)) \) si existen constantes \( C \) y \( k \) tales que
-</p>
+<h4>Ejemplo 6</h4>
+<p>Consideremos el problema de dar cambio por <em>n</em> centavos usando monedas de 25, 10, 5 y 1 centavo, y utilizando el menor número total de monedas. Podemos idear un algoritmo voraz para dar cambio de <em>n</em> centavos haciendo una elección localmente óptima en cada paso; es decir, en cada paso elegimos la moneda de mayor denominación posible para agregar al monto del cambio sin exceder <em>n</em> centavos. Por ejemplo, para dar cambio por 67 centavos, primero seleccionamos una moneda de 25 (quedando 42 centavos). Luego seleccionamos otra moneda de 25 (quedando 17 centavos), seguida de una de 10 (quedando 7 centavos), seguida de una de 5 (quedando 2 centavos), seguida de una de 1 (quedando 1 centavo), seguida de otra de 1.</p>
 
-<p style="text-align: center;">
-  \( |f(x)| \leq C |g(x)| \)
-  <br>
-  siempre que \( x > k \).
-</p>
+<h4>ALGORITMO 7 Algoritmo del Cajero</h4>
+<pre>
+procedimiento cambio(c1, c2,… , cr: valores de denominaciones de monedas, donde
+c1 > c2 > ⋯ > cr; n: un entero positivo)
+    for i := 1 to r
+        di := 0  {di cuenta las monedas de denominación ci usadas}
+        while n ≥ ci
+            di := di + 1  {agrega una moneda de denominación ci}
+            n := n − ci
+{di es el número de monedas de denominación ci en el cambio para i = 1, 2, … , r}
+</pre>
 
-<p>
-  [Esto se lee como “\( f(x) \) es big-oh de \( g(x) \)”.]
-</p>
+<p>Hemos descrito el algoritmo del cajero, un algoritmo voraz para dar cambio, usando cualquier conjunto finito de monedas con denominaciones <em>c₁, c₂, …, cᵣ</em>. En el caso particular donde las cuatro denominaciones son 25, 10, 5 y 1 centavo, tenemos <em>c₁ = 25</em>, <em>c₂ = 10</em>, <em>c₃ = 5</em> y <em>c₄ = 1</em>. Para este caso, mostraremos que este algoritmo conduce a una solución óptima en el sentido de que utiliza la menor cantidad de monedas posible. Antes de embarcarnos en nuestra demostración, mostraremos que hay conjuntos de monedas para los cuales el algoritmo del cajero (Algoritmo 7) no necesariamente produce cambio usando la menor cantidad de monedas posible. Por ejemplo, si solo tuviéramos monedas de 25, 10 y 1 centavo (y no de 5), el algoritmo del cajero daría cambio por 30 centavos usando seis monedas —una de 25 y cinco de 1— mientras que podríamos haber usado tres monedas, es decir, tres de 10.</p>
 
-<h3>Observación</h3>
-<p>
-  Intuitivamente, la definición de que \( f(x) \) es \( O(g(x)) \) dice que \( f(x) \) crece más lento que algún múltiplo fijo de \( g(x) \) a medida que \( x \) crece sin límite.
-</p>
+<h4>Lema 1</h4>
+<p>Si <em>n</em> es un entero positivo, entonces el cambio de <em>n</em> centavos usando monedas de 25, 10, 5 y 1 centavo usando la menor cantidad posible de monedas tiene a lo sumo dos monedas de 10, a lo sumo una de 5, a lo sumo cuatro de 1, y no puede tener dos de 10 y una de 5. La cantidad de cambio en monedas de 10, 5 y 1 centavo no puede exceder los 24 centavos.</p>
 
-<p>
-  Las constantes \( C \) y \( k \) en la definición de la notación big-O se llaman <em>testigos</em> de la relación \( f(x) \) es \( O(g(x)) \). Para establecer que \( f(x) \) es \( O(g(x)) \) solo necesitamos un par de testigos para esta relación. Es decir, para mostrar que \( f(x) \) es \( O(g(x)) \), solo necesitamos encontrar un par de constantes \( C \) y \( k \), los testigos, tal que \( |f(x)| \leq C|g(x)| \) siempre que \( x > k \).
-</p>
-
-<p>
-  Observa que cuando existe un par de testigos para la relación \( f(x) \) es \( O(g(x)) \), existen infinitos pares de testigos. Para ver esto, nota que si \( C \) y \( k \) son un par de testigos, entonces cualquier par \( C' \) y \( k' \), donde \( C < C' \) y \( k < k' \), también es un par de testigos, porque
-</p>
-
-<p style="text-align: center;">
-  \( |f(x)| \leq C|g(x)| \leq C'|g(x)| \)
-  <br>
-  siempre que \( x > k' > k \).
-</p>
-
-<h2>LA HISTORIA DE LA NOTACIÓN BIG-O</h2>
-<p>
-  La notación <strong>big-O</strong> se ha utilizado en matemáticas durante más de un siglo.
-  En ciencias de la computación, se utiliza ampliamente en el análisis de algoritmos, como se verá en la Sección 3.3.
-  El matemático alemán <strong>Paul Bachmann</strong> introdujo por primera vez la notación big-O en 1892 en un importante libro sobre teoría de números.
-  El símbolo big-O a veces se llama <em>símbolo de Landau</em>, en honor al matemático alemán <strong>Edmund Landau</strong>, quien utilizó esta notación en toda su obra.
-  El uso de la notación big-O en ciencias de la computación fue popularizado por <strong>Donald Knuth</strong>, quien también introdujo las notaciones <strong>big-Ω</strong> y <strong>big-Θ</strong> que se definen más adelante en esta sección.
-</p>
+<h4>Demostración:</h4>
+<p>Usamos una demostración por contradicción. Mostraremos que si tuviéramos más que la cantidad especificada de monedas de cada tipo, podríamos reemplazarlas usando menos monedas que tienen el mismo valor. Observamos que si tuviéramos tres monedas de 10, podríamos reemplazarlas por una de 25 y una de 5; si tuviéramos dos de 5 podríamos reemplazarlas por una de 10; si tuviéramos cinco de 1 podríamos reemplazarlas por una de 5; y si tuviéramos dos de 10 y una de 5 podríamos reemplazarlas por una de 25. Debido a que podemos tener a lo sumo dos monedas de 10, una de 5 y cuatro de 1, pero no podemos tener dos de 10 y una de 5, se deduce que 24 centavos es la mayor cantidad de dinero que podemos tener en monedas de 10, 5 y 1 centavo cuando damos cambio usando la menor cantidad de monedas posible para <em>n</em> centavos.</p>
     </form>
 </div>
 

@@ -210,35 +210,29 @@ if ($_POST) {
         $verificar_1 = $verificar_2 = $verificar_3 = /* ... todas las variables de verificación ... */ $verificar_122 = "correcto";
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-    $respuesta_1_dos = str_replace('',' ', $respuesta_1);
-
-   if ($respuesta_1_dos === '\frac{n(n+1)}{2}') {  
+   if ($respuesta_1 === '3') {  
        $verificar_1 = "correcto";
-   } elseif ($respuesta_1_dos === '') {
+   } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
    } else {
        $verificar_1 = "incorrecto";
    }
 
-    // Verificar la respuesta de la segunda pregunta
-    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-    $respuesta_2_dos = str_replace('',' ', $respuesta_2);
-
-    if ($respuesta_2_dos === 'n(n+1)+n') {  
+   // Verificar la respuesta de la segunda pregunta
+   $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
+   if ($respuesta_2 === '3') {  
        $verificar_2 = "correcto";
-    } elseif ($respuesta_2_dos === '') {
+   } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
-    } else {
+   } else {
        $verificar_2 = "incorrecto";
-    }
+   }
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   $respuesta_3_dos = str_replace('',' ', $respuesta_3);
-
-   if ($respuesta_3_dos === '\frac{n(n+1)+n}{n}') {  
+   if ($respuesta_3 === '9') {  
        $verificar_3 = "correcto";
-   } elseif ($respuesta_3_dos === '') {
+   } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
    } else {
        $verificar_3 = "incorrecto";
@@ -246,7 +240,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === 'n+2') {  
+   if ($respuesta_4 === 'multiplicaciones') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -256,7 +250,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === 'n(n+1)') {  
+   if ($respuesta_5 === 'sumas') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -266,7 +260,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === 'compara') {  
+   if ($respuesta_6 === 'n^2') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -276,7 +270,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === 'intercambia') {  
+   if ($respuesta_7 === 'n^3') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -286,21 +280,19 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   $respuesta_8_dos = str_replace('',' ', $respuesta_8);
-   if ($respuesta_8_dos === 'i-1') {  
+   if ($respuesta_8 === 'n^2') {  
        $verificar_8 = "correcto";
-   } elseif ($respuesta_8_dos === '') {
+   } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
    } else {
        $verificar_8 = "incorrecto";
    }
 
    // Verificar la respuesta de la novena pregunta
-    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-    $respuesta_9_dos = str_replace('',' ', $respuesta_9);
-   if ($respuesta_9_dos === 'n-i') {  
+   $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
+   if ($respuesta_9 === 'n^2(n-1)') {  
        $verificar_9 = "correcto";
-   } elseif ($respuesta_9_dos === '') {
+   } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
    } else {
        $verificar_9 = "incorrecto";
@@ -308,21 +300,21 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   $respuesta_10_dos = str_replace('',' ', $respuesta_10);
-
-   if ($respuesta_10_dos === '\frac{(n-1)n}{2}') {  
+   if ($respuesta_10 === 'n^3') {  
        $verificar_10 = "correcto";
-   } elseif ($respuesta_10_dos === '') {
+   } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
    } else {
        $verificar_10 = "incorrecto";
    }
 
    // Verificar la respuesta de la undécima pregunta
-   $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === 'ordenada') {  
+    $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
+    $respuesta_11_dos = str_replace('',' ', $respuesta_11);
+
+   if ($respuesta_11_dos === 'fori:=1tom') {  
        $verificar_11 = "correcto";
-   } elseif ($respuesta_11 === '') {
+   } elseif ($respuesta_11_dos === '') {
        $verificar_11 = '';
    } else {
        $verificar_11 = "incorrecto";
@@ -331,9 +323,11 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
      $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-     if ($respuesta_12 === 'n^2') {  
+     $respuesta_12_dos = str_replace('',' ', $respuesta_12);
+
+     if ($respuesta_12_dos === 'forj:=1ton') {  
          $verificar_12 = "correcto";
-     } elseif ($respuesta_12 === '') {
+     } elseif ($respuesta_12_dos === '') {
          $verificar_12 = '';
      } else {
          $verificar_12 = "incorrecto";
@@ -341,29 +335,33 @@ if ($_POST) {
   
      // Verificar la respuesta de la segunda pregunta
      $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-     if ($respuesta_13 === '2') { 
+     $respuesta_13_dos = str_replace('',' ', $respuesta_13);
+
+     if ($respuesta_13_dos === 'cij:=0') { 
          $verificar_13 = "correcto";
-     } elseif ($respuesta_13 === '') {
+     } elseif ($respuesta_13_dos === '') {
          $verificar_13 = '';
      } else {
          $verificar_13 = "incorrecto";
      }
   
      // Verificar la respuesta de la tercera pregunta
-     $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-     if ($respuesta_14 === '1') {  
+    $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
+    $respuesta_14_dos = str_replace('',' ', $respuesta_14);
+    
+    if ($respuesta_14_dos === 'forq:=1tok') {  
          $verificar_14 = "correcto";
-     } elseif ($respuesta_14 === '') {
+     } elseif ($respuesta_14_dos === '') {
          $verificar_14 = '';
      } else {
          $verificar_14 = "incorrecto";
      }
   
      // Verificar la respuesta de la cuarta pregunta
-     $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-     $respuesta_15_dos = str_replace('',' ', $respuesta_15);
+    $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
+    $respuesta_15_dos = str_replace('',' ', $respuesta_15);
 
-     if ($respuesta_15_dos === 'j-1') { 
+     if ($respuesta_15_dos === 'cij:=cijV(aiq∧bqj)') { 
          $verificar_15 = "correcto";
      } elseif ($respuesta_15_dos === '') {
          $verificar_15 = '';
@@ -373,7 +371,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la quinta pregunta
      $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-     if ($respuesta_16 === 'busqueda lineal') {  
+     if ($respuesta_16 === '2n') {  
          $verificar_16 = "correcto";
      } elseif ($respuesta_16 === '') {
          $verificar_16 = '';
@@ -383,7 +381,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la sexta pregunta
      $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-     if ($respuesta_17 === 'aj') {  
+     if ($respuesta_17 === '2n^3') {  
          $verificar_17 = "correcto";
      } elseif ($respuesta_17 === '') {
          $verificar_17 = '';
@@ -393,7 +391,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la séptima pregunta
      $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-     if ($respuesta_18 === 'j') {  
+     if ($respuesta_18 === 'menor') {  
          $verificar_18 = "correcto";
      } elseif ($respuesta_18 === '') {
          $verificar_18 = '';
@@ -402,12 +400,10 @@ if ($_POST) {
      }
   
      // Verificar la respuesta de la octava pregunta
-    $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-    $respuesta_19_dos = str_replace('',' ', $respuesta_19);
-    
-    if ($respuesta_19_dos === '\frac{n(n+1)}{2}-1') {  
+     $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
+     if ($respuesta_19 === '20') {  
          $verificar_19 = "correcto";
-     } elseif ($respuesta_19_dos === '') {
+     } elseif ($respuesta_19 === '') {
          $verificar_19 = '';
      } else {
          $verificar_19 = "incorrecto";
@@ -415,7 +411,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la novena pregunta
      $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
-     if ($respuesta_20 === 'pequeños') {  
+     if ($respuesta_20 === '10') {  
          $verificar_20 = "correcto";
      } elseif ($respuesta_20 === '') {
          $verificar_20 = '';
@@ -425,7 +421,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la décima pregunta
      $respuesta_21 = isset($_POST['respuesta_21']) ? $_POST['respuesta_21'] : '';
-     if ($respuesta_21 === 'n^2') {  
+     if ($respuesta_21 === 'enfoque') {  
          $verificar_21 = "correcto";
      } elseif ($respuesta_21 === '') {
          $verificar_21 = '';
@@ -435,7 +431,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la undécima pregunta
      $respuesta_22 = isset($_POST['respuesta_22']) ? $_POST['respuesta_22'] : '';
-     if ($respuesta_22 === 'n^2') {  
+     if ($respuesta_22 === 'fuerza bruta') {  
          $verificar_22 = "correcto";
      } elseif ($respuesta_22 === '') {
          $verificar_22 = '';
@@ -444,20 +440,18 @@ if ($_POST) {
      }
 
      // Verificar la respuesta de la primera pregunta
-    $respuesta_23 = isset($_POST['respuesta_23']) ? $_POST['respuesta_23'] : '';
-    $respuesta_23_dos = str_replace('',' ', $respuesta_23);
-   
-    if ($respuesta_23_dos === 'nlogn') {  
+   $respuesta_23 = isset($_POST['respuesta_23']) ? $_POST['respuesta_23'] : '';
+   if ($respuesta_23 === 'todas') {  
        $verificar_23 = "correcto";
-    } elseif ($respuesta_23_dos === '') {
+   } elseif ($respuesta_23 === '') {
        $verificar_23 = '';
-    } else {
+   } else {
        $verificar_23 = "incorrecto";
-    }
+   }
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_24 = isset($_POST['respuesta_24']) ? $_POST['respuesta_24'] : '';
-   if ($respuesta_24 === '45') {  
+   if ($respuesta_24 === 'ingenuos') {  
        $verificar_24 = "correcto";
    } elseif ($respuesta_24 === '') {
        $verificar_24 = '';
@@ -467,10 +461,9 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_25 = isset($_POST['respuesta_25']) ? $_POST['respuesta_25'] : '';
-    $respuesta_25_dos = str_replace('',' ', $respuesta_25);
-   if ($respuesta_25_dos === 'fori:=1tom') { 
+   if ($respuesta_25 === 'fuerza bruta') { 
        $verificar_25 = "correcto";
-   } elseif ($respuesta_25_dos === '') {
+   } elseif ($respuesta_25 === '') {
        $verificar_25 = '';
    } else {
        $verificar_25 = "incorrecto";
@@ -479,8 +472,8 @@ if ($_POST) {
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_26 = isset($_POST['respuesta_26']) ? $_POST['respuesta_26'] : '';
    $respuesta_26_dos = str_replace('',' ', $respuesta_26);
-
-   if ($respuesta_26_dos === 'forj:=1ton') {  
+   
+   if ($respuesta_26_dos === '\sqrt{(x_j-x_i)^2+(y_j-y_i)^2}') {  
        $verificar_26 = "correcto";
    } elseif ($respuesta_26_dos === '') {
        $verificar_26 = '';
@@ -490,11 +483,9 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_27 = isset($_POST['respuesta_27']) ? $_POST['respuesta_27'] : '';
-   $respuesta_27_dos = str_replace('',' ', $respuesta_27);
-
-   if ($respuesta_27_dos === 'cij:=0') {  
+   if ($respuesta_27 === 'todos') {  
        $verificar_27 = "correcto";
-   } elseif ($respuesta_27_dos === '') {
+   } elseif ($respuesta_27 === '') {
        $verificar_27 = '';
    } else {
        $verificar_27 = "incorrecto";
@@ -502,11 +493,9 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_28 = isset($_POST['respuesta_28']) ? $_POST['respuesta_28'] : '';
-   $respuesta_28_dos = str_replace('',' ', $respuesta_28);
-
-   if ($respuesta_28_dos === 'forq:=1tok') {  
+   if ($respuesta_28 === 'pares') {  
        $verificar_28 = "correcto";
-   } elseif ($respuesta_28_dos === '') {
+   } elseif ($respuesta_28 === '') {
        $verificar_28 = '';
    } else {
        $verificar_28 = "incorrecto";
@@ -514,11 +503,9 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_29 = isset($_POST['respuesta_29']) ? $_POST['respuesta_29'] : '';
-    $respuesta_29_dos = str_replace('',' ', $respuesta_29);
-
-   if ($respuesta_29_dos === 'cij:=cij+aiq*bqj') {  
+   if ($respuesta_29 === 'puntos') {  
        $verificar_29 = "correcto";
-   } elseif ($respuesta_29_dos === '') {
+   } elseif ($respuesta_29 === '') {
        $verificar_29 = '';
    } else {
        $verificar_29 = "incorrecto";
@@ -526,7 +513,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_30 = isset($_POST['respuesta_30']) ? $_POST['respuesta_30'] : '';
-   if ($respuesta_30 === 'i') {  
+   if ($respuesta_30 === 'pares') {  
        $verificar_30 = "correcto";
    } elseif ($respuesta_30 === '') {
        $verificar_30 = '';
@@ -536,9 +523,11 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_31 = isset($_POST['respuesta_31']) ? $_POST['respuesta_31'] : '';
-   if ($respuesta_31 === 'j') {  
+   $respuesta_31_dos = str_replace('',' ', $respuesta_31);
+
+   if ($respuesta_31_dos === 'fori:=2ton') {  
        $verificar_31 = "correcto";
-   } elseif ($respuesta_31 === '') {
+   } elseif ($respuesta_31_dos === '') {
        $verificar_31 = '';
    } else {
        $verificar_31 = "incorrecto";
@@ -546,9 +535,11 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_32 = isset($_POST['respuesta_32']) ? $_POST['respuesta_32'] : '';
-   if ($respuesta_32 === 'constantes') {  
+   $respuesta_32_dos = str_replace('',' ', $respuesta_32);
+
+   if ($respuesta_32_dos === 'forj:=1toi-1') {  
        $verificar_32 = "correcto";
-   } elseif ($respuesta_32 === '') {
+   } elseif ($respuesta_32_dos === '') {
        $verificar_32 = '';
    } else {
        $verificar_32 = "incorrecto";
@@ -556,7 +547,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_33 = isset($_POST['respuesta_33']) ? $_POST['respuesta_33'] : '';
-   if ($respuesta_33 === 'contiene') {  
+   if ($respuesta_33 === '180') {  
        $verificar_33 = "correcto";
    } elseif ($respuesta_33 === '') {
        $verificar_33 = '';
@@ -565,16 +556,18 @@ if ($_POST) {
    }
 
  $respuesta_34 = isset($_POST['respuesta_34']) ? $_POST['respuesta_34'] : '';
-if ($respuesta_34 === 'filas') { 
+ $respuesta_34_dos = str_replace('',' ', $respuesta_34);
+
+if ($respuesta_34_dos === '\frac{n(n-1)}{2}') { 
     $verificar_34 = "correcto";
-} elseif ($respuesta_34 === '') {
+} elseif ($respuesta_34_dos === '') {
     $verificar_34 = '';
 } else {
     $verificar_34 = "incorrecto";
 }
 
  $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
-if ($respuesta_35 === 'columnas') { 
+if ($respuesta_35 === 'actualiza') { 
     $verificar_35 = "correcto";
 } elseif ($respuesta_35 === '') {
     $verificar_35 = '';
@@ -592,16 +585,18 @@ if ($respuesta_36 === 'n^2') {
 }
 
  $respuesta_37 = isset($_POST['respuesta_37']) ? $_POST['respuesta_37'] : '';
-if ($respuesta_37 === '80') { 
+ $respuesta_37_dos = str_replace('',' ', $respuesta_37);
+
+if ($respuesta_37_dos === 'nlogn') { 
     $verificar_37 = "correcto";
-} elseif ($respuesta_37 === '') {
+} elseif ($respuesta_37_dos === '') {
     $verificar_37 = '';
 } else {
     $verificar_37 = "incorrecto";
 }
 
  $respuesta_38 = isset($_POST['respuesta_38']) ? $_POST['respuesta_38'] : '';
-if ($respuesta_38 === '96') { 
+if ($respuesta_38 === 'constante') { 
     $verificar_38 = "correcto";
 } elseif ($respuesta_38 === '') {
     $verificar_38 = '';
@@ -610,7 +605,7 @@ if ($respuesta_38 === '96') {
 }
 
  $respuesta_39 = isset($_POST['respuesta_39']) ? $_POST['respuesta_39'] : '';
-if ($respuesta_39 === '112') { 
+if ($respuesta_39 === '99') { 
     $verificar_39 = "correcto";
 } elseif ($respuesta_39 === '') {
     $verificar_39 = '';
@@ -619,7 +614,7 @@ if ($respuesta_39 === '112') {
 }
 
  $respuesta_40 = isset($_POST['respuesta_40']) ? $_POST['respuesta_40'] : '';
-if ($respuesta_40 === '128') { 
+if ($respuesta_40 === 'lineal') { 
     $verificar_40 = "correcto";
 } elseif ($respuesta_40 === '') {
     $verificar_40 = '';
@@ -628,7 +623,7 @@ if ($respuesta_40 === '128') {
 }
 
  $respuesta_41 = isset($_POST['respuesta_41']) ? $_POST['respuesta_41'] : '';
-if ($respuesta_41 === '144') { 
+if ($respuesta_41 === 'logaritmica') { 
     $verificar_41 = "correcto";
 } elseif ($respuesta_41 === '') {
     $verificar_41 = '';
@@ -637,7 +632,7 @@ if ($respuesta_41 === '144') {
 }
 
  $respuesta_42 = isset($_POST['respuesta_42']) ? $_POST['respuesta_42'] : '';
-if ($respuesta_42 === '160') { 
+if ($respuesta_42 === 'linealitmica' || $respuesta_42 === 'linearitmica') { 
     $verificar_42 = "correcto";
 } elseif ($respuesta_42 === '') {
     $verificar_42 = '';
@@ -646,16 +641,18 @@ if ($respuesta_42 === '160') {
 }
 
  $respuesta_43 = isset($_POST['respuesta_43']) ? $_POST['respuesta_43'] : '';
-if ($respuesta_43 === '176') { 
+ $respuesta_43_dos = str_replace('',' ', $respuesta_43);
+
+if ($respuesta_43_dos === 'logn') { 
     $verificar_43 = "correcto";
-} elseif ($respuesta_43 === '') {
+} elseif ($respuesta_43_dos === '') {
     $verificar_43 = '';
 } else {
     $verificar_43 = "incorrecto";
 }
 
  $respuesta_44 = isset($_POST['respuesta_44']) ? $_POST['respuesta_44'] : '';
-if ($respuesta_44 === '192') { 
+if ($respuesta_44 === 'n') { 
     $verificar_44 = "correcto";
 } elseif ($respuesta_44 === '') {
     $verificar_44 = '';
@@ -664,9 +661,10 @@ if ($respuesta_44 === '192') {
 }
 
  $respuesta_45 = isset($_POST['respuesta_45']) ? $_POST['respuesta_45'] : '';
-if ($respuesta_45 === '34') { 
+ $respuesta_45_dos = str_replace('',' ', $respuesta_45);
+if ($respuesta_45_dos === 'nlogn') { 
     $verificar_45 = "correcto";
-} elseif ($respuesta_45 === '') {
+} elseif ($respuesta_45_dos === '') {
     $verificar_45 = '';
 } else {
     $verificar_45 = "incorrecto";
@@ -1367,7 +1365,7 @@ if ($respuesta_121 === '144') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-       <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -1380,7 +1378,7 @@ if ($respuesta_121 === '144') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 320vh;
+    height: 380vh;
     }
 </style>
  
@@ -1422,8 +1420,8 @@ function handleSubmit(event) {
 }
 
 function actualizarFormula() {
-    var f = document.getElementById('respuesta_1').value || "";
-    var formula = ` \\  \\sum_{i=1}^{n} i =  ${f} \\, `;
+    var f = document.getElementById('respuesta_26').value || "";
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
         MathJax.typeset();
@@ -1431,9 +1429,9 @@ function actualizarFormula() {
 }
 
 function actualizarFormula2() {
-    var f = document.getElementById('respuesta_2').value || "";
-    var formula = ` \\ \\sum_{i=1}^{n} (2i + 1) =  ${f} \\, `;
-    document.getElementById('formula2').innerHTML = `$$ ${formula} $$`;
+    var f = document.getElementById('respuesta_34').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula2').innerHTML = `\\( ${formula} \\)`;
     if (window.MathJax) {
         MathJax.typeset();
     }
@@ -1449,8 +1447,8 @@ function actualizarFormula3() {
 }
 
 function actualizarFormula4() {
-    var f = document.getElementById('respuesta_5').value || "";
-    var formula = ` \\ 2 \\sum_{i=1}^{n} i  =  ${f} \\, `;
+    var f = document.getElementById('respuesta_4').value || "";
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula4').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
         MathJax.typeset();
@@ -1458,8 +1456,8 @@ function actualizarFormula4() {
 }
 
 function actualizarFormula5() {
-    var f = document.getElementById('respuesta_10').value || "";
-    var formula = ` \\ (n - 1) + (n - 2) + \\cdots + 2 + 1 = ${f} \\, `;
+    var f = document.getElementById('respuesta_5').value || "";
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula5').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
         MathJax.typeset();
@@ -1467,16 +1465,16 @@ function actualizarFormula5() {
 }
 
 function actualizarFormula6() {
-    var f = document.getElementById('respuesta_12').value || "";
+    var f = document.getElementById('respuesta_6').value || "";
     var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula6').innerHTML = `\\( ${formula} \\)`;
+    document.getElementById('formula6').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
 
 function actualizarFormula7() {
-    var f = document.getElementById('respuesta_19').value || "";
+    var f = document.getElementById('respuesta_7').value || "";
     var formula = ` \\ ${f} \\, `;
     document.getElementById('formula7').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
@@ -1485,18 +1483,18 @@ function actualizarFormula7() {
 }
 
 function actualizarFormula8() {
-    var f = document.getElementById('respuesta_21').value || "";
+    var f = document.getElementById('respuesta_8').value || "";
     var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula8').innerHTML = `\\( ${formula} \\)`;
+    document.getElementById('formula8').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
 
 function actualizarFormula9() {
-    var f = document.getElementById('respuesta_22').value || "";
+    var f = document.getElementById('respuesta_9').value || "";
     var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula9').innerHTML = `\\( ${formula} \\)`;
+    document.getElementById('formula9').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
         MathJax.typeset();
     }
@@ -1652,321 +1650,110 @@ function ocultarMensaje4() {
 </head>
 <body> 
 <div class="seccion izquierda">
-    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-       <h4> Paso 2: Expandimos la suma</h4>
-<p>Usamos propiedad distributiva:</p>
-<p>\[
-\sum_{i=1}^{n} (2i + 1) = \sum_{i=1}^{n} 2i + \sum_{i=1}^{n} 1 = 2\sum_{i=1}^{n} i + n
-\]</p>
+    <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+         <p>🔍 <strong>Ejemplo:</strong><br>
+Si tienes una matriz \( A \) de tamaño \( 3 \times 3 \):</p>
 
-<p>Recordamos que:</p>
+<p>
+\[
+A = \begin{bmatrix}
+a_{11} & a_{12} & a_{13} \\
+a_{21} & a_{22} & a_{23} \\
+a_{31} & a_{32} & a_{33}
+\end{bmatrix}
+\]
+</p>
 
-    <span id="formula">
-        \[ \sum_{i=1}^{n} i =     \]
-    </span> 
-    <input type="text"  id="respuesta_1" name="respuesta_1" value="<?php echo $respuesta_1; ?>" 
-    oninput="actualizarFormula()"
-    size="19">
+<p>→ Tiene:</p>
+<ul>
+  <li><input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="6">   filas</li>
+  <li><input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="6">   columnas</li>
+  <li>Total de elementos: 
+    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="6">   
+  </li>
+</ul>
 
-<br>
+
+<p><strong>¿Cómo se calcula cada entrada \( c_{ij} \)?</strong></p>
+
+<p>Según la fórmula:</p>
+
+<p>
+\[
+c_{ij} = \sum_{q=1}^{n} a_{iq} \cdot b_{qj}
+\]
+</p>
+
+<p>Para cada entrada:</p>
+<ul>
+  <li>Haces \( n \) 
+    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="12">    
+  </li>
+  <li>Haces \( n - 1 \) 
+    <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="12">    
+  </li>
+</ul>
+
+
+<p><strong>¿Cuántas operaciones en total?</strong></p>
+
+<p>Ya sabemos que hay \( n^2 \) entradas.</p>
 
 <p>Entonces:</p>
 
- <span id="formula4">
-        \[ 2\sum_{i=1}^{n} i  =    \]
-    </span> 
-    <input type="text"  id="respuesta_5" name="respuesta_5" value="<?php echo $respuesta_5; ?>" 
-    oninput="actualizarFormula4()" size="19">
+<ul>
+  <li>
+    🔸 <strong>Multiplicaciones totales:</strong><br>
+    
+    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="4">  
+    entradas x \( n \) 
+     <input type="text" value="<?php echo $respuesta_4; ?>" size="12">
+    por entrada =  <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="4"> 
+  </li>
+  <br>
+  <li>
+    🔸 <strong>Sumas totales:</strong><br>
+    <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="6"> 
+    entradas x \( (n - 1) \) 
+    <input type="text"  value="<?php echo $respuesta_5; ?>" size="12"> 
+    por entrada = 
+    <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="6">
+  </li>
+</ul>
 
+    <p>Sorprendentemente, existen algoritmos más eficientes para la multiplicación de matrices que el dado en el Algoritmo 1. 
+    Como muestra el Ejemplo 7, multiplicar directamente dos matrices <em>n × n</em> a partir de la definición requiere 
+    <strong>O(
+        <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="6">
+        )</strong> multiplicaciones y sumas. Utilizando otros algoritmos, dos matrices <em>n × n</em> pueden
+     multiplicarse usando <strong> \( O( n^{\sqrt{7}} ) \)</strong> multiplicaciones y sumas. (Los detalles de tales 
+     algoritmos pueden encontrarse en [CoLeRiSt09].)</p>
 
+    <p>También podemos analizar la complejidad del algoritmo que describimos en el Capítulo 2 para calcular el producto
+    booleano de dos matrices, el cual mostramos como el Algoritmo 2.</p>
 
-
-<p>Y la suma total:</p>
  
-
-
-    <span id="formula2">
-        \[  \sum_{i=1}^{n} (2i + 1) =    \]
-    </span> 
-    <input type="text"  id="respuesta_2" name="respuesta_2" value="<?php echo $respuesta_2; ?>" 
-    oninput="actualizarFormula2()" size="19">
-
-
-<h4> Paso 3: Ponemos todo en la fracción</h4>
-<p>Así que el promedio es:</p>
-<p>\[
-\frac{3 + 5 + 7 + \cdots + (2n + 1)}{n} = \frac{\sum_{i=1}^{n} (2i + 1)}{n} =  
-\]</p>
-
-
-    <span id="formula3">
-        \[  =    \]
-    </span> 
-    <input type="text"  id="respuesta_3" name="respuesta_3" value="<?php echo $respuesta_3; ?>" 
-    oninput="actualizarFormula3()" size="19">
-
-
-
-<p>Factorizamos, resolvemos:</p>
-=
-<input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="9"> 
-
-
-
-
-     <h3> Conclusión:</h3>
-
-    <p>El número <strong>promedio de comparaciones</strong> que realiza el algoritmo de búsqueda lineal, cuando se sabe que \(x\) está en la lista, es:</p>
-
-    <input type="text"  value="<?php echo $respuesta_4; ?>" size="9" readonly> 
-
-    <p>lo cual se expresa como complejidad <strong>\(\Theta(n)\)</strong>.</p>
-
-    <h3> Observaciones:</h3>
-
-    <ul>
-    <li>En este análisis se <strong>asumió que \(x\) sí está en la lista</strong>. También se puede realizar un análisis del caso promedio cuando \(x\) <strong>podría no estar</strong> en la lista (ver Ejercicio 23).</li>
-    <li>Aunque aquí se cuentan las comparaciones para saber si se ha llegado al final del bucle, <strong>esas comparaciones a menudo no se consideran</strong>. A partir de ahora, <strong>ignoraremos esas comparaciones</strong>.</li>
-    </ul>
-
-    <h2> Complejidad en el peor caso de dos algoritmos de ordenamiento</h2>
-    <p>A continuación se analizará la complejidad en el <strong>peor caso</strong> del algoritmo <em>bubble sort</em> y del <em>insertion sort</em> en los Ejemplos 5 y 6.</p>
-    
-    <hr>
-
-
-
-    <h3>ALGORITMO 4 El ordenamiento burbuja</h3>
-<pre><code>procedure bubblesort(a1,… , an : real numbers with n ≥ 2)
-for i := 1 to n − 1
-    for j := 1 to n − i
-        if aj > aj+1 then interchange aj and aj+1
-{a1,… , an is in increasing order}</code></pre>
-
- <h4> EJEMPLO 5: ¿Cuál es la complejidad en el peor caso del <em>bubble sort</em> en términos del número de 
- comparaciones realizadas?</h4>
-
-    <p><strong>Solución:</strong> El algoritmo de <em>bubble sort</em> descrito antes del Ejemplo 4 en la Sección 3.1 
-    ordena una lista mediante una secuencia de pasadas a través de la lista. En cada pasada, el algoritmo 
-    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="9">  
-    sucesivamente elementos adyacentes e 
-    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="9"> 
-    sus posiciones si es necesario.</p>
-
-    <p>Cuando comienza la <em>i-ésima</em> pasada, los 
-    <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="9">
-    elementos más grandes ya están en sus posiciones correctas. 
-    Durante esa pasada, el algoritmo compara los elementos desde el inicio hasta el índice 
-    <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="9">
-    , haciendo un 
-    total de 
-    <input type="text"   value="<?php echo $respuesta_9; ?>" size="9" readonly>
-   comparaciones.</p>
-
-
-    <p>Por lo tanto, el número total de comparaciones que realiza el algoritmo bubble sort para ordenar 
-    una lista de \(n\) elementos es:</p>
-
-    
-
-    <span id="formula5">
-        \[  (n - 1) + (n - 2) + \cdots + 2 + 1 =    \]
-    </span> 
-    <input type="text"  id="respuesta_10" name="respuesta_10" value="<?php echo $respuesta_10; ?>" 
-    oninput="actualizarFormula5()" size="19">
-
-
-
-    <p>usando la fórmula de suma mostrada en la línea 2 de la Tabla 2 de la Sección 2.4 (y también el 
-        Ejercicio 37(b) de la misma sección).</p>
-
-    <p>Observación: el algoritmo <em>bubble sort</em> realiza exactamente esta cantidad de comparaciones, 
-    incluso si la lista ya está completamente 
-    <input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="9">
-    en algún paso intermedio.</p>
-
-    <p>lo anterior implica una 
-    <strong>complejidad en el peor caso de \(\Theta( \)
-    <span id="formula6">
-        \(     \)
-    </span> 
-    <input type="text"id="respuesta_12" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="9"
-     oninput="actualizarFormula6()">    
-    \( )\)</strong> en términos del número de comparaciones.</p>
-
-    <p>
-    En la sumatoria podemos notar como en Bubble Sort las últimas dos pasadas hacen 
-    <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="9">
-    y 
-    <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="9">
-    comparaciones respectivamente.
-    </p>
-
-
-
-  
-
-    </form>
-</div>
-
-
-
-
-<div class="seccion derecha">
-    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-      <h4> EJEMPLO 6: ¿Cuál es la complejidad en el peor caso del <em>insertion sort</em> en términos del 
-    número de comparaciones realizadas?</h4>
-
-    <pre><code>procedure insertion sort(a1, a2,… , an: real numbers with n ≥ 2)
-for j := 2 to n
-    i := 1
-    while aj > ai
-        i := i + 1
-    m := aj
-    for k := 0 to j − i − 1
-        aj−k := aj−k−1
-    ai := m
-{a1,… , an is in increasing order}</code></pre>
-
-    <p><strong>Solución:</strong> El algoritmo de <em>insertion sort</em> (descrito en la Sección 3.1) 
-    inserta el elemento \(a_j\) en la posición correcta entre los primeros
-    <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="9">
-    elementos que 
-    ya están ordenados.</p>
-
-    <p>Lo hace mediante una 
-    <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="15">  
-    , comparando sucesivamente el elemento 
-    <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="8">  
-    con los anteriores hasta encontrar uno que 
-    sea mayor o igual. También puede compararse consigo mismo y detenerse si no es menor que sí mismo.</p>
-
-    <p>En el <strong>peor caso</strong>, se requieren 
-    <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="8"> 
-    comparaciones para insertar el elemento \(a_j\).</p>
-
-    <p>Por lo tanto, el número total de comparaciones que realiza <em>insertion sort</em> para ordenar una lista 
-    de \(n\) elementos es:</p>
-
-
-    <span id="formula7">
-        \(     \)
-    </span> 
-    <input type="text"id="respuesta_19" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="19"
-    oninput="actualizarFormula7()">    
-
-    <p>Observación: el algoritmo <em>insertion sort</em> podría hacer muchas menos comparaciones si los 
-    elementos más 
-    <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="8">
-    estuvieran al final de la lista inicialmente.</p>
-
-    <p>Se concluye que el <em>insertion sort</em> tiene <strong>complejidad en el peor caso \(\Theta(\)
-    <span id="formula8">
-        \(     \)
-    </span> 
-    <input type="text"id="respuesta_21" name="respuesta_21" value="<?php echo $respuesta_21; ?>" size="1"
-    oninput="actualizarFormula8()">
-    
-    \(  )  \)</strong>.</p>
-
-
-         <script>
-            function mostrarImagen() {
-            var imagen = document.getElementById('imagen100');
-
-            // Mostrar la imagen
-            imagen.style.display = 'block';
-            }
-
-            function ocultarImagen() {
-            var imagen = document.getElementById('imagen100');
-
-            // Ocultar la imagen al soltar el botón
-            imagen.style.display = 'none';
-            }
-        </script>
-
-    <button onmousedown="mostrarImagen()" onmouseup="ocultarImagen()">Ayuda</button>
-    <img id="imagen100" src="../../../../img/sumatoria.png" style="display: none; max-width: 100%" width="450">
-
-         
-
-     <h2> Comparación entre Algoritmos de Ordenamiento</h2>
-
-<p>En los Ejemplos 5 y 6 mostramos que tanto el algoritmo de <strong>bubble sort</strong> como el de 
-<strong>insertion sort</strong> tienen una <strong>complejidad temporal en el peor caso de</strong> \(  \Theta( \)
-    
-    <span id="formula9">
-        \(     \)
-    </span> 
-    <input type="text"id="respuesta_22" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="1"
-    oninput="actualizarFormula9()">
-
-    \( ) \).</p>
-
-    <p>Sin embargo, los algoritmos de ordenamiento más eficientes pueden ordenar \(n\) elementos en un tiempo de 
-    <strong>\( O( \)
-    <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="8">
-    \( ) \)</strong>, como se demostrará en las Secciones 8.3 y 11.1, usando técnicas que se
-    desarrollan en dichas secciones.</p>
-
-    <p>A partir de ahora, asumiremos que ordenar \(n\) elementos puede hacerse en  
-    <input type="text" value="<?php echo $respuesta_23; ?>" size="8" readonly>    
-    tiempo.</p>
-
-    <hr>
-
-
-
-       <h2> Comparación entre Algoritmos de Ordenamiento</h2>
-
-<p>En los Ejemplos 5 y 6 mostramos que tanto el algoritmo de <strong>bubble sort</strong> como el de <strong>insertion sort</strong> tienen una <strong>complejidad temporal en el peor caso de</strong> \(\Theta(n^2)\).</p>
-
-<p>Sin embargo, los algoritmos de ordenamiento más eficientes pueden ordenar \(n\) elementos en un tiempo de <strong>\(O(n \log n)\)</strong>, como se demostrará en las Secciones 8.3 y 11.1, usando técnicas que se desarrollan en dichas secciones.</p>
-
-<p>A partir de ahora, asumiremos que ordenar \(n\) elementos puede hacerse en <strong>\(O(n \log n)\)</strong> tiempo.</p>
-
-<hr>
-       <h3>3.3.3 Complejidad de la Multiplicación de Matrices</h3>
-
-<p>La definición del producto de dos matrices puede expresarse como un algoritmo para calcular dicho producto. Supongamos que <strong>C = [c<sub>ij</sub>]</strong> es la matriz de tamaño <em>m × n</em> que resulta del producto de la matriz <em>A = [a<sub>ij</sub>]</em> de tamaño <em>m × k</em> y la matriz <em>B = [b<sub>ij</sub>]</em> de tamaño <em>k × n</em>. El algoritmo basado en la definición del producto matricial se expresa en pseudocódigo en el Algoritmo 1.</p>
-
-<h4>ALGORITHM 1 Matrix Multiplication</h4>
+  <h3>ALGORITHM 2 Producto Booleano de Matrices Cero–Uno</h3>
+<p>
+    <strong>usar: ∧</strong>
+</p>
 <pre>
-procedure matrix multiplication(A, B: matrices)
-<input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="14">
-    <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="14">
-        <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="14">
-        <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="14">
-            <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="14">
-return C {C = [cij] is the product of A and B}
-</pre>
+procedure Boolean product of Zero–One Matrices (A, B: zero–one matrices)
+<input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="12">
+    <input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="12">
+        <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="12">
+        <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="12">
+            <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="12">
+return C {C = [cij] is the Boolean product of A and B}
+</pre> 
 
-  <button onmousedown="mostrarImagen2()" onmouseup="ocultarImagen2()">Ayuda</button>
+
+<p>El número de operaciones a nivel de bit necesarias para encontrar el producto booleano de dos matrices de tamaño \( n \times n \) puede determinarse fácilmente.</p>
+
+  <button onmousedown="mostrarImagen()" onmouseup="ocultarImagen()">Explicacion</button>
     <!-- Elemento para mostrar la imagen -->
 
-    <img id="imagenMostrada2" src="../../../../img/matriz.png" style="display: none; max-width: 100%" width="460">
-
-    <script>
-        function mostrarImagen2() {
-        var imagenMostrada2 = document.getElementById('imagenMostrada2');
-
-        // Mostrar la imagen
-        imagenMostrada2.style.display = 'block';
-        }
-
-        function ocultarImagen2() {
-        var imagenMostrada2 = document.getElementById('imagenMostrada2');
-
-        // Ocultar la imagen al soltar el botón
-        imagenMostrada2.style.display = 'none';
-        }
-    </script>
-
-  <button onmousedown="mostrarImagen()" onmouseup="ocultarImagen()">Ayuda</button>
-    <!-- Elemento para mostrar la imagen -->
-
-    <img id="imagenMostrada" src="../../../../img/matriz_dos.png" style="display: none; max-width: 100%" width="560">
+    <img id="imagenMostrada" src="../../../../img/boolean.png" style="display: none; max-width: 100%" width="560">
 
     <script>
         function mostrarImagen() {
@@ -1984,11 +1771,64 @@ return C {C = [cij] is the product of A and B}
         }
     </script>
 
- 
-  <button onmousedown="mostrarImagen3()" onmouseup="ocultarImagen3()">Ayuda</button>
+<button onmousedown="mostrarImagen2()" onmouseup="ocultarImagen2()">Explicacion</button>
     <!-- Elemento para mostrar la imagen -->
 
-    <img id="imagenMostrada3" src="../../../../img/matriz_tres.png" style="display: none; max-width: 100%" width="560">
+    <img id="imagenMostrada2" src="../../../../img/boolean_dos.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen2() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+
+        // Mostrar la imagen
+        imagenMostrada2.style.display = 'block';
+        }
+
+        function ocultarImagen2() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada2.style.display = 'none';
+        }
+    </script>
+
+
+ <h4>Ejemplo 8</h4>
+<p>¿Cuántas operaciones a nivel de bit se usan para encontrar \( A \odot B \), donde \( A \) y \( B \) son matrices 
+    cero-uno de tamaño \( n \times n \)?</p>
+
+<p><strong>Solución:</strong> Hay \( n^2 \) entradas en \( A \odot B \). Usando el Algoritmo 2, se utilizan 
+\( n \) disyunciones (OR) y \( n \) conjunciones (AND) para calcular una entrada de \( A \odot B \). Por lo
+ tanto, se utilizan 
+ <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="4">
+ operaciones a nivel de bit para cada entrada. En consecuencia, se requieren 
+  <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="4">
+   operaciones de bit para calcular \( A \odot B \) usando el Algoritmo 2. ◂</p>
+
+
+    <h3>Multiplicación de Cadenas de Matrices</h3>
+<p>Existe otro problema importante relacionado con la complejidad de la multiplicación de matrices. 
+    ¿Cómo se debe calcular el producto de la cadena de matrices \( A_1 A_2 \cdots A_n \) utilizando 
+    la 
+    <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="4">
+    cantidad de multiplicaciones de enteros, donde \( A_1, A_2, \ldots, A_n \) son matrices de tamaño \( m_1 \times m_2, m_2 \times m_3, \ldots, m_n \times m_{n+1} \) respectivamente, y cada una contiene enteros como entradas?</p>
+
+<p>(Dado que la multiplicación de matrices es asociativa, como se muestra en el Ejercicio 13 de la Sección 2.6, el orden de multiplicación no afecta el resultado del producto).</p>
+
+<p>Nótese que para multiplicar una matriz de tamaño \( m_1 \times m_2 \) con una de \( m_2 \times m_3 \) se realizan \( m_1 m_2 m_3 \) multiplicaciones de enteros al usar el Algoritmo 1.</p>
+
+<h4>Ejemplo 9</h4>
+<p>¿En qué orden deben multiplicarse las matrices \( A_1, A_2 \) y \( A_3 \), donde:</p>
+
+<ul>
+  <li>\( A_1 \) es de tamaño \( 30 \times 20 \)</li>
+  <li>\( A_2 \) es de tamaño \( 20 \times 40 \)</li>
+  <li>\( A_3 \) es de tamaño \( 40 \times 10 \)</li>
+</ul>
+ <button onmousedown="mostrarImagen3()" onmouseup="ocultarImagen3()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada3" src="../../../../img/multiplicacion.png" style="display: none; max-width: 100%" width="560">
 
     <script>
         function mostrarImagen3() {
@@ -2005,13 +1845,163 @@ return C {C = [cij] is the product of A and B}
         imagenMostrada3.style.display = 'none';
         }
     </script>
+ 
+
+<p><strong>Solución:</strong> Hay dos formas posibles de calcular \( A_1 A_2 A_3 \):</p>
+
+<ul>
+  <li>\( A_1 (A_2 A_3) \)</li>
+  <li>\( (A_1 A_2) A_3 \)</li>
+</ul>
+
+<p>Si primero se multiplican \( A_2 \) y \( A_3 \), se necesitan:</p>
+<p>\( 20 \cdot 40 \cdot 10 = 8000 \) multiplicaciones para obtener la matriz \( A_2 A_3 \) de tamaño \( 20 \times 10 \).</p>
+
+<p>Luego, para multiplicar \( A_1 \) por \( A_2 A_3 \):</p>
+<p>\( 30 \cdot \)  
+<input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="4">    
+\( \cdot \) 
+<input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="4">
+\(= 6000 \) 
+    
+multiplicaciones.</p>
+
+<p>Total: \( 8000 + 6000 = 14,\!000 \) multiplicaciones.</p>
+
+<p>Si en cambio se multiplican primero \( A_1 \) y \( A_2 \):</p>
+<p>\( 30 \cdot 20 \cdot 40 = 24,\!000 \) multiplicaciones para obtener \( A_1 A_2 \) de tamaño \( 30 \times 40 \).</p>
+
+<p>Luego, para multiplicar \( A_1 A_2 \) con \( A_3 \):</p>
+<p>\( 30 \cdot 40 \cdot 10 = 12,\!000 \) multiplicaciones.</p>
+
+<p>Total: \( 24,\!000 + 12,\!000 = 36,\!000 \) multiplicaciones.</p>
+
+<p>Claramente, el primer método es más eficiente. ◂</p>
+
+<p>Regresaremos a este problema en el Ejercicio 57 de la Sección 8.1. Los algoritmos para determinar la forma más eficiente de realizar la multiplicación de cadenas de matrices se discuten en [CoLeRiSt09].</p>
+
+
+ 
+
+
+    </form>
+</div>
 
 
 
-  <button onmousedown="mostrarImagen4()" onmouseup="ocultarImagen4()">Ayuda</button>
+
+<div class="seccion derecha">
+    <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+     
+    <h3>3.3.4 Paradigmas Algorítmicos</h3>
+
+    <p>En la Sección 3.1 introdujimos la noción básica de algoritmo. Proporcionamos ejemplos de muchos algoritmos 
+    diferentes, incluidos algoritmos de búsqueda y ordenamiento. También introdujimos el concepto de un 
+    algoritmo voraz (<i>greedy</i>), dando ejemplos de varios problemas que pueden resolverse mediante este 
+    tipo de algoritmos. Los algoritmos voraces son un ejemplo de <strong>paradigma algorítmico</strong>, es 
+    decir, un 
+    <input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>" size="8">
+    general basado en un concepto particular que puede utilizarse para construir algoritmos 
+    que resuelvan una variedad de problemas.</p>
+
+    <p>Algunos de los algoritmos que ya hemos estudiado se basan en un paradigma algorítmico conocido como 
+    <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="14">
+    , que describiremos en esta sección. Paradigmas algorítmicos que se estudiarán 
+    más adelante en este libro incluyen los algoritmos de <em>divide y vencerás</em> (Capítulo 8), <em>programación 
+    dinámica</em> (también en el Capítulo 8), <em>backtracking</em> (Capítulo 10), y <em>algoritmos probabilísticos</em> 
+    (Capítulo 7). Existen muchos otros paradigmas algorítmicos importantes además de los que se describen en este libro. 
+    Consultá libros sobre diseño de algoritmos como [KlTa06] para aprender más sobre ellos.</p>
+
+    <h4>Algoritmos de Fuerza Bruta</h4>
+
+    <p>La <strong>fuerza bruta</strong> es un paradigma algorítmico importante y básico. En un algoritmo de fuerza 
+    bruta, un problema se resuelve de la manera más directa posible, basándose únicamente en el enunciado del problema 
+    y en las definiciones involucradas. Los algoritmos de fuerza bruta están diseñados sin tener en cuenta los recursos 
+    computacionales requeridos. Por ejemplo, en algunos algoritmos de fuerza bruta la solución se obtiene examinando 
+    <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="8">
+    las soluciones posibles y eligiendo la mejor.</p>
+
+    <p>En general, los algoritmos de fuerza bruta son enfoques
+    <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="8">    
+    para resolver problemas que no 
+    aprovechan ninguna estructura especial del problema ni ideas ingeniosas.</p>
+
+    <p>Observá que el Algoritmo 1 en la Sección 3.1 para encontrar el número máximo en una secuencia es un algoritmo 
+    de fuerza bruta porque examina cada uno de los \( n \) números para encontrar el valor máximo. El algoritmo 
+    que suma \( n \) números agregando uno por uno también es de fuerza bruta, al igual que el algoritmo de 
+    multiplicación de matrices basado en su definición (Algoritmo 1). Los algoritmos de ordenamiento burbuja, 
+    inserción y selección también se consideran algoritmos de 
+    <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="8">
+    ; los tres son enfoques directos y 
+    mucho menos eficientes que otros algoritmos como <em>merge sort</em> y <em>quick sort</em>, discutidos en 
+    los Capítulos 5 y 8.</p>
+ 
+    <p>Aunque los algoritmos de fuerza bruta suelen ser ineficientes, muchas veces resultan útiles. Un algoritmo de 
+    fuerza bruta puede resolver instancias <strong>prácticas</strong> de problemas, especialmente si la entrada no 
+    es demasiado grande, incluso si el mismo algoritmo es <strong>inviable</strong> para entradas más grandes. Además, 
+    al diseñar nuevos algoritmos, el objetivo suele ser encontrar uno más eficiente que el de fuerza bruta. Uno de esos 
+    problemas se describe en el siguiente ejemplo:</p>
+
+
+    <h4>Ejemplo 10</h4>
+
+<p><strong> un algoritmo de fuerza bruta para encontrar el par de puntos más cercanos en un conjunto de \( n \) 
+puntos en el plano, y proporcioná una estimación del caso peor en notación Big-O del número de operaciones a 
+nivel de bits usadas por el algoritmo.</strong></p>
+
+<p><strong>Solución:</strong><br>
+Supongamos que nos dan como entrada los puntos \( (x_1, y_1), (x_2, y_2), \dots, (x_n, y_n) \). Recordá que la distancia entre \( (x_i, y_i) \) y \( (x_j, y_j) \) es</p>
+
+    
+    <span id="formula">
+        \(     \)
+    </span> 
+    <input type="text"id="respuesta_26" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="28"
+    oninput="actualizarFormula()">
+
+
+    <p>Un algoritmo de fuerza bruta puede encontrar el par más cercano de estos puntos calculando 
+    la distancia entre 
+    <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="8">
+    los 
+    <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="8">
+    posibles y determinando cuál es la menor. (Podemos hacer una pequeña simplificación: en 
+    lugar de calcular la distancia, podemos calcular el <em>cuadrado</em> de la distancia, ya 
+    que también permite encontrar el par más cercano sin usar raíces cuadradas.)</p>
+
+<p><strong>ALGORITMO 3: Fuerza Bruta para el Par de Puntos Más Cercanos</strong></p>
+<p>
+    El algoritmo recibe simplemente una lista de 
+    <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="8">
+    en el plano, no 
+    <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="8">
+</p>
+  <button onmousedown="mostrarImagen6()" onmouseup="ocultarImagen6()">Explicacion 1</button>
     <!-- Elemento para mostrar la imagen -->
 
-    <img id="imagenMostrada4" src="../../../../img/matriz_cuatro.png" style="display: none; max-width: 100%" width="560">
+    <img id="imagenMostrada6" src="../../../../img/puntos_3.png" style="display: none; max-width: 100%" width="560">
+
+    <script>
+        function mostrarImagen6() {
+        var imagenMostrada6 = document.getElementById('imagenMostrada6');
+
+        // Mostrar la imagen
+        imagenMostrada6.style.display = 'block';
+        }
+
+        function ocultarImagen6() {
+        var imagenMostrada6 = document.getElementById('imagenMostrada6');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada6.style.display = 'none';
+        }
+    </script>
+
+
+ <button onmousedown="mostrarImagen4()" onmouseup="ocultarImagen4()">Explicacion 2 </button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada4" src="../../../../img/puntos.png" style="display: none; max-width: 100%" width="560">
 
     <script>
         function mostrarImagen4() {
@@ -2029,37 +2019,164 @@ return C {C = [cij] is the product of A and B}
         }
     </script>
 
-    <p>
-        En cada ejecución del for q, tanto 
-        <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="6">
-        como 
-        <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="6">
-        se mantienen 
-        <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="6">
-    </p>
+     <button onmousedown="mostrarImagen5()" onmouseup="ocultarImagen5()">Explicacion 3</button>
+    <!-- Elemento para mostrar la imagen -->
 
-    \( A = [a_{ij}] \quad \text{significa que } \) A 
-    <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="6">
-    todos los elementos \( a_{ij} \)
+    <img id="imagenMostrada5" src="../../../../img/puntos_2.png" style="display: none; max-width: 100%" width="560">
+
+    <script>
+        function mostrarImagen5() {
+        var imagenMostrada5 = document.getElementById('imagenMostrada5');
+
+        // Mostrar la imagen
+        imagenMostrada5.style.display = 'block';
+        }
+
+        function ocultarImagen5() {
+        var imagenMostrada5 = document.getElementById('imagenMostrada5');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada5.style.display = 'none';
+        }
+    </script>
 
 
+<pre>
+procedure closest-pair((x1, y1),(x2, y2),… ,(xn, yn): pairs of real numbers)
+min = ∞
+<input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="14">
+  <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="18">  
+    if (xj − xi)^2 + (yj − yi)^2 < min then
+      <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="32">
+      closest pair := ((xi, yi), (xj, yj))
+return closest pair
+</pre>
 
-    <p>Podemos determinar la complejidad de este algoritmo en términos del número de sumas y multiplicaciones utilizadas.</p>
 
  
-      <p>La expresión:</p>
-  <p>\( n \times n \)</p>
-  <p>cuando hablamos de matrices cuadradas, significa:</p>
+    <button onmousedown="mostrarImagen7()" onmouseup="ocultarImagen7()">combinaciones</button>
+    <!-- Elemento para mostrar la imagen -->
 
-  <ul>
-    <li>\( n \) <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="6"></li>
-    <li>\( n \) <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="6"></li>
-  </ul>
+    <img id="imagenMostrada7" src="../../../../img/combinaciones.png" style="display: none; max-width: 100%" width="560">
 
-  <p>Y por lo tanto, el número total de elementos (o entradas) de la matriz es:</p>
-  <p>\( n \times n  \) = 
-  <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="6">  
-  </p>
+    <script>
+        function mostrarImagen7() {
+        var imagenMostrada7 = document.getElementById('imagenMostrada7');
+
+        // Mostrar la imagen
+        imagenMostrada7.style.display = 'block';
+        }
+
+        function ocultarImagen7() {
+        var imagenMostrada7 = document.getElementById('imagenMostrada7');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada7.style.display = 'none';
+        }
+    </script>
+
+    <p>Para estimar el número de operaciones utilizadas por el algoritmo, primero notá que hay 
+    <span id="formula2">
+        \(     \)
+    </span> 
+    <input type="text"id="respuesta_34" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="16"
+    oninput="actualizarFormula2()">
+
+    pares de puntos \( ((x_i, y_i), (x_j, y_j)) \) por los que iteramos. 
+    Para cada par, se calcula \( (x_j - x_i)^2 + (y_j - y_i)^2 \), se compara con el valor actual de
+    <code>min</code>, y si es menor, se 
+    <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="9">
+    . Por lo tanto, este algoritmo utiliza \( \Theta(   \) 
+    
+    <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="9">
+    \(  ) \)
+    operaciones, en términos de operaciones aritméticas y comparaciones.</p>
+
+    <p>En el Capítulo 8 vamos a desarrollar un algoritmo que encuentra el par de puntos más cercano 
+    entre \( n \) puntos del plano con una complejidad en el peor caso de \( 
+    O( \)
+    <input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="9">
+    \( ) \). El descubrimiento 
+    original de dicho algoritmo, mucho más eficiente que el enfoque de fuerza bruta, fue considerado bastante
+    sorprendente.</p>
+    <hr>
+
+
+     <h3>3.3.5 Comprendiendo la Complejidad de los Algoritmos</h3>
+
+    <p>La <strong>Tabla 1</strong> muestra algunos términos comunes usados para describir la complejidad temporal 
+    de los algoritmos.</p>
+
+    <p>Por ejemplo, un algoritmo que encuentra el mayor de los primeros 100 elementos de una lista de <em>n</em> 
+    elementos, aplicando el Algoritmo 1 a la secuencia de los primeros 100 términos (donde <em>n</em> es un entero 
+    con <em>n ≥ 100</em>), tiene <strong>complejidad 
+    <input type="text" name="respuesta_38" value="<?php echo $respuesta_38; ?>" size="9">    
+    </strong> porque realiza 
+    <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="9"> 
+    comparaciones sin importar 
+    cuál sea el valor de <em>n</em> (como puede comprobar el lector).</p>
+
+    <p>El algoritmo de búsqueda lineal tiene <strong>complejidad 
+    <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="9">     
+    </strong> (en el peor o promedio de los casos), 
+    y el algoritmo de búsqueda binaria tiene <strong>complejidad 
+    <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="9">    
+    </strong> (en el peor de los casos).</p>
+
+    <p>Muchos algoritmos importantes tienen una complejidad 
+    <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="9">     
+    (<em>n log n</em>, en el peor 
+    de los casos), como el ordenamiento por mezcla (<em>merge sort</em>), que presentaremos en el Capítulo 4. 
+    (La palabra 
+    <input type="text"   value="<?php echo $respuesta_42; ?>" size="9">  
+    es una combinación de los términos <em>lineal</em> y <em>logarítmica</em>).</p>
+
+    <h4>Tabla 1. Terminología comúnmente usada para describir la complejidad de algoritmos</h4>
+
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Notación</th>
+      <th>Terminología de Complejidad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Θ(1)</td>
+      <td>Complejidad constante</td>
+    </tr>
+    <tr>
+      <td>Θ(<input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="9">)</td>
+      <td>Complejidad logarítmica</td>
+    </tr>
+    <tr>
+      <td>Θ(
+        <input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>" size="9">
+        )</td>
+      <td>Complejidad lineal</td>
+    </tr>
+    <tr>
+      <td>Θ(
+        <input type="text" name="respuesta_45" value="<?php echo $respuesta_45; ?>" size="9">
+        )</td>
+      <td>Complejidad linealítmica</td>
+    </tr>
+    <tr>
+      <td>Θ(n<sup>b</sup>)</td>
+      <td>Complejidad polinomial</td>
+    </tr>
+    <tr>
+      <td>Θ(b<sup>n</sup>), donde b &gt; 1</td>
+      <td>Complejidad exponencial</td>
+    </tr>
+    <tr>
+      <td>Θ(n!)</td>
+      <td>Complejidad factorial</td>
+    </tr>
+  </tbody>
+</table>
+
+    <hr>
 
     </form>
 </div>
@@ -2069,7 +2186,7 @@ return C {C = [cij] is the product of A and B}
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="tercero.php"
+        href="cuarto.php"
         role="button"
         width="50px"
         height="50px"

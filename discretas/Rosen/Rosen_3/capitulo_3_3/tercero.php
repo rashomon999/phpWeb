@@ -1701,7 +1701,8 @@ function ocultarMensaje4() {
 
 <p>En el futuro, estos tiempos disminuirán a medida que se desarrollen computadoras más rápidas. Podemos usar los tiempos mostrados en la Tabla 2 para ver si es razonable esperar una solución para un problema de un tamaño específico usando un algoritmo con complejidad temporal conocida cuando se ejecuta en una computadora moderna.</p>
 
-     </form>
+    <hr>
+      </form>
 </div>
 
 <div class="centered-container">

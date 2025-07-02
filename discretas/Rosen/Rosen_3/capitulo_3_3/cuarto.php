@@ -1136,7 +1136,7 @@ if ($respuesta_110 === '264') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 370vh;
+    height: 377vh;
     }
 </style>
  
@@ -1439,7 +1439,7 @@ function ocultarMensaje4() {
 </head>
 <body> 
 <div class="seccion izquierda">
-    <form action="./once.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <form action="./cuarto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
     <p>Es importante tener una estimación razonable de cuánto tiempo tomará a una computadora resolver un problema. 
     Por ejemplo, si un algoritmo requiere aproximadamente 10 horas, puede valer la pena usar el tiempo de computadora 
     (y el dinero) necesario para resolverlo. Pero si requiere aproximadamente 10 mil millones de años, sería irracional
@@ -1505,7 +1505,15 @@ function ocultarMensaje4() {
   Por eso, <strong>mergesort</strong> y <strong>búsqueda binaria</strong> son considerados problemas en 
   <strong>P</strong>, es decir, <em>eficientemente resolubles</em>.
 </p>
+<hr>
 
+
+
+
+
+
+ 
+  
     </form>
 </div>
 
@@ -1513,8 +1521,50 @@ function ocultarMensaje4() {
 
 
 <div class="seccion derecha">
-    <form action="./once.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    
+    <form action="./cuarto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <h3>Multiplicación de Cadenas de Matrices</h3>
+<p>Existe otro problema importante relacionado con la complejidad de la multiplicación de matrices. ¿Cómo se debe calcular el producto de la cadena de matrices \( A_1 A_2 \cdots A_n \) utilizando la menor cantidad de multiplicaciones de enteros, donde \( A_1, A_2, \ldots, A_n \) son matrices de tamaño \( m_1 \times m_2, m_2 \times m_3, \ldots, m_n \times m_{n+1} \) respectivamente, y cada una contiene enteros como entradas?</p>
+
+<p>(Dado que la multiplicación de matrices es asociativa, como se muestra en el Ejercicio 13 de la Sección 2.6, el orden de multiplicación no afecta el resultado del producto).</p>
+
+<p>Nótese que para multiplicar una matriz de tamaño \( m_1 \times m_2 \) con una de \( m_2 \times m_3 \) se realizan \( m_1 m_2 m_3 \) multiplicaciones de enteros al usar el Algoritmo 1.</p>
+
+<h4>Ejemplo 9</h4>
+<p>¿En qué orden deben multiplicarse las matrices \( A_1, A_2 \) y \( A_3 \), donde:</p>
+
+<ul>
+  <li>\( A_1 \) es de tamaño \( 30 \times 20 \)</li>
+  <li>\( A_2 \) es de tamaño \( 20 \times 40 \)</li>
+  <li>\( A_3 \) es de tamaño \( 40 \times 10 \)</li>
+</ul>
+
+<p><strong>Solución:</strong> Hay dos formas posibles de calcular \( A_1 A_2 A_3 \):</p>
+
+<ul>
+  <li>\( A_1 (A_2 A_3) \)</li>
+  <li>\( (A_1 A_2) A_3 \)</li>
+</ul>
+
+<p>Si primero se multiplican \( A_2 \) y \( A_3 \), se necesitan:</p>
+<p>\( 20 \cdot 40 \cdot 10 = 8000 \) multiplicaciones para obtener la matriz \( A_2 A_3 \) de tamaño \( 20 \times 10 \).</p>
+
+<p>Luego, para multiplicar \( A_1 \) por \( A_2 A_3 \):</p>
+<p>\( 30 \cdot 20 \cdot 10 = 6000 \) multiplicaciones.</p>
+
+<p>Total: \( 8000 + 6000 = 14,\!000 \) multiplicaciones.</p>
+
+<p>Si en cambio se multiplican primero \( A_1 \) y \( A_2 \):</p>
+<p>\( 30 \cdot 20 \cdot 40 = 24,\!000 \) multiplicaciones para obtener \( A_1 A_2 \) de tamaño \( 30 \times 40 \).</p>
+
+<p>Luego, para multiplicar \( A_1 A_2 \) con \( A_3 \):</p>
+<p>\( 30 \cdot 40 \cdot 10 = 12,\!000 \) multiplicaciones.</p>
+
+<p>Total: \( 24,\!000 + 12,\!000 = 36,\!000 \) multiplicaciones.</p>
+
+<p>Claramente, el primer método es más eficiente. ◂</p>
+
+<p>Regresaremos a este problema en el Ejercicio 57 de la Sección 8.1. Los algoritmos para determinar la forma más eficiente de realizar la multiplicación de cadenas de matrices se discuten en [CoLeRiSt09].</p>
+
 
     </form>
 </div>
@@ -1524,7 +1574,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="once.php"
+        href="cuarto.php"
         role="button"
         width="50px"
         height="50px"

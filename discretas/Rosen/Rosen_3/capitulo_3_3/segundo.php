@@ -1136,7 +1136,7 @@ if ($respuesta_110 === '264') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 400vh;
+    height: 570vh;
     }
 </style>
  
@@ -1575,15 +1575,10 @@ function ocultarMensaje4() {
 
 <p>Se concluye que el <em>insertion sort</em> tiene <strong>complejidad en el peor caso \(\Theta(n^2)\)</strong>.</p>
 
-
-    </form>
-</div>
+    <hr>
 
 
-<div class="seccion derecha">
-    <form action="./noveno.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-     
-    <h2> Comparación entre Algoritmos de Ordenamiento</h2>
+     <h2> Comparación entre Algoritmos de Ordenamiento</h2>
 
 <p>En los Ejemplos 5 y 6 mostramos que tanto el algoritmo de <strong>bubble sort</strong> como el de <strong>insertion sort</strong> tienen una <strong>complejidad temporal en el peor caso de</strong> \(\Theta(n^2)\).</p>
 
@@ -1592,7 +1587,159 @@ function ocultarMensaje4() {
 <p>A partir de ahora, asumiremos que ordenar \(n\) elementos puede hacerse en <strong>\(O(n \log n)\)</strong> tiempo.</p>
 
 <hr>
-    <strong>salto, parte de multiplicacion de matrices:</strong>
+       <h3>3.3.3 Complejidad de la Multiplicación de Matrices</h3>
+
+<p>La definición del producto de dos matrices puede expresarse como un algoritmo para calcular dicho producto. Supongamos que <strong>C = [c<sub>ij</sub>]</strong> es la matriz de tamaño <em>m × n</em> que resulta del producto de la matriz <em>A = [a<sub>ij</sub>]</em> de tamaño <em>m × k</em> y la matriz <em>B = [b<sub>ij</sub>]</em> de tamaño <em>k × n</em>. El algoritmo basado en la definición del producto matricial se expresa en pseudocódigo en el Algoritmo 1.</p>
+
+<h4>ALGORITHM 1 Matrix Multiplication</h4>
+<pre>
+procedure matrix multiplication(A, B: matrices)
+for i := 1 to m
+    for j := 1 to n
+        cij := 0
+        for q := 1 to k
+            cij := cij + aiq * bqj
+return C {C = [cij] is the product of A and B}
+</pre>
+
+  <button onmousedown="mostrarImagen2()" onmouseup="ocultarImagen2()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada2" src="../../../../img/matriz.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen2() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+
+        // Mostrar la imagen
+        imagenMostrada2.style.display = 'block';
+        }
+
+        function ocultarImagen2() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada2.style.display = 'none';
+        }
+    </script>
+
+  <button onmousedown="mostrarImagen()" onmouseup="ocultarImagen()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada" src="../../../../img/matriz_dos.png" style="display: none; max-width: 100%" width="560">
+
+    <script>
+        function mostrarImagen() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada');
+
+        // Mostrar la imagen
+        imagenMostrada.style.display = 'block';
+        }
+
+        function ocultarImagen() {
+        var imagenMostrada = document.getElementById('imagenMostrada');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada.style.display = 'none';
+        }
+    </script>
+
+
+
+<p>Podemos determinar la complejidad de este algoritmo en términos del número de sumas y multiplicaciones utilizadas.</p>
+
+<h4>Ejemplo 7</h4>
+<p>¿Cuántas sumas y multiplicaciones de enteros se utilizan en el Algoritmo 1 para multiplicar dos matrices <em>n × n</em> con entradas enteras?</p>
+
+<p><strong>Solución:</strong> Hay <em>n²</em> entradas en el producto de <em>A</em> y <em>B</em>. Para encontrar cada entrada se requieren un total de <em>n</em> multiplicaciones y <em>n − 1</em> sumas. Por lo tanto, se usan en total <em>n³</em> multiplicaciones y <em>n²(n − 1)</em> sumas. ◂</p>
+
+<p>Sorprendentemente, existen algoritmos más eficientes para la multiplicación de matrices que el dado en el Algoritmo 1. 
+    Como muestra el Ejemplo 7, multiplicar directamente dos matrices <em>n × n</em> a partir de la definición requiere 
+    <strong>O(n³)</strong> multiplicaciones y sumas. Utilizando otros algoritmos, dos matrices <em>n × n</em> pueden
+     multiplicarse usando <strong> \( O( n^{\sqrt{7}} ) \)</strong> multiplicaciones y sumas. (Los detalles de tales 
+     algoritmos pueden encontrarse en [CoLeRiSt09].)</p>
+
+<p>También podemos analizar la complejidad del algoritmo que describimos en el Capítulo 2 para calcular el producto booleano de dos matrices, el cual mostramos como el Algoritmo 2.</p>
+
+ 
+
+ 
+ 
+    </form>
+</div>
+
+
+<div class="seccion derecha">
+    <form action="./noveno.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+     <h3>ALGORITHM 2 Producto Booleano de Matrices Cero–Uno</h3>
+
+<pre>
+procedure Boolean product of Zero–One Matrices (A, B: zero–one matrices)
+for i := 1 to m
+    for j := 1 to n
+        cij := 0
+        for q := 1 to k
+            cij := cij ∨ (aiq ∧ bqj)
+return C {C = [cij] is the Boolean product of A and B}
+</pre> 
+
+
+<p>El número de operaciones a nivel de bit necesarias para encontrar el producto booleano de dos matrices de tamaño \( n \times n \) puede determinarse fácilmente.</p>
+
+ <h4>Ejemplo 8</h4>
+<p>¿Cuántas operaciones a nivel de bit se usan para encontrar \( A \odot B \), donde \( A \) y \( B \) son matrices cero–uno de tamaño \( n \times n \)?</p>
+
+<p><strong>Solución:</strong> Hay \( n^2 \) entradas en \( A \odot B \). Usando el Algoritmo 2, se utilizan \( n \) disyunciones (OR) y \( n \) conjunciones (AND) para calcular una entrada de \( A \odot B \). Por lo tanto, se utilizan \( 2n \) operaciones a nivel de bit para cada entrada. En consecuencia, se requieren \( 2n^3 \) operaciones de bit para calcular \( A \odot B \) usando el Algoritmo 2. ◂</p>
+
+  <h3>Multiplicación de Cadenas de Matrices</h3>
+<p>Existe otro problema importante relacionado con la complejidad de la multiplicación de matrices. ¿Cómo se debe calcular el producto de la cadena de matrices \( A_1 A_2 \cdots A_n \) utilizando la menor cantidad de multiplicaciones de enteros, donde \( A_1, A_2, \ldots, A_n \) son matrices de tamaño \( m_1 \times m_2, m_2 \times m_3, \ldots, m_n \times m_{n+1} \) respectivamente, y cada una contiene enteros como entradas?</p>
+
+<p>(Dado que la multiplicación de matrices es asociativa, como se muestra en el Ejercicio 13 de la Sección 2.6, el orden de multiplicación no afecta el resultado del producto).</p>
+
+<p>Nótese que para multiplicar una matriz de tamaño \( m_1 \times m_2 \) con una de \( m_2 \times m_3 \) se realizan \( m_1 m_2 m_3 \) multiplicaciones de enteros al usar el Algoritmo 1.</p>
+
+<h4>Ejemplo 9</h4>
+<p>¿En qué orden deben multiplicarse las matrices \( A_1, A_2 \) y \( A_3 \), donde:</p>
+
+<ul>
+  <li>\( A_1 \) es de tamaño \( 30 \times 20 \)</li>
+  <li>\( A_2 \) es de tamaño \( 20 \times 40 \)</li>
+  <li>\( A_3 \) es de tamaño \( 40 \times 10 \)</li>
+</ul>
+
+<p><strong>Solución:</strong> Hay dos formas posibles de calcular \( A_1 A_2 A_3 \):</p>
+
+<ul>
+  <li>\( A_1 (A_2 A_3) \)</li>
+  <li>\( (A_1 A_2) A_3 \)</li>
+</ul>
+
+<p>Si primero se multiplican \( A_2 \) y \( A_3 \), se necesitan:</p>
+<p>\( 20 \cdot 40 \cdot 10 = 8000 \) multiplicaciones para obtener la matriz \( A_2 A_3 \) de tamaño \( 20 \times 10 \).</p>
+
+<p>Luego, para multiplicar \( A_1 \) por \( A_2 A_3 \):</p>
+<p>\( 30 \cdot 20 \cdot 10 = 6000 \) multiplicaciones.</p>
+
+<p>Total: \( 8000 + 6000 = 14,\!000 \) multiplicaciones.</p>
+
+<p>Si en cambio se multiplican primero \( A_1 \) y \( A_2 \):</p>
+<p>\( 30 \cdot 20 \cdot 40 = 24,\!000 \) multiplicaciones para obtener \( A_1 A_2 \) de tamaño \( 30 \times 40 \).</p>
+
+<p>Luego, para multiplicar \( A_1 A_2 \) con \( A_3 \):</p>
+<p>\( 30 \cdot 40 \cdot 10 = 12,\!000 \) multiplicaciones.</p>
+
+<p>Total: \( 24,\!000 + 12,\!000 = 36,\!000 \) multiplicaciones.</p>
+
+<p>Claramente, el primer método es más eficiente. ◂</p>
+
+<p>Regresaremos a este problema en el Ejercicio 57 de la Sección 8.1. Los algoritmos para determinar la forma más eficiente de realizar la multiplicación de cadenas de matrices se discuten en [CoLeRiSt09].</p>
+
+
+
+
+
+
+
     <hr>
     <h3>3.3.4 Paradigmas Algorítmicos</h3>
 

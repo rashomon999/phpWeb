@@ -1,7 +1,9 @@
 <?php
  
  
-$respuesta_1 = ''; $respuesta_2 = ''; $respuesta_3 = ''; $respuesta_3_2 = ''; $respuesta_4 = ''; $respuesta_5 = ''; 
+$respuesta_1 = '';
+$respuesta_0 = '';
+$respuesta_2 = ''; $respuesta_3 = ''; $respuesta_3_2 = ''; $respuesta_4 = ''; $respuesta_5 = ''; 
 $respuesta_6 = ''; $respuesta_7 = ''; $respuesta_8 = ''; $respuesta_9 = '';  $respuesta_10 = '';
 $respuesta_11 = ''; $respuesta_12 = ''; $respuesta_13 = ''; $respuesta_14 = ''; $respuesta_15 = '';
 $respuesta_16 = ''; $respuesta_17 = ''; $respuesta_18 = ''; $respuesta_19 = ''; $respuesta_20 = '';
@@ -45,7 +47,9 @@ $respuesta_110 = '';
 
  
 
-$verificar_1 = ''; $verificar_2 = ''; $verificar_3 = '';  $verificar_3_2 = ''; $verificar_4 = ''; $verificar_5 = ''; 
+$verificar_1 = '';
+$verificar_0 = '';
+$verificar_2 = ''; $verificar_3 = '';  $verificar_3_2 = ''; $verificar_4 = ''; $verificar_5 = ''; 
 $verificar_6 = ''; $verificar_7 = '';  $verificar_8 = ''; $verificar_9 = ''; $verificar_10 = ''; 
 $verificar_11 = ''; $verificar_12 = ''; $verificar_13 = ''; $verificar_14 = ''; $verificar_15 = ''; 
 $verificar_16 = '';  $verificar_17 = ''; $verificar_18 = ''; $verificar_19 = ''; $verificar_20 = '';  
@@ -91,6 +95,14 @@ $verificar_61 = ''; $verificar_62 = ''; $verificar_63 = ''; $verificar_64 = ''; 
 if ($_POST) {
 
     
+ $respuesta_0 = isset($_POST['respuesta_0']) ? $_POST['respuesta_0'] : '';
+   if ($respuesta_0 === 'constante') {  
+       $verificar_0 = "correcto";
+   } elseif ($respuesta_0 === '') {
+       $verificar_0 = '';
+   } else {
+       $verificar_0 = "incorrecto";
+   }
 
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
    if ($respuesta_1 === 'crece') {  
@@ -1501,6 +1513,21 @@ function ocultarMensaje4() {
 <body> 
 <div class="seccion izquierda">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+       <h4>3.2 El Crecimiento de las Funciones</h4>
+            <p>
+  El tiempo requerido para resolver un problema depende de más que solo la cantidad de operaciones que utiliza. 
+  El tiempo también depende del hardware y el software utilizados para ejecutar el programa que implementa el 
+  algoritmo. Sin embargo, cuando cambiamos el hardware y software utilizados para implementar un algoritmo, 
+  podemos aproximar de cerca el tiempo requerido para resolver un problema de tamaño \( n \) multiplicando el
+tiempo anterior por una 
+     <input type="text" name="respuesta_0" value="<?php echo $respuesta_0; ?>" size="8"> 
+. Por ejemplo, en una supercomputadora podríamos resolver un problema de tamaño
+ \( n \) un millón de veces más rápido que en una PC. Sin embargo, este factor de un millón no dependerá de \( n \)
+  (excepto tal vez de manera menor).
+</p>
+<button type="submit">Enviar</button>
+<?php echo $verificar_0 ?>
+    <hr>
     <p>
     Usando la notación big-O, 
     podemos comparar dos algoritmos para determinar cuál es más eficiente a medida que 
