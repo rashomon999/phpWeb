@@ -88,8 +88,149 @@ $verificar_61 = ''; $verificar_62 = ''; $verificar_63 = ''; $verificar_64 = ''; 
      $verificar_110 = '';
      $verificar_111 = '';
      
-
+$mostrar_solucion ='';
 if ($_POST) {
+    $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
+    
+    if ($mostrar_solucion === 'mostrar_solucion') {
+        // Establecer todas las respuestas correctas
+        $respuesta_1 = '1998';
+        $respuesta_2 = '2003';
+        $respuesta_3 = '1998';
+        $respuesta_4 = '2000';
+        $respuesta_5 = '2003';
+        $respuesta_6 = '2004';
+        $respuesta_7 = '2014';
+        $respuesta_8 = '2024';
+        $respuesta_9 = '15';
+        $respuesta_10 = 'requerimientos de software';
+        $respuesta_11 = 'diseño de software';
+        $respuesta_12 = 'construccion de software';
+        $respuesta_13 = 'pruebas de software';
+        $respuesta_14 = 'mantenimiento de software';
+        $respuesta_15 = 'gestion de la configuracion del software';
+        $respuesta_16 = 'gestion de la ingenieria de software';
+        $respuesta_17 = 'proceso de ingenieria de software';
+        $respuesta_18 = 'modelos y metodos de ingenieria de software';
+        $respuesta_19 = 'calidad de software';
+        $respuesta_20 = 'practica profesional de la ingenieria de software';
+        $respuesta_21 = 'economia de la ingenieria de software';
+        $respuesta_22 = 'fundamentos de la computacion';
+        $respuesta_23 = 'fundamentos matematicos';
+        $respuesta_24 = 'fundamentos de la ingenieria';
+        $respuesta_25 = 'obtencion';
+        $respuesta_26 = 'analisis';
+        $respuesta_27 = 'especificacion';
+        $respuesta_28 = 'validacion';
+        $respuesta_29 = 'gestion';
+        $respuesta_30 = 'necesidades';
+        $respuesta_31 = 'restricciones';
+        $respuesta_32 = 'propiedad';
+        $respuesta_33 = 'exhibida';
+        $respuesta_34 = 'resolver';
+        $respuesta_35 = 'problema';
+        $respuesta_36 = 'verificables';
+        $respuesta_37 = 'requerimiento funcional';
+        $respuesta_38 = 'requerimiento no funcional';
+        $respuesta_39 = 'prioridad';
+        $respuesta_40 = 'necesidad';
+        $respuesta_41 = 'restriccion';
+        $respuesta_42 = 'software';
+        $respuesta_43 = 'desarrollar';
+        $respuesta_44 = 'restriccion';
+        $respuesta_45 = 'sobre';
+        $respuesta_46 = 'desarrollo';
+        $respuesta_47 = 'software';
+        $respuesta_48 = 'proceso';
+        $respuesta_49 = 'implicitos';
+        $respuesta_50 = 'producto';
+        $respuesta_51 = 'proceso';
+        $respuesta_52 = 'funcionales';
+        $respuesta_53 = 'no funcionales';
+        $respuesta_54 = 'funciones';
+        $respuesta_55 = 'ejecutar';
+        $respuesta_56 = 'capacidades';
+        $respuesta_57 = 'caracteristicas';
+        $respuesta_58 = 'finito';
+        $respuesta_59 = 'pasos';
+        $respuesta_60 = 'escribirse';
+        $respuesta_61 = 'prueba';
+        $respuesta_62 = 'restricciones';
+        $respuesta_63 = 'solucion';
+        $respuesta_64 = 'rendimiento';
+        $respuesta_65 = 'mantenibilidad';
+        $respuesta_66 = 'seguridad';
+        $respuesta_67 = 'confiabilidad';
+        $respuesta_68 = 'interoperabilidad';
+        $respuesta_69 = 'emergentes';
+        $respuesta_70 = 'representan';
+        $respuesta_71 = 'software';
+        $respuesta_72 = 'no pueden';
+        $respuesta_73 = 'unico';
+        $respuesta_74 = 'componente';
+        $respuesta_75 = 'componentes';
+        $respuesta_76 = 'interactuan';
+        $respuesta_77 = 'cuantificables';
+        $respuesta_78 = 'ambigua';
+        $respuesta_79 = 'cuantitativamente';
+        $respuesta_80 = 'imposibles';
+        $respuesta_81 = 'verificar';
+        $respuesta_82 = 'interpretacion';
+        $respuesta_83 = 'subjetivo';
+        $respuesta_84 = 'rendimiento';
+        $respuesta_85 = 'probabilidad';
+        $respuesta_86 = 'rendimiento';
+        $respuesta_87 = 'confiabilidad';
+        $respuesta_88 = 'sistema';
+        $respuesta_89 = 'software';
+        $respuesta_90 = 'combinacion';
+        $respuesta_91 = 'elementos';
+        $respuesta_92 = 'objetivo';
+        $respuesta_93 = 'hardware';
+        $respuesta_94 = 'software';
+        $respuesta_95 = 'personas';
+        $respuesta_96 = 'informacion';
+        $respuesta_97 = 'tecnicas';
+        $respuesta_98 = 'instalaciones';
+        $respuesta_99 = 'servicios';
+        $respuesta_100 = 'soporte';
+        $respuesta_101 = 'conjunto';
+        $respuesta_102 = 'derivan';
+        $respuesta_103 = 'sistema';
+        $respuesta_104 = 'clientes';
+        $respuesta_105 = 'usuarios finales';
+        $respuesta_106 = 'abarcan';
+        $respuesta_107 = 'usuarios';
+        $respuesta_108 = 'interesados';
+        $respuesta_109 = 'humana';
+        $respuesta_110 = 'usuario';
+        $respuesta_111 = 'sistema';
+        
+        // Marcar todas como correctas
+        $verificar_1 = $verificar_2 = $verificar_3 = $verificar_4 = $verificar_5 = 
+        $verificar_6 = $verificar_7 = $verificar_8 = $verificar_9 = $verificar_10 = 
+        $verificar_11 = $verificar_12 = $verificar_13 = $verificar_14 = $verificar_15 = 
+        $verificar_16 = $verificar_17 = $verificar_18 = $verificar_19 = $verificar_20 = 
+        $verificar_21 = $verificar_22 = $verificar_23 = $verificar_24 = $verificar_25 = 
+        $verificar_26 = $verificar_27 = $verificar_28 = $verificar_29 = $verificar_30 = 
+        $verificar_31 = $verificar_32 = $verificar_33 = $verificar_34 = $verificar_35 = 
+        $verificar_36 = $verificar_37 = $verificar_38 = $verificar_39 = $verificar_40 = 
+        $verificar_41 = $verificar_42 = $verificar_43 = $verificar_44 = $verificar_45 = 
+        $verificar_46 = $verificar_47 = $verificar_48 = $verificar_49 = $verificar_50 = 
+        $verificar_51 = $verificar_52 = $verificar_53 = $verificar_54 = $verificar_55 = 
+        $verificar_56 = $verificar_57 = $verificar_58 = $verificar_59 = $verificar_60 = 
+        $verificar_61 = $verificar_62 = $verificar_63 = $verificar_64 = $verificar_65 = 
+        $verificar_66 = $verificar_67 = $verificar_68 = $verificar_69 = $verificar_70 = 
+        $verificar_71 = $verificar_72 = $verificar_73 = $verificar_74 = $verificar_75 = 
+        $verificar_76 = $verificar_77 = $verificar_78 = $verificar_79 = $verificar_80 = 
+        $verificar_81 = $verificar_82 = $verificar_83 = $verificar_84 = $verificar_85 = 
+        $verificar_86 = $verificar_87 = $verificar_88 = $verificar_89 = $verificar_90 = 
+        $verificar_91 = $verificar_92 = $verificar_93 = $verificar_94 = $verificar_95 = 
+        $verificar_96 = $verificar_97 = $verificar_98 = $verificar_99 = $verificar_100 = 
+        $verificar_101 = $verificar_102 = $verificar_103 = $verificar_104 = $verificar_105 = 
+        $verificar_106 = $verificar_107 = $verificar_108 = $verificar_109 = $verificar_110 = 
+        $verificar_111 = "correcto";
+    } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
    if ($respuesta_1 === '1998') {  
        $verificar_1 = "correcto";
@@ -1133,6 +1274,7 @@ if ($respuesta_111 === 'sistema') {
 }
 
 }
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -1462,7 +1604,7 @@ function ocultarMensaje4() {
     
     <ul>
     <li><strong>Preliminares o borradores</strong> (
-    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="8">     
+    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="8">    - 
     <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="8"> 
     ): Incluyen las fases denominadas <em>Straw Man</em> 
     <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="8"> 
@@ -1495,7 +1637,7 @@ function ocultarMensaje4() {
 
     <hr>
     <p>
-    El <strong>SWEBOK V4.0 (2024)</strong> organiza el cuerpo de conocimiento de la ingeniería de software en
+    El <strong>SWEBOK V3.0 (2014)</strong> organiza el cuerpo de conocimiento de la ingeniería de software en
     <strong>
     <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="8">     
     Áreas de Conocimiento</strong> o <em>Knowledge Areas (KA)</em>. Estas áreas representan los principales 
@@ -2038,6 +2180,12 @@ restringirá fuertemente la arquitectura del sistema.
 <?php echo $verificar_111 ?>
     <hr>
     <strong>Se alcanzo el limite de inputs</strong>
+        <hr>
+    <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
+    <br>
+    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
+    <button type="submit"   >Mostrar Solución</button>
+
     </form>
 </div>
 

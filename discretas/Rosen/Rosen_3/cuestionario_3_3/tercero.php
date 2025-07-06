@@ -1378,7 +1378,7 @@ if ($respuesta_121 === '144') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 380vh;
+    height: 425vh;
     }
 </style>
  
@@ -1693,8 +1693,15 @@ c_{ij} = \sum_{q=1}^{n} a_{iq} \cdot b_{qj}
     <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="12">    
   </li>
 </ul>
+    <br>
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_1 ?>
+    <?php echo $verificar_2 ?>
+    <?php echo $verificar_3 ?>
+    <?php echo $verificar_4 ?>
+    <?php echo $verificar_5 ?>
 
-
+    <hr>
 <p><strong>¿Cuántas operaciones en total?</strong></p>
 
 <p>Ya sabemos que hay \( n^2 \) entradas.</p>
@@ -1732,7 +1739,13 @@ c_{ij} = \sum_{q=1}^{n} a_{iq} \cdot b_{qj}
     <p>También podemos analizar la complejidad del algoritmo que describimos en el Capítulo 2 para calcular el producto
     booleano de dos matrices, el cual mostramos como el Algoritmo 2.</p>
 
- 
+      <button type="submit">Enviar</button> 
+<?php echo $verificar_6 ?>
+<?php echo $verificar_7 ?> 
+<?php echo $verificar_8 ?>
+<?php echo $verificar_9 ?>
+<?php echo $verificar_10 ?>
+<hr>
   <h3>ALGORITHM 2 Producto Booleano de Matrices Cero–Uno</h3>
 <p>
     <strong>usar: ∧</strong>
@@ -1805,7 +1818,15 @@ return C {C = [cij] is the Boolean product of A and B}
   <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="4">
    operaciones de bit para calcular \( A \odot B \) usando el Algoritmo 2. ◂</p>
 
-
+  <button type="submit">Enviar</button>
+           <?php echo $verificar_11 ?> 
+            <?php echo $verificar_12 ?>
+<?php echo $verificar_13 ?>
+<?php echo $verificar_14 ?>
+<?php echo $verificar_15 ?>
+<?php echo $verificar_16 ?>
+<?php echo $verificar_17 ?>
+<hr>
     <h3>Multiplicación de Cadenas de Matrices</h3>
 <p>Existe otro problema importante relacionado con la complejidad de la multiplicación de matrices. 
     ¿Cómo se debe calcular el producto de la cadena de matrices \( A_1 A_2 \cdots A_n \) utilizando 
@@ -1817,6 +1838,9 @@ return C {C = [cij] is the Boolean product of A and B}
 
 <p>Nótese que para multiplicar una matriz de tamaño \( m_1 \times m_2 \) con una de \( m_2 \times m_3 \) se realizan \( m_1 m_2 m_3 \) multiplicaciones de enteros al usar el Algoritmo 1.</p>
 
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_18 ?>
+    <hr>
 <h4>Ejemplo 9</h4>
 <p>¿En qué orden deben multiplicarse las matrices \( A_1, A_2 \) y \( A_3 \), donde:</p>
 
@@ -1881,9 +1905,11 @@ multiplicaciones.</p>
 <p>Regresaremos a este problema en el Ejercicio 57 de la Sección 8.1. Los algoritmos para determinar la forma más eficiente de realizar la multiplicación de cadenas de matrices se discuten en [CoLeRiSt09].</p>
 
 
- 
+   <button type="submit">Enviar</button>
+<?php echo $verificar_19 ?>
+<?php echo $verificar_20 ?>
 
-
+    <hr>
     </form>
 </div>
 
@@ -1912,6 +1938,11 @@ multiplicaciones.</p>
     (Capítulo 7). Existen muchos otros paradigmas algorítmicos importantes además de los que se describen en este libro. 
     Consultá libros sobre diseño de algoritmos como [KlTa06] para aprender más sobre ellos.</p>
 
+
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_21 ?>
+    <?php echo $verificar_22 ?>
+    <hr>
     <h4>Algoritmos de Fuerza Bruta</h4>
 
     <p>La <strong>fuerza bruta</strong> es un paradigma algorítmico importante y básico. En un algoritmo de fuerza 
@@ -1942,7 +1973,11 @@ multiplicaciones.</p>
     al diseñar nuevos algoritmos, el objetivo suele ser encontrar uno más eficiente que el de fuerza bruta. Uno de esos 
     problemas se describe en el siguiente ejemplo:</p>
 
-
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_23 ?>
+    <?php echo $verificar_24 ?>
+    <?php echo $verificar_25 ?>
+    <hr>
     <h4>Ejemplo 10</h4>
 
 <p><strong> un algoritmo de fuerza bruta para encontrar el par de puntos más cercanos en un conjunto de \( n \) 
@@ -1968,7 +2003,13 @@ Supongamos que nos dan como entrada los puntos \( (x_1, y_1), (x_2, y_2), \dots,
     posibles y determinando cuál es la menor. (Podemos hacer una pequeña simplificación: en 
     lugar de calcular la distancia, podemos calcular el <em>cuadrado</em> de la distancia, ya 
     que también permite encontrar el par más cercano sin usar raíces cuadradas.)</p>
+    
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_26 ?>
+    <?php echo $verificar_27 ?>
+    <?php echo $verificar_28 ?>
 
+    <hr>
 <p><strong>ALGORITMO 3: Fuerza Bruta para el Par de Puntos Más Cercanos</strong></p>
 <p>
     El algoritmo recibe simplemente una lista de 
@@ -2099,9 +2140,18 @@ return closest pair
     \( ) \). El descubrimiento 
     original de dicho algoritmo, mucho más eficiente que el enfoque de fuerza bruta, fue considerado bastante
     sorprendente.</p>
+
+  <button type="submit">Enviar</button>
+<?php echo $verificar_29 ?>
+<?php echo $verificar_30 ?>
+<?php echo $verificar_31 ?>
+<?php echo $verificar_32 ?>
+<?php echo $verificar_33 ?>
+  <?php echo $verificar_34 ?>
+<?php echo $verificar_35 ?>
+<?php echo $verificar_36 ?>
+<?php echo $verificar_37 ?>
     <hr>
-
-
      <h3>3.3.5 Comprendiendo la Complejidad de los Algoritmos</h3>
 
     <p>La <strong>Tabla 1</strong> muestra algunos términos comunes usados para describir la complejidad temporal 
@@ -2130,7 +2180,13 @@ return closest pair
     (La palabra 
     <input type="text"   value="<?php echo $respuesta_42; ?>" size="9">  
     es una combinación de los términos <em>lineal</em> y <em>logarítmica</em>).</p>
-
+     <button type="submit">Enviar</button>
+<?php echo $verificar_38 ?>
+<?php echo $verificar_39 ?>
+<?php echo $verificar_40 ?>
+<?php echo $verificar_41 ?>
+<?php echo $verificar_42 ?>
+        <hr>
     <h4>Tabla 1. Terminología comúnmente usada para describir la complejidad de algoritmos</h4>
 
 <table border="1" cellpadding="8" cellspacing="0">
@@ -2175,7 +2231,10 @@ return closest pair
     </tr>
   </tbody>
 </table>
-
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_43 ?>
+    <?php echo $verificar_44 ?>
+    <?php echo $verificar_45 ?>
     <hr>
 
     </form>

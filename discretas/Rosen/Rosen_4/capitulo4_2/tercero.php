@@ -1123,8 +1123,8 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-     <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
@@ -1136,7 +1136,7 @@ if ($respuesta_110 === '264') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 377vh;
+    height: 345vh;
     }
 </style>
  
@@ -1439,81 +1439,104 @@ function ocultarMensaje4() {
 </head>
 <body> 
 <div class="seccion izquierda">
-    <form action="./cuarto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <p>Es importante tener una estimación razonable de cuánto tiempo tomará a una computadora resolver un problema. 
-    Por ejemplo, si un algoritmo requiere aproximadamente 10 horas, puede valer la pena usar el tiempo de computadora 
-    (y el dinero) necesario para resolverlo. Pero si requiere aproximadamente 10 mil millones de años, sería irracional
-    usar recursos para implementarlo.</p>
+    <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+   <p>
+    <strong>En el algoritmo,</strong>
+    las operaciones son simplemente una forma de comunicar que siempre que la suma= 1 o 3 entonces s =1,   
+    y suma= 2 o 0 entonces s = 0, y siempre que suma = 2 o 3, el acarreo es 1 y cuando suma= 0 o 1 
+    entonces el acarreo es 0
+   </p>
+   <img src="../../../../img/suma_binario_dos.png" alt="" width="580">
 
-    <p>Uno de los fenómenos más interesantes de la tecnología moderna es el tremendo aumento en la velocidad y memoria
-    de las computadoras. Otro factor importante que reduce el tiempo necesario para resolver problemas en computadoras
-    es el <strong>procesamiento en paralelo</strong>, que consiste en realizar operaciones de manera simultánea.</p>
-
-    <p>Los algoritmos eficientes, incluyendo la mayoría de los algoritmos con complejidad polinomial, se benefician
-    más de las mejoras tecnológicas significativas. Sin embargo, estas mejoras ofrecen poca ayuda para superar la 
-    complejidad de algoritmos de tiempo exponencial o factorial. Gracias al aumento de la velocidad de cómputo, el
-    incremento de memoria, y el uso de algoritmos que aprovechan el procesamiento en paralelo, muchos problemas que 
-    se consideraban imposibles de resolver hace cinco años ahora se resuelven rutinariamente. Y seguramente, dentro 
-    de cinco años, esto seguirá siendo cierto, incluso si los algoritmos usados son intractables.</p>
-    <hr>
-    <strong>Resumen parte interesante:</strong>
-    <h2>¿Qué significa que un problema está en NP?</h2>
-<p><strong>NP</strong> significa <em>Nondeterministic Polynomial time</em> (tiempo polinómico no determinista), pero no te preocupes por el nombre técnico.</p>
-
-<p>La idea central es esta:</p>
-
-<p>Un problema está en <strong>NP</strong> si, aunque no sepamos cómo encontrar la solución rápidamente, <strong>sí podemos verificar una solución rápidamente</strong>, si alguien nos la da.</p>
-
-<h3>Ejemplo fácil:</h3>
-<p>Imagina que alguien te da un <strong>rompecabezas muy difícil</strong>.</p>
+   <h4> ¿Qué representa cada variable?</h4>
 
 <ul>
-  <li>Tú no sabes cómo resolverlo por tu cuenta rápido.</li>
-  <li>Pero si alguien te muestra una solución completa, tú puedes <strong>verificar en poco tiempo</strong> si está bien hecha o no (si todas las piezas encajan).</li>
+  <li><span>\( a_j, b_j \)</span>: son los bits en la posición \( j \) de los números \( a \) y \( b \), respectivamente.</li>
+  <li><span>\( c \)</span>: es el acarreo que proviene de la posición anterior (inicialmente 0).</li>
+  <li><span>\( s_j \)</span>: es el bit de la suma resultante en la posición \( j \).</li>
+  <li><span>\( d \)</span>: es una variable auxiliar que representa el nuevo acarreo. Se calcula como:<br>
+    <span>\[
+    d = \left\lfloor \frac{a_j + b_j + c}{2} \right\rfloor
+    \]</span>
+  </li>
 </ul>
 
-<p>Eso es un problema NP:</p>
+<p>Esto se basa en que en binario:</p>
 <ul>
-  <li>🔸 Difícil de resolver</li>
-  <li>🔹 Fácil de verificar</li>
+  <li>Si \( a_j + b_j + c = 0 \) o \( 1 \): no hay acarreo ⇒ \( d = 0 \).</li>
+  <li>Si \( a_j + b_j + c = 2 \) o \( 3 \): hay acarreo ⇒ \( d = 1 \).</li>
 </ul>
 
-<hr>
+<h4>¿Cómo se calcula el bit de la suma \( s_j \)?</h4>
 
-<h2> ¿Qué es un problema P?</h2>
-<p>Un problema está en la clase <strong>P</strong> si puede resolverse en <strong>tiempo polinómico</strong>. Es decir, existe un algoritmo que lo resuelve "rápido" (rápido en teoría significa: el tiempo de ejecución crece de forma razonable cuando crece el tamaño del input).</p>
-
-<p> <strong>Tiempo polinómico</strong> = como máximo algo así como <code>n</code>, <code>n²</code>, <code>n³</code>, etc.</p>
-
-<p> Estos problemas se consideran <strong>tractables</strong> o <strong>eficientemente resolubles</strong>.</p>
-
-<h3> Ejemplos de problemas en P:</h3>
-<ul>
-  <li>Ordenar una lista (con <code>mergesort</code>, <code>quicksort</code>…)</li>
-  <li>Buscar un elemento en una lista ordenada (búsqueda binaria)</li>
-  <li>Encontrar el camino más corto en un grafo sin pesos negativos (algoritmo de Dijkstra)</li>
-</ul>
-    <hr>
-    <p>
-    <p>
-  <strong>P</strong> incluye todo lo que se puede hacer en tiempo 
-  \( O(n^k) \) para algún \( k \) fijo, pero también acepta tiempos como 
-  \( O(n \log n) \) o \( O(\log n) \), porque siguen siendo eficientes y razonables.
-</p>
-
+<p>Se utiliza la fórmula:</p>
 <p>
-  Por eso, <strong>mergesort</strong> y <strong>búsqueda binaria</strong> son considerados problemas en 
-  <strong>P</strong>, es decir, <em>eficientemente resolubles</em>.
+\[
+s_j = a_j + b_j + c - 2d
+\]
 </p>
-<hr>
 
+<p>Esto es equivalente a tomar el <strong>bit menos significativo</strong> de la suma \( a_j + b_j + c \), es decir:</p>
 
+<ul>
+  <li>Si la suma total es 0 o 2 ⇒ \( s_j = 0 \)</li>
+  <li>Si la suma total es 1 o 3 ⇒ \( s_j = 1 \)</li>
+</ul>
 
+<p>En otras palabras, es equivalente a:</p>
+<p>
+\[
+s_j = (a_j + b_j + c) \bmod 2
+\]
+</p>
 
+<p>Pero se hace usando la resta \( a_j + b_j + c - 2d \), ya que previamente se ha calculado \( d \) como el cociente de la división entre 2.</p>
+    <hr>
 
+    <h4>Ejemplo 9</h4>
+    
+    <p><strong>¿Cuántas sumas de bits se requieren al usar el Algoritmo 2 para sumar dos enteros con \( n \) bits (o menos) 
+    en sus representaciones binarias?</strong></p>
+
+    <p><strong>Solución:</strong> Dos enteros se suman agregando sucesivamente pares de bits y, cuando ocurre, 
+    un acarreo. Sumar cada par de bits junto con el acarreo requiere <strong>dos sumas de bits</strong>. Por lo 
+    tanto, el número total de sumas de bits utilizadas es menor que el doble del número de bits en la expansión.</p>
+
+    <p>En consecuencia, el número de sumas de bits que utiliza el Algoritmo 2 para sumar dos enteros de 
+    \( n \) bits es \( \mathcal{O}(n) \). ◂</p>
+
+    <hr>
+
+    <h4>Algoritmo de Multiplicación</h4>
+
+    <p>A continuación, consideremos la <strong>multiplicación</strong> de dos enteros de \( n \) bits, \( a \) y \( b \). 
+    El algoritmo convencional (utilizado al multiplicar con lápiz y papel) funciona como sigue:</p>
+
+    <p>Usando la ley distributiva, tenemos que:</p>
+
+    <p>
+    \[
+    ab = a(b_0 2^0 + b_1 2^1 + \cdots + b_{n-1} 2^{n-1}) = a(b_0 2^0) + a(b_1 2^1) + \cdots + a(b_{n-1} 2^{n-1}).
+    \]
+    </p>
+
+    <p>Podemos calcular \( ab \) usando esta ecuación. Primero, notamos que:</p>
+
+    <ul>
+    <li>\( ab_j = a \) si \( b_j = 1 \),</li>
+    <li>\( ab_j = 0 \) si \( b_j = 0 \).</li>
+    </ul>
+
+    <p>Cada vez que multiplicamos un término por 2, desplazamos su expansión binaria una posición a la izquierda y 
+    añadimos un cero al final de la expansión.</p>
+
+    <p>En consecuencia, podemos obtener \( ab_j 2^j \) desplazando la expansión binaria de \( ab_j \) \( j \) 
+    posiciones a la izquierda, es decir, añadiendo \( j \) bits de cero al final de dicha expansión.</p>
+
+    <p>Finalmente, obtenemos \( ab \) sumando los \( n \) enteros \( ab_j 2^j \), para \( j = 0, 1, 2, \dots, n - 1 \).</p>
+   <img src="../../../../img/binario.png" alt="" width="580">
 
  
-  
     </form>
 </div>
 
@@ -1521,7 +1544,153 @@ function ocultarMensaje4() {
 
 
 <div class="seccion derecha">
-    <form action="./cuarto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <h4>Algoritmo 3: Multiplicación de Enteros</h4>
+
+<pre><code>
+ALGORITHM 3 Multiplication of Integers.
+procedure multiply(a, b: positive integers)
+{the binary expansions of a and b are (a_{n−1}a_{n−2} … a_1a_0)_2
+ and (b_{n−1}b_{n−2} … b_1b_0)_2, respectively}
+for j := 0 to n − 1
+    if b_j = 1 then c_j := a shifted j places
+    else c_j := 0
+{c_0, c_1,… , c_{n−1} are the partial products}
+p := 0
+for j := 0 to n − 1
+    p := add(p, c_j)
+return p {p is the value of ab}
+</code></pre>
+
+<p>El <strong>Ejemplo 10</strong> ilustra el uso de este algoritmo.</p>
+
+<h4>Ejemplo 10</h4>
+<p><strong>Encuentra el producto de \( a = (110)_2 \) y \( b = (101)_2 \).</strong></p>
+
+<p><strong>Solución:</strong> Primero notamos que:</p>
+
+<p>
+\[
+ab_0 \cdot 2^0 = (110)_2 \cdot 1 \cdot 2^0 = (110)_2,
+\]
+\[
+ab_1 \cdot 2^1 = (110)_2 \cdot 0 \cdot 2^1 = (0000)_2,
+\]
+\[
+ab_2 \cdot 2^2 = (110)_2 \cdot 1 \cdot 2^2 = (11000)_2.
+\]
+</p>
+
+<p>Para encontrar el producto, sumamos \( (110)_2 \), \( (0000)_2 \) y \( (11000)_2 \).</p>
+
+<p>Realizando estas sumas (usando el Algoritmo 2, incluyendo ceros iniciales cuando sea necesario) obtenemos que:</p>
+
+<p>
+\[
+ab = (11110)_2.
+\]
+</p>
+
+<p>Esta multiplicación se muestra en la <strong>Figura 2</strong>. ◂</p>
+
+<hr>
+
+ 
+
+<p>Con \( a = (110)_2 \) y \( b = (101)_2 \), los bits de \( b \) son:</p>
+
+<ul>
+  <li>\( b_0 = 1 \Rightarrow c_0 = a \cdot 2^0 = (110)_2 \) <em>(sin desplazamiento)</em></li>
+  <li>\( b_1 = 0 \Rightarrow c_1 = 0 \)</li>
+  <li>\( b_2 = 1 \Rightarrow c_2 = a \cdot 2^2 = (11000)_2 \) <em>(desplazado 2 posiciones)</em></li>
+</ul>
+    con  \( b_0 \) se cumple la condicion de desplazar, pero \(2^0=1\), entonces no ocurre desplanzamiento  
+    <hr>
+    <p> <strong>\( n \)</strong> es la cantidad de dígitos binarios (bits)</p>
+
+    <p><strong>Más formalmente:</strong></p>
+
+    <p>Si tienes un número binario como:</p>
+
+    <p>\[
+    a = (a_{n-1} a_{n-2} \dots a_1 a_0)_2
+    \]</p>
+
+    <p>Entonces \( n \) es el número total de bits en la representación binaria de \( a \) (y también de 
+    \( b \), si asumimos que ambos números tienen la misma cantidad de bits para facilitar el análisis).</p>
+
+    <h4> Ejemplo</h4>
+
+    <p>Si \( a = (110)_2 \), entonces:</p>
+    <ul>
+    <li>Tiene 3 dígitos binarios → \( n = 3 \)</li>
+    </ul>
+
+    <p>Si \( b = (10101)_2 \), entonces:</p>
+    <ul>
+    <li>Tiene 5 dígitos binarios → \( n = 5 \)</li>
+    </ul>
+
+    <hr>
+    <h4> ¿Qué es “shifted j places”?</h4>
+
+    <p>Significa aplicar un <strong>desplazamiento a la izquierda</strong> (<em>left shift</em>) en binario.</p>
+
+    <p>En binario, desplazar un número a la izquierda una vez <strong>multiplica por 2</strong>. Desplazar \( j \) veces equivale a multiplicar por \( 2^j \).</p>
+
+    <h5>Ejemplo:</h5>
+
+    <p>Supón que:</p>
+
+    <ul>
+    <li>\( a = (110)_2 = 6 \)</li>
+    <li>\( j = 2 \)</li>
+    </ul>
+
+    <p>Entonces:</p>
+
+    <p>Desplazar \( a \) dos posiciones a la izquierda → agregar dos ceros a la derecha:</p>
+
+    <p>\[
+    (110)_2 \rightarrow (11000)_2 = 24
+    \]</p>
+
+    <p>Así que:</p>
+
+    <p>\[
+    c_2 := a \cdot 2^2 = 6 \cdot 4 = 24
+    \]</p>
+
+    <p>En binario:</p>
+
+    <p>\[
+    (11000)_2 = 24_{10}
+    \]</p>
+
+    <hr>
+
+
+    <h4>¿Por qué se expande \( b \) y no \( a \) en el algoritmo de multiplicación binaria?</h4>
+
+<p>En el algoritmo clásico de multiplicación binaria, como el que usamos en lápiz y papel, el número que se expande es \( b \), no \( a \).</p>
+
+<h4>¿Qué significa "expandir" en este contexto?</h4>
+
+<p>Expandir un número quiere decir escribirlo como una suma de potencias de 2, usando sus bits. Por ejemplo, si \( b = (101)_2 \), eso significa:</p>
+
+<p>\[
+b = 1 \cdot 2^2 + 0 \cdot 2^1 + 1 \cdot 2^0 = 5
+\]</p>
+
+<p>Entonces, cuando calculamos \( a \cdot b \), podemos usar la propiedad distributiva:</p>
+
+<p>\[
+a \cdot b = a \cdot (1 \cdot 2^2 + 0 \cdot 2^1 + 1 \cdot 2^0) = a \cdot 2^2 + a \cdot 2^0
+\]</p>
+
+<h4>¿Qué se hace con \( a \)?</h4>
+
+<p>El número \( a \) no se expande. En lugar de eso, simplemente se copian versiones desplazadas de \( a \) (hacia la izquierda) cada vez que encontramos un bit 1 en \( b \).</p>
 
     </form>
 </div>

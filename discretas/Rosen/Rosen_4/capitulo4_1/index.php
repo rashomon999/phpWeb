@@ -1504,64 +1504,72 @@ function ocultarMensaje4() {
     <hr> 
     <h1>Divisibilidad y Aritmética Modular</h1>
 
-<h2>4.1.1 Introducción</h2>
-<p>
-  Las ideas que desarrollaremos en esta sección están basadas en la noción de divisibilidad.
-  La división de un entero por un entero positivo produce un cociente y un residuo.
-  Trabajar con estos residuos conduce a la aritmética modular, que desempeña un papel importante en las matemáticas y que se utiliza en toda la informática.
-  Discutiremos algunas aplicaciones importantes de la aritmética modular más adelante en este capítulo,
-  incluyendo la generación de números pseudorrandom, la asignación de ubicaciones de memoria de computadora a archivos,
-  la construcción de dígitos de verificación y el cifrado de mensajes.
-</p>
+    <h2>4.1.1 Introducción</h2>
+    <p>
+    Las ideas que desarrollaremos en esta sección están basadas en la noción de divisibilidad.
+    La división de un entero por un entero positivo produce un cociente y un residuo.
+    Trabajar con estos residuos conduce a la aritmética modular, que desempeña un papel importante en las matemáticas y 
+    que se utiliza en toda la informática.
+    Discutiremos algunas aplicaciones importantes de la aritmética modular más adelante en este capítulo,
+    incluyendo la generación de números pseudorrandom, la asignación de ubicaciones de memoria de computadora a archivos,
+    la construcción de dígitos de verificación y el cifrado de mensajes.
+    </p>
 
-<h2>4.1.2 División</h2>
-<p>
-  Cuando un entero se divide entre un segundo entero no nulo, el cociente puede o no ser un entero.
-  Por ejemplo, \( 12 \div 3 = 4 \) es un entero, mientras que \( 11 \div 4 = 2.75 \) no lo es. Esto lleva a la <strong>Definición 1</strong>.
-</p>
+    <h2>4.1.2 División</h2>
+    <p>
+    Cuando un entero se divide entre un segundo entero no nulo, el cociente puede o no ser un entero.
+     Por ejemplo, \( 12 \div 3 = 4 \) es un entero, mientras que \( 11 \div 4 = 2.75 \) no lo es. Esto lleva a la <strong>Definición 1</strong>.
+    </p>
 
-<h3>Definición 1</h3>
-<p>
-  Si \( a \) y \( b \) son enteros con \( a \neq 0 \), decimos que \( a \) divide a \( b \) si existe un entero \( c \) tal que
-  \( b = ac \) (o equivalentemente, si \( b/a \) es un entero).
-  Cuando \( a \) divide a \( b \) decimos que \( a \) es un factor o divisor de \( b \),
-  y que \( b \) es un múltiplo de \( a \).
-  La notación \( a \mid b \) denota que \( a \) divide a \( b \).
-  Escribimos \( a \nmid b \) cuando \( a \) no divide a \( b \).
-</p>
+    <h3>Definición 1</h3>
+    <p>
+    Si \( a \) y \( b \) son enteros con \( a \neq 0 \), decimos que \( a \) divide a \( b \) si existe un entero 
+    \( c \) tal que
+    \( b = ac \) (o equivalentemente, si \( b/a \) es un entero).
+    Cuando \( a \) divide a \( b \) decimos que \( a \) es un factor o divisor de \( b \),
+    y que \( b \) es un múltiplo de \( a \).
+    La notación \( a \mid b \) denota que \( a \) divide a \( b \).
+    Escribimos \( a \nmid b \) cuando \( a \) no divide a \( b \).
+    </p>
 
-<p><strong>Observación:</strong> Podemos expresar \( a \mid b \) usando cuantificadores como
- \( \exists c(ac = b) \), donde el universo del discurso es el conjunto de los enteros.</p>
+    <p><strong>Observación:</strong> Podemos expresar \( a \mid b \) usando cuantificadores como
+    \( \exists c(ac = b) \), donde el universo del discurso es el conjunto de los enteros.</p>
 
-<p>
-  En la <strong>Figura 1</strong>, una recta numérica indica qué enteros son divisibles por el entero positivo \( d \).
-</p>
+    <p>
+    En la <strong>Figura 1</strong>, una recta numérica indica qué enteros son divisibles por el entero positivo \( d \).
+    </p>
 
-<h3>Ejemplo 1</h3>
-<p><strong>Determinar si</strong> \( 3 \mid 7 \) <strong>y si</strong> \( 3 \mid 12 \).</p>
+    <h3>Ejemplo 1</h3>
+    <p><strong>Determinar si</strong> \( 3 \mid 7 \) <strong>y si</strong> \( 3 \mid 12 \).</p>
 
-<p><strong>Solución:</strong> Vemos que \( 3 \nmid 7 \), porque \( 7 \div 3 \) no es un entero.  
-Por otro lado, \( 3 \mid 12 \) porque \( 12 \div 3 = 4 \). ◂</p>
+    <p><strong>Solución:</strong> Vemos que \( 3 \nmid 7 \), porque \( 7 \div 3 \) no es un entero.  
+    Por otro lado, \( 3 \mid 12 \) porque \( 12 \div 3 = 4 \). ◂</p>
 
-<h3>Ejemplo 2</h3>
-<p><strong>Sean</strong> \( n \) <strong>y</strong> \( d \) <strong>enteros positivos. ¿Cuántos enteros positivos no mayores que</strong> \( n \) <strong>son divisibles por</strong> \( d \)?</p>
+    <h3>Ejemplo 2</h3>
+    <p><strong>Sean</strong> \( n \) <strong>y</strong> \( d \) <strong>enteros positivos. ¿Cuántos enteros positivos no 
+    mayores que</strong> \( n \) <strong>son divisibles por</strong> \( d \)?</p>
 
-<p><strong>Solución:</strong>  
-Los enteros positivos divisibles por \( d \) son todos los enteros de la forma \( dk \), donde \( k \) es un entero positivo.
-Por lo tanto, el número de enteros positivos divisibles por \( d \) que no exceden \( n \) es igual al número de enteros \( k \) con
-\( 0 &lt; dk \leq n \), o con \( 0 &lt; k \leq n/d \).
-Por lo tanto, hay \( \left\lfloor n/d \right\rfloor \) enteros positivos no mayores que \( n \) que son divisibles por \( d \). ◂
-</p>
+    <p><strong>Solución:</strong>  
+    Los enteros positivos divisibles por \( d \) son todos los enteros de la forma \( dk \), donde \( k \) es un entero 
+    positivo.
+    Por lo tanto, el número de enteros positivos divisibles por \( d \) que no exceden \( n \) es igual al número de enteros 
+    \( k \) con
+    \( 0 &lt; dk \leq n \), o con \( 0 &lt; k \leq n/d \).
+    Por lo tanto, hay \( \left\lfloor n/d \right\rfloor \) enteros positivos no mayores que \( n \) que son divisibles por 
+    \( d \). ◂
+    </p>
 
-<h3>Teorema 1</h3>
-<p><strong>Sean</strong> \( a \), \( b \) <strong>y</strong> \( c \) <strong>enteros, donde</strong> \( a \neq 0 \). <strong>Entonces:</strong></p>
-<ul>
-  <li>(i) si \( a \mid b \) y \( a \mid c \), entonces \( a \mid (b + c) \);</li>
-  <li>(ii) si \( a \mid b \), entonces \( a \mid bc \) para todo entero \( c \);</li>
-  <li>(iii) si \( a \mid b \) y \( b \mid c \), entonces \( a \mid c \).</li>
-</ul>
+    <h3>Teorema 1</h3>
+    <p><strong>Sean</strong> \( a \), \( b \) <strong>y</strong> \( c \) <strong>enteros, donde</strong> \( a \neq 0 \). 
+    <strong>Entonces:</strong></p>
+    <ul>
+    <li>(i) si \( a \mid b \) y \( a \mid c \), entonces \( a \mid (b + c) \);</li>
+    <li>(ii) si \( a \mid b \), entonces \( a \mid bc \) para todo entero \( c \);</li>
+    <li>(iii) si \( a \mid b \) y \( b \mid c \), entonces \( a \mid c \).</li>
+    </ul>
 
-<p><em>(Figura: representación de los múltiplos de \( d \) en la recta numérica: ... \( -3d, -2d, -d, 0, d, 2d, 3d \) ...)</em></p>
+    <p><em>(Figura: representación de los múltiplos de \( d \) en la recta numérica: ... 
+    \( -3d, -2d, -d, 0, d, 2d, 3d \) ...)</em></p>
     <img src="../../img/capitulo_4.png" alt="">
     </form>
 </div>

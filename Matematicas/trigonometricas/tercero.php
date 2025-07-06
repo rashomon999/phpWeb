@@ -641,6 +641,32 @@ function ocultarMensaje4() {
     <br>
     <button type="submit">enviar</button>
     <?php echo $verificar_2 ?>
+
+
+
+    <button onmousedown="mostrarImagen()" onmouseup="ocultarImagen()">Explicacion</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada" src="../../img/teorema.png" style="display: none; max-width: 100%" width="560">
+
+    <script>
+        function mostrarImagen() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada');
+
+        // Mostrar la imagen
+        imagenMostrada.style.display = 'block';
+        }
+
+        function ocultarImagen() {
+        var imagenMostrada = document.getElementById('imagenMostrada');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada.style.display = 'none';
+        }
+    </script>
+
+
+
     <hr>
     <strong>Teorema del seno: </strong>
     introduzcalo: <br><br>
@@ -704,6 +730,8 @@ function ocultarMensaje4() {
     <br>
     <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
     <button type="submit"   >Mostrar Solución</button>
+    <hr>
+    <strong>siguiente pagina</strong>
     
     </form>
 </div>

@@ -1123,8 +1123,8 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-     <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
@@ -1136,7 +1136,7 @@ if ($respuesta_110 === '264') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 377vh;
+    height: 345vh;
     }
 </style>
  
@@ -1439,81 +1439,173 @@ function ocultarMensaje4() {
 </head>
 <body> 
 <div class="seccion izquierda">
-    <form action="./cuarto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <p>Es importante tener una estimación razonable de cuánto tiempo tomará a una computadora resolver un problema. 
-    Por ejemplo, si un algoritmo requiere aproximadamente 10 horas, puede valer la pena usar el tiempo de computadora 
-    (y el dinero) necesario para resolverlo. Pero si requiere aproximadamente 10 mil millones de años, sería irracional
-    usar recursos para implementarlo.</p>
+    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <h4>Ejemplo 7</h4>
+    <p><strong>Encuentra las expansiones octal y hexadecimal de \( (11111010111100)_2 \), y las expansiones 
+    binarias de \( (765)_8 \) y \( (A8D)_{16} \).</strong></p>
 
-    <p>Uno de los fenómenos más interesantes de la tecnología moderna es el tremendo aumento en la velocidad y memoria
-    de las computadoras. Otro factor importante que reduce el tiempo necesario para resolver problemas en computadoras
-    es el <strong>procesamiento en paralelo</strong>, que consiste en realizar operaciones de manera simultánea.</p>
+    <p><strong>Solución:</strong></p>
 
-    <p>Los algoritmos eficientes, incluyendo la mayoría de los algoritmos con complejidad polinomial, se benefician
-    más de las mejoras tecnológicas significativas. Sin embargo, estas mejoras ofrecen poca ayuda para superar la 
-    complejidad de algoritmos de tiempo exponencial o factorial. Gracias al aumento de la velocidad de cómputo, el
-    incremento de memoria, y el uso de algoritmos que aprovechan el procesamiento en paralelo, muchos problemas que 
-    se consideraban imposibles de resolver hace cinco años ahora se resuelven rutinariamente. Y seguramente, dentro 
-    de cinco años, esto seguirá siendo cierto, incluso si los algoritmos usados son intractables.</p>
-    <hr>
-    <strong>Resumen parte interesante:</strong>
-    <h2>¿Qué significa que un problema está en NP?</h2>
-<p><strong>NP</strong> significa <em>Nondeterministic Polynomial time</em> (tiempo polinómico no determinista), pero no te preocupes por el nombre técnico.</p>
+    <p>Para convertir \( (11111010111100)_2 \) a notación octal, agrupamos los dígitos binarios en bloques de tres, 
+    añadiendo ceros iniciales al bloque más a la izquierda si es necesario. Estos bloques, de izquierda a derecha, son:</p>
 
-<p>La idea central es esta:</p>
-
-<p>Un problema está en <strong>NP</strong> si, aunque no sepamos cómo encontrar la solución rápidamente, <strong>sí podemos verificar una solución rápidamente</strong>, si alguien nos la da.</p>
-
-<h3>Ejemplo fácil:</h3>
-<p>Imagina que alguien te da un <strong>rompecabezas muy difícil</strong>.</p>
-
-<ul>
-  <li>Tú no sabes cómo resolverlo por tu cuenta rápido.</li>
-  <li>Pero si alguien te muestra una solución completa, tú puedes <strong>verificar en poco tiempo</strong> si está bien hecha o no (si todas las piezas encajan).</li>
-</ul>
-
-<p>Eso es un problema NP:</p>
-<ul>
-  <li>🔸 Difícil de resolver</li>
-  <li>🔹 Fácil de verificar</li>
-</ul>
-
-<hr>
-
-<h2> ¿Qué es un problema P?</h2>
-<p>Un problema está en la clase <strong>P</strong> si puede resolverse en <strong>tiempo polinómico</strong>. Es decir, existe un algoritmo que lo resuelve "rápido" (rápido en teoría significa: el tiempo de ejecución crece de forma razonable cuando crece el tamaño del input).</p>
-
-<p> <strong>Tiempo polinómico</strong> = como máximo algo así como <code>n</code>, <code>n²</code>, <code>n³</code>, etc.</p>
-
-<p> Estos problemas se consideran <strong>tractables</strong> o <strong>eficientemente resolubles</strong>.</p>
-
-<h3> Ejemplos de problemas en P:</h3>
-<ul>
-  <li>Ordenar una lista (con <code>mergesort</code>, <code>quicksort</code>…)</li>
-  <li>Buscar un elemento en una lista ordenada (búsqueda binaria)</li>
-  <li>Encontrar el camino más corto en un grafo sin pesos negativos (algoritmo de Dijkstra)</li>
-</ul>
-    <hr>
     <p>
+    \[
+    011,\ 111,\ 010,\ 111,\ 100,
+    \]
+    </p>
+
+    <p>que corresponden a los dígitos octales 3, 7, 2, 7 y 4, respectivamente. Por lo tanto:</p>
+
     <p>
-  <strong>P</strong> incluye todo lo que se puede hacer en tiempo 
-  \( O(n^k) \) para algún \( k \) fijo, pero también acepta tiempos como 
-  \( O(n \log n) \) o \( O(\log n) \), porque siguen siendo eficientes y razonables.
-</p>
+    \[
+    (11111010111100)_2 = (37274)_8.
+    \]
+    </p>
 
-<p>
-  Por eso, <strong>mergesort</strong> y <strong>búsqueda binaria</strong> son considerados problemas en 
-  <strong>P</strong>, es decir, <em>eficientemente resolubles</em>.
-</p>
-<hr>
+    <p>Para convertir \( (11111010111100)_2 \) a notación hexadecimal, agrupamos los dígitos binarios en 
+    bloques de cuatro, añadiendo ceros iniciales si es necesario. Los bloques, de izquierda a derecha, son:</p>
+
+    <p>
+    \[
+    0011,\ 1110,\ 1011,\ 1100,
+    \]
+    </p>
+
+    <p>que corresponden a los dígitos hexadecimales 3, E, B y C, respectivamente. Por lo tanto:</p>
+
+    <p>
+    \[
+    (11111010111100)_2 = (3EBC)_{16}.
+    \]
+    </p>
+
+    <p>Para convertir \( (765)_8 \) a notación binaria, reemplazamos cada dígito octal por un bloque de tres 
+    dígitos binarios. Los bloques son:</p>
+
+    <p>
+    \[
+    111,\ 110,\ 101.
+    \]
+    </p>
+
+    <p>Por lo tanto:</p>
+
+    <p>
+    \[
+    (765)_8 = (111110101)_2.
+    \]
+    </p>
+
+    <p>Para convertir \( (A8D)_{16} \) a notación binaria, reemplazamos cada dígito hexadecimal por un bloque de 
+    cuatro dígitos binarios. Los bloques son:</p>
+
+    <p>
+    \[
+    1010,\ 1000,\ 1101.
+    \]
+    </p>
+
+    <p>Por lo tanto:</p>
+
+    <p>
+    \[
+    (A8D)_{16} = (101010001101)_2.
+    \]
+    </p>
+
+    <hr>
+    <strong>parentesis</strong>
+    <h4>¿Da lo mismo hacer la expansión que usar la tabla de equivalencias?</h4>
 
 
+    <p><strong>ambos métodos llegan al mismo resultado</strong>, pero por <em>caminos distintos</em>:</p>
+
+    <h4>🔹 Método 1: Usar divisiones sucesivas (algoritmo)</h4>
+    <p>Este es el método formal que se llama en el libro <em>"construcción de la expansión en base \( b \)"</em>.</p>
+
+    <p><strong>Ejemplo:</strong> convertir \( (12345)_{10} \) a base 8</p>
+
+    <pre><code>
+    12345 ÷ 8 = 1543 resto 1  
+    1543  ÷ 8 = 192  resto 7  
+    192   ÷ 8 = 24   resto 0  
+    24    ÷ 8 = 3    resto 0  
+    3     ÷ 8 = 0    resto 3  
+    </code></pre>
+
+    <p>Dígitos: de abajo hacia arriba → \( (30071)_8 \)</p>
+
+    <p>Esto es:</p>
+    <p>
+    \[
+    12345 = 3 \cdot 8^4 + 0 \cdot 8^3 + 0 \cdot 8^2 + 7 \cdot 8^1 + 1 \cdot 8^0
+    \]
+    </p>
+
+    <h4>🔹 Método 2: Usar una tabla de conversión (solo para potencias de 2, 8, 16)</h4>
+    <p>Este método aplica cuando conviertes entre:</p>
+    <ul>
+    <li>Binario ↔ Octal (agrupando de a 3 bits)</li>
+    <li>Binario ↔ Hexadecimal (agrupando de a 4 bits)</li>
+    </ul>
+
+    <p><strong>Ejemplo:</strong> convertir \( (11111010111100)_2 \) a octal</p>
+
+    <p>Agrupas los bits en grupos de 3 (de derecha a izquierda):</p>
+
+    <pre><code>
+    011 111 010 111 100
+    </code></pre>
+
+    <p>Tabla:</p>
+    <ul>
+    <li>011 → 3</li>
+    <li>111 → 7</li>
+    <li>010 → 2</li>
+    <li>111 → 7</li>
+    <li>100 → 4</li>
+    </ul>
+
+    <p>Resultado: \( (37274)_8 \)</p>
+
+    <hr>
+
+    <h4> Entonces, sí:</h4>
+    <p>Ambos métodos te llevan a la misma representación numérica en la nueva base.</p>
+
+    <h4> Diferencia práctica:</h4>
+    <ul>
+    <li>El <strong>algoritmo por divisiones</strong> funciona para <em>cualquier base</em>.</li>
+    <li>El <strong>método por tabla</strong> (agrupación de bits) funciona <em>solo entre bases relacionadas 
+    por potencias de 2</em> (como 2, 8, 16).</li>
+    </ul>
+
+    <hr>
+
+    <h3>4.2.3 Algoritmos para Operaciones con Enteros</h3>
+
+    <p>Los algoritmos para realizar operaciones con enteros usando sus expansiones binarias son extremadamente 
+    importantes en la aritmética computacional. Describiremos algoritmos para la <strong>suma</strong> y la 
+    <strong>multiplicación</strong> de dos enteros expresados en notación binaria. También analizaremos la 
+    <em>complejidad computacional</em> de estos algoritmos, en términos del número real de operaciones a nivel de 
+    bit que se utilizan.</p>
+
+    <p>A lo largo de esta discusión, supongamos que las expansiones binarias de \( a \) y \( b \) son:</p>
+
+    <p>
+    \[
+    a = (a_{n-1}a_{n-2} \dots a_1a_0)_2, \quad b = (b_{n-1}b_{n-2} \dots b_1b_0)_2,
+    \]
+    </p>
+
+    <p>de modo que \( a \) y \( b \) tienen cada uno \( n \) bits (rellenando con bits igual a 0 al inicio de alguna 
+    de las dos expansiones si es necesario).</p>
+
+    <p>Mediremos la complejidad de los algoritmos para la aritmética con enteros en función del número de bits en 
+    estos números.</p>
 
 
-
-
- 
-  
     </form>
 </div>
 
@@ -1521,8 +1613,137 @@ function ocultarMensaje4() {
 
 
 <div class="seccion derecha">
-    <form action="./cuarto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <h4>Algoritmo de Suma</h4>
 
+    <p>Consideremos el problema de sumar dos enteros en notación binaria. Un procedimiento para realizar la suma 
+    puede basarse en el método usual de sumar números con lápiz y papel. Este método consiste en sumar pares de 
+    dígitos binarios junto con los acarreos, cuando ocurren, para calcular la suma de dos enteros. Este procedimiento 
+    se especificará ahora en detalle.</p>
+
+    <p>Para sumar \( a \) y \( b \), primero sumamos sus bits más a la derecha. Esto da:</p>
+
+    <p>
+    \[
+    a_0 + b_0 = c_0 \cdot 2 + s_0,
+    \]
+    </p>
+
+    <p>donde \( s_0 \) es el bit más a la derecha en la expansión binaria de \( a + b \), y \( c_0 \) es el acarreo, 
+    que puede ser 0 o 1.</p>
+
+    <p>Luego se suman el siguiente par de bits y el acarreo:</p>
+
+    <p>
+    \[
+    a_1 + b_1 + c_0 = c_1 \cdot 2 + s_1,
+    \]
+    </p>
+
+    <p>donde \( s_1 \) es el siguiente bit (de derecha a izquierda) en la expansión binaria de \( a + b \), y \( c_1 \) 
+    es el acarreo resultante.</p>
+
+    <p>Este proceso continúa, sumando los bits correspondientes en las dos expansiones binarias junto con el acarreo, 
+    para determinar el siguiente bit (de derecha a izquierda) en la expansión binaria de \( a + b \).</p>
+
+    <p>En la última etapa, se suman \( a_{n-1}, b_{n-1} \) y \( c_{n-2} \) para obtener:</p>
+
+    <p>
+    \[
+    a_{n-1} + b_{n-1} + c_{n-2} = c_{n-1} \cdot 2 + s_{n-1}.
+    \]
+    </p>
+
+    <p>El bit más significativo de la suma es \( s_n = c_{n-1} \). Este procedimiento produce la expansión binaria 
+    de la suma, es decir:</p>
+ 
+    <p>
+    \[
+    a + b = (s_n s_{n-1} s_{n-2} \dots s_1 s_0)_2.
+    \]
+    </p>
+
+    <img src="../../../../img/explicacion.png" alt="" width="580">
+    <img src="../../../../img/suma_binario.png" alt="" width="580">
+
+    <h4>Ejemplo 8</h4>
+    <p><strong>Suma \( a = (1110)_2 \) y \( b = (1011)_2 \).</strong></p>
+
+    <p><strong>Solución:</strong> Siguiendo el procedimiento especificado en el algoritmo, primero notamos que:</p>
+
+    <p>
+    \[
+    a_0 + b_0 = 0 + 1 = 0 \cdot 2 + 1,
+    \]
+    </p>
+
+    <p>por lo tanto, \( c_0 = 0 \) y \( s_0 = 1 \).</p>
+
+    <p>Luego,</p>
+
+    <p>
+    \[
+    a_1 + b_1 + c_0 = 1 + 1 + 0 = 1 \cdot 2 + 0,
+    \]
+    </p>
+
+    <p>entonces \( c_1 = 1 \) y \( s_1 = 0 \).</p>
+
+    <p>Continuando,</p>
+
+    <p>
+    \[
+    a_2 + b_2 + c_1 = 1 + 0 + 1 = 1 \cdot 2 + 0,
+    \]
+    </p>
+
+    <p>de modo que \( c_2 = 1 \) y \( s_2 = 0 \).</p>
+
+    <p>Finalmente,</p>
+
+    <p>
+    \[
+    a_3 + b_3 + c_2 = 1 + 1 + 1 = 1 \cdot 2 + 1,
+    \]
+    </p> 
+
+    <p>entonces \( c_3 = 1 \) y \( s_3 = 1 \). Esto significa que el bit más significativo de la suma 
+    es \( s_4 = c_3 = 1 \).</p>
+
+    <p>Por lo tanto, la suma es:</p>
+
+    <p>
+    \[
+    s = a + b = (11001)_2.
+    \]
+    </p>
+
+    <p>Esta suma se muestra en la <strong>Figura 1</strong>, donde los acarreos están indicados en color:</p>
+
+    <img src="../../../../img/acarreo.png" alt="">
+    <img src="../../../../img/acarreo_dos.png" alt="" width="480">
+    <br><br>
+ 
+ 
+    <h4>Algoritmo 2: Suma de Enteros</h4>
+
+<pre><code>
+ALGORITHM 2 Addition of Integers.
+procedure add(a, b: positive integers)
+{the binary expansions of a and b are (a_{n−1}a_{n−2} … a_1a_0)_2
+ and (b_{n−1}b_{n−2} … b_1b_0)_2, respectively}
+c := 0
+for j := 0 to n − 1
+    d := ⌊(a_j + b_j + c)∕2⌋
+    s_j := a_j + b_j + c − 2d
+    c := d
+s_n := c
+return (s_0, s_1,… , s_n) {the binary expansion of the sum is (s_n s_{n−1} … s_0)_2}
+</code></pre>
+
+<p>A continuación, se analizará el número de sumas de bits utilizadas por el Algoritmo 2.</p>
+
+</p>
     </form>
 </div>
 
@@ -1531,7 +1752,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="cuarto.php"
+        href="tercero.php"
         role="button"
         width="50px"
         height="50px"

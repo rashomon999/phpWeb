@@ -11,39 +11,25 @@ $respuesta_30 = ''; $respuesta_31 = ''; $respuesta_32 = ''; $respuesta_33 = ''; 
 $respuesta_39 = ''; $respuesta_40 = ''; $respuesta_41 = ''; $respuesta_42 = ''; $respuesta_43 = '';
 $respuesta_44 = ''; $respuesta_45 = ''; $respuesta_46 = ''; $respuesta_47 = ''; $respuesta_48 = '';
 $respuesta_49 = ''; $respuesta_50 = ''; $respuesta_51 = ''; $respuesta_52 = ''; $respuesta_53 = '';
-$respuesta_54 = ''; $respuesta_55 = ''; $respuesta_56 = '';
-$respuesta_57 = ''; $respuesta_58 = ''; $respuesta_59 = ''; $respuesta_60 = '';
-$respuesta_61 = '';$respuesta_62 = '';$respuesta_63 = '';$respuesta_64 = '';
-$respuesta_65 = '';$respuesta_66 = '';$respuesta_67 = '';$respuesta_68 = '';
-$respuesta_69 = '';$respuesta_70 = '';$respuesta_71 = '';$respuesta_72 = '';
-$respuesta_73 = '';$respuesta_74 = '';$respuesta_75 = '';$respuesta_76 = '';
-$respuesta_77 = '';$respuesta_78 = '';$respuesta_79 = '';$respuesta_80 = '';
-$respuesta_81 = '';$respuesta_82 = '';$respuesta_83 = '';$respuesta_84 = '';
+$respuesta_54 = ''; $respuesta_55 = ''; $respuesta_56 = '';$respuesta_57 = ''; $respuesta_58 = ''; $respuesta_59 = ''; $respuesta_60 = '';
+$respuesta_61 = '';$respuesta_62 = '';$respuesta_63 = '';$respuesta_64 = '';$respuesta_65 = '';$respuesta_66 = '';$respuesta_67 = '';$respuesta_68 = '';
+$respuesta_69 = '';$respuesta_70 = '';$respuesta_71 = '';$respuesta_72 = '';$respuesta_73 = '';$respuesta_74 = '';$respuesta_75 = '';$respuesta_76 = '';
+$respuesta_77 = '';$respuesta_78 = '';$respuesta_79 = '';$respuesta_80 = '';$respuesta_81 = '';$respuesta_82 = '';$respuesta_83 = '';$respuesta_84 = '';
 $respuesta_85 = '';$respuesta_86 = '';$respuesta_87 = '';$respuesta_88 = ''; $respuesta_89 = '';
-$respuesta_90 = '';
-$respuesta_91 = '';
-$respuesta_92 = '';
-$respuesta_93 = '';
-$respuesta_94 = '';
-$respuesta_95 = '';
-$respuesta_96 = '';
-$respuesta_97 = '';
-$respuesta_98 = '';
-$respuesta_99 = '';
-$respuesta_100 = '';
-$respuesta_101 = '';
-$respuesta_102 = '';
-$respuesta_103 = '';
-$respuesta_104 = '';
-$respuesta_105 = '';
-$respuesta_106 = '';
-$respuesta_107 = '';
-$respuesta_108 = '';
-$respuesta_109 = '';
-$respuesta_110 = '';
+$respuesta_90 = ''; $respuesta_91 = '';$respuesta_92 = '';$respuesta_93 = '';$respuesta_94 = '';$respuesta_95 = '';$respuesta_96 = '';$respuesta_97 = '';$respuesta_98 = '';
+$respuesta_99 = '';$respuesta_100 = '';$respuesta_101 = '';$respuesta_102 = '';$respuesta_103 = '';$respuesta_104 = '';$respuesta_105 = '';
+$respuesta_106 = '';$respuesta_107 = '';$respuesta_108 = '';$respuesta_109 = '';$respuesta_110 = '';
 
+/////
+ // Agrega estas variables junto con las demás (antes del if $_POST)
+$respuesta_111 = ''; $respuesta_112 = ''; $respuesta_113 = ''; $respuesta_114 = ''; $respuesta_115 = ''; 
+$respuesta_116 = ''; $respuesta_117 = ''; $respuesta_118 = ''; $respuesta_119 = ''; $respuesta_120 = ''; 
+$respuesta_121 = ''; $respuesta_122 = '';
 
- 
+$verificar_111 = ''; $verificar_112 = ''; $verificar_113 = ''; $verificar_114 = ''; $verificar_115 = ''; 
+$verificar_116 = ''; $verificar_117 = ''; $verificar_118 = ''; $verificar_119 = ''; $verificar_120 = ''; 
+$verificar_121 = ''; $verificar_122 = '';
+////
 
 $verificar_1 = ''; $verificar_2 = ''; $verificar_3 = '';  $verificar_3_2 = ''; $verificar_4 = ''; $verificar_5 = ''; 
 $verificar_6 = ''; $verificar_7 = '';  $verificar_8 = ''; $verificar_9 = ''; $verificar_10 = ''; 
@@ -59,36 +45,170 @@ $verificar_49 = ''; $verificar_50 = ''; $verificar_51 = ''; $verificar_52 = ''; 
 $verificar_54 = ''; $verificar_55 = '';
 $verificar_56 = ''; $verificar_57 = ''; $verificar_58 = ''; $verificar_59 = ''; $verificar_60 = ''; 
 $verificar_61 = ''; $verificar_62 = ''; $verificar_63 = ''; $verificar_64 = ''; $verificar_65 = '';
- $verificar_66 = ''; $verificar_67 = ''; $verificar_68 = ''; $verificar_69 = ''; $verificar_70 = '';
-  $verificar_71 = ''; $verificar_72 = ''; $verificar_73 = ''; $verificar_74 = ''; $verificar_75 = '';
-   $verificar_76 = ''; $verificar_77 = ''; $verificar_78 = ''; $verificar_79 = ''; $verificar_80 = '';
-    $verificar_81 = ''; $verificar_82 = ''; $verificar_83 = ''; $verificar_84 = ''; $verificar_85 = '';
-     $verificar_86 = ''; $verificar_87 = ''; $verificar_88 = '';
-     $verificar_89 = '';
-     $verificar_90 = '';
-     $verificar_91 = '';
-     $verificar_92 = '';
-     $verificar_93 = '';
-     $verificar_94 = '';
-     $verificar_95 = '';
-     $verificar_96 = '';
-     $verificar_97 = '';
-     $verificar_98 = '';
-     $verificar_99 = '';
-     $verificar_100 = '';
-     $verificar_101 = '';
-     $verificar_102 = '';
-     $verificar_103 = '';
-     $verificar_104 = '';
-     $verificar_105 = '';
-     $verificar_106 = '';
-     $verificar_107 = '';
-     $verificar_108 = '';
-     $verificar_109 = '';
-     $verificar_110 = '';
+$verificar_66 = ''; $verificar_67 = ''; $verificar_68 = ''; $verificar_69 = ''; $verificar_70 = '';
+$verificar_71 = ''; $verificar_72 = ''; $verificar_73 = ''; $verificar_74 = ''; $verificar_75 = '';
+$verificar_76 = ''; $verificar_77 = ''; $verificar_78 = ''; $verificar_79 = ''; $verificar_80 = '';
+$verificar_81 = ''; $verificar_82 = ''; $verificar_83 = ''; $verificar_84 = ''; $verificar_85 = '';
+$verificar_86 = ''; $verificar_87 = ''; $verificar_88 = '';$verificar_89 = ''; $verificar_90 = '';$verificar_91 = '';
+$verificar_92 = '';$verificar_93 = '';$verificar_94 = ''; $verificar_95 = '';
+$verificar_96 = ''; $verificar_97 = ''; $verificar_98 = ''; $verificar_99 = ''; $verificar_100 = '';
+$verificar_101 = '';$verificar_102 = '';$verificar_103 = '';$verificar_104 = '';$verificar_105 = '';
+$verificar_106 = '';$verificar_107 = '';$verificar_108 = '';$verificar_109 = '';$verificar_110 = '';
      
 
+$mostrar_solucion = '';
 if ($_POST) {
+    $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
+    
+    if ($mostrar_solucion === 'mostrar_solucion') {
+        // Establecer todas las respuestas correctas para las tablas de multiplicar
+        
+        // Tabla del 12
+        $respuesta_111 = '24'; 
+        $respuesta_112 = '36';
+        $respuesta_113 = '48';
+        $respuesta_114 = '60';
+        $respuesta_115 = '72';
+        $respuesta_116 = '84';
+        $respuesta_117 = '96';
+        $respuesta_118 = '108';
+        $respuesta_119 = '120';
+        $respuesta_120 = '132';
+        $respuesta_121 = '144';
+        
+        // Tabla del 13
+        $respuesta_1 = '26';
+        $respuesta_2 = '39';
+        $respuesta_3 = '52';
+        $respuesta_4 = '65';
+        $respuesta_5 = '78';
+        $respuesta_6 = '91';
+        $respuesta_7 = '104';
+        $respuesta_8 = '117';
+        $respuesta_9 = '130';
+        $respuesta_10 = '143';
+        $respuesta_11 = '156';
+        
+        // Tabla del 14
+        $respuesta_12 = '28';
+        $respuesta_13 = '42';
+        $respuesta_14 = '56';
+        $respuesta_15 = '70';
+        $respuesta_16 = '84';
+        $respuesta_17 = '98';
+        $respuesta_18 = '112';
+        $respuesta_19 = '126';
+        $respuesta_20 = '140';
+        $respuesta_21 = '154';
+        $respuesta_22 = '168';
+        
+        // Tabla del 15
+        $respuesta_23 = '30';
+        $respuesta_24 = '45';
+        $respuesta_25 = '60';
+        $respuesta_26 = '75';
+        $respuesta_27 = '90';
+        $respuesta_28 = '105';
+        $respuesta_29 = '120';
+        $respuesta_30 = '135';
+        $respuesta_31 = '150';
+        $respuesta_32 = '165';
+        $respuesta_33 = '180';
+        
+        // Tabla del 16
+        $respuesta_34 = '32';
+        $respuesta_35 = '48';
+        $respuesta_36 = '64';
+        $respuesta_37 = '80';
+        $respuesta_38 = '96';
+        $respuesta_39 = '112';
+        $respuesta_40 = '128';
+        $respuesta_41 = '144';
+        $respuesta_42 = '160';
+        $respuesta_43 = '176';
+        $respuesta_44 = '192';
+        
+        // Tabla del 17
+        $respuesta_45 = '34';
+        $respuesta_46 = '51';
+        $respuesta_47 = '68';
+        $respuesta_48 = '85';
+        $respuesta_49 = '102';
+        $respuesta_50 = '119';
+        $respuesta_51 = '136';
+        $respuesta_52 = '153';
+        $respuesta_53 = '170';
+        $respuesta_54 = '187';
+        $respuesta_55 = '204';
+        
+        // Tabla del 18
+        $respuesta_56 = '36';
+        $respuesta_57 = '54';
+        $respuesta_58 = '72';
+        $respuesta_59 = '90';
+        $respuesta_60 = '108';
+        $respuesta_61 = '126';
+        $respuesta_62 = '144';
+        $respuesta_63 = '162';
+        $respuesta_64 = '180';
+        $respuesta_65 = '198';
+        $respuesta_66 = '216';
+        
+        // Tabla del 19
+        $respuesta_67 = '38';
+        $respuesta_68 = '57';
+        $respuesta_69 = '76';
+        $respuesta_70 = '95';
+        $respuesta_71 = '114';
+        $respuesta_72 = '133';
+        $respuesta_73 = '152';
+        $respuesta_74 = '171';
+        $respuesta_75 = '190';
+        $respuesta_76 = '209';
+        $respuesta_77 = '228';
+        
+        // Tabla del 20
+        $respuesta_78 = '40';
+        $respuesta_79 = '60';
+        $respuesta_80 = '80';
+        $respuesta_81 = '100';
+        $respuesta_82 = '120';
+        $respuesta_83 = '140';
+        $respuesta_84 = '160';
+        $respuesta_85 = '180';
+        $respuesta_86 = '200';
+        $respuesta_87 = '220';
+        $respuesta_88 = '240';
+        
+        // Tabla del 21
+        $respuesta_89 = '42';
+        $respuesta_90 = '63';
+        $respuesta_91 = '84';
+        $respuesta_92 = '105';
+        $respuesta_93 = '126';
+        $respuesta_94 = '147';
+        $respuesta_95 = '168';
+        $respuesta_96 = '189';
+        $respuesta_97 = '210';
+        $respuesta_98 = '231';
+        $respuesta_99 = '252';
+        
+        // Tabla del 22
+        $respuesta_100 = '44';
+        $respuesta_101 = '66';
+        $respuesta_102 = '88';
+        $respuesta_103 = '110';
+        $respuesta_104 = '132';
+        $respuesta_105 = '154';
+        $respuesta_106 = '176';
+        $respuesta_107 = '198';
+        $respuesta_108 = '220';
+        $respuesta_109 = '242';
+        $respuesta_110 = '264';
+        
+        // Marcar todas como correctas
+        $verificar_1 = $verificar_2 = $verificar_3 = /* ... todas las variables de verificación ... */ $verificar_122 = "correcto";
+    } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
    if ($respuesta_1 === '26') {  
        $verificar_1 = "correcto";
@@ -1114,7 +1234,106 @@ if ($respuesta_110 === '264') {
     $verificar_110 = "incorrecto";
 }
 
+// Tabla del 12
+$respuesta_111 = isset($_POST['respuesta_111']) ? $_POST['respuesta_111'] : '';
+if ($respuesta_111 === '24') {  
+    $verificar_111 = "correcto";
+} elseif ($respuesta_111 === '') {
+    $verificar_111 = '';
+} else {
+    $verificar_111 = "incorrecto";
+}
 
+$respuesta_112 = isset($_POST['respuesta_112']) ? $_POST['respuesta_112'] : '';
+if ($respuesta_112 === '36') {  
+    $verificar_112 = "correcto";
+} elseif ($respuesta_112 === '') {
+    $verificar_112 = '';
+} else {
+    $verificar_112 = "incorrecto";
+}
+
+$respuesta_113 = isset($_POST['respuesta_113']) ? $_POST['respuesta_113'] : '';
+if ($respuesta_113 === '48') {  
+    $verificar_113 = "correcto";
+} elseif ($respuesta_113 === '') {
+    $verificar_113 = '';
+} else {
+    $verificar_113 = "incorrecto";
+}
+
+$respuesta_114 = isset($_POST['respuesta_114']) ? $_POST['respuesta_114'] : '';
+if ($respuesta_114 === '60') {  
+    $verificar_114 = "correcto";
+} elseif ($respuesta_114 === '') {
+    $verificar_114 = '';
+} else {
+    $verificar_114 = "incorrecto";
+}
+
+$respuesta_115 = isset($_POST['respuesta_115']) ? $_POST['respuesta_115'] : '';
+if ($respuesta_115 === '72') {  
+    $verificar_115 = "correcto";
+} elseif ($respuesta_115 === '') {
+    $verificar_115 = '';
+} else {
+    $verificar_115 = "incorrecto";
+}
+
+$respuesta_116 = isset($_POST['respuesta_116']) ? $_POST['respuesta_116'] : '';
+if ($respuesta_116 === '84') {  
+    $verificar_116 = "correcto";
+} elseif ($respuesta_116 === '') {
+    $verificar_116 = '';
+} else {
+    $verificar_116 = "incorrecto";
+}
+
+$respuesta_117 = isset($_POST['respuesta_117']) ? $_POST['respuesta_117'] : '';
+if ($respuesta_117 === '96') {  
+    $verificar_117 = "correcto";
+} elseif ($respuesta_117 === '') {
+    $verificar_117 = '';
+} else {
+    $verificar_117 = "incorrecto";
+}
+
+$respuesta_118 = isset($_POST['respuesta_118']) ? $_POST['respuesta_118'] : '';
+if ($respuesta_118 === '108') {  
+    $verificar_118 = "correcto";
+} elseif ($respuesta_118 === '') {
+    $verificar_118 = '';
+} else {
+    $verificar_118 = "incorrecto";
+}
+
+$respuesta_119 = isset($_POST['respuesta_119']) ? $_POST['respuesta_119'] : '';
+if ($respuesta_119 === '120') {  
+    $verificar_119 = "correcto";
+} elseif ($respuesta_119 === '') {
+    $verificar_119 = '';
+} else {
+    $verificar_119 = "incorrecto";
+}
+
+$respuesta_120 = isset($_POST['respuesta_120']) ? $_POST['respuesta_120'] : '';
+if ($respuesta_120 === '132') {  
+    $verificar_120 = "correcto";
+} elseif ($respuesta_120 === '') {
+    $verificar_120 = '';
+} else {
+    $verificar_120 = "incorrecto";
+}
+
+$respuesta_121 = isset($_POST['respuesta_121']) ? $_POST['respuesta_121'] : '';
+if ($respuesta_121 === '144') {  
+    $verificar_121 = "correcto";
+} elseif ($respuesta_121 === '') {
+    $verificar_121 = '';
+} else {
+    $verificar_121 = "incorrecto";
+}
+}
 }
 ?>
 <!DOCTYPE html>
@@ -1123,8 +1342,8 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-     <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../style.css"> 
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
@@ -1136,7 +1355,7 @@ if ($respuesta_110 === '264') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 377vh;
+    height: 270vh;
     }
 </style>
  
@@ -1178,211 +1397,180 @@ function handleSubmit(event) {
 }
 
 function actualizarFormula() {
-    // Obtener los valores de los inputs
-   
-    var f = document.getElementById('respuesta_11').value || "";
- 
-
-
-    // Construir la fórmula dinámica
-    var formula = ` \\  ${f} \\, `;
-
-    // Actualizar el contenido de la fórmula en el DOM
-    document.getElementById('formula').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
+    var f = document.getElementById('respuesta_1').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula1').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
- 
 
 function actualizarFormula2() {
-    // Obtener los valores de los inputs
-   
-    var f = document.getElementById('respuesta_13').value || "";
-  
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-
-    // Actualizar el contenido de la fórmula en el DOM
+    var f = document.getElementById('respuesta_2').value || "";
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula2').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
 
-
-
 function actualizarFormula3() {
-    // Obtener los valores de los inputs
-   
-    var f = document.getElementById('respuesta_27').value || "";
- 
-
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-
-    // Actualizar el contenido de la fórmula en el DOM
+    var f = document.getElementById('respuesta_3').value || "";
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula3').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
 
 function actualizarFormula4() {
-    // Obtener los valores de los inputs
-    var f = document.getElementById('respuesta_29').value || "";
-   
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var f = document.getElementById('respuesta_4').value || "";
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula4').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
-
 
 function actualizarFormula5() {
-    // Obtener los valores de los inputs
-    var f = document.getElementById('respuesta_30').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var f = document.getElementById('respuesta_5').value || "";
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula5').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
-
-
 
 function actualizarFormula6() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_6').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula6').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
 
-
 function actualizarFormula7() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_7').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula7').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
 
 function actualizarFormula8() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_8').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula8').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
-
 
 function actualizarFormula9() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_9').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula9').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
-
-
 
 function actualizarFormula10() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_10').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula10').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
-
 
 function actualizarFormula11() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_11').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula11').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
 
-
 function actualizarFormula12() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_12').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula12').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
 
-    // Re-renderizar MathJax para mostrar los cambios
+function actualizarFormula13() {
+    var f = document.getElementById('respuesta_13').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula13').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula14() {
+    var f = document.getElementById('respuesta_14').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula14').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula15() {
+    var f = document.getElementById('respuesta_15').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula15').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula16() {
+    var f = document.getElementById('respuesta_16').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula16').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula17() {
+    var f = document.getElementById('respuesta_17').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula17').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula18() {
+    var f = document.getElementById('respuesta_18').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula18').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula19() {
+    var f = document.getElementById('respuesta_19').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula19').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula20() {
+    var f = document.getElementById('respuesta_20').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula20').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
         MathJax.typeset();
     }
@@ -1439,81 +1627,110 @@ function ocultarMensaje4() {
 </head>
 <body> 
 <div class="seccion izquierda">
-    <form action="./cuarto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <p>Es importante tener una estimación razonable de cuánto tiempo tomará a una computadora resolver un problema. 
-    Por ejemplo, si un algoritmo requiere aproximadamente 10 horas, puede valer la pena usar el tiempo de computadora 
-    (y el dinero) necesario para resolverlo. Pero si requiere aproximadamente 10 mil millones de años, sería irracional
-    usar recursos para implementarlo.</p>
+    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+      <h2>Scrum Master</h2>
+  <p>
+    El Scrum Master es responsable de establecer Scrum como se define en la Guía de Scrum. Lo hace
+    ayudando a todos a comprender la teoría y la práctica de Scrum, tanto dentro del Scrum Team como de
+    la organización.
+  </p>
+  <p>
+    El Scrum Master es responsable de lograr la efectividad del Scrum Team. Lo hace apoyando al Scrum
+    Team en la mejora de sus prácticas, dentro del marco de trabajo de Scrum.
+    Los Scrum Masters son verdaderos líderes que sirven al Scrum Team y a la organización en general.
+  </p>
+  <p>
+    El Scrum Master sirve al Scrum Team de varias maneras, que incluyen:
+  </p>
+  <ul>
+    <li>Guiar a los miembros del equipo en ser autogestionados y multifuncionales;</li>
+    <li>Ayudar al Scrum Team a enfocarse en crear Increments de alto valor que cumplan con la Definición de Terminado;</li>
+    <li>Procurar la eliminación de impedimentos para el progreso del Scrum Team; y,</li>
+    <li>Asegurarse de que todos los eventos de Scrum se lleven a cabo y sean positivos, productivos y se mantengan dentro de los límites de tiempo recomendados en esta Guía.</li>
+  </ul>
 
-    <p>Uno de los fenómenos más interesantes de la tecnología moderna es el tremendo aumento en la velocidad y memoria
-    de las computadoras. Otro factor importante que reduce el tiempo necesario para resolver problemas en computadoras
-    es el <strong>procesamiento en paralelo</strong>, que consiste en realizar operaciones de manera simultánea.</p>
+  <p>
+    El Scrum Master sirve al Product Owner de varias maneras, que incluyen:
+  </p>
+  <ul>
+    <li>Ayudar a encontrar técnicas para una definición efectiva de Objetivos del Producto y la gestión del Product Backlog;</li>
+    <li>Ayudar al Scrum Team a comprender la necesidad de tener elementos del Product Backlog claros y concisos;</li>
+    <li>Ayudar a establecer una planificación empírica de productos para un entorno complejo; y,</li>
+    <li>Facilitar la colaboración de los interesados según se solicite o necesite.</li>
+  </ul>
 
-    <p>Los algoritmos eficientes, incluyendo la mayoría de los algoritmos con complejidad polinomial, se benefician
-    más de las mejoras tecnológicas significativas. Sin embargo, estas mejoras ofrecen poca ayuda para superar la 
-    complejidad de algoritmos de tiempo exponencial o factorial. Gracias al aumento de la velocidad de cómputo, el
-    incremento de memoria, y el uso de algoritmos que aprovechan el procesamiento en paralelo, muchos problemas que 
-    se consideraban imposibles de resolver hace cinco años ahora se resuelven rutinariamente. Y seguramente, dentro 
-    de cinco años, esto seguirá siendo cierto, incluso si los algoritmos usados son intractables.</p>
-    <hr>
-    <strong>Resumen parte interesante:</strong>
-    <h2>¿Qué significa que un problema está en NP?</h2>
-<p><strong>NP</strong> significa <em>Nondeterministic Polynomial time</em> (tiempo polinómico no determinista), pero no te preocupes por el nombre técnico.</p>
-
-<p>La idea central es esta:</p>
-
-<p>Un problema está en <strong>NP</strong> si, aunque no sepamos cómo encontrar la solución rápidamente, <strong>sí podemos verificar una solución rápidamente</strong>, si alguien nos la da.</p>
-
-<h3>Ejemplo fácil:</h3>
-<p>Imagina que alguien te da un <strong>rompecabezas muy difícil</strong>.</p>
-
-<ul>
-  <li>Tú no sabes cómo resolverlo por tu cuenta rápido.</li>
-  <li>Pero si alguien te muestra una solución completa, tú puedes <strong>verificar en poco tiempo</strong> si está bien hecha o no (si todas las piezas encajan).</li>
-</ul>
-
-<p>Eso es un problema NP:</p>
-<ul>
-  <li>🔸 Difícil de resolver</li>
-  <li>🔹 Fácil de verificar</li>
-</ul>
-
-<hr>
-
-<h2> ¿Qué es un problema P?</h2>
-<p>Un problema está en la clase <strong>P</strong> si puede resolverse en <strong>tiempo polinómico</strong>. Es decir, existe un algoritmo que lo resuelve "rápido" (rápido en teoría significa: el tiempo de ejecución crece de forma razonable cuando crece el tamaño del input).</p>
-
-<p> <strong>Tiempo polinómico</strong> = como máximo algo así como <code>n</code>, <code>n²</code>, <code>n³</code>, etc.</p>
-
-<p> Estos problemas se consideran <strong>tractables</strong> o <strong>eficientemente resolubles</strong>.</p>
-
-<h3> Ejemplos de problemas en P:</h3>
-<ul>
-  <li>Ordenar una lista (con <code>mergesort</code>, <code>quicksort</code>…)</li>
-  <li>Buscar un elemento en una lista ordenada (búsqueda binaria)</li>
-  <li>Encontrar el camino más corto en un grafo sin pesos negativos (algoritmo de Dijkstra)</li>
-</ul>
-    <hr>
-    <p>
-    <p>
-  <strong>P</strong> incluye todo lo que se puede hacer en tiempo 
-  \( O(n^k) \) para algún \( k \) fijo, pero también acepta tiempos como 
-  \( O(n \log n) \) o \( O(\log n) \), porque siguen siendo eficientes y razonables.
-</p>
-
-<p>
-  Por eso, <strong>mergesort</strong> y <strong>búsqueda binaria</strong> son considerados problemas en 
-  <strong>P</strong>, es decir, <em>eficientemente resolubles</em>.
-</p>
-<hr>
+  <p>
+    El Scrum Master sirve a la organización de varias maneras, que incluyen:
+  </p>
+  <ul>
+    <li>Liderar, capacitar y guiar a la organización en su adopción de Scrum;</li>
+    <li>Planificar y asesorar implementaciones de Scrum dentro de la organización;</li>
+    <li>Ayudar a los empleados y los interesados a comprender y aplicar un enfoque empírico para el trabajo complejo; y,</li>
+    <li>Eliminar las barreras entre los interesados y los Scrum Teams.</li>
+  </ul>
 
 
+  <h2>Eventos de Scrum</h2>
+  <p>
+    El Sprint es un contenedor para todos los demás eventos. Cada evento en Scrum es una oportunidad
+    formal para inspeccionar y adaptar los artefactos Scrum. Estos eventos están diseñados específicamente
+    para habilitar la transparencia requerida. No operar cualquier evento según lo prescrito resulta en la
+    pérdida de oportunidades para inspeccionar y adaptarse. Los eventos se utilizan en Scrum para crear
+    regularidad y minimizar la necesidad de reuniones no definidas en Scrum.
+    Lo óptimo es que todos los eventos se celebren al mismo tiempo y en el mismo lugar para reducir la
+    complejidad.
+  </p>
+
+  <h3>El Sprint</h3>
+  <p>
+    Los Sprints son el corazón de Scrum, donde las ideas se convierten en valor.
+    Son eventos de duración fija de un mes o menos para crear consistencia. Un nuevo Sprint comienza
+    inmediatamente después de la conclusión del Sprint anterior.
+    Todo el trabajo necesario para lograr el Objetivo del Producto, incluido la Sprint Planning, Daily Scrums,
+    Sprint Review y Sprint Retrospective, ocurre dentro de los Sprints.
+  </p>
+  <p>Durante el Sprint:</p>
+  <ul>
+    <li>No se realizan cambios que pongan en peligro el Objetivo del Sprint;</li>
+    <li>La calidad no disminuye;</li>
+    <li>El Product Backlog se refina según sea necesario; y,</li>
+    <li>El alcance se puede aclarar y renegociar con el Product Owner a medida que se aprende más.</li>
+  </ul>
+  <p>
+    Los Sprints permiten la previsibilidad al garantizar la inspección y adaptación del progreso hacia un
+    Objetivo del Producto al menos cada mes calendario. Cuando el horizonte de un Sprint es demasiado
+    largo, el Objetivo del Sprint puede volverse inválido, la complejidad puede crecer y el riesgo puede
+    aumentar. Se pueden emplear Sprints más cortos para generar más ciclos de aprendizaje y limitar el
+    riesgo de costo y esfuerzo a un período de tiempo menor. Cada Sprint puede considerarse un proyecto
+    corto.
+  </p>
+  <p>
+    Existen varias prácticas para pronosticar el progreso, como el trabajo pendiente (burn‐downs), trabajo
+    completado (burn‐ups) o flujos acumulativos (cumulative flows). Si bien han demostrado su utilidad, no
+    reemplazan la importancia del empirismo. En entornos complejos, se desconoce lo que sucederá. Solo lo
+    que ya ha sucedido se puede utilizar para la toma de decisiones con miras al futuro.
+  </p>
+  <p>
+    Un Sprint podría cancelarse si el Objetivo del Sprint se vuelve obsoleto. Solo el Product Owner tiene la
+    autoridad para cancelar el Sprint.
+  </p>
 
 
 
 
- 
-  
+
+    <h2>Sprint Planning</h2>
+  <p>
+    La Sprint Planning inicia el Sprint al establecer el trabajo que se realizará para el Sprint. El Scrum Team
+    crea este plan resultante mediante trabajo colaborativo.
+  </p>
+
+   <p>
+    El Product Owner se asegura de que los asistentes estén preparados para discutir los elementos más
+    importantes del Product Backlog y cómo se relacionan con el Objetivo del Producto. El Scrum Team
+    también puede invitar a otras personas a asistir a la Sprint Planning para brindar asesoramiento.
+  </p>
+
     </form>
 </div>
 
@@ -1521,8 +1738,114 @@ function ocultarMensaje4() {
 
 
 <div class="seccion derecha">
-    <form action="./cuarto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+      <p>La Sprint Planning aborda los siguientes temas:</p>
 
+  <h3>Tema uno: ¿Por qué es valioso este Sprint?</h3>
+  <p>
+    El Product Owner propone cómo el producto podría Incrementar su valor y utilidad en el Sprint actual.
+    Luego, todo el Scrum Team colabora para definir un Objetivo del Sprint que comunica por qué el Sprint
+    es valioso para los interesados. El Objetivo del Sprint debe completarse antes de que termine la Sprint
+    Planning.
+  </p>
+
+  <h3>Tema dos: ¿Qué se puede hacer en este Sprint?</h3>
+  <p>
+    A través de una conversación con el Product Owner, los Developers seleccionan elementos del Product
+    Backlog para incluirlos en el Sprint actual. El Scrum Team puede refinar estos elementos durante este
+    proceso, lo que aumenta la comprensión y la confianza.
+  </p>
+  <p>
+    Seleccionar cuánto se puede completar dentro de un Sprint puede ser un desafío. Sin embargo, cuanto
+    más sepan los Developers sobre su desempeño pasado, su capacidad actual y su Definición de
+    Terminado, más confiados estarán en sus pronósticos para el Sprint.
+  </p>
+
+  <h3>Tema tres: ¿Cómo se realizará el trabajo elegido?</h3>
+  <p>
+    Para cada elemento del Product Backlog seleccionado, los Developers planifican el trabajo necesario
+    para crear un Increment que cumpla con la Definición de Terminado. A menudo, esto se hace
+    descomponiendo los elementos del Product Backlog en elementos de trabajo más pequeños de un día o
+    menos. La forma de hacerlo queda a criterio exclusivo de los Developers. Nadie más les dice cómo
+    convertir los elementos del Product Backlog en Increments de valor.
+  </p>
+
+  <p>
+    El Objetivo del Sprint, los elementos del Product Backlog seleccionados para el Sprint, más el plan para
+    entregarlos se denominan juntos Sprint Backlog.
+  </p>
+  <p>
+    La Sprint Planning tiene un límite de tiempo de máximo ocho horas para un Sprint de un mes. Para
+    Sprints más cortos, el evento suele ser de menor duración.
+  </p>
+
+
+    <h2>Daily Scrum</h2>
+  <p>
+    El propósito de la Daily Scrum es inspeccionar el progreso hacia el Objetivo del Sprint y adaptar el Sprint
+    Backlog según sea necesario, ajustando el trabajo planificado entrante.
+  </p>
+  <p>
+    La Daily Scrum es un evento de 15 minutos para los Developers del Scrum Team. Para reducir la
+    complejidad, se lleva a cabo a la misma hora y en el mismo lugar todos los días hábiles del Sprint. Si el
+    Product Owner o Scrum Master están trabajando activamente en elementos del Sprint Backlog,
+    participan como Developers.
+  </p>
+  <p>
+    Los Developers pueden seleccionar la estructura y las técnicas que deseen, siempre que su Daily Scrum
+    se centre en el progreso hacia el Objetivo del Sprint y produzca un plan viable para el siguiente día de
+    trabajo. Esto crea enfoque y mejora la autogestión.
+  </p>
+  <p>
+    Las Daily Scrums mejoran la comunicación, identifican impedimentos, promueven la toma rápida de
+    decisiones y, en consecuencia, eliminan la necesidad de otras reuniones.
+  </p>
+  <p>
+    La Daily Scrum no es el único momento en el que los Developers pueden ajustar su plan. A menudo se
+    reúnen durante el día para discusiones más detalladas sobre cómo adaptar o volver a planificar el resto
+    del trabajo del Sprint.
+  </p>
+
+  <h2>Sprint Review</h2>
+  <p>
+    El propósito de la Sprint Review es inspeccionar el resultado del Sprint y determinar futuras
+    adaptaciones. El Scrum Team presenta los resultados de su trabajo a los interesados clave y se discute el
+    progreso hacia el Objetivo del Producto.
+  </p>
+  <p>
+    Durante el evento, el Scrum Team y los interesados revisan lo que se logró en el Sprint y lo que ha
+    cambiado en su entorno. Con base en esta información, los asistentes colaboran sobre qué hacer a
+    continuación. El Product Backlog también se puede ajustar para satisfacer nuevas oportunidades. La
+    Sprint Review es una sesión de trabajo y el Scrum Team debe evitar limitarla a una presentación.
+  </p>
+  <p>
+    La Sprint Review es el penúltimo evento del Sprint y tiene un límite de tiempo de máximo cuatro horas
+    para un Sprint de un mes. Para Sprints más cortos, el evento suele ser de menor duración.
+  </p>
+
+  <h2>Sprint Retrospective</h2>
+  <p>
+    El propósito de la Sprint Retrospective es planificar formas de aumentar la calidad y la efectividad.
+  </p>
+  <p>
+    El Scrum Team inspecciona cómo fue el último Sprint con respecto a las personas, las interacciones, los
+    procesos, las herramientas y su Definición de Terminado. Los elementos inspeccionados suelen variar
+    según el ámbito del trabajo. Se identifican los supuestos que los llevaron por mal camino y se exploran
+    sus orígenes. El Scrum Team analiza qué salió bien durante el Sprint, qué problemas encontró y cómo se
+    resolvieron (o no) esos problemas.
+  </p>
+  <p>
+    El Scrum Team identifica los cambios más útiles para mejorar su efectividad. Las mejoras más
+    impactantes se abordan lo antes posible. Incluso se pueden agregar al Sprint Backlog para el próximo
+    Sprint.
+  </p>
+  <p>
+    La Sprint Retrospective concluye el Sprint. Tiene un tiempo limitado a máximo tres horas para un Sprint
+    de un mes. Para Sprints más cortos, el evento suele ser de menor duración.
+  </p>
+
+
+  
     </form>
 </div>
 
@@ -1531,7 +1854,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="cuarto.php"
+        href="tercero.php"
         role="button"
         width="50px"
         height="50px"

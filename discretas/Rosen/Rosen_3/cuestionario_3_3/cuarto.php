@@ -210,7 +210,7 @@ if ($_POST) {
         $verificar_1 = $verificar_2 = $verificar_3 = /* ... todas las variables de verificación ... */ $verificar_122 = "correcto";
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '26') {  
+   if ($respuesta_1 === '>') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -220,7 +220,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === '39') {  
+   if ($respuesta_2 === '=') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -230,7 +230,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === '52') {  
+   if ($respuesta_3 === '<') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -240,7 +240,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === '65') {  
+   if ($respuesta_4 === 'polinomial') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -250,7 +250,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === '78') {  
+   if ($respuesta_5 === 'exponencial') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -260,7 +260,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === '91') {  
+   if ($respuesta_6 === 'polinomial') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -270,7 +270,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === '104') {  
+   if ($respuesta_7 === 'solucion') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -280,7 +280,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === '117') {  
+   if ($respuesta_8 === 'corto') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -290,7 +290,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === '130') {  
+   if ($respuesta_9 === 'intratables') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -300,7 +300,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === '143') {  
+   if ($respuesta_10 === 'practicamente') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -310,7 +310,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === '156') {  
+   if ($respuesta_11 === 'no existe') {  
        $verificar_11 = "correcto";
    } elseif ($respuesta_11 === '') {
        $verificar_11 = '';
@@ -321,7 +321,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
      $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-     if ($respuesta_12 === '28') {  
+     if ($respuesta_12 === 'no resolubles') {  
          $verificar_12 = "correcto";
      } elseif ($respuesta_12 === '') {
          $verificar_12 = '';
@@ -331,7 +331,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la segunda pregunta
      $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-     if ($respuesta_13 === '42') { 
+     if ($respuesta_13 === 'polinomial') { 
          $verificar_13 = "correcto";
      } elseif ($respuesta_13 === '') {
          $verificar_13 = '';
@@ -341,7 +341,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la tercera pregunta
      $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-     if ($respuesta_14 === '56') {  
+     if ($respuesta_14 === 'polinomial') {  
          $verificar_14 = "correcto";
      } elseif ($respuesta_14 === '') {
          $verificar_14 = '';
@@ -351,7 +351,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la cuarta pregunta
      $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-     if ($respuesta_15 === '70') { 
+     if ($respuesta_15 === 'NP') { 
          $verificar_15 = "correcto";
      } elseif ($respuesta_15 === '') {
          $verificar_15 = '';
@@ -361,7 +361,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la quinta pregunta
      $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-     if ($respuesta_16 === '84') {  
+     if ($respuesta_16 === 'tratable') {  
          $verificar_16 = "correcto";
      } elseif ($respuesta_16 === '') {
          $verificar_16 = '';
@@ -371,7 +371,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la sexta pregunta
      $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-     if ($respuesta_17 === '98') {  
+     if ($respuesta_17 === 'no determinista') {  
          $verificar_17 = "correcto";
      } elseif ($respuesta_17 === '') {
          $verificar_17 = '';
@@ -381,7 +381,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la séptima pregunta
      $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-     if ($respuesta_18 === '112') {  
+     if ($respuesta_18 === 'si alguno') {  
          $verificar_18 = "correcto";
      } elseif ($respuesta_18 === '') {
          $verificar_18 = '';
@@ -391,7 +391,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la octava pregunta
      $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-     if ($respuesta_19 === '126') {  
+     if ($respuesta_19 === 'todos') {  
          $verificar_19 = "correcto";
      } elseif ($respuesta_19 === '') {
          $verificar_19 = '';
@@ -401,7 +401,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la novena pregunta
      $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
-     if ($respuesta_20 === '140') {  
+     if ($respuesta_20 === 'NP') {  
          $verificar_20 = "correcto";
      } elseif ($respuesta_20 === '') {
          $verificar_20 = '';
@@ -411,7 +411,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la décima pregunta
      $respuesta_21 = isset($_POST['respuesta_21']) ? $_POST['respuesta_21'] : '';
-     if ($respuesta_21 === '154') {  
+     if ($respuesta_21 === 'satisfacibilidad') {  
          $verificar_21 = "correcto";
      } elseif ($respuesta_21 === '') {
          $verificar_21 = '';
@@ -421,7 +421,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la undécima pregunta
      $respuesta_22 = isset($_POST['respuesta_22']) ? $_POST['respuesta_22'] : '';
-     if ($respuesta_22 === '168') {  
+     if ($respuesta_22 === '1970') {  
          $verificar_22 = "correcto";
      } elseif ($respuesta_22 === '') {
          $verificar_22 = '';
@@ -431,7 +431,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
    $respuesta_23 = isset($_POST['respuesta_23']) ? $_POST['respuesta_23'] : '';
-   if ($respuesta_23 === '30') {  
+   if ($respuesta_23 === 'P') {  
        $verificar_23 = "correcto";
    } elseif ($respuesta_23 === '') {
        $verificar_23 = '';
@@ -441,7 +441,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_24 = isset($_POST['respuesta_24']) ? $_POST['respuesta_24'] : '';
-   if ($respuesta_24 === '45') {  
+   if ($respuesta_24 === 'probablemente') {  
        $verificar_24 = "correcto";
    } elseif ($respuesta_24 === '') {
        $verificar_24 = '';
@@ -451,7 +451,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_25 = isset($_POST['respuesta_25']) ? $_POST['respuesta_25'] : '';
-   if ($respuesta_25 === '60') { 
+   if ($respuesta_25 === 'NP-Completo' || $respuesta_25 === 'NP-completo') { 
        $verificar_25 = "correcto";
    } elseif ($respuesta_25 === '') {
        $verificar_25 = '';
@@ -461,7 +461,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_26 = isset($_POST['respuesta_26']) ? $_POST['respuesta_26'] : '';
-   if ($respuesta_26 === '75') {  
+   if ($respuesta_26 === 'siete' || $respuesta_26 === '7') {  
        $verificar_26 = "correcto";
    } elseif ($respuesta_26 === '') {
        $verificar_26 = '';
@@ -1629,6 +1629,241 @@ function ocultarMensaje4() {
 <div class="seccion izquierda">
     <form action="./cuarto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
        
+<h3>Comparación entre crecimiento potencial y lineal</h3>
+
+<table border="1" cellpadding="8" style="border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th>Exponente \( c \) en \( n^c \)</th>
+      <th>Comparación con \( n \) (=,<,>)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>\( c > 1 \)</td>
+      <td>\( n^c \) <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="1"> \( n \) </td>
+    </tr>
+    <tr>
+      <td>\( c = 1 \)</td>
+      <td>\( n^c \)<input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="1">  \(n \)  </td>
+    </tr>
+    <tr>
+      <td>\( 0 < c < 1 \)</td>
+      <td>\( n^c \)<input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="1"> \( n \)  </td>
+    </tr>
+  </tbody>
+</table>
+
+    <h2>Complejidad de Algoritmos</h2>
+    <p>
+    Un algoritmo tiene complejidad 
+    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="8">
+    si su complejidad es \( \Theta(n^b) \), donde \( b \) es 
+    un entero con \( b \geq 1 \). Por ejemplo, el algoritmo de ordenamiento por burbuja (bubble sort) es un 
+    algoritmo de tiempo 
+    <input type="text"  value="<?php echo $respuesta_4; ?>" size="8" readonly>
+    porque utiliza \( \Theta(n^2) \) comparaciones en el peor de los casos. Un 
+    algoritmo tiene complejidad 
+    <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="8"> si tiene 
+    complejidad temporal \( \Theta(b^n) \), donde \( b > 1 \). 
+    El algoritmo que determina si una proposición compuesta con \( n \) variables es satisfacible comprobando todas 
+    las posibles asignaciones de valores de verdad es un algoritmo con complejidad exponencial, porque utiliza 
+    \( \Theta(2^n) \) operaciones. Finalmente, un algoritmo tiene complejidad factorial si su complejidad es \( \Theta(n!) \), 
+    como el algoritmo que encuentra todos los órdenes posibles en los que un vendedor viajero podría visitar \( n \) 
+    ciudades; este algoritmo se discutirá en el Capítulo 9.
+    </p>
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_1 ?>
+    <?php echo $verificar_2 ?>
+    <?php echo $verificar_3 ?>
+    <?php echo $verificar_4 ?>
+    <?php echo $verificar_5 ?>
+    <hr>
+ 
+    <h3>TRATABILIDAD</h3>
+    <p>Un problema que puede resolverse usando un algoritmo con complejidad 
+    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="8">    
+    (o mejor) en el peor 
+    caso se denomina <strong>tratable</strong> (tratabale), porque se espera que el algoritmo produzca una 
+    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="8">
+    en un tiempo relativamente 
+    <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="8">
+    para entradas de tamaño razonable. Sin embargo, si el polinomio 
+    en la estimación en big-Θ tiene un grado alto (como 100) o si los coeficientes son extremadamente grandes, 
+    el algoritmo podría tardar mucho tiempo en resolver el problema. Por lo tanto, que un problema pueda resolverse 
+    usando un algoritmo con complejidad temporal 
+    <input type="text" value="<?php echo $respuesta_6; ?>" size="8" readonly>
+    en el peor caso no garantiza que pueda resolverse en un 
+    tiempo razonable para valores pequeños de entrada. Afortunadamente, en la práctica, el grado y los coeficientes 
+    de los polinomios en tales estimaciones suelen ser pequeños.</p>
+
+    <p>La situación es mucho peor para los problemas que no pueden resolverse mediante un algoritmo con complejidad 
+    polinomial en el peor caso. Estos problemas se denominan 
+    <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="8">
+    . Generalmente, aunque 
+    no siempre, se requiere una cantidad de tiempo extremadamente grande para resolver el problema en los peores 
+    casos, incluso con entradas pequeñas. Sin embargo, en la práctica, puede haber situaciones en las que un 
+    algoritmo con cierta complejidad temporal en el peor caso puede resolver un problema mucho más rápido en 
+    la mayoría de los casos que en su peor caso. Cuando estamos dispuestos a aceptar que algunos casos, quizás 
+    pocos, no se resuelvan en un tiempo razonable, la complejidad temporal en el caso promedio es una mejor medida 
+    del tiempo que tarda un algoritmo en resolver un problema.</p>
+
+    <button type="submit">Enviar</button> 
+<?php echo $verificar_6 ?>
+<?php echo $verificar_7 ?> 
+<?php echo $verificar_8 ?>
+<?php echo $verificar_9 ?>
+<hr>
+    <p>Muchos problemas importantes en la industria se consideran intractables, pero pueden resolverse 
+    <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="12">     
+    para casi todos los conjuntos de entrada que surgen en la vida diaria. Otra forma de abordar los problemas 
+    intractables en aplicaciones prácticas es buscar soluciones aproximadas en lugar de exactas. Puede suceder 
+    que existan algoritmos rápidos para encontrar tales soluciones aproximadas, incluso con la garantía de que
+    no se desvían mucho de una solución exacta.</p>
+
+    <p>Incluso existen problemas para los que se ha demostrado que 
+    <input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="12">    
+    ningún algoritmo que los resuelva. Estos 
+    problemas se llaman 
+    <input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="12">
+    (en oposición a los problemas resolubles que pueden resolverse 
+    con un algoritmo). La primera demostración de que existen problemas no resolubles fue realizada por el gran 
+    matemático e informático inglés Alan Turing, cuando demostró que el problema de la detencion/parada (halting) es irresoluble. 
+    (Recuerda que demostramos que el problema de la parada es irresoluble en la Sección 3.1. Una biografía de 
+    Alan Turing y una descripción de algunos de sus otros trabajos se pueden encontrar en el Capítulo 13).</p>
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_10 ?>
+    <?php echo $verificar_11 ?>
+    <?php echo $verificar_12 ?>
+
+     <button onmousedown="mostrarImagen()" onmouseup="ocultarImagen()">Explicacion</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada" src="../../../../img/parada.png" style="display: none; max-width: 100%" width="560">
+
+    <script>
+        function mostrarImagen() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada');
+
+        // Mostrar la imagen
+        imagenMostrada.style.display = 'block';
+        }
+
+        function ocultarImagen() {
+        var imagenMostrada = document.getElementById('imagenMostrada');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada.style.display = 'none';
+        }
+    </script>
+<button onmousedown="mostrarImagen2()" onmouseup="ocultarImagen2()">Explicacion</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada2" src="../../../../img/turing.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen2() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+
+        // Mostrar la imagen
+        imagenMostrada2.style.display = 'block';
+        }
+
+        function ocultarImagen2() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada2.style.display = 'none';
+        }
+    </script>
+ 
+    <hr>
+    <h3>P versus NP</h3>
+    
+    <p>El estudio de la complejidad de los algoritmos va mucho más allá de lo que podemos describir aquí. 
+    Sin embargo, ten en cuenta que muchos problemas resolubles se cree que no pueden resolverse con un algoritmo 
+    con complejidad temporal 
+    <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="12">
+    en el peor caso, pero que una solución, si se conoce, puede verificarse en 
+    tiempo 
+    <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="12">
+    . Los problemas para los que una solución puede verificarse en tiempo 
+    <input type="text"  value="<?php echo $respuesta_14; ?>" size="12" readonly>
+    pertenecen 
+    a la clase 
+    <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="12">
+    (los problemas 
+    <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="12">
+    pertenecen a la clase <strong>P</strong>). La abreviatura
+    NP significa <em>tiempo polinomial 
+    <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="12">    
+    </em>.</p>
+
+
+    <p>También existe una clase importante de problemas, llamados <strong>problemas NP-completos</strong>, con la 
+    propiedad de que 
+    <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="12"> 
+    de estos problemas puede resolverse con un algoritmo de tiempo polinomial en el peor 
+    caso, entonces 
+    <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="12"> 
+    los problemas en la clase 
+    <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="12"> 
+    pueden resolverse con algoritmos de tiempo polinomial en el 
+    peor caso. El problema de la satisfacibilidad también es un ejemplo de problema NP-completo. Es un problema NP, 
+    y si se conociera un algoritmo polinomial para resolverlo, existirían algoritmos polinomiales para todos los 
+    problemas conocidos en esta clase (y hay muchos problemas importantes en esta clase). Esta última afirmación 
+    se basa en el hecho de que todo problema en NP puede reducirse en tiempo polinomial al problema de la 
+    satisfacibilidad.</p>
+   <button type="submit">Enviar</button>
+<?php echo $verificar_13 ?>
+<?php echo $verificar_14 ?>
+<?php echo $verificar_15 ?>
+<?php echo $verificar_16 ?>
+<?php echo $verificar_17 ?>
+<?php echo $verificar_18 ?>
+<?php echo $verificar_19 ?>
+<?php echo $verificar_20 ?>
+    <hr>
+    <p>Aunque ahora se conocen más de 3000 problemas NP-completos, el problema de la 
+    <input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>" size="12"> 
+    fue el 
+    primero en demostrarse como tal. El teorema que afirma esto se conoce como el <strong>teorema de Cook-Levin</strong>, 
+    en honor a Stephen Cook y Leonid Levin, quienes lo demostraron independientemente a principios de los años 
+    <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="12">
+    .</p>
+
+    <p>El problema de <strong>P versus NP</strong> pregunta si NP, la clase de problemas cuyas soluciones pueden 
+    verificarse en tiempo polinomial, es igual a 
+    <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="12">
+    , la clase de problemas tratables. Si <em>P ≠ NP</em>, existirían 
+    problemas que no pueden resolverse en tiempo polinomial, pero cuyas soluciones podrían verificarse en tiempo 
+    polinomial. El concepto de NP-completitud es útil en la investigación sobre el problema P versus NP, ya que 
+    los problemas NP-completos son considerados los más 
+    <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="12">
+    fuera de P, dado que todo problema en NP puede 
+    reducirse a un problema NP-completo en tiempo polinomial.</p>
+
+    <p>Una gran mayoría de científicos de la computación teórica cree que <em>P ≠ NP</em>, lo que significaría que 
+    ningún problema 
+    <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="12">
+    puede resolverse en tiempo polinomial. Una razón para esta creencia es que, a pesar     
+    de una investigación extensa, nadie ha logrado demostrar que <em>P = NP</em>. En particular, nadie ha podido 
+    encontrar un algoritmo con complejidad temporal polinomial en el peor caso que resuelva algún problema NP-completo. 
+    El problema P versus NP es uno de los problemas no resueltos más famosos de las ciencias matemáticas (que incluyen 
+    la informática teórica). Es uno de los 
+    <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="12">
+    famosos <strong>Problemas del Premio del Milenio</strong>, de los 
+    cuales seis siguen sin resolverse. El Instituto Clay de Matemáticas ofrece un premio de $1,000,000 por su solución.</p>
+
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_21 ?>
+    <?php echo $verificar_22 ?>
+    <?php echo $verificar_23 ?>
+    <?php echo $verificar_24 ?>
+    <?php echo $verificar_25 ?>
+    <?php echo $verificar_26 ?>
+    <hr> 
+
     </form>
 </div>
 

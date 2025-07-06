@@ -11,39 +11,25 @@ $respuesta_30 = ''; $respuesta_31 = ''; $respuesta_32 = ''; $respuesta_33 = ''; 
 $respuesta_39 = ''; $respuesta_40 = ''; $respuesta_41 = ''; $respuesta_42 = ''; $respuesta_43 = '';
 $respuesta_44 = ''; $respuesta_45 = ''; $respuesta_46 = ''; $respuesta_47 = ''; $respuesta_48 = '';
 $respuesta_49 = ''; $respuesta_50 = ''; $respuesta_51 = ''; $respuesta_52 = ''; $respuesta_53 = '';
-$respuesta_54 = ''; $respuesta_55 = ''; $respuesta_56 = '';
-$respuesta_57 = ''; $respuesta_58 = ''; $respuesta_59 = ''; $respuesta_60 = '';
-$respuesta_61 = '';$respuesta_62 = '';$respuesta_63 = '';$respuesta_64 = '';
-$respuesta_65 = '';$respuesta_66 = '';$respuesta_67 = '';$respuesta_68 = '';
-$respuesta_69 = '';$respuesta_70 = '';$respuesta_71 = '';$respuesta_72 = '';
-$respuesta_73 = '';$respuesta_74 = '';$respuesta_75 = '';$respuesta_76 = '';
-$respuesta_77 = '';$respuesta_78 = '';$respuesta_79 = '';$respuesta_80 = '';
-$respuesta_81 = '';$respuesta_82 = '';$respuesta_83 = '';$respuesta_84 = '';
+$respuesta_54 = ''; $respuesta_55 = ''; $respuesta_56 = '';$respuesta_57 = ''; $respuesta_58 = ''; $respuesta_59 = ''; $respuesta_60 = '';
+$respuesta_61 = '';$respuesta_62 = '';$respuesta_63 = '';$respuesta_64 = '';$respuesta_65 = '';$respuesta_66 = '';$respuesta_67 = '';$respuesta_68 = '';
+$respuesta_69 = '';$respuesta_70 = '';$respuesta_71 = '';$respuesta_72 = '';$respuesta_73 = '';$respuesta_74 = '';$respuesta_75 = '';$respuesta_76 = '';
+$respuesta_77 = '';$respuesta_78 = '';$respuesta_79 = '';$respuesta_80 = '';$respuesta_81 = '';$respuesta_82 = '';$respuesta_83 = '';$respuesta_84 = '';
 $respuesta_85 = '';$respuesta_86 = '';$respuesta_87 = '';$respuesta_88 = ''; $respuesta_89 = '';
-$respuesta_90 = '';
-$respuesta_91 = '';
-$respuesta_92 = '';
-$respuesta_93 = '';
-$respuesta_94 = '';
-$respuesta_95 = '';
-$respuesta_96 = '';
-$respuesta_97 = '';
-$respuesta_98 = '';
-$respuesta_99 = '';
-$respuesta_100 = '';
-$respuesta_101 = '';
-$respuesta_102 = '';
-$respuesta_103 = '';
-$respuesta_104 = '';
-$respuesta_105 = '';
-$respuesta_106 = '';
-$respuesta_107 = '';
-$respuesta_108 = '';
-$respuesta_109 = '';
-$respuesta_110 = '';
+$respuesta_90 = ''; $respuesta_91 = '';$respuesta_92 = '';$respuesta_93 = '';$respuesta_94 = '';$respuesta_95 = '';$respuesta_96 = '';$respuesta_97 = '';$respuesta_98 = '';
+$respuesta_99 = '';$respuesta_100 = '';$respuesta_101 = '';$respuesta_102 = '';$respuesta_103 = '';$respuesta_104 = '';$respuesta_105 = '';
+$respuesta_106 = '';$respuesta_107 = '';$respuesta_108 = '';$respuesta_109 = '';$respuesta_110 = '';
 
+/////
+ // Agrega estas variables junto con las demás (antes del if $_POST)
+$respuesta_111 = ''; $respuesta_112 = ''; $respuesta_113 = ''; $respuesta_114 = ''; $respuesta_115 = ''; 
+$respuesta_116 = ''; $respuesta_117 = ''; $respuesta_118 = ''; $respuesta_119 = ''; $respuesta_120 = ''; 
+$respuesta_121 = ''; $respuesta_122 = '';
 
- 
+$verificar_111 = ''; $verificar_112 = ''; $verificar_113 = ''; $verificar_114 = ''; $verificar_115 = ''; 
+$verificar_116 = ''; $verificar_117 = ''; $verificar_118 = ''; $verificar_119 = ''; $verificar_120 = ''; 
+$verificar_121 = ''; $verificar_122 = '';
+////
 
 $verificar_1 = ''; $verificar_2 = ''; $verificar_3 = '';  $verificar_3_2 = ''; $verificar_4 = ''; $verificar_5 = ''; 
 $verificar_6 = ''; $verificar_7 = '';  $verificar_8 = ''; $verificar_9 = ''; $verificar_10 = ''; 
@@ -59,36 +45,170 @@ $verificar_49 = ''; $verificar_50 = ''; $verificar_51 = ''; $verificar_52 = ''; 
 $verificar_54 = ''; $verificar_55 = '';
 $verificar_56 = ''; $verificar_57 = ''; $verificar_58 = ''; $verificar_59 = ''; $verificar_60 = ''; 
 $verificar_61 = ''; $verificar_62 = ''; $verificar_63 = ''; $verificar_64 = ''; $verificar_65 = '';
- $verificar_66 = ''; $verificar_67 = ''; $verificar_68 = ''; $verificar_69 = ''; $verificar_70 = '';
-  $verificar_71 = ''; $verificar_72 = ''; $verificar_73 = ''; $verificar_74 = ''; $verificar_75 = '';
-   $verificar_76 = ''; $verificar_77 = ''; $verificar_78 = ''; $verificar_79 = ''; $verificar_80 = '';
-    $verificar_81 = ''; $verificar_82 = ''; $verificar_83 = ''; $verificar_84 = ''; $verificar_85 = '';
-     $verificar_86 = ''; $verificar_87 = ''; $verificar_88 = '';
-     $verificar_89 = '';
-     $verificar_90 = '';
-     $verificar_91 = '';
-     $verificar_92 = '';
-     $verificar_93 = '';
-     $verificar_94 = '';
-     $verificar_95 = '';
-     $verificar_96 = '';
-     $verificar_97 = '';
-     $verificar_98 = '';
-     $verificar_99 = '';
-     $verificar_100 = '';
-     $verificar_101 = '';
-     $verificar_102 = '';
-     $verificar_103 = '';
-     $verificar_104 = '';
-     $verificar_105 = '';
-     $verificar_106 = '';
-     $verificar_107 = '';
-     $verificar_108 = '';
-     $verificar_109 = '';
-     $verificar_110 = '';
+$verificar_66 = ''; $verificar_67 = ''; $verificar_68 = ''; $verificar_69 = ''; $verificar_70 = '';
+$verificar_71 = ''; $verificar_72 = ''; $verificar_73 = ''; $verificar_74 = ''; $verificar_75 = '';
+$verificar_76 = ''; $verificar_77 = ''; $verificar_78 = ''; $verificar_79 = ''; $verificar_80 = '';
+$verificar_81 = ''; $verificar_82 = ''; $verificar_83 = ''; $verificar_84 = ''; $verificar_85 = '';
+$verificar_86 = ''; $verificar_87 = ''; $verificar_88 = '';$verificar_89 = ''; $verificar_90 = '';$verificar_91 = '';
+$verificar_92 = '';$verificar_93 = '';$verificar_94 = ''; $verificar_95 = '';
+$verificar_96 = ''; $verificar_97 = ''; $verificar_98 = ''; $verificar_99 = ''; $verificar_100 = '';
+$verificar_101 = '';$verificar_102 = '';$verificar_103 = '';$verificar_104 = '';$verificar_105 = '';
+$verificar_106 = '';$verificar_107 = '';$verificar_108 = '';$verificar_109 = '';$verificar_110 = '';
      
 
+$mostrar_solucion = '';
 if ($_POST) {
+    $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
+    
+    if ($mostrar_solucion === 'mostrar_solucion') {
+        // Establecer todas las respuestas correctas para las tablas de multiplicar
+        
+        // Tabla del 12
+        $respuesta_111 = '24'; 
+        $respuesta_112 = '36';
+        $respuesta_113 = '48';
+        $respuesta_114 = '60';
+        $respuesta_115 = '72';
+        $respuesta_116 = '84';
+        $respuesta_117 = '96';
+        $respuesta_118 = '108';
+        $respuesta_119 = '120';
+        $respuesta_120 = '132';
+        $respuesta_121 = '144';
+        
+        // Tabla del 13
+        $respuesta_1 = '26';
+        $respuesta_2 = '39';
+        $respuesta_3 = '52';
+        $respuesta_4 = '65';
+        $respuesta_5 = '78';
+        $respuesta_6 = '91';
+        $respuesta_7 = '104';
+        $respuesta_8 = '117';
+        $respuesta_9 = '130';
+        $respuesta_10 = '143';
+        $respuesta_11 = '156';
+        
+        // Tabla del 14
+        $respuesta_12 = '28';
+        $respuesta_13 = '42';
+        $respuesta_14 = '56';
+        $respuesta_15 = '70';
+        $respuesta_16 = '84';
+        $respuesta_17 = '98';
+        $respuesta_18 = '112';
+        $respuesta_19 = '126';
+        $respuesta_20 = '140';
+        $respuesta_21 = '154';
+        $respuesta_22 = '168';
+        
+        // Tabla del 15
+        $respuesta_23 = '30';
+        $respuesta_24 = '45';
+        $respuesta_25 = '60';
+        $respuesta_26 = '75';
+        $respuesta_27 = '90';
+        $respuesta_28 = '105';
+        $respuesta_29 = '120';
+        $respuesta_30 = '135';
+        $respuesta_31 = '150';
+        $respuesta_32 = '165';
+        $respuesta_33 = '180';
+        
+        // Tabla del 16
+        $respuesta_34 = '32';
+        $respuesta_35 = '48';
+        $respuesta_36 = '64';
+        $respuesta_37 = '80';
+        $respuesta_38 = '96';
+        $respuesta_39 = '112';
+        $respuesta_40 = '128';
+        $respuesta_41 = '144';
+        $respuesta_42 = '160';
+        $respuesta_43 = '176';
+        $respuesta_44 = '192';
+        
+        // Tabla del 17
+        $respuesta_45 = '34';
+        $respuesta_46 = '51';
+        $respuesta_47 = '68';
+        $respuesta_48 = '85';
+        $respuesta_49 = '102';
+        $respuesta_50 = '119';
+        $respuesta_51 = '136';
+        $respuesta_52 = '153';
+        $respuesta_53 = '170';
+        $respuesta_54 = '187';
+        $respuesta_55 = '204';
+        
+        // Tabla del 18
+        $respuesta_56 = '36';
+        $respuesta_57 = '54';
+        $respuesta_58 = '72';
+        $respuesta_59 = '90';
+        $respuesta_60 = '108';
+        $respuesta_61 = '126';
+        $respuesta_62 = '144';
+        $respuesta_63 = '162';
+        $respuesta_64 = '180';
+        $respuesta_65 = '198';
+        $respuesta_66 = '216';
+        
+        // Tabla del 19
+        $respuesta_67 = '38';
+        $respuesta_68 = '57';
+        $respuesta_69 = '76';
+        $respuesta_70 = '95';
+        $respuesta_71 = '114';
+        $respuesta_72 = '133';
+        $respuesta_73 = '152';
+        $respuesta_74 = '171';
+        $respuesta_75 = '190';
+        $respuesta_76 = '209';
+        $respuesta_77 = '228';
+        
+        // Tabla del 20
+        $respuesta_78 = '40';
+        $respuesta_79 = '60';
+        $respuesta_80 = '80';
+        $respuesta_81 = '100';
+        $respuesta_82 = '120';
+        $respuesta_83 = '140';
+        $respuesta_84 = '160';
+        $respuesta_85 = '180';
+        $respuesta_86 = '200';
+        $respuesta_87 = '220';
+        $respuesta_88 = '240';
+        
+        // Tabla del 21
+        $respuesta_89 = '42';
+        $respuesta_90 = '63';
+        $respuesta_91 = '84';
+        $respuesta_92 = '105';
+        $respuesta_93 = '126';
+        $respuesta_94 = '147';
+        $respuesta_95 = '168';
+        $respuesta_96 = '189';
+        $respuesta_97 = '210';
+        $respuesta_98 = '231';
+        $respuesta_99 = '252';
+        
+        // Tabla del 22
+        $respuesta_100 = '44';
+        $respuesta_101 = '66';
+        $respuesta_102 = '88';
+        $respuesta_103 = '110';
+        $respuesta_104 = '132';
+        $respuesta_105 = '154';
+        $respuesta_106 = '176';
+        $respuesta_107 = '198';
+        $respuesta_108 = '220';
+        $respuesta_109 = '242';
+        $respuesta_110 = '264';
+        
+        // Marcar todas como correctas
+        $verificar_1 = $verificar_2 = $verificar_3 = /* ... todas las variables de verificación ... */ $verificar_122 = "correcto";
+    } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
    if ($respuesta_1 === '26') {  
        $verificar_1 = "correcto";
@@ -1114,7 +1234,106 @@ if ($respuesta_110 === '264') {
     $verificar_110 = "incorrecto";
 }
 
+// Tabla del 12
+$respuesta_111 = isset($_POST['respuesta_111']) ? $_POST['respuesta_111'] : '';
+if ($respuesta_111 === '24') {  
+    $verificar_111 = "correcto";
+} elseif ($respuesta_111 === '') {
+    $verificar_111 = '';
+} else {
+    $verificar_111 = "incorrecto";
+}
 
+$respuesta_112 = isset($_POST['respuesta_112']) ? $_POST['respuesta_112'] : '';
+if ($respuesta_112 === '36') {  
+    $verificar_112 = "correcto";
+} elseif ($respuesta_112 === '') {
+    $verificar_112 = '';
+} else {
+    $verificar_112 = "incorrecto";
+}
+
+$respuesta_113 = isset($_POST['respuesta_113']) ? $_POST['respuesta_113'] : '';
+if ($respuesta_113 === '48') {  
+    $verificar_113 = "correcto";
+} elseif ($respuesta_113 === '') {
+    $verificar_113 = '';
+} else {
+    $verificar_113 = "incorrecto";
+}
+
+$respuesta_114 = isset($_POST['respuesta_114']) ? $_POST['respuesta_114'] : '';
+if ($respuesta_114 === '60') {  
+    $verificar_114 = "correcto";
+} elseif ($respuesta_114 === '') {
+    $verificar_114 = '';
+} else {
+    $verificar_114 = "incorrecto";
+}
+
+$respuesta_115 = isset($_POST['respuesta_115']) ? $_POST['respuesta_115'] : '';
+if ($respuesta_115 === '72') {  
+    $verificar_115 = "correcto";
+} elseif ($respuesta_115 === '') {
+    $verificar_115 = '';
+} else {
+    $verificar_115 = "incorrecto";
+}
+
+$respuesta_116 = isset($_POST['respuesta_116']) ? $_POST['respuesta_116'] : '';
+if ($respuesta_116 === '84') {  
+    $verificar_116 = "correcto";
+} elseif ($respuesta_116 === '') {
+    $verificar_116 = '';
+} else {
+    $verificar_116 = "incorrecto";
+}
+
+$respuesta_117 = isset($_POST['respuesta_117']) ? $_POST['respuesta_117'] : '';
+if ($respuesta_117 === '96') {  
+    $verificar_117 = "correcto";
+} elseif ($respuesta_117 === '') {
+    $verificar_117 = '';
+} else {
+    $verificar_117 = "incorrecto";
+}
+
+$respuesta_118 = isset($_POST['respuesta_118']) ? $_POST['respuesta_118'] : '';
+if ($respuesta_118 === '108') {  
+    $verificar_118 = "correcto";
+} elseif ($respuesta_118 === '') {
+    $verificar_118 = '';
+} else {
+    $verificar_118 = "incorrecto";
+}
+
+$respuesta_119 = isset($_POST['respuesta_119']) ? $_POST['respuesta_119'] : '';
+if ($respuesta_119 === '120') {  
+    $verificar_119 = "correcto";
+} elseif ($respuesta_119 === '') {
+    $verificar_119 = '';
+} else {
+    $verificar_119 = "incorrecto";
+}
+
+$respuesta_120 = isset($_POST['respuesta_120']) ? $_POST['respuesta_120'] : '';
+if ($respuesta_120 === '132') {  
+    $verificar_120 = "correcto";
+} elseif ($respuesta_120 === '') {
+    $verificar_120 = '';
+} else {
+    $verificar_120 = "incorrecto";
+}
+
+$respuesta_121 = isset($_POST['respuesta_121']) ? $_POST['respuesta_121'] : '';
+if ($respuesta_121 === '144') {  
+    $verificar_121 = "correcto";
+} elseif ($respuesta_121 === '') {
+    $verificar_121 = '';
+} else {
+    $verificar_121 = "incorrecto";
+}
+}
 }
 ?>
 <!DOCTYPE html>
@@ -1123,8 +1342,8 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-     <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../style.css"> 
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
@@ -1136,7 +1355,7 @@ if ($respuesta_110 === '264') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 377vh;
+    height: 270vh;
     }
 </style>
  
@@ -1178,211 +1397,180 @@ function handleSubmit(event) {
 }
 
 function actualizarFormula() {
-    // Obtener los valores de los inputs
-   
-    var f = document.getElementById('respuesta_11').value || "";
- 
-
-
-    // Construir la fórmula dinámica
-    var formula = ` \\  ${f} \\, `;
-
-    // Actualizar el contenido de la fórmula en el DOM
-    document.getElementById('formula').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
+    var f = document.getElementById('respuesta_1').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula1').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
- 
 
 function actualizarFormula2() {
-    // Obtener los valores de los inputs
-   
-    var f = document.getElementById('respuesta_13').value || "";
-  
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-
-    // Actualizar el contenido de la fórmula en el DOM
+    var f = document.getElementById('respuesta_2').value || "";
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula2').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
 
-
-
 function actualizarFormula3() {
-    // Obtener los valores de los inputs
-   
-    var f = document.getElementById('respuesta_27').value || "";
- 
-
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-
-    // Actualizar el contenido de la fórmula en el DOM
+    var f = document.getElementById('respuesta_3').value || "";
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula3').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
 
 function actualizarFormula4() {
-    // Obtener los valores de los inputs
-    var f = document.getElementById('respuesta_29').value || "";
-   
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var f = document.getElementById('respuesta_4').value || "";
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula4').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
-
 
 function actualizarFormula5() {
-    // Obtener los valores de los inputs
-    var f = document.getElementById('respuesta_30').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var f = document.getElementById('respuesta_5').value || "";
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula5').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
-
-
 
 function actualizarFormula6() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_6').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula6').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
 
-
 function actualizarFormula7() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_7').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula7').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
 
 function actualizarFormula8() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_8').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula8').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
-
 
 function actualizarFormula9() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_9').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula9').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
-
-
 
 function actualizarFormula10() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_10').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula10').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
-
 
 function actualizarFormula11() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_11').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula11').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
 
-
 function actualizarFormula12() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_12').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula12').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
 
-    // Re-renderizar MathJax para mostrar los cambios
+function actualizarFormula13() {
+    var f = document.getElementById('respuesta_13').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula13').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula14() {
+    var f = document.getElementById('respuesta_14').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula14').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula15() {
+    var f = document.getElementById('respuesta_15').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula15').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula16() {
+    var f = document.getElementById('respuesta_16').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula16').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula17() {
+    var f = document.getElementById('respuesta_17').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula17').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula18() {
+    var f = document.getElementById('respuesta_18').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula18').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula19() {
+    var f = document.getElementById('respuesta_19').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula19').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula20() {
+    var f = document.getElementById('respuesta_20').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula20').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
         MathJax.typeset();
     }
@@ -1439,81 +1627,132 @@ function ocultarMensaje4() {
 </head>
 <body> 
 <div class="seccion izquierda">
-    <form action="./cuarto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <p>Es importante tener una estimación razonable de cuánto tiempo tomará a una computadora resolver un problema. 
-    Por ejemplo, si un algoritmo requiere aproximadamente 10 horas, puede valer la pena usar el tiempo de computadora 
-    (y el dinero) necesario para resolverlo. Pero si requiere aproximadamente 10 mil millones de años, sería irracional
-    usar recursos para implementarlo.</p>
+    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+       <h2>Propósito de la Guía Scrum</h2>
 
-    <p>Uno de los fenómenos más interesantes de la tecnología moderna es el tremendo aumento en la velocidad y memoria
-    de las computadoras. Otro factor importante que reduce el tiempo necesario para resolver problemas en computadoras
-    es el <strong>procesamiento en paralelo</strong>, que consiste en realizar operaciones de manera simultánea.</p>
-
-    <p>Los algoritmos eficientes, incluyendo la mayoría de los algoritmos con complejidad polinomial, se benefician
-    más de las mejoras tecnológicas significativas. Sin embargo, estas mejoras ofrecen poca ayuda para superar la 
-    complejidad de algoritmos de tiempo exponencial o factorial. Gracias al aumento de la velocidad de cómputo, el
-    incremento de memoria, y el uso de algoritmos que aprovechan el procesamiento en paralelo, muchos problemas que 
-    se consideraban imposibles de resolver hace cinco años ahora se resuelven rutinariamente. Y seguramente, dentro 
-    de cinco años, esto seguirá siendo cierto, incluso si los algoritmos usados son intractables.</p>
-    <hr>
-    <strong>Resumen parte interesante:</strong>
-    <h2>¿Qué significa que un problema está en NP?</h2>
-<p><strong>NP</strong> significa <em>Nondeterministic Polynomial time</em> (tiempo polinómico no determinista), pero no te preocupes por el nombre técnico.</p>
-
-<p>La idea central es esta:</p>
-
-<p>Un problema está en <strong>NP</strong> si, aunque no sepamos cómo encontrar la solución rápidamente, <strong>sí podemos verificar una solución rápidamente</strong>, si alguien nos la da.</p>
-
-<h3>Ejemplo fácil:</h3>
-<p>Imagina que alguien te da un <strong>rompecabezas muy difícil</strong>.</p>
-
-<ul>
-  <li>Tú no sabes cómo resolverlo por tu cuenta rápido.</li>
-  <li>Pero si alguien te muestra una solución completa, tú puedes <strong>verificar en poco tiempo</strong> si está bien hecha o no (si todas las piezas encajan).</li>
-</ul>
-
-<p>Eso es un problema NP:</p>
-<ul>
-  <li>🔸 Difícil de resolver</li>
-  <li>🔹 Fácil de verificar</li>
-</ul>
-
-<hr>
-
-<h2> ¿Qué es un problema P?</h2>
-<p>Un problema está en la clase <strong>P</strong> si puede resolverse en <strong>tiempo polinómico</strong>. Es decir, existe un algoritmo que lo resuelve "rápido" (rápido en teoría significa: el tiempo de ejecución crece de forma razonable cuando crece el tamaño del input).</p>
-
-<p> <strong>Tiempo polinómico</strong> = como máximo algo así como <code>n</code>, <code>n²</code>, <code>n³</code>, etc.</p>
-
-<p> Estos problemas se consideran <strong>tractables</strong> o <strong>eficientemente resolubles</strong>.</p>
-
-<h3> Ejemplos de problemas en P:</h3>
-<ul>
-  <li>Ordenar una lista (con <code>mergesort</code>, <code>quicksort</code>…)</li>
-  <li>Buscar un elemento en una lista ordenada (búsqueda binaria)</li>
-  <li>Encontrar el camino más corto en un grafo sin pesos negativos (algoritmo de Dijkstra)</li>
-</ul>
-    <hr>
     <p>
+    Desarrollamos Scrum a principios de la década de 1990. Escribimos la primera versión de la Guía Scrum
+    en 2010 para ayudar a las personas de todo el mundo a comprender Scrum. Hemos desarrollado la Guía
+    desde entonces a través de pequeñas actualizaciones funcionales. Juntos, la respaldamos.
+    </p>
+
     <p>
-  <strong>P</strong> incluye todo lo que se puede hacer en tiempo 
-  \( O(n^k) \) para algún \( k \) fijo, pero también acepta tiempos como 
-  \( O(n \log n) \) o \( O(\log n) \), porque siguen siendo eficientes y razonables.
+    La Guía de Scrum contiene la definición de Scrum. Cada elemento del marco de trabajo tiene un
+    propósito específico que es esencial para el valor general y los resultados obtenidos con Scrum. Cambiar
+    el diseño o las ideas esenciales de Scrum, omitir elementos o no seguir las reglas de Scrum, oculta los
+    problemas y limita los beneficios de Scrum, e incluso potencialmente lo vuelve inútil.
+    </p>
+
+    <p>
+    Seguimos el uso creciente de Scrum dentro de un mundo complejo en constante crecimiento. Nos
+    sentimos honrados de ver que Scrum está siendo adoptado en muchos dominios que tienen un trabajo
+    esencialmente complejo, más allá del desarrollo de productos de software donde Scrum tiene sus raíces.
+    A medida que se extiende el uso de Scrum, los desarrolladores, investigadores, analistas, científicos y
+    otros especialistas hacen el trabajo. Usamos la palabra "desarrolladores" en Scrum no para excluir, sino
+    para simplificar. Si obtiene valor de Scrum, considérese incluido.
+    </p>
+
+    <p>
+    A medida que se utiliza Scrum, se pueden encontrar, aplicar y diseñar patrones, procesos y enfoques
+    que se ajusten al marco de trabajo Scrum como se describe en este documento. Su descripción va más
+    allá del propósito de la Guía Scrum porque son sensibles al contexto y difieren ampliamente entre los
+    usos de Scrum. Tales tácticas para usar dentro del marco de trabajo Scrum varían ampliamente y se
+    describen en otra parte.
+    </p>
+
+
+    <h2>Definición de Scrum</h2>
+
+<p>
+Scrum es un marco de trabajo liviano que ayuda a las personas, equipos y organizaciones a generar valor
+a través de soluciones adaptativas para problemas complejos.
 </p>
 
 <p>
-  Por eso, <strong>mergesort</strong> y <strong>búsqueda binaria</strong> son considerados problemas en 
-  <strong>P</strong>, es decir, <em>eficientemente resolubles</em>.
+En pocas palabras, Scrum requiere un Scrum Master para fomentar un entorno donde:
 </p>
-<hr>
 
+<ol>
+  <li>Un Product Owner ordena el trabajo de un problema complejo en un Product Backlog.</li>
+  <li>El Scrum Team convierte una selección del trabajo en un Increment de valor durante un Sprint.</li>
+  <li>El Scrum Team y sus interesados inspeccionan los resultados y se adaptan para el próximo Sprint.</li>
+  <li>Repita</li>
+</ol>
 
+<p>
+Scrum es simple. Pruébelo como está y determine si su filosofía, teoría y estructura ayudan a lograr
+objetivos y crear valor. El marco de trabajo Scrum es incompleto de manera intencional, solo define las
+partes necesarias para implementar la teoría de Scrum. Scrum se basa en la inteligencia colectiva de las
+personas que lo utilizan. En lugar de proporcionar a las personas instrucciones detalladas, las reglas de
+Scrum guían sus relaciones e interacciones.
+</p>
 
+<p>
+En este marco de trabajo pueden emplearse varios procesos, técnicas y métodos. Scrum envuelve las
+prácticas existentes o las hace innecesarias. Scrum hace visible la eficacia relativa de las técnicas
+actuales de gestión, entorno y trabajo, de modo que se puedan realizar mejoras.
+</p>
 
+<h3>Teoría de Scrum</h3>
 
+<p>
+Scrum se basa en el empirismo y el pensamiento Lean. El empirismo afirma que el conocimiento
+proviene de la experiencia y de la toma de decisiones con base en lo observado. El pensamiento Lean
+reduce el desperdicio y se enfoca en lo esencial.
+</p>
 
- 
-  
+<p>
+Scrum emplea un enfoque iterativo e incremental para optimizar la previsibilidad y controlar el riesgo.
+Scrum involucra a grupos de personas que colectivamente tienen todas las habilidades y experiencia
+para hacer el trabajo y compartir o adquirir dichas habilidades según sea necesario.
+</p>
+
+<p>
+Scrum combina cuatro eventos formales para inspección y adaptación dentro de un evento contenedor,
+el Sprint. Estos eventos funcionan porque implementan los pilares empíricos de Scrum de transparencia,
+inspección y adaptación.
+</p>
+
+<h2>Transparencia</h2>
+
+<p>
+El proceso y el trabajo emergentes deben ser visibles tanto para quienes realizan el trabajo como para
+quienes lo reciben. Con Scrum, las decisiones importantes se basan en el estado percibido de sus tres
+artefactos formales. Los artefactos que tienen poca transparencia pueden llevar a decisiones que
+disminuyan el valor y aumenten el riesgo.
+</p>
+
+<p>
+La transparencia permite la inspección. La inspección sin transparencia es engañosa y derrochadora.
+</p>
+
+<h2>Inspección</h2>
+
+<p>
+Los artefactos de Scrum y el progreso hacia los objetivos acordados deben inspeccionarse con
+frecuencia y con diligencia para detectar variaciones o problemas potencialmente indeseables. Para
+ayudar con la inspección, Scrum proporciona cadencia en forma de sus cinco eventos.
+</p>
+
+<p>
+La inspección permite la adaptación. La inspección sin adaptación se considera inútil. Los eventos Scrum
+están diseñados para provocar cambios.
+</p>
+
+<h2>Adaptación</h2>
+
+<p>
+Si algún aspecto de un proceso se desvía fuera de los límites aceptables o si el producto resultante es
+inaceptable, el proceso que se aplica o los materiales que se producen deben ajustarse. El ajuste debe
+realizarse lo antes posible para minimizar una mayor desviación.
+</p>
+
+<p>
+La adaptación se vuelve más difícil cuando las personas involucradas no están empoderadas ni se
+autogestionan. Se espera que un Scrum Team se adapte en el momento en que aprenda algo nuevo a
+través de la inspección.
+</p>
+
     </form>
 </div>
 
@@ -1521,8 +1760,109 @@ function ocultarMensaje4() {
 
 
 <div class="seccion derecha">
-    <form action="./cuarto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+     <h2>Valores de Scrum</h2>
+  <p>
+    El uso exitoso de Scrum depende de que las personas se vuelvan más competentes en vivir cinco
+    valores: <strong>Compromiso, Foco, Franqueza, Respeto y Coraje</strong>
+  </p>
+  <p>
+    El Scrum Team se compromete a lograr sus objetivos y a apoyarse mutuamente. Su foco principal está
+    en el trabajo del Sprint para lograr el mejor progreso posible hacia estos objetivos. El Scrum Team y sus
+    interesados son francos sobre el trabajo y los desafíos. Los miembros del Scrum Team se respetan entre
+    sí para ser personas capaces e independientes, y son respetados como tales por las personas con las que
+    trabajan. Los miembros del Scrum Team tienen el coraje de hacer lo correcto, para trabajar en
+    problemas difíciles.
+  </p>
+  <p>
+    Estos valores dan dirección al Scrum Team con respecto a su trabajo, acciones y comportamiento. Las
+    decisiones que se tomen, los pasos que se den y la forma en que se use Scrum deben reforzar estos
+    valores, no disminuirlos ni socavarlos. Los miembros del Scrum Team aprenden y exploran los valores
+    mientras trabajan con los eventos y artefactos Scrum. Cuando el Scrum Team y las personas con las que trabajan incorporan estos valores, los pilares empíricos de Scrum de transparencia, inspección y
+    adaptación cobran vida y generan confianza.
+  </p>
 
+  <h2>Scrum Team</h2>
+  <p>
+    La unidad fundamental de Scrum es un pequeño equipo de personas, un Scrum Team. El Scrum Team
+    consta de un Scrum Master, un Product Owner y Developers. Dentro de un Scrum Team, no hay
+    subequipos ni jerarquías. Es una unidad cohesionada de profesionales enfocados en un objetivo a la vez,
+    el Objetivo del Producto.
+  </p>
+  <p>
+    Los Scrum Teams son multifuncionales, lo que significa que los miembros tienen todas las habilidades
+    necesarias para crear valor en cada Sprint. También se autogestionan, lo que significa que deciden
+    internamente quién hace qué, cuándo y cómo.
+  </p>
+  <p>
+    El Scrum Team es lo suficientemente pequeño como para seguir siendo ágil y lo suficientemente grande
+    como para completar un trabajo significativo dentro de un Sprint, generalmente 10 personas o menos.
+    En general, hemos descubierto que los equipos más pequeños se comunican mejor y son más
+    productivos. Si los Scrum Teams se vuelven demasiado grandes, deberían considerar reorganizarse en
+    múltiples Scrum Teams cohesivos, cada uno enfocado en el mismo producto. Por lo tanto, deben
+    compartir el mismo Objetivo del Producto, el Product Backlog y el Product Owner.
+  </p>
+  <p>
+    El Scrum Team es responsable de todas las actividades relacionadas con el producto, desde la
+    colaboración de los interesados, la verificación, el mantenimiento, la operación, la experimentación, la
+    investigación y el desarrollo, y cualquier otra cosa que pueda ser necesaria. Están estructurados y
+    empoderados por la organización para gestionar su propio trabajo. Trabajar en Sprints a un ritmo
+    sostenible mejora el enfoque y la consistencia del Scrum Team.
+  </p>
+  <p>
+    Todo el Scrum Team es responsable de crear un Increment valioso y útil en cada Sprint. Scrum define
+    tres responsabilidades específicas dentro del Scrum Team: los Developers, el Product Owner y el Scrum
+    Master.
+  </p>
+
+
+
+   <h2>Developers</h2>
+  <p>
+    Las personas del Scrum Team que se comprometen a crear cualquier aspecto de un Increment utilizable
+    en cada Sprint son Developers.
+  </p>
+  <p>
+    Las habilidades específicas que necesitan los Developers suelen ser amplias y variarán según el ámbito
+    de trabajo. Sin embargo, los Developers siempre son responsables de:
+  </p>
+  <ul>
+    <li>Crear un plan para el Sprint, el Sprint Backlog;</li>
+    <li>Inculcar calidad al adherirse a una Definición de Terminado;</li>
+    <li>Adaptar su plan cada día hacia el Objetivo del Sprint; y,</li>
+    <li>Responsabilizarse mutuamente como profesionales.</li>
+  </ul>
+
+  <h2>Product Owner</h2>
+  <p>
+    El Product Owner es responsable de maximizar el valor del producto resultante del trabajo del Scrum
+    Team. La forma en que esto se hace puede variar ampliamente entre organizaciones, Scrum Teams e
+    individuos.
+  </p>
+  <p>
+    El Product Owner también es responsable de la gestión efectiva del Product Backlog, lo que incluye:
+  </p>
+  <ul>
+    <li>Desarrollar y comunicar explícitamente el Objetivo del Producto;</li>
+    <li>Crear y comunicar claramente los elementos del Product Backlog;</li>
+    <li>Ordenar los elementos del Product Backlog; y,</li>
+    <li>Asegurarse de que el Product Backlog sea transparente, visible y se entienda.</li>
+  </ul>
+  <p>
+    El Product Owner puede realizar el trabajo anterior o puede delegar la responsabilidad en otros.
+    Independientemente de ello, el Product Owner sigue siendo el responsable de que el trabajo se realice.
+  </p>
+  <p>
+    Para que los Product Owners tengan éxito, toda la organización debe respetar sus decisiones. Estas
+    decisiones son visibles en el contenido y el orden del Product Backlog, y a través del Increment
+    inspeccionable en la Sprint Review.
+  </p>
+  <p>
+    El Product Owner es una persona, no un comité. El Product Owner puede representar las necesidades de
+    muchos interesados en el Product Backlog. Aquellos que quieran cambiar el Product Backlog pueden
+    hacerlo intentando convencer al Product Owner.
+  </p>
+  
     </form>
 </div>
 
@@ -1531,7 +1871,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="cuarto.php"
+        href="segundo.php"
         role="button"
         width="50px"
         height="50px"

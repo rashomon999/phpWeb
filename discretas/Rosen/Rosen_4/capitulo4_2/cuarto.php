@@ -1123,8 +1123,8 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-     <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
@@ -1136,7 +1136,7 @@ if ($respuesta_110 === '264') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 377vh;
+    height: 390vh;
     }
 </style>
  
@@ -1440,80 +1440,137 @@ function ocultarMensaje4() {
 <body> 
 <div class="seccion izquierda">
     <form action="./cuarto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <p>Es importante tener una estimación razonable de cuánto tiempo tomará a una computadora resolver un problema. 
-    Por ejemplo, si un algoritmo requiere aproximadamente 10 horas, puede valer la pena usar el tiempo de computadora 
-    (y el dinero) necesario para resolverlo. Pero si requiere aproximadamente 10 mil millones de años, sería irracional
-    usar recursos para implementarlo.</p>
+    <img src="../../../../img/base_.png" alt=""  >
 
-    <p>Uno de los fenómenos más interesantes de la tecnología moderna es el tremendo aumento en la velocidad y memoria
-    de las computadoras. Otro factor importante que reduce el tiempo necesario para resolver problemas en computadoras
-    es el <strong>procesamiento en paralelo</strong>, que consiste en realizar operaciones de manera simultánea.</p>
+    <p>A continuación, determinaremos el número de sumas de bits y desplazamientos de bits utilizados por el 
+    <strong>Algoritmo 3</strong> para multiplicar dos enteros.</p>
 
-    <p>Los algoritmos eficientes, incluyendo la mayoría de los algoritmos con complejidad polinomial, se benefician
-    más de las mejoras tecnológicas significativas. Sin embargo, estas mejoras ofrecen poca ayuda para superar la 
-    complejidad de algoritmos de tiempo exponencial o factorial. Gracias al aumento de la velocidad de cómputo, el
-    incremento de memoria, y el uso de algoritmos que aprovechan el procesamiento en paralelo, muchos problemas que 
-    se consideraban imposibles de resolver hace cinco años ahora se resuelven rutinariamente. Y seguramente, dentro 
-    de cinco años, esto seguirá siendo cierto, incluso si los algoritmos usados son intractables.</p>
-    <hr>
-    <strong>Resumen parte interesante:</strong>
-    <h2>¿Qué significa que un problema está en NP?</h2>
-<p><strong>NP</strong> significa <em>Nondeterministic Polynomial time</em> (tiempo polinómico no determinista), pero no te preocupes por el nombre técnico.</p>
+    <h4>Ejemplo 11</h4>
+    <p><strong>¿Cuántas sumas de bits y desplazamientos de bits se usan para multiplicar \( a \) y \( b \) 
+    usando el Algoritmo 3?</strong></p>
 
-<p>La idea central es esta:</p>
+    <p><strong>Solución:</strong> El Algoritmo 3 calcula el producto de \( a \) y \( b \) sumando los 
+    productos parciales \( c_0, c_1, c_2, \dots, c_{n-1} \). Cuando \( b_j = 1 \), calculamos el producto 
+    parcial \( c_j \) desplazando la expansión binaria de \( a \) por \( j \) bits. Cuando \( b_j = 0 \), 
+    no se requieren desplazamientos porque \( c_j = 0 \).</p>
 
-<p>Un problema está en <strong>NP</strong> si, aunque no sepamos cómo encontrar la solución rápidamente, <strong>sí podemos verificar una solución rápidamente</strong>, si alguien nos la da.</p>
+    <p>Por lo tanto, para encontrar los \( n \) enteros \( a b_j 2^j \), con \( j = 0, 1, \dots, n - 1 \), se requieren como máximo:</p>
 
-<h3>Ejemplo fácil:</h3>
-<p>Imagina que alguien te da un <strong>rompecabezas muy difícil</strong>.</p>
-
-<ul>
-  <li>Tú no sabes cómo resolverlo por tu cuenta rápido.</li>
-  <li>Pero si alguien te muestra una solución completa, tú puedes <strong>verificar en poco tiempo</strong> si está bien hecha o no (si todas las piezas encajan).</li>
-</ul>
-
-<p>Eso es un problema NP:</p>
-<ul>
-  <li>🔸 Difícil de resolver</li>
-  <li>🔹 Fácil de verificar</li>
-</ul>
-
-<hr>
-
-<h2> ¿Qué es un problema P?</h2>
-<p>Un problema está en la clase <strong>P</strong> si puede resolverse en <strong>tiempo polinómico</strong>. Es decir, existe un algoritmo que lo resuelve "rápido" (rápido en teoría significa: el tiempo de ejecución crece de forma razonable cuando crece el tamaño del input).</p>
-
-<p> <strong>Tiempo polinómico</strong> = como máximo algo así como <code>n</code>, <code>n²</code>, <code>n³</code>, etc.</p>
-
-<p> Estos problemas se consideran <strong>tractables</strong> o <strong>eficientemente resolubles</strong>.</p>
-
-<h3> Ejemplos de problemas en P:</h3>
-<ul>
-  <li>Ordenar una lista (con <code>mergesort</code>, <code>quicksort</code>…)</li>
-  <li>Buscar un elemento en una lista ordenada (búsqueda binaria)</li>
-  <li>Encontrar el camino más corto en un grafo sin pesos negativos (algoritmo de Dijkstra)</li>
-</ul>
-    <hr>
     <p>
-    <p>
-  <strong>P</strong> incluye todo lo que se puede hacer en tiempo 
-  \( O(n^k) \) para algún \( k \) fijo, pero también acepta tiempos como 
-  \( O(n \log n) \) o \( O(\log n) \), porque siguen siendo eficientes y razonables.
-</p>
+    \[
+    0 + 1 + 2 + \cdots + (n - 1)
+    \]
+    </p>
+
+<p>desplazamientos. Por lo tanto, según el Ejemplo 5 de la Sección 3.2, el número de desplazamientos requeridos es \( \mathcal{O}(n^2) \).</p>
+
+<p>Para sumar los enteros \( a b_j \) desde \( j = 0 \) hasta \( j = n - 1 \) se requiere la suma de un entero de \( n \) bits, un entero de \( n + 1 \) bits, …, y un entero de \( 2n \) bits. Sabemos por el Ejemplo 9 que cada una de estas sumas requiere \( \mathcal{O}(n) \) sumas de bits.</p>
+
+<p>En consecuencia, se requieren un total de \( \mathcal{O}(n^2) \) sumas de bits para todas las \( n \) sumas parciales. ◂</p>
+
+<p>Sorprendentemente, existen algoritmos más eficientes que el algoritmo convencional para multiplicar enteros. Uno de esos algoritmos, que usa \( \mathcal{O}(n^{1.585}) \) operaciones a nivel de bit para multiplicar números de \( n \) bits, será descrito en la Sección 8.3.</p>
+
+
+    <h4>Algoritmo para <code>div</code> y <code>mod</code></h4>
+
+<p>Dado un par de enteros \( a \) y \( d \), con \( d > 0 \), podemos encontrar \( q = a \div d \) y \( r = a \bmod d \) usando el <strong>Algoritmo 4</strong>.</p>
+
+<p>En este algoritmo de fuerza bruta, cuando \( a \) es positivo, restamos \( d \) de \( a \) tantas veces como sea necesario hasta que lo que queda sea menor que \( d \). El número de veces que realizamos esta resta es el cociente, y lo que queda después de todas las restas es el residuo.</p>
+
+<p>El Algoritmo 4 también cubre el caso en que \( a \) es negativo. Este algoritmo encuentra primero el cociente \( q \) y el residuo \( r \) cuando \( |a| \) es dividido por \( d \). Luego, si \( a < 0 \) y \( r > 0 \), se utilizan estos resultados para hallar el cociente \( -(q + 1) \) y el residuo \( d - r \) cuando se divide \( a \) entre \( d \).</p>
+
+<p>Se deja al lector (Ejercicio 65) demostrar que, suponiendo que \( a > d \), este algoritmo utiliza \( \mathcal{O}(q \log a) \) operaciones a nivel de bit.</p>
+
+<h4>Algoritmo 4: Cálculo de <code>div</code> y <code>mod</code></h4>
+
+<pre><code>
+ALGORITHM 4 Computing div and mod.
+procedure division algorithm(a: integer, d: positive integer)
+q := 0
+r := |a|
+while r ≥ d
+    r := r − d
+    q := q + 1
+if a < 0 and r > 0 then
+    r := d − r
+    q := −(q + 1)
+return (q, r) {q = a div d is the quotient, r = a mod d is the remainder}
+</code></pre>
+
+<p>Existen algoritmos más eficientes que el Algoritmo 4 para determinar el cociente \( q = a \div d \) y el residuo \( r = a \bmod d \) cuando un entero positivo \( a \) se divide por un entero positivo \( d \) (ver [Kn98] para más detalles).</p>
+
+<p>Estos algoritmos requieren \( \mathcal{O}(\log a \cdot \log d) \) operaciones a nivel de bit. Si ambas expansiones binarias de \( a \) y \( d \) contienen \( n \) bits o menos, entonces podemos reemplazar \( \log a \cdot \log d \) por \( n^2 \).</p>
+
+<p>Esto significa que se necesitan \( \mathcal{O}(n^2) \) operaciones a nivel de bit para encontrar el cociente y el residuo 
+    cuando \( a \) se divide por \( d \).</p>
+
+    <hr>
+
+<h3> ¿Qué hacen <code>div</code> y <code>mod</code>?</h3>
+
+<p>Dado un entero \( a \) y un divisor positivo \( d \), queremos encontrar:</p>
+
+<ul>
+  <li><strong>El cociente:</strong> \( q = a \div d \), es decir, cuántas veces cabe \( d \) en \( a \).</li>
+  <li><strong>El residuo:</strong> \( r = a \bmod d \), lo que sobra después de restar todas esas veces.</li>
+</ul>
+
+<h3> ¿Cómo funciona el Algoritmo 4?</h3>
+
+<p>Es un método <strong>bruto</strong> (poco eficiente), pero sencillo:</p>
+
+<ol>
+  <li>Calcula \( |a| \) (el valor absoluto).</li>
+  <li>Resta repetidamente \( d \) hasta que ya no se pueda (es decir, hasta que el resultado sea menor que \( d \)).</li>
+  <li>Cuenta cuántas veces restó \( d \): ese es el cociente \( q \).</li>
+  <li>Lo que queda es el residuo \( r \).</li>
+</ol>
+
+<p>Luego, si \( a \) era negativo y el residuo quedó positivo, se ajusta:</p>
+
+<ul>
+  <li>Se hace \( q = -(q + 1) \)</li>
+  <li>Y \( r = d - r \)</li>
+</ul>
+
+<p>Esto garantiza que los resultados cumplen:</p>
 
 <p>
-  Por eso, <strong>mergesort</strong> y <strong>búsqueda binaria</strong> son considerados problemas en 
-  <strong>P</strong>, es decir, <em>eficientemente resolubles</em>.
+  \[
+  a = q \cdot d + r \quad \text{y} \quad 0 \leq r < d
+  \]
 </p>
+
+
+<h3>🔍 ¿Cómo se hace cuando \( a \) es positivo?</h3>
+
+<p>Para \( a = 23 \), buscamos el múltiplo de 5 más cercano que no se pase de 23.</p>
+
+<p>\( 5 \cdot 4 = 20 \) ✅</p>
+
+<p>Sobra: \( r = 23 - 20 = 3 \)</p>
+
+<p>Entonces:</p>
+
+<p>\( 23 = 4 \cdot 5 + 3 \)</p>
+
 <hr>
 
+<h3>🔴 ¿Y qué pasa con \( a = -23 \)?</h3>
+
+<p>Aquí queremos el múltiplo de 5 más cercano por debajo (o igual) a -23.</p>
+
+<p>\( 5 \cdot (-4) = -20 \) ❌ muy grande (porque \( -20 > -23 \))</p>
+
+<p>\( 5 \cdot (-5) = -25 \) ✅ perfecto (porque \( -25 \le -23 \))</p>
+
+<p>Entonces:</p>
+
+<p>\( -23 = (-5) \cdot 5 + 2 \)</p>
+
+<p>Y \( r = -23 - (-25) = 2 \), que está entre 0 y 5. ✅</p>
 
 
-
-
-
- 
-  
     </form>
 </div>
 
@@ -1522,6 +1579,144 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
     <form action="./cuarto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <h3>4.2.4 Exponenciación Modular</h3>
+
+<p>En criptografía, es importante poder encontrar eficientemente \( b^n \bmod m \) sin usar una cantidad excesiva de memoria, donde \( b \), \( n \) y \( m \) son enteros grandes. Es poco práctico calcular primero \( b^n \) y luego hallar su residuo al dividir entre \( m \), porque \( b^n \) puede ser un número enorme y se necesitaría una gran cantidad de memoria para almacenar dichos valores.</p>
+
+<p>En su lugar, podemos evitar problemas de tiempo y memoria utilizando un algoritmo que emplea la expansión binaria del exponente \( n \).</p>
+
+<p>Antes de presentar un algoritmo para una exponenciación modular rápida basado en la expansión binaria del exponente, observa que podemos evitar usar grandes cantidades de memoria si calculamos \( b^n \bmod m \) sucesivamente para \( b^k \bmod m \) con \( k = 1, 2, \dots, n \), utilizando el hecho de que:</p>
+
+<p>
+\[
+b^{k+1} \bmod m = b \cdot (b^k \bmod m) \bmod m
+\]
+</p>
+
+<p>(por el Corolario 2 del Teorema 5 de la Sección 4.1). (Recuerda que \( 1 \leq b < m \)). Sin embargo, este enfoque es poco práctico porque requiere \( n - 1 \) multiplicaciones de enteros y \( n \) podría ser enorme.</p>
+
+<p>Para motivar el algoritmo rápido de exponenciación modular, ilustraremos su idea básica. Explicaremos cómo usar la expansión binaria de \( n \), digamos \( n = (a_{k-1} \dots a_1 a_0)_2 \), para calcular \( b^n \). Primero, nota que:</p>
+
+<p>
+\[
+b^n = b^{a_{k-1} \cdot 2^{k-1} + \cdots + a_1 \cdot 2 + a_0} = b^{a_{k-1} \cdot 2^{k-1}} \cdots b^{a_1 \cdot 2} \cdot b^{a_0}.
+\]
+</p>
+
+<p>Esto muestra que para calcular \( b^n \), solo necesitamos calcular los valores de \( b, b^2, (b^2)^2 = b^4, (b^4)^2 = b^8, \dots, b^{2^k} \). Una vez tenemos estos valores, multiplicamos los términos \( b^{2^j} \) en esta lista donde \( a_j = 1 \). (Para mayor eficiencia y menor uso de memoria, después de cada multiplicación reducimos el resultado módulo \( m \)). Esto nos da \( b^n \).</p>
+
+<p>Por ejemplo, para calcular \( 3^{11} \), primero notamos que \( 11 = (1011)_2 \), así que:</p>
+
+<p>
+\[
+3^{11} = 3^8 \cdot 3^2 \cdot 3 = 6561 \cdot 9 \cdot 3 = 177,147.
+\]
+</p>
+
+<p>El algoritmo encuentra sucesivamente \( b \bmod m, b^2 \bmod m, b^4 \bmod m, \dots, b^{2^{k-1}} \bmod m \) y multiplica los términos \( b^{2^j} \bmod m \) donde \( a_j = 1 \), hallando el residuo del producto módulo \( m \) después de cada multiplicación. Nota que solo necesitamos realizar \( \mathcal{O}(\log_2(n)) \) multiplicaciones.</p>
+
+<h4>ALGORITHM 5 Fast Modular Exponentiation</h4>
+
+<pre><code>
+procedure modular exponentiation(b: integer, n = (a_{k-1}a_{k-2} … a_1a_0)_2,
+                                 m: positive integers)
+x := 1
+power := b mod m
+for i := 0 to k − 1
+    if a_i = 1 then x := (x ⋅ power) mod m
+    power := (power ⋅ power) mod m
+return x {x equals b^n mod m}
+</code></pre>
+
+<h4>Ejemplo 12</h4>
+<p><strong>Usa el Algoritmo 5 para encontrar \( 3^{644} \bmod 645 \).</strong></p>
+
+<p><strong>Solución:</strong> El Algoritmo 5 inicialmente establece \( x = 1 \) y \( \text{power} = 3 \bmod 645 = 3 \). En el cálculo de \( 3^{644} \bmod 645 \), este algoritmo determina \( 3^{2^j} \bmod 645 \) para \( j = 1, 2, \dots, 9 \) mediante cuadrados sucesivos y reducción módulo 645.</p>
+
+    <p>Si \( a_j = 1 \) (donde \( a_j \) es el bit en la posición \( j \) de la expansión binaria de 644, que es
+    \( (1010000100)_2 \)), multiplica el valor actual de \( x \) por \( 3^{2^j} \bmod 645 \) y reduce el resultado 
+    módulo 645.</p>
+
+    <p>Aquí están los pasos usados:</p>
+
+    <img src="../../../../img/tabla_modulo.png" alt="" width="600" >
+ 
+    <p>Esto muestra que al seguir los pasos del Algoritmo 5 se obtiene el resultado:</p>
+
+    <p>
+    \[
+    3^{644} \bmod 645 = 36.
+    \]
+    </p>
+
+    <p>◂</p>
+
+    <p>El Algoritmo 5 es bastante eficiente; utiliza \( \mathcal{O}((\log m)^2 \log n) \) operaciones a nivel de bit para encontrar \( b^n \bmod m \) (ver Ejercicio 64).</p>
+
+    <hr>
+
+
+
+    <h3>📌 Vamos a repasar el ejemplo para aclararlo:</h3>
+<p>Queremos calcular:</p>
+<p>\[ 3^{11} \mod 13 \]</p>
+
+<h4>🔢 Paso 1: Convertimos 11 a binario</h4>
+<p>\[ 11 = (1011)_2 \quad   \]</p>
+
+ 
+
+<p>
+\( n = 11 = (1011)_2 \)
+</p>
+
+<p>
+Esto significa que:
+</p>
+
+<p>
+\[
+11 = 1 \cdot 2^3 + 0 \cdot 2^2 + 1 \cdot 2^1 + 1 \cdot 2^0 = 8 + 2 + 1
+\]
+</p>
+
+<p>
+Entonces:
+</p>
+
+
+
+<p>
+\[
+b^{11} = b^{8 + 2 + 1} = b^8 \cdot b^2 \cdot b^1
+\]
+</p>
+
+<p>Entonces:</p>
+<p>
+    <ul>
+  <li>\( 3^8 \mod 13 = 9 \)</li>
+  <li>\( 3^2 \mod 13 = 9 \)</li>
+  <li>\( 3^1 \mod 13 = 3 \)</li>
+</ul>
+</p>
+<p>\[ 3^{11} \mod 13 = (9 \cdot 9 \cdot 3) \mod 13 \]</p>
+
+<h4>Multiplica los dos primeros:</h4>
+<p>\[ 9 \cdot 9 = 81 \]</p>
+
+<p>Ahora, aplicamos módulo 13:</p>
+<p>\[ 81 \mod 13 = 3 \quad \text{(porque } 81 = 6 \cdot 13 + 3 \text{)} \]</p>
+
+<h4>Multiplicamos ese resultado por el siguiente factor:</h4>
+<p>\[ 3 \cdot 3 = 9 \]</p>
+
+<p>Y como \( 9 < 13 \), el módulo no cambia nada:</p>
+<p>\[ 9 \mod 13 = 9 \]</p>
+
+<h3>✅ Resultado final:</h3>
+<p>\[ (9 \cdot 9 \cdot 3) \mod 13 = ((81 \mod 13) \cdot 3) \mod 13 = (3 \cdot 3) \mod 13 = 9 \]</p>
+
 
     </form>
 </div>

@@ -1136,7 +1136,7 @@ if ($respuesta_110 === '264') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 395vh;
+    height: 320vh;
     }
 </style>
  
@@ -1483,26 +1483,7 @@ function ocultarMensaje4() {
     <hr>
 
 
-
-    <h2>4.1.4 Aritmética Modular</h2>
-
-<p>En algunas situaciones, solo nos interesa el residuo de un número entero cuando se divide por un número entero positivo especificado. Por ejemplo, cuando preguntamos qué hora será (en un reloj de 24 horas) dentro de 50 horas, solo nos importa el residuo cuando 50 más la hora actual se divide por 24. Debido a que a menudo solo estamos interesados en los residuos, tenemos notaciones especiales para ellos.</p>
-
-<p>Ya hemos introducido la notación \( a \mod m \) para representar el residuo cuando un entero \( a \) se divide por el entero positivo \( m \). Ahora introducimos una notación diferente, pero relacionada, que indica que dos enteros tienen el mismo residuo cuando se dividen por el entero positivo \( m \).</p>
-
-    <hr>
-
-
-    
-    </form>
-</div>
-
-
-
-
-<div class="seccion derecha">
-    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <p>Cuando te dicen:</p>
+ <p>Cuando te dicen:</p>
 
     <p><em>"¿24 y 14 son congruentes módulo 6?"</em></p>
 
@@ -1544,6 +1525,17 @@ function ocultarMensaje4() {
     b \equiv a \pmod{m}
     $$</li>
     </ul>
+
+    
+    </form>
+</div>
+
+
+
+
+<div class="seccion derecha">
+    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+   
     <hr>
 
     <h2>KARL FRIEDRICH GAUSS (1777–1855)</h2>

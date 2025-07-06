@@ -1440,7 +1440,203 @@ function ocultarMensaje4() {
 <body> 
 <div class="seccion izquierda">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-   
+   <h3>4.2 Representaciones y Algoritmos con Enteros</h3>
+
+<h4>4.2.1 Introducción</h4>
+
+<p>Los enteros pueden expresarse usando cualquier entero mayor que uno como base, como mostraremos en esta sección. Aunque comúnmente usamos representaciones decimales (base 10), también se usan con frecuencia representaciones binarias (base 2), octales (base 8) y hexadecimales (base 16), especialmente en informática. Dada una base \( b \) y un entero \( n \), mostraremos cómo construir la representación en base \( b \) de este entero. También explicaremos cómo convertir rápidamente entre notaciones binaria y octal, y entre notaciones binaria y hexadecimal.</p>
+
+<p>Como se mencionó en la Sección 3.1, el término algoritmo originalmente se refería a procedimientos para realizar operaciones aritméticas usando las representaciones decimales de enteros. Estos algoritmos, adaptados para su uso con representaciones binarias, son la base de la aritmética computacional. Proveen buenas ilustraciones del concepto de algoritmo y de la complejidad de los algoritmos. Por estas razones, serán discutidos en esta sección.</p>
+
+<p>También introduciremos un algoritmo para encontrar \( a \div d \) y \( a \bmod d \), donde \( a \) y \( d \) son enteros con \( d > 1 \). Finalmente, describiremos un algoritmo eficiente para la exponenciación modular, el cual es un algoritmo particularmente importante para la criptografía, como veremos en la Sección 4.6.</p>
+
+<h4>4.2.2 Representaciones de Enteros</h4>
+
+<p>En la vida cotidiana usamos notación decimal para expresar enteros. En notación decimal, un entero \( n \) se escribe como una suma de la forma:</p>
+
+<p>
+\[
+n = a_k \cdot 10^k + a_{k-1} \cdot 10^{k-1} + \cdots + a_1 \cdot 10 + a_0,
+\]
+</p>
+
+<p>donde \( a_j \) es un entero tal que \( 0 \leq a_j \leq 9 \) para \( j = 0, 1, \dots, k \). Por ejemplo, 965 se usa para denotar \( 9 \cdot 10^2 + 6 \cdot 10 + 5 \). Sin embargo, a menudo es conveniente usar bases distintas de 10. En particular, las computadoras usualmente usan notación binaria (con 2 como base) al realizar operaciones aritméticas, y notación octal (base 8) o hexadecimal (base 16) al expresar caracteres, como letras o dígitos. De hecho, podemos usar cualquier entero mayor que 1 como base al expresar enteros. Esto se establece en el Teorema 1.</p>
+
+<h4>Teorema 1</h4>
+<p>Sea \( b \) un entero mayor que 1. Entonces, si \( n \) es un entero positivo, puede expresarse de manera única en la forma:</p>
+
+<p>
+\[
+n = a_k b^k + a_{k-1} b^{k-1} + \cdots + a_1 b + a_0,
+\]
+</p>
+
+<p>donde \( k \) es un entero no negativo, \( a_0, a_1, \dots, a_k \) son enteros no negativos menores que \( b \), y \( a_k \neq 0 \).</p>
+
+<p>Una demostración de este teorema puede construirse usando inducción matemática, un método de demostración que se discute en la Sección 5.1. También puede encontrarse en [Ro10]. La representación de \( n \) dada en el Teorema 1 se llama la <strong>expansión en base \( b \)</strong> de \( n \). La expansión en base \( b \) de \( n \) se denota por:</p>
+
+<p>
+\[
+(a_k a_{k-1} \dots a_1 a_0)_b.
+\]
+</p>
+
+    <p>Por ejemplo, \( (245)_8 \) representa \( 2 \cdot 8^2 + 4 \cdot 8 + 5 = 165 \). Típicamente, 
+    el subíndice 10 se omite 
+    en las expansiones en base 10 de enteros porque la base 10, o decimal, es comúnmente usada para 
+    representar enteros.</p>
+
+
+
+    <h4>Ejemplo 1</h4>
+    <p><strong>¿Cuál es la expansión decimal del entero que tiene \( (101011111)_2 \) como su expansión binaria?</strong></p>
+
+    <p><strong>Solución:</strong> Tenemos</p>
+
+    <p>
+    \[  
+    (101011111)_2 = 1 \cdot 2^8 + 0 \cdot 2^7 + 1 \cdot 2^6 + 0 \cdot 2^5 + 1 \cdot 2^4 + 1 \cdot 2^3 + 1 \cdot 2^2 + 1
+    \cdot 2^1 + 1 \cdot 2^0 = 351.
+    \]
+    </p>
+
+    <hr>
+
+    <h4>Expansiones Octales y Hexadecimales</h4>
+
+    <p>Entre las bases más importantes en informática están la base 2, la base 8 y la base 16. Las 
+    expansiones en base 8 
+    se llaman <strong>expansiones octales</strong>, y las expansiones en base 16 se llaman 
+    <strong>expansiones hexadecimales</strong>.</p>
+
+    <h4>Ejemplo 2</h4>
+    <p><strong>¿Cuál es la expansión decimal del número con expansión octal \( (7016)_8 \)?</strong></p>
+
+    <p><strong>Solución:</strong> Usando la definición de expansión en base \( b \) con \( b = 8 \), tenemos:</p>
+
+    <p>
+    \[
+    (7016)_8 = 7 \cdot 8^3 + 0 \cdot 8^2 + 1 \cdot 8 + 6 = 3598.
+    \]
+    </p>
+
+    <p>Se requieren dieciséis dígitos diferentes para las expansiones hexadecimales. Usualmente, los dígitos 
+    hexadecimales usados son: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E y F, donde las letras A hasta F 
+    representan los dígitos correspondientes a los números del 10 al 15 (en notación decimal).</p>
+
+ 
+
+    <h4>Ejemplo 3</h4>
+    <p><strong>¿Cuál es la expansión decimal del número con expansión hexadecimal \( (2AE0B)_{16} \)?</strong></p>
+
+    <p><strong>Solución:</strong> Usando la definición de expansión en base \( b \) con \( b = 16 \), tenemos:</p>
+
+    <p>
+    \[
+    (2AE0B)_{16} = 2 \cdot 16^4 + 10 \cdot 16^3 + 14 \cdot 16^2 + 0 \cdot 16 + 11 = 175627.
+    \]
+    </p>
+
+    <p>Cada dígito hexadecimal puede representarse usando cuatro bits. Por ejemplo, se tiene que</p>
+
+    <p>
+    \[
+    (11100101)_2 = (E5)_{16}
+    \]
+    </p>
+
+    <p>porque \( (1110)_2 = (E)_{16} \) y \( (0101)_2 = (5)_{16} \). Los <em>bytes</em>, que son cadenas de bits 
+    de longitud ocho, pueden representarse mediante dos dígitos hexadecimales.</p>
+
+
+ <button onmousedown="mostrarImagen2()" onmouseup="ocultarImagen2()">Contexto</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada2" src="../../../../img/hexa.png" style="display: none; max-width: 100%" >
+
+    <script>
+        function mostrarImagen2() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+
+        // Mostrar la imagen
+        imagenMostrada2.style.display = 'block';
+        }
+
+        function ocultarImagen2() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada2.style.display = 'none';
+        }
+    </script>
+
+    <hr>
+
+    <h4>Conversión de Base</h4>
+
+    <p>Ahora describiremos un algoritmo para construir la expansión en base \( b \) de un entero \( n \).</p>
+
+    <p>Primero, divide \( n \) entre \( b \) para obtener un cociente y un residuo, es decir,</p>
+
+    <p>
+    \[
+    n = bq_0 + a_0,\quad 0 \leq a_0 < b.
+    \]
+    </p>
+
+    <p>El residuo \( a_0 \) es el dígito más a la derecha en la expansión en base \( b \) de \( n \). Luego, 
+    divide \( q_0 \) entre \( b \) para obtener</p>
+
+    <p>
+    \[
+    q_0 = bq_1 + a_1,\quad 0 \leq a_1 < b.  
+    \]
+    </p>
+
+    <p>Vemos que \( a_1 \) es el segundo dígito desde la derecha en la expansión en base \( b \) de \( n \). Continúa 
+    este proceso dividiendo sucesivamente los cocientes por \( b \), obteniendo dígitos adicionales como los residuos. 
+    Este proceso termina cuando se obtiene un cociente igual a cero. Produce los dígitos en base \( b \) de \( n \) desde 
+    la derecha hacia la izquierda.</p>
+
+    
+    <h4>Ejemplo 4</h4>
+    <p><strong>Encuentra la expansión octal de \( (12345)_{10} \).</strong></p>
+
+    <p><strong>Solución:</strong> Primero, dividimos 12345 entre 8 para obtener:</p>
+
+    <p>
+    \[
+    12345 = 8 \cdot 1543 + 1.
+    \]
+    </p>
+
+    <p>Dividiendo sucesivamente los cocientes entre 8 obtenemos:</p>
+
+    <p>
+    \[
+    1543 = 8 \cdot 192 + 7,
+    \]
+    \[
+    192 = 8 \cdot 24 + 0,
+    \]
+    \[
+    24 = 8 \cdot 3 + 0,
+    \]
+    \[
+    3 = 8 \cdot 0 + 3.
+    \]
+    </p>
+
+    <p>Los residuos sucesivos que hemos encontrado, 1, 7, 0, 0 y 3, son los dígitos de derecha a izquierda de 
+    12345 en base 8. Por lo tanto,</p>
+
+    <p>
+    \[
+    (12345)_{10} = (30071)_8.
+    \]
+    </p>
+
+
     </form>
 </div>
 
@@ -1449,7 +1645,208 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-  
+    <hr>
+    <strong>parentesis</strong>
+    <p>
+    un numero cualquiera, tipo : 23455, se encuentra en alguna base?
+    </p>
+    <p><strong>Excelente pregunta.</strong> La respuesta es: <strong>todo número entero como "23455" puede 
+    interpretarse en múltiples bases</strong>, pero por sí solo no está asociado a ninguna base específica, a menos que:</p>
+
+<ul>
+  <li><strong>Se indique explícitamente su base</strong>, como:</li>
+</ul>
+
+<p>
+\[
+(23455)_{10}
+\] 
+: en base 10 (decimal),
+</p>
+<p>
+\[
+(23455)_{8}
+\] 
+: en base 8 (octal),
+</p>
+<p>
+\[
+(23455)_{16}
+\] 
+: en base 16 (hexadecimal), etc.
+</p>
+
+<ul>
+  <li><strong>Esté en un contexto que determine la base.</strong> Por ejemplo:</li>
+</ul>
+
+<ul>
+  <li>En la vida cotidiana, los números como "23455" suelen asumirse en base 10.</li>
+  <li>En programación, si se escribe <code>0x23455</code>, se asume base 16 (hexadecimal); <code>023455</code> podría asumirse como octal (base 8) en algunos lenguajes.</li>
+</ul>
+
+<h4>Validación de dígitos</h4>
+<p>Para saber si un número <em>podría</em> estar en una base dada, debes verificar si todos sus dígitos son válidos en esa base.</p>
+
+<p>Por ejemplo, el número <strong>23455</strong>:</p>
+<ul>
+  <li>Está permitido en base 10, porque todos sus dígitos (2, 3, 4, 5, 5) están entre 0 y 9.</li>
+  <li>También es válido en cualquier base mayor a 6, porque el dígito más grande es 5.</li>
+  <li>No sería válido en base 5 o menor, porque el dígito 5 no está permitido en esas bases.</li>
+</ul>
+
+<h4>Conclusión</h4>
+<p><strong>¿Está en alguna base?</strong> → Sí, podría interpretarse en muchas bases (≥6), pero <strong>no está en ninguna base en particular hasta que se lo especifiques</strong>.</p>
+
+<p>Para decir que 23455 está en base 10, deberías escribir:</p>
+
+<p>
+\[
+(23455)_{10}
+\]
+</p>
+
+
+    <hr>
+
+
+
+
+
+    <h4>Ejemplo 5</h4>
+    <p><strong>Encuentra la expansión hexadecimal de \( (177130)_{10} \).</strong></p>
+
+    <p><strong>Solución:</strong> Primero dividimos 177130 entre 16 para obtener:</p>
+
+    <p>
+    \[
+    177130 = 16 \cdot 11070 + 10.
+    \]
+    </p>
+
+    <p>Dividiendo sucesivamente los cocientes entre 16 obtenemos:</p>
+
+    <p>
+    \[
+    11070 = 16 \cdot 691 + 14,
+    \]
+    \[
+    691 = 16 \cdot 43 + 3,
+    \]
+    \[
+    43 = 16 \cdot 2 + 11,
+    \]
+    \[
+    2 = 16 \cdot 0 + 2.
+    \]
+    </p>
+
+    <p>Los residuos sucesivos que hemos encontrado, 10, 14, 3, 11 y 2, nos dan los dígitos de derecha a izquierda 
+    en la expansión hexadecimal (base 16) de \( (177130)_{10} \). Por lo tanto,</p>
+
+    <p>
+    \[
+    (177130)_{10} = (2B3EA)_{16}.
+    \]
+    </p>
+
+    <p>(Recuerda que los enteros 10, 11 y 14 corresponden a los dígitos hexadecimales A, B y E, respectivamente.)</p>
+
+    <hr>
+
+    <h4>Ejemplo 6</h4>
+    <p><strong>Encuentra la expansión binaria de \( (241)_{10} \).</strong></p>
+
+    <p><strong>Solución:</strong> Primero dividimos 241 entre 2 para obtener:</p>
+
+    <p>
+    \[
+    241 = 2 \cdot 120 + 1.
+    \]
+    </p>
+
+    <p>Dividiendo sucesivamente los cocientes entre 2 obtenemos:</p>
+
+    <p>
+    \[
+    120 = 2 \cdot 60 + 0,
+    \]
+    \[
+    60 = 2 \cdot 30 + 0,
+    \]
+    \[
+    30 = 2 \cdot 15 + 0,
+    \]
+    \[
+    15 = 2 \cdot 7 + 1,
+        \]
+    \[
+    7 = 2 \cdot 3 + 1,
+    \]
+    \[
+    3 = 2 \cdot 1 + 1,
+    \]
+    \[
+    1 = 2 \cdot 0 + 1.
+    \]
+    </p>
+
+    <p>Los residuos sucesivos que hemos encontrado, 1, 0, 0, 0, 1, 1, 1, 1, son los dígitos de derecha a 
+    izquierda en la expansión binaria (base 2) de \( (241)_{10} \). Por lo tanto,</p>
+
+    <p>
+    \[
+    (241)_{10} = (11110001)_2.
+    \]
+    </p>
+
+    <hr>
+
+    <p>El pseudocódigo dado en el <strong>Algoritmo 1</strong> encuentra la expansión en base \( b \), 
+    \( (a_{k-1} \dots a_1 a_0)_b \), del entero \( n \).</p>
+
+
+
+    <img src="../../../../img/representacion.png" alt="" width="570">
+ 
+     <h4>Algoritmo 1: Construcción de Expansiones en Base \( b \)</h4>
+
+<pre><code>
+procedure base_b_expansion(n, b: enteros positivos con b > 1)
+    q := n
+    k := 0
+    while q ≠ 0 hacer
+        a_k := q mod b
+        q := q div b
+        k := k + 1
+    return (a_{k−1}, … , a_1, a_0)  { (a_{k−1} … a_1 a_0)_b es la expansión en base b de n }
+</code></pre>
+
+
+    <p>En el Algoritmo 1, \( q \) representa el cociente obtenido mediante divisiones sucesivas por \( b \), 
+    comenzando con \( q = n \). Los dígitos en la expansión en base \( b \) son los residuos de estas divisiones 
+    y se obtienen mediante \( q \bmod b \). El algoritmo termina cuando se alcanza un cociente \( q = 0 \).</p>
+
+    <h5>Observación:</h5>
+    <p>Nota que el Algoritmo 1 puede considerarse como un <strong>algoritmo voraz (greedy)</strong>, porque en cada 
+    paso los dígitos en base \( b \) se toman tan grandes como sea posible.</p>
+
+    <hr>
+
+    <h4>Conversión entre Expansiones Binarias, Octales y Hexadecimales</h4>
+
+    <p>La conversión entre las expansiones binarias y octales, y entre las expansiones binarias y hexadecimales, es 
+    extremadamente fácil porque:</p>
+
+    <ul>
+    <li>Cada dígito octal corresponde a un bloque de <strong>tres</strong> dígitos binarios.</li>
+    <li>Cada dígito hexadecimal corresponde a un bloque de <strong>cuatro</strong> dígitos binarios.</li>
+    </ul>
+
+    <p>Estas correspondencias se muestran en la Tabla 1, sin ceros iniciales. (Se deja como Ejercicios 13-16 demostrar 
+    que esto es cierto.)</p>
+
+    <p>Esta conversión se ilustra en el <strong>Ejemplo 7</strong>.</p>
 
     </form>
 </div>

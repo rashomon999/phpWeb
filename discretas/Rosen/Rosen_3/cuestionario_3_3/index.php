@@ -2063,7 +2063,7 @@ procedure linear_search(x: integer, a₁, a₂,… , aₙ: distinct integers)
 
 
 
-<button onmousedown="mostrarMensaje2()" onmouseup="ocultarMensaje2()">aclaracion</button>
+    <button onmousedown="mostrarMensaje2()" onmouseup="ocultarMensaje2()">aclaracion</button>
     <div id="mensaje2" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
     <p>(Si n no es una potencia de 2, se puede imaginar como parte de una lista más grande con 
     <strong>2<sup>k+1</sup></strong> elementos, donde <strong>2<sup>k</sup> &lt; n &lt; 2<sup>k+1</sup></strong>. 

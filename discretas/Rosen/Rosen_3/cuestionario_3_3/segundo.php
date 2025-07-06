@@ -1692,11 +1692,19 @@ function ocultarMensaje4() {
     oninput="actualizarFormula2()" size="19">
 
 
-<h4> Paso 3: Ponemos todo en la fracción</h4>
-<p>Así que el promedio es:</p>
-<p>\[
-\frac{3 + 5 + 7 + \cdots + (2n + 1)}{n} = \frac{\sum_{i=1}^{n} (2i + 1)}{n} =  
-\]</p>
+
+    <br><br>
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_1 ?>
+    <?php echo $verificar_2 ?>
+    <?php echo $verificar_5 ?>
+
+    <hr>
+    <h4> Paso 3: Ponemos todo en la fracción</h4>
+    <p>Así que el promedio es:</p>
+    <p>\[
+    \frac{3 + 5 + 7 + \cdots + (2n + 1)}{n} = \frac{\sum_{i=1}^{n} (2i + 1)}{n} =  
+    \]</p>
 
 
     <span id="formula3">
@@ -1721,6 +1729,12 @@ function ocultarMensaje4() {
     <input type="text"  value="<?php echo $respuesta_4; ?>" size="9" readonly> 
 
     <p>lo cual se expresa como complejidad <strong>\(\Theta(n)\)</strong>.</p>
+
+
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_3 ?>
+    <?php echo $verificar_4 ?>
+    <hr>
 
     <h3> Observaciones:</h3>
 
@@ -1803,8 +1817,17 @@ for i := 1 to n − 1
     </p>
 
 
-
-  
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_6 ?>
+    <?php echo $verificar_7 ?>
+    <?php echo $verificar_8 ?>
+    <?php echo $verificar_9 ?>
+    <?php echo $verificar_10 ?>
+    <?php echo $verificar_11 ?>
+    <?php echo $verificar_12 ?>
+    <?php echo $verificar_13 ?>
+    <?php echo $verificar_14 ?>
+    <hr>
 
     </form>
 </div>
@@ -1869,8 +1892,16 @@ for j := 2 to n
     
     \(  )  \)</strong>.</p>
 
+            <button type="submit">Enviar</button>
 
-         <script>
+<?php echo $verificar_15 ?>
+<?php echo $verificar_16 ?>
+<?php echo $verificar_17 ?>
+<?php echo $verificar_18 ?>
+<?php echo $verificar_19 ?>
+<?php echo $verificar_20 ?>
+<?php echo $verificar_21 ?>
+          <script>
             function mostrarImagen() {
             var imagen = document.getElementById('imagen100');
 
@@ -1890,7 +1921,7 @@ for j := 2 to n
     <img id="imagen100" src="../../../../img/sumatoria.png" style="display: none; max-width: 100%" width="450">
 
          
-
+        <hr>
      <h2> Comparación entre Algoritmos de Ordenamiento</h2>
 
 <p>En los Ejemplos 5 y 6 mostramos que tanto el algoritmo de <strong>bubble sort</strong> como el de 
@@ -1914,6 +1945,10 @@ for j := 2 to n
     <input type="text" value="<?php echo $respuesta_23; ?>" size="8" readonly>    
     tiempo.</p>
 
+
+      <button type="submit">Enviar</button>
+      <?php echo $verificar_22 ?>      
+      <?php echo $verificar_23 ?>
     <hr>
 
 
@@ -2060,8 +2095,20 @@ return C {C = [cij] is the product of A and B}
   <p>\( n \times n  \) = 
   <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="6">  
   </p>
-
-    </form>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_25 ?>
+    <?php echo $verificar_26 ?>
+    <?php echo $verificar_27 ?>
+    <?php echo $verificar_28 ?>
+    <?php echo $verificar_29 ?>
+    <?php echo $verificar_30 ?>
+    <?php echo $verificar_31 ?>
+    <?php echo $verificar_32 ?>
+    <?php echo $verificar_33 ?>
+    <?php echo $verificar_34 ?>
+    <?php echo $verificar_35 ?>
+    <hr>
+</form>
 </div>
 
 <div class="centered-container">

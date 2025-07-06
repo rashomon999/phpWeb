@@ -1457,7 +1457,8 @@ function ocultarMensaje4() {
     <p>
         \( 8^4 = 4096 \)
     </p>
-    
+    \[ 4096 \mod 23 = 2 \]
+
     En resumen, primero haces el cálculo 
     \( 193 \mod 31 \), luego elevas ese resultado a la cuarta potencia y finalmente tomas el residuo de ese
     resultado cuando se divide entre \( 23 \)

@@ -30,12 +30,16 @@
 <body>
     <div class="centered-container">
         <a class="btn" href=".\capitulo4_1\index.php">capitulo 4.1</a>
+        <a class="btn" href=".\cuestionario\index.php">cuestionario 4.1</a>
         Divisibility and Modular Arithmetic
         <a class="btn" href=".\capitulo4_2\index.php">capitulo 4.2</a>
+        <a class="btn" href=".\cuestionario4_2\index.php">cuestionario 4.2</a>
         4.2 Integer Representations and Algorithms 
         <a class="btn" href=".\capitulo4_3\index.php">capitulo 4.3</a>
+        <a class="btn" href=".\cuestionario4_3\index.php">cuestionario 4.3</a>
         4.3 Primes and Greatest Common Divisors  
         <a class="btn" href=".\capitulo4_4\index.php">capitulo 4.4</a>
+          <a class="btn" href=".\cuestionario4_4\index.php">cuestionario 4.4</a>
         4.4 Solving Congruences 
         <a class="btn" href=".\capitulo4_4\index.php">capitulo 4.5</a>
         4.5 Applications of Congruences 
@@ -43,9 +47,9 @@
         4.6 Cryptography 
         <br><br>
         <a class="btn" href=".\ejercicios\index.php">ejercicios clase</a>
-        <a class="btn" href=".\cuestionario\index.php">cuestionario 4.1</a>
-        <a class="btn" href=".\cuestionario4_3\index.php">cuestionario 4.3</a>
-        <a class="btn" href=".\cuestionario4_4\index.php">cuestionario 4.4</a>
+         
+         
+       
     </div>
 </body>
 </html>

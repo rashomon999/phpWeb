@@ -499,13 +499,15 @@ Los requisitos del sistema, en cambio, abarcan los requisitos del usuario, los r
     <strong>parentesis</strong>: es decir:
     <p>Los requisitos de los clientes o usuarios finales del sistema se clasifican, según el SWEBOK, como:</p>
 
-<p>✅ <strong>Requisitos del usuario</strong>.</p>
+    <p>✅ <strong>Requisitos del usuario</strong>.</p>
 
-<p>Y esos requisitos del usuario son una subcategoría dentro de:</p>
+    <p>Y esos requisitos del usuario son una subcategoría dentro de:</p>
 
-<p>✅ <strong>Requisitos del sistema</strong>.</p>
+    <p>✅ <strong>Requisitos del sistema</strong>.</p>
 
     <hr>
+
+    
     </form>
 </div>
 

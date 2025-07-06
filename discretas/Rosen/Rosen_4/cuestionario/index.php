@@ -830,7 +830,7 @@ if ($respuesta_normalizada === $solucion_normalizada) {
 
 
  $respuesta_73 = isset($_POST['respuesta_73']) ? $_POST['respuesta_73'] : '';
-if ($respuesta_73 === '152') { 
+if ($respuesta_73 === 'simetrica') { 
     $verificar_73 = "correcto";
 } elseif ($respuesta_73 === '') {
     $verificar_73 = '';
@@ -839,16 +839,18 @@ if ($respuesta_73 === '152') {
 }
 
  $respuesta_74 = isset($_POST['respuesta_74']) ? $_POST['respuesta_74'] : '';
-if ($respuesta_74 === '171') { 
+  $respuesta_74_dos = str_replace(' ','' ,$respuesta_74);
+
+if ($respuesta_74_dos === 'b\equiva\pmod{m}') { 
     $verificar_74 = "correcto";
-} elseif ($respuesta_74 === '') {
+} elseif ($respuesta_74_dos === '') {
     $verificar_74 = '';
 } else {
     $verificar_74 = "incorrecto";
 }
 
  $respuesta_75 = isset($_POST['respuesta_75']) ? $_POST['respuesta_75'] : '';
-if ($respuesta_75 === '190') { 
+if ($respuesta_75 === 'lo mismo') { 
     $verificar_75 = "correcto";
 } elseif ($respuesta_75 === '') {
     $verificar_75 = '';
@@ -857,25 +859,29 @@ if ($respuesta_75 === '190') {
 }
 
  $respuesta_76 = isset($_POST['respuesta_76']) ? $_POST['respuesta_76'] : '';
-if ($respuesta_76 === '209') { 
+ $respuesta_76_dos = str_replace(' ','' ,$respuesta_76);
+
+if ($respuesta_76_dos === 'a+c') { 
     $verificar_76 = "correcto";
-} elseif ($respuesta_76 === '') {
+} elseif ($respuesta_76_dos === '') {
     $verificar_76 = '';
 } else {
     $verificar_76 = "incorrecto";
 }
 
  $respuesta_77 = isset($_POST['respuesta_77']) ? $_POST['respuesta_77'] : '';
-if ($respuesta_77 === '228') { 
+  $respuesta_77_dos = str_replace(' ','' ,$respuesta_77);
+
+if ($respuesta_77_dos === 'm(s+t)') { 
     $verificar_77 = "correcto";
-} elseif ($respuesta_77 === '') {
+} elseif ($respuesta_77_dos === '') {
     $verificar_77 = '';
 } else {
     $verificar_77 = "incorrecto";
 }
 
  $respuesta_78 = isset($_POST['respuesta_78']) ? $_POST['respuesta_78'] : '';
-if ($respuesta_78 === '40') { 
+if ($respuesta_78 === '18') { 
     $verificar_78 = "correcto";
 } elseif ($respuesta_78 === '') {
     $verificar_78 = '';
@@ -884,7 +890,7 @@ if ($respuesta_78 === '40') {
 }
 
  $respuesta_79 = isset($_POST['respuesta_79']) ? $_POST['respuesta_79'] : '';
-if ($respuesta_79 === '60') { 
+if ($respuesta_79 === '3') { 
     $verificar_79 = "correcto";
 } elseif ($respuesta_79 === '') {
     $verificar_79 = '';
@@ -893,7 +899,7 @@ if ($respuesta_79 === '60') {
 }
 
  $respuesta_80 = isset($_POST['respuesta_80']) ? $_POST['respuesta_80'] : '';
-if ($respuesta_80 === '80') { 
+if ($respuesta_80 === '77') { 
     $verificar_80 = "correcto";
 } elseif ($respuesta_80 === '') {
     $verificar_80 = '';
@@ -902,7 +908,7 @@ if ($respuesta_80 === '80') {
 }
 
  $respuesta_81 = isset($_POST['respuesta_81']) ? $_POST['respuesta_81'] : '';
-if ($respuesta_81 === '100') { 
+if ($respuesta_81 === '2') { 
     $verificar_81 = "correcto";
 } elseif ($respuesta_81 === '') {
     $verificar_81 = '';
@@ -911,7 +917,7 @@ if ($respuesta_81 === '100') {
 }
 
  $respuesta_82 = isset($_POST['respuesta_82']) ? $_POST['respuesta_82'] : '';
-if ($respuesta_82 === '120') { 
+if ($respuesta_82 === 'No') { 
     $verificar_82 = "correcto";
 } elseif ($respuesta_82 === '') {
     $verificar_82 = '';
@@ -920,7 +926,7 @@ if ($respuesta_82 === '120') {
 }
 
  $respuesta_83 = isset($_POST['respuesta_83']) ? $_POST['respuesta_83'] : '';
-if ($respuesta_83 === '140') { 
+if ($respuesta_83 === 'dividir') { 
     $verificar_83 = "correcto";
 } elseif ($respuesta_83 === '') {
     $verificar_83 = '';
@@ -929,7 +935,7 @@ if ($respuesta_83 === '140') {
 }
 
  $respuesta_84 = isset($_POST['respuesta_84']) ? $_POST['respuesta_84'] : '';
-if ($respuesta_84 === '160') { 
+if ($respuesta_84 === 'no') { 
     $verificar_84 = "correcto";
 } elseif ($respuesta_84 === '') {
     $verificar_84 = '';
@@ -937,37 +943,45 @@ if ($respuesta_84 === '160') {
     $verificar_84 = "incorrecto";
 }
 
- $respuesta_85 = isset($_POST['respuesta_85']) ? $_POST['respuesta_85'] : '';
-if ($respuesta_85 === '180') { 
+    $respuesta_85 = isset($_POST['respuesta_85']) ? $_POST['respuesta_85'] : '';
+    $respuesta_85_dos = str_replace(' ','' ,$respuesta_85);
+
+if ($respuesta_85_dos === '((a\modm)+(b\modm))\modm') { 
     $verificar_85 = "correcto";
-} elseif ($respuesta_85 === '') {
+} elseif ($respuesta_85_dos === '') {
     $verificar_85 = '';
 } else {
     $verificar_85 = "incorrecto";
 }
 
- $respuesta_86 = isset($_POST['respuesta_86']) ? $_POST['respuesta_86'] : '';
-if ($respuesta_86 === '200') { 
-    $verificar_86 = "correcto";
-} elseif ($respuesta_86 === '') {
-    $verificar_86 = '';
-} else {
-    $verificar_86 = "incorrecto";
-}
+    $respuesta_86 = isset($_POST['respuesta_86']) ? $_POST['respuesta_86'] : '';
+    $respuesta_86_dos = str_replace(' ','' ,$respuesta_86);
+    
+    if ($respuesta_86_dos === '((a\modm)(b\modm))\modm') { 
+        $verificar_86 = "correcto";
+    } elseif ($respuesta_86_dos === '') {
+        $verificar_86 = '';
+    } else {
+        $verificar_86 = "incorrecto";
+    }
 
  $respuesta_87 = isset($_POST['respuesta_87']) ? $_POST['respuesta_87'] : '';
-if ($respuesta_87 === '220') { 
+ $respuesta_87_dos = str_replace(' ','' ,$respuesta_87);
+
+if ($respuesta_87_dos === 'amodm') { 
     $verificar_87 = "correcto";
-} elseif ($respuesta_87 === '') {
+} elseif ($respuesta_87_dos === '') {
     $verificar_87 = '';
 } else {
     $verificar_87 = "incorrecto";
 }
 
  $respuesta_88 = isset($_POST['respuesta_88']) ? $_POST['respuesta_88'] : '';
-if ($respuesta_88 === '240') { 
+ $respuesta_88_dos = str_replace(' ','' ,$respuesta_88);
+
+if ($respuesta_88_dos === 'bmodm') { 
     $verificar_88 = "correcto";
-} elseif ($respuesta_88 === '') {
+} elseif ($respuesta_88_dos === '') {
     $verificar_88 = '';
 } else {
     $verificar_88 = "incorrecto";
@@ -1516,6 +1530,41 @@ function actualizarFormula16() {
     }
 }
 
+function actualizarFormula17() {
+    var f = document.getElementById('respuesta_74').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula17').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula18() {
+    var f = document.getElementById('respuesta_85').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula18').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula19() {
+    var f = document.getElementById('respuesta_86').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula19').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula20() {
+    var f = document.getElementById('respuesta_20').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula20').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
 
 function mostrarMensaje() {
     document.getElementById("mensaje").style.display = 'block';
@@ -1777,10 +1826,10 @@ Por lo tanto, hay \( \left\lfloor n/d \right\rfloor \) enteros positivos
     <span id="formula10">
     \( ? \)
     </span> 
-     .</li>
-</ul>
+    .</li>
+    </ul>
 
-<input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="4" 
+    <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="4" 
     id="respuesta_35" oninput="actualizarFormula3()">
 
     <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="4" 
@@ -2020,9 +2069,17 @@ id="respuesta_70" oninput="actualizarFormula14()">
 
  
 
-<p><strong>Demostración:</strong> Si <span style="font-family:serif;">a ≡ b (mod m)</span>, por la definición de congruencia, sabemos que <span style="font-family:serif;">m</span> divide <span style="font-family:serif;">a - b</span>. Esto significa que existe un entero <span style="font-family:serif;">k</span> tal que <span style="font-family:serif;">a - b = km</span>, es decir, <span style="font-family:serif;">a = b + km</span>. Recíprocamente, si existe un entero <span style="font-family:serif;">k</span> tal que <span style="font-family:serif;">a = b + km</span>, entonces <span style="font-family:serif;">m</span> divide a <span style="font-family:serif;">a - b</span>, y por tanto, <span style="font-family:serif;">a ≡ b (mod m)</span>.</p>
+<p><strong>Demostración:</strong> Si \( a \equiv b \pmod{m} \), por la definición de 
+congruencia, sabemos que \( m \mid (a - b) \). Esto 
+significa que existe un entero \( k \) tal que 
+\( a - b = km \), es decir, \( a = b + km \). 
+Recíprocamente, si existe un entero \( k \) tal que \( a = b + km \), entonces \( m \mid (a - b) \),
+y por tanto, \( a \equiv b \pmod{m} \).</p>
 
-<p>El conjunto de todos los enteros congruentes con un entero <span style="font-family:serif;">a</span> módulo <span style="font-family:serif;">m</span> se llama la clase de congruencia de <span style="font-family:serif;">a</span> módulo <span style="font-family:serif;">m</span>. En el Capítulo 9 mostraremos que existen <span style="font-family:serif;">m</span> clases de equivalencia disjuntas entre sí módulo <span style="font-family:serif;">m</span> y que la unión de todas ellas forma el conjunto de los enteros.</p>
+<p>El conjunto de todos los enteros congruentes con un entero \( a \) módulo 
+\( m \) se llama la clase de congruencia de \( a \) módulo \( m \). En el Capítulo 9 mostraremos que existen 
+\( m \) clases de equivalencia disjuntas entre sí módulo 
+\( m \) y que la unión de todas ellas forma el conjunto de los enteros.</p>
 
 
 
@@ -2070,7 +2127,283 @@ id="respuesta_72" oninput="actualizarFormula16()">
 <button type="submit">Enviar</button>
 <?php echo $verificar_71 ?>
 <?php echo $verificar_72 ?>
-<br> 
+<br>  
+    <hr>
+     <p>Cuando te dicen:</p>
+
+    <p><em>"¿24 y 14 son congruentes módulo 6?"</em></p>
+
+    <p>Eso no significa que haya una diferencia de orden entre 24 y 14.</p>
+
+    <p>Porque la relación de congruencia es 
+        <input type="text" name="respuesta_73" value="<?php echo $respuesta_73; ?>" size="10">.</p>
+
+    <p>Es decir:</p>
+
+    <p>$$
+    a \equiv b \pmod{m} \quad \text{si y solo si}  
+    $$ 
+
+    <span id="formula17">
+    \( ? \)
+    </span> 
+
+    <br><br>
+    <input type="text" name="respuesta_74" value="<?php echo $respuesta_74; ?>" size="20"
+    id="respuesta_74" oninput="actualizarFormula17()">
+<br><br>
+
+
+
+
+    <p>Entonces, sí, en congruencias, decir "24 y 14" o "14 y 24" es 
+    <input type="text" name="respuesta_75" value="<?php echo $respuesta_75; ?>" size="10">    
+    .</>
+ 
+
+    <p> La razón es que la congruencia es una relación 
+      <input type="text" value="<?php echo $respuesta_73; ?>" size="10" readonly>    
+    , igual que decir "Juan es amigo de Pedro" significa 
+        automáticamente que "Pedro es amigo de Juan".</p>
+
+
+    <button type="submit">Enviar</button>
+<?php echo $verificar_73 ?>
+<?php echo $verificar_74 ?>
+<?php echo $verificar_75 ?>
+    <button onmousedown="mostrarMensaje()" onmouseup="ocultarMensaje()">Resumen</button>
+    <div id="mensaje" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
+  <p>Así que:</p>
+
+    <ul>
+    <li>"24 es congruente con 14 módulo 6"</li>
+    <li>y</li>
+    <li>"14 es congruente con 24 módulo 6"</li>
+    </ul>
+
+    <p>son exactamente lo mismo.</p>
+
+    <h3>Resumen:</h3>
+
+    <ul>
+    <li>La palabra "y" simplemente conecta los dos números que estás comparando.</li>
+    <li>No cambia el orden ni el significado.</li>
+    <li>Congruencia es simétrica, así que
+    $$
+    a \equiv b \pmod{m}
+    $$
+    es igual a
+    $$
+    b \equiv a \pmod{m}
+    $$</li>
+    </ul>
+    </div>
+    
+    <hr>
+
+      <h2>Demostración</h2>
+    <p>Usamos una demostración directa.  
+    Debido a que \( a \equiv b \pmod{m} \) y \( c \equiv d \pmod{m} \), por el Teorema 4 existen enteros \( s \) y \( t \) tales que:</p>
+    <p>
+        \( b = a + sm \)  y  \( d = c + tm \)
+    </p>
+    <p>Por lo tanto:</p>
+    <p>
+        \( b + d = (a + sm) + (c + tm) = ( \)
+             <input type="text" name="respuesta_76" value="<?php echo $respuesta_76; ?>" size="10">  
+
+        ) +
+        <input type="text" name="respuesta_77" value="<?php echo $respuesta_77; ?>" size="10">  
+
+    </p>
+    <p>
+        y
+    </p>
+    <p>
+        \( bd = (a + sm)(c + tm) = ac + m(at + cs + stm) \)
+    </p>
+    <p>Así que:</p>
+    <p>
+        \( a + c \equiv b + d \pmod{m} \)  y  \( ac \equiv bd \pmod{m} \)
+    </p>
+
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_76 ?>
+    <?php echo $verificar_77 ?>
+
+
+    <button onmousedown="mostrarImagen2()" onmouseup="ocultarImagen2()">Explicacion 1</button>
+    <!-- Elemento para mostrar la imagen -->
+ 
+    <img id="imagenMostrada2" src="../../../../img/congruente.png"  style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen2() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+
+        // Mostrar la imagen
+        imagenMostrada2.style.display = 'block';
+        }
+
+        function ocultarImagen2() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada2.style.display = 'none';
+        }
+    </script>
+
+
+ <button onmousedown="mostrarImagen()" onmouseup="ocultarImagen()">Explicacion 2</button>
+    <!-- Elemento para mostrar la imagen -->
+ 
+    <img id="imagenMostrada" src="../../../../img/congruencia_dos.png"  style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen() {
+        var imagenMostrada = document.getElementById('imagenMostrada');
+
+        // Mostrar la imagen
+        imagenMostrada.style.display = 'block';
+        }
+
+        function ocultarImagen() {
+        var imagenMostrada = document.getElementById('imagenMostrada');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada.style.display = 'none';
+        }
+    </script>
+
+    <hr>
+      
+    <h3>Ejemplo 6</h3>
+    <p>Dado que \( 7 \equiv 2 \pmod{5} \) y \( 11 \equiv 1 \pmod{5} \), entonces por el Teorema 5:</p>
+    <p>
+        
+            <input type="text" name="respuesta_78" value="<?php echo $respuesta_78; ?>" size="10">  
+            \( \equiv \) 
+            <input type="text" name="respuesta_79" value="<?php echo $respuesta_79; ?>" size="10"> 
+            \(\pmod{5} \)
+    </p>
+    <p>y</p>
+    <p>
+        <input type="text" name="respuesta_80" value="<?php echo $respuesta_80; ?>" size="10">
+        \( 
+            \equiv  \)
+            
+            <input type="text" name="respuesta_81" value="<?php echo $respuesta_81; ?>" size="10">
+               \(  \pmod{5} \)
+    </p>
+
+
+
+    
+    <h3>¡
+    <input type="text" name="respuesta_82" value="<?php echo $respuesta_82; ?>" size="10">    
+    siempre se puede 
+    <input type="text" name="respuesta_83" value="<?php echo $respuesta_83; ?>" size="10"> 
+    ambos lados de una congruencia por el mismo número!</h3>
+    <p>Debemos tener cuidado al trabajar con congruencias. Algunas propiedades que podríamos esperar que sean 
+        verdaderas, en realidad no lo son.  
+    Por ejemplo, si \( ac \equiv bc \pmod{m} \), puede ocurrir que \( a \equiv b \pmod{m} \) 
+    <input type="text" name="respuesta_84" value="<?php echo $respuesta_84; ?>" size="10">
+    sea cierto.  
+    De manera similar, aunque \( a \equiv b \pmod{m} \) y \( c \equiv d \pmod{m} \), puede suceder que
+     \( ac \equiv bd \pmod{m} \) no sea verdadero. (Ver ejercicio 43.)</p>
+
+
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_78 ?>
+    <?php echo $verificar_79 ?>
+    <?php echo $verificar_80 ?> 
+    <?php echo $verificar_81 ?>
+    <?php echo $verificar_82 ?>
+    <?php echo $verificar_83 ?>
+    <?php echo $verificar_84 ?>
+    <hr>
+      <h3>Corolario 2</h3>
+    <p>Muestra cómo encontrar los valores de la función módulo \( m \) para la suma y el producto de dos enteros usando los valores de esta función para cada uno de los enteros.</p>
+
+    <p><strong>Corolario 2</strong>:  
+    Sea \( m \) un entero positivo y \( a \) y \( b \) enteros. Entonces:</p>
+    <p>
+        \( (a + b) \mod m =   \)
+    </p>
+
+
+    <span id="formula18">
+    \( ? \)
+    </span> 
+
+    <br><br>
+    <input type="text" name="respuesta_85" value="<?php echo $respuesta_85; ?>" size="35"
+    id="respuesta_85" oninput="actualizarFormula18()">
+
+
+    <p>y</p>
+    <p>
+        \( ab \mod m =   \)
+    </p>
+
+    <span id="formula19">
+    \( ? \)
+    </span> 
+
+    <br><br>
+    <input type="text" name="respuesta_86" value="<?php echo $respuesta_86; ?>" size="35"
+    id="respuesta_86" oninput="actualizarFormula19()">
+
+    
+    <br><br>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_85 ?>
+    <?php echo $verificar_86 ?>
+    <button onmousedown="mostrarImagen3()" onmouseup="ocultarImagen3()">Explicacion</button>
+    <!-- Elemento para mostrar la imagen -->
+ 
+    <img id="imagenMostrada3" src="../../../../img/residuo.png"  style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen3() {
+        var imagenMostrada3 = document.getElementById('imagenMostrada3');
+
+        // Mostrar la imagen
+        imagenMostrada3.style.display = 'block';
+        }
+
+        function ocultarImagen3() {
+        var imagenMostrada3 = document.getElementById('imagenMostrada3');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada3.style.display = 'none';
+        }
+    </script>
+
+    <hr>
+    <h3>Demostración</h3>
+    <p>Por las definiciones de \( \mod m \) y de congruencia módulo \( m \), sabemos que:</p>
+    <p>
+        \( a \equiv (  \)
+            <input type="text" name="respuesta_87" value="<?php echo $respuesta_87; ?>" size="10">
+        \(  ) \pmod{m} \)  y  \( b \equiv ( \)
+            <input type="text" name="respuesta_88" value="<?php echo $respuesta_88; ?>" size="10">
+
+        \( ) \pmod{m} \)
+    </p>
+    <p>Por el Teorema 5, tenemos que:</p>
+    <p>
+        \( a + b \equiv (a \mod m) + (b \mod m) \pmod{m} \)
+    </p>
+    <p>y</p>
+    <p>
+        \( ab \equiv (a \mod m)(b \mod m) \pmod{m} \)
+    </p>
+    <p>Las igualdades en este corolario se siguen de estas últimas dos congruencias aplicando el Teorema 3.</p>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_87 ?>
+    <?php echo $verificar_88 ?>
+    <hr>
     </form>
 </div>
 
