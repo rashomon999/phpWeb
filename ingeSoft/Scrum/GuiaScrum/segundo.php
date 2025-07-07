@@ -1628,50 +1628,56 @@ function ocultarMensaje4() {
 <body> 
 <div class="seccion izquierda">
     <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-      <h2>Scrum Master</h2>
-  <p>
+    <h2>Scrum Master</h2>
+  
+    <p>
     El Scrum Master es responsable de establecer Scrum como se define en la Guía de Scrum. Lo hace
     ayudando a todos a comprender la teoría y la práctica de Scrum, tanto dentro del Scrum Team como de
     la organización.
-  </p>
-  <p>
+    </p>
+  
+    <p>
     El Scrum Master es responsable de lograr la efectividad del Scrum Team. Lo hace apoyando al Scrum
     Team en la mejora de sus prácticas, dentro del marco de trabajo de Scrum.
     Los Scrum Masters son verdaderos líderes que sirven al Scrum Team y a la organización en general.
-  </p>
-  <p>
+    </p>
+  
+    <p>
     El Scrum Master sirve al Scrum Team de varias maneras, que incluyen:
-  </p>
-  <ul>
+    </p>
+    
+    <ul>
     <li>Guiar a los miembros del equipo en ser autogestionados y multifuncionales;</li>
     <li>Ayudar al Scrum Team a enfocarse en crear Increments de alto valor que cumplan con la Definición de Terminado;</li>
     <li>Procurar la eliminación de impedimentos para el progreso del Scrum Team; y,</li>
     <li>Asegurarse de que todos los eventos de Scrum se lleven a cabo y sean positivos, productivos y se mantengan dentro de los límites de tiempo recomendados en esta Guía.</li>
-  </ul>
+    </ul>
 
-  <p>
+    <p>
     El Scrum Master sirve al Product Owner de varias maneras, que incluyen:
-  </p>
-  <ul>
-    <li>Ayudar a encontrar técnicas para una definición efectiva de Objetivos del Producto y la gestión del Product Backlog;</li>
-    <li>Ayudar al Scrum Team a comprender la necesidad de tener elementos del Product Backlog claros y concisos;</li>
-    <li>Ayudar a establecer una planificación empírica de productos para un entorno complejo; y,</li>
-    <li>Facilitar la colaboración de los interesados según se solicite o necesite.</li>
-  </ul>
+    </p>
+    
+    <ul>
+        <li>Ayudar a encontrar técnicas para una definición efectiva de Objetivos del Producto y la gestión del Product Backlog;</li>
+        <li>Ayudar al Scrum Team a comprender la necesidad de tener elementos del Product Backlog claros y concisos;</li>
+        <li>Ayudar a establecer una planificación empírica de productos para un entorno complejo; y,</li>
+        <li>Facilitar la colaboración de los interesados según se solicite o necesite.</li>
+    </ul>
 
-  <p>
-    El Scrum Master sirve a la organización de varias maneras, que incluyen:
-  </p>
-  <ul>
+    <p>
+      El Scrum Master sirve a la organización de varias maneras, que incluyen:
+    </p>
+    
+    <ul>
     <li>Liderar, capacitar y guiar a la organización en su adopción de Scrum;</li>
     <li>Planificar y asesorar implementaciones de Scrum dentro de la organización;</li>
     <li>Ayudar a los empleados y los interesados a comprender y aplicar un enfoque empírico para el trabajo complejo; y,</li>
     <li>Eliminar las barreras entre los interesados y los Scrum Teams.</li>
-  </ul>
+    </ul>
 
 
-  <h2>Eventos de Scrum</h2>
-  <p>
+    <h2>Eventos de Scrum</h2>
+    <p>
     El Sprint es un contenedor para todos los demás eventos. Cada evento en Scrum es una oportunidad
     formal para inspeccionar y adaptar los artefactos Scrum. Estos eventos están diseñados específicamente
     para habilitar la transparencia requerida. No operar cualquier evento según lo prescrito resulta en la
@@ -1679,57 +1685,62 @@ function ocultarMensaje4() {
     regularidad y minimizar la necesidad de reuniones no definidas en Scrum.
     Lo óptimo es que todos los eventos se celebren al mismo tiempo y en el mismo lugar para reducir la
     complejidad.
-  </p>
+    </p>
 
-  <h3>El Sprint</h3>
-  <p>
+    <h3>El Sprint</h3>
+    
+    <p>
     Los Sprints son el corazón de Scrum, donde las ideas se convierten en valor.
     Son eventos de duración fija de un mes o menos para crear consistencia. Un nuevo Sprint comienza
     inmediatamente después de la conclusión del Sprint anterior.
     Todo el trabajo necesario para lograr el Objetivo del Producto, incluido la Sprint Planning, Daily Scrums,
     Sprint Review y Sprint Retrospective, ocurre dentro de los Sprints.
-  </p>
-  <p>Durante el Sprint:</p>
-  <ul>
+    </p>
+  
+    <p>Durante el Sprint:</p>
+    <ul>
     <li>No se realizan cambios que pongan en peligro el Objetivo del Sprint;</li>
     <li>La calidad no disminuye;</li>
     <li>El Product Backlog se refina según sea necesario; y,</li>
     <li>El alcance se puede aclarar y renegociar con el Product Owner a medida que se aprende más.</li>
-  </ul>
-  <p>
+    </ul>
+    <p>
     Los Sprints permiten la previsibilidad al garantizar la inspección y adaptación del progreso hacia un
     Objetivo del Producto al menos cada mes calendario. Cuando el horizonte de un Sprint es demasiado
     largo, el Objetivo del Sprint puede volverse inválido, la complejidad puede crecer y el riesgo puede
     aumentar. Se pueden emplear Sprints más cortos para generar más ciclos de aprendizaje y limitar el
     riesgo de costo y esfuerzo a un período de tiempo menor. Cada Sprint puede considerarse un proyecto
     corto.
-  </p>
-  <p>
+    </p>
+    
+    <p>
     Existen varias prácticas para pronosticar el progreso, como el trabajo pendiente (burn‐downs), trabajo
     completado (burn‐ups) o flujos acumulativos (cumulative flows). Si bien han demostrado su utilidad, no
     reemplazan la importancia del empirismo. En entornos complejos, se desconoce lo que sucederá. Solo lo
     que ya ha sucedido se puede utilizar para la toma de decisiones con miras al futuro.
-  </p>
-  <p>
+    </p>
+  
+    <p>
     Un Sprint podría cancelarse si el Objetivo del Sprint se vuelve obsoleto. Solo el Product Owner tiene la
     autoridad para cancelar el Sprint.
-  </p>
+    </p>
 
 
 
 
 
     <h2>Sprint Planning</h2>
-  <p>
+    
+    <p>
     La Sprint Planning inicia el Sprint al establecer el trabajo que se realizará para el Sprint. El Scrum Team
     crea este plan resultante mediante trabajo colaborativo.
-  </p>
+    </p>
 
-   <p>
+    <p>
     El Product Owner se asegura de que los asistentes estén preparados para discutir los elementos más
     importantes del Product Backlog y cómo se relacionan con el Objetivo del Producto. El Scrum Team
     también puede invitar a otras personas a asistir a la Sprint Planning para brindar asesoramiento.
-  </p>
+    </p>
 
     </form>
 </div>
@@ -1755,7 +1766,7 @@ function ocultarMensaje4() {
     Backlog para incluirlos en el Sprint actual. El Scrum Team puede refinar estos elementos durante este
     proceso, lo que aumenta la comprensión y la confianza.
   </p>
-  <p>
+  <p> 
     Seleccionar cuánto se puede completar dentro de un Sprint puede ser un desafío. Sin embargo, cuanto
     más sepan los Developers sobre su desempeño pasado, su capacidad actual y su Definición de
     Terminado, más confiados estarán en sus pronósticos para el Sprint.

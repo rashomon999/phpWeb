@@ -1649,7 +1649,7 @@ function ocultarMensaje4() {
     </script>
 
 
-<button onmousedown="mostrarImagen9()" onmouseup="ocultarImagen9()">Ayuda</button>
+    <button onmousedown="mostrarImagen9()" onmouseup="ocultarImagen9()">Ayuda</button>
     <!-- Elemento para mostrar la imagen -->
 
     <img id="imagenMostrada9" src="../../../img/parte_4.png" style="display: none; max-width: 100%" width="460">

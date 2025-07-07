@@ -1628,7 +1628,8 @@ function ocultarMensaje4() {
 <body> 
 <div class="seccion izquierda">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-       <h2>Propósito de la Guía Scrum</h2>
+    
+    <h2>Propósito de la Guía Scrum</h2>
 
     <p>
     Desarrollamos Scrum a principios de la década de 1990. Escribimos la primera versión de la Guía Scrum
@@ -1663,95 +1664,95 @@ function ocultarMensaje4() {
 
     <h2>Definición de Scrum</h2>
 
-<p>
-Scrum es un marco de trabajo liviano que ayuda a las personas, equipos y organizaciones a generar valor
-a través de soluciones adaptativas para problemas complejos.
-</p>
+    <p>
+    Scrum es un marco de trabajo liviano que ayuda a las personas, equipos y organizaciones a generar valor
+    a través de soluciones adaptativas para problemas complejos.
+    </p>
 
-<p>
-En pocas palabras, Scrum requiere un Scrum Master para fomentar un entorno donde:
-</p>
+    <p>
+    En pocas palabras, Scrum requiere un Scrum Master para fomentar un entorno donde:
+    </p>
 
-<ol>
-  <li>Un Product Owner ordena el trabajo de un problema complejo en un Product Backlog.</li>
-  <li>El Scrum Team convierte una selección del trabajo en un Increment de valor durante un Sprint.</li>
-  <li>El Scrum Team y sus interesados inspeccionan los resultados y se adaptan para el próximo Sprint.</li>
-  <li>Repita</li>
-</ol>
+    <ol>
+    <li>Un Product Owner ordena el trabajo de un problema complejo en un Product Backlog.</li>
+    <li>El Scrum Team convierte una selección del trabajo en un Increment de valor durante un Sprint.</li>
+    <li>El Scrum Team y sus interesados inspeccionan los resultados y se adaptan para el próximo Sprint.</li>
+    <li>Repita</li>
+    </ol>
 
-<p>
-Scrum es simple. Pruébelo como está y determine si su filosofía, teoría y estructura ayudan a lograr
-objetivos y crear valor. El marco de trabajo Scrum es incompleto de manera intencional, solo define las
-partes necesarias para implementar la teoría de Scrum. Scrum se basa en la inteligencia colectiva de las
-personas que lo utilizan. En lugar de proporcionar a las personas instrucciones detalladas, las reglas de
-Scrum guían sus relaciones e interacciones.
-</p>
+    <p>
+    Scrum es simple. Pruébelo como está y determine si su filosofía, teoría y estructura ayudan a lograr
+    objetivos y crear valor. El marco de trabajo Scrum es incompleto de manera intencional, solo define las
+    partes necesarias para implementar la teoría de Scrum. Scrum se basa en la inteligencia colectiva de las
+    personas que lo utilizan. En lugar de proporcionar a las personas instrucciones detalladas, las reglas de
+    Scrum guían sus relaciones e interacciones.
+    </p>
 
-<p>
-En este marco de trabajo pueden emplearse varios procesos, técnicas y métodos. Scrum envuelve las
-prácticas existentes o las hace innecesarias. Scrum hace visible la eficacia relativa de las técnicas
-actuales de gestión, entorno y trabajo, de modo que se puedan realizar mejoras.
-</p>
+    <p>
+    En este marco de trabajo pueden emplearse varios procesos, técnicas y métodos. Scrum envuelve las
+    prácticas existentes o las hace innecesarias. Scrum hace visible la eficacia relativa de las técnicas
+    actuales de gestión, entorno y trabajo, de modo que se puedan realizar mejoras.
+    </p>
 
-<h3>Teoría de Scrum</h3>
+    <h3>Teoría de Scrum</h3>
 
-<p>
-Scrum se basa en el empirismo y el pensamiento Lean. El empirismo afirma que el conocimiento
-proviene de la experiencia y de la toma de decisiones con base en lo observado. El pensamiento Lean
-reduce el desperdicio y se enfoca en lo esencial.
-</p>
+    <p>
+    Scrum se basa en el empirismo y el pensamiento Lean. El empirismo afirma que el conocimiento
+    proviene de la experiencia y de la toma de decisiones con base en lo observado. El pensamiento Lean
+    reduce el desperdicio y se enfoca en lo esencial.
+    </p>
 
-<p>
-Scrum emplea un enfoque iterativo e incremental para optimizar la previsibilidad y controlar el riesgo.
-Scrum involucra a grupos de personas que colectivamente tienen todas las habilidades y experiencia
-para hacer el trabajo y compartir o adquirir dichas habilidades según sea necesario.
-</p>
+    <p>
+    Scrum emplea un enfoque iterativo e incremental para optimizar la previsibilidad y controlar el riesgo.
+    Scrum involucra a grupos de personas que colectivamente tienen todas las habilidades y experiencia
+    para hacer el trabajo y compartir o adquirir dichas habilidades según sea necesario.
+    </p>
 
-<p>
-Scrum combina cuatro eventos formales para inspección y adaptación dentro de un evento contenedor,
-el Sprint. Estos eventos funcionan porque implementan los pilares empíricos de Scrum de transparencia,
-inspección y adaptación.
-</p>
+    <p>
+    Scrum combina cuatro eventos formales para inspección y adaptación dentro de un evento contenedor,
+    el Sprint. Estos eventos funcionan porque implementan los pilares empíricos de Scrum de transparencia,
+    inspección y adaptación.
+    </p>
 
-<h2>Transparencia</h2>
+    <h2>Transparencia</h2>
 
-<p>
-El proceso y el trabajo emergentes deben ser visibles tanto para quienes realizan el trabajo como para
-quienes lo reciben. Con Scrum, las decisiones importantes se basan en el estado percibido de sus tres
-artefactos formales. Los artefactos que tienen poca transparencia pueden llevar a decisiones que
-disminuyan el valor y aumenten el riesgo.
-</p>
+    <p>
+    El proceso y el trabajo emergentes deben ser visibles tanto para quienes realizan el trabajo como para
+    quienes lo reciben. Con Scrum, las decisiones importantes se basan en el estado percibido de sus tres
+    artefactos formales. Los artefactos que tienen poca transparencia pueden llevar a decisiones que
+    disminuyan el valor y aumenten el riesgo.
+    </p>
 
-<p>
-La transparencia permite la inspección. La inspección sin transparencia es engañosa y derrochadora.
-</p>
+    <p>
+    La transparencia permite la inspección. La inspección sin transparencia es engañosa y derrochadora.
+    </p>
 
-<h2>Inspección</h2>
+    <h2>Inspección</h2>
 
-<p>
-Los artefactos de Scrum y el progreso hacia los objetivos acordados deben inspeccionarse con
-frecuencia y con diligencia para detectar variaciones o problemas potencialmente indeseables. Para
-ayudar con la inspección, Scrum proporciona cadencia en forma de sus cinco eventos.
-</p>
+    <p>
+    Los artefactos de Scrum y el progreso hacia los objetivos acordados deben inspeccionarse con
+    frecuencia y con diligencia para detectar variaciones o problemas potencialmente indeseables. Para
+    ayudar con la inspección, Scrum proporciona cadencia en forma de sus cinco eventos.
+    </p>
 
-<p>
-La inspección permite la adaptación. La inspección sin adaptación se considera inútil. Los eventos Scrum
-están diseñados para provocar cambios.
-</p>
+    <p>
+    La inspección permite la adaptación. La inspección sin adaptación se considera inútil. Los eventos Scrum
+    están diseñados para provocar cambios.
+    </p>
 
-<h2>Adaptación</h2>
+    <h2>Adaptación</h2>
 
-<p>
-Si algún aspecto de un proceso se desvía fuera de los límites aceptables o si el producto resultante es
-inaceptable, el proceso que se aplica o los materiales que se producen deben ajustarse. El ajuste debe
-realizarse lo antes posible para minimizar una mayor desviación.
-</p>
+    <p>
+    Si algún aspecto de un proceso se desvía fuera de los límites aceptables o si el producto resultante es
+    inaceptable, el proceso que se aplica o los materiales que se producen deben ajustarse. El ajuste debe
+    realizarse lo antes posible para minimizar una mayor desviación.
+    </p>
 
-<p>
-La adaptación se vuelve más difícil cuando las personas involucradas no están empoderadas ni se
-autogestionan. Se espera que un Scrum Team se adapte en el momento en que aprenda algo nuevo a
-través de la inspección.
-</p>
+    <p>
+    La adaptación se vuelve más difícil cuando las personas involucradas no están empoderadas ni se
+    autogestionan. Se espera que un Scrum Team se adapte en el momento en que aprenda algo nuevo a
+    través de la inspección.
+    </p>
 
     </form>
 </div>
@@ -1761,107 +1762,117 @@ través de la inspección.
 
 <div class="seccion derecha">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-     <h2>Valores de Scrum</h2>
-  <p>
+    <h2>Valores de Scrum</h2>
+    
+    <p>
     El uso exitoso de Scrum depende de que las personas se vuelvan más competentes en vivir cinco
     valores: <strong>Compromiso, Foco, Franqueza, Respeto y Coraje</strong>
-  </p>
-  <p>
+    </p>
+  
+    <p>
     El Scrum Team se compromete a lograr sus objetivos y a apoyarse mutuamente. Su foco principal está
     en el trabajo del Sprint para lograr el mejor progreso posible hacia estos objetivos. El Scrum Team y sus
     interesados son francos sobre el trabajo y los desafíos. Los miembros del Scrum Team se respetan entre
     sí para ser personas capaces e independientes, y son respetados como tales por las personas con las que
     trabajan. Los miembros del Scrum Team tienen el coraje de hacer lo correcto, para trabajar en
     problemas difíciles.
-  </p>
-  <p>
+    </p>
+  
+    <p>
     Estos valores dan dirección al Scrum Team con respecto a su trabajo, acciones y comportamiento. Las
     decisiones que se tomen, los pasos que se den y la forma en que se use Scrum deben reforzar estos
     valores, no disminuirlos ni socavarlos. Los miembros del Scrum Team aprenden y exploran los valores
     mientras trabajan con los eventos y artefactos Scrum. Cuando el Scrum Team y las personas con las que trabajan incorporan estos valores, los pilares empíricos de Scrum de transparencia, inspección y
     adaptación cobran vida y generan confianza.
-  </p>
+    </p>
 
-  <h2>Scrum Team</h2>
-  <p>
+    <h2>Scrum Team</h2>
+    <p>
     La unidad fundamental de Scrum es un pequeño equipo de personas, un Scrum Team. El Scrum Team
     consta de un Scrum Master, un Product Owner y Developers. Dentro de un Scrum Team, no hay
     subequipos ni jerarquías. Es una unidad cohesionada de profesionales enfocados en un objetivo a la vez,
     el Objetivo del Producto.
-  </p>
-  <p>
+    </p>
+    <p>
     Los Scrum Teams son multifuncionales, lo que significa que los miembros tienen todas las habilidades
     necesarias para crear valor en cada Sprint. También se autogestionan, lo que significa que deciden
     internamente quién hace qué, cuándo y cómo.
-  </p>
-  <p>
+    </p>
+    <p>
     El Scrum Team es lo suficientemente pequeño como para seguir siendo ágil y lo suficientemente grande
     como para completar un trabajo significativo dentro de un Sprint, generalmente 10 personas o menos.
     En general, hemos descubierto que los equipos más pequeños se comunican mejor y son más
     productivos. Si los Scrum Teams se vuelven demasiado grandes, deberían considerar reorganizarse en
     múltiples Scrum Teams cohesivos, cada uno enfocado en el mismo producto. Por lo tanto, deben
     compartir el mismo Objetivo del Producto, el Product Backlog y el Product Owner.
-  </p>
-  <p>
+    </p>
+    <p>
     El Scrum Team es responsable de todas las actividades relacionadas con el producto, desde la
     colaboración de los interesados, la verificación, el mantenimiento, la operación, la experimentación, la
     investigación y el desarrollo, y cualquier otra cosa que pueda ser necesaria. Están estructurados y
     empoderados por la organización para gestionar su propio trabajo. Trabajar en Sprints a un ritmo
     sostenible mejora el enfoque y la consistencia del Scrum Team.
-  </p>
-  <p>
+    </p>
+    <p>
     Todo el Scrum Team es responsable de crear un Increment valioso y útil en cada Sprint. Scrum define
     tres responsabilidades específicas dentro del Scrum Team: los Developers, el Product Owner y el Scrum
     Master.
-  </p>
+    </p>
 
 
 
-   <h2>Developers</h2>
-  <p>
+    <h2>Developers</h2>
+    <p>
     Las personas del Scrum Team que se comprometen a crear cualquier aspecto de un Increment utilizable
     en cada Sprint son Developers.
-  </p>
-  <p>
+    </p>
+    
+    <p>
     Las habilidades específicas que necesitan los Developers suelen ser amplias y variarán según el ámbito
     de trabajo. Sin embargo, los Developers siempre son responsables de:
-  </p>
-  <ul>
+    </p>
+  
+    <ul>
     <li>Crear un plan para el Sprint, el Sprint Backlog;</li>
     <li>Inculcar calidad al adherirse a una Definición de Terminado;</li>
     <li>Adaptar su plan cada día hacia el Objetivo del Sprint; y,</li>
     <li>Responsabilizarse mutuamente como profesionales.</li>
-  </ul>
+    </ul>
 
-  <h2>Product Owner</h2>
-  <p>
+    <h2>Product Owner</h2>
+    <p>
     El Product Owner es responsable de maximizar el valor del producto resultante del trabajo del Scrum
     Team. La forma en que esto se hace puede variar ampliamente entre organizaciones, Scrum Teams e
     individuos.
-  </p>
-  <p>
+    </p>
+  
+    <p>
     El Product Owner también es responsable de la gestión efectiva del Product Backlog, lo que incluye:
-  </p>
-  <ul>
+    </p>
+  
+    <ul>
     <li>Desarrollar y comunicar explícitamente el Objetivo del Producto;</li>
     <li>Crear y comunicar claramente los elementos del Product Backlog;</li>
     <li>Ordenar los elementos del Product Backlog; y,</li>
     <li>Asegurarse de que el Product Backlog sea transparente, visible y se entienda.</li>
-  </ul>
-  <p>
+    </ul>
+  
+    <p>
     El Product Owner puede realizar el trabajo anterior o puede delegar la responsabilidad en otros.
     Independientemente de ello, el Product Owner sigue siendo el responsable de que el trabajo se realice.
-  </p>
-  <p>
+    </p>
+  
+    <p>
     Para que los Product Owners tengan éxito, toda la organización debe respetar sus decisiones. Estas
     decisiones son visibles en el contenido y el orden del Product Backlog, y a través del Increment
     inspeccionable en la Sprint Review.
-  </p>
-  <p>
+    </p>
+  
+    <p>
     El Product Owner es una persona, no un comité. El Product Owner puede representar las necesidades de
     muchos interesados en el Product Backlog. Aquellos que quieran cambiar el Product Backlog pueden
     hacerlo intentando convencer al Product Owner.
-  </p>
+    </p>
   
     </form>
 </div>

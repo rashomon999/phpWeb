@@ -476,9 +476,11 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_25 = isset($_POST['respuesta_25']) ? $_POST['respuesta_25'] : '';
-   if ($respuesta_25 === '60') { 
+   $respuesta_25_dos = str_replace('', ' ', $respuesta_25);
+
+   if ($respuesta_25_dos === ' s_n:=c') { 
        $verificar_25 = "correcto";
-   } elseif ($respuesta_25 === '') {
+   } elseif ($respuesta_25_dos === '') {
        $verificar_25 = '';
    } else {
        $verificar_25 = "incorrecto";
@@ -486,7 +488,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_26 = isset($_POST['respuesta_26']) ? $_POST['respuesta_26'] : '';
-   if ($respuesta_26 === '75') {  
+   if ($respuesta_26 === '1') {  
        $verificar_26 = "correcto";
    } elseif ($respuesta_26 === '') {
        $verificar_26 = '';
@@ -496,7 +498,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_27 = isset($_POST['respuesta_27']) ? $_POST['respuesta_27'] : '';
-   if ($respuesta_27 === '90') {  
+   if ($respuesta_27 === '0') {  
        $verificar_27 = "correcto";
    } elseif ($respuesta_27 === '') {
        $verificar_27 = '';
@@ -506,7 +508,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_28 = isset($_POST['respuesta_28']) ? $_POST['respuesta_28'] : '';
-   if ($respuesta_28 === '105') {  
+   if ($respuesta_28 === '1') {  
        $verificar_28 = "correcto";
    } elseif ($respuesta_28 === '') {
        $verificar_28 = '';
@@ -516,7 +518,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_29 = isset($_POST['respuesta_29']) ? $_POST['respuesta_29'] : '';
-   if ($respuesta_29 === '120') {  
+   if ($respuesta_29 === '0') {  
        $verificar_29 = "correcto";
    } elseif ($respuesta_29 === '') {
        $verificar_29 = '';
@@ -526,7 +528,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_30 = isset($_POST['respuesta_30']) ? $_POST['respuesta_30'] : '';
-   if ($respuesta_30 === '135') {  
+   if ($respuesta_30 === 'bits') {  
        $verificar_30 = "correcto";
    } elseif ($respuesta_30 === '') {
        $verificar_30 = '';
@@ -536,7 +538,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_31 = isset($_POST['respuesta_31']) ? $_POST['respuesta_31'] : '';
-   if ($respuesta_31 === '150') {  
+   if ($respuesta_31 === 'j') {  
        $verificar_31 = "correcto";
    } elseif ($respuesta_31 === '') {
        $verificar_31 = '';
@@ -546,7 +548,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_32 = isset($_POST['respuesta_32']) ? $_POST['respuesta_32'] : '';
-   if ($respuesta_32 === '165') {  
+   if ($respuesta_32 === 'a') {  
        $verificar_32 = "correcto";
    } elseif ($respuesta_32 === '') {
        $verificar_32 = '';
@@ -556,7 +558,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_33 = isset($_POST['respuesta_33']) ? $_POST['respuesta_33'] : '';
-   if ($respuesta_33 === '180') {  
+   if ($respuesta_33 === 'b') {  
        $verificar_33 = "correcto";
    } elseif ($respuesta_33 === '') {
        $verificar_33 = '';
@@ -565,7 +567,7 @@ if ($_POST) {
    }
 
     $respuesta_34 = isset($_POST['respuesta_34']) ? $_POST['respuesta_34'] : '';
-    if ($respuesta_34 === '32') { 
+    if ($respuesta_34 === 'acarreo') { 
         $verificar_34 = "correcto";
     } elseif ($respuesta_34 === '') {
         $verificar_34 = '';
@@ -574,7 +576,7 @@ if ($_POST) {
     }
 
     $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
-    if ($respuesta_35 === '48') { 
+    if ($respuesta_35 === 'suma') { 
         $verificar_35 = "correcto";
     } elseif ($respuesta_35 === '') {
         $verificar_35 = '';
@@ -583,7 +585,7 @@ if ($_POST) {
     }
 
     $respuesta_36 = isset($_POST['respuesta_36']) ? $_POST['respuesta_36'] : '';
-    if ($respuesta_36 === '64') { 
+    if ($respuesta_36 === 'auxiliar') { 
         $verificar_36 = "correcto";
     } elseif ($respuesta_36 === '') {
     $verificar_36 = '';
@@ -592,7 +594,7 @@ if ($_POST) {
     }
 
     $respuesta_37 = isset($_POST['respuesta_37']) ? $_POST['respuesta_37'] : '';
-    if ($respuesta_37 === '80') { 
+    if ($respuesta_37 === 'acarreo') { 
         $verificar_37 = "correcto";
     } elseif ($respuesta_37 === '') {
         $verificar_37 = '';
@@ -601,7 +603,7 @@ if ($_POST) {
     }
 
  $respuesta_38 = isset($_POST['respuesta_38']) ? $_POST['respuesta_38'] : '';
-if ($respuesta_38 === '96') { 
+if ($respuesta_38 === '0') { 
     $verificar_38 = "correcto";
 } elseif ($respuesta_38 === '') {
     $verificar_38 = '';
@@ -610,7 +612,7 @@ if ($respuesta_38 === '96') {
 }
 
  $respuesta_39 = isset($_POST['respuesta_39']) ? $_POST['respuesta_39'] : '';
-if ($respuesta_39 === '112') { 
+if ($respuesta_39 === '1') { 
     $verificar_39 = "correcto";
 } elseif ($respuesta_39 === '') {
     $verificar_39 = '';
@@ -619,7 +621,7 @@ if ($respuesta_39 === '112') {
 }
 
  $respuesta_40 = isset($_POST['respuesta_40']) ? $_POST['respuesta_40'] : '';
-if ($respuesta_40 === '128') { 
+if ($respuesta_40 === '0') { 
     $verificar_40 = "correcto";
 } elseif ($respuesta_40 === '') {
     $verificar_40 = '';
@@ -628,7 +630,7 @@ if ($respuesta_40 === '128') {
 }
 
  $respuesta_41 = isset($_POST['respuesta_41']) ? $_POST['respuesta_41'] : '';
-if ($respuesta_41 === '144') { 
+if ($respuesta_41 === '1') { 
     $verificar_41 = "correcto";
 } elseif ($respuesta_41 === '') {
     $verificar_41 = '';
@@ -2218,13 +2220,121 @@ procedure add(a, b: positive integers)
     d := ⌊(a_j + b_j + c)∕2⌋
     <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="19">
     <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="19">
-s_n := c
+<input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="19">
 return (s_0, s_1,… , s_n) {the binary expansion of the sum is (s_n s_{n−1} … s_0)_2}
 </code></pre>
 
 <p>A continuación, se analizará el número de sumas de bits utilizadas por el Algoritmo 2.</p>
 
 </p>
+
+
+    <p>
+    <strong>En el algoritmo,</strong>
+    las operaciones son simplemente una forma de comunicar que siempre que la suma= 1 o 3 entonces \(s_j = \)
+    <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="2">
+    ,   
+    y suma es 2 o 0 entonces \(s_j = \)
+    <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="2">
+    , y siempre que suma = 2 o 3, el acarreo es 
+    <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="2">
+    y cuando suma= 0 o 1 
+    entonces el acarreo es 
+    <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="2">
+
+   </p>
+
+
+    <button onmousedown="mostrarImagen6()" onmouseup="ocultarImagen6()">Solucion</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada6" src="../../../../img/suma_binario_dos.png" style="display: none; max-width: 100%" >
+
+    <script>
+        function mostrarImagen6() {
+        var imagenMostrada6 = document.getElementById('imagenMostrada6');
+
+        // Mostrar la imagen
+        imagenMostrada6.style.display = 'block';
+        }
+
+        function ocultarImagen6() {
+        var imagenMostrada6 = document.getElementById('imagenMostrada6');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada6.style.display = 'none';
+        }
+    </script>
+ 
+   <h4> ¿Qué representa cada variable?</h4>
+
+    <ul>
+    <li><span>\( a_j, b_j \)</span>: son los 
+    <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="7">
+    en la posición 
+    <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="7">
+    de los números 
+    <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="7">
+    y 
+    <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="7">
+    , respectivamente.</li>
+    <li><span>\( c \)</span>: es el 
+    <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="7">
+    que proviene de la posición anterior (inicialmente 0).</li>
+    <li><span>\( s_j \)</span>: es el bit de la 
+    <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="7">
+    resultante en la posición \( j \).</li>
+    <li><span>\( d \)</span>: es una variable 
+    <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="7">
+    que representa el nuevo 
+    <input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="7">
+    . Se calcula como:<br>
+    <span>\[
+    d = \left\lfloor \frac{a_j + b_j + c}{2} \right\rfloor
+    \]</span>
+    </li>
+    </ul>
+
+    <p>Esto se basa en que en binario:</p>
+    <ul>
+    <li>Si \( a_j + b_j + c = 0 \) o \( 1 \): no hay acarreo ⇒ \( d =  \)
+    <input type="text" name="respuesta_38" value="<?php echo $respuesta_38; ?>" size="7">.
+    </li>
+    <li>Si \( a_j + b_j + c = 2 \) o \( 3 \): hay acarreo ⇒ \( d =  \)
+    <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="7">    
+    .</li>
+    </ul>
+
+    <h4>¿Cómo se calcula el bit de la suma \( s_j \)?</h4>
+
+    <p>Se utiliza la fórmula:</p>
+    <p>
+    \[
+    s_j = a_j + b_j + c - 2d
+    \]
+    </p>
+
+    <p>Esto es equivalente a tomar el <strong>bit menos significativo</strong> de la suma \( a_j + b_j + c \), es decir:</p>
+
+    <ul>
+    <li>Si la suma total es 0 o 2 ⇒ \( s_j = \)</li>
+    <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="7"> 
+    <li>Si la suma total es 1 o 3 ⇒ \( s_j =  \)
+    <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="7"> 
+    </li>
+    </ul>
+
+    <p>En otras palabras, es equivalente a:</p>
+    <p>
+    \[
+    s_j = (a_j + b_j + c) \bmod 2
+    \]
+    </p>
+
+    <p>Pero se hace usando la resta \( a_j + b_j + c - 2d \), ya que previamente se ha calculado \( d \) como el 
+    cociente de la división entre 2.</p>
+    <hr>
+
     </form>
 </div>
 
@@ -2233,7 +2343,7 @@ return (s_0, s_1,… , s_n) {the binary expansion of the sum is (s_n s_{n−1} �
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="segundo.php"
+        href="tercero.php"
         role="button"
         width="50px"
         height="50px"

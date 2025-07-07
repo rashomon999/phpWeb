@@ -439,9 +439,13 @@ Un requisito de producto es una necesidad o restricción sobre el software a des
 Un requisito de proceso es esencialmente una restricción sobre el desarrollo del software (por ejemplo, “El software deberá ser desarrollado utilizando un proceso RUP”).
 </p>
 
-<p>
-Algunos requisitos de software generan requisitos de proceso implícitos. La elección de una técnica de verificación es un ejemplo. Otro podría ser el uso de técnicas de análisis particularmente rigurosas (como métodos de especificación formal) para reducir fallas que puedan conducir a una confiabilidad inadecuada. Los requisitos de proceso también pueden ser impuestos directamente por la organización de desarrollo, su cliente o una tercera parte como un organismo regulador de seguridad.
-</p>
+    <p>
+    Algunos requerimientos de software generan requerimientos de proceso implícitos. La elección de una técnica de 
+    verificación es un ejemplo. Otro podría ser el uso de técnicas de análisis particularmente rigurosas
+    (como métodos de especificación formal) para reducir fallas que puedan conducir a una confiabilidad inadecuada. 
+    Los requerimientos de proceso también pueden ser impuestos directamente por la organización de desarrollo, su cliente 
+    o una tercera parte como un organismo regulador de seguridad.
+    </p>
 
 
     <h5>1.3. Requisitos Funcionales y No Funcionales</h5>

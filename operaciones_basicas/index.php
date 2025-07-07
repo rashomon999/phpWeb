@@ -1629,7 +1629,7 @@ function ocultarMensaje4() {
 <div class="seccion izquierda">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
                    <h4>Tabla del 12</h4>
-        12 * 2 = <input type="text" name="respuesta_111" value="<?php echo $respuesta_111; ?>"><br>
+    12 * 2 = <input type="text" name="respuesta_111" value="<?php echo $respuesta_111; ?>"><br>
         12 * 3 = <input type="text" name="respuesta_112" value="<?php echo $respuesta_112; ?>"><br>
         12 * 4 = <input type="text" name="respuesta_113" value="<?php echo $respuesta_113; ?>"><br>
         12 * 5 = <input type="text" name="respuesta_114" value="<?php echo $respuesta_114; ?>"><br>

@@ -11,39 +11,25 @@ $respuesta_30 = ''; $respuesta_31 = ''; $respuesta_32 = ''; $respuesta_33 = ''; 
 $respuesta_39 = ''; $respuesta_40 = ''; $respuesta_41 = ''; $respuesta_42 = ''; $respuesta_43 = '';
 $respuesta_44 = ''; $respuesta_45 = ''; $respuesta_46 = ''; $respuesta_47 = ''; $respuesta_48 = '';
 $respuesta_49 = ''; $respuesta_50 = ''; $respuesta_51 = ''; $respuesta_52 = ''; $respuesta_53 = '';
-$respuesta_54 = ''; $respuesta_55 = ''; $respuesta_56 = '';
-$respuesta_57 = ''; $respuesta_58 = ''; $respuesta_59 = ''; $respuesta_60 = '';
-$respuesta_61 = '';$respuesta_62 = '';$respuesta_63 = '';$respuesta_64 = '';
-$respuesta_65 = '';$respuesta_66 = '';$respuesta_67 = '';$respuesta_68 = '';
-$respuesta_69 = '';$respuesta_70 = '';$respuesta_71 = '';$respuesta_72 = '';
-$respuesta_73 = '';$respuesta_74 = '';$respuesta_75 = '';$respuesta_76 = '';
-$respuesta_77 = '';$respuesta_78 = '';$respuesta_79 = '';$respuesta_80 = '';
-$respuesta_81 = '';$respuesta_82 = '';$respuesta_83 = '';$respuesta_84 = '';
+$respuesta_54 = ''; $respuesta_55 = ''; $respuesta_56 = '';$respuesta_57 = ''; $respuesta_58 = ''; $respuesta_59 = ''; $respuesta_60 = '';
+$respuesta_61 = '';$respuesta_62 = '';$respuesta_63 = '';$respuesta_64 = '';$respuesta_65 = '';$respuesta_66 = '';$respuesta_67 = '';$respuesta_68 = '';
+$respuesta_69 = '';$respuesta_70 = '';$respuesta_71 = '';$respuesta_72 = '';$respuesta_73 = '';$respuesta_74 = '';$respuesta_75 = '';$respuesta_76 = '';
+$respuesta_77 = '';$respuesta_78 = '';$respuesta_79 = '';$respuesta_80 = '';$respuesta_81 = '';$respuesta_82 = '';$respuesta_83 = '';$respuesta_84 = '';
 $respuesta_85 = '';$respuesta_86 = '';$respuesta_87 = '';$respuesta_88 = ''; $respuesta_89 = '';
-$respuesta_90 = '';
-$respuesta_91 = '';
-$respuesta_92 = '';
-$respuesta_93 = '';
-$respuesta_94 = '';
-$respuesta_95 = '';
-$respuesta_96 = '';
-$respuesta_97 = '';
-$respuesta_98 = '';
-$respuesta_99 = '';
-$respuesta_100 = '';
-$respuesta_101 = '';
-$respuesta_102 = '';
-$respuesta_103 = '';
-$respuesta_104 = '';
-$respuesta_105 = '';
-$respuesta_106 = '';
-$respuesta_107 = '';
-$respuesta_108 = '';
-$respuesta_109 = '';
-$respuesta_110 = '';
+$respuesta_90 = ''; $respuesta_91 = '';$respuesta_92 = '';$respuesta_93 = '';$respuesta_94 = '';$respuesta_95 = '';$respuesta_96 = '';$respuesta_97 = '';$respuesta_98 = '';
+$respuesta_99 = '';$respuesta_100 = '';$respuesta_101 = '';$respuesta_102 = '';$respuesta_103 = '';$respuesta_104 = '';$respuesta_105 = '';
+$respuesta_106 = '';$respuesta_107 = '';$respuesta_108 = '';$respuesta_109 = '';$respuesta_110 = '';
 
+/////
+ // Agrega estas variables junto con las demás (antes del if $_POST)
+$respuesta_111 = ''; $respuesta_112 = ''; $respuesta_113 = ''; $respuesta_114 = ''; $respuesta_115 = ''; 
+$respuesta_116 = ''; $respuesta_117 = ''; $respuesta_118 = ''; $respuesta_119 = ''; $respuesta_120 = ''; 
+$respuesta_121 = ''; $respuesta_122 = '';
 
- 
+$verificar_111 = ''; $verificar_112 = ''; $verificar_113 = ''; $verificar_114 = ''; $verificar_115 = ''; 
+$verificar_116 = ''; $verificar_117 = ''; $verificar_118 = ''; $verificar_119 = ''; $verificar_120 = ''; 
+$verificar_121 = ''; $verificar_122 = '';
+////
 
 $verificar_1 = ''; $verificar_2 = ''; $verificar_3 = '';  $verificar_3_2 = ''; $verificar_4 = ''; $verificar_5 = ''; 
 $verificar_6 = ''; $verificar_7 = '';  $verificar_8 = ''; $verificar_9 = ''; $verificar_10 = ''; 
@@ -59,38 +45,172 @@ $verificar_49 = ''; $verificar_50 = ''; $verificar_51 = ''; $verificar_52 = ''; 
 $verificar_54 = ''; $verificar_55 = '';
 $verificar_56 = ''; $verificar_57 = ''; $verificar_58 = ''; $verificar_59 = ''; $verificar_60 = ''; 
 $verificar_61 = ''; $verificar_62 = ''; $verificar_63 = ''; $verificar_64 = ''; $verificar_65 = '';
- $verificar_66 = ''; $verificar_67 = ''; $verificar_68 = ''; $verificar_69 = ''; $verificar_70 = '';
-  $verificar_71 = ''; $verificar_72 = ''; $verificar_73 = ''; $verificar_74 = ''; $verificar_75 = '';
-   $verificar_76 = ''; $verificar_77 = ''; $verificar_78 = ''; $verificar_79 = ''; $verificar_80 = '';
-    $verificar_81 = ''; $verificar_82 = ''; $verificar_83 = ''; $verificar_84 = ''; $verificar_85 = '';
-     $verificar_86 = ''; $verificar_87 = ''; $verificar_88 = '';
-     $verificar_89 = '';
-     $verificar_90 = '';
-     $verificar_91 = '';
-     $verificar_92 = '';
-     $verificar_93 = '';
-     $verificar_94 = '';
-     $verificar_95 = '';
-     $verificar_96 = '';
-     $verificar_97 = '';
-     $verificar_98 = '';
-     $verificar_99 = '';
-     $verificar_100 = '';
-     $verificar_101 = '';
-     $verificar_102 = '';
-     $verificar_103 = '';
-     $verificar_104 = '';
-     $verificar_105 = '';
-     $verificar_106 = '';
-     $verificar_107 = '';
-     $verificar_108 = '';
-     $verificar_109 = '';
-     $verificar_110 = '';
+$verificar_66 = ''; $verificar_67 = ''; $verificar_68 = ''; $verificar_69 = ''; $verificar_70 = '';
+$verificar_71 = ''; $verificar_72 = ''; $verificar_73 = ''; $verificar_74 = ''; $verificar_75 = '';
+$verificar_76 = ''; $verificar_77 = ''; $verificar_78 = ''; $verificar_79 = ''; $verificar_80 = '';
+$verificar_81 = ''; $verificar_82 = ''; $verificar_83 = ''; $verificar_84 = ''; $verificar_85 = '';
+$verificar_86 = ''; $verificar_87 = ''; $verificar_88 = '';$verificar_89 = ''; $verificar_90 = '';$verificar_91 = '';
+$verificar_92 = '';$verificar_93 = '';$verificar_94 = ''; $verificar_95 = '';
+$verificar_96 = ''; $verificar_97 = ''; $verificar_98 = ''; $verificar_99 = ''; $verificar_100 = '';
+$verificar_101 = '';$verificar_102 = '';$verificar_103 = '';$verificar_104 = '';$verificar_105 = '';
+$verificar_106 = '';$verificar_107 = '';$verificar_108 = '';$verificar_109 = '';$verificar_110 = '';
      
 
+$mostrar_solucion = '';
 if ($_POST) {
+    $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
+    
+    if ($mostrar_solucion === 'mostrar_solucion') {
+        // Establecer todas las respuestas correctas para las tablas de multiplicar
+        
+        // Tabla del 12
+        $respuesta_111 = '24'; 
+        $respuesta_112 = '36';
+        $respuesta_113 = '48';
+        $respuesta_114 = '60';
+        $respuesta_115 = '72';
+        $respuesta_116 = '84';
+        $respuesta_117 = '96';
+        $respuesta_118 = '108';
+        $respuesta_119 = '120';
+        $respuesta_120 = '132';
+        $respuesta_121 = '144';
+        
+        // Tabla del 13
+        $respuesta_1 = '26';
+        $respuesta_2 = '39';
+        $respuesta_3 = '52';
+        $respuesta_4 = '65';
+        $respuesta_5 = '78';
+        $respuesta_6 = '91';
+        $respuesta_7 = '104';
+        $respuesta_8 = '117';
+        $respuesta_9 = '130';
+        $respuesta_10 = '143';
+        $respuesta_11 = '156';
+        
+        // Tabla del 14
+        $respuesta_12 = '28';
+        $respuesta_13 = '42';
+        $respuesta_14 = '56';
+        $respuesta_15 = '70';
+        $respuesta_16 = '84';
+        $respuesta_17 = '98';
+        $respuesta_18 = '112';
+        $respuesta_19 = '126';
+        $respuesta_20 = '140';
+        $respuesta_21 = '154';
+        $respuesta_22 = '168';
+        
+        // Tabla del 15
+        $respuesta_23 = '30';
+        $respuesta_24 = '45';
+        $respuesta_25 = '60';
+        $respuesta_26 = '75';
+        $respuesta_27 = '90';
+        $respuesta_28 = '105';
+        $respuesta_29 = '120';
+        $respuesta_30 = '135';
+        $respuesta_31 = '150';
+        $respuesta_32 = '165';
+        $respuesta_33 = '180';
+        
+        // Tabla del 16
+        $respuesta_34 = '32';
+        $respuesta_35 = '48';
+        $respuesta_36 = '64';
+        $respuesta_37 = '80';
+        $respuesta_38 = '96';
+        $respuesta_39 = '112';
+        $respuesta_40 = '128';
+        $respuesta_41 = '144';
+        $respuesta_42 = '160';
+        $respuesta_43 = '176';
+        $respuesta_44 = '192';
+        
+        // Tabla del 17
+        $respuesta_45 = '34';
+        $respuesta_46 = '51';
+        $respuesta_47 = '68';
+        $respuesta_48 = '85';
+        $respuesta_49 = '102';
+        $respuesta_50 = '119';
+        $respuesta_51 = '136';
+        $respuesta_52 = '153';
+        $respuesta_53 = '170';
+        $respuesta_54 = '187';
+        $respuesta_55 = '204';
+        
+        // Tabla del 18
+        $respuesta_56 = '36';
+        $respuesta_57 = '54';
+        $respuesta_58 = '72';
+        $respuesta_59 = '90';
+        $respuesta_60 = '108';
+        $respuesta_61 = '126';
+        $respuesta_62 = '144';
+        $respuesta_63 = '162';
+        $respuesta_64 = '180';
+        $respuesta_65 = '198';
+        $respuesta_66 = '216';
+        
+        // Tabla del 19
+        $respuesta_67 = '38';
+        $respuesta_68 = '57';
+        $respuesta_69 = '76';
+        $respuesta_70 = '95';
+        $respuesta_71 = '114';
+        $respuesta_72 = '133';
+        $respuesta_73 = '152';
+        $respuesta_74 = '171';
+        $respuesta_75 = '190';
+        $respuesta_76 = '209';
+        $respuesta_77 = '228';
+        
+        // Tabla del 20
+        $respuesta_78 = '40';
+        $respuesta_79 = '60';
+        $respuesta_80 = '80';
+        $respuesta_81 = '100';
+        $respuesta_82 = '120';
+        $respuesta_83 = '140';
+        $respuesta_84 = '160';
+        $respuesta_85 = '180';
+        $respuesta_86 = '200';
+        $respuesta_87 = '220';
+        $respuesta_88 = '240';
+        
+        // Tabla del 21
+        $respuesta_89 = '42';
+        $respuesta_90 = '63';
+        $respuesta_91 = '84';
+        $respuesta_92 = '105';
+        $respuesta_93 = '126';
+        $respuesta_94 = '147';
+        $respuesta_95 = '168';
+        $respuesta_96 = '189';
+        $respuesta_97 = '210';
+        $respuesta_98 = '231';
+        $respuesta_99 = '252';
+        
+        // Tabla del 22
+        $respuesta_100 = '44';
+        $respuesta_101 = '66';
+        $respuesta_102 = '88';
+        $respuesta_103 = '110';
+        $respuesta_104 = '132'; 
+        $respuesta_105 = '154';
+        $respuesta_106 = '176';
+        $respuesta_107 = '198';
+        $respuesta_108 = '220';
+        $respuesta_109 = '242';
+        $respuesta_110 = '264';
+        
+        // Marcar todas como correctas
+    $verificar_1 = $verificar_2 = $verificar_3 = /* ... todas las variables de verificación ... */ $verificar_122 = "correcto";
+    } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '26') {  
+   if ($respuesta_1 === 'pares') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -100,7 +220,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === '39') {  
+   if ($respuesta_2 === 'bits') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -110,7 +230,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === '52') {  
+   if ($respuesta_3 === 'dos' || $respuesta_3 === '2') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -120,7 +240,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === '65') {  
+   if ($respuesta_4 === 'doble') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -130,7 +250,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === '78') {  
+   if ($respuesta_5 === 'n') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -140,7 +260,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === '91') {  
+   if ($respuesta_6 === 'O(n)') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -150,7 +270,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === '104') {  
+   if ($respuesta_7 === '1') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -160,7 +280,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === '117') {  
+   if ($respuesta_8 === '0') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -170,7 +290,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === '130') {  
+   if ($respuesta_9 === '0') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -180,7 +300,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === '143') {  
+   if ($respuesta_10 === 'desplazamos') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -190,7 +310,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === '156') {  
+   if ($respuesta_11 === 'añadimos') {  
        $verificar_11 = "correcto";
    } elseif ($respuesta_11 === '') {
        $verificar_11 = '';
@@ -201,7 +321,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
      $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-     if ($respuesta_12 === '28') {  
+     if ($respuesta_12 === '0' || $respuesta_12 === 'cero') {  
          $verificar_12 = "correcto";
      } elseif ($respuesta_12 === '') {
          $verificar_12 = '';
@@ -211,17 +331,17 @@ if ($_POST) {
   
      // Verificar la respuesta de la segunda pregunta
      $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-     if ($respuesta_13 === '42') { 
+     if ($respuesta_13 === 'final') { 
          $verificar_13 = "correcto";
      } elseif ($respuesta_13 === '') {
          $verificar_13 = '';
      } else {
          $verificar_13 = "incorrecto";
      }
-  
+
      // Verificar la respuesta de la tercera pregunta
      $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-     if ($respuesta_14 === '56') {  
+     if ($respuesta_14 === 'a(b_0 2^0)') {  
          $verificar_14 = "correcto";
      } elseif ($respuesta_14 === '') {
          $verificar_14 = '';
@@ -231,7 +351,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la cuarta pregunta
      $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-     if ($respuesta_15 === '70') { 
+     if ($respuesta_15 === 'a(b_1 2^1)') { 
          $verificar_15 = "correcto";
      } elseif ($respuesta_15 === '') {
          $verificar_15 = '';
@@ -241,9 +361,11 @@ if ($_POST) {
   
      // Verificar la respuesta de la quinta pregunta
      $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-     if ($respuesta_16 === '84') {  
+     $respuesta_16_dos = str_replace('', ' ', $respuesta_16);
+
+     if ($respuesta_16_dos === 'forj:=0ton-1') {  
          $verificar_16 = "correcto";
-     } elseif ($respuesta_16 === '') {
+     } elseif ($respuesta_16_dos === '') {
          $verificar_16 = '';
      } else {
          $verificar_16 = "incorrecto";
@@ -251,9 +373,11 @@ if ($_POST) {
   
      // Verificar la respuesta de la sexta pregunta
      $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-     if ($respuesta_17 === '98') {  
+     $respuesta_17_dos = str_replace('', ' ', $respuesta_17);
+
+     if ($respuesta_17_dos === 'p:=add(p,c_j)') {  
          $verificar_17 = "correcto";
-     } elseif ($respuesta_17 === '') {
+     } elseif ($respuesta_17_dos === '') {
          $verificar_17 = '';
      } else {
          $verificar_17 = "incorrecto";
@@ -261,7 +385,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la séptima pregunta
      $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-     if ($respuesta_18 === '112') {  
+     if ($respuesta_18 === '*1*2^0') {  
          $verificar_18 = "correcto";
      } elseif ($respuesta_18 === '') {
          $verificar_18 = '';
@@ -271,7 +395,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la octava pregunta
      $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-     if ($respuesta_19 === '126') {  
+     if ($respuesta_19 === '*0*2^1') {  
          $verificar_19 = "correcto";
      } elseif ($respuesta_19 === '') {
          $verificar_19 = '';
@@ -281,7 +405,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la novena pregunta
      $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
-     if ($respuesta_20 === '140') {  
+     if ($respuesta_20 === '*1*2^2') {  
          $verificar_20 = "correcto";
      } elseif ($respuesta_20 === '') {
          $verificar_20 = '';
@@ -291,7 +415,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la décima pregunta
      $respuesta_21 = isset($_POST['respuesta_21']) ? $_POST['respuesta_21'] : '';
-     if ($respuesta_21 === '154') {  
+     if ($respuesta_21 === '(110)_2') {  
          $verificar_21 = "correcto";
      } elseif ($respuesta_21 === '') {
          $verificar_21 = '';
@@ -301,7 +425,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la undécima pregunta
      $respuesta_22 = isset($_POST['respuesta_22']) ? $_POST['respuesta_22'] : '';
-     if ($respuesta_22 === '168') {  
+     if ($respuesta_22 === '(0000)_2') {  
          $verificar_22 = "correcto";
      } elseif ($respuesta_22 === '') {
          $verificar_22 = '';
@@ -311,7 +435,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
    $respuesta_23 = isset($_POST['respuesta_23']) ? $_POST['respuesta_23'] : '';
-   if ($respuesta_23 === '30') {  
+   if ($respuesta_23 === '(11000)_2 ') {  
        $verificar_23 = "correcto";
    } elseif ($respuesta_23 === '') {
        $verificar_23 = '';
@@ -321,7 +445,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_24 = isset($_POST['respuesta_24']) ? $_POST['respuesta_24'] : '';
-   if ($respuesta_24 === '45') {  
+   if ($respuesta_24 === 'n') {  
        $verificar_24 = "correcto";
    } elseif ($respuesta_24 === '') {
        $verificar_24 = '';
@@ -331,7 +455,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_25 = isset($_POST['respuesta_25']) ? $_POST['respuesta_25'] : '';
-   if ($respuesta_25 === '60') { 
+   if ($respuesta_25 === 'sumando') { 
        $verificar_25 = "correcto";
    } elseif ($respuesta_25 === '') {
        $verificar_25 = '';
@@ -341,7 +465,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_26 = isset($_POST['respuesta_26']) ? $_POST['respuesta_26'] : '';
-   if ($respuesta_26 === '75') {  
+   if ($respuesta_26 === 'c_j') {  
        $verificar_26 = "correcto";
    } elseif ($respuesta_26 === '') {
        $verificar_26 = '';
@@ -351,7 +475,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_27 = isset($_POST['respuesta_27']) ? $_POST['respuesta_27'] : '';
-   if ($respuesta_27 === '90') {  
+   if ($respuesta_27 === 'a') {  
        $verificar_27 = "correcto";
    } elseif ($respuesta_27 === '') {
        $verificar_27 = '';
@@ -361,7 +485,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_28 = isset($_POST['respuesta_28']) ? $_POST['respuesta_28'] : '';
-   if ($respuesta_28 === '105') {  
+   if ($respuesta_28 === 'j') {  
        $verificar_28 = "correcto";
    } elseif ($respuesta_28 === '') {
        $verificar_28 = '';
@@ -371,7 +495,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_29 = isset($_POST['respuesta_29']) ? $_POST['respuesta_29'] : '';
-   if ($respuesta_29 === '120') {  
+   if ($respuesta_29 === '0') {  
        $verificar_29 = "correcto";
    } elseif ($respuesta_29 === '') {
        $verificar_29 = '';
@@ -381,7 +505,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_30 = isset($_POST['respuesta_30']) ? $_POST['respuesta_30'] : '';
-   if ($respuesta_30 === '135') {  
+   if ($respuesta_30 === 'O(n^2)') {  
        $verificar_30 = "correcto";
    } elseif ($respuesta_30 === '') {
        $verificar_30 = '';
@@ -391,7 +515,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_31 = isset($_POST['respuesta_31']) ? $_POST['respuesta_31'] : '';
-   if ($respuesta_31 === '150') {  
+   if ($respuesta_31 === 'n-1') {  
        $verificar_31 = "correcto";
    } elseif ($respuesta_31 === '') {
        $verificar_31 = '';
@@ -401,7 +525,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_32 = isset($_POST['respuesta_32']) ? $_POST['respuesta_32'] : '';
-   if ($respuesta_32 === '165') {  
+   if ($respuesta_32 === 'n') {  
        $verificar_32 = "correcto";
    } elseif ($respuesta_32 === '') {
        $verificar_32 = '';
@@ -411,7 +535,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_33 = isset($_POST['respuesta_33']) ? $_POST['respuesta_33'] : '';
-   if ($respuesta_33 === '180') {  
+   if ($respuesta_33 === 'n+1') {  
        $verificar_33 = "correcto";
    } elseif ($respuesta_33 === '') {
        $verificar_33 = '';
@@ -419,44 +543,44 @@ if ($_POST) {
        $verificar_33 = "incorrecto";
    }
 
- $respuesta_34 = isset($_POST['respuesta_34']) ? $_POST['respuesta_34'] : '';
-if ($respuesta_34 === '32') { 
-    $verificar_34 = "correcto";
-} elseif ($respuesta_34 === '') {
-    $verificar_34 = '';
-} else {
-    $verificar_34 = "incorrecto";
-}
+    $respuesta_34 = isset($_POST['respuesta_34']) ? $_POST['respuesta_34'] : '';
+    if ($respuesta_34 === '2n') { 
+        $verificar_34 = "correcto";
+    } elseif ($respuesta_34 === '') {
+        $verificar_34 = '';
+    } else {
+        $verificar_34 = "incorrecto";
+    }
 
- $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
-if ($respuesta_35 === '48') { 
-    $verificar_35 = "correcto";
-} elseif ($respuesta_35 === '') {
-    $verificar_35 = '';
-} else {
-    $verificar_35 = "incorrecto";
-}
+    $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
+    if ($respuesta_35 === 'O(n^2)') { 
+        $verificar_35 = "correcto";
+    } elseif ($respuesta_35 === '') {
+        $verificar_35 = '';
+    } else {
+        $verificar_35 = "incorrecto";
+    }
 
- $respuesta_36 = isset($_POST['respuesta_36']) ? $_POST['respuesta_36'] : '';
-if ($respuesta_36 === '64') { 
-    $verificar_36 = "correcto";
-} elseif ($respuesta_36 === '') {
+    $respuesta_36 = isset($_POST['respuesta_36']) ? $_POST['respuesta_36'] : '';
+    if ($respuesta_36 === 'd') { 
+        $verificar_36 = "correcto";
+    } elseif ($respuesta_36 === '') {
     $verificar_36 = '';
-} else {
-    $verificar_36 = "incorrecto";
-}
+    } else {
+        $verificar_36 = "incorrecto";
+    }
 
- $respuesta_37 = isset($_POST['respuesta_37']) ? $_POST['respuesta_37'] : '';
-if ($respuesta_37 === '80') { 
-    $verificar_37 = "correcto";
-} elseif ($respuesta_37 === '') {
-    $verificar_37 = '';
-} else {
-    $verificar_37 = "incorrecto";
-}
+    $respuesta_37 = isset($_POST['respuesta_37']) ? $_POST['respuesta_37'] : '';
+    if ($respuesta_37 === 'a') { 
+        $verificar_37 = "correcto";
+    } elseif ($respuesta_37 === '') {
+        $verificar_37 = '';
+    } else {
+        $verificar_37 = "incorrecto";
+    }
 
  $respuesta_38 = isset($_POST['respuesta_38']) ? $_POST['respuesta_38'] : '';
-if ($respuesta_38 === '96') { 
+if ($respuesta_38 === 'menor') { 
     $verificar_38 = "correcto";
 } elseif ($respuesta_38 === '') {
     $verificar_38 = '';
@@ -465,7 +589,7 @@ if ($respuesta_38 === '96') {
 }
 
  $respuesta_39 = isset($_POST['respuesta_39']) ? $_POST['respuesta_39'] : '';
-if ($respuesta_39 === '112') { 
+if ($respuesta_39 === 'd') { 
     $verificar_39 = "correcto";
 } elseif ($respuesta_39 === '') {
     $verificar_39 = '';
@@ -474,7 +598,7 @@ if ($respuesta_39 === '112') {
 }
 
  $respuesta_40 = isset($_POST['respuesta_40']) ? $_POST['respuesta_40'] : '';
-if ($respuesta_40 === '128') { 
+if ($respuesta_40 === 'cociente') { 
     $verificar_40 = "correcto";
 } elseif ($respuesta_40 === '') {
     $verificar_40 = '';
@@ -483,7 +607,7 @@ if ($respuesta_40 === '128') {
 }
 
  $respuesta_41 = isset($_POST['respuesta_41']) ? $_POST['respuesta_41'] : '';
-if ($respuesta_41 === '144') { 
+if ($respuesta_41 === 'residuo') { 
     $verificar_41 = "correcto";
 } elseif ($respuesta_41 === '') {
     $verificar_41 = '';
@@ -492,7 +616,7 @@ if ($respuesta_41 === '144') {
 }
 
  $respuesta_42 = isset($_POST['respuesta_42']) ? $_POST['respuesta_42'] : '';
-if ($respuesta_42 === '160') { 
+if ($respuesta_42 === '-(q+1)') { 
     $verificar_42 = "correcto";
 } elseif ($respuesta_42 === '') {
     $verificar_42 = '';
@@ -501,7 +625,7 @@ if ($respuesta_42 === '160') {
 }
 
  $respuesta_43 = isset($_POST['respuesta_43']) ? $_POST['respuesta_43'] : '';
-if ($respuesta_43 === '176') { 
+if ($respuesta_43 === 'd-r') { 
     $verificar_43 = "correcto";
 } elseif ($respuesta_43 === '') {
     $verificar_43 = '';
@@ -510,7 +634,7 @@ if ($respuesta_43 === '176') {
 }
 
  $respuesta_44 = isset($_POST['respuesta_44']) ? $_POST['respuesta_44'] : '';
-if ($respuesta_44 === '192') { 
+if ($respuesta_44 === 'a') { 
     $verificar_44 = "correcto";
 } elseif ($respuesta_44 === '') {
     $verificar_44 = '';
@@ -519,7 +643,7 @@ if ($respuesta_44 === '192') {
 }
 
  $respuesta_45 = isset($_POST['respuesta_45']) ? $_POST['respuesta_45'] : '';
-if ($respuesta_45 === '34') { 
+if ($respuesta_45 === '0') { 
     $verificar_45 = "correcto";
 } elseif ($respuesta_45 === '') {
     $verificar_45 = '';
@@ -528,7 +652,7 @@ if ($respuesta_45 === '34') {
 }
 
  $respuesta_46 = isset($_POST['respuesta_46']) ? $_POST['respuesta_46'] : '';
-if ($respuesta_46 === '51') { 
+if ($respuesta_46 === 'a') { 
     $verificar_46 = "correcto";
 } elseif ($respuesta_46 === '') {
     $verificar_46 = '';
@@ -536,17 +660,18 @@ if ($respuesta_46 === '51') {
     $verificar_46 = "incorrecto";
 }
 
- $respuesta_47 = isset($_POST['respuesta_47']) ? $_POST['respuesta_47'] : '';
-if ($respuesta_47 === '68') { 
+$respuesta_47 = isset($_POST['respuesta_47']) ? $_POST['respuesta_47'] : '';
+$respuesta_47_dos = str_replace('', ' ', $respuesta_47);
+if ($respuesta_47_dos === 'whiler≥d') { 
     $verificar_47 = "correcto";
-} elseif ($respuesta_47 === '') {
+} elseif ($respuesta_47_dos === '') {
     $verificar_47 = '';
 } else {
     $verificar_47 = "incorrecto";
 }
 
  $respuesta_48 = isset($_POST['respuesta_48']) ? $_POST['respuesta_48'] : '';
-if ($respuesta_48 === '85') { 
+if ($respuesta_48 === 'r-d') { 
     $verificar_48 = "correcto";
 } elseif ($respuesta_48 === '') {
     $verificar_48 = '';
@@ -555,7 +680,7 @@ if ($respuesta_48 === '85') {
 }
 
  $respuesta_49 = isset($_POST['respuesta_49']) ? $_POST['respuesta_49'] : '';
-if ($respuesta_49 === '102') { 
+if ($respuesta_49 === 'q+1') { 
     $verificar_49 = "correcto";
 } elseif ($respuesta_49 === '') {
     $verificar_49 = '';
@@ -564,7 +689,7 @@ if ($respuesta_49 === '102') {
 }
 
  $respuesta_50 = isset($_POST['respuesta_50']) ? $_POST['respuesta_50'] : '';
-if ($respuesta_50 === '119') { 
+if ($respuesta_50 === 'a<0') { 
     $verificar_50 = "correcto";
 } elseif ($respuesta_50 === '') {
     $verificar_50 = '';
@@ -573,7 +698,7 @@ if ($respuesta_50 === '119') {
 }
 
  $respuesta_51 = isset($_POST['respuesta_51']) ? $_POST['respuesta_51'] : '';
-if ($respuesta_51 === '136') { 
+if ($respuesta_51 === 'r>0') { 
     $verificar_51 = "correcto";
 } elseif ($respuesta_51 === '') {
     $verificar_51 = '';
@@ -582,7 +707,7 @@ if ($respuesta_51 === '136') {
 }
 
  $respuesta_52 = isset($_POST['respuesta_52']) ? $_POST['respuesta_52'] : '';
-if ($respuesta_52 === '153') { 
+if ($respuesta_52 === 'd-r') { 
     $verificar_52 = "correcto";
 } elseif ($respuesta_52 === '') {
     $verificar_52 = '';
@@ -591,7 +716,7 @@ if ($respuesta_52 === '153') {
 }
 
  $respuesta_53 = isset($_POST['respuesta_53']) ? $_POST['respuesta_53'] : '';
-if ($respuesta_53 === '170') { 
+if ($respuesta_53 === '-(q+1)') { 
     $verificar_53 = "correcto";
 } elseif ($respuesta_53 === '') {
     $verificar_53 = '';
@@ -600,7 +725,7 @@ if ($respuesta_53 === '170') {
 }
 
  $respuesta_54 = isset($_POST['respuesta_54']) ? $_POST['respuesta_54'] : '';
-if ($respuesta_54 === '187') { 
+if ($respuesta_54 === 'b^n') { 
     $verificar_54 = "correcto";
 } elseif ($respuesta_54 === '') {
     $verificar_54 = '';
@@ -609,7 +734,7 @@ if ($respuesta_54 === '187') {
 }
 
  $respuesta_55 = isset($_POST['respuesta_55']) ? $_POST['respuesta_55'] : '';
-if ($respuesta_55 === '204') { 
+if ($respuesta_55 === 'm') { 
     $verificar_55 = "correcto";
 } elseif ($respuesta_55 === '') {
     $verificar_55 = '';
@@ -619,7 +744,7 @@ if ($respuesta_55 === '204') {
 
 
  $respuesta_56 = isset($_POST['respuesta_56']) ? $_POST['respuesta_56'] : '';
-if ($respuesta_56 === '36') { 
+if ($respuesta_56 === 'expansion') { 
     $verificar_56 = "correcto";
 } elseif ($respuesta_56 === '') {
     $verificar_56 = '';
@@ -628,7 +753,7 @@ if ($respuesta_56 === '36') {
 }
 
  $respuesta_57 = isset($_POST['respuesta_57']) ? $_POST['respuesta_57'] : '';
-if ($respuesta_57 === '54') { 
+if ($respuesta_57 === 'n') { 
     $verificar_57 = "correcto";
 } elseif ($respuesta_57 === '') {
     $verificar_57 = '';
@@ -637,18 +762,23 @@ if ($respuesta_57 === '54') {
 }
 
  $respuesta_58 = isset($_POST['respuesta_58']) ? $_POST['respuesta_58'] : '';
-if ($respuesta_58 === '72') { 
+ $respuesta_58_dos = str_replace('', ' ', $respuesta_58);
+if ($respuesta_58_dos === 'b^nmodm') { 
     $verificar_58 = "correcto";
-} elseif ($respuesta_58 === '') {
+} elseif ($respuesta_58_dos === '') {
     $verificar_58 = '';
 } else {
     $verificar_58 = "incorrecto";
 }
 
  $respuesta_59 = isset($_POST['respuesta_59']) ? $_POST['respuesta_59'] : '';
-if ($respuesta_59 === '90') { 
+ $respuesta_59_dos = str_replace('', ' ', $respuesta_59);
+
+if ($respuesta_59_dos === ' b\cdot(b^k\bmodm)'
+|| $respuesta_59_dos === ' b\cdot(b^k\modm)'
+) { 
     $verificar_59 = "correcto";
-} elseif ($respuesta_59 === '') {
+} elseif ($respuesta_59_dos === '') {
     $verificar_59 = '';
 } else {
     $verificar_59 = "incorrecto";
@@ -852,68 +982,68 @@ if ($respuesta_81 === '100') {
     $verificar_81 = "incorrecto";
 }
 
- $respuesta_82 = isset($_POST['respuesta_82']) ? $_POST['respuesta_82'] : '';
-if ($respuesta_82 === '120') { 
-    $verificar_82 = "correcto";
-} elseif ($respuesta_82 === '') {
-    $verificar_82 = '';
-} else {
-    $verificar_82 = "incorrecto";
-}
+    $respuesta_82 = isset($_POST['respuesta_82']) ? $_POST['respuesta_82'] : '';
+    if ($respuesta_82 === '120') { 
+        $verificar_82 = "correcto";
+    } elseif ($respuesta_82 === '') {
+        $verificar_82 = '';
+    } else {
+        $verificar_82 = "incorrecto";
+    }
 
- $respuesta_83 = isset($_POST['respuesta_83']) ? $_POST['respuesta_83'] : '';
-if ($respuesta_83 === '140') { 
-    $verificar_83 = "correcto";
-} elseif ($respuesta_83 === '') {
-    $verificar_83 = '';
-} else {
-    $verificar_83 = "incorrecto";
-}
+    $respuesta_83 = isset($_POST['respuesta_83']) ? $_POST['respuesta_83'] : '';
+    if ($respuesta_83 === '140') { 
+       $verificar_83 = "correcto";
+    } elseif ($respuesta_83 === '') {
+        $verificar_83 = '';
+    } else {
+        $verificar_83 = "incorrecto";
+    }
 
- $respuesta_84 = isset($_POST['respuesta_84']) ? $_POST['respuesta_84'] : '';
-if ($respuesta_84 === '160') { 
-    $verificar_84 = "correcto";
-} elseif ($respuesta_84 === '') {
-    $verificar_84 = '';
-} else {
-    $verificar_84 = "incorrecto";
-}
+    $respuesta_84 = isset($_POST['respuesta_84']) ? $_POST['respuesta_84'] : '';
+    if ($respuesta_84 === '160') { 
+        $verificar_84 = "correcto";
+    } elseif ($respuesta_84 === '') {
+        $verificar_84 = '';
+    } else {
+        $verificar_84 = "incorrecto";
+    }
 
- $respuesta_85 = isset($_POST['respuesta_85']) ? $_POST['respuesta_85'] : '';
-if ($respuesta_85 === '180') { 
-    $verificar_85 = "correcto";
-} elseif ($respuesta_85 === '') {
-    $verificar_85 = '';
-} else {
-    $verificar_85 = "incorrecto";
-}
+    $respuesta_85 = isset($_POST['respuesta_85']) ? $_POST['respuesta_85'] : '';
+    if ($respuesta_85 === '180') { 
+        $verificar_85 = "correcto";
+    } elseif ($respuesta_85 === '') {
+        $verificar_85 = '';
+    } else {
+        $verificar_85 = "incorrecto";
+    }
 
- $respuesta_86 = isset($_POST['respuesta_86']) ? $_POST['respuesta_86'] : '';
-if ($respuesta_86 === '200') { 
-    $verificar_86 = "correcto";
-} elseif ($respuesta_86 === '') {
-    $verificar_86 = '';
-} else {
-    $verificar_86 = "incorrecto";
-}
+    $respuesta_86 = isset($_POST['respuesta_86']) ? $_POST['respuesta_86'] : '';
+    if ($respuesta_86 === '200') { 
+        $verificar_86 = "correcto";
+    } elseif ($respuesta_86 === '') {
+        $verificar_86 = '';
+    } else {
+        $verificar_86 = "incorrecto";
+    }
 
- $respuesta_87 = isset($_POST['respuesta_87']) ? $_POST['respuesta_87'] : '';
-if ($respuesta_87 === '220') { 
-    $verificar_87 = "correcto";
-} elseif ($respuesta_87 === '') {
-    $verificar_87 = '';
-} else {
-    $verificar_87 = "incorrecto";
-}
+    $respuesta_87 = isset($_POST['respuesta_87']) ? $_POST['respuesta_87'] : '';
+    if ($respuesta_87 === '220') { 
+        $verificar_87 = "correcto";
+    } elseif ($respuesta_87 === '') {
+        $verificar_87 = '';
+    } else {
+        $verificar_87 = "incorrecto";
+    }
 
- $respuesta_88 = isset($_POST['respuesta_88']) ? $_POST['respuesta_88'] : '';
-if ($respuesta_88 === '240') { 
-    $verificar_88 = "correcto";
-} elseif ($respuesta_88 === '') {
-    $verificar_88 = '';
-} else {
-    $verificar_88 = "incorrecto";
-}
+    $respuesta_88 = isset($_POST['respuesta_88']) ? $_POST['respuesta_88'] : '';
+    if ($respuesta_88 === '240') { 
+        $verificar_88 = "correcto";
+    } elseif ($respuesta_88 === '') {
+        $verificar_88 = '';
+    } else {
+        $verificar_88 = "incorrecto";
+    }
 
  $respuesta_89 = isset($_POST['respuesta_89']) ? $_POST['respuesta_89'] : '';
 if ($respuesta_89 === '42') { 
@@ -1114,7 +1244,106 @@ if ($respuesta_110 === '264') {
     $verificar_110 = "incorrecto";
 }
 
+// Tabla del 12
+$respuesta_111 = isset($_POST['respuesta_111']) ? $_POST['respuesta_111'] : '';
+if ($respuesta_111 === '24') {  
+    $verificar_111 = "correcto";
+} elseif ($respuesta_111 === '') {
+    $verificar_111 = '';
+} else {
+    $verificar_111 = "incorrecto";
+}
 
+$respuesta_112 = isset($_POST['respuesta_112']) ? $_POST['respuesta_112'] : '';
+if ($respuesta_112 === '36') {  
+    $verificar_112 = "correcto";
+} elseif ($respuesta_112 === '') {
+    $verificar_112 = '';
+} else {
+    $verificar_112 = "incorrecto";
+}
+
+$respuesta_113 = isset($_POST['respuesta_113']) ? $_POST['respuesta_113'] : '';
+if ($respuesta_113 === '48') {  
+    $verificar_113 = "correcto";
+} elseif ($respuesta_113 === '') {
+    $verificar_113 = '';
+} else {
+    $verificar_113 = "incorrecto";
+}
+
+$respuesta_114 = isset($_POST['respuesta_114']) ? $_POST['respuesta_114'] : '';
+if ($respuesta_114 === '60') {  
+    $verificar_114 = "correcto";
+} elseif ($respuesta_114 === '') {
+    $verificar_114 = '';
+} else {
+    $verificar_114 = "incorrecto";
+}
+
+$respuesta_115 = isset($_POST['respuesta_115']) ? $_POST['respuesta_115'] : '';
+if ($respuesta_115 === '72') {  
+    $verificar_115 = "correcto";
+} elseif ($respuesta_115 === '') {
+    $verificar_115 = '';
+} else {
+    $verificar_115 = "incorrecto";
+}
+
+$respuesta_116 = isset($_POST['respuesta_116']) ? $_POST['respuesta_116'] : '';
+if ($respuesta_116 === '84') {  
+    $verificar_116 = "correcto";
+} elseif ($respuesta_116 === '') {
+    $verificar_116 = '';
+} else {
+    $verificar_116 = "incorrecto";
+}
+
+$respuesta_117 = isset($_POST['respuesta_117']) ? $_POST['respuesta_117'] : '';
+if ($respuesta_117 === '96') {  
+    $verificar_117 = "correcto";
+} elseif ($respuesta_117 === '') {
+    $verificar_117 = '';
+} else {
+    $verificar_117 = "incorrecto";
+}
+
+$respuesta_118 = isset($_POST['respuesta_118']) ? $_POST['respuesta_118'] : '';
+if ($respuesta_118 === '108') {  
+    $verificar_118 = "correcto";
+} elseif ($respuesta_118 === '') {
+    $verificar_118 = '';
+} else {
+    $verificar_118 = "incorrecto";
+}
+
+$respuesta_119 = isset($_POST['respuesta_119']) ? $_POST['respuesta_119'] : '';
+if ($respuesta_119 === '120') {  
+    $verificar_119 = "correcto";
+} elseif ($respuesta_119 === '') {
+    $verificar_119 = '';
+} else {
+    $verificar_119 = "incorrecto";
+}
+
+$respuesta_120 = isset($_POST['respuesta_120']) ? $_POST['respuesta_120'] : '';
+if ($respuesta_120 === '132') {  
+    $verificar_120 = "correcto";
+} elseif ($respuesta_120 === '') {
+    $verificar_120 = '';
+} else {
+    $verificar_120 = "incorrecto";
+}
+
+$respuesta_121 = isset($_POST['respuesta_121']) ? $_POST['respuesta_121'] : '';
+if ($respuesta_121 === '144') {  
+    $verificar_121 = "correcto";
+} elseif ($respuesta_121 === '') {
+    $verificar_121 = '';
+} else {
+    $verificar_121 = "incorrecto";
+}
+}
 }
 ?>
 <!DOCTYPE html>
@@ -1136,7 +1365,7 @@ if ($respuesta_110 === '264') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 390vh;
+    height: 370vh;
     }
 </style>
  
@@ -1178,211 +1407,180 @@ function handleSubmit(event) {
 }
 
 function actualizarFormula() {
-    // Obtener los valores de los inputs
-   
-    var f = document.getElementById('respuesta_11').value || "";
- 
-
-
-    // Construir la fórmula dinámica
-    var formula = ` \\  ${f} \\, `;
-
-    // Actualizar el contenido de la fórmula en el DOM
-    document.getElementById('formula').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
+    var f = document.getElementById('respuesta_21').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula').innerHTML = `\\( ${formula} \\)`;
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
- 
 
 function actualizarFormula2() {
-    // Obtener los valores de los inputs
-   
-    var f = document.getElementById('respuesta_13').value || "";
-  
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-
-    // Actualizar el contenido de la fórmula en el DOM
-    document.getElementById('formula2').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
+    var f = document.getElementById('respuesta_22').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula2').innerHTML = `\\( ${formula} \\)`;
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
 
-
-
 function actualizarFormula3() {
-    // Obtener los valores de los inputs
-   
-    var f = document.getElementById('respuesta_27').value || "";
- 
-
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-
-    // Actualizar el contenido de la fórmula en el DOM
-    document.getElementById('formula3').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
+    var f = document.getElementById('respuesta_23').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula3').innerHTML = `\\( ${formula} \\)`;
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
 
 function actualizarFormula4() {
-    // Obtener los valores de los inputs
-    var f = document.getElementById('respuesta_29').value || "";
-   
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var f = document.getElementById('respuesta_59').value || "";
+    var formula = ` \\ b^{k+1} \\bmod m = ${f} \\bmod m   \\, `;
     document.getElementById('formula4').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
-
 
 function actualizarFormula5() {
-    // Obtener los valores de los inputs
-    var f = document.getElementById('respuesta_30').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var f = document.getElementById('respuesta_5').value || "";
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula5').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
-
-
 
 function actualizarFormula6() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_6').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula6').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
 
-
 function actualizarFormula7() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_7').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula7').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
 
 function actualizarFormula8() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_8').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula8').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
-
 
 function actualizarFormula9() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_9').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula9').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
-
-
 
 function actualizarFormula10() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_10').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula10').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
-
 
 function actualizarFormula11() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_11').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula11').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
 
-
 function actualizarFormula12() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_12').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula12').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
 
-    // Re-renderizar MathJax para mostrar los cambios
+function actualizarFormula13() {
+    var f = document.getElementById('respuesta_13').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula13').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula14() {
+    var f = document.getElementById('respuesta_14').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula14').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula15() {
+    var f = document.getElementById('respuesta_15').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula15').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula16() {
+    var f = document.getElementById('respuesta_16').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula16').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula17() {
+    var f = document.getElementById('respuesta_17').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula17').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula18() {
+    var f = document.getElementById('respuesta_18').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula18').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula19() {
+    var f = document.getElementById('respuesta_19').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula19').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula20() {
+    var f = document.getElementById('respuesta_20').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula20').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
         MathJax.typeset();
     }
@@ -1439,8 +1637,307 @@ function ocultarMensaje4() {
 </head>
 <body> 
 <div class="seccion izquierda">
-    <form action="./cuarto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <img src="../../../../img/base_.png" alt=""  >
+    <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <hr>
+
+    <h4>Ejemplo 9</h4>
+    
+    <p><strong>¿Cuántas sumas de bits se requieren al usar el Algoritmo 2 para sumar dos enteros con \( n \) bits (o menos) 
+    en sus representaciones binarias?</strong></p>
+
+    <p><strong>Solución:</strong> Dos enteros se suman agregando sucesivamente 
+    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="8">
+    de 
+    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="8">
+    y, cuando ocurre, 
+    un acarreo. Sumar cada par de bits junto con el acarreo requiere <strong>
+    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="8">    
+    sumas de bits</strong>. Por lo 
+    tanto, el número total de sumas de bits utilizadas es menor que el 
+    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="8">  
+    del número de bits en la expansión.</p>
+
+    <p>En consecuencia, el número de sumas de bits que utiliza el Algoritmo 2 para sumar dos enteros de 
+    <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="8"> 
+    bits es 
+    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="8"> 
+    . ◂</p>
+
+   <button onmousedown="mostrarImagen()" onmouseup="ocultarImagen()">Solucion</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada" src="../../../../img/sumas_bits.png" style="display: none; max-width: 100%" width="560">
+
+    <script>
+        function mostrarImagen() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada');
+
+        // Mostrar la imagen
+        imagenMostrada.style.display = 'block';
+        }
+
+        function ocultarImagen() {
+        var imagenMostrada = document.getElementById('imagenMostrada');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada.style.display = 'none';
+        }
+    </script>
+    <hr>
+    
+
+    <h4>Algoritmo de Multiplicación</h4>
+
+    <p>A continuación, consideremos la <strong>multiplicación</strong> de dos enteros de \( n \) bits, \( a \) y \( b \). 
+    El algoritmo convencional (utilizado al multiplicar con lápiz y papel) funciona como sigue:</p>
+
+    <p>Usando la ley distributiva, tenemos que:</p>
+
+    <p>
+    \(
+    ab = a(b_0 2^0 + b_1 2^1 + \cdots + b_{n-1} 2^{n-1}) =\) 
+    <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="8">+
+    <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="8">
+    \( + \cdots + a(b_{n-1} 2^{n-1}).
+    \)
+    </p>
+
+    <p>Podemos calcular \( ab \) usando esta ecuación. Primero, notamos que:</p>
+
+    <ul>
+    <li>\( ab_j = a \) si \( b_j =  \)
+    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="8">     
+    ,</li>
+    <li>\( ab_j =  \)
+    <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="8">    
+    si \( b_j =  \)
+     <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="8">
+    .</li>
+    </ul>
+
+    <p>Cada vez que multiplicamos un término por 2, 
+    <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="8">    
+    su expansión binaria una posición a la izquierda y 
+    <input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="8"> 
+    un 
+    <input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="8">
+    al 
+    <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="8">
+    de la expansión.</p>
+
+    <p>En consecuencia, podemos obtener \( ab_j 2^j \) desplazando la expansión binaria de \( ab_j \) \( j \) 
+    posiciones a la izquierda, es decir, añadiendo \( j \) bits de cero al final de dicha expansión.</p>
+
+    <p>Finalmente, obtenemos \( ab \) sumando los \( n \) enteros \( ab_j 2^j \), para \( j = 0, 1, 2, \dots, n - 1 \).</p>
+   <img src="../../../../img/binario.png" alt="" width="580">
+
+    <br><br>
+    <h4>Algoritmo 3: Multiplicación de Enteros</h4>
+
+<pre><code>
+ALGORITHM 3 Multiplication of Integers.
+procedure multiply(a, b: positive integers)
+{the binary expansions of a and b are (a_{n−1}a_{n−2} … a_1a_0)_2
+ and (b_{n−1}b_{n−2} … b_1b_0)_2, respectively}
+<input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="19"> 
+    if b_j = 1 then c_j := a shifted j places
+    else c_j := 0
+{c_0, c_1,… , c_{n−1} are the partial products}
+p := 0
+for j := 0 to n − 1
+    <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="19"> 
+return p {p is the value of ab}
+</code></pre>
+   
+
+    <p>El <strong>Ejemplo 10</strong> ilustra el uso de este algoritmo.</p>
+
+    <h4>Ejemplo 10</h4>
+    <p><strong>Encuentra el producto de \( a = (110)_2 \) y \( b = (101)_2 \).</strong></p>
+
+    <p><strong>Solución:</strong> Primero notamos que:</p>
+
+    <p>
+    \(
+    ab_0 \cdot 2^0 =   (110)_2 \) 
+    <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="4"> 
+    \(
+    = (110)_2,
+    \)
+    <br><br>
+    \(
+    ab_1 \cdot 2^1 = (110)_2 \) 
+    <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="4"> 
+    \(= (0000)_2,
+    \)
+    <br><br>
+    \(
+    ab_2 \cdot 2^2 = (110)_2 \)
+    <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="4"> 
+    \( = (11000)_2.
+    \)
+    </p>
+
+    <p>Para encontrar el producto, sumamos 
+    <span id="formula">
+        \(    \)
+    </span>     
+    , 
+    <span id="formula2">
+        \(    \)
+    </span>     
+    y 
+    <span id="formula3">
+        \(    \)
+    </span>  
+    
+    .</p>
+    
+    <input type="text"  id="respuesta_21" name="respuesta_21" value="<?php echo $respuesta_21; ?>" 
+    oninput="actualizarFormula()"
+    size="9">
+    <input type="text"  id="respuesta_22" name="respuesta_22" value="<?php echo $respuesta_22; ?>" 
+    oninput="actualizarFormula2()"
+    size="9">
+    <input type="text"  id="respuesta_23" name="respuesta_23" value="<?php echo $respuesta_23; ?>" 
+    oninput="actualizarFormula3()"
+    size="9">
+    <p>Realizando estas sumas (usando el Algoritmo 2, incluyendo ceros iniciales cuando sea necesario) obtenemos que:</p>
+
+    <p>
+    \[
+    ab = (11110)_2.
+    \]
+    </p>
+
+    <p>Esta multiplicación se muestra en la <strong>Figura 2</strong>. ◂</p>
+    <button onmousedown="mostrarMensaje()" onmouseup="ocultarMensaje()">Solucion</button>
+    <div id="mensaje" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
+           <hr>
+
+    <p>Con \( a = (110)_2 \) y \( b = (101)_2 \), los bits de \( b \) son:</p>
+
+    <ul>
+    <li>\( b_0 = 1 \Rightarrow c_0 = a \cdot 2^0 = (110)_2 \) <em>(sin desplazamiento)</em></li>
+    <li>\( b_1 = 0 \Rightarrow c_1 = 0 \)</li>
+    <li>\( b_2 = 1 \Rightarrow c_2 = a \cdot 2^2 = (11000)_2 \) <em>(desplazado 2 posiciones)</em></li>
+    </ul>
+    con  \( b_0 \) se cumple la condicion de desplazar, pero \(2^0=1\), entonces no ocurre desplanzamiento  
+    
+    <hr>
+    </div>
+
+ 
+    <button onmousedown="mostrarImagen2()" onmouseup="ocultarImagen2()">Ampliacion</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada2" src="../../../../img/desplazamiento.png" style="display: none; max-width: 100%" width="560">
+
+    <script>
+        function mostrarImagen2() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+
+        // Mostrar la imagen
+        imagenMostrada2.style.display = 'block';
+        }
+
+        function ocultarImagen2() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada2.style.display = 'none';
+        }
+    </script>
+    <p>para entender el deplazamiento, tenemos que ver la imagen de multipliacion normal, vemos como se debe desplazar cada que
+    multiplicamos.
+    </p>
+        <button onmousedown="mostrarImagen3()" onmouseup="ocultarImagen3()">Explicacion shift</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada3" src="../../../../img/shift.png" style="display: none; max-width: 100%" width="560">
+
+    <script>
+        function mostrarImagen3() {
+        var imagenMostrada3 = document.getElementById('imagenMostrada3');
+
+        // Mostrar la imagen
+        imagenMostrada3.style.display = 'block';
+        }
+
+        function ocultarImagen3() {
+        var imagenMostrada3 = document.getElementById('imagenMostrada3');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada3.style.display = 'none';
+        }
+    </script>
+    <br><br>
+    <img src="../../../../img/desplazamiento_dos.png" alt="">
+ 
+    <br><br>
+    <p> 
+    <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="4">     
+    es la cantidad de dígitos binarios (bits)</p>
+    
+    <button onmousedown="mostrarMensaje2()" onmouseup="ocultarMensaje2()">Solucion</button>
+    <div id="mensaje2" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
+    <p><strong>Más formalmente:</strong></p>
+
+    <p>Si tienes un número binario como:</p>
+
+    <p>\[
+    a = (a_{n-1} a_{n-2} \dots a_1 a_0)_2
+    \]</p>
+
+    <p>Entonces \( n \) es el número total de bits en la representación binaria de \( a \) (y también de 
+    \( b \), si asumimos que ambos números tienen la misma cantidad de bits para facilitar el análisis).</p>
+ 
+    </div>
+
+   <hr>
+
+  </form>
+</div>
+
+<div class="seccion derecha">
+    <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    
+    <strong>porque se expande b</strong>
+    <button onmousedown="mostrarMensaje3()" onmouseup="ocultarMensaje3()">explicacion</button>
+    <div id="mensaje3" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
+    <h4>¿Por qué se expande \( b \) y no \( a \) en el algoritmo de multiplicación binaria?</h4>
+
+    <p>En el algoritmo clásico de multiplicación binaria, como el que usamos en lápiz y papel, el número que se 
+    expande es \( b \), no \( a \).</p>
+
+    <h4>¿Qué significa "expandir" en este contexto?</h4>
+
+    <p>Expandir un número quiere decir escribirlo como una suma de potencias de 2, usando sus bits. Por ejemplo, 
+    si \( b = (101)_2 \), eso significa:</p>
+
+    <p>\[
+    b = 1 \cdot 2^2 + 0 \cdot 2^1 + 1 \cdot 2^0 = 5
+    \]</p>
+
+    <p>Entonces, cuando calculamos \( a \cdot b \), podemos usar la propiedad distributiva:</p>
+
+    <p>\[
+    a \cdot b = a \cdot (1 \cdot 2^2 + 0 \cdot 2^1 + 1 \cdot 2^0) = a \cdot 2^2 + a \cdot 2^0
+    \]</p>
+
+    <h4>¿Qué se hace con \( a \)?</h4>
+
+    <p>El número \( a \) no se expande. En lugar de eso, simplemente se copian versiones desplazadas de \( a \) 
+    (hacia la izquierda) cada vez que encontramos un bit 1 en \( b \).</p>    
+    </div>
+
+
+
+
+
+
+
+    <hr>
 
     <p>A continuación, determinaremos el número de sumas de bits y desplazamientos de bits utilizados por el 
     <strong>Algoritmo 3</strong> para multiplicar dos enteros.</p>
@@ -1449,28 +1946,50 @@ function ocultarMensaje4() {
     <p><strong>¿Cuántas sumas de bits y desplazamientos de bits se usan para multiplicar \( a \) y \( b \) 
     usando el Algoritmo 3?</strong></p>
 
-    <p><strong>Solución:</strong> El Algoritmo 3 calcula el producto de \( a \) y \( b \) sumando los 
+    <p><strong>Solución:</strong> El Algoritmo 3 calcula el producto de \( a \) y \( b \) 
+    <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="8">  
+    los 
     productos parciales \( c_0, c_1, c_2, \dots, c_{n-1} \). Cuando \( b_j = 1 \), calculamos el producto 
-    parcial \( c_j \) desplazando la expansión binaria de \( a \) por \( j \) bits. Cuando \( b_j = 0 \), 
-    no se requieren desplazamientos porque \( c_j = 0 \).</p>
+    parcial 
+    <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="8"> 
+    desplazando la expansión binaria de 
+    <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="8"> 
+    por 
+    <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="8"> 
+    bits. Cuando \( b_j = 0 \), 
+    no se requieren desplazamientos porque \( c_j =  \)
+    <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="8">
+    .</p>
 
     <p>Por lo tanto, para encontrar los \( n \) enteros \( a b_j 2^j \), con \( j = 0, 1, \dots, n - 1 \), se 
     requieren como máximo:</p>
 
-    <p>
+    <p> 
     \[
     0 + 1 + 2 + \cdots + (n - 1)
     \]
     </p>
 
     <p>desplazamientos. Por lo tanto, según el Ejemplo 5 de la Sección 3.2, el número de desplazamientos requeridos 
-    es \( \mathcal{O}(n^2) \).</p>
+    es 
+    <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="8">
+    .</p>
 
-    <p>Para sumar los enteros \( a b_j \) desde \( j = 0 \) hasta \( j = n - 1 \) se requiere la suma de un entero 
-    de \( n \) bits, un entero de \( n + 1 \) bits, …, y un entero de \( 2n \) bits. Sabemos por el Ejemplo 9 que 
+    <p>Para sumar los enteros \( a b_j \) desde \( j = 0 \) hasta \( j =   \) 
+    <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="8">    
+    se requiere la suma de un entero 
+    de 
+    <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="8">
+    bits, un entero de 
+    <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="8">
+    bits, …, y un entero de 
+    <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="8">
+    bits. Sabemos por el Ejemplo 9 que 
     cada una de estas sumas requiere \( \mathcal{O}(n) \) sumas de bits.</p>
 
-    <p>En consecuencia, se requieren un total de \( \mathcal{O}(n^2) \) sumas de bits para todas las \( n \) sumas 
+    <p>En consecuencia, se requieren un total de 
+    <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="8">    
+    sumas de bits para todas las \( n \) sumas 
     parciales. ◂</p>
 
     <p>Sorprendentemente, existen algoritmos más eficientes que el algoritmo convencional para multiplicar enteros. 
@@ -1478,35 +1997,77 @@ function ocultarMensaje4() {
     de \( n \) bits, será descrito en la Sección 8.3.</p>
 
 
-    <h4>Algoritmo para <code>div</code> y <code>mod</code></h4>
+    <button onmousedown="mostrarImagen4()" onmouseup="ocultarImagen4()">Explicacion</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada4" src="../../../../img/bits.png" style="display: none; max-width: 100%" width="560">
+
+    <script>
+        function mostrarImagen4() {
+        var imagenMostrada4 = document.getElementById('imagenMostrada4');
+
+        // Mostrar la imagen
+        imagenMostrada4.style.display = 'block';
+        }
+
+        function ocultarImagen4() {
+        var imagenMostrada4 = document.getElementById('imagenMostrada4');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada4.style.display = 'none';
+        }
+    </script>
+
+     <h4>Algoritmo para <code>div</code> y <code>mod</code></h4>
 
     <p>Dado un par de enteros \( a \) y \( d \), con \( d > 0 \), podemos encontrar \( q = a \div d \) y \( r = a \bmod d \) 
     usando el <strong>Algoritmo 4</strong>.</p>
 
-    <p>En este algoritmo de fuerza bruta, cuando \( a \) es positivo, restamos \( d \) de \( a \) tantas veces como sea 
-    necesario hasta que lo que queda sea menor que \( d \). El número de veces que realizamos esta resta es el cociente, 
-    y lo que queda después de todas las restas es el residuo.</p>
+    <p>En este algoritmo de fuerza bruta, cuando \( a \) es positivo, restamos 
+    <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="8">     
+    de 
+    <input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="8"> 
+    tantas veces como sea 
+    necesario hasta que lo que queda sea 
+    <input type="text" name="respuesta_38" value="<?php echo $respuesta_38; ?>" size="8"> 
+    que 
+    <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="8"> 
+    . El número de veces que realizamos esta resta es el 
+    <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="8"> 
+    , 
+    y lo que queda después de todas las restas es el 
+    <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="8">
+    .</p>
 
     <p>El Algoritmo 4 también cubre el caso en que \( a \) es negativo. Este algoritmo encuentra primero el cociente \( q \) 
-    y el residuo \( r \) cuando \( |a| \) es dividido por \( d \). Luego, si \( a < 0 \) y \( r > 0 \), se utilizan estos 
-    resultados para hallar el cociente \( -(q + 1) \) y el residuo \( d - r \) cuando se divide \( a \) entre \( d \).</p>
+    y el residuo \( r \) cuando  |
+    <input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>" size="1">
+    |  es dividido por \( d \). Luego, si \( a < 0 \) y \( r > 0 \), se utilizan estos 
+    resultados para hallar el cociente 
+    <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="8">
+    y el residuo 
+    <input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="8">
+    cuando se divide \( a \) entre \( d \).</p>
 
     <p>Se deja al lector (Ejercicio 65) demostrar que, suponiendo que \( a > d \), este algoritmo utiliza 
     \( \mathcal{O}(q \log a) \) operaciones a nivel de bit.</p>
 
-    <h4>Algoritmo 4: Cálculo de <code>div</code> y <code>mod</code></h4>
-
-<pre><code>
+    <h4>Algoritmo 4: Cálculo de <code>div</code> y <code>mod</code></h4>   
+    
+    <p>
+    <strong>utilizar si es necesario: ≥, ≤, >, <</strong>
+    </p>
+    <pre><code>
 ALGORITHM 4 Computing div and mod.
 procedure division algorithm(a: integer, d: positive integer)
-q := 0
-r := |a|
-while r ≥ d
-    r := r − d
-    q := q + 1
-if a < 0 and r > 0 then
-    r := d − r
-    q := −(q + 1)
+q := <input type="text" name="respuesta_45" value="<?php echo $respuesta_45; ?>" size="1">
+r := |<input type="text" name="respuesta_46" value="<?php echo $respuesta_46; ?>" size="1">|
+<input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="11">
+    r := <input type="text" name="respuesta_48" value="<?php echo $respuesta_48; ?>" size="6">
+    q := <input type="text" name="respuesta_49" value="<?php echo $respuesta_49; ?>" size="6"> 
+if <input type="text" name="respuesta_50" value="<?php echo $respuesta_50; ?>" size="6"> and <input type="text" name="respuesta_51" value="<?php echo $respuesta_51; ?>" size="6"> then
+    r := <input type="text" name="respuesta_52" value="<?php echo $respuesta_52; ?>" size="6"> 
+    q := <input type="text" name="respuesta_53" value="<?php echo $respuesta_53; ?>" size="6"> 
 return (q, r) {q = a div d is the quotient, r = a mod d is the remainder}
 </code></pre>
 
@@ -1522,9 +2083,9 @@ return (q, r) {q = a div d is the quotient, r = a mod d is the remainder}
     cociente y el residuo 
     cuando \( a \) se divide por \( d \).</p>
 
-    <hr>
-
-    <h3> ¿Qué hacen <code>div</code> y <code>mod</code>?</h3>
+    <button onmousedown="mostrarMensaje4()" onmouseup="ocultarMensaje4()">explicacion1</button>
+    <div id="mensaje4" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
+       <h3> ¿Qué hacen <code>div</code> y <code>mod</code>?</h3>
 
     <p>Dado un entero \( a \) y un divisor positivo \( d \), queremos encontrar:</p>
 
@@ -1558,9 +2119,12 @@ return (q, r) {q = a div d is the quotient, r = a mod d is the remainder}
     a = q \cdot d + r \quad \text{y} \quad 0 \leq r < d
     \]
     </p>
+    </div>    
 
 
-    <h3>🔍 ¿Cómo se hace cuando \( a \) es positivo?</h3>
+     <button onmousedown="mostrarMensaje5()" onmouseup="ocultarMensaje5()">explicacion1</button>
+    <div id="mensaje5" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
+   <h3>🔍 ¿Cómo se hace cuando \( a \) es positivo?</h3>
 
     <p>Para \( a = 23 \), buscamos el múltiplo de 5 más cercano que no se pase de 23.</p>
 
@@ -1588,174 +2152,56 @@ return (q, r) {q = a div d is the quotient, r = a mod d is the remainder}
 
     <p>Y \( r = -23 - (-25) = 2 \), que está entre 0 y 5. ✅</p>
 
-
-    </form>
-</div>
-
+    </div> 
+    <hr>
 
 
 
-<div class="seccion derecha">
-    <form action="./cuarto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+
+
+
     <h3>4.2.4 Exponenciación Modular</h3>
 
     <p>En criptografía, es importante poder encontrar eficientemente \( b^n \bmod m \) sin usar una cantidad 
     excesiva de memoria, donde \( b \), \( n \) y \( m \) son enteros grandes. Es poco práctico calcular 
-    primero \( b^n \) y luego hallar su residuo al dividir entre \( m \), porque \( b^n \) puede ser un número 
+    primero  
+    <input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>" size="6"> 
+    y luego hallar su residuo al dividir entre 
+    <input type="text" name="respuesta_55" value="<?php echo $respuesta_55; ?>" size="6"> 
+    , porque 
+    <input type="text" value="<?php echo $respuesta_54; ?>" size="6" readonly> 
+    puede ser un número 
     enorme y se necesitaría una gran cantidad de memoria para almacenar dichos valores.</p>
 
-    <p>En su lugar, podemos evitar problemas de tiempo y memoria utilizando un algoritmo que emplea la expansión 
-    binaria del exponente \( n \).</p>
+    <p>En su lugar, podemos evitar problemas de tiempo y memoria utilizando un algoritmo que emplea la 
+    <input type="text" name="respuesta_56" value="<?php echo $respuesta_56; ?>" size="6">     
+    binaria del exponente 
+    <input type="text" name="respuesta_57" value="<?php echo $respuesta_57; ?>" size="6">
+    .</p>
 
     <p>Antes de presentar un algoritmo para una exponenciación modular rápida basado en la expansión binaria del 
-    exponente, observa que podemos evitar usar grandes cantidades de memoria si calculamos \( b^n \bmod m \) 
+    exponente, observa que podemos evitar usar grandes cantidades de memoria si calculamos 
+    <input type="text" name="respuesta_58" value="<?php echo $respuesta_58; ?>" size="16">
     sucesivamente para \( b^k \bmod m \) con \( k = 1, 2, \dots, n \), utilizando el hecho de que:</p>
 
-    <p>
-    \[
-    b^{k+1} \bmod m = b \cdot (b^k \bmod m) \bmod m
-    \]
-    </p>
+
+    <span id="formula4">
+        \[  b^{k+1} \bmod m =  ? \bmod m  \]
+    </span>     
+    <input type="text"  id="respuesta_59" name="respuesta_59"  value="<?php echo $respuesta_59; ?>" 
+    oninput="actualizarFormula4()"
+    size="19" >
+
+    <p><strong>podria o no utilizar: \mod, \bmod, \cdot</strong></p>
+
 
     <p>(por el Corolario 2 del Teorema 5 de la Sección 4.1). (Recuerda que \( 1 \leq b < m \)). Sin embargo, 
     este enfoque es poco práctico porque requiere \( n - 1 \) multiplicaciones de enteros y \( n \) 
     podría ser enorme.</p>
 
-    <p>Para motivar el algoritmo rápido de exponenciación modular, ilustraremos su idea básica. Explicaremos 
-    cómo usar la expansión binaria de \( n \), digamos \( n = (a_{k-1} \dots a_1 a_0)_2 \), para calcular 
-    \( b^n \). Primero, nota que:</p>
-
-    <p>
-    \[
-    b^n = b^{a_{k-1} \cdot 2^{k-1} + \cdots + a_1 \cdot 2 + a_0} = b^{a_{k-1} \cdot 2^{k-1}} 
-    \cdots b^{a_1 \cdot 2} \cdot b^{a_0}.
-    \]
-    </p>
-
-    <p>Esto muestra que para calcular \( b^n \), solo necesitamos calcular los valores de \( b, b^2, (b^2)^2 = 
-    b^4, (b^4)^2 = b^8, \dots, b^{2^k} \). Una vez tenemos estos valores, multiplicamos los términos \( b^{2^j} \) 
-    en esta lista donde \( a_j = 1 \). (Para mayor eficiencia y menor uso de memoria, después de cada 
-    multiplicación reducimos el resultado módulo \( m \)). Esto nos da \( b^n \).</p>
-
-    <p>Por ejemplo, para calcular \( 3^{11} \), primero notamos que \( 11 = (1011)_2 \), así que:</p>
-
-    <p>
-    \[
-    3^{11} = 3^8 \cdot 3^2 \cdot 3 = 6561 \cdot 9 \cdot 3 = 177,147.
-    \]
-    </p>
-
-    <p>El algoritmo encuentra sucesivamente \( b \bmod m, b^2 \bmod m, b^4 \bmod m, \dots, b^{2^{k-1}} \bmod m \) 
-    y multiplica los términos \( b^{2^j} \bmod m \) donde \( a_j = 1 \), hallando el residuo del producto 
-    módulo \( m \) después de cada multiplicación. Nota que solo necesitamos realizar \( \mathcal{O}(\log_2(n)) \) 
-    multiplicaciones.</p>
-
-<h4>ALGORITHM 5 Fast Modular Exponentiation</h4>
-
-<pre><code>
-procedure modular exponentiation(b: integer, n = (a_{k-1}a_{k-2} … a_1a_0)_2,
-                                 m: positive integers)
-x := 1
-power := b mod m
-for i := 0 to k − 1
-    if a_i = 1 then x := (x ⋅ power) mod m
-    power := (power ⋅ power) mod m
-return x {x equals b^n mod m}
-</code></pre>
-
-    <h4>Ejemplo 12</h4>
-    <p><strong>Usa el Algoritmo 5 para encontrar \( 3^{644} \bmod 645 \).</strong></p>
-
-    <p><strong>Solución:</strong> El Algoritmo 5 inicialmente establece \( x = 1 \) y \( \text{power} = 3 \bmod 645 = 3 \). 
-    En el cálculo de \( 3^{644} \bmod 645 \), este algoritmo determina \( 3^{2^j} \bmod 645 \) para \( j = 1, 2, \dots, 9 \) 
-    mediante cuadrados sucesivos y reducción módulo 645.</p>
-
-    <p>Si \( a_j = 1 \) (donde \( a_j \) es el bit en la posición \( j \) de la expansión binaria de 644, que es
-    \( (1010000100)_2 \)), multiplica el valor actual de \( x \) por \( 3^{2^j} \bmod 645 \) y reduce el resultado 
-    módulo 645.</p>
-
-    <p>Aquí están los pasos usados:</p>
-
-    <img src="../../../../img/tabla_modulo.png" alt="" width="600" >
- 
-    <p>Esto muestra que al seguir los pasos del Algoritmo 5 se obtiene el resultado:</p>
-
-    <p>
-    \[
-    3^{644} \bmod 645 = 36.
-    \]
-    </p>
-
-    <p>◂</p>
-
-    <p>El Algoritmo 5 es bastante eficiente; utiliza \( \mathcal{O}((\log m)^2 \log n) \) operaciones a nivel de 
-    bit para encontrar \( b^n \bmod m \) (ver Ejercicio 64).</p>
-
-    <hr>
-
-
-
-    <h3>📌 Vamos a repasar el ejemplo para aclararlo:</h3>
-    <p>Queremos calcular:</p>
-    <p>\[ 3^{11} \mod 13 \]</p>
-
-    <h4>🔢 Paso 1: Convertimos 11 a binario</h4>
-    <p>\[ 11 = (1011)_2 \quad   \]</p>
+   <hr>
 
  
-
-    <p>
-    \( n = 11 = (1011)_2 \)
-    </p>
-
-    <p>
-    Esto significa que:
-    </p>
-
-    <p>
-    \[
-    11 = 1 \cdot 2^3 + 0 \cdot 2^2 + 1 \cdot 2^1 + 1 \cdot 2^0 = 8 + 2 + 1
-    \]
-    </p>
-
-    <p>
-    Entonces:
-    </p>    
-
-
-
-    <p>
-    \[
-    b^{11} = b^{8 + 2 + 1} = b^8 \cdot b^2 \cdot b^1
-    \]
-    </p>
-
-    <p>Entonces:</p>
-    <p>
-    <ul>
-    <li>\( 3^8 \mod 13 = 9 \)</li>
-    <li>\( 3^2 \mod 13 = 9 \)</li>
-    <li>\( 3^1 \mod 13 = 3 \)</li>
-    </ul>
-    </p>
-    <p>\[ 3^{11} \mod 13 = (9 \cdot 9 \cdot 3) \mod 13 \]</p>
-
-    <h4>Multiplica los dos primeros:</h4>
-    <p>\[ 9 \cdot 9 = 81 \]</p>
-
-    <p>Ahora, aplicamos módulo 13:</p>
-    <p>\[ 81 \mod 13 = 3 \quad \text{(porque } 81 = 6 \cdot 13 + 3 \text{)} \]</p>
-
-    <h4>Multiplicamos ese resultado por el siguiente factor:</h4>
-    <p>\[ 3 \cdot 3 = 9 \]</p>
-
-    <p>Y como \( 9 < 13 \), el módulo no cambia nada:</p>
-    <p>\[ 9 \mod 13 = 9 \]</p>
-
-    <h3>✅ Resultado final:</h3>
-    <p>\[ (9 \cdot 9 \cdot 3) \mod 13 = ((81 \mod 13) \cdot 3) \mod 13 = (3 \cdot 3) \mod 13 = 9 \]</p>
-
-
     </form>
 </div>
 

@@ -1760,7 +1760,7 @@ function ocultarMensaje4() {
     <p>
     Los requisitos tienen otros atributos además de las propiedades de comportamiento. Ejemplos comunes incluyen una 
     calificación de 
-    <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="20">
+    <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="9">
     para permitir decisiones de compensación ante recursos limitados, y un valor de 
     estado para permitir el seguimiento del progreso del proyecto.
     </p>
@@ -1862,6 +1862,20 @@ a
      que puedan conducir a una confiabilidad inadecuada. Los requisitos de proceso también pueden ser
       impuestos directamente por la organización de desarrollo, su cliente o una tercera parte como un 
       organismo regulador de seguridad.
+
+      <br>
+          <p>
+    Es decir, Algunos requerimientos, no funcionales
+    (como la confiabilidad) → implican requerimientos de proceso, 
+    es decir, formas específicas de trabajar para lograr esos atributos de calidad.
+    o Funcionales (“El sistema debe permitir a los usuarios firmar documentos electrónicamente con validez legal.” ) 
+    que implica un proceso de desarrollo que asegure:
+    <li>
+        Uso de certificados digitales válidos (infraestructura de clave pública).
+    </li>
+  
+
+    </p>
     </div>
     <script>
         function mostrarMensaje3() {
@@ -1990,17 +2004,17 @@ a
     <br><br>
      <button onmousedown="mostrarMensaje4()" onmouseup="ocultarMensaje4()">Dato</button>
     <div id="mensaje4" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
-    Por ejemplo, el requisito de rendimiento (throughput) para un centro de llamadas dependería de cómo el 
+    Por ejemplo, el requerimiento de rendimiento (throughput) para un centro de llamadas dependería de cómo el 
     sistema telefónico, el sistema de información y los operadores interactúan todos bajo condiciones reales de operación. 
     Las propiedades emergentes dependen de forma crucial de la arquitectura del sistema.
     </div>
     <script>
-        function mostrarMensaje3() {
+        function mostrarMensaje4() {
             var mensaje = document.getElementById('mensaje4');
             mensaje.style.display = 'block';
         }
 
-        function ocultarMensaje3() {
+        function ocultarMensaje4() {
             var mensaje = document.getElementById('mensaje4');
             mensaje.style.display = 'none';
         }

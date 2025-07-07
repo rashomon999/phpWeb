@@ -31,7 +31,7 @@
     <div class="centered-container">
 
         <a class="btn" href=".\GuiaScrum\index.php">Guia de Scrum</a>
-        <a class="btn" href=".\ScrumExamen\index.php">certificacion scrum</a>
+        <a class="btn" href=".\Cuestionario_guia\index.php">Cuestionario guia scrum</a>
     </div>
 </body>
 </html>

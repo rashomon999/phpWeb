@@ -1488,9 +1488,9 @@ s_j = a_j + b_j + c - 2d
 \[
 s_j = (a_j + b_j + c) \bmod 2
 \]
-</p>
+    </p>
 
-<p>Pero se hace usando la resta \( a_j + b_j + c - 2d \), ya que previamente se ha calculado \( d \) como el cociente de la división entre 2.</p>
+    <p>Pero se hace usando la resta \( a_j + b_j + c - 2d \), ya que previamente se ha calculado \( d \) como el cociente de la división entre 2.</p>
     <hr>
 
     <h4>Ejemplo 9</h4>
@@ -1593,18 +1593,17 @@ ab = (11110)_2.
 
 <p>Esta multiplicación se muestra en la <strong>Figura 2</strong>. ◂</p>
 
-<hr>
+    <hr>
 
- 
+    <p>Con \( a = (110)_2 \) y \( b = (101)_2 \), los bits de \( b \) son:</p>
 
-<p>Con \( a = (110)_2 \) y \( b = (101)_2 \), los bits de \( b \) son:</p>
-
-<ul>
-  <li>\( b_0 = 1 \Rightarrow c_0 = a \cdot 2^0 = (110)_2 \) <em>(sin desplazamiento)</em></li>
-  <li>\( b_1 = 0 \Rightarrow c_1 = 0 \)</li>
-  <li>\( b_2 = 1 \Rightarrow c_2 = a \cdot 2^2 = (11000)_2 \) <em>(desplazado 2 posiciones)</em></li>
-</ul>
+    <ul>
+    <li>\( b_0 = 1 \Rightarrow c_0 = a \cdot 2^0 = (110)_2 \) <em>(sin desplazamiento)</em></li>
+    <li>\( b_1 = 0 \Rightarrow c_1 = 0 \)</li>
+    <li>\( b_2 = 1 \Rightarrow c_2 = a \cdot 2^2 = (11000)_2 \) <em>(desplazado 2 posiciones)</em></li>
+    </ul>
     con  \( b_0 \) se cumple la condicion de desplazar, pero \(2^0=1\), entonces no ocurre desplanzamiento  
+    
     <hr>
     <p> <strong>\( n \)</strong> es la cantidad de dígitos binarios (bits)</p>
 
@@ -1672,25 +1671,28 @@ ab = (11110)_2.
 
     <h4>¿Por qué se expande \( b \) y no \( a \) en el algoritmo de multiplicación binaria?</h4>
 
-<p>En el algoritmo clásico de multiplicación binaria, como el que usamos en lápiz y papel, el número que se expande es \( b \), no \( a \).</p>
+    <p>En el algoritmo clásico de multiplicación binaria, como el que usamos en lápiz y papel, el número que se 
+    expande es \( b \), no \( a \).</p>
 
-<h4>¿Qué significa "expandir" en este contexto?</h4>
+    <h4>¿Qué significa "expandir" en este contexto?</h4>
 
-<p>Expandir un número quiere decir escribirlo como una suma de potencias de 2, usando sus bits. Por ejemplo, si \( b = (101)_2 \), eso significa:</p>
+    <p>Expandir un número quiere decir escribirlo como una suma de potencias de 2, usando sus bits. Por ejemplo, 
+    si \( b = (101)_2 \), eso significa:</p>
 
-<p>\[
-b = 1 \cdot 2^2 + 0 \cdot 2^1 + 1 \cdot 2^0 = 5
-\]</p>
+    <p>\[
+    b = 1 \cdot 2^2 + 0 \cdot 2^1 + 1 \cdot 2^0 = 5
+    \]</p>
 
-<p>Entonces, cuando calculamos \( a \cdot b \), podemos usar la propiedad distributiva:</p>
+    <p>Entonces, cuando calculamos \( a \cdot b \), podemos usar la propiedad distributiva:</p>
 
-<p>\[
-a \cdot b = a \cdot (1 \cdot 2^2 + 0 \cdot 2^1 + 1 \cdot 2^0) = a \cdot 2^2 + a \cdot 2^0
-\]</p>
+    <p>\[
+    a \cdot b = a \cdot (1 \cdot 2^2 + 0 \cdot 2^1 + 1 \cdot 2^0) = a \cdot 2^2 + a \cdot 2^0
+    \]</p>
 
-<h4>¿Qué se hace con \( a \)?</h4>
+    <h4>¿Qué se hace con \( a \)?</h4>
 
-<p>El número \( a \) no se expande. En lugar de eso, simplemente se copian versiones desplazadas de \( a \) (hacia la izquierda) cada vez que encontramos un bit 1 en \( b \).</p>
+    <p>El número \( a \) no se expande. En lugar de eso, simplemente se copian versiones desplazadas de \( a \) 
+    (hacia la izquierda) cada vez que encontramos un bit 1 en \( b \).</p>
 
     </form>
 </div>

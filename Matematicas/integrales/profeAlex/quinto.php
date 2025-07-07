@@ -59,7 +59,9 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === '39') {  
+   if ($respuesta_2 === '\frac{\sqrt{(x^2-1)^5}}{5}+\frac{\sqrt{(x^2-1)^3}}{3}+C'
+   || $respuesta_2 === '\frac{1}{5}\sqrt{(x^2-1)^5}+\frac{1}{3}\sqrt{(x^2-1)^3}+C'
+   ) {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -69,7 +71,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === '52') {  
+   if ($respuesta_3 === '\frac{(x^3-3)^8}{4}+\frac{6(x^3-3)^7}{7}+C') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -79,7 +81,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === '65') {  
+   if ($respuesta_4 === '2\sqrt{x^2+3}+C') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -89,7 +91,9 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === '78') {  
+   if ($respuesta_5 === '\frac{3\sqrt[3]{(3x^2+5x)^2}}{2}+C'
+   || $respuesta_5 === '\frac{3}{2}\sqrt[3]{(3x^2+5x)^2}'
+   ) {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -1387,11 +1391,217 @@ function ocultarMensaje4() {
     </span>
     <br><br>
     <input type="text" name="respuesta_2"   id="respuesta_2" oninput="actualizarFormula2()" 
-    value="<?php echo $respuesta_2?>" size="25" >
+    value="<?php echo $respuesta_2?>" size="45" >
+    </p>
+
+    <button onmousedown="mostrarImagen2()" onmouseup="ocultarImagen2()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada2" src="../../../img/integral_x.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen2() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+
+        // Mostrar la imagen
+        imagenMostrada2.style.display = 'block';
+        }
+
+        function ocultarImagen2() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada2.style.display = 'none';
+        }
+    </script>
+     
+    <button onmousedown="mostrarImagen3()" onmouseup="ocultarImagen3()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada3" src="../../../img/integral_x_dos.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen3() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada3');
+
+        // Mostrar la imagen
+        imagenMostrada2.style.display = 'block';
+        }
+
+        function ocultarImagen3() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada3');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada2.style.display = 'none';
+        }
+    </script>    
+
+
+<button onmousedown="mostrarImagen4()" onmouseup="ocultarImagen4()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada4" src="../../../img/integral_x_tres.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen4() {
+        var imagenMostrada4 = document.getElementById('imagenMostrada4');
+
+        // Mostrar la imagen
+        imagenMostrada4.style.display = 'block';
+        }
+
+        function ocultarImagen4() {
+        var imagenMostrada4 = document.getElementById('imagenMostrada4');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada4.style.display = 'none';
+        }
+    </script>
+    
+    <button onmousedown="mostrarImagen5()" onmouseup="ocultarImagen5()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada5" src="../../../img/integral_x_cuatro.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen5() {
+        var imagenMostrada4 = document.getElementById('imagenMostrada5');
+
+        // Mostrar la imagen
+        imagenMostrada5.style.display = 'block';
+        }
+
+        function ocultarImagen5() {
+        var imagenMostrada5 = document.getElementById('imagenMostrada5');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada5.style.display = 'none';
+        }
+    </script>
+
+        <button onmousedown="mostrarImagen6()" onmouseup="ocultarImagen6()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada6" src="../../../img/integral_final.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen6() {
+        var imagenMostrada6 = document.getElementById('imagenMostrada6');
+
+        // Mostrar la imagen
+        imagenMostrada6.style.display = 'block';
+        }
+
+        function ocultarImagen6() {
+        var imagenMostrada6 = document.getElementById('imagenMostrada6');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada6.style.display = 'none';
+        }
+    </script>
+
+    <hr>
+
+    <p style="text-align: center;">
+    \(  \int 6x^5(x^3-3)^6 \, \, dx \) = 
+    <span id="formula3">
+        \(   \)
+    </span>
+    <br><br>
+    <input type="text" name="respuesta_3"   id="respuesta_3" oninput="actualizarFormula3()" 
+    value="<?php echo $respuesta_3?>" size="40" >
     </p>
     <hr>
 
 
+     <p style="text-align: center;">
+    \(  \int \frac{2x}{\sqrt{x^2+3}} \, \, dx \) = 
+    <span id="formula4">
+        \(   \)
+    </span>
+    <br><br>
+    <input type="text" name="respuesta_4"   id="respuesta_4" oninput="actualizarFormula4()" 
+    value="<?php echo $respuesta_4?>" size="40" >
+    </p>
+
+     <button onmousedown="mostrarImagen7()" onmouseup="ocultarImagen7()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada7" src="../../../img/cambio.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen7() {
+        var imagenMostrada7 = document.getElementById('imagenMostrada7');
+
+        // Mostrar la imagen
+        imagenMostrada7.style.display = 'block';
+        }
+
+        function ocultarImagen7() {
+        var imagenMostrada7 = document.getElementById('imagenMostrada7');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada7.style.display = 'none';
+        }
+    </script>
+    
+    <button onmousedown="mostrarImagen8()" onmouseup="ocultarImagen8()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada8" src="../../../img/cambio_dos.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen8() {
+        var imagenMostrada8 = document.getElementById('imagenMostrada8');
+
+        // Mostrar la imagen
+        imagenMostrada8.style.display = 'block';
+        }
+
+        function ocultarImagen8() {
+        var imagenMostrada8 = document.getElementById('imagenMostrada8');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada8.style.display = 'none';
+        }
+    </script>
+     
+     
+    <button onmousedown="mostrarImagen9()" onmouseup="ocultarImagen9()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada9" src="../../../img/cambio_tres.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen9() {
+        var imagenMostrada9 = document.getElementById('imagenMostrada9');
+
+        // Mostrar la imagen
+        imagenMostrada9.style.display = 'block';
+        }
+
+        function ocultarImagen9() {
+        var imagenMostrada9 = document.getElementById('imagenMostrada9');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada9.style.display = 'none';
+        }
+    </script>
+
+       
+    <hr>
+    
+    <p style="text-align: center;">
+    \(  \int \frac{6x+5}{\sqrt[3]{3x^2+5x}} \, \, dx \) = 
+    <span id="formula5">
+        \(   \)
+    </span>
+    <br><br>
+    <input type="text" name="respuesta_5"   id="respuesta_5" oninput="actualizarFormula5()" 
+    value="<?php echo $respuesta_5?>" size="40" >
+    </p>
+
+    <hr>
     </form>
 </div>
 
