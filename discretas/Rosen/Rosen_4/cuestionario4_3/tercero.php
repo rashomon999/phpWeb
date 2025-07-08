@@ -210,7 +210,7 @@ if ($_POST) {
     $verificar_1 = $verificar_2 = $verificar_3 = /* ... todas las variables de verificación ... */ $verificar_122 = "correcto";
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === 'b') {  
+   if ($respuesta_1 === '5') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -220,7 +220,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === 'b^n') {  
+   if ($respuesta_2 === 'suma') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -230,11 +230,9 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   $respuesta_3_dos = str_replace('', ' ', $respuesta_3);
-
-   if ($respuesta_3_dos === 'bmodm') {  
+   if ($respuesta_3 === 'tres primos') {  
        $verificar_3 = "correcto";
-   } elseif ($respuesta_3_dos === '') {
+   } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
    } else {
        $verificar_3 = "incorrecto";
@@ -242,7 +240,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === '1') {  
+   if ($respuesta_4 === 'equivalente') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -252,11 +250,9 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   $respuesta_5_dos = str_replace('', ' ', $respuesta_5);
-
-   if ($respuesta_5_dos === 'bmodm') {  
+   if ($respuesta_5 === '2') {  
        $verificar_5 = "correcto";
-   } elseif ($respuesta_5_dos === '') {
+   } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
    } else {
        $verificar_5 = "incorrecto";
@@ -264,7 +260,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === '0') {  
+   if ($respuesta_6 === 'suma') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -274,7 +270,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === 'k-1') {  
+   if ($respuesta_7 === 'dos primos') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -284,7 +280,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === '1') {  
+   if ($respuesta_8 === '8') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -294,7 +290,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === 'power*power') {  
+   if ($respuesta_9 === '12') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -304,7 +300,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === '1') {  
+   if ($respuesta_10 === 'millones') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -314,11 +310,9 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   $respuesta_11_dos = str_replace('', ' ', $respuesta_11);
-
-   if ($respuesta_11_dos === '3mod645=3') {  
+   if ($respuesta_11 === 'infinitos') {  
        $verificar_11 = "correcto";
-   } elseif ($respuesta_11_dos === '') {
+   } elseif ($respuesta_11 === '') {
        $verificar_11 = '';
    } else {
        $verificar_11 = "incorrecto";
@@ -327,7 +321,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
      $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-     if ($respuesta_12 === '3^{2^j}') {  
+     if ($respuesta_12 === 'n^2+1') {  
          $verificar_12 = "correcto";
      } elseif ($respuesta_12 === '') {
          $verificar_12 = '';
@@ -337,7 +331,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la segunda pregunta
      $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-     if ($respuesta_13 === 'cuadrados') { 
+     if ($respuesta_13 === '2') { 
          $verificar_13 = "correcto";
      } elseif ($respuesta_13 === '') {
          $verificar_13 = '';
@@ -347,7 +341,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la tercera pregunta
      $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-     if ($respuesta_14 === '1') {  
+     if ($respuesta_14 === '56') {  
          $verificar_14 = "correcto";
      } elseif ($respuesta_14 === '') {
          $verificar_14 = '';
@@ -357,7 +351,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la cuarta pregunta
      $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-     if ($respuesta_15 === 'x') { 
+     if ($respuesta_15 === '70') { 
          $verificar_15 = "correcto";
      } elseif ($respuesta_15 === '') {
          $verificar_15 = '';
@@ -367,7 +361,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la quinta pregunta
      $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-     if ($respuesta_16 === '0') {  
+     if ($respuesta_16 === '84') {  
          $verificar_16 = "correcto";
      } elseif ($respuesta_16 === '') {
          $verificar_16 = '';
@@ -377,7 +371,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la sexta pregunta
      $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-     if ($respuesta_17 === '0') {  
+     if ($respuesta_17 === '98') {  
          $verificar_17 = "correcto";
      } elseif ($respuesta_17 === '') {
          $verificar_17 = '';
@@ -387,7 +381,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la séptima pregunta
      $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-     if ($respuesta_18 === '1') {  
+     if ($respuesta_18 === '112') {  
          $verificar_18 = "correcto";
      } elseif ($respuesta_18 === '') {
          $verificar_18 = '';
@@ -397,7 +391,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la octava pregunta
      $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-     if ($respuesta_19 === '3') {  
+     if ($respuesta_19 === '126') {  
          $verificar_19 = "correcto";
      } elseif ($respuesta_19 === '') {
          $verificar_19 = '';
@@ -1348,7 +1342,7 @@ if ($respuesta_121 === '144') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
+      <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -1361,7 +1355,7 @@ if ($respuesta_121 === '144') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 260vh;
+    height: 370vh;
     }
 </style>
  
@@ -1403,9 +1397,9 @@ function handleSubmit(event) {
 }
 
 function actualizarFormula() {
-    var f = document.getElementById('respuesta_12').value || "";
+    var f = document.getElementById('respuesta_1').value || "";
     var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula').innerHTML = `\\( ${formula} \\)`;
+    document.getElementById('formula').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
         MathJax.typeset();
     }
@@ -1626,15 +1620,6 @@ function ocultarMensaje4() {
 }
 
 
-function mostrarMensaje5() { 
-    document.getElementById("mensaje5").style.display = 'block';
-    // Asegúrate de que MathJax procese el nuevo contenido
-    MathJax.typeset([document.getElementById("mensaje5")]);
-}
-
-function ocultarMensaje5() {
-    document.getElementById("mensaje5").style.display = 'none';
-}
 
 
 </script>
@@ -1642,162 +1627,49 @@ function ocultarMensaje5() {
 </head>
 <body> 
 <div class="seccion izquierda">
-    <form action="./cuarto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-       <p>Para motivar el algoritmo rápido de exponenciación modular, ilustraremos su idea básica. Explicaremos 
-    cómo usar la expansión binaria de \( n \), digamos \( n = (a_{k-1} \dots a_1 a_0)_2 \), para calcular 
-    \( b^n \). Primero, nota que:</p>
+    <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <h2>Ejemplo 7 - La Conjetura de Goldbach</h2>
 
-    <p>
-    \[
-    b^n = b^{a_{k-1} \cdot 2^{k-1} + \cdots + a_1 \cdot 2 + a_0} = b^{a_{k-1} \cdot 2^{k-1}} 
-    \cdots b^{a_1 \cdot 2} \cdot b^{a_0}.
-    \]
-    </p>
+    <p>En 1742, Christian Goldbach, en una carta a Leonhard Euler, conjeturó que todo entero 
+    impar \( n >  \) 
+    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="9">
+    es la 
+    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="9">
+      de 
+    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="9">
+    .</p>
 
-    <p>Esto muestra que para calcular \( b^n \), solo necesitamos calcular los valores de 
-    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="8">,
-    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="8">,    
-    \((b^2)^2 = 
-    b^4, (b^4)^2 = b^8, \dots, b^{2^k} \). Una vez tenemos estos valores, multiplicamos los términos \( b^{2^j} \) 
-    en esta lista donde \( a_j = 1 \). (Para mayor eficiencia y menor uso de memoria, después de cada 
-    multiplicación reducimos el resultado módulo \( m \)). Esto nos da \( b^n \).</p>
+    <p>Euler respondió que esta conjetura es 
+    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="9">    
+      a la conjetura de que todo entero par \( n >  \) 
+    <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="9">
+    es la 
+    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="9">
+      de 
+    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="9">
+    .</p>
 
-    <p>Por ejemplo, para calcular \( 3^{11} \), primero notamos que \( 11 = (1011)_2 \), así que:</p>
+    <p>Esta última es conocida hoy como la <strong>Conjetura de Goldbach</strong>.</p>
 
-    <p>
-    \[
-    3^{11} = 3^8 \cdot 3^2 \cdot 3 = 6561 \cdot 9 \cdot 3 = 177,147.
-    \]
-    </p>
+    <p>Podemos verificar esta conjetura para números pares pequeños:</p>
+    <ul>
+    <li>\( 4 = 2 + 2 \)</li>
+    <li>\( 6 = 3 + 3 \)</li>
+    <li> <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="1">\(  = 5 + 3 \)</li>
+    <li>\( 10 = 7 + 3 \)</li>
+    <li><input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="1">\(  = 7 + 5 \)</li>
+    </ul>
 
-    <p>El algoritmo encuentra sucesivamente 
-    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="8">    
-    \(   , b^2 \bmod m, b^4 \bmod m, \dots, b^{2^{k-1}} \bmod m \) 
-    y multiplica los términos \( b^{2^j} \bmod m \) donde \( a_j = 1 \), hallando el residuo del producto 
-    módulo \( m \) después de cada multiplicación. Nota que solo necesitamos realizar \( \mathcal{O}(\log_2(n)) \) 
-    multiplicaciones.</p>
+    <p>Antes de la llegada de las computadoras, la conjetura fue verificada manualmente hasta 
+    números del orden de 
+    <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="9">
+    .</p>
+  
 
-
-    
-<h4>ALGORITHM 5 Fast Modular Exponentiation</h4>
-
-<pre><code>
-procedure modular exponentiation(b: integer, n = (a_{k-1}a_{k-2} … a_1a_0)_2,
-                                 m: positive integers)
-x := <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="8"> 
-power := <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="11">   
-for i := <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="4">  to <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="4"> 
-    if a_i =  <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="4">  then x := (x ⋅ power) mod m
-    power := (<input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="12">) mod m
-return x {x equals b^n mod m}
-</code></pre>
-
-    <button onmousedown="mostrarMensaje()" onmouseup="ocultarMensaje()">Solucion</button>
-    <div id="mensaje" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
-   
-    power := (power ⋅ power) mod m
-    siempre se ejecuta en cada iteración del ciclo, independientemente de si el if se ejecuta o no.
-    </div>
- 
-
-    <h4>Ejemplo 12</h4>
-    <p><strong>Usa el Algoritmo 5 para encontrar \( 3^{644} \bmod 645 \).</strong></p>
-
-    <p><strong>Solución:</strong> El Algoritmo 5 inicialmente establece \( x =  \) 
-    <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="2">
-    y \( \text{power} = 
-    \)
-    <input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="14">
-      . 
-    En el cálculo de 
-    \( 3^{644} \bmod 645 \), este algoritmo determina 
-    <input type="text"  id="respuesta_12" name="respuesta_12" value="<?php echo $respuesta_12; ?>" 
-    oninput="actualizarFormula()"
-    size="7">
-    <span id="formula">
-        \(    \)
-    </span>    
-    \(\bmod 645 \) para \( j = 1, 2, \dots, 9 \) 
-    mediante 
-    <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="9">
-    sucesivos y reducción módulo 645.</p>
-
-    <p>Si \( a_j =  \) 
-    <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="9">    
-    (donde \( a_j \) es el bit en la posición \( j \) de la expansión binaria de 644, que es
-    \( (1010000100)_2 \)), multiplica el valor actual de 
-    <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="9"> 
-    por \( 3^{2^j} \bmod 645 \) y reduce el resultado 
-    módulo 645.</p>
-
-    <p>Aquí están los pasos usados:</p>
-    \( a_0 : \) <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="9"> 
-    <br><br>
-    \( a_1 : \) <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="9"> 
-    <br><br>
-    \( a_2 : \) <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="9"> 
-    <br><br>
-    <button onmousedown="mostrarImagen3()" onmouseup="ocultarImagen3()">tabla valores a_j...</button>
+ <button onmousedown="mostrarImagen2()" onmouseup="ocultarImagen2()">Conjetura</button>
     <!-- Elemento para mostrar la imagen -->
 
-    <img id="imagenMostrada3" src="../../../../img/tabla_modulo.png" style="display: none; max-width: 100%" width="560">
-
-    <script>
-        function mostrarImagen3() {
-        var imagenMostrada3 = document.getElementById('imagenMostrada3');
-
-        // Mostrar la imagen
-        imagenMostrada3.style.display = 'block';
-        }
-
-        function ocultarImagen3() {
-        var imagenMostrada3 = document.getElementById('imagenMostrada3');
-
-        // Ocultar la imagen al soltar el botón
-        imagenMostrada3.style.display = 'none';
-        }
-    </script>
-
- 
- 
-    <p>Esto muestra que al seguir los pasos del Algoritmo 5 se obtiene el resultado:</p>
-
-    <p>
-    \[
-    3^{644} \bmod 645 = 36.
-    \]
-    </p>
-
-    <p>◂</p>
-
-    <p>El Algoritmo 5 es bastante eficiente; utiliza \( \mathcal{O}((\log m)^2 \log n) \) operaciones a nivel de bit 
-    para encontrar \( b^n \bmod m \) (ver Ejercicio 64).</p>
-
-    <button onmousedown="mostrarImagen()" onmouseup="ocultarImagen()">Explicacion aj</button>
-    <!-- Elemento para mostrar la imagen -->
-
-    <img id="imagenMostrada" src="../../../../img/eliminacion.png" style="display: none; max-width: 100%" width="560">
-
-    <script>
-        function mostrarImagen() {
-        var imagenMostrada2 = document.getElementById('imagenMostrada');
-
-        // Mostrar la imagen
-        imagenMostrada.style.display = 'block';
-        }
-
-        function ocultarImagen() {
-        var imagenMostrada = document.getElementById('imagenMostrada');
-
-        // Ocultar la imagen al soltar el botón
-        imagenMostrada.style.display = 'none';
-        }
-    </script>
-
-    <button onmousedown="mostrarImagen2()" onmouseup="ocultarImagen2()">Ampliacion</button>
-    <!-- Elemento para mostrar la imagen -->
-
-    <img id="imagenMostrada2" src="../../../../img/ejemplo_n.png" style="display: none; max-width: 100%" width="560">
+    <img id="imagenMostrada2" src="../../../../img/conjetura_dos.png" style="display: none; max-width: 100%" width="460">
 
     <script>
         function mostrarImagen2() {
@@ -1814,86 +1686,203 @@ return x {x equals b^n mod m}
         imagenMostrada2.style.display = 'none';
         }
     </script>
-      
-       <h3>📌 Vamos a repasar el ejemplo para aclararlo:</h3>
-    <p>Queremos calcular:</p>
-    <p>\[ 3^{11} \mod 13 \]</p>
-    R//: <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="9"> 
 
-    <button onmousedown="mostrarMensaje3()" onmouseup="ocultarMensaje3()">Solucion1</button>
-    <div id="mensaje3" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
-    <h4>🔢 Paso 1: Convertimos 11 a binario</h4>
-    <p>\[ 11 = (1011)_2 \quad   \]</p>
+     <button onmousedown="mostrarMensaje()" onmouseup="ocultarMensaje()">Dato</button>
+    <div id="mensaje" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
+       <p>Con computadoras, se ha verificado para todos los enteros positivos pares hasta:</p>
 
- 
+    <p>\[
+    4 \times 10^{18}
+    \]</p>
 
-    <p>
-    \( n = 11 = (1011)_2 \)
-    </p>
+    <p>Aunque aún no se ha encontrado una prueba, la mayoría de los matemáticos creen 
+    que la conjetura es verdadera.</p>
 
-    <p>
-    Esto significa que:
-    </p>
+    <p>Algunos resultados más débiles han sido probados:</p>
 
-    <p>
-    \[
-    11 = 1 \cdot 2^3 + 0 \cdot 2^2 + 1 \cdot 2^1 + 1 \cdot 2^0 = 8 + 2 + 1
-    \]
-    </p>
-
-    <p>
-    Entonces:
-    </p>    
-
-
-
-    <p>
-    \[
-    b^{11} = b^{8 + 2 + 1} = b^8 \cdot b^2 \cdot b^1
-    \]
-    </p>
-    </div> 
-
-
-    <button onmousedown="mostrarMensaje4()" onmouseup="ocultarMensaje4()">Solucion2</button>
-    <div id="mensaje4" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
-     
-
-    <p>Entonces:</p>
-    <p>
     <ul>
-    <li>\( 3^8 \mod 13 = 9 \)</li>
-    <li>\( 3^2 \mod 13 = 9 \)</li>
-    <li>\( 3^1 \mod 13 = 3 \)</li>
+    <li>Todo entero par mayor que 2 es la suma de a lo sumo seis primos (O. Ramaré, 1995).</li>
+    <li>Todo entero positivo suficientemente grande es la suma de un primo y un número que es primo 
+    o el producto de dos primos (J. R. Chen, 1966).</li>
+    </ul>   
+    </div>
+ 
+    <h2>Ejemplo 8 - Primos de la forma 
+     <input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="9">    
+    </h2>
+
+    <p>Hay muchas conjeturas que afirman que hay 
+    <input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="9">    
+    primos de formas especiales.</p>
+
+    <p>Una de ellas es que existen infinitos primos de la forma:</p>
+
+    <input type="text"  value="<?php echo $respuesta_12; ?>" size="9" readonly> 
+
+    <p>donde \( n \) es un entero positivo.</p>
+
+    <p>Ejemplos:</p>
+    <ul>
+    <li>\( 5 = 2^2 + 1 \)</li>
+    <li>\( 17 = 4^2 + 1 \)</li>
+    <li>\( 37 = 6^2 + 1 \)</li>
     </ul>
-    </p>
-    <p>\[ 3^{11} \mod 13 = (9 \cdot 9 \cdot 3) \mod 13 \]</p>
 
-    <h4>Multiplica los dos primeros:</h4>
-    <p>\[ 9 \cdot 9 = 81 \]</p>
-
-    <p>Ahora, aplicamos módulo 13:</p>
-    <p>\[ 81 \mod 13 = 3 \quad \text{(porque } 81 = 6 \cdot 13 + 3 \text{)} \]</p>
-
+    <p>El mejor resultado actual es que hay infinitos \( n \) tales que \( n^2 + 1 \) es primo o el producto
+    de a lo sumo dos primos (Henryk Iwaniec, 1973).</p>
     
+      
+    <button onmousedown="mostrarImagen3()" onmouseup="ocultarImagen3()">Conjetura</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada3" src="../../../../img/conjetura_tres.png" style="display: none; max-width: 100%" width="560">
+
+    <script>
+        function mostrarImagen3() {
+        var imagenMostrada3 = document.getElementById('imagenMostrada3');
+
+        // Mostrar la imagen
+        imagenMostrada3.style.display = 'block';
+        }
+
+        function ocultarImagen3() {
+        var imagenMostrada3 = document.getElementById('imagenMostrada3');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada3.style.display = 'none';
+        }
+    </script>
+    <button onmousedown="mostrarImagen()" onmouseup="ocultarImagen()">Explicacion</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada" src="../../../../img/conjetura.png" style="display: none; max-width: 100%" width="560">
+
+    <script>
+        function mostrarImagen() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada');
+
+        // Mostrar la imagen
+        imagenMostrada.style.display = 'block';
+        }
+
+        function ocultarImagen() {
+        var imagenMostrada = document.getElementById('imagenMostrada');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada.style.display = 'none';
+        }
+    </script>
+     
+    <h2>Ejemplo 9 - La Conjetura de los Primos Gemelos</h2>
+
+    <p>Los primos gemelos son pares de primos que difieren en 
+     <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="9">     
+    , como:</p>
+    <ul>
+    <li>\( 3 \) y \( 5 \)</li>
+    <li>\( 5 \) y \( 7 \)</li>
+    <li>\( 11 \) y \( 13 \)</li>
+    <li>\( 17 \) y \( 19 \)</li>
+    <li>\( 4967 \) y \( 4969 \)</li>
+    </ul>
+
+    <button onmousedown="mostrarMensaje3()" onmouseup="ocultarMensaje3()">Explicacion</button>
+    <div id="mensaje3" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
+   <p>La <strong>Conjetura de los Primos Gemelos</strong> afirma que hay infinitos primos gemelos.</>
+
+    <p>El resultado más fuerte probado es que hay infinitos pares \( p \) y \( p + 2 \) donde uno es primo 
+    y el otro es primo o el producto de dos primos (J. R. Chen, 1966).</p>
+
+    <p>El récord mundial de primos gemelos, a principios de 2018, son los números:</p>
+
+    <p>\[
+    2,996,863,034,895 \times 2^{1,290,000} \pm 1
+    \]</p>
+
+    <p>que tienen 388,342 dígitos decimales.</p>
+
+    <p>Sea \( P(n) \) la afirmación de que hay infinitos pares de primos que difieren exactamente en \( n \).</p>
+
+    <p>La conjetura de los primos gemelos afirma que \( P(2) \) es verdadera.</p>
+
+    <p>Se formuló una conjetura más débil, la <strong>Conjetura del Intervalo Acotado</strong>, que afirma
+    que existe un \( N \) tal que \( P(N) \) es verdadera.</p>
+
+    <p>Yitang Zhang, en 2013, demostró que existe un \( N < 70,000,000 \) tal que \( P(N) \) es verdadera.</p>
+
+    <p>Un equipo liderado por Terence Tao redujo el valor de \( N \) a:</p>
+
+    <p>\[
+    N \leq 246
+    \]</p>
+
+    <p>Además, mostraron que si una cierta conjetura adicional fuera verdadera, se podría llegar a \( N \leq 6 \),
+    el mejor límite posible con los métodos actuales.</p>
+
     </div>
 
 
 
-    
-    <button onmousedown="mostrarMensaje5()" onmouseup="ocultarMensaje5()">Solucion3</button>
-    <div id="mensaje5" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
-    
 
-    <h4>Multiplicamos ese resultado por el siguiente factor:</h4>
-    <p>\[ 3 \cdot 3 = 9 \]</p>
 
-    <p>Y como \( 9 < 13 \), el módulo no cambia nada:</p>
-    <p>\[ 9 \mod 13 = 9 \]</p>
 
-    <h3>✅ Resultado final:</h3>
-    <p>\[ (9 \cdot 9 \cdot 3) \mod 13 = ((81 \mod 13) \cdot 3) \mod 13 = (3 \cdot 3) \mod 13 = 9 \]</p>
-    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h2>4.3.6 Máximos Comunes Divisores y Mínimos Comunes Múltiplos</h2>
+    <br>
+    <strong>Nota gcd (Greatest Common Divisor)</strong>
+    <p>El mayor entero que divide a dos enteros se llama el 
+    <strong>máximo común divisor</strong> de estos enteros.</p>
+
+    <h3>Definición 2</h3>
+    <p>Sean \( a \) y \( b \) enteros, no ambos cero. El mayor entero \( d \) tal que \( d \mid a \)
+    y \( d \mid b \) se llama el <strong>máximo común divisor</strong> de \( a \) y \( b \). 
+    El máximo común divisor de \( a \) y \( b \) se denota por \( \gcd(a, b) \).</p>
+
+    <p>El máximo común divisor de dos enteros, no ambos cero, existe porque el conjunto de divisores 
+    comunes es no vacío y finito. Una forma de encontrar el máximo común divisor de dos enteros es 
+    encontrar todos los divisores positivos comunes de ambos enteros y luego tomar el mayor. Esto se 
+    muestra en los Ejemplos 10 y 11. Posteriormente, se dará un método más eficiente para encontrar 
+    máximos comunes divisores.</p>
+
+    <h3>Ejemplo 10</h3>
+    <p><em>¿Cuál es el máximo común divisor de 24 y 36?</em></p>
+    <p><strong>Solución:</strong> Los divisores comunes positivos de 24 y 36 son 1, 2, 3, 4, 6 y 12. 
+    Por lo tanto, \( \gcd(24, 36) = 12 \).</p>
+
+    <h3>Ejemplo 11</h3>
+    <p><em>¿Cuál es el máximo común divisor de 17 y 22?</em></p>
+    <p><strong>Solución:</strong> Los enteros 17 y 22 no tienen divisores comunes positivos aparte de 1, 
+    así que \( \gcd(17, 22) = 1 \).</p>
+
+    <p>Debido a que a menudo es importante especificar que dos enteros no tienen divisores positivos 
+    comunes aparte de 1, definimos lo siguiente:</p>
+
+    <h3>Definición 3</h3>
+    <p>Los enteros \( a \) y \( b \) son <strong>primos relativos</strong> si su máximo común divisor es 1.</p>
+
+    <h3>Ejemplo 12</h3>
+    <p>Por el Ejemplo 11, los enteros 17 y 22 son primos relativos porque \( \gcd(17, 22) = 1 \).</p>
+
+    <p>También es útil especificar que ningún par de enteros en un conjunto tiene un divisor positivo 
+    común mayor que 1, así que hacemos la siguiente definición:</p>
+
+    <h3>Definición 4</h3>
+    <p>Los enteros \( a_1, a_2, \dots, a_n \) son <strong>primos relativos por pares</strong> si 
+    \( \gcd(a_i, a_j) = 1 \) siempre que \( 1 \leq i < j \leq n \).</p>
+
     </form>
 </div>
 
@@ -1901,7 +1890,7 @@ return x {x equals b^n mod m}
 
 
 <div class="seccion derecha">
-    <form action="./cuarto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
      
     </form>
 </div>
@@ -1911,7 +1900,7 @@ return x {x equals b^n mod m}
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="cuarto.php"
+        href="tercero.php"
         role="button"
         width="50px"
         height="50px"

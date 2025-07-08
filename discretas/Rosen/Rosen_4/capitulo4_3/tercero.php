@@ -1434,7 +1434,7 @@ function ocultarMensaje4() {
 
 
 
-</script>
+</script> 
     
 </head>
 <body> 
@@ -1442,70 +1442,75 @@ function ocultarMensaje4() {
     <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
     <h2>Ejemplo 7 - La Conjetura de Goldbach</h2>
 
-<p>En 1742, Christian Goldbach, en una carta a Leonhard Euler, conjeturó que todo entero impar \( n > 5 \) es la suma de tres primos.</p>
+    <p>En 1742, Christian Goldbach, en una carta a Leonhard Euler, conjeturó que todo entero 
+    impar \( n > 5 \) es la suma de tres primos.</p>
 
-<p>Euler respondió que esta conjetura es equivalente a la conjetura de que todo entero par \( n > 2 \) es la suma de dos primos.</p>
+    <p>Euler respondió que esta conjetura es equivalente a la conjetura de que todo entero par \( n > 2 \) 
+    es la suma de dos primos.</p>
 
-<p>Esta última es conocida hoy como la <strong>Conjetura de Goldbach</strong>.</p>
+    <p>Esta última es conocida hoy como la <strong>Conjetura de Goldbach</strong>.</p>
 
-<p>Podemos verificar esta conjetura para números pares pequeños:</p>
-<ul>
-<li>\( 4 = 2 + 2 \)</li>
-<li>\( 6 = 3 + 3 \)</li>
-<li>\( 8 = 5 + 3 \)</li>
-<li>\( 10 = 7 + 3 \)</li>
-<li>\( 12 = 7 + 5 \)</li>
-</ul>
+    <p>Podemos verificar esta conjetura para números pares pequeños:</p>
+    <ul>
+    <li>\( 4 = 2 + 2 \)</li>
+    <li>\( 6 = 3 + 3 \)</li>
+    <li>\( 8 = 5 + 3 \)</li>
+    <li>\( 10 = 7 + 3 \)</li>
+    <li>\( 12 = 7 + 5 \)</li>
+    </ul>
 
-<p>Antes de la llegada de las computadoras, la conjetura fue verificada manualmente hasta números del orden de millones.</p>
+    <p>Antes de la llegada de las computadoras, la conjetura fue verificada manualmente hasta 
+    números del orden de millones.</p>
 
-<p>Con computadoras, se ha verificado para todos los enteros positivos pares hasta:</p>
+    <p>Con computadoras, se ha verificado para todos los enteros positivos pares hasta:</p>
 
-<p>\[
-4 \times 10^{18}
-\]</p>
+    <p>\[
+    4 \times 10^{18}
+    \]</p>
 
-<p>Aunque aún no se ha encontrado una prueba, la mayoría de los matemáticos creen que la conjetura es verdadera.</p>
+    <p>Aunque aún no se ha encontrado una prueba, la mayoría de los matemáticos creen 
+    que la conjetura es verdadera.</p>
 
-<p>Algunos resultados más débiles han sido probados:</p>
+    <p>Algunos resultados más débiles han sido probados:</p>
 
-<ul>
-<li>Todo entero par mayor que 2 es la suma de a lo sumo seis primos (O. Ramaré, 1995).</li>
-<li>Todo entero positivo suficientemente grande es la suma de un primo y un número que es primo o el producto de dos primos (J. R. Chen, 1966).</li>
-</ul>
+    <ul>
+    <li>Todo entero par mayor que 2 es la suma de a lo sumo seis primos (O. Ramaré, 1995).</li>
+    <li>Todo entero positivo suficientemente grande es la suma de un primo y un número que es primo 
+    o el producto de dos primos (J. R. Chen, 1966).</li>
+    </ul>
 
-<h2>Ejemplo 8 - Primos de la forma \( n^2 + 1 \)</h2>
+    <h2>Ejemplo 8 - Primos de la forma \( n^2 + 1 \)</h2>
 
-<p>Hay muchas conjeturas que afirman que hay infinitos primos de formas especiales.</p>
+    <p>Hay muchas conjeturas que afirman que hay infinitos primos de formas especiales.</p>
 
-<p>Una de ellas es que existen infinitos primos de la forma:</p>
+    <p>Una de ellas es que existen infinitos primos de la forma:</p>
 
-<p>\[
-n^2 + 1
-\]</p>
+    <p>\[
+    n^2 + 1
+    \]</p>
 
-<p>donde \( n \) es un entero positivo.</p>
+    <p>donde \( n \) es un entero positivo.</p>
 
-<p>Ejemplos:</p>
-<ul>
-<li>\( 5 = 2^2 + 1 \)</li>
-<li>\( 17 = 4^2 + 1 \)</li>
-<li>\( 37 = 6^2 + 1 \)</li>
-</ul>
+    <p>Ejemplos:</p>
+    <ul>
+    <li>\( 5 = 2^2 + 1 \)</li>
+    <li>\( 17 = 4^2 + 1 \)</li>
+    <li>\( 37 = 6^2 + 1 \)</li>
+    </ul>
 
     <p>El mejor resultado actual es que hay infinitos \( n \) tales que \( n^2 + 1 \) es primo o el producto
     de a lo sumo dos primos (Henryk Iwaniec, 1973).</p>
 
-<h2>Ejemplo 9 - La Conjetura de los Primos Gemelos</h2>
+    <h2>Ejemplo 9 - La Conjetura de los Primos Gemelos</h2>
 
-<p>Los primos gemelos son pares de primos que difieren en 2, como:</p>
-<ul>
-<li>\( 3 \) y \( 5 \)</li>
-<li>\( 5 \) y \( 7 \)</li>
-<li>\( 11 \) y \( 13 \)</li>
-<li>\( 17 \) y \( 19 \)</li>
-<li>\( 4967 \) y \( 4969 \)</li>
-</ul>
+    <p>Los primos gemelos son pares de primos que difieren en 2, como:</p>
+    <ul>
+    <li>\( 3 \) y \( 5 \)</li>
+    <li>\( 5 \) y \( 7 \)</li>
+    <li>\( 11 \) y \( 13 \)</li>
+    <li>\( 17 \) y \( 19 \)</li>
+    <li>\( 4967 \) y \( 4969 \)</li>
+    </ul>
 
     <p>La <strong>Conjetura de los Primos Gemelos</strong> afirma que hay infinitos primos gemelos.</>
 
@@ -1539,36 +1544,56 @@ n^2 + 1
     el mejor límite posible con los métodos actuales.</p>
 
     <hr>
+
+
+
+
+
+
+
+
     <h2>4.3.6 Máximos Comunes Divisores y Mínimos Comunes Múltiplos</h2>
     <br>
-<strong>Nota gcd (Greatest Common Divisor)</strong>
-<p>El mayor entero que divide a dos enteros se llama el <strong>máximo común divisor</strong> de estos enteros.</p>
+    <strong>Nota gcd (Greatest Common Divisor)</strong>
+    <p>El mayor entero que divide a dos enteros se llama el 
+    <strong>máximo común divisor</strong> de estos enteros.</p>
 
-<h3>Definición 2</h3>
-<p>Sean \( a \) y \( b \) enteros, no ambos cero. El mayor entero \( d \) tal que \( d \mid a \) y \( d \mid b \) se llama el <strong>máximo común divisor</strong> de \( a \) y \( b \). El máximo común divisor de \( a \) y \( b \) se denota por \( \gcd(a, b) \).</p>
+    <h3>Definición 2</h3>
+    <p>Sean \( a \) y \( b \) enteros, no ambos cero. El mayor entero \( d \) tal que \( d \mid a \)
+    y \( d \mid b \) se llama el <strong>máximo común divisor</strong> de \( a \) y \( b \). 
+    El máximo común divisor de \( a \) y \( b \) se denota por \( \gcd(a, b) \).</p>
 
-<p>El máximo común divisor de dos enteros, no ambos cero, existe porque el conjunto de divisores comunes es no vacío y finito. Una forma de encontrar el máximo común divisor de dos enteros es encontrar todos los divisores positivos comunes de ambos enteros y luego tomar el mayor. Esto se muestra en los Ejemplos 10 y 11. Posteriormente, se dará un método más eficiente para encontrar máximos comunes divisores.</p>
+    <p>El máximo común divisor de dos enteros, no ambos cero, existe porque el conjunto de divisores 
+    comunes es no vacío y finito. Una forma de encontrar el máximo común divisor de dos enteros es 
+    encontrar todos los divisores positivos comunes de ambos enteros y luego tomar el mayor. Esto se 
+    muestra en los Ejemplos 10 y 11. Posteriormente, se dará un método más eficiente para encontrar 
+    máximos comunes divisores.</p>
 
-<h3>Ejemplo 10</h3>
-<p><em>¿Cuál es el máximo común divisor de 24 y 36?</em></p>
-<p><strong>Solución:</strong> Los divisores comunes positivos de 24 y 36 son 1, 2, 3, 4, 6 y 12. Por lo tanto, \( \gcd(24, 36) = 12 \).</p>
+    <h3>Ejemplo 10</h3>
+    <p><em>¿Cuál es el máximo común divisor de 24 y 36?</em></p>
+    <p><strong>Solución:</strong> Los divisores comunes positivos de 24 y 36 son 1, 2, 3, 4, 6 y 12. 
+    Por lo tanto, \( \gcd(24, 36) = 12 \).</p>
 
-<h3>Ejemplo 11</h3>
-<p><em>¿Cuál es el máximo común divisor de 17 y 22?</em></p>
-<p><strong>Solución:</strong> Los enteros 17 y 22 no tienen divisores comunes positivos aparte de 1, así que \( \gcd(17, 22) = 1 \).</p>
+    <h3>Ejemplo 11</h3>
+    <p><em>¿Cuál es el máximo común divisor de 17 y 22?</em></p>
+    <p><strong>Solución:</strong> Los enteros 17 y 22 no tienen divisores comunes positivos aparte de 1, 
+    así que \( \gcd(17, 22) = 1 \).</p>
 
-<p>Debido a que a menudo es importante especificar que dos enteros no tienen divisores positivos comunes aparte de 1, definimos lo siguiente:</p>
+    <p>Debido a que a menudo es importante especificar que dos enteros no tienen divisores positivos 
+    comunes aparte de 1, definimos lo siguiente:</p>
 
-<h3>Definición 3</h3>
-<p>Los enteros \( a \) y \( b \) son <strong>primos relativos</strong> si su máximo común divisor es 1.</p>
+    <h3>Definición 3</h3>
+    <p>Los enteros \( a \) y \( b \) son <strong>primos relativos</strong> si su máximo común divisor es 1.</p>
 
-<h3>Ejemplo 12</h3>
-<p>Por el Ejemplo 11, los enteros 17 y 22 son primos relativos porque \( \gcd(17, 22) = 1 \).</p>
+    <h3>Ejemplo 12</h3>
+    <p>Por el Ejemplo 11, los enteros 17 y 22 son primos relativos porque \( \gcd(17, 22) = 1 \).</p>
 
-<p>También es útil especificar que ningún par de enteros en un conjunto tiene un divisor positivo común mayor que 1, así que hacemos la siguiente definición:</p>
+    <p>También es útil especificar que ningún par de enteros en un conjunto tiene un divisor positivo 
+    común mayor que 1, así que hacemos la siguiente definición:</p>
 
-<h3>Definición 4</h3>
-<p>Los enteros \( a_1, a_2, \dots, a_n \) son <strong>primos relativos por pares</strong> si \( \gcd(a_i, a_j) = 1 \) siempre que \( 1 \leq i < j \leq n \).</p>
+    <h3>Definición 4</h3>
+    <p>Los enteros \( a_1, a_2, \dots, a_n \) son <strong>primos relativos por pares</strong> si 
+    \( \gcd(a_i, a_j) = 1 \) siempre que \( 1 \leq i < j \leq n \).</p>
 
 
     </form>

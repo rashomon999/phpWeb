@@ -1136,7 +1136,7 @@ if ($respuesta_110 === '264') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 395vh;
+    height: 430vh;
     }
 </style>
  
@@ -1441,30 +1441,53 @@ function ocultarMensaje4() {
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
     <h2>4.3 Primos y Máximo Común Divisor</h2>
     <h3>4.3.1 Introducción</h3>
-    <p>En la Sección 4.1 estudiamos el concepto de divisibilidad de los enteros. Un concepto importante basado en la divisibilidad es el de número primo. Un primo es un número entero mayor que 1 que no es divisible por ningún otro número entero positivo excepto por 1 y por sí mismo. El estudio de los números primos se remonta a tiempos antiguos. Hace miles de años se sabía que existen infinitos números primos; la demostración de este hecho, encontrada en las obras de Euclides, es famosa por su elegancia y belleza.</p>
+    <p>En la Sección 4.1 estudiamos el concepto de divisibilidad de los enteros. Un concepto importante basado en 
+    la divisibilidad es el de número primo. Un primo es un número entero mayor que 1 que no es divisible por ningún 
+    otro número entero positivo excepto por 1 y por sí mismo. El estudio de los números primos se remonta a tiempos 
+    antiguos. Hace miles de años se sabía que existen infinitos números primos; la demostración de este hecho, 
+    encontrada en las obras de Euclides, es famosa por su elegancia y belleza.</p>
     
-    <p>Discutiremos la distribución de los primos entre los enteros. Describiremos algunos de los resultados sobre los primos encontrados por los matemáticos en los últimos 400 años. En particular, introduciremos un teorema importante, el teorema fundamental de la aritmética. Este teorema, que afirma que todo número entero positivo puede escribirse de manera única como el producto de primos en orden no decreciente, tiene muchas consecuencias interesantes. También discutiremos algunas de las muchas antiguas conjeturas sobre los primos que aún permanecen sin resolver hoy en día.</p>
+    <p>Discutiremos la distribución de los primos entre los enteros. Describiremos algunos de los resultados sobre 
+    los primos encontrados por los matemáticos en los últimos 400 años. En particular, introduciremos un teorema 
+    importante, el teorema fundamental de la aritmética. Este teorema, que afirma que todo número entero positivo 
+    puede escribirse de manera única como el producto de primos en orden no decreciente, tiene muchas consecuencias 
+    interesantes. También discutiremos algunas de las muchas antiguas conjeturas sobre los primos que aún permanecen 
+    sin resolver hoy en día.</p>
     
-    <p>Los números primos se han vuelto esenciales en los sistemas criptográficos modernos, y desarrollaremos algunas de sus propiedades importantes en criptografía. Por ejemplo, encontrar grandes números primos es esencial en la criptografía moderna. El tiempo necesario para factorizar grandes números enteros en sus factores primos es la base de la fortaleza de algunos sistemas criptográficos modernos importantes.</p>
+    <p>Los números primos se han vuelto esenciales en los sistemas criptográficos modernos, y desarrollaremos algunas 
+    de sus propiedades importantes en criptografía. Por ejemplo, encontrar grandes números primos es esencial en la 
+    criptografía moderna. El tiempo necesario para factorizar grandes números enteros en sus factores primos es la 
+    base de la fortaleza de algunos sistemas criptográficos modernos importantes.</p>
     
-    <p>En esta sección también estudiaremos el máximo común divisor de dos enteros, así como el mínimo común múltiplo de dos enteros. Desarrollaremos un algoritmo importante para calcular el máximo común divisor, llamado el algoritmo euclidiano.</p>
+    <p>En esta sección también estudiaremos el máximo común divisor de dos enteros, así como el mínimo común múltiplo 
+    de dos enteros. Desarrollaremos un algoritmo importante para calcular el máximo común divisor, llamado el 
+    algoritmo euclidiano.</p>
 
 
     <hr>
     <h2>4.3.2 Primos</h2>
-    <p>Todo número entero mayor que 1 es divisible por al menos dos enteros, porque un número entero positivo es divisible por 1 y por sí mismo. Los números enteros positivos que tienen exactamente dos factores enteros positivos diferentes se llaman primos.</p>
+    <p>Todo número entero mayor que 1 es divisible por al menos dos enteros, porque un número entero positivo es 
+    divisible por 1 y por sí mismo. Los números enteros positivos que tienen exactamente dos factores enteros 
+    positivos diferentes se llaman primos.</p>
+
     <h3>Definición 1:</h3>
     <p>Un número entero \( p \) mayor que 1 se llama primo si los únicos factores positivos de \( p \) son 1 y \( p \).</p>
     <p>Un número entero positivo que es mayor que 1 y no es primo se llama compuesto.</p>
-    <p><strong>Observación:</strong> El número entero 1 no es primo, porque solo tiene un factor positivo. También se debe observar que un número entero \( n \) es compuesto si y solo si existe un número entero \( a \) tal que \( a \mid n \) y \( 1 < a < n \).</p>
+    <p><strong>Observación:</strong> El número entero 1 no es primo, porque solo tiene un factor positivo. También 
+    se debe observar que un número entero \( n \) es compuesto si y solo si existe un número entero \( a \) tal que 
+    \( a \mid n \) y \( 1 < a < n \).</p>
 
     <h3>EJEMPLO 1:</h3>
-    <p>El número entero 7 es primo porque sus únicos factores positivos son 1 y 7, mientras que el número 9 es compuesto porque es divisible por 3.</p>
+    <p>El número entero 7 es primo porque sus únicos factores positivos son 1 y 7, mientras que el número 9 es compuesto 
+    porque es divisible por 3.</p>
 
-    <p>Los números primos son los bloques de construcción de los números enteros positivos, como lo demuestra el teorema fundamental de la aritmética. La demostración se dará en la Sección 5.2.</p>
+    <p>Los números primos son los bloques de construcción de los números enteros positivos, como lo demuestra el teorema 
+    fundamental de la aritmética. La demostración se dará en la Sección 5.2.</p>
 
     <h3>TEOREMA 1:</h3>
-    <p><strong>TEOREMA FUNDAMENTAL DE LA ARITMÉTICA:</strong> Todo número entero mayor que 1 puede escribirse de manera única como un primo o como el producto de dos o más primos, donde los factores primos se escriben en orden de tamaño no decreciente.</p>
+    <p><strong>TEOREMA FUNDAMENTAL DE LA ARITMÉTICA:</strong> Todo número entero mayor que 1 puede escribirse de manera 
+    única como un primo o como el producto de dos o más primos, donde los factores primos se escriben en orden de tamaño 
+    no decreciente.</p>
 
     <h3>Ejemplo 2:</h3>
     <p>Se dan algunas factorizaciones primas de enteros.</p>
@@ -1479,31 +1502,73 @@ function ocultarMensaje4() {
     </ul>
 
     <h2>4.3.3 División por Ensayo</h2>
-    <p>A menudo es importante demostrar que un número entero dado es primo. Por ejemplo, en criptología, los grandes primos se usan en algunos métodos para hacer mensajes secretos. Un procedimiento para demostrar que un número entero es primo se basa en la siguiente observación.</p>
+    <p>A menudo es importante demostrar que un número entero dado es primo. Por ejemplo, en criptología, los grandes 
+    primos se usan en algunos métodos para hacer mensajes secretos. Un procedimiento para demostrar que un número entero 
+    es primo se basa en la siguiente observación.</p>
 
     <h3>TEOREMA 2:</h3>
-    <p><strong>Si \( n \) es un número entero compuesto, entonces \( n \) tiene un divisor primo menor o igual a \( \sqrt{n} \).</strong></p>
+    <p><strong>Si \( n \) es un número entero compuesto, entonces \( n \) tiene un divisor primo menor o 
+        igual a \( \sqrt{n} \).</strong></p>
 
     <h3>Demostración:</h3>
-    <p>Si \( n \) es compuesto, por la definición de número entero compuesto, sabemos que tiene un factor \( a \) con \( 1 < a < n \). Por lo tanto, por la definición de factor de un número entero positivo, tenemos \( n = ab \), donde \( b \) es un número entero positivo mayor que 1. Demostraremos que \( a \leq \sqrt{n} \) o \( b \leq \sqrt{n} \). Si \( a > \sqrt{n} \) y \( b > \sqrt{n} \), entonces \( ab > \sqrt{n} \cdot \sqrt{n} = n \), lo cual es una contradicción. En consecuencia, \( a \leq \sqrt{n} \) o \( b \leq \sqrt{n} \). Dado que tanto \( a \) como \( b \) son divisores de \( n \), vemos que \( n \) tiene un divisor positivo que no excede \( \sqrt{n} \). Este divisor es primo o, por el teorema fundamental de la aritmética, tiene un divisor primo menor que él mismo. En cualquier caso, \( n \) tiene un divisor primo menor o igual a \( \sqrt{n} \).</p>
+    <p>Si \( n \) es compuesto, por la definición de número entero compuesto, sabemos que tiene un factor 
+    \( a \) con \( 1 < a < n \). Por lo tanto, por la definición de factor de un número entero positivo, 
+    tenemos \( n = ab \), donde \( b \) es un número entero positivo mayor que 1. Demostraremos que 
+    \( a \leq \sqrt{n} \) o \( b \leq \sqrt{n} \). Si \( a > \sqrt{n} \) y \( b > \sqrt{n} \), entonces 
+    \( ab > \sqrt{n} \cdot \sqrt{n} = n \), lo cual es una contradicción. En consecuencia, \( a \leq \sqrt{n} \) 
+    o \( b \leq \sqrt{n} \). Dado que tanto \( a \) como \( b \) son divisores de \( n \), vemos que \( n \) tiene 
+    un divisor positivo que no excede \( \sqrt{n} \). Este divisor es primo o, por el teorema fundamental de la 
+    aritmética, tiene un divisor primo menor que él mismo. En cualquier caso, \( n \) tiene un divisor primo menor 
+    o igual a \( \sqrt{n} \).</p>
 
-    <p>A partir del Teorema 2, se sigue que un número entero es primo si no es divisible por ningún primo menor o igual a su raíz cuadrada. Esto conduce al algoritmo de fuerza bruta conocido como división por ensayo. Para usar la división por ensayo, dividimos \( n \) por todos los primos no mayores que \( \sqrt{n} \) y concluimos que \( n \) es primo si no es divisible por ninguno de estos primos. En el <strong>Ejemplo 3</strong>, usamos la división por ensayo para mostrar que 101 es primo.</p>
+    <p>A partir del Teorema 2, se sigue que un número entero es primo si no es divisible por ningún primo menor o 
+    igual a su raíz cuadrada. Esto conduce al algoritmo de fuerza bruta conocido como división por ensayo. Para usar 
+    la división por ensayo, dividimos \( n \) por todos los primos no mayores que \( \sqrt{n} \) y concluimos que 
+    \( n \) es primo si no es divisible por ninguno de estos primos. En el <strong>Ejemplo 3</strong>, usamos la 
+    división por ensayo para mostrar que 101 es primo.</p>
  
     <p><strong>EJEMPLO 3</strong>: Demostrar que 101 es primo.<br>
-    <strong>Solución</strong>: Los únicos primos que no exceden \( \sqrt{101} \) son 2, 3, 5 y 7. Debido a que 101 no es divisible por 2, 3, 5 ni 7 (el cociente de 101 con cada uno de estos enteros no es un número entero), se concluye que 101 es primo. ◂</p>
+    <strong>Solución</strong>: Los únicos primos que no exceden \( \sqrt{101} \) son 2, 3, 5 y 7. Debido a que 101 no 
+    es divisible por 2, 3, 5 ni 7 (el cociente de 101 con cada uno de estos enteros no es un número entero), se concluye 
+    que 101 es primo. ◂</p>
 
-    <p>Debido a que cada número entero tiene una factorización prima, sería útil contar con un procedimiento para encontrar esta factorización prima. Consideremos el problema de encontrar la factorización prima de \( n \). Comienza dividiendo \( n \) por los primos sucesivos, empezando por el primo más pequeño, 2. Si \( n \) tiene un factor primo, entonces, por el <strong>Teorema 3</strong>, se encontrará un factor primo \( p \) que no exceda \( \sqrt{n} \). Así que, si no se encuentra un factor primo no mayor que \( \sqrt{n} \), entonces \( n \) es primo. De lo contrario, si se encuentra un factor primo \( p \), continúa factorizando \( \frac{n}{p} \). Nota que \( \frac{n}{p} \) no tiene factores primos menores que \( p \). Nuevamente, si \( \frac{n}{p} \) no tiene factores primos mayores o iguales a \( p \) y no excede su raíz cuadrada, entonces es primo. De lo contrario, si tiene un factor primo \( q \), continúa factorizando \( \frac{n}{pq} \). Este procedimiento se continúa hasta que la factorización se haya reducido a un primo. Este procedimiento se ilustra en el <strong>Ejemplo 4</strong>.</p>
+    <p>Debido a que cada número entero tiene una factorización prima, sería útil contar con un procedimiento para encontrar 
+    esta factorización prima. Consideremos el problema de encontrar la factorización prima de \( n \). Comienza dividiendo 
+    \( n \) por los primos sucesivos, empezando por el primo más pequeño, 2. Si \( n \) tiene un factor primo, entonces, 
+    por el <strong>Teorema 3</strong>, se encontrará un factor primo \( p \) que no exceda \( \sqrt{n} \). Así que, si 
+    no se encuentra un factor primo no mayor que \( \sqrt{n} \), entonces \( n \) es primo. De lo contrario, si se 
+    encuentra un factor primo \( p \), continúa factorizando \( \frac{n}{p} \). Nota que \( \frac{n}{p} \) no tiene 
+    factores primos menores que \( p \). Nuevamente, si \( \frac{n}{p} \) no tiene factores primos mayores o iguales a 
+    \( p \) y no excede su raíz cuadrada, entonces es primo. De lo contrario, si tiene un factor primo \( q \), continúa 
+    factorizando \( \frac{n}{pq} \). Este procedimiento se continúa hasta que la factorización se haya reducido a un 
+    primo. Este procedimiento se ilustra en el <strong>Ejemplo 4</strong>.</p>
 
     <p><strong>EJEMPLO 4</strong>: Encontrar la factorización prima de 7007.<br>
-    <strong>Solución</strong>: Para encontrar la factorización prima de 7007, primero realiza divisiones de 7007 por primos sucesivos, comenzando con 2. Ninguno de los primos 2, 3 y 5 divide 7007. Sin embargo, 7 divide 7007, con \( 7007 \div 7 = 1001 \). A continuación, divide 1001 por primos sucesivos, comenzando con 7. Se observa inmediatamente que 7 también divide 1001, porque \( 1001 \div 7 = 143 \). Continúa dividiendo 143 por primos sucesivos, comenzando con 7. Aunque 7 no divide 143, 11 sí divide 143, y \( 143 \div 11 = 13 \). Como 13 es primo, el procedimiento se completa. Se concluye que:<br>
+    <strong>Solución</strong>: Para encontrar la factorización prima de 7007, primero realiza divisiones de 7007 por 
+    primos sucesivos, comenzando con 2. Ninguno de los primos 2, 3 y 5 divide 7007. Sin embargo, 7 divide 7007, con 
+    \( 7007 \div 7 = 1001 \). A continuación, divide 1001 por primos sucesivos, comenzando con 7. Se observa 
+    inmediatamente que 7 también divide 1001, porque \( 1001 \div 7 = 143 \). Continúa dividiendo 143 por primos 
+    sucesivos, comenzando con 7. Aunque 7 no divide 143, 11 sí divide 143, y \( 143 \div 11 = 13 \). Como 13 es primo, 
+    el procedimiento se completa. Se concluye que:<br>
     7007 = 7 ⋅ 1001 = 7 ⋅ 7 ⋅ 143 = 7 ⋅ 7 ⋅ 11 ⋅ 13.<br>
     Consecuentemente, la factorización prima de 7007 es:<br>
     7 ⋅ 7 ⋅ 11 ⋅ 13 = 7<sup>2</sup> ⋅ 11 ⋅ 13. ◂</p>
 
-    <p>Los números primos fueron estudiados en tiempos antiguos por razones filosóficas. Hoy en día, existen razones altamente prácticas para su estudio. En particular, los grandes primos juegan un papel crucial en la criptografía, como veremos en la Sección 4.6.</p>
+    <p>Los números primos fueron estudiados en tiempos antiguos por razones filosóficas. Hoy en día, existen razones 
+    altamente prácticas para su estudio. En particular, los grandes primos juegan un papel crucial en la criptografía, 
+    como veremos en la Sección 4.6.</p>
 
     <hr>
    
+    <h1>ERATÓSTENES (276 a.C. - 194 a.C.)</h1>
+
+    <p>Se sabe que Eratóstenes nació en Cirene, una colonia griega al oeste de Egipto, y pasó tiempo estudiando 
+    en la Academia de Platón en Atenas. También sabemos que el rey Ptolomeo II invitó a Eratóstenes a Alejandría 
+    para enseñar a su hijo y que, más tarde, Eratóstenes se convirtió en bibliotecario jefe de la famosa biblioteca 
+    de Alejandría, un repositorio central de sabiduría antigua. Eratóstenes fue un erudito extremadamente versátil, 
+    escribiendo sobre matemáticas, geografía, astronomía, historia, filosofía y crítica literaria. Además de su trabajo 
+    en matemáticas, es más conocido por su cronología de la historia antigua y por su famosa medición del tamaño 
+    de la Tierra.</p>
     </form>
 </div>
 
@@ -1512,42 +1577,119 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h1>ERATÓSTENES (276 a.C. - 194 a.C.)</h1>
-    <p>Se sabe que Eratóstenes nació en Cirene, una colonia griega al oeste de Egipto, y pasó tiempo estudiando en la Academia de Platón en Atenas. También sabemos que el rey Ptolomeo II invitó a Eratóstenes a Alejandría para enseñar a su hijo y que, más tarde, Eratóstenes se convirtió en bibliotecario jefe de la famosa biblioteca de Alejandría, un repositorio central de sabiduría antigua. Eratóstenes fue un erudito extremadamente versátil, escribiendo sobre matemáticas, geografía, astronomía, historia, filosofía y crítica literaria. Además de su trabajo en matemáticas, es más conocido por su cronología de la historia antigua y por su famosa medición del tamaño de la Tierra.</p>
+ 
 
     <h2>TABLA 1: El Crivo de Eratóstenes</h2>
-    <img src="../../../img/tabla_criba.png" alt="" width="600">
+
+    <h3>4.3.4 La Criba de Eratóstenes</h3>
+
+<p>
+Nota que los enteros compuestos que no exceden 100 deben tener un factor primo que no exceda 10.
+Dado que los únicos primos menores que 10 son 2, 3, 5 y 7, los números primos que no exceden 100
+son estos cuatro primos y aquellos enteros positivos mayores que 1 y menores o iguales que 100
+que no son divisibles por ninguno de 2, 3, 5 o 7.
+</p>
+
+<p>
+La criba de Eratóstenes se utiliza para encontrar todos los números primos que no exceden un 
+entero positivo especificado. Por ejemplo, el siguiente procedimiento se usa para encontrar los 
+primos que no exceden 100. Comenzamos con la lista de todos los enteros entre 1 y 100.
+</p>
+
+<p>
+Para comenzar el proceso de cribado, se eliminan los enteros que son divisibles por 2, excepto el 2.
+Dado que 3 es el primer entero mayor que 2 que permanece, se eliminan todos aquellos enteros 
+divisibles por 3, excepto el 3. Como 5 es el siguiente entero que queda después del 3, se eliminan 
+los enteros divisibles por 5, excepto el 5. El siguiente entero que queda es el 7,
+</p>
+
+
+    <img src="../../../../img/tabla_criba.png" alt="" width="600">
     <p>(Se incluye una tabla que muestra enteros y los divisibles por 2, 3, 5, 7, con los primos resaltados en color).</p>
 
-    <p>Así que los enteros divisibles por 7, excluyendo el 7, son eliminados. Debido a que todos los enteros compuestos que no exceden 100 son divisibles por 2, 3, 5 o 7, todos los enteros restantes, excepto el 1, son primos. En la Tabla 1, los paneles muestran aquellos enteros eliminados en cada etapa, donde cada entero divisible por 2, excepto el 2, está subrayado en el primer panel, cada entero divisible por 3, excepto el 3, está subrayado en el segundo panel, cada entero divisible por 5, excepto el 5, está subrayado en el tercer panel, y cada entero divisible por 7, excepto el 7, está subrayado en el cuarto panel. Los enteros no subrayados son los primos que no exceden 100. Concluimos que los primos menores que 100 son 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89 y 97.</p>
+    <p>Así que los enteros divisibles por 7, excluyendo el 7, son eliminados. Debido a que todos los enteros compuestos 
+    que no exceden 100 son divisibles por 2, 3, 5 o 7, todos los enteros restantes, excepto el 1, son primos. 
+    En la Tabla 1, los paneles muestran aquellos enteros eliminados en cada etapa, donde cada entero divisible por 2, 
+    excepto el 2, está subrayado en el primer panel, cada entero divisible por 3, excepto el 3, está subrayado en el 
+    segundo panel, cada entero divisible por 5, excepto el 5, está subrayado en el tercer panel, y cada entero divisible 
+    por 7, excepto el 7, está subrayado en el cuarto panel. Los enteros no subrayados son los primos que no exceden 100. 
+    Concluimos que los primos menores que 100 son 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 
+    67, 71, 73, 79, 83, 89 y 97.</p>
 
     <h2>LA INFINITUD DE LOS PRIMOS</h2>
-    <p>Se sabe desde hace mucho tiempo que hay infinitos primos. Esto significa que, siempre que <span style="font-family:monospace;">p<sub>1</sub>, p<sub>2</sub>, ..., p<sub>n</sub></span> sean los <span style="font-family:monospace;">n</span> primos más pequeños, sabemos que hay un primo mayor que no está listado. Probaremos este hecho utilizando una prueba dada por Euclides en su famoso texto matemático, <i>Los Elementos</i>. Esta prueba simple, pero elegante, es considerada por muchos matemáticos como una de las más bellas en las matemáticas. Es la primera prueba presentada en el libro <i>Proofs from THE BOOK</i> (AiZi[14]), donde <b>THE BOOK</b> se refiere a la colección imaginaria de pruebas perfectas que, según el legendario matemático Paul Erdős, es mantenida por Dios. Por cierto, hay una vasta cantidad de diferentes pruebas de que existen infinitos primos, y se publican nuevas sorprendentemente con frecuencia.</p>
+    <p>Se sabe desde hace mucho tiempo que hay infinitos primos. Esto significa que, siempre que 
+    <span style="font-family:monospace;">p<sub>1</sub>, p<sub>2</sub>, ..., p<sub>n</sub></span> 
+    sean los <span style="font-family:monospace;">n</span> primos más pequeños, sabemos que hay 
+    un primo mayor que no está listado. Probaremos este hecho utilizando una prueba dada por Euclides 
+    en su famoso texto matemático, <i>Los Elementos</i>. Esta prueba simple, pero elegante, es considerada 
+    por muchos matemáticos como una de las más bellas en las matemáticas. Es la primera prueba presentada 
+    en el libro <i>Proofs from THE BOOK</i> (AiZi[14]), donde <b>THE BOOK</b> se refiere a la colección 
+    imaginaria de pruebas perfectas que, según el legendario matemático Paul Erdős, es mantenida por Dios. 
+    Por cierto, hay una vasta cantidad de diferentes pruebas de que existen infinitos primos, y se publican 
+    nuevas sorprendentemente con frecuencia.</p>
 
 
     <h1>TEOREMA 3: Existen infinitos primos.</h1>
     <h2>Demostración:</h2>
-    <p>Probaremos este teorema utilizando una prueba por contradicción. Suponemos que existen solo un número finito de primos, <span style="font-family:monospace;">p<sub>1</sub>, p<sub>2</sub>, ..., p<sub>n</sub></span>. Definimos:</p>
+    <p>Probaremos este teorema utilizando una prueba por contradicción. Suponemos que existen solo un número 
+    finito de primos, <span style="font-family:monospace;">p<sub>1</sub>, p<sub>2</sub>, ..., p<sub>n</sub></span>. 
+    Definimos:</p>
     <p><span style="font-family:monospace;">Q = p<sub>1</sub>p<sub>2</sub>...p<sub>n</sub> + 1</span>.</p>
-    <p>Por el teorema fundamental de la aritmética, <span style="font-family:monospace;">Q</span> es primo o bien puede escribirse como el producto de dos o más primos. Sin embargo, ninguno de los primos <span style="font-family:monospace;">p<sub>j</sub></span> divide <span style="font-family:monospace;">Q</span>, porque si <span style="font-family:monospace;">p<sub>j</sub></span> divide <span style="font-family:monospace;">Q</span>, entonces <span style="font-family:monospace;">p<sub>j</sub></span> divide <span style="font-family:monospace;">Q - p<sub>1</sub>p<sub>2</sub>...p<sub>n</sub> = 1</span>. Por lo tanto, existe un primo que no está en la lista <span style="font-family:monospace;">p<sub>1</sub>, p<sub>2</sub>, ..., p<sub>n</sub></span>. Este primo es:</p>
+    <p>Por el teorema fundamental de la aritmética, <span style="font-family:monospace;">Q</span> es primo o bien 
+    puede escribirse como el producto de dos o más primos. Sin embargo, ninguno de los primos 
+    <span style="font-family:monospace;">p<sub>j</sub></span> divide <span style="font-family:monospace;">Q</span>, 
+    porque si <span style="font-family:monospace;">p<sub>j</sub></span> divide <span style="font-family:monospace;">Q</span>, 
+    entonces <span style="font-family:monospace;">p<sub>j</sub></span> divide <span style="font-family:monospace;">
+    Q - p<sub>1</sub>p<sub>2</sub>...p<sub>n</sub> = 1</span>. Por lo tanto, existe un primo que no está en la lista 
+    <span style="font-family:monospace;">p<sub>1</sub>, p<sub>2</sub>, ..., p<sub>n</sub></span>. Este primo es:</p>
     <ul>
         <li><span style="font-family:monospace;">Q</span>, si es primo, o</li>
         <li>un factor primo de <span style="font-family:monospace;">Q</span>.</li>
     </ul>
-    <p>Esto es una contradicción porque supusimos que habíamos listado todos los primos. En consecuencia, existen infinitos primos.</p>
+    <p>Esto es una contradicción porque supusimos que habíamos listado todos los primos. En consecuencia, existen 
+    infinitos primos.</p>
 
     <h3>Observación:</h3>
-    <p>Nota que en esta prueba no afirmamos que <span style="font-family:monospace;">Q</span> es primo. Además, en esta prueba hemos dado una prueba existencial no constructiva de que, dado cualquier conjunto de <span style="font-family:monospace;">n</span> primos, existe un primo que no está en esa lista. Para que esta prueba fuera constructiva, tendríamos que haber dado explícitamente un primo que no esté en nuestra lista original de <span style="font-family:monospace;">n</span> primos.</p>
+    <p>Nota que en esta prueba no afirmamos que <span style="font-family:monospace;">Q</span> es primo. Además, en 
+    esta prueba hemos dado una prueba existencial no constructiva de que, dado cualquier conjunto de 
+    <span style="font-family:monospace;">n</span> primos, existe un primo que no está en esa lista. Para que esta prueba 
+    fuera constructiva, tendríamos que haber dado explícitamente un primo que no esté en nuestra lista original de 
+    <span style="font-family:monospace;">n</span> primos.</p>
 
     <h2>Los Mersenne Primes</h2>
-    <p>Como hay infinitos primos, dado cualquier número entero positivo, existen primos mayores que este número. Ha existido una búsqueda constante para descubrir números primos cada vez más grandes; durante casi todo el último siglo, el mayor primo conocido ha sido un número de la forma especial <span style="font-family:monospace;">2<sup>p</sup> - 1</span>, donde <span style="font-family:monospace;">p</span> también es primo. (Nota que <span style="font-family:monospace;">2<sup>n</sup> - 1</span> no puede ser primo cuando <span style="font-family:monospace;">n</span> no es primo; ver el ejercicio 9.) Estos primos se llaman primos de Mersenne, en honor al monje francés Marin Mersenne, quien los estudió en el siglo XVII. La razón por la que el mayor primo conocido generalmente ha sido un primo de Mersenne es que existe una prueba extremadamente eficiente, conocida como la prueba de Lucas–Lehmer, para determinar si <span style="font-family:monospace;">2<sup>p</sup> - 1</span> es primo. Además, actualmente no es posible probar números fuera de esta forma o de otras formas especiales tan rápidamente para determinar si son primos.</p>
+    <p>Como hay infinitos primos, dado cualquier número entero positivo, existen primos mayores que este número. Ha 
+    existido una búsqueda constante para descubrir números primos cada vez más grandes; durante casi todo el último 
+    siglo, el mayor primo conocido ha sido un número de la forma especial <span style="font-family:monospace;">
+    2<sup>p</sup> - 1</span>, donde <span style="font-family:monospace;">p</span> también es primo. 
+    (Nota que <span style="font-family:monospace;">2<sup>n</sup> - 1</span> no puede ser primo cuando 
+    <span style="font-family:monospace;">n</span> no es primo; ver el ejercicio 9.) Estos primos se llaman 
+    primos de Mersenne, en honor al monje francés Marin Mersenne, quien los estudió en el siglo XVII. La razón 
+    por la que el mayor primo conocido generalmente ha sido un primo de Mersenne es que existe una prueba 
+    extremadamente eficiente, conocida como la prueba de Lucas–Lehmer, para determinar si 
+    <span style="font-family:monospace;">2<sup>p</sup> - 1</span> es primo. Además, actualmente no es 
+    posible probar números fuera de esta forma o de otras formas especiales tan rápidamente para determinar si son primos.</p>
 
     <h3>Ejemplo 5:</h3>
-    <p>Los números <span style="font-family:monospace;">2<sup>2</sup> - 1 = 3</span>, <span style="font-family:monospace;">2<sup>3</sup> - 1 = 7</span>, <span style="font-family:monospace;">2<sup>5</sup> - 1 = 31</span> y <span style="font-family:monospace;">2<sup>7</sup> - 1 = 127</span> son primos de Mersenne, mientras que <span style="font-family:monospace;">2<sup>11</sup> - 1 = 2047</span> no es un primo de Mersenne porque <span style="font-family:monospace;">2047 = 23 ⋅ 89</span>.</p>
+    <p>Los números <span style="font-family:monospace;">2<sup>2</sup> - 1 = 3</span>, 
+    <span style="font-family:monospace;">2<sup>3</sup> - 1 = 7</span>, 
+    <span style="font-family:monospace;">2<sup>5</sup> - 1 = 31</span> y 
+    <span style="font-family:monospace;">2<sup>7</sup> - 1 = 127</span> son primos de Mersenne, 
+    mientras que <span style="font-family:monospace;">2<sup>11</sup> - 1 = 2047</span> no es un primo de 
+    Mersenne porque <span style="font-family:monospace;">2047 = 23 ⋅ 89</span>.</p>
 
-    <p>El progreso en la búsqueda de primos de Mersenne ha sido constante desde la invención de las computadoras. A principios de 2018, se conocían 50 primos de Mersenne, con 19 encontrados desde 1990. El mayor primo de Mersenne conocido (de nuevo, a principios de 2018) es <span style="font-family:monospace;">2<sup>77,232,917</sup> - 1</span>, un número con 23,249,425 dígitos decimales, que se demostró que es primo en diciembre de 2017. Un esfuerzo comunal, la Gran Búsqueda de Primos de Mersenne por Internet (GIMPS), está dedicada a la búsqueda de nuevos primos de Mersenne. Puedes unirte a esta búsqueda, y si tienes suerte, encontrar un nuevo primo de Mersenne y posiblemente ganar un premio en efectivo.</p>
+    <p>El progreso en la búsqueda de primos de Mersenne ha sido constante desde la invención de las computadoras. 
+        A principios de 2018, se conocían 50 primos de Mersenne, con 19 encontrados desde 1990. El mayor primo de 
+        Mersenne conocido (de nuevo, a principios de 2018) es <span style="font-family:monospace;">2<sup>77,232,917</sup> 
+        - 1</span>, un número con 23,249,425 dígitos decimales, que se demostró que es primo en diciembre de 2017. 
+        Un esfuerzo comunal, la Gran Búsqueda de Primos de Mersenne por Internet (GIMPS), está dedicada a la 
+        búsqueda de nuevos primos de Mersenne. Puedes unirte a esta búsqueda, y si tienes suerte, encontrar 
+        un nuevo primo de Mersenne y posiblemente ganar un premio en efectivo.</p>
 
-    <p>Por cierto, incluso la búsqueda de primos de Mersenne tiene implicaciones prácticas. Una prueba de control de calidad comúnmente utilizada para supercomputadoras es replicar la prueba de Lucas–Lehmer que establece la primalidad de un gran primo de Mersenne. Además, en enero de 2016, se informó que se encontró un error en el procesador Intel Skylake cuando se ejecutaba el software GIMPS. (Consulta [Ro10] para más información sobre la búsqueda de primos de Mersenne.)</p>
+    <p>Por cierto, incluso la búsqueda de primos de Mersenne tiene implicaciones prácticas. Una prueba de control 
+        de calidad comúnmente utilizada para supercomputadoras es replicar la prueba de Lucas–Lehmer que establece 
+        la primalidad de un gran primo de Mersenne. Además, en enero de 2016, se informó que se encontró un error en el 
+        procesador Intel Skylake cuando se ejecutaba el software GIMPS. (Consulta [Ro10] para más información sobre la
+         búsqueda de primos de Mersenne.)</p>
 
     <h2>La Distribución de los Primos</h2>
     <p>El Teorema 3 nos dice que existen infinitos primos. Sin embargo, ¿cuántos primos hay menores que un 

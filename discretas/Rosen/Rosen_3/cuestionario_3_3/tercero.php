@@ -1784,7 +1784,7 @@ return C {C = [cij] is the Boolean product of A and B}
         }
     </script>
 
-<button onmousedown="mostrarImagen2()" onmouseup="ocultarImagen2()">Explicacion</button>
+    <button onmousedown="mostrarImagen2()" onmouseup="ocultarImagen2()">Explicacion</button>
     <!-- Elemento para mostrar la imagen -->
 
     <img id="imagenMostrada2" src="../../../../img/boolean_dos.png" style="display: none; max-width: 100%" width="460">
@@ -1849,7 +1849,7 @@ return C {C = [cij] is the Boolean product of A and B}
   <li>\( A_2 \) es de tamaño \( 20 \times 40 \)</li>
   <li>\( A_3 \) es de tamaño \( 40 \times 10 \)</li>
 </ul>
- <button onmousedown="mostrarImagen3()" onmouseup="ocultarImagen3()">Ayuda</button>
+    <button onmousedown="mostrarImagen3()" onmouseup="ocultarImagen3()">Ayuda</button>
     <!-- Elemento para mostrar la imagen -->
 
     <img id="imagenMostrada3" src="../../../../img/multiplicacion.png" style="display: none; max-width: 100%" width="560">

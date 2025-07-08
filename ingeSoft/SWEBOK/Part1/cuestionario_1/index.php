@@ -1816,7 +1816,7 @@ a
             var mensaje = document.getElementById('mensaje');
             mensaje.style.display = 'none';
         }
-    </script>
+    </script> 
          
 
 </p>
@@ -1833,7 +1833,8 @@ a
     <input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="9">
      
     </p>
-      <button onmousedown="mostrarMensaje2()" onmouseup="ocultarMensaje2()">Dato</button>
+    
+    <button onmousedown="mostrarMensaje2()" onmouseup="ocultarMensaje2()">Dato</button>
     <div id="mensaje2" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
     (por ejemplo, “El software deberá ser desarrollado utilizando un proceso RUP”).
     </div>
