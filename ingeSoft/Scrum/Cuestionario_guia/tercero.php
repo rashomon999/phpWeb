@@ -17,154 +17,213 @@ if ($_POST) {
     $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
     
     if ($mostrar_solucion === 'mostrar_solucion') {
-        // Establecer todas las respuestas correctas para las tablas de multiplicar
-        
-        // Tabla del 12
-        $respuesta_111 = '24'; 
-        $respuesta_112 = '36';
-        $respuesta_113 = '48';
-        $respuesta_114 = '60';
-        $respuesta_115 = '72';
-        $respuesta_116 = '84';
-        $respuesta_117 = '96';
-        $respuesta_118 = '108';
-        $respuesta_119 = '120';
-        $respuesta_120 = '132';
-        $respuesta_121 = '144';
-        
-        // Tabla del 13
-        $respuesta_1 = '26';
-        $respuesta_2 = '39';
-        $respuesta_3 = '52';
-        $respuesta_4 = '65';
-        $respuesta_5 = '78';
-        $respuesta_6 = '91';
-        $respuesta_7 = '104';
-        $respuesta_8 = '117';
-        $respuesta_9 = '130';
-        $respuesta_10 = '143';
-        $respuesta_11 = '156';
-        
-        // Tabla del 14
-        $respuesta_12 = '28';
-        $respuesta_13 = '42';
-        $respuesta_14 = '56';
-        $respuesta_15 = '70';
-        $respuesta_16 = '84';
-        $respuesta_17 = '98';
-        $respuesta_18 = '112';
-        $respuesta_19 = '126';
-        $respuesta_20 = '140';
-        $respuesta_21 = '154';
-        $respuesta_22 = '168';
-        
-        // Tabla del 15
-        $respuesta_23 = '30';
-        $respuesta_24 = '45';
-        $respuesta_25 = '60';
-        $respuesta_26 = '75';
-        $respuesta_27 = '90';
-        $respuesta_28 = '105';
-        $respuesta_29 = '120';
-        $respuesta_30 = '135';
-        $respuesta_31 = '150';
-        $respuesta_32 = '165';
-        $respuesta_33 = '180';
-        
-        // Tabla del 16
-        $respuesta_34 = '32';
-        $respuesta_35 = '48';
-        $respuesta_36 = '64';
-        $respuesta_37 = '80';
-        $respuesta_38 = '96';
-        $respuesta_39 = '112';
-        $respuesta_40 = '128';
-        $respuesta_41 = '144';
-        $respuesta_42 = '160';
-        $respuesta_43 = '176';
-        $respuesta_44 = '192';
-        
-        // Tabla del 17
-        $respuesta_45 = '34';
-        $respuesta_46 = '51';
-        $respuesta_47 = '68';
-        $respuesta_48 = '85';
-        $respuesta_49 = '102';
-        $respuesta_50 = '119';
-        $respuesta_51 = '136';
-        $respuesta_52 = '153';
-        $respuesta_53 = '170';
-        $respuesta_54 = '187';
-        $respuesta_55 = '204';
-        
-        // Tabla del 18
-        $respuesta_56 = '36';
-        $respuesta_57 = '54';
-        $respuesta_58 = '72';
-        $respuesta_59 = '90';
-        $respuesta_60 = '108';
-        $respuesta_61 = '126';
-        $respuesta_62 = '144';
-        $respuesta_63 = '162';
-        $respuesta_64 = '180';
-        $respuesta_65 = '198';
-        $respuesta_66 = '216';
-        
-        // Tabla del 19
-        $respuesta_67 = '38';
-        $respuesta_68 = '57';
-        $respuesta_69 = '76';
-        $respuesta_70 = '95';
-        $respuesta_71 = '114';
-        $respuesta_72 = '133';
-        $respuesta_73 = '152';
-        $respuesta_74 = '171';
-        $respuesta_75 = '190';
-        $respuesta_76 = '209';
-        $respuesta_77 = '228';
-        
-        // Tabla del 20
-        $respuesta_78 = '40';
-        $respuesta_79 = '60';
-        $respuesta_80 = '80';
-        $respuesta_81 = '100';
-        $respuesta_82 = '120';
-        $respuesta_83 = '140';
-        $respuesta_84 = '160';
-        $respuesta_85 = '180';
-        $respuesta_86 = '200';
-        $respuesta_87 = '220';
-        $respuesta_88 = '240';
-        
-        // Tabla del 21
-        $respuesta_89 = '42';
-        $respuesta_90 = '63';
-        $respuesta_91 = '84';
-        $respuesta_92 = '105';
-        $respuesta_93 = '126';
-        $respuesta_94 = '147';
-        $respuesta_95 = '168';
-        $respuesta_96 = '189';
-        $respuesta_97 = '210';
-        $respuesta_98 = '231';
-        $respuesta_99 = '252';
-        
-        // Tabla del 22
-        $respuesta_100 = '44';
-        $respuesta_101 = '66';
-        $respuesta_102 = '88';
-        $respuesta_103 = '110';
-        $respuesta_104 = '132'; 
-        $respuesta_105 = '154';
-        $respuesta_106 = '176';
-        $respuesta_107 = '198';
-        $respuesta_108 = '220';
-        $respuesta_109 = '242';
-        $respuesta_110 = '264';
-        
-        // Marcar todas como correctas
-    $verificar_1 = $verificar_2 = $verificar_3 = /* ... todas las variables de verificación ... */ $verificar_122 = "correcto";
-    } else {
+    // Establecer todas las respuestas correctas
+    
+    // Sección 1 (Preguntas 1-11)
+    $respuesta_1 = 'trabajo';
+    $respuesta_2 = 'valor';
+    $respuesta_3 = 'diseñados';
+    $respuesta_4 = 'maximizar';
+    $respuesta_5 = 'transparencia';
+    $respuesta_6 = 'informacion';
+    $respuesta_7 = 'inspeccionan';
+    $respuesta_8 = 'base';
+    $respuesta_9 = 'adaptacion';
+    $respuesta_10 = 'contiene';
+    $respuesta_11 = 'compromiso';
+    
+    // Sección 2 (Preguntas 12-22)
+    $respuesta_12 = 'garantizar';
+    $respuesta_13 = 'informacion';
+    $respuesta_14 = 'mejore';
+    $respuesta_15 = 'enfoque';
+    $respuesta_16 = 'medir';
+    $respuesta_17 = 'progreso';
+    $respuesta_18 = 'Objetivo del Producto';
+    $respuesta_19 = 'Objetivo del Sprint';
+    $respuesta_20 = 'Definición de Terminado';
+    $respuesta_21 = 'reforzar';
+    $respuesta_22 = 'empirismo';
+    
+    // Sección 3 (Preguntas 23-33)
+    $respuesta_23 = 'Scrum Team';
+    $respuesta_24 = 'interesados';
+    $respuesta_25 = 'lista';
+    $respuesta_26 = 'ordenada';
+    $respuesta_27 = 'necesita';
+    $respuesta_28 = 'mejorar';
+    $respuesta_29 = 'fuente';
+    $respuesta_30 = 'realizado';
+    $respuesta_31 = 'Scrum Team';
+    $respuesta_32 = 'Terminados';
+    $respuesta_33 = 'preparados';
+    
+    // Sección 4 (Preguntas 34-44)
+    $respuesta_34 = 'seleccionados';
+    $respuesta_35 = 'evento';
+    $respuesta_36 = 'Sprint Planning';
+    $respuesta_37 = 'transparencia';
+    $respuesta_38 = 'refinamiento';
+    $respuesta_39 = 'dividir';
+    $respuesta_40 = 'elementos';
+    $respuesta_41 = 'pequeños';
+    $respuesta_42 = 'continua';
+    $respuesta_43 = 'detalles';
+    $respuesta_44 = 'descripcion';
+    
+    // Sección 5 (Preguntas 45-55)
+    $respuesta_45 = 'atributos';
+    $respuesta_46 = 'Developers';
+    $respuesta_47 = 'dimensionamiento';
+    $respuesta_48 = 'Product Owner';
+    $respuesta_49 = 'Developers';
+    $respuesta_50 = 'seleccionar';
+    $respuesta_51 = 'describe';
+    $respuesta_52 = 'futuro';
+    $respuesta_53 = 'objetivo';
+    $respuesta_54 = 'Scrum Team';
+    $respuesta_55 = 'Product Backlog';
+    
+    // Sección 6 (Preguntas 56-66)
+    $respuesta_56 = 'definir';
+    $respuesta_57 = 'qué';
+    $respuesta_58 = 'vehiculo';
+    $respuesta_59 = 'entregar';
+    $respuesta_60 = 'limite';
+    $respuesta_61 = 'interesadas';
+    $respuesta_62 = 'usuarios';
+    $respuesta_63 = 'clientes';
+    $respuesta_64 = 'servicio';
+    $respuesta_65 = 'fisico';
+    $respuesta_66 = 'largo plazo';
+    
+    // Sección 7 (Preguntas 67-77)
+    $respuesta_67 = 'cumplir';
+    $respuesta_68 = 'abandonar';
+    $respuesta_69 = 'Objetivo del Sprint';
+    $respuesta_70 = 'por qué';
+    $respuesta_71 = 'Product Backlog';
+    $respuesta_72 = 'qué';
+    $respuesta_73 = 'plan';
+    $respuesta_74 = 'entregar';
+    $respuesta_75 = 'Increment';
+    $respuesta_76 = 'cómo';
+    $respuesta_77 = 'plan';
+    
+    // Sección 8 (Preguntas 78-88)
+    $respuesta_78 = 'por';
+    $respuesta_79 = 'para';
+    $respuesta_80 = 'Developers';
+    $respuesta_81 = 'trabajo';
+    $respuesta_82 = 'planean';
+    $respuesta_83 = 'Sprint';
+    $respuesta_84 = 'Objetivo del Sprint';
+    $respuesta_85 = 'actualiza';
+    $respuesta_86 = 'aprende';
+    $respuesta_87 = 'inspeccionar';
+    $respuesta_88 = 'Daily Scrum';
+    
+    // Sección 9 (Preguntas 89-99)
+    $respuesta_89 = 'proposito';
+    $respuesta_90 = 'Developers';
+    $respuesta_91 = 'flexibilidad';
+    $respuesta_92 = 'lograrlo';
+    $respuesta_93 = 'Scrum Team';
+    $respuesta_94 = 'Sprint Planning';
+    $respuesta_95 = 'Sprint Backlog';
+    $respuesta_96 = 'Objetivo del Sprint';
+    $respuesta_97 = 'diferente';
+    $respuesta_98 = 'Product Owner';
+    $respuesta_99 = 'alcance';
+    
+    // Sección 10 (Preguntas 100-110)
+    $respuesta_100 = 'Sprint Backlog';
+    $respuesta_101 = 'peldaño';
+    $respuesta_102 = 'Objetivo del Producto';
+    $respuesta_103 = 'suma';
+    $respuesta_104 = 'anteriores';
+    $respuesta_105 = 'verifica';
+    $respuesta_106 = 'funcionen';
+    $respuesta_107 = 'utilizable';
+    $respuesta_108 = 'crear';
+    $respuesta_109 = 'dentro';
+    $respuesta_110 = 'Sprint';
+    
+    // Sección 11 (Preguntas 111-121)
+    $respuesta_111 = 'Sprint Review';
+    $respuesta_112 = 'empirismo';
+    $respuesta_113 = 'interesados';
+    $respuesta_114 = 'final';
+    $respuesta_115 = 'nunca';
+    $respuesta_116 = 'trabajo';
+    $respuesta_117 = 'a menos que';
+    $respuesta_118 = 'Definicion de Terminado';
+    $respuesta_119 = 'descripcion';
+    $respuesta_120 = 'estado';
+    $respuesta_121 = 'Increment';
+    
+    // Sección 12 (Preguntas 122-132)
+    $respuesta_122 = 'medidas';
+    $respuesta_123 = 'calidad';
+    $respuesta_124 = 'producto';
+    $respuesta_125 = 'Product Backlog';
+    $respuesta_126 = 'Definicion de Terminado';
+    $respuesta_127 = 'transparencia';
+    $respuesta_128 = 'todos';
+    $respuesta_129 = 'entendimiento';
+    $respuesta_130 = 'trabajo';
+    $respuesta_131 = 'Increment';
+    $respuesta_132 = 'Product Backlog';
+    
+    // Sección 13 (Preguntas 133-143)
+    $respuesta_133 = 'Definicion de Terminado';
+    $respuesta_134 = 'Sprint Review';
+    $respuesta_135 = 'Increment';
+    $respuesta_136 = 'estandares';
+    $respuesta_137 = 'Scrum Teams';
+    $respuesta_138 = 'Definicion de Terminado';
+    $respuesta_139 = 'Developers';
+    $respuesta_140 = 'adherirse';
+    $respuesta_141 = 'misma';
+    $respuesta_142 = 'inmutable';
+    $respuesta_143 = 'partes';
+    
+    // Sección 14 (Preguntas 144-154)
+    $respuesta_144 = 'no es';
+    $respuesta_145 = 'totalidad';
+    $respuesta_146 = 'contenedor';
+    $respuesta_147 = 'tecnicas';
+    $respuesta_148 = 'metodologias';
+    $respuesta_149 = 'practicas';
+    $respuesta_150 = 'Ken Schwaber';
+    $respuesta_151 = 'Jeff Sutherland';
+    $respuesta_152 = 'OOPSLA';
+    $respuesta_153 = '1995';
+    $respuesta_154 = 'Ken y Jeff';
+    
+    // Sección 15 (Preguntas 155-157)
+    $respuesta_155 = '30';
+    $respuesta_156 = 'patrones';
+    $respuesta_157 = 'productividad';
+
+    // Marcar todas como correctas
+    $verificar_1 = $verificar_2 = $verificar_3 = $verificar_4 = $verificar_5 = $verificar_6 = $verificar_7 = $verificar_8 = $verificar_9 = $verificar_10 = 
+    $verificar_11 = $verificar_12 = $verificar_13 = $verificar_14 = $verificar_15 = $verificar_16 = $verificar_17 = $verificar_18 = $verificar_19 = $verificar_20 = 
+    $verificar_21 = $verificar_22 = $verificar_23 = $verificar_24 = $verificar_25 = $verificar_26 = $verificar_27 = $verificar_28 = $verificar_29 = $verificar_30 = 
+    $verificar_31 = $verificar_32 = $verificar_33 = $verificar_34 = $verificar_35 = $verificar_36 = $verificar_37 = $verificar_38 = $verificar_39 = $verificar_40 = 
+    $verificar_41 = $verificar_42 = $verificar_43 = $verificar_44 = $verificar_45 = $verificar_46 = $verificar_47 = $verificar_48 = $verificar_49 = $verificar_50 = 
+    $verificar_51 = $verificar_52 = $verificar_53 = $verificar_54 = $verificar_55 = $verificar_56 = $verificar_57 = $verificar_58 = $verificar_59 = $verificar_60 = 
+    $verificar_61 = $verificar_62 = $verificar_63 = $verificar_64 = $verificar_65 = $verificar_66 = $verificar_67 = $verificar_68 = $verificar_69 = $verificar_70 = 
+    $verificar_71 = $verificar_72 = $verificar_73 = $verificar_74 = $verificar_75 = $verificar_76 = $verificar_77 = $verificar_78 = $verificar_79 = $verificar_80 = 
+    $verificar_81 = $verificar_82 = $verificar_83 = $verificar_84 = $verificar_85 = $verificar_86 = $verificar_87 = $verificar_88 = $verificar_89 = $verificar_90 = 
+    $verificar_91 = $verificar_92 = $verificar_93 = $verificar_94 = $verificar_95 = $verificar_96 = $verificar_97 = $verificar_98 = $verificar_99 = $verificar_100 = 
+    $verificar_101 = $verificar_102 = $verificar_103 = $verificar_104 = $verificar_105 = $verificar_106 = $verificar_107 = $verificar_108 = $verificar_109 = $verificar_110 = 
+    $verificar_111 = $verificar_112 = $verificar_113 = $verificar_114 = $verificar_115 = $verificar_116 = $verificar_117 = $verificar_118 = $verificar_119 = $verificar_120 = 
+    $verificar_121 = $verificar_122 = $verificar_123 = $verificar_124 = $verificar_125 = $verificar_126 = $verificar_127 = $verificar_128 = $verificar_129 = $verificar_130 = 
+    $verificar_131 = $verificar_132 = $verificar_133 = $verificar_134 = $verificar_135 = $verificar_136 = $verificar_137 = $verificar_138 = $verificar_139 = $verificar_140 = 
+    $verificar_141 = $verificar_142 = $verificar_143 = $verificar_144 = $verificar_145 = $verificar_146 = $verificar_147 = $verificar_148 = $verificar_149 = $verificar_150 = 
+    $verificar_151 = $verificar_152 = $verificar_153 = $verificar_154 = $verificar_155 = $verificar_156 = $verificar_157 = "correcto";
+}else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
    if ($respuesta_1 === 'trabajo') {  
        $verificar_1 = "correcto";
@@ -1289,7 +1348,7 @@ if ($respuesta_121 === 'Increment') {
 } else {
     $verificar_121 = "incorrecto";
 }
-}
+
 
 
  
@@ -1645,6 +1704,7 @@ if ($respuesta_160 === '180') {
 }
 
 
+}
 }
 ?>
 <!DOCTYPE html>
@@ -2386,6 +2446,13 @@ function ocultarMensaje4() {
     probó y comprobó, reconocemos a Individual Inc., Newspage, Fidelity Investments e IDX (ahora GE
     Medical).
     </p>
+
+     <hr>
+    <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
+    <br>
+    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
+    <button type="submit"   >Mostrar Solución</button>
+
     </form>
 </div>
 
