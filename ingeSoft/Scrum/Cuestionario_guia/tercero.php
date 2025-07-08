@@ -1,59 +1,15 @@
 <?php
  
  
-$respuesta_1 = ''; $respuesta_2 = ''; $respuesta_3 = ''; $respuesta_3_2 = ''; $respuesta_4 = ''; $respuesta_5 = ''; 
-$respuesta_6 = ''; $respuesta_7 = ''; $respuesta_8 = ''; $respuesta_9 = '';  $respuesta_10 = '';
-$respuesta_11 = ''; $respuesta_12 = ''; $respuesta_13 = ''; $respuesta_14 = ''; $respuesta_15 = '';
-$respuesta_16 = ''; $respuesta_17 = ''; $respuesta_18 = ''; $respuesta_19 = ''; $respuesta_20 = '';
-$respuesta_21 = ''; $respuesta_22 = '';  $respuesta_23 = '';  $respuesta_24 = '';
-$respuesta_25 = ''; $respuesta_26 = ''; $respuesta_27 = ''; $respuesta_28 = ''; $respuesta_29 = '';
-$respuesta_30 = ''; $respuesta_31 = ''; $respuesta_32 = ''; $respuesta_33 = ''; $respuesta_34 = ''; $respuesta_35 = ''; $respuesta_36 = ''; $respuesta_37 = ''; $respuesta_38 = '';
-$respuesta_39 = ''; $respuesta_40 = ''; $respuesta_41 = ''; $respuesta_42 = ''; $respuesta_43 = '';
-$respuesta_44 = ''; $respuesta_45 = ''; $respuesta_46 = ''; $respuesta_47 = ''; $respuesta_48 = '';
-$respuesta_49 = ''; $respuesta_50 = ''; $respuesta_51 = ''; $respuesta_52 = ''; $respuesta_53 = '';
-$respuesta_54 = ''; $respuesta_55 = ''; $respuesta_56 = '';$respuesta_57 = ''; $respuesta_58 = ''; $respuesta_59 = ''; $respuesta_60 = '';
-$respuesta_61 = '';$respuesta_62 = '';$respuesta_63 = '';$respuesta_64 = '';$respuesta_65 = '';$respuesta_66 = '';$respuesta_67 = '';$respuesta_68 = '';
-$respuesta_69 = '';$respuesta_70 = '';$respuesta_71 = '';$respuesta_72 = '';$respuesta_73 = '';$respuesta_74 = '';$respuesta_75 = '';$respuesta_76 = '';
-$respuesta_77 = '';$respuesta_78 = '';$respuesta_79 = '';$respuesta_80 = '';$respuesta_81 = '';$respuesta_82 = '';$respuesta_83 = '';$respuesta_84 = '';
-$respuesta_85 = '';$respuesta_86 = '';$respuesta_87 = '';$respuesta_88 = ''; $respuesta_89 = '';
-$respuesta_90 = ''; $respuesta_91 = '';$respuesta_92 = '';$respuesta_93 = '';$respuesta_94 = '';$respuesta_95 = '';$respuesta_96 = '';$respuesta_97 = '';$respuesta_98 = '';
-$respuesta_99 = '';$respuesta_100 = '';$respuesta_101 = '';$respuesta_102 = '';$respuesta_103 = '';$respuesta_104 = '';$respuesta_105 = '';
-$respuesta_106 = '';$respuesta_107 = '';$respuesta_108 = '';$respuesta_109 = '';$respuesta_110 = '';
+for ($i = 1; $i <= 310; $i++) {
+    ${"respuesta_" . $i} = '';
+}
 
-/////
- // Agrega estas variables junto con las demás (antes del if $_POST)
-$respuesta_111 = ''; $respuesta_112 = ''; $respuesta_113 = ''; $respuesta_114 = ''; $respuesta_115 = ''; 
-$respuesta_116 = ''; $respuesta_117 = ''; $respuesta_118 = ''; $respuesta_119 = ''; $respuesta_120 = ''; 
-$respuesta_121 = ''; $respuesta_122 = '';
 
-$verificar_111 = ''; $verificar_112 = ''; $verificar_113 = ''; $verificar_114 = ''; $verificar_115 = ''; 
-$verificar_116 = ''; $verificar_117 = ''; $verificar_118 = ''; $verificar_119 = ''; $verificar_120 = ''; 
-$verificar_121 = ''; $verificar_122 = '';
-////
-
-$verificar_1 = ''; $verificar_2 = ''; $verificar_3 = '';  $verificar_3_2 = ''; $verificar_4 = ''; $verificar_5 = ''; 
-$verificar_6 = ''; $verificar_7 = '';  $verificar_8 = ''; $verificar_9 = ''; $verificar_10 = ''; 
-$verificar_11 = ''; $verificar_12 = ''; $verificar_13 = ''; $verificar_14 = ''; $verificar_15 = ''; 
-$verificar_16 = '';  $verificar_17 = ''; $verificar_18 = ''; $verificar_19 = ''; $verificar_20 = '';  
-$verificar_21 = '';  $verificar_22 = '';  $verificar_23 = '';   $verificar_24 = '';   $verificar_25 = '';  
-$verificar_26 = '';  $verificar_27= ''; $verificar_28= '';  $verificar_29= '';  $verificar_30 = ''; 
-$verificar_31 = ''; $verificar_32 = ''; $verificar_33 = ''; 
-$verificar_34 = ''; $verificar_35 = ''; $verificar_36 = ''; $verificar_37 = ''; $verificar_38 = '';
-$verificar_39 = ''; $verificar_40 = ''; $verificar_41 = ''; $verificar_42 = ''; $verificar_43 = '';
-$verificar_44 = ''; $verificar_45 = ''; $verificar_46 = ''; $verificar_47 = ''; $verificar_48 = '';
-$verificar_49 = ''; $verificar_50 = ''; $verificar_51 = ''; $verificar_52 = ''; $verificar_53 = '';
-$verificar_54 = ''; $verificar_55 = '';
-$verificar_56 = ''; $verificar_57 = ''; $verificar_58 = ''; $verificar_59 = ''; $verificar_60 = ''; 
-$verificar_61 = ''; $verificar_62 = ''; $verificar_63 = ''; $verificar_64 = ''; $verificar_65 = '';
-$verificar_66 = ''; $verificar_67 = ''; $verificar_68 = ''; $verificar_69 = ''; $verificar_70 = '';
-$verificar_71 = ''; $verificar_72 = ''; $verificar_73 = ''; $verificar_74 = ''; $verificar_75 = '';
-$verificar_76 = ''; $verificar_77 = ''; $verificar_78 = ''; $verificar_79 = ''; $verificar_80 = '';
-$verificar_81 = ''; $verificar_82 = ''; $verificar_83 = ''; $verificar_84 = ''; $verificar_85 = '';
-$verificar_86 = ''; $verificar_87 = ''; $verificar_88 = '';$verificar_89 = ''; $verificar_90 = '';$verificar_91 = '';
-$verificar_92 = '';$verificar_93 = '';$verificar_94 = ''; $verificar_95 = '';
-$verificar_96 = ''; $verificar_97 = ''; $verificar_98 = ''; $verificar_99 = ''; $verificar_100 = '';
-$verificar_101 = '';$verificar_102 = '';$verificar_103 = '';$verificar_104 = '';$verificar_105 = '';
-$verificar_106 = '';$verificar_107 = '';$verificar_108 = '';$verificar_109 = '';$verificar_110 = '';
+     
+for ($i = 1; $i <= 310; $i++) {
+    ${"verificar_" . $i} = '';
+}
      
 
 $mostrar_solucion = '';
@@ -198,7 +154,7 @@ if ($_POST) {
         $respuesta_101 = '66';
         $respuesta_102 = '88';
         $respuesta_103 = '110';
-        $respuesta_104 = '132';
+        $respuesta_104 = '132'; 
         $respuesta_105 = '154';
         $respuesta_106 = '176';
         $respuesta_107 = '198';
@@ -207,10 +163,10 @@ if ($_POST) {
         $respuesta_110 = '264';
         
         // Marcar todas como correctas
-        $verificar_1 = $verificar_2 = $verificar_3 = /* ... todas las variables de verificación ... */ $verificar_122 = "correcto";
+    $verificar_1 = $verificar_2 = $verificar_3 = /* ... todas las variables de verificación ... */ $verificar_122 = "correcto";
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '26') {  
+   if ($respuesta_1 === 'trabajo') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -220,7 +176,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === '39') {  
+   if ($respuesta_2 === 'valor') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -230,7 +186,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === '52') {  
+   if ($respuesta_3 === 'diseñados') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -240,7 +196,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === '65') {  
+   if ($respuesta_4 === 'maximizar') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -250,7 +206,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === '78') {  
+   if ($respuesta_5 === 'transparencia') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -260,7 +216,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === '91') {  
+   if ($respuesta_6 === 'informacion') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -270,7 +226,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === '104') {  
+   if ($respuesta_7 === 'inspeccionan') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -280,7 +236,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === '117') {  
+   if ($respuesta_8 === 'base') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -290,7 +246,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === '130') {  
+   if ($respuesta_9 === 'adaptacion') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -300,7 +256,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === '143') {  
+   if ($respuesta_10 === 'contiene') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -310,7 +266,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === '156') {  
+   if ($respuesta_11 === 'compromiso') {  
        $verificar_11 = "correcto";
    } elseif ($respuesta_11 === '') {
        $verificar_11 = '';
@@ -321,7 +277,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
      $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-     if ($respuesta_12 === '28') {  
+     if ($respuesta_12 === 'garantizar') {  
          $verificar_12 = "correcto";
      } elseif ($respuesta_12 === '') {
          $verificar_12 = '';
@@ -331,7 +287,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la segunda pregunta
      $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-     if ($respuesta_13 === '42') { 
+     if ($respuesta_13 === 'informacion') { 
          $verificar_13 = "correcto";
      } elseif ($respuesta_13 === '') {
          $verificar_13 = '';
@@ -341,7 +297,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la tercera pregunta
      $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-     if ($respuesta_14 === '56') {  
+     if ($respuesta_14 === 'mejore') {  
          $verificar_14 = "correcto";
      } elseif ($respuesta_14 === '') {
          $verificar_14 = '';
@@ -351,7 +307,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la cuarta pregunta
      $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-     if ($respuesta_15 === '70') { 
+     if ($respuesta_15 === 'enfoque') { 
          $verificar_15 = "correcto";
      } elseif ($respuesta_15 === '') {
          $verificar_15 = '';
@@ -361,7 +317,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la quinta pregunta
      $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-     if ($respuesta_16 === '84') {  
+     if ($respuesta_16 === 'medir') {  
          $verificar_16 = "correcto";
      } elseif ($respuesta_16 === '') {
          $verificar_16 = '';
@@ -371,7 +327,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la sexta pregunta
      $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-     if ($respuesta_17 === '98') {  
+     if ($respuesta_17 === 'progreso') {  
          $verificar_17 = "correcto";
      } elseif ($respuesta_17 === '') {
          $verificar_17 = '';
@@ -381,7 +337,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la séptima pregunta
      $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-     if ($respuesta_18 === '112') {  
+     if ($respuesta_18 === 'Objetivo del Producto' || $respuesta_18 === 'objetivo del producto') {  
          $verificar_18 = "correcto";
      } elseif ($respuesta_18 === '') {
          $verificar_18 = '';
@@ -391,7 +347,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la octava pregunta
      $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-     if ($respuesta_19 === '126') {  
+     if ($respuesta_19 === 'Objetivo del Sprint' || $respuesta_19 === 'objetivo del sprint') {  
          $verificar_19 = "correcto";
      } elseif ($respuesta_19 === '') {
          $verificar_19 = '';
@@ -401,7 +357,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la novena pregunta
      $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
-     if ($respuesta_20 === '140') {  
+     if ($respuesta_20 === 'Definición de Terminado' || $respuesta_20 === 'definición de terminado') {  
          $verificar_20 = "correcto";
      } elseif ($respuesta_20 === '') {
          $verificar_20 = '';
@@ -411,7 +367,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la décima pregunta
      $respuesta_21 = isset($_POST['respuesta_21']) ? $_POST['respuesta_21'] : '';
-     if ($respuesta_21 === '154') {  
+     if ($respuesta_21 === 'reforzar') {  
          $verificar_21 = "correcto";
      } elseif ($respuesta_21 === '') {
          $verificar_21 = '';
@@ -421,7 +377,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la undécima pregunta
      $respuesta_22 = isset($_POST['respuesta_22']) ? $_POST['respuesta_22'] : '';
-     if ($respuesta_22 === '168') {  
+     if ($respuesta_22 === 'empirismo') {  
          $verificar_22 = "correcto";
      } elseif ($respuesta_22 === '') {
          $verificar_22 = '';
@@ -431,7 +387,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
    $respuesta_23 = isset($_POST['respuesta_23']) ? $_POST['respuesta_23'] : '';
-   if ($respuesta_23 === '30') {  
+   if ($respuesta_23 === 'Scrum Team'  || $respuesta_23 === 'scrum team') {  
        $verificar_23 = "correcto";
    } elseif ($respuesta_23 === '') {
        $verificar_23 = '';
@@ -441,7 +397,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_24 = isset($_POST['respuesta_24']) ? $_POST['respuesta_24'] : '';
-   if ($respuesta_24 === '45') {  
+   if ($respuesta_24 === 'interesados') {  
        $verificar_24 = "correcto";
    } elseif ($respuesta_24 === '') {
        $verificar_24 = '';
@@ -451,7 +407,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_25 = isset($_POST['respuesta_25']) ? $_POST['respuesta_25'] : '';
-   if ($respuesta_25 === '60') { 
+   if ($respuesta_25 === 'lista') { 
        $verificar_25 = "correcto";
    } elseif ($respuesta_25 === '') {
        $verificar_25 = '';
@@ -461,7 +417,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_26 = isset($_POST['respuesta_26']) ? $_POST['respuesta_26'] : '';
-   if ($respuesta_26 === '75') {  
+   if ($respuesta_26 === 'ordenada') {  
        $verificar_26 = "correcto";
    } elseif ($respuesta_26 === '') {
        $verificar_26 = '';
@@ -471,7 +427,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_27 = isset($_POST['respuesta_27']) ? $_POST['respuesta_27'] : '';
-   if ($respuesta_27 === '90') {  
+   if ($respuesta_27 === 'necesita') {  
        $verificar_27 = "correcto";
    } elseif ($respuesta_27 === '') {
        $verificar_27 = '';
@@ -481,7 +437,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_28 = isset($_POST['respuesta_28']) ? $_POST['respuesta_28'] : '';
-   if ($respuesta_28 === '105') {  
+   if ($respuesta_28 === 'mejorar') {  
        $verificar_28 = "correcto";
    } elseif ($respuesta_28 === '') {
        $verificar_28 = '';
@@ -491,7 +447,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_29 = isset($_POST['respuesta_29']) ? $_POST['respuesta_29'] : '';
-   if ($respuesta_29 === '120') {  
+   if ($respuesta_29 === 'fuente') {  
        $verificar_29 = "correcto";
    } elseif ($respuesta_29 === '') {
        $verificar_29 = '';
@@ -501,7 +457,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_30 = isset($_POST['respuesta_30']) ? $_POST['respuesta_30'] : '';
-   if ($respuesta_30 === '135') {  
+   if ($respuesta_30 === 'realizado') {  
        $verificar_30 = "correcto";
    } elseif ($respuesta_30 === '') {
        $verificar_30 = '';
@@ -511,7 +467,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_31 = isset($_POST['respuesta_31']) ? $_POST['respuesta_31'] : '';
-   if ($respuesta_31 === '150') {  
+   if ($respuesta_31 === 'Scrum Team' || $respuesta_31 === 'scrum team') {  
        $verificar_31 = "correcto";
    } elseif ($respuesta_31 === '') {
        $verificar_31 = '';
@@ -521,7 +477,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_32 = isset($_POST['respuesta_32']) ? $_POST['respuesta_32'] : '';
-   if ($respuesta_32 === '165') {  
+   if ($respuesta_32 === 'Terminados' || $respuesta_32 === 'terminados') {  
        $verificar_32 = "correcto";
    } elseif ($respuesta_32 === '') {
        $verificar_32 = '';
@@ -531,7 +487,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_33 = isset($_POST['respuesta_33']) ? $_POST['respuesta_33'] : '';
-   if ($respuesta_33 === '180') {  
+   if ($respuesta_33 === 'preparados') {  
        $verificar_33 = "correcto";
    } elseif ($respuesta_33 === '') {
        $verificar_33 = '';
@@ -539,44 +495,44 @@ if ($_POST) {
        $verificar_33 = "incorrecto";
    }
 
- $respuesta_34 = isset($_POST['respuesta_34']) ? $_POST['respuesta_34'] : '';
-if ($respuesta_34 === '32') { 
-    $verificar_34 = "correcto";
-} elseif ($respuesta_34 === '') {
-    $verificar_34 = '';
-} else {
-    $verificar_34 = "incorrecto";
-}
+    $respuesta_34 = isset($_POST['respuesta_34']) ? $_POST['respuesta_34'] : '';
+    if ($respuesta_34 === 'seleccionados') { 
+        $verificar_34 = "correcto";
+    } elseif ($respuesta_34 === '') {
+        $verificar_34 = '';
+    } else {
+        $verificar_34 = "incorrecto";
+    }
 
- $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
-if ($respuesta_35 === '48') { 
-    $verificar_35 = "correcto";
-} elseif ($respuesta_35 === '') {
-    $verificar_35 = '';
-} else {
-    $verificar_35 = "incorrecto";
-}
+    $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
+    if ($respuesta_35 === 'evento') { 
+        $verificar_35 = "correcto";
+    } elseif ($respuesta_35 === '') {
+        $verificar_35 = '';
+    } else {
+        $verificar_35 = "incorrecto";
+    }
 
- $respuesta_36 = isset($_POST['respuesta_36']) ? $_POST['respuesta_36'] : '';
-if ($respuesta_36 === '64') { 
-    $verificar_36 = "correcto";
-} elseif ($respuesta_36 === '') {
+    $respuesta_36 = isset($_POST['respuesta_36']) ? $_POST['respuesta_36'] : '';
+    if ($respuesta_36 === 'Sprint Planning' || $respuesta_36 === 'sprint planning') { 
+        $verificar_36 = "correcto";
+    } elseif ($respuesta_36 === '') {
     $verificar_36 = '';
-} else {
-    $verificar_36 = "incorrecto";
-}
+    } else {
+        $verificar_36 = "incorrecto";
+    }
 
- $respuesta_37 = isset($_POST['respuesta_37']) ? $_POST['respuesta_37'] : '';
-if ($respuesta_37 === '80') { 
-    $verificar_37 = "correcto";
-} elseif ($respuesta_37 === '') {
-    $verificar_37 = '';
-} else {
-    $verificar_37 = "incorrecto";
-}
+    $respuesta_37 = isset($_POST['respuesta_37']) ? $_POST['respuesta_37'] : '';
+    if ($respuesta_37 === 'transparencia') { 
+        $verificar_37 = "correcto";
+    } elseif ($respuesta_37 === '') {
+        $verificar_37 = '';
+    } else {
+        $verificar_37 = "incorrecto";
+    }
 
  $respuesta_38 = isset($_POST['respuesta_38']) ? $_POST['respuesta_38'] : '';
-if ($respuesta_38 === '96') { 
+if ($respuesta_38 === 'refinamiento') { 
     $verificar_38 = "correcto";
 } elseif ($respuesta_38 === '') {
     $verificar_38 = '';
@@ -585,7 +541,7 @@ if ($respuesta_38 === '96') {
 }
 
  $respuesta_39 = isset($_POST['respuesta_39']) ? $_POST['respuesta_39'] : '';
-if ($respuesta_39 === '112') { 
+if ($respuesta_39 === 'dividir') { 
     $verificar_39 = "correcto";
 } elseif ($respuesta_39 === '') {
     $verificar_39 = '';
@@ -594,7 +550,7 @@ if ($respuesta_39 === '112') {
 }
 
  $respuesta_40 = isset($_POST['respuesta_40']) ? $_POST['respuesta_40'] : '';
-if ($respuesta_40 === '128') { 
+if ($respuesta_40 === 'elementos') { 
     $verificar_40 = "correcto";
 } elseif ($respuesta_40 === '') {
     $verificar_40 = '';
@@ -603,7 +559,7 @@ if ($respuesta_40 === '128') {
 }
 
  $respuesta_41 = isset($_POST['respuesta_41']) ? $_POST['respuesta_41'] : '';
-if ($respuesta_41 === '144') { 
+if ($respuesta_41 === 'pequeños') { 
     $verificar_41 = "correcto";
 } elseif ($respuesta_41 === '') {
     $verificar_41 = '';
@@ -612,7 +568,7 @@ if ($respuesta_41 === '144') {
 }
 
  $respuesta_42 = isset($_POST['respuesta_42']) ? $_POST['respuesta_42'] : '';
-if ($respuesta_42 === '160') { 
+if ($respuesta_42 === 'continua') { 
     $verificar_42 = "correcto";
 } elseif ($respuesta_42 === '') {
     $verificar_42 = '';
@@ -621,7 +577,7 @@ if ($respuesta_42 === '160') {
 }
 
  $respuesta_43 = isset($_POST['respuesta_43']) ? $_POST['respuesta_43'] : '';
-if ($respuesta_43 === '176') { 
+if ($respuesta_43 === 'detalles') { 
     $verificar_43 = "correcto";
 } elseif ($respuesta_43 === '') {
     $verificar_43 = '';
@@ -630,7 +586,7 @@ if ($respuesta_43 === '176') {
 }
 
  $respuesta_44 = isset($_POST['respuesta_44']) ? $_POST['respuesta_44'] : '';
-if ($respuesta_44 === '192') { 
+if ($respuesta_44 === 'descripcion') { 
     $verificar_44 = "correcto";
 } elseif ($respuesta_44 === '') {
     $verificar_44 = '';
@@ -639,7 +595,7 @@ if ($respuesta_44 === '192') {
 }
 
  $respuesta_45 = isset($_POST['respuesta_45']) ? $_POST['respuesta_45'] : '';
-if ($respuesta_45 === '34') { 
+if ($respuesta_45 === 'atributos') { 
     $verificar_45 = "correcto";
 } elseif ($respuesta_45 === '') {
     $verificar_45 = '';
@@ -648,7 +604,7 @@ if ($respuesta_45 === '34') {
 }
 
  $respuesta_46 = isset($_POST['respuesta_46']) ? $_POST['respuesta_46'] : '';
-if ($respuesta_46 === '51') { 
+if ($respuesta_46 === 'Developers' || $respuesta_46 === 'developers') { 
     $verificar_46 = "correcto";
 } elseif ($respuesta_46 === '') {
     $verificar_46 = '';
@@ -657,7 +613,7 @@ if ($respuesta_46 === '51') {
 }
 
  $respuesta_47 = isset($_POST['respuesta_47']) ? $_POST['respuesta_47'] : '';
-if ($respuesta_47 === '68') { 
+if ($respuesta_47 === 'dimensionamiento') { 
     $verificar_47 = "correcto";
 } elseif ($respuesta_47 === '') {
     $verificar_47 = '';
@@ -666,7 +622,7 @@ if ($respuesta_47 === '68') {
 }
 
  $respuesta_48 = isset($_POST['respuesta_48']) ? $_POST['respuesta_48'] : '';
-if ($respuesta_48 === '85') { 
+if ($respuesta_48 === 'Product Owner' || $respuesta_48 === 'product owner') { 
     $verificar_48 = "correcto";
 } elseif ($respuesta_48 === '') {
     $verificar_48 = '';
@@ -675,7 +631,7 @@ if ($respuesta_48 === '85') {
 }
 
  $respuesta_49 = isset($_POST['respuesta_49']) ? $_POST['respuesta_49'] : '';
-if ($respuesta_49 === '102') { 
+if ($respuesta_49 === 'Developers' || $respuesta_49 === 'developers') { 
     $verificar_49 = "correcto";
 } elseif ($respuesta_49 === '') {
     $verificar_49 = '';
@@ -684,7 +640,7 @@ if ($respuesta_49 === '102') {
 }
 
  $respuesta_50 = isset($_POST['respuesta_50']) ? $_POST['respuesta_50'] : '';
-if ($respuesta_50 === '119') { 
+if ($respuesta_50 === 'seleccionar') { 
     $verificar_50 = "correcto";
 } elseif ($respuesta_50 === '') {
     $verificar_50 = '';
@@ -693,7 +649,7 @@ if ($respuesta_50 === '119') {
 }
 
  $respuesta_51 = isset($_POST['respuesta_51']) ? $_POST['respuesta_51'] : '';
-if ($respuesta_51 === '136') { 
+if ($respuesta_51 === 'describe') { 
     $verificar_51 = "correcto";
 } elseif ($respuesta_51 === '') {
     $verificar_51 = '';
@@ -702,7 +658,7 @@ if ($respuesta_51 === '136') {
 }
 
  $respuesta_52 = isset($_POST['respuesta_52']) ? $_POST['respuesta_52'] : '';
-if ($respuesta_52 === '153') { 
+if ($respuesta_52 === 'futuro') { 
     $verificar_52 = "correcto";
 } elseif ($respuesta_52 === '') {
     $verificar_52 = '';
@@ -711,7 +667,7 @@ if ($respuesta_52 === '153') {
 }
 
  $respuesta_53 = isset($_POST['respuesta_53']) ? $_POST['respuesta_53'] : '';
-if ($respuesta_53 === '170') { 
+if ($respuesta_53 === 'objetivo') { 
     $verificar_53 = "correcto";
 } elseif ($respuesta_53 === '') {
     $verificar_53 = '';
@@ -720,7 +676,7 @@ if ($respuesta_53 === '170') {
 }
 
  $respuesta_54 = isset($_POST['respuesta_54']) ? $_POST['respuesta_54'] : '';
-if ($respuesta_54 === '187') { 
+if ($respuesta_54 === 'Scrum Team' || $respuesta_54 === 'scrum team') { 
     $verificar_54 = "correcto";
 } elseif ($respuesta_54 === '') {
     $verificar_54 = '';
@@ -729,7 +685,7 @@ if ($respuesta_54 === '187') {
 }
 
  $respuesta_55 = isset($_POST['respuesta_55']) ? $_POST['respuesta_55'] : '';
-if ($respuesta_55 === '204') { 
+if ($respuesta_55 === 'Product Backlog' || $respuesta_55 === 'product backlog') { 
     $verificar_55 = "correcto";
 } elseif ($respuesta_55 === '') {
     $verificar_55 = '';
@@ -739,7 +695,7 @@ if ($respuesta_55 === '204') {
 
 
  $respuesta_56 = isset($_POST['respuesta_56']) ? $_POST['respuesta_56'] : '';
-if ($respuesta_56 === '36') { 
+if ($respuesta_56 === 'definir') { 
     $verificar_56 = "correcto";
 } elseif ($respuesta_56 === '') {
     $verificar_56 = '';
@@ -748,7 +704,7 @@ if ($respuesta_56 === '36') {
 }
 
  $respuesta_57 = isset($_POST['respuesta_57']) ? $_POST['respuesta_57'] : '';
-if ($respuesta_57 === '54') { 
+if ($respuesta_57 === 'qué' || $respuesta_57 === 'que') { 
     $verificar_57 = "correcto";
 } elseif ($respuesta_57 === '') {
     $verificar_57 = '';
@@ -757,7 +713,7 @@ if ($respuesta_57 === '54') {
 }
 
  $respuesta_58 = isset($_POST['respuesta_58']) ? $_POST['respuesta_58'] : '';
-if ($respuesta_58 === '72') { 
+if ($respuesta_58 === 'vehiculo') { 
     $verificar_58 = "correcto";
 } elseif ($respuesta_58 === '') {
     $verificar_58 = '';
@@ -766,7 +722,7 @@ if ($respuesta_58 === '72') {
 }
 
  $respuesta_59 = isset($_POST['respuesta_59']) ? $_POST['respuesta_59'] : '';
-if ($respuesta_59 === '90') { 
+if ($respuesta_59 === 'entregar') { 
     $verificar_59 = "correcto";
 } elseif ($respuesta_59 === '') {
     $verificar_59 = '';
@@ -775,7 +731,7 @@ if ($respuesta_59 === '90') {
 }
 
  $respuesta_60 = isset($_POST['respuesta_60']) ? $_POST['respuesta_60'] : '';
-if ($respuesta_60 === '108') { 
+if ($respuesta_60 === 'limite') { 
     $verificar_60 = "correcto";
 } elseif ($respuesta_60 === '') {
     $verificar_60 = '';
@@ -784,7 +740,7 @@ if ($respuesta_60 === '108') {
 }
 
  $respuesta_61 = isset($_POST['respuesta_61']) ? $_POST['respuesta_61'] : '';
-if ($respuesta_61 === '126') { 
+if ($respuesta_61 === 'interesadas') { 
     $verificar_61 = "correcto";
 } elseif ($respuesta_61 === '') {
     $verificar_61 = '';
@@ -793,7 +749,7 @@ if ($respuesta_61 === '126') {
 }
 
  $respuesta_62 = isset($_POST['respuesta_62']) ? $_POST['respuesta_62'] : '';
-if ($respuesta_62 === '144') { 
+if ($respuesta_62 === 'usuarios') { 
     $verificar_62 = "correcto";
 } elseif ($respuesta_62 === '') {
     $verificar_62 = '';
@@ -802,7 +758,7 @@ if ($respuesta_62 === '144') {
 }
 
  $respuesta_63 = isset($_POST['respuesta_63']) ? $_POST['respuesta_63'] : '';
-if ($respuesta_63 === '162') { 
+if ($respuesta_63 === 'clientes') { 
     $verificar_63 = "correcto";
 } elseif ($respuesta_63 === '') {
     $verificar_63 = '';
@@ -811,7 +767,7 @@ if ($respuesta_63 === '162') {
 }
 
  $respuesta_64 = isset($_POST['respuesta_64']) ? $_POST['respuesta_64'] : '';
-if ($respuesta_64 === '180') { 
+if ($respuesta_64 === 'servicio') { 
     $verificar_64 = "correcto";
 } elseif ($respuesta_64 === '') {
     $verificar_64 = '';
@@ -820,7 +776,7 @@ if ($respuesta_64 === '180') {
 }
 
  $respuesta_65 = isset($_POST['respuesta_65']) ? $_POST['respuesta_65'] : '';
-if ($respuesta_65 === '198') { 
+if ($respuesta_65 === 'fisico') { 
     $verificar_65 = "correcto";
 } elseif ($respuesta_65 === '') {
     $verificar_65 = '';
@@ -829,7 +785,7 @@ if ($respuesta_65 === '198') {
 }
 
  $respuesta_66 = isset($_POST['respuesta_66']) ? $_POST['respuesta_66'] : '';
-if ($respuesta_66 === '216') { 
+if ($respuesta_66 === 'largo plazo') { 
     $verificar_66 = "correcto";
 } elseif ($respuesta_66 === '') {
     $verificar_66 = '';
@@ -838,7 +794,7 @@ if ($respuesta_66 === '216') {
 }
 
  $respuesta_67 = isset($_POST['respuesta_67']) ? $_POST['respuesta_67'] : '';
-if ($respuesta_67 === '38') { 
+if ($respuesta_67 === 'cumplir') { 
     $verificar_67 = "correcto";
 } elseif ($respuesta_67 === '') {
     $verificar_67 = '';
@@ -847,7 +803,7 @@ if ($respuesta_67 === '38') {
 }
 
  $respuesta_68 = isset($_POST['respuesta_68']) ? $_POST['respuesta_68'] : '';
-if ($respuesta_68 === '57') { 
+if ($respuesta_68 === 'abandonar') { 
     $verificar_68 = "correcto";
 } elseif ($respuesta_68 === '') {
     $verificar_68 = '';
@@ -856,7 +812,7 @@ if ($respuesta_68 === '57') {
 }
 
  $respuesta_69 = isset($_POST['respuesta_69']) ? $_POST['respuesta_69'] : '';
-if ($respuesta_69 === '76') { 
+if ($respuesta_69 === 'Objetivo del Sprint' || $respuesta_69 === 'objetivo del sprint') { 
     $verificar_69 = "correcto";
 } elseif ($respuesta_69 === '') {
     $verificar_69 = '';
@@ -865,7 +821,7 @@ if ($respuesta_69 === '76') {
 }
 
  $respuesta_70 = isset($_POST['respuesta_70']) ? $_POST['respuesta_70'] : '';
-if ($respuesta_70 === '95') { 
+if ($respuesta_70 === 'por qué' || $respuesta_70 === 'por que') { 
     $verificar_70 = "correcto";
 } elseif ($respuesta_70 === '') {
     $verificar_70 = '';
@@ -874,7 +830,7 @@ if ($respuesta_70 === '95') {
 }
 
  $respuesta_71 = isset($_POST['respuesta_71']) ? $_POST['respuesta_71'] : '';
-if ($respuesta_71 === '114') { 
+if ($respuesta_71 === 'Product Backlog'  || $respuesta_71 === 'product backlog') { 
     $verificar_71 = "correcto";
 } elseif ($respuesta_71 === '') {
     $verificar_71 = '';
@@ -883,7 +839,7 @@ if ($respuesta_71 === '114') {
 }
 
  $respuesta_72 = isset($_POST['respuesta_72']) ? $_POST['respuesta_72'] : '';
-if ($respuesta_72 === '133') { 
+if ($respuesta_72 === 'qué' || $respuesta_72 === 'que') { 
     $verificar_72 = "correcto";
 } elseif ($respuesta_72 === '') {
     $verificar_72 = '';
@@ -892,7 +848,7 @@ if ($respuesta_72 === '133') {
 }
 
  $respuesta_73 = isset($_POST['respuesta_73']) ? $_POST['respuesta_73'] : '';
-if ($respuesta_73 === '152') { 
+if ($respuesta_73 === 'plan') { 
     $verificar_73 = "correcto";
 } elseif ($respuesta_73 === '') {
     $verificar_73 = '';
@@ -901,7 +857,7 @@ if ($respuesta_73 === '152') {
 }
 
  $respuesta_74 = isset($_POST['respuesta_74']) ? $_POST['respuesta_74'] : '';
-if ($respuesta_74 === '171') { 
+if ($respuesta_74 === 'entregar') { 
     $verificar_74 = "correcto";
 } elseif ($respuesta_74 === '') {
     $verificar_74 = '';
@@ -910,7 +866,7 @@ if ($respuesta_74 === '171') {
 }
 
  $respuesta_75 = isset($_POST['respuesta_75']) ? $_POST['respuesta_75'] : '';
-if ($respuesta_75 === '190') { 
+if ($respuesta_75 === 'Increment' || $respuesta_75 === 'increment') { 
     $verificar_75 = "correcto";
 } elseif ($respuesta_75 === '') {
     $verificar_75 = '';
@@ -919,7 +875,7 @@ if ($respuesta_75 === '190') {
 }
 
  $respuesta_76 = isset($_POST['respuesta_76']) ? $_POST['respuesta_76'] : '';
-if ($respuesta_76 === '209') { 
+if ($respuesta_76 === 'cómo' || $respuesta_76 === 'como') { 
     $verificar_76 = "correcto";
 } elseif ($respuesta_76 === '') {
     $verificar_76 = '';
@@ -928,7 +884,7 @@ if ($respuesta_76 === '209') {
 }
 
  $respuesta_77 = isset($_POST['respuesta_77']) ? $_POST['respuesta_77'] : '';
-if ($respuesta_77 === '228') { 
+if ($respuesta_77 === 'plan') { 
     $verificar_77 = "correcto";
 } elseif ($respuesta_77 === '') {
     $verificar_77 = '';
@@ -937,7 +893,7 @@ if ($respuesta_77 === '228') {
 }
 
  $respuesta_78 = isset($_POST['respuesta_78']) ? $_POST['respuesta_78'] : '';
-if ($respuesta_78 === '40') { 
+if ($respuesta_78 === 'por') { 
     $verificar_78 = "correcto";
 } elseif ($respuesta_78 === '') {
     $verificar_78 = '';
@@ -946,7 +902,7 @@ if ($respuesta_78 === '40') {
 }
 
  $respuesta_79 = isset($_POST['respuesta_79']) ? $_POST['respuesta_79'] : '';
-if ($respuesta_79 === '60') { 
+if ($respuesta_79 === 'para') { 
     $verificar_79 = "correcto";
 } elseif ($respuesta_79 === '') {
     $verificar_79 = '';
@@ -955,7 +911,7 @@ if ($respuesta_79 === '60') {
 }
 
  $respuesta_80 = isset($_POST['respuesta_80']) ? $_POST['respuesta_80'] : '';
-if ($respuesta_80 === '80') { 
+if ($respuesta_80 === 'Developers' || $respuesta_80 === 'developers') { 
     $verificar_80 = "correcto";
 } elseif ($respuesta_80 === '') {
     $verificar_80 = '';
@@ -964,7 +920,7 @@ if ($respuesta_80 === '80') {
 }
 
  $respuesta_81 = isset($_POST['respuesta_81']) ? $_POST['respuesta_81'] : '';
-if ($respuesta_81 === '100') { 
+if ($respuesta_81 === 'trabajo') { 
     $verificar_81 = "correcto";
 } elseif ($respuesta_81 === '') {
     $verificar_81 = '';
@@ -972,71 +928,71 @@ if ($respuesta_81 === '100') {
     $verificar_81 = "incorrecto";
 }
 
- $respuesta_82 = isset($_POST['respuesta_82']) ? $_POST['respuesta_82'] : '';
-if ($respuesta_82 === '120') { 
-    $verificar_82 = "correcto";
-} elseif ($respuesta_82 === '') {
-    $verificar_82 = '';
-} else {
-    $verificar_82 = "incorrecto";
-}
+    $respuesta_82 = isset($_POST['respuesta_82']) ? $_POST['respuesta_82'] : '';
+    if ($respuesta_82 === 'planean') { 
+        $verificar_82 = "correcto";
+    } elseif ($respuesta_82 === '') {
+        $verificar_82 = '';
+    } else {
+        $verificar_82 = "incorrecto";
+    }
 
- $respuesta_83 = isset($_POST['respuesta_83']) ? $_POST['respuesta_83'] : '';
-if ($respuesta_83 === '140') { 
-    $verificar_83 = "correcto";
-} elseif ($respuesta_83 === '') {
-    $verificar_83 = '';
-} else {
-    $verificar_83 = "incorrecto";
-}
+    $respuesta_83 = isset($_POST['respuesta_83']) ? $_POST['respuesta_83'] : '';
+    if ($respuesta_83 === 'Sprint' || $respuesta_83 === 'sprint') { 
+       $verificar_83 = "correcto";
+    } elseif ($respuesta_83 === '') {
+        $verificar_83 = '';
+    } else {
+        $verificar_83 = "incorrecto";
+    }
 
- $respuesta_84 = isset($_POST['respuesta_84']) ? $_POST['respuesta_84'] : '';
-if ($respuesta_84 === '160') { 
-    $verificar_84 = "correcto";
-} elseif ($respuesta_84 === '') {
-    $verificar_84 = '';
-} else {
-    $verificar_84 = "incorrecto";
-}
+    $respuesta_84 = isset($_POST['respuesta_84']) ? $_POST['respuesta_84'] : '';
+    if ($respuesta_84 === 'Objetivo del Sprint' || $respuesta_84 === 'objetivo del sprint') { 
+        $verificar_84 = "correcto";
+    } elseif ($respuesta_84 === '') {
+        $verificar_84 = '';
+    } else {
+        $verificar_84 = "incorrecto";
+    }
 
- $respuesta_85 = isset($_POST['respuesta_85']) ? $_POST['respuesta_85'] : '';
-if ($respuesta_85 === '180') { 
-    $verificar_85 = "correcto";
-} elseif ($respuesta_85 === '') {
-    $verificar_85 = '';
-} else {
-    $verificar_85 = "incorrecto";
-}
+    $respuesta_85 = isset($_POST['respuesta_85']) ? $_POST['respuesta_85'] : '';
+    if ($respuesta_85 === 'actualiza') { 
+        $verificar_85 = "correcto";
+    } elseif ($respuesta_85 === '') {
+        $verificar_85 = '';
+    } else {
+        $verificar_85 = "incorrecto";
+    }
 
- $respuesta_86 = isset($_POST['respuesta_86']) ? $_POST['respuesta_86'] : '';
-if ($respuesta_86 === '200') { 
-    $verificar_86 = "correcto";
-} elseif ($respuesta_86 === '') {
-    $verificar_86 = '';
-} else {
-    $verificar_86 = "incorrecto";
-}
+    $respuesta_86 = isset($_POST['respuesta_86']) ? $_POST['respuesta_86'] : '';
+    if ($respuesta_86 === 'aprende') { 
+        $verificar_86 = "correcto";
+    } elseif ($respuesta_86 === '') {
+        $verificar_86 = '';
+    } else {
+        $verificar_86 = "incorrecto";
+    }
 
- $respuesta_87 = isset($_POST['respuesta_87']) ? $_POST['respuesta_87'] : '';
-if ($respuesta_87 === '220') { 
-    $verificar_87 = "correcto";
-} elseif ($respuesta_87 === '') {
-    $verificar_87 = '';
-} else {
-    $verificar_87 = "incorrecto";
-}
+    $respuesta_87 = isset($_POST['respuesta_87']) ? $_POST['respuesta_87'] : '';
+    if ($respuesta_87 === 'inspeccionar') { 
+        $verificar_87 = "correcto";
+    } elseif ($respuesta_87 === '') {
+        $verificar_87 = '';
+    } else {
+        $verificar_87 = "incorrecto";
+    }
 
- $respuesta_88 = isset($_POST['respuesta_88']) ? $_POST['respuesta_88'] : '';
-if ($respuesta_88 === '240') { 
-    $verificar_88 = "correcto";
-} elseif ($respuesta_88 === '') {
-    $verificar_88 = '';
-} else {
-    $verificar_88 = "incorrecto";
-}
+    $respuesta_88 = isset($_POST['respuesta_88']) ? $_POST['respuesta_88'] : '';
+    if ($respuesta_88 === 'Daily Scrum' || $respuesta_88 === 'daily scrum') { 
+        $verificar_88 = "correcto";
+    } elseif ($respuesta_88 === '') {
+        $verificar_88 = '';
+    } else {
+        $verificar_88 = "incorrecto";
+    }
 
  $respuesta_89 = isset($_POST['respuesta_89']) ? $_POST['respuesta_89'] : '';
-if ($respuesta_89 === '42') { 
+if ($respuesta_89 === 'proposito') { 
     $verificar_89 = "correcto";
 } elseif ($respuesta_89 === '') {
     $verificar_89 = '';
@@ -1045,7 +1001,7 @@ if ($respuesta_89 === '42') {
 }
 
  $respuesta_90 = isset($_POST['respuesta_90']) ? $_POST['respuesta_90'] : '';
-if ($respuesta_90 === '63') { 
+if ($respuesta_90 === 'Developers' || $respuesta_90 === 'developers') { 
     $verificar_90 = "correcto";
 } elseif ($respuesta_90 === '') {
     $verificar_90 = '';
@@ -1054,7 +1010,7 @@ if ($respuesta_90 === '63') {
 }
 
  $respuesta_91 = isset($_POST['respuesta_91']) ? $_POST['respuesta_91'] : '';
-if ($respuesta_91 === '84') { 
+if ($respuesta_91 === 'flexibilidad') { 
     $verificar_91 = "correcto";
 } elseif ($respuesta_91 === '') {
     $verificar_91 = '';
@@ -1063,7 +1019,7 @@ if ($respuesta_91 === '84') {
 }
 
  $respuesta_92 = isset($_POST['respuesta_92']) ? $_POST['respuesta_92'] : '';
-if ($respuesta_92 === '105') { 
+if ($respuesta_92 === 'lograrlo') { 
     $verificar_92 = "correcto";
 } elseif ($respuesta_92 === '') {
     $verificar_92 = '';
@@ -1072,7 +1028,7 @@ if ($respuesta_92 === '105') {
 }
 
  $respuesta_93 = isset($_POST['respuesta_93']) ? $_POST['respuesta_93'] : '';
-if ($respuesta_93 === '126') { 
+if ($respuesta_93 === 'Scrum Team' || $respuesta_93 === 'scrum team') { 
     $verificar_93 = "correcto";
 } elseif ($respuesta_93 === '') {
     $verificar_93 = '';
@@ -1081,7 +1037,7 @@ if ($respuesta_93 === '126') {
 }
 
  $respuesta_94 = isset($_POST['respuesta_94']) ? $_POST['respuesta_94'] : '';
-if ($respuesta_94 === '147') { 
+if ($respuesta_94 === 'Sprint Planning' || $respuesta_94 === 'sprint planning') { 
     $verificar_94 = "correcto";
 } elseif ($respuesta_94 === '') {
     $verificar_94 = '';
@@ -1090,7 +1046,7 @@ if ($respuesta_94 === '147') {
 }
 
  $respuesta_95 = isset($_POST['respuesta_95']) ? $_POST['respuesta_95'] : '';
-if ($respuesta_95 === '168') { 
+if ($respuesta_95 === 'Sprint Backlog' || $respuesta_95 === 'sprint backlog') { 
     $verificar_95 = "correcto";
 } elseif ($respuesta_95 === '') {
     $verificar_95 = '';
@@ -1099,7 +1055,7 @@ if ($respuesta_95 === '168') {
 }
 
  $respuesta_96 = isset($_POST['respuesta_96']) ? $_POST['respuesta_96'] : '';
-if ($respuesta_96 === '189') { 
+if ($respuesta_96 === 'Objetivo del Sprint' || $respuesta_96 === 'objetivo del sprint') { 
     $verificar_96 = "correcto";
 } elseif ($respuesta_96 === '') {
     $verificar_96 = '';
@@ -1108,7 +1064,7 @@ if ($respuesta_96 === '189') {
 }
 
  $respuesta_97 = isset($_POST['respuesta_97']) ? $_POST['respuesta_97'] : '';
-if ($respuesta_97 === '210') { 
+if ($respuesta_97 === 'diferente') { 
     $verificar_97 = "correcto";
 } elseif ($respuesta_97 === '') {
     $verificar_97 = '';
@@ -1117,7 +1073,7 @@ if ($respuesta_97 === '210') {
 }
 
  $respuesta_98 = isset($_POST['respuesta_98']) ? $_POST['respuesta_98'] : '';
-if ($respuesta_98 === '231') { 
+if ($respuesta_98 === 'Product Owner' || $respuesta_98 === 'product owner') { 
     $verificar_98 = "correcto";
 } elseif ($respuesta_98 === '') {
     $verificar_98 = '';
@@ -1126,7 +1082,7 @@ if ($respuesta_98 === '231') {
 }
 
  $respuesta_99 = isset($_POST['respuesta_99']) ? $_POST['respuesta_99'] : '';
-if ($respuesta_99 === '252') { 
+if ($respuesta_99 === 'alcance') { 
     $verificar_99 = "correcto";
 } elseif ($respuesta_99 === '') {
     $verificar_99 = '';
@@ -1136,7 +1092,7 @@ if ($respuesta_99 === '252') {
 
 
  $respuesta_100 = isset($_POST['respuesta_100']) ? $_POST['respuesta_100'] : '';
-if ($respuesta_100 === '44') { 
+if ($respuesta_100 === 'Sprint Backlog' || $respuesta_100 === 'sprint backlog') { 
     $verificar_100 = "correcto";
 } elseif ($respuesta_100 === '') {
     $verificar_100 = '';
@@ -1145,7 +1101,7 @@ if ($respuesta_100 === '44') {
 }
 
  $respuesta_101 = isset($_POST['respuesta_101']) ? $_POST['respuesta_101'] : '';
-if ($respuesta_101 === '66') { 
+if ($respuesta_101 === 'peldaño') { 
     $verificar_101 = "correcto";
 } elseif ($respuesta_101 === '') {
     $verificar_101 = '';
@@ -1154,7 +1110,7 @@ if ($respuesta_101 === '66') {
 }
 
  $respuesta_102 = isset($_POST['respuesta_102']) ? $_POST['respuesta_102'] : '';
-if ($respuesta_102 === '88') { 
+if ($respuesta_102 === 'Objetivo del Producto' || $respuesta_102 === 'objetivo del producto') { 
     $verificar_102 = "correcto";
 } elseif ($respuesta_102 === '') {
     $verificar_102 = '';
@@ -1163,7 +1119,7 @@ if ($respuesta_102 === '88') {
 }
 
  $respuesta_103 = isset($_POST['respuesta_103']) ? $_POST['respuesta_103'] : '';
-if ($respuesta_103 === '110') { 
+if ($respuesta_103 === 'suma') { 
     $verificar_103 = "correcto";
 } elseif ($respuesta_103 === '') {
     $verificar_103 = '';
@@ -1172,7 +1128,7 @@ if ($respuesta_103 === '110') {
 }
 
  $respuesta_104 = isset($_POST['respuesta_104']) ? $_POST['respuesta_104'] : '';
-if ($respuesta_104 === '132') { 
+if ($respuesta_104 === 'anteriores') { 
     $verificar_104 = "correcto";
 } elseif ($respuesta_104 === '') {
     $verificar_104 = '';
@@ -1181,7 +1137,7 @@ if ($respuesta_104 === '132') {
 }
 
  $respuesta_105 = isset($_POST['respuesta_105']) ? $_POST['respuesta_105'] : '';
-if ($respuesta_105 === '154') { 
+if ($respuesta_105 === 'verifica') { 
     $verificar_105 = "correcto";
 } elseif ($respuesta_105 === '') {
     $verificar_105 = '';
@@ -1190,7 +1146,7 @@ if ($respuesta_105 === '154') {
 }
 
  $respuesta_106 = isset($_POST['respuesta_106']) ? $_POST['respuesta_106'] : '';
-if ($respuesta_106 === '176') { 
+if ($respuesta_106 === 'funcionen') { 
     $verificar_106 = "correcto";
 } elseif ($respuesta_106 === '') {
     $verificar_106 = '';
@@ -1199,7 +1155,7 @@ if ($respuesta_106 === '176') {
 }
 
  $respuesta_107 = isset($_POST['respuesta_107']) ? $_POST['respuesta_107'] : '';
-if ($respuesta_107 === '198') { 
+if ($respuesta_107 === 'utilizable') { 
     $verificar_107 = "correcto";
 } elseif ($respuesta_107 === '') {
     $verificar_107 = '';
@@ -1208,7 +1164,7 @@ if ($respuesta_107 === '198') {
 }
 
  $respuesta_108 = isset($_POST['respuesta_108']) ? $_POST['respuesta_108'] : '';
-if ($respuesta_108 === '220') { 
+if ($respuesta_108 === 'crear') { 
     $verificar_108 = "correcto";
 } elseif ($respuesta_108 === '') {
     $verificar_108 = '';
@@ -1217,7 +1173,7 @@ if ($respuesta_108 === '220') {
 }
 
  $respuesta_109 = isset($_POST['respuesta_109']) ? $_POST['respuesta_109'] : '';
-if ($respuesta_109 === '242') { 
+if ($respuesta_109 === 'dentro') { 
     $verificar_109 = "correcto";
 } elseif ($respuesta_109 === '') {
     $verificar_109 = '';
@@ -1226,7 +1182,7 @@ if ($respuesta_109 === '242') {
 }
 
  $respuesta_110 = isset($_POST['respuesta_110']) ? $_POST['respuesta_110'] : '';
-if ($respuesta_110 === '264') { 
+if ($respuesta_110 === 'Sprint') { 
     $verificar_110 = "correcto";
 } elseif ($respuesta_110 === '') {
     $verificar_110 = '';
@@ -1236,7 +1192,7 @@ if ($respuesta_110 === '264') {
 
 // Tabla del 12
 $respuesta_111 = isset($_POST['respuesta_111']) ? $_POST['respuesta_111'] : '';
-if ($respuesta_111 === '24') {  
+if ($respuesta_111 === 'Sprint Review' || $respuesta_111 === 'sprint review') {  
     $verificar_111 = "correcto";
 } elseif ($respuesta_111 === '') {
     $verificar_111 = '';
@@ -1245,7 +1201,7 @@ if ($respuesta_111 === '24') {
 }
 
 $respuesta_112 = isset($_POST['respuesta_112']) ? $_POST['respuesta_112'] : '';
-if ($respuesta_112 === '36') {  
+if ($respuesta_112 === 'empirismo') {  
     $verificar_112 = "correcto";
 } elseif ($respuesta_112 === '') {
     $verificar_112 = '';
@@ -1254,7 +1210,7 @@ if ($respuesta_112 === '36') {
 }
 
 $respuesta_113 = isset($_POST['respuesta_113']) ? $_POST['respuesta_113'] : '';
-if ($respuesta_113 === '48') {  
+if ($respuesta_113 === 'interesados') {  
     $verificar_113 = "correcto";
 } elseif ($respuesta_113 === '') {
     $verificar_113 = '';
@@ -1263,7 +1219,7 @@ if ($respuesta_113 === '48') {
 }
 
 $respuesta_114 = isset($_POST['respuesta_114']) ? $_POST['respuesta_114'] : '';
-if ($respuesta_114 === '60') {  
+if ($respuesta_114 === 'final') {  
     $verificar_114 = "correcto";
 } elseif ($respuesta_114 === '') {
     $verificar_114 = '';
@@ -1272,7 +1228,7 @@ if ($respuesta_114 === '60') {
 }
 
 $respuesta_115 = isset($_POST['respuesta_115']) ? $_POST['respuesta_115'] : '';
-if ($respuesta_115 === '72') {  
+if ($respuesta_115 === 'nunca') {  
     $verificar_115 = "correcto";
 } elseif ($respuesta_115 === '') {
     $verificar_115 = '';
@@ -1281,7 +1237,7 @@ if ($respuesta_115 === '72') {
 }
 
 $respuesta_116 = isset($_POST['respuesta_116']) ? $_POST['respuesta_116'] : '';
-if ($respuesta_116 === '84') {  
+if ($respuesta_116 === 'trabajo') {  
     $verificar_116 = "correcto";
 } elseif ($respuesta_116 === '') {
     $verificar_116 = '';
@@ -1290,7 +1246,7 @@ if ($respuesta_116 === '84') {
 }
 
 $respuesta_117 = isset($_POST['respuesta_117']) ? $_POST['respuesta_117'] : '';
-if ($respuesta_117 === '96') {  
+if ($respuesta_117 === 'a menos que') {  
     $verificar_117 = "correcto";
 } elseif ($respuesta_117 === '') {
     $verificar_117 = '';
@@ -1299,7 +1255,7 @@ if ($respuesta_117 === '96') {
 }
 
 $respuesta_118 = isset($_POST['respuesta_118']) ? $_POST['respuesta_118'] : '';
-if ($respuesta_118 === '108') {  
+if ($respuesta_118 === 'Definicion de Terminado' || $respuesta_118 === 'definicion de terminado') {  
     $verificar_118 = "correcto";
 } elseif ($respuesta_118 === '') {
     $verificar_118 = '';
@@ -1308,7 +1264,7 @@ if ($respuesta_118 === '108') {
 }
 
 $respuesta_119 = isset($_POST['respuesta_119']) ? $_POST['respuesta_119'] : '';
-if ($respuesta_119 === '120') {  
+if ($respuesta_119 === 'descripcion') {  
     $verificar_119 = "correcto";
 } elseif ($respuesta_119 === '') {
     $verificar_119 = '';
@@ -1317,7 +1273,7 @@ if ($respuesta_119 === '120') {
 }
 
 $respuesta_120 = isset($_POST['respuesta_120']) ? $_POST['respuesta_120'] : '';
-if ($respuesta_120 === '132') {  
+if ($respuesta_120 === 'estado') {  
     $verificar_120 = "correcto";
 } elseif ($respuesta_120 === '') {
     $verificar_120 = '';
@@ -1326,7 +1282,7 @@ if ($respuesta_120 === '132') {
 }
 
 $respuesta_121 = isset($_POST['respuesta_121']) ? $_POST['respuesta_121'] : '';
-if ($respuesta_121 === '144') {  
+if ($respuesta_121 === 'Increment') {  
     $verificar_121 = "correcto";
 } elseif ($respuesta_121 === '') {
     $verificar_121 = '';
@@ -1334,6 +1290,361 @@ if ($respuesta_121 === '144') {
     $verificar_121 = "incorrecto";
 }
 }
+
+
+ 
+$respuesta_122 = isset($_POST['respuesta_122']) ? $_POST['respuesta_122'] : '';
+if ($respuesta_122 === 'medidas') {  
+    $verificar_122 = "correcto";
+} elseif ($respuesta_122 === '') {
+    $verificar_122 = '';
+} else {
+    $verificar_122 = "incorrecto";
+}
+
+$respuesta_123 = isset($_POST['respuesta_123']) ? $_POST['respuesta_123'] : '';
+if ($respuesta_123 === 'calidad') {  
+    $verificar_123 = "correcto";
+} elseif ($respuesta_123 === '') {
+    $verificar_123 = '';
+} else {
+    $verificar_123 = "incorrecto";
+}
+
+$respuesta_124 = isset($_POST['respuesta_124']) ? $_POST['respuesta_124'] : '';
+if ($respuesta_124 === 'producto') {  
+    $verificar_124 = "correcto";
+} elseif ($respuesta_124 === '') {
+    $verificar_124 = '';
+} else {
+    $verificar_124 = "incorrecto";
+}
+
+$respuesta_125 = isset($_POST['respuesta_125']) ? $_POST['respuesta_125'] : '';
+if ($respuesta_125 === 'Product Backlog') {  
+    $verificar_125 = "correcto";
+} elseif ($respuesta_125 === '') {
+    $verificar_125 = '';
+} else {
+    $verificar_125 = "incorrecto";
+}
+
+$respuesta_126 = isset($_POST['respuesta_126']) ? $_POST['respuesta_126'] : '';
+if ($respuesta_126 === 'Definicion de Terminado' || $respuesta_126 === 'definicion de terminado') {  
+    $verificar_126 = "correcto";
+} elseif ($respuesta_126 === '') {
+    $verificar_126 = '';
+} else {
+    $verificar_126 = "incorrecto";
+}
+
+$respuesta_127 = isset($_POST['respuesta_127']) ? $_POST['respuesta_127'] : '';
+if ($respuesta_127 === 'transparencia') {  
+    $verificar_127 = "correcto";
+} elseif ($respuesta_127 === '') {
+    $verificar_127 = '';
+} else {
+    $verificar_127 = "incorrecto";
+}
+
+$respuesta_128 = isset($_POST['respuesta_128']) ? $_POST['respuesta_128'] : '';
+if ($respuesta_128 === 'todos') {  
+    $verificar_128 = "correcto";
+} elseif ($respuesta_128 === '') {
+    $verificar_128 = '';
+} else {
+    $verificar_128 = "incorrecto";
+}
+
+$respuesta_129 = isset($_POST['respuesta_129']) ? $_POST['respuesta_129'] : '';
+if ($respuesta_129 === 'entendimiento') {  
+    $verificar_129 = "correcto";
+} elseif ($respuesta_129 === '') {
+    $verificar_129 = '';
+} else {
+    $verificar_129 = "incorrecto";
+}
+
+$respuesta_130 = isset($_POST['respuesta_130']) ? $_POST['respuesta_130'] : '';
+if ($respuesta_130 === 'trabajo') {  
+    $verificar_130 = "correcto";
+} elseif ($respuesta_130 === '') {
+    $verificar_130 = '';
+} else {
+    $verificar_130 = "incorrecto";
+}
+
+$respuesta_131 = isset($_POST['respuesta_131']) ? $_POST['respuesta_131'] : '';
+if ($respuesta_131 === 'Increment' || $respuesta_131 === 'increment') {  
+    $verificar_131 = "correcto";
+} elseif ($respuesta_131 === '') {
+    $verificar_131 = '';
+} else {
+    $verificar_131 = "incorrecto";
+}
+
+$respuesta_132 = isset($_POST['respuesta_132']) ? $_POST['respuesta_132'] : '';
+if ($respuesta_132 === 'Product Backlog' || $respuesta_132 === 'product backlog') {  
+    $verificar_132 = "correcto";
+} elseif ($respuesta_132 === '') {
+    $verificar_132 = '';
+} else {
+    $verificar_132 = "incorrecto";
+}
+
+$respuesta_133 = isset($_POST['respuesta_133']) ? $_POST['respuesta_133'] : '';
+if ($respuesta_133 === 'Definicion de Terminado' || $respuesta_133 === 'definicion de terminado') {  
+    $verificar_133 = "correcto";
+} elseif ($respuesta_133 === '') {
+    $verificar_133 = '';
+} else {
+    $verificar_133 = "incorrecto";
+}
+
+$respuesta_134 = isset($_POST['respuesta_134']) ? $_POST['respuesta_134'] : '';
+if ($respuesta_134 === 'Sprint Review' || $respuesta_134 === 'sprint review') {  
+    $verificar_134 = "correcto";
+} elseif ($respuesta_134 === '') {
+    $verificar_134 = '';
+} else {
+    $verificar_134 = "incorrecto";
+}
+
+$respuesta_135 = isset($_POST['respuesta_135']) ? $_POST['respuesta_135'] : '';
+if ($respuesta_135 === 'Increment' || $respuesta_135 === 'increment') {  
+    $verificar_135 = "correcto";
+} elseif ($respuesta_135 === '') {
+    $verificar_135 = '';
+} else {
+    $verificar_135 = "incorrecto";
+}
+
+$respuesta_136 = isset($_POST['respuesta_136']) ? $_POST['respuesta_136'] : '';
+if ($respuesta_136 === 'estandares') {  
+    $verificar_136 = "correcto";
+} elseif ($respuesta_136 === '') {
+    $verificar_136 = '';
+} else {
+    $verificar_136 = "incorrecto";
+}
+
+$respuesta_137 = isset($_POST['respuesta_137']) ? $_POST['respuesta_137'] : '';
+if ($respuesta_137 === 'Scrum Teams' || $respuesta_137 === 'scrum teams') {  
+    $verificar_137 = "correcto";
+} elseif ($respuesta_137 === '') {
+    $verificar_137 = '';
+} else {
+    $verificar_137 = "incorrecto";
+}
+
+$respuesta_138 = isset($_POST['respuesta_138']) ? $_POST['respuesta_138'] : '';
+if ($respuesta_138 === 'Definicion de Terminado'|| $respuesta_138 === 'definicion de terminado') {  
+    $verificar_138 = "correcto";
+} elseif ($respuesta_138 === '') {
+    $verificar_138 = '';
+} else {
+    $verificar_138 = "incorrecto";
+}
+
+$respuesta_139 = isset($_POST['respuesta_139']) ? $_POST['respuesta_139'] : '';
+if ($respuesta_139 === 'Developers' || $respuesta_139 === 'developers') {  
+    $verificar_139 = "correcto";
+} elseif ($respuesta_139 === '') {
+    $verificar_139 = '';
+} else {
+    $verificar_139 = "incorrecto";
+}
+
+$respuesta_140 = isset($_POST['respuesta_140']) ? $_POST['respuesta_140'] : '';
+if ($respuesta_140 === 'adherirse') {  
+    $verificar_140 = "correcto";
+} elseif ($respuesta_140 === '') {
+    $verificar_140 = '';
+} else {
+    $verificar_140 = "incorrecto";
+}
+
+$respuesta_141 = isset($_POST['respuesta_141']) ? $_POST['respuesta_141'] : '';
+if ($respuesta_141 === 'misma') {  
+    $verificar_141 = "correcto";
+} elseif ($respuesta_141 === '') {
+    $verificar_141 = '';
+} else {
+    $verificar_141 = "incorrecto";
+}
+
+$respuesta_142 = isset($_POST['respuesta_142']) ? $_POST['respuesta_142'] : '';
+if ($respuesta_142 === 'inmutable') {  
+    $verificar_142 = "correcto";
+} elseif ($respuesta_142 === '') {
+    $verificar_142 = '';
+} else {
+    $verificar_142 = "incorrecto";
+}
+
+$respuesta_143 = isset($_POST['respuesta_143']) ? $_POST['respuesta_143'] : '';
+if ($respuesta_143 === 'partes') {  
+    $verificar_143 = "correcto";
+} elseif ($respuesta_143 === '') {
+    $verificar_143 = '';
+} else {
+    $verificar_143 = "incorrecto";
+}
+
+$respuesta_144 = isset($_POST['respuesta_144']) ? $_POST['respuesta_144'] : '';
+if ($respuesta_144 === 'no es') {  
+    $verificar_144 = "correcto";
+} elseif ($respuesta_144 === '') {
+    $verificar_144 = '';
+} else {
+    $verificar_144 = "incorrecto";
+}
+
+$respuesta_145 = isset($_POST['respuesta_145']) ? $_POST['respuesta_145'] : '';
+if ($respuesta_145 === 'totalidad') {  
+    $verificar_145 = "correcto";
+} elseif ($respuesta_145 === '') {
+    $verificar_145 = '';
+} else {
+    $verificar_145 = "incorrecto";
+}
+
+$respuesta_146 = isset($_POST['respuesta_146']) ? $_POST['respuesta_146'] : '';
+if ($respuesta_146 === 'contenedor') {  
+    $verificar_146 = "correcto";
+} elseif ($respuesta_146 === '') {
+    $verificar_146 = '';
+} else {
+    $verificar_146 = "incorrecto";
+}
+
+$respuesta_147 = isset($_POST['respuesta_147']) ? $_POST['respuesta_147'] : '';
+if ($respuesta_147 === 'tecnicas') {  
+    $verificar_147 = "correcto";
+} elseif ($respuesta_147 === '') {
+    $verificar_147 = '';
+} else {
+    $verificar_147 = "incorrecto";
+}
+
+$respuesta_148 = isset($_POST['respuesta_148']) ? $_POST['respuesta_148'] : '';
+if ($respuesta_148 === 'metodologias') {  
+    $verificar_148 = "correcto";
+} elseif ($respuesta_148 === '') {
+    $verificar_148 = '';
+} else {
+    $verificar_148 = "incorrecto";
+}
+
+$respuesta_149 = isset($_POST['respuesta_149']) ? $_POST['respuesta_149'] : '';
+if ($respuesta_149 === 'practicas') {  
+    $verificar_149 = "correcto";
+} elseif ($respuesta_149 === '') {
+    $verificar_149 = '';
+} else {
+    $verificar_149 = "incorrecto";
+}
+
+$respuesta_150 = isset($_POST['respuesta_150']) ? $_POST['respuesta_150'] : '';
+if ($respuesta_150 === 'Ken Schwaber') {  
+    $verificar_150 = "correcto";
+} elseif ($respuesta_150 === '') {
+    $verificar_150 = '';
+} else {
+    $verificar_150 = "incorrecto";
+}
+
+$respuesta_151 = isset($_POST['respuesta_151']) ? $_POST['respuesta_151'] : '';
+if ($respuesta_151 === 'Jeff Sutherland') {  
+    $verificar_151 = "correcto";
+} elseif ($respuesta_151 === '') {
+    $verificar_151 = '';
+} else {
+    $verificar_151 = "incorrecto";
+}
+
+$respuesta_152 = isset($_POST['respuesta_152']) ? $_POST['respuesta_152'] : '';
+if ($respuesta_152 === 'OOPSLA') {  
+    $verificar_152 = "correcto";
+} elseif ($respuesta_152 === '') {
+    $verificar_152 = '';
+} else {
+    $verificar_152 = "incorrecto";
+}
+
+$respuesta_153 = isset($_POST['respuesta_153']) ? $_POST['respuesta_153'] : '';
+if ($respuesta_153 === '1995') {  
+    $verificar_153 = "correcto";
+} elseif ($respuesta_153 === '') {
+    $verificar_153 = '';
+} else {
+    $verificar_153 = "incorrecto";
+}
+
+$respuesta_154 = isset($_POST['respuesta_154']) ? $_POST['respuesta_154'] : '';
+if ($respuesta_154 === 'Ken y Jeff') {  
+    $verificar_154 = "correcto";
+} elseif ($respuesta_154 === '') {
+    $verificar_154 = '';
+} else {
+    $verificar_154 = "incorrecto";
+}
+
+$respuesta_155 = isset($_POST['respuesta_155']) ? $_POST['respuesta_155'] : '';
+if ($respuesta_155 === '30') {  
+    $verificar_155 = "correcto";
+} elseif ($respuesta_155 === '') {
+    $verificar_155 = '';
+} else {
+    $verificar_155 = "incorrecto";
+}
+
+$respuesta_156 = isset($_POST['respuesta_156']) ? $_POST['respuesta_156'] : '';
+if ($respuesta_156 === 'patrones') {  
+    $verificar_156 = "correcto";
+} elseif ($respuesta_156 === '') {
+    $verificar_156 = '';
+} else {
+    $verificar_156 = "incorrecto";
+}
+
+$respuesta_157 = isset($_POST['respuesta_157']) ? $_POST['respuesta_157'] : '';
+if ($respuesta_157 === 'productividad') {  
+    $verificar_157 = "correcto";
+} elseif ($respuesta_157 === '') {
+    $verificar_157 = '';
+} else {
+    $verificar_157 = "incorrecto";
+}
+
+$respuesta_158 = isset($_POST['respuesta_158']) ? $_POST['respuesta_158'] : '';
+if ($respuesta_158 === '178') {  
+    $verificar_158 = "correcto";
+} elseif ($respuesta_158 === '') {
+    $verificar_158 = '';
+} else {
+    $verificar_158 = "incorrecto";
+}
+
+$respuesta_159 = isset($_POST['respuesta_159']) ? $_POST['respuesta_159'] : '';
+if ($respuesta_159 === '179') {  
+    $verificar_159 = "correcto";
+} elseif ($respuesta_159 === '') {
+    $verificar_159 = '';
+} else {
+    $verificar_159 = "incorrecto";
+}
+
+$respuesta_160 = isset($_POST['respuesta_160']) ? $_POST['respuesta_160'] : '';
+if ($respuesta_160 === '180') {  
+    $verificar_160 = "correcto";
+} elseif ($respuesta_160 === '') {
+    $verificar_160 = '';
+} else {
+    $verificar_160 = "incorrecto";
+}
+
+
 }
 ?>
 <!DOCTYPE html>
@@ -1355,7 +1666,7 @@ if ($respuesta_121 === '144') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 210vh;
+    height: 270vh;
     }
 </style>
  
@@ -1399,7 +1710,7 @@ function handleSubmit(event) {
 function actualizarFormula() {
     var f = document.getElementById('respuesta_1').value || "";
     var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula1').innerHTML = `$$ ${formula} $$`;
+    document.getElementById('formula').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
         MathJax.typeset();
     }
@@ -1631,61 +1942,183 @@ function ocultarMensaje4() {
     <h2>Artefactos de Scrum</h2>
     
     <p>
-    Los artefactos de Scrum representan trabajo o valor. Están diseñados para maximizar la transparencia
-    de la información clave. Por lo tanto, todas las personas que los inspeccionan tienen la misma base de
-    adaptación.
+    Los artefactos de Scrum representan 
+    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="9">
+     o 
+    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="9">
+     . Están 
+    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="9">
+      para 
+    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="9">
+      la 
+    <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="9">
+      de la 
+    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="9">
+      clave. Por lo tanto, todas las personas que los 
+    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="9">
+      tienen la misma 
+    <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="9">
+      de 
+    <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="9">
+     .
     </p>
   
     <p>
-    Cada artefacto contiene un compromiso para garantizar que proporcione información que mejore la
-    transparencia y el enfoque frente al cual se pueda medir el progreso:
+    Cada artefacto 
+    <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="9">
+     un 
+    <input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="9">
+      para 
+    <input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="9">
+      que proporcione 
+    <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="9">
+      que 
+    <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="9">
+      la transparencia y el 
+    <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="9">
+      frente al cual se pueda 
+    <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="9">
+      el 
+    <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="9">
+     :
     </p>
-    
+  
     <ul>
-    <li>Para el Product Backlog, es el Objetivo del Producto.</li>
-    <li>Para el Sprint Backlog, es el Objetivo del Sprint.</li>
-    <li>Para el Increment es la Definición de Terminado.</li>
+        <li>Para el Product Backlog, es el 
+        <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="9">    
+        .</li>
+        <li>Para el Sprint Backlog, es el 
+        <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="9">    
+        .</li>
+        <li>Para el Increment es la 
+        <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="9">    
+        .</li>
     </ul>
   
     <p>
-    Estos compromisos existen para reforzar el empirismo y los valores de Scrum para el Scrum Team y sus
-    interesados.
+    Estos compromisos existen para 
+    <input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>" size="9">
+    el 
+    <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="9">
+     y los valores de Scrum para el 
+    <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="9">
+     y sus
+    <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="9">
+     .
     </p>
 
     <h3>Product Backlog</h3>
-    
     <p>
-    El Product Backlog es una lista emergente y ordenada de lo que se necesita para mejorar el producto. Es
-    la única fuente del trabajo realizado por el Scrum Team.
+    El Product Backlog es una 
+    <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="9">
+      emergente y 
+    <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="9">
+      de lo que se 
+    <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="9">
+      para 
+    <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="9">
+      el producto. Es la única 
+    <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="9">
+      del trabajo 
+    <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="9">
+      por el 
+    <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="9">
+    .
     </p>
-  
     <p>
-    Los elementos del Product Backlog que el Scrum Team puede dar por Terminados dentro de un Sprint se
-    consideran preparados para ser seleccionados en un evento de Sprint Planning. Suelen adquirir este
-    grado de transparencia tras las actividades de refinamiento. El refinamiento del Product Backlog es el
-    acto de dividir y definir aún más los elementos del Product Backlog en elementos más pequeños y
-    precisos. Esta es una actividad continua para agregar detalles, como una descripción, orden y tamaño.
-    Los atributos suelen variar según el ámbito del trabajo.
-  </p>
-  
+    Los elementos del Product Backlog que el Scrum Team puede dar por 
+    <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="9">
+     dentro de un Sprint se consideran 
+    <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="9">
+      para ser 
+    <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="9">
+      en un
+    <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="9">
+      de 
+    <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="9">
+    . Suelen adquirir este
+    grado de 
+    <input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="9">
+      tras las actividades de 
+    <input type="text" name="respuesta_38" value="<?php echo $respuesta_38; ?>" size="9">
+     . El refinamiento del Product Backlog es el acto de 
+    <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="9">
+      y definir aún más los 
+    <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="9">
+      del Product Backlog en elementos más 
+    <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="9">
+      y
+    precisos. Esta es una actividad 
+    <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="9">
+      para agregar 
+    <input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="9">
+     , como una 
+    <input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>" size="9">
+     , orden y tamaño.
+    Los 
+    <input type="text" name="respuesta_45" value="<?php echo $respuesta_45; ?>" size="9">
+      suelen variar según el ámbito del trabajo.
+    </p>
     <p>
-    Los Developers que realizarán el trabajo son responsables del dimensionamiento. El Product Owner
-    puede influir en los Developers ayudándolos a entender y seleccionar sus mejores alternativas.
+    Los 
+    <input type="text" name="respuesta_46" value="<?php echo $respuesta_46; ?>" size="9">
+      que realizarán el trabajo son responsables del 
+    <input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="9">
+     . El 
+    <input type="text" name="respuesta_48" value="<?php echo $respuesta_48; ?>" size="9">
+      puede influir en los 
+    <input type="text" name="respuesta_49" value="<?php echo $respuesta_49; ?>" size="9">
+      ayudándolos a entender y 
+    <input type="text" name="respuesta_50" value="<?php echo $respuesta_50; ?>" size="9">
+      sus mejores alternativas.
     </p>
 
     <h4>Compromiso: Objetivo del Producto</h4>
     <p>
-    El Objetivo del Producto describe un estado futuro del producto que puede servir como un objetivo para
-    que el Scrum Team planifique. El Objetivo del Producto está en el Product Backlog. El resto del Product
-    Backlog emerge para definir "qué" cumplirá con el Objetivo del Producto.
+    El Objetivo del Producto 
+    <input type="text" name="respuesta_51" value="<?php echo $respuesta_51; ?>" size="9">
+      un estado 
+    <input type="text" name="respuesta_52" value="<?php echo $respuesta_52; ?>" size="9">
+      del producto que puede servir como un 
+    <input type="text" name="respuesta_53" value="<?php echo $respuesta_53; ?>" size="9">
+      para que el 
+    <input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>" size="9">
+      planifique. El Objetivo del Producto está en el 
+    <input type="text" name="respuesta_55" value="<?php echo $respuesta_55; ?>" size="9">
+     . El resto del Product Backlog emerge para 
+    <input type="text" name="respuesta_56" value="<?php echo $respuesta_56; ?>" size="9">
+      "
+    <input type="text" name="respuesta_57" value="<?php echo $respuesta_57; ?>" size="9">
+    " cumplirá con el Objetivo del Producto.
     </p>
     <p>
-    Un producto es un vehículo para entregar valor. Tiene un límite claro, personas interesadas
-    conocidas, usuarios o clientes bien definidos. Un producto puede ser un servicio, un producto
-    físico o algo más abstracto.
+    Un producto es un 
+    <input type="text" name="respuesta_58" value="<?php echo $respuesta_58; ?>" size="9">
+      para 
+    <input type="text" name="respuesta_59" value="<?php echo $respuesta_59; ?>" size="9">
+      valor. Tiene un 
+    <input type="text" name="respuesta_60" value="<?php echo $respuesta_60; ?>" size="9">
+      claro, personas 
+    <input type="text" name="respuesta_61" value="<?php echo $respuesta_61; ?>" size="9">
+      conocidas, 
+    <input type="text" name="respuesta_62" value="<?php echo $respuesta_62; ?>" size="9">
+      o 
+    <input type="text" name="respuesta_63" value="<?php echo $respuesta_63; ?>" size="9">
+      bien definidos. 
+    Un producto puede ser un 
+    <input type="text" name="respuesta_64" value="<?php echo $respuesta_64; ?>" size="9">
+     , un producto 
+    <input type="text" name="respuesta_65" value="<?php echo $respuesta_65; ?>" size="9">
+      o algo más abstracto.
     </p>
     <p>
-    El Objetivo del Producto es el objetivo a largo plazo del Scrum Team. Ellos deben cumplir (o abandonar)
+    El Objetivo del Producto es el objetivo a 
+    <input type="text" name="respuesta_66" value="<?php echo $respuesta_66; ?>" size="9"> 
+    del Scrum Team. Ellos deben 
+    <input type="text" name="respuesta_67" value="<?php echo $respuesta_67; ?>" size="9">
+     (o 
+    <input type="text" name="respuesta_68" value="<?php echo $respuesta_68; ?>" size="9">
+     )
     un objetivo antes de asumir el siguiente.
     </p>
 
@@ -1693,29 +2126,87 @@ function ocultarMensaje4() {
 
    <h2>Sprint Backlog</h2>
   <p>
-    El Sprint Backlog se compone del Objetivo del Sprint (por qué), el conjunto de elementos del Product
-    Backlog seleccionados para el Sprint (qué), así como un plan de acción para entregar el Increment
-    (cómo).
+    El Sprint Backlog se compone del 
+    <input type="text" name="respuesta_69" value="<?php echo $respuesta_69; ?>" size="9">
+     (
+    <input type="text" name="respuesta_70" value="<?php echo $respuesta_70; ?>" size="9">    
+    ), el conjunto de elementos del 
+    <input type="text" name="respuesta_71" value="<?php echo $respuesta_71; ?>" size="9">
+     seleccionados para el Sprint (
+    <input type="text" name="respuesta_72" value="<?php echo $respuesta_72; ?>" size="9">    
+    ), así como un 
+    <input type="text" name="respuesta_73" value="<?php echo $respuesta_73; ?>" size="9">
+     de acción para 
+    <input type="text" name="respuesta_74" value="<?php echo $respuesta_74; ?>" size="9">
+     el 
+    <input type="text" name="respuesta_75" value="<?php echo $respuesta_75; ?>" size="9">
+    (
+    <input type="text" name="respuesta_76" value="<?php echo $respuesta_76; ?>" size="9">
+    ).
   </p>
   <p>
-    El Sprint Backlog es un plan realizado por y para los Developers. Es una imagen muy visible y en tiempo
-    real del trabajo que los Developers planean realizar durante el Sprint para lograr el Objetivo del Sprint.
-    En consecuencia, el Sprint Backlog se actualiza a lo largo del Sprint a medida que se aprende más. Debe
-    tener suficientes detalles para que puedan inspeccionar su progreso en la Daily Scrum.
+    El Sprint Backlog es un 
+    <input type="text" name="respuesta_77" value="<?php echo $respuesta_77; ?>" size="9">
+      realizado 
+    <input type="text" name="respuesta_78" value="<?php echo $respuesta_78; ?>" size="9">
+      y 
+    <input type="text" name="respuesta_79" value="<?php echo $respuesta_79; ?>" size="9">
+      los 
+    <input type="text" name="respuesta_80" value="<?php echo $respuesta_80; ?>" size="9">
+     . Es una imagen muy visible y en tiempo
+    real del 
+    <input type="text" name="respuesta_81" value="<?php echo $respuesta_81; ?>" size="9">
+      que los Developers 
+    <input type="text" name="respuesta_82" value="<?php echo $respuesta_82; ?>" size="9">
+      realizar durante el 
+    <input type="text" name="respuesta_83" value="<?php echo $respuesta_83; ?>" size="9">
+      para lograr el 
+    <input type="text" name="respuesta_84" value="<?php echo $respuesta_84; ?>" size="9">
+    .
+    En consecuencia, el Sprint Backlog se 
+    <input type="text" name="respuesta_85" value="<?php echo $respuesta_85; ?>" size="9">
+      a lo largo del Sprint a medida que se 
+    <input type="text" name="respuesta_86" value="<?php echo $respuesta_86; ?>" size="9">
+      más. Debe
+    tener suficientes detalles para que puedan 
+    <input type="text" name="respuesta_87" value="<?php echo $respuesta_87; ?>" size="9">
+      su progreso en la 
+    <input type="text" name="respuesta_88" value="<?php echo $respuesta_88; ?>" size="9">
+    .
   </p>
 
   <h4>Compromiso: Objetivo del Sprint</h4>
   <p>
-    El Objetivo del Sprint es el único propósito del Sprint. Si bien el Objetivo del Sprint es un compromiso de
-    los Developers, proporciona flexibilidad en términos del trabajo exacto necesario para lograrlo. El
-    Objetivo del Sprint también crea coherencia y enfoque, lo que alienta al Scrum Team a trabajar en
+    El Objetivo del Sprint es el único 
+    <input type="text" name="respuesta_89" value="<?php echo $respuesta_89; ?>" size="9">
+      del Sprint. Si bien el Objetivo del Sprint es un compromiso de los 
+    <input type="text" name="respuesta_90" value="<?php echo $respuesta_90; ?>" size="9">
+     , proporciona 
+    <input type="text" name="respuesta_91" value="<?php echo $respuesta_91; ?>" size="9">
+      en términos del trabajo exacto necesario para 
+    <input type="text" name="respuesta_92" value="<?php echo $respuesta_92; ?>" size="9">
+     . El Objetivo del Sprint también crea coherencia y enfoque, lo que alienta al 
+    <input type="text" name="respuesta_93" value="<?php echo $respuesta_93; ?>" size="9">
+     a trabajar en
     conjunto en lugar de en iniciativas separadas.
   </p>
   <p>
-    El Objetivo del Sprint se crea durante el evento Sprint Planning y se agrega al Sprint Backlog. Mientras
-    los Developers trabajan durante el Sprint, tienen en mente el Objetivo del Sprint. Si el trabajo resulta ser
-    diferente de lo que esperaban, colaboran con el Product Owner para negociar el alcance del Sprint
-    Backlog dentro del Sprint sin afectar el Objetivo del Sprint.
+    El Objetivo del Sprint se crea durante el evento 
+    <input type="text" name="respuesta_94" value="<?php echo $respuesta_94; ?>" size="9">
+     y se agrega al 
+    <input type="text" name="respuesta_95" value="<?php echo $respuesta_95; ?>" size="9">
+    . Mientras
+    los Developers trabajan durante el Sprint, tienen en mente el 
+    <input type="text" name="respuesta_96" value="<?php echo $respuesta_96; ?>" size="9">
+    . Si el trabajo resulta ser
+    <input type="text" name="respuesta_97" value="<?php echo $respuesta_97; ?>" size="9">
+      de lo que esperaban, colaboran con el 
+    <input type="text" name="respuesta_98" value="<?php echo $respuesta_98; ?>" size="9">
+      para negociar el 
+    <input type="text" name="respuesta_99" value="<?php echo $respuesta_99; ?>" size="9">
+      del 
+    <input type="text" name="respuesta_100" value="<?php echo $respuesta_100; ?>" size="9">
+     dentro del Sprint sin afectar el Objetivo del Sprint.
   </p>
 
   <hr>
@@ -1729,63 +2220,165 @@ function ocultarMensaje4() {
     <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
     <h2>Increment</h2>
     <p>
-    Un Increment es un peldaño concreto hacia el Objetivo del Producto. Cada Increment se suma a todos
-    los Increments anteriores y se verifica minuciosamente, lo que garantiza que todos los Increments
-    funcionen juntos. Para proporcionar valor, el Increment debe ser utilizable.
+    Un Increment es un 
+    <input type="text" name="respuesta_101" value="<?php echo $respuesta_101; ?>" size="9">
+     concreto hacia el 
+    <input type="text" name="respuesta_102" value="<?php echo $respuesta_102; ?>" size="9">
+     . Cada Increment se 
+    <input type="text" name="respuesta_103" value="<?php echo $respuesta_103; ?>" size="9">
+      a todos los Increments 
+    <input type="text" name="respuesta_104" value="<?php echo $respuesta_104; ?>" size="9">
+      y se 
+    <input type="text" name="respuesta_105" value="<?php echo $respuesta_105; ?>" size="9">
+      minuciosamente, lo que garantiza que todos los Increments
+    <input type="text" name="respuesta_106" value="<?php echo $respuesta_106; ?>" size="9">
+      juntos. Para proporcionar valor, el Increment debe ser 
+    <input type="text" name="respuesta_107" value="<?php echo $respuesta_107; ?>" size="9">
+     .
     </p>
     <p>
-    Se pueden crear múltiples Increments dentro de un Sprint. La suma de los Increments se presenta en la
-    Sprint Review apoyando así el empirismo. Sin embargo, se puede entregar un Increment a los
-    interesados antes del final del Sprint. La Sprint Review nunca debe considerarse una puerta para liberar
-    valor.
+    Se pueden 
+    <input type="text" name="respuesta_108" value="<?php echo $respuesta_108; ?>" size="9">
+      múltiples Increments 
+    <input type="text" name="respuesta_109" value="<?php echo $respuesta_109; ?>" size="9">v
+      de un 
+    <input type="text" name="respuesta_110" value="<?php echo $respuesta_110; ?>" size="9">
+     . La suma de los Increments se presenta en la
+    <input type="text" name="respuesta_111" value="<?php echo $respuesta_111; ?>" size="9">
+      apoyando así el 
+    <input type="text" name="respuesta_112" value="<?php echo $respuesta_112; ?>" size="9">
+     . Sin embargo, se puede entregar un Increment a los
+    <input type="text" name="respuesta_113" value="<?php echo $respuesta_113; ?>" size="9">
+      antes del 
+    <input type="text" name="respuesta_114" value="<?php echo $respuesta_114; ?>" size="9">
+      del Sprint. La Sprint Review 
+    <input type="text" name="respuesta_115" value="<?php echo $respuesta_115; ?>" size="9">
+      debe considerarse una puerta para liberar valor.
     </p>
     <p>
-    El trabajo no puede considerarse parte de un Increment a menos que cumpla con la Definición de
-    Terminado.
+    El 
+    <input type="text" name="respuesta_116" value="<?php echo $respuesta_116; ?>" size="9">
+      no puede considerarse parte de un Increment 
+    <input type="text" name="respuesta_117" value="<?php echo $respuesta_117; ?>" size="9"> 
+    cumpla con la 
+    <input type="text" name="respuesta_118" value="<?php echo $respuesta_118; ?>" size="16">
+    .
     </p>
 
     <h4>Compromiso: Definición de Terminado</h4>
     <p>
-    La Definición de Terminado es una descripción formal del estado del Increment cuando cumple con las
-    medidas de calidad requeridas para el producto.
+    La Definición de Terminado es una 
+    <input type="text" name="respuesta_119" value="<?php echo $respuesta_119; ?>" size="9">
+     formal del 
+    <input type="text" name="respuesta_120" value="<?php echo $respuesta_120; ?>" size="9">
+      del 
+    <input type="text" name="respuesta_121" value="<?php echo $respuesta_121; ?>" size="9">
+      cuando cumple con las
+    <input type="text" name="respuesta_122" value="<?php echo $respuesta_122; ?>" size="9">
+      de 
+    <input type="text" name="respuesta_123" value="<?php echo $respuesta_123; ?>" size="9">
+      requeridas para el 
+    <input type="text" name="respuesta_124" value="<?php echo $respuesta_124; ?>" size="9">
+     .
     </p>
     <p>
-    En el momento en que un elemento del Product Backlog cumple con la Definición de Terminado, nace
-    un Increment.
+    En el momento en que un elemento del 
+    <input type="text" name="respuesta_125" value="<?php echo $respuesta_125; ?>" size="9">
+     cumple con la 
+    <input type="text" name="respuesta_126" value="<?php echo $respuesta_126; ?>" size="9">
+     , nace un Increment.
     </p>
     <p>
-    La Definición de Terminado crea transparencia al brindar a todos un entendimiento compartido de qué
-    trabajo se completó como parte del Increment. Si un elemento del Product Backlog no cumple con la
-    Definición de Terminado, no se puede publicar ni presentar en la Sprint Review. En su lugar, vuelve al
+    La Definición de Terminado crea 
+    <input type="text" name="respuesta_127" value="<?php echo $respuesta_127; ?>" size="9">
+      al brindar a 
+    <input type="text" name="respuesta_128" value="<?php echo $respuesta_128; ?>" size="9">
+      un 
+    <input type="text" name="respuesta_129" value="<?php echo $respuesta_129; ?>" size="9">
+      compartido de qué
+    <input type="text" name="respuesta_130" value="<?php echo $respuesta_130; ?>" size="9">
+      se completó como parte del 
+    <input type="text" name="respuesta_131" value="<?php echo $respuesta_131; ?>" size="9">
+     . Si un elemento del 
+    <input type="text" name="respuesta_132" value="<?php echo $respuesta_132; ?>" size="9">
+     no cumple con la
+    <input type="text" name="respuesta_133" value="<?php echo $respuesta_133; ?>" size="9">
+     , no se puede publicar ni presentar en la 
+    <input type="text" name="respuesta_134" value="<?php echo $respuesta_134; ?>" size="9">
+    . En su lugar, vuelve al
     Product Backlog para su consideración futura.
     </p>
     <p>
-    Si la Definición de Terminado para un Increment es parte de los estándares de la organización, todos los
-    Scrum Teams deben seguirla como mínimo. Si no es un estándar organizacional, el Scrum Team debe
-    crear una Definición de Terminado apropiada para el producto.
+    Si la Definición de Terminado para un 
+    <input type="text" name="respuesta_135" value="<?php echo $respuesta_135; ?>" size="9">
+      es parte de los 
+    <input type="text" name="respuesta_136" value="<?php echo $respuesta_136; ?>" size="9">
+      de la organización, todos los
+    <input type="text" name="respuesta_137" value="<?php echo $respuesta_137; ?>" size="9">
+      deben seguirla como mínimo. Si no es un estándar organizacional, el Scrum Team debe crear una 
+    <input type="text" name="respuesta_138" value="<?php echo $respuesta_138; ?>" size="9">
+      apropiada para el producto.
     </p>
     <p>
-    Los Developers deben adherirse a la Definición de Terminado. Si hay varios Scrum Teams trabajando
-    juntos en un producto, deben definir y cumplir mutuamente la misma Definición de Terminado.
+    Los 
+    <input type="text" name="respuesta_139" value="<?php echo $respuesta_139; ?>" size="9">
+      deben 
+    <input type="text" name="respuesta_140" value="<?php echo $respuesta_140; ?>" size="9">
+      a la Definición de Terminado. Si hay varios Scrum Teams trabajando
+    juntos en un producto, deben definir y cumplir mutuamente la
+    <input type="text" name="respuesta_141" value="<?php echo $respuesta_141; ?>" size="9">
+      Definición de Terminado.
     </p>
 
    <h2>Nota final</h2>
     <p>
     Scrum es gratuito y se ofrece en esta Guía. El marco de trabajo Scrum, como se describe aquí, es
-    inmutable. Si bien es posible implementar solo partes de Scrum, el resultado no es Scrum. Scrum existe
-    solo en su totalidad y funciona bien como un contenedor para otras técnicas, metodologías y prácticas.
+    <input type="text" name="respuesta_142" value="<?php echo $respuesta_142; ?>" size="9">
+     . Si bien es posible implementar solo 
+    <input type="text" name="respuesta_143" value="<?php echo $respuesta_143; ?>" size="9">
+      de Scrum, el resultado 
+    <input type="text" name="respuesta_144" value="<?php echo $respuesta_144; ?>" size="9">
+     Scrum. Scrum existe
+    solo en su 
+    <input type="text" name="respuesta_145" value="<?php echo $respuesta_145; ?>" size="9">
+      y funciona bien como un 
+    <input type="text" name="respuesta_146" value="<?php echo $respuesta_146; ?>" size="9">
+      para otras 
+    <input type="text" name="respuesta_147" value="<?php echo $respuesta_147; ?>" size="9">
+     , 
+    <input type="text" name="respuesta_148" value="<?php echo $respuesta_148; ?>" size="9">
+      y 
+    <input type="text" name="respuesta_149" value="<?php echo $respuesta_149; ?>" size="9">
+     .
     </p>
 
     <h2>Historia de la Guía de Scrum</h2>
     <p>
-    Ken Schwaber y Jeff Sutherland copresentaron Scrum por primera vez en la Conferencia OOPSLA en
-    1995. Básicamente, documentó el aprendizaje que Ken y Jeff adquirieron en los años anteriores y
+    <input type="text" name="respuesta_150" value="<?php echo $respuesta_150; ?>" size="9">
+      y 
+    <input type="text" name="respuesta_151" value="<?php echo $respuesta_151; ?>" size="9">
+     copresentaron Scrum por primera vez en la Conferencia 
+    <input type="text" name="respuesta_152" value="<?php echo $respuesta_152; ?>" size="9">
+      en
+    <input type="text" name="respuesta_153" value="<?php echo $respuesta_153; ?>" size="9">
+     . Básicamente, documentó el aprendizaje que 
+    <input type="text" name="respuesta_154" value="<?php echo $respuesta_154; ?>" size="9">
+     adquirieron en los años anteriores y
     publicaron la primera definición formal de Scrum.
     </p>
     <p>
     La Guía de Scrum documenta Scrum como se ha desarrollado, evolucionado y sostenido durante más de
-    30 años por Jeff Sutherland y Ken Schwaber. Otras fuentes proporcionan patrones, procesos y enfoques
-    que complementan el marco de trabajo Scrum. Estos pueden aumentar la productividad, el valor, la
+    <input type="text" name="respuesta_155" value="<?php echo $respuesta_155; ?>" size="9">
+     años por 
+    <input type="text"  value="<?php echo $respuesta_150; ?>" size="9" readonly>
+      y 
+    <input type="text"   value="<?php echo $respuesta_151; ?>" size="9" readonly>
+     . Otras fuentes proporcionan 
+    <input type="text" name="respuesta_156" value="<?php echo $respuesta_156; ?>" size="9">
+     , procesos y enfoques
+    que complementan el marco de trabajo Scrum. Estos pueden aumentar la 
+    <input type="text" name="respuesta_157" value="<?php echo $respuesta_157; ?>" size="9">
+     , el valor, la
     creatividad y la satisfacción con los resultados.
     </p>
     <p>
@@ -1793,8 +2386,6 @@ function ocultarMensaje4() {
     probó y comprobó, reconocemos a Individual Inc., Newspage, Fidelity Investments e IDX (ahora GE
     Medical).
     </p>
-
-  <hr>
     </form>
 </div>
 

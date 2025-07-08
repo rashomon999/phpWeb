@@ -1750,110 +1750,113 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
     <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-      <p>La Sprint Planning aborda los siguientes temas:</p>
+    <p>La Sprint Planning aborda los siguientes temas:</p>
 
-  <h3>Tema uno: ¿Por qué es valioso este Sprint?</h3>
-  <p>
+    <h3>Tema uno: ¿Por qué es valioso este Sprint?</h3>
+    <p>
     El Product Owner propone cómo el producto podría Incrementar su valor y utilidad en el Sprint actual.
     Luego, todo el Scrum Team colabora para definir un Objetivo del Sprint que comunica por qué el Sprint
     es valioso para los interesados. El Objetivo del Sprint debe completarse antes de que termine la Sprint
     Planning.
-  </p>
+    </p>
 
-  <h3>Tema dos: ¿Qué se puede hacer en este Sprint?</h3>
-  <p>
+    <h3>Tema dos: ¿Qué se puede hacer en este Sprint?</h3>
+    <p>
     A través de una conversación con el Product Owner, los Developers seleccionan elementos del Product
     Backlog para incluirlos en el Sprint actual. El Scrum Team puede refinar estos elementos durante este
     proceso, lo que aumenta la comprensión y la confianza.
-  </p>
-  <p> 
+    </p>
+  
+    <p> 
     Seleccionar cuánto se puede completar dentro de un Sprint puede ser un desafío. Sin embargo, cuanto
     más sepan los Developers sobre su desempeño pasado, su capacidad actual y su Definición de
     Terminado, más confiados estarán en sus pronósticos para el Sprint.
-  </p>
+    </p>
 
-  <h3>Tema tres: ¿Cómo se realizará el trabajo elegido?</h3>
-  <p>
+    <h3>Tema tres: ¿Cómo se realizará el trabajo elegido?</h3>
+    <p>
     Para cada elemento del Product Backlog seleccionado, los Developers planifican el trabajo necesario
     para crear un Increment que cumpla con la Definición de Terminado. A menudo, esto se hace
     descomponiendo los elementos del Product Backlog en elementos de trabajo más pequeños de un día o
     menos. La forma de hacerlo queda a criterio exclusivo de los Developers. Nadie más les dice cómo
     convertir los elementos del Product Backlog en Increments de valor.
-  </p>
+    </p>
 
-  <p>
+    <p>
     El Objetivo del Sprint, los elementos del Product Backlog seleccionados para el Sprint, más el plan para
     entregarlos se denominan juntos Sprint Backlog.
-  </p>
-  <p>
+    </p>
+  
+    <p>
     La Sprint Planning tiene un límite de tiempo de máximo ocho horas para un Sprint de un mes. Para
     Sprints más cortos, el evento suele ser de menor duración.
-  </p>
+    </p>
 
 
     <h2>Daily Scrum</h2>
-  <p>
+    <p>
     El propósito de la Daily Scrum es inspeccionar el progreso hacia el Objetivo del Sprint y adaptar el Sprint
     Backlog según sea necesario, ajustando el trabajo planificado entrante.
-  </p>
-  <p>
+    </p>
+    <p>
     La Daily Scrum es un evento de 15 minutos para los Developers del Scrum Team. Para reducir la
     complejidad, se lleva a cabo a la misma hora y en el mismo lugar todos los días hábiles del Sprint. Si el
     Product Owner o Scrum Master están trabajando activamente en elementos del Sprint Backlog,
     participan como Developers.
-  </p>
-  <p>
+    </p>
+    <p>
     Los Developers pueden seleccionar la estructura y las técnicas que deseen, siempre que su Daily Scrum
     se centre en el progreso hacia el Objetivo del Sprint y produzca un plan viable para el siguiente día de
     trabajo. Esto crea enfoque y mejora la autogestión.
-  </p>
-  <p>
+    </p>
+    <p>
     Las Daily Scrums mejoran la comunicación, identifican impedimentos, promueven la toma rápida de
     decisiones y, en consecuencia, eliminan la necesidad de otras reuniones.
-  </p>
-  <p>
+    </p>
+    <p>
     La Daily Scrum no es el único momento en el que los Developers pueden ajustar su plan. A menudo se
     reúnen durante el día para discusiones más detalladas sobre cómo adaptar o volver a planificar el resto
     del trabajo del Sprint.
-  </p>
+    </p>
 
-  <h2>Sprint Review</h2>
-  <p>
+    <h2>Sprint Review</h2>
+    <p>
     El propósito de la Sprint Review es inspeccionar el resultado del Sprint y determinar futuras
     adaptaciones. El Scrum Team presenta los resultados de su trabajo a los interesados clave y se discute el
     progreso hacia el Objetivo del Producto.
-  </p>
-  <p>
+    </p>
+    <p>
     Durante el evento, el Scrum Team y los interesados revisan lo que se logró en el Sprint y lo que ha
     cambiado en su entorno. Con base en esta información, los asistentes colaboran sobre qué hacer a
     continuación. El Product Backlog también se puede ajustar para satisfacer nuevas oportunidades. La
     Sprint Review es una sesión de trabajo y el Scrum Team debe evitar limitarla a una presentación.
-  </p>
-  <p>
+    </p>
+    <p>
     La Sprint Review es el penúltimo evento del Sprint y tiene un límite de tiempo de máximo cuatro horas
     para un Sprint de un mes. Para Sprints más cortos, el evento suele ser de menor duración.
-  </p>
+    </p>
 
-  <h2>Sprint Retrospective</h2>
-  <p>
+    <h2>Sprint Retrospective</h2>
+    <p>
     El propósito de la Sprint Retrospective es planificar formas de aumentar la calidad y la efectividad.
-  </p>
-  <p>
+    </p>
+    
+    <p>
     El Scrum Team inspecciona cómo fue el último Sprint con respecto a las personas, las interacciones, los
     procesos, las herramientas y su Definición de Terminado. Los elementos inspeccionados suelen variar
     según el ámbito del trabajo. Se identifican los supuestos que los llevaron por mal camino y se exploran
     sus orígenes. El Scrum Team analiza qué salió bien durante el Sprint, qué problemas encontró y cómo se
     resolvieron (o no) esos problemas.
-  </p>
-  <p>
+    </p>
+    <p>
     El Scrum Team identifica los cambios más útiles para mejorar su efectividad. Las mejoras más
     impactantes se abordan lo antes posible. Incluso se pueden agregar al Sprint Backlog para el próximo
     Sprint.
-  </p>
-  <p>
+    </p>
+    <p>
     La Sprint Retrospective concluye el Sprint. Tiene un tiempo limitado a máximo tres horas para un Sprint
     de un mes. Para Sprints más cortos, el evento suele ser de menor duración.
-  </p>
+    </p>
 
 
   

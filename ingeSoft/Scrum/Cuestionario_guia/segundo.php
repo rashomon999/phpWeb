@@ -1,214 +1,426 @@
 <?php
  
- 
-$respuesta_1 = ''; $respuesta_2 = ''; $respuesta_3 = ''; $respuesta_3_2 = ''; $respuesta_4 = ''; $respuesta_5 = ''; 
-$respuesta_6 = ''; $respuesta_7 = ''; $respuesta_8 = ''; $respuesta_9 = '';  $respuesta_10 = '';
-$respuesta_11 = ''; $respuesta_12 = ''; $respuesta_13 = ''; $respuesta_14 = ''; $respuesta_15 = '';
-$respuesta_16 = ''; $respuesta_17 = ''; $respuesta_18 = ''; $respuesta_19 = ''; $respuesta_20 = '';
-$respuesta_21 = ''; $respuesta_22 = '';  $respuesta_23 = '';  $respuesta_24 = '';
-$respuesta_25 = ''; $respuesta_26 = ''; $respuesta_27 = ''; $respuesta_28 = ''; $respuesta_29 = '';
-$respuesta_30 = ''; $respuesta_31 = ''; $respuesta_32 = ''; $respuesta_33 = ''; $respuesta_34 = ''; $respuesta_35 = ''; $respuesta_36 = ''; $respuesta_37 = ''; $respuesta_38 = '';
-$respuesta_39 = ''; $respuesta_40 = ''; $respuesta_41 = ''; $respuesta_42 = ''; $respuesta_43 = '';
-$respuesta_44 = ''; $respuesta_45 = ''; $respuesta_46 = ''; $respuesta_47 = ''; $respuesta_48 = '';
-$respuesta_49 = ''; $respuesta_50 = ''; $respuesta_51 = ''; $respuesta_52 = ''; $respuesta_53 = '';
-$respuesta_54 = ''; $respuesta_55 = ''; $respuesta_56 = '';$respuesta_57 = ''; $respuesta_58 = ''; $respuesta_59 = ''; $respuesta_60 = '';
-$respuesta_61 = '';$respuesta_62 = '';$respuesta_63 = '';$respuesta_64 = '';$respuesta_65 = '';$respuesta_66 = '';$respuesta_67 = '';$respuesta_68 = '';
-$respuesta_69 = '';$respuesta_70 = '';$respuesta_71 = '';$respuesta_72 = '';$respuesta_73 = '';$respuesta_74 = '';$respuesta_75 = '';$respuesta_76 = '';
-$respuesta_77 = '';$respuesta_78 = '';$respuesta_79 = '';$respuesta_80 = '';$respuesta_81 = '';$respuesta_82 = '';$respuesta_83 = '';$respuesta_84 = '';
-$respuesta_85 = '';$respuesta_86 = '';$respuesta_87 = '';$respuesta_88 = ''; $respuesta_89 = '';
-$respuesta_90 = ''; $respuesta_91 = '';$respuesta_92 = '';$respuesta_93 = '';$respuesta_94 = '';$respuesta_95 = '';$respuesta_96 = '';$respuesta_97 = '';$respuesta_98 = '';
-$respuesta_99 = '';$respuesta_100 = '';$respuesta_101 = '';$respuesta_102 = '';$respuesta_103 = '';$respuesta_104 = '';$respuesta_105 = '';
-$respuesta_106 = '';$respuesta_107 = '';$respuesta_108 = '';$respuesta_109 = '';$respuesta_110 = '';
+for ($i = 1; $i <= 310; $i++) {
+    ${"respuesta_" . $i} = '';
+}
 
-/////
- // Agrega estas variables junto con las demás (antes del if $_POST)
-$respuesta_111 = ''; $respuesta_112 = ''; $respuesta_113 = ''; $respuesta_114 = ''; $respuesta_115 = ''; 
-$respuesta_116 = ''; $respuesta_117 = ''; $respuesta_118 = ''; $respuesta_119 = ''; $respuesta_120 = ''; 
-$respuesta_121 = ''; $respuesta_122 = '';
 
-$verificar_111 = ''; $verificar_112 = ''; $verificar_113 = ''; $verificar_114 = ''; $verificar_115 = ''; 
-$verificar_116 = ''; $verificar_117 = ''; $verificar_118 = ''; $verificar_119 = ''; $verificar_120 = ''; 
-$verificar_121 = ''; $verificar_122 = '';
-////
-
-$verificar_1 = ''; $verificar_2 = ''; $verificar_3 = '';  $verificar_3_2 = ''; $verificar_4 = ''; $verificar_5 = ''; 
-$verificar_6 = ''; $verificar_7 = '';  $verificar_8 = ''; $verificar_9 = ''; $verificar_10 = ''; 
-$verificar_11 = ''; $verificar_12 = ''; $verificar_13 = ''; $verificar_14 = ''; $verificar_15 = ''; 
-$verificar_16 = '';  $verificar_17 = ''; $verificar_18 = ''; $verificar_19 = ''; $verificar_20 = '';  
-$verificar_21 = '';  $verificar_22 = '';  $verificar_23 = '';   $verificar_24 = '';   $verificar_25 = '';  
-$verificar_26 = '';  $verificar_27= ''; $verificar_28= '';  $verificar_29= '';  $verificar_30 = ''; 
-$verificar_31 = ''; $verificar_32 = ''; $verificar_33 = ''; 
-$verificar_34 = ''; $verificar_35 = ''; $verificar_36 = ''; $verificar_37 = ''; $verificar_38 = '';
-$verificar_39 = ''; $verificar_40 = ''; $verificar_41 = ''; $verificar_42 = ''; $verificar_43 = '';
-$verificar_44 = ''; $verificar_45 = ''; $verificar_46 = ''; $verificar_47 = ''; $verificar_48 = '';
-$verificar_49 = ''; $verificar_50 = ''; $verificar_51 = ''; $verificar_52 = ''; $verificar_53 = '';
-$verificar_54 = ''; $verificar_55 = '';
-$verificar_56 = ''; $verificar_57 = ''; $verificar_58 = ''; $verificar_59 = ''; $verificar_60 = ''; 
-$verificar_61 = ''; $verificar_62 = ''; $verificar_63 = ''; $verificar_64 = ''; $verificar_65 = '';
-$verificar_66 = ''; $verificar_67 = ''; $verificar_68 = ''; $verificar_69 = ''; $verificar_70 = '';
-$verificar_71 = ''; $verificar_72 = ''; $verificar_73 = ''; $verificar_74 = ''; $verificar_75 = '';
-$verificar_76 = ''; $verificar_77 = ''; $verificar_78 = ''; $verificar_79 = ''; $verificar_80 = '';
-$verificar_81 = ''; $verificar_82 = ''; $verificar_83 = ''; $verificar_84 = ''; $verificar_85 = '';
-$verificar_86 = ''; $verificar_87 = ''; $verificar_88 = '';$verificar_89 = ''; $verificar_90 = '';$verificar_91 = '';
-$verificar_92 = '';$verificar_93 = '';$verificar_94 = ''; $verificar_95 = '';
-$verificar_96 = ''; $verificar_97 = ''; $verificar_98 = ''; $verificar_99 = ''; $verificar_100 = '';
-$verificar_101 = '';$verificar_102 = '';$verificar_103 = '';$verificar_104 = '';$verificar_105 = '';
-$verificar_106 = '';$verificar_107 = '';$verificar_108 = '';$verificar_109 = '';$verificar_110 = '';
      
+for ($i = 1; $i <= 310; $i++) {
+    ${"verificar_" . $i} = '';
+}
 
 $mostrar_solucion = '';
 if ($_POST) {
+
+
     $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
-    
+
     if ($mostrar_solucion === 'mostrar_solucion') {
-        // Establecer todas las respuestas correctas para las tablas de multiplicar
-        
-        // Tabla del 12
-        $respuesta_111 = '24'; 
-        $respuesta_112 = '36';
-        $respuesta_113 = '48';
-        $respuesta_114 = '60';
-        $respuesta_115 = '72';
-        $respuesta_116 = '84';
-        $respuesta_117 = '96';
-        $respuesta_118 = '108';
-        $respuesta_119 = '120';
-        $respuesta_120 = '132';
-        $respuesta_121 = '144';
-        
-        // Tabla del 13
-        $respuesta_1 = '26';
-        $respuesta_2 = '39';
-        $respuesta_3 = '52';
-        $respuesta_4 = '65';
-        $respuesta_5 = '78';
-        $respuesta_6 = '91';
-        $respuesta_7 = '104';
-        $respuesta_8 = '117';
-        $respuesta_9 = '130';
-        $respuesta_10 = '143';
-        $respuesta_11 = '156';
-        
-        // Tabla del 14
-        $respuesta_12 = '28';
-        $respuesta_13 = '42';
-        $respuesta_14 = '56';
-        $respuesta_15 = '70';
-        $respuesta_16 = '84';
-        $respuesta_17 = '98';
-        $respuesta_18 = '112';
-        $respuesta_19 = '126';
-        $respuesta_20 = '140';
-        $respuesta_21 = '154';
-        $respuesta_22 = '168';
-        
-        // Tabla del 15
-        $respuesta_23 = '30';
-        $respuesta_24 = '45';
-        $respuesta_25 = '60';
-        $respuesta_26 = '75';
-        $respuesta_27 = '90';
-        $respuesta_28 = '105';
-        $respuesta_29 = '120';
-        $respuesta_30 = '135';
-        $respuesta_31 = '150';
-        $respuesta_32 = '165';
-        $respuesta_33 = '180';
-        
-        // Tabla del 16
-        $respuesta_34 = '32';
-        $respuesta_35 = '48';
-        $respuesta_36 = '64';
-        $respuesta_37 = '80';
-        $respuesta_38 = '96';
-        $respuesta_39 = '112';
-        $respuesta_40 = '128';
-        $respuesta_41 = '144';
-        $respuesta_42 = '160';
-        $respuesta_43 = '176';
-        $respuesta_44 = '192';
-        
-        // Tabla del 17
-        $respuesta_45 = '34';
-        $respuesta_46 = '51';
-        $respuesta_47 = '68';
-        $respuesta_48 = '85';
-        $respuesta_49 = '102';
-        $respuesta_50 = '119';
-        $respuesta_51 = '136';
-        $respuesta_52 = '153';
-        $respuesta_53 = '170';
-        $respuesta_54 = '187';
-        $respuesta_55 = '204';
-        
-        // Tabla del 18
-        $respuesta_56 = '36';
-        $respuesta_57 = '54';
-        $respuesta_58 = '72';
-        $respuesta_59 = '90';
-        $respuesta_60 = '108';
-        $respuesta_61 = '126';
-        $respuesta_62 = '144';
-        $respuesta_63 = '162';
-        $respuesta_64 = '180';
-        $respuesta_65 = '198';
-        $respuesta_66 = '216';
-        
-        // Tabla del 19
-        $respuesta_67 = '38';
-        $respuesta_68 = '57';
-        $respuesta_69 = '76';
-        $respuesta_70 = '95';
-        $respuesta_71 = '114';
-        $respuesta_72 = '133';
-        $respuesta_73 = '152';
-        $respuesta_74 = '171';
-        $respuesta_75 = '190';
-        $respuesta_76 = '209';
-        $respuesta_77 = '228';
-        
-        // Tabla del 20
-        $respuesta_78 = '40';
-        $respuesta_79 = '60';
-        $respuesta_80 = '80';
-        $respuesta_81 = '100';
-        $respuesta_82 = '120';
-        $respuesta_83 = '140';
-        $respuesta_84 = '160';
-        $respuesta_85 = '180';
-        $respuesta_86 = '200';
-        $respuesta_87 = '220';
-        $respuesta_88 = '240';
-        
-        // Tabla del 21
-        $respuesta_89 = '42';
-        $respuesta_90 = '63';
-        $respuesta_91 = '84';
-        $respuesta_92 = '105';
-        $respuesta_93 = '126';
-        $respuesta_94 = '147';
-        $respuesta_95 = '168';
-        $respuesta_96 = '189';
-        $respuesta_97 = '210';
-        $respuesta_98 = '231';
-        $respuesta_99 = '252';
-        
-        // Tabla del 22
-        $respuesta_100 = '44';
-        $respuesta_101 = '66';
-        $respuesta_102 = '88';
-        $respuesta_103 = '110';
-        $respuesta_104 = '132'; 
-        $respuesta_105 = '154';
-        $respuesta_106 = '176';
-        $respuesta_107 = '198';
-        $respuesta_108 = '220';
-        $respuesta_109 = '242';
-        $respuesta_110 = '264';
-        
-        // Marcar todas como correctas
-    $verificar_1 = $verificar_2 = $verificar_3 = /* ... todas las variables de verificación ... */ $verificar_122 = "correcto";
-    } else {
+    // Establecer todas las respuestas correctas
+    
+    // Sección 1 (Preguntas 1-11)
+    $respuesta_1 = 'responsable';
+    $respuesta_2 = 'Scrum';
+    $respuesta_3 = 'define';
+    $respuesta_4 = 'guia de scrum';
+    $respuesta_5 = 'ayudando';
+    $respuesta_6 = 'comprender';
+    $respuesta_7 = 'teoria';
+    $respuesta_8 = 'practica';
+    $respuesta_9 = 'Scrum Team';
+    $respuesta_10 = 'organizacion';
+    $respuesta_11 = 'lograr';
+    
+    // Sección 2 (Preguntas 12-22)
+    $respuesta_12 = 'efectividad';
+    $respuesta_13 = 'Scrum Team';
+    $respuesta_14 = 'practicas';
+    $respuesta_15 = 'lideres';
+    $respuesta_16 = 'Guiar';
+    $respuesta_17 = 'autogestionados';
+    $respuesta_18 = 'multifuncionales';
+    $respuesta_19 = 'Ayudar';
+    $respuesta_20 = 'enfocarse';
+    $respuesta_21 = 'Increments';
+    $respuesta_22 = 'cumplan';
+    
+    // Sección 3 (Preguntas 23-33)
+    $respuesta_23 = 'la Definicion de Terminado';
+    $respuesta_24 = 'Procurar';
+    $respuesta_25 = 'eliminacion';
+    $respuesta_26 = 'progreso';
+    $respuesta_27 = 'Asegurarse';
+    $respuesta_28 = 'eventos';
+    $respuesta_29 = 'limites';
+    $respuesta_30 = 'tiempo';
+    $respuesta_31 = 'tecnicas';
+    $respuesta_32 = 'definicion';
+    $respuesta_33 = 'Objetivos del Producto';
+    
+    // Sección 4 (Preguntas 34-44)
+    $respuesta_34 = 'gestion';
+    $respuesta_35 = 'Product Backlog';
+    $respuesta_36 = 'Scrum Team';
+    $respuesta_37 = 'comprender';
+    $respuesta_38 = 'necesidad';
+    $respuesta_39 = 'Product Backlog';
+    $respuesta_40 = 'planificacion';
+    $respuesta_41 = 'productos';
+    $respuesta_42 = 'colaboracion';
+    $respuesta_43 = 'interesados';
+    $respuesta_44 = 'solicite';
+    
+    // Sección 5 (Preguntas 45-55)
+    $respuesta_45 = 'Liderar';
+    $respuesta_46 = 'capacitar';
+    $respuesta_47 = 'guiar';
+    $respuesta_48 = 'organizacion';
+    $respuesta_49 = 'Scrum';
+    $respuesta_50 = 'implementaciones';
+    $respuesta_51 = 'empleados';
+    $respuesta_52 = 'interesados';
+    $respuesta_53 = 'empirico';
+    $respuesta_54 = 'barreras';
+    $respuesta_55 = 'interesados';
+    
+    // Sección 6 (Preguntas 56-66)
+    $respuesta_56 = 'Scrum Teams';
+    $respuesta_57 = 'Sprint';
+    $respuesta_58 = 'contenedor';
+    $respuesta_59 = 'todos';
+    $respuesta_60 = 'oportunidad';
+    $respuesta_61 = 'inspeccionar';
+    $respuesta_62 = 'adaptar';
+    $respuesta_63 = 'artefactos';
+    $respuesta_64 = 'diseñados';
+    $respuesta_65 = 'transparencia';
+    $respuesta_66 = 'No';
+    
+    // Sección 7 (Preguntas 67-77)
+    $respuesta_67 = 'perdida';
+    $respuesta_68 = 'regularidad';
+    $respuesta_69 = 'minimizar';
+    $respuesta_70 = 'reuniones';
+    $respuesta_71 = 'mismo tiempo';
+    $respuesta_72 = 'mismo lugar';
+    $respuesta_73 = 'ideas';
+    $respuesta_74 = 'convierten';
+    $respuesta_75 = 'valor';
+    $respuesta_76 = 'eventos';
+    $respuesta_77 = 'duracion';
+    
+    // Sección 8 (Preguntas 78-88)
+    $respuesta_78 = 'un mes';
+    $respuesta_79 = 'menos';
+    $respuesta_80 = 'consistencia';
+    $respuesta_81 = 'comienza';
+    $respuesta_82 = 'conclusion';
+    $respuesta_83 = 'trabajo';
+    $respuesta_84 = 'Objetivo del Producto';
+    $respuesta_85 = 'Sprint Planning';
+    $respuesta_86 = 'Daily Scrums';
+    $respuesta_87 = 'Sprint Review';
+    $respuesta_88 = 'Sprint Retrospective';
+    
+    // Sección 9 (Preguntas 89-99)
+    $respuesta_89 = 'dentro';
+    $respuesta_90 = 'No se';
+    $respuesta_91 = 'peligro';
+    $respuesta_92 = 'Objetivo';
+    $respuesta_93 = 'Sprint';
+    $respuesta_94 = 'calidad';
+    $respuesta_95 = 'disminuye';
+    $respuesta_96 = 'Product Backlog';
+    $respuesta_97 = 'refina';
+    $respuesta_98 = 'necesario';
+    $respuesta_99 = 'alcance';
+    
+    // Sección 10 (Preguntas 100-110)
+    $respuesta_100 = 'aclarar';
+    $respuesta_101 = 'Product Owner';
+    $respuesta_102 = 'previsibilidad';
+    $respuesta_103 = 'inspeccion';
+    $respuesta_104 = 'adaptacion';
+    $respuesta_105 = 'progreso';
+    $respuesta_106 = 'Objetivo del Producto';
+    $respuesta_107 = 'mes';
+    $respuesta_108 = 'largo';
+    $respuesta_109 = 'invalido';
+    $respuesta_110 = 'complejidad';
+    
+    // Sección 11 (Preguntas 111-121)
+    $respuesta_111 = 'cortos';
+    $respuesta_112 = 'mas';
+    $respuesta_113 = 'riesgo';
+    $respuesta_114 = 'costo';
+    $respuesta_115 = 'esfuerzo';
+    $respuesta_116 = 'menor';
+    $respuesta_117 = 'costo';
+    $respuesta_118 = 'practicas';
+    $respuesta_119 = 'progreso';
+    $respuesta_120 = 'trabajo pendiente';
+    $respuesta_121 = 'burn-downs';
+    
+    // Sección 12 (Preguntas 122-132)
+    $respuesta_122 = 'trabajo completado';
+    $respuesta_123 = 'burn-ups';
+    $respuesta_124 = 'flujos acumulativos';
+    $respuesta_125 = 'cumulative flows';
+    $respuesta_126 = 'reemplazan';
+    $respuesta_127 = 'empirismo';
+    $respuesta_128 = 'desconoce';
+    $respuesta_129 = 'sucedido';
+    $respuesta_130 = 'cancelarse';
+    $respuesta_131 = 'Objetivo';
+    $respuesta_132 = 'Sprint';
+    
+    // Sección 13 (Preguntas 133-143)
+    $respuesta_133 = 'obsoleto';
+    $respuesta_134 = 'Product Owner';
+    $respuesta_135 = 'inicia';
+    $respuesta_136 = 'Sprint';
+    $respuesta_137 = 'establecer';
+    $respuesta_138 = 'trabajo';
+    $respuesta_139 = 'Scrum Team';
+    $respuesta_140 = 'resultante';
+    $respuesta_141 = 'Product Owner';
+    $respuesta_142 = 'asistentes';
+    $respuesta_143 = 'discutir';
+    
+    // Sección 14 (Preguntas 144-154)
+    $respuesta_144 = 'Product Backlog';
+    $respuesta_145 = 'Objetivo del Producto';
+    $respuesta_146 = 'Scrum Team';
+    $respuesta_147 = 'asistir';
+    $respuesta_148 = 'valioso';
+    $respuesta_149 = 'Sprint';
+    $respuesta_150 = 'Product Owner';
+    $respuesta_151 = 'producto';
+    $respuesta_152 = 'incrementar';
+    $respuesta_153 = 'valor';
+    $respuesta_154 = 'utilidad';
+    
+    // Sección 15 (Preguntas 155-165)
+    $respuesta_155 = 'Sprint actual';
+    $respuesta_156 = 'Scrum Team';
+    $respuesta_157 = 'Objetivo del Sprint';
+    $respuesta_158 = 'comunica';
+    $respuesta_159 = 'Sprint';
+    $respuesta_160 = 'valioso';
+    $respuesta_161 = 'interesados';
+    $respuesta_162 = 'Objetivo del Sprint';
+    $respuesta_163 = 'termine';
+    $respuesta_164 = 'Sprint Planning';
+    $respuesta_165 = 'conversacion';
+    
+    // Sección 16 (Preguntas 166-176)
+    $respuesta_166 = 'Product Owner';
+    $respuesta_167 = 'Developers';
+    $respuesta_168 = 'elementos';
+    $respuesta_169 = 'Product Backlog';
+    $respuesta_170 = 'incluirlos';
+    $respuesta_171 = 'Sprint actual';
+    $respuesta_172 = 'Scrum Team';
+    $respuesta_173 = 'refinar';
+    $respuesta_174 = 'comprension';
+    $respuesta_175 = 'cuanto';
+    $respuesta_176 = 'completar';
+    
+    // Sección 17 (Preguntas 177-187)
+    $respuesta_177 = 'Sprint';
+    $respuesta_178 = 'desafio';
+    $respuesta_179 = 'Developers';
+    $respuesta_180 = 'desempeño';
+    $respuesta_181 = 'capacidad';
+    $respuesta_182 = 'Definicion de Terminado';
+    $respuesta_183 = 'confiados';
+    $respuesta_184 = 'pronosticos';
+    $respuesta_185 = 'realizara';
+    $respuesta_186 = 'trabajo elegido';
+    $respuesta_187 = 'elemento';
+    
+    // Sección 18 (Preguntas 188-198)
+    $respuesta_188 = 'Product Backlog';
+    $respuesta_189 = 'Developers';
+    $respuesta_190 = 'necesario';
+    $respuesta_191 = 'Increment';
+    $respuesta_192 = 'la Definicion de Terminado';
+    $respuesta_193 = 'descomponiendo';
+    $respuesta_194 = 'Product Backlog';
+    $respuesta_195 = 'pequeños';
+    $respuesta_196 = 'un dia';
+    $respuesta_197 = 'menos';
+    $respuesta_198 = 'Objetivo del Sprint';
+    
+    // Sección 19 (Preguntas 199-209)
+    $respuesta_199 = 'elementos';
+    $respuesta_200 = 'Product Backlog';
+    $respuesta_201 = 'Sprint';
+    $respuesta_202 = 'plan';
+    $respuesta_203 = 'entregarlos';
+    $respuesta_204 = 'proposito';
+    $respuesta_205 = 'inspeccionar';
+    $respuesta_206 = 'Objetivo del Sprint';
+    $respuesta_207 = 'Sprint Backlog';
+    $respuesta_208 = 'ajustando';
+    $respuesta_209 = '15 minutos';
+    
+    // Sección 20 (Preguntas 210-220)
+    $respuesta_210 = 'Developers';
+    $respuesta_211 = 'reducir';
+    $respuesta_212 = 'complejidad';
+    $respuesta_213 = 'misma hora';
+    $respuesta_214 = 'mismo';
+    $respuesta_215 = 'todos los dias';
+    $respuesta_216 = 'Sprint';
+    $respuesta_217 = 'Product Owner';
+    $respuesta_218 = 'Scrum Master';
+    $respuesta_219 = 'Sprint Backlog';
+    $respuesta_220 = 'participan';
+    
+    // Sección 21 (Preguntas 221-231)
+    $respuesta_221 = 'Developers';
+    $respuesta_222 = 'estructura';
+    $respuesta_223 = 'tecnicas';
+    $respuesta_224 = 'progreso';
+    $respuesta_225 = 'Objetivo del Sprint';
+    $respuesta_226 = 'produzca';
+    $respuesta_227 = 'plan';
+    $respuesta_228 = 'dia';
+    $respuesta_229 = 'comunicacion';
+    $respuesta_230 = 'impedimentos';
+    $respuesta_231 = 'promueven';
+    
+    // Sección 22 (Preguntas 232-242)
+    $respuesta_232 = 'eliminan';
+    $respuesta_233 = 'no es';
+    $respuesta_234 = 'Developers';
+    $respuesta_235 = 'dia';
+    $respuesta_236 = 'detalladas';
+    $respuesta_237 = 'adaptar';
+    $respuesta_238 = 'trabajo';
+    $respuesta_239 = 'proposito';
+    $respuesta_240 = 'inspeccionar';
+    $respuesta_241 = 'resultado';
+    $respuesta_242 = 'Sprint';
+    
+    // Sección 23 (Preguntas 243-253)
+    $respuesta_243 = 'adaptaciones';
+    $respuesta_244 = 'Scrum Team';
+    $respuesta_245 = 'resultados';
+    $respuesta_246 = 'interesados';
+    $respuesta_247 = 'progreso';
+    $respuesta_248 = 'Objetivo del Producto';
+    $respuesta_249 = 'Scrum Team';
+    $respuesta_250 = 'interesados';
+    $respuesta_251 = 'logro';
+    $respuesta_252 = 'Sprint';
+    $respuesta_253 = 'cambiado';
+    
+    // Sección 24 (Preguntas 254-264)
+    $respuesta_254 = 'entorno';
+    $respuesta_255 = 'base';
+    $respuesta_256 = 'asistentes';
+    $respuesta_257 = 'qué hacer';
+    $respuesta_258 = 'Product Backlog';
+    $respuesta_259 = 'ajustar';
+    $respuesta_260 = 'oportunidades';
+    $respuesta_261 = 'Sprint Review';
+    $respuesta_262 = 'trabajo';
+    $respuesta_263 = 'Scrum Team';
+    $respuesta_264 = 'limitarla';
+    
+    // Sección 25 (Preguntas 265-275)
+    $respuesta_265 = 'presentacion';
+    $respuesta_266 = 'penultimo';
+    $respuesta_267 = 'limite';
+    $respuesta_268 = 'cuatro horas';
+    $respuesta_269 = 'Sprint';
+    $respuesta_270 = 'mes';
+    $respuesta_271 = 'cortos';
+    $respuesta_272 = 'menor';
+    $respuesta_273 = 'planificar';
+    $respuesta_274 = 'aumentar';
+    $respuesta_275 = 'calidad';
+    
+    // Sección 26 (Preguntas 276-286)
+    $respuesta_276 = 'efectividad';
+    $respuesta_277 = 'Scrum Team';
+    $respuesta_278 = 'Sprint';
+    $respuesta_279 = 'personas';
+    $respuesta_280 = 'interacciones';
+    $respuesta_281 = 'procesos';
+    $respuesta_282 = 'herramientas';
+    $respuesta_283 = 'definicion de terminado';
+    $respuesta_284 = 'variar';
+    $respuesta_285 = 'ambito';
+    $respuesta_286 = 'supuestos';
+    
+    // Sección 27 (Preguntas 287-297)
+    $respuesta_287 = 'mal';
+    $respuesta_288 = 'origenes';
+    $respuesta_289 = 'Scrum Team';
+    $respuesta_290 = 'bien';
+    $respuesta_291 = 'encontro';
+    $respuesta_292 = 'resolvieron';
+    $respuesta_293 = 'identifica';
+    $respuesta_294 = 'cambios';
+    $respuesta_295 = 'mejorar';
+    $respuesta_296 = 'efectividad';
+    $respuesta_297 = 'mejoras';
+    
+    // Sección 28 (Preguntas 298-308)
+    $respuesta_298 = 'antes';
+    $respuesta_299 = 'agregar';
+    $respuesta_300 = 'Sprint Backlog';
+    $respuesta_301 = 'proximo';
+    $respuesta_302 = 'Sprint';
+    $respuesta_303 = 'tres horas';
+    $respuesta_304 = 'Sprint';
+    $respuesta_305 = 'un mes';
+    $respuesta_306 = 'cortos';
+    $respuesta_307 = 'menor';
+    $respuesta_308 = '328';
+    
+    // Sección 29 (Preguntas 309-310)
+    $respuesta_309 = '329';
+    $respuesta_310 = '330';
+    
+    // Marcar todas como correctas
+    // Marcar todas como correctas
+$verificar_1 = $verificar_2 = $verificar_3 = $verificar_4 = $verificar_5 = $verificar_6 = $verificar_7 = $verificar_8 = $verificar_9 = $verificar_10 = 
+$verificar_11 = $verificar_12 = $verificar_13 = $verificar_14 = $verificar_15 = $verificar_16 = $verificar_17 = $verificar_18 = $verificar_19 = $verificar_20 = 
+$verificar_21 = $verificar_22 = $verificar_23 = $verificar_24 = $verificar_25 = $verificar_26 = $verificar_27 = $verificar_28 = $verificar_29 = $verificar_30 = 
+$verificar_31 = $verificar_32 = $verificar_33 = $verificar_34 = $verificar_35 = $verificar_36 = $verificar_37 = $verificar_38 = $verificar_39 = $verificar_40 = 
+$verificar_41 = $verificar_42 = $verificar_43 = $verificar_44 = $verificar_45 = $verificar_46 = $verificar_47 = $verificar_48 = $verificar_49 = $verificar_50 = 
+$verificar_51 = $verificar_52 = $verificar_53 = $verificar_54 = $verificar_55 = $verificar_56 = $verificar_57 = $verificar_58 = $verificar_59 = $verificar_60 = 
+$verificar_61 = $verificar_62 = $verificar_63 = $verificar_64 = $verificar_65 = $verificar_66 = $verificar_67 = $verificar_68 = $verificar_69 = $verificar_70 = 
+$verificar_71 = $verificar_72 = $verificar_73 = $verificar_74 = $verificar_75 = $verificar_76 = $verificar_77 = $verificar_78 = $verificar_79 = $verificar_80 = 
+$verificar_81 = $verificar_82 = $verificar_83 = $verificar_84 = $verificar_85 = $verificar_86 = $verificar_87 = $verificar_88 = $verificar_89 = $verificar_90 = 
+$verificar_91 = $verificar_92 = $verificar_93 = $verificar_94 = $verificar_95 = $verificar_96 = $verificar_97 = $verificar_98 = $verificar_99 = $verificar_100 = 
+$verificar_101 = $verificar_102 = $verificar_103 = $verificar_104 = $verificar_105 = $verificar_106 = $verificar_107 = $verificar_108 = $verificar_109 = $verificar_110 = 
+$verificar_111 = $verificar_112 = $verificar_113 = $verificar_114 = $verificar_115 = $verificar_116 = $verificar_117 = $verificar_118 = $verificar_119 = $verificar_120 = 
+$verificar_121 = $verificar_122 = $verificar_123 = $verificar_124 = $verificar_125 = $verificar_126 = $verificar_127 = $verificar_128 = $verificar_129 = $verificar_130 = 
+$verificar_131 = $verificar_132 = $verificar_133 = $verificar_134 = $verificar_135 = $verificar_136 = $verificar_137 = $verificar_138 = $verificar_139 = $verificar_140 = 
+$verificar_141 = $verificar_142 = $verificar_143 = $verificar_144 = $verificar_145 = $verificar_146 = $verificar_147 = $verificar_148 = $verificar_149 = $verificar_150 = 
+$verificar_151 = $verificar_152 = $verificar_153 = $verificar_154 = $verificar_155 = $verificar_156 = $verificar_157 = $verificar_158 = $verificar_159 = $verificar_160 = 
+$verificar_161 = $verificar_162 = $verificar_163 = $verificar_164 = $verificar_165 = $verificar_166 = $verificar_167 = $verificar_168 = $verificar_169 = $verificar_170 = 
+$verificar_171 = $verificar_172 = $verificar_173 = $verificar_174 = $verificar_175 = $verificar_176 = $verificar_177 = $verificar_178 = $verificar_179 = $verificar_180 = 
+$verificar_181 = $verificar_182 = $verificar_183 = $verificar_184 = $verificar_185 = $verificar_186 = $verificar_187 = $verificar_188 = $verificar_189 = $verificar_190 = 
+$verificar_191 = $verificar_192 = $verificar_193 = $verificar_194 = $verificar_195 = $verificar_196 = $verificar_197 = $verificar_198 = $verificar_199 = $verificar_200 = 
+$verificar_201 = $verificar_202 = $verificar_203 = $verificar_204 = $verificar_205 = $verificar_206 = $verificar_207 = $verificar_208 = $verificar_209 = $verificar_210 = 
+$verificar_211 = $verificar_212 = $verificar_213 = $verificar_214 = $verificar_215 = $verificar_216 = $verificar_217 = $verificar_218 = $verificar_219 = $verificar_220 = 
+$verificar_221 = $verificar_222 = $verificar_223 = $verificar_224 = $verificar_225 = $verificar_226 = $verificar_227 = $verificar_228 = $verificar_229 = $verificar_230 = 
+$verificar_231 = $verificar_232 = $verificar_233 = $verificar_234 = $verificar_235 = $verificar_236 = $verificar_237 = $verificar_238 = $verificar_239 = $verificar_240 = 
+$verificar_241 = $verificar_242 = $verificar_243 = $verificar_244 = $verificar_245 = $verificar_246 = $verificar_247 = $verificar_248 = $verificar_249 = $verificar_250 = 
+$verificar_251 = $verificar_252 = $verificar_253 = $verificar_254 = $verificar_255 = $verificar_256 = $verificar_257 = $verificar_258 = $verificar_259 = $verificar_260 = 
+$verificar_261 = $verificar_262 = $verificar_263 = $verificar_264 = $verificar_265 = $verificar_266 = $verificar_267 = $verificar_268 = $verificar_269 = $verificar_270 = 
+$verificar_271 = $verificar_272 = $verificar_273 = $verificar_274 = $verificar_275 = $verificar_276 = $verificar_277 = $verificar_278 = $verificar_279 = $verificar_280 = 
+$verificar_281 = $verificar_282 = $verificar_283 = $verificar_284 = $verificar_285 = $verificar_286 = $verificar_287 = $verificar_288 = $verificar_289 = $verificar_290 = 
+$verificar_291 = $verificar_292 = $verificar_293 = $verificar_294 = $verificar_295 = $verificar_296 = $verificar_297 = $verificar_298 = $verificar_299 = $verificar_300 = 
+$verificar_301 = $verificar_302 = $verificar_303 = $verificar_304 = $verificar_305 = $verificar_306 = $verificar_307 = $verificar_308 = $verificar_309 = $verificar_310 = "correcto";
+     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
    if ($respuesta_1 === 'responsable') {  
        $verificar_1 = "correcto";
@@ -748,7 +960,7 @@ if ($respuesta_56 === 'Scrum Teams'|| $respuesta_56 === 'scrum teams') {
 }
 
  $respuesta_57 = isset($_POST['respuesta_57']) ? $_POST['respuesta_57'] : '';
-if ($respuesta_57 === '54') { 
+if ($respuesta_57 === 'Sprint' || $respuesta_57 === 'sprint') { 
     $verificar_57 = "correcto";
 } elseif ($respuesta_57 === '') {
     $verificar_57 = '';
@@ -757,7 +969,7 @@ if ($respuesta_57 === '54') {
 }
 
  $respuesta_58 = isset($_POST['respuesta_58']) ? $_POST['respuesta_58'] : '';
-if ($respuesta_58 === '72') { 
+if ($respuesta_58 === 'contenedor') { 
     $verificar_58 = "correcto";
 } elseif ($respuesta_58 === '') {
     $verificar_58 = '';
@@ -766,7 +978,7 @@ if ($respuesta_58 === '72') {
 }
 
  $respuesta_59 = isset($_POST['respuesta_59']) ? $_POST['respuesta_59'] : '';
-if ($respuesta_59 === '90') { 
+if ($respuesta_59 === 'todos') { 
     $verificar_59 = "correcto";
 } elseif ($respuesta_59 === '') {
     $verificar_59 = '';
@@ -775,7 +987,7 @@ if ($respuesta_59 === '90') {
 }
 
  $respuesta_60 = isset($_POST['respuesta_60']) ? $_POST['respuesta_60'] : '';
-if ($respuesta_60 === '108') { 
+if ($respuesta_60 === 'oportunidad') { 
     $verificar_60 = "correcto";
 } elseif ($respuesta_60 === '') {
     $verificar_60 = '';
@@ -784,7 +996,7 @@ if ($respuesta_60 === '108') {
 }
 
  $respuesta_61 = isset($_POST['respuesta_61']) ? $_POST['respuesta_61'] : '';
-if ($respuesta_61 === '126') { 
+if ($respuesta_61 === 'inspeccionar') { 
     $verificar_61 = "correcto";
 } elseif ($respuesta_61 === '') {
     $verificar_61 = '';
@@ -793,7 +1005,7 @@ if ($respuesta_61 === '126') {
 }
 
  $respuesta_62 = isset($_POST['respuesta_62']) ? $_POST['respuesta_62'] : '';
-if ($respuesta_62 === '144') { 
+if ($respuesta_62 === 'adaptar') { 
     $verificar_62 = "correcto";
 } elseif ($respuesta_62 === '') {
     $verificar_62 = '';
@@ -802,7 +1014,7 @@ if ($respuesta_62 === '144') {
 }
 
  $respuesta_63 = isset($_POST['respuesta_63']) ? $_POST['respuesta_63'] : '';
-if ($respuesta_63 === '162') { 
+if ($respuesta_63 === 'artefactos') { 
     $verificar_63 = "correcto";
 } elseif ($respuesta_63 === '') {
     $verificar_63 = '';
@@ -811,7 +1023,7 @@ if ($respuesta_63 === '162') {
 }
 
  $respuesta_64 = isset($_POST['respuesta_64']) ? $_POST['respuesta_64'] : '';
-if ($respuesta_64 === '180') { 
+if ($respuesta_64 === 'diseñados') { 
     $verificar_64 = "correcto";
 } elseif ($respuesta_64 === '') {
     $verificar_64 = '';
@@ -820,7 +1032,7 @@ if ($respuesta_64 === '180') {
 }
 
  $respuesta_65 = isset($_POST['respuesta_65']) ? $_POST['respuesta_65'] : '';
-if ($respuesta_65 === '198') { 
+if ($respuesta_65 === 'transparencia') { 
     $verificar_65 = "correcto";
 } elseif ($respuesta_65 === '') {
     $verificar_65 = '';
@@ -829,7 +1041,7 @@ if ($respuesta_65 === '198') {
 }
 
  $respuesta_66 = isset($_POST['respuesta_66']) ? $_POST['respuesta_66'] : '';
-if ($respuesta_66 === '216') { 
+if ($respuesta_66 === 'No' || $respuesta_66 === 'no') { 
     $verificar_66 = "correcto";
 } elseif ($respuesta_66 === '') {
     $verificar_66 = '';
@@ -838,7 +1050,7 @@ if ($respuesta_66 === '216') {
 }
 
  $respuesta_67 = isset($_POST['respuesta_67']) ? $_POST['respuesta_67'] : '';
-if ($respuesta_67 === '38') { 
+if ($respuesta_67 === 'perdida') { 
     $verificar_67 = "correcto";
 } elseif ($respuesta_67 === '') {
     $verificar_67 = '';
@@ -847,7 +1059,7 @@ if ($respuesta_67 === '38') {
 }
 
  $respuesta_68 = isset($_POST['respuesta_68']) ? $_POST['respuesta_68'] : '';
-if ($respuesta_68 === '57') { 
+if ($respuesta_68 === 'regularidad') { 
     $verificar_68 = "correcto";
 } elseif ($respuesta_68 === '') {
     $verificar_68 = '';
@@ -856,7 +1068,7 @@ if ($respuesta_68 === '57') {
 }
 
  $respuesta_69 = isset($_POST['respuesta_69']) ? $_POST['respuesta_69'] : '';
-if ($respuesta_69 === '76') { 
+if ($respuesta_69 === 'minimizar') { 
     $verificar_69 = "correcto";
 } elseif ($respuesta_69 === '') {
     $verificar_69 = '';
@@ -865,7 +1077,7 @@ if ($respuesta_69 === '76') {
 }
 
  $respuesta_70 = isset($_POST['respuesta_70']) ? $_POST['respuesta_70'] : '';
-if ($respuesta_70 === '95') { 
+if ($respuesta_70 === 'reuniones') { 
     $verificar_70 = "correcto";
 } elseif ($respuesta_70 === '') {
     $verificar_70 = '';
@@ -874,7 +1086,7 @@ if ($respuesta_70 === '95') {
 }
 
  $respuesta_71 = isset($_POST['respuesta_71']) ? $_POST['respuesta_71'] : '';
-if ($respuesta_71 === '114') { 
+if ($respuesta_71 === 'mismo tiempo') { 
     $verificar_71 = "correcto";
 } elseif ($respuesta_71 === '') {
     $verificar_71 = '';
@@ -883,7 +1095,7 @@ if ($respuesta_71 === '114') {
 }
 
  $respuesta_72 = isset($_POST['respuesta_72']) ? $_POST['respuesta_72'] : '';
-if ($respuesta_72 === '133') { 
+if ($respuesta_72 === 'mismo lugar') { 
     $verificar_72 = "correcto";
 } elseif ($respuesta_72 === '') {
     $verificar_72 = '';
@@ -892,7 +1104,7 @@ if ($respuesta_72 === '133') {
 }
 
  $respuesta_73 = isset($_POST['respuesta_73']) ? $_POST['respuesta_73'] : '';
-if ($respuesta_73 === '152') { 
+if ($respuesta_73 === 'ideas') { 
     $verificar_73 = "correcto";
 } elseif ($respuesta_73 === '') {
     $verificar_73 = '';
@@ -901,7 +1113,7 @@ if ($respuesta_73 === '152') {
 }
 
  $respuesta_74 = isset($_POST['respuesta_74']) ? $_POST['respuesta_74'] : '';
-if ($respuesta_74 === '171') { 
+if ($respuesta_74 === 'convierten') { 
     $verificar_74 = "correcto";
 } elseif ($respuesta_74 === '') {
     $verificar_74 = '';
@@ -910,7 +1122,7 @@ if ($respuesta_74 === '171') {
 }
 
  $respuesta_75 = isset($_POST['respuesta_75']) ? $_POST['respuesta_75'] : '';
-if ($respuesta_75 === '190') { 
+if ($respuesta_75 === 'valor') { 
     $verificar_75 = "correcto";
 } elseif ($respuesta_75 === '') {
     $verificar_75 = '';
@@ -919,7 +1131,7 @@ if ($respuesta_75 === '190') {
 }
 
  $respuesta_76 = isset($_POST['respuesta_76']) ? $_POST['respuesta_76'] : '';
-if ($respuesta_76 === '209') { 
+if ($respuesta_76 === 'eventos') { 
     $verificar_76 = "correcto";
 } elseif ($respuesta_76 === '') {
     $verificar_76 = '';
@@ -928,7 +1140,7 @@ if ($respuesta_76 === '209') {
 }
 
  $respuesta_77 = isset($_POST['respuesta_77']) ? $_POST['respuesta_77'] : '';
-if ($respuesta_77 === '228') { 
+if ($respuesta_77 === 'duracion') { 
     $verificar_77 = "correcto";
 } elseif ($respuesta_77 === '') {
     $verificar_77 = '';
@@ -937,7 +1149,7 @@ if ($respuesta_77 === '228') {
 }
 
  $respuesta_78 = isset($_POST['respuesta_78']) ? $_POST['respuesta_78'] : '';
-if ($respuesta_78 === '40') { 
+if ($respuesta_78 === 'un mes') { 
     $verificar_78 = "correcto";
 } elseif ($respuesta_78 === '') {
     $verificar_78 = '';
@@ -946,7 +1158,7 @@ if ($respuesta_78 === '40') {
 }
 
  $respuesta_79 = isset($_POST['respuesta_79']) ? $_POST['respuesta_79'] : '';
-if ($respuesta_79 === '60') { 
+if ($respuesta_79 === 'menos') { 
     $verificar_79 = "correcto";
 } elseif ($respuesta_79 === '') {
     $verificar_79 = '';
@@ -955,7 +1167,7 @@ if ($respuesta_79 === '60') {
 }
 
  $respuesta_80 = isset($_POST['respuesta_80']) ? $_POST['respuesta_80'] : '';
-if ($respuesta_80 === '80') { 
+if ($respuesta_80 === 'consistencia') { 
     $verificar_80 = "correcto";
 } elseif ($respuesta_80 === '') {
     $verificar_80 = '';
@@ -964,7 +1176,7 @@ if ($respuesta_80 === '80') {
 }
 
  $respuesta_81 = isset($_POST['respuesta_81']) ? $_POST['respuesta_81'] : '';
-if ($respuesta_81 === '100') { 
+if ($respuesta_81 === 'comienza') { 
     $verificar_81 = "correcto";
 } elseif ($respuesta_81 === '') {
     $verificar_81 = '';
@@ -973,7 +1185,7 @@ if ($respuesta_81 === '100') {
 }
 
     $respuesta_82 = isset($_POST['respuesta_82']) ? $_POST['respuesta_82'] : '';
-    if ($respuesta_82 === '120') { 
+    if ($respuesta_82 === 'conclusion') { 
         $verificar_82 = "correcto";
     } elseif ($respuesta_82 === '') {
         $verificar_82 = '';
@@ -982,7 +1194,7 @@ if ($respuesta_81 === '100') {
     }
 
     $respuesta_83 = isset($_POST['respuesta_83']) ? $_POST['respuesta_83'] : '';
-    if ($respuesta_83 === '140') { 
+    if ($respuesta_83 === 'trabajo') { 
        $verificar_83 = "correcto";
     } elseif ($respuesta_83 === '') {
         $verificar_83 = '';
@@ -991,7 +1203,7 @@ if ($respuesta_81 === '100') {
     }
 
     $respuesta_84 = isset($_POST['respuesta_84']) ? $_POST['respuesta_84'] : '';
-    if ($respuesta_84 === '160') { 
+    if ($respuesta_84 === 'Objetivo del Producto' || $respuesta_84 === 'objetivo del producto') { 
         $verificar_84 = "correcto";
     } elseif ($respuesta_84 === '') {
         $verificar_84 = '';
@@ -1000,7 +1212,7 @@ if ($respuesta_81 === '100') {
     }
 
     $respuesta_85 = isset($_POST['respuesta_85']) ? $_POST['respuesta_85'] : '';
-    if ($respuesta_85 === '180') { 
+    if ($respuesta_85 === 'Sprint Planning' || $respuesta_85 === 'sprint planning') { 
         $verificar_85 = "correcto";
     } elseif ($respuesta_85 === '') {
         $verificar_85 = '';
@@ -1009,7 +1221,7 @@ if ($respuesta_81 === '100') {
     }
 
     $respuesta_86 = isset($_POST['respuesta_86']) ? $_POST['respuesta_86'] : '';
-    if ($respuesta_86 === '200') { 
+    if ($respuesta_86 === 'Daily Scrums' || $respuesta_86 === 'daily scrums') { 
         $verificar_86 = "correcto";
     } elseif ($respuesta_86 === '') {
         $verificar_86 = '';
@@ -1018,7 +1230,7 @@ if ($respuesta_81 === '100') {
     }
 
     $respuesta_87 = isset($_POST['respuesta_87']) ? $_POST['respuesta_87'] : '';
-    if ($respuesta_87 === '220') { 
+    if ($respuesta_87 === 'Sprint Review' || $respuesta_87 === 'sprint review') { 
         $verificar_87 = "correcto";
     } elseif ($respuesta_87 === '') {
         $verificar_87 = '';
@@ -1027,7 +1239,7 @@ if ($respuesta_81 === '100') {
     }
 
     $respuesta_88 = isset($_POST['respuesta_88']) ? $_POST['respuesta_88'] : '';
-    if ($respuesta_88 === '240') { 
+    if ($respuesta_88 === 'Sprint Retrospective' || $respuesta_88 === 'sprint retrospective') { 
         $verificar_88 = "correcto";
     } elseif ($respuesta_88 === '') {
         $verificar_88 = '';
@@ -1036,7 +1248,7 @@ if ($respuesta_81 === '100') {
     }
 
  $respuesta_89 = isset($_POST['respuesta_89']) ? $_POST['respuesta_89'] : '';
-if ($respuesta_89 === '42') { 
+if ($respuesta_89 === 'dentro') { 
     $verificar_89 = "correcto";
 } elseif ($respuesta_89 === '') {
     $verificar_89 = '';
@@ -1045,7 +1257,7 @@ if ($respuesta_89 === '42') {
 }
 
  $respuesta_90 = isset($_POST['respuesta_90']) ? $_POST['respuesta_90'] : '';
-if ($respuesta_90 === '63') { 
+if ($respuesta_90 === 'No se' || $respuesta_90 === 'no se') { 
     $verificar_90 = "correcto";
 } elseif ($respuesta_90 === '') {
     $verificar_90 = '';
@@ -1054,7 +1266,7 @@ if ($respuesta_90 === '63') {
 }
 
  $respuesta_91 = isset($_POST['respuesta_91']) ? $_POST['respuesta_91'] : '';
-if ($respuesta_91 === '84') { 
+if ($respuesta_91 === 'peligro') { 
     $verificar_91 = "correcto";
 } elseif ($respuesta_91 === '') {
     $verificar_91 = '';
@@ -1063,7 +1275,7 @@ if ($respuesta_91 === '84') {
 }
 
  $respuesta_92 = isset($_POST['respuesta_92']) ? $_POST['respuesta_92'] : '';
-if ($respuesta_92 === '105') { 
+if ($respuesta_92 === 'Objetivo' || $respuesta_92 === 'objetivo') { 
     $verificar_92 = "correcto";
 } elseif ($respuesta_92 === '') {
     $verificar_92 = '';
@@ -1072,7 +1284,7 @@ if ($respuesta_92 === '105') {
 }
 
  $respuesta_93 = isset($_POST['respuesta_93']) ? $_POST['respuesta_93'] : '';
-if ($respuesta_93 === '126') { 
+if ($respuesta_93 === 'Sprint' || $respuesta_93 === 'sprint') { 
     $verificar_93 = "correcto";
 } elseif ($respuesta_93 === '') {
     $verificar_93 = '';
@@ -1081,7 +1293,7 @@ if ($respuesta_93 === '126') {
 }
 
  $respuesta_94 = isset($_POST['respuesta_94']) ? $_POST['respuesta_94'] : '';
-if ($respuesta_94 === '147') { 
+if ($respuesta_94 === 'calidad') { 
     $verificar_94 = "correcto";
 } elseif ($respuesta_94 === '') {
     $verificar_94 = '';
@@ -1090,7 +1302,7 @@ if ($respuesta_94 === '147') {
 }
 
  $respuesta_95 = isset($_POST['respuesta_95']) ? $_POST['respuesta_95'] : '';
-if ($respuesta_95 === '168') { 
+if ($respuesta_95 === 'disminuye') { 
     $verificar_95 = "correcto";
 } elseif ($respuesta_95 === '') {
     $verificar_95 = '';
@@ -1099,7 +1311,7 @@ if ($respuesta_95 === '168') {
 }
 
  $respuesta_96 = isset($_POST['respuesta_96']) ? $_POST['respuesta_96'] : '';
-if ($respuesta_96 === '189') { 
+if ($respuesta_96 === 'Product Backlog' || $respuesta_96 === 'product backlog') { 
     $verificar_96 = "correcto";
 } elseif ($respuesta_96 === '') {
     $verificar_96 = '';
@@ -1108,7 +1320,7 @@ if ($respuesta_96 === '189') {
 }
 
  $respuesta_97 = isset($_POST['respuesta_97']) ? $_POST['respuesta_97'] : '';
-if ($respuesta_97 === '210') { 
+if ($respuesta_97 === 'refina') { 
     $verificar_97 = "correcto";
 } elseif ($respuesta_97 === '') {
     $verificar_97 = '';
@@ -1117,7 +1329,7 @@ if ($respuesta_97 === '210') {
 }
 
  $respuesta_98 = isset($_POST['respuesta_98']) ? $_POST['respuesta_98'] : '';
-if ($respuesta_98 === '231') { 
+if ($respuesta_98 === 'necesario') { 
     $verificar_98 = "correcto";
 } elseif ($respuesta_98 === '') {
     $verificar_98 = '';
@@ -1126,7 +1338,7 @@ if ($respuesta_98 === '231') {
 }
 
  $respuesta_99 = isset($_POST['respuesta_99']) ? $_POST['respuesta_99'] : '';
-if ($respuesta_99 === '252') { 
+if ($respuesta_99 === 'alcance') { 
     $verificar_99 = "correcto";
 } elseif ($respuesta_99 === '') {
     $verificar_99 = '';
@@ -1136,7 +1348,7 @@ if ($respuesta_99 === '252') {
 
 
  $respuesta_100 = isset($_POST['respuesta_100']) ? $_POST['respuesta_100'] : '';
-if ($respuesta_100 === '44') { 
+if ($respuesta_100 === 'aclarar') { 
     $verificar_100 = "correcto";
 } elseif ($respuesta_100 === '') {
     $verificar_100 = '';
@@ -1145,7 +1357,7 @@ if ($respuesta_100 === '44') {
 }
 
  $respuesta_101 = isset($_POST['respuesta_101']) ? $_POST['respuesta_101'] : '';
-if ($respuesta_101 === '66') { 
+if ($respuesta_101 === 'Product Owner' || $respuesta_101 === 'product owner') { 
     $verificar_101 = "correcto";
 } elseif ($respuesta_101 === '') {
     $verificar_101 = '';
@@ -1154,7 +1366,7 @@ if ($respuesta_101 === '66') {
 }
 
  $respuesta_102 = isset($_POST['respuesta_102']) ? $_POST['respuesta_102'] : '';
-if ($respuesta_102 === '88') { 
+if ($respuesta_102 === 'previsibilidad') { 
     $verificar_102 = "correcto";
 } elseif ($respuesta_102 === '') {
     $verificar_102 = '';
@@ -1163,7 +1375,7 @@ if ($respuesta_102 === '88') {
 }
 
  $respuesta_103 = isset($_POST['respuesta_103']) ? $_POST['respuesta_103'] : '';
-if ($respuesta_103 === '110') { 
+if ($respuesta_103 === 'inspeccion') { 
     $verificar_103 = "correcto";
 } elseif ($respuesta_103 === '') {
     $verificar_103 = '';
@@ -1172,7 +1384,7 @@ if ($respuesta_103 === '110') {
 }
 
  $respuesta_104 = isset($_POST['respuesta_104']) ? $_POST['respuesta_104'] : '';
-if ($respuesta_104 === '132') { 
+if ($respuesta_104 === 'adaptacion') { 
     $verificar_104 = "correcto";
 } elseif ($respuesta_104 === '') {
     $verificar_104 = '';
@@ -1181,7 +1393,7 @@ if ($respuesta_104 === '132') {
 }
 
  $respuesta_105 = isset($_POST['respuesta_105']) ? $_POST['respuesta_105'] : '';
-if ($respuesta_105 === '154') { 
+if ($respuesta_105 === 'progreso') { 
     $verificar_105 = "correcto";
 } elseif ($respuesta_105 === '') {
     $verificar_105 = '';
@@ -1190,7 +1402,7 @@ if ($respuesta_105 === '154') {
 }
 
  $respuesta_106 = isset($_POST['respuesta_106']) ? $_POST['respuesta_106'] : '';
-if ($respuesta_106 === '176') { 
+if ($respuesta_106 === 'Objetivo del Producto' || $respuesta_106 === 'objetivo del producto') { 
     $verificar_106 = "correcto";
 } elseif ($respuesta_106 === '') {
     $verificar_106 = '';
@@ -1199,7 +1411,7 @@ if ($respuesta_106 === '176') {
 }
 
  $respuesta_107 = isset($_POST['respuesta_107']) ? $_POST['respuesta_107'] : '';
-if ($respuesta_107 === '198') { 
+if ($respuesta_107 === 'mes') { 
     $verificar_107 = "correcto";
 } elseif ($respuesta_107 === '') {
     $verificar_107 = '';
@@ -1208,7 +1420,7 @@ if ($respuesta_107 === '198') {
 }
 
  $respuesta_108 = isset($_POST['respuesta_108']) ? $_POST['respuesta_108'] : '';
-if ($respuesta_108 === '220') { 
+if ($respuesta_108 === 'largo') { 
     $verificar_108 = "correcto";
 } elseif ($respuesta_108 === '') {
     $verificar_108 = '';
@@ -1217,7 +1429,7 @@ if ($respuesta_108 === '220') {
 }
 
  $respuesta_109 = isset($_POST['respuesta_109']) ? $_POST['respuesta_109'] : '';
-if ($respuesta_109 === '242') { 
+if ($respuesta_109 === 'invalido') { 
     $verificar_109 = "correcto";
 } elseif ($respuesta_109 === '') {
     $verificar_109 = '';
@@ -1226,7 +1438,7 @@ if ($respuesta_109 === '242') {
 }
 
  $respuesta_110 = isset($_POST['respuesta_110']) ? $_POST['respuesta_110'] : '';
-if ($respuesta_110 === '264') { 
+if ($respuesta_110 === 'complejidad') { 
     $verificar_110 = "correcto";
 } elseif ($respuesta_110 === '') {
     $verificar_110 = '';
@@ -1236,7 +1448,7 @@ if ($respuesta_110 === '264') {
 
 // Tabla del 12
 $respuesta_111 = isset($_POST['respuesta_111']) ? $_POST['respuesta_111'] : '';
-if ($respuesta_111 === '24') {  
+if ($respuesta_111 === 'cortos') {  
     $verificar_111 = "correcto";
 } elseif ($respuesta_111 === '') {
     $verificar_111 = '';
@@ -1245,7 +1457,7 @@ if ($respuesta_111 === '24') {
 }
 
 $respuesta_112 = isset($_POST['respuesta_112']) ? $_POST['respuesta_112'] : '';
-if ($respuesta_112 === '36') {  
+if ($respuesta_112 === 'mas' || $respuesta_112 === 'más') {  
     $verificar_112 = "correcto";
 } elseif ($respuesta_112 === '') {
     $verificar_112 = '';
@@ -1254,7 +1466,7 @@ if ($respuesta_112 === '36') {
 }
 
 $respuesta_113 = isset($_POST['respuesta_113']) ? $_POST['respuesta_113'] : '';
-if ($respuesta_113 === '48') {  
+if ($respuesta_113 === 'riesgo') {  
     $verificar_113 = "correcto";
 } elseif ($respuesta_113 === '') {
     $verificar_113 = '';
@@ -1263,7 +1475,7 @@ if ($respuesta_113 === '48') {
 }
 
 $respuesta_114 = isset($_POST['respuesta_114']) ? $_POST['respuesta_114'] : '';
-if ($respuesta_114 === '60') {  
+if ($respuesta_114 === 'costo') {  
     $verificar_114 = "correcto";
 } elseif ($respuesta_114 === '') {
     $verificar_114 = '';
@@ -1272,7 +1484,7 @@ if ($respuesta_114 === '60') {
 }
 
 $respuesta_115 = isset($_POST['respuesta_115']) ? $_POST['respuesta_115'] : '';
-if ($respuesta_115 === '72') {  
+if ($respuesta_115 === 'esfuerzo') {  
     $verificar_115 = "correcto";
 } elseif ($respuesta_115 === '') {
     $verificar_115 = '';
@@ -1281,7 +1493,7 @@ if ($respuesta_115 === '72') {
 }
 
 $respuesta_116 = isset($_POST['respuesta_116']) ? $_POST['respuesta_116'] : '';
-if ($respuesta_116 === '84') {  
+if ($respuesta_116 === 'menor') {  
     $verificar_116 = "correcto";
 } elseif ($respuesta_116 === '') {
     $verificar_116 = '';
@@ -1290,7 +1502,7 @@ if ($respuesta_116 === '84') {
 }
 
 $respuesta_117 = isset($_POST['respuesta_117']) ? $_POST['respuesta_117'] : '';
-if ($respuesta_117 === '96') {  
+if ($respuesta_117 === 'costo') {  
     $verificar_117 = "correcto";
 } elseif ($respuesta_117 === '') {
     $verificar_117 = '';
@@ -1299,7 +1511,7 @@ if ($respuesta_117 === '96') {
 }
 
 $respuesta_118 = isset($_POST['respuesta_118']) ? $_POST['respuesta_118'] : '';
-if ($respuesta_118 === '108') {  
+if ($respuesta_118 === 'practicas') {  
     $verificar_118 = "correcto";
 } elseif ($respuesta_118 === '') {
     $verificar_118 = '';
@@ -1308,7 +1520,7 @@ if ($respuesta_118 === '108') {
 }
 
 $respuesta_119 = isset($_POST['respuesta_119']) ? $_POST['respuesta_119'] : '';
-if ($respuesta_119 === '120') {  
+if ($respuesta_119 === 'progreso') {  
     $verificar_119 = "correcto";
 } elseif ($respuesta_119 === '') {
     $verificar_119 = '';
@@ -1317,7 +1529,7 @@ if ($respuesta_119 === '120') {
 }
 
 $respuesta_120 = isset($_POST['respuesta_120']) ? $_POST['respuesta_120'] : '';
-if ($respuesta_120 === '132') {  
+if ($respuesta_120 === 'trabajo pendiente') {  
     $verificar_120 = "correcto";
 } elseif ($respuesta_120 === '') {
     $verificar_120 = '';
@@ -1326,13 +1538,1722 @@ if ($respuesta_120 === '132') {
 }
 
 $respuesta_121 = isset($_POST['respuesta_121']) ? $_POST['respuesta_121'] : '';
-if ($respuesta_121 === '144') {  
+if ($respuesta_121 === 'burn-downs') {  
     $verificar_121 = "correcto";
 } elseif ($respuesta_121 === '') {
     $verificar_121 = '';
 } else {
     $verificar_121 = "incorrecto";
 }
+
+
+
+$respuesta_122 = isset($_POST['respuesta_122']) ? $_POST['respuesta_122'] : '';
+if ($respuesta_122 === 'trabajo completado') {  
+    $verificar_122 = "correcto";
+} elseif ($respuesta_122 === '') {
+    $verificar_122 = '';
+} else {
+    $verificar_122 = "incorrecto";
+}
+
+$respuesta_123 = isset($_POST['respuesta_123']) ? $_POST['respuesta_123'] : '';
+if ($respuesta_123 === 'burn-ups') {  
+    $verificar_123 = "correcto";
+} elseif ($respuesta_123 === '') {
+    $verificar_123 = '';
+} else {
+    $verificar_123 = "incorrecto";
+}
+
+$respuesta_124 = isset($_POST['respuesta_124']) ? $_POST['respuesta_124'] : '';
+if ($respuesta_124 === 'flujos acumulativos') {  
+    $verificar_124 = "correcto";
+} elseif ($respuesta_124 === '') {
+    $verificar_124 = '';
+} else {
+    $verificar_124 = "incorrecto";
+}
+
+$respuesta_125 = isset($_POST['respuesta_125']) ? $_POST['respuesta_125'] : '';
+if ($respuesta_125 === 'cumulative flows') {  
+    $verificar_125 = "correcto";
+} elseif ($respuesta_125 === '') {
+    $verificar_125 = '';
+} else {
+    $verificar_125 = "incorrecto";
+}
+
+$respuesta_126 = isset($_POST['respuesta_126']) ? $_POST['respuesta_126'] : '';
+if ($respuesta_126 === 'reemplazan') {  
+    $verificar_126 = "correcto";
+} elseif ($respuesta_126 === '') {
+    $verificar_126 = '';
+} else {
+    $verificar_126 = "incorrecto";
+}
+
+$respuesta_127 = isset($_POST['respuesta_127']) ? $_POST['respuesta_127'] : '';
+if ($respuesta_127 === 'empirismo') {  
+    $verificar_127 = "correcto";
+} elseif ($respuesta_127 === '') {
+    $verificar_127 = '';
+} else {
+    $verificar_127 = "incorrecto";
+}
+
+$respuesta_128 = isset($_POST['respuesta_128']) ? $_POST['respuesta_128'] : '';
+if ($respuesta_128 === 'desconoce') {  
+    $verificar_128 = "correcto";
+} elseif ($respuesta_128 === '') {
+    $verificar_128 = '';
+} else {
+    $verificar_128 = "incorrecto";
+}
+
+$respuesta_129 = isset($_POST['respuesta_129']) ? $_POST['respuesta_129'] : '';
+if ($respuesta_129 === 'sucedido') {  
+    $verificar_129 = "correcto";
+} elseif ($respuesta_129 === '') {
+    $verificar_129 = '';
+} else {
+    $verificar_129 = "incorrecto";
+}
+
+$respuesta_130 = isset($_POST['respuesta_130']) ? $_POST['respuesta_130'] : '';
+if ($respuesta_130 === 'cancelarse') {  
+    $verificar_130 = "correcto";
+} elseif ($respuesta_130 === '') {
+    $verificar_130 = '';
+} else {
+    $verificar_130 = "incorrecto";
+}
+
+$respuesta_131 = isset($_POST['respuesta_131']) ? $_POST['respuesta_131'] : '';
+if ($respuesta_131 === 'Objetivo' || $respuesta_131 === 'objetivo') {  
+    $verificar_131 = "correcto";
+} elseif ($respuesta_131 === '') {
+    $verificar_131 = '';
+} else {
+    $verificar_131 = "incorrecto";
+}
+
+$respuesta_132 = isset($_POST['respuesta_132']) ? $_POST['respuesta_132'] : '';
+if ($respuesta_132 === 'Sprint' || $respuesta_132 === 'sprint') {  
+    $verificar_132 = "correcto";
+} elseif ($respuesta_132 === '') {
+    $verificar_132 = '';
+} else {
+    $verificar_132 = "incorrecto";
+}
+
+$respuesta_133 = isset($_POST['respuesta_133']) ? $_POST['respuesta_133'] : '';
+if ($respuesta_133 === 'obsoleto') {  
+    $verificar_133 = "correcto";
+} elseif ($respuesta_133 === '') {
+    $verificar_133 = '';
+} else {
+    $verificar_133 = "incorrecto";
+}
+
+$respuesta_134 = isset($_POST['respuesta_134']) ? $_POST['respuesta_134'] : '';
+if ($respuesta_134 === 'Product Owner' || $respuesta_134 === 'product owner') {  
+    $verificar_134 = "correcto";
+} elseif ($respuesta_134 === '') {
+    $verificar_134 = '';
+} else {
+    $verificar_134 = "incorrecto";
+}
+
+$respuesta_135 = isset($_POST['respuesta_135']) ? $_POST['respuesta_135'] : '';
+if ($respuesta_135 === 'inicia') {  
+    $verificar_135 = "correcto";
+} elseif ($respuesta_135 === '') {
+    $verificar_135 = '';
+} else {
+    $verificar_135 = "incorrecto";
+}
+
+$respuesta_136 = isset($_POST['respuesta_136']) ? $_POST['respuesta_136'] : '';
+if ($respuesta_136 === 'Sprint' || $respuesta_136 === 'sprint') {  
+    $verificar_136 = "correcto";
+} elseif ($respuesta_136 === '') {
+    $verificar_136 = '';
+} else {
+    $verificar_136 = "incorrecto";
+}
+
+$respuesta_137 = isset($_POST['respuesta_137']) ? $_POST['respuesta_137'] : '';
+if ($respuesta_137 === 'establecer') {  
+    $verificar_137 = "correcto";
+} elseif ($respuesta_137 === '') {
+    $verificar_137 = '';
+} else {
+    $verificar_137 = "incorrecto";
+}
+
+$respuesta_138 = isset($_POST['respuesta_138']) ? $_POST['respuesta_138'] : '';
+if ($respuesta_138 === 'trabajo') {  
+    $verificar_138 = "correcto";
+} elseif ($respuesta_138 === '') {
+    $verificar_138 = '';
+} else {
+    $verificar_138 = "incorrecto";
+}
+
+$respuesta_139 = isset($_POST['respuesta_139']) ? $_POST['respuesta_139'] : '';
+if ($respuesta_139 === 'Scrum Team' || $respuesta_139 === 'scrum team') {  
+    $verificar_139 = "correcto";
+} elseif ($respuesta_139 === '') {
+    $verificar_139 = '';
+} else {
+    $verificar_139 = "incorrecto";
+}
+
+$respuesta_140 = isset($_POST['respuesta_140']) ? $_POST['respuesta_140'] : '';
+if ($respuesta_140 === 'resultante') {  
+    $verificar_140 = "correcto";
+} elseif ($respuesta_140 === '') {
+    $verificar_140 = '';
+} else {
+    $verificar_140 = "incorrecto";
+}
+
+$respuesta_141 = isset($_POST['respuesta_141']) ? $_POST['respuesta_141'] : '';
+if ($respuesta_141 === 'Product Owner'|| $respuesta_141 === 'product owner') {  
+    $verificar_141 = "correcto";
+} elseif ($respuesta_141 === '') {
+    $verificar_141 = '';
+} else {
+    $verificar_141 = "incorrecto";
+}
+
+$respuesta_142 = isset($_POST['respuesta_142']) ? $_POST['respuesta_142'] : '';
+if ($respuesta_142 === 'asistentes') {  
+    $verificar_142 = "correcto";
+} elseif ($respuesta_142 === '') {
+    $verificar_142 = '';
+} else {
+    $verificar_142 = "incorrecto";
+}
+
+$respuesta_143 = isset($_POST['respuesta_143']) ? $_POST['respuesta_143'] : '';
+if ($respuesta_143 === 'discutir') {  
+    $verificar_143 = "correcto";
+} elseif ($respuesta_143 === '') {
+    $verificar_143 = '';
+} else {
+    $verificar_143 = "incorrecto";
+}
+
+$respuesta_144 = isset($_POST['respuesta_144']) ? $_POST['respuesta_144'] : '';
+if ($respuesta_144 === 'Product Backlog' || $respuesta_144 === 'product backlog') {  
+    $verificar_144 = "correcto";
+} elseif ($respuesta_144 === '') {
+    $verificar_144 = '';
+} else {
+    $verificar_144 = "incorrecto";
+}
+
+$respuesta_145 = isset($_POST['respuesta_145']) ? $_POST['respuesta_145'] : '';
+if ($respuesta_145 === 'Objetivo del Producto' || $respuesta_145 === 'objetivo del producto') {  
+    $verificar_145 = "correcto";
+} elseif ($respuesta_145 === '') {
+    $verificar_145 = '';
+} else {
+    $verificar_145 = "incorrecto";
+}
+
+$respuesta_146 = isset($_POST['respuesta_146']) ? $_POST['respuesta_146'] : '';
+if ($respuesta_146 === 'Scrum Team' || $respuesta_146 === 'scrum team') {  
+    $verificar_146 = "correcto";
+} elseif ($respuesta_146 === '') {
+    $verificar_146 = '';
+} else {
+    $verificar_146 = "incorrecto";
+}
+
+$respuesta_147 = isset($_POST['respuesta_147']) ? $_POST['respuesta_147'] : '';
+if ($respuesta_147 === 'asistir') {  
+    $verificar_147 = "correcto";
+} elseif ($respuesta_147 === '') {
+    $verificar_147 = '';
+} else {
+    $verificar_147 = "incorrecto";
+}
+
+$respuesta_148 = isset($_POST['respuesta_148']) ? $_POST['respuesta_148'] : '';
+if ($respuesta_148 === 'valioso') {  
+    $verificar_148 = "correcto";
+} elseif ($respuesta_148 === '') {
+    $verificar_148 = '';
+} else {
+    $verificar_148 = "incorrecto";
+}
+
+$respuesta_149 = isset($_POST['respuesta_149']) ? $_POST['respuesta_149'] : '';
+if ($respuesta_149 === 'Sprint' || $respuesta_149 === 'sprint') {  
+    $verificar_149 = "correcto";
+} elseif ($respuesta_149 === '') {
+    $verificar_149 = '';
+} else {
+    $verificar_149 = "incorrecto";
+}
+
+$respuesta_150 = isset($_POST['respuesta_150']) ? $_POST['respuesta_150'] : '';
+if ($respuesta_150 === 'Product Owner' || $respuesta_150 === 'product owner') {  
+    $verificar_150 = "correcto";
+} elseif ($respuesta_150 === '') {
+    $verificar_150 = '';
+} else {
+    $verificar_150 = "incorrecto";
+}
+
+$respuesta_151 = isset($_POST['respuesta_151']) ? $_POST['respuesta_151'] : '';
+if ($respuesta_151 === 'producto') {  
+    $verificar_151 = "correcto";
+} elseif ($respuesta_151 === '') {
+    $verificar_151 = '';
+} else {
+    $verificar_151 = "incorrecto";
+}
+
+$respuesta_152 = isset($_POST['respuesta_152']) ? $_POST['respuesta_152'] : '';
+if ($respuesta_152 === 'incrementar') {  
+    $verificar_152 = "correcto";
+} elseif ($respuesta_152 === '') {
+    $verificar_152 = '';
+} else {
+    $verificar_152 = "incorrecto";
+}
+
+$respuesta_153 = isset($_POST['respuesta_153']) ? $_POST['respuesta_153'] : '';
+if ($respuesta_153 === 'valor') {  
+    $verificar_153 = "correcto";
+} elseif ($respuesta_153 === '') {
+    $verificar_153 = '';
+} else {
+    $verificar_153 = "incorrecto";
+}
+
+$respuesta_154 = isset($_POST['respuesta_154']) ? $_POST['respuesta_154'] : '';
+if ($respuesta_154 === 'utilidad') {  
+    $verificar_154 = "correcto";
+} elseif ($respuesta_154 === '') {
+    $verificar_154 = '';
+} else {
+    $verificar_154 = "incorrecto";
+}
+
+$respuesta_155 = isset($_POST['respuesta_155']) ? $_POST['respuesta_155'] : '';
+if ($respuesta_155 === 'Sprint actual'|| $respuesta_155 === 'sprint actual') {  
+    $verificar_155 = "correcto";
+} elseif ($respuesta_155 === '') {
+    $verificar_155 = '';
+} else {
+    $verificar_155 = "incorrecto";
+}
+
+$respuesta_156 = isset($_POST['respuesta_156']) ? $_POST['respuesta_156'] : '';
+if ($respuesta_156 === 'Scrum Team' || $respuesta_156 === 'scrum team') {  
+    $verificar_156 = "correcto";
+} elseif ($respuesta_156 === '') {
+    $verificar_156 = '';
+} else {
+    $verificar_156 = "incorrecto";
+}
+
+$respuesta_157 = isset($_POST['respuesta_157']) ? $_POST['respuesta_157'] : '';
+if ($respuesta_157 === 'Objetivo del Sprint' || $respuesta_157 === 'objetivo del sprint') {  
+    $verificar_157 = "correcto";
+} elseif ($respuesta_157 === '') {
+    $verificar_157 = '';
+} else {
+    $verificar_157 = "incorrecto";
+}
+
+$respuesta_158 = isset($_POST['respuesta_158']) ? $_POST['respuesta_158'] : '';
+if ($respuesta_158 === 'comunica') {  
+    $verificar_158 = "correcto";
+} elseif ($respuesta_158 === '') {
+    $verificar_158 = '';
+} else {
+    $verificar_158 = "incorrecto";
+}
+
+$respuesta_159 = isset($_POST['respuesta_159']) ? $_POST['respuesta_159'] : '';
+if ($respuesta_159 === 'Sprint') {  
+    $verificar_159 = "correcto";
+} elseif ($respuesta_159 === '') {
+    $verificar_159 = '';
+} else {
+    $verificar_159 = "incorrecto";
+}
+
+$respuesta_160 = isset($_POST['respuesta_160']) ? $_POST['respuesta_160'] : '';
+if ($respuesta_160 === 'valioso') {  
+    $verificar_160 = "correcto";
+} elseif ($respuesta_160 === '') {
+    $verificar_160 = '';
+} else {
+    $verificar_160 = "incorrecto";
+}
+
+$respuesta_161 = isset($_POST['respuesta_161']) ? $_POST['respuesta_161'] : '';
+if ($respuesta_161 === 'interesados') {  
+    $verificar_161 = "correcto";
+} elseif ($respuesta_161 === '') {
+    $verificar_161 = '';
+} else {
+    $verificar_161 = "incorrecto";
+}
+
+$respuesta_162 = isset($_POST['respuesta_162']) ? $_POST['respuesta_162'] : '';
+if ($respuesta_162 === 'Objetivo del Sprint' || $respuesta_162 === 'objetivo del sprint') {  
+    $verificar_162 = "correcto";
+} elseif ($respuesta_162 === '') {
+    $verificar_162 = '';
+} else {
+    $verificar_162 = "incorrecto";
+}
+
+$respuesta_163 = isset($_POST['respuesta_163']) ? $_POST['respuesta_163'] : '';
+if ($respuesta_163 === 'termine') {  
+    $verificar_163 = "correcto";
+} elseif ($respuesta_163 === '') {
+    $verificar_163 = '';
+} else {
+    $verificar_163 = "incorrecto";
+}
+
+$respuesta_164 = isset($_POST['respuesta_164']) ? $_POST['respuesta_164'] : '';
+if ($respuesta_164 === 'Sprint Planning' || $respuesta_164 === 'sprint planning') {  
+    $verificar_164 = "correcto";
+} elseif ($respuesta_164 === '') {
+    $verificar_164 = '';
+} else {
+    $verificar_164 = "incorrecto";
+}
+
+$respuesta_165 = isset($_POST['respuesta_165']) ? $_POST['respuesta_165'] : '';
+if ($respuesta_165 === 'conversacion') {  
+    $verificar_165 = "correcto";
+} elseif ($respuesta_165 === '') {
+    $verificar_165 = '';
+} else {
+    $verificar_165 = "incorrecto";
+}
+
+$respuesta_166 = isset($_POST['respuesta_166']) ? $_POST['respuesta_166'] : '';
+if ($respuesta_166 === 'Product Owner' || $respuesta_166 === 'product owner') {  
+    $verificar_166 = "correcto";
+} elseif ($respuesta_166 === '') {
+    $verificar_166 = '';
+} else {
+    $verificar_166 = "incorrecto";
+}
+
+$respuesta_167 = isset($_POST['respuesta_167']) ? $_POST['respuesta_167'] : '';
+if ($respuesta_167 === 'Developers' || $respuesta_167 === 'developers') {  
+    $verificar_167 = "correcto";
+} elseif ($respuesta_167 === '') {
+    $verificar_167 = '';
+} else {
+    $verificar_167 = "incorrecto";
+}
+
+$respuesta_168 = isset($_POST['respuesta_168']) ? $_POST['respuesta_168'] : '';
+if ($respuesta_168 === 'elementos') {  
+    $verificar_168 = "correcto";
+} elseif ($respuesta_168 === '') {
+    $verificar_168 = '';
+} else {
+    $verificar_168 = "incorrecto";
+}
+
+$respuesta_169 = isset($_POST['respuesta_169']) ? $_POST['respuesta_169'] : '';
+if ($respuesta_169 === 'Product Backlog' || $respuesta_169 === 'product backlog') {  
+    $verificar_169 = "correcto";
+} elseif ($respuesta_169 === '') {
+    $verificar_169 = '';
+} else {
+    $verificar_169 = "incorrecto";
+}
+
+$respuesta_170 = isset($_POST['respuesta_170']) ? $_POST['respuesta_170'] : '';
+if ($respuesta_170 === 'incluirlos') {  
+    $verificar_170 = "correcto";
+} elseif ($respuesta_170 === '') {
+    $verificar_170 = '';
+} else {
+    $verificar_170 = "incorrecto";
+}
+
+$respuesta_171 = isset($_POST['respuesta_171']) ? $_POST['respuesta_171'] : '';
+if ($respuesta_171 === 'Sprint actual' || $respuesta_171 === 'sprint actual') {  
+    $verificar_171 = "correcto";
+} elseif ($respuesta_171 === '') {
+    $verificar_171 = '';
+} else {
+    $verificar_171 = "incorrecto";
+}
+
+$respuesta_172 = isset($_POST['respuesta_172']) ? $_POST['respuesta_172'] : '';
+if ($respuesta_172 === 'Scrum Team' || $respuesta_172 === 'scrum team') {  
+    $verificar_172 = "correcto";
+} elseif ($respuesta_172 === '') {
+    $verificar_172 = '';
+} else {
+    $verificar_172 = "incorrecto";
+}
+
+$respuesta_173 = isset($_POST['respuesta_173']) ? $_POST['respuesta_173'] : '';
+if ($respuesta_173 === 'refinar') {  
+    $verificar_173 = "correcto";
+} elseif ($respuesta_173 === '') {
+    $verificar_173 = '';
+} else {
+    $verificar_173 = "incorrecto";
+}
+
+$respuesta_174 = isset($_POST['respuesta_174']) ? $_POST['respuesta_174'] : '';
+if ($respuesta_174 === 'comprension') {  
+    $verificar_174 = "correcto";
+} elseif ($respuesta_174 === '') {
+    $verificar_174 = '';
+} else {
+    $verificar_174 = "incorrecto";
+}
+
+$respuesta_175 = isset($_POST['respuesta_175']) ? $_POST['respuesta_175'] : '';
+if ($respuesta_175 === ' cuanto') {  
+    $verificar_175 = "correcto";
+} elseif ($respuesta_175 === '') {
+    $verificar_175 = '';
+} else {
+    $verificar_175 = "incorrecto";
+}
+
+$respuesta_176 = isset($_POST['respuesta_176']) ? $_POST['respuesta_176'] : '';
+if ($respuesta_176 === 'completar') {  
+    $verificar_176 = "correcto";
+} elseif ($respuesta_176 === '') {
+    $verificar_176 = '';
+} else {
+    $verificar_176 = "incorrecto";
+}
+
+$respuesta_177 = isset($_POST['respuesta_177']) ? $_POST['respuesta_177'] : '';
+if ($respuesta_177 === 'Sprint'|| $respuesta_177 === 'sprint') {  
+    $verificar_177 = "correcto";
+} elseif ($respuesta_177 === '') {
+    $verificar_177 = '';
+} else {
+    $verificar_177 = "incorrecto";
+}
+
+$respuesta_178 = isset($_POST['respuesta_178']) ? $_POST['respuesta_178'] : '';
+if ($respuesta_178 === 'desafio') {  
+    $verificar_178 = "correcto";
+} elseif ($respuesta_178 === '') {
+    $verificar_178 = '';
+} else {
+    $verificar_178 = "incorrecto";
+}
+
+$respuesta_179 = isset($_POST['respuesta_179']) ? $_POST['respuesta_179'] : '';
+if ($respuesta_179 === 'Developers' || $respuesta_179 === 'developers') {  
+    $verificar_179 = "correcto";
+} elseif ($respuesta_179 === '') {
+    $verificar_179 = '';
+} else {
+    $verificar_179 = "incorrecto";
+}
+
+$respuesta_180 = isset($_POST['respuesta_180']) ? $_POST['respuesta_180'] : '';
+if ($respuesta_180 === 'desempeño') {  
+    $verificar_180 = "correcto";
+} elseif ($respuesta_180 === '') {
+    $verificar_180 = '';
+} else {
+    $verificar_180 = "incorrecto";
+}
+
+$respuesta_181 = isset($_POST['respuesta_181']) ? $_POST['respuesta_181'] : '';
+if ($respuesta_181 === 'capacidad') {  
+    $verificar_181 = "correcto";
+} elseif ($respuesta_181 === '') {
+    $verificar_181 = '';
+} else {
+    $verificar_181 = "incorrecto";
+}
+
+$respuesta_182 = isset($_POST['respuesta_182']) ? $_POST['respuesta_182'] : '';
+if ($respuesta_182 === 'Definicion de Terminado' || $respuesta_182 === 'definicion de terminado') {  
+    $verificar_182 = "correcto";
+} elseif ($respuesta_182 === '') {
+    $verificar_182 = '';
+} else {
+    $verificar_182 = "incorrecto";
+}
+
+$respuesta_183 = isset($_POST['respuesta_183']) ? $_POST['respuesta_183'] : '';
+if ($respuesta_183 === 'confiados') {  
+    $verificar_183 = "correcto";
+} elseif ($respuesta_183 === '') {
+    $verificar_183 = '';
+} else {
+    $verificar_183 = "incorrecto";
+}
+
+$respuesta_184 = isset($_POST['respuesta_184']) ? $_POST['respuesta_184'] : '';
+if ($respuesta_184 === 'pronosticos') {  
+    $verificar_184 = "correcto";
+} elseif ($respuesta_184 === '') {
+    $verificar_184 = '';
+} else {
+    $verificar_184 = "incorrecto";
+}
+
+$respuesta_185 = isset($_POST['respuesta_185']) ? $_POST['respuesta_185'] : '';
+if ($respuesta_185 === 'realizara') {  
+    $verificar_185 = "correcto";
+} elseif ($respuesta_185 === '') {
+    $verificar_185 = '';
+} else {
+    $verificar_185 = "incorrecto";
+}
+
+$respuesta_186 = isset($_POST['respuesta_186']) ? $_POST['respuesta_186'] : '';
+if ($respuesta_186 === 'trabajo elegido') {  
+    $verificar_186 = "correcto";
+} elseif ($respuesta_186 === '') {
+    $verificar_186 = '';
+} else {
+    $verificar_186 = "incorrecto";
+}
+
+$respuesta_187 = isset($_POST['respuesta_187']) ? $_POST['respuesta_187'] : '';
+if ($respuesta_187 === 'elemento') {  
+    $verificar_187 = "correcto";
+} elseif ($respuesta_187 === '') {
+    $verificar_187 = '';
+} else {
+    $verificar_187 = "incorrecto";
+}
+
+$respuesta_188 = isset($_POST['respuesta_188']) ? $_POST['respuesta_188'] : '';
+if ($respuesta_188 === 'Product Backlog' || $respuesta_188 === 'product backlog') {  
+    $verificar_188 = "correcto";
+} elseif ($respuesta_188 === '') {
+    $verificar_188 = '';
+} else {
+    $verificar_188 = "incorrecto";
+}
+
+$respuesta_189 = isset($_POST['respuesta_189']) ? $_POST['respuesta_189'] : '';
+if ($respuesta_189 === 'Developers' || $respuesta_189 === 'developers') {  
+    $verificar_189 = "correcto";
+} elseif ($respuesta_189 === '') {
+    $verificar_189 = '';
+} else {
+    $verificar_189 = "incorrecto";
+}
+
+$respuesta_190 = isset($_POST['respuesta_190']) ? $_POST['respuesta_190'] : '';
+if ($respuesta_190 === 'necesario') {  
+    $verificar_190 = "correcto";
+} elseif ($respuesta_190 === '') {
+    $verificar_190 = '';
+} else {
+    $verificar_190 = "incorrecto";
+}
+
+$respuesta_191 = isset($_POST['respuesta_191']) ? $_POST['respuesta_191'] : '';
+if ($respuesta_191 === 'Increment' || $respuesta_191 === 'increment') {  
+    $verificar_191 = "correcto";
+} elseif ($respuesta_191 === '') {
+    $verificar_191 = '';
+} else {
+    $verificar_191 = "incorrecto";
+}
+
+$respuesta_192 = isset($_POST['respuesta_192']) ? $_POST['respuesta_192'] : '';
+if ($respuesta_192 === 'la Definicion de Terminado' || $respuesta_192 === 'la definicion de terminado') {  
+    $verificar_192 = "correcto";
+} elseif ($respuesta_192 === '') {
+    $verificar_192 = '';
+} else {
+    $verificar_192 = "incorrecto";
+}
+
+$respuesta_193 = isset($_POST['respuesta_193']) ? $_POST['respuesta_193'] : '';
+if ($respuesta_193 === 'descomponiendo') {  
+    $verificar_193 = "correcto";
+} elseif ($respuesta_193 === '') {
+    $verificar_193 = '';
+} else {
+    $verificar_193 = "incorrecto";
+}
+
+$respuesta_194 = isset($_POST['respuesta_194']) ? $_POST['respuesta_194'] : '';
+if ($respuesta_194 === 'Product Backlog' || $respuesta_194 === 'product backlog') {  
+    $verificar_194 = "correcto";
+} elseif ($respuesta_194 === '') {
+    $verificar_194 = '';
+} else {
+    $verificar_194 = "incorrecto";
+}
+
+$respuesta_195 = isset($_POST['respuesta_195']) ? $_POST['respuesta_195'] : '';
+if ($respuesta_195 === 'pequeños') {  
+    $verificar_195 = "correcto";
+} elseif ($respuesta_195 === '') {
+    $verificar_195 = '';
+} else {
+    $verificar_195 = "incorrecto";
+}
+
+$respuesta_196 = isset($_POST['respuesta_196']) ? $_POST['respuesta_196'] : '';
+if ($respuesta_196 === 'un dia') {  
+    $verificar_196 = "correcto";
+} elseif ($respuesta_196 === '') {
+    $verificar_196 = '';
+} else {
+    $verificar_196 = "incorrecto";
+}
+
+$respuesta_197 = isset($_POST['respuesta_197']) ? $_POST['respuesta_197'] : '';
+if ($respuesta_197 === 'menos') {  
+    $verificar_197 = "correcto";
+} elseif ($respuesta_197 === '') {
+    $verificar_197 = '';
+} else {
+    $verificar_197 = "incorrecto";
+}
+
+$respuesta_198 = isset($_POST['respuesta_198']) ? $_POST['respuesta_198'] : '';
+if ($respuesta_198 === 'Objetivo del Sprint' || $respuesta_198 === 'objetivo del sprint') {  
+    $verificar_198 = "correcto";
+} elseif ($respuesta_198 === '') {
+    $verificar_198 = '';
+} else {
+    $verificar_198 = "incorrecto";
+}
+
+$respuesta_199 = isset($_POST['respuesta_199']) ? $_POST['respuesta_199'] : '';
+if ($respuesta_199 === 'elementos') {  
+    $verificar_199 = "correcto";
+} elseif ($respuesta_199 === '') {
+    $verificar_199 = '';
+} else {
+    $verificar_199 = "incorrecto";
+}
+
+$respuesta_200 = isset($_POST['respuesta_200']) ? $_POST['respuesta_200'] : '';
+if ($respuesta_200 === 'Product Backlog'|| $respuesta_200 === 'product backlog') {  
+    $verificar_200 = "correcto";
+} elseif ($respuesta_200 === '') {
+    $verificar_200 = '';
+} else {
+    $verificar_200 = "incorrecto";
+}
+
+
+$respuesta_201 = isset($_POST['respuesta_201']) ? $_POST['respuesta_201'] : '';
+if ($respuesta_201 === 'Sprint'||$respuesta_201 === 'sprint') {  
+    $verificar_201 = "correcto";
+} elseif ($respuesta_201 === '') {
+    $verificar_201 = '';
+} else {
+    $verificar_201 = "incorrecto";
+}
+
+$respuesta_202 = isset($_POST['respuesta_202']) ? $_POST['respuesta_202'] : '';
+if ($respuesta_202 === 'plan') {  
+    $verificar_202 = "correcto";
+} elseif ($respuesta_202 === '') {
+    $verificar_202 = '';
+} else {
+    $verificar_202 = "incorrecto";
+}
+
+$respuesta_203 = isset($_POST['respuesta_203']) ? $_POST['respuesta_203'] : '';
+if ($respuesta_203 === 'entregarlos') {  
+    $verificar_203 = "correcto";
+} elseif ($respuesta_203 === '') {
+    $verificar_203 = '';
+} else {
+    $verificar_203 = "incorrecto";
+}
+
+$respuesta_204 = isset($_POST['respuesta_204']) ? $_POST['respuesta_204'] : '';
+if ($respuesta_204 === 'proposito') {  
+    $verificar_204 = "correcto";
+} elseif ($respuesta_204 === '') {
+    $verificar_204 = '';
+} else {
+    $verificar_204 = "incorrecto";
+}
+
+$respuesta_205 = isset($_POST['respuesta_205']) ? $_POST['respuesta_205'] : '';
+if ($respuesta_205 === 'inspeccionar') {  
+    $verificar_205 = "correcto";
+} elseif ($respuesta_205 === '') {
+    $verificar_205 = '';
+} else {
+    $verificar_205 = "incorrecto";
+}
+
+$respuesta_206 = isset($_POST['respuesta_206']) ? $_POST['respuesta_206'] : '';
+if ($respuesta_206 === 'Objetivo del Sprint' || $respuesta_206 === 'objetivo del sprint') {  
+    $verificar_206 = "correcto";
+} elseif ($respuesta_206 === '') {
+    $verificar_206 = '';
+} else {
+    $verificar_206 = "incorrecto";
+}
+
+$respuesta_207 = isset($_POST['respuesta_207']) ? $_POST['respuesta_207'] : '';
+if ($respuesta_207 === 'Sprint Backlog' || $respuesta_207 === 'sprint backlog') {  
+    $verificar_207 = "correcto";
+} elseif ($respuesta_207 === '') {
+    $verificar_207 = '';
+} else {
+    $verificar_207 = "incorrecto";
+}
+
+$respuesta_208 = isset($_POST['respuesta_208']) ? $_POST['respuesta_208'] : '';
+if ($respuesta_208 === 'ajustando') {  
+    $verificar_208 = "correcto";
+} elseif ($respuesta_208 === '') {
+    $verificar_208 = '';
+} else {
+    $verificar_208 = "incorrecto";
+}
+
+$respuesta_209 = isset($_POST['respuesta_209']) ? $_POST['respuesta_209'] : '';
+if ($respuesta_209 === '15 minutos') {  
+    $verificar_209 = "correcto";
+} elseif ($respuesta_209 === '') {
+    $verificar_209 = '';
+} else {
+    $verificar_209 = "incorrecto";
+}
+
+$respuesta_210 = isset($_POST['respuesta_210']) ? $_POST['respuesta_210'] : '';
+if ($respuesta_210 === 'Developers' || $respuesta_210 === 'developers') {  
+    $verificar_210 = "correcto";
+} elseif ($respuesta_210 === '') {
+    $verificar_210 = '';
+} else {
+    $verificar_210 = "incorrecto";
+}
+
+$respuesta_211 = isset($_POST['respuesta_211']) ? $_POST['respuesta_211'] : '';
+if ($respuesta_211 === 'reducir') {  
+    $verificar_211 = "correcto";
+} elseif ($respuesta_211 === '') {
+    $verificar_211 = '';
+} else {
+    $verificar_211 = "incorrecto";
+}
+
+$respuesta_212 = isset($_POST['respuesta_212']) ? $_POST['respuesta_212'] : '';
+if ($respuesta_212 === 'complejidad') {  
+    $verificar_212 = "correcto";
+} elseif ($respuesta_212 === '') {
+    $verificar_212 = '';
+} else {
+    $verificar_212 = "incorrecto";
+}
+
+$respuesta_213 = isset($_POST['respuesta_213']) ? $_POST['respuesta_213'] : '';
+if ($respuesta_213 === 'misma hora') {  
+    $verificar_213 = "correcto";
+} elseif ($respuesta_213 === '') {
+    $verificar_213 = '';
+} else {
+    $verificar_213 = "incorrecto";
+}
+
+$respuesta_214 = isset($_POST['respuesta_214']) ? $_POST['respuesta_214'] : '';
+if ($respuesta_214 === 'mismo') {  
+    $verificar_214 = "correcto";
+} elseif ($respuesta_214 === '') {
+    $verificar_214 = '';
+} else {
+    $verificar_214 = "incorrecto";
+}
+
+$respuesta_215 = isset($_POST['respuesta_215']) ? $_POST['respuesta_215'] : '';
+if ($respuesta_215 === 'todos los dias') {  
+    $verificar_215 = "correcto";
+} elseif ($respuesta_215 === '') {
+    $verificar_215 = '';
+} else {
+    $verificar_215 = "incorrecto";
+}
+
+$respuesta_216 = isset($_POST['respuesta_216']) ? $_POST['respuesta_216'] : '';
+if ($respuesta_216 === 'Sprint' || $respuesta_216 === 'sprint') {  
+    $verificar_216 = "correcto";
+} elseif ($respuesta_216 === '') {
+    $verificar_216 = '';
+} else {
+    $verificar_216 = "incorrecto";
+}
+
+$respuesta_217 = isset($_POST['respuesta_217']) ? $_POST['respuesta_217'] : '';
+if ($respuesta_217 === 'Product Owner' || $respuesta_217 === 'product owner') {  
+    $verificar_217 = "correcto";
+} elseif ($respuesta_217 === '') {
+    $verificar_217 = '';
+} else {
+    $verificar_217 = "incorrecto";
+}
+
+$respuesta_218 = isset($_POST['respuesta_218']) ? $_POST['respuesta_218'] : '';
+if ($respuesta_218 === 'Scrum Master' || $respuesta_218 === 'scrum master') {  
+    $verificar_218 = "correcto";
+} elseif ($respuesta_218 === '') {
+    $verificar_218 = '';
+} else {
+    $verificar_218 = "incorrecto";
+}
+
+$respuesta_219 = isset($_POST['respuesta_219']) ? $_POST['respuesta_219'] : '';
+if ($respuesta_219 === 'Sprint Backlog' || $respuesta_219 === 'sprint backlog') {  
+    $verificar_219 = "correcto";
+} elseif ($respuesta_219 === '') {
+    $verificar_219 = '';
+} else {
+    $verificar_219 = "incorrecto";
+}
+
+$respuesta_220 = isset($_POST['respuesta_220']) ? $_POST['respuesta_220'] : '';
+if ($respuesta_220 === 'participan') {  
+    $verificar_220 = "correcto";
+} elseif ($respuesta_220 === '') {
+    $verificar_220 = '';
+} else {
+    $verificar_220 = "incorrecto";
+}
+
+$respuesta_221 = isset($_POST['respuesta_221']) ? $_POST['respuesta_221'] : '';
+if ($respuesta_221 === 'Developers' || $respuesta_221 === 'developers') {  
+    $verificar_221 = "correcto";
+} elseif ($respuesta_221 === '') {
+    $verificar_221 = '';
+} else {
+    $verificar_221 = "incorrecto";
+}
+
+$respuesta_222 = isset($_POST['respuesta_222']) ? $_POST['respuesta_222'] : '';
+if ($respuesta_222 === 'estructura') {  
+    $verificar_222 = "correcto";
+} elseif ($respuesta_222 === '') {
+    $verificar_222 = '';
+} else {
+    $verificar_222 = "incorrecto";
+}
+
+$respuesta_223 = isset($_POST['respuesta_223']) ? $_POST['respuesta_223'] : '';
+if ($respuesta_223 === 'tecnicas') {  
+    $verificar_223 = "correcto";
+} elseif ($respuesta_223 === '') {
+    $verificar_223 = '';
+} else {
+    $verificar_223 = "incorrecto";
+}
+
+$respuesta_224 = isset($_POST['respuesta_224']) ? $_POST['respuesta_224'] : '';
+if ($respuesta_224 === 'progreso') {  
+    $verificar_224 = "correcto";
+} elseif ($respuesta_224 === '') {
+    $verificar_224 = '';
+} else {
+    $verificar_224 = "incorrecto";
+}
+
+$respuesta_225 = isset($_POST['respuesta_225']) ? $_POST['respuesta_225'] : '';
+if ($respuesta_225 === 'Objetivo del Sprint' || $respuesta_225 === 'objetivo del sprint') {  
+    $verificar_225 = "correcto";
+} elseif ($respuesta_225 === '') {
+    $verificar_225 = '';
+} else {
+    $verificar_225 = "incorrecto";
+}
+
+$respuesta_226 = isset($_POST['respuesta_226']) ? $_POST['respuesta_226'] : '';
+if ($respuesta_226 === 'produzca') {  
+    $verificar_226 = "correcto";
+} elseif ($respuesta_226 === '') {
+    $verificar_226 = '';
+} else {
+    $verificar_226 = "incorrecto";
+}
+
+$respuesta_227 = isset($_POST['respuesta_227']) ? $_POST['respuesta_227'] : '';
+if ($respuesta_227 === 'plan') {  
+    $verificar_227 = "correcto";
+} elseif ($respuesta_227 === '') {
+    $verificar_227 = '';
+} else {
+    $verificar_227 = "incorrecto";
+}
+
+$respuesta_228 = isset($_POST['respuesta_228']) ? $_POST['respuesta_228'] : '';
+if ($respuesta_228 === 'dia') {  
+    $verificar_228 = "correcto";
+} elseif ($respuesta_228 === '') {
+    $verificar_228 = '';
+} else {
+    $verificar_228 = "incorrecto";
+}
+
+$respuesta_229 = isset($_POST['respuesta_229']) ? $_POST['respuesta_229'] : '';
+if ($respuesta_229 === 'comunicacion') {  
+    $verificar_229 = "correcto";
+} elseif ($respuesta_229 === '') {
+    $verificar_229 = '';
+} else {
+    $verificar_229 = "incorrecto";
+}
+
+$respuesta_230 = isset($_POST['respuesta_230']) ? $_POST['respuesta_230'] : '';
+if ($respuesta_230 === 'impedimentos') {  
+    $verificar_230 = "correcto";
+} elseif ($respuesta_230 === '') {
+    $verificar_230 = '';
+} else {
+    $verificar_230 = "incorrecto";
+}
+ 
+
+
+$respuesta_231 = isset($_POST['respuesta_231']) ? $_POST['respuesta_231'] : '';
+if ($respuesta_231 === 'promueven') {  
+    $verificar_231 = "correcto";
+} elseif ($respuesta_231 === '') {
+    $verificar_231 = '';
+} else {
+    $verificar_231 = "incorrecto";
+}
+
+$respuesta_232 = isset($_POST['respuesta_232']) ? $_POST['respuesta_232'] : '';
+if ($respuesta_232 === 'eliminan') {  
+    $verificar_232 = "correcto";
+} elseif ($respuesta_232 === '') {
+    $verificar_232 = '';
+} else {
+    $verificar_232 = "incorrecto";
+}
+
+$respuesta_233 = isset($_POST['respuesta_233']) ? $_POST['respuesta_233'] : '';
+if ($respuesta_233 === 'no es') {  
+    $verificar_233 = "correcto";
+} elseif ($respuesta_233 === '') {
+    $verificar_233 = '';
+} else {
+    $verificar_233 = "incorrecto";
+}
+
+$respuesta_234 = isset($_POST['respuesta_234']) ? $_POST['respuesta_234'] : '';
+if ($respuesta_234 === 'Developers' || $respuesta_234 === 'developers') {  
+    $verificar_234 = "correcto";
+} elseif ($respuesta_234 === '') {
+    $verificar_234 = '';
+} else {
+    $verificar_234 = "incorrecto";
+}
+
+$respuesta_235 = isset($_POST['respuesta_235']) ? $_POST['respuesta_235'] : '';
+if ($respuesta_235 === 'dia') {  
+    $verificar_235 = "correcto";
+} elseif ($respuesta_235 === '') {
+    $verificar_235 = '';
+} else {
+    $verificar_235 = "incorrecto";
+}
+
+$respuesta_236 = isset($_POST['respuesta_236']) ? $_POST['respuesta_236'] : '';
+if ($respuesta_236 === 'detalladas') {  
+    $verificar_236 = "correcto";
+} elseif ($respuesta_236 === '') {
+    $verificar_236 = '';
+} else {
+    $verificar_236 = "incorrecto";
+}
+
+$respuesta_237 = isset($_POST['respuesta_237']) ? $_POST['respuesta_237'] : '';
+if ($respuesta_237 === 'adaptar') {  
+    $verificar_237 = "correcto";
+} elseif ($respuesta_237 === '') {
+    $verificar_237 = '';
+} else {
+    $verificar_237 = "incorrecto";
+}
+
+$respuesta_238 = isset($_POST['respuesta_238']) ? $_POST['respuesta_238'] : '';
+if ($respuesta_238 === 'trabajo') {  
+    $verificar_238 = "correcto";
+} elseif ($respuesta_238 === '') {
+    $verificar_238 = '';
+} else {
+    $verificar_238 = "incorrecto";
+}
+
+$respuesta_239 = isset($_POST['respuesta_239']) ? $_POST['respuesta_239'] : '';
+if ($respuesta_239 === 'proposito') {  
+    $verificar_239 = "correcto";
+} elseif ($respuesta_239 === '') {
+    $verificar_239 = '';
+} else {
+    $verificar_239 = "incorrecto";
+}
+
+$respuesta_240 = isset($_POST['respuesta_240']) ? $_POST['respuesta_240'] : '';
+if ($respuesta_240 === 'inspeccionar') {  
+    $verificar_240 = "correcto";
+} elseif ($respuesta_240 === '') {
+    $verificar_240 = '';
+} else {
+    $verificar_240 = "incorrecto";
+}
+
+$respuesta_241 = isset($_POST['respuesta_241']) ? $_POST['respuesta_241'] : '';
+if ($respuesta_241 === 'resultado') {  
+    $verificar_241 = "correcto";
+} elseif ($respuesta_241 === '') {
+    $verificar_241 = '';
+} else {
+    $verificar_241 = "incorrecto";
+}
+
+$respuesta_242 = isset($_POST['respuesta_242']) ? $_POST['respuesta_242'] : '';
+if ($respuesta_242 === 'Sprint'  || $respuesta_242 === 'sprint') {  
+    $verificar_242 = "correcto";
+} elseif ($respuesta_242 === '') {
+    $verificar_242 = '';
+} else {
+    $verificar_242 = "incorrecto";
+}
+
+$respuesta_243 = isset($_POST['respuesta_243']) ? $_POST['respuesta_243'] : '';
+if ($respuesta_243 === 'adaptaciones') {  
+    $verificar_243 = "correcto";
+} elseif ($respuesta_243 === '') {
+    $verificar_243 = '';
+} else {
+    $verificar_243 = "incorrecto";
+}
+
+$respuesta_244 = isset($_POST['respuesta_244']) ? $_POST['respuesta_244'] : '';
+if ($respuesta_244 === 'Scrum Team' || $respuesta_244 === 'scrum team') {  
+    $verificar_244 = "correcto";
+} elseif ($respuesta_244 === '') {
+    $verificar_244 = '';
+} else {
+    $verificar_244 = "incorrecto";
+}
+
+$respuesta_245 = isset($_POST['respuesta_245']) ? $_POST['respuesta_245'] : '';
+if ($respuesta_245 === 'resultados' ) {  
+    $verificar_245 = "correcto";
+} elseif ($respuesta_245 === '') {
+    $verificar_245 = '';
+} else {
+    $verificar_245 = "incorrecto";
+}
+
+$respuesta_246 = isset($_POST['respuesta_246']) ? $_POST['respuesta_246'] : '';
+if ($respuesta_246 === 'interesados') {  
+    $verificar_246 = "correcto";
+} elseif ($respuesta_246 === '') {
+    $verificar_246 = '';
+} else {
+    $verificar_246 = "incorrecto";
+}
+
+$respuesta_247 = isset($_POST['respuesta_247']) ? $_POST['respuesta_247'] : '';
+if ($respuesta_247 === 'progreso') {  
+    $verificar_247 = "correcto";
+} elseif ($respuesta_247 === '') {
+    $verificar_247 = '';
+} else {
+    $verificar_247 = "incorrecto";
+}
+
+$respuesta_248 = isset($_POST['respuesta_248']) ? $_POST['respuesta_248'] : '';
+if ($respuesta_248 === 'Objetivo del Producto' || $respuesta_248 === 'objetivo del producto') {  
+    $verificar_248 = "correcto";
+} elseif ($respuesta_248 === '') {
+    $verificar_248 = '';
+} else {
+    $verificar_248 = "incorrecto";
+}
+
+$respuesta_249 = isset($_POST['respuesta_249']) ? $_POST['respuesta_249'] : '';
+if ($respuesta_249 === 'Scrum Team' ||$respuesta_249 === 'scrum team') {  
+    $verificar_249 = "correcto";
+} elseif ($respuesta_249 === '') {
+    $verificar_249 = '';
+} else {
+    $verificar_249 = "incorrecto";
+}
+
+$respuesta_250 = isset($_POST['respuesta_250']) ? $_POST['respuesta_250'] : '';
+if ($respuesta_250 === 'interesados') {  
+    $verificar_250 = "correcto";
+} elseif ($respuesta_250 === '') {
+    $verificar_250 = '';
+} else {
+    $verificar_250 = "incorrecto";
+}
+ 
+
+$respuesta_251 = isset($_POST['respuesta_251']) ? $_POST['respuesta_251'] : '';
+if ($respuesta_251 === 'logro') {  
+    $verificar_251 = "correcto";
+} elseif ($respuesta_251 === '') {
+    $verificar_251 = '';
+} else {
+    $verificar_251 = "incorrecto";
+}
+
+$respuesta_252 = isset($_POST['respuesta_252']) ? $_POST['respuesta_252'] : '';
+if ($respuesta_252 === 'Sprint') {  
+    $verificar_252 = "correcto";
+} elseif ($respuesta_252 === '') {
+    $verificar_252 = '';
+} else {
+    $verificar_252 = "incorrecto";
+}
+
+$respuesta_253 = isset($_POST['respuesta_253']) ? $_POST['respuesta_253'] : '';
+if ($respuesta_253 === 'cambiado') {  
+    $verificar_253 = "correcto";
+} elseif ($respuesta_253 === '') {
+    $verificar_253 = '';
+} else {
+    $verificar_253 = "incorrecto";
+}
+
+$respuesta_254 = isset($_POST['respuesta_254']) ? $_POST['respuesta_254'] : '';
+if ($respuesta_254 === 'entorno') {  
+    $verificar_254 = "correcto";
+} elseif ($respuesta_254 === '') {
+    $verificar_254 = '';
+} else {
+    $verificar_254 = "incorrecto";
+}
+
+$respuesta_255 = isset($_POST['respuesta_255']) ? $_POST['respuesta_255'] : '';
+if ($respuesta_255 === 'base') {  
+    $verificar_255 = "correcto";
+} elseif ($respuesta_255 === '') {
+    $verificar_255 = '';
+} else {
+    $verificar_255 = "incorrecto";
+}
+
+$respuesta_256 = isset($_POST['respuesta_256']) ? $_POST['respuesta_256'] : '';
+if ($respuesta_256 === 'asistentes') {  
+    $verificar_256 = "correcto";
+} elseif ($respuesta_256 === '') {
+    $verificar_256 = '';
+} else {
+    $verificar_256 = "incorrecto";
+}
+
+$respuesta_257 = isset($_POST['respuesta_257']) ? $_POST['respuesta_257'] : '';
+if ($respuesta_257 === 'qué hacer' ||$respuesta_257 === 'que hacer') {  
+    $verificar_257 = "correcto";
+} elseif ($respuesta_257 === '') {
+    $verificar_257 = '';
+} else {
+    $verificar_257 = "incorrecto";
+}
+
+$respuesta_258 = isset($_POST['respuesta_258']) ? $_POST['respuesta_258'] : '';
+if ($respuesta_258 === 'Product Backlog') {  
+    $verificar_258 = "correcto";
+} elseif ($respuesta_258 === '') {
+    $verificar_258 = '';
+} else {
+    $verificar_258 = "incorrecto";
+}
+
+$respuesta_259 = isset($_POST['respuesta_259']) ? $_POST['respuesta_259'] : '';
+if ($respuesta_259 === 'ajustar') {  
+    $verificar_259 = "correcto";
+} elseif ($respuesta_259 === '') {
+    $verificar_259 = '';
+} else {
+    $verificar_259 = "incorrecto";
+}
+
+$respuesta_260 = isset($_POST['respuesta_260']) ? $_POST['respuesta_260'] : '';
+if ($respuesta_260 === 'oportunidades') {  
+    $verificar_260 = "correcto";
+} elseif ($respuesta_260 === '') {
+    $verificar_260 = '';
+} else {
+    $verificar_260 = "incorrecto";
+}
+
+$respuesta_261 = isset($_POST['respuesta_261']) ? $_POST['respuesta_261'] : '';
+if ($respuesta_261 === 'Sprint Review') {  
+    $verificar_261 = "correcto";
+} elseif ($respuesta_261 === '') {
+    $verificar_261 = '';
+} else {
+    $verificar_261 = "incorrecto";
+}
+
+$respuesta_262 = isset($_POST['respuesta_262']) ? $_POST['respuesta_262'] : '';
+if ($respuesta_262 === 'trabajo') {  
+    $verificar_262 = "correcto";
+} elseif ($respuesta_262 === '') {
+    $verificar_262 = '';
+} else {
+    $verificar_262 = "incorrecto";
+}
+
+$respuesta_263 = isset($_POST['respuesta_263']) ? $_POST['respuesta_263'] : '';
+if ($respuesta_263 === 'Scrum Team') {  
+    $verificar_263 = "correcto";
+} elseif ($respuesta_263 === '') {
+    $verificar_263 = '';
+} else {
+    $verificar_263 = "incorrecto";
+}
+
+$respuesta_264 = isset($_POST['respuesta_264']) ? $_POST['respuesta_264'] : '';
+if ($respuesta_264 === 'limitarla') {  
+    $verificar_264 = "correcto";
+} elseif ($respuesta_264 === '') {
+    $verificar_264 = '';
+} else {
+    $verificar_264 = "incorrecto";
+}
+
+$respuesta_265 = isset($_POST['respuesta_265']) ? $_POST['respuesta_265'] : '';
+if ($respuesta_265 === 'presentacion') {  
+    $verificar_265 = "correcto";
+} elseif ($respuesta_265 === '') {
+    $verificar_265 = '';
+} else {
+    $verificar_265 = "incorrecto";
+}
+
+$respuesta_266 = isset($_POST['respuesta_266']) ? $_POST['respuesta_266'] : '';
+if ($respuesta_266 === 'penultimo') {  
+    $verificar_266 = "correcto";
+} elseif ($respuesta_266 === '') {
+    $verificar_266 = '';
+} else {
+    $verificar_266 = "incorrecto";
+}
+
+$respuesta_267 = isset($_POST['respuesta_267']) ? $_POST['respuesta_267'] : '';
+if ($respuesta_267 === 'limite') {  
+    $verificar_267 = "correcto";
+} elseif ($respuesta_267 === '') {
+    $verificar_267 = '';
+} else {
+    $verificar_267 = "incorrecto";
+}
+
+$respuesta_268 = isset($_POST['respuesta_268']) ? $_POST['respuesta_268'] : '';
+if ($respuesta_268 === 'cuatro horas') {  
+    $verificar_268 = "correcto";
+} elseif ($respuesta_268 === '') {
+    $verificar_268 = '';
+} else {
+    $verificar_268 = "incorrecto";
+}
+
+$respuesta_269 = isset($_POST['respuesta_269']) ? $_POST['respuesta_269'] : '';
+if ($respuesta_269 === 'Sprint' || $respuesta_269 === 'sprint') {  
+    $verificar_269 = "correcto";
+} elseif ($respuesta_269 === '') {
+    $verificar_269 = '';
+} else {
+    $verificar_269 = "incorrecto";
+}
+
+$respuesta_270 = isset($_POST['respuesta_270']) ? $_POST['respuesta_270'] : '';
+if ($respuesta_270 === 'mes') {  
+    $verificar_270 = "correcto";
+} elseif ($respuesta_270 === '') {
+    $verificar_270 = '';
+} else {
+    $verificar_270 = "incorrecto";
+}
+
+$respuesta_271 = isset($_POST['respuesta_271']) ? $_POST['respuesta_271'] : '';
+if ($respuesta_271 === 'cortos') {  
+    $verificar_271 = "correcto";
+} elseif ($respuesta_271 === '') {
+    $verificar_271 = '';
+} else {
+    $verificar_271 = "incorrecto";
+}
+
+$respuesta_272 = isset($_POST['respuesta_272']) ? $_POST['respuesta_272'] : '';
+if ($respuesta_272 === 'menor') {  
+    $verificar_272 = "correcto";
+} elseif ($respuesta_272 === '') {
+    $verificar_272 = '';
+} else {
+    $verificar_272 = "incorrecto";
+}
+
+$respuesta_273 = isset($_POST['respuesta_273']) ? $_POST['respuesta_273'] : '';
+if ($respuesta_273 === 'planificar') {  
+    $verificar_273 = "correcto";
+} elseif ($respuesta_273 === '') {
+    $verificar_273 = '';
+} else {
+    $verificar_273 = "incorrecto";
+}
+
+$respuesta_274 = isset($_POST['respuesta_274']) ? $_POST['respuesta_274'] : '';
+if ($respuesta_274 === 'aumentar') {  
+    $verificar_274 = "correcto";
+} elseif ($respuesta_274 === '') {
+    $verificar_274 = '';
+} else {
+    $verificar_274 = "incorrecto";
+}
+
+$respuesta_275 = isset($_POST['respuesta_275']) ? $_POST['respuesta_275'] : '';
+if ($respuesta_275 === 'calidad') {  
+    $verificar_275 = "correcto";
+} elseif ($respuesta_275 === '') {
+    $verificar_275 = '';
+} else {
+    $verificar_275 = "incorrecto";
+}
+
+$respuesta_276 = isset($_POST['respuesta_276']) ? $_POST['respuesta_276'] : '';
+if ($respuesta_276 === 'efectividad') {  
+    $verificar_276 = "correcto";
+} elseif ($respuesta_276 === '') {
+    $verificar_276 = '';
+} else {
+    $verificar_276 = "incorrecto";
+}
+
+$respuesta_277 = isset($_POST['respuesta_277']) ? $_POST['respuesta_277'] : '';
+if ($respuesta_277 === 'Scrum Team' || $respuesta_277 === 'scrum team') {  
+    $verificar_277 = "correcto";
+} elseif ($respuesta_277 === '') {
+    $verificar_277 = '';
+} else {
+    $verificar_277 = "incorrecto";
+}
+
+$respuesta_278 = isset($_POST['respuesta_278']) ? $_POST['respuesta_278'] : '';
+if ($respuesta_278 === 'Sprint' || $respuesta_278 === 'sprint') {  
+    $verificar_278 = "correcto";
+} elseif ($respuesta_278 === '') {
+    $verificar_278 = '';
+} else {
+    $verificar_278 = "incorrecto";
+}
+
+$respuesta_279 = isset($_POST['respuesta_279']) ? $_POST['respuesta_279'] : '';
+if ($respuesta_279 === 'personas') {  
+    $verificar_279 = "correcto";
+} elseif ($respuesta_279 === '') {
+    $verificar_279 = '';
+} else {
+    $verificar_279 = "incorrecto";
+}
+
+$respuesta_280 = isset($_POST['respuesta_280']) ? $_POST['respuesta_280'] : '';
+if ($respuesta_280 === 'interacciones') {  
+    $verificar_280 = "correcto";
+} elseif ($respuesta_280 === '') {
+    $verificar_280 = '';
+} else {
+    $verificar_280 = "incorrecto";
+}
+
+
+$respuesta_281 = isset($_POST['respuesta_281']) ? $_POST['respuesta_281'] : '';
+if ($respuesta_281 === 'procesos') {  
+    $verificar_281 = "correcto";
+} elseif ($respuesta_281 === '') {
+    $verificar_281 = '';
+} else {
+    $verificar_281 = "incorrecto";
+}
+
+$respuesta_282 = isset($_POST['respuesta_282']) ? $_POST['respuesta_282'] : '';
+if ($respuesta_282 === 'herramientas') {  
+    $verificar_282 = "correcto";
+} elseif ($respuesta_282 === '') {
+    $verificar_282 = '';
+} else {
+    $verificar_282 = "incorrecto";
+}
+
+$respuesta_283 = isset($_POST['respuesta_283']) ? $_POST['respuesta_283'] : '';
+if ($respuesta_283 === 'definicion de terminado' || $respuesta_283 === 'definicion de terminado') {  
+    $verificar_283 = "correcto";
+} elseif ($respuesta_283 === '') {
+    $verificar_283 = '';
+} else {
+    $verificar_283 = "incorrecto";
+}
+
+$respuesta_284 = isset($_POST['respuesta_284']) ? $_POST['respuesta_284'] : '';
+if ($respuesta_284 === 'variar') {  
+    $verificar_284 = "correcto";
+} elseif ($respuesta_284 === '') {
+    $verificar_284 = '';
+} else {
+    $verificar_284 = "incorrecto";
+}
+
+$respuesta_285 = isset($_POST['respuesta_285']) ? $_POST['respuesta_285'] : '';
+if ($respuesta_285 === 'ambito') {  
+    $verificar_285 = "correcto";
+} elseif ($respuesta_285 === '') {
+    $verificar_285 = '';
+} else {
+    $verificar_285 = "incorrecto";
+}
+
+$respuesta_286 = isset($_POST['respuesta_286']) ? $_POST['respuesta_286'] : '';
+if ($respuesta_286 === 'supuestos') {  
+    $verificar_286 = "correcto";
+} elseif ($respuesta_286 === '') {
+    $verificar_286 = '';
+} else {
+    $verificar_286 = "incorrecto";
+}
+
+$respuesta_287 = isset($_POST['respuesta_287']) ? $_POST['respuesta_287'] : '';
+if ($respuesta_287 === 'mal') {  
+    $verificar_287 = "correcto";
+} elseif ($respuesta_287 === '') {
+    $verificar_287 = '';
+} else {
+    $verificar_287 = "incorrecto";
+}
+
+$respuesta_288 = isset($_POST['respuesta_288']) ? $_POST['respuesta_288'] : '';
+if ($respuesta_288 === 'origenes') {  
+    $verificar_288 = "correcto";
+} elseif ($respuesta_288 === '') {
+    $verificar_288 = '';
+} else {
+    $verificar_288 = "incorrecto";
+}
+
+$respuesta_289 = isset($_POST['respuesta_289']) ? $_POST['respuesta_289'] : '';
+if ($respuesta_289 === 'Scrum Team' || $respuesta_289 === 'scrum team') {  
+    $verificar_289 = "correcto";
+} elseif ($respuesta_289 === '') {
+    $verificar_289 = '';
+} else {
+    $verificar_289 = "incorrecto";
+}
+
+$respuesta_290 = isset($_POST['respuesta_290']) ? $_POST['respuesta_290'] : '';
+if ($respuesta_290 === 'bien') {  
+    $verificar_290 = "correcto";
+} elseif ($respuesta_290 === '') {
+    $verificar_290 = '';
+} else {
+    $verificar_290 = "incorrecto";
+}
+
+$respuesta_291 = isset($_POST['respuesta_291']) ? $_POST['respuesta_291'] : '';
+if ($respuesta_291 === 'encontro') {  
+    $verificar_291 = "correcto";
+} elseif ($respuesta_291 === '') {
+    $verificar_291 = '';
+} else {
+    $verificar_291 = "incorrecto";
+}
+
+$respuesta_292 = isset($_POST['respuesta_292']) ? $_POST['respuesta_292'] : '';
+if ($respuesta_292 === 'resolvieron') {  
+    $verificar_292 = "correcto";
+} elseif ($respuesta_292 === '') {
+    $verificar_292 = '';
+} else {
+    $verificar_292 = "incorrecto";
+}
+
+$respuesta_293 = isset($_POST['respuesta_293']) ? $_POST['respuesta_293'] : '';
+if ($respuesta_293 === 'identifica') {  
+    $verificar_293 = "correcto";
+} elseif ($respuesta_293 === '') {
+    $verificar_293 = '';
+} else {
+    $verificar_293 = "incorrecto";
+}
+
+$respuesta_294 = isset($_POST['respuesta_294']) ? $_POST['respuesta_294'] : '';
+if ($respuesta_294 === 'cambios') {  
+    $verificar_294 = "correcto";
+} elseif ($respuesta_294 === '') {
+    $verificar_294 = '';
+} else {
+    $verificar_294 = "incorrecto";
+}
+
+$respuesta_295 = isset($_POST['respuesta_295']) ? $_POST['respuesta_295'] : '';
+if ($respuesta_295 === 'mejorar') {  
+    $verificar_295 = "correcto";
+} elseif ($respuesta_295 === '') {
+    $verificar_295 = '';
+} else {
+    $verificar_295 = "incorrecto";
+}
+
+$respuesta_296 = isset($_POST['respuesta_296']) ? $_POST['respuesta_296'] : '';
+if ($respuesta_296 === 'efectividad') {  
+    $verificar_296 = "correcto";
+} elseif ($respuesta_296 === '') {
+    $verificar_296 = '';
+} else {
+    $verificar_296 = "incorrecto";
+}
+
+$respuesta_297 = isset($_POST['respuesta_297']) ? $_POST['respuesta_297'] : '';
+if ($respuesta_297 === 'mejoras') {  
+    $verificar_297 = "correcto";
+} elseif ($respuesta_297 === '') {
+    $verificar_297 = '';
+} else {
+    $verificar_297 = "incorrecto";
+}
+
+$respuesta_298 = isset($_POST['respuesta_298']) ? $_POST['respuesta_298'] : '';
+if ($respuesta_298 === 'antes') {  
+    $verificar_298 = "correcto";
+} elseif ($respuesta_298 === '') {
+    $verificar_298 = '';
+} else {
+    $verificar_298 = "incorrecto";
+}
+
+$respuesta_299 = isset($_POST['respuesta_299']) ? $_POST['respuesta_299'] : '';
+if ($respuesta_299 === 'agregar') {  
+    $verificar_299 = "correcto";
+} elseif ($respuesta_299 === '') {
+    $verificar_299 = '';
+} else {
+    $verificar_299 = "incorrecto";
+}
+
+$respuesta_300 = isset($_POST['respuesta_300']) ? $_POST['respuesta_300'] : '';
+if ($respuesta_300 === 'Sprint Backlog') {  
+    $verificar_300 = "correcto";
+} elseif ($respuesta_300 === '') {
+    $verificar_300 = '';
+} else {
+    $verificar_300 = "incorrecto";
+}
+
+$respuesta_301 = isset($_POST['respuesta_301']) ? $_POST['respuesta_301'] : '';
+if ($respuesta_301 === 'proximo') {  
+    $verificar_301 = "correcto";
+} elseif ($respuesta_301 === '') {
+    $verificar_301 = '';
+} else {
+    $verificar_301 = "incorrecto";
+}
+
+$respuesta_302 = isset($_POST['respuesta_302']) ? $_POST['respuesta_302'] : '';
+if ($respuesta_302 === 'Sprint') {  
+    $verificar_302 = "correcto";
+} elseif ($respuesta_302 === '') {
+    $verificar_302 = '';
+} else {
+    $verificar_302 = "incorrecto";
+}
+
+$respuesta_303 = isset($_POST['respuesta_303']) ? $_POST['respuesta_303'] : '';
+if ($respuesta_303 === 'tres horas') {  
+    $verificar_303 = "correcto";
+} elseif ($respuesta_303 === '') {
+    $verificar_303 = '';
+} else {
+    $verificar_303 = "incorrecto";
+}
+
+$respuesta_304 = isset($_POST['respuesta_304']) ? $_POST['respuesta_304'] : '';
+if ($respuesta_304 === 'Sprint') {  
+    $verificar_304 = "correcto";
+} elseif ($respuesta_304 === '') {
+    $verificar_304 = '';
+} else {
+    $verificar_304 = "incorrecto";
+}
+
+$respuesta_305 = isset($_POST['respuesta_305']) ? $_POST['respuesta_305'] : '';
+if ($respuesta_305 === 'un mes') {  
+    $verificar_305 = "correcto";
+} elseif ($respuesta_305 === '') {
+    $verificar_305 = '';
+} else {
+    $verificar_305 = "incorrecto";
+}
+
+$respuesta_306 = isset($_POST['respuesta_306']) ? $_POST['respuesta_306'] : '';
+if ($respuesta_306 === 'cortos') {  
+    $verificar_306 = "correcto";
+} elseif ($respuesta_306 === '') {
+    $verificar_306 = '';
+} else {
+    $verificar_306 = "incorrecto";
+}
+
+$respuesta_307 = isset($_POST['respuesta_307']) ? $_POST['respuesta_307'] : '';
+if ($respuesta_307 === 'menor') {  
+    $verificar_307 = "correcto";
+} elseif ($respuesta_307 === '') {
+    $verificar_307 = '';
+} else {
+    $verificar_307 = "incorrecto";
+}
+
+$respuesta_308 = isset($_POST['respuesta_308']) ? $_POST['respuesta_308'] : '';
+if ($respuesta_308 === '328') {  
+    $verificar_308 = "correcto";
+} elseif ($respuesta_308 === '') {
+    $verificar_308 = '';
+} else {
+    $verificar_308 = "incorrecto";
+}
+
+$respuesta_309 = isset($_POST['respuesta_309']) ? $_POST['respuesta_309'] : '';
+if ($respuesta_309 === '329') {  
+    $verificar_309 = "correcto";
+} elseif ($respuesta_309 === '') {
+    $verificar_309 = '';
+} else {
+    $verificar_309 = "incorrecto";
+}
+
+$respuesta_310 = isset($_POST['respuesta_310']) ? $_POST['respuesta_310'] : '';
+if ($respuesta_310 === '330') {  
+    $verificar_310 = "correcto";
+} elseif ($respuesta_310 === '') {
+    $verificar_310 = '';
+} else {
+    $verificar_310 = "incorrecto";
+}
+
 }
 }
 ?>
@@ -1776,20 +3697,255 @@ function ocultarMensaje4() {
     de Scrum dentro de la organización;</li>
     <li>Ayudar a los 
     <input type="text" name="respuesta_51" value="<?php echo $respuesta_51; ?>" size="9">    
-     y los 
+    y los 
     <input type="text" name="respuesta_52" value="<?php echo $respuesta_52; ?>" size="9">
-     a comprender y aplicar un enfoque 
+    a comprender y aplicar un enfoque 
     <input type="text" name="respuesta_53" value="<?php echo $respuesta_53; ?>" size="9">
-     para el trabajo complejo; y,</li>
+    para el trabajo complejo; y,</li>
     <li>Eliminar las 
     <input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>" size="9">    
-     entre los 
+    entre los 
     <input type="text" name="respuesta_55" value="<?php echo $respuesta_55; ?>" size="9">
-     y los 
+    y los 
     <input type="text" name="respuesta_56" value="<?php echo $respuesta_56; ?>" size="9">
     .</li>
     </ul>
  
+
+    <h2>Eventos de Scrum</h2>
+    <p>
+    El 
+    <input type="text" name="respuesta_57" value="<?php echo $respuesta_57; ?>" size="9">
+    es un 
+    <input type="text" name="respuesta_58" value="<?php echo $respuesta_58; ?>" size="9">
+    para 
+    <input type="text" name="respuesta_59" value="<?php echo $respuesta_59; ?>" size="9">
+     los demás eventos. Cada evento en Scrum es una 
+    <input type="text" name="respuesta_60" value="<?php echo $respuesta_60; ?>" size="9">
+    formal para 
+    <input type="text" name="respuesta_61" value="<?php echo $respuesta_61; ?>" size="9">
+    y 
+    <input type="text" name="respuesta_62" value="<?php echo $respuesta_62; ?>" size="9">
+    los 
+    <input type="text" name="respuesta_63" value="<?php echo $respuesta_63; ?>" size="9">
+    Scrum. Estos eventos están 
+    <input type="text" name="respuesta_64" value="<?php echo $respuesta_64; ?>" size="9">
+    específicamente
+    para habilitar la 
+    <input type="text" name="respuesta_65" value="<?php echo $respuesta_65; ?>" size="9">
+    requerida. 
+    <input type="text" name="respuesta_66" value="<?php echo $respuesta_66; ?>" size="9">
+    operar cualquier evento según lo prescrito resulta en la
+    <input type="text" name="respuesta_67" value="<?php echo $respuesta_67; ?>" size="9">
+    de oportunidades para inspeccionar y adaptarse. Los eventos se utilizan en Scrum para crear
+    <input type="text" name="respuesta_68" value="<?php echo $respuesta_68; ?>" size="9">
+    y 
+    <input type="text" name="respuesta_69" value="<?php echo $respuesta_69; ?>" size="9">
+    la necesidad de 
+    <input type="text" name="respuesta_70" value="<?php echo $respuesta_70; ?>" size="9">
+    no definidas en Scrum.
+    Lo óptimo es que todos los eventos se celebren al 
+    <input type="text" name="respuesta_71" value="<?php echo $respuesta_71; ?>" size="9">
+    y en el
+    <input type="text" name="respuesta_72" value="<?php echo $respuesta_72; ?>" size="9">
+    para reducir la
+    complejidad.
+    </p>
+
+    <h3>El Sprint</h3>
+    
+    <p>
+    Los Sprints son el corazón de Scrum, donde las 
+    <input type="text" name="respuesta_73" value="<?php echo $respuesta_73; ?>" size="9">
+    se 
+    <input type="text" name="respuesta_74" value="<?php echo $respuesta_74; ?>" size="9">
+     en 
+    <input type="text" name="respuesta_75" value="<?php echo $respuesta_75; ?>" size="9">
+    .
+    Son 
+    <input type="text" name="respuesta_76" value="<?php echo $respuesta_76; ?>" size="9">
+     de 
+    <input type="text" name="respuesta_77" value="<?php echo $respuesta_77; ?>" size="9">
+     fija de 
+    <input type="text" name="respuesta_78" value="<?php echo $respuesta_78; ?>" size="9">
+     o 
+    <input type="text" name="respuesta_79" value="<?php echo $respuesta_79; ?>" size="9">
+     para crear 
+    <input type="text" name="respuesta_80" value="<?php echo $respuesta_80; ?>" size="9">
+    . Un nuevo Sprint 
+    <input type="text" name="respuesta_81" value="<?php echo $respuesta_81; ?>" size="9">
+    inmediatamente después de la 
+    <input type="text" name="respuesta_82" value="<?php echo $respuesta_82; ?>" size="9">
+     del Sprint anterior.
+    Todo el 
+    <input type="text" name="respuesta_83" value="<?php echo $respuesta_83; ?>" size="9">
+     necesario para lograr el 
+    <input type="text" name="respuesta_84" value="<?php echo $respuesta_84; ?>" size="9">
+    , incluido la 
+    <input type="text" name="respuesta_85" value="<?php echo $respuesta_85; ?>" size="9">
+    , 
+    <input type="text" name="respuesta_86" value="<?php echo $respuesta_86; ?>" size="9">
+    ,
+    <input type="text" name="respuesta_87" value="<?php echo $respuesta_87; ?>" size="9">
+     y 
+    <input type="text" name="respuesta_88" value="<?php echo $respuesta_88; ?>" size="9">
+    , ocurre 
+    <input type="text" name="respuesta_89" value="<?php echo $respuesta_89; ?>" size="9">
+     de los Sprints.
+    </p>
+  
+    <p>Durante el Sprint:</p>
+    <ul>
+    <li>
+    <input type="text" name="respuesta_90" value="<?php echo $respuesta_90; ?>" size="9">    
+    realizan 
+    cambios que pongan en 
+    <input type="text" name="respuesta_91" value="<?php echo $respuesta_91; ?>" size="9">
+     el 
+    <input type="text" name="respuesta_92" value="<?php echo $respuesta_92; ?>" size="9">
+     del 
+    <input type="text" name="respuesta_93" value="<?php echo $respuesta_93; ?>" size="9">
+    ;</li>
+    <li>La 
+    <input type="text" name="respuesta_94" value="<?php echo $respuesta_94; ?>" size="9">    
+     no 
+    <input type="text" name="respuesta_95" value="<?php echo $respuesta_95; ?>" size="9">
+    ;</li>
+    <li>El 
+    <input type="text" name="respuesta_96" value="<?php echo $respuesta_96; ?>" size="9">    
+     se 
+    <input type="text" name="respuesta_97" value="<?php echo $respuesta_97; ?>" size="9">
+     según sea 
+    <input type="text" name="respuesta_98" value="<?php echo $respuesta_98; ?>" size="9">
+    ; y,</li>
+    <li>El 
+    <input type="text" name="respuesta_99" value="<?php echo $respuesta_99; ?>" size="9">    
+     se puede 
+    <input type="text" name="respuesta_100" value="<?php echo $respuesta_100; ?>" size="9">
+     y renegociar con el 
+    <input type="text" name="respuesta_101" value="<?php echo $respuesta_101; ?>" size="9">
+     a medida que se aprende más.</li>
+    </ul>
+    <p>
+    Los Sprints permiten la 
+    <input type="text" name="respuesta_102" value="<?php echo $respuesta_102; ?>" size="9">
+     al garantizar la 
+    <input type="text" name="respuesta_103" value="<?php echo $respuesta_103; ?>" size="9">
+     y 
+    <input type="text" name="respuesta_104" value="<?php echo $respuesta_104; ?>" size="9">
+     del 
+    <input type="text" name="respuesta_105" value="<?php echo $respuesta_105; ?>" size="9">
+     hacia un
+    <input type="text" name="respuesta_106" value="<?php echo $respuesta_106; ?>" size="9">
+     al menos cada 
+    <input type="text" name="respuesta_107" value="<?php echo $respuesta_107; ?>" size="9">
+     calendario. Cuando el horizonte de un Sprint es demasiado
+    <input type="text" name="respuesta_108" value="<?php echo $respuesta_108; ?>" size="9">
+    , el Objetivo del Sprint puede volverse 
+    <input type="text" name="respuesta_109" value="<?php echo $respuesta_109; ?>" size="9">
+    , la 
+    <input type="text" name="respuesta_110" value="<?php echo $respuesta_110; ?>" size="9">
+     puede crecer y el riesgo puede
+    aumentar. Se pueden emplear Sprints más 
+    <input type="text" name="respuesta_111" value="<?php echo $respuesta_111; ?>" size="9">
+     para generar 
+    <input type="text" name="respuesta_112" value="<?php echo $respuesta_112; ?>" size="9">
+     ciclos de aprendizaje y limitar el
+    <input type="text" name="respuesta_113" value="<?php echo $respuesta_113; ?>" size="9">
+     de 
+    <input type="text" name="respuesta_114" value="<?php echo $respuesta_114; ?>" size="9">
+     y 
+    <input type="text" name="respuesta_115" value="<?php echo $respuesta_115; ?>" size="9">
+     a un período de tiempo 
+    <input type="text" name="respuesta_116" value="<?php echo $respuesta_116; ?>" size="9">
+    . Cada Sprint puede considerarse un proyecto
+    <input type="text" name="respuesta_117" value="<?php echo $respuesta_117; ?>" size="9">
+    .
+    </p>
+    
+    <p>
+    Existen varias 
+    <input type="text" name="respuesta_118" value="<?php echo $respuesta_118; ?>" size="9">
+     para pronosticar el 
+    <input type="text" name="respuesta_119" value="<?php echo $respuesta_119; ?>" size="9">
+    , como el 
+    <input type="text" name="respuesta_120" value="<?php echo $respuesta_120; ?>" size="9">
+     (
+    <input type="text" name="respuesta_121" value="<?php echo $respuesta_121; ?>" size="9">
+     ), 
+    <input type="text" name="respuesta_122" value="<?php echo $respuesta_122; ?>" size="9">
+    (<input type="text" name="respuesta_123" value="<?php echo $respuesta_123; ?>" size="9">
+    ) o 
+    <input type="text" name="respuesta_124" value="<?php echo $respuesta_124; ?>" size="9">
+      (
+    <input type="text" name="respuesta_125" value="<?php echo $respuesta_125; ?>" size="9">
+     ). Si bien han demostrado su utilidad, no
+    <input type="text" name="respuesta_126" value="<?php echo $respuesta_126; ?>" size="9">
+     la importancia del 
+    <input type="text" name="respuesta_127" value="<?php echo $respuesta_127; ?>" size="9">
+    . En entornos complejos, se 
+    <input type="text" name="respuesta_128" value="<?php echo $respuesta_128; ?>" size="9">
+     lo que sucederá. Solo lo
+    que ya ha 
+    <input type="text" name="respuesta_129" value="<?php echo $respuesta_129; ?>" size="9">
+     se puede utilizar para la toma de decisiones con miras al futuro.
+    </p>
+  
+    <p>
+    Un Sprint podría 
+    <input type="text" name="respuesta_130" value="<?php echo $respuesta_130; ?>" size="9">
+     si el 
+    <input type="text" name="respuesta_131" value="<?php echo $respuesta_131; ?>" size="9">
+     del 
+    <input type="text" name="respuesta_132" value="<?php echo $respuesta_132; ?>" size="9">
+     se vuelve 
+    <input type="text" name="respuesta_133" value="<?php echo $respuesta_133; ?>" size="9">
+    . Solo el 
+    <input type="text" name="respuesta_134" value="<?php echo $respuesta_134; ?>" size="9">
+    tiene la
+    autoridad para cancelar el Sprint.
+    </p>
+
+
+     <h2>Sprint Planning</h2>
+    
+    <p>
+    La Sprint Planning 
+    <input type="text" name="respuesta_135" value="<?php echo $respuesta_135; ?>" size="9">
+     el 
+    <input type="text" name="respuesta_136" value="<?php echo $respuesta_136; ?>" size="9">
+      al 
+    <input type="text" name="respuesta_137" value="<?php echo $respuesta_137; ?>" size="9">
+      el 
+    <input type="text" name="respuesta_138" value="<?php echo $respuesta_138; ?>" size="9">
+      que se realizará para el 
+    <input type="text" value="<?php echo $respuesta_136; ?>" size="9">
+    . El 
+    <input type="text" name="respuesta_139" value="<?php echo $respuesta_139; ?>" size="9">
+    crea este plan 
+    <input type="text" name="respuesta_140" value="<?php echo $respuesta_140; ?>" size="9">
+     mediante trabajo colaborativo.
+    </p>
+
+    <p>
+    El 
+    <input type="text" name="respuesta_141" value="<?php echo $respuesta_141; ?>" size="9">
+    se asegura de que los 
+    <input type="text" name="respuesta_142" value="<?php echo $respuesta_142; ?>" size="9">
+     estén preparados para 
+    <input type="text" name="respuesta_143" value="<?php echo $respuesta_143; ?>" size="9">
+     los elementos más
+    importantes del 
+    <input type="text" name="respuesta_144" value="<?php echo $respuesta_144; ?>" size="9">
+     y cómo se relacionan con el 
+    <input type="text" name="respuesta_145" value="<?php echo $respuesta_145; ?>" size="9">
+    . El 
+    <input type="text" name="respuesta_146" value="<?php echo $respuesta_146; ?>" size="9">
+    también puede invitar a otras personas a 
+    <input type="text" name="respuesta_147" value="<?php echo $respuesta_147; ?>" size="9">
+     a la Sprint Planning para brindar asesoramiento.
+    </p>
+
     </form>
 </div>
 
@@ -1798,7 +3954,413 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
     <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <p>La Sprint Planning aborda los siguientes temas:</p>
+
+    <h3>Tema uno: ¿Por qué es 
+    <input type="text" name="respuesta_148" value="<?php echo $respuesta_148; ?>" size="9">    
+    este 
+    <input type="text" name="respuesta_149" value="<?php echo $respuesta_149; ?>" size="9">
+    ?</h3>
+    <p>
+    El 
+    <input type="text" name="respuesta_150" value="<?php echo $respuesta_150; ?>" size="9">
+     propone cómo el 
+    <input type="text" name="respuesta_151" value="<?php echo $respuesta_151; ?>" size="9">
+     podría 
+    <input type="text" name="respuesta_152" value="<?php echo $respuesta_152; ?>" size="9">
+     su 
+    <input type="text" name="respuesta_153" value="<?php echo $respuesta_153; ?>" size="9">
+     y 
+    <input type="text" name="respuesta_154" value="<?php echo $respuesta_154; ?>" size="9">
+     en el 
+    <input type="text" name="respuesta_155" value="<?php echo $respuesta_155; ?>" size="9">
+    .
+    Luego, todo el 
+    <input type="text" name="respuesta_156" value="<?php echo $respuesta_156; ?>" size="9">
+     colabora para definir un 
+    <input type="text" name="respuesta_157" value="<?php echo $respuesta_157; ?>" size="9">
+     que 
+    <input type="text" name="respuesta_158" value="<?php echo $respuesta_158; ?>" size="9">
+     por qué el 
+    <input type="text" name="respuesta_159" value="<?php echo $respuesta_159; ?>" size="9">
+    es 
+    <input type="text" name="respuesta_160" value="<?php echo $respuesta_160; ?>" size="9">
+     para los 
+    <input type="text" name="respuesta_161" value="<?php echo $respuesta_161; ?>" size="9">
+    . El 
+    <input type="text" name="respuesta_162" value="<?php echo $respuesta_162; ?>" size="9">
+     debe completarse antes de que 
+    <input type="text" name="respuesta_163" value="<?php echo $respuesta_163; ?>" size="9">
+     la 
+    <input type="text" name="respuesta_164" value="<?php echo $respuesta_164; ?>" size="9">
+    .
+    </p>
+
+    <h3>Tema dos: ¿Qué se puede hacer en este Sprint?</h3>
+    <p>
+    A través de una 
+    <input type="text" name="respuesta_165" value="<?php echo $respuesta_165; ?>" size="9">
+     con el 
+    <input type="text" name="respuesta_166" value="<?php echo $respuesta_166; ?>" size="9">
+    , los 
+    <input type="text" name="respuesta_167" value="<?php echo $respuesta_167; ?>" size="9">
+     seleccionan 
+    <input type="text" name="respuesta_168" value="<?php echo $respuesta_168; ?>" size="9">
+     del 
+    <input type="text" name="respuesta_169" value="<?php echo $respuesta_169; ?>" size="9">
+     para
+    <input type="text" name="respuesta_170" value="<?php echo $respuesta_170; ?>" size="9">
+     en el 
+    <input type="text" name="respuesta_171" value="<?php echo $respuesta_171; ?>" size="9">
+    . El 
+    <input type="text" name="respuesta_172" value="<?php echo $respuesta_172; ?>" size="9">
+    puede 
+    <input type="text" name="respuesta_173" value="<?php echo $respuesta_173; ?>" size="9">
+      estos elementos durante este
+    proceso, lo que aumenta la 
+    <input type="text" name="respuesta_174" value="<?php echo $respuesta_174; ?>" size="9">
+     y la confianza.
+    </p>
+  
+    <p> 
+    Seleccionar 
+    <input type="text" name="respuesta_175" value="<?php echo $respuesta_175; ?>" size="9">
+     se puede 
+    <input type="text" name="respuesta_176" value="<?php echo $respuesta_176; ?>" size="9">
+     dentro de un 
+    <input type="text" name="respuesta_177" value="<?php echo $respuesta_177; ?>" size="9">
+     puede ser un 
+    <input type="text" name="respuesta_178" value="<?php echo $respuesta_178; ?>" size="9">
+    . Sin embargo, cuanto
+    más sepan los 
+    <input type="text" name="respuesta_179" value="<?php echo $respuesta_179; ?>" size="9">
+     sobre su 
+    <input type="text" name="respuesta_180" value="<?php echo $respuesta_180; ?>" size="9">
+     pasado, su 
+    <input type="text" name="respuesta_181" value="<?php echo $respuesta_181; ?>" size="9">
+     actual y su 
+    <input type="text" name="respuesta_182" value="<?php echo $respuesta_182; ?>" size="9">
+    , más 
+    <input type="text" name="respuesta_183" value="<?php echo $respuesta_183; ?>" size="9">
+     estarán en sus 
+    <input type="text" name="respuesta_184" value="<?php echo $respuesta_184; ?>" size="9">
+    para el Sprint.
+    </p>
+
+    <h3>Tema tres: ¿Cómo se 
+    <input type="text" name="respuesta_185" value="<?php echo $respuesta_185; ?>" size="9">    
+     el 
+    <input type="text" name="respuesta_186" value="<?php echo $respuesta_186; ?>" size="15">
+    ?</h3>
+    <p>
+    Para cada 
+     <input type="text" name="respuesta_187" value="<?php echo $respuesta_187; ?>" size="9">
+     del 
+     <input type="text" name="respuesta_188" value="<?php echo $respuesta_188; ?>" size="15">
+     seleccionado, los 
+     <input type="text" name="respuesta_189" value="<?php echo $respuesta_189; ?>" size="9">
+     planifican el trabajo 
+     <input type="text" name="respuesta_190" value="<?php echo $respuesta_190; ?>" size="9">
+    para crear un 
+     <input type="text" name="respuesta_191" value="<?php echo $respuesta_191; ?>" size="9">
+     que cumpla con 
+     <input type="text" name="respuesta_192" value="<?php echo $respuesta_192; ?>" size="9">
+    . A menudo, esto se hace
+     <input type="text" name="respuesta_193" value="<?php echo $respuesta_193; ?>" size="9">
+     los elementos del 
+     <input type="text" name="respuesta_194" value="<?php echo $respuesta_194; ?>" size="9">
+     en elementos de trabajo más 
+     <input type="text" name="respuesta_195" value="<?php echo $respuesta_195; ?>" size="9">
+     de 
+     <input type="text" name="respuesta_196" value="<?php echo $respuesta_196; ?>" size="9">
+     o
+     <input type="text" name="respuesta_197" value="<?php echo $respuesta_197; ?>" size="9">
+    . La forma de hacerlo queda a criterio exclusivo de los 
+     <input type="text"  value="<?php echo $respuesta_189; ?>" size="9" readonly>
+    . Nadie más les dice cómo
+    convertir los elementos del 
+    <input type="text"   value="<?php echo $respuesta_188; ?>" size="15" readonly>
+     en Increments de valor.
+    </p>
+
+    <p>
+    El 
+    <input type="text" name="respuesta_198" value="<?php echo $respuesta_198; ?>" size="9">
+    , los 
+    <input type="text" name="respuesta_199" value="<?php echo $respuesta_199; ?>" size="9">
+     del 
+    <input type="text" name="respuesta_200" value="<?php echo $respuesta_200; ?>" size="9">
+     seleccionados para el 
+    <input type="text" name="respuesta_201" value="<?php echo $respuesta_201; ?>" size="9">
+    , más el 
+    <input type="text" name="respuesta_202" value="<?php echo $respuesta_202; ?>" size="9">
+     para
+    <input type="text" name="respuesta_203" value="<?php echo $respuesta_203; ?>" size="9">
+     se denominan juntos Sprint Backlog.
+    </p>
+
+    <h2>Daily Scrum</h2>
+    <p>
+    El 
+    <input type="text" name="respuesta_204" value="<?php echo $respuesta_204; ?>" size="9">
+    de la Daily Scrum es 
+    <input type="text" name="respuesta_205" value="<?php echo $respuesta_205; ?>" size="9">
+      el progreso hacia el 
+    <input type="text" name="respuesta_206" value="<?php echo $respuesta_206; ?>" size="9">
+     y adaptar el 
+    <input type="text" name="respuesta_207" value="<?php echo $respuesta_207; ?>" size="9"> 
+      según sea necesario, 
+    <input type="text" name="respuesta_208" value="<?php echo $respuesta_208; ?>" size="9"> 
+      el trabajo planificado entrante.
+    </p>
+    <p>
+    La Daily Scrum es un evento de 
+    <input type="text" name="respuesta_209" value="<?php echo $respuesta_209; ?>" size="9"> 
+     para los 
+    <input type="text" name="respuesta_210" value="<?php echo $respuesta_210; ?>" size="9"> 
+     del Scrum Team. Para 
+    <input type="text" name="respuesta_211" value="<?php echo $respuesta_211; ?>" size="9"> 
+      la
+    <input type="text" name="respuesta_212" value="<?php echo $respuesta_212; ?>" size="9"> 
+    reducircomplejidad, se lleva a cabo a la 
+    <input type="text" name="respuesta_213" value="<?php echo $respuesta_213; ?>" size="9"> 
+     y en el 
+    <input type="text" name="respuesta_214" value="<?php echo $respuesta_214; ?>" size="9"> 
+     lugar 
+    <input type="text" name="respuesta_215" value="<?php echo $respuesta_215; ?>" size="9"> 
+      hábiles del 
+    <input type="text" name="respuesta_216" value="<?php echo $respuesta_216; ?>" size="9"> 
+     . Si el
+    <input type="text" name="respuesta_217" value="<?php echo $respuesta_217; ?>" size="9"> 
+     o 
+    <input type="text" name="respuesta_218" value="<?php echo $respuesta_218; ?>" size="9"> 
+     están trabajando activamente en elementos del 
+    <input type="text" name="respuesta_219" value="<?php echo $respuesta_219; ?>" size="9"> 
+     ,
+    <input type="text" name="respuesta_220" value="<?php echo $respuesta_220; ?>" size="9"> 
+       como Developers.
+    </p>
+    <p>
+    Los 
+    <input type="text" name="respuesta_221" value="<?php echo $respuesta_221; ?>" size="9"> 
+     pueden seleccionar la 
+    <input type="text" name="respuesta_222" value="<?php echo $respuesta_222; ?>" size="9"> 
+      y las 
+    <input type="text" name="respuesta_223" value="<?php echo $respuesta_223; ?>" size="9"> 
+      que deseen, siempre que su Daily Scrum
+    se centre en el 
+    <input type="text" name="respuesta_224" value="<?php echo $respuesta_224; ?>" size="9"> 
+      hacia el 
+    <input type="text" name="respuesta_225" value="<?php echo $respuesta_225; ?>" size="9"> 
+      y 
+    <input type="text" name="respuesta_226" value="<?php echo $respuesta_226; ?>" size="9"> 
+      un 
+    <input type="text" name="respuesta_227" value="<?php echo $respuesta_227; ?>" size="9"> 
+      viable para el siguiente 
+    <input type="text" name="respuesta_228" value="<?php echo $respuesta_228; ?>" size="9"> 
+     de trabajo. Esto crea enfoque y mejora la autogestión.
+    </p>
+    <p>
+    Las Daily Scrums mejoran la 
+    <input type="text" name="respuesta_229" value="<?php echo $respuesta_229; ?>" size="9"> 
+     , identifican 
+    <input type="text" name="respuesta_230" value="<?php echo $respuesta_230; ?>" size="9"> 
+     , 
+    <input type="text" name="respuesta_231" value="<?php echo $respuesta_231; ?>" size="9"> 
+      la toma rápida de
+    decisiones y, en consecuencia,
+    <input type="text" name="respuesta_232" value="<?php echo $respuesta_232; ?>" size="9"> 
+      la necesidad de otras reuniones.
+    </p>
+    <p>
+    La Daily Scrum 
+    <input type="text" name="respuesta_233" value="<?php echo $respuesta_233; ?>" size="9"> 
+     el único momento en el que los 
+    <input type="text" name="respuesta_234" value="<?php echo $respuesta_234; ?>" size="9"> 
+      pueden ajustar su plan. A menudo se
+    reúnen durante el 
+    <input type="text" name="respuesta_235" value="<?php echo $respuesta_235; ?>" size="9"> 
+      para discusiones más 
+    <input type="text" name="respuesta_236" value="<?php echo $respuesta_236; ?>" size="9"> 
+      sobre cómo 
+    <input type="text" name="respuesta_237" value="<?php echo $respuesta_237; ?>" size="9"> 
+      o volver a planificar el resto del 
+    <input type="text" name="respuesta_238" value="<?php echo $respuesta_238; ?>" size="9"> 
+      del Sprint.
+    </p>
+
+    <h2>Sprint Review</h2>
+    <p>
+    El 
+    <input type="text" name="respuesta_239" value="<?php echo $respuesta_239; ?>" size="9"> 
+     de la Sprint Review es 
+    <input type="text" name="respuesta_240" value="<?php echo $respuesta_240; ?>" size="9"> 
+      el 
+    <input type="text" name="respuesta_241" value="<?php echo $respuesta_241; ?>" size="9"> 
+      del 
+    <input type="text" name="respuesta_242" value="<?php echo $respuesta_242; ?>" size="9"> 
+      y determinar futuras
+    <input type="text" name="respuesta_243" value="<?php echo $respuesta_243; ?>" size="9"> 
+     . El 
+    <input type="text" name="respuesta_244" value="<?php echo $respuesta_244; ?>" size="9"> 
+     presenta los 
+    <input type="text" name="respuesta_245" value="<?php echo $respuesta_245; ?>" size="9"> 
+     de su trabajo a los 
+    <input type="text" name="respuesta_246" value="<?php echo $respuesta_246; ?>" size="9"> 
+      clave y se discute el
+    <input type="text" name="respuesta_247" value="<?php echo $respuesta_247; ?>" size="9"> 
+      hacia el 
+    <input type="text" name="respuesta_248" value="<?php echo $respuesta_248; ?>" size="9"> 
+     .
+    </p>
+    <p>
+    Durante el evento, el 
+    <input type="text" name="respuesta_249" value="<?php echo $respuesta_249; ?>" size="9"> 
+     y los 
+    <input type="text" name="respuesta_250" value="<?php echo $respuesta_250; ?>" size="9"> 
+     revisan lo que se 
+    <input type="text" name="respuesta_251" value="<?php echo $respuesta_251; ?>" size="9"> 
+     en el 
+    <input type="text" name="respuesta_252" value="<?php echo $respuesta_252; ?>" size="9"> 
+      y lo que ha
+    <input type="text" name="respuesta_253" value="<?php echo $respuesta_253; ?>" size="9"> 
+      en su 
+    <input type="text" name="respuesta_254" value="<?php echo $respuesta_254; ?>" size="9"> 
+     . Con 
+    <input type="text" name="respuesta_255" value="<?php echo $respuesta_255; ?>" size="9"> 
+      en esta información, los 
+    <input type="text" name="respuesta_256" value="<?php echo $respuesta_256; ?>" size="9"> 
+      colaboran sobre 
+    <input type="text" name="respuesta_257" value="<?php echo $respuesta_257; ?>" size="9"> 
+    qué hacer a
+    continuación. El 
+    <input type="text" name="respuesta_258" value="<?php echo $respuesta_258; ?>" size="9"> 
+      también se puede 
+    <input type="text" name="respuesta_259" value="<?php echo $respuesta_259; ?>" size="9"> 
+      para satisfacer nuevas 
+    <input type="text" name="respuesta_260" value="<?php echo $respuesta_260; ?>" size="9"> 
+     . La
+    <input type="text" name="respuesta_261" value="<?php echo $respuesta_261; ?>" size="9"> 
+      es una sesión de 
+    <input type="text" name="respuesta_262" value="<?php echo $respuesta_262; ?>" size="9"> 
+     y el 
+    <input type="text" name="respuesta_263" value="<?php echo $respuesta_263; ?>" size="9"> 
+      debe evitar 
+    <input type="text" name="respuesta_264" value="<?php echo $respuesta_264; ?>" size="9"> 
+      a una 
+    <input type="text" name="respuesta_265" value="<?php echo $respuesta_265; ?>" size="9"> 
+     .
+    </p>
+    <p>
+    La Sprint Review es el 
+    <input type="text" name="respuesta_266" value="<?php echo $respuesta_266; ?>" size="9">
+     evento del Sprint y tiene un 
+    <input type="text" name="respuesta_267" value="<?php echo $respuesta_267; ?>" size="9">
+     de tiempo de máximo 
+    <input type="text" name="respuesta_268" value="<?php echo $respuesta_268; ?>" size="9">
+    para un 
+    <input type="text" name="respuesta_269" value="<?php echo $respuesta_269; ?>" size="9">
+     de un 
+    <input type="text" name="respuesta_270" value="<?php echo $respuesta_270; ?>" size="9">
+   . Para Sprints más 
+    <input type="text" name="respuesta_271" value="<?php echo $respuesta_271; ?>" size="9">
+      , el evento suele ser de 
+    <input type="text" name="respuesta_272" value="<?php echo $respuesta_272; ?>" size="9">
+    duración.
+    </p>
+
+     <h2>Sprint Retrospective</h2>
+    <p>
+    El propósito de la Sprint Retrospective es 
+    <input type="text" name="respuesta_273" value="<?php echo $respuesta_273; ?>" size="9">
+      formas de 
+    <input type="text" name="respuesta_274" value="<?php echo $respuesta_274; ?>" size="9">
+      la 
+    <input type="text" name="respuesta_275" value="<?php echo $respuesta_275; ?>" size="9">
+      y la 
+    <input type="text" name="respuesta_276" value="<?php echo $respuesta_276; ?>" size="9">
+     .
+    </p>
     
+    <p>
+    El 
+    <input type="text" name="respuesta_277" value="<?php echo $respuesta_277; ?>" size="9">
+     inspecciona cómo fue el último 
+    <input type="text" name="respuesta_278" value="<?php echo $respuesta_278; ?>" size="9">
+     con respecto a las 
+    <input type="text" name="respuesta_279" value="<?php echo $respuesta_279; ?>" size="9">
+    , las 
+    <input type="text" name="respuesta_280" value="<?php echo $respuesta_280; ?>" size="9">
+     , los
+    <input type="text" name="respuesta_281" value="<?php echo $respuesta_281; ?>" size="9">
+     , las 
+    <input type="text" name="respuesta_282" value="<?php echo $respuesta_282; ?>" size="9">
+      y su 
+    <input type="text" name="respuesta_283" value="<?php echo $respuesta_283; ?>" size="9">
+    . Los elementos inspeccionados suelen
+    <input type="text" name="respuesta_284" value="<?php echo $respuesta_284; ?>" size="9">
+    según el 
+    <input type="text" name="respuesta_285" value="<?php echo $respuesta_285; ?>" size="9">
+      del trabajo. Se identifican los 
+    <input type="text" name="respuesta_286" value="<?php echo $respuesta_286; ?>" size="9">
+      que los llevaron por 
+    <input type="text" name="respuesta_287" value="<?php echo $respuesta_287; ?>" size="9">
+      camino y se exploran sus 
+    <input type="text" name="respuesta_288" value="<?php echo $respuesta_288; ?>" size="9">
+     . El 
+    <input type="text" name="respuesta_289" value="<?php echo $respuesta_289; ?>" size="9">
+      analiza qué salió 
+    <input type="text" name="respuesta_290" value="<?php echo $respuesta_290; ?>" size="9">
+      durante el Sprint, qué problemas 
+    <input type="text" name="respuesta_291" value="<?php echo $respuesta_291; ?>" size="9">
+      y cómo se
+    <input type="text" name="respuesta_292" value="<?php echo $respuesta_292; ?>" size="9">
+      (o no) esos problemas.
+    </p>
+    <p>
+    El Scrum Team 
+    <input type="text" name="respuesta_293" value="<?php echo $respuesta_293; ?>" size="9">
+     los 
+    <input type="text" name="respuesta_294" value="<?php echo $respuesta_294; ?>" size="9">
+      más útiles para 
+    <input type="text" name="respuesta_295" value="<?php echo $respuesta_295; ?>" size="9">
+      su 
+    <input type="text" name="respuesta_296" value="<?php echo $respuesta_296; ?>" size="9">
+     . Las 
+    <input type="text" name="respuesta_297" value="<?php echo $respuesta_297; ?>" size="9">
+      más
+    impactantes se abordan lo 
+    <input type="text" name="respuesta_298" value="<?php echo $respuesta_298; ?>" size="9">
+      posible. Incluso se pueden 
+    <input type="text" name="respuesta_299" value="<?php echo $respuesta_299; ?>" size="9">
+      al 
+    <input type="text" name="respuesta_300" value="<?php echo $respuesta_300; ?>" size="9">
+      para el 
+    <input type="text" name="respuesta_301" value="<?php echo $respuesta_301; ?>" size="9">
+      Sprint.
+    </p>
+    <p>
+    La Sprint Retrospective concluye el 
+    <input type="text" name="respuesta_302" value="<?php echo $respuesta_302; ?>" size="9">
+     . Tiene un tiempo limitado a máximo 
+    <input type="text" name="respuesta_303" value="<?php echo $respuesta_303; ?>" size="9">
+      para un 
+    <input type="text" name="respuesta_304" value="<?php echo $respuesta_304; ?>" size="9">
+      de 
+    <input type="text" name="respuesta_305" value="<?php echo $respuesta_305; ?>" size="9">
+     . Para Sprints más 
+    <input type="text" name="respuesta_306" value="<?php echo $respuesta_306; ?>" size="9">
+     , el evento suele ser de 
+    <input type="text" name="respuesta_307" value="<?php echo $respuesta_307; ?>" size="9">
+      duración.
+    </p>
+
+    <hr>
+    <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
+    <br>
+    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
+    <button type="submit"   >Mostrar Solución</button>
+
     </form>
 </div>
 
@@ -1807,7 +4369,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="segundo.php"
+        href="tercero.php"
         role="button"
         width="50px"
         height="50px"
