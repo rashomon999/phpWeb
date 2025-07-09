@@ -1,96 +1,172 @@
 <?php
  
- 
-$respuesta_1 = ''; $respuesta_2 = ''; $respuesta_3 = ''; $respuesta_3_2 = ''; $respuesta_4 = ''; $respuesta_5 = ''; 
-$respuesta_6 = ''; $respuesta_7 = ''; $respuesta_8 = ''; $respuesta_9 = '';  $respuesta_10 = '';
-$respuesta_11 = ''; $respuesta_12 = ''; $respuesta_13 = ''; $respuesta_14 = ''; $respuesta_15 = '';
-$respuesta_16 = ''; $respuesta_17 = ''; $respuesta_18 = ''; $respuesta_19 = ''; $respuesta_20 = '';
-$respuesta_21 = ''; $respuesta_22 = '';  $respuesta_23 = '';  $respuesta_24 = '';
-$respuesta_25 = ''; $respuesta_26 = ''; $respuesta_27 = ''; $respuesta_28 = ''; $respuesta_29 = '';
-$respuesta_30 = ''; $respuesta_31 = ''; $respuesta_32 = ''; $respuesta_33 = ''; $respuesta_34 = ''; $respuesta_35 = ''; $respuesta_36 = ''; $respuesta_37 = ''; $respuesta_38 = '';
-$respuesta_39 = ''; $respuesta_40 = ''; $respuesta_41 = ''; $respuesta_42 = ''; $respuesta_43 = '';
-$respuesta_44 = ''; $respuesta_45 = ''; $respuesta_46 = ''; $respuesta_47 = ''; $respuesta_48 = '';
-$respuesta_49 = ''; $respuesta_50 = ''; $respuesta_51 = ''; $respuesta_52 = ''; $respuesta_53 = '';
-$respuesta_54 = ''; $respuesta_55 = ''; $respuesta_56 = '';
-$respuesta_57 = ''; $respuesta_58 = ''; $respuesta_59 = ''; $respuesta_60 = '';
-$respuesta_61 = '';$respuesta_62 = '';$respuesta_63 = '';$respuesta_64 = '';
-$respuesta_65 = '';$respuesta_66 = '';$respuesta_67 = '';$respuesta_68 = '';
-$respuesta_69 = '';$respuesta_70 = '';$respuesta_71 = '';$respuesta_72 = '';
-$respuesta_73 = '';$respuesta_74 = '';$respuesta_75 = '';$respuesta_76 = '';
-$respuesta_77 = '';$respuesta_78 = '';$respuesta_79 = '';$respuesta_80 = '';
-$respuesta_81 = '';$respuesta_82 = '';$respuesta_83 = '';$respuesta_84 = '';
-$respuesta_85 = '';$respuesta_86 = '';$respuesta_87 = '';$respuesta_88 = ''; $respuesta_89 = '';
-$respuesta_90 = '';
-$respuesta_91 = '';
-$respuesta_92 = '';
-$respuesta_93 = '';
-$respuesta_94 = '';
-$respuesta_95 = '';
-$respuesta_96 = '';
-$respuesta_97 = '';
-$respuesta_98 = '';
-$respuesta_99 = '';
-$respuesta_100 = '';
-$respuesta_101 = '';
-$respuesta_102 = '';
-$respuesta_103 = '';
-$respuesta_104 = '';
-$respuesta_105 = '';
-$respuesta_106 = '';
-$respuesta_107 = '';
-$respuesta_108 = '';
-$respuesta_109 = '';
-$respuesta_110 = '';
+for ($i = 1; $i <= 230; $i++) {
+    ${"respuesta_" . $i} = '';
+}
 
 
- 
+     
+for ($i = 1; $i <= 230; $i++) {
+    ${"verificar_" . $i} = '';
+}
 
-$verificar_1 = ''; $verificar_2 = ''; $verificar_3 = '';  $verificar_3_2 = ''; $verificar_4 = ''; $verificar_5 = ''; 
-$verificar_6 = ''; $verificar_7 = '';  $verificar_8 = ''; $verificar_9 = ''; $verificar_10 = ''; 
-$verificar_11 = ''; $verificar_12 = ''; $verificar_13 = ''; $verificar_14 = ''; $verificar_15 = ''; 
-$verificar_16 = '';  $verificar_17 = ''; $verificar_18 = ''; $verificar_19 = ''; $verificar_20 = '';  
-$verificar_21 = '';  $verificar_22 = '';  $verificar_23 = '';   $verificar_24 = '';   $verificar_25 = '';  
-$verificar_26 = '';  $verificar_27= ''; $verificar_28= '';  $verificar_29= '';  $verificar_30 = ''; 
-$verificar_31 = ''; $verificar_32 = ''; $verificar_33 = ''; 
-$verificar_34 = ''; $verificar_35 = ''; $verificar_36 = ''; $verificar_37 = ''; $verificar_38 = '';
-$verificar_39 = ''; $verificar_40 = ''; $verificar_41 = ''; $verificar_42 = ''; $verificar_43 = '';
-$verificar_44 = ''; $verificar_45 = ''; $verificar_46 = ''; $verificar_47 = ''; $verificar_48 = '';
-$verificar_49 = ''; $verificar_50 = ''; $verificar_51 = ''; $verificar_52 = ''; $verificar_53 = '';
-$verificar_54 = ''; $verificar_55 = '';
-$verificar_56 = ''; $verificar_57 = ''; $verificar_58 = ''; $verificar_59 = ''; $verificar_60 = ''; 
-$verificar_61 = ''; $verificar_62 = ''; $verificar_63 = ''; $verificar_64 = ''; $verificar_65 = '';
- $verificar_66 = ''; $verificar_67 = ''; $verificar_68 = ''; $verificar_69 = ''; $verificar_70 = '';
-  $verificar_71 = ''; $verificar_72 = ''; $verificar_73 = ''; $verificar_74 = ''; $verificar_75 = '';
-   $verificar_76 = ''; $verificar_77 = ''; $verificar_78 = ''; $verificar_79 = ''; $verificar_80 = '';
-    $verificar_81 = ''; $verificar_82 = ''; $verificar_83 = ''; $verificar_84 = ''; $verificar_85 = '';
-     $verificar_86 = ''; $verificar_87 = ''; $verificar_88 = '';
-     $verificar_89 = '';
-     $verificar_90 = '';
-     $verificar_91 = '';
-     $verificar_92 = '';
-     $verificar_93 = '';
-     $verificar_94 = '';
-     $verificar_95 = '';
-     $verificar_96 = '';
-     $verificar_97 = '';
-     $verificar_98 = '';
-     $verificar_99 = '';
-     $verificar_100 = '';
-     $verificar_101 = '';
-     $verificar_102 = '';
-     $verificar_103 = '';
-     $verificar_104 = '';
-     $verificar_105 = '';
-     $verificar_106 = '';
-     $verificar_107 = '';
-     $verificar_108 = '';
-     $verificar_109 = '';
-     $verificar_110 = '';
      
 
+$mostrar_solucion = '';
 if ($_POST) {
-    $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '26') {  
+    $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
+    
+    if ($mostrar_solucion === 'mostrar_solucion') {
+        // Establecer todas las respuestas correctas para las tablas de multiplicar
+        
+        // Tabla del 12
+        $respuesta_111 = '24'; 
+        $respuesta_112 = '36';
+        $respuesta_113 = '48';
+        $respuesta_114 = '60';
+        $respuesta_115 = '72';
+        $respuesta_116 = '84';
+        $respuesta_117 = '96';
+        $respuesta_118 = '108';
+        $respuesta_119 = '120';
+        $respuesta_120 = '132';
+        $respuesta_121 = '144';
+        
+        // Tabla del 13
+        $respuesta_1 = '26';
+        $respuesta_2 = '39';
+        $respuesta_3 = '52';
+        $respuesta_4 = '65';
+        $respuesta_5 = '78';
+        $respuesta_6 = '91';
+        $respuesta_7 = '104';
+        $respuesta_8 = '117';
+        $respuesta_9 = '130';
+        $respuesta_10 = '143';
+        $respuesta_11 = '156';
+        
+        // Tabla del 14
+        $respuesta_12 = '28';
+        $respuesta_13 = '42';
+        $respuesta_14 = '56';
+        $respuesta_15 = '70';
+        $respuesta_16 = '84';
+        $respuesta_17 = '98';
+        $respuesta_18 = '112';
+        $respuesta_19 = '126';
+        $respuesta_20 = '140';
+        $respuesta_21 = '154';
+        $respuesta_22 = '168';
+        
+        // Tabla del 15
+        $respuesta_23 = '30';
+        $respuesta_24 = '45';
+        $respuesta_25 = '60';
+        $respuesta_26 = '75';
+        $respuesta_27 = '90';
+        $respuesta_28 = '105';
+        $respuesta_29 = '120';
+        $respuesta_30 = '135';
+        $respuesta_31 = '150';
+        $respuesta_32 = '165';
+        $respuesta_33 = '180';
+        
+        // Tabla del 16
+        $respuesta_34 = '32';
+        $respuesta_35 = '48';
+        $respuesta_36 = '64';
+        $respuesta_37 = '80';
+        $respuesta_38 = '96';
+        $respuesta_39 = '112';
+        $respuesta_40 = '128';
+        $respuesta_41 = '144';
+        $respuesta_42 = '160';
+        $respuesta_43 = '176';
+        $respuesta_44 = '192';
+        
+        // Tabla del 17
+        $respuesta_45 = '34';
+        $respuesta_46 = '51';
+        $respuesta_47 = '68';
+        $respuesta_48 = '85';
+        $respuesta_49 = '102';
+        $respuesta_50 = '119';
+        $respuesta_51 = '136';
+        $respuesta_52 = '153';
+        $respuesta_53 = '170';
+        $respuesta_54 = '187';
+        $respuesta_55 = '204';
+        
+        // Tabla del 18
+        $respuesta_56 = '36';
+        $respuesta_57 = '54';
+        $respuesta_58 = '72';
+        $respuesta_59 = '90';
+        $respuesta_60 = '108';
+        $respuesta_61 = '126';
+        $respuesta_62 = '144';
+        $respuesta_63 = '162';
+        $respuesta_64 = '180';
+        $respuesta_65 = '198';
+        $respuesta_66 = '216';
+        
+        // Tabla del 19
+        $respuesta_67 = '38';
+        $respuesta_68 = '57';
+        $respuesta_69 = '76';
+        $respuesta_70 = '95';
+        $respuesta_71 = '114';
+        $respuesta_72 = '133';
+        $respuesta_73 = '152';
+        $respuesta_74 = '171';
+        $respuesta_75 = '190';
+        $respuesta_76 = '209';
+        $respuesta_77 = '228';
+        
+        // Tabla del 20
+        $respuesta_78 = '40';
+        $respuesta_79 = '60';
+        $respuesta_80 = '80';
+        $respuesta_81 = '100';
+        $respuesta_82 = '120';
+        $respuesta_83 = '140';
+        $respuesta_84 = '160';
+        $respuesta_85 = '180';
+        $respuesta_86 = '200';
+        $respuesta_87 = '220';
+        $respuesta_88 = '240';
+        
+        // Tabla del 21
+        $respuesta_89 = '42';
+        $respuesta_90 = '63';
+        $respuesta_91 = '84';
+        $respuesta_92 = '105';
+        $respuesta_93 = '126';
+        $respuesta_94 = '147';
+        $respuesta_95 = '168';
+        $respuesta_96 = '189';
+        $respuesta_97 = '210';
+        $respuesta_98 = '231';
+        $respuesta_99 = '252';
+        
+        // Tabla del 22
+        $respuesta_100 = '44';
+        $respuesta_101 = '66';
+        $respuesta_102 = '88';
+        $respuesta_103 = '110';
+        $respuesta_104 = '132'; 
+        $respuesta_105 = '154';
+        $respuesta_106 = '176';
+        $respuesta_107 = '198';
+        $respuesta_108 = '220';
+        $respuesta_109 = '242';
+        $respuesta_110 = '264';
+        
+        // Marcar todas como correctas
+    $verificar_1 = $verificar_2 = $verificar_3 = /* ... todas las variables de verificación ... */ $verificar_122 = "correcto";
+    } else {
+        $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
+   if ($respuesta_1 === '7') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -100,7 +176,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === '39') {  
+   if ($respuesta_2 === '4') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -110,7 +186,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === '52') {  
+   if ($respuesta_3 === 'no') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -120,7 +196,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === '65') {  
+   if ($respuesta_4 === 'si') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -130,7 +206,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === '78') {  
+   if ($respuesta_5 === 'relativamente') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -140,7 +216,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === '91') {  
+   if ($respuesta_6 === 'modulo') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -150,7 +226,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === '104') {  
+   if ($respuesta_7 === 'gcd(c,m)=1') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -419,41 +495,41 @@ if ($_POST) {
        $verificar_33 = "incorrecto";
    }
 
- $respuesta_34 = isset($_POST['respuesta_34']) ? $_POST['respuesta_34'] : '';
-if ($respuesta_34 === '32') { 
-    $verificar_34 = "correcto";
-} elseif ($respuesta_34 === '') {
-    $verificar_34 = '';
-} else {
-    $verificar_34 = "incorrecto";
-}
+    $respuesta_34 = isset($_POST['respuesta_34']) ? $_POST['respuesta_34'] : '';
+    if ($respuesta_34 === '32') { 
+        $verificar_34 = "correcto";
+    } elseif ($respuesta_34 === '') {
+        $verificar_34 = '';
+    } else {
+        $verificar_34 = "incorrecto";
+    }
 
- $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
-if ($respuesta_35 === '48') { 
-    $verificar_35 = "correcto";
-} elseif ($respuesta_35 === '') {
-    $verificar_35 = '';
-} else {
-    $verificar_35 = "incorrecto";
-}
+    $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
+    if ($respuesta_35 === '48') { 
+        $verificar_35 = "correcto";
+    } elseif ($respuesta_35 === '') {
+        $verificar_35 = '';
+    } else {
+        $verificar_35 = "incorrecto";
+    }
 
- $respuesta_36 = isset($_POST['respuesta_36']) ? $_POST['respuesta_36'] : '';
-if ($respuesta_36 === '64') { 
-    $verificar_36 = "correcto";
-} elseif ($respuesta_36 === '') {
+    $respuesta_36 = isset($_POST['respuesta_36']) ? $_POST['respuesta_36'] : '';
+    if ($respuesta_36 === '64') { 
+        $verificar_36 = "correcto";
+    } elseif ($respuesta_36 === '') {
     $verificar_36 = '';
-} else {
-    $verificar_36 = "incorrecto";
-}
+    } else {
+        $verificar_36 = "incorrecto";
+    }
 
- $respuesta_37 = isset($_POST['respuesta_37']) ? $_POST['respuesta_37'] : '';
-if ($respuesta_37 === '80') { 
-    $verificar_37 = "correcto";
-} elseif ($respuesta_37 === '') {
-    $verificar_37 = '';
-} else {
-    $verificar_37 = "incorrecto";
-}
+    $respuesta_37 = isset($_POST['respuesta_37']) ? $_POST['respuesta_37'] : '';
+    if ($respuesta_37 === '80') { 
+        $verificar_37 = "correcto";
+    } elseif ($respuesta_37 === '') {
+        $verificar_37 = '';
+    } else {
+        $verificar_37 = "incorrecto";
+    }
 
  $respuesta_38 = isset($_POST['respuesta_38']) ? $_POST['respuesta_38'] : '';
 if ($respuesta_38 === '96') { 
@@ -852,68 +928,68 @@ if ($respuesta_81 === '100') {
     $verificar_81 = "incorrecto";
 }
 
- $respuesta_82 = isset($_POST['respuesta_82']) ? $_POST['respuesta_82'] : '';
-if ($respuesta_82 === '120') { 
-    $verificar_82 = "correcto";
-} elseif ($respuesta_82 === '') {
-    $verificar_82 = '';
-} else {
-    $verificar_82 = "incorrecto";
-}
+    $respuesta_82 = isset($_POST['respuesta_82']) ? $_POST['respuesta_82'] : '';
+    if ($respuesta_82 === '120') { 
+        $verificar_82 = "correcto";
+    } elseif ($respuesta_82 === '') {
+        $verificar_82 = '';
+    } else {
+        $verificar_82 = "incorrecto";
+    }
 
- $respuesta_83 = isset($_POST['respuesta_83']) ? $_POST['respuesta_83'] : '';
-if ($respuesta_83 === '140') { 
-    $verificar_83 = "correcto";
-} elseif ($respuesta_83 === '') {
-    $verificar_83 = '';
-} else {
-    $verificar_83 = "incorrecto";
-}
+    $respuesta_83 = isset($_POST['respuesta_83']) ? $_POST['respuesta_83'] : '';
+    if ($respuesta_83 === '140') { 
+       $verificar_83 = "correcto";
+    } elseif ($respuesta_83 === '') {
+        $verificar_83 = '';
+    } else {
+        $verificar_83 = "incorrecto";
+    }
 
- $respuesta_84 = isset($_POST['respuesta_84']) ? $_POST['respuesta_84'] : '';
-if ($respuesta_84 === '160') { 
-    $verificar_84 = "correcto";
-} elseif ($respuesta_84 === '') {
-    $verificar_84 = '';
-} else {
-    $verificar_84 = "incorrecto";
-}
+    $respuesta_84 = isset($_POST['respuesta_84']) ? $_POST['respuesta_84'] : '';
+    if ($respuesta_84 === '160') { 
+        $verificar_84 = "correcto";
+    } elseif ($respuesta_84 === '') {
+        $verificar_84 = '';
+    } else {
+        $verificar_84 = "incorrecto";
+    }
 
- $respuesta_85 = isset($_POST['respuesta_85']) ? $_POST['respuesta_85'] : '';
-if ($respuesta_85 === '180') { 
-    $verificar_85 = "correcto";
-} elseif ($respuesta_85 === '') {
-    $verificar_85 = '';
-} else {
-    $verificar_85 = "incorrecto";
-}
+    $respuesta_85 = isset($_POST['respuesta_85']) ? $_POST['respuesta_85'] : '';
+    if ($respuesta_85 === '180') { 
+        $verificar_85 = "correcto";
+    } elseif ($respuesta_85 === '') {
+        $verificar_85 = '';
+    } else {
+        $verificar_85 = "incorrecto";
+    }
 
- $respuesta_86 = isset($_POST['respuesta_86']) ? $_POST['respuesta_86'] : '';
-if ($respuesta_86 === '200') { 
-    $verificar_86 = "correcto";
-} elseif ($respuesta_86 === '') {
-    $verificar_86 = '';
-} else {
-    $verificar_86 = "incorrecto";
-}
+    $respuesta_86 = isset($_POST['respuesta_86']) ? $_POST['respuesta_86'] : '';
+    if ($respuesta_86 === '200') { 
+        $verificar_86 = "correcto";
+    } elseif ($respuesta_86 === '') {
+        $verificar_86 = '';
+    } else {
+        $verificar_86 = "incorrecto";
+    }
 
- $respuesta_87 = isset($_POST['respuesta_87']) ? $_POST['respuesta_87'] : '';
-if ($respuesta_87 === '220') { 
-    $verificar_87 = "correcto";
-} elseif ($respuesta_87 === '') {
-    $verificar_87 = '';
-} else {
-    $verificar_87 = "incorrecto";
-}
+    $respuesta_87 = isset($_POST['respuesta_87']) ? $_POST['respuesta_87'] : '';
+    if ($respuesta_87 === '220') { 
+        $verificar_87 = "correcto";
+    } elseif ($respuesta_87 === '') {
+        $verificar_87 = '';
+    } else {
+        $verificar_87 = "incorrecto";
+    }
 
- $respuesta_88 = isset($_POST['respuesta_88']) ? $_POST['respuesta_88'] : '';
-if ($respuesta_88 === '240') { 
-    $verificar_88 = "correcto";
-} elseif ($respuesta_88 === '') {
-    $verificar_88 = '';
-} else {
-    $verificar_88 = "incorrecto";
-}
+    $respuesta_88 = isset($_POST['respuesta_88']) ? $_POST['respuesta_88'] : '';
+    if ($respuesta_88 === '240') { 
+        $verificar_88 = "correcto";
+    } elseif ($respuesta_88 === '') {
+        $verificar_88 = '';
+    } else {
+        $verificar_88 = "incorrecto";
+    }
 
  $respuesta_89 = isset($_POST['respuesta_89']) ? $_POST['respuesta_89'] : '';
 if ($respuesta_89 === '42') { 
@@ -1114,7 +1190,106 @@ if ($respuesta_110 === '264') {
     $verificar_110 = "incorrecto";
 }
 
+// Tabla del 12
+$respuesta_111 = isset($_POST['respuesta_111']) ? $_POST['respuesta_111'] : '';
+if ($respuesta_111 === '24') {  
+    $verificar_111 = "correcto";
+} elseif ($respuesta_111 === '') {
+    $verificar_111 = '';
+} else {
+    $verificar_111 = "incorrecto";
+}
 
+$respuesta_112 = isset($_POST['respuesta_112']) ? $_POST['respuesta_112'] : '';
+if ($respuesta_112 === '36') {  
+    $verificar_112 = "correcto";
+} elseif ($respuesta_112 === '') {
+    $verificar_112 = '';
+} else {
+    $verificar_112 = "incorrecto";
+}
+
+$respuesta_113 = isset($_POST['respuesta_113']) ? $_POST['respuesta_113'] : '';
+if ($respuesta_113 === '48') {  
+    $verificar_113 = "correcto";
+} elseif ($respuesta_113 === '') {
+    $verificar_113 = '';
+} else {
+    $verificar_113 = "incorrecto";
+}
+
+$respuesta_114 = isset($_POST['respuesta_114']) ? $_POST['respuesta_114'] : '';
+if ($respuesta_114 === '60') {  
+    $verificar_114 = "correcto";
+} elseif ($respuesta_114 === '') {
+    $verificar_114 = '';
+} else {
+    $verificar_114 = "incorrecto";
+}
+
+$respuesta_115 = isset($_POST['respuesta_115']) ? $_POST['respuesta_115'] : '';
+if ($respuesta_115 === '72') {  
+    $verificar_115 = "correcto";
+} elseif ($respuesta_115 === '') {
+    $verificar_115 = '';
+} else {
+    $verificar_115 = "incorrecto";
+}
+
+$respuesta_116 = isset($_POST['respuesta_116']) ? $_POST['respuesta_116'] : '';
+if ($respuesta_116 === '84') {  
+    $verificar_116 = "correcto";
+} elseif ($respuesta_116 === '') {
+    $verificar_116 = '';
+} else {
+    $verificar_116 = "incorrecto";
+}
+
+$respuesta_117 = isset($_POST['respuesta_117']) ? $_POST['respuesta_117'] : '';
+if ($respuesta_117 === '96') {  
+    $verificar_117 = "correcto";
+} elseif ($respuesta_117 === '') {
+    $verificar_117 = '';
+} else {
+    $verificar_117 = "incorrecto";
+}
+
+$respuesta_118 = isset($_POST['respuesta_118']) ? $_POST['respuesta_118'] : '';
+if ($respuesta_118 === '108') {  
+    $verificar_118 = "correcto";
+} elseif ($respuesta_118 === '') {
+    $verificar_118 = '';
+} else {
+    $verificar_118 = "incorrecto";
+}
+
+$respuesta_119 = isset($_POST['respuesta_119']) ? $_POST['respuesta_119'] : '';
+if ($respuesta_119 === '120') {  
+    $verificar_119 = "correcto";
+} elseif ($respuesta_119 === '') {
+    $verificar_119 = '';
+} else {
+    $verificar_119 = "incorrecto";
+}
+
+$respuesta_120 = isset($_POST['respuesta_120']) ? $_POST['respuesta_120'] : '';
+if ($respuesta_120 === '132') {  
+    $verificar_120 = "correcto";
+} elseif ($respuesta_120 === '') {
+    $verificar_120 = '';
+} else {
+    $verificar_120 = "incorrecto";
+}
+
+$respuesta_121 = isset($_POST['respuesta_121']) ? $_POST['respuesta_121'] : '';
+if ($respuesta_121 === '144') {  
+    $verificar_121 = "correcto";
+} elseif ($respuesta_121 === '') {
+    $verificar_121 = '';
+} else {
+    $verificar_121 = "incorrecto";
+}
+}
 }
 ?>
 <!DOCTYPE html>
@@ -1123,7 +1298,7 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
+      <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -1136,7 +1311,7 @@ if ($respuesta_110 === '264') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 440vh;
+    height: 370vh;
     }
 </style>
  
@@ -1178,211 +1353,180 @@ function handleSubmit(event) {
 }
 
 function actualizarFormula() {
-    // Obtener los valores de los inputs
-   
-    var f = document.getElementById('respuesta_11').value || "";
- 
-
-
-    // Construir la fórmula dinámica
-    var formula = ` \\  ${f} \\, `;
-
-    // Actualizar el contenido de la fórmula en el DOM
+    var f = document.getElementById('respuesta_1').value || "";
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
- 
 
 function actualizarFormula2() {
-    // Obtener los valores de los inputs
-   
-    var f = document.getElementById('respuesta_13').value || "";
-  
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-
-    // Actualizar el contenido de la fórmula en el DOM
+    var f = document.getElementById('respuesta_2').value || "";
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula2').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
 
-
-
 function actualizarFormula3() {
-    // Obtener los valores de los inputs
-   
-    var f = document.getElementById('respuesta_27').value || "";
- 
-
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-
-    // Actualizar el contenido de la fórmula en el DOM
+    var f = document.getElementById('respuesta_3').value || "";
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula3').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
 
 function actualizarFormula4() {
-    // Obtener los valores de los inputs
-    var f = document.getElementById('respuesta_29').value || "";
-   
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var f = document.getElementById('respuesta_4').value || "";
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula4').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
-
 
 function actualizarFormula5() {
-    // Obtener los valores de los inputs
-    var f = document.getElementById('respuesta_30').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var f = document.getElementById('respuesta_5').value || "";
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula5').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
-
-
 
 function actualizarFormula6() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_6').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula6').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
 
-
 function actualizarFormula7() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_7').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula7').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
 
 function actualizarFormula8() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_8').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula8').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
-
 
 function actualizarFormula9() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_9').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula9').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
-
-
 
 function actualizarFormula10() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_10').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula10').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
-
 
 function actualizarFormula11() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_11').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula11').innerHTML = `$$ ${formula} $$`;
-
-    // Re-renderizar MathJax para mostrar los cambios
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
 
-
 function actualizarFormula12() {
-    // Obtener los valores de los inputs
     var f = document.getElementById('respuesta_12').value || "";
-  
-
-    // Construir la fórmula dinámica
-    var formula = ` \\ ${f}  \\, `;
-    // Actualizar el contenido de la fórmula en el DOM
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula12').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
 
-    // Re-renderizar MathJax para mostrar los cambios
+function actualizarFormula13() {
+    var f = document.getElementById('respuesta_13').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula13').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula14() {
+    var f = document.getElementById('respuesta_14').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula14').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula15() {
+    var f = document.getElementById('respuesta_15').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula15').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula16() {
+    var f = document.getElementById('respuesta_16').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula16').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula17() {
+    var f = document.getElementById('respuesta_17').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula17').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula18() {
+    var f = document.getElementById('respuesta_18').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula18').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula19() {
+    var f = document.getElementById('respuesta_19').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula19').innerHTML = `$$ ${formula} $$`;
+    if (window.MathJax) {
+        MathJax.typeset();
+    }
+}
+
+function actualizarFormula20() {
+    var f = document.getElementById('respuesta_20').value || "";
+    var formula = ` \\ ${f} \\, `;
+    document.getElementById('formula20').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
         MathJax.typeset();
     }
@@ -1440,195 +1584,40 @@ function ocultarMensaje4() {
 <body> 
 <div class="seccion izquierda">
     <form action="./quinto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+      <h3>Ejemplo 19</h3>
+    <p>La congruencia \(14 \equiv 8 \pmod{6}\) se cumple, pero ambos lados de esta congruencia no pueden 
+    ser divididos por 2 para producir una congruencia válida porque \(14/2 = 7\) y \(8/2 = 4\), pero 
+    <br>
+    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="1">
+    \(\not\equiv\) 
+    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="1">
+    \( \pmod{6}\).</p>
     
-    <h3>Ejemplo 19</h3>
-    <p>La congruencia \(14 \equiv 8 \pmod{6}\) se cumple, pero ambos lados de esta congruencia no pueden ser divididos por 2 para producir una congruencia válida porque \(14/2 = 7\) y \(8/2 = 4\), pero \(7 \not\equiv 4 \pmod{6}\).</p>
-
-    <p>Aunque no podemos dividir ambos lados de una congruencia por cualquier entero para producir una congruencia válida, sí podemos hacerlo si este entero es relativamente primo con el módulo. El Teorema 7 establece este hecho importante. Usamos el Lema 2 en la prueba.</p>
+    <p>Aunque 
+    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="1">    
+    podemos dividir ambos lados de una congruencia por cualquier entero para producir una 
+    congruencia válida, 
+    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="1">
+    podemos hacerlo si este entero es 
+    <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="11">
+    primo con el 
+    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="8">
+    . El Teorema 7 
+    establece este hecho importante. Usamos el Lema 2 en la prueba.</p>
 
     <h4>TEOREMA 7</h4>
-    <p>Sea \(m\) un número entero positivo y sean \(a\), \(b\) y \(c\) enteros. Si \(ac \equiv bc \pmod{m}\) y \(\gcd(c, m) = 1\), entonces \(a \equiv b \pmod{m}\).</p>
+    <p>Sea \(m\) un número entero positivo y sean \(a\), \(b\) y \(c\) enteros. Si \(ac \equiv bc \pmod{m}\) 
+    y 
+    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="8">
+    , entonces \(a \equiv b \pmod{m}\).</p>
 
-    <p><strong>Prueba:</strong> Debido a que \(ac \equiv bc \pmod{m}\), se tiene que \(m \mid ac - bc = c(a - b)\). Por el Lema 2, dado que \(\gcd(c, m) = 1\), se sigue que \(m \mid a - b\). Concluimos que \(a \equiv b \pmod{m}\).</p>
+    <button onmousedown="mostrarMensaje()" onmouseup="ocultarMensaje()">Dato</button>
+    <div id="mensaje" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
 
-
-    <hr>
-    <h2>1. Determine whether each of these integers is prime.</h2>
-    <ul>
-    <li><strong>a) 21:</strong> 
-        <p>\( \sqrt{21} \approx 4.58 \), primos menores o iguales a 4: 2, 3. Como 21 es divisible por 3, no es primo.</p>
-    </li>
-    <li><strong>b) 29:</strong>
-        <p>\( \sqrt{29} \approx 5.39 \), primos menores o iguales a 5: 2, 3, 5. 29 no es divisible por ninguno de estos, por lo que es primo.</p>
-    </li>
-    <li><strong>c) 71:</strong>
-        <p>\( \sqrt{71} \approx 8.43 \), primos menores o iguales a 8: 2, 3, 5, 7. 71 no es divisible por ninguno de estos, por lo que es primo.</p>
-    </li>
-    <li><strong>d) 97:</strong>
-        <p>\( \sqrt{97} \approx 9.85 \), primos menores o iguales a 9: 2, 3, 5, 7. 97 no es divisible por ninguno de estos, por lo que es primo.</p>
-    </li>
-    <li><strong>e) 111:</strong>
-        <p>\( \sqrt{111} \approx 10.53 \), primos menores o iguales a 10: 2, 3, 5, 7. 111 es divisible por 3, por lo que no es primo.</p>
-    </li>
-    <li><strong>f) 143:</strong>
-        <p>\( \sqrt{143} \approx 11.93 \), primos menores o iguales a 11: 2, 3, 5, 7, 11. 143 es divisible por 11, por lo que no es primo.</p>
-    </li>
-</ul>
-<h2>16. Determine whether the integers in each of these sets are pairwise relatively prime.</h2>
-
-<h3>a) 21, 34, 55</h3>
-<ol>
-    <li><strong>MCD(21, 34):</strong> 
-        <ul>
-            <li>21 = 3 × 7</li>
-            <li>34 = 2 × 17</li>
-            <li>No tienen factores comunes. Por lo tanto, MCD(21, 34) = 1.</li>
-        </ul>
-    </li>
-    <li><strong>MCD(21, 55):</strong> 
-        <ul>
-            <li>21 = 3 × 7</li>
-            <li>55 = 5 × 11</li>
-            <li>No tienen factores comunes. Por lo tanto, MCD(21, 55) = 1.</li>
-        </ul>
-    </li>
-    <li><strong>MCD(34, 55):</strong> 
-        <ul>
-            <li>34 = 2 × 17</li>
-            <li>55 = 5 × 11</li>
-            <li>No tienen factores comunes. Por lo tanto, MCD(34, 55) = 1.</li>
-        </ul>
-    </li>
-</ol>
-<p><strong>Conclusión:</strong> Los números 21, 34 y 55 son <strong>relativamente primos entre sí</strong>.</p>
-
-<h3>b) 14, 17, 85</h3>
-<ol>
-    <li><strong>MCD(14, 17):</strong> 
-        <ul>
-            <li>14 = 2 × 7</li>
-            <li>17 es primo.</li>
-            <li>No tienen factores comunes. Por lo tanto, MCD(14, 17) = 1.</li>
-        </ul>
-    </li>
-    <li><strong>MCD(14, 85):</strong> 
-        <ul>
-            <li>14 = 2 × 7</li>
-            <li>85 = 5 × 17</li>
-            <li>No tienen factores comunes. Por lo tanto, MCD(14, 85) = 1.</li>
-        </ul>
-    </li>
-    <li><strong>MCD(17, 85):</strong> 
-        <ul>
-            <li>17 es primo.</li>
-            <li>85 = 5 × 17</li>
-            <li>El MCD es 17. Por lo tanto, MCD(17, 85) = 17.</li>
-        </ul>
-    </li>
-</ol>
-<p><strong>Conclusión:</strong> Los números 14, 17 y 85 <strong>no son relativamente primos entre sí</strong> (porque 17 divide a 85).</p>
-
-<h3>c) 25, 41, 49, 64</h3>
-<ol>
-    <li><strong>MCD(25, 41):</strong> 
-        <ul>
-            <li>25 = 5 × 5</li>
-            <li>41 es primo.</li>
-            <li>No tienen factores comunes. Por lo tanto, MCD(25, 41) = 1.</li>
-        </ul>
-    </li>
-    <li><strong>MCD(25, 49):</strong> 
-        <ul>
-            <li>25 = 5 × 5</li>
-            <li>49 = 7 × 7</li>
-            <li>No tienen factores comunes. Por lo tanto, MCD(25, 49) = 1.</li>
-        </ul>
-    </li>
-    <li><strong>MCD(25, 64):</strong> 
-        <ul>
-            <li>25 = 5 × 5</li>
-            <li>64 = 2 × 2 × 2 × 2 × 2 × 2</li>
-            <li>No tienen factores comunes. Por lo tanto, MCD(25, 64) = 1.</li>
-        </ul>
-    </li>
-    <li><strong>MCD(41, 49):</strong> 
-        <ul>
-            <li>41 es primo.</li>
-            <li>49 = 7 × 7</li>
-            <li>No tienen factores comunes. Por lo tanto, MCD(41, 49) = 1.</li>
-        </ul>
-    </li>
-    <li><strong>MCD(41, 64):</strong> 
-        <ul>
-            <li>41 es primo.</li>
-            <li>64 = 2 × 2 × 2 × 2 × 2 × 2</li>
-            <li>No tienen factores comunes. Por lo tanto, MCD(41, 64) = 1.</li>
-        </ul>
-    </li>
-    <li><strong>MCD(49, 64):</strong> 
-        <ul>
-            <li>49 = 7 × 7</li>
-            <li>64 = 2 × 2 × 2 × 2 × 2 × 2</li>
-            <li>No tienen factores comunes. Por lo tanto, MCD(49, 64) = 1.</li>
-        </ul>
-    </li>
-</ol>
-<p><strong>Conclusión:</strong> Los números 25, 41, 49 y 64 son <strong>relativamente primos entre sí</strong>.</p>
-
-<h3>d) 17, 18, 19, 23</h3>
-<ol>
-    <li><strong>MCD(17, 18):</strong> 
-        <ul>
-            <li>17 es primo.</li>
-            <li>18 = 2 × 3 × 3</li>
-            <li>No tienen factores comunes. Por lo tanto, MCD(17, 18) = 1.</li>
-        </ul>
-    </li>
-    <li><strong>MCD(17, 19):</strong> 
-        <ul>
-            <li>17 es primo.</li>
-            <li>19 es primo.</li>
-            <li>No tienen factores comunes. Por lo tanto, MCD(17, 19) = 1.</li>
-        </ul>
-    </li>
-    <li><strong>MCD(17, 23):</strong> 
-        <ul>
-            <li>17 es primo.</li>
-            <li>23 es primo.</li>
-            <li>No tienen factores comunes. Por lo tanto, MCD(17, 23) = 1.</li>
-        </ul>
-    </li>
-    <li><strong>MCD(18, 19):</strong> 
-        <ul>
-            <li>18 = 2 × 3 × 3</li>
-            <li>19 es primo.</li>
-            <li>No tienen factores comunes. Por lo tanto, MCD(18, 19) = 1.</li>
-        </ul>
-    </li>
-    <li><strong>MCD(18, 23):</strong> 
-        <ul>
-            <li>18 = 2 × 3 × 3</li>
-            <li>23 es primo.</li>
-            <li>No tienen factores comunes. Por lo tanto, MCD(18, 23) = 1.</li>
-        </ul>
-    </li>
-    <li><strong>MCD(19, 23):</strong> 
-        <ul>
-            <li>19 es primo.</li>
-            <li>23 es primo.</li>
-            <li>No tienen factores comunes. Por lo tanto, MCD(19, 23) = 1.</li>
-        </ul>
-    </li>
-</ol>
-<p><strong>Conclusión:</strong> Los números 17, 18, 19 y 23 son <strong>relativamente primos entre sí</strong>.</p>
-
-<h3>Resumen final:</h3>
-<ul>
-    <li>a) 21, 34, 55: Relativamente primos entre sí.</li>
-    <li>b) 14, 17, 85: No son relativamente primos entre sí (porque 17 divide a 85).</li>
-    <li>c) 25, 41, 49, 64: Relativamente primos entre sí.</li>
-    <li>d) 17, 18, 19, 23: Relativamente primos entre sí.</li>
-</ul>
+        <p><strong>Prueba:</strong> Debido a que \(ac \equiv bc \pmod{m}\), se tiene que \(m \mid ac - bc = c(a - b)\). 
+    Por el Lema 2, dado que \(\gcd(c, m) = 1\), se sigue que \(m \mid a - b\). Concluimos que 
+    \(a \equiv b \pmod{m}\).</p>
+    </div>
 
     </form>
 </div>
@@ -1638,7 +1627,7 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
     <form action="./quinto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-
+ 
     </form>
 </div>
 

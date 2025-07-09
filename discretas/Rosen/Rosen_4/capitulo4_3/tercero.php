@@ -1605,9 +1605,13 @@ function ocultarMensaje4() {
 <div class="seccion derecha">
     <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
     <h3>Ejemplo 13</h3>
-<p><em>Determina si los enteros 10, 17 y 21 son primos relativos por pares y si los enteros 10, 19 y 24 también lo son.</em></p>
-<p><strong>Solución:</strong> Como \( \gcd(10, 17) = 1 \), \( \gcd(10, 21) = 1 \) y \( \gcd(17, 21) = 1 \), concluimos que 10, 17 y 21 son primos relativos por pares.</p>
-<p>Sin embargo, como \( \gcd(10, 24) = 2 > 1 \), 10, 19 y 24 no son primos relativos por pares.</p>
+
+    <p><em>Determina si los enteros 10, 17 y 21 son primos relativos por pares y si los enteros 10, 19 y 24 
+    también lo son.</em></p>
+
+    <p><strong>Solución:</strong> Como \( \gcd(10, 17) = 1 \), \( \gcd(10, 21) = 1 \) y \( \gcd(17, 21) = 1 \), 
+    concluimos que 10, 17 y 21 son primos relativos por pares.</p>
+    <p>Sin embargo, como \( \gcd(10, 24) = 2 > 1 \), 10, 19 y 24 no son primos relativos por pares.</p>
 
     <p>Otra forma de encontrar el máximo común divisor de dos enteros positivos es usar sus 
     factorizaciones primarias. Supongamos que las factorizaciones primarias de los enteros 
@@ -1641,44 +1645,44 @@ function ocultarMensaje4() {
     Es decir que se hacen solo 3 porque (21,10) es lo mismo que (10,21)
     </p>
 
-    <p>Cuando te hablan de "<strong>primos relativos por pares</strong>" (<em>pairwise relatively prime</em>) en el ejemplo de 
-10, 17, 21, no tienes que hacer 6 comparaciones.</p>
+    <p>Cuando te hablan de "<strong>primos relativos por pares</strong>" (<em>pairwise relatively prime</em>) 
+    en el ejemplo de 10, 17, 21, no tienes que hacer 6 comparaciones.</p>
 
-<p>En realidad, solo se comparan todas las parejas posibles distintas de dos elementos, es decir:</p>
+    <p>En realidad, solo se comparan todas las parejas posibles distintas de dos elementos, es decir:</p>
 
-<ul>
-<li>10 y 17</li>
-<li>10 y 21</li>
-<li>17 y 21</li>
-</ul>
+    <ul>
+    <li>10 y 17</li>
+    <li>10 y 21</li>
+    <li>17 y 21</li>
+    </ul>
 
-<p>O sea, solo <strong>3 comparaciones</strong>, no 6. 🔥</p>
+    <p>O sea, solo <strong>3 comparaciones</strong>, no 6. 🔥</p>
 
-<p><strong>¿Por qué?</strong><br>
-Porque cuando tienes \( n \) números, la cantidad de pares que debes revisar es:
+    <p><strong>¿Por qué?</strong><br>
+    Porque cuando tienes \( n \) números, la cantidad de pares que debes revisar es:
 
-\[
-\binom{n}{2} = \frac{n(n-1)}{2}
-\]
+    \[
+    \binom{n}{2} = \frac{n(n-1)}{2}
+    \]
 
-Entonces para 3 números:
+    Entonces para 3 números:
 
-\[
-\binom{3}{2} = 3
-\]
+    \[
+    \binom{3}{2} = 3
+    \]
 
-(y no \(3 \times 2 = 6\)).</p>
+    (y no \(3 \times 2 = 6\)).</p>
 
-<hr>
+    <hr>
 
-<p><strong>En resumen:</strong><br>
-Para que 10, 17, 21 sean primos relativos por pares se debe verificar que:</p>
+    <p><strong>En resumen:</strong><br>
+    Para que 10, 17, 21 sean primos relativos por pares se debe verificar que:</p>
 
-<ul>
-<li>\(\gcd(10,17) = 1\) ✅</li>
-<li>\(\gcd(10,21) = 1\) ✅</li>
-<li>\(\gcd(17,21) = 1\) ✅</li>
-</ul>
+    <ul>
+    <li>\(\gcd(10,17) = 1\) ✅</li>
+    <li>\(\gcd(10,21) = 1\) ✅</li>
+    <li>\(\gcd(17,21) = 1\) ✅</li>
+    </ul>
 
 
     <hr>
@@ -1686,89 +1690,105 @@ Para que 10, 17, 21 sean primos relativos por pares se debe verificar que:</p>
 
  
  
-<p><strong>Ejemplo 14</strong> Debido a que las descomposiciones en factores primos de 120 y
- 500 son \(120 = 2^3 \cdot 3 \cdot 5\) y \(500 = 2^2 \cdot 5^3\), el máximo común divisor es:</p>
+    <p><strong>Ejemplo 14</strong> Debido a que las descomposiciones en factores primos de 120 y
+    500 son \(120 = 2^3 \cdot 3 \cdot 5\) y \(500 = 2^2 \cdot 5^3\), el máximo común divisor es:</p>
 
-<p>
-\[
-\gcd(120, 500) = 2^{\min(3,2)} 3^{\min(1,0)} 5^{\min(1,3)} = 2^2 3^0 5^1 = 20.
-\]
-</p>
+    <p>
+    \[
+    \gcd(120, 500) = 2^{\min(3,2)} 3^{\min(1,0)} 5^{\min(1,3)} = 2^2 3^0 5^1 = 20.
+    \]
+    </p>
 
-<p>Las descomposiciones en factores primos también pueden usarse para encontrar el mínimo común múltiplo de dos enteros.</p>
+    <p>Las descomposiciones en factores primos también pueden usarse para encontrar el mínimo común 
+    múltiplo de dos enteros.</p>
 
-<p><h1>Definición 5</h1>  El mínimo común múltiplo de los enteros positivos \(a\) y \(b\) es el entero 
-positivo más pequeño que es divisible por ambos, \(a\) y \(b\). El mínimo común múltiplo de \(a\) y \(b\)
- se denota como \(\mathrm{lcm}(a, b)\).</p>
+    <p><h1>Definición 5</h1>  El mínimo común múltiplo de los enteros positivos \(a\) y \(b\) es el entero 
+    positivo más pequeño que es divisible por ambos, \(a\) y \(b\). El mínimo común múltiplo de \(a\) y \(b\)
+    se denota como \(\mathrm{lcm}(a, b)\).</p>
 
-<p>El mínimo común múltiplo existe porque el conjunto de enteros divisibles por ambos \(a\) y \(b\) no está vacío (porque \(ab\) pertenece a este conjunto, por ejemplo), y todo conjunto no vacío de enteros positivos tiene un elemento mínimo (por la propiedad de buen orden, que se discutirá en la Sección 5.2).</p>
+    <p>El mínimo común múltiplo existe porque el conjunto de enteros divisibles por ambos \(a\) y \(b\) no 
+    está vacío (porque \(ab\) pertenece a este conjunto, por ejemplo), y todo conjunto no vacío de enteros 
+    positivos tiene un elemento mínimo (por la propiedad de buen orden, que se discutirá en la Sección 5.2).</p>
 
-<p>Supongamos que las descomposiciones en factores primos de \(a\) y \(b\) son como se ha dicho antes. Entonces, el mínimo común múltiplo de \(a\) y \(b\) se da por:</p>
+    <p>Supongamos que las descomposiciones en factores primos de \(a\) y \(b\) son como se ha dicho antes. 
+    Entonces, el mínimo común múltiplo de \(a\) y \(b\) se da por:</p>
 
-<p>
-\[
-\mathrm{lcm}(a, b) = p_1^{\max(a_1,b_1)} p_2^{\max(a_2,b_2)} \cdots p_n^{\max(a_n,b_n)},
-\]
-</p>
+    <p>
+    \[
+    \mathrm{lcm}(a, b) = p_1^{\max(a_1,b_1)} p_2^{\max(a_2,b_2)} \cdots p_n^{\max(a_n,b_n)},
+    \]
+    </p>
 
-<p>donde \(\max(x,y)\) denota el máximo de los dos números \(x\) y \(y\).</p>
+    <p>donde \(\max(x,y)\) denota el máximo de los dos números \(x\) y \(y\).</p>
 
-<p>Esta fórmula es válida porque un múltiplo común de \(a\) y \(b\) tiene al menos \(\max(a_i, b_i)\) factores de \(p_i\) en su descomposición en factores primos, y el mínimo común múltiplo no tiene otros factores primos aparte de los de \(a\) y \(b\).</p>
+    <p>Esta fórmula es válida porque un múltiplo común de \(a\) y \(b\) tiene al menos \(\max(a_i, b_i)\) 
+    factores de \(p_i\) en su descomposición en factores primos, y el mínimo común múltiplo no tiene otros 
+    factores primos aparte de los de \(a\) y \(b\).</p>
 
-<p><strong>Ejemplo 15</strong> ¿Cuál es el mínimo común múltiplo de \(2^3 3^5 7^2\) y \(2^4 3^3\)?</p>
+    <p><strong>Ejemplo 15</strong> ¿Cuál es el mínimo común múltiplo de \(2^3 3^5 7^2\) y \(2^4 3^3\)?</p>
 
-<p>Solución: Tenemos
-\[
-\mathrm{lcm}(2^3 3^5 7^2, 2^4 3^3) = 2^{\max(3,4)} 3^{\max(5,3)} 7^{\max(2,0)} = 2^4 3^5 7^2.
-\]
-◂
-</p>
+    <p>Solución: Tenemos
+    \[
+    \mathrm{lcm}(2^3 3^5 7^2, 2^4 3^3) = 2^{\max(3,4)} 3^{\max(5,3)} 7^{\max(2,0)} = 2^4 3^5 7^2.
+    \]
+    ◂
+    </p>
 
-<p>El Teorema 5 da la relación entre el máximo común divisor y el mínimo común múltiplo de dos enteros. Se puede probar usando las fórmulas que hemos derivado para estas cantidades. La prueba de este teorema se deja como el Ejercicio 31.</p>
+    <p>El Teorema 5 da la relación entre el máximo común divisor y el mínimo común múltiplo de dos enteros. 
+    Se puede probar usando las fórmulas que hemos derivado para estas cantidades. La prueba de este teorema 
+    se deja como el Ejercicio 31.</p>
 
-<p><h1>Teorema 5 </h1>Sean \(a\) y \(b\) enteros positivos. Entonces,
-\[
-ab = \gcd(a,b) \times \mathrm{lcm}(a,b).
-\]
-</p>
+    <p><h1>Teorema 5 </h1>Sean \(a\) y \(b\) enteros positivos. Entonces,
+    \[
+    ab = \gcd(a,b) \times \mathrm{lcm}(a,b).
+    \]
+    </p>
 
     <hr>    
     <h3>4.3.7 El Algoritmo de Euclides</h3>
 
-<p>Calcular el máximo común divisor de dos enteros directamente desde las descomposiciones en factores primos de estos enteros es ineficiente. La razón es que encontrar descomposiciones en factores primos consume mucho tiempo. Daremos un método más eficiente para encontrar el máximo común divisor, llamado el algoritmo de Euclides. Este algoritmo se ha conocido desde la antigüedad. Lleva el nombre del matemático griego antiguo Euclides, quien incluyó una descripción de este algoritmo en su libro <i>Los Elementos</i>.</p>
+    <p>Calcular el máximo común divisor de dos enteros directamente desde las descomposiciones en factores 
+    primos de estos enteros es ineficiente. La razón es que encontrar descomposiciones en factores primos 
+    consume mucho tiempo. Daremos un método más eficiente para encontrar el máximo común divisor, llamado el 
+    algoritmo de Euclides. Este algoritmo se ha conocido desde la antigüedad. Lleva el nombre del matemático 
+    griego antiguo Euclides, quien incluyó una descripción de este algoritmo en su libro <i>Los Elementos</i>.</p>
 
-<p>Antes de describir el algoritmo de Euclides, mostraremos cómo se utiliza para encontrar \(\gcd(91, 287)\).</p>
+    <p>Antes de describir el algoritmo de Euclides, mostraremos cómo se utiliza para encontrar \(\gcd(91, 287)\).</p>
 
-<p>Primero, divide 287, el mayor de los dos enteros, entre 91, el menor, para obtener:</p>
+    <p>Primero, divide 287, el mayor de los dos enteros, entre 91, el menor, para obtener:</p>
 
-<p>
-\[
-287 = 91 \cdot 3 + 14.
-\]
-</p>
-<strong>Nota: 91*3= 273 </strong>
-<p>Cualquier divisor de 91 y 287 también debe ser un divisor de \(287 - 91 \cdot 3 = 14\). Además, cualquier divisor de 91 y 14 también debe ser un divisor de \(287 = 91 \cdot 3 + 14\). Por lo tanto, el máximo común divisor de 91 y 287 es el mismo que el máximo común divisor de 91 y 14. Esto significa que el problema de encontrar \(\gcd(91, 287)\) se ha reducido al problema de encontrar \(\gcd(91, 14)\).</p>
+    <p>
+    \[
+    287 = 91 \cdot 3 + 14.
+    \]
+    </p>
+    <strong>Nota: 91*3= 273 </strong>
+    <p>Cualquier divisor de 91 y 287 también debe ser un divisor de \(287 - 91 \cdot 3 = 14\). Además, 
+    cualquier divisor de 91 y 14 también debe ser un divisor de \(287 = 91 \cdot 3 + 14\). Por lo tanto, 
+    el máximo común divisor de 91 y 287 es el mismo que el máximo común divisor de 91 y 14. Esto significa 
+    que el problema de encontrar \(\gcd(91, 287)\) se ha reducido al problema de encontrar \(\gcd(91, 14)\).</p>
 
-<p>A continuación, divide 91 entre 14 para obtener:</p>
+    <p>A continuación, divide 91 entre 14 para obtener:</p>
 
-<p>
-\[
-91 = 14 \cdot 6 + 7.
-\]
-</p>
+    <p>
+    \[
+    91 = 14 \cdot 6 + 7.
+    \]
+    </p>
 
-<p>Porque cualquier divisor común de 91 y 14 también divide \(91 - 14 \cdot 6 = 7\) y cualquier divisor común de 14 y 7 divide 91, se sigue que \(\gcd(91, 14) = \gcd(14, 7)\).</p>
+    <p>Porque cualquier divisor común de 91 y 14 también divide \(91 - 14 \cdot 6 = 7\) y cualquier 
+    divisor común de 14 y 7 divide 91, se sigue que \(\gcd(91, 14) = \gcd(14, 7)\).</p>
 
-<p>Continúa dividiendo 14 entre 7, para obtener:</p>
+    <p>Continúa dividiendo 14 entre 7, para obtener:</p>
 
-<p>
-\[
-14 = 7 \cdot 2.
-\]
-</p>
+    <p>
+    \[
+    14 = 7 \cdot 2.
+    \]
+    </p>
 
-<p>Porque 7 divide a 14, se sigue que \(\gcd(14, 7) = 7\). Además, dado que \(\gcd(287, 91) = \gcd(91, 14) = \gcd(14, 7) = 7\), el problema original ha sido resuelto.</p>
-
+    <p>Porque 7 divide a 14, se sigue que \(\gcd(14, 7) = 7\). Además, dado que \(\gcd(287, 91) = 
+    \gcd(91, 14) = \gcd(14, 7) = 7\), el problema original ha sido resuelto.</p>
     <hr>
    
     

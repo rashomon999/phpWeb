@@ -341,7 +341,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la tercera pregunta
      $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-     if ($respuesta_14 === '56') {  
+     if ($respuesta_14 === 'mayor') {  
          $verificar_14 = "correcto";
      } elseif ($respuesta_14 === '') {
          $verificar_14 = '';
@@ -351,7 +351,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la cuarta pregunta
      $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-     if ($respuesta_15 === '70') { 
+     if ($respuesta_15 === 'divide') { 
          $verificar_15 = "correcto";
      } elseif ($respuesta_15 === '') {
          $verificar_15 = '';
@@ -361,7 +361,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la quinta pregunta
      $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-     if ($respuesta_16 === '84') {  
+     if ($respuesta_16 === 'dos') {  
          $verificar_16 = "correcto";
      } elseif ($respuesta_16 === '') {
          $verificar_16 = '';
@@ -371,7 +371,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la sexta pregunta
      $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-     if ($respuesta_17 === '98') {  
+     if ($respuesta_17 === 'mayor') {  
          $verificar_17 = "correcto";
      } elseif ($respuesta_17 === '') {
          $verificar_17 = '';
@@ -381,7 +381,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la séptima pregunta
      $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-     if ($respuesta_18 === '112') {  
+     if ($respuesta_18 === 'd') {  
          $verificar_18 = "correcto";
      } elseif ($respuesta_18 === '') {
          $verificar_18 = '';
@@ -391,7 +391,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la octava pregunta
      $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-     if ($respuesta_19 === '126') {  
+     if ($respuesta_19 === 'd') {  
          $verificar_19 = "correcto";
      } elseif ($respuesta_19 === '') {
          $verificar_19 = '';
@@ -401,7 +401,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la novena pregunta
      $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
-     if ($respuesta_20 === '140') {  
+     if ($respuesta_20 === 'gcd(a,b)') {  
          $verificar_20 = "correcto";
      } elseif ($respuesta_20 === '') {
          $verificar_20 = '';
@@ -411,7 +411,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la décima pregunta
      $respuesta_21 = isset($_POST['respuesta_21']) ? $_POST['respuesta_21'] : '';
-     if ($respuesta_21 === '154') {  
+     if ($respuesta_21 === 'no vacio') {  
          $verificar_21 = "correcto";
      } elseif ($respuesta_21 === '') {
          $verificar_21 = '';
@@ -421,7 +421,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la undécima pregunta
      $respuesta_22 = isset($_POST['respuesta_22']) ? $_POST['respuesta_22'] : '';
-     if ($respuesta_22 === '168') {  
+     if ($respuesta_22 === 'finito') {  
          $verificar_22 = "correcto";
      } elseif ($respuesta_22 === '') {
          $verificar_22 = '';
@@ -431,7 +431,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
    $respuesta_23 = isset($_POST['respuesta_23']) ? $_POST['respuesta_23'] : '';
-   if ($respuesta_23 === '30') {  
+   if ($respuesta_23 === 'todos') {  
        $verificar_23 = "correcto";
    } elseif ($respuesta_23 === '') {
        $verificar_23 = '';
@@ -441,7 +441,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_24 = isset($_POST['respuesta_24']) ? $_POST['respuesta_24'] : '';
-   if ($respuesta_24 === '45') {  
+   if ($respuesta_24 === 'ambos') {  
        $verificar_24 = "correcto";
    } elseif ($respuesta_24 === '') {
        $verificar_24 = '';
@@ -451,7 +451,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_25 = isset($_POST['respuesta_25']) ? $_POST['respuesta_25'] : '';
-   if ($respuesta_25 === '60') { 
+   if ($respuesta_25 === 'mayor') { 
        $verificar_25 = "correcto";
    } elseif ($respuesta_25 === '') {
        $verificar_25 = '';
@@ -461,7 +461,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_26 = isset($_POST['respuesta_26']) ? $_POST['respuesta_26'] : '';
-   if ($respuesta_26 === '75') {  
+   if ($respuesta_26 === '12') {  
        $verificar_26 = "correcto";
    } elseif ($respuesta_26 === '') {
        $verificar_26 = '';
@@ -471,7 +471,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_27 = isset($_POST['respuesta_27']) ? $_POST['respuesta_27'] : '';
-   if ($respuesta_27 === '90') {  
+   if ($respuesta_27 === '1') {  
        $verificar_27 = "correcto";
    } elseif ($respuesta_27 === '') {
        $verificar_27 = '';
@@ -481,7 +481,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_28 = isset($_POST['respuesta_28']) ? $_POST['respuesta_28'] : '';
-   if ($respuesta_28 === '105') {  
+   if ($respuesta_28 === 'primos relativos') {  
        $verificar_28 = "correcto";
    } elseif ($respuesta_28 === '') {
        $verificar_28 = '';
@@ -491,7 +491,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_29 = isset($_POST['respuesta_29']) ? $_POST['respuesta_29'] : '';
-   if ($respuesta_29 === '120') {  
+   if ($respuesta_29 === 'par') {  
        $verificar_29 = "correcto";
    } elseif ($respuesta_29 === '') {
        $verificar_29 = '';
@@ -501,7 +501,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_30 = isset($_POST['respuesta_30']) ? $_POST['respuesta_30'] : '';
-   if ($respuesta_30 === '135') {  
+   if ($respuesta_30 === 'divisor') {  
        $verificar_30 = "correcto";
    } elseif ($respuesta_30 === '') {
        $verificar_30 = '';
@@ -511,7 +511,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_31 = isset($_POST['respuesta_31']) ? $_POST['respuesta_31'] : '';
-   if ($respuesta_31 === '150') {  
+   if ($respuesta_31 === 'primos relativos por pares') {  
        $verificar_31 = "correcto";
    } elseif ($respuesta_31 === '') {
        $verificar_31 = '';
@@ -521,7 +521,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_32 = isset($_POST['respuesta_32']) ? $_POST['respuesta_32'] : '';
-   if ($respuesta_32 === '165') {  
+   if ($respuesta_32 === '<') {  
        $verificar_32 = "correcto";
    } elseif ($respuesta_32 === '') {
        $verificar_32 = '';
@@ -531,7 +531,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_33 = isset($_POST['respuesta_33']) ? $_POST['respuesta_33'] : '';
-   if ($respuesta_33 === '180') {  
+   if ($respuesta_33 === 'n') {  
        $verificar_33 = "correcto";
    } elseif ($respuesta_33 === '') {
        $verificar_33 = '';
@@ -540,7 +540,7 @@ if ($_POST) {
    }
 
     $respuesta_34 = isset($_POST['respuesta_34']) ? $_POST['respuesta_34'] : '';
-    if ($respuesta_34 === '32') { 
+    if ($respuesta_34 === '2') { 
         $verificar_34 = "correcto";
     } elseif ($respuesta_34 === '') {
         $verificar_34 = '';
@@ -549,7 +549,7 @@ if ($_POST) {
     }
 
     $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
-    if ($respuesta_35 === '48') { 
+    if ($respuesta_35 === 'factorizaciones') { 
         $verificar_35 = "correcto";
     } elseif ($respuesta_35 === '') {
         $verificar_35 = '';
@@ -558,7 +558,7 @@ if ($_POST) {
     }
 
     $respuesta_36 = isset($_POST['respuesta_36']) ? $_POST['respuesta_36'] : '';
-    if ($respuesta_36 === '64') { 
+    if ($respuesta_36 === 'negativo') { 
         $verificar_36 = "correcto";
     } elseif ($respuesta_36 === '') {
     $verificar_36 = '';
@@ -567,7 +567,7 @@ if ($_POST) {
     }
 
     $respuesta_37 = isset($_POST['respuesta_37']) ? $_POST['respuesta_37'] : '';
-    if ($respuesta_37 === '80') { 
+    if ($respuesta_37 === 'ambas') { 
         $verificar_37 = "correcto";
     } elseif ($respuesta_37 === '') {
         $verificar_37 = '';
@@ -576,7 +576,7 @@ if ($_POST) {
     }
 
  $respuesta_38 = isset($_POST['respuesta_38']) ? $_POST['respuesta_38'] : '';
-if ($respuesta_38 === '96') { 
+if ($respuesta_38 === 'minimo') { 
     $verificar_38 = "correcto";
 } elseif ($respuesta_38 === '') {
     $verificar_38 = '';
@@ -585,7 +585,7 @@ if ($respuesta_38 === '96') {
 }
 
  $respuesta_39 = isset($_POST['respuesta_39']) ? $_POST['respuesta_39'] : '';
-if ($respuesta_39 === '112') { 
+if ($respuesta_39 === 'excede') { 
     $verificar_39 = "correcto";
 } elseif ($respuesta_39 === '') {
     $verificar_39 = '';
@@ -594,7 +594,7 @@ if ($respuesta_39 === '112') {
 }
 
  $respuesta_40 = isset($_POST['respuesta_40']) ? $_POST['respuesta_40'] : '';
-if ($respuesta_40 === '128') { 
+if ($respuesta_40 === '20') { 
     $verificar_40 = "correcto";
 } elseif ($respuesta_40 === '') {
     $verificar_40 = '';
@@ -603,7 +603,7 @@ if ($respuesta_40 === '128') {
 }
 
  $respuesta_41 = isset($_POST['respuesta_41']) ? $_POST['respuesta_41'] : '';
-if ($respuesta_41 === '144') { 
+if ($respuesta_41 === 'descomposiciones') { 
     $verificar_41 = "correcto";
 } elseif ($respuesta_41 === '') {
     $verificar_41 = '';
@@ -612,7 +612,7 @@ if ($respuesta_41 === '144') {
 }
 
  $respuesta_42 = isset($_POST['respuesta_42']) ? $_POST['respuesta_42'] : '';
-if ($respuesta_42 === '160') { 
+if ($respuesta_42 === 'pequeño') { 
     $verificar_42 = "correcto";
 } elseif ($respuesta_42 === '') {
     $verificar_42 = '';
@@ -621,7 +621,7 @@ if ($respuesta_42 === '160') {
 }
 
  $respuesta_43 = isset($_POST['respuesta_43']) ? $_POST['respuesta_43'] : '';
-if ($respuesta_43 === '176') { 
+if ($respuesta_43 === 'divisible') { 
     $verificar_43 = "correcto";
 } elseif ($respuesta_43 === '') {
     $verificar_43 = '';
@@ -630,7 +630,7 @@ if ($respuesta_43 === '176') {
 }
 
  $respuesta_44 = isset($_POST['respuesta_44']) ? $_POST['respuesta_44'] : '';
-if ($respuesta_44 === '192') { 
+if ($respuesta_44 === 'lcm(a,b)') { 
     $verificar_44 = "correcto";
 } elseif ($respuesta_44 === '') {
     $verificar_44 = '';
@@ -639,7 +639,7 @@ if ($respuesta_44 === '192') {
 }
 
  $respuesta_45 = isset($_POST['respuesta_45']) ? $_POST['respuesta_45'] : '';
-if ($respuesta_45 === '34') { 
+if ($respuesta_45 === 'vacio') { 
     $verificar_45 = "correcto";
 } elseif ($respuesta_45 === '') {
     $verificar_45 = '';
@@ -648,7 +648,7 @@ if ($respuesta_45 === '34') {
 }
 
  $respuesta_46 = isset($_POST['respuesta_46']) ? $_POST['respuesta_46'] : '';
-if ($respuesta_46 === '51') { 
+if ($respuesta_46 === 'minimo') { 
     $verificar_46 = "correcto";
 } elseif ($respuesta_46 === '') {
     $verificar_46 = '';
@@ -657,7 +657,7 @@ if ($respuesta_46 === '51') {
 }
 
  $respuesta_47 = isset($_POST['respuesta_47']) ? $_POST['respuesta_47'] : '';
-if ($respuesta_47 === '68') { 
+if ($respuesta_47 === 'maximo') { 
     $verificar_47 = "correcto";
 } elseif ($respuesta_47 === '') {
     $verificar_47 = '';
@@ -666,7 +666,7 @@ if ($respuesta_47 === '68') {
 }
 
  $respuesta_48 = isset($_POST['respuesta_48']) ? $_POST['respuesta_48'] : '';
-if ($respuesta_48 === '85') { 
+if ($respuesta_48 === 'gcd(a,b)lcm(a,b)' || $respuesta_48 === 'gcd(a,b)*lcm(a,b)') { 
     $verificar_48 = "correcto";
 } elseif ($respuesta_48 === '') {
     $verificar_48 = '';
@@ -675,7 +675,7 @@ if ($respuesta_48 === '85') {
 }
 
  $respuesta_49 = isset($_POST['respuesta_49']) ? $_POST['respuesta_49'] : '';
-if ($respuesta_49 === '102') { 
+if ($respuesta_49 === 'descomposiciones') { 
     $verificar_49 = "correcto";
 } elseif ($respuesta_49 === '') {
     $verificar_49 = '';
@@ -684,7 +684,7 @@ if ($respuesta_49 === '102') {
 }
 
  $respuesta_50 = isset($_POST['respuesta_50']) ? $_POST['respuesta_50'] : '';
-if ($respuesta_50 === '119') { 
+if ($respuesta_50 === 'factores') { 
     $verificar_50 = "correcto";
 } elseif ($respuesta_50 === '') {
     $verificar_50 = '';
@@ -693,7 +693,7 @@ if ($respuesta_50 === '119') {
 }
 
  $respuesta_51 = isset($_POST['respuesta_51']) ? $_POST['respuesta_51'] : '';
-if ($respuesta_51 === '136') { 
+if ($respuesta_51 === 'tiempo') { 
     $verificar_51 = "correcto";
 } elseif ($respuesta_51 === '') {
     $verificar_51 = '';
@@ -702,7 +702,7 @@ if ($respuesta_51 === '136') {
 }
 
  $respuesta_52 = isset($_POST['respuesta_52']) ? $_POST['respuesta_52'] : '';
-if ($respuesta_52 === '153') { 
+if ($respuesta_52 === 'maximo comun divisor' || $respuesta_52 === 'mcd') { 
     $verificar_52 = "correcto";
 } elseif ($respuesta_52 === '') {
     $verificar_52 = '';
@@ -711,7 +711,7 @@ if ($respuesta_52 === '153') {
 }
 
  $respuesta_53 = isset($_POST['respuesta_53']) ? $_POST['respuesta_53'] : '';
-if ($respuesta_53 === '170') { 
+if ($respuesta_53 === 'mayor') { 
     $verificar_53 = "correcto";
 } elseif ($respuesta_53 === '') {
     $verificar_53 = '';
@@ -720,7 +720,7 @@ if ($respuesta_53 === '170') {
 }
 
  $respuesta_54 = isset($_POST['respuesta_54']) ? $_POST['respuesta_54'] : '';
-if ($respuesta_54 === '187') { 
+if ($respuesta_54 === 'gcd(91,14)') { 
     $verificar_54 = "correcto";
 } elseif ($respuesta_54 === '') {
     $verificar_54 = '';
@@ -729,7 +729,7 @@ if ($respuesta_54 === '187') {
 }
 
  $respuesta_55 = isset($_POST['respuesta_55']) ? $_POST['respuesta_55'] : '';
-if ($respuesta_55 === '204') { 
+if ($respuesta_55 === 'gcd(14,7)') { 
     $verificar_55 = "correcto";
 } elseif ($respuesta_55 === '') {
     $verificar_55 = '';
@@ -739,7 +739,7 @@ if ($respuesta_55 === '204') {
 
 
  $respuesta_56 = isset($_POST['respuesta_56']) ? $_POST['respuesta_56'] : '';
-if ($respuesta_56 === '36') { 
+if ($respuesta_56 === '7') { 
     $verificar_56 = "correcto";
 } elseif ($respuesta_56 === '') {
     $verificar_56 = '';
@@ -1843,45 +1843,115 @@ function ocultarMensaje4() {
     <h2>4.3.6 Máximos Comunes Divisores y Mínimos Comunes Múltiplos</h2>
     <br>
     <strong>Nota gcd (Greatest Common Divisor)</strong>
-    <p>El mayor entero que divide a dos enteros se llama el 
+    <p>El 
+    <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="9">     
+     entero que
+     <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="9"> 
+       a
+     <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="9"> 
+       enteros se llama el 
     <strong>máximo común divisor</strong> de estos enteros.</p>
 
     <h3>Definición 2</h3>
-    <p>Sean \( a \) y \( b \) enteros, no ambos cero. El mayor entero \( d \) tal que \( d \mid a \)
-    y \( d \mid b \) se llama el <strong>máximo común divisor</strong> de \( a \) y \( b \). 
-    El máximo común divisor de \( a \) y \( b \) se denota por \( \gcd(a, b) \).</p>
+    <p>Sean \( a \) y \( b \) enteros, no ambos cero. El 
+    <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="9">     
+      entero \( d \) tal que 
+    <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="9"> 
+    \(  \mid a \)
+    y
+    <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="9"> 
+    \(  \mid b \) se llama el <strong>máximo común divisor</strong> de \( a \) y \( b \). 
+    El máximo común divisor de \( a \) y \( b \) se denota por 
+    <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="9"> 
+    .</p>
 
     <p>El máximo común divisor de dos enteros, no ambos cero, existe porque el conjunto de divisores 
-    comunes es no vacío y finito. Una forma de encontrar el máximo común divisor de dos enteros es 
-    encontrar todos los divisores positivos comunes de ambos enteros y luego tomar el mayor. Esto se 
+    comunes es   
+    <input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>" size="9"> 
+      y 
+    <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="9"> 
+     . Una forma de encontrar el máximo común divisor de dos enteros es 
+    encontrar 
+    <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="9">
+      los divisores positivos comunes de 
+    <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="9">
+      enteros y luego tomar el 
+    <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="9">
+     . Esto se 
     muestra en los Ejemplos 10 y 11. Posteriormente, se dará un método más eficiente para encontrar 
     máximos comunes divisores.</p>
 
     <h3>Ejemplo 10</h3>
     <p><em>¿Cuál es el máximo común divisor de 24 y 36?</em></p>
     <p><strong>Solución:</strong> Los divisores comunes positivos de 24 y 36 son 1, 2, 3, 4, 6 y 12. 
-    Por lo tanto, \( \gcd(24, 36) = 12 \).</p>
+    Por lo tanto, \( \gcd(24, 36) =  \)
+    <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="9">
+    .</p>
 
     <h3>Ejemplo 11</h3>
     <p><em>¿Cuál es el máximo común divisor de 17 y 22?</em></p>
     <p><strong>Solución:</strong> Los enteros 17 y 22 no tienen divisores comunes positivos aparte de 1, 
-    así que \( \gcd(17, 22) = 1 \).</p>
+    así que \( \gcd(17, 22) =  \)
+    <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="9">
+    .</p>
 
     <p>Debido a que a menudo es importante especificar que dos enteros no tienen divisores positivos 
     comunes aparte de 1, definimos lo siguiente:</p>
 
     <h3>Definición 3</h3>
-    <p>Los enteros \( a \) y \( b \) son <strong>primos relativos</strong> si su máximo común divisor es 1.</p>
+    <p>Los enteros \( a \) y \( b \) son <strong>  
+    <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="13">    
+    </strong> si su máximo común divisor es 1.</p>
 
     <h3>Ejemplo 12</h3>
-    <p>Por el Ejemplo 11, los enteros 17 y 22 son primos relativos porque \( \gcd(17, 22) = 1 \).</p>
+    <p>Por el Ejemplo 11, los enteros 17 y 22 son 
+    <input type="text"  value="<?php echo $respuesta_28; ?>" size="13" readonly>    
+    porque \( \gcd(17, 22) =  \)
+    <input type="text" value="<?php echo $respuesta_27; ?>" size="9" readonly>
+    .</p>
 
-    <p>También es útil especificar que ningún par de enteros en un conjunto tiene un divisor positivo 
+    <p>También es útil especificar que ningún 
+     <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="13">     
+      de enteros en un conjunto tiene un 
+     <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="13"> 
+      positivo 
     común mayor que 1, así que hacemos la siguiente definición:</p>
 
-    <h3>Definición 4</h3>
-    <p>Los enteros \( a_1, a_2, \dots, a_n \) son <strong>primos relativos por pares</strong> si 
-    \( \gcd(a_i, a_j) = 1 \) siempre que \( 1 \leq i < j \leq n \).</p>
+    <h3>Definición 4</h3> 
+
+    <button onmousedown="mostrarImagen4()" onmouseup="ocultarImagen4()">Explicacion</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada4" src="../../../../img/pares.png" style="display: none; max-width: 100%" width="560">
+
+    <script>
+        function mostrarImagen4() {
+        var imagenMostrada4 = document.getElementById('imagenMostrada4');
+
+        // Mostrar la imagen
+        imagenMostrada4.style.display = 'block';
+        }
+
+        function ocultarImagen4() {
+        var imagenMostrada4 = document.getElementById('imagenMostrada4');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada4.style.display = 'none';
+        }
+    </script>
+
+    <p>Los enteros \( a_1, a_2, \dots, a_n \) son <strong>
+     <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="22">     
+    </strong> si 
+    \( \gcd(a_i, a_j) = 1 \) siempre que \( 1 \leq i\)
+      <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="2"> 
+    \( 
+    j \leq  \)
+     <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="2"> 
+    .</p>
+
+
+     
 
     </form>
 </div>
@@ -1891,7 +1961,379 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
     <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+      <h3>Ejemplo 13</h3>
+
+    <p><em>Determina si los enteros 10, 17 y 21 son primos relativos por pares y si los enteros 10, 19 y 24 
+    también lo son.</em></p>
+
+    <p><strong>Solución:</strong> Como \( \gcd(10, 17) = 1 \), \( \gcd(10, 21) = 1 \) y \( \gcd(17, 21) = 1 \), 
+    concluimos que 10, 17 y 21 son primos relativos por pares.</p>
+    <p>Sin embargo, como \( \gcd(10, 24) = \)
+     <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="2">    
+    > \(  1 \), 10, 19 y 24 no son primos relativos por pares.</p>
+    
+    <p>Otra forma de encontrar el máximo común divisor de dos enteros positivos es usar sus 
+    <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="11"> 
+     primarias. Supongamos que las factorizaciones primarias de los enteros 
+    positivos \( a \) y \( b \) son</p>
+
+    <p>\[
+    a = p_1^{a_1} p_2^{a_2} \cdots p_n^{a_n}, \quad b = p_1^{b_1} p_2^{b_2} \cdots p_n^{b_n},
+    \]</p>
+
+    <p>donde cada exponente es un entero no 
+     <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="8">     
+     , y donde todos los primos que aparecen 
+    en la factorización de \( a \) o de \( b \) están incluidos en 
+    <input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="8"> 
+     <input type="text" value="<?php echo $respuesta_35; ?>" size="11" readonly>   
+    , usando 
+    exponentes cero si es necesario.</p>
+
+    <p>Entonces, el máximo común divisor \( \gcd(a, b) \) se da por</p>
+
+    <p>\[
+    \gcd(a, b) = p_1^{\min(a_1, b_1)} p_2^{\min(a_2, b_2)} \cdots p_n^{\min(a_n, b_n)},
+    \]</p>
+
+    <p>donde \( \min(x, y) \) representa el 
+      <input type="text" name="respuesta_38" value="<?php echo $respuesta_38; ?>" size="8">     
+      entre \( x \) y \( y \).</p>
+
+    <p>Para demostrar que esta fórmula es válida, se debe mostrar que el entero en el lado derecho divide a 
+    ambos \( a \) y \( b \), y que ningún entero mayor también lo hace. Esto es cierto porque el exponente
+    de cada primo en la factorización no 
+    <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="8">
+     el exponente de ese primo en ninguna de las dos factorizaciones.
+    Además, no se puede aumentar ninguno de los exponentes, ni incluir otros primos.</p>
      
+
+
+        <button onmousedown="mostrarImagen6()" onmouseup="ocultarImagen6()">Explicacion</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada6" src="../../../../img/mcd.png" style="display: none; max-width: 100%" width="560">
+
+    <script>
+        function mostrarImagen6() {
+        var imagenMostrada6 = document.getElementById('imagenMostrada6');
+
+        // Mostrar la imagen
+        imagenMostrada6.style.display = 'block';
+        }
+
+        function ocultarImagen6() {
+        var imagenMostrada6 = document.getElementById('imagenMostrada6');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada6.style.display = 'none';
+        }
+    </script>
+     
+      <button onmousedown="mostrarMensaje4()" onmouseup="ocultarMensaje4()">Explicacion</button>
+    <div id="mensaje4" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
+     <h4>No importa el orden:</h4>
+    <p>
+    Es decir que se hacen solo 3 porque (21,10) es lo mismo que (10,21)
+    </p>
+
+    <p>Cuando te hablan de "<strong>primos relativos por pares</strong>" (<em>pairwise relatively prime</em>) 
+    en el ejemplo de 10, 17, 21, no tienes que hacer 6 comparaciones.</p>
+
+    <p>En realidad, solo se comparan todas las parejas posibles distintas de dos elementos, es decir:</p>
+
+    <ul>
+    <li>10 y 17</li>
+    <li>10 y 21</li>
+    <li>17 y 21</li>
+    </ul>
+
+    <p>O sea, solo <strong>3 comparaciones</strong>, no 6. 🔥</p>
+
+    <p><strong>¿Por qué?</strong><br>
+    Porque cuando tienes \( n \) números, la cantidad de pares que debes revisar es:
+
+    \[
+    \binom{n}{2} = \frac{n(n-1)}{2}
+    \]
+
+    Entonces para 3 números:
+
+    \[
+    \binom{3}{2} = 3
+    \]
+
+    (y no \(3 \times 2 = 6\)).</p>
+
+    <hr>
+
+    <p><strong>En resumen:</strong><br>
+    Para que 10, 17, 21 sean primos relativos por pares se debe verificar que:</p>
+
+    <ul>
+    <li>\(\gcd(10,17) = 1\) ✅</li>
+    <li>\(\gcd(10,21) = 1\) ✅</li>
+    <li>\(\gcd(17,21) = 1\) ✅</li>
+    </ul>
+
+    </div>
+    
+    <hr>
+
+     <p><strong>Ejemplo 14</strong> Debido a que las descomposiciones en factores primos de 120 y
+    500 son \(120 = 2^3 \cdot 3 \cdot 5\) y \(500 = 2^2 \cdot 5^3\), el máximo común divisor es:</p>
+
+    <p>
+    \(
+    \gcd(120, 500) = 2^{\min(3,2)} 3^{\min(1,0)} 5^{\min(1,3)} = 2^2 3^0 5^1 = .
+    \)
+    <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="8">
+    </p>
+
+    <p>Las 
+    <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="14">    
+    en factores primos también pueden usarse para encontrar el mínimo común 
+    múltiplo de dos enteros.</p>
+
+    <p><h1>Definición 5</h1>  El mínimo común múltiplo de los enteros positivos \(a\) y \(b\) es el entero 
+    positivo más 
+     <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="9"> 
+      que es 
+     <input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="9"> 
+      por ambos, \(a\) y \(b\). El mínimo común múltiplo de \(a\) y \(b\)
+    se denota como
+    <input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>" size="9">
+    .</p>
+
+    <p>El mínimo común múltiplo existe porque el conjunto de enteros divisibles por ambos \(a\) y \(b\) no 
+    está 
+    <input type="text" name="respuesta_45" value="<?php echo $respuesta_45; ?>" size="9">
+     (porque \(ab\) pertenece a este conjunto, por ejemplo), y todo conjunto no 
+     <input type="text"  value="<?php echo $respuesta_45; ?>" size="9" readonly>
+      de enteros 
+    positivos tiene un elemento
+    <input type="text" name="respuesta_46" value="<?php echo $respuesta_46; ?>" size="9">
+     (por la propiedad de buen orden, que se discutirá en la Sección 5.2).</p>
+
+    <p>Supongamos que las descomposiciones en factores primos de \(a\) y \(b\) son como se ha dicho antes. 
+    Entonces, el mínimo común múltiplo de \(a\) y \(b\) se da por:</p>
+
+    <p>
+    \[
+    \mathrm{lcm}(a, b) = p_1^{\max(a_1,b_1)} p_2^{\max(a_2,b_2)} \cdots p_n^{\max(a_n,b_n)},
+    \]
+    </p>
+
+    <p>donde \(\max(x,y)\) denota el 
+    <input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="9">    
+     de los dos números \(x\) y \(y\).</p>
+
+    <p>Esta fórmula es válida porque un múltiplo común de \(a\) y \(b\) tiene al menos \(\max(a_i, b_i)\) 
+    factores de \(p_i\) en su descomposición en factores primos, y el mínimo común múltiplo no tiene otros 
+    factores primos aparte de los de \(a\) y \(b\).</p>
+
+      <button onmousedown="mostrarImagen5()" onmouseup="ocultarImagen5()">Explicacion</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada5" src="../../../../img/explicacion_mcm.png" style="display: none; max-width: 100%" width="560">
+
+    <script>
+        function mostrarImagen5() {
+        var imagenMostrada5 = document.getElementById('imagenMostrada5');
+
+        // Mostrar la imagen
+        imagenMostrada5.style.display = 'block';
+        }
+
+        function ocultarImagen5() {
+        var imagenMostrada5 = document.getElementById('imagenMostrada5');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada5.style.display = 'none';
+        }
+    </script>
+     
+        
+    <button onmousedown="mostrarImagen7()" onmouseup="ocultarImagen7()">Explicacion</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada7" src="../../../../img/ambos.png" style="display: none; max-width: 100%" width="560">
+
+    <script>
+        function mostrarImagen7() {
+        var imagenMostrada7 = document.getElementById('imagenMostrada7');
+
+        // Mostrar la imagen
+        imagenMostrada7.style.display = 'block';
+        }
+
+        function ocultarImagen7() {
+        var imagenMostrada7 = document.getElementById('imagenMostrada7');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada7.style.display = 'none';
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <br><br>
+
+        
+      <button onmousedown="mostrarMensaje4()" onmouseup="ocultarMensaje4()">ejemplo15</button>
+    <div id="mensaje4" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
+            <p><strong>Ejemplo 15</strong> ¿Cuál es el mínimo común múltiplo de \(2^3 3^5 7^2\) y \(2^4 3^3\)?</p>
+
+    <p>Solución: Tenemos
+    \[
+    \mathrm{lcm}(2^3 3^5 7^2, 2^4 3^3) = 2^{\max(3,4)} 3^{\max(5,3)} 7^{\max(2,0)} = 2^4 3^5 7^2.
+    \]
+    ◂
+    </p>
+
+    <p>El Teorema 5 da la relación entre el máximo común divisor y el mínimo común múltiplo de dos enteros. 
+    Se puede probar usando las fórmulas que hemos derivado para estas cantidades. La prueba de este teorema 
+    se deja como el Ejercicio 31.</p>
+
+
+    </div>
+ 
+    <p><h1>Teorema 5 </h1>Sean \(a\) y \(b\) enteros positivos. Entonces,
+    <br><br>
+    \(
+    ab = \) 
+     <input type="text" name="respuesta_48" value="<?php echo $respuesta_48; ?>" size="16">.
+    </p>
+
+
+    <h3>4.3.7 El Algoritmo de Euclides</h3>
+
+    <p>Calcular el 
+    <input type="text" name="respuesta_52" value="<?php echo $respuesta_52; ?>" size="17">    
+      de dos enteros directamente desde las 
+    <input type="text" name="respuesta_49" value="<?php echo $respuesta_49; ?>" size="11">    
+      en 
+    <input type="text" name="respuesta_50" value="<?php echo $respuesta_50; ?>" size="11"> 
+    primos de estos enteros es ineficiente. La razón es que encontrar descomposiciones en factores primos 
+    consume mucho 
+    <input type="text" name="respuesta_51" value="<?php echo $respuesta_51; ?>" size="9"> 
+     . Daremos un método más eficiente para encontrar el 
+     <input type="text" value="<?php echo $respuesta_52; ?>" size="17" readonly>
+     máximo común divisor, llamado el 
+    algoritmo de Euclides. Este algoritmo se ha conocido desde la antigüedad. Lleva el nombre del matemático 
+    griego antiguo Euclides, quien incluyó una descripción de este algoritmo en su libro <i>Los Elementos</i>.</p>
+
+        <button onmousedown="mostrarImagen8()" onmouseup="ocultarImagen8()">Explicacion</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada8" src="../../../../img/explicacion_euclides.png" style="display: none; max-width: 100%" width="560">
+
+    <script>
+        function mostrarImagen8() {
+        var imagenMostrada8 = document.getElementById('imagenMostrada8');
+
+        // Mostrar la imagen
+        imagenMostrada8.style.display = 'block';
+        }
+
+        function ocultarImagen8() {
+        var imagenMostrada8 = document.getElementById('imagenMostrada8');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada8.style.display = 'none';
+        }
+    </script>
+      <button onmousedown="mostrarImagen9()" onmouseup="ocultarImagen9()">Explicacion</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada9" src="../../../../img/euclides_dos.png" style="display: none; max-width: 100%" width="560">
+
+    <script>
+        function mostrarImagen9() {
+        var imagenMostrada9 = document.getElementById('imagenMostrada9');
+
+        // Mostrar la imagen
+        imagenMostrada9.style.display = 'block';
+        }
+
+        function ocultarImagen9() {
+        var imagenMostrada9 = document.getElementById('imagenMostrada9');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada9.style.display = 'none';
+        }
+    </script>
+    
+     
+
+    <p>Antes de describir el algoritmo de Euclides, mostraremos cómo se utiliza para encontrar \(\gcd(91, 287)\).</p>
+
+    <p>Primero, divide 287, el 
+     <input type="text" name="respuesta_53" value="<?php echo $respuesta_53; ?>" size="9">     
+      de los dos enteros, entre 91, el menor, para obtener:</p>
+
+    <p>
+    \[
+    287 = 91 \cdot 3 + 14.
+    \]
+    </p>
+    <strong>Nota: 91*3= 273 </strong>
+    <p>Cualquier divisor de 91 y 287 también debe ser un divisor de \(287 - 91 \cdot 3 = 14\). Además, 
+    cualquier divisor de 91 y 14 también debe ser un divisor de \(287 = 91 \cdot 3 + 14\). Por lo tanto, 
+    el máximo común divisor de 91 y 287 es el mismo que el máximo común divisor de 91 y 14. Esto significa 
+    que el problema de encontrar \(\gcd(91, 287)\) se ha reducido al problema de encontrar
+    <input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>" size="9"> 
+     .</p>
+
+    <p>A continuación, divide 91 entre 14 para obtener:</p>
+
+    <p>
+    \[
+    91 = 14 \cdot 6 + 7.
+    \]
+    </p>
+
+    <p>Porque cualquier divisor común de 91 y 14 también divide \(91 - 14 \cdot 6 = 7\) y cualquier 
+    divisor común de 14 y 7 divide 91, se sigue que \(\gcd(91, 14) =\)
+     <input type="text" name="respuesta_55" value="<?php echo $respuesta_55; ?>" size="9"> 
+     .</p>
+
+    <p>Continúa dividiendo 14 entre 7, para obtener:</p>
+
+    <p>
+    \[
+    14 = 7 \cdot 2.
+    \]
+    </p>
+
+    <p>Porque 7 divide a 14, se sigue que \(\gcd(14, 7) = \)
+    <input type="text" name="respuesta_56" value="<?php echo $respuesta_56; ?>" size="9">     
+    . Además, dado que \(\gcd(287, 91) = 
+    \gcd(91, 14) = \gcd(14, 7) = 7\), el problema original ha sido resuelto.</p>
+    <hr>
+   
+    
+
     </form>
 </div>
 
@@ -1900,7 +2342,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="tercero.php"
+        href="cuarto.php"
         role="button"
         width="50px"
         height="50px"
