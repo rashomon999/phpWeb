@@ -469,7 +469,7 @@ function actualizarFormula3() {
     
     La integral indefinida de \( x^n \) es: <br>
         \(
-        \int  x^n  \, du = \)
+        \int  x^n  \, dx = \)
         <span id="formula">
             \( \frac{0}{0} \)
         </span> 
@@ -491,7 +491,7 @@ function actualizarFormula3() {
 
     La integral indefinida de \( x \) es: <br>
     \(
-    \int  x  \, du =
+    \int  x  \, dx =
     \)
     <span id="formula2">
         \( \frac{0}{0} \)
@@ -513,7 +513,7 @@ function actualizarFormula3() {
 
     La integral indefinida de \( x^2 \) es: <br>
 \(
-\int x^2 \, du = 
+\int x^2 \, dx = 
 \)
 <span id="formula3">
     \( \frac{0}{0} \)

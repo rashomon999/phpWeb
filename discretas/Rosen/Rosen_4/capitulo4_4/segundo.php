@@ -1136,7 +1136,7 @@ if ($respuesta_110 === '264') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 480vh;
+    height: 550vh;
     }
 </style>
  
@@ -1440,139 +1440,193 @@ function ocultarMensaje4() {
 <div class="seccion izquierda">
     <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
     <h2>4.4.5 Teorema Pequeño de Fermat</h2>
-  <p>El matemático francés Pierre de Fermat, uno de los principales matemáticos de la primera mitad del siglo XVII, hizo muchos descubrimientos importantes en la teoría de números. Uno de los más útiles de estos establece que \( p \) divide \( a^{p-1} - 1 \) siempre que \( p \) sea primo y \( a \) sea un número entero que no sea divisible por \( p \).</p>
+    <p>El matemático francés Pierre de Fermat, uno de los principales matemáticos de la primera mitad del siglo XVII, 
+    hizo muchos descubrimientos importantes en la teoría de números. Uno de los más útiles de estos establece que \( p \) 
+    divide \( a^{p-1} - 1 \) siempre que \( p \) sea primo y \( a \) sea un número entero que no sea divisible por \( p \).</p>
 
-  <p>Fermat anunció este resultado en una carta a uno de sus corresponsales. Sin embargo, no incluyó una prueba en la carta, afirmando que temía que la prueba fuera demasiado larga. Aunque Fermat nunca publicó una prueba de este hecho, no cabe duda de que sabía cómo probarlo, a diferencia del resultado conocido como el último teorema de Fermat. La primera prueba publicada se atribuye a Leonhard Euler.</p>
+    <p>Fermat anunció este resultado en una carta a uno de sus corresponsales. Sin embargo, no incluyó 
+    una prueba en la carta, afirmando que temía que la prueba fuera demasiado larga. Aunque Fermat nunca 
+    publicó una prueba de este hecho, no cabe duda de que sabía cómo probarlo, a diferencia del resultado 
+    conocido como el último teorema de Fermat. La primera prueba publicada se atribuye a Leonhard Euler.</p>
 
-  <h3>Teorema 3: Teorema Pequeño de Fermat</h3>
-  <p>Si \( p \) es primo y \( a \) es un número entero no divisible por \( p \), entonces:</p>
-  <p>\[
-  a^{p-1} \equiv 1 \pmod{p}
-  \]</p>
-  <p>Además, para todo número entero \( a \), se cumple:</p>
-  <p>\[
-  a^p \equiv a \pmod{p}
-  \]</p>
+    <h3>Teorema 3: Teorema Pequeño de Fermat</h3>
+    <p>Si \( p \) es primo y \( a \) es un número entero no divisible por \( p \), entonces:</p>
+    <p>\[
+    a^{p-1} \equiv 1 \pmod{p}
+    \]</p>
+    <p>Además, para todo número entero \( a \), se cumple:</p>
+    <p>\[
+    a^p \equiv a \pmod{p}
+    \]</p>
 
-  <p><strong>Observación:</strong> El teorema pequeño de Fermat nos dice que si \( a \in \mathbb{Z}_p \), entonces \( a^{p-1} = 1 \) en \( \mathbb{Z}_p \).</p>
+    <p><strong>Observación:</strong> El teorema pequeño de Fermat nos dice que si \( a \in \mathbb{Z}_p \), 
+    entonces \( a^{p-1} = 1 \) en \( \mathbb{Z}_p \).</p>
 
-  <p>La prueba del Teorema 3 se esboza en el Ejercicio 19.</p>
+    <p>La prueba del Teorema 3 se esboza en el Ejercicio 19.</p>
 
-  <p>El teorema pequeño de Fermat es extremadamente útil para calcular los restos módulo \( p \) de grandes potencias de enteros, como ilustra el siguiente ejemplo.</p>
+    <p>El teorema pequeño de Fermat es extremadamente útil para calcular los restos módulo \( p \) de grandes 
+    potencias de enteros, como ilustra el siguiente ejemplo.</p>
 
-  <h3>Ejemplo 9: Calcular \( 7^{222} \mod 11 \)</h3>
-  <p>Solución: Podemos usar el teorema pequeño de Fermat para evaluar \( 7^{222} \mod 11 \) en lugar de usar el algoritmo rápido de exponenciación modular.</p>
-  <p>Por el teorema pequeño de Fermat, sabemos que:</p>
-  <p>\[
-  7^{10} \equiv 1 \pmod{11}
-  \]</p>
-  <p>Por lo tanto, \( (7^{10})^k \equiv 1 \pmod{11} \) para todo entero positivo \( k \). Para aprovechar esta congruencia, dividimos el exponente 222 entre 10:</p>
-  <p>\[
-  222 = 22 \cdot 10 + 2
-  \]</p>
-  <p>Entonces:</p>
-  <p>\[
-  7^{222} = 7^{22 \cdot 10 + 2} = (7^{10})^{22} \cdot 7^2 \equiv 1^{22} \cdot 49 \equiv 49 \pmod{11}
-  \]</p>
-  <p>Como \( 49 \equiv 5 \pmod{11} \), concluimos que:</p>
-  <p>\[
-  7^{222} \mod 11 = 5
-  \]</p>
 
-  <p>Este ejemplo ilustra cómo usar el teorema pequeño de Fermat para calcular \( a^n \mod p \), donde \( p \) es primo y \( p \nmid a \).</p>
 
-  <p>Primero, usamos el algoritmo de la división para encontrar el cociente \( q \) y el residuo \( r \) cuando \( n \) se divide por \( p - 1 \), es decir:</p>
-  <p>\[
-  n = q(p - 1) + r \quad \text{con} \quad 0 \leq r < p - 1
-  \]</p>
-  <p>Entonces:</p>
-  <p>\[
-  a^n = a^{q(p - 1) + r} = (a^{p - 1})^q \cdot a^r \equiv 1^q \cdot a^r \equiv a^r \pmod{p}
-  \]</p>
-  <p>Por lo tanto, para encontrar \( a^n \mod p \), solo necesitamos calcular \( a^r \mod p \). Aprovecharemos esta simplificación muchas veces en nuestro estudio de la teoría de números.</p>
+
+    <h3>Ejemplo 9: Calcular \( 7^{222} \mod 11 \)</h3>
+    <p>Solución: Podemos usar el teorema pequeño de Fermat para evaluar \( 7^{222} \mod 11 \) en lugar de 
+    usar el algoritmo rápido de exponenciación modular.</p>
+    
+    <p>Por el teorema pequeño de Fermat, sabemos que:</p>
+    <p>\[
+    7^{10} \equiv 1 \pmod{11}
+    \]</p>
+    <p>Por lo tanto, \( (7^{10})^k \equiv 1 \pmod{11} \) para todo entero positivo \( k \). Para aprovechar esta 
+    congruencia, dividimos el exponente 222 entre 10:</p>
+    <p>\[
+    222 = 22 \cdot 10 + 2
+    \]</p>
+    <p>Entonces:</p>
+    <p>\[
+    7^{222} = 7^{22 \cdot 10 + 2} = (7^{10})^{22} \cdot 7^2 \equiv 1^{22} \cdot 49 \equiv 49 \pmod{11}
+    \]</p>
+    <p>Como \( 49 \equiv 5 \pmod{11} \), concluimos que:</p>
+    <p>\[
+    7^{222} \mod 11 = 5
+    \]</p>
+
+    <p>Este ejemplo ilustra cómo usar el teorema pequeño de Fermat para calcular \( a^n \mod p \), donde 
+    \( p \) es primo y \( p \nmid a \).</p>
+
+    <p>Primero, usamos el algoritmo de la división para encontrar el cociente \( q \) y el residuo \( r \) 
+    cuando \( n \) se divide por \( p - 1 \), es decir:</p>
+    <p>\[
+    n = q(p - 1) + r \quad \text{con} \quad 0 \leq r < p - 1
+    \]</p>
+    <p>Entonces:</p>
+    <p>\[
+    a^n = a^{q(p - 1) + r} = (a^{p - 1})^q \cdot a^r \equiv 1^q \cdot a^r \equiv a^r \pmod{p}
+    \]</p>
+    <p>Por lo tanto, para encontrar \( a^n \mod p \), solo necesitamos calcular \( a^r \mod p \). Aprovecharemos 
+    esta simplificación muchas veces en nuestro estudio de la teoría de números.</p>
     
 
 
 
 
 
-  <h2>4.4.6 Pseudoprimos</h2>
+    <h2>4.4.6 Pseudoprimos</h2>
 
-<p>En la Sección 4.2 mostramos que un número entero \( n \) es primo cuando no es divisible por ningún primo \( p \) tal que \( p \leq \sqrt{n} \). Desafortunadamente, usar este criterio para mostrar que un número dado es primo resulta ineficiente. Requiere encontrar todos los primos que no exceden \( \sqrt{n} \) y realizar divisiones de prueba con cada uno para verificar si divide a \( n \).</p>
+    <p>En la Sección 4.2 mostramos que un número entero \( n \) es primo cuando no es divisible por ningún primo 
+    \( p \) tal que \( p \leq \sqrt{n} \). Desafortunadamente, usar este criterio para mostrar que un número dado 
+    es primo resulta ineficiente. Requiere encontrar todos los primos que no exceden \( \sqrt{n} \) y realizar 
+    divisiones de prueba con cada uno para verificar si divide a \( n \).</p>
 
-<p>¿Existen métodos más eficientes para determinar si un número entero es primo? Según algunas fuentes, los antiguos matemáticos chinos creían que \( n \) era un primo impar si, y solo si:</p>
+    <p>¿Existen métodos más eficientes para determinar si un número entero es primo? Según algunas fuentes, los 
+    antiguos matemáticos chinos creían que \( n \) era un primo impar si, y solo si:</p>
 
-<p>\[ 2^{n-1} \equiv 1 \pmod{n} \]</p>
+    <p>\[ 2^{n-1} \equiv 1 \pmod{n} \]</p>
 
-<p>Si esto fuera cierto, sería una prueba de primalidad eficiente. ¿Por qué creían que esta congruencia podía usarse para determinar si un entero \( n > 2 \) es primo? Primero, observaron que la congruencia se cumple siempre que \( n \) sea un primo impar. Por ejemplo, 5 es primo y:</p>
+    <p>Si esto fuera cierto, sería una prueba de primalidad eficiente. ¿Por qué creían que esta congruencia podía 
+    usarse para determinar si un entero \( n > 2 \) es primo? Primero, observaron que la congruencia se cumple 
+    siempre que \( n \) sea un primo impar. Por ejemplo, 5 es primo y:</p>
 
-<p>\[ 2^{5-1} = 2^4 = 16 \equiv 1 \pmod{5} \]</p>
+    <p>\[ 2^{5-1} = 2^4 = 16 \equiv 1 \pmod{5} \]</p>
 
-<p>Por el pequeño teorema de Fermat, sabemos que esta observación es correcta: es decir, \( 2^{n-1} \equiv 1 \pmod{n} \) siempre que \( n \) sea un primo impar. En segundo lugar, nunca encontraron un número compuesto \( n \) para el cual se cumpliera esta congruencia. Sin embargo, los antiguos chinos estaban solo parcialmente en lo correcto. Tenían razón al pensar que la congruencia se cumple si \( n \) es primo, pero estaban equivocados al concluir que \( n \) debe ser primo si la congruencia se cumple.</p>
+    <p>Por el pequeño teorema de Fermat, sabemos que esta observación es correcta: es decir, 
+    \( 2^{n-1} \equiv 1 \pmod{n} \) siempre que \( n \) sea un primo impar. En segundo lugar, nunca encontraron 
+    un número compuesto \( n \) para el cual se cumpliera esta congruencia. Sin embargo, los antiguos chinos 
+    estaban solo parcialmente en lo correcto. Tenían razón al pensar que la congruencia se cumple si \( n \) 
+    es primo, pero estaban equivocados al concluir que \( n \) debe ser primo si la congruencia se cumple.</p>
 
-<p>Desafortunadamente, existen enteros compuestos \( n \) tales que:</p>
+    <p>Desafortunadamente, existen enteros compuestos \( n \) tales que:</p>
 
-<p>\[ 2^{n-1} \equiv 1 \pmod{n} \]</p>
+    <p>\[ 2^{n-1} \equiv 1 \pmod{n} \]</p>
 
-<p>A estos enteros se les llama <strong>pseudoprimos en base 2</strong>.</p>
+    <p>A estos enteros se les llama <strong>pseudoprimos en base 2</strong>.</p>
 
-<h3>Ejemplo 10</h3>
+    <h3>Ejemplo 10</h3>
 
-<p>El número entero 341 es un pseudoprimo en base 2 porque es compuesto (\( 341 = 11 \cdot 31 \)) y, como muestra el Ejercicio 37:</p>
+    <p>El número entero 341 es un pseudoprimo en base 2 porque es compuesto (\( 341 = 11 \cdot 31 \)) y, como 
+    muestra el Ejercicio 37:</p>
 
-<p>\[ 2^{340} \equiv 1 \pmod{341} \]</p>
+    <p>\[ 2^{340} \equiv 1 \pmod{341} \]</p>
 
-<p>Podemos usar un entero distinto de 2 como base al estudiar pseudoprimos.</p>
+    <p>Podemos usar un entero distinto de 2 como base al estudiar pseudoprimos.</p>
 
-<h3>Definición 1</h3>
+    <h3>Definición 1</h3>
 
-<p>Sea \( b \) un entero positivo. Si \( n \) es un número entero positivo compuesto y \( b^{n-1} \equiv 1 \pmod{n} \), entonces \( n \) se llama un pseudoprimo en base \( b \).</p>
+    <p>Sea \( b \) un entero positivo. Si \( n \) es un número entero positivo compuesto y \( b^{n-1} \equiv 1 \pmod{n} \), 
+    entonces \( n \) se llama un pseudoprimo en base \( b \).</p>
 
-<p>Dado un entero positivo \( n \), determinar si \( 2^{n-1} \equiv 1 \pmod{n} \) es una prueba útil que ofrece cierta evidencia sobre si \( n \) es primo. En particular:</p>
+    <p>Dado un entero positivo \( n \), determinar si \( 2^{n-1} \equiv 1 \pmod{n} \) es una prueba útil que ofrece 
+    cierta evidencia sobre si \( n \) es primo. En particular:</p>
 
-<ul>
-  <li>Si \( n \) satisface esta congruencia, entonces es primo o un pseudoprimo en base 2.</li>
-  <li>Si \( n \) no la satisface, entonces es compuesto.</li>
-</ul>
+    <ul>
+    <li>Si \( n \) satisface esta congruencia, entonces es primo o un pseudoprimo en base 2.</li>
+    <li>Si \( n \) no la satisface, entonces es compuesto.</li>
+    </ul>
 
-<p>Podemos realizar pruebas similares usando bases distintas de 2 para obtener más evidencia sobre si \( n \) es primo. Si \( n \) pasa todas estas pruebas, es primo o un pseudoprimo en todas las bases \( b \) elegidas.</p>
+    <p>Podemos realizar pruebas similares usando bases distintas de 2 para obtener más evidencia sobre si \( n \) es
+    primo. Si \( n \) pasa todas estas pruebas, es primo o un pseudoprimo en todas las bases \( b \) elegidas.</p>
 
-<p>Además, entre los enteros positivos menores o iguales que un número real positivo \( x \), los pseudoprimos en base \( b \) (donde \( b \) es un entero positivo) son relativamente escasos en comparación con los primos. Por ejemplo, entre los enteros menores que \( 10^{10} \), hay 455,052,512 primos, pero solo 14,884 pseudoprimos en base 2.</p>
+    <p>Además, entre los enteros positivos menores o iguales que un número real positivo \( x \), los pseudoprimos en
+    base \( b \) (donde \( b \) es un entero positivo) son relativamente escasos en comparación con los primos. 
+    Por ejemplo, entre los enteros menores que \( 10^{10} \), hay 455,052,512 primos, pero solo 14,884 pseudoprimos 
+    en base 2.</p>
 
-<p>Desafortunadamente, no podemos distinguir entre primos y pseudoprimos simplemente eligiendo muchas bases, porque existen números compuestos \( n \) que pasan todas las pruebas con bases \( b \) tales que \( \gcd(b, n) = 1 \). Esto nos lleva a la siguiente definición:</p>
+    <p>Desafortunadamente, no podemos distinguir entre primos y pseudoprimos simplemente eligiendo muchas bases, 
+    porque existen números compuestos \( n \) que pasan todas las pruebas con bases \( b \) tales que \( \gcd(b, n) = 1 \).
+    Esto nos lleva a la siguiente definición:</p>
 
-<h3>Definición 2</h3>
+    <h3>Definición 2</h3>
 
-<p>Un número entero compuesto \( n \) que satisface la congruencia \( b^{n-1} \equiv 1 \pmod{n} \) para todo entero positivo \( b \) tal que \( \gcd(b, n) = 1 \) se llama un <strong>número de Carmichael</strong>. (Estos números reciben su nombre de Robert Carmichael, quien los estudió a principios del siglo XX.)</p>
+    <p>Un número entero compuesto \( n \) que satisface la congruencia \( b^{n-1} \equiv 1 \pmod{n} \) para 
+    todo entero positivo \( b \) tal que \( \gcd(b, n) = 1 \) se llama un <strong>número de Carmichael</strong>. 
+    (Estos números reciben su nombre de Robert Carmichael, quien los estudió a principios del siglo XX.)</p>
 
-<h3>Ejemplo 11</h3>
+    <h3>Ejemplo 11</h3>
 
-<p>El número entero 561 es un número de Carmichael. Primero, notamos que 561 es compuesto porque:</p>
+    <p>El número entero 561 es un número de Carmichael. Primero, notamos que 561 es compuesto porque:</p>
 
-<p>\[ 561 = 3 \cdot 11 \cdot 17 \]</p>
+    <p>\[ 561 = 3 \cdot 11 \cdot 17 \]</p>
 
-<p>Luego, si \( \gcd(b, 561) = 1 \), entonces también se cumple que:</p>
+    <p>Luego, si \( \gcd(b, 561) = 1 \), entonces también se cumple que:</p>
 
-<p>\[ \gcd(b, 3) = \gcd(b, 11) = \gcd(b, 17) = 1 \]</p>
+    <p>\[ \gcd(b, 3) = \gcd(b, 11) = \gcd(b, 17) = 1 \]</p>
 
-<p>Aplicando el pequeño teorema de Fermat, tenemos:</p>
+    <p>Aplicando el pequeño teorema de Fermat, tenemos:</p>
 
-<p>\[ b^2 \equiv 1 \pmod{3}, \quad b^{10} \equiv 1 \pmod{11}, \quad b^{16} \equiv 1 \pmod{17} \]</p>
+    <p>\[ b^2 \equiv 1 \pmod{3}, \quad b^{10} \equiv 1 \pmod{11}, \quad b^{16} \equiv 1 \pmod{17} \]</p>
 
-<p>Entonces:</p>
+    <p>Entonces:</p>
 
-<p>\[ b^{560} = (b^2)^{280} \equiv 1 \pmod{3}, \quad b^{560} = (b^{10})^{56} \equiv 1 \pmod{11}, \quad b^{560} = (b^{16})^{35} \equiv 1 \pmod{17} \]</p>
+    <p>\[ b^{560} = (b^2)^{280} \equiv 1 \pmod{3}, \quad b^{560} = (b^{10})^{56} \equiv 1 \pmod{11}, \quad b^{560} = 
+    (b^{16})^{35} \equiv 1 \pmod{17} \]</p>
 
-<p>Por el Ejercicio 29, se sigue que:</p>
+    <p>Por el Ejercicio 29, se sigue que:</p>
 
-<p>\[ b^{560} \equiv 1 \pmod{561} \]</p>
+    <p>\[ b^{560} \equiv 1 \pmod{561} \]</p>
 
-<p>para todo entero positivo \( b \) con \( \gcd(b, 561) = 1 \). Por lo tanto, 561 es un número de Carmichael.</p>
+    <p>para todo entero positivo \( b \) con \( \gcd(b, 561) = 1 \). Por lo tanto, 561 es un número de Carmichael.</p>
 
-<p>Aunque existen infinitos números de Carmichael, pueden diseñarse pruebas más refinadas (descritas en el conjunto de ejercicios) que sirven de base para pruebas probabilísticas de primalidad eficientes. Estas pruebas permiten mostrar rápidamente que un número dado es casi con certeza primo. Más precisamente, si un número no es primo, la probabilidad de que pase una serie de estas pruebas es muy cercana a 0.</p>
+    <p>Aunque existen infinitos números de Carmichael, pueden diseñarse pruebas más refinadas (descritas en el 
+    conjunto de ejercicios) que sirven de base para pruebas probabilísticas de primalidad eficientes. Estas pruebas 
+    permiten mostrar rápidamente que un número dado es casi con certeza primo. Más precisamente, si un número no es
+    primo, la probabilidad de que pase una serie de estas pruebas es muy cercana a 0.</p>
 
-<p>Estas pruebas de primalidad probabilísticas se describirán en el Capítulo 7, junto con los conceptos de teoría de la probabilidad en los que se basan. Estas pruebas pueden (y de hecho se utilizan) para encontrar primos grandes de manera extremadamente rápida con computadoras.</p>
+    <p>Estas pruebas de primalidad probabilísticas se describirán en el Capítulo 7, junto con los conceptos de 
+    teoría de la probabilidad en los que se basan. Estas pruebas pueden (y de hecho se utilizan) para encontrar 
+    primos grandes de manera extremadamente rápida con computadoras.</p>
 
+    <h2>4.4.7 Raíces Primitivas y Logaritmos Discretos</h2>
+    <p>En el conjunto de los números reales positivos, si \( b > 1 \) y \( x = b^y \), decimos que \( y \) 
+    es el logaritmo de \( x \) en base \( b \). Aquí mostraremos que también podemos definir el concepto de 
+    logaritmos módulo \( p \) de enteros positivos, donde \( p \) es un número primo. Antes de hacerlo, necesitamos 
+    una definición.</p>
+
+    <h3>Definición 3</h3>
+    <p>Una raíz primitiva módulo un primo \( p \) es un entero \( r \) en \( \mathbb{Z}_p \) tal que todo 
+    elemento no nulo de \( \mathbb{Z}_p \) es una potencia de \( r \).</p>
+
+ 
     </form>
 </div>
 
@@ -1581,19 +1635,15 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
     <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h2>4.4.7 Raíces Primitivas y Logaritmos Discretos</h2>
-    <p>En el conjunto de los números reales positivos, si \( b > 1 \) y \( x = b^y \), decimos que \( y \) es el logaritmo de \( x \) en base \( b \). Aquí mostraremos que también podemos definir el concepto de logaritmos módulo \( p \) de enteros positivos, donde \( p \) es un número primo. Antes de hacerlo, necesitamos una definición.</p>
-
-    <h3>Definición 3</h3>
-    <p>Una raíz primitiva módulo un primo \( p \) es un entero \( r \) en \( \mathbb{Z}_p \) tal que todo elemento no nulo de \( \mathbb{Z}_p \) es una potencia de \( r \).</p>
-
+    
     <h3>Ejemplo 12</h3>
     <p>Determina si 2 y 3 son raíces primitivas módulo 11.</p>
 
     <h4>Solución:</h4>
     <p>Cuando calculamos las potencias de 2 en \( \mathbb{Z}_{11} \), obtenemos:</p>
     <p>
-        \( 2^1 = 2, \, 2^2 = 4, \, 2^3 = 8, \, 2^4 = 5, \, 2^5 = 10, \, 2^6 = 9, \, 2^7 = 7, \, 2^8 = 3, \, 2^9 = 6, \, 2^{10} = 1 \)
+        \( 2^1 = 2, \, 2^2 = 4, \, 2^3 = 8, \, 2^4 = 5, \, 2^5 = 10, \, 2^6 = 9, \, 2^7 = 7, \, 2^8 = 3, 
+        \, 2^9 = 6, \, 2^{10} = 1 \)
     </p>
     <p>Como todo elemento no nulo de \( \mathbb{Z}_{11} \) es una potencia de 2, 2 es una raíz primitiva de 11.</p>
 
@@ -1601,14 +1651,20 @@ function ocultarMensaje4() {
     <p>
         \( 3^1 = 3, \, 3^2 = 9, \, 3^3 = 5, \, 3^4 = 4, \, 3^5 = 1 \)
     </p>
-    <p>Este patrón se repite al calcular potencias más altas de 3. Como no todos los elementos no nulos de \( \mathbb{Z}_{11} \) son potencias de 3, concluimos que 3 no es una raíz primitiva de 11.</p>
+    <p>Este patrón se repite al calcular potencias más altas de 3. Como no todos los elementos no nulos de 
+    \( \mathbb{Z}_{11} \) son potencias de 3, concluimos que 3 no es una raíz primitiva de 11.</p>
 
-    <p>Un hecho importante en teoría de números es que existe una raíz primitiva módulo \( p \) para todo número primo \( p \). Remitimos al lector a [Ro10] para una demostración de este hecho.</p>
+    <p>Un hecho importante en teoría de números es que existe una raíz primitiva módulo \( p \) para todo número 
+        primo \( p \). Remitimos al lector a [Ro10] para una demostración de este hecho.</p>
 
-    <p>Supongamos que \( p \) es primo y que \( r \) es una raíz primitiva módulo \( p \). Si \( a \) es un entero entre 1 y \( p - 1 \), es decir, un elemento no nulo de \( \mathbb{Z}_p \), sabemos que existe un único exponente \( e \) tal que \( r^e \equiv a \mod p \).</p>
+    <p>Supongamos que \( p \) es primo y que \( r \) es una raíz primitiva módulo \( p \). Si \( a \) es un entero 
+    entre 1 y \( p - 1 \), es decir, un elemento no nulo de \( \mathbb{Z}_p \), sabemos que existe un único 
+    exponente \( e \) tal que \( r^e \equiv a \mod p \).</p>
 
     <h3>Definición 4</h3>
-    <p>Supón que \( p \) es un primo, \( r \) es una raíz primitiva módulo \( p \), y \( a \) es un entero entre 1 y \( p - 1 \) inclusive. Si \( r^e \equiv a \mod p \) y \( 0 \leq e \leq p - 1 \), decimos que \( e \) es el logaritmo discreto de \( a \) módulo \( p \) en base \( r \) y escribimos:</p>
+    <p>Supón que \( p \) es un primo, \( r \) es una raíz primitiva módulo \( p \), y \( a \) es un entero 
+    entre 1 y \( p - 1 \) inclusive. Si \( r^e \equiv a \mod p \) y \( 0 \leq e \leq p - 1 \), decimos que \( e \) 
+    es el logaritmo discreto de \( a \) módulo \( p \) en base \( r \) y escribimos:</p>
     <p>\( \log_r a = e \) (donde el módulo \( p \) se sobreentiende).</p>
 
     <h3>Ejemplo 13</h3>
@@ -1649,7 +1705,118 @@ function ocultarMensaje4() {
     <hr>
 
 
-    
+    <h2>4.4.4 Aritmética Computacional con Enteros Grandes</h2>
+
+    <p>Supongamos que \( m_1, m_2, \ldots, m_n \) son módulos relativamente primos dos a dos y que \( m \) es su producto. 
+    Por el teorema chino del resto, podemos demostrar (ver Ejercicio 28) que un entero \( a \) con \( 0 \leq a < m \) puede 
+    representarse de forma única mediante la n-tupla compuesta por sus residuos al dividirlo entre \( m_i \), 
+    para \( i = 1, 2, \ldots, n \). Es decir, podemos representar \( a \) de forma única como:</p>
+
+    <p>
+    \[
+    (a \bmod m_1, a \bmod m_2, \ldots, a \bmod m_n)
+    \]
+    </p>
+
+    <h3>Ejemplo 7</h3>
+    <p>¿Cuáles son los pares utilizados para representar los enteros no negativos menores que 12 cuando 
+    se representan por el par ordenado donde el primer componente es el residuo del entero al dividirlo 
+    entre 3 y el segundo componente es el residuo al dividirlo entre 4?</p>
+
+    <p><strong>Solución:</strong> Tenemos las siguientes representaciones, obtenidas al encontrar el residuo de cada 
+    entero al dividirlo entre 3 y entre 4:</p>
+
+    <p>
+    0 = (0, 0) &nbsp;&nbsp; 4 = (1, 0) &nbsp;&nbsp; 8 = (2, 0)<br>
+    1 = (1, 1) &nbsp;&nbsp; 5 = (2, 1) &nbsp;&nbsp; 9 = (0, 1)<br>
+    2 = (2, 2) &nbsp;&nbsp; 6 = (0, 2) &nbsp;&nbsp; 10 = (1, 2)<br>
+    3 = (0, 3) &nbsp;&nbsp; 7 = (1, 3) &nbsp;&nbsp; 11 = (2, 3)
+    </p>
+
+    <p>Para realizar operaciones aritméticas con enteros grandes, seleccionamos módulos \( m_1, m_2, \ldots, m_n \), 
+    donde cada \( m_i \) es un entero mayor que 2, \( \gcd(m_i, m_j) = 1 \) siempre que \( i \ne j \), y 
+    \( m = m_1 m_2 \cdots m_n \) es mayor que los resultados de las operaciones aritméticas que queremos 
+    realizar.</p>
+
+    <p>Una vez que hemos seleccionado nuestros módulos, realizamos operaciones aritméticas con enteros grandes 
+    efectuando operaciones componente a componente sobre las n-tuplas que representan estos enteros usando sus 
+    residuos al dividirlos por \( m_i \), para \( i = 1, 2, \ldots, n \). Una vez calculado el valor de cada 
+    componente en el resultado, recuperamos su valor resolviendo un sistema de \( n \) congruencias módulo 
+    \( m_i \), para \( i = 1, 2, \ldots, n \).</p>
+
+    <p>Este método de realizar aritmética con enteros grandes tiene varias ventajas importantes. Primero, puede 
+    utilizarse para realizar aritmética con enteros más grandes de lo que normalmente se puede manejar en una 
+    computadora. Segundo, los cálculos con respecto a los diferentes módulos pueden hacerse en paralelo, acelerando 
+    la aritmética.</p>
+
+    <h3>Ejemplo 8</h3>
+    <p>Supongamos que realizar aritmética con enteros menores que 100 en cierto procesador es mucho más rápido 
+    que hacerla con enteros más grandes. Podemos restringir casi todos nuestros cálculos a enteros menores que 100 
+    si representamos enteros usando sus residuos módulo enteros relativamente primos dos a dos menores que 100. 
+    Por ejemplo, podemos usar los módulos 99, 98, 97 y 95. (Estos enteros son relativamente primos dos a dos, ya 
+    que ningún par tiene un factor común mayor que 1.)</p>
+
+    <p>Por el teorema chino del resto, todo entero no negativo menor que 
+    \( 99 \cdot 98 \cdot 97 \cdot 95 = 89,\!403,\!930 \) puede representarse de forma única mediante sus 
+    residuos al dividirlo por estos cuatro módulos.</p>
+
+    <p>Por ejemplo, representamos 123,684 como (33, 8, 9, 89), porque:</p>
+
+    <ul>
+    <li>123,684 mod 99 = 33</li>
+    <li>123,684 mod 98 = 8</li>
+    <li>123,684 mod 97 = 9</li>
+    <li>123,684 mod 95 = 89</li>
+    </ul>
+
+    <p>De forma similar, representamos 413,456 como (32, 92, 42, 16).</p>
+
+    <p>Para hallar la suma de 123,684 y 413,456, trabajamos con estas 4-tuplas en lugar de con los dos enteros 
+    directamente. Sumamos las 4-tuplas componente a componente y reducimos cada componente con respecto al 
+    módulo apropiado. Esto da como resultado:</p>
+
+    <p>
+    \[
+    (33, 8, 9, 89) + (32, 92, 42, 16) = (65 \bmod 99, 100 \bmod 98, 51 \bmod 97, 105 \bmod 95) = (65, 2, 51, 10)
+    \]
+    </p>
+
+    <p>Para hallar la suma, es decir, el entero representado por (65, 2, 51, 10), necesitamos resolver el sistema 
+    de congruencias:</p>
+
+    <p>
+    \[
+    \begin{aligned}
+    x &\equiv 65 \pmod{99} \\
+    x &\equiv 2 \pmod{98} \\
+    x &\equiv 51 \pmod{97} \\
+    x &\equiv 10 \pmod{95}
+    \end{aligned}
+    \]
+    </p>
+
+    <p>Puede demostrarse (ver Ejercicio 53) que 537,140 es la única solución no negativa de este sistema 
+    menor que 89,403,930. Por consiguiente, 537,140 es la suma. Nótese que solo cuando necesitamos recuperar 
+    el entero representado por (65, 2, 51, 10) es necesario realizar aritmética con enteros mayores que 100.</p>
+
+    <p>Elecciones particularmente buenas para los módulos usados en aritmética con enteros grandes son conjuntos 
+    de enteros de la forma \( 2^k - 1 \), donde \( k \) es un entero positivo, ya que es fácil realizar aritmética 
+    binaria módulo estos enteros, y también es fácil encontrar conjuntos de tales enteros que sean relativamente 
+    primos dos a dos. 
+    (La segunda razón es consecuencia del hecho de que \( \gcd(2^a - 1, 2^b - 1) = 2^{\gcd(a,b)} - 1 \), como 
+    muestra el Ejercicio 37 de la Sección 4.3.)</p>
+
+    <p>Supongamos, por ejemplo, que podemos realizar aritmética con enteros menores que \( 2^{35} \) fácilmente 
+    en nuestra computadora, pero que trabajar con enteros más grandes requiere procedimientos especiales. Podemos 
+    usar módulos relativamente primos dos a dos menores que \( 2^{35} \) para realizar aritmética con enteros tan 
+    grandes como su producto. 
+    Por ejemplo, como muestra el Ejercicio 38 de la Sección 4.3, los enteros 
+    \( 2^{35} - 1, 2^{34} - 1, 2^{33} - 1, 2^{31} - 1, 2^{29} - 1 \) y \( 2^{23} - 1 \) son 
+    relativamente primos dos a dos. 
+    Como el producto de estos seis módulos excede \( 2^{184} \), podemos realizar aritmética con enteros tan grandes 
+    como \( 2^{184} \) (mientras los resultados no excedan este número) realizando aritmética módulo cada uno de estos 
+    seis módulos, ninguno de los cuales excede \( 2^{35} \).</p>
+
     </form>
 </div>
 

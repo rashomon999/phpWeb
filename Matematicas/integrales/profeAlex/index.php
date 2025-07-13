@@ -1722,17 +1722,17 @@ function ocultarMensaje4() {
     value="<?php echo $respuesta_19?>" size="22" >
     </p>
     <hr>
-<button type="submit">Enviar</button> 
-<?php echo $verificar_10 ?>
-<?php echo $verificar_11 ?>
- <?php echo $verificar_12 ?>
-<?php echo $verificar_13 ?>
-<?php echo $verificar_14 ?>
-<?php echo $verificar_15 ?>
-<?php echo $verificar_16 ?>
-<?php echo $verificar_17 ?>
-<?php echo $verificar_18 ?>
-<?php echo $verificar_19 ?>
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_10 ?>
+    <?php echo $verificar_11 ?>
+    <?php echo $verificar_12 ?>
+    <?php echo $verificar_13 ?>
+    <?php echo $verificar_14 ?>
+    <?php echo $verificar_15 ?>
+    <?php echo $verificar_16 ?>
+    <?php echo $verificar_17 ?>
+    <?php echo $verificar_18 ?>
+    <?php echo $verificar_19 ?>
     </form>
 </div>
 

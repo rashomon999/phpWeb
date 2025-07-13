@@ -1,0 +1,21 @@
+   <button onmousedown="mostrarImagen9()" onmouseup="ocultarImagen9()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada9" src="../../../img/exponencial.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen9() {
+        var imagenMostrada9 = document.getElementById('imagenMostrada9');
+
+        // Mostrar la imagen
+        imagenMostrada9.style.display = 'block';
+        }
+
+        function ocultarImagen9() {
+        var imagenMostrada9 = document.getElementById('imagenMostrada9');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada9.style.display = 'none';
+        }
+    </script>
+    <hr>

@@ -626,7 +626,7 @@ function ocultarMensaje4() {
     <?php echo $verificar_4 ?>
     <?php echo $verificar_5 ?>
     <?php echo $verificar_6 ?>
-
+    <hr>
 
     </form>
 </div>
@@ -712,9 +712,17 @@ function ocultarMensaje4() {
     
     <br><br>
 
+        <button onmousedown="mostrarMensaje()" onmouseup="ocultarMensaje()">Solucion</button>
+    <div id="mensaje" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
+    las dos cabezas son las que quiero cancelar, el que esta en el 2 piso es el que quiero como 
+    denominador, el que esta en primer piso es el que quiero como numerador.
+
+    </div>
+    <br><br>
     <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
-    <button type="submit"   >Mostrar Solución</button>
-        
+    <button type="submit">Mostrar Solución</button>
+ 
+    <hr>    
     </form>
 </div>
 <div class="centered-container">

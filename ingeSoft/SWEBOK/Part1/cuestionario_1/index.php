@@ -1,12 +1,12 @@
 <?php
  
-for ($i = 1; $i <= 112; $i++) {
+for ($i = 1; $i <= 130; $i++) {
     ${"respuesta_" . $i} = '';
 }
 
 
      
-for ($i = 1; $i <= 112; $i++) {
+for ($i = 1; $i <= 130; $i++) {
     ${"verificar_" . $i} = '';
 }
 
@@ -129,31 +129,14 @@ if ($_POST) {
         $respuesta_110 = 'usuario';
         $respuesta_111 = 'sistema';
         $respuesta_112 = 'caracteristica';
+        $respuesta_113 = 'durante';
+        $respuesta_114 = 'ciclo de vida';
+         
         
-        // Marcar todas como correctas
-        $verificar_1 = $verificar_2 = $verificar_3 = $verificar_4 = $verificar_5 = 
-        $verificar_6 = $verificar_7 = $verificar_8 = $verificar_9 = $verificar_10 = 
-        $verificar_11 = $verificar_12 = $verificar_13 = $verificar_14 = $verificar_15 = 
-        $verificar_16 = $verificar_17 = $verificar_18 = $verificar_19 = $verificar_20 = 
-        $verificar_21 = $verificar_22 = $verificar_23 = $verificar_24 = $verificar_25 = 
-        $verificar_26 = $verificar_27 = $verificar_28 = $verificar_29 = $verificar_30 = 
-        $verificar_31 = $verificar_32 = $verificar_33 = $verificar_34 = $verificar_35 = 
-        $verificar_36 = $verificar_37 = $verificar_38 = $verificar_39 = $verificar_40 = 
-        $verificar_41 = $verificar_42 = $verificar_43 = $verificar_44 = $verificar_45 = 
-        $verificar_46 = $verificar_47 = $verificar_48 = $verificar_49 = $verificar_50 = 
-        $verificar_51 = $verificar_52 = $verificar_53 = $verificar_54 = $verificar_55 = 
-        $verificar_56 = $verificar_57 = $verificar_58 = $verificar_59 = $verificar_60 = 
-        $verificar_61 = $verificar_62 = $verificar_63 = $verificar_64 = $verificar_65 = 
-        $verificar_66 = $verificar_67 = $verificar_68 = $verificar_69 = $verificar_70 = 
-        $verificar_71 = $verificar_72 = $verificar_73 = $verificar_74 = $verificar_75 = 
-        $verificar_76 = $verificar_77 = $verificar_78 = $verificar_79 = $verificar_80 = 
-        $verificar_81 = $verificar_82 = $verificar_83 = $verificar_84 = $verificar_85 = 
-        $verificar_86 = $verificar_87 = $verificar_88 = $verificar_89 = $verificar_90 = 
-        $verificar_91 = $verificar_92 = $verificar_93 = $verificar_94 = $verificar_95 = 
-        $verificar_96 = $verificar_97 = $verificar_98 = $verificar_99 = $verificar_100 = 
-        $verificar_101 = $verificar_102 = $verificar_103 = $verificar_104 = $verificar_105 = 
-        $verificar_106 = $verificar_107 = $verificar_108 = $verificar_109 = $verificar_110 = 
-        $verificar_111 = $verificar_112 ="correcto";
+       for ($i = 1; $i <= 130; $i++) {
+        ${"verificar_$i"} = "correcto";
+        }
+
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
    if ($respuesta_1 === '1998') {  
@@ -1206,6 +1189,170 @@ if ($respuesta_112 === 'caracteristica') {
     $verificar_112 = "incorrecto";
 }
 }
+
+
+$respuesta_113 = isset($_POST['respuesta_113']) ? $_POST['respuesta_113'] : '';
+if ($respuesta_113 === 'durante') {  
+    $verificar_113 = "correcto";
+} elseif ($respuesta_113 === '') {
+    $verificar_113 = '';
+} else {
+    $verificar_113 = "incorrecto";
+}
+
+$respuesta_114 = isset($_POST['respuesta_114']) ? $_POST['respuesta_114'] : '';
+if ($respuesta_114 === 'ciclo de vida') {  
+    $verificar_114 = "correcto";
+} elseif ($respuesta_114 === '') {
+    $verificar_114 = '';
+} else {
+    $verificar_114 = "incorrecto";
+}
+
+$respuesta_115 = isset($_POST['respuesta_115']) ? $_POST['respuesta_115'] : '';
+if ($respuesta_115 === '398274') {  
+    $verificar_115 = "correcto";
+} elseif ($respuesta_115 === '') {
+    $verificar_115 = '';
+} else {
+    $verificar_115 = "incorrecto";
+}
+
+$respuesta_116 = isset($_POST['respuesta_116']) ? $_POST['respuesta_116'] : '';
+if ($respuesta_116 === '6278390') {  
+    $verificar_116 = "correcto";
+} elseif ($respuesta_116 === '') {
+    $verificar_116 = '';
+} else {
+    $verificar_116 = "incorrecto";
+}
+
+$respuesta_117 = isset($_POST['respuesta_117']) ? $_POST['respuesta_117'] : '';
+if ($respuesta_117 === '932104') {  
+    $verificar_117 = "correcto";
+} elseif ($respuesta_117 === '') {
+    $verificar_117 = '';
+} else {
+    $verificar_117 = "incorrecto";
+}
+
+$respuesta_118 = isset($_POST['respuesta_118']) ? $_POST['respuesta_118'] : '';
+if ($respuesta_118 === '7539201') {  
+    $verificar_118 = "correcto";
+} elseif ($respuesta_118 === '') {
+    $verificar_118 = '';
+} else {
+    $verificar_118 = "incorrecto";
+}
+
+$respuesta_119 = isset($_POST['respuesta_119']) ? $_POST['respuesta_119'] : '';
+if ($respuesta_119 === '2801453') {  
+    $verificar_119 = "correcto";
+} elseif ($respuesta_119 === '') {
+    $verificar_119 = '';
+} else {
+    $verificar_119 = "incorrecto";
+}
+
+$respuesta_120 = isset($_POST['respuesta_120']) ? $_POST['respuesta_120'] : '';
+if ($respuesta_120 === '8145902') {  
+    $verificar_120 = "correcto";
+} elseif ($respuesta_120 === '') {
+    $verificar_120 = '';
+} else {
+    $verificar_120 = "incorrecto";
+}
+
+$respuesta_121 = isset($_POST['respuesta_121']) ? $_POST['respuesta_121'] : '';
+if ($respuesta_121 === '593871') {  
+    $verificar_121 = "correcto";
+} elseif ($respuesta_121 === '') {
+    $verificar_121 = '';
+} else {
+    $verificar_121 = "incorrecto";
+}
+
+$respuesta_122 = isset($_POST['respuesta_122']) ? $_POST['respuesta_122'] : '';
+if ($respuesta_122 === '1382049') {  
+    $verificar_122 = "correcto";
+} elseif ($respuesta_122 === '') {
+    $verificar_122 = '';
+} else {
+    $verificar_122 = "incorrecto";
+}
+
+$respuesta_123 = isset($_POST['respuesta_123']) ? $_POST['respuesta_123'] : '';
+if ($respuesta_123 === '6709842') {  
+    $verificar_123 = "correcto";
+} elseif ($respuesta_123 === '') {
+    $verificar_123 = '';
+} else {
+    $verificar_123 = "incorrecto";
+}
+
+$respuesta_124 = isset($_POST['respuesta_124']) ? $_POST['respuesta_124'] : '';
+if ($respuesta_124 === '439201') {  
+    $verificar_124 = "correcto";
+} elseif ($respuesta_124 === '') {
+    $verificar_124 = '';
+} else {
+    $verificar_124 = "incorrecto";
+}
+
+$respuesta_125 = isset($_POST['respuesta_125']) ? $_POST['respuesta_125'] : '';
+if ($respuesta_125 === '9721038') {  
+    $verificar_125 = "correcto";
+} elseif ($respuesta_125 === '') {
+    $verificar_125 = '';
+} else {
+    $verificar_125 = "incorrecto";
+}
+
+$respuesta_126 = isset($_POST['respuesta_126']) ? $_POST['respuesta_126'] : '';
+if ($respuesta_126 === '3842091') {  
+    $verificar_126 = "correcto";
+} elseif ($respuesta_126 === '') {
+    $verificar_126 = '';
+} else {
+    $verificar_126 = "incorrecto";
+}
+
+$respuesta_127 = isset($_POST['respuesta_127']) ? $_POST['respuesta_127'] : '';
+if ($respuesta_127 === '1567382') {  
+    $verificar_127 = "correcto";
+} elseif ($respuesta_127 === '') {
+    $verificar_127 = '';
+} else {
+    $verificar_127 = "incorrecto";
+}
+
+$respuesta_128 = isset($_POST['respuesta_128']) ? $_POST['respuesta_128'] : '';
+if ($respuesta_128 === '820394') {  
+    $verificar_128 = "correcto";
+} elseif ($respuesta_128 === '') {
+    $verificar_128 = '';
+} else {
+    $verificar_128 = "incorrecto";
+}
+
+$respuesta_129 = isset($_POST['respuesta_129']) ? $_POST['respuesta_129'] : '';
+if ($respuesta_129 === '1048573') {  
+    $verificar_129 = "correcto";
+} elseif ($respuesta_129 === '') {
+    $verificar_129 = '';
+} else {
+    $verificar_129 = "incorrecto";
+}
+
+$respuesta_130 = isset($_POST['respuesta_130']) ? $_POST['respuesta_130'] : '';
+if ($respuesta_130 === '7451209') {  
+    $verificar_130 = "correcto";
+} elseif ($respuesta_130 === '') {
+    $verificar_130 = '';
+} else {
+    $verificar_130 = "incorrecto";
+}
+
 }
 ?>
 <!DOCTYPE html>
@@ -1653,8 +1800,11 @@ function ocultarMensaje4() {
     <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="8"> 
     de los requisitos de software, así como de la 
     <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="8">
-    de los requisitos durante todo el ciclo de 
-    vida del producto software.
+    de los requerimientos 
+    <input type="text" name="respuesta_113" value="<?php echo $respuesta_113; ?>" size="8">
+    todo el 
+    <input type="text" name="respuesta_114" value="<?php echo $respuesta_114; ?>" size="11">
+    del producto software.
     </p>
     <p>
     Los requisitos de software expresan las 
@@ -1691,7 +1841,7 @@ function ocultarMensaje4() {
     </p>
 
     <p>
-    Los requisitos tienen otros atributos además de las propiedades de comportamiento. Ejemplos comunes incluyen una 
+    Los requerimientos tienen otros atributos además de las propiedades de comportamiento. Ejemplos comunes incluyen una 
     calificación de 
     <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="9">
     para permitir decisiones de compensación ante recursos limitados, y un valor de 
@@ -1714,6 +1864,8 @@ function ocultarMensaje4() {
     <?php echo $verificar_38 ?>
     <?php echo $verificar_39 ?>
     <?php echo $verificar_112 ?>
+    <?php echo $verificar_113 ?>
+    <?php echo $verificar_114 ?>
     <hr>
 
     <h5>1.2. Requisitos de 
@@ -1722,17 +1874,17 @@ function ocultarMensaje4() {
     <input type="text" name="respuesta_51" value="<?php echo $respuesta_51; ?>" size="7">
     </h5>
 
-<p>
-Un requisito de 
-<input type="text"  value="<?php echo $respuesta_50; ?>" size="7" readonly>  
-es una 
-<input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="8">
-o 
-<input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="8">
-sobre el 
-<input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="8">
-a 
-<input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="8">
+    <p>
+    Un requerimiento de 
+    <input type="text"  value="<?php echo $respuesta_50; ?>" size="7" readonly>  
+    es una 
+    <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="8">
+    o   
+    <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="8">
+    sobre el    
+    <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="8">
+    a 
+    <input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="8">
  
 
     <button onmousedown="mostrarMensaje()" onmouseup="ocultarMensaje()">Dato</button>
@@ -1794,7 +1946,7 @@ a
     <div id="mensaje3" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
      . La elección de una técnica de verificación es un ejemplo. Otro podría ser el uso de técnicas
      de análisis particularmente rigurosas (como métodos de especificación formal) para reducir fallas 
-     que puedan conducir a una confiabilidad inadecuada. Los requisitos de proceso también pueden ser
+     que puedan conducir a una confiabilidad inadecuada. Los requerimientos de proceso también pueden ser
       impuestos directamente por la organización de desarrollo, su cliente o una tercera parte como un 
       organismo regulador de seguridad.
 
@@ -1848,7 +2000,7 @@ a
     </h5>
 
     <p>
-    Los requisitos 
+    Los requerimientos 
     <input type="text"  value="<?php echo $respuesta_52; ?>" size="9" readonly>    
     describen las 
     <input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>" size="8">
@@ -1859,7 +2011,7 @@ a
     o 
     <input type="text" name="respuesta_57" value="<?php echo $respuesta_57; ?>" size="8">
     .
-    Un requisito funcional también puede describirse como aquel para el cual puede 
+    Un requerimiento funcional también puede describirse como aquel para el cual puede 
     <input type="text" name="respuesta_60" value="<?php echo $respuesta_60; ?>" size="8">
     un conjunto 
     <input type="text" name="respuesta_58" value="<?php echo $respuesta_58; ?>" size="8">
@@ -1884,14 +2036,14 @@ a
     requerimientos de
     <input type="text" name="respuesta_65" value="<?php echo $respuesta_65; ?>" size="8">
     ,
-    requisitos de 
+    requerimientos de 
     <input type="text" name="respuesta_66" value="<?php echo $respuesta_66; ?>" size="8">
-    , requisitos de 
+    , requerimientos de 
     <input type="text" name="respuesta_67" value="<?php echo $respuesta_67; ?>" size="8">
-    , requisitos de seguridad informática, requisitos
+    , requerimientos de seguridad informática, requerimientos
     de 
     <input type="text" name="respuesta_68" value="<?php echo $respuesta_68; ?>" size="8">
-    , u otro de los muchos tipos de requisitos de software 
+    , u otro de los muchos tipos de requerimientos de software 
     (ver Modelos y Características de Calidad en la KA de Calidad de Software).
     </p>
     <button type="submit">Enviar</button>
@@ -1979,12 +2131,12 @@ a
     </h5>
 
     <p>
-    Los requisitos de software deben expresarse de la manera más clara y no 
+    Los requerimientos de software deben expresarse de la manera más clara y no 
     <input type="text" name="respuesta_78" value="<?php echo $respuesta_78; ?>" size="11">
     posible y, cuando sea apropiado,
     <input type="text" name="respuesta_79" value="<?php echo $respuesta_79; ?>" size="11">
     . 
-    Es importante evitar requisitos vagos e 
+    Es importante evitar requerimientos vagos e 
     <input type="text" name="respuesta_80" value="<?php echo $respuesta_80; ?>" size="8">
     de 
     <input type="text" name="respuesta_81" value="<?php echo $respuesta_81; ?>" size="8">
@@ -1994,19 +2146,19 @@ a
     juicio 
     <input type="text" name="respuesta_83" value="<?php echo $respuesta_83; ?>" size="8"> 
     (“el software deberá ser confiable”; “el software deberá ser fácil de usar”). 
-    Esto es particularmente importante en el caso de los requisitos no funcionales.
+    Esto es particularmente importante en el caso de los requerimientos no funcionales.
     </p>
 
 <p>
-Dos ejemplos de requisitos cuantificados son los siguientes: el software de un centro de llamadas debe aumentar el
+Dos ejemplos de requerimientos cuantificados son los siguientes: el software de un centro de llamadas debe aumentar el
 <input type="text" name="respuesta_84" value="<?php echo $respuesta_84; ?>" size="8"> 
  del centro en un 20%; y un sistema deberá tener una 
  <input type="text" name="respuesta_85" value="<?php echo $respuesta_85; ?>" size="8"> 
  de generar un error fatal durante cualquier hora de operación menor a 1 × 10<sup>−8</sup>. 
-El requisito de 
+El requerimiento de 
  <input type="text" name="respuesta_86" value="<?php echo $respuesta_86; ?>" size="8"> 
-está en un nivel muy alto y deberá utilizarse para derivar varios requisitos detallados. 
-El requisito de 
+está en un nivel muy alto y deberá utilizarse para derivar varios requerimientos detallados. 
+El requerimiento de 
  <input type="text" name="respuesta_87" value="<?php echo $respuesta_87; ?>" size="8"> 
 restringirá fuertemente la arquitectura del sistema.
 </p>
@@ -2058,44 +2210,44 @@ restringirá fuertemente la arquitectura del sistema.
     </p>
 
     <p>
-    Los requisitos del 
+    Los requerimientos del 
     <input type="text"  value="<?php echo $respuesta_88; ?>" size="8" readonly> 
-    son los requisitos para el 
+    son los requerimientos para el 
     <input type="text"  value="<?php echo $respuesta_88; ?>" size="8" readonly> 
     en su 
     <input type="text" name="respuesta_101" value="<?php echo $respuesta_101; ?>" size="8">
-    . En un sistema que contiene componentes de software, los requisitos del software se 
+    . En un sistema que contiene componentes de software, los requerimientos del software se 
     <input type="text" name="respuesta_102" value="<?php echo $respuesta_102; ?>" size="8">
-    de los requisitos del 
+    de los requerimientos del 
     <input type="text" name="respuesta_103" value="<?php echo $respuesta_103; ?>" size="8">
     .
 </p>
 
     <p>
-    Esta KA define los “requisitos del usuario” de forma restringida, como los requisitos de los 
+    Esta KA define los “requerimientos del usuario” de forma restringida, como los requerimientos de los 
      <input type="text" name="respuesta_104" value="<?php echo $respuesta_104; ?>" size="8">
     o 
     <input type="text" name="respuesta_105" value="<?php echo $respuesta_105; ?>" size="15">
     del sistema. 
-    Los requisitos del sistema, en cambio, 
+    Los requerimientos del sistema, en cambio, 
     <input type="text" name="respuesta_106" value="<?php echo $respuesta_106; ?>" size="8">
-    los requisitos del 
+    los requerimientos del 
     <input type="text" name="respuesta_107" value="<?php echo $respuesta_107; ?>" size="8">
-    , los requisitos de otros 
+    , los requerimientos de otros 
     <input type="text" name="respuesta_108" value="<?php echo $respuesta_108; ?>" size="8">
-    (como autoridades regulatorias) y los requisitos sin una fuente 
+    (como autoridades regulatorias) y los requerimientos sin una fuente 
     <input type="text" name="respuesta_109" value="<?php echo $respuesta_109; ?>" size="8">
     identificable.
     </p>
     <hr>
     <strong>parentesis</strong>: es decir:
-    <p>Los requisitos de los clientes o usuarios finales del sistema se clasifican, según el SWEBOK, como:</p>
+    <p>Los requerimientos de los clientes o usuarios finales del sistema se clasifican, según el SWEBOK, como:</p>
 
     <p>✅ <strong>Requisitos del 
     <input type="text" name="respuesta_110" value="<?php echo $respuesta_110; ?>" size="8">    
     </strong>.</p>
 
-    <p>Y esos requisitos del usuario son una subcategoría dentro de:</p>
+    <p>Y esos requerimientos del usuario son una subcategoría dentro de:</p>
 
     <p>✅ <strong>Requisitos del 
     <input type="text" name="respuesta_111" value="<?php echo $respuesta_111; ?>" size="8">    

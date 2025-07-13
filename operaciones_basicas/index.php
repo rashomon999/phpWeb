@@ -163,7 +163,10 @@ if ($_POST) {
         $respuesta_110 = '264';
         
         // Marcar todas como correctas
-    $verificar_1 = $verificar_2 = $verificar_3 = /* ... todas las variables de verificación ... */ $verificar_122 = "correcto";
+    for ($i = 1; $i <= 122; $i++) {
+    ${"verificar_$i"} = "correcto";
+    }
+
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
    if ($respuesta_1 === '26') {  
@@ -275,115 +278,115 @@ if ($_POST) {
    }
 
 
-     // Verificar la respuesta de la primera pregunta
-     $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-     if ($respuesta_12 === '28') {  
-         $verificar_12 = "correcto";
-     } elseif ($respuesta_12 === '') {
-         $verificar_12 = '';
-     } else {
-         $verificar_12 = "incorrecto";
-     }
+    // Verificar la respuesta de la primera pregunta
+    $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
+    if ($respuesta_12 === '28') {  
+        $verificar_12 = "correcto";
+    } elseif ($respuesta_12 === '') {
+        $verificar_12 = '';
+    } else {
+        $verificar_12 = "incorrecto";
+    }
   
-     // Verificar la respuesta de la segunda pregunta
-     $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-     if ($respuesta_13 === '42') { 
-         $verificar_13 = "correcto";
-     } elseif ($respuesta_13 === '') {
-         $verificar_13 = '';
-     } else {
+    // Verificar la respuesta de la segunda pregunta
+    $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
+    if ($respuesta_13 === '42') { 
+        $verificar_13 = "correcto";
+    } elseif ($respuesta_13 === '') {
+        $verificar_13 = '';
+    } else {
          $verificar_13 = "incorrecto";
-     }
+    }
   
-     // Verificar la respuesta de la tercera pregunta
-     $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-     if ($respuesta_14 === '56') {  
-         $verificar_14 = "correcto";
-     } elseif ($respuesta_14 === '') {
-         $verificar_14 = '';
-     } else {
-         $verificar_14 = "incorrecto";
-     }
+    // Verificar la respuesta de la tercera pregunta
+    $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
+    if ($respuesta_14 === '56') {  
+        $verificar_14 = "correcto";
+    } elseif ($respuesta_14 === '') {
+        $verificar_14 = '';
+    } else {
+        $verificar_14 = "incorrecto";
+    }
   
-     // Verificar la respuesta de la cuarta pregunta
-     $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-     if ($respuesta_15 === '70') { 
-         $verificar_15 = "correcto";
-     } elseif ($respuesta_15 === '') {
-         $verificar_15 = '';
-     } else {
-         $verificar_15 = "incorrecto";
-     }
+    // Verificar la respuesta de la cuarta pregunta
+    $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
+    if ($respuesta_15 === '70') { 
+        $verificar_15 = "correcto";
+    } elseif ($respuesta_15 === '') {
+        $verificar_15 = '';
+    } else {
+        $verificar_15 = "incorrecto";
+    }
   
-     // Verificar la respuesta de la quinta pregunta
-     $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-     if ($respuesta_16 === '84') {  
-         $verificar_16 = "correcto";
-     } elseif ($respuesta_16 === '') {
-         $verificar_16 = '';
-     } else {
-         $verificar_16 = "incorrecto";
-     }
+    // Verificar la respuesta de la quinta pregunta
+    $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
+    if ($respuesta_16 === '84') {  
+        $verificar_16 = "correcto";
+    } elseif ($respuesta_16 === '') {
+        $verificar_16 = '';
+    } else {
+        $verificar_16 = "incorrecto";
+    }
   
-     // Verificar la respuesta de la sexta pregunta
-     $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-     if ($respuesta_17 === '98') {  
-         $verificar_17 = "correcto";
-     } elseif ($respuesta_17 === '') {
-         $verificar_17 = '';
-     } else {
-         $verificar_17 = "incorrecto";
-     }
+    // Verificar la respuesta de la sexta pregunta
+    $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
+    if ($respuesta_17 === '98') {  
+        $verificar_17 = "correcto";
+        } elseif ($respuesta_17 === '') {
+        $verificar_17 = '';
+    } else {
+        $verificar_17 = "incorrecto";
+    }
   
-     // Verificar la respuesta de la séptima pregunta
-     $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-     if ($respuesta_18 === '112') {  
-         $verificar_18 = "correcto";
-     } elseif ($respuesta_18 === '') {
-         $verificar_18 = '';
-     } else {
-         $verificar_18 = "incorrecto";
-     }
+    // Verificar la respuesta de la séptima pregunta
+    $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
+    if ($respuesta_18 === '112') {  
+        $verificar_18 = "correcto";
+    } elseif ($respuesta_18 === '') {
+        $verificar_18 = '';
+    } else {
+        $verificar_18 = "incorrecto";
+    }
   
-     // Verificar la respuesta de la octava pregunta
-     $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-     if ($respuesta_19 === '126') {  
-         $verificar_19 = "correcto";
-     } elseif ($respuesta_19 === '') {
-         $verificar_19 = '';
-     } else {
-         $verificar_19 = "incorrecto";
-     }
+    // Verificar la respuesta de la octava pregunta
+    $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
+    if ($respuesta_19 === '126') {  
+        $verificar_19 = "correcto";
+    } elseif ($respuesta_19 === '') {
+        $verificar_19 = '';
+    } else {
+        $verificar_19 = "incorrecto";
+    }
   
-     // Verificar la respuesta de la novena pregunta
-     $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
-     if ($respuesta_20 === '140') {  
-         $verificar_20 = "correcto";
-     } elseif ($respuesta_20 === '') {
-         $verificar_20 = '';
-     } else {
-         $verificar_20 = "incorrecto";
-     }
+    // Verificar la respuesta de la novena pregunta
+    $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
+    if ($respuesta_20 === '140') {  
+        $verificar_20 = "correcto";
+    } elseif ($respuesta_20 === '') {
+        $verificar_20 = '';
+    } else {
+        $verificar_20 = "incorrecto";
+    }
   
-     // Verificar la respuesta de la décima pregunta
-     $respuesta_21 = isset($_POST['respuesta_21']) ? $_POST['respuesta_21'] : '';
-     if ($respuesta_21 === '154') {  
+    // Verificar la respuesta de la décima pregunta
+    $respuesta_21 = isset($_POST['respuesta_21']) ? $_POST['respuesta_21'] : '';
+    if ($respuesta_21 === '154') {  
          $verificar_21 = "correcto";
-     } elseif ($respuesta_21 === '') {
-         $verificar_21 = '';
-     } else {
-         $verificar_21 = "incorrecto";
-     }
+    } elseif ($respuesta_21 === '') {
+        $verificar_21 = '';
+    } else {
+        $verificar_21 = "incorrecto";
+    }
   
-     // Verificar la respuesta de la undécima pregunta
-     $respuesta_22 = isset($_POST['respuesta_22']) ? $_POST['respuesta_22'] : '';
-     if ($respuesta_22 === '168') {  
-         $verificar_22 = "correcto";
-     } elseif ($respuesta_22 === '') {
-         $verificar_22 = '';
-     } else {
-         $verificar_22 = "incorrecto";
-     }
+    // Verificar la respuesta de la undécima pregunta
+    $respuesta_22 = isset($_POST['respuesta_22']) ? $_POST['respuesta_22'] : '';
+    if ($respuesta_22 === '168') {  
+        $verificar_22 = "correcto";
+    } elseif ($respuesta_22 === '') {
+        $verificar_22 = '';
+    } else {
+        $verificar_22 = "incorrecto";
+    }
 
      // Verificar la respuesta de la primera pregunta
    $respuesta_23 = isset($_POST['respuesta_23']) ? $_POST['respuesta_23'] : '';
@@ -531,122 +534,122 @@ if ($_POST) {
         $verificar_37 = "incorrecto";
     }
 
- $respuesta_38 = isset($_POST['respuesta_38']) ? $_POST['respuesta_38'] : '';
-if ($respuesta_38 === '96') { 
-    $verificar_38 = "correcto";
-} elseif ($respuesta_38 === '') {
-    $verificar_38 = '';
-} else {
-    $verificar_38 = "incorrecto";
-}
+    $respuesta_38 = isset($_POST['respuesta_38']) ? $_POST['respuesta_38'] : '';
+    if ($respuesta_38 === '96') { 
+        $verificar_38 = "correcto";
+    } elseif ($respuesta_38 === '') {
+        $verificar_38 = '';
+    } else {
+        $verificar_38 = "incorrecto";
+    }
 
- $respuesta_39 = isset($_POST['respuesta_39']) ? $_POST['respuesta_39'] : '';
-if ($respuesta_39 === '112') { 
-    $verificar_39 = "correcto";
-} elseif ($respuesta_39 === '') {
-    $verificar_39 = '';
-} else {
-    $verificar_39 = "incorrecto";
-}
+    $respuesta_39 = isset($_POST['respuesta_39']) ? $_POST['respuesta_39'] : '';
+    if ($respuesta_39 === '112') { 
+        $verificar_39 = "correcto";
+    } elseif ($respuesta_39 === '') {
+        $verificar_39 = '';
+    } else {
+        $verificar_39 = "incorrecto";
+    }
 
- $respuesta_40 = isset($_POST['respuesta_40']) ? $_POST['respuesta_40'] : '';
-if ($respuesta_40 === '128') { 
-    $verificar_40 = "correcto";
-} elseif ($respuesta_40 === '') {
-    $verificar_40 = '';
-} else {
-    $verificar_40 = "incorrecto";
-}
+    $respuesta_40 = isset($_POST['respuesta_40']) ? $_POST['respuesta_40'] : '';
+    if ($respuesta_40 === '128') { 
+        $verificar_40 = "correcto";
+    } elseif ($respuesta_40 === '') {
+        $verificar_40 = '';
+    } else {
+        $verificar_40 = "incorrecto";
+    }
 
- $respuesta_41 = isset($_POST['respuesta_41']) ? $_POST['respuesta_41'] : '';
-if ($respuesta_41 === '144') { 
-    $verificar_41 = "correcto";
-} elseif ($respuesta_41 === '') {
-    $verificar_41 = '';
-} else {
-    $verificar_41 = "incorrecto";
-}
+    $respuesta_41 = isset($_POST['respuesta_41']) ? $_POST['respuesta_41'] : '';
+    if ($respuesta_41 === '144') { 
+        $verificar_41 = "correcto";
+    } elseif ($respuesta_41 === '') {
+        $verificar_41 = '';
+    } else {
+        $verificar_41 = "incorrecto";
+    }
 
- $respuesta_42 = isset($_POST['respuesta_42']) ? $_POST['respuesta_42'] : '';
-if ($respuesta_42 === '160') { 
-    $verificar_42 = "correcto";
-} elseif ($respuesta_42 === '') {
-    $verificar_42 = '';
-} else {
-    $verificar_42 = "incorrecto";
-}
+    $respuesta_42 = isset($_POST['respuesta_42']) ? $_POST['respuesta_42'] : '';
+    if ($respuesta_42 === '160') { 
+        $verificar_42 = "correcto";
+    } elseif ($respuesta_42 === '') {
+        $verificar_42 = '';
+    } else {
+        $verificar_42 = "incorrecto";
+    }
 
- $respuesta_43 = isset($_POST['respuesta_43']) ? $_POST['respuesta_43'] : '';
-if ($respuesta_43 === '176') { 
-    $verificar_43 = "correcto";
-} elseif ($respuesta_43 === '') {
-    $verificar_43 = '';
-} else {
+    $respuesta_43 = isset($_POST['respuesta_43']) ? $_POST['respuesta_43'] : '';
+    if ($respuesta_43 === '176') { 
+        $verificar_43 = "correcto";
+    } elseif ($respuesta_43 === '') {
+        $verificar_43 = '';
+    } else {
     $verificar_43 = "incorrecto";
-}
+    }
 
- $respuesta_44 = isset($_POST['respuesta_44']) ? $_POST['respuesta_44'] : '';
-if ($respuesta_44 === '192') { 
-    $verificar_44 = "correcto";
-} elseif ($respuesta_44 === '') {
+    $respuesta_44 = isset($_POST['respuesta_44']) ? $_POST['respuesta_44'] : '';
+    if ($respuesta_44 === '192') { 
+        $verificar_44 = "correcto";
+    } elseif ($respuesta_44 === '') {
     $verificar_44 = '';
-} else {
-    $verificar_44 = "incorrecto";
-}
+    } else {
+        $verificar_44 = "incorrecto";
+    }
 
- $respuesta_45 = isset($_POST['respuesta_45']) ? $_POST['respuesta_45'] : '';
-if ($respuesta_45 === '34') { 
-    $verificar_45 = "correcto";
-} elseif ($respuesta_45 === '') {
+    $respuesta_45 = isset($_POST['respuesta_45']) ? $_POST['respuesta_45'] : '';
+    if ($respuesta_45 === '34') { 
+        $verificar_45 = "correcto";
+    } elseif ($respuesta_45 === '') {
     $verificar_45 = '';
-} else {
-    $verificar_45 = "incorrecto";
-}
+    } else {
+        $verificar_45 = "incorrecto";
+    }
 
- $respuesta_46 = isset($_POST['respuesta_46']) ? $_POST['respuesta_46'] : '';
-if ($respuesta_46 === '51') { 
-    $verificar_46 = "correcto";
-} elseif ($respuesta_46 === '') {
+    $respuesta_46 = isset($_POST['respuesta_46']) ? $_POST['respuesta_46'] : '';
+    if ($respuesta_46 === '51') { 
+        $verificar_46 = "correcto";
+    } elseif ($respuesta_46 === '') {
     $verificar_46 = '';
-} else {
-    $verificar_46 = "incorrecto";
-}
+    } else {
+        $verificar_46 = "incorrecto";
+    }
 
- $respuesta_47 = isset($_POST['respuesta_47']) ? $_POST['respuesta_47'] : '';
-if ($respuesta_47 === '68') { 
-    $verificar_47 = "correcto";
-} elseif ($respuesta_47 === '') {
-    $verificar_47 = '';
-} else {
-    $verificar_47 = "incorrecto";
-}
+    $respuesta_47 = isset($_POST['respuesta_47']) ? $_POST['respuesta_47'] : '';
+    if ($respuesta_47 === '68') { 
+        $verificar_47 = "correcto";
+    } elseif ($respuesta_47 === '') {
+        $verificar_47 = '';
+    } else {
+        $verificar_47 = "incorrecto";
+    }
 
- $respuesta_48 = isset($_POST['respuesta_48']) ? $_POST['respuesta_48'] : '';
-if ($respuesta_48 === '85') { 
-    $verificar_48 = "correcto";
-} elseif ($respuesta_48 === '') {
+    $respuesta_48 = isset($_POST['respuesta_48']) ? $_POST['respuesta_48'] : '';
+    if ($respuesta_48 === '85') { 
+        $verificar_48 = "correcto";
+    } elseif ($respuesta_48 === '') {
     $verificar_48 = '';
-} else {
-    $verificar_48 = "incorrecto";
-}
+    } else {
+        $verificar_48 = "incorrecto";
+    }
 
- $respuesta_49 = isset($_POST['respuesta_49']) ? $_POST['respuesta_49'] : '';
-if ($respuesta_49 === '102') { 
-    $verificar_49 = "correcto";
-} elseif ($respuesta_49 === '') {
+    $respuesta_49 = isset($_POST['respuesta_49']) ? $_POST['respuesta_49'] : '';
+    if ($respuesta_49 === '102') { 
+        $verificar_49 = "correcto";
+    } elseif ($respuesta_49 === '') {
     $verificar_49 = '';
-} else {
-    $verificar_49 = "incorrecto";
-}
+    } else {
+        $verificar_49 = "incorrecto";
+    }
 
- $respuesta_50 = isset($_POST['respuesta_50']) ? $_POST['respuesta_50'] : '';
-if ($respuesta_50 === '119') { 
-    $verificar_50 = "correcto";
-} elseif ($respuesta_50 === '') {
+    $respuesta_50 = isset($_POST['respuesta_50']) ? $_POST['respuesta_50'] : '';
+    if ($respuesta_50 === '119') { 
+        $verificar_50 = "correcto";
+    } elseif ($respuesta_50 === '') {
     $verificar_50 = '';
-} else {
-    $verificar_50 = "incorrecto";
-}
+    } else {
+        $verificar_50 = "incorrecto";
+    }
 
  $respuesta_51 = isset($_POST['respuesta_51']) ? $_POST['respuesta_51'] : '';
 if ($respuesta_51 === '136') { 
@@ -1345,7 +1348,14 @@ function handleSubmit(event) {
         actualizarFormula10();
         actualizarFormula11();
         actualizarFormula12();
-      
+        actualizarFormula13();
+        actualizarFormula14();
+        actualizarFormula15();
+        actualizarFormula16();
+        actualizarFormula17();
+        actualizarFormula18();
+        actualizarFormula19();
+        actualizarFormula20();
     })
     .catch(error => {
         console.error('Error al enviar el formulario:', error);
@@ -1826,19 +1836,19 @@ function ocultarMensaje4() {
 21 * 10 = <input type="text" name="respuesta_97" value="<?php echo $respuesta_97; ?>"><br>
 21 * 11 = <input type="text" name="respuesta_98" value="<?php echo $respuesta_98; ?>"><br>
 21 * 12 = <input type="text" name="respuesta_99" value="<?php echo $respuesta_99; ?>"><br>
-<button type="submit">Enviar</button>
+    <button type="submit">Enviar</button>
 
-<?php echo $verificar_89 ?>
-<?php echo $verificar_90 ?>
-<?php echo $verificar_91 ?>
-<?php echo $verificar_92 ?>
-<?php echo $verificar_93 ?>
-<?php echo $verificar_94 ?>
-<?php echo $verificar_95 ?>
-<?php echo $verificar_96 ?>
-<?php echo $verificar_97 ?>
-<?php echo $verificar_98 ?> 
-<?php echo $verificar_99 ?>
+    <?php echo $verificar_89 ?>
+    <?php echo $verificar_90 ?>
+    <?php echo $verificar_91 ?>
+    <?php echo $verificar_92 ?>
+    <?php echo $verificar_93 ?>
+    <?php echo $verificar_94 ?>
+    <?php echo $verificar_95 ?>
+    <?php echo $verificar_96 ?>
+    <?php echo $verificar_97 ?>
+    <?php echo $verificar_98 ?> 
+    <?php echo $verificar_99 ?>
 <br><br><br>
 22 * 2 = <input type="text" name="respuesta_100" value="<?php echo $respuesta_100; ?>"><br>
 22 * 3 = <input type="text" name="respuesta_101" value="<?php echo $respuesta_101; ?>"><br>
@@ -1851,19 +1861,19 @@ function ocultarMensaje4() {
 22 * 10 = <input type="text" name="respuesta_108" value="<?php echo $respuesta_108; ?>"><br>
 22 * 11 = <input type="text" name="respuesta_109" value="<?php echo $respuesta_109; ?>"><br>
 22 * 12 = <input type="text" name="respuesta_110" value="<?php echo $respuesta_110; ?>"><br>
-<button type="submit">Enviar</button>
-<?php echo $verificar_100 ?>
-<?php echo $verificar_101 ?>
-<?php echo $verificar_102 ?>
-<?php echo $verificar_103 ?>
-<?php echo $verificar_104 ?>
-<?php echo $verificar_105 ?>
-<?php echo $verificar_106 ?>
-<?php echo $verificar_107 ?>
-<?php echo $verificar_108 ?>
-<?php echo $verificar_109 ?>
-<?php echo $verificar_110 ?>
-<br><br><br>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_100 ?>
+    <?php echo $verificar_101 ?>
+    <?php echo $verificar_102 ?>
+    <?php echo $verificar_103 ?>
+    <?php echo $verificar_104 ?>
+    <?php echo $verificar_105 ?>
+    <?php echo $verificar_106 ?>
+    <?php echo $verificar_107 ?>
+    <?php echo $verificar_108 ?>
+    <?php echo $verificar_109 ?>
+    <?php echo $verificar_110 ?>
+    <br><br><br>
 
     <hr>
     <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>

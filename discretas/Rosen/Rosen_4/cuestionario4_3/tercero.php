@@ -2243,7 +2243,7 @@ function ocultarMensaje4() {
     algoritmo de Euclides. Este algoritmo se ha conocido desde la antigüedad. Lleva el nombre del matemático 
     griego antiguo Euclides, quien incluyó una descripción de este algoritmo en su libro <i>Los Elementos</i>.</p>
 
-        <button onmousedown="mostrarImagen8()" onmouseup="ocultarImagen8()">Explicacion</button>
+    <button onmousedown="mostrarImagen8()" onmouseup="ocultarImagen8()">Explicacion</button>
     <!-- Elemento para mostrar la imagen -->
 
     <img id="imagenMostrada8" src="../../../../img/explicacion_euclides.png" style="display: none; max-width: 100%" width="560">

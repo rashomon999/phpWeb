@@ -103,7 +103,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === '91') {  
+   if ($respuesta_6 === '\frac{3^x}{Ln3}+C') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -113,7 +113,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === '104') {  
+   if ($respuesta_7 === '\frac{2^{3x}}{Ln8}+C' || $respuesta_7 === '\frac{2^{3x}}{3Ln2}+C') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -123,7 +123,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === '117') {  
+   if ($respuesta_8 === '\frac{3^{2x}}{Ln9}+C' || $respuesta_8 === '\frac{3^{2x}}{2Ln3}+C') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -133,7 +133,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === '130') {  
+   if ($respuesta_9 === '\frac{6^{3x^2+1}}{Ln6}+C') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -143,7 +143,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === '143') {  
+   if ($respuesta_10 === '\frac{1}{2}e^{2x}+C' || $respuesta_10 === '\frac{e^{2x}}{2}+C') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -153,7 +153,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === '156') {  
+   if ($respuesta_11 === '\frac{1}{5}e^{5x+3}+C') {  
        $verificar_11 = "correcto";
    } elseif ($respuesta_11 === '') {
        $verificar_11 = '';
@@ -164,7 +164,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
      $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-     if ($respuesta_12 === '28') {  
+     if ($respuesta_12 === '2e^{3x}+C') {  
          $verificar_12 = "correcto";
      } elseif ($respuesta_12 === '') {
          $verificar_12 = '';
@@ -174,7 +174,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la segunda pregunta
      $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-     if ($respuesta_13 === '42') { 
+     if ($respuesta_13 === '\frac{1}{10}e^{5x}+C') { 
          $verificar_13 = "correcto";
      } elseif ($respuesta_13 === '') {
          $verificar_13 = '';
@@ -184,7 +184,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la tercera pregunta
      $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-     if ($respuesta_14 === '56') {  
+     if ($respuesta_14 === '\frac{1}{2}e^{x^2}+C') {  
          $verificar_14 = "correcto";
      } elseif ($respuesta_14 === '') {
          $verificar_14 = '';
@@ -194,7 +194,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la cuarta pregunta
      $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-     if ($respuesta_15 === '70') { 
+     if ($respuesta_15 === '\frac{1}{2}e^{t^2}+C') { 
          $verificar_15 = "correcto";
      } elseif ($respuesta_15 === '') {
          $verificar_15 = '';
@@ -204,7 +204,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la quinta pregunta
      $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-     if ($respuesta_16 === '84') {  
+     if ($respuesta_16 === '\frac{1}{3}e^{2x^3}+C') {  
          $verificar_16 = "correcto";
      } elseif ($respuesta_16 === '') {
          $verificar_16 = '';
@@ -214,7 +214,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la sexta pregunta
      $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-     if ($respuesta_17 === '98') {  
+     if ($respuesta_17 === '\frac{(Lnx)^2}{2}+C' || $respuesta_17 === '\frac{Ln^2x}{2}+C') {  
          $verificar_17 = "correcto";
      } elseif ($respuesta_17 === '') {
          $verificar_17 = '';
@@ -223,7 +223,7 @@ if ($_POST) {
      }
      // Verificar la respuesta de la séptima pregunta
      $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-     if ($respuesta_18 === '112') {  
+     if ($respuesta_18 === '\frac{Ln^2x}{3}+C' || $respuesta_18 === '\frac{1}{3}Ln^2x+C') {  
          $verificar_18 = "correcto";
      } elseif ($respuesta_18 === '') {
          $verificar_18 = '';
@@ -233,7 +233,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la octava pregunta
      $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-     if ($respuesta_19 === '126') {  
+     if ($respuesta_19 === 'Ln|Lnx|+C' || $respuesta_19 === 'Ln|Ln(x)|+C') {  
          $verificar_19 = "correcto";
      } elseif ($respuesta_19 === '') {
          $verificar_19 = '';
@@ -1099,7 +1099,7 @@ if ($respuesta_110 === '264') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 240vh;
+    height: 260vh;
     }
 </style>
  
@@ -1602,6 +1602,132 @@ function ocultarMensaje4() {
     </p>
 
     <hr>
+
+
+
+    <p style="text-align: center;">
+    \(  \int 3^x \, \, dx \) = 
+    <span id="formula6">
+        \(   \)
+    </span>
+    <br><br>
+    <input type="text" name="respuesta_6"   id="respuesta_6" oninput="actualizarFormula6()" 
+    value="<?php echo $respuesta_6?>" size="40" >
+    </p>
+
+    <button onmousedown="mostrarImagen10()" onmouseup="ocultarImagen10()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada10" src="../../../img/exponencial.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen10() {
+        var imagenMostrada10 = document.getElementById('imagenMostrada10');
+
+        // Mostrar la imagen
+        imagenMostrada10.style.display = 'block';
+        }
+
+        function ocultarImagen10() {
+        var imagenMostrada10 = document.getElementById('imagenMostrada10');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada10.style.display = 'none';
+        }
+    </script>
+    <hr>
+
+
+    <p style="text-align: center;">
+    \(  \int 2^{3x} \, \, dx \) = 
+    <span id="formula7">
+        \(   \)
+    </span>
+    <br><br>
+    <input type="text" name="respuesta_7"   id="respuesta_7" oninput="actualizarFormula7()" 
+    value="<?php echo $respuesta_7?>" size="40" >
+    </p>
+
+     <button onmousedown="mostrarImagen11()" onmouseup="ocultarImagen11()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada11" src="../../../img/exponencial_dos.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen11() {
+        var imagenMostrada11 = document.getElementById('imagenMostrada11');
+
+        // Mostrar la imagen
+        imagenMostrada11.style.display = 'block';
+        }
+
+        function ocultarImagen11() {
+        var imagenMostrada11 = document.getElementById('imagenMostrada11');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada11.style.display = 'none';
+        }
+    </script>
+
+
+    <button onmousedown="mostrarImagen12()" onmouseup="ocultarImagen12()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada12" src="../../../img/exponencial_tres.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen12() {
+        var imagenMostrada12 = document.getElementById('imagenMostrada12');
+
+        // Mostrar la imagen
+        imagenMostrada12.style.display = 'block';
+        }
+
+        function ocultarImagen12() {
+        var imagenMostrada12 = document.getElementById('imagenMostrada12');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada12.style.display = 'none';
+        }
+    </script>
+         
+    <hr>
+
+    <p style="text-align: center;">
+    \(  \int 3^{2x} \, \, dx \) = 
+    <span id="formula8">
+        \(   \)
+    </span>
+    <br><br>
+    <input type="text" name="respuesta_8"   id="respuesta_8" oninput="actualizarFormula8()" 
+    value="<?php echo $respuesta_8?>" size="40" >
+    </p>
+
+    <hr>
+
+
+    <p style="text-align: center;">
+    \(  \int 6x 6^{3x^2+1} \, \, dx \) = 
+    <span id="formula9">
+        \(   \)
+    </span>
+    <br><br>
+    <input type="text" name="respuesta_9"   id="respuesta_9" oninput="actualizarFormula9()" 
+    value="<?php echo $respuesta_9?>" size="40" >
+    </p>
+
+    <hr>
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_1 ?>
+    <?php echo $verificar_2 ?>
+    <?php echo $verificar_3 ?>
+    <?php echo $verificar_4 ?>
+    <?php echo $verificar_5 ?>
+    <?php echo $verificar_6 ?>
+    <?php echo $verificar_7 ?>
+    <?php echo $verificar_8 ?>
+    <?php echo $verificar_9 ?>
+
     </form>
 </div>
 
@@ -1610,6 +1736,250 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
     <form action="./quinto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+      
+    <p style="text-align: center;">
+    \(  \int e^{2x} \, \, dx \) = 
+    <span id="formula10">
+        \(   \)
+    </span>
+    <br><br>
+    <input type="text" name="respuesta_10"   id="respuesta_10" oninput="actualizarFormula10()" 
+    value="<?php echo $respuesta_10?>" size="40" >
+    </p>
+
+    <button onmousedown="mostrarImagen13()" onmouseup="ocultarImagen13()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada13" src="../../../img/exponencial_e.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen13() {
+        var imagenMostrada13 = document.getElementById('imagenMostrada13');
+
+        // Mostrar la imagen
+        imagenMostrada13.style.display = 'block';
+        }
+
+        function ocultarImagen13() {
+        var imagenMostrada13 = document.getElementById('imagenMostrada13');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada13.style.display = 'none';
+        }
+    </script>
+     
+    <hr>
+
+
+    <p style="text-align: center;">
+    \(  \int e^{5x+3} \, \, dx \) = 
+    <span id="formula11">
+        \(   \)
+    </span>
+    <br><br>
+    <input type="text" name="respuesta_11"   id="respuesta_11" oninput="actualizarFormula11()" 
+    value="<?php echo $respuesta_11?>" size="40" >
+    </p>
+
+    <hr>
+
+
+    <p style="text-align: center;">
+    \(  \int 6\,e^{3x} \, \, dx \) = 
+    <span id="formula12">
+        \(   \)
+    </span>
+    <br><br>
+    <input type="text" name="respuesta_12"   id="respuesta_12" oninput="actualizarFormula12()" 
+    value="<?php echo $respuesta_12?>" size="40" >
+    </p>
+
+    <hr>
+
+
+    <p style="text-align: center;">
+    \(  \int \frac{e^{5x}}{2} \, \, dx \) = 
+    <span id="formula13">
+        \(   \)
+    </span>
+    <br><br>
+    <input type="text" name="respuesta_13"   id="respuesta_13" oninput="actualizarFormula13()" 
+    value="<?php echo $respuesta_13?>" size="40" >
+    </p>
+
+    <hr>
+
+    
+    <p style="text-align: center;">
+    \(  \int  x\,e^{x^2} \, \, dx \) = 
+    <span id="formula14">
+        \(   \)
+    </span>
+    <br><br>
+    <input type="text" name="respuesta_14"   id="respuesta_14" oninput="actualizarFormula14()" 
+    value="<?php echo $respuesta_14?>" size="40" >
+    </p>
+
+    <hr>
+
+
+    <p style="text-align: center;">
+    \(  \int  t\,e^{t^2} \, \, dt \) = 
+    <span id="formula15">
+        \(   \)
+    </span>
+    <br><br>
+    <input type="text" name="respuesta_15"   id="respuesta_15" oninput="actualizarFormula15()" 
+    value="<?php echo $respuesta_15?>" size="40" >
+    </p>
+
+    <hr>
+
+    <p style="text-align: center;">
+    \(  \int  2x^2\,e^{2x^3} \, \, dx \) = 
+    <span id="formula16">
+        \(   \)
+    </span>
+    <br><br>
+    <input type="text" name="respuesta_16"   id="respuesta_16" oninput="actualizarFormula16()" 
+    value="<?php echo $respuesta_16?>" size="40" >
+    </p>
+
+    <hr>
+
+
+    <p style="text-align: center;">
+    \(  \int  \frac{Lnx}{x} \, \, dx \) = 
+    <span id="formula17">
+        \(   \)
+    </span>
+    <br><br>
+    <input type="text" name="respuesta_17"   id="respuesta_17" oninput="actualizarFormula17()" 
+    value="<?php echo $respuesta_17?>" size="40" >
+    </p>
+
+    <button onmousedown="mostrarImagen14()" onmouseup="ocultarImagen14()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada14" src="../../../img/logaritmo.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen14() {
+        var imagenMostrada14 = document.getElementById('imagenMostrada14');
+
+        // Mostrar la imagen
+        imagenMostrada14.style.display = 'block';
+        }
+
+        function ocultarImagen14() {
+        var imagenMostrada14 = document.getElementById('imagenMostrada14');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada14.style.display = 'none';
+        }
+    </script>
+    
+     <button onmousedown="mostrarImagen15()" onmouseup="ocultarImagen15()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada15" src="../../../img/logaritmo_dos.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen15() {
+        var imagenMostrada15 = document.getElementById('imagenMostrada15');
+
+        // Mostrar la imagen
+        imagenMostrada15.style.display = 'block';
+        }
+
+        function ocultarImagen15() {
+        var imagenMostrada15 = document.getElementById('imagenMostrada15');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada15.style.display = 'none';
+        }
+    </script>
+    <hr>
+
+
+    <p style="text-align: center;">
+    \(  \int  \frac{Lnx^2}{3x} \, \, dx \) = 
+    <span id="formula18">
+        \(   \)
+    </span>
+    <br><br>
+    <input type="text" name="respuesta_18"   id="respuesta_18" oninput="actualizarFormula18()" 
+    value="<?php echo $respuesta_18?>" size="40" >
+    </p>
+
+
+    <hr>
+
+
+    <p style="text-align: center;">
+    \(  \int  \frac{dx}{xLnx} \, \, dx \) = 
+    <span id="formula19">
+        \(   \)
+    </span>
+    <br><br>
+    <input type="text" name="respuesta_19"   id="respuesta_19" oninput="actualizarFormula19()" 
+    value="<?php echo $respuesta_19?>" size="40" >
+    </p>
+
+    <button onmousedown="mostrarImagen16()" onmouseup="ocultarImagen16()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada16" src="../../../img/logaritmo_tres.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen16() {
+        var imagenMostrada16 = document.getElementById('imagenMostrada16');
+
+        // Mostrar la imagen
+        imagenMostrada16.style.display = 'block';
+        }
+
+        function ocultarImagen16() {
+        var imagenMostrada16 = document.getElementById('imagenMostrada16');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada16.style.display = 'none';
+        }
+    </script>
+
+    <button onmousedown="mostrarImagen17()" onmouseup="ocultarImagen17()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada17" src="../../../img/logaritmo_cuatro.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen17() {
+        var imagenMostrada17 = document.getElementById('imagenMostrada17');
+
+        // Mostrar la imagen
+        imagenMostrada17.style.display = 'block';
+        }
+
+        function ocultarImagen17() {
+        var imagenMostrada17 = document.getElementById('imagenMostrada17');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada17.style.display = 'none';
+        }
+    </script>
+      
+    <hr>
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_10 ?>
+    <?php echo $verificar_11 ?>
+    <?php echo $verificar_12 ?>
+    <?php echo $verificar_13 ?>
+    <?php echo $verificar_14 ?>
+    <?php echo $verificar_15 ?>
+    <?php echo $verificar_16 ?>
+    <?php echo $verificar_17 ?>
+    <?php echo $verificar_18 ?>
+    <?php echo $verificar_19 ?>
  
     </form>
 </div>
@@ -1619,7 +1989,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="quinto.php"
+        href="sexto.php"
         role="button"
         width="50px"
         height="50px"

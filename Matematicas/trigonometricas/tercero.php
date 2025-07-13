@@ -24,8 +24,8 @@ if ($_POST) {
         $respuesta_4 = 'Sin^2(x)=\frac{1}{2}-\frac{1}{2}Cos(2x)';
         $respuesta_5 = 'Cos^2(x)=\frac{1}{2}+\frac{1}{2}Cos(2x)';
         $respuesta_6 = 'Tan^2(x)=\frac{1-Cos(2x)}{1+Cos(2x)}';
-        $respuesta_7 = '\frac{Cos(a)}{Cot(a)}';
-        $respuesta_8 = '\frac{Sin(a)}{Tan(a)}';
+        $respuesta_7 = 'no es rectangulo';
+        $respuesta_8 = 'triangulos rectangulo';
         $respuesta_9 = 'angulo opuesto';
         $respuesta_10 = 'lado a';
         $respuesta_11 = '\frac{Tan(a)}{Sin(a)}';
@@ -115,7 +115,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === 'triangulos rectangulos') {  
+   if ($respuesta_8 === 'triangulos rectangulo') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';

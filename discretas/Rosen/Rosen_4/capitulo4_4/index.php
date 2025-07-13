@@ -1440,57 +1440,72 @@ function ocultarMensaje4() {
 <div class="seccion izquierda">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
     <h1>4.4 Resolución de Congruencias</h1>
-  <h2>4.4.1 Introducción</h2>
-  <p>
+    <h2>4.4.1 Introducción</h2>
+    
+    <p>
     Resolver congruencias lineales, que tienen la forma 
-    \( ax \equiv b \ (\text{mod} \ m) \), es una tarea esencial en el estudio de la teoría de números y sus aplicaciones, así como resolver ecuaciones lineales desempeña un papel importante en el cálculo y en el álgebra lineal. 
-    Para resolver congruencias lineales, usamos inversos módulo \( m \). Explicaremos cómo retroceder a través de los pasos del algoritmo de Euclides para encontrar inversos módulo \( m \). 
-    Una vez que hemos encontrado un inverso de \( a \) módulo \( m \), resolvemos la congruencia \( ax \equiv b \ (\text{mod} \ m) \) multiplicando ambos lados de la congruencia por ese inverso.
-  </p>
+    \( ax \equiv b \ (\text{mod} \ m) \), es una tarea esencial en el estudio de la teoría de números y sus 
+    aplicaciones, así como resolver ecuaciones lineales desempeña un papel importante en el cálculo y en el 
+    álgebra lineal. 
+    Para resolver congruencias lineales, usamos inversos módulo \( m \). Explicaremos cómo retroceder a través 
+    de los pasos del algoritmo de Euclides para encontrar inversos módulo \( m \). 
+    Una vez que hemos encontrado un inverso de \( a \) módulo \( m \), resolvemos la congruencia 
+    \( ax \equiv b \ (\text{mod} \ m) \) multiplicando ambos lados de la congruencia por ese inverso.
+    </p>
 
-  <p>
+    <p>
     Los sistemas simultáneos de congruencias lineales se estudian desde la antigüedad. 
-    Por ejemplo, el matemático chino Sun-Tsu los estudió en el siglo I. Mostraremos cómo resolver sistemas de congruencias lineales con módulos que son primos relativos dos a dos. 
-    El resultado que probaremos se llama <strong>el teorema chino del resto</strong>, y nuestra demostración proporcionará un método para encontrar todas las soluciones de tales sistemas de congruencias. 
-    También mostraremos cómo utilizar el teorema chino del resto como base para realizar operaciones aritméticas con números enteros grandes.
-  </p>
+    Por ejemplo, el matemático chino Sun-Tsu los estudió en el siglo I. Mostraremos cómo resolver sistemas de 
+    congruencias lineales con módulos que son primos relativos dos a dos. 
+    El resultado que probaremos se llama <strong>el teorema chino del resto</strong>, y nuestra demostración 
+    proporcionará un método para encontrar todas las soluciones de tales sistemas de congruencias. 
+    También mostraremos cómo utilizar el teorema chino del resto como base para realizar operaciones aritméticas 
+    con números enteros grandes.
+    </p>
 
-  <p>
-    Introduciremos un resultado útil de Fermat, conocido como <strong>el pequeño teorema de Fermat</strong>, que establece que si \( p \) es primo y no divide a \( a \), entonces 
+    <p>
+    Introduciremos un resultado útil de Fermat, conocido como <strong>el pequeño teorema de Fermat</strong>, que 
+    establece que si \( p \) es primo y no divide a \( a \), entonces 
     \( a^{p-1} \equiv 1 \ (\text{mod} \ p) \). 
     Examinaremos la contraposición de esta afirmación, lo que nos llevará al concepto de un <strong>seudoprimo</strong>. 
-    Un seudoprimo \( m \) en base \( a \) es un número compuesto \( m \) que se hace pasar por primo al satisfacer la congruencia 
+    Un seudoprimo \( m \) en base \( a \) es un número compuesto \( m \) que se hace pasar por primo al satisfacer 
+    la congruencia 
     \( a^{m-1} \equiv 1 \ (\text{mod} \ m) \). 
-    También daremos un ejemplo de un <strong>número de Carmichael</strong>, que es un número compuesto que es un seudoprimo para todas las bases \( a \) relativamente primas con él.
-  </p>
+    También daremos un ejemplo de un <strong>número de Carmichael</strong>, que es un número compuesto que es un 
+    seudoprimo para todas las bases \( a \) relativamente primas con él.
+    </p>
 
-  <p>
+    <p>
     También introduciremos la noción de <strong>logaritmos discretos</strong>, que son análogos a los logaritmos ordinarios. 
     Para definir logaritmos discretos, primero debemos definir <strong>raíces primitivas</strong>. 
-    Una raíz primitiva de un número primo \( p \) es un entero \( r \) tal que todo entero no divisible por \( p \) es congruente a una potencia de \( r \) módulo \( p \). 
-    Si \( r \) es una raíz primitiva de \( p \) y \( r^e \equiv a \ (\text{mod} \ p) \), entonces \( e \) es el logaritmo discreto de \( a \) módulo \( p \) en base \( r \). 
+    Una raíz primitiva de un número primo \( p \) es un entero \( r \) tal que todo entero no divisible por \( p \) es 
+    congruente a una potencia de \( r \) módulo \( p \). 
+    Si \( r \) es una raíz primitiva de \( p \) y \( r^e \equiv a \ (\text{mod} \ p) \), entonces \( e \) es el 
+    logaritmo discreto de \( a \) módulo \( p \) en base \( r \). 
     Encontrar logaritmos discretos resulta ser un problema extremadamente difícil en general. 
     La dificultad de este problema es la base de la seguridad de muchos sistemas criptográficos.
-  </p>
+    </p>
 
 
-  <hr>
-  <h2>4.4.2 Congruencias Lineales</h2>
+    <hr>
+    <h2>4.4.2 Congruencias Lineales</h2>
 
-<p>
-  Una congruencia de la forma 
-  \( ax \equiv b \pmod{m} \), donde \( m \) es un entero positivo, \( a \) y \( b \) son enteros, y \( x \) es una variable, 
-  se llama una <strong>congruencia lineal</strong>. Estas congruencias aparecen en toda la teoría de números y sus aplicaciones.
-</p>
+    <p>
+    Una congruencia de la forma 
+    \( ax \equiv b \pmod{m} \), donde \( m \) es un entero positivo, \( a \) y \( b \) son enteros, 
+    y \( x \) es una variable, 
+    se llama una <strong>congruencia lineal</strong>. Estas congruencias aparecen en toda la teoría de 
+    números y sus aplicaciones.
+    </p>
 
-<p>
-  ¿Cómo podemos resolver la congruencia lineal \( ax \equiv b \pmod{m} \)? Es decir, ¿cómo podemos encontrar
-   todos los enteros \( x \) que la satisfacen?
-  Un método que describiremos utiliza un entero \( \overline{a} \) tal que \(  \overline{a}  a \equiv 1 \pmod{m} \), 
-  si tal entero existe.
-  A este número \( \overline{a} \) se le llama <strong>inverso de \( a \) módulo \( m \)</strong>.
-  El Teorema 1 garantiza que tal inverso existe siempre que \( a \) y \( m \) sean primos relativos.
-</p>
+    <p>
+    ¿Cómo podemos resolver la congruencia lineal \( ax \equiv b \pmod{m} \)? Es decir, ¿cómo podemos encontrar
+    todos los enteros \( x \) que la satisfacen?
+    Un método que describiremos utiliza un entero \( \overline{a} \) tal que \(  \overline{a}  a \equiv 1 \pmod{m} \), 
+    si tal entero existe.
+    A este número \( \overline{a} \) se le llama <strong>inverso de \( a \) módulo \( m \)</strong>.
+    El Teorema 1 garantiza que tal inverso existe siempre que \( a \) y \( m \) sean primos relativos.
+    </p>
 
     <h3>Teorema 1</h3>
     <p>
@@ -1502,135 +1517,142 @@ function ocultarMensaje4() {
     módulo \( m \).)
     </p>
 
-<h4>Demostración:</h4>
-<p>
-  Por el Teorema 6 de la Sección 4.3, como \( \gcd(a, m) = 1 \), existen enteros \( s \) y \( t \) tales que<br>
-  \( sa + tm = 1 \).<br>
-  Esto implica que \( sa + tm \equiv 1 \pmod{m} \).<br>
-  Como \( tm \equiv 0 \pmod{m} \), se sigue que \( sa \equiv 1 \pmod{m} \).<br>
-  Por lo tanto, \( s \) es un inverso de \( a \) módulo \( m \).<br>
-  Que este inverso sea único módulo \( m \) queda como el <em>Ejercicio 7</em>.
-</p>
+    <h4>Demostración:</h4>
+    <p>
+    Por el Teorema 6 de la Sección 4.3, como \( \gcd(a, m) = 1 \), existen enteros \( s \) y \( t \) tales que<br>
+    \( sa + tm = 1 \).<br>
+    Esto implica que \( sa + tm \equiv 1 \pmod{m} \).<br>
+    Como \( tm \equiv 0 \pmod{m} \), se sigue que \( sa \equiv 1 \pmod{m} \).<br>
+    Por lo tanto, \( s \) es un inverso de \( a \) módulo \( m \).<br>
+    Que este inverso sea único módulo \( m \) queda como el <em>Ejercicio 7</em>.
+    </p>
 
-<p>
-  Usar la inspección para encontrar un inverso de \( a \) módulo \( m \) es fácil cuando \( m \) es pequeño. 
-  Para encontrar este inverso, buscamos un múltiplo de \( a \) que exceda en 1 a un múltiplo de \( m \).<br>
-  Por ejemplo, para encontrar un inverso de 3 módulo 7, podemos calcular \( j \cdot 3 \) para \( j = 1, 2, \dots, 6 \), 
-  deteniéndonos cuando encontremos un múltiplo de 3 que sea uno más que un múltiplo de 7.
-</p>
+    <p>
+    Usar la inspección para encontrar un inverso de \( a \) módulo \( m \) es fácil cuando \( m \) es pequeño. 
+    Para encontrar este inverso, buscamos un múltiplo de \( a \) que exceda en 1 a un múltiplo de \( m \).<br>
+    Por ejemplo, para encontrar un inverso de 3 módulo 7, podemos calcular \( j \cdot 3 \) para \( j = 1, 2, \dots, 6 \), 
+    deteniéndonos cuando encontremos un múltiplo de 3 que sea uno más que un múltiplo de 7.
+    </p>
 
-<p>
-  Podemos acelerar este enfoque si notamos que \( 2 \cdot 3 \equiv -1 \pmod{7} \), lo cual implica que \( (-2) \cdot 3 \equiv 1 \pmod{7} \).<br>
-  Por lo tanto, \( 5 \cdot 3 \equiv 1 \pmod{7} \), así que <strong>5 es un inverso de 3 módulo 7</strong>.
-</p>
+    <p>
+    Podemos acelerar este enfoque si notamos que \( 2 \cdot 3 \equiv -1 \pmod{7} \), lo cual implica que 
+    \( (-2) \cdot 3 \equiv 1 \pmod{7} \).<br>
+    Por lo tanto, \( 5 \cdot 3 \equiv 1 \pmod{7} \), así que <strong>5 es un inverso de 3 módulo 7</strong>.
+    </p>
 
-<p>
-  Podemos diseñar un algoritmo más eficiente que la fuerza bruta para encontrar un inverso de \( a \) módulo \( m \) cuando \( \gcd(a, m) = 1 \), 
-  usando los pasos del <strong>algoritmo de Euclides</strong>. 
-  Al invertir estos pasos, como en el Ejemplo 17 de la Sección 4.3, obtenemos una combinación lineal \( sa + tm = 1 \).
-  Reduciendo ambos lados módulo \( m \), concluimos que \( s \) es un inverso de \( a \) módulo \( m \).
-</p>
+    <p>
+    Podemos diseñar un algoritmo más eficiente que la fuerza bruta para encontrar un inverso de 
+    \( a \) módulo \( m \) cuando \( \gcd(a, m) = 1 \), 
+    usando los pasos del <strong>algoritmo de Euclides</strong>. 
+    Al invertir estos pasos, como en el Ejemplo 17 de la Sección 4.3, obtenemos una 
+    combinación lineal \( sa + tm = 1 \).
+    Reduciendo ambos lados módulo \( m \), concluimos que \( s \) es un inverso de \( a \) módulo \( m \).
+    </p>
 
-<h3>Ejemplo 1</h3>
-<p>
-  Encuentra un inverso de 3 módulo 7 hallando primero los coeficientes de Bézout de 3 y 7.<br>
-  (Ya hemos mostrado que 5 es un inverso de 3 módulo 7 por inspección).
-</p>
+    <h3>Ejemplo 1</h3>
+    <p>
+    Encuentra un inverso de 3 módulo 7 hallando primero los coeficientes de Bézout de 3 y 7.<br>
+    (Ya hemos mostrado que 5 es un inverso de 3 módulo 7 por inspección).
+    </p>
 
-<p><strong>Solución:</strong> Como \( \gcd(3, 7) = 1 \), el Teorema 1 nos garantiza que existe un inverso.</p>
-<p>
-  El algoritmo de Euclides aplicado a 3 y 7 da:<br>
-  \( 7 = 2 \cdot 3 + 1 \)<br>
-  De esta ecuación se sigue que:<br>
-  \( -2 \cdot 3 + 1 \cdot 7 = 1 \)<br>
-  Esto muestra que \( -2 \) y \( 1 \) son coeficientes de Bézout de 3 y 7.<br>
-  Por lo tanto, \( -2 \) es un inverso de 3 módulo 7.<br>
-  Cualquier entero congruente con \( -2 \pmod{7} \), como \( 5, -9, 12, \dots \), también es un inverso de 3.
-</p>
+    <p><strong>Solución:</strong> Como \( \gcd(3, 7) = 1 \), el Teorema 1 nos garantiza que existe un inverso.</p>
+    <p>
+    El algoritmo de Euclides aplicado a 3 y 7 da:<br>
+    \( 7 = 2 \cdot 3 + 1 \)<br>
+    De esta ecuación se sigue que:<br>
+    \( -2 \cdot 3 + 1 \cdot 7 = 1 \)<br>
+    Esto muestra que \( -2 \) y \( 1 \) son coeficientes de Bézout de 3 y 7.<br>
+    Por lo tanto, \( -2 \) es un inverso de 3 módulo 7.<br>
+    Cualquier entero congruente con \( -2 \pmod{7} \), como \( 5, -9, 12, \dots \), también es un inverso de 3.
+    </p>
     <hr>
     <strong>parentesis</strong>
     <p>Sí, esos valores que mencionas:</p>
 
-<p>\(\{-9,\ -2,\ 5,\ 12,\ 19,\ \dots\}\)</p>
+    <p>\(\{-9,\ -2,\ 5,\ 12,\ 19,\ \dots\}\)</p>
 
-<p>son todos inversos de 3 módulo 7, en el sentido de que todos son congruentes con 5 módulo 7 y cumplen:</p>
+    <p>son todos inversos de 3 módulo 7, en el sentido de que todos son congruentes con 5 módulo 7 y cumplen:</p>
 
-<p>\[3 \cdot x \equiv 1 \pmod{7}\]</p>
+    <p>\[3 \cdot x \equiv 1 \pmod{7}\]</p>
 
-<h3>🔍 ¿Por qué?</h3>
+    <h3>🔍 ¿Por qué?</h3>
 
-<p>Porque cualquier número congruente con 5 módulo 7 se puede escribir como:</p>
+    <p>Porque cualquier número congruente con 5 módulo 7 se puede escribir como:</p>
 
-<p>\[x = 5 + 7k \quad \text{para algún } k \in \mathbb{Z}\]</p>
+    <p>\[x = 5 + 7k \quad \text{para algún } k \in \mathbb{Z}\]</p>
 
-<p>Y como:</p>
+    <p>Y como:</p>
 
-<p>\[3 \cdot 5 \equiv 1 \pmod{7}\]</p>
+    <p>\[3 \cdot 5 \equiv 1 \pmod{7}\]</p>
 
-<p>también:</p>
+    <p>también:</p>
 
-<p>\[3 \cdot (5 + 7k) = 3 \cdot 5 + 3 \cdot 7k \equiv 1 + 0 \equiv 1 \pmod{7}\]</p>
+    <p>\[3 \cdot (5 + 7k) = 3 \cdot 5 + 3 \cdot 7k \equiv 1 + 0 \equiv 1 \pmod{7}\]</p>
 
-<p>Ya sabemos que:</p>
+    <p>Ya sabemos que:</p>
 
-<p>\[3 \cdot 5 \equiv 1 \pmod{7}\]</p>
+    <p>\[3 \cdot 5 \equiv 1 \pmod{7}\]</p>
 
-<p>Entonces 5 es el inverso de 3 módulo 7.</p>
+    <p>Entonces 5 es el inverso de 3 módulo 7.</p>
 
-<p>Según el teorema, cualquier otro inverso de 3 módulo 7 es congruente con 5 módulo 7. Es decir:</p>
+    <p>Según el teorema, cualquier otro inverso de 3 módulo 7 es congruente con 5 módulo 7. Es decir:</p>
 
-<p>Los números ..., −9, −2, 5, 12, 19, ... son todos congruentes (mod 7)</p>
+    <p>Los números ..., −9, −2, 5, 12, 19, ... son todos congruentes (mod 7)</p>
 
-<p>Porque:</p>
+    <p>Porque:</p>
 
-<p>\[-2 \equiv 5 \pmod{7}\]</p>
-<p>\[12 \equiv 5 \pmod{7}\]</p>
-<p>\[19 \equiv 5 \pmod{7}\]</p>
-<p>etc.</p>
-
-
-<p>La frase "Encuentre un inverso de 3 módulo 7" se traduce matemáticamente como:</p>
-
-<p>Encuentre un \( x \) tal que \( 3 \cdot x \equiv 1 \pmod{7} \)</p>
-
-<p>Es decir, se está pidiendo encontrar un valor de \( x \) tal que al multiplicar \( 3 \) por \( x \) y luego dividir por \( 7 \), el residuo (o resto) de esa división sea igual a \( 1 \).</p>
-
-<p>En otras palabras, el inverso de 3 módulo 7 es un número \( x \) tal que:</p>
-
-<p>\( 3 \cdot x - 1 \) es divisible entre \( 7 \).</p>
+    <p>\[-2 \equiv 5 \pmod{7}\]</p>
+    <p>\[12 \equiv 5 \pmod{7}\]</p>
+    <p>\[19 \equiv 5 \pmod{7}\]</p>
+    <p>etc.</p>
 
 
-<h2>Inverso Multiplicativo y Modular</h2>
+    <p>La frase "Encuentre un inverso de 3 módulo 7" se traduce matemáticamente como:</p>
 
-<p>El inverso multiplicativo de un número \( a \) es un número \( x \) tal que:</p>
+    <p>Encuentre un \( x \) tal que \( 3 \cdot x \equiv 1 \pmod{7} \)</p>
 
-<p>\[
-a \cdot x = 1
-\]</p>
+    <p>Es decir, se está pidiendo encontrar un valor de \( x \) tal que al multiplicar \( 3 \) por 
+    \( x \) y luego dividir por \( 7 \), el residuo (o resto) de esa división sea igual a \( 1 \).</p>
 
-<p>Esto es cierto en el contexto de los números reales o enteros cuando trabajamos en el campo de los números racionales o enteros.</p>
+    <p>En otras palabras, el inverso de 3 módulo 7 es un número \( x \) tal que:</p>
 
-<p>Por otro lado, el inverso en congruencia de un número \( a \) módulo \( m \) es un número \( x \) tal que:</p>
+    <p>\( 3 \cdot x - 1 \) es divisible entre \( 7 \).</p>
 
-<p>\[
-a \cdot x \equiv 1 \pmod{m}
-\]</p>
 
-<p>Esto significa que cuando multiplicamos \( a \) por \( x \), el residuo de esa multiplicación cuando la dividimos por \( m \) debe ser 1. Dicho de otra manera:</p>
+    <h2>Inverso Multiplicativo y Modular</h2>
 
-<p>\[
-a \cdot x - 1 \text{ es múltiplo de } m
-\]</p>
+    <p>El inverso multiplicativo de un número \( a \) es un número \( x \) tal que:</p>
 
-<p>Por ejemplo:</p>
+    <p>\[
+    a \cdot x = 1
+    \]</p>
 
-<p>Si decimos que el inverso de \( 3 \) módulo \( 7 \) es \( 5 \), estamos diciendo que:</p>
+    <p>Esto es cierto en el contexto de los números reales o enteros cuando trabajamos en el campo 
+    de los números racionales o enteros.</p>
 
-<p>\[
-3 \cdot 5 = 15 \equiv 1 \pmod{7}
-\]</p>
+    <p>Por otro lado, el inverso en congruencia de un número \( a \) módulo \( m \) es un 
+    número \( x \) tal que:</p>
 
-<p>Es decir, \( 15 \) deja un residuo de 1 cuando se divide por \( 7 \).</p>
+    <p>\[
+    a \cdot x \equiv 1 \pmod{m}
+    \]</p>
+
+    <p>Esto significa que cuando multiplicamos \( a \) por \( x \), el residuo de esa 
+    multiplicación cuando la dividimos por \( m \) debe ser 1. Dicho de otra manera:</p>
+
+    <p>\[
+    a \cdot x - 1 \text{ es múltiplo de } m
+    \]</p>
+
+    <p>Por ejemplo:</p>
+
+    <p>Si decimos que el inverso de \( 3 \) módulo \( 7 \) es \( 5 \), estamos diciendo que:</p>
+
+    <p>\[
+    3 \cdot 5 = 15 \equiv 1 \pmod{7}
+    \]</p>
+
+    <p>Es decir, \( 15 \) deja un residuo de 1 cuando se divide por \( 7 \).</p>
 
     <hr>
     </form>
@@ -1642,138 +1664,186 @@ a \cdot x - 1 \text{ es múltiplo de } m
 <div class="seccion derecha">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
     <h2>Ejemplo 2: Encontrar un inverso de 101 módulo 4620</h2>
-<p><strong>Solución:</strong> Para mayor claridad, presentamos todos los pasos utilizados para calcular un inverso de 101 módulo 4620. (Solo el último paso va más allá de los métodos desarrollados en la Sección 4.3 e ilustrados en el Ejemplo 17 de esa sección).</p>
 
-<p>Primero, usamos el algoritmo de Euclides para mostrar que \(\gcd(101, 4620) = 1\). Luego revertimos los pasos para encontrar coeficientes de Bézout \(a\) y \(b\) tales que:</p>
+    <p><strong>Solución:</strong> Para mayor claridad, presentamos todos los pasos utilizados para calcular un 
+    inverso de 101 módulo 4620. (Solo el último paso va más allá de los métodos desarrollados en la Sección 4.3 e 
+    ilustrados en el Ejemplo 17 de esa sección).</p>
 
-<p>\[
-101a + 4620b = 1
-\]</p>
+    <p>Primero, usamos el algoritmo de Euclides para mostrar que \(\gcd(101, 4620) = 1\). Luego revertimos los 
+    pasos para encontrar coeficientes de Bézout \(a\) y \(b\) tales que:</p>
+
+    <p>\[
+    101a + 4620b = 1
+    \]</p>
 
 <p>Entonces, se sigue que \(a\) es un inverso de 101 módulo 4620.</p>
 
 <p><strong>Algoritmo de Euclides:</strong></p>
-<pre>
-4620 = 45 ⋅ 101 + 75
-101 = 1 ⋅ 75 + 26
-75 = 2 ⋅ 26 + 23
-26 = 1 ⋅ 23 + 3
-23 = 7 ⋅ 3 + 2
-3 = 1 ⋅ 2 + 1
-2 = 2 ⋅ 1
-</pre>
 
-<p>Como el último residuo distinto de cero es 1, sabemos que \(\gcd(101, 4620) = 1\).</p>
+\[
+\begin{aligned}
+4620 &= 45 \cdot 101 + 75 \\
+101 &= 1 \cdot 75 + 26 \\
+75 &= 2 \cdot 26 + 23 \\
+26 &= 1 \cdot 23 + 3 \\
+23 &= 7 \cdot 3 + 2 \\
+3 &= 1 \cdot 2 + 1 \\
+2 &= 2 \cdot 1
+\end{aligned}
+\]
+
+<p>Como el último residuo distinto de cero es 1, sabemos que \( \gcd(101, 4620) = 1 \).</p>
 
 <p>Ahora encontramos los coeficientes de Bézout trabajando hacia atrás:</p>
 
-<pre>
-1 = 3 − 1 ⋅ 2
-  = 3 − 1 ⋅ (23 − 7 ⋅ 3) = −1 ⋅ 23 + 8 ⋅ 3
-  = −1 ⋅ 23 + 8 ⋅ (26 − 1 ⋅ 23) = 8 ⋅ 26 − 9 ⋅ 23
-  = 8 ⋅ 26 − 9 ⋅ (75 − 2 ⋅ 26) = −9 ⋅ 75 + 26 ⋅ 26
-  = −9 ⋅ 75 + 26 ⋅ (101 − 1 ⋅ 75) = 26 ⋅ 101 − 35 ⋅ 75
-  = 26 ⋅ 101 − 35 ⋅ (4620 − 45 ⋅ 101) = −35 ⋅ 4620 + 1601 ⋅ 101
-</pre>
+\[
+\begin{aligned}
+1 &= 3 - 1 \cdot 2 \\
+  &= 3 - 1 \cdot (23 - 7 \cdot 3) = -1 \cdot 23 + 8 \cdot 3 \\
+  &= -1 \cdot 23 + 8 \cdot (26 - 1 \cdot 23) = 8 \cdot 26 - 9 \cdot 23 \\
+  &= 8 \cdot 26 - 9 \cdot (75 - 2 \cdot 26) = -9 \cdot 75 + 26 \cdot 26 \\
+  &= -9 \cdot 75 + 26 \cdot (101 - 1 \cdot 75) = 26 \cdot 101 - 35 \cdot 75 \\
+  &= 26 \cdot 101 - 35 \cdot (4620 - 45 \cdot 101) = -35 \cdot 4620 + 1601 \cdot 101
+\end{aligned}
+\]
 
-<p>Que \(-35 \cdot 4620 + 1601 \cdot 101 = 1\) nos dice que \(-35\) y \(1601\) son coeficientes de Bézout de 4620 y 101, y que \(1601\) es un inverso de 101 módulo 4620.</p>
 
-<hr>
+    <p>Que \(-35 \cdot 4620 + 1601 \cdot 101 = 1\) nos dice que \(-35\) y \(1601\) son coeficientes de Bézout de 
+    4620 y 101, y que \(1601\) es un inverso de 101 módulo 4620.</p>
 
-<h2>Ejemplo 3: ¿Cuáles son las soluciones de la congruencia lineal \(3x \equiv 4 \pmod{7}\)?</h2>
-<p><strong>Solución:</strong> Por el Ejemplo 1, sabemos que \(-2\) es un inverso de 3 módulo 7. Multiplicamos ambos lados de la congruencia por \(-2\):</p>
+    <hr>
 
-<p>\[
--2 \cdot 3x \equiv -2 \cdot 4 \pmod{7}
-\]</p>
+    <h2>Ejemplo 3: ¿Cuáles son las soluciones de la congruencia lineal \(3x \equiv 4 \pmod{7}\)?</h2>
+    <p><strong>Solución:</strong> Por el Ejemplo 1, sabemos que \(-2\) es un inverso de 3 módulo 7. 
+    Multiplicamos ambos lados de la congruencia por \(-2\):</p>
 
-<p>Como \(-6 \equiv 1 \pmod{7}\) y \(-8 \equiv 6 \pmod{7}\), se sigue que si \(x\) es solución, entonces:</p>
+    <p>\[
+    -2 \cdot 3x \equiv -2 \cdot 4 \pmod{7}
+    \]</p>
 
-<p>\[
-x \equiv -8 \equiv 6 \pmod{7}
-\]</p>
+    <p>Como \(-6 \equiv 1 \pmod{7}\) y \(-8 \equiv 6 \pmod{7}\), se sigue que si \(x\) es solución, entonces:</p>
 
-<p>Ahora verificamos si todo \(x\) con \(x \equiv 6 \pmod{7}\) es solución. Si asumimos eso, entonces:</p>
+    <p>\[
+    x \equiv -8 \equiv 6 \pmod{7}
+    \]</p>
 
-<p>\[
-3x \equiv 3 \cdot 6 = 18 \equiv 4 \pmod{7}
-\]</p>
+    <p>Ahora verificamos si todo \(x\) con \(x \equiv 6 \pmod{7}\) es solución. Si asumimos eso, entonces:</p>
 
-<p>Esto muestra que todos esos \(x\) satisfacen la congruencia.</p>
+    <p>\[
+    3x \equiv 3 \cdot 6 = 18 \equiv 4 \pmod{7}
+    \]</p>
 
-<p><strong>Conclusión:</strong> Las soluciones de la congruencia son todos los enteros \(x\) tales que:</p>
+    <p>Esto muestra que todos esos \(x\) satisfacen la congruencia.</p>
 
-<p>\[
-x \equiv 6 \pmod{7}
-\]</p>
+    <p><strong>Conclusión:</strong> Las soluciones de la congruencia son todos los enteros \(x\) tales que:</p>
 
-<p>Es decir: 6, 13, 20, … y −1, −8, −15, …</p>
+    <p>\[
+    x \equiv 6 \pmod{7}
+    \]</p>
 
-<h3>4.4.3 El Teorema del Resto Chino</h3>
-<p>Los sistemas de congruencias lineales surgen en muchos contextos. Por ejemplo, como veremos más adelante, son la base de un método que se puede utilizar para realizar operaciones aritméticas con números grandes. Tales sistemas incluso pueden encontrarse como acertijos en los escritos de matemáticos antiguos chinos e hindúes, como el vínculo que se da en el <strong>Ejemplo 4</strong>.</p>
+    <p>Es decir: 6, 13, 20, … y −1, −8, −15, …</p>
 
-<h4>EJEMPLO 4</h4>
-<p>En el primer siglo, el matemático chino Sun-Tsu preguntó:</p>
-<blockquote>
-    Hay ciertas cosas cuyo número es desconocido. Cuando se divide por 3, el residuo es 2; cuando se divide por 5, el residuo es 3; y cuando se divide por 7, el residuo es 2. ¿Cuál será el número de cosas?
-</blockquote>
-<p>Este acertijo se puede traducir a la siguiente pregunta:</p>
-<blockquote>
+    <h3>4.4.3 El Teorema del Resto Chino</h3>
+    <p>Los sistemas de congruencias lineales surgen en muchos contextos. Por ejemplo, como veremos más adelante, son 
+    la base de un método que se puede utilizar para realizar operaciones aritméticas con números grandes. Tales 
+    sistemas incluso pueden encontrarse como acertijos en los escritos de matemáticos antiguos chinos e hindúes, 
+    como el vínculo que se da en el <strong>Ejemplo 4</strong>.</p>
+
+    <h4>EJEMPLO 4</h4>
+    <p>En el primer siglo, el matemático chino Sun-Tsu preguntó:</p>
+    <blockquote>
+    Hay ciertas cosas cuyo número es desconocido. Cuando se divide por 3, el residuo es 2; cuando se divide por 5, 
+    el residuo es 3; y cuando se divide por 7, el residuo es 2. ¿Cuál será el número de cosas?
+    </blockquote>
+    <p>Este acertijo se puede traducir a la siguiente pregunta:</p>
+    <blockquote>
     ¿Cuáles son las soluciones del sistema de congruencias?
     \[ x \equiv 2 \pmod{3}, \]
     \[ x \equiv 3 \pmod{5}, \]
     \[ x \equiv 2 \pmod{7}? \]
-</blockquote>
-<p>Resolvemos este sistema, y con ello el acertijo de Sun-Tsu, más adelante en esta sección. ◂</p>
+    </blockquote>
+    
+    <p>Resolvemos este sistema, y con ello el acertijo de Sun-Tsu, más adelante en esta sección. ◂</p>
 
-<p>El teorema del resto chino, nombrado así por la herencia china de los problemas que involucran sistemas de congruencias lineales, establece que cuando los módulos de un sistema de congruencias lineales son primos entre sí, existe una solución única para el sistema módulo el producto de los módulos.</p>
+    <p>El teorema del resto chino, nombrado así por la herencia china de los problemas que involucran sistemas 
+    de congruencias lineales, establece que cuando los módulos de un sistema de congruencias lineales son primos 
+    entre sí, existe una solución única para el sistema módulo el producto de los módulos.</p>
 
-<h4>TEOREMA 2: EL TEOREMA DEL RESTO CHINO</h4>
-<p>Sea \(m_1, m_2, \ldots, m_n\) enteros positivos mayores que uno, primos entre sí de dos en dos, y \(a_1, a_2, \ldots, a_n\) enteros arbitrarios. Entonces el sistema</p>
-\[ x \equiv a_1 \pmod{m_1}, \]
-\[ x \equiv a_2 \pmod{m_2}, \]
-\[ \cdots \]
-\[ x \equiv a_n \pmod{m_n} \]
-<p>tiene una solución única módulo \(m = m_1m_2 \cdots m_n\). (Es decir, existe una solución \(x\) tal que \(0 \leq x < m\), y todas las demás soluciones son congruentes módulo \(m\) con esta solución.)</p>
+    <h4>TEOREMA 2: EL TEOREMA DEL RESTO CHINO</h4>
+    <p>Sea \(m_1, m_2, \ldots, m_n\) enteros positivos mayores que uno, primos entre sí de dos en dos, y 
+    \(a_1, a_2, \ldots, a_n\) enteros arbitrarios. Entonces el sistema</p>
+    \[ x \equiv a_1 \pmod{m_1}, \]
+    \[ x \equiv a_2 \pmod{m_2}, \]
+    \[ \cdots \]
+    \[ x \equiv a_n \pmod{m_n} \]
+    <p>tiene una solución única módulo \(m = m_1m_2 \cdots m_n\). (Es decir, existe una solución \(x\) tal que 
+    \(0 \leq x < m\), y todas las demás soluciones son congruentes módulo \(m\) con esta solución.)</p>
 
-<h4>Demostración:</h4>
-<p>Para establecer este teorema, necesitamos demostrar que existe una solución y que es única módulo \(m\). Mostraremos que existe una solución describiendo una manera de construirla; demostrar que la solución es única módulo \(m\) es el Ejercicio 30.</p>
+    <h4>Demostración:</h4>
+    <p>Para establecer este teorema, necesitamos demostrar que existe una solución y que es única módulo \(m\). 
+    Mostraremos que existe una solución describiendo una manera de construirla; demostrar que la solución 
+    es única módulo \(m\) es el Ejercicio 30.</p>
 
-<p>Para construir una solución simultánea, primero dejemos</p>
-\[ M_k = \frac{m}{m_k} \]
-<p>para \(k = 1, 2, \ldots, n\). Es decir, \(M_k\) es el producto de los módulos excepto \(m_k\). Debido a que \(m_i\) y \(m_k\) no tienen factores comunes mayores que 1 cuando \(i \neq k\), se sigue que \(\gcd(m_k, M_k) = 1\). En consecuencia, por el Teorema 1, sabemos que existe un entero \(y_k\), un inverso de \(M_k\) módulo \(m_k\), tal que</p>
-\[ M_k y_k \equiv 1 \pmod{m_k}. \]
+    <p>Para construir una solución simultánea, primero dejemos</p>
+    \[ M_k = \frac{m}{m_k} \]
+    <p>para \(k = 1, 2, \ldots, n\). Es decir, \(M_k\) es el producto de los módulos excepto \(m_k\). Debido a que 
+    \(m_i\) y \(m_k\) no tienen factores comunes mayores que 1 cuando \(i \neq k\), se sigue que \(\gcd(m_k, M_k) = 1\). 
+    En consecuencia, por el Teorema 1, sabemos que existe un entero \(y_k\), un inverso de \(M_k\) módulo \(m_k\), tal que</p>
 
-<p>Para construir una solución simultánea, formamos la suma</p>
-\[ x = a_1 M_1 y_1 + a_2 M_2 y_2 + \cdots + a_n M_n y_n. \]
+    \[ M_k y_k \equiv 1 \pmod{m_k}. \]
 
-<p>Ahora mostraremos que \(x\) es una solución simultánea. Primero, observemos que como \(M_j \equiv 0 \pmod{m_k}\) siempre que \(j \neq k\), todos los términos excepto el \(k\)-ésimo en esta suma son congruentes a 0 módulo \(m_k\). Como \(M_k y_k \equiv 1 \pmod{m_k}\), vemos que</p>
-\[ x \equiv a_k M_k y_k \equiv a_k \pmod{m_k}, \]
-<p>para \(k = 1, 2, \ldots, n\). Hemos demostrado que \(x\) es una solución simultánea para las \(n\) congruencias.</p>
+    <p>Para construir una solución simultánea, formamos la suma</p>
+    \[ x = a_1 M_1 y_1 + a_2 M_2 y_2 + \cdots + a_n M_n y_n. \]
 
-<p>El <strong>Ejemplo 5</strong> ilustra cómo usar la construcción dada en nuestra demostración del teorema del resto chino para resolver un sistema de congruencias. Resolvemos el sistema dado en el <strong>Ejemplo 4</strong>, que surge en el acertijo de Sun-Tsu.</p>
+    <p>Ahora mostraremos que \(x\) es una solución simultánea. Primero, observemos que como \(M_j \equiv 0 \pmod{m_k}\) 
+    siempre que \(j \neq k\), todos los términos excepto el \(k\)-ésimo en esta suma son congruentes a 0 módulo \(m_k\). 
+    Como \(M_k y_k \equiv 1 \pmod{m_k}\), vemos que</p>
 
-<h3>Ejemplo 5</h3>
-<p>Para resolver el sistema de congruencias del Ejemplo 4, primero dejemos \(m = 3 \cdot 5 \cdot 7 = 105\), \(M_1 = m / 3 = 35\), \(M_2 = m / 5 = 21\), y \(M_3 = m / 7 = 15\). Vemos que 2 es un inverso de \(M_1 = 35\) módulo 3, porque \(35 \cdot 2 \equiv 2 \cdot 2 \equiv 1 \pmod{3}\); 1 es un inverso de \(M_2 = 21\) módulo 5, porque \(21 \equiv 1 \pmod{5}\); y 1 es un inverso de \(M_3 = 15\) módulo 7, porque \(15 \equiv 1 \pmod{7}\). Las soluciones a este sistema son los valores de \(x\) tales que:</p>
-\[ x \equiv a_1M_1y_1 + a_2M_2y_2 + a_3M_3y_3 = 2 \cdot 35 \cdot 2 + 3 \cdot 21 \cdot 1 + 2 \cdot 15 \cdot 1 = 233 \equiv 23 \pmod{105}. \]
-<p>Se sigue que 23 es el menor entero positivo que es una solución simultánea. Concluimos que 23 es el menor entero positivo que deja un residuo de 2 cuando se divide entre 3, un residuo de 3 cuando se divide entre 5, y un residuo de 2 cuando se divide entre 7. ◂</p>
+    \[ x \equiv a_k M_k y_k \equiv a_k \pmod{m_k}, \]
 
-<h3>Ejemplo 6</h3>
-<p>Use el método de sustitución hacia atrás para encontrar todos los enteros \(x\) tales que:</p>
-\[ x \equiv 1 \pmod{5}, \]
-\[ x \equiv 2 \pmod{6}, \]
-\[ x \equiv 3 \pmod{7}. \]
-<h4>Solución:</h4>
-<p>Por el Teorema 4 en la Sección 4.1, la primera congruencia puede ser reescrita como una igualdad, \(x = 5t + 1\), donde \(t\) es un entero. Sustituyendo esta expresión para \(x\) en la segunda congruencia, nos dice que:</p>
-\[ 5t + 1 \equiv 2 \pmod{6}, \]
-<p>lo que se puede resolver para mostrar que \(t \equiv 5 \pmod{6}\) (como el lector debería verificar). Usando el Teorema 4 en la Sección 4.1 nuevamente, vemos que \(t = 6u + 5\), donde \(u\) es un entero. Sustituyendo esta expresión para \(t\) de nuevo en la ecuación \(x = 5t + 1\), nos dice que:</p>
-\[ x = 5(6u + 5) + 1 = 30u + 26. \]
-<p>Insertamos esto en la tercera ecuación para obtener:</p>
-\[ 30u + 26 \equiv 3 \pmod{7}. \]
-<p>Resolver esta congruencia nos dice que \(u \equiv 6 \pmod{7}\) (como el lector debería verificar). Por lo tanto, el Teorema 4 en la Sección 4.1 nos dice que \(u = 7v + 6\), donde \(v\) es un entero. Sustituyendo esta expresión para \(u\) en la ecuación \(x = 30u + 26\), nos dice que:</p>
-\[ x = 30(7v + 6) + 26 = 210v + 206. \]
-<p>Traduciendo esto de nuevo a una congruencia, encontramos la solución para las congruencias simultáneas:</p>
-\[ x \equiv 206 \pmod{210}. \]
+    <p>para \(k = 1, 2, \ldots, n\). Hemos demostrado que \(x\) es una solución simultánea 
+    para las \(n\) congruencias.</p>
+
+    
+    <p>El <strong>Ejemplo 5</strong> ilustra cómo usar la construcción dada en nuestra demostración del 
+    teorema del resto chino para resolver un sistema de congruencias. Resolvemos el sistema dado en 
+    el <strong>Ejemplo 4</strong>, que surge en el acertijo de Sun-Tsu.</p>
+
+    <h3>Ejemplo 5</h3>
+    <p>Para resolver el sistema de congruencias del Ejemplo 4, primero dejemos \(m = 3 \cdot 5 \cdot 7 = 105\), 
+    \(M_1 = m / 3 = 35\), \(M_2 = m / 5 = 21\), y \(M_3 = m / 7 = 15\). Vemos que 2 es un inverso de \(M_1 = 35\) 
+    módulo 3, porque \(35 \cdot 2 \equiv 2 \cdot 2 \equiv 1 \pmod{3}\); 1 es un inverso de \(M_2 = 21\) módulo 5, 
+    porque \(21 \equiv 1 \pmod{5}\); y 1 es un inverso de \(M_3 = 15\) módulo 7, porque \(15 \equiv 1 \pmod{7}\). 
+    Las soluciones a este sistema son los valores de \(x\) tales que:</p>
+    \[ x \equiv a_1M_1y_1 + a_2M_2y_2 + a_3M_3y_3 = 2 \cdot 35 \cdot 2 + 3 \cdot 21 \cdot 1 + 2 \cdot 15 
+    \cdot 1 = 233 \equiv 23 \pmod{105}. \]
+    <p>Se sigue que 23 es el menor entero positivo que es una solución simultánea. Concluimos que 23 es el menor 
+    entero positivo que deja un residuo de 2 cuando se divide entre 3, un residuo de 3 cuando se divide entre 5, 
+    y un residuo de 2 cuando se divide entre 7. ◂</p>
+
+    <h3>Ejemplo 6</h3>
+    <p>Use el método de sustitución hacia atrás para encontrar todos los enteros \(x\) tales que:</p>
+    \[ x \equiv 1 \pmod{5}, \]
+    \[ x \equiv 2 \pmod{6}, \]
+    \[ x \equiv 3 \pmod{7}. \]
+    
+    <h4>Solución:</h4>
+    <p>Por el Teorema 4 en la Sección 4.1, la primera congruencia puede ser reescrita como una igualdad, 
+    \(x = 5t + 1\), donde \(t\) es un entero. Sustituyendo esta expresión para \(x\) en la segunda congruencia, 
+    nos dice que:</p>
+    \[ 5t + 1 \equiv 2 \pmod{6}, \]
+    <p>lo que se puede resolver para mostrar que \(t \equiv 5 \pmod{6}\) (como el lector debería verificar). 
+    Usando el Teorema 4 en la Sección 4.1 nuevamente, vemos que \(t = 6u + 5\), donde \(u\) es un entero. 
+    Sustituyendo esta expresión para \(t\) de nuevo en la ecuación \(x = 5t + 1\), nos dice que:</p>
+    \[ x = 5(6u + 5) + 1 = 30u + 26. \]
+    <p>Insertamos esto en la tercera ecuación para obtener:</p>
+    \[ 30u + 26 \equiv 3 \pmod{7}. \]
+    <p>Resolver esta congruencia nos dice que \(u \equiv 6 \pmod{7}\) (como el lector debería verificar). Por lo 
+    tanto, el Teorema 4 en la Sección 4.1 nos dice que \(u = 7v + 6\), donde \(v\) es un entero. Sustituyendo 
+    esta expresión para \(u\) en la ecuación \(x = 30u + 26\), nos dice que:</p>
+    \[ x = 30(7v + 6) + 26 = 210v + 206. \]
+    <p>Traduciendo esto de nuevo a una congruencia, encontramos la solución para las congruencias simultáneas:</p>
+    \[ x \equiv 206 \pmod{210}. \]
     </form>
 </div>
 

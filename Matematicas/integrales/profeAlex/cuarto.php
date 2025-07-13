@@ -1582,7 +1582,16 @@ function ocultarMensaje4() {
     value="<?php echo $respuesta_8?>" size="25" >
     </p>
 
-    <hr>
+    v    <hr> 
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_1 ?>
+    <?php echo $verificar_2 ?>
+    <?php echo $verificar_3 ?>
+    <?php echo $verificar_4 ?>
+    <?php echo $verificar_5 ?>
+    <?php echo $verificar_6 ?>
+    <?php echo $verificar_7 ?>
+    <?php echo $verificar_8 ?>
 
     </form>
 </div>
@@ -1776,8 +1785,17 @@ function ocultarMensaje4() {
     </p>
 
     <hr>
-
-    </form>
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_9 ?>
+<?php echo $verificar_10 ?>
+<?php echo $verificar_11 ?>
+ <?php echo $verificar_12 ?>
+<?php echo $verificar_13 ?>
+<?php echo $verificar_14 ?>
+<?php echo $verificar_15 ?>
+<?php echo $verificar_16 ?>
+<?php echo $verificar_17 ?>
+     </form>
 </div>
 
 <div class="centered-container">

@@ -101,7 +101,7 @@ if ($_POST) {
         $respuesta_8 = 'Cot(a)';
         $respuesta_9 = '1';
         $respuesta_10 = 'Tan(a)=\frac{Sen(a)}{Cos(a)}';
-        $respuesta_11 = 'Cot=\frac{Cos(a)}{Sen(a)}';
+        $respuesta_11 = 'Cot(a)=\frac{Cos(a)}{Sen(a)}';
         $respuesta_12 = 'Sen^2(a)+Cos^2(a)=1';
         $respuesta_13 = '1-Cos^2(a)';
         $respuesta_14 = '1-Sen^2(a)';
@@ -305,7 +305,7 @@ if ($_POST) {
    }
    
    $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === 'Cot=\frac{Cos(a)}{Sen(a)}') {
+   if ($respuesta_11 === 'Cot(a)=\frac{Cos(a)}{Sen(a)}') {
        $verificar_11 = "correcto";
    } elseif ($respuesta_11 === '') {
        $verificar_11 = '';
