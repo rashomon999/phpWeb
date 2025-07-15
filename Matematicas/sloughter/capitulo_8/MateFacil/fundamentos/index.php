@@ -1123,8 +1123,8 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../../style.css">
+    <link rel="stylesheet" href="../../../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../../../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
@@ -1136,7 +1136,7 @@ if ($respuesta_110 === '264') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 445vh;
+    height: 315vh;
     }
 </style>
  
@@ -1440,124 +1440,158 @@ function ocultarMensaje4() {
 <body> 
 <div class="seccion izquierda">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h1>8.2 Separación de variables</h1>
-  <p>
-    En la sección anterior discutimos dos métodos para aproximar la solución de una ecuación diferencial
-    $$\dot{x} = f(x, t)$$
-    con condición inicial \( x(t_0) = x_0 \). Ahora consideraremos, en esta sección así como en las Secciones 8.3 y 8.4, técnicas para encontrar soluciones en forma cerrada para tales ecuaciones, es decir, soluciones que puedan expresarse en términos de las funciones elementales del cálculo. Para lograrlo, será necesario considerar distintas clases de ecuaciones dependiendo de la forma de la función \( f \). Como en la integración ordinaria, encontrar una expresión en forma cerrada para la solución de una ecuación diferencial es con frecuencia un problema difícil, si no imposible, que requiere aprovechar cualquier información que podamos obtener de la forma de la función.
-  </p>
-  <p>
-    En esta sección consideraremos una clase de ecuaciones conocidas como ecuaciones separables y en las Secciones 8.3 y 8.4 consideraremos ecuaciones lineales.
-  </p>
-  <p>
-    Llamamos a una ecuación diferencial
-    $$\dot{x} = f(x, t) \tag{8.2.1}$$
-    con condición inicial \( x(t_0) = x_0 \), separable, o decimos que tiene variables separables, si \( f(x, t) = g(x)h(t) \) para algunas funciones \( g \) y \( h \), donde \( g \) depende solo de \( x \) y \( h \) depende solo de \( t \). Supondremos que \( g \) y \( h \) son ambas funciones continuas y, por lo tanto, en particular, integrables.
-  </p>
-  <p>
-    En ese caso, (8.2.1) se convierte en:
-    $$\dot{x} = g(x)h(t) \tag{8.2.2}$$
-    lo cual implica que:
-    $$\frac{\dot{x}}{g(x)} = h(t) \tag{8.2.3}$$
-    en todos los puntos para los cuales \( g(x) \ne 0 \). Integrando (8.2.3) desde \( t_0 \) hasta \( t \) (suponiendo que \( g(x(s)) \ne 0 \) para todo \( s \) entre \( t_0 \) y \( t \)), tenemos:
-    $$\int_{t_0}^{t} \frac{1}{g(x(s))} \dot{x}(s)\,ds = \int_{t_0}^{t} h(s)\,ds \tag{8.2.4}$$
-    donde hemos usado \( s \) como variable de integración para que nuestra respuesta esté en términos de \( t \). Ahora, usando el cambio de variable:
-    \[
-    u = x(s), \quad du = \dot{x}(s)\,ds
-    \]
-    obtenemos:
-    $$\int_{t_0}^{t} \frac{1}{g(x(s))} \dot{x}(s)\,ds = \int_{x(t_0)}^{x(t)} \frac{1}{g(u)}\,du = \int_{x_0}^{x} \frac{1}{g(u)}\,du \tag{8.2.5}$$
-    para la integral del lado izquierdo. Por lo tanto, combinando (8.2.4) y (8.2.5), se tiene:
-    $$\int_{x_0}^{x} \frac{1}{g(u)}\,du = \int_{t_0}^{t} h(s)\,ds \tag{8.2.6}$$
-  </p>
-  <p>
-    Así, podemos resolver una ecuación con variables separables siempre que podamos evaluar ambas integrales en (8.2.6) y luego resolver la ecuación resultante para \( x \). El proceso puede fallar en alguno de estos dos pasos finales, en cuyo caso debemos recurrir a aproximaciones numéricas, aun cuando la ecuación sea separable.
-  </p>
-  <h3>Proposición 8.2.1 (Separación de variables)</h3>
-  <p>
-    Si \( g \) y \( h \) son funciones continuas de \( x \) y \( t \), respectivamente, y \( x \) satisface la ecuación diferencial
-    $$\dot{x} = g(x)h(t) \tag{8.2.7}$$
-    con \( x(t_0) = x_0 \), entonces
-    $$\int_{x_0}^{x} \frac{1}{g(u)}\,du = \int_{t_0}^{t} h(s)\,ds \tag{8.2.8}$$
-    siempre que \( g(u) \ne 0 \) para todo \( u \) entre \( x_0 \) y \( x \).
-  </p>
-  <p>
-    Nótese que este es el mismo método que usamos para resolver la ecuación del modelo de crecimiento inhibido en la Sección 6.3.
-  </p>
-  <h3>Ejemplo 8.2.1</h3>
-  <p>
-    Consideremos la ecuación:
-    $$
-    \dot{x} = 0.4x
-    $$
-    con \( x(0) = 100 \). Esta es una ecuación separable con, en la notación usada anteriormente,
-    \( g(x) = x \) y \( h(t) = 0.4 \). (Nótese que las elecciones para \( g \) y \( h \) no son únicas.)
-    Usando (8.2.8), tenemos:
-    $$
-    \int_{100}^{x} \frac{1}{u}\,du = \int_0^{t} 0.4\,ds.
-    $$
-    Ahora, suponiendo que \( x > 0 \),
-    $$
-    \int_{100}^{x} \frac{1}{u}\,du = \log(u) \bigg|_{100}^{x} = \log(x) - \log(100) = \log\left(\frac{x}{100}\right),
-    $$
-    y
-    $$
-    \int_0^{t} 0.4\,ds = 0.4s \bigg|_0^{t} = 0.4t.
-    $$
-    Por lo tanto, tenemos:
-    $$
-    \log\left(\frac{x}{100}\right) = 0.4t,
-    $$
-    de donde obtenemos:
-    $$
-    \frac{x}{100} = e^{0.4t},
-    $$
-    y, finalmente:
-    $$
-    x = 100e^{0.4t}.
-    $$
-    Nótese que esta es la solución que deberíamos esperar de nuestro estudio de ecuaciones de esta forma en las Secciones 6.1 y 6.3.
-  </p>
+    <p>
+    En el caso de una ecuacion diferencial no buscamos numeros 
+    que satisfacen una ecuacion, sino 
+    funciones completas.
+    </p>
+    
+    <h4>Que es una ecuacion diferencial:</h4>
+    <p>
+    Es una ecuacion que relaciona a una funcion, sus derivadas
+    y sus variables.
+    </p>
 
-  <h3>Ejemplo 8.2.2</h3>
-  <p>
-    Consideremos la ecuación:
-    $$
-    \dot{y} = -2yt \tag{8.2.9}
-    $$
-    con \( y(0) = y_0 \ne 0 \). Esta es una ecuación separable con, en la notación usada anteriormente,
-    \( g(y) = y \) y \( h(t) = -2t \). Usando (8.2.8), tenemos:
-    $$
-    \int_{y_0}^{y} \frac{1}{u}\,du = -\int_0^{t} 2s\,ds.
-    $$
-    Ahora:
-    $$
-    \int_{y_0}^{y} \frac{1}{u}\,du = \log|u| \bigg|_{y_0}^{y} = \log|y| - \log|y_0| = \log\left|\frac{y}{y_0}\right|,
-    $$
-    y
-    $$
-    -\int_0^{t} 2s\,ds = -s^2 \bigg|_0^{t} = -t^2.
-    $$
-    Por lo tanto, tenemos:
-    $$
-    \log\left|\frac{y}{y_0}\right| = -t^2,
-    $$
-    de donde se sigue que:
-    $$
-    \left|\frac{y}{y_0}\right| = e^{-t^2}.
-    $$
-    Ahora, \( e^{-t^2} > 0 \) para todo \( t \), por lo que \( y(t) \) nunca es cero. Dado que \( y \) es continua (lo cual se sigue de que es diferenciable), esto significa que o bien \( y(t) > 0 \) para todo \( t \), o bien \( y(t) < 0 \) para todo \( t \). Ya que \( y(0) = y_0 \), se tiene que:
-  </p>
-  <ul>
-    <li>Si \( y_0 > 0 \), entonces \( y(t) > 0 \) para todo \( t \).</li>
-    <li>Si \( y_0 < 0 \), entonces \( y(t) < 0 \) para todo \( t \).</li>
-  </ul>
-  <p>
-    En cualquier caso:
-    $$
-    \frac{y(t)}{y_0} > 0.
-    $$
-  </p>
+    <p>
+    ej: f'(x)= 2f(x)+x
+    </p>
+
+    <p>
+    lo mas usual es utilizar en lugar de f(x) a la y.
+    la derivada f'(x) tambien se puede respresentar como 
+    \(\frac{dy}{dx} \)
+    </p>
+
+    <p>
+    \( \frac{dy}{dx} = 2y+x \)
+    </p>
+
+    <p>
+    \( x y'' - 5y + 3 = 0 \)
+    </p>
+
+    <p>
+    en este caso no aparace como tal la propia funcion y,
+    no tiene porque aparecer explicitamente, pero implicitamente
+    hay una funcion y que debe satisfacer la ecuacion. puede
+    unicamente aparecer las derivadas.
+    </p>
+
+    <p>
+    lo mismo ocurre con la x, no tiene porque aparecer explicitamente,
+    por ejemplo \( y''=y'-2y'' \), no aparece ni la propia y ni la x
+    pero es una ecuacion diferencial.
+    </p>
+
+    <h4>Definicion mas rigurosa de ecuacion diferencial</h4>
+    \[F(x, y, y', y", ..., y(n)) = 0 \]
+
+    <p>significa que tenemos una funcion de las variables x,y,y'...
+    hasta llegar a una enesima derivada de y. esta expresion hay que
+    entenderla como que se estan combinando todas estas funciones
+    o todas estas variables mediante
+    operaciones como lo son la suma, la resta, la multiplicacion, la
+    division o incluso utilizando otras funciones como Sen,Cos,etc.
+    Estamos diciendo que combinamos todos los simbolos mediante operaciones.
+    </p>
+
+    <p>Resolver una ecuacion diferencial, significa encontrar la funcion (o funciones)
+    que satisfacen la igualdad.
+    </p>
+
+    <p>
+    \( y'-2x = 0 \)
+    
+    <br>
+    <strong>soluciones</strong>
+    <p>
+    <ul>
+        <li>\(y=x^2\)</li>
+        <li>\(y=x^2+1\)</li>
+        <li>\(y=x^2+2\)</li>
+    </ul>
+     
+    entonces: \(y=x^2+C\) es la solucion
+    general.
+    </p>
+    </p>
+
+    <p>En algunas ocasiones nos interesa solamente una de todas las posibles ecuaciones que 
+    satisfacen la ecuacion, en ese caso se nos tiene que decir que condicion tiene que cumplir esa
+    funcion.</p>
+
+    <p>Ej: Resolver la Ecuacion diferencia con la condicion inicial
+
+    \(y'-2x=0 \), \( \,\,\, y(0)=1\)
+
+    <br><br>
+    A este tipo de problema se le llama problema de valor inicial 
+    o problema de Cauchy. Para resolver estos problemas primero se encuentra
+    la solucion general y luego ver que valor debemos darle a la constante C para que
+    satisfaga la condicion inicial.
+    </p>
+ 
+    sustituimos y(0) en la solucion general con constante 0.
+    <p>
+    \( y=x^2  \)
+    <br><br>
+    \( y(0) = 0^2\)   
+    <br><br>
+    como podemos notar, podriamos simplemente hacer.
+    <br><br>
+    \( y=x^2+1  \)
+    <br><br>
+    \( y(0) = 0^2+1 =1\)   
+    <br><br>
+    </p>
+
+    <p>
+    <h4>clasificacion</h4>
+    Ecuacion diferencial ordinaria (EDO).:
+    Es una ecuacion diferencial de funciones con una variable.
+    \( y'-2x=0 \)
+    <br><br>
+    \( y''+5x-2y = 0 \)
+    <br><br>
+    \( \frac{dP}{dt}-kP = 0\) Tambien podemos tener en una ecuacion diferencial otras letras para representar a las funciones
+    y a la variables, en este caso, nuestra funcion seria la P, porque estamos calculando la derivada de P respecto de t.
+    esa expresion nos dice cual letra vamos a entender como funcion y cual como variable.
+    En la expresion la de arriba es la funcion y la de abajo la variable respecto a la cual se esta derivando.
+    <br><br>
+    Sistemas de EDO:
+    Es un conjunto de ecuaciones diferenciales de funciones con una variable.
+    \[
+    \begin{cases}
+    3x' + 2y + y' = t \\
+    2x - x' + 3y' = 1
+    \end{cases}
+    \]
+
+    En el primer caso las funciones son x e y, lson las que llevan la derivada,
+    la derivada la llevan unicamente las funciones. la variable es la t.
+
+    <br><br>
+    Ecuaciones en derivadas parciales (EDP):
+    Es una ecuacion diferencial de funciones de varias variables.
+    <br><br>
+    Una funcion de varias variables se representa como:
+    \( u(x,t)=x^2+2t \)
+    aqui ya no podemos hablar de la derivada de la funcion sino que
+    podemos hablar de derivadas parciales.
+    $$\frac{\partial u}{\partial x} = 2x$$ $$\frac{\partial u}{\partial t} = 2$$  
+    </p>
+
+    <p>
+    Entonces una ecuacion en derivadas parciales es una expresion en la cual se estan relacionando
+    tanto la funcion, las variables y las derivadas parciales de la funcion repecto a una de las variables.
+    <br><br>
+    Ej:
+    \( \frac{\partial u}{\partial t} = c \frac{\partial^2 u}{\partial x^2} \)
+    <br><br>
+    tambien se puede escribir como:
+    <br><br>
+    \( u_t = c \, u_{xx} \)
+    </p>
     </form>
 </div>
 
@@ -1566,122 +1600,187 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-        <img src="../../../../img/familia.png" alt="" width="700">
-
-        <p>
-    Para todo \( t \), se cumple que
-    $$
-    \left| \frac{y}{y_0} \right| = \frac{y}{y_0}.
-    $$
-    Por lo tanto:
-    $$
-    \frac{y}{y_0} = e^{-t^2}, \quad \text{o bien} \quad y = y_0 e^{-t^2}. \tag{8.2.10}
-    $$
-    Nótese que (8.2.10) también especifica una solución de (8.2.9) cuando \( y_0 = 0 \), a saber, la solución \( y(t) = 0 \) para todo \( t \). Al dejar el valor de \( y_0 \) sin especificar, hemos encontrado la forma general de todas las soluciones posibles para la ecuación. Llamamos a la familia de todas las soluciones posibles dadas por (8.2.10) la <strong>solución general</strong> de la ecuación (8.2.9). Cualquier solución obtenida al especificar un valor de \( y_0 \), por ejemplo \( y_0 = 10 \), se llama una <strong>solución particular</strong> de la ecuación.
-  </p>
   <p>
-    Como se indica en el primer ejemplo, las elecciones para \( g \) y \( h \) no son únicas. Por ejemplo, en el segundo ejemplo podríamos haber tomado \( g(y) = 2y \) y \( h(t) = t \). Sin embargo, uno debe intentar elegir \( g \) y \( h \) de tal manera que los pasos subsiguientes de la solución sean lo más simples posible.
-  </p>
+    Las ecuaciones diferenciales tienen muchísimas aplicaciones en varias ramas de las ciencias, por ejemplo en física, en
+    química, en biología, economía y en las ingenierías.
+</p>
 
-  <h3>Ejemplo 8.2.3</h3>
-  <p>
-    Consideremos la ecuación:
-    $$
-    \dot{x} = -\frac{t}{x}
-    $$
-    con \( x(0) = x_0 \ne 0 \). Separando las variables, tenemos:
-    $$
-    \int_{x_0}^{x} u\,du = -\int_0^t s\,ds.
-    $$
-    Ahora:
-    $$
-    \int_{x_0}^{x} u\,du = \frac{1}{2}u^2 \bigg|_{x_0}^{x} = \frac{1}{2}(x^2 - x_0^2),
-    $$
-    y
-    $$
-    -\int_0^t s\,ds = -\frac{1}{2}s^2 \bigg|_0^t = -\frac{1}{2}t^2.
-    $$
-    Por lo tanto:
-    $$
-    \frac{1}{2}(x^2 - x_0^2) = -\frac{1}{2}t^2 \quad \Rightarrow \quad x^2 + t^2 = x_0^2.
-    $$
-    Esta ecuación define implícitamente \( x \) como función de \( t \). De hecho, a partir de esta ecuación podemos ver que la gráfica de \( x \) es parte de un círculo de radio \( x_0 \) centrado en el origen. Resolviendo explícitamente para \( x \), tenemos:
-    <ul>
-      <li>Si \( x_0 > 0 \), entonces \( x = \sqrt{x_0^2 - t^2} \).</li>
-      <li>Si \( x_0 < 0 \), entonces \( x = -\sqrt{x_0^2 - t^2} \).</li>
-    </ul>
-    Nótese que \( x \) solo está definida para \( -x_0 < t < x_0 \).
-  </p>
-
-  <h3>Ejemplo 8.2.4</h3>
-  <p>
-    En la Sección 8.1 consideramos la ecuación:
-    $$
-    \dot{v} = -g - \frac{k}{m}v,
-    $$
-    con \( v(0) = 0 \), como modelo para la velocidad de un objeto en caída libre cerca de la superficie de la Tierra cuando la fuerza debida a la resistencia del aire es proporcional a la velocidad. Aquí \( v \) es la velocidad del objeto, \( g \), como es habitual, es 32 pies/seg² o 9.8 m/s², \( m \) es la masa del objeto y \( k > 0 \) es una constante que depende de la resistencia del aire del objeto en particular.
-  </p>
-  <p>
-    Si escribimos esta ecuación en la forma:
-    $$
-    \dot{v} = -g \left(1 + \frac{k}{gm}v \right) \tag{8.2.11}
-    $$
-    y separamos variables usando:
-    $$
-    f(v) = 1 + \frac{k}{gm}v, \quad h(t) = -g,
-    $$
-    entonces tenemos:
-    $$
-    \int_0^v \frac{1}{1 + \frac{k}{gm}u}\,du = -\int_0^t g\,ds.
-    $$
-    Ahora,
-    $$
-    \int_0^v \frac{1}{1 + \frac{k}{gm}u}\,du = \frac{gm}{k} \log\left|1 + \frac{k}{gm}v\right|,
-    $$
-    y
-    $$
-    -\int_0^t g\,ds = -gt.
-    $$
-    Por lo tanto,
-    $$
-    \frac{gm}{k} \log\left|1 + \frac{k}{gm}v\right| = -gt,
-    $$
-    de donde se sigue que:
-    $$
-    \log\left|1 + \frac{k}{gm}v\right| = -\frac{kt}{m}.
-    $$
-  </p>
-    
-    <img src="../../../../img/slouhter_2.png" alt="">
-     
-
-    <p>De lo cual se sigue que</p>
+ 
 <p>
-\[
-\left|1 + \frac{k}{gm}v\right| = e^{-\frac{kt}{m}}.
-\]
+    Por ejemplo, una de las aplicaciones más sencillas es el análisis de poblaciones, o sea, medir cómo crece una población,
+    ya sea una población de animales, personas, plantas, o bacterias.
+</p>
+
+<p>
+    Supongamos que tenemos una determinada cantidad de bacterias, por ejemplo 100 bacterias, y quisiéramos saber cuál va a ser
+    la cantidad de bacterias que habrá después de un determinado tiempo.
+</p>
+
+<p>
+    Para esto, por supuesto, tendríamos que medir de qué forma crece esa cantidad de bacterias, lo cual no será igual para todas
+    las especies. También podría depender de la temperatura en la cual se encuentran, de la cantidad de alimentos que tengan, y
+    de otros factores.
+</p>
+
+<p>
+    Pero, por ejemplo, supongamos que medimos que esta población de bacterias (las 100 iniciales) crece con un ritmo en el cual
+    en cada hora hay 10 bacterias más que las que teníamos.
+</p>
+
+<p>
+    Si tenemos únicamente este pequeño dato, podemos responder fácilmente preguntas como la siguiente: ¿cuántas bacterias hay
+    después de 3 horas?
+</p>
+
+<p>
+    Bueno, pues muy fácilmente: si cada hora hay 10 bacterias más, entonces después de 3 horas habrá 30 bacterias más. Así que
+    tendremos 100 + 30 = 130 bacterias.
+</p>
+
+<p>
+    Esto de aquí es un modelo muy sencillo y realmente no se ajusta muy bien a la realidad, porque imagínense que, por ejemplo,
+    en lugar de 100 bacterias, la población fuera de 1000 bacterias. A lo mejor, de estas 100 bacterias 
+    al crecer esa población, en algún momento hay
+    1000, y cuando haya 1000 ya no podremos afirmar que cada hora hay solamente 10 bacterias más.
+</p>
+
+<p>
+    Es claro que entre más bacterias haya, más rápido va a crecer la población, porque más bacterias se estarán reproduciendo.
+</p>
+
+<p>
+    Entonces, en este caso, un modelo más preciso sería aquel en el que tomemos en cuenta que el crecimiento de esa población
+    no es constante, sino que va aumentando conforme aumenta el número de bacterias.
 </p>
 
 
 
-<p>Por lo tanto, o bien</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>
+    Por ejemplo, supongamos igual que antes que tenemos 100 bacterias. Si ocurre que el crecimiento es de 10 
+    bacterias por hora, pero además supongamos que conocemos la siguiente ley: el crecimiento de la población de 
+    bacterias es proporcional a la propia
+    población.
+    </p>
+
 <p>
-\[
-1 + \frac{k}{gm}v = e^{-\frac{kt}{m}}
-\quad \text{o} \quad
-1 + \frac{k}{gm}v = -e^{-\frac{kt}{m}}.
-\]
+    Esto de que es proporcional quiere decir que si tuviéramos el doble de bacterias, entonces tendríamos el doble de
+    crecimiento. Es decir, si tuviéramos 200 bacterias, el crecimiento sería entonces de 20 bacterias por hora.
 </p>
 
-<p>Es decir, o bien</p>
 <p>
-\[
-v = -\frac{gm}{k}\left(1 - e^{-\frac{kt}{m}}\right)
-\quad \text{o} \quad
-v = -\frac{gm}{k}\left(1 + e^{-\frac{kt}{m}}\right).
-\]
+    Esto podría ser algo mucho más razonable: si tenemos el doble de población, esperamos que haya el doble de crecimiento.
 </p>
-    </form>
+
+<p>
+    Entonces volvamos a plantear la pregunta de antes: ¿quisiéramos saber cuántas bacterias hay después de tres horas?
+</p>
+
+<p>
+    En este caso ya no es tan fácil responder a la pregunta. Lo que podríamos hacer es ir analizando el crecimiento de la
+    población hora por hora. Por ejemplo, en este caso, consideremos el tiempo, la población y la velocidad. Esas son las tres
+    variables que irán cambiando.
+</p>
+
+<p>
+    Cuando ha pasado una hora, fíjense que originalmente teníamos 100 bacterias y sabemos que crecerán 10 bacterias por cada
+    hora. Entonces, cuando pase una hora, habrá 110 bacterias: las 100 que teníamos más las 10 que se agregan.
+</p>
+
+<p>
+    Pero como ya vamos a tener 110 bacterias, la velocidad ya no será de 10 bacterias por hora. También aumentará, porque el
+    crecimiento es proporcional a la población. Si la población es más grande, la velocidad de crecimiento también es mayor.
+</p>
+
+<p>
+    En este caso, ¿cuál sería la nueva velocidad con la que seguirá creciendo la población? Podemos ver que la velocidad es una
+    décima parte de la propia población. Si tenemos 100 bacterias, dividimos entre 10 y obtenemos 10; si tuviéramos 200,
+    obtendríamos 20.
+</p>
+
+<p>
+    Entonces, si tenemos 110 bacterias, dividimos entre 10 y obtenemos 11, es decir, el crecimiento será de 11 bacterias por
+    hora.
+</p>
+
+<p>
+    Ahora, cuando pase otra hora (es decir, después de 2 horas), la población será las 110 bacterias que teníamos más las 11
+    que se agregan, o sea, 121.
+</p>
+
+<p>
+    La velocidad ahora será la décima parte de 121, que es 12.1.
+</p>
+
+<p>
+    Luego, cuando pase otra hora más (después de 3 horas), la población será 121 + 12.1 = 133.1 bacterias.
+</p>
+
+<p>
+    Entonces, sabemos que después de tres horas, la población de bacterias será de 133.1. Todo esto lo hemos estado resolviendo
+    aplicando únicamente álgebra.
+</p>
+
+<p>
+    Pero, ¿qué pasaría si, en lugar de preguntarnos cuántas bacterias hay después de 3 horas, la pregunta fuera: cuántas
+    bacterias hay después de 24 horas?
+</p>
+
+<p>
+    Claro, podríamos seguir haciendo esta tabla, escribiendo hora por hora hasta llegar a 24 horas. Pero si quisiéramos saber
+    cuántas hay después de 100 horas, tendríamos que hacer una tabla con 100 renglones.
+</p>
+
+<p>
+    Ya no sería práctico estar haciendo esta tabla. Quisiéramos encontrar una fórmula matemática que nos permita calcular la
+    cantidad de bacterias en función del tiempo transcurrido.
+</p>
+
+<p>
+    Y eso es precisamente lo que podremos hacer mediante las ecuaciones diferenciales. Una vez que encontremos esa función,
+    podremos saber cuántas bacterias hay después de un determinado tiempo.
+</p>
+
+<p>
+    Ya no tendría que ser necesariamente un número entero de horas. Por ejemplo, podríamos preguntar cuántas bacterias hay
+    después de 3.5 horas, y podríamos responderlo directamente con la función.
+</p>
+
+<p>
+    También podríamos responder preguntas como: ¿en cuánto tiempo se duplica la población original? Es decir, ¿cuánto tiempo
+    debe pasar para que las 100 bacterias se conviertan en 200?
+</p>
+
+ 
+
+    <img src="../../../../img/EDO.png" alt="" width="460">
+</form>
 </div>
 
 <div class="centered-container">

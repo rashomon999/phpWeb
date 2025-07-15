@@ -1123,8 +1123,8 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../../style.css">
+    <link rel="stylesheet" href="../../../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../../../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
@@ -1136,7 +1136,7 @@ if ($respuesta_110 === '264') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 445vh;
+    height: 230vh;
     }
 </style>
  
@@ -1439,125 +1439,89 @@ function ocultarMensaje4() {
 </head>
 <body> 
 <div class="seccion izquierda">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h1>8.2 Separación de variables</h1>
-  <p>
-    En la sección anterior discutimos dos métodos para aproximar la solución de una ecuación diferencial
-    $$\dot{x} = f(x, t)$$
-    con condición inicial \( x(t_0) = x_0 \). Ahora consideraremos, en esta sección así como en las Secciones 8.3 y 8.4, técnicas para encontrar soluciones en forma cerrada para tales ecuaciones, es decir, soluciones que puedan expresarse en términos de las funciones elementales del cálculo. Para lograrlo, será necesario considerar distintas clases de ecuaciones dependiendo de la forma de la función \( f \). Como en la integración ordinaria, encontrar una expresión en forma cerrada para la solución de una ecuación diferencial es con frecuencia un problema difícil, si no imposible, que requiere aprovechar cualquier información que podamos obtener de la forma de la función.
-  </p>
-  <p>
-    En esta sección consideraremos una clase de ecuaciones conocidas como ecuaciones separables y en las Secciones 8.3 y 8.4 consideraremos ecuaciones lineales.
-  </p>
-  <p>
-    Llamamos a una ecuación diferencial
-    $$\dot{x} = f(x, t) \tag{8.2.1}$$
-    con condición inicial \( x(t_0) = x_0 \), separable, o decimos que tiene variables separables, si \( f(x, t) = g(x)h(t) \) para algunas funciones \( g \) y \( h \), donde \( g \) depende solo de \( x \) y \( h \) depende solo de \( t \). Supondremos que \( g \) y \( h \) son ambas funciones continuas y, por lo tanto, en particular, integrables.
-  </p>
-  <p>
-    En ese caso, (8.2.1) se convierte en:
-    $$\dot{x} = g(x)h(t) \tag{8.2.2}$$
-    lo cual implica que:
-    $$\frac{\dot{x}}{g(x)} = h(t) \tag{8.2.3}$$
-    en todos los puntos para los cuales \( g(x) \ne 0 \). Integrando (8.2.3) desde \( t_0 \) hasta \( t \) (suponiendo que \( g(x(s)) \ne 0 \) para todo \( s \) entre \( t_0 \) y \( t \)), tenemos:
-    $$\int_{t_0}^{t} \frac{1}{g(x(s))} \dot{x}(s)\,ds = \int_{t_0}^{t} h(s)\,ds \tag{8.2.4}$$
-    donde hemos usado \( s \) como variable de integración para que nuestra respuesta esté en términos de \( t \). Ahora, usando el cambio de variable:
-    \[
-    u = x(s), \quad du = \dot{x}(s)\,ds
-    \]
-    obtenemos:
-    $$\int_{t_0}^{t} \frac{1}{g(x(s))} \dot{x}(s)\,ds = \int_{x(t_0)}^{x(t)} \frac{1}{g(u)}\,du = \int_{x_0}^{x} \frac{1}{g(u)}\,du \tag{8.2.5}$$
-    para la integral del lado izquierdo. Por lo tanto, combinando (8.2.4) y (8.2.5), se tiene:
-    $$\int_{x_0}^{x} \frac{1}{g(u)}\,du = \int_{t_0}^{t} h(s)\,ds \tag{8.2.6}$$
-  </p>
-  <p>
-    Así, podemos resolver una ecuación con variables separables siempre que podamos evaluar ambas integrales en (8.2.6) y luego resolver la ecuación resultante para \( x \). El proceso puede fallar en alguno de estos dos pasos finales, en cuyo caso debemos recurrir a aproximaciones numéricas, aun cuando la ecuación sea separable.
-  </p>
-  <h3>Proposición 8.2.1 (Separación de variables)</h3>
-  <p>
-    Si \( g \) y \( h \) son funciones continuas de \( x \) y \( t \), respectivamente, y \( x \) satisface la ecuación diferencial
-    $$\dot{x} = g(x)h(t) \tag{8.2.7}$$
-    con \( x(t_0) = x_0 \), entonces
-    $$\int_{x_0}^{x} \frac{1}{g(u)}\,du = \int_{t_0}^{t} h(s)\,ds \tag{8.2.8}$$
-    siempre que \( g(u) \ne 0 \) para todo \( u \) entre \( x_0 \) y \( x \).
-  </p>
-  <p>
-    Nótese que este es el mismo método que usamos para resolver la ecuación del modelo de crecimiento inhibido en la Sección 6.3.
-  </p>
-  <h3>Ejemplo 8.2.1</h3>
-  <p>
-    Consideremos la ecuación:
-    $$
-    \dot{x} = 0.4x
-    $$
-    con \( x(0) = 100 \). Esta es una ecuación separable con, en la notación usada anteriormente,
-    \( g(x) = x \) y \( h(t) = 0.4 \). (Nótese que las elecciones para \( g \) y \( h \) no son únicas.)
-    Usando (8.2.8), tenemos:
-    $$
-    \int_{100}^{x} \frac{1}{u}\,du = \int_0^{t} 0.4\,ds.
-    $$
-    Ahora, suponiendo que \( x > 0 \),
-    $$
-    \int_{100}^{x} \frac{1}{u}\,du = \log(u) \bigg|_{100}^{x} = \log(x) - \log(100) = \log\left(\frac{x}{100}\right),
-    $$
-    y
-    $$
-    \int_0^{t} 0.4\,ds = 0.4s \bigg|_0^{t} = 0.4t.
-    $$
-    Por lo tanto, tenemos:
-    $$
-    \log\left(\frac{x}{100}\right) = 0.4t,
-    $$
-    de donde obtenemos:
-    $$
-    \frac{x}{100} = e^{0.4t},
-    $$
-    y, finalmente:
-    $$
-    x = 100e^{0.4t}.
-    $$
-    Nótese que esta es la solución que deberíamos esperar de nuestro estudio de ecuaciones de esta forma en las Secciones 6.1 y 6.3.
-  </p>
+    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+     <p>
+    Veamos otro ejemplo. Otro ejemplo es la <strong>ley de enfriamiento de Newton</strong>. Esta ley tiene que ver con la velocidad con la que los objetos tienden a enfriarse para igualarse a la temperatura del ambiente.
+</p>
 
-  <h3>Ejemplo 8.2.2</h3>
-  <p>
-    Consideremos la ecuación:
-    $$
-    \dot{y} = -2yt \tag{8.2.9}
-    $$
-    con \( y(0) = y_0 \ne 0 \). Esta es una ecuación separable con, en la notación usada anteriormente,
-    \( g(y) = y \) y \( h(t) = -2t \). Usando (8.2.8), tenemos:
-    $$
-    \int_{y_0}^{y} \frac{1}{u}\,du = -\int_0^{t} 2s\,ds.
-    $$
-    Ahora:
-    $$
-    \int_{y_0}^{y} \frac{1}{u}\,du = \log|u| \bigg|_{y_0}^{y} = \log|y| - \log|y_0| = \log\left|\frac{y}{y_0}\right|,
-    $$
-    y
-    $$
-    -\int_0^{t} 2s\,ds = -s^2 \bigg|_0^{t} = -t^2.
-    $$
-    Por lo tanto, tenemos:
-    $$
-    \log\left|\frac{y}{y_0}\right| = -t^2,
-    $$
-    de donde se sigue que:
-    $$
-    \left|\frac{y}{y_0}\right| = e^{-t^2}.
-    $$
-    Ahora, \( e^{-t^2} > 0 \) para todo \( t \), por lo que \( y(t) \) nunca es cero. Dado que \( y \) es continua (lo cual se sigue de que es diferenciable), esto significa que o bien \( y(t) > 0 \) para todo \( t \), o bien \( y(t) < 0 \) para todo \( t \). Ya que \( y(0) = y_0 \), se tiene que:
-  </p>
-  <ul>
-    <li>Si \( y_0 > 0 \), entonces \( y(t) > 0 \) para todo \( t \).</li>
-    <li>Si \( y_0 < 0 \), entonces \( y(t) < 0 \) para todo \( t \).</li>
-  </ul>
-  <p>
-    En cualquier caso:
-    $$
-    \frac{y(t)}{y_0} > 0.
-    $$
-  </p>
+<p>
+    Por ejemplo, supongamos que tenemos una taza de café que tiene una temperatura de 70 grados Celsius, y supongamos que el ambiente en el que se encuentra este café tiene una temperatura de 20 grados Celsius.
+</p>
+
+<p>
+    Entonces, conforme va transcurriendo el tiempo, el café se irá enfriando, disminuyendo su temperatura, hasta que sea aproximadamente igual a la temperatura del ambiente. Tiende a igualarse a la temperatura del ambiente.
+</p>
+
+<p>
+    Lo mismo ocurrirá con cualquier objeto que tenga una temperatura mayor a la del ambiente. Por ejemplo, si tenemos otra taza de café con una temperatura de 40 grados Celsius, también se irá enfriando hasta llegar a los 20 grados.
+</p>
+
+<p>
+    Lo mismo ocurre si tenemos un objeto que tenga una temperatura menor a la del ambiente. Por ejemplo, si un objeto estuviera a 0 grados Celsius, se irá calentando hasta alcanzar la temperatura del ambiente.
+</p>
+
+<p>
+    Aquí podría surgir una pregunta: ¿Cuál será la temperatura de la taza de café después de que han transcurrido cinco minutos?
+</p>
+
+<p>
+    Supongamos que, para la primera taza de café, medimos la temperatura después de cinco minutos y vemos que ha disminuido a 40 grados Celsius.
+</p>
+
+<p>
+    La pregunta sería entonces: para esta otra taza de café, ¿cuál será su temperatura después de esos cinco minutos?
+</p>
+
+<p>
+    Fíjense que la primera taza disminuyó su temperatura en 30 grados, pues pasó de 70 a 40. No podemos decir que la segunda taza también disminuirá en 30 grados, porque eso la llevaría a 10 grados, lo cual está por debajo de la temperatura del ambiente.
+</p>
+
+<p>
+    Sabemos que la taza de café se enfriará hasta llegar a la temperatura del ambiente, no por debajo de ella. Entonces, no disminuirá 30 grados.
+</p>
+
+<p>
+    Mediante ecuaciones diferenciales, nosotros podemos determinar cuál será la temperatura de esta segunda taza de café a partir de estos datos.
+</p>
+
+<p>
+    Claro que la temperatura será algo menor a 40 grados, pero seguirá siendo superior a 20. Podría ser, por ejemplo, algo como 27 grados Celsius.
+</p>
+
+<p>
+    Podemos notar que la primera taza, que tenía una temperatura más elevada, disminuyó 30 grados en los mismos cinco minutos que la segunda taza, que solo disminuyó de 40 a 27, es decir, 13 grados.
+</p>
+
+<p>
+    Esto indica que, conforme más alta es la temperatura de la taza de café, más rápido se irá enfriando en comparación con una que tenga una temperatura más cercana a la del ambiente.
+</p>
+
+<p>
+    De esto podemos inferir lo siguiente: <strong>la velocidad de enfriamiento de un objeto es proporcional a la diferencia de temperaturas</strong>, es decir, a la diferencia entre la temperatura del objeto y la temperatura del ambiente.
+</p>
+
+<p>
+    Entre mayor sea esa diferencia, más rápido se irá enfriando el objeto. Por ejemplo, si tuviéramos otra taza de café a 90 grados Celsius, se enfriaría más rápido que las anteriores.
+</p>
+
+<p>
+    A esta ley se le conoce como la <strong>ley de enfriamiento de Newton</strong>, y se puede expresar mediante ecuaciones diferenciales. A partir de ella podremos responder muchas preguntas.
+</p>
+
+<p>
+    Por ejemplo, ¿cuál será la temperatura de las tazas de café cuando hayan transcurrido diez minutos? Supongamos que el único dato que tenemos es que a los cinco minutos la temperatura bajó de 70 a 40. ¿Qué ocurrirá a los diez minutos?
+</p>
+
+<p>
+    Eso ya lo podemos saber a partir de la ecuación diferencial.
+</p>
+
+<p>
+    También podemos responder preguntas como esta: ¿cuánto tiempo tardará esta taza de café en enfriarse hasta llegar a 25 grados Celsius?
+</p>
+
+    <img src="../../../../img/aplicacion.png" alt="" width="480">
+ 
     </form>
 </div>
 
@@ -1565,122 +1529,77 @@ function ocultarMensaje4() {
 
 
 <div class="seccion derecha">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-        <img src="../../../../img/familia.png" alt="" width="700">
-
-        <p>
-    Para todo \( t \), se cumple que
-    $$
-    \left| \frac{y}{y_0} \right| = \frac{y}{y_0}.
-    $$
-    Por lo tanto:
-    $$
-    \frac{y}{y_0} = e^{-t^2}, \quad \text{o bien} \quad y = y_0 e^{-t^2}. \tag{8.2.10}
-    $$
-    Nótese que (8.2.10) también especifica una solución de (8.2.9) cuando \( y_0 = 0 \), a saber, la solución \( y(t) = 0 \) para todo \( t \). Al dejar el valor de \( y_0 \) sin especificar, hemos encontrado la forma general de todas las soluciones posibles para la ecuación. Llamamos a la familia de todas las soluciones posibles dadas por (8.2.10) la <strong>solución general</strong> de la ecuación (8.2.9). Cualquier solución obtenida al especificar un valor de \( y_0 \), por ejemplo \( y_0 = 10 \), se llama una <strong>solución particular</strong> de la ecuación.
-  </p>
-  <p>
-    Como se indica en el primer ejemplo, las elecciones para \( g \) y \( h \) no son únicas. Por ejemplo, en el segundo ejemplo podríamos haber tomado \( g(y) = 2y \) y \( h(t) = t \). Sin embargo, uno debe intentar elegir \( g \) y \( h \) de tal manera que los pasos subsiguientes de la solución sean lo más simples posible.
-  </p>
-
-  <h3>Ejemplo 8.2.3</h3>
-  <p>
-    Consideremos la ecuación:
-    $$
-    \dot{x} = -\frac{t}{x}
-    $$
-    con \( x(0) = x_0 \ne 0 \). Separando las variables, tenemos:
-    $$
-    \int_{x_0}^{x} u\,du = -\int_0^t s\,ds.
-    $$
-    Ahora:
-    $$
-    \int_{x_0}^{x} u\,du = \frac{1}{2}u^2 \bigg|_{x_0}^{x} = \frac{1}{2}(x^2 - x_0^2),
-    $$
-    y
-    $$
-    -\int_0^t s\,ds = -\frac{1}{2}s^2 \bigg|_0^t = -\frac{1}{2}t^2.
-    $$
-    Por lo tanto:
-    $$
-    \frac{1}{2}(x^2 - x_0^2) = -\frac{1}{2}t^2 \quad \Rightarrow \quad x^2 + t^2 = x_0^2.
-    $$
-    Esta ecuación define implícitamente \( x \) como función de \( t \). De hecho, a partir de esta ecuación podemos ver que la gráfica de \( x \) es parte de un círculo de radio \( x_0 \) centrado en el origen. Resolviendo explícitamente para \( x \), tenemos:
-    <ul>
-      <li>Si \( x_0 > 0 \), entonces \( x = \sqrt{x_0^2 - t^2} \).</li>
-      <li>Si \( x_0 < 0 \), entonces \( x = -\sqrt{x_0^2 - t^2} \).</li>
-    </ul>
-    Nótese que \( x \) solo está definida para \( -x_0 < t < x_0 \).
-  </p>
-
-  <h3>Ejemplo 8.2.4</h3>
-  <p>
-    En la Sección 8.1 consideramos la ecuación:
-    $$
-    \dot{v} = -g - \frac{k}{m}v,
-    $$
-    con \( v(0) = 0 \), como modelo para la velocidad de un objeto en caída libre cerca de la superficie de la Tierra cuando la fuerza debida a la resistencia del aire es proporcional a la velocidad. Aquí \( v \) es la velocidad del objeto, \( g \), como es habitual, es 32 pies/seg² o 9.8 m/s², \( m \) es la masa del objeto y \( k > 0 \) es una constante que depende de la resistencia del aire del objeto en particular.
-  </p>
-  <p>
-    Si escribimos esta ecuación en la forma:
-    $$
-    \dot{v} = -g \left(1 + \frac{k}{gm}v \right) \tag{8.2.11}
-    $$
-    y separamos variables usando:
-    $$
-    f(v) = 1 + \frac{k}{gm}v, \quad h(t) = -g,
-    $$
-    entonces tenemos:
-    $$
-    \int_0^v \frac{1}{1 + \frac{k}{gm}u}\,du = -\int_0^t g\,ds.
-    $$
-    Ahora,
-    $$
-    \int_0^v \frac{1}{1 + \frac{k}{gm}u}\,du = \frac{gm}{k} \log\left|1 + \frac{k}{gm}v\right|,
-    $$
-    y
-    $$
-    -\int_0^t g\,ds = -gt.
-    $$
-    Por lo tanto,
-    $$
-    \frac{gm}{k} \log\left|1 + \frac{k}{gm}v\right| = -gt,
-    $$
-    de donde se sigue que:
-    $$
-    \log\left|1 + \frac{k}{gm}v\right| = -\frac{kt}{m}.
-    $$
-  </p>
-    
-    <img src="../../../../img/slouhter_2.png" alt="">
-     
-
-    <p>De lo cual se sigue que</p>
-<p>
-\[
-\left|1 + \frac{k}{gm}v\right| = e^{-\frac{kt}{m}}.
-\]
+    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <p>
+    Bueno, las ecuaciones diferenciales tienen muchas más aplicaciones que estas dos que vimos.
 </p>
 
-
-
-<p>Por lo tanto, o bien</p>
 <p>
-\[
-1 + \frac{k}{gm}v = e^{-\frac{kt}{m}}
-\quad \text{o} \quad
-1 + \frac{k}{gm}v = -e^{-\frac{kt}{m}}.
-\]
+    Otra aplicación, por ejemplo, es al analizar la relación que hay entre poblaciones de depredadores y presas. Por ejemplo, poblaciones de leones y de cebras. Estas poblaciones se relacionan mucho entre sí: si hay más depredadores, habrá menos presas; si hay menos depredadores, habrá muchas más presas, porque al haber menos depredadores, las cebras se reproducen más rápidamente.
 </p>
 
-<p>Es decir, o bien</p>
 <p>
-\[
-v = -\frac{gm}{k}\left(1 - e^{-\frac{kt}{m}}\right)
-\quad \text{o} \quad
-v = -\frac{gm}{k}\left(1 + e^{-\frac{kt}{m}}\right).
-\]
+    Este tipo de relación entre estas poblaciones la podemos describir mediante ecuaciones diferenciales, y en este caso se hace mediante <strong>sistemas de ecuaciones diferenciales</strong>.
 </p>
+
+<p>
+    Otra aplicación es el análisis de <strong>circuitos RLC</strong>, es decir, circuitos formados por resistencias, inductores y capacitores. En este tipo de circuitos puede interesarnos medir la corriente que circula a través del circuito en cada momento, y eso lo podemos hacer mediante ecuaciones diferenciales. Esta será una aplicación que veremos más adelante.
+</p>
+
+<p>
+    Otra aplicación es el estudio del <strong>movimiento de objetos</strong>. Por ejemplo, si tenemos un objeto unido mediante un resorte a una pared, y queremos ver cuál será su velocidad o su posición en cada momento. Todo esto lo podremos determinar a partir de ecuaciones diferenciales.
+</p>
+
+<p>
+    También podemos agregar efectos como la <strong>fricción</strong> entre el objeto y el piso, y con eso medir cómo se irá moviendo el objeto, cómo cambiará su velocidad y cuál será su posición después de cada intervalo de tiempo.
+</p>
+
+<p>
+    Otra aplicación es la <strong>transmisión de calor</strong>. Por ejemplo, si tenemos una varilla metálica delgada y calentamos uno de sus extremos, ese extremo se irá calentando, pero el calor se irá transmitiendo a lo largo de la varilla.
+</p>
+
+<p>
+    En este caso podría interesarnos saber cuál es la temperatura en un punto determinado de la varilla después de cierto tiempo. Aquí intervienen dos variables: una es el tiempo, y la otra es la posición a lo largo de la varilla.
+</p>
+
+<p>
+    Para analizar este tipo de fenómeno usamos también ecuaciones diferenciales, pero en este caso se trata de <strong>ecuaciones diferenciales parciales</strong>, ya que trabajamos con funciones de más de una variable.
+</p>
+
+<p>
+    Estas son solo algunas de las muchísimas aplicaciones que tienen las ecuaciones diferenciales.
+</p>
+
+ <img src="../../../../img/aplicaciones_dos.png" alt="" width="480">
+    <br><br>
+ <p>
+    ¿Cómo crear un modelo matemático mediante ecuaciones diferenciales? Es decir, tenemos algún fenómeno que estamos estudiando y quisiéramos modelarlo mediante una ecuación diferencial.
+</p>
+
+<p>
+    Para explicar esto, lo haremos mediante un par de ejemplos. Lo primero que hay que hacer es dominar bien el lenguaje de las funciones y las derivadas.
+</p>
+
+<p>
+    Vamos a explicarlo con un ejemplo muy sencillo: el de una población de una determinada especie de animales. Supongamos que estamos midiendo la cantidad de leones en alguna región de África, y queremos saber cuántos leones hay conforme pasa el tiempo.
+</p>
+
+<p>
+    En este caso se trata de un fenómeno que cambia con el tiempo. Este tipo de fenómenos se pueden modelar mediante ecuaciones diferenciales. Las ecuaciones diferenciales se usan cuando una cantidad cambia conforme otra, que generalmente es el tiempo.
+</p>
+
+<p>
+    Lo primero que hay que hacer es escribir una función que nos indique la cantidad de leones según el tiempo. Podemos representarlo como \( P(t) \), una función \( P \) que depende del tiempo \( t \).
+</p>
+
+<p>
+    Dejemos esto claro:
+</p>
+
+<ul>
+    <li>\( P(t) \): número de animales (en miles)</li>
+    <li>\( t \): tiempo (en años)</li>
+</ul>
     </form>
 </div>
 
@@ -1689,7 +1608,7 @@ v = -\frac{gm}{k}\left(1 + e^{-\frac{kt}{m}}\right).
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="segundo.php"
+        href="tercero.php"
         role="button"
         width="50px"
         height="50px"

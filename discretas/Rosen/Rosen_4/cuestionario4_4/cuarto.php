@@ -17,153 +17,106 @@ if ($_POST) {
     $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
     
     if ($mostrar_solucion === 'mostrar_solucion') {
-        // Establecer todas las respuestas correctas para las tablas de multiplicar
-        
-        // Tabla del 12
-        $respuesta_111 = '24'; 
-        $respuesta_112 = '36';
-        $respuesta_113 = '48';
-        $respuesta_114 = '60';
-        $respuesta_115 = '72';
-        $respuesta_116 = '84';
-        $respuesta_117 = '96';
-        $respuesta_118 = '108';
-        $respuesta_119 = '120';
-        $respuesta_120 = '132';
-        $respuesta_121 = '144';
-        
-        // Tabla del 13
-        $respuesta_1 = '26';
-        $respuesta_2 = '39';
-        $respuesta_3 = '52';
-        $respuesta_4 = '65';
-        $respuesta_5 = '78';
-        $respuesta_6 = '91';
-        $respuesta_7 = '104';
-        $respuesta_8 = '117';
-        $respuesta_9 = '130';
-        $respuesta_10 = '143';
-        $respuesta_11 = '156';
-        
-        // Tabla del 14
-        $respuesta_12 = '28';
-        $respuesta_13 = '42';
-        $respuesta_14 = '56';
-        $respuesta_15 = '70';
-        $respuesta_16 = '84';
-        $respuesta_17 = '98';
-        $respuesta_18 = '112';
-        $respuesta_19 = '126';
-        $respuesta_20 = '140';
-        $respuesta_21 = '154';
-        $respuesta_22 = '168';
-        
-        // Tabla del 15
-        $respuesta_23 = '30';
-        $respuesta_24 = '45';
-        $respuesta_25 = '60';
-        $respuesta_26 = '75';
-        $respuesta_27 = '90';
-        $respuesta_28 = '105';
-        $respuesta_29 = '120';
-        $respuesta_30 = '135';
-        $respuesta_31 = '150';
-        $respuesta_32 = '165';
-        $respuesta_33 = '180';
-        
-        // Tabla del 16
-        $respuesta_34 = '32';
-        $respuesta_35 = '48';
-        $respuesta_36 = '64';
-        $respuesta_37 = '80';
-        $respuesta_38 = '96';
-        $respuesta_39 = '112';
-        $respuesta_40 = '128';
-        $respuesta_41 = '144';
-        $respuesta_42 = '160';
-        $respuesta_43 = '176';
-        $respuesta_44 = '192';
-        
-        // Tabla del 17
-        $respuesta_45 = '34';
-        $respuesta_46 = '51';
-        $respuesta_47 = '68';
-        $respuesta_48 = '85';
-        $respuesta_49 = '102';
-        $respuesta_50 = '119';
-        $respuesta_51 = '136';
-        $respuesta_52 = '153';
-        $respuesta_53 = '170';
-        $respuesta_54 = '187';
-        $respuesta_55 = '204';
-        
-        // Tabla del 18
-        $respuesta_56 = '36';
-        $respuesta_57 = '54';
-        $respuesta_58 = '72';
-        $respuesta_59 = '90';
-        $respuesta_60 = '108';
-        $respuesta_61 = '126';
-        $respuesta_62 = '144';
-        $respuesta_63 = '162';
-        $respuesta_64 = '180';
-        $respuesta_65 = '198';
-        $respuesta_66 = '216';
-        
-        // Tabla del 19
-        $respuesta_67 = '38';
-        $respuesta_68 = '57';
-        $respuesta_69 = '76';
-        $respuesta_70 = '95';
-        $respuesta_71 = '114';
-        $respuesta_72 = '133';
-        $respuesta_73 = '152';
-        $respuesta_74 = '171';
-        $respuesta_75 = '190';
-        $respuesta_76 = '209';
-        $respuesta_77 = '228';
-        
-        // Tabla del 20
-        $respuesta_78 = '40';
-        $respuesta_79 = '60';
-        $respuesta_80 = '80';
-        $respuesta_81 = '100';
-        $respuesta_82 = '120';
-        $respuesta_83 = '140';
-        $respuesta_84 = '160';
-        $respuesta_85 = '180';
-        $respuesta_86 = '200';
-        $respuesta_87 = '220';
-        $respuesta_88 = '240';
-        
-        // Tabla del 21
-        $respuesta_89 = '42';
-        $respuesta_90 = '63';
-        $respuesta_91 = '84';
-        $respuesta_92 = '105';
-        $respuesta_93 = '126';
-        $respuesta_94 = '147';
-        $respuesta_95 = '168';
-        $respuesta_96 = '189';
-        $respuesta_97 = '210';
-        $respuesta_98 = '231';
-        $respuesta_99 = '252';
-        
-        // Tabla del 22
-        $respuesta_100 = '44';
-        $respuesta_101 = '66';
-        $respuesta_102 = '88';
-        $respuesta_103 = '110';
-        $respuesta_104 = '132'; 
-        $respuesta_105 = '154';
-        $respuesta_106 = '176';
-        $respuesta_107 = '198';
-        $respuesta_108 = '220';
-        $respuesta_109 = '242';
-        $respuesta_110 = '264';
-        
-        // Marcar todas como correctas
-    $verificar_1 = $verificar_2 = $verificar_3 = /* ... todas las variables de verificación ... */ $verificar_122 = "correcto";
+        // Establecer todas las respuestas correctas
+        $respuesta_1 = 'b^{n-1}\equiv1\pmod{n}';
+        $respuesta_2 = 'n';
+        $respuesta_3 = '2^{n-1}\equiv1\pmod{n}';
+        $respuesta_4 = 'n';
+        $respuesta_5 = 'primo';
+        $respuesta_6 = 'primo';
+        $respuesta_7 = 'pseudoprimo';
+        $respuesta_8 = '2';
+        $respuesta_9 = 'compuesto';
+        $respuesta_10 = 'bases';
+        $respuesta_11 = '2';
+        $respuesta_12 = 'primo';
+        $respuesta_13 = 'primo';
+        $respuesta_14 = 'pseudoprimo';
+        $respuesta_15 = '2';
+        $respuesta_16 = 'compuesto';
+        $respuesta_17 = 'bases';
+        $respuesta_18 = '2';
+        $respuesta_19 = 'primo';
+        $respuesta_20 = 'primo';
+        $respuesta_21 = 'pseudoprimo';
+        $respuesta_22 = 'bases b';
+        $respuesta_23 = 'menores';
+        $respuesta_24 = 'escasos';
+        $respuesta_25 = 'primos';
+        $respuesta_26 = 'compuestos';
+        $respuesta_27 = 'pasan';
+        $respuesta_28 = 'bases b';
+        $respuesta_29 = 'gcd(b,n)=1';
+        $respuesta_30 = 'compuesto';
+        $respuesta_31 = 'satisface';
+        $respuesta_32 = '114';
+        $respuesta_33 = 'todo';
+        $respuesta_34 = 'b';
+        $respuesta_35 = 'gcd(b,n)=1';
+        $respuesta_36 = 'Carmichael';
+        $respuesta_37 = '17';
+        $respuesta_38 = 'gcd(b,561)=1';
+        $respuesta_39 = 'b,3';
+        $respuesta_40 = 'b,11';
+        $respuesta_41 = 'b,17';
+        $respuesta_42 = '1';
+        $respuesta_43 = 'b^2\equiv1\pmod{3}';
+        $respuesta_44 = 'b^{10}\equiv1\pmod{11}';
+        $respuesta_45 = 'b^{16}\equiv1\pmod{17}';
+        $respuesta_46 = '(b^2)^{280}\equiv1\pmod{3}';
+        $respuesta_47 = '(b^{10})^{56}\equiv1\pmod{11}';
+        $respuesta_48 = '(b^{16})^{35}\equiv1\pmod{17}';
+        $respuesta_49 = 'b^{560}\equiv1\pmod{561}';
+        $respuesta_50 = 'gcd(b,561)=1';
+        $respuesta_51 = 'Carmichael';
+        $respuesta_52 = 'infinitos';
+        $respuesta_53 = 'probabilisticas';
+        $respuesta_54 = 'pase';
+        $respuesta_55 = 'probabilisticas';
+        $respuesta_56 = '1';
+        $respuesta_57 = 'y';
+        $respuesta_58 = 'logaritmo';
+        $respuesta_59 = 'x';
+        $respuesta_60 = 'base b';
+        $respuesta_61 = 'logaritmos';
+        $respuesta_62 = 'primo';
+        $respuesta_63 = 'primo';
+        $respuesta_64 = 'r';
+        $respuesta_65 = 'todo';
+        $respuesta_66 = 'no nulo';
+        $respuesta_67 = 'potencia';
+        $respuesta_68 = 'r';
+        $respuesta_69 = 'no nulo';
+        $respuesta_70 = 'potencia';
+        $respuesta_71 = '2';
+        $respuesta_72 = '2';
+        $respuesta_73 = '11';
+        $respuesta_74 = 'no todos';
+        $respuesta_75 = 'no nulo';
+        $respuesta_76 = 'potencias';
+        $respuesta_77 = '3';
+        $respuesta_78 = '3';
+        $respuesta_79 = '11';
+        $respuesta_80 = 'raíz primitiva';
+        $respuesta_81 = 'primo';
+        $respuesta_82 = 'raiz primitiva modulo p';
+        $respuesta_83 = '1';
+        $respuesta_84 = 'p-1';
+        $respuesta_85 = 'r^e\equiv a\mod p';
+        $respuesta_86 = 'e';
+        $respuesta_87 = 'e';
+        $respuesta_88 = 'logaritmo discreto';
+        $respuesta_89 = 'a modulo p';
+        $respuesta_90 = 'r';
+        $respuesta_91 = '\log_r a = e';
+        $respuesta_92 = '\log_2 3 = 8';
+        $respuesta_93 = '\log_2 5 = 4';
+
+    // Marcar todas como correctas
+    for ($i = 1; $i <= 122; $i++) {
+    ${"verificar_$i"} = "correcto";
+    }
+
     } else {
 
 // Respuestas 1-10
@@ -1041,259 +994,7 @@ if ($respuesta_89 === 'a modulo p') {
         $verificar_93 = "incorrecto";
     }
 
- $respuesta_94 = isset($_POST['respuesta_94']) ? $_POST['respuesta_94'] : '';
-if ($respuesta_94 === '147') { 
-    $verificar_94 = "correcto";
-} elseif ($respuesta_94 === '') {
-    $verificar_94 = '';
-} else {
-    $verificar_94 = "incorrecto";
-}
 
- $respuesta_95 = isset($_POST['respuesta_95']) ? $_POST['respuesta_95'] : '';
-if ($respuesta_95 === '168') { 
-    $verificar_95 = "correcto";
-} elseif ($respuesta_95 === '') {
-    $verificar_95 = '';
-} else {
-    $verificar_95 = "incorrecto";
-}
-
- $respuesta_96 = isset($_POST['respuesta_96']) ? $_POST['respuesta_96'] : '';
-if ($respuesta_96 === '189') { 
-    $verificar_96 = "correcto";
-} elseif ($respuesta_96 === '') {
-    $verificar_96 = '';
-} else {
-    $verificar_96 = "incorrecto";
-}
-
- $respuesta_97 = isset($_POST['respuesta_97']) ? $_POST['respuesta_97'] : '';
-if ($respuesta_97 === '210') { 
-    $verificar_97 = "correcto";
-} elseif ($respuesta_97 === '') {
-    $verificar_97 = '';
-} else {
-    $verificar_97 = "incorrecto";
-}
-
- $respuesta_98 = isset($_POST['respuesta_98']) ? $_POST['respuesta_98'] : '';
-if ($respuesta_98 === '231') { 
-    $verificar_98 = "correcto";
-} elseif ($respuesta_98 === '') {
-    $verificar_98 = '';
-} else {
-    $verificar_98 = "incorrecto";
-}
-
- $respuesta_99 = isset($_POST['respuesta_99']) ? $_POST['respuesta_99'] : '';
-if ($respuesta_99 === '252') { 
-    $verificar_99 = "correcto";
-} elseif ($respuesta_99 === '') {
-    $verificar_99 = '';
-} else {
-    $verificar_99 = "incorrecto";
-}
-
-
- $respuesta_100 = isset($_POST['respuesta_100']) ? $_POST['respuesta_100'] : '';
-if ($respuesta_100 === '44') { 
-    $verificar_100 = "correcto";
-} elseif ($respuesta_100 === '') {
-    $verificar_100 = '';
-} else {
-    $verificar_100 = "incorrecto";
-}
-
- $respuesta_101 = isset($_POST['respuesta_101']) ? $_POST['respuesta_101'] : '';
-if ($respuesta_101 === '66') { 
-    $verificar_101 = "correcto";
-} elseif ($respuesta_101 === '') {
-    $verificar_101 = '';
-} else {
-    $verificar_101 = "incorrecto";
-}
-
- $respuesta_102 = isset($_POST['respuesta_102']) ? $_POST['respuesta_102'] : '';
-if ($respuesta_102 === '88') { 
-    $verificar_102 = "correcto";
-} elseif ($respuesta_102 === '') {
-    $verificar_102 = '';
-} else {
-    $verificar_102 = "incorrecto";
-}
-
- $respuesta_103 = isset($_POST['respuesta_103']) ? $_POST['respuesta_103'] : '';
-if ($respuesta_103 === '110') { 
-    $verificar_103 = "correcto";
-} elseif ($respuesta_103 === '') {
-    $verificar_103 = '';
-} else {
-    $verificar_103 = "incorrecto";
-}
-
- $respuesta_104 = isset($_POST['respuesta_104']) ? $_POST['respuesta_104'] : '';
-if ($respuesta_104 === '132') { 
-    $verificar_104 = "correcto";
-} elseif ($respuesta_104 === '') {
-    $verificar_104 = '';
-} else {
-    $verificar_104 = "incorrecto";
-}
-
- $respuesta_105 = isset($_POST['respuesta_105']) ? $_POST['respuesta_105'] : '';
-if ($respuesta_105 === '154') { 
-    $verificar_105 = "correcto";
-} elseif ($respuesta_105 === '') {
-    $verificar_105 = '';
-} else {
-    $verificar_105 = "incorrecto";
-}
-
- $respuesta_106 = isset($_POST['respuesta_106']) ? $_POST['respuesta_106'] : '';
-if ($respuesta_106 === '176') { 
-    $verificar_106 = "correcto";
-} elseif ($respuesta_106 === '') {
-    $verificar_106 = '';
-} else {
-    $verificar_106 = "incorrecto";
-}
-
- $respuesta_107 = isset($_POST['respuesta_107']) ? $_POST['respuesta_107'] : '';
-if ($respuesta_107 === '198') { 
-    $verificar_107 = "correcto";
-} elseif ($respuesta_107 === '') {
-    $verificar_107 = '';
-} else {
-    $verificar_107 = "incorrecto";
-}
-
- $respuesta_108 = isset($_POST['respuesta_108']) ? $_POST['respuesta_108'] : '';
-if ($respuesta_108 === '220') { 
-    $verificar_108 = "correcto";
-} elseif ($respuesta_108 === '') {
-    $verificar_108 = '';
-} else {
-    $verificar_108 = "incorrecto";
-}
-
- $respuesta_109 = isset($_POST['respuesta_109']) ? $_POST['respuesta_109'] : '';
-if ($respuesta_109 === '242') { 
-    $verificar_109 = "correcto";
-} elseif ($respuesta_109 === '') {
-    $verificar_109 = '';
-} else {
-    $verificar_109 = "incorrecto";
-}
-
- $respuesta_110 = isset($_POST['respuesta_110']) ? $_POST['respuesta_110'] : '';
-if ($respuesta_110 === '264') { 
-    $verificar_110 = "correcto";
-} elseif ($respuesta_110 === '') {
-    $verificar_110 = '';
-} else {
-    $verificar_110 = "incorrecto";
-}
-
-// Tabla del 12
-$respuesta_111 = isset($_POST['respuesta_111']) ? $_POST['respuesta_111'] : '';
-if ($respuesta_111 === '24') {  
-    $verificar_111 = "correcto";
-} elseif ($respuesta_111 === '') {
-    $verificar_111 = '';
-} else {
-    $verificar_111 = "incorrecto";
-}
-
-$respuesta_112 = isset($_POST['respuesta_112']) ? $_POST['respuesta_112'] : '';
-if ($respuesta_112 === '36') {  
-    $verificar_112 = "correcto";
-} elseif ($respuesta_112 === '') {
-    $verificar_112 = '';
-} else {
-    $verificar_112 = "incorrecto";
-}
-
-$respuesta_113 = isset($_POST['respuesta_113']) ? $_POST['respuesta_113'] : '';
-if ($respuesta_113 === '48') {  
-    $verificar_113 = "correcto";
-} elseif ($respuesta_113 === '') {
-    $verificar_113 = '';
-} else {
-    $verificar_113 = "incorrecto";
-}
-
-$respuesta_114 = isset($_POST['respuesta_114']) ? $_POST['respuesta_114'] : '';
-if ($respuesta_114 === '60') {  
-    $verificar_114 = "correcto";
-} elseif ($respuesta_114 === '') {
-    $verificar_114 = '';
-} else {
-    $verificar_114 = "incorrecto";
-}
-
-$respuesta_115 = isset($_POST['respuesta_115']) ? $_POST['respuesta_115'] : '';
-if ($respuesta_115 === '72') {  
-    $verificar_115 = "correcto";
-} elseif ($respuesta_115 === '') {
-    $verificar_115 = '';
-} else {
-    $verificar_115 = "incorrecto";
-}
-
-$respuesta_116 = isset($_POST['respuesta_116']) ? $_POST['respuesta_116'] : '';
-if ($respuesta_116 === '84') {  
-    $verificar_116 = "correcto";
-} elseif ($respuesta_116 === '') {
-    $verificar_116 = '';
-} else {
-    $verificar_116 = "incorrecto";
-}
-
-$respuesta_117 = isset($_POST['respuesta_117']) ? $_POST['respuesta_117'] : '';
-if ($respuesta_117 === '96') {  
-    $verificar_117 = "correcto";
-} elseif ($respuesta_117 === '') {
-    $verificar_117 = '';
-} else {
-    $verificar_117 = "incorrecto";
-}
-
-$respuesta_118 = isset($_POST['respuesta_118']) ? $_POST['respuesta_118'] : '';
-if ($respuesta_118 === '108') {  
-    $verificar_118 = "correcto";
-} elseif ($respuesta_118 === '') {
-    $verificar_118 = '';
-} else {
-    $verificar_118 = "incorrecto";
-}
-
-$respuesta_119 = isset($_POST['respuesta_119']) ? $_POST['respuesta_119'] : '';
-if ($respuesta_119 === '120') {  
-    $verificar_119 = "correcto";
-} elseif ($respuesta_119 === '') {
-    $verificar_119 = '';
-} else {
-    $verificar_119 = "incorrecto";
-}
-
-$respuesta_120 = isset($_POST['respuesta_120']) ? $_POST['respuesta_120'] : '';
-if ($respuesta_120 === '132') {  
-    $verificar_120 = "correcto";
-} elseif ($respuesta_120 === '') {
-    $verificar_120 = '';
-} else {
-    $verificar_120 = "incorrecto";
-}
-
-$respuesta_121 = isset($_POST['respuesta_121']) ? $_POST['respuesta_121'] : '';
-if ($respuesta_121 === '144') {  
-    $verificar_121 = "correcto";
-} elseif ($respuesta_121 === '') {
-    $verificar_121 = '';
-} else {
-    $verificar_121 = "incorrecto";
-}
 }
 }
 ?>
@@ -1671,6 +1372,30 @@ tales que
 <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="6">.
 Esto nos lleva a la siguiente definición:</p>
 
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_1 ?>
+    <?php echo $verificar_2 ?>
+    <?php echo $verificar_3 ?>
+    <?php echo $verificar_4 ?>
+    <?php echo $verificar_5 ?>
+    <?php echo $verificar_6 ?>
+    <?php echo $verificar_7 ?>  
+    <?php echo $verificar_8 ?>
+    <?php echo $verificar_9 ?>
+    <?php echo $verificar_10 ?>
+    <?php echo $verificar_11 ?> 
+    <?php echo $verificar_12 ?>
+    <?php echo $verificar_13 ?>
+    <?php echo $verificar_14 ?>
+    <?php echo $verificar_15 ?>
+    <?php echo $verificar_16 ?>
+    <?php echo $verificar_17 ?>
+    <?php echo $verificar_18 ?>
+    <?php echo $verificar_19 ?>
+    <?php echo $verificar_20 ?>
+    <?php echo $verificar_21 ?>
+    <?php echo $verificar_22 ?>
+    <hr>
 <h3>Definición 2</h3>
 
 <p>Un número entero 
@@ -1730,51 +1455,26 @@ value="<?php echo $respuesta_37?>" size="22">
 <input type="text" name="respuesta_38" id="respuesta_38" oninput="actualizarFormula4()" 
 value="<?php echo $respuesta_38?>" size="22">
 
-<p>Entonces:</p>
-
-<span id="formula5">
-\[ b^{560} = ?, b^{560} = ?, b^{560} = ?  \]
-</span> 
-<input type="text" name="respuesta_39" id="respuesta_39" oninput="actualizarFormula5()" 
-value="<?php echo $respuesta_39 ?>" size="22">
-<input type="text" name="respuesta_40" id="respuesta_40" oninput="actualizarFormula5()" 
-value="<?php echo $respuesta_40?>" size="22">
-<input type="text" name="respuesta_41" id="respuesta_41" oninput="actualizarFormula5()" 
-value="<?php echo $respuesta_41?>" size="22">
-
-<p>Por el Ejercicio 29, se sigue que:</p>
-
-<span id="formula6">
-\[  \]
-</span> 
-<input type="text" name="respuesta_42" id="respuesta_42" oninput="actualizarFormula6()" 
-value="<?php echo $respuesta_42 ?>" size="22">
-
-<p>para todo entero positivo \( b \) con 
-<input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="6">    
-. Por lo tanto, 561 es un número de 
-<input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>" size="6">.</p>
-
-<p>Aunque existen 
-<input type="text" name="respuesta_45" value="<?php echo $respuesta_45; ?>" size="11">    
-números de Carmichael, pueden diseñarse pruebas más refinadas (descritas en el 
-conjunto de ejercicios) que sirven de base para pruebas 
-<input type="text" name="respuesta_46" value="<?php echo $respuesta_46; ?>" size="11">
-de primalidad eficientes. Estas pruebas permiten mostrar rápidamente que un número dado es casi con 
-certeza primo. Más precisamente, si un número no es
-primo, la probabilidad de que 
-<input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="11">
-una serie de estas pruebas es muy cercana a 0.</p>
-
-<p>Estas pruebas de primalidad 
-<input type="text" name="respuesta_48" value="<?php echo $respuesta_48; ?>" size="11">    
-se describirán en el Capítulo 7, junto con los conceptos de 
-teoría de la probabilidad en los que se basan. Estas pruebas pueden (y de hecho se utilizan) para encontrar 
-primos grandes de manera extremadamente rápida con computadoras.</p>
-  
-
-
-      <button onmousedown="mostrarImagen2()" onmouseup="ocultarImagen2()">Ayuda</button>
+    <br><br>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_23 ?>
+    <?php echo $verificar_24 ?>
+    <?php echo $verificar_25 ?>
+    <?php echo $verificar_26 ?>
+    <?php echo $verificar_27 ?>
+    <?php echo $verificar_28 ?>
+    <?php echo $verificar_29 ?>
+    <?php echo $verificar_30 ?>
+    <?php echo $verificar_31 ?>
+    <?php echo $verificar_32 ?>
+    <?php echo $verificar_33 ?>
+    <?php echo $verificar_34 ?>
+    <?php echo $verificar_35 ?>
+    <?php echo $verificar_36 ?>
+    <?php echo $verificar_37 ?>
+    <?php echo $verificar_38 ?>
+    <hr>
+     <button onmousedown="mostrarImagen2()" onmouseup="ocultarImagen2()">Ayuda</button>
     <!-- Elemento para mostrar la imagen -->
 
     <img id="imagenMostrada2" src="../../../../img/gcd_compuesto.png" style="display: none; max-width: 100%" width="460">
@@ -1815,6 +1515,62 @@ primos grandes de manera extremadamente rápida con computadoras.</p>
         imagenMostrada3.style.display = 'none';
         }
     </script>    
+
+    <p>Entonces:</p>
+
+    <span id="formula5">
+    \[ b^{560} = ?, b^{560} = ?, b^{560} = ?  \]
+    </span> 
+    <input type="text" name="respuesta_39" id="respuesta_39" oninput="actualizarFormula5()" 
+    value="<?php echo $respuesta_39 ?>" size="22">
+    <input type="text" name="respuesta_40" id="respuesta_40" oninput="actualizarFormula5()" 
+    value="<?php echo $respuesta_40?>" size="22">
+    <input type="text" name="respuesta_41" id="respuesta_41" oninput="actualizarFormula5()" 
+    value="<?php echo $respuesta_41?>" size="22">
+
+    <p>Por el Ejercicio 29, se sigue que:</p>
+
+<span id="formula6">
+\[  \]
+</span> 
+<input type="text" name="respuesta_42" id="respuesta_42" oninput="actualizarFormula6()" 
+value="<?php echo $respuesta_42 ?>" size="22">
+
+<p>para todo entero positivo \( b \) con 
+<input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="6">    
+. Por lo tanto, 561 es un número de 
+<input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>" size="6">.</p>
+
+<p>Aunque existen 
+<input type="text" name="respuesta_45" value="<?php echo $respuesta_45; ?>" size="11">    
+números de Carmichael, pueden diseñarse pruebas más refinadas (descritas en el 
+conjunto de ejercicios) que sirven de base para pruebas 
+<input type="text" name="respuesta_46" value="<?php echo $respuesta_46; ?>" size="11">
+de primalidad eficientes. Estas pruebas permiten mostrar rápidamente que un número dado es casi con 
+certeza primo. Más precisamente, si un número no es
+primo, la probabilidad de que 
+<input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="11">
+una serie de estas pruebas es muy cercana a 0.</p>
+
+<p>Estas pruebas de primalidad 
+<input type="text" name="respuesta_48" value="<?php echo $respuesta_48; ?>" size="11">    
+se describirán en el Capítulo 7, junto con los conceptos de 
+teoría de la probabilidad en los que se basan. Estas pruebas pueden (y de hecho se utilizan) para encontrar 
+primos grandes de manera extremadamente rápida con computadoras.</p>
+  
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_39 ?>
+    <?php echo $verificar_40 ?>
+    <?php echo $verificar_41 ?>
+    <?php echo $verificar_42 ?>
+    <?php echo $verificar_43 ?>
+    <?php echo $verificar_44 ?>
+    <?php echo $verificar_45 ?>
+    <?php echo $verificar_46 ?>
+    <?php echo $verificar_47 ?>
+    <?php echo $verificar_48 ?>
+
+    <hr>
     </form>
 </div>
 
@@ -1873,6 +1629,29 @@ de
 es una raíz primitiva de 
 <input type="text" name="respuesta_66" value="<?php echo $respuesta_66; ?>" size="8">.</p>
 
+
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_49 ?>
+    <?php echo $verificar_50 ?>
+    <?php echo $verificar_51 ?>
+    <?php echo $verificar_52 ?>
+    <?php echo $verificar_53 ?>
+    <?php echo $verificar_54 ?>
+    <?php echo $verificar_55 ?>
+    <?php echo $verificar_56 ?>
+    <?php echo $verificar_57 ?>
+    <?php echo $verificar_58 ?>
+    <?php echo $verificar_59 ?>
+    <?php echo $verificar_60 ?>
+    <?php echo $verificar_61 ?>
+    <?php echo $verificar_62 ?>
+    <?php echo $verificar_63 ?>
+    <?php echo $verificar_64 ?>
+    <?php echo $verificar_65 ?>
+    <?php echo $verificar_66 ?>
+
+    <hr>
+
 <p>Al calcular las potencias de 3 módulo 11:</p>
 <p>
     \( 3^1 = 3, \, 3^2 = 9, \, 3^3 = 5, \, 3^4 = 4, \, 3^5 = 1 \)
@@ -1914,7 +1693,23 @@ de \( \mathbb{Z}_p \), sabemos que existe un único exponente \( e \) tal que
 value="<?php echo $respuesta_80 ?>" size="22">.
 </p>
 
-<!-- Botón de explicación -->
+
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_67 ?>
+    <?php echo $verificar_68 ?>
+    <?php echo $verificar_69 ?>
+    <?php echo $verificar_70 ?>
+    <?php echo $verificar_71 ?>
+    <?php echo $verificar_72 ?>
+    <?php echo $verificar_73 ?>
+    <?php echo $verificar_74 ?>
+    <?php echo $verificar_75 ?>
+    <?php echo $verificar_76 ?>
+    <?php echo $verificar_77 ?>
+    <?php echo $verificar_78 ?>
+    <?php echo $verificar_79 ?>
+    <?php echo $verificar_80 ?> 
+ <!-- Botón de explicación -->
 <button onmousedown="mostrarMensaje()" onmouseup="ocultarMensaje()">parentesis</button>
 <div id="mensaje" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
 <p>a es un caso concreto, un resultado específico.</p>
@@ -1962,6 +1757,7 @@ y ese exponente \( e \) es único módulo \( p - 1 \), lo cual es justo la defin
     }
 </script>
 
+    <hr>
 
     <h3>Definición 4</h3>
     <p>Supón que p es un 
@@ -2038,7 +1834,23 @@ y ese exponente \( e \) es único módulo \( p - 1 \), lo cual es justo la defin
     (donde el módulo 11 se entiende aunque no se indique explícitamente 
     en la notación).</p>
 
-     <button onmousedown="mostrarImagen8()" onmouseup="ocultarImagen8()">el problema</button>
+
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_81 ?>
+    <?php echo $verificar_82 ?>
+    <?php echo $verificar_83 ?>
+    <?php echo $verificar_84 ?>
+    <?php echo $verificar_85 ?>
+    <?php echo $verificar_86 ?>
+    <?php echo $verificar_87 ?>
+    <?php echo $verificar_88 ?>
+    <?php echo $verificar_89 ?>
+    <?php echo $verificar_90 ?>
+    <?php echo $verificar_91 ?>
+    <?php echo $verificar_92 ?>
+    <?php echo $verificar_93 ?>
+
+    <button onmousedown="mostrarImagen8()" onmouseup="ocultarImagen8()">el problema</button>
     <img id="imagenMostrada8" src="../../../../img/elproblema.png" style="display: none; max-width: 100%"  width="460">
 
     <script>
@@ -2050,6 +1862,7 @@ y ese exponente \( e \) es único módulo \( p - 1 \), lo cual es justo la defin
     }
     </script>
 
+    <hr>
     <p><strong>El problema del logaritmo discreto</strong></p>
 
 
@@ -2061,7 +1874,14 @@ y ese exponente \( e \) es único módulo \( p - 1 \), lo cual es justo la defin
     <p>Aunque este problema pueda no parecer tan difícil, resulta que no se conoce ningún algoritmo de tiempo 
     polinomial para resolverlo. La dificultad de este problema desempeña un papel importante en la criptografía,
     como veremos en la Sección 4.6.</p>
+    
+
     <hr>
+    <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
+    <br>
+    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
+    <button type="submit"   >Mostrar Solución</button>
+
     </form>
 </div>
 

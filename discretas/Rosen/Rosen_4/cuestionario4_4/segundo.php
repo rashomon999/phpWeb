@@ -17,153 +17,128 @@ if ($_POST) {
     $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
     
     if ($mostrar_solucion === 'mostrar_solucion') {
-        // Establecer todas las respuestas correctas para las tablas de multiplicar
-        
-        // Tabla del 12
-        $respuesta_111 = '24'; 
-        $respuesta_112 = '36';
-        $respuesta_113 = '48';
-        $respuesta_114 = '60';
-        $respuesta_115 = '72';
-        $respuesta_116 = '84';
-        $respuesta_117 = '96';
-        $respuesta_118 = '108';
-        $respuesta_119 = '120';
-        $respuesta_120 = '132';
-        $respuesta_121 = '144';
-        
-        // Tabla del 13
-        $respuesta_1 = '26';
-        $respuesta_2 = '39';
-        $respuesta_3 = '52';
-        $respuesta_4 = '65';
+        // Establecer todas las respuestas correctas
+        $respuesta_1 = 'dividido';
+        $respuesta_2 = 'relativamente';
+        $respuesta_3 = 'solucion';
+        $respuesta_4 = 'unica';
         $respuesta_5 = '78';
-        $respuesta_6 = '91';
-        $respuesta_7 = '104';
-        $respuesta_8 = '117';
-        $respuesta_9 = '130';
-        $respuesta_10 = '143';
-        $respuesta_11 = '156';
-        
-        // Tabla del 14
-        $respuesta_12 = '28';
-        $respuesta_13 = '42';
-        $respuesta_14 = '56';
-        $respuesta_15 = '70';
-        $respuesta_16 = '84';
-        $respuesta_17 = '98';
-        $respuesta_18 = '112';
-        $respuesta_19 = '126';
-        $respuesta_20 = '140';
-        $respuesta_21 = '154';
-        $respuesta_22 = '168';
-        
-        // Tabla del 15
-        $respuesta_23 = '30';
-        $respuesta_24 = '45';
-        $respuesta_25 = '60';
-        $respuesta_26 = '75';
-        $respuesta_27 = '90';
-        $respuesta_28 = '105';
-        $respuesta_29 = '120';
-        $respuesta_30 = '135';
-        $respuesta_31 = '150';
-        $respuesta_32 = '165';
-        $respuesta_33 = '180';
-        
-        // Tabla del 16
-        $respuesta_34 = '32';
-        $respuesta_35 = '48';
-        $respuesta_36 = '64';
-        $respuesta_37 = '80';
-        $respuesta_38 = '96';
-        $respuesta_39 = '112';
-        $respuesta_40 = '128';
-        $respuesta_41 = '144';
-        $respuesta_42 = '160';
-        $respuesta_43 = '176';
-        $respuesta_44 = '192';
-        
-        // Tabla del 17
-        $respuesta_45 = '34';
-        $respuesta_46 = '51';
-        $respuesta_47 = '68';
-        $respuesta_48 = '85';
-        $respuesta_49 = '102';
-        $respuesta_50 = '119';
-        $respuesta_51 = '136';
-        $respuesta_52 = '153';
-        $respuesta_53 = '170';
-        $respuesta_54 = '187';
-        $respuesta_55 = '204';
-        
-        // Tabla del 18
-        $respuesta_56 = '36';
-        $respuesta_57 = '54';
-        $respuesta_58 = '72';
-        $respuesta_59 = '90';
-        $respuesta_60 = '108';
-        $respuesta_61 = '126';
-        $respuesta_62 = '144';
-        $respuesta_63 = '162';
-        $respuesta_64 = '180';
-        $respuesta_65 = '198';
-        $respuesta_66 = '216';
-        
-        // Tabla del 19
-        $respuesta_67 = '38';
-        $respuesta_68 = '57';
-        $respuesta_69 = '76';
-        $respuesta_70 = '95';
-        $respuesta_71 = '114';
-        $respuesta_72 = '133';
-        $respuesta_73 = '152';
-        $respuesta_74 = '171';
-        $respuesta_75 = '190';
-        $respuesta_76 = '209';
-        $respuesta_77 = '228';
-        
-        // Tabla del 20
-        $respuesta_78 = '40';
-        $respuesta_79 = '60';
-        $respuesta_80 = '80';
-        $respuesta_81 = '100';
-        $respuesta_82 = '120';
-        $respuesta_83 = '140';
-        $respuesta_84 = '160';
-        $respuesta_85 = '180';
-        $respuesta_86 = '200';
-        $respuesta_87 = '220';
-        $respuesta_88 = '240';
-        
-        // Tabla del 21
-        $respuesta_89 = '42';
-        $respuesta_90 = '63';
-        $respuesta_91 = '84';
-        $respuesta_92 = '105';
-        $respuesta_93 = '126';
-        $respuesta_94 = '147';
-        $respuesta_95 = '168';
-        $respuesta_96 = '189';
-        $respuesta_97 = '210';
-        $respuesta_98 = '231';
-        $respuesta_99 = '252';
-        
-        // Tabla del 22
-        $respuesta_100 = '44';
-        $respuesta_101 = '66';
-        $respuesta_102 = '88';
+        $respuesta_6 = '\frac{m}{m_k}';
+        $respuesta_7 = 'producto';
+        $respuesta_8 = 'factores comunes';
+        $respuesta_9 = 'k';
+        $respuesta_10 = '1';
+        $respuesta_11 = 'M_k y_k\equiv1\pmod{m_k}';
+        $respuesta_12 = 'j';
+        $respuesta_13 = 'k';
+        $respuesta_14 = '0';
+        $respuesta_15 = 'x\equiva_kM_ky_k\equiva_k\pmod{m_k}';
+        $respuesta_16 = '105';
+        $respuesta_17 = '35';
+        $respuesta_18 = '21';
+        $respuesta_19 = '15';
+        $respuesta_20 = '2';
+        $respuesta_21 = '1';
+        $respuesta_22 = '1';
+        $respuesta_23 = '2*35*2';
+        $respuesta_24 = '3*21*1';
+        $respuesta_25 = '2*15*1';
+        $respuesta_26 = '233\equiv23\pmod{105}';
+        $respuesta_27 = '23';
+        $respuesta_28 = '2';
+        $respuesta_29 = '3';
+        $respuesta_30 = '2';
+        $respuesta_31 = 'igualdad';
+        $respuesta_32 = '5t+1';
+        $respuesta_33 = '5t+1\equiv2\pmod{6}';
+        $respuesta_34 = 't\equiv5\pmod{6}';
+        $respuesta_35 = '6u+5';
+        $respuesta_36 = '30u+26';
+        $respuesta_37 = '30u+26\equiv3\pmod{7}';
+        $respuesta_38 = 'u\equiv6\pmod{7}';
+        $respuesta_39 = '7v+6';
+        $respuesta_40 = 'x=30u+26';
+        $respuesta_41 = 'x=30(7v+6)+26=210v+206';
+        $respuesta_42 = 'x\equiv206\pmod{210}';
+        $respuesta_43 = 'relativamente primos';
+        $respuesta_44 = 'dos a dos';
+        $respuesta_45 = 'm';
+        $respuesta_46 = 'n-tupla';
+        $respuesta_47 = 'residuos';
+        $respuesta_48 = 'dividirlo';
+        $respuesta_49 = 'a \bmod m_1';
+        $respuesta_50 = 'a \bmod m_2';
+        $respuesta_51 = 'a \bmod m_n';
+        $respuesta_52 = '0';
+        $respuesta_53 = '0';
+        $respuesta_54 = '1';
+        $respuesta_55 = '1';
+        $respuesta_56 = '2';
+        $respuesta_57 = '2';
+        $respuesta_58 = '0';
+        $respuesta_59 = '3';
+        $respuesta_60 = '1';
+        $respuesta_61 = '0';
+        $respuesta_62 = '2';
+        $respuesta_63 = '1';
+        $respuesta_64 = '0';
+        $respuesta_65 = '2';
+        $respuesta_66 = '1';
+        $respuesta_67 = '3';
+        $respuesta_68 = '2';
+        $respuesta_69 = '0';
+        $respuesta_70 = '0';
+        $respuesta_71 = '1';
+        $respuesta_72 = '1';
+        $respuesta_73 = '2';
+        $respuesta_74 = '2';
+        $respuesta_75 = '3';
+        $respuesta_76 = '2';
+        $respuesta_77 = '1';
+        $respuesta_78 = 'mayor';
+        $respuesta_79 = 'resultados';
+        $respuesta_80 = 'componente';
+        $respuesta_81 = 'componente';
+        $respuesta_82 = 'residuos';
+        $respuesta_83 = 'm_i';
+        $respuesta_84 = 'recuperamos';
+        $respuesta_85 = 'paralelo';
+        $respuesta_86 = 'residuos';
+        $respuesta_87 = 'relativamente';
+        $respuesta_88 = 'mayor';
+        $respuesta_89 = 'menor';
+        $respuesta_90 = '89403930';
+        $respuesta_91 = 'dividirlo';
+        $respuesta_92 = 'cuatro modulos';
+        $respuesta_93 = '33';
+        $respuesta_94 = '8';
+        $respuesta_95 = '9';
+        $respuesta_96 = '89';
+        $respuesta_97 = '32';
+        $respuesta_98 = '92';
+        $respuesta_99 = '42';
+        $respuesta_100 = '16';
+        $respuesta_101 = '4';
+        $respuesta_102 = 'en lugar';
         $respuesta_103 = '110';
-        $respuesta_104 = '132'; 
-        $respuesta_105 = '154';
-        $respuesta_106 = '176';
-        $respuesta_107 = '198';
-        $respuesta_108 = '220';
-        $respuesta_109 = '242';
-        $respuesta_110 = '264';
-        
-        // Marcar todas como correctas
-    $verificar_1 = $verificar_2 = $verificar_3 = /* ... todas las variables de verificación ... */ $verificar_122 = "correcto";
+        $respuesta_104 = 'componente a componente';
+        $respuesta_105 = 'reducimos';
+        $respuesta_106 = '65,2,51,10';
+        $respuesta_107 = '65';
+        $respuesta_108 = '2';
+        $respuesta_109 = '51';
+        $respuesta_110 = '10';
+        $respuesta_111 = 'menor';
+        $respuesta_112 = 'mayores';
+        $respuesta_113 = 'modulos';
+        $respuesta_114 = '2^k-1';
+        $respuesta_115 = 'encontrar';
+        $respuesta_116 = '2^{\gcd(a,b)}-1';
+
+        // Marcar todas como correctas usando un bucle for
+        for ($i = 1; $i <= 116; $i++) {
+            ${"verificar_$i"} = "correcto";
+        }
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
    if ($respuesta_1 === 'dividido') {  
@@ -1333,7 +1308,7 @@ if ($respuesta_121 === '144') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 410vh;
+    height: 430vh;
     }
 </style>
  
@@ -1456,7 +1431,7 @@ function actualizarFormula9() {
 }
 
 function actualizarFormula10() {
-    var f = document.getElementById('respuesta_10').value || "";
+    var f = document.getElementById('respuesta_42').value || "";
     var formula = ` \\ ${f} \\, `;
     document.getElementById('formula10').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
@@ -1675,7 +1650,7 @@ function ocultarMensaje4() {
     
     <h4>Demostración:</h4>
     <p>Para establecer este teorema, necesitamos demostrar que existe una 
-     <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="8">    
+     <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="8">     
       y que es 
      <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="8">
       módulo 
@@ -1690,6 +1665,7 @@ function ocultarMensaje4() {
     módulo 
     <input type="text" value="<?php echo $respuesta_5; ?>" size="8" readonly>
     es el Ejercicio 30.</p>
+
 
     <p>Para construir una solución simultánea, primero dejemos</p>
     
@@ -1720,7 +1696,19 @@ function ocultarMensaje4() {
     value="<?php echo $respuesta_11?>" size="20" >
 
  
-
+        <button type="submit">Enviar</button> 
+    <?php echo $verificar_1 ?>
+    <?php echo $verificar_2 ?>
+    <?php echo $verificar_3 ?>
+    <?php echo $verificar_4 ?>
+    <?php echo $verificar_5 ?>
+    <?php echo $verificar_6 ?>
+    <?php echo $verificar_7 ?>  
+    <?php echo $verificar_8 ?>
+    <?php echo $verificar_9 ?>
+    <?php echo $verificar_10 ?>
+    <?php echo $verificar_11 ?> 
+    <hr>
     <p>Para construir una solución simultánea, formamos la suma</p>
     \[ x = a_1 M_1 y_1 + a_2 M_2 y_2 + \cdots + a_n M_n y_n. \]
 
@@ -2067,10 +2055,17 @@ function ocultarMensaje4() {
         imagenMostrada16.style.display = 'none';
         }
     </script>
-     
+   
     <p>El <strong>Ejemplo 5</strong> ilustra cómo usar la construcción dada en nuestra demostración del 
     teorema del resto chino para resolver un sistema de congruencias. Resolvemos el sistema dado en 
     el <strong>Ejemplo 4</strong>, que surge en el acertijo de Sun-Tsu.</p>
+
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_12 ?>
+    <?php echo $verificar_13 ?>
+    <?php echo $verificar_14 ?>
+    <?php echo $verificar_15 ?>
+    <hr>
 
     <h3>Ejemplo 5</h3>
 
@@ -2111,6 +2106,17 @@ function ocultarMensaje4() {
     <input type="text"  value="<?php echo $respuesta_19; ?>" size="1" readonly>
     módulo 7. 
     <br><br>
+
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_16 ?>
+    <?php echo $verificar_17 ?>
+    <?php echo $verificar_18 ?>
+    <?php echo $verificar_19 ?>
+    <?php echo $verificar_20 ?>
+    <?php echo $verificar_21 ?>
+    <?php echo $verificar_22 ?>
+
+    <hr>
     Las soluciones a este sistema son los valores de \(x\) tales que:</p>
     \( x \equiv a_1M_1y_1 + a_2M_2y_2 + a_3M_3y_3 =
     \)
@@ -2166,6 +2172,18 @@ function ocultarMensaje4() {
     \[ x \equiv 2 \pmod{6}, \]
     \[ x \equiv 3 \pmod{7}. \]
     
+
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_23 ?>
+    <?php echo $verificar_24 ?>
+    <?php echo $verificar_25 ?>
+    <?php echo $verificar_26 ?>
+    <?php echo $verificar_27 ?>
+    <?php echo $verificar_28 ?>
+    <?php echo $verificar_29 ?>
+    <?php echo $verificar_30 ?>
+    <hr>
+
     <h4>Solución:</h4>
     <p>Por el Teorema 4 en la Sección 4.1, la primera congruencia puede ser reescrita como una 
     <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="8">     
@@ -2223,8 +2241,25 @@ function ocultarMensaje4() {
     </span> 
     <input type="text" name="respuesta_41"   id="respuesta_41" oninput="actualizarFormula9()" 
     value="<?php echo $respuesta_41?>" size="22" >  
+
+
+
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_31 ?>
+    <?php echo $verificar_32 ?>
+    <?php echo $verificar_33 ?>
+    <?php echo $verificar_34 ?>
+    <?php echo $verificar_35 ?>
+    <?php echo $verificar_36 ?>
+    <?php echo $verificar_37 ?>
+    <?php echo $verificar_38 ?>
+    <?php echo $verificar_39 ?>
+    <?php echo $verificar_40 ?>
+    <?php echo $verificar_41 ?>
+    <hr>
+
     <p>Traduciendo esto de nuevo a una congruencia, encontramos la solución para las congruencias simultáneas:</p>
-    <span id="formula9">
+    <span id="formula10">
         \(     \)
     </span> 
     <input type="text" name="respuesta_42"   id="respuesta_42" oninput="actualizarFormula10()" 
@@ -2331,19 +2366,25 @@ function ocultarMensaje4() {
     <strong>solucion final</strong>
    </p>
    <!-- Botón 22 -->
-<button onmousedown="mostrarImagen22()" onmouseup="ocultarImagen22()">Ayuda</button>
-<img id="imagenMostrada22" src="../../../../img/solucion_primero.png" style="display: none; max-width: 100%" >
+    <button onmousedown="mostrarImagen22()" onmouseup="ocultarImagen22()">Ayuda</button>
+    <img id="imagenMostrada22" src="../../../../img/solucion_primero.png" style="display: none; max-width: 100%" >
 
-<!-- Botón 23 -->
-<button onmousedown="mostrarImagen23()" onmouseup="ocultarImagen23()">Ayuda</button>
-<img id="imagenMostrada23" src="../../../../img/paso_3.png" style="display: none; max-width: 100%" >
+    <!-- Botón 23 -->
+    <button onmousedown="mostrarImagen23()" onmouseup="ocultarImagen23()">Ayuda</button>
+    <img id="imagenMostrada23" src="../../../../img/paso_3.png" style="display: none; max-width: 100%" >
 
-<!-- Botón 24 -->
-<button onmousedown="mostrarImagen24()" onmouseup="ocultarImagen24()">Ayuda</button>
-<img id="imagenMostrada24" src="../../../../img/paso_final.png" style="display: none; max-width: 100%"  width="460">
+    <!-- Botón 24 -->
+    <button onmousedown="mostrarImagen24()" onmouseup="ocultarImagen24()">Ayuda</button>
+    <img id="imagenMostrada24" src="../../../../img/paso_final.png" style="display: none; max-width: 100%"  width="460">
 
  
-    <P>la tecnica es tratar al sistema como un sistema real de ecuaciones,inecuaciones, restando a ambos lados, reemplazando...</P>
+    <P>la tecnica es tratar al sistema como un sistema real de ecuaciones,inecuaciones, 
+    restando a ambos lados, reemplazando...</P>
+    
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_42 ?>
+
+    <hr>
     </form>
 </div>
 
@@ -2381,6 +2422,17 @@ function ocultarMensaje4() {
     value="<?php echo $respuesta_50?>" size="22">  
     <input type="text" name="respuesta_51"   id="respuesta_51" oninput="actualizarFormula11()" 
     value="<?php echo $respuesta_51?>" size="22">  
+
+    <br><br>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_45 ?>
+    <?php echo $verificar_46 ?>
+    <?php echo $verificar_47 ?>
+    <?php echo $verificar_48 ?>
+    <?php echo $verificar_49 ?>
+    <?php echo $verificar_50 ?>
+    <?php echo $verificar_51 ?>
+    <hr>
 
     <h3>Ejemplo 7</h3>
     <p>¿Cuáles son los pares utilizados para representar los enteros no negativos menores que 12 cuando 
@@ -2450,6 +2502,7 @@ function ocultarMensaje4() {
       resultados de las operaciones aritméticas que queremos 
     realizar.</p>
 
+
     <p>Una vez que hemos seleccionado nuestros módulos, realizamos operaciones aritméticas con enteros grandes 
     efectuando operaciones 
     <input type="text" name="respuesta_80" value="<?php echo $respuesta_80; ?>" size="9">
@@ -2465,6 +2518,51 @@ function ocultarMensaje4() {
       su valor resolviendo un sistema de \( n \) congruencias módulo 
     \( m_i \), para \( i = 1, 2, \ldots, n \).</p>
 
+
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_43 ?>
+    <?php echo $verificar_44 ?>
+    <?php echo $verificar_45 ?>
+    <?php echo $verificar_46 ?>
+    <?php echo $verificar_47 ?>
+    <?php echo $verificar_48 ?>
+    <?php echo $verificar_49 ?>
+    <?php echo $verificar_50 ?>
+    <?php echo $verificar_51 ?>
+    <?php echo $verificar_52 ?>
+    <?php echo $verificar_53 ?>
+    <?php echo $verificar_54 ?>
+    <?php echo $verificar_55 ?>
+    <?php echo $verificar_56 ?>
+    <?php echo $verificar_57 ?>
+    <?php echo $verificar_58 ?>
+    <?php echo $verificar_59 ?>
+    <?php echo $verificar_60 ?>
+    <?php echo $verificar_61 ?>
+    <?php echo $verificar_62 ?>
+    <?php echo $verificar_63 ?>
+    <?php echo $verificar_64 ?>
+    <?php echo $verificar_65 ?>
+    <?php echo $verificar_66 ?>
+     <?php echo $verificar_67 ?>
+    <?php echo $verificar_68 ?>
+    <?php echo $verificar_69 ?>
+    <?php echo $verificar_70 ?>
+    <?php echo $verificar_71 ?>
+    <?php echo $verificar_72 ?>
+    <?php echo $verificar_73 ?>
+    <?php echo $verificar_74 ?>
+    <?php echo $verificar_75 ?>
+    <?php echo $verificar_76 ?>
+    <?php echo $verificar_77 ?>
+    <?php echo $verificar_78 ?>
+    <?php echo $verificar_79 ?>
+    <?php echo $verificar_80 ?> 
+    <?php echo $verificar_81 ?>
+    <?php echo $verificar_82 ?>
+    <?php echo $verificar_83 ?>
+    <?php echo $verificar_84 ?>
+    <hr>
     <p>Este método de realizar aritmética con enteros grandes tiene varias ventajas importantes. Primero, puede 
     utilizarse para realizar aritmética con enteros más grandes de lo que normalmente se puede manejar en una 
     computadora. Segundo, los cálculos con respecto a los diferentes módulos pueden hacerse en 
@@ -2496,6 +2594,17 @@ function ocultarMensaje4() {
     <input type="text" name="respuesta_92" value="<?php echo $respuesta_92; ?>" size="14">
      .</p>
 
+
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_85 ?>
+    <?php echo $verificar_86 ?>
+    <?php echo $verificar_87 ?>
+    <?php echo $verificar_88 ?>
+    <?php echo $verificar_89 ?>
+    <?php echo $verificar_90 ?>
+    <?php echo $verificar_91 ?>
+    <?php echo $verificar_92 ?>
+    <hr>
     <p>Por ejemplo, representamos 123,684 como (
     <input type="text" name="respuesta_93" value="<?php echo $respuesta_93; ?>" size="1">,
     <input type="text" name="respuesta_94" value="<?php echo $respuesta_94; ?>" size="1">,
@@ -2525,6 +2634,7 @@ function ocultarMensaje4() {
     <input type="text" name="respuesta_100" value="<?php echo $respuesta_100; ?>" size="1">
     ).</p>
 
+
     <p>Para hallar la suma de 123,684 y 413,456, trabajamos con estas 
     <input type="text" name="respuesta_101" value="<?php echo $respuesta_101; ?>" size="1">    
     -tuplas 
@@ -2544,7 +2654,22 @@ function ocultarMensaje4() {
 </p>
 
  
-
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_93 ?>
+    <?php echo $verificar_94 ?>
+    <?php echo $verificar_95 ?>
+    <?php echo $verificar_96 ?>
+    <?php echo $verificar_97 ?>
+    <?php echo $verificar_98 ?> 
+    <?php echo $verificar_99 ?>
+    <?php echo $verificar_100 ?>
+    <?php echo $verificar_101 ?>
+    <?php echo $verificar_102 ?>
+    <?php echo $verificar_103 ?>
+    <?php echo $verificar_104 ?>
+    <?php echo $verificar_105 ?>
+    <?php echo $verificar_106 ?>
+    <hr>
     <p>Para hallar la suma, es decir, el entero representado por
     <input type="text" value="<?php echo $respuesta_106; ?>" size="11" readonly>
     , necesitamos resolver el sistema 
@@ -2604,8 +2729,19 @@ function ocultarMensaje4() {
     , como 
     muestra el Ejercicio 37 de la Sección 4.3.)</p>
 
-      
-    
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_107 ?>
+    <?php echo $verificar_108 ?>
+    <?php echo $verificar_109 ?>
+    <?php echo $verificar_110 ?> 
+    <?php echo $verificar_111 ?> 
+    <?php echo $verificar_112 ?> 
+    <?php echo $verificar_113 ?>
+    <?php echo $verificar_114 ?>
+    <?php echo $verificar_115 ?>
+    <?php echo $verificar_116 ?>
+b
+    <br><br>
     
     
     
@@ -2640,6 +2776,13 @@ function ocultarMensaje4() {
 
     <hr>
     <p><strong>siguiente</strong></p>
+    <hr>
+    <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
+    <br>
+    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
+    <button type="submit"   >Mostrar Solución</button>
+        
+
     </form>
 </div>
 

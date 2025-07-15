@@ -1596,29 +1596,29 @@ function ocultarMensaje4() {
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
                    <h4>Tabla del 12</h4>
     12 * 2 = <input type="text" name="respuesta_111" value="<?php echo $respuesta_111; ?>"><br>
-        12 * 3 = <input type="text" name="respuesta_112" value="<?php echo $respuesta_112; ?>"><br>
-        12 * 4 = <input type="text" name="respuesta_113" value="<?php echo $respuesta_113; ?>"><br>
-        12 * 5 = <input type="text" name="respuesta_114" value="<?php echo $respuesta_114; ?>"><br>
-        12 * 6 = <input type="text" name="respuesta_115" value="<?php echo $respuesta_115; ?>"><br>
-        12 * 7 = <input type="text" name="respuesta_116" value="<?php echo $respuesta_116; ?>"><br>
-        12 * 8 = <input type="text" name="respuesta_117" value="<?php echo $respuesta_117; ?>"><br>
-        12 * 9 = <input type="text" name="respuesta_118" value="<?php echo $respuesta_118; ?>"><br>
-        12 * 10 = <input type="text" name="respuesta_119" value="<?php echo $respuesta_119; ?>"><br>
-        12 * 11 = <input type="text" name="respuesta_120" value="<?php echo $respuesta_120; ?>"><br>
-        12 * 12 = <input type="text" name="respuesta_121" value="<?php echo $respuesta_121; ?>"><br>
-        <button type="submit">Enviar</button>
+    12 * 3 = <input type="text" name="respuesta_112" value="<?php echo $respuesta_112; ?>"><br>
+    12 * 4 = <input type="text" name="respuesta_113" value="<?php echo $respuesta_113; ?>"><br>
+    12 * 5 = <input type="text" name="respuesta_114" value="<?php echo $respuesta_114; ?>"><br>
+    12 * 6 = <input type="text" name="respuesta_115" value="<?php echo $respuesta_115; ?>"><br>
+    12 * 7 = <input type="text" name="respuesta_116" value="<?php echo $respuesta_116; ?>"><br>
+    12 * 8 = <input type="text" name="respuesta_117" value="<?php echo $respuesta_117; ?>"><br>
+    12 * 9 = <input type="text" name="respuesta_118" value="<?php echo $respuesta_118; ?>"><br>
+    12 * 10 = <input type="text" name="respuesta_119" value="<?php echo $respuesta_119; ?>"><br>
+    12 * 11 = <input type="text" name="respuesta_120" value="<?php echo $respuesta_120; ?>"><br>
+    12 * 12 = <input type="text" name="respuesta_121" value="<?php echo $respuesta_121; ?>"><br>
+    <button type="submit">Enviar</button>
 
-        <?php echo $verificar_111 ?>
-        <?php echo $verificar_112 ?>
-        <?php echo $verificar_113 ?>
-        <?php echo $verificar_114 ?>
-        <?php echo $verificar_115 ?>
-        <?php echo $verificar_116 ?>
-        <?php echo $verificar_117 ?>
-        <?php echo $verificar_118 ?>
-        <?php echo $verificar_119 ?>
-        <?php echo $verificar_120 ?>
-        <?php echo $verificar_121 ?>
+    <?php echo $verificar_111 ?>
+    <?php echo $verificar_112 ?>
+    <?php echo $verificar_113 ?>
+    <?php echo $verificar_114 ?>
+    <?php echo $verificar_115 ?>
+    <?php echo $verificar_116 ?>
+    <?php echo $verificar_117 ?>
+    <?php echo $verificar_118 ?>
+    <?php echo $verificar_119 ?>
+    <?php echo $verificar_120 ?>
+    <?php echo $verificar_121 ?>
 
     <br><br>
     13 * 2 = <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>"><br>
@@ -1644,57 +1644,56 @@ function ocultarMensaje4() {
     <?php echo $verificar_9 ?>
     <?php echo $verificar_10 ?>
     <?php echo $verificar_11 ?> 
-            <br><br><br>
+    <br><br><br>
 
-            14 * 2 = <input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>"><br>
-            14 * 3 = <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>"><br>
-            14 * 4 = <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>"><br>
-            14 * 5 = <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>"><br>
-            14 * 6 = <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>"><br>
-            14 * 7 = <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>"><br>
-            14 * 8 = <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>"><br>
-            14 * 9 = <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>"><br>
-            14 * 10 = <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>"><br>
-            14 * 11 = <input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>"><br>
-            14 * 12 = <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>"><br>
-            <button type="submit">Enviar</button>
-            
-            <?php echo $verificar_12 ?>
-<?php echo $verificar_13 ?>
-<?php echo $verificar_14 ?>
-<?php echo $verificar_15 ?>
-<?php echo $verificar_16 ?>
-<?php echo $verificar_17 ?>
-<?php echo $verificar_18 ?>
-<?php echo $verificar_19 ?>
-<?php echo $verificar_20 ?>
-<?php echo $verificar_21 ?>
-<?php echo $verificar_22 ?>
-            <br><br><br>
+    14 * 2 = <input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>"><br>
+    14 * 3 = <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>"><br>
+    14 * 4 = <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>"><br>
+    14 * 5 = <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>"><br>
+    14 * 6 = <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>"><br>
+    14 * 7 = <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>"><br>
+    14 * 8 = <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>"><br>
+    14 * 9 = <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>"><br>
+    14 * 10 = <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>"><br>
+    14 * 11 = <input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>"><br>
+    14 * 12 = <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>"><br>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_12 ?>
+    <?php echo $verificar_13 ?>
+    <?php echo $verificar_14 ?>
+    <?php echo $verificar_15 ?>
+    <?php echo $verificar_16 ?>
+    <?php echo $verificar_17 ?>
+    <?php echo $verificar_18 ?>
+    <?php echo $verificar_19 ?>
+    <?php echo $verificar_20 ?>
+    <?php echo $verificar_21 ?>
+    <?php echo $verificar_22 ?>
+    <br><br><br>
 
-            15 * 2 = <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>"><br>
-            15 * 3 = <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>"><br>
-            15 * 4 = <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>"><br>
-            15 * 5 = <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>"><br>
-            15 * 6 = <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>"><br>
-            15 * 7 = <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>"><br>
-            15 * 8 = <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>"><br>
-            15 * 9 = <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>"><br>
-            15 * 10 = <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>"><br>
-            15 * 11 = <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>"><br>
-            15 * 12 = <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>"><br>
-            <button type="submit">Enviar</button>
-            <?php echo $verificar_23 ?>
-<?php echo $verificar_24 ?>
-<?php echo $verificar_25 ?>
-<?php echo $verificar_26 ?>
-<?php echo $verificar_27 ?>
-<?php echo $verificar_28 ?>
-<?php echo $verificar_29 ?>
-<?php echo $verificar_30 ?>
-<?php echo $verificar_31 ?>
-<?php echo $verificar_32 ?>
-<?php echo $verificar_33 ?>
+    15 * 2 = <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>"><br>
+    15 * 3 = <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>"><br>
+    15 * 4 = <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>"><br>
+    15 * 5 = <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>"><br>
+    15 * 6 = <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>"><br>
+    15 * 7 = <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>"><br>
+    15 * 8 = <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>"><br>
+    15 * 9 = <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>"><br>
+    15 * 10 = <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>"><br>
+    15 * 11 = <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>"><br>
+    15 * 12 = <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>"><br>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_23 ?>
+    <?php echo $verificar_24 ?>
+    <?php echo $verificar_25 ?>
+    <?php echo $verificar_26 ?>
+    <?php echo $verificar_27 ?>
+    <?php echo $verificar_28 ?>
+    <?php echo $verificar_29 ?>
+    <?php echo $verificar_30 ?>
+    <?php echo $verificar_31 ?>
+    <?php echo $verificar_32 ?>
+    <?php echo $verificar_33 ?>
              <br><br><br>
 
             16 * 2 = <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>"><br>
@@ -1708,18 +1707,18 @@ function ocultarMensaje4() {
             16 * 10 = <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>"><br>
             16 * 11 = <input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>"><br>
             16 * 12 = <input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>"><br>
-            <button type="submit">Enviar</button>
-            <?php echo $verificar_34 ?>
-<?php echo $verificar_35 ?>
-<?php echo $verificar_36 ?>
-<?php echo $verificar_37 ?>
-<?php echo $verificar_38 ?>
-<?php echo $verificar_39 ?>
-<?php echo $verificar_40 ?>
-<?php echo $verificar_41 ?>
-<?php echo $verificar_42 ?>
-<?php echo $verificar_43 ?>
-<?php echo $verificar_44 ?>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_34 ?>
+    <?php echo $verificar_35 ?>
+    <?php echo $verificar_36 ?>
+    <?php echo $verificar_37 ?>
+    <?php echo $verificar_38 ?>
+    <?php echo $verificar_39 ?>
+    <?php echo $verificar_40 ?>
+    <?php echo $verificar_41 ?>
+    <?php echo $verificar_42 ?>
+    <?php echo $verificar_43 ?>
+    <?php echo $verificar_44 ?>
             <br><br><br>
 
             17 * 2 = <input type="text" name="respuesta_45" value="<?php echo $respuesta_45; ?>"><br>
@@ -1733,18 +1732,18 @@ function ocultarMensaje4() {
             17 * 10 = <input type="text" name="respuesta_53" value="<?php echo $respuesta_53; ?>"><br>
             17 * 11 = <input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>"><br>
             17 * 12 = <input type="text" name="respuesta_55" value="<?php echo $respuesta_55; ?>"><br>
-            <button type="submit">Enviar</button>
-            <?php echo $verificar_45 ?>
-        <?php echo $verificar_46 ?>
-        <?php echo $verificar_47 ?>
-        <?php echo $verificar_48 ?>
-        <?php echo $verificar_49 ?>
-        <?php echo $verificar_50 ?>
-        <?php echo $verificar_51 ?>
-        <?php echo $verificar_52 ?>
-        <?php echo $verificar_53 ?>
-        <?php echo $verificar_54 ?>
-        <?php echo $verificar_55 ?>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_45 ?>
+    <?php echo $verificar_46 ?>
+    <?php echo $verificar_47 ?>
+    <?php echo $verificar_48 ?>
+    <?php echo $verificar_49 ?>
+    <?php echo $verificar_50 ?>
+    <?php echo $verificar_51 ?>
+    <?php echo $verificar_52 ?>
+    <?php echo $verificar_53 ?>
+    <?php echo $verificar_54 ?>
+    <?php echo $verificar_55 ?>
     </form>
 </div>
 
@@ -1765,17 +1764,17 @@ function ocultarMensaje4() {
 18 * 11 = <input type="text" name="respuesta_65" value="<?php echo $respuesta_65; ?>"><br>
 18 * 12 = <input type="text" name="respuesta_66" value="<?php echo $respuesta_66; ?>"><br>
 <button type="submit">Enviar</button>
-<?php echo $verificar_56 ?>
-<?php echo $verificar_57 ?>
-<?php echo $verificar_58 ?>
-<?php echo $verificar_59 ?>
-<?php echo $verificar_60 ?>
-<?php echo $verificar_61 ?>
-<?php echo $verificar_62 ?>
-<?php echo $verificar_63 ?>
-<?php echo $verificar_64 ?>
-<?php echo $verificar_65 ?>
-<?php echo $verificar_66 ?>
+    <?php echo $verificar_56 ?>
+    <?php echo $verificar_57 ?>
+    <?php echo $verificar_58 ?>
+    <?php echo $verificar_59 ?>
+    <?php echo $verificar_60 ?>
+    <?php echo $verificar_61 ?>
+    <?php echo $verificar_62 ?>
+    <?php echo $verificar_63 ?>
+    <?php echo $verificar_64 ?>
+    <?php echo $verificar_65 ?>
+    <?php echo $verificar_66 ?>
 <br><br><br>
 19 * 2 = <input type="text" name="respuesta_67" value="<?php echo $respuesta_67; ?>"><br>
 19 * 3 = <input type="text" name="respuesta_68" value="<?php echo $respuesta_68; ?>"><br>
@@ -1874,7 +1873,7 @@ function ocultarMensaje4() {
     <?php echo $verificar_109 ?>
     <?php echo $verificar_110 ?>
     <br><br><br>
-
+ 
     <hr>
     <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
     <br>

@@ -1123,8 +1123,8 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../../style.css">
+    <link rel="stylesheet" href="../../../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../../../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
@@ -1136,7 +1136,7 @@ if ($respuesta_110 === '264') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 445vh;
+    height: 360vh;
     }
 </style>
  
@@ -1440,124 +1440,220 @@ function ocultarMensaje4() {
 <body> 
 <div class="seccion izquierda">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h1>8.2 Separación de variables</h1>
-  <p>
-    En la sección anterior discutimos dos métodos para aproximar la solución de una ecuación diferencial
-    $$\dot{x} = f(x, t)$$
-    con condición inicial \( x(t_0) = x_0 \). Ahora consideraremos, en esta sección así como en las Secciones 8.3 y 8.4, técnicas para encontrar soluciones en forma cerrada para tales ecuaciones, es decir, soluciones que puedan expresarse en términos de las funciones elementales del cálculo. Para lograrlo, será necesario considerar distintas clases de ecuaciones dependiendo de la forma de la función \( f \). Como en la integración ordinaria, encontrar una expresión en forma cerrada para la solución de una ecuación diferencial es con frecuencia un problema difícil, si no imposible, que requiere aprovechar cualquier información que podamos obtener de la forma de la función.
-  </p>
-  <p>
-    En esta sección consideraremos una clase de ecuaciones conocidas como ecuaciones separables y en las Secciones 8.3 y 8.4 consideraremos ecuaciones lineales.
-  </p>
-  <p>
-    Llamamos a una ecuación diferencial
-    $$\dot{x} = f(x, t) \tag{8.2.1}$$
-    con condición inicial \( x(t_0) = x_0 \), separable, o decimos que tiene variables separables, si \( f(x, t) = g(x)h(t) \) para algunas funciones \( g \) y \( h \), donde \( g \) depende solo de \( x \) y \( h \) depende solo de \( t \). Supondremos que \( g \) y \( h \) son ambas funciones continuas y, por lo tanto, en particular, integrables.
-  </p>
-  <p>
-    En ese caso, (8.2.1) se convierte en:
-    $$\dot{x} = g(x)h(t) \tag{8.2.2}$$
-    lo cual implica que:
-    $$\frac{\dot{x}}{g(x)} = h(t) \tag{8.2.3}$$
-    en todos los puntos para los cuales \( g(x) \ne 0 \). Integrando (8.2.3) desde \( t_0 \) hasta \( t \) (suponiendo que \( g(x(s)) \ne 0 \) para todo \( s \) entre \( t_0 \) y \( t \)), tenemos:
-    $$\int_{t_0}^{t} \frac{1}{g(x(s))} \dot{x}(s)\,ds = \int_{t_0}^{t} h(s)\,ds \tag{8.2.4}$$
-    donde hemos usado \( s \) como variable de integración para que nuestra respuesta esté en términos de \( t \). Ahora, usando el cambio de variable:
-    \[
-    u = x(s), \quad du = \dot{x}(s)\,ds
-    \]
-    obtenemos:
-    $$\int_{t_0}^{t} \frac{1}{g(x(s))} \dot{x}(s)\,ds = \int_{x(t_0)}^{x(t)} \frac{1}{g(u)}\,du = \int_{x_0}^{x} \frac{1}{g(u)}\,du \tag{8.2.5}$$
-    para la integral del lado izquierdo. Por lo tanto, combinando (8.2.4) y (8.2.5), se tiene:
-    $$\int_{x_0}^{x} \frac{1}{g(u)}\,du = \int_{t_0}^{t} h(s)\,ds \tag{8.2.6}$$
-  </p>
-  <p>
-    Así, podemos resolver una ecuación con variables separables siempre que podamos evaluar ambas integrales en (8.2.6) y luego resolver la ecuación resultante para \( x \). El proceso puede fallar en alguno de estos dos pasos finales, en cuyo caso debemos recurrir a aproximaciones numéricas, aun cuando la ecuación sea separable.
-  </p>
-  <h3>Proposición 8.2.1 (Separación de variables)</h3>
-  <p>
-    Si \( g \) y \( h \) son funciones continuas de \( x \) y \( t \), respectivamente, y \( x \) satisface la ecuación diferencial
-    $$\dot{x} = g(x)h(t) \tag{8.2.7}$$
-    con \( x(t_0) = x_0 \), entonces
-    $$\int_{x_0}^{x} \frac{1}{g(u)}\,du = \int_{t_0}^{t} h(s)\,ds \tag{8.2.8}$$
-    siempre que \( g(u) \ne 0 \) para todo \( u \) entre \( x_0 \) y \( x \).
-  </p>
-  <p>
-    Nótese que este es el mismo método que usamos para resolver la ecuación del modelo de crecimiento inhibido en la Sección 6.3.
-  </p>
-  <h3>Ejemplo 8.2.1</h3>
-  <p>
-    Consideremos la ecuación:
-    $$
-    \dot{x} = 0.4x
-    $$
-    con \( x(0) = 100 \). Esta es una ecuación separable con, en la notación usada anteriormente,
-    \( g(x) = x \) y \( h(t) = 0.4 \). (Nótese que las elecciones para \( g \) y \( h \) no son únicas.)
-    Usando (8.2.8), tenemos:
-    $$
-    \int_{100}^{x} \frac{1}{u}\,du = \int_0^{t} 0.4\,ds.
-    $$
-    Ahora, suponiendo que \( x > 0 \),
-    $$
-    \int_{100}^{x} \frac{1}{u}\,du = \log(u) \bigg|_{100}^{x} = \log(x) - \log(100) = \log\left(\frac{x}{100}\right),
-    $$
-    y
-    $$
-    \int_0^{t} 0.4\,ds = 0.4s \bigg|_0^{t} = 0.4t.
-    $$
-    Por lo tanto, tenemos:
-    $$
-    \log\left(\frac{x}{100}\right) = 0.4t,
-    $$
-    de donde obtenemos:
-    $$
-    \frac{x}{100} = e^{0.4t},
-    $$
-    y, finalmente:
-    $$
-    x = 100e^{0.4t}.
-    $$
-    Nótese que esta es la solución que deberíamos esperar de nuestro estudio de ecuaciones de esta forma en las Secciones 6.1 y 6.3.
-  </p>
+    <h2>Resolución de la ecuación diferencial: \( x \, y' = y \)</h2>
 
-  <h3>Ejemplo 8.2.2</h3>
-  <p>
-    Consideremos la ecuación:
-    $$
-    \dot{y} = -2yt \tag{8.2.9}
-    $$
-    con \( y(0) = y_0 \ne 0 \). Esta es una ecuación separable con, en la notación usada anteriormente,
-    \( g(y) = y \) y \( h(t) = -2t \). Usando (8.2.8), tenemos:
-    $$
-    \int_{y_0}^{y} \frac{1}{u}\,du = -\int_0^{t} 2s\,ds.
-    $$
-    Ahora:
-    $$
-    \int_{y_0}^{y} \frac{1}{u}\,du = \log|u| \bigg|_{y_0}^{y} = \log|y| - \log|y_0| = \log\left|\frac{y}{y_0}\right|,
-    $$
-    y
-    $$
-    -\int_0^{t} 2s\,ds = -s^2 \bigg|_0^{t} = -t^2.
-    $$
-    Por lo tanto, tenemos:
-    $$
-    \log\left|\frac{y}{y_0}\right| = -t^2,
-    $$
-    de donde se sigue que:
-    $$
-    \left|\frac{y}{y_0}\right| = e^{-t^2}.
-    $$
-    Ahora, \( e^{-t^2} > 0 \) para todo \( t \), por lo que \( y(t) \) nunca es cero. Dado que \( y \) es continua (lo cual se sigue de que es diferenciable), esto significa que o bien \( y(t) > 0 \) para todo \( t \), o bien \( y(t) < 0 \) para todo \( t \). Ya que \( y(0) = y_0 \), se tiene que:
-  </p>
-  <ul>
-    <li>Si \( y_0 > 0 \), entonces \( y(t) > 0 \) para todo \( t \).</li>
-    <li>Si \( y_0 < 0 \), entonces \( y(t) < 0 \) para todo \( t \).</li>
-  </ul>
-  <p>
-    En cualquier caso:
-    $$
-    \frac{y(t)}{y_0} > 0.
-    $$
-  </p>
+<p>
+Esta es una <strong>ecuación diferencial separable</strong>, lo que significa que podemos separar las variables y resolverla integrando ambos lados.
+</p>
+
+<h3>1. Reescribimos la ecuación</h3>
+
+<p>
+Primero, escribimos \( y' \) como derivada explícita:
+</p>
+
+<p style="text-align: center;">
+\( y' = \frac{dy}{dx} \)
+</p>
+
+<p>
+Sustituimos en la ecuación original:
+</p>
+
+<p style="text-align: center;">
+\( x \cdot \frac{dy}{dx} = y \)
+</p>
+
+<h3>2. Separación de variables</h3>
+
+<p>
+Pasamos todas las \( y \) al lado izquierdo y las \( x \) al lado derecho:
+</p>
+
+<p style="text-align: center;">
+\( \frac{dy}{y} = \frac{dx}{x} \)
+</p>
+
+<h3>3. Integramos ambos lados</h3>
+
+<p>
+Integramos ambas partes de la ecuación:
+</p>
+
+<p style="text-align: center;">
+\( \int \frac{1}{y} \, dy = \int \frac{1}{x} \, dx \)
+</p>
+
+<p>
+Estas integrales son inmediatas:
+</p>
+
+<p style="text-align: center;">
+\( \ln|y| + C_1 = \ln|x| + C_2 \)
+</p>
+
+<p>
+Restamos las constantes:
+</p>
+
+<p style="text-align: center;">
+\( \ln|y| = \ln|x| + (C_2 - C_1) \)
+</p>
+
+<p>
+Denotamos \( C = C_2 - C_1 \), ya que sigue siendo una constante:
+</p>
+
+<p style="text-align: center;">
+\( \ln|y| = \ln|x| + C \)
+</p>
+
+<h3>4. Eliminamos el logaritmo natural</h3>
+
+<p>
+Aplicamos exponencial a ambos lados para despejar \( y \):
+</p>
+
+<p style="text-align: center;">
+\( |y| = e^{\ln|x| + C} = e^{\ln|x|} \cdot e^C = |x| \cdot e^C \)
+</p>
+
+<p>
+Como \( e^C \) es una constante positiva, podemos escribir:
+</p>
+
+<p style="text-align: center;">
+\( |y| = Cx \quad \text{(con } C > 0\text{)} \)
+</p>
+
+<p>
+Eliminando el valor absoluto, y permitiendo que la constante sea positiva o negativa (pues eso ya está incluido en el signo de \( C \)), obtenemos:
+</p>
+
+<p style="text-align: center;">
+\( y = Cx \)
+</p>
+
+<h3>5. Verificación</h3>
+
+<p>
+Nuestra solución propuesta es:
+</p>
+
+<p style="text-align: center;">
+\( y = Cx \)
+</p>
+
+<p>
+Calculamos la derivada:
+</p>
+
+<p style="text-align: center;">
+\( y' = C \)
+</p>
+
+<p>
+Sustituimos en la ecuación original:
+</p>
+
+<p style="text-align: center;">
+\( x \cdot y' = y \)
+<br><br>
+\( xC = Cx  \)
+</p>
+
+<p>
+Como se cumple la igualdad, <strong>nuestra solución es correcta</strong>.
+</p>
+
+<h3>Conclusión</h3>
+
+<p>
+La solución general de la ecuación diferencial \( x \, y' = y \) es:
+</p>
+
+<p style="text-align: center; font-size: 1.3em;">
+\( \boxed{y = Cx} \)
+</p>
+    <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+    <h2>Resolución de la ecuación diferencial</h2>
+
+<p>Vamos a resolver la siguiente ecuación diferencial:</p>
+
+<p>\[
+y' = y
+\]</p>
+
+<p>Escribimos \( y' \) como \( \frac{dy}{dx} \):</p>
+
+<p>\[
+\frac{dy}{dx} = y
+\]</p>
+
+<p>Multiplicamos ambos lados por \( dx \):</p>
+
+<p>\[
+dy = y \, dx
+\]</p>
+
+<p>Ahora pasamos \( y \) dividiendo al lado izquierdo:</p>
+
+<p>\[
+\frac{dy}{y} = dx
+\]</p>
+
+<p>Integramos ambos lados:</p>
+
+<p>\[
+\int \frac{dy}{y} = \int dx
+\]</p>
+
+<p>Resolvemos las integrales:</p>
+
+<p>\[
+\ln|y| = x + C
+\]</p>
+
+<p>Despejamos \( y \) aplicando la exponencial en ambos lados:</p>
+
+<p>\[
+y = e^{x + C}
+\]</p>
+
+<p>Usando propiedades de los exponentes:</p>
+
+<p>\[
+y = e^x \cdot e^C
+\]</p>
+
+<p>Como \( e^C \) es una constante:</p>
+
+<p>\[
+\boxed{y = C e^x}
+\]</p>
+
+<h3> Verificación</h3>
+
+<p>Derivamos \( y = C e^x \):</p>
+
+<p>\[
+y' = C e^x
+\]</p>
+
+<p>Como \( y' = y \), se cumple la ecuación original. Por lo tanto, la solución es correcta.</p>
+
     </form>
 </div>
 
@@ -1566,121 +1662,183 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-        <img src="../../../../img/familia.png" alt="" width="700">
+    <h2>Resolución de la ecuación diferencial \( \frac{dy}{dx} = 2x \)</h2>
 
-        <p>
-    Para todo \( t \), se cumple que
-    $$
-    \left| \frac{y}{y_0} \right| = \frac{y}{y_0}.
-    $$
+<p>Vamos a resolver la siguiente ecuación diferencial:</p>
+
+<p>\[
+\frac{dy}{dx} = 2x
+\]</p>
+
+<p>Para resolverla, comenzamos separando las variables. Observamos que el término <code>dx</code> está dividiendo en el lado izquierdo, así que lo pasamos al otro lado multiplicando:</p>
+
+<p>\[
+dy = 2x \, dx
+\]</p>
+
+<p>Ahora tenemos las variables separadas: todo lo que involucra \( y \) está de un lado y todo lo que involucra \( x \), del otro.</p>
+
+<p>Procedemos a integrar ambos lados de la ecuación:</p>
+
+<p>\[
+\int dy = \int 2x \, dx
+\]</p>
+
+<p>La integral de \( dy \) es simplemente \( y \), mientras que la integral de \( 2x \) es \( x^2 \). Recordemos agregar una constante de integración al final, ya que estamos trabajando con integrales indefinidas:</p>
+
+<p>\[
+y = x^2 + C
+\]</p>
+
+<p>Este es el resultado de resolver la ecuación diferencial. La función \( y = x^2 + C \) representa la solución general.</p>
+
+<h3>Verificación</h3>
+
+<p>Podemos comprobar que esta es efectivamente la solución sustituyendo \( y = x^2 + C \) en la ecuación original. Derivamos \( y \) respecto de \( x \):</p>
+
+<p>\[
+\frac{dy}{dx} = \frac{d}{dx}(x^2 + C) = 2x
+\]</p>
+
+<p>La derivada coincide con el lado derecho de la ecuación original, por lo tanto la solución es correcta.</p>
+
+
+
+
+
+    <hr>
+
+
+
+
+    <h2>Resolución de la ecuación diferencial \( \frac{dy}{dx} = \frac{x}{y} \)</h2>
+
+<p>Vamos a resolver la siguiente ecuación diferencial:</p>
+
+<p>\[
+\frac{dy}{dx} = \frac{x}{y}
+\]</p>
+
+<p>Para resolverla, vamos a <strong>separar las variables</strong>. Es decir, queremos dejar todas las expresiones con \( y \) de un lado y las que contienen \( x \) del otro lado.</p>
+
+<p>Multiplicamos ambos lados por \( y \) (que está dividiendo en el lado derecho) y por \( dx \) (que está dividiendo en el lado izquierdo). De este modo, obtenemos:</p>
+
+<p>\[
+y \, dy = x \, dx
+\]</p>
+
+<p>Ya tenemos separadas las variables, así que ahora <strong>integramos ambos lados de la ecuación</strong>:</p>
+
+<p>\[
+\int y \, dy = \int x \, dx
+\]</p>
+
+<p>Estas son integrales inmediatas. Aplicamos la regla de potencias:</p>
+
+<p>\[
+\frac{y^2}{2} = \frac{x^2}{2} + C
+\]</p>
+
+<p>Donde \( C \) es la constante de integración. Recuerda que sólo se necesita escribir una constante, ya que las constantes de ambos lados se pueden combinar.</p>
+
+<h3>Despejando \( y \)</h3>
+
+<p>Si queremos despejar \( y \), podemos multiplicar ambos lados por 2 para deshacernos del denominador:</p>
+
+<p>\[
+y^2 = x^2 + 2C
+\]</p>
+
+<p>Como \( 2C \) sigue siendo una constante, podemos escribir simplemente:</p>
+
+<p>\[
+y^2 = x^2 + C
+\]</p>
+
+<p>Finalmente, extraemos la raíz cuadrada de ambos lados. Como estamos extrayendo una raíz cuadrada de una variable elevada al cuadrado, debemos considerar ambas posibilidades (positiva y negativa):</p>
+
+<p>\[
+y = \pm \sqrt{x^2 + C}
+\]</p>
+
+<p>Este es el resultado general de la ecuación diferencial. Si tuviéramos una condición inicial o una interpretación física que restringiera el signo (por ejemplo, si \( y \) sólo puede ser positivo), podríamos elegir solo una de las ramas.</p>
+
+   <h2>Verificación de la solución de la ecuación diferencial</h2>
+
+    <button onmousedown="mostrarImagen()" onmouseup="ocultarImagen()">Formula</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada" src="../../../../../img/derivada_raiz.png" style="display: none; max-width: 100%" width="560">
+
+    <script>
+        function mostrarImagen() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada');
+
+        // Mostrar la imagen
+        imagenMostrada.style.display = 'block';
+        }
+
+        function ocultarImagen() {
+        var imagenMostrada = document.getElementById('imagenMostrada');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada.style.display = 'none';
+        }
+    </script>
+
+
+  <p>
+    Queremos verificar que la función:
+    \[
+    y = \pm \sqrt{x^2 + C}
+    \]
+    es solución de la ecuación diferencial:
+    \[
+    \frac{dy}{dx} = \frac{x}{y}
+    \]
+  </p>
+
+  <h3>Paso 1: Derivación de la solución propuesta</h3>
+
+  <p>
+    Derivamos la expresión 
+    \(
+    y = \pm \sqrt{x^2 + C}
+    \)
+    usando la regla de la cadena:
+    \[
+    \frac{dy}{dx} = \frac{1}{2}(x^2 + C)^{-1/2} \cdot 2x = \frac{x}{\sqrt{x^2 + C}}
+    \]
+  </p>
+
+  <p>
+    Dado que 
+    \(
+    y = \pm \sqrt{x^2 + C}
+    \),
+    podemos sustituir:
+    \[
+    \sqrt{x^2 + C} = |y|
+    \]
     Por lo tanto:
-    $$
-    \frac{y}{y_0} = e^{-t^2}, \quad \text{o bien} \quad y = y_0 e^{-t^2}. \tag{8.2.10}
-    $$
-    Nótese que (8.2.10) también especifica una solución de (8.2.9) cuando \( y_0 = 0 \), a saber, la solución \( y(t) = 0 \) para todo \( t \). Al dejar el valor de \( y_0 \) sin especificar, hemos encontrado la forma general de todas las soluciones posibles para la ecuación. Llamamos a la familia de todas las soluciones posibles dadas por (8.2.10) la <strong>solución general</strong> de la ecuación (8.2.9). Cualquier solución obtenida al especificar un valor de \( y_0 \), por ejemplo \( y_0 = 10 \), se llama una <strong>solución particular</strong> de la ecuación.
+    \[
+    \frac{dy}{dx} = \frac{x}{|y|}
+    \]
   </p>
+
   <p>
-    Como se indica en el primer ejemplo, las elecciones para \( g \) y \( h \) no son únicas. Por ejemplo, en el segundo ejemplo podríamos haber tomado \( g(y) = 2y \) y \( h(t) = t \). Sin embargo, uno debe intentar elegir \( g \) y \( h \) de tal manera que los pasos subsiguientes de la solución sean lo más simples posible.
+    Sin embargo, como estamos considerando ambas ramas (positiva y negativa), 
+    el valor de \( y \) puede ser positivo o negativo. En la ecuación original:
+    \[
+    \frac{dy}{dx} = \frac{x}{y}
+    \]
+    no aparece valor absoluto, por lo que debemos elegir la misma rama de signo 
+    que tomamos al definir \( y \). Es decir:
+    \[
+    \frac{dy}{dx} = \frac{x}{\pm \sqrt{x^2 + C}} = \frac{x}{y}
+    \]
   </p>
 
-  <h3>Ejemplo 8.2.3</h3>
-  <p>
-    Consideremos la ecuación:
-    $$
-    \dot{x} = -\frac{t}{x}
-    $$
-    con \( x(0) = x_0 \ne 0 \). Separando las variables, tenemos:
-    $$
-    \int_{x_0}^{x} u\,du = -\int_0^t s\,ds.
-    $$
-    Ahora:
-    $$
-    \int_{x_0}^{x} u\,du = \frac{1}{2}u^2 \bigg|_{x_0}^{x} = \frac{1}{2}(x^2 - x_0^2),
-    $$
-    y
-    $$
-    -\int_0^t s\,ds = -\frac{1}{2}s^2 \bigg|_0^t = -\frac{1}{2}t^2.
-    $$
-    Por lo tanto:
-    $$
-    \frac{1}{2}(x^2 - x_0^2) = -\frac{1}{2}t^2 \quad \Rightarrow \quad x^2 + t^2 = x_0^2.
-    $$
-    Esta ecuación define implícitamente \( x \) como función de \( t \). De hecho, a partir de esta ecuación podemos ver que la gráfica de \( x \) es parte de un círculo de radio \( x_0 \) centrado en el origen. Resolviendo explícitamente para \( x \), tenemos:
-    <ul>
-      <li>Si \( x_0 > 0 \), entonces \( x = \sqrt{x_0^2 - t^2} \).</li>
-      <li>Si \( x_0 < 0 \), entonces \( x = -\sqrt{x_0^2 - t^2} \).</li>
-    </ul>
-    Nótese que \( x \) solo está definida para \( -x_0 < t < x_0 \).
-  </p>
-
-  <h3>Ejemplo 8.2.4</h3>
-  <p>
-    En la Sección 8.1 consideramos la ecuación:
-    $$
-    \dot{v} = -g - \frac{k}{m}v,
-    $$
-    con \( v(0) = 0 \), como modelo para la velocidad de un objeto en caída libre cerca de la superficie de la Tierra cuando la fuerza debida a la resistencia del aire es proporcional a la velocidad. Aquí \( v \) es la velocidad del objeto, \( g \), como es habitual, es 32 pies/seg² o 9.8 m/s², \( m \) es la masa del objeto y \( k > 0 \) es una constante que depende de la resistencia del aire del objeto en particular.
-  </p>
-  <p>
-    Si escribimos esta ecuación en la forma:
-    $$
-    \dot{v} = -g \left(1 + \frac{k}{gm}v \right) \tag{8.2.11}
-    $$
-    y separamos variables usando:
-    $$
-    f(v) = 1 + \frac{k}{gm}v, \quad h(t) = -g,
-    $$
-    entonces tenemos:
-    $$
-    \int_0^v \frac{1}{1 + \frac{k}{gm}u}\,du = -\int_0^t g\,ds.
-    $$
-    Ahora,
-    $$
-    \int_0^v \frac{1}{1 + \frac{k}{gm}u}\,du = \frac{gm}{k} \log\left|1 + \frac{k}{gm}v\right|,
-    $$
-    y
-    $$
-    -\int_0^t g\,ds = -gt.
-    $$
-    Por lo tanto,
-    $$
-    \frac{gm}{k} \log\left|1 + \frac{k}{gm}v\right| = -gt,
-    $$
-    de donde se sigue que:
-    $$
-    \log\left|1 + \frac{k}{gm}v\right| = -\frac{kt}{m}.
-    $$
-  </p>
-    
-    <img src="../../../../img/slouhter_2.png" alt="">
-     
-
-    <p>De lo cual se sigue que</p>
-<p>
-\[
-\left|1 + \frac{k}{gm}v\right| = e^{-\frac{kt}{m}}.
-\]
-</p>
-
-
-
-<p>Por lo tanto, o bien</p>
-<p>
-\[
-1 + \frac{k}{gm}v = e^{-\frac{kt}{m}}
-\quad \text{o} \quad
-1 + \frac{k}{gm}v = -e^{-\frac{kt}{m}}.
-\]
-</p>
-
-<p>Es decir, o bien</p>
-<p>
-\[
-v = -\frac{gm}{k}\left(1 - e^{-\frac{kt}{m}}\right)
-\quad \text{o} \quad
-v = -\frac{gm}{k}\left(1 + e^{-\frac{kt}{m}}\right).
-\]
-</p>
     </form>
 </div>
 

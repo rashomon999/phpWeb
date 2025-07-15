@@ -1123,8 +1123,8 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../../style.css">
+    <link rel="stylesheet" href="../../../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../../../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
@@ -1136,7 +1136,7 @@ if ($respuesta_110 === '264') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 445vh;
+    height: 360vh;
     }
 </style>
  
@@ -1439,125 +1439,138 @@ function ocultarMensaje4() {
 </head>
 <body> 
 <div class="seccion izquierda">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h1>8.2 Separación de variables</h1>
+    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    
+  <h2>Resolviendo la ecuación diferencial</h2>
+
+  <p>Vamos a resolver la siguiente ecuación diferencial:</p>
   <p>
-    En la sección anterior discutimos dos métodos para aproximar la solución de una ecuación diferencial
-    $$\dot{x} = f(x, t)$$
-    con condición inicial \( x(t_0) = x_0 \). Ahora consideraremos, en esta sección así como en las Secciones 8.3 y 8.4, técnicas para encontrar soluciones en forma cerrada para tales ecuaciones, es decir, soluciones que puedan expresarse en términos de las funciones elementales del cálculo. Para lograrlo, será necesario considerar distintas clases de ecuaciones dependiendo de la forma de la función \( f \). Como en la integración ordinaria, encontrar una expresión en forma cerrada para la solución de una ecuación diferencial es con frecuencia un problema difícil, si no imposible, que requiere aprovechar cualquier información que podamos obtener de la forma de la función.
-  </p>
-  <p>
-    En esta sección consideraremos una clase de ecuaciones conocidas como ecuaciones separables y en las Secciones 8.3 y 8.4 consideraremos ecuaciones lineales.
-  </p>
-  <p>
-    Llamamos a una ecuación diferencial
-    $$\dot{x} = f(x, t) \tag{8.2.1}$$
-    con condición inicial \( x(t_0) = x_0 \), separable, o decimos que tiene variables separables, si \( f(x, t) = g(x)h(t) \) para algunas funciones \( g \) y \( h \), donde \( g \) depende solo de \( x \) y \( h \) depende solo de \( t \). Supondremos que \( g \) y \( h \) son ambas funciones continuas y, por lo tanto, en particular, integrables.
-  </p>
-  <p>
-    En ese caso, (8.2.1) se convierte en:
-    $$\dot{x} = g(x)h(t) \tag{8.2.2}$$
-    lo cual implica que:
-    $$\frac{\dot{x}}{g(x)} = h(t) \tag{8.2.3}$$
-    en todos los puntos para los cuales \( g(x) \ne 0 \). Integrando (8.2.3) desde \( t_0 \) hasta \( t \) (suponiendo que \( g(x(s)) \ne 0 \) para todo \( s \) entre \( t_0 \) y \( t \)), tenemos:
-    $$\int_{t_0}^{t} \frac{1}{g(x(s))} \dot{x}(s)\,ds = \int_{t_0}^{t} h(s)\,ds \tag{8.2.4}$$
-    donde hemos usado \( s \) como variable de integración para que nuestra respuesta esté en términos de \( t \). Ahora, usando el cambio de variable:
     \[
-    u = x(s), \quad du = \dot{x}(s)\,ds
+    \frac{dy}{dx} + 4xy = 0
     \]
-    obtenemos:
-    $$\int_{t_0}^{t} \frac{1}{g(x(s))} \dot{x}(s)\,ds = \int_{x(t_0)}^{x(t)} \frac{1}{g(u)}\,du = \int_{x_0}^{x} \frac{1}{g(u)}\,du \tag{8.2.5}$$
-    para la integral del lado izquierdo. Por lo tanto, combinando (8.2.4) y (8.2.5), se tiene:
-    $$\int_{x_0}^{x} \frac{1}{g(u)}\,du = \int_{t_0}^{t} h(s)\,ds \tag{8.2.6}$$
-  </p>
-  <p>
-    Así, podemos resolver una ecuación con variables separables siempre que podamos evaluar ambas integrales en (8.2.6) y luego resolver la ecuación resultante para \( x \). El proceso puede fallar en alguno de estos dos pasos finales, en cuyo caso debemos recurrir a aproximaciones numéricas, aun cuando la ecuación sea separable.
-  </p>
-  <h3>Proposición 8.2.1 (Separación de variables)</h3>
-  <p>
-    Si \( g \) y \( h \) son funciones continuas de \( x \) y \( t \), respectivamente, y \( x \) satisface la ecuación diferencial
-    $$\dot{x} = g(x)h(t) \tag{8.2.7}$$
-    con \( x(t_0) = x_0 \), entonces
-    $$\int_{x_0}^{x} \frac{1}{g(u)}\,du = \int_{t_0}^{t} h(s)\,ds \tag{8.2.8}$$
-    siempre que \( g(u) \ne 0 \) para todo \( u \) entre \( x_0 \) y \( x \).
-  </p>
-  <p>
-    Nótese que este es el mismo método que usamos para resolver la ecuación del modelo de crecimiento inhibido en la Sección 6.3.
-  </p>
-  <h3>Ejemplo 8.2.1</h3>
-  <p>
-    Consideremos la ecuación:
-    $$
-    \dot{x} = 0.4x
-    $$
-    con \( x(0) = 100 \). Esta es una ecuación separable con, en la notación usada anteriormente,
-    \( g(x) = x \) y \( h(t) = 0.4 \). (Nótese que las elecciones para \( g \) y \( h \) no son únicas.)
-    Usando (8.2.8), tenemos:
-    $$
-    \int_{100}^{x} \frac{1}{u}\,du = \int_0^{t} 0.4\,ds.
-    $$
-    Ahora, suponiendo que \( x > 0 \),
-    $$
-    \int_{100}^{x} \frac{1}{u}\,du = \log(u) \bigg|_{100}^{x} = \log(x) - \log(100) = \log\left(\frac{x}{100}\right),
-    $$
-    y
-    $$
-    \int_0^{t} 0.4\,ds = 0.4s \bigg|_0^{t} = 0.4t.
-    $$
-    Por lo tanto, tenemos:
-    $$
-    \log\left(\frac{x}{100}\right) = 0.4t,
-    $$
-    de donde obtenemos:
-    $$
-    \frac{x}{100} = e^{0.4t},
-    $$
-    y, finalmente:
-    $$
-    x = 100e^{0.4t}.
-    $$
-    Nótese que esta es la solución que deberíamos esperar de nuestro estudio de ecuaciones de esta forma en las Secciones 6.1 y 6.3.
   </p>
 
-  <h3>Ejemplo 8.2.2</h3>
+  <h3>Paso 1: Reorganizar la ecuación</h3>
+  <p>Primero pasamos el término \( 4xy \) al lado derecho, restando:</p>
   <p>
-    Consideremos la ecuación:
-    $$
-    \dot{y} = -2yt \tag{8.2.9}
-    $$
-    con \( y(0) = y_0 \ne 0 \). Esta es una ecuación separable con, en la notación usada anteriormente,
-    \( g(y) = y \) y \( h(t) = -2t \). Usando (8.2.8), tenemos:
-    $$
-    \int_{y_0}^{y} \frac{1}{u}\,du = -\int_0^{t} 2s\,ds.
-    $$
-    Ahora:
-    $$
-    \int_{y_0}^{y} \frac{1}{u}\,du = \log|u| \bigg|_{y_0}^{y} = \log|y| - \log|y_0| = \log\left|\frac{y}{y_0}\right|,
-    $$
-    y
-    $$
-    -\int_0^{t} 2s\,ds = -s^2 \bigg|_0^{t} = -t^2.
-    $$
-    Por lo tanto, tenemos:
-    $$
-    \log\left|\frac{y}{y_0}\right| = -t^2,
-    $$
-    de donde se sigue que:
-    $$
-    \left|\frac{y}{y_0}\right| = e^{-t^2}.
-    $$
-    Ahora, \( e^{-t^2} > 0 \) para todo \( t \), por lo que \( y(t) \) nunca es cero. Dado que \( y \) es continua (lo cual se sigue de que es diferenciable), esto significa que o bien \( y(t) > 0 \) para todo \( t \), o bien \( y(t) < 0 \) para todo \( t \). Ya que \( y(0) = y_0 \), se tiene que:
+    \[
+    \frac{dy}{dx} = -4xy
+    \]
   </p>
+
+  <h3>Paso 2: Separar las variables</h3>
+  <p>Queremos dejar todas las \( y \) de un lado y las \( x \) del otro. Para ello:</p>
   <ul>
-    <li>Si \( y_0 > 0 \), entonces \( y(t) > 0 \) para todo \( t \).</li>
-    <li>Si \( y_0 < 0 \), entonces \( y(t) < 0 \) para todo \( t \).</li>
+    <li>Multiplicamos ambos lados por \( dx \)</li>
+    <li>Dividimos ambos lados entre \( y \)</li>
   </ul>
+  <p>Obtenemos:</p>
   <p>
-    En cualquier caso:
-    $$
-    \frac{y(t)}{y_0} > 0.
-    $$
+    \[
+    \frac{dy}{y} = -4x \, dx
+    \]
   </p>
+
+  <h3>Paso 3: Integrar ambos lados</h3>
+  <p>Integramos ambos lados de la ecuación:</p>
+  <p>
+    \[
+    \int \frac{dy}{y} = \int -4x \, dx
+    \]
+  </p>
+  <p>Las integrales son inmediatas:</p>
+  <p>
+    \[
+    \ln |y| = -2x^2 + C
+    \]
+  </p>
+
+  <h3>Paso 4: Despejar \( y \)</h3>
+  <p>Eliminamos el logaritmo natural aplicando exponencial a ambos lados:</p>
+  <p>
+    \[
+    y = e^{-2x^2 + C}
+    \]
+  </p>
+  <p>Usamos propiedades de los exponentes para separar la suma:</p>
+  <p>
+    \[
+    y = e^{-2x^2} \cdot e^C
+    \]
+  </p>
+  <p>Como \( e^C \) es una constante, la podemos escribir como \( C \):</p>
+  <p>
+    \[
+    y = C \cdot e^{-2x^2}
+    \]
+  </p>
+
+  <h3>Resultado final</h3>
+  <p>
+    La solución general de la ecuación diferencial es:
+    \[
+    y = C \cdot e^{-2x^2}
+    \]
+    donde \( C \) es una constante de integración.
+  </p>
+
+   <h2>Comprobación de la solución</h2>
+
+  <p>La ecuación original es:</p>
+  <p>
+    \[
+    \frac{dy}{dx} + 4xy = 0
+    \]
+  </p>
+
+  <p>La solución propuesta es:</p>
+  <p>
+    \[
+    y = C \cdot e^{-2x^2}
+    \]
+  </p>
+
+  <h3>Paso 1: Calcular \( \frac{dy}{dx} \)</h3>
+  <p>Derivamos \( y \) con respecto a \( x \):</p>
+  <p>
+    \[
+    \frac{dy}{dx} = C \cdot \frac{d}{dx}\left(e^{-2x^2}\right)
+    \]
+  </p>
+  <p>Usamos la regla de la cadena:</p>
+  <p>
+    \[
+    \frac{d}{dx}(e^{-2x^2}) = e^{-2x^2} \cdot (-4x)
+    \]
+  </p>
+  <p>Entonces:</p>
+  <p>
+    \[
+    \frac{dy}{dx} = C \cdot (-4x) \cdot e^{-2x^2} = -4xC \cdot e^{-2x^2}
+    \]
+  </p>
+
+  <h3>Paso 2: Sustituir en la ecuación original</h3>
+  <p>Ahora sustituimos en:</p>
+  <p>
+    \[
+    \frac{dy}{dx} + 4xy
+    \]
+  </p>
+  <p>Sustituyendo ambos términos:</p>
+  <p>
+    \[
+    -4xC \cdot e^{-2x^2} + 4x \cdot \left(C \cdot e^{-2x^2}\right)
+    \]
+  </p>
+  <p>Ambos términos son iguales pero con signos opuestos, así que se cancelan:</p>
+  <p>
+    \[
+    -4xC \cdot e^{-2x^2} + 4xC \cdot e^{-2x^2} = 0
+    \]
+  </p>
+
+    <hr>
     </form>
 </div>
 
@@ -1565,122 +1578,178 @@ function ocultarMensaje4() {
 
 
 <div class="seccion derecha">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-        <img src="../../../../img/familia.png" alt="" width="700">
+    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+     <h2>Resolución de la ecuación diferencial</h2>
 
-        <p>
-    Para todo \( t \), se cumple que
-    $$
-    \left| \frac{y}{y_0} \right| = \frac{y}{y_0}.
-    $$
-    Por lo tanto:
-    $$
-    \frac{y}{y_0} = e^{-t^2}, \quad \text{o bien} \quad y = y_0 e^{-t^2}. \tag{8.2.10}
-    $$
-    Nótese que (8.2.10) también especifica una solución de (8.2.9) cuando \( y_0 = 0 \), a saber, la solución \( y(t) = 0 \) para todo \( t \). Al dejar el valor de \( y_0 \) sin especificar, hemos encontrado la forma general de todas las soluciones posibles para la ecuación. Llamamos a la familia de todas las soluciones posibles dadas por (8.2.10) la <strong>solución general</strong> de la ecuación (8.2.9). Cualquier solución obtenida al especificar un valor de \( y_0 \), por ejemplo \( y_0 = 10 \), se llama una <strong>solución particular</strong> de la ecuación.
-  </p>
+  <p>Vamos a resolver la siguiente ecuación diferencial:</p>
+
   <p>
-    Como se indica en el primer ejemplo, las elecciones para \( g \) y \( h \) no son únicas. Por ejemplo, en el segundo ejemplo podríamos haber tomado \( g(y) = 2y \) y \( h(t) = t \). Sin embargo, uno debe intentar elegir \( g \) y \( h \) de tal manera que los pasos subsiguientes de la solución sean lo más simples posible.
+    \[
+    \frac{dy}{dx} = \frac{y \cos(x)}{1 - 2y}
+    \]
   </p>
 
-  <h3>Ejemplo 8.2.3</h3>
+  <h3>Paso 1: Separar variables</h3>
   <p>
-    Consideremos la ecuación:
-    $$
-    \dot{x} = -\frac{t}{x}
-    $$
-    con \( x(0) = x_0 \ne 0 \). Separando las variables, tenemos:
-    $$
-    \int_{x_0}^{x} u\,du = -\int_0^t s\,ds.
-    $$
-    Ahora:
-    $$
-    \int_{x_0}^{x} u\,du = \frac{1}{2}u^2 \bigg|_{x_0}^{x} = \frac{1}{2}(x^2 - x_0^2),
-    $$
-    y
-    $$
-    -\int_0^t s\,ds = -\frac{1}{2}s^2 \bigg|_0^t = -\frac{1}{2}t^2.
-    $$
-    Por lo tanto:
-    $$
-    \frac{1}{2}(x^2 - x_0^2) = -\frac{1}{2}t^2 \quad \Rightarrow \quad x^2 + t^2 = x_0^2.
-    $$
-    Esta ecuación define implícitamente \( x \) como función de \( t \). De hecho, a partir de esta ecuación podemos ver que la gráfica de \( x \) es parte de un círculo de radio \( x_0 \) centrado en el origen. Resolviendo explícitamente para \( x \), tenemos:
-    <ul>
-      <li>Si \( x_0 > 0 \), entonces \( x = \sqrt{x_0^2 - t^2} \).</li>
-      <li>Si \( x_0 < 0 \), entonces \( x = -\sqrt{x_0^2 - t^2} \).</li>
-    </ul>
-    Nótese que \( x \) solo está definida para \( -x_0 < t < x_0 \).
+    Queremos dejar todas las variables \( y \) de un lado y todas las \( x \) del otro.
+    Para lograrlo:
+  </p>
+  <ul>
+    <li>Multiplicamos ambos lados por \( dx \).</li>
+    <li>Multiplicamos ambos lados por \( 1 - 2y \).</li>
+  </ul>
+  <p>Obtenemos:</p>
+
+  <p>
+    \[
+    (1 - 2y)\,dy = y \cos(x)\,dx
+    \]
   </p>
 
-  <h3>Ejemplo 8.2.4</h3>
-  <p>
-    En la Sección 8.1 consideramos la ecuación:
-    $$
-    \dot{v} = -g - \frac{k}{m}v,
-    $$
-    con \( v(0) = 0 \), como modelo para la velocidad de un objeto en caída libre cerca de la superficie de la Tierra cuando la fuerza debida a la resistencia del aire es proporcional a la velocidad. Aquí \( v \) es la velocidad del objeto, \( g \), como es habitual, es 32 pies/seg² o 9.8 m/s², \( m \) es la masa del objeto y \( k > 0 \) es una constante que depende de la resistencia del aire del objeto en particular.
-  </p>
-  <p>
-    Si escribimos esta ecuación en la forma:
-    $$
-    \dot{v} = -g \left(1 + \frac{k}{gm}v \right) \tag{8.2.11}
-    $$
-    y separamos variables usando:
-    $$
-    f(v) = 1 + \frac{k}{gm}v, \quad h(t) = -g,
-    $$
-    entonces tenemos:
-    $$
-    \int_0^v \frac{1}{1 + \frac{k}{gm}u}\,du = -\int_0^t g\,ds.
-    $$
-    Ahora,
-    $$
-    \int_0^v \frac{1}{1 + \frac{k}{gm}u}\,du = \frac{gm}{k} \log\left|1 + \frac{k}{gm}v\right|,
-    $$
-    y
-    $$
-    -\int_0^t g\,ds = -gt.
-    $$
-    Por lo tanto,
-    $$
-    \frac{gm}{k} \log\left|1 + \frac{k}{gm}v\right| = -gt,
-    $$
-    de donde se sigue que:
-    $$
-    \log\left|1 + \frac{k}{gm}v\right| = -\frac{kt}{m}.
-    $$
-  </p>
-    
-    <img src="../../../../img/slouhter_2.png" alt="">
-     
+  <p>Ahora dividimos ambos lados por \( y \) para que el lado izquierdo tenga solo \( y \):</p>
 
-    <p>De lo cual se sigue que</p>
+  <p>
+    \[
+    \frac{(1 - 2y)}{y}\,dy = \cos(x)\,dx
+    \]
+  </p>
+
+  <h3>Paso 2: Integrar ambos lados</h3>
+
+  <p>Vamos a resolver:</p>
+
+  <p>
+    \[
+    \int \frac{1 - 2y}{y} \, dy = \int \cos(x)\,dx
+    \]
+  </p>
+
+  <p>Separando la integral del lado izquierdo:</p>
+  <p>
+    \[
+    \int \left( \frac{1}{y} - 2 \right) dy = \int \cos(x)\,dx
+    \]
+  </p>
+
+  <p>Integramos término a término:</p>
+
+  <ul>
+    <li>\( \int \frac{1}{y} \, dy = \ln|y| \)</li>
+    <li>\( \int (-2)\, dy = -2y \)</li>
+    <li>\( \int \cos(x)\,dx = \sin(x) \)</li>
+  </ul>
+
+  <p>Entonces:</p>
+
+  <p>
+    \[
+    \ln|y| - 2y = \sin(x) + C
+    \]
+  </p>
+
+  <h3>Resultado</h3>
+  <p>Esta es la <strong>solución implícita</strong> de la ecuación diferencial:</p>
+
+  <p>
+    \[
+    \ln|y| - 2y = \sin(x) + C
+    \]
+  </p>
+
+  <p>No es posible despejar \( y \) de forma explícita, por lo que la solución se deja así.</p>
+
+  <h3>Nota sobre la verificación</h3>
+  <p>
+    Para comprobar que esta es la solución correcta, sería necesario hacer una derivación implícita
+    respecto de \( x \) y verificar que se obtiene nuevamente:
+  </p>
+  <p>
+    \[
+    \frac{dy}{dx} = \frac{y \cos(x)}{1 - 2y}
+    \]
+  </p>
+
+  <p>
+    Esa verificación es un buen ejercicio que puedes realizar aparte.
+  </p>
+
+<hr>
+<h2>Verificación de la solución</h2>
+<p>Vamos a comprobar que la siguiente solución implícita satisface la ecuación diferencial original:</p>
+
+<p><strong>Solución implícita:</strong></p>
+<p>$$ \ln |y| - 2y = \sin(x) + C $$</p>
+
+<p><strong>Ecuación diferencial original:</strong></p>
+<p>$$ \frac{dy}{dx} = \frac{y \cos(x)}{1 - 2y} $$</p>
+
+<h3>Paso 1: Derivar ambos lados</h3>
+<p>Derivamos implícitamente con respecto a \( x \):</p>
+
 <p>
 \[
-\left|1 + \frac{k}{gm}v\right| = e^{-\frac{kt}{m}}.
+\frac{d}{dx} \left( \ln |y| - 2y \right) = \frac{d}{dx} \left( \sin(x) + C \right)
 \]
 </p>
 
+<ul>
+  <li>\( \frac{d}{dx}(\ln |y|) = \frac{1}{y} \cdot \frac{dy}{dx} \)</li>
+  <li>\( \frac{d}{dx}(-2y) = -2 \cdot \frac{dy}{dx} \)</li>
+</ul>
 
-
-<p>Por lo tanto, o bien</p>
+<p>Entonces el lado izquierdo queda como:</p>
 <p>
 \[
-1 + \frac{k}{gm}v = e^{-\frac{kt}{m}}
-\quad \text{o} \quad
-1 + \frac{k}{gm}v = -e^{-\frac{kt}{m}}.
+\left( \frac{1}{y} - 2 \right) \cdot \frac{dy}{dx}
 \]
 </p>
 
-<p>Es decir, o bien</p>
+<p>Y el lado derecho es simplemente:</p>
 <p>
 \[
-v = -\frac{gm}{k}\left(1 - e^{-\frac{kt}{m}}\right)
-\quad \text{o} \quad
-v = -\frac{gm}{k}\left(1 + e^{-\frac{kt}{m}}\right).
+\cos(x)
 \]
 </p>
+
+<h3>Paso 2: Igualamos ambos lados</h3>
+<p>
+\[
+\left( \frac{1}{y} - 2 \right) \cdot \frac{dy}{dx} = \cos(x)
+\]
+</p>
+
+<h3>Paso 3: Despejar \( \frac{dy}{dx} \)</h3>
+<p>
+\[
+\frac{dy}{dx} = \frac{\cos(x)}{\frac{1}{y} - 2}
+\]
+</p>
+
+<p>Reescribimos el denominador como una sola fracción:</p>
+<p>
+\[
+\frac{1}{y} - 2 = \frac{1 - 2y}{y}
+\]
+</p>
+
+<p>Entonces:</p>
+<p>
+\[
+\frac{dy}{dx} = \cos(x) \cdot \frac{y}{1 - 2y} = \frac{y \cos(x)}{1 - 2y}
+\]
+</p>
+
+<h3>Conclusión</h3>
+<p>Hemos demostrado que al derivar la solución implícita obtenemos:</p>
+<p>
+\[
+\frac{dy}{dx} = \frac{y \cos(x)}{1 - 2y}
+\]
+</p>
+<p>Es decir, coincide exactamente con la ecuación diferencial original. ✅</p>
+<hr>
+
+
     </form>
 </div>
 

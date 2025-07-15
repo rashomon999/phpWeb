@@ -123,7 +123,7 @@ if ($_POST) {
         $respuesta_104 = 'clientes';
         $respuesta_105 = 'usuarios finales';
         $respuesta_106 = 'abarcan';
-        $respuesta_107 = 'usuarios';
+        $respuesta_107 = 'usuario';
         $respuesta_108 = 'interesados';
         $respuesta_109 = 'humana';
         $respuesta_110 = 'usuario';
@@ -1134,7 +1134,7 @@ if ($respuesta_106 === 'abarcan') {
 }
 
  $respuesta_107 = isset($_POST['respuesta_107']) ? $_POST['respuesta_107'] : '';
-if ($respuesta_107 === 'usuarios') { 
+if ($respuesta_107 === 'usuario') { 
     $verificar_107 = "correcto";
 } elseif ($respuesta_107 === '') {
     $verificar_107 = '';
@@ -1188,7 +1188,7 @@ if ($respuesta_112 === 'caracteristica') {
 } else {
     $verificar_112 = "incorrecto";
 }
-}
+
 
 
 $respuesta_113 = isset($_POST['respuesta_113']) ? $_POST['respuesta_113'] : '';
@@ -1354,6 +1354,7 @@ if ($respuesta_130 === '7451209') {
 }
 
 }
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -1374,7 +1375,7 @@ if ($respuesta_130 === '7451209') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 345vh;
+    height: 365vh;
     }
 </style>
  
@@ -2239,7 +2240,36 @@ restringirá fuertemente la arquitectura del sistema.
     <input type="text" name="respuesta_109" value="<?php echo $respuesta_109; ?>" size="8">
     identificable.
     </p>
+
+
+        <hr>
+<button type="submit">Enviar</button>
+<?php echo $verificar_88 ?>
+<?php echo $verificar_89 ?>
+<?php echo $verificar_90 ?>
+<?php echo $verificar_91 ?>
+<?php echo $verificar_92 ?>
+<?php echo $verificar_93 ?>
+<?php echo $verificar_94 ?>
+<?php echo $verificar_95 ?>
+<?php echo $verificar_96 ?>
+<?php echo $verificar_97 ?>
+<?php echo $verificar_98 ?>
+<?php echo $verificar_99 ?><br>
+<?php echo $verificar_100 ?>
+<?php echo $verificar_101 ?>
+<?php echo $verificar_102 ?>
+<?php echo $verificar_103 ?>
+<?php echo $verificar_104 ?>
+<?php echo $verificar_105 ?>
+<?php echo $verificar_106 ?>
+<?php echo $verificar_107 ?>
+<?php echo $verificar_108 ?>
+<?php echo $verificar_109 ?>
+<?php echo $verificar_110 ?>
+<?php echo $verificar_111 ?>
     <hr>
+     
     <strong>parentesis</strong>: es decir:
     <p>Los requerimientos de los clientes o usuarios finales del sistema se clasifican, según el SWEBOK, como:</p>
 
@@ -2254,38 +2284,36 @@ restringirá fuertemente la arquitectura del sistema.
     </strong>.</p>
 
     <hr>
-<button type="submit">Enviar</button>
-<?php echo $verificar_88 ?>
-<?php echo $verificar_89 ?>
-<?php echo $verificar_90 ?>
-<?php echo $verificar_91 ?>
-<?php echo $verificar_92 ?>
-<?php echo $verificar_93 ?>
-<?php echo $verificar_94 ?>
-<?php echo $verificar_95 ?>
-<?php echo $verificar_96 ?>
-<?php echo $verificar_97 ?>
-<?php echo $verificar_98 ?>
-<?php echo $verificar_99 ?>
-<?php echo $verificar_100 ?>
-<?php echo $verificar_101 ?>
-<?php echo $verificar_102 ?>
-<?php echo $verificar_103 ?>
-<?php echo $verificar_104 ?>
-<?php echo $verificar_105 ?>
-<?php echo $verificar_106 ?>
-<?php echo $verificar_107 ?>
-<?php echo $verificar_108 ?>
-<?php echo $verificar_109 ?>
-<?php echo $verificar_110 ?>
-<?php echo $verificar_111 ?>
-    <hr>
     <strong>Se alcanzo el limite de inputs</strong>
         <hr>
     <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
     <br>
     <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
     <button type="submit"   >Mostrar Solución</button>
+
+
+    <hr>
+    <strong>diagrama actual:</strong>
+    <button onmousedown="mostrarImagen()" onmouseup="ocultarImagen()">Explicacion</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada" src="../../../../img/actualidad.png" style="display: none; max-width: 100%" width="560">
+
+    <script>
+        function mostrarImagen() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada');
+
+        // Mostrar la imagen
+        imagenMostrada.style.display = 'block';
+        }
+
+        function ocultarImagen() {
+        var imagenMostrada = document.getElementById('imagenMostrada');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada.style.display = 'none';
+        }
+    </script>
 
     </form>
 </div>

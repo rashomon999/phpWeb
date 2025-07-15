@@ -596,6 +596,14 @@ function ocultarMensaje4() {
             \( \frac{0}{0} \)
     </span> 
 
+
+    <br><br>
+    <button onmousedown="mostrarMensaje()" onmouseup="ocultarMensaje()">Ayuda</button>
+    <div id="mensaje" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
+    la Sec es la inversa de la Cos, entonces para esto es invertir los valores, los mismo para Csc para Sen.
+
+    </div>
+
     <br><br>
      <button onmousedown="mostrarImagen2()" onmouseup="ocultarImagen2()">Ayuda</button>
     <!-- Elemento para mostrar la imagen -->
@@ -688,7 +696,10 @@ function ocultarMensaje4() {
      <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
     <br>
  
-             <button onmousedown="mostrarImagen3()" onmouseup="ocultarImagen3()">Ayuda</button>
+
+  
+
+    <button onmousedown="mostrarImagen3()" onmouseup="ocultarImagen3()">Ayuda</button>
     <!-- Elemento para mostrar la imagen -->
 
     <img id="imagenMostrada3" src="../../img/origen.png" style="display: none; max-width: 100%" width="460">
@@ -712,11 +723,13 @@ function ocultarMensaje4() {
     
     <br><br>
 
-        <button onmousedown="mostrarMensaje()" onmouseup="ocultarMensaje()">Solucion</button>
-    <div id="mensaje" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
-    las dos cabezas son las que quiero cancelar, el que esta en el 2 piso es el que quiero como 
-    denominador, el que esta en primer piso es el que quiero como numerador.
-
+    <button onmousedown="mostrarMensaje2()" onmouseup="ocultarMensaje2()">Solucion</button>
+    <div id="mensaje2" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
+    las dos cabezas son las que quiero cancelar, el que esta en el 2 piso
+    (2 denominador de abajo a arriba)
+    es el que quiero como 
+    denominador, el que esta en primer piso es el que quiero como numerador (mas al fondo).
+    los protagonistas son los denominadores.
     </div>
     <br><br>
     <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">

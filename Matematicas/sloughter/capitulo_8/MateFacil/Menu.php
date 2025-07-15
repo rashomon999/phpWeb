@@ -29,12 +29,11 @@
 </head>
 <body>
     <div class="centered-container">
-        <a class="btn" href=".\parte_1\index.php">subcapitulo 8.1  Numerical solutions</a>
-        <a class="btn" href=".\cuestionario_1\index.php">cuestionario_1 </a>
+        <a class="btn" href=".\fundamentos\index.php">Fundamentos</a>
+        <a class="btn" href=".\calculo\index.php">calculo </a>
+        <a class="btn" href=".\aplicaciones\index.php">aplicaciones </a>
         <br><br>
-        <a class="btn" href=".\parte_2\index.php">subcapitulo 8.2  Separation of variables</a>
-        <br><br>
-        <a class="btn" href=".\MateFacil\Menu.php">MateFacil</a>
+ 
     </div>
 </body>
 </html>

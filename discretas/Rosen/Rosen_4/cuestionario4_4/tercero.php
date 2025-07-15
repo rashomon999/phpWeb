@@ -17,153 +17,58 @@ if ($_POST) {
     $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
     
     if ($mostrar_solucion === 'mostrar_solucion') {
-        // Establecer todas las respuestas correctas para las tablas de multiplicar
-        
-        // Tabla del 12
-        $respuesta_111 = '24'; 
-        $respuesta_112 = '36';
-        $respuesta_113 = '48';
-        $respuesta_114 = '60';
-        $respuesta_115 = '72';
-        $respuesta_116 = '84';
-        $respuesta_117 = '96';
-        $respuesta_118 = '108';
-        $respuesta_119 = '120';
-        $respuesta_120 = '132';
-        $respuesta_121 = '144';
-        
-        // Tabla del 13
-        $respuesta_1 = '26';
-        $respuesta_2 = '39';
-        $respuesta_3 = '52';
-        $respuesta_4 = '65';
-        $respuesta_5 = '78';
-        $respuesta_6 = '91';
-        $respuesta_7 = '104';
-        $respuesta_8 = '117';
-        $respuesta_9 = '130';
-        $respuesta_10 = '143';
-        $respuesta_11 = '156';
-        
-        // Tabla del 14
-        $respuesta_12 = '28';
-        $respuesta_13 = '42';
-        $respuesta_14 = '56';
-        $respuesta_15 = '70';
-        $respuesta_16 = '84';
-        $respuesta_17 = '98';
-        $respuesta_18 = '112';
-        $respuesta_19 = '126';
-        $respuesta_20 = '140';
-        $respuesta_21 = '154';
-        $respuesta_22 = '168';
-        
-        // Tabla del 15
-        $respuesta_23 = '30';
-        $respuesta_24 = '45';
-        $respuesta_25 = '60';
-        $respuesta_26 = '75';
-        $respuesta_27 = '90';
-        $respuesta_28 = '105';
-        $respuesta_29 = '120';
-        $respuesta_30 = '135';
-        $respuesta_31 = '150';
-        $respuesta_32 = '165';
-        $respuesta_33 = '180';
-        
-        // Tabla del 16
-        $respuesta_34 = '32';
-        $respuesta_35 = '48';
-        $respuesta_36 = '64';
-        $respuesta_37 = '80';
-        $respuesta_38 = '96';
-        $respuesta_39 = '112';
-        $respuesta_40 = '128';
-        $respuesta_41 = '144';
-        $respuesta_42 = '160';
-        $respuesta_43 = '176';
-        $respuesta_44 = '192';
-        
-        // Tabla del 17
-        $respuesta_45 = '34';
-        $respuesta_46 = '51';
-        $respuesta_47 = '68';
-        $respuesta_48 = '85';
-        $respuesta_49 = '102';
-        $respuesta_50 = '119';
-        $respuesta_51 = '136';
-        $respuesta_52 = '153';
-        $respuesta_53 = '170';
-        $respuesta_54 = '187';
-        $respuesta_55 = '204';
-        
-        // Tabla del 18
-        $respuesta_56 = '36';
-        $respuesta_57 = '54';
-        $respuesta_58 = '72';
-        $respuesta_59 = '90';
-        $respuesta_60 = '108';
-        $respuesta_61 = '126';
-        $respuesta_62 = '144';
-        $respuesta_63 = '162';
-        $respuesta_64 = '180';
-        $respuesta_65 = '198';
-        $respuesta_66 = '216';
-        
-        // Tabla del 19
-        $respuesta_67 = '38';
-        $respuesta_68 = '57';
-        $respuesta_69 = '76';
-        $respuesta_70 = '95';
-        $respuesta_71 = '114';
-        $respuesta_72 = '133';
-        $respuesta_73 = '152';
-        $respuesta_74 = '171';
-        $respuesta_75 = '190';
-        $respuesta_76 = '209';
-        $respuesta_77 = '228';
-        
-        // Tabla del 20
-        $respuesta_78 = '40';
-        $respuesta_79 = '60';
-        $respuesta_80 = '80';
-        $respuesta_81 = '100';
-        $respuesta_82 = '120';
-        $respuesta_83 = '140';
-        $respuesta_84 = '160';
-        $respuesta_85 = '180';
-        $respuesta_86 = '200';
-        $respuesta_87 = '220';
-        $respuesta_88 = '240';
-        
-        // Tabla del 21
-        $respuesta_89 = '42';
-        $respuesta_90 = '63';
-        $respuesta_91 = '84';
-        $respuesta_92 = '105';
-        $respuesta_93 = '126';
-        $respuesta_94 = '147';
-        $respuesta_95 = '168';
-        $respuesta_96 = '189';
-        $respuesta_97 = '210';
-        $respuesta_98 = '231';
-        $respuesta_99 = '252';
-        
-        // Tabla del 22
-        $respuesta_100 = '44';
-        $respuesta_101 = '66';
-        $respuesta_102 = '88';
-        $respuesta_103 = '110';
-        $respuesta_104 = '132'; 
-        $respuesta_105 = '154';
-        $respuesta_106 = '176';
-        $respuesta_107 = '198';
-        $respuesta_108 = '220';
-        $respuesta_109 = '242';
-        $respuesta_110 = '264';
-        
-        // Marcar todas como correctas
-    $verificar_1 = $verificar_2 = $verificar_3 = /* ... todas las variables de verificación ... */ $verificar_122 = "correcto";
+        // Establecer todas las respuestas correctas
+        $respuesta_1 = 'divide';
+        $respuesta_2 = 'a^{p-1}-1';
+        $respuesta_3 = 'p';
+        $respuesta_4 = 'primo';
+        $respuesta_5 = 'no sea divisible';
+        $respuesta_6 = 'Leonhard Euler';
+        $respuesta_7 = 'p es primo';
+        $respuesta_8 = 'no divisible';
+        $respuesta_9 = 'p';
+        $respuesta_10 = 'a^{p-1}\equiv1\pmod{p}';
+        $respuesta_11 = 'a^p\equiv a\pmod{p}';
+        $respuesta_12 = 'a^{p-1}=1';
+        $respuesta_13 = 'restos';
+        $respuesta_14 = 'potencias';
+        $respuesta_15 = '7^{10}\equiv1\pmod{11}';
+        $respuesta_16 = '(7^{10})^k\equiv1\pmod{11}';
+        $respuesta_17 = '222';
+        $respuesta_18 = '10';
+        $respuesta_19 = '22*10+2';
+        $respuesta_20 = '(7^{10})^{22}\cdot7^2\equiv49\pmod{11}';
+        $respuesta_21 = '49\equiv5\pmod{11}';
+        $respuesta_22 = '7^{222}\mod11=5';
+        $respuesta_23 = 'primo';
+        $respuesta_24 = 'p-1';
+        $respuesta_25 = 'q(p-1)+r';
+        $respuesta_26 = 'p-1';
+        $respuesta_27 = 'a^n \mod p';
+        $respuesta_28 = 'a^r \mod p';
+        $respuesta_29 = 'no es divisible';
+        $respuesta_30 = 'p\leq\sqrt{n}';
+        $respuesta_31 = 'ineficiente';
+        $respuesta_32 = '\sqrt{n}';
+        $respuesta_33 = 'divisiones';
+        $respuesta_34 = 'divide';
+        $respuesta_35 = '2^{n-1}\equiv1\pmod{n}';
+        $respuesta_36 = 'primo';
+        $respuesta_37 = 'primo impar';
+        $respuesta_38 = '16\equiv1\pmod{5}';
+        $respuesta_39 = 'primo impar';
+        $respuesta_40 = 'primo';
+        $respuesta_41 = 'primo';
+        $respuesta_42 = '2^{n-1}\equiv1\pmod{n}';
+        $respuesta_43 = 'pseudoprimos en base 2';
+        $respuesta_44 = 'compuesto';
+        $respuesta_45 = '2^{340}\equiv1\pmod{341}';
+        $respuesta_46 = 'distinto';
+
+        // Marcar todas como correctas usando un bucle for
+        for ($i = 1; $i <= 46; $i++) {
+            ${"verificar_$i"} = "correcto";
+        }
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
    if ($respuesta_1 === 'divide') {  
@@ -705,7 +610,7 @@ if ($_POST) {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 250vh;
+    height: 300vh;
     }
 </style>
  
@@ -1048,7 +953,7 @@ function ocultarMensaje4() {
     <span id="formula">
         \(     \)
     </span> 
-    <input type="text" name="respuesta_2"   id="respuesta_2" oninput="actualizarFormula()" 
+    <input type="text" name="respuesta_2"   id="respuesta_2" oninput="actualizarFormula()"  
     value="<?php echo $respuesta_2?>" size="9" >
     siempre que
     <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="1">
@@ -1088,7 +993,20 @@ function ocultarMensaje4() {
     <input type="text" name="respuesta_11"   id="respuesta_11" oninput="actualizarFormula3()" 
     value="<?php echo $respuesta_11?>" size="20" >
     
- 
+    <br><br>
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_1 ?>
+    <?php echo $verificar_2 ?>
+    <?php echo $verificar_3 ?>
+    <?php echo $verificar_4 ?>
+    <?php echo $verificar_5 ?>
+    <?php echo $verificar_6 ?>
+    <?php echo $verificar_7 ?>  
+    <?php echo $verificar_8 ?>
+    <?php echo $verificar_9 ?>
+    <?php echo $verificar_10 ?>
+    <?php echo $verificar_11 ?> 
+    <hr>
 
     <p><strong>Observación:</strong> El teorema pequeño de Fermat nos dice que si \( a \in \mathbb{Z}_p \), 
     entonces 
@@ -1136,7 +1054,47 @@ function ocultarMensaje4() {
     <p  style="text-align:center"> \(
     222 =   \,\)<input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="8"> 
     </p>
+
+
+
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_12 ?>
+    <?php echo $verificar_13 ?>
+    <?php echo $verificar_14 ?>
+    <?php echo $verificar_15 ?>
+    <?php echo $verificar_16 ?>
+    <?php echo $verificar_17 ?>
+    <?php echo $verificar_18 ?>
+    <?php echo $verificar_19 ?>
+
+    <hr>
     <p>Entonces:</p>
+
+    <button onmousedown="mostrarImagen()" onmouseup="ocultarImagen()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada" src="../../../../img/congruencia_fermat.png" style="display: none; max-width: 100%" width="460" >
+
+    <script>
+        function mostrarImagen() {
+        var imagenMostrada = document.getElementById('imagenMostrada');
+
+        // Mostrar la imagen
+        imagenMostrada.style.display = 'block';
+        }
+
+        function ocultarImagen() {
+        var imagenMostrada = document.getElementById('imagenMostrada');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada.style.display = 'none';
+        }
+    </script>    
+     
+
+
+
+
     <p><strong>utilizar \cdot</strong></p>
     <span id="formula7">
         \[     \]
@@ -1204,27 +1162,27 @@ function ocultarMensaje4() {
      . Aprovecharemos 
     esta simplificación muchas veces en nuestro estudio de la teoría de números.</p>
 
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_12 ?>
+    <?php echo $verificar_13 ?>
+    <?php echo $verificar_14 ?>
+    <?php echo $verificar_15 ?>
+    <?php echo $verificar_16 ?>
+    <?php echo $verificar_17 ?>
+    <?php echo $verificar_18 ?>
+    <?php echo $verificar_19 ?>
+    <?php echo $verificar_20 ?>
+    <?php echo $verificar_21 ?>
+    <?php echo $verificar_22 ?>
+    <?php echo $verificar_23 ?>
+    <?php echo $verificar_24 ?>
+    <?php echo $verificar_25 ?>
+    <?php echo $verificar_26 ?>
+    <?php echo $verificar_27 ?>
+    <?php echo $verificar_28 ?>
 
-    <button onmousedown="mostrarImagen()" onmouseup="ocultarImagen()">Ayuda</button>
-    <!-- Elemento para mostrar la imagen -->
 
-    <img id="imagenMostrada" src="../../../../img/congruencia_fermat.png" style="display: none; max-width: 100%" width="460" >
-
-    <script>
-        function mostrarImagen() {
-        var imagenMostrada = document.getElementById('imagenMostrada');
-
-        // Mostrar la imagen
-        imagenMostrada.style.display = 'block';
-        }
-
-        function ocultarImagen() {
-        var imagenMostrada = document.getElementById('imagenMostrada');
-
-        // Ocultar la imagen al soltar el botón
-        imagenMostrada.style.display = 'none';
-        }
-    </script>    
+    <hr>
      
 
  
@@ -1237,7 +1195,7 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
     <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-        <h2>4.4.6 Pseudoprimos</h2>
+    <h2>4.4.6 Pseudoprimos</h2>
 
     <p>En la Sección 4.2 mostramos que un número entero \( n \) es primo cuando 
     <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="12">     
@@ -1291,7 +1249,20 @@ function ocultarMensaje4() {
     <input type="text" name="respuesta_38"   id="respuesta_38" oninput="actualizarFormula16()" 
     value="<?php echo $respuesta_38?>" size="22"> 
 
+    <br><br>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_29 ?>
+    <?php echo $verificar_30 ?>
+    <?php echo $verificar_31 ?>
+    <?php echo $verificar_32 ?>
+    <?php echo $verificar_33 ?>
+    <?php echo $verificar_34 ?>
+    <?php echo $verificar_35 ?>
+    <?php echo $verificar_36 ?>
+    <?php echo $verificar_37 ?>
+    <?php echo $verificar_38 ?>
 
+    <hr>
     <p>Por el pequeño teorema de Fermat, sabemos que esta observación es correcta: es decir, 
      <span id="formula15">
     \(   \)
@@ -1321,9 +1292,7 @@ function ocultarMensaje4() {
     <input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="19">    
     </strong>.</p>
 
-    <button type="submit">enviar</button>
-
-
+     
     <h3>Ejemplo 10</h3>
 
     <p>El número entero 341 es un pseudoprimo en base 2 porque es 
@@ -1340,6 +1309,23 @@ function ocultarMensaje4() {
     <p>Podemos usar un entero 
     <input type="text" name="respuesta_46" value="<?php echo $respuesta_46; ?>" size="8">      
     de 2 como base al estudiar pseudoprimos.</p>
+
+
+    <button type="submit">enviar</button>
+    <?php echo $verificar_39 ?>
+    <?php echo $verificar_40 ?>
+    <?php echo $verificar_41 ?>
+    <?php echo $verificar_42 ?>
+    <?php echo $verificar_43 ?>
+    <?php echo $verificar_44 ?>
+    <?php echo $verificar_45 ?>
+    <?php echo $verificar_46 ?>
+    
+    <hr>
+    <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
+    <br>
+    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
+    <button type="submit"   >Mostrar Solución</button>
     </form>
 </div>
 
