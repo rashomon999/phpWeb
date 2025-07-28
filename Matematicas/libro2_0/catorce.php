@@ -735,7 +735,7 @@ if ($quincuagesimo_noveno === '+C') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="catorce.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -1082,8 +1082,8 @@ function actualizarFormula14() {
     No se puede dividir, Se reuelve por fracciones parciales (4 metodos diferentes).
     <hr>
     \(   \frac{x^2-3x+1}{x+1} \) <br>
-    <img src="..\img\Captura de pantalla 2024-12-18 102326.png" alt="" width="500">
-    <img src="..\img\Captura de pantalla 2024-12-18 102655.png" alt="" width="500"> <br><br>
+    <img src="../../img/Captura de pantalla 2024-12-18 102326.png" alt="" width="500">
+    <img src="../../img/Captura de pantalla 2024-12-18 102655.png" alt="" width="500"> <br><br>
     tenemos: \( \frac{Dividendo}{Divisor} \)
     recordemos que: 
     <br><br>
@@ -1092,16 +1092,16 @@ function actualizarFormula14() {
     \( \frac{Dividendo}{Divisor} = \frac{(Divisor⋅Cociente)+Residuo.}{Divisor} \)
     <br><br>
     por ulitmo integramos <br><br>
-    <img src="..\img\Captura de pantalla 2024-12-18 103448.png" alt="" width="500">
+    <img src="../../img\Captura de pantalla 2024-12-18 103448.png" alt="" width="500">
     
     </form>
 </div>
 <div class="seccion derecha">
     <form action="./catorce.php" method="POST" onsubmit="handleSubmit(event)">
-        <img src="..\img\Captura de pantalla 2024-12-18 103856.png" alt="" width="500"> <br>
+        <img src="../../img/Captura de pantalla 2024-12-18 103856.png" alt="" width="500"> <br>
         Ahora pasamos propiamente al tema de integracion por fracciones parciales: <br><br>
         4 casos (segun los factores): <br>
-        <img src="../img/Captura de pantalla 2024-12-18 161110.png" alt="" width="500">
+        <img src="../../img/Captura de pantalla 2024-12-18 161110.png" alt="" width="500">
     </form>
 </div>
 <div class="centered-container">

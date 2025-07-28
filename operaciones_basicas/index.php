@@ -1302,20 +1302,19 @@ if ($respuesta_121 === '144') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./../style_2_0.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
-    .imagen {
-        max-width: 100%;
-        height: auto;
-    }
+ 
     .seccion {
-    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
-    padding: 20px; /* importante este padding*/
+    /*width: 50%;*/    
+    width: calc(50% - 7.5px);
+    padding: 20px;
     box-sizing: border-box;
     height: 370vh;
     }
+
 </style>
  
 <script>
@@ -1591,9 +1590,14 @@ function ocultarMensaje4() {
 </script>
     
 </head>
-<body> 
-<div class="seccion izquierda">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+<body>  
+
+<form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
+<div class="form-container">
+
+    
+<div class="seccion izquierda"> 
+
                    <h4>Tabla del 12</h4>
     12 * 2 = <input type="text" name="respuesta_111" value="<?php echo $respuesta_111; ?>"><br>
     12 * 3 = <input type="text" name="respuesta_112" value="<?php echo $respuesta_112; ?>"><br>
@@ -1744,14 +1748,14 @@ function ocultarMensaje4() {
     <?php echo $verificar_53 ?>
     <?php echo $verificar_54 ?>
     <?php echo $verificar_55 ?>
-    </form>
+   
 </div>
 
 
 
 
 <div class="seccion derecha">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+   
     18 * 2 = <input type="text" name="respuesta_56" value="<?php echo $respuesta_56; ?>"><br>
 18 * 3 = <input type="text" name="respuesta_57" value="<?php echo $respuesta_57; ?>"><br>
 18 * 4 = <input type="text" name="respuesta_58" value="<?php echo $respuesta_58; ?>"><br>
@@ -1763,7 +1767,7 @@ function ocultarMensaje4() {
 18 * 10 = <input type="text" name="respuesta_64" value="<?php echo $respuesta_64; ?>"><br>
 18 * 11 = <input type="text" name="respuesta_65" value="<?php echo $respuesta_65; ?>"><br>
 18 * 12 = <input type="text" name="respuesta_66" value="<?php echo $respuesta_66; ?>"><br>
-<button type="submit">Enviar</button>
+    <button type="submit">Enviar</button>
     <?php echo $verificar_56 ?>
     <?php echo $verificar_57 ?>
     <?php echo $verificar_58 ?>
@@ -1836,7 +1840,6 @@ function ocultarMensaje4() {
 21 * 11 = <input type="text" name="respuesta_98" value="<?php echo $respuesta_98; ?>"><br>
 21 * 12 = <input type="text" name="respuesta_99" value="<?php echo $respuesta_99; ?>"><br>
     <button type="submit">Enviar</button>
-
     <?php echo $verificar_89 ?>
     <?php echo $verificar_90 ?>
     <?php echo $verificar_91 ?>
@@ -1880,9 +1883,9 @@ function ocultarMensaje4() {
     <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
     <button type="submit"   >Mostrar Solución</button>
         
-    </form>
 </div>
-
+</div>
+ </form>
 <div class="centered-container">
     <a
         name="siguiente"

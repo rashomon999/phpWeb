@@ -244,13 +244,21 @@ if ($_POST) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="../../style_2_0.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
     .imagen {
         max-width: 100%;
         height: auto;
+    }
+
+       .seccion {
+    /*width: 50%;*/    
+    width: calc(50% - 7.5px);
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100vh;
     }
 </style>
  
@@ -552,8 +560,13 @@ function ocultarMensaje4() {
     
 </head>
 <body>
+    
+<form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+
+<div class="form-container">
 <div class="seccion izquierda">
-    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+  
+    
     <Strong>Razones trigonometricas  </Strong> <br>
     Las seis razones trigonométricas en un triángulo
     rectángulo son: seno, coseno, tangente, secante,
@@ -636,15 +649,13 @@ function ocultarMensaje4() {
     <?php echo $verificar_6 ?>
     <hr>
 
-    </form>
-</div>
+ </div>
 
 
 
 
 <div class="seccion derecha">
-    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <Strong>Continuacion identidades por cociente:</Strong>
+     <Strong>Continuacion identidades por cociente:</Strong>
     <br><br>
     Nota: anteriormente se hizo Tan y Cot, saltarse estos.
     <br><br>
@@ -736,8 +747,10 @@ function ocultarMensaje4() {
     <button type="submit">Mostrar Solución</button>
  
     <hr>    
-    </form>
+ 
 </div>
+</div> 
+</form>
 <div class="centered-container">
     <a
         name="siguiente"

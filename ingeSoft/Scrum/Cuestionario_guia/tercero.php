@@ -2045,13 +2045,13 @@ function ocultarMensaje4() {
   
     <ul>
         <li>Para el Product Backlog, es el 
-        <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="9">    
+        <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="20">    
         .</li>
         <li>Para el Sprint Backlog, es el 
-        <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="9">    
+        <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="20">    
         .</li>
         <li>Para el Increment es la 
-        <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="9">    
+        <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="20">    
         .</li>
     </ul>
   
@@ -2067,6 +2067,35 @@ function ocultarMensaje4() {
      .
     </p>
 
+
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_1 ?>
+    <?php echo $verificar_2 ?>
+    <?php echo $verificar_3 ?>
+    <?php echo $verificar_4 ?>
+    <?php echo $verificar_5 ?>
+    <?php echo $verificar_6 ?>
+    <?php echo $verificar_7 ?>  
+    <?php echo $verificar_8 ?>
+    <?php echo $verificar_9 ?>
+    <?php echo $verificar_10 ?>
+    <?php echo $verificar_11 ?> 
+    <?php echo $verificar_12 ?>
+    <?php echo $verificar_13 ?>
+    <?php echo $verificar_14 ?>
+    <?php echo $verificar_15 ?>
+    <?php echo $verificar_16 ?>
+    <?php echo $verificar_17 ?>
+    <?php echo $verificar_18 ?>
+    <?php echo $verificar_19 ?>
+    <?php echo $verificar_20 ?>
+    <?php echo $verificar_21 ?>
+    <?php echo $verificar_22 ?>
+    <?php echo $verificar_23 ?>
+    <?php echo $verificar_24 ?>
+    
+    <hr>
+    
     <h3>Product Backlog</h3>
     <p>
     El Product Backlog es una 

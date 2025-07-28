@@ -509,19 +509,16 @@ if ($_POST) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../style_2_0.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
-    .imagen {
-        max-width: 100%;
-        height: auto;
-    }
-      .seccion {
-    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
-    padding: 20px; /* importante este padding*/
+    .seccion {
+    /*width: 50%;*/    
+    width: calc(50% - 7.5px);
+    padding: 20px;
     box-sizing: border-box;
-    height: 250vh;
+    height: 270vh;
     }
 </style>
  
@@ -805,8 +802,10 @@ function ocultarMensaje4() {
     
 </head>
 <body>
+<form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+<div class="form-container">
 <div class="seccion izquierda">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+     
     <p>
     Se llaman identidades recíprocas porque cada una de esas funciones es el recíproco multiplicativo
      (la inversa respecto a la multiplicación) de otra función trigonométrica.
@@ -911,15 +910,14 @@ function ocultarMensaje4() {
     <?php echo $verificar_13 ?>
     <?php echo $verificar_14 ?>
     <hr>
-    </form>
+ 
 </div>
 
 
 
 
 <div class="seccion derecha">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-
+ 
     
 
     siguiente identidad pitagorica: <br><br>
@@ -1102,8 +1100,10 @@ el <strong>1</strong> es un
     <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
     <button type="submit"   >Mostrar Solución</button>
         <hr>
-    </form>
+    
 </div>
+</div>
+</form>
 <div class="centered-container">
     <a
         name="siguiente"

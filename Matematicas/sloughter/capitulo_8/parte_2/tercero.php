@@ -1124,13 +1124,19 @@ if ($respuesta_110 === '264') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
     <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../../../../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
     .imagen {
         max-width: 100%;
         height: auto;
+    }
+    .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 400vh;
     }
 </style>
  
@@ -1431,145 +1437,63 @@ function ocultarMensaje4() {
 </script>
     
 </head>
-<body>
+<body> 
 <div class="seccion izquierda">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <strong>Inducción Matemática</strong>
-     <p>Muchas declaraciones matemáticas afirman que una propiedad es verdadera para todos los enteros positivos. Ejemplos de tales declaraciones incluyen que para todo número entero positivo <em>n</em>:</p>
-    <ul>
-        <li><em>n!</em> ≤ <em>nⁿ</em></li>
-        <li><em>n³ - n</em> es divisible por 3</li>
-        <li>Un conjunto con <em>n</em> elementos tiene <em>2ⁿ</em> subconjuntos</li>
-        <li>La suma de los primeros <em>n</em> enteros positivos es <em>(n(n + 1)) / 2</em></li>
-    </ul>
-    <p>Uno de los principales objetivos de este capítulo, y del libro, es proporcionar una comprensión profunda de la
-    inducción matemática, que se utiliza para demostrar resultados de este tipo.</p>
-    
-    <strong>Pruebas por Inducción Matemática</strong>
+    <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+         <h2>Problema 8.2 (f)</h2>
+  <p>
+    Resolver la ecuación diferencial:
+    \[
+      \dot{y} = 1 + y^2, \quad y(0) = 0.
+    \]
+  </p>
 
-     <p>Las demostraciones mediante inducción matemática tienen dos partes. Primero, se muestra que la afirmación es 
-    cierta para el número entero positivo 1. Luego, se demuestra que si la afirmación es cierta para un número entero
-    positivo, entonces también debe serlo para el siguiente número entero.</p>
+  <h3>Solución paso a paso:</h3>
 
-    <p>La inducción matemática se basa en la regla de inferencia que nos dice que si <em>P(1)</em> es verdadero y
-    <em>∀k (P(k) → P(k+1))</em> es verdadero en el dominio de los enteros positivos, entonces <em>∀n P(n)</em> también
-    es verdadero.</p>
+  <ol>
+    <li>
+      Es separable:
+      \[
+        \frac{dy}{dt} = 1 + y^2 \quad \Longrightarrow \quad \frac{dy}{1 + y^2} = dt.
+      \]
+    </li>
 
-    <p>La inducción matemática puede usarse para demostrar una gran variedad de resultados. Comprender cómo leer y 
-    construir pruebas mediante inducción matemática es un objetivo clave en el aprendizaje de matemáticas discretas.</p>
-    
-    <strong>Definiciones Recursivas</strong>
+    <li>
+      Integrar ambos lados:
+      \[
+        \int \frac{dy}{1 + y^2} = \int dt.
+      \]
+      Sabemos que:
+      \[
+        \int \frac{1}{1 + y^2} dy = \tan^{-1} y.
+      \]
+      Así que:
+      \[
+        \tan^{-1} y = t + C.
+      \]
+    </li>
 
-    <p>En el Capítulo 2 definimos explícitamente conjuntos y funciones. Es decir, describimos conjuntos enumerando 
-    sus elementos o proporcionando una propiedad que caracteriza estos elementos. También presentamos fórmulas para
-    los valores de funciones.</p>
+    <li>
+      Despejar \( y \):
+      \[
+        y = \tan(t + C).
+      \]
+    </li>
 
-    <p>Sin embargo, hay otra forma importante de definir tales objetos, basada en la inducción matemática. Para
-    definir funciones, se especifican algunos valores iniciales y se proporciona una regla para encontrar valores 
-    posteriores a partir de los valores ya conocidos.</p>
+    <li>
+      Usar la condición inicial:
+      \[
+        y(0) = 0 \Longrightarrow \tan(C) = 0 \Longrightarrow C = 0.
+      \]
+    </li>
+  </ol>
 
-    <p>Los conjuntos pueden definirse enumerando algunos de sus elementos y proporcionando reglas para construir
-    nuevos elementos a partir de los que ya se sabe que pertenecen al conjunto. Tales definiciones, llamadas 
-    <strong>definiciones recursivas</strong>, se utilizan ampliamente en matemáticas discretas y en informática.</p>
-
-    <p>Una vez que hemos definido un conjunto de forma recursiva, podemos usar un método de demostración llamado 
-    <strong>inducción estructural</strong> para probar propiedades sobre ese conjunto.</p>
-    
-    <strong>Verificación de Programas</strong>
-    <p>Cuando se especifica un procedimiento para resolver un problema, este procedimiento debe garantizar siempre 
-    la solución correcta. Simplemente probar un conjunto de valores de entrada y verificar que se obtiene el resultado 
-    correcto no demuestra que el procedimiento siempre funcione correctamente.</p>
-
-    <p>La corrección de un procedimiento solo puede garantizarse demostrando que <strong>siempre</strong> produce el 
-    resultado correcto.</p>
-
-    <p>La última sección de este capítulo presenta una introducción a las técnicas de <strong>verificación de 
-    programas</strong>. Se trata de una técnica formal para verificar que los procedimientos son correctos.
-    La verificación de programas sirve como base para los intentos actuales de demostrar de manera mecánica que
-    los programas son correctos.</p>        
-
-    <hr>
-    <p><strong>5.1 Inducción Matemática</strong></p>
-    <p><strong>5.1.1 Introducción</strong></p>
-    <p>
-        Supongamos que tenemos una escalera infinita, como se muestra en la Figura 1, y queremos saber si podemos 
-        alcanzar cada peldaño de esta escalera. Sabemos dos cosas:
-    </p>
-    <ol>
-        <li>Podemos alcanzar el primer peldaño de la escalera.</li>
-        <li>Si podemos alcanzar un peldaño en particular, entonces podemos alcanzar el siguiente peldaño.</li>
-    </ol>
-    <p>
-        ¿Podemos concluir que podemos alcanzar cada peldaño? Por (1), sabemos que podemos alcanzar el primer 
-        peldaño de la escalera. Además, dado que podemos alcanzar el primer peldaño, por (2), también podemos 
-        alcanzar el segundo peldaño; es el siguiente después del primero. Aplicando (2) nuevamente, dado que 
-        podemos alcanzar el segundo peldaño, también podemos alcanzar el tercer peldaño. Continuando de esta
-        manera, podemos demostrar que podemos alcanzar el cuarto peldaño, el quinto peldaño, y así sucesivamente.
-        Por ejemplo, después de 100 aplicaciones de (2), sabemos que podemos alcanzar el peldaño 101. Pero, 
-        ¿podemos concluir que podemos alcanzar cada peldaño de esta escalera infinita? La respuesta es sí, algo 
-        que podemos verificar usando una técnica de prueba importante llamada inducción matemática. Es decir,
-        podemos demostrar que la afirmación de que podemos alcanzar el enésimo peldaño de la escalera es verdadera
-        para todos los números enteros positivos n.
-    </p>
-    <p>
-        La inducción matemática es una técnica de demostración extremadamente importante que se puede usar para
-        probar afirmaciones de este tipo. Como veremos en esta sección y en las siguientes secciones de este capítulo
-        y capítulos posteriores, la inducción matemática se usa ampliamente para demostrar resultados sobre una gran 
-        variedad de objetos discretos. Por ejemplo, se utiliza para demostrar resultados sobre la complejidad de
-        algoritmos, la corrección de ciertos tipos de programas informáticos, teoremas sobre grafos y árboles, así 
-        como una amplia gama de identidades y desigualdades.
-    </p>
-    <p>
-        En esta sección, describiremos cómo se puede utilizar la inducción matemática y por qué es una técnica 
-        de prueba válida. Es extremadamente importante señalar que la inducción matemática solo se puede utilizar
-        para probar resultados obtenidos de otra manera. No es una herramienta para descubrir fórmulas o teoremas.
-    </p>
-
-
-
-
-
-
-
-
-    <hr>
-
-
-
-    <strong>5.1.2 Inducción Matemática</strong>
-    <p>En general, la inducción matemática se puede utilizar para demostrar afirmaciones que establecen 
-    que P(n) es verdadera para todos los enteros positivos n, donde P(n) es una función proposicional. 
-    Una prueba por inducción matemática tiene dos partes: un paso base, donde mostramos que P(1) es
-    verdadero, y un paso inductivo, donde mostramos que para todos los enteros positivos k, si P(k) es
-    verdadero, entonces P(k + 1) también es verdadero.</p>
-
-    <strong>PRINCIPIO DE INDUCCIÓN MATEMÁTICA</strong>
-    <p>Para probar que P(n) es verdadero para todos los enteros positivos n, donde P(n) es una función
-    proposicional, completamos dos pasos:</p>
-    <ul>
-    <li><strong>PASO BASE:</strong> Verificamos que P(1) es verdadero.</li>
-    <li><strong>PASO INDUCTIVO:</strong> Mostramos que la declaración condicional P(k) → P(k + 1) es
-    verdadera para todos los enteros positivos k.</li>
-    </ul>
-
-    <p>Para completar el paso inductivo de una prueba usando el principio de inducción matemática, 
-    asumimos que P(k) es verdadero para un entero positivo arbitrario k y mostramos que bajo esta
-    suposición, P(k + 1) también debe ser verdadero. La suposición de que P(k) es verdadero se llama 
-    la <strong>hipótesis inductiva</strong>.</p>
-
-    <p>Una vez que completamos ambos pasos en una prueba por inducción matemática, hemos demostrado 
-    que P(n) es verdadero para todos los enteros positivos n, es decir, hemos demostrado que ∀n P(n)
-    es verdadero, donde la cuantificación es sobre el conjunto de los enteros positivos. En el paso
-    inductivo, mostramos que ∀k (P(k) → P(k + 1)) es verdadero, donde nuevamente, el dominio es el
-    conjunto de los enteros positivos.</p>
-
-    <p>Expresado como una regla de inferencia, esta técnica de prueba puede expresarse como:</p>
-    <pre>(P(1) ∧ ∀ k (P(k) → P(k + 1))) → ∀ n P(n),</pre>
-    <p>cuando el dominio es el conjunto de los enteros positivos. Debido a que la inducción matemática 
-    es una técnica tan importante, vale la pena explicar en detalle los pasos de una prueba utilizando
-    esta técnica.</p>
-
-
+  <h3>Solución final:</h3>
+  <p>
+    \[
+      \boxed{ y(t) = \tan t }.
+    \]
+  </p>
     </form>
 </div>
 
@@ -1577,134 +1501,8 @@ function ocultarMensaje4() {
 
 
 <div class="seccion derecha">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <p>Lo primero que hacemos para probar que P(n) es verdadero para todos los enteros positivos n es 
-    demostrar que P(1) es verdadero. Esto equivale a mostrar que la afirmación particular obtenida 
-    cuando n se reemplaza por 1 en P(n) es verdadera. Luego, debemos demostrar que P(k) → P(k + 1) es
-    verdadero para cada entero positivo k. Para probar que esta declaración condicional es verdadera
-    para cada entero positivo k, necesitamos mostrar que P(k + 1) no puede ser falso cuando P(k) es
-    verdadero. Esto se puede lograr asumiendo que P(k) es verdadero y demostrando que, bajo esta hipótesis,
-    P(k + 1) también debe ser verdadero.</p>
-
-    <strong>Nota:</strong>
-    <p>En una prueba por inducción matemática, no se asume que P(k) es verdadero para todos los enteros positivos.
-    Solo se muestra que si se asume que P(k) es verdadero, entonces P(k + 1) también es verdadero. Por lo 
-    tanto, una prueba por inducción matemática no es un caso de petición de principio ni de razonamiento 
-    circular.</p>
-
-    <p>Después de completar los pasos base e inductivo de una prueba de que P(n) es verdadero para todos
-    los enteros positivos n, sabemos que P(1) es verdadero. Eso es lo que se demuestra en el paso base.
-    Podemos concluir que P(2) es verdadero porque sabemos que P(1) es verdadero y, a partir del paso inductivo,
-    sabemos que P(1) → P(2). Además, sabemos que P(3) es verdadero porque P(2) es verdadero y sabemos que 
-    P(2) → P(3) a partir del paso inductivo. Siguiendo esta lógica utilizando un número finito de implicaciones,
-    podemos demostrar que P(n) es verdadero para cualquier entero positivo n.</p>
-
-
-    <hr>
-
-    <strong>NOTA HISTÓRICA</strong>  
-    <p>El primer uso conocido de la inducción matemática se encuentra en el trabajo del matemático del siglo
-    XVI <strong>Francesco Maurolico</strong> (1494 – 1575). Maurolico escribió extensamente sobre las obras
-    de las matemáticas clásicas y realizó muchas contribuciones a la geometría y la óptica. En su libro
-    <em>Arithmeticorum Libri Duo</em>, presentó una variedad de propiedades de los números enteros junto 
-    con sus demostraciones. Para probar algunas de estas propiedades, ideó el método de inducción matemática.
-    Su primer uso de la inducción matemática en este libro fue para demostrar que la suma de los primeros
-    <em>n</em> números impares positivos es igual a <em>n²</em>.</p>
-
-    <p><strong>Augustus De Morgan</strong> es reconocido por haber presentado en 1838 las primeras demostraciones 
-    formales utilizando inducción matemática, así como por introducir el término “inducción matemática.” Las 
-    pruebas de Maurolico eran informales y él nunca utilizó la palabra “inducción.” Para aprender más sobre 
-    la historia del método de inducción matemática, véase [Gu10].</p>
-
-
-    <hr>
-    <strong> FORMAS DE RECORDAR CÓMO FUNCIONA LA INDUCCIÓN MATEMÁTICA</strong>
-    
-    <p> Pensar en la escalera infinita y en las reglas para alcanzar los peldaños puede ayudarte a recordar cómo 
-    funciona la inducción matemática. Observa que las afirmaciones (1) y (2) sobre la escalera infinita 
-    corresponden exactamente al paso base y al paso inductivo, respectivamente, de la demostración 
-    de que P(n) es verdadera para todos los enteros positivos n, donde P(n) es la afirmación de que podemos
-    alcanzar el enésimo peldaño de la escalera. En consecuencia, podemos aplicar la inducción matemática para
-    concluir que podemos alcanzar cada peldaño.
-    </p>
-    
-    <p>Otra forma de ilustrar el principio de inducción matemática es considerar una fila infinita de fichas de dominó, 
-    etiquetadas como 1, 2, 3, … , n, …, donde cada ficha está de pie. Sea P(n) la proposición de que la ficha n 
-    es derribada. Si la primera ficha cae (es decir, si P(1) es verdadera) y, si cada vez que la k-ésima ficha
-    cae, también derriba a la ficha (k + 1) (es decir, si P(k) → P(k + 1) es verdadera para todos los enteros 
-    positivos k), entonces todas las fichas de dominó caerán. Esto se ilustra en la Figura 2.
-    </p>
-    <hr>
-
-    <p><strong>La pregunta es:</strong> ¿Por qué la inducción matemática es válida?</p>
-
-    <p>Para responder esto, usamos la <strong>propiedad del buen orden</strong>, que dice que cualquier conjunto de
-    números enteros positivos que no esté vacío tiene un número más pequeño.</p>
-
-    <p>Ahora, supongamos que estamos tratando de demostrar que una afirmación P(n) es verdadera para todos los
-    números enteros positivos n.</p>
-
-    <p>Ya sabemos dos cosas:</p>
-
-    <ul>
-        <li><strong>P(1) es verdadera.</strong> (Paso base)</li>
-        <li><strong>Si P(k) es verdadera, entonces P(k + 1) también lo es.</strong> (Paso inductivo)</li>
-    </ul>
-
-    <p>Pero ahora supongamos lo contrario, es decir, que hay al menos un número positivo para el cual P(n) es falsa. 
-    Llamemos a este conjunto de números donde P(n) es falsa <strong>S</strong>.</p>
-
-    <p>Como S no está vacío, según la propiedad del buen orden, debe existir el número más pequeño en S. Llamemos 
-    a ese número <strong>m</strong>.</p>
-
-    <p>Ahora analicemos m:</p>
-
-    <ul>
-    <li><strong>m no puede ser 1</strong>, porque ya demostramos que P(1) es verdadera.</li>
-    <li>Como <strong>m es mayor que 1</strong>, el número <strong>m - 1</strong> también es positivo.</li>
-    <li>Pero m es el número más pequeño donde P(n) es falsa, lo que significa que <strong>P(m - 1) debe ser 
-    verdadera</strong> (de lo contrario, m - 1 también estaría en S y sería el número más pequeño en S, lo cual
-    es una contradicción).</li>
-    </ul>
-
-    <p><strong>Pero aquí viene el problema:</strong></p>
-
-    <ul>
-        <li>Según el paso inductivo, si <strong>P(m - 1) es verdadera</strong>, entonces <strong>P(m) también 
-        debe serlo</strong>.</li>
-        <li>Sin embargo, habíamos supuesto que <strong>P(m) era falsa</strong>.</li>
-    </ul>
-
-    <p>Esto es una <strong>contradicción</strong>.</p>
-
-    <p>Por lo tanto, la suposición de que existe algún número en el que P(n) es falsa es incorrecta,
-    lo que significa que <strong>P(n) es verdadera para todos los números enteros positivos n</strong>.</p>
-
-    <p><strong>En resumen</strong>, la inducción matemática funciona porque si hubiera algún número donde la
-    afirmación P(n) es falsa, encontraríamos una contradicción con el principio del buen orden.</p>
-
-
-    <hr>
-    es falsa porque contradice la induccion
-    <hr>
-    <strong>Observación:</strong>
-    <p>
-    En este libro, tomamos la propiedad del buen orden para los números enteros positivos como un axioma.
-    </p>
- 
-    Hemos demostrado que la inducción matemática es una técnica de prueba válida. Sin embargo, podríamos
-    haber tomado el principio de inducción matemática como un axioma y demostrado que los números enteros 
-    positivos están bien ordenados.
-
-    Es decir, la propiedad del buen orden para los números enteros positivos y el principio de inducción
-    matemática son equivalentes.
-
-    (En la Sección 5.2 presentaremos ejemplos de pruebas que utilizan directamente la propiedad del buen orden.
-    Además, el Ejercicio 41 de esa sección pide una demostración de que la propiedad del buen orden para los
-    números enteros positivos es una consecuencia del principio de inducción matemática).
-    <hr>
-    (continuacion siguiente pagina)
-
+    <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+  
     </form>
 </div>
 
@@ -1713,7 +1511,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="segundo.php"
+        href="tercero.php"
         role="button"
         width="50px"
         height="50px"

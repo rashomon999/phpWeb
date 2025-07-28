@@ -14,7 +14,8 @@ include("../config/bd.php");
 
 switch($accion){
         case "Agregar":
-            $sentenciaSQL= $conexion->prepare("INSERT INTO `libros` (nombre,imagen ) VALUES (:nombre,:imagen);");
+            $sentenciaSQL= $conexion->prepare("INSERT INTO `libros` (nombre, imagen, categoria) VALUES (:nombre, :imagen, :categoria);");
+            #bindParam es un método de la clase PDOStatement que se utiliza para vincular
             $sentenciaSQL->bindParam(':nombre',$txtNombre);
             $sentenciaSQL->bindParam(':categoria', $txtCategoria); // Nueva línea
 

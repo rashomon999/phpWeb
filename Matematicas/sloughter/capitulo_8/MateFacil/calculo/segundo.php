@@ -1136,7 +1136,7 @@ if ($respuesta_110 === '264') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 360vh;
+    height: 330vh;
     }
 </style>
  
@@ -1658,20 +1658,7 @@ function ocultarMensaje4() {
 
   <p>No es posible despejar \( y \) de forma explícita, por lo que la solución se deja así.</p>
 
-  <h3>Nota sobre la verificación</h3>
-  <p>
-    Para comprobar que esta es la solución correcta, sería necesario hacer una derivación implícita
-    respecto de \( x \) y verificar que se obtiene nuevamente:
-  </p>
-  <p>
-    \[
-    \frac{dy}{dx} = \frac{y \cos(x)}{1 - 2y}
-    \]
-  </p>
 
-  <p>
-    Esa verificación es un buen ejercicio que puedes realizar aparte.
-  </p>
 
 <hr>
 <h2>Verificación de la solución</h2>

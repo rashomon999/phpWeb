@@ -359,170 +359,7 @@ if ($respuesta_25 === '2\\pi') {
     $verificar_25 = "incorrecto";
 }
 
-   // Verificar la respuesta de la cuarta pregunta
-   $respuesta_26 = isset($_POST['respuesta_26']) ? $_POST['respuesta_26'] : '';
-   if ($respuesta_26 === '\frac{180}{\pi}') {  
-       $verificar_26 = "correcto";
-   } elseif ($respuesta_26 === '') {
-       $verificar_26 = '';
-   } else {
-       $verificar_26 = "incorrecto";
-   }
-
-   // Verificar la respuesta de la quinta pregunta
-   $respuesta_27 = isset($_POST['respuesta_27']) ? $_POST['respuesta_27'] : '';
-   if ($respuesta_27 === '\frac{180}{\pi}') {  
-       $verificar_27 = "correcto";
-   } elseif ($respuesta_27 === '') {
-       $verificar_27 = '';
-   } else {
-       $verificar_27 = "incorrecto";
-   }
-
-   $respuesta_28 = isset($_POST['respuesta_28']) ? $_POST['respuesta_28'] : '';
-if ($respuesta_28 === '30^\circ') {  
-    $verificar_28 = "correcto";
-} elseif ($respuesta_28 === '') {
-    $verificar_28 = '';
-} else {
-    $verificar_28 = "incorrecto";
-}
-
-$respuesta_29 = isset($_POST['respuesta_29']) ? $_POST['respuesta_29'] : '';
-if ($respuesta_29 === '45^\circ') {  
-    $verificar_29 = "correcto";
-} elseif ($respuesta_29 === '') {
-    $verificar_29 = '';
-} else {
-    $verificar_29 = "incorrecto";
-}
-
-$respuesta_30 = isset($_POST['respuesta_30']) ? $_POST['respuesta_30'] : '';
-if ($respuesta_30 === '60^\circ') {  
-    $verificar_30 = "correcto";
-} elseif ($respuesta_30 === '') {
-    $verificar_30 = '';
-} else {
-    $verificar_30 = "incorrecto";
-}
-
-$respuesta_31 = isset($_POST['respuesta_31']) ? $_POST['respuesta_31'] : '';
-if ($respuesta_31 === '90^\circ') {  
-    $verificar_31 = "correcto";
-} elseif ($respuesta_31 === '') {
-    $verificar_31 = '';
-} else {
-    $verificar_31 = "incorrecto";
-}
-
-$respuesta_32 = isset($_POST['respuesta_32']) ? $_POST['respuesta_32'] : '';
-if ($respuesta_32 === '120^\circ') {  
-    $verificar_32 = "correcto";
-} elseif ($respuesta_32 === '') {
-    $verificar_32 = '';
-} else {
-    $verificar_32 = "incorrecto";
-}
-
-$respuesta_33 = isset($_POST['respuesta_33']) ? $_POST['respuesta_33'] : '';
-if ($respuesta_33 === '135^\circ') {  
-    $verificar_33 = "correcto";
-} elseif ($respuesta_33 === '') {
-    $verificar_33 = '';
-} else {
-    $verificar_33 = "incorrecto";
-}
-
-$respuesta_34 = isset($_POST['respuesta_34']) ? $_POST['respuesta_34'] : '';
-if ($respuesta_34 === '150^\circ') {  
-    $verificar_34 = "correcto";
-} elseif ($respuesta_34 === '') {
-    $verificar_34 = '';
-} else {
-    $verificar_34 = "incorrecto";
-}
-
-$respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
-if ($respuesta_35 === '180^\circ') {  
-    $verificar_35 = "correcto";
-} elseif ($respuesta_35 === '') {
-    $verificar_35 = '';
-} else {
-    $verificar_35 = "incorrecto";
-}
-
-$respuesta_36 = isset($_POST['respuesta_36']) ? $_POST['respuesta_36'] : '';
-if ($respuesta_36 === '210^\circ') {  
-    $verificar_36 = "correcto";
-} elseif ($respuesta_36 === '') {
-    $verificar_36 = '';
-} else {
-    $verificar_36 = "incorrecto";
-}
-
-$respuesta_37 = isset($_POST['respuesta_37']) ? $_POST['respuesta_37'] : '';
-if ($respuesta_37 === '225^\circ') {  
-    $verificar_37 = "correcto";
-} elseif ($respuesta_37 === '') {
-    $verificar_37 = '';
-} else {
-    $verificar_37 = "incorrecto";
-}
-
-$respuesta_38 = isset($_POST['respuesta_38']) ? $_POST['respuesta_38'] : '';
-if ($respuesta_38 === '240^\circ') {  
-    $verificar_38 = "correcto";
-} elseif ($respuesta_38 === '') {
-    $verificar_38 = '';
-} else {
-    $verificar_38 = "incorrecto";
-}
-
-$respuesta_39 = isset($_POST['respuesta_39']) ? $_POST['respuesta_39'] : '';
-if ($respuesta_39 === '270^\circ') {  
-    $verificar_39 = "correcto";
-} elseif ($respuesta_39 === '') {
-    $verificar_39 = '';
-} else {
-    $verificar_39 = "incorrecto";
-}
-
-$respuesta_40 = isset($_POST['respuesta_40']) ? $_POST['respuesta_40'] : '';
-if ($respuesta_40 === '300^\circ') {  
-    $verificar_40 = "correcto";
-} elseif ($respuesta_40 === '') {
-    $verificar_40 = '';
-} else {
-    $verificar_40 = "incorrecto";
-}
-
-
-$respuesta_41 = isset($_POST['respuesta_41']) ? $_POST['respuesta_41'] : '';
-if ($respuesta_41 === '315^\circ') {  
-    $verificar_41 = "correcto";
-} elseif ($respuesta_41 === '') {
-    $verificar_41 = '';
-} else {
-    $verificar_41 = "incorrecto";
-}
-
-$respuesta_42 = isset($_POST['respuesta_42']) ? $_POST['respuesta_42'] : '';
-if ($respuesta_42 === '330^\circ') {  
-    $verificar_42 = "correcto";
-} elseif ($respuesta_42 === '') {
-    $verificar_42 = '';
-} else {
-    $verificar_42 = "incorrecto";
-}
-
-$respuesta_43 = isset($_POST['respuesta_43']) ? $_POST['respuesta_43'] : '';
-if ($respuesta_43 === '360^\circ') {  
-    $verificar_43 = "correcto";
-} elseif ($respuesta_43 === '') {
-    $verificar_43 = '';
-} else {
-    $verificar_43 = "incorrecto";
-}
+   
 
  
     
@@ -571,12 +408,6 @@ function handleSubmit(event) {
         if (window.MathJax) {
             MathJax.typeset();
         }
-        actualizarFormula();
-        actualizarFormula2();
-        actualizarFormula3();
-        actualizarFormula4();
-        actualizarFormula5();
-        actualizarFormula6();
         actualizarFormula7();
         actualizarFormula8();
         actualizarFormula9();
@@ -624,59 +455,7 @@ function handleSubmit(event) {
     });
 }
 
-function actualizarFormula() {
-    var f = document.getElementById('respuesta_1').value || "";
-    var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula').innerHTML = `$$ ${formula} $$`;
-    if (window.MathJax) {
-        MathJax.typeset();
-    }
-}
 
-function actualizarFormula2() {
-    var f = document.getElementById('respuesta_2').value || "";
-    var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula2').innerHTML = `$$ ${formula} $$`;
-    if (window.MathJax) {
-        MathJax.typeset();
-    }
-}
-
-function actualizarFormula3() {
-    var f = document.getElementById('respuesta_3').value || "";
-    var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula3').innerHTML = `$$ ${formula} $$`;
-    if (window.MathJax) {
-        MathJax.typeset();
-    }
-}
-
-function actualizarFormula4() {
-    var f = document.getElementById('respuesta_4').value || "";
-    var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula4').innerHTML = `$$ ${formula} $$`;
-    if (window.MathJax) {
-        MathJax.typeset();
-    }
-}
-
-function actualizarFormula5() {
-    var f = document.getElementById('respuesta_5').value || "";
-    var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula5').innerHTML = `$$ ${formula} $$`;
-    if (window.MathJax) {
-        MathJax.typeset();
-    }
-}
-
-function actualizarFormula6() {
-    var f = document.getElementById('respuesta_6').value || "";
-    var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula6').innerHTML = `$$ ${formula} $$`;
-    if (window.MathJax) {
-        MathJax.typeset();
-    }
-}
 
 function actualizarFormula7() {
     var f = document.getElementById('respuesta_7').value || "";
@@ -1307,7 +1086,51 @@ function ocultarMensaje4() {
     <?php echo $verificar_24 ?>
     <?php echo $verificar_25 ?>
 
- 
+
+    
+        <button onmousedown="mostrarImagen2()" onmouseup="ocultarImagen2()">Explicacion</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada2" src="../../img/simplificacion.png" style="display: none; max-width: 100%" width="560">
+
+    <script>
+        function mostrarImagen2() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+
+        // Mostrar la imagen
+        imagenMostrada2.style.display = 'block';
+        }
+
+        function ocultarImagen2() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada2.style.display = 'none';
+        }
+    </script>
+
+
+ <button onmousedown="mostrarImagen()" onmouseup="ocultarImagen()">Explicacion</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada" src="../../img/simplificacion_dos.png" style="display: none; max-width: 100%" width="560">
+
+    <script>
+        function mostrarImagen() {
+        var imagenMostrada = document.getElementById('imagenMostrada');
+
+        // Mostrar la imagen
+        imagenMostrada.style.display = 'block';
+        }
+
+        function ocultarImagen() {
+        var imagenMostrada = document.getElementById('imagenMostrada');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada.style.display = 'none';
+        }
+    </script>
+  
     <button onmousedown="mostrarMensaje()" onmouseup="ocultarMensaje()">Solucion</button>
     <div id="mensaje" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
         <h4>Ejemplos:</h4>
@@ -1319,6 +1142,11 @@ function ocultarMensaje4() {
 
     </div>
      
+
+    <button onmousedown="mostrarMensaje2()" onmouseup="ocultarMensaje2()">Solucion</button>
+    <div id="mensaje2" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
+    El gcd entre los grados y 180 podria verse como que intercala entre 30 y 45.
+    </div>
    
   </form>
 </div>
@@ -1329,160 +1157,7 @@ function ocultarMensaje4() {
 <div class="seccion derecha">
     <form action="./cuarto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
  
-          <h3>➤ De radianes a grados:</h3>
-    <p>Multiplica por 
-    <span id="formula26">
-            \(   \)
-    </span> 
-    <input type="text" name="respuesta_26" id="respuesta_26"
-    oninput="actualizarFormula26(); actualizarFormula27();"
-    value="<?php echo $respuesta_26 ?>" size="14">    
-    </p>
-    <p>\( \theta^\circ = \theta \text{ (rad)} \cdot   \)
-    <span id="formula27">\( \)</span>
-    </p>
-
-    <button onmousedown="mostrarMensaje2()" onmouseup="ocultarMensaje2()">Solucion</button>
-    <div id="mensaje2" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
-      <h4>Ejemplos:</h4>
-    <ul>
-    <li>\( \frac{\pi}{3} = \frac{\pi}{3} \cdot \frac{180}{\pi} = 60^\circ \)</li>
-    <li>\( \pi = 180^\circ \)</li>
-    <li>\( \frac{3\pi}{2} = 270^\circ \)</li>
-    </ul>
-    </div>
-
-
-   
-    <div id="mensaje2" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
-  <h4>Ejemplos:</h4>
-  <ul>
-    <li>\( \frac{\pi}{3} = \frac{\pi}{3} \cdot \frac{180}{\pi} = 60^\circ \)</li>
-    <li>\( \pi = 180^\circ \)</li>
-    <li>\( \frac{3\pi}{2} = 270^\circ \)</li>
-  </ul>
-</div>
-
-<ul>
-    <br>
-  <li>\( \displaystyle \frac{\pi}{6} = \)
-    <span id="formula28" >\( \)</span>
-    <input type="text" name="respuesta_28" id="respuesta_28" oninput="actualizarFormula28()" 
-    value="<?php echo $respuesta_28 ?>" size="15">
-  </li>
-    <br>
-  <li>\( \displaystyle \frac{\pi}{4} = \)
-    <span id="formula29">\( \)</span>
-    <input type="text" name="respuesta_29" id="respuesta_29" oninput="actualizarFormula29()" 
-    value="<?php echo $respuesta_29 ?>" size="15">
-  </li>
-    <br>
-  <li>\( \displaystyle \frac{\pi}{3} = \)
-    <span id="formula30">\( \)</span>
-    <input type="text" name="respuesta_30" id="respuesta_30" oninput="actualizarFormula30()" 
-    value="<?php echo $respuesta_30 ?>" size="15">
-  </li>
-    <br>
-  <li>\( \displaystyle \frac{\pi}{2} = \)
-    <span id="formula31">\( \)</span>
-    <input type="text" name="respuesta_31" id="respuesta_31" oninput="actualizarFormula31()" 
-    value="<?php echo $respuesta_31 ?>" size="15">
-  </li>
-    <br>
-  <li>\( \displaystyle \frac{2\pi}{3} = \)
-    <span id="formula32">\( \)</span>
-    <input type="text" name="respuesta_32" id="respuesta_32" oninput="actualizarFormula32()" 
-    value="<?php echo $respuesta_32 ?>" size="15">
-  </li>
-    <br>
-  <li>\( \displaystyle \frac{3\pi}{4} = \)
-    <span id="formula33">\( \)</span>
-    <input type="text" name="respuesta_33" id="respuesta_33" oninput="actualizarFormula33()" 
-    value="<?php echo $respuesta_33 ?>" size="15">
-  </li>
-    <br>
-  <li>\( \displaystyle \frac{5\pi}{6} = \)
-    <span id="formula34">\( \)</span>
-    <input type="text" name="respuesta_34" id="respuesta_34" oninput="actualizarFormula34()" 
-    value="<?php echo $respuesta_34 ?>" size="15">
-  </li>
-    <br>
-  <li>\( \pi = \)
-    <span id="formula35">\( \)</span>
-    <input type="text" name="respuesta_35" id="respuesta_35" oninput="actualizarFormula35()" 
-    value="<?php echo $respuesta_35 ?>" size="15">
-  </li>
-    <br>
-  <li>\( \displaystyle \frac{7\pi}{6} = \)
-    <span id="formula36">\( \)</span>
-    <input type="text" name="respuesta_36" id="respuesta_36" oninput="actualizarFormula36()" 
-    value="<?php echo $respuesta_36 ?>" size="15">
-  </li>
-    <br>
-  <li>\( \displaystyle \frac{5\pi}{4} = \)
-    <span id="formula37">\( \)</span>
-    <input type="text" name="respuesta_37" id="respuesta_37" oninput="actualizarFormula37()" 
-    value="<?php echo $respuesta_37 ?>" size="15">
-  </li>
-    <br>
-  <li>\( \displaystyle \frac{4\pi}{3} = \)
-    <span id="formula38">\( \)</span>
-    <input type="text" name="respuesta_38" id="respuesta_38" oninput="actualizarFormula38()" 
-    value="<?php echo $respuesta_38 ?>" size="15">
-  </li>
-    <br>
-  <li>\( \displaystyle \frac{3\pi}{2} = \)
-    <span id="formula39">\( \)</span>
-    <input type="text" name="respuesta_39" id="respuesta_39" oninput="actualizarFormula39()" 
-    value="<?php echo $respuesta_39 ?>" size="15">
-  </li>
-    <br> 
-  <li>\( \displaystyle \frac{5\pi}{3} = \)
-    <span id="formula40">\( \)</span>
-    <input type="text" name="respuesta_40" id="respuesta_40" oninput="actualizarFormula40()" 
-    value="<?php echo $respuesta_40 ?>" size="15">
-  </li>
-
-    <br>
-  <li>\( \displaystyle \frac{7\pi}{4} = \)
-    <span id="formula41">\( \)</span>
-    <input type="text" name="respuesta_41" id="respuesta_41" oninput="actualizarFormula41()" 
-    value="<?php echo $respuesta_41 ?>" size="15">
-  </li>
-  <br>
-  <li>\( \displaystyle \frac{11\pi}{6} = \)
-    <span id="formula42">\( \)</span>
-    <input type="text" name="respuesta_42" id="respuesta_42" oninput="actualizarFormula42()" 
-    value="<?php echo $respuesta_42 ?>" size="15">
-  </li>
-  <br>
-  <li>\( 2\pi = \)
-    <span id="formula43">\( \)</span>
-    <input type="text" name="respuesta_43" id="respuesta_43" oninput="actualizarFormula43()" 
-    value="<?php echo $respuesta_43 ?>" size="15">
-  </li>
-
-</ul>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_26 ?>
-    <?php echo $verificar_27 ?>
-    <?php echo $verificar_28 ?>
-    <?php echo $verificar_29 ?>
-    <?php echo $verificar_30 ?>
-    <?php echo $verificar_31 ?>
-    <?php echo $verificar_32 ?>
-    <?php echo $verificar_33 ?>
-    <?php echo $verificar_34 ?>
-    <?php echo $verificar_35 ?>
-    <?php echo $verificar_36 ?>
-    <?php echo $verificar_37 ?>
-    <?php echo $verificar_38 ?>
-    <?php echo $verificar_39 ?>
-    <?php echo $verificar_40 ?>
-    <?php echo $verificar_41 ?>
-    <?php echo $verificar_42 ?>
-    <?php echo $verificar_43 ?>
-    <hr>
+ 
  
     </form>
 </div>

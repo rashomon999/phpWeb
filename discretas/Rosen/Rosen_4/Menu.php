@@ -41,9 +41,10 @@
         <a class="btn" href=".\capitulo4_4\index.php">capitulo 4.4</a>
           <a class="btn" href=".\cuestionario4_4\index.php">cuestionario 4.4</a>
         4.4 Solving Congruences 
-        <a class="btn" href=".\capitulo4_4\index.php">capitulo 4.5</a>
+        <a class="btn" href=".\capitulo4_5\index.php">capitulo 4.5</a>
         4.5 Applications of Congruences 
         <a class="btn" href=".\capitulo4_6\index.php">capitulo 4.6</a>
+        <a class="btn" href=".\cuestionario4_6\index.php">cuestionario 4.6</a>
         4.6 Cryptography 
         <br><br>
         <a class="btn" href=".\ejercicios\index.php">ejercicios clase</a>

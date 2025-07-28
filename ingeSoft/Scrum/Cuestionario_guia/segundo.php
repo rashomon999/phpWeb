@@ -195,7 +195,7 @@ if ($_POST) {
     $respuesta_147 = 'asistir';
     $respuesta_148 = 'valioso';
     $respuesta_149 = 'Sprint';
-    $respuesta_150 = 'Product Owner';
+    $respuesta_150 = 'El Product Owner';
     $respuesta_151 = 'producto';
     $respuesta_152 = 'incrementar';
     $respuesta_153 = 'valor';
@@ -1502,7 +1502,7 @@ if ($respuesta_116 === 'menor') {
 }
 
 $respuesta_117 = isset($_POST['respuesta_117']) ? $_POST['respuesta_117'] : '';
-if ($respuesta_117 === 'costo') {  
+if ($respuesta_117 === 'corto') {  
     $verificar_117 = "correcto";
 } elseif ($respuesta_117 === '') {
     $verificar_117 = '';
@@ -1801,7 +1801,7 @@ if ($respuesta_149 === 'Sprint' || $respuesta_149 === 'sprint') {
 }
 
 $respuesta_150 = isset($_POST['respuesta_150']) ? $_POST['respuesta_150'] : '';
-if ($respuesta_150 === 'Product Owner' || $respuesta_150 === 'product owner') {  
+if ($respuesta_150 === 'El Product Owner' || $respuesta_150 === 'El product owner') {  
     $verificar_150 = "correcto";
 } elseif ($respuesta_150 === '') {
     $verificar_150 = '';
@@ -1882,7 +1882,7 @@ if ($respuesta_158 === 'comunica') {
 }
 
 $respuesta_159 = isset($_POST['respuesta_159']) ? $_POST['respuesta_159'] : '';
-if ($respuesta_159 === 'Sprint') {  
+if ($respuesta_159 === 'Sprint' || $respuesta_159 === 'sprint') {  
     $verificar_159 = "correcto";
 } elseif ($respuesta_159 === '') {
     $verificar_159 = '';
@@ -2026,7 +2026,7 @@ if ($respuesta_174 === 'comprension') {
 }
 
 $respuesta_175 = isset($_POST['respuesta_175']) ? $_POST['respuesta_175'] : '';
-if ($respuesta_175 === ' cuanto') {  
+if ($respuesta_175 === 'cuanto') {  
     $verificar_175 = "correcto";
 } elseif ($respuesta_175 === '') {
     $verificar_175 = '';
@@ -2723,7 +2723,7 @@ if ($respuesta_251 === 'logro') {
 }
 
 $respuesta_252 = isset($_POST['respuesta_252']) ? $_POST['respuesta_252'] : '';
-if ($respuesta_252 === 'Sprint') {  
+if ($respuesta_252 === 'Sprint' || $respuesta_252 === 'sprint' ) {  
     $verificar_252 = "correcto";
 } elseif ($respuesta_252 === '') {
     $verificar_252 = '';
@@ -3003,7 +3003,7 @@ if ($respuesta_282 === 'herramientas') {
 }
 
 $respuesta_283 = isset($_POST['respuesta_283']) ? $_POST['respuesta_283'] : '';
-if ($respuesta_283 === 'definicion de terminado' || $respuesta_283 === 'definicion de terminado') {  
+if ($respuesta_283 === 'Definicion de Terminado' || $respuesta_283 === 'definicion de terminado') {  
     $verificar_283 = "correcto";
 } elseif ($respuesta_283 === '') {
     $verificar_283 = '';
@@ -3174,7 +3174,7 @@ if ($respuesta_301 === 'proximo') {
 }
 
 $respuesta_302 = isset($_POST['respuesta_302']) ? $_POST['respuesta_302'] : '';
-if ($respuesta_302 === 'Sprint') {  
+if ($respuesta_302 === 'Sprint' || $respuesta_302 === 'sprint') {  
     $verificar_302 = "correcto";
 } elseif ($respuesta_302 === '') {
     $verificar_302 = '';
@@ -3192,7 +3192,7 @@ if ($respuesta_303 === 'tres horas') {
 }
 
 $respuesta_304 = isset($_POST['respuesta_304']) ? $_POST['respuesta_304'] : '';
-if ($respuesta_304 === 'Sprint') {  
+if ($respuesta_304 === 'Sprint' || $respuesta_304 === 'sprint') {  
     $verificar_304 = "correcto";
 } elseif ($respuesta_304 === '') {
     $verificar_304 = '';
@@ -3264,7 +3264,7 @@ if ($respuesta_310 === '330') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
     <link rel="stylesheet" href="../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../style.css"> 
+    <link rel="stylesheet" href="../../../style_2_0.css"> 
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
@@ -3276,7 +3276,7 @@ if ($respuesta_310 === '330') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 370vh;
+    height: 415vh;
     }
 </style>
  
@@ -3547,10 +3547,13 @@ function ocultarMensaje4() {
     
 </head>
 <body> 
+
+<form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+<div class="form-container">
 <div class="seccion izquierda">
-    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+     
     <h2>Scrum Master</h2>
-  
+   
     <p>
     El Scrum Master es 
     <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="9">
@@ -3595,6 +3598,7 @@ function ocultarMensaje4() {
     que sirven al Scrum Team y a la organización en general.
     </p>
   
+
     <p>
     El Scrum Master sirve al Scrum Team de varias maneras, que incluyen:
     </p>
@@ -3603,9 +3607,9 @@ function ocultarMensaje4() {
     <li>
     <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="9">    
     a los miembros del equipo en ser 
-    <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="9">
+    <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="12">
     y 
-    <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="9">
+    <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="12">
     ;</li>
     <li>
     <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="9">    
@@ -3618,7 +3622,7 @@ function ocultarMensaje4() {
     de alto valor que 
     <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="9"> 
     con 
-    <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="9"> 
+    <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="22"> 
     ;</li>
     <li>
     <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="9">     
@@ -3639,6 +3643,39 @@ function ocultarMensaje4() {
     recomendados en esta Guía.</li>
     </ul>
 
+     <button type="submit">Enviar</button> 
+    <?php echo $verificar_1 ?>
+    <?php echo $verificar_2 ?>
+    <?php echo $verificar_3 ?>
+    <?php echo $verificar_4 ?>
+    <?php echo $verificar_5 ?>
+    <?php echo $verificar_6 ?>
+    <?php echo $verificar_7 ?>  
+    <?php echo $verificar_8 ?>
+    <?php echo $verificar_9 ?>
+    <?php echo $verificar_10 ?>
+    <?php echo $verificar_11 ?> 
+    <?php echo $verificar_12 ?>
+    <?php echo $verificar_13 ?>
+    <?php echo $verificar_14 ?>
+    <?php echo $verificar_15 ?>
+    <?php echo $verificar_16 ?>
+    <?php echo $verificar_17 ?>
+    <?php echo $verificar_18 ?>
+    <?php echo $verificar_19 ?>
+    <?php echo $verificar_20 ?>
+    <?php echo $verificar_21 ?>
+    <?php echo $verificar_22 ?>
+    <?php echo $verificar_23 ?>
+    <?php echo $verificar_24 ?>
+    <?php echo $verificar_25 ?>
+    <?php echo $verificar_26 ?>
+    <?php echo $verificar_27 ?>
+    <?php echo $verificar_28 ?>
+    <?php echo $verificar_29 ?>
+    <?php echo $verificar_30 ?>
+    <hr>
+
     <p>
     El Scrum Master sirve al Product Owner de varias maneras, que incluyen:
     </p>
@@ -3649,11 +3686,11 @@ function ocultarMensaje4() {
         para una 
         <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="9">
         efectiva de 
-        <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="9">
+        <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="17">
         y la 
         <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="9">
         del 
-        <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="9">
+        <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="18">
         ;</li>
         <li>Ayudar al 
         <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="9">    
@@ -3662,7 +3699,7 @@ function ocultarMensaje4() {
         la 
         <input type="text" name="respuesta_38" value="<?php echo $respuesta_38; ?>" size="9">
         de tener elementos del 
-        <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="9">
+        <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="14">
         claros y concisos;</li>
         <li>Ayudar a establecer una 
         <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="9">    
@@ -3693,7 +3730,7 @@ function ocultarMensaje4() {
     <input type="text" name="respuesta_49" value="<?php echo $respuesta_49; ?>" size="9">
     ;</li>
     <li>Planificar y asesorar 
-    <input type="text" name="respuesta_50" value="<?php echo $respuesta_50; ?>" size="9">    
+    <input type="text" name="respuesta_50" value="<?php echo $respuesta_50; ?>" size="14">    
     de Scrum dentro de la organización;</li>
     <li>Ayudar a los 
     <input type="text" name="respuesta_51" value="<?php echo $respuesta_51; ?>" size="9">    
@@ -3711,6 +3748,35 @@ function ocultarMensaje4() {
     .</li>
     </ul>
  
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_31 ?>
+    <?php echo $verificar_32 ?>
+    <?php echo $verificar_33 ?>
+    <?php echo $verificar_34 ?>
+    <?php echo $verificar_35 ?>
+    <?php echo $verificar_36 ?>
+    <?php echo $verificar_37 ?>
+    <?php echo $verificar_38 ?>
+    <?php echo $verificar_39 ?>
+    <?php echo $verificar_40 ?>
+    <?php echo $verificar_41 ?>
+    <?php echo $verificar_42 ?>
+    <?php echo $verificar_43 ?>
+    <?php echo $verificar_44 ?>
+    <?php echo $verificar_45 ?>
+    <?php echo $verificar_46 ?>
+    <?php echo $verificar_47 ?>
+    <?php echo $verificar_48 ?>
+    <?php echo $verificar_49 ?>
+    <?php echo $verificar_50 ?>
+    <?php echo $verificar_51 ?>
+    <?php echo $verificar_52 ?>
+    <?php echo $verificar_53 ?>
+    <?php echo $verificar_54 ?>
+    <?php echo $verificar_55 ?>
+    <?php echo $verificar_56 ?>
+
+    <hr>
 
     <h2>Eventos de Scrum</h2>
     <p>
@@ -3745,12 +3811,33 @@ function ocultarMensaje4() {
     <input type="text" name="respuesta_70" value="<?php echo $respuesta_70; ?>" size="9">
     no definidas en Scrum.
     Lo óptimo es que todos los eventos se celebren al 
-    <input type="text" name="respuesta_71" value="<?php echo $respuesta_71; ?>" size="9">
+    <input type="text" name="respuesta_71" value="<?php echo $respuesta_71; ?>" size="12">
     y en el
     <input type="text" name="respuesta_72" value="<?php echo $respuesta_72; ?>" size="9">
     para reducir la
     complejidad.
     </p>
+
+
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_57 ?>
+    <?php echo $verificar_58 ?>
+    <?php echo $verificar_59 ?>
+    <?php echo $verificar_60 ?>
+    <?php echo $verificar_61 ?>
+    <?php echo $verificar_62 ?>
+    <?php echo $verificar_63 ?>
+    <?php echo $verificar_64 ?>
+    <?php echo $verificar_65 ?>
+    <?php echo $verificar_66 ?>
+    <?php echo $verificar_67 ?>
+    <?php echo $verificar_68 ?>
+    <?php echo $verificar_69 ?>
+    <?php echo $verificar_70 ?>
+    <?php echo $verificar_71 ?>
+    <?php echo $verificar_72 ?>
+
+    <hr>
 
     <h3>El Sprint</h3>
     
@@ -3780,15 +3867,15 @@ function ocultarMensaje4() {
     Todo el 
     <input type="text" name="respuesta_83" value="<?php echo $respuesta_83; ?>" size="9">
      necesario para lograr el 
-    <input type="text" name="respuesta_84" value="<?php echo $respuesta_84; ?>" size="9">
+    <input type="text" name="respuesta_84" value="<?php echo $respuesta_84; ?>" size="18">
     , incluido la 
-    <input type="text" name="respuesta_85" value="<?php echo $respuesta_85; ?>" size="9">
+    <input type="text" name="respuesta_85" value="<?php echo $respuesta_85; ?>" size="12">
     , 
     <input type="text" name="respuesta_86" value="<?php echo $respuesta_86; ?>" size="9">
     ,
     <input type="text" name="respuesta_87" value="<?php echo $respuesta_87; ?>" size="9">
      y 
-    <input type="text" name="respuesta_88" value="<?php echo $respuesta_88; ?>" size="9">
+    <input type="text" name="respuesta_88" value="<?php echo $respuesta_88; ?>" size="16">
     , ocurre 
     <input type="text" name="respuesta_89" value="<?php echo $respuesta_89; ?>" size="9">
      de los Sprints.
@@ -3812,7 +3899,7 @@ function ocultarMensaje4() {
     <input type="text" name="respuesta_95" value="<?php echo $respuesta_95; ?>" size="9">
     ;</li>
     <li>El 
-    <input type="text" name="respuesta_96" value="<?php echo $respuesta_96; ?>" size="9">    
+    <input type="text" name="respuesta_96" value="<?php echo $respuesta_96; ?>" size="12">    
      se 
     <input type="text" name="respuesta_97" value="<?php echo $respuesta_97; ?>" size="9">
      según sea 
@@ -3823,9 +3910,46 @@ function ocultarMensaje4() {
      se puede 
     <input type="text" name="respuesta_100" value="<?php echo $respuesta_100; ?>" size="9">
      y renegociar con el 
-    <input type="text" name="respuesta_101" value="<?php echo $respuesta_101; ?>" size="9">
+    <input type="text" name="respuesta_101" value="<?php echo $respuesta_101; ?>" size="12">
      a medida que se aprende más.</li>
     </ul>
+
+
+
+
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_73 ?>
+    <?php echo $verificar_74 ?>
+    <?php echo $verificar_75 ?>
+    <?php echo $verificar_76 ?>
+    <?php echo $verificar_77 ?>
+    <?php echo $verificar_78 ?>
+    <?php echo $verificar_79 ?>
+    <?php echo $verificar_80 ?> 
+    <?php echo $verificar_81 ?>
+    <?php echo $verificar_82 ?>
+    <?php echo $verificar_83 ?>
+    <?php echo $verificar_84 ?>
+    <?php echo $verificar_85 ?>
+    <?php echo $verificar_86 ?>
+    <?php echo $verificar_87 ?>
+    <?php echo $verificar_88 ?>
+    <?php echo $verificar_89 ?>
+    <?php echo $verificar_90 ?>
+    <?php echo $verificar_91 ?>
+    <?php echo $verificar_92 ?>
+    <?php echo $verificar_93 ?>
+    <?php echo $verificar_94 ?>
+    <?php echo $verificar_95 ?>
+    <?php echo $verificar_96 ?>
+    <?php echo $verificar_97 ?>
+    <?php echo $verificar_98 ?> 
+    <?php echo $verificar_99 ?>
+    <?php echo $verificar_100 ?>
+    <?php echo $verificar_101 ?>
+
+    <hr>
+    
     <p>
     Los Sprints permiten la 
     <input type="text" name="respuesta_102" value="<?php echo $respuesta_102; ?>" size="9">
@@ -3836,7 +3960,7 @@ function ocultarMensaje4() {
      del 
     <input type="text" name="respuesta_105" value="<?php echo $respuesta_105; ?>" size="9">
      hacia un
-    <input type="text" name="respuesta_106" value="<?php echo $respuesta_106; ?>" size="9">
+    <input type="text" name="respuesta_106" value="<?php echo $respuesta_106; ?>" size="18">
      al menos cada 
     <input type="text" name="respuesta_107" value="<?php echo $respuesta_107; ?>" size="9">
      calendario. Cuando el horizonte de un Sprint es demasiado
@@ -3869,16 +3993,16 @@ function ocultarMensaje4() {
      para pronosticar el 
     <input type="text" name="respuesta_119" value="<?php echo $respuesta_119; ?>" size="9">
     , como el 
-    <input type="text" name="respuesta_120" value="<?php echo $respuesta_120; ?>" size="9">
+    <input type="text" name="respuesta_120" value="<?php echo $respuesta_120; ?>" size="14">
      (
     <input type="text" name="respuesta_121" value="<?php echo $respuesta_121; ?>" size="9">
      ), 
-    <input type="text" name="respuesta_122" value="<?php echo $respuesta_122; ?>" size="9">
+    <input type="text" name="respuesta_122" value="<?php echo $respuesta_122; ?>" size="15">
     (<input type="text" name="respuesta_123" value="<?php echo $respuesta_123; ?>" size="9">
     ) o 
-    <input type="text" name="respuesta_124" value="<?php echo $respuesta_124; ?>" size="9">
+    <input type="text" name="respuesta_124" value="<?php echo $respuesta_124; ?>" size="15">
       (
-    <input type="text" name="respuesta_125" value="<?php echo $respuesta_125; ?>" size="9">
+    <input type="text" name="respuesta_125" value="<?php echo $respuesta_125; ?>" size="15">
      ). Si bien han demostrado su utilidad, no
     <input type="text" name="respuesta_126" value="<?php echo $respuesta_126; ?>" size="9">
      la importancia del 
@@ -3901,16 +4025,55 @@ function ocultarMensaje4() {
      se vuelve 
     <input type="text" name="respuesta_133" value="<?php echo $respuesta_133; ?>" size="9">
     . Solo el 
-    <input type="text" name="respuesta_134" value="<?php echo $respuesta_134; ?>" size="9">
+    <input type="text" name="respuesta_134" value="<?php echo $respuesta_134; ?>" size="14">
     tiene la
     autoridad para cancelar el Sprint.
     </p>
 
 
-     <h2>Sprint Planning</h2>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_102 ?>
+    <?php echo $verificar_103 ?>
+    <?php echo $verificar_104 ?>
+    <?php echo $verificar_105 ?>
+    <?php echo $verificar_106 ?>
+    <?php echo $verificar_107 ?>
+    <?php echo $verificar_108 ?>
+    <?php echo $verificar_109 ?>
+    <?php echo $verificar_110 ?>
+    <?php echo $verificar_111 ?>
+    <?php echo $verificar_112 ?>
+    <?php echo $verificar_113 ?>
+    <?php echo $verificar_114 ?>
+    <?php echo $verificar_115 ?>
+    <?php echo $verificar_116 ?>
+    <?php echo $verificar_117 ?>
+    <?php echo $verificar_118 ?>
+    <?php echo $verificar_119 ?>
+    <?php echo $verificar_120 ?>
+    <?php echo $verificar_121 ?>
+    <?php echo $verificar_122 ?>
+    <?php echo $verificar_123 ?>
+    <?php echo $verificar_124 ?>
+    <?php echo $verificar_125 ?>
+    <?php echo $verificar_126 ?>
+    <?php echo $verificar_127 ?>
+    <?php echo $verificar_128 ?>
+    <?php echo $verificar_129 ?>
+    <?php echo $verificar_130 ?>
+    <?php echo $verificar_131 ?>
+    <?php echo $verificar_132 ?>
+    <?php echo $verificar_133 ?>
+    <?php echo $verificar_134 ?>
+    <hr>
+
+
+
+
+    <h2><input type="text"  value="<?php echo $respuesta_85; ?>" size="12" readonly></h2>
     
     <p>
-    La Sprint Planning 
+    La <input type="text"  value="<?php echo $respuesta_85; ?>" size="12" readonly>
     <input type="text" name="respuesta_135" value="<?php echo $respuesta_135; ?>" size="9">
      el 
     <input type="text" name="respuesta_136" value="<?php echo $respuesta_136; ?>" size="9">
@@ -3929,31 +4092,49 @@ function ocultarMensaje4() {
 
     <p>
     El 
-    <input type="text" name="respuesta_141" value="<?php echo $respuesta_141; ?>" size="9">
+    <input type="text" name="respuesta_141" value="<?php echo $respuesta_141; ?>" size="11">
     se asegura de que los 
     <input type="text" name="respuesta_142" value="<?php echo $respuesta_142; ?>" size="9">
      estén preparados para 
     <input type="text" name="respuesta_143" value="<?php echo $respuesta_143; ?>" size="9">
      los elementos más
     importantes del 
-    <input type="text" name="respuesta_144" value="<?php echo $respuesta_144; ?>" size="9">
+    <input type="text" name="respuesta_144" value="<?php echo $respuesta_144; ?>" size="11">
      y cómo se relacionan con el 
-    <input type="text" name="respuesta_145" value="<?php echo $respuesta_145; ?>" size="9">
+    <input type="text" name="respuesta_145" value="<?php echo $respuesta_145; ?>" size="17">
     . El 
     <input type="text" name="respuesta_146" value="<?php echo $respuesta_146; ?>" size="9">
     también puede invitar a otras personas a 
     <input type="text" name="respuesta_147" value="<?php echo $respuesta_147; ?>" size="9">
      a la Sprint Planning para brindar asesoramiento.
     </p>
+    
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_135 ?>
+    <?php echo $verificar_136 ?>
+    <?php echo $verificar_137 ?>
+    <?php echo $verificar_138 ?>
+    <?php echo $verificar_139 ?>
+    <?php echo $verificar_140 ?>
+    <?php echo $verificar_141 ?>
+    <?php echo $verificar_142 ?>
+    <?php echo $verificar_143 ?>
+    <?php echo $verificar_144 ?>
+    <?php echo $verificar_145 ?>
+    <?php echo $verificar_146 ?>
+    <?php echo $verificar_147 ?>
+    
+    <hr>
 
-    </form>
+
+ 
 </div>
 
 
 
 
 <div class="seccion derecha">
-    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+ 
     <p>La Sprint Planning aborda los siguientes temas:</p>
 
     <h3>Tema uno: ¿Por qué es 
@@ -3962,8 +4143,7 @@ function ocultarMensaje4() {
     <input type="text" name="respuesta_149" value="<?php echo $respuesta_149; ?>" size="9">
     ?</h3>
     <p>
-    El 
-    <input type="text" name="respuesta_150" value="<?php echo $respuesta_150; ?>" size="9">
+    <input type="text" name="respuesta_150" value="<?php echo $respuesta_150; ?>" size="14">
      propone cómo el 
     <input type="text" name="respuesta_151" value="<?php echo $respuesta_151; ?>" size="9">
      podría 
@@ -3978,7 +4158,7 @@ function ocultarMensaje4() {
     Luego, todo el 
     <input type="text" name="respuesta_156" value="<?php echo $respuesta_156; ?>" size="9">
      colabora para definir un 
-    <input type="text" name="respuesta_157" value="<?php echo $respuesta_157; ?>" size="9">
+    <input type="text" name="respuesta_157" value="<?php echo $respuesta_157; ?>" size="14">
      que 
     <input type="text" name="respuesta_158" value="<?php echo $respuesta_158; ?>" size="9">
      por qué el 
@@ -3988,26 +4168,47 @@ function ocultarMensaje4() {
      para los 
     <input type="text" name="respuesta_161" value="<?php echo $respuesta_161; ?>" size="9">
     . El 
-    <input type="text" name="respuesta_162" value="<?php echo $respuesta_162; ?>" size="9">
+    <input type="text" name="respuesta_162" value="<?php echo $respuesta_162; ?>" size="14">
      debe completarse antes de que 
     <input type="text" name="respuesta_163" value="<?php echo $respuesta_163; ?>" size="9">
      la 
-    <input type="text" name="respuesta_164" value="<?php echo $respuesta_164; ?>" size="9">
+    <input type="text" name="respuesta_164" value="<?php echo $respuesta_164; ?>" size="12">
     .
     </p>
+
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_148 ?>
+    <?php echo $verificar_149 ?>
+    <?php echo $verificar_150 ?>
+    <?php echo $verificar_151 ?>
+    <?php echo $verificar_152 ?>
+    <?php echo $verificar_153 ?>
+    <?php echo $verificar_154 ?>
+    <?php echo $verificar_155 ?>
+    <?php echo $verificar_156 ?>
+    <?php echo $verificar_157 ?>
+    <?php echo $verificar_158 ?>
+    <?php echo $verificar_159 ?>
+    <?php echo $verificar_160 ?>
+    <?php echo $verificar_161 ?>
+    <?php echo $verificar_162 ?>
+    <?php echo $verificar_163 ?>
+    <?php echo $verificar_164 ?>
+
+    <hr>
 
     <h3>Tema dos: ¿Qué se puede hacer en este Sprint?</h3>
     <p>
     A través de una 
     <input type="text" name="respuesta_165" value="<?php echo $respuesta_165; ?>" size="9">
      con el 
-    <input type="text" name="respuesta_166" value="<?php echo $respuesta_166; ?>" size="9">
+    <input type="text" name="respuesta_166" value="<?php echo $respuesta_166; ?>" size="11">
     , los 
     <input type="text" name="respuesta_167" value="<?php echo $respuesta_167; ?>" size="9">
      seleccionan 
     <input type="text" name="respuesta_168" value="<?php echo $respuesta_168; ?>" size="9">
      del 
-    <input type="text" name="respuesta_169" value="<?php echo $respuesta_169; ?>" size="9">
+    <input type="text" name="respuesta_169" value="<?php echo $respuesta_169; ?>" size="11">
      para
     <input type="text" name="respuesta_170" value="<?php echo $respuesta_170; ?>" size="9">
      en el 
@@ -4039,7 +4240,7 @@ function ocultarMensaje4() {
      pasado, su 
     <input type="text" name="respuesta_181" value="<?php echo $respuesta_181; ?>" size="9">
      actual y su 
-    <input type="text" name="respuesta_182" value="<?php echo $respuesta_182; ?>" size="9">
+    <input type="text" name="respuesta_182" value="<?php echo $respuesta_182; ?>" size="19">
     , más 
     <input type="text" name="respuesta_183" value="<?php echo $respuesta_183; ?>" size="9">
      estarán en sus 
@@ -4047,6 +4248,29 @@ function ocultarMensaje4() {
     para el Sprint.
     </p>
 
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_165 ?>
+    <?php echo $verificar_166 ?>
+    <?php echo $verificar_167 ?>
+    <?php echo $verificar_168 ?>
+    <?php echo $verificar_169 ?>
+    <?php echo $verificar_170 ?>
+    <?php echo $verificar_171 ?>
+    <?php echo $verificar_172 ?>
+    <?php echo $verificar_173 ?>
+    <?php echo $verificar_174 ?>
+    <?php echo $verificar_175 ?>
+    <?php echo $verificar_176 ?>
+    <?php echo $verificar_177 ?>
+    <?php echo $verificar_178 ?>
+    <?php echo $verificar_179 ?>
+    <?php echo $verificar_180 ?>
+    <?php echo $verificar_181 ?>
+    <?php echo $verificar_182 ?>
+    <?php echo $verificar_183 ?>
+    <?php echo $verificar_184 ?>
+    <hr>
+    
     <h3>Tema tres: ¿Cómo se 
     <input type="text" name="respuesta_185" value="<?php echo $respuesta_185; ?>" size="9">    
      el 
@@ -4064,11 +4288,11 @@ function ocultarMensaje4() {
     para crear un 
      <input type="text" name="respuesta_191" value="<?php echo $respuesta_191; ?>" size="9">
      que cumpla con 
-     <input type="text" name="respuesta_192" value="<?php echo $respuesta_192; ?>" size="9">
+     <input type="text" name="respuesta_192" value="<?php echo $respuesta_192; ?>" size="23">
     . A menudo, esto se hace
-     <input type="text" name="respuesta_193" value="<?php echo $respuesta_193; ?>" size="9">
+     <input type="text" name="respuesta_193" value="<?php echo $respuesta_193; ?>" size="14">
      los elementos del 
-     <input type="text" name="respuesta_194" value="<?php echo $respuesta_194; ?>" size="9">
+     <input type="text" name="respuesta_194" value="<?php echo $respuesta_194; ?>" size="12">
      en elementos de trabajo más 
      <input type="text" name="respuesta_195" value="<?php echo $respuesta_195; ?>" size="9">
      de 
@@ -4085,11 +4309,11 @@ function ocultarMensaje4() {
 
     <p>
     El 
-    <input type="text" name="respuesta_198" value="<?php echo $respuesta_198; ?>" size="9">
+    <input type="text" name="respuesta_198" value="<?php echo $respuesta_198; ?>" size="16">
     , los 
     <input type="text" name="respuesta_199" value="<?php echo $respuesta_199; ?>" size="9">
      del 
-    <input type="text" name="respuesta_200" value="<?php echo $respuesta_200; ?>" size="9">
+    <input type="text" name="respuesta_200" value="<?php echo $respuesta_200; ?>" size="14">
      seleccionados para el 
     <input type="text" name="respuesta_201" value="<?php echo $respuesta_201; ?>" size="9">
     , más el 
@@ -4099,16 +4323,39 @@ function ocultarMensaje4() {
      se denominan juntos Sprint Backlog.
     </p>
 
-    <h2>Daily Scrum</h2>
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_185 ?>
+    <?php echo $verificar_186 ?>
+    <?php echo $verificar_187 ?>
+    <?php echo $verificar_188 ?>
+    <?php echo $verificar_189 ?>
+    <?php echo $verificar_190 ?>
+    <?php echo $verificar_191 ?>
+    <?php echo $verificar_192 ?>
+    <?php echo $verificar_193 ?>
+    <?php echo $verificar_194 ?>
+    <?php echo $verificar_195 ?>
+    <?php echo $verificar_196 ?>
+    <?php echo $verificar_197 ?>
+    <?php echo $verificar_198 ?>
+    <?php echo $verificar_199 ?>
+    <?php echo $verificar_200 ?>
+    <?php echo $verificar_201 ?>
+    <?php echo $verificar_202 ?>
+    <?php echo $verificar_203 ?>
+
+    <hr>
+
+    <h2><input type="text" value="<?php echo $respuesta_86; ?>" size="9" readonly></h2>
     <p>
     El 
     <input type="text" name="respuesta_204" value="<?php echo $respuesta_204; ?>" size="9">
     de la Daily Scrum es 
     <input type="text" name="respuesta_205" value="<?php echo $respuesta_205; ?>" size="9">
       el progreso hacia el 
-    <input type="text" name="respuesta_206" value="<?php echo $respuesta_206; ?>" size="9">
+    <input type="text" name="respuesta_206" value="<?php echo $respuesta_206; ?>" size="16">
      y adaptar el 
-    <input type="text" name="respuesta_207" value="<?php echo $respuesta_207; ?>" size="9"> 
+    <input type="text" name="respuesta_207" value="<?php echo $respuesta_207; ?>" size="11"> 
       según sea necesario, 
     <input type="text" name="respuesta_208" value="<?php echo $respuesta_208; ?>" size="9"> 
       el trabajo planificado entrante.
@@ -4122,7 +4369,7 @@ function ocultarMensaje4() {
     <input type="text" name="respuesta_211" value="<?php echo $respuesta_211; ?>" size="9"> 
       la
     <input type="text" name="respuesta_212" value="<?php echo $respuesta_212; ?>" size="9"> 
-    reducircomplejidad, se lleva a cabo a la 
+    , se lleva a cabo a la 
     <input type="text" name="respuesta_213" value="<?php echo $respuesta_213; ?>" size="9"> 
      y en el 
     <input type="text" name="respuesta_214" value="<?php echo $respuesta_214; ?>" size="9"> 
@@ -4131,7 +4378,7 @@ function ocultarMensaje4() {
       hábiles del 
     <input type="text" name="respuesta_216" value="<?php echo $respuesta_216; ?>" size="9"> 
      . Si el
-    <input type="text" name="respuesta_217" value="<?php echo $respuesta_217; ?>" size="9"> 
+    <input type="text" name="respuesta_217" value="<?php echo $respuesta_217; ?>" size="11"> 
      o 
     <input type="text" name="respuesta_218" value="<?php echo $respuesta_218; ?>" size="9"> 
      están trabajando activamente en elementos del 
@@ -4151,7 +4398,7 @@ function ocultarMensaje4() {
     se centre en el 
     <input type="text" name="respuesta_224" value="<?php echo $respuesta_224; ?>" size="9"> 
       hacia el 
-    <input type="text" name="respuesta_225" value="<?php echo $respuesta_225; ?>" size="9"> 
+    <input type="text" name="respuesta_225" value="<?php echo $respuesta_225; ?>" size="16"> 
       y 
     <input type="text" name="respuesta_226" value="<?php echo $respuesta_226; ?>" size="9"> 
       un 
@@ -4189,7 +4436,46 @@ function ocultarMensaje4() {
       del Sprint.
     </p>
 
-    <h2>Sprint Review</h2>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_204 ?>
+    <?php echo $verificar_205 ?>
+    <?php echo $verificar_206 ?>
+    <?php echo $verificar_207 ?>
+    <?php echo $verificar_208 ?>
+    <?php echo $verificar_209 ?>
+    <?php echo $verificar_210 ?>
+    <?php echo $verificar_211 ?>
+    <?php echo $verificar_212 ?>
+    <?php echo $verificar_213 ?>
+    <?php echo $verificar_214 ?>
+    <?php echo $verificar_215 ?>
+    <?php echo $verificar_216 ?>
+    <?php echo $verificar_217 ?>
+    <?php echo $verificar_218 ?>
+    <?php echo $verificar_219 ?>
+    <?php echo $verificar_220 ?>
+    <?php echo $verificar_221 ?>
+    <?php echo $verificar_222 ?>
+    <?php echo $verificar_223 ?>
+    <?php echo $verificar_224 ?>
+    <?php echo $verificar_225 ?>
+    <?php echo $verificar_226 ?>
+    <?php echo $verificar_227 ?>
+    <?php echo $verificar_228 ?>
+    <?php echo $verificar_229 ?>
+    <?php echo $verificar_230 ?>
+    <?php echo $verificar_231 ?>
+    <?php echo $verificar_232 ?>
+    <?php echo $verificar_233 ?>
+    <?php echo $verificar_234 ?>
+    <?php echo $verificar_235 ?>
+    <?php echo $verificar_236 ?>
+    <?php echo $verificar_237 ?>
+    <?php echo $verificar_238 ?>
+
+    <hr>
+
+    <h2><input type="text" value="<?php echo $respuesta_87; ?>" size="9" readonly></h2>
     <p>
     El 
     <input type="text" name="respuesta_239" value="<?php echo $respuesta_239; ?>" size="9"> 
@@ -4210,7 +4496,7 @@ function ocultarMensaje4() {
       clave y se discute el
     <input type="text" name="respuesta_247" value="<?php echo $respuesta_247; ?>" size="9"> 
       hacia el 
-    <input type="text" name="respuesta_248" value="<?php echo $respuesta_248; ?>" size="9"> 
+    <input type="text" name="respuesta_248" value="<?php echo $respuesta_248; ?>" size="18"> 
      .
     </p>
     <p>
@@ -4232,13 +4518,13 @@ function ocultarMensaje4() {
     <input type="text" name="respuesta_256" value="<?php echo $respuesta_256; ?>" size="9"> 
       colaboran sobre 
     <input type="text" name="respuesta_257" value="<?php echo $respuesta_257; ?>" size="9"> 
-    qué hacer a
+     a
     continuación. El 
-    <input type="text" name="respuesta_258" value="<?php echo $respuesta_258; ?>" size="9"> 
+    <input type="text" name="respuesta_258" value="<?php echo $respuesta_258; ?>" size="11"> 
       también se puede 
     <input type="text" name="respuesta_259" value="<?php echo $respuesta_259; ?>" size="9"> 
       para satisfacer nuevas 
-    <input type="text" name="respuesta_260" value="<?php echo $respuesta_260; ?>" size="9"> 
+    <input type="text" name="respuesta_260" value="<?php echo $respuesta_260; ?>" size="11"> 
      . La
     <input type="text" name="respuesta_261" value="<?php echo $respuesta_261; ?>" size="9"> 
       es una sesión de 
@@ -4269,9 +4555,52 @@ function ocultarMensaje4() {
     duración.
     </p>
 
-     <h2>Sprint Retrospective</h2>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_239 ?>
+<?php echo $verificar_240 ?>
+<?php echo $verificar_241 ?>
+<?php echo $verificar_242 ?>
+<?php echo $verificar_243 ?>
+<?php echo $verificar_244 ?>
+<?php echo $verificar_245 ?>
+<?php echo $verificar_246 ?>
+<?php echo $verificar_247 ?>
+<?php echo $verificar_248 ?>
+<?php echo $verificar_249 ?>
+<br>
+<?php echo $verificar_250 ?>
+<?php echo $verificar_251 ?>
+<?php echo $verificar_252 ?>
+<?php echo $verificar_253 ?>
+<?php echo $verificar_254 ?>
+<?php echo $verificar_255 ?>
+<?php echo $verificar_256 ?>
+<?php echo $verificar_257 ?>
+<?php echo $verificar_258 ?>
+<?php echo $verificar_259 ?>
+<br>
+<?php echo $verificar_260 ?>
+<?php echo $verificar_261 ?>
+<?php echo $verificar_262 ?>
+<?php echo $verificar_263 ?>
+<?php echo $verificar_264 ?>
+<?php echo $verificar_265 ?>
+<?php echo $verificar_266 ?>
+<?php echo $verificar_267 ?>
+<?php echo $verificar_268 ?>
+<br>
+<?php echo $verificar_269 ?>
+<?php echo $verificar_270 ?>
+<?php echo $verificar_271 ?>
+<?php echo $verificar_272 ?>
+
+    <hr>
+
+     <h2><input type="text" value="<?php echo $respuesta_88; ?>" size="15" readonly></h2>
     <p>
-    El propósito de la Sprint Retrospective es 
+    El propósito de la 
+    <input type="text" value="<?php echo $respuesta_88; ?>" size="15" readonly>
+    es 
     <input type="text" name="respuesta_273" value="<?php echo $respuesta_273; ?>" size="9">
       formas de 
     <input type="text" name="respuesta_274" value="<?php echo $respuesta_274; ?>" size="9">
@@ -4296,7 +4625,7 @@ function ocultarMensaje4() {
      , las 
     <input type="text" name="respuesta_282" value="<?php echo $respuesta_282; ?>" size="9">
       y su 
-    <input type="text" name="respuesta_283" value="<?php echo $respuesta_283; ?>" size="9">
+    <input type="text" name="respuesta_283" value="<?php echo $respuesta_283; ?>" size="20">
     . Los elementos inspeccionados suelen
     <input type="text" name="respuesta_284" value="<?php echo $respuesta_284; ?>" size="9">
     según el 
@@ -4355,15 +4684,57 @@ function ocultarMensaje4() {
       duración.
     </p>
 
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_273 ?>
+<?php echo $verificar_274 ?>
+<?php echo $verificar_275 ?>
+<?php echo $verificar_276 ?>
+<?php echo $verificar_277 ?>
+<?php echo $verificar_278 ?>
+<?php echo $verificar_279 ?>
+<?php echo $verificar_280 ?>
+<?php echo $verificar_281 ?>
+<?php echo $verificar_282 ?>
+<br>
+<?php echo $verificar_283 ?>
+<?php echo $verificar_284 ?>
+<?php echo $verificar_285 ?>
+<?php echo $verificar_286 ?>
+<?php echo $verificar_287 ?>
+<?php echo $verificar_288 ?>
+<?php echo $verificar_289 ?>
+<?php echo $verificar_290 ?>
+<br>
+<?php echo $verificar_291 ?>
+<?php echo $verificar_292 ?>
+<?php echo $verificar_293 ?>
+<?php echo $verificar_294 ?>
+<?php echo $verificar_295 ?>
+<?php echo $verificar_296 ?>
+<?php echo $verificar_297 ?>
+<?php echo $verificar_298 ?>
+<br>
+<?php echo $verificar_299 ?>
+<?php echo $verificar_300 ?>
+<?php echo $verificar_301 ?>
+<?php echo $verificar_302 ?>
+<?php echo $verificar_303 ?>
+<?php echo $verificar_304 ?>
+<?php echo $verificar_305 ?>
+<br>
+<?php echo $verificar_306 ?>
+<?php echo $verificar_307 ?>
     <hr>
     <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
     <br>
     <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
     <button type="submit"   >Mostrar Solución</button>
 
-    </form>
+     
+</div>
 </div>
 
+</form>
 <div class="centered-container">
     <a
         name="siguiente"

@@ -1,49 +1,176 @@
 <?php
  
-for ($i = 1; $i <= 12; $i++) {
+for ($i = 1; $i <= 230; $i++) {
     ${"respuesta_" . $i} = '';
 }
 
 
      
-for ($i = 1; $i <= 12; $i++) {
+for ($i = 1; $i <= 230; $i++) {
     ${"verificar_" . $i} = '';
 }
 
      
 
 $mostrar_solucion = '';
-
 if ($_POST) {
     $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
     
     if ($mostrar_solucion === 'mostrar_solucion') {
-        // Establecer todas las respuestas correctas (versión canónica de cada identidad)
-        $respuesta_1 = '\sin\left(\frac{\alpha}{2}\right)=\pm\sqrt{\frac{1-\cos(\alpha)}{2}}';
-        $respuesta_2 = '\cos\left(\frac{\alpha}{2}\right)=\pm\sqrt{\frac{1+\cos(\alpha)}{2}}';
-        $respuesta_3 = '\tan\left(\frac{\alpha}{2}\right)=\pm\sqrt{\frac{1-\cos(\alpha)}{1+\cos(\alpha)}}';
-        $respuesta_4 = '\sin^2(\alpha)=\frac{1-\cos(2\alpha)}{2}';
-        $respuesta_5 = '\cos^2(\alpha)=\frac{1+\cos(2\alpha)}{2}';
-        $respuesta_6 = '\tan^2(\alpha)=\frac{1-\cos(2\alpha)}{1+\cos(2\alpha)}';
-        $respuesta_7 = '\sin(\alpha+\beta)=\sin(\alpha)\cos(\beta)+\cos(\alpha)\sin(\beta)';
-        $respuesta_8 = '\cos(\alpha+\beta)=\cos(\alpha)\cos(\beta)-\sin(\alpha)\sin(\beta)';
-        $respuesta_9 = '\tan(\alpha+\beta)=\frac{\tan(\alpha)+\tan(\beta)}{1-\tan(\alpha)\tan(\beta)}';
-        $respuesta_10 = '\sin(2\alpha)=2\sin(\alpha)\cos(\alpha)';
-        $respuesta_11 = '\cos(2\alpha)=\cos^2(\alpha)-\sin^2(\alpha)';
-        $respuesta_12 = '\tan(2\alpha)=\frac{2\tan(\alpha)}{1-\tan^2(\alpha)}';
-
+        // Establecer todas las respuestas correctas para las tablas de multiplicar
+        
+        // Tabla del 12
+        $respuesta_111 = '24'; 
+        $respuesta_112 = '36';
+        $respuesta_113 = '48';
+        $respuesta_114 = '60';
+        $respuesta_115 = '72';
+        $respuesta_116 = '84';
+        $respuesta_117 = '96';
+        $respuesta_118 = '108';
+        $respuesta_119 = '120';
+        $respuesta_120 = '132';
+        $respuesta_121 = '144';
+        
+        // Tabla del 13
+        $respuesta_1 = '26';
+        $respuesta_2 = '39';
+        $respuesta_3 = '52';
+        $respuesta_4 = '65';
+        $respuesta_5 = '78';
+        $respuesta_6 = '91';
+        $respuesta_7 = '104';
+        $respuesta_8 = '117';
+        $respuesta_9 = '130';
+        $respuesta_10 = '143';
+        $respuesta_11 = '156';
+        
+        // Tabla del 14
+        $respuesta_12 = '28';
+        $respuesta_13 = '42';
+        $respuesta_14 = '56';
+        $respuesta_15 = '70';
+        $respuesta_16 = '84';
+        $respuesta_17 = '98';
+        $respuesta_18 = '112';
+        $respuesta_19 = '126';
+        $respuesta_20 = '140';
+        $respuesta_21 = '154';
+        $respuesta_22 = '168';
+        
+        // Tabla del 15
+        $respuesta_23 = '30';
+        $respuesta_24 = '45';
+        $respuesta_25 = '60';
+        $respuesta_26 = '75';
+        $respuesta_27 = '90';
+        $respuesta_28 = '105';
+        $respuesta_29 = '120';
+        $respuesta_30 = '135';
+        $respuesta_31 = '150';
+        $respuesta_32 = '165';
+        $respuesta_33 = '180';
+        
+        // Tabla del 16
+        $respuesta_34 = '32';
+        $respuesta_35 = '48';
+        $respuesta_36 = '64';
+        $respuesta_37 = '80';
+        $respuesta_38 = '96';
+        $respuesta_39 = '112';
+        $respuesta_40 = '128';
+        $respuesta_41 = '144';
+        $respuesta_42 = '160';
+        $respuesta_43 = '176';
+        $respuesta_44 = '192';
+        
+        // Tabla del 17
+        $respuesta_45 = '34';
+        $respuesta_46 = '51';
+        $respuesta_47 = '68';
+        $respuesta_48 = '85';
+        $respuesta_49 = '102';
+        $respuesta_50 = '119';
+        $respuesta_51 = '136';
+        $respuesta_52 = '153';
+        $respuesta_53 = '170';
+        $respuesta_54 = '187';
+        $respuesta_55 = '204';
+        
+        // Tabla del 18
+        $respuesta_56 = '36';
+        $respuesta_57 = '54';
+        $respuesta_58 = '72';
+        $respuesta_59 = '90';
+        $respuesta_60 = '108';
+        $respuesta_61 = '126';
+        $respuesta_62 = '144';
+        $respuesta_63 = '162';
+        $respuesta_64 = '180';
+        $respuesta_65 = '198';
+        $respuesta_66 = '216';
+        
+        // Tabla del 19
+        $respuesta_67 = '38';
+        $respuesta_68 = '57';
+        $respuesta_69 = '76';
+        $respuesta_70 = '95';
+        $respuesta_71 = '114';
+        $respuesta_72 = '133';
+        $respuesta_73 = '152';
+        $respuesta_74 = '171';
+        $respuesta_75 = '190';
+        $respuesta_76 = '209';
+        $respuesta_77 = '228';
+        
+        // Tabla del 20
+        $respuesta_78 = '40';
+        $respuesta_79 = '60';
+        $respuesta_80 = '80';
+        $respuesta_81 = '100';
+        $respuesta_82 = '120';
+        $respuesta_83 = '140';
+        $respuesta_84 = '160';
+        $respuesta_85 = '180';
+        $respuesta_86 = '200';
+        $respuesta_87 = '220';
+        $respuesta_88 = '240';
+        
+        // Tabla del 21
+        $respuesta_89 = '42';
+        $respuesta_90 = '63';
+        $respuesta_91 = '84';
+        $respuesta_92 = '105';
+        $respuesta_93 = '126';
+        $respuesta_94 = '147';
+        $respuesta_95 = '168';
+        $respuesta_96 = '189';
+        $respuesta_97 = '210';
+        $respuesta_98 = '231';
+        $respuesta_99 = '252';
+        
+        // Tabla del 22
+        $respuesta_100 = '44';
+        $respuesta_101 = '66';
+        $respuesta_102 = '88';
+        $respuesta_103 = '110';
+        $respuesta_104 = '132'; 
+        $respuesta_105 = '154';
+        $respuesta_106 = '176';
+        $respuesta_107 = '198';
+        $respuesta_108 = '220';
+        $respuesta_109 = '242';
+        $respuesta_110 = '264';
+        
         // Marcar todas como correctas
-        $verificar_1 = $verificar_2 = $verificar_3 = $verificar_4 = $verificar_5 = 
-        $verificar_6 = $verificar_7 = $verificar_8 = $verificar_9 = $verificar_10 = 
-        $verificar_11 = $verificar_12 = "correcto";
+    for ($i = 1; $i <= 122; $i++) {
+    ${"verificar_$i"} = "correcto";
+    }
+
     } else {
-   $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-if ($respuesta_1 === '\sin\left(\frac{\alpha}{2}\right)=\pm\sqrt{\frac{1-\cos(\alpha)}{2}}'
-|| $respuesta_1 === '\sin\left(\frac{a}{2}\right)=\pm\sqrt{\frac{1-\cos(a)}{2}}'
-|| $respuesta_1 === '\sin(\frac{a}{2})=\pm\sqrt{\frac{1-\cos(a)}{2}}'
-|| $respuesta_1 === '\sin(\frac{a}{2})=\pm\sqrt{\frac{1-cos(a)}{2}}'
-|| $respuesta_1 === 'Sin(\frac{a}{2})=\pm\sqrt{\frac{1-Cos(a)}{2}}'
-) { 
+ // Verificar la respuesta 1
+$respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
+if ($respuesta_1 === '\frac{180}{\pi}') {  
     $verificar_1 = "correcto";
 } elseif ($respuesta_1 === '') {
     $verificar_1 = '';
@@ -51,11 +178,9 @@ if ($respuesta_1 === '\sin\left(\frac{\alpha}{2}\right)=\pm\sqrt{\frac{1-\cos(\a
     $verificar_1 = "incorrecto";
 }
 
+// Verificar la respuesta 2
 $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-if ($respuesta_2 === '\cos\left(\frac{\alpha}{2}\right)=\pm\sqrt{\frac{1+\cos(\alpha)}{2}}'
-|| $respuesta_2 === '\cos(\frac{a}{2})=\pm\sqrt{\frac{1+\cos(a)}{2}}'
-|| $respuesta_2 === '\cos(\frac{a}{2})=\pm\sqrt{\frac{1+cos(a)}{2}}'
-) { 
+if ($respuesta_2 === '\frac{180}{\pi}') {  
     $verificar_2 = "correcto";
 } elseif ($respuesta_2 === '') {
     $verificar_2 = '';
@@ -63,11 +188,9 @@ if ($respuesta_2 === '\cos\left(\frac{\alpha}{2}\right)=\pm\sqrt{\frac{1+\cos(\a
     $verificar_2 = "incorrecto";
 }
 
+// Respuesta 3: π/6 = 30°
 $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-if ($respuesta_3 === '\tan\left(\frac{\alpha}{2}\right)=\pm\sqrt{\frac{1-\cos(\alpha)}{1+\cos(\alpha)}}'
-|| $respuesta_3 === '\tan(\frac{a}{2})=\pm\sqrt{\frac{1-\cos(a)}{1+\cos(a)}}'
-|| $respuesta_3 === '\tan(\frac{a}{2})=\pm\sqrt{\frac{1-cos(a)}{1+cos(a)}}'
-) { 
+if ($respuesta_3 === '30^\circ') {  
     $verificar_3 = "correcto";
 } elseif ($respuesta_3 === '') {
     $verificar_3 = '';
@@ -75,148 +198,156 @@ if ($respuesta_3 === '\tan\left(\frac{\alpha}{2}\right)=\pm\sqrt{\frac{1-\cos(\a
     $verificar_3 = "incorrecto";
 }
 
-
+// Respuesta 4: π/4 = 45°
 $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-$respuesta_4_dos = str_replace(' ','',$respuesta_4);
-
-if ($respuesta_4_dos === '\sin^2(\alpha)=\frac{1}{2}-\frac{1}{2}\cos(2\alpha)'
-|| $respuesta_4_dos === 'sin^2(\alpha)=\frac{1}{2}-\frac{1}{2}\cos(2\alpha)'
-|| $respuesta_4_dos === '\sin^2(a)=\frac{1}{2}-\frac{1}{2}\cos(2a)'
-|| $respuesta_4_dos === '\sin^2(\alpha)=\frac{1-\cos(2\alpha)}{2}'
-|| $respuesta_4_dos === 'sin^2(\alpha)=\frac{1-\cos(2\alpha)}{2}'
-|| $respuesta_4_dos === 'sin^2(a)=\frac{1-\cos(2a)}{2}'
-) { 
+if ($respuesta_4 === '45^\circ') {  
     $verificar_4 = "correcto";
-} elseif ($respuesta_4_dos === '') {
+} elseif ($respuesta_4 === '') {
     $verificar_4 = '';
 } else {
     $verificar_4 = "incorrecto";
 }
 
+// Respuesta 5: π/3 = 60°
 $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-$respuesta_5_dos = str_replace(' ','',$respuesta_5);
-
-if ($respuesta_5_dos === '\cos^2(\alpha)=\frac{1}{2}+\frac{1}{2}\cos(2\alpha)'
-|| $respuesta_5_dos === 'cos^2(\alpha)=\frac{1}{2}+\frac{1}{2}\cos(2\alpha)'
-|| $respuesta_5_dos === '\cos^2(a)=\frac{1}{2}+\frac{1}{2}\cos(2a)'
-|| $respuesta_5_dos === '\cos^2(\alpha)=\frac{1+\cos(2\alpha)}{2}'
-|| $respuesta_5_dos === 'cos^2(\alpha)=\frac{1+\cos(2\alpha)}{2}'
-|| $respuesta_5_dos === 'cos^2(a)=\frac{1+\cos(2a)}{2}'
-) { 
+if ($respuesta_5 === '60^\circ') {  
     $verificar_5 = "correcto";
-} elseif ($respuesta_5_dos === '') {
-    $verificar_5 = ''; 
+} elseif ($respuesta_5 === '') {
+    $verificar_5 = '';
 } else {
     $verificar_5 = "incorrecto";
 }
 
+// Respuesta 6: π/2 = 90°
 $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-$respuesta_6_dos = str_replace(' ','',$respuesta_6);
-
-if ($respuesta_6_dos === '\tan^2(\alpha)=\frac{1-\cos(2\alpha)}{1+\cos(2\alpha)}'
-|| $respuesta_6_dos === 'tan^2(\alpha)=\frac{1-\cos(2\alpha)}{1+\cos(2\alpha)}'
-|| $respuesta_6_dos === '\tan^2(a)=\frac{1-\cos(2a)}{1+\cos(2a)}'
-|| $respuesta_6_dos === 'tan^2(a)=\frac{1-\cos(2a)}{1+\cos(2a)}'
-|| $respuesta_6_dos === 'tan^2(a)=\frac{1-cos(2a)}{1+cos(2a)}'
-) { 
+if ($respuesta_6 === '90^\circ') {  
     $verificar_6 = "correcto";
-} elseif ($respuesta_6_dos === '') {
+} elseif ($respuesta_6 === '') {
     $verificar_6 = '';
 } else {
     $verificar_6 = "incorrecto";
 }
 
-  // Verificar la respuesta 7
+// Respuesta 7: 2π/3 = 120°
 $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-$respuesta_7_dos = str_replace(' ', '', $respuesta_7);
-
-if ($respuesta_7_dos === '\sin(\alpha+\beta)=\sin(\alpha)\cos(\beta)+\cos(\alpha)\sin(\beta)'
-|| $respuesta_7_dos === '\sin(a+b)=\sin(a)\cos(b)+\cos(a)\sin(b)'
-|| $respuesta_7_dos === 'sin(a+b)=sin(a)cos(b)+cos(a)sin(b)'
-) {
+if ($respuesta_7 === '120^\circ') {  
     $verificar_7 = "correcto";
-} elseif ($respuesta_7_dos === '') {
+} elseif ($respuesta_7 === '') {
     $verificar_7 = '';
 } else {
     $verificar_7 = "incorrecto";
 }
 
-// Verificar la respuesta 8
+// Respuesta 8: 3π/4 = 135°
 $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-$respuesta_8_dos = str_replace(' ', '', $respuesta_8);
-
-if ($respuesta_8_dos === '\cos(\alpha+\beta)=\cos(\alpha)\cos(\beta)-\sin(\alpha)\sin(\beta)'
-|| $respuesta_8_dos === '\cos(a+b)=\cos(a)\cos(b)-\sin(a)\sin(b)'
-|| $respuesta_8_dos === 'cos(a+b)=cos(a)cos(b)-sin(a)sin(b)'
-) {
+if ($respuesta_8 === '135^\circ') {  
     $verificar_8 = "correcto";
-} elseif ($respuesta_8_dos === '') {
+} elseif ($respuesta_8 === '') {
     $verificar_8 = '';
 } else {
     $verificar_8 = "incorrecto";
 }
 
-// Verificar la respuesta 9
+// Respuesta 9: 5π/6 = 150°
 $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-$respuesta_9_dos = str_replace(' ', '', $respuesta_9);
-
-if ($respuesta_9_dos === '\tan(\alpha+\beta)=\frac{\tan(\alpha)+\tan(\beta)}{1-\tan(\alpha)\tan(\beta)}'
-|| $respuesta_9_dos === '\tan(a+b)=\frac{\tan(a)+\tan(b)}{1-\tan(a)\tan(b)}'
-|| $respuesta_9_dos === '\tan(a+b)=\frac{tan(a)+tan(b)}{1-tan(a)tan(b)}'
-) {
+if ($respuesta_9 === '150^\circ') {  
     $verificar_9 = "correcto";
-} elseif ($respuesta_9_dos === '') {
+} elseif ($respuesta_9 === '') {
     $verificar_9 = '';
 } else {
     $verificar_9 = "incorrecto";
 }
 
-// Verificar la respuesta 10
+// Respuesta 10: π = 180°
 $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-$respuesta_10_dos = str_replace(' ', '', $respuesta_10);
-
-if ($respuesta_10_dos === '\sin(2\alpha)=2\sin(\alpha)\cos(\alpha)'
-|| $respuesta_10_dos === '\sin(2a)=2\sin(a)\cos(a)'
-|| $respuesta_10_dos === 'sin(2a)=2sin(a)cos(a)'
-) {
+if ($respuesta_10 === '180^\circ') {  
     $verificar_10 = "correcto";
-} elseif ($respuesta_10_dos === '') {
+} elseif ($respuesta_10 === '') {
     $verificar_10 = '';
 } else {
     $verificar_10 = "incorrecto";
 }
 
-// Verificar la respuesta 11
+// Respuesta 11: 7π/6 = 210°
 $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-$respuesta_11_dos = str_replace(' ', '', $respuesta_11);
-
-if ($respuesta_11_dos === '\cos(2\alpha)=\cos^2(\alpha)-\sin^2(\alpha)'
-|| $respuesta_11_dos === '\cos(2a)=\cos^2(a)-\sin^2(a)'
-|| $respuesta_11_dos === 'cos(2a)=cos^2(a)-sin^2(a)'
-) {
+if ($respuesta_11 === '210^\circ') {  
     $verificar_11 = "correcto";
-} elseif ($respuesta_11_dos === '') {
+} elseif ($respuesta_11 === '') {
     $verificar_11 = '';
 } else {
     $verificar_11 = "incorrecto";
 }
 
-// Verificar la respuesta 12
+// Respuesta 12: 5π/4 = 225°
 $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-$respuesta_12_dos = str_replace(' ', '', $respuesta_12);
-
-if ($respuesta_12_dos === '\tan(2\alpha)=\frac{2\tan(\alpha)}{1-\tan^2(\alpha)}'
-|| $respuesta_12_dos === '\tan(2a)=\frac{2\tan(a)}{1-\tan^2(a)}'
-|| $respuesta_12_dos === 'tan(2a)=\frac{2tan(a)}{1-tan^2(a)}'
-) {
+if ($respuesta_12 === '225^\circ') {  
     $verificar_12 = "correcto";
-} elseif ($respuesta_12_dos === '') {
+} elseif ($respuesta_12 === '') {
     $verificar_12 = '';
 } else {
     $verificar_12 = "incorrecto";
 }
 
- 
+// Respuesta 13: 4π/3 = 240°
+$respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
+if ($respuesta_13 === '240^\circ') {  
+    $verificar_13 = "correcto";
+} elseif ($respuesta_13 === '') {
+    $verificar_13 = '';
+} else {
+    $verificar_13 = "incorrecto";
+}
+
+// Respuesta 14: 3π/2 = 270°
+$respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
+if ($respuesta_14 === '270^\circ') {  
+    $verificar_14 = "correcto";
+} elseif ($respuesta_14 === '') {
+    $verificar_14 = '';
+} else {
+    $verificar_14 = "incorrecto";
+}
+
+// Respuesta 15: 5π/3 = 300°
+$respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
+if ($respuesta_15 === '300^\circ') {  
+    $verificar_15 = "correcto";
+} elseif ($respuesta_15 === '') {
+    $verificar_15 = '';
+} else {
+    $verificar_15 = "incorrecto";
+}
+
+// Respuesta 16: 7π/4 = 315°
+$respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
+if ($respuesta_16 === '315^\circ') {  
+    $verificar_16 = "correcto";
+} elseif ($respuesta_16 === '') {
+    $verificar_16 = '';
+} else {
+    $verificar_16 = "incorrecto";
+}
+
+// Respuesta 17: 11π/6 = 330°
+$respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
+if ($respuesta_17 === '330^\circ') {  
+    $verificar_17 = "correcto";
+} elseif ($respuesta_17 === '') {
+    $verificar_17 = '';
+} else {
+    $verificar_17 = "incorrecto";
+}
+
+// Respuesta 18: 2π = 360°
+$respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
+if ($respuesta_18 === '360^\circ') {  
+    $verificar_18 = "correcto";
+} elseif ($respuesta_18 === '') {
+    $verificar_18 = '';
+} else {
+    $verificar_18 = "incorrecto";
+}
+
 }
 }
 ?>
@@ -227,20 +358,19 @@ if ($respuesta_12_dos === '\tan(2\alpha)=\frac{2\tan(\alpha)}{1-\tan^2(\alpha)}'
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../style_2_0.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
-    .imagen {
-        max-width: 100%;
-        height: auto;
-    }
+ 
     .seccion {
-    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
-    padding: 20px; /* importante este padding*/
+    /*width: 50%;*/    
+    width: calc(50% - 7.5px);
+    padding: 20px;
     box-sizing: border-box;
     height: 370vh;
     }
+
 </style>
  
 <script>
@@ -279,8 +409,7 @@ function handleSubmit(event) {
         actualizarFormula16();
         actualizarFormula17();
         actualizarFormula18();
-        actualizarFormula19();
-        actualizarFormula20();
+ 
     })
     .catch(error => {
         console.error('Error al enviar el formulario:', error);
@@ -297,7 +426,7 @@ function actualizarFormula() {
 }
 
 function actualizarFormula2() {
-    var f = document.getElementById('respuesta_2').value || "";
+    var f = document.getElementById('respuesta_1').value || "";
     var formula = ` \\ ${f} \\, `;
     document.getElementById('formula2').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
@@ -448,24 +577,7 @@ function actualizarFormula18() {
         MathJax.typeset();
     }
 }
-
-function actualizarFormula19() {
-    var f = document.getElementById('respuesta_19').value || "";
-    var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula19').innerHTML = `$$ ${formula} $$`;
-    if (window.MathJax) {
-        MathJax.typeset();
-    }
-}
-
-function actualizarFormula20() {
-    var f = document.getElementById('respuesta_20').value || "";
-    var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula20').innerHTML = `$$ ${formula} $$`;
-    if (window.MathJax) {
-        MathJax.typeset();
-    }
-}
+ 
 
 function mostrarMensaje() {
     document.getElementById("mensaje").style.display = 'block';
@@ -517,195 +629,195 @@ function ocultarMensaje4() {
     
 </head>
 <body> 
-<div class="seccion izquierda">
-    <form action="./quinto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h4>Identidades del ángulo mitad (toda la definición)</h4>
 
-<br><br>
-<span id="formula">\[ \]</span>
-<input type="text" name="respuesta_1" id="respuesta_1" oninput="actualizarFormula()" 
-value="<?php echo $respuesta_1 ?>" size="50">
+<form action="./quinto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
+<div class="form-container">
 
-<br><br>
-<span id="formula2">\[ \]</span>
-<input type="text" name="respuesta_2" id="respuesta_2" oninput="actualizarFormula2()" 
-value="<?php echo $respuesta_2 ?>" size="50">
+    
+<div class="seccion izquierda"> 
+ <h3>➤ De radianes a grados:</h3>
+<p>Multiplica por 
+  <span id="formula">\( \)</span> 
+  <input type="text" name="respuesta_1" id="respuesta_1"
+  oninput="actualizarFormula(); actualizarFormula2();"
+  value="<?php echo $respuesta_1 ?>" size="14">    
+</p>
+<p>\( \theta^\circ = \theta \text{ (rad)} \cdot \)
+  <span id="formula2">\( \)</span>
+</p>
 
-<br><br>
-<span id="formula3">\[ \]</span>
-<input type="text" name="respuesta_3" id="respuesta_3" oninput="actualizarFormula3()" 
-value="<?php echo $respuesta_3 ?>" size="50">
+<button onmousedown="mostrarMensaje2()" onmouseup="ocultarMensaje2()">Solucion</button>
+<div id="mensaje2" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
+  <h4>Ejemplos:</h4>
+  <ul>
+    <li>\( \frac{\pi}{3} = \frac{\pi}{3} \cdot \frac{180}{\pi} = 60^\circ \)</li>
+    <li>\( \pi = 180^\circ \)</li>
+    <li>\( \frac{3\pi}{2} = 270^\circ \)</li>
+  </ul>
+</div>
 
-<br><br>
+<ul>
+  <li>\( \frac{\pi}{6} = \)
+    <span id="formula3">\( \)</span>
+    <input type="text" name="respuesta_3" id="respuesta_3" oninput="actualizarFormula3()" 
+    value="<?php echo $respuesta_3 ?>" size="15">
+
+    <?php echo $verificar_3; ?>
+ 
+  </li>
+  <li>\( \frac{\pi}{4} = \)
+    <span id="formula4">\( \)</span>
+    <input type="text" name="respuesta_4" id="respuesta_4" oninput="actualizarFormula4()" 
+    value="<?php echo $respuesta_4 ?>" size="15">
+
+    <?php echo $verificar_4; ?>
+ 
+  </li>
+  <li>\( \frac{\pi}{3} = \)
+    <span id="formula5">\( \)</span>
+    <input type="text" name="respuesta_5" id="respuesta_5" oninput="actualizarFormula5()" 
+    value="<?php echo $respuesta_5 ?>" size="15">
+
+    <?php echo $verificar_5; ?>
+ 
+  </li>
+  <li>\( \frac{\pi}{2} = \)
+    <span id="formula6">\( \)</span>
+    <input type="text" name="respuesta_6" id="respuesta_6" oninput="actualizarFormula6()" 
+    value="<?php echo $respuesta_6 ?>" size="15">
+
+ <?php echo $verificar_6; ?>
+ 
+  </li>
+  <li>\( \frac{2\pi}{3} = \)
+    <span id="formula7">\( \)</span>
+    <input type="text" name="respuesta_7" id="respuesta_7" oninput="actualizarFormula7()" 
+    value="<?php echo $respuesta_7 ?>" size="15">
+ 
+<?php echo $verificar_7; ?>
+ 
+  </li>
+  <li>\( \frac{3\pi}{4} = \)
+    <span id="formula8">\( \)</span>
+    <input type="text" name="respuesta_8" id="respuesta_8" oninput="actualizarFormula8()" 
+    value="<?php echo $respuesta_8 ?>" size="15">
+ 
+<?php echo $verificar_8; ?>
+ 
+  </li>
+  <li>\( \frac{5\pi}{6} = \)
+    <span id="formula9">\( \)</span>
+    <input type="text" name="respuesta_9" id="respuesta_9" oninput="actualizarFormula9()" 
+    value="<?php echo $respuesta_9 ?>" size="15">
+
+ 
+<?php echo $verificar_9; ?>
+ 
+  </li>
+  <li>\( \pi = \)
+    <span id="formula10">\( \)</span>
+    <input type="text" name="respuesta_10" id="respuesta_10" oninput="actualizarFormula10()" 
+    value="<?php echo $respuesta_10 ?>" size="15">
+
+<?php echo $verificar_10; ?>
+
+  </li>
+  <li>\( \frac{7\pi}{6} = \)
+    <span id="formula11">\( \)</span>
+    <input type="text" name="respuesta_11" id="respuesta_11" oninput="actualizarFormula11()" 
+    value="<?php echo $respuesta_11 ?>" size="15">
+
+
+<?php echo $verificar_11; ?>
+
+  </li>
+  <li>\( \frac{5\pi}{4} = \)
+    <span id="formula12">\( \)</span>
+    <input type="text" name="respuesta_12" id="respuesta_12" oninput="actualizarFormula12()" 
+    value="<?php echo $respuesta_12 ?>" size="15">
+
+
+<?php echo $verificar_12; ?>
+
+  </li>
+  <li>\( \frac{4\pi}{3} = \)
+    <span id="formula13">\( \)</span>
+    <input type="text" name="respuesta_13" id="respuesta_13" oninput="actualizarFormula13()" 
+    value="<?php echo $respuesta_13 ?>" size="15">
+
+
+<?php echo $verificar_13; ?>
+
+  </li>
+  <li>\( \frac{3\pi}{2} = \)
+    <span id="formula14">\( \)</span>
+    <input type="text" name="respuesta_14" id="respuesta_14" oninput="actualizarFormula14()" 
+    value="<?php echo $respuesta_14 ?>" size="15">
+
+
+<?php echo $verificar_14; ?>
+
+  </li>
+  <li>\( \frac{5\pi}{3} = \)
+    <span id="formula15">\( \)</span>
+    <input type="text" name="respuesta_15" id="respuesta_15" oninput="actualizarFormula15()" 
+    value="<?php echo $respuesta_15 ?>" size="15">
+
+
+<?php echo $verificar_15; ?>
+
+  </li>
+  <li>\( \frac{7\pi}{4} = \)
+    <span id="formula16">\( \)</span>
+    <input type="text" name="respuesta_16" id="respuesta_16" oninput="actualizarFormula16()" 
+    value="<?php echo $respuesta_16 ?>" size="15">
+
+    <?php echo $verificar_16; ?>
+ 
+  </li>
+  <li>\( \frac{11\pi}{6} = \)
+    <span id="formula17">\( \)</span>
+    <input type="text" name="respuesta_17" id="respuesta_17" oninput="actualizarFormula17()" 
+    value="<?php echo $respuesta_17 ?>" size="15">
+
+ <?php echo $verificar_17; ?>
+   </li>
+  <li>\( 2\pi = \)
+    <span id="formula18">\( \)</span>
+    <input type="text" name="respuesta_18" id="respuesta_18" oninput="actualizarFormula18()" 
+    value="<?php echo $respuesta_18 ?>" size="15">
+
+    <?php echo $verificar_18; ?>
+
+  </li>
+</ul>
+
 <button type="submit">Enviar</button>
-<?php echo $verificar_1 ?>
-<?php echo $verificar_2 ?>
-<?php echo $verificar_3 ?>
+ 
+ 
+
 
 <hr>
-<h4>Identidades de reducción de potencias (sin, cos, tan)</h4>  
 
-<br><br>
-<span id="formula4">\( \)</span>
-<input type="text" name="respuesta_4" id="respuesta_4" oninput="actualizarFormula4()" 
-value="<?php echo $respuesta_4 ?>" size="30">
-
-<br><br>
-<span id="formula5">\( \)</span>
-<input type="text" name="respuesta_5" id="respuesta_5" oninput="actualizarFormula5()" 
-value="<?php echo $respuesta_5 ?>" size="30">
-
-<br><br>
-<span id="formula6">\( \)</span>
-<input type="text" name="respuesta_6" id="respuesta_6" oninput="actualizarFormula6()" 
-value="<?php echo $respuesta_6 ?>" size="30">
-
-<br><br>
-<button type="submit">Enviar</button>
-<?php echo $verificar_4 ?>
-<?php echo $verificar_5 ?>
-<?php echo $verificar_6 ?>
-<br><br>
-<hr>
-
-
-    </form>
+   
 </div>
 
 
 
 
 <div class="seccion derecha">
-    <form action="./quinto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
- <h4>Identidades de la suma y resta de ángulos</h4>
-<p>orden: sin, cos, tan:</p>
-<p><strong>utilizar \alpha , \beta, \cos, \sin</strong></p>
-
-<span id="formula7">
-    \( ... \)
-</span>
-<br>
-<input type="text" name="respuesta_7" size="40" id="respuesta_7" oninput="actualizarFormula7()"  
-value="<?php echo $respuesta_7 ?>">
-<br>
-
-<span id="formula8">
-    \( ... \)
-</span>
-<br>
-<input type="text" name="respuesta_8" size="40" id="respuesta_8" oninput="actualizarFormula8()"  
-value="<?php echo $respuesta_8 ?>">
-<br>
-
-<span id="formula9">
-    \( ... \)
-</span>
-<br>
-<input type="text" name="respuesta_9" size="40" id="respuesta_9" oninput="actualizarFormula9()"  
-value="<?php echo $respuesta_9 ?>">
-<br>
-
-   <button type="submit">Enviar</button> 
-    <?php echo $verificar_7 ?>
-    <?php echo $verificar_8 ?>
-    <?php echo $verificar_9 ?>
-
-<hr>
-<h4>Identidades del ángulo doble</h4>
-
-<span id="formula10">
-    \( ... \)
-</span>
-<br>
-<input type="text" name="respuesta_10" size="40" id="respuesta_10" oninput="actualizarFormula10()"  
-value="<?php echo $respuesta_10 ?>">
-<br>
-
+   
  
-<span id="formula11">
-    \( ... \)
-</span>
-<br>
-<input type="text" name="respuesta_11" size="40" id="respuesta_11" oninput="actualizarFormula11()"  
-value="<?php echo $respuesta_11 ?>">
-<br>
-
-<span id="formula12">
-    \( ... \)
-</span>
-<br>
-<input type="text" name="respuesta_12" size="40" id="respuesta_12" oninput="actualizarFormula12()"  
-value="<?php echo $respuesta_12 ?>">
-<br>
-
-
-
-
-            <br><br>
-  <button onmousedown="mostrarImagen()" onmouseup="ocultarImagen()">Ayuda</button>
-    <!-- Elemento para mostrar la imagen -->
-
-    <img id="imagenMostrada" src="../../img/angulo.png" style="display: none; max-width: 100%" width="560">
-
-    <script>
-        function mostrarImagen() {
-        var imagenMostrada = document.getElementById('imagenMostrada');
-
-        // Mostrar la imagen
-        imagenMostrada.style.display = 'block';
-        }
-
-        function ocultarImagen() {
-        var imagenMostrada = document.getElementById('imagenMostrada');
-
-        // Ocultar la imagen al soltar el botón
-        imagenMostrada.style.display = 'none';
-        }
-    </script>
-
-<button onmousedown="mostrarImagen2()" onmouseup="ocultarImagen2()">Ayuda</button>
-    <!-- Elemento para mostrar la imagen -->
-
-    <img id="imagenMostrada2" src="../../img/angulo_dos.png" style="display: none; max-width: 100%" width="460">
-
-    <script>
-        function mostrarImagen2() {
-        var imagenMostrada2 = document.getElementById('imagenMostrada2');
-
-        // Mostrar la imagen
-        imagenMostrada2.style.display = 'block';
-        }
-
-        function ocultarImagen2() {
-        var imagenMostrada2 = document.getElementById('imagenMostrada2');
-
-        // Ocultar la imagen al soltar el botón
-        imagenMostrada2.style.display = 'none';
-        }
-    </script>
-
-    <button type="submit">Enviar</button> 
- 
-    <?php echo $verificar_10 ?>
-    <?php echo $verificar_11 ?>
-    <?php echo $verificar_12 ?>
-
-
-    <hr>
-    <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
-    <br>
-    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
-    <button type="submit"   >Mostrar Solución</button>
-    <hr>
-    </form>
+        
 </div>
-
+</div>
+ </form>
 <div class="centered-container">
     <a
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="quinto.php"
+        href="sexto.php"
         role="button"
         width="50px"
         height="50px"

@@ -1,24 +1,53 @@
 body {
     margin: 0;
     padding: 0;
+    height: 100vh;
+    max-width: 100%;
+}
+
+.form-container {
     display: flex;
-    height: 100%; /* Asegura que el cuerpo y el HTML ocupen el 100% del viewport */
-    min-height: 100%; /* Establece la altura mínima del cuerpo y el HTML como el 100% del viewport */
-    max-width: 100%; /* Establece el ancho máximo del cuerpo y el HTML como el 100% del viewport */
+    height: 100%;
 }
 
 .seccion {
-    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
-    padding: 20px; /* importante este padding*/
+    /*width: 50%;*/    
+    width: calc(50% - 7.5px);
+    padding: 20px;
     box-sizing: border-box;
-    height: 370vh;
+      /* overflow-y: auto; */ /* lo quitas */
+  min-height: 240vh; /* lo pones igual que antes */
 }
+
 /* Estilos específicos para la sección derecha */
 .seccion.derecha {
-    background-color: #f0f0f0;
     margin-left: 15px;
-
+    background-color: #f0f0f0;
 }
+
+/* Estilos específicos para la sección izquierda */
+.seccion.izquierda {
+    background-color: #e0e0e0;
+}
+
+/* Estilos para los botones de enviar */
+.submit-button {
+    margin: 10px 0;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+/* Asegurar que los elementos matemáticos se muestren correctamente */
+.katex {
+    font-size: 1.1em;
+}
+
+
+.imagen {
+    max-width: 100%;
+    height: auto;
+}
+
 
 .input-container {
     display: flex; /* Usa Flexbox */
@@ -28,10 +57,20 @@ body {
 }
 
 
-/* Estilos específicos para la sección izquierda */
-.seccion.izquierda {
-    background-color: #e0e0e0;
+
+/* Estilo para las líneas verticales */
+.middle {
+    border-left: 1px solid #000; /* Línea izquierda */
+    border-right: 1px solid #000; /* Línea derecha */
 }
+
+/* Estilo de los inputs */
+.input-cell input {
+    size: 50;
+    text-align: center;
+    box-sizing: border-box;
+}
+
 
 .centered-container {
     display: flex;
@@ -52,28 +91,4 @@ body {
     padding: 20px;
     background-color: #f8f9fa;
 
-}
-
-
-/* Estilos de la tabla */
-.input-table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: center;
-    margin: 0 auto;
-}
-
- 
-
-/* Estilo para las líneas verticales */
-.middle {
-    border-left: 1px solid #000; /* Línea izquierda */
-    border-right: 1px solid #000; /* Línea derecha */
-}
-
-/* Estilo de los inputs */
-.input-cell input {
-    size: 50;
-    text-align: center;
-    box-sizing: border-box;
 }

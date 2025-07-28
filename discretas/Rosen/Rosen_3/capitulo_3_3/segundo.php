@@ -1439,7 +1439,7 @@ function ocultarMensaje4() {
 </head>
 <body> 
 <div class="seccion izquierda">
-    <form action="./noveno.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
     <h2>COMPLEJIDAD EN EL CASO PROMEDIO</h2>
 
     <p>
@@ -1630,7 +1630,7 @@ return C {C = [cij] is the product of A and B}
 
     <script>
         function mostrarImagen() {
-        var imagenMostrada2 = document.getElementById('imagenMostrada');
+        var imagenMostrada = document.getElementById('imagenMostrada');
 
         // Mostrar la imagen
         imagenMostrada.style.display = 'block';
@@ -1645,6 +1645,27 @@ return C {C = [cij] is the product of A and B}
     </script>
 
 
+<button onmousedown="mostrarImagen3()" onmouseup="ocultarImagen3()">Ayuda</button>
+<!-- Elemento para mostrar la imagen -->
+<img id="imagenMostrada3" src="../../../../img/guia_42.png" style="display: none; max-width: 100%" width="560">
+
+<script>
+    function mostrarImagen3() {
+        var imagenMostrada3 = document.getElementById('imagenMostrada3');
+
+        // Mostrar la imagen
+        imagenMostrada3.style.display = 'block';
+    }
+
+    function ocultarImagen3() {
+        var imagenMostrada3 = document.getElementById('imagenMostrada3');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada3.style.display = 'none';
+    }
+</script>
+
+ 
 
 <p>Podemos determinar la complejidad de este algoritmo en términos del número de sumas y multiplicaciones utilizadas.</p>
 
@@ -1670,7 +1691,7 @@ return C {C = [cij] is the product of A and B}
 
 
 <div class="seccion derecha">
-    <form action="./noveno.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
      <h3>ALGORITHM 2 Producto Booleano de Matrices Cero–Uno</h3>
 
 <pre>

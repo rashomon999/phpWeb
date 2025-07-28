@@ -11,159 +11,31 @@ for ($i = 1; $i <= 230; $i++) {
 }
 
      
-
 $mostrar_solucion = '';
 if ($_POST) {
     $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
     
     if ($mostrar_solucion === 'mostrar_solucion') {
-        // Establecer todas las respuestas correctas para las tablas de multiplicar
-        
-        // Tabla del 12
-        $respuesta_111 = '24'; 
-        $respuesta_112 = '36';
-        $respuesta_113 = '48';
-        $respuesta_114 = '60';
-        $respuesta_115 = '72';
-        $respuesta_116 = '84';
-        $respuesta_117 = '96';
-        $respuesta_118 = '108';
-        $respuesta_119 = '120';
-        $respuesta_120 = '132';
-        $respuesta_121 = '144';
-        
-        // Tabla del 13
-        $respuesta_1 = '26';
-        $respuesta_2 = '39';
-        $respuesta_3 = '52';
-        $respuesta_4 = '65';
-        $respuesta_5 = '78';
-        $respuesta_6 = '91';
-        $respuesta_7 = '104';
-        $respuesta_8 = '117';
-        $respuesta_9 = '130';
-        $respuesta_10 = '143';
-        $respuesta_11 = '156';
-        
-        // Tabla del 14
-        $respuesta_12 = '28';
-        $respuesta_13 = '42';
-        $respuesta_14 = '56';
-        $respuesta_15 = '70';
-        $respuesta_16 = '84';
-        $respuesta_17 = '98';
-        $respuesta_18 = '112';
-        $respuesta_19 = '126';
-        $respuesta_20 = '140';
-        $respuesta_21 = '154';
-        $respuesta_22 = '168';
-        
-        // Tabla del 15
-        $respuesta_23 = '30';
-        $respuesta_24 = '45';
-        $respuesta_25 = '60';
-        $respuesta_26 = '75';
-        $respuesta_27 = '90';
-        $respuesta_28 = '105';
-        $respuesta_29 = '120';
-        $respuesta_30 = '135';
-        $respuesta_31 = '150';
-        $respuesta_32 = '165';
-        $respuesta_33 = '180';
-        
-        // Tabla del 16
-        $respuesta_34 = '32';
-        $respuesta_35 = '48';
-        $respuesta_36 = '64';
-        $respuesta_37 = '80';
-        $respuesta_38 = '96';
-        $respuesta_39 = '112';
-        $respuesta_40 = '128';
-        $respuesta_41 = '144';
-        $respuesta_42 = '160';
-        $respuesta_43 = '176';
-        $respuesta_44 = '192';
-        
-        // Tabla del 17
-        $respuesta_45 = '34';
-        $respuesta_46 = '51';
-        $respuesta_47 = '68';
-        $respuesta_48 = '85';
-        $respuesta_49 = '102';
-        $respuesta_50 = '119';
-        $respuesta_51 = '136';
-        $respuesta_52 = '153';
-        $respuesta_53 = '170';
-        $respuesta_54 = '187';
-        $respuesta_55 = '204';
-        
-        // Tabla del 18
-        $respuesta_56 = '36';
-        $respuesta_57 = '54';
-        $respuesta_58 = '72';
-        $respuesta_59 = '90';
-        $respuesta_60 = '108';
-        $respuesta_61 = '126';
-        $respuesta_62 = '144';
-        $respuesta_63 = '162';
-        $respuesta_64 = '180';
-        $respuesta_65 = '198';
-        $respuesta_66 = '216';
-        
-        // Tabla del 19
-        $respuesta_67 = '38';
-        $respuesta_68 = '57';
-        $respuesta_69 = '76';
-        $respuesta_70 = '95';
-        $respuesta_71 = '114';
-        $respuesta_72 = '133';
-        $respuesta_73 = '152';
-        $respuesta_74 = '171';
-        $respuesta_75 = '190';
-        $respuesta_76 = '209';
-        $respuesta_77 = '228';
-        
-        // Tabla del 20
-        $respuesta_78 = '40';
-        $respuesta_79 = '60';
-        $respuesta_80 = '80';
-        $respuesta_81 = '100';
-        $respuesta_82 = '120';
-        $respuesta_83 = '140';
-        $respuesta_84 = '160';
-        $respuesta_85 = '180';
-        $respuesta_86 = '200';
-        $respuesta_87 = '220';
-        $respuesta_88 = '240';
-        
-        // Tabla del 21
-        $respuesta_89 = '42';
-        $respuesta_90 = '63';
-        $respuesta_91 = '84';
-        $respuesta_92 = '105';
-        $respuesta_93 = '126';
-        $respuesta_94 = '147';
-        $respuesta_95 = '168';
-        $respuesta_96 = '189';
-        $respuesta_97 = '210';
-        $respuesta_98 = '231';
-        $respuesta_99 = '252';
-        
-        // Tabla del 22
-        $respuesta_100 = '44';
-        $respuesta_101 = '66';
-        $respuesta_102 = '88';
-        $respuesta_103 = '110';
-        $respuesta_104 = '132'; 
-        $respuesta_105 = '154';
-        $respuesta_106 = '176';
-        $respuesta_107 = '198';
-        $respuesta_108 = '220';
-        $respuesta_109 = '242';
-        $respuesta_110 = '264';
+        // Establecer todas las respuestas correctas
+        $respuesta_1 = '2Ln|Ln(3x)|+C';
+        $respuesta_2 = '-\frac{1}{3}Cos(3x)+C';
+        $respuesta_3 = '-\frac{1}{4}Cos(4x-5)dx';
+        $respuesta_4 = '-\frac{1}{4}Cos(2x^2-5)+C';
+        $respuesta_5 = '-\frac{1}{2}Cos(3x^2-5)+C';
+        $respuesta_6 = '\frac{1}{5}Cos(5x)+C';
+        $respuesta_7 = '2Sen(\frac{x}{2})+C';
+        $respuesta_8 = '\frac{1}{3}Sen(3t)+C';
+        $respuesta_9 = '3Sen(\frac{x}{3})+C';
+        $respuesta_10 = '\frac{1}{6}Cos(3x^2+2)+C';
+        $respuesta_11 = '\frac{2}{3}Sen(t^3+2)+C';
+        $respuesta_12 = '-Ln|Cosx|+C';
+        $respuesta_13 = '-\frac{1}{3}Ln|Cosx|+C';
+        $respuesta_14 = 'Ln|Senx|+C';
         
         // Marcar todas como correctas
-    $verificar_1 = $verificar_2 = $verificar_3 = /* ... todas las variables de verificación ... */ $verificar_122 = "correcto";
+        $verificar_1 = $verificar_2 = $verificar_3 = $verificar_4 = $verificar_5 = 
+        $verificar_6 = $verificar_7 = $verificar_8 = $verificar_9 = $verificar_10 = 
+        $verificar_11 = $verificar_12 = $verificar_13 = $verificar_14 = "correcto";
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
    if ($respuesta_1 === '2Ln|Ln(3x)|+C') {  
@@ -206,7 +78,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === '78') {  
+   if ($respuesta_5 === '-\frac{1}{2}Cos(3x^2-5)+C') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -216,7 +88,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === '91') {  
+   if ($respuesta_6 === '\frac{1}{5}Cos(5x)+C') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -226,7 +98,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === '104') {  
+   if ($respuesta_7 === '2Sen(\frac{x}{2})+C') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -236,7 +108,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === '117') {  
+   if ($respuesta_8 === '\frac{1}{3}Sen(3t)+C') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -246,7 +118,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === '130') {  
+   if ($respuesta_9 === '3Sen(\frac{x}{3})+C') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -256,7 +128,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === '143') {  
+   if ($respuesta_10 === '\frac{1}{6}Cos(3x^2+2)+C') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -266,7 +138,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === '156') {  
+   if ($respuesta_11 === '\frac{2}{3}Sen(t^3+2)+C') {  
        $verificar_11 = "correcto";
    } elseif ($respuesta_11 === '') {
        $verificar_11 = '';
@@ -277,7 +149,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
      $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-     if ($respuesta_12 === '28') {  
+     if ($respuesta_12 === '-Ln|Cosx|+C' || $respuesta_12 === '-Ln|Cos(x)|+C') {  
          $verificar_12 = "correcto";
      } elseif ($respuesta_12 === '') {
          $verificar_12 = '';
@@ -287,7 +159,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la segunda pregunta
      $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-     if ($respuesta_13 === '42') { 
+     if ($respuesta_13 === '-\frac{1}{3}Ln|Cosx|+C') { 
          $verificar_13 = "correcto";
      } elseif ($respuesta_13 === '') {
          $verificar_13 = '';
@@ -297,7 +169,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la tercera pregunta
      $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-     if ($respuesta_14 === '56') {  
+     if ($respuesta_14 === 'Ln|Senx|+C' || $respuesta_14 === 'Ln|Sen(x)|+C') {  
          $verificar_14 = "correcto";
      } elseif ($respuesta_14 === '') {
          $verificar_14 = '';
@@ -1311,7 +1183,7 @@ if ($respuesta_121 === '144') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 370vh;
+    height: 250vh;
     }
 </style>
  
@@ -1554,7 +1426,7 @@ function ocultarMensaje2() {
 }
 
 
-
+ 
 function mostrarMensaje3() {
     document.getElementById("mensaje3").style.display = 'block';
     // Asegúrate de que MathJax procese el nuevo contenido
@@ -1594,10 +1466,59 @@ function ocultarMensaje4() {
     <input type="text" name="respuesta_1"   id="respuesta_1" oninput="actualizarFormula()" 
     value="<?php echo $respuesta_1?>" size="25" >
     </p>
+
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_1 ?>
+ 
+
+    <button onmousedown="mostrarImagen4()" onmouseup="ocultarImagen4()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada4" src="../../../img/inception.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen4() {
+        var imagenMostrada4 = document.getElementById('imagenMostrada4');
+
+        // Mostrar la imagen
+        imagenMostrada4.style.display = 'block';
+        }
+
+        function ocultarImagen4() {
+        var imagenMostrada4 = document.getElementById('imagenMostrada4');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada4.style.display = 'none';
+        }
+    </script>   
+
+
+
+    <button onmousedown="mostrarImagen5()" onmouseup="ocultarImagen5()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada5" src="../../../img/inception_final.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen5() {
+        var imagenMostrada5 = document.getElementById('imagenMostrada5');
+
+        // Mostrar la imagen
+        imagenMostrada5.style.display = 'block';
+        }
+
+        function ocultarImagen5() {
+        var imagenMostrada5 = document.getElementById('imagenMostrada5');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada5.style.display = 'none';
+        }
+    </script>   
+ 
     <hr> 
 
     <p style="text-align: center;">
-    \(  \int Sen(3x)dx \, \, dx \) = 
+    \(  \int Sen(3x) \, \, dx \) = 
     <span id="formula2">
         \(   \)
     </span> 
@@ -1606,6 +1527,9 @@ function ocultarMensaje4() {
     value="<?php echo $respuesta_2?>" size="25" >
     </p>
 
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_2 ?>
+ 
     <button onmousedown="mostrarImagen()" onmouseup="ocultarImagen()">Ayuda</button>
     <!-- Elemento para mostrar la imagen -->
 
@@ -1673,7 +1597,7 @@ function ocultarMensaje4() {
     <hr> 
 
     <p style="text-align: center;">
-    \(  \int Sen(4x-5)dx \, \, dx \) = 
+    \(  \int Sen(4x-5) \, \, dx \) = 
     <span id="formula3">
         \(   \)
     </span> 
@@ -1682,10 +1606,13 @@ function ocultarMensaje4() {
     value="<?php echo $respuesta_3?>" size="25" >
     </p>
 
+
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_3 ?>
     <hr> 
 
     <p style="text-align: center;">
-    \(  \int x Sen(2x^2-5) dx \, \, dx \) = 
+    \(  \int x Sen(2x^2-5)  \, \, dx \) = 
     <span id="formula4">
         \(   \)
     </span> 
@@ -1694,6 +1621,55 @@ function ocultarMensaje4() {
     value="<?php echo $respuesta_4?>" size="25" >
     </p>
 
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_4 ?>
+ 
+    <hr> 
+
+    <p style="text-align: center;">
+    \(  \int 3x \, Sen(3x^2-5) \, \, dx \) = 
+    <span id="formula5">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_5"   id="respuesta_5" oninput="actualizarFormula5()" 
+    value="<?php echo $respuesta_5?>" size="25" >
+    </p>
+
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_5 ?>
+ 
+    <hr> 
+
+    <p style="text-align: center;">
+    \(  \int Cos(5x) \, \, dx \) = 
+    <span id="formula6">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_6"   id="respuesta_6" oninput="actualizarFormula6()" 
+    value="<?php echo $respuesta_6?>" size="25" >
+    </p>
+
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_6 ?>
+ 
+    <hr> 
+
+    <p style="text-align: center;">
+    \(  \int Cos(\frac{x}{2}) \, \, dx \) = 
+    <span id="formula7">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_7"   id="respuesta_7" oninput="actualizarFormula7()" 
+    value="<?php echo $respuesta_7?>" size="25" >
+    </p>
+    
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_7 ?>
+ 
+    <hr>
     </form>
 </div>
 
@@ -1702,8 +1678,243 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
     <form action="./sexto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-  
-        
+    
+    <p style="text-align: center;">
+    \(  \int Cos(3t) \, \, dt \) = 
+    <span id="formula8">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_8"   id="respuesta_8" oninput="actualizarFormula8()" 
+    value="<?php echo $respuesta_8?>" size="25" >
+    </p>
+
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_8 ?>
+    <hr> 
+
+    <p style="text-align: center;">
+    \(  \int Cos(\frac{x}{3}) \, \, dx \) = 
+    <span id="formula9">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_9"   id="respuesta_9" oninput="actualizarFormula9()" 
+    value="<?php echo $respuesta_9?>" size="25" >
+    </p>
+
+    
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_9 ?>  
+    <hr> 
+
+    <p style="text-align: center;">
+    \(  \int xCos(3x^2+2) \, \, dx \) = 
+    <span id="formula10">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_10"   id="respuesta_10" oninput="actualizarFormula10()" 
+    value="<?php echo $respuesta_10?>" size="25" >
+    </p>
+
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_10 ?>  
+    <hr> 
+
+    <p style="text-align: center;">
+    \(  \int 2t^2 \, Cos(t^3+2) \, \, dt \) = 
+    <span id="formula11">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_11"   id="respuesta_11" oninput="actualizarFormula11()" 
+    value="<?php echo $respuesta_11?>" size="25" >
+    </p>
+
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_11 ?>     
+    <hr> 
+
+    <p style="text-align: center;">
+    \(  \int Tan(x) \, \, dx \) = 
+    <span id="formula12">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_12"   id="respuesta_12" oninput="actualizarFormula12()" 
+    value="<?php echo $respuesta_12?>" size="25" >
+    </p>
+    
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_12 ?>  
+
+    <button onmousedown="mostrarImagen6()" onmouseup="ocultarImagen6()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada6" src="../../../img/tangente_integral.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen6() {
+        var imagenMostrada6 = document.getElementById('imagenMostrada6');
+
+        // Mostrar la imagen
+        imagenMostrada6.style.display = 'block';
+        }
+
+        function ocultarImagen6() {
+        var imagenMostrada6 = document.getElementById('imagenMostrada6');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada6.style.display = 'none';
+        }
+    </script>   
+
+
+    <button onmousedown="mostrarImagen7()" onmouseup="ocultarImagen7()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada7" src="../../../img/solucion_tangente.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen7() {
+        var imagenMostrada7 = document.getElementById('imagenMostrada7');
+
+        // Mostrar la imagen
+        imagenMostrada7.style.display = 'block';
+        }
+
+        function ocultarImagen7() {
+        var imagenMostrada7 = document.getElementById('imagenMostrada7');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada7.style.display = 'none';
+        }
+    </script>   
+
+
+    <button onmousedown="mostrarImagen8()" onmouseup="ocultarImagen8()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada8" src="../../../img/solucion_tangente_dos.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen8() {
+        var imagenMostrada8 = document.getElementById('imagenMostrada8');
+
+        // Mostrar la imagen
+        imagenMostrada8.style.display = 'block';
+        }
+
+        function ocultarImagen8() {
+        var imagenMostrada8 = document.getElementById('imagenMostrada8');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada8.style.display = 'none';
+        }
+    </script> 
+    
+    <hr> 
+
+    <p style="text-align: center;">
+    \(  \int Tan(3x) \, \, dx \) = 
+    <span id="formula13">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_13"   id="respuesta_13" oninput="actualizarFormula13()" 
+    value="<?php echo $respuesta_13?>" size="25" >
+    </p>
+
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_13 ?>
+
+    <button onmousedown="mostrarImagen9()" onmouseup="ocultarImagen9()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada9" src="../../../img/integral_3.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen9() {
+        var imagenMostrada9 = document.getElementById('imagenMostrada9');
+
+        // Mostrar la imagen
+        imagenMostrada9.style.display = 'block';
+        }
+
+        function ocultarImagen9() {
+        var imagenMostrada9 = document.getElementById('imagenMostrada9');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada9.style.display = 'none';
+        }
+    </script> 
+
+
+    <button onmousedown="mostrarImagen10()" onmouseup="ocultarImagen10()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada10" src="../../../img/integral_4.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen10() {
+        var imagenMostrada10 = document.getElementById('imagenMostrada10');
+
+        // Mostrar la imagen
+        imagenMostrada10.style.display = 'block';
+        }
+
+        function ocultarImagen10() {
+        var imagenMostrada10 = document.getElementById('imagenMostrada10');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada10.style.display = 'none';
+        }
+    </script> 
+ 
+
+    <hr> 
+
+    <p style="text-align: center;">
+    \(  \int Cot(x) \, \, dx \) = 
+    <span id="formula14">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_14"   id="respuesta_14" oninput="actualizarFormula14()" 
+    value="<?php echo $respuesta_14?>" size="25" >
+    </p>
+
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_14 ?>
+
+    <button onmousedown="mostrarImagen11()" onmouseup="ocultarImagen11()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada11" src="../../../img/integral_6.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen11() {
+        var imagenMostrada11 = document.getElementById('imagenMostrada11');
+
+        // Mostrar la imagen
+        imagenMostrada11.style.display = 'block';
+        }
+
+        function ocultarImagen11() {
+        var imagenMostrada11 = document.getElementById('imagenMostrada11');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada11.style.display = 'none';
+        }
+    </script> 
+    
+    <hr>
+    <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
+    <br>
+    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
+    <button type="submit"   >Mostrar Solución</button>
+ 
     </form>
 </div>
 
@@ -1712,7 +1923,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="sexto.php"
+        href="septimo.php"
         role="button"
         width="50px"
         height="50px"

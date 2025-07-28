@@ -1363,7 +1363,7 @@ if ($respuesta_130 === '7451209') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
   <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../../style.css">
+    <link rel="stylesheet" href="../../../../style_2_0.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
@@ -1677,8 +1677,11 @@ function ocultarMensaje4() {
     
 </head>
 <body> 
+
+<form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+<div class="form-container">
 <div class="seccion izquierda">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+     
     <strong>aviso: este cuestionario se hizo con la version 3</strong>
     <p>Las versiones de SWEBOK son:</p>
     
@@ -1945,6 +1948,14 @@ function ocultarMensaje4() {
 
       <button onmousedown="mostrarMensaje3()" onmouseup="ocultarMensaje3()">Dato</button>
     <div id="mensaje3" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
+        <h2>📌 Contexto de la cita</h2>
+    <p>El texto explica que:</p>
+    <ul>
+        <li>Algunos <strong>requerimientos de software</strong> (lo que el software debe hacer o cómo debe comportarse) implican <strong>requerimientos de proceso</strong> (cómo se debe desarrollar ese software).</li>
+        <li>Ejemplo: si quieres <strong>alta confiabilidad</strong>, entonces necesitas <strong>métodos de verificación y validación rigurosos</strong>.</li>
+        <li>Estos métodos de verificación son <strong>decisiones de proceso</strong> (cómo trabajará el equipo), no características del software en sí.</li>
+    </ul>
+    <br><br>
      . La elección de una técnica de verificación es un ejemplo. Otro podría ser el uso de técnicas
      de análisis particularmente rigurosas (como métodos de especificación formal) para reducir fallas 
      que puedan conducir a una confiabilidad inadecuada. Los requerimientos de proceso también pueden ser
@@ -2119,15 +2130,14 @@ function ocultarMensaje4() {
 <?php echo $verificar_75 ?>
 <?php echo $verificar_76 ?>
 <hr>
-    </form>
+   
 </div>
 
 
 
 
 <div class="seccion derecha">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h5>1.5. requerimientos 
+     <h5>1.5. requerimientos 
     <input type="text" name="respuesta_77" value="<?php echo $respuesta_77; ?>" size="11">    
     </h5>
 
@@ -2315,9 +2325,10 @@ restringirá fuertemente la arquitectura del sistema.
         }
     </script>
 
-    </form>
+     
 </div>
-
+</div>
+</form>
 <div class="centered-container">
     <a
         name="siguiente"

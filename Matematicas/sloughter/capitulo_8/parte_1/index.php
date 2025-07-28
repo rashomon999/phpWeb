@@ -1442,13 +1442,35 @@ function ocultarMensaje4() {
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
     <h1>8.1 Soluciones numéricas</h1>
 
+    <button onmousedown="mostrarImagen()" onmouseup="ocultarImagen()">Explicacion</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada" src="../../../../img/notacion.png" style="display: none; max-width: 100%" width="560">
+
+    <script>
+        function mostrarImagen() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada');
+
+        // Mostrar la imagen
+        imagenMostrada.style.display = 'block';
+        }
+
+        function ocultarImagen() {
+        var imagenMostrada = document.getElementById('imagenMostrada');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada.style.display = 'none';
+        }
+    </script>
+
+
     <p>
     Si \( x \) es una función de una variable real \( t \) y \( f \) es una función tanto de \( x \)
     como de \( t \), entonces la ecuación
     </p>
 
     <p style="text-align: center;"> 
-    \[\dot{x}(t) = f(x(t), t) \tag{8.1.1}\]
+    \[\dot{x}(t) = f(x(t), t) \tag{8.1.1}\] 
     </p>
 
     <p> 

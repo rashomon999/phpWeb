@@ -20,7 +20,7 @@ if ($_POST) {
         // Establecer todas las respuestas correctas
         $respuesta_1 = 'a^2=b^2+c^2-2bc*CosA';
         $respuesta_2 = 'A=Cos^{-1}(\frac{b^2+c^2-a^2}{2bc})';
-        $respuesta_3 = '\frac{a}{sen(a)}=\frac{b}{sen(b)}=\frac{c}{sen(c)}';
+        $respuesta_3 = '\frac{a}{sen(A)}=\frac{b}{sen(B)}=\frac{c}{sen(C)}';
         $respuesta_4 = 'Sin^2(x)=\frac{1}{2}-\frac{1}{2}Cos(2x)';
         $respuesta_5 = 'Cos^2(x)=\frac{1}{2}+\frac{1}{2}Cos(2x)';
         $respuesta_6 = 'Tan^2(x)=\frac{1-Cos(2x)}{1+Cos(2x)}';
@@ -64,7 +64,9 @@ if ($_POST) {
         }
 
         $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-        if ($respuesta_3 === '\frac{a}{sen(a)}=\frac{b}{sen(b)}=\frac{c}{sen(c)}') {
+        if ($respuesta_3 === '\frac{a}{\sin(A)}=\frac{b}{\sin(B)}=\frac{c}{\sin(C)}'
+        || $respuesta_3 === '\frac{a}{Sen(A)}=\frac{b}{Sen(B)}=\frac{c}{Sen(C)}'
+        ) {
             $verificar_3 = "correcto";
         } elseif ($respuesta_3 === '') {
             $verificar_3 = '';
@@ -680,6 +682,29 @@ function ocultarMensaje4() {
     <?php echo $verificar_3 ?>
     <hr>
 
+
+    
+    <button onmousedown="mostrarImagen2()" onmouseup="ocultarImagen2()">Explicacion</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada2" src="../../img/mayuscula.png" style="display: none; max-width: 100%" width="560">
+
+    <script>
+        function mostrarImagen2() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+
+        // Mostrar la imagen
+        imagenMostrada2.style.display = 'block';
+        }
+
+        function ocultarImagen2() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada2.style.display = 'none';
+        }
+    </script>
+ 
     </form>
 </div>
 

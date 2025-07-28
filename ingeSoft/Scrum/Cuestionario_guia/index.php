@@ -1,11 +1,11 @@
 <?php
-for ($i = 1; $i <= 230; $i++) {
+for ($i = 1; $i <= 250; $i++) {
     ${"respuesta_" . $i} = '';
 }
 
 
      
-for ($i = 1; $i <= 230; $i++) {
+for ($i = 1; $i <= 250; $i++) {
     ${"verificar_" . $i} = '';
 }
 
@@ -28,7 +28,7 @@ if ($_POST) {
         $respuesta_10 = 'aplicar';
         $respuesta_11 = 'ajusten';
         $respuesta_12 = 'difieren';
-        $respuesta_13 = '42';
+        $respuesta_13 = 'marco de trabajo';
         $respuesta_14 = 'ayuda';
         $respuesta_15 = 'personas';
         $respuesta_16 = 'valor';
@@ -59,7 +59,7 @@ if ($_POST) {
         $respuesta_41 = 'necesarias';
         $respuesta_42 = 'implementar';
         $respuesta_43 = 'teoria';
-        $respuesta_44 = '192';
+        $respuesta_44 = 'inteligencia colectiva';
         $respuesta_45 = 'personas';
         $respuesta_46 = 'utilizan';
         $respuesta_47 = 'instrucciones detalladas';
@@ -245,55 +245,30 @@ if ($_POST) {
         $respuesta_227 = 'necesidades';
         $respuesta_228 = 'Product Backlog';
         $respuesta_229 = 'intentando convencer';
-        $respuesta_230 = '250';
-        
-        // Marcar todas como correctas
-        $verificar_1 = $verificar_2 = $verificar_3 = $verificar_4 = $verificar_5 = 
-        $verificar_6 = $verificar_7 = $verificar_8 = $verificar_9 = $verificar_10 = 
-        $verificar_11 = $verificar_12 = $verificar_13 = $verificar_14 = $verificar_15 = 
-        $verificar_16 = $verificar_17 = $verificar_18 = $verificar_19 = $verificar_20 = 
-        $verificar_21 = $verificar_22 = $verificar_23 = $verificar_24 = $verificar_25 = 
-        $verificar_26 = $verificar_27 = $verificar_28 = $verificar_29 = $verificar_30 = 
-        $verificar_31 = $verificar_32 = $verificar_33 = $verificar_34 = $verificar_35 = 
-        $verificar_36 = $verificar_37 = $verificar_38 = $verificar_39 = $verificar_40 = 
-        $verificar_41 = $verificar_42 = $verificar_43 = $verificar_44 = $verificar_45 = 
-        $verificar_46 = $verificar_47 = $verificar_48 = $verificar_49 = $verificar_50 = 
-        $verificar_51 = $verificar_52 = $verificar_53 = $verificar_54 = $verificar_55 = 
-        $verificar_56 = $verificar_57 = $verificar_58 = $verificar_59 = $verificar_60 = 
-        $verificar_61 = $verificar_62 = $verificar_63 = $verificar_64 = $verificar_65 = 
-        $verificar_66 = $verificar_67 = $verificar_68 = $verificar_69 = $verificar_70 = 
-        $verificar_71 = $verificar_72 = $verificar_73 = $verificar_74 = $verificar_75 = 
-        $verificar_76 = $verificar_77 = $verificar_78 = $verificar_79 = $verificar_80 = 
-        $verificar_81 = $verificar_82 = $verificar_83 = $verificar_84 = $verificar_85 = 
-        $verificar_86 = $verificar_87 = $verificar_88 = $verificar_89 = $verificar_90 = 
-        $verificar_91 = $verificar_92 = $verificar_93 = $verificar_94 = $verificar_95 = 
-        $verificar_96 = $verificar_97 = $verificar_98 = $verificar_99 = $verificar_100 = 
-        $verificar_101 = $verificar_102 = $verificar_103 = $verificar_104 = $verificar_105 = 
-        $verificar_106 = $verificar_107 = $verificar_108 = $verificar_109 = $verificar_110 = 
-        $verificar_111 = $verificar_112 = $verificar_113 = $verificar_114 = $verificar_115 = 
-        $verificar_116 = $verificar_117 = $verificar_118 = $verificar_119 = $verificar_120 = 
-        $verificar_121 = $verificar_122 = $verificar_123 = $verificar_124 = $verificar_125 = 
-        $verificar_126 = $verificar_127 = $verificar_128 = $verificar_129 = $verificar_130 = 
-        $verificar_131 = $verificar_132 = $verificar_133 = $verificar_134 = $verificar_135 = 
-        $verificar_136 = $verificar_137 = $verificar_138 = $verificar_139 = $verificar_140 = 
-        $verificar_141 = $verificar_142 = $verificar_143 = $verificar_144 = $verificar_145 = 
-        $verificar_146 = $verificar_147 = $verificar_148 = $verificar_149 = $verificar_150 = 
-        $verificar_151 = $verificar_152 = $verificar_153 = $verificar_154 = $verificar_155 = 
-        $verificar_156 = $verificar_157 = $verificar_158 = $verificar_159 = $verificar_160 = 
-        $verificar_161 = $verificar_162 = $verificar_163 = $verificar_164 = $verificar_165 = 
-        $verificar_166 = $verificar_167 = $verificar_168 = $verificar_169 = $verificar_170 = 
-        $verificar_171 = $verificar_172 = $verificar_173 = $verificar_174 = $verificar_175 = 
-        $verificar_176 = $verificar_177 = $verificar_178 = $verificar_179 = $verificar_180 = 
-        $verificar_181 = $verificar_182 = $verificar_183 = $verificar_184 = $verificar_185 = 
-        $verificar_186 = $verificar_187 = $verificar_188 = $verificar_189 = $verificar_190 = 
-        $verificar_191 = $verificar_192 = $verificar_193 = $verificar_194 = $verificar_195 = 
-        $verificar_196 = $verificar_197 = $verificar_198 = $verificar_199 = $verificar_200 = 
-        $verificar_201 = $verificar_202 = $verificar_203 = $verificar_204 = $verificar_205 = 
-        $verificar_206 = $verificar_207 = $verificar_208 = $verificar_209 = $verificar_210 = 
-        $verificar_211 = $verificar_212 = $verificar_213 = $verificar_214 = $verificar_215 = 
-        $verificar_216 = $verificar_217 = $verificar_218 = $verificar_219 = $verificar_220 = 
-        $verificar_221 = $verificar_222 = $verificar_223 = $verificar_224 = $verificar_225 = 
-        $verificar_226 = $verificar_227 = $verificar_228 = $verificar_229 = $verificar_230 = "correcto";
+        $respuesta_230 = 'desde entonces';
+        $respuesta_231 = 'pequeñas actualizaciones';
+        $respuesta_232 = 'elemento';
+        $respuesta_233 = 'marco de trabajo';
+        $respuesta_234 = 'esencial';  
+        $respuesta_235 = 'valor general'; 
+        $respuesta_236 = 'resultados obtenidos';
+        $respuesta_237 = 'medida';
+        $respuesta_238 = 'se utiliza';
+        $respuesta_239 = 'patrones';  
+        $respuesta_240 = 'enfoques';  
+        $respuesta_241 = 'pilares empiricos';
+        $respuesta_242 = 'responsable';
+        $respuesta_243 = 'personas del Scrum Team';
+        $respuesta_244 = 'comprometen';
+        $respuesta_245 = 'crear';
+        $respuesta_246 = 'depende';
+        $respuesta_247 = 'que las personas';
+        $respuesta_247 = 'vuelvan';
+
+        for ($i = 1; $i <= 250; $i++) {
+        ${"verificar_$i"} = "correcto";
+        }
+
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
    if ($respuesta_1 === '1990') {  
@@ -417,7 +392,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la segunda pregunta
     $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-    if ($respuesta_13 === '42') { 
+    if ($respuesta_13 === 'marco de trabajo') { 
         $verificar_13 = "correcto";
     } elseif ($respuesta_13 === '') {
         $verificar_13 = '';
@@ -716,7 +691,7 @@ if ($respuesta_43 === 'teoria') {
 }
 
  $respuesta_44 = isset($_POST['respuesta_44']) ? $_POST['respuesta_44'] : '';
-if ($respuesta_44 === '192') { 
+if ($respuesta_44 === 'inteligencia colectiva') { 
     $verificar_44 = "correcto";
 } elseif ($respuesta_44 === '') {
     $verificar_44 = '';
@@ -1267,7 +1242,7 @@ if ($respuesta_104 === 'riesgo') {
 }
 
  $respuesta_105 = isset($_POST['respuesta_105']) ? $_POST['respuesta_105'] : '';
-if ($respuesta_105 === '154') { 
+if ($respuesta_105 === 'trabajo') { 
     $verificar_105 = "correcto";
 } elseif ($respuesta_105 === '') {
     $verificar_105 = '';
@@ -1459,7 +1434,7 @@ if ($respuesta_125 === 'empoderadas') {
 }
 
 $respuesta_126 = isset($_POST['respuesta_126']) ? $_POST['respuesta_126'] : '';
-if ($respuesta_126 === 'aprenda') {  
+if ($respuesta_126 === 'se aprenda') {  
     $verificar_126 = "correcto";
 } elseif ($respuesta_126 === '') {
     $verificar_126 = '';
@@ -1477,7 +1452,7 @@ if ($respuesta_127 === 'inspeccion') {
 }
 
 $respuesta_128 = isset($_POST['respuesta_128']) ? $_POST['respuesta_128'] : '';
-if ($respuesta_128 === 'cinco') {  
+if ($respuesta_128 === 'cinco' || $respuesta_128 === '5') {  
     $verificar_128 = "correcto";
 } elseif ($respuesta_128 === '') {
     $verificar_128 = '';
@@ -1631,7 +1606,7 @@ if ($respuesta_144 === 'decisiones') {
 }
 
 $respuesta_145 = isset($_POST['respuesta_145']) ? $_POST['respuesta_145'] : '';
-if ($respuesta_145 === 'reforzar') {  
+if ($respuesta_145 === 'valores') {  
     $verificar_145 = "correcto";
 } elseif ($respuesta_145 === '') {
     $verificar_145 = '';
@@ -1820,7 +1795,7 @@ if ($respuesta_165 === 'completar') {
 }
 
 $respuesta_166 = isset($_POST['respuesta_166']) ? $_POST['respuesta_166'] : '';
-if ($respuesta_166 === 'trabajos') {  
+if ($respuesta_166 === 'trabajo') {  
     $verificar_166 = "correcto";
 } elseif ($respuesta_166 === '') {
     $verificar_166 = '';
@@ -2054,7 +2029,7 @@ if ($respuesta_191 === 'plan') {
 }
 
 $respuesta_192 = isset($_POST['respuesta_192']) ? $_POST['respuesta_192'] : '';
-if ($respuesta_192 === 'Sprint Backlog') {  
+if ($respuesta_192 === 'Sprint Backlog' || $respuesta_192 === 'sprint backlog') {  
     $verificar_192 = "correcto";
 } elseif ($respuesta_192 === '') {
     $verificar_192 = '';
@@ -2081,7 +2056,7 @@ if ($respuesta_194 === 'adherirse') {
 }
 
 $respuesta_195 = isset($_POST['respuesta_195']) ? $_POST['respuesta_195'] : '';
-if ($respuesta_195 === 'Definicion de Terminado' || $respuesta_195 === 'definicion de Terminado') {  
+if ($respuesta_195 === 'Definicion de Terminado' || $respuesta_195 === 'definicion de terminado') {  
     $verificar_195 = "correcto";
 } elseif ($respuesta_195 === '') {
     $verificar_195 = '';
@@ -2396,7 +2371,7 @@ if ($respuesta_229 === 'intentando convencer') {
 }
 
 $respuesta_230 = isset($_POST['respuesta_230']) ? $_POST['respuesta_230'] : '';
-if ($respuesta_230 === '250') {  
+if ($respuesta_230 === 'desde entonces') {  
     $verificar_230 = "correcto";
 } elseif ($respuesta_230 === '') {
     $verificar_230 = '';
@@ -2404,6 +2379,191 @@ if ($respuesta_230 === '250') {
     $verificar_230 = "incorrecto";
 }
 
+$respuesta_231 = isset($_POST['respuesta_231']) ? $_POST['respuesta_231'] : '';
+if ($respuesta_231 === 'pequeñas actualizaciones') {  
+    $verificar_231 = "correcto";
+} elseif ($respuesta_231 === '') {
+    $verificar_231 = '';
+} else {
+    $verificar_231 = "incorrecto";
+}
+
+
+
+$respuesta_232 = isset($_POST['respuesta_232']) ? $_POST['respuesta_232'] : '';
+if ($respuesta_232 === 'elemento') {  
+    $verificar_232 = "correcto";
+} elseif ($respuesta_232 === '') {
+    $verificar_232 = '';
+} else {
+    $verificar_232 = "incorrecto";
+}
+
+$respuesta_233 = isset($_POST['respuesta_233']) ? $_POST['respuesta_233'] : '';
+if ($respuesta_233 === 'marco de trabajo') {  
+    $verificar_233 = "correcto";
+} elseif ($respuesta_233 === '') {
+    $verificar_233 = '';
+} else {
+    $verificar_233 = "incorrecto";
+}
+
+$respuesta_234 = isset($_POST['respuesta_234']) ? $_POST['respuesta_234'] : '';
+if ($respuesta_234 === 'esencial') {  
+    $verificar_234 = "correcto";
+} elseif ($respuesta_234 === '') {
+    $verificar_234 = '';
+} else {
+    $verificar_234 = "incorrecto";
+}
+
+$respuesta_235 = isset($_POST['respuesta_235']) ? $_POST['respuesta_235'] : '';
+if ($respuesta_235 === 'valor general') {  
+    $verificar_235 = "correcto";
+} elseif ($respuesta_235 === '') {
+    $verificar_235 = '';
+} else {
+    $verificar_235 = "incorrecto";
+}
+
+$respuesta_236 = isset($_POST['respuesta_236']) ? $_POST['respuesta_236'] : '';
+if ($respuesta_236 === 'resultados obtenidos') {  
+    $verificar_236 = "correcto";
+} elseif ($respuesta_236 === '') {
+    $verificar_236 = '';
+} else {
+    $verificar_236 = "incorrecto";
+}
+
+ 
+ 
+
+$respuesta_237 = isset($_POST['respuesta_237']) ? $_POST['respuesta_237'] : '';
+if ($respuesta_237 === 'medida') {  
+    $verificar_237 = "correcto";
+} elseif ($respuesta_237 === '') {
+    $verificar_237 = '';
+} else {
+    $verificar_237 = "incorrecto";
+}
+
+$respuesta_238 = isset($_POST['respuesta_238']) ? $_POST['respuesta_238'] : '';
+if ($respuesta_238 === 'se utiliza') {  
+    $verificar_238 = "correcto";
+} elseif ($respuesta_238 === '') {
+    $verificar_238 = '';
+} else {
+    $verificar_238 = "incorrecto";
+}
+
+$respuesta_239 = isset($_POST['respuesta_239']) ? $_POST['respuesta_239'] : '';
+if ($respuesta_239 === 'patrones') {  
+    $verificar_239 = "correcto";
+} elseif ($respuesta_239 === '') {
+    $verificar_239 = '';
+} else {
+    $verificar_239 = "incorrecto";
+}
+
+$respuesta_240 = isset($_POST['respuesta_240']) ? $_POST['respuesta_240'] : '';
+if ($respuesta_240 === 'enfoques') {  
+    $verificar_240 = "correcto";
+} elseif ($respuesta_240 === '') {
+    $verificar_240 = '';
+} else {
+    $verificar_240 = "incorrecto";
+}
+
+$respuesta_241 = isset($_POST['respuesta_241']) ? $_POST['respuesta_241'] : '';
+if ($respuesta_241 === 'pilares empiricos') {  
+    $verificar_241 = "correcto";
+} elseif ($respuesta_241 === '') {
+    $verificar_241 = '';
+} else {
+    $verificar_241 = "incorrecto";
+}
+
+$respuesta_242 = isset($_POST['respuesta_242']) ? $_POST['respuesta_242'] : '';
+if ($respuesta_242 === 'responsable') {  
+    $verificar_242 = "correcto";
+} elseif ($respuesta_242 === '') {
+    $verificar_242 = '';
+} else {
+    $verificar_242 = "incorrecto";
+}
+
+$respuesta_243 = isset($_POST['respuesta_243']) ? $_POST['respuesta_243'] : '';
+if ($respuesta_243 === 'personas del Scrum Team'  || $respuesta_243 === 'personas del scrum team') {  
+    $verificar_243 = "correcto";
+} elseif ($respuesta_243 === '') {
+    $verificar_243 = '';
+} else {
+    $verificar_243 = "incorrecto";
+}
+
+$respuesta_244 = isset($_POST['respuesta_244']) ? $_POST['respuesta_244'] : '';
+if ($respuesta_244 === 'comprometen' ) {  
+    $verificar_244 = "correcto";
+} elseif ($respuesta_244 === '') {
+    $verificar_244 = '';
+} else {
+    $verificar_244 = "incorrecto";
+}
+
+$respuesta_245 = isset($_POST['respuesta_245']) ? $_POST['respuesta_245'] : '';
+if ($respuesta_245 === 'crear' ) {   
+    $verificar_245 = "correcto";
+} elseif ($respuesta_245 === '') {
+    $verificar_245 = '';
+} else {
+    $verificar_245 = "incorrecto";
+}
+
+$respuesta_246 = isset($_POST['respuesta_246']) ? $_POST['respuesta_246'] : '';
+if ($respuesta_246 === 'depende') {   
+    $verificar_246 = "correcto";
+} elseif ($respuesta_246 === '') {
+    $verificar_246 = '';
+} else {
+    $verificar_246 = "incorrecto";
+}
+
+$respuesta_247 = isset($_POST['respuesta_247']) ? $_POST['respuesta_247'] : '';
+if ($respuesta_247 === 'que las personas') {   
+    $verificar_247 = "correcto";
+} elseif ($respuesta_247 === '') {
+    $verificar_247 = '';
+} else {
+    $verificar_247 = "incorrecto";
+}
+
+$respuesta_248 = isset($_POST['respuesta_248']) ? $_POST['respuesta_248'] : '';
+if ($respuesta_248 === 'vuelvan') {  
+    $verificar_248 = "correcto";
+} elseif ($respuesta_248 === '') {
+    $verificar_248 = '';
+} else {
+    $verificar_248 = "incorrecto";
+}
+
+$respuesta_249 = isset($_POST['respuesta_249']) ? $_POST['respuesta_249'] : '';
+if ($respuesta_249 === '23434232') {  
+    $verificar_249 = "correcto";
+} elseif ($respuesta_249 === '') {
+    $verificar_249 = '';
+} else {
+    $verificar_249 = "incorrecto";
+}
+
+$respuesta_250 = isset($_POST['respuesta_250']) ? $_POST['respuesta_250'] : '';
+if ($respuesta_250 === '23434232') {  
+    $verificar_250 = "correcto";
+} elseif ($respuesta_250 === '') {
+    $verificar_250 = '';
+} else {
+    $verificar_250 = "incorrecto";
+}
+   
 }
 }
 ?>
@@ -2414,7 +2574,7 @@ if ($respuesta_230 === '250') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
     <link rel="stylesheet" href="../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../style.css"> 
+    <link rel="stylesheet" href="../../../style_2_0.css"> 
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
@@ -2426,7 +2586,7 @@ if ($respuesta_230 === '250') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 390vh;
+    height: 450vh;
     }
 </style>
  
@@ -2697,8 +2857,11 @@ function ocultarMensaje4() {
     
 </head>
 <body> 
+
+<form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+<div class="form-container">
 <div class="seccion izquierda">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    
     <h2>Propósito de la Guía Scrum</h2>
 
     <p>
@@ -2708,13 +2871,26 @@ function ocultarMensaje4() {
     en 
     <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="4">
     para ayudar a las personas de todo el mundo a comprender Scrum. Hemos desarrollado la Guía
-    desde entonces a través de pequeñas actualizaciones funcionales. Juntos, la respaldamos.
+    <input type="text" name="respuesta_230" value="<?php echo $respuesta_230; ?>" size="12">
+    a través de 
+    <input type="text" name="respuesta_231" value="<?php echo $respuesta_231; ?>" size="24">
+    funcionales. Juntos, la respaldamos.
     </p>
 
     <p>
-    La Guía de Scrum contiene la definición de Scrum. Cada elemento del marco de trabajo tiene un
+    La Guía de Scrum contiene la definición de Scrum. Cada 
+    <input type="text" name="respuesta_232" value="<?php echo $respuesta_232; ?>" size="9">
+    del 
+    <input type="text" name="respuesta_233" value="<?php echo $respuesta_233; ?>" size="13">
+    tiene un
     <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="9">
-    específico que es esencial para el valor general y los resultados obtenidos con Scrum. 
+    específico que es 
+    <input type="text" name="respuesta_234" value="<?php echo $respuesta_234; ?>" size="9">
+    para el 
+    <input type="text" name="respuesta_235" value="<?php echo $respuesta_235; ?>" size="13">
+    y los 
+    <input type="text" name="respuesta_236" value="<?php echo $respuesta_236; ?>" size="17">
+    con Scrum. 
     <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="9">
     el diseño o las ideas esenciales de Scrum, omitir elementos o no seguir las reglas de Scrum, 
     <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="9">
@@ -2732,17 +2908,24 @@ function ocultarMensaje4() {
     esencialmente complejo, más allá del desarrollo de productos de software donde Scrum tiene sus raíces.
     A medida que se extiende el uso de Scrum, los desarrolladores, investigadores, analistas, científicos y
     otros especialistas hacen el trabajo. Usamos la palabra "
-    <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="9">
+    <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="13">
     " en Scrum no para excluir, sino
     para simplificar. Si obtiene valor de Scrum, considérese incluido.
     </p>
 
     <p>
-    A medida que se utiliza Scrum, se pueden 
+    A 
+    <input type="text" name="respuesta_237" value="<?php echo $respuesta_237; ?>" size="9">
+      que 
+    <input type="text" name="respuesta_238" value="<?php echo $respuesta_238; ?>" size="9">
+      Scrum, se pueden 
     <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="9">
     , 
-    <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="9"> y
-     y diseñar patrones, procesos y enfoques
+    <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="9"> 
+    y diseñar 
+    <input type="text" name="respuesta_239" value="<?php echo $respuesta_239; ?>" size="9">
+     , procesos y 
+    <input type="text" name="respuesta_240" value="<?php echo $respuesta_240; ?>" size="9">
     que se 
     <input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="9"> 
     al marco de trabajo Scrum como se describe en este documento. Su descripción va más
@@ -2755,17 +2938,28 @@ function ocultarMensaje4() {
     <button type="submit">Enviar</button> 
     <?php echo $verificar_1 ?>
     <?php echo $verificar_2 ?>
+    <?php echo $verificar_230 ?>
+    <?php echo $verificar_231 ?>
+    <?php echo $verificar_232 ?>
+    <?php echo $verificar_233 ?>
     <?php echo $verificar_3 ?>
+    <?php echo $verificar_234 ?>
+    <?php echo $verificar_235 ?>
+    <?php echo $verificar_236 ?>  
     <?php echo $verificar_4 ?>
     <?php echo $verificar_5 ?>
     <?php echo $verificar_6 ?>
     <?php echo $verificar_7 ?>  
     <?php echo $verificar_8 ?>
+    <?php echo $verificar_237 ?>
+    <?php echo $verificar_238 ?>  
     <?php echo $verificar_9 ?>
     <?php echo $verificar_10 ?>
+    <?php echo $verificar_239 ?> 
+    <?php echo $verificar_240 ?>   
     <?php echo $verificar_11 ?> 
     <?php echo $verificar_12 ?>
-
+     
     <hr>
     <h2>Definición de Scrum</h2>
 
@@ -2846,6 +3040,7 @@ function ocultarMensaje4() {
 <?php echo $verificar_22 ?>
 <?php echo $verificar_23 ?>
 <?php echo $verificar_24 ?>
+<br><br>
 <?php echo $verificar_25 ?>
 <?php echo $verificar_26 ?>
 <?php echo $verificar_27 ?>
@@ -2895,8 +3090,7 @@ function ocultarMensaje4() {
     <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="8">
     , solo 
     <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="8">
-    define las
-    partes 
+    las partes 
     <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="8">
     para 
     <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="8">
@@ -2938,6 +3132,29 @@ function ocultarMensaje4() {
     </p>
 
 
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_37 ?>
+    <?php echo $verificar_38 ?>
+    <?php echo $verificar_39 ?>
+    <?php echo $verificar_40 ?>
+    <?php echo $verificar_41 ?>
+    <?php echo $verificar_42 ?>
+    <?php echo $verificar_43 ?>
+    <?php echo $verificar_44 ?>
+    <?php echo $verificar_45 ?>
+    <?php echo $verificar_46 ?>
+    <?php echo $verificar_47 ?>
+    <?php echo $verificar_48 ?>
+    <?php echo $verificar_49 ?>
+    <?php echo $verificar_50 ?>
+    <?php echo $verificar_51 ?>
+    <?php echo $verificar_52 ?>
+    <?php echo $verificar_53 ?>
+    <?php echo $verificar_54 ?>
+    <?php echo $verificar_55 ?>
+    <?php echo $verificar_56 ?>
+
+    <hr>
     <h3>Teoría de Scrum</h3>
 
     <p>
@@ -3054,7 +3271,48 @@ function ocultarMensaje4() {
     </script>
 
 
-
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_58 ?>
+    <?php echo $verificar_59 ?>
+    <?php echo $verificar_60 ?>
+    <?php echo $verificar_61 ?>
+    <?php echo $verificar_62 ?>
+    <?php echo $verificar_63 ?>
+    <?php echo $verificar_64 ?>
+    <?php echo $verificar_65 ?>
+    <?php echo $verificar_66 ?>
+    <?php echo $verificar_67 ?>
+    <?php echo $verificar_68 ?>
+    <?php echo $verificar_69 ?>
+    <br>
+    <?php echo $verificar_70 ?>
+    <?php echo $verificar_71 ?>
+    <?php echo $verificar_72 ?>
+    <?php echo $verificar_73 ?>
+    <?php echo $verificar_74 ?>
+    <?php echo $verificar_75 ?>
+    <?php echo $verificar_76 ?>
+    <?php echo $verificar_77 ?>
+    <?php echo $verificar_78 ?>
+    <?php echo $verificar_79 ?>
+    <?php echo $verificar_80 ?>
+    <br>
+    <?php echo $verificar_81 ?>
+    <?php echo $verificar_82 ?>
+    <?php echo $verificar_83 ?>
+    <?php echo $verificar_84 ?>
+    <?php echo $verificar_85 ?>
+    <?php echo $verificar_86 ?>
+    <?php echo $verificar_87 ?>
+    <?php echo $verificar_88 ?>
+    <br>
+    <?php echo $verificar_89 ?>
+    <?php echo $verificar_90 ?>
+    <?php echo $verificar_91 ?>
+    <?php echo $verificar_92 ?>
+    <?php echo $verificar_93 ?>
+    <?php echo $verificar_94 ?>
+    <?php echo $verificar_95 ?>
     <hr>
 
     <h2><input type="text"  value="<?php echo $respuesta_93; ?>" size="10" readonly></h2>
@@ -3069,19 +3327,19 @@ function ocultarMensaje4() {
     tanto para quienes 
     <input type="text" name="respuesta_99" value="<?php echo $respuesta_99; ?>" size="10">
     el 
-    <input type="text" name="respuesta_100" value="<?php echo $respuesta_100; ?>" size="10">
-    trabajo como para
+    <input type="text" name="respuesta_105" value="<?php echo $respuesta_105; ?>" size="10">
+    como para
     quienes lo 
-    <input type="text" name="respuesta_101" value="<?php echo $respuesta_101; ?>" size="10">
+    <input type="text" name="respuesta_100" value="<?php echo $respuesta_100; ?>" size="10">
     . Con Scrum, las decisiones importantes se basan en el 
-    <input type="text" name="respuesta_102" value="<?php echo $respuesta_102; ?>" size="10">
+    <input type="text" name="respuesta_101" value="<?php echo $respuesta_101; ?>" size="10">
     percibido de sus 
-    <input type="text" name="respuesta_103" value="<?php echo $respuesta_103; ?>" size="10">
+    <input type="text" name="respuesta_102" value="<?php echo $respuesta_102; ?>" size="10">
     artefactos formales. Los artefactos que tienen poca transparencia pueden llevar a decisiones que
     disminuyan el 
-    <input type="text" name="respuesta_104" value="<?php echo $respuesta_104; ?>" size="10">
+    <input type="text" name="respuesta_103" value="<?php echo $respuesta_103; ?>" size="10">
     y aumenten el 
-    <input type="text" name="respuesta_105" value="<?php echo $respuesta_105; ?>" size="10">
+    <input type="text" name="respuesta_104" value="<?php echo $respuesta_104; ?>" size="10">
     .
     </p> 
 
@@ -3097,6 +3355,21 @@ function ocultarMensaje4() {
     es engañosa y derrochadora.
     </p>
 
+
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_96 ?>
+    <?php echo $verificar_97 ?>
+    <?php echo $verificar_98 ?> 
+    <?php echo $verificar_99 ?>
+    <?php echo $verificar_100 ?>
+    <?php echo $verificar_101 ?>
+    <?php echo $verificar_102 ?>
+    <?php echo $verificar_103 ?>
+    <?php echo $verificar_104 ?>
+    <?php echo $verificar_105 ?>
+    <?php echo $verificar_106 ?>
+    <?php echo $verificar_107 ?>
+    <hr>
     <h2> <input type="text" value="<?php echo $respuesta_94; ?>" size="10" readonly></h2>
 
     <p>
@@ -3128,6 +3401,17 @@ function ocultarMensaje4() {
     están diseñados para provocar cambios.
     </p>
 
+
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_108 ?>
+    <?php echo $verificar_109 ?>
+    <?php echo $verificar_110 ?>
+    <?php echo $verificar_111 ?>
+    <?php echo $verificar_112 ?>
+    <?php echo $verificar_113 ?>
+    <?php echo $verificar_114 ?>
+    <?php echo $verificar_115 ?>
+    <hr>
     <h2> <input type="text"  value="<?php echo $respuesta_95; ?>" size="10"></h2>
 
     <p>
@@ -3165,19 +3449,37 @@ function ocultarMensaje4() {
     .
     </p>
     <button type="submit">Enviar</button>
-    </form>
+    <?php echo $verificar_116 ?>
+    <?php echo $verificar_117 ?>
+    <?php echo $verificar_118 ?>
+    <?php echo $verificar_119 ?>
+    <?php echo $verificar_120 ?>
+    <?php echo $verificar_121 ?>
+    <?php echo $verificar_122 ?>
+    <?php echo $verificar_123 ?>
+    <?php echo $verificar_124 ?>
+    <?php echo $verificar_125 ?>
+    <?php echo $verificar_126 ?>
+    <?php echo $verificar_127 ?>
+    <hr>
+ 
 </div>
 
 
 
 
 <div class="seccion derecha">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    
+     
     <h2>Valores de Scrum</h2>
     
     <p>
-    El uso exitoso de Scrum depende de que las personas se vuelvan más competentes en vivir 
+    El uso exitoso de Scrum 
+    <input type="text" name="respuesta_246" value="<?php echo $respuesta_246; ?>" size="10">
+     de 
+    <input type="text" name="respuesta_247" value="<?php echo $respuesta_247; ?>" size="12">
+      se 
+      <input type="text" name="respuesta_248" value="<?php echo $respuesta_248; ?>" size="8">
+      más competentes en vivir 
     <input type="text" name="respuesta_128" value="<?php echo $respuesta_128; ?>" size="10">
     valores: 
     <input type="text" name="respuesta_129" value="<?php echo $respuesta_129; ?>" size="10">,
@@ -3234,9 +3536,37 @@ function ocultarMensaje4() {
     Scrum. Cuando el 
     <input type="text"  value="<?php echo $respuesta_142; ?>" size="10" readonly>
     y las personas con las que trabajan 
-    incorporan estos valores, los pilares empíricos de Scrum de transparencia, inspección y
+    incorporan estos valores, los 
+    <input type="text" name="respuesta_241" value="<?php echo $respuesta_241; ?>" size="17">
+    de Scrum de transparencia, inspección y
     adaptación cobran vida y generan confianza.
     </p>
+
+    <button type="submit">Enviar</button>     
+    <?php echo $verificar_246 ?>
+    <?php echo $verificar_247 ?>
+    <?php echo $verificar_248 ?>
+    <?php echo $verificar_129 ?>
+    <?php echo $verificar_130 ?>
+    <?php echo $verificar_131 ?>
+    <?php echo $verificar_132 ?>
+    <?php echo $verificar_133 ?>
+    <?php echo $verificar_134 ?>
+    <?php echo $verificar_135 ?>
+    <?php echo $verificar_136 ?>
+    <?php echo $verificar_137 ?>
+    <?php echo $verificar_138 ?>
+    <?php echo $verificar_139 ?>
+    <?php echo $verificar_140 ?>
+    <?php echo $verificar_141 ?>
+    <?php echo $verificar_142 ?>
+    <?php echo $verificar_143 ?>
+    <?php echo $verificar_144 ?>
+    <?php echo $verificar_145 ?>
+    <?php echo $verificar_146 ?>
+    <?php echo $verificar_147 ?>
+    <?php echo $verificar_241 ?>
+    <hr>
 
     <h2>Scrum Team</h2>
     <p>
@@ -3263,7 +3593,7 @@ function ocultarMensaje4() {
     </p>
     <p>
     Los Scrum Teams son 
-    <input type="text" name="respuesta_157" value="<?php echo $respuesta_157; ?>" size="9">
+    <input type="text" name="respuesta_157" value="<?php echo $respuesta_157; ?>" size="12">
     , lo que significa que los miembros tienen todas las 
     <input type="text" name="respuesta_158" value="<?php echo $respuesta_158; ?>" size="9">
     necesarias para crear 
@@ -3285,7 +3615,7 @@ function ocultarMensaje4() {
     y lo suficientemente grande
     como para 
     <input type="text" name="respuesta_165" value="<?php echo $respuesta_165; ?>" size="9">
-    +un 
+    un 
     <input type="text" name="respuesta_166" value="<?php echo $respuesta_166; ?>" size="9">
     significativo dentro de un 
     <input type="text" name="respuesta_167" value="<?php echo $respuesta_167; ?>" size="9">
@@ -3316,8 +3646,44 @@ function ocultarMensaje4() {
     
     </p>
     
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_148 ?>
+    <?php echo $verificar_149 ?>
+    <?php echo $verificar_150 ?>
+    <?php echo $verificar_151 ?>
+    <?php echo $verificar_152 ?>
+    <?php echo $verificar_153 ?>
+    <?php echo $verificar_154 ?>
+    <?php echo $verificar_155 ?>
+    <?php echo $verificar_156 ?>
+    <?php echo $verificar_157 ?>
+    <?php echo $verificar_158 ?>
+    <?php echo $verificar_159 ?>
+    <?php echo $verificar_160 ?>
+    <?php echo $verificar_161 ?>
+    <?php echo $verificar_162 ?>
+    <?php echo $verificar_163 ?>
+    <?php echo $verificar_164 ?>
+    <?php echo $verificar_165 ?>
+    <?php echo $verificar_166 ?>
+    <?php echo $verificar_167 ?>
+    <?php echo $verificar_168 ?>
+    <?php echo $verificar_169 ?>
+    <?php echo $verificar_170 ?>
+    <?php echo $verificar_171 ?>
+    <?php echo $verificar_172 ?>
+    <?php echo $verificar_173 ?>
+    <?php echo $verificar_174 ?>
+    <?php echo $verificar_175 ?>
+    <?php echo $verificar_176 ?>
+    <?php echo $verificar_177 ?>
+    <?php echo $verificar_178 ?>
+    <hr>
+
     <p>
-    El Scrum Team es responsable de todas las 
+    El Scrum Team es 
+    <input type="text" name="respuesta_242" value="<?php echo $respuesta_242; ?>" size="9">
+    de todas las 
     <input type="text" name="respuesta_179" value="<?php echo $respuesta_179; ?>" size="9">
     relacionadas con el 
     <input type="text" name="respuesta_180" value="<?php echo $respuesta_180; ?>" size="9">
@@ -3344,12 +3710,30 @@ function ocultarMensaje4() {
     tres responsabilidades específicas dentro del Scrum Team: los Developers, el Product Owner y el Scrum
     Master.
     </p>
-
+    
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_242 ?>
+    <?php echo $verificar_179 ?>
+    <?php echo $verificar_180 ?>
+    <?php echo $verificar_181 ?>
+    <?php echo $verificar_182 ?>
+    <?php echo $verificar_183 ?>
+    <?php echo $verificar_184 ?>
+    <?php echo $verificar_185 ?>
+    <?php echo $verificar_186 ?>
+    <?php echo $verificar_187 ?>
+    <hr>
 
 
     <h2><input type="text"  value="<?php echo $respuesta_151; ?>" size="9"></h2>
     <p>
-    Las personas del Scrum Team que se comprometen a crear cualquier aspecto de un 
+    Las 
+    <input type="text" name="respuesta_243" value="<?php echo $respuesta_243; ?>" size="22">
+    que se 
+    <input type="text" name="respuesta_244" value="<?php echo $respuesta_244; ?>" size="8">
+      a 
+    <input type="text" name="respuesta_245" value="<?php echo $respuesta_245; ?>" size="8">
+      cualquier aspecto de un 
     <input type="text" name="respuesta_188" value="<?php echo $respuesta_188; ?>" size="9">
     utilizable
     en cada 
@@ -3389,7 +3773,24 @@ function ocultarMensaje4() {
     mutuamente como profesionales.</li>
     </ul>
 
-    <h2>Product Owner</h2>
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_243 ?>
+    <?php echo $verificar_244 ?>
+    <?php echo $verificar_245 ?>
+    <?php echo $verificar_188 ?>
+    <?php echo $verificar_189 ?>
+    <?php echo $verificar_190 ?>
+    <?php echo $verificar_191 ?>
+    <?php echo $verificar_192 ?>
+    <?php echo $verificar_193 ?>
+    <?php echo $verificar_194 ?>
+    <?php echo $verificar_195 ?>
+    <?php echo $verificar_196 ?>
+    <?php echo $verificar_197 ?>
+    <?php echo $verificar_198 ?>
+    <hr>
+
+    <h2><input type="text"  value="<?php echo $respuesta_150; ?>" size="12"></h2>
     <p>
     El Product Owner es responsable de 
     <input type="text" name="respuesta_199" value="<?php echo $respuesta_199; ?>" size="10">
@@ -3425,7 +3826,7 @@ function ocultarMensaje4() {
     claramente los 
     <input type="text" name="respuesta_209" value="<?php echo $respuesta_209; ?>" size="9"> 
     del 
-    <input type="text" name="respuesta_210" value="<?php echo $respuesta_210; ?>" size="9"> 
+    <input type="text" name="respuesta_210" value="<?php echo $respuesta_210; ?>" size="12"> 
     ;</li>
     <li>
     <input type="text" name="respuesta_211" value="<?php echo $respuesta_211; ?>" size="9">     
@@ -3449,13 +3850,39 @@ function ocultarMensaje4() {
     El Product Owner puede realizar el trabajo anterior o puede 
     <input type="text" name="respuesta_218" value="<?php echo $respuesta_218; ?>" size="9">
     la 
-    <input type="text" name="respuesta_219" value="<?php echo $respuesta_219; ?>" size="9">
+    <input type="text" name="respuesta_219" value="<?php echo $respuesta_219; ?>" size="12">
     en otros.
     Independientemente de ello, el Product Owner sigue siendo el 
     <input type="text" name="respuesta_220" value="<?php echo $respuesta_220; ?>" size="9">
     de que el trabajo se realice.
     </p>
   
+
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_199 ?>
+    <?php echo $verificar_200 ?>
+    <?php echo $verificar_201 ?>
+    <?php echo $verificar_202 ?>
+    <?php echo $verificar_203 ?>
+    <?php echo $verificar_204 ?>
+    <?php echo $verificar_205 ?>
+    <?php echo $verificar_206 ?>
+    <?php echo $verificar_207 ?>
+    <?php echo $verificar_208 ?>
+    <?php echo $verificar_209 ?>
+    <?php echo $verificar_210 ?>
+    <?php echo $verificar_211 ?>
+    <?php echo $verificar_212 ?>
+    <?php echo $verificar_213 ?>
+    <?php echo $verificar_214 ?>
+    <?php echo $verificar_215 ?>
+    <?php echo $verificar_216 ?>
+    <?php echo $verificar_217 ?>
+    <?php echo $verificar_218 ?>
+    <?php echo $verificar_219 ?>
+    <?php echo $verificar_220 ?>
+    
+    <hr>
     <p>
     Para que los Product Owners tengan éxito, toda la organización debe 
     <input type="text" name="respuesta_221" value="<?php echo $respuesta_221; ?>" size="9">
@@ -3463,7 +3890,7 @@ function ocultarMensaje4() {
     <input type="text" name="respuesta_222" value="<?php echo $respuesta_222; ?>" size="9">
     . Estas
     decisiones son visibles en el contenido y el orden del 
-    <input type="text" name="respuesta_223" value="<?php echo $respuesta_223; ?>" size="9">
+    <input type="text" name="respuesta_223" value="<?php echo $respuesta_223; ?>" size="12">
     , y a través del 
     <input type="text" name="respuesta_224" value="<?php echo $respuesta_224; ?>" size="9">
     
@@ -3479,14 +3906,89 @@ function ocultarMensaje4() {
     <input type="text" name="respuesta_227" value="<?php echo $respuesta_227; ?>" size="9">
     de
     muchos interesados en el 
-    <input type="text" name="respuesta_228" value="<?php echo $respuesta_228; ?>" size="9">
+    <input type="text" name="respuesta_228" value="<?php echo $respuesta_228; ?>" size="12">
     . Aquellos que quieran cambiar el Product Backlog pueden
     hacerlo 
     <input type="text" name="respuesta_229" value="<?php echo $respuesta_229; ?>" size="18">
     al Product Owner.
     </p>
 
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_221 ?>
+    <?php echo $verificar_222 ?>
+    <?php echo $verificar_223 ?>
+    <?php echo $verificar_224 ?>
+    <?php echo $verificar_225 ?>
+    <?php echo $verificar_226 ?>
+    <?php echo $verificar_227 ?>
+    <?php echo $verificar_228 ?>
+    <?php echo $verificar_229 ?>
+    <?php echo $verificar_230 ?>
 
+
+    <button onmousedown="mostrarImagen2()" onmouseup="ocultarImagen2()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada2" src="../../../img/incremento.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen2() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+
+        // Mostrar la imagen
+        imagenMostrada2.style.display = 'block';
+        }
+
+        function ocultarImagen2() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada2.style.display = 'none';
+        }
+    </script>
+
+    <button onmousedown="mostrarImagen()" onmouseup="ocultarImagen()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada" src="../../../img/producBack.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen() {
+        var imagenMostrada = document.getElementById('imagenMostrada');
+
+        // Mostrar la imagen
+        imagenMostrada.style.display = 'block';
+        }
+
+        function ocultarImagen() {
+        var imagenMostrada = document.getElementById('imagenMostrada');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada.style.display = 'none';
+        }
+    </script>
+
+    <button onmousedown="mostrarImagen3()" onmouseup="ocultarImagen3()">resumen</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada3" src="../../../img/resumen.png" style="display: none; max-width: 100%" width="460">
+
+    <script>
+        function mostrarImagen3() {
+        var imagenMostrada3 = document.getElementById('imagenMostrada3');
+
+        // Mostrar la imagen
+        imagenMostrada3.style.display = 'block';
+        }
+
+        function ocultarImagen3() {
+        var imagenMostrada3 = document.getElementById('imagenMostrada3');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada3.style.display = 'none';
+        }
+    </script>
+  
     <hr>
     <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
     <br>
@@ -3494,9 +3996,10 @@ function ocultarMensaje4() {
     <button type="submit"   >Mostrar Solución</button>
         
 
-    </form>
+    
 </div>
-
+</div>
+</form>
 <div class="centered-container">
     <a
         name="siguiente"

@@ -7,7 +7,7 @@ $sentenciaSQL = $conexion->prepare("SELECT * FROM libros WHERE categoria = 'prin
 $sentenciaSQL->execute();
 $listaLibros = $sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
 
-$links = ["discretas/menu.php", "ingesoft/Menu.php",  "Ingles/Menu.php", 
+$links = ["arquitecturaComputadores/Menu.php","discretas/menu.php", "ingesoft/Menu.php",  "Ingles/Menu.php", 
          "java/index.php", "Matematicas/Menu.php", "musica/CM.php", 
          "operaciones_basicas/index.php", "scala/Menu.php", "SistemaDatos/Menu.php"];
 

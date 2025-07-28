@@ -1136,7 +1136,7 @@ if ($respuesta_110 === '264') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 445vh;
+    height: 400vh;
     }
 </style>
  
@@ -1473,6 +1473,124 @@ sospechábamos por nuestro trabajo numérico en la Sección 8.1.</p>
 \]
 </p>
 
+
+
+
+
+    <hr>
+
+<p>
+Cuando te dan una condición inicial, como \( x(0) = 10 \), te están diciendo:
+</p>
+
+<blockquote>
+“Encuentra el valor específico de la constante de integración \( C \) que hace que la solución cumpla esa condición.”
+</blockquote>
+
+
+    <hr>
+    <h3>Problema 8.2 (a)</h3>
+<p>Resuelva la siguiente ecuación diferencial usando la condición inicial dada:</p>
+<p><strong>\( \dot{x} = -0.9x,\quad x(0) = 75 \)</strong></p>
+
+<h4>Solución:</h4>
+<ol>
+  <li>
+    <strong>Escribir la ecuación en notación de Leibniz:</strong><br>
+    \( \frac{dx}{dt} = -0.9x \)
+  </li>
+  <li>
+    <strong>Separar variables:</strong><br>
+    \( \frac{1}{x} dx = -0.9 \, dt \)
+  </li>
+  <li>
+    <strong>Integrar ambos lados:</strong><br>
+    \( \int \frac{1}{x} dx = \int -0.9 \, dt \)<br>
+    \( \ln |x| = -0.9t + C \)
+  </li>
+  <li>
+    <strong>Eliminar el logaritmo:</strong><br>
+    \( |x| = e^{-0.9t + C} = e^C \cdot e^{-0.9t} \)<br>
+    Sea \( C' = e^C \), entonces:<br>
+    \( x(t) = C' e^{-0.9t} \)
+  </li>
+  <li>
+    <strong>Usar la condición inicial:</strong><br>
+    \( x(0) = C' = 75 \)<br>
+    Por lo tanto, \( C' = 75 \)
+  </li>
+</ol>
+
+<p><strong>Solución final:</strong></p>
+<p><strong>\( \boxed{x(t) = 75 e^{-0.9t}} \)</strong></p>
+
+    <hr>
+
+
+
+     <h2>Problema 8.2 (b)</h2>
+  <p>
+    Resolver la ecuación diferencial:
+    \[
+      \dot{x} = x^2,\quad x(0) = 10
+    \]
+  </p>
+
+  <h3>Solución paso a paso:</h3>
+
+  <ol>
+    <li>
+      Ecuación separable:
+      \[
+        \frac{dx}{dt} = x^2 \quad \Longrightarrow \quad \frac{dx}{x^2} = dt.
+      \]
+    </li>
+
+    <li>
+      Integrar ambos lados:
+      \[
+        \int \frac{dx}{x^2} = \int dt \quad \Longrightarrow \quad \int x^{-2} dx = \int dt.
+      \]
+      \[
+        -x^{-1} = t + C.
+      \]
+    </li>
+
+    <li>
+      Despejar \( x \):
+      \[
+        -\frac{1}{x} = t + C \quad \Longrightarrow \quad \frac{1}{x} = - (t + C)
+        \quad \Longrightarrow \quad x = \frac{1}{ - (t + C) }.
+      \]
+    </li>
+
+    <li>
+      Usar la condición inicial \( x(0) = 10 \):
+      \[
+        10 = \frac{1}{ -C } \quad \Longrightarrow \quad -C = \frac{1}{10} \quad \Longrightarrow \quad C = -\frac{1}{10}.
+      \]
+    </li>
+
+    <li>
+      Por lo tanto, la solución es:
+      \[
+        x(t) = \frac{1}{ - (t - \frac{1}{10}) } = -\frac{1}{ t - \frac{1}{10} }
+        = \frac{1}{ \frac{1}{10} - t }.
+      \]
+    </li>
+  </ol>
+
+  <h3>Solución final:</h3>
+  <p>
+    \[
+      \boxed{ x(t) = \frac{1}{ \frac{1}{10} - t } }.
+    \]
+  </p>
+  <hr>
+
+
+ 
+
     </form>
 </div>
 
@@ -1481,7 +1599,220 @@ sospechábamos por nuestro trabajo numérico en la Sección 8.1.</p>
 
 <div class="seccion derecha">
     <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-      
+         <h2>Problema 8.2 (c)</h2>
+  <p>
+    Resolver la ecuación diferencial:
+    \[
+      \dot{y} = \frac{t}{y}, \quad y(0) = 5.
+    \]
+  </p>
+
+  <h3>Solución paso a paso:</h3>
+
+  <ol>
+    <li>
+      Es una ecuación diferencial separable:
+      \[
+        \frac{dy}{dt} = \frac{t}{y} \quad \Longrightarrow \quad y\,dy = t\,dt.
+      \]
+    </li>
+
+    <li>
+      Integrar ambos lados:
+      \[
+        \int y\,dy = \int t\,dt.
+      \]
+      \[
+        \frac{y^2}{2} = \frac{t^2}{2} + C.
+      \]
+    </li>
+
+    <li>
+      Se puede multiplicar por 2 para despejar más claro:
+      \[
+        y^2 = t^2 + 2C.
+      \]
+      Pero como \(2C\) sigue siendo una constante arbitraria, se suele escribir simplemente:
+      \[
+        y^2 = t^2 + C.
+      \]
+    </li>
+
+    <li>
+      Aplicar la condición inicial:
+      \[
+        y(0) = 5 \Longrightarrow 5^2 = 0^2 + C \Longrightarrow 25 = C.
+      \]
+    </li>
+
+    <li>
+      Por lo tanto:
+      \[
+        y^2 = t^2 + 25 \quad \Longrightarrow \quad y(t) = \sqrt{t^2 + 25}.
+      \]
+
+      Se toma la raíz positiva porque \( y(0) = 5 > 0 \).
+    </li>
+  </ol>
+
+  <h3>Solución final:</h3>
+  <p>
+    \[
+      \boxed{ y(t) = \sqrt{t^2 + 25} }.
+    \]
+  </p>
+
+    <hr>
+
+      <h2>Problema 8.2 (d)</h2>
+  <p>
+    Resolver la ecuación diferencial:
+    \[
+      \dot{w} = \frac{w}{t}, \quad w(1) = 1.
+    \]
+  </p>
+
+  <h3>Solución paso a paso:</h3>
+
+  <ol>
+    <li>
+      Es una ecuación diferencial separable:
+      \[
+        \frac{dw}{dt} = \frac{w}{t} \quad \Longrightarrow \quad \frac{1}{w} dw = \frac{1}{t} dt.
+      \]
+    </li>
+
+    <li>
+      Integrar ambos lados:
+      \[
+        \int \frac{1}{w} dw = \int \frac{1}{t} dt.
+      \]
+      \[
+        \ln|w| = \ln|t| + C.
+      \]
+    </li>
+
+    <li>
+      Exponenciar para despejar \( w \):
+      \[
+        |w| = e^{\ln|t| + C} = e^{C} \cdot |t| = C |t|.
+      \]
+      Se llama a \( e^{C} \) simplemente \( C \) de nuevo, pues sigue siendo una constante arbitraria.
+    </li>
+
+    <li>
+      Como la condición inicial es positiva, se elimina el valor absoluto:
+      \[
+        w = C t.
+      \]
+    </li>
+
+    <li>
+      Usar la condición inicial:
+      \[
+        w(1) = 1 \Longrightarrow C \cdot 1 = 1 \Longrightarrow C = 1.
+      \]
+    </li>
+  </ol>
+
+  <h3>Solución final:</h3>
+  <p>
+    \[
+      \boxed{ w(t) = t }.
+    \]
+  </p>
+
+
+  <hr>
+  <h2>Problema 8.2 (e)</h2>
+  <p>
+    Resolver la ecuación diferencial:
+    \[
+      \dot{x} = \frac{t}{x + tx}, \quad x(0) = 4.
+    \]
+  </p>
+
+  <h3>Solución paso a paso:</h3>
+
+  <ol>
+    <li>
+      Escribimos la ecuación:
+      \[
+        \frac{dx}{dt} = \frac{t}{x(1 + t)}.
+      \]
+    </li>
+
+    <li>
+      Separar variables:
+      \[
+        x \frac{dx}{dt} = \frac{t}{1 + t} \Longrightarrow x\,dx = \frac{t}{1 + t} dt.
+      \]
+    </li>
+
+    <li>
+      Integrar ambos lados:
+      <br>
+      Lado izquierdo:
+      \[
+        \int x\,dx = \frac{1}{2} x^2.
+      \]
+      Lado derecho:
+      \[
+        \int \frac{t}{1+t} dt.
+      \]
+      Sustitución: \( u = 1 + t \implies du = dt, \, t = u - 1 \):
+      \[
+        \int \frac{t}{1+t} dt = \int \frac{u - 1}{u} du = \int \left(1 - \frac{1}{u}\right) du = u - \ln|u| + C.
+      \]
+      Volviendo:
+      \[
+        = (1 + t) - \ln(1 + t) + C.
+      \]
+    </li>
+
+    <li>
+      Igualamos:
+      \[
+        \frac{1}{2} x^2 = (1 + t) - \ln(1 + t) + C.
+      \]
+    </li>
+
+     <li>
+      Despejar \( x \):
+      \[
+        x^2 = 2[\,1 + t - \ln(1+t) + C\,]
+        \quad \Longrightarrow \quad
+        x(t) = \sqrt{\,2[\,1 + t - \ln(1+t) + C\,]\,}.
+      \]
+    </li>
+
+    <li>
+      Usar la condición inicial \( x(0) = 4 \):
+      \[
+        4 = \sqrt{\,2[\,1 - \ln(1) + C\,]} = \sqrt{\,2(1 + C)\,}
+        \Longrightarrow 16 = 2(1 + C) \Longrightarrow C = 7.
+      \]
+    </li>
+
+    <li>
+      Entonces la solución es:
+      \[
+        x(t) = \sqrt{\,2[\,1 + t - \ln(1+t) + 7\,]}
+        = \sqrt{\,2(t + 8 - \ln(1+t))\,}
+        = \sqrt{\,2t - 2\ln(1+t) + 16\,}.
+      \]
+    </li>
+  </ol>
+
+  <h3>Solución final:</h3>
+  <p>
+    \[
+      \boxed{ x(t) = \sqrt{\,2t - 2\ln(1+t) + 16\,} }.
+    \]
+  </p>
+  </ol>
+
+  <hr>
     </form>
 </div>
 
@@ -1490,7 +1821,7 @@ sospechábamos por nuestro trabajo numérico en la Sección 8.1.</p>
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="segundo.php"
+        href="tercero.php"
         role="button"
         width="50px"
         height="50px"
