@@ -1623,7 +1623,7 @@ return C {C = [cij] is the product of A and B}
         }
     </script>
 
-  <button onmousedown="mostrarImagen()" onmouseup="ocultarImagen()">Ayuda</button>
+    <button onmousedown="mostrarImagen()" onmouseup="ocultarImagen()">Ayuda</button>
     <!-- Elemento para mostrar la imagen -->
 
     <img id="imagenMostrada" src="../../../../img/matriz_dos.png" style="display: none; max-width: 100%" width="560">

@@ -96,7 +96,127 @@ $verificar_61 = ''; $verificar_62 = ''; $verificar_63 = ''; $verificar_64 = ''; 
     $verificar_61_3 = "";
     $verificar_61_2 = "";
 
+$mostrar_solucion = '';
 if ($_POST) {
+    $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
+    
+    if ($mostrar_solucion === 'mostrar_solucion') {
+        // Establecer todas las respuestas correctas
+        $respuesta_1 = 'cuantificamos';
+        $respuesta_2 = 'propiedad';
+        $respuesta_3 = 'atributo';
+        $respuesta_4 = 'mundo';
+        $respuesta_5 = 'sensible';
+        $respuesta_6 = 'representar';
+        $respuesta_7 = 'medida';
+        $respuesta_8 = 'numero';
+        $respuesta_9 = 'especificacion';
+        $respuesta_10 = 'unidad de medida';
+        $respuesta_11 = 'proceso';
+        $respuesta_12 = 'proceso';
+        $respuesta_13 = 'cuantificar';
+        $respuesta_14 = 'experiencia';
+        $respuesta_15 = 'mundo real';
+        $respuesta_16 = 'realizar';
+        $respuesta_17 = 'operaciones matematicas';
+        $respuesta_18 = 'necesarias';
+        $respuesta_19 = 'averiguar';
+        $respuesta_20 = 'cantidad';
+        $respuesta_21 = 'magnitud';
+        $respuesta_22 = 'suponer';
+        $respuesta_23 = 'indicios';
+        $respuesta_24 = 'observaciones';
+        $respuesta_25 = 'Reflexionar';
+        $respuesta_26 = 'algo';
+        $respuesta_27 = 'hacer';
+        $respuesta_28 = 'comparamos la magnitud';
+        $respuesta_29 = 'magnitud';
+        $respuesta_30 = 'admitida';
+        $respuesta_31 = 'referencia patron';
+        $respuesta_32 = 'homogenea';
+        $respuesta_33 = 'reproducible';
+        $respuesta_34 = 'obtienen';
+        $respuesta_35 = 'resultado';
+        $respuesta_36 = 'calculos realizados';
+        $respuesta_37 = 'partir';
+        $respuesta_38 = 'medidas';
+        $respuesta_39 = 'directamente';
+        $respuesta_40 = 'mide';
+        $respuesta_41 = 'aproximan';
+        $respuesta_42 = 'resultados';
+        $respuesta_43 = 'valor';
+        $respuesta_44 = 'verdadero';
+        $respuesta_45 = 'correcto';
+        $respuesta_46 = 'refiere';
+        $respuesta_47 = 'dispersion';
+        $respuesta_48 = 'conjunto';
+        $respuesta_49 = 'valores';
+        $respuesta_50 = 'obtenidos';
+        $respuesta_51 = 'mediciones';
+        $respuesta_52 = 'repetidas';
+        $respuesta_53 = 'magnitud';
+        $respuesta_54 = 'diferencia';
+        $respuesta_55 = 'entre';
+        $respuesta_56 = 'valor';
+        $respuesta_57 = 'medido';
+        $respuesta_58 = 'valor';
+        $respuesta_59 = 'verdadero';
+        $respuesta_60 = 'aceptado';
+        $respuesta_60_1 = 'diferencia';
+        $respuesta_61 = 'estimada';
+        $respuesta_61_2 = 'entre';
+        $respuesta_61_3 = 'valor';
+        $respuesta_62 = 'estimacion';
+        $respuesta_63 = 'originan';
+        $respuesta_64 = 'imperfecciones';
+        $respuesta_65 = 'metodos de medicion';
+        $respuesta_66 = 'teorias utilizadas';
+        $respuesta_67 = 'ocurre';
+        $respuesta_68 = 'mediciones';
+        $respuesta_69 = 'repetidas';
+        $respuesta_70 = 'medidas';
+        $respuesta_71 = 'no';
+        $respuesta_72 = 'numeros';
+        $respuesta_73 = 'exactos';
+        $respuesta_74 = 'intervalos';
+        $respuesta_75 = 'dentro';
+        $respuesta_76 = 'confianza';
+        $respuesta_77 = 'encuentra';
+        $respuesta_78 = 'valor';
+        $respuesta_79 = 'medicion';
+        $respuesta_80 = 'determinemos';
+        $respuesta_81 = 'localizacion';
+        $respuesta_82 = 'ancho';
+        $respuesta_83 = 'redondeo';
+        $respuesta_84 = 'margen';
+        $respuesta_85 = 'posibilidad';
+        $respuesta_86 = '+-0.1';
+        $respuesta_87 = '\frac{\text{incertidumbre absoluta}}{\text{valor medido}}';
+        $respuesta_88 = '+-0.003';
+        $respuesta_89 = 'absoluta';
+        
+        // Marcar todas como correctas
+        $verificar_1 = $verificar_2 = $verificar_3 = $verificar_4 = $verificar_5 = 
+        $verificar_6 = $verificar_7 = $verificar_8 = $verificar_9 = $verificar_10 = 
+        $verificar_11 = $verificar_12 = $verificar_13 = $verificar_14 = $verificar_15 = 
+        $verificar_16 = $verificar_17 = $verificar_18 = $verificar_19 = $verificar_20 = 
+        $verificar_21 = $verificar_22 = $verificar_23 = $verificar_24 = $verificar_25 = 
+        $verificar_26 = $verificar_27 = $verificar_28 = $verificar_29 = $verificar_30 = 
+        $verificar_31 = $verificar_32 = $verificar_33 = $verificar_34 = $verificar_35 = 
+        $verificar_36 = $verificar_37 = $verificar_38 = $verificar_39 = $verificar_40 = 
+        $verificar_41 = $verificar_42 = $verificar_43 = $verificar_44 = $verificar_45 = 
+        $verificar_46 = $verificar_47 = $verificar_48 = $verificar_49 = $verificar_50 = 
+        $verificar_51 = $verificar_52 = $verificar_53 = $verificar_54 = $verificar_55 = 
+        $verificar_56 = $verificar_57 = $verificar_58 = $verificar_59 = $verificar_60 = 
+        $verificar_60_1 = $verificar_61 = $verificar_61_2 = $verificar_61_3 = $verificar_62 = 
+        $verificar_63 = $verificar_64 = $verificar_65 = $verificar_66 = $verificar_67 = 
+        $verificar_68 = $verificar_69 = $verificar_70 = $verificar_71 = $verificar_72 = 
+        $verificar_73 = $verificar_74 = $verificar_75 = $verificar_76 = $verificar_77 = 
+        $verificar_78 = $verificar_79 = $verificar_80 = $verificar_81 = $verificar_82 = 
+        $verificar_83 = $verificar_84 = $verificar_85 = $verificar_86 = $verificar_87 = 
+        $verificar_88 = $verificar_89 = "correcto";
+    } else {
+
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
    if ($respuesta_1 === 'cuantificamos') {  
        $verificar_1 = "correcto";
@@ -957,7 +1077,7 @@ if ($respuesta_88 === '+-0.003') {
 }
 
  $respuesta_89 = isset($_POST['respuesta_89']) ? $_POST['respuesta_89'] : '';
-if ($respuesta_89 === '42') { 
+if ($respuesta_89 === 'absoluta') { 
     $verificar_89 = "correcto";
 } elseif ($respuesta_89 === '') {
     $verificar_89 = '';
@@ -1156,6 +1276,7 @@ if ($respuesta_110 === '264') {
 }
 
 
+}
 }
 ?>
 <!DOCTYPE html>
@@ -1877,6 +1998,20 @@ function ocultarMensaje4() {
     <strong>indique la incertidumbre:</strong>
     <br><br>
     <input type="text" name="respuesta_86" value="<?php echo $respuesta_86; ?>" size="8">  
+
+    <p>
+        Como la cifra de 
+        <input type="text"   value="<?php echo $respuesta_86; ?>" size="8"> 
+        \(  \text{cm} \) 
+        representa la magnitud o el intervalo en que
+        la lectura de 
+        \( 29.5 \)
+        es incierta, a menudo se le llama la 
+        <strong>incertidumbre 
+        <input type="text" name="respuesta_89" value="<?php echo $respuesta_89; ?>" size="8">     
+         </strong> de la medida.
+    </p>
+
     <br><br>
     <strong>indique la formula incertidumbre relativa:</strong>
     <span id="formula">
@@ -1893,6 +2028,13 @@ function ocultarMensaje4() {
     <?php echo $verificar_86 ?>
     <?php echo $verificar_87 ?>
     <?php echo $verificar_88 ?>
+<?php echo $verificar_89 ?>
+    <hr>
+    <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
+    <br>
+    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
+    <button type="submit"   >Mostrar Solución</button>
+
 </form>
 </div>
 

@@ -178,8 +178,8 @@ if ($_POST) {
     // Sección 13 (Preguntas 133-143)
     $respuesta_133 = 'obsoleto';
     $respuesta_134 = 'Product Owner';
-    $respuesta_135 = 'inicia';
-    $respuesta_136 = 'Sprint';
+    $respuesta_135 = 'inicia el sprint';
+    $respuesta_136 = 'sprint';
     $respuesta_137 = 'establecer';
     $respuesta_138 = 'trabajo';
     $respuesta_139 = 'Scrum Team';
@@ -381,7 +381,7 @@ if ($_POST) {
     $respuesta_305 = 'un mes';
     $respuesta_306 = 'cortos';
     $respuesta_307 = 'menor';
-    $respuesta_308 = '328';
+    $respuesta_308 = 'maximo ocho horas';
     
     // Sección 29 (Preguntas 309-310)
     $respuesta_309 = '329';
@@ -1666,7 +1666,7 @@ if ($respuesta_134 === 'Product Owner' || $respuesta_134 === 'product owner') {
 }
 
 $respuesta_135 = isset($_POST['respuesta_135']) ? $_POST['respuesta_135'] : '';
-if ($respuesta_135 === 'inicia') {  
+if ($respuesta_135 === 'inicia el sprint') {  
     $verificar_135 = "correcto";
 } elseif ($respuesta_135 === '') {
     $verificar_135 = '';
@@ -3228,7 +3228,7 @@ if ($respuesta_307 === 'menor') {
 }
 
 $respuesta_308 = isset($_POST['respuesta_308']) ? $_POST['respuesta_308'] : '';
-if ($respuesta_308 === '328') {  
+if ($respuesta_308 === 'maximo ocho horas') {  
     $verificar_308 = "correcto";
 } elseif ($respuesta_308 === '') {
     $verificar_308 = '';
@@ -3276,7 +3276,7 @@ if ($respuesta_310 === '330') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 415vh;
+    height: 428vh;
     }
 </style>
  
@@ -4075,14 +4075,12 @@ function ocultarMensaje4() {
     <p>
     La <input type="text"  value="<?php echo $respuesta_85; ?>" size="12" readonly>
     <input type="text" name="respuesta_135" value="<?php echo $respuesta_135; ?>" size="9">
-     el 
-    <input type="text" name="respuesta_136" value="<?php echo $respuesta_136; ?>" size="9">
       al 
     <input type="text" name="respuesta_137" value="<?php echo $respuesta_137; ?>" size="9">
       el 
     <input type="text" name="respuesta_138" value="<?php echo $respuesta_138; ?>" size="9">
       que se realizará para el 
-    <input type="text" value="<?php echo $respuesta_136; ?>" size="9">
+    <input type="text" name="respuesta_136" value="<?php echo $respuesta_136; ?>" size="9">
     . El 
     <input type="text" name="respuesta_139" value="<?php echo $respuesta_139; ?>" size="9">
     crea este plan 
@@ -4111,7 +4109,6 @@ function ocultarMensaje4() {
     
     <button type="submit">Enviar</button>
     <?php echo $verificar_135 ?>
-    <?php echo $verificar_136 ?>
     <?php echo $verificar_137 ?>
     <?php echo $verificar_138 ?>
     <?php echo $verificar_139 ?>
@@ -4323,6 +4320,14 @@ function ocultarMensaje4() {
      se denominan juntos Sprint Backlog.
     </p>
 
+    <p>
+    La <strong>Sprint Planning</strong> tiene un límite de tiempo de   
+    <input type="text" name="respuesta_308" value="<?php echo $respuesta_308; ?>" size="18">
+      para un <strong>Sprint</strong> de un mes. 
+    Para Sprints más cortos, el evento suele ser de menor duración.
+    </p>
+
+
     <button type="submit">Enviar</button> 
     <?php echo $verificar_185 ?>
     <?php echo $verificar_186 ?>
@@ -4343,7 +4348,7 @@ function ocultarMensaje4() {
     <?php echo $verificar_201 ?>
     <?php echo $verificar_202 ?>
     <?php echo $verificar_203 ?>
-
+    <?php echo $verificar_308 ?>
     <hr>
 
     <h2><input type="text" value="<?php echo $respuesta_86; ?>" size="9" readonly></h2>

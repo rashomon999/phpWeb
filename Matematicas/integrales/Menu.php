@@ -31,7 +31,7 @@
     <div class="centered-container">
         <a class="btn" href="index.php">Conceptos1</a>
         <a class="btn" href=".\clase\index.php">clase</a>
-        <a class="btn" href=".\profeAlex\index.php">ejercicios videos profeAlex </a>
+        <a class="btn" href=".\profeAlex\Menu.php">ejercicios videos profeAlex </a>
       
     </div>
 </body>

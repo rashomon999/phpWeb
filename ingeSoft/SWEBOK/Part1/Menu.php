@@ -30,6 +30,8 @@
 <body>
     <div class="centered-container">
         <a class="btn" href=".\capitulo_1\index.php">capitulo 1</a>
+        <a class="btn" href=".\capitulo_1_v4\index.php">capitulo 1 v4</a>
+        <br>
         <a class="btn" href=".\cuestionario_1\index.php">cuestionario 1</a>
         <br><br> 
         <a class="btn" href=".\cuestionario_v4\index.php">cuestionario 1 v4(actualizado)</a>

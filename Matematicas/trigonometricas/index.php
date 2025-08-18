@@ -856,7 +856,8 @@ function ocultarMensaje4() {
     </span> 
 
     <br><br>
-    <input type="text" name="respuesta_10" size="25" id="respuesta_10" oninput="actualizarFormula()" value="<?php echo $respuesta_10?>">
+    <input type="text" name="respuesta_10" size="25" id="respuesta_10" oninput="actualizarFormula()" 
+    value="<?php echo $respuesta_10?>">
     <br>
     <button type="submit">enviar</button>
     <?php echo $verificar_10 ?>

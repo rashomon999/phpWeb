@@ -1660,7 +1660,7 @@ function ocultarMensaje4() {
     14 * 9 = <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>"><br>
     14 * 10 = <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>"><br>
     14 * 11 = <input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>"><br>
-    14 * 12 = <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>"><br>
+    14 * 12 = <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>"><br> 
     <button type="submit">Enviar</button>
     <?php echo $verificar_12 ?>
     <?php echo $verificar_13 ?>

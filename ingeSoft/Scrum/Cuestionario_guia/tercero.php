@@ -416,7 +416,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la novena pregunta
      $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
-     if ($respuesta_20 === 'Definición de Terminado' || $respuesta_20 === 'definición de terminado') {  
+     if ($respuesta_20 === 'Definicion de Terminado' || $respuesta_20 === 'definicion de terminado') {  
          $verificar_20 = "correcto";
      } elseif ($respuesta_20 === '') {
          $verificar_20 = '';
@@ -1677,7 +1677,7 @@ if ($respuesta_157 === 'productividad') {
 }
 
 $respuesta_158 = isset($_POST['respuesta_158']) ? $_POST['respuesta_158'] : '';
-if ($respuesta_158 === '178') {  
+if ($respuesta_158 === 'Product Backlog' || $respuesta_158 === 'product backlog') {  
     $verificar_158 = "correcto";
 } elseif ($respuesta_158 === '') {
     $verificar_158 = '';
@@ -1686,7 +1686,7 @@ if ($respuesta_158 === '178') {
 }
 
 $respuesta_159 = isset($_POST['respuesta_159']) ? $_POST['respuesta_159'] : '';
-if ($respuesta_159 === '179') {  
+if ($respuesta_159 === 'Sprint Backlog' || $respuesta_159 === 'sprint backlog') {  
     $verificar_159 = "correcto";
 } elseif ($respuesta_159 === '') {
     $verificar_159 = '';
@@ -1695,7 +1695,7 @@ if ($respuesta_159 === '179') {
 }
 
 $respuesta_160 = isset($_POST['respuesta_160']) ? $_POST['respuesta_160'] : '';
-if ($respuesta_160 === '180') {  
+if ($respuesta_160 === 'Increment' || $respuesta_160 === 'increment' ) {  
     $verificar_160 = "correcto";
 } elseif ($respuesta_160 === '') {
     $verificar_160 = '';
@@ -2044,13 +2044,19 @@ function ocultarMensaje4() {
     </p>
   
     <ul>
-        <li>Para el Product Backlog, es el 
+        <li>Para el 
+        <input type="text" name="respuesta_158" value="<?php echo $respuesta_158; ?>" size="20">     
+         , es el 
         <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="20">    
         .</li>
-        <li>Para el Sprint Backlog, es el 
+        <li>Para el 
+        <input type="text" name="respuesta_159" value="<?php echo $respuesta_159; ?>" size="20">     
+         , es el 
         <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="20">    
         .</li>
-        <li>Para el Increment es la 
+        <li>Para el 
+        <input type="text" name="respuesta_160" value="<?php echo $respuesta_160; ?>" size="20">     
+          es la 
         <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="20">    
         .</li>
     </ul>
@@ -2095,7 +2101,7 @@ function ocultarMensaje4() {
     <?php echo $verificar_24 ?>
     
     <hr>
-    
+
     <h3>Product Backlog</h3>
     <p>
     El Product Backlog es una 
@@ -2124,7 +2130,7 @@ function ocultarMensaje4() {
       en un
     <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="9">
       de 
-    <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="9">
+    <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="12">
     . Suelen adquirir este
     grado de 
     <input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="9">
@@ -2152,7 +2158,7 @@ function ocultarMensaje4() {
     Los 
     <input type="text" name="respuesta_46" value="<?php echo $respuesta_46; ?>" size="9">
       que realizarán el trabajo son responsables del 
-    <input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="9">
+    <input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="14">
      . El 
     <input type="text" name="respuesta_48" value="<?php echo $respuesta_48; ?>" size="9">
       puede influir en los 
@@ -2161,6 +2167,38 @@ function ocultarMensaje4() {
     <input type="text" name="respuesta_50" value="<?php echo $respuesta_50; ?>" size="9">
       sus mejores alternativas.
     </p>
+
+
+
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_25 ?>
+    <?php echo $verificar_26 ?>
+    <?php echo $verificar_27 ?>
+    <?php echo $verificar_28 ?>
+    <?php echo $verificar_29 ?>
+    <?php echo $verificar_30 ?>
+    <?php echo $verificar_31 ?>
+    <?php echo $verificar_32 ?>
+    <?php echo $verificar_33 ?>
+    <?php echo $verificar_34 ?>
+    <?php echo $verificar_35 ?>
+    <?php echo $verificar_36 ?>
+    <?php echo $verificar_37 ?>
+    <?php echo $verificar_38 ?>
+    <?php echo $verificar_39 ?>
+    <?php echo $verificar_40 ?>
+    <?php echo $verificar_41 ?>
+    <?php echo $verificar_42 ?>
+    <?php echo $verificar_43 ?>
+    <?php echo $verificar_44 ?>
+    <?php echo $verificar_45 ?>
+    <?php echo $verificar_46 ?>
+    <?php echo $verificar_47 ?>
+    <?php echo $verificar_48 ?>
+    <?php echo $verificar_49 ?>
+    <?php echo $verificar_50 ?>
+
+    <hr>
 
     <h4>Compromiso: Objetivo del Producto</h4>
     <p>

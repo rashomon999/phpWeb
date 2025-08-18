@@ -30,16 +30,9 @@
 </head>
 <body>
     <div class="centered-container">
-        <a class="btn" href=".\Conceptos\index.php">Conceptos</a>
-        <a class="btn" href=".\Muestreo\index.php">Muestreo</a>
-        <a class="btn" href=".\EstimacionPuntual\index.php">Estimacion Puntual</a>
-        <a class="btn" href=".\EstimacionPuntual_2\index.php">Estimacion Puntual(2.0)</a>
-        <br><br>
-        <a class="btn" href=".\PruebaHipotesis\index.php">Prueba de Hipotesis</a>
-        <a class="btn" href=".\Cuestionario\index.php">Cuestionario</a>
-        <a class="btn" href=".\Hipotesis\index.php">formularHipotesis</a>
-        <br><br>
-        <a class="btn" href=".\Anova\index.php">ANOVA y Regresion</a>
+        <a class="btn" href=".\Libro\Menu.php">Libro</a>
+        
+        <a class="btn" href=".\4semestre\Menu.php">4 semestre</a>
 
     </div>
 </body>

@@ -768,7 +768,7 @@ function actualizarFormula() {
  
 
     // Construir la fórmula dinámica
-    var formula = ` \\ ${f} ${g} ${d} \\, `;
+    var formula = ` \\ ${f} ${g} ${d} \\, `; 
 
     // Actualizar el contenido de la fórmula en el DOM
     document.getElementById('formula').innerHTML = `$$ ${formula} $$`;

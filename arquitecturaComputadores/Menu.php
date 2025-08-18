@@ -29,14 +29,27 @@
 </head>
 <body>
     <div class="centered-container">
+        
+        <strong>en construccion: </strong>
         <a class="btn" href=".\analisis_DDE\Menu.php">Analisis y diseño de experimentos (Humberto Gutiérrez Pulido, Román de 
             la Vara Salazar)</a>
 
         <a class="btn" href=".\ComputerSystem\Menu.php">Computer Systems (Randal E. Bryant • David R. O’Hallaron)</a>
         
         <br><br>
-
+        <strong>avances:</strong>
+        <hr>
         <a class="btn" href=".\material_icesi\Menu.php">Material extra</a>
+
+        <a class="btn" href=".\anotaciones_clase\index.php">Anotaciones clase</a>
+
+        <br><br>
+        <strong>presaberes:</strong>
+        <a class="btn" href=".\conceptos\Menu.php">Estadistica</a>
+
+        <a class="btn" href=".\..\fisica\laboratorio\index.php">Error experimental</a>
+
+        <a class="btn" href=".\apuntes\Menu.php">apuntes/preguntas clase</a>
     </div>
 </body>
 </html>

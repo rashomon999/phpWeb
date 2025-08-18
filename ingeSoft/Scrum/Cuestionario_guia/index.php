@@ -836,7 +836,7 @@ if ($respuesta_59 === 'pensamiento Lean' || $respuesta_59 === 'pensamiento lean'
 }
 
  $respuesta_60 = isset($_POST['respuesta_60']) ? $_POST['respuesta_60'] : '';
-if ($respuesta_60 === 'conocimiento') { 
+if ($respuesta_60 === 'conocimiento proviene') { 
     $verificar_60 = "correcto";
 } elseif ($respuesta_60 === '') {
     $verificar_60 = '';
@@ -3165,8 +3165,8 @@ function ocultarMensaje4() {
     . El 
     <input type="text"   value="<?php echo $respuesta_58; ?>" size="9" readonly>
     afirma que el 
-    <input type="text" name="respuesta_60" value="<?php echo $respuesta_60; ?>" size="10">
-    proviene de la 
+    <input type="text" name="respuesta_60" value="<?php echo $respuesta_60; ?>" size="18">
+      de la 
     <input type="text" name="respuesta_61" value="<?php echo $respuesta_61; ?>" size="10">
     y de la 
     <input type="text" name="respuesta_62" value="<?php echo $respuesta_62; ?>" size="10">

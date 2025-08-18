@@ -1645,12 +1645,13 @@ function ocultarMensaje4() {
     <p>
     El Scrum Master sirve al Scrum Team de varias maneras, que incluyen:
     </p>
-    
+     
     <ul>
     <li>Guiar a los miembros del equipo en ser autogestionados y multifuncionales;</li>
     <li>Ayudar al Scrum Team a enfocarse en crear Increments de alto valor que cumplan con la Definición de Terminado;</li>
     <li>Procurar la eliminación de impedimentos para el progreso del Scrum Team; y,</li>
-    <li>Asegurarse de que todos los eventos de Scrum se lleven a cabo y sean positivos, productivos y se mantengan dentro de los límites de tiempo recomendados en esta Guía.</li>
+    <li>Asegurarse de que todos los eventos de Scrum se lleven a cabo y sean positivos, productivos y se mantengan
+         dentro de los límites de tiempo recomendados en esta Guía.</li>
     </ul>
 
     <p>
