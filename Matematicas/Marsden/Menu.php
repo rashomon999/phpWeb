@@ -45,7 +45,7 @@
         <div class="menu-columns">
             <div class="column">
                 <a class="btn" href=".\capitulo_5\Menu.php">capitulo 5</a>
-           
+                <a class="btn" href=".\capitulo_6\Menu.php">capitulo 6</a>
             </div>
             <div class="column">
                 

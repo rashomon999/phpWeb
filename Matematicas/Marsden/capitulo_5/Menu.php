@@ -40,7 +40,16 @@
 
         <a class="btn" href=".\seccion5_4\index.php">capitulo 5.4</a>
 
+        <a class="btn" href=".\seccion5_5\index.php">capitulo 5.5</a>
+
         <a class="btn" href=".\geogebra\index.php">geogebra</a>
+
+
+        <a class="btn" href=".\cilindricas\index.php">cordenadas cilindricas</a>
+
+        <a class="btn" href=".\esfericas\index.php">cordenadas esfericas</a>
+
+        <a class="btn" href=".\cambioVariables\index.php">explicacion u_v</a>
     </div>
 </body>
 </html>

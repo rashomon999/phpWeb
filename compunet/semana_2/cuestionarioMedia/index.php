@@ -1576,7 +1576,7 @@ if ($respuesta_152 === 'multiples señales') {
 }
 
 $respuesta_153 = isset($_POST['respuesta_153']) ? $_POST['respuesta_153'] : ''; 
-if ($respuesta_153 === '153') {  
+if ($respuesta_153 === '10base5') {  
     $verificar_153 = "correcto";
 } elseif ($respuesta_153 === '') {
     $verificar_153 = '';
@@ -1585,7 +1585,7 @@ if ($respuesta_153 === '153') {
 }
 
 $respuesta_154 = isset($_POST['respuesta_154']) ? $_POST['respuesta_154'] : ''; 
-if ($respuesta_154 === '153') {  
+if ($respuesta_154 === 'thicknet') {  
     $verificar_154 = "correcto";
 } elseif ($respuesta_154 === '') {
     $verificar_154 = '';
@@ -1594,7 +1594,7 @@ if ($respuesta_154 === '153') {
 }
 
 $respuesta_155 = isset($_POST['respuesta_155']) ? $_POST['respuesta_155'] : ''; 
-if ($respuesta_155 === '153') {  
+if ($respuesta_155 === 'gruesa') {  
     $verificar_155 = "correcto";
 } elseif ($respuesta_155 === '') {
     $verificar_155 = '';
@@ -1603,7 +1603,7 @@ if ($respuesta_155 === '153') {
 }
 
 $respuesta_156 = isset($_POST['respuesta_156']) ? $_POST['respuesta_156'] : ''; 
-if ($respuesta_156 === '153') {  
+if ($respuesta_156 === 'RG-8') {  
     $verificar_156 = "correcto";
 } elseif ($respuesta_156 === '') {
     $verificar_156 = '';
@@ -1612,7 +1612,7 @@ if ($respuesta_156 === '153') {
 }
 
 $respuesta_157 = isset($_POST['respuesta_157']) ? $_POST['respuesta_157'] : ''; 
-if ($respuesta_157 === '153') {  
+if ($respuesta_157 === '500') {  
     $verificar_157 = "correcto";
 } elseif ($respuesta_157 === '') {
     $verificar_157 = '';
@@ -1621,7 +1621,7 @@ if ($respuesta_157 === '153') {
 }
 
 $respuesta_158 = isset($_POST['respuesta_158']) ? $_POST['respuesta_158'] : ''; 
-if ($respuesta_158 === '153') {  
+if ($respuesta_158 === '10base2') {  
     $verificar_158 = "correcto";
 } elseif ($respuesta_158 === '') {
     $verificar_158 = '';
@@ -1630,7 +1630,7 @@ if ($respuesta_158 === '153') {
 }
 
 $respuesta_159 = isset($_POST['respuesta_159']) ? $_POST['respuesta_159'] : ''; 
-if ($respuesta_159 === '153') {  
+if ($respuesta_159 === 'thinnet') {  
     $verificar_159 = "correcto";
 } elseif ($respuesta_159 === '') {
     $verificar_159 = '';
@@ -1639,7 +1639,7 @@ if ($respuesta_159 === '153') {
 }
 
 $respuesta_160 = isset($_POST['respuesta_160']) ? $_POST['respuesta_160'] : ''; 
-if ($respuesta_160 === '153') {  
+if ($respuesta_160 === 'delgada') {  
     $verificar_160 = "correcto";
 } elseif ($respuesta_160 === '') {
     $verificar_160 = '';
@@ -1648,7 +1648,7 @@ if ($respuesta_160 === '153') {
 }
 
 $respuesta_161 = isset($_POST['respuesta_161']) ? $_POST['respuesta_161'] : ''; 
-if ($respuesta_161 === '153') {  
+if ($respuesta_161 === 'RG-58') {  
     $verificar_161 = "correcto";
 } elseif ($respuesta_161 === '') {
     $verificar_161 = '';
@@ -1657,7 +1657,7 @@ if ($respuesta_161 === '153') {
 }
 
 $respuesta_162 = isset($_POST['respuesta_162']) ? $_POST['respuesta_162'] : ''; 
-if ($respuesta_162 === '153') {  
+if ($respuesta_162 === '185') {  
     $verificar_162 = "correcto";
 } elseif ($respuesta_162 === '') {
     $verificar_162 = '';
@@ -1666,7 +1666,7 @@ if ($respuesta_162 === '153') {
 }
 
 $respuesta_163 = isset($_POST['respuesta_163']) ? $_POST['respuesta_163'] : ''; 
-if ($respuesta_163 === '153') {  
+if ($respuesta_163 === 'toda') {  
     $verificar_163 = "correcto";
 } elseif ($respuesta_163 === '') {
     $verificar_163 = '';
@@ -1675,7 +1675,7 @@ if ($respuesta_163 === '153') {
 }
 
 $respuesta_164 = isset($_POST['respuesta_164']) ? $_POST['respuesta_164'] : ''; 
-if ($respuesta_164 === '153') {  
+if ($respuesta_164 === 'baratos') {  
     $verificar_164 = "correcto";
 } elseif ($respuesta_164 === '') {
     $verificar_164 = '';
@@ -1684,7 +1684,7 @@ if ($respuesta_164 === '153') {
 }
 
 $respuesta_165 = isset($_POST['respuesta_165']) ? $_POST['respuesta_165'] : ''; 
-if ($respuesta_165 === '153') {  
+if ($respuesta_165 === 'conector') {  
     $verificar_165 = "correcto";
 } elseif ($respuesta_165 === '') {
     $verificar_165 = '';
@@ -1848,7 +1848,7 @@ if ($respuesta_180 === '153') {
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 340vh;
+    height: 440vh;
     }
 
 
@@ -2635,7 +2635,7 @@ function ocultarMensaje4() {
 <p>Debe tenerse en cuenta que el 
 <input type="text" name="respuesta_129" value="<?php echo $respuesta_129; ?>" size="26">    
   al 100%, y 
-  <input type="text" name="respuesta_130" value="<?php echo $respuesta_130; ?>" size="8"> 
+  <input type="text" name="respuesta_130" value="<?php echo $respuesta_130; ?>" size="11"> 
     cierta 
   <input type="text" name="respuesta_131" value="<?php echo $respuesta_131; ?>" size="5"> 
     e 
@@ -2655,7 +2655,7 @@ function ocultarMensaje4() {
       de 
     <input type="text" name="respuesta_137" value="<?php echo $respuesta_137; ?>" size="10">
       que 
-    <input type="text" name="respuesta_138" value="<?php echo $respuesta_138; ?>" size="8">
+    <input type="text" name="respuesta_138" value="<?php echo $respuesta_138; ?>" size="13">
       sigue esta 
     <input type="text" name="respuesta_139" value="<?php echo $respuesta_139; ?>" size="8">
      :</p>
@@ -2686,7 +2686,7 @@ function ocultarMensaje4() {
     banda ancha. La banda ancha 
     <input type="text" name="respuesta_150" value="<?php echo $respuesta_150; ?>" size="8">
       el 
-    <input type="text" name="respuesta_151" value="<?php echo $respuesta_151; ?>" size="8">
+    <input type="text" name="respuesta_151" value="<?php echo $respuesta_151; ?>" size="23">
            entre 
     <input type="text" name="respuesta_152" value="<?php echo $respuesta_152; ?>" size="12">
      .</p>
@@ -2722,13 +2722,33 @@ function ocultarMensaje4() {
     <p>Echemos un vistazo más de cerca a los dos tipos de cable coaxial individualmente.</p>
 
  
-    <h3>Cable coaxial 10base5</h3>
+    <h3>Cable coaxial 
+     <input type="text" name="respuesta_153" value="<?php echo $respuesta_153; ?>" size="8">    
+     </h3>
 
-    <p>10base5 se conoce como thicknet (red gruesa). Utiliza cableado RG-8 y puede tener una longitud máxima de 500 m. Si lo hicieras 
+    <p>
+     <input type="text"   value="<?php echo $respuesta_153; ?>" size="8" readonly>    
+      se conoce como 
+      <input type="text" name="respuesta_154" value="<?php echo $respuesta_154; ?>" size="8"> 
+        (red 
+      <input type="text" name="respuesta_155" value="<?php echo $respuesta_155; ?>" size="8"> 
+       ). Utiliza cableado 
+       <input type="text" name="respuesta_156" value="<?php echo $respuesta_156; ?>" size="8">
+         y puede tener una longitud máxima de 
+         <input type="text" name="respuesta_157" value="<?php echo $respuesta_157; ?>" size="8">
+           m. 
+    Si lo hicieras 
     más largo, la atenuación, o degradación de la señal, sería tan grande que sería inutilizable. Para conectar los 
     dispositivos al cable, utiliza un conector de tipo “vampire tap”, como se muestra en la siguiente imagen:</p>
 
-     
+    <button type="submit">Enviar</button>
+     <?php echo $verificar_153 ?>
+<?php echo $verificar_154 ?>
+<?php echo $verificar_155 ?>
+<?php echo $verificar_156 ?>
+<?php echo $verificar_157 ?>
+
+    <hr>
 
     <img src="../../../img/guia_87.png" alt="">
     <p>Figura 8.2: Vampire tap con cable thicknet</p>
@@ -2750,21 +2770,43 @@ function ocultarMensaje4() {
 
     <p>Figura 8.4: Un conector N macho ( A male N-connector)</p>
 
-    <p>Como su nombre lo indica, el cable thicknet es un cable grueso, lo que significa que no es muy flexible. 
+    <p>Como su nombre lo indica, el cable 
+    <input type="text"  value="<?php echo $respuesta_154; ?>" size="8" readonly>     
+      es un cable grueso, lo que significa que no es muy flexible. 
     Esto lo hace difícil de manejar, pero es capaz de soportar hasta 100 dispositivos. Debe tenerse en cuenta, 
     sin embargo, que los cables coaxiales generalmente se encuentran en topologías en bus (Capítulo 5, Topologías de 
     red – Mapeando todo) y son half dúplex, por lo que mientras más dispositivos haya, más contención existirá.</p>
 
     <p>Ahora, aprendamos sobre el cable coaxial 10base2.</p>
 
-    <h3>Cable coaxial 10base2</h3>
+    <h3>Cable coaxial 
+    <input type="text" name="respuesta_158" value="<?php echo $respuesta_158; ?>" size="8">    
+     </h3>
 
-    <p>En contraste, 10base2 se conoce como thinnet
-    (red delgada)    
-    . Utiliza cableado RG-58 y puede tener una longitud máxima de 185 m. 
-    Para thinnet, usaríamos una combinación de conectores BNC y conectores en forma de T. La siguiente imagen muestra un 
+    <p>En contraste, 
+    <input type="text" value="<?php echo $respuesta_158; ?>" size="8" readonly>    
+      se conoce como 
+      <input type="text" name="respuesta_159" value="<?php echo $respuesta_159; ?>" size="8"> 
+    (red 
+    <input type="text" name="respuesta_160" value="<?php echo $respuesta_160; ?>" size="8">
+     )    
+    . Utiliza cableado 
+    <input type="text" name="respuesta_161" value="<?php echo $respuesta_161; ?>" size="8">
+     y puede tener una longitud máxima de 
+     <input type="text" name="respuesta_162" value="<?php echo $respuesta_162; ?>" size="8">
+       m. 
+    Para 
+    <input type="text" value="<?php echo $respuesta_159; ?>" size="8" readonly> 
+     , usaríamos una combinación de conectores BNC y conectores en forma de T. La siguiente imagen muestra un 
     conector BNC:</p>
 
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_158 ?>
+    <?php echo $verificar_159 ?>
+    <?php echo $verificar_160 ?>
+    <?php echo $verificar_161 ?>
+    <?php echo $verificar_162 ?>
+    <hr>
     <img src="../../../img/guia_90.png" alt="">
 
     <p>Figura 8.5: Conector BNC ( BNC connector)</p>
@@ -2777,11 +2819,33 @@ function ocultarMensaje4() {
  
     <img src="../../../img/guia_91.png" alt="" width="600">
 
-    <p>Los cables coaxiales son relativamente baratos a menos que estés hablando de una instalación grande. Es sencillo de 
-    instalar, pero una sola rotura o una conexión mal ajustada puede derribar toda la red. Finalmente, aunque es bastante 
+    <p>Los cables coaxiales son relativamente 
+    <input type="text" name="respuesta_164" value="<?php echo $respuesta_164; ?>" size="8">    
+      a menos que estés hablando de una instalación grande. Es sencillo de 
+    instalar, pero una sola rotura o una conexión mal ajustada puede derribar 
+    <input type="text" name="respuesta_163" value="<?php echo $respuesta_163; ?>" size="8">
+      la red. Finalmente, aunque es bastante 
     resistente a la EMI, tiene el potencial de ser interceptado con relativa facilidad, por lo que proteger los datos 
     sensibles debe ser tenido en cuenta.</p>
 
+
+    <h3>Comprender los cables de par trenzado y sus tipos</h3>
+
+    <p>Quizás el tipo de cable de red más común en uso actualmente, los cables de par trenzado son, en mi experiencia, 
+    posiblemente los cables que más se etiquetan de forma incorrecta. Al mostrarle a la gente un cable de par trenzado, 
+    a menudo he escuchado que lo llaman un cable Cat 5 o un cable RJ-45. Como verás en esta sección, el cable Cat 5 es 
+    una variante del cableado de par trenzado, mientras que RJ-45 se refiere al tipo de 
+    <input type="text" name="respuesta_165" value="<?php echo $respuesta_165; ?>" size="8">
+      que se usa con un cable 
+    de par trenzado.</p>
+
+
+      <button type="submit">Enviar</button>
+    <?php echo $verificar_164 ?>
+    <?php echo $verificar_163 ?>
+<?php echo $verificar_165 ?>
+
+    <hr>
 
 
 </div>

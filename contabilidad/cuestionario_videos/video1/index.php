@@ -266,7 +266,10 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_26 = isset($_POST['respuesta_26']) ? $_POST['respuesta_26'] : '';
-   if ($respuesta_26 === 'Revision y Clasificacion') {  
+   if ($respuesta_26 === 'Revision y Clasificacion'
+    || $respuesta_26 === 'Revision y clasificacion'
+    || $respuesta_26 === 'revision y clasificacion'
+   ) {  
        $verificar_26 = "correcto";
    } elseif ($respuesta_26 === '') {
        $verificar_26 = '';
@@ -2013,7 +2016,7 @@ function ocultarMensaje4() {
         <li>En cuarto lugar, en algunos casos, el IASB reconoce que el marco conceptual puede entrar en 
         <input type="text" name="respuesta_110" value="<?php echo $respuesta_110; ?>" size="8">     
            con una 
-            NIIF específica, en cuya caso 
+            NIIF específica, en cuyo caso 
             <input type="text" name="respuesta_111" value="<?php echo $respuesta_111; ?>" size="8"> 
               los requerimientos de la 
               <input type="text" name="respuesta_112" value="<?php echo $respuesta_111; ?>" size="8"> 

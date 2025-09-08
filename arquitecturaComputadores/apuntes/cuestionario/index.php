@@ -380,7 +380,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la undécima pregunta
     $respuesta_22 = isset($_POST['respuesta_22']) ? $_POST['respuesta_22'] : '';
-    if ($respuesta_22 === '168') {  
+    if ($respuesta_22 === 'abajo') {  
         $verificar_22 = "correcto";
     } elseif ($respuesta_22 === '') {
         $verificar_22 = '';
@@ -390,7 +390,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
    $respuesta_23 = isset($_POST['respuesta_23']) ? $_POST['respuesta_23'] : '';
-   if ($respuesta_23 === '30') {  
+   if ($respuesta_23 === 'arriba') {  
        $verificar_23 = "correcto";
    } elseif ($respuesta_23 === '') {
        $verificar_23 = '';
@@ -400,7 +400,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_24 = isset($_POST['respuesta_24']) ? $_POST['respuesta_24'] : '';
-   if ($respuesta_24 === '45') {  
+   if ($respuesta_24 === 'arriba') {  
        $verificar_24 = "correcto";
    } elseif ($respuesta_24 === '') {
        $verificar_24 = '';
@@ -410,7 +410,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_25 = isset($_POST['respuesta_25']) ? $_POST['respuesta_25'] : '';
-   if ($respuesta_25 === '60') { 
+   if ($respuesta_25 === 'abajo') { 
        $verificar_25 = "correcto";
    } elseif ($respuesta_25 === '') {
        $verificar_25 = '';
@@ -420,7 +420,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_26 = isset($_POST['respuesta_26']) ? $_POST['respuesta_26'] : '';
-   if ($respuesta_26 === '75') {  
+   if ($respuesta_26 === 'izquierda') {  
        $verificar_26 = "correcto";
    } elseif ($respuesta_26 === '') {
        $verificar_26 = '';
@@ -430,7 +430,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_27 = isset($_POST['respuesta_27']) ? $_POST['respuesta_27'] : '';
-   if ($respuesta_27 === '90') {  
+   if ($respuesta_27 === 'derecha') {  
        $verificar_27 = "correcto";
    } elseif ($respuesta_27 === '') {
        $verificar_27 = '';
@@ -440,7 +440,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_28 = isset($_POST['respuesta_28']) ? $_POST['respuesta_28'] : '';
-   if ($respuesta_28 === '105') {  
+   if ($respuesta_28 === '11100') {  
        $verificar_28 = "correcto";
    } elseif ($respuesta_28 === '') {
        $verificar_28 = '';
@@ -450,7 +450,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_29 = isset($_POST['respuesta_29']) ? $_POST['respuesta_29'] : '';
-   if ($respuesta_29 === '120') {  
+   if ($respuesta_29 === '32') {  
        $verificar_29 = "correcto";
    } elseif ($respuesta_29 === '') {
        $verificar_29 = '';
@@ -460,7 +460,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_30 = isset($_POST['respuesta_30']) ? $_POST['respuesta_30'] : '';
-   if ($respuesta_30 === '135') {  
+   if ($respuesta_30 === '32') {  
        $verificar_30 = "correcto";
    } elseif ($respuesta_30 === '') {
        $verificar_30 = '';
@@ -470,7 +470,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_31 = isset($_POST['respuesta_31']) ? $_POST['respuesta_31'] : '';
-   if ($respuesta_31 === '150') {  
+   if ($respuesta_31 === '64') {  
        $verificar_31 = "correcto";
    } elseif ($respuesta_31 === '') {
        $verificar_31 = '';
@@ -480,7 +480,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_32 = isset($_POST['respuesta_32']) ? $_POST['respuesta_32'] : '';
-   if ($respuesta_32 === '165') {  
+   if ($respuesta_32 === 'Cantidad de bits') {  
        $verificar_32 = "correcto";
    } elseif ($respuesta_32 === '') {
        $verificar_32 = '';
@@ -490,7 +490,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_33 = isset($_POST['respuesta_33']) ? $_POST['respuesta_33'] : '';
-   if ($respuesta_33 === '180') {  
+   if ($respuesta_33 === 'Precision') {  
        $verificar_33 = "correcto";
    } elseif ($respuesta_33 === '') {
        $verificar_33 = '';
@@ -499,7 +499,7 @@ if ($_POST) {
    }
 
     $respuesta_34 = isset($_POST['respuesta_34']) ? $_POST['respuesta_34'] : '';
-    if ($respuesta_34 === '32') { 
+    if ($respuesta_34 === 'Rango') { 
         $verificar_34 = "correcto";
     } elseif ($respuesta_34 === '') {
         $verificar_34 = '';
@@ -508,7 +508,7 @@ if ($_POST) {
     }
 
     $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
-    if ($respuesta_35 === '48') { 
+    if ($respuesta_35 === 'rango') { 
         $verificar_35 = "correcto";
     } elseif ($respuesta_35 === '') {
         $verificar_35 = '';
@@ -517,7 +517,7 @@ if ($_POST) {
     }
 
     $respuesta_36 = isset($_POST['respuesta_36']) ? $_POST['respuesta_36'] : '';
-    if ($respuesta_36 === '64') { 
+    if ($respuesta_36 === 'la precision') { 
         $verificar_36 = "correcto";
     } elseif ($respuesta_36 === '') {
     $verificar_36 = '';
@@ -526,7 +526,7 @@ if ($_POST) {
     }
 
     $respuesta_37 = isset($_POST['respuesta_37']) ? $_POST['respuesta_37'] : '';
-    if ($respuesta_37 === '80') { 
+    if ($respuesta_37 === 'exponente') { 
         $verificar_37 = "correcto";
     } elseif ($respuesta_37 === '') {
         $verificar_37 = '';
@@ -535,7 +535,7 @@ if ($_POST) {
     }
 
     $respuesta_38 = isset($_POST['respuesta_38']) ? $_POST['respuesta_38'] : '';
-    if ($respuesta_38 === '96') { 
+    if ($respuesta_38 === 'mantisa') { 
         $verificar_38 = "correcto";
     } elseif ($respuesta_38 === '') {
         $verificar_38 = '';
@@ -1827,7 +1827,151 @@ Ej.: 95% significa que
 
 <div class="seccion derecha">
 
+   <div class="conversion-binario">
+  <h3>Conversión de la parte entera a binario</h3>
+  <p>Se divide el número entre 2 sucesivamente y se registran los restos.</p>
+  <p><strong>Se leen los restos de abajo hacia arriba.</strong></p>
+
+  <h4>Ejemplo: 23 en binario</h4>
+  <ul>
+    <li>23 ÷ 2 = 11 resto 1</li>
+    <li>11 ÷ 2 = 5 resto 1</li>
+    <li>5 ÷ 2 = 2 resto 1</li>
+    <li>2 ÷ 2 = 1 resto 0</li>
+    <li>1 ÷ 2 = 0 resto 1</li>
+  </ul>
+  <p><strong>Lectura de 
+  <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="7">  
+    hacia 
+  <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="7">
+    → 10111</strong></p>
+
+  <h3>Conversión de la parte decimal a binario</h3>
+  <p>Se multiplica la fracción por 2 sucesivamente y se toma la parte entera de cada producto.</p>
+  <p><strong>Se leen los resultados de arriba hacia abajo.</strong></p>
+
+  <h4>Ejemplo: 0.625 en binario</h4>
+  <ul>
+    <li>0.625 × 2 = 1.25 → parte entera 1</li>
+    <li>0.25 × 2 = 0.5 → parte entera 0</li>
+    <li>0.5 × 2 = 1.0 → parte entera 1</li>
+  </ul>
+  <p><strong>Lectura de 
+  <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="7">  
+  arriba hacia 
+  <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="7">
+  abajo → 0.101</strong></p>
+</div>
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_22 ?>
+    <?php echo $verificar_23 ?>
+    <?php echo $verificar_24 ?>
+    <?php echo $verificar_25 ?>
+    <hr>
+
+
+
+    <div class="q6-7-explicacion">
+  <p>En <strong>Q6.7</strong> (6 bits para la parte entera y 7 bits para la fraccionaria), los ceros que “faltan” para 
+  completar los bits siempre se agregan <strong>a la 
+  <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="7">  
+    de la parte entera</strong> y <strong>a la 
+  <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="7">  
+    de 
+    la parte fraccionaria</strong>:</p>
+
+  <h3>Reglas generales</h3>
+
+  <h4>Parte entera (6 bits)</h4>
+  <p>Si el número en binario tiene menos de 6 bits, se agregan ceros
+  <input type="text"   value="<?php echo $respuesta_26; ?>" size="7" readonly>   
+  .</p>
+  <p><strong>Ejemplo:</strong></p>
+  <pre class="mono">
+28 en binario = 11100 (5 bits)
+Q6 → 011100
+  </pre>
+  <p>Esto asegura que la magnitud esté correctamente alineada en los bits de la palabra.</p>
+
+  <h4>Parte fraccionaria (7 bits)</h4>
+  <p>Si el número fraccionario tiene menos de 7 bits, se agregan ceros 
+  <input type="text"   value="<?php echo $respuesta_27; ?>" size="7" readonly>  
+  (después del punto binario).</p>
+  <p><strong>Ejemplo:</strong></p>
+  <pre class="mono">
+Fracción 0.7 ≈ 0.1011001… (bits obtenidos)
+Tomamos 7 bits → 1011001
+  </pre>
+  <p>El <strong>bit 8</strong> se usa solo para la regla de redondeo, y no forma parte del valor almacenado si se redondea.</p>
+
+  <button type="submit">Enviar</button> 
+    <?php echo $verificar_26 ?>
+    <?php echo $verificar_27 ?>
+
+    <hr>
+    <strong>conversion a binario de 28 (utilizar la tabla):
+    <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="7">
+    </strong>
+</div>
+ 
+      <h1> Tipos de formatos más comunes <span class="badge">enteros &amp; flotantes</span></h1>
+
+      <section>
+        <ul>
+          <li>En la mayoría de máquinas actuales:
+            <ul>
+              <li><code>int</code> = <strong>
+              <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="7">  
+              bits</strong> <span class="note">(pero puede variar en C/C++)</span></li>
+              <li><code>float</code> = <strong>
+              <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="7">  
+                bits</strong> fijo (IEEE 754)</li>
+              <li><code>double</code> = <strong>
+              <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="7">  
+               bits</strong> fijo (IEEE 754)</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <p class="note">Nota: valores y rangos mostrados son los más comunes en arquitecturas modernas.</p>
    
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_29 ?>
+    <?php echo $verificar_30 ?>
+    <?php echo $verificar_31 ?>
+    <hr>
+    <h1> Formatos numéricos en computación</h1>
+
+  <h4>1. 
+  <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="12">  
+</h4>
+  <p>Define el <strong>tamaño en memoria</strong>. Ejemplo: <code>int32</code> ocupa 32 bits, <code>float</code> también 32 bits.</p>
+
+  <h4>2.  
+<input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="7">
+</h4>
+  <p>En enteros es exacta dentro del rango. En flotantes depende de la <em>mantisa</em> y determina cuántas cifras decimales son fiables.</p>
+
+  <h4>3.  
+<input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="7">
+</h4>
+  <p>Enteros: limitado directamente por los bits (ej. <code>int32</code> → –2,147,483,648 a 2,147,483,647).<br>
+     Flotantes: rango mucho mayor gracias al exponente (ej. <code>float</code> → ±10<sup>38</sup>).</p>
+
+
+    <hr>
+
+    Tanto el 
+    <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="7">
+      como 
+    <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="7">
+      dependen de la cantidad total de bits disponibles y de cómo se reparten entre 
+    <input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="7">
+      y 
+    <input type="text" name="respuesta_38" value="<?php echo $respuesta_38; ?>" size="7">
+      (en el caso de los flotantes).
+
 </div>
 </div>
  </form>

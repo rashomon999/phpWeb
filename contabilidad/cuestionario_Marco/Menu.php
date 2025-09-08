@@ -33,6 +33,7 @@
 
         <a class="btn" href=".\capitulo1_2\index.php"> cuestionario capitulo 1 y 2</a>
  
+        <a class="btn" href=".\general\index.php"> cuestionario todos los capitulos</a>
     </div>
 </body>
 </html>

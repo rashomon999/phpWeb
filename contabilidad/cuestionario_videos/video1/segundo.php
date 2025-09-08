@@ -1437,7 +1437,7 @@ function ocultarMensaje4() {
 </head>
 <body> 
     
-<form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+<form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
 <div class="form-container"> 
 <div class="seccion izquierda">
        
@@ -1575,7 +1575,7 @@ resultado (
 
 <p><strong>En resumen:</strong></p>
 <p><code>
-<input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="8">    
+<input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="20">    
   = 
 <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="8">
   − 
@@ -1587,9 +1587,28 @@ resultado (
  </code></p>
 
  
+<button onmousedown="mostrarImagen()" onmouseup="ocultarImagen()">Explicacion</button>
+    <!-- Elemento para mostrar la imagen -->
 
- <img src="../../../img/guia_117.png" alt="" width="700">
-    
+    <img id="imagenMostrada" src="../../../img/guia_117.png" style="display: none; max-width: 100%" width="560">
+
+    <script>
+        function mostrarImagen() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada');
+
+        // Mostrar la imagen
+        imagenMostrada.style.display = 'block';
+        }
+
+        function ocultarImagen() {
+        var imagenMostrada = document.getElementById('imagenMostrada');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada.style.display = 'none';
+        }
+    </script>
+
+     
 </div>
 
 

@@ -1931,7 +1931,7 @@ como en este ejemplo:
 
 <p>Varios bloques de direcciones IP se reservan justamente para este propósito: para su uso en redes privadas que no están conectadas a Internet o en redes que están ocultas detrás de un firewall. Existen tres rangos de direcciones de este tipo, resumidos en la <strong>Tabla 3-6</strong>. Siempre que crees una red TCP/IP privada, debes usar direcciones IP de uno de estos rangos.</p>
 
-
+    
 </div>
 </div>
  </form>

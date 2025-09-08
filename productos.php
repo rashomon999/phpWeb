@@ -17,7 +17,9 @@ $links = ["arquitecturaComputadores/Menu.php","compunet/Menu.php",
     "fisica/Menu.php"
     ,"ingesoft/Menu.php",  "Ingles/Menu.php", 
          "java/index.php", "Matematicas/Menu.php", "musica/CM.php", 
-         "operaciones_basicas/index.php", "scala/Menu.php", "SistemaDatos/Menu.php"];
+         "operaciones_basicas/index.php", "scala/Menu.php", "SistemaDatos/Menu.php"
+        , "transhumantes/Menu.php"
+        ];
 
 echo "<p>Consulta SQL: <code>SELECT * FROM libros WHERE categoria = 'principal' ORDER BY nombre ASC;</code></p>";
 

@@ -33,6 +33,7 @@
         <a class="btn" href=".\Ejemplos\index.php">Ejemplo</a>
         <a class="btn" href=".\direccionamiento\index.php">direccionamiento</a>
         <a class="btn" href=".\guia\index.php"> guia direccionamiento</a>
+        <a class="btn" href=".\apuntes\index.php"> apuntes </a>
         <br><br><br>
         <a class="btn" href=".\cuestionario_potencias\index.php"> cuestionario potencias </a>
     </div>

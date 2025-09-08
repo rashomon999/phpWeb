@@ -169,7 +169,7 @@ if ($_POST) {
 
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '26') {  
+   if ($respuesta_1 === '2') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -179,7 +179,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === '39') {  
+   if ($respuesta_2 === '4096' || $respuesta_2 === '4,096') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -189,7 +189,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === '52') {  
+   if ($respuesta_3 === '4') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -199,7 +199,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === '65') {  
+   if ($respuesta_4 === '8192' || $respuesta_4 === '8,192') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -209,7 +209,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === '78') {  
+   if ($respuesta_5 === '8') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -219,7 +219,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === '91') {  
+   if ($respuesta_6 === '16384' || $respuesta_6 === '16,384') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -229,7 +229,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === '104') {  
+   if ($respuesta_7 === '16') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -239,7 +239,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === '117') {  
+   if ($respuesta_8 === '32768' || $respuesta_8 === '32,768') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -249,7 +249,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === '130') {  
+   if ($respuesta_9 === '32') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -259,7 +259,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === '143') {  
+   if ($respuesta_10 === '65536' || $respuesta_10 === '65,536') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -269,7 +269,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === '156') {  
+   if ($respuesta_11 === '64') {  
        $verificar_11 = "correcto";
    } elseif ($respuesta_11 === '') {
        $verificar_11 = '';
@@ -280,7 +280,7 @@ if ($_POST) {
 
     // Verificar la respuesta de la primera pregunta
     $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-    if ($respuesta_12 === '28') {  
+    if ($respuesta_12 === '131072' || $respuesta_12 === '131,072') {  
         $verificar_12 = "correcto";
     } elseif ($respuesta_12 === '') {
         $verificar_12 = '';
@@ -290,7 +290,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la segunda pregunta
     $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-    if ($respuesta_13 === '42') { 
+    if ($respuesta_13 === '128') { 
         $verificar_13 = "correcto";
     } elseif ($respuesta_13 === '') {
         $verificar_13 = '';
@@ -300,7 +300,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la tercera pregunta
     $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-    if ($respuesta_14 === '56') {  
+    if ($respuesta_14 === '262144' || $respuesta_14 === '262,144') {  
         $verificar_14 = "correcto";
     } elseif ($respuesta_14 === '') {
         $verificar_14 = '';
@@ -310,7 +310,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la cuarta pregunta
     $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-    if ($respuesta_15 === '70') { 
+    if ($respuesta_15 === '256') { 
         $verificar_15 = "correcto";
     } elseif ($respuesta_15 === '') {
         $verificar_15 = '';
@@ -320,7 +320,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la quinta pregunta
     $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-    if ($respuesta_16 === '84') {  
+    if ($respuesta_16 === '524288' || $respuesta_16 === '524,288') {  
         $verificar_16 = "correcto";
     } elseif ($respuesta_16 === '') {
         $verificar_16 = '';
@@ -330,7 +330,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la sexta pregunta
     $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-    if ($respuesta_17 === '98') {  
+    if ($respuesta_17 === '512') {  
         $verificar_17 = "correcto";
         } elseif ($respuesta_17 === '') {
         $verificar_17 = '';
@@ -340,7 +340,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la séptima pregunta
     $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-    if ($respuesta_18 === '112') {  
+    if ($respuesta_18 === '1048576' || $respuesta_18 === '1,048,576') {  
         $verificar_18 = "correcto";
     } elseif ($respuesta_18 === '') {
         $verificar_18 = '';
@@ -350,7 +350,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la octava pregunta
     $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-    if ($respuesta_19 === '126') {  
+    if ($respuesta_19 === '1,024' || $respuesta_19 === '1024') {  
         $verificar_19 = "correcto";
     } elseif ($respuesta_19 === '') {
         $verificar_19 = '';
@@ -360,7 +360,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la novena pregunta
     $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
-    if ($respuesta_20 === '140') {  
+    if ($respuesta_20 === '2,097,152' || $respuesta_20 === '2097152') {  
         $verificar_20 = "correcto";
     } elseif ($respuesta_20 === '') {
         $verificar_20 = '';
@@ -370,7 +370,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la décima pregunta
     $respuesta_21 = isset($_POST['respuesta_21']) ? $_POST['respuesta_21'] : '';
-    if ($respuesta_21 === '154') {  
+    if ($respuesta_21 === '2,048' || $respuesta_21 === '2048') {  
          $verificar_21 = "correcto";
     } elseif ($respuesta_21 === '') {
         $verificar_21 = '';
@@ -380,7 +380,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la undécima pregunta
     $respuesta_22 = isset($_POST['respuesta_22']) ? $_POST['respuesta_22'] : '';
-    if ($respuesta_22 === '168') {  
+    if ($respuesta_22 === '4,194,304' || $respuesta_22 === '4194304') {  
         $verificar_22 = "correcto";
     } elseif ($respuesta_22 === '') {
         $verificar_22 = '';
@@ -390,7 +390,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
    $respuesta_23 = isset($_POST['respuesta_23']) ? $_POST['respuesta_23'] : '';
-   if ($respuesta_23 === '30') {  
+   if ($respuesta_23 === '10') {  
        $verificar_23 = "correcto";
    } elseif ($respuesta_23 === '') {
        $verificar_23 = '';
@@ -400,7 +400,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_24 = isset($_POST['respuesta_24']) ? $_POST['respuesta_24'] : '';
-   if ($respuesta_24 === '45') {  
+   if ($respuesta_24 === '9') {  
        $verificar_24 = "correcto";
    } elseif ($respuesta_24 === '') {
        $verificar_24 = '';
@@ -410,7 +410,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_25 = isset($_POST['respuesta_25']) ? $_POST['respuesta_25'] : '';
-   if ($respuesta_25 === '60') { 
+   if ($respuesta_25 === '4') { 
        $verificar_25 = "correcto";
    } elseif ($respuesta_25 === '') {
        $verificar_25 = '';
@@ -420,7 +420,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_26 = isset($_POST['respuesta_26']) ? $_POST['respuesta_26'] : '';
-   if ($respuesta_26 === '75') {  
+   if ($respuesta_26 === '1022') {  
        $verificar_26 = "correcto";
    } elseif ($respuesta_26 === '') {
        $verificar_26 = '';
@@ -430,7 +430,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_27 = isset($_POST['respuesta_27']) ? $_POST['respuesta_27'] : '';
-   if ($respuesta_27 === '90') {  
+   if ($respuesta_27 === '510') {  
        $verificar_27 = "correcto";
    } elseif ($respuesta_27 === '') {
        $verificar_27 = '';
@@ -440,7 +440,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_28 = isset($_POST['respuesta_28']) ? $_POST['respuesta_28'] : '';
-   if ($respuesta_28 === '105') {  
+   if ($respuesta_28 === '14') {  
        $verificar_28 = "correcto";
    } elseif ($respuesta_28 === '') {
        $verificar_28 = '';
@@ -450,7 +450,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_29 = isset($_POST['respuesta_29']) ? $_POST['respuesta_29'] : '';
-   if ($respuesta_29 === '120') {  
+   if ($respuesta_29 === '255.255.252.0') {  
        $verificar_29 = "correcto";
    } elseif ($respuesta_29 === '') {
        $verificar_29 = '';
@@ -460,7 +460,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_30 = isset($_POST['respuesta_30']) ? $_POST['respuesta_30'] : '';
-   if ($respuesta_30 === '135') {  
+   if ($respuesta_30 === '255.255.254.0') {  
        $verificar_30 = "correcto";
    } elseif ($respuesta_30 === '') {
        $verificar_30 = '';
@@ -470,7 +470,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_31 = isset($_POST['respuesta_31']) ? $_POST['respuesta_31'] : '';
-   if ($respuesta_31 === '150') {  
+   if ($respuesta_31 === '255.255.255.240') {  
        $verificar_31 = "correcto";
    } elseif ($respuesta_31 === '') {
        $verificar_31 = '';
@@ -480,7 +480,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_32 = isset($_POST['respuesta_32']) ? $_POST['respuesta_32'] : '';
-   if ($respuesta_32 === '165') {  
+   if ($respuesta_32 === '/22') {  
        $verificar_32 = "correcto";
    } elseif ($respuesta_32 === '') {
        $verificar_32 = '';
@@ -490,7 +490,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_33 = isset($_POST['respuesta_33']) ? $_POST['respuesta_33'] : '';
-   if ($respuesta_33 === '180') {  
+   if ($respuesta_33 === '/23') {  
        $verificar_33 = "correcto";
    } elseif ($respuesta_33 === '') {
        $verificar_33 = '';
@@ -499,7 +499,7 @@ if ($_POST) {
    }
 
     $respuesta_34 = isset($_POST['respuesta_34']) ? $_POST['respuesta_34'] : '';
-    if ($respuesta_34 === '32') { 
+    if ($respuesta_34 === '/28') { 
         $verificar_34 = "correcto";
     } elseif ($respuesta_34 === '') {
         $verificar_34 = '';
@@ -508,7 +508,7 @@ if ($_POST) {
     }
 
     $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
-    if ($respuesta_35 === '48') { 
+    if ($respuesta_35 === '9') { 
         $verificar_35 = "correcto";
     } elseif ($respuesta_35 === '') {
         $verificar_35 = '';
@@ -517,7 +517,7 @@ if ($_POST) {
     }
 
     $respuesta_36 = isset($_POST['respuesta_36']) ? $_POST['respuesta_36'] : '';
-    if ($respuesta_36 === '64') { 
+    if ($respuesta_36 === '8') { 
         $verificar_36 = "correcto";
     } elseif ($respuesta_36 === '') {
     $verificar_36 = '';
@@ -526,7 +526,7 @@ if ($_POST) {
     }
 
     $respuesta_37 = isset($_POST['respuesta_37']) ? $_POST['respuesta_37'] : '';
-    if ($respuesta_37 === '80') { 
+    if ($respuesta_37 === '5') { 
         $verificar_37 = "correcto";
     } elseif ($respuesta_37 === '') {
         $verificar_37 = '';
@@ -535,7 +535,7 @@ if ($_POST) {
     }
 
     $respuesta_38 = isset($_POST['respuesta_38']) ? $_POST['respuesta_38'] : '';
-    if ($respuesta_38 === '96') { 
+    if ($respuesta_38 === '15') { 
         $verificar_38 = "correcto";
     } elseif ($respuesta_38 === '') {
         $verificar_38 = '';
@@ -544,7 +544,7 @@ if ($_POST) {
     }
 
     $respuesta_39 = isset($_POST['respuesta_39']) ? $_POST['respuesta_39'] : '';
-    if ($respuesta_39 === '112') { 
+    if ($respuesta_39 === '8') { 
         $verificar_39 = "correcto";
     } elseif ($respuesta_39 === '') {
         $verificar_39 = '';
@@ -553,7 +553,7 @@ if ($_POST) {
     }
 
     $respuesta_40 = isset($_POST['respuesta_40']) ? $_POST['respuesta_40'] : '';
-    if ($respuesta_40 === '128') { 
+    if ($respuesta_40 === '3') { 
         $verificar_40 = "correcto";
     } elseif ($respuesta_40 === '') {
         $verificar_40 = '';
@@ -562,7 +562,7 @@ if ($_POST) {
     }
 
     $respuesta_41 = isset($_POST['respuesta_41']) ? $_POST['respuesta_41'] : '';
-    if ($respuesta_41 === '144') { 
+    if ($respuesta_41 === '255.255.254.0') { 
         $verificar_41 = "correcto";
     } elseif ($respuesta_41 === '') {
         $verificar_41 = '';
@@ -571,7 +571,7 @@ if ($_POST) {
     }
 
     $respuesta_42 = isset($_POST['respuesta_42']) ? $_POST['respuesta_42'] : '';
-    if ($respuesta_42 === '160') { 
+    if ($respuesta_42 === '255.255.255.0') { 
         $verificar_42 = "correcto";
     } elseif ($respuesta_42 === '') {
         $verificar_42 = '';
@@ -580,7 +580,7 @@ if ($_POST) {
     }
 
     $respuesta_43 = isset($_POST['respuesta_43']) ? $_POST['respuesta_43'] : '';
-    if ($respuesta_43 === '176') { 
+    if ($respuesta_43 === '255.255.255.224') { 
         $verificar_43 = "correcto";
     } elseif ($respuesta_43 === '') {
         $verificar_43 = '';
@@ -589,7 +589,7 @@ if ($_POST) {
     }
 
     $respuesta_44 = isset($_POST['respuesta_44']) ? $_POST['respuesta_44'] : '';
-    if ($respuesta_44 === '192') { 
+    if ($respuesta_44 === '/23') { 
         $verificar_44 = "correcto";
     } elseif ($respuesta_44 === '') {
     $verificar_44 = '';
@@ -598,7 +598,7 @@ if ($_POST) {
     }
 
     $respuesta_45 = isset($_POST['respuesta_45']) ? $_POST['respuesta_45'] : '';
-    if ($respuesta_45 === '34') { 
+    if ($respuesta_45 === '/24') { 
         $verificar_45 = "correcto";
     } elseif ($respuesta_45 === '') {
     $verificar_45 = '';
@@ -607,7 +607,7 @@ if ($_POST) {
     }
 
     $respuesta_46 = isset($_POST['respuesta_46']) ? $_POST['respuesta_46'] : '';
-    if ($respuesta_46 === '51') { 
+    if ($respuesta_46 === '/27') { 
         $verificar_46 = "correcto";
     } elseif ($respuesta_46 === '') {
     $verificar_46 = '';
@@ -616,7 +616,7 @@ if ($_POST) {
     }
 
     $respuesta_47 = isset($_POST['respuesta_47']) ? $_POST['respuesta_47'] : '';
-    if ($respuesta_47 === '68') { 
+    if ($respuesta_47 === '2^n') { 
         $verificar_47 = "correcto";
     } elseif ($respuesta_47 === '') {
         $verificar_47 = '';
@@ -1395,7 +1395,7 @@ function handleSubmit(event) {
 }
 
 function actualizarFormula() {
-    var f = document.getElementById('respuesta_1').value || "";
+    var f = document.getElementById('respuesta_47').value || "";
     var formula = ` \\ ${f} \\, `;
     document.getElementById('formula').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
@@ -1404,9 +1404,9 @@ function actualizarFormula() {
 }
 
 function actualizarFormula2() {
-    var f = document.getElementById('respuesta_2').value || "";
+    var f = document.getElementById('respuesta_48').value || "";
     var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula2').innerHTML = `$$ ${formula} $$`;
+    document.getElementById('formula2').innerHTML = `\\( ${formula} \\)`;
     if (window.MathJax) {
         MathJax.typeset();
     }
@@ -1652,22 +1652,29 @@ function ocultarMensaje4() {
     <p>Existen varias fórmulas y reglas usadas para calcular subnets. Las fórmulas y reglas se discuten a continuación.</p>
 
     <h2>Fórmula para calcular el número de subnets</h2>
-    <p>Para calcular el número de subnets posibles, use la fórmula <b>2<sup>n</sup></b>, donde <i>n</i> es igual al número 
+    <p>Para calcular el número de subnets posibles, use la fórmula 
+    <span id="formula">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_47" size="10" id="respuesta_47" oninput="actualizarFormula()" 
+    value="<?php echo $respuesta_47?>" size="15" >
+    donde <i>n</i> es igual al número 
     de bits de host tomados prestados. Por ejemplo, si se toman prestados tres bits de host, entonces n=3. 
     <br>
-    2<sup>3</sup> = 8, 
+    <span id="formula2">
+        \(   \)
+    </span> 
+    <input type="text" name="respuesta_48" size="10" id="respuesta_48" oninput="actualizarFormula2()" 
+    value="<?php echo $respuesta_48?>" size="15" >
+    = 8, 
     por lo tanto, son posibles ocho subnets si se toman prestados tres bits de host.</p>
 
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_47 ?>
+    <hr>
     <p>La siguiente tabla lista las potencias de 2.</p>
 
-    
-</div>
-
-
-
-
-<div class="seccion derecha">
- 
      <h2>Tabla de subnets posibles según bits tomados prestados</h2>
   <table border="1" cellspacing="0" cellpadding="5">
     <tr>
@@ -1735,13 +1742,38 @@ function ocultarMensaje4() {
     </td></tr>
   </table>
 
-  <h2>Paso 3 del proceso de subnetting</h2>
-  <p>Para completar el tercer paso del proceso de <i>subnetting</i>, determine cuántos bits de host deben tomarse prestados y reescriba la fórmula como <b>2<sup>n</sup> &gt; (número de subnets requeridas)</b>. Por ejemplo, si el número de subnets requeridas es 18, entonces escriba la fórmula como 2<sup>n</sup> &gt; 18. Resuelva para <i>n</i> llegando lo más cerca posible al número de subnets requeridas sin quedar por debajo. En este ejemplo, n = 5 (2<sup>5</sup> = 32). Esto significa que para crear al menos 18 subnets, deben tomarse prestados 5 bits de host.</p>
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_1 ?>
+    <?php echo $verificar_2 ?>
+    <?php echo $verificar_3 ?>
+    <?php echo $verificar_4 ?>
+    <?php echo $verificar_5 ?>
+    <?php echo $verificar_6 ?>
+    <?php echo $verificar_7 ?>  
+    <?php echo $verificar_8 ?>
+    <?php echo $verificar_9 ?>
+    <?php echo $verificar_10 ?>
+    <?php echo $verificar_11 ?> 
+     <?php echo $verificar_12 ?>
+    <?php echo $verificar_13 ?>
+    <?php echo $verificar_14 ?>
+    <?php echo $verificar_15 ?>
+    <?php echo $verificar_16 ?>
+    <?php echo $verificar_17 ?>
+    <?php echo $verificar_18 ?>
+    <?php echo $verificar_19 ?>
+    <?php echo $verificar_20 ?>
+    <?php echo $verificar_21 ?>
+    <?php echo $verificar_22 ?>
+    <hr>
+
+
+      <p>Para completar el tercer paso del proceso de <i>subnetting</i>, determine cuántos bits de host deben tomarse prestados y reescriba la fórmula como <b>2<sup>n</sup> &gt; (número de subnets requeridas)</b>. Por ejemplo, si el número de subnets requeridas es 18, entonces escriba la fórmula como 2<sup>n</sup> &gt; 18. Resuelva para <i>n</i> llegando lo más cerca posible al número de subnets requeridas sin quedar por debajo. En este ejemplo, n = 5 (2<sup>5</sup> = 32). Esto significa que para crear al menos 18 subnets, deben tomarse prestados 5 bits de host.</p>
 
   <h2>Cálculo de hosts posibles por subnet</h2>
   <p>Para calcular el número de hosts posibles por subnet, use la fórmula <b>2<sup>h</sup> - 2</b>, donde <i>h</i> es igual al número de bits de host. La razón por la cual se deben restar dos direcciones es por la dirección de red y la dirección de broadcast.</p>
 
-  <h3>Método 1: Basado en bits disponibles</h3>
+      <h3>Método 1: Basado en bits disponibles</h3>
   <ol>
     <li>Determinar el espacio de direcciones IP asignado.</li>
     <li>Determinar el número de bits de host disponibles.</li>
@@ -1751,6 +1783,17 @@ function ocultarMensaje4() {
     <li>Calcular la nueva máscara de subred y el prefijo. Ejemplos para cada clase de espacio de direcciones IP se muestran en la siguiente tabla:</li>
   </ol>
 
+</div>
+
+
+
+
+<div class="seccion derecha">
+ 
+     
+ 
+ 
+ 
   <table border="1" cellspacing="0" cellpadding="5">
     <tr>
       <th>Espacio de Dirección IP</th>
@@ -1772,30 +1815,43 @@ function ocultarMensaje4() {
     </tr>
     <tr>
       <td>Número de Bits de Host Restantes (h)</td>
-      <td>24 - 14 = 10</td>
-      <td>16 - 7 = 9</td>
-      <td>8 - 4 = 4</td>
+      <td> <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>"></td>
+      <td> <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>"></td>
+      <td> <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>"> </td>
     </tr>
     <tr>
       <td>Número de Hosts Posibles</td>
-      <td>2<sup>10</sup> = 1,024 → 1,024 - 2 = 1,022</td>
-      <td>2<sup>9</sup> = 512 → 512 - 2 = 510</td>
-      <td>2<sup>4</sup> = 16 → 16 - 2 = 14</td>
+      <td>  <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>"> </td>
+      <td>  <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>"> </td>
+      <td>  <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>"> </td>
     </tr>
     <tr>
       <td>Nueva Máscara de Subred</td>
-      <td>255.255.252.0</td>
-      <td>255.255.254.0</td>
-      <td>255.255.255.240</td>
+      <td> <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>"> </td>
+      <td> <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>"> </td>
+      <td> <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>"> </td>
     </tr>
     <tr>
       <td>Nuevo Prefijo</td>
-      <td>/22</td>
-      <td>/23</td>
-      <td>/28</td>
+      <td> <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>"> </td>
+      <td> <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>"> </td>
+      <td> <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>"> </td>
     </tr>
   </table>
-
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_23 ?>
+    <?php echo $verificar_24 ?>
+    <?php echo $verificar_25 ?>
+    <?php echo $verificar_26 ?>
+    <?php echo $verificar_27 ?>
+    <?php echo $verificar_28 ?>
+    <?php echo $verificar_29 ?>
+    <?php echo $verificar_30 ?>
+    <?php echo $verificar_31 ?>
+    <?php echo $verificar_32 ?>
+    <?php echo $verificar_33 ?>
+    <?php echo $verificar_34 ?>
+    <hr>
   <h3>Método 2: Basado en número de hosts requeridos</h3>
   <ol>
     <li>Determinar el espacio de IP asignado.</li>
@@ -1891,30 +1947,44 @@ function ocultarMensaje4() {
     </tr>
     <tr>
       <td>Número de Bits de Host a Guardar (h)</td>
-      <td>2<sup>h</sup> - 2 &gt; 500<br>2<sup>9</sup> = 512 → 512 - 2 = 510<br>h = 9</td>
-      <td>2<sup>h</sup> - 2 &gt; 200<br>2<sup>8</sup> = 256 → 256 - 2 = 254<br>h = 8</td>
-      <td>2<sup>h</sup> - 2 &gt; 25<br>2<sup>5</sup> = 32 → 32 - 2 = 30<br>h = 5</td>
+      <td>h=<input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>"></td>
+      <td>h=<input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>"></td>
+      <td>h=<input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>"></td>
     </tr>
     <tr>
       <td>Número de Bits de Host Dados a la Porción de Red</td>
-      <td>24 - h<br>24 - 9 = 15</td>
-      <td>16 - h<br>16 - 8 = 8</td>
-      <td>8 - h<br>8 - 5 = 3</td>
+      <td> <input type="text" name="respuesta_38" value="<?php echo $respuesta_38; ?>"> </td>
+      <td> <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>"> </td>
+      <td> <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>"> </td>
     </tr>
     <tr>
       <td>Nueva Máscara de Subred</td>
-      <td>255.255.254.0</td>
-      <td>255.255.255.0</td>
-      <td>255.255.255.224</td>
+      <td> <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>"></td>
+      <td> <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>"></td>
+      <td> <input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>"></td>
     </tr>
     <tr>
       <td>Nuevo Prefijo</td>
-      <td>/23</td>
-      <td>/24</td>
-      <td>/27</td>
+      <td><input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>"></td>
+      <td><input type="text" name="respuesta_45" value="<?php echo $respuesta_45; ?>"></td>
+      <td><input type="text" name="respuesta_46" value="<?php echo $respuesta_46; ?>"></td>
     </tr>
   </table>
-    
+
+  <button type="submit">Enviar</button>
+    <?php echo $verificar_35 ?>
+    <?php echo $verificar_36 ?>
+    <?php echo $verificar_37 ?>
+    <?php echo $verificar_38 ?>
+    <?php echo $verificar_39 ?>
+    <?php echo $verificar_40 ?>
+    <?php echo $verificar_41 ?>
+    <?php echo $verificar_42 ?>
+    <?php echo $verificar_43 ?>
+    <?php echo $verificar_44 ?>
+    <?php echo $verificar_45 ?>
+    <?php echo $verificar_46 ?>
+    <hr>
 </div>
 </div>
  </form>

@@ -2748,7 +2748,7 @@ if ($respuesta_280 === '144') {
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 450vh;
+    height: 380vh;
     }
 
 </style>
@@ -3033,7 +3033,7 @@ function ocultarMensaje4() {
 
     
 <div class="seccion izquierda"> 
-  <h1>Conversión de 28.7 a Q6.7 aplicando la regla del bit 8</h1>
+  <h3>Conversión de 28.7 a Q6.7 aplicando la regla del bit 8</h3>
 
 <div class="box">
   <strong>Regla:</strong>
@@ -3046,27 +3046,63 @@ function ocultarMensaje4() {
 <h2>1️⃣ Convertir 28.7 a binario</h2>
 
 <h3>Parte entera (28)</h3>
+ 
+<h4>Método 1: Divisiones sucesivas (escalera)</h4>
+<p>Dividimos 28 sucesivamente entre 2 y anotamos los residuos:</p>
+<pre class="mono">
+28 ÷ 2 = 14, residuo 0
+14 ÷ 2 =  7, residuo 0
+ 7 ÷ 2 =  3, residuo 1
+ 3 ÷ 2 =  1, residuo 1
+ 1 ÷ 2 =  0, residuo 1
+</pre>
+<p>Se leen los residuos de abajo hacia arriba:</p>
 <p class="mono eq">28<sub>10</sub> = 11100<sub>2</sub></p>
-<p>En Q6 → 6 bits:</p>
-<p class="bits mono">011100</p>
 
-<h3>Parte fraccionaria (0.7): multiplicaciones sucesivas</h3>
-<table>
+<h4>Método 2: Tabla de potencias de 2</h4>
+<p>Buscamos qué potencias de 2 suman 28:</p>
+<ul>
+  <li>2⁴ = 16 ✅</li>
+  <li>2³ = 8 ✅</li>
+  <li>2² = 4 ✅</li>
+  <li>2¹ = 2 ❌ (ya llevamos 28)</li>
+  <li>2⁰ = 1 ❌</li>
+</ul>
+<p>Entonces:</p>
+<p class="mono eq">28 = 16 + 8 + 4 = 2⁴ + 2³ + 2²</p>
+<p class="mono eq">28<sub>10</sub> = 11100<sub>2</sub></p>
+
+<h4>En Q6 (6 bits)</h4>
+<p>Usamos 6 bits para representar el valor:</p>
+<p class="bits mono">011100</p>
+ 
+<h3>Parte fraccionaria (0.7): método de multiplicaciones sucesivas</h3>
+<p>Se multiplica la fracción por 2. El <b>entero</b> que resulte es el siguiente bit. La <b>fracción sobrante</b> se vuelve a multiplicar por 2.</p>
+
+<table border="1" cellspacing="10" cellpadding="12">
   <thead>
-    <tr><th>Paso</th><th>Fracción × 2</th><th>Bit</th></tr>
+    <tr>
+      <th>Paso</th>
+      <th>Cálculo</th>
+      <th>Entero → Bit</th>
+      <th>Fracción que continúa</th>
+    </tr>
   </thead>
   <tbody>
-    <tr><td>1</td><td>1.4</td><td>1</td></tr>
-    <tr><td>2</td><td>0.4</td><td>0</td></tr>
-    <tr><td>3</td><td>0.8</td><td>0</td></tr>
-    <tr><td>4</td><td>1.6</td><td>1</td></tr>
-    <tr><td>5</td><td>1.2</td><td>1</td></tr>
-    <tr><td>6</td><td>0.2</td><td>0</td></tr>
-    <tr><td>7</td><td>0.4</td><td>0</td></tr>
-    <tr><td>8</td><td>0.8</td><td>1</td></tr>
-    <tr><td>9</td><td>…</td><td>…</td></tr>
+    <tr><td>1</td><td>0.7 × 2 = 1.4</td><td>1</td><td>0.4</td></tr>
+    <tr><td>2</td><td>0.4 × 2 = 0.8</td><td>0</td><td>0.8</td></tr>
+    <tr><td>3</td><td>0.8 × 2 = 1.6</td><td>1</td><td>0.6</td></tr>
+    <tr><td>4</td><td>0.6 × 2 = 1.2</td><td>1</td><td>0.2</td></tr>
+    <tr><td>5</td><td>0.2 × 2 = 0.4</td><td>0</td><td>0.4</td></tr>
+    <tr><td>6</td><td>0.4 × 2 = 0.8</td><td>0</td><td>0.8</td></tr>
+    <tr><td>7</td><td>0.8 × 2 = 1.6</td><td>1</td><td>0.6</td></tr>
+    <tr><td>8</td><td>0.6 × 2 = 1.2</td><td>1</td><td>0.2</td></tr>
   </tbody>
 </table>
+<p>Los bits obtenidos en orden: <span class="mono">10110011…</span></p>
+<p>Por tanto: <span class="mono eq">0.7<sub>10</sub> =
+\( 0.1\overline{0110} \)
+<sub>2</sub></span></p>
 
 <p>Fracción infinita:</p>
 <p class="mono bits">0.7<sub>10</sub> ≈ 0.1<span class="over">0110</span><sub>2</sub></p>
@@ -3091,11 +3127,7 @@ function ocultarMensaje4() {
     <p><strong>Binario (14 bits):</strong></p>
     <p class="mono bits">00111001011010</p>
   </div>
-  <div>
-    <p><strong>En 16 bits (alineado a la derecha):</strong></p>
-    <p class="mono bits">0000&nbsp;1110&nbsp;0101&nbsp;1010</p>
-    <p><strong>Hexadecimal:</strong> <span class="mono bits">0x0E5A</span></p>
-  </div>
+ 
 </div>
 
 <h2>5️⃣ Valor representado</h2>
@@ -3110,7 +3142,9 @@ function ocultarMensaje4() {
 <p class="mono eq">28.703125 − 28.7 = <strong>+0.003125</strong></p>
 <p><em>(Este error es consecuencia de que la fracción binaria de 0.7 es infinita y se redondeó a 7 bits).</em></p>
 
+    <hr>
 
+    
 </div>
 
 
@@ -3118,7 +3152,221 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
  
+ <h3>Ejemplo: 23 − 16 usando complemento a 10</h3>
 
+  <h2>🔹 Opción 1: Fórmula directa</h2>
+  <p>
+    Número de dígitos: usamos <strong>2 dígitos</strong> (porque trabajamos en el rango 00–99).
+  </p>
+  <p>
+    \[
+      C_{10}(16)=10^{2}-16=100-16=84
+    \]
+  </p>
+
+  <h2>🔹 Opción 2: Complemento a 9 + 1</h2>
+  <p>
+    Primero calculamos el complemento a 9 de 16:
+  </p>
+  <p>
+    \[
+      C_{9}(16)=(99-16)=83
+    \]
+  </p>
+  <p>
+    Otra forma práctica (muy usada en clase):
+  </p>
+  <ul>
+    <li>A 6, ¿qué le falta para 9? → 3</li>
+    <li>A 1, ¿qué le falta para 9? → 8</li>
+  </ul>
+  <p>
+    \[
+      C_{9}(16)=83
+    \]
+  </p>
+  <p>
+    Luego le sumamos 1:
+  </p>
+  <p>
+    \[
+      C_{10}(16)=83+1=84
+    \]
+  </p>
+  <p>✅ ¡Mismo resultado!</p>
+
+  <h2>🔹 Uso en la resta</h2>
+  <p>
+    Convertimos la resta en suma con complemento a 10:
+  </p>
+  <p>
+    \[
+      23-16 = 23 + C_{10}(16) = 23 + 84 = 107
+    \]
+  </p>
+  <p>
+    Como trabajamos con <strong>2 dígitos</strong>, descartamos el acarreo (el 1 del inicio):
+  </p>
+  <p>
+    \[
+      07
+    \]
+  </p>
+  <p>
+    ✅ Resultado correcto:
+  </p>
+  <p>
+    \[
+      23-16=7
+    \]
+  </p>
+
+  <h2>💡 Nota</h2>
+  <p>
+    La regla práctica que mencionas es exactamente así: para el complemento a 10,
+    primero hallamos el <em>complemento a 9</em> (restarle a cada dígito lo que le falta para 9) y luego
+    <strong>sumamos 1</strong>:
+  </p>
+  <p>
+    \[
+      C_{10}(N) = C_{9}(N) + 1
+ 
+    \]
+  </p>
+
+
+  <hr>
+
+  <h3>273 − 094 usando complemento a 10 (dos caminos)</h3>
+
+  <h5>🔹 Camino 1: Fórmula directa del complemento a 10</h5>
+  <p>Trabajamos con <strong>3 dígitos</strong> (rango 000–999).</p>
+  <p>
+    \[
+      C_{10}(094) = 10^{3} - 94 = 1000 - 94 = 906
+    \]
+  </p>
+
+  <h5>🔹 Camino 2: Complemento a 9 + 1</h5>
+  <p>Primero el complemento a 9 de 094 (restar cada dígito a 9):</p>
+  <ul>
+    <li>Para 4: \(9 - 4 = 5\)</li>
+    <li>Para 9: \(9 - 9 = 0\)</li>
+    <li>Para 0: \(9 - 0 = 9\)</li>
+  </ul>
+  <p>
+    \[
+      C_{9}(094)=905 \quad\Rightarrow\quad C_{10}(094)=C_{9}(094)+1=905+1=906
+    \]
+  </p>
+  <p>✅ Ambos caminos dan el mismo complemento a 10: \(906\).</p>
+
+  <h5>🔹 Usar el complemento en la resta</h5>
+  <p>Convertimos la resta en suma y luego descartamos el acarreo de millar:</p>
+  <p>
+    \[
+      273 - 094 = 273 + C_{10}(094) = 273 + 906 = 1179 \;\xrightarrow{\text{descartar acarreo}}\; 179
+    \]
+  </p>
+  <p><strong>Resultado:</strong> \(\;273 - 094 = 179\).</p>
+
+  <h6>💡 Verificación rápida</h6>
+  <p>
+    \[
+      179 + 94 = 273
+    \]
+  </p>
+
+
+
+    <hr>
+
+    <h3>Resultado negativo (14 - 107)</h3>
+
+  <p>
+    Cuando trabajamos con complemento a 10 en un sistema de 3 dígitos (módulo 1000), 
+    el resultado siempre queda en el rango:
+  </p>
+  <p>
+    \[
+      0 \le R \le 999
+    \]
+  </p>
+
+  <p>La interpretación es la siguiente:</p>
+  <ul>
+    <li>Si \(\;R \in [0,499]\;\) lo leemos tal cual (es positivo).</li>
+    <li>Si \(\;R \in [500,999]\;\) significa que en realidad es un número negativo.</li>
+  </ul>
+
+  <p>
+    Y para averiguar cuál es ese número negativo, justamente lo que hacemos es volver a sacar 
+    el complemento a 10 de ese resultado, pero interpretándolo con signo negativo.
+  </p>
+
+  <h5>Ejemplo: \(14 - 107\)</h5>
+
+  <p>
+    Representamos con 3 dígitos: 
+    \[
+      014 - 107
+    \]
+  </p>
+
+  <p>Calculamos el complemento a 10 de 107:</p>
+  <p>
+    \[
+      C_{10}(107) = 1000 - 107 = 893
+    \]
+  </p>
+
+  <p>Sumamos:</p>
+  <p>
+    \[
+      014 + 893 = 907
+    \]
+  </p>
+
+  <p>👉 El resultado intermedio es \(907\).</p>
+
+  <h5>Interpretación</h5>
+  <p>
+    Como \(907 \ge 500\), está en la zona de números negativos.
+  </p>
+  <p>
+    Para conocer su valor real, tomamos el complemento a 10 de \(907\):
+  </p>
+  <p>
+    \[
+      C_{10}(907) = 1000 - 907 = 93
+    \]
+  </p>
+  <p>
+    Entonces \(907\) representa en realidad a:
+    \[
+      -93
+    \]
+  </p>
+
+  <h3>Verificación</h3>
+  <p>
+    \[
+      14 - 107 = -93
+    \]
+    ✔ Todo consistente.
+  </p>
+
+  <h6>✅ Conclusión</h6>
+  <p>
+    Cuando el resultado cae en el rango \(500–999\), se interpreta como negativo, 
+    y para conocer el valor absoluto de ese negativo se vuelve a sacar el complemento a 10.
+  </p>
+
+    <hr>
+
+
+
+    
 </div>
 </div>
  </form>

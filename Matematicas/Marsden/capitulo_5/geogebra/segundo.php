@@ -1792,7 +1792,7 @@ $$\int\int_D x^2 + y^2 \,dA.$$
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="segundo.php"
+        href="tercero.php"
         role="button"
         width="50px"
         height="50px"

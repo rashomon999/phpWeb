@@ -25,23 +25,33 @@
         .btn:hover {
             background-color: darkblue;
         }
-    </style>
-</head>
-<body>
-    <div class="centered-container">
+        /* 
         
         <strong>en construccion: </strong>
         <a class="btn" href=".\analisis_DDE\Menu.php">Analisis y diseño de experimentos (Humberto Gutiérrez Pulido, Román de 
             la Vara Salazar)</a>
 
         <a class="btn" href=".\ComputerSystem\Menu.php">Computer Systems (Randal E. Bryant • David R. O’Hallaron)</a>
-        
+
+
         <br><br>
         <strong>avances:</strong>
         <hr>
         <a class="btn" href=".\material_icesi\Menu.php">Material extra</a>
+        
+        */
+    </style>
+</head>
+<body>
+    <div class="centered-container">
+        
+         
+        
+         
 
         <a class="btn" href=".\anotaciones_clase\index.php">Anotaciones clase</a>
+
+        <a class="btn" href=".\Importante\index.php">Importante</a>
 
         <br><br>
         <strong>presaberes:</strong>
@@ -49,7 +59,7 @@
 
         <a class="btn" href=".\..\fisica\laboratorio\index.php">Error experimental</a>
 
-        <a class="btn" href=".\apuntes\Menu.php">apuntes/preguntas clase</a>
+        <a class="btn" href=".\apuntes\Menu.php">apuntes/preguntas clase/Laboratorio</a>
     </div>
 </body>
 </html>
