@@ -3098,6 +3098,49 @@ pero lo que realmente se mueve es la <b>coma</b>, siguiendo el valor del exponen
 
 <img src="../../img/guia_198.png" alt="">
 
+<p>Una equivocacion comun es pensar y diseociar, porque la mantisa en el formato no se escribe el 1 implicito</p>
+
+    <hr>
+
+    con el numero normalizado contamos el numero de ceros y \( 2^{\text{numero de ceros}} \) va a ser el primer numero
+    donde se observara perdida.
+
+    <pre>
+    1.1100100000₂ × 2⁻¹
+    </pre>
+
+    <p>Esto se puede ver en la imagen superior, con \(2^5\) ya hay perdida</p>
+
+    <p>El exponente limite va a ser el exponente de la mantiza normalizada mas el numero de ceros, en este caso
+    -1+5=4. 4 va a ser el ultimo donde no hay perdida.
+    </p>
+
+
+    <hr>
+    <p><strong>Cfloat16</strong></p>
+
+    <p>1.10100000 x \(2^{-4}\) -> 5 ceros.</p>
+     
+    <p><strong>formula:</strong>Exponente actual + ceros finales.</p>
+     
+    <p>0.00001101 x \( 2^1 \)</p>
+      
+    <p>-4+5=1, Queda positivo, corremos la coma a la izquierda.</p>
+     
+
+    <hr>
+
+    <p><strong>fp16</strong></p>
+
+    <p>1.1100100000 x \(2^{-1} \) -> 5 ceros</p>
+
+    <p><strong>formula:</strong>Exponente actual + ceros finales.</p>
+
+    <p>0.0000111001 x \( 2^4 \)</p>
+
+    <p>-1+5=4, Queda positivo, corremos la coma a la izquierda.</p>
+
+    <hr>
 </div>
 
 
