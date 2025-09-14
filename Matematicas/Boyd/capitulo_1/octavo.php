@@ -1132,6 +1132,13 @@ if ($respuesta_110 === '264') {
         max-width: 100%;
         height: auto;
     }
+
+    .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 170vh;
+}
 </style>
  
 <script>
@@ -1433,39 +1440,42 @@ function ocultarMensaje4() {
 </head>
 <body> 
 <div class="seccion izquierda">
-    <form action="./cuarto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <p>Para demostrar que \( a + b = b + a \), observemos su i-ésima entrada:</p>
+    <form action="./octavo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <h1>Vectores por Bloques</h1>
+    
+    <p>Si los vectores \( a \) y \( b \) son vectores por bloques, y los bloques correspondientes tienen el mismo tamaño (es decir, son conformes), entonces:</p>
     <p>
         \[
-        (a + b)_i = a_i + b_i
-        \]
-        \[
-        (b + a)_i = b_i + a_i
+        a^T b = \begin{bmatrix} a_1 \\ \vdots \\ a_k \end{bmatrix}^T
+        \begin{bmatrix} b_1 \\ \vdots \\ b_k \end{bmatrix} = a_1^T b_1 + \cdots + a_k^T b_k.
         \]
     </p>
-    <p>Como sabemos que la suma escalar es conmutativa, entonces \( a + b = b + a \).</p>
+    <p>El producto interno de vectores por bloques es la suma de los productos internos de los bloques.</p>
     
-    <h2>Ejemplos</h2>
-    <h3>1. Desplazamientos</h3>
-    <p>Cuando los vectores \( a \) y \( b \) representan desplazamientos, la suma \( a + b \) representa el <strong>desplazamiento neto</strong> obtenido al desplazarse primero por \( a \) y luego por \( b \), como se muestra en la figura 1.6.</p>
-    <p>Si el vector \( p \) representa una posición y el vector \( a \) representa un desplazamiento, entonces \( p + a \) es la posición final después de desplazarse desde \( p \) en la dirección de \( a \), como se muestra en la figura 1.7.</p>
-    <img src="../../img/algebra_lineal_seis.png" alt="" height="290">
+    <h2>Aplicaciones</h2>
+    <ul>
+        <li><strong>Co-ocurrencia:</strong> Si \( a \) y \( b \) son \( n \)-vectores que describen ocurrencias (es decir, cada elemento es 0 o 1), entonces \( a^T b \) da el número total de índices para los cuales \( a_i \) y \( b_i \) son ambos uno, es decir, el número total de co-ocurrencias.</li>
+        <li>Si interpretamos los vectores \( a \) y \( b \) como describiendo subconjuntos de \( n \) objetos, entonces \( a^T b \) da el número de objetos en la intersección de los dos subconjuntos.</li>
+    </ul>
+    <p>Ejemplo: Para dos subconjuntos \( A \) y \( B \) de 7 objetos, etiquetados del 1 al 7, con vectores de ocurrencia:</p>
+    <p>
+        \[
+        a = (0, 1, 1, 1, 1, 1, 1), \quad b = (1, 0, 1, 0, 1, 0, 0).
+        \]
+    </p>
+    <p>Aquí tenemos \( a^T b = 2 \), que es el número de objetos en ambos \( A \) y \( B \) (es decir, los objetos 3 y 5).</p>
+    <img src="../../../img/algebra_lineal_doce.png" alt=""> 
 
-    <br>
-    <h3>2. Desplazamientos entre dos puntos</h3>
-    <p>Si los vectores \( p \) y \( q \) representan las posiciones de dos puntos en un espacio 2D o 3D, entonces la diferencia \( p - q \) es el <strong>vector de desplazamiento</strong> desde \( q \) hasta \( p \), como se ilustra en la figura 1.8.</p>
-    <img src="../../img/algebra_lineal_siete.png" alt="" height="290">
-
-    <h3>3. Conteo de palabras</h3>
-    <p>Si \( a \) y \( b \) son vectores de conteo de palabras (utilizando el mismo diccionario) para dos documentos, la suma \( a + b \) da como resultado el <strong>vector de conteo de palabras</strong> de un documento nuevo creado combinando ambos textos (en cualquier orden).</p>
-    <p>La diferencia \( a - b \) indica cuántas veces más aparece cada palabra en el primer documento en comparación con el segundo.</p>
+    <h2>Peso, características y puntuación</h2>
+    <p>Cuando el vector \( f \) representa un conjunto de características de un objeto y \( w \) es un vector del mismo tamaño (llamado vector de pesos), el producto interno \( w^T f \) es la suma de los valores de las características ponderados por los pesos. Esto se conoce a veces como una <strong>puntuación</strong>. </p>
+    <p>Ejemplo: Si las características están asociadas a un solicitante de crédito (por ejemplo, edad, ingresos, etc.), podemos interpretar</p>
+    <p>
+        \[
+        s = w^T f
+        \]
+    </p>
+    <p>como una <strong>puntuación de crédito</strong>, donde cada \( w_i \) es el peso asignado a la característica \( i \).</p>
     
-    <h3>4. Lista de materiales</h3>
-    <p>Supongamos que \( q_1, q_2, ..., q_N \) son \( n \)-vectores que representan las cantidades de \( n \) recursos necesarios para completar \( N \) tareas.</p>
-    <p>La suma de estos vectores:</p>
-    <p>\[ q_1 + q_2 + ... + q_N \]</p>
-    <p>da como resultado la <strong>lista total de materiales</strong> necesaria para completar todas las \( N \) tareas.</p>
-      
     </form>
 </div>
 
@@ -1473,36 +1483,73 @@ function ocultarMensaje4() {
 
 
 <div class="seccion derecha">
-    <form action="./cuarto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h1>Mas Ejemplos de Aplicación de la Suma de Vectores</h1>
+    <form action="./octavo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <p>La idea de los vectores por bloques es que, en lugar de trabajar con elementos escalares individuales, los elementos de los vectores son subvectores o bloques de datos más grandes.</p>
     
-    <h2>1. Equilibrio de mercado</h2>
-    <p>Supongamos que el \( n \)-vector \( q_i \) representa las cantidades de \( n \) bienes o recursos producidos (cuando es positivo) o consumidos (cuando es negativo) por el agente \( i \), para \( i = 1, ..., N \).</p>
-    <p>Por ejemplo, \( (q_5)_4 = -3.2 \) significa que el agente 5 consume 3.2 unidades del recurso 4.</p>
-    <p>La suma \( s = q_1 + \cdots + q_N \) es el \( n \)-vector del excedente neto total de los recursos (o déficit, cuando las entradas son negativas). Cuando \( s = 0 \), tenemos un <strong>mercado cerrado</strong>, lo que significa que la cantidad total de cada recurso producido por los agentes equilibra la cantidad total consumida. En este caso, se dice que el mercado se equilibra con los vectores de recursos \( q_1, ..., q_N \).</p>
+    <h2>¿Qué cambia con los vectores por bloques?</h2>
+    <ul>
+        <li><strong>Interpretación:</strong> En un vector normal, cada entrada es un número. En un vector por bloques, cada entrada es otro vector (o una matriz pequeña).</li>
+        <li><strong>Cálculo del producto interno:</strong> En lugar de multiplicar números y sumarlos, ahora multiplicamos los bloques (que pueden ser vectores o matrices) y sumamos los productos internos de esos bloques.</li>
+        <li><strong>Aplicaciones prácticas:</strong> Se usa en problemas donde los datos vienen en grupos naturales, por ejemplo, en señales divididas en segmentos, imágenes divididas en regiones o sistemas que manejan información agrupada.</li>
+    </ul>
     
-    <h2>2. Adición de audio</h2>
-    <p>Cuando \( a \) y \( b \) son vectores que representan señales de audio en el mismo período de tiempo, la suma \( a + b \) da como resultado una señal de audio que se percibe como la combinación de ambas señales.</p>
-    <p>Por ejemplo, si \( a \) representa una grabación de voz y \( b \) una grabación de música (de la misma duración), la señal \( a + b \) se percibirá como la superposición de ambas.</p>
+    <h2>Ejemplo Concreto</h2>
+    <p>Si tenemos dos vectores normales:</p>
+    <p>
+        \[
+        a = \begin{bmatrix} 1 & 2 & 3 \end{bmatrix}, \quad b = \begin{bmatrix} 4 & 5 & 6 \end{bmatrix}
+        \]
+    </p>
+    <p>El producto interno sería:</p>
+    <p>
+        \[
+        a^T b = (1 \cdot 4) + (2 \cdot 5) + (3 \cdot 6) = 32.
+        \]
+    </p>
     
-    <h2>3. Diferencias de características</h2>
-    <p>Si \( f \) y \( g \) son \( n \)-vectores que representan \( n \) valores de características para dos objetos, el vector de diferencia \( d = f - g \) da la diferencia en los valores de características entre los dos objetos.</p>
-    <p>Por ejemplo, \( d_7 = 0 \) significa que los dos objetos tienen el mismo valor para la característica 7, mientras que \( d_3 = 1.67 \) significa que el valor de la tercera característica del primer objeto excede al del segundo en 1.67.</p>
+    <p>Si en vez de números, cada entrada es un vector (bloque), por ejemplo:</p>
+    <p>
+        \[
+        a = \begin{bmatrix} a_1 \\ a_2 \end{bmatrix}, \quad b = \begin{bmatrix} b_1 \\ b_2 \end{bmatrix}
+        \]
+    </p>
+    <p>donde</p>
+    <p>
+        \[
+        a_1 = \begin{bmatrix} 1 & 2 \end{bmatrix}, \quad a_2 = \begin{bmatrix} 3 & 4 \end{bmatrix}
+        \]
+        \[
+        b_1 = \begin{bmatrix} 5 & 6 \end{bmatrix}, \quad b_2 = \begin{bmatrix} 7 & 8 \end{bmatrix}
+        \]
+    </p>
+    <p>entonces el producto interno se calcularía como:</p>
+    <p>
+        \[
+        a^T b = a_1^T b_1 + a_2^T b_2.
+        \]
+    </p>
+    <p>Cada producto interno de los bloques es:</p>
+    <p>
+        \[
+        a_1^T b_1 = (1 \cdot 5) + (2 \cdot 6) = 17,
+        \]
+        \[
+        a_2^T b_2 = (3 \cdot 7) + (4 \cdot 8) = 53.
+        \]
+    </p>
+    <p>Sumando los resultados:</p>
+    <p>
+        \[
+        a^T b = 17 + 53 = 70.
+        \]
+    </p>
     
-    <h2>4. Series temporales</h2>
-    <p>Si \( a \) y \( b \) representan series temporales de la misma cantidad, como las ganancias diarias en dos tiendas diferentes, entonces \( a + b \) representa una serie temporal de la ganancia total diaria en ambas tiendas.</p>
-    
-    <h2>5. Comercio de portafolio</h2>
-    <p>Supongamos que \( s \) es un \( n \)-vector que representa la cantidad de acciones de \( n \) activos en un portafolio y que \( b \) es un \( n \)-vector que representa la cantidad de acciones compradas (cuando \( b_i \) es positivo) o vendidas (cuando \( b_i \) es negativo).</p>
-    <p>Después de las compras y ventas, el nuevo portafolio estará dado por \( s + b \), que es la suma del vector de portafolio original y el vector de transacciones \( b \), también llamado <strong>vector de comercio</strong> o <strong>lista de transacciones</strong>. La misma interpretación se aplica cuando los vectores representan valores en dólares.</p>
-    
-    <h2>6. Notación de adición en lenguajes de programación</h2>
-    <p>Algunos lenguajes de programación definen la suma de un vector y un escalar como el vector obtenido al sumar el escalar a cada elemento del vector. Sin embargo, esta no es una notación matemática estándar, por lo que no la utilizaremos.</p>
-    <p>Aún más confuso, en algunos lenguajes de programación, el símbolo de suma se usa para denotar la concatenación de arreglos, lo que significa poner un arreglo después de otro, como en:</p>
-    <p>\( (1, 2) + (3, 4, 5) = (1, 2, 3, 4, 5) \)</p>
-    <p>Aunque esta notación puede ser válida en algunos lenguajes, no es una notación matemática estándar. Es crucial distinguir entre la notación matemática de los vectores y la sintaxis de lenguajes de programación específicos para manipularlos.</p>
- 
-
+    <h2>Resumen</h2>
+    <ul>
+        <li>En un vector normal, el producto interno es la suma de productos de escalares.</li>
+        <li>En un vector por bloques, cada entrada es un vector y el producto interno es la suma de los productos internos de cada bloque.</li>
+        <li>Esto permite manejar datos estructurados de manera más eficiente en problemas de álgebra lineal aplicada.</li>
+    </ul>
     </form>
 </div>
 
@@ -1511,7 +1558,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="quinto.php"
+        href="nueve.php"
         role="button"
         width="50px"
         height="50px"

@@ -1137,7 +1137,7 @@ if ($respuesta_110 === '264') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 410vh;
+    height: 280vh;
     }
 </style>
  
@@ -1440,97 +1440,76 @@ function ocultarMensaje4() {
 </head>
 <body> 
 <div class="seccion izquierda">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h1>Geometría y álgebra de vectores</h1>
+    <form action="./diez.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <h2>Definición de Complejidad</h2>
+    <p>La <em>complejidad</em> de una operación es el número de flops necesarios para llevarla a cabo, en función del tamaño o tamaños de la entrada de la operación.</p>
+    <p>Normalmente, la complejidad se simplifica mucho, eliminando términos pequeños o insignificantes cuando los tamaños de las entradas son grandes.</p>
+    <p>En la ciencia de la computación teórica, el término <em>complejidad</em> se usa de manera diferente, refiriéndose al número de flops del mejor método para llevar a cabo el cálculo, es decir, el que requiere la menor cantidad de flops.</p>
+    <p>En este documento, utilizamos el término <em>complejidad</em> para referirnos al número de flops requeridos por un método específico.</p>    
+    
+    <h1>Complejidad de Operaciones con Vectores</h1>
+    
+    <h2>Multiplicación escalar-vector</h2>
+    <p>La multiplicación de un escalar \( a \) por un vector \( x \) de dimensión \( n \) requiere \( n \) multiplicaciones:</p>
+    <p>
+        \[
+        ax_i \quad \text{para } i = 1, \dots, n.
+        \]
+    </p>
+    
+    <h2>Suma de vectores</h2>
+    <p>La suma de dos vectores \( x + y \) de dimensión \( n \) requiere \( n \) sumas:</p>
+    <p>
+        \[
+        x_i + y_i \quad \text{para } i = 1, \dots, n.
+        \]
+    </p>
+    
+    <h2>Producto interno</h2>
+    <p>El cálculo del producto interno de dos vectores \( x \) y \( y \) de dimensión \( n \) toma \( 2n - 1 \) flops:</p>
+    <p>
+        \[
+        x^T y = x_1 y_1 + x_2 y_2 + \dots + x_n y_n.
+        \]
+    </p>
+    <p>Esto implica \( n \) multiplicaciones escalares y \( n-1 \) sumas escalares. Para una estimación rápida, se aproxima a \( 2n \) flops.</p>
+    
+    <h2>Orden de complejidad</h2>
+    <p>Ignorando constantes, la complejidad de estas operaciones es:</p>
+    <ul>
+        <li>Multiplicación escalar-vector: \( O(n) \).</li>
+        <li>Suma de vectores: \( O(n) \).</li>
+        <li>Producto interno: \( O(n) \).</li>
+    </ul>
+    <p>Esto significa que si el tamaño de entrada se multiplica por 10, el tiempo de ejecución también debería aumentar aproximadamente 10 veces.</p>
+    
+    <h2>Complejidad de Operaciones con Vectores Dispersos</h2>
+    <p>Si \( x \) es un vector disperso, entonces:</p>
+    <ul>
+        <li>El cálculo de \( ax \) requiere \( \text{nnz}(x) \) flops, donde \( \text{nnz}(x) \) es el número de elementos no nulos en \( x \).</li>
+        <li>La suma \( x + y \) requiere a lo sumo \( \min\{ \text{nnz}(x), \text{nnz}(y) \} \) flops.</li>
+        <li>Si los patrones de dispersión de \( x \) y \( y \) no se solapan, entonces la suma \( x + y \) requiere 0 flops.</li>
+        <li>El producto interno \( x^T y \) requiere a lo sumo \( 2 \min\{ \text{nnz}(x), \text{nnz}(y) \} \) flops.</li>
+        <li>Si los patrones de dispersión de \( x \) y \( y \) no se solapan, entonces \( x^T y = 0 \) y la operación no requiere flops.</li>
+    </ul>
 
-<h2>Vectores en el plano</h2>
-
-<p>Comience por considerar el plano cartesiano con los familiares ejes \(x\) y \(y\). Un vector es un
-segmento de recta dirigido que corresponde a un desplazamiento desde un punto \(A\) hasta
-otro punto \(B\); vea la figura 1.2.</p>
-
-<p>El vector de \(A\) a \(B\) se denota mediante \( \vec{v} \); el punto \(A\) se conoce como su punto inicial u origen, y el punto \(B\) se conoce como su punto terminal o punta. Con frecuencia,
-un vector simplemente se denota mediante una sola letra minúscula negrita, como \( \vec{v} \).</p>
-
-<p>El conjunto de todos los puntos en el plano corresponde al conjunto de todos los
-vectores cuyos orígenes están en el origen \(O\). A cada punto \(A\), le corresponde el vector
-\( \vec{a} \) y a cada vector \( \vec{a} \) con origen en \(O\), le corresponde su punta \(A\). (Los vectores de esta
-forma en ocasiones se conocen como vectores de posición.)</p>
-
-<p>Es natural representar dichos vectores usando coordenadas. Por ejemplo, en la figura
-1.3, \( A = (3, 2) \) y el vector se escribe \( \vec{a} = [3, 2] \) con corchetes. De igual modo, los
-otros vectores en la figura 1.3 son:</p>
-
-\[ b=-1,3 ~~~ \text{ y } ~~~ c=[2,-1] \]
-
-<p>Las coordenadas individuales (3 y 2 en el caso de \( \vec{a} \)) se llaman los componentes del vector. En ocasiones, se dice que un vector es un par ordenado de números reales. El orden
-es importante pues, por ejemplo, \( [3, 2] \neq [2, 3] \). En general, dos vectores son iguales si y
-sólo si sus componentes correspondientes son iguales. Por tanto, \( [x, y] = [1, 5] \) implica
-que \( x = 1 \) y \( y = 5 \).</p>
-
-<p>Con frecuencia es conveniente usar vectores columna en lugar de (o además de) vectores renglón. Otra representación de \( [3, 2] \) es:
-\(
-\begin{bmatrix} 3 \\ 2 \end{bmatrix}
-\)
-El punto importante es que los componentes están ordenados. En capítulos posteriores verá que los vectores columna
-son un tanto mejores desde el punto de vista computacional; por ahora, trate de acostumbrarse a ambas representaciones.</p>
-
-<p>Puede ocurrir que en realidad no pueda dibujar el vector \( [0, 0] \) desde el origen hacia sí mismo. No obstante, es un vector perfectamente bueno y tiene un nombre
-especial: el vector cero. El vector cero se denota \( \vec{0} \).</p>
-
-
-<img src="../../img/vector_uno.png" alt="">
-
-<p>El conjunto de todos los vectores con dos componentes se denota \( \mathbb{R}^2 \) (donde  \( \mathbb{R} \) 
-denota el conjunto de números reales de donde se eligen los componentes de los vectores
-en \( \mathbb{R}^2 \)). Por tanto, \( [1, 3.5] , [\sqrt{2}, \pi], [\frac{5}{3}, 4]\) estan todos en \( \mathbb{R}^2 \).</p>
-
-<p>Piense de nuevo en el juego de la pista de carreras y trate de conectar todas estas ideas
-con los vectores cuyos orígenes no están en el origen. El origen etimológico de la palabra
-vector en el verbo “transportar” ofrece una pista. El vector \( [3, 2] \) puede interpretarse del
-modo siguiente: a partir del origen \( O \), viaje 3 unidades a la derecha, luego 2 unidades
-arriba y termine en \( P \). El mismo desplazamiento puede aplicarse con otros puntos iniciales. 
-La figura 1.4 muestra dos desplazamientos equivalentes, representados por los vectores \( \vec{AB} \) y \( \vec{CD} \).</p>
- 
-<img src="../../img/vector_dos.png" alt="">
-
-<p>Dos vectores se definen como iguales si tienen la misma longitud y la misma dirección. Por tanto,
-\( \vec{AB} = \vec{CD} \) en la figura 1.4. . (Aun cuando tengan diferentes puntos inicial
-y final, representan el mismo desplazamiento.) Geométricamente, dos vectores son iguales si uno puede 
-obtenerse al deslizar (o trasladar) el otro paralelo a sí mismo hasta que
-los dos vectores coincidan.</p>
-
-
-<p>En terminos de componentes, en la figura 1.4 se tiene \( A = (3, 1) \) y \( B = (6, 3) \).
-Note que el vector \( [3, 2] \) que registra el desplazamiento sólo es la diferencia de los componentes respectivos:</p>
-
-\[
-\vec{AB} = B - A = [6 - 3, 3 - 1]  
-\]
-De igual modo,
-\[ \vec{CD} = [-1-(-4),1-(-1)] = [3,2] \]
- 
-<hr>
-Se dice que un vector \( \vec{OP} \)  con su punto inicial en el origen está en posición estándar. La discusión 
-anterior muestra que todo vector puede dibujarse como un vector
-en posición estándar. Por otro lado, un vector en posición estándar puede redibujarse
-(por traslación) de modo que su origen esté en cualquier punto en el plano.
-
-<hr>
-<strong>Ejemplo.1:</strong> Si A=(-1,2) y B=(3,4), encuentre \( \vec{AB} \) y vuelva a dibujarlo (a) en posicion
-estandar y (b) con su origen en el punto C=(2,-1).
-<br>
-<br>
-<strong>solucion:</strong> calcule \( \vec{AB}=[3-(-1), 4-2] = [4,2].\) Si entonces \( \vec{AB} \) se traslada hacia 
-\( \vec{CD} \), donde \( C=(2,-1) \), entonces se debe tener \( D=(2+4,-1+2)=(6,1) \). (vea la figura 1.5). 
-<br><br>
-notece que sumamos las coordenadas del nuevo origen \( C \) a las componentes del vector \( \vec{AB} \)
-<br><br>
-<hr>
-<strong>Suma de vectores:</strong><br>
-<img src="../../img/vector_tres.png" alt="" width="500">
-<br><br>
-<img src="../../img/vector_cuatro.png" alt="" width="500">
+    <hr>
+    <strong>Recordatorio notacion ():</strong>
+    <p>El paréntesis se puede utilizar en ambos casos, pero su significado depende del contexto en el que se use.</p>
+    
+    <strong> Caso 1: Paréntesis como agrupador de vectores (bloque de vectores)</strong>
+    <p>Cuando escribimos algo como \( (a, b, c) \), puede representar un <strong>bloque de vectores</strong>, lo que significa que \( a, b \) y \( c \) son vectores individuales, posiblemente organizados en una estructura más grande (como una matriz o un tensor).</p>
+    
+    <strong>Caso 2: Paréntesis como notación de un solo vector</strong>
+    <p>Cuando escribimos \( (1,2,3,4) \), usualmente esto representa un <strong>único vector de dimensión 4</strong>, donde cada número es una coordenada.</p>
+    
+    <strong>Conclusión</strong>
+    <p>El paréntesis puede usarse en ambos casos, pero la interpretación cambia según el contexto:</p>
+    <ul>
+        <li>Si los elementos dentro del paréntesis son <strong>vectores individuales</strong>, se interpreta como un <strong>bloque de vectores</strong>.</li>
+        <li>Si los elementos son <strong>números</strong>, se interpreta como un <strong>único vector</strong>.</li>
+    </ul>
+    <p>Por eso, hay que revisar el contexto en el que se usa la notación para entender su significado. </p>
 
     </form>
 </div>
@@ -1539,105 +1518,120 @@ notece que sumamos las coordenadas del nuevo origen \( C \) a las componentes de
 
 
 <div class="seccion derecha">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <strong>Vectores ortogonales: </strong>
-    El concepto de perpendicularidad es fundamental para la geometría. Quien estudie geometría rápidamente se dará cuenta de la importancia y utilidad de los ángulos rectos.
-    Ahora se generalizará la idea de la perpendicularidad para los vectores en \( R^n \), donde se le llama ortogonalidad.
-
-    <strong>Definicion: </strong> Dos vectores \( u ~~ \text{ y } ~~ v\) en \( R^n \) son mutuamente ortogonales si \( u * v = 0\).
+    <form action="./diez.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <strong>Concepto sobrecarga</strong>
     <br><br>
-    Dado que 0*v = 0 para todo vector v en  \( R^n \), el vector cero es ortogonal a todo vector.
+    <h2>Ejemplo de sobrecarga en álgebra lineal:</h2>
+    <p>En el caso de los vectores, el operador \(+\) se usa tanto para la suma escalar como para la suma de vectores:</p>
     
-    <hr>
-    <strong>producto:</strong>
-    <br><br>
-    <h2>1. Producto Escalar (también llamado Producto Punto)</h2>
-    <p>Cuando multiplicas dos vectores mediante el producto escalar (o punto), el resultado es un escalar (un número real), no otro vector. Se calcula como la suma de los productos de las componentes correspondientes de los vectores.</p>
-    <p>Si tienes dos vectores \( \vec{a} = [a_1, a_2, a_3] \) y \( \vec{b} = [b_1, b_2, b_3] \), el producto escalar es:</p>
     <p>
-        \( \vec{a} \cdot \vec{b} = a_1 b_1 + a_2 b_2 + a_3 b_3 \)
+        \( 2 + 3 = 5 \) (suma de escalares)
     </p>
-    <p>El resultado es un número real (escalar), no un vector.</p>
-
-    <h3>Ejemplo:</h3>
-    <p>Si \( \vec{a} = [1, 2] \) y \( \vec{b} = [3, 4] \), el producto escalar sería:</p>
-    <p>
-        \( \vec{a} \cdot \vec{b} = 1 \cdot 3 + 2 \cdot 4 = 3 + 8 = 11 \)
-    </p>
-    <p>El resultado es 11, un escalar.</p>
-
-    <h2>2. Producto Vectorial</h2>
-    <p>Cuando realizas el producto vectorial (solo en \( \mathbb{R}^3 \), es decir, en el espacio tridimensional), el resultado es un vector, no un escalar. El producto vectorial de dos vectores \( \vec{a} \) y \( \vec{b} \) en tres dimensiones es otro vector que es perpendicular a ambos vectores originales. Se calcula como:</p>
-    <p>
-        \( \vec{a} \times \vec{b} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \end{vmatrix} \)
-    </p>
-    <p>Donde \( \hat{i}, \hat{j}, \hat{k} \) son los vectores unitarios en la dirección de los ejes \( x, y, z \), respectivamente.</p>
-    <p>El resultado es un vector.</p>
-
-    <h3>Ejemplo:</h3>
-    <p>Si \( \vec{a} = [1, 2, 3] \) y \( \vec{b} = [4, 5, 6] \), el producto vectorial sería:</p>
-    <p>
-        \( \vec{a} \times \vec{b} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ 1 & 2 & 3 \\ 4 & 5 & 6 \end{vmatrix} = (-3) \hat{i} + 6 \hat{j} - 3 \hat{k} \)
-    </p>
-    <p>El resultado es el vector:</p>
-    <p>
-        \( \vec{a} \times \vec{b} = [-3, 6, -3] \)
-    </p>
-
-    <h2>3. Multiplicación por un Escalar (Escalar por Vector)</h2>
-    <p>Si multiplicas un vector por un escalar, el resultado es otro vector. Cada componente del vector se multiplica por el escalar. Si \( \alpha \) es un escalar y \( \vec{v} = [v_1, v_2, v_3] \), entonces:</p>
-    <p>
-        \( \alpha \cdot \vec{v} = [\alpha v_1, \alpha v_2, \alpha v_3] \)
-    </p>
-    <p>El resultado es un vector.</p>
-
-    <h3>Ejemplo:</h3>
-    <p>Si \( \alpha = 2 \) y \( \vec{v} = [1, 3, 4] \), el resultado sería:</p>
-    <p>
-        \( 2 \cdot \vec{v} = [2 \cdot 1, 2 \cdot 3, 2 \cdot 4] = [2, 6, 8] \)
-    </p>
-    <hr>
-
-    <h1>¿Qué es un vector unitario?</h1>
-    <p>Un <strong>vector unitario</strong> es un vector cuya longitud (o norma) es 1. Es decir, si un vector <em>u</em> es unitario, entonces:</p>
-    <p>\[ ||u|| = 1 \]</p>
-    <p>En el espacio bidimensional <strong>\( \mathbb{R}^2 \)</strong>, el conjunto de todos los vectores unitarios forma un <strong>círculo unitario</strong>: el círculo de radio 1 centrado en el origen (0,0).</p>
     
-    <h4>Cómo obtener un vector unitario a partir de otro vector</h4>
-    <p>Dado un vector no nulo \( v \), podemos encontrar un vector unitario en la misma dirección dividiendo \( v \) por su longitud.</p>
-    <p>La longitud de \( v \) (o norma euclidiana) se calcula como:</p>
-    <p>\[ ||v|| = \sqrt{x^2 + y^2} \]</p>
-    <p>donde \( v = (x, y) \).</p>
-    <p>Para obtener un vector unitario \( u \) en la misma dirección que \( v \), simplemente lo dividimos por su propia norma:</p>
-    <p>\[ u = \frac{v}{||v||} \]</p>
-    <p>Este proceso se llama <strong>normalización de un vector</strong>.</p>
+    <p>
+        \( (1,2,3) + (4,5,6) = (5,7,9) \) (suma de vectores)
+    </p>
     
-    <h4>Demostración algebraica</h4>
-    <p>Sabemos que si multiplicamos cualquier vector por un escalar positivo, el resultado sigue teniendo la misma dirección.</p>
-    <p>Aquí, el escalar que usamos es \( \frac{1}{||v||} \), que nos asegura que la longitud del nuevo vector será 1:</p>
-    <p>\[ ||u|| = \frac{||v||}{||v||} = 1 \]</p>
-    <p>Así, el vector resultante es unitario y tiene la misma dirección que \( v \).</p>
+    <p>Aunque \(+\) es el mismo símbolo en ambas expresiones, su significado cambia dependiendo de si actúa sobre escalares o sobre vectores.</p>
     
-    <h4>Ejemplo práctico</h4>
-    <p>Supongamos que tenemos el vector:</p>
-    <p>\[ v = (3,4) \]</p>
-    <p>Calculamos su longitud:</p>
-    <p>\[ ||v|| = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5 \]</p>
-    <p>Dividimos cada componente de \( v \) por su longitud:</p>
-    <p>\[ u = \left( \frac{3}{5}, \frac{4}{5} \right) \]</p>
-    <p>Verificamos que \( u \) es unitario:</p>
-    <p>\[ ||u|| = \sqrt{ \left( \frac{3}{5} \right)^2 + \left( \frac{4}{5} \right)^2 } = \sqrt{ \frac{9}{25} + \frac{16}{25} } = \sqrt{ \frac{25}{25} } = 1 \]</p>
-    <p>Por lo tanto, \( u = \left( \frac{3}{5}, \frac{4}{5} \right) \) es un vector unitario en la misma dirección que \( v \).</p>
+    <h3>Concatenación de vectores</h3>
+    <p>De manera similar, en la notación de concatenación de vectores, el paréntesis \(( , )\) puede usarse para representar:</p>
     
-    <h4>Resumen</h4>
     <ul>
-        <li>Un vector unitario es un vector con longitud 1.</li>
-        <li>En \( \mathbb{R}^2 \), los vectores unitarios forman el círculo unitario.</li>
-        <li>Para encontrar un vector unitario en la misma dirección que un vector \( v \), lo dividimos por su norma.</li>
-        <li>Este proceso se llama normalización.</li>
+        <li>Un <strong>vector apilado (stacking)</strong> → \( (a, b) \) representa un nuevo vector que concatena \( a \) y \( b \).</li>
+        <li>Un <strong>par ordenado</strong> en otro contexto matemático.</li>
     </ul>
+
     <hr>
-    
+    <strong>Recordar (multiplicacion vector por escalar) : </strong>
+    <p>Si multiplicamos este vector por \( -1 \), lo que hacemos es multiplicar cada componente del vector \( \mathbf{e}_1 \) por \( -1 \):</p>
+    <p>
+        \[
+        (-1) \cdot \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix} = \begin{bmatrix} -1 \\ 0 \\ 0 \end{bmatrix}
+        \]
+    </p>
+    <p>Esto es simplemente multiplicar el número \( -1 \) por cada uno de los elementos de \( \mathbf{e}_1 \), así que obtenemos un nuevo vector donde la componente en \( x \) es \( -1 \), pero las componentes en \( y \) y \( z \) siguen siendo 0.</p>
+         
+    <hr>
+    <h1>🌬️ Ejemplo</h1>
+
+<div>
+  <p><strong>Un bote en un río:</strong></p>
+  <ul>
+    <li>El motor del bote empuja <strong>hacia el norte</strong> a \(8\ \mathrm{km/h}\).</li>
+    <li>La corriente del río lo arrastra <strong>hacia el este</strong> a \(6\ \mathrm{km/h}\).</li>
+  </ul>
+
+  <p><strong>Pregunta:</strong> ¿Cuál es la velocidad resultante del bote (magnitud y dirección)?</p>
+</div>
+
+<h2>📐 Método “normal” (geométrico / trigonometría)</h2>
+<div>
+
+<img src="../../../img/guia_202.png" alt="">
+  <p>Dibujamos un triángulo rectángulo con:</p>
+  <ul>
+    <li>Cateto vertical = \(8\)</li>
+    <li>Cateto horizontal = \(6\)</li>
+  </ul>
+
+  <p><strong>Magnitud (por Pitágoras):</strong></p>
+  <p>
+    \[
+      v = \sqrt{8^2 + 6^2} = \sqrt{64 + 36} = \sqrt{100} = 10\ \mathrm{km/h}
+    \]
+  </p>
+
+  <p><strong>Dirección (ángulo respecto al norte):</strong></p>
+  <p>
+    \[
+      \theta = \arctan\!\left(\frac{6}{8}\right) = \arctan(0.75) \approx 36.87^\circ
+    \]
+  </p>
+
+  <p><strong>Resultado:</strong> El bote se mueve a <strong>10 km/h</strong> en dirección noreste (aprox. <strong>36.87°</strong> hacia el este desde el norte).</p>
+</div>
+
+<h2>🧮 Método con vectores</h2>
+<div>
+  <p>Representamos cada velocidad como vector (columna):</p>
+
+  <p>
+    \[
+      \vec{v}_1 = \begin{bmatrix} 0 \\ 8 \end{bmatrix}, \qquad
+      \vec{v}_2 = \begin{bmatrix} 6 \\ 0 \end{bmatrix}
+    \]
+  </p>
+
+  <p><strong>Suma componente a componente:</strong></p>
+  <p>
+    \[
+      \vec{v} = \vec{v}_1 + \vec{v}_2 =
+      \begin{bmatrix} 0 \\ 8 \end{bmatrix} +
+      \begin{bmatrix} 6 \\ 0 \end{bmatrix} =
+      \begin{bmatrix} 6 \\ 8 \end{bmatrix}
+    \]
+  </p>
+
+  <p><strong>Magnitud:</strong></p>
+  <p>
+    \[
+      \|\vec{v}\| = \sqrt{6^2 + 8^2} = \sqrt{36 + 64} = 10\ \mathrm{km/h}
+    \]
+  </p>
+
+  <p><strong>Dirección:</strong></p>
+  <p>
+    \[
+      \theta = \arctan\!\left(\frac{6}{8}\right) \approx 36.87^\circ
+    \]
+  </p>
+
+  <p><strong>Resultado:</strong> El vector resultante es \(\begin{bmatrix}6\\8\end{bmatrix}\), con magnitud <strong>10 km/h</strong> y dirección <strong>36.87°</strong> al este del norte.</p>
+</div>
+
+<p>Observación: Ambos métodos dan el mismo resultado; los vectores ofrecen una forma compacta y generalizable para manipular direcciones y magnitudes, especialmente útil en más dimensiones.</p>
+
     </form>
 </div>
 
@@ -1646,7 +1640,7 @@ notece que sumamos las coordenadas del nuevo origen \( C \) a las componentes de
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="segundo.php"
+        href="diez.php"
         role="button"
         width="50px"
         height="50px"

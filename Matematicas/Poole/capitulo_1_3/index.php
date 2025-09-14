@@ -1124,7 +1124,7 @@ if ($respuesta_110 === '264') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
     <link rel="stylesheet" href="../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
@@ -1137,9 +1137,8 @@ if ($respuesta_110 === '264') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 260vh;
+    height: 475vh;
     }
- 
 </style>
  
 <script>
@@ -1442,150 +1441,291 @@ function ocultarMensaje4() {
 <body> 
 <div class="seccion izquierda">
     <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h1>1.1 Vectores</h1>
-    <p>Un <strong>vector</strong> es una lista ordenada y finita de números. Los vectores suelen escribirse como arreglos verticales, rodeados por corchetes o paréntesis curvos, como en:</p>
-    
-    <p>\[
-    \begin{bmatrix}
-    -1.1 \\
-    0.0 \\
-    3.6 \\
-    -7.2
-    \end{bmatrix}
-    \]</p>
-    
-    <p>También pueden escribirse como números separados por comas y rodeados por paréntesis:</p>
-    <p>\((-1.1, 0.0, 3.6, -7.2)\)</p>
-    
-    <p>Los <strong>elementos</strong> (también llamados <em>entradas, coeficientes o componentes</em>) de un vector son los valores dentro del arreglo.</p>
-    <p>El <strong>tamaño</strong> (también llamado <em>dimensión o longitud</em>) de un vector es la cantidad de elementos que contiene.</p>
-    
-    <p>Por ejemplo, el vector anterior tiene tamaño <strong>cuatro</strong>, y su <strong>tercera entrada</strong> es <strong>3.6</strong>.</p>
-    
-    <p>Un vector de tamaño <em>n</em> se llama <strong>n-vector</strong>. Un <strong>1-vector</strong> se considera igual a un número, es decir, no distinguimos entre el 1-vector <span class="vector">1.3</span> y el número <strong>1.3</strong>.</p>
-    
-    <p>A menudo usamos <strong>símbolos</strong> para representar vectores. Si representamos un <em>n-vector</em> con el símbolo <strong>a</strong>, su <em>i-ésimo elemento</em> se denota como <strong>a<sub>i</sub></strong>, donde el subíndice <strong>i</strong> es un índice entero que va de <strong>1</strong> a <strong>n</strong> (el tamaño del vector).</p>
-    
-    <p>Dos vectores <strong>a</strong> y <strong>b</strong> son <strong>iguales</strong>, lo que se denota como <strong>a = b</strong>, si tienen el <strong>mismo tamaño</strong> y cada una de sus entradas correspondientes es igual.</p>
-    
-    <p>Si <strong>a</strong> y <strong>b</strong> son <em>n-vectores</em>, entonces <strong>a = b</strong> significa que:</p>
-    <p>\[ a_1 = b_1, \quad a_2 = b_2, \quad \dots, \quad a_n = b_n \]</p>
-    
-    
+  <h2>1.3 Rectas y planos</h2>
+
+  <p>
+    Todos están familiarizados con la ecuación de una recta en el plano cartesiano.
+    Ahora se considerarán rectas en \(\mathbb{R}^2\) desde un punto de vista vectorial.
+    La comprensión que se obtenga a partir de este planteamiento permitirá generalizar a
+    rectas en \(\mathbb{R}^3\) y luego a planos en \(\mathbb{R}^3\).
+    Mucha del álgebra lineal que se considerará en capítulos posteriores tiene sus orígenes
+    en la geometría simple de rectas y planos; la habilidad para visualizarlos y pensar
+    geométricamente en torno a un problema le servirá bastante.
+  </p>
+
+  <h3>Rectas en \(\mathbb{R}^2\) y \(\mathbb{R}^3\)</h3>
+
+  <p>
+    En el plano \(xy\), la forma general de la ecuación de una recta es
+    \(ax + by = c\). Si \(b \neq 0\), entonces la ecuación puede reescribirse como
+    \(y = -(a/b)x + c/b\), que tiene la forma \(y = mx + k\).
+    [Esta es la forma pendiente ordenada al origen; \(m\) es la pendiente de la recta
+    y el punto con coordenadas \((0,k)\) es su ordenada al origen.]  
+    Para incluir los vectores en este estudio, considere un ejemplo.
+  </p>
+
+  <div class="ejemplo">
+    <h4>Ejemplo 1.26</h4>
+    <p>
+      En la figura 1.53 se muestra la recta \(\ell\), con ecuación \(2x + y = 0\).
+      Es una recta con pendiente \(-2\) que pasa por el origen. El lado izquierdo
+      de la ecuación está en la forma de producto punto; de hecho, si
+      \(n = \begin{bmatrix} 2 \\ 1 \end{bmatrix}\) y
+      \(x = \begin{bmatrix} x \\ y \end{bmatrix}\), entonces la ecuación se convierte en
+    </p>
+
+    <div class="math">
+      \[
+        n \cdot x = 0
+      \]
+    </div>
+
+    <p>
+      El vector \(n\) es perpendicular a la recta; esto es, es
+      <i>ortogonal</i> a cualquier vector \(x\) que sea paralelo a la recta
+      (figura 1.54) y se le conoce como <i>vector normal</i> a la recta.
+      La ecuación \(n \cdot x = 0\) es la <i>forma normal</i> de la ecuación de \(\ell\).
+    </p>
+
+    <p>
+      Otra forma de pensar esta recta es imaginar una partícula que se mueve a lo largo de la recta.
+      Suponga que la partícula inicialmente está en el origen en el instante \(t=0\) y que se mueve
+      a lo largo de la recta en tal forma que su coordenada \(x\) cambia 1 unidad por segundo.
+      Entonces, en \(t=1\) la partícula está en \((1,-2)\), en \(t=1.5\) está en \((1.5,-3)\) y si
+      se permiten valores negativos de \(t\) (esto es, considera desplazamientos hacia el pasado),
+      en \(t=-2\) está (o estuvo) en \((-2,4)\). Este movimiento se ilustra en la figura 1.55.
+    </p>
+  </div>
+         <img src="..\..\..\img\guia_213.png" alt="" width="500">
+
+
+          <h3>Forma vectorial de la recta</h3>
+
+  <p>
+    En general, si \(x = t\), entonces \(y = -2t\), y esta relación se puede escribir en forma vectorial como:
+  </p>
+
+  <div class="math">
+    \[
+      \begin{bmatrix}
+        x \\[4pt] y
+      \end{bmatrix}
+      =
+      \begin{bmatrix}
+        t \\[4pt] -2t
+      \end{bmatrix}
+      =
+      t \begin{bmatrix}
+        1 \\[4pt] -2
+      \end{bmatrix}
+    \]
+  </div>
+
+  <p>
+    ¿Cuál es el significado del vector
+    \(d = \begin{bmatrix} 1 \\ -2 \end{bmatrix}\)?
+    Es un vector particular paralelo a \(\ell\), llamado
+    <i>vector director</i> para la recta.
+    Como se muestra en la figura 1.56, puede escribirse la ecuación de \(\ell\) como
+  </p>
+
+  <div class="math">
+    \[
+      x = t d
+    \]
+  </div>
+
+  <p>
+    Esta es la <i>forma vectorial</i> de la ecuación de la recta.
+    Si la recta no pasa por el origen, entonces deben modificarse ligeramente las cosas.
+  </p>
+
+      <img src="..\..\..\img\guia_214.png" alt="" width="500">
+
+
+<h4>Ejemplo 1.27</h4>
+
+    <p>
+      Considere la recta \(\ell\) con ecuación \(2x + y = 5\) (figura 1.57).
+      Esta es justo la recta del ejemplo 1.26 desplazada 5 unidades arriba.
+      También tiene pendiente \(-2\), pero su ordenada al origen es el punto \((0,5)\).
+      Es claro que los vectores \(d\) y \(n\) del ejemplo 1.26 son, respectivamente,
+      un vector director y un vector normal también a esta recta.
+    </p>
+
+    <p>
+      Por ende, \(n\) es ortogonal a cada vector que sea paralelo a \(\ell\).
+      El punto \(P=(1,3)\) está sobre \(\ell\).
+      Si \(X = (x,y)\) representa un punto general sobre \(\ell\),
+      entonces el vector \(PX = x - p\) es paralelo a \(\ell\) y
+      \(n \cdot (x - p) = 0\) (vea la figura 1.58).
+      Al simplificar, se tiene
+      \(n \cdot x = n \cdot p\).
+    </p>
+
+    <p>Como comprobación, calcule:</p>
+
+    <div class="math">
+      \[
+        n \cdot x =
+        \begin{bmatrix}
+          2 \\[4pt] 1
+        \end{bmatrix} \cdot
+        \begin{bmatrix}
+          x \\[4pt] y
+        \end{bmatrix}
+        = 2x + y
+        \quad\quad
+        n \cdot p =
+        \begin{bmatrix}
+          2 \\[4pt] 1
+        \end{bmatrix} \cdot
+        \begin{bmatrix}
+          1 \\[4pt] 3
+        \end{bmatrix}
+        = 5
+      \]
+    </div>
+
+    <p>
+      Por tanto, la forma normal \(n \cdot x = n \cdot p\) sólo es una representación diferente
+      de la forma general de la ecuación de la recta.
+      (Note que en el ejemplo 1.26, \(p\) fue el vector cero,
+      de modo que \(n \cdot p = 0\) produjo el lado derecho de la ecuación.)
+    </p>
+    <img src="..\..\..\img\guia_215.png" alt="" >
 
     <hr>
-     
-    <h2>Escalares</h2>
-    <p>Los números o valores de los elementos en un vector se llaman <strong>escalares</strong>. Nos enfocamos en el caso más común donde los escalares son <strong>números reales</strong>. En este caso, los vectores se llaman <strong>vectores reales</strong>.</p>
-    <p>El conjunto de todos los números reales se denota como \( \mathbb{R} \), y el conjunto de todos los <em>n</em>-vectores reales se denota como \( \mathbb{R}^n \). Es decir, \( a \in \mathbb{R}^n \) significa que \( a \) es un vector de tamaño \( n \) con entradas reales.</p>
-    
-    <h2>Vectores Apilados</h2>
-    <p>Algunos vectores pueden formarse apilando otros vectores:</p>
-    <p>\[
-    a =
-    \begin{bmatrix}
-    b \\
-    c \\
-    d
-    \end{bmatrix}
-    \]</p>
-    <p>donde a,b,c y d son vectores. Si \( b \) es un \( m \)-vector, \( c \) es un \( n \)-vector y \( d \) es un \( p \)-vector, entonces el vector resultante \( a \) tiene tamaño \( m + n + p \), y se escribe como:</p>
-   
-    <p>El vector apilado a también se puede escribir como \( a=(b,c,d) \).</p>
+    <p>La ecuación</p>
+    <div class="math">
+      \[
+      n \cdot (x - p) = 0
+      \]
+    </div>
+    <p>es una forma vectorial de describir la recta. Te explico paso a paso:</p>
 
-    <p>Los vectores apilados pueden incluir escalares (números). Por ejemplo, si 
-    a es un vector de dimensión 3, entonces \( (1,a) \) es un vector de dimensión 4, dado por:
-    \( (1,a_1,a_2,a_3 ) \)</p>
-
-    <p>\[
-    a = (b_1, b_2, \dots, b_m, c_1, c_2, \dots, c_n, d_1, d_2, \dots, d_p).
-    \]</p>
-    
-    <h2>Subvectores</h2>
-    <p>Podemos extraer partes de un vector utilizando notación de colon:</p>
-    <p>\[
-    a_{r:s} = (a_r, \dots, a_s)
-    \]</p>
-    <p>Ejemplo: si \( z = (1, -1, 2, 0) \), entonces el subvector \( z_{2:3} \) es:</p>
-    <p>\[
-    z_{2:3} = (-1, 2)
-    \]</p>
-    <p>La notación de dos puntos no es completamente estándar, pero está ganando popularidad.</p>
-    
-    <h2>Convenciones Notacionales</h2>
-    <p>Algunos autores usan diferentes convenciones para distinguir entre vectores y escalares:</p>
     <ul>
-        <li>Usar <strong>letras griegas</strong> (\( \alpha, \beta \)) para escalares.</li>
-        <li>Usar <strong>negrita</strong> (\( \mathbf{v} \)) o una <strong>flecha</strong> sobre el vector (\( \vec{v} \)).</li>
+      <li>\(n\) = vector normal a la recta (perpendicular a ella).</li>
+      <li>\(p\) = un punto fijo de la recta.</li>
+      <li>\(x = (x,y)\) = punto genérico en el plano.</li>
     </ul>
 
+    <p>
+      La condición \(n \cdot (x - p) = 0\) dice:
+      <br>
+      👉 El vector que une \(p\) con cualquier otro punto \(x\) de la recta es ortogonal a \(n\).
+    </p>
 
+    <p>Eso significa que todos los \(x\) que satisfacen esa ecuación están sobre la recta.</p>
 
+    <h3>Ejemplo con tu caso</h3>
 
+    <p>Recta:</p>
+    <div class="math">
+      \[
+      2x + y = 5
+      \]
+    </div>
 
+    <p>Vector normal:</p>
+    <div class="math">
+      \[
+      n = \begin{bmatrix} 2 \\ 1 \end{bmatrix}
+      \]
+    </div>
+
+    <p>Punto en la recta:</p>
+    <div class="math">
+      \[
+      p = \begin{bmatrix} 1 \\ 3 \end{bmatrix}
+      \]
+    </div>
+
+    <p>Ecuación vectorial:</p>
+    <div class="math">
+      \[
+      n \cdot (x - p) = 0
+      \;\;\Longleftrightarrow\;\;
+      \begin{bmatrix} 2 \\ 1 \end{bmatrix} \cdot
+      \left(
+      \begin{bmatrix} x \\ y \end{bmatrix} -
+      \begin{bmatrix} 1 \\ 3 \end{bmatrix}
+      \right) = 0
+      \]
+    </div>
+
+    <div class="math">
+      \[
+      2(x-1) + (y-3) = 0
+      \;\;\Longleftrightarrow\;\;
+      2x + y = 5
+      \]
+    </div>
+
+    <p>que es justo la ecuación de la recta.</p>
     <hr>
+      <h2>Definición</h2>
+  <p>
+    La <b>forma normal de la ecuación de una recta</b> \(\ell \subseteq \mathbb{R}^2\) es:
+  </p>
+  <p style="text-align:center;">
+    \[
+    \mathbf{n} \cdot (\mathbf{x} - \mathbf{p}) = 0 
+    \quad \text{o} \quad 
+    \mathbf{n} \cdot \mathbf{x} = \mathbf{n} \cdot \mathbf{p}
+    \]
+  </p>
+  <p>
+    donde \(\mathbf{p}\) es un punto específico sobre \(\ell\) y \(\mathbf{n} \neq 0\) es un vector normal a \(\ell\).
+  </p>
+  <p>
+    La <b>forma general de la ecuación de \(\ell\)</b> es:
+  </p>
+  <p style="text-align:center;">
+    \[
+    ax + by = c, \quad 
+    \text{donde } \mathbf{n} = \begin{bmatrix} a \\ b \end{bmatrix}
+    \text{ es un vector normal para } \ell.
+    \]
+  </p>
+
+  <h2>Ejemplo</h2>
+  <p>
+    En términos de componentes, se tiene:
+  </p>
+  <p style="text-align:center;">
+    \[
+    \begin{bmatrix} x \\ y \end{bmatrix}
+    =
+    \begin{bmatrix} 1 \\ 3 \end{bmatrix}
+    +
+    t \begin{bmatrix} 1 \\ -2 \end{bmatrix}
+    \tag{1}
+    \]
+  </p>
+  <p>
+    o
+  </p>
+  <p style="text-align:center;">
+    \[
+    \begin{cases}
+      x = 1 + t \\
+      y = 3 - 2t
+    \end{cases}
+    \tag{2}
+    \]
+  </p>
+  <p>
+    La ecuación (1) es la <b>forma vectorial</b> de la ecuación de \(\ell\), y las ecuaciones en componentes (2) 
+    se llaman <b>ecuaciones paramétricas</b> de la recta. La variable \(t\) se conoce como <i>parámetro</i>.
+  </p>
 
   
+     
+
     </form>
 </div>
 
-
-
-
-<div class="seccion derecha">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
- 
-    
-    <h2>Indexación</h2>
-    <p>En notación matemática estándar, los \( n \)-vectores se indexan desde \( i = 1 \) hasta \( i = n \), por lo que en este texto usaremos esta convención.</p>
-    <p>Si \( a_3 \) representa el tercer elemento de un vector \( a \) o el tercer vector en una lista de vectores, debe deducirse del contexto.</p>
-    <p>Para evitar ambigüedades, podemos escribir \( (a_i)_j \) para referirnos a la \( j \)-ésima entrada del \( i \)-ésimo vector en una colección.</p>
-    
-    <h2>Vectores Cero</h2>
-    <p>Un <strong>vector cero</strong> es un vector en el que todos los elementos son iguales a cero. A veces se denota como \( 0_n \) para indicar su tamaño, pero generalmente se usa simplemente \( 0 \).</p>
-    <p>Por ejemplo, si \( a \) es un 9-vector y se nos dice que \( a = 0 \), el vector \( 0 \) en el lado derecho debe ser el de tamaño 9.</p>
-    
-    <h2>Vectores Unitarios</h2>
-    <p>Un <strong>vector unitario</strong> tiene todos sus elementos en cero excepto uno, que es igual a uno. El \( i \)-ésimo vector unitario se denota como \( e_i \).</p>
-    <p>Por ejemplo, los vectores unitarios de tamaño 3 son:</p>
-    <p>
-    \[
-    e_1 = \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}, \quad
-    e_2 = \begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix}, \quad
-    e_3 = \begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}
-    \]
-    </p>
-    <p>Formalmente, el \( i \)-ésimo vector unitario de tamaño \( n \) se define como:</p>
-    <p>
-    \[
-    (e_i)_j =
-    \begin{cases}
-    1, & \text{si } j = i \\
-    0, & \text{si } j \neq i
-    \end{cases}
-    \]
-    </p>
-    
-    <h2>Vector de Unos</h2>
-    <p>El <strong>vector de unos</strong> de tamaño \( n \) se denota como \( 1_n \), indicando que todos sus elementos son iguales a uno. Si el tamaño es obvio por el contexto, simplemente se usa \( 1 \).</p>
-    <hr>
-    <img src="..\..\img\algebra_lineal_uno.png" alt="">
-    <br><br>
-    <h3>Sparsidad</h3>
-    <p>Un vector se dice que es <strong>disperso</strong> (o <em>sparse</em>) si muchas de sus entradas son cero. Su <strong>patrón de dispersión</strong> es el conjunto de índices de sus entradas no nulas.</p>
-    
-    <p>El número de entradas no nulas de un \( n \)-vector \( x \) se denota como \( \text{nnz}(x) \).</p>
-    
-    <p>Los <strong>vectores unitarios</strong> son dispersos, ya que solo tienen una entrada diferente de cero.</p>
-    
-    <p>El <strong>vector cero</strong> es el vector más disperso posible, ya que no tiene entradas distintas de cero.</p>
-    
-    <p>Los vectores dispersos aparecen en muchas aplicaciones.</p>
-    <br>
-    <br>
-    <hr>
-    </form>
-</div>
 
 <div class="centered-container">
     <a
@@ -1598,5 +1738,196 @@ function ocultarMensaje4() {
         height="50px"
     >Siguiente</a>
 </div>
+
+<div class="seccion derecha">
+    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+ 
+    <h2>Definición</h2>
+  <p>
+    La <b>forma vectorial de la ecuación de una recta</b> \(\ell\) en \(\mathbb{R}^2\) o \(\mathbb{R}^3\) es:
+  </p>
+  <p style="text-align:center;">
+    \[
+    \mathbf{x} = \mathbf{p} + t\mathbf{d}
+    \]
+  </p>
+  <p>
+    donde \(\mathbf{p}\) es un punto específico sobre \(\ell\) y \(\mathbf{d} \neq 0\) es un vector director para \(\ell\).  
+    Las ecuaciones que corresponden a los componentes de la forma vectorial de la ecuación se llaman 
+    <b>ecuaciones paramétricas</b> de \(\ell\).
+  </p>
+    <hr>
+    <h3>Relacion entre vector director y pendiente:</h3>
+
+  <img src="../../../img/guia_216.png" alt="" width="600">
+
+  https://www.geogebra.org/m/UAafu2Qc
+
+    <hr>
+    <h1>Ecuaciones de Rectas y Planos</h1>
+    
+    <p>Con frecuencia, esta terminología se abreviará ligeramente, y se hará referencia simplemente a las ecuaciones general, normal, vectorial y paramétrica de una recta o plano.</p>
+
+    <div class="example">
+        <h2>Ejemplo 1.28</h2>
+        <p>Encuentre las ecuaciones vectorial y paramétrica de la recta en \( \mathbb{R}^3 \) que pasa por el punto  
+        \[P = (1, 2, -1), \]  
+        paralela al vector  
+        \[d = 
+        \begin{bmatrix}
+        5 \\
+        -1 \\
+        3
+        \end{bmatrix}.\]</p>
+
+        <h3>Solución</h3>
+        <p>La ecuación vectorial  
+        \[\mathbf{x} = \mathbf{p} + t\mathbf{d} \]  
+        es</p>
+
+        \[\begin{bmatrix}
+        x \\
+        y \\
+        z
+        \end{bmatrix} = 
+        \begin{bmatrix}
+        1 \\
+        2 \\
+        -1
+        \end{bmatrix} + t 
+        \begin{bmatrix}
+        5 \\
+        -1 \\
+        3
+        \end{bmatrix}\]
+
+        <p>La forma paramétrica es</p>
+        \[\begin{cases}
+        x = & 1 + 5t \\
+        y = & 2 - t \\
+        z = & -1 + 3t
+        \end{cases}\]
+    </div>
+
+  
+    <div class="comment">
+        <h3>Comentarios</h3>
+        <p>Las formas vectorial y paramétrica de la ecuación de una recta dada \(\ell\) no son únicas; de hecho, existen infinitas formas, pues es posible usar cualquier punto sobre \(\ell\) para determinar \(\mathbf{p}\) y cualquier vector director para \(\ell\). Sin embargo, claramente todos los vectores directores son múltiplos mutuos.</p>
+
+        <p>En el ejemplo 1.28, \((6, 1, 2)\) es otro punto sobre la recta (considere \(t = 1\)) y otro vector director. Por tanto,</p>
+
+        \[\begin{bmatrix}
+        x \\
+        y \\
+        z
+        \end{bmatrix} =
+        \begin{bmatrix}
+        6 \\
+        1 \\
+        2
+        \end{bmatrix} + s 
+        \begin{bmatrix}
+        10 \\
+        -2 \\
+        6
+        \end{bmatrix}\]
+
+        <p>proporciona una ecuación vectorial diferente (pero equivalente) para la recta. La relación entre los dos parámetros \( s \) y \( t \) puede encontrarse al comparar las ecuaciones paramétricas: para un punto dado \((x, y, z)\) sobre \(\ell\), se tiene</p>
+
+        \[x = 1 + 5t = 6 + 10s\]
+        \[y = 2 - t = 1 - 2s\]
+        \[z = -1 + 3t = 2 + 6s\]
+
+        <p>lo que implica que</p>
+
+        \[-10s + 5t = 5\]
+        \[2s - t = -1\]
+        \[-6s + 3t = 3\]
+
+        <p>Cada una de dichas ecuaciones se reduce a \( t = 1 + 2s \).</p>
+
+
+
+
+
+
+         <h1>Planos en el Espacio Tridimensional</h1>
+    
+    <div class="section">
+        <div class="highlight">
+            <p>Intuitivamente se sabe que una recta es un objeto <em>unidimensional</em>. La idea de "dimensión" se aclarará en los capítulos 3 y 6, pero por el momento observe que esta idea parece concordar con el hecho de que la forma vectorial de la ecuación de una recta requiere <em>un</em> parámetro.</p>
+        </div>
+
+        <p>Con frecuencia, uno escucha la expresión "dos puntos determinan una recta". Encuentre una ecuación vectorial de la recta \(\ell\) en \(\mathbb{R}^3\) determinada por los puntos \(P = (-1, 5, 0)\) y \(Q = (2, 1, 1)\).</p>
+
+        <div class="example">
+            <h3>Solución</h3>
+            <p>Es posible elegir cualquier punto sobre \(\ell\) para \(\mathbf{p}\), de modo que se usará \(P\) (\(Q\) también estaría bien).</p>
+            
+            <p>Un vector director conveniente es  
+            \[\mathbf{d} = \overrightarrow{PQ} = \begin{bmatrix} 2 - (-1) \\ 1 - 5 \\ 1 - 0 \end{bmatrix} = \begin{bmatrix} 3 \\ -4 \\ 1 \end{bmatrix}\]
+            (o cualquier múltiplo escalar de éste). Por tanto, se obtiene:</p>
+
+            <div class="math-container">
+                \[\mathbf{x} = \mathbf{p} + t\mathbf{d} = \begin{bmatrix} -1 \\ 5 \\ 0 \end{bmatrix} + t \begin{bmatrix} 3 \\ -4 \\ 1 \end{bmatrix}\]
+            </div>
+               (d = Q - P = (2 - (-1), 1 - 5, 1 - 0) = (3, -4, 1))
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Planos en \(\mathbb{R}^3\)</h2>
+        
+        <p>La siguiente pregunta que debe plantearse es: ¿cómo la forma general de la ecuación de una recta se generaliza a \(\mathbb{R}^3\)? Razonablemente puede suponer que si \(ax + by = c\) es la forma general de la ecuación de una recta en \(\mathbb{R}^2\), entonces \(ax + by + cz = d\) puede representar una recta en \(\mathbb{R}^3\).</p>
+        
+        <p>En forma normal, esta ecuación sería  
+        \[\mathbf{n} \cdot \mathbf{x} = \mathbf{n} \cdot \mathbf{p}\]
+        donde \(\mathbf{n}\) es un vector normal a la recta y \(\mathbf{p}\) corresponde a un punto sobre la recta.</p>
+        
+        <p>Para ver si esta es una hipótesis razonable, considere el caso especial de la ecuación \(ax + by + cz = 0\). En forma normal, se convierte en  
+        \[\mathbf{n} \cdot \mathbf{x} = 0\]
+        donde  
+        \[\mathbf{n} = \begin{bmatrix} a \\ b \\ c \end{bmatrix}\]</p>
+        
+        <div class="conclusion">
+            <p>Sin embargo, el conjunto de todos los vectores \(\mathbf{x}\) que satisfacen esta ecuación es el conjunto de todos los vectores ortogonales a \(\mathbf{n}\). Como se muestra en la figura 1.59, vectores en infinitas direcciones tienen esta propiedad, lo que determina una familia de planos paralelos. De modo que la suposición fue incorrecta: parece que \(ax + by + cz = d\) es la ecuación de un plano, no de una recta, en \(\mathbb{R}^3\).</p>
+        </div>
+        
+        <p>Precise más este hallazgo. Todo plano \(\mathcal{P}\) en \(\mathbb{R}^3\) puede determinarse al especificar un punto \(\mathbf{p}\) sobre \(\mathcal{P}\) y un vector distinto de cero \(\mathbf{n}\) normal a \(\mathcal{P}\) (figura 1.60). Por ende, si \(\mathbf{x}\) representa un punto arbitrario sobre \(\mathcal{P}\), se tiene que \(\mathbf{n} \cdot (\mathbf{x} - \mathbf{p}) = 0\) o \(\mathbf{n} \cdot \mathbf{x} = \mathbf{n} \cdot \mathbf{p}\).</p>
+        
+        <div class="math-container">
+            \[\text{Si } \mathbf{n} = \begin{bmatrix} a \\ b \\ c \end{bmatrix} \quad \text{y} \quad \mathbf{x} = \begin{bmatrix} x \\ y \\ z \end{bmatrix}\]
+        </div>
+        
+        <p>entonces, en términos de componentes, la ecuación se convierte en \(ax + by + cz = d\) (donde \(d = \mathbf{n} \cdot \mathbf{p}\)).</p>
+    </div>
+
+    <div class="section">
+        <div class="definition">
+            <h2>Definición</h2>
+            
+            <p>La <strong>forma normal</strong> de la ecuación de un plano \(\mathcal{P}\) en \(\mathbb{R}^3\) es</p>
+            
+            <div class="math-container">
+                \[\mathbf{n} \cdot (\mathbf{x} - \mathbf{p}) = 0 \quad \text{o} \quad \mathbf{n} \cdot \mathbf{x} = \mathbf{n} \cdot \mathbf{p}\]
+            </div>
+            
+            <p>donde \(\mathbf{p}\) es un punto específico sobre \(\mathcal{P}\) y \(\mathbf{n} \neq \mathbf{0}\) es un vector normal para \(\mathcal{P}\).</p>
+            
+            <p>La <strong>forma general</strong> de la ecuación de \(\mathcal{P}\) es \(ax + by + cz = d\), donde \(\mathbf{n} = \begin{bmatrix} a \\ b \\ c \end{bmatrix}\) es un vector normal para \(\mathcal{P}\).</p>
+        </div>
+        
+        <div class="figure-ref">
+            Figura 1.59: Vectores ortogonales a n forman un plano<br>
+            Figura 1.60: Plano determinado por un punto p y un vector normal n
+        </div>
+    </div>
+ <img src="..\..\..\img\guia_217.png" alt="" >
+    
+ <strong>La forma normal es un concepto que se aplica tanto a rectas como a planos</strong>
+    </form>
+</div>
+
+ 
 </body>
 </html>

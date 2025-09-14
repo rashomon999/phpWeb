@@ -1123,8 +1123,8 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-   <link rel="stylesheet" href="../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="style_sexto.css">
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
@@ -1132,6 +1132,43 @@ if ($respuesta_110 === '264') {
         max-width: 100%;
         height: auto;
     }
+
+    .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 475vh;
+    }
+
+
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 10px;
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: center;
+      border-bottom: 1px solid #eaeaea;
+    }
+
+    th {
+      background: #3498db;
+      color: white;
+      font-weight: 600;
+      font-size: 0.95em;
+    }
+
+    tr:nth-child(even) td {
+      background: #f4f8fb;
+    }
+
 </style>
  
 <script>
@@ -1433,96 +1470,271 @@ function ocultarMensaje4() {
 </head>
 <body> 
 <div class="seccion izquierda">
-    <form action="./sexto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h1>1.4 Combinaciones Lineales</h1>
-    <p>Si \( a_1, \dots, a_m \) son \( n \)-vectores, y \( \beta_1, \dots, \beta_m \) son escalares, el \( n \)-vector</p>
-    <p>
-        \[
-        \beta_1 a_1 + \dots + \beta_m a_m
-        \]
-    </p>
-    <p>se llama una <strong>combinación lineal</strong> de los vectores \( a_1, \dots, a_m \). Los escalares \( \beta_1, \dots, \beta_m \) se llaman los <strong>coeficientes</strong> de la combinación lineal.</p>
+    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <h1>Ecuaciones de Planos en ℝ³</h1>
     
-    <h2>Combinación lineal de vectores unitarios</h2>
-    <p>Podemos escribir cualquier \( n \)-vector \( b \) como una combinación lineal de los vectores unitarios estándar:</p>
-    <p>
+    <div>
+        <h2>Nota Importante</h2>
+        <p>Note que cualquier múltiplo escalar de un vector normal para un plano es otro vector normal.</p>
+    </div>
+    
+    <h2>Ejemplo 1.30</h2>
+    
+    <div>
+        <p>Encuentre las formas normal y general de la ecuación del plano que contiene el punto \( P = (6, 0, 1) \) y tiene un vector normal \( \mathbf{n} = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix} \).</p>
+        
+        <div>
+            <h3>Solución</h3>
+            <p>Con \( \mathbf{p} = \begin{bmatrix} 6 \\ 0 \\ 1 \end{bmatrix} \) y \( \mathbf{x} = \begin{bmatrix} x \\ y \\ z \end{bmatrix} \) se tiene:</p>
+            \[
+            \mathbf{n} \cdot \mathbf{p} = 1 \cdot 6 + 2 \cdot 0 + 3 \cdot 1 = 9
+            \]
+            <p>De modo que la ecuación normal \( \mathbf{n} \cdot \mathbf{x} = \mathbf{n} \cdot \mathbf{p} \) se convierte en la ecuación general:</p>
+            \[
+            x + 2y + 3z = 9
+            \]
+        </div>
+    </div>
+    
+    <div>
+        <h3>Interpretación Geométrica</h3>
+        <p>Geométricamente, es claro que planos paralelos tienen los mismos vectores normales. Por tanto, sus ecuaciones generales tienen lados izquierdos que son múltiplos mutuos.</p>
+        <p>Por ejemplo, \( 2x + 4y + 6z = 10 \) es la ecuación general de un plano que es paralelo al plano del ejemplo 1.30, ya que la ecuación puede reescribirse como \( x + 2y + 3z = 5 \), de donde se ve que los dos planos tienen el mismo vector normal \( \mathbf{n} \).</p>
+        <p>Note que los planos no coinciden, pues los lados derechos de sus ecuaciones son distintos.</p>
+    </div>
+    
+    <h2>Formas Vectorial y Paramétrica de un Plano</h2>
+    
+    <div>
+        <p>También puede expresar la ecuación de un plano en forma vectorial o paramétrica. Para hacerlo, observe que un plano también puede determinarse al especificar uno de sus puntos \( P \) (por el vector \( \mathbf{p} \)) y dos vectores directores \( \mathbf{u} \) y \( \mathbf{v} \) paralelos al plano (pero no mutuamente paralelos).</p>
+        
+        <p>Como muestra la figura 1.61, dado cualquier punto \( X \) en el plano (ubicado por \( \mathbf{x} \)), siempre se pueden encontrar múltiplos adecuados \( s\mathbf{u} \) y \( t\mathbf{v} \) de los vectores directores tales que:</p>
+        
         \[
-        b = b_1 e_1 + \dots + b_n e_n.
+        \mathbf{x} - \mathbf{p} = s\mathbf{u} + t\mathbf{v} \quad \text{o} \quad \mathbf{x} = \mathbf{p} + s\mathbf{u} + t\mathbf{v}
         \]
-    </p>
-    <p>En esta ecuación, \( b_i \) es la \( i \)-ésima entrada de \( b \) (escalar), y \( e_i \) es el \( i \)-ésimo vector unitario.</p>
-    <p>Un ejemplo específico es:</p>
-    <p>
+        
+        <p>Si esta ecuación se escribe en forma de componentes, se obtienen ecuaciones paramétricas para el plano.</p>
+    </div>
+     <img src="..\..\..\img\guia_218.png" alt="" >
+    <div>
+        <h2>Definición</h2>
+        <p>La <strong>forma vectorial</strong> de la ecuación de un plano \( \mathcal{P} \) en \( \mathbb{R}^3 \) es:</p>
+        
         \[
-        \begin{bmatrix} -1 \\ 3 \\ 5 \end{bmatrix} = (-1) \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix} + 3 \begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix} + 5 \begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}.
+        \mathbf{x} = \mathbf{p} + s\mathbf{u} + t\mathbf{v}
         \]
-    </p>
-    <br>
-    <h2>Combinaciones lineales especiales</h2>
-    <p>Algunas combinaciones lineales de los vectores \( a_1, \dots, a_m \) tienen nombres especiales:</p>
+        
+        <p>donde \( \mathbf{p} \) es un punto sobre \( \mathcal{P} \) y \( \mathbf{u} \), \( \mathbf{v} \) son vectores directores para \( \mathcal{P} \) (\( \mathbf{u} \) y \( \mathbf{v} \) son distintos de cero y paralelos a \( \mathcal{P} \), mas no mutuamente paralelos).</p>
+        
+        <p>Las ecuaciones correspondientes a los componentes de la forma vectorial de la ecuación se llaman <strong>ecuaciones paramétricas</strong> de \( \mathcal{P} \).</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h3>Ejemplo 1.31</h3>
+     <p>Encuentre ecuaciones vectoriales y paramétricas para el plano del ejemplo 1.30.</p>
+
+    <h3>Solución</h3>
+    <p>Es necesario encontrar dos vectores directores. Se tiene un punto, \( P = (6, 0, 1) \), en el plano; si puede encontrar otros dos puntos \( Q \) y \( R \) en \( \mathcal{P} \), entonces los vectores \( \overrightarrow{PQ} \) y \( \overrightarrow{PR} \) pueden servir como vectores directores (a menos que, por mala suerte, resulten ser paralelos!).</p>
+    
+    <p>Mediante ensayo y error se observa que \( Q = (9, 0, 0) \) y \( R = (3, 3, 0) \) satisfacen la ecuación general \( x + 2y + 3z = 9 \) y por tanto yacen en el plano. Entonces se calcula:</p>
+    
+    \[
+    \mathbf{u} = \overrightarrow{PQ} = \mathbf{q} - \mathbf{p} = 
+    \begin{bmatrix}
+    9 - 6 \\
+    0 - 0 \\
+    0 - 1
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+    3 \\
+    0 \\
+    -1
+    \end{bmatrix}
+    \]
+    
+    \[
+    \mathbf{v} = \overrightarrow{PR} = \mathbf{r} - \mathbf{p} =
+    \begin{bmatrix}
+    3 - 6 \\
+    3 - 0 \\
+    0 - 1
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+    -3 \\
+    3 \\
+    -1
+    \end{bmatrix}
+    \]
+    
+    <p>Que, dado que no son múltiplos escalares mutuos, servirán como vectores directores. Por tanto, se tiene la ecuación vectorial de \( \mathcal{P} \):</p>
+    
+    \[
+    \begin{bmatrix}
+    x \\
+    y \\
+    z
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+    6 \\
+    0 \\
+    1
+    \end{bmatrix}
+    + s
+    \begin{bmatrix}
+    3 \\
+    0 \\
+    -1
+    \end{bmatrix}
+    + t
+    \begin{bmatrix}
+    -3 \\
+    3 \\
+    -1
+    \end{bmatrix}
+    \]
+    
+    <p>y las correspondientes ecuaciones paramétricas:</p>
+    
+    \[
+    \begin{cases}
+    x = 6 + 3s - 3t \\
+    y = 0 + 0s + 3t \\
+    z = 1 - s - t
+    \end{cases}
+    \quad \text{o simplemente} \quad
+    \begin{cases}
+    x = 6 + 3s - 3t \\
+    y = 3t \\
+    z = 1 - s - t
+    \end{cases}
+    \]
+    
+    <p>¿Qué habría ocurrido si hubiera escogido \( R = (0, 0, 3)^2 \)?</p>
+
+    <h2>Comentarios</h2>
+    
     <ul>
-        <li>Cuando \( \beta_1 = \dots = \beta_m = 1 \), la combinación \( a_1 + \dots + a_m \) es la <strong>suma de los vectores</strong>.</li>
-        <li>Cuando \( \beta_1 = \dots = \beta_m = \frac{1}{m} \), la combinación \( \frac{1}{m} (a_1 + \dots + a_m) \) es el <strong>promedio</strong> de los vectores.</li>
-        <li>Cuando los coeficientes suman uno, es decir, \( \beta_1 + \dots + \beta_m = 1 \), la combinación se llama una <strong>combinación afín</strong>.</li>
-        <li>Si además los coeficientes son no negativos, la combinación se llama <strong>combinación convexa</strong>, <strong>mezcla</strong> o <strong>promedio ponderado</strong>.</li>
+        <li>Un plano es un objeto bidimensional, y su ecuación, en forma vectorial o paramétrica, requiere dos parámetros.</li>
+        
+        <li>Como muestra la figura 1.59, dado un punto \( P \) y un vector distinto de cero \( \mathbf{n} \) en \( \mathbb{R}^3 \), existen infinitas rectas a través de \( P \) con \( \mathbf{n} \) como vector normal. Sin embargo, \( P \) y dos vectores normales no paralelos \( \mathbf{n}_1 \) y \( \mathbf{n}_2 \) sirven para ubicar una recta \( \ell \) de manera única, pues \( \ell \) debe ser entonces la recta que pasa a través de \( P \) perpendicular al plano con ecuación \( \mathbf{x} = \mathbf{p} + s\mathbf{n}_1 + t\mathbf{n}_2 \) (figura 1.62).</li>
+        
+        <li>En consecuencia, una recta en \( \mathbb{R}^3 \) también puede especificarse mediante un par de ecuaciones:
+            \[
+            \begin{cases}
+            a_1x + b_1y + c_1z = d_1 \\
+            a_2x + b_2y + c_2z = d_2
+            \end{cases}
+            \]
+            que corresponden a cada vector normal.</li>
+        
+        <li>Dado que dichas ecuaciones corresponden a un par de planos no paralelos (¿por qué no paralelos?), esta es justo la descripción de una recta como la intersección de dos planos no paralelos (figura 1.63).</li>
+        
+        <li>Algebraicamente, la recta consiste de todos los puntos \( (x, y, z) \) que satisfacen simultáneamente ambas ecuaciones. Este concepto se explorará más en el capítulo 2, cuando se estudie la solución de los sistemas de ecuaciones lineales.</li>
     </ul>
-    <p>Los coeficientes en una combinación afín o convexa a veces se expresan como porcentajes que suman el 100%.</p>
-    una suma de vectores es un caso particular de combinación lineal.
+    
+    <p>Observe una vez más que una sola ecuación (general) describe una recta en \( \mathbb{R}^2 \), pero un plano en \( \mathbb{R}^3 \). [En dimensiones superiores, un objeto (recta, plano, etcétera) determinado por una sola ecuación de este tipo por lo general se conoce como <strong>hiperplano</strong>.]</p>
+   
 
-    <hr>
-    <br><br>
-    <h2>Ejemplos de Combinaciones Lineales</h2>
-    <br>
-    <h2>Desplazamientos</h2>
-    <p>Cuando los vectores representan desplazamientos, una combinación lineal es la suma de los desplazamientos escalados. Esto se ilustra en la figura 1.11.</p>
-    <img src="../../img/algebra_lineal_diez.png" alt="" height="320" width="500">
+
+     <p>
+    La relación entre la dimensión del objeto, el número de ecuaciones requeridas y la dimensión del espacio está dada por la “fórmula de balanceo”:
+  </p>
+
+  <p>
+    \[
+      (\text{dimensión del objeto}) + (\text{número de ecuaciones generales}) = \text{dimensión del espacio}
+    \]
+  </p>
+
+
+  <h1>Ecuaciones de Rectas y Planos</h1>
+
+  <h2>Tabla 1.2: Ecuaciones de rectas en \(\mathbb{R}^2\)</h2>
+  <table>
+    <tr>
+      <th>Forma normal</th>
+      <th>Forma general</th>
+      <th>Forma vectorial</th>
+      <th>Forma paramétrica</th>
+    </tr>
+    <tr>
+      <td class="math">\(\mathbf{n} \cdot \mathbf{x} = \mathbf{n} \cdot \mathbf{p}\)</td>
+      <td class="math">\(ax + by = c\)</td>
+      <td class="math">\(\mathbf{x} = \mathbf{p} + t\mathbf{d}\)</td>
+      <td class="math">\(\begin{cases} x = p_1 + td_1 \\ y = p_2 + td_2 \end{cases}\)</td>
+    </tr>
+  </table>
+  <p class="caption">Tabla 1.2: Ecuaciones de rectas en \(\mathbb{R}^2\)</p>
+
+  <h2>Tabla 1.3: Rectas y planos en \(\mathbb{R}^3\)</h2>
+  <table>
+    <tr>
+      <th></th>
+      <th>Forma normal</th>
+      <th>Forma general</th>
+      <th>Forma vectorial</th>
+      <th>Forma paramétrica</th>
+    </tr>
+    <tr>
+      <td><strong>Rectas</strong></td>
+      <td class="math">\(\begin{cases} \mathbf{n}_1 \cdot \mathbf{x} = \mathbf{n}_1 \cdot \mathbf{p} \\ \mathbf{n}_2 \cdot \mathbf{x} = \mathbf{n}_2 \cdot \mathbf{p} \end{cases}\)</td>
+      <td class="math">\(\begin{cases} a_1x + b_1y + c_1z = d_1 \\ a_2x + b_2y + c_2z = d_2 \end{cases}\)</td>
+      <td class="math">\(\mathbf{x} = \mathbf{p} + t\mathbf{d}\)</td>
+      <td class="math">\(\begin{cases} x = p_1 + td_1 \\ y = p_2 + td_2 \\ z = p_3 + td_3 \end{cases}\)</td>
+    </tr>
+    <tr>
+      <td><strong>Planos</strong></td>
+      <td class="math">\(\mathbf{n} \cdot \mathbf{x} = \mathbf{n} \cdot \mathbf{p}\)</td>
+      <td class="math">\(ax + by + cz = d\)</td>
+      <td class="math">\(\mathbf{x} = \mathbf{p} + s\mathbf{u} + t\mathbf{v}\)</td>
+      <td class="math">\(\begin{cases} x = p_1 + su_1 + tv_1 \\ y = p_2 + su_2 + tv_2 \\ z = p_3 + su_3 + tv_3 \end{cases}\)</td>
+    </tr>
+  </table>
+  <p class="caption">Tabla 1.3: Rectas y planos en \(\mathbb{R}^3\)</p>
+
 
     </form>
 </div>
 
-
-
-
-<div class="seccion derecha">
-    <form action="./sexto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h2>Mezcla de Audio</h2>
-    <p>Cuando \( a_1, \dots, a_m \) son vectores que representan señales de audio (por ejemplo, grabadas simultáneamente en el mismo período de tiempo), se llaman <strong>pistas</strong>. La combinación lineal</p>
-    <p>\[ \beta_1 a_1 + \dots + \beta_m a_m \]</p>
-    <p>es percibida como una <strong>mezcla</strong> de las pistas de audio, con volumen relativo dado por \( |\beta_1|, \dots, |\beta_m| \). Un productor en un estudio o un ingeniero de sonido en un concierto en vivo elige valores de \( \beta_1, \dots, \beta_m \) para lograr un buen balance entre los diferentes instrumentos, voces y percusión.</p>
-    
-    <h2>Replicación de Flujos de Caja</h2>
-    <p>Supongamos que \( c_1, \dots, c_m \) son vectores que representan flujos de caja, como préstamos o inversiones. La combinación lineal</p>
-    <p>\[ f = \beta_1 c_1 + \dots + \beta_m c_m \]</p>
-    <p>representa otro flujo de caja. Decimos que el flujo de caja \( f \) ha sido <strong>replicado</strong> por la combinación lineal de los flujos originales \( c_1, \dots, c_m \).</p>
-    <p>Por ejemplo, si</p>
-    <p>\[ c_1 = \begin{bmatrix} 1 \\ -1.1 \\ 0 \end{bmatrix} \]</p>
-    <p>representa un préstamo de $1 en el período 1 al período 2 con un 10% de interés, y</p>
-    <p>\[ c_2 = \begin{bmatrix} 0 \\ 1 \\ -1.1 \end{bmatrix} \]</p>
-    <p>representa un préstamo de $1 del período 2 al período 3 con un 10% de interés, entonces la combinación lineal</p>
-    <p>\[ d = c_1 + 1.1 c_2 = \begin{bmatrix} 1 \\ 0 \\ -1.21 \end{bmatrix} \]</p>
-    <p>representa un préstamo a dos períodos de $1 en el período 1, con interés compuesto del 10%. Aquí hemos replicado un préstamo a dos períodos a partir de dos préstamos de un solo período.</p>
-    
-    <h2>Línea y Segmento</h2>
-    <p>Cuando \( a \) y \( b \) son diferentes \( n \)-vectores, la combinación afín</p>
-    <p>\[ c = (1 - \theta) a + \theta b \]</p>
-    <p>donde \( \theta \) es un escalar, describe un punto en la <strong>línea</strong> que pasa por \( a \) y \( b \).</p>
-    <p>Cuando \( 0 \leq \theta \leq 1 \), \( c \) es una combinación convexa de \( a \) y \( b \), y se dice que está en el <strong>segmento</strong> entre \( a \) y \( b \).</p>
-    <p>Para \( n = 2 \) y \( n = 3 \), con los vectores representando coordenadas en 2D o 3D, esto coincide con la noción geométrica habitual de línea y segmento. Sin embargo, también podemos hablar de la línea que pasa por dos vectores de dimensión 100. Esto se ilustra en la figura 1.12.</p>
-    <img src="../../img/algebra_lineal_once.png" alt="" height="320" width="600">
-
-    </form>
-</div>
 
 <div class="centered-container">
     <a
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="septimo.php"
+        href="segundo.php"
         role="button"
         width="50px"
         height="50px"
     >Siguiente</a>
 </div>
+
+<div class="seccion derecha">
+    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+ 
+     
+    
+    </form>
+</div>
+
+ 
 </body>
 </html>

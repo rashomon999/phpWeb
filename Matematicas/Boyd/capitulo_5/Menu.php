@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -29,14 +29,8 @@
 </head>
 <body>
     <div class="centered-container">
-        <a class="btn" href=".\ejercicios_boyd\index.php">ejercicios (boyd)</a>
-        <a class="btn" href=".\ejercicios_poole\index.php">ejercicios (poole)</a>
-        <br><br>
-       
-        <a class="btn" href=".\lineal\index.php">linear functions cap(2) (Boyd) (no empezado)</a>
-        <br><br>
-        <a class="btn" href=".\poole\index.php">vectores (Poole)</a>
-       
+        
+        <a class="btn" href=".\capitulo_5_1\index.php">capitulo 5.1</a>
       
     </div>
 </body>

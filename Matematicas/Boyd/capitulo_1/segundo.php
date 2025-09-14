@@ -1132,13 +1132,6 @@ if ($respuesta_110 === '264') {
         max-width: 100%;
         height: auto;
     }
-
-    .seccion {
-    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
-    padding: 20px; /* importante este padding*/
-    box-sizing: border-box;
-    height: 170vh;
-}
 </style>
  
 <script>
@@ -1440,42 +1433,47 @@ function ocultarMensaje4() {
 </head>
 <body> 
 <div class="seccion izquierda">
-    <form action="./octavo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h1>Vectores por Bloques</h1>
+    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <h2>Ejemplos</h2>
+    <p>Un \( n \)-vector puede representar \( n \) cantidades o valores en una aplicación.</p>
     
-    <p>Si los vectores \( a \) y \( b \) son vectores por bloques, y los bloques correspondientes tienen el mismo tamaño (es decir, son conformes), entonces:</p>
-    <p>
-        \[
-        a^T b = \begin{bmatrix} a_1 \\ \vdots \\ a_k \end{bmatrix}^T
-        \begin{bmatrix} b_1 \\ \vdots \\ b_k \end{bmatrix} = a_1^T b_1 + \cdots + a_k^T b_k.
-        \]
-    </p>
-    <p>El producto interno de vectores por bloques es la suma de los productos internos de los bloques.</p>
+    <p>En algunos casos, los valores son similares en naturaleza (por ejemplo, se expresan en las mismas unidades físicas).</p>
     
-    <h2>Aplicaciones</h2>
+    <p>En otros casos, las cantidades representadas por las entradas del vector pueden ser completamente diferentes entre sí.</p>
+    
+    <p>A continuación, describimos algunos ejemplos típicos que veremos a lo largo del estudio.</p>
+    
+    <h2>Ubicación y desplazamiento</h2>
+    <p>Un <strong>2-vector</strong> puede representar una posición o ubicación en un espacio bidimensional (2D), es decir, un plano, como se muestra en la figura 1.1.</p>
+    
+    <p>Un <strong>3-vector</strong> se usa para representar la posición de un punto en un espacio tridimensional (3D).</p>
+    
+    <p>Las entradas del vector indican las <strong>coordenadas</strong> de la posición o ubicación.</p>
+    
+    <p>También podemos usar un vector para representar un <strong>desplazamiento</strong> en un plano o en el espacio 3D. En este caso, normalmente se dibuja como una <strong>flecha</strong>, como en la figura 1.1.</p>
+    
+    <p>Además, un vector puede representar la <strong>velocidad</strong> o <strong>aceleración</strong> de un punto en movimiento en un plano o en el espacio 3D en un instante determinado.</p>
+    
+    <h2>Color</h2>
+    <p>Un <strong>3-vector</strong> puede representar un <strong>color</strong>, donde sus entradas corresponden a los valores de intensidad de <strong>Rojo (R)</strong>, <strong>Verde (G)</strong> y <strong>Azul (B)</strong> (RGB).</p>
+    
+    <p>Normalmente, estos valores están entre <strong>0 y 1</strong>.</p>
+    
+    <h3>Ejemplos de colores representados como vectores:</h3>
     <ul>
-        <li><strong>Co-ocurrencia:</strong> Si \( a \) y \( b \) son \( n \)-vectores que describen ocurrencias (es decir, cada elemento es 0 o 1), entonces \( a^T b \) da el número total de índices para los cuales \( a_i \) y \( b_i \) son ambos uno, es decir, el número total de co-ocurrencias.</li>
-        <li>Si interpretamos los vectores \( a \) y \( b \) como describiendo subconjuntos de \( n \) objetos, entonces \( a^T b \) da el número de objetos en la intersección de los dos subconjuntos.</li>
+        <li>\( (0,0,0) \) representa <strong>negro</strong>.</li>
+        <li>\( (0,1,0) \) representa un <strong>verde puro brillante</strong>.</li>
+        <li>\( (1,0.5,0.5) \) representa un <strong>tono de rosa</strong>.</li>
     </ul>
-    <p>Ejemplo: Para dos subconjuntos \( A \) y \( B \) de 7 objetos, etiquetados del 1 al 7, con vectores de ocurrencia:</p>
-    <p>
-        \[
-        a = (0, 1, 1, 1, 1, 1, 1), \quad b = (1, 0, 1, 0, 1, 0, 0).
-        \]
-    </p>
-    <p>Aquí tenemos \( a^T b = 2 \), que es el número de objetos en ambos \( A \) y \( B \) (es decir, los objetos 3 y 5).</p>
-    <img src="../../img/algebra_lineal_doce.png" alt=""> 
-
-    <h2>Peso, características y puntuación</h2>
-    <p>Cuando el vector \( f \) representa un conjunto de características de un objeto y \( w \) es un vector del mismo tamaño (llamado vector de pesos), el producto interno \( w^T f \) es la suma de los valores de las características ponderados por los pesos. Esto se conoce a veces como una <strong>puntuación</strong>. </p>
-    <p>Ejemplo: Si las características están asociadas a un solicitante de crédito (por ejemplo, edad, ingresos, etc.), podemos interpretar</p>
-    <p>
-        \[
-        s = w^T f
-        \]
-    </p>
-    <p>como una <strong>puntuación de crédito</strong>, donde cada \( w_i \) es el peso asignado a la característica \( i \).</p>
     
+    <p>Esto se ilustra en la <strong>figura 1.2</strong>.</p>
+    <img src="../../../img/algebra_lineal_dos.png" alt="" height="300" >     
+    <br><br>
+    <h2>Cantidades</h2>
+    <p>Un <strong>n-vector</strong> <em>q</em> puede representar las cantidades o montos de <strong>n</strong> recursos o productos que posee (o produce, o requiere) una entidad, como una empresa.</p>
+    <p>Las entradas negativas indican una cantidad del recurso que se debe a otra parte (o que se consume, o que debe ser desechada).</p>
+    <p>Por ejemplo, una <strong>lista de materiales</strong> es un vector que indica las cantidades de <strong>n</strong> recursos necesarios para crear un producto o llevar a cabo una tarea.</p>
+ 
     </form>
 </div>
 
@@ -1483,73 +1481,34 @@ function ocultarMensaje4() {
 
 
 <div class="seccion derecha">
-    <form action="./octavo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <p>La idea de los vectores por bloques es que, en lugar de trabajar con elementos escalares individuales, los elementos de los vectores son subvectores o bloques de datos más grandes.</p>
+    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <h2>Portafolio</h2>
+    <p>Un <strong>n-vector</strong> <em>s</em> puede representar un <strong>portafolio de acciones</strong> o una <strong>inversión</strong> en <strong>n</strong> activos diferentes, donde <em>s<sub>i</sub></em> indica el número de acciones del activo <em>i</em> que se poseen.</p>
+    <p>Por ejemplo, el vector <strong>(100, 50, 20)</strong> representa un portafolio con 100 acciones del activo 1, 50 acciones del activo 2 y 20 acciones del activo 3.</p>
+    <p>Las <strong>posiciones cortas</strong> (acciones que se deben a otra parte) se representan con entradas negativas en un vector de portafolio.</p>
+    <p>Las entradas del vector de portafolio también pueden expresarse en <strong>valores monetarios</strong> o como <strong>fracciones del total de dinero invertido</strong>.</p>
     
-    <h2>¿Qué cambia con los vectores por bloques?</h2>
+    <h2>Valores en una población</h2>
+    <p>Un <strong>n-vector</strong> puede representar los valores de una cierta cantidad en una <strong>población</strong> de individuos o entidades.</p>
+    <p>Por ejemplo, un <strong>n-vector</strong> <em>b</em> puede representar la <strong>presión arterial</strong> de un grupo de <strong>n</strong> pacientes, donde <em>b<sub>i</sub></em> es la presión arterial del paciente <em>i</em>, para <em>i = 1, ..., n</em>.</p>
+    
+    <h2>Proporciones</h2>
+    <p>Un <strong>vector</strong> <em>w</em> puede representar <strong>fracciones</strong> o <strong>proporciones</strong> en <strong>n</strong> elecciones, resultados u opciones, donde <em>w<sub>i</sub></em> es la fracción correspondiente a la opción <em>i</em>.</p>
+    <p>Las entradas del vector son <strong>no negativas</strong> y su suma es <strong>uno</strong>.</p>
+    <p>Ejemplo: una <strong>distribución uniforme</strong> de 4 resultados se representa como el <strong>4-vector</strong>:</p>
+    <p>(1/4, 1/4, 1/4, 1/4)</p>
+    
+    <h2>Series de tiempo</h2>
+    <p>Un <strong>n-vector</strong> puede representar una <strong>serie de tiempo</strong> o una <strong>señal</strong>, es decir, el valor de una cierta cantidad en distintos momentos.</p>
+    <p>(Las entradas de un vector que representa una serie de tiempo a veces se llaman <strong>muestras</strong>, especialmente cuando la cantidad medida es una señal).</p>
+    <p>Ejemplos:</p>
     <ul>
-        <li><strong>Interpretación:</strong> En un vector normal, cada entrada es un número. En un vector por bloques, cada entrada es otro vector (o una matriz pequeña).</li>
-        <li><strong>Cálculo del producto interno:</strong> En lugar de multiplicar números y sumarlos, ahora multiplicamos los bloques (que pueden ser vectores o matrices) y sumamos los productos internos de esos bloques.</li>
-        <li><strong>Aplicaciones prácticas:</strong> Se usa en problemas donde los datos vienen en grupos naturales, por ejemplo, en señales divididas en segmentos, imágenes divididas en regiones o sistemas que manejan información agrupada.</li>
+        <li>Una <strong>señal de audio</strong> puede representarse como un vector, donde cada entrada indica el valor de la <strong>presión acústica</strong> en tiempos igualmente espaciados.</li>
+        <li>Un vector puede representar la <strong>lluvia</strong> (o <strong>temperatura</strong>, o <strong>presión barométrica</strong>) medida cada hora en una ubicación específica.</li>
     </ul>
-    
-    <h2>Ejemplo Concreto</h2>
-    <p>Si tenemos dos vectores normales:</p>
-    <p>
-        \[
-        a = \begin{bmatrix} 1 & 2 & 3 \end{bmatrix}, \quad b = \begin{bmatrix} 4 & 5 & 6 \end{bmatrix}
-        \]
-    </p>
-    <p>El producto interno sería:</p>
-    <p>
-        \[
-        a^T b = (1 \cdot 4) + (2 \cdot 5) + (3 \cdot 6) = 32.
-        \]
-    </p>
-    
-    <p>Si en vez de números, cada entrada es un vector (bloque), por ejemplo:</p>
-    <p>
-        \[
-        a = \begin{bmatrix} a_1 \\ a_2 \end{bmatrix}, \quad b = \begin{bmatrix} b_1 \\ b_2 \end{bmatrix}
-        \]
-    </p>
-    <p>donde</p>
-    <p>
-        \[
-        a_1 = \begin{bmatrix} 1 & 2 \end{bmatrix}, \quad a_2 = \begin{bmatrix} 3 & 4 \end{bmatrix}
-        \]
-        \[
-        b_1 = \begin{bmatrix} 5 & 6 \end{bmatrix}, \quad b_2 = \begin{bmatrix} 7 & 8 \end{bmatrix}
-        \]
-    </p>
-    <p>entonces el producto interno se calcularía como:</p>
-    <p>
-        \[
-        a^T b = a_1^T b_1 + a_2^T b_2.
-        \]
-    </p>
-    <p>Cada producto interno de los bloques es:</p>
-    <p>
-        \[
-        a_1^T b_1 = (1 \cdot 5) + (2 \cdot 6) = 17,
-        \]
-        \[
-        a_2^T b_2 = (3 \cdot 7) + (4 \cdot 8) = 53.
-        \]
-    </p>
-    <p>Sumando los resultados:</p>
-    <p>
-        \[
-        a^T b = 17 + 53 = 70.
-        \]
-    </p>
-    
-    <h2>Resumen</h2>
-    <ul>
-        <li>En un vector normal, el producto interno es la suma de productos de escalares.</li>
-        <li>En un vector por bloques, cada entrada es un vector y el producto interno es la suma de los productos internos de cada bloque.</li>
-        <li>Esto permite manejar datos estructurados de manera más eficiente en problemas de álgebra lineal aplicada.</li>
-    </ul>
+    <p>Cuando un vector representa una serie de tiempo, es común graficar <em>x<sub>i</sub></em> versus <em>i</em>, conectando los puntos con <strong>líneas</strong> para facilitar la visualización.</p>
+    <p>Un ejemplo de esto se muestra en la <strong>figura 1.3</strong>, donde un <strong>48-vector</strong> <em>x</em> representa la temperatura horaria en <strong>Los Ángeles</strong> durante dos días.</p>
+    <img src="../../../img/algebra_lineal_tres.png" alt="" height="300">
     </form>
 </div>
 
@@ -1558,7 +1517,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="nueve.php"
+        href="tercero.php"
         role="button"
         width="50px"
         height="50px"

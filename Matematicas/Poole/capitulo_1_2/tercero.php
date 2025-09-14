@@ -1132,6 +1132,13 @@ if ($respuesta_110 === '264') {
         max-width: 100%;
         height: auto;
     }
+
+      .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 450vh;
+    }
 </style>
  
 <script>
@@ -1434,46 +1441,9 @@ function ocultarMensaje4() {
 <body> 
 <div class="seccion izquierda">
     <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h2>Ejemplos</h2>
-    <p>Un \( n \)-vector puede representar \( n \) cantidades o valores en una aplicación.</p>
-    
-    <p>En algunos casos, los valores son similares en naturaleza (por ejemplo, se expresan en las mismas unidades físicas).</p>
-    
-    <p>En otros casos, las cantidades representadas por las entradas del vector pueden ser completamente diferentes entre sí.</p>
-    
-    <p>A continuación, describimos algunos ejemplos típicos que veremos a lo largo del estudio.</p>
-    
-    <h2>Ubicación y desplazamiento</h2>
-    <p>Un <strong>2-vector</strong> puede representar una posición o ubicación en un espacio bidimensional (2D), es decir, un plano, como se muestra en la figura 1.1.</p>
-    
-    <p>Un <strong>3-vector</strong> se usa para representar la posición de un punto en un espacio tridimensional (3D).</p>
-    
-    <p>Las entradas del vector indican las <strong>coordenadas</strong> de la posición o ubicación.</p>
-    
-    <p>También podemos usar un vector para representar un <strong>desplazamiento</strong> en un plano o en el espacio 3D. En este caso, normalmente se dibuja como una <strong>flecha</strong>, como en la figura 1.1.</p>
-    
-    <p>Además, un vector puede representar la <strong>velocidad</strong> o <strong>aceleración</strong> de un punto en movimiento en un plano o en el espacio 3D en un instante determinado.</p>
-    
-    <h2>Color</h2>
-    <p>Un <strong>3-vector</strong> puede representar un <strong>color</strong>, donde sus entradas corresponden a los valores de intensidad de <strong>Rojo (R)</strong>, <strong>Verde (G)</strong> y <strong>Azul (B)</strong> (RGB).</p>
-    
-    <p>Normalmente, estos valores están entre <strong>0 y 1</strong>.</p>
-    
-    <h3>Ejemplos de colores representados como vectores:</h3>
-    <ul>
-        <li>\( (0,0,0) \) representa <strong>negro</strong>.</li>
-        <li>\( (0,1,0) \) representa un <strong>verde puro brillante</strong>.</li>
-        <li>\( (1,0.5,0.5) \) representa un <strong>tono de rosa</strong>.</li>
-    </ul>
-    
-    <p>Esto se ilustra en la <strong>figura 1.2</strong>.</p>
-    <img src="../../img/algebra_lineal_dos.png" alt="" height="300" >     
-    <br><br>
-    <h2>Cantidades</h2>
-    <p>Un <strong>n-vector</strong> <em>q</em> puede representar las cantidades o montos de <strong>n</strong> recursos o productos que posee (o produce, o requiere) una entidad, como una empresa.</p>
-    <p>Las entradas negativas indican una cantidad del recurso que se debe a otra parte (o que se consume, o que debe ser desechada).</p>
-    <p>Por ejemplo, una <strong>lista de materiales</strong> es un vector que indica las cantidades de <strong>n</strong> recursos necesarios para crear un producto o llevar a cabo una tarea.</p>
- 
+
+  
+
     </form>
 </div>
 
@@ -1482,33 +1452,113 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
     <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h2>Portafolio</h2>
-    <p>Un <strong>n-vector</strong> <em>s</em> puede representar un <strong>portafolio de acciones</strong> o una <strong>inversión</strong> en <strong>n</strong> activos diferentes, donde <em>s<sub>i</sub></em> indica el número de acciones del activo <em>i</em> que se poseen.</p>
-    <p>Por ejemplo, el vector <strong>(100, 50, 20)</strong> representa un portafolio con 100 acciones del activo 1, 50 acciones del activo 2 y 20 acciones del activo 3.</p>
-    <p>Las <strong>posiciones cortas</strong> (acciones que se deben a otra parte) se representan con entradas negativas en un vector de portafolio.</p>
-    <p>Las entradas del vector de portafolio también pueden expresarse en <strong>valores monetarios</strong> o como <strong>fracciones del total de dinero invertido</strong>.</p>
+ <strong>Vectores ortogonales: </strong>
+    El concepto de perpendicularidad es fundamental para la geometría. Quien estudie geometría rápidamente se dará cuenta de la importancia y utilidad de los ángulos rectos.
+    Ahora se generalizará la idea de la perpendicularidad para los vectores en \( R^n \), donde se le llama ortogonalidad.
+
+    <strong>Definicion: </strong> Dos vectores \( u ~~ \text{ y } ~~ v\) en \( R^n \) son mutuamente ortogonales si \( u * v = 0\).
+    <br><br>
+    Dado que 0*v = 0 para todo vector v en  \( R^n \), el vector cero es ortogonal a todo vector.
     
-    <h2>Valores en una población</h2>
-    <p>Un <strong>n-vector</strong> puede representar los valores de una cierta cantidad en una <strong>población</strong> de individuos o entidades.</p>
-    <p>Por ejemplo, un <strong>n-vector</strong> <em>b</em> puede representar la <strong>presión arterial</strong> de un grupo de <strong>n</strong> pacientes, donde <em>b<sub>i</sub></em> es la presión arterial del paciente <em>i</em>, para <em>i = 1, ..., n</em>.</p>
+ 
+    <strong>producto:</strong>
+    <br><br>
+    <h2>1. Producto Escalar (también llamado Producto Punto)</h2>
+    <p>Cuando multiplicas dos vectores mediante el producto escalar (o punto), el resultado es un escalar (un número real), no otro vector. Se calcula como la suma de los productos de las componentes correspondientes de los vectores.</p>
+    <p>Si tienes dos vectores \( \vec{a} = [a_1, a_2, a_3] \) y \( \vec{b} = [b_1, b_2, b_3] \), el producto escalar es:</p>
+    <p>
+        \( \vec{a} \cdot \vec{b} = a_1 b_1 + a_2 b_2 + a_3 b_3 \)
+    </p>
+    <p>El resultado es un número real (escalar), no un vector.</p>
+
+    <h3>Ejemplo:</h3>
+    <p>Si \( \vec{a} = [1, 2] \) y \( \vec{b} = [3, 4] \), el producto escalar sería:</p>
+    <p>
+        \( \vec{a} \cdot \vec{b} = 1 \cdot 3 + 2 \cdot 4 = 3 + 8 = 11 \)
+    </p>
+    <p>El resultado es 11, un escalar.</p>
+
+    <h2>2. Producto Vectorial</h2>
+    <p>Cuando realizas el producto vectorial (solo en \( \mathbb{R}^3 \), es decir, en el espacio tridimensional), el resultado es un vector, no un escalar. El producto vectorial de dos vectores \( \vec{a} \) y \( \vec{b} \) en tres dimensiones es otro vector que es perpendicular a ambos vectores originales. Se calcula como:</p>
+    <p>
+        \( \vec{a} \times \vec{b} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \end{vmatrix} \)
+    </p>
+    <p>Donde \( \hat{i}, \hat{j}, \hat{k} \) son los vectores unitarios en la dirección de los ejes \( x, y, z \), respectivamente.</p>
+    <p>El resultado es un vector.</p>
+
+    <h3>Ejemplo:</h3>
+    <p>Si \( \vec{a} = [1, 2, 3] \) y \( \vec{b} = [4, 5, 6] \), el producto vectorial sería:</p>
+    <p>
+        \( \vec{a} \times \vec{b} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ 1 & 2 & 3 \\ 4 & 5 & 6 \end{vmatrix} = (-3) \hat{i} + 6 \hat{j} - 3 \hat{k} \)
+    </p>
+    <p>El resultado es el vector:</p>
+    <p>
+        \( \vec{a} \times \vec{b} = [-3, 6, -3] \)
+    </p>
+
+    <h2>3. Multiplicación por un Escalar (Escalar por Vector)</h2>
+    <p>Si multiplicas un vector por un escalar, el resultado es otro vector. Cada componente del vector se multiplica por el escalar. Si \( \alpha \) es un escalar y \( \vec{v} = [v_1, v_2, v_3] \), entonces:</p>
+    <p>
+        \( \alpha \cdot \vec{v} = [\alpha v_1, \alpha v_2, \alpha v_3] \)
+    </p>
+    <p>El resultado es un vector.</p>
+
+    <h3>Ejemplo:</h3>
+    <p>Si \( \alpha = 2 \) y \( \vec{v} = [1, 3, 4] \), el resultado sería:</p>
+    <p>
+        \( 2 \cdot \vec{v} = [2 \cdot 1, 2 \cdot 3, 2 \cdot 4] = [2, 6, 8] \)
+    </p>
+    <hr>
+
+    <h1>¿Qué es un vector unitario?</h1>
+    <p>Un <strong>vector unitario</strong> es un vector cuya longitud (o norma) es 1. Es decir, si un vector <em>u</em> es unitario, entonces:</p>
+    <p>\[ ||u|| = 1 \]</p>
+    <p>En el espacio bidimensional <strong>\( \mathbb{R}^2 \)</strong>, el conjunto de todos los vectores unitarios forma un <strong>círculo unitario</strong>: el círculo de radio 1 centrado en el origen (0,0).</p>
     
-    <h2>Proporciones</h2>
-    <p>Un <strong>vector</strong> <em>w</em> puede representar <strong>fracciones</strong> o <strong>proporciones</strong> en <strong>n</strong> elecciones, resultados u opciones, donde <em>w<sub>i</sub></em> es la fracción correspondiente a la opción <em>i</em>.</p>
-    <p>Las entradas del vector son <strong>no negativas</strong> y su suma es <strong>uno</strong>.</p>
-    <p>Ejemplo: una <strong>distribución uniforme</strong> de 4 resultados se representa como el <strong>4-vector</strong>:</p>
-    <p>(1/4, 1/4, 1/4, 1/4)</p>
+    <h4>Cómo obtener un vector unitario a partir de otro vector</h4>
+    <p>Dado un vector no nulo \( v \), podemos encontrar un vector unitario en la misma dirección dividiendo \( v \) por su longitud.</p>
+    <p>La longitud de \( v \) (o norma euclidiana) se calcula como:</p>
+    <p>\[ ||v|| = \sqrt{x^2 + y^2} \]</p>
+    <p>donde \( v = (x, y) \).</p>
+    <p>Para obtener un vector unitario \( u \) en la misma dirección que \( v \), simplemente lo dividimos por su propia norma:</p>
+    <p>\[ u = \frac{v}{||v||} \]</p>
+    <p>Este proceso se llama <strong>normalización de un vector</strong>.</p>
     
-    <h2>Series de tiempo</h2>
-    <p>Un <strong>n-vector</strong> puede representar una <strong>serie de tiempo</strong> o una <strong>señal</strong>, es decir, el valor de una cierta cantidad en distintos momentos.</p>
-    <p>(Las entradas de un vector que representa una serie de tiempo a veces se llaman <strong>muestras</strong>, especialmente cuando la cantidad medida es una señal).</p>
-    <p>Ejemplos:</p>
+    <h4>Demostración algebraica</h4>
+    <p>Sabemos que si multiplicamos cualquier vector por un escalar positivo, el resultado sigue teniendo la misma dirección.</p>
+    <p>Aquí, el escalar que usamos es \( \frac{1}{||v||} \), que nos asegura que la longitud del nuevo vector será 1:</p>
+    <p>\[ ||u|| = \frac{||v||}{||v||} = 1 \]</p>
+    <p>Así, el vector resultante es unitario y tiene la misma dirección que \( v \).</p>
+    
+    <h4>Ejemplo práctico</h4>
+    <p>Supongamos que tenemos el vector:</p>
+    <p>\[ v = (3,4) \]</p>
+    <p>Calculamos su longitud:</p>
+    <p>\[ ||v|| = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5 \]</p>
+    <p>Dividimos cada componente de \( v \) por su longitud:</p>
+    <p>\[ u = \left( \frac{3}{5}, \frac{4}{5} \right) \]</p>
+    <p>Verificamos que \( u \) es unitario:</p>
+    <p>\[ ||u|| = \sqrt{ \left( \frac{3}{5} \right)^2 + \left( \frac{4}{5} \right)^2 } = \sqrt{ \frac{9}{25} + \frac{16}{25} } = \sqrt{ \frac{25}{25} } = 1 \]</p>
+    <p>Por lo tanto, \( u = \left( \frac{3}{5}, \frac{4}{5} \right) \) es un vector unitario en la misma dirección que \( v \).</p>
+    
+    <h4>Resumen</h4>
     <ul>
-        <li>Una <strong>señal de audio</strong> puede representarse como un vector, donde cada entrada indica el valor de la <strong>presión acústica</strong> en tiempos igualmente espaciados.</li>
-        <li>Un vector puede representar la <strong>lluvia</strong> (o <strong>temperatura</strong>, o <strong>presión barométrica</strong>) medida cada hora en una ubicación específica.</li>
+        <li>Un vector unitario es un vector con longitud 1.</li>
+        <li>En \( \mathbb{R}^2 \), los vectores unitarios forman el círculo unitario.</li>
+        <li>Para encontrar un vector unitario en la misma dirección que un vector \( v \), lo dividimos por su norma.</li>
+        <li>Este proceso se llama normalización.</li>
     </ul>
-    <p>Cuando un vector representa una serie de tiempo, es común graficar <em>x<sub>i</sub></em> versus <em>i</em>, conectando los puntos con <strong>líneas</strong> para facilitar la visualización.</p>
-    <p>Un ejemplo de esto se muestra en la <strong>figura 1.3</strong>, donde un <strong>48-vector</strong> <em>x</em> representa la temperatura horaria en <strong>Los Ángeles</strong> durante dos días.</p>
-    <img src="../../img/algebra_lineal_tres.png" alt="" height="300">
+    <hr>
+        <hr>
+        <strong>Hallar la magnitud de un vector (norma):</strong>
+        <br><br>
+        <img src="..\..\..\img\vec_profe_uno.png" alt="" width="500">
+        <br><br>
+        <strong>dibujar vector cuando nos dan los puntos: </strong>
+        <br><br>
+        <img src="..\..\..\img\vec_profe_dos.png" alt="" width="500">
+        <hr>
+        <strong>1.3: </strong>
     </form>
 </div>
 
@@ -1517,7 +1567,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="tercero.php"
+        href="segundo.php"
         role="button"
         width="50px"
         height="50px"

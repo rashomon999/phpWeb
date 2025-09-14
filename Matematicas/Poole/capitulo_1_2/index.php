@@ -1124,13 +1124,20 @@ if ($respuesta_110 === '264') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
     <link rel="stylesheet" href="../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="style_tercero.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
     .imagen {
         max-width: 100%;
         height: auto;
+    }
+
+    .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 450vh;
     }
 </style>
  
@@ -1433,96 +1440,307 @@ function ocultarMensaje4() {
 </head>
 <body> 
 <div class="seccion izquierda">
-    <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    
+    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <h1>Geometría y álgebra de vectores</h1>
+
+<h2>Vectores en el plano</h2>
+
+<p>Comience por considerar el plano cartesiano con los familiares ejes \(x\) y \(y\). Un vector es un
+segmento de recta dirigido que corresponde a un desplazamiento desde un punto \(A\) hasta
+otro punto \(B\); vea la figura 1.2.</p>
+
+<p>El vector de \(A\) a \(B\) se denota mediante \( \vec{v} \); el punto \(A\) se conoce como su punto inicial u origen, y el punto \(B\) se conoce como su punto terminal o punta. Con frecuencia,
+un vector simplemente se denota mediante una sola letra minúscula negrita, como \( \vec{v} \).</p>
+
+<p>El conjunto de todos los puntos en el plano corresponde al conjunto de todos los
+vectores cuyos orígenes están en el origen \(O\). A cada punto \(A\), le corresponde el vector
+\( \vec{a} \) y a cada vector \( \vec{a} \) con origen en \(O\), le corresponde su punta \(A\). (Los vectores de esta
+forma en ocasiones se conocen como vectores de posición.)</p>
+
+<p>Es natural representar dichos vectores usando coordenadas. Por ejemplo, en la figura
+1.3, \( A = (3, 2) \) y el vector se escribe \( \vec{a} = [3, 2] \) con corchetes. De igual modo, los
+otros vectores en la figura 1.3 son:</p>
+
+\[ b=-1,3 ~~~ \text{ y } ~~~ c=[2,-1] \]
+
+<p>Las coordenadas individuales (3 y 2 en el caso de \( \vec{a} \)) se llaman los componentes del vector. En ocasiones, se dice que un vector es un par ordenado de números reales. El orden
+es importante pues, por ejemplo, \( [3, 2] \neq [2, 3] \). En general, dos vectores son iguales si y
+sólo si sus componentes correspondientes son iguales. Por tanto, \( [x, y] = [1, 5] \) implica
+que \( x = 1 \) y \( y = 5 \).</p>
+
+<p>Con frecuencia es conveniente usar vectores columna en lugar de (o además de) vectores renglón. Otra representación de \( [3, 2] \) es:
+\(
+\begin{bmatrix} 3 \\ 2 \end{bmatrix}
+\)
+El punto importante es que los componentes están ordenados. En capítulos posteriores verá que los vectores columna
+son un tanto mejores desde el punto de vista computacional; por ahora, trate de acostumbrarse a ambas representaciones.</p>
+
+<p>Puede ocurrir que en realidad no pueda dibujar el vector \( [0, 0] \) desde el origen hacia sí mismo. No obstante, es un vector perfectamente bueno y tiene un nombre
+especial: el vector cero. El vector cero se denota \( \vec{0} \).</p>
 
 
-    <h2>Rendimiento Diario</h2>
-    <p>Un vector puede representar el rendimiento diario de una acción, es decir, su aumento fraccional (o disminución si es negativo) en valor a lo largo del día. Por ejemplo, el vector de serie temporal de rendimientos <code>(−0.022, +0.014, +0.004)</code> significa que el precio de la acción bajó un 2.2% el primer día, luego subió un 1.4% el siguiente día y subió nuevamente un 0.4% en el tercer día.</p>
-    <p>En este ejemplo, las muestras no están uniformemente espaciadas en el tiempo; el índice se refiere a días de negociación y no incluye fines de semana ni días festivos del mercado. Un vector puede representar el valor diario (o trimestral, horario o minuto a minuto) de cualquier otra cantidad de interés para un activo, como el precio o el volumen.</p>
+<img src="../../../img/vector_uno.png" alt="">
 
-    <h2>Flujo de Caja</h2>
-    <p>El flujo de caja entrante y saliente de una entidad (por ejemplo, una empresa) puede representarse mediante un vector, donde las entradas positivas representan pagos recibidos y las entradas negativas representan pagos realizados por la entidad.</p>
-    <p>Por ejemplo, con entradas que indican el flujo de caja en cada trimestre, el vector <code>(1000, −10, −10, −10, −1010)</code> representa un préstamo de un año de $1000, con pagos de intereses del 1% realizados cada trimestre y el pago final del capital más el último pago de intereses al final del año.</p>
+<p>El conjunto de todos los vectores con dos componentes se denota \( \mathbb{R}^2 \) (donde  \( \mathbb{R} \) 
+denota el conjunto de números reales de donde se eligen los componentes de los vectores
+en \( \mathbb{R}^2 \)). Por tanto, \( [1, 3.5] , [\sqrt{2}, \pi], [\frac{5}{3}, 4]\) estan todos en \( \mathbb{R}^2 \).</p>
 
-    <h2>Imágenes</h2>
-    <p>Una imagen en blanco y negro (monocromática) es un arreglo de <code>M × N</code> píxeles (cuadrados con un nivel de escala de grises uniforme) con <code>M</code> filas y <code>N</code> columnas. Cada uno de los <code>MN</code> píxeles tiene un valor de intensidad en escala de grises, donde 0 corresponde a negro y 1 a blanco brillante. (También se pueden usar otros rangos).</p>
-    <p>Una imagen puede representarse mediante un vector de longitud <code>MN</code>, donde los elementos indican los niveles de escala de grises en las ubicaciones de los píxeles, generalmente ordenados por columnas o por filas.</p>
-    <p>Una imagen de baja resolución <code>8×8</code> puede representarse como un vector de 64 elementos:</p>
-    <pre><code>x = (0.65, 0.05, 0.20, ..., 0.28, 0.00, 0.90)</code></pre>
-    <p>Una imagen a color de <code>M × N</code> píxeles se describe mediante un vector de longitud <code>3MN</code>, donde las entradas representan los valores R (Rojo), G (Verde) y B (Azul) de cada píxel, en algún orden acordado.</p>
-    <img src="../../img/algebra_lineal_cuatro.png" alt="" height="300">
+<p>Piense de nuevo en el juego de la pista de carreras y trate de conectar todas estas ideas
+con los vectores cuyos orígenes no están en el origen. El origen etimológico de la palabra
+vector en el verbo “transportar” ofrece una pista. El vector \( [3, 2] \) puede interpretarse del
+modo siguiente: a partir del origen \( O \), viaje 3 unidades a la derecha, luego 2 unidades
+arriba y termine en \( P \). El mismo desplazamiento puede aplicarse con otros puntos iniciales. 
+La figura 1.4 muestra dos desplazamientos equivalentes, representados por los vectores \( \vec{AB} \) y \( \vec{CD} \).</p>
+ 
+<img src="../../../img/vector_dos.png" alt="">
 
-    <h2>Video</h2>
-    <p>Un video monocromático, es decir, una secuencia de <code>K</code> imágenes con <code>M × N</code> píxeles, puede representarse mediante un vector de longitud <code>KMN</code> (ordenado de alguna manera específica).</p>
+<p>Dos vectores se definen como iguales si tienen la misma longitud y la misma dirección. Por tanto,
+\( \vec{AB} = \vec{CD} \) en la figura 1.4. . (Aun cuando tengan diferentes puntos inicial
+y final, representan el mismo desplazamiento.) Geométricamente, dos vectores son iguales si uno puede 
+obtenerse al deslizar (o trasladar) el otro paralelo a sí mismo hasta que
+los dos vectores coincidan.</p>
 
-    <h2>Conteo de Palabras y Histogramas</h2>
-    <p>Un vector de longitud <code>n</code> puede representar el número de veces que cada palabra en un diccionario de <code>n</code> palabras aparece en un documento.</p>
-    <p>Por ejemplo, el vector <code>(25, 2, 0)</code> indica que la primera palabra del diccionario aparece 25 veces, la segunda 2 veces y la tercera no aparece en absoluto. (Los diccionarios utilizados para conteo de palabras en documentos suelen contener muchas más palabras).</p>
-    <p>Una variante de este concepto es un histograma de frecuencias de palabras, donde las entradas del vector representan la proporción de ocurrencias de cada palabra en el documento. Por ejemplo, <code>x5 = 0.003</code> significa que el 0.3% de todas las palabras en el documento corresponden a la quinta palabra en el diccionario.</p>
-    <p>Es una práctica común contar variaciones de una palabra (por ejemplo, diferentes terminaciones) como la misma palabra. Por ejemplo, “lluvia”, “lluvias”, “lloviendo” y “llovió” podrían contarse como “lluvia”. Este proceso se conoce como <strong>stemming</strong>.</p>
-    <p>También es común excluir palabras demasiado frecuentes (como “el” o “la”), conocidas como <strong>stop words</strong>, así como palabras extremadamente raras.</p>
-    <hr>
+
+<p>En terminos de componentes, en la figura 1.4 se tiene \( A = (3, 1) \) y \( B = (6, 3) \).
+Note que el vector \( [3, 2] \) que registra el desplazamiento sólo es la diferencia de los componentes respectivos:</p>
+
+\[
+\vec{AB} = B - A = [6 - 3, 3 - 1]  
+\]
+De igual modo,
+\[ \vec{CD} = [-1-(-4),1-(-1)] = [3,2] \]
+ 
+<hr>
+Se dice que un vector \( \vec{OP} \)  con su punto inicial en el origen está en posición estándar. La discusión 
+anterior muestra que todo vector puede dibujarse como un vector
+en posición estándar. Por otro lado, un vector en posición estándar puede redibujarse
+(por traslación) de modo que su origen esté en cualquier punto en el plano.
+
+<hr>
+<strong>Ejemplo.1:</strong> Si A=(-1,2) y B=(3,4), encuentre \( \vec{AB} \) y vuelva a dibujarlo (a) en posicion
+estandar y (b) con su origen en el punto C=(2,-1).
+<br>
+<br>
+<strong>solucion:</strong> calcule \( \vec{AB}=[3-(-1), 4-2] = [4,2].\) Si entonces \( \vec{AB} \) se traslada hacia 
+\( \vec{CD} \), donde \( C=(2,-1) \), entonces se debe tener \( D=(2+4,-1+2)=(6,1) \). (vea la figura 1.5). 
+<br><br>
+notece que sumamos las coordenadas del nuevo origen \( C \) a las componentes del vector \( \vec{AB} \)
+<br><br>
+<img src="../../../img/guia_203.png" alt="">
+<hr>
+
+
+
+<h3>Nuevos vectores a partir de otros anteriores</h3>
+<p>Como en el juego de la pista de carreras, con frecuencia se quiere “seguir” un vector a
+partir de otro. Esto conduce a la noción de suma de vectores, la primera operación vectorial básica.</p>
+
+
+<p>Si se sigue <em>u</em> por <em>v</em>, se puede visualizar el desplazamiento total como un tercer vector,
+denotado mediante \( u + v \). En la figura 1.6, \( u = [1, 2] \) y \( v = [2, 2] \), de modo que el efecto
+neto de seguir \( u \) por \( v \) es</p>
+
+
+<p>\[ [1+2,\; 2+2] = [3,4] \]</p>
+
+
+<p>lo que produce \( u + v \). En general, si \( u = [u_1, u_2] \) y \( v = [v_1, v_2] \), entonces su suma \( u + v \) es
+el vector</p>
+
+
+<p>\[ u+v = [u_1+v_1,\; u_2+v_2] \]</p>
+
+
+<p>Es útil visualizar \( u+v \) geométricamente. La siguiente regla es la versión geométrica de
+la discusión anterior.</p>
+
+<img src="../../../img/guia_204.png" alt="">
+
+<p>Dados los vectores \( u \) y \( v \) en \( \mathbb{R}^2 \), traslade \( v \) de modo que su origen coincida con la
+punta de \( u \). La suma \( u + v \) de \( u \) y \( v \) es el vector desde el origen de \( u \) hasta la punta
+de \( v \). (Vea la figura 1.7.)</p>
+
+<img src="../../../img/guia_205.png" alt="">
+
+<p>Al trasladar \( u \) y \( v \) paralelos a ellos mismos, se obtiene un paralelogramo, como se muestra en la figura 1.8. Este paralelogramo se llama <em>paralelogramo determinado por</em> \( u \) y \( v \). Ello
+conduce a una versión equivalente de la regla punta a origen para vectores en posición
+estándar.</p>
+
+<h3>La regla del paralelogramo</h3>
+
+  <p>Dados los vectores \( u \) y \( v \) en \( \mathbb{R}^2 \) (en posición estándar), su suma 
+  \( u + v \) es el vector en posición estándar a lo largo de la diagonal del paralelogramo 
+  determinado por \( u \) y \( v \). (Vea la figura 1.9.)</p>
+
+    <img src="../../../img/guia_206.png" alt="">
+
+<br><br>
+ 
+
     </form>
 </div>
 
-
-
-
-<div class="seccion derecha">
-    <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <img src="../../img/algebra_lineal_cinco.png" alt="" height="300">
-    <br><br>
-    <h2>Compras de clientes</h2>
-    <p>Un <em>n</em>-vector <strong>p</strong> se puede utilizar para registrar las compras de un cliente en un negocio durante un período de tiempo determinado, donde <strong>p<sub>i</sub></strong> representa la cantidad del artículo <strong>i</strong> que el cliente ha comprado, para <strong>i = 1, ..., n</strong>. (A menos que <strong>n</strong> sea pequeño, es de esperar que muchas de estas entradas sean cero, lo que significa que el cliente no ha comprado esos artículos). En una variación, <strong>p<sub>i</sub></strong> representa el valor total en dólares del artículo <strong>i</strong> que el cliente ha adquirido.</p>
-    
-    <h2>Ocurrencias o subconjuntos</h2>
-    <p>Un <em>n</em>-vector <strong>o</strong> se puede utilizar para registrar si han ocurrido o no <strong>n</strong> eventos diferentes, donde <strong>o<sub>i</sub> = 0</strong> significa que el evento <strong>i</strong> no ocurrió y <strong>o<sub>i</sub> = 1</strong> significa que sí ocurrió. Dicho vector codifica un subconjunto de una colección de <strong>n</strong> objetos, donde <strong>o<sub>i</sub> = 1</strong> indica que el objeto <strong>i</strong> está contenido en el subconjunto y <strong>o<sub>i</sub> = 0</strong> indica que no lo está. Cada entrada del vector es 0 o 1; estos vectores se llaman <em>booleanos</em>, en honor al matemático George Boole, pionero en el estudio de la lógica.</p>
-    
-    <h2>Características o atributos</h2>
-    <p>En muchas aplicaciones, un vector reúne <strong>n</strong> cantidades diferentes que se refieren a un solo objeto o entidad. Estas cantidades pueden ser mediciones o valores que pueden medirse o derivarse del objeto. A estos vectores a veces se les llama <em>vectores de características</em> y a sus entradas se les conoce como <em>características</em> o <em>atributos</em>. Por ejemplo, un 6-vector <strong>f</strong> podría representar la edad, altura, peso, presión arterial, temperatura y género de un paciente ingresado en un hospital. (La última entrada del vector podría codificarse como <strong>f<sub>6</sub> = 0</strong> para hombre y <strong>f<sub>6</sub> = 1</strong> para mujer). En este caso, las cantidades representadas por las entradas del vector son muy diferentes entre sí y tienen distintas unidades físicas.</p>
-    
-    <h2>Etiquetas de las entradas del vector</h2>
-    <p>En aplicaciones como las descritas anteriormente, cada entrada de un vector tiene un significado, como la cantidad de veces que aparece una palabra en un documento, el número de acciones de una determinada empresa en una cartera o la cantidad de lluvia caída en una hora específica. Es común mantener una lista separada de <em>etiquetas</em> o <em>descripciones</em> que expliquen el significado de cada entrada del vector.</p>
-    
-    <p>Por ejemplo, podríamos asociar el vector de cartera <strong>(100, 50, 20)</strong> con la lista de símbolos bursátiles <strong>(AAPL, INTC, AMZN)</strong>, lo que nos indica que los activos 1, 2 y 3 corresponden a Apple, Intel y Amazon, respectivamente. En algunas aplicaciones, como en una imagen, el significado o el orden de las entradas sigue convenciones o estándares bien establecidos.</p>
-    <hr>
-    <h1>1.2 Suma de Vectores</h1>
-    <p>Dos vectores del mismo tamaño pueden sumarse sumando sus elementos correspondientes, formando otro vector del mismo tamaño, llamado la <strong>suma de los vectores</strong>.</p>
-    <p>La suma de vectores se denota con el símbolo <strong>+</strong>. Por ejemplo:</p>
-    <p>
-        \[
-        \begin{bmatrix} 0 \\ 7 \\ 3 \end{bmatrix} + \begin{bmatrix} 1 \\ 2 \\ 0 \end{bmatrix} = \begin{bmatrix} 1 \\ 9 \\ 3 \end{bmatrix}
-        \]
-    </p>
-    <p>La <strong>resta de vectores</strong> es similar:</p>
-    <p>
-        \[
-        \begin{bmatrix} 1 \\ 9 \end{bmatrix} - \begin{bmatrix} 1 \\ 1 \end{bmatrix} = \begin{bmatrix} 0 \\ 8 \end{bmatrix}
-        \]
-    </p>
-
-    <h2>Propiedades</h2>
-    <ul>
-        <li><strong>Conmutatividad:</strong> \( a + b = b + a \).</li>
-        <li><strong>Asociatividad:</strong> \( (a + b) + c = a + (b + c) \).</li>
-        <li><strong>Elemento neutro:</strong> \( a + 0 = 0 + a = a \).</li>
-        <li><strong>Elemento opuesto:</strong> \( a - a = 0 \).</li>
-    </ul>
-    <hr>
-    </form>
-</div>
 
 <div class="centered-container">
     <a
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="cuarto.php"
+        href="segundo.php"
         role="button"
         width="50px"
         height="50px"
     >Siguiente</a>
 </div>
+
+<div class="seccion derecha">
+    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+
+ <h3>Ejemplo 1.2</h3>
+
+  <p>Si \( u = [3,1] \) y \( v = [1,4] \), calcule y dibuje \( u+v \).</p>
+
+  <p><strong>Solución:</strong>  </p>
+  <p>Calcule \[ u+v = [3+1,\,1+4] = [4,3] \]</p>
+
+  <p>Este vector se dibuja mediante la regla punta a origen en la figura 1.10(a) 
+  y mediante la regla del paralelogramo en la figura 1.10(b).</p>
+
+ <img src="../../../img/vector_cuatro.png" alt="" width="500">
+
+  <p>La segunda operación vectorial básica es la multiplicación escalar. 
+  Dado un vector \( v \) y un número real \( c \), el múltiplo escalar \( c v \) 
+  es el vector que se obtiene al multiplicar cada componente de \( v \) por \( c \).</p>
+
+  <p>Por ejemplo:</p>
+  <p>\[ 3[2,4] = [6,12] \]</p>
+
+  <p>En general:</p>
+  <p>\[ c v = c [v_1, v_2] = [c v_1,\, c v_2] \]</p>
+
+  <p>Geométricamente, \( c v \) es una versión “a escala” de \( v \).</p>
+ 
+    <hr>
+      <h3>Ejemplo 1.3</h3>
+
+    <p>Si \( v = [-2,4] \), calcule y dibuje \(2v\), \(\tfrac{1}{2}v\) y \(-2v\).</p>
+
+    <div class="solution">
+      <strong>Solución.</strong> Calcule del modo siguiente:
+      <p>\[ 2v = [2(-2),\,2(4)] = [-4,\,8] \]</p>
+      <p>\[ \tfrac{1}{2}v = \big[\tfrac{1}{2}(-2),\,\tfrac{1}{2}(4)\big] = [-1,\,2] \]</p>
+      <p>\[ -2v = [-2(-2),\,-2(4)] = [4,\,-8] \]</p>
+
+      <p>Estos vectores se muestran en la figura 1.11.</p>
+
+       <img src="../../../img/guia_207.png" alt="" width="500">
+
+       <img src="../../../img/guia_208.png" alt="" width="500">
+
+         <p>
+      El término <em>escalar</em> proviene de la palabra latina <em>scala</em>, que significa “escalera”.
+      Los peldaños igualmente espaciados en una escalera sugieren una escala y, en aritmética vectorial,
+      la multiplicación por una constante sólo cambia la escala (o longitud) de un vector.
+      Por ende, las constantes llegaron a conocerse como escalares.
+    </p>
+
+    <p>
+      Observe que \( cv \) tiene la misma dirección que \( v \) si \( c \geq 0 \) y la dirección opuesta si \( c < 0 \).
+      También observe que \( cv \) es \( c \) veces más largo que \( v \).
+      Por esta razón, en el contexto de los vectores, las constantes (esto es: números reales) se conocen como escalares.
+    </p>
+
+    <p>
+      Como muestra la figura 1.12, cuando se toma en cuenta la traslación de vectores,
+      dos vectores son múltiplos escalares mutuos si y sólo si son paralelos.
+    </p>
+
+    <p>
+      Un caso especial de un múltiplo escalar es \((-1)v\), que se escribe \(-v\) y se llama <em>negativo de v</em>.
+      Puede usársele para definir la resta vectorial: la diferencia de \( u \) y \( v \) es el vector
+    </p>
+
+    <p>
+      \[ u - v = u + (-v) \]
+    </p>
+
+    <p>
+      La figura 1.13 muestra que \( u - v \) corresponde a la “otra” diagonal del paralelogramo determinado por \( u \) y \( v \).
+    </p>
+ 
+    <hr>
+<h3>Ejemplo 1.4</h3>
+
+    <p>
+      Si \( u = [1, 2] \) y \( v = [3, 1] \), entonces
+      \[
+      u - v = [1 - 3, \; 2 - 1] = [-2, \; 1].
+      \]
+    </p>
+
+    <p>
+      La definición de resta en este ejemplo también está de acuerdo con la forma en que
+      se calcula un vector como \(\overrightarrow{AB}\).
+      Si los puntos \( A \) y \( B \) corresponden a los vectores \( a \) y \( b \) en posición estándar,
+      entonces
+      \[
+      \overrightarrow{AB} = b - a,
+      \]
+      como se muestra en la figura 1.14.
+    </p>
+
+    <img src="..\..\..\img\guia_209.png" alt=""  >
+
+    <p>
+      [Observe que la regla de punta a origen aplicada a este diagrama produce la ecuación
+      \[
+      a + (b - a) = b.
+      \]
+      Si accidentalmente dibujara \( b - a \) con su punta en \( A \) en lugar de en \( B \), el diagrama se leería
+      \[
+      b + (b - a) = a,
+      \]
+      ¡lo cual claramente es incorrecto!]
+    </p>
+
+    <h3>Vectores en \(\mathbb{R}^3\)</h3>
+
+    <p>
+      Todo lo que se ha hecho se extiende con facilidad a tres dimensiones.
+      El conjunto de todas las ternas ordenadas de números reales se denota mediante \(\mathbb{R}^3\).
+      Puntos y vectores se localizan usando tres ejes coordenados mutuamente perpendiculares
+      que se reúnen en el origen \( O \).
+    </p>
+
+    <p>
+      Un punto como \( A = (1, 2, 3) \) puede localizarse del modo siguiente:
+      primero recorra 1 unidad a lo largo del eje \( x \), luego avance 2 unidades paralelas al eje \( y \)
+      y finalmente mueva 3 unidades paralelas al eje \( z \).
+    </p>
+
+    <p>
+      El vector correspondiente a \( a = [1, 2, 3] \) es entonces
+      \(  \overrightarrow{OA}\)
+      como se muestra en la figura 1.15.
+    </p>
+
+    <p>
+      Otra forma de visualizar el vector \( a \) en \(\mathbb{R}^3\) es construir una caja cuyos seis lados estén
+      determinados por los tres planos coordenados (los planos \( xy \), \( xz \) y \( yz \)) y por tres planos
+      a través del punto \( (1, 2, 3) \) paralelos a los planos coordenados.
+    </p>
+
+    <p>
+      El vector \([1, 2, 3]\) corresponde entonces a la diagonal que va del origen a la esquina opuesta de la caja
+      (vea la figura 1.16).
+    </p>
+
+    <img src="..\..\..\img\guia_210.png" alt=""  >
+   
+    
+    </form>
+</div>
+
+ 
 </body>
 </html>

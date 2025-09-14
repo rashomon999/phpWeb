@@ -1132,13 +1132,6 @@ if ($respuesta_110 === '264') {
         max-width: 100%;
         height: auto;
     }
-
-    .seccion {
-    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
-    padding: 20px; /* importante este padding*/
-    box-sizing: border-box;
-    height: 270vh;
-    }
 </style>
  
 <script>
@@ -1440,77 +1433,39 @@ function ocultarMensaje4() {
 </head>
 <body> 
 <div class="seccion izquierda">
-    <form action="./diez.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <h2>Definición de Complejidad</h2>
-    <p>La <em>complejidad</em> de una operación es el número de flops necesarios para llevarla a cabo, en función del tamaño o tamaños de la entrada de la operación.</p>
-    <p>Normalmente, la complejidad se simplifica mucho, eliminando términos pequeños o insignificantes cuando los tamaños de las entradas son grandes.</p>
-    <p>En la ciencia de la computación teórica, el término <em>complejidad</em> se usa de manera diferente, refiriéndose al número de flops del mejor método para llevar a cabo el cálculo, es decir, el que requiere la menor cantidad de flops.</p>
-    <p>En este documento, utilizamos el término <em>complejidad</em> para referirnos al número de flops requeridos por un método específico.</p>    
-    
-    <h1>Complejidad de Operaciones con Vectores</h1>
-    
-    <h2>Multiplicación escalar-vector</h2>
-    <p>La multiplicación de un escalar \( a \) por un vector \( x \) de dimensión \( n \) requiere \( n \) multiplicaciones:</p>
+    <form action="./cuarto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <p>Para demostrar que \( a + b = b + a \), observemos su i-ésima entrada:</p>
     <p>
         \[
-        ax_i \quad \text{para } i = 1, \dots, n.
+        (a + b)_i = a_i + b_i
         \]
-    </p>
-    
-    <h2>Suma de vectores</h2>
-    <p>La suma de dos vectores \( x + y \) de dimensión \( n \) requiere \( n \) sumas:</p>
-    <p>
         \[
-        x_i + y_i \quad \text{para } i = 1, \dots, n.
+        (b + a)_i = b_i + a_i
         \]
     </p>
+    <p>Como sabemos que la suma escalar es conmutativa, entonces \( a + b = b + a \).</p>
     
-    <h2>Producto interno</h2>
-    <p>El cálculo del producto interno de dos vectores \( x \) y \( y \) de dimensión \( n \) toma \( 2n - 1 \) flops:</p>
-    <p>
-        \[
-        x^T y = x_1 y_1 + x_2 y_2 + \dots + x_n y_n.
-        \]
-    </p>
-    <p>Esto implica \( n \) multiplicaciones escalares y \( n-1 \) sumas escalares. Para una estimación rápida, se aproxima a \( 2n \) flops.</p>
-    
-    <h2>Orden de complejidad</h2>
-    <p>Ignorando constantes, la complejidad de estas operaciones es:</p>
-    <ul>
-        <li>Multiplicación escalar-vector: \( O(n) \).</li>
-        <li>Suma de vectores: \( O(n) \).</li>
-        <li>Producto interno: \( O(n) \).</li>
-    </ul>
-    <p>Esto significa que si el tamaño de entrada se multiplica por 10, el tiempo de ejecución también debería aumentar aproximadamente 10 veces.</p>
-    
-    <h2>Complejidad de Operaciones con Vectores Dispersos</h2>
-    <p>Si \( x \) es un vector disperso, entonces:</p>
-    <ul>
-        <li>El cálculo de \( ax \) requiere \( \text{nnz}(x) \) flops, donde \( \text{nnz}(x) \) es el número de elementos no nulos en \( x \).</li>
-        <li>La suma \( x + y \) requiere a lo sumo \( \min\{ \text{nnz}(x), \text{nnz}(y) \} \) flops.</li>
-        <li>Si los patrones de dispersión de \( x \) y \( y \) no se solapan, entonces la suma \( x + y \) requiere 0 flops.</li>
-        <li>El producto interno \( x^T y \) requiere a lo sumo \( 2 \min\{ \text{nnz}(x), \text{nnz}(y) \} \) flops.</li>
-        <li>Si los patrones de dispersión de \( x \) y \( y \) no se solapan, entonces \( x^T y = 0 \) y la operación no requiere flops.</li>
-    </ul>
+    <h2>Ejemplos</h2>
+    <h3>1. Desplazamientos</h3>
+    <p>Cuando los vectores \( a \) y \( b \) representan desplazamientos, la suma \( a + b \) representa el <strong>desplazamiento neto</strong> obtenido al desplazarse primero por \( a \) y luego por \( b \), como se muestra en la figura 1.6.</p>
+    <p>Si el vector \( p \) representa una posición y el vector \( a \) representa un desplazamiento, entonces \( p + a \) es la posición final después de desplazarse desde \( p \) en la dirección de \( a \), como se muestra en la figura 1.7.</p>
+    <img src="../../../img/algebra_lineal_seis.png" alt="" height="290">
 
-    <hr>
-    <strong>Recordatorio notacion ():</strong>
-    <p>El paréntesis se puede utilizar en ambos casos, pero su significado depende del contexto en el que se use.</p>
-    
-    <strong> Caso 1: Paréntesis como agrupador de vectores (bloque de vectores)</strong>
-    <p>Cuando escribimos algo como \( (a, b, c) \), puede representar un <strong>bloque de vectores</strong>, lo que significa que \( a, b \) y \( c \) son vectores individuales, posiblemente organizados en una estructura más grande (como una matriz o un tensor).</p>
-    
-    <strong>Caso 2: Paréntesis como notación de un solo vector</strong>
-    <p>Cuando escribimos \( (1,2,3,4) \), usualmente esto representa un <strong>único vector de dimensión 4</strong>, donde cada número es una coordenada.</p>
-    
-    <strong>Conclusión</strong>
-    <p>El paréntesis puede usarse en ambos casos, pero la interpretación cambia según el contexto:</p>
-    <ul>
-        <li>Si los elementos dentro del paréntesis son <strong>vectores individuales</strong>, se interpreta como un <strong>bloque de vectores</strong>.</li>
-        <li>Si los elementos son <strong>números</strong>, se interpreta como un <strong>único vector</strong>.</li>
-    </ul>
-    <p>Por eso, hay que revisar el contexto en el que se usa la notación para entender su significado. </p>
+    <br>
+    <h3>2. Desplazamientos entre dos puntos</h3>
+    <p>Si los vectores \( p \) y \( q \) representan las posiciones de dos puntos en un espacio 2D o 3D, entonces la diferencia \( p - q \) es el <strong>vector de desplazamiento</strong> desde \( q \) hasta \( p \), como se ilustra en la figura 1.8.</p>
+    <img src="../../../img/algebra_lineal_siete.png" alt="" height="290">
 
+    <h3>3. Conteo de palabras</h3>
+    <p>Si \( a \) y \( b \) son vectores de conteo de palabras (utilizando el mismo diccionario) para dos documentos, la suma \( a + b \) da como resultado el <strong>vector de conteo de palabras</strong> de un documento nuevo creado combinando ambos textos (en cualquier orden).</p>
+    <p>La diferencia \( a - b \) indica cuántas veces más aparece cada palabra en el primer documento en comparación con el segundo.</p>
+    
+    <h3>4. Lista de materiales</h3>
+    <p>Supongamos que \( q_1, q_2, ..., q_N \) son \( n \)-vectores que representan las cantidades de \( n \) recursos necesarios para completar \( N \) tareas.</p>
+    <p>La suma de estos vectores:</p>
+    <p>\[ q_1 + q_2 + ... + q_N \]</p>
+    <p>da como resultado la <strong>lista total de materiales</strong> necesaria para completar todas las \( N \) tareas.</p>
+      
     </form>
 </div>
 
@@ -1518,40 +1473,36 @@ function ocultarMensaje4() {
 
 
 <div class="seccion derecha">
-    <form action="./diez.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <strong>Concepto sobrecarga</strong>
-    <br><br>
-    <h2>Ejemplo de sobrecarga en álgebra lineal:</h2>
-    <p>En el caso de los vectores, el operador \(+\) se usa tanto para la suma escalar como para la suma de vectores:</p>
+    <form action="./cuarto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <h1>Mas Ejemplos de Aplicación de la Suma de Vectores</h1>
     
-    <p>
-        \( 2 + 3 = 5 \) (suma de escalares)
-    </p>
+    <h2>1. Equilibrio de mercado</h2>
+    <p>Supongamos que el \( n \)-vector \( q_i \) representa las cantidades de \( n \) bienes o recursos producidos (cuando es positivo) o consumidos (cuando es negativo) por el agente \( i \), para \( i = 1, ..., N \).</p>
+    <p>Por ejemplo, \( (q_5)_4 = -3.2 \) significa que el agente 5 consume 3.2 unidades del recurso 4.</p>
+    <p>La suma \( s = q_1 + \cdots + q_N \) es el \( n \)-vector del excedente neto total de los recursos (o déficit, cuando las entradas son negativas). Cuando \( s = 0 \), tenemos un <strong>mercado cerrado</strong>, lo que significa que la cantidad total de cada recurso producido por los agentes equilibra la cantidad total consumida. En este caso, se dice que el mercado se equilibra con los vectores de recursos \( q_1, ..., q_N \).</p>
     
-    <p>
-        \( (1,2,3) + (4,5,6) = (5,7,9) \) (suma de vectores)
-    </p>
+    <h2>2. Adición de audio</h2>
+    <p>Cuando \( a \) y \( b \) son vectores que representan señales de audio en el mismo período de tiempo, la suma \( a + b \) da como resultado una señal de audio que se percibe como la combinación de ambas señales.</p>
+    <p>Por ejemplo, si \( a \) representa una grabación de voz y \( b \) una grabación de música (de la misma duración), la señal \( a + b \) se percibirá como la superposición de ambas.</p>
     
-    <p>Aunque \(+\) es el mismo símbolo en ambas expresiones, su significado cambia dependiendo de si actúa sobre escalares o sobre vectores.</p>
+    <h2>3. Diferencias de características</h2>
+    <p>Si \( f \) y \( g \) son \( n \)-vectores que representan \( n \) valores de características para dos objetos, el vector de diferencia \( d = f - g \) da la diferencia en los valores de características entre los dos objetos.</p>
+    <p>Por ejemplo, \( d_7 = 0 \) significa que los dos objetos tienen el mismo valor para la característica 7, mientras que \( d_3 = 1.67 \) significa que el valor de la tercera característica del primer objeto excede al del segundo en 1.67.</p>
     
-    <h3>Concatenación de vectores</h3>
-    <p>De manera similar, en la notación de concatenación de vectores, el paréntesis \(( , )\) puede usarse para representar:</p>
+    <h2>4. Series temporales</h2>
+    <p>Si \( a \) y \( b \) representan series temporales de la misma cantidad, como las ganancias diarias en dos tiendas diferentes, entonces \( a + b \) representa una serie temporal de la ganancia total diaria en ambas tiendas.</p>
     
-    <ul>
-        <li>Un <strong>vector apilado (stacking)</strong> → \( (a, b) \) representa un nuevo vector que concatena \( a \) y \( b \).</li>
-        <li>Un <strong>par ordenado</strong> en otro contexto matemático.</li>
-    </ul>
+    <h2>5. Comercio de portafolio</h2>
+    <p>Supongamos que \( s \) es un \( n \)-vector que representa la cantidad de acciones de \( n \) activos en un portafolio y que \( b \) es un \( n \)-vector que representa la cantidad de acciones compradas (cuando \( b_i \) es positivo) o vendidas (cuando \( b_i \) es negativo).</p>
+    <p>Después de las compras y ventas, el nuevo portafolio estará dado por \( s + b \), que es la suma del vector de portafolio original y el vector de transacciones \( b \), también llamado <strong>vector de comercio</strong> o <strong>lista de transacciones</strong>. La misma interpretación se aplica cuando los vectores representan valores en dólares.</p>
+    
+    <h2>6. Notación de adición en lenguajes de programación</h2>
+    <p>Algunos lenguajes de programación definen la suma de un vector y un escalar como el vector obtenido al sumar el escalar a cada elemento del vector. Sin embargo, esta no es una notación matemática estándar, por lo que no la utilizaremos.</p>
+    <p>Aún más confuso, en algunos lenguajes de programación, el símbolo de suma se usa para denotar la concatenación de arreglos, lo que significa poner un arreglo después de otro, como en:</p>
+    <p>\( (1, 2) + (3, 4, 5) = (1, 2, 3, 4, 5) \)</p>
+    <p>Aunque esta notación puede ser válida en algunos lenguajes, no es una notación matemática estándar. Es crucial distinguir entre la notación matemática de los vectores y la sintaxis de lenguajes de programación específicos para manipularlos.</p>
+ 
 
-    <hr>
-    <strong>Recordar (multiplicacion vector por escalar) : </strong>
-    <p>Si multiplicamos este vector por \( -1 \), lo que hacemos es multiplicar cada componente del vector \( \mathbf{e}_1 \) por \( -1 \):</p>
-    <p>
-        \[
-        (-1) \cdot \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix} = \begin{bmatrix} -1 \\ 0 \\ 0 \end{bmatrix}
-        \]
-    </p>
-    <p>Esto es simplemente multiplicar el número \( -1 \) por cada uno de los elementos de \( \mathbf{e}_1 \), así que obtenemos un nuevo vector donde la componente en \( x \) es \( -1 \), pero las componentes en \( y \) y \( z \) siguen siendo 0.</p>
-            
     </form>
 </div>
 
@@ -1560,7 +1511,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="diez.php"
+        href="quinto.php"
         role="button"
         width="50px"
         height="50px"

@@ -1124,13 +1124,20 @@ if ($respuesta_110 === '264') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
     <link rel="stylesheet" href="../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../../style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
     .imagen {
         max-width: 100%;
         height: auto;
+    }
+
+    .seccion {
+    width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
+    padding: 20px; /* importante este padding*/
+    box-sizing: border-box;
+    height: 515vh;
     }
 </style>
  
@@ -1433,28 +1440,305 @@ function ocultarMensaje4() {
 </head>
 <body> 
 <div class="seccion izquierda">
-    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-        <strong>Hallar la magnitud de un vector (norma):</strong>
-        <br><br>
-        <img src="..\..\img\vec_profe_uno.png" alt="" width="500">
-        <br><br>
-        <strong>dibujar vector cuando nos dan los puntos: </strong>
-        <br><br>
-        <img src="..\..\img\vec_profe_dos.png" alt="" width="500">
-        <hr>
-        <strong>1.3: </strong>
+    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+
+    <h1>Métodos directos para resolver sistemas lineales</h1>
+
+  <p>En esta sección se verá un procedimiento sistemático general para resolver un sistema de ecuaciones lineales. Este procedimiento se basa en la idea de reducir la matriz aumentada del sistema dado a una forma que luego pueda resolverse mediante sustitución hacia atrás.</p>
+
+  <p>El método es directo en el sentido de que conduce directamente a la solución (si existe una) en un número finito de pasos. En la sección 2.5 se considerarán algunos métodos indirectos que funcionan en una forma completamente diferente.</p>
+
+  <h2>Matrices y forma escalonada</h2>
+
+  <p>Existen dos importantes matrices asociadas con un sistema lineal. La matriz de coeficientes contiene los coeficientes de las variables, y la matriz aumentada (que ya se encontró) es la matriz coeficiente aumentada por una columna adicional que contiene los términos constantes.</p>
+
+  <div class="example">
+    <p>Para el sistema:</p>
+
+    <div class="math">
+      \[
+        \begin{cases}
+          2x + y - z = 3\\[4pt]
+          x + 5z = 1\\[4pt]
+          -x + 3y - 2z = 0
+        \end{cases}
+      \]
+    </div>
+
+    <p>la matriz de coeficientes es:</p>
+
+    <div class="math">
+      \[
+        A =
+        \begin{bmatrix}
+          2 & 1 & -1\\[4pt]
+          1 & 0 & 5\\[4pt]
+          -1 & 3 & -2
+        \end{bmatrix}
+      \]
+    </div>
+
+    <p>y la matriz aumentada es:</p>
+
+    <div class="math">
+      \[
+        [A\mid b] =
+        \left[
+          \begin{array}{ccc|c}
+            2 & 1 & -1 & 3\\[4pt]
+            1 & 0 & 5  & 1\\[4pt]
+            -1 & 3 & -2 & 0
+          \end{array}
+        \right]
+      \]
+    </div>
+  </div>
+
+  <div class="definition">
+    <p>Observe que si falta una variable (como \(y\) en la segunda ecuación), su coeficiente \(0\) se ingresa en la posición adecuada de la matriz. Si la matriz de coeficientes de un sistema lineal se denota con \(A\) y el vector columna de términos constantes con \(b\), entonces la forma de la matriz aumentada es \([A\mid b]\).</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>Al resolver un sistema lineal, no siempre será posible reducir la matriz de coeficientes a la forma triangular, como se hizo en el ejemplo 2.6. Sin embargo, siempre se puede lograr un patrón en escalera en las entradas distintas de cero de la matriz final.</p>
+
+<p>La palabra escalonada proviene de la palabra latina scala, que significa "escalera". La palabra francesa para "escalera", échelle, también se deriva de esta base latina. Una matriz en forma escalonada muestra un patrón en escalera.</p>
+
+<h3>Definición</h3>
+<p>Una matriz está en forma escalonada por renglones si satisface las siguientes propiedades:</p>
+
+<ol>
+  <li>Cualquier renglón que consiste completamente de ceros está en la parte baja.</li>
+  <li>En cada renglón distinto de cero, el primer elemento distinto de cero (llamado <strong>elemento pivote</strong>) está en una columna a la izquierda de cualquier elemento pivote bajo él.</li>
+</ol>
+
+<p>Observe que estas propiedades garantizan que los elementos pivote formen un patrón en escalera. En particular, en cualquier columna que contenga un elemento pivote, todas las entradas bajo el elemento pivote son cero, como ilustran los siguientes ejemplos.</p>
+
+<hr>
+
+<h3>Ejemplo 2.7</h3>
+
+<p>Las siguientes matrices están en forma escalonada por renglones:</p>
+
+<p>
+  \[ \begin{bmatrix} 2 & 4 & 1 \\ 0 & -1 & 2 \\ 0 & 0 & 0 \end{bmatrix} \quad
+  \begin{bmatrix} 1 & 0 & 1 \\ 0 & 1 & 5 \\ 0 & 0 & 4 \end{bmatrix} \quad
+  \begin{bmatrix} 1 & 1 & 2 & 1 \\ 0 & 0 & 1 & 3 \\ 0 & 0 & 0 & 0 \end{bmatrix} \quad
+  \begin{bmatrix} 0 & 2 & 0 & 1 \\ 0 & 0 & -1 & 1 \\ 0 & 0 & 0 & 4 \\ 0 & 0 & 0 & 0 \end{bmatrix} \]
+</p>
+
+<p>Si una matriz en forma escalonada por renglones en realidad es la matriz aumentada de un sistema lineal, el sistema es bastante fácil de resolver mediante sustitución hacia atrás solamente.</p>
+
+<h3>Ejemplo 2.8</h3>
+<p>Si supone que cada una de las matrices en el ejemplo 2.7 es una matriz aumentada, escriba los sistemas correspondientes de ecuaciones lineales y resuélvalos.</p>
+
+<p><strong>Solución</strong> Recuerde primero que la última columna en una matriz aumentada es el vector de términos constantes. Entonces la primera matriz corresponde al sistema</p>
+
+<p>
+  \[ 2x_1 + 4x_2 = 1 \]
+  \[ -x_2 = 2 \]
+</p>
+
+<p>(Advierta que se eliminó la última ecuación \( 0 = 0 \) o \( 0x_1 + 0x_2 = 0 \), que claramente es satisfecha por cualquier valor de \( x_1 \) y \( x_2 \).) La sustitución hacia atrás produce \( x_2 = -2 \) y entonces \( 2x_1 = 1 - 4(-2) = 9 \), de modo que \( x_1 = \frac{9}{2} \). La solución es \( [\frac{9}{2}, -2] \).</p>
+
+<p>La segunda matriz tiene el sistema correspondiente</p>
+
+<p>
+  \[ x_1 = 1 \]
+  \[ x_2 = 5 \]
+  \[ 0 = 4 \]
+</p>
+
+<p>La última ecuación representa \( 0x_1 + 0x_2 = 4 \), que claramente no tiene solución. Por tanto, el sistema no tiene soluciones. De igual modo, el sistema que corresponde a la cuarta matriz no tiene soluciones. Para el sistema que corresponde a la tercera matriz, se tiene</p>
+
+
+<p>\[x_1 + x_2 + 2x_3 = 1\]
+\[x_3 = 3\]</p>
+
+<p>de modo que \( x_1 = 1 - 2(3) - x_2 = -5 - x_2 \). Existe un número infinito de soluciones, pues a \( x_2 \) se le puede asignar cualquier valor \( t \) para obtener la solución paramétrica \([-5 - t, t, 3]\).</p>
+
+<hr>
+
+<h3>Operaciones elementales con renglones</h3>
+
+<p>Ahora se describe el procedimiento mediante el cual cualquier matriz puede reducirse a una matriz en forma escalonada por renglones. Las operaciones permisibles, llamadas <strong>operaciones elementales con renglones</strong>, corresponden a las operaciones que pueden realizarse sobre un sistema de ecuaciones lineales para transformarlo en un sistema equivalente.</p>
+
+<h3>Definición</h3>
+
+<p>Las siguientes <strong>operaciones elementales con renglones</strong> pueden realizarse sobre una matriz:</p>
+
+<ol>
+  <li>Intercambiar dos renglones.</li>
+  <li>Multiplicar un renglón por una constante distinta de cero.</li>
+  <li>Sumar un múltiplo de un renglón a otro renglón.</li>
+</ol>
+
+<p>Observe que la división de un renglón entre una constante distinta de cero está implícita en la definición anterior pues, por ejemplo, dividir un renglón entre 2 es lo mismo que multiplicarlo por \(\frac{1}{2}\). De igual modo, restar un múltiplo en un renglón de otro renglón es lo mismo que sumar un múltiplo negativo de un renglón a otro renglón.</p>
+
+<p>Se usará la siguiente notación abreviada para las tres operaciones elementales con renglones:</p>
+
+<ol>
+  <li>\( R_i \leftrightarrow R_j \) significa intercambiar renglones \( i \) y \( j \).</li>
+  <li>\( kR_i \) significa multiplicar el renglón \( i \) por \( k \).</li>
+  <li>\( R_i + kR_j \) significa sumar \( k \) veces el renglón \( j \) al renglón \( i \) (y sustituir el renglón \( i \) con el resultado).</li>
+</ol>
+
+<p>El proceso de aplicar operaciones elementales con renglones para llevar una matriz a la forma escalonada por renglones, llamado <strong>reducción de renglón</strong>, se usa para reducir una matriz a la forma escalonada.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h3>Ejemplo 2.9</h3>
+<p>Reduzca la siguiente matriz a forma escalonada:</p>
+
+<p>\[
+\begin{bmatrix}
+1 & 2 & -4 & -4 & 5 \\
+2 & 4 & 0 & 0 & 2 \\
+2 & 3 & 2 & 1 & 5 \\
+-1 & 1 & 3 & 6 & 5
+\end{bmatrix}
+\]</p>
+
+<p><strong>Solución</strong> Trabaje columna por columna, de izquierda a derecha y de arriba abajo. La estrategia es crear un elemento pivote en una columna y luego usarlo para crear ceros abajo de él. El elemento elegido para convertirse en elemento pivote se llama simplemente <strong>pivote</strong>, y esta fase del proceso se conoce como <strong>pivoteo</strong>. Aunque no es estrictamente necesario, con frecuencia es conveniente usar la segunda operación elemental de renglón para convertir en 1 cada elemento pivote.</p>
+
+<p>Comience por introducir ceros en la primera columna abajo del 1 pivote en el primer renglón:</p>
+
+<p>\[
+\begin{bmatrix}
+1 & 2 & -4 & -4 & 5 \\
+2 & 4 & 0 & 0 & 2 \\
+2 & 3 & 2 & 1 & 5 \\
+-1 & 1 & 3 & 6 & 5
+\end{bmatrix}
+\xrightarrow{R_2 - 2R_1} 
+\begin{bmatrix}
+1 & 2 & -4 & -4 & 5 \\
+0 & 0 & 8 & 8 & -8 \\
+2 & 3 & 2 & 1 & 5 \\
+-1 & 1 & 3 & 6 & 5
+\end{bmatrix}
+\]</p>
+
+<p>\[
+\xrightarrow{R_3 - 2R_1} 
+\begin{bmatrix}
+1 & 2 & -4 & -4 & 5 \\
+0 & 0 & 8 & 8 & -8 \\
+0 & -1 & 10 & 9 & -5 \\
+-1 & 1 & 3 & 6 & 5
+\end{bmatrix}
+\xrightarrow{R_4 + R_1} 
+\begin{bmatrix}
+1 & 2 & -4 & -4 & 5 \\
+0 & 0 & 8 & 8 & -8 \\
+0 & -1 & 10 & 9 & -5 \\
+0 & 3 & -1 & 2 & 10
+\end{bmatrix}
+\]</p>
+
+<p>Ahora la primera columna está como se quiere, de modo que la siguiente cosa por hacer es crear un elemento pivote en el segundo renglón, en busca del patrón en escalera de la forma escalonada. En este caso, se hace al intercambiar renglones. (También podría sumar los renglones 3 o 4 al renglón 2.)</p>
+
+<p>\[
+\begin{bmatrix}
+1 & 2 & -4 & -4 & 5 \\
+0 & -1 & 10 & 9 & -5 \\
+0 & 0 & 8 & 8 & -8 \\
+0 & 3 & -1 & 2 & 10
+\end{bmatrix}
+\xrightarrow{R_2 \leftrightarrow R_3} 
+\begin{bmatrix}
+1 & 2 & -4 & -4 & 5 \\
+0 & -1 & 10 & 9 & -5 \\
+0 & 0 & 8 & 8 & -8 \\
+0 & 3 & -1 & 2 & 10
+\end{bmatrix}
+\]</p>
+
+<p>El pivote esta vez fue \(-1\). Ahora se crea un cero en la parte baja de la columna 2, usando el elemento pivote \(-1\) en el renglón 2:</p>
+
+<p>\[
+\begin{bmatrix}
+1 & 2 & -4 & -4 & 5 \\
+0 & -1 & 10 & 9 & -5 \\
+0 & 0 & 8 & 8 & -8 \\
+0 & 3 & -1 & 2 & 10
+\end{bmatrix}
+\xrightarrow{R_4 + 3R_2} 
+\begin{bmatrix}
+1 & 2 & -4 & -4 & 5 \\
+0 & -1 & 10 & 9 & -5 \\
+0 & 0 & 8 & 8 & -8 \\
+0 & 0 & 29 & 29 & -5
+\end{bmatrix}
+\]</p>
+
+ <p>Ahora se hace la columna 2. Al notar que ya se tiene un elemento pivote en la columna 3, sólo se pivotea en el 8 para introducir un cero debajo de él. Esto es más sencillo si primero se divide el renglón 3 entre 8:</p>
+
+<p>\[
+\begin{bmatrix}
+1 & 2 & -4 & -4 & 5 \\
+0 & -1 & 10 & 9 & -5 \\
+0 & 0 & 8 & 8 & -8 \\
+0 & 0 & 29 & 29 & -5
+\end{bmatrix}
+\xrightarrow{\frac{1}{8}R_3} 
+\begin{bmatrix}
+1 & 2 & -4 & -4 & 5 \\
+0 & -1 & 10 & 9 & -5 \\
+0 & 0 & 1 & 1 & -1 \\
+0 & 0 & 29 & 29 & -5
+\end{bmatrix}
+\]</p>
+
+     <p>Ahora use el 1 pivote en el renglón 3 para crear un cero debajo de él:</p>
+
+<p>\[
+\begin{bmatrix}
+1 & 2 & -4 & -4 & 5 \\
+0 & -1 & 10 & 9 & -5 \\
+0 & 0 & 1 & 1 & -1 \\
+0 & 0 & 29 & 29 & -5
+\end{bmatrix}
+\xrightarrow{R_4 - 29R_3} 
+\begin{bmatrix}
+1 & 2 & -4 & -4 & 5 \\
+0 & -1 & 10 & 9 & -5 \\
+0 & 0 & 1 & 1 & -1 \\
+0 & 0 & 0 & 0 & 24
+\end{bmatrix}
+\]</p>
+ 
+
     </form>
 </div>
 
-
-
-
-<div class="seccion derecha">
-    <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-  
-
-    </form>
-</div>
 
 <div class="centered-container">
     <a
@@ -1467,5 +1751,312 @@ function ocultarMensaje4() {
         height="50px"
     >Siguiente</a>
 </div>
+
+<div class="seccion derecha">
+    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+  
+
+<p>Con este paso final, la matriz se redujo a forma escalonada.</p>
+
+<p><strong>Comentarios</strong></p>
+<ul>
+  <li>La forma escalonada por renglones de una matriz no es única. (Encuentre una forma escalonada por renglones diferente para la matriz del ejemplo 2.9.)</li>
+</ul>
+
+
+
+
+
+
+
+    <ul>
+  <li>El elemento pivote en cada renglón se usa para crear los ceros debajo de él.</li>
+  <li>Los pivotes no necesariamente son los elementos que están originalmente en las posiciones que al final ocupan los elementos pivote. En el ejemplo 2.9, los pivotes fueron 1, -1, 8 y 24. La matriz original tenía 1, 4, 2 y 5 en dichas posiciones sobre la "escalera".</li>
+  <li>Una vez que se pivotea y se introducen ceros bajo el elemento pivote en una columna, dicha columna no cambia. En otras palabras, la forma escalonada por renglones surge de izquierda a derecha, de arriba abajo.</li>
+</ul>
+
+<p>Las operaciones elementales con renglones son reversibles; esto es, pueden "deshacerse". Por ende, si alguna operación elemental con renglones convierte \( A \) en \( B \), existe también una forma escalonada por renglones que convierte \( B \) en \( A \). (Vea los ejercicios 15 y 16.)</p>
+
+<hr>
+
+<h3>Definición</h3>
+<p>Las matrices \( A \) y \( B \) son <strong>equivalentes por renglones</strong> si existe una secuencia de operaciones elementales con renglones que convierta \( A \) en \( B \).</p>
+
+<hr>
+
+<p>Las matrices en el ejemplo 2.9,</p>
+
+<p>\[
+\begin{bmatrix}
+1 & 2 & -4 & -4 & 5 \\
+2 & 4 & 0 & 0 & 2 \\
+2 & 3 & 2 & 1 & 5 \\
+-1 & 1 & 3 & 6 & 5
+\end{bmatrix}
+\quad \text{y} \quad
+\begin{bmatrix}
+1 & 2 & -4 & -4 & 5 \\
+0 & -1 & 10 & 9 & -5 \\
+0 & 0 & 1 & 1 & -1 \\
+0 & 0 & 0 & 0 & 24
+\end{bmatrix}
+\]</p>
+
+<p>son equivalentes por renglones. Sin embargo, en general, ¿cómo puede decirse si dos matrices son equivalentes por renglones?</p>
+
+<h3>Teorema 2.1</h3>
+<p>Las matrices \( A \) y \( B \) son equivalentes por renglones si y sólo si pueden reducirse a la misma forma escalonada por renglones.</p>
+
+<hr>
+
+<p><strong>Demostración</strong><br>
+Si \( A \) y \( B \) son equivalentes por renglones, entonces más operaciones con renglones reducirán \( B \) (y por tanto a \( A \)) a la (misma) forma escalonada por renglones. Recíprocamente, si \( A \) y \( B \) tienen la misma forma escalonada por renglones \( R \), entonces, mediante operaciones elementales con renglones, puede convertirse \( A \) en \( R \) y \( B \) en \( R \). Al invertir la última secuencia de operaciones, puede convertir \( R \) en \( B \), y por tanto la secuencia \( A \to R \to B \) logra el efecto deseado.</p>
+
+<hr>
+
+<p><strong>Comentario</strong><br>
+En la práctica, el Teorema 2.1 es más fácil de usar si \( R \) es la forma escalonada <em>reducida</em> por renglones de \( A \) y \( B \), como se define en la página 79. Vea los ejercicios 17 y 18.</p>
+
+<hr>
+
+<h2>Eliminación gaussiana</h2>
+<p>Cuando se aplica la reducción por renglones a la matriz aumentada de un sistema de ecuaciones lineales, se crea un sistema equivalente que puede resolverse mediante sustitución hacia atrás. Todo el proceso se conoce como <strong>eliminación gaussiana</strong>.</p>
+
+
+
+
+
+
+
+
+
+
+
+    <h2>Eliminación gaussiana</h2>
+
+<ol>
+  <li>Escriba la matriz aumentada del sistema de ecuaciones lineales.</li>
+  <li>Use operaciones elementales con renglones para reducir la matriz aumentada a forma escalonada por renglones.</li>
+  <li>Con sustitución hacia atrás, resuelva el sistema equivalente que corresponda a la matriz reducida por renglones.</li>
+</ol>
+
+<hr>
+
+<p><strong>Comentario</strong> Cuando se realiza a mano, el paso 2 de la eliminación gaussiana permite muchas opciones. He aquí algunos lineamientos útiles:
+(a) Localice la columna de la extrema izquierda que no sea toda ceros.
+(b) Cree un elemento pivote en la parte superior de esta columna. (Por lo general será más sencillo si la convierte en 1 pivote. Vea el ejercicio 22.)
+(c) Use el elemento pivote para crear ceros debajo de él.
+(d) Cubra el renglón que contiene el elemento pivote y regrese al paso (a) para repetir el procedimiento sobre la submatriz restante. Deténgase cuando toda la matriz esté en forma escalonada por renglones.</p>
+
+<hr>
+
+<h3>Ejemplo 2.10</h3>
+<p>Resuelva el sistema:</p>
+<p>\( 2x_2 + 3x_3 = 8 \)</p>
+<p>\( 2x_1 + 3x_2 + x_3 = 5 \)</p>
+<p>\( x_1 - x_2 - 2x_3 = -5 \)</p>
+
+<hr>
+
+<h3>Solución</h3>
+<p>La matriz aumentada es</p>
+<p>\[
+\begin{bmatrix}
+0 & 2 & 3 & 8 \\
+2 & 3 & 1 & 5 \\
+1 & -1 & -2 & -5
+\end{bmatrix}
+\]</p>
+
+<p>Proceda a reducir esta matriz a forma escalonada por renglones y siga los lineamientos dados para el paso 2 del proceso. La primera columna distinta de cero es la columna 1.</p>
+
+<p>Comience por crear un elemento pivote en la parte superior de esta columna; e intercambiar los renglones 1 y 3 es la mejor forma de lograr esto.</p>
+
+<p>\[
+\begin{bmatrix}
+0 & 2 & 3 & 8 \\
+2 & 3 & 1 & 5 \\
+1 & -1 & -2 & -5
+\end{bmatrix}
+\xrightarrow{R_1 \leftrightarrow R_3}
+\begin{bmatrix}
+1 & -1 & -2 & -5 \\
+2 & 3 & 1 & 5 \\
+0 & 2 & 3 & 8
+\end{bmatrix}
+\]</p>
+
+<p>Ahora cree un segundo cero en la primera columna, usando el 1 pivote:</p>
+
+<p>\[
+\begin{bmatrix}
+1 & -1 & -2 & -5 \\
+2 & 3 & 1 & 5 \\
+0 & 2 & 3 & 8
+\end{bmatrix}
+\xrightarrow{R_2 - 2R_1}
+\begin{bmatrix}
+1 & -1 & -2 & -5 \\
+0 & 5 & 5 & 15 \\
+0 & 2 & 3 & 8
+\end{bmatrix}
+\]</p>
+
+<p>Cubra ahora el primer renglón y repita el procedimiento. La segunda columna es la primera columna distinta de cero de la submatriz. Al multiplicar el renglón 2 por \(\frac{1}{5}\) creará un 1 pivote.</p>
+
+<p>\[
+\begin{bmatrix}
+1 & -1 & -2 & -5 \\
+0 & 5 & 5 & 15 \\
+0 & 2 & 3 & 8
+\end{bmatrix}
+\xrightarrow{\frac{1}{5}R_2}
+\begin{bmatrix}
+1 & -1 & -2 & -5 \\
+0 & 1 & 1 & 3 \\
+0 & 2 & 3 & 8
+\end{bmatrix}
+\]</p>
+
+<p>Ahora necesita otro cero en la parte baja de la columna 2:</p>
+
+<p>\[
+\begin{bmatrix}
+1 & -1 & -2 & -5 \\
+0 & 1 & 1 & 3 \\
+0 & 2 & 3 & 8
+\end{bmatrix}
+\xrightarrow{R_3 - 2R_2}
+\begin{bmatrix}
+1 & -1 & -2 & -5 \\
+0 & 1 & 1 & 3 \\
+0 & 0 & 1 & 2
+\end{bmatrix}
+\]</p>
+
+<p>La matriz aumentada ahora está en forma escalonada por renglones y se avanza al paso 3.  
+El sistema correspondiente es</p>
+
+<p>\[x_1 - x_2 - 2x_3 = -5\]  
+\[x_2 + x_3 = 3\]  
+\[x_3 = 2\]</p>
+
+<p>y la sustitución hacia atrás produce \(x_3 = 2\), entonces \(x_2 = 3 - x_3 = 3 - 2 = 1\), y finalmente \(x_1 = -5 + x_2 + 2x_3 = -5 + 1 + 4 = 0\). La solución se escribe en forma vectorial como</p>
+
+<p>\[
+\begin{bmatrix} 0 \\ 1 \\ 2 \end{bmatrix}
+\]</p>
+
+<p>(A partir de ahora, las soluciones vectoriales de los sistemas lineales se escribirán como vectores columna. La razón de esto será clara en el capítulo 3.)</p>
+
+
+    <h3>Ejemplo 2.11</h3>
+<p>Resuelva el sistema:</p>
+<p>\( w - x - y + 2z = 1 \)</p>
+<p>\( 2w - 2x - y + 3z = 3 \)</p>
+<p>\( -w + x - y = -3 \)</p>
+
+<h3>Solución</h3>
+<p>La matriz aumentada es</p>
+
+<p>\[
+\begin{bmatrix}
+1 & -1 & -1 & 2 & 1 \\
+2 & -2 & -1 & 3 & 3 \\
+-1 & 1 & -1 & 0 & -3
+\end{bmatrix}
+\]</p>
+
+<p>que puede reducirse por renglones del modo siguiente:</p>
+
+<p>\[
+\begin{bmatrix}
+1 & -1 & -1 & 2 & 1 \\
+2 & -2 & -1 & 3 & 3 \\
+-1 & 1 & -1 & 0 & -3
+\end{bmatrix}
+\xrightarrow{R_2 - 2R_1}
+\begin{bmatrix}
+1 & -1 & -1 & 2 & 1 \\
+0 & 0 & 1 & -1 & 1 \\
+-1 & 1 & -1 & 0 & -3
+\end{bmatrix}
+\]</p>
+
+<p>\[
+\xrightarrow{R_3 + R_1}
+\begin{bmatrix}
+1 & -1 & -1 & 2 & 1 \\
+0 & 0 & 1 & -1 & 1 \\
+0 & 0 & -2 & 2 & -2
+\end{bmatrix}
+\xrightarrow{R_3 + 2R_2}
+\begin{bmatrix}
+1 & -1 & -1 & 2 & 1 \\
+0 & 0 & 1 & -1 & 1 \\
+0 & 0 & 0 & 0 & 0
+\end{bmatrix}
+\]</p>
+
+<p>El sistema asociado ahora es</p>
+
+<p>\[w - x - y + 2z = 1\]</p>
+<p>\[y - z = 1\]</p>
+
+<p>que tiene un número infinito de soluciones. Existe más de una forma de asignar parámetros, pero se procederá a usar sustitución hacia atrás, y escribir las variables correspondientes a los elementos pivote (las <strong>variables pivote</strong>) en términos de las otras variables (las <strong>variables libres</strong>).</p>
+
+<p>En este caso, las variables pivote son \( w \) y \( y \), y las variables libres son \( x \) y \( z \). Por tanto, \( y = 1 + z \), y a partir de esto se obtiene</p>
+
+<p>\[w = 1 + x + y - 2z\]</p>
+<p>\[= 1 + x + (1 + z) - 2z\]</p>
+<p>\[= 2 + x - z\]</p>
+
+<p>Si se asignan los parámetros \( x = s \) y \( z = t \), la solución puede escribirse en forma vectorial como</p>
+
+<p>\[
+\begin{bmatrix}
+w \\
+x \\
+y \\
+z
+\end{bmatrix}
+=
+\begin{bmatrix}
+2 + s - t \\
+s \\
+1 + t \\
+t
+\end{bmatrix}
+=
+\begin{bmatrix}
+2 \\
+0 \\
+1 \\
+0
+\end{bmatrix}
++
+s
+\begin{bmatrix}
+1 \\
+1 \\
+0 \\
+0
+\end{bmatrix}
++
+t
+\begin{bmatrix}
+-1 \\
+0 \\
+1 \\
+1
+\end{bmatrix}
+\]</p>
+
+<p>El ejemplo 2.11 destaca una propiedad muy importante: en un sistema consistente, las variables libres son las que no son variables pivote. Dado que el número de variables pivote es el número de renglones distintos de cero en la forma escalonada por renglones de la matriz de coeficientes, puede predecirse el número de variables libres (parámetros) antes de encontrar la solución explícita con el uso de sustitución hacia atrás. En el capítulo 3 se probará que, aunque la forma escalonada por renglones de una matriz no es única, el número de renglones distintos de cero es el mismo en todas las formas escalonadas por renglones de una matriz dada. Por tanto, tiene sentido dar un nombre a este número.</p>
+
+    </form>
+</div>
+
+ 
 </body>
 </html>

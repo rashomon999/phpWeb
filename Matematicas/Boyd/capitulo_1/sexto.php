@@ -1123,8 +1123,8 @@ if ($respuesta_110 === '264') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="style_sexto.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
@@ -1433,85 +1433,86 @@ function ocultarMensaje4() {
 </head>
 <body> 
 <div class="seccion izquierda">
-    <form action="./quinto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <img src="../../img/algebra_lineal_ocho.png" alt="" height="320" width="500">
+    <form action="./sexto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <h1>1.4 Combinaciones Lineales</h1>
+    <p>Si \( a_1, \dots, a_m \) son \( n \)-vectores, y \( \beta_1, \dots, \beta_m \) son escalares, el \( n \)-vector</p>
+    <p>
+        \[
+        \beta_1 a_1 + \dots + \beta_m a_m
+        \]
+    </p>
+    <p>se llama una <strong>combinación lineal</strong> de los vectores \( a_1, \dots, a_m \). Los escalares \( \beta_1, \dots, \beta_m \) se llaman los <strong>coeficientes</strong> de la combinación lineal.</p>
+    
+    <h2>Combinación lineal de vectores unitarios</h2>
+    <p>Podemos escribir cualquier \( n \)-vector \( b \) como una combinación lineal de los vectores unitarios estándar:</p>
+    <p>
+        \[
+        b = b_1 e_1 + \dots + b_n e_n.
+        \]
+    </p>
+    <p>En esta ecuación, \( b_i \) es la \( i \)-ésima entrada de \( b \) (escalar), y \( e_i \) es el \( i \)-ésimo vector unitario.</p>
+    <p>Un ejemplo específico es:</p>
+    <p>
+        \[
+        \begin{bmatrix} -1 \\ 3 \\ 5 \end{bmatrix} = (-1) \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix} + 3 \begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix} + 5 \begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix}.
+        \]
+    </p>
+    <br>
+    <h2>Combinaciones lineales especiales</h2>
+    <p>Algunas combinaciones lineales de los vectores \( a_1, \dots, a_m \) tienen nombres especiales:</p>
+    <ul>
+        <li>Cuando \( \beta_1 = \dots = \beta_m = 1 \), la combinación \( a_1 + \dots + a_m \) es la <strong>suma de los vectores</strong>.</li>
+        <li>Cuando \( \beta_1 = \dots = \beta_m = \frac{1}{m} \), la combinación \( \frac{1}{m} (a_1 + \dots + a_m) \) es el <strong>promedio</strong> de los vectores.</li>
+        <li>Cuando los coeficientes suman uno, es decir, \( \beta_1 + \dots + \beta_m = 1 \), la combinación se llama una <strong>combinación afín</strong>.</li>
+        <li>Si además los coeficientes son no negativos, la combinación se llama <strong>combinación convexa</strong>, <strong>mezcla</strong> o <strong>promedio ponderado</strong>.</li>
+    </ul>
+    <p>Los coeficientes en una combinación afín o convexa a veces se expresan como porcentajes que suman el 100%.</p>
+    una suma de vectores es un caso particular de combinación lineal.
+
+    <hr>
     <br><br>
-    <h2>1.3 Multiplicación Escalar-Vector</h2>
-    <p>Otra operación es la <strong>multiplicación escalar</strong> o <strong>multiplicación escalar-vector</strong>, en la cual un vector se multiplica por un escalar (es decir, un número). Esto se realiza multiplicando cada elemento del vector por el escalar.</p>
-    <p>La multiplicación escalar se denota por yuxtaposición, típicamente con el escalar a la izquierda, como en:</p>
-    <p>\[ (-2) \begin{bmatrix} 1 \\ 9 \\ 6 \end{bmatrix} = \begin{bmatrix} -2 \\ -18 \\ -12 \end{bmatrix} \]</p>
-    <p>La multiplicación escalar-vector también puede escribirse con el escalar a la derecha, como en:</p>
-    <p>\[ \begin{bmatrix} 1 \\ 9 \\ 6 \end{bmatrix} (1.5) = \begin{bmatrix} 1.5 \\ 13.5 \\ 9 \end{bmatrix} \]</p>
-    <p>El significado es el mismo: es el vector obtenido multiplicando cada elemento por el escalar. Una notación similar es \( a/2 \), donde \( a \) es un vector, lo que significa \( \frac{1}{2} a \). El producto escalar-vector \( (-1) a \) se escribe simplemente como \( -a \). Cabe destacar que \( 0 a = 0 \) (donde el cero de la izquierda es el escalar cero y el de la derecha es el vector cero del mismo tamaño que \( a \)).</p>
-    
-    <h2>Propiedades</h2>
-    <p>Por definición, se cumple que:</p>
-    <p>\[ \alpha a = a \alpha \]</p>
-    <p>para cualquier escalar \( \alpha \) y cualquier vector \( a \). Esta es la <strong>propiedad conmutativa</strong> de la multiplicación escalar-vector, lo que significa que la multiplicación escalar-vector puede escribirse en cualquier orden.</p>
-    
-    
-    <p>La multiplicación escalar obedece varias propiedades que son fáciles de deducir a partir de su definición. Por ejemplo, satisface la propiedad asociativa: si \( a \) es un vector y \( \beta \) y \( \gamma \) son escalares, entonces:</p>
-    <p>
-        \[
-        (\beta \gamma) a = \beta (\gamma a).
-        \]
-    </p>
+    <h2>Ejemplos de Combinaciones Lineales</h2>
+    <br>
+    <h2>Desplazamientos</h2>
+    <p>Cuando los vectores representan desplazamientos, una combinación lineal es la suma de los desplazamientos escalados. Esto se ilustra en la figura 1.11.</p>
+    <img src="../../../img/algebra_lineal_diez.png" alt="" height="320" width="500">
 
-
-
-    <p>En el lado izquierdo vemos la multiplicación escalar-escalar \( (\beta \gamma) \) y la multiplicación escalar-vector, mientras que en el lado derecho vemos dos productos escalar-vector. Como consecuencia, podemos escribir el vector anterior como \( \beta \gamma a \), ya que no importa si lo interpretamos como \( \beta (\gamma a) \) o \( (\beta \gamma) a \).</p>
+    <hr>
     
-    <p>La propiedad asociativa también se mantiene cuando denotamos la multiplicación escalar-vector con el escalar a la derecha. Por ejemplo:</p>
-    <p>
-        \[
-        \beta (\gamma a) = (\beta a) \gamma,
-        \]
-    </p>
-</form>
+    </form>
 </div>
 
 
 
 
 <div class="seccion derecha">
-    <form action="./quinto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <p>y, en consecuencia, podemos escribir ambos como \( \beta a \gamma \). Sin embargo, por convención, este vector se escribe normalmente como \( \beta \gamma a \) o como \( (\beta \gamma) a \).</p>
+    <form action="./sexto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+    <h2>Mezcla de Audio</h2>
+    <p>Cuando \( a_1, \dots, a_m \) son vectores que representan señales de audio (por ejemplo, grabadas simultáneamente en el mismo período de tiempo), se llaman <strong>pistas</strong>. La combinación lineal</p>
+    <p>\[ \beta_1 a_1 + \dots + \beta_m a_m \]</p>
+    <p>es percibida como una <strong>mezcla</strong> de las pistas de audio, con volumen relativo dado por \( |\beta_1|, \dots, |\beta_m| \). Un productor en un estudio o un ingeniero de sonido en un concierto en vivo elige valores de \( \beta_1, \dots, \beta_m \) para lograr un buen balance entre los diferentes instrumentos, voces y percusión.</p>
     
-    <p>Si \( a \) es un vector y \( \beta, \gamma \) son escalares, entonces:</p>
-    <p>
-        \[
-        (\beta + \gamma) a = \beta a + \gamma a.
-        \]
-    </p>
-    <p>Esta es la propiedad distributiva izquierda de la multiplicación escalar-vector. La multiplicación escalar, al igual que la multiplicación ordinaria, tiene mayor precedencia en las ecuaciones que la suma de vectores, por lo que el lado derecho, \( \beta a + \gamma a \), se interpreta como \( (\beta a) + (\gamma a) \).</p>
+    <h2>Replicación de Flujos de Caja</h2>
+    <p>Supongamos que \( c_1, \dots, c_m \) son vectores que representan flujos de caja, como préstamos o inversiones. La combinación lineal</p>
+    <p>\[ f = \beta_1 c_1 + \dots + \beta_m c_m \]</p>
+    <p>representa otro flujo de caja. Decimos que el flujo de caja \( f \) ha sido <strong>replicado</strong> por la combinación lineal de los flujos originales \( c_1, \dots, c_m \).</p>
+    <p>Por ejemplo, si</p>
+    <p>\[ c_1 = \begin{bmatrix} 1 \\ -1.1 \\ 0 \end{bmatrix} \]</p>
+    <p>representa un préstamo de $1 en el período 1 al período 2 con un 10% de interés, y</p>
+    <p>\[ c_2 = \begin{bmatrix} 0 \\ 1 \\ -1.1 \end{bmatrix} \]</p>
+    <p>representa un préstamo de $1 del período 2 al período 3 con un 10% de interés, entonces la combinación lineal</p>
+    <p>\[ d = c_1 + 1.1 c_2 = \begin{bmatrix} 1 \\ 0 \\ -1.21 \end{bmatrix} \]</p>
+    <p>representa un préstamo a dos períodos de $1 en el período 1, con interés compuesto del 10%. Aquí hemos replicado un préstamo a dos períodos a partir de dos préstamos de un solo período.</p>
     
-    <p>Cuando la multiplicación escalar se escribe con el escalar a la derecha, tenemos la propiedad distributiva derecha:</p>
-    <p>
-        \[
-        a (\beta + \gamma) = a \beta + a \gamma.
-        \]
-    </p>
-    
-    <p>También se satisface otra versión de la propiedad distributiva derecha:</p>
-    <p>
-        \[
-        \beta (a + b) = \beta a + \beta b
-        \]
-    </p>
-    <p>para cualquier escalar \( \beta \) y cualquier par de \( n \)-vectores \( a \) y \( b \). En esta ecuación, ambos símbolos \( + \) representan la suma de \( n \)-vectores.</p>
-    
-    <h2>Ejemplos</h2>
-    
-    <h3>1. Desplazamientos</h3>
-    <p>Cuando un vector \( a \) representa un desplazamiento, y \( \beta > 0 \), entonces \( \beta a \) es un desplazamiento en la misma dirección de \( a \), con su magnitud escalada por \( \beta \). Cuando \( \beta < 0 \), \( \beta a \) representa un desplazamiento en la dirección opuesta de \( a \), con magnitud escalada por \( |\beta| \). Esto se ilustra en la figura 1.10.</p>
-    
-    <h3>2. Requerimientos de materiales</h3>
-    <p>Supongamos que el \( n \)-vector \( q \) representa la lista de materiales para producir una unidad de un producto, es decir, \( q_i \) es la cantidad de material necesario para producir una unidad del producto. Para producir \( \alpha \) unidades del producto, se requerirá la cantidad de materiales dada por \( \alpha q \). (Aquí asumimos que \( \alpha \geq 0 \)).</p>
-    
-    <h3>3. Escalado de audio</h3>
-    <p>Si \( a \) es un vector que representa una señal de audio, el producto escalar-vector \( \beta a \) se percibe como la misma señal de audio, pero con un cambio en el volumen (intensidad) por un factor de \( |\beta| \). Por ejemplo, cuando \( \beta = \frac{1}{2} \) (o \( \beta = -\frac{1}{2} \)), \( \beta a \) se percibe como la misma señal de audio, pero con menor volumen.</p>
-    <img src="../../img/algebra_lineal_nueve.png" alt="" height="320" width="500">
+    <h2>Línea y Segmento</h2>
+    <p>Cuando \( a \) y \( b \) son diferentes \( n \)-vectores, la combinación afín</p>
+    <p>\[ c = (1 - \theta) a + \theta b \]</p>
+    <p>donde \( \theta \) es un escalar, describe un punto en la <strong>línea</strong> que pasa por \( a \) y \( b \).</p>
+    <p>Cuando \( 0 \leq \theta \leq 1 \), \( c \) es una combinación convexa de \( a \) y \( b \), y se dice que está en el <strong>segmento</strong> entre \( a \) y \( b \).</p>
+    <p>Para \( n = 2 \) y \( n = 3 \), con los vectores representando coordenadas en 2D o 3D, esto coincide con la noción geométrica habitual de línea y segmento. Sin embargo, también podemos hablar de la línea que pasa por dos vectores de dimensión 100. Esto se ilustra en la figura 1.12.</p>
+    <img src="../../../img/algebra_lineal_once.png" alt="" height="320" width="600">
 
+    <hr>
     </form>
 </div>
 
@@ -1520,7 +1521,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="sexto.php"
+        href="septimo.php"
         role="button"
         width="50px"
         height="50px"
