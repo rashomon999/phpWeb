@@ -47,7 +47,9 @@
                 <a class="btn" href=".\capitulo_1_2\index.php"> capitulo 1.2 </a>
                 <a class="btn" href=".\capitulo_1_3\index.php"> capitulo 1.3 </a>
                 <a class="btn" href=".\capitulo_2_2\index.php"> capitulo 2.2 </a>
-       
+                <a class="btn" href=".\capitulo_2_3\index.php"> capitulo 2.3 </a>
+                <a class="btn" href=".\anotaciones\index.php"> anotaciones </a>
+                <a class="btn" href=".\capitulo_3_1\index.php"> capitulo 3.1 </a>
             </div>
         </div>
     </div>

@@ -11,12 +11,11 @@ $links = ["arquitecturaComputadores/Menu.php","compunet/Menu.php",
 
 "contabilidad/Menu.php",
 "discretas/menu.php", 
-    
-    "Estadistica/Menu.php"
-    ,
+    "Django/Menu.php",
+    "Estadistica/Menu.php",
     "fisica/Menu.php"
     ,"ingesoft/Menu.php",  "Ingles/Menu.php", 
-         "java/index.php", "Matematicas/Menu.php", "musica/CM.php", 
+         "java/index.php", "Matematicas/Menu.php", "musica/Menu.php", 
          "operaciones_basicas/index.php", "scala/Menu.php", "SistemaDatos/Menu.php"
         , "transhumantes/Menu.php"
         ];

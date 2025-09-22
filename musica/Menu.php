@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -30,31 +29,10 @@
 </head>
 <body>
     <div class="centered-container">
-        <a class="btn" href=".\MarcoTeorico\Menu.php">Marco teorico</a>
-        
-        <a class="btn" href=".\cuestionario_Marco\Menu.php">cuestionario (MarcoTeorico)</a>
+        <a class="btn" href=".\CM.php">circulo de quintas</a>
          
-        <a class="btn" href=".\videos\Menu.php">videos</a>
-
-
-        <a class="btn" href=".\cuestionario_videos\Menu.php">cuestionario (videos)</a>
-
-        <a class="btn" href=".\Clasificacion\Menu.php"> Clasificacion activos y pasivos. </a>
-
-        <a class="btn" href=".\ClasificacionCuentas\index.php"> Clasificacion cuentas </a>
-
-        <a class="btn" href=".\taller_0\index.php"> Taller 0 cuentas </a>
-
-
-        <a class="btn" href=".\cuestionarioTaller_1\index.php"> cuestionario Taller 1 </a>
-
-
-        <a class="btn" href=".\taller_1\index.php"> Taller 1 cuentas </a>
-
-        <hr>
-
-        <a class="btn" href=".\costos\index.php"> costos </a>
-
+        <br><br>
+        <a class="btn" href=".\escalas\index.php">pruebas</a>
     </div>
 </body>
 </html>
