@@ -36,7 +36,9 @@
         <a class="btn" href=".\lineal\index.php">linear functions cap(2) (Boyd) (no empezado)</a>
         <br><br>
         <a class="btn" href=".\poole\index.php">vectores (Poole)</a>
-       
+        <br><br>
+        <strong>cuestionario</strong>
+        <a class="btn" href=".\cuestionario\index.php">cuestionario</a>
       
     </div>
 </body>

@@ -55,6 +55,8 @@
 
         <a class="btn" href=".\costos\index.php"> costos </a>
 
+        <a class="btn" href=".\costos_cuestionario\index.php"> costos cuestionario</a>
+
     </div>
 </body>
 </html>

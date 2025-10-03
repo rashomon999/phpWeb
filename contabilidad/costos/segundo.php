@@ -1598,239 +1598,253 @@ function ocultarMensaje4() {
     
 <div class="seccion izquierda"> 
  
-    <img src="../../img/guia_221.png" alt="">
-   
-    <hr>
-    <img src="../../img/guia_230.png" alt="">
-    <img src="../../img/guia_231.png" alt="">
-
-    <h3>Formulas</h3>
-<h3>📊 Desarrollo de costos</h3>
-
-<h3>1. Consumo de materiales directos</h3>
-<p><strong>Consumo de Materiales Directos</strong> = Inv. Inicial Materiales Directos + Compras Netas − Inv. Final Materiales Directos</p>
-
-<h3>2. Costos agregados a producción</h3>
-<p><strong>Costos Agregados a Producción</strong> = Consumo de Materiales Directos + Mano de Obra Directa + Costos Indirectos de Fabricación</p>
-
-<h3>3. Costo total de producto terminado</h3>
-<p><strong>Costo Total Producto Terminado</strong> = Costos Agregados a Producción + Inv. Inicial Producto en Proceso − Inv. Final Producto en Proceso</p>
-
-<h3>4. Costo de ventas</h3>
-<p><strong>Costo de Ventas</strong> = Costo Total Producto Terminado + Inv. Inicial Producto Terminado − Inv. Final Producto Terminado</p>
-    <hr>
-  <h3>📊 Desarrollo de costos</h3>
-
-  <h3>1. Consumo de materiales directos</h3>
-  <p>
-  <strong>Consumo de Materiales directos</strong>  
-    = Inv. Inicial Materiales Directos + Compras Netas − Inv. Final Materiales Directos</p>
-  <p>13 408 000 = 1 200 000 + 13 258 000 − 1 050 000</p>
-  <p>👉 Consumo de Materiales Directos = 13.408.000</p>
-
-  <h3>2. Costos agregados a producción</h3>
-  <p>
-  <strong>Costos agregados a producción</strong>  
-   = Consumo Materiales Directos + Mano de Obra Directa + CIF</p>
-  <p>29 454 200 = 13 408 000 + 8 658 000 + 7 388 200</p>
-  <p>👉 Costos agregados a producción = 29.454.200</p>
-
-  <h3>3. Costo total de producto terminado</h3>
-  <p>
-  <strong>Costo total PT</strong>  
-    = Costos agregados a producción + Inv. Inicial Producto en Proceso − Inv. Final Producto en Proceso</p>
-  <p>29 016 200 = 29 454 200 + 912 500 − 1 350 500</p>
-  <p>👉 Costo total Producto Terminado = 29.016.200</p>
-
-  <h3>4. Costo de ventas</h3>
-  <p>
-  <strong>Costo de ventas</strong>  
-   = Costo total PT + Inv. Inicial Producto Terminado − Inv. Final Producto Terminado</p>
-  <p>Sabemos que el Costo de ventas = 25.908.750 (dado). Entonces despejamos:</p>
-  <p>Inv. Final Producto Terminado = 29 016 200 + 1 800 000 − 25 908 750</p>
-  <p>Inv. Final Producto Terminado = 4 907 450</p>
-  <p>👉 Costo de Ventas = 25.908.750</p>
-
-  <h3>✅ Resumen de costos importantes</h3>
-  <p>Consumo de Materiales Directos = 13.408.000</p>
-  <p>Costos agregados a producción = 29.454.200</p>
-  <p>Costo total Producto Terminado = 29.016.200</p>
-  <p>Costo de Ventas = 25.908.750</p>
-
-  <hr>
-    <h3>Aclaracion compras netas</h3>
-
-     <p>Compras netas = Compras + Fletes en compras − Devoluciones en compras</p>
-
-  <h3>📌 Fórmula completa del Consumo de Materiales Directos</h3>
-  <p><strong>Consumo de Materiales Directos</strong> = 
-  <br>  
-  Inventario inicial de MD + (Compras + Fletes − Devoluciones) − Inventario final de MD</p>
-
-  <h3>📌 Aplicado a tu tabla</h3>
-  <p>Inventario inicial MP = 1 152 000</p>
-  <p>Compras = 12 017 600</p>
-  <p>Fletes = 105 000</p>
-  <p>Devoluciones = 99 400</p>
-  <p>Inventario final MP = 1 332 000</p>
-
-  <p>Consumo de Materiales Directos = 1 152 000 + (12 017 600 + 105 000 − 99 400) − 1 332 000</p>
-  <p>Consumo de Materiales Directos = 11 843 200</p>
-  <p>👉 Consumo de Materiales Directos = 11.843.200</p>
-
-    <hr>
   
+  <h1>Flujo lógico de costos (resumen)</h1>
+
+  <h2>Materiales (Inventario de materias primas)</h2>
+  <p>Aquí están los materiales comprados y disponibles (<span class="inline-code">inventario inicial + compras netas − inventario final = materiales usados</span>).</p>
+  <p>Se separan en <strong>materiales directos</strong> y <strong>suministros/materiales indirectos</strong>.</p>
+
+  <h2>Planta de producción (Proceso productivo — WIP / Work In Process)</h2>
+  <p>Al entrar a producción se combinan:</p>
+  <ul>
+    <li><strong>Materiales directos usados</strong> (van directamente al producto en proceso).</li>
+    <li><strong>Mano de obra directa (MOD)</strong> (tiempo directo provisto por operarios que transforma el material).</li>
+    <li><strong>Costos Indirectos de Fabricación (CIF)</strong>: aquí van los rubros de planta — depreciación de maquinaria, mantenimiento correctivo, salarios de supervisión, materiales indirectos, servicios públicos, impuesto predial de planta, fletes internos, etc.</li>
+  </ul>
+  <p>Todos esos (<em>Materiales directos + MOD + CIF</em>) forman el <strong>Costo de Manufactura</strong> que se registra en cuentas de Producción en Proceso (WIP).</p>
+  <p>WIP se ajusta con WIP inicial y WIP final para calcular cuánto se convirtió en productos terminados en el período.</p>
+
+  <h2>Productos terminados (Inventario de productos terminados)</h2>
+  <p>Al terminarse la producción, el costo se mueve de WIP a Inventario de productos terminados.</p>
+  <p>Si hay inventario inicial de terminados, se suma; si hay inventario final, se resta cuando se calcula costo de lo vendido.</p>
+
+  <h2>Costo de los productos vendidos (COGS / CPV)</h2>
+  <p>Cuando se venden los productos, el costo se traslada desde Inventario de productos terminados a <strong>Costo de los productos vendidos</strong> en el estado de resultados.</p>
+
+  <h2>Esquema simple (línea de tiempo)</h2>
+  <div class="flow" aria-hidden="true">
+    <div class="chip">Compras</div>
+    <div class="chip">→ Inventario Materias Primas</div>
+    <div class="chip">→ (Materiales directos + MOD + CIF)</div>
+    <div class="chip">→ WIP</div>
+    <div class="chip">→ Productos Terminados</div>
+    <div class="chip">→ Ventas</div>
+    <div class="chip">→ Costo de los Productos Vendidos</div>
+  </div>
+
+  <h2>Qué contiene cada bloque (ejemplos)</h2>
+  <ul class="examples">
+    <li><strong>Materiales:</strong> madera, hilo, acero, salsas (si aplicara), etc.</li>
+    <li><strong>MOD:</strong> sueldos de operadores que ensamblan/tejen/cocinan (directamente atribuibles).</li>
+    <li><strong>CIF (planta de producción):</strong>
+      <ul>
+        <li>Depreciación de maquinaria</li>
+        <li>Mantenimiento correctivo y preventivo</li>
+        <li>Salarios de supervisores, personal de mantenimiento o control de calidad (indirectos)</li>
+        <li>Materiales indirectos y suministros</li>
+        <li>Servicios públicos que consume la planta (electricidad, agua)</li>
+        <li>Impuesto predial de la planta</li>
+        <li>Otros gastos de planta</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>Fórmulas clave (recordatorio)</h2>
+  <div class="box">
+Materiales usados = Inventario inicial materias + Compras netas − Inventario final materias
+  </div>
+
+  <div class="box">
+Costo de manufactura = Materiales directos usados + Mano de obra directa + CIF
+  </div>
+
+<div class="box">
+  <strong>Costo de productos terminados</strong> = 
+  Costo de manufactura + Inventario en proceso inicial − Inventario en proceso final
+</div>
+
+
+  <div class="box">
+Costo de los productos vendidos = Costo de los productos terminados + Inventario inicial de terminados − Inventario final de terminados
+  </div>
+
+ <hr>
+ "Inventario en proceso inicial" = "Inventario de productos en proceso (inicial)".
+ <br><br>
+ Inventario materiales directos y suministros (1 de enero) es lo mismo que: = : 
+ Inventario inicial materias
+
+    <hr>
+
+    <div class="box">
+    <h3>Materiales usados</h3>
+    <p>Se dividen en:</p>
+    <ul>
+    <li><strong>Materiales directos usados</strong>: se incorporan físicamente al producto y son fácilmente identificables 
+      (ej: hilo en artesanías, tela en ropa, madera en muebles).
+    </li>
+    <li><strong>Materiales indirectos usados</strong>: se consumen en la planta pero no se identifican directamente en cada producto 
+      (ej: pegante, lubricantes, limpiadores, suministros pequeños).
+    </li>
+    </ul>
+    </div>
+
+    <div class="box">
+    <h3>Ejemplo (Compañía Mack Ltda)</h3>
+    <ol>
+    <li><strong>Materiales directos y suministros usados</strong>: 1,834,850</li>
+    <li>– <strong>Suministros usados (materiales indirectos)</strong>: 600,000</li>
+    <li>= <strong>Materiales directos usados</strong>: 1,234,850</li>
+    </ol>
+    </div>
+
+    <div class="box">
+    <h3>Fórmula</h3>
+    <p><strong>Materiales usados</strong> = Materiales directos usados + Materiales indirectos (suministros) usados</p>
+    </div>
+
+
+ 
+<div class="content">
+  <h4>Las dos formas son correctas, pero representan momentos distintos del flujo de costos:</h4>
+
+  <h3>Primera fórmula (Inventarios y compras):</h3>
+  <p>Sirve para calcular <strong>materiales usados en total</strong> a partir de inventarios y compras.</p>
+  <div class="box">
+    <strong>Materiales usados</strong>
+      = Inventario inicial materias + Compras netas − Inventario final materias
+  </div>
+
+  <h3>Segunda fórmula (Desglose):</h3>
+  <p>Sirve para dividir esos materiales usados en <strong>directos e indirectos (suministros)</strong>.</p>
+  <div class="box">
+    <h4>Fórmula</h4>
+    <p><strong>Materiales usados</strong> = Materiales directos usados + Materiales indirectos (suministros) usados</p>
+  </div>
+
+  <p>👉 <strong>O sea:</strong></p>
+  <ul>
+    <li>La primera te dice <em>cuántos materiales se consumieron en total</em> en el período.</li>
+    <li>La segunda te explica <em>cómo se reparten esos materiales</em> entre directos (van al producto) e indirectos (CIF).</li>
+  </ul>
+
+  <img src="../../img/guia_233.png" alt="" width="700">
+</div>
+ 
+
 </div>
 
 
 
 
 <div class="seccion derecha">
-   
-     <section>
-  <p><strong>En este problema <u>NO</u> aparecen costos del período, solo costos del producto.</strong></p>
 
-  <h3>📌 Diferencia rápida</h3>
-
-  <div>
-    <h4>Costos del producto (inventariables):</h4>
-    <ul>
-      <li>Materiales directos, Mano de obra directa, Costos indirectos de fabricación (CIF).</li>
-      <li>Van primero a inventarios (MP, Producción en Proceso, Productos Terminados) y se convierten en gasto solo cuando se venden.</li>
-    </ul>
-
-    <h4>Costos del período (no inventariables):</h4>
-    <ul>
-      <li>Gastos administrativos, de ventas, comerciales, financieros, etc.</li>
-      <li>Se llevan directamente al estado de resultados como gasto del período, sin pasar por inventarios.</li>
-    </ul>
-  </div>
-
-  <h3>📌 En tu enunciado</h3>
-
-  <p>Los rubros dados son:</p>
-  <ul>
-    <li>Materiales directos (MP y fletes netos) ✅ <strong>Producto</strong></li>
-    <li>MOD ✅ <strong>Producto</strong></li>
-    <li>CIF (materiales indirectos, energía, MO indirecta, otros costos de fábrica, depreciación) ✅ <strong>Producto</strong></li>
-    <li>Inventarios (MP, WIP, PT) ✅ <strong>Producto</strong></li>
-  </ul>
-
-  <p>👉 <strong>Todo eso son costos de producto.</strong><br>
-  No se mencionan gastos de venta, administrativos ni financieros, por tanto <strong>no tenemos costos del período</strong> en este ejercicio.</p>
-</section>
-
- 
-    <img src="../../img/guia_232.png" alt="" width="600">
-
-    <br><br>
-    <p><strong>Materiales directos</strong></p>
-    <ul>
-        <li>Inventario materiales directos y suministros (1 de enero)</li>
-        <li>
-             Compras netas
-            <ul>
-                <li>+Compras brutas de materiales y suministros</li>
-                <li>+Fletes en compras</li>
-                <li>-Devoluciones y rebajas en compras</li>
-                <li>-Descuentos en compras</li>
-            </ul>
-        </li>
-       <li>Materiales directos y suministros disponibles para usar </li>
-       <li>Inventario materiales directos y suministros (31 de enero)</li>
-       <li>Materiales directos y suministros usados</li>
-       <li>- Suministros usados</li>
-       <li>Materiales directos usados</li>
-    </ul>
-     
-
-
-
-
-    <hr>
-    Notamos que :
-    <p><strong>Materialesdisponibles=Inventarioinicial+Comprasnetas</strong></p>
-     <p><strong>Materialesusados=Materialesdisponibles-Inventariofinal</strong></p>
-    <p>El inventario final en este caso es 31 enero</p>
-    <br>
-    <p><strong>“Materiales directos y suministros usados” = total consumido en el período.</strong></p>
-     
-    <p>“– Suministros usados” = parte que es indirecta, se manda a CIF.</p>
- 
-    <p>“= Materiales directos usados” = lo que realmente se convierte en producto final.</p>
+    <P>
+    En contabilidad de costos:
+    </P>
+    <P>
+    Costos Generales de Manufactura (CGM) = Costos Indirectos de Fabricación (CIF)
+    </P>
  
     <hr>
-    <strong>indirectos:</strong>
-    <li>Depreciación: 70% ($2 295 000)</li>
-    <li>Materiales indirectos y suministros</li>
-    <li>Salarios de supervisión y mano de obra indirecta</li>
-    <li>Impuesto predial-Planta y equipo de producción </li>
-    <li>Servicios públicos: 85% ($2 010 000)</li>
+    <h3>Caso de estudio de incendio:</h3> 
 
-    <hr>
-    
-  <h1>1. <span class="check">Directos + Indirectos = Manufactura ✅</span></h1>
-  <p><strong>Correcto.</strong></p>
-  <ul>
-    <li>Materiales directos usados</li>
-    <li>Mano de obra directa</li>
-    <li>Costos indirectos de fabricación (CIF)</li>
-  </ul>
-  <p>👉 Al sumarlos, obtienes el <strong>Costo de Manufactura</strong> (también llamado “costo incurrido en la producción”).</p>
+ 
+  <h6>Interpretación del fragmento</h6>
 
-  <div class="equation">
-1,234,850 + 3,000,000 + 5,545,000 = 9,779,850
-  </div>
+  <p class="small">El fragmento dice:</p>
+  <blockquote>
+    "El costo de la prima totalizó 410 000 unidades monetarias hasta lo que va del año y los <strong>costos generales de manufactura</strong> fueron de <strong>70% del costo de conversión</strong>."
+  </blockquote>
 
-  <h2>2. Costo de manufactura + Inventario en proceso inicial – Inventario en proceso final = Costo de productos terminados</h2>
-  <p><strong>¿Por qué?</strong></p>
-  <ul>
-    <li><strong>Inventario en proceso inicial (WIP inicial):</strong> productos que ya estaban a medio hacer al iniciar el mes → se agregan.</li>
-    <li><strong>Inventario en proceso final (WIP final):</strong> productos que aún no terminaron al final → se restan.</li>
-  </ul>
-  <p>👉 Esto te da el <strong>Costo de productos terminados (CPT)</strong>, es decir, lo que realmente salió como producto listo en el mes.</p>
+  <div class="section">
+    <h6>Interpretación</h6>
+    <ol>
+      <li>
+        <strong>Costo de la prima (410 000):</strong><br/>
+        Esto significa que <strong>Materiales directos + Mano de obra directa = 410 000</strong>.<br/>
+        ⇢ Ese es el <em>costo primo</em>.
+      </li>
 
-  <div class="equation">
-Costo de manufactura + WIP inicial – WIP final = Costo de productos terminados
-  </div>
+```
+  <li style="margin-top:10px;">
+    <strong>Costos generales de manufactura (CIF):</strong><br/>
+    Se indica que son <strong>70% del costo de conversión</strong>.<br/>
+    <p class="code">Recuerda: Costo de conversión = Mano de obra directa (MOD) + CIF</p>
+    Por tanto, la relación dada es:
+    <div class="code">CIF = 0.7 × (MOD + CIF)</div>
+    Con esa ecuación se puede despejar la relación entre <em>MOD</em> y <em>CIF</em>.
+  </li>
+</ol>
+```
 
-  <div class="equation">
-9,779,850 + 1,210,000 – 1,120,200 = 9,869,650
-  </div>
-
-  <h2>3. Costo de productos terminados + Inventario de terminados inicial – Inventario de terminados final = Costo de los productos vendidos (CPV)</h2>
-  <p>Aquí el razonamiento es parecido:</p>
-  <ul>
-    <li><strong>Inventario terminados inicial</strong> → lo que quedó del mes pasado, se suma porque se puede vender este mes.</li>
-    <li><strong>Inventario terminados final</strong> → lo que aún no se ha vendido, se resta porque todavía no es gasto, sigue como activo.</li>
-  </ul>
-  <p>👉 Resultado: <strong>Costo de los productos vendidos (CPV)</strong>, que va directo al estado de resultados.</p>
-
-  <div class="equation">
-9,869,650 + 926,200 – 772,000 = 10,023,850
-  </div>
-
-  <h2>4. Resumen de fórmulas clave</h2>
-  <p class="small"><strong>Costo de manufactura (CM)</strong></p>
-  <div class="equation">
-Materiales directos usados + Mano de obra directa + Costos indirectos de fabricación
-  </div>
-
-  <p class="small"><strong>Costo de productos terminados (CPT)</strong></p>
-  <div class="equation">
-CM + Inventario en proceso inicial – Inventario en proceso final
-  </div>
-
-  <p class="small"><strong>Costo de los productos vendidos (CPV)</strong></p>
-  <div class="equation">
-CPT + Inventario de terminados inicial – Inventario de terminados final
   </div>
 
   <div class="note">
-    ✅ En palabras simples:<br>
-    <strong>Directos + Indirectos = Manufactura</strong><br>
-    <strong>Manufactura + WIP inicial – WIP final = Terminados</strong><br>
-    <strong>Terminados + Terminados inicial – Terminados final = Vendidos</strong>
+    <strong>En resumen:</strong>
+    <ul>
+      <li>Tienes <strong>Costo primo = 410 000</strong> (es decir, Materiales directos + Mano de obra directa = 410 000).</li>
+      <li>Sabes que <strong>CIF = 70% del Costo de Conversión</strong> (donde Costo de Conversión = MOD + CIF).</li>
+      <li>Con esos dos datos es posible plantear un sistema de ecuaciones para determinar por separado cuánto corresponde a Materiales directos, Mano de obra directa y Costos indirectos de fabricación.</li>
+    </ul>
+  </div>
+    
+    <hr>
+
+ 
+     <h2 id="titulo">Definición sencilla</h2>
+    <p>
+      Los <strong>costos de conversión</strong> son aquellos que se incurren para transformar la materia prima (materiales directos)
+      en un producto terminado.
+    </p>
+    <p>
+      Por eso, <em>no incluyen</em> materiales directos (eso ya es la base del producto), sino que se concentran en:
+    </p>
+    <ul>
+      <li>
+        <span class="term">La mano de obra directa (MOD):</span>
+        trabajadores que transforman físicamente el material (operarios, técnicos, ensambladores).
+      </li>
+      <li>
+        <span class="term">Costos indirectos de fabricación (CIF):</span>
+        <span class="examples">energía, depreciación de maquinaria, supervisión, mantenimiento, lubricantes, etc.</span>
+      </li>
+    </ul>
+    <p>Entonces:</p>
+
+    <p><strong>Costos de conversion=MOD+CIF</strong> </p>
+Los costos generales de manufactura (CIF) son el 70% del costo de conversión.
+
+
+  <h1>Relación algebraica</h1>
+
+  <p>Si llamamos:</p>
+  <ul>
+    <li><strong>MOD</strong> = Mano de obra directa</li>
+    <li><strong>CIF</strong> = Costos indirectos de fabricación</li>
+  </ul>
+
+  <div class="step">
+    <p class="eq">Tenemos la relación dada:</p>
+    <pre>CIF = 70% × (MOD + CIF)</pre>
+  </div>
+
+  <div class="step">
+    <p class="eq">A partir de la relación:</p>
+    <pre>
+CIF = 0.7 × (MOD + CIF)
+CIF = 0.7·MOD + 0.7·CIF
+CIF − 0.7·CIF = 0.7·MOD
+0.3·CIF = 0.7·MOD
+CIF = (0.7 / 0.3) × MOD
+CIF = (7 / 3) × MOD
+    </pre>
+  </div>
+
+  <div class="note">
+    <p><strong>Interpretación:</strong></p>
+    <p>El procedimiento que se escribió como <code>CIF = (70% / 30%) × MOD</code> es equivalente a lo anterior. El cociente <code>70% / 30%</code> = <code>7/3 ≈ 2.333...</code>, por lo que <strong>los costos indirectos de fabricación son ≈ 2.33 veces la mano de obra directa</strong> bajo la condición dada.</p>
   </div>
  
 

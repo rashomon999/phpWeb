@@ -169,7 +169,9 @@ if ($_POST) {
 
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '26') {  
+   if ($respuesta_1 === 'Inventario inicial materias'
+   || $respuesta_1 === 'inventario inicial materias'
+   ) {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -179,7 +181,9 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === '39') {  
+   if ($respuesta_2 === 'Compras netas'
+   || $respuesta_2 === 'compras netas'
+   ) {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -189,7 +193,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === '52') {  
+   if ($respuesta_3 === 'Inventario final materias') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -199,7 +203,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === '65') {  
+   if ($respuesta_4 === 'Materiales directos usados') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -209,7 +213,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === '78') {  
+   if ($respuesta_5 === 'Mano de obra directa') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -219,7 +223,9 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === '91') {  
+   if ($respuesta_6 === 'CIF'
+   || $respuesta_6 === 'Costos indirectos de fabricacion'
+   ) {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -229,7 +235,9 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === '104') {  
+   if ($respuesta_7 === 'Costo de manufactura'
+   || $respuesta_7 === 'Costo manufactura'
+   ) {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -239,7 +247,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === '117') {  
+   if ($respuesta_8 === 'Inventario en proceso inicial') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -249,7 +257,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === '130') {  
+   if ($respuesta_9 === 'Inventario en proceso final') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -259,7 +267,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === '143') {  
+   if ($respuesta_10 === 'Costo de los productos terminados') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -269,7 +277,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === '156') {  
+   if ($respuesta_11 === 'Inventario inicial de terminados') {  
        $verificar_11 = "correcto";
    } elseif ($respuesta_11 === '') {
        $verificar_11 = '';
@@ -280,7 +288,7 @@ if ($_POST) {
 
     // Verificar la respuesta de la primera pregunta
     $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-    if ($respuesta_12 === '28') {  
+    if ($respuesta_12 === 'Inventario final de terminados') {  
         $verificar_12 = "correcto";
     } elseif ($respuesta_12 === '') {
         $verificar_12 = '';
@@ -290,7 +298,11 @@ if ($_POST) {
   
     // Verificar la respuesta de la segunda pregunta
     $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-    if ($respuesta_13 === '42') { 
+    if ($respuesta_13 === 'Costos Indirectos de Fabricacion' ||
+    $respuesta_13 === 'Costos indirectos de fabricacion'
+    ||   $respuesta_13 === 'CIF'
+    
+    ) { 
         $verificar_13 = "correcto";
     } elseif ($respuesta_13 === '') {
         $verificar_13 = '';
@@ -300,7 +312,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la tercera pregunta
     $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-    if ($respuesta_14 === '56') {  
+    if ($respuesta_14 === 'Inventario en proceso inicial') {  
         $verificar_14 = "correcto";
     } elseif ($respuesta_14 === '') {
         $verificar_14 = '';
@@ -310,7 +322,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la cuarta pregunta
     $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-    if ($respuesta_15 === '70') { 
+    if ($respuesta_15 === 'Compra de materiales directos') { 
         $verificar_15 = "correcto";
     } elseif ($respuesta_15 === '') {
         $verificar_15 = '';
@@ -320,7 +332,9 @@ if ($_POST) {
   
     // Verificar la respuesta de la quinta pregunta
     $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-    if ($respuesta_16 === '84') {  
+    if ($respuesta_16 === 'Materiales directos'
+    || $respuesta_16 === 'Mano de obra directa'
+    ) {  
         $verificar_16 = "correcto";
     } elseif ($respuesta_16 === '') {
         $verificar_16 = '';
@@ -330,7 +344,9 @@ if ($_POST) {
   
     // Verificar la respuesta de la sexta pregunta
     $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-    if ($respuesta_17 === '98') {  
+    if ($respuesta_17 === 'Mano de obra directa'
+    || $respuesta_17 === 'Materiales directos'
+    ) {  
         $verificar_17 = "correcto";
         } elseif ($respuesta_17 === '') {
         $verificar_17 = '';
@@ -340,7 +356,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la séptima pregunta
     $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-    if ($respuesta_18 === '112') {  
+    if ($respuesta_18 === 'Consumo de materiales directos') {  
         $verificar_18 = "correcto";
     } elseif ($respuesta_18 === '') {
         $verificar_18 = '';
@@ -350,7 +366,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la octava pregunta
     $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-    if ($respuesta_19 === '126') {  
+    if ($respuesta_19 === 'Costos primos') {  
         $verificar_19 = "correcto";
     } elseif ($respuesta_19 === '') {
         $verificar_19 = '';
@@ -360,7 +376,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la novena pregunta
     $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
-    if ($respuesta_20 === '140') {  
+    if ($respuesta_20 === 'Mano de obra directa') {  
         $verificar_20 = "correcto";
     } elseif ($respuesta_20 === '') {
         $verificar_20 = '';
@@ -370,7 +386,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la décima pregunta
     $respuesta_21 = isset($_POST['respuesta_21']) ? $_POST['respuesta_21'] : '';
-    if ($respuesta_21 === '154') {  
+    if ($respuesta_21 === 'Costos indirectos de fabricacion') {  
          $verificar_21 = "correcto";
     } elseif ($respuesta_21 === '') {
         $verificar_21 = '';
@@ -380,7 +396,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la undécima pregunta
     $respuesta_22 = isset($_POST['respuesta_22']) ? $_POST['respuesta_22'] : '';
-    if ($respuesta_22 === '168') {  
+    if ($respuesta_22 === 'Mano de obra directa') {  
         $verificar_22 = "correcto";
     } elseif ($respuesta_22 === '') {
         $verificar_22 = '';
@@ -390,7 +406,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
    $respuesta_23 = isset($_POST['respuesta_23']) ? $_POST['respuesta_23'] : '';
-   if ($respuesta_23 === '30') {  
+   if ($respuesta_23 === 'Costos indirectos de fabricacion') {  
        $verificar_23 = "correcto";
    } elseif ($respuesta_23 === '') {
        $verificar_23 = '';
@@ -400,7 +416,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_24 = isset($_POST['respuesta_24']) ? $_POST['respuesta_24'] : '';
-   if ($respuesta_24 === '45') {  
+   if ($respuesta_24 === 'Mano de obra directa') {  
        $verificar_24 = "correcto";
    } elseif ($respuesta_24 === '') {
        $verificar_24 = '';
@@ -1598,88 +1614,137 @@ function ocultarMensaje4() {
     
 <div class="seccion izquierda"> 
  
-    <img src="../../img/guia_221.png" alt="">
-   
+ 
+    <div class="box">
+    Materiales usados = 
+    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="20">
+     + 
+    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="10">
+      − 
+    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="20">
+     
+    </div>
+
+    <div class="box">
+    Costo de manufactura = 
+    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="20">
+      + 
+    <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="17">
+      + 
+    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="25">
+     
+    </div>
+
+    <div class="box">
+    Costo de productos terminados=
+    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="20">
+     +
+    <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="24">
+     -
+    <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="22">
+     
+    </div>
+
+    <div class="box">
+    Costo de los productos vendidos = 
+    <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="29">
+      + 
+    <input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="27">
+      - 
+    <input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="28">
+     
+    </div>
+
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_1 ?>
+    <?php echo $verificar_2 ?>
+    <?php echo $verificar_3 ?>
+    <?php echo $verificar_4 ?>
+    <?php echo $verificar_5 ?>
+    <?php echo $verificar_6 ?>
+    <?php echo $verificar_7 ?>  
+    <?php echo $verificar_8 ?>
+    <?php echo $verificar_9 ?>
+    <?php echo $verificar_10 ?>
+    <?php echo $verificar_11 ?>
+    <?php echo $verificar_12 ?>
+ 
     <hr>
-    <img src="../../img/guia_230.png" alt="">
-    <img src="../../img/guia_231.png" alt="">
+    
+    <P>
+    En contabilidad de costos:</P>
+    
+    <li>
+    <P>
+    Costos Generales de Manufactura (CGM) = 
+    <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="28">
+    </P>
+    </li>
+    
+ 
+    <li><p>“Producción en proceso al inicio del año = 65,000”</p> 
 
-    <h3>Formulas</h3>
-<h3>📊 Desarrollo de costos</h3>
+    <p>se refiere a lo mismo que:</p>
+     
+    <p>
+    <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="28">    
+      = 65,000</p>
+     </li>
+     
+    <li>
+    Como se clasifica:
+    Compramos 290 000  en materias primas.
+    <p> <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="28"> </p>
+    </li>
 
-<h3>1. Consumo de materiales directos</h3>
-<p><strong>Consumo de Materiales Directos</strong> = Inv. Inicial Materiales Directos + Compras Netas − Inv. Final Materiales Directos</p>
+    <p>El costo de la prima/costos primos = 
+    <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="28">    
+      + 
+    <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="28">
+    </p>
+     
 
-<h3>2. Costos agregados a producción</h3>
-<p><strong>Costos Agregados a Producción</strong> = Consumo de Materiales Directos + Mano de Obra Directa + Costos Indirectos de Fabricación</p>
-
-<h3>3. Costo total de producto terminado</h3>
-<p><strong>Costo Total Producto Terminado</strong> = Costos Agregados a Producción + Inv. Inicial Producto en Proceso − Inv. Final Producto en Proceso</p>
-
-<h3>4. Costo de ventas</h3>
-<p><strong>Costo de Ventas</strong> = Costo Total Producto Terminado + Inv. Inicial Producto Terminado − Inv. Final Producto Terminado</p>
-    <hr>
-  <h3>📊 Desarrollo de costos</h3>
-
-  <h3>1. Consumo de materiales directos</h3>
-  <p>
-  <strong>Consumo de Materiales directos</strong>  
-    = Inv. Inicial Materiales Directos + Compras Netas − Inv. Final Materiales Directos</p>
-  <p>13 408 000 = 1 200 000 + 13 258 000 − 1 050 000</p>
-  <p>👉 Consumo de Materiales Directos = 13.408.000</p>
-
-  <h3>2. Costos agregados a producción</h3>
-  <p>
-  <strong>Costos agregados a producción</strong>  
-   = Consumo Materiales Directos + Mano de Obra Directa + CIF</p>
-  <p>29 454 200 = 13 408 000 + 8 658 000 + 7 388 200</p>
-  <p>👉 Costos agregados a producción = 29.454.200</p>
-
-  <h3>3. Costo total de producto terminado</h3>
-  <p>
-  <strong>Costo total PT</strong>  
-    = Costos agregados a producción + Inv. Inicial Producto en Proceso − Inv. Final Producto en Proceso</p>
-  <p>29 016 200 = 29 454 200 + 912 500 − 1 350 500</p>
-  <p>👉 Costo total Producto Terminado = 29.016.200</p>
-
-  <h3>4. Costo de ventas</h3>
-  <p>
-  <strong>Costo de ventas</strong>  
-   = Costo total PT + Inv. Inicial Producto Terminado − Inv. Final Producto Terminado</p>
-  <p>Sabemos que el Costo de ventas = 25.908.750 (dado). Entonces despejamos:</p>
-  <p>Inv. Final Producto Terminado = 29 016 200 + 1 800 000 − 25 908 750</p>
-  <p>Inv. Final Producto Terminado = 4 907 450</p>
-  <p>👉 Costo de Ventas = 25.908.750</p>
-
-  <h3>✅ Resumen de costos importantes</h3>
-  <p>Consumo de Materiales Directos = 13.408.000</p>
-  <p>Costos agregados a producción = 29.454.200</p>
-  <p>Costo total Producto Terminado = 29.016.200</p>
-  <p>Costo de Ventas = 25.908.750</p>
-
-  <hr>
-    <h3>Aclaracion compras netas</h3>
-
-     <p>Compras netas = Compras + Fletes en compras − Devoluciones en compras</p>
-
-  <h3>📌 Fórmula completa del Consumo de Materiales Directos</h3>
-  <p><strong>Consumo de Materiales Directos</strong> = 
-  <br>  
-  Inventario inicial de MD + (Compras + Fletes − Devoluciones) − Inventario final de MD</p>
-
-  <h3>📌 Aplicado a tu tabla</h3>
-  <p>Inventario inicial MP = 1 152 000</p>
-  <p>Compras = 12 017 600</p>
-  <p>Fletes = 105 000</p>
-  <p>Devoluciones = 99 400</p>
-  <p>Inventario final MP = 1 332 000</p>
-
-  <p>Consumo de Materiales Directos = 1 152 000 + (12 017 600 + 105 000 − 99 400) − 1 332 000</p>
-  <p>Consumo de Materiales Directos = 11 843 200</p>
-  <p>👉 Consumo de Materiales Directos = 11.843.200</p>
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_13 ?>
+    <?php echo $verificar_14 ?>
+    <?php echo $verificar_15 ?>
+    <?php echo $verificar_16 ?>
+    <?php echo $verificar_17 ?>
 
     <hr>
-  
+
+    <p>Muchas veces en contabilidad de costos se habla de 
+    <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="28"> como sinónimo de Materiales 
+    directos usados. </p>
+ 
+    <p>De hecho, si despejamos:</p>
+     
+    <input type="text"  value="<?php echo $respuesta_18; ?>" size="28" readonly>  =
+    <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="28">- 
+    <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="28">
+    <br><br> 
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_18 ?>
+    <?php echo $verificar_19 ?>
+    <?php echo $verificar_20 ?>
+    <hr>
+    <p><strong>Costos de conversion=
+        <input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>" size="28">+
+        <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="28">
+     </strong> </p>
+    
+    Si los 
+    <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="28">
+    (CIF) son el 70% del costo de conversión, el 30% es 
+    <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="28">. 
+    
+    <br><br>
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_21 ?>
+    <?php echo $verificar_22 ?>
+    <?php echo $verificar_23 ?>
+    <?php echo $verificar_24 ?>
+
 </div>
 
 
@@ -1687,153 +1752,7 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
    
-     <section>
-  <p><strong>En este problema <u>NO</u> aparecen costos del período, solo costos del producto.</strong></p>
-
-  <h3>📌 Diferencia rápida</h3>
-
-  <div>
-    <h4>Costos del producto (inventariables):</h4>
-    <ul>
-      <li>Materiales directos, Mano de obra directa, Costos indirectos de fabricación (CIF).</li>
-      <li>Van primero a inventarios (MP, Producción en Proceso, Productos Terminados) y se convierten en gasto solo cuando se venden.</li>
-    </ul>
-
-    <h4>Costos del período (no inventariables):</h4>
-    <ul>
-      <li>Gastos administrativos, de ventas, comerciales, financieros, etc.</li>
-      <li>Se llevan directamente al estado de resultados como gasto del período, sin pasar por inventarios.</li>
-    </ul>
-  </div>
-
-  <h3>📌 En tu enunciado</h3>
-
-  <p>Los rubros dados son:</p>
-  <ul>
-    <li>Materiales directos (MP y fletes netos) ✅ <strong>Producto</strong></li>
-    <li>MOD ✅ <strong>Producto</strong></li>
-    <li>CIF (materiales indirectos, energía, MO indirecta, otros costos de fábrica, depreciación) ✅ <strong>Producto</strong></li>
-    <li>Inventarios (MP, WIP, PT) ✅ <strong>Producto</strong></li>
-  </ul>
-
-  <p>👉 <strong>Todo eso son costos de producto.</strong><br>
-  No se mencionan gastos de venta, administrativos ni financieros, por tanto <strong>no tenemos costos del período</strong> en este ejercicio.</p>
-</section>
-
- 
-    <img src="../../img/guia_232.png" alt="" width="600">
-
-    <br><br>
-    <p><strong>Materiales directos</strong></p>
-    <ul>
-        <li>Inventario materiales directos y suministros (1 de enero)</li>
-        <li>
-             Compras netas
-            <ul>
-                <li>+Compras brutas de materiales y suministros</li>
-                <li>+Fletes en compras</li>
-                <li>-Devoluciones y rebajas en compras</li>
-                <li>-Descuentos en compras</li>
-            </ul>
-        </li>
-       <li>Materiales directos y suministros disponibles para usar </li>
-       <li>Inventario materiales directos y suministros (31 de enero)</li>
-       <li>Materiales directos y suministros usados</li>
-       <li>- Suministros usados</li>
-       <li>Materiales directos usados</li>
-    </ul>
-     
-
-
-
-
-    <hr>
-    Notamos que :
-    <p><strong>Materialesdisponibles=Inventarioinicial+Comprasnetas</strong></p>
-     <p><strong>Materialesusados=Materialesdisponibles-Inventariofinal</strong></p>
-    <p>El inventario final en este caso es 31 enero</p>
-    <br>
-    <p><strong>“Materiales directos y suministros usados” = total consumido en el período.</strong></p>
-     
-    <p>“– Suministros usados” = parte que es indirecta, se manda a CIF.</p>
- 
-    <p>“= Materiales directos usados” = lo que realmente se convierte en producto final.</p>
- 
-    <hr>
-    <strong>indirectos:</strong>
-    <li>Depreciación: 70% ($2 295 000)</li>
-    <li>Materiales indirectos y suministros</li>
-    <li>Salarios de supervisión y mano de obra indirecta</li>
-    <li>Impuesto predial-Planta y equipo de producción </li>
-    <li>Servicios públicos: 85% ($2 010 000)</li>
-
-    <hr>
-    
-  <h1>1. <span class="check">Directos + Indirectos = Manufactura ✅</span></h1>
-  <p><strong>Correcto.</strong></p>
-  <ul>
-    <li>Materiales directos usados</li>
-    <li>Mano de obra directa</li>
-    <li>Costos indirectos de fabricación (CIF)</li>
-  </ul>
-  <p>👉 Al sumarlos, obtienes el <strong>Costo de Manufactura</strong> (también llamado “costo incurrido en la producción”).</p>
-
-  <div class="equation">
-1,234,850 + 3,000,000 + 5,545,000 = 9,779,850
-  </div>
-
-  <h2>2. Costo de manufactura + Inventario en proceso inicial – Inventario en proceso final = Costo de productos terminados</h2>
-  <p><strong>¿Por qué?</strong></p>
-  <ul>
-    <li><strong>Inventario en proceso inicial (WIP inicial):</strong> productos que ya estaban a medio hacer al iniciar el mes → se agregan.</li>
-    <li><strong>Inventario en proceso final (WIP final):</strong> productos que aún no terminaron al final → se restan.</li>
-  </ul>
-  <p>👉 Esto te da el <strong>Costo de productos terminados (CPT)</strong>, es decir, lo que realmente salió como producto listo en el mes.</p>
-
-  <div class="equation">
-Costo de manufactura + WIP inicial – WIP final = Costo de productos terminados
-  </div>
-
-  <div class="equation">
-9,779,850 + 1,210,000 – 1,120,200 = 9,869,650
-  </div>
-
-  <h2>3. Costo de productos terminados + Inventario de terminados inicial – Inventario de terminados final = Costo de los productos vendidos (CPV)</h2>
-  <p>Aquí el razonamiento es parecido:</p>
-  <ul>
-    <li><strong>Inventario terminados inicial</strong> → lo que quedó del mes pasado, se suma porque se puede vender este mes.</li>
-    <li><strong>Inventario terminados final</strong> → lo que aún no se ha vendido, se resta porque todavía no es gasto, sigue como activo.</li>
-  </ul>
-  <p>👉 Resultado: <strong>Costo de los productos vendidos (CPV)</strong>, que va directo al estado de resultados.</p>
-
-  <div class="equation">
-9,869,650 + 926,200 – 772,000 = 10,023,850
-  </div>
-
-  <h2>4. Resumen de fórmulas clave</h2>
-  <p class="small"><strong>Costo de manufactura (CM)</strong></p>
-  <div class="equation">
-Materiales directos usados + Mano de obra directa + Costos indirectos de fabricación
-  </div>
-
-  <p class="small"><strong>Costo de productos terminados (CPT)</strong></p>
-  <div class="equation">
-CM + Inventario en proceso inicial – Inventario en proceso final
-  </div>
-
-  <p class="small"><strong>Costo de los productos vendidos (CPV)</strong></p>
-  <div class="equation">
-CPT + Inventario de terminados inicial – Inventario de terminados final
-  </div>
-
-  <div class="note">
-    ✅ En palabras simples:<br>
-    <strong>Directos + Indirectos = Manufactura</strong><br>
-    <strong>Manufactura + WIP inicial – WIP final = Terminados</strong><br>
-    <strong>Terminados + Terminados inicial – Terminados final = Vendidos</strong>
-  </div>
- 
-
+  
 </div>
 </div>
  </form>

@@ -1,5 +1,4 @@
-/*<a class="btn" href=".\Conceptos\index.php">Conceptos (no se ha hecho nada)</a>*/
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">

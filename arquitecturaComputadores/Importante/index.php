@@ -2748,7 +2748,7 @@ if ($respuesta_280 === '144') {
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 380vh;
+    height: 180vh;
     }
 
 </style>
@@ -3034,113 +3034,120 @@ function ocultarMensaje4() {
     
 <div class="seccion izquierda"> 
 
+<div class="container">
+<h1>Tipos de punto flotante y niveles de optimización (MSVC)</h1>
 
 
-<p>Supongamos que partimos del número <b>normalizado</b>:</p>
-
-<pre>
-1.1100100000₂ × 2⁻¹
-</pre>
-
-<p>En un número binario normalizado, siempre tenemos la forma:</p>
-
-<pre>
-1.xxxxxxxx₂
-</pre>
-
-<p>Ese <b>1 inicial</b> es fijo (implícito) y no se almacena, porque siempre está a la izquierda de la coma.<br>
-El exponente es el que indica <b>cuántas posiciones se mueve la coma</b>.</p>
-
-<h3>Aplicando el exponente</h3>
-
-<p>Como el exponente es <b>-1</b>, debemos mover la coma <b>una posición a la izquierda</b>:</p>
-
-<pre>
-1.1100100000₂ × 2⁻¹ = 0.11100100000₂
-</pre>
-
-<p>Convertido a decimal:</p>
-
-<pre>
-0.11100100000₂ = 0.890625₁₀
-</pre>
-
-<h3>Ejemplo comparativo</h3>
-
-<p>En cambio, si hubiéramos tenido:</p>
-
-<pre>
-1.0000011100₂ × 2⁵
-</pre>
-
-<p>Aquí el exponente es <b>+5</b>, lo que significa mover la coma 5 posiciones a la derecha:</p>
-
-<pre>
-1.0000011100₂ → 100000.11100₂ = 32.875₁₀
-</pre>
-
-<h3>🔹 La clave</h3>
-
+<h2>1. Tipos de datos (precisión de punto flotante)</h2>
+<p>Cuando hablas de <span class="chip">fp16</span>, <span class="chip">fp32</span>, <span class="chip">fp64</span>, te refieres a formatos de números en coma flotante que definen cuántos bits usa cada número y, por tanto:</p>
 <ul>
-  <li>Con exponente negativo (ejemplo: 2⁻¹), <b>la coma se mueve a la izquierda</b>.</li>
-  <li>Con exponente positivo (ejemplo: 2⁵), <b>la coma se mueve a la derecha</b>.</li>
+<li>Qué tan preciso es (cantidad de decimales exactos que puede representar).</li>
+<li>Qué tan grande o pequeño puede ser el rango de valores.</li>
+<li>Qué tan rápido lo procesa el hardware.</li>
 </ul>
 
-<p>Visualmente puede parecer que el <b>1 inicial de la mantisa</b> se desplaza más posiciones, 
-pero lo que realmente se mueve es la <b>coma</b>, siguiendo el valor del exponente.</p>
 
-<strong>Pareciera que el numero se desplaza 6 posiciones, la idea es poner el numero completo despues de la coma</strong>
-<p>y tiene sentido, de -1 a 5 hay 6 espacioss</p>
-
-<img src="../../img/guia_197.png" alt="">
-
-<p>otro ejemplo:</p>
-
-<img src="../../img/guia_198.png" alt="">
-
-<p>Una equivocacion comun es pensar y diseociar, porque la mantisa en el formato no se escribe el 1 implicito</p>
-
-    <hr>
-
-    con el numero normalizado contamos el numero de ceros y \( 2^{\text{numero de ceros}} \) va a ser el primer numero
-    donde se observara perdida.
-
-    <pre>
-    1.1100100000₂ × 2⁻¹
-    </pre>
-
-    <p>Esto se puede ver en la imagen superior, con \(2^5\) ya hay perdida</p>
-
-    <p>El exponente limite va a ser el exponente de la mantiza normalizada mas el numero de ceros, en este caso
-    -1+5=4. 4 va a ser el ultimo donde no hay perdida.
-    </p>
+<h3>fp16 (half precision, 16 bits)</h3>
+<ul>
+<li><strong>Formato:</strong> 1 bit de signo, 5 de exponente, 10 de mantisa.</li>
+<li><strong>Precisión:</strong> baja.</li>
+<li><strong>Uso:</strong> muy usado en machine learning porque ahorra memoria y ancho de banda.</li>
+</ul>
 
 
-    <hr>
-    <p><strong>Cfloat16</strong></p>
+<h3>fp32 (single precision, 32 bits)</h3>
+<ul>
+<li><strong>Formato:</strong> 1 bit de signo, 8 de exponente, 23 de mantisa.</li>
+<li><strong>Equivalente en código:</strong> <code>float</code> en C/C++/Python (NumPy).</li>
+<li><strong>Precisión aproximada:</strong> ≈ 7 cifras decimales.</li>
+<li><strong>Uso:</strong> estándar en GPU (por ejemplo, CUDA).</li>
+</ul>
 
-    <p>1.10100000 x \(2^{-4}\) -> 5 ceros.</p>
-     
-    <p><strong>formula:</strong>Exponente actual + ceros finales.</p>
-     
-    <p>0.00001101 x \( 2^1 \)</p>
-      
-    <p>-4+5=1, Queda positivo, corremos la coma a la izquierda.</p>
-     
 
-    <hr>
+<h3>fp64 (double precision, 64 bits)</h3>
+<ul>
+<li><strong>Formato:</strong> 1 bit de signo, 11 de exponente, 52 de mantisa.</li>
+<li><strong>Equivalente en código:</strong> <code>double</code> en C/C++.</li>
+<li><strong>Precisión aproximada:</strong> ≈ 16 cifras decimales.</li>
+<li><strong>Contras:</strong> más costoso en memoria y tiempo de cómputo.</li>
+</ul>
 
-    <p><strong>fp16</strong></p>
 
-    <p>1.1100100000 x \(2^{-1} \) -> 5 ceros</p>
+<div class="note">
+<p><strong>👉 Entonces:</strong></p>
+<p><code>float</code> ≈ <code>fp32</code><br>
+<code>double</code> ≈ <code>fp64</code><br>
+<code>__half</code> o librerías especiales ≈ <code>fp16</code></p>
+</div>
 
-    <p><strong>formula:</strong>Exponente actual + ceros finales.</p>
 
-    <p>0.0000111001 x \( 2^4 \)</p>
+<h2>🔹 Niveles de optimización en MSVC</h2>
+<p>MSVC ofrece varios niveles (grupos) de optimización. Aquí están los más relevantes:</p>
 
-    <p>-1+5=4, Queda positivo, corremos la coma a la izquierda.</p>
 
-    <hr>
+<ol>
+<li>
+<strong><code>/Od</code> – Deshabilitar optimizaciones</strong>
+<ul>
+<li>Genera el código casi tal cual lo escribiste.</li>
+<li>Más lento en ejecución, pero ideal para depuración (<em>debugging</em>).</li>
+<li>Ejemplo: <code>a = b + c;</code> siempre se ejecutará tal cual sin reordenamientos.</li>
+</ul>
+</li>
+
+
+<li>
+<strong><code>/O1</code> – Optimización para tamaño (Minimize Size)</strong>
+<ul>
+<li>Reduce el tamaño del ejecutable, a veces sacrificando velocidad.</li>
+<li>Evita duplicar código (p. ej. no desenrolla bucles innecesariamente).</li>
+<li>Útil en sistemas embebidos o donde el tamaño es crítico.</li>
+</ul>
+</li>
+
+
+<li>
+<strong><code>/O2</code> – Optimización para velocidad (nivel estándar)</strong>
+<ul>
+<li>Busca que el código corra más rápido, aunque el ejecutable sea mayor.</li>
+<li>Activa: eliminación de código muerto, desenrollado de bucles, reordenamiento de instrucciones, uso de registros.</li>
+<li>Es la opción por defecto para compilación "Release" en Visual Studio.</li>
+</ul>
+</li>
+
+
+<li>
+<strong><code>/Ox</code> – Máxima optimización (Full Optimization)</strong>
+<ul>
+<li>Incluye todas las optimizaciones de <code>/O2</code> y otras más agresivas.</li>
+<li>Ejemplos: vectorización automática (SIMD: SSE/AVX), inlining agresivo, reordenamientos que pueden afectar la precisión en coma flotante.</li>
+<li>Usado en código final de alto rendimiento (juegos, cómputo científico).</li>
+</ul>
+</li>
+
+
+<li>
+<strong><code>/Og</code> – (Obsoleto)</strong>
+<ul>
+<li>Existía en MSVC antiguas como "Global optimizations".</li>
+<li>Hoy está integrado en <code>/O2</code> y <code>/Ox</code> en compiladores modernos.</li>
+</ul>
+</li>
+</ol>
+
+
+<h3>Opciones relacionadas</h3>
+<ul>
+<li><code>/Os</code> → Similar a <code>/O1</code> (optimizar para tamaño).</li>
+<li><code>/Ot</code> → Similar a <code>/O2</code> (optimizar para tiempo).</li>
+<li><code>/Oy</code> → Omite el frame pointer (mejora rendimiento; complica depuración).</li>
+<li><code>/Ob1</code>, <code>/Ob2</code> → Controlan el comportamiento de <em>inlining</em> de funciones.</li>
+</ul>
+
+
+<p style="margin-top:18px">Si quieres, puedo generar la misma página pero con una tabla comparativa de <code>memoria vs precisión vs velocidad</code> para <code>fp16</code>/<code>fp32</code>/<code>fp64</code>, o bien exportarla a Markdown o PDF.</p>
+</div>
+ 
 </div>
 
 
@@ -3149,8 +3156,104 @@ pero lo que realmente se mueve es la <b>coma</b>, siguiendo el valor del exponen
 <div class="seccion derecha">
  
  
+<h1>Tamaño de la matriz (N)</h1>
 
-    
+
+<p>No se eligen los tamaños de matriz al azar, sino alineados con la <strong>jerarquía de memoria (L1, L2, L3)</strong>.</p>
+
+
+<ul>
+<li>Cada nivel de memoria tiene un límite de capacidad.</li>
+<li>Cuando la matriz cabe en <strong>L1</strong>, el acceso es muy rápido.</li>
+<li>Cuando ya no cabe y pasa a <strong>L2</strong> o <strong>L3</strong>, el tiempo de acceso aumenta.</li>
+</ul>
+
+
+<div class="highlight">
+<p>Por eso, se seleccionan valores de <strong>N</strong> que llenan o sobrepasan ligeramente cada caché, lo que permite observar los “saltos” de rendimiento producidos por la memoria.</p>
+</div>
+
+
+<p style="margin-top:14px">Sugerencia: al reportar, incluya la relación <code>N × N × sizeof(dtype)</code> y marque en la tabla en qué nivel de caché se espera que quepa cada caso.</p>
+ 
+
+    <hr>
+    <h3>Analisis de estos dos factores:</h3>
+
+     <h2>1. Unidades básicas</h2>
+  <p>1 Byte (B) = 8 bits (un carácter en ASCII, por ejemplo "A")</p>
+
+  <h2>2. Escala en base 1024</h2>
+  <p>En computación se usa base 2 (potencias de 2), no base 10.</p>
+  <ul>
+    <li>1 KB (Kilobyte) = 1024 B = 2<sup>10</sup> Bytes</li>
+    <li>1 MB (Megabyte) = 1024 KB = 1,048,576 B</li>
+    <li>1 GB (Gigabyte) = 1024 MB = 1,073,741,824 B</li>
+    <li>1 TB (Terabyte) = 1024 GB = 1,099,511,627,776 B</li>
+  </ul>
+
+  <h2>3. Conversión de KB a Bytes</h2>
+  <p>1 KB = 1024 Bytes (no 1000).</p>
+  <ul>
+    <li>32 KB = 32 × 1024 = 32,768 Bytes</li>
+    <li>48 KB = 48 × 1024 = 49,152 Bytes</li>
+    <li>1.25 MB = 1.25 × 1024 × 1024 = 1,310,720 Bytes</li>
+    <li>18 MB = 18 × 1024 × 1024 = 18,874,368 Bytes</li>
+  </ul>
+
+  <h2>4. Memoria Caché</h2>
+
+  <h3>🔹 L1 Cache</h3>
+  <ul>
+    <li>4 × 48 KB (Datos) → cada uno de los 4 P-cores tiene 48 KB de caché L1 de datos.</li>
+    <li>En Bytes: 48 KB = 49,152 Bytes.</li>
+    <li>4 × 32 KB (Instrucciones) → cada P-core tiene 32 KB de caché L1 de instrucciones.</li>
+    <li>En Bytes: 32 KB = 32,768 Bytes.</li>
+  </ul>
+  <p>En total:<br>
+  Por núcleo: 48 KB + 32 KB = 80 KB.<br>
+  Para los 4 P-cores: 320 KB en L1 (separada en datos e instrucciones).</p>
+
+  <h3>🔹 L2 Cache</h3>
+  <ul>
+    <li>4 × 1.25 MB → cada P-core tiene 1.25 MB de caché L2 privada.</li>
+    <li>En Bytes: 1.25 MB = 1,310,720 Bytes.</li>
+    <li>2 × 2 MB → los clústeres de núcleos de eficiencia (E-cores) comparten 2 MB de caché L2 por clúster.</li>
+    <li>En Bytes: 2 MB = 2,097,152 Bytes.</li>
+  </ul>
+
+  <h3>🔹 L3 Cache</h3>
+  <ul>
+    <li>18 MB compartida por todos los núcleos.</li>
+    <li>En Bytes: 18 MB = 18,874,368 Bytes.</li>
+  </ul>
+  <p>Esta memoria es más lenta que L1 y L2, pero mucho más rápida que la RAM principal.</p>
+
+  <h2>5. Relación entre memoria caché y cálculo de matrices</h2>
+
+  <h3>1. Número de elementos</h3>
+  <p>Una matriz de 1000 × 1000 tiene 1,000,000 elementos.</p>
+
+  <h3>2. Espacio según tipo de dato</h3>
+  <ul>
+    <li>fp16 (2 Bytes por elemento): 1,000,000 × 2 = 2,000,000 Bytes ≈ 2 MB</li>
+    <li>fp32 (4 Bytes por elemento): 1,000,000 × 4 = 4,000,000 Bytes ≈ 4 MB</li>
+    <li>fp64 (8 Bytes por elemento): 1,000,000 × 8 = 8,000,000 Bytes ≈ 8 MB</li>
+  </ul>
+
+  <h3>3. Relación con tus cachés (según CPU-Z)</h3>
+  <ul>
+    <li>L1: 48 KB por núcleo ≈ 49,152 Bytes</li>
+    <li>L2: 1.25 MB por núcleo ≈ 1,310,720 Bytes</li>
+    <li>L3: 18 MB compartidos ≈ 18,874,368 Bytes</li>
+  </ul>
+
+  <p><b>Comparación con la matriz de 1000 × 1000:</b></p>
+  <ul>
+    <li>fp16 (2 MB): no cabe en L1 ni en L2, sí cabe en L3.</li>
+    <li>fp32 (4 MB): no cabe en L1 ni en L2, sí cabe en L3.</li>
+    <li>fp64 (8 MB): no cabe en L1 ni en L2, sí cabe en L3.</li>
+  </ul>
 </div>
 </div>
  </form>

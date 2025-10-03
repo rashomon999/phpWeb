@@ -2748,7 +2748,7 @@ if ($respuesta_280 === '144') {
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 400vh;
+    height: 180vh;
     }
 
 </style>
@@ -3034,204 +3034,128 @@ function ocultarMensaje4() {
     
 <div class="seccion izquierda"> 
 
+<h2>🔎 Contexto del código</h2>
+<pre><code>
+void ProductMat_a(int n, const half* A, const half* B, half* C) {
+    for (int i = 0; i < n; i++)
+        for (int j = 0; j < n; j++) {
+            float sum = 0.0f;
+            for (int k = 0; k < n; k++)
+                sum += float(A[i + k * n]) * float(B[k + j * n]);
+            C[i + j * n] = half(sum + float(C[i + j * n]));
+        }
+}
+</code></pre>
 
-<h1>Normalización de Números en Punto Flotante</h1>
+<p>Se multiplican dos matrices cuadradas <b>n×n</b>: <b>A</b> y <b>B</b>.</p>
+<ul>
+  <li>El resultado se acumula en <b>C</b>.</li>
+  <li>En memoria, durante la ejecución, necesitas tener vivas las tres matrices al mismo tiempo (<b>A</b>, <b>B</b>, <b>C</b>).</li>
+  <li>Cada elemento de la matriz puede ser <b>half (fp16, 2 bytes)</b>, <b>float (fp32, 4 bytes)</b> o <b>double (fp64, 8 bytes)</b>.</li>
+</ul>
 
-<h2>📌 Caso 1: El exponente queda positivo</h2>
+<h2>🔎 Cómo encaja la fórmula de Excel</h2>
+<p>La fórmula que usaste en Excel:</p>
+<pre><code>=REDONDEAR(RAIZ((B11*1024)/(3*X));0)</code></pre>
 
-<p>Ejemplo con el número:</p>
-<p>5.75<sub>10</sub> = 101.11<sub>2</sub></p>
+<p>Se traduce exactamente a MathJax:</p>
+<p>
+\[
+n = \sqrt{\frac{\text{Memoria disponible en bytes}}{3 \times \text{tamaño de elemento en bytes}}}
+\]
+</p>
 
-<p>Normalizando:</p>
-<p>1.0111 × 2<sup>2</sup></p>
+<p>donde:</p>
+<ul>
+  <li><b>Memoria disponible en bytes</b> = el tamaño de la caché o nivel de memoria (ejemplo: L1 = 448 KB).</li>
+  <li><b>3 × tamaño de elemento</b> = el costo en bytes por posición, porque necesitas espacio para tres matrices (A, B y C).</li>
+</ul>
 
-<p>Aquí el exponente es +2, porque corriste la coma binaria dos posiciones hacia la izquierda.</p>
+<h2>🔎 Ejemplo con tu caso</h2>
+<p>Para <b>L1 = 448 KB</b>, usando <b>fp32 (4 bytes)</b>:</p>
+<p>
+\[
+n = \sqrt{\frac{448 \times 1024}{3 \times 4}} = \sqrt{\frac{458{,}752}{12}} = \sqrt{38{,}229.3} \approx 195.5 \rightarrow 196
+\]
+</p>
 
-<p>👉 Esto siempre pasa con números mayores o iguales a 2.</p>
+<p>Redondeando → <b>196</b>, que coincide con tu tabla ✅.</p>
 
-<h2>📌 Caso 2: El exponente queda negativo</h2>
+<h2>📌 Qué significa la tabla realmente</h2>
+<p><b>"Tamaño Matriz16 / fp32 / 64"</b> → No es el número de elementos.</p>
+<p>Es el <b>lado n</b> de la matriz cuadrada más grande que cabe en ese nivel de caché si almacenamos A, B y C simultáneamente.</p>
 
-<p>Ejemplo con un número menor que 1:</p>
-<p>0.15625<sub>10</sub> = 0.00101<sub>2</sub></p>
+<h3>Ejemplo:</h3>
+<ul>
+  <li>En <b>L1</b> cabría hasta una matriz de <b>196×196</b> (fp32) junto con las otras dos.</li>
+  <li>En <b>L2</b> cabría hasta <b>887×887</b> (fp32).</li>
+  <li>Y así sucesivamente según el tamaño de la caché.</li>
+</ul>
 
-<p>Normalizando:</p>
-<p>1.01 × 2<sup>-3</sup></p>
+<!-- Carga MathJax -->
+<script type="text/javascript" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 
-<p>Para que quede la forma 1.xxxxx, moviste la coma 3 lugares a la derecha.</p>
-<p>Eso se traduce en un exponente −3.</p>
+ 
 
-<p>👉 Esto siempre pasa con números entre 0 y 1.</p>
+<h2>🔎 Fórmulas para calcular el tamaño máximo de la matriz</h2>
 
-<h2>📌 Resumen del proceso de normalización</h2>
+<p>Las fórmulas que usaste en Excel se pueden expresar con MathJax así:</p>
 
-<ol>
-    <li>Convertir el número decimal a binario</li>
-    <li>Expresar el número binario en notación científica:
-        <ul>
-            <li>Siempre debe comenzar con 1.xxxxx</li>
-        </ul>
-    </li>
-    <li>Contar cuántas posiciones se movió el punto:
-        <ul>
-            <li>Hacia la izquierda → exponente positivo</li>
-            <li>Hacia la derecha → exponente negativo</li>
-        </ul>
-    </li>
-    <li>Expresar el número en formato normalizado: 1.xxxxx × 2<sup>±n</sup></li>
-</ol>
+<p>
+\[
+n = \text{REDONDEAR}\left(\sqrt{\frac{\text{Memoria KB} \times 1024}{3 \times \text{tamaño de elemento en bytes}}}, 0\right)
+\]
+</p>
 
-<p>La normalización es esencial para representar números en el estándar IEEE 754, ya que garantiza que todos los números tengan una representación única y consistente.</p>
+<p>Es correcto usar <b>1024</b> para convertir KB → bytes, y <b>3 × tamaño de elemento</b> porque necesitas espacio para <b>A, B y C</b> simultáneamente.</p>
 
-    <hr>
-     <h1>Proceso de Normalización IEEE-754</h1>
-    
-    <p>El proceso de normalización, que en IEEE-754 consiste en "mover la coma binaria" hasta dejar un solo 1 a la izquierda de la coma.</p>
-    
-    <p>En tu caso:</p>
-    <p>👉 0.00101<sub>2</sub> = 1.01 × 2<sup>-3</sup></p>
-    <p>porque desplazamos la coma 3 posiciones a la derecha para que quede justo después del primer 1.
-    Al desplazar a la derecha, el exponente es negativo.</p>
-    
-    <h2>Ejemplos paso a paso</h2>
-    
-    <h3>Ejemplo 1: número menor que 1</h3>
-    <p>Decimal: 0.15625<sub>10</sub></p>
-    <p>Binario: 0.00101<sub>2</sub></p>
-    <p>Forma original: 0.00101</p>
-    <p>Movemos la coma 3 lugares a la derecha → 1.01</p>
-    <p>Resultado: 1.01 × 2<sup>-3</sup></p>
-    
-    <h3>Ejemplo 2: número mayor que 1</h3>
-    <p>Decimal: 6.5<sub>10</sub></p>
-    <p>Binario: 110.1<sub>2</sub></p>
-    <p>Forma original: 110.1</p>
-    <p>Movemos la coma 2 lugares a la izquierda → 1.101</p>
-    <p>Resultado: 1.101 × 2<sup>2</sup></p>
-    
-    <h3>Ejemplo 3: número mucho menor que 1</h3>
-    <p>Decimal: 0.0078125<sub>10</sub></p>
-    <p>Binario: 0.0000001<sub>2</sub></p>
-    <p>Forma original: 0.0000001</p>
-    <p>Movemos la coma 7 lugares a la derecha → 1.0</p>
-    <p>Resultado: 1.0 × 2<sup>-7</sup></p>
-    
-    <h2>📌 Regla práctica:</h2>
-    <p>Si el número empieza con 0,00… → tendrás que mover la coma hacia la derecha, y el exponente será negativo.</p>
-    <p>Si el número empieza con varios 1 a la izquierda de la coma → mueves la coma hacia la izquierda, y el exponente será positivo.</p>
-    
+<h3>Desglose según tipo de dato y nivel de caché:</h3>
+<ul>
+  <li>
+    \(\text{fp16 (2 bytes): } n = \text{REDONDEAR}\left(\sqrt{\frac{B14 \times 1024}{3 \times 2}}, 0\right)\)
+  </li>
+  <li>
+    \(\text{fp32 (4 bytes): } n = \text{REDONDEAR}\left(\sqrt{\frac{B14 \times 1024}{3 \times 4}}, 0\right)\)
+  </li>
+  <li>
+    \(\text{fp64 (8 bytes): } n = \text{REDONDEAR}\left(\sqrt{\frac{B14 \times 1024}{3 \times 8}}, 0\right)\)
+  </li>
+  <li>
+    \(\text{fp16 (2 bytes) otro nivel: } n = \text{REDONDEAR}\left(\sqrt{\frac{B16 \times 1024}{3 \times 2}}, 0\right)\)
+  </li>
+  <li>
+    \(\text{fp32 (4 bytes) otro nivel: } n = \text{REDONDEAR}\left(\sqrt{\frac{B16 \times 1024}{3 \times 4}}, 0\right)\)
+  </li>
+  <li>
+    \(\text{fp64 (8 bytes) otro nivel: } n = \text{REDONDEAR}\left(\sqrt{\frac{B16 \times 1024}{3 \times 8}}, 0\right)\)
+  </li>
+</ul>
+
+<p>✅ Todas las fórmulas son correctas en estructura.</p>
+
+<p>Lo único que puede cambiar el resultado:</p>
+<ul>
+  <li>El valor que tengas en <b>B14</b> y <b>B16</b> (tamaño de caché en KB).</li>
+  <li>El redondeo que hace Excel (<b>REDONDEAR</b>) → deja enteros.</li>
+</ul>
+
+<!-- Carga MathJax -->
+<script type="text/javascript" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+
 </div>
 
 
 
 
 <div class="seccion derecha">
-  
-<p>Supongamos que partimos del número <b>normalizado</b>:</p>
-
-<pre>
-1.1100100000₂ × 2⁻¹
-</pre>
-
-<p>En un número binario normalizado, siempre tenemos la forma:</p>
-
-<pre>
-1.xxxxxxxx₂
-</pre>
-
-<p>Ese <b>1 inicial</b> es fijo (implícito) y no se almacena, porque siempre está a la izquierda de la coma.<br>
-El exponente es el que indica <b>cuántas posiciones se mueve la coma</b>.</p>
-
-<h3>Aplicando el exponente</h3>
-
-<p>Como el exponente es <b>-1</b>, debemos mover la coma <b>una posición a la izquierda</b>:</p>
-
-<pre>
-1.1100100000₂ × 2⁻¹ = 0.11100100000₂
-</pre>
-
-<p>Convertido a decimal:</p>
-
-<pre>
-0.11100100000₂ = 0.890625₁₀
-</pre>
-
-<h3>Ejemplo comparativo</h3>
-
-<p>En cambio, si hubiéramos tenido:</p>
-
-<pre>
-1.0000011100₂ × 2⁵
-</pre>
-
-<p>Aquí el exponente es <b>+5</b>, lo que significa mover la coma 5 posiciones a la derecha:</p>
-
-<pre>
-1.0000011100₂ → 100000.11100₂ = 32.875₁₀
-</pre>
-
-<h3>🔹 La clave</h3>
-
-<ul>
-  <li>Con exponente negativo (ejemplo: 2⁻¹), <b>la coma se mueve a la izquierda</b>.</li>
-  <li>Con exponente positivo (ejemplo: 2⁵), <b>la coma se mueve a la derecha</b>.</li>
-</ul>
-
-<p>Visualmente puede parecer que el <b>1 inicial de la mantisa</b> se desplaza más posiciones, 
-pero lo que realmente se mueve es la <b>coma</b>, siguiendo el valor del exponente.</p>
-
-<strong>Pareciera que el numero se desplaza 6 posiciones, la idea es poner el numero completo despues de la coma</strong>
-<p>y tiene sentido, de -1 a 5 hay 6 espacioss</p>
-
-<img src="../../img/guia_197.png" alt="">
-
-<p>otro ejemplo:</p>
-
-<img src="../../img/guia_198.png" alt="">
-
-<p>Una equivocacion comun es pensar y diseociar, porque la mantisa en el formato no se escribe el 1 implicito</p>
-
-    <hr>
-
-    con el numero normalizado contamos el numero de ceros y \( 2^{\text{numero de ceros}} \) va a ser el primer numero
-    donde se observara perdida.
-
-    <pre>
-    1.1100100000₂ × 2⁻¹
-    </pre>
-
-    <p>Esto se puede ver en la imagen superior, con \(2^5\) ya hay perdida</p>
-
-    <p>El exponente limite va a ser el exponente de la mantiza normalizada mas el numero de ceros, en este caso
-    -1+5=4. 4 va a ser el ultimo donde no hay perdida.
-    </p>
-
-
-    <hr>
-    <p><strong>Cfloat16</strong></p>
-
-    <p>1.10100000 x \(2^{-4}\) -> 5 ceros.</p>
-     
-    <p><strong>formula:</strong>Exponente actual + ceros finales.</p>
-     
-    <p>0.00001101 x \( 2^1 \)</p>
-      
-    <p>-4+5=1, Queda positivo, corremos la coma a la izquierda.</p>
-     
-
-    <hr>
-
-    <p><strong>fp16</strong></p>
-
-    <p>1.1100100000 x \(2^{-1} \) -> 5 ceros</p>
-
-    <p><strong>formula:</strong>Exponente actual + ceros finales.</p>
-
-    <p>0.0000111001 x \( 2^4 \)</p>
-
-    <p>-1+5=4, Queda positivo, corremos la coma a la izquierda.</p>
-
-    <hr>
-
+    <strong>Esto se ejecutara en el cmd:</strong>
+ <img src="../../img/guia_229.png" alt="" width="600">
+ 
 </div>
 </div>
  </form>
@@ -3240,7 +3164,7 @@ pero lo que realmente se mueve es la <b>coma</b>, siguiendo el valor del exponen
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="sexto.php"
+        href="segundo.php"
         role="button"
         width="50px"
         height="50px"

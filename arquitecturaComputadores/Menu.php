@@ -55,11 +55,11 @@
 
         <br><br>
         <strong>presaberes:</strong>
-        <a class="btn" href=".\conceptos\Menu.php">Estadistica</a>
+        <a class="btn" href="..\Estadistica\Menu.php">Estadistica</a>
 
         <a class="btn" href=".\..\fisica\laboratorio\index.php">Error experimental</a>
 
-        <a class="btn" href=".\apuntes\Menu.php">apuntes/preguntas clase/Laboratorio</a>
+        <a class="btn" href=".\apuntes_Lab\Menu.php">apuntes/preguntas clase/Laboratorio</a>
     </div>
 </body>
 </html>
