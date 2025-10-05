@@ -50,6 +50,9 @@
                 <a class="btn" href=".\capitulo_2_3\index.php"> capitulo 2.3 </a>
                 <a class="btn" href=".\anotaciones\index.php"> anotaciones </a>
                 <a class="btn" href=".\capitulo_3_1\index.php"> capitulo 3.1 </a>
+
+                <br><br>
+                <a class="btn" href=".\ejercicios\index.php"> ejercicios</a>
             </div>
         </div>
     </div>

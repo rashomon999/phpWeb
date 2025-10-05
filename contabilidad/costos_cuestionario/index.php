@@ -426,7 +426,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_25 = isset($_POST['respuesta_25']) ? $_POST['respuesta_25'] : '';
-   if ($respuesta_25 === '60') { 
+   if ($respuesta_25 === 'Costos de manufactura') { 
        $verificar_25 = "correcto";
    } elseif ($respuesta_25 === '') {
        $verificar_25 = '';
@@ -436,7 +436,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_26 = isset($_POST['respuesta_26']) ? $_POST['respuesta_26'] : '';
-   if ($respuesta_26 === '75') {  
+   if ($respuesta_26 === 'Costo producto terminado') {  
        $verificar_26 = "correcto";
    } elseif ($respuesta_26 === '') {
        $verificar_26 = '';
@@ -446,7 +446,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_27 = isset($_POST['respuesta_27']) ? $_POST['respuesta_27'] : '';
-   if ($respuesta_27 === '90') {  
+   if ($respuesta_27 === 'Inventario inicial de productos terminados') {  
        $verificar_27 = "correcto";
    } elseif ($respuesta_27 === '') {
        $verificar_27 = '';
@@ -456,7 +456,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_28 = isset($_POST['respuesta_28']) ? $_POST['respuesta_28'] : '';
-   if ($respuesta_28 === '105') {  
+   if ($respuesta_28 === 'Costos directos de fabricacion') {  
        $verificar_28 = "correcto";
    } elseif ($respuesta_28 === '') {
        $verificar_28 = '';
@@ -1739,12 +1739,46 @@ function ocultarMensaje4() {
     <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="28">. 
     
     <br><br>
+
+
+    <div class="note">
+    <strong>Fórmula equivalente:</strong>
+    <div class="eq">Costos agregados a producción = 
+    <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="24">    
+     </div>
+    </div>
+ 
+
+    <br><br>
     <button type="submit">Enviar</button> 
     <?php echo $verificar_21 ?>
     <?php echo $verificar_22 ?>
     <?php echo $verificar_23 ?>
     <?php echo $verificar_24 ?>
+    <?php echo $verificar_25 ?>
 
+    <hr>
+
+
+    Disponibles = 
+    <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="24"> 
+      + 
+    <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="24"> 
+     
+    <br><br>
+
+    <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="26"> 
+    <p>Incluyen dos elementos:</p>
+    <ul>
+      <li><span class="term">Materiales directos (MD)</span></li>
+      <li><span class="term">Mano de obra directa (MOD)</span></li>
+    </ul>
+
+    <br><br>
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_26 ?>
+    <?php echo $verificar_27 ?>
+    <?php echo $verificar_28 ?>
 </div>
 
 

@@ -46,7 +46,7 @@
             <div class="column">
                 <a class="btn" href=".\Marsden\Menu.php">Marsden,Tromba</a>
                 <a class="btn" href=".\Boyd\Menu.php">Boyd</a>
-                <a class="btn" href=".\Boyd\Menu.php">Kolman</a>
+                <a class="btn" href=".\Kolman\Menu.php">Kolman</a>
                 <a class="btn" href=".\Poole\Menu.php">Poole</a>
             <br><br>
                 <a class="btn" href=".\sloughter\Menu.php">sloughter</a>

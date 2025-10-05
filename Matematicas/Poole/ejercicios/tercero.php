@@ -1301,8 +1301,8 @@ if ($respuesta_121 === '144') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../style_2_0.css">
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../style_2_0.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
@@ -1597,141 +1597,192 @@ function ocultarMensaje4() {
 
     
 <div class="seccion izquierda"> 
- 
-  
-  <h1>Flujo lógico de costos (resumen)</h1>
 
-  <h2>Materiales (Inventario de materias primas)</h2>
-  <p>Aquí están los materiales comprados y disponibles (<span class="inline-code">inventario inicial + compras netas − inventario final = materiales usados</span>).</p>
-  <p>Se separan en <strong>materiales directos</strong> y <strong>suministros/materiales indirectos</strong>.</p>
-
-  <h2>Planta de producción (Proceso productivo — WIP / Work In Process)</h2>
-  <p>Al entrar a producción se combinan:</p>
-  <ul>
-    <li><strong>Materiales directos usados</strong> (van directamente al producto en proceso).</li>
-    <li><strong>Mano de obra directa (MOD)</strong> (tiempo directo provisto por operarios que transforma el material).</li>
-    <li><strong>Costos Indirectos de Fabricación (CIF)</strong>: aquí van los rubros de planta — depreciación de maquinaria, mantenimiento correctivo, salarios de supervisión, materiales indirectos, servicios públicos, impuesto predial de planta, fletes internos, etc.</li>
-  </ul>
-  <p>Todos esos (<em>Materiales directos + MOD + CIF</em>) forman el <strong>Costo de Manufactura</strong> que se registra en cuentas de Producción en Proceso (WIP).</p>
-  <p>WIP se ajusta con WIP inicial y WIP final para calcular cuánto se convirtió en productos terminados en el período.</p>
-
-  <h2>Productos terminados (Inventario de productos terminados)</h2>
-  <p>Al terminarse la producción, el costo se mueve de WIP a Inventario de productos terminados.</p>
-  <p>Si hay inventario inicial de terminados, se suma; si hay inventario final, se resta cuando se calcula costo de lo vendido.</p>
-
-  <h2>Costo de los productos vendidos (COGS / CPV)</h2>
-  <p>Cuando se venden los productos, el costo se traslada desde Inventario de productos terminados a <strong>Costo de los productos vendidos</strong> en el estado de resultados.</p>
-
-  <h2>Esquema simple (línea de tiempo)</h2>
-  <div class="flow" aria-hidden="true">
-    <div class="chip">Compras</div>
-    <div class="chip">→ Inventario Materias Primas</div>
-    <div class="chip">→ (Materiales directos + MOD + CIF)</div>
-    <div class="chip">→ WIP</div>
-    <div class="chip">→ Productos Terminados</div>
-    <div class="chip">→ Ventas</div>
-    <div class="chip">→ Costo de los Productos Vendidos</div>
-  </div>
-
-  <h2>Qué contiene cada bloque (ejemplos)</h2>
-  <ul class="examples">
-    <li><strong>Materiales:</strong> madera, hilo, acero, salsas (si aplicara), etc.</li>
-    <li><strong>MOD:</strong> sueldos de operadores que ensamblan/tejen/cocinan (directamente atribuibles).</li>
-    <li><strong>CIF (planta de producción):</strong>
-      <ul>
-        <li>Depreciación de maquinaria</li>
-        <li>Mantenimiento correctivo y preventivo</li>
-        <li>Salarios de supervisores, personal de mantenimiento o control de calidad (indirectos)</li>
-        <li>Materiales indirectos y suministros</li>
-        <li>Servicios públicos que consume la planta (electricidad, agua)</li>
-        <li>Impuesto predial de la planta</li>
-        <li>Otros gastos de planta</li>
-      </ul>
-    </li>
-  </ul>
-
-  <h2>Fórmulas clave (recordatorio)</h2>
-  <div class="box">
-Materiales usados = Inventario inicial materias + Compras netas − Inventario final materias
-  </div>
-
-  <div class="box">
-Costo de manufactura = Materiales directos usados + Mano de obra directa + CIF
-  </div>
-
-<div class="box">
-  <strong>Costo de productos terminados</strong> = 
-  Costo de manufactura + Inventario en proceso inicial − Inventario en proceso final
-</div>
+      <div class="section">
+        <h2>Conceptos Clave</h2>
+        
+        <div class="definition">
+            <div class="definition-title">Forma Normal de una Recta</div>
+            <p>Dada una recta en \( \mathbb{R}^2 \), si existe un vector \( \mathbf{n} \) perpendicular a la recta (vector normal), entonces la ecuación de la recta puede escribirse como \( \mathbf{n} \cdot \mathbf{x} = 0 \) (si pasa por el origen) o \( \mathbf{n} \cdot (\mathbf{x} - \mathbf{p}) = 0 \) (si pasa por un punto \( \mathbf{p} \)).</p>
+        </div>
+        
+        <div class="definition">
+            <div class="definition-title">Representación Paramétrica</div>
+            <p>Toda recta en \( \mathbb{R}^2 \) o \( \mathbb{R}^3 \) puede describirse paramétricamente como \( \mathbf{x} = \mathbf{p} + t\mathbf{d} \), donde:</p>
+            <ul>
+                <li>\( \mathbf{p} \) es un punto en la recta</li>
+                <li>\( \mathbf{d} \) es un vector dirección</li>
+                <li>\( t \) es un parámetro real</li>
+            </ul>
+        </div>
+    </div>
 
 
-  <div class="box">
-Costo de los productos vendidos = Costo de los productos terminados + Inventario inicial de terminados − Inventario final de terminados
-  </div>
+     <div class="section">
+        <h2>El vector dirección \(\mathbf{d}\)</h2>
+        
+        <div class="math">
+            <p><strong>Recordemos la ecuación de la recta:</strong></p>
+            <p>\[2x + y = 0\]</p>
+            <p>\[y = -2x\]</p>
+        </div>
 
- <hr>
- "Inventario en proceso inicial" = "Inventario de productos en proceso (inicial)".
- <br><br>
- Inventario materiales directos y suministros (1 de enero) es lo mismo que: = : 
- Inventario inicial materias
+        <div class="step">
+            <h3>Paso 1: Encontrar dos puntos en la recta</h3>
+            <p>Cuando \(x = 0\): \(y = -2(0) = 0\) → <strong>Punto A = (0, 0)</strong></p>
+            <p>Cuando \(x = 1\): \(y = -2(1) = -2\) → <strong>Punto B = (1, -2)</strong></p>
+        </div>
+
+        <div class="step">
+            <h3>Paso 2: Calcular el vector entre estos puntos</h3>
+            <p>\[
+                \mathbf{d} = \text{Punto B} - \text{Punto A} = (1, -2) - (0, 0) = \begin{bmatrix} 1 \\ -2 \end{bmatrix}
+            \]</p>
+        </div>
+
+        <div class="highlight">
+            <h3>¿Por qué específicamente \(\begin{bmatrix} 1 \\ -2 \end{bmatrix}\)?</h3>
+            <p>El texto dice: <em>"su coordenada x cambia 1 unidad por segundo"</em> - esto nos da la componente x = 1 del vector dirección.</p>
+            <p>Como la pendiente es -2, cuando x cambia 1 unidad, y cambia -2 unidades. Por eso:</p>
+            <div class="math">
+                <p>\[
+                    \mathbf{d} = \begin{bmatrix} 1 \\ -2 \end{bmatrix}
+                \]</p>
+            </div>
+        </div>
+    </div>
+
+    <img src="../../../img/guia_244.png" alt="">
 
     <hr>
 
-    <div class="box">
-    <h3>Materiales usados</h3>
-    <p>Se dividen en:</p>
-    <ul>
-    <li><strong>Materiales directos usados</strong>: se incorporan físicamente al producto y son fácilmente identificables 
-      (ej: hilo en artesanías, tela en ropa, madera en muebles).
-    </li>
-    <li><strong>Materiales indirectos usados</strong>: se consumen en la planta pero no se identifican directamente en cada producto 
-      (ej: pegante, lubricantes, limpiadores, suministros pequeños).
-    </li>
-    </ul>
+    <h1>Formas de Ecuaciones de Rectas</h1>
+
+    <!-- Primera Definición: Forma Normal -->
+    <div class="definition">
+        <div class="definition-title">Forma Normal de la Ecuación de una Recta</div>
+        
+        <div class="math-formula">
+            <p>La <strong>forma normal</strong> de la ecuación de una recta \(\ell\) en \(\mathbb{R}^2\) es:</p>
+            <p>\[
+                \mathbf{n} \cdot (\mathbf{x} - \mathbf{p}) = 0 \quad \text{o} \quad \mathbf{n} \cdot \mathbf{x} = \mathbf{n} \cdot \mathbf{p}
+            \]</p>
+        </div>
+
+        <div class="explanation">
+            <p>Donde:</p>
+            <ul>
+                <li>\(\mathbf{p}\) es un punto específico sobre \(\ell\)</li>
+                <li>\(\mathbf{n} \neq \mathbf{0}\) es un <span class="vector">vector normal</span> a \(\ell\)</li>
+            </ul>
+        </div>
+
+        <div class="components">
+            <p>La <strong>forma general</strong> de la ecuación de \(\ell\) es \(ax + by = c\), donde:</p>
+            <p>\[
+                \mathbf{n} = \begin{bmatrix} a \\ b \end{bmatrix}
+            \]</p>
+            <p>es un vector normal para \(\ell\).</p>
+        </div>
+    </div>
+            
+    <hr>
+    <!-- Segunda Definición: Forma Vectorial -->
+    <div class="definition">
+        <div class="definition-title">Forma Vectorial de la Ecuación de una Recta</div>
+        
+        <div class="math-formula">
+            <p>La <strong>forma vectorial</strong> de la ecuación de una recta \(\ell\) en \(\mathbb{R}^2\) o \(\mathbb{R}^3\) es:</p>
+            <p>\[
+                \mathbf{x} = \mathbf{p} + t\mathbf{d}
+            \]</p>
+        </div>
+
+        <div class="explanation">
+            <p>Donde:</p>
+            <ul>
+                <li>\(\mathbf{p}\) es un punto específico sobre \(\ell\)</li>
+                <li>\(\mathbf{d} \neq \mathbf{0}\) es un <span class="vector">vector director</span> para \(\ell\)</li>
+                <li>\(t\) es un parámetro real</li>
+            </ul>
+        </div>
+
+        <div class="components">
+            <p>Las ecuaciones que corresponden a los componentes de la forma vectorial se llaman <strong>ecuaciones paramétricas</strong> de \(\ell\).</p>
+            <p class="note">Ejemplo: Para \(\mathbb{R}^3\), si \(\mathbf{p} = (p_1, p_2, p_3)\) y \(\mathbf{d} = (d_1, d_2, d_3)\), las ecuaciones paramétricas son:</p>
+            <p>\[
+                \begin{cases}
+                x = p_1 + td_1 \\
+                y = p_2 + td_2 \\
+                z = p_3 + td_3
+                \end{cases}
+            \]</p>
+        </div>
     </div>
 
-    <div class="box">
-    <h3>Ejemplo (Compañía Mack Ltda)</h3>
-    <ol>
-    <li><strong>Materiales directos y suministros usados</strong>: 1,834,850</li>
-    <li>– <strong>Suministros usados (materiales indirectos)</strong>: 600,000</li>
-    <li>= <strong>Materiales directos usados</strong>: 1,234,850</li>
-    </ol>
+
+    <hr>
+
+
+
+    <div class="example-container">
+        <div class="example-title">Ejemplo 1.28</div>
+        
+        <div class="problem-statement">
+            <p>Encuentre las ecuaciones vectorial y paramétrica de la recta en \(\mathbb{R}^3\) que pasa por el punto</p>
+            <div class="math-formula">
+                <p>\[ P = {(1, 2, -1)} \]</p>
+                <p>paralela al vector \( \mathbf{d} = {\begin{bmatrix} 5 \\ -1 \\ 3 \end{bmatrix}} \)</p>
+            </div>
+        </div>
+
+        <div class="solution-section">
+            <div class="section-title">Solución</div>
+            
+            <p>La ecuación vectorial \( \mathbf{x} = \mathbf{p} + t\mathbf{d} \) es:</p>
+            
+            <div class="math-formula">
+                \[
+                \begin{bmatrix}
+                x \\
+                y \\
+                z
+                \end{bmatrix}
+                =
+                \begin{bmatrix}
+                1 \\
+                2 \\
+                -1
+                \end{bmatrix}
+                +
+                t
+                \begin{bmatrix}
+                5 \\
+                -1 \\
+                3
+                \end{bmatrix}
+                \]
+            </div>
+        </div>
+
+        <div class="solution-section">
+            <div class="section-title">Forma Paramétrica</div>
+            
+            <div class="parametric-equations">
+                <div class="equation">\[ x = 1 + 5t \]</div>
+                <div class="equation">\[ y = 2 - t \]</div>
+                <div class="equation">\[ z = -1 + 3t \]</div>
+            </div>
+            
+            <p><strong>Donde:</strong></p>
+            <ul>
+                <li>\( t \) es un parámetro real que puede tomar cualquier valor</li>
+                <li>Cuando \( t = 0 \), obtenemos el punto \( P = (1, 2, -1) \)</li>
+                <li>Cada valor de \( t \) genera un punto diferente sobre la recta</li>
+            </ul>
+        </div>
     </div>
 
-    <div class="box">
-    <h3>Fórmula</h3>
-    <p><strong>Materiales usados</strong> = Materiales directos usados + Materiales indirectos (suministros) usados</p>
-    </div>
-
-
- 
-<div class="content">
-  <h4>Las dos formas son correctas, pero representan momentos distintos del flujo de costos:</h4>
-
-  <h3>Primera fórmula (Inventarios y compras):</h3>
-  <p>Sirve para calcular <strong>materiales usados en total</strong> a partir de inventarios y compras.</p>
-  <div class="box">
-    <strong>Materiales usados</strong>
-      = Inventario inicial materias + Compras netas − Inventario final materias
-  </div>
-
-  <h3>Segunda fórmula (Desglose):</h3>
-  <p>Sirve para dividir esos materiales usados en <strong>directos e indirectos (suministros)</strong>.</p>
-  <div class="box">
-    <h4>Fórmula</h4>
-    <p><strong>Materiales usados</strong> = Materiales directos usados + Materiales indirectos (suministros) usados</p>
-  </div>
-
-  <p>👉 <strong>O sea:</strong></p>
-  <ul>
-    <li>La primera te dice <em>cuántos materiales se consumieron en total</em> en el período.</li>
-    <li>La segunda te explica <em>cómo se reparten esos materiales</em> entre directos (van al producto) e indirectos (CIF).</li>
-  </ul>
-
-  <img src="../../img/guia_233.png" alt="" width="700">
-</div>
- 
 
 </div>
 
@@ -1739,186 +1790,198 @@ Costo de los productos vendidos = Costo de los productos terminados + Inventario
 
 
 <div class="seccion derecha">
-
-    <P>
-    En contabilidad de costos:
-    </P>
-    <P>
-    Costos Generales de Manufactura (CGM) = Costos Indirectos de Fabricación (CIF)
-    </P>
- 
-    <hr>
-    <h3>Caso de estudio de incendio:</h3> 
-
- 
-  <h6>Interpretación del fragmento</h6>
-
-  <p class="small">El fragmento dice:</p>
-  <blockquote>
-    "El costo de la prima totalizó 410 000 unidades monetarias hasta lo que va del año y los <strong>costos generales de manufactura</strong> fueron de <strong>70% del costo de conversión</strong>."
-  </blockquote>
-
-  <div class="section">
-    <h6>Interpretación</h6>
-    <ol>
-      <li>
-        <strong>Costo de la prima (410 000):</strong><br/>
-        Esto significa que <strong>Materiales directos + Mano de obra directa = 410 000</strong>.<br/>
-        ⇢ Ese es el <em>costo primo</em>.
-      </li>
-
-```
-  <li style="margin-top:10px;">
-    <strong>Costos generales de manufactura (CIF):</strong><br/>
-    Se indica que son <strong>70% del costo de conversión</strong>.<br/>
-    <p class="code">Recuerda: Costo de conversión = Mano de obra directa (MOD) + CIF</p>
-    Por tanto, la relación dada es:
-    <div class="code">CIF = 0.7 × (MOD + CIF)</div>
-    Con esa ecuación se puede despejar la relación entre <em>MOD</em> y <em>CIF</em>.
-  </li>
-</ol>
-```
-
-  </div>
-
-  <div class="note">
-    <strong>En resumen:</strong>
-    <ul>
-      <li>Tienes <strong>Costo primo = 410 000</strong> (es decir, Materiales directos + Mano de obra directa = 410 000).</li>
-      <li>Sabes que <strong>CIF = 70% del Costo de Conversión</strong> (donde Costo de Conversión = MOD + CIF).</li>
-      <li>Con esos dos datos es posible plantear un sistema de ecuaciones para determinar por separado cuánto corresponde a Materiales directos, Mano de obra directa y Costos indirectos de fabricación.</li>
-    </ul>
-  </div>
-    
-    <hr>
-
- 
-     <h2 id="titulo">Definición sencilla</h2>
-    <p>
-      Los <strong>costos de conversión</strong> son aquellos que se incurren para transformar la materia prima (materiales directos)
-      en un producto terminado.
-    </p>
-    <p>
-      Por eso, <em>no incluyen</em> materiales directos (eso ya es la base del producto), sino que se concentran en:
-    </p>
-    <ul>
-      <li>
-        <span class="term">La mano de obra directa (MOD):</span>
-        trabajadores que transforman físicamente el material (operarios, técnicos, ensambladores).
-      </li>
-      <li>
-        <span class="term">Costos indirectos de fabricación (CIF):</span>
-        <span class="examples">energía, depreciación de maquinaria, supervisión, mantenimiento, lubricantes, etc.</span>
-      </li>
-    </ul>
-    <p>Entonces:</p>
-
-    <p><strong>Costos de conversion=MOD+CIF</strong> </p>
-Los costos generales de manufactura (CIF) son el 70% del costo de conversión.
-
-
-  <h1>Relación algebraica</h1>
-
-  <p>Si llamamos:</p>
-  <ul>
-    <li><strong>MOD</strong> = Mano de obra directa</li>
-    <li><strong>CIF</strong> = Costos indirectos de fabricación</li>
-  </ul>
-
-  <div class="step">
-    <p class="eq">Tenemos la relación dada:</p>
-    <pre>CIF = 70% × (MOD + CIF)</pre>
-  </div>
-
-  <div class="step">
-    <p class="eq">A partir de la relación:</p>
-    <pre>
-CIF = 0.7 × (MOD + CIF)
-CIF = 0.7·MOD + 0.7·CIF
-CIF − 0.7·CIF = 0.7·MOD
-0.3·CIF = 0.7·MOD
-CIF = (0.7 / 0.3) × MOD
-CIF = (7 / 3) × MOD
-    </pre>
-  </div>
-
- 
-    <p><strong>Interpretación:</strong></p>
-    <p>El procedimiento que se escribió como <code>CIF = (70% / 30%) × MOD</code> es equivalente a lo anterior. El cociente <code>70% / 30%</code> = <code>7/3 ≈ 2.333...</code>, por lo que <strong>los costos indirectos de fabricación son ≈ 2.33 veces la mano de obra directa</strong> bajo la condición dada.</p>
- 
- 
-
-
    
-    <h1>Costos agregados a producción</h1>
- 
-<p>Cuando ves <strong>“Costos agregados a producción”</strong>, es otra forma de nombrar a los <strong>Costos de Manufactura del período</strong>.</p>
+  <div class="example-container">
+        <div class="example-title">Ejemplo 1.29</div>
+        
+        <div class="problem-statement">
+            <p>Con frecuencia, uno escucha la expresión "dos puntos determinan una recta". Encuentre una ecuación vectorial de la recta \(\ell\) en \(\mathbb{R}^3\) determinada por los puntos:</p>
+            <div class="math-formula">
+                <p>\[ P =  {(-1, 5, 0)} \quad \text{y} \quad Q =  {(2, 1, 1)} \]</p>
+            </div>
+        </div>
 
-<p>Incluye:</p>
-<ul>
-  <li><span class="term">Materiales directos usados</span></li>
-  <li><span class="term">Mano de obra directa</span></li>
-  <li><span class="term">Costos indirectos de fabricación (CIF)</span></li>
-</ul>
+        <div class="solution-section">
+            <div class="section-title">Solución</div>
+            
+            <div class="explanation">
+                <p>Es posible elegir cualquier punto sobre \(\ell\) para \(\mathbf{p}\), de modo que se usará \(P\) (\(Q\) también estaría bien).</p>
+            </div>
 
-<p>Es decir, <em>todo lo que se agregó en el mes/período</em> para transformar la materia prima en producto.</p>
+            <div class="vector-operation">
+                <p class="important">¿Qué se hizo? ¡NO es producto punto entre P y Q!</p>
+                <p>Se calculó el <strong>vector director</strong> como la diferencia entre los puntos Q y P:</p>
+                <div class="math-formula">
+                    \[
+                    \mathbf{d} = \overrightarrow{PQ} = Q - P = 
+                    \begin{bmatrix} 2 \\ 1 \\ 1 \end{bmatrix} - 
+                    \begin{bmatrix} -1 \\ 5 \\ 0 \end{bmatrix} = 
+                    \begin{bmatrix} 3 \\ -4 \\ 1 \end{bmatrix}
+                    \]
+                </div>
+            </div>
 
-<div class="note">
-  <strong>Fórmula equivalente:</strong>
-  <div class="eq">Costos agregados a producción = Costos de manufactura del período</div>
-</div>
- 
+            <p>Un vector director conveniente es \(\mathbf{d} = \overrightarrow{PQ} =  {\begin{bmatrix} 3 \\ -4 \\ 1 \end{bmatrix}}\) (o cualquier múltiplo escalar de éste). Por tanto, se obtiene:</p>
+            
+            <div class="math-formula">
+                \[
+                \mathbf{x} = \mathbf{p} + t\mathbf{d}
+                \]
+                \[
+                = \begin{bmatrix} -1 \\ 5 \\ 0 \end{bmatrix} + t \begin{bmatrix} 3 \\ -4 \\ 1 \end{bmatrix}
+                \]
+            </div>
+        </div>
 
-  
- 
-
+        <div class="explanation">
+            <p><strong>Explicación clave:</strong></p>
+            <ul>
+                <li>El <strong>vector director</strong> \(\mathbf{d}\) es la <strong>diferencia</strong> entre los puntos, NO el producto punto</li>
+                <li>\(\overrightarrow{PQ} = Q - P\) nos da la dirección de la recta</li>
+                <li>Podríamos usar también \(\overrightarrow{QP} = P - Q = \begin{bmatrix} -3 \\ 4 \\ -1 \end{bmatrix}\)</li>
+                <li>Cualquier múltiplo escalar de \(\mathbf{d}\) también es un vector director válido</li>
+            </ul>
+        </div>
+    </div>
+     
+    
 
 
 
 
     <hr>
-    <h1>Pasos para llegar del costo de manufactura al costo vendido</h1>
 
-    <h2>1. Primero: obtener el Costo de productos terminados (CPT)</h2>
-    <p>Viene de los costos de manufactura y del inventario en proceso:</p>
-    <div class="box">CPT = Costo de manufactura + Inventario en proceso inicial − Inventario en proceso final</div>
 
-    <h2>2. Luego: calcular el Costo de productos disponibles para la venta</h2>
-    <p>Se suman los productos terminados producidos en el periodo más el inventario inicial de productos terminados:</p>
-    <div class="box">Disponibles = CPT + Inventario inicial de productos terminados</div>
-
-    <h2>3. Finalmente: obtener el Costo de los productos vendidos (CPV)</h2>
-    <p>Se restan los productos terminados que permanecen sin vender al cierre del periodo:</p>
-    <div class="box">CPV = Disponibles − Inventario final de productos terminados</div>
-
-    <div class="note">
-    <strong>Fórmula condensada (combina pasos 2 y 3):</strong>
-    <div class="box">Costo de los productos vendidos = Costo de productos terminados + Inventario inicial de terminados − Inventario final de terminados</div>
+      <h1>Planos en \( \mathbb{R}^3 \)</h1>
+    
+    <div class="section">
+        <p>La siguiente pregunta que debe plantearse es: ¿cómo la forma general de la ecuación de una recta se generaliza a \( \mathbb{R}^3 \)? Razonablemente puede suponer que si \( ax + by = c \) es la forma general de la ecuación de una recta en \( \mathbb{R}^2 \), entonces \( ax + by + cz = d \) puede representar una recta en \( \mathbb{R}^3 \). En forma normal, esta ecuación sería \( \mathbf{n} \cdot \mathbf{x} = \mathbf{n} \cdot \mathbf{p} \), donde \( \mathbf{n} \) es un vector normal a la recta y \( \mathbf{p} \) corresponde a un punto sobre la recta.</p>
+        
+        <div class="math-formula">
+            \[ ax + by + cz = d \quad \Rightarrow \quad \mathbf{n} \cdot \mathbf{x} = \mathbf{n} \cdot \mathbf{p} \]
+        </div>
+        
+        <p>Para ver si esta es una hipótesis razonable, considere el caso especial de la ecuación \( ax + by + cz = 0 \). En forma normal, se convierte en \( \mathbf{n} \cdot \mathbf{x} = 0 \), donde \( \mathbf{n} = \begin{bmatrix} a \\ b \\ c \end{bmatrix} \).</p>
+        
+        <div class="highlight">
+            <p>Sin embargo, el conjunto de todos los vectores \( \mathbf{x} \) que satisfacen esta ecuación es el conjunto de todos los vectores ortogonales a \( \mathbf{n} \). Como se muestra en la figura 1.59, vectores en infinitas direcciones tienen esta propiedad, lo que determina una familia de planos paralelos.</p>
+        </div>
+        
+        <div class="important">
+            <p><strong>Conclusión importante:</strong> La suposición fue incorrecta: parece que \( ax + by + cz = d \) es la ecuación de un <strong>plano</strong>, no de una recta, en \( \mathbb{R}^3 \).</p>
+        </div>
+        
+        <p>Precise más este hallazgo. Todo plano \( \mathcal{P} \) en \( \mathbb{R}^3 \) puede determinarse al especificar un punto \( \mathbf{p} \) sobre \( \mathcal{P} \) y un vector distinto de cero \( \mathbf{n} \) normal a \( \mathcal{P} \) (figura 1.60). Por ende, si \( \mathbf{x} \) representa un punto arbitrario sobre \( \mathcal{P} \), se tiene que \( \mathbf{n} \cdot (\mathbf{x} - \mathbf{p}) = 0 \) o \( \mathbf{n} \cdot \mathbf{x} = \mathbf{n} \cdot \mathbf{p} \).</p>
+        
+        <div class="math-formula">
+            \[ \mathbf{n} \cdot (\mathbf{x} - \mathbf{p}) = 0 \quad \text{o} \quad \mathbf{n} \cdot \mathbf{x} = \mathbf{n} \cdot \mathbf{p} \]
+        </div>
+        
+        <p>Si \( \mathbf{n} = \begin{bmatrix} a \\ b \\ c \end{bmatrix} \) y \( \mathbf{x} = \begin{bmatrix} x \\ y \\ z \end{bmatrix} \), entonces, en términos de componentes, la ecuación se convierte en \( ax + by + cz = d \) (donde \( d = \mathbf{n} \cdot \mathbf{p} \)).</p>
+        
+        <div class="math-formula">
+            \[ \begin{bmatrix} a \\ b \\ c \end{bmatrix} \cdot \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} a \\ b \\ c \end{bmatrix} \cdot \begin{bmatrix} p_x \\ p_y \\ p_z \end{bmatrix} \quad \Rightarrow \quad ax + by + cz = d \]
+        </div>
     </div>
 
+    <div class="divider"></div>
+
+    <div class="section">
+        <div class="definition">
+            <div class="definition-title">Definición</div>
+            <p>La <strong>forma normal de la ecuación de un plano</strong> \( \mathcal{P} \) en \( \mathbb{R}^3 \) es</p>
+            <div class="math-formula">
+                \[ \mathbf{n} \cdot (\mathbf{x} - \mathbf{p}) = 0 \quad \text{o} \quad \mathbf{n} \cdot \mathbf{x} = \mathbf{n} \cdot \mathbf{p} \]
+            </div>
+            <p>donde \( \mathbf{p} \) es un punto específico sobre \( \mathcal{P} \) y \( \mathbf{n} \neq \mathbf{0} \) es un vector normal para \( \mathcal{P} \).</p>
+        </div>
+        
+        <div class="definition">
+         
+            <p>La <strong>forma general de la ecuación de</strong> \( \mathcal{P} \) es \( ax + by + cz = d \), donde \( \mathbf{n} = \begin{bmatrix} a \\ b \\ c \end{bmatrix} \) es un vector normal para \( \mathcal{P} \).</p>
+            <div class="math-formula">
+                \[ ax + by + cz = d \quad \text{con} \quad \mathbf{n} = \begin{bmatrix} a \\ b \\ c \end{bmatrix} \]
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Resumen Conceptual</h2>
+        
+        <div class="highlight">
+            <p><strong>Recta en \( \mathbb{R}^2 \):</strong></p>
+            <ul>
+                <li>Ecuación general: \( ax + by = c \)</li>
+                <li>Vector normal: \( \begin{bmatrix} a \\ b \end{bmatrix} \)</li>
+                <li>Un vector normal define una única recta</li>
+            </ul>
+        </div>
+        
+        <div class="important">
+            <p><strong>Plano en \( \mathbb{R}^3 \):</strong></p>
+            <ul>
+                <li>Ecuación general: \( ax + by + cz = d \)</li>
+                <li>Vector normal: \( \begin{bmatrix} a \\ b \\ c \end{bmatrix} \)</li>
+                <li>Un vector normal define infinitos planos paralelos</li>
+                <li>Se necesita un punto específico para determinar un plano único</li>
+            </ul>
+        </div>
+    </div>
+
+
+                    
     <hr>
 
-    <h2 id="titulo">Costos directos de fabricación</h2>
-    <p>Incluyen dos elementos:</p>
-    <ul>
-      <li><span class="term">Materiales directos (MD)</span></li>
-      <li><span class="term">Mano de obra directa (MOD)</span></li>
-    </ul>
+    <div class="section">
+        <h1>La clave: <span class="dimension">z</span> agrega la tercera dimensión</h1>
+        
+        <h2>En \( \mathbb{R}^2 \) (sin z):</h2>
+        <div class="math">
+            <p>\( ax + by = c \) → fijas una relación entre x e y</p>
+        </div>
+        <p><strong>Resultado:</strong> una <span class="dimension">línea</span> (1 dimensión)</p>
+        <div class="example">
+            <p><strong>Ejemplo:</strong> \( 2x + y = 3 \) → todos los puntos (x,y) que cumplen esto forman una recta</p>
+        </div>
 
+        <h2>En \( \mathbb{R}^3 \) (con z):</h2>
+        <div class="math">
+            <p>\( ax + by + cz = d \) → fijas una relación entre x, y <strong>y z</strong></p>
+        </div>
+        <p><strong>Resultado:</strong> un <span class="dimension">plano</span> (2 dimensiones)</p>
+    </div>
 
+    <div class="section">
+        <h2>¿Por qué z crea el plano?</h2>
+        <p>Piensa en esta ecuación:</p>
+        <div class="math">
+            <p>\( 2x + 3y + z = 6 \)</p>
+        </div>
+        
+        <p><strong>Si despejas z:</strong></p>
+        <div class="math">
+            <p>\( z = 6 - 2x - 3y \)</p>
+        </div>
 
+        <div class="example">
+            <p><strong>Esto significa:</strong></p>
+            <ul>
+                <li>Para <strong>CADA</strong> par (x,y) que elijas, hay exactamente <strong>UN</strong> z que satisface la ecuación</li>
+                <li>Puedes moverte libremente en x <strong>y</strong> en y → <span class="dimension">2 grados de libertad</span></li>
+                <li>El valor de z se <strong>adapta automáticamente</strong> para mantener la ecuación</li>
+            </ul>
+        </div>
 
-
-
-    <hr>
-    <hr>
-    <p>
-    En esas tablas de inventarios (tanto en promedio ponderado como en PEPS), la columna Cantidad en saldo significa:
-    </p>
-     
-    <p> Las unidades que te quedan en inventario después de cada movimiento (compra o venta).</p>
+        <h2>Ejemplo concreto:</h2>
+        <div class="math">
+            <p>Si \( x = 1 \) e \( y = 1 \) → \( z = 6 - 2(1) - 3(1) = 1 \) → punto <span class="point">(1,1,1)</span></p>
+            <p>Si \( x = 0 \) e \( y = 2 \) → \( z = 6 - 0 - 6 = 0 \) → punto <span class="point">(0,2,0)</span></p>
+            <p>Si \( x = 2 \) e \( y = 0 \) → \( z = 6 - 4 - 0 = 2 \) → punto <span class="point">(2,0,2)</span></p>
+        </div>
+        <p style="text-align: center; font-weight: bold; color: #e74c3c;">¡Todos estos puntos están en el mismo plano!</p>
+    </div>
  
-    
+
 </div>
 </div>
  </form>
@@ -1927,7 +1990,7 @@ CIF = (7 / 3) × MOD
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="tercero.php"
+        href="cuarto.php"
         role="button"
         width="50px"
         height="50px"

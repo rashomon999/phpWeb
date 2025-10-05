@@ -1301,8 +1301,8 @@ if ($respuesta_121 === '144') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../style_2_0.css">
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../style_2_0.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
@@ -1312,7 +1312,7 @@ if ($respuesta_121 === '144') {
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 370vh;
+    height: 395vh;
     }
 
 </style>
@@ -1592,146 +1592,240 @@ function ocultarMensaje4() {
 </head>
 <body>  
 
-<form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
+<form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
 <div class="form-container">
 
     
 <div class="seccion izquierda"> 
- 
-  
-  <h1>Flujo lógico de costos (resumen)</h1>
 
-  <h2>Materiales (Inventario de materias primas)</h2>
-  <p>Aquí están los materiales comprados y disponibles (<span class="inline-code">inventario inicial + compras netas − inventario final = materiales usados</span>).</p>
-  <p>Se separan en <strong>materiales directos</strong> y <strong>suministros/materiales indirectos</strong>.</p>
+     <h1>Distancia</h1>
 
-  <h2>Planta de producción (Proceso productivo — WIP / Work In Process)</h2>
-  <p>Al entrar a producción se combinan:</p>
-  <ul>
-    <li><strong>Materiales directos usados</strong> (van directamente al producto en proceso).</li>
-    <li><strong>Mano de obra directa (MOD)</strong> (tiempo directo provisto por operarios que transforma el material).</li>
-    <li><strong>Costos Indirectos de Fabricación (CIF)</strong>: aquí van los rubros de planta — depreciación de maquinaria, mantenimiento correctivo, salarios de supervisión, materiales indirectos, servicios públicos, impuesto predial de planta, fletes internos, etc.</li>
-  </ul>
-  <p>Todos esos (<em>Materiales directos + MOD + CIF</em>) forman el <strong>Costo de Manufactura</strong> que se registra en cuentas de Producción en Proceso (WIP).</p>
-  <p>WIP se ajusta con WIP inicial y WIP final para calcular cuánto se convirtió en productos terminados en el período.</p>
+  <p class="lead">
+    La distancia entre dos vectores es el análogo directo de la distancia entre dos puntos en la recta numérica real o entre dos puntos en el plano cartesiano. Sobre la recta numérica, la distancia entre los números <em>a</em> y <em>b</em> está dada por \( |a-b| \). (Tomar el valor absoluto garantiza que no es necesario conocer cuál de <em>a</em> o <em>b</em> es mayor.) Esta distancia también es igual a \( \sqrt{(a-b)^2} \), y su generalización bidimensional es la familiar fórmula para la distancia <em>d</em> entre los puntos \((a_1,a_2)\) y \((b_1,b_2)\), a saber,
+  </p>
 
-  <h2>Productos terminados (Inventario de productos terminados)</h2>
-  <p>Al terminarse la producción, el costo se mueve de WIP a Inventario de productos terminados.</p>
-  <p>Si hay inventario inicial de terminados, se suma; si hay inventario final, se resta cuando se calcula costo de lo vendido.</p>
-
-  <h2>Costo de los productos vendidos (COGS / CPV)</h2>
-  <p>Cuando se venden los productos, el costo se traslada desde Inventario de productos terminados a <strong>Costo de los productos vendidos</strong> en el estado de resultados.</p>
-
-  <h2>Esquema simple (línea de tiempo)</h2>
-  <div class="flow" aria-hidden="true">
-    <div class="chip">Compras</div>
-    <div class="chip">→ Inventario Materias Primas</div>
-    <div class="chip">→ (Materiales directos + MOD + CIF)</div>
-    <div class="chip">→ WIP</div>
-    <div class="chip">→ Productos Terminados</div>
-    <div class="chip">→ Ventas</div>
-    <div class="chip">→ Costo de los Productos Vendidos</div>
+  <div class="math-block">
+    \[
+      d \;=\; \sqrt{(a_1-b_1)^2 + (a_2-b_2)^2}.
+    \]
   </div>
 
-  <h2>Qué contiene cada bloque (ejemplos)</h2>
-  <ul class="examples">
-    <li><strong>Materiales:</strong> madera, hilo, acero, salsas (si aplicara), etc.</li>
-    <li><strong>MOD:</strong> sueldos de operadores que ensamblan/tejen/cocinan (directamente atribuibles).</li>
-    <li><strong>CIF (planta de producción):</strong>
-      <ul>
-        <li>Depreciación de maquinaria</li>
-        <li>Mantenimiento correctivo y preventivo</li>
-        <li>Salarios de supervisores, personal de mantenimiento o control de calidad (indirectos)</li>
-        <li>Materiales indirectos y suministros</li>
-        <li>Servicios públicos que consume la planta (electricidad, agua)</li>
-        <li>Impuesto predial de la planta</li>
-        <li>Otros gastos de planta</li>
-      </ul>
-    </li>
-  </ul>
+  <p>
+    En términos de vectores, si
+  </p>
 
-  <h2>Fórmulas clave (recordatorio)</h2>
-  <div class="box">
-Materiales usados = Inventario inicial materias + Compras netas − Inventario final materias
+  <div class="vector-line">
+    <div>
+      \[
+        \mathbf{a} \;=\; \begin{bmatrix} a_1 \\[4pt] a_2 \end{bmatrix}
+      \]
+    </div>
+    <div>
+      \[
+        \mathbf{b} \;=\; \begin{bmatrix} b_1 \\[4pt] b_2 \end{bmatrix}
+      \]
+    </div>
   </div>
 
-  <div class="box">
-Costo de manufactura = Materiales directos usados + Mano de obra directa + CIF
+  <p>
+    entonces <em>d</em> es justo la longitud de \(\mathbf{a}-\mathbf{b}\), como se muestra en la figura. Esta es la base para la siguiente definición.
+  </p>
+
+  <img src="../../../img/guia_238.png" alt="">
+  <div class="figure">
+    <div class="caption"><strong>Figura 1.31</strong></div>
+    <div class="math-block">
+      \[
+        d \;=\; \sqrt{(a_1-b_1)^2 + (a_2-b_2)^2} \;=\; \|\mathbf{a}-\mathbf{b}\|.
+      \]
+    </div>
   </div>
 
-<div class="box">
-  <strong>Costo de productos terminados</strong> = 
-  Costo de manufactura + Inventario en proceso inicial − Inventario en proceso final
-</div>
-
-
-  <div class="box">
-Costo de los productos vendidos = Costo de los productos terminados + Inventario inicial de terminados − Inventario final de terminados
+  <div class="math-block" style="border-left-color:#7fc7f0;">
+    <div class="def-title">Definición</div>
+    <div>
+      La <em>distancia</em> \(d(\mathbf{u},\mathbf{v})\) entre los vectores \(\mathbf{u}\) y \(\mathbf{v}\) en \(\mathbb{R}^n\) se define por
+      \[
+        d(\mathbf{u},\mathbf{v}) \;=\; \|\mathbf{u}-\mathbf{v}\|.
+      \]
+    </div>
   </div>
 
- <hr>
- "Inventario en proceso inicial" = "Inventario de productos en proceso (inicial)".
- <br><br>
- Inventario materiales directos y suministros (1 de enero) es lo mismo que: = : 
- Inventario inicial materias
+
+
+
+  <hr>
+
+        
+  <div class="exercise">
+    <div class="title">Ejemplo</div>
+
+    <p>
+      Encuentre la distancia entre
+      \[
+        \mathbf{u}=\begin{bmatrix}\sqrt{2}\\[4pt]1\\[4pt]-1\end{bmatrix}
+        \quad\text{y}\quad
+        \mathbf{v}=\begin{bmatrix}0\\[4pt]2\\[4pt]-2\end{bmatrix}.
+      \]
+    </p>
+
+    <div class="solution">
+      <strong>Solución.</strong> Primero calculemos
+      \[
+        \mathbf{u}-\mathbf{v}
+        \;=\;
+        \begin{bmatrix}\sqrt{2}\\[4pt]1\\[4pt]-1\end{bmatrix}
+        -
+        \begin{bmatrix}0\\[4pt]2\\[4pt]-2\end{bmatrix}
+        =
+        \begin{bmatrix}\sqrt{2}-0\\[4pt]1-2\\[4pt]-1-(-2)\end{bmatrix}
+        =
+        \begin{bmatrix}\sqrt{2}\\[4pt]-1\\[4pt]1\end{bmatrix}.
+      \]
+      Por tanto la distancia es la norma de \(\mathbf{u}-\mathbf{v}\):
+      \[
+        d(\mathbf{u},\mathbf{v})=\|\mathbf{u}-\mathbf{v}\|
+        =\sqrt{(\sqrt{2})^2+(-1)^2+1^2}
+        =\sqrt{2+1+1}
+        =\sqrt{4}=2.
+      \]
+    </div>
+  </div>
+
+        <hr>
+
+         <div class="math-block">
+    <div class="def-title">Definición</div>
+    <p>
+      Para vectores \(\mathbf{u}\) y \(\mathbf{v}\) distintos de cero en \(\mathbb{R}^n\),
+    </p>
+    <div>
+      \[
+        \cos\theta \;=\; \frac{\mathbf{u}\cdot\mathbf{v}}{\|\mathbf{u}\|\;\|\mathbf{v}\|}.
+      \]
+    </div>
+  </div>
+  <hr>
+
+
+  <div class="example">
+    <div class="title">Ejemplo 1.21</div>
+    <p>
+      Calcule el ángulo entre los vectores 
+      \[
+        \mathbf{u} = [2,\,1,\,-2] 
+        \quad \text{y} \quad 
+        \mathbf{v} = [1,\,1,\,1].
+      \]
+    </p>
+
+    <div class="solution">
+      <strong>Solución.</strong>  
+      Se tiene:
+      \[
+        \mathbf{u}\cdot \mathbf{v} = 2\cdot 1 + 1\cdot 1 + (-2)\cdot 1 = 1.
+      \]
+      Además,
+      \[
+        \|\mathbf{u}\| = \sqrt{2^2 + 1^2 + (-2)^2} = \sqrt{9} = 3,
+        \quad
+        \|\mathbf{v}\| = \sqrt{1^2 + 1^2 + 1^2} = \sqrt{3}.
+      \]
+      Por tanto,
+      \[
+        \cos\theta = \frac{1}{3\sqrt{3}}.
+      \]
+      Así,
+      \[
+        \theta = \cos^{-1}\!\left(\tfrac{1}{3\sqrt{3}}\right)
+        \;\approx\; 1.377 \text{ radianes} 
+        \;\approx\; 78.9^\circ.
+      \]
+    </div>
+  </div>
 
     <hr>
 
-    <div class="box">
-    <h3>Materiales usados</h3>
-    <p>Se dividen en:</p>
-    <ul>
-    <li><strong>Materiales directos usados</strong>: se incorporan físicamente al producto y son fácilmente identificables 
-      (ej: hilo en artesanías, tela en ropa, madera en muebles).
-    </li>
-    <li><strong>Materiales indirectos usados</strong>: se consumen en la planta pero no se identifican directamente en cada producto 
-      (ej: pegante, lubricantes, limpiadores, suministros pequeños).
-    </li>
-    </ul>
-    </div>
 
-    <div class="box">
-    <h3>Ejemplo (Compañía Mack Ltda)</h3>
-    <ol>
-    <li><strong>Materiales directos y suministros usados</strong>: 1,834,850</li>
-    <li>– <strong>Suministros usados (materiales indirectos)</strong>: 600,000</li>
-    <li>= <strong>Materiales directos usados</strong>: 1,234,850</li>
-    </ol>
-    </div>
+  <h2>Vectores ortogonales</h2>
+  <p>
+    El concepto de perpendicularidad es fundamental para la geometría. 
+    En \(\mathbb{R}^2\) o \(\mathbb{R}^3\), dos vectores \(\mathbf{u}\) y \(\mathbf{v}\) distintos de cero 
+    son perpendiculares si el ángulo \(\theta\) entre ellos es un ángulo recto; 
+    esto es, si \(\theta = \pi/2\) radianes o \(90^\circ\).  
+    Por tanto,
+  </p>
+  <p>
+    \[
+      \cos\theta = \frac{\mathbf{u}\cdot\mathbf{v}}{\|\mathbf{u}\|\|\mathbf{v}\|} = \cos 90^\circ = 0
+      \quad \Rightarrow \quad \mathbf{u}\cdot \mathbf{v} = 0.
+    \]
+  </p>
+  <p>
+    Esto motiva la siguiente definición:
+  </p>
 
-    <div class="box">
-    <h3>Fórmula</h3>
-    <p><strong>Materiales usados</strong> = Materiales directos usados + Materiales indirectos (suministros) usados</p>
-    </div>
-
-
- 
-<div class="content">
-  <h4>Las dos formas son correctas, pero representan momentos distintos del flujo de costos:</h4>
-
-  <h3>Primera fórmula (Inventarios y compras):</h3>
-  <p>Sirve para calcular <strong>materiales usados en total</strong> a partir de inventarios y compras.</p>
-  <div class="box">
-    <strong>Materiales usados</strong>
-      = Inventario inicial materias + Compras netas − Inventario final materias
+  <div class="math-block">
+    <div class="def-title">Definición</div>
+    Dos vectores \(\mathbf{u}\) y \(\mathbf{v}\) en \(\mathbb{R}^n\) son mutuamente 
+    <em>ortogonales</em> si 
+    \[
+      \mathbf{u}\cdot \mathbf{v} = 0.
+    \]
   </div>
 
-  <h3>Segunda fórmula (Desglose):</h3>
-  <p>Sirve para dividir esos materiales usados en <strong>directos e indirectos (suministros)</strong>.</p>
-  <div class="box">
-    <h4>Fórmula</h4>
-    <p><strong>Materiales usados</strong> = Materiales directos usados + Materiales indirectos (suministros) usados</p>
+  <p>
+    Dado que \(\mathbf{0}\cdot \mathbf{v} = 0\) para todo vector \(\mathbf{v}\) en \(\mathbb{R}^n\), 
+    el vector cero es ortogonal a todo vector.
+  </p>
+
+  <p>
+    En \(\mathbb{R}^3\), si 
+    \(\mathbf{u} = [1,1,-2]\) y \(\mathbf{v} = [3,1,2]\), 
+    entonces son ortogonales, pues:
+    \[
+      \mathbf{u}\cdot \mathbf{v} = 1\cdot 3 + 1\cdot 1 + (-2)\cdot 2 = 3 + 1 - 4 = 0.
+    \]
+  </p>
+
+  <h2>Teorema de Pitágoras</h2>
+  <div class="math-block">
+    <div class="def-title">Teorema de Pitágoras</div>
+    <p>
+      Para todos los vectores \(\mathbf{u}\) y \(\mathbf{v}\) en \(\mathbb{R}^n\),
+    </p>
+    <p>
+      \[
+        \|\mathbf{u} + \mathbf{v}\|^2 = \|\mathbf{u}\|^2 + \|\mathbf{v}\|^2
+      \]
+    </p>
+    <p>
+      si y sólo si \(\mathbf{u}\) y \(\mathbf{v}\) son ortogonales.
+    </p>
   </div>
 
-  <p>👉 <strong>O sea:</strong></p>
-  <ul>
-    <li>La primera te dice <em>cuántos materiales se consumieron en total</em> en el período.</li>
-    <li>La segunda te explica <em>cómo se reparten esos materiales</em> entre directos (van al producto) e indirectos (CIF).</li>
-  </ul>
+    <img src="../../../img/guia_239.png" alt="">
 
-  <img src="../../img/guia_233.png" alt="" width="700">
-</div>
- 
+        
+<h2>Proyecciones</h2>
+
+<p>
+Ahora se considerará el problema de encontrar la distancia desde un punto hasta una recta en el contexto de los vectores.
+Como verá, esta técnica conduce a un importante concepto: la <strong>proyección de un vector sobre otro vector</strong>.
+</p>
+
+
+
+<p>
+El problema de encontrar la distancia desde un punto \( B \) hasta una recta \( \ell \) (en \( \mathbb{R}^2 \) o \( \mathbb{R}^3 \)) 
+se reduce a encontrar la longitud del segmento de recta perpendicular \( PB \) o, de manera equivalente, 
+la longitud del vector \( \overrightarrow{PB} \).
+Si se elige un punto \( A \) sobre \( \ell \), entonces, en el triángulo recto \( \triangle APB \), los otros dos vectores son 
+el cateto \( \overrightarrow{AP} \) y la hipotenusa \( \overrightarrow{AB} \).
+\( \overrightarrow{AP} \) se llama <strong>proyección de</strong> \( \overrightarrow{AB} \) <strong>sobre la recta</strong> \( \ell \).
+</p>
+
+
 
 </div>
 
@@ -1739,186 +1833,206 @@ Costo de los productos vendidos = Costo de los productos terminados + Inventario
 
 
 <div class="seccion derecha">
-
-    <P>
-    En contabilidad de costos:
-    </P>
-    <P>
-    Costos Generales de Manufactura (CGM) = Costos Indirectos de Fabricación (CIF)
-    </P>
- 
-    <hr>
-    <h3>Caso de estudio de incendio:</h3> 
-
- 
-  <h6>Interpretación del fragmento</h6>
-
-  <p class="small">El fragmento dice:</p>
-  <blockquote>
-    "El costo de la prima totalizó 410 000 unidades monetarias hasta lo que va del año y los <strong>costos generales de manufactura</strong> fueron de <strong>70% del costo de conversión</strong>."
-  </blockquote>
-
-  <div class="section">
-    <h6>Interpretación</h6>
-    <ol>
-      <li>
-        <strong>Costo de la prima (410 000):</strong><br/>
-        Esto significa que <strong>Materiales directos + Mano de obra directa = 410 000</strong>.<br/>
-        ⇢ Ese es el <em>costo primo</em>.
-      </li>
-
-```
-  <li style="margin-top:10px;">
-    <strong>Costos generales de manufactura (CIF):</strong><br/>
-    Se indica que son <strong>70% del costo de conversión</strong>.<br/>
-    <p class="code">Recuerda: Costo de conversión = Mano de obra directa (MOD) + CIF</p>
-    Por tanto, la relación dada es:
-    <div class="code">CIF = 0.7 × (MOD + CIF)</div>
-    Con esa ecuación se puede despejar la relación entre <em>MOD</em> y <em>CIF</em>.
-  </li>
-</ol>
-```
-
-  </div>
-
-  <div class="note">
-    <strong>En resumen:</strong>
-    <ul>
-      <li>Tienes <strong>Costo primo = 410 000</strong> (es decir, Materiales directos + Mano de obra directa = 410 000).</li>
-      <li>Sabes que <strong>CIF = 70% del Costo de Conversión</strong> (donde Costo de Conversión = MOD + CIF).</li>
-      <li>Con esos dos datos es posible plantear un sistema de ecuaciones para determinar por separado cuánto corresponde a Materiales directos, Mano de obra directa y Costos indirectos de fabricación.</li>
-    </ul>
-  </div>
-    
-    <hr>
-
- 
-     <h2 id="titulo">Definición sencilla</h2>
-    <p>
-      Los <strong>costos de conversión</strong> son aquellos que se incurren para transformar la materia prima (materiales directos)
-      en un producto terminado.
-    </p>
-    <p>
-      Por eso, <em>no incluyen</em> materiales directos (eso ya es la base del producto), sino que se concentran en:
-    </p>
-    <ul>
-      <li>
-        <span class="term">La mano de obra directa (MOD):</span>
-        trabajadores que transforman físicamente el material (operarios, técnicos, ensambladores).
-      </li>
-      <li>
-        <span class="term">Costos indirectos de fabricación (CIF):</span>
-        <span class="examples">energía, depreciación de maquinaria, supervisión, mantenimiento, lubricantes, etc.</span>
-      </li>
-    </ul>
-    <p>Entonces:</p>
-
-    <p><strong>Costos de conversion=MOD+CIF</strong> </p>
-Los costos generales de manufactura (CIF) son el 70% del costo de conversión.
-
-
-  <h1>Relación algebraica</h1>
-
-  <p>Si llamamos:</p>
-  <ul>
-    <li><strong>MOD</strong> = Mano de obra directa</li>
-    <li><strong>CIF</strong> = Costos indirectos de fabricación</li>
-  </ul>
-
-  <div class="step">
-    <p class="eq">Tenemos la relación dada:</p>
-    <pre>CIF = 70% × (MOD + CIF)</pre>
-  </div>
-
-  <div class="step">
-    <p class="eq">A partir de la relación:</p>
-    <pre>
-CIF = 0.7 × (MOD + CIF)
-CIF = 0.7·MOD + 0.7·CIF
-CIF − 0.7·CIF = 0.7·MOD
-0.3·CIF = 0.7·MOD
-CIF = (0.7 / 0.3) × MOD
-CIF = (7 / 3) × MOD
-    </pre>
-  </div>
-
- 
-    <p><strong>Interpretación:</strong></p>
-    <p>El procedimiento que se escribió como <code>CIF = (70% / 30%) × MOD</code> es equivalente a lo anterior. El cociente <code>70% / 30%</code> = <code>7/3 ≈ 2.333...</code>, por lo que <strong>los costos indirectos de fabricación son ≈ 2.33 veces la mano de obra directa</strong> bajo la condición dada.</p>
- 
- 
-
-
    
-    <h1>Costos agregados a producción</h1>
+
  
-<p>Cuando ves <strong>“Costos agregados a producción”</strong>, es otra forma de nombrar a los <strong>Costos de Manufactura del período</strong>.</p>
 
-<p>Incluye:</p>
-<ul>
-  <li><span class="term">Materiales directos usados</span></li>
-  <li><span class="term">Mano de obra directa</span></li>
-  <li><span class="term">Costos indirectos de fabricación (CIF)</span></li>
-</ul>
+ 
+<hr>
 
-<p>Es decir, <em>todo lo que se agregó en el mes/período</em> para transformar la materia prima en producto.</p>
+<p>
+Considere dos vectores \( \mathbf{u} \) y \( \mathbf{v} \) distintos de cero. 
+Sea \( \mathbf{p} \) el vector que se obtiene al trazar una perpendicular desde la punta de \( \mathbf{v} \) sobre \( \mathbf{u} \), 
+y sea \( \theta \) el ángulo entre \( \mathbf{u} \) y \( \mathbf{v} \).
+</p>
 
-<div class="note">
-  <strong>Fórmula equivalente:</strong>
-  <div class="eq">Costos agregados a producción = Costos de manufactura del período</div>
+<p>
+Entonces, claramente 
+\[
+\mathbf{p} = \|\mathbf{p}\| \, \hat{\mathbf{u}},
+\]
+donde 
+\[
+\hat{\mathbf{u}} = \left(\frac{1}{\|\mathbf{u}\|}\right)\mathbf{u}
+\]
+es el vector unitario en la dirección de \( \mathbf{u} \).
+Por trigonometría, \( \|\mathbf{p}\| = \|\mathbf{v}\| \cos \theta \), 
+y como 
+\[
+\cos \theta = \frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\| \|\mathbf{v}\|},
+\]
+tenemos:
+</p>
+
+<p>
+\[
+\mathbf{p} = \|\mathbf{v}\| 
+\left( 
+\frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\| \|\mathbf{v}\|}
+\right)
+\left( 
+\frac{1}{\|\mathbf{u}\|}
+\right)
+\mathbf{u}
+\]
+</p>
+
+<p>
+Simplificando:
+\[
+\mathbf{p} 
+= 
+\left( 
+\frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\|^2}
+\right)\mathbf{u}
+=
+\left(
+\frac{\mathbf{u} \cdot \mathbf{v}}{\mathbf{u} \cdot \mathbf{u}}
+\right)\mathbf{u}
+\]
+</p>
+
+<p>
+Ésta es la fórmula que se quería, y es la base de la siguiente definición para vectores en \( \mathbb{R}^n \).
+</p>
+
+<div class="definicion">
+  <strong>Definición:</strong>  
+  Si \( \mathbf{u} \) y \( \mathbf{v} \) son vectores en \( \mathbb{R}^n \) y \( \mathbf{u} \neq \mathbf{0} \),  
+  entonces la <strong>proyección de</strong> \( \mathbf{v} \) <strong>sobre</strong> \( \mathbf{u} \)  
+  es el vector \( \mathrm{proj}_{\mathbf{u}}(\mathbf{v}) \) definido por:
+  <br><br>
+  \[
+  \mathrm{proj}_{\mathbf{u}}(\mathbf{v}) 
+  = 
+  \left(
+  \frac{\mathbf{u} \cdot \mathbf{v}}{\mathbf{u} \cdot \mathbf{u}}
+  \right)\mathbf{u}
+  \]
 </div>
- 
-
-  
- 
 
 
 
+    <img src="../../../img/guia_240.png" alt="">
 
-
-    <hr>
-    <h1>Pasos para llegar del costo de manufactura al costo vendido</h1>
-
-    <h2>1. Primero: obtener el Costo de productos terminados (CPT)</h2>
-    <p>Viene de los costos de manufactura y del inventario en proceso:</p>
-    <div class="box">CPT = Costo de manufactura + Inventario en proceso inicial − Inventario en proceso final</div>
-
-    <h2>2. Luego: calcular el Costo de productos disponibles para la venta</h2>
-    <p>Se suman los productos terminados producidos en el periodo más el inventario inicial de productos terminados:</p>
-    <div class="box">Disponibles = CPT + Inventario inicial de productos terminados</div>
-
-    <h2>3. Finalmente: obtener el Costo de los productos vendidos (CPV)</h2>
-    <p>Se restan los productos terminados que permanecen sin vender al cierre del periodo:</p>
-    <div class="box">CPV = Disponibles − Inventario final de productos terminados</div>
-
-    <div class="note">
-    <strong>Fórmula condensada (combina pasos 2 y 3):</strong>
-    <div class="box">Costo de los productos vendidos = Costo de productos terminados + Inventario inicial de terminados − Inventario final de terminados</div>
+    <div class="comment-section">
+        <div class="comment">
+            <p>El término <em>proyección</em> proviene de la idea de proyectar una imagen sobre un muro (con un proyector de diapositivas, por ejemplo). Imagine un haz de luz con rayos mutuamente paralelos y perpendiculares a <strong>u</strong> que brillan sobre <strong>v</strong>. La proyección de <strong>v</strong> sobre <strong>u</strong> es justo la sombra formada, o proyectada, por <strong>v</strong> sobre <strong>u</strong>.</p>
+        </div>
+        
+        <div class="comment">
+            <p>Puede ser útil considerar a \(\text{proy}_{\mathbf{u}}(\mathbf{v})\) como una función con variable <strong>v</strong>. Entonces la variable <strong>v</strong> ocurre sólo una vez en el lado derecho de la definición. Además, es útil tener en mente la figura 1.38, que recuerda que \(\text{proy}_{\mathbf{u}}(\mathbf{v})\) es un múltiplo escalar del vector <strong>u</strong> (no de <strong>v</strong>).</p>
+        </div>
+        
+        <div class="comment">
+            <p>Aunque en la deducción de la definición de \(\text{proy}_{\mathbf{u}}(\mathbf{v})\) se requirió que tanto <strong>v</strong> como <strong>u</strong> fuesen distintos de cero (¿por qué?), es claro a partir de la geometría que la proyección del vector cero sobre <strong>u</strong> es <strong>0</strong>. La definición está en concordancia con esto, pues:</p>
+            
+            <div class="math-formula">
+                \(\frac{\mathbf{u} \cdot \mathbf{0}}{\mathbf{u} \cdot \mathbf{u}} \mathbf{u} = 0\mathbf{u} = \mathbf{0}\)
+            </div>
+        </div>
+        
+        <div class="comment">
+            <p>Si el ángulo entre <strong>u</strong> y <strong>v</strong> es obtuso, como en la figura 1.38, entonces \(\text{proy}_{\mathbf{u}}(\mathbf{v})\) estará en la dirección opuesta de <strong>u</strong>; esto es, \(\text{proy}_{\mathbf{u}}(\mathbf{v})\) será un múltiplo escalar negativo de <strong>u</strong>.</p>
+        </div>
+        
+        <div class="comment">
+            <p>Si <strong>u</strong> es un vector unitario, entonces \(\text{proy}_{\mathbf{u}}(\mathbf{v}) = (\mathbf{u} \cdot \mathbf{v})\mathbf{u}\).</p>
+            <p class="note">(¿Por qué?)</p>
+            
+            <div class="highlight">
+                <p><strong>Explicación:</strong> Cuando <strong>u</strong> es un vector unitario, su magnitud es 1 (\(\|\mathbf{u}\| = 1\)). La fórmula general para la proyección es:</p>
+                <div class="math-formula">
+                    \(\text{proy}_{\mathbf{u}}(\mathbf{v}) = \frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\|^2} \mathbf{u}\)
+                </div>
+                <p>Como \(\|\mathbf{u}\| = 1\), entonces \(\|\mathbf{u}\|^2 = 1\), y la fórmula se simplifica a:</p>
+                <div class="math-formula">
+                    \(\text{proy}_{\mathbf{u}}(\mathbf{v}) = (\mathbf{u} \cdot \mathbf{v})\mathbf{u}\)
+                </div>
+            </div>
+        </div>
     </div>
 
-    <hr>
-
-    <h2 id="titulo">Costos directos de fabricación</h2>
-    <p>Incluyen dos elementos:</p>
-    <ul>
-      <li><span class="term">Materiales directos (MD)</span></li>
-      <li><span class="term">Mano de obra directa (MOD)</span></li>
-    </ul>
-
-
-
-
-
+    <img src="../../../img/guia_241.png" alt="">
 
     <hr>
-    <hr>
-    <p>
-    En esas tablas de inventarios (tanto en promedio ponderado como en PEPS), la columna Cantidad en saldo significa:
-    </p>
-     
-    <p> Las unidades que te quedan en inventario después de cada movimiento (compra o venta).</p>
- 
+
+     <h1>1.3 Rectas y planos</h1>
     
+    <div class="section">
+        <p>Todos están familiarizados con la ecuación de una recta en el plano cartesiano. Ahora se considerarán rectas en \( \mathbb{R}^2 \) desde un punto de vista vectorial. La comprensión que se obtenga a partir de este planteamiento permitirá generalizar a rectas en \( \mathbb{R}^3 \) y luego a planos en \( \mathbb{R}^3 \). Mucha del álgebra lineal que se considerará en capítulos posteriores tiene sus orígenes en la geometría simple de rectas y planos; la habilidad para visualizarlos y pensar geométricamente en torno a un problema le servirá bastante.</p>
+    </div>
+
+    <div class="section">
+        <h2>Rectas en \( \mathbb{R}^2 \) y \( \mathbb{R}^3 \)</h2>
+        
+        <p>En el plano xy, la forma general de la ecuación de una recta es \( ax + by = c \), si \( b \neq 0 \), entonces la ecuación puede reescribirse como \( y = -(a/b)x + c/b \), que tiene la forma \( y = mx + k \). [Ésta es la forma pendiente ordenada al origen; \( m \) es la pendiente de la recta y el punto con coordenadas \((0, k)\) es su ordenada al origen.] Para incluir los vectores en este estudio, considere un ejemplo.</p>
+    </div>
+
+
+
+
+    <button onmousedown="mostrarImagen()" onmouseup="ocultarImagen()">Explicacion pendiente</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada" src="../../../img/guia_242.png" style="display: none; max-width: 100%" width="560">
+
+    <script>
+        function mostrarImagen() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada');
+
+        // Mostrar la imagen
+        imagenMostrada.style.display = 'block';
+        }
+
+        function ocultarImagen() {
+        var imagenMostrada = document.getElementById('imagenMostrada');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada.style.display = 'none';
+        }
+    </script>
+
+
+
+
+    <div class="example">
+        <div class="example-title">Ejemplo 1.26</div>
+        
+        <p>En la figura 1.53 se muestra la recta \(\ell\), con ecuación \( 2x + y = 0 \). Es una recta con pendiente \(-2\) que pasa por el origen. El lado izquierdo de la ecuación está en la forma de producto punto; de hecho, si \( \mathbf{n} = \begin{bmatrix} 2 \\ 1 \end{bmatrix} \) y \( \mathbf{x} = \begin{bmatrix} x \\ y \end{bmatrix} \), entonces la ecuación se convierte en \( \mathbf{n} \cdot \mathbf{x} = 0 \).</p>
+        
+        <div class="definition">
+            <div class="definition-title">Vector Normal</div>
+            <p>El vector \( \mathbf{n} \) es perpendicular a la recta; esto es, es <em>ortogonal</em> a cualquier vector \( \mathbf{x} \) que sea paralelo a la recta (figura 1.54) y se le conoce como <span class="vector">vector normal</span> a la recta. La ecuación \( \mathbf{n} \cdot \mathbf{x} = 0 \) es la <em>forma normal</em> de la ecuación de \(\ell\).</p>
+        </div>
+        
+        <div class="math-formula">
+            \( \mathbf{n} \cdot \mathbf{x} = 0 \quad \Rightarrow \quad \begin{bmatrix} 2 \\ 1 \end{bmatrix} \cdot \begin{bmatrix} x \\ y \end{bmatrix} = 0 \quad \Rightarrow \quad 2x + y = 0 \)
+        </div>
+        
+        <img src="../../../img/guia_243.png" alt="">
+        <p>Otra forma de pensar esta recta es imaginar una partícula que se mueve a lo largo de la recta. Suponga que la partícula inicialmente está en el origen en el tiempo \( t = 0 \) y se mueve a lo largo de la recta en tal forma que su coordenada \( x \) cambia 1 unidad por segundo. Entonces:</p>
+        
+        <ul>
+            <li>En \( t = 1 \) la partícula está en \((1, -2)\)</li>
+            <li>En \( t = 1.5 \) está en \((1.5, -3)\)</li>
+            <li>En \( t = -2 \) está (o estuvo) en \((-2, 4)\)</li>
+        </ul>
+        
+        <p>Este movimiento se ilustra en la figura 1.55.</p>
+        
+        <div class="highlight">
+            <p><strong>Interpretación vectorial:</strong> Podemos describir esta recta paramétricamente usando vectores. Si consideramos la dirección de movimiento como el vector \( \mathbf{d} = \begin{bmatrix} 1 \\ -2 \end{bmatrix} \), entonces cualquier punto \( \mathbf{x} \) en la recta puede escribirse como:</p>
+            <div class="math-formula">
+                \( \mathbf{x} = t\mathbf{d} = t\begin{bmatrix} 1 \\ -2 \end{bmatrix} \)
+            </div>
+            <p>donde \( t \) es un parámetro real que representa el tiempo.</p>
+        </div>
+    </div>
+
+   
+
+
 </div>
 </div>
  </form>

@@ -1301,8 +1301,8 @@ if ($respuesta_121 === '144') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../style_2_0.css">
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../style_2_0.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
@@ -1312,7 +1312,7 @@ if ($respuesta_121 === '144') {
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 370vh;
+    height: 350vh;
     }
 
 </style>
@@ -1597,328 +1597,286 @@ function ocultarMensaje4() {
 
     
 <div class="seccion izquierda"> 
+
+    <p>
+    Un vector es un
+    segmento de recta dirigido que corresponde a un desplazamiento desde un punto A hasta
+    otro punto B;
+    </p>
+    
+    <p>Dos vectores se definen como iguales si tienen la misma longitud y la misma dirección.</p>
+   
+    <hr>
  
-  
-  <h1>Flujo lógico de costos (resumen)</h1>
+    <h1>Vectores en \(\mathbb{R}^n\)</h1>
 
-  <h2>Materiales (Inventario de materias primas)</h2>
-  <p>Aquí están los materiales comprados y disponibles (<span class="inline-code">inventario inicial + compras netas − inventario final = materiales usados</span>).</p>
-  <p>Se separan en <strong>materiales directos</strong> y <strong>suministros/materiales indirectos</strong>.</p>
+ 
+    <p>
+    En general, \(\mathbb{R}^n\) se define como el conjunto de todas las <em>n</em>-adas ordenadas de números reales escritas como vectores renglón o columna.
+    Por ende, un vector \(v\) en \(\mathbb{R}^n\) es de la forma
+    </p>
 
-  <h2>Planta de producción (Proceso productivo — WIP / Work In Process)</h2>
-  <p>Al entrar a producción se combinan:</p>
-  <ul>
-    <li><strong>Materiales directos usados</strong> (van directamente al producto en proceso).</li>
-    <li><strong>Mano de obra directa (MOD)</strong> (tiempo directo provisto por operarios que transforma el material).</li>
-    <li><strong>Costos Indirectos de Fabricación (CIF)</strong>: aquí van los rubros de planta — depreciación de maquinaria, mantenimiento correctivo, salarios de supervisión, materiales indirectos, servicios públicos, impuesto predial de planta, fletes internos, etc.</li>
-  </ul>
-  <p>Todos esos (<em>Materiales directos + MOD + CIF</em>) forman el <strong>Costo de Manufactura</strong> que se registra en cuentas de Producción en Proceso (WIP).</p>
-  <p>WIP se ajusta con WIP inicial y WIP final para calcular cuánto se convirtió en productos terminados en el período.</p>
+    <div class="ejemplo">
+    \[
+    v = [\,v_1,\,v_2,\,\ldots,\,v_n\,]
+    \]
+    o bien como vector columna:
+    <span class="inline-matrix">
+    \[
+      v = \begin{bmatrix}
+        v_1\\[4pt]
+        v_2\\[4pt]
+        \vdots\\[4pt]
+        v_n
+      \end{bmatrix}
+    \]
+    </span>
+    </div>
 
-  <h2>Productos terminados (Inventario de productos terminados)</h2>
-  <p>Al terminarse la producción, el costo se mueve de WIP a Inventario de productos terminados.</p>
-  <p>Si hay inventario inicial de terminados, se suma; si hay inventario final, se resta cuando se calcula costo de lo vendido.</p>
 
-  <h2>Costo de los productos vendidos (COGS / CPV)</h2>
-  <p>Cuando se venden los productos, el costo se traslada desde Inventario de productos terminados a <strong>Costo de los productos vendidos</strong> en el estado de resultados.</p>
+    <hr>
+    <h1>Combinaciones lineales y coordenadas</h1>
 
-  <h2>Esquema simple (línea de tiempo)</h2>
-  <div class="flow" aria-hidden="true">
-    <div class="chip">Compras</div>
-    <div class="chip">→ Inventario Materias Primas</div>
-    <div class="chip">→ (Materiales directos + MOD + CIF)</div>
-    <div class="chip">→ WIP</div>
-    <div class="chip">→ Productos Terminados</div>
-    <div class="chip">→ Ventas</div>
-    <div class="chip">→ Costo de los Productos Vendidos</div>
-  </div>
 
-  <h2>Qué contiene cada bloque (ejemplos)</h2>
-  <ul class="examples">
-    <li><strong>Materiales:</strong> madera, hilo, acero, salsas (si aplicara), etc.</li>
-    <li><strong>MOD:</strong> sueldos de operadores que ensamblan/tejen/cocinan (directamente atribuibles).</li>
-    <li><strong>CIF (planta de producción):</strong>
-      <ul>
-        <li>Depreciación de maquinaria</li>
-        <li>Mantenimiento correctivo y preventivo</li>
-        <li>Salarios de supervisores, personal de mantenimiento o control de calidad (indirectos)</li>
-        <li>Materiales indirectos y suministros</li>
-        <li>Servicios públicos que consume la planta (electricidad, agua)</li>
-        <li>Impuesto predial de la planta</li>
-        <li>Otros gastos de planta</li>
-      </ul>
-    </li>
-  </ul>
+<p>
+  Se dice que un vector que sea una suma de múltiplos escalares de otros vectores es una 
+  <em>combinación lineal</em> de dichos vectores. A continuación se presenta la definición formal.
+</p>
 
-  <h2>Fórmulas clave (recordatorio)</h2>
-  <div class="box">
-Materiales usados = Inventario inicial materias + Compras netas − Inventario final materias
-  </div>
+<div class="definicion">
+  <p><strong>Definición</strong> &nbsp; Un vector \(v\) es una <em>combinación lineal</em> de vectores 
+  \(v_1, v_2, \ldots, v_k\) si existen escalares \(c_1, c_2, \ldots, c_k\) tales que</p>
 
-  <div class="box">
-Costo de manufactura = Materiales directos usados + Mano de obra directa + CIF
-  </div>
+  \[
+    v = c_1 v_1 + c_2 v_2 + \cdots + c_k v_k
+  \]
 
-<div class="box">
-  <strong>Costo de productos terminados</strong> = 
-  Costo de manufactura + Inventario en proceso inicial − Inventario en proceso final
+  <p>
+    Los escalares \(c_1, c_2, \ldots, c_k\) se llaman <em>coeficientes</em> de la combinación lineal.
+  </p>
 </div>
 
+<div class="ejemplo">
+  <p><strong>Ejemplo 1.6</strong></p>
+  <p>
+    El vector
+    \[
+      \begin{bmatrix} 2 \\ -2 \\ -1 \end{bmatrix}
+    \]
+    es una combinación lineal de
+    \[
+      \begin{bmatrix} 1 \\ 0 \\ -1 \end{bmatrix},\;
+      \begin{bmatrix} 2 \\ -3 \\ 1 \end{bmatrix},\;
+      \begin{bmatrix} 5 \\ -4 \\ 0 \end{bmatrix}
+    \]
+    pues
+  </p>
 
-  <div class="box">
-Costo de los productos vendidos = Costo de los productos terminados + Inventario inicial de terminados − Inventario final de terminados
-  </div>
+  \[
+    3 \begin{bmatrix} 1 \\ 0 \\ -1 \end{bmatrix}
+    + 2 \begin{bmatrix} 2 \\ -3 \\ 1 \end{bmatrix}
+    - 1 \begin{bmatrix} 5 \\ -4 \\ 0 \end{bmatrix}
+    = \begin{bmatrix} 2 \\ -2 \\ -1 \end{bmatrix}
+  \]
+</div>
 
- <hr>
- "Inventario en proceso inicial" = "Inventario de productos en proceso (inicial)".
- <br><br>
- Inventario materiales directos y suministros (1 de enero) es lo mismo que: = : 
- Inventario inicial materias
+    <hr>
+    
+    <h1>Redefinición de ejes con vectores</h1>
+
+    <p>
+    Sean 
+    \[
+    u = \begin{bmatrix} 3 \\ 1 \end{bmatrix}, \quad 
+    v = \begin{bmatrix} 1 \\ 2 \end{bmatrix}.
+    \]
+    Puede usar \(u\) y \(v\) para ubicar un nuevo conjunto de ejes (en la misma forma que
+    \[
+    e_1 = \begin{bmatrix} 1 \\ 0 \end{bmatrix}, \quad 
+    e_2 = \begin{bmatrix} 0 \\ 1 \end{bmatrix}
+    \]
+    ubican los ejes coordenados estándar).
+    </p>
+
+    <p>
+    Puede usar estos nuevos ejes para determinar una <em>cuadrícula coordenada</em> que permitirá ubicar fácilmente combinaciones lineales de \(u\) y \(v\).
+    </p>
+
+    <p>
+    Como muestra la figura, \(w\) puede ubicarse comenzando en el origen y avanzar \(-u\) seguido por \(2v\). Esto es,
+    </p>
+
+    <p>
+    \[
+    w = -u + 2v
+    \]
+    </p>
+
+    <p>
+    Se dice que las coordenadas de \(w\) con respecto a \(u\) y \(v\) son \(-1\) y \(2\). (Note que esta es sólo otra forma de pensar en los coeficientes de la combinación lineal).
+    </p>
+
+    <div class="ejemplo">
+    \[
+    w = -\begin{bmatrix} 3 \\ 1 \end{bmatrix}
+        + 2\begin{bmatrix} 1 \\ 2 \end{bmatrix}
+        = \begin{bmatrix} -1 \\ 3 \end{bmatrix}
+    \]
+    </div>
+
+    <p>
+    Observe que \(-1\) y \(3\) son las coordenadas de \(w\) con respecto a \(e_1\) y \(e_2\).
+    </p>
+ 
+
+    <img src="../../../img/guia_234.png" alt="">
 
     <hr>
 
-    <div class="box">
-    <h3>Materiales usados</h3>
-    <p>Se dividen en:</p>
-    <ul>
-    <li><strong>Materiales directos usados</strong>: se incorporan físicamente al producto y son fácilmente identificables 
-      (ej: hilo en artesanías, tela en ropa, madera en muebles).
-    </li>
-    <li><strong>Materiales indirectos usados</strong>: se consumen en la planta pero no se identifican directamente en cada producto 
-      (ej: pegante, lubricantes, limpiadores, suministros pequeños).
-    </li>
-    </ul>
-    </div>
-
-    <div class="box">
-    <h3>Ejemplo (Compañía Mack Ltda)</h3>
-    <ol>
-    <li><strong>Materiales directos y suministros usados</strong>: 1,834,850</li>
-    <li>– <strong>Suministros usados (materiales indirectos)</strong>: 600,000</li>
-    <li>= <strong>Materiales directos usados</strong>: 1,234,850</li>
-    </ol>
-    </div>
-
-    <div class="box">
-    <h3>Fórmula</h3>
-    <p><strong>Materiales usados</strong> = Materiales directos usados + Materiales indirectos (suministros) usados</p>
-    </div>
-
+ 
+    <h1>El producto punto</h1>
 
  
-<div class="content">
-  <h4>Las dos formas son correctas, pero representan momentos distintos del flujo de costos:</h4>
+<p>
+  Las versiones vectoriales de longitud, distancia y ángulo pueden describirse usando la noción de <em>producto punto</em> de dos vectores.
+</p>
 
-  <h3>Primera fórmula (Inventarios y compras):</h3>
-  <p>Sirve para calcular <strong>materiales usados en total</strong> a partir de inventarios y compras.</p>
-  <div class="box">
-    <strong>Materiales usados</strong>
-      = Inventario inicial materias + Compras netas − Inventario final materias
-  </div>
+<div class="definicion">
+  <p><strong>Definición</strong></p>
+  <p>
+    Si
+    \[
+      u = \begin{bmatrix} u_1 \\ u_2 \\ \vdots \\ u_n \end{bmatrix}, \quad
+      v = \begin{bmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{bmatrix},
+    \]
+    entonces el <em>producto punto</em> \(u \cdot v\) de \(u\) y \(v\) se define mediante
+  </p>
 
-  <h3>Segunda fórmula (Desglose):</h3>
-  <p>Sirve para dividir esos materiales usados en <strong>directos e indirectos (suministros)</strong>.</p>
-  <div class="box">
-    <h4>Fórmula</h4>
-    <p><strong>Materiales usados</strong> = Materiales directos usados + Materiales indirectos (suministros) usados</p>
-  </div>
-
-  <p>👉 <strong>O sea:</strong></p>
-  <ul>
-    <li>La primera te dice <em>cuántos materiales se consumieron en total</em> en el período.</li>
-    <li>La segunda te explica <em>cómo se reparten esos materiales</em> entre directos (van al producto) e indirectos (CIF).</li>
-  </ul>
-
-  <img src="../../img/guia_233.png" alt="" width="700">
+  \[
+    u \cdot v = u_1 v_1 + u_2 v_2 + \cdots + u_n v_n
+  \]
 </div>
- 
 
+<p>
+  En palabras, \(u \cdot v\) es la suma de los productos de los componentes correspondientes de \(u\) y \(v\).
+  Es importante notar un par de cosas acerca de este “producto”:
+</p>
+
+<ul>
+  <li>Primero, \(u\) y \(v\) deben tener el mismo número de componentes.</li>
+  <li>Segundo, el producto punto \(u \cdot v\) es un <em>número</em>, no otro vector.</li>
+</ul>
+
+<p>
+  (Es por esto que \(u \cdot v\) en ocasiones se conoce como el <em>producto escalar</em> de \(u\) y \(v\).)
+  El producto punto de vectores en \(\mathbb{R}^n\) es un caso especial e importante de la noción más general de
+  <em>producto interno</em>, que se explorará en el capítulo 7.
+</p>
+ 
+    <hr>
+    
 </div>
 
 
 
 
 <div class="seccion derecha">
-
-    <P>
-    En contabilidad de costos:
-    </P>
-    <P>
-    Costos Generales de Manufactura (CGM) = Costos Indirectos de Fabricación (CIF)
-    </P>
- 
-    <hr>
-    <h3>Caso de estudio de incendio:</h3> 
-
- 
-  <h6>Interpretación del fragmento</h6>
-
-  <p class="small">El fragmento dice:</p>
-  <blockquote>
-    "El costo de la prima totalizó 410 000 unidades monetarias hasta lo que va del año y los <strong>costos generales de manufactura</strong> fueron de <strong>70% del costo de conversión</strong>."
-  </blockquote>
-
-  <div class="section">
-    <h6>Interpretación</h6>
-    <ol>
-      <li>
-        <strong>Costo de la prima (410 000):</strong><br/>
-        Esto significa que <strong>Materiales directos + Mano de obra directa = 410 000</strong>.<br/>
-        ⇢ Ese es el <em>costo primo</em>.
-      </li>
-
-```
-  <li style="margin-top:10px;">
-    <strong>Costos generales de manufactura (CIF):</strong><br/>
-    Se indica que son <strong>70% del costo de conversión</strong>.<br/>
-    <p class="code">Recuerda: Costo de conversión = Mano de obra directa (MOD) + CIF</p>
-    Por tanto, la relación dada es:
-    <div class="code">CIF = 0.7 × (MOD + CIF)</div>
-    Con esa ecuación se puede despejar la relación entre <em>MOD</em> y <em>CIF</em>.
-  </li>
-</ol>
-```
-
-  </div>
-
-  <div class="note">
-    <strong>En resumen:</strong>
-    <ul>
-      <li>Tienes <strong>Costo primo = 410 000</strong> (es decir, Materiales directos + Mano de obra directa = 410 000).</li>
-      <li>Sabes que <strong>CIF = 70% del Costo de Conversión</strong> (donde Costo de Conversión = MOD + CIF).</li>
-      <li>Con esos dos datos es posible plantear un sistema de ecuaciones para determinar por separado cuánto corresponde a Materiales directos, Mano de obra directa y Costos indirectos de fabricación.</li>
-    </ul>
-  </div>
-    
-    <hr>
-
- 
-     <h2 id="titulo">Definición sencilla</h2>
-    <p>
-      Los <strong>costos de conversión</strong> son aquellos que se incurren para transformar la materia prima (materiales directos)
-      en un producto terminado.
-    </p>
-    <p>
-      Por eso, <em>no incluyen</em> materiales directos (eso ya es la base del producto), sino que se concentran en:
-    </p>
-    <ul>
-      <li>
-        <span class="term">La mano de obra directa (MOD):</span>
-        trabajadores que transforman físicamente el material (operarios, técnicos, ensambladores).
-      </li>
-      <li>
-        <span class="term">Costos indirectos de fabricación (CIF):</span>
-        <span class="examples">energía, depreciación de maquinaria, supervisión, mantenimiento, lubricantes, etc.</span>
-      </li>
-    </ul>
-    <p>Entonces:</p>
-
-    <p><strong>Costos de conversion=MOD+CIF</strong> </p>
-Los costos generales de manufactura (CIF) son el 70% del costo de conversión.
-
-
-  <h1>Relación algebraica</h1>
-
-  <p>Si llamamos:</p>
-  <ul>
-    <li><strong>MOD</strong> = Mano de obra directa</li>
-    <li><strong>CIF</strong> = Costos indirectos de fabricación</li>
-  </ul>
-
-  <div class="step">
-    <p class="eq">Tenemos la relación dada:</p>
-    <pre>CIF = 70% × (MOD + CIF)</pre>
-  </div>
-
-  <div class="step">
-    <p class="eq">A partir de la relación:</p>
-    <pre>
-CIF = 0.7 × (MOD + CIF)
-CIF = 0.7·MOD + 0.7·CIF
-CIF − 0.7·CIF = 0.7·MOD
-0.3·CIF = 0.7·MOD
-CIF = (0.7 / 0.3) × MOD
-CIF = (7 / 3) × MOD
-    </pre>
-  </div>
-
- 
-    <p><strong>Interpretación:</strong></p>
-    <p>El procedimiento que se escribió como <code>CIF = (70% / 30%) × MOD</code> es equivalente a lo anterior. El cociente <code>70% / 30%</code> = <code>7/3 ≈ 2.333...</code>, por lo que <strong>los costos indirectos de fabricación son ≈ 2.33 veces la mano de obra directa</strong> bajo la condición dada.</p>
- 
- 
-
-
    
-    <h1>Costos agregados a producción</h1>
- 
-<p>Cuando ves <strong>“Costos agregados a producción”</strong>, es otra forma de nombrar a los <strong>Costos de Manufactura del período</strong>.</p>
 
-<p>Incluye:</p>
-<ul>
-  <li><span class="term">Materiales directos usados</span></li>
-  <li><span class="term">Mano de obra directa</span></li>
-  <li><span class="term">Costos indirectos de fabricación (CIF)</span></li>
-</ul>
-
-<p>Es decir, <em>todo lo que se agregó en el mes/período</em> para transformar la materia prima en producto.</p>
-
-<div class="note">
-  <strong>Fórmula equivalente:</strong>
-  <div class="eq">Costos agregados a producción = Costos de manufactura del período</div>
-</div>
- 
-
-  
- 
+    <h1>Longitud</h1>
 
 
+    <p>
+    Para ver cómo el producto punto desempeña un papel en el cálculo de longitudes, recuerde cómo se calculan longitudes en el plano.
+    El teorema de Pitágoras es todo lo que necesita.
+    </p>
 
+    <p>
+    En \(\mathbb{R}^2\), la longitud del vector
+    \[
+    v = \begin{bmatrix} a \\ b \end{bmatrix}
+    \]
+    es la distancia desde el origen hasta el punto \((a, b)\), que por el teorema de Pitágoras está dada por \(\sqrt{a^2 + b^2}\).
+    Observe que \(a^2 + b^2 = v \cdot v\). Esto conduce a la siguiente definición.
+    </p>
 
+    <div class="definicion">
+    <p>
+    <strong>Definición</strong> &nbsp; La <em>longitud</em> (o <em>norma</em>) de un vector
+    \[
+      v = \begin{bmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{bmatrix} \in \mathbb{R}^n
+    \]
+    es el escalar no negativo \(\|v\|\) definido por
+    </p>
 
-    <hr>
-    <h1>Pasos para llegar del costo de manufactura al costo vendido</h1>
-
-    <h2>1. Primero: obtener el Costo de productos terminados (CPT)</h2>
-    <p>Viene de los costos de manufactura y del inventario en proceso:</p>
-    <div class="box">CPT = Costo de manufactura + Inventario en proceso inicial − Inventario en proceso final</div>
-
-    <h2>2. Luego: calcular el Costo de productos disponibles para la venta</h2>
-    <p>Se suman los productos terminados producidos en el periodo más el inventario inicial de productos terminados:</p>
-    <div class="box">Disponibles = CPT + Inventario inicial de productos terminados</div>
-
-    <h2>3. Finalmente: obtener el Costo de los productos vendidos (CPV)</h2>
-    <p>Se restan los productos terminados que permanecen sin vender al cierre del periodo:</p>
-    <div class="box">CPV = Disponibles − Inventario final de productos terminados</div>
-
-    <div class="note">
-    <strong>Fórmula condensada (combina pasos 2 y 3):</strong>
-    <div class="box">Costo de los productos vendidos = Costo de productos terminados + Inventario inicial de terminados − Inventario final de terminados</div>
+    \[
+    \|v\| = \sqrt{v \cdot v} = \sqrt{v_1^2 + v_2^2 + \cdots + v_n^2}
+    \]
     </div>
 
-    <hr>
-
-    <h2 id="titulo">Costos directos de fabricación</h2>
-    <p>Incluyen dos elementos:</p>
-    <ul>
-      <li><span class="term">Materiales directos (MD)</span></li>
-      <li><span class="term">Mano de obra directa (MOD)</span></li>
-    </ul>
-
-
-
-
-
-
-    <hr>
-    <hr>
     <p>
-    En esas tablas de inventarios (tanto en promedio ponderado como en PEPS), la columna Cantidad en saldo significa:
+    En palabras, la longitud de un vector es la raíz cuadrada de la suma de los cuadrados de sus componentes.
+    Note que la raíz cuadrada de \(v \cdot v\) siempre está definida, pues \(v \cdot v \geq 0\).
+    También note que la definición puede reescribirse para dar \(\|v\|^2 = v \cdot v\).
     </p>
-     
-    <p> Las unidades que te quedan en inventario después de cada movimiento (compra o venta).</p>
+
+    <div class="ejemplo">
+    \[
+    \|[\,2, 3\,]\| = \sqrt{2^2 + 3^2} = \sqrt{13}
+    \]
+    </div>
+
+    <p>
+    El Teorema 1.3 menciona algunas de las principales propiedades de la longitud vectorial:
+    </p>
+
+    <ul>
+    <li>\(\|v\| = 0\) si y sólo si \(v = 0\).</li>
+    <li>\(\|cv\| = |c| \, \|v\|\).</li>
+    </ul>
  
+    <img src="../../../img/guia_235.png" alt="">
+
+    <hr>
+
+    <h2>Normalización</h2> <p> Un vector de longitud 1 se llama <b>vector unitario</b>. En \( \mathbb{R}^2 \), el conjunto 
+    de todos los vectores unitarios puede identificarse con el <b>círculo unitario</b>, que es el círculo de radio 1 con 
+    centro en el origen. </p> <p> Dado cualquier vector \( \mathbf{v} \) distinto de cero, siempre es posible encontrar un 
+    vector unitario en la misma dirección que \( \mathbf{v} \) al dividirlo por su propia longitud (o, de manera 
+    equivalente, al <i>multiplicar</i> por \( \tfrac{1}{\|\mathbf{v}\|} \)). </p> 
     
+    <p> Esto se puede demostrar usando la 
+    propiedad (b) del Teorema 1.3: si \[ \mathbf{u} = \left(\frac{1}{\|\mathbf{v}\|}\right)\mathbf{v}, \] entonces 
+    \[ \|\mathbf{u}\| = \left\| \left(\tfrac{1}{\|\mathbf{v}\|}\right)\mathbf{v} \right\| = \tfrac{1}{\|\mathbf{v}\|} 
+    \|\mathbf{v}\| = \left(\tfrac{1}{\|\mathbf{v}\|}\right)\|\mathbf{v}\| = 1 \] </p> 
+    
+    <p> y \( \mathbf{u} \) está en la 
+    misma dirección que \( \mathbf{v} \), ya que \( \tfrac{1}{\|\mathbf{v}\|} \) es un escalar positivo. </p> 
+    
+    <p> 
+    <b>Definición:</b> Encontrar un vector unitario en la misma dirección que un vector se llama <b>normalizar un vector</b>. 
+    </p>
+
+
+    <img src="../../../img/guia_236.png" alt="">
+
+    <hr>
+
+    <h2>Vectores unitarios estándar</h2> <p> En \( \mathbb{R}^n \), se definen vectores unitarios 
+    \( \mathbf{e}_1, \mathbf{e}_2, \ldots, \mathbf{e}_n \), donde \( \mathbf{e}_i \) tiene un \( 1 \) en su \( i \)-ésimo 
+    componente y ceros en cualquier otra parte. </p> <p> Tales vectores surgen de manera repetida en álgebra lineal y se 
+    llaman <b>vectores unitarios estándar</b>. </p>
+
+    <hr>
+
+    <h2>La desigualdad de Cauchy-Schwarz</h2> <p> Para todos los vectores \( \mathbf{u}, \mathbf{v} \in \mathbb{R}^n \), </p> <p style="text-align:center;"> \[ |\mathbf{u} \cdot \mathbf{v}| \leq \|\mathbf{u}\| \|\mathbf{v}\| \] </p> <p> En \( \mathbb{R}^2 \) o \( \mathbb{R}^3 \), donde se puede usar geometría, es claro a partir de un diagrama que \(\|\mathbf{u} + \mathbf{v}\|\) ≤ \(\|\mathbf{u}\| + \|\mathbf{v}\|\) para todos los vectores \( \mathbf{u}, \mathbf{v} \). Más adelante se demuestra que esto es verdadero en general. </p> <h2>La desigualdad del triángulo</h2> <p> Para todos los vectores \( \mathbf{u}, \mathbf{v} \in \mathbb{R}^n \), </p> <p style="text-align:center;"> \[ \|\mathbf{u} + \mathbf{v}\| \leq \|\mathbf{u}\| + \|\mathbf{v}\| \] </p>
+
+    <img src="../../../img/guia_237.png" alt="">
+
+    <hr>
+
+  
+
 </div>
 </div>
  </form>
@@ -1927,7 +1885,7 @@ CIF = (7 / 3) × MOD
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="tercero.php"
+        href="segundo.php"
         role="button"
         width="50px"
         height="50px"
