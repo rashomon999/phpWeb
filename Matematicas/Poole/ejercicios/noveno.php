@@ -1312,7 +1312,7 @@ if ($respuesta_121 === '144') {
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 390vh;
+    height: 410vh;
     }
 
 </style>
@@ -1598,133 +1598,80 @@ function ocultarMensaje4() {
     
 <div class="seccion izquierda"> 
  
- 
-       <h2>En ℝ² (plano 2D):</h2>
-        
-        <div class="case">
-            <div class="case-title">RECTA (1 dimensión)</div>
-            <p><strong>Ecuación necesaria:</strong> <span class="equation">1</span></p>
-            <p><strong>¿Por qué?</strong> Con <span class="equation">2x + y = 3</span> reduces de <span class="dimension">2D → 1D</span></p>
-            <p><strong>Movimiento libre:</strong> <span class="movement">Solo a lo largo de la recta</span></p>
-        </div>
+    <h2>Definición</h2>
+        <p>Una matriz cuadrada \( A \) es simétrica si \( A^T = A \); esto es: si \( A \) es igual a su propia transpuesta.</p>
 
-        <div class="rule">
-            <h2>Regla general:</h2>
-            <div class="math">
-                <p>\[
-                \text{Ecuaciones necesarias} = \text{Dimensión del espacio} - \text{Dimensión del objeto}
-                \]</p>
-            </div>
-        </div>
+        <h2>Ejemplo 3.15</h2>
+        <p>Sea</p>
+        <p class="matrix">\( A = \begin{bmatrix} 1 & 3 & 2 \\ 3 & 5 & 0 \\ 2 & 0 & 4 \end{bmatrix} \) y \( B = \begin{bmatrix} 1 & 2 \\ -1 & 3 \end{bmatrix} \).</p>
 
-        <div class="examples">
-            <div class="example">
-                <p><strong>Plano en ℝ³:</strong></p>
-                <div class="math">
-                    <p>\( 3 - 2 = 1 \) ecuación</p>
-                </div>
-            </div>
-            
-            <div class="example">
-                <p><strong>Recta en ℝ³:</strong></p>
-                <div class="math">
-                    <p>\( 3 - 1 = 2 \) ecuaciones</p>
-                </div>
-            </div>
-            
-            <div class="example">
-                <p><strong>Recta en ℝ²:</strong></p>
-                <div class="math">
-                    <p>\( 2 - 1 = 1 \) ecuación</p>
-                </div>
-            </div>
-        </div>
+        <p>Entonces \( A \) es simétrica, pues \( A^T = A \); pero \( B \) no es simétrica, pues \( B^T = \begin{bmatrix} 1 & -1 \\ 2 & 3 \end{bmatrix} \neq B \).</p>
 
-        <div class="analogy">
-            <p style="text-align: center; font-weight: bold;">
-                ¡Cada ecuación te quita una dimensión de libertad!
-            </p>
-        </div>
+        <p>Una matriz simétrica tiene la propiedad de que es su propia "imagen especular" a través de su diagonal principal. La figura 3.1 ilustra esta propiedad para una matriz de \( 3 \times 3 \). Las formas correspondientes representan entradas iguales; las entradas de la diagonal (las que están sobre la recta rayada) son arbitrarias.</p>
 
-    <hr>
-    
-    
+        <p>Una definición por componentes de una matriz simétrica también es útil. Es simplemente la descripción algebraica de la propiedad de "reflexión":</p>
+        <p>Una matriz cuadrada \( A \) es simétrica si y sólo si \( a_{ij} = a_{ji} \) para todo \( i \) y \( j \).</p>
 
-    <h2>2.1 Introducción a los sistemas de ecuaciones lineales</h2>
-  <p>Recuerde que la ecuación general de una recta en \( \mathbb{R}^2 \) es de la forma</p>
-  <p>\( ax + by = c \)</p>
-  <p>y que la ecuación general de un plano en \( \mathbb{R}^3 \) es de la forma</p>
-  <p>\( ax + by + cz = d \)</p>
-  <p>Las ecuaciones de esta forma se llaman ecuaciones lineales.</p>
+         <img src="../../../img/guia_252.png" alt="">
 
-  <div class="example">
-    <h3>Definición</h3>
-    <p>Una ecuación lineal en las \( n \) variables \( x_1, x_2, \ldots, x_n \) es una ecuación que puede escribirse en la forma</p>
-    <p>\( a_1 x_1 + a_2 x_2 + \cdots + a_n x_n = b \)</p>
-    <p>donde los coeficientes \( a_1, a_2, \ldots, a_n \) y el término constante \( b \) son constantes.</p>
-  </div>
 
-  <div class="example">
-    <h3>Ejemplo 2.1</h3>
-    <p>Las siguientes ecuaciones son lineales:</p>
-    <p>\( 3x - 4y = -1 \)</p>
-    <p>\( \frac{1}{2} x + \frac{15}{2} t = 9 \)</p>
-    <p>\( x_1 + 5x_2 = 3 - x_3 + 2x_4 \)</p>
-    <p>\( \sqrt{2} x + \frac{\pi}{4} y - \left( \sin \frac{\pi}{5} \right) z = 1 \)</p>
-    <p>\( 3.2x_1 - 0.01x_2 = 4.6 \)</p>
-    <p>Observe que la tercera ecuación es lineal porque puede reescribirse en la forma \( x_1 + 5x_2 + x_3 - 2x_4 = 3 \). También es importante notar que, aunque en estos ejemplos (y en la mayoría de las aplicaciones) los coeficientes y términos constantes son números reales, en algunos ejemplos y aplicaciones serán números complejos o miembros de \( \mathbb{Z}_p \) para algún número primo \( p \).</p>
-  </div>
 
-  <div class="example">
-    <h3>Las siguientes ecuaciones no son lineales:</h3>
-    <p>\( xy + 2z = 1 \)</p>
-    <p>\( x_1^2 - x_2 = 3 \)</p>
-    <p>\( \frac{x}{y} + z = 2 \)</p>
-    <p>\( \sqrt{2}x + \frac{\pi}{4} y - \sin \left( \frac{\pi}{5} z \right) = 1 \)</p>
-    <p>\( \sin x_1 - 3x_2 + 2^y = 0 \)</p>
-    <p>Por tanto, las ecuaciones lineales no contienen productos, recíprocos u otras funciones de las variables; las variables sólo aparecen a la primera potencia y sólo se multiplican por constantes. Ponga particular atención al cuarto ejemplo en cada lista: ¿por qué la cuarta ecuación en la primera lista es lineal, pero la cuarta ecuación en la segunda lista no lo es?</p>
-  </div>
+          <h1>3.2 Álgebra matricial</h1>
+    <p>En ciertos aspectos, la aritmética de matrices generaliza la de los vectores. No se esperan sorpresas con respecto a la suma y la multiplicación por un escalar, y de hecho no las hay. Esto permitirá extender a las matrices varios conceptos que ya son familiares a partir del trabajo con vectores. En particular, combinaciones lineales, conjuntos generadores e independencia lineal se trasladan a las matrices sin dificultad.</p>
+    <p>Sin embargo, las matrices tienen otras operaciones, como la multiplicación matricial, que no poseen los vectores. No debe esperarse que la multiplicación matricial se comporte como la multiplicación de números reales, a menos que pueda probarse que lo hace; de hecho, no lo hace. En esta sección se resumen y demuestran algunas de las propiedades principales de las operaciones matriciales y se comienza por desarrollar un álgebra de matrices.</p>
 
-  <div class="example">
-    <h3>Una solución de una ecuación lineal</h3>
-    <p>Una solución de una ecuación lineal \( a_1 x_1 + a_2 x_2 + \cdots + a_n x_n = b \) es un vector \( [s_1, s_2, \ldots, s_n] \) cuyos componentes satisfacen la ecuación cuando se sustituye \( x_i = s_i \), \( x_2 = s_2, \ldots, x_n = s_n \).</p>
-  </div>
+    <h2>Propiedades de la suma y la multiplicación por un escalar</h2>
+    <p>Todas las propiedades algebraicas de la suma y la multiplicación por un escalar para vectores (Teorema 1.1) se trasladan a las matrices. En el siguiente teorema se resumen dichas propiedades.</p>
 
-  <div class="example">
-    <h3>Un sistema de ecuaciones lineales</h3>
-    <p>Un sistema de ecuaciones lineales es un conjunto finito de ecuaciones lineales, cada una con las mismas variables. Una solución de un sistema de ecuaciones lineales es un vector que simultáneamente es una solución de cada ecuación en el sistema. El conjunto solución de un sistema de ecuaciones lineales es el conjunto de todas las soluciones del sistema. Al proceso de encontrar el conjunto solución de un sistema de ecuaciones lineales se le conocerá como "resolver el sistema".</p>
-  </div>
+    <div class="theorem">
+        <h3>Teorema 3.2</h3>
+        <p><strong>Propiedades algebraicas de la suma y la multiplicación escalar matriciales</strong></p>
+        <p>Sean \( A, B, C \) matrices del mismo tamaño, y sean \( c \) y \( d \) escalares. Entonces:</p>
+        <ul>
+            <li>\( A + B = B + A \) (Conmutatividad)</li>
+            <li>\( (A + B) + C = A + (B + C) \) (Asociatividad)</li>
+            <li>\( A + O = A \) (Elemento neutro)</li>
+            <li>\( A + (-A) = O \) (Distributividad)</li>
+            <li>\( c(A + B) = cA + cB \) (Distributividad)</li>
+            <li>\( (c + d)A = cA + dA \) (Distributividad)</li>
+            <li>\( c(dA) = (cd)A \) (Distributividad)</li>
+            <li>\( 1A = A \) (Identidad multiplicativa)</li>
+        </ul>
+    </div>
 
-  <div class="example">
-    <h3>Ejemplo 2.4</h3>
-    <p>Resuelva los siguientes sistemas de ecuaciones lineales:</p>
-    <p>(a) \( x - y = 1 \) <br> \( x + y = 3 \)</p>
-    <p>(b) \( x - y = 2 \) <br> \( 2x - 2y = 4 \)</p>
-    <p>(c) \( x - y = 1 \) <br> \( x - y = 3 \)</p>
-  </div>
+    <p>Las demostraciones de dichas propiedades son análogos directos de las correspondientes pruebas de las propiedades de vectores y se dejan como ejercicios. Del mismo modo, los comentarios que siguen al Teorema 1.1 son igualmente válidos aquí y no debe tener dificultad para usar dichas propiedades en la realización de manipulaciones algebraicas con matrices. (Revise el ejemplo 1.5 y vea los ejercicios 17 y 18 al final de esta sección.)</p>
+    <p>La propiedad de asociatividad permite sin ambigüedades combinar la multiplicación por un escalar y la suma sin paréntesis. Si \( A, B, C \) son matrices del mismo tamaño, entonces:</p>
+    <p>\( (2A + 3B) - C = 2A + (3B - C) \)</p>
+    <p>y por tanto simplemente puede escribirse \( 2A + 3B - C \). En general, entonces, si \( A_1, A_2, \ldots, A_k \) son matrices del mismo tamaño \( y c_1, c_2, \ldots, c_k \) son escalares, puede formarse la combinación lineal</p>
+    <p>\( c_1 A_1 + c_2 A_2 + \cdots + c_k A_k \)</p>
+    <p>\( c_1, c_2, \ldots, c_k \) se denominan como los coeficientes de la combinación lineal. Ahora puede plantear y responder preguntas acerca de las combinaciones lineales de matrices.</p>
 
-  <div class="example">
-    <h3>Solución</h3>
-    <p>(a) Al sumar las dos ecuaciones se obtiene \( 2x = 4 \), de modo que \( x = 2 \), de donde se encuentra que \( y = 1 \). Una comprobación rápida confirma que \( [2, 1] \) es de hecho una solución de ambas ecuaciones. Que esta es la única solución que puede verse al observar que esta solución corresponde al (único) punto de intersección \( (2, 1) \) de las rectas con ecuaciones \( x - y = 1 \) y \( x + y = 3 \), como se muestra en la figura 2.1(a). Por tanto, \( [2, 1] \) es una solución única.</p>
-    <p>(b) La segunda ecuación en este sistema es justo el doble de la primera, de modo que las soluciones corresponden sólo a la primera ecuación: a saber, los puntos sobre la recta \( x - y = 2 \). Las mismas pueden representarse paramétricamente como \( [2 + t, t] \). Por tanto, este sistema tiene un número infinito de soluciones (figura 2.1(b)).</p>
-    <p>(c) Dos números \( x \) y \( y \) no pueden tener simultáneamente una diferencia de 1 y 3. Por la segunda ecuación de la primera, lo que produce la conclusión absurda \( 0 = -2 \). Como muestra la figura 2.1(c), en este caso las rectas para las ecuaciones son paralelas.</p>
-  </div>
-<img src="../../../img/guia_246.png" alt="" width="600">
-  <div class="example">
-    <h3>Resolución de un sistema de ecuaciones lineales</h3>
-    <p>Dos sistemas lineales se llaman equivalentes si tienen los mismos conjuntos solución. Por ejemplo,</p>
-    <p>\( x - y = 1 \) <br> \( x + y = 3 \)</p>
-    <p>es equivalente, pues ambos tienen la solución única \( [2, 1] \) (Comprobable).</p>
-  </div>
+    <h2>Ejemplo 3.17</h2>
+    <p><strong>Descripción del espacio generado por las matrices \( A_1, A_2, A_3 \) en el ejemplo 3.16.</strong></p>
+    <p>Una forma de hacer esto es simplemente escribir una combinación lineal general de \( A_1, A_2, A_3 \). Por tanto,</p>
+    <p>\( c_1 A_1 + c_2 A_2 + c_3 A_3 = c_1 \begin{bmatrix} 0 & 1 \\ -1 & 0 \end{bmatrix} + c_2 \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} + c_3 \begin{bmatrix} 1 & 1 \\ 1 & 1 \end{bmatrix} = \begin{bmatrix} c_2 + c_3 & c_1 + c_3 \\ -c_1 + c_3 & c_2 + c_3 \end{bmatrix} \)</p>
+    <p>(que es análogo a la representación paramétrica de un plano). Pero suponga que se quiere saber cuándo la matriz \(\begin{bmatrix} w & x \\ y & z \end{bmatrix}\) está en gen(\(A_1, A_2, A_3\)). A partir de la representación anterior, se sabe que lo está cuando</p>
+    <p>\( \begin{bmatrix} c_2 + c_3 & c_1 + c_3 \\ -c_1 + c_3 & c_2 + c_3 \end{bmatrix} = \begin{bmatrix} w & x \\ y & z \end{bmatrix} \)</p>
+    <p>para alguna elección de escalares \( c_1, c_2, c_3 \). Esto da origen a un sistema de ecuaciones lineales cuyo lado izquierdo es exactamente igual que el del ejemplo 3.16, pero cuyo lado derecho es general. La matriz aumentada de este sistema es</p>
+    <p>\( \begin{bmatrix} 0 & 1 & 1 & | & w \\ 1 & 0 & 1 & | & x \\ -1 & 0 & 1 & | & y \\ 0 & 1 & 1 & | & z \end{bmatrix} \)</p>
+    <p>y la reducción por renglones produce</p>
+    <p>\( \begin{bmatrix} 0 & 1 & 1 & | & w \\ 1 & 0 & 1 & | & x \\ -1 & 0 & 1 & | & y \\ 0 & 1 & 1 & | & z \end{bmatrix} \to \begin{bmatrix} 1 & 0 & 0 & | & \frac{1}{2}x - \frac{1}{2}y \\ 0 & 1 & 0 & | & -\frac{1}{2}x - \frac{1}{2}y + w \\ 0 & 0 & 1 & | & \frac{1}{2}x + \frac{1}{2}y \\ 0 & 0 & 0 & | & w - z \end{bmatrix} \)</p>
+    <p>(Compruebe esto cuidadosamente.) La única restricción proviene del último renglón, donde claramente se debe tener \( w - z = 0 \) para tener una solución. Por tanto, el gen de \( A_1, A_2, A_3 \) consiste de todas las matrices \(\begin{bmatrix} w & x \\ y & z \end{bmatrix}\) para las cuales \( w = z \). Esto es:</p>
+    <p>es: gen(\(A_1, A_2, A_3\)) = \(\{ \begin{bmatrix} w & x \\ y & w \end{bmatrix} \}\).</p>
+    <p>Nota: Si se hubiera sabido esto antes de intentar el ejemplo 3.16, habría visto inmediatamente que \( B = \begin{bmatrix} 1 & 4 \\ 2 & 1 \end{bmatrix} \) es una combinación lineal de \( A_1, A_2, A_3 \), pues tiene la forma necesaria (tome \( w = 1, x = 4, y = 2 \)), pero \( C = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix} \) no puede ser una combinación lineal de \( A_1, A_2, A_3 \), ya que no tiene la forma adecuada (\( 1 \neq 4 \)).</p>
+    <p>La independencia lineal también tiene sentido para matrices. Se dice que las matrices \( A_1, A_2, \ldots, A_k \) del mismo tamaño son linealmente independientes si la única solución de la ecuación</p>
+    <p>\( c_1 A_1 + c_2 A_2 + \cdots + c_k A_k = O \)</p>
+    <p>es la trivial: \( c_1 = c_2 = \cdots = c_k = 0 \). Si no hay coeficientes triviales que satisfagan (1), entonces \( A_1, A_2, \ldots, A_k \) se llama linealmente dependiente.</p>
 
-  <div class="example">
-    <h3>Un sistema de ecuaciones lineales con coeficientes reales tiene</h3>
-    <p>(a) una solución única (un sistema consistente) o</p>
-    <p>(b) un número infinito de soluciones (un sistema consistente) o</p>
-    <p>(c) ninguna solución (un sistema inconsistente).</p>
-  </div>
+    <h2>Ejemplo 3.18</h2>
+    <p><strong>Determine si las matrices \( A_1, A_2, A_3 \) en el ejemplo 3.16 son linealmente independientes.</strong></p>
+    <p>Se quiere resolver la ecuación \( c_1 A_1 + c_2 A_2 + c_3 A_3 = O \). Al escribir las matrices, se tiene</p>
+    <p>\( c_1 \begin{bmatrix} 0 & 1 \\ -1 & 0 \end{bmatrix} + c_2 \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} + c_3 \begin{bmatrix} 1 & 1 \\ 1 & 1 \end{bmatrix} = \begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix} \)</p>
+    <p>Esta vez se tiene un sistema lineal homogéneo cuyo lado izquierdo es el mismo que en los ejemplos 3.16 y 3.17. (¿Comienza a vislumbrar un patrón?) La matriz aumentada se reduce por renglones para obtener</p>
+    <p>\( \begin{bmatrix} 0 & 1 & 1 & | & 0 \\ 1 & 0 & 1 & | & 0 \\ -1 & 0 & 1 & | & 0 \\ 0 & 1 & 1 & | & 0 \end{bmatrix} \to \begin{bmatrix} 1 & 0 & 0 & | & 0 \\ 0 & 1 & 0 & | & 0 \\ 0 & 0 & 1 & | & 0 \\ 0 & 0 & 0 & | & 0 \end{bmatrix} \)</p>
+    <p>Por tanto, \( c_1 = c_2 = c_3 = 0 \), y se concluye que las matrices \( A_1, A_2, A_3 \) son linealmente independientes.</p>
 
-   
+     
 </div>
 
 
@@ -1732,136 +1679,111 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
    
-    <h2>Métodos directos para resolver sistemas lineales</h2>
-  <p>En esta sección se verá un procedimiento sistemático general para resolver un sistema de ecuaciones lineales. Este procedimiento se basa en la idea de reducir la matriz aumentada del sistema dado a una forma que luego pueda resolverse mediante sustitución hacia atrás. El método es directo en el sentido de que conduce directamente a la solución (si existe una) en un número finito de pasos. En la sección 2.5 se considerarán algunos métodos indirectos que funcionan en una forma completamente diferente.</p>
+     <h2>Ejemplo 3.19</h2>
+    <p><strong>Considere las matrices</strong></p>
+    <p>\( A = \begin{bmatrix} 2 & 4 \\ -1 & -2 \end{bmatrix} \) y \( B = \begin{bmatrix} 1 & 0 \\ 1 & 1 \end{bmatrix} \)</p>
+    <p>Al multiplicar se obtiene</p>
+    <p>\( AB = \begin{bmatrix} 2 & 4 \\ -1 & -2 \end{bmatrix} \begin{bmatrix} 1 & 0 \\ 1 & 1 \end{bmatrix} = \begin{bmatrix} 6 & 4 \\ -3 & -2 \end{bmatrix} \) y \( BA = \begin{bmatrix} 1 & 0 \\ 1 & 1 \end{bmatrix} \begin{bmatrix} 2 & 4 \\ -1 & -2 \end{bmatrix} = \begin{bmatrix} 1 & 0 \\ 1 & 2 \end{bmatrix} \)</p>
+    <p>Por tanto, \( AB \neq BA \). Así que, en contraste con la multiplicación de números reales, la multiplicación de matrices no es conmutativa; el orden de los factores en un producto sí importa!</p>
+    <p>Es fácil comprobar que \( A^2 = \begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix} \) (¡hágalo!). De este modo, para matrices, la ecuación \( A^2 = O \) no implica que \( A = O \) (a diferencia de la situación para números reales, donde la ecuación \( x^2 = 0 \) sólo tiene \( x = 0 \) como solución).</p>
 
-  <h3>Matrices y forma escalonada</h3>
-  <p>Existen dos importantes matrices asociadas con un sistema lineal. La matriz de coeficientes contiene los coeficientes de las variables, y la matriz aumentada (que ya se encontró) es la matriz coeficiente aumentada por una columna adicional que contiene los términos constantes.</p>
-
-  <div class="example">
-    <p>Para el sistema</p>
-    <p>\( 2x + y - z = 3 \)</p>
-    <p>\( x + 5z = 1 \)</p>
-    <p>\( -x + 3y - 2z = 0 \)</p>
-    <p class="matrix">La matriz de coeficientes es</p>
-    <p class="matrix">\[
-    \begin{bmatrix}
-    2 & 1 & -1 \\
-    1 & 0 & 5 \\
-    -1 & 3 & -2
-    \end{bmatrix}
-    \]</p>
-    <p class="matrix">y la matriz aumentada es</p>
-    <p class="matrix">\[
-    \begin{bmatrix}
-    2 & 1 & -1 & | & 3 \\
-    1 & 0 & 5 & | & 1 \\
-    -1 & 3 & -2 & | & 0
-    \end{bmatrix}
-    \]</p>
-  </div>
-
-  <div class="example">
-    <h3>Definición</h3>
-    <p>Una matriz está en forma escalonada por renglones si satisface las siguientes propiedades:</p>
-    <ol>
-      <li>Cualquier renglón que consista completamente de ceros está en la parte baja.</li>
-      <li>En cada renglón distinto de cero, el primer elemento distinto de cero (llamado elemento pivote) está en una columna a la izquierda de cualquier elemento pivote bajo él.</li>
-    </ol>
-    <p>Observe que estas propiedades garantizan que los elementos pivote formen un patrón en escalera. En particular, en cualquier columna que contenga un elemento pivote, las entradas bajo el elemento pivote son cero, como ilustran los siguientes ejemplos.</p>
-  </div>
-
-  <div class="example">
-    <h3>Ejemplo 2.7</h3>
-    <p>Las siguientes matrices están en forma escalonada por renglones:</p>
-    <p class="matrix">\[
-    \begin{bmatrix}
-    2 & 4 & 1 \\
-    0 & -1 & 2 \\
-    0 & 0 & 0
-    \end{bmatrix}
-    \quad
-    \begin{bmatrix}
-    1 & 0 & 1 \\
-    0 & 1 & 5 \\
-    0 & 0 & 4
-    \end{bmatrix}
-    \quad
-    \begin{bmatrix}
-    1 & 1 & 2 & 1 \\
-    0 & 0 & 1 & 3 \\
-    0 & 0 & 0 & 0
-    \end{bmatrix}
-    \quad
-    \begin{bmatrix}
-    0 & 2 & 0 & 1 & -1 & 3 \\
-    0 & 0 & -1 & 1 & 2 & 2 \\
-    0 & 0 & 0 & 0 & 4 & 0 \\
-    0 & 0 & 0 & 0 & 0 & 5
-    \end{bmatrix}
-    \]</p>
-    <p>Si una matriz en forma escalonada por renglones en realidad es la matriz aumentada de un sistema lineal, el sistema es bastante fácil de resolver mediante sustitución hacia atrás solamente.</p>
-  </div>
-
-  <div class="example">
-    <h3>Ejemplo 2.8</h3>
-    <p>Si suponemos que cada una de las matrices en el ejemplo 2.7 es una matriz aumentada, es decir los sistemas correspondientes de ecuaciones lineales y resueltos.</p>
-    <h4>Solución</h4>
-    <p>Recuerde primero que la última columna en una matriz aumentada es el vector de términos constantes. Entonces la primera matriz corresponde al sistema</p>
-    <p>\( 2x_1 + 4x_2 = 1 \)</p>
-    <p>\( -x_2 = 2 \)</p>
-    <p>(Advierta que se eliminó la última ecuación \( 0 = 0 \) o \( 0x_1 + 0x_2 = 0 \), que claramente es satisfecible por cualquier valor de \( x_1, y x_2 \).) La sustitución hacia atrás produce \( x_2 = -2 \) y entonces \( 2x_1 - 4(-2) = 9 \), de modo que \( 2x_1 = \frac{9}{2} \). La solución es \( \left[\frac{9}{2}, -2\right] \).</p>
-    <p>La segunda matriz tiene el sistema correspondiente</p>
-    <p>\( x_1 = 1 \)</p>
-    <p>\( x_2 = 5 \)</p>
-    <p>\( 0 = 4 \)</p>
-    <p>La última ecuación representa \( 0x_1 + 0x_2 = 4 \), que claramente no tiene solución. Por tanto, este sistema no tiene soluciones. Para el sistema que corresponde a la tercera matriz, se tiene</p>
-    <p>\( x_1 + x_2 + 2x_3 = 1 \)</p>
-    <p>\( x_3 = 3 \)</p>
-    <p>de modo que \( x_1 = 1 - 2(3) - x_2 = -5 - x_2 \). Existe un número infinito de soluciones, pues a \( x_2 \) se le puede asignar cualquier valor \( t \) para obtener la solución paramétrica \( [-5 - t, t, 3] \).</p>
-  </div>
-  
-    <hr>
-    <div class="example">
-    <h3>Definición</h3>
-    <p>Las siguientes operaciones elementales con renglones pueden realizarse sobre una matriz:</p>
-    <ol>
-      <li>Intercambiar dos renglones.</li>
-      <li>Multiplicar un renglón por una constante distinta de cero.</li>
-      <li>Sumar un múltiplo de un renglón a otro renglón.</li>
-    </ol>
-  </div>
-
-  <div class="example">
-    <h3>Definición</h3>
-    <p>Las matrices \( A \) y \( B \) son equivalentes por renglones si existe una secuencia de operaciones elementales con renglones que convierta \( A \) en \( B \).</p>
-  </div>
-
-  <div class="example">
-    <h3>Teorema 2.1</h3>
-    <p>Las matrices \( A \) y \( B \) son equivalentes por renglones si y sólo si pueden reducirse a la misma forma escalonada por renglones.</p>
-  </div>
-
-  <h2>Eliminación gaussiana</h2>
-  <p>Cuando se aplica la reducción por renglones a la matriz aumentada de un sistema de ecuaciones lineales, se crea un sistema equivalente que puede resolverse mediante sustitución hacia atrás. Todo el proceso se conoce como eliminación gaussiana.</p>
-
-  <div class="example">
-    <h3>Eliminación gaussiana</h3>
-    <ol>
-      <li>Escriba la matriz aumentada del sistema de ecuaciones lineales.</li>
-      <li>Use operaciones elementales con renglones para reducir la matriz aumentada a forma escalonada por renglones.</li>
-      <li>Con sustitución hacia atrás, resuelva el sistema equivalente que corresponda a la matriz reducida por renglones.</li>
-    </ol>
-    <h4>Comentario</h4>
-    <p>Cuando se realiza a mano, el paso 2 de la eliminación gaussiana permite muchas opciones. He aquí algunos lineamientos útiles:</p>
-    <ol>
-      <li>(a) Localice la columna de la extrema izquierda que no sea toda ceros.</li>
-      <li>(b) Cree un elemento pivote en la parte superior de esta columna. (Por lo general será más sencillo si lo convierte en 1 pivote. Vea el ejercicio 22.)</li>
-      <li>(c) Use el elemento pivote para crear ceros debajo de él.</li>
-      <li>(d) Cubra el renglón que contiene el elemento pivote y regrese al paso (a) para repetir el procedimiento sobre la matriz restante. Deténgase cuando toda la matriz esté en forma escalonada por renglones.</li>
-    </ol>
-  </div>
+    <div class="theorem">
+        <h3>Teorema 3.3</h3>
+        <p><strong>Propiedades de la multiplicación de matrices</strong></p>
+        <p>Sean \( A, B, C \) matrices (cuyos tamaños son tales que pueden realizarse las operaciones indicadas) y sea \( k \) un escalar. Entonces:</p>
+        <ul>
+            <li>\( A(BC) = (AB)C \) (Asociativa)</li>
+            <li>\( A(B + C) = AB + AC \) (Distributiva izquierda)</li>
+            <li>\( (A + B)C = AC + BC \) (Distributiva derecha)</li>
+            <li>\( k(AB) = (kA)B = A(kB) \) (Distributiva)</li>
+            <li>\( I_m A = A I_n \) si \( A \) es \( m \times n \) (Identidad multiplicativa)</li>
+        </ul>
+    </div>
     
+
+
+      <h1>Propiedades de la transpuesta</h1>
+
+    <div class="theorem">
+        <h2>Teorema 3.4</h2>
+        <p><strong>Propiedades de la transpuesta</strong></p>
+        <p>Sean \( A \) y \( B \) matrices (cuyos tamaños son tales que pueden realizarse las operaciones indicadas) y sea \( k \) un escalar. Entonces:</p>
+        <ul>
+            <li>\( (A^T)^T = A \)</li>
+            <li>\( (A + B)^T = A^T + B^T \)</li>
+            <li>\( (kA)^T = k(A^T) \)</li>
+            <li>\( (AB)^T = B^T A^T \)</li>
+            <li>\( (A^r)^T = (A^T)^r \) para todos los enteros \( r \) no negativos</li>
+        </ul>
+    </div>
+
+    <div class="theorem">
+        <h2>Teorema 3.5</h2>
+        <p>
+            <strong>a.</strong> Si \( A \) es una matriz cuadrada, entonces \( A + A^T \) es una matriz simétrica.<br>
+            <strong>b.</strong> Para cualquier matriz \( A \), \( A A^T \) y \( A^T A \) son matrices simétricas.
+        </p>
+        <p><strong>Demostración</strong> Se demuestra (a) y se deja la demostración de (b) como ejercicio 34. Simplemente demuestre que</p>
+        <p>\( (A + A^T)^T = A^T + (A^T)^T = A^T + A = A + A^T \)</p>
+        <p>(con las propiedades de la transpuesta y la conmutatividad de la suma de matrices). Por tanto, \( A + A^T \) es igual a su propia transpuesta y en consecuencia, por definición, es simétrica.</p>
+    </div>
+
+
+
+     <h1>3.3 La inversa de una matriz</h1>
+    <p>En esta sección se regresa a la descripción matricial \( A\mathbf{x} = \mathbf{b} \) de un sistema de ecuaciones lineales y se buscan formas de usar el álgebra matricial para resolver el sistema. Por analogía, considere la ecuación \( a x = b \), donde \( a, b, x \) representan números reales y se quiere resolver para \( x \). Rápidamente puede suponerse que se quiere \( x = b/a \) como la solución, pero debe recordarse que es cierto sólo si \( a \neq 0 \). Al proceder con más lentitud y suponer que \( a \neq 0 \), se llegará a la solución mediante la siguiente secuencia de pasos:</p>
+    <p>\( a\mathbf{x} = \mathbf{b} \Rightarrow \frac{1}{a}(a\mathbf{x}) = \frac{1}{a}(\mathbf{b}) \Rightarrow \left(\frac{1}{a} a\right)\mathbf{x} = \frac{\mathbf{b}}{a} \Rightarrow 1 \cdot \mathbf{x} = \frac{\mathbf{b}}{a} \Rightarrow \mathbf{x} = \frac{\mathbf{b}}{a} \)</p>
+    <p>(Este ejemplo muestra cuánto se hacen la cabeza y cuántas propiedades de aritmética y álgebra se dan por sentadas!)</p>
+    <p>Para imitar este procedimiento para la ecuación matricial \( A\mathbf{x} = \mathbf{b} \), ¿qué se necesita? Se necesita encontrar una matriz \( A' \) (análoga a \( 1/a \)) tal que \( A' A = I \), una matriz identidad (análoga a 1). Si tal matriz existe (análogo al requisito de que \( a \neq 0 \)), entonces puede hacerse la siguiente secuencia de cálculos:</p>
+    <p>\( A\mathbf{x} = \mathbf{b} \Rightarrow A'(A\mathbf{x}) = A'\mathbf{b} \Rightarrow (A' A)\mathbf{x} = A'\mathbf{b} \Rightarrow I\mathbf{x} = A'\mathbf{b} \Rightarrow \mathbf{x} = A'\mathbf{b} \)</p>
+    <p>(¿Por qué se justificaría cada uno de estos pasos?)</p>
+    <p>La meta en esta sección es determinar precisamente cuándo es posible encontrar tal matriz \( A' \). De hecho, se insistirá un poco más: se quiere no sólo \( A' A = I \), sino también \( A A' = I \). Este requisito fuerza a \( A \) y \( A' \) a ser matrices cuadradas. (¿Por qué?)</p>
+
+    <div class="theorem">
+        <h2>Definición</h2>
+        <p>Si \( A \) es una matriz de \( n \times n \), una inversa de \( A \) es una matriz \( A' \) de \( n \times n \) con la siguiente propiedad:</p>
+        <p>\( A A' = I \) y \( A' A = I \)</p>
+        <p>donde \( I = I_n \) es la matriz identidad. Si tal \( A' \) existe, entonces \( A \) es invertible.</p>
+    </div>
+
+    <div class="theorem">
+        <h2>Teorema 3.6</h2>
+        <p>Si \( A \) es una matriz invertible, entonces su inversa es única.</p>
+    </div>
+
+    <div class="theorem">
+        <h2>Teorema 3.7</h2>
+        <p>Si \( A \) es una matriz invertible de \( n \times n \), entonces el sistema de ecuaciones lineales dado por \( A\mathbf{x} = \mathbf{b} \) tiene la solución única \( \mathbf{x} = A'^{-1}\mathbf{b} \) para cualquier \( \mathbf{b} \in \mathbb{R}^n \).</p>
+    </div>
+
+    <div class="theorem">
+        <h2>Teorema 3.8</h2>
+        <p>Si \( A = \begin{bmatrix} a & b \\ c & d \end{bmatrix} \), entonces \( A \) es invertible si \( ad - bc \neq 0 \), en cuyo caso</p>
+        <p>\( A^{-1} = \frac{1}{ad - bc} \begin{bmatrix} d & -b \\ -c & a \end{bmatrix} \)</p>
+        <p>Si \( ad - bc = 0 \), entonces \( A \) no es invertible.</p>
+    </div>
+    <p>La expresión \( ad - bc \) se llama determinante de \( A \) y se denota det \( A \). Por tanto, la fórmula para la inversa de \(\begin{bmatrix} a & b \\ c & d \end{bmatrix}\) (cuando existe) es \(\frac{1}{\det A}\) multiplicado por la matriz obtenida al intercambiar las entradas en la diagonal principal y cambiar los signos en las otras dos entradas. Además de dar esta fórmula, el Teorema 3.8 dice que una matriz de \( 2 \times 2 \) es invertible si y sólo si det \( A \neq 0 \). En el capítulo 4 se verá que el determinante puede definirse para todas las matrices cuadradas y que este resultado sigue siendo cierto, aunque no hay una fórmula simple para la inversa de matrices cuadradas más grandes.</p>
+
+    <div class="example">
+        <h2>Ejemplo 3.24</h2>
+        <p><strong>Encuentre las inversas de \( A = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix} \) y \( B = \begin{bmatrix} 12 & -15 \\ 4 & -5 \end{bmatrix} \), si existen.</strong></p>
+        <p><strong>Solución</strong> Se tiene det \( A = 1(4) - 2(3) = -2 \neq 0 \), de modo que \( A \) es invertible, con</p>
+        <p>\( A^{-1} = -\frac{1}{2} \begin{bmatrix} 4 & -2 \\ -3 & 1 \end{bmatrix} = \begin{bmatrix} -2 & 1 \\ \frac{3}{2} & -\frac{1}{2} \end{bmatrix} \)</p>
+        <p>(Compruebe esto.)</p>
+        <p>Por otra parte, \( B = 12(-5) - (-15)(4) = 0 \), de modo que \( B \) no es invertible.</p>
+    </div>
+
+    <div class="example">
+        <h2>Ejemplo 3.25</h2>
+        <p><strong>Use la inversa de la matriz de coeficientes para resolver el sistema lineal</strong></p>
+        <p>\( x + 2y = 3 \)</p>
+        <p>\( 3x + 4y = -2 \)</p>
+        <p><strong>Solución</strong> La matriz de coeficientes es la matriz \( A = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix} \), cuya inversa se calculó en el ejemplo 3.24. Por el Teorema 3.7, \( A\mathbf{x} = \mathbf{b} \) tiene la solución única \( \mathbf{x} = A^{-1}\mathbf{b} \). Aquí se tiene \(\mathbf{b} = \begin{bmatrix} 3 \\ -2 \end{bmatrix} \); por tanto, la solución al sistema dado es</p>
+        <p>\( \mathbf{x} = \begin{bmatrix} -2 & 1 \\ \frac{3}{2} & -\frac{1}{2} \end{bmatrix} \begin{bmatrix} 3 \\ -2 \end{bmatrix} = \begin{bmatrix} -8 \\ \frac{1}{2} \end{bmatrix} \)</p>
+        <p><strong>Comentario</strong> Resolver un sistema lineal \( A\mathbf{x} = \mathbf{b} \) mediante \( \mathbf{x} = A^{-1}\mathbf{b} \) parecería ser un buen método. Por desgracia, excepto para matrices de coeficientes de \( 2 \times 2 \) y matrices con ciertas formas especiales, casi siempre es más rápido usar eliminación gaussiana o de Gauss-Jordan para encontrar directamente la solución. (Vea el ejercicio 13.) Más aún, la técnica del ejemplo 3.25 funciona sólo cuando la matriz de coeficientes es cuadrada e invertible, mientras que los métodos de eliminación siempre pueden aplicarse.</p>
+    </div>
+
+
 </div>
 </div>
  </form>
@@ -1870,7 +1792,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="sexto.php"
+        href="decimo.php"
         role="button"
         width="50px"
         height="50px"

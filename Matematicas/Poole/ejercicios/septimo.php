@@ -1312,7 +1312,7 @@ if ($respuesta_121 === '144') {
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 390vh;
+    height: 410vh;
     }
 
 </style>
@@ -1598,133 +1598,119 @@ function ocultarMensaje4() {
     
 <div class="seccion izquierda"> 
  
- 
-       <h2>En ℝ² (plano 2D):</h2>
-        
-        <div class="case">
-            <div class="case-title">RECTA (1 dimensión)</div>
-            <p><strong>Ecuación necesaria:</strong> <span class="equation">1</span></p>
-            <p><strong>¿Por qué?</strong> Con <span class="equation">2x + y = 3</span> reduces de <span class="dimension">2D → 1D</span></p>
-            <p><strong>Movimiento libre:</strong> <span class="movement">Solo a lo largo de la recta</span></p>
-        </div>
+  
+    <p>(b) Al usar la observación del inciso (a), se obtiene un sistema lineal cuya matriz aumentada es</p>
+  \[
+  \begin{bmatrix}
+    1 & -1 & | & 2 \\
+    0 & 1 & | & 3 \\
+    3 & -3 & | & 4
+  \end{bmatrix}
+  \]
+  <p>que se reduce a</p>
+  \[
+  \begin{bmatrix}
+    1 & 0 & | & 5 \\
+    0 & 1 & | & 3 \\
+    0 & 0 & | & -2
+  \end{bmatrix}
+  \]
+  <p>lo que revela que el sistema no tiene solución. Por tanto, en este caso, \(\begin{bmatrix} 2 \\ 3 \\ 4 \end{bmatrix}\) no es una combinación lineal de \(\begin{bmatrix} 1 \\ 0 \\ 3 \end{bmatrix}\) y \(\begin{bmatrix} -1 \\ 1 \\ -3 \end{bmatrix}\).</p>
 
-        <div class="rule">
-            <h2>Regla general:</h2>
-            <div class="math">
-                <p>\[
-                \text{Ecuaciones necesarias} = \text{Dimensión del espacio} - \text{Dimensión del objeto}
-                \]</p>
-            </div>
-        </div>
+  <p>La noción de conjunto generador está íntimamente conectada con la solución de sistemas lineales. Revise de nuevo el ejemplo 2.18. Ahí se vio que un sistema con matriz aumentada \([A | b]\) tiene una solución precisamente cuando \( b \) es una combinación lineal de las columnas de \( A \). Este es un hecho general que se resume en el siguiente teorema.</p>
 
-        <div class="examples">
-            <div class="example">
-                <p><strong>Plano en ℝ³:</strong></p>
-                <div class="math">
-                    <p>\( 3 - 2 = 1 \) ecuación</p>
-                </div>
-            </div>
-            
-            <div class="example">
-                <p><strong>Recta en ℝ³:</strong></p>
-                <div class="math">
-                    <p>\( 3 - 1 = 2 \) ecuaciones</p>
-                </div>
-            </div>
-            
-            <div class="example">
-                <p><strong>Recta en ℝ²:</strong></p>
-                <div class="math">
-                    <p>\( 2 - 1 = 1 \) ecuación</p>
-                </div>
-            </div>
-        </div>
+  <h3>Teorema 2.4</h3>
+  <p>Un sistema de ecuaciones lineales con matriz aumentada \([A | b]\) es consistente si y sólo si \( b \) es una combinación lineal de las columnas de \( A \).</p>
 
-        <div class="analogy">
-            <p style="text-align: center; font-weight: bold;">
-                ¡Cada ecuación te quita una dimensión de libertad!
-            </p>
-        </div>
+  <p>Revise nuevamente el ejemplo 2.4 e interprételo a la luz del Teorema 2.4.</p>
+  <p>(a) El sistema</p>
+  <ul>
+    <li>\( x - y = 1 \)</li>
+    <li>\( x + y = 3 \)</li>
+  </ul>
+  <p>tiene la solución única \( x = 2, y = 1 \). Por tanto,</p>
+  \[
+  2 \begin{bmatrix} 1 \\ 1 \end{bmatrix} + 1 \begin{bmatrix} -1 \\ 1 \end{bmatrix} = \begin{bmatrix} 3 \\ 3 \end{bmatrix}
+  \]
+  <p>Vea la figura 2.8(a).</p>
+  <p>(b) El sistema</p>
+  <ul>
+    <li>\( x - y = 2 \)</li>
+    <li>\( 2x - 2y = 4 \)</li>
+  </ul>
+  <p>tiene un número infinito de soluciones de la forma \( x = 2 + t, y = t \). Esto implica que</p>
+  \[
+  (2 + t) \begin{bmatrix} 1 \\ 1 \end{bmatrix} + t \begin{bmatrix} -1 \\ -2 \end{bmatrix} = \begin{bmatrix} 2 \\ 4 \end{bmatrix}
+  \]
+  <p>para todos los valores de \( t \). Geométricamente, los vectores \(\begin{bmatrix} 1 \\ 1 \end{bmatrix}\), \(\begin{bmatrix} -1 \\ -2 \end{bmatrix}\), y \(\begin{bmatrix} 2 \\ 4 \end{bmatrix}\) son todos paralelos y por tanto todos yacen a lo largo de la misma recta que pasa por el origen [vea la figura 2.8(b)].</p>
 
-    <hr>
-    
-    
+  <img src="../../../img/guia_248.png" alt="" width="600">
 
-    <h2>2.1 Introducción a los sistemas de ecuaciones lineales</h2>
-  <p>Recuerde que la ecuación general de una recta en \( \mathbb{R}^2 \) es de la forma</p>
-  <p>\( ax + by = c \)</p>
-  <p>y que la ecuación general de un plano en \( \mathbb{R}^3 \) es de la forma</p>
-  <p>\( ax + by + cz = d \)</p>
-  <p>Las ecuaciones de esta forma se llaman ecuaciones lineales.</p>
 
-  <div class="example">
-    <h3>Definición</h3>
-    <p>Una ecuación lineal en las \( n \) variables \( x_1, x_2, \ldots, x_n \) es una ecuación que puede escribirse en la forma</p>
-    <p>\( a_1 x_1 + a_2 x_2 + \cdots + a_n x_n = b \)</p>
-    <p>donde los coeficientes \( a_1, a_2, \ldots, a_n \) y el término constante \( b \) son constantes.</p>
-  </div>
+  <h2>(c) El sistema</h2>
+  <ul>
+    <li>\( x - y = 1 \)</li>
+    <li>\( x - y = 3 \)</li>
+  </ul>
+  <p>no tiene soluciones, de modo que no hay valores de \( x \) y \( y \) que satisfagan</p>
+  \[
+  x \begin{bmatrix} 1 \\ 1 \end{bmatrix} + y \begin{bmatrix} -1 \\ -1 \end{bmatrix} = \begin{bmatrix} 1 \\ 3 \end{bmatrix}
+  \]
+  <p>En este caso, \(\begin{bmatrix} 1 \\ 1 \end{bmatrix}\) y \(\begin{bmatrix} -1 \\ -1 \end{bmatrix}\) son paralelos, pero \(\begin{bmatrix} 1 \\ 3 \end{bmatrix}\) no yace a lo largo de la misma recta que pasa por el origen [vea la figura 2.8(c)].</p>
 
-  <div class="example">
-    <h3>Ejemplo 2.1</h3>
-    <p>Las siguientes ecuaciones son lineales:</p>
-    <p>\( 3x - 4y = -1 \)</p>
-    <p>\( \frac{1}{2} x + \frac{15}{2} t = 9 \)</p>
-    <p>\( x_1 + 5x_2 = 3 - x_3 + 2x_4 \)</p>
-    <p>\( \sqrt{2} x + \frac{\pi}{4} y - \left( \sin \frac{\pi}{5} \right) z = 1 \)</p>
-    <p>\( 3.2x_1 - 0.01x_2 = 4.6 \)</p>
-    <p>Observe que la tercera ecuación es lineal porque puede reescribirse en la forma \( x_1 + 5x_2 + x_3 - 2x_4 = 3 \). También es importante notar que, aunque en estos ejemplos (y en la mayoría de las aplicaciones) los coeficientes y términos constantes son números reales, en algunos ejemplos y aplicaciones serán números complejos o miembros de \( \mathbb{Z}_p \) para algún número primo \( p \).</p>
-  </div>
+  <p>Con frecuencia se estará interesado en la colección de todas las combinaciones lineales de un conjunto dado de vectores.</p>
 
-  <div class="example">
-    <h3>Las siguientes ecuaciones no son lineales:</h3>
-    <p>\( xy + 2z = 1 \)</p>
-    <p>\( x_1^2 - x_2 = 3 \)</p>
-    <p>\( \frac{x}{y} + z = 2 \)</p>
-    <p>\( \sqrt{2}x + \frac{\pi}{4} y - \sin \left( \frac{\pi}{5} z \right) = 1 \)</p>
-    <p>\( \sin x_1 - 3x_2 + 2^y = 0 \)</p>
-    <p>Por tanto, las ecuaciones lineales no contienen productos, recíprocos u otras funciones de las variables; las variables sólo aparecen a la primera potencia y sólo se multiplican por constantes. Ponga particular atención al cuarto ejemplo en cada lista: ¿por qué la cuarta ecuación en la primera lista es lineal, pero la cuarta ecuación en la segunda lista no lo es?</p>
-  </div>
+  <h3>Definición</h3>
+  <p>Si \( S = \{ v_1, v_2, \ldots, v_k \} \) es un conjunto de vectores en \(\mathbb{R}^n\), entonces el conjunto de todas las combinaciones lineales de \( v_1, v_2, \ldots, v_k \) se llama el generador de \( S \). Si gen(\( S \)) = \(\mathbb{R}^n\), entonces \( S \) se llama conjunto generador de \(\mathbb{R}^n\).</p>
 
-  <div class="example">
-    <h3>Una solución de una ecuación lineal</h3>
-    <p>Una solución de una ecuación lineal \( a_1 x_1 + a_2 x_2 + \cdots + a_n x_n = b \) es un vector \( [s_1, s_2, \ldots, s_n] \) cuyos componentes satisfacen la ecuación cuando se sustituye \( x_i = s_i \), \( x_2 = s_2, \ldots, x_n = s_n \).</p>
-  </div>
+  <h3>Ejemplo 2.19</h3>
+  <p>Demuestre que \(\mathbb{R}^2 = \text{gen}\left( \begin{bmatrix} 2 \\ -1 \end{bmatrix}, \begin{bmatrix} 1 \\ 3 \end{bmatrix} \right)\).</p>
+  <h4>Solución</h4>
+  <p>Necesita demostrar que un vector arbitrario \(\begin{bmatrix} a \\ b \end{bmatrix}\) puede escribirse como una combinación lineal de \(\begin{bmatrix} 2 \\ -1 \end{bmatrix}\) y \(\begin{bmatrix} 1 \\ 3 \end{bmatrix}\); esto es, debe demostrar que la ecuación \( x \begin{bmatrix} 2 \\ -1 \end{bmatrix} + y \begin{bmatrix} 1 \\ 3 \end{bmatrix} = \begin{bmatrix} a \\ b \end{bmatrix} \) siempre puede resolverse para \( x \) y \( y \) (en términos de \( a \) y \( b \), sin importar los valores de \( a \) y \( b \).</p>
 
-  <div class="example">
-    <h3>Un sistema de ecuaciones lineales</h3>
-    <p>Un sistema de ecuaciones lineales es un conjunto finito de ecuaciones lineales, cada una con las mismas variables. Una solución de un sistema de ecuaciones lineales es un vector que simultáneamente es una solución de cada ecuación en el sistema. El conjunto solución de un sistema de ecuaciones lineales es el conjunto de todas las soluciones del sistema. Al proceso de encontrar el conjunto solución de un sistema de ecuaciones lineales se le conocerá como "resolver el sistema".</p>
-  </div>
+  <p>La matriz aumentada es \(\begin{bmatrix} 2 & 1 & | & a \\ -1 & 3 & | & b \end{bmatrix}\) y la reducción por renglones produce</p>
+  \[
+  \begin{bmatrix} 2 & 1 & | & a \\ -1 & 3 & | & b \end{bmatrix}
+  \xrightarrow{R_1 \leftrightarrow R_2}
+  \begin{bmatrix} -1 & 3 & | & b \\ 2 & 1 & | & a \end{bmatrix}
+  \xrightarrow{R_2 + 2R_1}
+  \begin{bmatrix} -1 & 3 & | & b \\ 0 & 7 & | & a + 2b \end{bmatrix}
+  \]
+  <p>en cuyo punto es claro que el sistema tiene una solución (única). (¿Por qué?) Si continúa, obtiene</p>
+  \[
+  \begin{bmatrix} -1 & 3 & | & b \\ 0 & 7 & | & a + 2b \end{bmatrix}
+  \xrightarrow{\frac{1}{7} R_2}
+  \begin{bmatrix} -1 & 3 & | & b \\ 0 & 1 & | & (a + 2b)/7 \end{bmatrix}
+  \xrightarrow{R_1 - 3R_2}
+  \begin{bmatrix} -1 & 0 & | & (b - 3a)/7 \\ 0 & 1 & | & (a + 2b)/7 \end{bmatrix}
+  \]
+  <p>de donde se ve que \( x = (3a - b)/7 \) y \( y = (a + 2b)/7 \). Por tanto, para cualquier elección de \( a \) y \( b \), se tiene</p>
+  \[
+  \left( \frac{3a - b}{7} \right) \begin{bmatrix} 2 \\ -1 \end{bmatrix} + \left( \frac{a + 2b}{7} \right) \begin{bmatrix} 1 \\ 3 \end{bmatrix} = \begin{bmatrix} a \\ b \end{bmatrix}
+  \]
+  <p>(Compruebe esto.)</p>
 
-  <div class="example">
-    <h3>Ejemplo 2.4</h3>
-    <p>Resuelva los siguientes sistemas de ecuaciones lineales:</p>
-    <p>(a) \( x - y = 1 \) <br> \( x + y = 3 \)</p>
-    <p>(b) \( x - y = 2 \) <br> \( 2x - 2y = 4 \)</p>
-    <p>(c) \( x - y = 1 \) <br> \( x - y = 3 \)</p>
-  </div>
+  <h4>Comentario</h4>
+  <p>También es cierto que \(\mathbb{R}^2 = \text{gen}\left( \begin{bmatrix} 2 \\ -1 \end{bmatrix}, \begin{bmatrix} 1 \\ 3 \end{bmatrix}, \begin{bmatrix} 5 \\ 7 \end{bmatrix} \right)\): si, dado \(\begin{bmatrix} a \\ b \end{bmatrix}\), puede encontrar \( x \) y \( y \) tales que \( x \begin{bmatrix} 2 \\ -1 \end{bmatrix} + y \begin{bmatrix} 1 \\ 3 \end{bmatrix} = \begin{bmatrix} a \\ b \end{bmatrix} \), entonces también se tiene</p>
+  \[
+  x \begin{bmatrix} 2 \\ -1 \end{bmatrix} + y \begin{bmatrix} 1 \\ 3 \end{bmatrix} + 0 \begin{bmatrix} 5 \\ 7 \end{bmatrix} = \begin{bmatrix} a \\ b \end{bmatrix}
+  \]
+  <p>De hecho, cualquier conjunto de vectores que contenga un conjunto generador para \(\mathbb{R}^2\) también será un conjunto generador para \(\mathbb{R}^2\) (vea el ejercicio 20).</p>
 
-  <div class="example">
-    <h3>Solución</h3>
-    <p>(a) Al sumar las dos ecuaciones se obtiene \( 2x = 4 \), de modo que \( x = 2 \), de donde se encuentra que \( y = 1 \). Una comprobación rápida confirma que \( [2, 1] \) es de hecho una solución de ambas ecuaciones. Que esta es la única solución que puede verse al observar que esta solución corresponde al (único) punto de intersección \( (2, 1) \) de las rectas con ecuaciones \( x - y = 1 \) y \( x + y = 3 \), como se muestra en la figura 2.1(a). Por tanto, \( [2, 1] \) es una solución única.</p>
-    <p>(b) La segunda ecuación en este sistema es justo el doble de la primera, de modo que las soluciones corresponden sólo a la primera ecuación: a saber, los puntos sobre la recta \( x - y = 2 \). Las mismas pueden representarse paramétricamente como \( [2 + t, t] \). Por tanto, este sistema tiene un número infinito de soluciones (figura 2.1(b)).</p>
-    <p>(c) Dos números \( x \) y \( y \) no pueden tener simultáneamente una diferencia de 1 y 3. Por la segunda ecuación de la primera, lo que produce la conclusión absurda \( 0 = -2 \). Como muestra la figura 2.1(c), en este caso las rectas para las ecuaciones son paralelas.</p>
-  </div>
-<img src="../../../img/guia_246.png" alt="" width="600">
-  <div class="example">
-    <h3>Resolución de un sistema de ecuaciones lineales</h3>
-    <p>Dos sistemas lineales se llaman equivalentes si tienen los mismos conjuntos solución. Por ejemplo,</p>
-    <p>\( x - y = 1 \) <br> \( x + y = 3 \)</p>
-    <p>es equivalente, pues ambos tienen la solución única \( [2, 1] \) (Comprobable).</p>
-  </div>
+  <p>El siguiente ejemplo es un importante caso (sencillo) de un conjunto generador. Muchas veces encontrará versiones de este ejemplo.</p>
 
-  <div class="example">
-    <h3>Un sistema de ecuaciones lineales con coeficientes reales tiene</h3>
-    <p>(a) una solución única (un sistema consistente) o</p>
-    <p>(b) un número infinito de soluciones (un sistema consistente) o</p>
-    <p>(c) ninguna solución (un sistema inconsistente).</p>
-  </div>
 
-   
+  <h3>Ejemplo 2.20</h3>
+  <p>Sean \( e_1, e_2, e_3 \) los vectores unitarios estándar en \(\mathbb{R}^3\). Entonces, para cualquier vector \(\begin{bmatrix} x \\ y \\ z \end{bmatrix}\), se tiene</p>
+  \[
+  \begin{bmatrix} x \\ y \\ z \end{bmatrix} = x \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix} + y \begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix} + z \begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix} = x e_1 + y e_2 + z e_3
+  \]
+  <p>Por tanto, \(\mathbb{R}^3 = \text{gen}(e_1, e_2, e_3)\).</p>
+  <p>No debe tener dificultad para ver que, en general, \(\mathbb{R}^n = \text{gen}(e_1, e_2, \ldots, e_n)\).</p>
+
+  <p>Cuando el generador de un conjunto de vectores en \(\mathbb{R}^n\) no es todo de \(\mathbb{R}^n\), es razonable pedir una descripción del generador de los vectores.</p>
+
+  
 </div>
 
 
@@ -1732,136 +1718,104 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
    
-    <h2>Métodos directos para resolver sistemas lineales</h2>
-  <p>En esta sección se verá un procedimiento sistemático general para resolver un sistema de ecuaciones lineales. Este procedimiento se basa en la idea de reducir la matriz aumentada del sistema dado a una forma que luego pueda resolverse mediante sustitución hacia atrás. El método es directo en el sentido de que conduce directamente a la solución (si existe una) en un número finito de pasos. En la sección 2.5 se considerarán algunos métodos indirectos que funcionan en una forma completamente diferente.</p>
+      <h3>Ejemplo 2.21</h3>
+  <p>Encuentre el generador de \(\begin{bmatrix} 1 \\ 0 \\ 3 \end{bmatrix}, \begin{bmatrix} -1 \\ 1 \\ -3 \end{bmatrix}\) (Vea el ejemplo 2.18).</p>
 
-  <h3>Matrices y forma escalonada</h3>
-  <p>Existen dos importantes matrices asociadas con un sistema lineal. La matriz de coeficientes contiene los coeficientes de las variables, y la matriz aumentada (que ya se encontró) es la matriz coeficiente aumentada por una columna adicional que contiene los términos constantes.</p>
+  <h4>Solución</h4>
+  <p>Al pensar geométricamente, puede ver que el conjunto de todas las combinaciones lineales de \(\begin{bmatrix} 1 \\ 0 \\ 3 \end{bmatrix}, \begin{bmatrix} -1 \\ 1 \\ -3 \end{bmatrix}\) es justo el plano que pasa por el origen con</p>
+  \[
+  \begin{bmatrix} x \\ y \\ z \end{bmatrix} = s \begin{bmatrix} 1 \\ 0 \\ 3 \end{bmatrix} + t \begin{bmatrix} -1 \\ 1 \\ -3 \end{bmatrix}
+  \]
+  <p>como vectores directores (figura 2.9). La ecuación vectorial de este plano es</p>
+  \[
+  \begin{bmatrix} x \\ y \\ z \end{bmatrix} = s \begin{bmatrix} 1 \\ 0 \\ 3 \end{bmatrix} + t \begin{bmatrix} -1 \\ 1 \\ -3 \end{bmatrix}
+  \]
+  <p>que es sólo otra forma de decir que \(\begin{bmatrix} x \\ y \\ z \end{bmatrix}\) está en el generador de \(\begin{bmatrix} 1 \\ 0 \\ 3 \end{bmatrix}, \begin{bmatrix} -1 \\ 1 \\ -3 \end{bmatrix}\).</p>
+  <p>Vea el ejercicio 17.</p>
 
-  <div class="example">
-    <p>Para el sistema</p>
-    <p>\( 2x + y - z = 3 \)</p>
-    <p>\( x + 5z = 1 \)</p>
-    <p>\( -x + 3y - 2z = 0 \)</p>
-    <p class="matrix">La matriz de coeficientes es</p>
-    <p class="matrix">\[
-    \begin{bmatrix}
-    2 & 1 & -1 \\
-    1 & 0 & 5 \\
-    -1 & 3 & -2
-    \end{bmatrix}
-    \]</p>
-    <p class="matrix">y la matriz aumentada es</p>
-    <p class="matrix">\[
-    \begin{bmatrix}
-    2 & 1 & -1 & | & 3 \\
-    1 & 0 & 5 & | & 1 \\
-    -1 & 3 & -2 & | & 0
-    \end{bmatrix}
-    \]</p>
-  </div>
+  <p>Suponga que quiere obtener la ecuación general de este plano. Existen muchas formas de proceder. Una es usar el hecho de que la ecuación \( ax + by + cz = 0 \) debe ser satisfecha por los puntos \((1, 0, 3)\) y \((-1, 1, -3)\), determinando por los vectores directores. Entonces la sustitución conduce a un sistema de ecuaciones en \( a, b \) y \( c \). (Vea el ejercicio 17.)</p>
 
-  <div class="example">
-    <h3>Definición</h3>
-    <p>Una matriz está en forma escalonada por renglones si satisface las siguientes propiedades:</p>
-    <ol>
-      <li>Cualquier renglón que consista completamente de ceros está en la parte baja.</li>
-      <li>En cada renglón distinto de cero, el primer elemento distinto de cero (llamado elemento pivote) está en una columna a la izquierda de cualquier elemento pivote bajo él.</li>
-    </ol>
-    <p>Observe que estas propiedades garantizan que los elementos pivote formen un patrón en escalera. En particular, en cualquier columna que contenga un elemento pivote, las entradas bajo el elemento pivote son cero, como ilustran los siguientes ejemplos.</p>
-  </div>
+  <p>Otro método es usar el sistema de ecuaciones que surgen de la ecuación vectorial:</p>
+  \[
+  s - t = x
+  \]
+  \[
+  t = y
+  \]
+  \[
+  3s - 3t = z
+  \]
+  <p>Si la matriz aumentada se reduce por renglones, se obtiene</p>
+  \[
+  \begin{bmatrix} 1 & -1 & | & x \\ 0 & 1 & | & y \\ 3 & -3 & | & z \end{bmatrix}
+  \xrightarrow{R_3 - 3R_1}
+  \begin{bmatrix} 1 & -1 & | & x \\ 0 & 1 & | & y \\ 0 & 0 & | & z - 3x \end{bmatrix}
+  \]
+  <p>Ahora se sabe que este sistema es inconsistente, pues \(\begin{bmatrix} x \\ y \\ z \end{bmatrix}\) está en el generador de \(\begin{bmatrix} 1 \\ 0 \\ 3 \end{bmatrix}, \begin{bmatrix} -1 \\ 1 \\ -3 \end{bmatrix}\), por suposición. De modo que se debe tener \( z - 3x = 0 \), en la forma más estándar), lo que da la ecuación general que se busca.</p>
 
-  <div class="example">
-    <h3>Ejemplo 2.7</h3>
-    <p>Las siguientes matrices están en forma escalonada por renglones:</p>
-    <p class="matrix">\[
-    \begin{bmatrix}
-    2 & 4 & 1 \\
-    0 & -1 & 2 \\
-    0 & 0 & 0
-    \end{bmatrix}
-    \quad
-    \begin{bmatrix}
-    1 & 0 & 1 \\
-    0 & 1 & 5 \\
-    0 & 0 & 4
-    \end{bmatrix}
-    \quad
-    \begin{bmatrix}
-    1 & 1 & 2 & 1 \\
-    0 & 0 & 1 & 3 \\
-    0 & 0 & 0 & 0
-    \end{bmatrix}
-    \quad
-    \begin{bmatrix}
-    0 & 2 & 0 & 1 & -1 & 3 \\
-    0 & 0 & -1 & 1 & 2 & 2 \\
-    0 & 0 & 0 & 0 & 4 & 0 \\
-    0 & 0 & 0 & 0 & 0 & 5
-    \end{bmatrix}
-    \]</p>
-    <p>Si una matriz en forma escalonada por renglones en realidad es la matriz aumentada de un sistema lineal, el sistema es bastante fácil de resolver mediante sustitución hacia atrás solamente.</p>
-  </div>
-
-  <div class="example">
-    <h3>Ejemplo 2.8</h3>
-    <p>Si suponemos que cada una de las matrices en el ejemplo 2.7 es una matriz aumentada, es decir los sistemas correspondientes de ecuaciones lineales y resueltos.</p>
-    <h4>Solución</h4>
-    <p>Recuerde primero que la última columna en una matriz aumentada es el vector de términos constantes. Entonces la primera matriz corresponde al sistema</p>
-    <p>\( 2x_1 + 4x_2 = 1 \)</p>
-    <p>\( -x_2 = 2 \)</p>
-    <p>(Advierta que se eliminó la última ecuación \( 0 = 0 \) o \( 0x_1 + 0x_2 = 0 \), que claramente es satisfecible por cualquier valor de \( x_1, y x_2 \).) La sustitución hacia atrás produce \( x_2 = -2 \) y entonces \( 2x_1 - 4(-2) = 9 \), de modo que \( 2x_1 = \frac{9}{2} \). La solución es \( \left[\frac{9}{2}, -2\right] \).</p>
-    <p>La segunda matriz tiene el sistema correspondiente</p>
-    <p>\( x_1 = 1 \)</p>
-    <p>\( x_2 = 5 \)</p>
-    <p>\( 0 = 4 \)</p>
-    <p>La última ecuación representa \( 0x_1 + 0x_2 = 4 \), que claramente no tiene solución. Por tanto, este sistema no tiene soluciones. Para el sistema que corresponde a la tercera matriz, se tiene</p>
-    <p>\( x_1 + x_2 + 2x_3 = 1 \)</p>
-    <p>\( x_3 = 3 \)</p>
-    <p>de modo que \( x_1 = 1 - 2(3) - x_2 = -5 - x_2 \). Existe un número infinito de soluciones, pues a \( x_2 \) se le puede asignar cualquier valor \( t \) para obtener la solución paramétrica \( [-5 - t, t, 3] \).</p>
-  </div>
-  
-    <hr>
-    <div class="example">
-    <h3>Definición</h3>
-    <p>Las siguientes operaciones elementales con renglones pueden realizarse sobre una matriz:</p>
-    <ol>
-      <li>Intercambiar dos renglones.</li>
-      <li>Multiplicar un renglón por una constante distinta de cero.</li>
-      <li>Sumar un múltiplo de un renglón a otro renglón.</li>
-    </ol>
-  </div>
-
-  <div class="example">
-    <h3>Definición</h3>
-    <p>Las matrices \( A \) y \( B \) son equivalentes por renglones si existe una secuencia de operaciones elementales con renglones que convierta \( A \) en \( B \).</p>
-  </div>
-
-  <div class="example">
-    <h3>Teorema 2.1</h3>
-    <p>Las matrices \( A \) y \( B \) son equivalentes por renglones si y sólo si pueden reducirse a la misma forma escalonada por renglones.</p>
-  </div>
-
-  <h2>Eliminación gaussiana</h2>
-  <p>Cuando se aplica la reducción por renglones a la matriz aumentada de un sistema de ecuaciones lineales, se crea un sistema equivalente que puede resolverse mediante sustitución hacia atrás. Todo el proceso se conoce como eliminación gaussiana.</p>
-
-  <div class="example">
-    <h3>Eliminación gaussiana</h3>
-    <ol>
-      <li>Escriba la matriz aumentada del sistema de ecuaciones lineales.</li>
-      <li>Use operaciones elementales con renglones para reducir la matriz aumentada a forma escalonada por renglones.</li>
-      <li>Con sustitución hacia atrás, resuelva el sistema equivalente que corresponda a la matriz reducida por renglones.</li>
-    </ol>
-    <h4>Comentario</h4>
-    <p>Cuando se realiza a mano, el paso 2 de la eliminación gaussiana permite muchas opciones. He aquí algunos lineamientos útiles:</p>
-    <ol>
-      <li>(a) Localice la columna de la extrema izquierda que no sea toda ceros.</li>
-      <li>(b) Cree un elemento pivote en la parte superior de esta columna. (Por lo general será más sencillo si lo convierte en 1 pivote. Vea el ejercicio 22.)</li>
-      <li>(c) Use el elemento pivote para crear ceros debajo de él.</li>
-      <li>(d) Cubra el renglón que contiene el elemento pivote y regrese al paso (a) para repetir el procedimiento sobre la matriz restante. Deténgase cuando toda la matriz esté en forma escalonada por renglones.</li>
-    </ol>
-  </div>
+  <h4>Comentario</h4>
+  <p>Un vector normal al plano en este ejemplo también está dado por el producto cruz</p>
+  \[
+  \begin{bmatrix} 1 \\ 0 \\ 3 \end{bmatrix} \times \begin{bmatrix} -1 \\ 1 \\ -3 \end{bmatrix} = \begin{bmatrix} -3 \\ 0 \\ 1 \end{bmatrix}
+  \]
     
+  <img src="../../../img/guia_249.png" alt="">
+
+  <hr>
+
+  <h2>Independencia lineal</h2>
+  <p>En el ejemplo 2.18 se encontró que \( 3 \begin{bmatrix} 1 \\ 0 \\ 3 \end{bmatrix} + 2 \begin{bmatrix} -1 \\ 1 \\ -3 \end{bmatrix} = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix} \). Abrevie esta ecuación como \( 3u + 2v = w \). El vector \( w \) "depende" de \( u \) y \( v \) en el sentido de que es una combinación lineal de ellos. Se dice que un conjunto de vectores es linealmente dependiente si uno de ellos puede escribirse como una combinación lineal de los otros. Note que también se tiene \( u = -\frac{2}{3} v + \frac{1}{3} w \) y \( v = -\frac{3}{2} u + \frac{1}{2} w \). Para franquear la cuestión de cuál vector expresar en términos del resto, a continuación se enuncia la definición formal:</p>
+
+  <h3>Definición</h3>
+  <p>Un conjunto de vectores \( v_1, v_2, \ldots, v_k \) es linealmente dependiente si existen escalares \( c_1, c_2, \ldots, c_k \), al menos uno de los cuales no es cero, tales que</p>
+  \[
+  c_1 v_1 + c_2 v_2 + \cdots + c_k v_k = 0
+  \]
+  <p>Un conjunto de vectores que no es linealmente dependiente se llama linealmente independiente.</p>
+
+  <h3>Comentarios</h3>
+  <ul>
+    <li>En la definición de independencia lineal, el requisito de que al menos uno de los escalares \( c_1, c_2, \ldots, c_k \) debe ser distinto de cero admite la posibilidad de que alguno pueda ser cero. En el ejemplo anterior, \( u, v, w \) son linealmente dependientes, pues \( 3u + 2v - w = 0 \); de hecho, todos los escalares son distintos de cero. Por otra parte,</li>
+    \[
+    \begin{bmatrix} 2 \\ 6 \end{bmatrix} - 2 \begin{bmatrix} 1 \\ 3 \end{bmatrix} + 0 \begin{bmatrix} 4 \\ 1 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
+    \]
+    <li>de modo que \(\begin{bmatrix} 2 \\ 6 \end{bmatrix}, \begin{bmatrix} 1 \\ 3 \end{bmatrix}, \begin{bmatrix} 4 \\ 1 \end{bmatrix}\) son linealmente dependientes, pues al menos uno (de hecho, dos) de los tres escalares 1, -2 y 0 es distinto de cero. (Note que la dependencia real surge simplemente del hecho de que los primeros dos vectores son múltiplos.) (Vea el ejercicio 44.)</li>
+    <li>Dado que \( 0 v_1 + 0 v_2 + \cdots + 0 v_k = 0 \) para cualesquiera vectores \( v_1, v_2, \ldots, v_k \) la dependencia lineal en esencia dice que el vector cero puede expresarse como una combinación lineal no trivial de \( v_1, v_2, \ldots, v_k \). Por tanto, independencia lineal significa que el vector cero puede expresarse como una combinación lineal de \( v_1, v_2, \ldots, v_k \) sólo en la forma trivial: \( c_1 v_1 + c_2 v_2 + \cdots + c_k v_k = 0 \) sólo si \( c_1 = 0, c_2 = 0, \ldots, c_k = 0 \).</li>
+  </ul>
+
+  <h3>Teorema 2.5</h3>
+  <p>Los vectores \( v_1, v_2, \ldots, v_m \) en \(\mathbb{R}^n\) son linealmente dependientes si y sólo si al menos uno de los vectores puede expresarse como una combinación lineal de los otros.</p>
+
+  <h3>Ejemplo 2.22</h3>
+  <p>Cualquier conjunto de vectores que contenga el vector cero es linealmente dependiente. Pues si \( 0, v_2, \ldots, v_m \) están en \(\mathbb{R}^n\) entonces puede encontrarse una combinación no trivial de la forma \( c_1 0 + c_2 v_2 + \cdots + c_m v_m = 0 \) al hacer \( c_1 = 1 \) y \( c_2 = c_3 = \cdots = c_m = 0 \).</p>
+
+  <p>
+    es decir es como la condicion dice al menos 1 c distinto de 0, entonces si tengo un vector cero, el unico c disntio de cero lo puedo reemplazar en donde se multiplica por el vector 0
+  </p>
+  <hr>
+
+
+  <div class="theorem">
+        <h2>Teorema 2.6</h2>
+        <p>Sean \( v_1, v_2, \ldots, v_m \) vectores (columna) en \( \mathbb{R}^n \) y sea \( A \) la matriz de \( n \times m \) \( \begin{bmatrix} v_1 & v_2 & \cdots & v_m \end{bmatrix} \) con dichos vectores como sus columnas. Entonces \( v_1, v_2, \ldots, v_m \) son linealmente dependientes si y sólo si el sistema lineal homogéneo con matriz aumentada \( [A \, | \, 0] \) tiene una solución no trivial.</p>
+    </div>
+
+    <div class="theorem">
+        <h2>Teorema 2.7</h2>
+        <p>Sean \( v_1, v_2, \ldots, v_m \) vectores (renglón) en \( \mathbb{R}^n \) y sea \( A \) la matriz de \( m \times n \) \( \begin{bmatrix} v_1 \\ v_2 \\ \vdots \\ v_m \end{bmatrix} \) con dichos vectores como sus renglones. Entonces \( v_1, v_2, \ldots, v_m \) son linealmente dependientes si y sólo si \( \text{rango}(A) < m \).</p>
+    </div>
+
+    <div class="theorem">
+        <h2>Teorema 2.8</h2>
+        <p>Cualquier conjunto de \( m \) vectores en \( \mathbb{R}^n \) es linealmente dependiente si \( m > n \).</p>
+    </div>
+
+    <hr>
+    <p>Una "solución trivial" en el contexto de un sistema lineal homogéneo, como el mencionado en el Teorema 2.6, se refiere a la solución en la que todas las variables toman el valor cero. Es decir, si el sistema es de la forma \( A\mathbf{x} = \mathbf{0} \), donde \( A \) es la matriz y \( \mathbf{x} \) es el vector de variables, la solución trivial es \( \mathbf{x} = \mathbf{0} \) (un vector de ceros).</p>
+    <p>En el caso del teorema, se dice que los vectores \( v_1, v_2, \ldots, v_m \) son linealmente dependientes si y solo si el sistema homogéneo \( [A \, | \, 0] \) tiene una solución no trivial, lo que significa que existe al menos una solución donde no todas las variables son cero. Esto indica que los vectores pueden expresarse como combinaciones lineales de los demás, con coeficientes no todos nulos.</p>
+    <hr>
+
+
 </div>
 </div>
  </form>
@@ -1870,7 +1824,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="sexto.php"
+        href="octavo.php"
         role="button"
         width="50px"
         height="50px"

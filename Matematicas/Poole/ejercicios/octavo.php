@@ -1312,7 +1312,7 @@ if ($respuesta_121 === '144') {
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 390vh;
+    height: 408vh;
     }
 
 </style>
@@ -1598,133 +1598,79 @@ function ocultarMensaje4() {
     
 <div class="seccion izquierda"> 
  
- 
-       <h2>En ℝ² (plano 2D):</h2>
-        
-        <div class="case">
-            <div class="case-title">RECTA (1 dimensión)</div>
-            <p><strong>Ecuación necesaria:</strong> <span class="equation">1</span></p>
-            <p><strong>¿Por qué?</strong> Con <span class="equation">2x + y = 3</span> reduces de <span class="dimension">2D → 1D</span></p>
-            <p><strong>Movimiento libre:</strong> <span class="movement">Solo a lo largo de la recta</span></p>
-        </div>
+    <h1>3.0 Introducción: matrices en acción</h1>
+    <p>En este capítulo se estudiarán las matrices por derecho propio. Ya se usaron matrices, en forma de matrices aumentadas, para registrar información acerca de los sistemas de ecuaciones lineales y para ayudar a agilizar los cálculos que los involucran. Ahora verá que las matrices tienen propiedades algebraicas propias, lo que permite realizar cálculos con ellas, sujetas a las reglas del álgebra matricial. Más aún, observará que las matrices no son objetos estáticos que registran información y datos; en vez de ello, representan ciertos tipos de funciones que "actúan" sobre los vectores y los transforman en otros vectores. Tales "transformaciones matriciales" comenzarán a tener un papel clave en el estudio del álgebra lineal y arrojarán nueva luz en lo que ya aprendió acerca de los vectores y los sistemas de ecuaciones lineales. Además, las matrices surgirán en muchas formas diferentes a las de las matrices aumentadas; al final de este capítulo se explorarán algunas de las muchas aplicaciones de las matrices.</p>
 
-        <div class="rule">
-            <h2>Regla general:</h2>
-            <div class="math">
-                <p>\[
-                \text{Ecuaciones necesarias} = \text{Dimensión del espacio} - \text{Dimensión del objeto}
-                \]</p>
-            </div>
-        </div>
+    <h2>En esta sección se considerarán algunos ejemplos simples para ilustrar cómo las matrices pueden 
+    <strong>transformar</strong>    
+      a los 
+    vectores. En el proceso tendrá un primer vistazo de la "aritmética matricial".</h2>
+    <h3>Considere las ecuaciones</h3>
+    <p>\( y_1 = x_1 + 2x_2 \)</p>
+    <p>\( y_2 = 3x_2 \)</p>
 
-        <div class="examples">
-            <div class="example">
-                <p><strong>Plano en ℝ³:</strong></p>
-                <div class="math">
-                    <p>\( 3 - 2 = 1 \) ecuación</p>
-                </div>
-            </div>
-            
-            <div class="example">
-                <p><strong>Recta en ℝ³:</strong></p>
-                <div class="math">
-                    <p>\( 3 - 1 = 2 \) ecuaciones</p>
-                </div>
-            </div>
-            
-            <div class="example">
-                <p><strong>Recta en ℝ²:</strong></p>
-                <div class="math">
-                    <p>\( 2 - 1 = 1 \) ecuación</p>
-                </div>
-            </div>
-        </div>
+    <p>Puede considerar que estas ecuaciones describen una transformación del vector \( \mathbf{x} = \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} \) en el vector \( \mathbf{y} = \begin{bmatrix} y_1 \\ y_2 \end{bmatrix} \). Si se denota con \( F \) la matriz de coeficientes del lado derecho, entonces \( F = \begin{bmatrix} 1 & 2 \\ 0 & 3 \end{bmatrix} \) y puede reescribir la transformación como</p>
+    <p>\( \begin{bmatrix} y_1 \\ y_2 \end{bmatrix} = \begin{bmatrix} 1 & 2 \\ 0 & 3 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} \).</p>
 
-        <div class="analogy">
-            <p style="text-align: center; font-weight: bold;">
-                ¡Cada ecuación te quita una dimensión de libertad!
-            </p>
-        </div>
+    <p>De manera más sucinta, \( \mathbf{y} = F\mathbf{x} \) (Piense en esta expresión como el análogo de la notación funcional \( y = f(x) \) a la que está acostumbrado: \( \mathbf{x} \) aquí es la "variable" independiente, \( \mathbf{y} \) es la "variable" dependiente y \( F \) es el nombre de la "función").</p>
+
+    <p>Por tanto, si \( \mathbf{x} = \begin{bmatrix} -2 \\ 1 \end{bmatrix} \), entonces las ecuaciones (1) producen</p>
+    <p>\( y_1 = -2 + 2 \cdot 1 = 0 \)</p>
+    <p>\( y_2 = 3 \cdot 1 = 3 \) o \( \mathbf{y} = \begin{bmatrix} 0 \\ 3 \end{bmatrix} \).</p>
+
+    <p>Esta expresión puede escribirse como \( \begin{bmatrix} 0 \\ 3 \end{bmatrix} = \begin{bmatrix} 1 & 2 \\ 0 & 3 \end{bmatrix} \begin{bmatrix} -2 \\ 1 \end{bmatrix} \).</p>
+
+    <h2>Operaciones con matrices</h2>
+    <p>Aunque ya se ha topado con las matrices, se comienza por enunciar una definición formal y registrar algunos hechos para futura referencia.</p>
+
+    <h3>Definición</h3>
+    <p>Una matriz es un arreglo rectangular de números llamados entradas, o elementos, de la matriz.</p>
+
+    <p>Los siguientes son ejemplos de matrices:</p>
+    <p class="matrix">\(\begin{bmatrix} 1 & 2 \\ 0 & 3 \end{bmatrix}\), \(\begin{bmatrix} \sqrt{5} & -1 & 0 \\ 2 & \pi & \frac{1}{2} \end{bmatrix}\), \(\begin{bmatrix} 4 \\ 17 \end{bmatrix}\), \(\begin{bmatrix} 1 & 1 & 1 \\ 1 & 1 & 1 \end{bmatrix}\), \(\begin{bmatrix} 5.1 & 1.2 & -1 \\ 6.9 & 0 & 4.4 \\ -7.3 & 9 & 8.5 \end{bmatrix}\), [7]</p>
+
+    <p>El tamaño de una matriz es una descripción de los números de renglones y columnas que tiene. Una matriz se llama de \( m \times n \) (dígame "m por n") si tiene \( m \) renglones y \( n \) columnas. Por tanto, los ejemplos anteriores son matrices de tamaños \( 2 \times 2, 2 \times 3, 3 \times 1, 1 \times 3, 3 \times 3 \) y \( 1 \times 1 \), respectivamente. Una matriz de \( 1 \times n \) se llama matriz renglón (o vector renglón), y una matriz de \( n \times 1 \) se llama matriz columna (o vector columna).</p>
+
+    <p>Se usa la notación de doble subíndice para referirse a las entradas de una matriz \( A \). La entrada de \( A \) en el renglón \( i \) y la columna \( j \) se denota mediante \( a_{ij} \). Por tanto, si</p>
+    <p>\( A = \begin{bmatrix} 3 & 9 & -1 \\ 0 & 5 & 4 \end{bmatrix} \)</p>
+
+    <p>entonces \( a_{13} = -1 \) y \( a_{22} = 5 \). (En ocasiones se usa la notación \( A_{ij} \) de manera intercambiable con \( a_{ij} \)). Por tanto, de manera compacta, una matriz \( A \) se puede denotar mediante \( [a_{ij}] \) (o \( [A_{ij}]_{m \times n} \) si es importante especificar el tamaño de \( A \), aunque el tamaño por lo general será claro a partir del contexto).</p>
+
+    <p>Con esta notación, una matriz general \( A \) de \( m \times n \) tiene la forma</p>
+    <p>\( A = \begin{bmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1} & a_{m2} & \cdots & a_{mn} \end{bmatrix} \)</p>
+
+    <p>Si las columnas de \( A \) son los vectores \( \mathbf{a}_1, \mathbf{a}_2, \ldots, \mathbf{a}_n \), entonces \( A \) se puede representar como</p>
+    <p>\( A = [\mathbf{a}_1 \, \mathbf{a}_2 \, \cdots \, \mathbf{a}_n] \)</p>
+
+    <p>Si los renglones de \( A \) son \( A_1, A_2, \ldots, A_m \), entonces \( A \) se puede presentar como</p>
+    <p>\( A = \begin{bmatrix} A_1 \\ A_2 \\ \vdots \\ A_m \end{bmatrix} \)</p>
+
+    <p>Las entradas diagonales de \( A \) son \( a_{11}, a_{22}, a_{33}, \ldots \), y si \( m = n \) (esto es, si \( A \) tiene el mismo número de renglones que de columnas), entonces \( A \) es una matriz cuadrada. Una matriz cuadrada cuyas entradas no diagonales sean todas cero es una matriz diagonal. Una matriz diagonal cuyas entradas diagonales sean todas iguales es una matriz escalar. Si el escalar en la diagonal es 1, la matriz escalar es una matriz identidad.</p>
+
+    <p>Por ejemplo, sean</p>
+    <p>\( A = \begin{bmatrix} 2 & 5 & 0 \\ -1 & 4 & 1 \end{bmatrix}, B = \begin{bmatrix} 3 & 1 \\ 4 & 5 \end{bmatrix}, C = \begin{bmatrix} 3 & 0 & 0 \\ 0 & 6 & 0 \\ 0 & 0 & 2 \end{bmatrix}, D = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix} \)</p>
+
+    <p>Las entradas diagonales de \( A \) son 2 y 4, pero \( A \) no es cuadrada; \( B \) es una matriz cuadrada de tamaño \( 2 \times 2 \), con entradas diagonales 3 y 5; \( C \) es una matriz diagonal; \( D \) es una matriz identidad de \( 3 \times 3 \). La matriz identidad \( n \times n \) se denota \( I_n \) (o simplemente \( I \) si tamaño se entiende).</p>
+
+    <p>Dado que las matrices pueden verse como generalizaciones de vectores (y, de hecho, las matrices pueden ser consideradas como constituidas por vectores renglón o por columnas), muchas de las convenciones y operaciones para vectores se realizan sobre las matrices (en una forma obvia).</p>
+
+    <p>Dos matrices son iguales si tienen el mismo tamaño y si sus entradas correspondientes son iguales. Por tanto, si \( A = [a_{ij}]_{m \times n} \) y \( B = [b_{ij}]_{r \times s} \), entonces \( A = B \) si y sólo si \( m = r \) y \( n = s \) y \( a_{ij} = b_{ij} \) para todo \( i \) y \( j \).</p>
 
     <hr>
-    
-    
 
-    <h2>2.1 Introducción a los sistemas de ecuaciones lineales</h2>
-  <p>Recuerde que la ecuación general de una recta en \( \mathbb{R}^2 \) es de la forma</p>
-  <p>\( ax + by = c \)</p>
-  <p>y que la ecuación general de un plano en \( \mathbb{R}^3 \) es de la forma</p>
-  <p>\( ax + by + cz = d \)</p>
-  <p>Las ecuaciones de esta forma se llaman ecuaciones lineales.</p>
 
-  <div class="example">
-    <h3>Definición</h3>
-    <p>Una ecuación lineal en las \( n \) variables \( x_1, x_2, \ldots, x_n \) es una ecuación que puede escribirse en la forma</p>
-    <p>\( a_1 x_1 + a_2 x_2 + \cdots + a_n x_n = b \)</p>
-    <p>donde los coeficientes \( a_1, a_2, \ldots, a_n \) y el término constante \( b \) son constantes.</p>
-  </div>
+    <div>
+        <h2>Ejemplo 3.2</h2>
+        <p>Considere las matrices \( R = \begin{bmatrix} 1 & 4 & 3 \end{bmatrix} \) y \( C = \begin{bmatrix} 1 \\ 4 \\ 3 \end{bmatrix} \).</p>
+        <p>A pesar del hecho de que \( R \) y \( C \) tienen las mismas entradas en el mismo orden, \( R \neq C \), pues \( R \) es \( 1 \times 3 \) y \( C \) es \( 3 \times 1 \). (Si \( R \) y \( C \) se leen en voz alta, suenan igual: "uno, cuatro, tres"). Por tanto, la distinción entre matrices/vectores renglón y matrices/vectores columna es importante.</p>
 
-  <div class="example">
-    <h3>Ejemplo 2.1</h3>
-    <p>Las siguientes ecuaciones son lineales:</p>
-    <p>\( 3x - 4y = -1 \)</p>
-    <p>\( \frac{1}{2} x + \frac{15}{2} t = 9 \)</p>
-    <p>\( x_1 + 5x_2 = 3 - x_3 + 2x_4 \)</p>
-    <p>\( \sqrt{2} x + \frac{\pi}{4} y - \left( \sin \frac{\pi}{5} \right) z = 1 \)</p>
-    <p>\( 3.2x_1 - 0.01x_2 = 4.6 \)</p>
-    <p>Observe que la tercera ecuación es lineal porque puede reescribirse en la forma \( x_1 + 5x_2 + x_3 - 2x_4 = 3 \). También es importante notar que, aunque en estos ejemplos (y en la mayoría de las aplicaciones) los coeficientes y términos constantes son números reales, en algunos ejemplos y aplicaciones serán números complejos o miembros de \( \mathbb{Z}_p \) para algún número primo \( p \).</p>
-  </div>
+        <h3>Suma de matrices y multiplicación por un escalar</h3>
+        <p>Para generalizar la suma de vectores, se define la suma de matrices por componentes. Si \( A = [a_{ij}] \) y \( B = [b_{ij}] \) son matrices de \( m \times n \), su suma \( A + B \) es la matriz de \( m \times n \) que se obtiene al sumar las entradas correspondientes. Por tanto,</p>
+        <p>\( A + B = [a_{ij} + b_{ij}] \).</p>
+        <p>Igualmente se podría definir \( A + B \) en términos de suma vectorial al especificar que cada columna (o renglón) de \( A + B \) es la suma de las columnas (o renglones) correspondientes de \( A \) y \( B \). Si \( A \) y \( B \) no son del mismo tamaño, entonces \( A + B \) no está definida.</p>
 
-  <div class="example">
-    <h3>Las siguientes ecuaciones no son lineales:</h3>
-    <p>\( xy + 2z = 1 \)</p>
-    <p>\( x_1^2 - x_2 = 3 \)</p>
-    <p>\( \frac{x}{y} + z = 2 \)</p>
-    <p>\( \sqrt{2}x + \frac{\pi}{4} y - \sin \left( \frac{\pi}{5} z \right) = 1 \)</p>
-    <p>\( \sin x_1 - 3x_2 + 2^y = 0 \)</p>
-    <p>Por tanto, las ecuaciones lineales no contienen productos, recíprocos u otras funciones de las variables; las variables sólo aparecen a la primera potencia y sólo se multiplican por constantes. Ponga particular atención al cuarto ejemplo en cada lista: ¿por qué la cuarta ecuación en la primera lista es lineal, pero la cuarta ecuación en la segunda lista no lo es?</p>
-  </div>
-
-  <div class="example">
-    <h3>Una solución de una ecuación lineal</h3>
-    <p>Una solución de una ecuación lineal \( a_1 x_1 + a_2 x_2 + \cdots + a_n x_n = b \) es un vector \( [s_1, s_2, \ldots, s_n] \) cuyos componentes satisfacen la ecuación cuando se sustituye \( x_i = s_i \), \( x_2 = s_2, \ldots, x_n = s_n \).</p>
-  </div>
-
-  <div class="example">
-    <h3>Un sistema de ecuaciones lineales</h3>
-    <p>Un sistema de ecuaciones lineales es un conjunto finito de ecuaciones lineales, cada una con las mismas variables. Una solución de un sistema de ecuaciones lineales es un vector que simultáneamente es una solución de cada ecuación en el sistema. El conjunto solución de un sistema de ecuaciones lineales es el conjunto de todas las soluciones del sistema. Al proceso de encontrar el conjunto solución de un sistema de ecuaciones lineales se le conocerá como "resolver el sistema".</p>
-  </div>
-
-  <div class="example">
-    <h3>Ejemplo 2.4</h3>
-    <p>Resuelva los siguientes sistemas de ecuaciones lineales:</p>
-    <p>(a) \( x - y = 1 \) <br> \( x + y = 3 \)</p>
-    <p>(b) \( x - y = 2 \) <br> \( 2x - 2y = 4 \)</p>
-    <p>(c) \( x - y = 1 \) <br> \( x - y = 3 \)</p>
-  </div>
-
-  <div class="example">
-    <h3>Solución</h3>
-    <p>(a) Al sumar las dos ecuaciones se obtiene \( 2x = 4 \), de modo que \( x = 2 \), de donde se encuentra que \( y = 1 \). Una comprobación rápida confirma que \( [2, 1] \) es de hecho una solución de ambas ecuaciones. Que esta es la única solución que puede verse al observar que esta solución corresponde al (único) punto de intersección \( (2, 1) \) de las rectas con ecuaciones \( x - y = 1 \) y \( x + y = 3 \), como se muestra en la figura 2.1(a). Por tanto, \( [2, 1] \) es una solución única.</p>
-    <p>(b) La segunda ecuación en este sistema es justo el doble de la primera, de modo que las soluciones corresponden sólo a la primera ecuación: a saber, los puntos sobre la recta \( x - y = 2 \). Las mismas pueden representarse paramétricamente como \( [2 + t, t] \). Por tanto, este sistema tiene un número infinito de soluciones (figura 2.1(b)).</p>
-    <p>(c) Dos números \( x \) y \( y \) no pueden tener simultáneamente una diferencia de 1 y 3. Por la segunda ecuación de la primera, lo que produce la conclusión absurda \( 0 = -2 \). Como muestra la figura 2.1(c), en este caso las rectas para las ecuaciones son paralelas.</p>
-  </div>
-<img src="../../../img/guia_246.png" alt="" width="600">
-  <div class="example">
-    <h3>Resolución de un sistema de ecuaciones lineales</h3>
-    <p>Dos sistemas lineales se llaman equivalentes si tienen los mismos conjuntos solución. Por ejemplo,</p>
-    <p>\( x - y = 1 \) <br> \( x + y = 3 \)</p>
-    <p>es equivalente, pues ambos tienen la solución única \( [2, 1] \) (Comprobable).</p>
-  </div>
-
-  <div class="example">
-    <h3>Un sistema de ecuaciones lineales con coeficientes reales tiene</h3>
-    <p>(a) una solución única (un sistema consistente) o</p>
-    <p>(b) un número infinito de soluciones (un sistema consistente) o</p>
-    <p>(c) ninguna solución (un sistema inconsistente).</p>
-  </div>
-
-   
+        
+          </div>
 </div>
 
 
@@ -1732,136 +1678,99 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
    
-    <h2>Métodos directos para resolver sistemas lineales</h2>
-  <p>En esta sección se verá un procedimiento sistemático general para resolver un sistema de ecuaciones lineales. Este procedimiento se basa en la idea de reducir la matriz aumentada del sistema dado a una forma que luego pueda resolverse mediante sustitución hacia atrás. El método es directo en el sentido de que conduce directamente a la solución (si existe una) en un número finito de pasos. En la sección 2.5 se considerarán algunos métodos indirectos que funcionan en una forma completamente diferente.</p>
+      <h3>Ejemplo 3.3</h3>
+        <p>Sean \( A = \begin{bmatrix} 1 & 4 & 0 \\ -2 & 6 & 5 \end{bmatrix} \), \( B = \begin{bmatrix} -3 & 1 & -1 \\ 3 & 0 & 2 \end{bmatrix} \) y \( C = \begin{bmatrix} 4 & 3 \\ 2 & 1 \end{bmatrix} \).</p>
+        <p>Entonces</p>
+        <p>\( A + B = \begin{bmatrix} -2 & 5 & -1 \\ 1 & 6 & 7 \end{bmatrix} \)</p>
+        <p>pero ni \( A + C \) ni \( B + C \) están definidas.</p>
 
-  <h3>Matrices y forma escalonada</h3>
-  <p>Existen dos importantes matrices asociadas con un sistema lineal. La matriz de coeficientes contiene los coeficientes de las variables, y la matriz aumentada (que ya se encontró) es la matriz coeficiente aumentada por una columna adicional que contiene los términos constantes.</p>
+        <p>La definición por componentes de la multiplicación por un escalar no será sorpresa. Si \( A \) es una matriz \( m \times n \) y \( c \) es un escalar, entonces el múltiplo escalar \( cA \) es la matriz \( m \times n \) que se obtiene al multiplicar cada entrada de \( A \) por \( c \). De manera más formal, se tiene</p>
+        <p>\( cA = [c a_{ij}] \).</p>
+        <p>[En términos de vectores, podría estipularse de manera equivalente que cada columna (o renglón) de \( cA \) es \( c \) veces la correspondiente columna (o renglón) de \( A \)].</p>
 
-  <div class="example">
-    <p>Para el sistema</p>
-    <p>\( 2x + y - z = 3 \)</p>
-    <p>\( x + 5z = 1 \)</p>
-    <p>\( -x + 3y - 2z = 0 \)</p>
-    <p class="matrix">La matriz de coeficientes es</p>
-    <p class="matrix">\[
-    \begin{bmatrix}
-    2 & 1 & -1 \\
-    1 & 0 & 5 \\
-    -1 & 3 & -2
-    \end{bmatrix}
-    \]</p>
-    <p class="matrix">y la matriz aumentada es</p>
-    <p class="matrix">\[
-    \begin{bmatrix}
-    2 & 1 & -1 & | & 3 \\
-    1 & 0 & 5 & | & 1 \\
-    -1 & 3 & -2 & | & 0
-    \end{bmatrix}
-    \]</p>
-  </div>
+        <h3>Multiplicación de matrices</h3>
+        <p>La introducción de la sección 3.0 sugirió que hay un "producto" de matrices que es análogo a la composición de funciones. Ahora se hará más precisa esta noción. La definición que está a punto de proponerse generaliza lo que debió descubrir en los problemas 5 y 7 de la sección 3.0. A diferencia de las definiciones de suma de matrices y multiplicación por un escalar, la definición de producto de matrices no es por componentes; por desgracia, tal definición tiene pocas aplicaciones y no es tan "natural" como la que ahora se propone.</p>
 
-  <div class="example">
-    <h3>Definición</h3>
-    <p>Una matriz está en forma escalonada por renglones si satisface las siguientes propiedades:</p>
-    <ol>
-      <li>Cualquier renglón que consista completamente de ceros está en la parte baja.</li>
-      <li>En cada renglón distinto de cero, el primer elemento distinto de cero (llamado elemento pivote) está en una columna a la izquierda de cualquier elemento pivote bajo él.</li>
-    </ol>
-    <p>Observe que estas propiedades garantizan que los elementos pivote formen un patrón en escalera. En particular, en cualquier columna que contenga un elemento pivote, las entradas bajo el elemento pivote son cero, como ilustran los siguientes ejemplos.</p>
-  </div>
+        <h3>Definición</h3>
+        <p>Si \( A \) es una matriz de \( m \times n \) y \( B \) es una matriz de \( n \times r \), entonces el producto \( C = AB \) es una matriz de \( m \times r \). La entrada (\( i, j \)) del producto se calcula del modo siguiente:</p>
+        <p>\( c_{ij} = a_{i1}b_{1j} + a_{i2}b_{2j} + \cdots + a_{in}b_{nj} \).</p>
 
-  <div class="example">
-    <h3>Ejemplo 2.7</h3>
-    <p>Las siguientes matrices están en forma escalonada por renglones:</p>
-    <p class="matrix">\[
-    \begin{bmatrix}
-    2 & 4 & 1 \\
-    0 & -1 & 2 \\
-    0 & 0 & 0
-    \end{bmatrix}
-    \quad
-    \begin{bmatrix}
-    1 & 0 & 1 \\
-    0 & 1 & 5 \\
-    0 & 0 & 4
-    \end{bmatrix}
-    \quad
-    \begin{bmatrix}
-    1 & 1 & 2 & 1 \\
-    0 & 0 & 1 & 3 \\
-    0 & 0 & 0 & 0
-    \end{bmatrix}
-    \quad
-    \begin{bmatrix}
-    0 & 2 & 0 & 1 & -1 & 3 \\
-    0 & 0 & -1 & 1 & 2 & 2 \\
-    0 & 0 & 0 & 0 & 4 & 0 \\
-    0 & 0 & 0 & 0 & 0 & 5
-    \end{bmatrix}
-    \]</p>
-    <p>Si una matriz en forma escalonada por renglones en realidad es la matriz aumentada de un sistema lineal, el sistema es bastante fácil de resolver mediante sustitución hacia atrás solamente.</p>
-  </div>
+        <h3>Comentarios</h3>
+        <ul>
+            <li>Note que \( A \) y \( B \) no tienen que ser del mismo tamaño. Sin embargo, el número de columnas de \( A \) debe ser igual al número de renglones de \( B \). Si escríbe en orden los tamaños de \( A \), \( B \) y \( AB \), podrá verificar de inmediato si se satisfacen este requisito. Más aún, puede predecir el tamaño del producto antes de hacer el cálculo.</li>
+        </ul>
+    <img src="../../../img/guia_250.png" alt="">
 
-  <div class="example">
-    <h3>Ejemplo 2.8</h3>
-    <p>Si suponemos que cada una de las matrices en el ejemplo 2.7 es una matriz aumentada, es decir los sistemas correspondientes de ecuaciones lineales y resueltos.</p>
-    <h4>Solución</h4>
-    <p>Recuerde primero que la última columna en una matriz aumentada es el vector de términos constantes. Entonces la primera matriz corresponde al sistema</p>
-    <p>\( 2x_1 + 4x_2 = 1 \)</p>
-    <p>\( -x_2 = 2 \)</p>
-    <p>(Advierta que se eliminó la última ecuación \( 0 = 0 \) o \( 0x_1 + 0x_2 = 0 \), que claramente es satisfecible por cualquier valor de \( x_1, y x_2 \).) La sustitución hacia atrás produce \( x_2 = -2 \) y entonces \( 2x_1 - 4(-2) = 9 \), de modo que \( 2x_1 = \frac{9}{2} \). La solución es \( \left[\frac{9}{2}, -2\right] \).</p>
-    <p>La segunda matriz tiene el sistema correspondiente</p>
-    <p>\( x_1 = 1 \)</p>
-    <p>\( x_2 = 5 \)</p>
-    <p>\( 0 = 4 \)</p>
-    <p>La última ecuación representa \( 0x_1 + 0x_2 = 4 \), que claramente no tiene solución. Por tanto, este sistema no tiene soluciones. Para el sistema que corresponde a la tercera matriz, se tiene</p>
-    <p>\( x_1 + x_2 + 2x_3 = 1 \)</p>
-    <p>\( x_3 = 3 \)</p>
-    <p>de modo que \( x_1 = 1 - 2(3) - x_2 = -5 - x_2 \). Existe un número infinito de soluciones, pues a \( x_2 \) se le puede asignar cualquier valor \( t \) para obtener la solución paramétrica \( [-5 - t, t, 3] \).</p>
-  </div>
-  
-    <hr>
-    <div class="example">
-    <h3>Definición</h3>
-    <p>Las siguientes operaciones elementales con renglones pueden realizarse sobre una matriz:</p>
-    <ol>
-      <li>Intercambiar dos renglones.</li>
-      <li>Multiplicar un renglón por una constante distinta de cero.</li>
-      <li>Sumar un múltiplo de un renglón a otro renglón.</li>
-    </ol>
-  </div>
 
-  <div class="example">
-    <h3>Definición</h3>
-    <p>Las matrices \( A \) y \( B \) son equivalentes por renglones si existe una secuencia de operaciones elementales con renglones que convierta \( A \) en \( B \).</p>
-  </div>
 
-  <div class="example">
-    <h3>Teorema 2.1</h3>
-    <p>Las matrices \( A \) y \( B \) son equivalentes por renglones si y sólo si pueden reducirse a la misma forma escalonada por renglones.</p>
-  </div>
+    <div>
+        <h2>La fórmula para las entradas del producto parece un producto punto, y de hecho lo es. Se dice que la entrada (\(i, j\)) de la matriz \(AB\) es el producto punto del \(i\)-ésimo renglón de \(A\) y la \(j\)-ésima columna de \(B\):</h2>
+        <p>Se dice que la entrada (\(i, j\)) de la matriz \(AB\) es el producto punto del \(i\)-ésimo renglón de \(A\) y la \(j\)-ésima columna de \(B\):</p>
+        
+        <img src="../../../img/guia_251.png" alt="">
+ 
 
-  <h2>Eliminación gaussiana</h2>
-  <p>Cuando se aplica la reducción por renglones a la matriz aumentada de un sistema de ecuaciones lineales, se crea un sistema equivalente que puede resolverse mediante sustitución hacia atrás. Todo el proceso se conoce como eliminación gaussiana.</p>
+        <p>Note que en la expresión \(c_{ij} = a_{i1}b_{1j} + a_{i2}b_{2j} + \cdots + a_{in}b_{nj}\), los "subíndices exteriores" de cada término \(ab\) en la suma siempre son \(i\) y \(j\), mientras que los "subíndices interiores" siempre concurren y aumentan de 1 a \(n\). Este patrón se ve claramente si escribe \(c_{ij}\) usando la notación de suma:</p>
+        <p>\(c_{ij} = \sum_{k=1}^{n} a_{ik}b_{kj}\)</p>
 
-  <div class="example">
-    <h3>Eliminación gaussiana</h3>
-    <ol>
-      <li>Escriba la matriz aumentada del sistema de ecuaciones lineales.</li>
-      <li>Use operaciones elementales con renglones para reducir la matriz aumentada a forma escalonada por renglones.</li>
-      <li>Con sustitución hacia atrás, resuelva el sistema equivalente que corresponda a la matriz reducida por renglones.</li>
-    </ol>
-    <h4>Comentario</h4>
-    <p>Cuando se realiza a mano, el paso 2 de la eliminación gaussiana permite muchas opciones. He aquí algunos lineamientos útiles:</p>
-    <ol>
-      <li>(a) Localice la columna de la extrema izquierda que no sea toda ceros.</li>
-      <li>(b) Cree un elemento pivote en la parte superior de esta columna. (Por lo general será más sencillo si lo convierte en 1 pivote. Vea el ejercicio 22.)</li>
-      <li>(c) Use el elemento pivote para crear ceros debajo de él.</li>
-      <li>(d) Cubra el renglón que contiene el elemento pivote y regrese al paso (a) para repetir el procedimiento sobre la matriz restante. Deténgase cuando toda la matriz esté en forma escalonada por renglones.</li>
-    </ol>
-  </div>
-    
+
+
+        <h2>Ejemplo 3.6</h2>
+        <p>Calcule \(AB\) si</p>
+        <p class="matrix">\(A = \begin{bmatrix} 1 & 3 & -1 \\ -2 & -1 & 1 \end{bmatrix}\), \(B = \begin{bmatrix} -4 & 0 & 3 & -1 \\ 5 & -2 & -1 & 1 \\ -1 & 2 & 0 & 6 \end{bmatrix}\)</p>
+
+        <h3>Solución</h3>
+        <p>Dado que \(A\) es de \(2 \times 3\) y \(B\) es de \(3 \times 4\), el producto \(AB\) está definido y será una matriz \(2 \times 4\). El primer renglón del producto \(C = AB\) se efectúa al tomar el producto punto del primer renglón de \(A\) con cada una de las columnas de \(B\) por turno. En consecuencia,</p>
+        <p>\(c_{11} = (1)(-4) + (3)(5) + (-1)(-1) = 12\)</p>
+        <p>\(c_{12} = (1)(0) + (3)(-2) + (-1)(2) = -8\)</p>
+        <p>\(c_{13} = (1)(3) + (3)(-1) + (-1)(0) = 0\)</p>
+        <p>\(c_{14} = (1)(-1) + (3)(1) + (-1)(6) = -4\)</p>
+
+        <p>El segundo renglón de \(C\) se calcula al realizar el producto punto del segundo renglón de \(A\) con cada una de las columnas de \(B\) por turno:</p>
+        <p>\(c_{21} = (-2)(-4) + (-1)(5) + (1)(-1) = 2\)</p>
+        <p>\(c_{22} = (-2)(0) + (-1)(-2) + (1)(2) = 4\)</p>
+        <p>\(c_{23} = (-2)(3) + (-1)(-1) + (1)(0) = -5\)</p>
+        <p>\(c_{24} = (-2)(-1) + (-1)(1) + (1)(6) = 7\)</p>
+
+        <p>Por tanto, la matriz producto está dada por</p>
+        <p class="matrix">\(AB = \begin{bmatrix} 12 & -8 & 0 & -4 \\ 2 & 4 & -5 & 7 \end{bmatrix}\)</p>
+
+        <p>(Con un poco de práctica, debería hacer estos cálculos mentalmente sin escribir todos los detalles como se hizo aquí. Para ejemplos más complicados, es preferible una calculadora con capacidades matriciales o un sistema algebraico de cómputo.)</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div>
+        <h2>Definición</h2>
+        <p>La transpuesta de una matriz \( A \) de \( m \times n \) es la matriz \( A^T \) de \( n \times m \) que se obtiene al intercambiar las renglones y columnas de \( A \). Esto es: la \( i \)-ésima columna de \( A^T \) es el \( i \)-ésimo renglón de \( A \) para toda \( i \).</p>
+
+        <h2>Ejemplo 3.14</h2>
+        <p>Sea</p>
+        <p class="matrix">\( A = \begin{bmatrix} 1 & 3 & 2 \\ 5 & 0 & 1 \end{bmatrix}, B = \begin{bmatrix} a & b \\ c & d \end{bmatrix} \) y \( C = \begin{bmatrix} 5 & -1 \\ 2 & 2 \end{bmatrix} \).</p>
+        <p>Entonces sus transpuestas son</p>
+        <p class="matrix">\( A^T = \begin{bmatrix} 1 & 5 \\ 3 & 0 \\ 2 & 1 \end{bmatrix}, B^T = \begin{bmatrix} a & c \\ b & d \end{bmatrix} \) y \( C^T = \begin{bmatrix} 5 \\ -1 \\ 2 \end{bmatrix} \).</p>
+
+        <p>En ocasiones, la transpuesta se usa para dar una definición alternativa del producto punto de dos vectores en términos de multiplicación de matrices. Si</p>
+        <p class="matrix">\(\mathbf{u} = \begin{bmatrix} u_1 \\ u_2 \\ \vdots \\ u_n \end{bmatrix}\) y \(\mathbf{v} = \begin{bmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{bmatrix}\)</p>
+        <p>entonces</p>
+        <p>\(\mathbf{u} \cdot \mathbf{v} = u_1 v_1 + u_2 v_2 + \cdots + u_n v_n\)</p>
+        <p>\( = \begin{bmatrix} u_1 & u_2 & \cdots & u_n \end{bmatrix} \begin{bmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{bmatrix} = \mathbf{u}^T \mathbf{v} \).</p>
+
+        <p>Una definición alternativa útil de la transpuesta se da en forma de componentes:</p>
+        <p>\((A^T)_{ij} = A_{ji}\) para toda \( i \) y \( j \).</p>
+
+        <p>En palabras: las entradas en el renglón \( i \) y la columna \( j \) de \( A^T \) son iguales que las entradas en el renglón \( j \) y la columna \( i \) de \( A \).</p>
+        <p>La transpuesta también se usa para definir un tipo muy importante de matriz cuadrada: una matriz simétrica.</p>
+
+        
+    </div>
 </div>
 </div>
  </form>
@@ -1870,7 +1779,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="sexto.php"
+        href="noveno.php"
         role="button"
         width="50px"
         height="50px"

@@ -1312,7 +1312,7 @@ if ($respuesta_121 === '144') {
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 390vh;
+    height: 430vh;
     }
 
 </style>
@@ -1598,133 +1598,122 @@ function ocultarMensaje4() {
     
 <div class="seccion izquierda"> 
  
- 
-       <h2>En ℝ² (plano 2D):</h2>
-        
-        <div class="case">
-            <div class="case-title">RECTA (1 dimensión)</div>
-            <p><strong>Ecuación necesaria:</strong> <span class="equation">1</span></p>
-            <p><strong>¿Por qué?</strong> Con <span class="equation">2x + y = 3</span> reduces de <span class="dimension">2D → 1D</span></p>
-            <p><strong>Movimiento libre:</strong> <span class="movement">Solo a lo largo de la recta</span></p>
-        </div>
+  <div class="theorem">
+        <h2>Teorema 3.9</h2>
+        <ul>
+            <li><strong>a.</strong> Si \( A \) es una matriz invertible, entonces \( A^{-1} \) es invertible y \( (A^{-1})^{-1} = A \)</li>
+            <li><strong>b.</strong> Si \( A \) es una matriz invertible y \( c \) es un escalar distinto de cero, entonces \( cA \) es una matriz invertible y \( (cA)^{-1} = \frac{1}{c} A^{-1} \)</li>
+            <li><strong>c.</strong> Si \( A \) y \( B \) son matrices invertibles del mismo tamaño, entonces \( AB \) es invertible y \( (AB)^{-1} = B^{-1} A^{-1} \)</li>
+            <li><strong>d.</strong> Si \( A \) es una matriz invertible, entonces \( A^T \) es invertible y \( (A^T)^{-1} = (A^{-1})^T \)</li>
+            <li><strong>e.</strong> Si \( A \) es una matriz invertible, entonces \( A^n \) es invertible para todo entero \( n \) no negativo y \( (A^n)^{-1} = (A^{-1})^n \)</li>
+        </ul>
+    </div>
 
-        <div class="rule">
-            <h2>Regla general:</h2>
-            <div class="math">
-                <p>\[
-                \text{Ecuaciones necesarias} = \text{Dimensión del espacio} - \text{Dimensión del objeto}
-                \]</p>
-            </div>
-        </div>
+    <h2>Matrices elementales</h2>
+    <p>La multiplicación de matrices se usará para dar una perspectiva diferente a la reducción de matrices por renglones. En el proceso, descubrirá muchos nuevos e importantes conocimientos de la naturaleza de las matrices invertibles.</p>
+    <p>Si</p>
+    <p>\( E = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 0 & 1 \\ 0 & 1 & 0 \end{bmatrix} \) y \( A = \begin{bmatrix} 5 & 7 \\ -1 & 0 \\ 8 & 3 \end{bmatrix} \)</p>
+    <p>se encuentra que</p>
+    <p>\( EA = \begin{bmatrix} 5 & 7 \\ -1 & 0 \\ 8 & 3 \end{bmatrix} \)</p>
+    <p>En otras palabras, multiplicar \( A \) por \( E \) (a la izquierda) tiene el mismo efecto que intercambiar los renglones 2 y 3 de \( A \). ¿Qué es lo significativo de \( E \)? Simplemente es la matriz que se obtiene al aplicar la misma operación elemental con renglones, \( R_2 \leftrightarrow R_3 \), a la matriz identidad \( I_3 \). Es evidente que esto siempre funciona.</p>
 
-        <div class="examples">
-            <div class="example">
-                <p><strong>Plano en ℝ³:</strong></p>
-                <div class="math">
-                    <p>\( 3 - 2 = 1 \) ecuación</p>
-                </div>
-            </div>
-            
-            <div class="example">
-                <p><strong>Recta en ℝ³:</strong></p>
-                <div class="math">
-                    <p>\( 3 - 1 = 2 \) ecuaciones</p>
-                </div>
-            </div>
-            
-            <div class="example">
-                <p><strong>Recta en ℝ²:</strong></p>
-                <div class="math">
-                    <p>\( 2 - 1 = 1 \) ecuación</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="analogy">
-            <p style="text-align: center; font-weight: bold;">
-                ¡Cada ecuación te quita una dimensión de libertad!
-            </p>
-        </div>
+    <div class="theorem">
+        <h2>Definición</h2>
+        <p>Una matriz elemental es aquella matriz que puede obtenerse al realizar una operación elemental con renglones sobre una matriz identidad.</p>
+    </div>
+    <p>Dado que existen tres tipos de operaciones elementales con renglones, existen tres tipos correspondientes de matrices elementales. He aquí algunas de las matrices más elementales.</p>
 
     <hr>
+
+     <h1>¿Qué son las matrices elementales?</h1>
+    <p>Las matrices elementales son matrices que se obtienen al realizar una operación elemental sobre una matriz identidad. Estas operaciones elementales son los mismos pasos que usamos en el método de eliminación de Gauss o Gauss-Jordan para resolver sistemas de ecuaciones lineales o reducir matrices a su forma escalonada. El concepto es útil porque nos permite entender cómo la multiplicación de matrices puede simular estos cambios de manera sistemática.</p>
+
+    <h2>Operaciones elementales con renglones</h2>
+    <p>Hay tres tipos principales de operaciones elementales que se pueden hacer con los renglones de una matriz:</p>
+    <ul>
+        <li><strong>Intercambiar dos renglones</strong>: Por ejemplo, intercambiar el renglón 1 con el renglón 2.</li>
+        <li><strong>Multiplicar un renglón por un escalar no cero</strong>: Por ejemplo, multiplicar el renglón 2 por 3.</li>
+        <li><strong>Sumar un múltiplo de un renglón a otro renglón</strong>: Por ejemplo, sumar 2 veces el renglón 1 al renglón 3.</li>
+    </ul>
+    <p>Cuando aplicas una de estas operaciones a la matriz identidad (una matriz cuadrada con 1s en la diagonal principal y 0s en el resto), el resultado es una matriz elemental.</p>
+
+    <h2>Ejemplo práctico</h2>
+    <p>Tomemos la matriz identidad \( I_3 \) (de tamaño 3×3):</p>
+    <p>\( I_3 = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix} \)</p>
+    <p>Ahora, supongamos que intercambiamos el renglón 2 y el renglón 3:</p>
+    <ul>
+        <li>Renglón original 2: \( [0, 1, 0] \)</li>
+        <li>Renglón original 3: \( [0, 0, 1] \)</li>
+    </ul>
+    <p>Después del intercambio, la nueva matriz (llamada \( E \)) sería:</p>
+    <p>\( E = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 0 & 1 \\ 0 & 1 & 0 \end{bmatrix} \)</p>
+    <p>Esta matriz \( E \) es una matriz elemental porque se obtuvo al aplicar una operación elemental (intercambio de renglones) a la matriz identidad.</p>
+
+    <h2>¿Por qué es importante?</h2>
+    <p>El texto menciona que al multiplicar una matriz \( A \) por esta matriz elemental \( E \) a la izquierda (es decir, \( EA \)), se logra el mismo efecto que aplicar la operación elemental directamente a \( A \). Por ejemplo, si \( A \) es:</p>
+    <p>\( A = \begin{bmatrix} 5 & 7 \\ -1 & 0 \\ 8 & 3 \end{bmatrix} \)</p>
+    <p>Entonces:</p>
+    <p>\( EA = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 0 & 1 \\ 0 & 1 & 0 \end{bmatrix} \begin{bmatrix} 5 & 7 \\ -1 & 0 \\ 8 & 3 \end{bmatrix} = \begin{bmatrix} 5 & 7 \\ 8 & 3 \\ -1 & 0 \end{bmatrix} \)</p>
+    <p>Observa que el resultado de \( EA \) es simplemente \( A \) con los renglones 2 y 3 intercambiados, lo cual coincide con la operación elemental que definimos en \( E \).</p>
+
+    <h2>Significado</h2>
+    <p>Esto es significativo porque:</p>
+    <ul>
+        <li>Nos muestra que las operaciones elementales pueden representarse como multiplicaciones por matrices elementales.</li>
+        <li>Nos ayuda a entender las propiedades de las matrices invertibles, ya que estas operaciones (y sus matrices asociadas) son reversibles bajo ciertas condiciones.</li>
+        <li>Es una herramienta poderosa en álgebra lineal para manipular sistemas de ecuaciones o matrices de forma sistemática.</li>
+    </ul>
+
+    <h2>Tipos de matrices elementales</h2>
+    <p>Dado que hay tres tipos de operaciones elementales, hay tres tipos correspondientes de matrices elementales:</p>
+    <ul>
+        <li><strong>Matriz de intercambio</strong>: Se obtiene intercambiando dos renglones de la identidad (como en el ejemplo anterior).</li>
+        <li><strong>Matriz de escalado</strong>: Se obtiene multiplicando un renglón de la identidad por un escalar no cero.</li>
+        <li><strong>Matriz de suma</strong>: Se obtiene sumando un múltiplo de un renglón a otro renglón de la identidad.</li>
+    </ul>
+
+
+    <hr>
+
+
+    <div class="theorem">
+        <h2>Teorema 3.10</h2>
+        <p>Sea \( E \) la matriz elemental que se obtiene al realizar una operación elemental con renglones sobre \( I_n \). Si la misma operación elemental con renglones se realiza sobre una matriz \( A \) de \( n \times n \), el resultado es el mismo que la matriz \( EA \).</p>
+    </div>
+
+    <div class="theorem">
+        <h2>Teorema 3.11</h2>
+        <p>Cada matriz elemental es invertible y su inversa es una matriz elemental del mismo tipo.</p>
+    </div>
+    <p><strong>El teorema fundamental de las matrices invertibles</strong></p>
+    <p>Ahora está en posición de probar uno de los principios resultantes de este libro: un conjunto de caracterizaciones equivalentes de lo que significa para una matriz ser invertible. En un sentido, gran parte del álgebra lineal está conectado a este teorema, ya sea en el desarrollo de dichas caracterizaciones o en su aplicación. Como puede esperar, dada esta introducción, este teorema es usaré bastante. ¡Hágalo su amigo!</p>
+    <p>Al Teorema 3.12 se le considera como el primer ejemplo de teorema fundamental, pues se harán agregados en capítulos posteriores. Se recuerda que, cuando se dice que un conjunto de enunciados acerca de una matriz \( A \) son equivalentes, se entiende que, para una \( A \) dada, los enunciados son todos verdaderos o todos falsos.</p>
+
+    <div class="theorem">
+        <h2>Teorema 3.12</h2>
+        <p><strong>El teorema fundamental de las matrices invertibles: versión 1</strong></p>
+        <p>Sea \( A \) una matriz de \( n \times n \). Los siguientes enunciados son equivalentes:</p>
+        <ul>
+            <li><strong>a.</strong> \( A \) es invertible.</li>
+            <li><strong>b.</strong> \( A\mathbf{x} = \mathbf{b} \) tiene una solución única para todo \( \mathbf{b} \in \mathbb{R}^n \).</li>
+            <li><strong>c.</strong> \( A\mathbf{x} = 0 \) tiene sólo la solución trivial.</li>
+            <li><strong>d.</strong> La forma escalonada reducida por renglones de \( A \) es \( I_n \).</li>
+            <li><strong>e.</strong> \( A \) es un producto de matrices elementales.</li>
+        </ul>
+    </div>
+
+
+    <p>
+        El teorema dice que para una matriz \(   A   \) de tamaño \(  n \times n \)  (es decir, cuadrada), los cinco enunciados 
+        (a, b, c, d, e) son equivalentes. Esto significa que si uno de ellos es verdadero, entonces todos los demás también 
+        lo son, y si uno es falso, todos los demás también lo serán. En otras palabras, estos enunciados son como diferentes 
+        formas de describir la misma propiedad de \(   A  \): ser invertible.
+
+    </p>
+
+
+
     
-    
-
-    <h2>2.1 Introducción a los sistemas de ecuaciones lineales</h2>
-  <p>Recuerde que la ecuación general de una recta en \( \mathbb{R}^2 \) es de la forma</p>
-  <p>\( ax + by = c \)</p>
-  <p>y que la ecuación general de un plano en \( \mathbb{R}^3 \) es de la forma</p>
-  <p>\( ax + by + cz = d \)</p>
-  <p>Las ecuaciones de esta forma se llaman ecuaciones lineales.</p>
-
-  <div class="example">
-    <h3>Definición</h3>
-    <p>Una ecuación lineal en las \( n \) variables \( x_1, x_2, \ldots, x_n \) es una ecuación que puede escribirse en la forma</p>
-    <p>\( a_1 x_1 + a_2 x_2 + \cdots + a_n x_n = b \)</p>
-    <p>donde los coeficientes \( a_1, a_2, \ldots, a_n \) y el término constante \( b \) son constantes.</p>
-  </div>
-
-  <div class="example">
-    <h3>Ejemplo 2.1</h3>
-    <p>Las siguientes ecuaciones son lineales:</p>
-    <p>\( 3x - 4y = -1 \)</p>
-    <p>\( \frac{1}{2} x + \frac{15}{2} t = 9 \)</p>
-    <p>\( x_1 + 5x_2 = 3 - x_3 + 2x_4 \)</p>
-    <p>\( \sqrt{2} x + \frac{\pi}{4} y - \left( \sin \frac{\pi}{5} \right) z = 1 \)</p>
-    <p>\( 3.2x_1 - 0.01x_2 = 4.6 \)</p>
-    <p>Observe que la tercera ecuación es lineal porque puede reescribirse en la forma \( x_1 + 5x_2 + x_3 - 2x_4 = 3 \). También es importante notar que, aunque en estos ejemplos (y en la mayoría de las aplicaciones) los coeficientes y términos constantes son números reales, en algunos ejemplos y aplicaciones serán números complejos o miembros de \( \mathbb{Z}_p \) para algún número primo \( p \).</p>
-  </div>
-
-  <div class="example">
-    <h3>Las siguientes ecuaciones no son lineales:</h3>
-    <p>\( xy + 2z = 1 \)</p>
-    <p>\( x_1^2 - x_2 = 3 \)</p>
-    <p>\( \frac{x}{y} + z = 2 \)</p>
-    <p>\( \sqrt{2}x + \frac{\pi}{4} y - \sin \left( \frac{\pi}{5} z \right) = 1 \)</p>
-    <p>\( \sin x_1 - 3x_2 + 2^y = 0 \)</p>
-    <p>Por tanto, las ecuaciones lineales no contienen productos, recíprocos u otras funciones de las variables; las variables sólo aparecen a la primera potencia y sólo se multiplican por constantes. Ponga particular atención al cuarto ejemplo en cada lista: ¿por qué la cuarta ecuación en la primera lista es lineal, pero la cuarta ecuación en la segunda lista no lo es?</p>
-  </div>
-
-  <div class="example">
-    <h3>Una solución de una ecuación lineal</h3>
-    <p>Una solución de una ecuación lineal \( a_1 x_1 + a_2 x_2 + \cdots + a_n x_n = b \) es un vector \( [s_1, s_2, \ldots, s_n] \) cuyos componentes satisfacen la ecuación cuando se sustituye \( x_i = s_i \), \( x_2 = s_2, \ldots, x_n = s_n \).</p>
-  </div>
-
-  <div class="example">
-    <h3>Un sistema de ecuaciones lineales</h3>
-    <p>Un sistema de ecuaciones lineales es un conjunto finito de ecuaciones lineales, cada una con las mismas variables. Una solución de un sistema de ecuaciones lineales es un vector que simultáneamente es una solución de cada ecuación en el sistema. El conjunto solución de un sistema de ecuaciones lineales es el conjunto de todas las soluciones del sistema. Al proceso de encontrar el conjunto solución de un sistema de ecuaciones lineales se le conocerá como "resolver el sistema".</p>
-  </div>
-
-  <div class="example">
-    <h3>Ejemplo 2.4</h3>
-    <p>Resuelva los siguientes sistemas de ecuaciones lineales:</p>
-    <p>(a) \( x - y = 1 \) <br> \( x + y = 3 \)</p>
-    <p>(b) \( x - y = 2 \) <br> \( 2x - 2y = 4 \)</p>
-    <p>(c) \( x - y = 1 \) <br> \( x - y = 3 \)</p>
-  </div>
-
-  <div class="example">
-    <h3>Solución</h3>
-    <p>(a) Al sumar las dos ecuaciones se obtiene \( 2x = 4 \), de modo que \( x = 2 \), de donde se encuentra que \( y = 1 \). Una comprobación rápida confirma que \( [2, 1] \) es de hecho una solución de ambas ecuaciones. Que esta es la única solución que puede verse al observar que esta solución corresponde al (único) punto de intersección \( (2, 1) \) de las rectas con ecuaciones \( x - y = 1 \) y \( x + y = 3 \), como se muestra en la figura 2.1(a). Por tanto, \( [2, 1] \) es una solución única.</p>
-    <p>(b) La segunda ecuación en este sistema es justo el doble de la primera, de modo que las soluciones corresponden sólo a la primera ecuación: a saber, los puntos sobre la recta \( x - y = 2 \). Las mismas pueden representarse paramétricamente como \( [2 + t, t] \). Por tanto, este sistema tiene un número infinito de soluciones (figura 2.1(b)).</p>
-    <p>(c) Dos números \( x \) y \( y \) no pueden tener simultáneamente una diferencia de 1 y 3. Por la segunda ecuación de la primera, lo que produce la conclusión absurda \( 0 = -2 \). Como muestra la figura 2.1(c), en este caso las rectas para las ecuaciones son paralelas.</p>
-  </div>
-<img src="../../../img/guia_246.png" alt="" width="600">
-  <div class="example">
-    <h3>Resolución de un sistema de ecuaciones lineales</h3>
-    <p>Dos sistemas lineales se llaman equivalentes si tienen los mismos conjuntos solución. Por ejemplo,</p>
-    <p>\( x - y = 1 \) <br> \( x + y = 3 \)</p>
-    <p>es equivalente, pues ambos tienen la solución única \( [2, 1] \) (Comprobable).</p>
-  </div>
-
-  <div class="example">
-    <h3>Un sistema de ecuaciones lineales con coeficientes reales tiene</h3>
-    <p>(a) una solución única (un sistema consistente) o</p>
-    <p>(b) un número infinito de soluciones (un sistema consistente) o</p>
-    <p>(c) ninguna solución (un sistema inconsistente).</p>
-  </div>
-
-   
 </div>
 
 
@@ -1732,136 +1721,93 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
    
-    <h2>Métodos directos para resolver sistemas lineales</h2>
-  <p>En esta sección se verá un procedimiento sistemático general para resolver un sistema de ecuaciones lineales. Este procedimiento se basa en la idea de reducir la matriz aumentada del sistema dado a una forma que luego pueda resolverse mediante sustitución hacia atrás. El método es directo en el sentido de que conduce directamente a la solución (si existe una) en un número finito de pasos. En la sección 2.5 se considerarán algunos métodos indirectos que funcionan en una forma completamente diferente.</p>
+     
+<h1>Teorema 3.13</h1>
+  <p>Sea \( A \) una matriz cuadrada. Si \( B \) es una matriz cuadrada tal que \( AB = I \) y \( BA = I \), entonces \( A \) es invertible y \( B = A^{-1} \).</p>
 
-  <h3>Matrices y forma escalonada</h3>
-  <p>Existen dos importantes matrices asociadas con un sistema lineal. La matriz de coeficientes contiene los coeficientes de las variables, y la matriz aumentada (que ya se encontró) es la matriz coeficiente aumentada por una columna adicional que contiene los términos constantes.</p>
+  <h1>Teorema 3.14</h1>
+  <p>Sea \( A \) una matriz cuadrada. Si una secuencia de operaciones elementales con renglones reduce \( A \) a \( I \), entonces la misma secuencia de operaciones elementales transforma \( I \) en \( A^{-1} \).</p>
 
-  <div class="example">
-    <p>Para el sistema</p>
-    <p>\( 2x + y - z = 3 \)</p>
-    <p>\( x + 5z = 1 \)</p>
-    <p>\( -x + 3y - 2z = 0 \)</p>
-    <p class="matrix">La matriz de coeficientes es</p>
-    <p class="matrix">\[
-    \begin{bmatrix}
-    2 & 1 & -1 \\
-    1 & 0 & 5 \\
-    -1 & 3 & -2
-    \end{bmatrix}
-    \]</p>
-    <p class="matrix">y la matriz aumentada es</p>
-    <p class="matrix">\[
-    \begin{bmatrix}
-    2 & 1 & -1 & | & 3 \\
-    1 & 0 & 5 & | & 1 \\
-    -1 & 3 & -2 & | & 0
-    \end{bmatrix}
-    \]</p>
-  </div>
-
-  <div class="example">
-    <h3>Definición</h3>
-    <p>Una matriz está en forma escalonada por renglones si satisface las siguientes propiedades:</p>
-    <ol>
-      <li>Cualquier renglón que consista completamente de ceros está en la parte baja.</li>
-      <li>En cada renglón distinto de cero, el primer elemento distinto de cero (llamado elemento pivote) está en una columna a la izquierda de cualquier elemento pivote bajo él.</li>
-    </ol>
-    <p>Observe que estas propiedades garantizan que los elementos pivote formen un patrón en escalera. En particular, en cualquier columna que contenga un elemento pivote, las entradas bajo el elemento pivote son cero, como ilustran los siguientes ejemplos.</p>
-  </div>
-
-  <div class="example">
-    <h3>Ejemplo 2.7</h3>
-    <p>Las siguientes matrices están en forma escalonada por renglones:</p>
-    <p class="matrix">\[
-    \begin{bmatrix}
-    2 & 4 & 1 \\
-    0 & -1 & 2 \\
-    0 & 0 & 0
-    \end{bmatrix}
-    \quad
-    \begin{bmatrix}
-    1 & 0 & 1 \\
-    0 & 1 & 5 \\
-    0 & 0 & 4
-    \end{bmatrix}
-    \quad
-    \begin{bmatrix}
-    1 & 1 & 2 & 1 \\
-    0 & 0 & 1 & 3 \\
-    0 & 0 & 0 & 0
-    \end{bmatrix}
-    \quad
-    \begin{bmatrix}
-    0 & 2 & 0 & 1 & -1 & 3 \\
-    0 & 0 & -1 & 1 & 2 & 2 \\
-    0 & 0 & 0 & 0 & 4 & 0 \\
-    0 & 0 & 0 & 0 & 0 & 5
-    \end{bmatrix}
-    \]</p>
-    <p>Si una matriz en forma escalonada por renglones en realidad es la matriz aumentada de un sistema lineal, el sistema es bastante fácil de resolver mediante sustitución hacia atrás solamente.</p>
-  </div>
-
-  <div class="example">
-    <h3>Ejemplo 2.8</h3>
-    <p>Si suponemos que cada una de las matrices en el ejemplo 2.7 es una matriz aumentada, es decir los sistemas correspondientes de ecuaciones lineales y resueltos.</p>
-    <h4>Solución</h4>
-    <p>Recuerde primero que la última columna en una matriz aumentada es el vector de términos constantes. Entonces la primera matriz corresponde al sistema</p>
-    <p>\( 2x_1 + 4x_2 = 1 \)</p>
-    <p>\( -x_2 = 2 \)</p>
-    <p>(Advierta que se eliminó la última ecuación \( 0 = 0 \) o \( 0x_1 + 0x_2 = 0 \), que claramente es satisfecible por cualquier valor de \( x_1, y x_2 \).) La sustitución hacia atrás produce \( x_2 = -2 \) y entonces \( 2x_1 - 4(-2) = 9 \), de modo que \( 2x_1 = \frac{9}{2} \). La solución es \( \left[\frac{9}{2}, -2\right] \).</p>
-    <p>La segunda matriz tiene el sistema correspondiente</p>
-    <p>\( x_1 = 1 \)</p>
-    <p>\( x_2 = 5 \)</p>
-    <p>\( 0 = 4 \)</p>
-    <p>La última ecuación representa \( 0x_1 + 0x_2 = 4 \), que claramente no tiene solución. Por tanto, este sistema no tiene soluciones. Para el sistema que corresponde a la tercera matriz, se tiene</p>
-    <p>\( x_1 + x_2 + 2x_3 = 1 \)</p>
-    <p>\( x_3 = 3 \)</p>
-    <p>de modo que \( x_1 = 1 - 2(3) - x_2 = -5 - x_2 \). Existe un número infinito de soluciones, pues a \( x_2 \) se le puede asignar cualquier valor \( t \) para obtener la solución paramétrica \( [-5 - t, t, 3] \).</p>
-  </div>
+  <h1>El método de Gauss-Jordan para calcular la inversa</h1>
+  <p>Es posible realizar operaciones con renglones sobre \( A \) e \( I \) simultáneamente al construir una "matriz superamentada" \( [A | I] \). El Teorema 3.14 muestra que si \( A \) es equivalente por renglones a \( I \) (lo cual, por el teorema fundamental (d) \(\iff\) (a)), significa que \( A \) es invertible, entonces operaciones elementales con renglones producirán
+  \[
+  [A | I] \rightarrow [I | A^{-1}]
+  \]
+  Si \( A \) no puede reducirse a \( I \), entonces el teorema fundamental garantiza que \( A \) no es invertible.</p>
+  <p>El procedimiento recién descrito es simplemente la eliminación de Gauss-Jordan efectuada sobre una matriz aumentada de \( n \times 2n \), en lugar de sobre una de \( n \times (n + 1) \). Otra forma de ver este procedimiento es observando el problema de encontrar \( A^{-1} \) al resolver la ecuación matricial \( AX = I_n \) para una matriz \( X \) de \( n \times n \). (Esto es suficiente, por el teorema fundamental, pues una inversa correcta de \( A \) debe ser una inversa de dos lados.)</p>
+  <p>Si las columnas de \( X \) se denotan \( X_1, \ldots, X_n \), entonces esta ecuación matricial es equivalente a resolver para las columnas de \( X \), una a la vez. Dado que las columnas de \( I_n \) son los vectores unitarios estándar \( e_1, \ldots, e_n \), entonces se tienen \( n \) sistemas de ecuaciones lineales, todos con matriz de coeficientes \( A \):
+  \[
+  AX_1 = e_1, \ldots, AX_n = e_n
+  \]
+  Dado que se necesita la misma secuencia de operaciones con renglones para llevar \( A \) a la forma escalonada reducida por renglones en cada caso, las matrices aumentadas para estos sistemas, \( [A | e_1], \ldots, [A | e_n] \), pueden combinarse como
+  \[
+  [A | e_1, e_2, \ldots, e_n] = [A | I_n]
+  \]
+  Ahora se aplican operaciones con renglones para tratar de reducir \( A \) a \( I \), lo cual, si tiene éxito, resolverá simultáneamente para las columnas de \( A^{-1} \), lo que transformará \( I_n \) en \( A^{-1} \).</p>
+  <p>Este uso de la eliminación de Gauss-Jordan se ilustra con tres ejemplos.</p>
   
-    <hr>
-    <div class="example">
-    <h3>Definición</h3>
-    <p>Las siguientes operaciones elementales con renglones pueden realizarse sobre una matriz:</p>
-    <ol>
-      <li>Intercambiar dos renglones.</li>
-      <li>Multiplicar un renglón por una constante distinta de cero.</li>
-      <li>Sumar un múltiplo de un renglón a otro renglón.</li>
-    </ol>
-  </div>
+  
+  <h1>Ejemplo 3.30</h1>
+  <p>Encuentre la inversa de
+  \[
+  A = \begin{bmatrix}
+  1 & 2 & -1 \\
+  2 & 2 & 4 \\
+  1 & 3 & -3
+  \end{bmatrix}
+  \]
+  si existe.</p>
 
-  <div class="example">
-    <h3>Definición</h3>
-    <p>Las matrices \( A \) y \( B \) son equivalentes por renglones si existe una secuencia de operaciones elementales con renglones que convierta \( A \) en \( B \).</p>
-  </div>
+  <h1>Solución</h1>
+  <p>La eliminación de Gauss-Jordan produce</p>
+  <table>
+    <tr><td>\([A | I] = \begin{bmatrix} 1 & 2 & -1 & | & 1 & 0 & 0 \\ 2 & 2 & 4 & | & 0 & 1 & 0 \\ 1 & 3 & -3 & | & 0 & 0 & 1 \end{bmatrix}\)</td></tr>
+    <tr><td>\(R_2 - 2R_1 \rightarrow R_2\)</td></tr>
+    <tr><td>\(R_3 - R_1 \rightarrow R_3\)</td></tr>
+    <tr><td>\(\begin{bmatrix} 1 & 2 & -1 & | & 1 & 0 & 0 \\ 0 & -2 & 6 & | & -2 & 1 & 0 \\ 0 & 1 & -2 & | -1 & 0 & 1 \end{bmatrix}\)</td></tr>
+    <tr><td>\((-1/2)R_2 \rightarrow R_2\)</td></tr>
+    <tr><td>\(\begin{bmatrix} 1 & 2 & -1 & | & 1 & 0 & 0 \\ 0 & 1 & -3 & | & 1 & -1/2 & 0 \\ 0 & 1 & -2 & | -1 & 0 & 1 \end{bmatrix}\)</td></tr>
+    <tr><td>\(R_3 - R_2 \rightarrow R_3\)</td></tr>
+    <tr><td>\(\begin{bmatrix} 1 & 2 & -1 & | & 1 & 0 & 0 \\ 0 & 1 & -3 & | & 1 & -1/2 & 0 \\ 0 & 0 & 1 & | & 0 & 1/2 & 1 \end{bmatrix}\)</td></tr>
+    <tr><td>\(R_1 + R_3 \rightarrow R_1\)</td></tr>
+    <tr><td>\(R_2 + 3R_3 \rightarrow R_2\)</td></tr>
+    <tr><td>\(\begin{bmatrix} 1 & 2 & 0 & | & 1 & 1/2 & 1 \\ 0 & 1 & 0 & | & 1 & 1/2 & 3 \\ 0 & 0 & 1 & | & 0 & 1/2 & 1 \end{bmatrix}\)</td></tr>
+    <tr><td>\(R_1 - 2R_2 \rightarrow R_1\)</td></tr>
+    <tr><td>\(\begin{bmatrix} 1 & 0 & 0 & | & -1 & -1/2 & -5 \\ 0 & 1 & 0 & | & 1 & 1/2 & 3 \\ 0 & 0 & 1 & | & 0 & 1/2 & 1 \end{bmatrix}\)</td></tr>
+  </table>
+  <p>Por tanto,</p>
+  <p>\(A^{-1} = \begin{bmatrix} -1 & -1/2 & -5 \\ 1 & 1/2 & 3 \\ 0 & 1/2 & 1 \end{bmatrix}\)</p>
+  <p>(Siempre debe comprobar que \( A A^{-1} = I \) mediante multiplicación directa. Por el Teorema 3.13, no necesita comprobar que también \( A^{-1} A = I \))</p>
 
-  <div class="example">
-    <h3>Teorema 2.1</h3>
-    <p>Las matrices \( A \) y \( B \) son equivalentes por renglones si y sólo si pueden reducirse a la misma forma escalonada por renglones.</p>
-  </div>
+  <h1>Comentario</h1>
+  <p>Note que se usó la variante de eliminación de Gauss-Jordan que primero introduce todos los ceros abajo de los 1 pivote, de izquierda a derecha y de arriba abajo, y luego crea ceros arriba de los 1 pivote, de derecha a izquierda y de abajo arriba. Este planteamiento ahorra cálculos, como se anotó en el capítulo 2, pero puede encontrar más sencillo, cuando trabaje a mano, para crear todos los ceros en cada columna conforme avance. Desde luego, la respuesta será la misma.</p>
 
-  <h2>Eliminación gaussiana</h2>
-  <p>Cuando se aplica la reducción por renglones a la matriz aumentada de un sistema de ecuaciones lineales, se crea un sistema equivalente que puede resolverse mediante sustitución hacia atrás. Todo el proceso se conoce como eliminación gaussiana.</p>
+  <h1>3.4 La factorización LU</h1>
+  <p>Así como es natural (e ilustrador) factorizar un número natural en un producto de otros números naturales (por ejemplo, 30 = 2 · 3 · 5), frecuentemente también es útil factorizar matrices como productos de otras matrices. Cualquier representación de una matriz como producto de dos o más matrices se llama factorización de matrices. Por ejemplo,
+  \[
+  \begin{bmatrix} 3 & -1 \\ 9 & -5 \end{bmatrix} = \begin{bmatrix} 1 & 0 \\ 3 & 1 \end{bmatrix} \begin{bmatrix} 3 & -1 \\ 0 & -2 \end{bmatrix}
+  \]
+  es una factorización de una matriz.</p>
+  <p>No es necesario decir que algunas factorizaciones son más útiles que otras. En esta sección se presenta una factorización matricial que surge en la solución de sistemas de ecuaciones lineales mediante eliminación gaussiana y es particularmente adecuada para implementaciones en computadora. En capítulos posteriores se encontrarán otras factorizaciones matriciales igualmente útiles. De hecho, el tema es rico y el se han dedicado libros y cursos enteros.</p>
+  <p>Considere un sistema de ecuaciones lineales de la forma \( A\mathbf{x} = \mathbf{b} \), donde \( A \) es una matriz de \( n \times n \). La meta de este libro es demostrar que la eliminación gaussiana implica-mente factoriza \( A \) en un producto de matrices que permiten resolver fácilmente el sistema dado (y cualquier otro sistema con la misma matriz de coeficientes). El siguiente ejemplo ilustra la idea básica.</p>
 
-  <div class="example">
-    <h3>Eliminación gaussiana</h3>
-    <ol>
-      <li>Escriba la matriz aumentada del sistema de ecuaciones lineales.</li>
-      <li>Use operaciones elementales con renglones para reducir la matriz aumentada a forma escalonada por renglones.</li>
-      <li>Con sustitución hacia atrás, resuelva el sistema equivalente que corresponda a la matriz reducida por renglones.</li>
-    </ol>
-    <h4>Comentario</h4>
-    <p>Cuando se realiza a mano, el paso 2 de la eliminación gaussiana permite muchas opciones. He aquí algunos lineamientos útiles:</p>
-    <ol>
-      <li>(a) Localice la columna de la extrema izquierda que no sea toda ceros.</li>
-      <li>(b) Cree un elemento pivote en la parte superior de esta columna. (Por lo general será más sencillo si lo convierte en 1 pivote. Vea el ejercicio 22.)</li>
-      <li>(c) Use el elemento pivote para crear ceros debajo de él.</li>
-      <li>(d) Cubra el renglón que contiene el elemento pivote y regrese al paso (a) para repetir el procedimiento sobre la matriz restante. Deténgase cuando toda la matriz esté en forma escalonada por renglones.</li>
-    </ol>
-  </div>
-    
+  <h1>Ejemplo 3.33</h1>
+  <p>Sea
+  \[
+  A = \begin{bmatrix} 2 & 1 & 3 \\ 4 & -1 & 3 \\ -2 & 5 & 5 \end{bmatrix}
+  \]</p>
+
+  <h1>La reducción por renglones de \( A \) se realiza del modo siguiente:</h1>
+  <table>
+    <tr><td>\(A = \begin{bmatrix} 2 & 1 & 3 \\ 4 & -1 & 3 \\ -2 & 5 & 5 \end{bmatrix}\)</td></tr>
+    <tr><td>\(R_2 - 2R_1 \rightarrow R_2\)</td></tr>
+    <tr><td>\(\begin{bmatrix} 2 & 1 & 3 \\ 0 & -3 & -3 \\ -2 & 5 & 5 \end{bmatrix}\)</td></tr>
+    <tr><td>\(R_3 + R_1 \rightarrow R_3\)</td></tr>
+    <tr><td>\(\begin{bmatrix} 2 & 1 & 3 \\ 0 & -3 & -3 \\ 0 & 6 & 8 \end{bmatrix} = U\)</td></tr>
+  </table>
+ 
+
+
 </div>
 </div>
  </form>
@@ -1870,7 +1816,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="sexto.php"
+        href="once.php"
         role="button"
         width="50px"
         height="50px"

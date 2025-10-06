@@ -1598,133 +1598,21 @@ function ocultarMensaje4() {
     
 <div class="seccion izquierda"> 
  
- 
-       <h2>En ℝ² (plano 2D):</h2>
-        
-        <div class="case">
-            <div class="case-title">RECTA (1 dimensión)</div>
-            <p><strong>Ecuación necesaria:</strong> <span class="equation">1</span></p>
-            <p><strong>¿Por qué?</strong> Con <span class="equation">2x + y = 3</span> reduces de <span class="dimension">2D → 1D</span></p>
-            <p><strong>Movimiento libre:</strong> <span class="movement">Solo a lo largo de la recta</span></p>
-        </div>
+    <p>Las tres matrices elementales \( E_1, E_2, E_3 \), que logran esta reducción de \( A \) a la forma escalonada \( U \) son (en orden):</p>
+  <p>\(E_1 = \begin{bmatrix} 1 & 0 & 0 \\ -2 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}\), \(E_2 = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 1 & 0 & 1 \end{bmatrix}\), \(E_3 = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 2 & 1 \end{bmatrix}\)</p>
+  <p>Por tanto,</p>
+  <p>\(E_3 E_2 E_1 A = U\)</p>
+  <p>Al despejar para \( A \), se obtiene</p>
+  <p>\(A = E_1^{-1} E_2^{-1} E_3^{-1} U = \begin{bmatrix} 1 & 0 & 0 \\ 2 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix} \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ -1 & 0 & 1 \end{bmatrix} \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & -2 & 1 \end{bmatrix} U\)</p>
+  <p>\(\begin{bmatrix} 1 & 0 & 0 \\ 2 & 1 & 0 \\ -1 & -2 & 1 \end{bmatrix} U = LU\)</p>
+  <p>Por tanto, \( A \) puede factorizarse como</p>
+  <p>\(A = LU\)</p>
+  <p>donde \( U \) es una matriz triangular superior (vea los ejercicios para la sección 3.2) y \( L \) es triangular inferior unitaria. Esto es, \( L \) tiene la forma</p>
+  <p>\(L = \begin{bmatrix} 1 & 0 & \cdots & 0 \\ * & 1 & \cdots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ * & * & \cdots & 1 \end{bmatrix}\)</p>
+  <p>con ceros arriba y números 1 en la diagonal principal.</p>
+  <p>El ejemplo anterior motiva la siguiente definición.</p>
 
-        <div class="rule">
-            <h2>Regla general:</h2>
-            <div class="math">
-                <p>\[
-                \text{Ecuaciones necesarias} = \text{Dimensión del espacio} - \text{Dimensión del objeto}
-                \]</p>
-            </div>
-        </div>
 
-        <div class="examples">
-            <div class="example">
-                <p><strong>Plano en ℝ³:</strong></p>
-                <div class="math">
-                    <p>\( 3 - 2 = 1 \) ecuación</p>
-                </div>
-            </div>
-            
-            <div class="example">
-                <p><strong>Recta en ℝ³:</strong></p>
-                <div class="math">
-                    <p>\( 3 - 1 = 2 \) ecuaciones</p>
-                </div>
-            </div>
-            
-            <div class="example">
-                <p><strong>Recta en ℝ²:</strong></p>
-                <div class="math">
-                    <p>\( 2 - 1 = 1 \) ecuación</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="analogy">
-            <p style="text-align: center; font-weight: bold;">
-                ¡Cada ecuación te quita una dimensión de libertad!
-            </p>
-        </div>
-
-    <hr>
-    
-    
-
-    <h2>2.1 Introducción a los sistemas de ecuaciones lineales</h2>
-  <p>Recuerde que la ecuación general de una recta en \( \mathbb{R}^2 \) es de la forma</p>
-  <p>\( ax + by = c \)</p>
-  <p>y que la ecuación general de un plano en \( \mathbb{R}^3 \) es de la forma</p>
-  <p>\( ax + by + cz = d \)</p>
-  <p>Las ecuaciones de esta forma se llaman ecuaciones lineales.</p>
-
-  <div class="example">
-    <h3>Definición</h3>
-    <p>Una ecuación lineal en las \( n \) variables \( x_1, x_2, \ldots, x_n \) es una ecuación que puede escribirse en la forma</p>
-    <p>\( a_1 x_1 + a_2 x_2 + \cdots + a_n x_n = b \)</p>
-    <p>donde los coeficientes \( a_1, a_2, \ldots, a_n \) y el término constante \( b \) son constantes.</p>
-  </div>
-
-  <div class="example">
-    <h3>Ejemplo 2.1</h3>
-    <p>Las siguientes ecuaciones son lineales:</p>
-    <p>\( 3x - 4y = -1 \)</p>
-    <p>\( \frac{1}{2} x + \frac{15}{2} t = 9 \)</p>
-    <p>\( x_1 + 5x_2 = 3 - x_3 + 2x_4 \)</p>
-    <p>\( \sqrt{2} x + \frac{\pi}{4} y - \left( \sin \frac{\pi}{5} \right) z = 1 \)</p>
-    <p>\( 3.2x_1 - 0.01x_2 = 4.6 \)</p>
-    <p>Observe que la tercera ecuación es lineal porque puede reescribirse en la forma \( x_1 + 5x_2 + x_3 - 2x_4 = 3 \). También es importante notar que, aunque en estos ejemplos (y en la mayoría de las aplicaciones) los coeficientes y términos constantes son números reales, en algunos ejemplos y aplicaciones serán números complejos o miembros de \( \mathbb{Z}_p \) para algún número primo \( p \).</p>
-  </div>
-
-  <div class="example">
-    <h3>Las siguientes ecuaciones no son lineales:</h3>
-    <p>\( xy + 2z = 1 \)</p>
-    <p>\( x_1^2 - x_2 = 3 \)</p>
-    <p>\( \frac{x}{y} + z = 2 \)</p>
-    <p>\( \sqrt{2}x + \frac{\pi}{4} y - \sin \left( \frac{\pi}{5} z \right) = 1 \)</p>
-    <p>\( \sin x_1 - 3x_2 + 2^y = 0 \)</p>
-    <p>Por tanto, las ecuaciones lineales no contienen productos, recíprocos u otras funciones de las variables; las variables sólo aparecen a la primera potencia y sólo se multiplican por constantes. Ponga particular atención al cuarto ejemplo en cada lista: ¿por qué la cuarta ecuación en la primera lista es lineal, pero la cuarta ecuación en la segunda lista no lo es?</p>
-  </div>
-
-  <div class="example">
-    <h3>Una solución de una ecuación lineal</h3>
-    <p>Una solución de una ecuación lineal \( a_1 x_1 + a_2 x_2 + \cdots + a_n x_n = b \) es un vector \( [s_1, s_2, \ldots, s_n] \) cuyos componentes satisfacen la ecuación cuando se sustituye \( x_i = s_i \), \( x_2 = s_2, \ldots, x_n = s_n \).</p>
-  </div>
-
-  <div class="example">
-    <h3>Un sistema de ecuaciones lineales</h3>
-    <p>Un sistema de ecuaciones lineales es un conjunto finito de ecuaciones lineales, cada una con las mismas variables. Una solución de un sistema de ecuaciones lineales es un vector que simultáneamente es una solución de cada ecuación en el sistema. El conjunto solución de un sistema de ecuaciones lineales es el conjunto de todas las soluciones del sistema. Al proceso de encontrar el conjunto solución de un sistema de ecuaciones lineales se le conocerá como "resolver el sistema".</p>
-  </div>
-
-  <div class="example">
-    <h3>Ejemplo 2.4</h3>
-    <p>Resuelva los siguientes sistemas de ecuaciones lineales:</p>
-    <p>(a) \( x - y = 1 \) <br> \( x + y = 3 \)</p>
-    <p>(b) \( x - y = 2 \) <br> \( 2x - 2y = 4 \)</p>
-    <p>(c) \( x - y = 1 \) <br> \( x - y = 3 \)</p>
-  </div>
-
-  <div class="example">
-    <h3>Solución</h3>
-    <p>(a) Al sumar las dos ecuaciones se obtiene \( 2x = 4 \), de modo que \( x = 2 \), de donde se encuentra que \( y = 1 \). Una comprobación rápida confirma que \( [2, 1] \) es de hecho una solución de ambas ecuaciones. Que esta es la única solución que puede verse al observar que esta solución corresponde al (único) punto de intersección \( (2, 1) \) de las rectas con ecuaciones \( x - y = 1 \) y \( x + y = 3 \), como se muestra en la figura 2.1(a). Por tanto, \( [2, 1] \) es una solución única.</p>
-    <p>(b) La segunda ecuación en este sistema es justo el doble de la primera, de modo que las soluciones corresponden sólo a la primera ecuación: a saber, los puntos sobre la recta \( x - y = 2 \). Las mismas pueden representarse paramétricamente como \( [2 + t, t] \). Por tanto, este sistema tiene un número infinito de soluciones (figura 2.1(b)).</p>
-    <p>(c) Dos números \( x \) y \( y \) no pueden tener simultáneamente una diferencia de 1 y 3. Por la segunda ecuación de la primera, lo que produce la conclusión absurda \( 0 = -2 \). Como muestra la figura 2.1(c), en este caso las rectas para las ecuaciones son paralelas.</p>
-  </div>
-<img src="../../../img/guia_246.png" alt="" width="600">
-  <div class="example">
-    <h3>Resolución de un sistema de ecuaciones lineales</h3>
-    <p>Dos sistemas lineales se llaman equivalentes si tienen los mismos conjuntos solución. Por ejemplo,</p>
-    <p>\( x - y = 1 \) <br> \( x + y = 3 \)</p>
-    <p>es equivalente, pues ambos tienen la solución única \( [2, 1] \) (Comprobable).</p>
-  </div>
-
-  <div class="example">
-    <h3>Un sistema de ecuaciones lineales con coeficientes reales tiene</h3>
-    <p>(a) una solución única (un sistema consistente) o</p>
-    <p>(b) un número infinito de soluciones (un sistema consistente) o</p>
-    <p>(c) ninguna solución (un sistema inconsistente).</p>
-  </div>
-
-   
 </div>
 
 
@@ -1732,135 +1620,7 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
    
-    <h2>Métodos directos para resolver sistemas lineales</h2>
-  <p>En esta sección se verá un procedimiento sistemático general para resolver un sistema de ecuaciones lineales. Este procedimiento se basa en la idea de reducir la matriz aumentada del sistema dado a una forma que luego pueda resolverse mediante sustitución hacia atrás. El método es directo en el sentido de que conduce directamente a la solución (si existe una) en un número finito de pasos. En la sección 2.5 se considerarán algunos métodos indirectos que funcionan en una forma completamente diferente.</p>
-
-  <h3>Matrices y forma escalonada</h3>
-  <p>Existen dos importantes matrices asociadas con un sistema lineal. La matriz de coeficientes contiene los coeficientes de las variables, y la matriz aumentada (que ya se encontró) es la matriz coeficiente aumentada por una columna adicional que contiene los términos constantes.</p>
-
-  <div class="example">
-    <p>Para el sistema</p>
-    <p>\( 2x + y - z = 3 \)</p>
-    <p>\( x + 5z = 1 \)</p>
-    <p>\( -x + 3y - 2z = 0 \)</p>
-    <p class="matrix">La matriz de coeficientes es</p>
-    <p class="matrix">\[
-    \begin{bmatrix}
-    2 & 1 & -1 \\
-    1 & 0 & 5 \\
-    -1 & 3 & -2
-    \end{bmatrix}
-    \]</p>
-    <p class="matrix">y la matriz aumentada es</p>
-    <p class="matrix">\[
-    \begin{bmatrix}
-    2 & 1 & -1 & | & 3 \\
-    1 & 0 & 5 & | & 1 \\
-    -1 & 3 & -2 & | & 0
-    \end{bmatrix}
-    \]</p>
-  </div>
-
-  <div class="example">
-    <h3>Definición</h3>
-    <p>Una matriz está en forma escalonada por renglones si satisface las siguientes propiedades:</p>
-    <ol>
-      <li>Cualquier renglón que consista completamente de ceros está en la parte baja.</li>
-      <li>En cada renglón distinto de cero, el primer elemento distinto de cero (llamado elemento pivote) está en una columna a la izquierda de cualquier elemento pivote bajo él.</li>
-    </ol>
-    <p>Observe que estas propiedades garantizan que los elementos pivote formen un patrón en escalera. En particular, en cualquier columna que contenga un elemento pivote, las entradas bajo el elemento pivote son cero, como ilustran los siguientes ejemplos.</p>
-  </div>
-
-  <div class="example">
-    <h3>Ejemplo 2.7</h3>
-    <p>Las siguientes matrices están en forma escalonada por renglones:</p>
-    <p class="matrix">\[
-    \begin{bmatrix}
-    2 & 4 & 1 \\
-    0 & -1 & 2 \\
-    0 & 0 & 0
-    \end{bmatrix}
-    \quad
-    \begin{bmatrix}
-    1 & 0 & 1 \\
-    0 & 1 & 5 \\
-    0 & 0 & 4
-    \end{bmatrix}
-    \quad
-    \begin{bmatrix}
-    1 & 1 & 2 & 1 \\
-    0 & 0 & 1 & 3 \\
-    0 & 0 & 0 & 0
-    \end{bmatrix}
-    \quad
-    \begin{bmatrix}
-    0 & 2 & 0 & 1 & -1 & 3 \\
-    0 & 0 & -1 & 1 & 2 & 2 \\
-    0 & 0 & 0 & 0 & 4 & 0 \\
-    0 & 0 & 0 & 0 & 0 & 5
-    \end{bmatrix}
-    \]</p>
-    <p>Si una matriz en forma escalonada por renglones en realidad es la matriz aumentada de un sistema lineal, el sistema es bastante fácil de resolver mediante sustitución hacia atrás solamente.</p>
-  </div>
-
-  <div class="example">
-    <h3>Ejemplo 2.8</h3>
-    <p>Si suponemos que cada una de las matrices en el ejemplo 2.7 es una matriz aumentada, es decir los sistemas correspondientes de ecuaciones lineales y resueltos.</p>
-    <h4>Solución</h4>
-    <p>Recuerde primero que la última columna en una matriz aumentada es el vector de términos constantes. Entonces la primera matriz corresponde al sistema</p>
-    <p>\( 2x_1 + 4x_2 = 1 \)</p>
-    <p>\( -x_2 = 2 \)</p>
-    <p>(Advierta que se eliminó la última ecuación \( 0 = 0 \) o \( 0x_1 + 0x_2 = 0 \), que claramente es satisfecible por cualquier valor de \( x_1, y x_2 \).) La sustitución hacia atrás produce \( x_2 = -2 \) y entonces \( 2x_1 - 4(-2) = 9 \), de modo que \( 2x_1 = \frac{9}{2} \). La solución es \( \left[\frac{9}{2}, -2\right] \).</p>
-    <p>La segunda matriz tiene el sistema correspondiente</p>
-    <p>\( x_1 = 1 \)</p>
-    <p>\( x_2 = 5 \)</p>
-    <p>\( 0 = 4 \)</p>
-    <p>La última ecuación representa \( 0x_1 + 0x_2 = 4 \), que claramente no tiene solución. Por tanto, este sistema no tiene soluciones. Para el sistema que corresponde a la tercera matriz, se tiene</p>
-    <p>\( x_1 + x_2 + 2x_3 = 1 \)</p>
-    <p>\( x_3 = 3 \)</p>
-    <p>de modo que \( x_1 = 1 - 2(3) - x_2 = -5 - x_2 \). Existe un número infinito de soluciones, pues a \( x_2 \) se le puede asignar cualquier valor \( t \) para obtener la solución paramétrica \( [-5 - t, t, 3] \).</p>
-  </div>
-  
-    <hr>
-    <div class="example">
-    <h3>Definición</h3>
-    <p>Las siguientes operaciones elementales con renglones pueden realizarse sobre una matriz:</p>
-    <ol>
-      <li>Intercambiar dos renglones.</li>
-      <li>Multiplicar un renglón por una constante distinta de cero.</li>
-      <li>Sumar un múltiplo de un renglón a otro renglón.</li>
-    </ol>
-  </div>
-
-  <div class="example">
-    <h3>Definición</h3>
-    <p>Las matrices \( A \) y \( B \) son equivalentes por renglones si existe una secuencia de operaciones elementales con renglones que convierta \( A \) en \( B \).</p>
-  </div>
-
-  <div class="example">
-    <h3>Teorema 2.1</h3>
-    <p>Las matrices \( A \) y \( B \) son equivalentes por renglones si y sólo si pueden reducirse a la misma forma escalonada por renglones.</p>
-  </div>
-
-  <h2>Eliminación gaussiana</h2>
-  <p>Cuando se aplica la reducción por renglones a la matriz aumentada de un sistema de ecuaciones lineales, se crea un sistema equivalente que puede resolverse mediante sustitución hacia atrás. Todo el proceso se conoce como eliminación gaussiana.</p>
-
-  <div class="example">
-    <h3>Eliminación gaussiana</h3>
-    <ol>
-      <li>Escriba la matriz aumentada del sistema de ecuaciones lineales.</li>
-      <li>Use operaciones elementales con renglones para reducir la matriz aumentada a forma escalonada por renglones.</li>
-      <li>Con sustitución hacia atrás, resuelva el sistema equivalente que corresponda a la matriz reducida por renglones.</li>
-    </ol>
-    <h4>Comentario</h4>
-    <p>Cuando se realiza a mano, el paso 2 de la eliminación gaussiana permite muchas opciones. He aquí algunos lineamientos útiles:</p>
-    <ol>
-      <li>(a) Localice la columna de la extrema izquierda que no sea toda ceros.</li>
-      <li>(b) Cree un elemento pivote en la parte superior de esta columna. (Por lo general será más sencillo si lo convierte en 1 pivote. Vea el ejercicio 22.)</li>
-      <li>(c) Use el elemento pivote para crear ceros debajo de él.</li>
-      <li>(d) Cubra el renglón que contiene el elemento pivote y regrese al paso (a) para repetir el procedimiento sobre la matriz restante. Deténgase cuando toda la matriz esté en forma escalonada por renglones.</li>
-    </ol>
-  </div>
+     
     
 </div>
 </div>
@@ -1870,7 +1630,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="sexto.php"
+        href="doce.php"
         role="button"
         width="50px"
         height="50px"

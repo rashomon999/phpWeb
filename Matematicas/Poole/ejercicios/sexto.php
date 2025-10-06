@@ -1312,7 +1312,7 @@ if ($respuesta_121 === '144') {
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 390vh;
+    height: 440vh;
     }
 
 </style>
@@ -1598,8 +1598,181 @@ function ocultarMensaje4() {
     
 <div class="seccion izquierda"> 
  
- 
+ <div class="example">
+    <h3>Ejemplo 2.11</h3>
+    <p>Resuelva el sistema</p>
+    <p>\( w - x - y + 2z = 1 \)</p>
+    <p>\( w - x - y + 2z = 1 \)</p>
+    <p>\( 2w - 2x - y + 3z = 3 \)</p>
+    <p>\( -w + x - y = -3 \)</p>
+  </div>
+
+  <div class="example">
+    <h3>Solución</h3>
+    <p>La matriz aumentada es</p>
+    <p class="matrix">\[
+    \begin{bmatrix}
+    1 & -1 & -1 & 2 & | & 1 \\
+    2 & -2 & -1 & 3 & | & 3 \\
+    -1 & 1 & -1 & 0 & | & -3
+    \end{bmatrix}
+    \]</p>
+    <p>que puede reducirse por renglones del modo siguiente:</p>
+    <p class="matrix">\[
+    \begin{bmatrix}
+    1 & -1 & -1 & 2 & | & 1 \\
+    2 & -2 & -1 & 3 & | & 3 \\
+    -1 & 1 & -1 & 0 & | & -3
+    \end{bmatrix}
+    \xrightarrow{R_2 - 2R_1} \]
+    <br><br>
+
+    \[
+    \begin{bmatrix}
+    1 & -1 & -1 & 2 & | & 1 \\
+    0 & 0 & 1 & -1 & | & 1 \\
+    -1 & 1 & -1 & 0 & | & -3
+    \end{bmatrix}
+    \xrightarrow{R_3 + R_1}
+    \begin{bmatrix}
+    1 & -1 & -1 & 2 & | & 1 \\
+    0 & 0 & 1 & -1 & | & 1 \\
+    0 & 0 & -2 & 2 & | & -2
+    \end{bmatrix}
+    \xrightarrow{R_3 \div (-2)}
+    \begin{bmatrix}
+    1 & -1 & -1 & 2 & | & 1 \\
+    0 & 0 & 1 & -1 & | & 1 \\
+    0 & 0 & 0 & 0 & | & 0
+    \end{bmatrix}  \]
+     </p>
+    <p>El sistema asociado ahora es</p>
+    <p>\( w - x - y + 2z = 1 \)</p>
+    <p>\( y - z = 1 \)</p>
+    <p>que tiene un número infinito de soluciones. Existe más de una forma de asignar parámetros, pero se procederá a usar sustitución hacia atrás, y escribir las variables correspondientes a los elementos pivote (las variables pivote) en términos de las otras variables (las variables libres).</p>
+    <p>En este caso, las variables pivote son \( w \) y \( y \), y las variables libres son \( x \) y \( z \). Por tanto,</p>
+    <p>\( y = 1 + z \), y partir de esto se obtiene</p>
+    <p>\( w = 1 + x + y - 2z \)</p>
+    <p>\( = 1 + x + (1 + z) - 2z \)</p>
+    <p>\( = 2 + x - z \)</p>
+    <p>Si se asignan los parámetros \( x = s \) y \( z = t \), la solución puede escribirse en forma vectorial como</p>
+    <p class="matrix">\[
+    \begin{bmatrix} w \\ x \\ y \\ z \end{bmatrix}
+    =
+    \begin{bmatrix} 2 + s - t \\ s \\ 1 + t \\ t \end{bmatrix}
+    =
+    \begin{bmatrix} 2 \\ 0 \\ 1 \\ 0 \end{bmatrix}
+    +
+    s \begin{bmatrix} 1 \\ 1 \\ 0 \\ 0 \end{bmatrix}
+    +
+    t \begin{bmatrix} -1 \\ 0 \\ 1 \\ 1 \end{bmatrix}
+    \]</p>
+    <p>El ejemplo 2.11 destaca una propiedad muy importante: en un sistema consistente, las variables libres son las que no son variables pivote. Dado que el número de variables pivote es el número de renglones distintos de cero en la forma escalonada por renglones de la matriz de coeficientes, puede predecirse el número de variables libres (parámetros) antes de encontrar la solución explícita con el uso de sustitución hacia atrás. En el capítulo 3 se probará que, aunque la forma escalonada por renglones de una matriz no es única, el número de renglones distintos de cero es el mismo en todas las formas escalonadas por renglones de una matriz dada. Por tanto, tiene sentido dar un nombre a este número.</p>
+  </div>
+
+  <div class="example">
+    <h3>Definición</h3>
+    <p>El rank de una matriz es el número de renglones distintos de cero en su forma escalonada por renglones.</p>
+    <p>El rank de una matriz \( A \) se denota mediante \( \text{rank}(A) \). En el ejemplo 2.10, el rank de la matriz de coeficientes es 3, y en el ejemplo 2.11, el rank de la matriz de coeficientes es 2. Las observaciones recientes realizadas justifican el siguiente teorema, que se demostrará con más generalidad en los capítulos 3 y 6.</p>
+  </div>
+
+  <div class="example">
+    <h3>Teorema 2.2</h3>
+    <p>El teorema del rank</p>
+    <p>Sea \( A \) la matriz de coeficientes de un sistema de ecuaciones lineales con \( n \) variables. Si el sistema es consistente, entonces</p>
+    <p>\( \text{número de variables libres} = n - \text{rank}(A) \)</p>
+    <p>Por tanto, en el ejemplo 2.10, se tiene \( 3 - 3 = 0 \) variables libres (en otras palabras, una solución única), y en el ejemplo 2.11, se tiene \( 4 - 2 = 2 \) variables libres, como se encontró.</p>
+  </div>
     
+    <hr>
+
+  <h2>Eliminación de Gauss-Jordan</h2>
+  <p>Una modificación de la eliminación gaussiana simplifica enormemente la fase de sustitución hacia atrás y es particularmente
+     útil cuando se hacen cálculos a mano en un sistema.</p>
+
+            <h4>Definición</h4>
+  <p>Una matriz está en forma escalonada reducida por renglones si satisface las siguientes propiedades:</p>
+  <ol>
+    <li>Está en forma escalonada por renglones.</li>
+    <li>El elemento pivote en cada renglón distinto de cero es 1 (llamado 1 pivote).</li>
+    <li>Cada columna que contiene un 1 pivote tiene ceros en todos los otros lugares.</li>
+  </ol>
+
+ 
+ 
+ 
+  <p>La siguiente matriz está en forma escalonada reducida por renglones:</p>
+  <p class="matrix">\[
+  \begin{bmatrix}
+  1 & 2 & 0 & 0 & -3 & 1 & 0 \\
+  0 & 0 & 1 & 0 & 4 & -1 & 0 \\
+  0 & 0 & 0 & 1 & 3 & -2 & 0 \\
+  0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+  0 & 0 & 0 & 0 & 0 & 0 & 0
+  \end{bmatrix}
+  \]</p>
+  <p>Para matrices de \( 2 \times 2 \), las posibles formas escalonadas reducidas por renglones son</p>
+  <p class="matrix">\[
+  \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix},
+  \begin{bmatrix} 1 & * \\ 0 & 0 \end{bmatrix},
+  \begin{bmatrix} 0 & 1 \\ 0 & 0 \end{bmatrix},
+  \begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix}
+  \]</p>
+  <p>donde \( * \) puede ser cualquier número.</p>
+  <p>Es claro que, después de que una matriz se reduce a forma escalonada, posteriores operaciones elementales con renglones la llevarán a la forma escalonada reducida por renglones. Lo que no es claro (aunque la intuición puede sugerirlo) es que, a diferencia de la forma escalonada por renglones, la forma escalonada reducida por renglones de una matriz es única.</p>
+  <p>En la eliminación de Gauss-Jordan, se procede como en la eliminación gaussiana, pero la matriz aumentada se reduce a la forma escalonada reducida por renglones.</p>
+
+
+
+
+  
+  <h2>Eliminación de Gauss-Jordan</h2>
+  <ol>
+    <li>Escriba la matriz aumentada del sistema de ecuaciones lineales.</li>
+    <li>Use operaciones elementales con renglones para reducir la matriz aumentada a una forma escalonada reducida por renglones.</li>
+    <li>Si el sistema resultante es consistente, resuelva para las variables pivote en términos de cualquier variable libre restante.</li>
+  </ol>
+
+
+
+  <div class="example">
+    <h3>Ejemplo 2.13</h3>
+    <p>Resuelva el sistema en el ejemplo 2.11 mediante eliminación de Gauss-Jordan.</p>
+    <h4>Solución</h4>
+    <p>La reducción procede como se hizo en el ejemplo 2.11, hasta que se llega a la forma escalonada:</p>
+    <p class="matrix">\[
+    \begin{bmatrix}
+    1 & -1 & -1 & 2 & | & 1 \\
+    0 & 0 & 1 & -1 & | & 1 \\
+    0 & 0 & 0 & 0 & | & 0
+    \end{bmatrix}
+    \]</p>
+  </div>
+
+
+  <p>Ahora debe crear un cero arriba del 1 pivote en el segundo renglón, tercera columna. Esto se hace al sumar el renglón 2 
+    al renglón 1 para obtener</p>
+  <p class="matrix">\[
+  \begin{bmatrix}
+  1 & -1 & 0 & 1 & | & 2 \\
+  0 & 0 & 1 & -1 & | & 1 \\
+  0 & 0 & 0 & 0 & | & 0
+  \end{bmatrix}
+  \]</p>
+  <p>Ahora el sistema se reduce a</p>
+  <p>\( w - x + z = 2 \)</p>
+  <p>\( y - z = 1 \)</p>
+  <p>Ahora es mucho más fácil resolver para las variables pivote</p>
+  <p>\( w = 2 + x - z \)</p>
+  <p>\( y = 1 + z \)</p>
+  <p>Si se asignan los parámetros \( x = s \) y \( z = t \) como antes, la solución puede escribirse en forma vectorial como</p>
+  <p class="matrix">\[
+  \begin{bmatrix} w \\ x \\ y \\ z \end{bmatrix}
+  =
+  \begin{bmatrix} 2 + s - t \\ s \\ 1 + t \\ t \end{bmatrix}
+  \]</p>
+ 
+
 </div>
 
 
@@ -1607,7 +1780,155 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
    
-     
+       <h4>Comentario</h4>
+  <p>Desde un punto de vista computacional, es más eficiente (en el sentido de que requiere menos cálculos) primero reducir la matriz a forma escalonada por renglones y luego, de derecha a izquierda, convertir cada elemento pivote a 1 y crear ceros arriba de dichos 1 pivote. Sin embargo, para cálculo manual, descubrió que es más sencillo solo trabajar de izquierda a derecha y crear los 1 pivote y los ceros en sus columnas conforme avance.</p>
+  <p>Regrese a la geometría que lo llevó a este punto. Así como los sistemas de ecuaciones lineales en dos variables corresponden a rectas en \( \mathbb{R}^2 \), del mismo modo las ecuaciones lineales en tres variables corresponden a planos en \( \mathbb{R}^3 \). De hecho, muchas preguntas acerca de rectas y planos pueden responderse al resolver un sistema lineal adecuado.</p>
+  <p>Antes de cerrar un sistema con infinitas soluciones, esta variante, conocida como eliminación de Gauss-Jordan, se apoya en reducir aún más la matriz aumentada.</p>
+  
+    
+    <hr>
+
+    <h2>Ejemplo 2.14</h2>
+  <p>Encuentre la recta de intersección de los planos \( x + 2y - z = 3 \) y \( 2x + 3y + z = 1 \).</p>
+
+  <h3>Solución</h3>
+  <p>Primero, observe que habrá una recta de intersección, pues los vectores normales de los dos planos, \( [1, 2, -1] \) y \( [2, 3, 1] \), no son paralelos. Los puntos que yacen en la intersección de los dos planos corresponden a los puntos en el conjunto solución del sistema</p>
+  <ul>
+    <li>\( x + 2y - z = 3 \)</li>
+    <li>\( 2x + 3y + z = 1 \)</li>
+  </ul>
+
+  <p>Aplicar la eliminación de Gauss-Jordan a la matriz aumentada produce</p>
+  \[
+  \begin{bmatrix}
+    1 & 2 & -1 & | & 3 \\
+    2 & 3 & 1 & | & 1
+  \end{bmatrix}
+  \xrightarrow{R_2 - 2R_1}
+  \begin{bmatrix}
+    1 & 2 & -1 & | & 3 \\
+    0 & -1 & 3 & | & -5
+  \end{bmatrix}
+  \xrightarrow{-R_2}
+  \begin{bmatrix}
+    1 & 2 & -1 & | & 3 \\
+    0 & 1 & -3 & | & 5
+  \end{bmatrix}
+  \]
+
+  <p>Al sustituir variables se tiene</p>
+  <ul>
+    <li>\( x + 2z = -7 \)</li>
+    <li>\( y - 3z = 5 \)</li>
+  </ul>
+
+  <p>La variable libre \( z \) se iguala al parámetro \( t \) por tanto se obtienen las ecuaciones paramétricas de la recta de intersección de los dos planos:</p>
+  <ul>
+    <li>\( x = -7 - 5t \)</li>
+    <li>\( y = 5 + 3t \)</li>
+    <li>\( z = t \)</li>
+  </ul>
+
+  <p>En forma vectorial, la ecuación es</p>
+  \[
+  \begin{bmatrix} x \\ y \\ z \end{bmatrix}
+  =
+  \begin{bmatrix} -7 \\ 5 \\ 0 \end{bmatrix}
+  + t
+  \begin{bmatrix} -5 \\ 3 \\ 1 \end{bmatrix}
+  \]
+
+  <p>Vea la figura 2.2.</p>
+    <img src="../../../img/guia_247.png" alt="">
+
+    <hr>
+
+    <h4>Vector normal de un plano</h4>
+
+    <p>Sí, estás en lo correcto al observar que el vector normal a un plano está dado por los coeficientes de la ecuación del plano. En una ecuación general del plano de la forma <span>\(ax + by + cz = d\)</span>, el vector <span>\([a, b, c]\)</span> representa el vector normal, ya que es perpendicular a cualquier vector que se encuentre en el plano.</p>
+
+    <p>Esto se deriva del hecho de que el producto punto de un vector en el plano con el vector normal debe ser cero, lo que define la perpendicularidad.</p>
+
+    <div class="examples">
+      <div class="example">
+        <strong>Ejemplo 1:</strong> Para el plano <span>\(x + 2y - z = 3\)</span>, el vector normal es <span>\([1, 2, -1]\)</span>.
+      </div>
+
+      <div class="example">
+        <strong>Ejemplo 2:</strong> Para el plano <span>\(2x + 3y + z = 1\)</span>, el vector normal es <span>\([2, 3, 1]\)</span>.
+      </div>
+    </div>
+
+    <p>Esto también explica por qué dos planos no son paralelos si sus vectores normales no son múltiplos escalares uno del otro: para que dos planos sean paralelos sus normales deben apuntar en la misma dirección (es decir, ser proporcionales).</p>
+
+
+    <hr>
+
+     <h2>Sistemas homogéneos</h2>
+  <p>Se vio que todo sistema de ecuaciones lineales no tiene soluciones tiene una solución única o tiene un número infinito de soluciones. Sin embargo, hay un tipo de sistema que siempre tiene al menos una solución.</p>
+
+  <h3>Definición</h3>
+  <p>Un sistema de ecuaciones lineales se denomina homogéneo si el término constante en cada ecuación es cero.</p>
+
+  <p>En otras palabras, un sistema homogéneo tiene una matriz aumentada de la forma \([A | 0]\). El siguiente sistema es homogéneo:</p>
+  <ul>
+    <li>\( 2x + 3y - z = 0 \)</li>
+    <li>\( -x + 5y + 2z = 0 \)</li>
+  </ul>
+
+  <p>Debido que un sistema homogéneo no puede no tener solución (disculpe la doble negación), tendrá o una solución única (a saber, la solución cero o trivial) o un número infinito de soluciones. El siguiente teorema dice que el último caso debe ocurrir si el número de variables es mayor que el número de ecuaciones.</p>
+
+  <h3>Teorema 2.3</h3>
+  <p>Si \([A | 0]\) es un sistema homogéneo de \( m \) ecuaciones lineales con \( n \) variables, donde \( m < n \), entonces el sistema tiene un número infinito de soluciones.</p>
+
+    <hr>
+
+    <h2>2.3 Conjuntos generadores e independencia lineal</h2>
+  <p>El segundo de los tres caminos en el "trivium" trata con combinaciones lineales de vectores. Se vio que es posible ver la resolución de un sistema de ecuaciones lineales como preguntarse si cierto vector es una combinación lineal de otros vectores. Esta idea se explora con más detalle en esta sección. Conduce a algunos conceptos muy importantes que se encontrarán repetidamente en capítulos posteriores.</p>
+
+  <h3>Conjuntos generadores de vectores</h3>
+  <p>Ahora se puede responder con facilidad la pregunta planteada en la sección 1.1: ¿cuándo un vector dado es una combinación lineal de otros vectores dados?</p>
+
+
+    <h3>Ejemplo 2.18</h3>
+  <p>(a) ¿El vector \(\begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}\) es una combinación lineal de los vectores \(\begin{bmatrix} 1 \\ 0 \\ 3 \end{bmatrix}\) y \(\begin{bmatrix} -1 \\ 1 \\ -3 \end{bmatrix}\)?</p>
+  <p>(b) ¿El vector \(\begin{bmatrix} 2 \\ 3 \\ 4 \end{bmatrix}\) es una combinación lineal de los vectores \(\begin{bmatrix} 1 \\ 0 \\ 3 \end{bmatrix}\) y \(\begin{bmatrix} -1 \\ 1 \\ -3 \end{bmatrix}\)?</p>
+
+  <h3>Solución</h3>
+  <p>(a) Se quiere encontrar escalares \( x \) y \( y \) tales que</p>
+  \[
+  x \begin{bmatrix} 1 \\ 0 \\ 3 \end{bmatrix} + y \begin{bmatrix} -1 \\ 1 \\ -3 \end{bmatrix} = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}
+  \]
+  <p>Al desarrollarlo, se obtiene el sistema</p>
+  <ul>
+    <li>\( x - y = 1 \)</li>
+    <li>\( y = 2 \)</li>
+    <li>\( 3x - 3y = 3 \)</li>
+  </ul>
+  <p>cuya matriz aumentada es</p>
+  \[
+  \begin{bmatrix}
+    1 & -1 & | & 1 \\
+    0 & 1 & | & 2 \\
+    3 & -3 & | & 3
+  \end{bmatrix}
+  \]
+  <p>(Observe que las columnas de la matriz aumentada son sólo los vectores dados; note el orden de los vectores, en particular, cuál vector es el vector constante.)</p>
+  <p>La forma escalonada reducida de esta matriz es</p>
+  \[
+  \begin{bmatrix}
+    1 & 0 & | & 3 \\
+    0 & 1 & | & 2 \\
+    0 & 0 & | & 0
+  \end{bmatrix}
+  \]
+  <p>(Verifique esto.) De modo que la solución es \( x = 3, y = 2 \), y la correspondiente combinación lineal es</p>
+  \[
+  3 \begin{bmatrix} 1 \\ 0 \\ 3 \end{bmatrix} + 2 \begin{bmatrix} -1 \\ 1 \\ -3 \end{bmatrix} = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}
+  \]
+
+
+
     
 </div>
 </div>
@@ -1617,7 +1938,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="sexto.php"
+        href="septimo.php"
         role="button"
         width="50px"
         height="50px"
