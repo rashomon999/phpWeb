@@ -53,6 +53,10 @@
 
         <a class="btn" href=".\Importante\index.php">Importante</a>
 
+        <a class="btn" href=".\MSX88\index.php">MSX88</a>
+
+        <a class="btn" href=".\MSX88_preguntas\index.php">preguntas MSX88</a>
+
         <br><br>
         <strong>presaberes:</strong>
         <a class="btn" href="..\Estadistica\Menu.php">Estadistica</a>

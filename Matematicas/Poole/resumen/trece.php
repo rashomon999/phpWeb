@@ -169,7 +169,7 @@ if ($_POST) {
 
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '||u-v||') {  
+   if ($respuesta_1 === '26') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -179,9 +179,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === '\frac{u*v}{||u||*||v||}'
-   || $respuesta_2 === '\frac{uv}{||u||||v||}'
-   ) {  
+   if ($respuesta_2 === '39') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -191,7 +189,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === '90') {  
+   if ($respuesta_3 === '52') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -201,7 +199,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === 'Cos90') {  
+   if ($respuesta_4 === '65') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -211,7 +209,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === '0') {  
+   if ($respuesta_5 === '78') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -221,9 +219,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === 'v*u=0'
-   || $respuesta_6 === 'u*v=0'
-   ) {  
+   if ($respuesta_6 === '91') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -233,9 +229,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === '0*V'
-   || $respuesta_7 === '0*v'
-   ) {  
+   if ($respuesta_7 === '104') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -245,7 +239,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === '||u+v||^2=||u||^2+||v||^2') {  
+   if ($respuesta_8 === '117') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -255,7 +249,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === 'proj_u(v)=(\frac{u*V}{u*u})') {  
+   if ($respuesta_9 === '130') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -265,7 +259,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === 'n*x=0') {  
+   if ($respuesta_10 === '143') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -1318,7 +1312,7 @@ if ($respuesta_121 === '144') {
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 395vh;
+    height: 410vh;
     }
 
 </style>
@@ -1378,7 +1372,7 @@ function actualizarFormula() {
 
 function actualizarFormula2() {
     var f = document.getElementById('respuesta_2').value || "";
-    var formula = ` \\ \\cos\\theta \=\ ${f} \\, `;
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula2').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
         MathJax.typeset();
@@ -1386,7 +1380,7 @@ function actualizarFormula2() {
 }
 
 function actualizarFormula3() {
-    var f = document.getElementById('respuesta_8').value || "";
+    var f = document.getElementById('respuesta_3').value || "";
     var formula = ` \\ ${f} \\, `;
     document.getElementById('formula3').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
@@ -1395,7 +1389,7 @@ function actualizarFormula3() {
 }
 
 function actualizarFormula4() {
-    var f = document.getElementById('respuesta_9').value || "";
+    var f = document.getElementById('respuesta_4').value || "";
     var formula = ` \\ ${f} \\, `;
     document.getElementById('formula4').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
@@ -1598,187 +1592,254 @@ function ocultarMensaje4() {
 </head>
 <body>  
 
-<form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
+<form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
 <div class="form-container">
 
     
 <div class="seccion izquierda"> 
+ <h2>Paso 1. Planteamiento</h2>
+<div class="step">
+<p>Queremos una <strong>base para el espacio columna</strong> de la matriz:</p>
 
-    
-  <div class="math-block" style="border-left-color:#7fc7f0;">
-    <div class="def-title">Definición</div>
-    <div>
-    La <em>distancia</em> \(d(\mathbf{u},\mathbf{v})\) entre los vectores \(\mathbf{u}\) y \(\mathbf{v}\) en \(\mathbb{R}^n\) se define por
-    
-    <br><br>
-    <p style="align-items: center; text-align:center; "> 
+\[
+A =
+\begin{bmatrix}
+1 & 1 & 3 & 1 & 6 \\
+2 & -1 & 0 & 1 & -1 \\
+-3 & 2 & -1 & -2 & 1 \\
+4 & 1 & 6 & 1 & 3
+\end{bmatrix}
+\]
 
-    <span id="formula">
-        \( d(\mathbf{u},\mathbf{v}) \;=\;  \)
-    </span> 
-   
-    <input type="text" name="respuesta_1" id="respuesta_1" oninput="actualizarFormula()" 
-    value="<?php echo $respuesta_1?>" size="15" >
+<p>El espacio columna \( \text{col}(A) \) es el conjunto de todas las combinaciones lineales de las columnas de \( A \).</p>
+</div>
 
-    </p>
+<h2>Paso 2. Reducir \( A \) a forma escalonada reducida</h2>
+<div class="step">
+<p>Aplicamos <strong>operaciones por renglones</strong> (no por columnas) para obtener la forma reducida:</p>
 
+\[
+R =
+\begin{bmatrix}
+1 & 0 & 1 & 0 & -1 \\
+0 & 1 & 2 & 0 & 3 \\
+0 & 0 & 0 & 1 & 4 \\
+0 & 0 & 0 & 0 & 0
+\end{bmatrix}
+\]
+</div>
 
-      
-    </div>
-  </div>
+<h2>Paso 3. Interpretar las relaciones entre columnas</h2>
+<div class="step">
+<p>Cada columna de \( R \) (llamémoslas \( r_1, r_2, r_3, r_4, r_5 \)) tiene esta relación:</p>
 
-    <button type="submit">Enviar</button> 
-    <?php echo $verificar_1 ?>
- 
+\[
+r_3 = r_1 + 2r_2, \quad r_5 = -r_1 + 3r_2 + 4r_4
+\]
+
+<p>Por tanto, \( r_3 \) y \( r_5 \) <strong>dependen linealmente</strong> de las otras columnas.</p>
+</div>
+
+<h2>Paso 4. Identificar las columnas pivote</h2>
+<div class="step">
+<p>En \( R \), los <strong>1 pivote</strong> están en las columnas <strong>1, 2 y 4</strong>.<br>
+Por eso, las columnas <strong>1, 2 y 4</strong> de \( R \) (y de \( A \) original) son <strong>linealmente independientes</strong>.</p>
+</div>
+
+<h2>Paso 5. Traducir eso a las columnas de \( A \)</h2>
+<div class="step">
+<p>Como las operaciones elementales por renglones <strong>no cambian las dependencias lineales entre las columnas</strong>,
+los vectores columna de \( A \) que correspondan a las columnas <strong>1, 2 y 4</strong> de \( R \) formarán una base para \( \text{col}(A) \).</p>
+
+<p>Por tanto, la base es:</p>
+
+\[
+\{ a_1, a_2, a_4 \} =
+\left\{
+\begin{bmatrix} 1 \\ 2 \\ -3 \\ 4 \end{bmatrix},
+\begin{bmatrix} 1 \\ -1 \\ 2 \\ 1 \end{bmatrix},
+\begin{bmatrix} 1 \\ 1 \\ -2 \\ 1 \end{bmatrix}
+\right\}
+\]
+</div>
+
+<h2>Paso 6. Advertencia importante</h2>
+<div class="step">
+<p>Aunque \( R \) es más simple, <strong>las columnas de \( R \)</strong> no son una base para \( \text{col}(A) \),
+porque las operaciones de renglones <strong>sí cambian el espacio columna</strong> (no el espacio fila).</p>
+
+<p>Por eso, <strong>debemos regresar a las columnas originales de \( A \)</strong> que correspondan a las columnas pivote de \( R \).</p>
+</div>
+
+<h2>Resultado final</h2>
+<div class="step">
+\[
+\boxed{
+\text{Base de } \text{col}(A) =
+\left\{
+\begin{bmatrix} 1 \\ 2 \\ -3 \\ 4 \end{bmatrix},
+\begin{bmatrix} 1 \\ -1 \\ 2 \\ 1 \end{bmatrix},
+\begin{bmatrix} 1 \\ 1 \\ -2 \\ 1 \end{bmatrix}
+\right\}
+}
+\]
+</div>
     <hr>
+ <h2>✅ Resumen: Base del espacio renglón y columna</h2>
 
-    <div class="math-block">
-    <div class="def-title">Definición</div>
-    <p>
-      Para vectores \(\mathbf{u}\) y \(\mathbf{v}\) distintos de cero en \(\mathbb{R}^n\),
-    </p>
-
-    <p style="align-items: center; text-align:center; "> 
-
-    <span id="formula2">
-        \(  \cos\theta \;=\;  \)
-    </span> 
-   
-    <input type="text" name="respuesta_2" id="respuesta_2" oninput="actualizarFormula2()" 
-    value="<?php echo $respuesta_2?>" size="15" >
-
-    </p>
-
-     
-    </div>
-
-    <button type="submit">Enviar</button> 
-     <?php echo $verificar_2 ?>
-    <hr>
-
-
-
-  <h2>Vectores ortogonales</h2>
+  <h3>🔹 Base del espacio renglón</h3>
   <p>
-    El concepto de perpendicularidad es fundamental para la geometría. 
-    En \(\mathbb{R}^2\) o \(\mathbb{R}^3\), dos vectores \(\mathbf{u}\) y \(\mathbf{v}\) distintos de cero 
-    son perpendiculares si el ángulo \(\theta\) entre ellos es un ángulo recto; 
-    esto es, si \(\theta = \pi/2\) radianes o 
-    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="5"> grados.  
-    Por tanto,
+    Se toma de la <strong>forma escalonada reducida por renglones (RREF)</strong>.
+  </p>
+  <p>
+    <strong>Los renglones no nulos</strong> de la RREF de \( A \) forman una base para el espacio renglón de \( A \):
   </p>
 
-  <p style="align-items: center; text-align:center; "> 
-
-    <span id="formula2">
-        \(  \cos\theta = \frac{\mathbf{u}\cdot\mathbf{v}}{\|\mathbf{u}\|\|\mathbf{v}\|} =   \)
-    </span> 
-   
-    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="8">
-
-    </p>
-
-    <p style="align-items: center; text-align:center; "> 
-
-    <span id="formula2">
-        \(  \quad \Rightarrow \quad \mathbf{u}\cdot \mathbf{v} = \)
-    </span> 
-   
-    <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="8">
-
-    </p>
-
-  
-  <p>
-    Esto motiva la siguiente definición:
-  </p>
-
-  <div class="math-block">
-    <div class="def-title">Definición</div>
-    Dos vectores \(\mathbf{u}\) y \(\mathbf{v}\) en \(\mathbb{R}^n\) son mutuamente 
-    <em>ortogonales</em> si 
-    <br><br>
-    <p style="align-items: center; text-align:center; "> 
-    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="8">
-    </p>
-  </div>
-
-  <p>
-    Dado que 
-    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="8">
-    \( = 0\) para todo vector \(\mathbf{v}\) en \(\mathbb{R}^n\), 
-    el vector cero es ortogonal a todo vector.
-  </p>
-
-  <p>
-    En \(\mathbb{R}^3\), si 
-    \(\mathbf{u} = [1,1,-2]\) y \(\mathbf{v} = [3,1,2]\), 
-    entonces son ortogonales, pues:
+  <p style="text-align:center;">
     \[
-      \mathbf{u}\cdot \mathbf{v} = 1\cdot 3 + 1\cdot 1 + (-2)\cdot 2 = 3 + 1 - 4 = 0.
+    \text{Base del espacio renglón} = \{ \text{renglones no nulos de RREF}(A) \}
     \]
   </p>
 
-    <button type="submit">Enviar</button> 
-    <?php echo $verificar_3 ?>
-    <?php echo $verificar_4 ?>
-    <?php echo $verificar_5 ?>
-    <?php echo $verificar_6 ?>
-    <?php echo $verificar_7 ?>  
+   <hr>
 
-    <hr>
-  <h2>Teorema de Pitágoras</h2>
-  <div class="math-block">
-    <div class="def-title">Teorema de Pitágoras</div>
-    <p>
-      Para todos los vectores \(\mathbf{u}\) y \(\mathbf{v}\) en \(\mathbb{R}^n\),
-    </p>
+  <h3>🔹 Base del espacio columna</h3>
+  <p>
+    Se obtiene de la <strong>matriz original \( A \)</strong> (no de la reducida).
+  </p>
+  <p>
+    Primero se identifican en la RREF de \( A \) las <strong>columnas con pivote</strong> (las linealmente independientes).
+  </p>
+  <p>
+    Luego, se toman esas <strong>mismas columnas</strong> (en las mismas posiciones) pero de la matriz original \( A \):
+  </p>
 
-     <p style="align-items: center; text-align:center; "> 
+  <p style="text-align:center;">
+    \[
+    \text{Base del espacio columna} = \{ \text{columnas de } A \text{ que corresponden a columnas pivote de RREF}(A) \}
+    \]
+  </p>
 
-    <span id="formula3">
-        \(    \)
-    </span> 
-   
-    <input type="text" name="respuesta_8" id="respuesta_8" oninput="actualizarFormula3()" 
-    value="<?php echo $respuesta_8?>" size="18" >
-
-    </p>
-
-    <button type="submit">Enviar</button> 
-    <?php echo $verificar_8 ?>
-    
-    <hr>
-  
-
-    <p>
-      si y sólo si \(\mathbf{u}\) y \(\mathbf{v}\) son ortogonales.
-    </p>
-  </div>
-
-    <img src="../../../img/guia_239.png" alt="">
-
-        
-<h2>Proyecciones</h2>
-
-<p>
-Ahora se considerará el problema de encontrar la distancia desde un punto hasta una recta en el contexto de los vectores.
-Como verá, esta técnica conduce a un importante concepto: la <strong>proyección de un vector sobre otro vector</strong>.
-</p>
+  <hr>
 
 
+   <div class="container">
+    <header>
+      <h1>Ejemplo 3.48 — Base del espacio nulo</h1>
+      <p class="lead">Explicación y solución usando notación matemática con MathJax.</p>
+    </header>
 
-<p>
-El problema de encontrar la distancia desde un punto \( B \) hasta una recta \( \ell \) (en \( \mathbb{R}^2 \) o \( \mathbb{R}^3 \)) 
-se reduce a encontrar la longitud del segmento de recta perpendicular \( PB \) o, de manera equivalente, 
-la longitud del vector \( \overrightarrow{PB} \).
-Si se elige un punto \( A \) sobre \( \ell \), entonces, en el triángulo recto \( \triangle APB \), los otros dos vectores son 
-el cateto \( \overrightarrow{AP} \) y la hipotenusa \( \overrightarrow{AB} \).
-\( \overrightarrow{AP} \) se llama <strong>proyección de</strong> \( \overrightarrow{AB} \) <strong>sobre la recta</strong> \( \ell \).
-</p>
+    <section class="card">
+      <h2>Objetivo</h2>
+      <p class="small">Encontrar una base para el espacio nulo de una matriz \(A\), es decir todos los vectores \(\mathbf{x}\) tales que \(A\mathbf{x}=\mathbf{0}\).</p>
+    </section>
 
+    <section class="card">
+      <h2>1. Matriz aumentada en forma reducida</h2>
+      <p>La matriz aumentada en forma escalonada reducida (resultado de Gauss–Jordan) es:</p>
 
+      <div class="matrix">
+        \[
+        [R \mid 0] \;=\;
+        \begin{bmatrix}
+          1 & 0 & 1 & 0 & -1 & \mid & 0 \\
+          0 & 1 & 2 & 0 & 3  & \mid & 0 \\
+          0 & 0 & 0 & 1 & 4  & \mid & 0 \\
+          0 & 0 & 0 & 0 & 0  & \mid & 0
+        \end{bmatrix}
+        \]
+      </div>
 
+      <p class="small">Las columnas con pivote (entradas 1 principales) son las <strong>1, 2 y 4</strong>. Las variables libres son <strong>\(x_3\) y \(x_5\)</strong>.</p>
+    </section>
+
+    <section class="card">
+      <h2>2. Ecuaciones y despejes</h2>
+      <p>De la matriz reducida obtenemos el sistema homogéneo:</p>
+
+      <div class="matrix">
+        \[
+        \begin{cases}
+          x_1 + x_3 - x_5 = 0,\\[4pt]
+          x_2 + 2x_3 + 3x_5 = 0,\\[4pt]
+          x_4 + 4x_5 = 0.
+        \end{cases}
+        \]
+      </div>
+
+      <p>Despejando \(x_1,x_2,x_4\) en términos de las libres \(x_3,x_5\):</p>
+
+      <div class="matrix">
+        \[
+        x_1 = -x_3 + x_5,\qquad
+        x_2 = -2x_3 - 3x_5,\qquad
+        x_4 = -4x_5.
+        \]
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>3. Vector solución general</h2>
+      <p>Escribimos el vector solución \(\mathbf{x}\):</p>
+
+      <div class="matrix">
+        \[
+        \mathbf{x}=
+        \begin{bmatrix}
+          x_1\\ x_2\\ x_3\\ x_4\\ x_5
+        \end{bmatrix}
+        =
+        \begin{bmatrix}
+          -x_3 + x_5\\
+          -2x_3 - 3x_5\\
+          x_3\\
+          -4x_5\\
+          x_5
+        \end{bmatrix}
+        \]
+      </div>
+
+      <p>Denotamos las variables libres con parámetros: \(x_3=s,\; x_5=t\). Entonces:</p>
+
+      <div class="matrix">
+        \[
+        \mathbf{x}
+        = s
+        \begin{bmatrix}-1\\-2\\1\\0\\0\end{bmatrix}
+        + t
+        \begin{bmatrix}1\\-3\\0\\-4\\1\end{bmatrix}.
+        \]
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>4. Base del espacio nulo</h2>
+      <p>Los dos vectores que acompañan a los parámetros \(s\) y \(t\) generan todas las soluciones y son linealmente independientes. Por tanto una base de \(\mathrm{null}(A)\) es:</p>
+
+      <div class="matrix">
+        \[
+        \boxed{ \; \left\{
+        \begin{bmatrix}-1\\-2\\1\\0\\0\end{bmatrix},
+        \begin{bmatrix}1\\-3\\0\\-4\\1\end{bmatrix}
+        \right\} \;}
+        \]
+      </div>
+
+      <p class="small">En palabras: cualquier solución \(\mathbf{x}\) de \(A\mathbf{x}=\mathbf{0}\) se obtiene como combinación lineal de esos dos vectores.</p>
+    </section>
+
+    <section class="card">
+      <h2>5. Resumen rápido</h2>
+      <ol class="steps">
+        <li>Reducir la matriz por Gauss–Jordan hasta forma escalonada reducida.</li>
+        <li>Identificar columnas pivote (variables básicas) y columnas libres (variables libres).</li>
+        <li>Expresar las variables básicas en función de las libres.</li>
+        <li>Tomar parámetros para las libres y escribir la solución general como combinación lineal.</li>
+        <li>Los vectores que multiplican a los parámetros forman una base del espacio nulo.</li>
+      </ol>
+    </section>
+
+</div>
 </div>
 
 
@@ -1786,215 +1847,126 @@ el cateto \( \overrightarrow{AP} \) y la hipotenusa \( \overrightarrow{AB} \).
 
 <div class="seccion derecha">
    
-
- 
-
- 
-<hr>
-
-<p>
-Considere dos vectores \( \mathbf{u} \) y \( \mathbf{v} \) distintos de cero. 
-Sea \( \mathbf{p} \) el vector que se obtiene al trazar una perpendicular desde la punta de \( \mathbf{v} \) sobre \( \mathbf{u} \), 
-y sea \( \theta \) el ángulo entre \( \mathbf{u} \) y \( \mathbf{v} \).
-</p>
-
-<p>
-Entonces, claramente 
-\[
-\mathbf{p} = \|\mathbf{p}\| \, \hat{\mathbf{u}},
-\]
-donde 
-\[
-\hat{\mathbf{u}} = \left(\frac{1}{\|\mathbf{u}\|}\right)\mathbf{u}
-\]
-es el vector unitario en la dirección de \( \mathbf{u} \).
-Por trigonometría, \( \|\mathbf{p}\| = \|\mathbf{v}\| \cos \theta \), 
-y como 
-\[
-\cos \theta = \frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\| \|\mathbf{v}\|},
-\]
-tenemos:
-</p>
-
-<p>
-\[
-\mathbf{p} = \|\mathbf{v}\| 
-\left( 
-\frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\| \|\mathbf{v}\|}
-\right)
-\left( 
-\frac{1}{\|\mathbf{u}\|}
-\right)
-\mathbf{u}
-\]
-</p>
-
-<p>
-Simplificando:
-\[
-\mathbf{p} 
-= 
-\left( 
-\frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\|^2}
-\right)\mathbf{u}
-=
-\left(
-\frac{\mathbf{u} \cdot \mathbf{v}}{\mathbf{u} \cdot \mathbf{u}}
-\right)\mathbf{u}
-\]
-</p>
-
-<p>
-Ésta es la fórmula que se quería, y es la base de la siguiente definición para vectores en \( \mathbb{R}^n \).
-</p>
-
-<div class="definicion">
-  <strong>Definición:</strong>  
-  Si \( \mathbf{u} \) y \( \mathbf{v} \) son vectores en \( \mathbb{R}^n \) y \( \mathbf{u} \neq \mathbf{0} \),  
-  entonces la <strong>proyección de</strong> \( \mathbf{v} \) <strong>sobre</strong> \( \mathbf{u} \)  
-  es el vector \( \mathrm{proj}_{\mathbf{u}}(\mathbf{v}) \) definido por:
-  <br><br>
-</div>
-
-   <p style="align-items: center; text-align:center; "> 
-
-    <span id="formula4">
-        \(    \)
-    </span> 
-   
-    <input type="text" name="respuesta_9" id="respuesta_9" oninput="actualizarFormula4()" 
-    value="<?php echo $respuesta_9?>" size="18" >
-
-    </p>
-
-  
-
-
-    <img src="../../../img/guia_240.png" alt="">
-
-    <div class="comment-section">
-        <div class="comment">
-            <p>El término <em>proyección</em> proviene de la idea de proyectar una imagen sobre un muro (con un proyector de diapositivas, por ejemplo). Imagine un haz de luz con rayos mutuamente paralelos y perpendiculares a <strong>u</strong> que brillan sobre <strong>v</strong>. La proyección de <strong>v</strong> sobre <strong>u</strong> es justo la sombra formada, o proyectada, por <strong>v</strong> sobre <strong>u</strong>.</p>
-        </div>
-        
-        <div class="comment">
-            <p>Puede ser útil considerar a \(\text{proy}_{\mathbf{u}}(\mathbf{v})\) como una función con variable <strong>v</strong>. Entonces la variable <strong>v</strong> ocurre sólo una vez en el lado derecho de la definición. Además, es útil tener en mente la figura 1.38, que recuerda que \(\text{proy}_{\mathbf{u}}(\mathbf{v})\) es un múltiplo escalar del vector <strong>u</strong> (no de <strong>v</strong>).</p>
-        </div>
-        
-        <div class="comment">
-            <p>Aunque en la deducción de la definición de \(\text{proy}_{\mathbf{u}}(\mathbf{v})\) se requirió que tanto <strong>v</strong> como <strong>u</strong> fuesen distintos de cero (¿por qué?), es claro a partir de la geometría que la proyección del vector cero sobre <strong>u</strong> es <strong>0</strong>. La definición está en concordancia con esto, pues:</p>
-            
-            <div class="math-formula">
-                \(\frac{\mathbf{u} \cdot \mathbf{0}}{\mathbf{u} \cdot \mathbf{u}} \mathbf{u} = 0\mathbf{u} = \mathbf{0}\)
-            </div>
-        </div>
-        
-        <div class="comment">
-            <p>Si el ángulo entre <strong>u</strong> y <strong>v</strong> es obtuso, como en la figura 1.38, entonces \(\text{proy}_{\mathbf{u}}(\mathbf{v})\) estará en la dirección opuesta de <strong>u</strong>; esto es, \(\text{proy}_{\mathbf{u}}(\mathbf{v})\) será un múltiplo escalar negativo de <strong>u</strong>.</p>
-        </div>
-        
-        <div class="comment">
-            <p>Si <strong>u</strong> es un vector unitario, entonces \(\text{proy}_{\mathbf{u}}(\mathbf{v}) = (\mathbf{u} \cdot \mathbf{v})\mathbf{u}\).</p>
-            <p class="note">(¿Por qué?)</p>
-            
-            <div class="highlight">
-                <p><strong>Explicación:</strong> Cuando <strong>u</strong> es un vector unitario, su magnitud es 1 (\(\|\mathbf{u}\| = 1\)). La fórmula general para la proyección es:</p>
-                <div class="math-formula">
-                    \(\text{proy}_{\mathbf{u}}(\mathbf{v}) = \frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\|^2} \mathbf{u}\)
-                </div>
-                <p>Como \(\|\mathbf{u}\| = 1\), entonces \(\|\mathbf{u}\|^2 = 1\), y la fórmula se simplifica a:</p>
-                <div class="math-formula">
-                    \(\text{proy}_{\mathbf{u}}(\mathbf{v}) = (\mathbf{u} \cdot \mathbf{v})\mathbf{u}\)
-                </div>
-            </div>
-        </div>
+     <div class="section">
+        <h2>A continuación hay un resumen del procedimiento más efectivo para encontrar bases para el espacio renglón, el espacio columna y el espacio nulo de una matriz \( A \).</h2>
+        <ol>
+            <li>Encuentre la forma escalonada reducida por renglones \( R \) de \( A \).</li>
+            <li>Use los vectores renglón distintos de cero de \( R \) (que contengan los 1 pivote) para formar una base para renglón(\( A \)).</li>
+            <li>Use los vectores columna de \( A \) que corresponden a las columnas de \( R \) que contienen los 1 pivote (las columnas pivote) para formar una base para col(\( A \)).</li>
+            <li>Resuelva para las variables pivote de \( R\mathbf{x} = 0 \) en términos de las variables libres, iguale las variables libres a parámetros, sustituya de vuelta en \( \mathbf{x} \) y escriba el resultado como una combinación lineal de vectores (donde \( x \) y \( y \) escriba el resultado libres). Estos vectores forman una base para null(\( A \)).</li>
+        </ol>
+        <p>Si no necesita encontrar el espacio nulo, entonces es más rápido simplemente reducir \( A \) a la forma escalonada por renglones para encontrar bases para los espacios renglón y columna. Los pasos 2 y 3 anteriores siguen siendo válidos (con la sustitución de la palabra "pivotes" en vez de "1 pivotes").</p>
     </div>
 
-    <img src="../../../img/guia_241.png" alt="">
-
-    <hr>
-
-     <h1>1.3 Rectas y planos</h1>
-    
-    <div class="section">
-        <p>Todos están familiarizados con la ecuación de una recta en el plano cartesiano. Ahora se considerarán rectas en \( \mathbb{R}^2 \) desde un punto de vista vectorial. La comprensión que se obtenga a partir de este planteamiento permitirá generalizar a rectas en \( \mathbb{R}^3 \) y luego a planos en \( \mathbb{R}^3 \). Mucha del álgebra lineal que se considerará en capítulos posteriores tiene sus orígenes en la geometría simple de rectas y planos; la habilidad para visualizarlos y pensar geométricamente en torno a un problema le servirá bastante.</p>
+    <div class="theorem">
+        <h2>Teorema 3.23</h2>
+        <p>El Teorema de la Base</p>
+        <p>Sea \( S \) un subespacio de \( \mathbb{R}^n \). Entonces cualesquiera dos bases para \( S \) tienen el mismo número de vectores.</p>
     </div>
 
     <div class="section">
-        <h2>Rectas en \( \mathbb{R}^2 \) y \( \mathbb{R}^3 \)</h2>
-        
-        <p>En el plano xy, la forma general de la ecuación de una recta es \( ax + by = c \), si \( b \neq 0 \), entonces la ecuación puede reescribirse como \( y = -(a/b)x + c/b \), que tiene la forma \( y = mx + k \). [Ésta es la forma pendiente ordenada al origen; \( m \) es la pendiente de la recta y el punto con coordenadas \((0, k)\) es su ordenada al origen.] Para incluir los vectores en este estudio, considere un ejemplo.</p>
+        <h2>Dimensión y rank</h2>
+        <p>Ya observó que, aunque un subespacio tendrá diferentes bases, cada una tiene el mismo número de vectores. Este hecho fundamental será de vital importancia en este libro a partir de ahora.</p>
     </div>
 
-
-
-
-    <button onmousedown="mostrarImagen()" onmouseup="ocultarImagen()">Explicacion pendiente</button>
-    <!-- Elemento para mostrar la imagen -->
-
-    <img id="imagenMostrada" src="../../../img/guia_242.png" style="display: none; max-width: 100%" width="560">
-
-    <script>
-        function mostrarImagen() {
-        var imagenMostrada2 = document.getElementById('imagenMostrada');
-
-        // Mostrar la imagen
-        imagenMostrada.style.display = 'block';
-        }
-
-        function ocultarImagen() {
-        var imagenMostrada = document.getElementById('imagenMostrada');
-
-        // Ocultar la imagen al soltar el botón
-        imagenMostrada.style.display = 'none';
-        }
-    </script>
-
-
-
+    <div class="definition">
+        <h2>Definición</h2>
+        <p>Si \( S \) es un subespacio de \( \mathbb{R}^n \), entonces el número de vectores en una base para \( S \) se llama la dimensión de \( S \), y se denota \(\dim S\).</p>
+        <div class="commentary">
+            <p><strong>Comentario</strong> El vector cero \( 0 \) por sí mismo siempre es un subespacio de \( \mathbb{R}^n \). (¿Por qué?) Sin embargo, cualquier conjunto que contenga el vector cero (\( y \), en particular, \( \{0\} \)) es linealmente dependiente, de modo que \( \{0\} \) no puede tener una base. Se define \( \dim \{0\} \) como 0.</p>
+        </div>
+    </div>
 
     <div class="example">
-        <div class="example-title">Ejemplo 1.26</div>
-        
-        <p>En la figura 1.53 se muestra la recta \(\ell\), con ecuación \( 2x + y = 0 \). Es una recta con pendiente \(-2\) que 
-            pasa por el origen. El lado izquierdo de la ecuación está en la forma de producto punto; de hecho, si 
-            \( \mathbf{n} = \begin{bmatrix} 2 \\ 1 \end{bmatrix} \) y \( \mathbf{x} = \begin{bmatrix} x \\ y \end{bmatrix} \), 
-            entonces la ecuación se convierte en 
-            <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="8">
-            .</p>
-        
-        <div class="definition">
-            <div class="definition-title">Vector Normal</div>
-            <p>El vector \( \mathbf{n} \) es perpendicular a la recta; esto es, es <em>ortogonal</em> a cualquier vector \( \mathbf{x} \) que sea paralelo a la recta (figura 1.54) y se le conoce como <span class="vector">vector normal</span> a la recta. La ecuación \( \mathbf{n} \cdot \mathbf{x} = 0 \) es la <em>forma normal</em> de la ecuación de \(\ell\).</p>
-        </div>
-        
-        <div class="math-formula">
-            \( \mathbf{n} \cdot \mathbf{x} = 0 \quad \Rightarrow \quad \begin{bmatrix} 2 \\ 1 \end{bmatrix} \cdot \begin{bmatrix} x \\ y \end{bmatrix} = 0 \quad \Rightarrow \quad 2x + y = 0 \)
-        </div>
-        
-        <img src="../../../img/guia_243.png" alt="">
-        <p>Otra forma de pensar esta recta es imaginar una partícula que se mueve a lo largo de la recta. Suponga que la partícula inicialmente está en el origen en el tiempo \( t = 0 \) y se mueve a lo largo de la recta en tal forma que su coordenada \( x \) cambia 1 unidad por segundo. Entonces:</p>
-        
-        <ul>
-            <li>En \( t = 1 \) la partícula está en \((1, -2)\)</li>
-            <li>En \( t = 1.5 \) está en \((1.5, -3)\)</li>
-            <li>En \( t = -2 \) está (o estuvo) en \((-2, 4)\)</li>
-        </ul>
-        
-        <p>Este movimiento se ilustra en la figura 1.55.</p>
-        
-        <div class="highlight">
-            <p><strong>Interpretación vectorial:</strong> Podemos describir esta recta paramétricamente usando vectores. Si consideramos la dirección de movimiento como el vector \( \mathbf{d} = \begin{bmatrix} 1 \\ -2 \end{bmatrix} \), entonces cualquier punto \( \mathbf{x} \) en la recta puede escribirse como:</p>
-            <div class="math-formula">
-                \( \mathbf{x} = t\mathbf{d} = t\begin{bmatrix} 1 \\ -2 \end{bmatrix} \)
-            </div>
-            <p>donde \( t \) es un parámetro real que representa el tiempo.</p>
+        <h2>Ejemplo 3.49</h2>
+        <p>Dado que la base estándar para \( \mathbb{R}^n \) tiene \( n \) vectores, \(\dim \mathbb{R}^n = n\). (Note que este resultado concuerda con la comprensión intuitiva de dimensión para \( n \leq 3 \).)</p>
+    </div>
+
+    <div class="example">
+        <h2>Ejemplo 3.50</h2>
+        <p>En los ejemplos 3.45 a 3.48, se descubrió que renglón(\( A \)) tiene una base con tres vectores, col(\( A \)) tiene una base con tres vectores y null(\( A \)) tiene una base con dos vectores. En consecuencia, \(\dim(\text{renglón}(A)) = 3\), \(\dim(\text{col}(A)) = 3\) y \(\dim(\text{null}(A)) = 2\).</p>
+        <p>Un solo ejemplo no es suficiente para especular, pero el hecho de que los espacios renglón y columna del ejemplo 3.50 tengan la misma dimensión no es accidente. Como tampoco lo es el hecho de que la suma de \(\dim(\text{col}(A))\) y \(\dim(\text{null}(A))\) es 5, el número de columnas de \( A \). Ahora se probará que estas relaciones son verdaderas en general.</p>
+    </div>
+    
+
+
+    <div class="theorem">
+        <h2>Teorema 3.24</h2>
+        <p>Los espacios renglón y columna de una matriz \( A \) tienen la misma dimensión.</p>
+        <p><strong>Demostración</strong></p>
+        <p>Sea \( R \) la forma escalonada reducida por renglones de \( A \). Por el Teorema 3.20, renglón(\( A \)) = renglón(\( R \)), de modo que</p>
+        <p>\(\dim(\text{renglón}(A)) = \dim(\text{renglón}(R))\)</p>
+        <p>\(\quad = \text{número de renglones de } R \text{ distintos de cero}\)</p>
+        <p>\(\quad = \text{número de 1 pivote de } R\)</p>
+        <p>Llame a este número \( r \).</p>
+        <p>Ahora col(\( A \)) \( \neq \) col(\( R \)), pero las columnas de \( A \) y \( R \) tienen las mismas relaciones de dependencia. Por tanto, \(\dim(\text{col}(A)) = \dim(\text{col}(R))\). Dado que existen \( r \) pivotes, \( R \) tiene \( r \) columnas que son vectores unitarios estándar, \( \mathbf{e}_1, \mathbf{e}_2, \ldots, \mathbf{e}_r \). (Estos serán vectores en \( \mathbb{R}^m \) si \( A \) y \( R \) son matrices de \( m \times n \).) Los vectores son linealmente independientes y las columnas restantes de \( R \) son combinaciones lineales de ellos. Por tanto, \(\dim(\text{col}(R)) = r\). Se tiene que \(\dim(\text{renglón}(A)) = r = \dim(\text{col}(A))\), como se quería demostrar.</p>
+    </div>
+
+    <div class="definition">
+        <h2>Definición</h2>
+        <p>El rank de una matriz \( A \) es la dimensión de sus espacios renglón y columna y se denota mediante \(\text{rango}(A)\).</p>
+        <p>Por tanto, para el ejemplo 3.50, puede escribirse \(\text{rango}(A) = 3\).</p>
+        <div class="commentary">
+            <h3>Comentarios</h3>
+            <ul>
+                <li>La definición anterior concuerda con la definición más informal de rank que se dio en el capítulo 2. La ventaja de la nueva definición es que es mucho más flexible.</li>
+                <li>El rank de una matriz simultáneamente proporciona información acerca de la dependencia lineal entre los vectores renglón de la matriz y entre sus vectores columna. En particular, dice el número de renglones y columnas que son linealmente independientes (y este número es el mismo en cada caso).</li>
+            </ul>
+            <p>Dado que los vectores renglón de \( A \) son los vectores columna de \( A^T \), el Teorema 3.24 tiene el siguiente corolario inmediato.</p>
         </div>
     </div>
 
-   
+    <div class="theorem">
+        <h2>Teorema 3.25</h2>
+        <p>Para cualquier matriz \( A \),</p>
+        <p>\(\text{rank}(A^T) = \text{rank}(A)\)</p>
+        <p><strong>Demostración</strong></p>
+        <p>Se tiene</p>
+        <p>\(\text{rank}(A^T) = \dim(\text{col}(A^T))\)</p>
+        <p>\(\quad = \dim(\text{renglón}(A))\)</p>
+        <p>\(\quad = \text{rank} A\)</p>
+    </div>
 
+    <div class="definition">
+        <h2>Definición</h2>
+        <p>La nulidad de una matriz \( A \) es la dimensión de su espacio nulo y se denota por \(\text{nulidad}(A)\).</p>
+    </div>
 
+    <div class="theorem">
+        <h2>Teorema 3.26</h2>
+        <p>El Teorema del rank</p>
+        <p>Si \( A \) es una matriz de \( m \times n \), entonces</p>
+        <p>\(\text{rank}(A) + \text{nulidad}(A) = n\)</p>
+        <p><strong>Demostración</strong></p>
+        <p>Sea \( R \) la forma escalonada reducida por renglones de \( A \), y suponga que \(\text{rank}(A) = r\). Entonces \( R \) tiene \( r \) 1 pivote, de modo que existen \( r \) variables pivote \( y \, n - r \) variables libres en la solución de \( A\mathbf{x} = 0 \). Puesto que \(\dim(\text{null}(A)) = n - r\), se tiene</p>
+        <p>\(\text{rank}(A) + \text{nulidad}(A) = r + (n - r)\)</p>
+        <p>\(\quad = n\)</p>
+        <p>Con frecuencia, cuando se necesita conocer la nulidad de una matriz, no es necesario conocer la solución real de \( A\mathbf{x} = 0 \). El teorema del rank es extremadamente útil en tales situaciones, como ilustra el siguiente ejemplo.</p>
+        <div class="commentary">
+            <p><strong>Comentario</strong> En otras palabras, \(\text{nulidad}(A)\) es la dimensión del espacio solución de \( A\mathbf{x} = 0 \), que es igual que el número de variables libres en la solución. Ahora puede regresar al teorema del rank (Teorema 2.2) y parafrasearlo en términos de las nuevas definiciones.</p>
+        </div>
+    </div>
+
+     <div class="theorem">
+        <h2>Teorema 3.27</h2>
+        <p>El teorema fundamental de las matrices invertibles: versión 2</p>
+        <p>Sea \( A \) una matriz de \( n \times n \). Los siguientes enunciados son equivalentes:</p>
+        <ol>
+            <li>\( A \) es invertible.</li>
+            <li>\( A\mathbf{x} = \mathbf{b} \) tiene una solución única para todo \( \mathbf{b} \) en \( \mathbb{R}^n \).</li>
+            <li>\( A\mathbf{x} = 0 \) tiene sólo la solución trivial.</li>
+            <li>La forma escalonada reducida por renglones de \( A \) es \( I_n \).</li>
+            <li>\( A \) es una producto de matrices elementales.</li>
+            <li>\(\text{rank}(A) = n\)</li>
+            <li>\(\text{nulidad}(A) = 0\)</li>
+            <li>Los vectores columna de \( A \) son linealmente independientes.</li>
+            <li>Los vectores columna de \( A \) generan \( \mathbb{R}^n \).</li>
+            <li>Los vectores columna de \( A \) forman una base para \( \mathbb{R}^n \).</li>
+            <li>Los vectores renglón de \( A \) son linealmente independientes.</li>
+            <li>Los vectores renglón de \( A \) generan \( \mathbb{R}^n \).</li>
+            <li>Los vectores renglón de \( A \) forman una base para \( \mathbb{R}^n \).</li>
+        </ol>
+    </div>
 </div>
 </div>
  </form>
@@ -2003,7 +1975,7 @@ Simplificando:
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="tercero.php"
+        href="catorce.php"
         role="button"
         width="50px"
         height="50px"

@@ -169,7 +169,7 @@ if ($_POST) {
 
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '||u-v||') {  
+   if ($respuesta_1 === '26') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -179,9 +179,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === '\frac{u*v}{||u||*||v||}'
-   || $respuesta_2 === '\frac{uv}{||u||||v||}'
-   ) {  
+   if ($respuesta_2 === '39') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -191,7 +189,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === '90') {  
+   if ($respuesta_3 === '52') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -201,7 +199,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === 'Cos90') {  
+   if ($respuesta_4 === '65') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -211,7 +209,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === '0') {  
+   if ($respuesta_5 === '78') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -221,9 +219,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === 'v*u=0'
-   || $respuesta_6 === 'u*v=0'
-   ) {  
+   if ($respuesta_6 === '91') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -233,9 +229,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === '0*V'
-   || $respuesta_7 === '0*v'
-   ) {  
+   if ($respuesta_7 === '104') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -245,7 +239,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === '||u+v||^2=||u||^2+||v||^2') {  
+   if ($respuesta_8 === '117') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -255,7 +249,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === 'proj_u(v)=(\frac{u*V}{u*u})') {  
+   if ($respuesta_9 === '130') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -265,7 +259,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === 'n*x=0') {  
+   if ($respuesta_10 === '143') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -1318,7 +1312,7 @@ if ($respuesta_121 === '144') {
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 395vh;
+    height: 390vh;
     }
 
 </style>
@@ -1378,7 +1372,7 @@ function actualizarFormula() {
 
 function actualizarFormula2() {
     var f = document.getElementById('respuesta_2').value || "";
-    var formula = ` \\ \\cos\\theta \=\ ${f} \\, `;
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula2').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
         MathJax.typeset();
@@ -1386,7 +1380,7 @@ function actualizarFormula2() {
 }
 
 function actualizarFormula3() {
-    var f = document.getElementById('respuesta_8').value || "";
+    var f = document.getElementById('respuesta_3').value || "";
     var formula = ` \\ ${f} \\, `;
     document.getElementById('formula3').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
@@ -1395,7 +1389,7 @@ function actualizarFormula3() {
 }
 
 function actualizarFormula4() {
-    var f = document.getElementById('respuesta_9').value || "";
+    var f = document.getElementById('respuesta_4').value || "";
     var formula = ` \\ ${f} \\, `;
     document.getElementById('formula4').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
@@ -1598,185 +1592,87 @@ function ocultarMensaje4() {
 </head>
 <body>  
 
-<form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
+<form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
 <div class="form-container">
 
     
 <div class="seccion izquierda"> 
-
-    
-  <div class="math-block" style="border-left-color:#7fc7f0;">
-    <div class="def-title">Definición</div>
-    <div>
-    La <em>distancia</em> \(d(\mathbf{u},\mathbf{v})\) entre los vectores \(\mathbf{u}\) y \(\mathbf{v}\) en \(\mathbb{R}^n\) se define por
-    
-    <br><br>
-    <p style="align-items: center; text-align:center; "> 
-
-    <span id="formula">
-        \( d(\mathbf{u},\mathbf{v}) \;=\;  \)
-    </span> 
-   
-    <input type="text" name="respuesta_1" id="respuesta_1" oninput="actualizarFormula()" 
-    value="<?php echo $respuesta_1?>" size="15" >
-
-    </p>
-
-
-      
-    </div>
-  </div>
-
-    <button type="submit">Enviar</button> 
-    <?php echo $verificar_1 ?>
  
-    <hr>
-
-    <div class="math-block">
-    <div class="def-title">Definición</div>
-    <p>
-      Para vectores \(\mathbf{u}\) y \(\mathbf{v}\) distintos de cero en \(\mathbb{R}^n\),
-    </p>
-
-    <p style="align-items: center; text-align:center; "> 
-
-    <span id="formula2">
-        \(  \cos\theta \;=\;  \)
-    </span> 
-   
-    <input type="text" name="respuesta_2" id="respuesta_2" oninput="actualizarFormula2()" 
-    value="<?php echo $respuesta_2?>" size="15" >
-
-    </p>
-
-     
-    </div>
-
-    <button type="submit">Enviar</button> 
-     <?php echo $verificar_2 ?>
-    <hr>
+    <p>Las tres matrices elementales \( E_1, E_2, E_3 \), que logran esta reducción de \( A \) a la forma escalonada \( U \) son (en orden):</p>
+  <p>\(E_1 = \begin{bmatrix} 1 & 0 & 0 \\ -2 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}\), \(E_2 = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 1 & 0 & 1 \end{bmatrix}\), \(E_3 = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 2 & 1 \end{bmatrix}\)</p>
+  <p>Por tanto,</p>
+  <p>\(E_3 E_2 E_1 A = U\)</p>
+  <p>Al despejar para \( A \), se obtiene</p>
+  <p>\(A = E_1^{-1} E_2^{-1} E_3^{-1} U = \begin{bmatrix} 1 & 0 & 0 \\ 2 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix} \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ -1 & 0 & 1 \end{bmatrix} \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & -2 & 1 \end{bmatrix} U\)</p>
+  <p>\(\begin{bmatrix} 1 & 0 & 0 \\ 2 & 1 & 0 \\ -1 & -2 & 1 \end{bmatrix} U = LU\)</p>
+  <p>Por tanto, \( A \) puede factorizarse como</p>
+  <p>\(A = LU\)</p>
+  <p>donde \( U \) es una matriz triangular superior (vea los ejercicios para la sección 3.2) y \( L \) es triangular inferior unitaria. Esto es, \( L \) tiene la forma</p>
+  <p>\(L = \begin{bmatrix} 1 & 0 & \cdots & 0 \\ * & 1 & \cdots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ * & * & \cdots & 1 \end{bmatrix}\)</p>
+  <p>con ceros arriba y números 1 en la diagonal principal.</p>
+  <p>El ejemplo anterior motiva la siguiente definición.</p>
 
 
 
-  <h2>Vectores ortogonales</h2>
-  <p>
-    El concepto de perpendicularidad es fundamental para la geometría. 
-    En \(\mathbb{R}^2\) o \(\mathbb{R}^3\), dos vectores \(\mathbf{u}\) y \(\mathbf{v}\) distintos de cero 
-    son perpendiculares si el ángulo \(\theta\) entre ellos es un ángulo recto; 
-    esto es, si \(\theta = \pi/2\) radianes o 
-    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="5"> grados.  
-    Por tanto,
-  </p>
 
-  <p style="align-items: center; text-align:center; "> 
+  <h2>Definición</h2>
+    <p>Sea \( A \) una matriz cuadrada. Una factorización de \( A \) como \( A = LU \), donde \( L \) es triangular inferior unitaria y \( U \) es triangular superior, se llama factorización \( LU \) de \( A \).</p>
 
-    <span id="formula2">
-        \(  \cos\theta = \frac{\mathbf{u}\cdot\mathbf{v}}{\|\mathbf{u}\|\|\mathbf{v}\|} =   \)
-    </span> 
-   
-    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="8">
+    <h2>Comentarios</h2>
+    <ul>
+        <li>Observe que la matriz \( A \) en el ejemplo 3.33 tiene una factorización \( LU \) porque en la reducción por renglones de \( A \) no se necesitaron intercambios de renglón. Por tanto, todas las matrices elementales que surgieron fueron triangulares inferiores unitarias. Entonces, se garantiza que \( L \) es triangular inferior unitaria porque los inversos y productos de matrices triangulares inferiores unitarias también son triangulares inferiores unitarias. (Vea los ejercicios 29 y 30.)</li>
+        <li>Si apareciera un cero en una posición pivote en algún paso, habría tenido que intercambiar renglones para obtener un pivote distinto de cero. Esto habría resultado en que \( L \) ya no fuese triangular inferior unitaria. Más adelante se comentará más acerca de esta observación. (¿Puede encontrar una matriz para la cual sería necesario el intercambio de renglones?)</li>
+        <li>La noción de una factorización \( LU \) puede generalizarse a matrices no cuadradas al simplemente requerir que \( U \) sea una matriz en forma escalonada por renglones. (Vea los ejercicios 13 y 14.)</li>
+        <li>Algunos libros definen una factorización \( LU \) de una matriz cuadrada \( A \) como cualquier factorización \( A = LU \), donde \( L \) es triangular inferior y \( U \) es triangular superior.</li>
+    </ul>
+    <p>El primer comentario anterior en esencia es una demostración del siguiente teorema.</p>
 
-    </p>
+    <h2>Teorema 3.15</h2>
+    <p>Si \( A \) es una matriz cuadrada que puede reducirse a forma escalonada sin usar intercambios de renglón, entonces \( A \) tiene una factorización \( LU \).</p>
 
-    <p style="align-items: center; text-align:center; "> 
-
-    <span id="formula2">
-        \(  \quad \Rightarrow \quad \mathbf{u}\cdot \mathbf{v} = \)
-    </span> 
-   
-    <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="8">
-
-    </p>
-
-  
-  <p>
-    Esto motiva la siguiente definición:
-  </p>
-
-  <div class="math-block">
-    <div class="def-title">Definición</div>
-    Dos vectores \(\mathbf{u}\) y \(\mathbf{v}\) en \(\mathbb{R}^n\) son mutuamente 
-    <em>ortogonales</em> si 
-    <br><br>
-    <p style="align-items: center; text-align:center; "> 
-    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="8">
-    </p>
-  </div>
-
-  <p>
-    Dado que 
-    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="8">
-    \( = 0\) para todo vector \(\mathbf{v}\) en \(\mathbb{R}^n\), 
-    el vector cero es ortogonal a todo vector.
-  </p>
-
-  <p>
-    En \(\mathbb{R}^3\), si 
-    \(\mathbf{u} = [1,1,-2]\) y \(\mathbf{v} = [3,1,2]\), 
-    entonces son ortogonales, pues:
-    \[
-      \mathbf{u}\cdot \mathbf{v} = 1\cdot 3 + 1\cdot 1 + (-2)\cdot 2 = 3 + 1 - 4 = 0.
-    \]
-  </p>
-
-    <button type="submit">Enviar</button> 
-    <?php echo $verificar_3 ?>
-    <?php echo $verificar_4 ?>
-    <?php echo $verificar_5 ?>
-    <?php echo $verificar_6 ?>
-    <?php echo $verificar_7 ?>  
-
-    <hr>
-  <h2>Teorema de Pitágoras</h2>
-  <div class="math-block">
-    <div class="def-title">Teorema de Pitágoras</div>
-    <p>
-      Para todos los vectores \(\mathbf{u}\) y \(\mathbf{v}\) en \(\mathbb{R}^n\),
-    </p>
-
-     <p style="align-items: center; text-align:center; "> 
-
-    <span id="formula3">
-        \(    \)
-    </span> 
-   
-    <input type="text" name="respuesta_8" id="respuesta_8" oninput="actualizarFormula3()" 
-    value="<?php echo $respuesta_8?>" size="18" >
-
-    </p>
-
-    <button type="submit">Enviar</button> 
-    <?php echo $verificar_8 ?>
-    
-    <hr>
-  
-
-    <p>
-      si y sólo si \(\mathbf{u}\) y \(\mathbf{v}\) son ortogonales.
-    </p>
-  </div>
-
-    <img src="../../../img/guia_239.png" alt="">
-
-        
-<h2>Proyecciones</h2>
-
-<p>
-Ahora se considerará el problema de encontrar la distancia desde un punto hasta una recta en el contexto de los vectores.
-Como verá, esta técnica conduce a un importante concepto: la <strong>proyección de un vector sobre otro vector</strong>.
-</p>
+    <p>Para ver por qué es útil la factorización \( LU \), considere un sistema lineal \( Ax = b \), donde la matriz de coeficientes tiene una factorización \( LU \), \( A = LU \). El sistema \( Ax = b \) puede reescribirse como \( LUx = b \) o \( L(Ux) = b \). Si ahora se define \( y = Ux \), entonces es posible resolver para \( x \) en dos etapas:</p>
+    <ol>
+        <li>Resolver \( Ly = b \) para \( y \) mediante sustitución hacia adelante (vea los ejercicios 25 y 26 en la sección 2.1).</li>
+        <li>Resolver \( Ux = y \) para \( x \) mediante sustitución hacia atrás.</li>
+    </ol>
+    <p>Cada uno de dichos sistemas lineales tiene solución directa porque las matrices coeficientes \( L \) y \( U \) son ambas triangulares. El siguiente ejemplo ilustra el método.</p>
 
 
+    <h2>Ejemplo 3.34</h2>
+    <p>Use una factorización \( LU \) de \( A = \begin{bmatrix} 2 & 1 & 3 \\ 4 & -1 & 3 \\ -2 & 5 & 5 \end{bmatrix} \) para resolver \( Ax = b \), donde</p>
+    <p>\( b = \begin{bmatrix} 1 \\ -4 \\ 9 \end{bmatrix} \).</p>
 
-<p>
-El problema de encontrar la distancia desde un punto \( B \) hasta una recta \( \ell \) (en \( \mathbb{R}^2 \) o \( \mathbb{R}^3 \)) 
-se reduce a encontrar la longitud del segmento de recta perpendicular \( PB \) o, de manera equivalente, 
-la longitud del vector \( \overrightarrow{PB} \).
-Si se elige un punto \( A \) sobre \( \ell \), entonces, en el triángulo recto \( \triangle APB \), los otros dos vectores son 
-el cateto \( \overrightarrow{AP} \) y la hipotenusa \( \overrightarrow{AB} \).
-\( \overrightarrow{AP} \) se llama <strong>proyección de</strong> \( \overrightarrow{AB} \) <strong>sobre la recta</strong> \( \ell \).
-</p>
+    <h3>Solución</h3>
+    <p>En el ejemplo 3.33, se encontró que</p>
+    <p>\( A = \begin{bmatrix} 1 & 0 & 0 \\ 2 & 1 & 0 \\ -1 & -2 & 1 \end{bmatrix} \begin{bmatrix} 2 & 1 & 3 \\ 0 & -3 & -3 \\ 0 & 0 & 2 \end{bmatrix} = LU \).</p>
 
+    <p>Como se destaca líneas arriba, para resolver \( Ax = b \) (que es lo mismo que \( L(Ux) = b \)), primero se resuelve \( Ly = b \) para \( y = \begin{bmatrix} y_1 \\ y_2 \\ y_3 \end{bmatrix} \). Este es justo el sistema lineal</p>
+    <p>\( \begin{cases} y_1 = 1 \\ 2y_1 + y_2 = -4 \\ -y_1 - 2y_2 + y_3 = 9 \end{cases} \).</p>
+
+    <p>La sustitución hacia adelante (esto es, al trabajar de arriba abajo) produce</p>
+    <p>\( y_1 = 1, y_2 = -4 - 2y_1 = -6, y_3 = 9 + y_1 + 2y_2 = -2 \).</p>
+
+    <p>Por tanto, \( y = \begin{bmatrix} 1 \\ -6 \\ -2 \end{bmatrix} \) y ahora se resuelve \( Ux = y \) para \( x = \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} \). Este sistema lineal es</p>
+    <p>\( \begin{cases} 2x_1 + x_2 + 3x_3 = 1 \\ -3x_2 - 3x_3 = -6 \\ 2x_3 = -2 \end{cases} \)</p>
+
+    <p>y la sustitución hacia atrás produce rápidamente</p>
+    <p>\( x_3 = -1, -3x_2 = -6 + 3x_3 = -9 \) de manera que \( x_2 = 3, y \)</p>
+    <p>\( 2x_1 = 1 - x_2 - 3x_3 = 1 \) de manera que \( x_1 = \frac{1}{2} \).</p>
+
+    <p>Por tanto, la solución al sistema dado \( Ax = b \) es \( x = \begin{bmatrix} \frac{1}{2} \\ 3 \\ -1 \end{bmatrix} \).</p>
+
+    <h3>Una forma sencilla de encontrar factorizaciones \( LU \)</h3>
+    <p>En el ejemplo 3.33 se calculó la matriz \( L \) como un producto de matrices elementales. Por fortuna, \( L \) puede calcularse directamente a partir del proceso de reducción por renglones sin la necesidad de calcular matrices elementales. Recuerde que se supone que \( A \) puede reducirse a forma escalonada por renglones sin usar intercambios de renglón. Si este es el caso, entonces todo el proceso de reducción por renglones puede hacerse usando solamente operaciones elementales con renglones de la forma \( R_i - kR_j \) (¿Por qué no es necesario usar la operación elemental con los renglones restantes, y multiplicar un renglón por un escalar distinto de cero?) En la operación \( R_i - kR_j \), el escalar \( k \) se denominará el <em>multiplicador</em>.</p>
+
+    <p>En el ejemplo 3.33, las operaciones elementales con renglones que se usaron fueron, en orden,</p>
+    <p>\( R_2 - 2R_1 \) (multiplicador = 2)</p>
+    <p>\( R_3 + R_1 = R_3 - (-1)R_1 \) (multiplicador = -1)</p>
+    <p>\( R_3 + 2R_2 = R_3 - (-2)R_2 \) (multiplicador = -2)</p>
+
+    <p>Los multiplicadores son precisamente las entradas de \( L \) que están bajo su diagonal! De hecho,</p>
+    <p>\( L = \begin{bmatrix} 1 & 0 & 0 \\ 2 & 1 & 0 \\ -1 & -2 & 1 \end{bmatrix} \).</p>
+
+    <p>\( y L_{21} = 2, L_{31} = -1 y L_{32} = -2 \). Note que la operación elemental con renglones \( R_i - kR_j \) tiene su multiplicador \( k \) en la entrada (i, j) de \( L \).</p>
 
 
 </div>
@@ -1786,215 +1682,79 @@ el cateto \( \overrightarrow{AP} \) y la hipotenusa \( \overrightarrow{AB} \).
 
 <div class="seccion derecha">
    
+    <h2>Comentarios</h2>
+    <ul>
+        <li>Al aplicar este método es importante notar que las operaciones elementales con renglones \( R_i - kR_j \) deben realizarse de arriba abajo dentro de cada columna (y usar la entrada diagonal como pivote) y columna por columna de izquierda a derecha. Para ilustrar...</li>
+    </ul> 
+    
+    <h2>Teorema 3.16</h2>
+    <p>Si \( A \) es una matriz invertible que tiene una factorización \( LU \), entonces \( L \) y \( U \) son también inversibles.</p>
 
- 
+    <h2>La factorización \( P'LU \)</h2>
+    <p>Ahora se explorará el problema de adaptar la factorización \( LU \) para manejar casos donde son necesarios los intercambios de renglón durante la eliminación gaussiana. Considere la matriz</p>
+    <p>\( A = \begin{bmatrix} 1 & 2 & -1 \\ 3 & 6 & 2 \\ -1 & 1 & 4 \end{bmatrix} \).</p>
 
- 
-<hr>
+    <p>Una reducción por renglón directa produce</p>
+    <p>\( A \rightarrow B = \begin{bmatrix} 1 & 2 & -1 \\ 0 & 0 & 5 \\ 0 & 3 & 3 \end{bmatrix} \),</p>
+    <p>que no es una matriz triangular superior. Sin embargo, esto se puede convertir fácilmente en forma triangular superior al intercambiar los renglones 2 y 3 de \( B \) para obtener</p>
+    <p>\( U = \begin{bmatrix} 1 & 2 & -1 \\ 0 & 3 & 3 \\ 0 & 0 & 5 \end{bmatrix} \).</p>
 
-<p>
-Considere dos vectores \( \mathbf{u} \) y \( \mathbf{v} \) distintos de cero. 
-Sea \( \mathbf{p} \) el vector que se obtiene al trazar una perpendicular desde la punta de \( \mathbf{v} \) sobre \( \mathbf{u} \), 
-y sea \( \theta \) el ángulo entre \( \mathbf{u} \) y \( \mathbf{v} \).
-</p>
+    <p>Alternativamente, primero puede intercambiar los renglones 2 y 3 de \( A \). Para este fin, sea \( P \) la matriz elemental</p>
+    <p>\( P = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 0 & 1 \\ 0 & 1 & 0 \end{bmatrix} \).</p>
 
-<p>
-Entonces, claramente 
-\[
-\mathbf{p} = \|\mathbf{p}\| \, \hat{\mathbf{u}},
-\]
-donde 
-\[
-\hat{\mathbf{u}} = \left(\frac{1}{\|\mathbf{u}\|}\right)\mathbf{u}
-\]
-es el vector unitario en la dirección de \( \mathbf{u} \).
-Por trigonometría, \( \|\mathbf{p}\| = \|\mathbf{v}\| \cos \theta \), 
-y como 
-\[
-\cos \theta = \frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\| \|\mathbf{v}\|},
-\]
-tenemos:
-</p>
+    <p>que corresponde a intercambiar renglones 2 y 3, y sea \( E \) el producto de las matrices elementales que entonces reduce \( PA \) a \( U \) (de modo que \( E^{-1} = L \) es triangular inferior unitaria). Por tanto, \( EPA = U \), de modo que \( A = (EP)^{-1}U = P^{-1}E^{-1}U = P^{-1}LU \).</p>
 
-<p>
-\[
-\mathbf{p} = \|\mathbf{v}\| 
-\left( 
-\frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\| \|\mathbf{v}\|}
-\right)
-\left( 
-\frac{1}{\|\mathbf{u}\|}
-\right)
-\mathbf{u}
-\]
-</p>
+    <p>Ahora esto solo maneja el caso de un solo intercambio de renglón. En general, \( P \) será el producto \( P = P_{k_1} \cdot \ldots \cdot P_{k_r} \) de todas las matrices elementales \( P_{k_i} \) que se usaron durante el proceso de reducción (donde \( P_{k_i} \) se realiza primero, etcétera). Tal matriz \( P \) se llama matriz de permutación. Observe que una matriz de permutación surge de permutar los renglones de una matriz identidad en cierto orden. Por ejemplo, las siguientes son todas matrices de permutación:</p>
+    <p>\( \begin{bmatrix} 0 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 1 \end{bmatrix}, \begin{bmatrix} 0 & 0 & 1 \\ 0 & 1 & 0 \\ 1 & 0 & 0 \end{bmatrix}, \begin{bmatrix} 1 & 0 & 0 \\ 0 & 0 & 1 \\ 0 & 1 & 0 \end{bmatrix} \).</p>
 
-<p>
-Simplificando:
-\[
-\mathbf{p} 
-= 
-\left( 
-\frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\|^2}
-\right)\mathbf{u}
-=
-\left(
-\frac{\mathbf{u} \cdot \mathbf{v}}{\mathbf{u} \cdot \mathbf{u}}
-\right)\mathbf{u}
-\]
-</p>
+    <p>Por fortuna, el inverso de una matriz de permutación es fácil de calcular; de hecho, no se necesita cálculo alguno!</p>
 
-<p>
-Ésta es la fórmula que se quería, y es la base de la siguiente definición para vectores en \( \mathbb{R}^n \).
-</p>
+    <h2>Teorema 3.17</h2>
+    <p>Si \( P \) es una matriz de permutación, entonces \( P^{-1} = P^T \).</p>
 
-<div class="definicion">
-  <strong>Definición:</strong>  
-  Si \( \mathbf{u} \) y \( \mathbf{v} \) son vectores en \( \mathbb{R}^n \) y \( \mathbf{u} \neq \mathbf{0} \),  
-  entonces la <strong>proyección de</strong> \( \mathbf{v} \) <strong>sobre</strong> \( \mathbf{u} \)  
-  es el vector \( \mathrm{proj}_{\mathbf{u}}(\mathbf{v}) \) definido por:
-  <br><br>
-</div>
-
-   <p style="align-items: center; text-align:center; "> 
-
-    <span id="formula4">
-        \(    \)
-    </span> 
-   
-    <input type="text" name="respuesta_9" id="respuesta_9" oninput="actualizarFormula4()" 
-    value="<?php echo $respuesta_9?>" size="18" >
-
-    </p>
-
-  
+    <hr>
+    Aveces es necesaria mas de una permutacion. hay se calcula P con los P's.
+    <hr>
 
 
-    <img src="../../../img/guia_240.png" alt="">
+    <h2>Ejemplo 3.36</h2>
+    <p>Encuentre una factorización \( P'LU \) de \( A = \begin{bmatrix} 0 & 0 & 6 \\ 1 & 2 & 3 \\ 2 & 1 & 4 \end{bmatrix} \).</p>
 
-    <div class="comment-section">
-        <div class="comment">
-            <p>El término <em>proyección</em> proviene de la idea de proyectar una imagen sobre un muro (con un proyector de diapositivas, por ejemplo). Imagine un haz de luz con rayos mutuamente paralelos y perpendiculares a <strong>u</strong> que brillan sobre <strong>v</strong>. La proyección de <strong>v</strong> sobre <strong>u</strong> es justo la sombra formada, o proyectada, por <strong>v</strong> sobre <strong>u</strong>.</p>
-        </div>
-        
-        <div class="comment">
-            <p>Puede ser útil considerar a \(\text{proy}_{\mathbf{u}}(\mathbf{v})\) como una función con variable <strong>v</strong>. Entonces la variable <strong>v</strong> ocurre sólo una vez en el lado derecho de la definición. Además, es útil tener en mente la figura 1.38, que recuerda que \(\text{proy}_{\mathbf{u}}(\mathbf{v})\) es un múltiplo escalar del vector <strong>u</strong> (no de <strong>v</strong>).</p>
-        </div>
-        
-        <div class="comment">
-            <p>Aunque en la deducción de la definición de \(\text{proy}_{\mathbf{u}}(\mathbf{v})\) se requirió que tanto <strong>v</strong> como <strong>u</strong> fuesen distintos de cero (¿por qué?), es claro a partir de la geometría que la proyección del vector cero sobre <strong>u</strong> es <strong>0</strong>. La definición está en concordancia con esto, pues:</p>
-            
-            <div class="math-formula">
-                \(\frac{\mathbf{u} \cdot \mathbf{0}}{\mathbf{u} \cdot \mathbf{u}} \mathbf{u} = 0\mathbf{u} = \mathbf{0}\)
-            </div>
-        </div>
-        
-        <div class="comment">
-            <p>Si el ángulo entre <strong>u</strong> y <strong>v</strong> es obtuso, como en la figura 1.38, entonces \(\text{proy}_{\mathbf{u}}(\mathbf{v})\) estará en la dirección opuesta de <strong>u</strong>; esto es, \(\text{proy}_{\mathbf{u}}(\mathbf{v})\) será un múltiplo escalar negativo de <strong>u</strong>.</p>
-        </div>
-        
-        <div class="comment">
-            <p>Si <strong>u</strong> es un vector unitario, entonces \(\text{proy}_{\mathbf{u}}(\mathbf{v}) = (\mathbf{u} \cdot \mathbf{v})\mathbf{u}\).</p>
-            <p class="note">(¿Por qué?)</p>
-            
-            <div class="highlight">
-                <p><strong>Explicación:</strong> Cuando <strong>u</strong> es un vector unitario, su magnitud es 1 (\(\|\mathbf{u}\| = 1\)). La fórmula general para la proyección es:</p>
-                <div class="math-formula">
-                    \(\text{proy}_{\mathbf{u}}(\mathbf{v}) = \frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\|^2} \mathbf{u}\)
-                </div>
-                <p>Como \(\|\mathbf{u}\| = 1\), entonces \(\|\mathbf{u}\|^2 = 1\), y la fórmula se simplifica a:</p>
-                <div class="math-formula">
-                    \(\text{proy}_{\mathbf{u}}(\mathbf{v}) = (\mathbf{u} \cdot \mathbf{v})\mathbf{u}\)
-                </div>
-            </div>
-        </div>
-    </div>
+    <h3>Solución</h3>
+    <p>Primero reduzca \( A \) a forma escalonada por renglones. Claramente, es necesario al menos un intercambio de renglón.</p>
+    <p>\( A = \begin{bmatrix} 0 & 0 & 6 \\ 1 & 2 & 3 \\ 2 & 1 & 4 \end{bmatrix} \xrightarrow{R_1 \leftrightarrow R_2} \begin{bmatrix} 1 & 2 & 3 \\ 0 & 0 & 6 \\ 2 & 1 & 4 \end{bmatrix} \xrightarrow{R_3 - 2R_1} \begin{bmatrix} 1 & 2 & 3 \\ 0 & 0 & 6 \\ 0 & -3 & -2 \end{bmatrix} \)</p>
+    <p>\( \xrightarrow{R_2 \leftrightarrow R_3} \begin{bmatrix} 1 & 2 & 3 \\ 0 & -3 & -2 \\ 0 & 0 & 6 \end{bmatrix} \)</p>
 
-    <img src="../../../img/guia_241.png" alt="">
+    <p>Se usaron dos intercambios de renglón (\( R_1 \leftrightarrow R_2 \) y luego \( R_2 \leftrightarrow R_3 \)), de modo que la matriz de permutación requerida es</p>
+    <p>\( P = P_2 P_1 = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 0 & 1 \\ 0 & 1 & 0 \end{bmatrix} \begin{bmatrix} 0 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 1 \end{bmatrix} = \begin{bmatrix} 0 & 1 & 0 \\ 0 & 0 & 1 \\ 1 & 0 & 0 \end{bmatrix} \).</p>
+
+    <p>Ahora se encuentra una factorización \( LU \) de \( PA \).</p>
+    <p>\( PA = \begin{bmatrix} 0 & 1 & 0 \\ 0 & 0 & 1 \\ 1 & 0 & 0 \end{bmatrix} \begin{bmatrix} 0 & 0 & 6 \\ 1 & 2 & 3 \\ 2 & 1 & 4 \end{bmatrix} = \begin{bmatrix} 1 & 2 & 3 \\ 2 & 1 & 4 \\ 0 & 0 & 6 \end{bmatrix} \xrightarrow{R_2 - 2R_1} \begin{bmatrix} 1 & 2 & 3 \\ 0 & -3 & -2 \\ 0 & 0 & 6 \end{bmatrix} = U \)</p>
+
+    <p>Por tanto, \( L_{21} = 2 \), y por tanto</p>
+    <p>\( A = P^T LU = \begin{bmatrix} 0 & 0 & 1 \\ 0 & 1 & 0 \\ 1 & 0 & 0 \end{bmatrix} \begin{bmatrix} 1 & 0 & 0 \\ 2 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix} \begin{bmatrix} 1 & 2 & 3 \\ 0 & -3 & -2 \\ 0 & 0 & 6 \end{bmatrix} \).</p>
+
+    <p>La discusión anterior justifica el siguiente teorema.</p>
 
     <hr>
 
-     <h1>1.3 Rectas y planos</h1>
-    
-    <div class="section">
-        <p>Todos están familiarizados con la ecuación de una recta en el plano cartesiano. Ahora se considerarán rectas en \( \mathbb{R}^2 \) desde un punto de vista vectorial. La comprensión que se obtenga a partir de este planteamiento permitirá generalizar a rectas en \( \mathbb{R}^3 \) y luego a planos en \( \mathbb{R}^3 \). Mucha del álgebra lineal que se considerará en capítulos posteriores tiene sus orígenes en la geometría simple de rectas y planos; la habilidad para visualizarlos y pensar geométricamente en torno a un problema le servirá bastante.</p>
-    </div>
+    <h1>Subespacios, bases, dimensión y rank</h1>
+    <p>Esta sección presenta tal vez las ideas más importantes de todo el libro. Ya se vio que existe una interacción entre geometría y álgebra: con frecuencia es posible usar intuición geométrica y razonar para obtener resultados algebraicos, y la potencia del álgebra con frecuencia permitirá los hallazgos más allá de los escenarios geométricos en los que surgieron por primera vez.</p>
+    <p>En el estudio de los vectores ya encontró informalmente todos los conceptos en esta sección. Aquí, comenzará a volverse más formal al proporcionar definiciones para las ideas clave. Como verá, la noción de subespacio es simplemente una generalización algebraica de los ejemplos geométricos de rectas y planos que pasan por el origen. El concepto fundamental de base para un subespacio se deriva entonces de la idea de vectores directores para tales rectas y planos. El concepto de base permitirá dar una definición precisa de dimensión que concuerde con una idea geométrica intuitiva del término, aunque es suficientemente flexible para permitir la generalización a otros escenarios.</p>
+    <p>También comenzará a ver qué dichas ideas arrojan más luz a lo que sabe acerca de las matrices y la solución de sistemas de ecuaciones lineales. En el capítulo 6 encontrará nuevamente todas estas ideas fundamentales con más detalle. Considere esta sección como una sesión de "familiarización".</p>
+    <p>Un plano que pasa por el origen en \( \mathbb{R}^3 \) "parece" una copia de \( \mathbb{R}^2 \). Intuitivamente, estaría de acuerdo en que ambos son "bidimensionales". Si presiona un poco, también puede decir que cualquier cálculo que pueda hacerse con vectores en \( \mathbb{R}^2 \) también puede realizarse en un plano que pasa por el origen. En particular, puede sumar y tomar múltiplos escalares (y, más generalmente, formar combinaciones lineales) de vectores en tal plano, y los resultados son otros vectores en el mismo plano. Se dice que, como \( \mathbb{R}^2 \), un plano que pasa por el origen es cerrado con respecto a las operaciones de suma y multiplicación escalar. (Vea la figura 3.2.)</p>
+    <p>Pero los vectores en este plano, ¿son objetos bidimensionales o tridimensionales? Puede argumentar que son tridimensionales porque existen en \( \mathbb{R}^3 \) y por tanto tienen tres componentes. Por otra parte, pueden describirse como una combinación lineal de sólo dos vectores, vectores directores para el plano, y por tanto son objetos bidimensionales que existen en un plano bidimensional. La noción de subespacio es la clave para resolver este rompecabezas.</p>
 
-    <div class="section">
-        <h2>Rectas en \( \mathbb{R}^2 \) y \( \mathbb{R}^3 \)</h2>
-        
-        <p>En el plano xy, la forma general de la ecuación de una recta es \( ax + by = c \), si \( b \neq 0 \), entonces la ecuación puede reescribirse como \( y = -(a/b)x + c/b \), que tiene la forma \( y = mx + k \). [Ésta es la forma pendiente ordenada al origen; \( m \) es la pendiente de la recta y el punto con coordenadas \((0, k)\) es su ordenada al origen.] Para incluir los vectores en este estudio, considere un ejemplo.</p>
-    </div>
+    <h2>Definición</h2>
+    <p>Un subespacio de \( \mathbb{R}^n \) es cualquier colección \( S \) de vectores en \( \mathbb{R}^n \) tal que:</p>
+    <ol>
+        <li>El vector cero \( \mathbf{0} \) está en \( S \).</li>
+        <li>Si \( \mathbf{u} \) y \( \mathbf{v} \) están en \( S \), entonces \( \mathbf{u} + \mathbf{v} \) está en \( S \) ( \( S \) es cerrado bajo la suma).</li>
+        <li>Si \( \mathbf{u} \) está en \( S \) y \( c \) es un escalar, entonces \( c\mathbf{u} \) está en \( S \) ( \( S \) es cerrado bajo la multiplicación por un escalar).</li>
+    </ol>
 
-
-
-
-    <button onmousedown="mostrarImagen()" onmouseup="ocultarImagen()">Explicacion pendiente</button>
-    <!-- Elemento para mostrar la imagen -->
-
-    <img id="imagenMostrada" src="../../../img/guia_242.png" style="display: none; max-width: 100%" width="560">
-
-    <script>
-        function mostrarImagen() {
-        var imagenMostrada2 = document.getElementById('imagenMostrada');
-
-        // Mostrar la imagen
-        imagenMostrada.style.display = 'block';
-        }
-
-        function ocultarImagen() {
-        var imagenMostrada = document.getElementById('imagenMostrada');
-
-        // Ocultar la imagen al soltar el botón
-        imagenMostrada.style.display = 'none';
-        }
-    </script>
-
-
-
-
-    <div class="example">
-        <div class="example-title">Ejemplo 1.26</div>
-        
-        <p>En la figura 1.53 se muestra la recta \(\ell\), con ecuación \( 2x + y = 0 \). Es una recta con pendiente \(-2\) que 
-            pasa por el origen. El lado izquierdo de la ecuación está en la forma de producto punto; de hecho, si 
-            \( \mathbf{n} = \begin{bmatrix} 2 \\ 1 \end{bmatrix} \) y \( \mathbf{x} = \begin{bmatrix} x \\ y \end{bmatrix} \), 
-            entonces la ecuación se convierte en 
-            <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="8">
-            .</p>
-        
-        <div class="definition">
-            <div class="definition-title">Vector Normal</div>
-            <p>El vector \( \mathbf{n} \) es perpendicular a la recta; esto es, es <em>ortogonal</em> a cualquier vector \( \mathbf{x} \) que sea paralelo a la recta (figura 1.54) y se le conoce como <span class="vector">vector normal</span> a la recta. La ecuación \( \mathbf{n} \cdot \mathbf{x} = 0 \) es la <em>forma normal</em> de la ecuación de \(\ell\).</p>
-        </div>
-        
-        <div class="math-formula">
-            \( \mathbf{n} \cdot \mathbf{x} = 0 \quad \Rightarrow \quad \begin{bmatrix} 2 \\ 1 \end{bmatrix} \cdot \begin{bmatrix} x \\ y \end{bmatrix} = 0 \quad \Rightarrow \quad 2x + y = 0 \)
-        </div>
-        
-        <img src="../../../img/guia_243.png" alt="">
-        <p>Otra forma de pensar esta recta es imaginar una partícula que se mueve a lo largo de la recta. Suponga que la partícula inicialmente está en el origen en el tiempo \( t = 0 \) y se mueve a lo largo de la recta en tal forma que su coordenada \( x \) cambia 1 unidad por segundo. Entonces:</p>
-        
-        <ul>
-            <li>En \( t = 1 \) la partícula está en \((1, -2)\)</li>
-            <li>En \( t = 1.5 \) está en \((1.5, -3)\)</li>
-            <li>En \( t = -2 \) está (o estuvo) en \((-2, 4)\)</li>
-        </ul>
-        
-        <p>Este movimiento se ilustra en la figura 1.55.</p>
-        
-        <div class="highlight">
-            <p><strong>Interpretación vectorial:</strong> Podemos describir esta recta paramétricamente usando vectores. Si consideramos la dirección de movimiento como el vector \( \mathbf{d} = \begin{bmatrix} 1 \\ -2 \end{bmatrix} \), entonces cualquier punto \( \mathbf{x} \) en la recta puede escribirse como:</p>
-            <div class="math-formula">
-                \( \mathbf{x} = t\mathbf{d} = t\begin{bmatrix} 1 \\ -2 \end{bmatrix} \)
-            </div>
-            <p>donde \( t \) es un parámetro real que representa el tiempo.</p>
-        </div>
-    </div>
-
-   
-
-
+    <p>También podría combinar las propiedades (2) y (3) y requerir, de manera equivalente, que \( S \) sea cerrado bajo combinaciones lineales:</p>
+    <p>Si \( \mathbf{u}_1, \mathbf{u}_2, \ldots, \mathbf{u}_k \) están en \( S \) y \( c_1, c_2, \ldots, c_k \) son escalares, entonces \( c_1\mathbf{u}_1 + c_2\mathbf{u}_2 + \cdots + c_k\mathbf{u}_k \) están en \( S \).</p>
 </div>
 </div>
  </form>
@@ -2003,7 +1763,7 @@ Simplificando:
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="tercero.php"
+        href="doce.php"
         role="button"
         width="50px"
         height="50px"

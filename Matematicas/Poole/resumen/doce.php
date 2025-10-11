@@ -169,7 +169,7 @@ if ($_POST) {
 
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '||u-v||') {  
+   if ($respuesta_1 === '26') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -179,9 +179,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === '\frac{u*v}{||u||*||v||}'
-   || $respuesta_2 === '\frac{uv}{||u||||v||}'
-   ) {  
+   if ($respuesta_2 === '39') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -191,7 +189,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === '90') {  
+   if ($respuesta_3 === '52') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -201,7 +199,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === 'Cos90') {  
+   if ($respuesta_4 === '65') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -211,7 +209,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === '0') {  
+   if ($respuesta_5 === '78') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -221,9 +219,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === 'v*u=0'
-   || $respuesta_6 === 'u*v=0'
-   ) {  
+   if ($respuesta_6 === '91') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -233,9 +229,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === '0*V'
-   || $respuesta_7 === '0*v'
-   ) {  
+   if ($respuesta_7 === '104') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -245,7 +239,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === '||u+v||^2=||u||^2+||v||^2') {  
+   if ($respuesta_8 === '117') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -255,7 +249,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === 'proj_u(v)=(\frac{u*V}{u*u})') {  
+   if ($respuesta_9 === '130') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -265,7 +259,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === 'n*x=0') {  
+   if ($respuesta_10 === '143') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -1318,7 +1312,7 @@ if ($respuesta_121 === '144') {
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 395vh;
+    height: 410vh;
     }
 
 </style>
@@ -1378,7 +1372,7 @@ function actualizarFormula() {
 
 function actualizarFormula2() {
     var f = document.getElementById('respuesta_2').value || "";
-    var formula = ` \\ \\cos\\theta \=\ ${f} \\, `;
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula2').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
         MathJax.typeset();
@@ -1386,7 +1380,7 @@ function actualizarFormula2() {
 }
 
 function actualizarFormula3() {
-    var f = document.getElementById('respuesta_8').value || "";
+    var f = document.getElementById('respuesta_3').value || "";
     var formula = ` \\ ${f} \\, `;
     document.getElementById('formula3').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
@@ -1395,7 +1389,7 @@ function actualizarFormula3() {
 }
 
 function actualizarFormula4() {
-    var f = document.getElementById('respuesta_9').value || "";
+    var f = document.getElementById('respuesta_4').value || "";
     var formula = ` \\ ${f} \\, `;
     document.getElementById('formula4').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
@@ -1598,186 +1592,119 @@ function ocultarMensaje4() {
 </head>
 <body>  
 
-<form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
+<form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
 <div class="form-container">
 
     
 <div class="seccion izquierda"> 
-
-    
-  <div class="math-block" style="border-left-color:#7fc7f0;">
-    <div class="def-title">Definición</div>
-    <div>
-    La <em>distancia</em> \(d(\mathbf{u},\mathbf{v})\) entre los vectores \(\mathbf{u}\) y \(\mathbf{v}\) en \(\mathbb{R}^n\) se define por
-    
-    <br><br>
-    <p style="align-items: center; text-align:center; "> 
-
-    <span id="formula">
-        \( d(\mathbf{u},\mathbf{v}) \;=\;  \)
-    </span> 
-   
-    <input type="text" name="respuesta_1" id="respuesta_1" oninput="actualizarFormula()" 
-    value="<?php echo $respuesta_1?>" size="15" >
-
-    </p>
-
-
-      
-    </div>
-  </div>
-
-    <button type="submit">Enviar</button> 
-    <?php echo $verificar_1 ?>
  
+  <h2>Ejemplo 3.37</h2>
+    <p>Toda recta y plano a través del origen en \( \mathbb{R}^3 \) es un subespacio de \( \mathbb{R}^3 \). Debe ser claro geométricamente que se satisfacen las propiedades (1) a (3). He aquí una demostración algebraica en el caso de un plano a través del origen. En el ejercicio 9 se le pide dar la demostración correspondiente para una recta.</p>
+    <p>Sea \( \mathscr{P} \) un plano a través del origen con vectores directores \( \mathbf{v}_1 \) y \( \mathbf{v}_2 \). Por tanto, \( \mathscr{P} = \text{gen}(\mathbf{v}_1, \mathbf{v}_2) \). El vector cero \( \mathbf{0} \) está en \( \mathscr{P} \), pues \( \mathbf{0} = 0 \cdot \mathbf{v}_1 + 0 \cdot \mathbf{v}_2 \). Ahora sean</p>
+    <p>\( \mathbf{u} = c_1 \mathbf{v}_1 + c_2 \mathbf{v}_2 \) y \( \mathbf{v} = d_1 \mathbf{v}_1 + d_2 \mathbf{v}_2 \) sean dos vectores en \( \mathscr{P} \). Entonces</p>
+    <p>\( \mathbf{u} + \mathbf{v} = (c_1 \mathbf{v}_1 + c_2 \mathbf{v}_2) + (d_1 \mathbf{v}_1 + d_2 \mathbf{v}_2) = (c_1 + d_1) \mathbf{v}_1 + (c_2 + d_2) \mathbf{v}_2 \)</p>
+    <p>Por tanto, \( \mathbf{u} + \mathbf{v} \) es una combinación lineal de \( \mathbf{v}_1 \) y \( \mathbf{v}_2 \), y por tanto está en \( \mathscr{P} \).</p>
+    <p>Ahora sea \( c \) un escalar. Entonces</p>
+    <p>\( c \mathbf{u} = c (c_1 \mathbf{v}_1 + c_2 \mathbf{v}_2) = (c c_1) \mathbf{v}_1 + (c c_2) \mathbf{v}_2 \)</p>
+    <p>que muestra que \( c \mathbf{u} \) también es una combinación lineal de \( \mathbf{v}_1 \) y \( \mathbf{v}_2 \), y por tanto está en \( \mathscr{P} \).</p>
+    <p>Se demostró que \( \mathscr{P} \) satisface las propiedades (1) a (3) y en consecuencia es un subespacio de \( \mathbb{R}^3 \).</p>
+    <p>Si observa cuidadosamente los detalles del ejemplo 3.37, notará que el hecho de que \( \mathbf{v}_1 \) y \( \mathbf{v}_2 \) fueran vectores en \( \mathbb{R}^3 \) no tuvo papel alguno en la verificación de las propiedades. En consecuencia, el método algebraico utilizado debe generalizarse más allá de \( \mathbb{R}^3 \) y aplicarse en situaciones donde ya no se pueda visualizar la geometría. Lo hace. Más aún, el método del ejemplo 3.37 puede servir como "plantilla" en escenarios más generales. Cuando el ejemplo 3.37 se generaliza al generador de un conjunto arbitrario de vectores en cualquier \( \mathbb{R}^n \), el resultado es suficientemente importante como para llamarse teorema.</p>
+
+    <h2>Teorema 3.19</h2>
+    <p>Sean \( \mathbf{v}_1, \mathbf{v}_2, \ldots, \mathbf{v}_k \) vectores en \( \mathbb{R}^n \). Entonces \( \text{gen}(\mathbf{v}_1, \mathbf{v}_2, \ldots, \mathbf{v}_k) \) es un subespacio de \( \mathbb{R}^n \).</p>
+
+    <h2>Ejemplo 3.38</h2>
+    <p>Demuestre que el conjunto de todos los vectores \( \begin{bmatrix} x \\ y \\ z \end{bmatrix} \) que satisfacen las condiciones \( x = 3y \) y \( z = -2y \) forman un subespacio de \( \mathbb{R}^3 \).</p>
+
+    <h3>Solución</h3>
+    <p>La sustitución de las dos condiciones en \( \begin{bmatrix} x \\ y \\ z \end{bmatrix} \) produce</p>
+    <p>\( \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 3y \\ y \\ -2y \end{bmatrix} = y \begin{bmatrix} 3 \\ 1 \\ -2 \end{bmatrix} \)</p>
+    <p>Dado que \( y \) es arbitrario, el conjunto dado de vectores es gen \( \begin{bmatrix} 3 \\ 1 \\ -2 \end{bmatrix} \), y por ende es un subespacio de \( \mathbb{R}^3 \), por el Teorema 3.19.</p>
+    <p>Geométricamente, el conjunto de vectores del ejemplo 3.38 representa la recta que pasa por el origen en \( \mathbb{R}^3 \), con vector director \( \begin{bmatrix} 3 \\ 1 \\ -2 \end{bmatrix} \).</p>
+
+    <h2>Ejemplo 3.39</h2>
+    <p>Determine si el conjunto de todos los vectores \( \begin{bmatrix} x \\ y \\ z \end{bmatrix} \) que satisfacen las condiciones \( x = 3y + 1 \) y \( z = -2y \) es un subespacio de \( \mathbb{R}^3 \).</p>
+
+    <h3>Solución</h3>
+    <p>Esta vez se tienen todos los vectores de la forma</p>
+    <p>\( \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 3y + 1 \\ y \\ -2y \end{bmatrix} \)</p>
+    <p>El vector cero no es de esta forma. (¿Por qué no? Trate de resolver \( \begin{bmatrix} 3y + 1 \\ y \\ -2y \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix} \))</p>
+    <p>Por tanto, la propiedad (1) no se cumple, de modo que este conjunto no puede ser un subespacio de \( \mathbb{R}^3 \).</p>
+
     <hr>
 
-    <div class="math-block">
-    <div class="def-title">Definición</div>
-    <p>
-      Para vectores \(\mathbf{u}\) y \(\mathbf{v}\) distintos de cero en \(\mathbb{R}^n\),
-    </p>
+    <h2>Problema:</h2>
+<p>Se quiere determinar si el conjunto</p>
+<p>\[ S = \left\{ \begin{pmatrix} x \\ y \end{pmatrix} \in \mathbb{R}^2 : y = x^2 \right\} \]</p>
+<p>es un subespacio de \(\mathbb{R}^2\).</p>
 
-    <p style="align-items: center; text-align:center; "> 
+<div class="step">
+<h3>Paso 1: Verificar si contiene el vector cero</h3>
+<p>Un subespacio debe contener el vector cero.</p>
+<p>Aquí, si \(x = 0\), entonces \(y = 0^2 = 0\).</p>
+<p>Por lo tanto, \(\begin{pmatrix} 0 \\ 0 \end{pmatrix} \in S\). <span class="check">✅</span></p>
+</div>
 
-    <span id="formula2">
-        \(  \cos\theta \;=\;  \)
-    </span> 
-   
-    <input type="text" name="respuesta_2" id="respuesta_2" oninput="actualizarFormula2()" 
-    value="<?php echo $respuesta_2?>" size="15" >
+<div class="step">
+<h3>Paso 2: Verificar cerradura bajo suma</h3>
+<p>Tomemos dos vectores arbitrarios en \(S\):</p>
+<p>\[
+u = \begin{pmatrix} x_1 \\ x_1^2 \end{pmatrix}, \quad
+v = \begin{pmatrix} x_2 \\ x_2^2 \end{pmatrix}
+\]</p>
 
-    </p>
+<p>Sumamos:</p>
+<p>\[
+u + v = \begin{pmatrix} x_1 + x_2 \\ x_1^2 + x_2^2 \end{pmatrix}
+\]</p>
 
-     
+<p>Para que la suma esté en \(S\), su segunda componente debería ser el cuadrado de la primera componente:</p>
+<p>\[
+(x_1 + x_2)^2 \stackrel{?}{=} x_1^2 + x_2^2
+\]</p>
+
+<p>Esto no es cierto en general. Por ejemplo, si \(x_1 = 1\) y \(x_2 = 2\):</p>
+<p>\[
+(x_1 + x_2)^2 = 3^2 = 9, \quad x_1^2 + x_2^2 = 1^2 + 2^2 = 5
+\]</p>
+
+<p>Como \(9 \neq 5\), la suma no está en \(S\). <span class="cross">❌</span></p>
+</div>
+
+<div class="step">
+<h3>Paso 3: Conclusión</h3>
+<p>Como falló la propiedad de cerradura bajo suma, \(S\) no es un subespacio de \(\mathbb{R}^2\).</p>
+</div>
+
+    <hr>
+
+     <div class="definition">
+        <h2>Definición</h2>
+        <p>Sea \( A \) una matriz de \( m \times n \).</p>
+        <ol>
+            <li>El espacio renglón de \( A \) es el subespacio renglón(\( A \)) de \( \mathbb{R}^m \) generado por los renglones de \( A \).</li>
+            <li>El espacio columna de \( A \) es el subespacio col(\( A \)) de \( \mathbb{R}^n \) generado por las columnas de \( A \).</li>
+        </ol>
     </div>
 
-    <button type="submit">Enviar</button> 
-     <?php echo $verificar_2 ?>
-    <hr>
-
-
-
-  <h2>Vectores ortogonales</h2>
-  <p>
-    El concepto de perpendicularidad es fundamental para la geometría. 
-    En \(\mathbb{R}^2\) o \(\mathbb{R}^3\), dos vectores \(\mathbf{u}\) y \(\mathbf{v}\) distintos de cero 
-    son perpendiculares si el ángulo \(\theta\) entre ellos es un ángulo recto; 
-    esto es, si \(\theta = \pi/2\) radianes o 
-    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="5"> grados.  
-    Por tanto,
-  </p>
-
-  <p style="align-items: center; text-align:center; "> 
-
-    <span id="formula2">
-        \(  \cos\theta = \frac{\mathbf{u}\cdot\mathbf{v}}{\|\mathbf{u}\|\|\mathbf{v}\|} =   \)
-    </span> 
-   
-    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="8">
-
-    </p>
-
-    <p style="align-items: center; text-align:center; "> 
-
-    <span id="formula2">
-        \(  \quad \Rightarrow \quad \mathbf{u}\cdot \mathbf{v} = \)
-    </span> 
-   
-    <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="8">
-
-    </p>
-
-  
-  <p>
-    Esto motiva la siguiente definición:
-  </p>
-
-  <div class="math-block">
-    <div class="def-title">Definición</div>
-    Dos vectores \(\mathbf{u}\) y \(\mathbf{v}\) en \(\mathbb{R}^n\) son mutuamente 
-    <em>ortogonales</em> si 
-    <br><br>
-    <p style="align-items: center; text-align:center; "> 
-    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="8">
-    </p>
-  </div>
-
-  <p>
-    Dado que 
-    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="8">
-    \( = 0\) para todo vector \(\mathbf{v}\) en \(\mathbb{R}^n\), 
-    el vector cero es ortogonal a todo vector.
-  </p>
-
-  <p>
-    En \(\mathbb{R}^3\), si 
-    \(\mathbf{u} = [1,1,-2]\) y \(\mathbf{v} = [3,1,2]\), 
-    entonces son ortogonales, pues:
-    \[
-      \mathbf{u}\cdot \mathbf{v} = 1\cdot 3 + 1\cdot 1 + (-2)\cdot 2 = 3 + 1 - 4 = 0.
-    \]
-  </p>
-
-    <button type="submit">Enviar</button> 
-    <?php echo $verificar_3 ?>
-    <?php echo $verificar_4 ?>
-    <?php echo $verificar_5 ?>
-    <?php echo $verificar_6 ?>
-    <?php echo $verificar_7 ?>  
-
-    <hr>
-  <h2>Teorema de Pitágoras</h2>
-  <div class="math-block">
-    <div class="def-title">Teorema de Pitágoras</div>
-    <p>
-      Para todos los vectores \(\mathbf{u}\) y \(\mathbf{v}\) en \(\mathbb{R}^n\),
-    </p>
-
-     <p style="align-items: center; text-align:center; "> 
-
-    <span id="formula3">
-        \(    \)
-    </span> 
-   
-    <input type="text" name="respuesta_8" id="respuesta_8" oninput="actualizarFormula3()" 
-    value="<?php echo $respuesta_8?>" size="18" >
-
-    </p>
-
-    <button type="submit">Enviar</button> 
-    <?php echo $verificar_8 ?>
-    
-    <hr>
-  
-
-    <p>
-      si y sólo si \(\mathbf{u}\) y \(\mathbf{v}\) son ortogonales.
-    </p>
-  </div>
-
-    <img src="../../../img/guia_239.png" alt="">
-
+    <div class="example">
+        <h2>Ejemplo 3.41</h2>
+        <p>Considere la matriz</p>
+        <p>\( A = \begin{bmatrix} 1 & -1 \\ 0 & 1 \\ 3 & -3 \end{bmatrix} \)</p>
+        <ol>
+            <li>(a) Determine si \( \mathbf{b} = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix} \) está en el espacio columna de \( A \).</li>
+            <li>(b) Determine si \( \mathbf{w} = \begin{bmatrix} 4 \\ 5 \end{bmatrix} \) está en el espacio renglón de \( A \).</li>
+            <li>(c) Describa renglón(\( A \)) y col(\( A \)).</li>
+        </ol>
         
-<h2>Proyecciones</h2>
-
-<p>
-Ahora se considerará el problema de encontrar la distancia desde un punto hasta una recta en el contexto de los vectores.
-Como verá, esta técnica conduce a un importante concepto: la <strong>proyección de un vector sobre otro vector</strong>.
-</p>
+    </div>
 
 
-
-<p>
-El problema de encontrar la distancia desde un punto \( B \) hasta una recta \( \ell \) (en \( \mathbb{R}^2 \) o \( \mathbb{R}^3 \)) 
-se reduce a encontrar la longitud del segmento de recta perpendicular \( PB \) o, de manera equivalente, 
-la longitud del vector \( \overrightarrow{PB} \).
-Si se elige un punto \( A \) sobre \( \ell \), entonces, en el triángulo recto \( \triangle APB \), los otros dos vectores son 
-el cateto \( \overrightarrow{AP} \) y la hipotenusa \( \overrightarrow{AB} \).
-\( \overrightarrow{AP} \) se llama <strong>proyección de</strong> \( \overrightarrow{AB} \) <strong>sobre la recta</strong> \( \ell \).
-</p>
-
-
+       <p><strong>Solución</strong></p>
+        <p>(a) Por el Teorema 2.4 y el análisis que le precedió, \( \mathbf{b} \) es una combinación lineal de las columnas de \( A \) si y sólo si el sistema lineal \( A\mathbf{x} = \mathbf{b} \) es consistente. La matriz aumentada se reduce por renglones del modo siguiente:</p>
+        <p>\( \begin{bmatrix} 1 & -1 & | & 1 \\ 0 & 1 & | & 2 \\ 3 & -3 & | & 3 \end{bmatrix} \rightarrow \begin{bmatrix} 1 & 0 & | & 3 \\ 0 & 1 & | & 2 \\ 0 & 0 & | & 0 \end{bmatrix} \)</p>
+        <p>Por tanto, el sistema es consistente (y de hecho, tiene una solución única). Por tanto, \( \mathbf{b} \) está en col(\( A \)). (De hecho este ejemplo es el 2.18, parafraseado en la terminología de esta sección.)</p>
+      
 
 </div>
 
@@ -1786,214 +1713,168 @@ el cateto \( \overrightarrow{AP} \) y la hipotenusa \( \overrightarrow{AB} \).
 
 <div class="seccion derecha">
    
-
- 
-
- 
-<hr>
-
-<p>
-Considere dos vectores \( \mathbf{u} \) y \( \mathbf{v} \) distintos de cero. 
-Sea \( \mathbf{p} \) el vector que se obtiene al trazar una perpendicular desde la punta de \( \mathbf{v} \) sobre \( \mathbf{u} \), 
-y sea \( \theta \) el ángulo entre \( \mathbf{u} \) y \( \mathbf{v} \).
-</p>
-
-<p>
-Entonces, claramente 
-\[
-\mathbf{p} = \|\mathbf{p}\| \, \hat{\mathbf{u}},
-\]
-donde 
-\[
-\hat{\mathbf{u}} = \left(\frac{1}{\|\mathbf{u}\|}\right)\mathbf{u}
-\]
-es el vector unitario en la dirección de \( \mathbf{u} \).
-Por trigonometría, \( \|\mathbf{p}\| = \|\mathbf{v}\| \cos \theta \), 
-y como 
-\[
-\cos \theta = \frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\| \|\mathbf{v}\|},
-\]
-tenemos:
-</p>
-
-<p>
-\[
-\mathbf{p} = \|\mathbf{v}\| 
-\left( 
-\frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\| \|\mathbf{v}\|}
-\right)
-\left( 
-\frac{1}{\|\mathbf{u}\|}
-\right)
-\mathbf{u}
-\]
-</p>
-
-<p>
-Simplificando:
-\[
-\mathbf{p} 
-= 
-\left( 
-\frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\|^2}
-\right)\mathbf{u}
-=
-\left(
-\frac{\mathbf{u} \cdot \mathbf{v}}{\mathbf{u} \cdot \mathbf{u}}
-\right)\mathbf{u}
-\]
-</p>
-
-<p>
-Ésta es la fórmula que se quería, y es la base de la siguiente definición para vectores en \( \mathbb{R}^n \).
-</p>
-
-<div class="definicion">
-  <strong>Definición:</strong>  
-  Si \( \mathbf{u} \) y \( \mathbf{v} \) son vectores en \( \mathbb{R}^n \) y \( \mathbf{u} \neq \mathbf{0} \),  
-  entonces la <strong>proyección de</strong> \( \mathbf{v} \) <strong>sobre</strong> \( \mathbf{u} \)  
-  es el vector \( \mathrm{proj}_{\mathbf{u}}(\mathbf{v}) \) definido por:
-  <br><br>
-</div>
-
-   <p style="align-items: center; text-align:center; "> 
-
-    <span id="formula4">
-        \(    \)
-    </span> 
-   
-    <input type="text" name="respuesta_9" id="respuesta_9" oninput="actualizarFormula4()" 
-    value="<?php echo $respuesta_9?>" size="18" >
-
-    </p>
-
-  
-
-
-    <img src="../../../img/guia_240.png" alt="">
-
-    <div class="comment-section">
-        <div class="comment">
-            <p>El término <em>proyección</em> proviene de la idea de proyectar una imagen sobre un muro (con un proyector de diapositivas, por ejemplo). Imagine un haz de luz con rayos mutuamente paralelos y perpendiculares a <strong>u</strong> que brillan sobre <strong>v</strong>. La proyección de <strong>v</strong> sobre <strong>u</strong> es justo la sombra formada, o proyectada, por <strong>v</strong> sobre <strong>u</strong>.</p>
-        </div>
+     
+      <p>(b) Como también se vio en la sección 2.3, las operaciones elementales con renglones simplemente crean combinaciones lineales de los renglones de una matriz. Esto es, producen vectores solamente en el espacio renglón de la matriz. Si el vector \( \mathbf{w} \) está en renglón(\( A \)), entonces \( \mathbf{w} \) es una combinación lineal de los renglones de \( A \), de modo que si \( A \) se aumenta con \( \mathbf{w} \) como</p>
+        <p>\( \begin{bmatrix} A & | & \mathbf{w} \end{bmatrix} \), será posible aplicar operaciones elementales con renglones a esta matriz aumentada para reducirla a la forma \( \begin{bmatrix} A' & | & 0 \end{bmatrix} \) usando solamente operaciones elementales con renglones de la forma \( R_i + kR_j \), donde \( i > j \); en otras palabras, trabajar de arriba abajo en cada columna. (¿Por qué?)</p>
+        <p>En este ejemplo se tiene</p>
+        <p>\( \begin{bmatrix} A & | & \mathbf{w} \end{bmatrix} = \begin{bmatrix} 1 & -1 & | & 4 \\ 0 & 1 & | & 5 \\ 3 & -3 & | & 5 \end{bmatrix} \rightarrow \begin{bmatrix} 1 & -1 & | & 4 \\ 0 & 1 & | & 5 \\ 0 & 0 & | & -7 \end{bmatrix} \rightarrow \begin{bmatrix} 1 & -1 & | & 4 \\ 0 & 1 & | & 5 \\ 0 & 0 & | & 0 \end{bmatrix} \)</p>
+        <p>Por tanto, \( \mathbf{w} \) es una combinación lineal de los renglones de \( A \) (de hecho, estos cálculos muestran que \( \mathbf{w} = 4\begin{bmatrix} 1 & -1 \end{bmatrix} + 9\begin{bmatrix} 0 & 1 \end{bmatrix} \); ¿cómo?), y por tanto \( \mathbf{w} \) está en renglón(\( A \)).</p>
         
-        <div class="comment">
-            <p>Puede ser útil considerar a \(\text{proy}_{\mathbf{u}}(\mathbf{v})\) como una función con variable <strong>v</strong>. Entonces la variable <strong>v</strong> ocurre sólo una vez en el lado derecho de la definición. Además, es útil tener en mente la figura 1.38, que recuerda que \(\text{proy}_{\mathbf{u}}(\mathbf{v})\) es un múltiplo escalar del vector <strong>u</strong> (no de <strong>v</strong>).</p>
-        </div>
         
-        <div class="comment">
-            <p>Aunque en la deducción de la definición de \(\text{proy}_{\mathbf{u}}(\mathbf{v})\) se requirió que tanto <strong>v</strong> como <strong>u</strong> fuesen distintos de cero (¿por qué?), es claro a partir de la geometría que la proyección del vector cero sobre <strong>u</strong> es <strong>0</strong>. La definición está en concordancia con esto, pues:</p>
-            
-            <div class="math-formula">
-                \(\frac{\mathbf{u} \cdot \mathbf{0}}{\mathbf{u} \cdot \mathbf{u}} \mathbf{u} = 0\mathbf{u} = \mathbf{0}\)
-            </div>
-        </div>
-        
-        <div class="comment">
-            <p>Si el ángulo entre <strong>u</strong> y <strong>v</strong> es obtuso, como en la figura 1.38, entonces \(\text{proy}_{\mathbf{u}}(\mathbf{v})\) estará en la dirección opuesta de <strong>u</strong>; esto es, \(\text{proy}_{\mathbf{u}}(\mathbf{v})\) será un múltiplo escalar negativo de <strong>u</strong>.</p>
-        </div>
-        
-        <div class="comment">
-            <p>Si <strong>u</strong> es un vector unitario, entonces \(\text{proy}_{\mathbf{u}}(\mathbf{v}) = (\mathbf{u} \cdot \mathbf{v})\mathbf{u}\).</p>
-            <p class="note">(¿Por qué?)</p>
-            
-            <div class="highlight">
-                <p><strong>Explicación:</strong> Cuando <strong>u</strong> es un vector unitario, su magnitud es 1 (\(\|\mathbf{u}\| = 1\)). La fórmula general para la proyección es:</p>
-                <div class="math-formula">
-                    \(\text{proy}_{\mathbf{u}}(\mathbf{v}) = \frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\|^2} \mathbf{u}\)
-                </div>
-                <p>Como \(\|\mathbf{u}\| = 1\), entonces \(\|\mathbf{u}\|^2 = 1\), y la fórmula se simplifica a:</p>
-                <div class="math-formula">
-                    \(\text{proy}_{\mathbf{u}}(\mathbf{v}) = (\mathbf{u} \cdot \mathbf{v})\mathbf{u}\)
-                </div>
-            </div>
-        </div>
+        <p>(c) Es fácil comprobar que, para cualquier vector \( \mathbf{w} = \begin{bmatrix} x \\ y \end{bmatrix} \), la matriz aumentada \( \begin{bmatrix} A & | & \mathbf{w} \end{bmatrix} \) se reduce a</p>
+        <p>\( \begin{bmatrix} 1 & 0 & | & x + y \\ 0 & 1 & | & y \\ 0 & 0 & | & 0 \end{bmatrix} \)</p>
+        <p>en forma similar. Por tanto, todo vector en \( \mathbb{R}^2 \) está en renglón(\( A \)), y en consecuencia renglón(\( A \)) = \( \mathbb{R}^2 \).</p>
+        <p>Enconstrar col(\( A \)) es idéntico a resolver el ejemplo 2.21, en que se determinó que coincide con el plano (a través del origen) dado con ecuación \( 3x - z = 0 \). (Dentro de poco se descubrirán otras formas de responder este tipo de preguntas.)</p>
+
+        <hr>
+         <div class="definition">
+        <h2>Definición</h2>
+        <p>Sea \( A \) una matriz de \( m \times n \). El espacio nulo de \( A \) es el subespacio de \( \mathbb{R}^n \) que consiste de las soluciones del sistema lineal homogéneo \( A\mathbf{x} = 0 \). Se denota mediante null(\( A \)).</p>
+        <p>El hecho de que el espacio nulo de una matriz sea un subespacio permite probar lo que la intuición y los ejemplos condujeron a entender acerca de las soluciones de los sistemas lineales: no tienen solución, tienen una solución única o un número infinito de soluciones.</p>
     </div>
 
-    <img src="../../../img/guia_241.png" alt="">
+    <div class="theorem">
+        <h2>Teorema 3.20</h2>
+        <p>Sea \( B \) cualquier matriz que es equivalente por renglones a una matriz \( A \). Entonces renglón(\( B \)) = renglón(\( A \)).</p>
+        <p><strong>Demostración</strong></p>
+        <p>La matriz \( A \) puede transformarse en \( B \) mediante una secuencia de operaciones con renglones. En consecuencia, los renglones de \( B \) son combinaciones lineales de los renglones de \( A \); por tanto, las combinaciones lineales de los renglones de \( B \) son combinaciones lineales de los renglones de \( A \). (Vea el ejercicio 21 en la sección 2.3.) Se tiene que renglón(\( B \)) \( \subseteq \) renglón(\( A \)).</p>
+        <p>Por otra parte, invertir dichas operaciones con renglones transforman \( B \) en \( A \). Por tanto, el argumento anterior demuestra que renglón(\( A \)) \( \subseteq \) renglón(\( B \)). Combinando estos resultados renglón(\( A \)) = renglón(\( B \)).</p>
+    </div>
+
+    <div class="theorem">
+        <h2>Teorema 3.21</h2>
+        <p>Sea \( A \) una matriz de \( m \times n \) y sea \( N \) el conjunto de soluciones del sistema lineal homogéneo \( A\mathbf{x} = 0 \). Entonces \( N \) es un subespacio de \( \mathbb{R}^n \).</p>
+    </div>
+
+    <div class="theorem">
+        <h2>Teorema 3.22</h2>
+        <p>Sea \( A \) una matriz cuyas entradas son números reales. Para cualquier sistema de ecuaciones lineales \( A\mathbf{x} = \mathbf{b} \), exactamente uno de los siguientes es verdadero:</p>
+        <ol>
+            <li>No hay solución.</li>
+            <li>Hay una solución única.</li>
+            <li>Hay un número infinito de soluciones.</li>
+        </ol>
+    </div>
+
+<div class="section">
+        <h2>Bases</h2>
+        <p>Es posible extraer un poco más de la idea intuitiva de que los subespacios son generalizaciones de planos a través del origen en \( \mathbb{R}^n \). Un plano se genera mediante cualesquiera dos vectores que son paralelos al plano pero no son paralelos entre ellos. En lenguaje algebraico, dos de tales vectores generan el plano y son linealmente independientes. Menos de dos vectores no funcionarán; más de dos vectores no son necesarios. Esta es la esencia de una base para un subespacio.</p>
+    </div>
+
+    <div class="definition">
+        <h2>Definición</h2>
+        <p>Una base para un subespacio \( S \) de \( \mathbb{R}^n \) es un conjunto de vectores en \( S \) que</p>
+        <ol>
+            <li>genera \( S \),</li>
+            <li>es linealmente independiente.</li>
+        </ol>
+    </div>
+
+    <div class="example">
+        <h2>Ejemplo 3.42</h2>
+        <p>En la sección 2.3 se vio que los vectores unitarios estándar \( \mathbf{e}_1, \mathbf{e}_2, \ldots, \mathbf{e}_n \) en \( \mathbb{R}^n \) son linealmente independientes y generan \( \mathbb{R}^n \). Por tanto, forman una base para \( \mathbb{R}^n \), llamada base estándar.</p>
+    </div>
+
+    <div class="example">
+        <h2>Ejemplo 3.43</h2>
+        <p>En el ejemplo 2.19 se demostró que \( \mathbb{R}^2 \) = gen\( \left\{ \begin{bmatrix} 2 \\ -1 \end{bmatrix}, \begin{bmatrix} 1 \\ 3 \end{bmatrix} \right\} \). Dado que \( \begin{bmatrix} 2 \\ -1 \end{bmatrix} \) y \( \begin{bmatrix} 1 \\ 3 \end{bmatrix} \) también son linealmente independientes (ya que no son múltiplos), forman una base para \( \mathbb{R}^2 \).</p>
+        <p>Un subespacio puede tener (y tendrá) más de una base. Por ejemplo, recién se vio que \( \mathbb{R}^2 \) tiene la base estándar \( \left\{ \begin{bmatrix} 1 \\ 0 \end{bmatrix}, \begin{bmatrix} 0 \\ 1 \end{bmatrix} \right\} \) y la \( \left\{ \begin{bmatrix} 2 \\ -1 \end{bmatrix}, \begin{bmatrix} 1 \\ 3 \end{bmatrix} \right\} \). Sin embargo, dentro de poco se probará que el número de vectores en una base para un subespacio dado siempre será el mismo.</p>
+    </div>
 
     <hr>
 
-     <h1>1.3 Rectas y planos</h1>
-    
-    <div class="section">
-        <p>Todos están familiarizados con la ecuación de una recta en el plano cartesiano. Ahora se considerarán rectas en \( \mathbb{R}^2 \) desde un punto de vista vectorial. La comprensión que se obtenga a partir de este planteamiento permitirá generalizar a rectas en \( \mathbb{R}^3 \) y luego a planos en \( \mathbb{R}^3 \). Mucha del álgebra lineal que se considerará en capítulos posteriores tiene sus orígenes en la geometría simple de rectas y planos; la habilidad para visualizarlos y pensar geométricamente en torno a un problema le servirá bastante.</p>
-    </div>
-
-    <div class="section">
-        <h2>Rectas en \( \mathbb{R}^2 \) y \( \mathbb{R}^3 \)</h2>
-        
-        <p>En el plano xy, la forma general de la ecuación de una recta es \( ax + by = c \), si \( b \neq 0 \), entonces la ecuación puede reescribirse como \( y = -(a/b)x + c/b \), que tiene la forma \( y = mx + k \). [Ésta es la forma pendiente ordenada al origen; \( m \) es la pendiente de la recta y el punto con coordenadas \((0, k)\) es su ordenada al origen.] Para incluir los vectores en este estudio, considere un ejemplo.</p>
-    </div>
-
-
-
-
-    <button onmousedown="mostrarImagen()" onmouseup="ocultarImagen()">Explicacion pendiente</button>
-    <!-- Elemento para mostrar la imagen -->
-
-    <img id="imagenMostrada" src="../../../img/guia_242.png" style="display: none; max-width: 100%" width="560">
-
-    <script>
-        function mostrarImagen() {
-        var imagenMostrada2 = document.getElementById('imagenMostrada');
-
-        // Mostrar la imagen
-        imagenMostrada.style.display = 'block';
-        }
-
-        function ocultarImagen() {
-        var imagenMostrada = document.getElementById('imagenMostrada');
-
-        // Ocultar la imagen al soltar el botón
-        imagenMostrada.style.display = 'none';
-        }
-    </script>
-
-
-
-
-    <div class="example">
-        <div class="example-title">Ejemplo 1.26</div>
-        
-        <p>En la figura 1.53 se muestra la recta \(\ell\), con ecuación \( 2x + y = 0 \). Es una recta con pendiente \(-2\) que 
-            pasa por el origen. El lado izquierdo de la ecuación está en la forma de producto punto; de hecho, si 
-            \( \mathbf{n} = \begin{bmatrix} 2 \\ 1 \end{bmatrix} \) y \( \mathbf{x} = \begin{bmatrix} x \\ y \end{bmatrix} \), 
-            entonces la ecuación se convierte en 
-            <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="8">
-            .</p>
-        
-        <div class="definition">
-            <div class="definition-title">Vector Normal</div>
-            <p>El vector \( \mathbf{n} \) es perpendicular a la recta; esto es, es <em>ortogonal</em> a cualquier vector \( \mathbf{x} \) que sea paralelo a la recta (figura 1.54) y se le conoce como <span class="vector">vector normal</span> a la recta. La ecuación \( \mathbf{n} \cdot \mathbf{x} = 0 \) es la <em>forma normal</em> de la ecuación de \(\ell\).</p>
-        </div>
-        
-        <div class="math-formula">
-            \( \mathbf{n} \cdot \mathbf{x} = 0 \quad \Rightarrow \quad \begin{bmatrix} 2 \\ 1 \end{bmatrix} \cdot \begin{bmatrix} x \\ y \end{bmatrix} = 0 \quad \Rightarrow \quad 2x + y = 0 \)
-        </div>
-        
-        <img src="../../../img/guia_243.png" alt="">
-        <p>Otra forma de pensar esta recta es imaginar una partícula que se mueve a lo largo de la recta. Suponga que la partícula inicialmente está en el origen en el tiempo \( t = 0 \) y se mueve a lo largo de la recta en tal forma que su coordenada \( x \) cambia 1 unidad por segundo. Entonces:</p>
-        
-        <ul>
-            <li>En \( t = 1 \) la partícula está en \((1, -2)\)</li>
-            <li>En \( t = 1.5 \) está en \((1.5, -3)\)</li>
-            <li>En \( t = -2 \) está (o estuvo) en \((-2, 4)\)</li>
-        </ul>
-        
-        <p>Este movimiento se ilustra en la figura 1.55.</p>
-        
-        <div class="highlight">
-            <p><strong>Interpretación vectorial:</strong> Podemos describir esta recta paramétricamente usando vectores. Si consideramos la dirección de movimiento como el vector \( \mathbf{d} = \begin{bmatrix} 1 \\ -2 \end{bmatrix} \), entonces cualquier punto \( \mathbf{x} \) en la recta puede escribirse como:</p>
-            <div class="math-formula">
-                \( \mathbf{x} = t\mathbf{d} = t\begin{bmatrix} 1 \\ -2 \end{bmatrix} \)
-            </div>
-            <p>donde \( t \) es un parámetro real que representa el tiempo.</p>
-        </div>
-    </div>
-
    
 
+  <div class="section">
+    <h1><span class="bullet">🔹</span> ¿Qué es el <em>espacio renglón</em> de una matriz?</h1>
+
+    <p>
+      El <strong>espacio renglón</strong> (también llamado <em>espacio fila</em>) de una matriz \( A \)
+      es el subespacio de \( \mathbb{R}^n \) (o del campo correspondiente) generado por los renglones de \( A \).
+    </p>
+
+    <p>En otras palabras:</p>
+    \[
+      \text{renglón}(A) = \text{span}\{\text{las filas de } A\}
+    \]
+
+    <p>
+      Es decir, el espacio renglón contiene todas las combinaciones lineales posibles de las filas de \( A \).
+    </p>
+  </div>
+
+  <div class="section">
+    <h2><span class="bullet">🔹</span> ¿Qué significa “encontrar una base para el espacio renglón”?</h2>
+
+    <p>
+      Una <strong>base</strong> para el espacio renglón es un conjunto mínimo de filas linealmente independientes de \( A \)
+      que generan el mismo espacio renglón.
+    </p>
+
+    <p>Dicho de otra forma:</p>
+    <ul>
+      <li>Si tomas esas filas y haces combinaciones lineales de ellas, puedes obtener todas las filas de \( A \).</li>
+      <li>Ninguna de esas filas base se puede obtener como combinación lineal de las otras (son independientes).</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2><span class="bullet">🔹</span> ¿Cómo se encuentra?</h2>
+
+    <p>La estrategia usada en el ejemplo es esta:</p>
+
+    <ol>
+      <li>Se toma la matriz \( A \):</li>
+    </ol>
+
+    \[
+    A =
+    \begin{bmatrix}
+    1 & 1 & 3 & 1 & 6 \\
+    2 & -1 & 0 & 1 & -1 \\
+    -3 & 2 & 1 & -1 & 4 \\
+    4 & 1 & 6 & 1 & 3
+    \end{bmatrix}
+    \]
+
+    <ol start="2">
+      <li>Se lleva a forma escalonada reducida por renglones (RREF):</li>
+    </ol>
+
+    \[
+    R =
+    \begin{bmatrix}
+    1 & 0 & 1 & 0 & -1 \\
+    0 & 1 & 2 & 0 & 3 \\
+    0 & 0 & 0 & 1 & 4 \\
+    0 & 0 & 0 & 0 & 0
+    \end{bmatrix}
+    \]
+
+    <ol start="3">
+      <li>Se toma el conjunto de renglones no nulos de \( R \), ya que:</li>
+    </ol>
+
+    <ul>
+      <li>Son linealmente independientes (por la forma escalonada).</li>
+      <li>Generan el mismo espacio renglón que \( A \).</li>
+    </ul>
+
+    <p>Por eso, la base del espacio renglón de \( A \) es:</p>
+
+    \[
+    \left\{
+      (1, 0, 1, 0, -1),\;
+      (0, 1, 2, 0, 3),\;
+      (0, 0, 0, 1, 4)
+    \right\}
+    \]
+
+    <p class="note">
+      Intuitivamente, cada fila es un vector en \( \mathbb{R}^5 \).  
+      Aquí hay tres filas linealmente independientes, por lo tanto el espacio renglón es un subespacio tridimensional de \( \mathbb{R}^5 \).
+    </p>
+  </div>
 
 </div>
 </div>
@@ -2003,7 +1884,7 @@ Simplificando:
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="tercero.php"
+        href="trece.php"
         role="button"
         width="50px"
         height="50px"

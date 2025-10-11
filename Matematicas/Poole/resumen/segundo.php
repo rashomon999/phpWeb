@@ -169,7 +169,7 @@ if ($_POST) {
 
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '||u-v||') {  
+   if ($respuesta_1 === '26') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -179,9 +179,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === '\frac{u*v}{||u||*||v||}'
-   || $respuesta_2 === '\frac{uv}{||u||||v||}'
-   ) {  
+   if ($respuesta_2 === '39') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -191,7 +189,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === '90') {  
+   if ($respuesta_3 === '52') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -201,7 +199,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === 'Cos90') {  
+   if ($respuesta_4 === '65') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -211,7 +209,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === '0') {  
+   if ($respuesta_5 === '78') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -221,9 +219,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === 'v*u=0'
-   || $respuesta_6 === 'u*v=0'
-   ) {  
+   if ($respuesta_6 === '91') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -233,9 +229,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === '0*V'
-   || $respuesta_7 === '0*v'
-   ) {  
+   if ($respuesta_7 === '104') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -245,7 +239,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === '||u+v||^2=||u||^2+||v||^2') {  
+   if ($respuesta_8 === '117') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -255,7 +249,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === 'proj_u(v)=(\frac{u*V}{u*u})') {  
+   if ($respuesta_9 === '130') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -265,7 +259,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === 'n*x=0') {  
+   if ($respuesta_10 === '143') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -1378,7 +1372,7 @@ function actualizarFormula() {
 
 function actualizarFormula2() {
     var f = document.getElementById('respuesta_2').value || "";
-    var formula = ` \\ \\cos\\theta \=\ ${f} \\, `;
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula2').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
         MathJax.typeset();
@@ -1386,7 +1380,7 @@ function actualizarFormula2() {
 }
 
 function actualizarFormula3() {
-    var f = document.getElementById('respuesta_8').value || "";
+    var f = document.getElementById('respuesta_3').value || "";
     var formula = ` \\ ${f} \\, `;
     document.getElementById('formula3').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
@@ -1395,7 +1389,7 @@ function actualizarFormula3() {
 }
 
 function actualizarFormula4() {
-    var f = document.getElementById('respuesta_9').value || "";
+    var f = document.getElementById('respuesta_4').value || "";
     var formula = ` \\ ${f} \\, `;
     document.getElementById('formula4').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
@@ -1604,58 +1598,153 @@ function ocultarMensaje4() {
     
 <div class="seccion izquierda"> 
 
-    
-  <div class="math-block" style="border-left-color:#7fc7f0;">
-    <div class="def-title">Definición</div>
+     <h1>Distancia</h1>
+
+  <p class="lead">
+    La distancia entre dos vectores es el análogo directo de la distancia entre dos puntos en la recta numérica real o entre dos puntos en el plano cartesiano. Sobre la recta numérica, la distancia entre los números <em>a</em> y <em>b</em> está dada por \( |a-b| \). (Tomar el valor absoluto garantiza que no es necesario conocer cuál de <em>a</em> o <em>b</em> es mayor.) Esta distancia también es igual a \( \sqrt{(a-b)^2} \), y su generalización bidimensional es la familiar fórmula para la distancia <em>d</em> entre los puntos \((a_1,a_2)\) y \((b_1,b_2)\), a saber,
+  </p>
+
+  <div class="math-block">
+    \[
+      d \;=\; \sqrt{(a_1-b_1)^2 + (a_2-b_2)^2}.
+    \]
+  </div>
+
+  <p>
+    En términos de vectores, si
+  </p>
+
+  <div class="vector-line">
     <div>
-    La <em>distancia</em> \(d(\mathbf{u},\mathbf{v})\) entre los vectores \(\mathbf{u}\) y \(\mathbf{v}\) en \(\mathbb{R}^n\) se define por
-    
-    <br><br>
-    <p style="align-items: center; text-align:center; "> 
-
-    <span id="formula">
-        \( d(\mathbf{u},\mathbf{v}) \;=\;  \)
-    </span> 
-   
-    <input type="text" name="respuesta_1" id="respuesta_1" oninput="actualizarFormula()" 
-    value="<?php echo $respuesta_1?>" size="15" >
-
-    </p>
-
-
-      
+      \[
+        \mathbf{a} \;=\; \begin{bmatrix} a_1 \\[4pt] a_2 \end{bmatrix}
+      \]
+    </div>
+    <div>
+      \[
+        \mathbf{b} \;=\; \begin{bmatrix} b_1 \\[4pt] b_2 \end{bmatrix}
+      \]
     </div>
   </div>
 
-    <button type="submit">Enviar</button> 
-    <?php echo $verificar_1 ?>
- 
-    <hr>
+  <p>
+    entonces <em>d</em> es justo la longitud de \(\mathbf{a}-\mathbf{b}\), como se muestra en la figura. Esta es la base para la siguiente definición.
+  </p>
 
+  <img src="../../../img/guia_238.png" alt="">
+  <div class="figure">
+    <div class="caption"><strong>Figura 1.31</strong></div>
     <div class="math-block">
+      \[
+        d \;=\; \sqrt{(a_1-b_1)^2 + (a_2-b_2)^2} \;=\; \|\mathbf{a}-\mathbf{b}\|.
+      \]
+    </div>
+  </div>
+
+  <div class="math-block" style="border-left-color:#7fc7f0;">
+    <div class="def-title">Definición</div>
+    <div>
+      La <em>distancia</em> \(d(\mathbf{u},\mathbf{v})\) entre los vectores \(\mathbf{u}\) y \(\mathbf{v}\) en \(\mathbb{R}^n\) se define por
+      \[
+        d(\mathbf{u},\mathbf{v}) \;=\; \|\mathbf{u}-\mathbf{v}\|.
+      \]
+    </div>
+  </div>
+
+
+
+
+  <hr>
+
+        
+  <div class="exercise">
+    <div class="title">Ejemplo</div>
+
+    <p>
+      Encuentre la distancia entre
+      \[
+        \mathbf{u}=\begin{bmatrix}\sqrt{2}\\[4pt]1\\[4pt]-1\end{bmatrix}
+        \quad\text{y}\quad
+        \mathbf{v}=\begin{bmatrix}0\\[4pt]2\\[4pt]-2\end{bmatrix}.
+      \]
+    </p>
+
+    <div class="solution">
+      <strong>Solución.</strong> Primero calculemos
+      \[
+        \mathbf{u}-\mathbf{v}
+        \;=\;
+        \begin{bmatrix}\sqrt{2}\\[4pt]1\\[4pt]-1\end{bmatrix}
+        -
+        \begin{bmatrix}0\\[4pt]2\\[4pt]-2\end{bmatrix}
+        =
+        \begin{bmatrix}\sqrt{2}-0\\[4pt]1-2\\[4pt]-1-(-2)\end{bmatrix}
+        =
+        \begin{bmatrix}\sqrt{2}\\[4pt]-1\\[4pt]1\end{bmatrix}.
+      \]
+      Por tanto la distancia es la norma de \(\mathbf{u}-\mathbf{v}\):
+      \[
+        d(\mathbf{u},\mathbf{v})=\|\mathbf{u}-\mathbf{v}\|
+        =\sqrt{(\sqrt{2})^2+(-1)^2+1^2}
+        =\sqrt{2+1+1}
+        =\sqrt{4}=2.
+      \]
+    </div>
+  </div>
+
+        <hr>
+
+         <div class="math-block">
     <div class="def-title">Definición</div>
     <p>
       Para vectores \(\mathbf{u}\) y \(\mathbf{v}\) distintos de cero en \(\mathbb{R}^n\),
     </p>
+    <div>
+      \[
+        \cos\theta \;=\; \frac{\mathbf{u}\cdot\mathbf{v}}{\|\mathbf{u}\|\;\|\mathbf{v}\|}.
+      \]
+    </div>
+  </div>
+  <hr>
 
-    <p style="align-items: center; text-align:center; "> 
 
-    <span id="formula2">
-        \(  \cos\theta \;=\;  \)
-    </span> 
-   
-    <input type="text" name="respuesta_2" id="respuesta_2" oninput="actualizarFormula2()" 
-    value="<?php echo $respuesta_2?>" size="15" >
-
+  <div class="example">
+    <div class="title">Ejemplo 1.21</div>
+    <p>
+      Calcule el ángulo entre los vectores 
+      \[
+        \mathbf{u} = [2,\,1,\,-2] 
+        \quad \text{y} \quad 
+        \mathbf{v} = [1,\,1,\,1].
+      \]
     </p>
 
-     
+    <div class="solution">
+      <strong>Solución.</strong>  
+      Se tiene:
+      \[
+        \mathbf{u}\cdot \mathbf{v} = 2\cdot 1 + 1\cdot 1 + (-2)\cdot 1 = 1.
+      \]
+      Además,
+      \[
+        \|\mathbf{u}\| = \sqrt{2^2 + 1^2 + (-2)^2} = \sqrt{9} = 3,
+        \quad
+        \|\mathbf{v}\| = \sqrt{1^2 + 1^2 + 1^2} = \sqrt{3}.
+      \]
+      Por tanto,
+      \[
+        \cos\theta = \frac{1}{3\sqrt{3}}.
+      \]
+      Así,
+      \[
+        \theta = \cos^{-1}\!\left(\tfrac{1}{3\sqrt{3}}\right)
+        \;\approx\; 1.377 \text{ radianes} 
+        \;\approx\; 78.9^\circ.
+      \]
     </div>
+  </div>
 
-    <button type="submit">Enviar</button> 
-     <?php echo $verificar_2 ?>
     <hr>
-
 
 
   <h2>Vectores ortogonales</h2>
@@ -1663,32 +1752,15 @@ function ocultarMensaje4() {
     El concepto de perpendicularidad es fundamental para la geometría. 
     En \(\mathbb{R}^2\) o \(\mathbb{R}^3\), dos vectores \(\mathbf{u}\) y \(\mathbf{v}\) distintos de cero 
     son perpendiculares si el ángulo \(\theta\) entre ellos es un ángulo recto; 
-    esto es, si \(\theta = \pi/2\) radianes o 
-    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="5"> grados.  
+    esto es, si \(\theta = \pi/2\) radianes o \(90^\circ\).  
     Por tanto,
   </p>
-
-  <p style="align-items: center; text-align:center; "> 
-
-    <span id="formula2">
-        \(  \cos\theta = \frac{\mathbf{u}\cdot\mathbf{v}}{\|\mathbf{u}\|\|\mathbf{v}\|} =   \)
-    </span> 
-   
-    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="8">
-
-    </p>
-
-    <p style="align-items: center; text-align:center; "> 
-
-    <span id="formula2">
-        \(  \quad \Rightarrow \quad \mathbf{u}\cdot \mathbf{v} = \)
-    </span> 
-   
-    <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="8">
-
-    </p>
-
-  
+  <p>
+    \[
+      \cos\theta = \frac{\mathbf{u}\cdot\mathbf{v}}{\|\mathbf{u}\|\|\mathbf{v}\|} = \cos 90^\circ = 0
+      \quad \Rightarrow \quad \mathbf{u}\cdot \mathbf{v} = 0.
+    \]
+  </p>
   <p>
     Esto motiva la siguiente definición:
   </p>
@@ -1697,16 +1769,13 @@ function ocultarMensaje4() {
     <div class="def-title">Definición</div>
     Dos vectores \(\mathbf{u}\) y \(\mathbf{v}\) en \(\mathbb{R}^n\) son mutuamente 
     <em>ortogonales</em> si 
-    <br><br>
-    <p style="align-items: center; text-align:center; "> 
-    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="8">
-    </p>
+    \[
+      \mathbf{u}\cdot \mathbf{v} = 0.
+    \]
   </div>
 
   <p>
-    Dado que 
-    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="8">
-    \( = 0\) para todo vector \(\mathbf{v}\) en \(\mathbb{R}^n\), 
+    Dado que \(\mathbf{0}\cdot \mathbf{v} = 0\) para todo vector \(\mathbf{v}\) en \(\mathbb{R}^n\), 
     el vector cero es ortogonal a todo vector.
   </p>
 
@@ -1719,38 +1788,17 @@ function ocultarMensaje4() {
     \]
   </p>
 
-    <button type="submit">Enviar</button> 
-    <?php echo $verificar_3 ?>
-    <?php echo $verificar_4 ?>
-    <?php echo $verificar_5 ?>
-    <?php echo $verificar_6 ?>
-    <?php echo $verificar_7 ?>  
-
-    <hr>
   <h2>Teorema de Pitágoras</h2>
   <div class="math-block">
     <div class="def-title">Teorema de Pitágoras</div>
     <p>
       Para todos los vectores \(\mathbf{u}\) y \(\mathbf{v}\) en \(\mathbb{R}^n\),
     </p>
-
-     <p style="align-items: center; text-align:center; "> 
-
-    <span id="formula3">
-        \(    \)
-    </span> 
-   
-    <input type="text" name="respuesta_8" id="respuesta_8" oninput="actualizarFormula3()" 
-    value="<?php echo $respuesta_8?>" size="18" >
-
+    <p>
+      \[
+        \|\mathbf{u} + \mathbf{v}\|^2 = \|\mathbf{u}\|^2 + \|\mathbf{v}\|^2
+      \]
     </p>
-
-    <button type="submit">Enviar</button> 
-    <?php echo $verificar_8 ?>
-    
-    <hr>
-  
-
     <p>
       si y sólo si \(\mathbf{u}\) y \(\mathbf{v}\) son ortogonales.
     </p>
@@ -1854,20 +1902,15 @@ Simplificando:
   entonces la <strong>proyección de</strong> \( \mathbf{v} \) <strong>sobre</strong> \( \mathbf{u} \)  
   es el vector \( \mathrm{proj}_{\mathbf{u}}(\mathbf{v}) \) definido por:
   <br><br>
+  \[
+  \mathrm{proj}_{\mathbf{u}}(\mathbf{v}) 
+  = 
+  \left(
+  \frac{\mathbf{u} \cdot \mathbf{v}}{\mathbf{u} \cdot \mathbf{u}}
+  \right)\mathbf{u}
+  \]
 </div>
 
-   <p style="align-items: center; text-align:center; "> 
-
-    <span id="formula4">
-        \(    \)
-    </span> 
-   
-    <input type="text" name="respuesta_9" id="respuesta_9" oninput="actualizarFormula4()" 
-    value="<?php echo $respuesta_9?>" size="18" >
-
-    </p>
-
-  
 
 
     <img src="../../../img/guia_240.png" alt="">
@@ -1956,12 +1999,7 @@ Simplificando:
     <div class="example">
         <div class="example-title">Ejemplo 1.26</div>
         
-        <p>En la figura 1.53 se muestra la recta \(\ell\), con ecuación \( 2x + y = 0 \). Es una recta con pendiente \(-2\) que 
-            pasa por el origen. El lado izquierdo de la ecuación está en la forma de producto punto; de hecho, si 
-            \( \mathbf{n} = \begin{bmatrix} 2 \\ 1 \end{bmatrix} \) y \( \mathbf{x} = \begin{bmatrix} x \\ y \end{bmatrix} \), 
-            entonces la ecuación se convierte en 
-            <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="8">
-            .</p>
+        <p>En la figura 1.53 se muestra la recta \(\ell\), con ecuación \( 2x + y = 0 \). Es una recta con pendiente \(-2\) que pasa por el origen. El lado izquierdo de la ecuación está en la forma de producto punto; de hecho, si \( \mathbf{n} = \begin{bmatrix} 2 \\ 1 \end{bmatrix} \) y \( \mathbf{x} = \begin{bmatrix} x \\ y \end{bmatrix} \), entonces la ecuación se convierte en \( \mathbf{n} \cdot \mathbf{x} = 0 \).</p>
         
         <div class="definition">
             <div class="definition-title">Vector Normal</div>

@@ -169,7 +169,7 @@ if ($_POST) {
 
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '26') {  
+   if ($respuesta_1 === 'segmento') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -179,7 +179,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === '39') {  
+   if ($respuesta_2 === 'dirigido') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -189,7 +189,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === '52') {  
+   if ($respuesta_3 === 'desplazamiento') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -199,7 +199,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === '65') {  
+   if ($respuesta_4 === 'longitud') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -209,7 +209,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === '78') {  
+   if ($respuesta_5 === 'direccion') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -219,7 +219,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === '91') {  
+   if ($respuesta_6 === 'conjunto') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -229,7 +229,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === '104') {  
+   if ($respuesta_7 === 'ordenadas') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -239,7 +239,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === '117') {  
+   if ($respuesta_8 === 'renglon') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -249,7 +249,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === '130') {  
+   if ($respuesta_9 === 'columna') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -259,7 +259,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === '143') {  
+   if ($respuesta_10 === 'combinacion lineal') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -269,7 +269,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === '156') {  
+   if ($respuesta_11 === 'numero') {  
        $verificar_11 = "correcto";
    } elseif ($respuesta_11 === '') {
        $verificar_11 = '';
@@ -280,7 +280,7 @@ if ($_POST) {
 
     // Verificar la respuesta de la primera pregunta
     $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-    if ($respuesta_12 === '28') {  
+    if ($respuesta_12 === 'numero') {  
         $verificar_12 = "correcto";
     } elseif ($respuesta_12 === '') {
         $verificar_12 = '';
@@ -290,7 +290,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la segunda pregunta
     $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-    if ($respuesta_13 === '42') { 
+    if ($respuesta_13 === 'vector') { 
         $verificar_13 = "correcto";
     } elseif ($respuesta_13 === '') {
         $verificar_13 = '';
@@ -300,7 +300,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la tercera pregunta
     $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-    if ($respuesta_14 === '56') {  
+    if ($respuesta_14 === 'norma') {  
         $verificar_14 = "correcto";
     } elseif ($respuesta_14 === '') {
         $verificar_14 = '';
@@ -310,7 +310,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la cuarta pregunta
     $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-    if ($respuesta_15 === '70') { 
+    if ($respuesta_15 === 'c1v1') { 
         $verificar_15 = "correcto";
     } elseif ($respuesta_15 === '') {
         $verificar_15 = '';
@@ -320,7 +320,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la quinta pregunta
     $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-    if ($respuesta_16 === '84') {  
+    if ($respuesta_16 === 'c2v2') {  
         $verificar_16 = "correcto";
     } elseif ($respuesta_16 === '') {
         $verificar_16 = '';
@@ -330,7 +330,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la sexta pregunta
     $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-    if ($respuesta_17 === '98') {  
+    if ($respuesta_17 === 'ckvk') {  
         $verificar_17 = "correcto";
         } elseif ($respuesta_17 === '') {
         $verificar_17 = '';
@@ -340,7 +340,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la séptima pregunta
     $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-    if ($respuesta_18 === '112') {  
+    if ($respuesta_18 === 'normalizar') {  
         $verificar_18 = "correcto";
     } elseif ($respuesta_18 === '') {
         $verificar_18 = '';
@@ -348,19 +348,25 @@ if ($_POST) {
         $verificar_18 = "incorrecto";
     }
   
-    // Verificar la respuesta de la octava pregunta
-    $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-    if ($respuesta_19 === '126') {  
-        $verificar_19 = "correcto";
-    } elseif ($respuesta_19 === '') {
-        $verificar_19 = '';
-    } else {
-        $verificar_19 = "incorrecto";
-    }
+ // Verificar la respuesta de la octava pregunta
+$respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
+
+// Eliminar espacios al inicio, final y también entre caracteres
+$respuesta_19 = str_replace(' ', '', trim($respuesta_19));
+
+if ($respuesta_19 === '|\mathbf{u}\cdot\mathbf{v}|\leq\|\mathbf{u}\|\|\mathbf{v}'
+    || $respuesta_19 === '|u\cdotv|\leq||u||||v||'
+) {  
+    $verificar_19 = "correcto";
+} elseif ($respuesta_19 === '') {
+    $verificar_19 = '';
+} else {
+    $verificar_19 = "incorrecto";
+}
   
     // Verificar la respuesta de la novena pregunta
     $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
-    if ($respuesta_20 === '140') {  
+    if ($respuesta_20 === '|u+v|\leq||u||+||v||') {  
         $verificar_20 = "correcto";
     } elseif ($respuesta_20 === '') {
         $verificar_20 = '';
@@ -1362,7 +1368,7 @@ function handleSubmit(event) {
 }
 
 function actualizarFormula() {
-    var f = document.getElementById('respuesta_1').value || "";
+    var f = document.getElementById('respuesta_19').value || "";
     var formula = ` \\ ${f} \\, `;
     document.getElementById('formula').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
@@ -1371,7 +1377,7 @@ function actualizarFormula() {
 }
 
 function actualizarFormula2() {
-    var f = document.getElementById('respuesta_2').value || "";
+    var f = document.getElementById('respuesta_20').value || "";
     var formula = ` \\ ${f} \\, `;
     document.getElementById('formula2').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
@@ -1600,11 +1606,20 @@ function ocultarMensaje4() {
 
     <p>
     Un vector es un
-    segmento de recta dirigido que corresponde a un desplazamiento desde un punto A hasta
+    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="8">
+      de recta 
+    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="8">
+      que corresponde a un 
+    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="8">
+      desde un punto A hasta
     otro punto B;
     </p>
     
-    <p>Dos vectores se definen como iguales si tienen la misma longitud y la misma dirección.</p>
+    <p>Dos vectores se definen como iguales si tienen la misma 
+    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="8">    
+      y la misma 
+    <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="8">
+     .</p>
    
     <hr>
  
@@ -1612,7 +1627,16 @@ function ocultarMensaje4() {
 
  
     <p>
-    En general, \(\mathbb{R}^n\) se define como el conjunto de todas las <em>n</em>-adas ordenadas de números reales escritas como vectores renglón o columna.
+    En general, \(\mathbb{R}^n\) se define como el 
+    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="8">
+      de todas las <em>n</em>-adas 
+    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="8">
+      de números reales 
+    escritas como vectores 
+    <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="8">
+      o 
+    <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="8">
+     .
     Por ende, un vector \(v\) en \(\mathbb{R}^n\) es de la forma
     </p>
 
@@ -1638,22 +1662,27 @@ function ocultarMensaje4() {
     <h1>Combinaciones lineales y coordenadas</h1>
 
 
-<p>
-  Se dice que un vector que sea una suma de múltiplos escalares de otros vectores es una 
-  <em>combinación lineal</em> de dichos vectores. A continuación se presenta la definición formal.
-</p>
+    <p>
+    Se dice que un vector que sea una suma de múltiplos escalares de otros vectores es una 
+    <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="15"> 
+     de dichos vectores. A continuación se presenta la definición formal.
+    </p>
 
 <div class="definicion">
   <p><strong>Definición</strong> &nbsp; Un vector \(v\) es una <em>combinación lineal</em> de vectores 
   \(v_1, v_2, \ldots, v_k\) si existen escalares \(c_1, c_2, \ldots, c_k\) tales que</p>
 
-  \[
-    v = c_1 v_1 + c_2 v_2 + \cdots + c_k v_k
-  \]
+    <p style="text-align: center;">
+    v = <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="8">
+    + <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="8"> +
+    \( \cdots \) + <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="8">
+    </p>
 
-  <p>
-    Los escalares \(c_1, c_2, \ldots, c_k\) se llaman <em>coeficientes</em> de la combinación lineal.
-  </p>
+    <p>
+ Los escalares \(c_1, c_2, \ldots, c_k\) se llaman <em>coeficientes</em> de la combinación lineal.
+    </p>
+    
+   
 </div>
 
 <div class="ejemplo">
@@ -1680,56 +1709,7 @@ function ocultarMensaje4() {
   \]
 </div>
 
-    <hr>
-    
-    <h1>Redefinición de ejes con vectores</h1>
-
-    <p>
-    Sean 
-    \[
-    u = \begin{bmatrix} 3 \\ 1 \end{bmatrix}, \quad 
-    v = \begin{bmatrix} 1 \\ 2 \end{bmatrix}.
-    \]
-    Puede usar \(u\) y \(v\) para ubicar un nuevo conjunto de ejes (en la misma forma que
-    \[
-    e_1 = \begin{bmatrix} 1 \\ 0 \end{bmatrix}, \quad 
-    e_2 = \begin{bmatrix} 0 \\ 1 \end{bmatrix}
-    \]
-    ubican los ejes coordenados estándar).
-    </p>
-
-    <p>
-    Puede usar estos nuevos ejes para determinar una <em>cuadrícula coordenada</em> que permitirá ubicar fácilmente combinaciones lineales de \(u\) y \(v\).
-    </p>
-
-    <p>
-    Como muestra la figura, \(w\) puede ubicarse comenzando en el origen y avanzar \(-u\) seguido por \(2v\). Esto es,
-    </p>
-
-    <p>
-    \[
-    w = -u + 2v
-    \]
-    </p>
-
-    <p>
-    Se dice que las coordenadas de \(w\) con respecto a \(u\) y \(v\) son \(-1\) y \(2\). (Note que esta es sólo otra forma de pensar en los coeficientes de la combinación lineal).
-    </p>
-
-    <div class="ejemplo">
-    \[
-    w = -\begin{bmatrix} 3 \\ 1 \end{bmatrix}
-        + 2\begin{bmatrix} 1 \\ 2 \end{bmatrix}
-        = \begin{bmatrix} -1 \\ 3 \end{bmatrix}
-    \]
-    </div>
-
-    <p>
-    Observe que \(-1\) y \(3\) son las coordenadas de \(w\) con respecto a \(e_1\) y \(e_2\).
-    </p>
- 
-
-    <img src="../../../img/guia_234.png" alt="">
+  
 
     <hr>
 
@@ -1738,7 +1718,8 @@ function ocultarMensaje4() {
 
  
 <p>
-  Las versiones vectoriales de longitud, distancia y ángulo pueden describirse usando la noción de <em>producto punto</em> de dos vectores.
+  Las versiones vectoriales de longitud, distancia y ángulo pueden describirse usando la noción de <em>producto punto</em> 
+  de dos vectores.
 </p>
 
 <div class="definicion">
@@ -1763,8 +1744,14 @@ function ocultarMensaje4() {
 </p>
 
 <ul>
-  <li>Primero, \(u\) y \(v\) deben tener el mismo número de componentes.</li>
-  <li>Segundo, el producto punto \(u \cdot v\) es un <em>número</em>, no otro vector.</li>
+  <li>Primero, \(u\) y \(v\) deben tener el mismo 
+  <input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="8">   
+    de componentes.</li>
+  <li>Segundo, el producto punto \(u \cdot v\) es un 
+  <input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="8">   
+   , no otro 
+   <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="8"> 
+    .</li>
 </ul>
 
 <p>
@@ -1802,7 +1789,9 @@ function ocultarMensaje4() {
 
     <div class="definicion">
     <p>
-    <strong>Definición</strong> &nbsp; La <em>longitud</em> (o <em>norma</em>) de un vector
+    <strong>Definición</strong> &nbsp; La <em>longitud</em> (o
+    <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="8"> 
+    ) de un vector
     \[
       v = \begin{bmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{bmatrix} \in \mathbb{R}^n
     \]
@@ -1839,7 +1828,7 @@ function ocultarMensaje4() {
 
     <hr>
 
-    <h2>Normalización</h2> <p> Un vector de longitud 1 se llama <b>vector unitario</b>. En \( \mathbb{R}^2 \), el conjunto 
+    <p> Un vector de longitud 1 se llama <b>vector unitario</b>. En \( \mathbb{R}^2 \), el conjunto 
     de todos los vectores unitarios puede identificarse con el <b>círculo unitario</b>, que es el círculo de radio 1 con 
     centro en el origen. </p> <p> Dado cualquier vector \( \mathbf{v} \) distinto de cero, siempre es posible encontrar un 
     vector unitario en la misma dirección que \( \mathbf{v} \) al dividirlo por su propia longitud (o, de manera 
@@ -1854,7 +1843,9 @@ function ocultarMensaje4() {
     misma dirección que \( \mathbf{v} \), ya que \( \tfrac{1}{\|\mathbf{v}\|} \) es un escalar positivo. </p> 
     
     <p> 
-    <b>Definición:</b> Encontrar un vector unitario en la misma dirección que un vector se llama <b>normalizar un vector</b>. 
+    <b>Definición:</b> Encontrar un vector unitario en la misma dirección que un vector se llama <b>
+    <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="8">    
+      un vector</b>. 
     </p>
 
 
@@ -1869,7 +1860,37 @@ function ocultarMensaje4() {
 
     <hr>
 
-    <h2>La desigualdad de Cauchy-Schwarz</h2> <p> Para todos los vectores \( \mathbf{u}, \mathbf{v} \in \mathbb{R}^n \), </p> <p style="text-align:center;"> \[ |\mathbf{u} \cdot \mathbf{v}| \leq \|\mathbf{u}\| \|\mathbf{v}\| \] </p> <p> En \( \mathbb{R}^2 \) o \( \mathbb{R}^3 \), donde se puede usar geometría, es claro a partir de un diagrama que \(\|\mathbf{u} + \mathbf{v}\|\) ≤ \(\|\mathbf{u}\| + \|\mathbf{v}\|\) para todos los vectores \( \mathbf{u}, \mathbf{v} \). Más adelante se demuestra que esto es verdadero en general. </p> <h2>La desigualdad del triángulo</h2> <p> Para todos los vectores \( \mathbf{u}, \mathbf{v} \in \mathbb{R}^n \), </p> <p style="text-align:center;"> \[ \|\mathbf{u} + \mathbf{v}\| \leq \|\mathbf{u}\| + \|\mathbf{v}\| \] </p>
+    <h2>La desigualdad de Cauchy-Schwarz</h2> <p> Para todos los vectores \( \mathbf{u}, \mathbf{v} \in \mathbb{R}^n \), 
+
+   
+    
+
+    
+    <span id="formula">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_19" id="respuesta_19" oninput="actualizarFormula()" 
+    value="<?php echo $respuesta_19?>" size="15" >
+  
+
+
+
+    <p> En \( \mathbb{R}^2 \) o \( \mathbb{R}^3 \), donde se puede usar geometría, es claro a partir de un diagrama 
+        que \(\|\mathbf{u} + \mathbf{v}\|\) ≤ \(\|\mathbf{u}\| + \|\mathbf{v}\|\) para todos los vectores 
+        \( \mathbf{u}, \mathbf{v} \). Más adelante se demuestra que esto es verdadero en general. </p> 
+        
+        
+    <h2>La desigualdad del triángulo</h2> <p> Para todos los vectores \( \mathbf{u}, \mathbf{v} \in \mathbb{R}^n \), </p> 
+    
+     <span id="formula2">
+        \(   \)
+    </span> 
+    <br><br>
+    <input type="text" name="respuesta_20" id="respuesta_20" oninput="actualizarFormula2()" 
+    value="<?php echo $respuesta_20?>" size="15" >
+
+    <br><br>
 
     <img src="../../../img/guia_237.png" alt="">
 

@@ -52,6 +52,7 @@
                 <a class="btn" href=".\capitulo_3_1\index.php"> capitulo 3.1 </a>
 
                 <br><br>
+                <a class="btn" href=".\resumen\index.php"> resumen</a>
                 <a class="btn" href=".\ejercicios\index.php"> ejercicios</a>
             </div>
         </div>

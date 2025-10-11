@@ -169,7 +169,7 @@ if ($_POST) {
 
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '||u-v||') {  
+   if ($respuesta_1 === '26') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -179,9 +179,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === '\frac{u*v}{||u||*||v||}'
-   || $respuesta_2 === '\frac{uv}{||u||||v||}'
-   ) {  
+   if ($respuesta_2 === '39') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -191,7 +189,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === '90') {  
+   if ($respuesta_3 === '52') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -201,7 +199,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === 'Cos90') {  
+   if ($respuesta_4 === '65') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -211,7 +209,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === '0') {  
+   if ($respuesta_5 === '78') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -221,9 +219,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === 'v*u=0'
-   || $respuesta_6 === 'u*v=0'
-   ) {  
+   if ($respuesta_6 === '91') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -233,9 +229,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === '0*V'
-   || $respuesta_7 === '0*v'
-   ) {  
+   if ($respuesta_7 === '104') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -245,7 +239,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === '||u+v||^2=||u||^2+||v||^2') {  
+   if ($respuesta_8 === '117') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -255,7 +249,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === 'proj_u(v)=(\frac{u*V}{u*u})') {  
+   if ($respuesta_9 === '130') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -265,7 +259,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === 'n*x=0') {  
+   if ($respuesta_10 === '143') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -1318,7 +1312,7 @@ if ($respuesta_121 === '144') {
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 395vh;
+    height: 370vh;
     }
 
 </style>
@@ -1378,7 +1372,7 @@ function actualizarFormula() {
 
 function actualizarFormula2() {
     var f = document.getElementById('respuesta_2').value || "";
-    var formula = ` \\ \\cos\\theta \=\ ${f} \\, `;
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula2').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
         MathJax.typeset();
@@ -1386,7 +1380,7 @@ function actualizarFormula2() {
 }
 
 function actualizarFormula3() {
-    var f = document.getElementById('respuesta_8').value || "";
+    var f = document.getElementById('respuesta_3').value || "";
     var formula = ` \\ ${f} \\, `;
     document.getElementById('formula3').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
@@ -1395,7 +1389,7 @@ function actualizarFormula3() {
 }
 
 function actualizarFormula4() {
-    var f = document.getElementById('respuesta_9').value || "";
+    var f = document.getElementById('respuesta_4').value || "";
     var formula = ` \\ ${f} \\, `;
     document.getElementById('formula4').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
@@ -1598,185 +1592,196 @@ function ocultarMensaje4() {
 </head>
 <body>  
 
-<form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
+<form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
 <div class="form-container">
 
     
 <div class="seccion izquierda"> 
 
-    
-  <div class="math-block" style="border-left-color:#7fc7f0;">
-    <div class="def-title">Definición</div>
-    <div>
-    La <em>distancia</em> \(d(\mathbf{u},\mathbf{v})\) entre los vectores \(\mathbf{u}\) y \(\mathbf{v}\) en \(\mathbb{R}^n\) se define por
-    
-    <br><br>
-    <p style="align-items: center; text-align:center; "> 
-
-    <span id="formula">
-        \( d(\mathbf{u},\mathbf{v}) \;=\;  \)
-    </span> 
-   
-    <input type="text" name="respuesta_1" id="respuesta_1" oninput="actualizarFormula()" 
-    value="<?php echo $respuesta_1?>" size="15" >
-
-    </p>
-
-
-      
-    </div>
-  </div>
-
-    <button type="submit">Enviar</button> 
-    <?php echo $verificar_1 ?>
- 
-    <hr>
-
-    <div class="math-block">
-    <div class="def-title">Definición</div>
-    <p>
-      Para vectores \(\mathbf{u}\) y \(\mathbf{v}\) distintos de cero en \(\mathbb{R}^n\),
-    </p>
-
-    <p style="align-items: center; text-align:center; "> 
-
-    <span id="formula2">
-        \(  \cos\theta \;=\;  \)
-    </span> 
-   
-    <input type="text" name="respuesta_2" id="respuesta_2" oninput="actualizarFormula2()" 
-    value="<?php echo $respuesta_2?>" size="15" >
-
-    </p>
-
-     
-    </div>
-
-    <button type="submit">Enviar</button> 
-     <?php echo $verificar_2 ?>
-    <hr>
-
-
-
-  <h2>Vectores ortogonales</h2>
-  <p>
-    El concepto de perpendicularidad es fundamental para la geometría. 
-    En \(\mathbb{R}^2\) o \(\mathbb{R}^3\), dos vectores \(\mathbf{u}\) y \(\mathbf{v}\) distintos de cero 
-    son perpendiculares si el ángulo \(\theta\) entre ellos es un ángulo recto; 
-    esto es, si \(\theta = \pi/2\) radianes o 
-    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="5"> grados.  
-    Por tanto,
-  </p>
-
-  <p style="align-items: center; text-align:center; "> 
-
-    <span id="formula2">
-        \(  \cos\theta = \frac{\mathbf{u}\cdot\mathbf{v}}{\|\mathbf{u}\|\|\mathbf{v}\|} =   \)
-    </span> 
-   
-    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="8">
-
-    </p>
-
-    <p style="align-items: center; text-align:center; "> 
-
-    <span id="formula2">
-        \(  \quad \Rightarrow \quad \mathbf{u}\cdot \mathbf{v} = \)
-    </span> 
-   
-    <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="8">
-
-    </p>
-
-  
-  <p>
-    Esto motiva la siguiente definición:
-  </p>
-
-  <div class="math-block">
-    <div class="def-title">Definición</div>
-    Dos vectores \(\mathbf{u}\) y \(\mathbf{v}\) en \(\mathbb{R}^n\) son mutuamente 
-    <em>ortogonales</em> si 
-    <br><br>
-    <p style="align-items: center; text-align:center; "> 
-    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="8">
-    </p>
-  </div>
-
-  <p>
-    Dado que 
-    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="8">
-    \( = 0\) para todo vector \(\mathbf{v}\) en \(\mathbb{R}^n\), 
-    el vector cero es ortogonal a todo vector.
-  </p>
-
-  <p>
-    En \(\mathbb{R}^3\), si 
-    \(\mathbf{u} = [1,1,-2]\) y \(\mathbf{v} = [3,1,2]\), 
-    entonces son ortogonales, pues:
-    \[
-      \mathbf{u}\cdot \mathbf{v} = 1\cdot 3 + 1\cdot 1 + (-2)\cdot 2 = 3 + 1 - 4 = 0.
-    \]
-  </p>
-
-    <button type="submit">Enviar</button> 
-    <?php echo $verificar_3 ?>
-    <?php echo $verificar_4 ?>
-    <?php echo $verificar_5 ?>
-    <?php echo $verificar_6 ?>
-    <?php echo $verificar_7 ?>  
-
-    <hr>
-  <h2>Teorema de Pitágoras</h2>
-  <div class="math-block">
-    <div class="def-title">Teorema de Pitágoras</div>
-    <p>
-      Para todos los vectores \(\mathbf{u}\) y \(\mathbf{v}\) en \(\mathbb{R}^n\),
-    </p>
-
-     <p style="align-items: center; text-align:center; "> 
-
-    <span id="formula3">
-        \(    \)
-    </span> 
-   
-    <input type="text" name="respuesta_8" id="respuesta_8" oninput="actualizarFormula3()" 
-    value="<?php echo $respuesta_8?>" size="18" >
-
-    </p>
-
-    <button type="submit">Enviar</button> 
-    <?php echo $verificar_8 ?>
-    
-    <hr>
-  
-
-    <p>
-      si y sólo si \(\mathbf{u}\) y \(\mathbf{v}\) son ortogonales.
-    </p>
-  </div>
-
-    <img src="../../../img/guia_239.png" alt="">
-
+      <div class="section">
+        <h2>Conceptos Clave</h2>
         
-<h2>Proyecciones</h2>
+        <div class="definition">
+            <div class="definition-title">Forma Normal de una Recta</div>
+            <p>Dada una recta en \( \mathbb{R}^2 \), si existe un vector \( \mathbf{n} \) perpendicular a la recta (vector normal), entonces la ecuación de la recta puede escribirse como \( \mathbf{n} \cdot \mathbf{x} = 0 \) (si pasa por el origen) o \( \mathbf{n} \cdot (\mathbf{x} - \mathbf{p}) = 0 \) (si pasa por un punto \( \mathbf{p} \)).</p>
+        </div>
+        
+        <div class="definition">
+            <div class="definition-title">Representación Paramétrica</div>
+            <p>Toda recta en \( \mathbb{R}^2 \) o \( \mathbb{R}^3 \) puede describirse paramétricamente como \( \mathbf{x} = \mathbf{p} + t\mathbf{d} \), donde:</p>
+            <ul>
+                <li>\( \mathbf{p} \) es un punto en la recta</li>
+                <li>\( \mathbf{d} \) es un vector dirección</li>
+                <li>\( t \) es un parámetro real</li>
+            </ul>
+        </div>
+    </div>
 
-<p>
-Ahora se considerará el problema de encontrar la distancia desde un punto hasta una recta en el contexto de los vectores.
-Como verá, esta técnica conduce a un importante concepto: la <strong>proyección de un vector sobre otro vector</strong>.
-</p>
+
+     <div class="section">
+        <h2>El vector dirección \(\mathbf{d}\)</h2>
+        
+        <div class="math">
+            <p><strong>Recordemos la ecuación de la recta:</strong></p>
+            <p>\[2x + y = 0\]</p>
+            <p>\[y = -2x\]</p>
+        </div>
+
+        <div class="step">
+            <h3>Paso 1: Encontrar dos puntos en la recta</h3>
+            <p>Cuando \(x = 0\): \(y = -2(0) = 0\) → <strong>Punto A = (0, 0)</strong></p>
+            <p>Cuando \(x = 1\): \(y = -2(1) = -2\) → <strong>Punto B = (1, -2)</strong></p>
+        </div>
+
+        <div class="step">
+            <h3>Paso 2: Calcular el vector entre estos puntos</h3>
+            <p>\[
+                \mathbf{d} = \text{Punto B} - \text{Punto A} = (1, -2) - (0, 0) = \begin{bmatrix} 1 \\ -2 \end{bmatrix}
+            \]</p>
+        </div>
+
+        <div class="highlight">
+            <h3>¿Por qué específicamente \(\begin{bmatrix} 1 \\ -2 \end{bmatrix}\)?</h3>
+            <p>El texto dice: <em>"su coordenada x cambia 1 unidad por segundo"</em> - esto nos da la componente x = 1 del vector dirección.</p>
+            <p>Como la pendiente es -2, cuando x cambia 1 unidad, y cambia -2 unidades. Por eso:</p>
+            <div class="math">
+                <p>\[
+                    \mathbf{d} = \begin{bmatrix} 1 \\ -2 \end{bmatrix}
+                \]</p>
+            </div>
+        </div>
+    </div>
+
+    <img src="../../../img/guia_244.png" alt="">
+
+    <hr>
+
+    <h1>Formas de Ecuaciones de Rectas</h1>
+
+    <!-- Primera Definición: Forma Normal -->
+    <div class="definition">
+        <div class="definition-title">Forma Normal de la Ecuación de una Recta</div>
+        
+        <div class="math-formula">
+            <p>La <strong>forma normal</strong> de la ecuación de una recta \(\ell\) en \(\mathbb{R}^2\) es:</p>
+            <p>\[
+                \mathbf{n} \cdot (\mathbf{x} - \mathbf{p}) = 0 \quad \text{o} \quad \mathbf{n} \cdot \mathbf{x} = \mathbf{n} \cdot \mathbf{p}
+            \]</p>
+        </div>
+
+        <div class="explanation">
+            <p>Donde:</p>
+            <ul>
+                <li>\(\mathbf{p}\) es un punto específico sobre \(\ell\)</li>
+                <li>\(\mathbf{n} \neq \mathbf{0}\) es un <span class="vector">vector normal</span> a \(\ell\)</li>
+            </ul>
+        </div>
+
+        <div class="components">
+            <p>La <strong>forma general</strong> de la ecuación de \(\ell\) es \(ax + by = c\), donde:</p>
+            <p>\[
+                \mathbf{n} = \begin{bmatrix} a \\ b \end{bmatrix}
+            \]</p>
+            <p>es un vector normal para \(\ell\).</p>
+        </div>
+    </div>
+            
+    <hr>
+    <!-- Segunda Definición: Forma Vectorial -->
+    <div class="definition">
+        <div class="definition-title">Forma Vectorial de la Ecuación de una Recta</div>
+        
+        <div class="math-formula">
+            <p>La <strong>forma vectorial</strong> de la ecuación de una recta \(\ell\) en \(\mathbb{R}^2\) o \(\mathbb{R}^3\) es:</p>
+            <p>\[
+                \mathbf{x} = \mathbf{p} + t\mathbf{d}
+            \]</p>
+        </div>
+
+        <div class="explanation">
+            <p>Donde:</p>
+            <ul>
+                <li>\(\mathbf{p}\) es un punto específico sobre \(\ell\)</li>
+                <li>\(\mathbf{d} \neq \mathbf{0}\) es un <span class="vector">vector director</span> para \(\ell\)</li>
+                <li>\(t\) es un parámetro real</li>
+            </ul>
+        </div>
+
+        <div class="components">
+            <p>Las ecuaciones que corresponden a los componentes de la forma vectorial se llaman <strong>ecuaciones paramétricas</strong> de \(\ell\).</p>
+            <p class="note">Ejemplo: Para \(\mathbb{R}^3\), si \(\mathbf{p} = (p_1, p_2, p_3)\) y \(\mathbf{d} = (d_1, d_2, d_3)\), las ecuaciones paramétricas son:</p>
+            <p>\[
+                \begin{cases}
+                x = p_1 + td_1 \\
+                y = p_2 + td_2 \\
+                z = p_3 + td_3
+                \end{cases}
+            \]</p>
+        </div>
+    </div>
+
+
+    <hr>
 
 
 
-<p>
-El problema de encontrar la distancia desde un punto \( B \) hasta una recta \( \ell \) (en \( \mathbb{R}^2 \) o \( \mathbb{R}^3 \)) 
-se reduce a encontrar la longitud del segmento de recta perpendicular \( PB \) o, de manera equivalente, 
-la longitud del vector \( \overrightarrow{PB} \).
-Si se elige un punto \( A \) sobre \( \ell \), entonces, en el triángulo recto \( \triangle APB \), los otros dos vectores son 
-el cateto \( \overrightarrow{AP} \) y la hipotenusa \( \overrightarrow{AB} \).
-\( \overrightarrow{AP} \) se llama <strong>proyección de</strong> \( \overrightarrow{AB} \) <strong>sobre la recta</strong> \( \ell \).
-</p>
+    <div class="example-container">
+        <div class="example-title">Ejemplo 1.28</div>
+        
+        <div class="problem-statement">
+            <p>Encuentre las ecuaciones vectorial y paramétrica de la recta en \(\mathbb{R}^3\) que pasa por el punto</p>
+            <div class="math-formula">
+                <p>\[ P = {(1, 2, -1)} \]</p>
+                <p>paralela al vector \( \mathbf{d} = {\begin{bmatrix} 5 \\ -1 \\ 3 \end{bmatrix}} \)</p>
+            </div>
+        </div>
 
+        <div class="solution-section">
+            <div class="section-title">Solución</div>
+            
+            <p>La ecuación vectorial \( \mathbf{x} = \mathbf{p} + t\mathbf{d} \) es:</p>
+            
+            <div class="math-formula">
+                \[
+                \begin{bmatrix}
+                x \\
+                y \\
+                z
+                \end{bmatrix}
+                =
+                \begin{bmatrix}
+                1 \\
+                2 \\
+                -1
+                \end{bmatrix}
+                +
+                t
+                \begin{bmatrix}
+                5 \\
+                -1 \\
+                3
+                \end{bmatrix}
+                \]
+            </div>
+        </div>
+
+        <div class="solution-section">
+            <div class="section-title">Forma Paramétrica</div>
+            
+            <div class="parametric-equations">
+                <div class="equation">\[ x = 1 + 5t \]</div>
+                <div class="equation">\[ y = 2 - t \]</div>
+                <div class="equation">\[ z = -1 + 3t \]</div>
+            </div>
+            
+            <p><strong>Donde:</strong></p>
+            <ul>
+                <li>\( t \) es un parámetro real que puede tomar cualquier valor</li>
+                <li>Cuando \( t = 0 \), obtenemos el punto \( P = (1, 2, -1) \)</li>
+                <li>Cada valor de \( t \) genera un punto diferente sobre la recta</li>
+            </ul>
+        </div>
+    </div>
 
 
 </div>
@@ -1786,214 +1791,196 @@ el cateto \( \overrightarrow{AP} \) y la hipotenusa \( \overrightarrow{AB} \).
 
 <div class="seccion derecha">
    
-
- 
-
- 
-<hr>
-
-<p>
-Considere dos vectores \( \mathbf{u} \) y \( \mathbf{v} \) distintos de cero. 
-Sea \( \mathbf{p} \) el vector que se obtiene al trazar una perpendicular desde la punta de \( \mathbf{v} \) sobre \( \mathbf{u} \), 
-y sea \( \theta \) el ángulo entre \( \mathbf{u} \) y \( \mathbf{v} \).
-</p>
-
-<p>
-Entonces, claramente 
-\[
-\mathbf{p} = \|\mathbf{p}\| \, \hat{\mathbf{u}},
-\]
-donde 
-\[
-\hat{\mathbf{u}} = \left(\frac{1}{\|\mathbf{u}\|}\right)\mathbf{u}
-\]
-es el vector unitario en la dirección de \( \mathbf{u} \).
-Por trigonometría, \( \|\mathbf{p}\| = \|\mathbf{v}\| \cos \theta \), 
-y como 
-\[
-\cos \theta = \frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\| \|\mathbf{v}\|},
-\]
-tenemos:
-</p>
-
-<p>
-\[
-\mathbf{p} = \|\mathbf{v}\| 
-\left( 
-\frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\| \|\mathbf{v}\|}
-\right)
-\left( 
-\frac{1}{\|\mathbf{u}\|}
-\right)
-\mathbf{u}
-\]
-</p>
-
-<p>
-Simplificando:
-\[
-\mathbf{p} 
-= 
-\left( 
-\frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\|^2}
-\right)\mathbf{u}
-=
-\left(
-\frac{\mathbf{u} \cdot \mathbf{v}}{\mathbf{u} \cdot \mathbf{u}}
-\right)\mathbf{u}
-\]
-</p>
-
-<p>
-Ésta es la fórmula que se quería, y es la base de la siguiente definición para vectores en \( \mathbb{R}^n \).
-</p>
-
-<div class="definicion">
-  <strong>Definición:</strong>  
-  Si \( \mathbf{u} \) y \( \mathbf{v} \) son vectores en \( \mathbb{R}^n \) y \( \mathbf{u} \neq \mathbf{0} \),  
-  entonces la <strong>proyección de</strong> \( \mathbf{v} \) <strong>sobre</strong> \( \mathbf{u} \)  
-  es el vector \( \mathrm{proj}_{\mathbf{u}}(\mathbf{v}) \) definido por:
-  <br><br>
-</div>
-
-   <p style="align-items: center; text-align:center; "> 
-
-    <span id="formula4">
-        \(    \)
-    </span> 
-   
-    <input type="text" name="respuesta_9" id="respuesta_9" oninput="actualizarFormula4()" 
-    value="<?php echo $respuesta_9?>" size="18" >
-
-    </p>
-
-  
-
-
-    <img src="../../../img/guia_240.png" alt="">
-
-    <div class="comment-section">
-        <div class="comment">
-            <p>El término <em>proyección</em> proviene de la idea de proyectar una imagen sobre un muro (con un proyector de diapositivas, por ejemplo). Imagine un haz de luz con rayos mutuamente paralelos y perpendiculares a <strong>u</strong> que brillan sobre <strong>v</strong>. La proyección de <strong>v</strong> sobre <strong>u</strong> es justo la sombra formada, o proyectada, por <strong>v</strong> sobre <strong>u</strong>.</p>
-        </div>
+  <div class="example-container">
+        <div class="example-title">Ejemplo 1.29</div>
         
-        <div class="comment">
-            <p>Puede ser útil considerar a \(\text{proy}_{\mathbf{u}}(\mathbf{v})\) como una función con variable <strong>v</strong>. Entonces la variable <strong>v</strong> ocurre sólo una vez en el lado derecho de la definición. Además, es útil tener en mente la figura 1.38, que recuerda que \(\text{proy}_{\mathbf{u}}(\mathbf{v})\) es un múltiplo escalar del vector <strong>u</strong> (no de <strong>v</strong>).</p>
+        <div class="problem-statement">
+            <p>Con frecuencia, uno escucha la expresión "dos puntos determinan una recta". Encuentre una ecuación vectorial de la recta \(\ell\) en \(\mathbb{R}^3\) determinada por los puntos:</p>
+            <div class="math-formula">
+                <p>\[ P =  {(-1, 5, 0)} \quad \text{y} \quad Q =  {(2, 1, 1)} \]</p>
+            </div>
         </div>
-        
-        <div class="comment">
-            <p>Aunque en la deducción de la definición de \(\text{proy}_{\mathbf{u}}(\mathbf{v})\) se requirió que tanto <strong>v</strong> como <strong>u</strong> fuesen distintos de cero (¿por qué?), es claro a partir de la geometría que la proyección del vector cero sobre <strong>u</strong> es <strong>0</strong>. La definición está en concordancia con esto, pues:</p>
+
+        <div class="solution-section">
+            <div class="section-title">Solución</div>
+            
+            <div class="explanation">
+                <p>Es posible elegir cualquier punto sobre \(\ell\) para \(\mathbf{p}\), de modo que se usará \(P\) (\(Q\) también estaría bien).</p>
+            </div>
+
+            <div class="vector-operation">
+                <p class="important">¿Qué se hizo? ¡NO es producto punto entre P y Q!</p>
+                <p>Se calculó el <strong>vector director</strong> como la diferencia entre los puntos Q y P:</p>
+                <div class="math-formula">
+                    \[
+                    \mathbf{d} = \overrightarrow{PQ} = Q - P = 
+                    \begin{bmatrix} 2 \\ 1 \\ 1 \end{bmatrix} - 
+                    \begin{bmatrix} -1 \\ 5 \\ 0 \end{bmatrix} = 
+                    \begin{bmatrix} 3 \\ -4 \\ 1 \end{bmatrix}
+                    \]
+                </div>
+            </div>
+
+            <p>Un vector director conveniente es \(\mathbf{d} = \overrightarrow{PQ} =  {\begin{bmatrix} 3 \\ -4 \\ 1 \end{bmatrix}}\) (o cualquier múltiplo escalar de éste). Por tanto, se obtiene:</p>
             
             <div class="math-formula">
-                \(\frac{\mathbf{u} \cdot \mathbf{0}}{\mathbf{u} \cdot \mathbf{u}} \mathbf{u} = 0\mathbf{u} = \mathbf{0}\)
+                \[
+                \mathbf{x} = \mathbf{p} + t\mathbf{d}
+                \]
+                \[
+                = \begin{bmatrix} -1 \\ 5 \\ 0 \end{bmatrix} + t \begin{bmatrix} 3 \\ -4 \\ 1 \end{bmatrix}
+                \]
             </div>
         </div>
-        
-        <div class="comment">
-            <p>Si el ángulo entre <strong>u</strong> y <strong>v</strong> es obtuso, como en la figura 1.38, entonces \(\text{proy}_{\mathbf{u}}(\mathbf{v})\) estará en la dirección opuesta de <strong>u</strong>; esto es, \(\text{proy}_{\mathbf{u}}(\mathbf{v})\) será un múltiplo escalar negativo de <strong>u</strong>.</p>
-        </div>
-        
-        <div class="comment">
-            <p>Si <strong>u</strong> es un vector unitario, entonces \(\text{proy}_{\mathbf{u}}(\mathbf{v}) = (\mathbf{u} \cdot \mathbf{v})\mathbf{u}\).</p>
-            <p class="note">(¿Por qué?)</p>
-            
-            <div class="highlight">
-                <p><strong>Explicación:</strong> Cuando <strong>u</strong> es un vector unitario, su magnitud es 1 (\(\|\mathbf{u}\| = 1\)). La fórmula general para la proyección es:</p>
-                <div class="math-formula">
-                    \(\text{proy}_{\mathbf{u}}(\mathbf{v}) = \frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\|^2} \mathbf{u}\)
-                </div>
-                <p>Como \(\|\mathbf{u}\| = 1\), entonces \(\|\mathbf{u}\|^2 = 1\), y la fórmula se simplifica a:</p>
-                <div class="math-formula">
-                    \(\text{proy}_{\mathbf{u}}(\mathbf{v}) = (\mathbf{u} \cdot \mathbf{v})\mathbf{u}\)
-                </div>
-            </div>
+
+        <div class="explanation">
+            <p><strong>Explicación clave:</strong></p>
+            <ul>
+                <li>El <strong>vector director</strong> \(\mathbf{d}\) es la <strong>diferencia</strong> entre los puntos, NO el producto punto</li>
+                <li>\(\overrightarrow{PQ} = Q - P\) nos da la dirección de la recta</li>
+                <li>Podríamos usar también \(\overrightarrow{QP} = P - Q = \begin{bmatrix} -3 \\ 4 \\ -1 \end{bmatrix}\)</li>
+                <li>Cualquier múltiplo escalar de \(\mathbf{d}\) también es un vector director válido</li>
+            </ul>
         </div>
     </div>
+     
+    
 
-    <img src="../../../img/guia_241.png" alt="">
+
+
 
     <hr>
 
-     <h1>1.3 Rectas y planos</h1>
+
+      <h1>Planos en \( \mathbb{R}^3 \)</h1>
     
     <div class="section">
-        <p>Todos están familiarizados con la ecuación de una recta en el plano cartesiano. Ahora se considerarán rectas en \( \mathbb{R}^2 \) desde un punto de vista vectorial. La comprensión que se obtenga a partir de este planteamiento permitirá generalizar a rectas en \( \mathbb{R}^3 \) y luego a planos en \( \mathbb{R}^3 \). Mucha del álgebra lineal que se considerará en capítulos posteriores tiene sus orígenes en la geometría simple de rectas y planos; la habilidad para visualizarlos y pensar geométricamente en torno a un problema le servirá bastante.</p>
+        <p>La siguiente pregunta que debe plantearse es: ¿cómo la forma general de la ecuación de una recta se generaliza a \( \mathbb{R}^3 \)? Razonablemente puede suponer que si \( ax + by = c \) es la forma general de la ecuación de una recta en \( \mathbb{R}^2 \), entonces \( ax + by + cz = d \) puede representar una recta en \( \mathbb{R}^3 \). En forma normal, esta ecuación sería \( \mathbf{n} \cdot \mathbf{x} = \mathbf{n} \cdot \mathbf{p} \), donde \( \mathbf{n} \) es un vector normal a la recta y \( \mathbf{p} \) corresponde a un punto sobre la recta.</p>
+        
+        <div class="math-formula">
+            \[ ax + by + cz = d \quad \Rightarrow \quad \mathbf{n} \cdot \mathbf{x} = \mathbf{n} \cdot \mathbf{p} \]
+        </div>
+        
+        <p>Para ver si esta es una hipótesis razonable, considere el caso especial de la ecuación \( ax + by + cz = 0 \). En forma normal, se convierte en \( \mathbf{n} \cdot \mathbf{x} = 0 \), donde \( \mathbf{n} = \begin{bmatrix} a \\ b \\ c \end{bmatrix} \).</p>
+        
+        <div class="highlight">
+            <p>Sin embargo, el conjunto de todos los vectores \( \mathbf{x} \) que satisfacen esta ecuación es el conjunto de todos los vectores ortogonales a \( \mathbf{n} \). Como se muestra en la figura 1.59, vectores en infinitas direcciones tienen esta propiedad, lo que determina una familia de planos paralelos.</p>
+        </div>
+        
+        <div class="important">
+            <p><strong>Conclusión importante:</strong> La suposición fue incorrecta: parece que \( ax + by + cz = d \) es la ecuación de un <strong>plano</strong>, no de una recta, en \( \mathbb{R}^3 \).</p>
+        </div>
+        
+        <p>Precise más este hallazgo. Todo plano \( \mathcal{P} \) en \( \mathbb{R}^3 \) puede determinarse al especificar un punto \( \mathbf{p} \) sobre \( \mathcal{P} \) y un vector distinto de cero \( \mathbf{n} \) normal a \( \mathcal{P} \) (figura 1.60). Por ende, si \( \mathbf{x} \) representa un punto arbitrario sobre \( \mathcal{P} \), se tiene que \( \mathbf{n} \cdot (\mathbf{x} - \mathbf{p}) = 0 \) o \( \mathbf{n} \cdot \mathbf{x} = \mathbf{n} \cdot \mathbf{p} \).</p>
+        
+        <div class="math-formula">
+            \[ \mathbf{n} \cdot (\mathbf{x} - \mathbf{p}) = 0 \quad \text{o} \quad \mathbf{n} \cdot \mathbf{x} = \mathbf{n} \cdot \mathbf{p} \]
+        </div>
+        
+        <p>Si \( \mathbf{n} = \begin{bmatrix} a \\ b \\ c \end{bmatrix} \) y \( \mathbf{x} = \begin{bmatrix} x \\ y \\ z \end{bmatrix} \), entonces, en términos de componentes, la ecuación se convierte en \( ax + by + cz = d \) (donde \( d = \mathbf{n} \cdot \mathbf{p} \)).</p>
+        
+        <div class="math-formula">
+            \[ \begin{bmatrix} a \\ b \\ c \end{bmatrix} \cdot \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} a \\ b \\ c \end{bmatrix} \cdot \begin{bmatrix} p_x \\ p_y \\ p_z \end{bmatrix} \quad \Rightarrow \quad ax + by + cz = d \]
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+        <div class="definition">
+            <div class="definition-title">Definición</div>
+            <p>La <strong>forma normal de la ecuación de un plano</strong> \( \mathcal{P} \) en \( \mathbb{R}^3 \) es</p>
+            <div class="math-formula">
+                \[ \mathbf{n} \cdot (\mathbf{x} - \mathbf{p}) = 0 \quad \text{o} \quad \mathbf{n} \cdot \mathbf{x} = \mathbf{n} \cdot \mathbf{p} \]
+            </div>
+            <p>donde \( \mathbf{p} \) es un punto específico sobre \( \mathcal{P} \) y \( \mathbf{n} \neq \mathbf{0} \) es un vector normal para \( \mathcal{P} \).</p>
+        </div>
+        
+        <div class="definition">
+         
+            <p>La <strong>forma general de la ecuación de</strong> \( \mathcal{P} \) es \( ax + by + cz = d \), donde \( \mathbf{n} = \begin{bmatrix} a \\ b \\ c \end{bmatrix} \) es un vector normal para \( \mathcal{P} \).</p>
+            <div class="math-formula">
+                \[ ax + by + cz = d \quad \text{con} \quad \mathbf{n} = \begin{bmatrix} a \\ b \\ c \end{bmatrix} \]
+            </div>
+        </div>
     </div>
 
     <div class="section">
-        <h2>Rectas en \( \mathbb{R}^2 \) y \( \mathbb{R}^3 \)</h2>
-        
-        <p>En el plano xy, la forma general de la ecuación de una recta es \( ax + by = c \), si \( b \neq 0 \), entonces la ecuación puede reescribirse como \( y = -(a/b)x + c/b \), que tiene la forma \( y = mx + k \). [Ésta es la forma pendiente ordenada al origen; \( m \) es la pendiente de la recta y el punto con coordenadas \((0, k)\) es su ordenada al origen.] Para incluir los vectores en este estudio, considere un ejemplo.</p>
-    </div>
-
-
-
-
-    <button onmousedown="mostrarImagen()" onmouseup="ocultarImagen()">Explicacion pendiente</button>
-    <!-- Elemento para mostrar la imagen -->
-
-    <img id="imagenMostrada" src="../../../img/guia_242.png" style="display: none; max-width: 100%" width="560">
-
-    <script>
-        function mostrarImagen() {
-        var imagenMostrada2 = document.getElementById('imagenMostrada');
-
-        // Mostrar la imagen
-        imagenMostrada.style.display = 'block';
-        }
-
-        function ocultarImagen() {
-        var imagenMostrada = document.getElementById('imagenMostrada');
-
-        // Ocultar la imagen al soltar el botón
-        imagenMostrada.style.display = 'none';
-        }
-    </script>
-
-
-
-
-    <div class="example">
-        <div class="example-title">Ejemplo 1.26</div>
-        
-        <p>En la figura 1.53 se muestra la recta \(\ell\), con ecuación \( 2x + y = 0 \). Es una recta con pendiente \(-2\) que 
-            pasa por el origen. El lado izquierdo de la ecuación está en la forma de producto punto; de hecho, si 
-            \( \mathbf{n} = \begin{bmatrix} 2 \\ 1 \end{bmatrix} \) y \( \mathbf{x} = \begin{bmatrix} x \\ y \end{bmatrix} \), 
-            entonces la ecuación se convierte en 
-            <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="8">
-            .</p>
-        
-        <div class="definition">
-            <div class="definition-title">Vector Normal</div>
-            <p>El vector \( \mathbf{n} \) es perpendicular a la recta; esto es, es <em>ortogonal</em> a cualquier vector \( \mathbf{x} \) que sea paralelo a la recta (figura 1.54) y se le conoce como <span class="vector">vector normal</span> a la recta. La ecuación \( \mathbf{n} \cdot \mathbf{x} = 0 \) es la <em>forma normal</em> de la ecuación de \(\ell\).</p>
-        </div>
-        
-        <div class="math-formula">
-            \( \mathbf{n} \cdot \mathbf{x} = 0 \quad \Rightarrow \quad \begin{bmatrix} 2 \\ 1 \end{bmatrix} \cdot \begin{bmatrix} x \\ y \end{bmatrix} = 0 \quad \Rightarrow \quad 2x + y = 0 \)
-        </div>
-        
-        <img src="../../../img/guia_243.png" alt="">
-        <p>Otra forma de pensar esta recta es imaginar una partícula que se mueve a lo largo de la recta. Suponga que la partícula inicialmente está en el origen en el tiempo \( t = 0 \) y se mueve a lo largo de la recta en tal forma que su coordenada \( x \) cambia 1 unidad por segundo. Entonces:</p>
-        
-        <ul>
-            <li>En \( t = 1 \) la partícula está en \((1, -2)\)</li>
-            <li>En \( t = 1.5 \) está en \((1.5, -3)\)</li>
-            <li>En \( t = -2 \) está (o estuvo) en \((-2, 4)\)</li>
-        </ul>
-        
-        <p>Este movimiento se ilustra en la figura 1.55.</p>
+        <h2>Resumen Conceptual</h2>
         
         <div class="highlight">
-            <p><strong>Interpretación vectorial:</strong> Podemos describir esta recta paramétricamente usando vectores. Si consideramos la dirección de movimiento como el vector \( \mathbf{d} = \begin{bmatrix} 1 \\ -2 \end{bmatrix} \), entonces cualquier punto \( \mathbf{x} \) en la recta puede escribirse como:</p>
-            <div class="math-formula">
-                \( \mathbf{x} = t\mathbf{d} = t\begin{bmatrix} 1 \\ -2 \end{bmatrix} \)
-            </div>
-            <p>donde \( t \) es un parámetro real que representa el tiempo.</p>
+            <p><strong>Recta en \( \mathbb{R}^2 \):</strong></p>
+            <ul>
+                <li>Ecuación general: \( ax + by = c \)</li>
+                <li>Vector normal: \( \begin{bmatrix} a \\ b \end{bmatrix} \)</li>
+                <li>Un vector normal define una única recta</li>
+            </ul>
+        </div>
+        
+        <div class="important">
+            <p><strong>Plano en \( \mathbb{R}^3 \):</strong></p>
+            <ul>
+                <li>Ecuación general: \( ax + by + cz = d \)</li>
+                <li>Vector normal: \( \begin{bmatrix} a \\ b \\ c \end{bmatrix} \)</li>
+                <li>Un vector normal define infinitos planos paralelos</li>
+                <li>Se necesita un punto específico para determinar un plano único</li>
+            </ul>
         </div>
     </div>
 
-   
 
+                    
+    <hr>
+
+    <div class="section">
+        <h1>La clave: <span class="dimension">z</span> agrega la tercera dimensión</h1>
+        
+        <h2>En \( \mathbb{R}^2 \) (sin z):</h2>
+        <div class="math">
+            <p>\( ax + by = c \) → fijas una relación entre x e y</p>
+        </div>
+        <p><strong>Resultado:</strong> una <span class="dimension">línea</span> (1 dimensión)</p>
+        <div class="example">
+            <p><strong>Ejemplo:</strong> \( 2x + y = 3 \) → todos los puntos (x,y) que cumplen esto forman una recta</p>
+        </div>
+
+        <h2>En \( \mathbb{R}^3 \) (con z):</h2>
+        <div class="math">
+            <p>\( ax + by + cz = d \) → fijas una relación entre x, y <strong>y z</strong></p>
+        </div>
+        <p><strong>Resultado:</strong> un <span class="dimension">plano</span> (2 dimensiones)</p>
+    </div>
+
+    <div class="section">
+        <h2>¿Por qué z crea el plano?</h2>
+        <p>Piensa en esta ecuación:</p>
+        <div class="math">
+            <p>\( 2x + 3y + z = 6 \)</p>
+        </div>
+        
+        <p><strong>Si despejas z:</strong></p>
+        <div class="math">
+            <p>\( z = 6 - 2x - 3y \)</p>
+        </div>
+
+        <div class="example">
+            <p><strong>Esto significa:</strong></p>
+            <ul>
+                <li>Para <strong>CADA</strong> par (x,y) que elijas, hay exactamente <strong>UN</strong> z que satisface la ecuación</li>
+                <li>Puedes moverte libremente en x <strong>y</strong> en y → <span class="dimension">2 grados de libertad</span></li>
+                <li>El valor de z se <strong>adapta automáticamente</strong> para mantener la ecuación</li>
+            </ul>
+        </div>
+
+        <h2>Ejemplo concreto:</h2>
+        <div class="math">
+            <p>Si \( x = 1 \) e \( y = 1 \) → \( z = 6 - 2(1) - 3(1) = 1 \) → punto <span class="point">(1,1,1)</span></p>
+            <p>Si \( x = 0 \) e \( y = 2 \) → \( z = 6 - 0 - 6 = 0 \) → punto <span class="point">(0,2,0)</span></p>
+            <p>Si \( x = 2 \) e \( y = 0 \) → \( z = 6 - 4 - 0 = 2 \) → punto <span class="point">(2,0,2)</span></p>
+        </div>
+        <p style="text-align: center; font-weight: bold; color: #e74c3c;">¡Todos estos puntos están en el mismo plano!</p>
+    </div>
+ 
 
 </div>
 </div>
@@ -2003,7 +1990,7 @@ Simplificando:
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="tercero.php"
+        href="cuarto.php"
         role="button"
         width="50px"
         height="50px"

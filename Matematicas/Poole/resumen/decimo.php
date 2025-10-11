@@ -169,7 +169,7 @@ if ($_POST) {
 
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '||u-v||') {  
+   if ($respuesta_1 === '26') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -179,9 +179,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === '\frac{u*v}{||u||*||v||}'
-   || $respuesta_2 === '\frac{uv}{||u||||v||}'
-   ) {  
+   if ($respuesta_2 === '39') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -191,7 +189,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === '90') {  
+   if ($respuesta_3 === '52') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -201,7 +199,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === 'Cos90') {  
+   if ($respuesta_4 === '65') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -211,7 +209,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === '0') {  
+   if ($respuesta_5 === '78') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -221,9 +219,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === 'v*u=0'
-   || $respuesta_6 === 'u*v=0'
-   ) {  
+   if ($respuesta_6 === '91') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -233,9 +229,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === '0*V'
-   || $respuesta_7 === '0*v'
-   ) {  
+   if ($respuesta_7 === '104') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -245,7 +239,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === '||u+v||^2=||u||^2+||v||^2') {  
+   if ($respuesta_8 === '117') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -255,7 +249,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === 'proj_u(v)=(\frac{u*V}{u*u})') {  
+   if ($respuesta_9 === '130') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -265,7 +259,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === 'n*x=0') {  
+   if ($respuesta_10 === '143') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -1318,7 +1312,7 @@ if ($respuesta_121 === '144') {
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 395vh;
+    height: 430vh;
     }
 
 </style>
@@ -1378,7 +1372,7 @@ function actualizarFormula() {
 
 function actualizarFormula2() {
     var f = document.getElementById('respuesta_2').value || "";
-    var formula = ` \\ \\cos\\theta \=\ ${f} \\, `;
+    var formula = ` \\ ${f} \\, `;
     document.getElementById('formula2').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
         MathJax.typeset();
@@ -1386,7 +1380,7 @@ function actualizarFormula2() {
 }
 
 function actualizarFormula3() {
-    var f = document.getElementById('respuesta_8').value || "";
+    var f = document.getElementById('respuesta_3').value || "";
     var formula = ` \\ ${f} \\, `;
     document.getElementById('formula3').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
@@ -1395,7 +1389,7 @@ function actualizarFormula3() {
 }
 
 function actualizarFormula4() {
-    var f = document.getElementById('respuesta_9').value || "";
+    var f = document.getElementById('respuesta_4').value || "";
     var formula = ` \\ ${f} \\, `;
     document.getElementById('formula4').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
@@ -1598,187 +1592,128 @@ function ocultarMensaje4() {
 </head>
 <body>  
 
-<form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
+<form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
 <div class="form-container">
 
     
 <div class="seccion izquierda"> 
-
-    
-  <div class="math-block" style="border-left-color:#7fc7f0;">
-    <div class="def-title">Definición</div>
-    <div>
-    La <em>distancia</em> \(d(\mathbf{u},\mathbf{v})\) entre los vectores \(\mathbf{u}\) y \(\mathbf{v}\) en \(\mathbb{R}^n\) se define por
-    
-    <br><br>
-    <p style="align-items: center; text-align:center; "> 
-
-    <span id="formula">
-        \( d(\mathbf{u},\mathbf{v}) \;=\;  \)
-    </span> 
-   
-    <input type="text" name="respuesta_1" id="respuesta_1" oninput="actualizarFormula()" 
-    value="<?php echo $respuesta_1?>" size="15" >
-
-    </p>
-
-
-      
-    </div>
-  </div>
-
-    <button type="submit">Enviar</button> 
-    <?php echo $verificar_1 ?>
  
-    <hr>
-
-    <div class="math-block">
-    <div class="def-title">Definición</div>
-    <p>
-      Para vectores \(\mathbf{u}\) y \(\mathbf{v}\) distintos de cero en \(\mathbb{R}^n\),
-    </p>
-
-    <p style="align-items: center; text-align:center; "> 
-
-    <span id="formula2">
-        \(  \cos\theta \;=\;  \)
-    </span> 
-   
-    <input type="text" name="respuesta_2" id="respuesta_2" oninput="actualizarFormula2()" 
-    value="<?php echo $respuesta_2?>" size="15" >
-
-    </p>
-
-     
+  <div class="theorem">
+        <h2>Teorema 3.9</h2>
+        <ul>
+            <li><strong>a.</strong> Si \( A \) es una matriz invertible, entonces \( A^{-1} \) es invertible y \( (A^{-1})^{-1} = A \)</li>
+            <li><strong>b.</strong> Si \( A \) es una matriz invertible y \( c \) es un escalar distinto de cero, entonces \( cA \) es una matriz invertible y \( (cA)^{-1} = \frac{1}{c} A^{-1} \)</li>
+            <li><strong>c.</strong> Si \( A \) y \( B \) son matrices invertibles del mismo tamaño, entonces \( AB \) es invertible y \( (AB)^{-1} = B^{-1} A^{-1} \)</li>
+            <li><strong>d.</strong> Si \( A \) es una matriz invertible, entonces \( A^T \) es invertible y \( (A^T)^{-1} = (A^{-1})^T \)</li>
+            <li><strong>e.</strong> Si \( A \) es una matriz invertible, entonces \( A^n \) es invertible para todo entero \( n \) no negativo y \( (A^n)^{-1} = (A^{-1})^n \)</li>
+        </ul>
     </div>
 
-    <button type="submit">Enviar</button> 
-     <?php echo $verificar_2 ?>
+    <h2>Matrices elementales</h2>
+    <p>La multiplicación de matrices se usará para dar una perspectiva diferente a la reducción de matrices por renglones. En el proceso, descubrirá muchos nuevos e importantes conocimientos de la naturaleza de las matrices invertibles.</p>
+    <p>Si</p>
+    <p>\( E = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 0 & 1 \\ 0 & 1 & 0 \end{bmatrix} \) y \( A = \begin{bmatrix} 5 & 7 \\ -1 & 0 \\ 8 & 3 \end{bmatrix} \)</p>
+    <p>se encuentra que</p>
+    <p>\( EA = \begin{bmatrix} 5 & 7 \\ -1 & 0 \\ 8 & 3 \end{bmatrix} \)</p>
+    <p>En otras palabras, multiplicar \( A \) por \( E \) (a la izquierda) tiene el mismo efecto que intercambiar los renglones 2 y 3 de \( A \). ¿Qué es lo significativo de \( E \)? Simplemente es la matriz que se obtiene al aplicar la misma operación elemental con renglones, \( R_2 \leftrightarrow R_3 \), a la matriz identidad \( I_3 \). Es evidente que esto siempre funciona.</p>
+
+    <div class="theorem">
+        <h2>Definición</h2>
+        <p>Una matriz elemental es aquella matriz que puede obtenerse al realizar una operación elemental con renglones sobre una matriz identidad.</p>
+    </div>
+    <p>Dado que existen tres tipos de operaciones elementales con renglones, existen tres tipos correspondientes de matrices elementales. He aquí algunas de las matrices más elementales.</p>
+
+    <hr>
+
+     <h1>¿Qué son las matrices elementales?</h1>
+    <p>Las matrices elementales son matrices que se obtienen al realizar una operación elemental sobre una matriz identidad. Estas operaciones elementales son los mismos pasos que usamos en el método de eliminación de Gauss o Gauss-Jordan para resolver sistemas de ecuaciones lineales o reducir matrices a su forma escalonada. El concepto es útil porque nos permite entender cómo la multiplicación de matrices puede simular estos cambios de manera sistemática.</p>
+
+    <h2>Operaciones elementales con renglones</h2>
+    <p>Hay tres tipos principales de operaciones elementales que se pueden hacer con los renglones de una matriz:</p>
+    <ul>
+        <li><strong>Intercambiar dos renglones</strong>: Por ejemplo, intercambiar el renglón 1 con el renglón 2.</li>
+        <li><strong>Multiplicar un renglón por un escalar no cero</strong>: Por ejemplo, multiplicar el renglón 2 por 3.</li>
+        <li><strong>Sumar un múltiplo de un renglón a otro renglón</strong>: Por ejemplo, sumar 2 veces el renglón 1 al renglón 3.</li>
+    </ul>
+    <p>Cuando aplicas una de estas operaciones a la matriz identidad (una matriz cuadrada con 1s en la diagonal principal y 0s en el resto), el resultado es una matriz elemental.</p>
+
+    <h2>Ejemplo práctico</h2>
+    <p>Tomemos la matriz identidad \( I_3 \) (de tamaño 3×3):</p>
+    <p>\( I_3 = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix} \)</p>
+    <p>Ahora, supongamos que intercambiamos el renglón 2 y el renglón 3:</p>
+    <ul>
+        <li>Renglón original 2: \( [0, 1, 0] \)</li>
+        <li>Renglón original 3: \( [0, 0, 1] \)</li>
+    </ul>
+    <p>Después del intercambio, la nueva matriz (llamada \( E \)) sería:</p>
+    <p>\( E = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 0 & 1 \\ 0 & 1 & 0 \end{bmatrix} \)</p>
+    <p>Esta matriz \( E \) es una matriz elemental porque se obtuvo al aplicar una operación elemental (intercambio de renglones) a la matriz identidad.</p>
+
+    <h2>¿Por qué es importante?</h2>
+    <p>El texto menciona que al multiplicar una matriz \( A \) por esta matriz elemental \( E \) a la izquierda (es decir, \( EA \)), se logra el mismo efecto que aplicar la operación elemental directamente a \( A \). Por ejemplo, si \( A \) es:</p>
+    <p>\( A = \begin{bmatrix} 5 & 7 \\ -1 & 0 \\ 8 & 3 \end{bmatrix} \)</p>
+    <p>Entonces:</p>
+    <p>\( EA = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 0 & 1 \\ 0 & 1 & 0 \end{bmatrix} \begin{bmatrix} 5 & 7 \\ -1 & 0 \\ 8 & 3 \end{bmatrix} = \begin{bmatrix} 5 & 7 \\ 8 & 3 \\ -1 & 0 \end{bmatrix} \)</p>
+    <p>Observa que el resultado de \( EA \) es simplemente \( A \) con los renglones 2 y 3 intercambiados, lo cual coincide con la operación elemental que definimos en \( E \).</p>
+
+    <h2>Significado</h2>
+    <p>Esto es significativo porque:</p>
+    <ul>
+        <li>Nos muestra que las operaciones elementales pueden representarse como multiplicaciones por matrices elementales.</li>
+        <li>Nos ayuda a entender las propiedades de las matrices invertibles, ya que estas operaciones (y sus matrices asociadas) son reversibles bajo ciertas condiciones.</li>
+        <li>Es una herramienta poderosa en álgebra lineal para manipular sistemas de ecuaciones o matrices de forma sistemática.</li>
+    </ul>
+
+    <h2>Tipos de matrices elementales</h2>
+    <p>Dado que hay tres tipos de operaciones elementales, hay tres tipos correspondientes de matrices elementales:</p>
+    <ul>
+        <li><strong>Matriz de intercambio</strong>: Se obtiene intercambiando dos renglones de la identidad (como en el ejemplo anterior).</li>
+        <li><strong>Matriz de escalado</strong>: Se obtiene multiplicando un renglón de la identidad por un escalar no cero.</li>
+        <li><strong>Matriz de suma</strong>: Se obtiene sumando un múltiplo de un renglón a otro renglón de la identidad.</li>
+    </ul>
+
+
     <hr>
 
 
+    <div class="theorem">
+        <h2>Teorema 3.10</h2>
+        <p>Sea \( E \) la matriz elemental que se obtiene al realizar una operación elemental con renglones sobre \( I_n \). Si la misma operación elemental con renglones se realiza sobre una matriz \( A \) de \( n \times n \), el resultado es el mismo que la matriz \( EA \).</p>
+    </div>
 
-  <h2>Vectores ortogonales</h2>
-  <p>
-    El concepto de perpendicularidad es fundamental para la geometría. 
-    En \(\mathbb{R}^2\) o \(\mathbb{R}^3\), dos vectores \(\mathbf{u}\) y \(\mathbf{v}\) distintos de cero 
-    son perpendiculares si el ángulo \(\theta\) entre ellos es un ángulo recto; 
-    esto es, si \(\theta = \pi/2\) radianes o 
-    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="5"> grados.  
-    Por tanto,
-  </p>
+    <div class="theorem">
+        <h2>Teorema 3.11</h2>
+        <p>Cada matriz elemental es invertible y su inversa es una matriz elemental del mismo tipo.</p>
+    </div>
+    <p><strong>El teorema fundamental de las matrices invertibles</strong></p>
+    <p>Ahora está en posición de probar uno de los principios resultantes de este libro: un conjunto de caracterizaciones equivalentes de lo que significa para una matriz ser invertible. En un sentido, gran parte del álgebra lineal está conectado a este teorema, ya sea en el desarrollo de dichas caracterizaciones o en su aplicación. Como puede esperar, dada esta introducción, este teorema es usaré bastante. ¡Hágalo su amigo!</p>
+    <p>Al Teorema 3.12 se le considera como el primer ejemplo de teorema fundamental, pues se harán agregados en capítulos posteriores. Se recuerda que, cuando se dice que un conjunto de enunciados acerca de una matriz \( A \) son equivalentes, se entiende que, para una \( A \) dada, los enunciados son todos verdaderos o todos falsos.</p>
 
-  <p style="align-items: center; text-align:center; "> 
+    <div class="theorem">
+        <h2>Teorema 3.12</h2>
+        <p><strong>El teorema fundamental de las matrices invertibles: versión 1</strong></p>
+        <p>Sea \( A \) una matriz de \( n \times n \). Los siguientes enunciados son equivalentes:</p>
+        <ul>
+            <li><strong>a.</strong> \( A \) es invertible.</li>
+            <li><strong>b.</strong> \( A\mathbf{x} = \mathbf{b} \) tiene una solución única para todo \( \mathbf{b} \in \mathbb{R}^n \).</li>
+            <li><strong>c.</strong> \( A\mathbf{x} = 0 \) tiene sólo la solución trivial.</li>
+            <li><strong>d.</strong> La forma escalonada reducida por renglones de \( A \) es \( I_n \).</li>
+            <li><strong>e.</strong> \( A \) es un producto de matrices elementales.</li>
+        </ul>
+    </div>
 
-    <span id="formula2">
-        \(  \cos\theta = \frac{\mathbf{u}\cdot\mathbf{v}}{\|\mathbf{u}\|\|\mathbf{v}\|} =   \)
-    </span> 
-   
-    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="8">
 
-    </p>
-
-    <p style="align-items: center; text-align:center; "> 
-
-    <span id="formula2">
-        \(  \quad \Rightarrow \quad \mathbf{u}\cdot \mathbf{v} = \)
-    </span> 
-   
-    <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="8">
-
-    </p>
-
-  
-  <p>
-    Esto motiva la siguiente definición:
-  </p>
-
-  <div class="math-block">
-    <div class="def-title">Definición</div>
-    Dos vectores \(\mathbf{u}\) y \(\mathbf{v}\) en \(\mathbb{R}^n\) son mutuamente 
-    <em>ortogonales</em> si 
-    <br><br>
-    <p style="align-items: center; text-align:center; "> 
-    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="8">
-    </p>
-  </div>
-
-  <p>
-    Dado que 
-    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="8">
-    \( = 0\) para todo vector \(\mathbf{v}\) en \(\mathbb{R}^n\), 
-    el vector cero es ortogonal a todo vector.
-  </p>
-
-  <p>
-    En \(\mathbb{R}^3\), si 
-    \(\mathbf{u} = [1,1,-2]\) y \(\mathbf{v} = [3,1,2]\), 
-    entonces son ortogonales, pues:
-    \[
-      \mathbf{u}\cdot \mathbf{v} = 1\cdot 3 + 1\cdot 1 + (-2)\cdot 2 = 3 + 1 - 4 = 0.
-    \]
-  </p>
-
-    <button type="submit">Enviar</button> 
-    <?php echo $verificar_3 ?>
-    <?php echo $verificar_4 ?>
-    <?php echo $verificar_5 ?>
-    <?php echo $verificar_6 ?>
-    <?php echo $verificar_7 ?>  
-
-    <hr>
-  <h2>Teorema de Pitágoras</h2>
-  <div class="math-block">
-    <div class="def-title">Teorema de Pitágoras</div>
     <p>
-      Para todos los vectores \(\mathbf{u}\) y \(\mathbf{v}\) en \(\mathbb{R}^n\),
-    </p>
-
-     <p style="align-items: center; text-align:center; "> 
-
-    <span id="formula3">
-        \(    \)
-    </span> 
-   
-    <input type="text" name="respuesta_8" id="respuesta_8" oninput="actualizarFormula3()" 
-    value="<?php echo $respuesta_8?>" size="18" >
+        El teorema dice que para una matriz \(   A   \) de tamaño \(  n \times n \)  (es decir, cuadrada), los cinco enunciados 
+        (a, b, c, d, e) son equivalentes. Esto significa que si uno de ellos es verdadero, entonces todos los demás también 
+        lo son, y si uno es falso, todos los demás también lo serán. En otras palabras, estos enunciados son como diferentes 
+        formas de describir la misma propiedad de \(   A  \): ser invertible.
 
     </p>
 
-    <button type="submit">Enviar</button> 
-    <?php echo $verificar_8 ?>
+
+
     
-    <hr>
-  
-
-    <p>
-      si y sólo si \(\mathbf{u}\) y \(\mathbf{v}\) son ortogonales.
-    </p>
-  </div>
-
-    <img src="../../../img/guia_239.png" alt="">
-
-        
-<h2>Proyecciones</h2>
-
-<p>
-Ahora se considerará el problema de encontrar la distancia desde un punto hasta una recta en el contexto de los vectores.
-Como verá, esta técnica conduce a un importante concepto: la <strong>proyección de un vector sobre otro vector</strong>.
-</p>
-
-
-
-<p>
-El problema de encontrar la distancia desde un punto \( B \) hasta una recta \( \ell \) (en \( \mathbb{R}^2 \) o \( \mathbb{R}^3 \)) 
-se reduce a encontrar la longitud del segmento de recta perpendicular \( PB \) o, de manera equivalente, 
-la longitud del vector \( \overrightarrow{PB} \).
-Si se elige un punto \( A \) sobre \( \ell \), entonces, en el triángulo recto \( \triangle APB \), los otros dos vectores son 
-el cateto \( \overrightarrow{AP} \) y la hipotenusa \( \overrightarrow{AB} \).
-\( \overrightarrow{AP} \) se llama <strong>proyección de</strong> \( \overrightarrow{AB} \) <strong>sobre la recta</strong> \( \ell \).
-</p>
-
-
-
 </div>
 
 
@@ -1786,215 +1721,96 @@ el cateto \( \overrightarrow{AP} \) y la hipotenusa \( \overrightarrow{AB} \).
 
 <div class="seccion derecha">
    
+     
+<h1>Teorema 3.13</h1>
+  <p>Sea \( A \) una matriz cuadrada. Si \( B \) es una matriz cuadrada tal que \( AB = I \) y \( BA = I \), entonces \( A \) es invertible y \( B = A^{-1} \).</p>
 
- 
+  <h1>Teorema 3.14</h1>
+  <p>Sea \( A \) una matriz cuadrada. Si una secuencia de operaciones elementales con renglones reduce \( A \) a \( I \), entonces la misma secuencia de operaciones elementales transforma \( I \) en \( A^{-1} \).</p>
 
- 
-<hr>
-
-<p>
-Considere dos vectores \( \mathbf{u} \) y \( \mathbf{v} \) distintos de cero. 
-Sea \( \mathbf{p} \) el vector que se obtiene al trazar una perpendicular desde la punta de \( \mathbf{v} \) sobre \( \mathbf{u} \), 
-y sea \( \theta \) el ángulo entre \( \mathbf{u} \) y \( \mathbf{v} \).
-</p>
-
-<p>
-Entonces, claramente 
-\[
-\mathbf{p} = \|\mathbf{p}\| \, \hat{\mathbf{u}},
-\]
-donde 
-\[
-\hat{\mathbf{u}} = \left(\frac{1}{\|\mathbf{u}\|}\right)\mathbf{u}
-\]
-es el vector unitario en la dirección de \( \mathbf{u} \).
-Por trigonometría, \( \|\mathbf{p}\| = \|\mathbf{v}\| \cos \theta \), 
-y como 
-\[
-\cos \theta = \frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\| \|\mathbf{v}\|},
-\]
-tenemos:
-</p>
-
-<p>
-\[
-\mathbf{p} = \|\mathbf{v}\| 
-\left( 
-\frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\| \|\mathbf{v}\|}
-\right)
-\left( 
-\frac{1}{\|\mathbf{u}\|}
-\right)
-\mathbf{u}
-\]
-</p>
-
-<p>
-Simplificando:
-\[
-\mathbf{p} 
-= 
-\left( 
-\frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\|^2}
-\right)\mathbf{u}
-=
-\left(
-\frac{\mathbf{u} \cdot \mathbf{v}}{\mathbf{u} \cdot \mathbf{u}}
-\right)\mathbf{u}
-\]
-</p>
-
-<p>
-Ésta es la fórmula que se quería, y es la base de la siguiente definición para vectores en \( \mathbb{R}^n \).
-</p>
-
-<div class="definicion">
-  <strong>Definición:</strong>  
-  Si \( \mathbf{u} \) y \( \mathbf{v} \) son vectores en \( \mathbb{R}^n \) y \( \mathbf{u} \neq \mathbf{0} \),  
-  entonces la <strong>proyección de</strong> \( \mathbf{v} \) <strong>sobre</strong> \( \mathbf{u} \)  
-  es el vector \( \mathrm{proj}_{\mathbf{u}}(\mathbf{v}) \) definido por:
-  <br><br>
-</div>
-
-   <p style="align-items: center; text-align:center; "> 
-
-    <span id="formula4">
-        \(    \)
-    </span> 
-   
-    <input type="text" name="respuesta_9" id="respuesta_9" oninput="actualizarFormula4()" 
-    value="<?php echo $respuesta_9?>" size="18" >
-
-    </p>
-
+  <h1>El método de Gauss-Jordan para calcular la inversa</h1>
+  <p>Es posible realizar operaciones con renglones sobre \( A \) e \( I \) simultáneamente al construir una "matriz superamentada" \( [A | I] \). El Teorema 3.14 muestra que si \( A \) es equivalente por renglones a \( I \) (lo cual, por el teorema fundamental (d) \(\iff\) (a)), significa que \( A \) es invertible, entonces operaciones elementales con renglones producirán
+  \[
+  [A | I] \rightarrow [I | A^{-1}]
+  \]
+  Si \( A \) no puede reducirse a \( I \), entonces el teorema fundamental garantiza que \( A \) no es invertible.</p>
+  <p>El procedimiento recién descrito es simplemente la eliminación de Gauss-Jordan efectuada sobre una matriz aumentada de \( n \times 2n \), en lugar de sobre una de \( n \times (n + 1) \). Otra forma de ver este procedimiento es observando el problema de encontrar \( A^{-1} \) al resolver la ecuación matricial \( AX = I_n \) para una matriz \( X \) de \( n \times n \). (Esto es suficiente, por el teorema fundamental, pues una inversa correcta de \( A \) debe ser una inversa de dos lados.)</p>
+  <p>Si las columnas de \( X \) se denotan \( X_1, \ldots, X_n \), entonces esta ecuación matricial es equivalente a resolver para las columnas de \( X \), una a la vez. Dado que las columnas de \( I_n \) son los vectores unitarios estándar \( e_1, \ldots, e_n \), entonces se tienen \( n \) sistemas de ecuaciones lineales, todos con matriz de coeficientes \( A \):
+  \[
+  AX_1 = e_1, \ldots, AX_n = e_n
+  \]
+  Dado que se necesita la misma secuencia de operaciones con renglones para llevar \( A \) a la forma escalonada reducida por renglones en cada caso, las matrices aumentadas para estos sistemas, \( [A | e_1], \ldots, [A | e_n] \), pueden combinarse como
+  \[
+  [A | e_1, e_2, \ldots, e_n] = [A | I_n]
+  \]
+  Ahora se aplican operaciones con renglones para tratar de reducir \( A \) a \( I \), lo cual, si tiene éxito, resolverá simultáneamente para las columnas de \( A^{-1} \), lo que transformará \( I_n \) en \( A^{-1} \).</p>
+  <p>Este uso de la eliminación de Gauss-Jordan se ilustra con tres ejemplos.</p>
   
+  
+  <h1>Ejemplo 3.30</h1>
+  <p>Encuentre la inversa de
+  \[
+  A = \begin{bmatrix}
+  1 & 2 & -1 \\
+  2 & 2 & 4 \\
+  1 & 3 & -3
+  \end{bmatrix}
+  \]
+  si existe.</p>
+
+  <h1>Solución</h1>
+  <p>La eliminación de Gauss-Jordan produce</p>
+  <table>
+    <tr><td>\([A | I] = \begin{bmatrix} 1 & 2 & -1 & | & 1 & 0 & 0 \\ 2 & 2 & 4 & | & 0 & 1 & 0 \\ 1 & 3 & -3 & | & 0 & 0 & 1 \end{bmatrix}\)</td></tr>
+    <tr><td>\(R_2 - 2R_1 \rightarrow R_2\)</td></tr>
+    <tr><td>\(R_3 - R_1 \rightarrow R_3\)</td></tr>
+    <tr><td>\(\begin{bmatrix} 1 & 2 & -1 & | & 1 & 0 & 0 \\ 0 & -2 & 6 & | & -2 & 1 & 0 \\ 0 & 1 & -2 & | -1 & 0 & 1 \end{bmatrix}\)</td></tr>
+    <tr><td>\((-1/2)R_2 \rightarrow R_2\)</td></tr>
+    <tr><td>\(\begin{bmatrix} 1 & 2 & -1 & | & 1 & 0 & 0 \\ 0 & 1 & -3 & | & 1 & -1/2 & 0 \\ 0 & 1 & -2 & | -1 & 0 & 1 \end{bmatrix}\)</td></tr>
+    <tr><td>\(R_3 - R_2 \rightarrow R_3\)</td></tr>
+    <tr><td>\(\begin{bmatrix} 1 & 2 & -1 & | & 1 & 0 & 0 \\ 0 & 1 & -3 & | & 1 & -1/2 & 0 \\ 0 & 0 & 1 & | & 0 & 1/2 & 1 \end{bmatrix}\)</td></tr>
+    <tr><td>\(R_1 + R_3 \rightarrow R_1\)</td></tr>
+    <tr><td>\(R_2 + 3R_3 \rightarrow R_2\)</td></tr>
+    <tr><td>\(\begin{bmatrix} 1 & 2 & 0 & | & 1 & 1/2 & 1 \\ 0 & 1 & 0 & | & 1 & 1/2 & 3 \\ 0 & 0 & 1 & | & 0 & 1/2 & 1 \end{bmatrix}\)</td></tr>
+    <tr><td>\(R_1 - 2R_2 \rightarrow R_1\)</td></tr>
+    <tr><td>\(\begin{bmatrix} 1 & 0 & 0 & | & -1 & -1/2 & -5 \\ 0 & 1 & 0 & | & 1 & 1/2 & 3 \\ 0 & 0 & 1 & | & 0 & 1/2 & 1 \end{bmatrix}\)</td></tr>
+  </table>
+  <p>Por tanto,</p>
+  <p>\(A^{-1} = \begin{bmatrix} -1 & -1/2 & -5 \\ 1 & 1/2 & 3 \\ 0 & 1/2 & 1 \end{bmatrix}\)</p>
+  <p>(Siempre debe comprobar que \( A A^{-1} = I \) mediante multiplicación directa. Por el Teorema 3.13, no necesita comprobar que también \( A^{-1} A = I \))</p>
+
+  <h1>Comentario</h1>
+  <p>Note que se usó la variante de eliminación de Gauss-Jordan que primero introduce todos los ceros abajo de los 1 pivote, de izquierda a derecha y de arriba abajo, y luego crea ceros arriba de los 1 pivote, de derecha a izquierda y de abajo arriba. Este planteamiento ahorra cálculos, como se anotó en el capítulo 2, pero puede encontrar más sencillo, cuando trabaje a mano, para crear todos los ceros en cada columna conforme avance. Desde luego, la respuesta será la misma.</p>
+
+  <h1>3.4 La factorización LU</h1>
+  <p>Así como es natural (e ilustrador) factorizar un número natural en un producto de otros números naturales (por ejemplo, 30 = 2 · 3 · 5), frecuentemente también es útil factorizar matrices como productos de otras matrices. Cualquier representación de una matriz como producto de dos o más matrices se llama factorización de matrices. Por ejemplo,
+  \[
+  \begin{bmatrix} 3 & -1 \\ 9 & -5 \end{bmatrix} = \begin{bmatrix} 1 & 0 \\ 3 & 1 \end{bmatrix} \begin{bmatrix} 3 & -1 \\ 0 & -2 \end{bmatrix}
+  \]
+  es una factorización de una matriz.</p>
+  <p>No es necesario decir que algunas factorizaciones son más útiles que otras. En esta sección se presenta una factorización matricial que surge en la solución de sistemas de ecuaciones lineales mediante eliminación gaussiana y es particularmente adecuada para implementaciones en computadora. En capítulos posteriores se encontrarán otras factorizaciones matriciales igualmente útiles. De hecho, el tema es rico y el se han dedicado libros y cursos enteros.</p>
+  <p>Considere un sistema de ecuaciones lineales de la forma \( A\mathbf{x} = \mathbf{b} \), donde \( A \) es una matriz de \( n \times n \). La meta de este libro es demostrar que la eliminación gaussiana implica-mente factoriza \( A \) en un producto de matrices que permiten resolver fácilmente el sistema dado (y cualquier otro sistema con la misma matriz de coeficientes). El siguiente ejemplo ilustra la idea básica.</p>
+
+  <h1>Ejemplo 3.33</h1>
+  <p>Sea
+  \[
+  A = \begin{bmatrix} 2 & 1 & 3 \\ 4 & -1 & 3 \\ -2 & 5 & 5 \end{bmatrix}
+  \]</p>
+
+  <h1>La reducción por renglones de \( A \) se realiza del modo siguiente:</h1>
+  <table>
+    <tr><td>\(A = \begin{bmatrix} 2 & 1 & 3 \\ 4 & -1 & 3 \\ -2 & 5 & 5 \end{bmatrix}\)</td></tr>
+    <tr><td>\(R_2 - 2R_1 \rightarrow R_2\)</td></tr>
+    <tr><td>\(\begin{bmatrix} 2 & 1 & 3 \\ 0 & -3 & -3 \\ -2 & 5 & 5 \end{bmatrix}\)</td></tr>
+    <tr><td>\(R_3 + R_1 \rightarrow R_3\)</td></tr>
+    <tr><td>\(\begin{bmatrix} 2 & 1 & 3 \\ 0 & -3 & -3 \\ 0 & 6 & 8 \end{bmatrix} = U\)</td></tr>
+  </table>
+ 
+    <p> Cada “0” que logras en la matriz mediante eliminación gaussiana se obtiene usando un multiplicador específico, que
+         corresponde a un solo paso de eliminación. Entonces siempre van a dar los justos para L</p>
 
 
-    <img src="../../../img/guia_240.png" alt="">
-
-    <div class="comment-section">
-        <div class="comment">
-            <p>El término <em>proyección</em> proviene de la idea de proyectar una imagen sobre un muro (con un proyector de diapositivas, por ejemplo). Imagine un haz de luz con rayos mutuamente paralelos y perpendiculares a <strong>u</strong> que brillan sobre <strong>v</strong>. La proyección de <strong>v</strong> sobre <strong>u</strong> es justo la sombra formada, o proyectada, por <strong>v</strong> sobre <strong>u</strong>.</p>
-        </div>
-        
-        <div class="comment">
-            <p>Puede ser útil considerar a \(\text{proy}_{\mathbf{u}}(\mathbf{v})\) como una función con variable <strong>v</strong>. Entonces la variable <strong>v</strong> ocurre sólo una vez en el lado derecho de la definición. Además, es útil tener en mente la figura 1.38, que recuerda que \(\text{proy}_{\mathbf{u}}(\mathbf{v})\) es un múltiplo escalar del vector <strong>u</strong> (no de <strong>v</strong>).</p>
-        </div>
-        
-        <div class="comment">
-            <p>Aunque en la deducción de la definición de \(\text{proy}_{\mathbf{u}}(\mathbf{v})\) se requirió que tanto <strong>v</strong> como <strong>u</strong> fuesen distintos de cero (¿por qué?), es claro a partir de la geometría que la proyección del vector cero sobre <strong>u</strong> es <strong>0</strong>. La definición está en concordancia con esto, pues:</p>
-            
-            <div class="math-formula">
-                \(\frac{\mathbf{u} \cdot \mathbf{0}}{\mathbf{u} \cdot \mathbf{u}} \mathbf{u} = 0\mathbf{u} = \mathbf{0}\)
-            </div>
-        </div>
-        
-        <div class="comment">
-            <p>Si el ángulo entre <strong>u</strong> y <strong>v</strong> es obtuso, como en la figura 1.38, entonces \(\text{proy}_{\mathbf{u}}(\mathbf{v})\) estará en la dirección opuesta de <strong>u</strong>; esto es, \(\text{proy}_{\mathbf{u}}(\mathbf{v})\) será un múltiplo escalar negativo de <strong>u</strong>.</p>
-        </div>
-        
-        <div class="comment">
-            <p>Si <strong>u</strong> es un vector unitario, entonces \(\text{proy}_{\mathbf{u}}(\mathbf{v}) = (\mathbf{u} \cdot \mathbf{v})\mathbf{u}\).</p>
-            <p class="note">(¿Por qué?)</p>
-            
-            <div class="highlight">
-                <p><strong>Explicación:</strong> Cuando <strong>u</strong> es un vector unitario, su magnitud es 1 (\(\|\mathbf{u}\| = 1\)). La fórmula general para la proyección es:</p>
-                <div class="math-formula">
-                    \(\text{proy}_{\mathbf{u}}(\mathbf{v}) = \frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\|^2} \mathbf{u}\)
-                </div>
-                <p>Como \(\|\mathbf{u}\| = 1\), entonces \(\|\mathbf{u}\|^2 = 1\), y la fórmula se simplifica a:</p>
-                <div class="math-formula">
-                    \(\text{proy}_{\mathbf{u}}(\mathbf{v}) = (\mathbf{u} \cdot \mathbf{v})\mathbf{u}\)
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <img src="../../../img/guia_241.png" alt="">
-
-    <hr>
-
-     <h1>1.3 Rectas y planos</h1>
     
-    <div class="section">
-        <p>Todos están familiarizados con la ecuación de una recta en el plano cartesiano. Ahora se considerarán rectas en \( \mathbb{R}^2 \) desde un punto de vista vectorial. La comprensión que se obtenga a partir de este planteamiento permitirá generalizar a rectas en \( \mathbb{R}^3 \) y luego a planos en \( \mathbb{R}^3 \). Mucha del álgebra lineal que se considerará en capítulos posteriores tiene sus orígenes en la geometría simple de rectas y planos; la habilidad para visualizarlos y pensar geométricamente en torno a un problema le servirá bastante.</p>
-    </div>
-
-    <div class="section">
-        <h2>Rectas en \( \mathbb{R}^2 \) y \( \mathbb{R}^3 \)</h2>
-        
-        <p>En el plano xy, la forma general de la ecuación de una recta es \( ax + by = c \), si \( b \neq 0 \), entonces la ecuación puede reescribirse como \( y = -(a/b)x + c/b \), que tiene la forma \( y = mx + k \). [Ésta es la forma pendiente ordenada al origen; \( m \) es la pendiente de la recta y el punto con coordenadas \((0, k)\) es su ordenada al origen.] Para incluir los vectores en este estudio, considere un ejemplo.</p>
-    </div>
-
-
-
-
-    <button onmousedown="mostrarImagen()" onmouseup="ocultarImagen()">Explicacion pendiente</button>
-    <!-- Elemento para mostrar la imagen -->
-
-    <img id="imagenMostrada" src="../../../img/guia_242.png" style="display: none; max-width: 100%" width="560">
-
-    <script>
-        function mostrarImagen() {
-        var imagenMostrada2 = document.getElementById('imagenMostrada');
-
-        // Mostrar la imagen
-        imagenMostrada.style.display = 'block';
-        }
-
-        function ocultarImagen() {
-        var imagenMostrada = document.getElementById('imagenMostrada');
-
-        // Ocultar la imagen al soltar el botón
-        imagenMostrada.style.display = 'none';
-        }
-    </script>
-
-
-
-
-    <div class="example">
-        <div class="example-title">Ejemplo 1.26</div>
-        
-        <p>En la figura 1.53 se muestra la recta \(\ell\), con ecuación \( 2x + y = 0 \). Es una recta con pendiente \(-2\) que 
-            pasa por el origen. El lado izquierdo de la ecuación está en la forma de producto punto; de hecho, si 
-            \( \mathbf{n} = \begin{bmatrix} 2 \\ 1 \end{bmatrix} \) y \( \mathbf{x} = \begin{bmatrix} x \\ y \end{bmatrix} \), 
-            entonces la ecuación se convierte en 
-            <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="8">
-            .</p>
-        
-        <div class="definition">
-            <div class="definition-title">Vector Normal</div>
-            <p>El vector \( \mathbf{n} \) es perpendicular a la recta; esto es, es <em>ortogonal</em> a cualquier vector \( \mathbf{x} \) que sea paralelo a la recta (figura 1.54) y se le conoce como <span class="vector">vector normal</span> a la recta. La ecuación \( \mathbf{n} \cdot \mathbf{x} = 0 \) es la <em>forma normal</em> de la ecuación de \(\ell\).</p>
-        </div>
-        
-        <div class="math-formula">
-            \( \mathbf{n} \cdot \mathbf{x} = 0 \quad \Rightarrow \quad \begin{bmatrix} 2 \\ 1 \end{bmatrix} \cdot \begin{bmatrix} x \\ y \end{bmatrix} = 0 \quad \Rightarrow \quad 2x + y = 0 \)
-        </div>
-        
-        <img src="../../../img/guia_243.png" alt="">
-        <p>Otra forma de pensar esta recta es imaginar una partícula que se mueve a lo largo de la recta. Suponga que la partícula inicialmente está en el origen en el tiempo \( t = 0 \) y se mueve a lo largo de la recta en tal forma que su coordenada \( x \) cambia 1 unidad por segundo. Entonces:</p>
-        
-        <ul>
-            <li>En \( t = 1 \) la partícula está en \((1, -2)\)</li>
-            <li>En \( t = 1.5 \) está en \((1.5, -3)\)</li>
-            <li>En \( t = -2 \) está (o estuvo) en \((-2, 4)\)</li>
-        </ul>
-        
-        <p>Este movimiento se ilustra en la figura 1.55.</p>
-        
-        <div class="highlight">
-            <p><strong>Interpretación vectorial:</strong> Podemos describir esta recta paramétricamente usando vectores. Si consideramos la dirección de movimiento como el vector \( \mathbf{d} = \begin{bmatrix} 1 \\ -2 \end{bmatrix} \), entonces cualquier punto \( \mathbf{x} \) en la recta puede escribirse como:</p>
-            <div class="math-formula">
-                \( \mathbf{x} = t\mathbf{d} = t\begin{bmatrix} 1 \\ -2 \end{bmatrix} \)
-            </div>
-            <p>donde \( t \) es un parámetro real que representa el tiempo.</p>
-        </div>
-    </div>
-
-   
-
-
 </div>
 </div>
  </form>
@@ -2003,7 +1819,7 @@ Simplificando:
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="tercero.php"
+        href="once.php"
         role="button"
         width="50px"
         height="50px"

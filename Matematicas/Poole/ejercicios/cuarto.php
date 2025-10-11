@@ -1,2020 +1,501 @@
+```php
 <?php
- 
-for ($i = 1; $i <= 230; $i++) {
+// Inicializar variables de respuestas y verificaciones
+for ($i = 1; $i <= 100; $i++) {
     ${"respuesta_" . $i} = '';
-}
-
-
-     
-for ($i = 1; $i <= 230; $i++) {
     ${"verificar_" . $i} = '';
 }
-
-     
 
 $mostrar_solucion = '';
 if ($_POST) {
     $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
     
     if ($mostrar_solucion === 'mostrar_solucion') {
-        // Establecer todas las respuestas correctas para las tablas de multiplicar
-        
-        // Tabla del 12
-        $respuesta_111 = '24'; 
-        $respuesta_112 = '36';
-        $respuesta_113 = '48';
-        $respuesta_114 = '60';
-        $respuesta_115 = '72';
-        $respuesta_116 = '84';
-        $respuesta_117 = '96';
-        $respuesta_118 = '108';
-        $respuesta_119 = '120';
-        $respuesta_120 = '132';
-        $respuesta_121 = '144';
-        
-        // Tabla del 13
-        $respuesta_1 = '26';
-        $respuesta_2 = '39';
-        $respuesta_3 = '52';
-        $respuesta_4 = '65';
-        $respuesta_5 = '78';
-        $respuesta_6 = '91';
-        $respuesta_7 = '104';
-        $respuesta_8 = '117';
-        $respuesta_9 = '130';
-        $respuesta_10 = '143';
-        $respuesta_11 = '156';
-        
-        // Tabla del 14
-        $respuesta_12 = '28';
-        $respuesta_13 = '42';
-        $respuesta_14 = '56';
-        $respuesta_15 = '70';
-        $respuesta_16 = '84';
-        $respuesta_17 = '98';
-        $respuesta_18 = '112';
-        $respuesta_19 = '126';
-        $respuesta_20 = '140';
-        $respuesta_21 = '154';
-        $respuesta_22 = '168';
-        
-        // Tabla del 15
-        $respuesta_23 = '30';
-        $respuesta_24 = '45';
-        $respuesta_25 = '60';
-        $respuesta_26 = '75';
-        $respuesta_27 = '90';
-        $respuesta_28 = '105';
-        $respuesta_29 = '120';
-        $respuesta_30 = '135';
-        $respuesta_31 = '150';
-        $respuesta_32 = '165';
-        $respuesta_33 = '180';
-        
-        // Tabla del 16
-        $respuesta_34 = '32';
-        $respuesta_35 = '48';
-        $respuesta_36 = '64';
-        $respuesta_37 = '80';
-        $respuesta_38 = '96';
-        $respuesta_39 = '112';
-        $respuesta_40 = '128';
-        $respuesta_41 = '144';
-        $respuesta_42 = '160';
-        $respuesta_43 = '176';
-        $respuesta_44 = '192';
-        
-        // Tabla del 17
-        $respuesta_45 = '34';
-        $respuesta_46 = '51';
-        $respuesta_47 = '68';
-        $respuesta_48 = '85';
-        $respuesta_49 = '102';
-        $respuesta_50 = '119';
-        $respuesta_51 = '136';
-        $respuesta_52 = '153';
-        $respuesta_53 = '170';
-        $respuesta_54 = '187';
-        $respuesta_55 = '204';
-        
-        // Tabla del 18
-        $respuesta_56 = '36';
-        $respuesta_57 = '54';
-        $respuesta_58 = '72';
-        $respuesta_59 = '90';
-        $respuesta_60 = '108';
-        $respuesta_61 = '126';
-        $respuesta_62 = '144';
-        $respuesta_63 = '162';
-        $respuesta_64 = '180';
-        $respuesta_65 = '198';
-        $respuesta_66 = '216';
-        
-        // Tabla del 19
-        $respuesta_67 = '38';
-        $respuesta_68 = '57';
-        $respuesta_69 = '76';
-        $respuesta_70 = '95';
-        $respuesta_71 = '114';
-        $respuesta_72 = '133';
-        $respuesta_73 = '152';
-        $respuesta_74 = '171';
-        $respuesta_75 = '190';
-        $respuesta_76 = '209';
-        $respuesta_77 = '228';
-        
-        // Tabla del 20
-        $respuesta_78 = '40';
-        $respuesta_79 = '60';
-        $respuesta_80 = '80';
-        $respuesta_81 = '100';
-        $respuesta_82 = '120';
-        $respuesta_83 = '140';
-        $respuesta_84 = '160';
-        $respuesta_85 = '180';
-        $respuesta_86 = '200';
-        $respuesta_87 = '220';
-        $respuesta_88 = '240';
-        
-        // Tabla del 21
-        $respuesta_89 = '42';
-        $respuesta_90 = '63';
-        $respuesta_91 = '84';
-        $respuesta_92 = '105';
-        $respuesta_93 = '126';
-        $respuesta_94 = '147';
-        $respuesta_95 = '168';
-        $respuesta_96 = '189';
-        $respuesta_97 = '210';
-        $respuesta_98 = '231';
-        $respuesta_99 = '252';
-        
-        // Tabla del 22
-        $respuesta_100 = '44';
-        $respuesta_101 = '66';
-        $respuesta_102 = '88';
-        $respuesta_103 = '110';
-        $respuesta_104 = '132'; 
-        $respuesta_105 = '154';
-        $respuesta_106 = '176';
-        $respuesta_107 = '198';
-        $respuesta_108 = '220';
-        $respuesta_109 = '242';
-        $respuesta_110 = '264';
+        // Establecer respuestas correctas para el cuestionario
+        $respuesta_1 = 'C(A^T)';
+        $respuesta_2 = 'todas las combinaciones lineales de sus filas';
+        $respuesta_3 = 'filas no nulas del resultado escalonado reducido (RREF)';
+        $respuesta_4 = 'no depende de b';
+        $respuesta_5 = 'b no pertenece al espacio columna de A';
+        $respuesta_6 = 'C(A^T)';
+        $respuesta_7 = 'C(A)';
+        $respuesta_8 = 'N(A)';
+        $respuesta_9 = 'N(A^T)';
+        $respuesta_10 = '4 vectores en R^3';
+        $respuesta_11 = 'A x = b';
+        $respuesta_12 = 'inconsistente';
+        $respuesta_13 = 'R^3';
+        $respuesta_14 = 'R^4';
+        $respuesta_15 = 'b^T A = 0^T';
+        $respuesta_16 = 'A x = 0';
+        $respuesta_17 = 'A^T y = 0';
+        $respuesta_18 = 'R^3';
+        $respuesta_19 = 'R^4';
+        $respuesta_20 = 'α r_1 + β r_2';
+        $respuesta_21 = 'r_1 × r_2';
+        $respuesta_22 = 'a x + b y + c z = 0';
+        $respuesta_23 = 's r_1 + t r_2';
+        $respuesta_24 = 'x · v = 0';
+        $respuesta_25 = 'ortogonales a todas las filas de A';
+        $respuesta_26 = 'A^T b = 0';
+        $respuesta_27 = 'b^T A = 0^T';
+        $respuesta_28 = 'N(A^T) = C(A)^⊥';
+        $respuesta_29 = 'ortogonal a todas las columnas de A';
+        $respuesta_30 = 'u_i · u_j = 0';
+        $respuesta_31 = '||u_i|| = 1';
+        $respuesta_32 = 'A^T A \hat{x} = A^T b';
+        $respuesta_33 = 'p = A \hat{x}';
+        $respuesta_34 = 'u_j^{n-1}';
+        $respuesta_35 = 'np.random.rand(n)';
+        $respuesta_36 = 'u / np.linalg.norm(u)';
+        $respuesta_37 = 'V @ np.ones(n)';
+        $respuesta_38 = '1';
+        $respuesta_39 = 'np.linalg.inv(V) @ b';
+        $respuesta_40 = 'np.linalg.qr(V)';
+        $respuesta_41 = 'np.linalg.solve(V, b)';
+        $respuesta_42 = 'np.linalg.cond(V)';
+        $respuesta_43 = 'np.linalg.norm(x - 1)';
+        $respuesta_44 = '@';
+        $respuesta_45 = 'producto matricial';
+        $respuesta_46 = 'R x = Q^T b';
+        $respuesta_47 = 'triangular superior';
+        $respuesta_48 = 'np.dot(R[i, i+1:], x_qr[i+1:])';
         
         // Marcar todas como correctas
-    for ($i = 1; $i <= 122; $i++) {
-    ${"verificar_$i"} = "correcto";
-    }
-
+        for ($i = 1; $i <= 100; $i++) {
+            ${"verificar_$i"} = "correcto";
+        }
     } else {
-    $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '26') {  
-       $verificar_1 = "correcto";
-   } elseif ($respuesta_1 === '') {
-       $verificar_1 = '';
-   } else {
-       $verificar_1 = "incorrecto";
-   }
+        // Verificar respuestas individuales
+        $respuesta_1 = isset($_POST['respuesta_1']) ? trim($_POST['respuesta_1']) : '';
+        $respuesta_2 = isset($_POST['respuesta_2']) ? trim($_POST['respuesta_2']) : '';
+        $respuesta_3 = isset($_POST['respuesta_3']) ? trim($_POST['respuesta_3']) : '';
+        $respuesta_4 = isset($_POST['respuesta_4']) ? trim($_POST['respuesta_4']) : '';
+        $respuesta_5 = isset($_POST['respuesta_5']) ? trim($_POST['respuesta_5']) : '';
+        $respuesta_6 = isset($_POST['respuesta_6']) ? trim($_POST['respuesta_6']) : '';
+        $respuesta_7 = isset($_POST['respuesta_7']) ? trim($_POST['respuesta_7']) : '';
+        $respuesta_8 = isset($_POST['respuesta_8']) ? trim($_POST['respuesta_8']) : '';
+        $respuesta_9 = isset($_POST['respuesta_9']) ? trim($_POST['respuesta_9']) : '';
+        $respuesta_10 = isset($_POST['respuesta_10']) ? trim($_POST['respuesta_10']) : '';
+        $respuesta_11 = isset($_POST['respuesta_11']) ? trim($_POST['respuesta_11']) : '';
+        $respuesta_12 = isset($_POST['respuesta_12']) ? trim($_POST['respuesta_12']) : '';
+        $respuesta_13 = isset($_POST['respuesta_13']) ? trim($_POST['respuesta_13']) : '';
+        $respuesta_14 = isset($_POST['respuesta_14']) ? trim($_POST['respuesta_14']) : '';
+        $respuesta_15 = isset($_POST['respuesta_15']) ? trim($_POST['respuesta_15']) : '';
+        $respuesta_16 = isset($_POST['respuesta_16']) ? trim($_POST['respuesta_16']) : '';
+        $respuesta_17 = isset($_POST['respuesta_17']) ? trim($_POST['respuesta_17']) : '';
+        $respuesta_18 = isset($_POST['respuesta_18']) ? trim($_POST['respuesta_18']) : '';
+        $respuesta_19 = isset($_POST['respuesta_19']) ? trim($_POST['respuesta_19']) : '';
+        $respuesta_20 = isset($_POST['respuesta_20']) ? trim($_POST['respuesta_20']) : '';
+        $respuesta_21 = isset($_POST['respuesta_21']) ? trim($_POST['respuesta_21']) : '';
+        $respuesta_22 = isset($_POST['respuesta_22']) ? trim($_POST['respuesta_22']) : '';
+        $respuesta_23 = isset($_POST['respuesta_23']) ? trim($_POST['respuesta_23']) : '';
+        $respuesta_24 = isset($_POST['respuesta_24']) ? trim($_POST['respuesta_24']) : '';
+        $respuesta_25 = isset($_POST['respuesta_25']) ? trim($_POST['respuesta_25']) : '';
+        $respuesta_26 = isset($_POST['respuesta_26']) ? trim($_POST['respuesta_26']) : '';
+        $respuesta_27 = isset($_POST['respuesta_27']) ? trim($_POST['respuesta_27']) : '';
+        $respuesta_28 = isset($_POST['respuesta_28']) ? trim($_POST['respuesta_28']) : '';
+        $respuesta_29 = isset($_POST['respuesta_29']) ? trim($_POST['respuesta_29']) : '';
+        $respuesta_30 = isset($_POST['respuesta_30']) ? trim($_POST['respuesta_30']) : '';
+        $respuesta_31 = isset($_POST['respuesta_31']) ? trim($_POST['respuesta_31']) : '';
+        $respuesta_32 = isset($_POST['respuesta_32']) ? trim($_POST['respuesta_32']) : '';
+        $respuesta_33 = isset($_POST['respuesta_33']) ? trim($_POST['respuesta_33']) : '';
+        $respuesta_34 = isset($_POST['respuesta_34']) ? trim($_POST['respuesta_34']) : '';
+        $respuesta_35 = isset($_POST['respuesta_35']) ? trim($_POST['respuesta_35']) : '';
+        $respuesta_36 = isset($_POST['respuesta_36']) ? trim($_POST['respuesta_36']) : '';
+        $respuesta_37 = isset($_POST['respuesta_37']) ? trim($_POST['respuesta_37']) : '';
+        $respuesta_38 = isset($_POST['respuesta_38']) ? trim($_POST['respuesta_38']) : '';
+        $respuesta_39 = isset($_POST['respuesta_39']) ? trim($_POST['respuesta_39']) : '';
+        $respuesta_40 = isset($_POST['respuesta_40']) ? trim($_POST['respuesta_40']) : '';
+        $respuesta_41 = isset($_POST['respuesta_41']) ? trim($_POST['respuesta_41']) : '';
+        $respuesta_42 = isset($_POST['respuesta_42']) ? trim($_POST['respuesta_42']) : '';
+        $respuesta_43 = isset($_POST['respuesta_43']) ? trim($_POST['respuesta_43']) : '';
+        $respuesta_44 = isset($_POST['respuesta_44']) ? trim($_POST['respuesta_44']) : '';
+        $respuesta_45 = isset($_POST['respuesta_45']) ? trim($_POST['respuesta_45']) : '';
+        $respuesta_46 = isset($_POST['respuesta_46']) ? trim($_POST['respuesta_46']) : '';
+        $respuesta_47 = isset($_POST['respuesta_47']) ? trim($_POST['respuesta_47']) : '';
+        $respuesta_48 = isset($_POST['respuesta_48']) ? trim($_POST['respuesta_48']) : '';
 
-   // Verificar la respuesta de la segunda pregunta
-   $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === '39') {  
-       $verificar_2 = "correcto";
-   } elseif ($respuesta_2 === '') {
-       $verificar_2 = '';
-   } else {
-       $verificar_2 = "incorrecto";
-   }
-
-   // Verificar la respuesta de la tercera pregunta
-   $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === '52') {  
-       $verificar_3 = "correcto";
-   } elseif ($respuesta_3 === '') {
-       $verificar_3 = '';
-   } else {
-       $verificar_3 = "incorrecto";
-   }
-
-   // Verificar la respuesta de la cuarta pregunta
-   $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === '65') {  
-       $verificar_4 = "correcto";
-   } elseif ($respuesta_4 === '') {
-       $verificar_4 = '';
-   } else {
-       $verificar_4 = "incorrecto";
-   }
-
-   // Verificar la respuesta de la quinta pregunta
-   $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === '78') {  
-       $verificar_5 = "correcto";
-   } elseif ($respuesta_5 === '') {
-       $verificar_5 = '';
-   } else {
-       $verificar_5 = "incorrecto";
-   }
-
-   // Verificar la respuesta de la sexta pregunta
-   $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === '91') {  
-       $verificar_6 = "correcto";
-   } elseif ($respuesta_6 === '') {
-       $verificar_6 = '';
-   } else {
-       $verificar_6 = "incorrecto";
-   }
-
-   // Verificar la respuesta de la séptima pregunta
-   $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === '104') {  
-       $verificar_7 = "correcto";
-   } elseif ($respuesta_7 === '') {
-       $verificar_7 = '';
-   } else {
-       $verificar_7 = "incorrecto";
-   }
-
-   // Verificar la respuesta de la octava pregunta
-   $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === '117') {  
-       $verificar_8 = "correcto";
-   } elseif ($respuesta_8 === '') {
-       $verificar_8 = '';
-   } else {
-       $verificar_8 = "incorrecto";
-   }
-
-   // Verificar la respuesta de la novena pregunta
-   $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === '130') {  
-       $verificar_9 = "correcto";
-   } elseif ($respuesta_9 === '') {
-       $verificar_9 = '';
-   } else {
-       $verificar_9 = "incorrecto";
-   }
-
-   // Verificar la respuesta de la décima pregunta
-   $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === '143') {  
-       $verificar_10 = "correcto";
-   } elseif ($respuesta_10 === '') {
-       $verificar_10 = '';
-   } else {
-       $verificar_10 = "incorrecto";
-   }
-
-   // Verificar la respuesta de la undécima pregunta
-   $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === '156') {  
-       $verificar_11 = "correcto";
-   } elseif ($respuesta_11 === '') {
-       $verificar_11 = '';
-   } else {
-       $verificar_11 = "incorrecto";
-   }
-
-
-    // Verificar la respuesta de la primera pregunta
-    $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-    if ($respuesta_12 === '28') {  
-        $verificar_12 = "correcto";
-    } elseif ($respuesta_12 === '') {
-        $verificar_12 = '';
-    } else {
-        $verificar_12 = "incorrecto";
+        // Verificar respuestas
+        $verificar_1 = ($respuesta_1 === 'C(A^T)') ? 'correcto' : ($respuesta_1 === '' ? '' : 'incorrecto');
+        $verificar_2 = ($respuesta_2 === 'todas las combinaciones lineales de sus filas') ? 'correcto' : ($respuesta_2 === '' ? '' : 'incorrecto');
+        $verificar_3 = ($respuesta_3 === 'filas no nulas del resultado escalonado reducido (RREF)') ? 'correcto' : ($respuesta_3 === '' ? '' : 'incorrecto');
+        $verificar_4 = ($respuesta_4 === 'no depende de b') ? 'correcto' : ($respuesta_4 === '' ? '' : 'incorrecto');
+        $verificar_5 = ($respuesta_5 === 'b no pertenece al espacio columna de A') ? 'correcto' : ($respuesta_5 === '' ? '' : 'incorrecto');
+        $verificar_6 = ($respuesta_6 === 'C(A^T)') ? 'correcto' : ($respuesta_6 === '' ? '' : 'incorrecto');
+        $verificar_7 = ($respuesta_7 === 'C(A)') ? 'correcto' : ($respuesta_7 === '' ? '' : 'incorrecto');
+        $verificar_8 = ($respuesta_8 === 'N(A)') ? 'correcto' : ($respuesta_8 === '' ? '' : 'incorrecto');
+        $verificar_9 = ($respuesta_9 === 'N(A^T)') ? 'correcto' : ($respuesta_9 === '' ? '' : 'incorrecto');
+        $verificar_10 = ($respuesta_10 === '4 vectores en R^3') ? 'correcto' : ($respuesta_10 === '' ? '' : 'incorrecto');
+        $verificar_11 = ($respuesta_11 === 'A x = b') ? 'correcto' : ($respuesta_11 === '' ? '' : 'incorrecto');
+        $verificar_12 = ($respuesta_12 === 'inconsistente') ? 'correcto' : ($respuesta_12 === '' ? '' : 'incorrecto');
+        $verificar_13 = ($respuesta_13 === 'R^3') ? 'correcto' : ($respuesta_13 === '' ? '' : 'incorrecto');
+        $verificar_14 = ($respuesta_14 === 'R^4') ? 'correcto' : ($respuesta_14 === '' ? '' : 'incorrecto');
+        $verificar_15 = ($respuesta_15 === 'b^T A = 0^T') ? 'correcto' : ($respuesta_15 === '' ? '' : 'incorrecto');
+        $verificar_16 = ($respuesta_16 === 'A x = 0') ? 'correcto' : ($respuesta_16 === '' ? '' : 'incorrecto');
+        $verificar_17 = ($respuesta_17 === 'A^T y = 0') ? 'correcto' : ($respuesta_17 === '' ? '' : 'incorrecto');
+        $verificar_18 = ($respuesta_18 === 'R^3') ? 'correcto' : ($respuesta_18 === '' ? '' : 'incorrecto');
+        $verificar_19 = ($respuesta_19 === 'R^4') ? 'correcto' : ($respuesta_19 === '' ? '' : 'incorrecto');
+        $verificar_20 = ($respuesta_20 === 'α r_1 + β r_2') ? 'correcto' : ($respuesta_20 === '' ? '' : 'incorrecto');
+        $verificar_21 = ($respuesta_21 === 'r_1 × r_2') ? 'correcto' : ($respuesta_21 === '' ? '' : 'incorrecto');
+        $verificar_22 = ($respuesta_22 === 'a x + b y + c z = 0') ? 'correcto' : ($respuesta_22 === '' ? '' : 'incorrecto');
+        $verificar_23 = ($respuesta_23 === 's r_1 + t r_2') ? 'correcto' : ($respuesta_23 === '' ? '' : 'incorrecto');
+        $verificar_24 = ($respuesta_24 === 'x · v = 0') ? 'correcto' : ($respuesta_24 === '' ? '' : 'incorrecto');
+        $verificar_25 = ($respuesta_25 === 'ortogonales a todas las filas de A') ? 'correcto' : ($respuesta_25 === '' ? '' : 'incorrecto');
+        $verificar_26 = ($respuesta_26 === 'A^T b = 0') ? 'correcto' : ($respuesta_26 === '' ? '' : 'incorrecto');
+        $verificar_27 = ($respuesta_27 === 'b^T A = 0^T') ? 'correcto' : ($respuesta_27 === '' ? '' : 'incorrecto');
+        $verificar_28 = ($respuesta_28 === 'N(A^T) = C(A)^⊥') ? 'correcto' : ($respuesta_28 === '' ? '' : 'incorrecto');
+        $verificar_29 = ($respuesta_29 === 'ortogonal a todas las columnas de A') ? 'correcto' : ($respuesta_29 === '' ? '' : 'incorrecto');
+        $verificar_30 = ($respuesta_30 === 'u_i · u_j = 0') ? 'correcto' : ($respuesta_30 === '' ? '' : 'incorrecto');
+        $verificar_31 = ($respuesta_31 === '||u_i|| = 1') ? 'correcto' : ($respuesta_31 === '' ? '' : 'incorrecto');
+        $verificar_32 = ($respuesta_32 === 'A^T A \hat{x} = A^T b') ? 'correcto' : ($respuesta_32 === '' ? '' : 'incorrecto');
+        $respuesta_33 = ($respuesta_33 === 'p = A \hat{x}') ? 'correcto' : ($respuesta_33 === '' ? '' : 'incorrecto');
+        $verificar_34 = ($respuesta_34 === 'u_j^{n-1}') ? 'correcto' : ($respuesta_34 === '' ? '' : 'incorrecto');
+        $verificar_35 = ($respuesta_35 === 'np.random.rand(n)') ? 'correcto' : ($respuesta_35 === '' ? '' : 'incorrecto');
+        $verificar_36 = ($respuesta_36 === 'u / np.linalg.norm(u)') ? 'correcto' : ($respuesta_36 === '' ? '' : 'incorrecto');
+        $verificar_37 = ($respuesta_37 === 'V @ np.ones(n)') ? 'correcto' : ($respuesta_37 === '' ? '' : 'incorrecto');
+        $verificar_38 = ($respuesta_38 === '1') ? 'correcto' : ($respuesta_38 === '' ? '' : 'incorrecto');
+        $verificar_39 = ($respuesta_39 === 'np.linalg.inv(V) @ b') ? 'correcto' : ($respuesta_39 === '' ? '' : 'incorrecto');
+        $verificar_40 = ($respuesta_40 === 'np.linalg.qr(V)') ? 'correcto' : ($respuesta_40 === '' ? '' : 'incorrecto');
+        $verificar_41 = ($respuesta_41 === 'np.linalg.solve(V, b)') ? 'correcto' : ($respuesta_41 === '' ? '' : 'incorrecto');
+        $verificar_42 = ($respuesta_42 === 'np.linalg.cond(V)') ? 'correcto' : ($respuesta_42 === '' ? '' : 'incorrecto');
+        $verificar_43 = ($respuesta_43 === 'np.linalg.norm(x - 1)') ? 'correcto' : ($respuesta_43 === '' ? '' : 'incorrecto');
+        $verificar_44 = ($respuesta_44 === '@') ? 'correcto' : ($respuesta_44 === '' ? '' : 'incorrecto');
+        $verificar_45 = ($respuesta_45 === 'producto matricial') ? 'correcto' : ($respuesta_45 === '' ? '' : 'incorrecto');
+        $verificar_46 = ($respuesta_46 === 'R x = Q^T b') ? 'correcto' : ($respuesta_46 === '' ? '' : 'incorrecto');
+        $verificar_47 = ($respuesta_47 === 'triangular superior') ? 'correcto' : ($respuesta_47 === '' ? '' : 'incorrecto');
+        $verificar_48 = ($respuesta_48 === 'np.dot(R[i, i+1:], x_qr[i+1:])') ? 'correcto' : ($respuesta_48 === '' ? '' : 'incorrecto');
     }
-  
-    // Verificar la respuesta de la segunda pregunta
-    $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-    if ($respuesta_13 === '42') { 
-        $verificar_13 = "correcto";
-    } elseif ($respuesta_13 === '') {
-        $verificar_13 = '';
-    } else {
-         $verificar_13 = "incorrecto";
-    }
-  
-    // Verificar la respuesta de la tercera pregunta
-    $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-    if ($respuesta_14 === '56') {  
-        $verificar_14 = "correcto";
-    } elseif ($respuesta_14 === '') {
-        $verificar_14 = '';
-    } else {
-        $verificar_14 = "incorrecto";
-    }
-  
-    // Verificar la respuesta de la cuarta pregunta
-    $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-    if ($respuesta_15 === '70') { 
-        $verificar_15 = "correcto";
-    } elseif ($respuesta_15 === '') {
-        $verificar_15 = '';
-    } else {
-        $verificar_15 = "incorrecto";
-    }
-  
-    // Verificar la respuesta de la quinta pregunta
-    $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-    if ($respuesta_16 === '84') {  
-        $verificar_16 = "correcto";
-    } elseif ($respuesta_16 === '') {
-        $verificar_16 = '';
-    } else {
-        $verificar_16 = "incorrecto";
-    }
-  
-    // Verificar la respuesta de la sexta pregunta
-    $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-    if ($respuesta_17 === '98') {  
-        $verificar_17 = "correcto";
-        } elseif ($respuesta_17 === '') {
-        $verificar_17 = '';
-    } else {
-        $verificar_17 = "incorrecto";
-    }
-  
-    // Verificar la respuesta de la séptima pregunta
-    $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-    if ($respuesta_18 === '112') {  
-        $verificar_18 = "correcto";
-    } elseif ($respuesta_18 === '') {
-        $verificar_18 = '';
-    } else {
-        $verificar_18 = "incorrecto";
-    }
-  
-    // Verificar la respuesta de la octava pregunta
-    $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-    if ($respuesta_19 === '126') {  
-        $verificar_19 = "correcto";
-    } elseif ($respuesta_19 === '') {
-        $verificar_19 = '';
-    } else {
-        $verificar_19 = "incorrecto";
-    }
-  
-    // Verificar la respuesta de la novena pregunta
-    $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
-    if ($respuesta_20 === '140') {  
-        $verificar_20 = "correcto";
-    } elseif ($respuesta_20 === '') {
-        $verificar_20 = '';
-    } else {
-        $verificar_20 = "incorrecto";
-    }
-  
-    // Verificar la respuesta de la décima pregunta
-    $respuesta_21 = isset($_POST['respuesta_21']) ? $_POST['respuesta_21'] : '';
-    if ($respuesta_21 === '154') {  
-         $verificar_21 = "correcto";
-    } elseif ($respuesta_21 === '') {
-        $verificar_21 = '';
-    } else {
-        $verificar_21 = "incorrecto";
-    }
-  
-    // Verificar la respuesta de la undécima pregunta
-    $respuesta_22 = isset($_POST['respuesta_22']) ? $_POST['respuesta_22'] : '';
-    if ($respuesta_22 === '168') {  
-        $verificar_22 = "correcto";
-    } elseif ($respuesta_22 === '') {
-        $verificar_22 = '';
-    } else {
-        $verificar_22 = "incorrecto";
-    }
-
-     // Verificar la respuesta de la primera pregunta
-   $respuesta_23 = isset($_POST['respuesta_23']) ? $_POST['respuesta_23'] : '';
-   if ($respuesta_23 === '30') {  
-       $verificar_23 = "correcto";
-   } elseif ($respuesta_23 === '') {
-       $verificar_23 = '';
-   } else {
-       $verificar_23 = "incorrecto";
-   }
-
-   // Verificar la respuesta de la segunda pregunta
-   $respuesta_24 = isset($_POST['respuesta_24']) ? $_POST['respuesta_24'] : '';
-   if ($respuesta_24 === '45') {  
-       $verificar_24 = "correcto";
-   } elseif ($respuesta_24 === '') {
-       $verificar_24 = '';
-   } else {
-       $verificar_24 = "incorrecto";
-   }
-
-   // Verificar la respuesta de la tercera pregunta
-   $respuesta_25 = isset($_POST['respuesta_25']) ? $_POST['respuesta_25'] : '';
-   if ($respuesta_25 === '60') { 
-       $verificar_25 = "correcto";
-   } elseif ($respuesta_25 === '') {
-       $verificar_25 = '';
-   } else {
-       $verificar_25 = "incorrecto";
-   }
-
-   // Verificar la respuesta de la cuarta pregunta
-   $respuesta_26 = isset($_POST['respuesta_26']) ? $_POST['respuesta_26'] : '';
-   if ($respuesta_26 === '75') {  
-       $verificar_26 = "correcto";
-   } elseif ($respuesta_26 === '') {
-       $verificar_26 = '';
-   } else {
-       $verificar_26 = "incorrecto";
-   }
-
-   // Verificar la respuesta de la quinta pregunta
-   $respuesta_27 = isset($_POST['respuesta_27']) ? $_POST['respuesta_27'] : '';
-   if ($respuesta_27 === '90') {  
-       $verificar_27 = "correcto";
-   } elseif ($respuesta_27 === '') {
-       $verificar_27 = '';
-   } else {
-       $verificar_27 = "incorrecto";
-   }
-
-   // Verificar la respuesta de la sexta pregunta
-   $respuesta_28 = isset($_POST['respuesta_28']) ? $_POST['respuesta_28'] : '';
-   if ($respuesta_28 === '105') {  
-       $verificar_28 = "correcto";
-   } elseif ($respuesta_28 === '') {
-       $verificar_28 = '';
-   } else {
-       $verificar_28 = "incorrecto";
-   }
-
-   // Verificar la respuesta de la séptima pregunta
-   $respuesta_29 = isset($_POST['respuesta_29']) ? $_POST['respuesta_29'] : '';
-   if ($respuesta_29 === '120') {  
-       $verificar_29 = "correcto";
-   } elseif ($respuesta_29 === '') {
-       $verificar_29 = '';
-   } else {
-       $verificar_29 = "incorrecto";
-   }
-
-   // Verificar la respuesta de la octava pregunta
-   $respuesta_30 = isset($_POST['respuesta_30']) ? $_POST['respuesta_30'] : '';
-   if ($respuesta_30 === '135') {  
-       $verificar_30 = "correcto";
-   } elseif ($respuesta_30 === '') {
-       $verificar_30 = '';
-   } else {
-       $verificar_30 = "incorrecto";
-   }
-
-   // Verificar la respuesta de la novena pregunta
-   $respuesta_31 = isset($_POST['respuesta_31']) ? $_POST['respuesta_31'] : '';
-   if ($respuesta_31 === '150') {  
-       $verificar_31 = "correcto";
-   } elseif ($respuesta_31 === '') {
-       $verificar_31 = '';
-   } else {
-       $verificar_31 = "incorrecto";
-   }
-
-   // Verificar la respuesta de la décima pregunta
-   $respuesta_32 = isset($_POST['respuesta_32']) ? $_POST['respuesta_32'] : '';
-   if ($respuesta_32 === '165') {  
-       $verificar_32 = "correcto";
-   } elseif ($respuesta_32 === '') {
-       $verificar_32 = '';
-   } else {
-       $verificar_32 = "incorrecto";
-   }
-
-   // Verificar la respuesta de la undécima pregunta
-   $respuesta_33 = isset($_POST['respuesta_33']) ? $_POST['respuesta_33'] : '';
-   if ($respuesta_33 === '180') {  
-       $verificar_33 = "correcto";
-   } elseif ($respuesta_33 === '') {
-       $verificar_33 = '';
-   } else {
-       $verificar_33 = "incorrecto";
-   }
-
-    $respuesta_34 = isset($_POST['respuesta_34']) ? $_POST['respuesta_34'] : '';
-    if ($respuesta_34 === '32') { 
-        $verificar_34 = "correcto";
-    } elseif ($respuesta_34 === '') {
-        $verificar_34 = '';
-    } else {
-        $verificar_34 = "incorrecto";
-    }
-
-    $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
-    if ($respuesta_35 === '48') { 
-        $verificar_35 = "correcto";
-    } elseif ($respuesta_35 === '') {
-        $verificar_35 = '';
-    } else {
-        $verificar_35 = "incorrecto";
-    }
-
-    $respuesta_36 = isset($_POST['respuesta_36']) ? $_POST['respuesta_36'] : '';
-    if ($respuesta_36 === '64') { 
-        $verificar_36 = "correcto";
-    } elseif ($respuesta_36 === '') {
-    $verificar_36 = '';
-    } else {
-        $verificar_36 = "incorrecto";
-    }
-
-    $respuesta_37 = isset($_POST['respuesta_37']) ? $_POST['respuesta_37'] : '';
-    if ($respuesta_37 === '80') { 
-        $verificar_37 = "correcto";
-    } elseif ($respuesta_37 === '') {
-        $verificar_37 = '';
-    } else {
-        $verificar_37 = "incorrecto";
-    }
-
-    $respuesta_38 = isset($_POST['respuesta_38']) ? $_POST['respuesta_38'] : '';
-    if ($respuesta_38 === '96') { 
-        $verificar_38 = "correcto";
-    } elseif ($respuesta_38 === '') {
-        $verificar_38 = '';
-    } else {
-        $verificar_38 = "incorrecto";
-    }
-
-    $respuesta_39 = isset($_POST['respuesta_39']) ? $_POST['respuesta_39'] : '';
-    if ($respuesta_39 === '112') { 
-        $verificar_39 = "correcto";
-    } elseif ($respuesta_39 === '') {
-        $verificar_39 = '';
-    } else {
-        $verificar_39 = "incorrecto";
-    }
-
-    $respuesta_40 = isset($_POST['respuesta_40']) ? $_POST['respuesta_40'] : '';
-    if ($respuesta_40 === '128') { 
-        $verificar_40 = "correcto";
-    } elseif ($respuesta_40 === '') {
-        $verificar_40 = '';
-    } else {
-        $verificar_40 = "incorrecto";
-    }
-
-    $respuesta_41 = isset($_POST['respuesta_41']) ? $_POST['respuesta_41'] : '';
-    if ($respuesta_41 === '144') { 
-        $verificar_41 = "correcto";
-    } elseif ($respuesta_41 === '') {
-        $verificar_41 = '';
-    } else {
-        $verificar_41 = "incorrecto";
-    }
-
-    $respuesta_42 = isset($_POST['respuesta_42']) ? $_POST['respuesta_42'] : '';
-    if ($respuesta_42 === '160') { 
-        $verificar_42 = "correcto";
-    } elseif ($respuesta_42 === '') {
-        $verificar_42 = '';
-    } else {
-        $verificar_42 = "incorrecto";
-    }
-
-    $respuesta_43 = isset($_POST['respuesta_43']) ? $_POST['respuesta_43'] : '';
-    if ($respuesta_43 === '176') { 
-        $verificar_43 = "correcto";
-    } elseif ($respuesta_43 === '') {
-        $verificar_43 = '';
-    } else {
-    $verificar_43 = "incorrecto";
-    }
-
-    $respuesta_44 = isset($_POST['respuesta_44']) ? $_POST['respuesta_44'] : '';
-    if ($respuesta_44 === '192') { 
-        $verificar_44 = "correcto";
-    } elseif ($respuesta_44 === '') {
-    $verificar_44 = '';
-    } else {
-        $verificar_44 = "incorrecto";
-    }
-
-    $respuesta_45 = isset($_POST['respuesta_45']) ? $_POST['respuesta_45'] : '';
-    if ($respuesta_45 === '34') { 
-        $verificar_45 = "correcto";
-    } elseif ($respuesta_45 === '') {
-    $verificar_45 = '';
-    } else {
-        $verificar_45 = "incorrecto";
-    }
-
-    $respuesta_46 = isset($_POST['respuesta_46']) ? $_POST['respuesta_46'] : '';
-    if ($respuesta_46 === '51') { 
-        $verificar_46 = "correcto";
-    } elseif ($respuesta_46 === '') {
-    $verificar_46 = '';
-    } else {
-        $verificar_46 = "incorrecto";
-    }
-
-    $respuesta_47 = isset($_POST['respuesta_47']) ? $_POST['respuesta_47'] : '';
-    if ($respuesta_47 === '68') { 
-        $verificar_47 = "correcto";
-    } elseif ($respuesta_47 === '') {
-        $verificar_47 = '';
-    } else {
-        $verificar_47 = "incorrecto";
-    }
-
-    $respuesta_48 = isset($_POST['respuesta_48']) ? $_POST['respuesta_48'] : '';
-    if ($respuesta_48 === '85') { 
-        $verificar_48 = "correcto";
-    } elseif ($respuesta_48 === '') {
-    $verificar_48 = '';
-    } else {
-        $verificar_48 = "incorrecto";
-    }
-
-    $respuesta_49 = isset($_POST['respuesta_49']) ? $_POST['respuesta_49'] : '';
-    if ($respuesta_49 === '102') { 
-        $verificar_49 = "correcto";
-    } elseif ($respuesta_49 === '') {
-    $verificar_49 = '';
-    } else {
-        $verificar_49 = "incorrecto";
-    }
-
-    $respuesta_50 = isset($_POST['respuesta_50']) ? $_POST['respuesta_50'] : '';
-    if ($respuesta_50 === '119') { 
-        $verificar_50 = "correcto";
-    } elseif ($respuesta_50 === '') {
-    $verificar_50 = '';
-    } else {
-        $verificar_50 = "incorrecto";
-    }
-
- $respuesta_51 = isset($_POST['respuesta_51']) ? $_POST['respuesta_51'] : '';
-if ($respuesta_51 === '136') { 
-    $verificar_51 = "correcto";
-} elseif ($respuesta_51 === '') {
-    $verificar_51 = '';
-} else {
-    $verificar_51 = "incorrecto";
-}
-
- $respuesta_52 = isset($_POST['respuesta_52']) ? $_POST['respuesta_52'] : '';
-if ($respuesta_52 === '153') { 
-    $verificar_52 = "correcto";
-} elseif ($respuesta_52 === '') {
-    $verificar_52 = '';
-} else {
-    $verificar_52 = "incorrecto";
-}
-
- $respuesta_53 = isset($_POST['respuesta_53']) ? $_POST['respuesta_53'] : '';
-if ($respuesta_53 === '170') { 
-    $verificar_53 = "correcto";
-} elseif ($respuesta_53 === '') {
-    $verificar_53 = '';
-} else {
-    $verificar_53 = "incorrecto";
-}
-
- $respuesta_54 = isset($_POST['respuesta_54']) ? $_POST['respuesta_54'] : '';
-if ($respuesta_54 === '187') { 
-    $verificar_54 = "correcto";
-} elseif ($respuesta_54 === '') {
-    $verificar_54 = '';
-} else {
-    $verificar_54 = "incorrecto";
-}
-
- $respuesta_55 = isset($_POST['respuesta_55']) ? $_POST['respuesta_55'] : '';
-if ($respuesta_55 === '204') { 
-    $verificar_55 = "correcto";
-} elseif ($respuesta_55 === '') {
-    $verificar_55 = '';
-} else {
-    $verificar_55 = "incorrecto";
-}
-
-
- $respuesta_56 = isset($_POST['respuesta_56']) ? $_POST['respuesta_56'] : '';
-if ($respuesta_56 === '36') { 
-    $verificar_56 = "correcto";
-} elseif ($respuesta_56 === '') {
-    $verificar_56 = '';
-} else {
-    $verificar_56 = "incorrecto";
-}
-
- $respuesta_57 = isset($_POST['respuesta_57']) ? $_POST['respuesta_57'] : '';
-if ($respuesta_57 === '54') { 
-    $verificar_57 = "correcto";
-} elseif ($respuesta_57 === '') {
-    $verificar_57 = '';
-} else {
-    $verificar_57 = "incorrecto";
-}
-
- $respuesta_58 = isset($_POST['respuesta_58']) ? $_POST['respuesta_58'] : '';
-if ($respuesta_58 === '72') { 
-    $verificar_58 = "correcto";
-} elseif ($respuesta_58 === '') {
-    $verificar_58 = '';
-} else {
-    $verificar_58 = "incorrecto";
-}
-
- $respuesta_59 = isset($_POST['respuesta_59']) ? $_POST['respuesta_59'] : '';
-if ($respuesta_59 === '90') { 
-    $verificar_59 = "correcto";
-} elseif ($respuesta_59 === '') {
-    $verificar_59 = '';
-} else {
-    $verificar_59 = "incorrecto";
-}
-
- $respuesta_60 = isset($_POST['respuesta_60']) ? $_POST['respuesta_60'] : '';
-if ($respuesta_60 === '108') { 
-    $verificar_60 = "correcto";
-} elseif ($respuesta_60 === '') {
-    $verificar_60 = '';
-} else {
-    $verificar_60 = "incorrecto";
-}
-
- $respuesta_61 = isset($_POST['respuesta_61']) ? $_POST['respuesta_61'] : '';
-if ($respuesta_61 === '126') { 
-    $verificar_61 = "correcto";
-} elseif ($respuesta_61 === '') {
-    $verificar_61 = '';
-} else {
-    $verificar_61 = "incorrecto";
-}
-
- $respuesta_62 = isset($_POST['respuesta_62']) ? $_POST['respuesta_62'] : '';
-if ($respuesta_62 === '144') { 
-    $verificar_62 = "correcto";
-} elseif ($respuesta_62 === '') {
-    $verificar_62 = '';
-} else {
-    $verificar_62 = "incorrecto";
-}
-
- $respuesta_63 = isset($_POST['respuesta_63']) ? $_POST['respuesta_63'] : '';
-if ($respuesta_63 === '162') { 
-    $verificar_63 = "correcto";
-} elseif ($respuesta_63 === '') {
-    $verificar_63 = '';
-} else {
-    $verificar_63 = "incorrecto";
-}
-
- $respuesta_64 = isset($_POST['respuesta_64']) ? $_POST['respuesta_64'] : '';
-if ($respuesta_64 === '180') { 
-    $verificar_64 = "correcto";
-} elseif ($respuesta_64 === '') {
-    $verificar_64 = '';
-} else {
-    $verificar_64 = "incorrecto";
-}
-
- $respuesta_65 = isset($_POST['respuesta_65']) ? $_POST['respuesta_65'] : '';
-if ($respuesta_65 === '198') { 
-    $verificar_65 = "correcto";
-} elseif ($respuesta_65 === '') {
-    $verificar_65 = '';
-} else {
-    $verificar_65 = "incorrecto";
-}
-
- $respuesta_66 = isset($_POST['respuesta_66']) ? $_POST['respuesta_66'] : '';
-if ($respuesta_66 === '216') { 
-    $verificar_66 = "correcto";
-} elseif ($respuesta_66 === '') {
-    $verificar_66 = '';
-} else {
-    $verificar_66 = "incorrecto";
-}
-
- $respuesta_67 = isset($_POST['respuesta_67']) ? $_POST['respuesta_67'] : '';
-if ($respuesta_67 === '38') { 
-    $verificar_67 = "correcto";
-} elseif ($respuesta_67 === '') {
-    $verificar_67 = '';
-} else {
-    $verificar_67 = "incorrecto";
-}
-
- $respuesta_68 = isset($_POST['respuesta_68']) ? $_POST['respuesta_68'] : '';
-if ($respuesta_68 === '57') { 
-    $verificar_68 = "correcto";
-} elseif ($respuesta_68 === '') {
-    $verificar_68 = '';
-} else {
-    $verificar_68 = "incorrecto";
-}
-
- $respuesta_69 = isset($_POST['respuesta_69']) ? $_POST['respuesta_69'] : '';
-if ($respuesta_69 === '76') { 
-    $verificar_69 = "correcto";
-} elseif ($respuesta_69 === '') {
-    $verificar_69 = '';
-} else {
-    $verificar_69 = "incorrecto";
-}
-
- $respuesta_70 = isset($_POST['respuesta_70']) ? $_POST['respuesta_70'] : '';
-if ($respuesta_70 === '95') { 
-    $verificar_70 = "correcto";
-} elseif ($respuesta_70 === '') {
-    $verificar_70 = '';
-} else {
-    $verificar_70 = "incorrecto";
-}
-
- $respuesta_71 = isset($_POST['respuesta_71']) ? $_POST['respuesta_71'] : '';
-if ($respuesta_71 === '114') { 
-    $verificar_71 = "correcto";
-} elseif ($respuesta_71 === '') {
-    $verificar_71 = '';
-} else {
-    $verificar_71 = "incorrecto";
-}
-
- $respuesta_72 = isset($_POST['respuesta_72']) ? $_POST['respuesta_72'] : '';
-if ($respuesta_72 === '133') { 
-    $verificar_72 = "correcto";
-} elseif ($respuesta_72 === '') {
-    $verificar_72 = '';
-} else {
-    $verificar_72 = "incorrecto";
-}
-
- $respuesta_73 = isset($_POST['respuesta_73']) ? $_POST['respuesta_73'] : '';
-if ($respuesta_73 === '152') { 
-    $verificar_73 = "correcto";
-} elseif ($respuesta_73 === '') {
-    $verificar_73 = '';
-} else {
-    $verificar_73 = "incorrecto";
-}
-
- $respuesta_74 = isset($_POST['respuesta_74']) ? $_POST['respuesta_74'] : '';
-if ($respuesta_74 === '171') { 
-    $verificar_74 = "correcto";
-} elseif ($respuesta_74 === '') {
-    $verificar_74 = '';
-} else {
-    $verificar_74 = "incorrecto";
-}
-
- $respuesta_75 = isset($_POST['respuesta_75']) ? $_POST['respuesta_75'] : '';
-if ($respuesta_75 === '190') { 
-    $verificar_75 = "correcto";
-} elseif ($respuesta_75 === '') {
-    $verificar_75 = '';
-} else {
-    $verificar_75 = "incorrecto";
-}
-
- $respuesta_76 = isset($_POST['respuesta_76']) ? $_POST['respuesta_76'] : '';
-if ($respuesta_76 === '209') { 
-    $verificar_76 = "correcto";
-} elseif ($respuesta_76 === '') {
-    $verificar_76 = '';
-} else {
-    $verificar_76 = "incorrecto";
-}
-
- $respuesta_77 = isset($_POST['respuesta_77']) ? $_POST['respuesta_77'] : '';
-if ($respuesta_77 === '228') { 
-    $verificar_77 = "correcto";
-} elseif ($respuesta_77 === '') {
-    $verificar_77 = '';
-} else {
-    $verificar_77 = "incorrecto";
-}
-
- $respuesta_78 = isset($_POST['respuesta_78']) ? $_POST['respuesta_78'] : '';
-if ($respuesta_78 === '40') { 
-    $verificar_78 = "correcto";
-} elseif ($respuesta_78 === '') {
-    $verificar_78 = '';
-} else {
-    $verificar_78 = "incorrecto";
-}
-
- $respuesta_79 = isset($_POST['respuesta_79']) ? $_POST['respuesta_79'] : '';
-if ($respuesta_79 === '60') { 
-    $verificar_79 = "correcto";
-} elseif ($respuesta_79 === '') {
-    $verificar_79 = '';
-} else {
-    $verificar_79 = "incorrecto";
-}
-
- $respuesta_80 = isset($_POST['respuesta_80']) ? $_POST['respuesta_80'] : '';
-if ($respuesta_80 === '80') { 
-    $verificar_80 = "correcto";
-} elseif ($respuesta_80 === '') {
-    $verificar_80 = '';
-} else {
-    $verificar_80 = "incorrecto";
-}
-
- $respuesta_81 = isset($_POST['respuesta_81']) ? $_POST['respuesta_81'] : '';
-if ($respuesta_81 === '100') { 
-    $verificar_81 = "correcto";
-} elseif ($respuesta_81 === '') {
-    $verificar_81 = '';
-} else {
-    $verificar_81 = "incorrecto";
-}
-
-    $respuesta_82 = isset($_POST['respuesta_82']) ? $_POST['respuesta_82'] : '';
-    if ($respuesta_82 === '120') { 
-        $verificar_82 = "correcto";
-    } elseif ($respuesta_82 === '') {
-        $verificar_82 = '';
-    } else {
-        $verificar_82 = "incorrecto";
-    }
-
-    $respuesta_83 = isset($_POST['respuesta_83']) ? $_POST['respuesta_83'] : '';
-    if ($respuesta_83 === '140') { 
-       $verificar_83 = "correcto";
-    } elseif ($respuesta_83 === '') {
-        $verificar_83 = '';
-    } else {
-        $verificar_83 = "incorrecto";
-    }
-
-    $respuesta_84 = isset($_POST['respuesta_84']) ? $_POST['respuesta_84'] : '';
-    if ($respuesta_84 === '160') { 
-        $verificar_84 = "correcto";
-    } elseif ($respuesta_84 === '') {
-        $verificar_84 = '';
-    } else {
-        $verificar_84 = "incorrecto";
-    }
-
-    $respuesta_85 = isset($_POST['respuesta_85']) ? $_POST['respuesta_85'] : '';
-    if ($respuesta_85 === '180') { 
-        $verificar_85 = "correcto";
-    } elseif ($respuesta_85 === '') {
-        $verificar_85 = '';
-    } else {
-        $verificar_85 = "incorrecto";
-    }
-
-    $respuesta_86 = isset($_POST['respuesta_86']) ? $_POST['respuesta_86'] : '';
-    if ($respuesta_86 === '200') { 
-        $verificar_86 = "correcto";
-    } elseif ($respuesta_86 === '') {
-        $verificar_86 = '';
-    } else {
-        $verificar_86 = "incorrecto";
-    }
-
-    $respuesta_87 = isset($_POST['respuesta_87']) ? $_POST['respuesta_87'] : '';
-    if ($respuesta_87 === '220') { 
-        $verificar_87 = "correcto";
-    } elseif ($respuesta_87 === '') {
-        $verificar_87 = '';
-    } else {
-        $verificar_87 = "incorrecto";
-    }
-
-    $respuesta_88 = isset($_POST['respuesta_88']) ? $_POST['respuesta_88'] : '';
-    if ($respuesta_88 === '240') { 
-        $verificar_88 = "correcto";
-    } elseif ($respuesta_88 === '') {
-        $verificar_88 = '';
-    } else {
-        $verificar_88 = "incorrecto";
-    }
-
- $respuesta_89 = isset($_POST['respuesta_89']) ? $_POST['respuesta_89'] : '';
-if ($respuesta_89 === '42') { 
-    $verificar_89 = "correcto";
-} elseif ($respuesta_89 === '') {
-    $verificar_89 = '';
-} else {
-    $verificar_89 = "incorrecto";
-}
-
- $respuesta_90 = isset($_POST['respuesta_90']) ? $_POST['respuesta_90'] : '';
-if ($respuesta_90 === '63') { 
-    $verificar_90 = "correcto";
-} elseif ($respuesta_90 === '') {
-    $verificar_90 = '';
-} else {
-    $verificar_90 = "incorrecto";
-}
-
- $respuesta_91 = isset($_POST['respuesta_91']) ? $_POST['respuesta_91'] : '';
-if ($respuesta_91 === '84') { 
-    $verificar_91 = "correcto";
-} elseif ($respuesta_91 === '') {
-    $verificar_91 = '';
-} else {
-    $verificar_91 = "incorrecto";
-}
-
- $respuesta_92 = isset($_POST['respuesta_92']) ? $_POST['respuesta_92'] : '';
-if ($respuesta_92 === '105') { 
-    $verificar_92 = "correcto";
-} elseif ($respuesta_92 === '') {
-    $verificar_92 = '';
-} else {
-    $verificar_92 = "incorrecto";
-}
-
- $respuesta_93 = isset($_POST['respuesta_93']) ? $_POST['respuesta_93'] : '';
-if ($respuesta_93 === '126') { 
-    $verificar_93 = "correcto";
-} elseif ($respuesta_93 === '') {
-    $verificar_93 = '';
-} else {
-    $verificar_93 = "incorrecto";
-}
-
- $respuesta_94 = isset($_POST['respuesta_94']) ? $_POST['respuesta_94'] : '';
-if ($respuesta_94 === '147') { 
-    $verificar_94 = "correcto";
-} elseif ($respuesta_94 === '') {
-    $verificar_94 = '';
-} else {
-    $verificar_94 = "incorrecto";
-}
-
- $respuesta_95 = isset($_POST['respuesta_95']) ? $_POST['respuesta_95'] : '';
-if ($respuesta_95 === '168') { 
-    $verificar_95 = "correcto";
-} elseif ($respuesta_95 === '') {
-    $verificar_95 = '';
-} else {
-    $verificar_95 = "incorrecto";
-}
-
- $respuesta_96 = isset($_POST['respuesta_96']) ? $_POST['respuesta_96'] : '';
-if ($respuesta_96 === '189') { 
-    $verificar_96 = "correcto";
-} elseif ($respuesta_96 === '') {
-    $verificar_96 = '';
-} else {
-    $verificar_96 = "incorrecto";
-}
-
- $respuesta_97 = isset($_POST['respuesta_97']) ? $_POST['respuesta_97'] : '';
-if ($respuesta_97 === '210') { 
-    $verificar_97 = "correcto";
-} elseif ($respuesta_97 === '') {
-    $verificar_97 = '';
-} else {
-    $verificar_97 = "incorrecto";
-}
-
- $respuesta_98 = isset($_POST['respuesta_98']) ? $_POST['respuesta_98'] : '';
-if ($respuesta_98 === '231') { 
-    $verificar_98 = "correcto";
-} elseif ($respuesta_98 === '') {
-    $verificar_98 = '';
-} else {
-    $verificar_98 = "incorrecto";
-}
-
- $respuesta_99 = isset($_POST['respuesta_99']) ? $_POST['respuesta_99'] : '';
-if ($respuesta_99 === '252') { 
-    $verificar_99 = "correcto";
-} elseif ($respuesta_99 === '') {
-    $verificar_99 = '';
-} else {
-    $verificar_99 = "incorrecto";
-}
-
-
- $respuesta_100 = isset($_POST['respuesta_100']) ? $_POST['respuesta_100'] : '';
-if ($respuesta_100 === '44') { 
-    $verificar_100 = "correcto";
-} elseif ($respuesta_100 === '') {
-    $verificar_100 = '';
-} else {
-    $verificar_100 = "incorrecto";
-}
-
- $respuesta_101 = isset($_POST['respuesta_101']) ? $_POST['respuesta_101'] : '';
-if ($respuesta_101 === '66') { 
-    $verificar_101 = "correcto";
-} elseif ($respuesta_101 === '') {
-    $verificar_101 = '';
-} else {
-    $verificar_101 = "incorrecto";
-}
-
- $respuesta_102 = isset($_POST['respuesta_102']) ? $_POST['respuesta_102'] : '';
-if ($respuesta_102 === '88') { 
-    $verificar_102 = "correcto";
-} elseif ($respuesta_102 === '') {
-    $verificar_102 = '';
-} else {
-    $verificar_102 = "incorrecto";
-}
-
- $respuesta_103 = isset($_POST['respuesta_103']) ? $_POST['respuesta_103'] : '';
-if ($respuesta_103 === '110') { 
-    $verificar_103 = "correcto";
-} elseif ($respuesta_103 === '') {
-    $verificar_103 = '';
-} else {
-    $verificar_103 = "incorrecto";
-}
-
- $respuesta_104 = isset($_POST['respuesta_104']) ? $_POST['respuesta_104'] : '';
-if ($respuesta_104 === '132') { 
-    $verificar_104 = "correcto";
-} elseif ($respuesta_104 === '') {
-    $verificar_104 = '';
-} else {
-    $verificar_104 = "incorrecto";
-}
-
- $respuesta_105 = isset($_POST['respuesta_105']) ? $_POST['respuesta_105'] : '';
-if ($respuesta_105 === '154') { 
-    $verificar_105 = "correcto";
-} elseif ($respuesta_105 === '') {
-    $verificar_105 = '';
-} else {
-    $verificar_105 = "incorrecto";
-}
-
- $respuesta_106 = isset($_POST['respuesta_106']) ? $_POST['respuesta_106'] : '';
-if ($respuesta_106 === '176') { 
-    $verificar_106 = "correcto";
-} elseif ($respuesta_106 === '') {
-    $verificar_106 = '';
-} else {
-    $verificar_106 = "incorrecto";
-}
-
- $respuesta_107 = isset($_POST['respuesta_107']) ? $_POST['respuesta_107'] : '';
-if ($respuesta_107 === '198') { 
-    $verificar_107 = "correcto";
-} elseif ($respuesta_107 === '') {
-    $verificar_107 = '';
-} else {
-    $verificar_107 = "incorrecto";
-}
-
- $respuesta_108 = isset($_POST['respuesta_108']) ? $_POST['respuesta_108'] : '';
-if ($respuesta_108 === '220') { 
-    $verificar_108 = "correcto";
-} elseif ($respuesta_108 === '') {
-    $verificar_108 = '';
-} else {
-    $verificar_108 = "incorrecto";
-}
-
- $respuesta_109 = isset($_POST['respuesta_109']) ? $_POST['respuesta_109'] : '';
-if ($respuesta_109 === '242') { 
-    $verificar_109 = "correcto";
-} elseif ($respuesta_109 === '') {
-    $verificar_109 = '';
-} else {
-    $verificar_109 = "incorrecto";
-}
-
- $respuesta_110 = isset($_POST['respuesta_110']) ? $_POST['respuesta_110'] : '';
-if ($respuesta_110 === '264') { 
-    $verificar_110 = "correcto";
-} elseif ($respuesta_110 === '') {
-    $verificar_110 = '';
-} else {
-    $verificar_110 = "incorrecto";
-}
-
-// Tabla del 12
-$respuesta_111 = isset($_POST['respuesta_111']) ? $_POST['respuesta_111'] : '';
-if ($respuesta_111 === '24') {  
-    $verificar_111 = "correcto";
-} elseif ($respuesta_111 === '') {
-    $verificar_111 = '';
-} else {
-    $verificar_111 = "incorrecto";
-}
-
-$respuesta_112 = isset($_POST['respuesta_112']) ? $_POST['respuesta_112'] : '';
-if ($respuesta_112 === '36') {  
-    $verificar_112 = "correcto";
-} elseif ($respuesta_112 === '') {
-    $verificar_112 = '';
-} else {
-    $verificar_112 = "incorrecto";
-}
-
-$respuesta_113 = isset($_POST['respuesta_113']) ? $_POST['respuesta_113'] : '';
-if ($respuesta_113 === '48') {  
-    $verificar_113 = "correcto";
-} elseif ($respuesta_113 === '') {
-    $verificar_113 = '';
-} else {
-    $verificar_113 = "incorrecto";
-}
-
-$respuesta_114 = isset($_POST['respuesta_114']) ? $_POST['respuesta_114'] : '';
-if ($respuesta_114 === '60') {  
-    $verificar_114 = "correcto";
-} elseif ($respuesta_114 === '') {
-    $verificar_114 = '';
-} else {
-    $verificar_114 = "incorrecto";
-}
-
-$respuesta_115 = isset($_POST['respuesta_115']) ? $_POST['respuesta_115'] : '';
-if ($respuesta_115 === '72') {  
-    $verificar_115 = "correcto";
-} elseif ($respuesta_115 === '') {
-    $verificar_115 = '';
-} else {
-    $verificar_115 = "incorrecto";
-}
-
-$respuesta_116 = isset($_POST['respuesta_116']) ? $_POST['respuesta_116'] : '';
-if ($respuesta_116 === '84') {  
-    $verificar_116 = "correcto";
-} elseif ($respuesta_116 === '') {
-    $verificar_116 = '';
-} else {
-    $verificar_116 = "incorrecto";
-}
-
-$respuesta_117 = isset($_POST['respuesta_117']) ? $_POST['respuesta_117'] : '';
-if ($respuesta_117 === '96') {  
-    $verificar_117 = "correcto";
-} elseif ($respuesta_117 === '') {
-    $verificar_117 = '';
-} else {
-    $verificar_117 = "incorrecto";
-}
-
-$respuesta_118 = isset($_POST['respuesta_118']) ? $_POST['respuesta_118'] : '';
-if ($respuesta_118 === '108') {  
-    $verificar_118 = "correcto";
-} elseif ($respuesta_118 === '') {
-    $verificar_118 = '';
-} else {
-    $verificar_118 = "incorrecto";
-}
-
-$respuesta_119 = isset($_POST['respuesta_119']) ? $_POST['respuesta_119'] : '';
-if ($respuesta_119 === '120') {  
-    $verificar_119 = "correcto";
-} elseif ($respuesta_119 === '') {
-    $verificar_119 = '';
-} else {
-    $verificar_119 = "incorrecto";
-}
-
-$respuesta_120 = isset($_POST['respuesta_120']) ? $_POST['respuesta_120'] : '';
-if ($respuesta_120 === '132') {  
-    $verificar_120 = "correcto";
-} elseif ($respuesta_120 === '') {
-    $verificar_120 = '';
-} else {
-    $verificar_120 = "incorrecto";
-}
-
-$respuesta_121 = isset($_POST['respuesta_121']) ? $_POST['respuesta_121'] : '';
-if ($respuesta_121 === '144') {  
-    $verificar_121 = "correcto";
-} elseif ($respuesta_121 === '') {
-    $verificar_121 = '';
-} else {
-    $verificar_121 = "incorrecto";
-}
-}
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../style_2_0.css">
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-<style>
- 
-    .seccion {
-    /*width: 50%;*/    
-    width: calc(50% - 7.5px);
-    padding: 20px;
-    box-sizing: border-box;
-    height: 390vh;
-    }
-
-</style>
- 
-<script>
-function handleSubmit(event) {
-    event.preventDefault();
-
-    const formData = new FormData(event.target);
-
-    fetch(event.target.action, {
-        method: 'POST',
-        body: formData
-    })
-    .then(response => response.text())
-    .then(html => {
-        document.body.innerHTML = html;
-
-        // Asegúrate de que MathJax procese el nuevo contenido
-        if (window.MathJax) {
-            MathJax.typeset();
+    <title>Cuestionario de Álgebra Lineal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding: 20px;
         }
-        actualizarFormula();
-        actualizarFormula2();
-        actualizarFormula3();
-        actualizarFormula4();
-        actualizarFormula5();
-        actualizarFormula6();
-        actualizarFormula7();
-        actualizarFormula8();
-        actualizarFormula9();
-        actualizarFormula10();
-        actualizarFormula11();
-        actualizarFormula12();
-        actualizarFormula13();
-        actualizarFormula14();
-        actualizarFormula15();
-        actualizarFormula16();
-        actualizarFormula17();
-        actualizarFormula18();
-        actualizarFormula19();
-        actualizarFormula20();
-    })
-    .catch(error => {
-        console.error('Error al enviar el formulario:', error);
-    });
-}
-
-function actualizarFormula() {
-    var f = document.getElementById('respuesta_1').value || "";
-    var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula').innerHTML = `$$ ${formula} $$`;
-    if (window.MathJax) {
-        MathJax.typeset();
-    }
-}
-
-function actualizarFormula2() {
-    var f = document.getElementById('respuesta_2').value || "";
-    var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula2').innerHTML = `$$ ${formula} $$`;
-    if (window.MathJax) {
-        MathJax.typeset();
-    }
-}
-
-function actualizarFormula3() {
-    var f = document.getElementById('respuesta_3').value || "";
-    var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula3').innerHTML = `$$ ${formula} $$`;
-    if (window.MathJax) {
-        MathJax.typeset();
-    }
-}
-
-function actualizarFormula4() {
-    var f = document.getElementById('respuesta_4').value || "";
-    var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula4').innerHTML = `$$ ${formula} $$`;
-    if (window.MathJax) {
-        MathJax.typeset();
-    }
-}
-
-function actualizarFormula5() {
-    var f = document.getElementById('respuesta_5').value || "";
-    var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula5').innerHTML = `$$ ${formula} $$`;
-    if (window.MathJax) {
-        MathJax.typeset();
-    }
-}
-
-function actualizarFormula6() {
-    var f = document.getElementById('respuesta_6').value || "";
-    var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula6').innerHTML = `$$ ${formula} $$`;
-    if (window.MathJax) {
-        MathJax.typeset();
-    }
-}
-
-function actualizarFormula7() {
-    var f = document.getElementById('respuesta_7').value || "";
-    var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula7').innerHTML = `$$ ${formula} $$`;
-    if (window.MathJax) {
-        MathJax.typeset();
-    }
-}
-
-function actualizarFormula8() {
-    var f = document.getElementById('respuesta_8').value || "";
-    var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula8').innerHTML = `$$ ${formula} $$`;
-    if (window.MathJax) {
-        MathJax.typeset();
-    }
-}
-
-function actualizarFormula9() {
-    var f = document.getElementById('respuesta_9').value || "";
-    var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula9').innerHTML = `$$ ${formula} $$`;
-    if (window.MathJax) {
-        MathJax.typeset();
-    }
-}
-
-function actualizarFormula10() {
-    var f = document.getElementById('respuesta_10').value || "";
-    var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula10').innerHTML = `$$ ${formula} $$`;
-    if (window.MathJax) {
-        MathJax.typeset();
-    }
-}
-
-function actualizarFormula11() {
-    var f = document.getElementById('respuesta_11').value || "";
-    var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula11').innerHTML = `$$ ${formula} $$`;
-    if (window.MathJax) {
-        MathJax.typeset();
-    }
-}
-
-function actualizarFormula12() {
-    var f = document.getElementById('respuesta_12').value || "";
-    var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula12').innerHTML = `$$ ${formula} $$`;
-    if (window.MathJax) {
-        MathJax.typeset();
-    }
-}
-
-function actualizarFormula13() {
-    var f = document.getElementById('respuesta_13').value || "";
-    var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula13').innerHTML = `$$ ${formula} $$`;
-    if (window.MathJax) {
-        MathJax.typeset();
-    }
-}
-
-function actualizarFormula14() {
-    var f = document.getElementById('respuesta_14').value || "";
-    var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula14').innerHTML = `$$ ${formula} $$`;
-    if (window.MathJax) {
-        MathJax.typeset();
-    }
-}
-
-function actualizarFormula15() {
-    var f = document.getElementById('respuesta_15').value || "";
-    var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula15').innerHTML = `$$ ${formula} $$`;
-    if (window.MathJax) {
-        MathJax.typeset();
-    }
-}
-
-function actualizarFormula16() {
-    var f = document.getElementById('respuesta_16').value || "";
-    var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula16').innerHTML = `$$ ${formula} $$`;
-    if (window.MathJax) {
-        MathJax.typeset();
-    }
-}
-
-function actualizarFormula17() {
-    var f = document.getElementById('respuesta_17').value || "";
-    var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula17').innerHTML = `$$ ${formula} $$`;
-    if (window.MathJax) {
-        MathJax.typeset();
-    }
-}
-
-function actualizarFormula18() {
-    var f = document.getElementById('respuesta_18').value || "";
-    var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula18').innerHTML = `$$ ${formula} $$`;
-    if (window.MathJax) {
-        MathJax.typeset();
-    }
-}
-
-function actualizarFormula19() {
-    var f = document.getElementById('respuesta_19').value || "";
-    var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula19').innerHTML = `$$ ${formula} $$`;
-    if (window.MathJax) {
-        MathJax.typeset();
-    }
-}
-
-function actualizarFormula20() {
-    var f = document.getElementById('respuesta_20').value || "";
-    var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula20').innerHTML = `$$ ${formula} $$`;
-    if (window.MathJax) {
-        MathJax.typeset();
-    }
-}
-
-function mostrarMensaje() {
-    document.getElementById("mensaje").style.display = 'block';
-    // Asegúrate de que MathJax procese el nuevo contenido
-    MathJax.typeset([document.getElementById("mensaje")]);
-}
-
-function ocultarMensaje() {
-    document.getElementById("mensaje").style.display = 'none';
-}
-
-
-function mostrarMensaje2() {
-    document.getElementById("mensaje2").style.display = 'block';
-    // Asegúrate de que MathJax procese el nuevo contenido
-    MathJax.typeset([document.getElementById("mensaje")]);
-}
-
-function ocultarMensaje2() {
-    document.getElementById("mensaje2").style.display = 'none';
-}
-
-
-
-function mostrarMensaje3() {
-    document.getElementById("mensaje3").style.display = 'block';
-    // Asegúrate de que MathJax procese el nuevo contenido
-    MathJax.typeset([document.getElementById("mensaje3")]);
-}
-
-function ocultarMensaje3() {
-    document.getElementById("mensaje3").style.display = 'none';
-}
-
-function mostrarMensaje4() {
-    document.getElementById("mensaje4").style.display = 'block';
-    // Asegúrate de que MathJax procese el nuevo contenido
-    MathJax.typeset([document.getElementById("mensaje4")]);
-}
-
-function ocultarMensaje4() {
-    document.getElementById("mensaje4").style.display = 'none';
-}
-
-
-
-
-</script>
-    
+        .form-container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        h2, h3 {
+            color: #343a40;
+        }
+        input[type="text"] {
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+        .correcto {
+            color: green;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .incorrecto {
+            color: red;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        button {
+            margin: 10px 5px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            fetch(form.action, {
+                method: form.method,
+                body: new FormData(form)
+            })
+            .then(response => response.text())
+            .then(html => {
+                document.body.innerHTML = html;
+                MathJax.typeset();
+            });
+        }
+    </script>
 </head>
-<body>  
+<body>
+<form action="" method="POST" autocomplete="off" onsubmit="handleSubmit(event)">
+    <div class="form-container">
+        <h2>Cuestionario: Conceptos de Álgebra Lineal</h2>
 
-<form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
-<div class="form-container">
-
-    
-<div class="seccion izquierda"> 
- 
-
-    <div class="section">
-        <div class="conclusion">
-            <h2>En resumen:</h2>
-            <div class="math">
-                <p><strong>Sin z:</strong> restricción en 2 variables → <span class="dimension">1 dimensión libre</span> → <strong>recta</strong></p>
-                <p><strong>Con z:</strong> restricción en 3 variables → <span class="dimension">2 dimensiones libres</span> → <strong>plano</strong></p>
-            </div>
+        <!-- Sección 1: Espacio Fila -->
+        <div class="section">
+            <h3>1. Espacio Fila \( C(A^T) \)</h3>
+            <p>El espacio fila de una matriz \( A \) está formado por 
+            <input type="text" name="respuesta_1" value="<?php echo htmlspecialchars($respuesta_1); ?>" size="8"> 
+            , que son 
+            <input type="text" name="respuesta_2" value="<?php echo htmlspecialchars($respuesta_2); ?>" size="30"> 
+            .</p>
+            <span class="<?php echo $verificar_1; ?>"><?php echo $verificar_1; ?></span>
+            <span class="<?php echo $verificar_2; ?>"><?php echo $verificar_2; ?></span>
+            <p>Las 
+            <input type="text" name="respuesta_3" value="<?php echo htmlspecialchars($respuesta_3); ?>" size="40"> 
+            son una base del espacio fila de \( A \).</p>
+            <span class="<?php echo $verificar_3; ?>"><?php echo $verificar_3; ?></span>
         </div>
+
+        <!-- Sección 2: Inconsistencia en Sistemas -->
+        <div class="section">
+            <h3>2. Inconsistencia en \( A\mathbf{x} = \mathbf{b} \)</h3>
+            <p>El espacio fila de \( A \) 
+            <input type="text" name="respuesta_4" value="<?php echo htmlspecialchars($respuesta_4); ?>" size="15"> 
+            . La inconsistencia ocurre cuando 
+            <input type="text" name="respuesta_5" value="<?php echo htmlspecialchars($respuesta_5); ?>" size="30"> 
+            .</p>
+            <span class="<?php echo $verificar_4; ?>"><?php echo $verificar_4; ?></span>
+            <span class="<?php echo $verificar_5; ?>"><?php echo $verificar_5; ?></span>
+        </div>
+
+        <!-- Sección 3: Resumen de Espacios -->
+        <div class="section">
+            <h3>3. Resumen de Espacios</h3>
+            <p>Espacio fila 
+            <input type="text" name="respuesta_6" value="<?php echo htmlspecialchars($respuesta_6); ?>" size="8"> 
+            : Filas no nulas del RREF de \( A \).</p>
+            <span class="<?php echo $verificar_6; ?>"><?php echo $verificar_6; ?></span>
+            <p>Espacio columna 
+            <input type="text" name="respuesta_7" value="<?php echo htmlspecialchars($respuesta_7); ?>" size="8"> 
+            : Columnas de \( A \).</p>
+            <span class="<?php echo $verificar_7; ?>"><?php echo $verificar_7; ?></span>
+            <p>Espacio nulo 
+            <input type="text" name="respuesta_8" value="<?php echo htmlspecialchars($respuesta_8); ?>" size="8"> 
+            : Soluciones de \( A\mathbf{x}=0 \).</p>
+            <span class="<?php echo $verificar_8; ?>"><?php echo $verificar_8; ?></span>
+            <p>Espacio nulo de \( A^T \) 
+            <input type="text" name="respuesta_9" value="<?php echo htmlspecialchars($respuesta_9); ?>" size="8"> 
+            : Soluciones de \( A^T \mathbf{y}=0 \).</p>
+            <span class="<?php echo $verificar_9; ?>"><?php echo $verificar_9; ?></span>
+        </div>
+
+        <!-- Sección 4: Dependencia Lineal de Filas -->
+        <div class="section">
+            <h3>4. Dependencia Lineal de Filas</h3>
+            <p>Las filas son linealmente dependientes porque hay 
+            <input type="text" name="respuesta_10" value="<?php echo htmlspecialchars($respuesta_10); ?>" size="15"> 
+            .</p>
+            <span class="<?php echo $verificar_10; ?>"><?php echo $verificar_10; ?></span>
+        </div>
+
+        <!-- Sección 5: b en Espacios -->
+        <div class="section">
+            <h3>5. ¿\( \mathbf{b} \) Pertenece a los Espacios?</h3>
+            <p>\( \mathbf{b} \in C(A) \) si el sistema 
+            <input type="text" name="respuesta_11" value="<?php echo htmlspecialchars($respuesta_11); ?>" size="8"> 
+            tiene solución; si no, es 
+            <input type="text" name="respuesta_12" value="<?php echo htmlspecialchars($respuesta_12); ?>" size="15"> 
+            .</p>
+            <span class="<?php echo $verificar_11; ?>"><?php echo $verificar_11; ?></span>
+            <span class="<?php echo $verificar_12; ?>"><?php echo $verificar_12; ?></span>
+            <p>\( \mathbf{b} \in C(A^T) \): Dimensiones incompatibles (\( \mathbb{R}^4 \) vs 
+            <input type="text" name="respuesta_13" value="<?php echo htmlspecialchars($respuesta_13); ?>" size="8"> 
+            ).</p>
+            <span class="<?php echo $verificar_13; ?>"><?php echo $verificar_13; ?></span>
+            <p>\( \mathbf{b} \in N(A^T) \) si 
+            <input type="text" name="respuesta_15" value="<?php echo htmlspecialchars($respuesta_15); ?>" size="15"> 
+            .</p>
+            <span class="<?php echo $verificar_15; ?>"><?php echo $verificar_15; ?></span>
+        </div>
+
+        <!-- Sección 6: Diferencia N(A) y N(A^T) -->
+        <div class="section">
+            <h3>6. Diferencia entre \( N(A) \) y \( N(A^T) \)</h3>
+            <p>\( N(A) \): Soluciones de 
+            <input type="text" name="respuesta_16" value="<?php echo htmlspecialchars($respuesta_16); ?>" size="8"> 
+            , en 
+            <input type="text" name="respuesta_18" value="<?php echo htmlspecialchars($respuesta_18); ?>" size="8"> 
+            .</p>
+            <span class="<?php echo $verificar_16; ?>"><?php echo $verificar_16; ?></span>
+            <span class="<?php echo $verificar_18; ?>"><?php echo $verificar_18; ?></span>
+            <p>\( N(A^T) \): Soluciones de 
+            <input type="text" name="respuesta_17" value="<?php echo htmlspecialchars($respuesta_17); ?>" size="8"> 
+            , en 
+            <input type="text" name="respuesta_19" value="<?php echo htmlspecialchars($respuesta_19); ?>" size="8"> 
+            .</p>
+            <span class="<?php echo $verificar_17; ?>"><?php echo $verificar_17; ?></span>
+            <span class="<?php echo $verificar_19; ?>"><?php echo $verificar_19; ?></span>
+        </div>
+
+        <!-- Sección 7: Plano del Espacio Fila -->
+        <div class="section">
+            <h3>7. Plano del Espacio Fila</h3>
+            <p>El plano es \{ 
+            <input type="text" name="respuesta_20" value="<?php echo htmlspecialchars($respuesta_20); ?>" size="15"> 
+            : \( \alpha, \beta \in \mathbb{R} \) \}.</p>
+            <span class="<?php echo $verificar_20; ?>"><?php echo $verificar_20; ?></span>
+            <p>Vector normal: 
+            <input type="text" name="respuesta_21" value="<?php echo htmlspecialchars($respuesta_21); ?>" size="8"> 
+            .</p>
+            <span class="<?php echo $verificar_21; ?>"><?php echo $verificar_21; ?></span>
+            <p>Ecuación del plano: 
+            <input type="text" name="respuesta_22" value="<?php echo htmlspecialchars($respuesta_22); ?>" size="15"> 
+            .</p>
+            <span class="<?php echo $verificar_22; ?>"><?php echo $verificar_22; ?></span>
+        </div>
+
+        <!-- Sección 8: Complemento Ortogonal -->
+        <div class="section">
+            <h3>8. Complemento Ortogonal</h3>
+            <p>Forma paramétrica del plano: \( \mathbf{p} = \) 
+            <input type="text" name="respuesta_23" value="<?php echo htmlspecialchars($respuesta_23); ?>" size="15"> 
+            .</p>
+            <span class="<?php echo $verificar_23; ?>"><?php echo $verificar_23; ?></span>
+            <p>\( V^\perp = \{ x \in \mathbb{R}^n : \) 
+            <input type="text" name="respuesta_24" value="<?php echo htmlspecialchars($respuesta_24); ?>" size="15"> 
+            para todo \( v \in V \) \}.</p>
+            <span class="<?php echo $verificar_24; ?>"><?php echo $verificar_24; ?></span>
+        </div>
+
+        <!-- Sección 9: N(A^T) -->
+        <div class="section">
+            <h3>9. \( N(A^T) \)</h3>
+            <p>\( N(A^T) = \{ y \in \mathbb{R}^m : A^T y = 0 \} \), vectores 
+            <input type="text" name="respuesta_25" value="<?php echo htmlspecialchars($respuesta_25); ?>" size="30"> 
+            .</p>
+            <span class="<?php echo $verificar_25; ?>"><?php echo $verificar_25; ?></span>
+            <p>\( \mathbf{b} \in N(A^T) \Leftrightarrow \) 
+            <input type="text" name="respuesta_26" value="<?php echo htmlspecialchars($respuesta_26); ?>" size="15"> 
+            o 
+            <input type="text" name="respuesta_27" value="<?php echo htmlspecialchars($respuesta_27); ?>" size="15"> 
+            .</p>
+            <span class="<?php echo $verificar_26; ?>"><?php echo $verificar_26; ?></span>
+            <span class="<?php echo $verificar_27; ?>"><?php echo $verificar_27; ?></span>
+            <p>Teorema: 
+            <input type="text" name="respuesta_28" value="<?php echo htmlspecialchars($respuesta_28); ?>" size="20"> 
+            , y 
+            <input type="text" name="respuesta_29" value="<?php echo htmlspecialchars($respuesta_29); ?>" size="30"> 
+            .</p>
+            <span class="<?php echo $verificar_28; ?>"><?php echo $verificar_28; ?></span>
+            <span class="<?php echo $verificar_29; ?>"><?php echo $verificar_29; ?></span>
+        </div>
+
+        <!-- Sección 10: Ortonormal -->
+        <div class="section">
+            <h3>10. Ortonormal</h3>
+            <p>\( u_i \cdot u_j = 0 \) si \( i \neq j \); 
+            <input type="text" name="respuesta_30" value="<?php echo htmlspecialchars($respuesta_30); ?>" size="15"> 
+            .</p>
+            <span class="<?php echo $verificar_30; ?>"><?php echo $verificar_30; ?></span>
+            <p>\( \|u_i\| = 1 \); 
+            <input type="text" name="respuesta_31" value="<?php echo htmlspecialchars($respuesta_31); ?>" size="15"> 
+            .</p>
+            <span class="<?php echo $verificar_31; ?>"><?php echo $verificar_31; ?></span>
+        </div>
+
+        <!-- Sección 11: Mínimos Cuadrados -->
+        <div class="section">
+            <h3>11. Mínimos Cuadrados</h3>
+            <p>\( A^T A \hat{x} = A^T b \); 
+            <input type="text" name="respuesta_32" value="<?php echo htmlspecialchars($respuesta_32); ?>" size="20"> 
+            .</p>
+            <span class="<?php echo $verificar_32; ?>"><?php echo $verificar_32; ?></span>
+            <p>Proyección \( \mathbf{p} = \) 
+            <input type="text" name="respuesta_33" value="<?php echo htmlspecialchars($respuesta_33); ?>" size="10"> 
+            .</p>
+            <span class="<?php echo $verificar_33; ?>"><?php echo $verificar_33; ?></span>
+        </div>
+
+        <!-- Sección 12: Matriz de Vandermonde -->
+        <div class="section">
+            <h3>12. Matriz de Vandermonde</h3>
+            <p>Entrada: 
+            <input type="text" name="respuesta_34" value="<?php echo htmlspecialchars($respuesta_34); ?>" size="15"> 
+            en columnas de potencias.</p>
+            <span class="<?php echo $verificar_34; ?>"><?php echo $verificar_34; ?></span>
+            <p>\( \mathbf{u} = \) 
+            <input type="text" name="respuesta_35" value="<?php echo htmlspecialchars($respuesta_35); ?>" size="20"> 
+            ; normalizar \( \mathbf{u} = \) 
+            <input type="text" name="respuesta_36" value="<?php echo htmlspecialchars($respuesta_36); ?>" size="25"> 
+            .</p>
+            <span class="<?php echo $verificar_35; ?>"><?php echo $verificar_35; ?></span>
+            <span class="<?php echo $verificar_36; ?>"><?php echo $verificar_36; ?></span>
+            <p>\( \mathbf{b} = \) 
+            <input type="text" name="respuesta_37" value="<?php echo htmlspecialchars($respuesta_37); ?>" size="15"> 
+            ; solución teórica \( \mathbf{x} = \) 
+            <input type="text" name="respuesta_38" value="<?php echo htmlspecialchars($respuesta_38); ?>" size="5"> 
+            .</p>
+            <span class="<?php echo $verificar_37; ?>"><?php echo $verificar_37; ?></span>
+            <span class="<?php echo $verificar_38; ?>"><?php echo $verificar_38; ?></span>
+        </div>
+
+        <!-- Sección 13: Métodos de Solución -->
+        <div class="section">
+            <h3>13. Métodos de Solución</h3>
+            <p>Inversa: \( \mathbf{x}_{inv} = \) 
+            <input type="text" name="respuesta_39" value="<?php echo htmlspecialchars($respuesta_39); ?>" size="25"> 
+            .</p>
+            <span class="<?php echo $verificar_39; ?>"><?php echo $verificar_39; ?></span>
+            <p>QR: 
+            <input type="text" name="respuesta_40" value="<?php echo htmlspecialchars($respuesta_40); ?>" size="20"> 
+            .</p>
+            <span class="<?php echo $verificar_40; ?>"><?php echo $verificar_40; ?></span>
+            <p>Solve: \( \mathbf{x}_{sol} = \) 
+            <input type="text" name="respuesta_41" value="<?php echo htmlspecialchars($respuesta_41); ?>" size="25"> 
+            .</p>
+            <span class="<?php echo $verificar_41; ?>"><?php echo $verificar_41; ?></span>
+            <p>Condición: 
+            <input type="text" name="respuesta_42" value="<?php echo htmlspecialchars($respuesta_42); ?>" size="20"> 
+            ; Error: 
+            <input type="text" name="respuesta_43" value="<?php echo htmlspecialchars($respuesta_43); ?>" size="25"> 
+            .</p>
+            <span class="<?php echo $verificar_42; ?>"><?php echo $verificar_42; ?></span>
+            <span class="<?php echo $verificar_43; ?>"><?php echo $verificar_43; ?></span>
+        </div>
+
+        <!-- Sección 14: Producto Matricial y Sustitución -->
+        <div class="section">
+            <h3>14. Producto Matricial y Sustitución</h3>
+            <p>\( @ \) significa 
+            <input type="text" name="respuesta_44" value="<?php echo htmlspecialchars($respuesta_44); ?>" size="5"> 
+            : 
+            <input type="text" name="respuesta_45" value="<?php echo htmlspecialchars($respuesta_45); ?>" size="20"> 
+            .</p>
+            <span class="<?php echo $verificar_44; ?>"><?php echo $verificar_44; ?></span>
+            <span class="<?php echo $verificar_45; ?>"><?php echo $verificar_45; ?></span>
+            <p>En QR: 
+            <input type="text" name="respuesta_46" value="<?php echo htmlspecialchars($respuesta_46); ?>" size="15"> 
+            ; \( R \) es 
+            <input type="text" name="respuesta_47" value="<?php echo htmlspecialchars($respuesta_47); ?>" size="20"> 
+            .</p>
+            <span class="<?php echo $verificar_46; ?>"><?php echo $verificar_46; ?></span>
+            <span class="<?php echo $verificar_47; ?>"><?php echo $verificar_47; ?></span>
+            <p>Suma en sustitución: 
+            <input type="text" name="respuesta_48" value="<?php echo htmlspecialchars($respuesta_48); ?>" size="30"> 
+            .</p>
+            <span class="<?php echo $verificar_48; ?>"><?php echo $verificar_48; ?></span>
+        </div>
+
+        <button type="submit">Enviar</button>
+        <button type="submit" name="mostrar_solucion" value="mostrar_solucion">Mostrar Soluciones</button>
     </div>
-    
-
-
-    <hr>
-
-
-
-    <div class="section">
-        <h1>Ejemplo 1.30</h1>
-        
-        <div class="problem-statement">
-            <p>Encuentre las formas normal y general de la ecuación del plano que contiene el punto</p>
-            <div class="math-formula">
-                <p>\[ P =  {(6, 0, 1)} \]</p>
-                <p>y tiene un vector normal \( \mathbf{n} = {\begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}} \)</p>
-            </div>
-        </div>
-
-        <div class="solution-section">
-            <h3>Solución</h3>
-            
-            <p>Con \( \mathbf{p} = \begin{bmatrix} 6 \\ 0 \\ 1 \end{bmatrix} \) y \( \mathbf{x} = \begin{bmatrix} x \\ y \\ z \end{bmatrix} \) se tiene:</p>
-            
-            <div class="calculation">
-                <p>\[ \mathbf{n} \cdot \mathbf{p} = 1 \cdot 6 + 2 \cdot 0 + 3 \cdot 1 = 9 \]</p>
-            </div>
-            
-            <p>de modo que la ecuación normal \( \mathbf{n} \cdot \mathbf{x} = \mathbf{n} \cdot \mathbf{p} \) se convierte en la ecuación general:</p>
-            
-            <div class="math-formula">
-                <p>\[ \mathbf{n} \cdot \mathbf{x} = 9 \quad \Rightarrow \quad x + 2y + 3z = 9 \]</p>
-            </div>
-        </div>
-
-        <div class="solution-section">
-            <h3>Planos Paralelos</h3>
-            
-            <p>Geométricamente, es claro que planos paralelos tienen los mismos vectores normales. Por tanto, sus ecuaciones generales tienen lados izquierdos que son múltiplos mutuos.</p>
-            
-            <div class="example">
-                <p><strong>Ejemplo:</strong> \( 2x + 4y + 6z = 10 \) es la ecuación general de un plano paralelo al plano del ejemplo 1.30, ya que la ecuación puede reescribirse como:</p>
-                <div class="math-formula">
-                    <p>\[ x + 2y + 3z = 5 \]</p>
-                </div>
-                <p>de donde se ve que los dos planos tienen el mismo vector normal \( \mathbf{n} \).</p>
-            </div>
-            
-            <div class="note">
-                <p><strong>Nota:</strong> Los planos no coinciden, pues los lados derechos de sus ecuaciones son distintos.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="section">
-        <h2>Forma Vectorial y Paramétrica de un Plano</h2>
-        
-        <p>También puede expresar la ecuación de un plano en forma vectorial o paramétrica. Para hacerlo, observe que un plano también puede determinarse al especificar:</p>
-        
-        <ul>
-            <li>Uno de sus puntos \( P \) (por el vector \( \mathbf{p} \))</li>
-            <li>Dos vectores directores \( \mathbf{u} \) y \( \mathbf{v} \) paralelos al plano (pero no mutuamente paralelos)</li>
-        </ul>
-        
-        <p>Como muestra la figura 1.61, dado cualquier punto \( X \) en el plano (ubicado por \( \mathbf{x} \)), siempre se pueden encontrar múltiplos adecuados \( s\mathbf{u} \) y \( t\mathbf{v} \) de los vectores directores tales que:</p>
-        
-        <div class="math-formula">
-            <p>\[ \mathbf{x} - \mathbf{p} = s\mathbf{u} + t\mathbf{v} \quad \text{o} \quad \mathbf{x} = \mathbf{p} + s\mathbf{u} + t\mathbf{v} \]</p>
-        </div>
-        
-        <p>Si esta ecuación se escribe en forma de componentes, se obtienen ecuaciones paramétricas para el plano.</p>
-        
-        <hr>
-        <div class="definition">
-           
-            <strong>Definición</strong>   
-            <p>La <strong>forma vectorial de la ecuación de un plano</strong> \( \mathcal{P} \) en \( \mathbb{R}^3 \) es</p>
-            <div class="math-formula">
-                <p>\[ \mathbf{x} = \mathbf{p} + s\mathbf{u} + t\mathbf{v} \]</p>
-            </div>
-            <p>donde:</p>
-            <ul>
-                <li>\( \mathbf{p} \) es un punto sobre \( \mathcal{P} \)</li>
-                <li>\( \mathbf{u} \) y \( \mathbf{v} \) son vectores directores para \( \mathcal{P} \)</li>
-                <li>\( \mathbf{u} \) y \( \mathbf{v} \) son distintos de cero y paralelos a \( \mathcal{P} \), mas no mutuamente paralelos</li>
-            </ul>
-        </div>
-        
-        <div class="definition">
-            <div class="definition-title">Definición</div>
-            <p>Las ecuaciones correspondientes a los componentes de la forma vectorial de la ecuación se llaman <strong>ecuaciones paramétricas</strong> de \( \mathcal{P} \).</p>
-        </div>
-    </div>
-
-
-    <hr>
-
-
-     <div class="section">
-        <h1>Vectores Directores en ℝ² vs ℝ³</h1>
-        
-        <div class="comparison">
-            <div class="r2">
-                <h2>En ℝ² - Recta:</h2>
-                <ul>
-                    <li><span class="important">1 vector director</span> → basta para definir la dirección</li>
-                    <li>Ejemplo: Recta con dirección <span class="vector">d = [2, 1]</span></li>
-                    <li>Todos los puntos: <span class="vector">x = p + t·d</span></li>
-                    <li><span class="important">1 parámetro (t)</span> → movimiento en 1 dimensión</li>
-                </ul>
-            </div>
-            
-            <div class="r3">
-                <h2>En ℝ³ - Plano:</h2>
-                <ul>
-                    <li><span class="important">Necesitas 2 vectores directores</span> diferentes</li>
-                    <li>¿Por qué? Porque un plano es <span class="important">bidimensional</span></li>
-                </ul>
-            </div>
-        </div>
-
-        <h2>¿Qué representan estos vectores?</h2>
-        <p>Imagina un plano como una <span class="important">hoja de papel infinita</span>:</p>
-        <ul>
-            <li><span class="vector">Vector u</span>: dirección "horizontal" en el plano</li>
-            <li><span class="vector">Vector v</span>: dirección "vertical" en el plano</li>
-            <li><span class="vector">p</span>: punto donde "agarramos" el plano</li>
-        </ul>
-
-        <div class="example">
-            <h3>Ejemplo concreto:</h3>
-            <p><strong>Plano:</strong> <span class="vector">x + 2y + 3z = 9</span> (del ejemplo anterior)</p>
-            
-            <h4>¿Cómo encontrar vectores directores?</h4>
-            <ul>
-                <li>Encontrar 2 vectores <span class="important">PERPENDICULARES</span> al normal <span class="vector">n = [1, 2, 3]</span></li>
-                <li>Recordar: <span class="vector">u · n = 0</span> y <span class="vector">v · n = 0</span></li>
-            </ul>
-            
-            <h4>Posibles vectores directores:</h4>
-            <div class="math">
-                <p><span class="vector">u = [2, -1, 0]</span> porque: <span class="vector">1·2 + 2·(-1) + 3·0 = 0</span> ✓</p>
-                <p><span class="vector">v = [3, 0, -1]</span> porque: <span class="vector">1·3 + 2·0 + 3·(-1) = 0</span> ✓</p>
-            </div>
-        </div>
-
-        <h2>¿Por qué necesitamos 2 vectores?</h2>
-        <p>Porque con <span class="vector">x = p + s·u + t·v</span>:</p>
-        <ul>
-            <li><span class="important">s</span> controla movimiento en dirección u</li>
-            <li><span class="important">t</span> controla movimiento en dirección v</li>
-            <li><span class="important">Juntos</span> te permiten llegar a <span class="important">cualquier punto</span> del plano</li>
-        </ul>
-
-        <div class="analogy">
-            <h3>Analogía:</h3>
-            <p><strong>Recta en ℝ²:</strong> como caminar por un <span class="important">sendero</span> (solo adelante/atrás)</p>
-            <p><strong>Plano en ℝ³:</strong> como caminar por un <span class="important">campo</span> (adelante/atrás + izquierda/derecha)</p>
-        </div>
-    </div>
-
-    <div class="section">
-        <h2>Métodos para encontrar vectores directores</h2>
-        
-        <div class="method">
-            <h3>En ℝ² (con pendiente):</h3>
-            <div class="math">
-                <p>Si recta: <span class="vector">y = mx + b</span></p>
-                <p>Vector director: <span class="vector">d = [1, m]</span> (por cada 1 en x, m en y)</p>
-            </div>
-        </div>
-
-        <div class="method">
-            <h3>En ℝ³ (sin pendiente única):</h3>
-            
-            <h4>Método 1: Usando el vector normal</h4>
-            <p>Dado: <span class="vector">ax + by + cz = d</span> con vector normal <span class="vector">n = [a, b, c]</span></p>
-            <p>Encontrar vectores perpendiculares a n:</p>
-            <p>Buscar <span class="vector">u = [u₁, u₂, u₃]</span> tal que <span class="vector">a·u₁ + b·u₂ + c·u₃ = 0</span></p>
-            
-            <h5>Truco práctico:</h5>
-            <ol>
-                <li><strong>Hacer una componente cero</strong> y resolver:
-                    <div class="math">
-                        <p>Si <span class="vector">n = [1, 2, 3]</span>, buscar <span class="vector">u</span> tal que <span class="vector">1·u₁ + 2·u₂ + 3·u₃ = 0</span></p>
-                        <p>Fácil: <span class="vector">u = [2, -1, 0]</span> → <span class="vector">1·2 + 2·(-1) + 3·0 = 0</span> ✓</p>
-                    </div>
-                </li>
-                <li><strong>Encontrar otro vector independiente:</strong>
-                    <div class="math">
-                        <p><span class="vector">v = [3, 0, -1]</span> → <span class="vector">1·3 + 2·0 + 3·(-1) = 0</span> ✓</p>
-                    </div>
-                </li>
-            </ol>
-
-           
-    </div>
- </div>
-    
-</div>
-
-
-
-
-<div class="seccion derecha">
-   
-            <h4>Método 2: Con 3 puntos del plano</h4>
-            <p>Si tienes puntos A, B, C en el plano:</p>
-            <div class="math">
-                <p><span class="vector">u = B - A</span></p>
-                <p><span class="vector">v = C - A</span></p>
-            </div>
-         
-
-        <div class="example">
-            <h3>Ejemplo del problema anterior:</h3>
-            <p><strong>Plano:</strong> <span class="vector">x + 2y + 3z = 9</span></p>
-            <p><strong>Vector normal:</strong> <span class="vector">n = [1, 2, 3]</span></p>
-            
-            <h4>Vectores directores:</h4>
-            <div class="math">
-                <p><span class="vector">u = [2, -1, 0]</span> (verifica: <span class="vector">1·2 + 2·(-1) + 3·0 = 0</span>)</p>
-                <p><span class="vector">v = [0, 3, -2]</span> (verifica: <span class="vector">1·0 + 2·3 + 3·(-2) = 0</span>)</p>
-            </div>
-            <p class="important">¡Estos dos vectores te permiten "caminar" por todo el plano!</p>
-        </div>
-
-        <div class="method">
-            <h3>¿Por qué no hay "pendiente" en ℝ³?</h3>
-            <p>Porque en un plano tienes <span class="important">infinitas direcciones</span>, no solo una como en la recta. Necesitas dos vectores para describir todas las posibles direcciones dentro del plano.</p>
-        </div>
-
-        <img src="../../../img/guia_245.png" alt="">
-
-        <hr>
-        <div> 
-            <div class="comment">
-            <h2>Comentarios</h2>
-            
-            <p>Un plano es un objeto bidimensional, y su ecuación, en forma vectorial o paramétrica, requiere dos parámetros.</p>
-            
-            <p>Como muestra la figura 1.59, dado un punto \( P \) y un vector distinto de cero \( \mathbf{n} \) en \( \mathbb{R}^3 \), existen infinitas rectas a través de \( P \) con \( \mathbf{n} \) como vector normal. Sin embargo, \( P \) y dos vectores normales no paralelos \( \mathbf{n}_1 \) y \( \mathbf{n}_2 \) sirven para ubicar una recta \( \ell \) de manera única, pues \( \ell \) debe ser entonces la recta que pasa a través de \( P \) perpendicular al plano con ecuación \( \mathbf{x} = \mathbf{p} + s\mathbf{n}_1 + t\mathbf{n}_2 \) (figura 1.62).</p>
-        </div>
-
-        <div class="highlight">
-            <p>En consecuencia, una recta en \( \mathbb{R}^3 \) también puede especificarse mediante un par de ecuaciones:</p>
-            
-            <div class="math-formula">
-                \[
-                \begin{aligned}
-                a_1x + b_1y + c_1z &= d_1 \\
-                a_2x + b_2y + c_2z &= d_2
-                \end{aligned}
-                \]
-            </div>
-            
-            <p>que corresponden a cada vector normal. Pero, dado que dichas ecuaciones corresponden a un par de planos no paralelos (¿por qué no paralelos?), esta es justo la descripción de una recta como la intersección de dos planos no paralelos (figura 1.63).</p>
-            
-            <p>Algebraicamente, la recta consiste de todos los puntos \((x, y, z)\) que satisfacen simultáneamente ambas ecuaciones. Este concepto se explorará más en el capítulo 2, cuando se estudie la solución de los sistemas de ecuaciones lineales.</p>
-        </div>
-
-        <div class="comment">
-            <p>Las tablas 1.2 y 1.3 resumen la información presentada hasta el momento acerca de las ecuaciones de rectas y planos.</p>
-            
-            <p>Observe una vez más que una sola ecuación (general) describe una recta en \( \mathbb{R}^2 \), pero un plano en \( \mathbb{R}^3 \). [En dimensiones superiores, un objeto (recta, plano, etcétera) determinado por una sola ecuación de este tipo por lo general se conoce como <strong>hiperplano</strong>.]</p>
-        </div>
-    </div>
-
-    <div class="section">
-        <h2>Fórmula de Balanceo</h2>
-        
-        <div class="important">
-            <p>La relación entre la dimensión del objeto, el número de ecuaciones requeridas y la dimensión del espacio está dada por la <strong>"fórmula de balanceo"</strong>:</p>
-            
-            <div class="dimension-formula">
-                \[
-                (\text{dimensión del objeto}) + (\text{número de ecuaciones generales}) = \text{dimensión del espacio}
-                \]
-            </div>
-        </div>
-
-        <div class="highlight">
-            <p>Mientras más grande sea la dimensión del objeto, menos ecuaciones se necesitan.</p>
-            
-            <div class="examples">
-                <div class="example">
-                    <div class="example-title">Plano en ℝ³</div>
-                    <p>Es bidimensional, requiere una ecuación general y existe en un espacio tridimensional:</p>
-                    <div class="math-formula">
-                        \[ 2 + 1 = 3 \]
-                    </div>
-                </div>
-                
-                <div class="example">
-                    <div class="example-title">Recta en ℝ³</div>
-                    <p>Es unidimensional y por tanto necesita \( 3 - 1 = 2 \) ecuaciones.</p>
-                    <div class="math-formula">
-                        \[ 1 + 2 = 3 \]
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="comment">
-            <p>Note que la dimensión del objeto también concuerda con el número de parámetros en su forma vectorial o paramétrica. Las nociones de "dimensión" se aclararán en los capítulos 3 y 6, pero por el momento le servirán estas observaciones intuitivas.</p>
-        </div>
-
-        <div class="definition">
-            <p><strong>Hiperplano:</strong> En dimensiones superiores, un objeto determinado por una sola ecuación lineal se conoce como hiperplano. Un hiperplano en \( \mathbb{R}^n \) tiene dimensión \( n-1 \).</p>
-        </div>
-
-        <div class="important">
-            <p>Ahora puede encontrar la distancia desde un punto hasta una recta o un plano al combinar los resultados de la sección 1.2 con los de esta sección.</p>
-        </div>
-    </div>
-
-    <div class="section">
-        <h2>Resumen de Dimensiones</h2>
-        
-        <div class="examples">
-            <div class="example">
-                <div class="example-title">ℝ² (2D)</div>
-                <ul>
-                    <li><strong>Recta:</strong> 1 dimensión</li>
-                    <li><strong>Ecuaciones necesarias:</strong> 1</li>
-                    <li><strong>Fórmula:</strong> \(1 + 1 = 2\)</li>
-                </ul>
-            </div>
-            
-            <div class="example">
-                <div class="example-title">ℝ³ (3D)</div>
-                <ul>
-                    <li><strong>Plano:</strong> 2 dimensiones</li>
-                    <li><strong>Ecuaciones necesarias:</strong> 1</li>
-                    <li><strong>Fórmula:</strong> \(2 + 1 = 3\)</li>
-                </ul>
-                <ul>
-                    <li><strong>Recta:</strong> 1 dimensión</li>
-                    <li><strong>Ecuaciones necesarias:</strong> 2</li>
-                    <li><strong>Fórmula:</strong> \(1 + 2 = 3\)</li>
-                </ul>
-            </div>
-            
-            <div class="example">
-                <div class="example-title">ℝⁿ (nD)</div>
-                <ul>
-                    <li><strong>Hiperplano:</strong> n-1 dimensiones</li>
-                    <li><strong>Ecuaciones necesarias:</strong> 1</li>
-                    <li><strong>Fórmula:</strong> \((n-1) + 1 = n\)</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <hr>
-
-
-       <div class="section">
-        <h1>Ecuaciones Necesarias = Restricciones que Aplicas</h1>
-        
-        <div class="analogy">
-            <h2>Analogía:</h2>
-            <p>Imagina que estás en un espacio y quieres "restringir" tu movimiento.</p>
-        </div>
-
-        <h2>En ℝ³ (espacio 3D):</h2>
-        
-        <div class="case">
-            <div class="case-title">Caso 1: PLANO (2 dimensiones)</div>
-            <p><strong>Ecuación necesaria:</strong> <span class="equation">1</span></p>
-            <p><strong>¿Por qué?</strong> Con una ecuación como <span class="equation">x + 2y + 3z = 6</span> reduces de <span class="dimension">3D → 2D</span></p>
-            <p><strong>Movimiento libre:</strong> <span class="movement">Puedes moverte en 2 direcciones dentro del plano</span></p>
-        </div>
-
-        <div class="case">
-            <div class="case-title">Caso 2: RECTA (1 dimensión)</div>
-            <p><strong>Ecuaciones necesarias:</strong> <span class="equation">2</span></p>
-            <p><strong>¿Por qué?</strong> Necesitas DOS ecuaciones como:</p>
-            <div class="math">
-                <p>\( x + 2y + 3z = 6 \)</p>
-                <p>\( 2x - y + z = 1 \)</p>
-            </div>
-            <p>• Con la primera ecuación: <span class="dimension">3D → 2D</span> (plano)</p>
-            <p>• Con la segunda ecuación: <span class="dimension">2D → 1D</span> (recta)</p>
-            <p><strong>Movimiento libre:</strong> <span class="movement">Solo puedes moverte adelante/atrás en la recta</span></p>
-        </div>
-
-      
-    </div>
-
-    <hr>
-
-    
-</div>
-</div>
- </form>
-<div class="centered-container">
-    <a
-        name="siguiente"
-        id="siguiente"
-        class="btn btn-primary"
-        href="quinto.php"
-        role="button"
-        width="50px"
-        height="50px"
-    >Siguiente</a>
-</div>
+</form>
 </body>
 </html>

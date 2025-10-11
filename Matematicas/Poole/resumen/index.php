@@ -1312,7 +1312,7 @@ if ($respuesta_121 === '144') {
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 430vh;
+    height: 350vh;
     }
 
 </style>
@@ -1597,122 +1597,183 @@ function ocultarMensaje4() {
 
     
 <div class="seccion izquierda"> 
- 
-  <div class="theorem">
-        <h2>Teorema 3.9</h2>
-        <ul>
-            <li><strong>a.</strong> Si \( A \) es una matriz invertible, entonces \( A^{-1} \) es invertible y \( (A^{-1})^{-1} = A \)</li>
-            <li><strong>b.</strong> Si \( A \) es una matriz invertible y \( c \) es un escalar distinto de cero, entonces \( cA \) es una matriz invertible y \( (cA)^{-1} = \frac{1}{c} A^{-1} \)</li>
-            <li><strong>c.</strong> Si \( A \) y \( B \) son matrices invertibles del mismo tamaño, entonces \( AB \) es invertible y \( (AB)^{-1} = B^{-1} A^{-1} \)</li>
-            <li><strong>d.</strong> Si \( A \) es una matriz invertible, entonces \( A^T \) es invertible y \( (A^T)^{-1} = (A^{-1})^T \)</li>
-            <li><strong>e.</strong> Si \( A \) es una matriz invertible, entonces \( A^n \) es invertible para todo entero \( n \) no negativo y \( (A^n)^{-1} = (A^{-1})^n \)</li>
-        </ul>
-    </div>
-
-    <h2>Matrices elementales</h2>
-    <p>La multiplicación de matrices se usará para dar una perspectiva diferente a la reducción de matrices por renglones. En el proceso, descubrirá muchos nuevos e importantes conocimientos de la naturaleza de las matrices invertibles.</p>
-    <p>Si</p>
-    <p>\( E = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 0 & 1 \\ 0 & 1 & 0 \end{bmatrix} \) y \( A = \begin{bmatrix} 5 & 7 \\ -1 & 0 \\ 8 & 3 \end{bmatrix} \)</p>
-    <p>se encuentra que</p>
-    <p>\( EA = \begin{bmatrix} 5 & 7 \\ -1 & 0 \\ 8 & 3 \end{bmatrix} \)</p>
-    <p>En otras palabras, multiplicar \( A \) por \( E \) (a la izquierda) tiene el mismo efecto que intercambiar los renglones 2 y 3 de \( A \). ¿Qué es lo significativo de \( E \)? Simplemente es la matriz que se obtiene al aplicar la misma operación elemental con renglones, \( R_2 \leftrightarrow R_3 \), a la matriz identidad \( I_3 \). Es evidente que esto siempre funciona.</p>
-
-    <div class="theorem">
-        <h2>Definición</h2>
-        <p>Una matriz elemental es aquella matriz que puede obtenerse al realizar una operación elemental con renglones sobre una matriz identidad.</p>
-    </div>
-    <p>Dado que existen tres tipos de operaciones elementales con renglones, existen tres tipos correspondientes de matrices elementales. He aquí algunas de las matrices más elementales.</p>
-
-    <hr>
-
-     <h1>¿Qué son las matrices elementales?</h1>
-    <p>Las matrices elementales son matrices que se obtienen al realizar una operación elemental sobre una matriz identidad. Estas operaciones elementales son los mismos pasos que usamos en el método de eliminación de Gauss o Gauss-Jordan para resolver sistemas de ecuaciones lineales o reducir matrices a su forma escalonada. El concepto es útil porque nos permite entender cómo la multiplicación de matrices puede simular estos cambios de manera sistemática.</p>
-
-    <h2>Operaciones elementales con renglones</h2>
-    <p>Hay tres tipos principales de operaciones elementales que se pueden hacer con los renglones de una matriz:</p>
-    <ul>
-        <li><strong>Intercambiar dos renglones</strong>: Por ejemplo, intercambiar el renglón 1 con el renglón 2.</li>
-        <li><strong>Multiplicar un renglón por un escalar no cero</strong>: Por ejemplo, multiplicar el renglón 2 por 3.</li>
-        <li><strong>Sumar un múltiplo de un renglón a otro renglón</strong>: Por ejemplo, sumar 2 veces el renglón 1 al renglón 3.</li>
-    </ul>
-    <p>Cuando aplicas una de estas operaciones a la matriz identidad (una matriz cuadrada con 1s en la diagonal principal y 0s en el resto), el resultado es una matriz elemental.</p>
-
-    <h2>Ejemplo práctico</h2>
-    <p>Tomemos la matriz identidad \( I_3 \) (de tamaño 3×3):</p>
-    <p>\( I_3 = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix} \)</p>
-    <p>Ahora, supongamos que intercambiamos el renglón 2 y el renglón 3:</p>
-    <ul>
-        <li>Renglón original 2: \( [0, 1, 0] \)</li>
-        <li>Renglón original 3: \( [0, 0, 1] \)</li>
-    </ul>
-    <p>Después del intercambio, la nueva matriz (llamada \( E \)) sería:</p>
-    <p>\( E = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 0 & 1 \\ 0 & 1 & 0 \end{bmatrix} \)</p>
-    <p>Esta matriz \( E \) es una matriz elemental porque se obtuvo al aplicar una operación elemental (intercambio de renglones) a la matriz identidad.</p>
-
-    <h2>¿Por qué es importante?</h2>
-    <p>El texto menciona que al multiplicar una matriz \( A \) por esta matriz elemental \( E \) a la izquierda (es decir, \( EA \)), se logra el mismo efecto que aplicar la operación elemental directamente a \( A \). Por ejemplo, si \( A \) es:</p>
-    <p>\( A = \begin{bmatrix} 5 & 7 \\ -1 & 0 \\ 8 & 3 \end{bmatrix} \)</p>
-    <p>Entonces:</p>
-    <p>\( EA = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 0 & 1 \\ 0 & 1 & 0 \end{bmatrix} \begin{bmatrix} 5 & 7 \\ -1 & 0 \\ 8 & 3 \end{bmatrix} = \begin{bmatrix} 5 & 7 \\ 8 & 3 \\ -1 & 0 \end{bmatrix} \)</p>
-    <p>Observa que el resultado de \( EA \) es simplemente \( A \) con los renglones 2 y 3 intercambiados, lo cual coincide con la operación elemental que definimos en \( E \).</p>
-
-    <h2>Significado</h2>
-    <p>Esto es significativo porque:</p>
-    <ul>
-        <li>Nos muestra que las operaciones elementales pueden representarse como multiplicaciones por matrices elementales.</li>
-        <li>Nos ayuda a entender las propiedades de las matrices invertibles, ya que estas operaciones (y sus matrices asociadas) son reversibles bajo ciertas condiciones.</li>
-        <li>Es una herramienta poderosa en álgebra lineal para manipular sistemas de ecuaciones o matrices de forma sistemática.</li>
-    </ul>
-
-    <h2>Tipos de matrices elementales</h2>
-    <p>Dado que hay tres tipos de operaciones elementales, hay tres tipos correspondientes de matrices elementales:</p>
-    <ul>
-        <li><strong>Matriz de intercambio</strong>: Se obtiene intercambiando dos renglones de la identidad (como en el ejemplo anterior).</li>
-        <li><strong>Matriz de escalado</strong>: Se obtiene multiplicando un renglón de la identidad por un escalar no cero.</li>
-        <li><strong>Matriz de suma</strong>: Se obtiene sumando un múltiplo de un renglón a otro renglón de la identidad.</li>
-    </ul>
-
-
-    <hr>
-
-
-    <div class="theorem">
-        <h2>Teorema 3.10</h2>
-        <p>Sea \( E \) la matriz elemental que se obtiene al realizar una operación elemental con renglones sobre \( I_n \). Si la misma operación elemental con renglones se realiza sobre una matriz \( A \) de \( n \times n \), el resultado es el mismo que la matriz \( EA \).</p>
-    </div>
-
-    <div class="theorem">
-        <h2>Teorema 3.11</h2>
-        <p>Cada matriz elemental es invertible y su inversa es una matriz elemental del mismo tipo.</p>
-    </div>
-    <p><strong>El teorema fundamental de las matrices invertibles</strong></p>
-    <p>Ahora está en posición de probar uno de los principios resultantes de este libro: un conjunto de caracterizaciones equivalentes de lo que significa para una matriz ser invertible. En un sentido, gran parte del álgebra lineal está conectado a este teorema, ya sea en el desarrollo de dichas caracterizaciones o en su aplicación. Como puede esperar, dada esta introducción, este teorema es usaré bastante. ¡Hágalo su amigo!</p>
-    <p>Al Teorema 3.12 se le considera como el primer ejemplo de teorema fundamental, pues se harán agregados en capítulos posteriores. Se recuerda que, cuando se dice que un conjunto de enunciados acerca de una matriz \( A \) son equivalentes, se entiende que, para una \( A \) dada, los enunciados son todos verdaderos o todos falsos.</p>
-
-    <div class="theorem">
-        <h2>Teorema 3.12</h2>
-        <p><strong>El teorema fundamental de las matrices invertibles: versión 1</strong></p>
-        <p>Sea \( A \) una matriz de \( n \times n \). Los siguientes enunciados son equivalentes:</p>
-        <ul>
-            <li><strong>a.</strong> \( A \) es invertible.</li>
-            <li><strong>b.</strong> \( A\mathbf{x} = \mathbf{b} \) tiene una solución única para todo \( \mathbf{b} \in \mathbb{R}^n \).</li>
-            <li><strong>c.</strong> \( A\mathbf{x} = 0 \) tiene sólo la solución trivial.</li>
-            <li><strong>d.</strong> La forma escalonada reducida por renglones de \( A \) es \( I_n \).</li>
-            <li><strong>e.</strong> \( A \) es un producto de matrices elementales.</li>
-        </ul>
-    </div>
-
 
     <p>
-        El teorema dice que para una matriz \(   A   \) de tamaño \(  n \times n \)  (es decir, cuadrada), los cinco enunciados 
-        (a, b, c, d, e) son equivalentes. Esto significa que si uno de ellos es verdadero, entonces todos los demás también 
-        lo son, y si uno es falso, todos los demás también lo serán. En otras palabras, estos enunciados son como diferentes 
-        formas de describir la misma propiedad de \(   A  \): ser invertible.
+    Un vector es un
+    segmento de recta dirigido que corresponde a un desplazamiento desde un punto A hasta
+    otro punto B;
+    </p>
+    
+    <p>Dos vectores se definen como iguales si tienen la misma longitud y la misma dirección.</p>
+   
+    <hr>
+ 
+    <h1>Vectores en \(\mathbb{R}^n\)</h1>
 
+ 
+    <p>
+    En general, \(\mathbb{R}^n\) se define como el conjunto de todas las <em>n</em>-adas ordenadas de números reales escritas como vectores renglón o columna.
+    Por ende, un vector \(v\) en \(\mathbb{R}^n\) es de la forma
     </p>
 
+    <div class="ejemplo">
+    \[
+    v = [\,v_1,\,v_2,\,\ldots,\,v_n\,]
+    \]
+    o bien como vector columna:
+    <span class="inline-matrix">
+    \[
+      v = \begin{bmatrix}
+        v_1\\[4pt]
+        v_2\\[4pt]
+        \vdots\\[4pt]
+        v_n
+      \end{bmatrix}
+    \]
+    </span>
+    </div>
 
 
+    <hr>
+    <h1>Combinaciones lineales y coordenadas</h1>
+
+
+<p>
+  Se dice que un vector que sea una suma de múltiplos escalares de otros vectores es una 
+  <em>combinación lineal</em> de dichos vectores. A continuación se presenta la definición formal.
+</p>
+
+<div class="definicion">
+  <p><strong>Definición</strong> &nbsp; Un vector \(v\) es una <em>combinación lineal</em> de vectores 
+  \(v_1, v_2, \ldots, v_k\) si existen escalares \(c_1, c_2, \ldots, c_k\) tales que</p>
+
+  \[
+    v = c_1 v_1 + c_2 v_2 + \cdots + c_k v_k
+  \]
+
+  <p>
+    Los escalares \(c_1, c_2, \ldots, c_k\) se llaman <em>coeficientes</em> de la combinación lineal.
+  </p>
+</div>
+
+<div class="ejemplo">
+  <p><strong>Ejemplo 1.6</strong></p>
+  <p>
+    El vector
+    \[
+      \begin{bmatrix} 2 \\ -2 \\ -1 \end{bmatrix}
+    \]
+    es una combinación lineal de
+    \[
+      \begin{bmatrix} 1 \\ 0 \\ -1 \end{bmatrix},\;
+      \begin{bmatrix} 2 \\ -3 \\ 1 \end{bmatrix},\;
+      \begin{bmatrix} 5 \\ -4 \\ 0 \end{bmatrix}
+    \]
+    pues
+  </p>
+
+  \[
+    3 \begin{bmatrix} 1 \\ 0 \\ -1 \end{bmatrix}
+    + 2 \begin{bmatrix} 2 \\ -3 \\ 1 \end{bmatrix}
+    - 1 \begin{bmatrix} 5 \\ -4 \\ 0 \end{bmatrix}
+    = \begin{bmatrix} 2 \\ -2 \\ -1 \end{bmatrix}
+  \]
+</div>
+
+    <hr>
+    
+    <h1>Redefinición de ejes con vectores</h1>
+
+    <p>
+    Sean 
+    \[
+    u = \begin{bmatrix} 3 \\ 1 \end{bmatrix}, \quad 
+    v = \begin{bmatrix} 1 \\ 2 \end{bmatrix}.
+    \]
+    Puede usar \(u\) y \(v\) para ubicar un nuevo conjunto de ejes (en la misma forma que
+    \[
+    e_1 = \begin{bmatrix} 1 \\ 0 \end{bmatrix}, \quad 
+    e_2 = \begin{bmatrix} 0 \\ 1 \end{bmatrix}
+    \]
+    ubican los ejes coordenados estándar).
+    </p>
+
+    <p>
+    Puede usar estos nuevos ejes para determinar una <em>cuadrícula coordenada</em> que permitirá ubicar fácilmente combinaciones lineales de \(u\) y \(v\).
+    </p>
+
+    <p>
+    Como muestra la figura, \(w\) puede ubicarse comenzando en el origen y avanzar \(-u\) seguido por \(2v\). Esto es,
+    </p>
+
+    <p>
+    \[
+    w = -u + 2v
+    \]
+    </p>
+
+    <p>
+    Se dice que las coordenadas de \(w\) con respecto a \(u\) y \(v\) son \(-1\) y \(2\). (Note que esta es sólo otra forma de pensar en los coeficientes de la combinación lineal).
+    </p>
+
+    <div class="ejemplo">
+    \[
+    w = -\begin{bmatrix} 3 \\ 1 \end{bmatrix}
+        + 2\begin{bmatrix} 1 \\ 2 \end{bmatrix}
+        = \begin{bmatrix} -1 \\ 3 \end{bmatrix}
+    \]
+    </div>
+
+    <p>
+    Observe que \(-1\) y \(3\) son las coordenadas de \(w\) con respecto a \(e_1\) y \(e_2\).
+    </p>
+ 
+
+    <img src="../../../img/guia_234.png" alt="">
+
+    <hr>
+
+ 
+    <h1>El producto punto</h1>
+
+ 
+<p>
+  Las versiones vectoriales de longitud, distancia y ángulo pueden describirse usando la noción de <em>producto punto</em> de dos vectores.
+</p>
+
+<div class="definicion">
+  <p><strong>Definición</strong></p>
+  <p>
+    Si
+    \[
+      u = \begin{bmatrix} u_1 \\ u_2 \\ \vdots \\ u_n \end{bmatrix}, \quad
+      v = \begin{bmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{bmatrix},
+    \]
+    entonces el <em>producto punto</em> \(u \cdot v\) de \(u\) y \(v\) se define mediante
+  </p>
+
+  \[
+    u \cdot v = u_1 v_1 + u_2 v_2 + \cdots + u_n v_n
+  \]
+</div>
+
+<p>
+  En palabras, \(u \cdot v\) es la suma de los productos de los componentes correspondientes de \(u\) y \(v\).
+  Es importante notar un par de cosas acerca de este “producto”:
+</p>
+
+<ul>
+  <li>Primero, \(u\) y \(v\) deben tener el mismo número de componentes.</li>
+  <li>Segundo, el producto punto \(u \cdot v\) es un <em>número</em>, no otro vector.</li>
+</ul>
+
+<p>
+  (Es por esto que \(u \cdot v\) en ocasiones se conoce como el <em>producto escalar</em> de \(u\) y \(v\).)
+  El producto punto de vectores en \(\mathbb{R}^n\) es un caso especial e importante de la noción más general de
+  <em>producto interno</em>, que se explorará en el capítulo 7.
+</p>
+ 
+    <hr>
     
 </div>
 
@@ -1721,92 +1782,100 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
    
-     
-<h1>Teorema 3.13</h1>
-  <p>Sea \( A \) una matriz cuadrada. Si \( B \) es una matriz cuadrada tal que \( AB = I \) y \( BA = I \), entonces \( A \) es invertible y \( B = A^{-1} \).</p>
 
-  <h1>Teorema 3.14</h1>
-  <p>Sea \( A \) una matriz cuadrada. Si una secuencia de operaciones elementales con renglones reduce \( A \) a \( I \), entonces la misma secuencia de operaciones elementales transforma \( I \) en \( A^{-1} \).</p>
+    <h1>Longitud</h1>
 
-  <h1>El método de Gauss-Jordan para calcular la inversa</h1>
-  <p>Es posible realizar operaciones con renglones sobre \( A \) e \( I \) simultáneamente al construir una "matriz superamentada" \( [A | I] \). El Teorema 3.14 muestra que si \( A \) es equivalente por renglones a \( I \) (lo cual, por el teorema fundamental (d) \(\iff\) (a)), significa que \( A \) es invertible, entonces operaciones elementales con renglones producirán
-  \[
-  [A | I] \rightarrow [I | A^{-1}]
-  \]
-  Si \( A \) no puede reducirse a \( I \), entonces el teorema fundamental garantiza que \( A \) no es invertible.</p>
-  <p>El procedimiento recién descrito es simplemente la eliminación de Gauss-Jordan efectuada sobre una matriz aumentada de \( n \times 2n \), en lugar de sobre una de \( n \times (n + 1) \). Otra forma de ver este procedimiento es observando el problema de encontrar \( A^{-1} \) al resolver la ecuación matricial \( AX = I_n \) para una matriz \( X \) de \( n \times n \). (Esto es suficiente, por el teorema fundamental, pues una inversa correcta de \( A \) debe ser una inversa de dos lados.)</p>
-  <p>Si las columnas de \( X \) se denotan \( X_1, \ldots, X_n \), entonces esta ecuación matricial es equivalente a resolver para las columnas de \( X \), una a la vez. Dado que las columnas de \( I_n \) son los vectores unitarios estándar \( e_1, \ldots, e_n \), entonces se tienen \( n \) sistemas de ecuaciones lineales, todos con matriz de coeficientes \( A \):
-  \[
-  AX_1 = e_1, \ldots, AX_n = e_n
-  \]
-  Dado que se necesita la misma secuencia de operaciones con renglones para llevar \( A \) a la forma escalonada reducida por renglones en cada caso, las matrices aumentadas para estos sistemas, \( [A | e_1], \ldots, [A | e_n] \), pueden combinarse como
-  \[
-  [A | e_1, e_2, \ldots, e_n] = [A | I_n]
-  \]
-  Ahora se aplican operaciones con renglones para tratar de reducir \( A \) a \( I \), lo cual, si tiene éxito, resolverá simultáneamente para las columnas de \( A^{-1} \), lo que transformará \( I_n \) en \( A^{-1} \).</p>
-  <p>Este uso de la eliminación de Gauss-Jordan se ilustra con tres ejemplos.</p>
-  
-  
-  <h1>Ejemplo 3.30</h1>
-  <p>Encuentre la inversa de
-  \[
-  A = \begin{bmatrix}
-  1 & 2 & -1 \\
-  2 & 2 & 4 \\
-  1 & 3 & -3
-  \end{bmatrix}
-  \]
-  si existe.</p>
 
-  <h1>Solución</h1>
-  <p>La eliminación de Gauss-Jordan produce</p>
-  <table>
-    <tr><td>\([A | I] = \begin{bmatrix} 1 & 2 & -1 & | & 1 & 0 & 0 \\ 2 & 2 & 4 & | & 0 & 1 & 0 \\ 1 & 3 & -3 & | & 0 & 0 & 1 \end{bmatrix}\)</td></tr>
-    <tr><td>\(R_2 - 2R_1 \rightarrow R_2\)</td></tr>
-    <tr><td>\(R_3 - R_1 \rightarrow R_3\)</td></tr>
-    <tr><td>\(\begin{bmatrix} 1 & 2 & -1 & | & 1 & 0 & 0 \\ 0 & -2 & 6 & | & -2 & 1 & 0 \\ 0 & 1 & -2 & | -1 & 0 & 1 \end{bmatrix}\)</td></tr>
-    <tr><td>\((-1/2)R_2 \rightarrow R_2\)</td></tr>
-    <tr><td>\(\begin{bmatrix} 1 & 2 & -1 & | & 1 & 0 & 0 \\ 0 & 1 & -3 & | & 1 & -1/2 & 0 \\ 0 & 1 & -2 & | -1 & 0 & 1 \end{bmatrix}\)</td></tr>
-    <tr><td>\(R_3 - R_2 \rightarrow R_3\)</td></tr>
-    <tr><td>\(\begin{bmatrix} 1 & 2 & -1 & | & 1 & 0 & 0 \\ 0 & 1 & -3 & | & 1 & -1/2 & 0 \\ 0 & 0 & 1 & | & 0 & 1/2 & 1 \end{bmatrix}\)</td></tr>
-    <tr><td>\(R_1 + R_3 \rightarrow R_1\)</td></tr>
-    <tr><td>\(R_2 + 3R_3 \rightarrow R_2\)</td></tr>
-    <tr><td>\(\begin{bmatrix} 1 & 2 & 0 & | & 1 & 1/2 & 1 \\ 0 & 1 & 0 & | & 1 & 1/2 & 3 \\ 0 & 0 & 1 & | & 0 & 1/2 & 1 \end{bmatrix}\)</td></tr>
-    <tr><td>\(R_1 - 2R_2 \rightarrow R_1\)</td></tr>
-    <tr><td>\(\begin{bmatrix} 1 & 0 & 0 & | & -1 & -1/2 & -5 \\ 0 & 1 & 0 & | & 1 & 1/2 & 3 \\ 0 & 0 & 1 & | & 0 & 1/2 & 1 \end{bmatrix}\)</td></tr>
-  </table>
-  <p>Por tanto,</p>
-  <p>\(A^{-1} = \begin{bmatrix} -1 & -1/2 & -5 \\ 1 & 1/2 & 3 \\ 0 & 1/2 & 1 \end{bmatrix}\)</p>
-  <p>(Siempre debe comprobar que \( A A^{-1} = I \) mediante multiplicación directa. Por el Teorema 3.13, no necesita comprobar que también \( A^{-1} A = I \))</p>
+    <p>
+    Para ver cómo el producto punto desempeña un papel en el cálculo de longitudes, recuerde cómo se calculan longitudes en el plano.
+    El teorema de Pitágoras es todo lo que necesita.
+    </p>
 
-  <h1>Comentario</h1>
-  <p>Note que se usó la variante de eliminación de Gauss-Jordan que primero introduce todos los ceros abajo de los 1 pivote, de izquierda a derecha y de arriba abajo, y luego crea ceros arriba de los 1 pivote, de derecha a izquierda y de abajo arriba. Este planteamiento ahorra cálculos, como se anotó en el capítulo 2, pero puede encontrar más sencillo, cuando trabaje a mano, para crear todos los ceros en cada columna conforme avance. Desde luego, la respuesta será la misma.</p>
+    <p>
+    En \(\mathbb{R}^2\), la longitud del vector
+    \[
+    v = \begin{bmatrix} a \\ b \end{bmatrix}
+    \]
+    es la distancia desde el origen hasta el punto \((a, b)\), que por el teorema de Pitágoras está dada por \(\sqrt{a^2 + b^2}\).
+    Observe que \(a^2 + b^2 = v \cdot v\). Esto conduce a la siguiente definición.
+    </p>
 
-  <h1>3.4 La factorización LU</h1>
-  <p>Así como es natural (e ilustrador) factorizar un número natural en un producto de otros números naturales (por ejemplo, 30 = 2 · 3 · 5), frecuentemente también es útil factorizar matrices como productos de otras matrices. Cualquier representación de una matriz como producto de dos o más matrices se llama factorización de matrices. Por ejemplo,
-  \[
-  \begin{bmatrix} 3 & -1 \\ 9 & -5 \end{bmatrix} = \begin{bmatrix} 1 & 0 \\ 3 & 1 \end{bmatrix} \begin{bmatrix} 3 & -1 \\ 0 & -2 \end{bmatrix}
-  \]
-  es una factorización de una matriz.</p>
-  <p>No es necesario decir que algunas factorizaciones son más útiles que otras. En esta sección se presenta una factorización matricial que surge en la solución de sistemas de ecuaciones lineales mediante eliminación gaussiana y es particularmente adecuada para implementaciones en computadora. En capítulos posteriores se encontrarán otras factorizaciones matriciales igualmente útiles. De hecho, el tema es rico y el se han dedicado libros y cursos enteros.</p>
-  <p>Considere un sistema de ecuaciones lineales de la forma \( A\mathbf{x} = \mathbf{b} \), donde \( A \) es una matriz de \( n \times n \). La meta de este libro es demostrar que la eliminación gaussiana implica-mente factoriza \( A \) en un producto de matrices que permiten resolver fácilmente el sistema dado (y cualquier otro sistema con la misma matriz de coeficientes). El siguiente ejemplo ilustra la idea básica.</p>
+    <div class="definicion">
+    <p>
+    <strong>Definición</strong> &nbsp; La <em>longitud</em> (o <em>norma</em>) de un vector
+    \[
+      v = \begin{bmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{bmatrix} \in \mathbb{R}^n
+    \]
+    es el escalar no negativo \(\|v\|\) definido por
+    </p>
 
-  <h1>Ejemplo 3.33</h1>
-  <p>Sea
-  \[
-  A = \begin{bmatrix} 2 & 1 & 3 \\ 4 & -1 & 3 \\ -2 & 5 & 5 \end{bmatrix}
-  \]</p>
+    \[
+    \|v\| = \sqrt{v \cdot v} = \sqrt{v_1^2 + v_2^2 + \cdots + v_n^2}
+    \]
+    </div>
 
-  <h1>La reducción por renglones de \( A \) se realiza del modo siguiente:</h1>
-  <table>
-    <tr><td>\(A = \begin{bmatrix} 2 & 1 & 3 \\ 4 & -1 & 3 \\ -2 & 5 & 5 \end{bmatrix}\)</td></tr>
-    <tr><td>\(R_2 - 2R_1 \rightarrow R_2\)</td></tr>
-    <tr><td>\(\begin{bmatrix} 2 & 1 & 3 \\ 0 & -3 & -3 \\ -2 & 5 & 5 \end{bmatrix}\)</td></tr>
-    <tr><td>\(R_3 + R_1 \rightarrow R_3\)</td></tr>
-    <tr><td>\(\begin{bmatrix} 2 & 1 & 3 \\ 0 & -3 & -3 \\ 0 & 6 & 8 \end{bmatrix} = U\)</td></tr>
-  </table>
+    <p>
+    En palabras, la longitud de un vector es la raíz cuadrada de la suma de los cuadrados de sus componentes.
+    Note que la raíz cuadrada de \(v \cdot v\) siempre está definida, pues \(v \cdot v \geq 0\).
+    También note que la definición puede reescribirse para dar \(\|v\|^2 = v \cdot v\).
+    </p>
+
+    <div class="ejemplo">
+    \[
+    \|[\,2, 3\,]\| = \sqrt{2^2 + 3^2} = \sqrt{13}
+    \]
+    </div>
+
+    <p>
+    El Teorema 1.3 menciona algunas de las principales propiedades de la longitud vectorial:
+    </p>
+
+    <ul>
+    <li>\(\|v\| = 0\) si y sólo si \(v = 0\).</li>
+    <li>\(\|cv\| = |c| \, \|v\|\).</li>
+    </ul>
  
+    <img src="../../../img/guia_235.png" alt="">
 
+    <hr>
+
+    <h2>Normalización</h2> <p> Un vector de longitud 1 se llama <b>vector unitario</b>. En \( \mathbb{R}^2 \), el conjunto 
+    de todos los vectores unitarios puede identificarse con el <b>círculo unitario</b>, que es el círculo de radio 1 con 
+    centro en el origen. </p> <p> Dado cualquier vector \( \mathbf{v} \) distinto de cero, siempre es posible encontrar un 
+    vector unitario en la misma dirección que \( \mathbf{v} \) al dividirlo por su propia longitud (o, de manera 
+    equivalente, al <i>multiplicar</i> por \( \tfrac{1}{\|\mathbf{v}\|} \)). </p> 
+    
+    <p> Esto se puede demostrar usando la 
+    propiedad (b) del Teorema 1.3: si \[ \mathbf{u} = \left(\frac{1}{\|\mathbf{v}\|}\right)\mathbf{v}, \] entonces 
+    \[ \|\mathbf{u}\| = \left\| \left(\tfrac{1}{\|\mathbf{v}\|}\right)\mathbf{v} \right\| = \tfrac{1}{\|\mathbf{v}\|} 
+    \|\mathbf{v}\| = \left(\tfrac{1}{\|\mathbf{v}\|}\right)\|\mathbf{v}\| = 1 \] </p> 
+    
+    <p> y \( \mathbf{u} \) está en la 
+    misma dirección que \( \mathbf{v} \), ya que \( \tfrac{1}{\|\mathbf{v}\|} \) es un escalar positivo. </p> 
+    
+    <p> 
+    <b>Definición:</b> Encontrar un vector unitario en la misma dirección que un vector se llama <b>normalizar un vector</b>. 
+    </p>
+
+
+    <img src="../../../img/guia_236.png" alt="">
+
+    <hr>
+
+    <h2>Vectores unitarios estándar</h2> <p> En \( \mathbb{R}^n \), se definen vectores unitarios 
+    \( \mathbf{e}_1, \mathbf{e}_2, \ldots, \mathbf{e}_n \), donde \( \mathbf{e}_i \) tiene un \( 1 \) en su \( i \)-ésimo 
+    componente y ceros en cualquier otra parte. </p> <p> Tales vectores surgen de manera repetida en álgebra lineal y se 
+    llaman <b>vectores unitarios estándar</b>. </p>
+
+    <hr>
+
+    <h2>La desigualdad de Cauchy-Schwarz</h2> <p> Para todos los vectores \( \mathbf{u}, \mathbf{v} \in \mathbb{R}^n \), </p> <p style="text-align:center;"> \[ |\mathbf{u} \cdot \mathbf{v}| \leq \|\mathbf{u}\| \|\mathbf{v}\| \] </p> <p> En \( \mathbb{R}^2 \) o \( \mathbb{R}^3 \), donde se puede usar geometría, es claro a partir de un diagrama que \(\|\mathbf{u} + \mathbf{v}\|\) ≤ \(\|\mathbf{u}\| + \|\mathbf{v}\|\) para todos los vectores \( \mathbf{u}, \mathbf{v} \). Más adelante se demuestra que esto es verdadero en general. </p> <h2>La desigualdad del triángulo</h2> <p> Para todos los vectores \( \mathbf{u}, \mathbf{v} \in \mathbb{R}^n \), </p> <p style="text-align:center;"> \[ \|\mathbf{u} + \mathbf{v}\| \leq \|\mathbf{u}\| + \|\mathbf{v}\| \] </p>
+
+    <img src="../../../img/guia_237.png" alt="">
+
+    <hr>
+
+  
 
 </div>
 </div>
@@ -1816,7 +1885,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="once.php"
+        href="segundo.php"
         role="button"
         width="50px"
         height="50px"

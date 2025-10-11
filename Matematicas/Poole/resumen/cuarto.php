@@ -1598,21 +1598,216 @@ function ocultarMensaje4() {
     
 <div class="seccion izquierda"> 
  
-    <p>Las tres matrices elementales \( E_1, E_2, E_3 \), que logran esta reducción de \( A \) a la forma escalonada \( U \) son (en orden):</p>
-  <p>\(E_1 = \begin{bmatrix} 1 & 0 & 0 \\ -2 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}\), \(E_2 = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 1 & 0 & 1 \end{bmatrix}\), \(E_3 = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 2 & 1 \end{bmatrix}\)</p>
-  <p>Por tanto,</p>
-  <p>\(E_3 E_2 E_1 A = U\)</p>
-  <p>Al despejar para \( A \), se obtiene</p>
-  <p>\(A = E_1^{-1} E_2^{-1} E_3^{-1} U = \begin{bmatrix} 1 & 0 & 0 \\ 2 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix} \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ -1 & 0 & 1 \end{bmatrix} \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & -2 & 1 \end{bmatrix} U\)</p>
-  <p>\(\begin{bmatrix} 1 & 0 & 0 \\ 2 & 1 & 0 \\ -1 & -2 & 1 \end{bmatrix} U = LU\)</p>
-  <p>Por tanto, \( A \) puede factorizarse como</p>
-  <p>\(A = LU\)</p>
-  <p>donde \( U \) es una matriz triangular superior (vea los ejercicios para la sección 3.2) y \( L \) es triangular inferior unitaria. Esto es, \( L \) tiene la forma</p>
-  <p>\(L = \begin{bmatrix} 1 & 0 & \cdots & 0 \\ * & 1 & \cdots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ * & * & \cdots & 1 \end{bmatrix}\)</p>
-  <p>con ceros arriba y números 1 en la diagonal principal.</p>
-  <p>El ejemplo anterior motiva la siguiente definición.</p>
+
+    <div class="section">
+        <div class="conclusion">
+            <h2>En resumen:</h2>
+            <div class="math">
+                <p><strong>Sin z:</strong> restricción en 2 variables → <span class="dimension">1 dimensión libre</span> → <strong>recta</strong></p>
+                <p><strong>Con z:</strong> restricción en 3 variables → <span class="dimension">2 dimensiones libres</span> → <strong>plano</strong></p>
+            </div>
+        </div>
+    </div>
+    
 
 
+    <hr>
+
+
+
+    <div class="section">
+        <h1>Ejemplo 1.30</h1>
+        
+        <div class="problem-statement">
+            <p>Encuentre las formas normal y general de la ecuación del plano que contiene el punto</p>
+            <div class="math-formula">
+                <p>\[ P =  {(6, 0, 1)} \]</p>
+                <p>y tiene un vector normal \( \mathbf{n} = {\begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}} \)</p>
+            </div>
+        </div>
+
+        <div class="solution-section">
+            <h3>Solución</h3>
+            
+            <p>Con \( \mathbf{p} = \begin{bmatrix} 6 \\ 0 \\ 1 \end{bmatrix} \) y \( \mathbf{x} = \begin{bmatrix} x \\ y \\ z \end{bmatrix} \) se tiene:</p>
+            
+            <div class="calculation">
+                <p>\[ \mathbf{n} \cdot \mathbf{p} = 1 \cdot 6 + 2 \cdot 0 + 3 \cdot 1 = 9 \]</p>
+            </div>
+            
+            <p>de modo que la ecuación normal \( \mathbf{n} \cdot \mathbf{x} = \mathbf{n} \cdot \mathbf{p} \) se convierte en la ecuación general:</p>
+            
+            <div class="math-formula">
+                <p>\[ \mathbf{n} \cdot \mathbf{x} = 9 \quad \Rightarrow \quad x + 2y + 3z = 9 \]</p>
+            </div>
+        </div>
+
+        <div class="solution-section">
+            <h3>Planos Paralelos</h3>
+            
+            <p>Geométricamente, es claro que planos paralelos tienen los mismos vectores normales. Por tanto, sus ecuaciones generales tienen lados izquierdos que son múltiplos mutuos.</p>
+            
+            <div class="example">
+                <p><strong>Ejemplo:</strong> \( 2x + 4y + 6z = 10 \) es la ecuación general de un plano paralelo al plano del ejemplo 1.30, ya que la ecuación puede reescribirse como:</p>
+                <div class="math-formula">
+                    <p>\[ x + 2y + 3z = 5 \]</p>
+                </div>
+                <p>de donde se ve que los dos planos tienen el mismo vector normal \( \mathbf{n} \).</p>
+            </div>
+            
+            <div class="note">
+                <p><strong>Nota:</strong> Los planos no coinciden, pues los lados derechos de sus ecuaciones son distintos.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+        <h2>Forma Vectorial y Paramétrica de un Plano</h2>
+        
+        <p>También puede expresar la ecuación de un plano en forma vectorial o paramétrica. Para hacerlo, observe que un plano también puede determinarse al especificar:</p>
+        
+        <ul>
+            <li>Uno de sus puntos \( P \) (por el vector \( \mathbf{p} \))</li>
+            <li>Dos vectores directores \( \mathbf{u} \) y \( \mathbf{v} \) paralelos al plano (pero no mutuamente paralelos)</li>
+        </ul>
+        
+        <p>Como muestra la figura 1.61, dado cualquier punto \( X \) en el plano (ubicado por \( \mathbf{x} \)), siempre se pueden encontrar múltiplos adecuados \( s\mathbf{u} \) y \( t\mathbf{v} \) de los vectores directores tales que:</p>
+        
+        <div class="math-formula">
+            <p>\[ \mathbf{x} - \mathbf{p} = s\mathbf{u} + t\mathbf{v} \quad \text{o} \quad \mathbf{x} = \mathbf{p} + s\mathbf{u} + t\mathbf{v} \]</p>
+        </div>
+        
+        <p>Si esta ecuación se escribe en forma de componentes, se obtienen ecuaciones paramétricas para el plano.</p>
+        
+        <hr>
+        <div class="definition">
+           
+            <strong>Definición</strong>   
+            <p>La <strong>forma vectorial de la ecuación de un plano</strong> \( \mathcal{P} \) en \( \mathbb{R}^3 \) es</p>
+            <div class="math-formula">
+                <p>\[ \mathbf{x} = \mathbf{p} + s\mathbf{u} + t\mathbf{v} \]</p>
+            </div>
+            <p>donde:</p>
+            <ul>
+                <li>\( \mathbf{p} \) es un punto sobre \( \mathcal{P} \)</li>
+                <li>\( \mathbf{u} \) y \( \mathbf{v} \) son vectores directores para \( \mathcal{P} \)</li>
+                <li>\( \mathbf{u} \) y \( \mathbf{v} \) son distintos de cero y paralelos a \( \mathcal{P} \), mas no mutuamente paralelos</li>
+            </ul>
+        </div>
+        
+        <div class="definition">
+            <div class="definition-title">Definición</div>
+            <p>Las ecuaciones correspondientes a los componentes de la forma vectorial de la ecuación se llaman <strong>ecuaciones paramétricas</strong> de \( \mathcal{P} \).</p>
+        </div>
+    </div>
+
+
+    <hr>
+
+
+     <div class="section">
+        <h1>Vectores Directores en ℝ² vs ℝ³</h1>
+        
+        <div class="comparison">
+            <div class="r2">
+                <h2>En ℝ² - Recta:</h2>
+                <ul>
+                    <li><span class="important">1 vector director</span> → basta para definir la dirección</li>
+                    <li>Ejemplo: Recta con dirección <span class="vector">d = [2, 1]</span></li>
+                    <li>Todos los puntos: <span class="vector">x = p + t·d</span></li>
+                    <li><span class="important">1 parámetro (t)</span> → movimiento en 1 dimensión</li>
+                </ul>
+            </div>
+            
+            <div class="r3">
+                <h2>En ℝ³ - Plano:</h2>
+                <ul>
+                    <li><span class="important">Necesitas 2 vectores directores</span> diferentes</li>
+                    <li>¿Por qué? Porque un plano es <span class="important">bidimensional</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>¿Qué representan estos vectores?</h2>
+        <p>Imagina un plano como una <span class="important">hoja de papel infinita</span>:</p>
+        <ul>
+            <li><span class="vector">Vector u</span>: dirección "horizontal" en el plano</li>
+            <li><span class="vector">Vector v</span>: dirección "vertical" en el plano</li>
+            <li><span class="vector">p</span>: punto donde "agarramos" el plano</li>
+        </ul>
+
+        <div class="example">
+            <h3>Ejemplo concreto:</h3>
+            <p><strong>Plano:</strong> <span class="vector">x + 2y + 3z = 9</span> (del ejemplo anterior)</p>
+            
+            <h4>¿Cómo encontrar vectores directores?</h4>
+            <ul>
+                <li>Encontrar 2 vectores <span class="important">PERPENDICULARES</span> al normal <span class="vector">n = [1, 2, 3]</span></li>
+                <li>Recordar: <span class="vector">u · n = 0</span> y <span class="vector">v · n = 0</span></li>
+            </ul>
+            
+            <h4>Posibles vectores directores:</h4>
+            <div class="math">
+                <p><span class="vector">u = [2, -1, 0]</span> porque: <span class="vector">1·2 + 2·(-1) + 3·0 = 0</span> ✓</p>
+                <p><span class="vector">v = [3, 0, -1]</span> porque: <span class="vector">1·3 + 2·0 + 3·(-1) = 0</span> ✓</p>
+            </div>
+        </div>
+
+        <h2>¿Por qué necesitamos 2 vectores?</h2>
+        <p>Porque con <span class="vector">x = p + s·u + t·v</span>:</p>
+        <ul>
+            <li><span class="important">s</span> controla movimiento en dirección u</li>
+            <li><span class="important">t</span> controla movimiento en dirección v</li>
+            <li><span class="important">Juntos</span> te permiten llegar a <span class="important">cualquier punto</span> del plano</li>
+        </ul>
+
+        <div class="analogy">
+            <h3>Analogía:</h3>
+            <p><strong>Recta en ℝ²:</strong> como caminar por un <span class="important">sendero</span> (solo adelante/atrás)</p>
+            <p><strong>Plano en ℝ³:</strong> como caminar por un <span class="important">campo</span> (adelante/atrás + izquierda/derecha)</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Métodos para encontrar vectores directores</h2>
+        
+        <div class="method">
+            <h3>En ℝ² (con pendiente):</h3>
+            <div class="math">
+                <p>Si recta: <span class="vector">y = mx + b</span></p>
+                <p>Vector director: <span class="vector">d = [1, m]</span> (por cada 1 en x, m en y)</p>
+            </div>
+        </div>
+
+        <div class="method">
+            <h3>En ℝ³ (sin pendiente única):</h3>
+            
+            <h4>Método 1: Usando el vector normal</h4>
+            <p>Dado: <span class="vector">ax + by + cz = d</span> con vector normal <span class="vector">n = [a, b, c]</span></p>
+            <p>Encontrar vectores perpendiculares a n:</p>
+            <p>Buscar <span class="vector">u = [u₁, u₂, u₃]</span> tal que <span class="vector">a·u₁ + b·u₂ + c·u₃ = 0</span></p>
+            
+            <h5>Truco práctico:</h5>
+            <ol>
+                <li><strong>Hacer una componente cero</strong> y resolver:
+                    <div class="math">
+                        <p>Si <span class="vector">n = [1, 2, 3]</span>, buscar <span class="vector">u</span> tal que <span class="vector">1·u₁ + 2·u₂ + 3·u₃ = 0</span></p>
+                        <p>Fácil: <span class="vector">u = [2, -1, 0]</span> → <span class="vector">1·2 + 2·(-1) + 3·0 = 0</span> ✓</p>
+                    </div>
+                </li>
+                <li><strong>Encontrar otro vector independiente:</strong>
+                    <div class="math">
+                        <p><span class="vector">v = [3, 0, -1]</span> → <span class="vector">1·3 + 2·0 + 3·(-1) = 0</span> ✓</p>
+                    </div>
+                </li>
+            </ol>
+
+           
+    </div>
+ </div>
+    
 </div>
 
 
@@ -1620,7 +1815,192 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
    
-     
+            <h4>Método 2: Con 3 puntos del plano</h4>
+            <p>Si tienes puntos A, B, C en el plano:</p>
+            <div class="math">
+                <p><span class="vector">u = B - A</span></p>
+                <p><span class="vector">v = C - A</span></p>
+            </div>
+         
+
+        <div class="example">
+            <h3>Ejemplo del problema anterior:</h3>
+            <p><strong>Plano:</strong> <span class="vector">x + 2y + 3z = 9</span></p>
+            <p><strong>Vector normal:</strong> <span class="vector">n = [1, 2, 3]</span></p>
+            
+            <h4>Vectores directores:</h4>
+            <div class="math">
+                <p><span class="vector">u = [2, -1, 0]</span> (verifica: <span class="vector">1·2 + 2·(-1) + 3·0 = 0</span>)</p>
+                <p><span class="vector">v = [0, 3, -2]</span> (verifica: <span class="vector">1·0 + 2·3 + 3·(-2) = 0</span>)</p>
+            </div>
+            <p class="important">¡Estos dos vectores te permiten "caminar" por todo el plano!</p>
+        </div>
+
+        <div class="method">
+            <h3>¿Por qué no hay "pendiente" en ℝ³?</h3>
+            <p>Porque en un plano tienes <span class="important">infinitas direcciones</span>, no solo una como en la recta. Necesitas dos vectores para describir todas las posibles direcciones dentro del plano.</p>
+        </div>
+
+        <img src="../../../img/guia_245.png" alt="">
+
+        <hr>
+        <div> 
+            <div class="comment">
+            <h2>Comentarios</h2>
+            
+            <p>Un plano es un objeto bidimensional, y su ecuación, en forma vectorial o paramétrica, requiere dos parámetros.</p>
+            
+            <p>Como muestra la figura 1.59, dado un punto \( P \) y un vector distinto de cero \( \mathbf{n} \) en \( \mathbb{R}^3 \), existen infinitas rectas a través de \( P \) con \( \mathbf{n} \) como vector normal. Sin embargo, \( P \) y dos vectores normales no paralelos \( \mathbf{n}_1 \) y \( \mathbf{n}_2 \) sirven para ubicar una recta \( \ell \) de manera única, pues \( \ell \) debe ser entonces la recta que pasa a través de \( P \) perpendicular al plano con ecuación \( \mathbf{x} = \mathbf{p} + s\mathbf{n}_1 + t\mathbf{n}_2 \) (figura 1.62).</p>
+        </div>
+
+        <div class="highlight">
+            <p>En consecuencia, una recta en \( \mathbb{R}^3 \) también puede especificarse mediante un par de ecuaciones:</p>
+            
+            <div class="math-formula">
+                \[
+                \begin{aligned}
+                a_1x + b_1y + c_1z &= d_1 \\
+                a_2x + b_2y + c_2z &= d_2
+                \end{aligned}
+                \]
+            </div>
+            
+            <p>que corresponden a cada vector normal. Pero, dado que dichas ecuaciones corresponden a un par de planos no paralelos (¿por qué no paralelos?), esta es justo la descripción de una recta como la intersección de dos planos no paralelos (figura 1.63).</p>
+            
+            <p>Algebraicamente, la recta consiste de todos los puntos \((x, y, z)\) que satisfacen simultáneamente ambas ecuaciones. Este concepto se explorará más en el capítulo 2, cuando se estudie la solución de los sistemas de ecuaciones lineales.</p>
+        </div>
+
+        <div class="comment">
+            <p>Las tablas 1.2 y 1.3 resumen la información presentada hasta el momento acerca de las ecuaciones de rectas y planos.</p>
+            
+            <p>Observe una vez más que una sola ecuación (general) describe una recta en \( \mathbb{R}^2 \), pero un plano en \( \mathbb{R}^3 \). [En dimensiones superiores, un objeto (recta, plano, etcétera) determinado por una sola ecuación de este tipo por lo general se conoce como <strong>hiperplano</strong>.]</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Fórmula de Balanceo</h2>
+        
+        <div class="important">
+            <p>La relación entre la dimensión del objeto, el número de ecuaciones requeridas y la dimensión del espacio está dada por la <strong>"fórmula de balanceo"</strong>:</p>
+            
+            <div class="dimension-formula">
+                \[
+                (\text{dimensión del objeto}) + (\text{número de ecuaciones generales}) = \text{dimensión del espacio}
+                \]
+            </div>
+        </div>
+
+        <div class="highlight">
+            <p>Mientras más grande sea la dimensión del objeto, menos ecuaciones se necesitan.</p>
+            
+            <div class="examples">
+                <div class="example">
+                    <div class="example-title">Plano en ℝ³</div>
+                    <p>Es bidimensional, requiere una ecuación general y existe en un espacio tridimensional:</p>
+                    <div class="math-formula">
+                        \[ 2 + 1 = 3 \]
+                    </div>
+                </div>
+                
+                <div class="example">
+                    <div class="example-title">Recta en ℝ³</div>
+                    <p>Es unidimensional y por tanto necesita \( 3 - 1 = 2 \) ecuaciones.</p>
+                    <div class="math-formula">
+                        \[ 1 + 2 = 3 \]
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="comment">
+            <p>Note que la dimensión del objeto también concuerda con el número de parámetros en su forma vectorial o paramétrica. Las nociones de "dimensión" se aclararán en los capítulos 3 y 6, pero por el momento le servirán estas observaciones intuitivas.</p>
+        </div>
+
+        <div class="definition">
+            <p><strong>Hiperplano:</strong> En dimensiones superiores, un objeto determinado por una sola ecuación lineal se conoce como hiperplano. Un hiperplano en \( \mathbb{R}^n \) tiene dimensión \( n-1 \).</p>
+        </div>
+
+        <div class="important">
+            <p>Ahora puede encontrar la distancia desde un punto hasta una recta o un plano al combinar los resultados de la sección 1.2 con los de esta sección.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Resumen de Dimensiones</h2>
+        
+        <div class="examples">
+            <div class="example">
+                <div class="example-title">ℝ² (2D)</div>
+                <ul>
+                    <li><strong>Recta:</strong> 1 dimensión</li>
+                    <li><strong>Ecuaciones necesarias:</strong> 1</li>
+                    <li><strong>Fórmula:</strong> \(1 + 1 = 2\)</li>
+                </ul>
+            </div>
+            
+            <div class="example">
+                <div class="example-title">ℝ³ (3D)</div>
+                <ul>
+                    <li><strong>Plano:</strong> 2 dimensiones</li>
+                    <li><strong>Ecuaciones necesarias:</strong> 1</li>
+                    <li><strong>Fórmula:</strong> \(2 + 1 = 3\)</li>
+                </ul>
+                <ul>
+                    <li><strong>Recta:</strong> 1 dimensión</li>
+                    <li><strong>Ecuaciones necesarias:</strong> 2</li>
+                    <li><strong>Fórmula:</strong> \(1 + 2 = 3\)</li>
+                </ul>
+            </div>
+            
+            <div class="example">
+                <div class="example-title">ℝⁿ (nD)</div>
+                <ul>
+                    <li><strong>Hiperplano:</strong> n-1 dimensiones</li>
+                    <li><strong>Ecuaciones necesarias:</strong> 1</li>
+                    <li><strong>Fórmula:</strong> \((n-1) + 1 = n\)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+
+       <div class="section">
+        <h1>Ecuaciones Necesarias = Restricciones que Aplicas</h1>
+        
+        <div class="analogy">
+            <h2>Analogía:</h2>
+            <p>Imagina que estás en un espacio y quieres "restringir" tu movimiento.</p>
+        </div>
+
+        <h2>En ℝ³ (espacio 3D):</h2>
+        
+        <div class="case">
+            <div class="case-title">Caso 1: PLANO (2 dimensiones)</div>
+            <p><strong>Ecuación necesaria:</strong> <span class="equation">1</span></p>
+            <p><strong>¿Por qué?</strong> Con una ecuación como <span class="equation">x + 2y + 3z = 6</span> reduces de <span class="dimension">3D → 2D</span></p>
+            <p><strong>Movimiento libre:</strong> <span class="movement">Puedes moverte en 2 direcciones dentro del plano</span></p>
+        </div>
+
+        <div class="case">
+            <div class="case-title">Caso 2: RECTA (1 dimensión)</div>
+            <p><strong>Ecuaciones necesarias:</strong> <span class="equation">2</span></p>
+            <p><strong>¿Por qué?</strong> Necesitas DOS ecuaciones como:</p>
+            <div class="math">
+                <p>\( x + 2y + 3z = 6 \)</p>
+                <p>\( 2x - y + z = 1 \)</p>
+            </div>
+            <p>• Con la primera ecuación: <span class="dimension">3D → 2D</span> (plano)</p>
+            <p>• Con la segunda ecuación: <span class="dimension">2D → 1D</span> (recta)</p>
+            <p><strong>Movimiento libre:</strong> <span class="movement">Solo puedes moverte adelante/atrás en la recta</span></p>
+        </div>
+
+      
+    </div>
+
+    <hr>
+
     
 </div>
 </div>
@@ -1630,7 +2010,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="doce.php"
+        href="quinto.php"
         role="button"
         width="50px"
         height="50px"

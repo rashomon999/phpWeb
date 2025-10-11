@@ -169,7 +169,7 @@ if ($_POST) {
 
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '26') {  
+   if ($respuesta_1 === 'n*x=0') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -179,7 +179,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === '39') {  
+   if ($respuesta_2 === 'n(x-p)=0') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -189,7 +189,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === '52') {  
+   if ($respuesta_3 === 'x=p+td') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -199,7 +199,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === '65') {  
+   if ($respuesta_4 === '-2') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -209,7 +209,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === '78') {  
+   if ($respuesta_5 === '1') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -219,7 +219,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === '91') {  
+   if ($respuesta_6 === '-2') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -229,7 +229,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === '104') {  
+   if ($respuesta_7 === 'n(x-p)=0') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -239,7 +239,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === '117') {  
+   if ($respuesta_8 === 'n*x=n*p') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -249,7 +249,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === '130') {  
+   if ($respuesta_9 === 'normal') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -259,7 +259,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === '143') {  
+   if ($respuesta_10 === 'x=p+td') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -268,19 +268,24 @@ if ($_POST) {
    }
 
    // Verificar la respuesta de la undécima pregunta
-   $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === '156') {  
-       $verificar_11 = "correcto";
-   } elseif ($respuesta_11 === '') {
-       $verificar_11 = '';
-   } else {
-       $verificar_11 = "incorrecto";
-   }
+   // Verificar la respuesta de la undécima pregunta
+$respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
+
+// Eliminar todos los espacios en blanco
+$respuesta_11 = str_replace(' ', '', $respuesta_11);
+
+if ($respuesta_11 === 'ax+by+cz=d') {
+    $verificar_11 = "correcto";
+} elseif ($respuesta_11 === '') {
+    $verificar_11 = '';
+} else {
+    $verificar_11 = "incorrecto";
+}
 
 
     // Verificar la respuesta de la primera pregunta
     $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-    if ($respuesta_12 === '28') {  
+    if ($respuesta_12 === 'normal') {  
         $verificar_12 = "correcto";
     } elseif ($respuesta_12 === '') {
         $verificar_12 = '';
@@ -290,7 +295,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la segunda pregunta
     $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-    if ($respuesta_13 === '42') { 
+    if ($respuesta_13 === 'ax+by+cz=d') { 
         $verificar_13 = "correcto";
     } elseif ($respuesta_13 === '') {
         $verificar_13 = '';
@@ -300,7 +305,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la tercera pregunta
     $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-    if ($respuesta_14 === '56') {  
+    if ($respuesta_14 === 'n*(x-p)') {  
         $verificar_14 = "correcto";
     } elseif ($respuesta_14 === '') {
         $verificar_14 = '';
@@ -310,7 +315,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la cuarta pregunta
     $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-    if ($respuesta_15 === '70') { 
+    if ($respuesta_15 === 'n*(x-p)=0') { 
         $verificar_15 = "correcto";
     } elseif ($respuesta_15 === '') {
         $verificar_15 = '';
@@ -320,7 +325,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la quinta pregunta
     $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-    if ($respuesta_16 === '84') {  
+    if ($respuesta_16 === 'n*x=n*p') {  
         $verificar_16 = "correcto";
     } elseif ($respuesta_16 === '') {
         $verificar_16 = '';
@@ -1592,7 +1597,7 @@ function ocultarMensaje4() {
 </head>
 <body>  
 
-<form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
+<form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
 <div class="form-container">
 
     
@@ -1603,12 +1608,20 @@ function ocultarMensaje4() {
         
         <div class="definition">
             <div class="definition-title">Forma Normal de una Recta</div>
-            <p>Dada una recta en \( \mathbb{R}^2 \), si existe un vector \( \mathbf{n} \) perpendicular a la recta (vector normal), entonces la ecuación de la recta puede escribirse como \( \mathbf{n} \cdot \mathbf{x} = 0 \) (si pasa por el origen) o \( \mathbf{n} \cdot (\mathbf{x} - \mathbf{p}) = 0 \) (si pasa por un punto \( \mathbf{p} \)).</p>
+            <p>Dada una recta en \( \mathbb{R}^2 \), si existe un vector \( \mathbf{n} \) perpendicular a la recta 
+                (vector normal), entonces la ecuación de la recta puede escribirse como
+                <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="8">
+                (si pasa por el origen) o
+                <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="8">
+        
+                (si pasa por un punto \( \mathbf{p} \)).</p>
         </div>
         
         <div class="definition">
             <div class="definition-title">Representación Paramétrica</div>
-            <p>Toda recta en \( \mathbb{R}^2 \) o \( \mathbb{R}^3 \) puede describirse paramétricamente como \( \mathbf{x} = \mathbf{p} + t\mathbf{d} \), donde:</p>
+            <p>Toda recta en \( \mathbb{R}^2 \) o \( \mathbb{R}^3 \) puede describirse paramétricamente como 
+            <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="8">    
+             , donde:</p>
             <ul>
                 <li>\( \mathbf{p} \) es un punto en la recta</li>
                 <li>\( \mathbf{d} \) es un vector dirección</li>
@@ -1617,7 +1630,13 @@ function ocultarMensaje4() {
         </div>
     </div>
 
+    <br><br>
+     <button type="submit">Enviar</button> 
+    <?php echo $verificar_1 ?>
+    <?php echo $verificar_2 ?>
+    <?php echo $verificar_3 ?>
 
+    <br><br>
      <div class="section">
         <h2>El vector dirección \(\mathbf{d}\)</h2>
         
@@ -1643,7 +1662,13 @@ function ocultarMensaje4() {
         <div class="highlight">
             <h3>¿Por qué específicamente \(\begin{bmatrix} 1 \\ -2 \end{bmatrix}\)?</h3>
             <p>El texto dice: <em>"su coordenada x cambia 1 unidad por segundo"</em> - esto nos da la componente x = 1 del vector dirección.</p>
-            <p>Como la pendiente es -2, cuando x cambia 1 unidad, y cambia -2 unidades. Por eso:</p>
+            <p>Como la pendiente es 
+            <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="8">    
+            , cuando x cambia
+            <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="8">
+            unidad, y cambia 
+            <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="8">
+            unidades. Por eso:</p>
             <div class="math">
                 <p>\[
                     \mathbf{d} = \begin{bmatrix} 1 \\ -2 \end{bmatrix}
@@ -1651,6 +1676,14 @@ function ocultarMensaje4() {
             </div>
         </div>
     </div>
+
+    <br>
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_4 ?>
+    <?php echo $verificar_5 ?>
+    <?php echo $verificar_6 ?>
+
+    <br><br>
 
     <img src="../../../img/guia_244.png" alt="">
 
@@ -1664,10 +1697,22 @@ function ocultarMensaje4() {
         
         <div class="math-formula">
             <p>La <strong>forma normal</strong> de la ecuación de una recta \(\ell\) en \(\mathbb{R}^2\) es:</p>
-            <p>\[
-                \mathbf{n} \cdot (\mathbf{x} - \mathbf{p}) = 0 \quad \text{o} \quad \mathbf{n} \cdot \mathbf{x} = \mathbf{n} \cdot \mathbf{p}
-            \]</p>
+
+
+            <p style="align-items: center; text-align:center; "> 
+
+            <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="8">
+            o 
+            <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="8">
+            </p>
+
         </div>
+
+        <p>
+        <button type="submit">Enviar</button> 
+        <?php echo $verificar_7 ?>
+        <?php echo $verificar_8 ?>
+        </p>
 
         <div class="explanation">
             <p>Donde:</p>
@@ -1682,7 +1727,9 @@ function ocultarMensaje4() {
             <p>\[
                 \mathbf{n} = \begin{bmatrix} a \\ b \end{bmatrix}
             \]</p>
-            <p>es un vector normal para \(\ell\).</p>
+            <p>es un vector 
+            <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="8">    
+              para \(\ell\).</p>
         </div>
     </div>
             
@@ -1693,9 +1740,13 @@ function ocultarMensaje4() {
         
         <div class="math-formula">
             <p>La <strong>forma vectorial</strong> de la ecuación de una recta \(\ell\) en \(\mathbb{R}^2\) o \(\mathbb{R}^3\) es:</p>
-            <p>\[
-                \mathbf{x} = \mathbf{p} + t\mathbf{d}
-            \]</p>
+            
+             <p style="align-items: center; text-align:center; "> 
+
+            <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="8">
+          
+            </p>
+            
         </div>
 
         <div class="explanation">
@@ -1792,86 +1843,25 @@ function ocultarMensaje4() {
 <div class="seccion derecha">
    
   <div class="example-container">
-        <div class="example-title">Ejemplo 1.29</div>
+       
+
+    <h1>Planos en \( \mathbb{R}^3 \)</h1>
+   
         
-        <div class="problem-statement">
-            <p>Con frecuencia, uno escucha la expresión "dos puntos determinan una recta". Encuentre una ecuación vectorial de la recta \(\ell\) en \(\mathbb{R}^3\) determinada por los puntos:</p>
-            <div class="math-formula">
-                <p>\[ P =  {(-1, 5, 0)} \quad \text{y} \quad Q =  {(2, 1, 1)} \]</p>
-            </div>
-        </div>
-
-        <div class="solution-section">
-            <div class="section-title">Solución</div>
-            
-            <div class="explanation">
-                <p>Es posible elegir cualquier punto sobre \(\ell\) para \(\mathbf{p}\), de modo que se usará \(P\) (\(Q\) también estaría bien).</p>
-            </div>
-
-            <div class="vector-operation">
-                <p class="important">¿Qué se hizo? ¡NO es producto punto entre P y Q!</p>
-                <p>Se calculó el <strong>vector director</strong> como la diferencia entre los puntos Q y P:</p>
-                <div class="math-formula">
-                    \[
-                    \mathbf{d} = \overrightarrow{PQ} = Q - P = 
-                    \begin{bmatrix} 2 \\ 1 \\ 1 \end{bmatrix} - 
-                    \begin{bmatrix} -1 \\ 5 \\ 0 \end{bmatrix} = 
-                    \begin{bmatrix} 3 \\ -4 \\ 1 \end{bmatrix}
-                    \]
-                </div>
-            </div>
-
-            <p>Un vector director conveniente es \(\mathbf{d} = \overrightarrow{PQ} =  {\begin{bmatrix} 3 \\ -4 \\ 1 \end{bmatrix}}\) (o cualquier múltiplo escalar de éste). Por tanto, se obtiene:</p>
-            
-            <div class="math-formula">
-                \[
-                \mathbf{x} = \mathbf{p} + t\mathbf{d}
-                \]
-                \[
-                = \begin{bmatrix} -1 \\ 5 \\ 0 \end{bmatrix} + t \begin{bmatrix} 3 \\ -4 \\ 1 \end{bmatrix}
-                \]
-            </div>
-        </div>
-
-        <div class="explanation">
-            <p><strong>Explicación clave:</strong></p>
-            <ul>
-                <li>El <strong>vector director</strong> \(\mathbf{d}\) es la <strong>diferencia</strong> entre los puntos, NO el producto punto</li>
-                <li>\(\overrightarrow{PQ} = Q - P\) nos da la dirección de la recta</li>
-                <li>Podríamos usar también \(\overrightarrow{QP} = P - Q = \begin{bmatrix} -3 \\ 4 \\ -1 \end{bmatrix}\)</li>
-                <li>Cualquier múltiplo escalar de \(\mathbf{d}\) también es un vector director válido</li>
-            </ul>
-        </div>
+    <div class="important">
+        <p> 
+        <input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="9">    
+        
+        es la ecuación de un <strong>plano</strong>, no de una recta, en \( \mathbb{R}^3 \).</p>
     </div>
-     
-    
-
-
-
-
-    <hr>
-
-
-      <h1>Planos en \( \mathbb{R}^3 \)</h1>
-    
-    <div class="section">
-        <p>La siguiente pregunta que debe plantearse es: ¿cómo la forma general de la ecuación de una recta se generaliza a \( \mathbb{R}^3 \)? Razonablemente puede suponer que si \( ax + by = c \) es la forma general de la ecuación de una recta en \( \mathbb{R}^2 \), entonces \( ax + by + cz = d \) puede representar una recta en \( \mathbb{R}^3 \). En forma normal, esta ecuación sería \( \mathbf{n} \cdot \mathbf{x} = \mathbf{n} \cdot \mathbf{p} \), donde \( \mathbf{n} \) es un vector normal a la recta y \( \mathbf{p} \) corresponde a un punto sobre la recta.</p>
         
-        <div class="math-formula">
-            \[ ax + by + cz = d \quad \Rightarrow \quad \mathbf{n} \cdot \mathbf{x} = \mathbf{n} \cdot \mathbf{p} \]
-        </div>
-        
-        <p>Para ver si esta es una hipótesis razonable, considere el caso especial de la ecuación \( ax + by + cz = 0 \). En forma normal, se convierte en \( \mathbf{n} \cdot \mathbf{x} = 0 \), donde \( \mathbf{n} = \begin{bmatrix} a \\ b \\ c \end{bmatrix} \).</p>
-        
-        <div class="highlight">
-            <p>Sin embargo, el conjunto de todos los vectores \( \mathbf{x} \) que satisfacen esta ecuación es el conjunto de todos los vectores ortogonales a \( \mathbf{n} \). Como se muestra en la figura 1.59, vectores en infinitas direcciones tienen esta propiedad, lo que determina una familia de planos paralelos.</p>
-        </div>
-        
-        <div class="important">
-            <p><strong>Conclusión importante:</strong> La suposición fue incorrecta: parece que \( ax + by + cz = d \) es la ecuación de un <strong>plano</strong>, no de una recta, en \( \mathbb{R}^3 \).</p>
-        </div>
-        
-        <p>Precise más este hallazgo. Todo plano \( \mathcal{P} \) en \( \mathbb{R}^3 \) puede determinarse al especificar un punto \( \mathbf{p} \) sobre \( \mathcal{P} \) y un vector distinto de cero \( \mathbf{n} \) normal a \( \mathcal{P} \) (figura 1.60). Por ende, si \( \mathbf{x} \) representa un punto arbitrario sobre \( \mathcal{P} \), se tiene que \( \mathbf{n} \cdot (\mathbf{x} - \mathbf{p}) = 0 \) o \( \mathbf{n} \cdot \mathbf{x} = \mathbf{n} \cdot \mathbf{p} \).</p>
+    <p>Precise más este hallazgo. Todo plano \( \mathcal{P} \) en \( \mathbb{R}^3 \) puede determinarse al especificar 
+    un punto \( \mathbf{p} \) sobre \( \mathcal{P} \) y un vector distinto de cero \( \mathbf{n} \) normal a 
+    \( \mathcal{P} \) (figura 1.60). Por ende, si \( \mathbf{x} \) representa un punto arbitrario sobre \( \mathcal{P} \), 
+    se tiene que 
+    <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="10">
+    o \( \mathbf{n} \cdot \mathbf{x} = 
+    \mathbf{n} \cdot \mathbf{p} \).</p>
         
         <div class="math-formula">
             \[ \mathbf{n} \cdot (\mathbf{x} - \mathbf{p}) = 0 \quad \text{o} \quad \mathbf{n} \cdot \mathbf{x} = \mathbf{n} \cdot \mathbf{p} \]
@@ -1886,24 +1876,53 @@ function ocultarMensaje4() {
 
     <div class="divider"></div>
 
+     <button type="submit">Enviar</button>
+      <?php echo $verificar_11 ?>
+     <?php echo $verificar_14 ?>
+
+    <hr>
     <div class="section">
         <div class="definition">
             <div class="definition-title">Definición</div>
             <p>La <strong>forma normal de la ecuación de un plano</strong> \( \mathcal{P} \) en \( \mathbb{R}^3 \) es</p>
-            <div class="math-formula">
-                \[ \mathbf{n} \cdot (\mathbf{x} - \mathbf{p}) = 0 \quad \text{o} \quad \mathbf{n} \cdot \mathbf{x} = \mathbf{n} \cdot \mathbf{p} \]
+            <div  style="align-items: center;">
+
+             <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="10">   
+             o 
+              <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="10"> 
+            
+          
             </div>
-            <p>donde \( \mathbf{p} \) es un punto específico sobre \( \mathcal{P} \) y \( \mathbf{n} \neq \mathbf{0} \) es un vector normal para \( \mathcal{P} \).</p>
+            <p>donde \( \mathbf{p} \) es un punto específico sobre \( \mathcal{P} \) y \( \mathbf{n} \neq \mathbf{0} \) 
+                es un vector normal para \( \mathcal{P} \).</p>
         </div>
         
         <div class="definition">
          
-            <p>La <strong>forma general de la ecuación de</strong> \( \mathcal{P} \) es \( ax + by + cz = d \), donde \( \mathbf{n} = \begin{bmatrix} a \\ b \\ c \end{bmatrix} \) es un vector normal para \( \mathcal{P} \).</p>
-            <div class="math-formula">
-                \[ ax + by + cz = d \quad \text{con} \quad \mathbf{n} = \begin{bmatrix} a \\ b \\ c \end{bmatrix} \]
-            </div>
+            <p>La <strong>forma general de la ecuación de</strong> \( \mathcal{P} \) es \( ax + by + cz = d \), donde 
+            \( \mathbf{n} = \begin{bmatrix} a \\ b \\ c \end{bmatrix} \) es un vector normal para \( \mathcal{P} \).</p>
+            <div style="display: flex; align-items: center; gap: 8px;">
+                        
+                <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="15">
+
+                
+                
+                \( \text{con} \quad \mathbf{n} = \begin{bmatrix} a \\ b \\ c \end{bmatrix} \)
+             </div>
+
         </div>
     </div>
+    <br><br>
+    la clave es que el vector 
+    <input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="9">
+    normal por un punto (x,y,z) me da la ecuacion del plano.
+
+    <br><br>
+     <button type="submit">Enviar</button>
+    <?php echo $verificar_12 ?>
+    <?php echo $verificar_13 ?>
+ 
+    <hr>
 
     <div class="section">
         <h2>Resumen Conceptual</h2>
