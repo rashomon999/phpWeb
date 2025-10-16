@@ -29,13 +29,9 @@
 </head>
 <body>
     <div class="centered-container">
-        <a class="btn" href=".\semana_1\Menu.php">semana 1</a>
-        <a class="btn" href=".\semana_2\Menu.php">semana 2</a>
-        <a class="btn" href=".\semana_3\Menu.php">semana 3</a>
-        <br>
-        <br>
-        <a class="btn" href=".\parcial_2\Menu.php">parcial 2</a>
-
+        <a class="btn" href=".\Gson\index.php">Gson</a>
+        <a class="btn" href=".\Reader\index.php">Reader</a>
+        <a class="btn" href=".\Problema\index.php">Problema</a>
     </div>
 </body>
 </html>

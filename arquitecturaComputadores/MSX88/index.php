@@ -2748,7 +2748,7 @@ if ($respuesta_280 === '144') {
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 180vh;
+    height: 100vh;
     }
 
 </style>
@@ -3034,6 +3034,16 @@ function ocultarMensaje4() {
     
 <div class="seccion izquierda"> 
  
+<button onclick="window.location.href='../C++/index.php'">
+  Ir a C++
+</button>
+
+ 
+<button onclick="window.location.href='./problema_1/index.php'">
+Analisis problema
+</button>
+
+
 <h1>Desglose: AL / AH / AX / EAX / RAX</h1>
     <p class="note">Tabla que muestra la relación entre las distintas vistas del mismo registro físico (familia x86).</p>
 
@@ -3121,6 +3131,7 @@ function ocultarMensaje4() {
 </table>
 
 
+ 
 
 </div>
 
@@ -3129,7 +3140,186 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
  
- 
+ <h3>🧩 1. ¿Qué es una arquitectura de CPU?</h3>
+
+<p>Una arquitectura (o <strong>ISA — Instruction Set Architecture</strong>) es como el idioma nativo que entiende un procesador. Define:</p>
+
+<ul>
+  <li>Qué registros existen (nombres, tamaño, propósito).</li>
+  <li>Qué instrucciones puede ejecutar (MOV, ADD, JMP, etc.).</li>
+  <li>Cómo se organiza la memoria y los datos (tamaño de palabra, alineación, etc.).</li>
+  <li>Cómo se pasan parámetros, se manejan interrupciones, etc.</li>
+</ul>
+
+<p><strong>Por ejemplo:</strong></p>
+
+<table border="1">
+  <tr>
+    <th>Arquitectura</th>
+    <th>CPU representativo</th>
+    <th>Tamaño de registro</th>
+    <th>Ejemplos de registros</th>
+  </tr>
+  <tr>
+    <td>x86-64</td>
+    <td>Intel Core, AMD Ryzen</td>
+    <td>64 bits</td>
+    <td>RAX, RBX, RCX, RDX, RSP, RIP…</td>
+  </tr>
+  <tr>
+    <td>x86 (32 bits)</td>
+    <td>Pentium 4, Core 2</td>
+    <td>32 bits</td>
+    <td>EAX, EBX, ECX, EDX, ESP, EIP…</td>
+  </tr>
+  <tr>
+    <td>8086 (16 bits)</td>
+    <td>Intel 8086, 8088</td>
+    <td>16 bits</td>
+    <td>AX, BX, CX, DX, SP, IP…</td>
+  </tr>
+  <tr>
+    <td>ARM64 (AArch64)</td>
+    <td>Apple M1/M2, Snapdragon 8</td>
+    <td>64 bits</td>
+    <td>X0–X30, SP, PC…</td>
+  </tr>
+  <tr>
+    <td>RISC-V RV64</td>
+    <td>SiFive, StarFive, etc.</td>
+    <td>64 bits</td>
+    <td>x0–x31, PC, SP…</td>
+  </tr>
+</table>
+
+<h3>🧠 2. Entonces, los registros son “propios del idioma” del procesador</h3>
+
+<p>En x86-64, todos los procesadores de Intel y AMD modernos usan los mismos nombres de registro (RAX, RBX, RSP, etc.) porque comparten la misma arquitectura.</p>
+
+<p>En cambio, si miras un procesador ARM o RISC-V, no existen esos registros; tienen los suyos (por ejemplo, X0, X1, SP, PC).</p>
+
+<p><strong>💬 Es como si:</strong></p>
+
+<ul>
+  <li>Un procesador x86-64 hablara “español técnico”.</li>
+  <li>Un procesador ARM hablara “inglés técnico”.</li>
+</ul>
+
+<p>Ambos pueden hacer lo mismo, pero usan palabras distintas.</p>
+
+<strong>System V AMD64 (Linux/macOS)</strong>
+<table border="1">
+  <tr>
+    <th>Registro</th>
+    <th>Propósito</th>
+    <th>Se conserva entre llamadas</th>
+  </tr>
+  <tr>
+    <td>%rax</td>
+    <td>registro temporal; valor de retorno</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>%rbx</td>
+    <td>conservado por la función llamada (callee-saved)</td>
+    <td>Sí</td>
+  </tr>
+  <tr>
+    <td>%rcx</td>
+    <td>usado para pasar el 4.º argumento a las funciones</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>%rdx</td>
+    <td>usado para pasar el 3.º argumento a las funciones</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>%rsp</td>
+    <td>puntero de pila (stack pointer)</td>
+    <td>Sí</td>
+  </tr>
+  <tr>
+    <td>%rbp</td>
+    <td>conservado; puntero base (base pointer)</td>
+    <td>Sí</td>
+  </tr>
+  <tr>
+    <td>%rsi</td>
+    <td>usado para pasar el 2.º argumento a las funciones</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>%rdi</td>
+    <td>usado para pasar el 1.º argumento a las funciones</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>%r8</td>
+    <td>usado para pasar el 5.º argumento a las funciones</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>%r9</td>
+    <td>usado para pasar el 6.º argumento a las funciones</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>%r10–r11</td>
+    <td>temporales</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>%r12–r15</td>
+    <td>registros conservados por la función llamada (callee-saved)</td>
+    <td>Sí</td>
+  </tr>
+</table>
+
+<h3>Microsoft x64 ABI (Windows)</h3>
+
+  <table border="1" cellspacing="0" cellpadding="6">
+    <tr>
+      <th>Registro</th>
+      <th>Propósito</th>
+      <th>Conservado</th>
+    </tr>
+    <tr>
+      <td>RCX</td>
+      <td>1.º argumento</td>
+      <td>❌ No</td>
+    </tr>
+    <tr>
+      <td>RDX</td>
+      <td>2.º argumento</td>
+      <td>❌ No</td>
+    </tr>
+    <tr>
+      <td>R8</td>
+      <td>3.º argumento</td>
+      <td>❌ No</td>
+    </tr>
+    <tr>
+      <td>R9</td>
+      <td>4.º argumento</td>
+      <td>❌ No</td>
+    </tr>
+    <tr>
+      <td>RAX</td>
+      <td>Valor de retorno</td>
+      <td>❌ No</td>
+    </tr>
+    <tr>
+      <td>RBX, RBP, RSI, RDI, R12–R15</td>
+      <td>Callee-saved</td>
+      <td>✅ Sí</td>
+    </tr>
+    <tr>
+      <td>RSP</td>
+      <td>Puntero de pila</td>
+      <td>✅ Sí</td>
+    </tr>
+  </table>
 
 </div>
 </div>
