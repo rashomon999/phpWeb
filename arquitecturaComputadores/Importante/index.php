@@ -2748,7 +2748,7 @@ if ($respuesta_280 === '144') {
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 180vh;
+    height: 270vh;
     }
 
 </style>

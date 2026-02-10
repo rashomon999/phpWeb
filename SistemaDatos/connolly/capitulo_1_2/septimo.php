@@ -1769,7 +1769,8 @@ function ocultarMensaje4() {
     <br>
     En la Figura 1.2 (Paso II.a) se muestra una posible representación del modelo ER de
     la base de datos de productos y clientes, tal como es concebida por el usuario final.
-    <img src="..\img\2sd.jpeg" alt="">
+    <br>
+    <img src="..\..\..\img\2sd.jpeg" alt="">
     <hr>
     <strong>b. 
     <input type="text" name="respuesta_68" value="<?php echo $respuesta_68; ?>" size="22">    

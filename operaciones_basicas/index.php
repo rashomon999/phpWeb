@@ -3,7 +3,7 @@
 for ($i = 1; $i <= 230; $i++) {
     ${"respuesta_" . $i} = '';
 }
-
+ 
 
      
 for ($i = 1; $i <= 230; $i++) {
@@ -12,14 +12,12 @@ for ($i = 1; $i <= 230; $i++) {
 
      
 
-$mostrar_solucion = '';
+$mostrar_solucion = ''; 
 if ($_POST) {
     $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
     
-    if ($mostrar_solucion === 'mostrar_solucion') {
-        // Establecer todas las respuestas correctas para las tablas de multiplicar
-        
-        // Tabla del 12
+    if ($mostrar_solucion === 'mostrar_solucion') {        
+ 
         $respuesta_111 = '24'; 
         $respuesta_112 = '36';
         $respuesta_113 = '48';
@@ -32,7 +30,7 @@ if ($_POST) {
         $respuesta_120 = '132';
         $respuesta_121 = '144';
         
-        // Tabla del 13
+ 
         $respuesta_1 = '26';
         $respuesta_2 = '39';
         $respuesta_3 = '52';
@@ -45,7 +43,7 @@ if ($_POST) {
         $respuesta_10 = '143';
         $respuesta_11 = '156';
         
-        // Tabla del 14
+ 
         $respuesta_12 = '28';
         $respuesta_13 = '42';
         $respuesta_14 = '56';
@@ -58,7 +56,7 @@ if ($_POST) {
         $respuesta_21 = '154';
         $respuesta_22 = '168';
         
-        // Tabla del 15
+ 
         $respuesta_23 = '30';
         $respuesta_24 = '45';
         $respuesta_25 = '60';
@@ -71,7 +69,7 @@ if ($_POST) {
         $respuesta_32 = '165';
         $respuesta_33 = '180';
         
-        // Tabla del 16
+ 
         $respuesta_34 = '32';
         $respuesta_35 = '48';
         $respuesta_36 = '64';
@@ -84,7 +82,7 @@ if ($_POST) {
         $respuesta_43 = '176';
         $respuesta_44 = '192';
         
-        // Tabla del 17
+ 
         $respuesta_45 = '34';
         $respuesta_46 = '51';
         $respuesta_47 = '68';
@@ -97,7 +95,7 @@ if ($_POST) {
         $respuesta_54 = '187';
         $respuesta_55 = '204';
         
-        // Tabla del 18
+ 
         $respuesta_56 = '36';
         $respuesta_57 = '54';
         $respuesta_58 = '72';
@@ -110,7 +108,7 @@ if ($_POST) {
         $respuesta_65 = '198';
         $respuesta_66 = '216';
         
-        // Tabla del 19
+ 
         $respuesta_67 = '38';
         $respuesta_68 = '57';
         $respuesta_69 = '76';
@@ -123,7 +121,7 @@ if ($_POST) {
         $respuesta_76 = '209';
         $respuesta_77 = '228';
         
-        // Tabla del 20
+ 
         $respuesta_78 = '40';
         $respuesta_79 = '60';
         $respuesta_80 = '80';
@@ -136,7 +134,7 @@ if ($_POST) {
         $respuesta_87 = '220';
         $respuesta_88 = '240';
         
-        // Tabla del 21
+ 
         $respuesta_89 = '42';
         $respuesta_90 = '63';
         $respuesta_91 = '84';
@@ -149,8 +147,7 @@ if ($_POST) {
         $respuesta_98 = '231';
         $respuesta_99 = '252';
         
-        // Tabla del 22
-        $respuesta_100 = '44';
+         $respuesta_100 = '44';
         $respuesta_101 = '66';
         $respuesta_102 = '88';
         $respuesta_103 = '110';
@@ -1648,6 +1645,140 @@ function ocultarMensaje4() {
     <?php echo $verificar_9 ?>
     <?php echo $verificar_10 ?>
     <?php echo $verificar_11 ?> 
+
+
+     <?php echo $verificar_12 ?>
+    <?php echo $verificar_13 ?>
+    <?php echo $verificar_14 ?>
+    <?php echo $verificar_15 ?>
+    <?php echo $verificar_16 ?>
+    <?php echo $verificar_17 ?>
+    <?php echo $verificar_18 ?>
+    <?php echo $verificar_19 ?>
+    <?php echo $verificar_20 ?>
+    <?php echo $verificar_21 ?>
+    <?php echo $verificar_22 ?>
+
+        <?php echo $verificar_23 ?>
+    <?php echo $verificar_24 ?>
+    <?php echo $verificar_25 ?>
+    <?php echo $verificar_26 ?>
+    <?php echo $verificar_27 ?>
+    <?php echo $verificar_28 ?>
+    <?php echo $verificar_29 ?>
+    <?php echo $verificar_30 ?>
+    <?php echo $verificar_31 ?>
+    <?php echo $verificar_32 ?>
+    <?php echo $verificar_33 ?>
+
+        <?php echo $verificar_34 ?>
+    <?php echo $verificar_35 ?>
+    <?php echo $verificar_36 ?>
+    <?php echo $verificar_37 ?>
+    <?php echo $verificar_38 ?>
+    <?php echo $verificar_39 ?>
+    <?php echo $verificar_40 ?>
+    <?php echo $verificar_41 ?>
+
+
+    <?php echo $verificar_42 ?>
+    <?php echo $verificar_43 ?>
+    <?php echo $verificar_44 ?>
+
+    
+    <?php echo $verificar_45 ?>
+    <?php echo $verificar_46 ?>
+    <?php echo $verificar_47 ?>
+    <?php echo $verificar_48 ?>
+    <?php echo $verificar_49 ?>
+    <?php echo $verificar_50 ?>
+    <?php echo $verificar_51 ?>
+    <?php echo $verificar_52 ?>
+    <?php echo $verificar_53 ?>
+    <?php echo $verificar_54 ?>
+    <?php echo $verificar_55 ?>
+
+
+
+    <?php echo $verificar_56 ?>
+    <?php echo $verificar_57 ?>
+    <?php echo $verificar_58 ?>
+    <?php echo $verificar_59 ?>
+    <?php echo $verificar_60 ?>
+    <?php echo $verificar_61 ?>
+    <?php echo $verificar_62 ?>
+    <?php echo $verificar_63 ?>
+    <?php echo $verificar_64 ?>
+    <?php echo $verificar_65 ?>
+    <?php echo $verificar_66 ?>
+
+    <?php echo $verificar_67 ?>
+<?php echo $verificar_68 ?>
+<?php echo $verificar_69 ?>
+<?php echo $verificar_70 ?>
+<?php echo $verificar_71 ?>
+<?php echo $verificar_72 ?>
+<?php echo $verificar_73 ?>
+<?php echo $verificar_74 ?>
+<?php echo $verificar_75 ?>
+<?php echo $verificar_76 ?>
+<?php echo $verificar_77 ?>
+<?php echo $verificar_78 ?>
+<?php echo $verificar_79 ?>
+<?php echo $verificar_80 ?>
+<?php echo $verificar_81 ?>
+<?php echo $verificar_82 ?>
+<?php echo $verificar_83 ?>
+<?php echo $verificar_84 ?>
+<?php echo $verificar_85 ?>
+<?php echo $verificar_86 ?>
+<?php echo $verificar_87 ?>
+<?php echo $verificar_88 ?>
+<?php echo $verificar_89 ?>
+<?php echo $verificar_90 ?>
+<?php echo $verificar_91 ?>
+<?php echo $verificar_92 ?>
+<?php echo $verificar_93 ?>
+<?php echo $verificar_94 ?>
+<?php echo $verificar_95 ?>
+<?php echo $verificar_96 ?>
+<?php echo $verificar_97 ?>
+<?php echo $verificar_98 ?>
+<?php echo $verificar_99 ?>
+<?php echo $verificar_100 ?>
+<?php echo $verificar_101 ?>
+<?php echo $verificar_102 ?>
+<?php echo $verificar_103 ?>
+<?php echo $verificar_104 ?>
+<?php echo $verificar_105 ?>
+<?php echo $verificar_106 ?>
+<?php echo $verificar_107 ?>
+<?php echo $verificar_108 ?>
+<?php echo $verificar_109 ?>
+<?php echo $verificar_110 ?>
+<?php echo $verificar_111 ?>
+<?php echo $verificar_112 ?>
+<?php echo $verificar_113 ?>
+<?php echo $verificar_114 ?>
+<?php echo $verificar_115 ?>
+<?php echo $verificar_116 ?>
+<?php echo $verificar_117 ?>
+<?php echo $verificar_118 ?>
+<?php echo $verificar_119 ?>
+<?php echo $verificar_120 ?>
+<?php echo $verificar_121 ?>
+<?php echo $verificar_122 ?>
+<?php echo $verificar_123 ?>
+<?php echo $verificar_124 ?>
+<?php echo $verificar_125 ?>
+<?php echo $verificar_126 ?>
+<?php echo $verificar_127 ?>
+<?php echo $verificar_128 ?>
+<?php echo $verificar_129 ?>
+<?php echo $verificar_130 ?>
+<?php echo $verificar_131 ?>
+<?php echo $verificar_132 ?>
+<?php echo $verificar_133 ?>
     <br><br><br>
 
     14 * 2 = <input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>"><br>
@@ -1673,6 +1804,8 @@ function ocultarMensaje4() {
     <?php echo $verificar_20 ?>
     <?php echo $verificar_21 ?>
     <?php echo $verificar_22 ?>
+
+ 
     <br><br><br>
 
     15 * 2 = <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>"><br>
@@ -1698,6 +1831,8 @@ function ocultarMensaje4() {
     <?php echo $verificar_31 ?>
     <?php echo $verificar_32 ?>
     <?php echo $verificar_33 ?>
+
+ 
              <br><br><br>
 
             16 * 2 = <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>"><br>

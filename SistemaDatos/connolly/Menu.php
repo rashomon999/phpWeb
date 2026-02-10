@@ -36,7 +36,7 @@
         <a class="btn" href=".\capitulo_7\index.php">capitulo 7: SQL: Data Definition </a>
         <a class="btn" href=".\capitulo_12\index.php">capitulo 12 Modelo entidad-relacion </a>
         <br>
-        <a class="btn" href=".\capitulo_12\index.php">capitulo 14 Normalización. </a>
+        <a class="btn" href=".\#\index.php">capitulo 14 Normalización (no empezado).</a>
     </div>
 </body>
 </html>

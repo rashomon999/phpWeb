@@ -33,7 +33,8 @@
         <a class="btn" href=".\Part1\Menu.php">Parte 1 SOFTWARE REQUIREMENTS</a>
         <br>
         <a class="btn" href=".\Part2\Menu.php">Parte 2  Software Architecture</a>
-       
+        <br>
+        <a class="btn" href=".\Part3\Menu.php">Parte 3 Diseño de software</a>
     </div>
 </body>
 </html>

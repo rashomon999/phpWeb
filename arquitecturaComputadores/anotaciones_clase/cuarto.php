@@ -2769,7 +2769,7 @@ function handleSubmit(event) {
 
         // Asegúrate de que MathJax procese el nuevo contenido
         if (window.MathJax) {
-            MathJax.typeset();
+            MathJax.typeset(); 
         }
         actualizarFormula();
         actualizarFormula2();

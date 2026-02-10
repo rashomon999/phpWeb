@@ -210,7 +210,7 @@ if ($_POST) {
         $verificar_1 = $verificar_2 = $verificar_3 = /* ... todas las variables de verificación ... */ $verificar_122 = "correcto";
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '26') {  
+   if ($respuesta_1 === 'menor') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -220,7 +220,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === '39') {  
+   if ($respuesta_2 === 'mayor') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -230,9 +230,11 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === 'for i := 1 to r') {  
+   $respuesta_3_dos = str_replace(' ','',subject: $respuesta_3);
+
+   if ($respuesta_3_dos === 'fori:=1tor') {  
        $verificar_3 = "correcto";
-   } elseif ($respuesta_3 === '') {
+   } elseif ($respuesta_3_dos === '') {
        $verificar_3 = '';
    } else {
        $verificar_3 = "incorrecto";
@@ -240,9 +242,11 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === 'n ≥ ci' || $respuesta_4 === 'n >= ci') {  
+   $respuesta_4_dos = str_replace(' ','',subject: $respuesta_4);
+
+   if ($respuesta_4_dos === 'n≥ci' || $respuesta_4 === 'n>=ci') {  
        $verificar_4 = "correcto";
-   } elseif ($respuesta_4 === '') {
+   } elseif ($respuesta_4_dos === '') {
        $verificar_4 = '';
    } else {
        $verificar_4 = "incorrecto";
@@ -1642,6 +1646,7 @@ function ocultarMensaje4() {
     seguida de una de 5 (quedando 2 centavos), seguida de una de 1 (quedando 1 centavo), seguida de otra de 1.</p>
 
 <h4>ALGORITMO 7 Algoritmo del Cajero</h4>
+<strong>usar : ≥</strong>
 <pre>
 procedure chage(c1, c2,… , cr: valores de denominaciones de monedas, donde
 c1 > c2 > ⋯ > cr; n: un entero positivo)

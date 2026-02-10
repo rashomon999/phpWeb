@@ -29,15 +29,19 @@
 </head>
 <body>
     <div class="centered-container">
-        
+
+        <a class="btn" href=".\algebra_relacional\index.php">Algebra Relacional</a>
+        <a class="btn" href=".\cuestionario_algebra_relacional\index.php">cuestionario</a>
         <br><br>
-        Hay mas albunes pero este es el mejor (mas cargado hasta el momento)
+        <a class="btn" href=".\ER_MER\Cero.php"> Transformacion a MER/ER, Transformacion a MR </a> 
+        <a class="btn" href=".\ER_MER_cuestionario\index.php">Cuestionario</a> 
+        <br><br>
+        <a class="btn" href=".\calculoClaves\index.php">Calculo de claves</a> 
+        <a class="btn" href=".\calculoClavesCuestionario\index.php">Cuestionario</a> 
         <br><br>
         SQL es un lenguaje que incluye DDL, DML, DCL, TCL y DQL.
-        <a class="btn" href=".\SQL\index.php">SQL (Lenguaje estructurado de consultas)</a>
-    
-        <a class="btn" href=".\algebra\index.php">Relacional</a>
-        <a class="btn" href=".\Ejercicio\index.php">Ejercicio SQL</a>
+        <br><br>
+        <a class="btn" href=".\Ejercicio\index.php">Ejercicio SQL</a> 
         <a class="btn" href=".\ER\index.php">ER</a>
         <a class="btn" href=".\solucion_3FN\index.php">Solucion 3FN</a>
         <a class="btn" href=".\MER_ER\index.php">ER -> MER (normalizacion)</a>

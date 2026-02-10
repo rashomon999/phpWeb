@@ -1545,6 +1545,51 @@ function ocultarMensaje4() {
     <br><br>
 
     <button type="submit">Enviar</button>
+    
+<button onmousedown="mostrarImagen()" onmouseup="ocultarImagen()">Explicacion</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada" src="../../../img/guia_305.png" style="display: none; max-width: 100%" width="660">
+
+    <script>
+        function mostrarImagen() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada');
+
+        // Mostrar la imagen
+        imagenMostrada.style.display = 'block';
+        }
+
+        function ocultarImagen() {
+        var imagenMostrada = document.getElementById('imagenMostrada');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada.style.display = 'none';
+        }
+    </script>
+
+ 
+ <button onmousedown="mostrarImagen2()" onmouseup="ocultarImagen2()">Explicacion</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada2" src="../../../img/guia_306.png" style="display: none; max-width: 100%" width="660">
+
+    <script>
+        function mostrarImagen2() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+
+        // Mostrar la imagen
+        imagenMostrada2.style.display = 'block';
+        }
+
+        function ocultarImagen2() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada2.style.display = 'none';
+        }
+    </script>
+
+    
     <br>
   <h3 style="color: red;">Incorrecta</h3>
       <p><strong>d.</strong> Todos los atributos no clave dependen por completo de la clave primaria.</p>

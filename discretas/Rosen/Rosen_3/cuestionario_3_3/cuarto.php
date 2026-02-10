@@ -1,59 +1,15 @@
 <?php
  
  
-$respuesta_1 = ''; $respuesta_2 = ''; $respuesta_3 = ''; $respuesta_3_2 = ''; $respuesta_4 = ''; $respuesta_5 = ''; 
-$respuesta_6 = ''; $respuesta_7 = ''; $respuesta_8 = ''; $respuesta_9 = '';  $respuesta_10 = '';
-$respuesta_11 = ''; $respuesta_12 = ''; $respuesta_13 = ''; $respuesta_14 = ''; $respuesta_15 = '';
-$respuesta_16 = ''; $respuesta_17 = ''; $respuesta_18 = ''; $respuesta_19 = ''; $respuesta_20 = '';
-$respuesta_21 = ''; $respuesta_22 = '';  $respuesta_23 = '';  $respuesta_24 = '';
-$respuesta_25 = ''; $respuesta_26 = ''; $respuesta_27 = ''; $respuesta_28 = ''; $respuesta_29 = '';
-$respuesta_30 = ''; $respuesta_31 = ''; $respuesta_32 = ''; $respuesta_33 = ''; $respuesta_34 = ''; $respuesta_35 = ''; $respuesta_36 = ''; $respuesta_37 = ''; $respuesta_38 = '';
-$respuesta_39 = ''; $respuesta_40 = ''; $respuesta_41 = ''; $respuesta_42 = ''; $respuesta_43 = '';
-$respuesta_44 = ''; $respuesta_45 = ''; $respuesta_46 = ''; $respuesta_47 = ''; $respuesta_48 = '';
-$respuesta_49 = ''; $respuesta_50 = ''; $respuesta_51 = ''; $respuesta_52 = ''; $respuesta_53 = '';
-$respuesta_54 = ''; $respuesta_55 = ''; $respuesta_56 = '';$respuesta_57 = ''; $respuesta_58 = ''; $respuesta_59 = ''; $respuesta_60 = '';
-$respuesta_61 = '';$respuesta_62 = '';$respuesta_63 = '';$respuesta_64 = '';$respuesta_65 = '';$respuesta_66 = '';$respuesta_67 = '';$respuesta_68 = '';
-$respuesta_69 = '';$respuesta_70 = '';$respuesta_71 = '';$respuesta_72 = '';$respuesta_73 = '';$respuesta_74 = '';$respuesta_75 = '';$respuesta_76 = '';
-$respuesta_77 = '';$respuesta_78 = '';$respuesta_79 = '';$respuesta_80 = '';$respuesta_81 = '';$respuesta_82 = '';$respuesta_83 = '';$respuesta_84 = '';
-$respuesta_85 = '';$respuesta_86 = '';$respuesta_87 = '';$respuesta_88 = ''; $respuesta_89 = '';
-$respuesta_90 = ''; $respuesta_91 = '';$respuesta_92 = '';$respuesta_93 = '';$respuesta_94 = '';$respuesta_95 = '';$respuesta_96 = '';$respuesta_97 = '';$respuesta_98 = '';
-$respuesta_99 = '';$respuesta_100 = '';$respuesta_101 = '';$respuesta_102 = '';$respuesta_103 = '';$respuesta_104 = '';$respuesta_105 = '';
-$respuesta_106 = '';$respuesta_107 = '';$respuesta_108 = '';$respuesta_109 = '';$respuesta_110 = '';
+for ($i = 1; $i <= 230; $i++) {
+    ${"respuesta_" . $i} = '';
+}
+ 
 
-/////
- // Agrega estas variables junto con las demás (antes del if $_POST)
-$respuesta_111 = ''; $respuesta_112 = ''; $respuesta_113 = ''; $respuesta_114 = ''; $respuesta_115 = ''; 
-$respuesta_116 = ''; $respuesta_117 = ''; $respuesta_118 = ''; $respuesta_119 = ''; $respuesta_120 = ''; 
-$respuesta_121 = ''; $respuesta_122 = '';
-
-$verificar_111 = ''; $verificar_112 = ''; $verificar_113 = ''; $verificar_114 = ''; $verificar_115 = ''; 
-$verificar_116 = ''; $verificar_117 = ''; $verificar_118 = ''; $verificar_119 = ''; $verificar_120 = ''; 
-$verificar_121 = ''; $verificar_122 = '';
-////
-
-$verificar_1 = ''; $verificar_2 = ''; $verificar_3 = '';  $verificar_3_2 = ''; $verificar_4 = ''; $verificar_5 = ''; 
-$verificar_6 = ''; $verificar_7 = '';  $verificar_8 = ''; $verificar_9 = ''; $verificar_10 = ''; 
-$verificar_11 = ''; $verificar_12 = ''; $verificar_13 = ''; $verificar_14 = ''; $verificar_15 = ''; 
-$verificar_16 = '';  $verificar_17 = ''; $verificar_18 = ''; $verificar_19 = ''; $verificar_20 = '';  
-$verificar_21 = '';  $verificar_22 = '';  $verificar_23 = '';   $verificar_24 = '';   $verificar_25 = '';  
-$verificar_26 = '';  $verificar_27= ''; $verificar_28= '';  $verificar_29= '';  $verificar_30 = ''; 
-$verificar_31 = ''; $verificar_32 = ''; $verificar_33 = ''; 
-$verificar_34 = ''; $verificar_35 = ''; $verificar_36 = ''; $verificar_37 = ''; $verificar_38 = '';
-$verificar_39 = ''; $verificar_40 = ''; $verificar_41 = ''; $verificar_42 = ''; $verificar_43 = '';
-$verificar_44 = ''; $verificar_45 = ''; $verificar_46 = ''; $verificar_47 = ''; $verificar_48 = '';
-$verificar_49 = ''; $verificar_50 = ''; $verificar_51 = ''; $verificar_52 = ''; $verificar_53 = '';
-$verificar_54 = ''; $verificar_55 = '';
-$verificar_56 = ''; $verificar_57 = ''; $verificar_58 = ''; $verificar_59 = ''; $verificar_60 = ''; 
-$verificar_61 = ''; $verificar_62 = ''; $verificar_63 = ''; $verificar_64 = ''; $verificar_65 = '';
-$verificar_66 = ''; $verificar_67 = ''; $verificar_68 = ''; $verificar_69 = ''; $verificar_70 = '';
-$verificar_71 = ''; $verificar_72 = ''; $verificar_73 = ''; $verificar_74 = ''; $verificar_75 = '';
-$verificar_76 = ''; $verificar_77 = ''; $verificar_78 = ''; $verificar_79 = ''; $verificar_80 = '';
-$verificar_81 = ''; $verificar_82 = ''; $verificar_83 = ''; $verificar_84 = ''; $verificar_85 = '';
-$verificar_86 = ''; $verificar_87 = ''; $verificar_88 = '';$verificar_89 = ''; $verificar_90 = '';$verificar_91 = '';
-$verificar_92 = '';$verificar_93 = '';$verificar_94 = ''; $verificar_95 = '';
-$verificar_96 = ''; $verificar_97 = ''; $verificar_98 = ''; $verificar_99 = ''; $verificar_100 = '';
-$verificar_101 = '';$verificar_102 = '';$verificar_103 = '';$verificar_104 = '';$verificar_105 = '';
-$verificar_106 = '';$verificar_107 = '';$verificar_108 = '';$verificar_109 = '';$verificar_110 = '';
+     
+for ($i = 1; $i <= 230; $i++) {
+    ${"verificar_" . $i} = '';
+}
      
 
 $mostrar_solucion = '';
@@ -61,156 +17,68 @@ if ($_POST) {
     $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
     
     if ($mostrar_solucion === 'mostrar_solucion') {
-        // Establecer todas las respuestas correctas para las tablas de multiplicar
-        
-        // Tabla del 12
-        $respuesta_111 = '24';
-        $respuesta_112 = '36';
-        $respuesta_113 = '48';
-        $respuesta_114 = '60';
-        $respuesta_115 = '72';
-        $respuesta_116 = '84';
-        $respuesta_117 = '96';
-        $respuesta_118 = '108';
-        $respuesta_119 = '120';
-        $respuesta_120 = '132';
-        $respuesta_121 = '144';
-        
-        // Tabla del 13
-        $respuesta_1 = '26';
-        $respuesta_2 = '39';
-        $respuesta_3 = '52';
-        $respuesta_4 = '65';
-        $respuesta_5 = '78';
-        $respuesta_6 = '91';
-        $respuesta_7 = '104';
-        $respuesta_8 = '117';
-        $respuesta_9 = '130';
-        $respuesta_10 = '143';
-        $respuesta_11 = '156';
-        
-        // Tabla del 14
-        $respuesta_12 = '28';
-        $respuesta_13 = '42';
-        $respuesta_14 = '56';
-        $respuesta_15 = '70';
-        $respuesta_16 = '84';
-        $respuesta_17 = '98';
-        $respuesta_18 = '112';
-        $respuesta_19 = '126';
-        $respuesta_20 = '140';
-        $respuesta_21 = '154';
-        $respuesta_22 = '168';
-        
-        // Tabla del 15
-        $respuesta_23 = '30';
-        $respuesta_24 = '45';
-        $respuesta_25 = '60';
-        $respuesta_26 = '75';
-        $respuesta_27 = '90';
-        $respuesta_28 = '105';
-        $respuesta_29 = '120';
-        $respuesta_30 = '135';
-        $respuesta_31 = '150';
-        $respuesta_32 = '165';
-        $respuesta_33 = '180';
-        
-        // Tabla del 16
-        $respuesta_34 = '32';
-        $respuesta_35 = '48';
-        $respuesta_36 = '64';
-        $respuesta_37 = '80';
-        $respuesta_38 = '96';
-        $respuesta_39 = '112';
-        $respuesta_40 = '128';
-        $respuesta_41 = '144';
-        $respuesta_42 = '160';
-        $respuesta_43 = '176';
-        $respuesta_44 = '192';
-        
-        // Tabla del 17
-        $respuesta_45 = '34';
-        $respuesta_46 = '51';
-        $respuesta_47 = '68';
-        $respuesta_48 = '85';
-        $respuesta_49 = '102';
-        $respuesta_50 = '119';
-        $respuesta_51 = '136';
-        $respuesta_52 = '153';
-        $respuesta_53 = '170';
-        $respuesta_54 = '187';
-        $respuesta_55 = '204';
-        
-        // Tabla del 18
-        $respuesta_56 = '36';
-        $respuesta_57 = '54';
-        $respuesta_58 = '72';
-        $respuesta_59 = '90';
-        $respuesta_60 = '108';
-        $respuesta_61 = '126';
-        $respuesta_62 = '144';
-        $respuesta_63 = '162';
-        $respuesta_64 = '180';
-        $respuesta_65 = '198';
-        $respuesta_66 = '216';
-        
-        // Tabla del 19
-        $respuesta_67 = '38';
-        $respuesta_68 = '57';
-        $respuesta_69 = '76';
-        $respuesta_70 = '95';
-        $respuesta_71 = '114';
-        $respuesta_72 = '133';
-        $respuesta_73 = '152';
-        $respuesta_74 = '171';
-        $respuesta_75 = '190';
-        $respuesta_76 = '209';
-        $respuesta_77 = '228';
-        
-        // Tabla del 20
-        $respuesta_78 = '40';
-        $respuesta_79 = '60';
-        $respuesta_80 = '80';
-        $respuesta_81 = '100';
-        $respuesta_82 = '120';
-        $respuesta_83 = '140';
-        $respuesta_84 = '160';
-        $respuesta_85 = '180';
-        $respuesta_86 = '200';
-        $respuesta_87 = '220';
-        $respuesta_88 = '240';
-        
-        // Tabla del 21
-        $respuesta_89 = '42';
-        $respuesta_90 = '63';
-        $respuesta_91 = '84';
-        $respuesta_92 = '105';
-        $respuesta_93 = '126';
-        $respuesta_94 = '147';
-        $respuesta_95 = '168';
-        $respuesta_96 = '189';
-        $respuesta_97 = '210';
-        $respuesta_98 = '231';
-        $respuesta_99 = '252';
-        
-        // Tabla del 22
-        $respuesta_100 = '44';
-        $respuesta_101 = '66';
-        $respuesta_102 = '88';
-        $respuesta_103 = '110';
-        $respuesta_104 = '132';
-        $respuesta_105 = '154';
-        $respuesta_106 = '176';
-        $respuesta_107 = '198';
-        $respuesta_108 = '220';
-        $respuesta_109 = '242';
-        $respuesta_110 = '264';
+            $respuesta_1 = '3';
+    $respuesta_2 = '3';
+    $respuesta_3 = '9';
+    $respuesta_4 = 'multiplicaciones';
+    $respuesta_5 = 'sumas';
+    $respuesta_6 = 'n^2';
+    $respuesta_7 = 'n^3';
+    $respuesta_8 = 'n^2';
+    $respuesta_9 = 'n^2(n-1)';
+    $respuesta_10 = 'n^3';
+    $respuesta_11 = 'fori:=1tom';
+    
+    $respuesta_12 = 'forj:=1ton';
+    $respuesta_13 = 'cij:=0';
+    $respuesta_14 = 'forq:=1tok';
+    $respuesta_15 = 'cij:=cijV(aiq∧bqj)';
+    $respuesta_16 = '2n';
+    $respuesta_17 = '2n^3';
+    $respuesta_18 = 'menor';
+    $respuesta_19 = '20';
+    $respuesta_20 = '10';
+    $respuesta_21 = 'enfoque';
+    $respuesta_22 = 'fuerza bruta';
+    
+    $respuesta_23 = 'todas';
+    $respuesta_24 = 'ingenuos';
+    $respuesta_25 = 'fuerza bruta';
+    $respuesta_26 = '\sqrt{(x_j-x_i)^2+(y_j-y_i)^2}';
+    $respuesta_27 = 'todos';
+    $respuesta_28 = 'pares';
+    $respuesta_29 = 'puntos';
+    $respuesta_30 = 'pares';
+    $respuesta_31 = 'fori:=2ton';
+    $respuesta_32 = 'forj:=1toi-1';
+    $respuesta_33 = 'min := (xj - xi)^2 + (yj - yi)^2';
+    $respuesta_34 = '\frac{n(n-1)}{2}';
+    $respuesta_35 = 'actualiza';
+    $respuesta_36 = 'n^2';
+    $respuesta_37 = 'nlogn';
+    $respuesta_38 = 'constante';
+    $respuesta_39 = '99';
+    $respuesta_40 = 'lineal';
+    $respuesta_41 = 'logaritmica';
+    $respuesta_42 = 'linealitmica';
+    $respuesta_43 = 'logn';
+    $respuesta_44 = 'n';
+    $respuesta_45 = 'nlogn';
+    $respuesta_46 = 'ordenamiento burbuja';
+    $respuesta_47 = 'insercion';
+    $respuesta_48 = 'seleccion';
+    $respuesta_49 = 'merge sort';
+    $respuesta_50 = 'quick sort';
+    $respuesta_51 = 'divide y venceras';
+    $respuesta_52 = 'programacion dinamica';
+    $respuesta_53 = 'backtracking';
+    $respuesta_54 = 'algoritmos probabilisticos';   
         
         // Marcar todas como correctas
         $verificar_1 = $verificar_2 = $verificar_3 = /* ... todas las variables de verificación ... */ $verificar_122 = "correcto";
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '>') {  
+   if ($respuesta_1 === '3') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -220,7 +88,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === '=') {  
+   if ($respuesta_2 === '3') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -230,7 +98,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === '<') {  
+   if ($respuesta_3 === '9') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -240,7 +108,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === 'polinomial') {  
+   if ($respuesta_4 === 'multiplicaciones') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -250,7 +118,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === 'exponencial') {  
+   if ($respuesta_5 === 'sumas') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -260,7 +128,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === 'polinomial') {  
+   if ($respuesta_6 === 'n^2') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -270,7 +138,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === 'solucion') {  
+   if ($respuesta_7 === 'n^3') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -280,7 +148,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === 'corto') {  
+   if ($respuesta_8 === 'n^2') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -290,9 +158,10 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === 'intratables') {  
+   $respuesta_9_dos = str_replace(' ','', $respuesta_9);
+   if ($respuesta_9_dos === 'n^2(n-1)') {  
        $verificar_9 = "correcto";
-   } elseif ($respuesta_9 === '') {
+   } elseif ($respuesta_9_dos === '') {
        $verificar_9 = '';
    } else {
        $verificar_9 = "incorrecto";
@@ -300,7 +169,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === 'practicamente') {  
+   if ($respuesta_10 === 'n^3') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -309,10 +178,12 @@ if ($_POST) {
    }
 
    // Verificar la respuesta de la undécima pregunta
-   $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === 'no existe') {  
+    $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
+    $respuesta_11_dos = str_replace(' ','', $respuesta_11);
+
+   if ($respuesta_11_dos === 'fori:=1tom') {  
        $verificar_11 = "correcto";
-   } elseif ($respuesta_11 === '') {
+   } elseif ($respuesta_11_dos === '') {
        $verificar_11 = '';
    } else {
        $verificar_11 = "incorrecto";
@@ -321,9 +192,11 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
      $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-     if ($respuesta_12 === 'no resolubles') {  
+     $respuesta_12_dos = str_replace(' ','', $respuesta_12);
+
+     if ($respuesta_12_dos === 'forj:=1ton') {  
          $verificar_12 = "correcto";
-     } elseif ($respuesta_12 === '') {
+     } elseif ($respuesta_12_dos === '') {
          $verificar_12 = '';
      } else {
          $verificar_12 = "incorrecto";
@@ -331,29 +204,37 @@ if ($_POST) {
   
      // Verificar la respuesta de la segunda pregunta
      $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-     if ($respuesta_13 === 'polinomial') { 
+     $respuesta_13_dos = str_replace(' ','', $respuesta_13);
+
+     if ($respuesta_13_dos === 'cij:=0') { 
          $verificar_13 = "correcto";
-     } elseif ($respuesta_13 === '') {
+     } elseif ($respuesta_13_dos === '') {
          $verificar_13 = '';
      } else {
          $verificar_13 = "incorrecto";
      }
   
      // Verificar la respuesta de la tercera pregunta
-     $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-     if ($respuesta_14 === 'polinomial') {  
+    $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
+    $respuesta_14_dos = str_replace(' ','', $respuesta_14);
+    
+    if ($respuesta_14_dos === 'forq:=1tok') {  
          $verificar_14 = "correcto";
-     } elseif ($respuesta_14 === '') {
+     } elseif ($respuesta_14_dos === '') {
          $verificar_14 = '';
      } else {
          $verificar_14 = "incorrecto";
      }
   
      // Verificar la respuesta de la cuarta pregunta
-     $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-     if ($respuesta_15 === 'NP') { 
+    $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
+    $respuesta_15_dos = str_replace(' ','', $respuesta_15);
+
+     if ($respuesta_15_dos === 'cij:=cijV(aiq∧bqj)'
+     || $respuesta_15_dos === 'cij:=cijv(aiq∧bqj)'
+     ) { 
          $verificar_15 = "correcto";
-     } elseif ($respuesta_15 === '') {
+     } elseif ($respuesta_15_dos === '') {
          $verificar_15 = '';
      } else {
          $verificar_15 = "incorrecto";
@@ -361,7 +242,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la quinta pregunta
      $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-     if ($respuesta_16 === 'tratable') {  
+     if ($respuesta_16 === '2n') {  
          $verificar_16 = "correcto";
      } elseif ($respuesta_16 === '') {
          $verificar_16 = '';
@@ -371,7 +252,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la sexta pregunta
      $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-     if ($respuesta_17 === 'no determinista') {  
+     if ($respuesta_17 === '2n^3') {  
          $verificar_17 = "correcto";
      } elseif ($respuesta_17 === '') {
          $verificar_17 = '';
@@ -381,7 +262,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la séptima pregunta
      $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-     if ($respuesta_18 === 'si alguno') {  
+     if ($respuesta_18 === 'menor') {  
          $verificar_18 = "correcto";
      } elseif ($respuesta_18 === '') {
          $verificar_18 = '';
@@ -391,7 +272,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la octava pregunta
      $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-     if ($respuesta_19 === 'todos') {  
+     if ($respuesta_19 === '20') {  
          $verificar_19 = "correcto";
      } elseif ($respuesta_19 === '') {
          $verificar_19 = '';
@@ -401,7 +282,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la novena pregunta
      $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
-     if ($respuesta_20 === 'NP') {  
+     if ($respuesta_20 === '10') {  
          $verificar_20 = "correcto";
      } elseif ($respuesta_20 === '') {
          $verificar_20 = '';
@@ -411,7 +292,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la décima pregunta
      $respuesta_21 = isset($_POST['respuesta_21']) ? $_POST['respuesta_21'] : '';
-     if ($respuesta_21 === 'satisfacibilidad') {  
+     if ($respuesta_21 === 'enfoque') {  
          $verificar_21 = "correcto";
      } elseif ($respuesta_21 === '') {
          $verificar_21 = '';
@@ -421,7 +302,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la undécima pregunta
      $respuesta_22 = isset($_POST['respuesta_22']) ? $_POST['respuesta_22'] : '';
-     if ($respuesta_22 === '1970') {  
+     if ($respuesta_22 === 'fuerza bruta') {  
          $verificar_22 = "correcto";
      } elseif ($respuesta_22 === '') {
          $verificar_22 = '';
@@ -431,7 +312,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
    $respuesta_23 = isset($_POST['respuesta_23']) ? $_POST['respuesta_23'] : '';
-   if ($respuesta_23 === 'P') {  
+   if ($respuesta_23 === 'todas') {  
        $verificar_23 = "correcto";
    } elseif ($respuesta_23 === '') {
        $verificar_23 = '';
@@ -441,7 +322,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_24 = isset($_POST['respuesta_24']) ? $_POST['respuesta_24'] : '';
-   if ($respuesta_24 === 'probablemente') {  
+   if ($respuesta_24 === 'ingenuos') {  
        $verificar_24 = "correcto";
    } elseif ($respuesta_24 === '') {
        $verificar_24 = '';
@@ -451,7 +332,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_25 = isset($_POST['respuesta_25']) ? $_POST['respuesta_25'] : '';
-   if ($respuesta_25 === 'NP-Completo' || $respuesta_25 === 'NP-completo') { 
+   if ($respuesta_25 === 'fuerza bruta') { 
        $verificar_25 = "correcto";
    } elseif ($respuesta_25 === '') {
        $verificar_25 = '';
@@ -461,9 +342,11 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_26 = isset($_POST['respuesta_26']) ? $_POST['respuesta_26'] : '';
-   if ($respuesta_26 === 'siete' || $respuesta_26 === '7') {  
+   $respuesta_26_dos = str_replace('',' ', $respuesta_26);
+   
+   if ($respuesta_26_dos === '\sqrt{(x_j-x_i)^2+(y_j-y_i)^2}') {  
        $verificar_26 = "correcto";
-   } elseif ($respuesta_26 === '') {
+   } elseif ($respuesta_26_dos === '') {
        $verificar_26 = '';
    } else {
        $verificar_26 = "incorrecto";
@@ -471,7 +354,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_27 = isset($_POST['respuesta_27']) ? $_POST['respuesta_27'] : '';
-   if ($respuesta_27 === '90') {  
+   if ($respuesta_27 === 'todos') {  
        $verificar_27 = "correcto";
    } elseif ($respuesta_27 === '') {
        $verificar_27 = '';
@@ -481,7 +364,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_28 = isset($_POST['respuesta_28']) ? $_POST['respuesta_28'] : '';
-   if ($respuesta_28 === '105') {  
+   if ($respuesta_28 === 'pares') {  
        $verificar_28 = "correcto";
    } elseif ($respuesta_28 === '') {
        $verificar_28 = '';
@@ -491,7 +374,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_29 = isset($_POST['respuesta_29']) ? $_POST['respuesta_29'] : '';
-   if ($respuesta_29 === '120') {  
+   if ($respuesta_29 === 'puntos') {  
        $verificar_29 = "correcto";
    } elseif ($respuesta_29 === '') {
        $verificar_29 = '';
@@ -501,7 +384,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_30 = isset($_POST['respuesta_30']) ? $_POST['respuesta_30'] : '';
-   if ($respuesta_30 === '135') {  
+   if ($respuesta_30 === 'pares') {  
        $verificar_30 = "correcto";
    } elseif ($respuesta_30 === '') {
        $verificar_30 = '';
@@ -511,9 +394,11 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_31 = isset($_POST['respuesta_31']) ? $_POST['respuesta_31'] : '';
-   if ($respuesta_31 === '150') {  
+   $respuesta_31_dos = str_replace(' ','', $respuesta_31);
+
+   if ($respuesta_31_dos === 'fori:=2ton') {  
        $verificar_31 = "correcto";
-   } elseif ($respuesta_31 === '') {
+   } elseif ($respuesta_31_dos === '') {
        $verificar_31 = '';
    } else {
        $verificar_31 = "incorrecto";
@@ -521,9 +406,11 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_32 = isset($_POST['respuesta_32']) ? $_POST['respuesta_32'] : '';
-   if ($respuesta_32 === '165') {  
+   $respuesta_32_dos = str_replace(' ','', $respuesta_32);
+
+   if ($respuesta_32_dos === 'forj:=1toi-1') {  
        $verificar_32 = "correcto";
-   } elseif ($respuesta_32 === '') {
+   } elseif ($respuesta_32_dos === '') {
        $verificar_32 = '';
    } else {
        $verificar_32 = "incorrecto";
@@ -531,25 +418,28 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_33 = isset($_POST['respuesta_33']) ? $_POST['respuesta_33'] : '';
-   if ($respuesta_33 === '180') {  
+   $respuesta_33_dos = str_replace(' ','', $respuesta_33);
+   if ($respuesta_33_dos === 'min:=(xj-xi)^2+(yj-yi)^2') {  
        $verificar_33 = "correcto";
-   } elseif ($respuesta_33 === '') {
+   } elseif ($respuesta_33_dos === '') {
        $verificar_33 = '';
    } else {
        $verificar_33 = "incorrecto";
    }
 
  $respuesta_34 = isset($_POST['respuesta_34']) ? $_POST['respuesta_34'] : '';
-if ($respuesta_34 === '32') { 
+ $respuesta_34_dos = str_replace('',' ', $respuesta_34);
+
+if ($respuesta_34_dos === '\frac{n(n-1)}{2}') { 
     $verificar_34 = "correcto";
-} elseif ($respuesta_34 === '') {
+} elseif ($respuesta_34_dos === '') {
     $verificar_34 = '';
 } else {
     $verificar_34 = "incorrecto";
 }
 
  $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
-if ($respuesta_35 === '48') { 
+if ($respuesta_35 === 'actualiza') { 
     $verificar_35 = "correcto";
 } elseif ($respuesta_35 === '') {
     $verificar_35 = '';
@@ -558,7 +448,7 @@ if ($respuesta_35 === '48') {
 }
 
  $respuesta_36 = isset($_POST['respuesta_36']) ? $_POST['respuesta_36'] : '';
-if ($respuesta_36 === '64') { 
+if ($respuesta_36 === 'n^2') { 
     $verificar_36 = "correcto";
 } elseif ($respuesta_36 === '') {
     $verificar_36 = '';
@@ -567,16 +457,18 @@ if ($respuesta_36 === '64') {
 }
 
  $respuesta_37 = isset($_POST['respuesta_37']) ? $_POST['respuesta_37'] : '';
-if ($respuesta_37 === '80') { 
+ $respuesta_37_dos = str_replace('',' ', $respuesta_37);
+
+if ($respuesta_37_dos === 'nlogn') { 
     $verificar_37 = "correcto";
-} elseif ($respuesta_37 === '') {
+} elseif ($respuesta_37_dos === '') {
     $verificar_37 = '';
 } else {
     $verificar_37 = "incorrecto";
 }
 
  $respuesta_38 = isset($_POST['respuesta_38']) ? $_POST['respuesta_38'] : '';
-if ($respuesta_38 === '96') { 
+if ($respuesta_38 === 'constante') { 
     $verificar_38 = "correcto";
 } elseif ($respuesta_38 === '') {
     $verificar_38 = '';
@@ -585,7 +477,7 @@ if ($respuesta_38 === '96') {
 }
 
  $respuesta_39 = isset($_POST['respuesta_39']) ? $_POST['respuesta_39'] : '';
-if ($respuesta_39 === '112') { 
+if ($respuesta_39 === '99') { 
     $verificar_39 = "correcto";
 } elseif ($respuesta_39 === '') {
     $verificar_39 = '';
@@ -594,7 +486,7 @@ if ($respuesta_39 === '112') {
 }
 
  $respuesta_40 = isset($_POST['respuesta_40']) ? $_POST['respuesta_40'] : '';
-if ($respuesta_40 === '128') { 
+if ($respuesta_40 === 'lineal') { 
     $verificar_40 = "correcto";
 } elseif ($respuesta_40 === '') {
     $verificar_40 = '';
@@ -603,7 +495,7 @@ if ($respuesta_40 === '128') {
 }
 
  $respuesta_41 = isset($_POST['respuesta_41']) ? $_POST['respuesta_41'] : '';
-if ($respuesta_41 === '144') { 
+if ($respuesta_41 === 'logaritmica') { 
     $verificar_41 = "correcto";
 } elseif ($respuesta_41 === '') {
     $verificar_41 = '';
@@ -612,7 +504,7 @@ if ($respuesta_41 === '144') {
 }
 
  $respuesta_42 = isset($_POST['respuesta_42']) ? $_POST['respuesta_42'] : '';
-if ($respuesta_42 === '160') { 
+if ($respuesta_42 === 'linealitmica' || $respuesta_42 === 'linearitmica') { 
     $verificar_42 = "correcto";
 } elseif ($respuesta_42 === '') {
     $verificar_42 = '';
@@ -621,16 +513,18 @@ if ($respuesta_42 === '160') {
 }
 
  $respuesta_43 = isset($_POST['respuesta_43']) ? $_POST['respuesta_43'] : '';
-if ($respuesta_43 === '176') { 
+ $respuesta_43_dos = str_replace('',' ', $respuesta_43);
+
+if ($respuesta_43_dos === 'logn') { 
     $verificar_43 = "correcto";
-} elseif ($respuesta_43 === '') {
+} elseif ($respuesta_43_dos === '') {
     $verificar_43 = '';
 } else {
     $verificar_43 = "incorrecto";
 }
 
  $respuesta_44 = isset($_POST['respuesta_44']) ? $_POST['respuesta_44'] : '';
-if ($respuesta_44 === '192') { 
+if ($respuesta_44 === 'n') { 
     $verificar_44 = "correcto";
 } elseif ($respuesta_44 === '') {
     $verificar_44 = '';
@@ -639,16 +533,17 @@ if ($respuesta_44 === '192') {
 }
 
  $respuesta_45 = isset($_POST['respuesta_45']) ? $_POST['respuesta_45'] : '';
-if ($respuesta_45 === '34') { 
+ $respuesta_45_dos = str_replace('',' ', $respuesta_45);
+if ($respuesta_45_dos === 'nlogn') { 
     $verificar_45 = "correcto";
-} elseif ($respuesta_45 === '') {
+} elseif ($respuesta_45_dos === '') {
     $verificar_45 = '';
 } else {
     $verificar_45 = "incorrecto";
 }
 
  $respuesta_46 = isset($_POST['respuesta_46']) ? $_POST['respuesta_46'] : '';
-if ($respuesta_46 === '51') { 
+if ($respuesta_46 === 'ordenamiento burbuja') { 
     $verificar_46 = "correcto";
 } elseif ($respuesta_46 === '') {
     $verificar_46 = '';
@@ -657,7 +552,7 @@ if ($respuesta_46 === '51') {
 }
 
  $respuesta_47 = isset($_POST['respuesta_47']) ? $_POST['respuesta_47'] : '';
-if ($respuesta_47 === '68') { 
+if ($respuesta_47 === 'insercion') { 
     $verificar_47 = "correcto";
 } elseif ($respuesta_47 === '') {
     $verificar_47 = '';
@@ -666,7 +561,7 @@ if ($respuesta_47 === '68') {
 }
 
  $respuesta_48 = isset($_POST['respuesta_48']) ? $_POST['respuesta_48'] : '';
-if ($respuesta_48 === '85') { 
+if ($respuesta_48 === 'seleccion') { 
     $verificar_48 = "correcto";
 } elseif ($respuesta_48 === '') {
     $verificar_48 = '';
@@ -675,7 +570,7 @@ if ($respuesta_48 === '85') {
 }
 
  $respuesta_49 = isset($_POST['respuesta_49']) ? $_POST['respuesta_49'] : '';
-if ($respuesta_49 === '102') { 
+if ($respuesta_49 === 'merge sort') { 
     $verificar_49 = "correcto";
 } elseif ($respuesta_49 === '') {
     $verificar_49 = '';
@@ -684,7 +579,7 @@ if ($respuesta_49 === '102') {
 }
 
  $respuesta_50 = isset($_POST['respuesta_50']) ? $_POST['respuesta_50'] : '';
-if ($respuesta_50 === '119') { 
+if ($respuesta_50 === 'quick sort') { 
     $verificar_50 = "correcto";
 } elseif ($respuesta_50 === '') {
     $verificar_50 = '';
@@ -693,7 +588,7 @@ if ($respuesta_50 === '119') {
 }
 
  $respuesta_51 = isset($_POST['respuesta_51']) ? $_POST['respuesta_51'] : '';
-if ($respuesta_51 === '136') { 
+if ($respuesta_51 === 'divide y venceras') { 
     $verificar_51 = "correcto";
 } elseif ($respuesta_51 === '') {
     $verificar_51 = '';
@@ -702,7 +597,7 @@ if ($respuesta_51 === '136') {
 }
 
  $respuesta_52 = isset($_POST['respuesta_52']) ? $_POST['respuesta_52'] : '';
-if ($respuesta_52 === '153') { 
+if ($respuesta_52 === 'programacion dinamica') { 
     $verificar_52 = "correcto";
 } elseif ($respuesta_52 === '') {
     $verificar_52 = '';
@@ -711,7 +606,7 @@ if ($respuesta_52 === '153') {
 }
 
  $respuesta_53 = isset($_POST['respuesta_53']) ? $_POST['respuesta_53'] : '';
-if ($respuesta_53 === '170') { 
+if ($respuesta_53 === 'backtracking') { 
     $verificar_53 = "correcto";
 } elseif ($respuesta_53 === '') {
     $verificar_53 = '';
@@ -720,7 +615,7 @@ if ($respuesta_53 === '170') {
 }
 
  $respuesta_54 = isset($_POST['respuesta_54']) ? $_POST['respuesta_54'] : '';
-if ($respuesta_54 === '187') { 
+if ($respuesta_54 === 'algoritmos probabilisticos') { 
     $verificar_54 = "correcto";
 } elseif ($respuesta_54 === '') {
     $verificar_54 = '';
@@ -1343,7 +1238,7 @@ if ($respuesta_121 === '144') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
     <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../../style_2_0.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
@@ -1355,7 +1250,7 @@ if ($respuesta_121 === '144') {
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 370vh;
+    height: 425vh;
     }
 </style>
  
@@ -1397,18 +1292,18 @@ function handleSubmit(event) {
 }
 
 function actualizarFormula() {
-    var f = document.getElementById('respuesta_1').value || "";
+    var f = document.getElementById('respuesta_26').value || "";
     var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula1').innerHTML = `$$ ${formula} $$`;
+    document.getElementById('formula').innerHTML = `$$ ${formula} $$`;
     if (window.MathJax) {
         MathJax.typeset();
     }
 }
 
 function actualizarFormula2() {
-    var f = document.getElementById('respuesta_2').value || "";
+    var f = document.getElementById('respuesta_34').value || "";
     var formula = ` \\ ${f} \\, `;
-    document.getElementById('formula2').innerHTML = `$$ ${formula} $$`;
+    document.getElementById('formula2').innerHTML = `\\( ${formula} \\)`;
     if (window.MathJax) {
         MathJax.typeset();
     }
@@ -1626,120 +1521,127 @@ function ocultarMensaje4() {
     
 </head>
 <body> 
-<div class="seccion izquierda">
-    <form action="./cuarto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-       
-<h3>Comparación entre crecimiento potencial y lineal</h3>
+<form action="./cuarto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
+<div class="form-container">
 
-<table border="1" cellpadding="8" style="border-collapse: collapse;">
-  <thead>
-    <tr>
-      <th>Exponente \( c \) en \( n^c \)</th>
-      <th>Comparación con \( n \) (=,<,>)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>\( c > 1 \)</td>
-      <td>\( n^c \) <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="1"> \( n \) </td>
-    </tr>
-    <tr>
-      <td>\( c = 1 \)</td>
-      <td>\( n^c \)<input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="1">  \(n \)  </td>
-    </tr>
-    <tr>
-      <td>\( 0 < c < 1 \)</td>
-      <td>\( n^c \)<input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="1"> \( n \)  </td>
-    </tr>
-  </tbody>
-</table>
+    
+<div class="seccion izquierda"> 
+         <p>🔍 <strong>Ejemplo:</strong><br>
+Si tienes una matriz \( A \) de tamaño \( 3 \times 3 \):</p>
 
-    <h2>Complejidad de Algoritmos</h2>
-    <p>
-    Un algoritmo tiene complejidad 
-    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="8">
-    si su complejidad es \( \Theta(n^b) \), donde \( b \) es 
-    un entero con \( b \geq 1 \). Por ejemplo, el algoritmo de ordenamiento por burbuja (bubble sort) es un 
-    algoritmo de tiempo 
-    <input type="text"  value="<?php echo $respuesta_4; ?>" size="8" readonly>
-    porque utiliza \( \Theta(n^2) \) comparaciones en el peor de los casos. Un 
-    algoritmo tiene complejidad 
-    <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="8"> si tiene 
-    complejidad temporal \( \Theta(b^n) \), donde \( b > 1 \). 
-    El algoritmo que determina si una proposición compuesta con \( n \) variables es satisfacible comprobando todas 
-    las posibles asignaciones de valores de verdad es un algoritmo con complejidad exponencial, porque utiliza 
-    \( \Theta(2^n) \) operaciones. Finalmente, un algoritmo tiene complejidad factorial si su complejidad es \( \Theta(n!) \), 
-    como el algoritmo que encuentra todos los órdenes posibles en los que un vendedor viajero podría visitar \( n \) 
-    ciudades; este algoritmo se discutirá en el Capítulo 9.
-    </p>
+<p>
+\[
+A = \begin{bmatrix}
+a_{11} & a_{12} & a_{13} \\
+a_{21} & a_{22} & a_{23} \\
+a_{31} & a_{32} & a_{33}
+\end{bmatrix}
+\]
+</p>
+
+<p>→ Tiene:</p>
+<ul>
+  <li><input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="6">   filas</li>
+  <li><input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="6">   columnas</li>
+  <li>Total de elementos: 
+    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="6">   
+  </li>
+</ul>
+
+
+<p><strong>¿Cómo se calcula cada entrada \( c_{ij} \)?</strong></p>
+
+<p>Según la fórmula:</p>
+
+<p>
+\[
+c_{ij} = \sum_{q=1}^{n} a_{iq} \cdot b_{qj}
+\]
+</p>
+
+<p>Para cada entrada:</p>
+<ul>
+  <li>Haces \( n \) 
+    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="12">    
+  </li>
+  <li>Haces \( n - 1 \) 
+    <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="12">    
+  </li>
+</ul>
+    <br>
     <button type="submit">Enviar</button> 
     <?php echo $verificar_1 ?>
     <?php echo $verificar_2 ?>
     <?php echo $verificar_3 ?>
     <?php echo $verificar_4 ?>
     <?php echo $verificar_5 ?>
+
     <hr>
- 
-    <h3>TRATABILIDAD</h3>
-    <p>Un problema que puede resolverse usando un algoritmo con complejidad 
-    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="8">    
-    (o mejor) en el peor 
-    caso se denomina <strong>tratable</strong> (tratabale), porque se espera que el algoritmo produzca una 
-    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="8">
-    en un tiempo relativamente 
-    <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="8">
-    para entradas de tamaño razonable. Sin embargo, si el polinomio 
-    en la estimación en big-Θ tiene un grado alto (como 100) o si los coeficientes son extremadamente grandes, 
-    el algoritmo podría tardar mucho tiempo en resolver el problema. Por lo tanto, que un problema pueda resolverse 
-    usando un algoritmo con complejidad temporal 
-    <input type="text" value="<?php echo $respuesta_6; ?>" size="8" readonly>
-    en el peor caso no garantiza que pueda resolverse en un 
-    tiempo razonable para valores pequeños de entrada. Afortunadamente, en la práctica, el grado y los coeficientes 
-    de los polinomios en tales estimaciones suelen ser pequeños.</p>
+<p><strong>¿Cuántas operaciones en total?</strong></p>
 
-    <p>La situación es mucho peor para los problemas que no pueden resolverse mediante un algoritmo con complejidad 
-    polinomial en el peor caso. Estos problemas se denominan 
-    <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="8">
-    . Generalmente, aunque 
-    no siempre, se requiere una cantidad de tiempo extremadamente grande para resolver el problema en los peores 
-    casos, incluso con entradas pequeñas. Sin embargo, en la práctica, puede haber situaciones en las que un 
-    algoritmo con cierta complejidad temporal en el peor caso puede resolver un problema mucho más rápido en 
-    la mayoría de los casos que en su peor caso. Cuando estamos dispuestos a aceptar que algunos casos, quizás 
-    pocos, no se resuelvan en un tiempo razonable, la complejidad temporal en el caso promedio es una mejor medida 
-    del tiempo que tarda un algoritmo en resolver un problema.</p>
+<p>Ya sabemos que hay \( n^2 \) entradas.</p>
 
-    <button type="submit">Enviar</button> 
+<p>Entonces:</p>
+
+<ul>
+  <li>
+    🔸 <strong>Multiplicaciones totales:</strong><br>
+    
+    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="4">  
+    entradas x \( n \) 
+     <input type="text" value="<?php echo $respuesta_4; ?>" size="12">
+    por entrada =  <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="4"> 
+  </li>
+  <br>
+  <li>
+    🔸 <strong>Sumas totales:</strong><br>
+    <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="6"> 
+    entradas x \( (n - 1) \) 
+    <input type="text"  value="<?php echo $respuesta_5; ?>" size="12"> 
+    por entrada = 
+    <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="6">
+  </li>
+</ul>
+
+    <p>Sorprendentemente, existen algoritmos más eficientes para la multiplicación de matrices que el dado en el Algoritmo 1. 
+    Como muestra el Ejemplo 7, multiplicar directamente dos matrices <em>n × n</em> a partir de la definición requiere 
+    <strong>O(
+        <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="6">
+        )</strong> multiplicaciones y sumas. Utilizando otros algoritmos, dos matrices <em>n × n</em> pueden
+     multiplicarse usando <strong> \( O( n^{\sqrt{7}} ) \)</strong> multiplicaciones y sumas. (Los detalles de tales 
+     algoritmos pueden encontrarse en [CoLeRiSt09].)</p>
+
+    <p>También podemos analizar la complejidad del algoritmo que describimos en el Capítulo 2 para calcular el producto
+    booleano de dos matrices, el cual mostramos como el Algoritmo 2.</p>
+
+      <button type="submit">Enviar</button> 
 <?php echo $verificar_6 ?>
 <?php echo $verificar_7 ?> 
 <?php echo $verificar_8 ?>
 <?php echo $verificar_9 ?>
+<?php echo $verificar_10 ?>
 <hr>
-    <p>Muchos problemas importantes en la industria se consideran intractables, pero pueden resolverse 
-    <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="12">     
-    para casi todos los conjuntos de entrada que surgen en la vida diaria. Otra forma de abordar los problemas 
-    intractables en aplicaciones prácticas es buscar soluciones aproximadas en lugar de exactas. Puede suceder 
-    que existan algoritmos rápidos para encontrar tales soluciones aproximadas, incluso con la garantía de que
-    no se desvían mucho de una solución exacta.</p>
-
-    <p>Incluso existen problemas para los que se ha demostrado que 
-    <input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="12">    
-    ningún algoritmo que los resuelva. Estos 
-    problemas se llaman 
+  <h3>ALGORITHM 2 Producto Booleano de Matrices Cero–Uno</h3>
+<p>
+    <strong>usar: ∧</strong>
+</p>
+<pre>
+procedure Boolean product of Zero–One Matrices (A, B: zero–one matrices)
+<input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="12">
     <input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="12">
-    (en oposición a los problemas resolubles que pueden resolverse 
-    con un algoritmo). La primera demostración de que existen problemas no resolubles fue realizada por el gran 
-    matemático e informático inglés Alan Turing, cuando demostró que el problema de la detencion/parada (halting) es irresoluble. 
-    (Recuerda que demostramos que el problema de la parada es irresoluble en la Sección 3.1. Una biografía de 
-    Alan Turing y una descripción de algunos de sus otros trabajos se pueden encontrar en el Capítulo 13).</p>
-    <button type="submit">Enviar</button> 
-    <?php echo $verificar_10 ?>
-    <?php echo $verificar_11 ?>
-    <?php echo $verificar_12 ?>
+        <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="12">
+        <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="14">
+            <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="21">
+return C {C = [cij] is the Boolean product of A and B}
+</pre> 
 
-     <button onmousedown="mostrarImagen()" onmouseup="ocultarImagen()">Explicacion</button>
+
+<p>El número de operaciones a nivel de bit necesarias para encontrar el producto booleano de dos matrices de tamaño \( n \times n \) puede determinarse fácilmente.</p>
+
+  <button onmousedown="mostrarImagen()" onmouseup="ocultarImagen()">Explicacion</button>
     <!-- Elemento para mostrar la imagen -->
 
-    <img id="imagenMostrada" src="../../../../img/parada.png" style="display: none; max-width: 100%" width="560">
+    <img id="imagenMostrada" src="../../../../img/boolean.png" style="display: none; max-width: 100%" width="560">
 
     <script>
         function mostrarImagen() {
@@ -1756,10 +1658,11 @@ function ocultarMensaje4() {
         imagenMostrada.style.display = 'none';
         }
     </script>
-<button onmousedown="mostrarImagen2()" onmouseup="ocultarImagen2()">Explicacion</button>
+
+    <button onmousedown="mostrarImagen2()" onmouseup="ocultarImagen2()">Explicacion</button>
     <!-- Elemento para mostrar la imagen -->
 
-    <img id="imagenMostrada2" src="../../../../img/turing.png" style="display: none; max-width: 100%" width="460">
+    <img id="imagenMostrada2" src="../../../../img/boolean_dos.png" style="display: none; max-width: 100%" width="460">
 
     <script>
         function mostrarImagen2() {
@@ -1776,113 +1679,502 @@ function ocultarMensaje4() {
         imagenMostrada2.style.display = 'none';
         }
     </script>
- 
-    <hr>
-    <h3>P versus NP</h3>
-    
-    <p>El estudio de la complejidad de los algoritmos va mucho más allá de lo que podemos describir aquí. 
-    Sin embargo, ten en cuenta que muchos problemas resolubles se cree que no pueden resolverse con un algoritmo 
-    con complejidad temporal 
-    <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="12">
-    en el peor caso, pero que una solución, si se conoce, puede verificarse en 
-    tiempo 
-    <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="12">
-    . Los problemas para los que una solución puede verificarse en tiempo 
-    <input type="text"  value="<?php echo $respuesta_14; ?>" size="12" readonly>
-    pertenecen 
-    a la clase 
-    <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="12">
-    (los problemas 
-    <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="12">
-    pertenecen a la clase <strong>P</strong>). La abreviatura
-    NP significa <em>tiempo polinomial 
-    <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="12">    
-    </em>.</p>
 
 
-    <p>También existe una clase importante de problemas, llamados <strong>problemas NP-completos</strong>, con la 
-    propiedad de que 
-    <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="12"> 
-    de estos problemas puede resolverse con un algoritmo de tiempo polinomial en el peor 
-    caso, entonces 
-    <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="12"> 
-    los problemas en la clase 
-    <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="12"> 
-    pueden resolverse con algoritmos de tiempo polinomial en el 
-    peor caso. El problema de la satisfacibilidad también es un ejemplo de problema NP-completo. Es un problema NP, 
-    y si se conociera un algoritmo polinomial para resolverlo, existirían algoritmos polinomiales para todos los 
-    problemas conocidos en esta clase (y hay muchos problemas importantes en esta clase). Esta última afirmación 
-    se basa en el hecho de que todo problema en NP puede reducirse en tiempo polinomial al problema de la 
-    satisfacibilidad.</p>
-   <button type="submit">Enviar</button>
+ <h4>Ejemplo 8</h4>
+<p>¿Cuántas operaciones a nivel de bit se usan para encontrar \( A \odot B \), donde \( A \) y \( B \) son matrices 
+    cero-uno de tamaño \( n \times n \)?</p>
+
+<p><strong>Solución:</strong> Hay \( n^2 \) entradas en \( A \odot B \). Usando el Algoritmo 2, se utilizan 
+\( n \) disyunciones (OR) y \( n \) conjunciones (AND) para calcular una entrada de \( A \odot B \). Por lo
+ tanto, se utilizan 
+ <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="4">
+ operaciones a nivel de bit para cada entrada. En consecuencia, se requieren 
+  <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="4">
+   operaciones de bit para calcular \( A \odot B \) usando el Algoritmo 2. ◂</p>
+
+  <button type="submit">Enviar</button>
+           <?php echo $verificar_11 ?> 
+            <?php echo $verificar_12 ?>
 <?php echo $verificar_13 ?>
 <?php echo $verificar_14 ?>
 <?php echo $verificar_15 ?>
 <?php echo $verificar_16 ?>
 <?php echo $verificar_17 ?>
-<?php echo $verificar_18 ?>
-<?php echo $verificar_19 ?>
-<?php echo $verificar_20 ?>
-    <hr>
-    <p>Aunque ahora se conocen más de 3000 problemas NP-completos, el problema de la 
-    <input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>" size="12"> 
-    fue el 
-    primero en demostrarse como tal. El teorema que afirma esto se conoce como el <strong>teorema de Cook-Levin</strong>, 
-    en honor a Stephen Cook y Leonid Levin, quienes lo demostraron independientemente a principios de los años 
-    <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="12">
-    .</p>
+<hr>
+    <h3>Multiplicación de Cadenas de Matrices</h3>
+<p>Existe otro problema importante relacionado con la complejidad de la multiplicación de matrices. 
+    ¿Cómo se debe calcular el producto de la cadena de matrices \( A_1 A_2 \cdots A_n \) utilizando 
+    la 
+    <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="4">
+    cantidad de multiplicaciones de enteros, donde \( A_1, A_2, \ldots, A_n \) son matrices de tamaño \( m_1 \times m_2, m_2 \times m_3, \ldots, m_n \times m_{n+1} \) respectivamente, y cada una contiene enteros como entradas?</p>
 
-    <p>El problema de <strong>P versus NP</strong> pregunta si NP, la clase de problemas cuyas soluciones pueden 
-    verificarse en tiempo polinomial, es igual a 
-    <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="12">
-    , la clase de problemas tratables. Si <em>P ≠ NP</em>, existirían 
-    problemas que no pueden resolverse en tiempo polinomial, pero cuyas soluciones podrían verificarse en tiempo 
-    polinomial. El concepto de NP-completitud es útil en la investigación sobre el problema P versus NP, ya que 
-    los problemas NP-completos son considerados los más 
-    <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="12">
-    fuera de P, dado que todo problema en NP puede 
-    reducirse a un problema NP-completo en tiempo polinomial.</p>
+<p>(Dado que la multiplicación de matrices es asociativa, como se muestra en el Ejercicio 13 de la Sección 2.6, el orden de multiplicación no afecta el resultado del producto).</p>
 
-    <p>Una gran mayoría de científicos de la computación teórica cree que <em>P ≠ NP</em>, lo que significaría que 
-    ningún problema 
-    <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="12">
-    puede resolverse en tiempo polinomial. Una razón para esta creencia es que, a pesar     
-    de una investigación extensa, nadie ha logrado demostrar que <em>P = NP</em>. En particular, nadie ha podido 
-    encontrar un algoritmo con complejidad temporal polinomial en el peor caso que resuelva algún problema NP-completo. 
-    El problema P versus NP es uno de los problemas no resueltos más famosos de las ciencias matemáticas (que incluyen 
-    la informática teórica). Es uno de los 
-    <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="12">
-    famosos <strong>Problemas del Premio del Milenio</strong>, de los 
-    cuales seis siguen sin resolverse. El Instituto Clay de Matemáticas ofrece un premio de $1,000,000 por su solución.</p>
+<p>Nótese que para multiplicar una matriz de tamaño \( m_1 \times m_2 \) con una de \( m_2 \times m_3 \) se realizan \( m_1 m_2 m_3 \) multiplicaciones de enteros al usar el Algoritmo 1.</p>
 
     <button type="submit">Enviar</button>
-    <?php echo $verificar_21 ?>
-    <?php echo $verificar_22 ?>
-    <?php echo $verificar_23 ?>
-    <?php echo $verificar_24 ?>
-    <?php echo $verificar_25 ?>
-    <?php echo $verificar_26 ?>
-    <hr> 
+    <?php echo $verificar_18 ?>
+    <hr>
+<h4>Ejemplo 9</h4>
+<p>¿En qué orden deben multiplicarse las matrices \( A_1, A_2 \) y \( A_3 \), donde:</p>
 
-    </form>
+<ul>
+  <li>\( A_1 \) es de tamaño \( 30 \times 20 \)</li>
+  <li>\( A_2 \) es de tamaño \( 20 \times 40 \)</li>
+  <li>\( A_3 \) es de tamaño \( 40 \times 10 \)</li>
+</ul>
+    <button onmousedown="mostrarImagen3()" onmouseup="ocultarImagen3()">Ayuda</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada3" src="../../../../img/multiplicacion.png" style="display: none; max-width: 100%" width="560">
+
+    <script>
+        function mostrarImagen3() {
+        var imagenMostrada3 = document.getElementById('imagenMostrada3');
+
+        // Mostrar la imagen
+        imagenMostrada3.style.display = 'block';
+        }
+
+        function ocultarImagen3() {
+        var imagenMostrada3 = document.getElementById('imagenMostrada3');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada3.style.display = 'none';
+        }
+    </script>
+ 
+
+<p><strong>Solución:</strong> Hay dos formas posibles de calcular \( A_1 A_2 A_3 \):</p>
+
+<ul>
+  <li>\( A_1 (A_2 A_3) \)</li>
+  <li>\( (A_1 A_2) A_3 \)</li>
+</ul>
+
+<p>Si primero se multiplican \( A_2 \) y \( A_3 \), se necesitan:</p>
+<p>\( 20 \cdot 40 \cdot 10 = 8000 \) multiplicaciones para obtener la matriz \( A_2 A_3 \) de tamaño \( 20 \times 10 \).</p>
+
+<p>Luego, para multiplicar \( A_1 \) por \( A_2 A_3 \):</p>
+<p>\( 30 \cdot \)  
+<input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="4">    
+\( \cdot \) 
+<input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="4">
+\(= 6000 \) 
+    
+multiplicaciones.</p>
+
+<p>Total: \( 8000 + 6000 = 14,\!000 \) multiplicaciones.</p>
+
+<p>Si en cambio se multiplican primero \( A_1 \) y \( A_2 \):</p>
+<p>\( 30 \cdot 20 \cdot 40 = 24,\!000 \) multiplicaciones para obtener \( A_1 A_2 \) de tamaño \( 30 \times 40 \).</p>
+
+<p>Luego, para multiplicar \( A_1 A_2 \) con \( A_3 \):</p>
+<p>\( 30 \cdot 40 \cdot 10 = 12,\!000 \) multiplicaciones.</p>
+
+<p>Total: \( 24,\!000 + 12,\!000 = 36,\!000 \) multiplicaciones.</p>
+
+<p>Claramente, el primer método es más eficiente. ◂</p>
+
+<p>Regresaremos a este problema en el Ejercicio 57 de la Sección 8.1. Los algoritmos para determinar la forma más eficiente de realizar la multiplicación de cadenas de matrices se discuten en [CoLeRiSt09].</p>
+
+
+   <button type="submit">Enviar</button>
+<?php echo $verificar_19 ?>
+<?php echo $verificar_20 ?>
+
+    <hr>
+ 
 </div>
 
 
 
 
 <div class="seccion derecha">
-    <form action="./cuarto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-     
-        
-    </form>
-</div>
+      
+    <h3>3.3.4 Paradigmas Algorítmicos</h3>
 
+    <p>En la Sección 3.1 introdujimos la noción básica de algoritmo. Proporcionamos ejemplos de muchos algoritmos 
+    diferentes, incluidos algoritmos de búsqueda y ordenamiento. También introdujimos el concepto de un 
+    algoritmo voraz (<i>greedy</i>), dando ejemplos de varios problemas que pueden resolverse mediante este 
+    tipo de algoritmos. Los algoritmos voraces son un ejemplo de <strong>paradigma algorítmico</strong>, es 
+    decir, un 
+    <input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>" size="8">
+    general basado en un concepto particular que puede utilizarse para construir algoritmos 
+    que resuelvan una variedad de problemas.</p>
+
+    <p>Algunos de los algoritmos que ya hemos estudiado se basan en un paradigma algorítmico conocido como 
+    <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="14">
+    , que describiremos en esta sección. Paradigmas algorítmicos que se estudiarán 
+    más adelante en este libro incluyen los algoritmos de  
+    <input type="text" name="respuesta_51" value="<?php echo $respuesta_51; ?>" size="12">
+      (Capítulo 8),  
+    <input type="text" name="respuesta_52" value="<?php echo $respuesta_52; ?>" size="20">
+      (también en el Capítulo 8),  
+    <input type="text" name="respuesta_53" value="<?php echo $respuesta_53; ?>" size="12">
+       (Capítulo 10), y  
+    <input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>" size="22">
+      
+    (Capítulo 7). Existen muchos otros paradigmas algorítmicos importantes además de los que se describen en este libro. 
+    Consultá libros sobre diseño de algoritmos como [KlTa06] para aprender más sobre ellos.</p>
+
+
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_21 ?>
+    <?php echo $verificar_22 ?>
+    <?php echo $verificar_51 ?>
+    <?php echo $verificar_52 ?>
+    <?php echo $verificar_53 ?>
+    <?php echo $verificar_54 ?>
+     
+    <hr>
+    <h4>Algoritmos de Fuerza Bruta</h4>
+
+    <p>La <strong>fuerza bruta</strong> es un paradigma algorítmico importante y básico. En un algoritmo de fuerza 
+    bruta, un problema se resuelve de la manera más directa posible, basándose únicamente en el enunciado del problema 
+    y en las definiciones involucradas. Los algoritmos de fuerza bruta están diseñados sin tener en cuenta los recursos 
+    computacionales requeridos. Por ejemplo, en algunos algoritmos de fuerza bruta la solución se obtiene examinando 
+    <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="8">
+    las soluciones posibles y eligiendo la mejor.</p>
+
+    <p>En general, los algoritmos de fuerza bruta son enfoques
+    <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="8">    
+    para resolver problemas que no 
+    aprovechan ninguna estructura especial del problema ni ideas ingeniosas.</p>
+
+    <p>Observá que el Algoritmo 1 en la Sección 3.1 para encontrar el número máximo en una secuencia es un algoritmo 
+    de fuerza bruta porque examina cada uno de los \( n \) números para encontrar el valor máximo. El algoritmo 
+    que suma \( n \) números agregando uno por uno también es de fuerza bruta, al igual que el algoritmo de 
+    multiplicación de matrices basado en su definición (Algoritmo 1). Los algoritmos de 
+    <input type="text" name="respuesta_46" value="<?php echo $respuesta_46; ?>" size="19">
+     , 
+    <input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="8">
+      y 
+    <input type="text" name="respuesta_48" value="<?php echo $respuesta_48; ?>" size="8">
+      también se consideran algoritmos de 
+    <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="8">
+    ; los tres son enfoques directos y 
+    mucho menos eficientes que otros algoritmos como  
+    <input type="text" name="respuesta_49" value="<?php echo $respuesta_49; ?>" size="10">
+      y 
+    <input type="text" name="respuesta_50" value="<?php echo $respuesta_50; ?>" size="10">
+      , discutidos en 
+    los Capítulos 5 y 8.</p>
+ 
+    <p>Aunque los algoritmos de fuerza bruta suelen ser ineficientes, muchas veces resultan útiles. Un algoritmo de 
+    fuerza bruta puede resolver instancias <strong>prácticas</strong> de problemas, especialmente si la entrada no 
+    es demasiado grande, incluso si el mismo algoritmo es <strong>inviable</strong> para entradas más grandes. Además, 
+    al diseñar nuevos algoritmos, el objetivo suele ser encontrar uno más eficiente que el de fuerza bruta. Uno de esos 
+    problemas se describe en el siguiente ejemplo:</p>
+
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_23 ?>
+    <?php echo $verificar_24 ?>
+    <?php echo $verificar_46 ?>
+    <?php echo $verificar_47 ?>
+    <?php echo $verificar_48 ?>
+    <?php echo $verificar_25 ?>
+    <?php echo $verificar_49 ?>
+    <?php echo $verificar_50 ?>
+    <hr>
+    <h4>Ejemplo 10</h4>
+
+<p><strong> un algoritmo de fuerza bruta para encontrar el par de puntos más cercanos en un conjunto de \( n \) 
+puntos en el plano, y proporcioná una estimación del caso peor en notación Big-O del número de operaciones a 
+nivel de bits usadas por el algoritmo.</strong></p>
+
+<p><strong>Solución:</strong><br>
+Supongamos que nos dan como entrada los puntos \( (x_1, y_1), (x_2, y_2), \dots, (x_n, y_n) \). Recordá que la distancia entre \( (x_i, y_i) \) y \( (x_j, y_j) \) es</p>
+
+    
+    <span id="formula">
+        \(     \)
+    </span> 
+    <input type="text"id="respuesta_26" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="28"
+    oninput="actualizarFormula()">
+
+
+    <p>Un algoritmo de fuerza bruta puede encontrar el par más cercano de estos puntos calculando 
+    la distancia entre 
+    <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="8">
+    los 
+    <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="8">
+    posibles y determinando cuál es la menor. (Podemos hacer una pequeña simplificación: en 
+    lugar de calcular la distancia, podemos calcular el <em>cuadrado</em> de la distancia, ya 
+    que también permite encontrar el par más cercano sin usar raíces cuadradas.)</p>
+    
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_26 ?>
+    <?php echo $verificar_27 ?>
+    <?php echo $verificar_28 ?>
+
+    <hr>
+<p><strong>ALGORITMO 3: Fuerza Bruta para el Par de Puntos Más Cercanos</strong></p>
+<p>
+    El algoritmo recibe simplemente una lista de 
+    <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="8">
+    en el plano, no 
+    <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="8">
+</p>
+  <button onmousedown="mostrarImagen6()" onmouseup="ocultarImagen6()">Explicacion 1</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada6" src="../../../../img/puntos_3.png" style="display: none; max-width: 100%" width="560">
+
+    <script>
+        function mostrarImagen6() {
+        var imagenMostrada6 = document.getElementById('imagenMostrada6');
+
+        // Mostrar la imagen
+        imagenMostrada6.style.display = 'block';
+        }
+
+        function ocultarImagen6() {
+        var imagenMostrada6 = document.getElementById('imagenMostrada6');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada6.style.display = 'none';
+        }
+    </script>
+
+
+ <button onmousedown="mostrarImagen4()" onmouseup="ocultarImagen4()">Explicacion 2 </button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada4" src="../../../../img/puntos.png" style="display: none; max-width: 100%" width="560">
+
+    <script>
+        function mostrarImagen4() {
+        var imagenMostrada4 = document.getElementById('imagenMostrada4');
+
+        // Mostrar la imagen
+        imagenMostrada4.style.display = 'block';
+        }
+
+        function ocultarImagen4() {
+        var imagenMostrada4 = document.getElementById('imagenMostrada4');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada4.style.display = 'none';
+        }
+    </script>
+
+     <button onmousedown="mostrarImagen5()" onmouseup="ocultarImagen5()">Explicacion 3</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada5" src="../../../../img/puntos_2.png" style="display: none; max-width: 100%" width="560">
+
+    <script>
+        function mostrarImagen5() {
+        var imagenMostrada5 = document.getElementById('imagenMostrada5');
+
+        // Mostrar la imagen
+        imagenMostrada5.style.display = 'block';
+        }
+
+        function ocultarImagen5() {
+        var imagenMostrada5 = document.getElementById('imagenMostrada5');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada5.style.display = 'none';
+        }
+    </script>
+
+
+<pre>
+procedure closest-pair((x1, y1),(x2, y2),… ,(xn, yn): pairs of real numbers)
+min = ∞
+<input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="14">
+  <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="18">  
+    if (xj − xi)^2 + (yj − yi)^2 < min then
+      <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="32">
+      closest pair := ((xi, yi), (xj, yj))
+return closest pair
+</pre>
+
+
+ 
+    <button onmousedown="mostrarImagen7()" onmouseup="ocultarImagen7()">combinaciones</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada7" src="../../../../img/combinaciones.png" style="display: none; max-width: 100%" width="560">
+
+    <script>
+        function mostrarImagen7() {
+        var imagenMostrada7 = document.getElementById('imagenMostrada7');
+
+        // Mostrar la imagen
+        imagenMostrada7.style.display = 'block';
+        }
+
+        function ocultarImagen7() {
+        var imagenMostrada7 = document.getElementById('imagenMostrada7');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada7.style.display = 'none';
+        }
+    </script>
+
+    <p>Para estimar el número de operaciones utilizadas por el algoritmo, primero notá que hay 
+    <span id="formula2">
+        \(     \)
+    </span> 
+    <input type="text"id="respuesta_34" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="16"
+    oninput="actualizarFormula2()">
+
+    pares de puntos \( ((x_i, y_i), (x_j, y_j)) \) por los que iteramos. 
+    Para cada par, se calcula \( (x_j - x_i)^2 + (y_j - y_i)^2 \), se compara con el valor actual de
+    <code>min</code>, y si es menor, se 
+    <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="9">
+    . Por lo tanto, este algoritmo utiliza \( \Theta(   \) 
+    
+    <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="9">
+    \(  ) \)
+    operaciones, en términos de operaciones aritméticas y comparaciones.</p>
+
+
+    <button onmousedown="mostrarImagen8()" onmouseup="ocultarImagen8()">exactamente</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada8" src="../../../../img/guia_345.png" style="display: none; max-width: 100%" width="560">
+
+    <script>
+        function mostrarImagen8() {
+        var imagenMostrada8 = document.getElementById('imagenMostrada8');
+
+        // Mostrar la imagen
+        imagenMostrada8.style.display = 'block';
+        }
+
+        function ocultarImagen8() {
+        var imagenMostrada8 = document.getElementById('imagenMostrada8');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada8.style.display = 'none';
+        }
+    </script>
+
+
+    <p>En el Capítulo 8 vamos a desarrollar un algoritmo que encuentra el par de puntos más cercano 
+    entre \( n \) puntos del plano con una complejidad en el peor caso de \( 
+    O( \)
+    <input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="9">
+    \( ) \). El descubrimiento 
+    original de dicho algoritmo, mucho más eficiente que el enfoque de fuerza bruta, fue considerado bastante
+    sorprendente.</p>
+
+  <button type="submit">Enviar</button>
+<?php echo $verificar_29 ?>
+<?php echo $verificar_30 ?>
+<?php echo $verificar_31 ?>
+<?php echo $verificar_32 ?>
+<?php echo $verificar_33 ?>
+  <?php echo $verificar_34 ?>
+<?php echo $verificar_35 ?>
+<?php echo $verificar_36 ?>
+<?php echo $verificar_37 ?>
+    <hr>
+     <h3>3.3.5 Comprendiendo la Complejidad de los Algoritmos</h3>
+
+    <p>La <strong>Tabla 1</strong> muestra algunos términos comunes usados para describir la complejidad temporal 
+    de los algoritmos.</p>
+
+    <p>Por ejemplo, un algoritmo que encuentra el mayor de los primeros 100 elementos de una lista de <em>n</em> 
+    elementos, aplicando el Algoritmo 1 a la secuencia de los primeros 100 términos (donde <em>n</em> es un entero 
+    con <em>n ≥ 100</em>), tiene <strong>complejidad 
+    <input type="text" name="respuesta_38" value="<?php echo $respuesta_38; ?>" size="9">    
+    </strong> porque realiza 
+    <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="9"> 
+    comparaciones sin importar 
+    cuál sea el valor de <em>n</em> (como puede comprobar el lector).</p>
+
+    <p>El algoritmo de búsqueda lineal tiene <strong>complejidad 
+    <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="9">     
+    </strong> (en el peor o promedio de los casos), 
+    y el algoritmo de búsqueda binaria tiene <strong>complejidad 
+    <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="9">    
+    </strong> (en el peor de los casos).</p>
+
+    <p>Muchos algoritmos importantes tienen una complejidad 
+    <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="9">     
+    (<em>n log n</em>, en el peor 
+    de los casos), como el ordenamiento por mezcla (<em>merge sort</em>), que presentaremos en el Capítulo 4. 
+    (La palabra 
+    <input type="text"   value="<?php echo $respuesta_42; ?>" size="9">  
+    es una combinación de los términos <em>lineal</em> y <em>logarítmica</em>).</p>
+     <button type="submit">Enviar</button>
+<?php echo $verificar_38 ?>
+<?php echo $verificar_39 ?>
+<?php echo $verificar_40 ?>
+<?php echo $verificar_41 ?>
+<?php echo $verificar_42 ?>
+        <hr>
+    <h4>Tabla 1. Terminología comúnmente usada para describir la complejidad de algoritmos</h4>
+
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Notación</th>
+      <th>Terminología de Complejidad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Θ(1)</td>
+      <td>Complejidad constante</td>
+    </tr>
+    <tr>
+      <td>Θ(<input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="9">)</td>
+      <td>Complejidad logarítmica</td>
+    </tr>
+    <tr>
+      <td>Θ(
+        <input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>" size="9">
+        )</td>
+      <td>Complejidad lineal</td>
+    </tr>
+    <tr>
+      <td>Θ(
+        <input type="text" name="respuesta_45" value="<?php echo $respuesta_45; ?>" size="9">
+        )</td>
+      <td>Complejidad linealítmica</td>
+    </tr>
+    <tr>
+      <td>Θ(n<sup>b</sup>)</td>
+      <td>Complejidad polinomial</td>
+    </tr>
+    <tr>
+      <td>Θ(b<sup>n</sup>), donde b &gt; 1</td>
+      <td>Complejidad exponencial</td>
+    </tr>
+    <tr>
+      <td>Θ(n!)</td>
+      <td>Complejidad factorial</td>
+    </tr>
+  </tbody>
+</table>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_43 ?>
+    <?php echo $verificar_44 ?>
+    <?php echo $verificar_45 ?>
+        
+    <hr>
+    <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
+    <br>
+    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
+    <button type="submit"   >Mostrar Solución</button>
+
+     
+</div>
+</div>
+</form>
 <div class="centered-container">
     <a
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="cuarto.php"
+        href="quinto.php"
         role="button"
         width="50px"
         height="50px"

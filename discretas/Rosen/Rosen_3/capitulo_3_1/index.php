@@ -1531,8 +1531,8 @@ procedure binary search (x: integer, a1, a2,… , an: increasing integers)
         m := ⌊(i + j) / 2⌋
         if x > am then i := m + 1
         else j := m
-        if x = ai then location := i
-        else location := 0
+    if x = ai then location := i
+    else location := 0
     return location{location is the subscript i of the term ai equal to x,
          or 0 if x is not found}
     </pre>

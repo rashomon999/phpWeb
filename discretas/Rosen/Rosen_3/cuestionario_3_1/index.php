@@ -1,94 +1,97 @@
 <?php
  
- 
-$respuesta_1 = ''; $respuesta_2 = ''; $respuesta_3 = ''; $respuesta_3_2 = ''; $respuesta_4 = ''; $respuesta_5 = ''; 
-$respuesta_6 = ''; $respuesta_7 = ''; $respuesta_8 = ''; $respuesta_9 = '';  $respuesta_10 = '';
-$respuesta_11 = ''; $respuesta_12 = ''; $respuesta_13 = ''; $respuesta_14 = ''; $respuesta_15 = '';
-$respuesta_16 = ''; $respuesta_17 = ''; $respuesta_18 = ''; $respuesta_19 = ''; $respuesta_20 = '';
-$respuesta_21 = ''; $respuesta_22 = '';  $respuesta_23 = '';  $respuesta_24 = '';
-$respuesta_25 = ''; $respuesta_26 = ''; $respuesta_27 = ''; $respuesta_28 = ''; $respuesta_29 = '';
-$respuesta_30 = ''; $respuesta_31 = ''; $respuesta_32 = ''; $respuesta_33 = ''; $respuesta_34 = ''; $respuesta_35 = ''; $respuesta_36 = ''; $respuesta_37 = ''; $respuesta_38 = '';
-$respuesta_39 = ''; $respuesta_40 = ''; $respuesta_41 = ''; $respuesta_42 = ''; $respuesta_43 = '';
-$respuesta_44 = ''; $respuesta_45 = ''; $respuesta_46 = ''; $respuesta_47 = ''; $respuesta_48 = '';
-$respuesta_49 = ''; $respuesta_50 = ''; $respuesta_51 = ''; $respuesta_52 = ''; $respuesta_53 = '';
-$respuesta_54 = ''; $respuesta_55 = ''; $respuesta_56 = '';
-$respuesta_57 = ''; $respuesta_58 = ''; $respuesta_59 = ''; $respuesta_60 = '';
-$respuesta_61 = '';$respuesta_62 = '';$respuesta_63 = '';$respuesta_64 = '';
-$respuesta_65 = '';$respuesta_66 = '';$respuesta_67 = '';$respuesta_68 = '';
-$respuesta_69 = '';$respuesta_70 = '';$respuesta_71 = '';$respuesta_72 = '';
-$respuesta_73 = '';$respuesta_74 = '';$respuesta_75 = '';$respuesta_76 = '';
-$respuesta_77 = '';$respuesta_78 = '';$respuesta_79 = '';$respuesta_80 = '';
-$respuesta_81 = '';$respuesta_82 = '';$respuesta_83 = '';$respuesta_84 = '';
-$respuesta_85 = '';$respuesta_86 = '';$respuesta_87 = '';$respuesta_88 = ''; $respuesta_89 = '';
-$respuesta_90 = '';
-$respuesta_91 = '';
-$respuesta_92 = '';
-$respuesta_93 = '';
-$respuesta_94 = '';
-$respuesta_95 = '';
-$respuesta_96 = '';
-$respuesta_97 = '';
-$respuesta_98 = '';
-$respuesta_99 = '';
-$respuesta_100 = '';
-$respuesta_101 = '';
-$respuesta_102 = '';
-$respuesta_103 = '';
-$respuesta_104 = '';
-$respuesta_105 = '';
-$respuesta_106 = '';
-$respuesta_107 = '';
-$respuesta_108 = '';
-$respuesta_109 = '';
-$respuesta_110 = '';
+for ($i = 1; $i <= 230; $i++) {
+    ${"respuesta_" . $i} = '';
+}
 
 
- 
+     
+for ($i = 1; $i <= 230; $i++) {
+    ${"verificar_" . $i} = '';
+}
 
-$verificar_1 = ''; $verificar_2 = ''; $verificar_3 = '';  $verificar_3_2 = ''; $verificar_4 = ''; $verificar_5 = ''; 
-$verificar_6 = ''; $verificar_7 = '';  $verificar_8 = ''; $verificar_9 = ''; $verificar_10 = ''; 
-$verificar_11 = ''; $verificar_12 = ''; $verificar_13 = ''; $verificar_14 = ''; $verificar_15 = ''; 
-$verificar_16 = '';  $verificar_17 = ''; $verificar_18 = ''; $verificar_19 = ''; $verificar_20 = '';  
-$verificar_21 = '';  $verificar_22 = '';  $verificar_23 = '';   $verificar_24 = '';   $verificar_25 = '';  
-$verificar_26 = '';  $verificar_27= ''; $verificar_28= '';  $verificar_29= '';  $verificar_30 = ''; 
-$verificar_31 = ''; $verificar_32 = ''; $verificar_33 = ''; 
-$verificar_34 = ''; $verificar_35 = ''; $verificar_36 = ''; $verificar_37 = ''; $verificar_38 = '';
-$verificar_39 = ''; $verificar_40 = ''; $verificar_41 = ''; $verificar_42 = ''; $verificar_43 = '';
-$verificar_44 = ''; $verificar_45 = ''; $verificar_46 = ''; $verificar_47 = ''; $verificar_48 = '';
-$verificar_49 = ''; $verificar_50 = ''; $verificar_51 = ''; $verificar_52 = ''; $verificar_53 = '';
-$verificar_54 = ''; $verificar_55 = '';
-$verificar_56 = ''; $verificar_57 = ''; $verificar_58 = ''; $verificar_59 = ''; $verificar_60 = ''; 
-$verificar_61 = ''; $verificar_62 = ''; $verificar_63 = ''; $verificar_64 = ''; $verificar_65 = '';
- $verificar_66 = ''; $verificar_67 = ''; $verificar_68 = ''; $verificar_69 = ''; $verificar_70 = '';
-  $verificar_71 = ''; $verificar_72 = ''; $verificar_73 = ''; $verificar_74 = ''; $verificar_75 = '';
-   $verificar_76 = ''; $verificar_77 = ''; $verificar_78 = ''; $verificar_79 = ''; $verificar_80 = '';
-    $verificar_81 = ''; $verificar_82 = ''; $verificar_83 = ''; $verificar_84 = ''; $verificar_85 = '';
-     $verificar_86 = ''; $verificar_87 = ''; $verificar_88 = '';
-     $verificar_89 = '';
-     $verificar_90 = '';
-     $verificar_91 = '';
-     $verificar_92 = '';
-     $verificar_93 = '';
-     $verificar_94 = '';
-     $verificar_95 = '';
-     $verificar_96 = '';
-     $verificar_97 = '';
-     $verificar_98 = '';
-     $verificar_99 = '';
-     $verificar_100 = '';
-     $verificar_101 = '';
-     $verificar_102 = '';
-     $verificar_103 = '';
-     $verificar_104 = '';
-     $verificar_105 = '';
-     $verificar_106 = '';
-     $verificar_107 = '';
-     $verificar_108 = '';
-     $verificar_109 = '';
-     $verificar_110 = '';
      
 
+$mostrar_solucion = '';
 if ($_POST) {
+    $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
+    
+    if ($mostrar_solucion === 'mostrar_solucion') {
+        // Establecer todas las respuestas correctas para las tablas de multiplicar
+        
+ 
+       // Respuestas correctas (alineadas con las validaciones)
+    $respuesta_1  = 'secuencia';
+    $respuesta_2  = 'finita';
+    $respuesta_3  = 'instrucciones';
+    $respuesta_4  = 'calculo';
+    $respuesta_5  = 'resolver';
+    $respuesta_6  = 'al-juarismi';
+    $respuesta_7  = 'IX';
+    $respuesta_8  = 'hindues';
+    $respuesta_9  = 'aritmetica';
+    $respuesta_10 = 'decimal';
+    $respuesta_11 = 'XVIII';
+
+    $respuesta_12 = 'procedimientos';
+    $respuesta_13 = 'resolver problemas';
+    $respuesta_14 = 'entrada';
+    $respuesta_15 = 'salida';
+    $respuesta_16 = 'definicion';
+    $respuesta_17 = 'correctitud';
+    $respuesta_18 = 'finitud';
+    $respuesta_19 = 'efectividad';
+    $respuesta_20 = 'if ai > max then max := ai';
+    $respuesta_21 = 'i';
+    $respuesta_22 = 'n';
+
+    $respuesta_23 = 'x';
+    $respuesta_24 = 'ai';
+    $respuesta_25 = 'i := i + 1';
+    $respuesta_26 = 'if i ≤ n then location := i';
+    $respuesta_27 = 'else location := 0';
+    $respuesta_28 = 'creciente';
+    $respuesta_29 = 'medio';
+    $respuesta_30 = 'i := 1';
+    $respuesta_31 = 'j := n';
+    $respuesta_32 = 'while i < j';
+    $respuesta_33 = 'm := ⌊(i + j) / 2⌋';
+
+    $respuesta_34 = 'if x > a[m] then i := m + 1';
+    $respuesta_35 = 'else j := m';
+    $respuesta_36 = 'if x = a[i] then location := i';
+    $respuesta_37 = 'else location := 0';
+    $respuesta_38 = 'saltarse';
+    $respuesta_39 = 'for i := 1 to n - 1';
+    $respuesta_40 = 'for j := 1 to n - i';
+    $respuesta_41 = 'if a[j] > a[j + 1] then';
+    $respuesta_42 = 'temp := a[j]';
+    $respuesta_43 = 'a[j] := a[j + 1]';
+    $respuesta_44 = 'a[j + 1] := temp';
+
+    $respuesta_45 = 'for j := 2 to n';
+    $respuesta_46 = 'i := 1';
+    $respuesta_47 = 'while a[j] > a[i]';
+    $respuesta_48 = 'i := i + 1';
+    $respuesta_49 = 'm := a[j]';
+    $respuesta_50 = 'for k := 0 to j - i - 1';
+    $respuesta_51 = 'a[j - k] := a[j - k - 1]';
+    $respuesta_52 = 'a[i] := m';
+
+    $respuesta_53 = 'for s := 0 to n - m';
+    $respuesta_54 = 'j := 1';
+    $respuesta_55 = 'while (j ≤ m and t[s + j] = p[j])';
+    $respuesta_56 = 'j := j + 1';
+    $respuesta_57 = 'if j > m then';
+    $respuesta_58 = 'mejor opcion';
+    $respuesta_59 = 'cada paso';
+        
+        // Marcar todas como correctas
+    for ($i = 1; $i <= 122; $i++) {
+    ${"verificar_$i"} = "correcto";
+    }
+
+    } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
    if ($respuesta_1 === 'secuencia') {  
        $verificar_1 = "correcto";
@@ -120,7 +123,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === 'calcular') {  
+   if ($respuesta_4 === 'calculo') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -249,7 +252,7 @@ if ($_POST) {
      $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
          $respuesta_16 = strtolower($respuesta_16);
 
-     if ($respuesta_16 === 'definición') {  
+     if ($respuesta_16 === 'definicion') {  
          $verificar_16 = "correcto";
      } elseif ($respuesta_16 === '') {
          $verificar_16 = '';
@@ -295,7 +298,9 @@ if ($_POST) {
   
      // Verificar la respuesta de la novena pregunta
      $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
-     if ($respuesta_20 === 'if max < ai then max := ai') {  
+     if ($respuesta_20 === 'if max < ai then max := ai' 
+     || $respuesta_20 === 'if ai > max then max := ai' 
+     ) {  
          $verificar_20 = "correcto";
      } elseif ($respuesta_20 === '') {
          $verificar_20 = '';
@@ -440,7 +445,9 @@ if ($_POST) {
 
     $respuesta_33_dos = str_replace(' ','',subject: $respuesta_33);
 
-    if ($respuesta_33_dos === 'm:=⌊(i+j)/2⌋') {  
+    if ($respuesta_33_dos === 'm:=⌊(i+j)/2⌋'
+    || $respuesta_33_dos === 'm:=⌊(j+i)/2⌋'
+    ) {  
        $verificar_33 = "correcto";
     } elseif ($respuesta_33_dos === '') {
        $verificar_33 = '';
@@ -473,7 +480,9 @@ if ($respuesta_35_dos === 'elsej:=m') {
 
  $respuesta_36 = isset($_POST['respuesta_36']) ? $_POST['respuesta_36'] : '';
        $respuesta_36_dos = str_replace(' ','',subject: $respuesta_36);
-if ($respuesta_36_dos === 'ifx=aithenlocation:=i') { 
+if ($respuesta_36_dos === 'ifx=aithenlocation:=i'
+|| $respuesta_36_dos === 'ifai=xthenlocation:=i'
+) { 
     $verificar_36 = "correcto";
 } elseif ($respuesta_36_dos === '') {
     $verificar_36 = '';
@@ -594,7 +603,9 @@ if ($respuesta_46_dos === 'i:=1') {
  $respuesta_47 = isset($_POST['respuesta_47']) ? $_POST['respuesta_47'] : '';
      $respuesta_47_dos = str_replace(' ','',subject: $respuesta_47);
 
-if ($respuesta_47_dos === 'whileaj>ai') { 
+if ($respuesta_47_dos === 'whileaj>ai'
+|| $respuesta_47_dos === 'whileai<aj'
+) { 
     $verificar_47 = "correcto";
 } elseif ($respuesta_47_dos === '') {
     $verificar_47 = '';
@@ -731,468 +742,10 @@ if ($respuesta_59 === 'cada paso') {
 } else {
     $verificar_59 = "incorrecto";
 }
+ 
 
- $respuesta_60 = isset($_POST['respuesta_60']) ? $_POST['respuesta_60'] : '';
-if ($respuesta_60 === '108') { 
-    $verificar_60 = "correcto";
-} elseif ($respuesta_60 === '') {
-    $verificar_60 = '';
-} else {
-    $verificar_60 = "incorrecto";
+
 }
-
- $respuesta_61 = isset($_POST['respuesta_61']) ? $_POST['respuesta_61'] : '';
-if ($respuesta_61 === '126') { 
-    $verificar_61 = "correcto";
-} elseif ($respuesta_61 === '') {
-    $verificar_61 = '';
-} else {
-    $verificar_61 = "incorrecto";
-}
-
- $respuesta_62 = isset($_POST['respuesta_62']) ? $_POST['respuesta_62'] : '';
-if ($respuesta_62 === '144') { 
-    $verificar_62 = "correcto";
-} elseif ($respuesta_62 === '') {
-    $verificar_62 = '';
-} else {
-    $verificar_62 = "incorrecto";
-}
-
- $respuesta_63 = isset($_POST['respuesta_63']) ? $_POST['respuesta_63'] : '';
-if ($respuesta_63 === '162') { 
-    $verificar_63 = "correcto";
-} elseif ($respuesta_63 === '') {
-    $verificar_63 = '';
-} else {
-    $verificar_63 = "incorrecto";
-}
-
- $respuesta_64 = isset($_POST['respuesta_64']) ? $_POST['respuesta_64'] : '';
-if ($respuesta_64 === '180') { 
-    $verificar_64 = "correcto";
-} elseif ($respuesta_64 === '') {
-    $verificar_64 = '';
-} else {
-    $verificar_64 = "incorrecto";
-}
-
- $respuesta_65 = isset($_POST['respuesta_65']) ? $_POST['respuesta_65'] : '';
-if ($respuesta_65 === '198') { 
-    $verificar_65 = "correcto";
-} elseif ($respuesta_65 === '') {
-    $verificar_65 = '';
-} else {
-    $verificar_65 = "incorrecto";
-}
-
- $respuesta_66 = isset($_POST['respuesta_66']) ? $_POST['respuesta_66'] : '';
-if ($respuesta_66 === '216') { 
-    $verificar_66 = "correcto";
-} elseif ($respuesta_66 === '') {
-    $verificar_66 = '';
-} else {
-    $verificar_66 = "incorrecto";
-}
-
- $respuesta_67 = isset($_POST['respuesta_67']) ? $_POST['respuesta_67'] : '';
-if ($respuesta_67 === '38') { 
-    $verificar_67 = "correcto";
-} elseif ($respuesta_67 === '') {
-    $verificar_67 = '';
-} else {
-    $verificar_67 = "incorrecto";
-}
-
- $respuesta_68 = isset($_POST['respuesta_68']) ? $_POST['respuesta_68'] : '';
-if ($respuesta_68 === '57') { 
-    $verificar_68 = "correcto";
-} elseif ($respuesta_68 === '') {
-    $verificar_68 = '';
-} else {
-    $verificar_68 = "incorrecto";
-}
-
- $respuesta_69 = isset($_POST['respuesta_69']) ? $_POST['respuesta_69'] : '';
-if ($respuesta_69 === '76') { 
-    $verificar_69 = "correcto";
-} elseif ($respuesta_69 === '') {
-    $verificar_69 = '';
-} else {
-    $verificar_69 = "incorrecto";
-}
-
- $respuesta_70 = isset($_POST['respuesta_70']) ? $_POST['respuesta_70'] : '';
-if ($respuesta_70 === '95') { 
-    $verificar_70 = "correcto";
-} elseif ($respuesta_70 === '') {
-    $verificar_70 = '';
-} else {
-    $verificar_70 = "incorrecto";
-}
-
- $respuesta_71 = isset($_POST['respuesta_71']) ? $_POST['respuesta_71'] : '';
-if ($respuesta_71 === '114') { 
-    $verificar_71 = "correcto";
-} elseif ($respuesta_71 === '') {
-    $verificar_71 = '';
-} else {
-    $verificar_71 = "incorrecto";
-}
-
- $respuesta_72 = isset($_POST['respuesta_72']) ? $_POST['respuesta_72'] : '';
-if ($respuesta_72 === '133') { 
-    $verificar_72 = "correcto";
-} elseif ($respuesta_72 === '') {
-    $verificar_72 = '';
-} else {
-    $verificar_72 = "incorrecto";
-}
-
- $respuesta_73 = isset($_POST['respuesta_73']) ? $_POST['respuesta_73'] : '';
-if ($respuesta_73 === '152') { 
-    $verificar_73 = "correcto";
-} elseif ($respuesta_73 === '') {
-    $verificar_73 = '';
-} else {
-    $verificar_73 = "incorrecto";
-}
-
- $respuesta_74 = isset($_POST['respuesta_74']) ? $_POST['respuesta_74'] : '';
-if ($respuesta_74 === '171') { 
-    $verificar_74 = "correcto";
-} elseif ($respuesta_74 === '') {
-    $verificar_74 = '';
-} else {
-    $verificar_74 = "incorrecto";
-}
-
- $respuesta_75 = isset($_POST['respuesta_75']) ? $_POST['respuesta_75'] : '';
-if ($respuesta_75 === '190') { 
-    $verificar_75 = "correcto";
-} elseif ($respuesta_75 === '') {
-    $verificar_75 = '';
-} else {
-    $verificar_75 = "incorrecto";
-}
-
- $respuesta_76 = isset($_POST['respuesta_76']) ? $_POST['respuesta_76'] : '';
-if ($respuesta_76 === '209') { 
-    $verificar_76 = "correcto";
-} elseif ($respuesta_76 === '') {
-    $verificar_76 = '';
-} else {
-    $verificar_76 = "incorrecto";
-}
-
- $respuesta_77 = isset($_POST['respuesta_77']) ? $_POST['respuesta_77'] : '';
-if ($respuesta_77 === '228') { 
-    $verificar_77 = "correcto";
-} elseif ($respuesta_77 === '') {
-    $verificar_77 = '';
-} else {
-    $verificar_77 = "incorrecto";
-}
-
- $respuesta_78 = isset($_POST['respuesta_78']) ? $_POST['respuesta_78'] : '';
-if ($respuesta_78 === '40') { 
-    $verificar_78 = "correcto";
-} elseif ($respuesta_78 === '') {
-    $verificar_78 = '';
-} else {
-    $verificar_78 = "incorrecto";
-}
-
- $respuesta_79 = isset($_POST['respuesta_79']) ? $_POST['respuesta_79'] : '';
-if ($respuesta_79 === '60') { 
-    $verificar_79 = "correcto";
-} elseif ($respuesta_79 === '') {
-    $verificar_79 = '';
-} else {
-    $verificar_79 = "incorrecto";
-}
-
- $respuesta_80 = isset($_POST['respuesta_80']) ? $_POST['respuesta_80'] : '';
-if ($respuesta_80 === '80') { 
-    $verificar_80 = "correcto";
-} elseif ($respuesta_80 === '') {
-    $verificar_80 = '';
-} else {
-    $verificar_80 = "incorrecto";
-}
-
- $respuesta_81 = isset($_POST['respuesta_81']) ? $_POST['respuesta_81'] : '';
-if ($respuesta_81 === '100') { 
-    $verificar_81 = "correcto";
-} elseif ($respuesta_81 === '') {
-    $verificar_81 = '';
-} else {
-    $verificar_81 = "incorrecto";
-}
-
- $respuesta_82 = isset($_POST['respuesta_82']) ? $_POST['respuesta_82'] : '';
-if ($respuesta_82 === '120') { 
-    $verificar_82 = "correcto";
-} elseif ($respuesta_82 === '') {
-    $verificar_82 = '';
-} else {
-    $verificar_82 = "incorrecto";
-}
-
- $respuesta_83 = isset($_POST['respuesta_83']) ? $_POST['respuesta_83'] : '';
-if ($respuesta_83 === '140') { 
-    $verificar_83 = "correcto";
-} elseif ($respuesta_83 === '') {
-    $verificar_83 = '';
-} else {
-    $verificar_83 = "incorrecto";
-}
-
- $respuesta_84 = isset($_POST['respuesta_84']) ? $_POST['respuesta_84'] : '';
-if ($respuesta_84 === '160') { 
-    $verificar_84 = "correcto";
-} elseif ($respuesta_84 === '') {
-    $verificar_84 = '';
-} else {
-    $verificar_84 = "incorrecto";
-}
-
- $respuesta_85 = isset($_POST['respuesta_85']) ? $_POST['respuesta_85'] : '';
-if ($respuesta_85 === '180') { 
-    $verificar_85 = "correcto";
-} elseif ($respuesta_85 === '') {
-    $verificar_85 = '';
-} else {
-    $verificar_85 = "incorrecto";
-}
-
- $respuesta_86 = isset($_POST['respuesta_86']) ? $_POST['respuesta_86'] : '';
-if ($respuesta_86 === '200') { 
-    $verificar_86 = "correcto";
-} elseif ($respuesta_86 === '') {
-    $verificar_86 = '';
-} else {
-    $verificar_86 = "incorrecto";
-}
-
- $respuesta_87 = isset($_POST['respuesta_87']) ? $_POST['respuesta_87'] : '';
-if ($respuesta_87 === '220') { 
-    $verificar_87 = "correcto";
-} elseif ($respuesta_87 === '') {
-    $verificar_87 = '';
-} else {
-    $verificar_87 = "incorrecto";
-}
-
- $respuesta_88 = isset($_POST['respuesta_88']) ? $_POST['respuesta_88'] : '';
-if ($respuesta_88 === '240') { 
-    $verificar_88 = "correcto";
-} elseif ($respuesta_88 === '') {
-    $verificar_88 = '';
-} else {
-    $verificar_88 = "incorrecto";
-}
-
- $respuesta_89 = isset($_POST['respuesta_89']) ? $_POST['respuesta_89'] : '';
-if ($respuesta_89 === '42') { 
-    $verificar_89 = "correcto";
-} elseif ($respuesta_89 === '') {
-    $verificar_89 = '';
-} else {
-    $verificar_89 = "incorrecto";
-}
-
- $respuesta_90 = isset($_POST['respuesta_90']) ? $_POST['respuesta_90'] : '';
-if ($respuesta_90 === '63') { 
-    $verificar_90 = "correcto";
-} elseif ($respuesta_90 === '') {
-    $verificar_90 = '';
-} else {
-    $verificar_90 = "incorrecto";
-}
-
- $respuesta_91 = isset($_POST['respuesta_91']) ? $_POST['respuesta_91'] : '';
-if ($respuesta_91 === '84') { 
-    $verificar_91 = "correcto";
-} elseif ($respuesta_91 === '') {
-    $verificar_91 = '';
-} else {
-    $verificar_91 = "incorrecto";
-}
-
- $respuesta_92 = isset($_POST['respuesta_92']) ? $_POST['respuesta_92'] : '';
-if ($respuesta_92 === '105') { 
-    $verificar_92 = "correcto";
-} elseif ($respuesta_92 === '') {
-    $verificar_92 = '';
-} else {
-    $verificar_92 = "incorrecto";
-}
-
- $respuesta_93 = isset($_POST['respuesta_93']) ? $_POST['respuesta_93'] : '';
-if ($respuesta_93 === '126') { 
-    $verificar_93 = "correcto";
-} elseif ($respuesta_93 === '') {
-    $verificar_93 = '';
-} else {
-    $verificar_93 = "incorrecto";
-}
-
- $respuesta_94 = isset($_POST['respuesta_94']) ? $_POST['respuesta_94'] : '';
-if ($respuesta_94 === '147') { 
-    $verificar_94 = "correcto";
-} elseif ($respuesta_94 === '') {
-    $verificar_94 = '';
-} else {
-    $verificar_94 = "incorrecto";
-}
-
- $respuesta_95 = isset($_POST['respuesta_95']) ? $_POST['respuesta_95'] : '';
-if ($respuesta_95 === '168') { 
-    $verificar_95 = "correcto";
-} elseif ($respuesta_95 === '') {
-    $verificar_95 = '';
-} else {
-    $verificar_95 = "incorrecto";
-}
-
- $respuesta_96 = isset($_POST['respuesta_96']) ? $_POST['respuesta_96'] : '';
-if ($respuesta_96 === '189') { 
-    $verificar_96 = "correcto";
-} elseif ($respuesta_96 === '') {
-    $verificar_96 = '';
-} else {
-    $verificar_96 = "incorrecto";
-}
-
- $respuesta_97 = isset($_POST['respuesta_97']) ? $_POST['respuesta_97'] : '';
-if ($respuesta_97 === '210') { 
-    $verificar_97 = "correcto";
-} elseif ($respuesta_97 === '') {
-    $verificar_97 = '';
-} else {
-    $verificar_97 = "incorrecto";
-}
-
- $respuesta_98 = isset($_POST['respuesta_98']) ? $_POST['respuesta_98'] : '';
-if ($respuesta_98 === '231') { 
-    $verificar_98 = "correcto";
-} elseif ($respuesta_98 === '') {
-    $verificar_98 = '';
-} else {
-    $verificar_98 = "incorrecto";
-}
-
- $respuesta_99 = isset($_POST['respuesta_99']) ? $_POST['respuesta_99'] : '';
-if ($respuesta_99 === '252') { 
-    $verificar_99 = "correcto";
-} elseif ($respuesta_99 === '') {
-    $verificar_99 = '';
-} else {
-    $verificar_99 = "incorrecto";
-}
-
-
- $respuesta_100 = isset($_POST['respuesta_100']) ? $_POST['respuesta_100'] : '';
-if ($respuesta_100 === '44') { 
-    $verificar_100 = "correcto";
-} elseif ($respuesta_100 === '') {
-    $verificar_100 = '';
-} else {
-    $verificar_100 = "incorrecto";
-}
-
- $respuesta_101 = isset($_POST['respuesta_101']) ? $_POST['respuesta_101'] : '';
-if ($respuesta_101 === '66') { 
-    $verificar_101 = "correcto";
-} elseif ($respuesta_101 === '') {
-    $verificar_101 = '';
-} else {
-    $verificar_101 = "incorrecto";
-}
-
- $respuesta_102 = isset($_POST['respuesta_102']) ? $_POST['respuesta_102'] : '';
-if ($respuesta_102 === '88') { 
-    $verificar_102 = "correcto";
-} elseif ($respuesta_102 === '') {
-    $verificar_102 = '';
-} else {
-    $verificar_102 = "incorrecto";
-}
-
- $respuesta_103 = isset($_POST['respuesta_103']) ? $_POST['respuesta_103'] : '';
-if ($respuesta_103 === '110') { 
-    $verificar_103 = "correcto";
-} elseif ($respuesta_103 === '') {
-    $verificar_103 = '';
-} else {
-    $verificar_103 = "incorrecto";
-}
-
- $respuesta_104 = isset($_POST['respuesta_104']) ? $_POST['respuesta_104'] : '';
-if ($respuesta_104 === '132') { 
-    $verificar_104 = "correcto";
-} elseif ($respuesta_104 === '') {
-    $verificar_104 = '';
-} else {
-    $verificar_104 = "incorrecto";
-}
-
- $respuesta_105 = isset($_POST['respuesta_105']) ? $_POST['respuesta_105'] : '';
-if ($respuesta_105 === '154') { 
-    $verificar_105 = "correcto";
-} elseif ($respuesta_105 === '') {
-    $verificar_105 = '';
-} else {
-    $verificar_105 = "incorrecto";
-}
-
- $respuesta_106 = isset($_POST['respuesta_106']) ? $_POST['respuesta_106'] : '';
-if ($respuesta_106 === '176') { 
-    $verificar_106 = "correcto";
-} elseif ($respuesta_106 === '') {
-    $verificar_106 = '';
-} else {
-    $verificar_106 = "incorrecto";
-}
-
- $respuesta_107 = isset($_POST['respuesta_107']) ? $_POST['respuesta_107'] : '';
-if ($respuesta_107 === '198') { 
-    $verificar_107 = "correcto";
-} elseif ($respuesta_107 === '') {
-    $verificar_107 = '';
-} else {
-    $verificar_107 = "incorrecto";
-}
-
- $respuesta_108 = isset($_POST['respuesta_108']) ? $_POST['respuesta_108'] : '';
-if ($respuesta_108 === '220') { 
-    $verificar_108 = "correcto";
-} elseif ($respuesta_108 === '') {
-    $verificar_108 = '';
-} else {
-    $verificar_108 = "incorrecto";
-}
-
- $respuesta_109 = isset($_POST['respuesta_109']) ? $_POST['respuesta_109'] : '';
-if ($respuesta_109 === '242') { 
-    $verificar_109 = "correcto";
-} elseif ($respuesta_109 === '') {
-    $verificar_109 = '';
-} else {
-    $verificar_109 = "incorrecto";
-}
-
- $respuesta_110 = isset($_POST['respuesta_110']) ? $_POST['respuesta_110'] : '';
-if ($respuesta_110 === '264') { 
-    $verificar_110 = "correcto";
-} elseif ($respuesta_110 === '') {
-    $verificar_110 = '';
-} else {
-    $verificar_110 = "incorrecto";
-}
-
-
 }
 ?>
 <!DOCTYPE html>
@@ -1202,7 +755,7 @@ if ($respuesta_110 === '264') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
     <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../../style_2_0.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
@@ -1512,13 +1065,26 @@ function ocultarMensaje4() {
 
 
 
+function mostrarMensaje5() {
+    document.getElementById("mensaje5").style.display = 'block';
+    // Asegúrate de que MathJax procese el nuevo contenido
+    MathJax.typeset([document.getElementById("mensaje5")]);
+}
+
+function ocultarMensaje5() {
+    document.getElementById("mensaje5").style.display = 'none';
+}
+
 
 </script>
      
 </head>
 <body> 
-<div class="seccion izquierda">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+<form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
+<div class="form-container">
+
+    
+<div class="seccion izquierda"> 
 
     <h2>Definición 1</h2>
     <p>Un algoritmo es una 
@@ -1547,7 +1113,7 @@ function ocultarMensaje4() {
     . Con el creciente
     interés en las máquinas de computación, el concepto de algoritmo adquirió un significado más general, para incluir
     todos los 
-    <input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="8">    
+    <input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="11">    
     definidos para 
         <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="18">    
     , no solo los procedimientos para realizar aritmética. 
@@ -1640,7 +1206,7 @@ Es el valor que quieres buscar en la lista.
     i := 1                      
     while (<input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>" size="1">≤ <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="1"> and <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="1"> ≠ <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="1">)
         <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="8">
-    <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="25">
+    <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="28">
     <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="18">
      
     return location{location is the subscript of the term that equals x, or is 0 if x is not found}
@@ -1684,10 +1250,10 @@ Es el valor que quieres buscar en la lista.
     <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="10">
     <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="10">
         <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="17">
-        <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="20">
+        <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="24">
         <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="11">
-        <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="28">
-        <input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="18">
+    <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="28">
+    <input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="18">
     return location{location is the subscript i of the term ai equal to x,
          or 0 if x is not found}
     </pre>
@@ -1721,15 +1287,14 @@ Es el valor que quieres buscar en la lista.
     <button type="submit">Enviar</button>
     <?php echo $verificar_38 ?>
     <hr>
-    </form>
+ 
 </div>
 
 
 
 
 <div class="seccion derecha">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-     
+      
     <hr>
 
     <h2>3.1.3 Ordenamiento</h2>
@@ -1752,6 +1317,9 @@ Es el valor que quieres buscar en la lista.
     <?php echo $verificar_42 ?>
     <?php echo $verificar_43 ?>
     <?php echo $verificar_44 ?>
+
+ 
+
     <hr>
       <h3>EL ORDENAMIENTO POR INSERCIÓN</h3>
     <p>El ordenamiento por inserción es un algoritmo de ordenamiento sencillo, aunque usualmente no es el más eficiente.</p>
@@ -1776,6 +1344,618 @@ Es el valor que quieres buscar en la lista.
     <?php echo $verificar_50 ?>
     <?php echo $verificar_51 ?>
     <?php echo $verificar_52 ?>
+
+        <button onmousedown="mostrarMensaje()" onmouseup="ocultarMensaje()">Ayuda</button>
+    <div id="mensaje" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
+<h2>La parte que no entiendes (aislada)</h2>
+
+<pre>
+m := aj
+for k := 0 to j − i − 1
+    aj−k := aj−k−1
+ai := m
+</pre>
+
+<p>
+Esta parte sirve para <strong>insertar <em>aj</em> en su lugar correcto</strong>,
+pero <strong>solo cuando no está ya en la posición correcta</strong>.
+</p>
+
+ 
+<h2>¿Qué significa realmente <em>i</em>?</h2>
+
+<p>Después de este ciclo:</p>
+
+<pre>
+i := 1
+while aj &gt; ai
+    i := i + 1
+</pre>
+
+<p>
+La variable <strong>i</strong> queda siendo <strong>la posición donde debería ir <em>aj</em></strong>.
+</p>
+
+<ul>
+    <li><strong>Si i = j</strong> → <em>aj</em> ya está donde debe estar</li>
+    <li><strong>Si i &lt; j</strong> → hay que mover elementos para hacer espacio</li>
+</ul>
+
+<hr>
+
+<h2>Caso 1: <strong>NO ocurre el desplazamiento</strong> ❌</h2>
+
+<h3>Ejemplo</h3>
+
+<pre>
+[3, 5, 7, 9]
+</pre>
+
+<p>Supón que:</p>
+
+<pre>
+j = 4
+aj = 9
+</pre>
+
+<p>Búsqueda de <em>i</em>:</p>
+
+<pre>
+9 &gt; 3 → i = 2
+9 &gt; 5 → i = 3
+9 &gt; 7 → i = 4
+</pre>
+
+<p>Resultado:</p>
+<strong>esta es la clave, cuando pasa esto:</strong>
+<pre>
+i = j 
+</pre>
+
+<p>Ahora mira el <em>for</em>:</p>
+
+<pre>
+for k := 0 to j − i − 1
+for k := 0 to 4 − 4 − 1
+for k := 0 to −1   ← NO entra
+</pre>
+
+<p>Conclusión:</p>
+
+<ul>
+    <li>🚫 El ciclo <strong>no se ejecuta</strong></li>
+    <li>🚫 No se mueve ningún elemento</li>
+    <li>🚫 <em>ai := m</em> es redundante</li>
+</ul>
+
+<p><strong>👉 Aquí NO ocurre realmente el desplazamiento</strong></p>
+
+    </div>
+   
+    
+
+            <button onmousedown="mostrarMensaje2()" onmouseup="ocultarMensaje2()">Ayuda</button>
+    <div id="mensaje2" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
+<h1>Ejemplo: <strong>no entra al <code>for</code></strong></h1>
+<p><strong>Sobrrescribe el valor</strong></p>
+<p>Usamos este arreglo:</p>
+<pre><code>[3, 5, 8, 9]</code></pre>
+
+<p>Aquí:</p>
+<ul>
+    <li>el <strong>primer y segundo elemento están bien posicionados</strong></li>
+    <li><code>3 &lt; 5</code></li>
+</ul>
+
+<h2>Valores iniciales</h2>
+<pre><code>a1 = 3
+a2 = 5
+a3 = 8
+a4 = 9
+n  = 4</code></pre>
+
+<h2>Iteración del algoritmo</h2>
+
+<h3>Paso 1: comienza el <code>for</code> principal</h3>
+<pre><code>for j := 2 to n</code></pre>
+
+<p>Primera iteración:</p>
+<pre><code>j = 2</code></pre>
+
+<p>Subarreglo activo:</p>
+<pre><code>[3, 5]</code></pre>
+
+<p>Elemento a insertar:</p>
+<pre><code>aj = a2 = 5</code></pre>
+
+<h3>Paso 2: buscar la posición <code>i</code></h3>
+<pre><code>i := 1
+while aj > ai
+    i := i + 1</code></pre>
+
+<p>Sustituimos valores reales:</p>
+<pre><code>while 5 > 3  → verdadero
+    i := 2</code></pre>
+
+<p>Ahora evaluamos de nuevo:</p>
+<pre><code>while 5 > 5 → falso</code></pre>
+
+<p>Resultado final:</p>
+<pre><code>i = 2</code></pre>
+
+<p>📌 Significado:</p>
+<blockquote>
+    <p>El 5 <strong>ya está en la posición correcta</strong></p>
+</blockquote>
+
+<h3>Paso 3: guardar el valor en <code>m</code></h3>
+<pre><code>m := aj
+m := 5</code></pre>
+
+<h3>Paso 4: ¿entra al <code>for</code> de desplazamiento?</h3>
+<p>Condición:</p>
+<pre><code>j − i − 1 = 2 − 2 − 1 = −1</code></pre>
+
+<p>El <code>for</code> es:</p>
+<pre><code>for k := 0 to −1</code></pre>
+
+<p>👉 <strong>NO se ejecuta ninguna vez</strong></p>
+
+<h3>Paso 5: insertar <code>m</code></h3>
+<pre><code>ai := m
+a2 := 5</code></pre>
+
+<p>(No cambia nada)</p>
+
+<h2>Resultado final</h2>
+<pre><code>[3, 5, 8, 9]</code></pre>
+
+<ul>
+    <li>✔️ El arreglo queda igual</li>
+    <li>✔️ No hubo desplazamientos</li>
+    <li>✔️ El algoritmo simplemente confirmó que estaba bien</li>
+</ul>
+
+<h2>Resumen clave 🔑</h2>
+<ul>
+    <li><strong>No entra al <code>for</code></strong> cuando:</li>
+</ul>
+<pre><code>i = j</code></pre>
+<ul>
+    <li>Eso significa:</li>
+    <ul>
+        <li>el elemento ya estaba en su lugar</li>
+    </ul>
+</ul>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+  <button onmousedown="mostrarMensaje5()" onmouseup="ocultarMensaje5()">Ayuda</button>
+    <div id="mensaje5" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
+      
+<h5>intercambio con distancia de varios elementos</h5>
+
+<h5>Arreglo inicial (índices desde 1)</h5>
+
+<p>
+Índice:&nbsp;&nbsp;1&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;4&nbsp;&nbsp;5&nbsp;&nbsp;6<br>
+Valor:&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;4&nbsp;&nbsp;6&nbsp;&nbsp;8&nbsp;&nbsp;10&nbsp;&nbsp;5
+</p>
+
+<p>Los primeros 5 elementos están ordenados. Vamos a insertar el valor <strong>5</strong>.</p>
+
+<hr>
+
+<h5>VALORES FIJOS DEL for j</h5>
+
+<p>
+j = 6<br>
+aj = 5
+</p>
+
+<hr>
+
+<h5>1️⃣ EJECUCIÓN DEL while</h5>
+
+<p>
+i := 1<br>
+while aj &gt; ai<br>
+&nbsp;&nbsp;&nbsp;&nbsp;i := i + 1
+</p>
+
+<h5>Iteración del while (conteo exacto)</h5>
+
+<table border="1" cellpadding="6">
+<tr>
+<th>Iteración</th>
+<th>i antes</th>
+<th>Comparación</th>
+<th>¿Se cumple?</th>
+<th>i después</th>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>5 &gt; a1 (= 2)</td>
+<td>Sí</td>
+<td>2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2</td>
+<td>5 &gt; a2 (= 4)</td>
+<td>Sí</td>
+<td>3</td>
+</tr>
+<tr>
+<td>3</td>
+<td>3</td>
+<td>5 &gt; a3 (= 6)</td>
+<td>No</td>
+<td>—</td>
+</tr>
+</table>
+
+<h5>Resultado del while</h5>
+
+<ul>
+<li>El while se ejecuta <strong>2 veces</strong></li>
+<li>Se detiene cuando <strong>i = 3</strong></li>
+</ul>
+
+<p>
+i = 3
+</p>
+
+<p><strong>Momento clave:</strong> aquí se determina la posición donde debe insertarse el elemento.</p>
+
+<hr>
+
+<h5>2️⃣ ASIGNACIÓN DE m</h5>
+
+<p>
+m := aj<br>
+m = 5
+</p>
+
+<p>Esta asignación ocurre <strong>una sola vez</strong>.</p>
+
+<hr>
+
+<h5>3️⃣ EJECUCIÓN DEL SEGUNDO for</h5>
+
+<p>
+for k := 0 to j − i<br>
+&nbsp;&nbsp;&nbsp;&nbsp;aj−k := aj−k−1
+</p>
+
+<h5>Límites del for</h5>
+
+<p>
+j − i = 6 − 3 = 3
+</p>
+
+<p>
+El valor de k toma los valores: <strong>0, 1, 2 y 3</strong><br>
+El for se ejecuta <strong>4 veces</strong>.
+</p>
+
+<hr>
+
+<h5>Ejecución EXACTA del for (paso a paso)</h5>
+
+<h5>Estado inicial antes del for</h5>
+
+<p>
+2&nbsp;&nbsp;4&nbsp;&nbsp;6&nbsp;&nbsp;8&nbsp;&nbsp;10&nbsp;&nbsp;5
+</p>
+
+<hr>
+
+<h5>k = 0</h5>
+
+<p>
+a6 := a5
+</p>
+
+<p>
+2&nbsp;&nbsp;4&nbsp;&nbsp;6&nbsp;&nbsp;8&nbsp;&nbsp;10&nbsp;&nbsp;10
+</p>
+
+<hr>
+
+<h5>k = 1</h5>
+
+<p>
+a5 := a4
+</p>
+
+<p>
+2&nbsp;&nbsp;4&nbsp;&nbsp;6&nbsp;&nbsp;8&nbsp;&nbsp;8&nbsp;&nbsp;10
+</p>
+
+<hr>
+
+<h5>k = 2</h5>
+
+<p>
+a4 := a3
+</p>
+
+<p>
+2&nbsp;&nbsp;4&nbsp;&nbsp;6&nbsp;&nbsp;6&nbsp;&nbsp;8&nbsp;&nbsp;10
+</p>
+
+<hr>
+
+<h5>k = 3 ← MOMENTO DE INTERÉS</h5>
+
+<p>
+a3 := a2
+</p>
+
+<p>
+2&nbsp;&nbsp;4&nbsp;&nbsp;4&nbsp;&nbsp;6&nbsp;&nbsp;8&nbsp;&nbsp;10
+</p>
+
+<ul>
+<li>k llega exactamente hasta <strong>3</strong></li>
+<li>Se desplazan todos los elementos desde la posición i hasta j − 1</li>
+</ul>
+
+<hr>
+
+<h5>4️⃣ INSERCIÓN FINAL</h5>
+
+<p>
+ai := m<br>
+a3 := 5
+</p>
+
+<hr>
+
+<h5>Arreglo final</h5>
+
+<p>
+2&nbsp;&nbsp;4&nbsp;&nbsp;5&nbsp;&nbsp;6&nbsp;&nbsp;8&nbsp;&nbsp;10
+</p>
+
+<hr>
+
+<h5>RESUMEN FINAL (LO QUE TE INTERESA)</h5>
+
+<table border="1" cellpadding="6">
+<tr>
+<th>Bloque</th>
+<th>Veces que se ejecuta</th>
+</tr>
+<tr>
+<td>while</td>
+<td>2 veces</td>
+</tr>
+<tr>
+<td>m := aj</td>
+<td>1 vez</td>
+</tr>
+<tr>
+<td>for k</td>
+<td>4 veces (k = 0..3)</td>
+</tr>
+<tr>
+<td>Inserción final</td>
+<td>1 vez</td>
+</tr>
+</table>
+
+<hr>
+
+<h5>IDEA CLAVE</h5>
+
+<p>
+El while decide dónde insertar, el for desplaza exactamente j − i + 1 elementos, y el momento crítico ocurre cuando k = j − i.
+</p>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<button onmousedown="mostrarMensaje3()" onmouseup="ocultarMensaje3()">Ayuda</button>
+    <div id="mensaje3" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
+ 
+ <h1>Ejemplo: primer y segundo elemento mal posicionados</h1>
+
+<p>
+Usamos este arreglo (mínimo y claro):
+</p>
+
+<pre>
+[5, 3, 8, 9]
+</pre>
+
+<p>👉 Aquí:</p>
+<ul>
+    <li>El <strong>primer y segundo elemento están mal</strong></li>
+    <li><pre>5 &gt; 3</pre></li>
+    <li>El resto no importa para esta iteración</li>
+</ul>
+
+<hr>
+
+<h2>Iteración del algoritmo</h2>
+
+<h3>Valores iniciales</h3>
+
+<pre>
+a1 = 5
+a2 = 3
+a3 = 8
+a4 = 9
+n  = 4
+</pre>
+
+<hr>
+
+<h2>Paso 1: comienza el for</h2>
+
+<pre>
+for j := 2 to n
+</pre>
+
+<h3>Primera iteración</h3>
+
+<pre>
+j = 2
+</pre>
+
+<p>👉 Subarreglo activo:</p>
+
+<pre>
+[5, 3]
+</pre>
+
+<p>Elemento a insertar:</p>
+
+<pre>
+aj = a2 = 3
+</pre>
+
+<hr>
+
+<h2>Paso 2: buscar la posición i</h2>
+
+<pre>
+i := 1
+while aj &gt; ai
+    i := i + 1
+</pre>
+
+<p>Sustituimos valores reales:</p>
+
+<pre>
+while 3 &gt; 5   → falso
+</pre>
+
+<p>👉 El <strong>while NO entra ni una vez</strong></p>
+
+<p>Resultado:</p>
+
+<pre>
+i = 1
+</pre>
+
+<p><strong>Significado:</strong></p>
+<blockquote>
+    El 3 debe ir <strong>antes del 5</strong>
+</blockquote>
+
+<hr>
+
+<h2>Paso 3: guardar el valor en m</h2>
+
+<pre>
+m := aj
+m := 3
+</pre>
+
+<hr>
+
+<h2>Paso 4: ejecutar el for de desplazamiento</h2>
+
+<p>Código:</p>
+
+<pre>
+for k := 0 to j − i − 1
+    aj−k := aj−k−1
+</pre>
+
+<p>Sustituimos valores:</p>
+
+<pre>
+j − i − 1 = 2 − 1 − 1 = 0
+</pre>
+
+<p>Entonces:</p>
+
+<pre>
+for k := 0 to 0
+</pre>
+
+<p>👉 <strong>El for se ejecuta UNA vez</strong></p>
+
+<h3>Iteración del for</h3>
+
+<h4>k = 0</h4>
+
+<pre>
+aj−k := aj−k−1
+a2−0 := a2−1
+a2 := a1
+</pre>
+
+<p>Sustituimos valores:</p>
+
+<pre>
+a2 := 5
+</pre>
+
+<p>Estado del arreglo ahora:</p>
+
+<pre>
+[5, 5, 8, 9]
+</pre>
+
+<p><strong>Nota importante:</strong></p>
+<ul>
+    <li>El 3 <strong>no se perdió</strong></li>
+    <li>Está guardado en <strong>m</strong></li>
+</ul>
+
+<hr>
+
+<h2>Paso 5: insertar m en la posición i</h2>
+
+<pre>
+ai := m
+a1 := 3
+</pre>
+
+<hr>
+
+<h2>Resultado final de esta iteración</h2>
+
+<pre>
+[3, 5, 8, 9]
+</pre>
+
+<p>
+✔️ Primer y segundo elemento corregidos<br>
+✔️ El subarreglo <strong>a1, a2</strong> ahora está ordenado
+</p>
+
+    </div>
+
+
+
+
+
     <hr>
     <strong>Que hace el while</strong>
     <p>El objetivo es encontrar la posición i donde debe insertarse aj</p>
@@ -1872,6 +2052,189 @@ string_match(11, 4, ('a','b','r','a','c','a','d','a','b','r','a'), ('a','b','r',
             <?php echo $verificar_55 ?>
             <?php echo $verificar_56 ?>
             <?php echo $verificar_57 ?>
+
+            <button onmousedown="mostrarMensaje4()" onmouseup="ocultarMensaje4()">Ayuda</button>
+    <div id="mensaje4" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
+        <p><strong>si no coincide una letra sale del while y no entra en el if</strong></p>
+        <h2>Definiciones básicas</h2>
+
+<pre>
+n = longitud del texto
+m = longitud del patrón (m ≤ n)
+</pre>
+
+<pre>
+t1, t2, … , tn  → texto
+p1, p2, … , pm  → patrón
+</pre>
+
+<hr>
+
+<h2>Qué representa cada cosa</h2>
+
+<h3>1️⃣ j ≤ m</h3>
+
+<pre>
+j ≤ m
+</pre>
+
+<p>👉 Significa:</p>
+<ul>
+    <li>todavía estamos dentro del patrón</li>
+    <li>no hemos comparado todos sus caracteres</li>
+</ul>
+
+<hr>
+
+<h3>2️⃣ t<sub>s+j</sub> = p<sub>j</sub></h3>
+
+<pre>
+t[s + j] = p[j]
+</pre>
+
+<p>👉 Compara:</p>
+<ul>
+    <li>un carácter del texto</li>
+    <li>con un carácter del patrón</li>
+</ul>
+
+<p><strong>📌 El s + j es lo que más confunde:</strong></p>
+<ul>
+    <li><strong>s</strong> = desplazamiento del patrón</li>
+    <li><strong>j</strong> = posición dentro del patrón</li>
+</ul>
+
+<hr>
+
+<h2>Qué hace el while realmente</h2>
+
+<ul>
+    <li>Compara carácter por carácter</li>
+    <li>Avanza solo si coinciden</li>
+    <li>Se detiene cuando:</li>
+    <ul>
+        <li>hay una diferencia ❌</li>
+        <li>o ya comparó todo el patrón ✅</li>
+    </ul>
+</ul>
+
+<hr>
+
+<h2>EJEMPLO ULTRA CONCRETO</h2>
+
+<h3>Texto</h3>
+
+<pre>
+t = A B A B A C
+</pre>
+
+<h3>Patrón</h3>
+
+<pre>
+p = A B A
+</pre>
+
+<hr>
+
+<h2>Caso 1: s = 0</h2>
+
+<pre>
+j = 1
+</pre>
+
+<h3>Iteración 1 del while</h3>
+
+<pre>
+j ≤ 3        → verdadero
+t[0+1] = A
+p[1] = A     → iguales
+</pre>
+
+<p>👉 entra al while</p>
+
+<pre>
+j := 2
+</pre>
+
+<h3>Iteración 2</h3>
+
+<pre>
+j ≤ 3        → verdadero
+t[0+2] = B
+p[2] = B     → iguales
+</pre>
+
+<p>👉 entra</p>
+
+<pre>
+j := 3
+</pre>
+
+<h3>Iteración 3</h3>
+
+<pre>
+j ≤ 3        → verdadero
+t[0+3] = A
+p[3] = A     → iguales
+</pre>
+
+<p>👉 entra</p>
+
+<pre>
+j := 4
+</pre>
+
+<h3>Iteración 4</h3>
+
+<pre>
+j ≤ 3        → falso
+</pre>
+
+<p>❌ sale del while</p>
+
+<hr>
+
+<h2>Qué significa que salió con j = 4</h2>
+
+<pre>
+j &gt; m
+</pre>
+
+<p>👉 Comparó todo el patrón<br>
+👉 Coincidencia encontrada</p>
+
+<hr>
+
+<h2>Caso 2: s = 1 (falla)</h2>
+
+<pre>
+j = 1
+t[1+1] = B
+p[1] = A
+</pre>
+
+<p>❌ No entra al while ni una vez</p>
+
+<hr>
+
+<h2>Dibujo mental (clave)</h2>
+
+<pre>
+Texto:   A B A B A C
+Índices: 1 2 3 4 5 6
+
+s = 0
+Patrón: A B A
+          ↑ ↑ ↑
+</pre>
+
+<p>
+El <strong>j</strong> se mueve sobre el patrón<br>
+El <strong>s + j</strong> se mueve sobre el texto
+</p>
+
+    </div>
+
             <hr>
 
         <h3>3.1.5 Algoritmos Voraces</h3>
@@ -1896,9 +2259,15 @@ string_match(11, 4, ('a','b','r','a','c','a','d','a','b','r','a'), ('a','b','r',
     <button type="submit">Enviar</button>
     <?php echo $verificar_58 ?>
     <?php echo $verificar_59 ?>
-<hr>
- </form>
+    <hr>
+    <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
+    <br>
+    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
+    <button type="submit"   >Mostrar Solución</button>
+  
 </div>
+</div>
+</form>
 
 <div class="centered-container">
     <a

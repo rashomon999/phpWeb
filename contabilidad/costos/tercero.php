@@ -1312,7 +1312,7 @@ if ($respuesta_121 === '144') {
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 370vh;
+    height: 380vh;
     }
 
 </style>
@@ -1642,7 +1642,167 @@ function ocultarMensaje4() {
   <li><span class="no">❌</span> Cada venta/disposición <strong>disminuye</strong> la cantidad en saldo.</li>
 </ul>
 ```
+    <hr>
+
+     <h3>Materiales directos vs Materiales directos usados</h3>
+
+  <h3>🔹 Materiales directos</h3>
+  <p>
+    Son los <strong>insumos o materias primas</strong> que se compran para fabricar el producto.
+    Se registran al momento de <strong>la compra</strong>.
+  </p>
+
+  <p><strong>Ejemplo:</strong></p>
+  <p>
+    Compras $10.000 en madera para fabricar muebles.<br>
+    → Eso es <strong>materiales directos (inventario de materiales)</strong>.
+  </p>
+
+  <h3>🔹 Materiales directos usados</h3>
+  <p>
+    Son los <strong>materiales directos que efectivamente se utilizaron</strong> en la producción durante un período.
+    Se registran al momento de <strong>ser llevados a la producción</strong>.
+  </p>
+
+  <p><strong>Ejemplo:</strong></p>
+  <p>
+    De los $10.000 en madera, solo usaste $6.000 en el mes.<br>
+    → Los $6.000 son <strong>materiales directos usados</strong>, y los $4.000 restantes quedan en inventario.
+  </p>
+
+  <h3>💡 Fórmula</h3>
+  <p>Por eso, la fórmula correcta es:</p>
+  <p>
+    \( \text{Costo de manufactura} = \text{Materiales directos usados} + \text{Mano de obra directa} + \)
+    <br>
+    \(  \text{Costos indirectos de fabricación (CIF)} \)
+  </p>
+
+  <h3>Resumen</h3>
+  <table border="1" cellpadding="5" cellspacing="0">
+    <thead>
+      <tr>
+        <th>Concepto</th>
+        <th>Cuándo se registra</th>
+        <th>Qué representa</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Materiales directos</strong></td>
+        <td>Cuando se compran</td>
+        <td>Inventario de materias primas</td>
+      </tr>
+      <tr>
+        <td><strong>Materiales directos usados</strong></td>
+        <td>Cuando se usan en producción</td>
+        <td>Parte del costo de manufactura</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr>
+     Los costos indirectos de fabricación se aplican a las diversas órdenes a razón
+    de 220% del costo de la mano de obra directa. 
+    
+    <p>Esto es: CIF = MOD(requesisiciones)*220%</p>
+
+    <hr>
+    <h3>Sistema de costeo por órdenes de trabajo con inventario periódico</h3>
+
+    <p>En un sistema de costeo por órdenes de trabajo con inventario periódico o periódico por órdenes, los materiales directos asignados a cada orden se calculan así:</p>
+
+    <p><strong>Materiales directos usados en la orden</strong> = Saldo inicial de inventario de materiales en la orden + Requisiciones durante el periodo</p>
  
+    <p>Es decir:</p>
+    <strong>Materiales Directos Usados = Inventario inicial + Requisiciones</strong>
+
+    <hr>
+    <p><strong>cuenta de inventario de trabajo en proceso </strong></p>
+<table style="border-collapse: collapse;">
+  <tr>
+    <th style="border: 1px solid black; padding: 5px;">Orden</th>
+    <th style="border: 1px solid black; padding: 5px;">Costo de Materiales</th>
+    <th style="border: 1px solid black; padding: 5px;">Saldo inicial</th>
+    <th style="border: 1px solid black; padding: 5px;">MOD</th>
+    <th style="border: 1px solid black; padding: 5px;">CIF (220%)</th>
+    <th style="border: 1px solid black; padding: 5px;">Total Costos</th>
+    <th style="border: 1px solid black; padding: 5px;">Precio de venta</th>
+  </tr>
+</table>
+
+<br><br>
+
+<h3> Fórmula general del costo total por orden</h3>
+<p><strong>
+Costo total de la orden=(Materiales iniciales+MOD inicial+CIF inicial)+(Materiales del mes+MOD del mes+CIF aplicado en el mes)    
+
+</strong></p>
+
+ 
+
+<h3>📘 Ejemplo con la orden A-400</h3>
+<table>
+  <tr>
+    <th>Concepto</th>
+    <th>Valor</th>
+  </tr>
+  <tr>
+    <td>Materiales iniciales (saldo 1-ago)</td>
+    <td>19.200</td>
+  </tr>
+  <tr>
+    <td>MOD inicial</td>
+    <td>15.750</td>
+  </tr>
+  <tr>
+    <td>CIF inicial (220% × 15.750)</td>
+    <td>34.650</td>
+  </tr>
+  <tr>
+    <td><strong>Subtotal saldo inicial</strong></td>
+    <td><strong>69.600</strong></td>
+  </tr>
+  <tr>
+    <td>Materiales nuevos (agosto)</td>
+    <td>20.800</td>
+  </tr>
+  <tr>
+    <td>MOD nueva (agosto)</td>
+    <td>24.300</td>
+  </tr>
+  <tr>
+    <td>CIF nuevo (220% × 24.300)</td>
+    <td>53.460</td>
+  </tr>
+  <tr>
+    <td><strong>Subtotal mes agosto</strong></td>
+    <td><strong>98.560</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Costo total acumulado de la orden A-400</strong></td>
+    <td><strong>69.600 + 98.560 = 168.160</strong></td>
+  </tr>
+</table>
+
+<h3>💡 En tu hoja de cálculo</h3>
+<p>La fórmula (suponiendo columnas así):</p>
+<ul>
+  <li><strong>E</strong> — Total Costos agosto = <em>=B + C + D</em> (Materiales + MOD + CIF)</li>
+  <li><strong>F</strong> — Costo total acumulado = <em>=E + InvInicial</em></li>
+  <li><strong>InvInicial</strong> (si lo desglosas) = MatInicial + MODInicial + (MODInicial × 2.2)</li>
+</ul>
+<p>Así el <strong>Costo total acumulado (F)</strong> refleja todo lo invertido en la orden desde que comenzó.</p>
+
+<h3>🧾 Resultado esperado</h3>
+<p>
+  <strong>Para órdenes nuevas:</strong> el costo total = costo del mes (no tienen saldo inicial).<br>
+  <strong>Para órdenes en proceso:</strong> el costo total = saldo inicial + costos agregados del mes.
+</p>
+<p>Cuando la orden termina, ese total se transfiere al <strong>Costo de ventas</strong> (si se vendió) o a <strong>Producto Terminado</strong> (si aún no se vende). Si queda abierta, su costo total pasa al <strong>Inventario de trabajo en proceso (WIP)</strong>.</p>
+
+ 
+
 </div>
 
 
@@ -1650,7 +1810,195 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
 
-    
+    <h3>⚙️ En el sistema de costeo por órdenes de trabajo</h3>
+<p>Cada orden (A-400, B-700, etc.) acumula los costos a medida que se incurre:</p>
+<ul>
+  <li>Materiales directos</li>
+  <li>Mano de obra directa</li>
+  <li>Costos indirectos de fabricación (CIF aplicado)</li>
+</ul>
+<p>Mientras la orden está en proceso, esos costos no se llevan al gasto ni al costo de ventas aún — se mantienen capitalizados dentro de la cuenta contable <strong>Inventario de productos en proceso (WIP)</strong>. Cuando la orden se termina, todo el costo acumulado se “transfiere” a Inventario de productos terminados o directamente a Costo de ventas (si se entrega al cliente de inmediato).</p>
+
+<h3>🧾 ¿Por qué se suma el saldo anterior?</h3>
+<p>Porque el saldo del mes anterior (o del 1 de agosto) representa el trabajo parcial ya realizado en esa orden (materiales, mano de obra, CIF aplicados hasta esa fecha). Durante el nuevo mes se agregan más costos. Entonces:</p>
+<p><strong>Costo total de la orden = lo que ya se había invertido + lo que se invierte ahora</strong></p>
+
+<h3>🔢 Ejemplo visual (A-400)</h3>
+<table>
+  <tr>
+    <td>Saldo inicial (trabajo previo)</td>
+    <td>69.600</td>
+  </tr>
+  <tr>
+    <td>Costos del mes (nuevos)</td>
+    <td>98.560</td>
+  </tr>
+  <tr>
+    <td><strong>Total acumulado de la orden (al terminar)</strong></td>
+    <td><strong>168.160</strong></td>
+  </tr>
+</table>
+<p>→ Solo cuando la orden A-400 se termina, los <strong>$168.160</strong> se sacan del inventario WIP y se pasan al costo de ventas (porque el enunciado dice que se entrega al cliente enseguida).</p>
+
+<h3>🧩 En resumen</h3>
+<table>
+  <tr>
+    <th>Etapa</th>
+    <th>Cuenta contable</th>
+    <th>Qué contiene</th>
+  </tr>
+  <tr>
+    <td>Antes de terminar la orden</td>
+    <td>Inventario de productos en proceso (WIP)</td>
+    <td>Acumula todos los costos (materiales, MOD, CIF)</td>
+  </tr>
+  <tr>
+    <td>Al terminar la orden</td>
+    <td>Producto Terminado o Costo de Ventas</td>
+    <td>Se descarga WIP y se reconoce el costo</td>
+  </tr>
+</table>
+<p>En tu informe: por eso sumas el saldo anterior + costos nuevos — para ver el <strong>costo total de la orden terminada</strong>.</p>
+
+        <p>
+        costos indirectos de fabricacion se aplican a razon  220% del costo de la mano de obra directa. , es como decir:
+        <br><br>
+        costos indirectos =220% * Mano de obra directa
+    </p>
+       <hr>
+
+<h3>Precio de venta (P.V.P.) y Costo de ventas</h3>
+
+<p>
+“Las otras fueron entregadas a los clientes a un precio de venta igual a 
+<strong>120%</strong> de los costos asignados.”
+</p>
+
+<p><strong>Entonces:</strong></p>
+
+<p><strong>P.V.P. = Costo total de la orden × 1.20</strong></p>
+
+<p>Y:</p>
+
+<p><strong>Costo de ventas = Costo total de la orden (solo de las terminadas)</strong></p>
+
+<p>
+Ejemplo: si una orden tiene un costo total de <strong>$100.000</strong>, entonces
+P.V.P. = <strong>$100.000 × 1.20 = $120.000</strong>, y el costo de ventas (si la orden está terminada)
+será <strong>$100.000</strong>.
+</p>
+
+
+    <hr>
+    <h3>Costeo por ordenes:</h3>
+
+     <h3>🧱 1. Qué representan esas 170.000 unidades</h3>
+    <p>Las unidades iniciadas y terminadas son las que se comenzaron y se completaron totalmente en el período actual.</p>
+    <p>En tu caso: <strong>210.000 unidades terminadas − 40.000 unidades del inventario inicial = 170.000.</strong></p>
+    <p>Estas 170.000 unidades se trabajaron desde cero durante noviembre:</p>
+    <p><strong>•</strong> Se agregaron todos los materiales (MD = 100%).</p>
+    <p><strong>•</strong> Se realizó toda la conversión (MOD + CIF = 100%).</p>
+    <p>Por eso se colocan en ambas columnas (MD y CC) al 100%.</p>
+
+    <h3>🧩 2. Qué son las columnas “MD” y “CC”</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Columna</th>
+          <th>Qué representa</th>
+          <th>Cómo se interpreta</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>MD</strong></td>
+          <td>Material Directo</td>
+          <td>Trabajo relacionado con los materiales agregados</td>
+        </tr>
+        <tr>
+          <td><strong>CC</strong></td>
+          <td>Costos de Conversión (MOD + CIF)</td>
+          <td>Trabajo de mano de obra directa y costos indirectos de fabricación</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Cada tipo de costo tiene su propio “porcentaje de avance” porque no siempre se agregan al mismo ritmo. Por ejemplo, los materiales se suelen añadir al inicio del proceso, mientras que la conversión ocurre gradualmente.</p>
+
+    <h3>🧮 3. Aplicación a las 170.000 unidades</h3>
+    <p>Como esas 170.000 unidades se hicieron totalmente durante este periodo, recibieron todo el trabajo de materiales y conversión del mes.</p>
+    <p>Por eso:</p>
+    <p><strong>Para MD</strong> → se agregaron todos los materiales = <strong>170.000 unidades equivalentes.</strong></p>
+    <p><strong>Para CC</strong> → se aplicó toda la conversión = <strong>170.000 unidades equivalentes.</strong></p>
+    <p>En otras palabras, <strong>170.000 × 100% = 170.000</strong> para ambos tipos de costo. No hay diferencia entre MD y CC en este caso porque ambas fases se completaron totalmente este mes.</p>
+
+    <h3>🔍 4. Contraste con los otros casos</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Concepto</th>
+          <th>MD</th>
+          <th>CC</th>
+          <th>Explicación</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Inventario inicial (40.000)</td>
+          <td>0</td>
+          <td>20.000</td>
+          <td>Ya tenía 100% materiales, faltaba 50% conversión → solo se cuenta lo que se hace ahora</td>
+        </tr>
+        <tr>
+          <td>Unid. iniciadas y terminadas (170.000)</td>
+          <td>170.000</td>
+          <td>170.000</td>
+          <td>Se hacen de principio a fin este mes → 100% materiales y conversión</td>
+        </tr>
+        <tr>
+          <td>Inventario final (30.000)</td>
+          <td>30.000</td>
+          <td>18.000</td>
+          <td>Tienen 100% materiales y 60% conversión → solo lo avanzado se cuenta</td>
+        </tr>
+        <tr>
+          <td><strong>Total unidades equivalentes</strong></td>
+          <td><strong>200.000</strong></td>
+          <td><strong>208.000</strong></td>
+          <td>Suma de trabajo actual</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>💡 En resumen</h3>
+    <p>Las <strong>170.000 unidades</strong> se repiten en MD y CC porque representan unidades completamente terminadas dentro del periodo actual. Por lo tanto, reciben el <strong>100% del trabajo de materiales y conversión del mes</strong>.</p>
+    <hr>
+
+
+
+
+      <h3>🧩 1. ¿Qué es la producción equivalente?</h3>
+  <p>En costeo por procesos, las unidades no siempre están terminadas al final del mes (o al inicio del siguiente). Necesitamos saber: <strong>“¿A cuántas unidades completas equivalen esas unidades que están a medio hacer?”</strong></p>
+
+  <p>Por ejemplo:</p>
+  <ul>
+    <li>Si tengo 1.000 unidades al 50% de conversión, eso equivale a 500 unidades terminadas.</li>
+    <li>Si tengo 2.000 unidades al 25% de avance, eso equivale a 500 unidades terminadas (2.000 × 25% = 500).</li>
+  </ul>
+  <p>Este es el concepto de unidades equivalentes: <strong>convertir trabajo parcial en unidades completas equivalentes</strong>.</p>
+
+  <h3>⚙️ 2. Qué hace el método PEPS (FIFO)</h3>
+  <p>El método PEPS (FIFO) separa el trabajo del periodo actual del trabajo hecho antes. Por eso, si al inicio del periodo ya tienes unidades parcialmente hechas, <strong>no se vuelve a contar lo que ya estaba hecho</strong>, solo el trabajo que falta para completarlas este periodo.</p>
+
+  <h3>📘 3. Aplicado al caso</h3>
+  <p><strong>Inventario inicial:</strong> 40.000 unidades</p>
+  <p><strong>Materiales:</strong> ya estaban al 100%, es decir, todos los materiales se agregaron en el mes anterior.</p>
+  <p>→ Este mes no se añade más material. → <strong>0 unidades equivalentes de materiales para el inventario inicial.</strong></p>
+
+  <p><strong>Conversión:</strong> estaban al 50%, por lo que faltaba el 50% del trabajo de conversión (mano de obra + CIF).</p>
+  <p>→ Este mes se completa el 50% que faltaba. → <strong>40.000 × (100% − 50%) = 20.000 unidades equivalentes de conversión.</strong></p>
+
+    <hr>
+
     
 </div>
 </div>
@@ -1660,7 +2008,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="tercero.php"
+        href="cuarto.php"
         role="button"
         width="50px"
         height="50px"

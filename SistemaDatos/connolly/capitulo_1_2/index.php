@@ -1,110 +1,159 @@
 <?php
  
  
-$respuesta_1 = ''; $respuesta_2 = ''; $respuesta_3 = ''; $respuesta_3_2 = ''; $respuesta_4 = ''; $respuesta_5 = ''; 
-$respuesta_6 = ''; $respuesta_7 = ''; $respuesta_8 = ''; $respuesta_9 = '';  $respuesta_10 = '';
-$respuesta_11 = ''; $respuesta_12 = ''; $respuesta_13 = ''; $respuesta_14 = ''; $respuesta_15 = '';
-$respuesta_16 = ''; $respuesta_17 = ''; $respuesta_18 = ''; $respuesta_19 = ''; $respuesta_20 = '';
-$respuesta_21 = ''; $respuesta_22 = '';  $respuesta_23 = '';  $respuesta_24 = '';
-$respuesta_25 = ''; $respuesta_26 = ''; $respuesta_27 = ''; $respuesta_28 = ''; $respuesta_29 = '';
-$respuesta_30 = ''; $respuesta_31 = ''; $respuesta_32 = ''; $respuesta_33 = ''; $respuesta_34 = ''; $respuesta_35 = ''; $respuesta_36 = ''; $respuesta_37 = ''; $respuesta_38 = '';
-$respuesta_39 = ''; $respuesta_40 = ''; $respuesta_41 = ''; $respuesta_42 = ''; $respuesta_43 = '';
-$respuesta_44 = ''; $respuesta_45 = ''; $respuesta_46 = ''; $respuesta_47 = ''; $respuesta_48 = '';
-$respuesta_49 = ''; $respuesta_50 = ''; $respuesta_51 = ''; $respuesta_52 = ''; $respuesta_53 = '';
-$respuesta_54 = ''; $respuesta_55 = ''; $respuesta_56 = '';
-$respuesta_57 = ''; $respuesta_58 = ''; $respuesta_59 = ''; $respuesta_60 = '';
+for ($i = 1; $i <= 230; $i++) {
+    ${"respuesta_" . $i} = '';
+}
+
+
+     
+for ($i = 1; $i <= 230; $i++) {
+    ${"verificar_" . $i} = '';
+}
+
+
+$respuesta_64_0 = '';
+$respuesta_64_1 = '';
+$respuesta_64_2 = '';
+
 
 $respuesta_60_0 = ''; $respuesta_60_1 = ''; $respuesta_60_2 = ''; $respuesta_60_3 = ''; $respuesta_60_4 = '';
 $respuesta_60_5 = ''; $respuesta_60_6 = '';  $respuesta_60_7 = '';
 
-$respuesta_61 = '';$respuesta_62 = '';$respuesta_63 = '';$respuesta_64 = ''; $respuesta_64_0 = ''; $respuesta_64_1 = '';
-$respuesta_64_2 = ''; 
-$respuesta_65 = '';$respuesta_66 = '';$respuesta_67 = '';$respuesta_68 = '';
-$respuesta_69 = '';$respuesta_70 = '';$respuesta_71 = '';$respuesta_72 = '';
-$respuesta_73 = '';$respuesta_74 = ''; $respuesta_74_0 = ''; $respuesta_75 = '';$respuesta_76 = '';
-$respuesta_77 = '';$respuesta_78 = '';$respuesta_79 = '';$respuesta_80 = '';
-$respuesta_81 = '';$respuesta_82 = '';$respuesta_83 = '';$respuesta_84 = '';
-$respuesta_85 = '';$respuesta_86 = '';$respuesta_87 = '';$respuesta_88 = ''; $respuesta_89 = '';
-$respuesta_90 = '';
-$respuesta_91 = '';
-$respuesta_92 = '';
-$respuesta_93 = '';
-$respuesta_94 = '';
-$respuesta_95 = '';
-$respuesta_96 = '';
-$respuesta_97 = '';
-$respuesta_98 = '';
-$respuesta_99 = '';
-$respuesta_100 = '';
-$respuesta_101 = '';
-$respuesta_102 = '';
-$respuesta_103 = '';
-$respuesta_104 = '';
-$respuesta_105 = '';
-$respuesta_106 = '';
-$respuesta_107 = '';
-$respuesta_108 = '';
-$respuesta_109 = '';
-$respuesta_110 = '';
-
-
- 
-
-$verificar_1 = ''; $verificar_2 = ''; $verificar_3 = '';  $verificar_3_2 = ''; $verificar_4 = ''; $verificar_5 = ''; 
-$verificar_6 = ''; $verificar_7 = '';  $verificar_8 = ''; $verificar_9 = ''; $verificar_10 = ''; 
-$verificar_11 = ''; $verificar_12 = ''; $verificar_13 = ''; $verificar_14 = ''; $verificar_15 = ''; 
-$verificar_16 = '';  $verificar_17 = ''; $verificar_18 = ''; $verificar_19 = ''; $verificar_20 = '';  
-$verificar_21 = '';  $verificar_22 = '';  $verificar_23 = '';   $verificar_24 = '';   $verificar_25 = '';  
-$verificar_26 = '';  $verificar_27= ''; $verificar_28= '';  $verificar_29= '';  $verificar_30 = ''; 
-$verificar_31 = ''; $verificar_32 = ''; $verificar_33 = ''; 
-$verificar_34 = ''; $verificar_35 = ''; $verificar_36 = ''; $verificar_37 = ''; $verificar_38 = '';
-$verificar_39 = ''; $verificar_40 = ''; $verificar_41 = ''; $verificar_42 = ''; $verificar_43 = '';
-$verificar_44 = ''; $verificar_45 = ''; $verificar_46 = ''; $verificar_47 = ''; $verificar_48 = '';
-$verificar_49 = ''; $verificar_50 = ''; $verificar_51 = ''; $verificar_52 = ''; $verificar_53 = '';
-$verificar_54 = ''; $verificar_55 = '';
-$verificar_56 = ''; $verificar_57 = ''; $verificar_58 = ''; $verificar_59 = ''; $verificar_60 = ''; 
+$respuesta_74_0 = '';
 
 $verificar_60_0 = ''; $verificar_60_1 = ''; $verificar_60_2 = ''; $verificar_60_3 = '';   
 $verificar_60_4 = '';   $verificar_60_5 = '';   $verificar_60_6 = '';   $verificar_60_7 = '';  
-
-$verificar_61 = ''; $verificar_62 = ''; $verificar_63 = ''; $verificar_64 = ''; $verificar_64_0 = '';
+ 
+ $verificar_61 = ''; $verificar_62 = ''; $verificar_63 = ''; $verificar_64 = ''; $verificar_64_0 = '';
 $verificar_64_1 = ''; $verificar_64_2 = '';
- $verificar_65 = '';
- $verificar_66 = ''; $verificar_67 = ''; $verificar_68 = ''; $verificar_69 = ''; $verificar_70 = '';
-  $verificar_71 = ''; $verificar_72 = ''; $verificar_73 = ''; $verificar_74 = '';
   $verificar_74_0 = '';
-  $verificar_75 = '';
-   $verificar_76 = ''; $verificar_77 = ''; $verificar_78 = ''; $verificar_79 = ''; $verificar_80 = '';
-    $verificar_81 = ''; $verificar_82 = ''; $verificar_83 = ''; $verificar_84 = ''; $verificar_85 = '';
-     $verificar_86 = ''; $verificar_87 = ''; $verificar_88 = '';
-     $verificar_89 = '';
-     $verificar_90 = '';
-     $verificar_91 = '';
-     $verificar_92 = '';
-     $verificar_93 = '';
-     $verificar_94 = '';
-     $verificar_95 = '';
-     $verificar_96 = '';
-     $verificar_97 = '';
-     $verificar_98 = '';
-     $verificar_99 = '';
-     $verificar_100 = '';
-     $verificar_101 = '';
-     $verificar_102 = '';
-     $verificar_103 = '';
-     $verificar_104 = '';
-     $verificar_105 = '';
-     $verificar_106 = '';
-     $verificar_107 = '';
-     $verificar_108 = '';
-     $verificar_109 = '';
-     $verificar_110 = '';
-     
-
+$mostrar_solucion = '';
 if ($_POST) {
+    $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
+    
+    if ($mostrar_solucion === 'mostrar_solucion') {
+        // Establecer todas las respuestas correctas para las tablas de multiplicar
+
+       // ===== RESPUESTAS TEXTUALES (1–11)
+    $respuesta_1  = 'Un conjunto de programas de';
+    $respuesta_2  = 'aplicacion que brindan';
+    $respuesta_3  = 'servicios a los';
+    $respuesta_4  = 'usuarios finales';
+    $respuesta_5  = 'Como la generacion';
+    $respuesta_6  = 'de informes';
+    $respuesta_7  = 'Cada programa';
+    $respuesta_8  = 'define';
+    $respuesta_9  = 'gestiona sus propios';
+    $respuesta_10 = 'datos';
+    $respuesta_11 = 'almacenar';
+
+    // ===== RESPUESTAS 12–22
+    $respuesta_12 = 'aceptable';
+    $respuesta_13 = 'gran';
+    $respuesta_14 = 'elementos';
+    $respuesta_15 = 'almacenarlos';
+    $respuesta_16 = 'recuperarlos';
+    $respuesta_17 = 'referencias cruzadas';
+    $respuesta_18 = 'procesar';
+    $respuesta_19 = 'desarrollado';
+    $respuesta_20 = 'respuesta';
+    $respuesta_21 = 'necesidades';
+    $respuesta_22 = 'industria';
+
+    // ===== RESPUESTAS 23–33
+    $respuesta_23 = 'acceso';
+    $respuesta_24 = 'eficiente';
+    $respuesta_25 = 'datos';
+    $respuesta_26 = 'almacenamiento';
+    $respuesta_27 = 'centralizado';
+    $respuesta_28 = 'datos';
+    $respuesta_29 = 'enfoque';
+    $respuesta_30 = 'descentralizado';
+    $respuesta_31 = 'departamento';
+    $respuesta_32 = 'personal';
+    $respuesta_33 = 'procesamiento de datos';
+
+    // ===== RESPUESTAS 34–59
+    $respuesta_34 = 'controlaba';
+    $respuesta_35 = 'separacion y aislamiento de datos';
+    $respuesta_36 = 'duplicacion de datos';
+    $respuesta_37 = 'dependencia de los datos';
+    $respuesta_38 = 'formatos de archivos incompatibles';
+    $respuesta_39 = 'consultas fijas';
+    $respuesta_40 = 'proliferacion de programas de aplicacion';
+    $respuesta_41 = 'Un archivo es una coleccion';
+    $respuesta_42 = 'de registros';
+    $respuesta_43 = 'que contienen datos relacionados logicamente';
+    $respuesta_44 = 'La definicion de los datos esta incrustada';
+    $respuesta_45 = 'programas';
+    $respuesta_46 = 'en lugar de almacenarse por';
+    $respuesta_47 = 'separado';
+    $respuesta_48 = 'independientemente';
+    $respuesta_49 = 'No hay control sobre el acceso';
+    $respuesta_50 = 'y la manipulacion de los datos mas alla';
+    $respuesta_51 = 'programas';
+    $respuesta_52 = 'base de datos';
+    $respuesta_53 = 'sistema de gestion de base de datos';
+    $respuesta_54 = 'Una coleccion compartida de datos';
+    $respuesta_55 = 'DBMS';
+    $respuesta_56 = 'logicamente relacionados';
+    $respuesta_57 = 'y su descripcion';
+    $respuesta_58 = 'satisfacer';
+    $respuesta_59 = 'informacion';
+
+    // ===== RESPUESTAS COMPUESTAS (60)
+    $respuesta_60_0 = 'La base de datos ya no es propiedad de un solo departamento';
+    $respuesta_60_1 = 'coleccion autodocumentada';
+    $respuesta_60_2 = 'no solo almacena los datos operativos de la organizacion';
+    $respuesta_60_3 = 'registros integrados';
+    $respuesta_60_4 = 'catalogo del sistema';
+    $respuesta_60_5 = 'diccionario de datos';
+    $respuesta_60_6 = 'metadatos';
+    $respuesta_60_7 = 'datos sobre datos';
+    $respuesta_60   = 'autodocumentada';
+
+    // ===== RESPUESTAS 61–85
+    $respuesta_61 = 'independencia';
+    $respuesta_62 = 'programa';
+    $respuesta_63 = 'datos';
+    $respuesta_64 = 'separa';
+    $respuesta_64_0 = 'estructura';
+    $respuesta_64_1 = 'programas';
+    $respuesta_64_2 = 'aplicacion';
+    $respuesta_65 = 'propiedad';
+    $respuesta_66 = 'asociacion';
+    $respuesta_67 = 'Sistema de gestion de base de datos';
+    $respuesta_68 = 'DBMS';
+    $respuesta_69 = 'Un sistema de software que permite a los usuarios';
+    $respuesta_70 = 'definir';
+    $respuesta_71 = 'crear';
+    $respuesta_72 = 'mantener';
+    $respuesta_73 = 'controlar';
+    $respuesta_74_0 = 'definir';
+    $respuesta_74 = 'DDL';
+    $respuesta_75 = 'lenguaje de manipulacion de datos';
+    $respuesta_76 = 'proporciona';
+    $respuesta_77 = 'controlado';
+    $respuesta_78 = 'seguridad';
+    $respuesta_79 = 'interactua';
+    $respuesta_80 = 'subconjunto';
+    $respuesta_81 = 'hardware';
+    $respuesta_82 = 'software';
+    $respuesta_83 = 'datos';
+    $respuesta_84 = 'procedimientos';
+    $respuesta_85 = 'personas';
+    $respuesta_86 = 'Sistema basado en archivos';
+        
+        // Marcar todas como correctas
+    for ($i = 1; $i <= 122; $i++) {
+    ${"verificar_$i"} = "correcto";
+    }
+
+    } else {
     // Verificar la respuesta de la primera pregunta
    $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === 'programas') {  
+   if ($respuesta_1 === 'Un conjunto de programas de') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -114,7 +163,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === 'aplicacion') {  
+   if ($respuesta_2 === 'aplicacion que brindan') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -124,7 +173,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === 'servicios') { 
+   if ($respuesta_3 === 'servicios a los') { 
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -134,7 +183,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === 'usuarios') {  
+   if ($respuesta_4 === 'usuarios finales') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -144,7 +193,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === 'generacion') { 
+   if ($respuesta_5 === 'Como la generacion') { 
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -154,7 +203,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === 'informes') { 
+   if ($respuesta_6 === 'de informes') { 
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -164,7 +213,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === 'programa') { 
+   if ($respuesta_7 === 'Cada programa') { 
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -184,7 +233,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === 'gestiona') {  
+   if ($respuesta_9 === 'gestiona sus propios') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -423,7 +472,7 @@ if ($_POST) {
    }
 
     $respuesta_33 = isset($_POST['respuesta_33']) ? $_POST['respuesta_33'] : '';
-   if ($respuesta_33 === 'procesamiento') {  
+   if ($respuesta_33 === 'procesamiento de datos') {  
        $verificar_33 = "correcto";
    } elseif ($respuesta_33 === '') {
        $verificar_33 = '';
@@ -495,7 +544,7 @@ if ($respuesta_40 === 'proliferacion de programas de aplicacion') {
 }
 
  $respuesta_41 = isset($_POST['respuesta_41']) ? $_POST['respuesta_41'] : '';
-if ($respuesta_41 === 'coleccion') { 
+if ($respuesta_41 === 'Un archivo es una coleccion') { 
     $verificar_41 = "correcto";
 } elseif ($respuesta_41 === '') {
     $verificar_41 = '';
@@ -504,7 +553,7 @@ if ($respuesta_41 === 'coleccion') {
 }
 
  $respuesta_42 = isset($_POST['respuesta_42']) ? $_POST['respuesta_42'] : '';
-if ($respuesta_42 === 'registros') { 
+if ($respuesta_42 === 'de registros') { 
     $verificar_42 = "correcto";
 } elseif ($respuesta_42 === '') {
     $verificar_42 = '';
@@ -513,7 +562,7 @@ if ($respuesta_42 === 'registros') {
 }
 
  $respuesta_43 = isset($_POST['respuesta_43']) ? $_POST['respuesta_43'] : '';
-if ($respuesta_43 === 'contienen datos relacionados logicamente') { 
+if ($respuesta_43 === 'que contienen datos relacionados logicamente') { 
     $verificar_43 = "correcto";
 } elseif ($respuesta_43 === '') {
     $verificar_43 = '';
@@ -523,7 +572,7 @@ if ($respuesta_43 === 'contienen datos relacionados logicamente') {
 
 
 $respuesta_44 = isset($_POST['respuesta_44']) ? $_POST['respuesta_44'] : '';
-if ($respuesta_44 === 'incrustada') { 
+if ($respuesta_44 === 'La definicion de los datos esta incrustada') { 
     $verificar_44 = "correcto";
 } elseif ($respuesta_44 === '') {
     $verificar_44 = '';
@@ -543,7 +592,7 @@ if ($respuesta_45 === 'programas') {
 
 
 $respuesta_46 = isset($_POST['respuesta_46']) ? $_POST['respuesta_46'] : '';
-if ($respuesta_46 === 'almacenarse') { 
+if ($respuesta_46 === 'en lugar de almacenarse por') { 
     $verificar_46 = "correcto";
 } elseif ($respuesta_46 === '') {
     $verificar_46 = '';
@@ -576,7 +625,7 @@ if ($respuesta_48 === 'independientemente') {
 
 
 $respuesta_49 = isset($_POST['respuesta_49']) ? $_POST['respuesta_49'] : '';
-if ($respuesta_49 === 'acceso') { 
+if ($respuesta_49 === 'No hay control sobre el acceso') { 
     $verificar_49 = "correcto";
 } elseif ($respuesta_49 === '') {
     $verificar_49 = '';
@@ -585,7 +634,7 @@ if ($respuesta_49 === 'acceso') {
 }
 
  $respuesta_50 = isset($_POST['respuesta_50']) ? $_POST['respuesta_50'] : '';
-if ($respuesta_50 === 'manipulacion') { 
+if ($respuesta_50 === 'y la manipulacion de los datos mas alla') { 
     $verificar_50 = "correcto";
 } elseif ($respuesta_50 === '') {
     $verificar_50 = '';
@@ -624,7 +673,7 @@ if ($respuesta_53 === 'sistema de gestion de base de datos') {
 
  
 $respuesta_54 = isset($_POST['respuesta_54']) ? $_POST['respuesta_54'] : '';
-if ($respuesta_54 === 'coleccion') { 
+if ($respuesta_54 === 'Una coleccion compartida de datos') { 
     $verificar_54 = "correcto";
 } elseif ($respuesta_54 === '') {
     $verificar_54 = '';
@@ -634,7 +683,7 @@ if ($respuesta_54 === 'coleccion') {
 
  
 $respuesta_55 = isset($_POST['respuesta_55']) ? $_POST['respuesta_55'] : '';
-if ($respuesta_55 === 'compartida') { 
+if ($respuesta_55 === 'DBMS') { 
     $verificar_55 = "correcto";
 } elseif ($respuesta_55 === '') {
     $verificar_55 = '';
@@ -645,7 +694,7 @@ if ($respuesta_55 === 'compartida') {
 
  
 $respuesta_56 = isset($_POST['respuesta_56']) ? $_POST['respuesta_56'] : '';
-if ($respuesta_56 === 'logicamente') { 
+if ($respuesta_56 === 'logicamente relacionados') { 
     $verificar_56 = "correcto";
 } elseif ($respuesta_56 === '') {
     $verificar_56 = '';
@@ -655,7 +704,7 @@ if ($respuesta_56 === 'logicamente') {
 
  
 $respuesta_57 = isset($_POST['respuesta_57']) ? $_POST['respuesta_57'] : '';
-if ($respuesta_57 === 'descripcion') { 
+if ($respuesta_57 === 'y su descripcion') { 
     $verificar_57 = "correcto";
 } elseif ($respuesta_57 === '') {
     $verificar_57 = '';
@@ -687,7 +736,7 @@ if ($respuesta_59 === 'informacion') {
 
 // Verificar la respuesta de la quinta pregunta (18 * 6)
 $respuesta_60_0 = isset($_POST['respuesta_60_0']) ? $_POST['respuesta_60_0'] : '';
-if ($respuesta_60_0 === 'coleccion') { 
+if ($respuesta_60_0 === 'La base de datos ya no es propiedad de un solo departamento') { 
     $verificar_60_0 = "correcto";
 } elseif ($respuesta_60_0 === '') {
     $verificar_60_0 = '';
@@ -696,7 +745,7 @@ if ($respuesta_60_0 === 'coleccion') {
 }
 
 $respuesta_60_1 = isset($_POST['respuesta_60_1']) ? $_POST['respuesta_60_1'] : '';
-if ($respuesta_60_1 === 'autodocumentada') { 
+if ($respuesta_60_1 === 'coleccion autodocumentada') { 
     $verificar_60_1 = "correcto";
 } elseif ($respuesta_60_1 === '') {
     $verificar_60_1 = '';
@@ -705,7 +754,7 @@ if ($respuesta_60_1 === 'autodocumentada') {
 }
 
 $respuesta_60_2 = isset($_POST['respuesta_60_2']) ? $_POST['respuesta_60_2'] : '';
-if ($respuesta_60_2 === 'registros') { 
+if ($respuesta_60_2 === 'no solo almacena los datos operativos de la organizacion') { 
     $verificar_60_2 = "correcto";
 } elseif ($respuesta_60_2 === '') {
     $verificar_60_2 = '';
@@ -714,7 +763,7 @@ if ($respuesta_60_2 === 'registros') {
 }
 
 $respuesta_60_3 = isset($_POST['respuesta_60_3']) ? $_POST['respuesta_60_3'] : '';
-if ($respuesta_60_3 === 'integrados') { 
+if ($respuesta_60_3 === 'registros integrados') { 
     $verificar_60_3 = "correcto";
 } elseif ($respuesta_60_3 === '') {
     $verificar_60_3 = '';
@@ -868,7 +917,7 @@ if ($respuesta_66 === 'asociacion') {
 }
  
 $respuesta_67 = isset($_POST['respuesta_67']) ? $_POST['respuesta_67'] : '';
-if ($respuesta_67 === 'sistema') { 
+if ($respuesta_67 === 'Sistema de gestion de base de datos') { 
     $verificar_67 = "correcto";
 } elseif ($respuesta_67 === '') {
     $verificar_67 = '';
@@ -878,7 +927,7 @@ if ($respuesta_67 === 'sistema') {
 
  
 $respuesta_68 = isset($_POST['respuesta_68']) ? $_POST['respuesta_68'] : '';
-if ($respuesta_68 === 'permite') { 
+if ($respuesta_68 === 'DBMS') { 
     $verificar_68 = "correcto";
 } elseif ($respuesta_68 === '') {
     $verificar_68 = '';
@@ -888,7 +937,7 @@ if ($respuesta_68 === 'permite') {
 
  
 $respuesta_69 = isset($_POST['respuesta_69']) ? $_POST['respuesta_69'] : '';
-if ($respuesta_69 === 'usuarios') { 
+if ($respuesta_69 === 'Un sistema de software que permite a los usuarios') { 
     $verificar_69 = "correcto";
 } elseif ($respuesta_69 === '') {
     $verificar_69 = '';
@@ -1062,9 +1111,8 @@ if ($respuesta_85 === 'personas') {
     $verificar_85 = "incorrecto";
 }
 
-// Verificar la respuesta de la novena pregunta (20 * 10)
-$respuesta_86 = isset($_POST['respuesta_86']) ? $_POST['respuesta_86'] : '';
-if ($respuesta_86 === '200') { 
+ $respuesta_86 = isset($_POST['respuesta_86']) ? $_POST['respuesta_86'] : '';
+if ($respuesta_86 === 'Sistema basado en archivos') { 
     $verificar_86 = "correcto";
 } elseif ($respuesta_86 === '') {
     $verificar_86 = '';
@@ -1072,177 +1120,8 @@ if ($respuesta_86 === '200') {
     $verificar_86 = "incorrecto";
 }
 
-// Verificar la respuesta de la décima pregunta (20 * 11)
-$respuesta_87 = isset($_POST['respuesta_87']) ? $_POST['respuesta_87'] : '';
-if ($respuesta_87 === '220') { 
-    $verificar_87 = "correcto";
-} elseif ($respuesta_87 === '') {
-    $verificar_87 = '';
-} else {
-    $verificar_87 = "incorrecto";
+
 }
-
-// Verificar la respuesta de la undécima pregunta (20 * 12)
-$respuesta_88 = isset($_POST['respuesta_88']) ? $_POST['respuesta_88'] : '';
-if ($respuesta_88 === '240') { 
-    $verificar_88 = "correcto";
-} elseif ($respuesta_88 === '') {
-    $verificar_88 = '';
-} else {
-    $verificar_88 = "incorrecto";
-}
-
-// Verificar la respuesta de la primera pregunta (21 * 2)
-$respuesta_89 = isset($_POST['respuesta_89']) ? $_POST['respuesta_89'] : '';
-if ($respuesta_89 === '42') { 
-    $verificar_89 = "correcto";
-} elseif ($respuesta_89 === '') {
-    $verificar_89 = '';
-} else {
-    $verificar_89 = "incorrecto";
-}
-
-// Verificar la respuesta de la segunda pregunta (21 * 3)
-$respuesta_90 = isset($_POST['respuesta_90']) ? $_POST['respuesta_90'] : '';
-if ($respuesta_90 === '63') { 
-    $verificar_90 = "correcto";
-} elseif ($respuesta_90 === '') {
-    $verificar_90 = '';
-} else {
-    $verificar_90 = "incorrecto";
-}
-
-// Verificar la respuesta de la tercera pregunta (21 * 4)
-$respuesta_91 = isset($_POST['respuesta_91']) ? $_POST['respuesta_91'] : '';
-if ($respuesta_91 === '84') { 
-    $verificar_91 = "correcto";
-} elseif ($respuesta_91 === '') {
-    $verificar_91 = '';
-} else {
-    $verificar_91 = "incorrecto";
-}
-
-// Verificar la respuesta de la cuarta pregunta (21 * 5)
-$respuesta_92 = isset($_POST['respuesta_92']) ? $_POST['respuesta_92'] : '';
-if ($respuesta_92 === '105') { 
-    $verificar_92 = "correcto";
-} elseif ($respuesta_92 === '') {
-    $verificar_92 = '';
-} else {
-    $verificar_92 = "incorrecto";
-}
-
-// Verificar la respuesta de la quinta pregunta (22 * 2)
-$respuesta_100 = isset($_POST['respuesta_100']) ? $_POST['respuesta_100'] : '';
-if ($respuesta_100 === '44') { 
-    $verificar_100 = "correcto";
-} elseif ($respuesta_100 === '') {
-    $verificar_100 = '';
-} else {
-    $verificar_100 = "incorrecto";
-}
-
-// Verificar la respuesta de la sexta pregunta (22 * 3)
-$respuesta_101 = isset($_POST['respuesta_101']) ? $_POST['respuesta_101'] : '';
-if ($respuesta_101 === '66') { 
-    $verificar_101 = "correcto";
-} elseif ($respuesta_101 === '') {
-    $verificar_101 = '';
-} else {
-    $verificar_101 = "incorrecto";
-}
-
-// Verificar la respuesta de la séptima pregunta (22 * 4)
-$respuesta_102 = isset($_POST['respuesta_102']) ? $_POST['respuesta_102'] : '';
-if ($respuesta_102 === '88') { 
-    $verificar_102 = "correcto";
-} elseif ($respuesta_102 === '') {
-    $verificar_102 = '';
-} else {
-    $verificar_102 = "incorrecto";
-}
-
-// Verificar la respuesta de la octava pregunta (22 * 5)
-$respuesta_103 = isset($_POST['respuesta_103']) ? $_POST['respuesta_103'] : '';
-if ($respuesta_103 === '110') { 
-    $verificar_103 = "correcto";
-} elseif ($respuesta_103 === '') {
-    $verificar_103 = '';
-} else {
-    $verificar_103 = "incorrecto";
-}
-
-// Verificar la respuesta de la novena pregunta (22 * 6)
-$respuesta_104 = isset($_POST['respuesta_104']) ? $_POST['respuesta_104'] : '';
-if ($respuesta_104 === '132') { 
-    $verificar_104 = "correcto";
-} elseif ($respuesta_104 === '') {
-    $verificar_104 = '';
-} else {
-    $verificar_104 = "incorrecto";
-}
-
-// Verificar la respuesta de la décima pregunta (22 * 7)
-$respuesta_105 = isset($_POST['respuesta_105']) ? $_POST['respuesta_105'] : '';
-if ($respuesta_105 === '154') { 
-    $verificar_105 = "correcto";
-} elseif ($respuesta_105 === '') {
-    $verificar_105 = '';
-} else {
-    $verificar_105 = "incorrecto";
-}
-
-// Verificar la respuesta de la undécima pregunta (22 * 8)
-$respuesta_106 = isset($_POST['respuesta_106']) ? $_POST['respuesta_106'] : '';
-if ($respuesta_106 === '176') { 
-    $verificar_106 = "correcto";
-} elseif ($respuesta_106 === '') {
-    $verificar_106 = '';
-} else {
-    $verificar_106 = "incorrecto";
-}
-
-// Verificar la respuesta de la duodécima pregunta (22 * 9)
-$respuesta_107 = isset($_POST['respuesta_107']) ? $_POST['respuesta_107'] : '';
-if ($respuesta_107 === '198') { 
-    $verificar_107 = "correcto";
-} elseif ($respuesta_107 === '') {
-    $verificar_107 = '';
-} else {
-    $verificar_107 = "incorrecto";
-}
-
-// Verificar la respuesta de la decimotercera pregunta (22 * 10)
-$respuesta_108 = isset($_POST['respuesta_108']) ? $_POST['respuesta_108'] : '';
-if ($respuesta_108 === '220') { 
-    $verificar_108 = "correcto";
-} elseif ($respuesta_108 === '') {
-    $verificar_108 = '';
-} else {
-    $verificar_108 = "incorrecto";
-}
-
-// Verificar la respuesta de la decimocuarta pregunta (22 * 11)
-$respuesta_109 = isset($_POST['respuesta_109']) ? $_POST['respuesta_109'] : '';
-if ($respuesta_109 === '242') { 
-    $verificar_109 = "correcto";
-} elseif ($respuesta_109 === '') {
-    $verificar_109 = '';
-} else {
-    $verificar_109 = "incorrecto";
-}
-
-// Verificar la respuesta de la decimoquinta pregunta (22 * 12)
-$respuesta_110 = isset($_POST['respuesta_110']) ? $_POST['respuesta_110'] : '';
-if ($respuesta_110 === '264') { 
-    $verificar_110 = "correcto";
-} elseif ($respuesta_110 === '') {
-    $verificar_110 = '';
-} else {
-    $verificar_110 = "incorrecto";
-}
-
-
 }
 ?>
 <!DOCTYPE html>
@@ -1252,7 +1131,7 @@ if ($respuesta_110 === '264') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
     <link rel="stylesheet" href="../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../../style_2_0.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
@@ -1260,6 +1139,15 @@ if ($respuesta_110 === '264') {
         max-width: 100%;
         height: auto;
     }
+
+     .seccion {
+    /*width: 50%;*/    
+    width: calc(50% - 7.5px);
+    padding: 20px;
+    box-sizing: border-box;
+    height: 270vh;
+    }
+
 </style>
  
 <script>
@@ -1560,35 +1448,43 @@ function ocultarMensaje4() {
     
 </head>
 <body>
-<div class="seccion izquierda">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+<form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
+<div class="form-container">
+
+    
+<div class="seccion izquierda"> 
     Conelly Cap. 1 y 2.    
     <hr>
-            Sistema basado en archivos: <br>
-            Un conjunto de 
-            <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="10"> 
-            de 
-            <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="10">
-            que brindan 
-            <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="10">
-            a los 
-            <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="10"> 
-            finales.
-            Como la 
-            <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="10">
-            de 
-            <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="10">. 
-            Cada
-            <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="10">
-            <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="10">
-            y 
-            <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="10"> 
-            sus propios
-            <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="10">
+            <input type="text" name="respuesta_86" value="<?php echo $respuesta_86; ?>" size="25">
             <br>
+              
+            <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="25"> 
+              
+            <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="18">
+              
+            <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="10">
+              
+            <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="10"> 
+             .
+              
+            <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="15">
+              
+            <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="10">. 
+             
+            <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="11">
+            <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="4">
+            y 
+            <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="16"> 
+             
+            <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="4">
+            <br>
+            <p>
             Los sistemas de archivos son un intento temprano por computarizar el sistema manual 
             de archivos.
+            </p>
+             
             <button type="submit">Enviar</button>
+            <?php echo $verificar_86 ?>
             <?php echo $verificar_1 ?>
             <?php echo $verificar_2 ?>
             <?php echo $verificar_3 ?>
@@ -1655,7 +1551,7 @@ function ocultarMensaje4() {
             <?php echo $verificar_25 ?>
             <br><br><br>
             Sin embargo, en lugar de establecer un 
-            <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="10">
+            <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="11">
             <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="10">
             para los 
             <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="10">
@@ -1667,8 +1563,8 @@ function ocultarMensaje4() {
             con la asistencia del 
             <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="10">
             de 
-            <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="10">
-            de datos (DP), almacenaba y 
+            <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="19">
+              (DP), almacenaba y 
             <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="10">
             sus propios datos.
             <br><br><br>
@@ -1702,42 +1598,123 @@ function ocultarMensaje4() {
             <br><br><br>
             <strong>Archivo:</strong><br>
             <br>
-            Un archivo es una 
-            <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="15">
-            de 
-            <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="15">
-            que 
-            <input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="39">
+              
+            <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="22">
+              
+            <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="9">
+              
+            <input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="41">
             <br><br>
             <button type="submit">Enviar</button>
             <?php echo $verificar_41 ?>
             <?php echo $verificar_42 ?>
             <?php echo $verificar_43 ?>
+            <button onmousedown="mostrarMensaje()" onmouseup="ocultarMensaje()">Ayuda</button>
+    <div id="mensaje" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
+<h5>1️⃣ Archivo</h5>
+
+<p><strong>Definición clara:</strong></p>
+
+<blockquote>
+  Un <strong>archivo</strong> es una colección de <strong>registros</strong> que contienen datos relacionados lógicamente.
+</blockquote>
+
+<p><strong>Ideas clave:</strong></p>
+
+<ul>
+  <li>Es <strong>simple</strong>.</li>
+  <li>Normalmente pertenece a <strong>una sola aplicación</strong>.</li>
+  <li>No tiene reglas complejas de control.</li>
+  <li>No “sabe” nada sobre otros archivos.</li>
+</ul>
+
+<p><strong>Ejemplo:</strong></p>
+
+<ul>
+  <li><code>alumnos.txt</code></li>
+  <li><code>ventas.csv</code></li>
+</ul>
+
+<p>Cada programa:</p>
+
+<ul>
+  <li>Abre el archivo</li>
+  <li>Lee</li>
+  <li>Modifica</li>
+  <li>Guarda</li>
+</ul>
+
+<p>👉 Si otro programa quiere usar esos datos, <strong>debe copiar el archivo o volver a programar todo</strong>.</p>
+
+<hr>
+
+<h5>2️⃣ Base de datos</h5>
+
+<p><strong>Definición clara:</strong></p>
+
+<blockquote>
+  Una <strong>base de datos</strong> es una colección <strong>compartida</strong> de datos lógicamente relacionados <strong>y su descripción</strong>, diseñada para satisfacer las necesidades de información de una organización.
+</blockquote>
+
+<p><strong>Aquí aparecen cosas nuevas importantes:</strong></p>
+
+<h5>🔹 “Compartida”</h5>
+
+<ul>
+  <li>Muchos usuarios y aplicaciones acceden <strong>al mismo tiempo</strong>.</li>
+  <li>No es “mi archivo”, es <strong>de toda la organización</strong>.</li>
+</ul>
+
+<h5>🔹 “Y su descripción”</h5>
+
+<p>Incluye <strong>metadatos</strong>:</p>
+
+<ul>
+  <li>tablas</li>
+  <li>tipos de datos</li>
+  <li>claves</li>
+  <li>relaciones</li>
+  <li>restricciones</li>
+</ul>
+
+<p>👉 Eso <strong>no existe</strong> en un archivo simple.</p>
+
+<h5>🔹 “Satisfacer necesidades de información”</h5>
+
+<p>Está pensada para:</p>
+
+<ul>
+  <li>consultas</li>
+  <li>reportes</li>
+  <li>análisis</li>
+  <li>decisiones</li>
+</ul>
+
+    </div>
             <br><br>
             Todas las limitaciones mencionadas anteriormente del enfoque basado en archivos pueden
             atribuirse a dos factores:
 
-            <li>
-            La definición de los datos está 
-            <input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>" size="8">
+            <li> 
+            <input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>" size="36">
             en los 
             <input type="text" name="respuesta_45" value="<?php echo $respuesta_45; ?>" size="8">
             de aplicación, 
-            en lugar de 
-            <input type="text" name="respuesta_46" value="<?php echo $respuesta_46; ?>" size="12">
-            por 
-            <input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="8">
+              
+            <input type="text" name="respuesta_46" value="<?php echo $respuesta_46; ?>" size="23">
+              
+            <input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="6">
             e 
             <input type="text" name="respuesta_48" value="<?php echo $respuesta_48; ?>" size="18">
             .
             </li>
              
             <li>
-            No hay control sobre el 
-            <input type="text" name="respuesta_49" value="<?php echo $respuesta_49; ?>" size="8">
-            y la 
-            <input type="text" name="respuesta_50" value="<?php echo $respuesta_50; ?>" size="8">
-            de los datos más allá del
+             
+            <input type="text" name="respuesta_49" value="<?php echo $respuesta_49; ?>" size="26">
+              
+            <input type="text" name="respuesta_50" value="<?php echo $respuesta_50; ?>" size="35">
+              del
             que imponen los 
             <input type="text" name="respuesta_51" value="<?php echo $respuesta_51; ?>" size="8">
             de aplicación.
@@ -1748,10 +1725,14 @@ function ocultarMensaje4() {
             <input type="text" name="respuesta_52" value="<?php echo $respuesta_52; ?>" size="14">
             y el 
             <input type="text" name="respuesta_53" value="<?php echo $respuesta_53; ?>" size="32">
-            (DBMS, por sus siglas en inglés).
+            (
+                <input type="text" name="respuesta_55" value="<?php echo $respuesta_55; ?>" size="5">
+                 , por sus siglas en inglés).
 
             En esta sección, proporcionamos una definición más formal de estos términos y examinamos 
-            los componentes que podríamos esperar en un entorno de DBMS.
+            los componentes que podríamos esperar en un entorno de 
+            <input type="text"  value="<?php echo $respuesta_55; ?>" size="5" readonly>
+             .
             <br><br>
             <button type="submit">Enviar</button>
             <?php echo $verificar_44 ?> 
@@ -1764,15 +1745,16 @@ function ocultarMensaje4() {
             <?php echo $verificar_51 ?>
             <?php echo $verificar_52 ?>
             <?php echo $verificar_53 ?>
+            <?php echo $verificar_55 ?> 
             <br><br>
             <strong>Base de datos</strong>
-            Una 
-            <input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>" size="8">
-            <input type="text" name="respuesta_55" value="<?php echo $respuesta_55; ?>" size="8">
-            de datos 
-            <input type="text" name="respuesta_56" value="<?php echo $respuesta_56; ?>" size="8">
-            relacionados y su 
-            <input type="text" name="respuesta_57" value="<?php echo $respuesta_57; ?>" size="8">
+              
+            <input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>" size="31">
+             
+             
+            <input type="text" name="respuesta_56" value="<?php echo $respuesta_56; ?>" size="21">
+                
+            <input type="text" name="respuesta_57" value="<?php echo $respuesta_57; ?>" size="11">
             , diseñada para            
             <input type="text" name="respuesta_58" value="<?php echo $respuesta_58; ?>" size="8">
             las necesidades de 
@@ -1781,29 +1763,29 @@ function ocultarMensaje4() {
             <br>
             <button type="submit">Enviar</button>
             <?php echo $verificar_54 ?>
-            <?php echo $verificar_55 ?>
             <?php echo $verificar_56 ?>
             <?php echo $verificar_57 ?>
             <?php echo $verificar_58 ?>
             <?php echo $verificar_59 ?>
-    </form>
+ 
 </div>
 
 
 
 
 <div class="seccion derecha">
-    <form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-    <p>
-
-    La base de datos ya no es propiedad de un solo departamento, sino que es un recurso corporativo compartido.
-    La base de datos no solo almacena los datos operativos de la organización, sino también una descripción
+     <p>
+    <input type="text" name="respuesta_60_0" value="<?php echo $respuesta_60_0; ?>" size="56">
+     , sino que es un recurso corporativo compartido.
+    La base de datos 
+    <input type="text" name="respuesta_60_2" value="<?php echo $respuesta_60_2; ?>" size="51">
+     , sino también una descripción
     de estos datos. Por esta razón, una base de datos también se define como una 
-    <input type="text" name="respuesta_60_0" value="<?php echo $respuesta_60_0; ?>" size="10">
-    <input type="text" name="respuesta_60_1" value="<?php echo $respuesta_60_1; ?>" size="15">
+     
+    <input type="text" name="respuesta_60_1" value="<?php echo $respuesta_60_1; ?>" size="23">
     de 
-    <input type="text" name="respuesta_60_2" value="<?php echo $respuesta_60_2; ?>" size="10">
-    <input type="text" name="respuesta_60_3" value="<?php echo $respuesta_60_3; ?>" size="10">    
+     
+    <input type="text" name="respuesta_60_3" value="<?php echo $respuesta_60_3; ?>" size="15">    
     . La descripción de los datos se conoce como el 
     <input type="text" name="respuesta_60_4" value="<?php echo $respuesta_60_4; ?>" size="18">    
     (o 
@@ -1868,16 +1850,171 @@ function ocultarMensaje4() {
     <?php echo $verificar_64_2 ?>
     <?php echo $verificar_65 ?>
     <?php echo $verificar_66 ?>
+
+    <button onmousedown="mostrarMensaje2()" onmouseup="ocultarMensaje2()">Ayuda</button>
+    <div id="mensaje2" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
+         <h5>🔷 DDL (Data Definition Language)</h5>
+    <p>
+        Se usa para <strong>definir o modificar la estructura</strong> de la base de datos
+        (tablas, esquemas, restricciones, etc.).
+    </p>
+
+    <h5>📌 CREATE</h5>
+    <p>Crear una tabla</p>
+    <pre><code>
+CREATE TABLE Estudiante (
+    id_estudiante INT PRIMARY KEY,
+    nombre VARCHAR(50),
+    edad INT,
+    carrera VARCHAR(50)
+);
+    </code></pre>
+
+    <hr>
+
+    <h5>📌 ALTER</h5>
+    <p>Modificar la estructura de una tabla</p>
+    <pre><code>
+ALTER TABLE Estudiante
+ADD email VARCHAR(100);
+    </code></pre>
+
+    <hr>
+
+    <h5>📌 DROP</h5>
+    <p>Eliminar una tabla completamente</p>
+    <pre><code>
+DROP TABLE Estudiante;
+    </code></pre>
+
+    <hr>
+
+    
+    <hr>
+
+    <h5>🔷 DML (Data Manipulation Language)</h5>
+    <p>
+        Se usa para <strong>manipular los datos</strong> almacenados en las tablas.
+    </p>
+
+    <hr>
+
+    <h5>📌 INSERT</h5>
+    <p>Insertar registros</p>
+    <pre><code>
+INSERT INTO Estudiante (id_estudiante, nombre, edad, carrera)
+VALUES (1, 'Luis', 20, 'Ingeniería de Sistemas');
+    </code></pre>
+
+    <hr>
+
+    <h5>📌 SELECT</h5>
+    <p>Consultar datos</p>
+    <pre><code>
+SELECT nombre, carrera
+FROM Estudiante
+WHERE edad > 18;
+    </code></pre>
+
+    <hr>
+
+    <h5>📌 UPDATE</h5>
+    <p>Actualizar registros existentes</p>
+    <pre><code>
+UPDATE Estudiante
+SET edad = 21
+WHERE id_estudiante = 1;
+    </code></pre>
+
+    <hr>
+
+    <h5>📌 DELETE</h5>
+    <p>Eliminar registros</p>
+    <pre><code>
+DELETE FROM Estudiante
+WHERE id_estudiante = 1;
+    </code></pre>
+
+    <hr>
+
+    <h5>🔑 Diferencia clave (resumen rápido)</h5>
+
+    <table border="1" cellpadding="6" cellspacing="0">
+        <thead>
+            <tr>
+                <th>DDL</th>
+                <th>DML</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Define la estructura</td>
+                <td>Manipula los datos</td>
+            </tr>
+            <tr>
+                <td>CREATE, ALTER, DROP</td>
+                <td>INSERT, SELECT, UPDATE, DELETE</td>
+            </tr>
+            <tr>
+                <td>Cambios permanentes</td>
+                <td>Cambios sobre registros</td>
+            </tr>
+            <tr>
+                <td>No usa WHERE</td>
+                <td>Usa WHERE</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+
+
+
+
+    <button onmousedown="mostrarMensaje3()" onmouseup="ocultarMensaje3()">Ayuda</button>
+    <div id="mensaje3" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
+
+        <h5>DBMS, DDL y DML</h5>
+
+    <p>
+        Un <strong>DBMS (Database Management System)</strong> es el
+        <strong>software</strong> que gestiona la base de datos.
+        Dentro de él <strong>se soportan varios lenguajes</strong>, entre ellos:
+    </p>
+
+    <ul>
+        <li><strong>DDL (Data Definition Language)</strong></li>
+        <li><strong>DML (Data Manipulation Language)</strong></li>
+    </ul>
+
+    <p>Es decir:</p>
+
+    <blockquote>
+        <strong>
+            El DBMS <em>incluye</em> o <em>soporta</em> DDL y DML,
+            pero <u>no se divide</u> en ellos.
+        </strong>
+    </blockquote>
+
+    <hr>
+
+    <h5>📌 Relación correcta (esquema conceptual)</h5>
+
+    <pre><code>
+DBMS
+ ├── DDL  → Definición de la estructura
+ ├── DML  → Manipulación de los datos
+ ├── DCL  → Control de permisos (GRANT, REVOKE)
+ └── TCL  → Control de transacciones (COMMIT, ROLLBACK)
+    </code></pre>
+    </div>
     <hr>
     <br>
         <strong>
-            Sistema de gestion de base de datos</strong>
-        DBMS: Un 
-        <input type="text" name="respuesta_67" value="<?php echo $respuesta_67; ?>" size="8">
-        de software que 
-        <input type="text" name="respuesta_68" value="<?php echo $respuesta_68; ?>" size="8">
-        a los 
-        <input type="text" name="respuesta_69" value="<?php echo $respuesta_69; ?>" size="8">
+            <input type="text" name="respuesta_67" value="<?php echo $respuesta_67; ?>" size="31">
+             </strong>
+        (<input type="text" name="respuesta_68" value="<?php echo $respuesta_68; ?>" size="4">):    
+        <input type="text" name="respuesta_69" value="<?php echo $respuesta_69; ?>" size="44">
         <input type="text" name="respuesta_70" value="<?php echo $respuesta_70; ?>" size="8">,
         <input type="text" name="respuesta_71" value="<?php echo $respuesta_71; ?>" size="8">, 
         <input type="text" name="respuesta_72" value="<?php echo $respuesta_72; ?>" size="8">,
@@ -1987,8 +2124,15 @@ function ocultarMensaje4() {
         <?php echo $verificar_83 ?>
         <?php echo $verificar_84 ?>
         <?php echo $verificar_85 ?>
-    </form>
+        <hr>
+    <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
+    <br>
+    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
+    <button type="submit"   >Mostrar Solución</button>
+     <!-- #endregion -->
 </div>
+</div>
+</form>
  <div class="centered-container">
     <a
         name="siguiente"

@@ -399,8 +399,8 @@ function ocultarMensaje4() {
     están los requerimientos, y la gestión de la ingeniería puede usar el estado de los requerimientos para evaluar la 
     finalización del proyecto.</p>
 
-
  
+
 
 
     </form>
@@ -460,6 +460,38 @@ function ocultarMensaje4() {
      usarse (ver el área de conocimiento de Proceso de Ingeniería de Software). Esta área de conocimiento no 
      discute más los requerimientos del proyecto de software.</p>
 
+
+     
+     <button onmousedown="mostrarMensaje()" onmouseup="ocultarMensaje()">Ayuda</button>
+    <div id="mensaje" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
+        <h3>Requerimientos del Proyecto</h3>
+<p>Son restricciones relacionadas con la forma en que se desarrolla el software: metodología, presupuesto, tiempo, recursos o normas que debe seguir el equipo de trabajo. Afectan al proceso, no al comportamiento del sistema final.</p>
+<p><strong>Ejemplos:</strong></p>
+<p>• “El proyecto debe entregarse en 3 meses.”<br>
+• “Debe usarse metodología Scrum.”<br>
+• “El equipo debe trabajar con Java.”<br>
+• “El presupuesto máximo es de 20 millones.”</p>
+
+
+<h3>Requerimientos No Funcionales</h3>
+<p>Son restricciones sobre las cualidades del software terminado: rendimiento, usabilidad, seguridad, disponibilidad, confiabilidad, etc. Afectan directamente al producto final y a los usuarios.</p>
+<p><strong>Ejemplos:</strong></p>
+<p>• “El sistema debe responder en menos de 2 segundos.”<br>
+• “Debe tener 99.9% de disponibilidad.”<br>
+• “Debe ser accesible para personas con discapacidad.”<br>
+• “La información debe estar cifrada con AES-256.”</p>
+
+
+<h3>Diferencia fundamental</h3>
+<p><strong>Requerimientos del proyecto:</strong> limitan cómo se desarrolla.<br>
+<strong>Requerimientos no funcionales:</strong> limitan cómo debe comportarse el sistema.</p>
+
+
+<h3>Explicación corta</h3>
+<p>Proyecto = restricciones del proceso.<br>
+Producto (no funcionales) = restricciones del comportamiento del software.</p>
+    </div>
+    <br>
     <img src="../../../../img/guia_49.png" alt="" width="600">
      
     </form>

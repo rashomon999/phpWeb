@@ -32,6 +32,9 @@
         <a class="btn" href=".\Gson\index.php">Gson</a>
         <a class="btn" href=".\Reader\index.php">Reader</a>
         <a class="btn" href=".\Problema\index.php">Problema</a>
+        <a class="btn" href=".\Generics\index.php">Generics</a> 
+        <a class="btn" href=".\SQL\index.php">SQL</a>
+        <a class="btn" href=".\TCP_UDP\index.php">TCP/UDP</a>
     </div>
 </body>
 </html>

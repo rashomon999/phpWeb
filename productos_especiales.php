@@ -10,6 +10,11 @@ $listaLibros = $sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
 $linksEspeciales = [
     "Estadistica/Menu.php", 
     "fisica/Menu.php",
+    "transhumantes/Menu.php",
+    "Trading/Menu.php",
+    "contabilidad/Menu.php",
+    "operaciones_basicas/index.php",
+    "Django/Menu.php",
     // Añade más rutas según necesites
 ];
 

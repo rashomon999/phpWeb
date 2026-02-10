@@ -323,37 +323,37 @@ function ocultarMensaje4() {
 <div class="seccion izquierda">
     <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
 
-    <h3>1.10. Requisitos Derivados</h3>
-    <p>En la práctica, los requisitos pueden ser sensibles al contexto y depender de la perspectiva. Un actor externo 
-    puede imponer un requisito de alcance, y este sería un requisito para todo el proyecto, incluso si ese 
+    <h3>1.10. Requerimientos Derivados</h3>
+    <p>En la práctica, los requerimientos pueden ser sensibles al contexto y depender de la perspectiva. Un interesado externo 
+    puede imponer un requerimiento de alcance, y este sería un requerimiento para todo el proyecto, incluso si ese 
     proyecto involucra a cientos de ingenieros de software. La decisión de un arquitecto de usar un estilo de 
-    arquitectura de tuberías y filtros no sería un requisito desde la perspectiva de los actores generales del 
+    arquitectura de tuberías y filtros no sería un requerimiento desde la perspectiva de los interesados generales del 
     proyecto, sino una decisión de diseño. Pero esa misma decisión, vista desde la perspectiva de un subequipo 
-    responsable de construir un filtro en particular, se consideraría un requisito.</p>
+    responsable de construir un filtro en particular, se consideraría un requerimiento.</p>
 
-    <p>La industria aeroespacial ha usado durante mucho tiempo el término requisito derivado para referirse a un 
-    requisito que no fue planteado por un actor externo al proyecto general, sino que fue impuesto dentro del 
+    <p>La industria aeroespacial ha usado durante mucho tiempo el término requerimiento derivado para referirse a un 
+    requerimiento que no fue planteado por un interesado externo al proyecto general, sino que fue impuesto dentro del 
     equipo de desarrollo más grande. La decisión del arquitecto sobre tuberías y filtros encaja con esta 
-    definición. Esa elección sería vista como una decisión de diseño desde el punto de vista de los actores externos, 
-    pero como un requisito para los subequipos responsables de desarrollar cada filtro. (Ver también [9, c4].)</p>
+    definición. Esa elección sería vista como una decisión de diseño desde el punto de vista de los interesados externos, 
+    pero como un requerimientos para los subequipos responsables de desarrollar cada filtro. (Ver también [9, c4].)</p>
 
-    <h3>1.11. Actividades de Requisitos de Software [1*, c1pp15-18] [2*, s4.2]</h3>
-    <p>La Figura 1.3 muestra las actividades de desarrollo y gestión de requisitos. El desarrollo de requisitos, en 
+    <h3>1.11. Actividades de Requerimientos de Software [1*, c1pp15-18] [2*, s4.2]</h3>
+    <p>La Figura 1.3 muestra las actividades de desarrollo y gestión de requerimientos. El desarrollo de requerimientos, en 
     su conjunto, puede entenderse como “llegar a un acuerdo sobre qué software se va a construir”. En cambio, la 
-    gestión de requisitos puede considerarse como “mantener ese acuerdo a lo largo del tiempo”. Cada actividad se 
-    presenta en esta área de conocimiento. Las actividades de desarrollo de requisitos se presentan como temas separados, 
-    mientras que la gestión de requisitos se presenta como un solo tema. (Ver también [5, c1] [6, 2].)</p>
+    gestión de requerimientos puede considerarse como “mantener ese acuerdo a lo largo del tiempo”. Cada actividad se 
+    presenta en esta área de conocimiento. Las actividades de desarrollo de requerimientos se presentan como temas separados, 
+    mientras que la gestión de requerimientos se presenta como un solo tema. (Ver también [5, c1] [6, 2].)</p>
 
-    <h2>2. Elicitación de Requisitos [1*, c6-7] [2*, s4.3]</h2>
-    <p>El objetivo de la elicitación de requisitos es hacer emerger los requisitos candidatos. También se la denomina 
-    captura de requisitos, descubrimiento de requisitos o adquisición de requisitos. Como se indicó anteriormente, 
-    uno de los problemas en el trabajo de requisitos en proyectos de software del mundo real es la incompletitud. 
-    Esto puede ser el resultado de una elicitación inadecuada. Aunque no hay garantía de que un conjunto de requisitos 
+    <h2>2. Elicitación de Requerimientos [1*, c6-7] [2*, s4.3]</h2>
+    <p>El objetivo de la elicitación de requerimientos es hacer emerger los requerimientos candidatos. También se la denomina 
+    captura de requerimientos, descubrimiento de requerimientos o adquisición de requerimientos. Como se indicó anteriormente, 
+    uno de los problemas en el trabajo de requerimientos en proyectos de software del mundo real es la incompletitud. 
+    Esto puede ser el resultado de una elicitación inadecuada. Aunque no hay garantía de que un conjunto de requerimientos 
     sea completo, una elicitación bien ejecutada ayuda a minimizar la incompletitud. (Ver también [5, c2-3] [6, c3-7].)</p>
 
-    <h3>2.1. Fuentes de Requisitos [1*, c6] [2*, s4.3]</h3>
-    <p>Los requisitos provienen —pueden ser elicitados— de muchas fuentes diferentes. Todas las fuentes 
-    potenciales de requisitos deben ser identificadas y evaluadas. Un actor puede definirse como cualquier 
+    <h3>2.1. Fuentes de Requerimientos [1*, c6] [2*, s4.3]</h3>
+    <p>Los requerimientos provienen —pueden ser elicitados— de muchas fuentes diferentes. Todas las fuentes 
+    potenciales de requerimientos deben ser identificadas y evaluadas. Un actor puede definirse como cualquier 
     persona, grupo u organización que:</p>
     <ul>
     <li>esté activamente involucrado en el proyecto;</li>
@@ -383,14 +383,14 @@ function ocultarMensaje4() {
     información adicional importante.</p>
 
     <p>Muchos proyectos se benefician de realizar un análisis de actores para identificar tantas clases importantes 
-    de actores como sea posible. Esto reduce la posibilidad de que los requisitos estén sesgados hacia los actores 
+    de actores como sea posible. Esto reduce la posibilidad de que los requerimientos estén sesgados hacia los actores 
     mejor representados y en detrimento de los menos representados. El análisis de actores también puede informar 
-    los procesos de negociación y resolución de conflictos cuando los requisitos de una clase de actores entran en 
+    los procesos de negociación y resolución de conflictos cuando los requerimientos de una clase de actores entran en 
     conflicto con los de otra. (Ver también [5, c3] [6, c3].)</p>
 
-    <p>Los requisitos no se limitan a provenir solo de personas. Otras fuentes de requisitos no humanas pueden incluir:</p>
+    <p>Los requerimientos no se limitan a provenir solo de personas. Otras fuentes de requerimientos no humanas pueden incluir:</p>
     <ul>
-    <li>documentación como requisitos de versiones anteriores, declaraciones de misión, conceptos de operación;</li>
+    <li>documentación como requerimientos de versiones anteriores, declaraciones de misión, conceptos de operación;</li>
     <li>otros sistemas;</li>
     <li>contexto empresarial más amplio, incluyendo políticas y procesos organizacionales;</li>
     <li>entorno computacional.</li>
@@ -406,14 +406,14 @@ function ocultarMensaje4() {
     <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
    
     <h3>2.2. Técnicas Comunes de Elicitación de Requisitos [1*, c7] [2*, s4.3]</h3>
-    <p>Existe una amplia variedad de técnicas que pueden usarse para elicitación de requisitos de los actores. 
+    <p>Existe una amplia variedad de técnicas que pueden usarse para elicitación de requerimientos de los actores. 
     Algunas técnicas funcionan mejor con ciertas clases de actores que con otras. Las técnicas comunes de 
     elicitación con actores incluyen las siguientes:</p>
     
     <ul>
     <li>entrevistas;</li>
     <li>reuniones, posiblemente incluyendo lluvias de ideas (brainstorming);</li>
-    <li>desarrollo conjunto de aplicaciones (JAD), planificación conjunta de requisitos (JRP) y otros talleres facilitados;</li>
+    <li>desarrollo conjunto de aplicaciones (JAD), planificación conjunta de requerimientos (JRP) y otros talleres facilitados;</li>
     <li>análisis de protocolos;</li>
     <li>grupos focales (focus groups);</li>
     <li>cuestionarios y encuestas de mercado;</li>
@@ -425,10 +425,10 @@ function ocultarMensaje4() {
     pueden tener dificultades para describir sus tareas, omitir información importante o no estar dispuestos o 
     ser incapaces de cooperar. La elicitación no es una actividad pasiva. Incluso si se dispone de actores 
     cooperativos y elocuentes, el ingeniero de software debe trabajar arduamente para obtener la información 
-    correcta. Muchos requisitos de producto son tácitos o solo pueden encontrarse en información aún no 
+    correcta. Muchos requerimientos de producto son tácitos o solo pueden encontrarse en información aún no 
     recopilada.</p>
 
-    <p>Los requisitos también pueden ser elicitados desde fuentes distintas a los actores. Estas fuentes 
+    <p>Los requerimientos también pueden ser elicitados desde fuentes distintas a los actores. Estas fuentes 
     y técnicas incluyen:</p>
 
     <ul>
@@ -446,7 +446,7 @@ function ocultarMensaje4() {
     <li>pensamiento de diseño (empatizar, definir, idear, prototipar, probar);</li>
     <li>ISO/IEC 25010: “Ingeniería de sistemas y software – Requisitos de calidad y evaluación (SQuaRE) – Modelos de 
     calidad del sistema y del software”;</li>
-    <li>requisitos de seguridad, como se discute en el área de conocimiento de Seguridad;</li>
+    <li>requerimientos de seguridad, como se discute en el área de conocimiento de Seguridad;</li>
     <li>normas y regulaciones aplicables.</li>
     </ul>
 
@@ -454,15 +454,15 @@ function ocultarMensaje4() {
 
 
     <h3>3. Análisis de Requisitos [1*, c8-9]</h3>
-    <p>Es poco probable que los requisitos se obtengan en su forma final. Normalmente se necesita una 
-    investigación adicional para revelar los requisitos verdaderos y completos sugeridos por la información 
-    originalmente elicitada. El análisis de requisitos ayuda a los desarrolladores de software a comprender 
-    el significado y las implicaciones de los requisitos candidatos, tanto individualmente como en el contexto 
-    del conjunto completo de requisitos.</p>
+    <p>Es poco probable que los requerimientos se obtengan en su forma final. Normalmente se necesita una 
+    investigación adicional para revelar los requerimientos verdaderos y completos sugeridos por la información 
+    originalmente elicitada. El análisis de requerimientos ayuda a los desarrolladores de software a comprender 
+    el significado y las implicaciones de los requerimientos candidatos, tanto individualmente como en el contexto 
+    del conjunto completo de requerimientos.</p>
 
     <h4>3.1. Análisis Básico de Requisitos [1*, c8-9]</h4>
-    <p>La siguiente lista de propiedades deseables de los requisitos puede guiar el análisis básico. El ingeniero 
-    de software busca establecer cualquiera de estas propiedades que aún no se cumplan. Cada requisito debe:</p>
+    <p>La siguiente lista de propiedades deseables de los requerimientos puede guiar el análisis básico. El ingeniero 
+    de software busca establecer cualquiera de estas propiedades que aún no se cumplan. Cada requerimiento debe:</p>
     <ul>
     <li>ser inequívoco (interpretado de una sola manera);</li>
     <li>ser comprobable (cuantificado), es decir, que se pueda demostrar claramente el cumplimiento o 
@@ -475,20 +475,20 @@ function ocultarMensaje4() {
     <li>ser aceptable para todos los interesados.</li>
     </ul>
 
-    <p>El conjunto completo de requisitos debe ser:</p>
+    <p>El conjunto completo de requerimientos debe ser:</p>
     <ul>
-    <li>completo — Los requisitos abordan adecuadamente las condiciones límite, las condiciones excepcionales y las 
+    <li>completo — Los requerimientos abordan adecuadamente las condiciones límite, las condiciones excepcionales y las 
     necesidades de seguridad;</li>
     <li>conciso — No contiene contenido innecesario;</li>
-    <li>internamente consistente — Ningún requisito entra en conflicto con otro;</li>
-    <li>externamente consistente — Ningún requisito entra en conflicto con el material fuente;</li>
+    <li>internamente consistente — Ningún requerimiento entra en conflicto con otro;</li>
+    <li>externamente consistente — Ningún requerimiento entra en conflicto con el material fuente;</li>
     <li>factible — Es posible crear una solución viable y rentable dentro de las restricciones de costo, cronograma, 
     personal, entre otras.</li>
     </ul>
 
     <p>En algunos casos, una declaración elicitada representa una solución a implementar en lugar del verdadero 
     problema a resolver. Esto conlleva el riesgo de implementar una solución subóptima. La técnica de 
-    los “5 porqués” (por ejemplo, [3*, c4]) consiste en preguntar repetidamente: “¿Por qué este es el requisito?” 
+    los “5 porqués” (por ejemplo, [3*, c4]) consiste en preguntar repetidamente: “¿Por qué este es el requerimiento?” 
     para converger hacia el verdadero problema. La repetición se detiene cuando la respuesta es: “Si eso no se hace, 
     entonces el problema del interesado no se resuelve”. A menudo se llega al verdadero problema en dos o tres ciclos, 
     pero la técnica se llama “5 porqués” para incentivar a los ingenieros a profundizar lo más posible.</p>

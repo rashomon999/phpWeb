@@ -344,7 +344,9 @@ if ($_POST) {
   
     // Verificar la respuesta de la octava pregunta
     $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-    if ($respuesta_19 === 'una representacion documentada') {  
+    if ($respuesta_19 === 'una representacion documentada'
+    || $respuesta_19 === 'Una representacion documentada'
+    ) {  
         $verificar_19 = "correcto";
     } elseif ($respuesta_19 === '') {
         $verificar_19 = '';
@@ -682,7 +684,7 @@ if ($respuesta_54 === 'muy complejos') {
 }
 
  $respuesta_55 = isset($_POST['respuesta_55']) ? $_POST['respuesta_55'] : '';
-if ($respuesta_55 === 'Por extension') { 
+if ($respuesta_55 === 'Por extension' || $respuesta_55 === 'por extension') { 
     $verificar_55 = "correcto";
 } elseif ($respuesta_55 === '') {
     $verificar_55 = '';
@@ -1810,7 +1812,7 @@ function ocultarMensaje4() {
       y 
     <input type="text" name="respuesta_70" value="<?php echo $respuesta_70; ?>" size="29">
      . Sin embargo, 
-    <input type="text" name="respuesta_71" value="<?php echo $respuesta_71; ?>" size="9">
+    <input type="text" name="respuesta_71" value="<?php echo $respuesta_71; ?>" size="15">
      , como 
     <input type="text" name="respuesta_72" value="<?php echo $respuesta_72; ?>" size="20">
       y, en 
@@ -1925,7 +1927,7 @@ function ocultarMensaje4() {
      .</p>
 
     <p>
-    <input type="text" name="respuesta_102" value="<?php echo $respuesta_102; ?>" size="27">    
+    <input type="text" name="respuesta_102" value="<?php echo $respuesta_102; ?>" size="40">    
       pueden 
     <input type="text" name="respuesta_103" value="<?php echo $respuesta_103; ?>" size="9">
       en un 
@@ -1960,6 +1962,39 @@ function ocultarMensaje4() {
      (ver el área de conocimiento de Proceso de Ingeniería de Software). Esta área de conocimiento no 
     discute más los requerimientos del proyecto de software.</p>
 
+
+
+        <button onmousedown="mostrarMensaje()" onmouseup="ocultarMensaje()">Ayuda</button>
+    <div id="mensaje" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
+        <h3>Requerimientos del Proyecto</h3>
+<p>Son restricciones relacionadas con la forma en que se desarrolla el software: metodología, presupuesto, tiempo, recursos o normas que debe seguir el equipo de trabajo. Afectan al proceso, no al comportamiento del sistema final.</p>
+<p><strong>Ejemplos:</strong></p>
+<p>• “El proyecto debe entregarse en 3 meses.”<br>
+• “Debe usarse metodología Scrum.”<br>
+• “El equipo debe trabajar con Java.”<br>
+• “El presupuesto máximo es de 20 millones.”</p>
+
+
+<h3>Requerimientos No Funcionales</h3>
+<p>Son restricciones sobre las cualidades del software terminado: rendimiento, usabilidad, seguridad, disponibilidad, confiabilidad, etc. Afectan directamente al producto final y a los usuarios.</p>
+<p><strong>Ejemplos:</strong></p>
+<p>• “El sistema debe responder en menos de 2 segundos.”<br>
+• “Debe tener 99.9% de disponibilidad.”<br>
+• “Debe ser accesible para personas con discapacidad.”<br>
+• “La información debe estar cifrada con AES-256.”</p>
+
+
+<h3>Diferencia fundamental</h3>
+<p><strong>Requerimientos del proyecto:</strong> limitan cómo se desarrolla.<br>
+<strong>Requerimientos no funcionales:</strong> limitan cómo debe comportarse el sistema.</p>
+
+
+<h3>Explicación corta</h3>
+<p>Proyecto = restricciones del proceso.<br>
+Producto (no funcionales) = restricciones del comportamiento del software.</p>
+    </div>
+
+    
     <button type="submit">Enviar</button>
     <?php echo $verificar_77 ?>
 <?php echo $verificar_78 ?>
@@ -2006,10 +2041,13 @@ function ocultarMensaje4() {
 <?php echo $verificar_116 ?>
 <?php echo $verificar_117 ?>
 
+
     <hr>
 
     <img src="../../../../img/guia_49.png" alt="" width="600">
 
+
+ 
     <hr>
     <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
     <br>

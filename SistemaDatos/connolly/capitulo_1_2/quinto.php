@@ -1,94 +1,120 @@
 <?php
  
- 
-$respuesta_1 = ''; $respuesta_2 = ''; $respuesta_3 = ''; $respuesta_3_2 = ''; $respuesta_4 = ''; $respuesta_5 = ''; 
-$respuesta_6 = ''; $respuesta_7 = ''; $respuesta_8 = ''; $respuesta_9 = '';  $respuesta_10 = '';
-$respuesta_11 = ''; $respuesta_12 = ''; $respuesta_13 = ''; $respuesta_14 = ''; $respuesta_15 = '';
-$respuesta_16 = ''; $respuesta_17 = ''; $respuesta_18 = ''; $respuesta_19 = ''; $respuesta_20 = '';
-$respuesta_21 = ''; $respuesta_22 = '';  $respuesta_23 = '';  $respuesta_24 = '';
-$respuesta_25 = ''; $respuesta_26 = ''; $respuesta_27 = ''; $respuesta_28 = ''; $respuesta_29 = '';
-$respuesta_30 = ''; $respuesta_31 = ''; $respuesta_32 = ''; $respuesta_33 = ''; $respuesta_34 = ''; $respuesta_35 = ''; $respuesta_36 = ''; $respuesta_37 = ''; $respuesta_38 = '';
-$respuesta_39 = ''; $respuesta_40 = ''; $respuesta_41 = ''; $respuesta_42 = ''; $respuesta_43 = '';
-$respuesta_44 = ''; $respuesta_45 = ''; $respuesta_46 = ''; $respuesta_47 = ''; $respuesta_48 = '';
-$respuesta_49 = ''; $respuesta_50 = ''; $respuesta_51 = ''; $respuesta_52 = ''; $respuesta_53 = '';
-$respuesta_54 = ''; $respuesta_55 = ''; $respuesta_56 = '';
-$respuesta_57 = ''; $respuesta_58 = ''; $respuesta_59 = ''; $respuesta_60 = '';
-$respuesta_61 = '';$respuesta_62 = '';$respuesta_63 = '';$respuesta_64 = '';
-$respuesta_65 = '';$respuesta_66 = '';$respuesta_67 = '';$respuesta_68 = '';
-$respuesta_69 = '';$respuesta_70 = '';$respuesta_71 = '';$respuesta_72 = '';
-$respuesta_73 = '';$respuesta_74 = '';$respuesta_75 = '';$respuesta_76 = '';
-$respuesta_77 = '';$respuesta_78 = '';$respuesta_79 = '';$respuesta_80 = '';
-$respuesta_81 = '';$respuesta_82 = '';$respuesta_83 = '';$respuesta_84 = '';
-$respuesta_85 = '';$respuesta_86 = '';$respuesta_87 = '';$respuesta_88 = ''; $respuesta_89 = '';
-$respuesta_90 = '';
-$respuesta_91 = '';
-$respuesta_92 = '';
-$respuesta_93 = '';
-$respuesta_94 = '';
-$respuesta_95 = '';
-$respuesta_96 = '';
-$respuesta_97 = '';
-$respuesta_98 = '';
-$respuesta_99 = '';
-$respuesta_100 = '';
-$respuesta_101 = '';
-$respuesta_102 = '';
-$respuesta_103 = '';
-$respuesta_104 = '';
-$respuesta_105 = '';
-$respuesta_106 = '';
-$respuesta_107 = '';
-$respuesta_108 = '';
-$respuesta_109 = '';
-$respuesta_110 = '';
-
-
+for ($i = 1; $i <= 230; $i++) {
+    ${"respuesta_" . $i} = '';
+}
  
 
-$verificar_1 = ''; $verificar_2 = ''; $verificar_3 = '';  $verificar_3_2 = ''; $verificar_4 = ''; $verificar_5 = ''; 
-$verificar_6 = ''; $verificar_7 = '';  $verificar_8 = ''; $verificar_9 = ''; $verificar_10 = ''; 
-$verificar_11 = ''; $verificar_12 = ''; $verificar_13 = ''; $verificar_14 = ''; $verificar_15 = ''; 
-$verificar_16 = '';  $verificar_17 = ''; $verificar_18 = ''; $verificar_19 = ''; $verificar_20 = '';  
-$verificar_21 = '';  $verificar_22 = '';  $verificar_23 = '';   $verificar_24 = '';   $verificar_25 = '';  
-$verificar_26 = '';  $verificar_27= ''; $verificar_28= '';  $verificar_29= '';  $verificar_30 = ''; 
-$verificar_31 = ''; $verificar_32 = ''; $verificar_33 = ''; 
-$verificar_34 = ''; $verificar_35 = ''; $verificar_36 = ''; $verificar_37 = ''; $verificar_38 = '';
-$verificar_39 = ''; $verificar_40 = ''; $verificar_41 = ''; $verificar_42 = ''; $verificar_43 = '';
-$verificar_44 = ''; $verificar_45 = ''; $verificar_46 = ''; $verificar_47 = ''; $verificar_48 = '';
-$verificar_49 = ''; $verificar_50 = ''; $verificar_51 = ''; $verificar_52 = ''; $verificar_53 = '';
-$verificar_54 = ''; $verificar_55 = '';
-$verificar_56 = ''; $verificar_57 = ''; $verificar_58 = ''; $verificar_59 = ''; $verificar_60 = ''; 
-$verificar_61 = ''; $verificar_62 = ''; $verificar_63 = ''; $verificar_64 = ''; $verificar_65 = '';
- $verificar_66 = ''; $verificar_67 = ''; $verificar_68 = ''; $verificar_69 = ''; $verificar_70 = '';
-  $verificar_71 = ''; $verificar_72 = ''; $verificar_73 = ''; $verificar_74 = ''; $verificar_75 = '';
-   $verificar_76 = ''; $verificar_77 = ''; $verificar_78 = ''; $verificar_79 = ''; $verificar_80 = '';
-    $verificar_81 = ''; $verificar_82 = ''; $verificar_83 = ''; $verificar_84 = ''; $verificar_85 = '';
-     $verificar_86 = ''; $verificar_87 = ''; $verificar_88 = '';
-     $verificar_89 = '';
-     $verificar_90 = '';
-     $verificar_91 = '';
-     $verificar_92 = '';
-     $verificar_93 = '';
-     $verificar_94 = '';
-     $verificar_95 = '';
-     $verificar_96 = '';
-     $verificar_97 = '';
-     $verificar_98 = '';
-     $verificar_99 = '';
-     $verificar_100 = '';
-     $verificar_101 = '';
-     $verificar_102 = '';
-     $verificar_103 = '';
-     $verificar_104 = '';
-     $verificar_105 = '';
-     $verificar_106 = '';
-     $verificar_107 = '';
-     $verificar_108 = '';
-     $verificar_109 = '';
-     $verificar_110 = '';
+     
+for ($i = 1; $i <= 230; $i++) {
+    ${"verificar_" . $i} = '';
+}
+
      
 
+$mostrar_solucion = ''; 
 if ($_POST) {
+    $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
+    
+    if ($mostrar_solucion === 'mostrar_solucion') {        
+ 
+                // RESPUESTAS CORRECTAS BASADAS EN LAS VALIDACIONES
+        $respuesta_1 = 'vista';
+        $respuesta_2 = 'usuarios';
+        $respuesta_3 = 'no';
+        $respuesta_4 = 'consciente';
+        $respuesta_5 = 'comunitaria';
+        $respuesta_6 = 'describe';
+        $respuesta_7 = 'relaciones';
+        $respuesta_8 = 'intermedio';
+        $respuesta_9 = 'estructura';
+        $respuesta_10 = 'DBA';
+        $respuesta_11 = 'requisitos';
+        
+        $respuesta_12 = 'datos';
+        $respuesta_13 = 'entidades';
+        $respuesta_14 = 'atributos';
+        $respuesta_15 = 'relaciones';
+        $respuesta_16 = 'restricciones';
+        $respuesta_17 = 'semantica';
+        $respuesta_18 = 'seguridad';
+        $respuesta_19 = 'integridad';
+        $respuesta_20 = 'respalda';
+        $respuesta_21 = 'no';
+        $respuesta_22 = 'detalles';
+        
+        $respuesta_23 = 'almacenamiento';
+        $respuesta_24 = 'fisica';
+        $respuesta_25 = 'describe';
+        $respuesta_26 = 'almacenan';
+        $respuesta_27 = 'fisica';
+        $respuesta_28 = 'rendimiento';
+        $respuesta_29 = 'eficiente';
+        $respuesta_30 = 'estructuras';
+        $respuesta_31 = 'organizaciones';
+        $respuesta_32 = 'almacenar';
+        $respuesta_33 = 'dispositivos';
+        
+        $respuesta_34 = 'acceso';
+        $respuesta_35 = 'espacio';
+        $respuesta_36 = 'datos';
+        $respuesta_37 = 'indices';
+        $respuesta_38 = 'Descripciones';
+        $respuesta_39 = 'resgistro';
+        $respuesta_40 = 'Ubicacion';
+        $respuesta_41 = 'registros';
+        $respuesta_42 = 'compresion';
+        $respuesta_43 = 'cifrado';
+        $respuesta_44 = 'fisico';
+        
+        $respuesta_45 = 'sistema operativo';
+        $respuesta_46 = 'no';
+        $respuesta_47 = 'descripcion';
+        $respuesta_48 = 'esquema';
+        $respuesta_49 = 'subesquemas';
+        $respuesta_50 = 'vistas';
+        $respuesta_51 = 'Describe';
+        $respuesta_52 = 'entidades';
+        $respuesta_53 = 'atributos';
+        $respuesta_54 = 'relaciones';
+        $respuesta_55 = 'restricciones';
+        
+        $respuesta_56 = 'descripcion';
+        $respuesta_57 = 'modelo';
+        $respuesta_58 = 'registros almacenados';
+        $respuesta_59 = 'metodos de representacion';
+        $respuesta_60 = 'campos de datos';
+        $respuesta_61 = 'indices';
+        $respuesta_62 = 'estructuras de almacenamiento';
+        $respuesta_63 = 'unico';
+        $respuesta_64 = 'DBMS';
+        $respuesta_65 = 'Sistema de Gestión de Bases de Datos';
+        $respuesta_66 = 'correspondencia';
+        
+        $respuesta_67 = 'mapeo';
+        $respuesta_68 = 'externo';
+        $respuesta_69 = 'conceptual';
+        $respuesta_70 = 'mapear';
+        $respuesta_71 = 'interno';
+        $respuesta_72 = 'conceptual/interno';
+        $respuesta_73 = 'registros fisicos';
+        $respuesta_74 = 'externo/conceptual';
+        $respuesta_75 = 'traduce';
+        $respuesta_76 = 'nombres';
+        $respuesta_77 = 'vista';
+        
+        $respuesta_78 = 'conceptual';
+        $respuesta_79 = 'esquema';
+        $respuesta_80 = 'diseño';
+        $respuesta_81 = 'instancia';
+        $respuesta_82 = 'intension';
+        
+        // Marcar todas como correctas
+    for ($i = 1; $i <= 122; $i++) {
+    ${"verificar_$i"} = "correcto";
+    }
+
+    } else {
     // Verificar la respuesta de la primera pregunta
    $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
    if ($respuesta_1 === 'vista') { 
@@ -1158,6 +1184,7 @@ if ($respuesta_110 === '264') {
 
 
 }
+} 
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -1619,9 +1646,9 @@ function ocultarMensaje4() {
     <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="8">              
     del espacio de 
     almacenamiento. Cubre las 
-    <input type="text" name="respuesta_30" value="<?php echo $respuesta_29; ?>" size="8">              
+    <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="8">              
     de datos y las 
-    <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="8">              
+    <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="11">              
     de archivos utilizadas 
     para 
     <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="8">              
@@ -1720,7 +1747,7 @@ function ocultarMensaje4() {
     <h2>Tipos de esquemas</h2>
     <ul>
         <li><strong>Esquema externo:</strong> Se compone de múltiples 
-        <input type="text" name="respuesta_49" value="<?php echo $respuesta_49; ?>" size="8">
+        <input type="text" name="respuesta_49" value="<?php echo $respuesta_49; ?>" size="11">
         que 
         corresponden a diferentes 
         <input type="text" name="respuesta_50" value="<?php echo $respuesta_50; ?>" size="8">
@@ -1745,11 +1772,11 @@ function ocultarMensaje4() {
         <input type="text" name="respuesta_57" value="<?php echo $respuesta_57; ?>" size="8"> 
         interno, 
         incluyendo 
-        <input type="text" name="respuesta_58" value="<?php echo $respuesta_58; ?>" size="8"> ,
-        <input type="text" name="respuesta_59" value="<?php echo $respuesta_59; ?>" size="8"> ,
-        <input type="text" name="respuesta_60" value="<?php echo $respuesta_60; ?>" size="8"> ,
+        <input type="text" name="respuesta_58" value="<?php echo $respuesta_58; ?>" size="19"> ,
+        <input type="text" name="respuesta_59" value="<?php echo $respuesta_59; ?>" size="23"> ,
+        <input type="text" name="respuesta_60" value="<?php echo $respuesta_60; ?>" size="15"> ,
         <input type="text" name="respuesta_61" value="<?php echo $respuesta_61; ?>" size="8"> y 
-        <input type="text" name="respuesta_62" value="<?php echo $respuesta_62; ?>" size="8">.
+        <input type="text" name="respuesta_62" value="<?php echo $respuesta_62; ?>" size="26">.
         registros almacenados, métodos de representación, campos de datos, índices y 
         estructuras de almacenamiento.</li>
     </ul>
@@ -1792,10 +1819,10 @@ function ocultarMensaje4() {
     <p>El <strong>
     <input type="text" name="respuesta_64" value="<?php echo $respuesta_64; ?>" size="8">    
     </strong>
-    (<input type="text" name="respuesta_65" value="<?php echo $respuesta_65; ?>" size="18">) 
+    (<input type="text" name="respuesta_65" value="<?php echo $respuesta_65; ?>" size="34">) 
      
     es responsable de la 
-    <input type="text" name="respuesta_66" value="<?php echo $respuesta_66; ?>" size="8">    
+    <input type="text" name="respuesta_66" value="<?php echo $respuesta_66; ?>" size="12">    
     (    <input type="text" name="respuesta_67" value="<?php echo $respuesta_67; ?>" size="8">    
     ) entre estos tres esquemas. 
 
@@ -1817,7 +1844,7 @@ function ocultarMensaje4() {
     
     <p>El esquema conceptual se relaciona con el esquema interno a través de un
     <strong>mapeo 
-    <input type="text" name="respuesta_72" value="<?php echo $respuesta_72; ?>" size="8">        
+    <input type="text" name="respuesta_72" value="<?php echo $respuesta_72; ?>" size="14">        
     </strong>, que permite al DBMS encontrar los
     <input type="text" name="respuesta_73" value="<?php echo $respuesta_73; ?>" size="18">        
     en el almacenamiento. A su vez, cada esquema externo se relaciona 
@@ -1924,7 +1951,11 @@ function ocultarMensaje4() {
     <?php echo $verificar_80 ?>
     <?php echo $verificar_81 ?>
     <?php echo $verificar_82 ?>
-
+        <hr>
+    <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
+    <br>
+    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
+    <button type="submit"   >Mostrar Solución</button>
     </form>
 </div>
 

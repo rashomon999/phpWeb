@@ -1690,8 +1690,8 @@ function ocultarMensaje4() {
     <button type="submit">Enviar</button>
     <?php echo $verificar_34 ?>
     <?php echo $verificar_35 ?><br>
-    <img src="..\img\r1.jpeg" alt="">
-    <img src="..\img\r2.jpeg" alt="">
+    <img src="../../../img/r1.jpeg" alt="">
+    <img src="../../../img/r2.jpeg" alt="">
     <hr>
      
 

@@ -420,7 +420,7 @@ function ocultarMensaje4() {
 
     <p>Los sistemas grandes a menudo abarcan más de un área temática o dominio. Como se explica en [9, c6], el diseño 
     recursivo muestra cómo los requerimientos no funcionales en un dominio padre pueden convertirse o inducir requerimientos
-    funcionales en un dominio hijo. Por ejemplo, un requerimientos no funcional sobre la seguridad del usuario en un 
+    funcionales en un dominio hijo. Por ejemplo, un requerimiento no funcional sobre la seguridad del usuario en un 
     dominio bancario padre puede convertirse o inducir requerimientos funcionales en un dominio hijo de seguridad.
     De manera similar, los requerimientos no funcionales transversales sobre auditoría y gestión de transacciones 
     en un dominio bancario padre pueden convertirse o inducir requerimientos funcionales en un dominio hijo de auditoría

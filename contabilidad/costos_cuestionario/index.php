@@ -171,6 +171,8 @@ if ($_POST) {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
    if ($respuesta_1 === 'Inventario inicial materias'
    || $respuesta_1 === 'inventario inicial materias'
+   || $respuesta_1 === 'inventario inicial'
+   || $respuesta_1 === 'Inventario inicial'
    ) {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
@@ -193,7 +195,9 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === 'Inventario final materias') {  
+   if ($respuesta_3 === 'Inventario final materias'
+   || $respuesta_3 === 'Inventario final'
+   ) {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -466,7 +470,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_29 = isset($_POST['respuesta_29']) ? $_POST['respuesta_29'] : '';
-   if ($respuesta_29 === '120') {  
+   if ($respuesta_29 === 'Inventario inicial') {  
        $verificar_29 = "correcto";
    } elseif ($respuesta_29 === '') {
        $verificar_29 = '';
@@ -476,7 +480,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_30 = isset($_POST['respuesta_30']) ? $_POST['respuesta_30'] : '';
-   if ($respuesta_30 === '135') {  
+   if ($respuesta_30 === 'Requisiciones') {  
        $verificar_30 = "correcto";
    } elseif ($respuesta_30 === '') {
        $verificar_30 = '';
@@ -486,7 +490,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_31 = isset($_POST['respuesta_31']) ? $_POST['respuesta_31'] : '';
-   if ($respuesta_31 === '150') {  
+   if ($respuesta_31 === 'Orden') {  
        $verificar_31 = "correcto";
    } elseif ($respuesta_31 === '') {
        $verificar_31 = '';
@@ -496,7 +500,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_32 = isset($_POST['respuesta_32']) ? $_POST['respuesta_32'] : '';
-   if ($respuesta_32 === '165') {  
+   if ($respuesta_32 === 'Saldo inicial') {  
        $verificar_32 = "correcto";
    } elseif ($respuesta_32 === '') {
        $verificar_32 = '';
@@ -506,7 +510,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_33 = isset($_POST['respuesta_33']) ? $_POST['respuesta_33'] : '';
-   if ($respuesta_33 === '180') {  
+   if ($respuesta_33 === 'Costo de Materiales') {  
        $verificar_33 = "correcto";
    } elseif ($respuesta_33 === '') {
        $verificar_33 = '';
@@ -515,7 +519,7 @@ if ($_POST) {
    }
 
     $respuesta_34 = isset($_POST['respuesta_34']) ? $_POST['respuesta_34'] : '';
-    if ($respuesta_34 === '32') { 
+    if ($respuesta_34 === 'MOD') { 
         $verificar_34 = "correcto";
     } elseif ($respuesta_34 === '') {
         $verificar_34 = '';
@@ -524,7 +528,7 @@ if ($_POST) {
     }
 
     $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
-    if ($respuesta_35 === '48') { 
+    if ($respuesta_35 === 'CIF') { 
         $verificar_35 = "correcto";
     } elseif ($respuesta_35 === '') {
         $verificar_35 = '';
@@ -533,7 +537,7 @@ if ($_POST) {
     }
 
     $respuesta_36 = isset($_POST['respuesta_36']) ? $_POST['respuesta_36'] : '';
-    if ($respuesta_36 === '64') { 
+    if ($respuesta_36 === 'Total Costos') { 
         $verificar_36 = "correcto";
     } elseif ($respuesta_36 === '') {
     $verificar_36 = '';
@@ -542,7 +546,7 @@ if ($_POST) {
     }
 
     $respuesta_37 = isset($_POST['respuesta_37']) ? $_POST['respuesta_37'] : '';
-    if ($respuesta_37 === '80') { 
+    if ($respuesta_37 === 'Precio de venta') { 
         $verificar_37 = "correcto";
     } elseif ($respuesta_37 === '') {
         $verificar_37 = '';
@@ -551,7 +555,7 @@ if ($_POST) {
     }
 
     $respuesta_38 = isset($_POST['respuesta_38']) ? $_POST['respuesta_38'] : '';
-    if ($respuesta_38 === '96') { 
+    if ($respuesta_38 === 'Materiales iniciales') { 
         $verificar_38 = "correcto";
     } elseif ($respuesta_38 === '') {
         $verificar_38 = '';
@@ -560,7 +564,7 @@ if ($_POST) {
     }
 
     $respuesta_39 = isset($_POST['respuesta_39']) ? $_POST['respuesta_39'] : '';
-    if ($respuesta_39 === '112') { 
+    if ($respuesta_39 === 'MOD inicial') { 
         $verificar_39 = "correcto";
     } elseif ($respuesta_39 === '') {
         $verificar_39 = '';
@@ -569,7 +573,7 @@ if ($_POST) {
     }
 
     $respuesta_40 = isset($_POST['respuesta_40']) ? $_POST['respuesta_40'] : '';
-    if ($respuesta_40 === '128') { 
+    if ($respuesta_40 === 'CIF inicial') { 
         $verificar_40 = "correcto";
     } elseif ($respuesta_40 === '') {
         $verificar_40 = '';
@@ -578,7 +582,7 @@ if ($_POST) {
     }
 
     $respuesta_41 = isset($_POST['respuesta_41']) ? $_POST['respuesta_41'] : '';
-    if ($respuesta_41 === '144') { 
+    if ($respuesta_41 === 'Materiales del mes') { 
         $verificar_41 = "correcto";
     } elseif ($respuesta_41 === '') {
         $verificar_41 = '';
@@ -587,7 +591,7 @@ if ($_POST) {
     }
 
     $respuesta_42 = isset($_POST['respuesta_42']) ? $_POST['respuesta_42'] : '';
-    if ($respuesta_42 === '160') { 
+    if ($respuesta_42 === 'MOD del mes') { 
         $verificar_42 = "correcto";
     } elseif ($respuesta_42 === '') {
         $verificar_42 = '';
@@ -596,7 +600,7 @@ if ($_POST) {
     }
 
     $respuesta_43 = isset($_POST['respuesta_43']) ? $_POST['respuesta_43'] : '';
-    if ($respuesta_43 === '176') { 
+    if ($respuesta_43 === 'CIF aplicado en el mes') { 
         $verificar_43 = "correcto";
     } elseif ($respuesta_43 === '') {
         $verificar_43 = '';
@@ -605,7 +609,7 @@ if ($_POST) {
     }
 
     $respuesta_44 = isset($_POST['respuesta_44']) ? $_POST['respuesta_44'] : '';
-    if ($respuesta_44 === '192') { 
+    if ($respuesta_44 === 'Materiales iniciales') { 
         $verificar_44 = "correcto";
     } elseif ($respuesta_44 === '') {
     $verificar_44 = '';
@@ -614,7 +618,7 @@ if ($_POST) {
     }
 
     $respuesta_45 = isset($_POST['respuesta_45']) ? $_POST['respuesta_45'] : '';
-    if ($respuesta_45 === '34') { 
+    if ($respuesta_45 === 'MOD inicial') { 
         $verificar_45 = "correcto";
     } elseif ($respuesta_45 === '') {
     $verificar_45 = '';
@@ -623,7 +627,7 @@ if ($_POST) {
     }
 
     $respuesta_46 = isset($_POST['respuesta_46']) ? $_POST['respuesta_46'] : '';
-    if ($respuesta_46 === '51') { 
+    if ($respuesta_46 === 'CIF inicial') { 
         $verificar_46 = "correcto";
     } elseif ($respuesta_46 === '') {
     $verificar_46 = '';
@@ -632,7 +636,7 @@ if ($_POST) {
     }
 
     $respuesta_47 = isset($_POST['respuesta_47']) ? $_POST['respuesta_47'] : '';
-    if ($respuesta_47 === '68') { 
+    if ($respuesta_47 === 'costos indirectos') { 
         $verificar_47 = "correcto";
     } elseif ($respuesta_47 === '') {
         $verificar_47 = '';
@@ -641,7 +645,9 @@ if ($_POST) {
     }
 
     $respuesta_48 = isset($_POST['respuesta_48']) ? $_POST['respuesta_48'] : '';
-    if ($respuesta_48 === '85') { 
+    if ($respuesta_48 === '220%*Mano de obra directa'
+    || $respuesta_48 === '220%*Mano de obra directa'
+    ) { 
         $verificar_48 = "correcto";
     } elseif ($respuesta_48 === '') {
     $verificar_48 = '';
@@ -650,7 +656,10 @@ if ($_POST) {
     }
 
     $respuesta_49 = isset($_POST['respuesta_49']) ? $_POST['respuesta_49'] : '';
-    if ($respuesta_49 === '102') { 
+    if ($respuesta_49 === 'Costo total de la orden x 1.20'
+    || $respuesta_49 === 'Costo total de la ordenx1.20'
+    || $respuesta_49 === 'costo total de la orden x 1.20'
+    ) { 
         $verificar_49 = "correcto";
     } elseif ($respuesta_49 === '') {
     $verificar_49 = '';
@@ -659,7 +668,7 @@ if ($_POST) {
     }
 
     $respuesta_50 = isset($_POST['respuesta_50']) ? $_POST['respuesta_50'] : '';
-    if ($respuesta_50 === '119') { 
+    if ($respuesta_50 === 'Costo total') { 
         $verificar_50 = "correcto";
     } elseif ($respuesta_50 === '') {
     $verificar_50 = '';
@@ -668,7 +677,9 @@ if ($_POST) {
     }
 
  $respuesta_51 = isset($_POST['respuesta_51']) ? $_POST['respuesta_51'] : '';
-if ($respuesta_51 === '136') { 
+if ($respuesta_51 === 'Inventario inicial PP'
+|| $respuesta_51 === 'inventario inicial PP'
+) { 
     $verificar_51 = "correcto";
 } elseif ($respuesta_51 === '') {
     $verificar_51 = '';
@@ -677,7 +688,7 @@ if ($respuesta_51 === '136') {
 }
 
  $respuesta_52 = isset($_POST['respuesta_52']) ? $_POST['respuesta_52'] : '';
-if ($respuesta_52 === '153') { 
+if ($respuesta_52 === 'Unidades terminadas') { 
     $verificar_52 = "correcto";
 } elseif ($respuesta_52 === '') {
     $verificar_52 = '';
@@ -686,7 +697,9 @@ if ($respuesta_52 === '153') {
 }
 
  $respuesta_53 = isset($_POST['respuesta_53']) ? $_POST['respuesta_53'] : '';
-if ($respuesta_53 === '170') { 
+if ($respuesta_53 === '450x0,4=180'
+|| $respuesta_53 === '450*0,4=180'
+) { 
     $verificar_53 = "correcto";
 } elseif ($respuesta_53 === '') {
     $verificar_53 = '';
@@ -695,7 +708,9 @@ if ($respuesta_53 === '170') {
 }
 
  $respuesta_54 = isset($_POST['respuesta_54']) ? $_POST['respuesta_54'] : '';
-if ($respuesta_54 === '187') { 
+if ($respuesta_54 === '40000x0,5=20000'
+|| $respuesta_54 === '40000*0,5=20000'
+) { 
     $verificar_54 = "correcto";
 } elseif ($respuesta_54 === '') {
     $verificar_54 = '';
@@ -704,7 +719,7 @@ if ($respuesta_54 === '187') {
 }
 
  $respuesta_55 = isset($_POST['respuesta_55']) ? $_POST['respuesta_55'] : '';
-if ($respuesta_55 === '204') { 
+if ($respuesta_55 === 'produccion equivalente') { 
     $verificar_55 = "correcto";
 } elseif ($respuesta_55 === '') {
     $verificar_55 = '';
@@ -714,7 +729,7 @@ if ($respuesta_55 === '204') {
 
 
  $respuesta_56 = isset($_POST['respuesta_56']) ? $_POST['respuesta_56'] : '';
-if ($respuesta_56 === '36') { 
+if ($respuesta_56 === 'Costos del periodo actual MD') { 
     $verificar_56 = "correcto";
 } elseif ($respuesta_56 === '') {
     $verificar_56 = '';
@@ -723,7 +738,9 @@ if ($respuesta_56 === '36') {
 }
 
  $respuesta_57 = isset($_POST['respuesta_57']) ? $_POST['respuesta_57'] : '';
-if ($respuesta_57 === '54') { 
+if ($respuesta_57 === 'Unidades equivalentes del periodo actual'
+|| $respuesta_57 === 'Unidades a costear MD'
+) { 
     $verificar_57 = "correcto";
 } elseif ($respuesta_57 === '') {
     $verificar_57 = '';
@@ -732,7 +749,7 @@ if ($respuesta_57 === '54') {
 }
 
  $respuesta_58 = isset($_POST['respuesta_58']) ? $_POST['respuesta_58'] : '';
-if ($respuesta_58 === '72') { 
+if ($respuesta_58 === 'Unidades equivalentes de MD') { 
     $verificar_58 = "correcto";
 } elseif ($respuesta_58 === '') {
     $verificar_58 = '';
@@ -741,7 +758,7 @@ if ($respuesta_58 === '72') {
 }
 
  $respuesta_59 = isset($_POST['respuesta_59']) ? $_POST['respuesta_59'] : '';
-if ($respuesta_59 === '90') { 
+if ($respuesta_59 === 'Costo unitario de MD') { 
     $verificar_59 = "correcto";
 } elseif ($respuesta_59 === '') {
     $verificar_59 = '';
@@ -750,7 +767,7 @@ if ($respuesta_59 === '90') {
 }
 
  $respuesta_60 = isset($_POST['respuesta_60']) ? $_POST['respuesta_60'] : '';
-if ($respuesta_60 === '108') { 
+if ($respuesta_60 === 'Produccion equivalente') { 
     $verificar_60 = "correcto";
 } elseif ($respuesta_60 === '') {
     $verificar_60 = '';
@@ -759,7 +776,7 @@ if ($respuesta_60 === '108') {
 }
 
  $respuesta_61 = isset($_POST['respuesta_61']) ? $_POST['respuesta_61'] : '';
-if ($respuesta_61 === '126') { 
+if ($respuesta_61 === 'Costo unitario') { 
     $verificar_61 = "correcto";
 } elseif ($respuesta_61 === '') {
     $verificar_61 = '';
@@ -1328,7 +1345,7 @@ if ($respuesta_121 === '144') {
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 370vh;
+    height: 280vh;
     }
 
 </style>
@@ -1614,7 +1631,7 @@ function ocultarMensaje4() {
     
 <div class="seccion izquierda"> 
  
- 
+     <h3>1.Costos</h3>
     <div class="box">
     Materiales usados = 
     <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="20">
@@ -1763,10 +1780,10 @@ function ocultarMensaje4() {
     Disponibles = 
     <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="24"> 
       + 
-    <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="24"> 
+    <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="36"> 
      
     <br><br>
-
+    <hr>
     <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="26"> 
     <p>Incluyen dos elementos:</p>
     <ul>
@@ -1779,6 +1796,104 @@ function ocultarMensaje4() {
     <?php echo $verificar_26 ?>
     <?php echo $verificar_27 ?>
     <?php echo $verificar_28 ?>
+
+    <hr>
+
+    <h3>2. Sistema de costeo por órdenes de trabajo con inventario periódico (Ejercicio:Escalante)</h3>
+
+    <p>En un sistema de costeo por órdenes de trabajo con inventario periódico o periódico por órdenes, los materiales 
+    directos asignados a cada orden se calculan así:</p>
+
+    <strong>Materiales Directos Usados = 
+    <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="26"> + 
+    <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="26">     
+    </strong>
+    <br><br>
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_29 ?>
+    <?php echo $verificar_30 ?>
+
+    <hr>
+  <p><strong>cuenta de inventario de trabajo en proceso </strong></p>
+<table style="border-collapse: collapse;">
+  <tr>
+    <th style="border: 1px solid black; padding: 5px;">
+    <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="4">    
+    </th>
+    <th style="border: 1px solid black; padding: 5px;">
+    <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="6">     
+    </th>
+    <th style="border: 1px solid black; padding: 5px;">
+    <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="14">     
+     </th>
+    <th style="border: 1px solid black; padding: 5px;">
+    <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="2">     
+     </th>
+    <th style="border: 1px solid black; padding: 5px;">
+    <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="2">    
+    </th>
+    <th style="border: 1px solid black; padding: 5px;">
+    <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="8">      
+     </th>
+    <th style="border: 1px solid black; padding: 5px;">
+    <input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="10">      
+     </th>
+  </tr>
+</table>
+
+    <br>
+    <p><strong>
+    Costo total de la orden=(
+    <input type="text" name="respuesta_38" value="<?php echo $respuesta_38; ?>" size="15">+
+    <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="7">+
+    <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="10">)
+    +
+    (
+    <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="14">+
+    <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="14">+
+    <input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="18">
+    )
+      
+    <br><br>
+    <p><strong>Saldo inicial:</strong></p>
+    <input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>" size="14">+
+    <input type="text" name="respuesta_45" value="<?php echo $respuesta_45; ?>" size="12">+
+    <input type="text" name="respuesta_46" value="<?php echo $respuesta_46; ?>" size="12">
+
+    <br><br>
+    <p>
+        costos indirectos de fabricacion se aplican a razon  220% del costo de la mano de obra directa. , es como decir:
+        <br><br>
+        <input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="12">
+          =
+        <input type="text" name="respuesta_48" value="<?php echo $respuesta_48; ?>" size="24">
+         
+    </p>
+
+</strong></p>
+  
+    <br><br>
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_31 ?>
+    <?php echo $verificar_32 ?>
+    <?php echo $verificar_33 ?>
+    <?php echo $verificar_34 ?>
+    <?php echo $verificar_35 ?>
+    <?php echo $verificar_36 ?>
+    <?php echo $verificar_37 ?>
+    <?php echo $verificar_38 ?>
+    <?php echo $verificar_39 ?>
+    <?php echo $verificar_40 ?>
+    <?php echo $verificar_41 ?>
+    <?php echo $verificar_42 ?>
+    <?php echo $verificar_43 ?>
+    <?php echo $verificar_44 ?>
+    <?php echo $verificar_45 ?>
+    <?php echo $verificar_46 ?>
+    <?php echo $verificar_47 ?>
+    <?php echo $verificar_48 ?>
+<hr>
+
 </div>
 
 
@@ -1786,7 +1901,112 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
    
-  
+  <h3>Precio de venta (P.V.P.) y Costo de ventas</h3>
+
+<p>
+“Las otras fueron entregadas a los clientes a un precio de venta igual a 
+<strong>120%</strong> de los costos asignados.”
+</p>
+
+<p><strong>Entonces:</strong></p>
+
+<p><strong>P.V.P. = 
+<input type="text" name="respuesta_49" value="<?php echo $respuesta_49; ?>" size="24">    
+ </strong></p>
+
+ <p>Si no fueron terminadas, no se agregan al 
+<input type="text" name="respuesta_50" value="<?php echo $respuesta_50; ?>" size="24">  
+ </p>
+
+    <hr>
+    <h3>3. Sistema de costeo por proceso</h3>
+    <h3>Formula de unidades iniciadas y terminadas :</h3>
+    <input type="text" name="respuesta_51" value="<?php echo $respuesta_51; ?>" size="15">  - 
+    <input type="text" name="respuesta_52" value="<?php echo $respuesta_52; ?>" size="15">  
+
+    <br><br>
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_49 ?>
+    <?php echo $verificar_50 ?>
+    <?php echo $verificar_51 ?>
+    <?php echo $verificar_52 ?>
+
+    <hr>
+
+    <h3>🔹 Diferencia semántica esencial</h3>
+
+<table border="1">
+  <tr>
+    <th>Elemento</th>
+    <th>“Trabajo en proceso, 450 unidades, 60 % terminadas en CC”</th>
+    <th>“40 000 unidades con todos los materiales y 50 % de CC”</th>
+  </tr>
+  <tr>
+    <td>En qué momento</td>
+    <td>Inicio del período (inventario inicial)</td>
+    <td>También inicio del período</td>
+  </tr>
+  <tr>
+    <td>Qué significa el porcentaje</td>
+    <td>Grado de avance en costos de conversión</td>
+    <td>Igual: grado de avance en conversión</td>
+  </tr>
+  <tr>
+    <td>Qué dice de los materiales</td>
+    <td>No lo especifica (se suele asumir 100 %)</td>
+    <td>Lo especifica explícitamente: 100 % agregados</td>
+  </tr>
+  <tr>
+    <td>Qué implica</td>
+    <td>Queda 40 % de conversión por completar</td>
+    <td>Queda 50 % de conversión por completar</td>
+  </tr>
+  <tr>
+    <td>Cómo se usa</td>
+    <td>Para calcular unidades equivalentes del período actual 
+    (<input type="text" name="respuesta_53" value="<?php echo $respuesta_53; ?>" size="15">)     
+     </td>
+    <td>Igual: 
+    <input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>" size="15">     
+      unidades equivalentes</td>
+  </tr>
+</table>
+    
+    <p>Esto se hace en la seccion de:
+    <input type="text" name="respuesta_55" value="<?php echo $respuesta_55; ?>" size="19">
+    </p>
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_53 ?>
+    <?php echo $verificar_54 ?>
+    <?php echo $verificar_55 ?>
+
+    <hr>
+    <h3>costo unitario MD  </h3>
+    <input type="text" name="respuesta_56" value="<?php echo $respuesta_56; ?>" size="25">/ 
+    <input type="text" name="respuesta_57" value="<?php echo $respuesta_57; ?>" size="22">
+    <br><br>
+    Unidades a costear esta en la tabla de 
+    <input type="text" name="respuesta_60" value="<?php echo $respuesta_60; ?>" size="27">
+    <br><br>
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_56 ?>
+    <?php echo $verificar_57 ?>
+    <?php echo $verificar_60 ?>
+    <hr>
+    <h2>⚙️ Fórmula general para Material Directo (MD) en asignación de costos</h2>
+    <input type="text" name="respuesta_58" value="<?php echo $respuesta_58; ?>" size="27">
+    x
+    <input type="text" name="respuesta_59" value="<?php echo $respuesta_59; ?>" size="27">
+
+     <br><br>
+    Costo unitario MD esta en la tabla de:
+    <input type="text" name="respuesta_61" value="<?php echo $respuesta_61; ?>" size="27">
+     <br><br>
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_58 ?>
+    <?php echo $verificar_59 ?>
+    <?php echo $verificar_61 ?>
+
 </div>
 </div>
  </form>

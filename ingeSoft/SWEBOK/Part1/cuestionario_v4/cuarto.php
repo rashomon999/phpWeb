@@ -93,11 +93,11 @@ if ($_POST) {
     $respuesta_73 = 'tiempo de respuesta';
     $respuesta_74 = 'el rendimiento';
     $respuesta_75 = '25010';
-    $respuesta_76 = 'categoria';
+    $respuesta_76 = 'en una categoria';
     $respuesta_77 = 'provenir';
     $respuesta_78 = 'diferentes';
     $respuesta_79 = 'otras';
-    $respuesta_80 = 'elicitacion';
+    $respuesta_80 = 'las tecnicas de elicitacion';
     $respuesta_81 = 'fuente';
     $respuesta_82 = 'analisis';
     $respuesta_83 = 'categoria';
@@ -110,14 +110,14 @@ if ($_POST) {
     $respuesta_90 = 'software';
     $respuesta_91 = 'distintas';
     $respuesta_92 = 'complejidad';
-    $respuesta_93 = 'abordarse';
+    $respuesta_93 = 'abordarse por separado';
     $respuesta_94 = 'politicas';
     $respuesta_95 = 'procesos';
     $respuesta_96 = 'tecnologia';
     $respuesta_97 = 'pequeños';
     $respuesta_98 = 'divide';
     $respuesta_99 = 'venceras';
-    $respuesta_100 = 'experiencia';
+    $respuesta_100 = 'se pueden aislar areas de experiencia';
     $respuesta_101 = 'politicas';
     $respuesta_102 = 'procesos';
     $respuesta_103 = 'tecnologia';
@@ -181,7 +181,15 @@ if ($_POST) {
     $respuesta_161 = 'software';
     $respuesta_162 = 'Los requerimientos del software';
     $respuesta_163 = 'software';
-    $respuesta_164 = 'sistema';
+    $respuesta_164 = 'sistema'; 
+    $respuesta_165 = 'Categorizar'; 
+    $respuesta_166 = 'de esta manera es util por las siguientes razones';
+    $respuesta_167 = 'los requerimientos';
+    $respuesta_168 = 'gestionarse mejor porque diferentes areas';
+    $respuesta_169 = 'El Filtro de Tecnologia Perfecta';
+    $respuesta_170 = 'ayuda a separar';
+    $respuesta_171 = 'Desarrollo de requerimientos';
+    $respuesta_172 = 'Gestion de requerimientos';
 
     // Marcar todas como correctas
     $verificar_1 = $verificar_2 = $verificar_3 = $verificar_4 = $verificar_5 = 
@@ -229,7 +237,9 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === 'Requerimientos del Proyecto') {  
+   if ($respuesta_2 === 'Requerimientos del Proyecto'||$respuesta_2 === 'Requerimientos del proyecto'
+   ||$respuesta_2 === 'requerimientos del proyecto'
+   ) {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -239,7 +249,10 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === 'Requerimientos del Producto') {  
+   if ($respuesta_3 === 'Requerimientos del Producto'
+   || $respuesta_3 === 'Requerimientos del producto'
+   || $respuesta_3 === 'requerimientos del producto'
+   ) {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -249,7 +262,10 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === 'Requerimientos Funcionales') {  
+   if ($respuesta_4 === 'Requerimientos Funcionales'
+   || $respuesta_4 === 'Requerimientos funcionales'
+   || $respuesta_4 === 'requerimientos funcionales'
+   ) {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -259,7 +275,10 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === 'Requerimientos No Funcionales') {  
+   if ($respuesta_5 === 'Requerimientos No Funcionales'
+   ||$respuesta_5 === 'Requerimientos no funcionales'
+   ||$respuesta_5 === 'requerimientos no funcionales'
+   ) {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -269,7 +288,10 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === 'Restricciones Tecnológicas') {  
+   if ($respuesta_6 === 'Restricciones Tecnologicas'
+    || $respuesta_6 === 'Restricciones tecnologicas'
+    ||$respuesta_6 === 'restricciones tecnologicas'
+    ) {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -279,7 +301,10 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === 'Restricciones de Calidad de Servicio') {  
+   if ($respuesta_7 === 'Restricciones de Calidad de Servicio'
+   || $respuesta_7 === 'Restricciones de calidad de servicio'
+   || $respuesta_7 === 'restricciones de calidad de servicio'
+   ) {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -380,7 +405,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la sexta pregunta
     $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-    if ($respuesta_17 === 'Ejemplos') {  
+    if ($respuesta_17 === 'Ejemplos' || $respuesta_17 === 'ejemplos') {  
         $verificar_17 = "correcto";
         } elseif ($respuesta_17 === '') {
         $verificar_17 = '';
@@ -928,7 +953,7 @@ if ($respuesta_75 === '25010') {
 }
 
  $respuesta_76 = isset($_POST['respuesta_76']) ? $_POST['respuesta_76'] : '';
-if ($respuesta_76 === 'categoria') { 
+if ($respuesta_76 === 'en una categoria') { 
     $verificar_76 = "correcto";
 } elseif ($respuesta_76 === '') {
     $verificar_76 = '';
@@ -946,7 +971,7 @@ if ($respuesta_77 === 'provenir') {
 }
 
  $respuesta_78 = isset($_POST['respuesta_78']) ? $_POST['respuesta_78'] : '';
-if ($respuesta_78 === 'diferentes') { 
+if ($respuesta_78 === 'fuentes diferentes') { 
     $verificar_78 = "correcto";
 } elseif ($respuesta_78 === '') {
     $verificar_78 = '';
@@ -964,7 +989,7 @@ if ($respuesta_79 === 'otras') {
 }
 
  $respuesta_80 = isset($_POST['respuesta_80']) ? $_POST['respuesta_80'] : '';
-if ($respuesta_80 === 'elicitacion') { 
+if ($respuesta_80 === 'las tecnicas de elicitacion') { 
     $verificar_80 = "correcto";
 } elseif ($respuesta_80 === '') {
     $verificar_80 = '';
@@ -1081,7 +1106,7 @@ if ($respuesta_92 === 'complejidad') {
 }
 
  $respuesta_93 = isset($_POST['respuesta_93']) ? $_POST['respuesta_93'] : '';
-if ($respuesta_93 === 'abordarse') { 
+if ($respuesta_93 === 'abordarse por separado') { 
     $verificar_93 = "correcto";
 } elseif ($respuesta_93 === '') {
     $verificar_93 = '';
@@ -1145,7 +1170,7 @@ if ($respuesta_99 === 'venceras') {
 
 
  $respuesta_100 = isset($_POST['respuesta_100']) ? $_POST['respuesta_100'] : '';
-if ($respuesta_100 === 'experiencia') { 
+if ($respuesta_100 === 'se pueden aislar areas de experiencia') { 
     $verificar_100 = "correcto";
 } elseif ($respuesta_100 === '') {
     $verificar_100 = '';
@@ -1400,7 +1425,11 @@ if ($respuesta_127 === 'complejidad') {
 }
 
 $respuesta_128 = isset($_POST['respuesta_128']) ? $_POST['respuesta_128'] : '';
-if ($respuesta_128 === 'El Consejo Internacional de Ingenieria de Sistemas') {  
+if ($respuesta_128 === 'El Consejo Internacional de Ingenieria de Sistemas'
+|| $respuesta_128 === 'El consejo internacional de ingenieria de sistemas'
+|| $respuesta_128 === 'el consejo internacional de ingenieria de sistemas'
+
+) {  
     $verificar_128 = "correcto";
 } elseif ($respuesta_128 === '') {
     $verificar_128 = '';
@@ -1734,7 +1763,7 @@ if ($respuesta_164 === 'sistema') {
 }
 
 $respuesta_165 = isset($_POST['respuesta_165']) ? $_POST['respuesta_165'] : '';
-if ($respuesta_165 === '34534') {  
+if ($respuesta_165 === 'Categorizar') {  
     $verificar_165 = "correcto";
 } elseif ($respuesta_165 === '') {
     $verificar_165 = '';
@@ -1743,7 +1772,7 @@ if ($respuesta_165 === '34534') {
 }
 
 $respuesta_166 = isset($_POST['respuesta_166']) ? $_POST['respuesta_166'] : '';
-if ($respuesta_166 === '34534') {  
+if ($respuesta_166 === 'de esta manera es util por las siguientes razones') {  
     $verificar_166 = "correcto";
 } elseif ($respuesta_166 === '') {
     $verificar_166 = '';
@@ -1752,7 +1781,7 @@ if ($respuesta_166 === '34534') {
 }
 
 $respuesta_167 = isset($_POST['respuesta_167']) ? $_POST['respuesta_167'] : '';
-if ($respuesta_167 === '34534') {  
+if ($respuesta_167 === 'los requerimientos') {  
     $verificar_167 = "correcto";
 } elseif ($respuesta_167 === '') {
     $verificar_167 = '';
@@ -1761,7 +1790,7 @@ if ($respuesta_167 === '34534') {
 }
 
 $respuesta_168 = isset($_POST['respuesta_168']) ? $_POST['respuesta_168'] : '';
-if ($respuesta_168 === '34534') {  
+if ($respuesta_168 === 'gestionarse mejor porque diferentes areas') {  
     $verificar_168 = "correcto";
 } elseif ($respuesta_168 === '') {
     $verificar_168 = '';
@@ -1770,7 +1799,10 @@ if ($respuesta_168 === '34534') {
 }
 
 $respuesta_169 = isset($_POST['respuesta_169']) ? $_POST['respuesta_169'] : '';
-if ($respuesta_169 === '34534') {  
+if ($respuesta_169 === 'El Filtro de Tecnologia Perfecta'
+||$respuesta_169 === 'El filtro de tecnologia perfecta'
+||$respuesta_169 === 'el filtro de tecnologia perfecta'
+) {  
     $verificar_169 = "correcto";
 } elseif ($respuesta_169 === '') {
     $verificar_169 = '';
@@ -1779,7 +1811,7 @@ if ($respuesta_169 === '34534') {
 }
 
 $respuesta_170 = isset($_POST['respuesta_170']) ? $_POST['respuesta_170'] : '';
-if ($respuesta_170 === '34534') {  
+if ($respuesta_170 === 'ayuda a separar') {  
     $verificar_170 = "correcto";
 } elseif ($respuesta_170 === '') {
     $verificar_170 = '';
@@ -1788,8 +1820,12 @@ if ($respuesta_170 === '34534') {
 }
 
 $respuesta_171 = isset($_POST['respuesta_171']) ? $_POST['respuesta_171'] : '';
-if ($respuesta_171 === '34534') {  
-    $verificar_171 = "correcto";
+if ($respuesta_171 === 'Desarrollo de Requerimientos'
+|| $respuesta_171 === 'Desarrollo de requerimientos'
+|| $respuesta_171 === 'Requirements development'
+
+) {  
+    $verificar_171 = "correcto"; 
 } elseif ($respuesta_171 === '') {
     $verificar_171 = '';
 } else {
@@ -1797,7 +1833,10 @@ if ($respuesta_171 === '34534') {
 }
 
 $respuesta_172 = isset($_POST['respuesta_172']) ? $_POST['respuesta_172'] : '';
-if ($respuesta_172 === '34534') {  
+if ($respuesta_172 === 'Gestion de Requerimientos'
+|| $respuesta_172 === 'Gestion de requerimientos'
+|| $respuesta_172 === 'Requirements management'
+) {  
     $verificar_172 = "correcto";
 } elseif ($respuesta_172 === '') {
     $verificar_172 = '';
@@ -1992,6 +2031,130 @@ if ($respuesta_190 === '34534') {
     height: 370vh;
     }
 
+.containerr {
+    background-color: white;
+    padding: 60px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.diagram {
+    text-align: center;
+}
+
+.top-level {
+    font-size: 24px;
+    color: #4a4a4a;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.branches {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.branch {
+    flex: 1;
+    text-align: left;
+    position: relative;
+}
+
+.branch-title {
+    font-size: 20px;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+    font-weight: 500;
+    min-height: 50px;
+}
+
+.branch-title input[type="text"] {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 18px;
+    font-family: 'Garamond', 'Georgia', serif;
+    border: 2px solid #d0d0d0;
+    border-radius: 4px;
+    background-color: #fafafa;
+    color: #4a4a4a;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.branch-title input[type="text"]:focus {
+    outline: none;
+    border-color: #6a9bd8;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(106, 155, 216, 0.3);
+}
+
+.activities {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 25px;
+}
+
+.activities li {
+    font-size: 18px;
+    color: #6a6a6a;
+    margin: 12px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.activities li:before {
+    content: "─";
+    position: absolute;
+    left: 0;
+}
+
+/* Lines connecting elements */
+.branches:before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    width: 2px;
+    height: 30px;
+    background-color: #4a4a4a;
+    transform: translateX(-50%);
+}
+
+.branches:after {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 25%;
+    right: 25%;
+    height: 2px;
+    background-color: #4a4a4a;
+}
+
+.branch:before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    width: 2px;
+    height: 30px;
+    background-color: #4a4a4a;
+    transform: translateX(-50%);
+}
+
+ 
+ 
+/* Mensajes de verificación */
+.containerr > div:last-child {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+}
 </style>
  
 <script>
@@ -2458,7 +2621,7 @@ function ocultarMensaje4() {
 
 
     <h3>
-    <input type="text"  value="<?php echo $respuesta_5; ?>"  size="26">      
+    1.5 <input type="text"  value="<?php echo $respuesta_5; ?>"  size="26">      
     </h3>
     
     <p>
@@ -2557,7 +2720,7 @@ function ocultarMensaje4() {
 
     <hr>
 
-    <h3>1.6. Restricciones Tecnológicas</h3>
+    <h3>1.6. <input type="text"   value="<?php echo $respuesta_6; ?>" size="26"> </h3>
     <p>
     <input type="text" name="respuesta_58" value="<?php echo $respuesta_58; ?>" size="26">    
       —o 
@@ -2588,9 +2751,9 @@ function ocultarMensaje4() {
 
     <hr>
 
-    <h3>1.7. Restricciones de Calidad de Servicio</h3>
+    <h3>1.7. <input type="text"   value="<?php echo $respuesta_7; ?>" size="30"></h3>
     <p>Estos requerimientos 
-    <input type="text" name="respuesta_64" value="<?php echo $respuesta_64; ?>" size="18">    
+    <input type="text" name="respuesta_64" value="<?php echo $respuesta_64; ?>" size="10">    
       el uso de tecnologías 
     <input type="text" name="respuesta_65" value="<?php echo $respuesta_65; ?>" size="9">
       o 
@@ -2635,6 +2798,7 @@ function ocultarMensaje4() {
     <?php echo $verificar_74 ?>
     <?php echo $verificar_75 ?>
     <hr>
+    <a href="./calidad.php">Calidad</a>
 </div>
 
 
@@ -2643,18 +2807,24 @@ function ocultarMensaje4() {
 <div class="seccion derecha">
      <h3>1.8. ¿Por Qué Categorizar los Requisitos de Esta Manera?</h3>
     
-    <p>Categorizar los requerimientos de esta manera es útil por las siguientes razones:</p><ul>
-    <li>los requerimientos en una 
-    <input type="text" name="respuesta_76" value="<?php echo $respuesta_76; ?>" size="6">    
+    <p>
+    <input type="text" name="respuesta_165" value="<?php echo $respuesta_165; ?>" size="9">    
+      los requerimientos 
+    <input type="text" name="respuesta_166" value="<?php echo $respuesta_166; ?>" size="42">    
+      :</p><ul>
+    <li>
+    <input type="text" name="respuesta_167" value="<?php echo $respuesta_167; ?>" size="15">       
+        
+    <input type="text" name="respuesta_76" value="<?php echo $respuesta_76; ?>" size="14">    
       tienden a 
     <input type="text" name="respuesta_77" value="<?php echo $respuesta_77; ?>" size="6">
-      de fuentes 
-    <input type="text" name="respuesta_78" value="<?php echo $respuesta_78; ?>" size="6">
+      de   
+    <input type="text" name="respuesta_78" value="<?php echo $respuesta_78; ?>" size="14">
       a las de 
     <input type="text" name="respuesta_79" value="<?php echo $respuesta_79; ?>" size="6">
       categorías;</li>
-    <li>las técnicas de 
-    <input type="text" name="respuesta_80" value="<?php echo $respuesta_80; ?>" size="6">    
+    <li>  
+    <input type="text" name="respuesta_80" value="<?php echo $respuesta_80; ?>" size="24">    
       a menudo varían según la 
     <input type="text" name="respuesta_81" value="<?php echo $respuesta_81; ?>" size="6">
      ;</li>
@@ -2664,12 +2834,12 @@ function ocultarMensaje4() {
     <input type="text" name="respuesta_83" value="<?php echo $respuesta_83; ?>" size="6">
      ;</li>
     <li>las técnicas de 
-    <input type="text" name="respuesta_84" value="<?php echo $respuesta_84; ?>" size="6">    
+    <input type="text" name="respuesta_84" value="<?php echo $respuesta_84; ?>" size="9">    
       varían según la 
     <input type="text" name="respuesta_85" value="<?php echo $respuesta_85; ?>" size="6">
      ;</li>
     <li>las 
-    <input type="text" name="respuesta_86" value="<?php echo $respuesta_86; ?>" size="6">    
+    <input type="text" name="respuesta_86" value="<?php echo $respuesta_86; ?>" size="9">    
       de 
     <input type="text" name="respuesta_87" value="<?php echo $respuesta_87; ?>" size="6">
       varían según la 
@@ -2685,6 +2855,9 @@ function ocultarMensaje4() {
     </ul>
 
     <button type="submit">Enviar</button>
+    <?php echo $verificar_165 ?>
+    <?php echo $verificar_166 ?>
+    <?php echo $verificar_167 ?>
     <?php echo $verificar_76 ?>
     <?php echo $verificar_77 ?>
     <?php echo $verificar_78 ?>
@@ -2701,16 +2874,18 @@ function ocultarMensaje4() {
     <?php echo $verificar_89 ?>
     <?php echo $verificar_90 ?>
     <?php echo $verificar_91 ?>
-
+ 
     <hr>
 
     <p>Además, organizar los requerimientos en estas categorías es beneficioso por las siguientes razones:</p>
     <ul>
     <li>la 
     <input type="text" name="respuesta_92" value="<?php echo $respuesta_92; ?>" size="9">    
-      puede gestionarse mejor porque diferentes áreas pueden 
-    <input type="text" name="respuesta_93" value="<?php echo $respuesta_93; ?>" size="6">
-      por separado; los 
+      puede 
+      <input type="text" name="respuesta_168" value="<?php echo $respuesta_168; ?>" size="36">
+        pueden 
+    <input type="text" name="respuesta_93" value="<?php echo $respuesta_93; ?>" size="19">
+       ; los 
     ingenieros de software pueden tratar con la complejidad de las 
     <input type="text" name="respuesta_94" value="<?php echo $respuesta_94; ?>" size="6">
       y 
@@ -2725,8 +2900,8 @@ function ocultarMensaje4() {
       y 
     <input type="text" name="respuesta_99" value="<?php echo $respuesta_99; ?>" size="6">
      ;</li>
-    <li>se pueden aislar áreas de 
-    <input type="text" name="respuesta_100" value="<?php echo $respuesta_100; ?>" size="9">    
+    <li>  
+    <input type="text" name="respuesta_100" value="<?php echo $respuesta_100; ?>" size="33">    
       distintas; las partes interesadas, no los ingenieros de software, son 
     los expertos en las 
     <input type="text" name="respuesta_101" value="<?php echo $respuesta_101; ?>" size="6">
@@ -2747,6 +2922,7 @@ function ocultarMensaje4() {
 
     <button type="submit">Enviar</button>
     <?php echo $verificar_92 ?>
+    <?php echo $verificar_168 ?>
     <?php echo $verificar_93 ?>
     <?php echo $verificar_94 ?>
     <?php echo $verificar_95 ?>
@@ -2754,6 +2930,7 @@ function ocultarMensaje4() {
     <?php echo $verificar_97 ?>
     <?php echo $verificar_98 ?> 
     <?php echo $verificar_99 ?>
+    <br><br>
     <?php echo $verificar_100 ?>
     <?php echo $verificar_101 ?>
     <?php echo $verificar_102 ?>
@@ -2761,8 +2938,11 @@ function ocultarMensaje4() {
     <?php echo $verificar_104 ?>
     <?php echo $verificar_105 ?>
     <hr>
-    <p>El Filtro de Tecnología Perfecta, descrito originalmente en [18, c1-4] pero también explicado en [8] y [9, c4], 
-    ayuda a separar los requerimientos funcionales de los no funcionales. En pocas palabras, los requerimientos 
+    <p>
+    <input type="text" name="respuesta_169" value="<?php echo $respuesta_169; ?>" size="25">    
+     , descrito originalmente en [18, c1-4] pero también explicado en [8] y [9, c4], 
+     <input type="text" name="respuesta_170" value="<?php echo $respuesta_170; ?>" size="14"> 
+      los requerimientos funcionales de los no funcionales. En pocas palabras, los requerimientos 
     funcionales son aquellos que todavía necesitarían 
     <input type="text" name="respuesta_106" value="<?php echo $respuesta_106; ?>" size="6">
       incluso si 
@@ -2789,7 +2969,7 @@ function ocultarMensaje4() {
     <input type="text" name="respuesta_114" value="<?php echo $respuesta_114; ?>" size="9">
       en un 
     <input type="text" name="respuesta_115" value="<?php echo $respuesta_115; ?>" size="9">
-    . Por ejemplo, un requerimientos no funcional sobre la seguridad del usuario en un 
+    . Por ejemplo, un requerimiento no funcional sobre la seguridad del usuario en un 
     dominio bancario padre puede 
     <input type="text" name="respuesta_116" value="<?php echo $respuesta_116; ?>" size="6">
       o 
@@ -2820,6 +3000,8 @@ function ocultarMensaje4() {
     .</p>
 
     <button type="submit">Enviar</button>
+    <?php echo $verificar_169 ?>
+    <?php echo $verificar_170 ?>
     <?php echo $verificar_106 ?>
     <?php echo $verificar_107 ?>
     <?php echo $verificar_108 ?>
@@ -2917,7 +3099,7 @@ function ocultarMensaje4() {
       la 
     <input type="text" name="respuesta_154" value="<?php echo $respuesta_154; ?>" size="11">
       o 
-    <input type="text" name="respuesta_155" value="<?php echo $respuesta_155; ?>" size="9">
+    <input type="text" name="respuesta_155" value="<?php echo $respuesta_155; ?>" size="11">
      , 
     <input type="text" name="respuesta_156" value="<?php echo $respuesta_156; ?>" size="9">
       los requerimientos del 
@@ -2927,6 +3109,56 @@ function ocultarMensaje4() {
       requerimientos del 
     <input type="text" name="respuesta_159" value="<?php echo $respuesta_159; ?>" size="9">
      .</p>
+
+     <button onmousedown="mostrarMensaje()" onmouseup="ocultarMensaje()">Ayuda</button>
+    <div id="mensaje" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
+
+<h3>Cuando un software es solo una parte de un sistema más grande</h3>
+
+<p>
+Ejemplo: un <em>vehículo autónomo</em>.<br>
+Ese vehículo completo es un <strong>sistema</strong> formado por:
+</p>
+
+<ul>
+    <li>hardware (sensores, cámaras, motores),</li>
+    <li>software,</li>
+    <li>firmware,</li>
+    <li>personas,</li>
+    <li>procesos,</li>
+    <li>instalaciones, etc.</li>
+</ul>
+
+<p>En este caso:</p>
+
+<ul>
+    <li>Los <strong>requerimientos del sistema</strong> describen lo que debe lograr <em>todo</em> el sistema completo.</li>
+    <li>Los <strong>requerimientos del software</strong> describen lo que debe hacer solo el software, que es una parte del sistema.</li>
+</ul>
+
+<p>
+Muchos requerimientos del software se derivan (se obtienen) de los requerimientos más generales del sistema.
+</p>
+
+<hr>
+
+<h3>Cuando el software es el sistema</h3>
+
+<p>
+Ejemplo: una aplicación web como un sistema de ventas en línea.<br>
+Aquí:
+</p>
+
+<ul>
+    <li>El software es el <strong>sistema principal de interés</strong>.</li>
+    <li>El hardware y la infraestructura sirven como <strong>plataforma</strong> (servidores, red, base de datos, etc.).</li>
+</ul>
+
+<p>
+En este caso, lo que normalmente se llamaría <em>requerimientos del sistema</em> son en su mayoría 
+<strong>requerimientos del software</strong>, porque el software es el sistema central.
+</p>
+    </div>
 
     <button type="submit">Enviar</button>
     <?php echo $verificar_128 ?>
@@ -2946,12 +3178,27 @@ function ocultarMensaje4() {
     <?php echo $verificar_142 ?>
     <?php echo $verificar_143 ?>
     <?php echo $verificar_144 ?>
+
+    <?php echo $verificar_162 ?>
+
     <?php echo $verificar_145 ?>
     <?php echo $verificar_146 ?>
+
+    <?php echo $verificar_163 ?>
+
     <?php echo $verificar_147 ?>
+
+    <?php echo $verificar_164 ?>
+
     <?php echo $verificar_148 ?>
     <?php echo $verificar_149 ?>
     <?php echo $verificar_150 ?>
+
+
+    <?php echo $verificar_160 ?>
+    <?php echo $verificar_161 ?>
+
+
     <?php echo $verificar_151 ?>
     <?php echo $verificar_152 ?>
     <?php echo $verificar_153 ?>
@@ -2962,8 +3209,50 @@ function ocultarMensaje4() {
     <?php echo $verificar_158 ?>
     <?php echo $verificar_159 ?>
 
-    <img src="../../../../img/guia_50.png" alt=""  > 
+    <br><br>
 
+     <div class="containerr">
+        <div class="diagram">
+            <div class="top-level">Requirements</div>
+            
+            <div class="branches">
+                <div class="branch">
+                    <div class="branch-title">
+                     <input type="text" name="respuesta_171" value="<?php echo $respuesta_171; ?>" size="22">    
+                     </div>
+                    <ul class="activities">
+                        <li>Elicitation</li>
+                        <li>Analysis</li>
+                        <li>Specification</li>
+                        <li>Validation</li>
+                    </ul>
+                </div>
+                
+                <div class="branch">
+                    <div class="branch-title">
+                     <input type="text" name="respuesta_172" value="<?php echo $respuesta_172; ?>" size="22">    
+                     </div>
+                    <ul class="activities">
+                        <li>Scrubbing</li>
+                        <li>Change Control</li>
+                        <li>Scope Matching</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <button type="submit">Enviar</button>
+            <?php echo $verificar_171 ?>
+            <?php echo $verificar_172 ?>
+
+
+            <div class="figure-caption">
+                <span class="figure-number">Figure 1.3.</span> Software Requirements Activities
+            </div>
+        </div>
+    </div>
+
+ <?php //    <img src="../../../../img/guia_50.png" alt=""  > 
+ ?>
     <hr>
     <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
     <br>
@@ -2971,7 +3260,10 @@ function ocultarMensaje4() {
     <button type="submit"   >Mostrar Solución</button>
 </div>
 </div>
+    
+
  </form>
+ 
 <div class="centered-container">
     <a
         name="siguiente"
@@ -2985,3 +3277,5 @@ function ocultarMensaje4() {
 </div>
 </body>
 </html>
+
+ 

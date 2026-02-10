@@ -29,13 +29,17 @@
 </head>
 <body>
     <div class="centered-container">
+        <br><br>
         <a class="btn" href=".\semana_1\Menu.php">semana 1</a>
         <a class="btn" href=".\semana_2\Menu.php">semana 2</a>
         <a class="btn" href=".\semana_3\Menu.php">semana 3</a>
         <br>
         <br>
         <a class="btn" href=".\parcial_2\Menu.php">parcial 2</a>
-
+        <br><br>
+        <a class="btn" href=".\multihilos\Menu.php">multihilos</a>
+        <br><br>
+        <a class="btn" href=".\Spring\Menu.php">Spring</a>
     </div>
 </body>
 </html>

@@ -1312,7 +1312,7 @@ if ($respuesta_121 === '144') {
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 280vh;
+    height: 290vh;
     }
 
 </style>
@@ -1670,6 +1670,64 @@ System.out.println(json);
 
 <p>✅ Ahora puedes enviar este JSON a través de un socket, guardarlo, o usarlo en una API.</p>
 
+
+<hr>
+<h1> ¿Qué es JsonObject?</h1>
+
+  <p>
+    <code>JsonObject</code> (de <code>com.google.gson.JsonObject</code>) representa un objeto JSON en memoria,
+    es decir, una estructura clave-valor como esta:
+  </p>
+
+  <pre>{
+  "taskId": "12",
+  "stage": 2
+}</pre>
+
+  <p>
+    En Java, un <code>JsonObject</code> te permite acceder a los campos del JSON sin necesidad de convertirlo
+    de inmediato a una clase Java.
+  </p>
+
+  <div class="highlight">
+    💡 <strong>En tu código:</strong><br>
+    <code>Request rq = gson.fromJson(line, Request.class);</code><br>
+    <code>JsonObject obj = rq.getData();</code>
+  </div>
+
+  <p>
+    <code>rq</code> es un objeto de tipo <code>Request</code>, que probablemente tiene un campo llamado
+    <code>data</code> (tipo <code>JsonObject</code>).
+  </p>
+
+  <p>
+    <code>obj</code> ahora contiene los datos JSON enviados por el cliente.
+  </p>
+
+  <p>Por ejemplo, si el cliente envía este mensaje:</p>
+
+  <pre>{
+  "command": "UPDATE_TASK",
+  "data": {
+    "taskId": "5",
+    "stage": 3
+  }
+}</pre>
+
+  <p>Entonces:</p>
+
+  <ul>
+    <li><code>rq.getCommand()</code> devolverá <code>"UPDATE_TASK"</code>.</li>
+    <li><code>rq.getData()</code> devolverá un <code>JsonObject</code> con el contenido:</li>
+  </ul>
+
+  <pre>{
+  "taskId": "5",
+  "stage": 3
+}</pre>
+ 
+
+
 </div>
 
 
@@ -1678,6 +1736,44 @@ System.out.println(json);
 <div class="seccion derecha">
    
  
+  <h2>Cómo se usa JsonObject</h2>
+
+  <p>El servidor accede a los campos así:</p>
+
+  <pre>
+String taskId = obj.get("taskId").getAsString();
+int stage = obj.get("stage").getAsInt();
+  </pre>
+
+  <p>
+     <code>obj.get("taskId")</code> devuelve un elemento JSON (tipo <code>JsonElement</code>).<br>
+    Luego <code>.getAsString()</code> o <code>.getAsInt()</code> lo convierte al tipo Java correspondiente.
+  </p>
+
+  <h2> En resumen</h2>
+
+  <table>
+    <tr>
+      <th>Concepto</th>
+      <th>Descripción</th>
+    </tr>
+    <tr>
+      <td><strong>Clase</strong></td>
+      <td><code>com.google.gson.JsonObject</code></td>
+    </tr>
+    <tr>
+      <td><strong>Función</strong></td>
+      <td>Representa un objeto JSON (clave → valor)</td>
+    </tr>
+    <tr>
+      <td><strong>Uso</strong></td>
+      <td>Leer o modificar datos JSON dinámicamente</td>
+    </tr>
+    <tr>
+      <td><strong>Alternativa</strong></td>
+      <td><code>gson.fromJson(obj, Task.class)</code> (convertir directamente a una clase Java)</td>
+    </tr>
+  </table>
      
 </div>
 </div>

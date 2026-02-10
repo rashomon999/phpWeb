@@ -1777,6 +1777,183 @@ pero está bien que el cierre esté ahí por buenas prácticas.</p>
 <div class="seccion derecha">
    
   
+<header>
+  <h1><span class="emoji">🧩</span> Análisis del modelo Task</h1>
+</header>
+
+<section>
+  <p>
+    Esta clase representa el <strong>modelo de una tarea</strong> dentro del sistema, probablemente parte de una aplicación de gestión de tareas o flujo de trabajo.  
+    Su objetivo es almacenar la información de una tarea individual y servir de puente entre la base de datos y la lógica de negocio.
+  </p>
+</section>
+
+<section>
+  <h2>🔹 1️⃣ Atributos (propiedades del objeto)</h2>
+
+  <pre><code>@Expose private int id;
+@Expose private String title;
+@Expose private String description;
+@Expose private String dueDate;
+@Expose private String priority;
+@Expose(serialize = false, deserialize = true)
+private TaskStage stage;</code></pre>
+
+  <table>
+    <tr><th>Atributo</th><th>Tipo</th><th>Significado</th><th>Notas</th></tr>
+    <tr><td>id</td><td>int</td><td>Identificador único de la tarea (clave primaria).</td><td>Coincide con el campo <code class="inline">id</code> en la base de datos.</td></tr>
+    <tr><td>title</td><td>String</td><td>Título o nombre de la tarea.</td><td>Breve descripción del objetivo.</td></tr>
+    <tr><td>description</td><td>String</td><td>Detalles más extensos de la tarea.</td><td>Campo opcional pero útil para contexto.</td></tr>
+    <tr><td>dueDate</td><td>String</td><td>Fecha límite de la tarea.</td><td>Idealmente sería <code class="inline">LocalDate</code>, pero aquí se usa String.</td></tr>
+    <tr><td>priority</td><td>String</td><td>Nivel de prioridad (por ejemplo: “Alta”, “Media”, “Baja”).</td><td>Podría usarse un enum en versiones más robustas.</td></tr>
+    <tr><td>stage</td><td>TaskStage</td><td>Etapa actual de la tarea.</td><td>Representa una relación con otra entidad (<code class="inline">TaskStage</code>).</td></tr>
+  </table>
+</section>
+
+<section>
+  <h2>🔹 2️⃣ Anotaciones <code class="inline">@Expose</code></h2>
+
+  <p>Estas vienen de <strong>Gson</strong> (<code class="inline">com.google.gson.annotations.Expose</code>), una librería que convierte objetos Java a JSON y viceversa.</p>
+
+  <p><code class="inline">@Expose</code> indica qué atributos deben incluirse al serializar/deserializar a JSON.</p>
+
+  <pre><code>@Expose(serialize = false, deserialize = true)
+private TaskStage stage;</code></pre>
+
+  <ul>
+    <li>✅ <code class="inline">serialize = false</code> → no se incluye <code class="inline">stage</code> al convertir el objeto a JSON (por ejemplo, al enviarlo al cliente).</li>
+    <li>✅ <code class="inline">deserialize = true</code> → sí se puede leer <code class="inline">stage</code> desde JSON entrante (por ejemplo, al recibir una tarea del cliente).</li>
+  </ul>
+
+  <div class="note">
+    📦 Esto se usa para evitar <strong>recursividad o bucles infinitos</strong> (por ejemplo, si <code class="inline">TaskStage</code> también tiene una lista de tareas dentro).
+  </div>
+</section>
+
+<section>
+  <h2>🔹 3️⃣ Constructores</h2>
+
+  <pre><code>public Task() { }</code></pre>
+
+  <p>Solo tiene un constructor vacío, necesario para:</p>
+  <ul>
+    <li>Que Gson pueda crear instancias automáticamente.</li>
+    <li>Facilitar la creación de objetos por frameworks o DAOs.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>🔹 4️⃣ Métodos getters y setters</h2>
+
+  <p>Cada atributo tiene sus respectivos métodos <code class="inline">get</code> y <code class="inline">set</code>:</p>
+
+  <pre><code>public int getId() { return id; }
+public void setId(int id) { this.id = id; }</code></pre>
+
+  <p>📌 Estos métodos permiten <strong>encapsulación</strong>, es decir, acceder y modificar los datos de manera controlada.</p>
+</section>
+
+<section>
+  <h2>🔹 5️⃣ Método toString()</h2>
+
+  <pre><code>@Override
+public String toString() {
+    return id + " - " + title;
+}</code></pre>
+
+  <p>Sirve para representar la tarea como texto, por ejemplo al imprimirla en consola o mostrarla en una lista.</p>
+
+  <div class="note">Ejemplo de salida: <strong>3 - Revisar documentación</strong></div>
+</section>
+
+<section>
+  <h2>🔹 6️⃣ Relación con otras clases</h2>
+
+  <p>El campo <code class="inline">TaskStage stage</code> establece una relación de <strong>muchos a uno (Many-to-One)</strong>:</p>
+
+  <ul>
+    <li>Una etapa puede tener muchas tareas.</li>
+    <li>Pero cada tarea pertenece a una sola etapa.</li>
+  </ul>
+
+  <p>En la base de datos esto se refleja con:</p>
+
+  <pre><code>stage_id INT REFERENCES task_stage(id)</code></pre>
+
+  <p>En el DAO (<code class="inline">TaskDaoDB</code>), esa relación se carga así:</p>
+
+  <pre><code>int stageID = result.getInt("stage_id");
+TaskStage stage = new TaskStage();
+stage.setId(stageID);
+t.setStage(stage);</code></pre>
+</section>
+
+<section>
+  <h2>🧠 7️⃣ En resumen conceptual</h2>
+
+  <table>
+    <tr><th>Elemento</th><th>Descripción</th></tr>
+    <tr><td>Clase</td><td>Task</td></tr>
+    <tr><td>Representa</td><td>Una tarea individual</td></tr>
+    <tr><td>Propósito</td><td>Servir de modelo para manejar datos entre la app y la base de datos</td></tr>
+    <tr><td>Atributos principales</td><td>id, title, description, dueDate, priority</td></tr>
+    <tr><td>Relación</td><td>Tiene un <code class="inline">TaskStage</code> asociado (etapa)</td></tr>
+    <tr><td>Usos comunes</td><td>Serialización JSON, persistencia en BD, transferencia de datos</td></tr>
+  </table>
+</section>
+
+    <hr>
+
+    <header>
+  <h1><span class="emoji">🧩</span> Contexto</h1>
+</header>
+
+<section>
+  <p>Tienes dos clases relacionadas:</p>
+
+  <pre><code>class Task {
+    private int id;
+    private String title;
+    private TaskStage stage; // relación con la etapa
+}
+
+class TaskStage {
+    private int id;
+    private String name;
+    private List&lt;Task&gt; tasks; // relación con las tareas
+}</code></pre>
+
+  <p>Esto genera un problema clásico de <strong>recursión infinita</strong> cuando Gson convierte a JSON:</p>
+
+  <div class="note">
+    Task → contiene stage<br>
+    TaskStage → contiene tasks (que a su vez contienen stage)
+  </div>
+
+  <p>🔁 Gson entra en un bucle infinito al serializar (porque nunca termina de anidar).</p>
+</section>
+
+<section>
+  <h2>🧠 Solución: controlar qué se incluye o no en JSON</h2>
+
+  <p>
+    Gson te permite indicar qué campos incluir o ignorar al serializar (convertir a JSON) o al deserializar (leer JSON).
+    Para eso se usa la anotación <code class="inline">@Expose</code>:
+  </p>
+
+  <pre><code>@Expose(serialize = false, deserialize = true)
+private TaskStage stage;</code></pre>
+
+  <h3>📘 Significado</h3>
+
+  <table>
+    <tr><th>Propiedad</th><th>Qué hace</th><th>Cuándo aplica</th></tr>
+    <tr><td><code class="inline">serialize = false</code></td><td>❌ No se incluye este campo al convertir el objeto a JSON.</td><td>Cuando el servidor envía una respuesta al cliente.</td></tr>
+    <tr><td><code class="inline">deserialize = true</code></td><td>✅ Sí se toma en cuenta este campo al leer JSON recibido.</td><td>Cuando el servidor recibe una solicitud del cliente.</td></tr>
+  </table>
+</section>
+ 
+
 
 
 </div>

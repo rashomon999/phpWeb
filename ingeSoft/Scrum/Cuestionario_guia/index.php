@@ -1,11 +1,11 @@
 <?php
-for ($i = 1; $i <= 250; $i++) {
+for ($i = 1; $i <= 260; $i++) {
     ${"respuesta_" . $i} = '';
 }
 
 
      
-for ($i = 1; $i <= 250; $i++) {
+for ($i = 1; $i <= 260; $i++) {
     ${"verificar_" . $i} = '';
 }
 
@@ -28,35 +28,35 @@ if ($_POST) {
         $respuesta_10 = 'aplicar';
         $respuesta_11 = 'ajusten';
         $respuesta_12 = 'difieren';
-        $respuesta_13 = 'marco de trabajo';
-        $respuesta_14 = 'ayuda';
+        $respuesta_13 = 'Scrum es un marco de trabajo liviano que';
+        $respuesta_14 = 'ayuda a las';
         $respuesta_15 = 'personas';
-        $respuesta_16 = 'valor';
-        $respuesta_17 = 'adaptativas';
-        $respuesta_18 = 'problemas';
+        $respuesta_16 = 'equipos y organizaciones a generar valor';
+        $respuesta_17 = 'a traves de soluciones adaptativas';
+        $respuesta_18 = 'para problemas problemas';
         $respuesta_19 = 'Scrum Master';
         $respuesta_20 = 'fomentar';
         $respuesta_21 = 'entorno';
-        $respuesta_22 = 'ordena';
-        $respuesta_23 = 'trabajo';
+        $respuesta_22 = 'Un Product Owner ordena';
+        $respuesta_23 = 'el trabajo de un';
         $respuesta_24 = 'problema complejo';
-        $respuesta_25 = 'Product Backlog';
-        $respuesta_26 = 'convierte';
-        $respuesta_27 = 'seleccion';
-        $respuesta_28 = 'trabajo';
-        $respuesta_29 = 'Increment';
-        $respuesta_30 = 'valor';
+        $respuesta_25 = 'en un Product Backlog';
+        $respuesta_26 = 'El Scrum Team convierte una';
+        $respuesta_27 = 'seleccion del';
+        $respuesta_28 = 'trabajo en un';
+        $respuesta_29 = 'Increment de';
+        $respuesta_30 = 'valor durante un';
         $respuesta_31 = 'Sprint';
-        $respuesta_32 = 'interesados';
-        $respuesta_33 = 'inspeccionan';
-        $respuesta_34 = 'resultados';
-        $respuesta_35 = 'adaptan';
+        $respuesta_32 = 'El Scrum Team y sus interesados';
+        $respuesta_33 = 'inspeccionan los';
+        $respuesta_34 = 'resultados y se';
+        $respuesta_35 = 'adaptan para el proximo';
         $respuesta_36 = 'Sprint';
         $respuesta_37 = 'valor';
-        $respuesta_38 = 'incompleto';
+        $respuesta_38 = 'El marco de trabajo Scrum es incompleto de manera';
         $respuesta_39 = 'intencional';
-        $respuesta_40 = 'define';
-        $respuesta_41 = 'necesarias';
+        $respuesta_40 = 'define las';
+        $respuesta_41 = 'partes necesarias';
         $respuesta_42 = 'implementar';
         $respuesta_43 = 'teoria';
         $respuesta_44 = 'inteligencia colectiva';
@@ -85,7 +85,7 @@ if ($_POST) {
         $respuesta_67 = 'desperdicio';
         $respuesta_68 = 'enfoca';
         $respuesta_69 = 'esencial';
-        $respuesta_70 = 'iterativo';
+        $respuesta_70 = 'Scrum emplea un enfoque iterativo';
         $respuesta_71 = 'incremental';
         $respuesta_72 = 'optimizar';
         $respuesta_73 = 'previsibilidad';
@@ -100,7 +100,7 @@ if ($_POST) {
         $respuesta_82 = 'compartir';
         $respuesta_83 = 'adquirir';
         $respuesta_84 = 'necesario';
-        $respuesta_85 = 'cuatro';
+        $respuesta_85 = 'Scrum combina cuatro';
         $respuesta_86 = 'formales';
         $respuesta_87 = 'inspeccion';
         $respuesta_88 = 'adaptacion';
@@ -111,30 +111,30 @@ if ($_POST) {
         $respuesta_93 = 'transparencia';
         $respuesta_94 = 'inspeccion';
         $respuesta_95 = 'adaptacion';
-        $respuesta_96 = 'proceso';
+        $respuesta_96 = 'El proceso y el trabajo emergentes deben ser';
         $respuesta_97 = 'trabajo';
-        $respuesta_98 = 'visibles';
-        $respuesta_99 = 'realizan';
-        $respuesta_100 = 'reciben';
+        $respuesta_98 = 'visibles tanto para quienes';
+        $respuesta_99 = 'realizan el';
+        $respuesta_100 = 'como para quienes lo reciben';
         $respuesta_101 = 'estado';
         $respuesta_102 = 'tres';
         $respuesta_103 = 'valor';
         $respuesta_104 = 'riesgo';
-        $respuesta_105 = '154';
+        $respuesta_105 = 'trabajo';
         $respuesta_106 = 'inspeccion';
         $respuesta_107 = 'transparencia';
-        $respuesta_108 = 'artefactos';
-        $respuesta_109 = 'progreso';
+        $respuesta_108 = 'Los artefactos de Scrum y el progreso hacia los objetivos acordados';
+        $respuesta_109 = 'Para ayudar con la inspeccion';
         $respuesta_110 = 'objetivos';
-        $respuesta_111 = 'inspeccionarse';
-        $respuesta_112 = 'variaciones';
-        $respuesta_113 = 'problemas';
-        $respuesta_114 = 'cinco';
+        $respuesta_111 = 'inspeccionarse con frecuencia';
+        $respuesta_112 = 'con diligencia para detectar variaciones';
+        $respuesta_113 = 'problemas potencialmente indeseables';
+        $respuesta_114 = 'Scrum proporciona cadencia en forma de sus cinco eventos';
         $respuesta_115 = 'adaptacion';
-        $respuesta_116 = 'aspecto';
+        $respuesta_116 = 'Si algun aspecto de un';
         $respuesta_117 = 'proceso';
-        $respuesta_118 = 'fuera';
-        $respuesta_119 = 'limites';
+        $respuesta_118 = 'se desvia fuera';
+        $respuesta_119 = 'de los limites aceptables o si el producto resultante';
         $respuesta_120 = 'inaceptable';
         $respuesta_121 = 'aplica';
         $respuesta_122 = 'producen';
@@ -160,10 +160,10 @@ if ($_POST) {
         $respuesta_142 = 'Scrum Team';
         $respuesta_143 = 'trabajo';
         $respuesta_144 = 'decisiones';
-        $respuesta_145 = 'reforzar';
+        $respuesta_145 = 'valores';
         $respuesta_146 = 'eventos';
         $respuesta_147 = 'artefactos';
-        $respuesta_148 = 'unidad fundamental';
+        $respuesta_148 = 'La unidad fundamental';
         $respuesta_149 = 'Scrum Master';
         $respuesta_150 = 'Product Owner';
         $respuesta_151 = 'Developers';
@@ -172,13 +172,13 @@ if ($_POST) {
         $respuesta_154 = 'cohesionada';
         $respuesta_155 = 'objetivo';
         $respuesta_156 = 'Producto';
-        $respuesta_157 = 'multifuncionales';
+        $respuesta_157 = 'Los Scrum Teams son multifuncionales';
         $respuesta_158 = 'habilidades';
         $respuesta_159 = 'valor';
         $respuesta_160 = 'Sprint';
         $respuesta_161 = 'autogestionan';
         $respuesta_162 = 'deciden internamente';
-        $respuesta_163 = 'pequeño';
+        $respuesta_163 = 'El Scrum Team es lo suficientemente pequeño';
         $respuesta_164 = 'agil';
         $respuesta_165 = 'completar';
         $respuesta_166 = 'trabajos';
@@ -211,10 +211,10 @@ if ($_POST) {
         $respuesta_193 = 'calidad';
         $respuesta_194 = 'adherirse';
         $respuesta_195 = 'Definicion de Terminado';
-        $respuesta_196 = 'Adaptar';
+        $respuesta_196 = 'Adaptar su plan';
         $respuesta_197 = 'Objetivo';
         $respuesta_198 = 'Responsabilizarse';
-        $respuesta_199 = 'maximizar';
+        $respuesta_199 = 'El Product Owner es responsable de maximizar';
         $respuesta_200 = 'valor';
         $respuesta_201 = 'producto';
         $respuesta_202 = 'trabajo';
@@ -258,17 +258,16 @@ if ($_POST) {
         $respuesta_240 = 'enfoques';  
         $respuesta_241 = 'pilares empiricos';
         $respuesta_242 = 'responsable';
-        $respuesta_243 = 'personas del Scrum Team';
+        $respuesta_243 = 'Las personas del Scrum Team';
         $respuesta_244 = 'comprometen';
         $respuesta_245 = 'crear';
-        $respuesta_246 = 'depende';
+        $respuesta_246 = 'El uso exitoso de Scrum depende';
         $respuesta_247 = 'que las personas';
-        $respuesta_247 = 'vuelvan';
-
-        for ($i = 1; $i <= 250; $i++) {
-        ${"verificar_$i"} = "correcto";
-        }
-
+        $respuesta_248 = 'vuelvan mas competentes';
+        $respuesta_249 = 'Desarrollamos Scrum a principios de la decada';
+        $respuesta_250 = 'Escribimos la primera version';
+        $respuesta_251 = 'Scrum se basa en el';
+  
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
    if ($respuesta_1 === '1990') {  
@@ -392,7 +391,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la segunda pregunta
     $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-    if ($respuesta_13 === 'marco de trabajo') { 
+    if ($respuesta_13 === 'Scrum es un marco de trabajo liviano que') { 
         $verificar_13 = "correcto";
     } elseif ($respuesta_13 === '') {
         $verificar_13 = '';
@@ -402,7 +401,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la tercera pregunta
      $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-     if ($respuesta_14 === 'ayuda') {  
+     if ($respuesta_14 === 'ayuda a las') {  
          $verificar_14 = "correcto";
      } elseif ($respuesta_14 === '') {
          $verificar_14 = '';
@@ -422,7 +421,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la quinta pregunta
      $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-     if ($respuesta_16 === 'valor') {  
+     if ($respuesta_16 === 'equipos y organizaciones a generar valor') {  
          $verificar_16 = "correcto";
      } elseif ($respuesta_16 === '') {
          $verificar_16 = '';
@@ -432,7 +431,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la sexta pregunta
      $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-     if ($respuesta_17 === 'adaptativas') {  
+     if ($respuesta_17 === 'a traves de soluciones adaptativas') {  
          $verificar_17 = "correcto";
      } elseif ($respuesta_17 === '') {
          $verificar_17 = '';
@@ -442,7 +441,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la séptima pregunta
      $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-     if ($respuesta_18 === 'problemas') {  
+     if ($respuesta_18 === 'para problemas complejos') {  
          $verificar_18 = "correcto";
      } elseif ($respuesta_18 === '') {
          $verificar_18 = '';
@@ -482,7 +481,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la undécima pregunta
      $respuesta_22 = isset($_POST['respuesta_22']) ? $_POST['respuesta_22'] : '';
-     if ($respuesta_22 === 'ordena') {  
+     if ($respuesta_22 === 'Un Product Owner ordena') {  
          $verificar_22 = "correcto";
      } elseif ($respuesta_22 === '') {
          $verificar_22 = '';
@@ -492,7 +491,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
    $respuesta_23 = isset($_POST['respuesta_23']) ? $_POST['respuesta_23'] : '';
-   if ($respuesta_23 === 'trabajo') {  
+   if ($respuesta_23 === 'el trabajo de un') {  
        $verificar_23 = "correcto";
    } elseif ($respuesta_23 === '') {
        $verificar_23 = '';
@@ -512,7 +511,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_25 = isset($_POST['respuesta_25']) ? $_POST['respuesta_25'] : '';
-   if ($respuesta_25 === 'Product Backlog' || $respuesta_25 === 'product backlog') { 
+   if ($respuesta_25 === 'en un Product Backlog' || $respuesta_25 === 'en un product backlog') { 
        $verificar_25 = "correcto";
    } elseif ($respuesta_25 === '') {
        $verificar_25 = '';
@@ -522,7 +521,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_26 = isset($_POST['respuesta_26']) ? $_POST['respuesta_26'] : '';
-   if ($respuesta_26 === 'convierte') {  
+   if ($respuesta_26 === 'El Scrum Team convierte una') {  
        $verificar_26 = "correcto";
    } elseif ($respuesta_26 === '') {
        $verificar_26 = '';
@@ -532,7 +531,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_27 = isset($_POST['respuesta_27']) ? $_POST['respuesta_27'] : '';
-   if ($respuesta_27 === 'seleccion') {  
+   if ($respuesta_27 === 'seleccion del') {  
        $verificar_27 = "correcto";
    } elseif ($respuesta_27 === '') {
        $verificar_27 = '';
@@ -542,7 +541,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_28 = isset($_POST['respuesta_28']) ? $_POST['respuesta_28'] : '';
-   if ($respuesta_28 === 'trabajo') {  
+   if ($respuesta_28 === 'trabajo en un') {  
        $verificar_28 = "correcto";
    } elseif ($respuesta_28 === '') {
        $verificar_28 = '';
@@ -552,7 +551,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_29 = isset($_POST['respuesta_29']) ? $_POST['respuesta_29'] : '';
-   if ($respuesta_29 === 'Increment' || $respuesta_29 === 'increment') {  
+   if ($respuesta_29 === 'Increment de' || $respuesta_29 === 'increment de') {  
        $verificar_29 = "correcto";
    } elseif ($respuesta_29 === '') {
        $verificar_29 = '';
@@ -562,7 +561,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_30 = isset($_POST['respuesta_30']) ? $_POST['respuesta_30'] : '';
-   if ($respuesta_30 === 'valor') {  
+   if ($respuesta_30 === 'valor durante un') {  
        $verificar_30 = "correcto";
    } elseif ($respuesta_30 === '') {
        $verificar_30 = '';
@@ -582,7 +581,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_32 = isset($_POST['respuesta_32']) ? $_POST['respuesta_32'] : '';
-   if ($respuesta_32 === 'interesados') {  
+   if ($respuesta_32 === 'El Scrum Team y sus interesados') {  
        $verificar_32 = "correcto";
    } elseif ($respuesta_32 === '') {
        $verificar_32 = '';
@@ -592,7 +591,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_33 = isset($_POST['respuesta_33']) ? $_POST['respuesta_33'] : '';
-   if ($respuesta_33 === 'inspeccionan') {  
+   if ($respuesta_33 === 'inspeccionan los') {  
        $verificar_33 = "correcto";
    } elseif ($respuesta_33 === '') {
        $verificar_33 = '';
@@ -601,7 +600,7 @@ if ($_POST) {
    }
 
     $respuesta_34 = isset($_POST['respuesta_34']) ? $_POST['respuesta_34'] : '';
-    if ($respuesta_34 === 'resultados') { 
+    if ($respuesta_34 === 'resultados y se') { 
         $verificar_34 = "correcto";
     } elseif ($respuesta_34 === '') {
         $verificar_34 = '';
@@ -610,7 +609,7 @@ if ($_POST) {
     }
 
     $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
-    if ($respuesta_35 === 'adaptan') { 
+    if ($respuesta_35 === 'adaptan para el proximo') { 
         $verificar_35 = "correcto";
     } elseif ($respuesta_35 === '') {
         $verificar_35 = '';
@@ -637,7 +636,7 @@ if ($_POST) {
     }
 
     $respuesta_38 = isset($_POST['respuesta_38']) ? $_POST['respuesta_38'] : '';
-    if ($respuesta_38 === 'incompleto') { 
+    if ($respuesta_38 === 'El marco de trabajo Scrum es incompleto de manera') { 
         $verificar_38 = "correcto";
     } elseif ($respuesta_38 === '') {
         $verificar_38 = '';
@@ -655,7 +654,7 @@ if ($_POST) {
     }
 
  $respuesta_40 = isset($_POST['respuesta_40']) ? $_POST['respuesta_40'] : '';
-if ($respuesta_40 === 'define') { 
+if ($respuesta_40 === 'solo define las') { 
     $verificar_40 = "correcto";
 } elseif ($respuesta_40 === '') {
     $verificar_40 = '';
@@ -664,7 +663,7 @@ if ($respuesta_40 === 'define') {
 }
 
  $respuesta_41 = isset($_POST['respuesta_41']) ? $_POST['respuesta_41'] : '';
-if ($respuesta_41 === 'necesarias') { 
+if ($respuesta_41 === 'partes necesarias') { 
     $verificar_41 = "correcto";
 } elseif ($respuesta_41 === '') {
     $verificar_41 = '';
@@ -926,7 +925,7 @@ if ($respuesta_69 === 'esencial') {
 }
 
  $respuesta_70 = isset($_POST['respuesta_70']) ? $_POST['respuesta_70'] : '';
-if ($respuesta_70 === 'iterativo') { 
+if ($respuesta_70 === 'Scrum emplea un enfoque iterativo') { 
     $verificar_70 = "correcto";
 } elseif ($respuesta_70 === '') {
     $verificar_70 = '';
@@ -1061,7 +1060,7 @@ if ($respuesta_81 === 'trabajo') {
     }
 
     $respuesta_85 = isset($_POST['respuesta_85']) ? $_POST['respuesta_85'] : '';
-    if ($respuesta_85 === 'cuatro' || $respuesta_85 === '4') { 
+    if ($respuesta_85 === 'Scrum combina cuatro' || $respuesta_85 === 'Scrum combina 4') { 
         $verificar_85 = "correcto";
     } elseif ($respuesta_85 === '') {
         $verificar_85 = '';
@@ -1160,7 +1159,7 @@ if ($respuesta_95 === 'adaptacion') {
 }
 
  $respuesta_96 = isset($_POST['respuesta_96']) ? $_POST['respuesta_96'] : '';
-if ($respuesta_96 === 'proceso') { 
+if ($respuesta_96 === 'El proceso y el trabajo emergentes deben ser') { 
     $verificar_96 = "correcto";
 } elseif ($respuesta_96 === '') {
     $verificar_96 = '';
@@ -1169,7 +1168,7 @@ if ($respuesta_96 === 'proceso') {
 }
 
  $respuesta_97 = isset($_POST['respuesta_97']) ? $_POST['respuesta_97'] : '';
-if ($respuesta_97 === 'trabajo') { 
+if ($respuesta_97 === '') { 
     $verificar_97 = "correcto";
 } elseif ($respuesta_97 === '') {
     $verificar_97 = '';
@@ -1178,7 +1177,7 @@ if ($respuesta_97 === 'trabajo') {
 }
 
  $respuesta_98 = isset($_POST['respuesta_98']) ? $_POST['respuesta_98'] : '';
-if ($respuesta_98 === 'visibles') { 
+if ($respuesta_98 === 'visibles tanto para quienes') { 
     $verificar_98 = "correcto";
 } elseif ($respuesta_98 === '') {
     $verificar_98 = '';
@@ -1187,7 +1186,7 @@ if ($respuesta_98 === 'visibles') {
 }
 
  $respuesta_99 = isset($_POST['respuesta_99']) ? $_POST['respuesta_99'] : '';
-if ($respuesta_99 === 'realizan') { 
+if ($respuesta_99 === 'realizan el') { 
     $verificar_99 = "correcto";
 } elseif ($respuesta_99 === '') {
     $verificar_99 = '';
@@ -1197,7 +1196,7 @@ if ($respuesta_99 === 'realizan') {
 
 
  $respuesta_100 = isset($_POST['respuesta_100']) ? $_POST['respuesta_100'] : '';
-if ($respuesta_100 === 'reciben') { 
+if ($respuesta_100 === 'como para quienes lo reciben') { 
     $verificar_100 = "correcto";
 } elseif ($respuesta_100 === '') {
     $verificar_100 = '';
@@ -1269,7 +1268,7 @@ if ($respuesta_107 === 'transparencia') {
 }
 
  $respuesta_108 = isset($_POST['respuesta_108']) ? $_POST['respuesta_108'] : '';
-if ($respuesta_108 === 'artefactos') { 
+if ($respuesta_108 === 'Los artefactos de Scrum y el progreso hacia los objetivos acordados') { 
     $verificar_108 = "correcto";
 } elseif ($respuesta_108 === '') {
     $verificar_108 = '';
@@ -1278,7 +1277,7 @@ if ($respuesta_108 === 'artefactos') {
 }
 
  $respuesta_109 = isset($_POST['respuesta_109']) ? $_POST['respuesta_109'] : '';
-if ($respuesta_109 === 'progreso') { 
+if ($respuesta_109 === 'Para ayudar con la inspeccion') { 
     $verificar_109 = "correcto";
 } elseif ($respuesta_109 === '') {
     $verificar_109 = '';
@@ -1287,7 +1286,7 @@ if ($respuesta_109 === 'progreso') {
 }
 
  $respuesta_110 = isset($_POST['respuesta_110']) ? $_POST['respuesta_110'] : '';
-if ($respuesta_110 === 'objetivos') { 
+if ($respuesta_110 === ' ') { 
     $verificar_110 = "correcto";
 } elseif ($respuesta_110 === '') {
     $verificar_110 = '';
@@ -1295,9 +1294,8 @@ if ($respuesta_110 === 'objetivos') {
     $verificar_110 = "incorrecto";
 }
 
-// Tabla del 12
-$respuesta_111 = isset($_POST['respuesta_111']) ? $_POST['respuesta_111'] : '';
-if ($respuesta_111 === 'inspeccionarse') {  
+ $respuesta_111 = isset($_POST['respuesta_111']) ? $_POST['respuesta_111'] : '';
+if ($respuesta_111 === 'inspeccionarse con frecuencia') {  
     $verificar_111 = "correcto";
 } elseif ($respuesta_111 === '') {
     $verificar_111 = '';
@@ -1306,7 +1304,7 @@ if ($respuesta_111 === 'inspeccionarse') {
 }
 
 $respuesta_112 = isset($_POST['respuesta_112']) ? $_POST['respuesta_112'] : '';
-if ($respuesta_112 === 'variaciones') {  
+if ($respuesta_112 === 'con diligencia para detectar variaciones') {  
     $verificar_112 = "correcto";
 } elseif ($respuesta_112 === '') {
     $verificar_112 = '';
@@ -1315,7 +1313,7 @@ if ($respuesta_112 === 'variaciones') {
 }
 
 $respuesta_113 = isset($_POST['respuesta_113']) ? $_POST['respuesta_113'] : '';
-if ($respuesta_113 === 'problemas') {  
+if ($respuesta_113 === 'problemas potencialmente indeseables') {  
     $verificar_113 = "correcto";
 } elseif ($respuesta_113 === '') {
     $verificar_113 = '';
@@ -1324,7 +1322,8 @@ if ($respuesta_113 === 'problemas') {
 }
 
 $respuesta_114 = isset($_POST['respuesta_114']) ? $_POST['respuesta_114'] : '';
-if ($respuesta_114 === 'cinco' || $respuesta_114 === '5') {  
+if ($respuesta_114 === 'Scrum proporciona cadencia en forma de sus cinco eventos' || 
+$respuesta_114 === 'Scrum proporciona cadencia en forma de sus 5 eventos') {  
     $verificar_114 = "correcto";
 } elseif ($respuesta_114 === '') {
     $verificar_114 = '';
@@ -1342,7 +1341,7 @@ if ($respuesta_115 === 'adaptacion') {
 }
 
 $respuesta_116 = isset($_POST['respuesta_116']) ? $_POST['respuesta_116'] : '';
-if ($respuesta_116 === 'aspecto') {  
+if ($respuesta_116 === 'Si algun aspecto de un') {  
     $verificar_116 = "correcto";
 } elseif ($respuesta_116 === '') {
     $verificar_116 = '';
@@ -1360,7 +1359,7 @@ if ($respuesta_117 === 'proceso') {
 }
 
 $respuesta_118 = isset($_POST['respuesta_118']) ? $_POST['respuesta_118'] : '';
-if ($respuesta_118 === 'fuera') {  
+if ($respuesta_118 === 'se desvia fuera') {  
     $verificar_118 = "correcto";
 } elseif ($respuesta_118 === '') {
     $verificar_118 = '';
@@ -1369,7 +1368,7 @@ if ($respuesta_118 === 'fuera') {
 }
 
 $respuesta_119 = isset($_POST['respuesta_119']) ? $_POST['respuesta_119'] : '';
-if ($respuesta_119 === 'limites') {  
+if ($respuesta_119 === 'de los limites aceptables o si el producto resultante') {  
     $verificar_119 = "correcto";
 } elseif ($respuesta_119 === '') {
     $verificar_119 = '';
@@ -1387,7 +1386,7 @@ if ($respuesta_120 === 'inaceptable') {
 }
 
 $respuesta_121 = isset($_POST['respuesta_121']) ? $_POST['respuesta_121'] : '';
-if ($respuesta_121 === 'aplica') {  
+if ($respuesta_121 === 'el proceso que se aplica') {  
     $verificar_121 = "correcto";
 } elseif ($respuesta_121 === '') {
     $verificar_121 = '';
@@ -1633,7 +1632,7 @@ if ($respuesta_147 === 'artefactos') {
 }
 
 $respuesta_148 = isset($_POST['respuesta_148']) ? $_POST['respuesta_148'] : '';
-if ($respuesta_148 === 'unidad fundamental') {  
+if ($respuesta_148 === 'La unidad fundamental') {  
     $verificar_148 = "correcto";
 } elseif ($respuesta_148 === '') {
     $verificar_148 = '';
@@ -1714,7 +1713,7 @@ if ($respuesta_156 === 'Producto' || $respuesta_156 === 'producto') {
 }
 
 $respuesta_157 = isset($_POST['respuesta_157']) ? $_POST['respuesta_157'] : '';
-if ($respuesta_157 === 'multifuncionales') {  
+if ($respuesta_157 === 'Los Scrum Teams son multifuncionales') {  
     $verificar_157 = "correcto";
 } elseif ($respuesta_157 === '') {
     $verificar_157 = '';
@@ -1768,7 +1767,7 @@ if ($respuesta_162 === 'deciden internamente') {
 }
 
 $respuesta_163 = isset($_POST['respuesta_163']) ? $_POST['respuesta_163'] : '';
-if ($respuesta_163 === 'pequeño') {  
+if ($respuesta_163 === 'El Scrum Team es lo suficientemente pequeño') {  
     $verificar_163 = "correcto";
 } elseif ($respuesta_163 === '') {
     $verificar_163 = '';
@@ -2020,7 +2019,9 @@ if ($respuesta_190 === 'responsables') {
 }
 
 $respuesta_191 = isset($_POST['respuesta_191']) ? $_POST['respuesta_191'] : '';
-if ($respuesta_191 === 'plan') {  
+if ($respuesta_191 === 'Crear un plan'
+|| $respuesta_191 === 'crear un plan'
+) {  
     $verificar_191 = "correcto";
 } elseif ($respuesta_191 === '') {
     $verificar_191 = '';
@@ -2065,7 +2066,7 @@ if ($respuesta_195 === 'Definicion de Terminado' || $respuesta_195 === 'definici
 }
 
 $respuesta_196 = isset($_POST['respuesta_196']) ? $_POST['respuesta_196'] : '';
-if ($respuesta_196 === 'Adaptar' || $respuesta_196 === 'adaptar') {  
+if ($respuesta_196 === 'Adaptar su plan' || $respuesta_196 === 'adaptar su plan') {  
     $verificar_196 = "correcto";
 } elseif ($respuesta_196 === '') {
     $verificar_196 = '';
@@ -2092,7 +2093,7 @@ if ($respuesta_198 === 'Responsabilizarse' || $respuesta_198 === 'responsabiliza
 }
 
 $respuesta_199 = isset($_POST['respuesta_199']) ? $_POST['respuesta_199'] : '';
-if ($respuesta_199 === 'maximizar') {  
+if ($respuesta_199 === 'El Product Owner es responsable de maximizar') {  
     $verificar_199 = "correcto";
 } elseif ($respuesta_199 === '') {
     $verificar_199 = '';
@@ -2391,7 +2392,7 @@ if ($respuesta_231 === 'pequeñas actualizaciones') {
 
 
 $respuesta_232 = isset($_POST['respuesta_232']) ? $_POST['respuesta_232'] : '';
-if ($respuesta_232 === 'elemento') {  
+if ($respuesta_232 === 'Cada elemento del') {  
     $verificar_232 = "correcto";
 } elseif ($respuesta_232 === '') {
     $verificar_232 = '';
@@ -2439,7 +2440,7 @@ if ($respuesta_236 === 'resultados obtenidos') {
  
 
 $respuesta_237 = isset($_POST['respuesta_237']) ? $_POST['respuesta_237'] : '';
-if ($respuesta_237 === 'medida') {  
+if ($respuesta_237 === 'A medida que se utiliza Scrum') {  
     $verificar_237 = "correcto";
 } elseif ($respuesta_237 === '') {
     $verificar_237 = '';
@@ -2493,7 +2494,7 @@ if ($respuesta_242 === 'responsable') {
 }
 
 $respuesta_243 = isset($_POST['respuesta_243']) ? $_POST['respuesta_243'] : '';
-if ($respuesta_243 === 'personas del Scrum Team'  || $respuesta_243 === 'personas del scrum team') {  
+if ($respuesta_243 === 'Las personas del Scrum Team'  || $respuesta_243 === 'Las personas del scrum team') {  
     $verificar_243 = "correcto";
 } elseif ($respuesta_243 === '') {
     $verificar_243 = '';
@@ -2520,7 +2521,7 @@ if ($respuesta_245 === 'crear' ) {
 }
 
 $respuesta_246 = isset($_POST['respuesta_246']) ? $_POST['respuesta_246'] : '';
-if ($respuesta_246 === 'depende') {   
+if ($respuesta_246 === 'El uso exitoso de Scrum depende') {   
     $verificar_246 = "correcto";
 } elseif ($respuesta_246 === '') {
     $verificar_246 = '';
@@ -2538,7 +2539,7 @@ if ($respuesta_247 === 'que las personas') {
 }
 
 $respuesta_248 = isset($_POST['respuesta_248']) ? $_POST['respuesta_248'] : '';
-if ($respuesta_248 === 'vuelvan') {  
+if ($respuesta_248 === 'vuelvan mas competentes') {  
     $verificar_248 = "correcto";
 } elseif ($respuesta_248 === '') {
     $verificar_248 = '';
@@ -2547,7 +2548,9 @@ if ($respuesta_248 === 'vuelvan') {
 }
 
 $respuesta_249 = isset($_POST['respuesta_249']) ? $_POST['respuesta_249'] : '';
-if ($respuesta_249 === '23434232') {  
+if ($respuesta_249 === 'Desarrollamos Scrum a principios de la decada'
+|| $respuesta_249 === 'Desarrollamos scrum a principios de la decada'
+) {  
     $verificar_249 = "correcto";
 } elseif ($respuesta_249 === '') {
     $verificar_249 = '';
@@ -2556,7 +2559,7 @@ if ($respuesta_249 === '23434232') {
 }
 
 $respuesta_250 = isset($_POST['respuesta_250']) ? $_POST['respuesta_250'] : '';
-if ($respuesta_250 === '23434232') {  
+if ($respuesta_250 === 'Escribimos la primera version') {  
     $verificar_250 = "correcto";
 } elseif ($respuesta_250 === '') {
     $verificar_250 = '';
@@ -2564,6 +2567,187 @@ if ($respuesta_250 === '23434232') {
     $verificar_250 = "incorrecto";
 }
    
+
+$respuesta_251 = isset($_POST['respuesta_251']) ? $_POST['respuesta_251'] : '';
+if ($respuesta_251 === 'Scrum se basa en el') { 
+    $verificar_251 = "correcto";
+} elseif ($respuesta_251 === '') {
+    $verificar_251 = '';
+} else {
+    $verificar_251 = "incorrecto";
+}
+
+$respuesta_252 = isset($_POST['respuesta_252']) ? $_POST['respuesta_252'] : '';
+if ($respuesta_252 === '252') { 
+    $verificar_252 = "correcto";
+} elseif ($respuesta_252 === '') {
+    $verificar_252 = '';
+} else {
+    $verificar_252 = "incorrecto";
+}
+
+$respuesta_253 = isset($_POST['respuesta_253']) ? $_POST['respuesta_253'] : '';
+if ($respuesta_253 === '253') { 
+    $verificar_253 = "correcto";
+} elseif ($respuesta_253 === '') {
+    $verificar_253 = '';
+} else {
+    $verificar_253 = "incorrecto";
+}
+
+$respuesta_254 = isset($_POST['respuesta_254']) ? $_POST['respuesta_254'] : '';
+if ($respuesta_254 === '254') { 
+    $verificar_254 = "correcto";
+} elseif ($respuesta_254 === '') {
+    $verificar_254 = '';
+} else {
+    $verificar_254 = "incorrecto";
+}
+
+$respuesta_255 = isset($_POST['respuesta_255']) ? $_POST['respuesta_255'] : '';
+if ($respuesta_255 === '255') { 
+    $verificar_255 = "correcto";
+} elseif ($respuesta_255 === '') {
+    $verificar_255 = '';
+} else {
+    $verificar_255 = "incorrecto";
+}
+
+$respuesta_256 = isset($_POST['respuesta_256']) ? $_POST['respuesta_256'] : '';
+if ($respuesta_256 === '256') { 
+    $verificar_256 = "correcto";
+} elseif ($respuesta_256 === '') {
+    $verificar_256 = '';
+} else {
+    $verificar_256 = "incorrecto";
+}
+
+$respuesta_257 = isset($_POST['respuesta_257']) ? $_POST['respuesta_257'] : '';
+if ($respuesta_257 === '257') { 
+    $verificar_257 = "correcto";
+} elseif ($respuesta_257 === '') {
+    $verificar_257 = '';
+} else {
+    $verificar_257 = "incorrecto";
+}
+
+$respuesta_258 = isset($_POST['respuesta_258']) ? $_POST['respuesta_258'] : '';
+if ($respuesta_258 === '258') { 
+    $verificar_258 = "correcto";
+} elseif ($respuesta_258 === '') {
+    $verificar_258 = '';
+} else {
+    $verificar_258 = "incorrecto";
+}
+
+$respuesta_259 = isset($_POST['respuesta_259']) ? $_POST['respuesta_259'] : '';
+if ($respuesta_259 === '259') { 
+    $verificar_259 = "correcto";
+} elseif ($respuesta_259 === '') {
+    $verificar_259 = '';
+} else {
+    $verificar_259 = "incorrecto";
+}
+
+$respuesta_260 = isset($_POST['respuesta_260']) ? $_POST['respuesta_260'] : '';
+if ($respuesta_260 === '260') { 
+    $verificar_260 = "correcto";
+} elseif ($respuesta_260 === '') {
+    $verificar_260 = '';
+} else {
+    $verificar_260 = "incorrecto";
+}
+
+$respuesta_261 = isset($_POST['respuesta_261']) ? $_POST['respuesta_261'] : '';
+if ($respuesta_261 === '261') { 
+    $verificar_261 = "correcto";
+} elseif ($respuesta_261 === '') {
+    $verificar_261 = '';
+} else {
+    $verificar_261 = "incorrecto";
+}
+
+$respuesta_262 = isset($_POST['respuesta_262']) ? $_POST['respuesta_262'] : '';
+if ($respuesta_262 === '262') { 
+    $verificar_262 = "correcto";
+} elseif ($respuesta_262 === '') {
+    $verificar_262 = '';
+} else {
+    $verificar_262 = "incorrecto";
+}
+
+$respuesta_263 = isset($_POST['respuesta_263']) ? $_POST['respuesta_263'] : '';
+if ($respuesta_263 === '263') { 
+    $verificar_263 = "correcto";
+} elseif ($respuesta_263 === '') {
+    $verificar_263 = '';
+} else {
+    $verificar_263 = "incorrecto";
+}
+
+$respuesta_264 = isset($_POST['respuesta_264']) ? $_POST['respuesta_264'] : '';
+if ($respuesta_264 === '264') { 
+    $verificar_264 = "correcto";
+} elseif ($respuesta_264 === '') {
+    $verificar_264 = '';
+} else {
+    $verificar_264 = "incorrecto";
+}
+
+$respuesta_265 = isset($_POST['respuesta_265']) ? $_POST['respuesta_265'] : '';
+if ($respuesta_265 === '265') { 
+    $verificar_265 = "correcto";
+} elseif ($respuesta_265 === '') {
+    $verificar_265 = '';
+} else {
+    $verificar_265 = "incorrecto";
+}
+
+$respuesta_266 = isset($_POST['respuesta_266']) ? $_POST['respuesta_266'] : '';
+if ($respuesta_266 === '266') { 
+    $verificar_266 = "correcto";
+} elseif ($respuesta_266 === '') {
+    $verificar_266 = '';
+} else {
+    $verificar_266 = "incorrecto";
+}
+
+$respuesta_267 = isset($_POST['respuesta_267']) ? $_POST['respuesta_267'] : '';
+if ($respuesta_267 === '267') { 
+    $verificar_267 = "correcto";
+} elseif ($respuesta_267 === '') {
+    $verificar_267 = '';
+} else {
+    $verificar_267 = "incorrecto";
+}
+
+$respuesta_268 = isset($_POST['respuesta_268']) ? $_POST['respuesta_268'] : '';
+if ($respuesta_268 === '268') { 
+    $verificar_268 = "correcto";
+} elseif ($respuesta_268 === '') {
+    $verificar_268 = '';
+} else {
+    $verificar_268 = "incorrecto";
+}
+
+$respuesta_269 = isset($_POST['respuesta_269']) ? $_POST['respuesta_269'] : '';
+if ($respuesta_269 === '269') { 
+    $verificar_269 = "correcto";
+} elseif ($respuesta_269 === '') {
+    $verificar_269 = '';
+} else {
+    $verificar_269 = "incorrecto";
+}
+
+$respuesta_270 = isset($_POST['respuesta_270']) ? $_POST['respuesta_270'] : '';
+if ($respuesta_270 === '270') { 
+    $verificar_270 = "correcto";
+} elseif ($respuesta_270 === '') {
+    $verificar_270 = '';
+} else {
+    $verificar_270 = "incorrecto";
+}
+
 }
 }
 ?>
@@ -2865,9 +3049,12 @@ function ocultarMensaje4() {
     <h2>Propósito de la Guía Scrum</h2>
 
     <p>
-    Desarrollamos Scrum a principios de la década de 
+    <input type="text" name="respuesta_249" value="<?php echo $respuesta_249; ?>" size="40">
+      de 
     <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="4">
-    . Escribimos la primera versión de la Guía Scrum
+    . 
+    <input type="text" name="respuesta_250" value="<?php echo $respuesta_250; ?>" size="27">
+      de la Guía Scrum
     en 
     <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="4">
     para ayudar a las personas de todo el mundo a comprender Scrum. Hemos desarrollado la Guía
@@ -2878,9 +3065,8 @@ function ocultarMensaje4() {
     </p>
 
     <p>
-    La Guía de Scrum contiene la definición de Scrum. Cada 
-    <input type="text" name="respuesta_232" value="<?php echo $respuesta_232; ?>" size="9">
-    del 
+    La Guía de Scrum contiene la definición de Scrum.   
+    <input type="text" name="respuesta_232" value="<?php echo $respuesta_232; ?>" size="14"> 
     <input type="text" name="respuesta_233" value="<?php echo $respuesta_233; ?>" size="13">
     tiene un
     <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="9">
@@ -2914,11 +3100,10 @@ function ocultarMensaje4() {
     </p>
 
     <p>
-    A 
-    <input type="text" name="respuesta_237" value="<?php echo $respuesta_237; ?>" size="9">
-      que 
-    <input type="text" name="respuesta_238" value="<?php echo $respuesta_238; ?>" size="9">
-      Scrum, se pueden 
+      
+    <input type="text" name="respuesta_237" value="<?php echo $respuesta_237; ?>" size="26">
+        
+       , se pueden 
     <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="9">
     , 
     <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="9"> 
@@ -2936,6 +3121,8 @@ function ocultarMensaje4() {
     describen en otra parte.
     </p>   
     <button type="submit">Enviar</button> 
+    <?php echo $verificar_249 ?>
+    <?php echo $verificar_250 ?>
     <?php echo $verificar_1 ?>
     <?php echo $verificar_2 ?>
     <?php echo $verificar_230 ?>
@@ -2952,7 +3139,6 @@ function ocultarMensaje4() {
     <?php echo $verificar_7 ?>  
     <?php echo $verificar_8 ?>
     <?php echo $verificar_237 ?>
-    <?php echo $verificar_238 ?>  
     <?php echo $verificar_9 ?>
     <?php echo $verificar_10 ?>
     <?php echo $verificar_239 ?> 
@@ -2963,20 +3149,19 @@ function ocultarMensaje4() {
     <hr>
     <h2>Definición de Scrum</h2>
 
-    <p>
-    Scrum es un 
-    <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="15"> 
-    liviano que 
-    <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="8">
-    a las 
+    <p> 
+    <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="36"> 
+        
+    <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="10">
+      
     <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="8">
-    , equipos y organizaciones a generar  
-    <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="8">
-    a través de soluciones 
-    <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="8">
-    para 
-    <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="8">
-    complejos.
+    ,      
+    <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="35">
+      
+    <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="31">
+      
+    <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="22">
+     .
     </p>
 
     <p>
@@ -2990,36 +3175,34 @@ function ocultarMensaje4() {
     </p>
 
     <ol>
-    <li>Un Product Owner 
-    <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="8">    
-    el 
-    <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="8">
-    de un 
+    <li>  
+    <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="21">    
+      
+    <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="11">
+     
     <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="16">
-    en un 
-    <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="16">
+      
+    <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="20">
     .</li>
-    <li>El Scrum Team 
-    <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="8">    
-    una 
-    <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="8">
-    del 
-    <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="8">
-    en un 
-    <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="8">
-    de 
-    <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="8">
-    durante un 
+    <li> 
+    <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="23">    
+    <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="8"> 
+    <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="9">
+      
+    <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="9">
+      
+    <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="14">
+      
     <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="8">
     .</li>
-    <li>El Scrum Team y sus 
-    <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="8">    
-    <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="8">
-    los 
-    <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="8">
-    y se 
-    <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="8">
-    para el próximo 
+    <li> 
+    <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="28">    
+    <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="12">
+      
+    <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="10">
+      
+    <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="20">
+      
     <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="8">
     .</li>
     <li>
@@ -3084,14 +3267,14 @@ function ocultarMensaje4() {
     Scrum es simple. Pruébelo como está y determine si su filosofía, teoría y estructura ayudan a lograr
     objetivos y crear 
     <input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="8">
-    . El marco de trabajo Scrum es 
-    <input type="text" name="respuesta_38" value="<?php echo $respuesta_38; ?>" size="8">
-    de manera 
+    .   
+    <input type="text" name="respuesta_38" value="<?php echo $respuesta_38; ?>" size="47">
+      
     <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="8">
-    , solo 
-    <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="8">
-    las partes 
-    <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="8">
+    ,   
+    <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="11">
+        
+    <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="12">
     para 
     <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="8">
     la 
@@ -3158,7 +3341,8 @@ function ocultarMensaje4() {
     <h3>Teoría de Scrum</h3>
 
     <p>
-    Scrum se basa en el 
+    <input type="text" name="respuesta_251" value="<?php echo $respuesta_251; ?>" size="16">
+      
     <input type="text" name="respuesta_58" value="<?php echo $respuesta_58; ?>" size="9">
     y el 
     <input type="text" name="respuesta_59" value="<?php echo $respuesta_59; ?>" size="16">
@@ -3189,8 +3373,8 @@ function ocultarMensaje4() {
     </p>
 
     <p>
-    Scrum emplea un enfoque 
-    <input type="text" name="respuesta_70" value="<?php echo $respuesta_70; ?>" size="10"> e 
+      
+    <input type="text" name="respuesta_70" value="<?php echo $respuesta_70; ?>" size="31"> e 
     <input type="text" name="respuesta_71" value="<?php echo $respuesta_71; ?>" size="10">
     para 
     <input type="text" name="respuesta_72" value="<?php echo $respuesta_72; ?>" size="10">
@@ -3223,8 +3407,8 @@ function ocultarMensaje4() {
     </p> 
 
     <p>
-    Scrum combina 
-    <input type="text" name="respuesta_85" value="<?php echo $respuesta_85; ?>" size="10">
+      
+    <input type="text" name="respuesta_85" value="<?php echo $respuesta_85; ?>" size="17">
     eventos 
     <input type="text" name="respuesta_86" value="<?php echo $respuesta_86; ?>" size="10">
     para 
@@ -3272,6 +3456,7 @@ function ocultarMensaje4() {
 
 
     <button type="submit">Enviar</button>
+    <?php echo $verificar_251 ?>
     <?php echo $verificar_58 ?>
     <?php echo $verificar_59 ?>
     <?php echo $verificar_60 ?>
@@ -3318,19 +3503,16 @@ function ocultarMensaje4() {
     <h2><input type="text"  value="<?php echo $respuesta_93; ?>" size="10" readonly></h2>
 
     <p>
-    El 
-    <input type="text" name="respuesta_96" value="<?php echo $respuesta_96; ?>" size="10">
-    y el 
-    <input type="text" name="respuesta_97" value="<?php echo $respuesta_97; ?>" size="10">
-    emergentes deben ser 
-    <input type="text" name="respuesta_98" value="<?php echo $respuesta_98; ?>" size="10">
-    tanto para quienes 
-    <input type="text" name="respuesta_99" value="<?php echo $respuesta_99; ?>" size="10">
-    el 
-    <input type="text" name="respuesta_105" value="<?php echo $respuesta_105; ?>" size="10">
-    como para
-    quienes lo 
-    <input type="text" name="respuesta_100" value="<?php echo $respuesta_100; ?>" size="10">
+      
+    <input type="text" name="respuesta_96" value="<?php echo $respuesta_96; ?>" size="39">
+    <input type="text" name="respuesta_98" value="<?php echo $respuesta_98; ?>" size="21">
+      
+    <input type="text" name="respuesta_99" value="<?php echo $respuesta_99; ?>" size="8">
+      
+    <input type="text" name="respuesta_105" value="<?php echo $respuesta_105; ?>" size="5">
+     
+      
+    <input type="text" name="respuesta_100" value="<?php echo $respuesta_100; ?>" size="25">
     . Con Scrum, las decisiones importantes se basan en el 
     <input type="text" name="respuesta_101" value="<?php echo $respuesta_101; ?>" size="10">
     percibido de sus 
@@ -3358,8 +3540,7 @@ function ocultarMensaje4() {
 
     <button type="submit">Enviar</button>
     <?php echo $verificar_96 ?>
-    <?php echo $verificar_97 ?>
-    <?php echo $verificar_98 ?> 
+     <?php echo $verificar_98 ?> 
     <?php echo $verificar_99 ?>
     <?php echo $verificar_100 ?>
     <?php echo $verificar_101 ?>
@@ -3373,23 +3554,19 @@ function ocultarMensaje4() {
     <h2> <input type="text" value="<?php echo $respuesta_94; ?>" size="10" readonly></h2>
 
     <p>
-    Los 
-    <input type="text" name="respuesta_108" value="<?php echo $respuesta_108; ?>" size="10">
-    de Scrum y el 
-    <input type="text" name="respuesta_109" value="<?php echo $respuesta_109; ?>" size="10">
-    hacia los 
-    <input type="text" name="respuesta_110" value="<?php echo $respuesta_110; ?>" size="10">
-    acordados deben 
-    <input type="text" name="respuesta_111" value="<?php echo $respuesta_111; ?>" size="10">
-    con
-    frecuencia y con diligencia para detectar 
-    <input type="text" name="respuesta_112" value="<?php echo $respuesta_112; ?>" size="10">
+      
+    <input type="text" name="respuesta_108" value="<?php echo $respuesta_108; ?>" size="62"> 
+       deben 
+    <input type="text" name="respuesta_111" value="<?php echo $respuesta_111; ?>" size="26">
+      y   
+    <input type="text" name="respuesta_112" value="<?php echo $respuesta_112; ?>" size="35">
     o 
-    <input type="text" name="respuesta_113" value="<?php echo $respuesta_113; ?>" size="10">
-    potencialmente indeseables. Para
-    ayudar con la inspección, Scrum proporciona cadencia en forma de sus 
-    <input type="text" name="respuesta_114" value="<?php echo $respuesta_114; ?>" size="10">
-    eventos.
+    <input type="text" name="respuesta_113" value="<?php echo $respuesta_113; ?>" size="34">
+     . 
+    <input type="text" name="respuesta_109" value="<?php echo $respuesta_109; ?>" size="25"> 
+     ,   
+    <input type="text" name="respuesta_114" value="<?php echo $respuesta_114; ?>" size="53">
+     .
     </p>
 
     <p>
@@ -3415,18 +3592,18 @@ function ocultarMensaje4() {
     <h2> <input type="text"  value="<?php echo $respuesta_95; ?>" size="10"></h2>
 
     <p>
-    Si algún 
-    <input type="text" name="respuesta_116" value="<?php echo $respuesta_116; ?>" size="10">
-    de un 
-    <input type="text" name="respuesta_117" value="<?php echo $respuesta_117; ?>" size="10">
-    se desvía 
+      
+    <input type="text" name="respuesta_116" value="<?php echo $respuesta_116; ?>" size="18">
+      
+    <input type="text" name="respuesta_117" value="<?php echo $respuesta_117; ?>" size="5">
+      
     <input type="text" name="respuesta_118" value="<?php echo $respuesta_118; ?>" size="10">
-    de los 
-    <input type="text" name="respuesta_119" value="<?php echo $respuesta_119; ?>" size="10">
-    aceptables o si el producto resultante es
+      
+    <input type="text" name="respuesta_119" value="<?php echo $respuesta_119; ?>" size="46">
+        es
     <input type="text" name="respuesta_120" value="<?php echo $respuesta_120; ?>" size="10">
-    , el proceso que se 
-    <input type="text" name="respuesta_121" value="<?php echo $respuesta_121; ?>" size="10">
+    ,   
+    <input type="text" name="respuesta_121" value="<?php echo $respuesta_121; ?>" size="20">
     o los materiales que se 
     <input type="text" name="respuesta_122" value="<?php echo $respuesta_122; ?>" size="10">
     deben 
@@ -3473,13 +3650,13 @@ function ocultarMensaje4() {
     <h2>Valores de Scrum</h2>
     
     <p>
-    El uso exitoso de Scrum 
-    <input type="text" name="respuesta_246" value="<?php echo $respuesta_246; ?>" size="10">
+      
+    <input type="text" name="respuesta_246" value="<?php echo $respuesta_246; ?>" size="29">
      de 
     <input type="text" name="respuesta_247" value="<?php echo $respuesta_247; ?>" size="12">
       se 
-      <input type="text" name="respuesta_248" value="<?php echo $respuesta_248; ?>" size="8">
-      más competentes en vivir 
+      <input type="text" name="respuesta_248" value="<?php echo $respuesta_248; ?>" size="21">
+        en vivir 
     <input type="text" name="respuesta_128" value="<?php echo $respuesta_128; ?>" size="10">
     valores: 
     <input type="text" name="respuesta_129" value="<?php echo $respuesta_129; ?>" size="10">,
@@ -3570,12 +3747,12 @@ function ocultarMensaje4() {
 
     <h2>Scrum Team</h2>
     <p>
-    La 
+      
     <input type="text" name="respuesta_148" value="<?php echo $respuesta_148; ?>" size="18">
     de Scrum es un pequeño equipo de personas, un Scrum Team. El Scrum Team
     consta de un 
     <input type="text" name="respuesta_149" value="<?php echo $respuesta_149; ?>" size="9">,
-    <input type="text" name="respuesta_150" value="<?php echo $respuesta_150; ?>" size="9"> y
+    <input type="text" name="respuesta_150" value="<?php echo $respuesta_150; ?>" size="11"> y
     <input type="text" name="respuesta_151" value="<?php echo $respuesta_151; ?>" size="9">
     . Dentro de un Scrum Team, no hay
     <input type="text" name="respuesta_152" value="<?php echo $respuesta_152; ?>" size="9">
@@ -3592,8 +3769,8 @@ function ocultarMensaje4() {
     .
     </p>
     <p>
-    Los Scrum Teams son 
-    <input type="text" name="respuesta_157" value="<?php echo $respuesta_157; ?>" size="12">
+      
+    <input type="text" name="respuesta_157" value="<?php echo $respuesta_157; ?>" size="33">
     , lo que significa que los miembros tienen todas las 
     <input type="text" name="respuesta_158" value="<?php echo $respuesta_158; ?>" size="9">
     necesarias para crear 
@@ -3601,15 +3778,15 @@ function ocultarMensaje4() {
     en cada 
     <input type="text" name="respuesta_160" value="<?php echo $respuesta_160; ?>" size="9">
     . También se 
-    <input type="text" name="respuesta_161" value="<?php echo $respuesta_161; ?>" size="9">
+    <input type="text" name="respuesta_161" value="<?php echo $respuesta_161; ?>" size="10">
     , lo que significa que 
     <input type="text" name="respuesta_162" value="<?php echo $respuesta_162; ?>" size="18">
     quién hace qué, cuándo y cómo.
     </p> 
 
     <p>
-    El Scrum Team es lo suficientemente 
-    <input type="text" name="respuesta_163" value="<?php echo $respuesta_163; ?>" size="9">
+      
+    <input type="text" name="respuesta_163" value="<?php echo $respuesta_163; ?>" size="41">
     como para seguir siendo 
     <input type="text" name="respuesta_164" value="<?php echo $respuesta_164; ?>" size="9">
     y lo suficientemente grande
@@ -3639,7 +3816,7 @@ function ocultarMensaje4() {
     <input type="text" name="respuesta_175" value="<?php echo $respuesta_175; ?>" size="9">
     . Por lo tanto, deben
     compartir el mismo 
-    <input type="text" name="respuesta_176" value="<?php echo $respuesta_176; ?>" size="12">
+    <input type="text" name="respuesta_176" value="<?php echo $respuesta_176; ?>" size="17">
     , el 
     <input type="text" name="respuesta_177" value="<?php echo $respuesta_177; ?>" size="12">y el
     <input type="text" name="respuesta_178" value="<?php echo $respuesta_178; ?>" size="12">
@@ -3692,7 +3869,7 @@ function ocultarMensaje4() {
     de los interesados, la 
     <input type="text" name="respuesta_182" value="<?php echo $respuesta_182; ?>" size="9">
     , el 
-    <input type="text" name="respuesta_183" value="<?php echo $respuesta_183; ?>" size="9">
+    <input type="text" name="respuesta_183" value="<?php echo $respuesta_183; ?>" size="11">
     , la operación, la experimentación, la
     investigación y el desarrollo, y cualquier otra cosa que pueda ser necesaria. Están estructurados y
     empoderados por la 
@@ -3727,10 +3904,10 @@ function ocultarMensaje4() {
 
     <h2><input type="text"  value="<?php echo $respuesta_151; ?>" size="9"></h2>
     <p>
-    Las 
-    <input type="text" name="respuesta_243" value="<?php echo $respuesta_243; ?>" size="22">
+      
+    <input type="text" name="respuesta_243" value="<?php echo $respuesta_243; ?>" size="24">
     que se 
-    <input type="text" name="respuesta_244" value="<?php echo $respuesta_244; ?>" size="8">
+    <input type="text" name="respuesta_244" value="<?php echo $respuesta_244; ?>" size="11">
       a 
     <input type="text" name="respuesta_245" value="<?php echo $respuesta_245; ?>" size="8">
       cualquier aspecto de un 
@@ -3749,8 +3926,8 @@ function ocultarMensaje4() {
     </p>
   
     <ul>
-    <li>Crear un 
-    <input type="text" name="respuesta_191" value="<?php echo $respuesta_191; ?>" size="9">    
+    <li>  
+    <input type="text" name="respuesta_191" value="<?php echo $respuesta_191; ?>" size="11">    
     para el Sprint, el 
     <input type="text" name="respuesta_192" value="<?php echo $respuesta_192; ?>" size="16">
     ;</li>
@@ -3762,9 +3939,7 @@ function ocultarMensaje4() {
     <input type="text" name="respuesta_195" value="<?php echo $respuesta_195; ?>" size="22">
     ;</li>
     <li>
-    <input type="text" name="respuesta_196" value="<?php echo $respuesta_196; ?>" size="9">    
-    su 
-    <input type="text"  value="<?php echo $respuesta_191; ?>" size="9"> 
+    <input type="text" name="respuesta_196" value="<?php echo $respuesta_196; ?>" size="12">    
     cada día hacia el 
     <input type="text" name="respuesta_197" value="<?php echo $respuesta_197; ?>" size="9">  
     del Sprint; y,</li>
@@ -3792,8 +3967,8 @@ function ocultarMensaje4() {
 
     <h2><input type="text"  value="<?php echo $respuesta_150; ?>" size="12"></h2>
     <p>
-    El Product Owner es responsable de 
-    <input type="text" name="respuesta_199" value="<?php echo $respuesta_199; ?>" size="10">
+      
+    <input type="text" name="respuesta_199" value="<?php echo $respuesta_199; ?>" size="41">
     el 
     <input type="text" name="respuesta_200" value="<?php echo $respuesta_200; ?>" size="10">
     del 

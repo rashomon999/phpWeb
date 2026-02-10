@@ -1484,7 +1484,12 @@ function ocultarMensaje4() {
     <?php echo $verificar_8 ?>
     <?php echo $verificar_9 ?>
     <hr>
-    <img src="..\ultimo.jpeg" alt="">
+    <img src="../../../img/guia_304.png" alt="">
+    <p><strong>Figure 2.3
+Data independence and the
+ANSI-SPARC
+three-level
+architecture.</strong></p>
     <br><br>
     <h2>Cambios en el Esquema Interno</h2>
     <p>Los <strong>cambios en el esquema interno</strong> pueden incluir el uso de diferentes 

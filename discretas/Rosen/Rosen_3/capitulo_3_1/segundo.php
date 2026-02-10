@@ -1517,28 +1517,7 @@ for j := 2 to n
             if j > m then print “s is a valid shift”</code></pre>
 
 
-            <h2>3.1.6 El Problema de la Detención</h2>
-<p>
-Ahora describiremos una demostración de uno de los teoremas más famosos en la informática.
-Mostraremos que existe un problema que no puede resolverse utilizando ningún procedimiento.
-Es decir, mostraremos que hay problemas irresolubles. El problema que estudiaremos es el 
-<strong>problema de la detención</strong>. Este plantea si existe un procedimiento que haga lo siguiente: 
-tome como entrada un programa de computadora y una entrada para ese programa, y determine 
-si el programa eventualmente se detendrá al ejecutarse con esa entrada.
-</p>
-
-    <p>
-    Sería conveniente tener tal procedimiento, si existiera. Ciertamente, poder comprobar si un 
-    programa entra en un bucle infinito sería útil al escribir y depurar programas. Sin embargo, 
-    en 1936 Alan Turing demostró que <strong>no existe tal procedimiento</strong> (ver su biografía en la 
-    Sección 13.4).
-    </p>
-
-    <p>
-    Antes de presentar una demostración de que el problema de la detención es irresoluble, 
-    observa primero que no podemos simplemente ejecutar un programa y observar qué hace para 
-    determinar si se detiene cuando se ejecuta.
-    </p>
+           
     <hr>
     <strong>problema que dejamos pasar</strong>
 
@@ -1578,7 +1557,33 @@ c1 > c2 > ⋯ > cr; n: un entero positivo)
 
 <h4>Demostración:</h4>
 <p>Usamos una demostración por contradicción. Mostraremos que si tuviéramos más que la cantidad especificada de monedas de cada tipo, podríamos reemplazarlas usando menos monedas que tienen el mismo valor. Observamos que si tuviéramos tres monedas de 10, podríamos reemplazarlas por una de 25 y una de 5; si tuviéramos dos de 5 podríamos reemplazarlas por una de 10; si tuviéramos cinco de 1 podríamos reemplazarlas por una de 5; y si tuviéramos dos de 10 y una de 5 podríamos reemplazarlas por una de 25. Debido a que podemos tener a lo sumo dos monedas de 10, una de 5 y cuatro de 1, pero no podemos tener dos de 10 y una de 5, se deduce que 24 centavos es la mayor cantidad de dinero que podemos tener en monedas de 10, 5 y 1 centavo cuando damos cambio usando la menor cantidad de monedas posible para <em>n</em> centavos.</p>
-    </form>
+    
+<hr>
+
+  <h2>3.1.6 El Problema de la Detención</h2>
+<p>
+Ahora describiremos una demostración de uno de los teoremas más famosos en la informática.
+Mostraremos que existe un problema que no puede resolverse utilizando ningún procedimiento.
+Es decir, mostraremos que hay problemas irresolubles. El problema que estudiaremos es el 
+<strong>problema de la detención</strong>. Este plantea si existe un procedimiento que haga lo siguiente: 
+tome como entrada un programa de computadora y una entrada para ese programa, y determine 
+si el programa eventualmente se detendrá al ejecutarse con esa entrada.
+</p>
+
+    <p>
+    Sería conveniente tener tal procedimiento, si existiera. Ciertamente, poder comprobar si un 
+    programa entra en un bucle infinito sería útil al escribir y depurar programas. Sin embargo, 
+    en 1936 Alan Turing demostró que <strong>no existe tal procedimiento</strong> (ver su biografía en la 
+    Sección 13.4).
+    </p>
+
+    <p>
+    Antes de presentar una demostración de que el problema de la detención es irresoluble, 
+    observa primero que no podemos simplemente ejecutar un programa y observar qué hace para 
+    determinar si se detiene cuando se ejecuta.
+    </p>
+    
+</form>
 </div>
 
 <div class="centered-container">

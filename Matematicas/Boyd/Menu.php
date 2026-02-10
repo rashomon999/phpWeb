@@ -46,7 +46,7 @@
             <div class="column">
                 <a class="btn" href=".\capitulo_1\index.php"> capitulo 1 </a>
                 <a class="btn" href=".\capitulo_5\Menu.php"> capitulo 5 </a>
-      
+                <a class="btn" href=".\proyecto\index.php"> proyecto </a>
             </div>
         </div>
     </div>

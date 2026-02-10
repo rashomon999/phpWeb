@@ -9,15 +9,14 @@ $listaLibros = $sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
 
 $links = ["arquitecturaComputadores/Menu.php","compunet/Menu.php",
 
-"contabilidad/Menu.php",
+ 
 "discretas/menu.php", 
-    "Django/Menu.php",
-    "Estadistica/Menu.php",
-    "fisica/Menu.php"
+     
+    "Estadistica/Menu.php" 
     ,"ingesoft/Menu.php",  "Ingles/Menu.php", 
-         "java/index.php", "Matematicas/Menu.php", "musica/Menu.php", 
-         "operaciones_basicas/index.php", "scala/Menu.php", "SistemaDatos/Menu.php"
-        , "transhumantes/Menu.php"
+         "java/Menu.php", "Matematicas/Menu.php", "ModulacionFinanciera/Menu.php" ,"musica/Menu.php", 
+           "scala/Menu.php", "SistemaDatos/Menu.php", 
+          
         ];
 
 echo "<p>Consulta SQL: <code>SELECT * FROM libros WHERE categoria = 'principal' ORDER BY nombre ASC;</code></p>";

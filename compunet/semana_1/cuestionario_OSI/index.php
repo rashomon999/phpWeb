@@ -18,150 +18,163 @@ if ($_POST) {
     
     if ($mostrar_solucion === 'mostrar_solucion') {
         // Establecer todas las respuestas correctas para las tablas de multiplicar
-        
-        // Tabla del 12
-        $respuesta_111 = '24'; 
-        $respuesta_112 = '36';
-        $respuesta_113 = '48';
-        $respuesta_114 = '60';
-        $respuesta_115 = '72';
-        $respuesta_116 = '84';
-        $respuesta_117 = '96';
-        $respuesta_118 = '108';
-        $respuesta_119 = '120';
-        $respuesta_120 = '132';
-        $respuesta_121 = '144';
-        
-        // Tabla del 13
-        $respuesta_1 = '26';
-        $respuesta_2 = '39';
-        $respuesta_3 = '52';
-        $respuesta_4 = '65';
-        $respuesta_5 = '78';
-        $respuesta_6 = '91';
-        $respuesta_7 = '104';
-        $respuesta_8 = '117';
-        $respuesta_9 = '130';
-        $respuesta_10 = '143';
-        $respuesta_11 = '156';
-        
-        // Tabla del 14
-        $respuesta_12 = '28';
-        $respuesta_13 = '42';
-        $respuesta_14 = '56';
-        $respuesta_15 = '70';
-        $respuesta_16 = '84';
-        $respuesta_17 = '98';
-        $respuesta_18 = '112';
-        $respuesta_19 = '126';
-        $respuesta_20 = '140';
-        $respuesta_21 = '154';
-        $respuesta_22 = '168';
-        
-        // Tabla del 15
-        $respuesta_23 = '30';
-        $respuesta_24 = '45';
-        $respuesta_25 = '60';
-        $respuesta_26 = '75';
-        $respuesta_27 = '90';
-        $respuesta_28 = '105';
-        $respuesta_29 = '120';
-        $respuesta_30 = '135';
-        $respuesta_31 = '150';
-        $respuesta_32 = '165';
-        $respuesta_33 = '180';
-        
-        // Tabla del 16
-        $respuesta_34 = '32';
-        $respuesta_35 = '48';
-        $respuesta_36 = '64';
-        $respuesta_37 = '80';
-        $respuesta_38 = '96';
-        $respuesta_39 = '112';
-        $respuesta_40 = '128';
-        $respuesta_41 = '144';
-        $respuesta_42 = '160';
-        $respuesta_43 = '176';
-        $respuesta_44 = '192';
-        
-        // Tabla del 17
-        $respuesta_45 = '34';
-        $respuesta_46 = '51';
-        $respuesta_47 = '68';
-        $respuesta_48 = '85';
-        $respuesta_49 = '102';
-        $respuesta_50 = '119';
-        $respuesta_51 = '136';
-        $respuesta_52 = '153';
-        $respuesta_53 = '170';
-        $respuesta_54 = '187';
-        $respuesta_55 = '204';
-        
-        // Tabla del 18
-        $respuesta_56 = '36';
-        $respuesta_57 = '54';
-        $respuesta_58 = '72';
-        $respuesta_59 = '90';
-        $respuesta_60 = '108';
-        $respuesta_61 = '126';
-        $respuesta_62 = '144';
-        $respuesta_63 = '162';
-        $respuesta_64 = '180';
-        $respuesta_65 = '198';
-        $respuesta_66 = '216';
-        
-        // Tabla del 19
-        $respuesta_67 = '38';
-        $respuesta_68 = '57';
-        $respuesta_69 = '76';
-        $respuesta_70 = '95';
-        $respuesta_71 = '114';
-        $respuesta_72 = '133';
-        $respuesta_73 = '152';
-        $respuesta_74 = '171';
-        $respuesta_75 = '190';
-        $respuesta_76 = '209';
-        $respuesta_77 = '228';
-        
-        // Tabla del 20
-        $respuesta_78 = '40';
-        $respuesta_79 = '60';
-        $respuesta_80 = '80';
-        $respuesta_81 = '100';
-        $respuesta_82 = '120';
-        $respuesta_83 = '140';
-        $respuesta_84 = '160';
-        $respuesta_85 = '180';
-        $respuesta_86 = '200';
-        $respuesta_87 = '220';
-        $respuesta_88 = '240';
-        
-        // Tabla del 21
-        $respuesta_89 = '42';
-        $respuesta_90 = '63';
-        $respuesta_91 = '84';
-        $respuesta_92 = '105';
-        $respuesta_93 = '126';
-        $respuesta_94 = '147';
-        $respuesta_95 = '168';
-        $respuesta_96 = '189';
-        $respuesta_97 = '210';
-        $respuesta_98 = '231';
-        $respuesta_99 = '252';
-        
-        // Tabla del 22
-        $respuesta_100 = '44';
-        $respuesta_101 = '66';
-        $respuesta_102 = '88';
-        $respuesta_103 = '110';
-        $respuesta_104 = '132'; 
-        $respuesta_105 = '154';
-        $respuesta_106 = '176';
-        $respuesta_107 = '198';
-        $respuesta_108 = '220';
-        $respuesta_109 = '242';
-        $respuesta_110 = '264';
-        
+ 
+    $respuesta_1 = 'El Modelo de interconexion de sistemas abiertos';
+    $respuesta_2 = 'interconexion';
+    $respuesta_3 = 'sistemas abiertos';
+    $respuesta_4 = 'se utiliza para describir';
+    $respuesta_5 = 'protocolos';
+    $respuesta_6 = 'de red';
+    $respuesta_7 = 'Debido a que rara vez se implementa en redes reales';
+    $respuesta_8 = 'estandarizar el desarrollo de las redes reales';
+    $respuesta_9 = 'no propietaria';
+    $respuesta_10 = 'grupos';
+    $respuesta_11 = 'funcionalidad';
+    
+    $respuesta_12 = 'red';
+    $respuesta_13 = 'protocolo';
+    $respuesta_14 = 'siete';
+    $respuesta_15 = 'Open Systems Interconnection';
+    $respuesta_16 = 'se considera una referencia para';
+    $respuesta_17 = 'Aplicacion';
+    $respuesta_18 = 'Presentacion';
+    $respuesta_19 = 'Sesion';
+    $respuesta_20 = 'Transporte';
+    $respuesta_21 = 'Red';
+    $respuesta_22 = 'Enlace de datos';
+    
+    $respuesta_23 = 'Fisico';
+    $respuesta_24 = 'fisica';
+    $respuesta_25 = 'Gestiona señales entre los';
+    $respuesta_26 = 'sistemas';
+    $respuesta_27 = 'de red';
+    $respuesta_28 = 'enlace de datos';
+    $respuesta_29 = 'Divide los datos en tramas que pueden ser transmitidas por la capa fisica';
+    $respuesta_30 = 'datos';
+    $respuesta_31 = 'tramas';
+    $respuesta_32 = 'transmitidas';
+    $respuesta_33 = 'fisica';
+    
+    $respuesta_34 = 'red';
+    $respuesta_35 = 'Traduce direcciones de red y dirige los datos del emisor al receptor';
+    $respuesta_36 = 'red';
+    $respuesta_37 = 'dirige';
+    $respuesta_38 = 'datos';
+    $respuesta_39 = 'emisor';
+    $respuesta_40 = 'receptor';
+    $respuesta_41 = 'transporte';
+    $respuesta_42 = 'Asegura que los datos se transfieren de forma fiable en la secuencia correcta';
+    $respuesta_43 = 'datos';
+    $respuesta_44 = 'transfieren';
+    $respuesta_45 = 'forma fiable';
+    $respuesta_46 = 'secuencia correcta';
+    $respuesta_47 = 'sesion';
+    $respuesta_48 = 'Coordina y gestiona las conexiones de usuario';
+    $respuesta_49 = 'gestiona';
+    $respuesta_50 = 'conexiones';
+    
+    $respuesta_51 = 'usuario';
+    $respuesta_52 = 'presentacion';
+    $respuesta_53 = 'Da formato';
+    $respuesta_54 = 'cifra y comprime los datos';
+    $respuesta_55 = 'comprime';
+    $respuesta_56 = 'datos';
+    $respuesta_57 = 'aplicacion';
+    $respuesta_58 = 'Media entre aplicaciones de software y otras capas de servicios de red';
+    $respuesta_59 = 'aplicaciones';
+    $respuesta_60 = 'software';
+    $respuesta_61 = 'capas';
+    $respuesta_62 = 'servicios';
+    $respuesta_63 = 'red';
+    $respuesta_64 = 'conjunto';
+    $respuesta_65 = 'protocolos';
+    $respuesta_66 = 'estandar';
+    $respuesta_67 = 'Internet';
+    $respuesta_68 = 'Protocolo';
+    $respuesta_69 = 'Control';
+    $respuesta_70 = 'Transmision';
+    $respuesta_71 = 'Protocolo Internet';
+    $respuesta_72 = 'TCP/IP';
+    $respuesta_73 = 'incluye';
+    $respuesta_74 = 'orientados';
+    $respuesta_75 = 'red';
+    $respuesta_76 = 'soporte';
+    $respuesta_77 = 'aplicaciones';
+    $respuesta_78 = '3 y 4';
+    $respuesta_79 = 'dos versiones';
+    $respuesta_80 = 'operan';
+    $respuesta_81 = 'Capa 3';
+    $respuesta_82 = 'IPv4';
+    $respuesta_83 = 'IPv6';
+    $respuesta_84 = 'IPv4';
+    $respuesta_85 = 'cuarta';
+    $respuesta_86 = 'protocolo IP';
+    $respuesta_87 = 'usado';
+    $respuesta_88 = 'conexion';
+    $respuesta_89 = 'dispositivos';
+    $respuesta_90 = 'Internet';
+    $respuesta_91 = 'esquema';
+    $respuesta_92 = 'direcciones';
+    $respuesta_93 = '32 bit';
+    $respuesta_94 = '4 mil millones';
+    $respuesta_95 = 'sin direcciones';
+    $respuesta_96 = 'IPv6';
+    $respuesta_97 = 'desarrollado';
+    $respuesta_98 = 'IPv6';
+    $respuesta_99 = 'IPng';
+    $respuesta_100 = 'ultima';
+    $respuesta_101 = 'IP';
+    $respuesta_102 = 'actualizacion';
+    $respuesta_103 = 'evolucionada';
+    $respuesta_104 = 'IPv4';
+    $respuesta_105 = 'IPv6';
+    $respuesta_106 = 'permitir';
+    $respuesta_107 = 'crecimiento';
+    $respuesta_108 = 'numero';
+    $respuesta_109 = 'cantidad';
+    $respuesta_110 = 'estandares';
+    
+    $respuesta_111 = 'conjunto TCP/IP';
+    $respuesta_112 = 'modelo OSI';
+    $respuesta_113 = 'TCP/IP';
+    $respuesta_114 = 'marco OSI';
+    $respuesta_115 = 'coincidencia';
+    $respuesta_116 = 'TCP/IP';
+    $respuesta_117 = 'añadir informacion';
+    $respuesta_118 = 'direccionamiento';
+    $respuesta_119 = 'transmiten';
+    $respuesta_120 = 'pila OSI';
+    $respuesta_121 = 'datagramas';
+    $respuesta_122 = 'unidades de datos de protocolo';
+    $respuesta_123 = 'segmentos';
+    $respuesta_124 = 'capa de red';
+    $respuesta_125 = 'paquetes';
+    $respuesta_126 = 'desglosan';
+    $respuesta_127 = 'tramas';
+    $respuesta_128 = 'informacion';
+    $respuesta_129 = 'bits';
+    $respuesta_130 = 'la pasa';
+    $respuesta_131 = 'pila OSI';
+    $respuesta_132 = 'desencapsulacion';
+    $respuesta_133 = 'orientados a conexion';
+    $respuesta_134 = 'no orientados a conexion';
+    $respuesta_135 = 'TCP';
+    $respuesta_136 = 'protocolo';
+    $respuesta_137 = 'de tres vias';
+    $respuesta_138 = 'orientadas a conexion';
+    $respuesta_139 = 'Datagramas de Usuario';
+    $respuesta_140 = 'no orientado a conexion';
+    $respuesta_141 = 'velocidad';
+    $respuesta_142 = 'comprobacion';
+    $respuesta_143 = 'errores';
+    $respuesta_144 = 'UDP';
+    $respuesta_145 = 'integridad';
+    $respuesta_146 = 'puerto';
+    $respuesta_147 = 'integridad';
+    $respuesta_148 = 'direccion IP';
+    $respuesta_149 = 'direccion fisica';
+    $respuesta_150 = 'MAC';
+    $respuesta_151 = 'red local';
         // Marcar todas como correctas
     for ($i = 1; $i <= 122; $i++) {
     ${"verificar_$i"} = "correcto";
@@ -169,7 +182,9 @@ if ($_POST) {
 
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === 'Modelo') {  
+   if ($respuesta_1 === 'El Modelo de interconexion de sistemas abiertos'
+   || $respuesta_1 === 'El modelo de interconexion de sistemas abiertos'
+   ) {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -199,7 +214,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === 'utiliza') {  
+   if ($respuesta_4 === 'se utiliza para describir') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -219,7 +234,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === 'red') {  
+   if ($respuesta_6 === 'de red') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -229,7 +244,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === 'implementa') {  
+   if ($respuesta_7 === 'Debido a que rara vez se implementa en redes reales') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -239,7 +254,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === 'estandarizar') {  
+   if ($respuesta_8 === 'estandarizar el desarrollo de las redes reales') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -320,7 +335,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la quinta pregunta
     $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-    if ($respuesta_16 === 'referencia') {  
+    if ($respuesta_16 === 'se considera una referencia para') {  
         $verificar_16 = "correcto";
     } elseif ($respuesta_16 === '') {
         $verificar_16 = '';
@@ -330,7 +345,9 @@ if ($_POST) {
   
     // Verificar la respuesta de la sexta pregunta
     $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-    if ($respuesta_17 === 'Aplicacion') {  
+    if ($respuesta_17 === 'Aplicacion'
+    || $respuesta_17 === 'aplicacion'
+    ) {  
         $verificar_17 = "correcto";
         } elseif ($respuesta_17 === '') {
         $verificar_17 = '';
@@ -340,7 +357,9 @@ if ($_POST) {
   
     // Verificar la respuesta de la séptima pregunta
     $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-    if ($respuesta_18 === 'Presentacion') {  
+    if ($respuesta_18 === 'Presentacion'
+    || $respuesta_18 === 'presentacion'
+    ) {  
         $verificar_18 = "correcto";
     } elseif ($respuesta_18 === '') {
         $verificar_18 = '';
@@ -350,7 +369,9 @@ if ($_POST) {
   
     // Verificar la respuesta de la octava pregunta
     $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-    if ($respuesta_19 === 'Sesion') {  
+    if ($respuesta_19 === 'Sesion'
+    || $respuesta_19 === 'sesion'
+    ) {  
         $verificar_19 = "correcto";
     } elseif ($respuesta_19 === '') {
         $verificar_19 = '';
@@ -360,7 +381,9 @@ if ($_POST) {
   
     // Verificar la respuesta de la novena pregunta
     $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
-    if ($respuesta_20 === 'Transporte') {  
+    if ($respuesta_20 === 'Transporte'
+    || $respuesta_20 === 'transporte'
+    ) {  
         $verificar_20 = "correcto";
     } elseif ($respuesta_20 === '') {
         $verificar_20 = '';
@@ -370,7 +393,9 @@ if ($_POST) {
   
     // Verificar la respuesta de la décima pregunta
     $respuesta_21 = isset($_POST['respuesta_21']) ? $_POST['respuesta_21'] : '';
-    if ($respuesta_21 === 'Red') {  
+    if ($respuesta_21 === 'Red'
+    || $respuesta_21 === 'red'
+    ) {  
          $verificar_21 = "correcto";
     } elseif ($respuesta_21 === '') {
         $verificar_21 = '';
@@ -380,7 +405,9 @@ if ($_POST) {
   
     // Verificar la respuesta de la undécima pregunta
     $respuesta_22 = isset($_POST['respuesta_22']) ? $_POST['respuesta_22'] : '';
-    if ($respuesta_22 === 'Enlace de datos') {  
+    if ($respuesta_22 === 'Enlace de datos'
+    || $respuesta_22 === 'enlace de datos'
+    ) {  
         $verificar_22 = "correcto";
     } elseif ($respuesta_22 === '') {
         $verificar_22 = '';
@@ -390,7 +417,10 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
    $respuesta_23 = isset($_POST['respuesta_23']) ? $_POST['respuesta_23'] : '';
-   if ($respuesta_23 === 'Fisico') {  
+   if ($respuesta_23 === 'Fisico'
+   || $respuesta_23 === 'fisico'
+   || $respuesta_23 === 'fisica'
+   ) {  
        $verificar_23 = "correcto";
    } elseif ($respuesta_23 === '') {
        $verificar_23 = '';
@@ -410,7 +440,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_25 = isset($_POST['respuesta_25']) ? $_POST['respuesta_25'] : '';
-   if ($respuesta_25 === 'Gestiona señales') { 
+   if ($respuesta_25 === 'Gestiona señales entre los') { 
        $verificar_25 = "correcto";
    } elseif ($respuesta_25 === '') {
        $verificar_25 = '';
@@ -430,7 +460,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_27 = isset($_POST['respuesta_27']) ? $_POST['respuesta_27'] : '';
-   if ($respuesta_27 === 'red') {  
+   if ($respuesta_27 === 'de red') {  
        $verificar_27 = "correcto";
    } elseif ($respuesta_27 === '') {
        $verificar_27 = '';
@@ -450,7 +480,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_29 = isset($_POST['respuesta_29']) ? $_POST['respuesta_29'] : '';
-   if ($respuesta_29 === 'Divide') {  
+   if ($respuesta_29 === 'Divide los datos en tramas que pueden ser transmitidas por la capa fisica') {  
        $verificar_29 = "correcto";
    } elseif ($respuesta_29 === '') {
        $verificar_29 = '';
@@ -508,7 +538,7 @@ if ($_POST) {
     }
 
     $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
-    if ($respuesta_35 === 'Traduce direcciones') { 
+    if ($respuesta_35 === 'Traduce direcciones de red y dirige los datos del emisor al receptor') { 
         $verificar_35 = "correcto";
     } elseif ($respuesta_35 === '') {
         $verificar_35 = '';
@@ -571,7 +601,7 @@ if ($_POST) {
     }
 
     $respuesta_42 = isset($_POST['respuesta_42']) ? $_POST['respuesta_42'] : '';
-    if ($respuesta_42 === 'Asegura') { 
+    if ($respuesta_42 === 'Asegura que los datos se transfieren de forma fiable en la secuencia correcta') { 
         $verificar_42 = "correcto";
     } elseif ($respuesta_42 === '') {
         $verificar_42 = '';
@@ -625,7 +655,7 @@ if ($_POST) {
     }
 
     $respuesta_48 = isset($_POST['respuesta_48']) ? $_POST['respuesta_48'] : '';
-    if ($respuesta_48 === 'Coordina') { 
+    if ($respuesta_48 === 'Coordina y gestiona las conexiones de usuario') { 
         $verificar_48 = "correcto";
     } elseif ($respuesta_48 === '') {
     $verificar_48 = '';
@@ -670,7 +700,7 @@ if ($respuesta_52 === 'presentacion') {
 }
 
  $respuesta_53 = isset($_POST['respuesta_53']) ? $_POST['respuesta_53'] : '';
-if ($respuesta_53 === 'formato') { 
+if ($respuesta_53 === 'Da formato') { 
     $verificar_53 = "correcto";
 } elseif ($respuesta_53 === '') {
     $verificar_53 = '';
@@ -679,7 +709,7 @@ if ($respuesta_53 === 'formato') {
 }
 
  $respuesta_54 = isset($_POST['respuesta_54']) ? $_POST['respuesta_54'] : '';
-if ($respuesta_54 === 'cifra') { 
+if ($respuesta_54 === 'cifra y comprime los datos') { 
     $verificar_54 = "correcto";
 } elseif ($respuesta_54 === '') {
     $verificar_54 = '';
@@ -716,7 +746,7 @@ if ($respuesta_57 === 'aplicacion') {
 }
 
  $respuesta_58 = isset($_POST['respuesta_58']) ? $_POST['respuesta_58'] : '';
-if ($respuesta_58 === 'Media') { 
+if ($respuesta_58 === 'Media entre aplicaciones de software y otras capas de servicios de red') { 
     $verificar_58 = "correcto";
 } elseif ($respuesta_58 === '') {
     $verificar_58 = '';
@@ -923,7 +953,9 @@ if ($respuesta_80 === 'operan') {
 }
 
  $respuesta_81 = isset($_POST['respuesta_81']) ? $_POST['respuesta_81'] : '';
-if ($respuesta_81 === 'Capa 3') { 
+if ($respuesta_81 === 'Capa 3'
+|| $respuesta_81 === 'capa 3'
+) { 
     $verificar_81 = "correcto";
 } elseif ($respuesta_81 === '') {
     $verificar_81 = '';
@@ -1004,7 +1036,9 @@ if ($respuesta_89 === 'dispositivos') {
 }
 
  $respuesta_90 = isset($_POST['respuesta_90']) ? $_POST['respuesta_90'] : '';
-if ($respuesta_90 === 'Internet') { 
+if ($respuesta_90 === 'Internet'
+|| $respuesta_90 === 'internet'
+) { 
     $verificar_90 = "correcto";
 } elseif ($respuesta_90 === '') {
     $verificar_90 = '';
@@ -1185,7 +1219,7 @@ if ($respuesta_109 === 'cantidad') {
 }
 
  $respuesta_110 = isset($_POST['respuesta_110']) ? $_POST['respuesta_110'] : '';
-if ($respuesta_110 === '264') { 
+if ($respuesta_110 === 'estandares') { 
     $verificar_110 = "correcto";
 } elseif ($respuesta_110 === '') {
     $verificar_110 = '';
@@ -1195,7 +1229,7 @@ if ($respuesta_110 === '264') {
 
 // Tabla del 12
 $respuesta_111 = isset($_POST['respuesta_111']) ? $_POST['respuesta_111'] : '';
-if ($respuesta_111 === '24') {  
+if ($respuesta_111 === 'conjunto TCP/IP') {  
     $verificar_111 = "correcto";
 } elseif ($respuesta_111 === '') {
     $verificar_111 = '';
@@ -1204,7 +1238,7 @@ if ($respuesta_111 === '24') {
 }
 
 $respuesta_112 = isset($_POST['respuesta_112']) ? $_POST['respuesta_112'] : '';
-if ($respuesta_112 === '36') {  
+if ($respuesta_112 === 'modelo OSI') {  
     $verificar_112 = "correcto";
 } elseif ($respuesta_112 === '') {
     $verificar_112 = '';
@@ -1213,7 +1247,7 @@ if ($respuesta_112 === '36') {
 }
 
 $respuesta_113 = isset($_POST['respuesta_113']) ? $_POST['respuesta_113'] : '';
-if ($respuesta_113 === '48') {  
+if ($respuesta_113 === 'TCP/IP') {  
     $verificar_113 = "correcto";
 } elseif ($respuesta_113 === '') {
     $verificar_113 = '';
@@ -1222,7 +1256,7 @@ if ($respuesta_113 === '48') {
 }
 
 $respuesta_114 = isset($_POST['respuesta_114']) ? $_POST['respuesta_114'] : '';
-if ($respuesta_114 === '60') {  
+if ($respuesta_114 === 'marco OSI') {  
     $verificar_114 = "correcto";
 } elseif ($respuesta_114 === '') {
     $verificar_114 = '';
@@ -1231,7 +1265,7 @@ if ($respuesta_114 === '60') {
 }
 
 $respuesta_115 = isset($_POST['respuesta_115']) ? $_POST['respuesta_115'] : '';
-if ($respuesta_115 === '72') {  
+if ($respuesta_115 === 'coincidencia') {  
     $verificar_115 = "correcto";
 } elseif ($respuesta_115 === '') {
     $verificar_115 = '';
@@ -1240,7 +1274,7 @@ if ($respuesta_115 === '72') {
 }
 
 $respuesta_116 = isset($_POST['respuesta_116']) ? $_POST['respuesta_116'] : '';
-if ($respuesta_116 === '84') {  
+if ($respuesta_116 === 'TCP/IP') {  
     $verificar_116 = "correcto";
 } elseif ($respuesta_116 === '') {
     $verificar_116 = '';
@@ -1249,7 +1283,7 @@ if ($respuesta_116 === '84') {
 }
 
 $respuesta_117 = isset($_POST['respuesta_117']) ? $_POST['respuesta_117'] : '';
-if ($respuesta_117 === '96') {  
+if ($respuesta_117 === 'añadir informacion') {  
     $verificar_117 = "correcto";
 } elseif ($respuesta_117 === '') {
     $verificar_117 = '';
@@ -1258,7 +1292,7 @@ if ($respuesta_117 === '96') {
 }
 
 $respuesta_118 = isset($_POST['respuesta_118']) ? $_POST['respuesta_118'] : '';
-if ($respuesta_118 === '108') {  
+if ($respuesta_118 === 'direccionamiento') {  
     $verificar_118 = "correcto";
 } elseif ($respuesta_118 === '') {
     $verificar_118 = '';
@@ -1267,7 +1301,7 @@ if ($respuesta_118 === '108') {
 }
 
 $respuesta_119 = isset($_POST['respuesta_119']) ? $_POST['respuesta_119'] : '';
-if ($respuesta_119 === '120') {  
+if ($respuesta_119 === 'transmiten') {  
     $verificar_119 = "correcto";
 } elseif ($respuesta_119 === '') {
     $verificar_119 = '';
@@ -1276,7 +1310,7 @@ if ($respuesta_119 === '120') {
 }
 
 $respuesta_120 = isset($_POST['respuesta_120']) ? $_POST['respuesta_120'] : '';
-if ($respuesta_120 === '132') {  
+if ($respuesta_120 === 'pila OSI') {  
     $verificar_120 = "correcto";
 } elseif ($respuesta_120 === '') {
     $verificar_120 = '';
@@ -1285,13 +1319,285 @@ if ($respuesta_120 === '132') {
 }
 
 $respuesta_121 = isset($_POST['respuesta_121']) ? $_POST['respuesta_121'] : '';
-if ($respuesta_121 === '144') {  
+if ($respuesta_121 === 'datagramas') {
     $verificar_121 = "correcto";
 } elseif ($respuesta_121 === '') {
     $verificar_121 = '';
 } else {
     $verificar_121 = "incorrecto";
 }
+
+$respuesta_122 = isset($_POST['respuesta_122']) ? $_POST['respuesta_122'] : '';
+if ($respuesta_122 === 'unidades de datos de protocolo') {
+    $verificar_122 = "correcto";
+} elseif ($respuesta_122 === '') {
+    $verificar_122 = '';
+} else {
+    $verificar_122 = "incorrecto";
+}
+
+$respuesta_123 = isset($_POST['respuesta_123']) ? $_POST['respuesta_123'] : '';
+if ($respuesta_123 === 'segmentos') {
+    $verificar_123 = "correcto";
+} elseif ($respuesta_123 === '') {
+    $verificar_123 = '';
+} else {
+    $verificar_123 = "incorrecto";
+}
+
+$respuesta_124 = isset($_POST['respuesta_124']) ? $_POST['respuesta_124'] : '';
+if ($respuesta_124 === 'capa de red') {
+    $verificar_124 = "correcto";
+} elseif ($respuesta_124 === '') {
+    $verificar_124 = '';
+} else {
+    $verificar_124 = "incorrecto";
+}
+
+$respuesta_125 = isset($_POST['respuesta_125']) ? $_POST['respuesta_125'] : '';
+if ($respuesta_125 === 'paquetes') {
+    $verificar_125 = "correcto";
+} elseif ($respuesta_125 === '') {
+    $verificar_125 = '';
+} else {
+    $verificar_125 = "incorrecto";
+}
+
+$respuesta_126 = isset($_POST['respuesta_126']) ? $_POST['respuesta_126'] : '';
+if ($respuesta_126 === 'desglosan') {
+    $verificar_126 = "correcto";
+} elseif ($respuesta_126 === '') {
+    $verificar_126 = '';
+} else {
+    $verificar_126 = "incorrecto";
+}
+
+$respuesta_127 = isset($_POST['respuesta_127']) ? $_POST['respuesta_127'] : '';
+if ($respuesta_127 === 'tramas') {
+    $verificar_127 = "correcto";
+} elseif ($respuesta_127 === '') {
+    $verificar_127 = '';
+} else {
+    $verificar_127 = "incorrecto";
+}
+
+$respuesta_128 = isset($_POST['respuesta_128']) ? $_POST['respuesta_128'] : '';
+if ($respuesta_128 === 'informacion') {
+    $verificar_128 = "correcto";
+} elseif ($respuesta_128 === '') {
+    $verificar_128 = '';
+} else {
+    $verificar_128 = "incorrecto";
+}
+
+$respuesta_129 = isset($_POST['respuesta_129']) ? $_POST['respuesta_129'] : '';
+if ($respuesta_129 === 'bits') {
+    $verificar_129 = "correcto";
+} elseif ($respuesta_129 === '') {
+    $verificar_129 = '';
+} else {
+    $verificar_129 = "incorrecto";
+}
+
+$respuesta_130 = isset($_POST['respuesta_130']) ? $_POST['respuesta_130'] : '';
+if ($respuesta_130 === 'la pasa') {
+    $verificar_130 = "correcto";
+} elseif ($respuesta_130 === '') {
+    $verificar_130 = '';
+} else {
+    $verificar_130 = "incorrecto";
+}
+
+$respuesta_131 = isset($_POST['respuesta_131']) ? $_POST['respuesta_131'] : '';
+if ($respuesta_131 === 'pila OSI') {
+    $verificar_131 = "correcto";
+} elseif ($respuesta_131 === '') {
+    $verificar_131 = '';
+} else {
+    $verificar_131 = "incorrecto";
+}
+
+$respuesta_132 = isset($_POST['respuesta_132']) ? $_POST['respuesta_132'] : '';
+if ($respuesta_132 === 'desencapsulacion') {
+    $verificar_132 = "correcto";
+} elseif ($respuesta_132 === '') {
+    $verificar_132 = '';
+} else {
+    $verificar_132 = "incorrecto";
+}
+
+$respuesta_133 = isset($_POST['respuesta_133']) ? $_POST['respuesta_133'] : '';
+if ($respuesta_133 === 'orientados a conexion') {
+    $verificar_133 = "correcto";
+} elseif ($respuesta_133 === '') {
+    $verificar_133 = '';
+} else {
+    $verificar_133 = "incorrecto";
+}
+
+$respuesta_134 = isset($_POST['respuesta_134']) ? $_POST['respuesta_134'] : '';
+if ($respuesta_134 === 'no orientados a conexion') {
+    $verificar_134 = "correcto";
+} elseif ($respuesta_134 === '') {
+    $verificar_134 = '';
+} else {
+    $verificar_134 = "incorrecto";
+}
+
+$respuesta_135 = isset($_POST['respuesta_135']) ? $_POST['respuesta_135'] : '';
+if ($respuesta_135 === 'TCP') {
+    $verificar_135 = "correcto";
+} elseif ($respuesta_135 === '') {
+    $verificar_135 = '';
+} else {
+    $verificar_135 = "incorrecto";
+}
+
+$respuesta_136 = isset($_POST['respuesta_136']) ? $_POST['respuesta_136'] : '';
+if ($respuesta_136 === 'protocolo') {
+    $verificar_136 = "correcto";
+} elseif ($respuesta_136 === '') {
+    $verificar_136 = '';
+} else {
+    $verificar_136 = "incorrecto";
+}
+
+$respuesta_137 = isset($_POST['respuesta_137']) ? $_POST['respuesta_137'] : '';
+if ($respuesta_137 === 'de tres vias') {
+    $verificar_137 = "correcto";
+} elseif ($respuesta_137 === '') {
+    $verificar_137 = '';
+} else {
+    $verificar_137 = "incorrecto";
+}
+
+$respuesta_138 = isset($_POST['respuesta_138']) ? $_POST['respuesta_138'] : '';
+if ($respuesta_138 === 'orientadas a conexion') {
+    $verificar_138 = "correcto";
+} elseif ($respuesta_138 === '') {
+    $verificar_138 = '';
+} else {
+    $verificar_138 = "incorrecto";
+}
+
+$respuesta_139 = isset($_POST['respuesta_139']) ? $_POST['respuesta_139'] : '';
+if ($respuesta_139 === 'Datagramas de Usuario') {
+    $verificar_139 = "correcto";
+} elseif ($respuesta_139 === '') {
+    $verificar_139 = '';
+} else {
+    $verificar_139 = "incorrecto";
+}
+
+$respuesta_140 = isset($_POST['respuesta_140']) ? $_POST['respuesta_140'] : '';
+if ($respuesta_140 === 'no orientado a conexion') {
+    $verificar_140 = "correcto";
+} elseif ($respuesta_140 === '') {
+    $verificar_140 = '';
+} else {
+    $verificar_140 = "incorrecto";
+}
+
+$respuesta_141 = isset($_POST['respuesta_141']) ? $_POST['respuesta_141'] : '';
+if ($respuesta_141 === 'velocidad') {
+    $verificar_141 = "correcto";
+} elseif ($respuesta_141 === '') {
+    $verificar_141 = '';
+} else {
+    $verificar_141 = "incorrecto";
+}
+
+$respuesta_142 = isset($_POST['respuesta_142']) ? $_POST['respuesta_142'] : '';
+if ($respuesta_142 === 'comprobacion') {
+    $verificar_142 = "correcto";
+} elseif ($respuesta_142 === '') {
+    $verificar_142 = '';
+} else {
+    $verificar_142 = "incorrecto";
+}
+
+$respuesta_143 = isset($_POST['respuesta_143']) ? $_POST['respuesta_143'] : '';
+if ($respuesta_143 === 'errores') {
+    $verificar_143 = "correcto";
+} elseif ($respuesta_143 === '') {
+    $verificar_143 = '';
+} else {
+    $verificar_143 = "incorrecto";
+}
+
+$respuesta_144 = isset($_POST['respuesta_144']) ? $_POST['respuesta_144'] : '';
+if ($respuesta_144 === 'UDP') {
+    $verificar_144 = "correcto";
+} elseif ($respuesta_144 === '') {
+    $verificar_144 = '';
+} else {
+    $verificar_144 = "incorrecto";
+}
+
+$respuesta_145 = isset($_POST['respuesta_145']) ? $_POST['respuesta_145'] : '';
+if ($respuesta_145 === 'integridad') {
+    $verificar_145 = "correcto";
+} elseif ($respuesta_145 === '') {
+    $verificar_145 = '';
+} else {
+    $verificar_145 = "incorrecto";
+}
+
+$respuesta_146 = isset($_POST['respuesta_146']) ? $_POST['respuesta_146'] : '';
+if ($respuesta_146 === 'puerto') {
+    $verificar_146 = "correcto";
+} elseif ($respuesta_146 === '') {
+    $verificar_146 = '';
+} else {
+    $verificar_146 = "incorrecto";
+}
+
+$respuesta_147 = isset($_POST['respuesta_147']) ? $_POST['respuesta_147'] : '';
+if ($respuesta_147 === 'integridad') {
+    $verificar_147 = "correcto";
+} elseif ($respuesta_147 === '') {
+    $verificar_147 = '';
+} else {
+    $verificar_147 = "incorrecto";
+}
+
+$respuesta_148 = isset($_POST['respuesta_148']) ? $_POST['respuesta_148'] : '';
+if ($respuesta_148 === 'direccion IP') {
+    $verificar_148 = "correcto";
+} elseif ($respuesta_148 === '') {
+    $verificar_148 = '';
+} else {
+    $verificar_148 = "incorrecto";
+}
+
+$respuesta_149 = isset($_POST['respuesta_149']) ? $_POST['respuesta_149'] : '';
+if ($respuesta_149 === 'direccion fisica') {
+    $verificar_149 = "correcto";
+} elseif ($respuesta_149 === '') {
+    $verificar_149 = '';
+} else {
+    $verificar_149 = "incorrecto";
+}
+
+$respuesta_150 = isset($_POST['respuesta_150']) ? $_POST['respuesta_150'] : '';
+if ($respuesta_150 === 'MAC') {
+    $verificar_150 = "correcto";
+} elseif ($respuesta_150 === '') {
+    $verificar_150 = '';
+} else {
+    $verificar_150 = "incorrecto";
+}
+
+$respuesta_151 = isset($_POST['respuesta_151']) ? $_POST['respuesta_151'] : '';
+if ($respuesta_151 === 'red local') {
+    $verificar_151 = "correcto";
+} elseif ($respuesta_151 === '') {
+    $verificar_151 = '';
+} else {
+    $verificar_151 = "incorrecto";
+}
+
+ 
 }
 }
 ?>
@@ -1312,7 +1618,7 @@ if ($respuesta_121 === '144') {
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 330vh;
+    height: 250vh;
     }
 
 
@@ -1630,43 +1936,40 @@ function ocultarMensaje4() {
 
     
 <div class="seccion izquierda"> 
-
+Fundamentos de Ciberseguridad (Guía de Estudio, 2ª edición, Nexus)
+<hr>
  <p><b>TEMA 2 — EL MODELO OSI</b></p>
 
     <p>
-    El 
-    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="8">
-      de 
-    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="8">
-      de 
-    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="8">
+      
+    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="42">
+ 
       (
-        <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="35">
-         , OSI) se 
-    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="8">
-      para describir 
+        <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="25">
+         , OSI)   
+    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="19">
+        
     <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="8">
-      de 
-    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="8">
-     . Debido a que rara vez se 
-    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="8">
-      en redes reales, se considera una
-      <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="8">
-        para 
-    <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="8">
-      el desarrollo de las redes 
-    reales. OSI fue la primera definición abierta 
-    <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="8">
+        
+    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="3">
+     .   
+    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="48">
+       ,  
+      <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="28">
+          
+    <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="39">
+       . OSI fue la primera definición abierta 
+    <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="10">
       para redes.
     </p>
 
     <p>
     El modelo OSI define 
-    <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="8">
+    <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="5">
       de 
-    <input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="8">
+    <input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="10">
       requeridos para los equipos de la 
-    <input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="8">
+    <input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="5">
       en capas, donde cada capa 
     implementa un 
     <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="8">
@@ -1675,7 +1978,24 @@ function ocultarMensaje4() {
       capas del modelo OSI, que se muestran en la 
     figura 3.2
     </p>
-
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_1 ?>
+    <?php echo $verificar_2 ?>
+    <?php echo $verificar_3 ?>
+    <?php echo $verificar_4 ?>
+    <?php echo $verificar_5 ?>
+    <?php echo $verificar_6 ?>
+    <?php echo $verificar_7 ?>  
+    <?php echo $verificar_8 ?>
+    <?php echo $verificar_9 ?>
+    <?php echo $verificar_10 ?>
+    <?php echo $verificar_11 ?> 
+    <?php echo $verificar_12 ?>
+    <?php echo $verificar_13 ?>
+    <?php echo $verificar_14 ?>
+    <?php echo $verificar_15 ?>
+    <?php echo $verificar_16 ?>
+    <hr>
     <div class="osi-container">
         <div class="title">Figura 3.2—Las capas de OSI</div>
         <div class="layer">7. <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="8"> </div>
@@ -1683,106 +2003,113 @@ function ocultarMensaje4() {
         <div class="layer">5. <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="8"> </div>
         <div class="layer">4. <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="8"> </div>
         <div class="layer">3. <input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>" size="8"> </div>
-        <div class="layer">2. <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="8"> </div>
+        <div class="layer">2. <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="11"> </div>
         <div class="layer">1. <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="8"> </div>
     </div>
-
-
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_17 ?>
+    <?php echo $verificar_18 ?>
+    <?php echo $verificar_19 ?>
+    <?php echo $verificar_20 ?>
+    <?php echo $verificar_21 ?>
+    <?php echo $verificar_22 ?>
+    <?php echo $verificar_23 ?>
+    <hr>
     <p>
     Cada capa OSI realiza una función específica para la red:
     </p>
 
     <ul>
     <li><b>La capa 
-    <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="8">    
+    <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="4">    
       (Capa 1)</b> —   
-    <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="8">
-      entre los 
-    <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="8">
-      de
-    <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="8">
+    <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="21">
+        
+    <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="6">
+       
+    <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="4">
      </li>
     <li><b>La capa de 
-    <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="8">    
+    <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="12">    
       (Capa 2)</b> — 
-    <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="8">
-      los 
-    <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="8">
-      en 
-    <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="8">
-      que pueden ser 
-    <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="8">
-      por la capa 
-    <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="8">
+    <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="66">
+ 
      </li>
     <li><b>La capa de 
-    <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="8">    
+    <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="4">    
       (Capa 3)</b> — 
-    <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="8">
-      de 
-    <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="8">
-      y 
-    <input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="8">
-      los 
-    <input type="text" name="respuesta_38" value="<?php echo $respuesta_38; ?>" size="8">
-      del 
-    <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="8">
-      al 
-    <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="8">
+    <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="62">
      </li>
     <li><b>La capa de 
     <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="8">    
       (Capa 4)</b> — 
-    <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="8">
-      que los 
-    <input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="8">
-      se 
-    <input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>" size="8">
-      de 
-    <input type="text" name="respuesta_45" value="<?php echo $respuesta_45; ?>" size="8">
-      en la 
-    <input type="text" name="respuesta_46" value="<?php echo $respuesta_46; ?>" size="8">
+    <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="71">
+ 
      </li>
     <li><b>La capa de 
-    <input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="8">    
+    <input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="4">    
       (Capa 5)</b> — 
-    <input type="text" name="respuesta_48" value="<?php echo $respuesta_48; ?>" size="8">
-      y 
-    <input type="text" name="respuesta_49" value="<?php echo $respuesta_49; ?>" size="8">
-      las 
-    <input type="text" name="respuesta_50" value="<?php echo $respuesta_50; ?>" size="8">
-      de 
-    <input type="text" name="respuesta_51" value="<?php echo $respuesta_51; ?>" size="8">
+    <input type="text" name="respuesta_48" value="<?php echo $respuesta_48; ?>" size="41">
+ 
      </li>
     <li><b>La capa de 
     <input type="text" name="respuesta_52" value="<?php echo $respuesta_52; ?>" size="8">    
-      (Capa 6)</b> — Da 
+      (Capa 6)</b> —   
     <input type="text" name="respuesta_53" value="<?php echo $respuesta_53; ?>" size="8">
      , 
-    <input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>" size="8">
-      y 
-    <input type="text" name="respuesta_55" value="<?php echo $respuesta_55; ?>" size="8">
-      los 
-    <input type="text" name="respuesta_56" value="<?php echo $respuesta_56; ?>" size="8">
+    <input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>" size="21">
+ 
      </li>
     <li><b>La capa de 
     <input type="text" name="respuesta_57" value="<?php echo $respuesta_57; ?>" size="8">    
       (Capa 7)</b> — 
-    <input type="text" name="respuesta_58" value="<?php echo $respuesta_58; ?>" size="8">
-      entre 
-    <input type="text" name="respuesta_59" value="<?php echo $respuesta_59; ?>" size="8">
-      de 
-    <input type="text" name="respuesta_60" value="<?php echo $respuesta_60; ?>" size="8">
-      y otras 
-    <input type="text" name="respuesta_61" value="<?php echo $respuesta_61; ?>" size="8">
-      de 
-    <input type="text" name="respuesta_62" value="<?php echo $respuesta_62; ?>" size="8">
-      de 
-    <input type="text" name="respuesta_63" value="<?php echo $respuesta_63; ?>" size="8">
+    <input type="text" name="respuesta_58" value="<?php echo $respuesta_58; ?>" size="64">
+ 
      </li>
     </ul>
 
-
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_24 ?>
+    <?php echo $verificar_25 ?>
+    <?php echo $verificar_26 ?>
+    <?php echo $verificar_27 ?>
+    <?php echo $verificar_28 ?>
+    <?php echo $verificar_29 ?>
+    <?php echo $verificar_30 ?>
+    <?php echo $verificar_31 ?>
+    <?php echo $verificar_32 ?>
+    <?php echo $verificar_33 ?>
+    <?php echo $verificar_34 ?>
+    <?php echo $verificar_35 ?>
+    <?php echo $verificar_36 ?>
+    <?php echo $verificar_37 ?>
+    <?php echo $verificar_38 ?>
+    <?php echo $verificar_39 ?>
+    <?php echo $verificar_40 ?>
+    <?php echo $verificar_41 ?>
+    <?php echo $verificar_42 ?>
+    <?php echo $verificar_43 ?>
+    <?php echo $verificar_44 ?>
+    <?php echo $verificar_45 ?>
+    <?php echo $verificar_46 ?>
+    <?php echo $verificar_47 ?>
+    <?php echo $verificar_48 ?>
+    <?php echo $verificar_49 ?>
+    <?php echo $verificar_50 ?>
+    <?php echo $verificar_51 ?>
+    <?php echo $verificar_52 ?>
+    <?php echo $verificar_53 ?>
+    <?php echo $verificar_54 ?>
+    <?php echo $verificar_55 ?>
+    <?php echo $verificar_56 ?>
+    <?php echo $verificar_57 ?>
+    <?php echo $verificar_58 ?>
+    <?php echo $verificar_59 ?>
+    <?php echo $verificar_60 ?>
+    <?php echo $verificar_61 ?>
+    <?php echo $verificar_62 ?>
+    <?php echo $verificar_63 ?>
+    <hr>
     <p><b>TCP/IP</b></p>
 
 <p>
@@ -1801,7 +2128,7 @@ El
   de 
 <input type="text" name="respuesta_70" value="<?php echo $respuesta_70; ?>" size="8">
  /
-<input type="text" name="respuesta_71" value="<?php echo $respuesta_71; ?>" size="8">
+<input type="text" name="respuesta_71" value="<?php echo $respuesta_71; ?>" size="16">
   (
 <input type="text" name="respuesta_72" value="<?php echo $respuesta_72; ?>" size="8">    
  ). El modelo TCP/IP 
@@ -1809,7 +2136,7 @@ El
   tanto protocolos 
 <input type="text" name="respuesta_74" value="<?php echo $respuesta_74; ?>" size="8">
   a 
-<input type="text" name="respuesta_75" value="<?php echo $respuesta_75; ?>" size="8">
+<input type="text" name="respuesta_75" value="<?php echo $respuesta_75; ?>" size="4">
   como de 
 <input type="text" name="respuesta_76" value="<?php echo $respuesta_76; ?>" size="8">
   a 
@@ -1823,25 +2150,25 @@ El
 
 <p>
 Actualmente, existen 
-<input type="text" name="respuesta_79" value="<?php echo $respuesta_79; ?>" size="8">
+<input type="text" name="respuesta_79" value="<?php echo $respuesta_79; ?>" size="10">
   del protocolo IP que 
-<input type="text" name="respuesta_80" value="<?php echo $respuesta_80; ?>" size="8">
+<input type="text" name="respuesta_80" value="<?php echo $respuesta_80; ?>" size="4">
   en la 
-<input type="text" name="respuesta_81" value="<?php echo $respuesta_81; ?>" size="8">
+<input type="text" name="respuesta_81" value="<?php echo $respuesta_81; ?>" size="4">
   — 
-<input type="text" name="respuesta_82" value="<?php echo $respuesta_82; ?>" size="8">
+<input type="text" name="respuesta_82" value="<?php echo $respuesta_82; ?>" size="2">
   e 
-<input type="text" name="respuesta_83" value="<?php echo $respuesta_83; ?>" size="8">
+<input type="text" name="respuesta_83" value="<?php echo $respuesta_83; ?>" size="2">
  .
 
 
-<input type="text" name="respuesta_84" value="<?php echo $respuesta_84; ?>" size="8">
+<input type="text" name="respuesta_84" value="<?php echo $respuesta_84; ?>" size="2">
   es la 
-<input type="text" name="respuesta_85" value="<?php echo $respuesta_85; ?>" size="8">
+<input type="text" name="respuesta_85" value="<?php echo $respuesta_85; ?>" size="4">
   revisión del 
 <input type="text" name="respuesta_86" value="<?php echo $respuesta_86; ?>" size="8">
   y el más 
-<input type="text" name="respuesta_87" value="<?php echo $respuesta_87; ?>" size="8">
+<input type="text" name="respuesta_87" value="<?php echo $respuesta_87; ?>" size="4">
   para la 
 <input type="text" name="respuesta_88" value="<?php echo $respuesta_88; ?>" size="8">
   de 
@@ -1853,36 +2180,36 @@ Actualmente, existen
   de 
 <input type="text" name="respuesta_92" value="<?php echo $respuesta_92; ?>" size="8">
   de 
-<input type="text" name="respuesta_93" value="<?php echo $respuesta_93; ?>" size="8">
+<input type="text" name="respuesta_93" value="<?php echo $respuesta_93; ?>" size="4">
   que permite algo más de 
-<input type="text" name="respuesta_94" value="<?php echo $respuesta_94; ?>" size="8">
+<input type="text" name="respuesta_94" value="<?php echo $respuesta_94; ?>" size="9">
   de direcciones. Con el actual predominio de 
 dispositivos conectados a Internet, se espera que tarde o temprano IPv4 se quede 
-<input type="text" name="respuesta_95" value="<?php echo $respuesta_95; ?>" size="8">
+<input type="text" name="respuesta_95" value="<?php echo $respuesta_95; ?>" size="10">
   disponibles. Por este 
 motivo, 
-<input type="text" name="respuesta_96" value="<?php echo $respuesta_96; ?>" size="8">
+<input type="text" name="respuesta_96" value="<?php echo $respuesta_96; ?>" size="4">
   ha sido 
 <input type="text" name="respuesta_97" value="<?php echo $respuesta_97; ?>" size="8">
   para hacer frente a esta preocupación.
 </p>
 
 <p>
-<input type="text" name="respuesta_98" value="<?php echo $respuesta_98; ?>" size="8">
+<input type="text" name="respuesta_98" value="<?php echo $respuesta_98; ?>" size="4">
  , también llamado 
-<input type="text" name="respuesta_99" value="<?php echo $respuesta_99; ?>" size="8">
+<input type="text" name="respuesta_99" value="<?php echo $respuesta_99; ?>" size="4">
   (nueva generación) es la 
-<input type="text" name="respuesta_100" value="<?php echo $respuesta_100; ?>" size="8">
+<input type="text" name="respuesta_100" value="<?php echo $respuesta_100; ?>" size="5">
   versión de 
-<input type="text" name="respuesta_101" value="<?php echo $respuesta_101; ?>" size="8">
+<input type="text" name="respuesta_101" value="<?php echo $respuesta_101; ?>" size="2">
   y es una 
 <input type="text" name="respuesta_102" value="<?php echo $respuesta_102; ?>" size="8">
   más 
-<input type="text" name="respuesta_103" value="<?php echo $respuesta_103; ?>" size="8">
+<input type="text" name="respuesta_103" value="<?php echo $respuesta_103; ?>" size="9">
   de 
-<input type="text" name="respuesta_104" value="<?php echo $respuesta_104; ?>" size="8">
+<input type="text" name="respuesta_104" value="<?php echo $respuesta_104; ?>" size="2">
  . 
-<input type="text" name="respuesta_105" value="<?php echo $respuesta_105; ?>" size="8">
+<input type="text" name="respuesta_105" value="<?php echo $respuesta_105; ?>" size="2">
   fue creada para 
 <input type="text" name="respuesta_106" value="<?php echo $respuesta_106; ?>" size="8">
   un 
@@ -1897,15 +2224,126 @@ transmitidos. Se espera que IPv4 e IPv6 coexistan durante algún tiempo.
 
 
 <p>
-La figura 3.3 muestra algunos de los estándares asociados con el conjunto TCP/IP y dónde encajan dentro del modelo OSI.
-Es interesante observar que el conjunto de protocolos TCP/IP se desarrolló antes que el marco OSI; por lo tanto, no hay
-ninguna coincidencia directa entre los estándares de TCP/IP y las capas del marco.
+La figura 3.3 muestra algunos de los 
+<input type="text" name="respuesta_110" value="<?php echo $respuesta_110; ?>" size="8">
+  asociados con el 
+<input type="text" name="respuesta_111" value="<?php echo $respuesta_111; ?>" size="12">
+  y dónde encajan dentro del 
+<input type="text" name="respuesta_112" value="<?php echo $respuesta_112; ?>" size="8">
+ .
+Es interesante observar que el conjunto de protocolos 
+<input type="text" name="respuesta_113" value="<?php echo $respuesta_113; ?>" size="8">
+  se desarrolló antes que el 
+<input type="text" name="respuesta_114" value="<?php echo $respuesta_114; ?>" size="8">
+ ; por lo tanto, no hay ninguna 
+<input type="text" name="respuesta_115" value="<?php echo $respuesta_115; ?>" size="8">
+  directa entre los estándares de 
+<input type="text" name="respuesta_116" value="<?php echo $respuesta_116; ?>" size="8">
+  y las capas del marco.
 </p>
 
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_64 ?>
+    <?php echo $verificar_65 ?>
+    <?php echo $verificar_66 ?>
+    <?php echo $verificar_67 ?>
+<?php echo $verificar_68 ?>
+<?php echo $verificar_69 ?>
+<?php echo $verificar_70 ?>
+<?php echo $verificar_71 ?>
+<?php echo $verificar_72 ?>
+<?php echo $verificar_73 ?>
+<br>
+<?php echo $verificar_74 ?>
+<?php echo $verificar_75 ?>
+<?php echo $verificar_76 ?>
+<?php echo $verificar_77 ?>
+<?php echo $verificar_78 ?>
+<?php echo $verificar_79 ?>
+<?php echo $verificar_80 ?>
+<?php echo $verificar_81 ?>
+<?php echo $verificar_82 ?>
+<br>
 
-    <img src="../../../img/guia_81.png" alt="" width="600">
-    <img src="../../../img/guia_82.png" alt="" width="600">
+<?php echo $verificar_83 ?>
+<?php echo $verificar_84 ?>
+<?php echo $verificar_85 ?>
+<?php echo $verificar_86 ?>
+<?php echo $verificar_87 ?>
+<?php echo $verificar_88 ?>
+<?php echo $verificar_89 ?>
+<?php echo $verificar_90 ?>
+<?php echo $verificar_91 ?>
+<?php echo $verificar_92 ?>
+<?php echo $verificar_93 ?>
+<?php echo $verificar_94 ?>
+<br>
 
+<?php echo $verificar_95 ?>
+<?php echo $verificar_96 ?>
+<?php echo $verificar_97 ?>
+<?php echo $verificar_98 ?>
+<?php echo $verificar_99 ?>
+<?php echo $verificar_100 ?>
+<?php echo $verificar_101 ?>
+<?php echo $verificar_102 ?>
+<?php echo $verificar_103 ?>
+<?php echo $verificar_104 ?>
+<?php echo $verificar_105 ?>
+<?php echo $verificar_106 ?>
+<?php echo $verificar_107 ?>
+<?php echo $verificar_108 ?>
+<br>
+
+<?php echo $verificar_109 ?>
+<?php echo $verificar_110 ?>
+<?php echo $verificar_111 ?>
+<?php echo $verificar_112 ?>
+<?php echo $verificar_113 ?>
+<?php echo $verificar_114 ?>
+<?php echo $verificar_115 ?>
+<?php echo $verificar_116 ?>
+    <button onmousedown="mostrarImagen4()" onmouseup="ocultarImagen4()">Explicacion</button>
+    <!--   <img src="../../../img/guia_80.png" alt=""> Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada4" src="../../../img/guia_81.png" style="display: none; max-width: 100%" width="560" height="400">
+
+    <script>
+        function mostrarImagen4() {
+        var imagenMostrada4 = document.getElementById('imagenMostrada4');
+
+        // Mostrar la imagen
+        imagenMostrada4.style.display = 'block';
+        }
+
+        function ocultarImagen4() {
+        var imagenMostrada4 = document.getElementById('imagenMostrada4');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada4.style.display = 'none';
+        }
+    </script> 
+     <button onmousedown="mostrarImagen5()" onmouseup="ocultarImagen5()">Explicacion</button>
+    <!--   <img src="../../../img/guia_80.png" alt=""> Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada5" src="../../../img/guia_82.png" style="display: none; max-width: 100%" width="560" height="400">
+
+    <script>
+        function mostrarImagen5() {
+        var imagenMostrada5 = document.getElementById('imagenMostrada5');
+
+        // Mostrar la imagen
+        imagenMostrada5.style.display = 'block';
+        }
+
+        function ocultarImagen5() {
+        var imagenMostrada5 = document.getElementById('imagenMostrada5');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada5.style.display = 'none';
+        }
+    </script> 
+ 
 </div>
 
 
@@ -1915,41 +2353,243 @@ ninguna coincidencia directa entre los estándares de TCP/IP y las capas del mar
     <p><b>ENCAPSULACIÓN</b></p>
 
 <p>
-La encapsulación es el proceso de añadir información de direccionamiento de datos a medida que se transmiten por la pila OSI.
+La encapsulación es el proceso de 
+<input type="text" name="respuesta_117" value="<?php echo $respuesta_117; ?>" size="14">
+  de 
+<input type="text" name="respuesta_118" value="<?php echo $respuesta_118; ?>" size="14">
+  de datos a medida que se 
+<input type="text" name="respuesta_119" value="<?php echo $respuesta_119; ?>" size="8">
+  por la 
+<input type="text" name="respuesta_120" value="<?php echo $respuesta_120; ?>" size="8">
+ .
 Cada capa confía en los servicios proporcionados por la capa inferior. Cada capa del modelo OSI sólo se comunica con su par
-de destino. Lo hace utilizando datagramas o unidades de datos de protocolo (PDU). Consulte la figura 3.3 anterior para los
+de destino. Lo hace utilizando 
+<input type="text" name="respuesta_121" value="<?php echo $respuesta_121; ?>" size="8">
+  o 
+  <input type="text" name="respuesta_122" value="<?php echo $respuesta_122; ?>" size="27">
+    (PDU). Consulte la figura 3.3 anterior para los
 nombres de PDU.
 </p>
 
 <p>
 El modelo OSI se muestra en la figura 3.4. Los datos de la capa superior se transmiten a la capa de transporte como
-segmentos y son “envueltos” con una cabecera para su identificación. Estos segmentos se transmiten a la capa de red en forma
-de paquetes de nuevo con una cabecera. Los datos se desglosan en tramas en la capa de enlace de datos y también tienen
-información de control anexa. En la capa física, los datos se transforman en bits (1s y 0s) para su entrega a la red de destino.
+<input type="text" name="respuesta_123" value="<?php echo $respuesta_123; ?>" size="8">
+  y son “envueltos” con una cabecera para su identificación. Estos segmentos se transmiten a la 
+<input type="text" name="respuesta_124" value="<?php echo $respuesta_124; ?>" size="8">
+  en forma de 
+<input type="text" name="respuesta_125" value="<?php echo $respuesta_125; ?>" size="8">
+  de nuevo con una cabecera. Los datos se 
+<input type="text" name="respuesta_126" value="<?php echo $respuesta_126; ?>" size="8">
+  en 
+<input type="text" name="respuesta_127" value="<?php echo $respuesta_127; ?>" size="8">
+  en la capa de enlace de datos y también tienen
+<input type="text" name="respuesta_128" value="<?php echo $respuesta_128; ?>" size="8">
+  de control anexa. En la capa física, los datos se transforman en 
+<input type="text" name="respuesta_129" value="<?php echo $respuesta_129; ?>" size="8">
+  (1s y 0s) para su entrega a la red de destino.
 </p>
 
 <p>
-Una vez en el destino, cada capa del extremo receptor se despoja de la información de direccionamiento correspondiente y la
-pasa a la pila OSI hasta que el mensaje es entregado. Este proceso se llama <b>desencapsulación</b>.
+Una vez en el destino, cada capa del extremo receptor se despoja de la información de direccionamiento correspondiente y 
+<input type="text" name="respuesta_130" value="<?php echo $respuesta_130; ?>" size="8">
+  a la 
+<input type="text" name="respuesta_131" value="<?php echo $respuesta_131; ?>" size="8">
+  hasta que el mensaje es entregado. Este proceso se llama 
+<input type="text" name="respuesta_132" value="<?php echo $respuesta_132; ?>" size="14">
+ .
 </p>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_117 ?>
+    <?php echo $verificar_118 ?>
+    <?php echo $verificar_119 ?>
+    <?php echo $verificar_120 ?>
+    <?php echo $verificar_121 ?>
+    <?php echo $verificar_122 ?>
+    <?php echo $verificar_123 ?>
+    <?php echo $verificar_124 ?>
+    <?php echo $verificar_125 ?>
+    <?php echo $verificar_126 ?>
+    <?php echo $verificar_127 ?>
+    <?php echo $verificar_128 ?>
+    <?php echo $verificar_129 ?>
+    <?php echo $verificar_130 ?>
+    <?php echo $verificar_131 ?>
+    <?php echo $verificar_132 ?>
 
-    <img src="../../../img/guia_79.png" alt="">
+         <button onmousedown="mostrarImagen6()" onmouseup="ocultarImagen6()">Explicacion</button>
+    <!--   <img src="../../../img/guia_80.png" alt=""> Elemento para mostrar la imagen -->
 
+    <img id="imagenMostrada6" src="../../../img/guia_346.png" style="display: none; max-width: 100%" width="560" height="400">
+
+    <script>
+        function mostrarImagen6() {
+        var imagenMostrada6 = document.getElementById('imagenMostrada6');
+
+        // Mostrar la imagen
+        imagenMostrada6.style.display = 'block';
+        }
+
+        function ocultarImagen6() {
+        var imagenMostrada6 = document.getElementById('imagenMostrada6');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada6.style.display = 'none';
+        }
+    </script> 
+
+<button onmousedown="mostrarImagen()" onmouseup="ocultarImagen()">Explicacion</button>
+    <!-- Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada" src="../../../img/guia_340.png" style="display: none; max-width: 100%" width="560" height="400">
+
+    <script>
+        function mostrarImagen() {
+        var imagenMostrada = document.getElementById('imagenMostrada');
+
+        // Mostrar la imagen
+        imagenMostrada.style.display = 'block';
+        }
+
+        function ocultarImagen() {
+        var imagenMostrada = document.getElementById('imagenMostrada');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada.style.display = 'none';
+        }
+    </script>
+<hr>
+  
+
+<button onmousedown="mostrarImagen2()" onmouseup="ocultarImagen2()">Explicacion</button>
+    <!--   <img src="../../../img/guia_79.png" alt=""> Elemento para mostrar la imagen -->
+
+    <img id="imagenMostrada2" src="../../../img/guia_79.png" style="display: none; max-width: 100%" width="560" height="400">
+
+    <script>
+        function mostrarImagen2() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+
+        // Mostrar la imagen
+        imagenMostrada2.style.display = 'block';
+        }
+
+        function ocultarImagen() {
+        var imagenMostrada2 = document.getElementById('imagenMostrada2');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada2.style.display = 'none';
+        }
+    </script>
 <p>
-Los servicios de comunicaciones en la Capa 4 del modelo OSI se categorizan como orientados a conexión o no orientados a
-conexión. TCP proporciona una entrega confiable y secuenciada con comprobación de errores. Las conexiones se establecerán
-a partir de un protocolo de enlace de tres vías (<i>three-way handshake</i>), y por lo tanto son orientadas a conexión, 
-tal y como se
-muestra en la figura 3.5. El Protocolo de Datagramas de Usuario (UDP) es un protocolo no orientado a conexión utilizado en
-los escenarios donde la velocidad es más importante que la comprobación de errores y la entrega garantizada. UDP hace uso de
-las sumas de verificación (<i>checksums</i>) para la integridad de los datos.
+Los servicios de comunicaciones en la Capa 4 del modelo OSI se categorizan como 
+<input type="text" name="respuesta_133" value="<?php echo $respuesta_133; ?>" size="17">
+  o 
+<input type="text" name="respuesta_134" value="<?php echo $respuesta_134; ?>" size="21">
+ . 
+<input type="text" name="respuesta_135" value="<?php echo $respuesta_135; ?>" size="8">
+  proporciona una entrega confiable y secuenciada con comprobación de errores. Las conexiones se establecerán
+a partir de un
+<input type="text" name="respuesta_136" value="<?php echo $respuesta_136; ?>" size="8">
+  de enlace 
+<input type="text" name="respuesta_137" value="<?php echo $respuesta_137; ?>" size="8">
+  (<i>three-way handshake</i>), y por lo tanto son 
+<input type="text" name="respuesta_138" value="<?php echo $respuesta_138; ?>" size="18">
+ , 
+tal y como se muestra en la figura 3.5. El Protocolo de 
+<input type="text" name="respuesta_139" value="<?php echo $respuesta_139; ?>" size="19">
+  (UDP) es un protocolo 
+<input type="text" name="respuesta_140" value="<?php echo $respuesta_140; ?>" size="19">
+  utilizado en
+los escenarios donde la 
+<input type="text" name="respuesta_141" value="<?php echo $respuesta_141; ?>" size="8">
+  es más importante que la 
+<input type="text" name="respuesta_142" value="<?php echo $respuesta_142; ?>" size="10">
+  de 
+<input type="text" name="respuesta_143" value="<?php echo $respuesta_143; ?>" size="8">
+  y la entrega garantizada. 
+<input type="text" name="respuesta_144" value="<?php echo $respuesta_144; ?>" size="8">
+  hace uso de las sumas de verificación (<i>checksums</i>) para la 
+<input type="text" name="respuesta_145" value="<?php echo $respuesta_145; ?>" size="8">
+  de los datos.
 </p>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_133 ?>
+<?php echo $verificar_134 ?>
+<?php echo $verificar_135 ?>
+<?php echo $verificar_136 ?>
+<?php echo $verificar_137 ?>
+<?php echo $verificar_138 ?>
+<?php echo $verificar_139 ?>
+<?php echo $verificar_140 ?>
+<?php echo $verificar_141 ?>
+<?php echo $verificar_142 ?>
+<?php echo $verificar_143 ?>
+<?php echo $verificar_144 ?>
+<?php echo $verificar_145 ?>
+    <button onmousedown="mostrarImagen3()" onmouseup="ocultarImagen3()">Explicacion</button>
+    <!--   <img src="../../../img/guia_80.png" alt=""> Elemento para mostrar la imagen -->
 
+    <img id="imagenMostrada3" src="../../../img/guia_80.png" style="display: none; max-width: 100%" width="560" height="400">
+
+    <script>
+        function mostrarImagen3() {
+        var imagenMostrada3 = document.getElementById('imagenMostrada3');
+
+        // Mostrar la imagen
+        imagenMostrada3.style.display = 'block';
+        }
+
+        function ocultarImagen() {
+        var imagenMostrada3 = document.getElementById('imagenMostrada3');
+
+        // Ocultar la imagen al soltar el botón
+        imagenMostrada3.style.display = 'none';
+        }
+    </script> 
      
-    <img src="../../../img/guia_80.png" alt="">ç
-    
     <hr>
-    <strong>parentesis</strong>
+ 
+
+<h4> Cómo funciona la encapsulación</h4>
+<p>
+  Piensa en tus datos como una <strong>carta</strong> que vas a enviar:
+</p>
+<ul>
+  <li><strong>Datos:</strong> La carta que escribiste (contenido de la aplicación).</li>
+  <li><strong>Capa de transporte (TCP/UDP):</strong> Pone un sobre interno con la dirección del destinatario (
+  <input type="text" name="respuesta_146" value="<?php echo $respuesta_146; ?>" size="8">  
+   ) y un sello de 
+  <input type="text" name="respuesta_147" value="<?php echo $respuesta_147; ?>" size="8">
+   .</li>
+  <li><strong>Capa de red (IP):</strong> Pone otro sobre con la 
+  <input type="text" name="respuesta_148" value="<?php echo $respuesta_148; ?>" size="8">
+    de origen y destino (como la dirección de la casa).</li>
+  <li><strong>Capa de enlace (Ethernet/Wi-Fi):</strong> Pone la 
+  <input type="text" name="respuesta_149" value="<?php echo $respuesta_149; ?>" size="11">
+    (
+  <input type="text" name="respuesta_150" value="<?php echo $respuesta_150; ?>" size="2">  
+   ) y prepara el paquete para salir por la 
+  <input type="text" name="respuesta_151" value="<?php echo $respuesta_151; ?>" size="8">
+   .</li>
+</ul>
+<p>
+  Al final, tu carta parece una <strong>muñeca rusa de sobres</strong>, cada capa le pone el suyo antes de salir.
+</p>
+    <button type="submit">Enviar</button>
+
+
+<?php echo $verificar_146 ?>
+<?php echo $verificar_147 ?>
+<?php echo $verificar_148 ?>
+<?php echo $verificar_149 ?>
+<?php echo $verificar_150 ?>
+<?php echo $verificar_151 ?>
+
+ 
+
+  <button onmousedown="mostrarMensaje()" onmouseup="ocultarMensaje()">ayudar</button>
+    <div id="mensaje" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
+     <strong>parentesis</strong>
     
     <h4>Contexto</h4>
 <p>
@@ -1965,21 +2605,6 @@ las sumas de verificación (<i>checksums</i>) para la integridad de los datos.
   A ese proceso de agregar información de cada capa alrededor de los datos originales se le llama 
   <strong>encapsulación</strong>.
 </p>
-
-<h4> Cómo funciona la encapsulación</h4>
-<p>
-  Piensa en tus datos como una <strong>carta</strong> que vas a enviar:
-</p>
-<ul>
-  <li><strong>Datos:</strong> La carta que escribiste (contenido de la aplicación).</li>
-  <li><strong>Capa de transporte (TCP/UDP):</strong> Pone un sobre interno con la dirección del destinatario (puerto) y un sello de integridad.</li>
-  <li><strong>Capa de red (IP):</strong> Pone otro sobre con la dirección IP de origen y destino (como la dirección de la casa).</li>
-  <li><strong>Capa de enlace (Ethernet/Wi-Fi):</strong> Pone la dirección física (MAC) y prepara el paquete para salir por la red local.</li>
-</ul>
-<p>
-  Al final, tu carta parece una <strong>muñeca rusa de sobres</strong>, cada capa le pone el suyo antes de salir.
-</p>
-
 <h4> Visualización sencilla</h4>
 <p>
   Imagina que tus datos originales son <strong>DATO</strong>:
@@ -1999,7 +2624,13 @@ Enlace (Ethernet):   [ETH | IP | TCP | DATO]
   Cuando llega al destino, se hace lo contrario: <strong>desencapsulación</strong>.<br>
   Cada capa “abre su sobre” y entrega el contenido a la capa superior.
 </p>
-
+    </div>
+ 
+    <hr>
+    <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
+    <br>
+    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
+    <button type="submit"   >Mostrar Solución</button>
  
 </div>
 </div>

@@ -2748,7 +2748,7 @@ if ($respuesta_280 === '144') {
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 180vh;
+    height: 280vh;
     }
 
 </style>
@@ -3154,8 +3154,47 @@ n = \text{REDONDEAR}\left(\sqrt{\frac{\text{Memoria KB} \times 1024}{3 \times \t
 
 <div class="seccion derecha">
     <strong>Esto se ejecutara en el cmd:</strong>
- <img src="../../img/guia_229.png" alt="" width="600">
- 
+    <img src="../../img/guia_229.png" alt="" width="600">
+    <hr>
+    <img src="../../img/guia_272.png" alt="" width="600">
+
+    <h3>Tipos de RAM estática y dinámica</h3>
+<p>La memoria de acceso aleatorio (RAM), un tipo de memoria principal, se presenta en dos modos: <strong>RAM estática (SRAM)</strong> y <strong>RAM dinámica (DRAM)</strong>.</p>
+
+<h3>RAM estática (SRAM)</h3>
+<p>La SRAM almacena un bit de datos en cuatro transistores mediante dos inversores acoplados en cruz. Este tipo de RAM es más rápida y fiable que la DRAM, pero también es más cara. La SRAM se utiliza en dispositivos en los que la velocidad y la fiabilidad son cruciales.</p>
+
+<h3>RAM dinámica (DRAM)</h3>
+<p>La DRAM almacena bits de datos en condensadores separados dentro de un circuito integrado. Como los condensadores pierden carga, la información acaba por desvanecerse a menos que la carga del condensador se refresque periódicamente. Debido a su estructura, la DRAM es menos cara que la SRAM.</p>
+
+<h3>SRAM vs. DRAM</h3>
+<p>Al comparar SRAM y DRAM, hay que tener en cuenta algunas diferencias clave. Como ya se ha dicho, la SRAM es más rápida, menos volátil y más fiable que la DRAM. Sin embargo, la DRAM es menos cara y tiene mayor capacidad de almacenamiento. La elección entre ambas suele depender de las necesidades específicas del dispositivo informático.</p>
+
+
+    <h3>Memoria principal</h3>
+<p>Es la memoria que el procesador usa directamente para trabajar. Aquí entra la <strong>RAM</strong>, y dentro de ella hay dos tipos principales:</p>
+
+<ul>
+  <li><strong>SRAM (Static RAM):</strong> más rápida, pero más costosa y ocupa más espacio. Se usa en cachés del procesador (memoria interna muy rápida).</li>
+  <li><strong>DRAM (Dynamic RAM):</strong> más lenta y necesita refrescarse, pero es más barata. Es la RAM principal que tu PC o celular usa para ejecutar programas.</li>
+</ul>
+
+<h3>💾 Memoria secundaria</h3>
+<p>Es el almacenamiento a largo plazo, donde los datos se guardan incluso sin energía:</p>
+
+<ul>
+  <li>Disco duro (HDD)</li>
+  <li>Unidad de estado sólido (SSD)</li>
+  <li>USB, CD, etc.</li>
+</ul>
+
+<p><strong>Entonces:</strong></p>
+<ul>
+  <li><strong>SRAM y DRAM</strong> = memoria principal (RAM)</li>
+  <li><strong>Disco, SSD, etc.</strong> = memoria secundaria</li>
+</ul>
+
+
 </div>
 </div>
  </form>
@@ -3164,7 +3203,7 @@ n = \text{REDONDEAR}\left(\sqrt{\frac{\text{Memoria KB} \times 1024}{3 \times \t
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="segundo.php"
+        href="tercero.php"
         role="button"
         width="50px"
         height="50px"

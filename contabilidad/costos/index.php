@@ -1312,7 +1312,7 @@ if ($respuesta_121 === '144') {
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 370vh;
+    height: 400vh;
     }
 
 </style>
@@ -1597,7 +1597,16 @@ function ocultarMensaje4() {
 
     
 <div class="seccion izquierda"> 
- 
+ <h1>Costo vs Gasto</h1>
+
+<h2>Similitudes</h2>
+<ul>
+  <li>Implican salidas de dinero para la empresa.</li>
+  <li>En libros de Estados Unidos se toma como sinónimo el concepto de costo y gasto.</li>
+</ul>
+
+<h2>Diferencias</h2>
+<p>El <strong>costo</strong> siempre va a estar relacionado directamente con la parte operativa o la producción y el <strong>gasto</strong> está ligado a actividades administrativas, de ventas y financieras.</p>
     <img src="../../img/guia_221.png" alt="">
    
     <hr>
