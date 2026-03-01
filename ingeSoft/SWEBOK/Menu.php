@@ -35,6 +35,8 @@
         <a class="btn" href=".\Part2\Menu.php">Parte 2  Software Architecture</a>
         <br>
         <a class="btn" href=".\Part3\Menu.php">Parte 3 Diseño de software</a>
+        <br>
+        <a class="btn" href=".\Diagramas\Menu.php">Diagramas</a>
     </div>
 </body>
 </html>

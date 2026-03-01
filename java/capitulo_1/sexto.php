@@ -1731,7 +1731,8 @@ public class EjemploAlcance {
 
 
 <div class="seccion derecha">
- 
+    <p><strong>problema realizable</strong></p>
+    <img src="../../img/guia_351.png" alt="">
  
 
 </div>

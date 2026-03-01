@@ -32,6 +32,7 @@
          <a class="btn" href=".\huffman\index.php">HUFMANN</a>
         <a class="btn" href=".\checksum\index.php">CHECKSUM</a>
         <a class="btn" href=".\huffmanIngles\index.php">Huffman ingles</a>
+        <a class="btn" href=".\Discretas_3\Menu.php">Discretas_3</a>
         <br>
         <br>
         <strong>4 libros principales:</strong>

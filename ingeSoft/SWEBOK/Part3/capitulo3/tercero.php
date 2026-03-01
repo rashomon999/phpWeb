@@ -18,7 +18,7 @@
     width: 50%; /* El 50% del ancho de la página menos el margen izquierdo */
     padding: 20px; /* importante este padding*/
     box-sizing: border-box;
-    height: 220vh;
+    height: 270vh;
     }
 
 
@@ -391,7 +391,10 @@ El resultado de los procesos de diseño es el conocimiento acumulado y los <stro
 </p>
 
 <p>
-Registrar la <strong>rationale</strong> de las decisiones importantes mejora la <strong>long-term maintainability</strong> del producto de software cuando se consideran modificaciones o mejoras (véase la sección <strong>4.6 Design Rationale</strong>). Estos <strong>work products</strong>, a menudo denominados <strong>design descriptions</strong> o <strong>design specifications</strong>, pueden adoptar la forma de textos, diagramas, modelos y prototipos que constituyen los <strong>blueprints</strong> del software que se va a implementar.
+Registrar la <strong>rationale</strong> de las decisiones importantes mejora la <strong>long-term maintainability</strong>
+ del producto de software cuando se consideran modificaciones o mejoras (véase la sección <strong>4.6 Design Rationale</strong>).
+  Estos <strong>work products</strong>, a menudo denominados <strong>design descriptions</strong> o <strong>design 
+    specifications</strong>, pueden adoptar la forma de textos, diagramas, modelos y prototipos que constituyen los <strong>blueprints</strong> del software que se va a implementar.
 </p>
 
 <p>
@@ -465,18 +468,7 @@ Los siguientes tipos de notación, la mayoría de los cuales son gráficos, se u
   </li>
 </ul>
 
- 
-
-    </form>
-</div>
-
-
-
-
-<div class="seccion derecha">
-    <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
- 
-<h3>4.3. Behavioral Design Descriptions</h3>
+ <h3>4.3. Behavioral Design Descriptions</h3>
 <p>[4* c9, c10] [7* c5] [21* c5.4]</p>
 
 <p>
@@ -497,6 +489,201 @@ Las siguientes notaciones y lenguajes, algunos gráficos y otros textuales, se u
   </li>
 </ul>
 
+    <hr>
+
+    </form>
+</div>
+
+
+
+
+<div class="seccion derecha">
+    <form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
+ 
+ 
+
+        <h4>4.6. Justificación del Diseño</h4>
+
+    <p>
+        Un resultado útil del diseño es la comprensión y la documentación explícita 
+        de las principales decisiones tomadas, junto con una explicación de la 
+        justificación de cada decisión. La justificación del diseño recoge el porqué 
+        de una decisión de diseño. Esto incluye los supuestos previos realizados, 
+        las alternativas consideradas y los compromisos (trade-offs) y criterios 
+        analizados para seleccionar un enfoque y descartar otros.
+    </p>
+
+    <p>
+        Aunque las razones de las decisiones suelen ser evidentes para el equipo 
+        de diseño actual, pueden no serlo tanto para quienes modifiquen o mantengan 
+        el sistema después de su implementación. Registrar la justificación mejora 
+        la mantenibilidad del producto de software a largo plazo. Continuar 
+        documentando la justificación de los cambios durante el mantenimiento 
+        también contribuye a la viabilidad del software.
+    </p>
+
+    <p>
+        También puede ser útil documentar las decisiones rechazadas y las razones 
+        de su rechazo. Capturar estas justificaciones permite que un equipo vuelva 
+        a analizar una decisión previamente descartada cuando cambien los supuestos, 
+        los requisitos o las restricciones. La importancia de la justificación es 
+        visible, por ejemplo, en proyectos de software libre y de código abierto 
+        (FOSS), que a menudo involucran equipos grandes y distribuidos de 
+        desarrolladores con una alta rotación.
+    </p>
+
+    <p>
+        La justificación del diseño puede documentarse como parte de la descripción 
+        del diseño del software o como un artefacto complementario. Con frecuencia 
+        se registra en texto, pero también pueden utilizarse otras formas de 
+        representación, como gráficos que muestran el diseño como una red 
+        interconectada de decisiones.
+    </p>
+    <hr>
+
+      <h2>5. Estrategias y Métodos de Diseño de Software</h2>
+
+    <p>
+        Existen diversas estrategias y métodos para estructurar y guiar el proceso de diseño; 
+        muchos de ellos evolucionaron a partir de estilos o paradigmas de programación. 
+        Además de incorporar una o más estrategias generales, la mayoría de los métodos 
+        de diseño se centran en hacer que uno o más conceptos de diseño (ya sean objetos, 
+        métodos o eventos) se conviertan en temas organizadores del software.
+    </p>
+
+    <p>
+        Estos temas orientan a los diseñadores sobre qué abordar primero, cómo proceder 
+        y cómo estructurar los módulos.
+    </p>
+
+    <hr>
+
+    <h3>5.1. Estrategias Generales</h3>
+
+    <p>
+        Algunos ejemplos frecuentemente citados de estrategias generales útiles en el 
+        proceso de diseño incluyen:
+    </p>
+
+    <ul>
+        <li>Estrategias de dividir y vencer (divide and conquer)</li>
+        <li>Refinamiento paso a paso (stepwise refinement)</li>
+        <li>Estrategias top-down (de arriba hacia abajo) vs. bottom-up (de abajo hacia arriba)</li>
+        <li>Estrategias que utilizan heurísticas, patrones y lenguajes de patrones</li>
+        <li>Enfoques iterativos e incrementales</li>
+    </ul>
+
+    <hr>
+
+    <h3>5.2. Diseño Orientado a Funciones (o Diseño Estructurado)</h3>
+
+    <p>
+        Este es uno de los métodos clásicos de diseño de software. Se centra en el 
+        refinamiento (o descomposición) para identificar las funciones principales del 
+        software, desarrollándolas de manera descendente (top-down).
+    </p>
+
+    <p>
+        El diseño estructurado suele seguir al análisis estructurado, produciendo 
+        DFDs (Diagramas de Flujo de Datos) y descripciones asociadas de procesos. 
+        Existen diversas herramientas que permiten la traducción automática de DFDs 
+        a diseños de alto nivel.
+    </p>
+
+    <hr>
+
+    <h3>5.3. Diseño Centrado en Datos</h3>
+
+    <p>
+        El diseño centrado en datos parte de las estructuras de datos que un programa 
+        manipula, en lugar de las funciones que realiza. El diseñador de software 
+        especifica las estructuras de datos de entrada y salida, y luego desarrolla 
+        unidades de programa que transforman las entradas en salidas.
+    </p>
+
+    <p>
+        Se han propuesto diversas heurísticas para tratar casos especiales, como 
+        situaciones en las que existe una discrepancia entre las estructuras de 
+        entrada y salida.
+    </p>
+
+    <hr>
+
+    <h3>5.4. Diseño Orientado a Objetos</h3>
+
+    <p>
+        Se han propuesto numerosos métodos de diseño de software basados en objetos. 
+        El campo ha evolucionado desde los primeros enfoques de diseño orientado a 
+        objetos de mediados de los años 80 (donde los sustantivos representan objetos; 
+        los verbos representan métodos; y los adjetivos representan atributos), en los 
+        que la herencia y el polimorfismo desempeñan un papel clave, hasta el diseño 
+        basado en componentes (CBD), donde puede definirse y accederse a metainformación 
+        (por ejemplo, mediante reflexión).
+    </p>
+
+    <p>
+        Aunque las raíces del diseño orientado a objetos (OOD) provienen del concepto 
+        de abstracción de datos, el diseño orientado a responsabilidades ha sido 
+        propuesto como un principio alternativo subyacente al OOD.
+    </p>
+
+    <hr>
+        <h2>6.2. Atributos de Calidad</h2>
+
+    <p>
+        Diversos atributos contribuyen a la calidad de un diseño de software, 
+        incluyendo varias “-idades” (modularidad, mantenibilidad, portabilidad, 
+        capacidad de prueba —testabilidad—, usabilidad) y “-ez” 
+        (corrección, robustez).
+    </p>
+
+    <p>
+        Las cualidades constituyen un subconjunto importante de las preocupaciones 
+        (ver el tema <em>Stakeholders and Concerns</em> en el área de conocimiento 
+        de Arquitectura de Software).
+    </p>
+
+    <p>
+        Algunas cualidades pueden observarse en tiempo de ejecución 
+        (por ejemplo, rendimiento, seguridad, disponibilidad, funcionalidad, usabilidad); 
+        otras no pueden observarse en tiempo de ejecución 
+        (por ejemplo, modificabilidad, portabilidad, reutilización, testabilidad); 
+        y algunas (por ejemplo, integridad conceptual, corrección, completitud) 
+        son observables en el diseño del software.
+    </p>
+
+    <hr>
+
+    <h2>6.4. Medidas y Métricas</h2>
+
+    <p>
+        Las medidas pueden utilizarse para evaluar o estimar cuantitativamente 
+        diversos aspectos de un diseño de software; por ejemplo, tamaño, estructura o calidad.
+    </p>
+
+    <p>
+        La mayoría de las medidas propuestas se basan en el enfoque utilizado 
+        para producir el diseño (ver tema 5: Estrategias y Métodos de Diseño de Software). 
+        Estas medidas se clasifican en dos grandes categorías:
+    </p>
+
+    <ul>
+        <li>
+            <strong>Medidas basadas en diseño funcional (estructurado):</strong><br>
+            Son medidas obtenidas mediante el análisis de la descomposición funcional; 
+            generalmente se representan utilizando un diagrama de estructura 
+            (o diagrama jerárquico), sobre el cual pueden calcularse diversas métricas.
+        </li>
+        <br>
+        <li>
+            <strong>Medidas basadas en diseño orientado a objetos:</strong><br>
+            La estructura del diseño suele representarse mediante un diagrama de clases, 
+            sobre el cual pueden calcularse diversas métricas. También pueden calcularse 
+            medidas sobre las propiedades del contenido interno de cada clase. 
+            Las métricas orientadas a objetos también consideran la complejidad del código 
+            basada en las líneas de código por método o en el número de mensajes enviados.
+        </li>
+    </ul>
     </form>
 </div>
 
@@ -505,7 +692,7 @@ Las siguientes notaciones y lenguajes, algunos gráficos y otros textuales, se u
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="segundo.php"
+        href="tercero.php"
         role="button"
         width="50px"
         height="50px"

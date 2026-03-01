@@ -31,8 +31,8 @@
     <div class="centered-container">
         <a class="btn" href=".\apuntes_clases\Menu.php">apuntes clases</a>
         <a class="btn" href=".\connolly\Menu.php">connolly</a>
-
-        
+        <a class="btn" href=".\intensivos_2\Menu.php">intensivos_2</a>
+         
     </div>
 </body>
 </html>

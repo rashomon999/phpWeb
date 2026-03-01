@@ -1,54 +1,140 @@
 <?php
  
  
-$respuesta_1 = ''; $respuesta_2 = ''; $respuesta_3 = ''; $respuesta_3_2 = ''; $respuesta_4 = ''; $respuesta_5 = ''; 
-$respuesta_6 = ''; $respuesta_7 = ''; $respuesta_8 = ''; $respuesta_9 = '';  $respuesta_10 = '';
-$respuesta_11 = ''; $respuesta_12 = ''; $respuesta_13 = ''; $respuesta_14 = ''; $respuesta_15 = '';
-$respuesta_16 = ''; $respuesta_17 = ''; $respuesta_18 = ''; $respuesta_19 = ''; $respuesta_20 = '';
-$respuesta_21 = ''; $respuesta_22 = '';  $respuesta_23 = '';  $respuesta_24 = '';
-$respuesta_25 = ''; $respuesta_26 = ''; $respuesta_27 = ''; $respuesta_28 = ''; $respuesta_29 = '';
-$respuesta_30 = ''; $respuesta_31 = ''; $respuesta_32 = ''; $respuesta_33 = ''; $respuesta_34 = ''; $respuesta_35 = ''; $respuesta_36 = ''; $respuesta_37 = ''; $respuesta_38 = '';
-$respuesta_39 = ''; $respuesta_40 = ''; $respuesta_41 = ''; $respuesta_42 = ''; $respuesta_43 = '';
-$respuesta_44 = ''; $respuesta_45 = ''; $respuesta_46 = ''; $respuesta_47 = ''; $respuesta_48 = '';
-$respuesta_49 = ''; $respuesta_50 = ''; $respuesta_51 = ''; $respuesta_52 = ''; $respuesta_53 = '';
-$respuesta_54 = ''; $respuesta_55 = ''; $respuesta_56 = '';$respuesta_57 = ''; $respuesta_58 = ''; $respuesta_59 = ''; $respuesta_60 = '';
-$respuesta_61 = '';$respuesta_62 = '';$respuesta_63 = '';$respuesta_64 = '';$respuesta_65 = '';$respuesta_66 = '';$respuesta_67 = '';$respuesta_68 = '';
-$respuesta_69 = '';$respuesta_70 = '';$respuesta_71 = '';$respuesta_72 = '';$respuesta_73 = '';$respuesta_74 = '';$respuesta_75 = '';$respuesta_76 = '';
-$respuesta_77 = '';$respuesta_78 = '';$respuesta_79 = '';$respuesta_80 = '';$respuesta_81 = '';$respuesta_82 = '';$respuesta_83 = '';$respuesta_84 = '';
-$respuesta_85 = '';$respuesta_86 = '';$respuesta_87 = '';$respuesta_88 = ''; $respuesta_89 = '';
-$respuesta_90 = ''; $respuesta_91 = '';$respuesta_92 = '';$respuesta_93 = '';$respuesta_94 = '';$respuesta_95 = '';$respuesta_96 = '';$respuesta_97 = '';$respuesta_98 = '';
-$respuesta_99 = '';$respuesta_100 = '';$respuesta_101 = '';$respuesta_102 = '';$respuesta_103 = '';$respuesta_104 = '';$respuesta_105 = '';
-$respuesta_106 = '';$respuesta_107 = '';$respuesta_108 = '';$respuesta_109 = '';$respuesta_110 = '';
-
-
+for ($i = 1; $i <= 230; $i++) {
+    ${"respuesta_" . $i} = '';
+}
  
 
-$verificar_1 = ''; $verificar_2 = ''; $verificar_3 = '';  $verificar_3_2 = ''; $verificar_4 = ''; $verificar_5 = ''; 
-$verificar_6 = ''; $verificar_7 = '';  $verificar_8 = ''; $verificar_9 = ''; $verificar_10 = ''; 
-$verificar_11 = ''; $verificar_12 = ''; $verificar_13 = ''; $verificar_14 = ''; $verificar_15 = ''; 
-$verificar_16 = '';  $verificar_17 = ''; $verificar_18 = ''; $verificar_19 = ''; $verificar_20 = '';  
-$verificar_21 = '';  $verificar_22 = '';  $verificar_23 = '';   $verificar_24 = '';   $verificar_25 = '';  
-$verificar_26 = '';  $verificar_27= ''; $verificar_28= '';  $verificar_29= '';  $verificar_30 = ''; 
-$verificar_31 = ''; $verificar_32 = ''; $verificar_33 = ''; 
-$verificar_34 = ''; $verificar_35 = ''; $verificar_36 = ''; $verificar_37 = ''; $verificar_38 = '';
-$verificar_39 = ''; $verificar_40 = ''; $verificar_41 = ''; $verificar_42 = ''; $verificar_43 = '';
-$verificar_44 = ''; $verificar_45 = ''; $verificar_46 = ''; $verificar_47 = ''; $verificar_48 = '';
-$verificar_49 = ''; $verificar_50 = ''; $verificar_51 = ''; $verificar_52 = ''; $verificar_53 = '';
-$verificar_54 = ''; $verificar_55 = '';
-$verificar_56 = ''; $verificar_57 = ''; $verificar_58 = ''; $verificar_59 = ''; $verificar_60 = ''; 
-$verificar_61 = ''; $verificar_62 = ''; $verificar_63 = ''; $verificar_64 = ''; $verificar_65 = '';
-$verificar_66 = ''; $verificar_67 = ''; $verificar_68 = ''; $verificar_69 = ''; $verificar_70 = '';
-$verificar_71 = ''; $verificar_72 = ''; $verificar_73 = ''; $verificar_74 = ''; $verificar_75 = '';
-$verificar_76 = ''; $verificar_77 = ''; $verificar_78 = ''; $verificar_79 = ''; $verificar_80 = '';
-$verificar_81 = ''; $verificar_82 = ''; $verificar_83 = ''; $verificar_84 = ''; $verificar_85 = '';
-$verificar_86 = ''; $verificar_87 = ''; $verificar_88 = '';$verificar_89 = ''; $verificar_90 = '';$verificar_91 = '';
-$verificar_92 = '';$verificar_93 = '';$verificar_94 = ''; $verificar_95 = '';
-$verificar_96 = ''; $verificar_97 = ''; $verificar_98 = ''; $verificar_99 = ''; $verificar_100 = '';
-$verificar_101 = '';$verificar_102 = '';$verificar_103 = '';$verificar_104 = '';$verificar_105 = '';
-$verificar_106 = '';$verificar_107 = '';$verificar_108 = '';$verificar_109 = '';$verificar_110 = '';
+     
+for ($i = 1; $i <= 230; $i++) {
+    ${"verificar_" . $i} = '';
+}
+
      
 
+$mostrar_solucion = ''; 
 if ($_POST) {
+    $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
+    
+    if ($mostrar_solucion === 'mostrar_solucion') {        
+         $respuesta_1 = 'manifiestan';
+        $respuesta_2 = 'formas';
+        $respuesta_3 = 'requerimientos';
+        $respuesta_4 = 'atributos de calidad';
+        $respuesta_5 = 'propiedades emergentes';
+        $respuesta_6 = 'restricciones';
+        $respuesta_7 = 'forma';
+        $respuesta_8 = 'arquitectura';
+        $respuesta_9 = 'productos';
+        $respuesta_10 = 'estaticas';
+        $respuesta_11 = 'evolucionan';
+        $respuesta_12 = 'preocupaciones';
+        $respuesta_13 = 'proporcionar';
+        $respuesta_14 = 'comprension';
+        $respuesta_15 = 'guie';
+        $respuesta_16 = 'diseño y construccion';
+        $respuesta_17 = 'preliminar';
+        $respuesta_18 = 'base';
+        $respuesta_19 = 'inversa';
+        $respuesta_20 = 'documentada';
+        $respuesta_21 = 'diseños';
+        $respuesta_22 = 'copias';
+        $respuesta_23 = 'comunicacion';
+        $respuesta_24 = 'comunicacion';
+        $respuesta_25 = 'mejorar la comunicacion';
+        $respuesta_26 = 'reutilizacion';
+        $respuesta_27 = 'conceptos o propiedades fundamentales';
+        $respuesta_28 = 'entorno';
+        $respuesta_29 = 'interesado';
+        $respuesta_30 = 'fundamental';
+        $respuesta_31 = 'mental';
+        $respuesta_32 = 'tangible';
+        $respuesta_33 = 'analizar';
+        $respuesta_34 = 'organizar';
+        $respuesta_35 = 'diseño';
+        $respuesta_36 = 'guiar';
+        $respuesta_37 = 'implementacion';
+        $respuesta_38 = 'descripciones de arquitectura';
+        $respuesta_39 = 'architecture descriptions';
+        $respuesta_40 = 'documentan';
+        $respuesta_41 = 'diseñadores';
+        $respuesta_42 = 'ingenieros';
+        $respuesta_43 = 'programadores';
+        $respuesta_44 = 'practicas';
+        $respuesta_45 = 'vistas de arquitectura';
+        $respuesta_46 = 'representa';
+        $respuesta_47 = 'aspectos';
+        $respuesta_48 = 'arquitectura';
+        $respuesta_49 = 'una o mas preocupaciones';
+        $respuesta_50 = 'preocupaciones';
+        $respuesta_51 = 'distintas';
+        $respuesta_52 = 'logical view';
+        $respuesta_53 = 'satisfara';
+        $respuesta_54 = 'los requerimientos funcionales';
+        $respuesta_55 = 'process view';
+        $respuesta_56 = 'utilizara concurrencia';
+        $respuesta_57 = 'physical view';
+        $respuesta_58 = 'desplegado';
+        $respuesta_59 = 'distribuido';
+        $respuesta_60 = 'sistema';
+        $respuesta_61 = 'development view';
+        $respuesta_62 = 'descompone';
+        $respuesta_63 = 'alto nivel';
+        $respuesta_64 = 'unidades';
+        $respuesta_65 = 'dependencias';
+        $respuesta_66 = 'construira';
+        $respuesta_67 = 'preocupaciones';
+        $respuesta_68 = 'convenciones';
+        $respuesta_69 = 'convenciones';
+        $respuesta_70 = '95';
+        $respuesta_71 = 'documentan';
+        $respuesta_72 = 'architecture viewpoint';
+        $respuesta_73 = 'viewpoints';
+        $respuesta_74 = 'creacion';
+        $respuesta_75 = 'architecture views';
+        $respuesta_76 = 'viewpoint';
+        $respuesta_77 = 'convenciones';
+        $respuesta_78 = 'viewpoint';
+        $respuesta_79 = 'Module viewpoint';
+        $respuesta_80 = 'implementacion';
+        $respuesta_81 = 'modulos';
+        $respuesta_82 = 'organizacion';
+        $respuesta_83 = 'Component and Connector Viewpoint';
+        $respuesta_84 = 'organizacion';
+        $respuesta_85 = 'tiempo de ejecucion';
+        $respuesta_86 = 'escala';
+        $respuesta_87 = 'interacciones';
+        $respuesta_88 = 'Logical viewpoint';
+        $respuesta_89 = 'conceptos fundamentales';
+        $respuesta_90 = 'dominio';
+        $respuesta_91 = 'capacidades';
+        $respuesta_92 = 'Scenarios';
+        $respuesta_93 = 'interactuan';
+        $respuesta_94 = 'usuarios';
+        $respuesta_95 = 'sistema';
+        $respuesta_96 = 'Information viewpoint';
+        $respuesta_97 = 'elementos clave';
+        $respuesta_98 = 'informacion';
+        $respuesta_99 = 'accede';
+        $respuesta_100 = 'almacenan';
+        $respuesta_101 = 'Deployment viewpoint';
+        $respuesta_102 = 'configura';
+        $respuesta_103 = 'despliega';
+        $respuesta_104 = 'operacion';
+        $respuesta_105 = 'vocabulario';
+        $respuesta_106 = 'lenguaje';
+        $respuesta_107 = 'especificar';
+        $respuesta_108 = 'trabajo';
+        $respuesta_109 = 'comunidad';
+        
+        
+        // Marcar todas como correctas
+    for ($i = 1; $i <= 122; $i++) {
+    ${"verificar_$i"} = "correcto";
+    }
+
+    } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
    if ($respuesta_1 === 'manifiestan') {  
        $verificar_1 = "correcto";
@@ -311,7 +397,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_27 = isset($_POST['respuesta_27']) ? $_POST['respuesta_27'] : '';
-   if ($respuesta_27 === 'comunes') {  
+   if ($respuesta_27 === 'conceptos o propiedades fundamentales') {  
        $verificar_27 = "correcto";
    } elseif ($respuesta_27 === '') {
        $verificar_27 = '';
@@ -1089,7 +1175,7 @@ if ($respuesta_110 === '264') {
     $verificar_110 = "incorrecto";
 }
 
-
+}
 }
 ?>
 <!DOCTYPE html>
@@ -2027,7 +2113,12 @@ function ocultarMensaje4() {
 <?php echo $verificar_109 ?>
 <?php echo $verificar_110 ?>
  
- <hr>
+ 
+    <hr>
+    <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
+    <br>
+    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
+    <button type="submit"   >Mostrar Solución</button>
     </form>
 </div>
 

@@ -454,9 +454,12 @@ El <strong>architectural design</strong> es una parte de <strong>architecting</s
             <h3>Software Design Qualities</h3>
             <ul>
                 <li>Concurrency</li>
+                <li>Control and Event Handling</li>
                 <li>Data Persistence</li>
-                <li>Components</li>
-                <li>Security</li>
+                <li>Distribution of Components</li>
+                <li>Errors and Exception Handling, Fault Tolerance</li>
+                <li>Integration and Interoperability</li>
+                <li>Assurance, Security, and Safety</li>
                 <li>Variability</li>
             </ul>
         </div>
@@ -474,20 +477,28 @@ El <strong>architectural design</strong> es una parte de <strong>architecting</s
         <div class="box">
             <h3>Strategies and Methods</h3>
             <ul>
-                <li>Object-Oriented</li>
-                <li>Component-Based</li>
-                <li>Event-Driven</li>
-                <li>Domain-Driven</li>
+                <li>General Strategies</li>
+                <li>Function-Oriented (or Structured) Design</li>
+                <li>Data-Centered Design </li>
+                <li>Object-Oriented Design </li>
+                <li>User-Centered Design </li>
+                <li>Component-Based Design (CBD)</li>
+                <li>Event-Driven Design</li>
+                <li>Aspect-Oriented Design (AOD)</li>
+                <li>Constraint-Based Design</li>
+                <li>Domain-Driven Design </li>
+                <li>Other Methods</li>
             </ul>
         </div>
 
         <div class="box">
-            <h3>Analysis and Evaluation</h3>
+            <h3>Software Design Quality Analysis and Evaluation</h3>
             <ul>
-                <li>Reviews</li>
+                <li> Design Reviews and Audits</li>
                 <li>Quality Attributes</li>
-                <li>Metrics</li>
-                <li>Verification</li>
+                <li>Quality Analysis and Evaluation Techniques</li>
+                <li>Measures and Metrics</li>
+                <li>Verification, Validation, and Certification</li>
             </ul>
         </div>
 

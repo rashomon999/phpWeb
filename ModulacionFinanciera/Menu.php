@@ -30,7 +30,7 @@
 <body>
     <div class="centered-container">
         <a class="btn" href=".\Tema1\Menu.php">Tema 1</a>
- 
+        <a class="btn" href=".\Tema3\Menu.php">Tema 3</a>
         
     </div>
 </body>

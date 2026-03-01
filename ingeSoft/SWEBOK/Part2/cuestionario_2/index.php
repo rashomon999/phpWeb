@@ -1,54 +1,120 @@
 <?php
  
- 
-$respuesta_1 = ''; $respuesta_2 = ''; $respuesta_3 = ''; $respuesta_3_2 = ''; $respuesta_4 = ''; $respuesta_5 = ''; 
-$respuesta_6 = ''; $respuesta_7 = ''; $respuesta_8 = ''; $respuesta_9 = '';  $respuesta_10 = '';
-$respuesta_11 = ''; $respuesta_12 = ''; $respuesta_13 = ''; $respuesta_14 = ''; $respuesta_15 = '';
-$respuesta_16 = ''; $respuesta_17 = ''; $respuesta_18 = ''; $respuesta_19 = ''; $respuesta_20 = '';
-$respuesta_21 = ''; $respuesta_22 = '';  $respuesta_23 = '';  $respuesta_24 = '';
-$respuesta_25 = ''; $respuesta_26 = ''; $respuesta_27 = ''; $respuesta_28 = ''; $respuesta_29 = '';
-$respuesta_30 = ''; $respuesta_31 = ''; $respuesta_32 = ''; $respuesta_33 = ''; $respuesta_34 = ''; $respuesta_35 = ''; $respuesta_36 = ''; $respuesta_37 = ''; $respuesta_38 = '';
-$respuesta_39 = ''; $respuesta_40 = ''; $respuesta_41 = ''; $respuesta_42 = ''; $respuesta_43 = '';
-$respuesta_44 = ''; $respuesta_45 = ''; $respuesta_46 = ''; $respuesta_47 = ''; $respuesta_48 = '';
-$respuesta_49 = ''; $respuesta_50 = ''; $respuesta_51 = ''; $respuesta_52 = ''; $respuesta_53 = '';
-$respuesta_54 = ''; $respuesta_55 = ''; $respuesta_56 = '';$respuesta_57 = ''; $respuesta_58 = ''; $respuesta_59 = ''; $respuesta_60 = '';
-$respuesta_61 = '';$respuesta_62 = '';$respuesta_63 = '';$respuesta_64 = '';$respuesta_65 = '';$respuesta_66 = '';$respuesta_67 = '';$respuesta_68 = '';
-$respuesta_69 = '';$respuesta_70 = '';$respuesta_71 = '';$respuesta_72 = '';$respuesta_73 = '';$respuesta_74 = '';$respuesta_75 = '';$respuesta_76 = '';
-$respuesta_77 = '';$respuesta_78 = '';$respuesta_79 = '';$respuesta_80 = '';$respuesta_81 = '';$respuesta_82 = '';$respuesta_83 = '';$respuesta_84 = '';
-$respuesta_85 = '';$respuesta_86 = '';$respuesta_87 = '';$respuesta_88 = ''; $respuesta_89 = '';
-$respuesta_90 = ''; $respuesta_91 = '';$respuesta_92 = '';$respuesta_93 = '';$respuesta_94 = '';$respuesta_95 = '';$respuesta_96 = '';$respuesta_97 = '';$respuesta_98 = '';
-$respuesta_99 = '';$respuesta_100 = '';$respuesta_101 = '';$respuesta_102 = '';$respuesta_103 = '';$respuesta_104 = '';$respuesta_105 = '';
-$respuesta_106 = '';$respuesta_107 = '';$respuesta_108 = '';$respuesta_109 = '';$respuesta_110 = '';
-
-
+ for ($i = 1; $i <= 230; $i++) {
+    ${"respuesta_" . $i} = '';
+}
  
 
-$verificar_1 = ''; $verificar_2 = ''; $verificar_3 = '';  $verificar_3_2 = ''; $verificar_4 = ''; $verificar_5 = ''; 
-$verificar_6 = ''; $verificar_7 = '';  $verificar_8 = ''; $verificar_9 = ''; $verificar_10 = ''; 
-$verificar_11 = ''; $verificar_12 = ''; $verificar_13 = ''; $verificar_14 = ''; $verificar_15 = ''; 
-$verificar_16 = '';  $verificar_17 = ''; $verificar_18 = ''; $verificar_19 = ''; $verificar_20 = '';  
-$verificar_21 = '';  $verificar_22 = '';  $verificar_23 = '';   $verificar_24 = '';   $verificar_25 = '';  
-$verificar_26 = '';  $verificar_27= ''; $verificar_28= '';  $verificar_29= '';  $verificar_30 = ''; 
-$verificar_31 = ''; $verificar_32 = ''; $verificar_33 = ''; 
-$verificar_34 = ''; $verificar_35 = ''; $verificar_36 = ''; $verificar_37 = ''; $verificar_38 = '';
-$verificar_39 = ''; $verificar_40 = ''; $verificar_41 = ''; $verificar_42 = ''; $verificar_43 = '';
-$verificar_44 = ''; $verificar_45 = ''; $verificar_46 = ''; $verificar_47 = ''; $verificar_48 = '';
-$verificar_49 = ''; $verificar_50 = ''; $verificar_51 = ''; $verificar_52 = ''; $verificar_53 = '';
-$verificar_54 = ''; $verificar_55 = '';
-$verificar_56 = ''; $verificar_57 = ''; $verificar_58 = ''; $verificar_59 = ''; $verificar_60 = ''; 
-$verificar_61 = ''; $verificar_62 = ''; $verificar_63 = ''; $verificar_64 = ''; $verificar_65 = '';
-$verificar_66 = ''; $verificar_67 = ''; $verificar_68 = ''; $verificar_69 = ''; $verificar_70 = '';
-$verificar_71 = ''; $verificar_72 = ''; $verificar_73 = ''; $verificar_74 = ''; $verificar_75 = '';
-$verificar_76 = ''; $verificar_77 = ''; $verificar_78 = ''; $verificar_79 = ''; $verificar_80 = '';
-$verificar_81 = ''; $verificar_82 = ''; $verificar_83 = ''; $verificar_84 = ''; $verificar_85 = '';
-$verificar_86 = ''; $verificar_87 = ''; $verificar_88 = '';$verificar_89 = ''; $verificar_90 = '';$verificar_91 = '';
-$verificar_92 = '';$verificar_93 = '';$verificar_94 = ''; $verificar_95 = '';
-$verificar_96 = ''; $verificar_97 = ''; $verificar_98 = ''; $verificar_99 = ''; $verificar_100 = '';
-$verificar_101 = '';$verificar_102 = '';$verificar_103 = '';$verificar_104 = '';$verificar_105 = '';
-$verificar_106 = '';$verificar_107 = '';$verificar_108 = '';$verificar_109 = '';$verificar_110 = '';
+     
+for ($i = 1; $i <= 230; $i++) {
+    ${"verificar_" . $i} = '';
+}
+
      
 
+$mostrar_solucion = ''; 
 if ($_POST) {
+    $mostrar_solucion = isset($_POST['mostrar_solucion']) ? $_POST['mostrar_solucion'] : '';
+    
+    if ($mostrar_solucion === 'mostrar_solucion') {        
+ 
+         // Asignar respuestas correctas según validaciones (1-89)
+        $respuesta_1 = 'diseño';
+        $respuesta_2 = 'disciplina';
+        $respuesta_3 = 'arte';
+        $respuesta_4 = 'ciencia';
+        $respuesta_5 = 'construir';
+        $respuesta_6 = 'conceptos';
+        $respuesta_7 = 'principios';
+        $respuesta_8 = 'procesos';
+        $respuesta_9 = 'materializa';
+        $respuesta_10 = 'disciplina';
+        $respuesta_11 = 'diseño de software';
+        $respuesta_12 = 'diseño arquitectonico';
+        $respuesta_13 = 'diseño de alto nivel';
+        $respuesta_14 = 'diseño detallado';
+        $respuesta_15 = 'resultado';
+        $respuesta_16 = 'aplicar';
+        $respuesta_17 = 'disciplina';
+        $respuesta_18 = 'procesos';
+        $respuesta_19 = 'diseño arquitectonico';
+        $respuesta_20 = 'arquitecturas';
+        $respuesta_21 = 'sistemas';
+        $respuesta_22 = 'descripciones';
+        $respuesta_23 = '1990';
+        $respuesta_24 = 'estructura organizacional';
+        $respuesta_25 = 'sistema o componente';
+        $respuesta_26 = 'evolutivo';
+        $respuesta_27 = 'distinguir';
+        $respuesta_28 = 'estructura organizacional';
+        $respuesta_29 = 'sistema o componente';
+        $respuesta_30 = 'codigo';
+        $respuesta_31 = 'sistema';
+        $respuesta_32 = 'conjunto de estructuras';
+        $respuesta_33 = 'necesarias';
+        $respuesta_34 = 'razonar';
+        $respuesta_35 = 'sistema';
+        $respuesta_36 = 'elementos de software';
+        $respuesta_37 = 'relaciones entre ellos';
+        $respuesta_38 = 'propiedades de ambos';
+        $respuesta_39 = 'estructuras';
+        $respuesta_40 = 'no son arquitectura';
+        $respuesta_41 = '1990';
+        $respuesta_42 = 'disciplina';
+        $respuesta_43 = 'estudio mas generico';
+        $respuesta_44 = 'estructuras';
+        $respuesta_45 = 'arquitecturas';
+        $respuesta_46 = 'software';
+        $respuesta_47 = 'estructura del codigo';
+        $respuesta_48 = 'implicaciones';
+        $respuesta_49 = 'interacciones';
+        $respuesta_50 = 'estructuras diferentes';
+        $respuesta_51 = 'Conceptos o propiedades';
+        $respuesta_52 = 'sistema en su entorno';
+        $respuesta_53 = 'elementos';
+        $respuesta_54 = 'relaciones';
+        $respuesta_55 = 'principios';
+        $respuesta_56 = 'diseño';
+        $respuesta_57 = 'evolucion';
+        $respuesta_58 = 'fundamental';
+        $respuesta_59 = 'elemento';
+        $respuesta_60 = 'entorno';
+        $respuesta_61 = 'exterior';
+        $respuesta_62 = 'contexto';
+        $respuesta_63 = 'personas';
+        $respuesta_64 = 'organizaciones';
+        $respuesta_65 = 'software';
+        $respuesta_66 = 'interactuar';
+        $respuesta_67 = 'interesados';
+        $respuesta_68 = 'roles';
+        $respuesta_69 = 'intereses';
+        $respuesta_70 = 'preocupaciones';
+        $respuesta_71 = 'concerns';
+        $respuesta_72 = 'profundidad';
+        $respuesta_73 = 'aspecto';
+        $respuesta_74 = 'aislada';
+        $respuesta_75 = 'punto de vista';
+        $respuesta_76 = 'simultaneamente';
+        $respuesta_77 = 'la separacion de preocupaciones';
+        $respuesta_78 = 'fundamental';
+        $respuesta_79 = 'preocupaciones';
+        $respuesta_80 = 'roles';
+        $respuesta_81 = 'cuando';
+        $respuesta_82 = 'cuanto costara';
+        $respuesta_83 = 'hace';
+        $respuesta_84 = 'como usarlo';
+        $respuesta_85 = 'influencia';
+        $respuesta_86 = 'entorno';
+        $respuesta_87 = 'funcionales';
+        $respuesta_88 = 'no funcionales';
+        $respuesta_89 = 'restricciones';
+        
+        // Marcar todas como correctas
+    for ($i = 1; $i <= 122; $i++) {
+    ${"verificar_$i"} = "correcto";
+    }
+
+    } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
    if ($respuesta_1 === 'diseño') {  
        $verificar_1 = "correcto";
@@ -181,7 +247,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la tercera pregunta
      $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-     if ($respuesta_14 === ' diseño detallado') {  
+     if ($respuesta_14 === 'diseño detallado') {  
          $verificar_14 = "correcto";
      } elseif ($respuesta_14 === '') {
          $verificar_14 = '';
@@ -231,7 +297,7 @@ if ($_POST) {
   
      // Verificar la respuesta de la octava pregunta
      $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-     if ($respuesta_19 === '126') {  
+     if ($respuesta_19 === 'diseño arquitectonico') {  
          $verificar_19 = "correcto";
      } elseif ($respuesta_19 === '') {
          $verificar_19 = '';
@@ -885,7 +951,7 @@ if ($respuesta_89 === 'restricciones') {
 }
 
  $respuesta_90 = isset($_POST['respuesta_90']) ? $_POST['respuesta_90'] : '';
-if ($respuesta_90 === '63') { 
+if ($respuesta_90 === 'vista') { 
     $verificar_90 = "correcto";
 } elseif ($respuesta_90 === '') {
     $verificar_90 = '';
@@ -894,7 +960,9 @@ if ($respuesta_90 === '63') {
 }
 
  $respuesta_91 = isset($_POST['respuesta_91']) ? $_POST['respuesta_91'] : '';
-if ($respuesta_91 === '84') { 
+if ($respuesta_91 === 'Abstracta'
+|| $respuesta_91 === 'abstracta'
+) { 
     $verificar_91 = "correcto";
 } elseif ($respuesta_91 === '') {
     $verificar_91 = '';
@@ -903,7 +971,7 @@ if ($respuesta_91 === '84') {
 }
 
  $respuesta_92 = isset($_POST['respuesta_92']) ? $_POST['respuesta_92'] : '';
-if ($respuesta_92 === '105') { 
+if ($respuesta_92 === 'concerns') { 
     $verificar_92 = "correcto";
 } elseif ($respuesta_92 === '') {
     $verificar_92 = '';
@@ -1075,6 +1143,7 @@ if ($respuesta_110 === '264') {
 }
 
 
+}
 }
 ?>
 <!DOCTYPE html>
@@ -1452,7 +1521,7 @@ function ocultarMensaje4() {
   <p>
     Tercero, “arquitectura” se refiere al 
     <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="8">
-    resultado de 
+      de 
     <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="8">
     la 
     <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="8">
@@ -1479,7 +1548,7 @@ function ocultarMensaje4() {
     <strong>Arquitectura.</strong> La 
     <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="22">
     de un 
-    <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="22">
+    <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="18">
     . [de: IEEE Std 610.12-1990, 
     IEEE Glossary of Software Engineering Terminology]
   </blockquote>
@@ -1491,9 +1560,9 @@ function ocultarMensaje4() {
     <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="8">
     el diseño detallado de un módulo de su archivo <code>Makefile</code>. Cualquiera 
     de los ejemplos refleja una
-    <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="24">
+    <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="21">
     del 
-    <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="24">
+    <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="20">
     de software, pero no debería 
     considerarse arquitectura. 
   </p>
@@ -1561,9 +1630,9 @@ function ocultarMensaje4() {
   </ul>
 
   <p>Ambos (diseño detallado y <code>Makefile</code>) muestran 
-  <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="20">
+  <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="11">
   , <strong>pero 
-  <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="20">  
+  <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="17">  
   </strong>.</p>
 
   <button type="submit">Enviar</button>
@@ -1709,9 +1778,11 @@ function ocultarMensaje4() {
     <hr>
 
 
-    
+    Otra definición muy famosa es la de Mary Shaw y David Garlan en el libro Software Architecture: Perspectives on an Emerging Discipline:
 
+“La arquitectura de un sistema define sus componentes, las relaciones entre ellos y las reglas que gobiernan su diseño y evolución.”
 
+    <hr>
     <h4>1.2. Interesados y Preocupaciones</h4>
  
     <p>
@@ -1872,6 +1943,27 @@ function ocultarMensaje4() {
 <?php echo $verificar_87 ?>
 <?php echo $verificar_88 ?>
 <?php echo $verificar_89 ?>
+ 
+<hr>
+<p>Entonces, para que algo sea una vista arquitectónica:</p>
+ 
+<p>Debe ser:</p>
+ <li>✅ Una representación (<input type="text" name="respuesta_90" value="<?php echo $respuesta_90; ?>" size="10"> )</li>
+ <li>✅ <input type="text" name="respuesta_91" value="<?php echo $respuesta_91; ?>" size="10"> </li>
+ <li>✅ Enfocada en uno o más <input type="text" name="respuesta_92" value="<?php echo $respuesta_92; ?>" size="10"> </li>
+ 
+<button type="submit">Enviar</button>
+<?php echo $verificar_90 ?>
+<?php echo $verificar_91 ?>
+<?php echo $verificar_92 ?> 
+ 
+
+ 
+    <hr>
+    <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
+    <br>
+    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
+    <button type="submit"   >Mostrar Solución</button>
 <hr>
     </form>
 </div>
