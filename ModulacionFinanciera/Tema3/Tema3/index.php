@@ -1594,7 +1594,54 @@ function ocultarMensaje4() {
 
     
 <div class="seccion izquierda"> 
- 
+     <h2>Cuando dice <code>m.v.</code> sin "nominal"</h2>
+    <p>
+        Cuando aparece <strong>m.v.</strong> (mensual vencida) y no se menciona la palabra 
+        <strong>nominal</strong>, se trata de una 
+        <strong>tasa efectiva periódica</strong>.
+    </p>
+
+    <hr>
+
+    <h3>📌 Cómo leer estas siglas</h3>
+    <p>En matemática financiera existen dos tipos principales:</p>
+
+    <h4>1️⃣ Tasa Nominal</h4>
+    <p>Siempre incluye la letra <strong>"n"</strong> al inicio.</p>
+    <ul>
+        <li>n.m.v.</li>
+        <li>n.t.a.</li>
+        <li>n.s.v.</li>
+    </ul>
+    <p>
+        La <strong>"n"</strong> significa <em>nominal</em>.  
+        Si no aparece la "n", entonces NO es nominal.
+    </p>
+
+    <hr>
+
+    <h4>2️⃣ Tasa Efectiva (Periódica)</h4>
+    <p>Cuando solo ves:</p>
+    <ul>
+        <li>m.v.</li>
+        <li>t.v.</li>
+        <li>m.a.</li>
+        <li>t.a.</li>
+    </ul>
+
+    <p>
+        Eso representa una <strong>tasa efectiva del período indicado</strong>.
+    </p>
+
+    <p><strong>Ejemplo:</strong></p>
+    <p>
+        2,725408% m.v. significa:<br>
+        <strong>2,725408% efectiva mensual vencida</strong>
+    </p>
+
+    <p><strong>No es nominal.</strong></p>
+
+<hr>
   <h2>📌 Vamos ejercicio por ejercicio</h2>
 
 <hr>
@@ -1721,6 +1768,7 @@ function ocultarMensaje4() {
     <td>Te están dando el VP</td>
   </tr>
 </table>
+<hr>
 
 </div>
 
@@ -1729,6 +1777,224 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
     
+<h4>Pregunta 1</h4>
+<p>
+    Calcule la alícuota semestral pactada para un crédito de $42 millones a 3 años con
+    una tasa del 18,40% n.s.v.   
+    </p>
+
+No hay conversion:  La tasa ya está expresada en el mismo período que te están pidiendo. 
+<hr>
+<h4>Pregunta 2</h4>
+<p>
+Cuánto fue el valor de un crédito que le concedieron a un empresario que está pagando cuotas mensuales de $450.000 
+desde hace 1 año y aún le faltan 2.5 años por pagar la cuota. Él solo recuerda que le hablaron de una tasa del 30% n.t.v.
+</p>
+ 
+<h3>Conversión realizada en el ejercicio</h3>
+
+<p>En ese ejercicio la conversión fue:</p>
+
+<p><strong>30% n.t.v. → i% m.v.</strong></p>
+
+<p>Es decir:</p>
+
+<blockquote>
+  👉 De <strong>nominal trimestral vencida</strong><br>
+  👉 A <strong>efectiva mensual vencida</strong>
+</blockquote>
+
+
+
+<hr>
+<h4>Pregunta 3</h4>
+<p>Calcule la alícuota mensual que usted debe ahorrar desde agosto 15 de 2019 para tener $1.500.000 el 15 de 
+diciembre de 2020 y puede ahorrarlos en una cuenta que le ofrece el 10% E.A.</p>
+
+
+<h5>Cómo saber si te están hablando de mes vencido</h5>
+
+<p>
+Para saber si te están hablando de <strong>mes vencido</strong>, debes fijarte en <strong>las fechas</strong> 👇
+</p>
+
+<p>El enunciado dice:</p>
+
+<blockquote>
+  “Calcule la alícuota mensual que usted debe ahorrar <strong>desde agosto 15 de 2019</strong> 
+  para tener $1.500.000 <strong>el 15 de diciembre de 2020</strong>…”
+</blockquote>
+
+<h5>🔎 Clave importante</h5>
+
+<p>Las fechas coinciden exactamente en el mismo día del mes:</p>
+
+<ul>
+  <li>15 de agosto</li>
+  <li>15 de septiembre</li>
+  <li>15 de octubre</li>
+  <li>...</li>
+  <li>15 de diciembre</li>
+</ul>
+
+<p>Eso significa que:</p>
+
+<ul>
+  <li>Depositas el <strong>15 de cada mes</strong></li>
+  <li>El dinero gana intereses <strong>después de cada mes completo</strong></li>
+</ul>
+
+<p style="font-size:18px;">
+👉 <strong>Eso es mes vencido.</strong>
+</p>
+
+
+<h5>🎯 Paso 1 — ¿Coincide la tasa con el período de ahorro?</h5>
+
+<p><strong>No.</strong></p>
+
+<p>La tasa está en anual.</p>
+<p>Pero los aportes son mensuales.</p>
+
+<p style="font-size:18px;">
+👉 Entonces necesitas la <strong>tasa efectiva mensual</strong>.
+</p>
+
+<p>Eso implica conversión.</p>
+
+<hr>
+<h5>Pregunta 6</h5>
+<p>
+6. Calcule el VP de un crédito que tiene alícuota trimestral de $650.000 que pagó
+durante 9 trimestres con una tasa del 12% s.v. (Recuerde convertir la tasa a la
+periódica del negocio).
+</p>
+ 
+<h2>🎯 Regla CLAVE que casi nadie explica</h2>
+
+<p>Si el enunciado <strong>NO</strong> dice “nominal”, la tasa destino se asume <strong>EFECTIVA</strong>.</p>
+
+<h3>📌 Regla formal</h3>
+
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Si el destino dice…</th>
+      <th>Es</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nominal trimestral</td>
+      <td>Nominal</td>
+    </tr>
+    <tr>
+      <td>12% N.T.</td>
+      <td>Nominal</td>
+    </tr>
+    <tr>
+      <td>Trimestral (solo eso)</td>
+      <td>Efectiva</td>
+    </tr>
+    <tr>
+      <td>Efectiva trimestral</td>
+      <td>Efectiva</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Entonces la conversion es 12%n.s.v a a.t</p>
+
+<hr>
+<h2>🎯 Cuando el destino es Efectiva</h2>
+
+<p>La tasa efectiva se define como:</p>
+
+<p style="font-size:18px;">
+  i = (1 + i<sub>p</sub>)<sup>n</sup> − 1
+</p>
+
+<p>Esa fórmula siempre trabaja con tasa vencida por período.</p>
+
+<p>No existe:</p>
+<ul>
+  <li>efectiva anticipada</li>
+  <li>efectiva vencida</li>
+</ul>
+
+<p><strong>La tasa efectiva es única.</strong> Es una tasa compuesta real.</p>
+
+ 
+ 
+<hr>
+
+<h3>⚠️ Por eso mismo tu formulario debería:</h3>
+
+<ul>
+  <li>Si A = efectiva:</li>
+  <ul>
+    <li>Ocultar Tipo final</li>
+    <li>Quitar required</li>
+    <li>Ignorarlo en backend</li>
+  </ul>
+</ul>
+
+<hr>
+
+<h3>🧠 ¿Cuándo SÍ importa tipo final?</h3>
+
+<p>Solo cuando el destino es <strong>Nominal</strong>.</p>
+
+<p>Ejemplo:</p>
+
+<p><strong>Nominal → Nominal</strong></p>
+
+<p>Ahí sí:</p>
+
+<ul>
+  <li>Si quieres nominal anticipada</li>
+  <li>O nominal vencida</li>
+</ul>
+
+<p>Cambia la última conversión:</p>
+
+<p style="font-size:18px;">
+  d = i / (1 + i)
+</p>
+
+<hr>
+
+<h3>📌 Resumen claro</h3>
+
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Transformación</th>
+      <th>¿Importa tipo_final?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nominal → Efectiva</td>
+      <td>❌ No</td>
+    </tr>
+    <tr>
+      <td>Efectiva → Nominal</td>
+      <td>✅ Sí</td>
+    </tr>
+    <tr>
+      <td>Nominal → Nominal</td>
+      <td>✅ Sí</td>
+    </tr>
+    <tr>
+      <td>Efectiva → Efectiva</td>
+      <td>❌ No</td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+
+
 </div>
 </div>
  </form>

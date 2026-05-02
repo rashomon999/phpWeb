@@ -11,7 +11,6 @@ $linksEspeciales = [
     "Estadistica/Menu.php", 
     "fisica/Menu.php",
     "transhumantes/Menu.php",
-    "Trading/Menu.php",
     "contabilidad/Menu.php",
     "operaciones_basicas/index.php",
     "Django/Menu.php",

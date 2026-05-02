@@ -40,6 +40,15 @@
         <a class="btn" href=".\multihilos\Menu.php">multihilos</a>
         <br><br>
         <a class="btn" href=".\Spring\Menu.php">Spring</a>
+        <br><br>
+        <a class="btn" href=".\SpringJPA\index.php">Spring JPA</a>
+
+        <a class="btn" href=".\MVC\index.php">MVC</a>
+        
+        <a class="btn" href=".\Thymeleaf\index.php">Thymeleaf</a>
+
+        <a class="btn" href=".\REST\index.php">REST</a>
+          
     </div>
 </body>
 </html>

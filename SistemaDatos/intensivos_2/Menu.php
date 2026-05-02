@@ -31,7 +31,7 @@
     <div class="centered-container">
 
         <a class="btn" href=".\General\index.php">General</a>
-       
+       <a class="btn" href=".\CuestionariosClase\Menu.php">CuestionariosClase</a>
     </div>
 </body>
 </html>

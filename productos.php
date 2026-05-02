@@ -15,7 +15,7 @@ $links = ["arquitecturaComputadores/Menu.php","compunet/Menu.php",
     "Estadistica/Menu.php" 
     ,"ingesoft/Menu.php",  "Ingles/Menu.php", 
          "java/Menu.php", "Matematicas/Menu.php", "ModulacionFinanciera/Menu.php" ,"musica/Menu.php", 
-           "scala/Menu.php", "SistemaDatos/Menu.php", 
+           "scala/Menu.php", "SistemaDatos/Menu.php", "Trading/Menu.php"
           
         ];
 

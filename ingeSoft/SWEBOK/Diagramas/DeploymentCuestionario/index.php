@@ -166,7 +166,7 @@ if ($_POST) {
 
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '26') {  
+   if ($respuesta_1 === 'configuracion') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -176,7 +176,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === '39') {  
+   if ($respuesta_2 === 'nodos') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -186,7 +186,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === '52') {  
+   if ($respuesta_3 === 'procesamiento') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -196,7 +196,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === '65') {  
+   if ($respuesta_4 === 'tiempo') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -206,7 +206,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === '78') {  
+   if ($respuesta_5 === 'ejecucion') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -216,7 +216,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === '91') {  
+   if ($respuesta_6 === 'componentes') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -226,7 +226,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === '104') {  
+   if ($respuesta_7 === 'diagrama estructural') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -236,7 +236,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === '117') {  
+   if ($respuesta_8 === 'fisicos') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -246,7 +246,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === '130') {  
+   if ($respuesta_9 === 'orientado') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -256,7 +256,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === '143') {  
+   if ($respuesta_10 === 'objetos') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -266,7 +266,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === '156') {  
+   if ($respuesta_11 === 'despliegue estatica') {  
        $verificar_11 = "correcto";
    } elseif ($respuesta_11 === '') {
        $verificar_11 = '';
@@ -277,7 +277,7 @@ if ($_POST) {
 
     // Verificar la respuesta de la primera pregunta
     $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-    if ($respuesta_12 === '28') {  
+    if ($respuesta_12 === 'integrarse') {  
         $verificar_12 = "correcto";
     } elseif ($respuesta_12 === '') {
         $verificar_12 = '';
@@ -287,7 +287,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la segunda pregunta
     $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-    if ($respuesta_13 === '42') { 
+    if ($respuesta_13 === 'robusto') { 
         $verificar_13 = "correcto";
     } elseif ($respuesta_13 === '') {
         $verificar_13 = '';
@@ -297,7 +297,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la tercera pregunta
     $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-    if ($respuesta_14 === '56') {  
+    if ($respuesta_14 === 'quienes') {  
         $verificar_14 = "correcto";
     } elseif ($respuesta_14 === '') {
         $verificar_14 = '';
@@ -307,7 +307,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la cuarta pregunta
     $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-    if ($respuesta_15 === '70') { 
+    if ($respuesta_15 === 'sistema operativo') { 
         $verificar_15 = "correcto";
     } elseif ($respuesta_15 === '') {
         $verificar_15 = '';
@@ -317,7 +317,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la quinta pregunta
     $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-    if ($respuesta_16 === '84') {  
+    if ($respuesta_16 === 'protocolos') {  
         $verificar_16 = "correcto";
     } elseif ($respuesta_16 === '') {
         $verificar_16 = '';
@@ -327,7 +327,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la sexta pregunta
     $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-    if ($respuesta_17 === '98') {  
+    if ($respuesta_17 === 'comunicacion') {  
         $verificar_17 = "correcto";
         } elseif ($respuesta_17 === '') {
         $verificar_17 = '';
@@ -337,7 +337,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la séptima pregunta
     $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-    if ($respuesta_18 === '112') {  
+    if ($respuesta_18 === 'despliegue') {  
         $verificar_18 = "correcto";
     } elseif ($respuesta_18 === '') {
         $verificar_18 = '';
@@ -347,7 +347,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la octava pregunta
     $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-    if ($respuesta_19 === '126') {  
+    if ($respuesta_19 === 'sistemas embebidos') {  
         $verificar_19 = "correcto";
     } elseif ($respuesta_19 === '') {
         $verificar_19 = '';
@@ -357,7 +357,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la novena pregunta
     $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
-    if ($respuesta_20 === '140') {  
+    if ($respuesta_20 === 'cliente/servidor') {  
         $verificar_20 = "correcto";
     } elseif ($respuesta_20 === '') {
         $verificar_20 = '';
@@ -367,7 +367,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la décima pregunta
     $respuesta_21 = isset($_POST['respuesta_21']) ? $_POST['respuesta_21'] : '';
-    if ($respuesta_21 === '154') {  
+    if ($respuesta_21 === 'distribuidos') {  
          $verificar_21 = "correcto";
     } elseif ($respuesta_21 === '') {
         $verificar_21 = '';
@@ -377,7 +377,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la undécima pregunta
     $respuesta_22 = isset($_POST['respuesta_22']) ? $_POST['respuesta_22'] : '';
-    if ($respuesta_22 === '168') {  
+    if ($respuesta_22 === 'nodos') {  
         $verificar_22 = "correcto";
     } elseif ($respuesta_22 === '') {
         $verificar_22 = '';
@@ -387,7 +387,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
    $respuesta_23 = isset($_POST['respuesta_23']) ? $_POST['respuesta_23'] : '';
-   if ($respuesta_23 === '30') {  
+   if ($respuesta_23 === 'software') {  
        $verificar_23 = "correcto";
    } elseif ($respuesta_23 === '') {
        $verificar_23 = '';
@@ -397,7 +397,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_24 = isset($_POST['respuesta_24']) ? $_POST['respuesta_24'] : '';
-   if ($respuesta_24 === '45') {  
+   if ($respuesta_24 === 'hardware') {  
        $verificar_24 = "correcto";
    } elseif ($respuesta_24 === '') {
        $verificar_24 = '';
@@ -407,7 +407,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_25 = isset($_POST['respuesta_25']) ? $_POST['respuesta_25'] : '';
-   if ($respuesta_25 === '60') { 
+   if ($respuesta_25 === 'indicarse') { 
        $verificar_25 = "correcto";
    } elseif ($respuesta_25 === '') {
        $verificar_25 = '';
@@ -417,7 +417,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_26 = isset($_POST['respuesta_26']) ? $_POST['respuesta_26'] : '';
-   if ($respuesta_26 === '75') {  
+   if ($respuesta_26 === 'stereotype') {  
        $verificar_26 = "correcto";
    } elseif ($respuesta_26 === '') {
        $verificar_26 = '';
@@ -427,7 +427,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_27 = isset($_POST['respuesta_27']) ? $_POST['respuesta_27'] : '';
-   if ($respuesta_27 === '90') {  
+   if ($respuesta_27 === 'linea') {  
        $verificar_27 = "correcto";
    } elseif ($respuesta_27 === '') {
        $verificar_27 = '';
@@ -437,7 +437,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_28 = isset($_POST['respuesta_28']) ? $_POST['respuesta_28'] : '';
-   if ($respuesta_28 === '105') {  
+   if ($respuesta_28 === 'stereotype') {  
        $verificar_28 = "correcto";
    } elseif ($respuesta_28 === '') {
        $verificar_28 = '';
@@ -447,7 +447,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_29 = isset($_POST['respuesta_29']) ? $_POST['respuesta_29'] : '';
-   if ($respuesta_29 === '120') {  
+   if ($respuesta_29 === 'residir dentro') {  
        $verificar_29 = "correcto";
    } elseif ($respuesta_29 === '') {
        $verificar_29 = '';
@@ -1309,9 +1309,100 @@ if ($respuesta_121 === '144') {
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 370vh;
+    height: 250vh;
     }
 
+
+    .section-title {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #444;
+      margin-bottom: 0.5rem;
+      font-style: italic;
+    }
+ 
+    .table-wrapper {
+      max-width: 900px;
+      border: 1px solid #c8c8c0;
+      border-radius: 4px;
+      overflow: hidden;
+      background: #fff;
+    }
+ 
+    .table-title {
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.6rem 1rem;
+      background: #f0f0eb;
+      border-bottom: 1px solid #c8c8c0;
+      color: #1a1a1a;
+    }
+ 
+    .table-header {
+      display: grid;
+      grid-template-columns: 1fr 220px 1fr;
+      background: #fff;
+      border-bottom: 2px solid #1a1a1a;
+    }
+ 
+    .table-header.two-col {
+      grid-template-columns: 180px 1fr 1fr;
+    }
+ 
+    .col-title {
+      padding: 0.6rem 1rem;
+      font-weight: 600;
+      font-size: 0.875rem;
+      color: #1a1a1a;
+      border-right: 1px solid #c8c8c0;
+    }
+ 
+    .col-title:last-child { border-right: none; }
+ 
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 220px 1fr;
+      border-bottom: 1px solid #e0e0d8;
+    }
+ 
+    .row.two-col {
+      grid-template-columns: 180px 1fr 1fr;
+    }
+ 
+    .row:last-child { border-bottom: none; }
+ 
+    .cell {
+      padding: 1rem;
+      font-size: 0.85rem;
+      line-height: 1.55;
+      color: #3a3a3a;
+      border-right: 1px solid #e0e0d8;
+    }
+ 
+    .cell:last-child { border-right: none; }
+ 
+    .cell-notation {
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fafaf8;
+      border-right: 1px solid #e0e0d8;
+    }
+ 
+    .cell-notation img {
+      max-width: 100%;
+      max-height: 100px;
+      object-fit: contain;
+    }
+ 
+    .intro-text {
+      font-size: 0.875rem;
+      color: #3a3a3a;
+      line-height: 1.6;
+      max-width: 900px;
+      margin-bottom: -1.5rem;
+    }
 </style>
  
 <script>
@@ -1596,27 +1687,73 @@ function ocultarMensaje4() {
 <div class="seccion izquierda"> 
 
  <p>
-Un diagrama de despliegue de UML es un diagrama que muestra la configuración de los nodos de procesamiento en 
-tiempo de ejecución y los componentes que residen en ellos. 
+Un diagrama de despliegue de UML es un diagrama que muestra la 
+ <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="8">
+  de los 
+ <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="8">
+  de 
+ <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="8">
+  en 
+ <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="8">
+  de 
+ <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="8">
+  y los 
+ <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="8">
+  que residen en ellos. 
 </p>
 
 <p>
-Los diagramas de despliegue son un tipo de diagrama estructural utilizado para modelar los aspectos físicos de un 
-sistema orientado a objetos. 
+Los diagramas de despliegue son un tipo de 
+<input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="8">
+  utilizado para modelar los aspectos 
+<input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="8">
+  de un 
+sistema 
+<input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="8">
+  a 
+<input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="8">
+ . 
 </p>
 
 <p>
-A menudo se utilizan para modelar la vista de despliegue estática de un sistema (la topología del hardware).
+A menudo se utilizan para modelar la vista de 
+<input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="8">
+  de un sistema (la topología del hardware).
 </p>
    
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_1 ?>
+    <?php echo $verificar_2 ?>
+    <?php echo $verificar_3 ?>
+    <?php echo $verificar_4 ?>
+    <?php echo $verificar_5 ?>
+    <?php echo $verificar_6 ?>
+    <?php echo $verificar_7 ?>  
+    <?php echo $verificar_8 ?>
+    <?php echo $verificar_9 ?>
+    <?php echo $verificar_10 ?>
+    <?php echo $verificar_11 ?> 
+<hr>
 
 <h2>Cuándo usar un Diagrama de Despliegue</h2>
 
 <ul>
-  <li>¿Con qué sistemas existentes necesitará interactuar o integrarse el nuevo sistema?</li>
-  <li>¿Qué tan robusto debe ser el sistema (por ejemplo, hardware redundante en caso de falla)?</li>
-  <li>¿Qué y quiénes se conectarán o interactuarán con el sistema, y cómo lo harán?</li>
-  <li>¿Qué middleware, incluyendo el sistema operativo y los enfoques y protocolos de comunicación, utilizará el sistema?</li>
+  <li>¿Con qué sistemas existentes necesitará interactuar o 
+  <input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="8">  
+    el nuevo sistema?</li>
+  <li>¿Qué tan 
+  <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="8">  
+    debe ser el sistema (por ejemplo, hardware redundante en caso de falla)?</li>
+  <li>¿Qué y 
+  <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="8">  
+    se conectarán o interactuarán con el sistema, y cómo lo harán?</li>
+  <li>¿Qué middleware, incluyendo el 
+  <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="8">  
+    y los enfoques y 
+  <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="8">
+    de 
+  <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="8">
+   , utilizará el sistema?</li>
   <li>¿Con qué hardware y software interactuarán directamente los usuarios (PCs, computadoras en red, navegadores, etc.)?</li>
   <li>¿Cómo se supervisará el sistema una vez desplegado?</li>
   <li>¿Qué nivel de seguridad necesita el sistema (requiere firewall, hardware físicamente seguro, etc.)?</li>
@@ -1629,25 +1766,69 @@ A menudo se utilizan para modelar la vista de despliegue estática de un sistema
   <li>Capturan el hardware que se utilizará para implementar el sistema y los enlaces entre los distintos elementos de hardware.</li>
   <li>Modelan los elementos físicos de hardware y las rutas de comunicación entre ellos.</li>
   <li>Pueden utilizarse para planificar la arquitectura de un sistema.</li>
-  <li>También son útiles para documentar el despliegue de componentes de software o nodos.</li>
+  <li>También son útiles para documentar el 
+  <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="8">  
+    de componentes de software o nodos.</li>
 </ul>
+    <button type="submit">Enviar</button> 
 
+ <?php echo $verificar_12 ?>
+    <?php echo $verificar_13 ?>
+    <?php echo $verificar_14 ?>
+    <?php echo $verificar_15 ?>
+    <?php echo $verificar_16 ?>
+    <?php echo $verificar_17 ?>
+    <?php echo $verificar_18 ?>
+
+<hr>
 <h2>Diagrama de Despliegue de un Vistazo</h2>
 
 <p>
-Los diagramas de despliegue son importantes para visualizar, especificar y documentar sistemas embebidos, cliente/servidor y distribuidos, así como para gestionar sistemas ejecutables mediante ingeniería directa e inversa.
+Los diagramas de despliegue son importantes para visualizar, especificar y documentar 
+<input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="8"> 
+ , 
+<input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="8"> 
+  y 
+<input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>" size="8"> 
+ , así como para gestionar sistemas ejecutables mediante ingeniería directa e inversa.
 </p>
 
 <p>
-Un diagrama de despliegue es simplemente un tipo especial de diagrama de clases que se centra en los nodos del sistema. Gráficamente, es una colección de vértices y arcos. Comúnmente contienen:
+Un diagrama de despliegue es simplemente un tipo especial de diagrama de clases que se centra en los 
+<input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="8"> 
+  
+del sistema. Gráficamente, es una colección de vértices y arcos. Comúnmente contienen:
 </p>
+
+    <button type="submit">Enviar</button> 
+
+ <?php echo $verificar_19 ?>
+    <?php echo $verificar_20 ?>
+    <?php echo $verificar_21 ?>
+    <?php echo $verificar_22 ?>
+
+    <hr>
 
 <h3>Nodos</h3>
 <ul>
-  <li>Una caja en 3D representa un nodo, ya sea de software o hardware.</li>
-  <li>Un nodo de hardware puede indicarse con &lt;&lt;stereotype&gt;&gt;.</li>
-  <li>Las conexiones entre nodos se representan con una línea, opcionalmente con &lt;&lt;stereotype&gt;&gt;.</li>
-  <li>Un nodo puede residir dentro de otro nodo.</li>
+  <li>Una caja en 3D representa un nodo, ya sea de 
+  <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="8">   
+    o 
+  <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="8"> 
+   .</li>
+  <li>Un nodo de hardware puede 
+  <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="8">   
+    con &lt;&lt;
+  <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="8"> 
+   &gt;&gt;.</li>
+  <li>Las conexiones entre nodos se representan con una 
+  <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="8">   
+   , opcionalmente con &lt;&lt;
+  <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="8"> 
+   &gt;&gt;.</li>
+  <li>Un nodo puede 
+  <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="11">   
+    de otro nodo.</li>
 </ul>
 
 <h3>Otras Notaciones</h3>
@@ -1656,60 +1837,22 @@ Un diagrama de despliegue es simplemente un tipo especial de diagrama de clases 
   <li>Relaciones de asociación.</li>
   <li>También pueden contener notas y restricciones.</li>
 </ul>
+
+    <button type="submit">Enviar</button> 
+    <?php echo $verificar_23 ?>
+    <?php echo $verificar_24 ?>
+    <?php echo $verificar_25 ?>
+    <?php echo $verificar_26 ?>
+    <?php echo $verificar_27 ?>
+    <?php echo $verificar_28 ?>
+    <?php echo $verificar_29 ?>
+<br>
+<hr>
 <img src="../../../../img/guia_358.png" alt="">
+<hr>
+ 
 
-<h2>Pasos para Modelar un Sistema Embebido</h2>
-
-<ol>
-  <li>
-    Identificar los dispositivos y nodos que sean únicos en tu sistema.
-  </li>
-
-  <li>
-    Proporcionar pistas visuales, especialmente para dispositivos inusuales, utilizando los mecanismos de extensibilidad de UML para definir estereotipos específicos del sistema con los íconos apropiados. 
-    Como mínimo, deberás distinguir entre procesadores (que contienen componentes de software) y dispositivos (que, en ese nivel de abstracción, no contienen directamente software).
-  </li>
-
-  <li>
-    Modelar las relaciones entre estos procesadores y dispositivos en un diagrama de despliegue. 
-    De manera similar, especificar la relación entre los componentes en la vista de implementación del sistema y los nodos en la vista de despliegue del sistema.
-  </li>
-
-  <li>
-    Cuando sea necesario, ampliar el detalle de cualquier dispositivo inteligente modelando su estructura con un diagrama de despliegue más detallado.
-  </li>
-</ol>
-<img src="../../../../img/guia_359.png" alt="">
-
-<h2>Pasos para Modelar un Sistema Cliente/Servidor</h2>
-
-<ol>
-  <li>
-    Identificar los nodos que representan los procesadores cliente y servidor de tu sistema.
-  </li>
-
-  <li>
-    Resaltar aquellos dispositivos que sean relevantes para el comportamiento del sistema. 
-    Por ejemplo, deberás modelar dispositivos especiales como lectores de tarjetas de crédito, lectores de credenciales y dispositivos de visualización distintos de los monitores, ya que su ubicación en la topología de hardware del sistema probablemente será arquitectónicamente significativa.
-  </li>
-
-  <li>
-    Proporcionar pistas visuales para estos procesadores y dispositivos mediante el uso de estereotipos.
-  </li>
-
-  <li>
-    Modelar la topología de estos nodos en un diagrama de despliegue. 
-    De igual manera, especificar la relación entre los componentes en la vista de implementación del sistema y los nodos en la vista de despliegue del sistema.
-  </li>
-</ol>
-
-<p>
-El ejemplo muestra la topología de un sistema de recursos humanos, el cual sigue una arquitectura clásica cliente/servidor.
-</p>
-<img src="../../../../img/guia_360.png" alt="" width="800">
-<h2>Ejemplo Cliente / Servidor TCP/IP</h2>
-
-<img src="../../../../img/guia_361.png" alt="" width="800">
+ 
  
    
 </div>
@@ -1718,74 +1861,127 @@ El ejemplo muestra la topología de un sistema de recursos humanos, el cual sigu
 
 
 <div class="seccion derecha">
-    
-      <h2>Ejemplo de Diagrama de Despliegue - Modelando un Sistema Distribuido</h2>
-
-<ol>
-  <li>
-    Identificar los dispositivos y procesadores del sistema, como se hace en sistemas cliente/servidor más simples.
-  </li>
-
-  <li>
-    Si necesitas analizar el rendimiento de la red del sistema o el impacto de cambios en la red, asegúrate de modelar estos dispositivos de comunicación con un nivel de detalle suficiente para realizar dichas evaluaciones.
-  </li>
-
-  <li>
-    Prestar especial atención a las agrupaciones lógicas de nodos, las cuales puedes especificar utilizando paquetes.
-  </li>
-
-  <li>
-    Modelar estos dispositivos y procesadores utilizando diagramas de despliegue. 
-    Cuando sea posible, utilizar herramientas que descubran la topología del sistema recorriendo la red.
-  </li>
-
-  <li>
-    Si necesitas enfocarte en la dinámica del sistema, introducir diagramas de casos de uso para especificar los tipos de comportamiento de interés y ampliar estos casos de uso con diagramas de interacción.
-  </li>
-
-  <li>
-    Al modelar un sistema completamente distribuido, es común reificar la red misma como un nodo; por ejemplo, Internet, LAN o WAN como nodos.
-  </li>
-</ol>
-
-<p>
-El ejemplo muestra la topología de un sistema completamente distribuido.
-</p> 
-    
-<img src="../../../../img/guia_362.png" alt="" width="800">
-<h2>Ejemplo de Diagrama de Despliegue - Sistema Corporativo Distribuido</h2>
-<img src="../../../../img/guia_363.png" alt="" width="800">
-
-<h2>Lista de Verificación para la Planificación del Despliegue</h2>
-
-<p>
-Cuando estés elaborando un plan de despliegue para tu empresa, puede que no sepas por dónde empezar o en qué deberías enfocarte. La siguiente lista de verificación puede darte algunas ideas para la planificación del despliegue:
-</p>
-
-<ul>
-  <li>¿Cómo se instalará tu sistema?</li>
-  <li>¿Quién lo instalará? ¿Cuánto tiempo debería tomar la instalación?</li>
-  <li>¿Dónde podría fallar la instalación?</li>
-  <li>Si la instalación falla, ¿cómo revertirás los cambios? ¿Cuánto tiempo toma revertirlos?</li>
-  <li>¿Cuál es tu ventana de instalación (durante qué período de tiempo puedes instalar el sistema)?</li>
-  <li>¿Qué respaldos necesitas antes de la instalación?</li>
-  <li>¿Necesitas realizar una conversión de datos?</li>
-  <li>¿Cómo sabrás que la instalación fue exitosa?</li>
-  </ul>
-
-    <p>  Si diferentes versiones del sistema estarán en producción al mismo tiempo, ¿cómo resolverás las diferencias?
-</p>
- <p>
-¿En qué sitios físicos necesitas desplegar el sistema y en qué orden?
- </p>
-   <li>¿Cómo capacitarás a tu personal de soporte y operaciones?</li>
-  <li>¿Necesitas desplegar un sistema de soporte en producción para que el personal de soporte utilice su propio entorno y simule problemas?</li>
   
-  <p>¿Cómo capacitarás a tus usuarios?</p>
-    <li>¿Qué documentación, y en qué formatos e idiomas, necesitan tus usuarios y el personal de 
-    soporte y operaciones?</li>
-    <li>¿Cómo se desplegarán las actualizaciones de la documentación?</li>
+   <!-- Table sin título (primera imagen) -->
+  <div>
+    <div class="table-wrapper">
+      <div class="table-header">
+        <div class="col-title">Node Type</div>
+        <div class="col-title">Notation</div>
+        <div class="col-title">Reference</div>
+      </div>
  
+      <div class="row">
+        <div class="cell">Artifact</div>
+        <div class="cell-notation"><img src="../../../../img/guia_382.png" alt="Artifact notation" /></div>
+        <div class="cell">See "Artifact."</div>
+      </div>
+ 
+      <div class="row">
+        <div class="cell">Node</div>
+        <div class="cell-notation"><img src="../../../../img/guia_383.png" alt="Node notation" /></div>
+        <div class="cell">See "Node."</div>
+      </div>
+ 
+      <div class="row">
+        <div class="cell">Artifact deployed on Node</div>
+        <div class="cell-notation"><img src="../../../../img/guia_384.png" alt="Artifact deployed on Node notation" /></div>
+        <div class="cell">See "Deployment."</div>
+      </div>
+ 
+      <div class="row">
+        <div class="cell">Node with deployed Artifacts</div>
+        <div class="cell-notation"><img src="../../../../img/guia_385.png" alt="Node with deployed Artifacts notation" /></div>
+        <div class="cell">See "Deployment."</div>
+      </div>
+ 
+      <div class="row">
+        <div class="cell">Node with deployed Artifacts</div>
+        <div class="cell-notation"><img src="../../../../img/guia_386.png" alt="Node with deployed Artifacts textual notation" /></div>
+        <div class="cell">See "Deployment" (alternative, textual notation).</div>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Table 10.1 -->
+  <div>
+    <div class="table-wrapper">
+      <div class="table-title">Table 10.1 - Graphic nodes included in deployment diagrams</div>
+      <div class="table-header">
+        <div class="col-title">Node Type</div>
+        <div class="col-title">Notation</div>
+        <div class="col-title">Reference</div>
+      </div>
+ 
+      <div class="row">
+        <div class="cell">Deployment specification</div>
+        <div class="cell-notation"><img src="../../../../img/guia_387.png" alt="Deployment specification notation" /></div>
+        <div class="cell">See "Deployment Specification."</div>
+      </div>
+ 
+      <div class="row">
+        <div class="cell">Deployment specification - with properties</div>
+        <div class="cell-notation"><img src="../../../../img/guia_388.png" alt="Deployment specification with properties notation" /></div>
+        <div class="cell">See "Deployment Specification."</div>
+      </div>
+ 
+      <div class="row">
+        <div class="cell">Deployment specification - with property values</div>
+        <div class="cell-notation"><img src="../../../../img/guia_389.png" alt="Deployment specification with property values notation" /></div>
+        <div class="cell">See "Deployment Specification."</div>
+      </div>
+ 
+      <div class="row">
+        <div class="cell">Artifact with annotated deployment properties</div>
+        <div class="cell-notation"><img src="../../../../img/guia_390.png" alt="Artifact with annotated deployment properties notation" /></div>
+        <div class="cell">See "Artifact."</div>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Table 10.2 - Graphical paths (imagen 3) -->
+  <div>
+    <p class="intro-text"><em>Graphical paths</em><br/>The graphic paths that can be included in deployment diagrams are shown in Table 10.2.</p>
+    <br/>
+    <div class="table-wrapper">
+      <div class="table-title">Table 10.2 - Graphic nodes included in deployment diagrams</div>
+      <div class="table-header two-col">
+        <div class="col-title">Path Type</div>
+        <div class="col-title">Notation</div>
+        <div class="col-title">Reference</div>
+      </div>
+ 
+      <div class="row two-col">
+        <div class="cell">Association</div>
+        <div class="cell-notation"><img src="../../../../img/guia_391.png" alt="Association path notation" /></div>
+        <div class="cell">See "Association (from Kernel)" on page 40. Used to model communication paths between DeploymentTargets.</div>
+      </div>
+ 
+      <div class="row two-col">
+        <div class="cell">Dependency</div>
+        <div class="cell-notation"><img src="../../../../img/guia_392.png" alt="Dependency path notation" /></div>
+        <div class="cell">See "Dependency (from Dependencies)" on page 65. Used to model general dependencies. In Deployment diagrams, this notation is used to depict the following metamodel associations: (i) the relationship between an Artifact and the model element(s) that it implements, and (ii) the deployment of an Artifact (instance) on a Node (instance).</div>
+      </div>
+ 
+      <div class="row two-col">
+        <div class="cell">Generalization</div>
+        <div class="cell-notation"><img src="../../../../img/guia_393.png" alt="Generalization path notation" /></div>
+        <div class="cell">See "Generalization (from Kernel, PowerTypes)" on page 75.</div>
+      </div>
+ 
+      <div class="row two-col">
+        <div class="cell">Deployment</div>
+        <div class="cell-notation"><img src="../../../../img/guia_394.png" alt="Deployment path notation" /></div>
+        <div class="cell">The Deployment relationship</div>
+      </div>
+ 
+      <div class="row two-col">
+        <div class="cell">Manifestation</div>
+        <div class="cell-notation"><img src="../../../../img/guia_395.png" alt="Manifestation path notation" /></div>
+        <div class="cell">The Manifestation relationship</div>
+      </div>
+    </div>
+  </div>
          
 </div>
 </div>

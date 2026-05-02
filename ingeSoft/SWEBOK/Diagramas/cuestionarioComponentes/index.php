@@ -496,7 +496,7 @@ if ($_POST) {
    }
 
     $respuesta_34 = isset($_POST['respuesta_34']) ? $_POST['respuesta_34'] : '';
-    if ($respuesta_34 === '32') { 
+    if ($respuesta_34 === 'descompone') { 
         $verificar_34 = "correcto";
     } elseif ($respuesta_34 === '') {
         $verificar_34 = '';
@@ -505,7 +505,7 @@ if ($_POST) {
     }
 
     $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
-    if ($respuesta_35 === '48') { 
+    if ($respuesta_35 === 'niveles') { 
         $verificar_35 = "correcto";
     } elseif ($respuesta_35 === '') {
         $verificar_35 = '';
@@ -514,7 +514,7 @@ if ($_POST) {
     }
 
     $respuesta_36 = isset($_POST['respuesta_36']) ? $_POST['respuesta_36'] : '';
-    if ($respuesta_36 === '64') { 
+    if ($respuesta_36 === 'datos') { 
         $verificar_36 = "correcto";
     } elseif ($respuesta_36 === '') {
     $verificar_36 = '';
@@ -523,7 +523,7 @@ if ($_POST) {
     }
 
     $respuesta_37 = isset($_POST['respuesta_37']) ? $_POST['respuesta_37'] : '';
-    if ($respuesta_37 === '80') { 
+    if ($respuesta_37 === 'puerto') { 
         $verificar_37 = "correcto";
     } elseif ($respuesta_37 === '') {
         $verificar_37 = '';
@@ -532,7 +532,7 @@ if ($_POST) {
     }
 
     $respuesta_38 = isset($_POST['respuesta_38']) ? $_POST['respuesta_38'] : '';
-    if ($respuesta_38 === '96') { 
+    if ($respuesta_38 === 'internos') { 
         $verificar_38 = "correcto";
     } elseif ($respuesta_38 === '') {
         $verificar_38 = '';
@@ -541,7 +541,7 @@ if ($_POST) {
     }
 
     $respuesta_39 = isset($_POST['respuesta_39']) ? $_POST['respuesta_39'] : '';
-    if ($respuesta_39 === '112') { 
+    if ($respuesta_39 === 'interfaces requeridas') { 
         $verificar_39 = "correcto";
     } elseif ($respuesta_39 === '') {
         $verificar_39 = '';
@@ -550,7 +550,7 @@ if ($_POST) {
     }
 
     $respuesta_40 = isset($_POST['respuesta_40']) ? $_POST['respuesta_40'] : '';
-    if ($respuesta_40 === '128') { 
+    if ($respuesta_40 === 'necesita') { 
         $verificar_40 = "correcto";
     } elseif ($respuesta_40 === '') {
         $verificar_40 = '';
@@ -559,7 +559,7 @@ if ($_POST) {
     }
 
     $respuesta_41 = isset($_POST['respuesta_41']) ? $_POST['respuesta_41'] : '';
-    if ($respuesta_41 === '144') { 
+    if ($respuesta_41 === 'puertos') { 
         $verificar_41 = "correcto";
     } elseif ($respuesta_41 === '') {
         $verificar_41 = '';
@@ -568,7 +568,7 @@ if ($_POST) {
     }
 
     $respuesta_42 = isset($_POST['respuesta_42']) ? $_POST['respuesta_42'] : '';
-    if ($respuesta_42 === '160') { 
+    if ($respuesta_42 === 'interfaces proporcionadas') { 
         $verificar_42 = "correcto";
     } elseif ($respuesta_42 === '') {
         $verificar_42 = '';
@@ -577,7 +577,7 @@ if ($_POST) {
     }
 
     $respuesta_43 = isset($_POST['respuesta_43']) ? $_POST['respuesta_43'] : '';
-    if ($respuesta_43 === '176') { 
+    if ($respuesta_43 === 'servicios') { 
         $verificar_43 = "correcto";
     } elseif ($respuesta_43 === '') {
         $verificar_43 = '';
@@ -586,7 +586,7 @@ if ($_POST) {
     }
 
     $respuesta_44 = isset($_POST['respuesta_44']) ? $_POST['respuesta_44'] : '';
-    if ($respuesta_44 === '192') { 
+    if ($respuesta_44 === 'entrega') { 
         $verificar_44 = "correcto";
     } elseif ($respuesta_44 === '') {
     $verificar_44 = '';
@@ -595,7 +595,7 @@ if ($_POST) {
     }
 
     $respuesta_45 = isset($_POST['respuesta_45']) ? $_POST['respuesta_45'] : '';
-    if ($respuesta_45 === '34') { 
+    if ($respuesta_45 === 'sistema completo') { 
         $verificar_45 = "correcto";
     } elseif ($respuesta_45 === '') {
     $verificar_45 = '';
@@ -604,7 +604,7 @@ if ($_POST) {
     }
 
     $respuesta_46 = isset($_POST['respuesta_46']) ? $_POST['respuesta_46'] : '';
-    if ($respuesta_46 === '51') { 
+    if ($respuesta_46 === 'no habria') { 
         $verificar_46 = "correcto";
     } elseif ($respuesta_46 === '') {
     $verificar_46 = '';
@@ -613,7 +613,7 @@ if ($_POST) {
     }
 
     $respuesta_47 = isset($_POST['respuesta_47']) ? $_POST['respuesta_47'] : '';
-    if ($respuesta_47 === '68') { 
+    if ($respuesta_47 === 'subsistema') { 
         $verificar_47 = "correcto";
     } elseif ($respuesta_47 === '') {
         $verificar_47 = '';
@@ -1948,10 +1948,19 @@ function ocultarMensaje4() {
         <h1>Diagrama de Componentes de un Vistazo</h1>
 
     <p>
-        Un diagrama de componentes descompone el sistema real en desarrollo en varios niveles altos de funcionalidad.
+        Un diagrama de componentes 
+        <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="13">
+          el sistema real en desarrollo en varios 
+        <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="13">
+          altos de funcionalidad.
         Cada componente es responsable de un objetivo claro dentro de todo el sistema y solo interactúa con otros
         elementos esenciales cuando es necesario.
     </p>
+
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_34 ?>
+     <?php echo $verificar_35 ?>
+     <hr>
         <img src="../../../../img/guia_352.png" alt="" width="700">ç
 
 
@@ -1962,26 +1971,64 @@ function ocultarMensaje4() {
     </p>
 
     <p>
-        Los datos (cuenta e ID de inspección) fluyen hacia el componente a través del puerto ubicado en el lado derecho 
-        y se convierten en un formato que los componentes internos pueden utilizar. Las interfaces del lado derecho 
-        se conocen como <strong>interfaces requeridas</strong>, las cuales representan los servicios que el componente 
-        necesita para poder cumplir su función.
+        Los 
+        <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="13">
+          (cuenta e ID de inspección) fluyen hacia el componente a través del 
+        <input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="13">
+          ubicado en el lado derecho 
+        y se convierten en un formato que los componentes 
+        <input type="text" name="respuesta_38" value="<?php echo $respuesta_38; ?>" size="13">
+          pueden utilizar. Las interfaces del lado derecho 
+        se conocen como <strong>
+        <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="13">    
+         </strong>, las cuales representan los servicios que el componente 
+        <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="13">
+          para poder cumplir su función.
     </p>
 
     <p>
         Luego, los datos pasan hacia y a través de varios otros componentes mediante diferentes conexiones antes de 
-        salir por los puertos ubicados en el lado izquierdo. Esas interfaces del lado izquierdo se conocen como 
-        <strong>interfaces proporcionadas</strong>, las cuales representan los servicios que el componente expone o entrega.
+        salir por los 
+         <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="13">
+          ubicados en el lado izquierdo. Esas interfaces del lado izquierdo se conocen como 
+        <strong>
+         <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="13">    
+         </strong>, las cuales representan los 
+         <input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="13">
+          que el componente expone o 
+         <input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>" size="13">
+         .
     </p>
 
     <p>
         Es importante señalar que los componentes internos están rodeados por una gran "caja", la cual puede representar 
-        el sistema completo (en cuyo caso no habría un símbolo de componente en la esquina superior derecha) o un 
-        subsistema o componente del sistema general (en este caso, la "caja" es en sí misma un componente).
+        el 
+        <input type="text" name="respuesta_45" value="<?php echo $respuesta_45; ?>" size="13">
+          (en cuyo caso 
+        <input type="text" name="respuesta_46" value="<?php echo $respuesta_46; ?>" size="13">
+          un símbolo de componente en la esquina superior derecha) o un 
+        <input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="13">
+          o componente del sistema general (en este caso, la "caja" es en sí misma un componente).
     </p>
 
+    <button type="submit">Enviar</button>
+        <?php echo $verificar_36 ?>
+    <?php echo $verificar_37 ?>
+    <?php echo $verificar_38 ?>
+    <?php echo $verificar_39 ?>
+    <?php echo $verificar_40 ?>
+    <?php echo $verificar_41 ?>
 
-     <h1>Conceptos Básicos del Diagrama de Componentes</h1>
+
+    <?php echo $verificar_42 ?>
+    <?php echo $verificar_43 ?>
+    <?php echo $verificar_44 ?>
+    
+    <?php echo $verificar_45 ?>
+    <?php echo $verificar_46 ?>
+    <?php echo $verificar_47 ?>
+    <hr>
+    <h1>Conceptos Básicos del Diagrama de Componentes</h1>
 
     <p>
         Un componente representa una parte modular de un sistema que encapsula su contenido 

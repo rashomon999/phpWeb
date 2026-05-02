@@ -1494,6 +1494,85 @@ if ($respuesta_121 === '144') {
     align-items: center;
   }
   
+
+      .table-wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      border: 1px solid #d0d0c8;
+      border-radius: 4px;
+      overflow: hidden;
+      background: #fff;
+    }
+ 
+    .table-header {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      background: #fff;
+      border-bottom: 2px solid #1a1a1a;
+    }
+ 
+    .table-header .col-title {
+      padding: 1rem 1.5rem;
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: 0.02em;
+      color: #1a1a1a;
+    }
+ 
+    .table-header .col-title:first-child {
+      border-right: 1px solid #d0d0c8;
+    }
+ 
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      border-bottom: 1px solid #e0e0d8;
+    }
+ 
+    .row:last-child {
+      border-bottom: none;
+    }
+ 
+    .cell-desc {
+      padding: 1.5rem;
+      border-right: 1px solid #e0e0d8;
+    }
+ 
+    .cell-notation {
+      padding: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fafaf8;
+    }
+ 
+    .cell-notation img {
+      max-width: 100%;
+      max-height: 80px;
+      object-fit: contain;
+    }
+ 
+    .rel-title {
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 0.75rem;
+      color: #1a1a1a;
+    }
+ 
+    .cell-desc ul {
+      list-style: disc;
+      padding-left: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+ 
+    .cell-desc ul li {
+      font-size: 0.875rem;
+      line-height: 1.55;
+      color: #3a3a3a;
+    }
+
 </style>
  
 <script>
@@ -1953,6 +2032,8 @@ function ocultarMensaje4() {
         componentes, interfaces y relaciones de dependencia, agregación, restricción, generalización, 
         asociación y realización. También puede contener notas y restricciones.
     </p>
+
+    
 </div>
 
 
@@ -1961,6 +2042,90 @@ function ocultarMensaje4() {
 <div class="seccion derecha">
     
      
+  <div class="table-wrapper">
+ 
+    <div class="table-header">
+      <div class="col-title">Relationships</div>
+      <div class="col-title">Notation</div>
+    </div>
+ 
+    <!-- Association -->
+    <div class="row">
+      <div class="cell-desc">
+    <p class="rel-title">Asociación:</p> <ul> <li>Una asociación especifica una relación semántica que puede ocurrir entre 
+        instancias tipadas.</li> <li>Tiene al menos dos extremos representados por propiedades, cada uno de los cuales 
+            está conectado al tipo del extremo. Más de un extremo de la asociación puede tener el mismo tipo.</li> </ul>
+      </div>
+      <div class="cell-notation">
+        <img src="../../../../img/guia_376.png" alt="Association notation" />
+      </div>
+    </div>
+ 
+    <!-- Composition -->
+    <div class="row">
+      <div class="cell-desc">
+    <p class="rel-title">Composición:</p> <ul> <li>La agregación compuesta es una forma fuerte de agregación que 
+        requiere que una instancia de parte esté incluida como máximo en un solo compuesto a la vez.</li> <li>Si un 
+            compuesto es eliminado, todas sus partes normalmente se eliminan junto con él.</li> </ul>
+      </div>
+      <div class="cell-notation">
+        <img src="../../../../img/guia_377.png" alt="Composition notation" />
+      </div>
+    </div>
+ 
+    <!-- Aggregation -->
+    <div class="row">
+      <div class="cell-desc">
+     <p class="rel-title">Agregación</p> <ul> <li>Un tipo de asociación que 
+        tiene uno de sus extremos marcado como compartido, lo que significa que posee una agregación compartida.</li> </ul>
+      </div>
+      <div class="cell-notation">
+        <img src="../../../../img/guia_378.png" alt="Aggregation notation" />
+      </div>
+    </div>
+ 
+    <!-- Constraint -->
+    <div class="row">
+      <div class="cell-desc">
+ <p class="rel-title">Restricción</p> <ul> <li>Una condición o restricción expresada en texto 
+    de lenguaje natural o en un lenguaje legible por máquina con el propósito de declarar parte de la 
+    semántica de un elemento.</li> </ul>
+      </div>
+      <div class="cell-notation">
+        <img src="../../../../img/guia_380.png" alt="Constraint notation" />
+      </div>
+    </div>
+ 
+    <!-- Dependency -->
+    <div class="row">
+      <div class="cell-desc">
+         <p class="rel-title">Dependencia</p> <ul> <li>Una dependencia es una relación que indica que uno o un 
+            conjunto de elementos del modelo requiere de otros elementos del modelo para su especificación o 
+            implementación.</li> <li>Esto significa que la semántica completa de los elementos dependientes está, 
+                ya sea semántica o estructuralmente, dependiente de la definición del/los elemento(s) proveedor(es).</li> </ul>
+      </div>
+      <div class="cell-notation">
+        <img src="../../../../img/guia_379.png" alt="Dependency notation" />
+      </div>
+    </div>
+ 
+    <!-- Links / Generalization -->
+    <div class="row">
+      <div class="cell-desc">
+<p class="rel-title">Enlaces:</p> <ul> <li>Una generalización es una relación taxonómica entre un clasificador 
+    más general y un clasificador más específico.</li> <li>Cada instancia del clasificador específico también es 
+        una instancia indirecta del clasificador general.</li> <li>Por lo tanto, el clasificador específico hereda 
+            las características del clasificador más general.</li> </ul>
+      </div>
+      <div class="cell-notation">
+        <img src="../../../../img/guia_381.png" alt="Links / Generalization notation" />
+      </div>
+    </div>
+ 
+  </div>
+
+
+
 </div>
 </div>
  </form>

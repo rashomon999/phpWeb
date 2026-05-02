@@ -37,6 +37,12 @@
         <a class="btn" href=".\Part3\Menu.php">Parte 3 Diseño de software</a>
         <br>
         <a class="btn" href=".\Diagramas\Menu.php">Diagramas</a>
+        <br>
+        <a class="btn" href=".\flynn\Menu.php">flynn</a>
+        <br><br>
+                <a class="btn" href=".\Parcial_1\index.php">Parcial 1</a>
+                <a class="btn" href=".\Parcial_2\index.php">Parcial 2</a>
+
     </div>
 </body>
 </html>
