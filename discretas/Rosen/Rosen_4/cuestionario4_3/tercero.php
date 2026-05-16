@@ -1687,9 +1687,9 @@ function ocultarMensaje4() {
         }
     </script>
 
-     <button onmousedown="mostrarMensaje()" onmouseup="ocultarMensaje()">Dato</button>
+    <button onmousedown="mostrarMensaje()" onmouseup="ocultarMensaje()">Dato</button>
     <div id="mensaje" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
-       <p>Con computadoras, se ha verificado para todos los enteros positivos pares hasta:</p>
+    <p>Con computadoras, se ha verificado para todos los enteros positivos pares hasta:</p>
 
     <p>\[
     4 \times 10^{18}

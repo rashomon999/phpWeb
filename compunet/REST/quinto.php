@@ -1298,8 +1298,8 @@ if ($respuesta_121 === '144') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="./../style_2_0.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../style_2_0.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
@@ -1589,278 +1589,288 @@ function ocultarMensaje4() {
 </head>
 <body>  
 
-<form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
+<form action="./quinto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
 <div class="form-container">
 
     
 <div class="seccion izquierda"> 
+    <p>Los cambios que se realizaron en la clase SecurityConfig son los siguientes:</p>
+    <li>Headers frameOptions deshabilitado para permitir el acceso a la consola de H2, si no lo haces, 
+    no podrás acceder a la consola de H2 ya que este utiliza un iframe.</li>
+    <li>
+    SessionManagement configurado como STATELESS, esto es muy importante ya que JWT es un estándar sin estado (stateless), 
+    lo que significa que el servidor no mantiene ninguna información sobre el cliente entre solicitudes. Cada solicitud 
+    debe contener toda la información necesaria para que el servidor pueda procesarla.
+    </li>
+    <li>
+    Se modificó el filtro de seguridad para las rutas que comienzan con /api/**, ya que estas rutas serán las que utilicen 
+    JWT para la autenticación y autorización.
+    </li>
 
- <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="8">
-    <button type="submit">Enviar</button> 
-    <?php echo $verificar_1 ?>
-    <?php echo $verificar_2 ?>
-    <?php echo $verificar_3 ?>
-    <?php echo $verificar_4 ?>
-    <?php echo $verificar_5 ?>
-    <?php echo $verificar_6 ?>
-    <?php echo $verificar_7 ?>  
-    <?php echo $verificar_8 ?>
-    <?php echo $verificar_9 ?>
-    <?php echo $verificar_10 ?>
-    <?php echo $verificar_11 ?> 
-    <?php echo $verificar_12 ?>
-    <?php echo $verificar_13 ?>
-    <?php echo $verificar_14 ?>
-    <?php echo $verificar_15 ?>
-    <?php echo $verificar_16 ?>
-    <?php echo $verificar_17 ?>
-    <?php echo $verificar_18 ?>
-    <?php echo $verificar_19 ?> 
-    <?php echo $verificar_20 ?>
-    <?php echo $verificar_21 ?>
-    <?php echo $verificar_22 ?>
-    <?php echo $verificar_23 ?>
-    <?php echo $verificar_24 ?>
-    <?php echo $verificar_25 ?>
-    <?php echo $verificar_26 ?>
-    <?php echo $verificar_27 ?>
-    <?php echo $verificar_28 ?>
-    <?php echo $verificar_29 ?>
-    <?php echo $verificar_30 ?>
-    <?php echo $verificar_31 ?>
-    <?php echo $verificar_32 ?>
-    <?php echo $verificar_33 ?>
-    <?php echo $verificar_34 ?>
-    <?php echo $verificar_35 ?>
-    <?php echo $verificar_36 ?>
-    <?php echo $verificar_37 ?>
-    <?php echo $verificar_38 ?>
-    <?php echo $verificar_39 ?>
-    <?php echo $verificar_40 ?>
-    <?php echo $verificar_41 ?>
+    <h5>4.4 Creación del filtro de autenticación JWT</h5>
 
+    <p>Vamos a crear una nueva clase llamada JwtAuthenticationFilter en el paquete config, la cual se encargará de interceptar 
+    las solicitudes entrantes y validar el token JWT. La clase debe quedar de la siguiente manera:</p>
 
-    <?php echo $verificar_42 ?>
-    <?php echo $verificar_43 ?>
-    <?php echo $verificar_44 ?>  
-    <?php echo $verificar_45 ?>
-    <?php echo $verificar_46 ?>
-    <?php echo $verificar_47 ?>
-    <?php echo $verificar_48 ?>
-    <?php echo $verificar_49 ?>
-    <?php echo $verificar_50 ?>
-    <?php echo $verificar_51 ?>
-    <?php echo $verificar_52 ?>
-    <?php echo $verificar_53 ?>
-    <?php echo $verificar_54 ?>
-    <?php echo $verificar_55 ?>
+<pre>
+<code>
+public class JwtAuthenticationFilter extends OncePerRequestFilter {
+
+    @Autowired
+    private IJwtService jwtService;
+
+    @Override
+    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
+            throws ServletException, IOException {
+        String authHeader = request.getHeader("Authorization");
+        String token = null;
+        UserDetails username = null;
+
+        if (authHeader != null && authHeader.startsWith("Bearer ")) {
+            token = authHeader.substring(7);
+
+            if (jwtService.isTokenValid(token)) {
+                username = jwtService.getUserDetailsFromToken(token);
+                UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(username, token, username.getAuthorities());
+                authentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
+                SecurityContextHolder.getContext().setAuthentication(authentication);
+            }
+        }
+        filterChain.doFilter(request, response);
+    }
+}
+</code>
+</pre>
+
+    <p>Este usará un servicio llamado IJwtService, el cual se encargará de la generación y validación del token JWT. 
+    Vamos a crear este servicio en el siguiente paso.</p>
+
+    <pre>
+    <code>
+public interface IJwtService {
+    String generateToken(User user, Authentication authentication);
+    String extractUsername(String token);
+    List<SimpleGrantedAuthority> extractAuthorities(String token);
+    <T> T extractClaim(String token, Function<Claims, T> claimsResolver);
+    UserDetails getUserDetailsFromToken(String token);
+    boolean isTokenExpired(String token);
+    boolean isTokenValid(String token);
+}
+    </code>
+    </pre>
 
 
 
-    <?php echo $verificar_56 ?>
-    <?php echo $verificar_57 ?>
-    <?php echo $verificar_58 ?>
-    <?php echo $verificar_59 ?>
-    <?php echo $verificar_60 ?>
-    <?php echo $verificar_61 ?>
-    <?php echo $verificar_62 ?>
-    <?php echo $verificar_63 ?>
-    <?php echo $verificar_64 ?>
-    <?php echo $verificar_65 ?>
-    <?php echo $verificar_66 ?>
+    <p>Estos métodos permitirán lo siguiente:</p>
 
-    <?php echo $verificar_67 ?>
-<?php echo $verificar_68 ?>
-<?php echo $verificar_69 ?>
-<?php echo $verificar_70 ?>
-<?php echo $verificar_71 ?>
-<?php echo $verificar_72 ?>
-<?php echo $verificar_73 ?>
-<?php echo $verificar_74 ?>
-<?php echo $verificar_75 ?>
-<?php echo $verificar_76 ?>
-<?php echo $verificar_77 ?>
-<?php echo $verificar_78 ?>
-<?php echo $verificar_79 ?>
-<?php echo $verificar_80 ?>
-<?php echo $verificar_81 ?>
-<?php echo $verificar_82 ?>
-<?php echo $verificar_83 ?>
-<?php echo $verificar_84 ?>
-<?php echo $verificar_85 ?>
-<?php echo $verificar_86 ?>
-<?php echo $verificar_87 ?>
-<?php echo $verificar_88 ?>
-<?php echo $verificar_89 ?>
-<?php echo $verificar_90 ?>
-<?php echo $verificar_91 ?>
-<?php echo $verificar_92 ?>
-<?php echo $verificar_93 ?>
-<?php echo $verificar_94 ?>
-<?php echo $verificar_95 ?>
-<?php echo $verificar_96 ?>
-<?php echo $verificar_97 ?>
-<?php echo $verificar_98 ?>
-<?php echo $verificar_99 ?>
-<?php echo $verificar_100 ?>
-<?php echo $verificar_101 ?>
-<?php echo $verificar_102 ?>
-<?php echo $verificar_103 ?>
-<?php echo $verificar_104 ?>
-<?php echo $verificar_105 ?>
-<?php echo $verificar_106 ?>
-<?php echo $verificar_107 ?>
-<?php echo $verificar_108 ?>
-<?php echo $verificar_109 ?>
-<?php echo $verificar_110 ?>
-<?php echo $verificar_111 ?>
-<?php echo $verificar_112 ?>
-<?php echo $verificar_113 ?>
-<?php echo $verificar_114 ?>
-<?php echo $verificar_115 ?>
-<?php echo $verificar_116 ?>
-<?php echo $verificar_117 ?>
-<?php echo $verificar_118 ?>
-<?php echo $verificar_119 ?>
-<?php echo $verificar_120 ?>
-<?php echo $verificar_121 ?>
-<?php echo $verificar_122 ?>
-<?php echo $verificar_123 ?>
-<?php echo $verificar_124 ?>
-<?php echo $verificar_125 ?>
-<?php echo $verificar_126 ?>
-<?php echo $verificar_127 ?>
-<?php echo $verificar_128 ?>
-<?php echo $verificar_129 ?>
-<?php echo $verificar_130 ?>
-<?php echo $verificar_131 ?>
-<?php echo $verificar_132 ?>
-<?php echo $verificar_133 ?>
-    <br><br><br>
+<ul>
+    <li>
+        <strong>generateToken(Authentication authentication):</strong> Generar un token JWT basado en la autenticación del usuario.
+    </li>
 
-  
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_23 ?>
-    <?php echo $verificar_24 ?>
-    <?php echo $verificar_25 ?>
-    <?php echo $verificar_26 ?>
-    <?php echo $verificar_27 ?>
-    <?php echo $verificar_28 ?>
-    <?php echo $verificar_29 ?>
-    <?php echo $verificar_30 ?>
-    <?php echo $verificar_31 ?>
-    <?php echo $verificar_32 ?>
-    <?php echo $verificar_33 ?>
+    <li>
+        <strong>extractUsername(String token):</strong> Extraer el nombre de usuario del token JWT.
+    </li>
 
- 
-   
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_34 ?>
-    <?php echo $verificar_35 ?>
-    <?php echo $verificar_36 ?>
-    <?php echo $verificar_37 ?>
-    <?php echo $verificar_38 ?>
-    <?php echo $verificar_39 ?>
-    <?php echo $verificar_40 ?>
-    <?php echo $verificar_41 ?>
-    <?php echo $verificar_42 ?>
-    <?php echo $verificar_43 ?>
-    <?php echo $verificar_44 ?>
-            <br><br><br>
+    <li>
+        <strong>extractAuthorities(String token):</strong> Extraer las autoridades (roles) del usuario desde el token JWT.
+    </li>
 
-    
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_45 ?>
-    <?php echo $verificar_46 ?>
-    <?php echo $verificar_47 ?>
-    <?php echo $verificar_48 ?>
-    <?php echo $verificar_49 ?>
-    <?php echo $verificar_50 ?>
-    <?php echo $verificar_51 ?>
-    <?php echo $verificar_52 ?>
-    <?php echo $verificar_53 ?>
-    <?php echo $verificar_54 ?>
-    <?php echo $verificar_55 ?>
-   
+    <li>
+        <strong>extractClaim(String token, Function&lt;Claims, T&gt; claimsResolver):</strong> 
+        Extraer una afirmación específica del token JWT utilizando una función de resolución de afirmaciones.
+    </li>
+
+    <li>
+        <strong>getUserDetailsFromToken(String token):</strong> Obtener los detalles del usuario a partir del token JWT.
+    </li>
+
+    <li>
+        <strong>isTokenExpired(String token):</strong> Verificar si el token JWT ha expirado.
+    </li>
+
+    <li>
+        <strong>validateToken(String token):</strong> Validar la integridad y validez del token JWT.
+    </li>
+</ul>
+
+<p>Ahora realicemos la implementación de esta interfaz en una clase llamada <strong>JwtService</strong>:</p>
+
+<pre>
+<code>
+@Service
+public class JwtServiceImpl implements IJwtService {
+
+    @Value("${app.security.jwt.secret-key}")
+    private String secretKey;
+
+    @Value("${app.security.jwt.expiration-time}")
+    private long expirationTime;
+
+    private SecretKey getSignInKey() {
+        byte[] keyBytes = Decoders.BASE64.decode(secretKey);
+        return Keys.hmacShaKeyFor(keyBytes);
+    }
+
+    @Override
+    public String generateToken(User user, Authentication auth) {
+        return Jwts.builder()
+                .id(user.getId().toString())
+                .claims(Map.of(
+                    "username", user.getUsername(),
+                    "email", user.getEmail(),
+                    "authorities", auth != null && auth.getAuthorities() != null ? auth.getAuthorities().stream()
+                        .map(ga -> ga.getAuthority())
+                        .toList() : List.of()
+                ))
+                .subject(user.getUsername())
+                .issuedAt(new Date(System.currentTimeMillis()))
+                .expiration(new Date(System.currentTimeMillis() + expirationTime))
+                .signWith(getSignInKey())
+                .compact();
+    }
+
+    @Override
+    public <T> T extractClaim(String token, Function<Claims, T> claimsResolver) {
+        Claims claims = Jwts.parser()
+                .verifyWith(getSignInKey())
+                .build()
+                .parseSignedClaims(token)
+                .getPayload();
+        return claimsResolver.apply(claims);
+    }
+
+    @Override
+    public String extractUsername(String token) {
+        return extractClaim(token, Claims::getSubject);
+    }
+
+    @Override
+    public boolean isTokenExpired(String token) {
+        return extractClaim(token, Claims::getExpiration).before(new Date());
+    }
+
+    @Override
+    @SuppressWarnings("unchecked")
+    public List<SimpleGrantedAuthority> extractAuthorities(String token) {
+        Claims claims = extractClaim(token, Function.identity());
+        List<String> authorities = claims.get("authorities", List.class);
+        return authorities.stream()
+                .map(SimpleGrantedAuthority::new)
+                .toList();
+    }
+
+    @Override
+    public UserDetails getUserDetailsFromToken(String token) {
+        String username = extractUsername(token);
+        List<SimpleGrantedAuthority> authorities = extractAuthorities(token);
+        return new org.springframework.security.core.userdetails.User(username, "", authorities);
+    }
+
+    @Override
+    public boolean isTokenValid(String token) {
+        try {
+        Jwts.parser()
+            .verifyWith(getSignInKey())
+            .build()
+            .parseSignedClaims(token);
+
+        if (isTokenExpired(token)) {
+            return false;
+        }
+
+        return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+}
+</code>
+</pre>
 </div>
 
 
 
 
 <div class="seccion derecha">
+    <h5>4.5 Creación del endpoint de autenticación</h5>
+    <p>Para la creación del endpoint de autenticación, vamos a crear un nuevo controlador llamado AuthController en 
+    el paquete controllers. Este controlador tendrá un endpoint para el login, el cual recibirá las credenciales del 
+    usuario y devolverá un token JWT si las credenciales son válidas.</p>
     
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_56 ?>
-    <?php echo $verificar_57 ?>
-    <?php echo $verificar_58 ?>
-    <?php echo $verificar_59 ?>
-    <?php echo $verificar_60 ?>
-    <?php echo $verificar_61 ?>
-    <?php echo $verificar_62 ?>
-    <?php echo $verificar_63 ?>
-    <?php echo $verificar_64 ?>
-    <?php echo $verificar_65 ?>
-    <?php echo $verificar_66 ?>
- 
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_67 ?>
-    <?php echo $verificar_68 ?>
-    <?php echo $verificar_69 ?>
-    <?php echo $verificar_70 ?>
-    <?php echo $verificar_71 ?>
-    <?php echo $verificar_72 ?>
-    <?php echo $verificar_73 ?>
-    <?php echo $verificar_74 ?>
-    <?php echo $verificar_75 ?>
-    <?php echo $verificar_76 ?>
-    <?php echo $verificar_77 ?>
- 
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_78 ?>
-    <?php echo $verificar_79 ?>
-    <?php echo $verificar_80 ?> 
-    <?php echo $verificar_81 ?>
-    <?php echo $verificar_82 ?>
-    <?php echo $verificar_83 ?>
-    <?php echo $verificar_84 ?>
-    <?php echo $verificar_85 ?>
-    <?php echo $verificar_86 ?>
-    <?php echo $verificar_87 ?>
-    <?php echo $verificar_88 ?>
- 
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_89 ?>
-    <?php echo $verificar_90 ?>
-    <?php echo $verificar_91 ?>
-    <?php echo $verificar_92 ?>
-    <?php echo $verificar_93 ?>
-    <?php echo $verificar_94 ?>
-    <?php echo $verificar_95 ?>
-    <?php echo $verificar_96 ?>
-    <?php echo $verificar_97 ?>
-    <?php echo $verificar_98 ?> 
-    <?php echo $verificar_99 ?>
- 
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_100 ?>
-    <?php echo $verificar_101 ?>
-    <?php echo $verificar_102 ?>
-    <?php echo $verificar_103 ?>
-    <?php echo $verificar_104 ?>
-    <?php echo $verificar_105 ?>
-    <?php echo $verificar_106 ?>
-    <?php echo $verificar_107 ?>
-    <?php echo $verificar_108 ?>
-    <?php echo $verificar_109 ?>
-    <?php echo $verificar_110 ?>
-    <br><br><br>
- 
-    <hr>
-    <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
-    <br>
-    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
-    <button type="submit"   >Mostrar Solución</button>
-         
+    <pre>
+    <code>
+@RestController
+@RequestMapping("/api/public/auth")
+public class AuthController {
+
+    @Autowired
+    private IAuthService authService;
+
+    @PostMapping("/login")
+    public ResponseEntity<?> login(@RequestBody LoginRequestDTO request) {
+        try {
+            TokenResponseDTO token = authService.login(request);
+            return ResponseEntity.ok(token);
+        } catch (Exception e) {
+            return ResponseEntity.status(401).body(e.getMessage());
+        }
+    }
+}
+
+public class LoginRequestDTO {
+
+    private String username;
+    private String password;
+}
+
+public class TokenResponseDTO{
+
+    String accessToken;
+}
+
+    </code>
+    </pre>
+
+    <h5>4.6 Creación del servicio de autenticación</h5>
+
+    <p>Vamos a crear una interfaz llamada IAuthService en el paquete services, la cual tendrá los métodos 
+    necesarios para el registro y login de usuarios.</p>
+
+    <pre>
+    <code>
+public interface IAuthService {
+    TokenResponseDTO login(LoginRequestDTO request);
+}
+
+@Service
+@RequiredArgsConstructor
+public class AuthServiceImpl implements IAuthService {
+
+    private final IJwtService jwtService;
+    private final UserDetailsService userDetailsService;
+    private final PasswordEncoder passwordEncoder;
+
+    @Override
+    public TokenResponseDTO login(LoginRequestDTO request) {
+        UserDetails userDetails = userDetailsService.loadUserByUsername(request.getUsername());
+        if (userDetails == null) {
+            throw new RuntimeException("Usuario no encontrado");
+        }
+        if (!passwordEncoder.matches(request.getPassword(), userDetails.getPassword())) {
+            throw new RuntimeException("Contraseña incorrecta");
+        }
+        CustomUserDetails customUD = (CustomUserDetails) userDetails;
+        User user = customUD.getUser();
+        Authentication auth = new UsernamePasswordAuthenticationToken(userDetails, "", userDetails.getAuthorities());
+        String token = jwtService.generateToken(user, auth);
+        return new TokenResponseDTO(token);
+    }
+
+}
+
+    </code>
+    </pre>
 </div>
 </div>
  </form>
@@ -1869,7 +1879,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="segundo.php"
+        href="sexto.php"
         role="button"
         width="50px"
         height="50px"

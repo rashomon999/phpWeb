@@ -46,7 +46,7 @@ if ($_POST) {
     // Preguntas 23-33
     $respuesta_23 = 'Requiere gestion de sesiones o replicacion de estado';
     $respuesta_24 = 'HttpSession';
-    $respuesta_25 = '60';
+    $respuesta_25 = 'sin que él vuelva a enviarla';
     $respuesta_26 = 'HttpSession';
     $respuesta_27 = '@Controller';
     $respuesta_28 = '@PostMapping("/login")';
@@ -101,7 +101,7 @@ if ($_POST) {
     $respuesta_69 = 'especialmente sobre HTTP';
     $respuesta_70 = 'REST se basa en recursos que pueden ser accedidos mediante URLs y manipulados con los metodos HTTP estandar';
     $respuesta_71 = 'Cada URL representa un recurso';
-    $respuesta_72 = 'y las operaciones HTTP definen las acciones sobre él';
+    $respuesta_72 = 'y las operaciones HTTP definen las acciones sobre el';
     $respuesta_73 = 'Interfaz uniforme';
     $respuesta_74 = 'Cada recurso debe tener una URL unica';
     $respuesta_75 = 'Las representaciones son independientes del servidor';
@@ -142,7 +142,7 @@ if ($_POST) {
     $respuesta_104 = 'uso de query params';
     $respuesta_105 = '/usuarios?activo=true&edad_min=18';
     $respuesta_106 = 'Filtrar usuarios activos mayores de 18 años';
-    $respuesta_107 = '/usuarios/10/permisos';
+    $respuesta_107 = 'Obtener permisos del usuario con ID 10';
     $respuesta_108 = 'recurso encadenado';
     $respuesta_109 = '/usuarios/10/permisos';
     $respuesta_110 = 'Asignar un nuevo permiso al usuario con ID 10';
@@ -154,7 +154,7 @@ if ($_POST) {
     $respuesta_114 = 'Obtener la lista de amigos del usuario con ID 10';
     $respuesta_115 = '/usuarios?pagina=2&amp;tamano=20';
     $respuesta_116 = 'Paginacion: obtener la segunda pagina de usuarios, 20 por pagina';
-        
+    $respuesta_117 = '/usuarios/10/permisos';
         // Marcar todas como correctas
     for ($i = 1; $i <= 122; $i++) {
     ${"verificar_$i"} = "correcto";
@@ -343,7 +343,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la octava pregunta
     $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-    if ($respuesta_19 === 'Aplicaciones que requieren sesiones persistentes, como un chat o una conexión FTP') {  
+    if ($respuesta_19 === 'Aplicaciones que requieren sesiones persistentes, como un chat o una conexion FTP') {  
         $verificar_19 = "correcto";
     } elseif ($respuesta_19 === '') {
         $verificar_19 = '';
@@ -403,7 +403,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_25 = isset($_POST['respuesta_25']) ? $_POST['respuesta_25'] : '';
-   if ($respuesta_25 === '60') { 
+   if ($respuesta_25 === 'sin que el vuelva a enviarla') { 
        $verificar_25 = "correcto";
    } elseif ($respuesta_25 === '') {
        $verificar_25 = '';
@@ -835,7 +835,7 @@ if ($respuesta_71 === 'Cada URL representa un recurso') {
 }
 
  $respuesta_72 = isset($_POST['respuesta_72']) ? $_POST['respuesta_72'] : '';
-if ($respuesta_72 === 'y las operaciones HTTP definen las acciones sobre él') { 
+if ($respuesta_72 === 'y las operaciones HTTP definen las acciones sobre el') { 
     $verificar_72 = "correcto";
 } elseif ($respuesta_72 === '') {
     $verificar_72 = '';
@@ -1151,7 +1151,7 @@ if ($respuesta_106 === 'Filtrar usuarios activos mayores de 18 años') {
 }
 
  $respuesta_107 = isset($_POST['respuesta_107']) ? $_POST['respuesta_107'] : '';
-if ($respuesta_107 === '/usuarios/10/permisos') { 
+if ($respuesta_107 === 'Obtener permisos del usuario con ID 10') { 
     $verificar_107 = "correcto";
 } elseif ($respuesta_107 === '') {
     $verificar_107 = '';
@@ -1224,7 +1224,7 @@ if ($respuesta_114 === 'Obtener la lista de amigos del usuario con ID 10') {
 }
 
 $respuesta_115 = isset($_POST['respuesta_115']) ? $_POST['respuesta_115'] : '';
-if ($respuesta_115 === '/usuarios?pagina=2&amp;tamano=20') {  
+if ($respuesta_115 === '/usuarios?pagina=2&tamano=20') {  
     $verificar_115 = "correcto";
 } elseif ($respuesta_115 === '') {
     $verificar_115 = '';
@@ -1242,7 +1242,7 @@ if ($respuesta_116 === 'Paginacion: obtener la segunda pagina de usuarios, 20 po
 }
 
 $respuesta_117 = isset($_POST['respuesta_117']) ? $_POST['respuesta_117'] : '';
-if ($respuesta_117 === '96') {  
+if ($respuesta_117 === '/usuarios/10/permisos') {  
     $verificar_117 = "correcto";
 } elseif ($respuesta_117 === '') {
     $verificar_117 = '';
@@ -1632,6 +1632,7 @@ function ocultarMensaje4() {
 <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="113">.
 </p>
 
+<hr>
 <h4>Stateless</h4>
 <p>
 <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="93">    
@@ -1734,7 +1735,14 @@ Ejemplo:
      .</li>
 </ul>
 
-<button type="submit">Enviar</button>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_17 ?>
+    <?php echo $verificar_18 ?>
+    <?php echo $verificar_19 ?> 
+    <?php echo $verificar_20 ?>
+    <?php echo $verificar_21 ?>
+    <?php echo $verificar_22 ?>
+    <?php echo $verificar_23 ?>
 <hr>
 <h4>Ejemplo de Stateful en Spring Boot</h4>
 <p>Ejemplo: Mantener información de usuario con 
@@ -1748,7 +1756,12 @@ formulario (/login), y luego, en otra vista (/perfil), el sistema muestra su inf
 <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="8">
  .
 </p>
+<button type="submit">Enviar</button>
+    <?php echo $verificar_24 ?>
+    <?php echo $verificar_25 ?>
+    <?php echo $verificar_26 ?>
 
+<hr>
 <code>
 <pre>
     package com.ejemplo.demo.controller;
@@ -1799,17 +1812,7 @@ public class UsuarioController {
 </code>
 
 <button type="submit">Enviar</button>
- <?php echo $verificar_17 ?>
-    <?php echo $verificar_18 ?>
-    <?php echo $verificar_19 ?> 
-    <?php echo $verificar_20 ?>
-    <?php echo $verificar_21 ?>
-    <?php echo $verificar_22 ?>
-
-        <?php echo $verificar_23 ?>
-    <?php echo $verificar_24 ?>
-    <?php echo $verificar_25 ?>
-    <?php echo $verificar_26 ?>
+ 
     <?php echo $verificar_27 ?>
     <?php echo $verificar_28 ?>
     <?php echo $verificar_29 ?>
@@ -1956,6 +1959,12 @@ Este mecanismo permite
 <p>👉 <input type="text" name="respuesta_66" value="<?php echo $respuesta_66; ?>" size="11">   → stateless</p>
 
 <button type="submit">Enviar</button>
+ <?php echo $verificar_61 ?>
+    <?php echo $verificar_62 ?>
+    <?php echo $verificar_63 ?>
+    <?php echo $verificar_64 ?>
+    <?php echo $verificar_65 ?>
+    <?php echo $verificar_66 ?>
 <hr>
  
 
@@ -1992,6 +2001,12 @@ DELETE /api/usuarios/{id}
 </p>
 
 <button type="submit">Enviar</button>
+ <?php echo $verificar_67 ?>
+<?php echo $verificar_68 ?>
+<?php echo $verificar_69 ?>
+<?php echo $verificar_70 ?>
+<?php echo $verificar_71 ?>
+<?php echo $verificar_72 ?>
 <hr>
 <h4>Principios REST</h4>
 
@@ -2114,7 +2129,7 @@ DELETE /api/usuarios/{id}
             <td><input type="text" name="respuesta_106" value="<?php echo $respuesta_106; ?>" size="46"> </td>
         </tr>
         <tr>
-            <td><input type="text" name="respuesta_107" value="<?php echo $respuesta_107; ?>" size="46"> </td>
+            <td><input type="text" name="respuesta_117" value="<?php echo $respuesta_117; ?>" size="46"> </td>
             <td>GET</td>
             <td><input type="text" name="respuesta_107" value="<?php echo $respuesta_107; ?>" size="31">  (<input type="text" name="respuesta_108" value="<?php echo $respuesta_108; ?>" size="15"> )</td>
         </tr>
@@ -2166,6 +2181,7 @@ DELETE /api/usuarios/{id}
     <?php echo $verificar_114 ?>
     <?php echo $verificar_115 ?>
     <?php echo $verificar_116 ?>
+    <?php echo $verificar_117 ?>
     <hr>
     <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
     <br>

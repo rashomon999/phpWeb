@@ -18,34 +18,21 @@ if ($_POST) {
     
     if ($mostrar_solucion === 'mostrar_solucion') {        
  
-        $respuesta_111 = '24'; 
-        $respuesta_112 = '36';
-        $respuesta_113 = '48';
-        $respuesta_114 = '60';
-        $respuesta_115 = '72';
-        $respuesta_116 = '84';
-        $respuesta_117 = '96';
-        $respuesta_118 = '108';
-        $respuesta_119 = '120';
-        $respuesta_120 = '132';
-        $respuesta_121 = '144';
+    $respuesta_1  = 'Los DTOs son objetos que se utilizan para transferir datos entre diferentes capas de una aplicacion';
+    $respuesta_2  = 'como entre la capa de presentacion y la capa de servicio';
+    $respuesta_3  = 'Su principal objetivo es encapsular los datos y reducir el numero de llamadas a la red o a la base de datos';
+    $respuesta_4  = 'Reduccion de la Carga Util';
+    $respuesta_5  = 'Al enviar solo los datos necesarios';
+    $respuesta_6  = 'se minimiza la cantidad de informacion transferida';
+    $respuesta_7  = 'Desacoplamiento';
+    $respuesta_8  = 'Los DTOs ayudan a desacoplar las capas de la aplicacion';
+    $respuesta_9  = 'permitiendo cambios en una capa sin afectar a las demas';
+    $respuesta_10 = 'Facilidad de Mantenimiento';
+    $respuesta_11 = 'Al tener una estructura clara para los datos, es mas facil realizar cambios y mantener el codigo';
+    $respuesta_12 = '@RestController';
+    $respuesta_13 = '@RequestMapping("/api/usuarios")';
         
  
-        $respuesta_1 = '26';
-        $respuesta_2 = '39';
-        $respuesta_3 = '52';
-        $respuesta_4 = '65';
-        $respuesta_5 = '78';
-        $respuesta_6 = '91';
-        $respuesta_7 = '104';
-        $respuesta_8 = '117';
-        $respuesta_9 = '130';
-        $respuesta_10 = '143';
-        $respuesta_11 = '156';
-        
- 
-        $respuesta_12 = '28';
-        $respuesta_13 = '42';
         $respuesta_14 = '56';
         $respuesta_15 = '70';
         $respuesta_16 = '84';
@@ -166,7 +153,7 @@ if ($_POST) {
 
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '26') {  
+   if ($respuesta_1 === 'Los DTOs son objetos que se utilizan para transferir datos entre diferentes capas de una aplicacion') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -176,7 +163,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === '39') {  
+   if ($respuesta_2 === 'como entre la capa de presentacion y la capa de servicio') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -186,7 +173,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === '52') {  
+   if ($respuesta_3 === 'Su principal objetivo es encapsular los datos y reducir el numero de llamadas a la red o a la base de datos') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -196,7 +183,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === '65') {  
+   if ($respuesta_4 === 'Reduccion de la Carga Util') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -206,7 +193,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === '78') {  
+   if ($respuesta_5 === 'Al enviar solo los datos necesarios') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -216,7 +203,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === '91') {  
+   if ($respuesta_6 === 'se minimiza la cantidad de informacion transferida') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -226,7 +213,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === '104') {  
+   if ($respuesta_7 === 'Desacoplamiento') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -236,7 +223,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === '117') {  
+   if ($respuesta_8 === 'Los DTOs ayudan a desacoplar las capas de la aplicacion') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -246,7 +233,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === '130') {  
+   if ($respuesta_9 === 'permitiendo cambios en una capa sin afectar a las demas') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -256,7 +243,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === '143') {  
+   if ($respuesta_10 === 'Facilidad de Mantenimiento') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -266,7 +253,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === '156') {  
+   if ($respuesta_11 === 'Al tener una estructura clara para los datos, es mas facil realizar cambios y mantener el codigo') {  
        $verificar_11 = "correcto";
    } elseif ($respuesta_11 === '') {
        $verificar_11 = '';
@@ -277,7 +264,7 @@ if ($_POST) {
 
     // Verificar la respuesta de la primera pregunta
     $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-    if ($respuesta_12 === '28') {  
+    if ($respuesta_12 === '@RestController') {  
         $verificar_12 = "correcto";
     } elseif ($respuesta_12 === '') {
         $verificar_12 = '';
@@ -287,7 +274,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la segunda pregunta
     $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-    if ($respuesta_13 === '42') { 
+    if ($respuesta_13 === '@RequestMapping("/api/usuarios")') { 
         $verificar_13 = "correcto";
     } elseif ($respuesta_13 === '') {
         $verificar_13 = '';
@@ -1298,8 +1285,8 @@ if ($respuesta_121 === '144') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="./../style_2_0.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../style_2_0.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
@@ -1589,13 +1576,42 @@ function ocultarMensaje4() {
 </head>
 <body>  
 
-<form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
+<form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
 <div class="form-container">
 
     
 <div class="seccion izquierda"> 
+ 
+    <h4>DTOs (Data Transfer Objects)</h4>
+    <p>
+    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="91">    
+     , 
+    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="51">
+     . 
+    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="98">
+     .</p>
 
- <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="8">
+    <h4>Ventajas de usar DTOs</h4>
+    <li>
+    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="21">    
+     : 
+    <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="29">  
+     , 
+    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="43"> 
+     .</li>
+    <li>
+    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="15">    
+     :
+    <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="51">
+    , 
+    <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="51">
+     .</li>
+    <li>
+    <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="23"> 
+     : 
+    <input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="85"> 
+     .</li>
+
     <button type="submit">Enviar</button> 
     <?php echo $verificar_1 ?>
     <?php echo $verificar_2 ?>
@@ -1608,253 +1624,288 @@ function ocultarMensaje4() {
     <?php echo $verificar_9 ?>
     <?php echo $verificar_10 ?>
     <?php echo $verificar_11 ?> 
-    <?php echo $verificar_12 ?>
-    <?php echo $verificar_13 ?>
-    <?php echo $verificar_14 ?>
-    <?php echo $verificar_15 ?>
-    <?php echo $verificar_16 ?>
-    <?php echo $verificar_17 ?>
-    <?php echo $verificar_18 ?>
-    <?php echo $verificar_19 ?> 
-    <?php echo $verificar_20 ?>
-    <?php echo $verificar_21 ?>
-    <?php echo $verificar_22 ?>
-    <?php echo $verificar_23 ?>
-    <?php echo $verificar_24 ?>
-    <?php echo $verificar_25 ?>
-    <?php echo $verificar_26 ?>
-    <?php echo $verificar_27 ?>
-    <?php echo $verificar_28 ?>
-    <?php echo $verificar_29 ?>
-    <?php echo $verificar_30 ?>
-    <?php echo $verificar_31 ?>
-    <?php echo $verificar_32 ?>
-    <?php echo $verificar_33 ?>
-    <?php echo $verificar_34 ?>
-    <?php echo $verificar_35 ?>
-    <?php echo $verificar_36 ?>
-    <?php echo $verificar_37 ?>
-    <?php echo $verificar_38 ?>
-    <?php echo $verificar_39 ?>
-    <?php echo $verificar_40 ?>
-    <?php echo $verificar_41 ?>
-
-
-    <?php echo $verificar_42 ?>
-    <?php echo $verificar_43 ?>
-    <?php echo $verificar_44 ?>  
-    <?php echo $verificar_45 ?>
-    <?php echo $verificar_46 ?>
-    <?php echo $verificar_47 ?>
-    <?php echo $verificar_48 ?>
-    <?php echo $verificar_49 ?>
-    <?php echo $verificar_50 ?>
-    <?php echo $verificar_51 ?>
-    <?php echo $verificar_52 ?>
-    <?php echo $verificar_53 ?>
-    <?php echo $verificar_54 ?>
-    <?php echo $verificar_55 ?>
-
-
-
-    <?php echo $verificar_56 ?>
-    <?php echo $verificar_57 ?>
-    <?php echo $verificar_58 ?>
-    <?php echo $verificar_59 ?>
-    <?php echo $verificar_60 ?>
-    <?php echo $verificar_61 ?>
-    <?php echo $verificar_62 ?>
-    <?php echo $verificar_63 ?>
-    <?php echo $verificar_64 ?>
-    <?php echo $verificar_65 ?>
-    <?php echo $verificar_66 ?>
-
-    <?php echo $verificar_67 ?>
-<?php echo $verificar_68 ?>
-<?php echo $verificar_69 ?>
-<?php echo $verificar_70 ?>
-<?php echo $verificar_71 ?>
-<?php echo $verificar_72 ?>
-<?php echo $verificar_73 ?>
-<?php echo $verificar_74 ?>
-<?php echo $verificar_75 ?>
-<?php echo $verificar_76 ?>
-<?php echo $verificar_77 ?>
-<?php echo $verificar_78 ?>
-<?php echo $verificar_79 ?>
-<?php echo $verificar_80 ?>
-<?php echo $verificar_81 ?>
-<?php echo $verificar_82 ?>
-<?php echo $verificar_83 ?>
-<?php echo $verificar_84 ?>
-<?php echo $verificar_85 ?>
-<?php echo $verificar_86 ?>
-<?php echo $verificar_87 ?>
-<?php echo $verificar_88 ?>
-<?php echo $verificar_89 ?>
-<?php echo $verificar_90 ?>
-<?php echo $verificar_91 ?>
-<?php echo $verificar_92 ?>
-<?php echo $verificar_93 ?>
-<?php echo $verificar_94 ?>
-<?php echo $verificar_95 ?>
-<?php echo $verificar_96 ?>
-<?php echo $verificar_97 ?>
-<?php echo $verificar_98 ?>
-<?php echo $verificar_99 ?>
-<?php echo $verificar_100 ?>
-<?php echo $verificar_101 ?>
-<?php echo $verificar_102 ?>
-<?php echo $verificar_103 ?>
-<?php echo $verificar_104 ?>
-<?php echo $verificar_105 ?>
-<?php echo $verificar_106 ?>
-<?php echo $verificar_107 ?>
-<?php echo $verificar_108 ?>
-<?php echo $verificar_109 ?>
-<?php echo $verificar_110 ?>
-<?php echo $verificar_111 ?>
-<?php echo $verificar_112 ?>
-<?php echo $verificar_113 ?>
-<?php echo $verificar_114 ?>
-<?php echo $verificar_115 ?>
-<?php echo $verificar_116 ?>
-<?php echo $verificar_117 ?>
-<?php echo $verificar_118 ?>
-<?php echo $verificar_119 ?>
-<?php echo $verificar_120 ?>
-<?php echo $verificar_121 ?>
-<?php echo $verificar_122 ?>
-<?php echo $verificar_123 ?>
-<?php echo $verificar_124 ?>
-<?php echo $verificar_125 ?>
-<?php echo $verificar_126 ?>
-<?php echo $verificar_127 ?>
-<?php echo $verificar_128 ?>
-<?php echo $verificar_129 ?>
-<?php echo $verificar_130 ?>
-<?php echo $verificar_131 ?>
-<?php echo $verificar_132 ?>
-<?php echo $verificar_133 ?>
-    <br><br><br>
-
-  
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_23 ?>
-    <?php echo $verificar_24 ?>
-    <?php echo $verificar_25 ?>
-    <?php echo $verificar_26 ?>
-    <?php echo $verificar_27 ?>
-    <?php echo $verificar_28 ?>
-    <?php echo $verificar_29 ?>
-    <?php echo $verificar_30 ?>
-    <?php echo $verificar_31 ?>
-    <?php echo $verificar_32 ?>
-    <?php echo $verificar_33 ?>
-
- 
-   
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_34 ?>
-    <?php echo $verificar_35 ?>
-    <?php echo $verificar_36 ?>
-    <?php echo $verificar_37 ?>
-    <?php echo $verificar_38 ?>
-    <?php echo $verificar_39 ?>
-    <?php echo $verificar_40 ?>
-    <?php echo $verificar_41 ?>
-    <?php echo $verificar_42 ?>
-    <?php echo $verificar_43 ?>
-    <?php echo $verificar_44 ?>
-            <br><br><br>
-
+    <hr>
     
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_45 ?>
-    <?php echo $verificar_46 ?>
-    <?php echo $verificar_47 ?>
-    <?php echo $verificar_48 ?>
-    <?php echo $verificar_49 ?>
-    <?php echo $verificar_50 ?>
-    <?php echo $verificar_51 ?>
-    <?php echo $verificar_52 ?>
-    <?php echo $verificar_53 ?>
-    <?php echo $verificar_54 ?>
-    <?php echo $verificar_55 ?>
-   
+   <h4>Ejemplo de un DTO</h4>
+   <code>
+    <pre>
+    public class UsuarioDTO {
+        private Long id;
+        private String nombre;
+        private String email;
+
+        // Getters y Setters
+    }
+    </pre>
+   </code>
+
+   <h4>Uso de DTOs en un Controlador</h4>
+   <code>
+    <pre>
+    <input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="16">
+    <input type="text" name="respuesta_13" value="<?php echo htmlspecialchars($respuesta_13 ?? '', ENT_QUOTES); ?>" size="37">
+    public class UsuarioController {
+
+        @GetMapping("/{id}")
+        public ResponseEntity<UsuarioDTO> obtenerUsuario(@PathVariable Long id) {
+            UsuarioDTO usuario = new UsuarioDTO();
+            usuario.setId(id);
+            usuario.setNombre("Juan");
+            usuario.setEmail("juan@example.com");
+            return ResponseEntity.ok(usuario);
+        }
+    }
+    </pre>
+   </code>
+
+   <h4>Creación de DTOs abstractos</h4>
+    <p>En algunos casos, puede ser útil crear DTOs abstractos para definir una estructura base que otros 
+    DTOs pueden extender. Esto es especialmente útil cuando varios DTOs comparten atributos comunes.</p>
+    <code>
+    <pre>
+    public abstract class PersonaDTO {
+        private String nombre;
+        private String email;
+
+        // Getters y Setters
+    }
+
+    public class EmpleadoDTO extends PersonaDTO {
+        private String puesto;
+        private Double salario;
+
+        // Getters y Setters
+    }
+    </pre>
+    </code>
+
+    <p>¿Por qué es una clase abstracta? Porque no queremos que se instancien objetos de PersonaDTO directamente, 
+    sino que sirva como base para otros DTOs más específicos como EmpleadoDTO.</p>
+
+    <h4>MapStruct</h4>
+    <p>MapStruct es una herramienta que permite la conversión automática entre entidades y DTOs, generando el código 
+    necesario en tiempo de compilación. Esto ayuda a evitar la escritura manual de métodos de mapeo y reduce errores.</p>
+
+    <h4>¿Cómo funciona MapStruct?</h4>
+    <p>MapStruct utiliza interfaces anotadas con @Mapper para definir los métodos de conversión entre objetos. A partir 
+    de estas interfaces, MapStruct genera implementaciones concretas que realizan el mapeo de atributos, incluso 
+    permitiendo personalizar los nombres de los campos y el uso de otros mappers.</p>
+
+    <h4>Dependencias para utilizar MapStruc</h4>
+    <p>Para usar MapStruct en un proyecto Maven, debes agregar las siguientes dependencias en tu pom.xml:</p>
+    
+    <img src="../../img/guia_419.png" alt="">
+
+    <p>Te explico aquí que la dependencia jackson-datatype-jsr310 es útil si estás trabajando con tipos de datos de Java 8 
+    como LocalDate o LocalDateTime, ya que facilita su serialización y deserialización con Jackson.</p>
+
+    <p>Y también debes configurar el plugin del compilador para que MapStruct pueda generar el código durante la compilación:</p>
+
+     <img src="../../img/guia_420.png" alt="">
+    <br><br>
+     <h4>Capacidades principales</h4>
+     <li>Mapeo automático de atributos con el mismo nombre.</li>
+     <li>Personalización de mapeos usando la anotación @Mapping.</li>
+     <li>Soporte para mapeo de colecciones y objetos anidados.</li>
+     <li>Integración con frameworks como Spring.</li>
+
+     <h4>Ejemplo básico</h4>
+
+    <code>
+    <pre>
+    @Mapper
+    public interface UsuarioMapper {
+        UsuarioMapper INSTANCE = Mappers.getMapper(UsuarioMapper.class);
+
+        UsuarioDTO usuarioToUsuarioDTO(Usuario usuario);
+        Usuario usuarioDTOToUsuario(UsuarioDTO usuarioDTO);
+    }
+    </pre>
+    </code>
+
+    <h4>Ejemplo avanzado con mapeo personalizado y uso de otros mappers</h4>
+    <p>Supongamos que tienes una entidad Project con una lista de tareas (Task). Puedes usar MapStruct para mapear estos 
+    objetos y sus relaciones:</p>
+<code>
+<pre>
+@Mapper(componentModel = "spring", uses = {TaskMapper.class})
+public interface ProjectMapper {
+
+    @Mappings({
+        @Mapping(source = "id", target = "id"),
+        @Mapping(source = "name", target = "nombreCambiado"),
+        @Mapping(source = "tasks", target = "tasks"),
+    })
+    ProjectOutDTO toProjectOutDTO(Project project);
+}
+
+@Mapper(componentModel = "spring")
+public interface TaskMapper {
+
+    @Mappings({
+        @Mapping(source = "id", target = "id"),
+        @Mapping(source = "name", target = "name"),
+        @Mapping(source = "description", target = "description"),
+        @Mapping(source = "dateCreated", target = "dateCreated"),
+        @Mapping(source = "dueDate", target = "dueDate"),
+        @Mapping(source = "status", target = "status")
+    })
+    TaskOutDTO toTaskOutDTO(Task task);
+}
+</pre>
+</code>
+
+    <p>En este ejemplo, ProjectMapper utiliza TaskMapper para convertir la lista de tareas asociadas a un proyecto. Además, 
+    puedes personalizar el nombre de los atributos de destino, como en el caso de name a nombreCambiado.</p>
+
+    <h4>Beneficios de MapStruct</h4>
+    <li>Elimina código repetitivo de mapeo.</li>
+    <li>Facilita el mantenimiento y la evolución de los DTOs y entidades.</li>
+    <li>Permite mapeos complejos y personalizados de manera sencilla.</li>
+    <li>Se integra fácilmente con Spring y otros frameworks.</li>
 </div>
 
 
 
 
 <div class="seccion derecha">
-    
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_56 ?>
-    <?php echo $verificar_57 ?>
-    <?php echo $verificar_58 ?>
-    <?php echo $verificar_59 ?>
-    <?php echo $verificar_60 ?>
-    <?php echo $verificar_61 ?>
-    <?php echo $verificar_62 ?>
-    <?php echo $verificar_63 ?>
-    <?php echo $verificar_64 ?>
-    <?php echo $verificar_65 ?>
-    <?php echo $verificar_66 ?>
- 
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_67 ?>
-    <?php echo $verificar_68 ?>
-    <?php echo $verificar_69 ?>
-    <?php echo $verificar_70 ?>
-    <?php echo $verificar_71 ?>
-    <?php echo $verificar_72 ?>
-    <?php echo $verificar_73 ?>
-    <?php echo $verificar_74 ?>
-    <?php echo $verificar_75 ?>
-    <?php echo $verificar_76 ?>
-    <?php echo $verificar_77 ?>
- 
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_78 ?>
-    <?php echo $verificar_79 ?>
-    <?php echo $verificar_80 ?> 
-    <?php echo $verificar_81 ?>
-    <?php echo $verificar_82 ?>
-    <?php echo $verificar_83 ?>
-    <?php echo $verificar_84 ?>
-    <?php echo $verificar_85 ?>
-    <?php echo $verificar_86 ?>
-    <?php echo $verificar_87 ?>
-    <?php echo $verificar_88 ?>
- 
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_89 ?>
-    <?php echo $verificar_90 ?>
-    <?php echo $verificar_91 ?>
-    <?php echo $verificar_92 ?>
-    <?php echo $verificar_93 ?>
-    <?php echo $verificar_94 ?>
-    <?php echo $verificar_95 ?>
-    <?php echo $verificar_96 ?>
-    <?php echo $verificar_97 ?>
-    <?php echo $verificar_98 ?> 
-    <?php echo $verificar_99 ?>
- 
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_100 ?>
-    <?php echo $verificar_101 ?>
-    <?php echo $verificar_102 ?>
-    <?php echo $verificar_103 ?>
-    <?php echo $verificar_104 ?>
-    <?php echo $verificar_105 ?>
-    <?php echo $verificar_106 ?>
-    <?php echo $verificar_107 ?>
-    <?php echo $verificar_108 ?>
-    <?php echo $verificar_109 ?>
-    <?php echo $verificar_110 ?>
-    <br><br><br>
- 
+    <p>codigo de week 11 - RestController</p>
+<code>
+<pre>
+ @RestController
+@RequestMapping("/rest/public/games")
+@RequiredArgsConstructor
+public class GameController {
+
+    private final GameService gameService;
+    private final UserService userService;
+
+    @GetMapping
+    public ResponseEntity<List<GamesResponse>> findAll(@RequestParam(required = false) String name) {
+        List<Game> games = gameService.findAll();
+        List<GamesResponse> gamesResponses = games.stream()
+                .map(GamesResponse::toDto)
+                .toList();
+        return ResponseEntity.status(HttpStatus.OK).body(gamesResponses);
+    }
+
+    @GetMapping("/{id}") // PathVariable
+    public ResponseEntity<?> findById(@PathVariable Long id) {
+        try {
+            Game game = gameService.findById(id);
+            GamesResponse gamesResponse = new GamesResponse(
+                    game.getId(),
+                    game.getName(),
+                    game.getDescription());
+            return ResponseEntity.status(HttpStatus.OK).body(gamesResponse);
+        } catch (EntityNotFoundException e) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+        }
+    }
+
+    @PostMapping
+    public ResponseEntity<GamesResponse> create(@RequestBody GameRequest gameRequest) {
+        try {
+            User userFound = userService.findById(gameRequest.getUserId());
+            Game newGame = new Game();
+            newGame.setUser(userFound);
+            newGame.setName(gameRequest.getName());
+            newGame.setDescription(gameRequest.getDescription());
+            newGame.setMinPlayers(gameRequest.getMinPlayers());
+            newGame.setMaxPlayers(gameRequest.getMaximoJugadores());
+            newGame.setCategory(gameRequest.getCategory());
+            Game gameSaved = gameService.save(newGame);
+
+            GamesResponse gamesResponse = new GamesResponse(gameSaved.getId(), gameSaved.getName(),
+                    gameSaved.getDescription());
+
+            return ResponseEntity.status(HttpStatus.CREATED).body(gamesResponse);
+        } catch (EntityNotFoundException e) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+        }
+
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<GamesResponse> update(@PathVariable Long id, @RequestBody GameRequest gameRequest) {
+        try {
+            User userFound = userService.findById(gameRequest.getUserId());
+            Game gameToUpdate = gameService.findById(id);
+            gameToUpdate.setUser(userFound);
+            gameToUpdate.setName(gameRequest.getName());
+            gameToUpdate.setDescription(gameRequest.getDescription());
+            gameToUpdate.setMinPlayers(gameRequest.getMinPlayers());
+            gameToUpdate.setMaxPlayers(gameRequest.getMaximoJugadores());
+            gameToUpdate.setCategory(gameRequest.getCategory());
+
+            Game gameUpdated = gameService.save(gameToUpdate);
+            GamesResponse gamesResponse = new GamesResponse(
+                    gameUpdated.getId(),
+                    gameUpdated.getName(),
+                    gameUpdated.getDescription());
+
+            return ResponseEntity.status(HttpStatus.OK).body(gamesResponse);
+        } catch (EntityNotFoundException e) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+        }
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> delete(@PathVariable Long id) {
+        try {
+            gameService.deleteById(id);
+            return ResponseEntity.noContent().build();
+        } catch (EntityNotFoundException e) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+        }
+    }
+
+</pre>
+</code>
+ y:
+
+ <code>
+<pre>
+
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class GamesResponse {
+
+    private Long id;
+    private String name;
+    private String description;
+
+    public static GamesResponse toDto(Game game) {
+        return new GamesResponse(
+                game.getId(),
+                game.getName(),
+                game.getDescription());
+    }
+}
+
+
+</pre>
+ </code>
+
+ con:
+
+ <code>
+<pre>
+@Data
+public class GameRequest {
+
+    private String name;
+    private String description;
+    private Integer minPlayers;
+    private Integer maximoJugadores;
+    private String category;
+    private Long userId;
+}
+</pre>
+
+ </code>
     <hr>
     <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
     <br>
@@ -1869,7 +1920,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="segundo.php"
+        href="cuarto.php"
         role="button"
         width="50px"
         height="50px"

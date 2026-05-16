@@ -31,14 +31,14 @@ if ($_POST) {
         $respuesta_121 = '144';
         
  
-        $respuesta_1 = '26';
-        $respuesta_2 = '39';
-        $respuesta_3 = '52';
-        $respuesta_4 = '65';
-        $respuesta_5 = '78';
-        $respuesta_6 = '91';
-        $respuesta_7 = '104';
-        $respuesta_8 = '117';
+    $respuesta_1 = 'JSON Web Token';
+    $respuesta_2 = 'es un estandar abierto';
+    $respuesta_3 = 'RFC 7519';
+    $respuesta_4 = 'que define un formato compacto y autonomo para transmitir informacion de forma segura entre las partes como un objeto JSON';
+    $respuesta_5 = 'Esta informacion puede ser verificada y confiable porque esta firmada digitalmente';
+    $respuesta_6 = 'JWT se puede firmar utilizando un secreto';
+    $respuesta_7 = 'con el algoritmo HMAC';
+    $respuesta_8 = 'o un par de claves publica/privada utilizando RSA o ECDSA';
         $respuesta_9 = '130';
         $respuesta_10 = '143';
         $respuesta_11 = '156';
@@ -166,7 +166,7 @@ if ($_POST) {
 
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '26') {  
+   if ($respuesta_1 === 'JSON Web Token') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -176,7 +176,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === '39') {  
+   if ($respuesta_2 === 'es un estandar abierto') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -186,7 +186,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === '52') {  
+   if ($respuesta_3 === 'RFC 7519') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -196,7 +196,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === '65') {  
+   if ($respuesta_4 === 'que define un formato compacto y autonomo para transmitir informacion de forma segura entre las partes como un objeto JSON') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -206,7 +206,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === '78') {  
+   if ($respuesta_5 === 'Esta informacion puede ser verificada y confiable porque esta firmada digitalmente') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -216,7 +216,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === '91') {  
+   if ($respuesta_6 === 'JWT se puede firmar utilizando un secreto') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -226,7 +226,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === '104') {  
+   if ($respuesta_7 === 'con el algoritmo HMAC') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -236,7 +236,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === '117') {  
+   if ($respuesta_8 === 'o un par de claves publica/privada utilizando RSA o ECDSA') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -1298,8 +1298,8 @@ if ($respuesta_121 === '144') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="./../style_2_0.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../style_2_0.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
@@ -1589,273 +1589,248 @@ function ocultarMensaje4() {
 </head>
 <body>  
 
-<form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
+<form action="./cuarto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
 <div class="form-container">
 
     
 <div class="seccion izquierda"> 
+    <h4>1. ¿Qué es JWT?</h4>
+    <p>JWT (
+    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="15">    
+     ) 
+    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="19">
+      (
+    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="8">    
+     ) 
+    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="122">
+     . 
+    <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="75">
+     .
+    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="38"> 
+      (
+    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="18">    
+     ) 
+    <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="55"> 
+     .</p>
+    
+    <p>JWT se utiliza comúnmente para la autenticación y autorización en aplicaciones web y móviles. Permite 
+    a los servidores generar tokens que pueden ser enviados al cliente y luego utilizados para autenticar 
+    solicitudes posteriores. Esto elimina la necesidad de enviar credenciales de usuario en cada solicitud, 
+    lo que mejora la seguridad y la eficiencia.</p>
 
- <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="8">
-    <button type="submit">Enviar</button> 
-    <?php echo $verificar_1 ?>
-    <?php echo $verificar_2 ?>
-    <?php echo $verificar_3 ?>
-    <?php echo $verificar_4 ?>
-    <?php echo $verificar_5 ?>
-    <?php echo $verificar_6 ?>
-    <?php echo $verificar_7 ?>  
-    <?php echo $verificar_8 ?>
-    <?php echo $verificar_9 ?>
-    <?php echo $verificar_10 ?>
-    <?php echo $verificar_11 ?> 
-    <?php echo $verificar_12 ?>
-    <?php echo $verificar_13 ?>
-    <?php echo $verificar_14 ?>
-    <?php echo $verificar_15 ?>
-    <?php echo $verificar_16 ?>
-    <?php echo $verificar_17 ?>
-    <?php echo $verificar_18 ?>
-    <?php echo $verificar_19 ?> 
-    <?php echo $verificar_20 ?>
-    <?php echo $verificar_21 ?>
-    <?php echo $verificar_22 ?>
-    <?php echo $verificar_23 ?>
-    <?php echo $verificar_24 ?>
-    <?php echo $verificar_25 ?>
-    <?php echo $verificar_26 ?>
-    <?php echo $verificar_27 ?>
-    <?php echo $verificar_28 ?>
-    <?php echo $verificar_29 ?>
-    <?php echo $verificar_30 ?>
-    <?php echo $verificar_31 ?>
-    <?php echo $verificar_32 ?>
-    <?php echo $verificar_33 ?>
-    <?php echo $verificar_34 ?>
-    <?php echo $verificar_35 ?>
-    <?php echo $verificar_36 ?>
-    <?php echo $verificar_37 ?>
-    <?php echo $verificar_38 ?>
-    <?php echo $verificar_39 ?>
-    <?php echo $verificar_40 ?>
-    <?php echo $verificar_41 ?>
+    <h5>2. ¿Por qué usar JWT?</h5>
+    <li>Autenticación: JWT es una forma de autenticar a los usuarios en una aplicación. Una vez que el usuario 
+    inicia sesión, el servidor genera un token JWT y lo envía al cliente. El cliente almacena este token y lo 
+    envía en cada solicitud posterior para acceder a recursos protegidos.</li>
 
+    <li>Autorización: JWT también se utiliza para autorizar el acceso a recursos específicos. El token puede 
+    contener información sobre los permisos del usuario, lo que permite al servidor verificar si el usuario 
+    tiene acceso a un recurso determinado.</li>
 
-    <?php echo $verificar_42 ?>
-    <?php echo $verificar_43 ?>
-    <?php echo $verificar_44 ?>  
-    <?php echo $verificar_45 ?>
-    <?php echo $verificar_46 ?>
-    <?php echo $verificar_47 ?>
-    <?php echo $verificar_48 ?>
-    <?php echo $verificar_49 ?>
-    <?php echo $verificar_50 ?>
-    <?php echo $verificar_51 ?>
-    <?php echo $verificar_52 ?>
-    <?php echo $verificar_53 ?>
-    <?php echo $verificar_54 ?>
-    <?php echo $verificar_55 ?>
+    <li>Interoperabilidad: JWT es un estándar abierto y se puede utilizar en diferentes plataformas y lenguajes de 
+    programación. Esto facilita la integración entre diferentes sistemas y aplicaciones.</li>
 
+    <li>Compacto: JWT es un formato compacto que se puede enviar a través de URL, encabezados HTTP o en el cuerpo 
+    de una solicitud. Esto lo hace ideal para aplicaciones móviles y web donde el tamaño del token es importante.</li>
 
+    <li>Autónomo: JWT es autónomo, lo que significa que contiene toda la información necesaria para verificar su validez. 
+    Esto reduce la necesidad de realizar consultas a una base de datos para verificar la autenticidad del token.</li>
 
-    <?php echo $verificar_56 ?>
-    <?php echo $verificar_57 ?>
-    <?php echo $verificar_58 ?>
-    <?php echo $verificar_59 ?>
-    <?php echo $verificar_60 ?>
-    <?php echo $verificar_61 ?>
-    <?php echo $verificar_62 ?>
-    <?php echo $verificar_63 ?>
-    <?php echo $verificar_64 ?>
-    <?php echo $verificar_65 ?>
-    <?php echo $verificar_66 ?>
+    <h4>3. Partes de un token JWT</h4>
 
-    <?php echo $verificar_67 ?>
-<?php echo $verificar_68 ?>
-<?php echo $verificar_69 ?>
-<?php echo $verificar_70 ?>
-<?php echo $verificar_71 ?>
-<?php echo $verificar_72 ?>
-<?php echo $verificar_73 ?>
-<?php echo $verificar_74 ?>
-<?php echo $verificar_75 ?>
-<?php echo $verificar_76 ?>
-<?php echo $verificar_77 ?>
-<?php echo $verificar_78 ?>
-<?php echo $verificar_79 ?>
-<?php echo $verificar_80 ?>
-<?php echo $verificar_81 ?>
-<?php echo $verificar_82 ?>
-<?php echo $verificar_83 ?>
-<?php echo $verificar_84 ?>
-<?php echo $verificar_85 ?>
-<?php echo $verificar_86 ?>
-<?php echo $verificar_87 ?>
-<?php echo $verificar_88 ?>
-<?php echo $verificar_89 ?>
-<?php echo $verificar_90 ?>
-<?php echo $verificar_91 ?>
-<?php echo $verificar_92 ?>
-<?php echo $verificar_93 ?>
-<?php echo $verificar_94 ?>
-<?php echo $verificar_95 ?>
-<?php echo $verificar_96 ?>
-<?php echo $verificar_97 ?>
-<?php echo $verificar_98 ?>
-<?php echo $verificar_99 ?>
-<?php echo $verificar_100 ?>
-<?php echo $verificar_101 ?>
-<?php echo $verificar_102 ?>
-<?php echo $verificar_103 ?>
-<?php echo $verificar_104 ?>
-<?php echo $verificar_105 ?>
-<?php echo $verificar_106 ?>
-<?php echo $verificar_107 ?>
-<?php echo $verificar_108 ?>
-<?php echo $verificar_109 ?>
-<?php echo $verificar_110 ?>
-<?php echo $verificar_111 ?>
-<?php echo $verificar_112 ?>
-<?php echo $verificar_113 ?>
-<?php echo $verificar_114 ?>
-<?php echo $verificar_115 ?>
-<?php echo $verificar_116 ?>
-<?php echo $verificar_117 ?>
-<?php echo $verificar_118 ?>
-<?php echo $verificar_119 ?>
-<?php echo $verificar_120 ?>
-<?php echo $verificar_121 ?>
-<?php echo $verificar_122 ?>
-<?php echo $verificar_123 ?>
-<?php echo $verificar_124 ?>
-<?php echo $verificar_125 ?>
-<?php echo $verificar_126 ?>
-<?php echo $verificar_127 ?>
-<?php echo $verificar_128 ?>
-<?php echo $verificar_129 ?>
-<?php echo $verificar_130 ?>
-<?php echo $verificar_131 ?>
-<?php echo $verificar_132 ?>
-<?php echo $verificar_133 ?>
-    <br><br><br>
+    <p>Un token JWT consta de tres partes separadas por puntos (.):</p>
+    
+    <ul>
+    <li>
+        <strong>Header (Encabezado):</strong> El encabezado generalmente consta de dos partes: 
+        el tipo de token, que es JWT, y el algoritmo de firma que se utiliza, como HMAC SHA256 o RSA.
+    </li>
 
-  
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_23 ?>
-    <?php echo $verificar_24 ?>
-    <?php echo $verificar_25 ?>
-    <?php echo $verificar_26 ?>
-    <?php echo $verificar_27 ?>
-    <?php echo $verificar_28 ?>
-    <?php echo $verificar_29 ?>
-    <?php echo $verificar_30 ?>
-    <?php echo $verificar_31 ?>
-    <?php echo $verificar_32 ?>
-    <?php echo $verificar_33 ?>
+    <li>
+        <strong>Payload (Carga útil):</strong> La carga útil contiene las afirmaciones (claims) 
+        que son declaraciones sobre una entidad (generalmente, el usuario) y datos adicionales. 
+        Existen tres tipos de afirmaciones:
+        
+        <ul>
+            <li>
+                <em>Registered claims:</em> Son un conjunto de afirmaciones predefinidas que no son obligatorias 
+                pero recomendadas, como <code>iss</code> (emisor), <code>exp</code> (fecha de expiración), 
+                <code>sub</code> (sujeto), etc.
+            </li>
+
+            <li>
+                <em>Public claims:</em> Son afirmaciones definidas por los usuarios que pueden ser utilizadas 
+                por diferentes partes. Para evitar colisiones, deben ser definidas en el IANA JSON Web Token 
+                Registry o ser definidas como un URI.
+            </li>
+
+            <li>
+                <em>Private claims:</em> Son afirmaciones personalizadas creadas para compartir información 
+                entre partes que acuerdan usarlas.
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <strong>Signature (Firma):</strong> Para crear la firma, tomamos el encabezado codificado en Base64Url 
+        y la carga útil codificada en Base64Url, los unimos con un punto (.) y firmamos el resultado utilizando 
+        el algoritmo especificado en el encabezado y una clave secreta. La firma se utiliza para verificar que 
+        el remitente del JWT es quien dice ser y para garantizar que el mensaje no haya sido alterado.
+    </li>
+</ul>
+
+<h5>4. Implementación de JWT en Spring Boot</h5>
+<p>Esta guía se enfocará en el proceso de generación y verificación de un accessToken usando JWT, por lo que aspectos 
+de token de refresco no serán tratados en esta guía, sin embargo, su implementación no es complicada y puede ser realizada 
+de forma similar a la implementación del accessToken.</p>
+
+<p>Si deseas comenzar con el proyecto trabajado en este curso, puedes descargarlo por medio de este enlace.</p>
+
+<h5>4.1. Dependencias necesarias</h5>
+
+<p>Las siguientes dependencias son necesarias para la implementación de JWT en Spring Boot:</p>
+
+<pre><code>
+&lt;dependency&gt;
+    &lt;groupId&gt;io.jsonwebtoken&lt;/groupId&gt;
+    &lt;artifactId&gt;jjwt-api&lt;/artifactId&gt;
+    &lt;version&gt;0.12.3&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;io.jsonwebtoken&lt;/groupId&gt;
+    &lt;artifactId&gt;jjwt-impl&lt;/artifactId&gt;
+    &lt;version&gt;0.12.6&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;io.jsonwebtoken&lt;/groupId&gt;
+    &lt;artifactId&gt;jjwt-jackson&lt;/artifactId&gt;
+    &lt;version&gt;0.12.6&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+
+<p>Recuerda que si deseas instalar dichas dependencias 
+en el contexto de Maven puedes hacerlo por medio de la siguiente línea de comandos:</p>
+
+<pre>mvn clean install</pre>
+
+<h5>4.2. Adición de variables de entorno propias de JWT</h5>
+
+<p>Para la implementación de JWT es necesario contar con una clave secreta, la cual será utilizada 
+para la firma del token. Adicionalmente, es recomendable contar con un tiempo de expiración para el token, 
+el cual puede ser configurado en milisegundos. Para esto, se recomienda crear un archivo application.properties 
+o application.yml en la carpeta src/main/resources y agregar las siguientes propiedades:</p>
+
+<pre><code>
+### JWT example
+app.security.jwt.secret-key = mySecretKey
+# 1 Day
+app.security.jwt.expiration-time = 86400000
+</code></pre>
 
  
-   
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_34 ?>
-    <?php echo $verificar_35 ?>
-    <?php echo $verificar_36 ?>
-    <?php echo $verificar_37 ?>
-    <?php echo $verificar_38 ?>
-    <?php echo $verificar_39 ?>
-    <?php echo $verificar_40 ?>
-    <?php echo $verificar_41 ?>
-    <?php echo $verificar_42 ?>
-    <?php echo $verificar_43 ?>
-    <?php echo $verificar_44 ?>
-            <br><br><br>
-
-    
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_45 ?>
-    <?php echo $verificar_46 ?>
-    <?php echo $verificar_47 ?>
-    <?php echo $verificar_48 ?>
-    <?php echo $verificar_49 ?>
-    <?php echo $verificar_50 ?>
-    <?php echo $verificar_51 ?>
-    <?php echo $verificar_52 ?>
-    <?php echo $verificar_53 ?>
-    <?php echo $verificar_54 ?>
-    <?php echo $verificar_55 ?>
-   
 </div>
 
 
 
 
 <div class="seccion derecha">
-    
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_56 ?>
-    <?php echo $verificar_57 ?>
-    <?php echo $verificar_58 ?>
-    <?php echo $verificar_59 ?>
-    <?php echo $verificar_60 ?>
-    <?php echo $verificar_61 ?>
-    <?php echo $verificar_62 ?>
-    <?php echo $verificar_63 ?>
-    <?php echo $verificar_64 ?>
-    <?php echo $verificar_65 ?>
-    <?php echo $verificar_66 ?>
- 
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_67 ?>
-    <?php echo $verificar_68 ?>
-    <?php echo $verificar_69 ?>
-    <?php echo $verificar_70 ?>
-    <?php echo $verificar_71 ?>
-    <?php echo $verificar_72 ?>
-    <?php echo $verificar_73 ?>
-    <?php echo $verificar_74 ?>
-    <?php echo $verificar_75 ?>
-    <?php echo $verificar_76 ?>
-    <?php echo $verificar_77 ?>
- 
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_78 ?>
-    <?php echo $verificar_79 ?>
-    <?php echo $verificar_80 ?> 
-    <?php echo $verificar_81 ?>
-    <?php echo $verificar_82 ?>
-    <?php echo $verificar_83 ?>
-    <?php echo $verificar_84 ?>
-    <?php echo $verificar_85 ?>
-    <?php echo $verificar_86 ?>
-    <?php echo $verificar_87 ?>
-    <?php echo $verificar_88 ?>
- 
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_89 ?>
-    <?php echo $verificar_90 ?>
-    <?php echo $verificar_91 ?>
-    <?php echo $verificar_92 ?>
-    <?php echo $verificar_93 ?>
-    <?php echo $verificar_94 ?>
-    <?php echo $verificar_95 ?>
-    <?php echo $verificar_96 ?>
-    <?php echo $verificar_97 ?>
-    <?php echo $verificar_98 ?> 
-    <?php echo $verificar_99 ?>
- 
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_100 ?>
-    <?php echo $verificar_101 ?>
-    <?php echo $verificar_102 ?>
-    <?php echo $verificar_103 ?>
-    <?php echo $verificar_104 ?>
-    <?php echo $verificar_105 ?>
-    <?php echo $verificar_106 ?>
-    <?php echo $verificar_107 ?>
-    <?php echo $verificar_108 ?>
-    <?php echo $verificar_109 ?>
-    <?php echo $verificar_110 ?>
-    <br><br><br>
+     <h5>4.3 Modificación de la clase SecurityConfig</h5>
+
+<p>Vamos a agregar nuevas reglas de seguridad en la cadena de filtros de Spring Security, para esto, es necesario 
+modificar la clase SecurityConfig que se encuentra en el paquete config. La clase debe quedar de la siguiente manera:</p>
+
+<pre>
+<code>
+@Configuration
+@EnableMethodSecurity
+public class WebSecurityConfig {
+
+    @Bean
+    public CustomAuthenticationFilter customAuthenticationFilter() {
+        return new CustomAuthenticationFilter();
+    }
+
+    @Bean
+    public UserDetailsService userDetailsService() {
+        return new CustomUserDetailsService();
+    }
+
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
+
+    @Bean
+    public JwtAuthenticationFilter jwtAuthenticationFilter() {
+        return new JwtAuthenticationFilter();
+    }
+
+    @Bean
+    @Order(1)
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+        return http
+            .securityMatcher("/mvc/**")
+            .addFilterBefore(customAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class)
+            .authorizeHttpRequests(authz -> authz
+                .requestMatchers("/mvc/public/**").permitAll()
+                .requestMatchers("/mvc/auth/login", "/css/**", "/js/**").permitAll()
+                .requestMatchers("/h2-console/**").permitAll()
+                .anyRequest().authenticated()
+            )
+            .formLogin(form -> form
+                .loginPage("/mvc/auth/login")           // URL personalizada para mostrar login
+                .loginProcessingUrl("/mvc/auth/login")  // URL que procesa el login
+                .defaultSuccessUrl("/mvc/users", true)  // Redirección después del login exitoso
+                .failureUrl("/mvc/auth/login?error")    // Redirección en caso de error
+                .usernameParameter("username") // Nombre del campo username
+                .passwordParameter("password") // Nombre del campo password
+                .permitAll()
+            )
+            .logout(logout -> logout
+                .logoutUrl("/logout")
+                .logoutSuccessUrl("/mvc/auth/login?logout")
+                .permitAll()
+            )
+            .build();
+    }
+
+    @Bean
+    @Order(2)
+    public SecurityFilterChain securityRestFilterChain(HttpSecurity http) throws Exception {
+        return http
+                .securityMatcher("/api/**")
+                .csrf(csrf -> csrf.disable())
+                .cors(cors -> cors.configurationSource(corsConfigurationSource()))
+                .addFilterBefore(jwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class)
+                .authorizeHttpRequests(authz -> authz
+                                .requestMatchers("/api/public/**").permitAll()
+                                .requestMatchers("/h2-console/**").permitAll()
+                                .anyRequest().authenticated()
+                )
+                .headers(headers -> headers.frameOptions(frame -> frame.disable())) // Para acceder a H2 Console
+                .sessionManagement(t -> t.sessionCreationPolicy(SessionCreationPolicy.STATELESS)) // No tener sesiones stateful
+                .build();
+    }
+
+    private CorsConfigurationSource corsConfigurationSource() {
+        CorsConfiguration configuration = new CorsConfiguration();
+        configuration.setAllowCredentials(true); // Permitir credenciales, esto significa que las cookies, encabezados de autorización o certificados TLS pueden ser incluidos en las solicitudes
+        configuration.addAllowedOriginPattern("*"); // Permitir cualquier origen
+        configuration.addAllowedHeader("*"); // Permitir cualquier encabezado
+        configuration.addAllowedMethod("*"); // Permitir cualquier método (GET, POST, PUT, DELETE, etc.)
+        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        source.registerCorsConfiguration("/**", configuration);
+        return source;
+    }
+}
+</code>
+</pre>
  
     <hr>
+
+    
     <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
     <br>
     <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
@@ -1869,7 +1844,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="segundo.php"
+        href="quinto.php"
         role="button"
         width="50px"
         height="50px"

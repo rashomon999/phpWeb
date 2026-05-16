@@ -35,6 +35,9 @@
         <a class="btn" href=".\parcial\index.php">Cuestionario parcial 1</a>
         <br><br>
         <a class="btn" href=".\parcial2\index.php">Cuestionario parcial 2</a>
+        <br><br>
+        <a class="btn" href=".\exposicion\index.php">Cuestionario exposicion</a>
+
     </div>
 </body>
 </html>

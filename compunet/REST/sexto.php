@@ -18,146 +18,129 @@ if ($_POST) {
     
     if ($mostrar_solucion === 'mostrar_solucion') {        
  
-        $respuesta_111 = '24'; 
-        $respuesta_112 = '36';
-        $respuesta_113 = '48';
-        $respuesta_114 = '60';
-        $respuesta_115 = '72';
-        $respuesta_116 = '84';
-        $respuesta_117 = '96';
-        $respuesta_118 = '108';
-        $respuesta_119 = '120';
-        $respuesta_120 = '132';
-        $respuesta_121 = '144';
-        
- 
-        $respuesta_1 = '26';
-        $respuesta_2 = '39';
-        $respuesta_3 = '52';
-        $respuesta_4 = '65';
-        $respuesta_5 = '78';
-        $respuesta_6 = '91';
-        $respuesta_7 = '104';
-        $respuesta_8 = '117';
-        $respuesta_9 = '130';
-        $respuesta_10 = '143';
-        $respuesta_11 = '156';
-        
- 
-        $respuesta_12 = '28';
-        $respuesta_13 = '42';
-        $respuesta_14 = '56';
-        $respuesta_15 = '70';
-        $respuesta_16 = '84';
-        $respuesta_17 = '98';
-        $respuesta_18 = '112';
-        $respuesta_19 = '126';
-        $respuesta_20 = '140';
-        $respuesta_21 = '154';
-        $respuesta_22 = '168';
-        
- 
-        $respuesta_23 = '30';
-        $respuesta_24 = '45';
-        $respuesta_25 = '60';
-        $respuesta_26 = '75';
-        $respuesta_27 = '90';
-        $respuesta_28 = '105';
-        $respuesta_29 = '120';
-        $respuesta_30 = '135';
-        $respuesta_31 = '150';
-        $respuesta_32 = '165';
-        $respuesta_33 = '180';
-        
- 
-        $respuesta_34 = '32';
-        $respuesta_35 = '48';
-        $respuesta_36 = '64';
-        $respuesta_37 = '80';
-        $respuesta_38 = '96';
-        $respuesta_39 = '112';
-        $respuesta_40 = '128';
-        $respuesta_41 = '144';
-        $respuesta_42 = '160';
-        $respuesta_43 = '176';
-        $respuesta_44 = '192';
-        
- 
-        $respuesta_45 = '34';
-        $respuesta_46 = '51';
-        $respuesta_47 = '68';
-        $respuesta_48 = '85';
-        $respuesta_49 = '102';
-        $respuesta_50 = '119';
-        $respuesta_51 = '136';
-        $respuesta_52 = '153';
-        $respuesta_53 = '170';
-        $respuesta_54 = '187';
-        $respuesta_55 = '204';
-        
- 
-        $respuesta_56 = '36';
-        $respuesta_57 = '54';
-        $respuesta_58 = '72';
-        $respuesta_59 = '90';
-        $respuesta_60 = '108';
-        $respuesta_61 = '126';
-        $respuesta_62 = '144';
-        $respuesta_63 = '162';
-        $respuesta_64 = '180';
-        $respuesta_65 = '198';
-        $respuesta_66 = '216';
-        
- 
-        $respuesta_67 = '38';
-        $respuesta_68 = '57';
-        $respuesta_69 = '76';
-        $respuesta_70 = '95';
-        $respuesta_71 = '114';
-        $respuesta_72 = '133';
-        $respuesta_73 = '152';
-        $respuesta_74 = '171';
-        $respuesta_75 = '190';
-        $respuesta_76 = '209';
-        $respuesta_77 = '228';
-        
- 
-        $respuesta_78 = '40';
-        $respuesta_79 = '60';
-        $respuesta_80 = '80';
-        $respuesta_81 = '100';
-        $respuesta_82 = '120';
-        $respuesta_83 = '140';
-        $respuesta_84 = '160';
-        $respuesta_85 = '180';
-        $respuesta_86 = '200';
-        $respuesta_87 = '220';
-        $respuesta_88 = '240';
-        
- 
-        $respuesta_89 = '42';
-        $respuesta_90 = '63';
-        $respuesta_91 = '84';
-        $respuesta_92 = '105';
-        $respuesta_93 = '126';
-        $respuesta_94 = '147';
-        $respuesta_95 = '168';
-        $respuesta_96 = '189';
-        $respuesta_97 = '210';
-        $respuesta_98 = '231';
-        $respuesta_99 = '252';
-        
-         $respuesta_100 = '44';
-        $respuesta_101 = '66';
-        $respuesta_102 = '88';
-        $respuesta_103 = '110';
-        $respuesta_104 = '132'; 
-        $respuesta_105 = '154';
-        $respuesta_106 = '176';
-        $respuesta_107 = '198';
-        $respuesta_108 = '220';
-        $respuesta_109 = '242';
-        $respuesta_110 = '264';
+    // Preguntas 1-33 (Configuración JWT Filter y Security)
+    $respuesta_1  = '@Bean';
+    $respuesta_2  = 'public JwtAuthenticationFilter jwtAuthenticationFilter()';
+    $respuesta_3  = 'return new JwtAuthenticationFilter();';
+    $respuesta_4  = '@Bean';
+    $respuesta_5  = '@Order(3)';
+    $respuesta_6  = 'public SecurityFilterChain restSecurityFilterChain(HttpSecurity http) throws Exception';
+    $respuesta_7  = 'return http';
+    $respuesta_8  = '.securityMatcher("/rest/**")';
+    $respuesta_9  = '.csrf(csrf -> csrf.disable())';
+    $respuesta_10 = '.addFilterBefore(jwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class)';
+    $respuesta_11 = '.authorizeHttpRequests(authz -> authz';
+    $respuesta_12 = '.requestMatchers("/rest/public/**").permitAll()';
+    $respuesta_13 = '.anyRequest().authenticated())';
+    $respuesta_14 = '.sessionManagement(t -> t.sessionCreationPolicy(SessionCreationPolicy.STATELESS))';
+    $respuesta_15 = '.build();';
+    $respuesta_16 = 'public class JwtAuthenticationFilter extends OncePerRequestFilter';
+    $respuesta_17 = '@Autowired';
+    $respuesta_18 = 'private JwtService jwtService;';
+    $respuesta_19 = '@Override';
+    $respuesta_20 = 'protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)';
+    $respuesta_21 = 'throws ServletException, IOException';
+    $respuesta_22 = 'String authHeader = request.getHeader("Authorization");';
+    $respuesta_23 = 'String token = null;';
+    $respuesta_24 = 'UserDetails username = null;';
+    $respuesta_25 = 'if (authHeader != null && authHeader.startsWith("Bearer "))';
+    $respuesta_26 = 'token = authHeader.substring(7);';
+    $respuesta_27 = 'if (jwtService.isTokenValid(token))';
+    $respuesta_28 = 'username = jwtService.getUserDetailsFromToken(token);';
+    $respuesta_29 = 'UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(username,';
+    $respuesta_30 = 'token, username.getAuthorities());';
+    $respuesta_31 = 'authentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));';
+    $respuesta_32 = 'SecurityContextHolder.getContext().setAuthentication(authentication);';
+    $respuesta_33 = 'filterChain.doFilter(request, response);';
+    
+    // Preguntas 34-50 (JwtService Interface)
+    $respuesta_34 = 'public interface JwtService';
+    $respuesta_35 = 'String generateToken(User user, Authentication authentication);';
+    $respuesta_36 = 'String extractUsername(String token);';
+    $respuesta_37 = 'List<SimpleGrantedAuthority> extractAuthorities(String token);';
+    $respuesta_38 = '<T> T extractClaim(String token, Function<Claims, T> claimsResolver);';
+    $respuesta_39 = 'UserDetails getUserDetailsFromToken(String token);';
+    $respuesta_40 = 'boolean isTokenExpired(String token);';
+    $respuesta_41 = 'boolean isTokenValid(String token);';
+    $respuesta_42 = '@Service';
+    $respuesta_43 = 'public class JwtServiceImpl implements JwtService';
+    $respuesta_44 = '@Value("${app.security.jwt.secret-key}")';
+    $respuesta_45 = 'private String secretKey;';
+    $respuesta_46 = '@Value("${app.security.jwt.expiration-time}")';
+    $respuesta_47 = 'private long expirationTime;';
+    $respuesta_48 = 'private SecretKey getSignInKey()';
+    $respuesta_49 = 'byte[] keyBytes = Decoders.BASE64.decode(secretKey);';
+    $respuesta_50 = 'return Keys.hmacShaKeyFor(keyBytes);';
+    
+    // Preguntas 51-65 (generateToken)
+    $respuesta_51 = '@Override';
+    $respuesta_52 = 'public String generateToken(User user, Authentication auth)';
+    $respuesta_53 = 'return Jwts.builder()';
+    $respuesta_54 = '.id(user.getId().toString())';
+    $respuesta_55 = '.claims(Map.of(';
+    $respuesta_56 = '"username", user.getUsername(),';
+    $respuesta_57 = '"email", user.getEmail(),';
+    $respuesta_58 = '"authorities", auth != null && auth.getAuthorities() != null ? auth.getAuthorities().stream()';
+    $respuesta_59 = '.map(ga -> ga.getAuthority())';
+    $respuesta_60 = '.toList() : List.of()';
+    $respuesta_61 = '.subject(user.getUsername())';
+    $respuesta_62 = '.issuedAt(new Date(System.currentTimeMillis()))';
+    $respuesta_63 = '.expiration(new Date(System.currentTimeMillis() + expirationTime))';
+    $respuesta_64 = '.signWith(getSignInKey())';
+    $respuesta_65 = '.compact();';
+    
+    // Preguntas 66-73 (extractClaim)
+    $respuesta_66 = '@Override';
+    $respuesta_67 = 'public <T> T extractClaim(String token, Function<Claims, T> claimsResolver)';
+    $respuesta_68 = 'Claims claims = Jwts.parser()';
+    $respuesta_69 = '.verifyWith(getSignInKey())';
+    $respuesta_70 = '.build()';
+    $respuesta_71 = '.parseSignedClaims(token)';
+    $respuesta_72 = '.getPayload();';
+    $respuesta_73 = 'return claimsResolver.apply(claims);';
+    
+    // Preguntas 74-76 (extractUsername)
+    $respuesta_74 = '@Override';
+    $respuesta_75 = 'public String extractUsername(String token)';
+    $respuesta_76 = 'return extractClaim(token, Claims::getSubject);';
+    
+    // Preguntas 77-79 (isTokenExpired)
+    $respuesta_77 = '@Override';
+    $respuesta_78 = 'public boolean isTokenExpired(String token)';
+    $respuesta_79 = 'return extractClaim(token, Claims::getExpiration).before(new Date());';
+    
+    // Preguntas 80-81 (extractAuthorities annotation)
+    $respuesta_80 = '@Override';
+    $respuesta_81 = '@SuppressWarnings("unchecked")';
+    
+    // Preguntas 82-87 (extractAuthorities)
+    $respuesta_82 = 'public List<SimpleGrantedAuthority> extractAuthorities(String token)';
+    $respuesta_83 = 'Claims claims = extractClaim(token, Function.identity());';
+    $respuesta_84 = 'List<String> authorities = claims.get("authorities", List.class);';
+    $respuesta_85 = 'return authorities.stream()';
+    $respuesta_86 = '.map(SimpleGrantedAuthority::new)';
+    $respuesta_87 = '.toList();';
+    
+    // Preguntas 88-92 (getUserDetailsFromToken)
+    $respuesta_88 = '@Override';
+    $respuesta_89 = 'public UserDetails getUserDetailsFromToken(String token)';
+    $respuesta_90 = 'String username = extractUsername(token);';
+    $respuesta_91 = 'List<SimpleGrantedAuthority> authorities = extractAuthorities(token);';
+    $respuesta_92 = 'return new org.springframework.security.core.userdetails.User(username, "", authorities);';
+    
+    // Preguntas 93-104 (isTokenValid)
+    $respuesta_93 = '@Override';
+    $respuesta_94 = 'public boolean isTokenValid(String token)';
+    $respuesta_95 = 'try';
+    $respuesta_96 = 'Jwts.parser()';
+    $respuesta_97 = '.verifyWith(getSignInKey())';
+    $respuesta_98 = '.build()';
+    $respuesta_99 = '.parseSignedClaims(token);';
+    $respuesta_100 = 'if (isTokenExpired(token))';
+    $respuesta_101 = 'return false;';
+    $respuesta_102 = 'return true;';
+    $respuesta_103 = 'catch (Exception e)';
+    $respuesta_104 = 'return false;';
         
         // Marcar todas como correctas
     for ($i = 1; $i <= 122; $i++) {
@@ -166,7 +149,7 @@ if ($_POST) {
 
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '26') {  
+   if ($respuesta_1 === '@Bean') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -176,7 +159,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === '39') {  
+   if ($respuesta_2 === 'public JwtAuthenticationFilter jwtAuthenticationFilter()') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -186,7 +169,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === '52') {  
+   if ($respuesta_3 === 'return new JwtAuthenticationFilter();') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -196,7 +179,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === '65') {  
+   if ($respuesta_4 === '@Bean') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -206,7 +189,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === '78') {  
+   if ($respuesta_5 === '@Order(3)') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -216,7 +199,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === '91') {  
+   if ($respuesta_6 === 'public SecurityFilterChain restSecurityFilterChain(HttpSecurity http) throws Exception') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -226,7 +209,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === '104') {  
+   if ($respuesta_7 === 'return http') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -236,7 +219,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === '117') {  
+   if ($respuesta_8 === '.securityMatcher("/rest/**")') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -246,7 +229,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === '130') {  
+   if ($respuesta_9 === '.csrf(csrf -> csrf.disable())') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -256,7 +239,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === '143') {  
+   if ($respuesta_10 === '.addFilterBefore(jwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class)') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -266,7 +249,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === '156') {  
+   if ($respuesta_11 === '.authorizeHttpRequests(authz -> authz') {  
        $verificar_11 = "correcto";
    } elseif ($respuesta_11 === '') {
        $verificar_11 = '';
@@ -277,7 +260,7 @@ if ($_POST) {
 
     // Verificar la respuesta de la primera pregunta
     $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-    if ($respuesta_12 === '28') {  
+    if ($respuesta_12 === '.requestMatchers("/rest/public/**").permitAll()') {  
         $verificar_12 = "correcto";
     } elseif ($respuesta_12 === '') {
         $verificar_12 = '';
@@ -287,7 +270,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la segunda pregunta
     $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-    if ($respuesta_13 === '42') { 
+    if ($respuesta_13 === '.anyRequest().authenticated())') { 
         $verificar_13 = "correcto";
     } elseif ($respuesta_13 === '') {
         $verificar_13 = '';
@@ -297,7 +280,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la tercera pregunta
     $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-    if ($respuesta_14 === '56') {  
+    if ($respuesta_14 === '.sessionManagement(t -> t.sessionCreationPolicy(SessionCreationPolicy.STATELESS))') {  
         $verificar_14 = "correcto";
     } elseif ($respuesta_14 === '') {
         $verificar_14 = '';
@@ -307,7 +290,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la cuarta pregunta
     $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-    if ($respuesta_15 === '70') { 
+    if ($respuesta_15 === '.build();') { 
         $verificar_15 = "correcto";
     } elseif ($respuesta_15 === '') {
         $verificar_15 = '';
@@ -317,7 +300,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la quinta pregunta
     $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-    if ($respuesta_16 === '84') {  
+    if ($respuesta_16 === 'public class JwtAuthenticationFilter extends OncePerRequestFilter') {  
         $verificar_16 = "correcto";
     } elseif ($respuesta_16 === '') {
         $verificar_16 = '';
@@ -327,7 +310,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la sexta pregunta
     $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-    if ($respuesta_17 === '98') {  
+    if ($respuesta_17 === '@Autowired') {  
         $verificar_17 = "correcto";
         } elseif ($respuesta_17 === '') {
         $verificar_17 = '';
@@ -337,7 +320,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la séptima pregunta
     $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-    if ($respuesta_18 === '112') {  
+    if ($respuesta_18 === 'private JwtService jwtService;') {  
         $verificar_18 = "correcto";
     } elseif ($respuesta_18 === '') {
         $verificar_18 = '';
@@ -347,7 +330,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la octava pregunta
     $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-    if ($respuesta_19 === '126') {  
+    if ($respuesta_19 === '@Override') {  
         $verificar_19 = "correcto";
     } elseif ($respuesta_19 === '') {
         $verificar_19 = '';
@@ -357,7 +340,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la novena pregunta
     $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
-    if ($respuesta_20 === '140') {  
+    if ($respuesta_20 === 'protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)') {  
         $verificar_20 = "correcto";
     } elseif ($respuesta_20 === '') {
         $verificar_20 = '';
@@ -367,7 +350,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la décima pregunta
     $respuesta_21 = isset($_POST['respuesta_21']) ? $_POST['respuesta_21'] : '';
-    if ($respuesta_21 === '154') {  
+    if ($respuesta_21 === 'throws ServletException, IOException') {  
          $verificar_21 = "correcto";
     } elseif ($respuesta_21 === '') {
         $verificar_21 = '';
@@ -377,7 +360,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la undécima pregunta
     $respuesta_22 = isset($_POST['respuesta_22']) ? $_POST['respuesta_22'] : '';
-    if ($respuesta_22 === '168') {  
+    if ($respuesta_22 === 'String authHeader = request.getHeader("Authorization");') {  
         $verificar_22 = "correcto";
     } elseif ($respuesta_22 === '') {
         $verificar_22 = '';
@@ -387,7 +370,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
    $respuesta_23 = isset($_POST['respuesta_23']) ? $_POST['respuesta_23'] : '';
-   if ($respuesta_23 === '30') {  
+   if ($respuesta_23 === 'String token = null;') {  
        $verificar_23 = "correcto";
    } elseif ($respuesta_23 === '') {
        $verificar_23 = '';
@@ -397,7 +380,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_24 = isset($_POST['respuesta_24']) ? $_POST['respuesta_24'] : '';
-   if ($respuesta_24 === '45') {  
+   if ($respuesta_24 === 'UserDetails username = null;') {  
        $verificar_24 = "correcto";
    } elseif ($respuesta_24 === '') {
        $verificar_24 = '';
@@ -407,7 +390,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_25 = isset($_POST['respuesta_25']) ? $_POST['respuesta_25'] : '';
-   if ($respuesta_25 === '60') { 
+   if ($respuesta_25 === 'if (authHeader != null && authHeader.startsWith("Bearer "))') { 
        $verificar_25 = "correcto";
    } elseif ($respuesta_25 === '') {
        $verificar_25 = '';
@@ -417,7 +400,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_26 = isset($_POST['respuesta_26']) ? $_POST['respuesta_26'] : '';
-   if ($respuesta_26 === '75') {  
+   if ($respuesta_26 === 'token = authHeader.substring(7);') {  
        $verificar_26 = "correcto";
    } elseif ($respuesta_26 === '') {
        $verificar_26 = '';
@@ -427,7 +410,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_27 = isset($_POST['respuesta_27']) ? $_POST['respuesta_27'] : '';
-   if ($respuesta_27 === '90') {  
+   if ($respuesta_27 === 'if (jwtService.isTokenValid(token))') {  
        $verificar_27 = "correcto";
    } elseif ($respuesta_27 === '') {
        $verificar_27 = '';
@@ -437,7 +420,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_28 = isset($_POST['respuesta_28']) ? $_POST['respuesta_28'] : '';
-   if ($respuesta_28 === '105') {  
+   if ($respuesta_28 === 'username = jwtService.getUserDetailsFromToken(token);') {  
        $verificar_28 = "correcto";
    } elseif ($respuesta_28 === '') {
        $verificar_28 = '';
@@ -447,7 +430,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_29 = isset($_POST['respuesta_29']) ? $_POST['respuesta_29'] : '';
-   if ($respuesta_29 === '120') {  
+   if ($respuesta_29 === 'UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(username,') {  
        $verificar_29 = "correcto";
    } elseif ($respuesta_29 === '') {
        $verificar_29 = '';
@@ -457,7 +440,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_30 = isset($_POST['respuesta_30']) ? $_POST['respuesta_30'] : '';
-   if ($respuesta_30 === '135') {  
+   if ($respuesta_30 === 'token, username.getAuthorities());') {  
        $verificar_30 = "correcto";
    } elseif ($respuesta_30 === '') {
        $verificar_30 = '';
@@ -467,7 +450,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_31 = isset($_POST['respuesta_31']) ? $_POST['respuesta_31'] : '';
-   if ($respuesta_31 === '150') {  
+   if ($respuesta_31 === 'authentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));') {  
        $verificar_31 = "correcto";
    } elseif ($respuesta_31 === '') {
        $verificar_31 = '';
@@ -477,7 +460,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_32 = isset($_POST['respuesta_32']) ? $_POST['respuesta_32'] : '';
-   if ($respuesta_32 === '165') {  
+   if ($respuesta_32 === 'SecurityContextHolder.getContext().setAuthentication(authentication);') {  
        $verificar_32 = "correcto";
    } elseif ($respuesta_32 === '') {
        $verificar_32 = '';
@@ -487,7 +470,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_33 = isset($_POST['respuesta_33']) ? $_POST['respuesta_33'] : '';
-   if ($respuesta_33 === '180') {  
+   if ($respuesta_33 === 'filterChain.doFilter(request, response);') {  
        $verificar_33 = "correcto";
    } elseif ($respuesta_33 === '') {
        $verificar_33 = '';
@@ -496,7 +479,7 @@ if ($_POST) {
    }
 
     $respuesta_34 = isset($_POST['respuesta_34']) ? $_POST['respuesta_34'] : '';
-    if ($respuesta_34 === '32') { 
+    if ($respuesta_34 === 'public interface JwtService') { 
         $verificar_34 = "correcto";
     } elseif ($respuesta_34 === '') {
         $verificar_34 = '';
@@ -505,7 +488,7 @@ if ($_POST) {
     }
 
     $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
-    if ($respuesta_35 === '48') { 
+    if ($respuesta_35 === 'String generateToken(User user, Authentication authentication);') { 
         $verificar_35 = "correcto";
     } elseif ($respuesta_35 === '') {
         $verificar_35 = '';
@@ -514,7 +497,7 @@ if ($_POST) {
     }
 
     $respuesta_36 = isset($_POST['respuesta_36']) ? $_POST['respuesta_36'] : '';
-    if ($respuesta_36 === '64') { 
+    if ($respuesta_36 === 'String extractUsername(String token);') { 
         $verificar_36 = "correcto";
     } elseif ($respuesta_36 === '') {
     $verificar_36 = '';
@@ -523,7 +506,7 @@ if ($_POST) {
     }
 
     $respuesta_37 = isset($_POST['respuesta_37']) ? $_POST['respuesta_37'] : '';
-    if ($respuesta_37 === '80') { 
+    if ($respuesta_37 === 'List<SimpleGrantedAuthority> extractAuthorities(String token);') { 
         $verificar_37 = "correcto";
     } elseif ($respuesta_37 === '') {
         $verificar_37 = '';
@@ -532,7 +515,7 @@ if ($_POST) {
     }
 
     $respuesta_38 = isset($_POST['respuesta_38']) ? $_POST['respuesta_38'] : '';
-    if ($respuesta_38 === '96') { 
+    if ($respuesta_38 === '<T> T extractClaim(String token, Function<Claims, T> claimsResolver);') { 
         $verificar_38 = "correcto";
     } elseif ($respuesta_38 === '') {
         $verificar_38 = '';
@@ -541,7 +524,7 @@ if ($_POST) {
     }
 
     $respuesta_39 = isset($_POST['respuesta_39']) ? $_POST['respuesta_39'] : '';
-    if ($respuesta_39 === '112') { 
+    if ($respuesta_39 === 'UserDetails getUserDetailsFromToken(String token);') { 
         $verificar_39 = "correcto";
     } elseif ($respuesta_39 === '') {
         $verificar_39 = '';
@@ -550,7 +533,7 @@ if ($_POST) {
     }
 
     $respuesta_40 = isset($_POST['respuesta_40']) ? $_POST['respuesta_40'] : '';
-    if ($respuesta_40 === '128') { 
+    if ($respuesta_40 === 'boolean isTokenExpired(String token);') { 
         $verificar_40 = "correcto";
     } elseif ($respuesta_40 === '') {
         $verificar_40 = '';
@@ -559,7 +542,7 @@ if ($_POST) {
     }
 
     $respuesta_41 = isset($_POST['respuesta_41']) ? $_POST['respuesta_41'] : '';
-    if ($respuesta_41 === '144') { 
+    if ($respuesta_41 === 'boolean isTokenValid(String token);') { 
         $verificar_41 = "correcto";
     } elseif ($respuesta_41 === '') {
         $verificar_41 = '';
@@ -568,7 +551,7 @@ if ($_POST) {
     }
 
     $respuesta_42 = isset($_POST['respuesta_42']) ? $_POST['respuesta_42'] : '';
-    if ($respuesta_42 === '160') { 
+    if ($respuesta_42 === '@Service') { 
         $verificar_42 = "correcto";
     } elseif ($respuesta_42 === '') {
         $verificar_42 = '';
@@ -577,7 +560,7 @@ if ($_POST) {
     }
 
     $respuesta_43 = isset($_POST['respuesta_43']) ? $_POST['respuesta_43'] : '';
-    if ($respuesta_43 === '176') { 
+    if ($respuesta_43 === 'public class JwtServiceImpl implements JwtService') { 
         $verificar_43 = "correcto";
     } elseif ($respuesta_43 === '') {
         $verificar_43 = '';
@@ -586,7 +569,7 @@ if ($_POST) {
     }
 
     $respuesta_44 = isset($_POST['respuesta_44']) ? $_POST['respuesta_44'] : '';
-    if ($respuesta_44 === '192') { 
+    if ($respuesta_44 === '@Value("${app.security.jwt.secret-key}")') { 
         $verificar_44 = "correcto";
     } elseif ($respuesta_44 === '') {
     $verificar_44 = '';
@@ -595,7 +578,7 @@ if ($_POST) {
     }
 
     $respuesta_45 = isset($_POST['respuesta_45']) ? $_POST['respuesta_45'] : '';
-    if ($respuesta_45 === '34') { 
+    if ($respuesta_45 === 'private String secretKey;') { 
         $verificar_45 = "correcto";
     } elseif ($respuesta_45 === '') {
     $verificar_45 = '';
@@ -604,7 +587,7 @@ if ($_POST) {
     }
 
     $respuesta_46 = isset($_POST['respuesta_46']) ? $_POST['respuesta_46'] : '';
-    if ($respuesta_46 === '51') { 
+    if ($respuesta_46 === '@Value("${app.security.jwt.expiration-time}")') { 
         $verificar_46 = "correcto";
     } elseif ($respuesta_46 === '') {
     $verificar_46 = '';
@@ -613,7 +596,7 @@ if ($_POST) {
     }
 
     $respuesta_47 = isset($_POST['respuesta_47']) ? $_POST['respuesta_47'] : '';
-    if ($respuesta_47 === '68') { 
+    if ($respuesta_47 === 'private long expirationTime;') { 
         $verificar_47 = "correcto";
     } elseif ($respuesta_47 === '') {
         $verificar_47 = '';
@@ -622,7 +605,7 @@ if ($_POST) {
     }
 
     $respuesta_48 = isset($_POST['respuesta_48']) ? $_POST['respuesta_48'] : '';
-    if ($respuesta_48 === '85') { 
+    if ($respuesta_48 === 'private SecretKey getSignInKey()') { 
         $verificar_48 = "correcto";
     } elseif ($respuesta_48 === '') {
     $verificar_48 = '';
@@ -631,7 +614,7 @@ if ($_POST) {
     }
 
     $respuesta_49 = isset($_POST['respuesta_49']) ? $_POST['respuesta_49'] : '';
-    if ($respuesta_49 === '102') { 
+    if ($respuesta_49 === 'byte[] keyBytes = Decoders.BASE64.decode(secretKey);') { 
         $verificar_49 = "correcto";
     } elseif ($respuesta_49 === '') {
     $verificar_49 = '';
@@ -640,7 +623,7 @@ if ($_POST) {
     }
 
     $respuesta_50 = isset($_POST['respuesta_50']) ? $_POST['respuesta_50'] : '';
-    if ($respuesta_50 === '119') { 
+    if ($respuesta_50 === 'return Keys.hmacShaKeyFor(keyBytes);') { 
         $verificar_50 = "correcto";
     } elseif ($respuesta_50 === '') {
     $verificar_50 = '';
@@ -649,7 +632,7 @@ if ($_POST) {
     }
 
  $respuesta_51 = isset($_POST['respuesta_51']) ? $_POST['respuesta_51'] : '';
-if ($respuesta_51 === '136') { 
+if ($respuesta_51 === '@Override') { 
     $verificar_51 = "correcto";
 } elseif ($respuesta_51 === '') {
     $verificar_51 = '';
@@ -658,7 +641,7 @@ if ($respuesta_51 === '136') {
 }
 
  $respuesta_52 = isset($_POST['respuesta_52']) ? $_POST['respuesta_52'] : '';
-if ($respuesta_52 === '153') { 
+if ($respuesta_52 === 'public String generateToken(User user, Authentication auth)') { 
     $verificar_52 = "correcto";
 } elseif ($respuesta_52 === '') {
     $verificar_52 = '';
@@ -667,7 +650,7 @@ if ($respuesta_52 === '153') {
 }
 
  $respuesta_53 = isset($_POST['respuesta_53']) ? $_POST['respuesta_53'] : '';
-if ($respuesta_53 === '170') { 
+if ($respuesta_53 === 'return Jwts.builder()') { 
     $verificar_53 = "correcto";
 } elseif ($respuesta_53 === '') {
     $verificar_53 = '';
@@ -676,7 +659,7 @@ if ($respuesta_53 === '170') {
 }
 
  $respuesta_54 = isset($_POST['respuesta_54']) ? $_POST['respuesta_54'] : '';
-if ($respuesta_54 === '187') { 
+if ($respuesta_54 === '.id(user.getId().toString())') { 
     $verificar_54 = "correcto";
 } elseif ($respuesta_54 === '') {
     $verificar_54 = '';
@@ -685,7 +668,7 @@ if ($respuesta_54 === '187') {
 }
 
  $respuesta_55 = isset($_POST['respuesta_55']) ? $_POST['respuesta_55'] : '';
-if ($respuesta_55 === '204') { 
+if ($respuesta_55 === '.claims(Map.of(') { 
     $verificar_55 = "correcto";
 } elseif ($respuesta_55 === '') {
     $verificar_55 = '';
@@ -695,7 +678,7 @@ if ($respuesta_55 === '204') {
 
 
  $respuesta_56 = isset($_POST['respuesta_56']) ? $_POST['respuesta_56'] : '';
-if ($respuesta_56 === '36') { 
+if ($respuesta_56 === '"username", user.getUsername(),') { 
     $verificar_56 = "correcto";
 } elseif ($respuesta_56 === '') {
     $verificar_56 = '';
@@ -704,7 +687,7 @@ if ($respuesta_56 === '36') {
 }
 
  $respuesta_57 = isset($_POST['respuesta_57']) ? $_POST['respuesta_57'] : '';
-if ($respuesta_57 === '54') { 
+if ($respuesta_57 === '"email", user.getEmail(),') { 
     $verificar_57 = "correcto";
 } elseif ($respuesta_57 === '') {
     $verificar_57 = '';
@@ -713,7 +696,7 @@ if ($respuesta_57 === '54') {
 }
 
  $respuesta_58 = isset($_POST['respuesta_58']) ? $_POST['respuesta_58'] : '';
-if ($respuesta_58 === '72') { 
+if ($respuesta_58 === '"authorities", auth != null && auth.getAuthorities() != null ? auth.getAuthorities().stream()') { 
     $verificar_58 = "correcto";
 } elseif ($respuesta_58 === '') {
     $verificar_58 = '';
@@ -722,7 +705,7 @@ if ($respuesta_58 === '72') {
 }
 
  $respuesta_59 = isset($_POST['respuesta_59']) ? $_POST['respuesta_59'] : '';
-if ($respuesta_59 === '90') { 
+if ($respuesta_59 === '.map(ga -> ga.getAuthority())') { 
     $verificar_59 = "correcto";
 } elseif ($respuesta_59 === '') {
     $verificar_59 = '';
@@ -731,7 +714,7 @@ if ($respuesta_59 === '90') {
 }
 
  $respuesta_60 = isset($_POST['respuesta_60']) ? $_POST['respuesta_60'] : '';
-if ($respuesta_60 === '108') { 
+if ($respuesta_60 === '.toList() : List.of()') { 
     $verificar_60 = "correcto";
 } elseif ($respuesta_60 === '') {
     $verificar_60 = '';
@@ -740,7 +723,7 @@ if ($respuesta_60 === '108') {
 }
 
  $respuesta_61 = isset($_POST['respuesta_61']) ? $_POST['respuesta_61'] : '';
-if ($respuesta_61 === '126') { 
+if ($respuesta_61 === '.subject(user.getUsername())') { 
     $verificar_61 = "correcto";
 } elseif ($respuesta_61 === '') {
     $verificar_61 = '';
@@ -749,7 +732,7 @@ if ($respuesta_61 === '126') {
 }
 
  $respuesta_62 = isset($_POST['respuesta_62']) ? $_POST['respuesta_62'] : '';
-if ($respuesta_62 === '144') { 
+if ($respuesta_62 === '.issuedAt(new Date(System.currentTimeMillis()))') { 
     $verificar_62 = "correcto";
 } elseif ($respuesta_62 === '') {
     $verificar_62 = '';
@@ -758,7 +741,7 @@ if ($respuesta_62 === '144') {
 }
 
  $respuesta_63 = isset($_POST['respuesta_63']) ? $_POST['respuesta_63'] : '';
-if ($respuesta_63 === '162') { 
+if ($respuesta_63 === '.expiration(new Date(System.currentTimeMillis() + expirationTime))') { 
     $verificar_63 = "correcto";
 } elseif ($respuesta_63 === '') {
     $verificar_63 = '';
@@ -767,7 +750,7 @@ if ($respuesta_63 === '162') {
 }
 
  $respuesta_64 = isset($_POST['respuesta_64']) ? $_POST['respuesta_64'] : '';
-if ($respuesta_64 === '180') { 
+if ($respuesta_64 === '.signWith(getSignInKey())') { 
     $verificar_64 = "correcto";
 } elseif ($respuesta_64 === '') {
     $verificar_64 = '';
@@ -776,7 +759,7 @@ if ($respuesta_64 === '180') {
 }
 
  $respuesta_65 = isset($_POST['respuesta_65']) ? $_POST['respuesta_65'] : '';
-if ($respuesta_65 === '198') { 
+if ($respuesta_65 === '.compact();') { 
     $verificar_65 = "correcto";
 } elseif ($respuesta_65 === '') {
     $verificar_65 = '';
@@ -785,7 +768,7 @@ if ($respuesta_65 === '198') {
 }
 
  $respuesta_66 = isset($_POST['respuesta_66']) ? $_POST['respuesta_66'] : '';
-if ($respuesta_66 === '216') { 
+if ($respuesta_66 === '@Override') { 
     $verificar_66 = "correcto";
 } elseif ($respuesta_66 === '') {
     $verificar_66 = '';
@@ -794,7 +777,7 @@ if ($respuesta_66 === '216') {
 }
 
  $respuesta_67 = isset($_POST['respuesta_67']) ? $_POST['respuesta_67'] : '';
-if ($respuesta_67 === '38') { 
+if ($respuesta_67 === 'public <T> T extractClaim(String token, Function<Claims, T> claimsResolver)') { 
     $verificar_67 = "correcto";
 } elseif ($respuesta_67 === '') {
     $verificar_67 = '';
@@ -803,7 +786,7 @@ if ($respuesta_67 === '38') {
 }
 
  $respuesta_68 = isset($_POST['respuesta_68']) ? $_POST['respuesta_68'] : '';
-if ($respuesta_68 === '57') { 
+if ($respuesta_68 === 'Claims claims = Jwts.parser()') { 
     $verificar_68 = "correcto";
 } elseif ($respuesta_68 === '') {
     $verificar_68 = '';
@@ -812,7 +795,7 @@ if ($respuesta_68 === '57') {
 }
 
  $respuesta_69 = isset($_POST['respuesta_69']) ? $_POST['respuesta_69'] : '';
-if ($respuesta_69 === '76') { 
+if ($respuesta_69 === '.verifyWith(getSignInKey())') { 
     $verificar_69 = "correcto";
 } elseif ($respuesta_69 === '') {
     $verificar_69 = '';
@@ -821,7 +804,7 @@ if ($respuesta_69 === '76') {
 }
 
  $respuesta_70 = isset($_POST['respuesta_70']) ? $_POST['respuesta_70'] : '';
-if ($respuesta_70 === '95') { 
+if ($respuesta_70 === '.build()') { 
     $verificar_70 = "correcto";
 } elseif ($respuesta_70 === '') {
     $verificar_70 = '';
@@ -830,7 +813,7 @@ if ($respuesta_70 === '95') {
 }
 
  $respuesta_71 = isset($_POST['respuesta_71']) ? $_POST['respuesta_71'] : '';
-if ($respuesta_71 === '114') { 
+if ($respuesta_71 === '.parseSignedClaims(token)') { 
     $verificar_71 = "correcto";
 } elseif ($respuesta_71 === '') {
     $verificar_71 = '';
@@ -839,7 +822,7 @@ if ($respuesta_71 === '114') {
 }
 
  $respuesta_72 = isset($_POST['respuesta_72']) ? $_POST['respuesta_72'] : '';
-if ($respuesta_72 === '133') { 
+if ($respuesta_72 === '.getPayload();') { 
     $verificar_72 = "correcto";
 } elseif ($respuesta_72 === '') {
     $verificar_72 = '';
@@ -848,7 +831,7 @@ if ($respuesta_72 === '133') {
 }
 
  $respuesta_73 = isset($_POST['respuesta_73']) ? $_POST['respuesta_73'] : '';
-if ($respuesta_73 === '152') { 
+if ($respuesta_73 === 'return claimsResolver.apply(claims);') { 
     $verificar_73 = "correcto";
 } elseif ($respuesta_73 === '') {
     $verificar_73 = '';
@@ -857,7 +840,7 @@ if ($respuesta_73 === '152') {
 }
 
  $respuesta_74 = isset($_POST['respuesta_74']) ? $_POST['respuesta_74'] : '';
-if ($respuesta_74 === '171') { 
+if ($respuesta_74 === '@Override') { 
     $verificar_74 = "correcto";
 } elseif ($respuesta_74 === '') {
     $verificar_74 = '';
@@ -866,7 +849,7 @@ if ($respuesta_74 === '171') {
 }
 
  $respuesta_75 = isset($_POST['respuesta_75']) ? $_POST['respuesta_75'] : '';
-if ($respuesta_75 === '190') { 
+if ($respuesta_75 === 'public String extractUsername(String token)') { 
     $verificar_75 = "correcto";
 } elseif ($respuesta_75 === '') {
     $verificar_75 = '';
@@ -875,7 +858,7 @@ if ($respuesta_75 === '190') {
 }
 
  $respuesta_76 = isset($_POST['respuesta_76']) ? $_POST['respuesta_76'] : '';
-if ($respuesta_76 === '209') { 
+if ($respuesta_76 === 'return extractClaim(token, Claims::getSubject);') { 
     $verificar_76 = "correcto";
 } elseif ($respuesta_76 === '') {
     $verificar_76 = '';
@@ -884,7 +867,7 @@ if ($respuesta_76 === '209') {
 }
 
  $respuesta_77 = isset($_POST['respuesta_77']) ? $_POST['respuesta_77'] : '';
-if ($respuesta_77 === '228') { 
+if ($respuesta_77 === '@Override') { 
     $verificar_77 = "correcto";
 } elseif ($respuesta_77 === '') {
     $verificar_77 = '';
@@ -893,7 +876,7 @@ if ($respuesta_77 === '228') {
 }
 
  $respuesta_78 = isset($_POST['respuesta_78']) ? $_POST['respuesta_78'] : '';
-if ($respuesta_78 === '40') { 
+if ($respuesta_78 === 'public boolean isTokenExpired(String token)') { 
     $verificar_78 = "correcto";
 } elseif ($respuesta_78 === '') {
     $verificar_78 = '';
@@ -902,7 +885,7 @@ if ($respuesta_78 === '40') {
 }
 
  $respuesta_79 = isset($_POST['respuesta_79']) ? $_POST['respuesta_79'] : '';
-if ($respuesta_79 === '60') { 
+if ($respuesta_79 === 'return extractClaim(token, Claims::getExpiration).before(new Date());') { 
     $verificar_79 = "correcto";
 } elseif ($respuesta_79 === '') {
     $verificar_79 = '';
@@ -911,7 +894,7 @@ if ($respuesta_79 === '60') {
 }
 
  $respuesta_80 = isset($_POST['respuesta_80']) ? $_POST['respuesta_80'] : '';
-if ($respuesta_80 === '80') { 
+if ($respuesta_80 === '@Override') { 
     $verificar_80 = "correcto";
 } elseif ($respuesta_80 === '') {
     $verificar_80 = '';
@@ -920,7 +903,7 @@ if ($respuesta_80 === '80') {
 }
 
  $respuesta_81 = isset($_POST['respuesta_81']) ? $_POST['respuesta_81'] : '';
-if ($respuesta_81 === '100') { 
+if ($respuesta_81 === '@SuppressWarnings("unchecked")') { 
     $verificar_81 = "correcto";
 } elseif ($respuesta_81 === '') {
     $verificar_81 = '';
@@ -929,7 +912,7 @@ if ($respuesta_81 === '100') {
 }
 
     $respuesta_82 = isset($_POST['respuesta_82']) ? $_POST['respuesta_82'] : '';
-    if ($respuesta_82 === '120') { 
+    if ($respuesta_82 === 'public List<SimpleGrantedAuthority> extractAuthorities(String token)') { 
         $verificar_82 = "correcto";
     } elseif ($respuesta_82 === '') {
         $verificar_82 = '';
@@ -938,7 +921,7 @@ if ($respuesta_81 === '100') {
     }
 
     $respuesta_83 = isset($_POST['respuesta_83']) ? $_POST['respuesta_83'] : '';
-    if ($respuesta_83 === '140') { 
+    if ($respuesta_83 === 'Claims claims = extractClaim(token, Function.identity());') { 
        $verificar_83 = "correcto";
     } elseif ($respuesta_83 === '') {
         $verificar_83 = '';
@@ -947,7 +930,7 @@ if ($respuesta_81 === '100') {
     }
 
     $respuesta_84 = isset($_POST['respuesta_84']) ? $_POST['respuesta_84'] : '';
-    if ($respuesta_84 === '160') { 
+    if ($respuesta_84 === 'List<String> authorities = claims.get("authorities", List.class);') { 
         $verificar_84 = "correcto";
     } elseif ($respuesta_84 === '') {
         $verificar_84 = '';
@@ -956,7 +939,7 @@ if ($respuesta_81 === '100') {
     }
 
     $respuesta_85 = isset($_POST['respuesta_85']) ? $_POST['respuesta_85'] : '';
-    if ($respuesta_85 === '180') { 
+    if ($respuesta_85 === 'return authorities.stream()') { 
         $verificar_85 = "correcto";
     } elseif ($respuesta_85 === '') {
         $verificar_85 = '';
@@ -965,7 +948,7 @@ if ($respuesta_81 === '100') {
     }
 
     $respuesta_86 = isset($_POST['respuesta_86']) ? $_POST['respuesta_86'] : '';
-    if ($respuesta_86 === '200') { 
+    if ($respuesta_86 === '.map(SimpleGrantedAuthority::new)') { 
         $verificar_86 = "correcto";
     } elseif ($respuesta_86 === '') {
         $verificar_86 = '';
@@ -974,7 +957,7 @@ if ($respuesta_81 === '100') {
     }
 
     $respuesta_87 = isset($_POST['respuesta_87']) ? $_POST['respuesta_87'] : '';
-    if ($respuesta_87 === '220') { 
+    if ($respuesta_87 === '.toList();') { 
         $verificar_87 = "correcto";
     } elseif ($respuesta_87 === '') {
         $verificar_87 = '';
@@ -983,7 +966,7 @@ if ($respuesta_81 === '100') {
     }
 
     $respuesta_88 = isset($_POST['respuesta_88']) ? $_POST['respuesta_88'] : '';
-    if ($respuesta_88 === '240') { 
+    if ($respuesta_88 === '@Override') { 
         $verificar_88 = "correcto";
     } elseif ($respuesta_88 === '') {
         $verificar_88 = '';
@@ -992,7 +975,7 @@ if ($respuesta_81 === '100') {
     }
 
  $respuesta_89 = isset($_POST['respuesta_89']) ? $_POST['respuesta_89'] : '';
-if ($respuesta_89 === '42') { 
+if ($respuesta_89 === 'public UserDetails getUserDetailsFromToken(String token)') { 
     $verificar_89 = "correcto";
 } elseif ($respuesta_89 === '') {
     $verificar_89 = '';
@@ -1001,7 +984,7 @@ if ($respuesta_89 === '42') {
 }
 
  $respuesta_90 = isset($_POST['respuesta_90']) ? $_POST['respuesta_90'] : '';
-if ($respuesta_90 === '63') { 
+if ($respuesta_90 === 'String username = extractUsername(token);') { 
     $verificar_90 = "correcto";
 } elseif ($respuesta_90 === '') {
     $verificar_90 = '';
@@ -1010,7 +993,7 @@ if ($respuesta_90 === '63') {
 }
 
  $respuesta_91 = isset($_POST['respuesta_91']) ? $_POST['respuesta_91'] : '';
-if ($respuesta_91 === '84') { 
+if ($respuesta_91 === 'List<SimpleGrantedAuthority> authorities = extractAuthorities(token);') { 
     $verificar_91 = "correcto";
 } elseif ($respuesta_91 === '') {
     $verificar_91 = '';
@@ -1019,7 +1002,7 @@ if ($respuesta_91 === '84') {
 }
 
  $respuesta_92 = isset($_POST['respuesta_92']) ? $_POST['respuesta_92'] : '';
-if ($respuesta_92 === '105') { 
+if ($respuesta_92 === 'return new org.springframework.security.core.userdetails.User(username, "", authorities);') { 
     $verificar_92 = "correcto";
 } elseif ($respuesta_92 === '') {
     $verificar_92 = '';
@@ -1028,7 +1011,7 @@ if ($respuesta_92 === '105') {
 }
 
  $respuesta_93 = isset($_POST['respuesta_93']) ? $_POST['respuesta_93'] : '';
-if ($respuesta_93 === '126') { 
+if ($respuesta_93 === '@Override') { 
     $verificar_93 = "correcto";
 } elseif ($respuesta_93 === '') {
     $verificar_93 = '';
@@ -1037,7 +1020,7 @@ if ($respuesta_93 === '126') {
 }
 
  $respuesta_94 = isset($_POST['respuesta_94']) ? $_POST['respuesta_94'] : '';
-if ($respuesta_94 === '147') { 
+if ($respuesta_94 === 'public boolean isTokenValid(String token)') { 
     $verificar_94 = "correcto";
 } elseif ($respuesta_94 === '') {
     $verificar_94 = '';
@@ -1046,7 +1029,7 @@ if ($respuesta_94 === '147') {
 }
 
  $respuesta_95 = isset($_POST['respuesta_95']) ? $_POST['respuesta_95'] : '';
-if ($respuesta_95 === '168') { 
+if ($respuesta_95 === 'try') { 
     $verificar_95 = "correcto";
 } elseif ($respuesta_95 === '') {
     $verificar_95 = '';
@@ -1055,7 +1038,7 @@ if ($respuesta_95 === '168') {
 }
 
  $respuesta_96 = isset($_POST['respuesta_96']) ? $_POST['respuesta_96'] : '';
-if ($respuesta_96 === '189') { 
+if ($respuesta_96 === 'Jwts.parser()') { 
     $verificar_96 = "correcto";
 } elseif ($respuesta_96 === '') {
     $verificar_96 = '';
@@ -1064,7 +1047,7 @@ if ($respuesta_96 === '189') {
 }
 
  $respuesta_97 = isset($_POST['respuesta_97']) ? $_POST['respuesta_97'] : '';
-if ($respuesta_97 === '210') { 
+if ($respuesta_97 === '.verifyWith(getSignInKey())') { 
     $verificar_97 = "correcto";
 } elseif ($respuesta_97 === '') {
     $verificar_97 = '';
@@ -1073,7 +1056,7 @@ if ($respuesta_97 === '210') {
 }
 
  $respuesta_98 = isset($_POST['respuesta_98']) ? $_POST['respuesta_98'] : '';
-if ($respuesta_98 === '231') { 
+if ($respuesta_98 === '.build()') { 
     $verificar_98 = "correcto";
 } elseif ($respuesta_98 === '') {
     $verificar_98 = '';
@@ -1082,7 +1065,7 @@ if ($respuesta_98 === '231') {
 }
 
  $respuesta_99 = isset($_POST['respuesta_99']) ? $_POST['respuesta_99'] : '';
-if ($respuesta_99 === '252') { 
+if ($respuesta_99 === '.parseSignedClaims(token);') { 
     $verificar_99 = "correcto";
 } elseif ($respuesta_99 === '') {
     $verificar_99 = '';
@@ -1092,7 +1075,7 @@ if ($respuesta_99 === '252') {
 
 
  $respuesta_100 = isset($_POST['respuesta_100']) ? $_POST['respuesta_100'] : '';
-if ($respuesta_100 === '44') { 
+if ($respuesta_100 === 'if (isTokenExpired(token))') { 
     $verificar_100 = "correcto";
 } elseif ($respuesta_100 === '') {
     $verificar_100 = '';
@@ -1101,7 +1084,7 @@ if ($respuesta_100 === '44') {
 }
 
  $respuesta_101 = isset($_POST['respuesta_101']) ? $_POST['respuesta_101'] : '';
-if ($respuesta_101 === '66') { 
+if ($respuesta_101 === 'return false;') { 
     $verificar_101 = "correcto";
 } elseif ($respuesta_101 === '') {
     $verificar_101 = '';
@@ -1110,7 +1093,7 @@ if ($respuesta_101 === '66') {
 }
 
  $respuesta_102 = isset($_POST['respuesta_102']) ? $_POST['respuesta_102'] : '';
-if ($respuesta_102 === '88') { 
+if ($respuesta_102 === 'return true;') { 
     $verificar_102 = "correcto";
 } elseif ($respuesta_102 === '') {
     $verificar_102 = '';
@@ -1119,7 +1102,7 @@ if ($respuesta_102 === '88') {
 }
 
  $respuesta_103 = isset($_POST['respuesta_103']) ? $_POST['respuesta_103'] : '';
-if ($respuesta_103 === '110') { 
+if ($respuesta_103 === 'catch (Exception e)') { 
     $verificar_103 = "correcto";
 } elseif ($respuesta_103 === '') {
     $verificar_103 = '';
@@ -1128,7 +1111,7 @@ if ($respuesta_103 === '110') {
 }
 
  $respuesta_104 = isset($_POST['respuesta_104']) ? $_POST['respuesta_104'] : '';
-if ($respuesta_104 === '132') { 
+if ($respuesta_104 === 'return false;') { 
     $verificar_104 = "correcto";
 } elseif ($respuesta_104 === '') {
     $verificar_104 = '';
@@ -1298,8 +1281,8 @@ if ($respuesta_121 === '144') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="./../style_2_0.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../style_2_0.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
@@ -1589,14 +1572,43 @@ function ocultarMensaje4() {
 </head>
 <body>  
 
-<form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
+<form action="./sexto.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
 <div class="form-container">
 
     
 <div class="seccion izquierda"> 
 
- <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="8">
-    <button type="submit">Enviar</button> 
+    <h4>WebSecurityConfig</h4>
+    <pre>
+    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="8">
+    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="58">
+      {
+        <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="36">
+    }
+
+    </pre>
+ 
+   
+
+    <pre>
+    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="8">
+    <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="8">
+    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="87">
+      {
+        <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="11">
+                <input type="text" name="respuesta_8" value="<?php echo htmlspecialchars($respuesta_8 ?? '', ENT_QUOTES); ?>" size="31">
+                <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="31">
+                <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="87">
+                <input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="41">
+                        <input type="text" name="respuesta_12" value="<?php echo htmlspecialchars($respuesta_12 ?? '', ENT_QUOTES); ?>" size="51">
+                        <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="41">
+                <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="81">
+                <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="9">
+    }
+
+    </pre>
+
+    <button type="submit">Enviar</button>
     <?php echo $verificar_1 ?>
     <?php echo $verificar_2 ?>
     <?php echo $verificar_3 ?>
@@ -1612,6 +1624,43 @@ function ocultarMensaje4() {
     <?php echo $verificar_13 ?>
     <?php echo $verificar_14 ?>
     <?php echo $verificar_15 ?>
+    <hr>
+    <pre>
+
+    <h4>JwtAuthenticationFilter </h4>
+<input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="71">
+  {
+    <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="16">
+    <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="31">
+
+    <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="10">
+    <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="115">
+            <input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>" size="38">
+             {
+        <input type="text" name="respuesta_22" value="<?php echo htmlspecialchars($respuesta_22 ?? '', ENT_QUOTES); ?>" size="56">
+        <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="21">
+        <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="28">
+
+        <input type="text" name="respuesta_25" value="<?php echo htmlspecialchars($respuesta_25 ?? '', ENT_QUOTES); ?>" size="61">
+          {
+            <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="33">
+
+            <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="37">
+             {
+                <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="55">
+                <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="104">
+                        <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="36">
+                <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="88">
+                <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="71">
+            }
+        }
+        <input type="text" name="respuesta_33" value="<?php echo htmlspecialchars($respuesta_33 ?? '', ENT_QUOTES); ?>" size="41">
+    }
+
+}
+
+    </pre>
+    <button type="submit">Enviar</button>
     <?php echo $verificar_16 ?>
     <?php echo $verificar_17 ?>
     <?php echo $verificar_18 ?>
@@ -1630,6 +1679,26 @@ function ocultarMensaje4() {
     <?php echo $verificar_31 ?>
     <?php echo $verificar_32 ?>
     <?php echo $verificar_33 ?>
+
+    <hr>
+
+<pre>
+
+ 
+
+<input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="28">
+ {
+    <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="64">
+    <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="41">
+    <input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="61">
+    <input type="text" name="respuesta_38" value="<?php echo $respuesta_38; ?>" size="71">
+    <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="51">
+    <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="41">
+    <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="41">
+}
+</pre>
+
+    <button type="submit">Enviar</button>
     <?php echo $verificar_34 ?>
     <?php echo $verificar_35 ?>
     <?php echo $verificar_36 ?>
@@ -1639,8 +1708,47 @@ function ocultarMensaje4() {
     <?php echo $verificar_40 ?>
     <?php echo $verificar_41 ?>
 
+    <hr>
+<h4>JwtServiceImpl </h4>
+<pre>
+<input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="11">
+<input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="51">
+  {
+    <input type="text" name="respuesta_44" value="<?php echo htmlspecialchars($respuesta_44 ?? '', ENT_QUOTES); ?>" size="44">
+    <input type="text" name="respuesta_45" value="<?php echo $respuesta_45; ?>" size="31">
 
-    <?php echo $verificar_42 ?>
+    <input type="text" name="respuesta_46" value="<?php echo htmlspecialchars($respuesta_46 ?? '', ENT_QUOTES); ?>" size="46">
+    <input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="31">
+
+    <input type="text" name="respuesta_48" value="<?php echo $respuesta_48; ?>" size="32">
+      {
+        <input type="text" name="respuesta_49" value="<?php echo $respuesta_49; ?>" size="55">
+        <input type="text" name="respuesta_50" value="<?php echo $respuesta_50; ?>" size="38">
+    }
+
+    <input type="text" name="respuesta_51" value="<?php echo $respuesta_51; ?>" size="11">
+    <input type="text" name="respuesta_52" value="<?php echo $respuesta_52; ?>" size="61">
+     {
+        <input type="text" name="respuesta_53" value="<?php echo $respuesta_53; ?>" size="21">
+                <input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>" size="31">
+                <input type="text" name="respuesta_55" value="<?php echo $respuesta_55; ?>" size="15">
+                    <input type="text" name="respuesta_56" value="<?php echo htmlspecialchars($respuesta_56 ?? '', ENT_QUOTES); ?>" size="35">
+                    <input type="text" name="respuesta_57" value="<?php echo htmlspecialchars($respuesta_57 ?? '', ENT_QUOTES); ?>" size="25">
+                    <input type="text" name="respuesta_58" value="<?php echo htmlspecialchars($respuesta_58 ?? '', ENT_QUOTES); ?>" size="95">
+                        <input type="text" name="respuesta_59" value="<?php echo $respuesta_59; ?>" size="31">
+                        <input type="text" name="respuesta_60" value="<?php echo $respuesta_60; ?>" size="21">
+                ))
+                <input type="text" name="respuesta_61" value="<?php echo $respuesta_61; ?>" size="31">
+                <input type="text" name="respuesta_62" value="<?php echo $respuesta_62; ?>" size="51">
+                <input type="text" name="respuesta_63" value="<?php echo $respuesta_63; ?>" size="71">
+                <input type="text" name="respuesta_64" value="<?php echo $respuesta_64; ?>" size="25">
+                <input type="text" name="respuesta_65" value="<?php echo $respuesta_65; ?>" size="11">
+    }
+
+ 
+</pre>
+    <button type="submit">Enviar</button>
+        <?php echo $verificar_42 ?>
     <?php echo $verificar_43 ?>
     <?php echo $verificar_44 ?>  
     <?php echo $verificar_45 ?>
@@ -1654,9 +1762,6 @@ function ocultarMensaje4() {
     <?php echo $verificar_53 ?>
     <?php echo $verificar_54 ?>
     <?php echo $verificar_55 ?>
-
-
-
     <?php echo $verificar_56 ?>
     <?php echo $verificar_57 ?>
     <?php echo $verificar_58 ?>
@@ -1667,7 +1772,50 @@ function ocultarMensaje4() {
     <?php echo $verificar_63 ?>
     <?php echo $verificar_64 ?>
     <?php echo $verificar_65 ?>
-    <?php echo $verificar_66 ?>
+</div>
+
+
+
+
+<div class="seccion derecha">
+ 
+<pre>
+    <input type="text" name="respuesta_66" value="<?php echo $respuesta_66; ?>" size="11">
+    <input type="text" name="respuesta_67" value="<?php echo $respuesta_67; ?>" size="76">
+     {
+        <input type="text" name="respuesta_68" value="<?php echo $respuesta_68; ?>" size="31">
+                <input type="text" name="respuesta_69" value="<?php echo $respuesta_69; ?>" size="31">
+                <input type="text" name="respuesta_70" value="<?php echo $respuesta_70; ?>" size="11">
+                <input type="text" name="respuesta_71" value="<?php echo $respuesta_71; ?>" size="31">
+                <input type="text" name="respuesta_72" value="<?php echo $respuesta_72; ?>" size="15">
+        <input type="text" name="respuesta_73" value="<?php echo $respuesta_73; ?>" size="35">
+    }
+
+    <input type="text" name="respuesta_74" value="<?php echo $respuesta_74; ?>" size="11">
+    <input type="text" name="respuesta_75" value="<?php echo $respuesta_75; ?>" size="44">
+     {  
+        <input type="text" name="respuesta_76" value="<?php echo $respuesta_76; ?>" size="48">
+    }
+
+    <input type="text" name="respuesta_77" value="<?php echo $respuesta_77; ?>" size="11">
+    <input type="text" name="respuesta_78" value="<?php echo $respuesta_78; ?>" size="48">
+      {
+        <input type="text" name="respuesta_79" value="<?php echo $respuesta_79; ?>" size="71">
+    }
+
+    <input type="text" name="respuesta_80" value="<?php echo $respuesta_80; ?>" size="11">
+    <input type="text" name="respuesta_81" value="<?php echo htmlspecialchars($respuesta_81 ?? '', ENT_QUOTES); ?>" size="31">
+    <input type="text" name="respuesta_82" value="<?php echo $respuesta_82; ?>" size="71">
+      {
+        <input type="text" name="respuesta_83" value="<?php echo $respuesta_83; ?>" size="61">
+        <input type="text" name="respuesta_84" value="<?php echo htmlspecialchars($respuesta_84 ?? '', ENT_QUOTES); ?>" size="68">
+        <input type="text" name="respuesta_85" value="<?php echo $respuesta_85; ?>" size="31">
+                <input type="text" name="respuesta_86" value="<?php echo $respuesta_86; ?>" size="33">
+                <input type="text" name="respuesta_87" value="<?php echo $respuesta_87; ?>" size="11">
+    }
+</pre>
+<button type="submit">Enviar</button>
+ <?php echo $verificar_66 ?>
 
     <?php echo $verificar_67 ?>
 <?php echo $verificar_68 ?>
@@ -1690,7 +1838,41 @@ function ocultarMensaje4() {
 <?php echo $verificar_85 ?>
 <?php echo $verificar_86 ?>
 <?php echo $verificar_87 ?>
-<?php echo $verificar_88 ?>
+<hr>
+<pre>
+    <input type="text" name="respuesta_88" value="<?php echo $respuesta_88; ?>" size="11">
+    <input type="text" name="respuesta_89" value="<?php echo $respuesta_89; ?>" size="55">
+      {
+        <input type="text" name="respuesta_90" value="<?php echo $respuesta_90; ?>" size="41">
+        <input type="text" name="respuesta_91" value="<?php echo $respuesta_91; ?>" size="73">
+        <input type="text" name="respuesta_92"  value="<?php echo htmlspecialchars($respuesta_92 ?? '', ENT_QUOTES); ?>" size="99">
+    }
+
+    <input type="text" name="respuesta_93" value="<?php echo $respuesta_93; ?>" size="11">
+    <input type="text" name="respuesta_94" value="<?php echo $respuesta_94; ?>" size="41">
+      {
+        <input type="text" name="respuesta_95" value="<?php echo $respuesta_95; ?>" size="8">
+          {
+        <input type="text" name="respuesta_96" value="<?php echo $respuesta_96; ?>" size="16">
+            <input type="text" name="respuesta_97" value="<?php echo $respuesta_97; ?>" size="16">
+            <input type="text" name="respuesta_98" value="<?php echo $respuesta_98; ?>" size="16">
+            <input type="text" name="respuesta_99" value="<?php echo $respuesta_99; ?>" size="25">
+
+        <input type="text" name="respuesta_100" value="<?php echo $respuesta_100; ?>" size="25">
+          {
+            <input type="text" name="respuesta_101" value="<?php echo $respuesta_101; ?>" size="25">
+        }
+        <input type="text" name="respuesta_102" value="<?php echo $respuesta_102; ?>" size="25">
+
+        } <input type="text" name="respuesta_103" value="<?php echo $respuesta_103; ?>" size="25">
+           {
+            <input type="text" name="respuesta_104" value="<?php echo $respuesta_104; ?>" size="25">
+        }
+    }
+}
+</pre>
+ <button type="submit">Enviar</button>
+ <?php echo $verificar_88 ?>
 <?php echo $verificar_89 ?>
 <?php echo $verificar_90 ?>
 <?php echo $verificar_91 ?>
@@ -1707,154 +1889,6 @@ function ocultarMensaje4() {
 <?php echo $verificar_102 ?>
 <?php echo $verificar_103 ?>
 <?php echo $verificar_104 ?>
-<?php echo $verificar_105 ?>
-<?php echo $verificar_106 ?>
-<?php echo $verificar_107 ?>
-<?php echo $verificar_108 ?>
-<?php echo $verificar_109 ?>
-<?php echo $verificar_110 ?>
-<?php echo $verificar_111 ?>
-<?php echo $verificar_112 ?>
-<?php echo $verificar_113 ?>
-<?php echo $verificar_114 ?>
-<?php echo $verificar_115 ?>
-<?php echo $verificar_116 ?>
-<?php echo $verificar_117 ?>
-<?php echo $verificar_118 ?>
-<?php echo $verificar_119 ?>
-<?php echo $verificar_120 ?>
-<?php echo $verificar_121 ?>
-<?php echo $verificar_122 ?>
-<?php echo $verificar_123 ?>
-<?php echo $verificar_124 ?>
-<?php echo $verificar_125 ?>
-<?php echo $verificar_126 ?>
-<?php echo $verificar_127 ?>
-<?php echo $verificar_128 ?>
-<?php echo $verificar_129 ?>
-<?php echo $verificar_130 ?>
-<?php echo $verificar_131 ?>
-<?php echo $verificar_132 ?>
-<?php echo $verificar_133 ?>
-    <br><br><br>
-
-  
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_23 ?>
-    <?php echo $verificar_24 ?>
-    <?php echo $verificar_25 ?>
-    <?php echo $verificar_26 ?>
-    <?php echo $verificar_27 ?>
-    <?php echo $verificar_28 ?>
-    <?php echo $verificar_29 ?>
-    <?php echo $verificar_30 ?>
-    <?php echo $verificar_31 ?>
-    <?php echo $verificar_32 ?>
-    <?php echo $verificar_33 ?>
-
- 
-   
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_34 ?>
-    <?php echo $verificar_35 ?>
-    <?php echo $verificar_36 ?>
-    <?php echo $verificar_37 ?>
-    <?php echo $verificar_38 ?>
-    <?php echo $verificar_39 ?>
-    <?php echo $verificar_40 ?>
-    <?php echo $verificar_41 ?>
-    <?php echo $verificar_42 ?>
-    <?php echo $verificar_43 ?>
-    <?php echo $verificar_44 ?>
-            <br><br><br>
-
-    
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_45 ?>
-    <?php echo $verificar_46 ?>
-    <?php echo $verificar_47 ?>
-    <?php echo $verificar_48 ?>
-    <?php echo $verificar_49 ?>
-    <?php echo $verificar_50 ?>
-    <?php echo $verificar_51 ?>
-    <?php echo $verificar_52 ?>
-    <?php echo $verificar_53 ?>
-    <?php echo $verificar_54 ?>
-    <?php echo $verificar_55 ?>
-   
-</div>
-
-
-
-
-<div class="seccion derecha">
-    
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_56 ?>
-    <?php echo $verificar_57 ?>
-    <?php echo $verificar_58 ?>
-    <?php echo $verificar_59 ?>
-    <?php echo $verificar_60 ?>
-    <?php echo $verificar_61 ?>
-    <?php echo $verificar_62 ?>
-    <?php echo $verificar_63 ?>
-    <?php echo $verificar_64 ?>
-    <?php echo $verificar_65 ?>
-    <?php echo $verificar_66 ?>
- 
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_67 ?>
-    <?php echo $verificar_68 ?>
-    <?php echo $verificar_69 ?>
-    <?php echo $verificar_70 ?>
-    <?php echo $verificar_71 ?>
-    <?php echo $verificar_72 ?>
-    <?php echo $verificar_73 ?>
-    <?php echo $verificar_74 ?>
-    <?php echo $verificar_75 ?>
-    <?php echo $verificar_76 ?>
-    <?php echo $verificar_77 ?>
- 
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_78 ?>
-    <?php echo $verificar_79 ?>
-    <?php echo $verificar_80 ?> 
-    <?php echo $verificar_81 ?>
-    <?php echo $verificar_82 ?>
-    <?php echo $verificar_83 ?>
-    <?php echo $verificar_84 ?>
-    <?php echo $verificar_85 ?>
-    <?php echo $verificar_86 ?>
-    <?php echo $verificar_87 ?>
-    <?php echo $verificar_88 ?>
- 
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_89 ?>
-    <?php echo $verificar_90 ?>
-    <?php echo $verificar_91 ?>
-    <?php echo $verificar_92 ?>
-    <?php echo $verificar_93 ?>
-    <?php echo $verificar_94 ?>
-    <?php echo $verificar_95 ?>
-    <?php echo $verificar_96 ?>
-    <?php echo $verificar_97 ?>
-    <?php echo $verificar_98 ?> 
-    <?php echo $verificar_99 ?>
- 
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_100 ?>
-    <?php echo $verificar_101 ?>
-    <?php echo $verificar_102 ?>
-    <?php echo $verificar_103 ?>
-    <?php echo $verificar_104 ?>
-    <?php echo $verificar_105 ?>
-    <?php echo $verificar_106 ?>
-    <?php echo $verificar_107 ?>
-    <?php echo $verificar_108 ?>
-    <?php echo $verificar_109 ?>
-    <?php echo $verificar_110 ?>
-    <br><br><br>
- 
     <hr>
     <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
     <br>
@@ -1869,7 +1903,7 @@ function ocultarMensaje4() {
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="segundo.php"
+        href="septimo.php"
         role="button"
         width="50px"
         height="50px"

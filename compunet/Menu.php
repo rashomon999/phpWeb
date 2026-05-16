@@ -49,6 +49,8 @@
 
         <a class="btn" href=".\REST\index.php">REST</a>
           
+        <a class="btn" href=".\JAVASCRIPT\index.php">JAVASCRIPT</a>
+         
     </div>
 </body>
 </html>
