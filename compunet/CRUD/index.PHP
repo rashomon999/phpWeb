@@ -18,123 +18,60 @@ if ($_POST) {
     
     if ($mostrar_solucion === 'mostrar_solucion') {        
  
-    $respuesta_1  = 'alcance de funcion';
-    $respuesta_2  = 'permite redeclaracion';
-    $respuesta_3  = 'permite reasignacion';
-    $respuesta_4  = 'alcance de bloque';
-    $respuesta_5  = 'no permite redeclaracion';
-    $respuesta_6  = 'permite reasignacion';
-    $respuesta_7  = 'alcance de bloque';
-    $respuesta_8  = 'no permite redeclaracion';
-    $respuesta_9  = 'no permite reasignacion';
-    $respuesta_10 = 'comportamiento';
-    $respuesta_11 = 'declaraciones';
-    $respuesta_12 = 'moverse';
-    $respuesta_13 = 'inicio';
-    $respuesta_14 = 'scope';
-    $respuesta_15 = 'declaracion se hoistea';
-    $respuesta_16 = 'asignacion no';
-    $respuesta_17 = 'undefined';
-    $respuesta_18 = 'Temporal Dead Zone';
-    $respuesta_19 = 'TDZ';
-    $respuesta_20 = 'ReferenceError';
-    $respuesta_21 = 'hoistean completamente';
-    $respuesta_22 = 'asignarse';
-    $respuesta_23 = 'variables';
-    $respuesta_24 = 'pasarse';
-    $respuesta_25 = 'argumentos';
-    $respuesta_26 = 'retornarse';
-    $respuesta_27 = 'function suma(a, b)';
-    $respuesta_28 = 'return a + b;';
-    $respuesta_29 = 'Declaracion de funcion';
-    $respuesta_30 = 'Expresion de funcion';
-    $respuesta_31 = 'const resta = function (a, b)';
-    $respuesta_32 = 'return a - b;';
-    $respuesta_33 = 'Arrow functions';
-    $respuesta_34 = 'const multiplicar = (a, b) => a * b;';
-    $respuesta_35 = 'no tienen su propio this';
-    $respuesta_36 = 'arguments';
-    $respuesta_37 = 'function saludar(nombre = "invitado")';
-    $respuesta_38 = 'console.log("Hola " + nombre);';
-    $respuesta_39 = 'function sumaTodo(...nums)';
-    $respuesta_40 = 'return nums.reduce((acc, n) => acc + n, 0);';
-    $respuesta_41 = 'recordar';
-    $respuesta_42 = '1';
-    $respuesta_43 = '2';
-    $respuesta_44 = 'mantiene acceso';
-    $respuesta_45 = 'inmediatamente';
-    $respuesta_46 = 'creada';
-    $respuesta_47 = '(function () {';
-    $respuesta_48 = '})();';
-    $respuesta_49 = 'parentesis';
-    $respuesta_50 = 'convertirla';
-    $respuesta_51 = 'expresion';
-    $respuesta_52 = 'se usan otros';
-    $respuesta_53 = 'ejecutarla';
-    $respuesta_54 = 'function operar(a, b, fn)';
-    $respuesta_55 = 'return fn(a, b);';
-    $respuesta_56 = 'operar(2, 3, (x, y) => x * y);';
-        $respuesta_57 = '54';
-        $respuesta_58 = '72';
-        $respuesta_59 = '90';
-        $respuesta_60 = '108';
-        $respuesta_61 = '126';
-        $respuesta_62 = '144';
-        $respuesta_63 = '162';
-        $respuesta_64 = '180';
-        $respuesta_65 = '198';
-        $respuesta_66 = '216';
-        
+        // getAllGames
+        $respuesta_1  = 'import axiosClient from "../../../lib/axios/axiosClient";';
+        $respuesta_2  = 'export async function getAllGames() {';
+        $respuesta_3  = 'try {';
+        $respuesta_4  = 'const response = await axiosClient.get("/rest/games");';
+        $respuesta_5  = 'return response.data;';
+        $respuesta_6  = '} catch (error) {';
+        $respuesta_7  = 'console.error("Error fetching games:", error);';
+        $respuesta_8  = 'throw error;';
+        $respuesta_9  = '}';
+        $respuesta_10 = '}';
  
-        $respuesta_67 = '38';
-        $respuesta_68 = '57';
-        $respuesta_69 = '76';
-        $respuesta_70 = '95';
-        $respuesta_71 = '114';
-        $respuesta_72 = '133';
-        $respuesta_73 = '152';
-        $respuesta_74 = '171';
-        $respuesta_75 = '190';
-        $respuesta_76 = '209';
-        $respuesta_77 = '228';
-        
+        // getGameById
+        $respuesta_11 = 'export async function getGameById(id) {';
+        $respuesta_12 = 'try {';
+        $respuesta_13 = 'const response = await axiosClient.get(`/rest/games/${id}`);';
+        $respuesta_14 = 'return response.data;';
+        $respuesta_15 = '} catch (error) {';
+        $respuesta_16 = 'console.error("Error fetching game:", error);';
+        $respuesta_17 = 'throw error;';
+        $respuesta_18 = '}';
+        $respuesta_19 = '}';
  
-        $respuesta_78 = '40';
-        $respuesta_79 = '60';
-        $respuesta_80 = '80';
-        $respuesta_81 = '100';
-        $respuesta_82 = '120';
-        $respuesta_83 = '140';
-        $respuesta_84 = '160';
-        $respuesta_85 = '180';
-        $respuesta_86 = '200';
-        $respuesta_87 = '220';
-        $respuesta_88 = '240';
-        
+        // createGame
+        $respuesta_20 = 'export async function createGame(gameData) {';
+        $respuesta_21 = 'try {';
+        $respuesta_22 = 'const response = await axiosClient.post("/rest/games", gameData);';
+        $respuesta_23 = 'return response.data;';
+        $respuesta_24 = '} catch (error) {';
+        $respuesta_25 = 'console.error("Error creating game:", error);';
+        $respuesta_26 = 'throw error;';
+        $respuesta_27 = '}';
+        $respuesta_28 = '}';
  
-        $respuesta_89 = '42';
-        $respuesta_90 = '63';
-        $respuesta_91 = '84';
-        $respuesta_92 = '105';
-        $respuesta_93 = '126';
-        $respuesta_94 = '147';
-        $respuesta_95 = '168';
-        $respuesta_96 = '189';
-        $respuesta_97 = '210';
-        $respuesta_98 = '231';
-        $respuesta_99 = '252';
-        
-         $respuesta_100 = '44';
-        $respuesta_101 = '66';
-        $respuesta_102 = '88';
-        $respuesta_103 = '110';
-        $respuesta_104 = '132'; 
-        $respuesta_105 = '154';
-        $respuesta_106 = '176';
-        $respuesta_107 = '198';
-        $respuesta_108 = '220';
-        $respuesta_109 = '242';
-        $respuesta_110 = '264';
+        // updateGame
+        $respuesta_29 = 'export async function updateGame(id, gameData) {';
+        $respuesta_30 = 'try {';
+        $respuesta_31 = 'const response = await axiosClient.put(`/rest/games/${id}`, gameData);';
+        $respuesta_32 = 'return response.data;';
+        $respuesta_33 = '} catch (error) {';
+        $respuesta_34 = 'console.error("Error updating game:", error);';
+        $respuesta_35 = 'throw error;';
+        $respuesta_36 = '}';
+        $respuesta_37 = '}';
+ 
+        // deleteGame
+        $respuesta_38 = 'export async function deleteGame(id) {';
+        $respuesta_39 = 'try {';
+        $respuesta_40 = 'await axiosClient.delete(`/rest/games/${id}`);';
+        $respuesta_41 = '} catch (error) {';
+        $respuesta_42 = 'console.error("Error deleting game:", error);';
+        $respuesta_43 = 'throw error;';
+        $respuesta_44 = '}';
+        $respuesta_45 = '}';
         
         // Marcar todas como correctas
     for ($i = 1; $i <= 122; $i++) {
@@ -142,219 +79,199 @@ if ($_POST) {
     }
 
     } else {
-    $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === 'alcance de funcion') {  
-       $verificar_1 = "correcto";
-   } elseif ($respuesta_1 === '') {
-       $verificar_1 = '';
-   } else {
-       $verificar_1 = "incorrecto";
-   }
+  
 
-   // Verificar la respuesta de la segunda pregunta
-   $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === 'permite redeclaracion') {  
-       $verificar_2 = "correcto";
-   } elseif ($respuesta_2 === '') {
-       $verificar_2 = '';
-   } else {
-       $verificar_2 = "incorrecto";
-   }
+        $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
+    if ($respuesta_1 === 'import axiosClient from "../../../lib/axios/axiosClient";') {
+        $verificar_1 = "correcto";
+    } elseif ($respuesta_1 === '') {
+        $verificar_1 = '';
+    } else {
+        $verificar_1 = "incorrecto";
+    }
 
-   // Verificar la respuesta de la tercera pregunta
-   $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === 'permite reasignacion') {  
-       $verificar_3 = "correcto";
-   } elseif ($respuesta_3 === '') {
-       $verificar_3 = '';
-   } else {
-       $verificar_3 = "incorrecto";
-   }
+    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
+    if ($respuesta_2 === 'export async function getAllGames() {') {
+        $verificar_2 = "correcto";
+    } elseif ($respuesta_2 === '') {
+        $verificar_2 = '';
+    } else {
+        $verificar_2 = "incorrecto";
+    }
 
-   // Verificar la respuesta de la cuarta pregunta
-   $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === 'alcance de bloque') {  
-       $verificar_4 = "correcto";
-   } elseif ($respuesta_4 === '') {
-       $verificar_4 = '';
-   } else {
-       $verificar_4 = "incorrecto";
-   }
+    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
+    if ($respuesta_3 === 'try {') {
+        $verificar_3 = "correcto";
+    } elseif ($respuesta_3 === '') {
+        $verificar_3 = '';
+    } else {
+        $verificar_3 = "incorrecto";
+    }
 
-   // Verificar la respuesta de la quinta pregunta
-   $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === 'no permite redeclaracion') {  
-       $verificar_5 = "correcto";
-   } elseif ($respuesta_5 === '') {
-       $verificar_5 = '';
-   } else {
-       $verificar_5 = "incorrecto";
-   }
+    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
+    if ($respuesta_4 === 'const response = await axiosClient.get("/rest/games");') {
+        $verificar_4 = "correcto";
+    } elseif ($respuesta_4 === '') {
+        $verificar_4 = '';
+    } else {
+        $verificar_4 = "incorrecto";
+    }
 
-   // Verificar la respuesta de la sexta pregunta
-   $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === 'permite reasignacion') {  
-       $verificar_6 = "correcto";
-   } elseif ($respuesta_6 === '') {
-       $verificar_6 = '';
-   } else {
-       $verificar_6 = "incorrecto";
-   }
+    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
+    if ($respuesta_5 === 'return response.data;') {
+        $verificar_5 = "correcto";
+    } elseif ($respuesta_5 === '') {
+        $verificar_5 = '';
+    } else {
+        $verificar_5 = "incorrecto";
+    }
 
-   // Verificar la respuesta de la séptima pregunta
-   $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === 'alcance de bloque') {  
-       $verificar_7 = "correcto";
-   } elseif ($respuesta_7 === '') {
-       $verificar_7 = '';
-   } else {
-       $verificar_7 = "incorrecto";
-   }
+    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
+    if ($respuesta_6 === '} catch (error) {') {
+        $verificar_6 = "correcto";
+    } elseif ($respuesta_6 === '') {
+        $verificar_6 = '';
+    } else {
+        $verificar_6 = "incorrecto";
+    }
 
-   // Verificar la respuesta de la octava pregunta
-   $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === 'no permite redeclaracion') {  
-       $verificar_8 = "correcto";
-   } elseif ($respuesta_8 === '') {
-       $verificar_8 = '';
-   } else {
-       $verificar_8 = "incorrecto";
-   }
+    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
+    if ($respuesta_7 === 'console.error("Error fetching games:", error);') {
+        $verificar_7 = "correcto";
+    } elseif ($respuesta_7 === '') {
+        $verificar_7 = '';
+    } else {
+        $verificar_7 = "incorrecto";
+    }
 
-   // Verificar la respuesta de la novena pregunta
-   $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === 'no permite reasignacion') {  
-       $verificar_9 = "correcto";
-   } elseif ($respuesta_9 === '') {
-       $verificar_9 = '';
-   } else {
-       $verificar_9 = "incorrecto";
-   }
+    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
+    if ($respuesta_8 === 'throw error;') {
+        $verificar_8 = "correcto";
+    } elseif ($respuesta_8 === '') {
+        $verificar_8 = '';
+    } else {
+        $verificar_8 = "incorrecto";
+    }
 
-   // Verificar la respuesta de la décima pregunta
-   $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === 'comportamiento') {  
-       $verificar_10 = "correcto";
-   } elseif ($respuesta_10 === '') {
-       $verificar_10 = '';
-   } else {
-       $verificar_10 = "incorrecto";
-   }
+    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
+    if ($respuesta_9 === '}') {
+        $verificar_9 = "correcto";
+    } elseif ($respuesta_9 === '') {
+        $verificar_9 = '';
+    } else {
+        $verificar_9 = "incorrecto";
+    }
 
-   // Verificar la respuesta de la undécima pregunta
-   $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === 'declaraciones') {  
-       $verificar_11 = "correcto";
-   } elseif ($respuesta_11 === '') {
-       $verificar_11 = '';
-   } else {
-       $verificar_11 = "incorrecto";
-   }
+    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
+    if ($respuesta_10 === '}') {
+        $verificar_10 = "correcto";
+    } elseif ($respuesta_10 === '') {
+        $verificar_10 = '';
+    } else {
+        $verificar_10 = "incorrecto";
+    }
 
+    $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
+    if ($respuesta_11 === 'export async function getGameById(id) {') {
+        $verificar_11 = "correcto";
+    } elseif ($respuesta_11 === '') {
+        $verificar_11 = '';
+    } else {
+        $verificar_11 = "incorrecto";
+    }
 
-    // Verificar la respuesta de la primera pregunta
     $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-    if ($respuesta_12 === 'moverse') {  
+    if ($respuesta_12 === 'try {') {
         $verificar_12 = "correcto";
     } elseif ($respuesta_12 === '') {
         $verificar_12 = '';
     } else {
         $verificar_12 = "incorrecto";
     }
-  
-    // Verificar la respuesta de la segunda pregunta
+
     $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-    if ($respuesta_13 === 'inicio') { 
+    if ($respuesta_13 === 'const response = await axiosClient.get(`/rest/games/${id}`);') {
         $verificar_13 = "correcto";
     } elseif ($respuesta_13 === '') {
         $verificar_13 = '';
     } else {
-         $verificar_13 = "incorrecto";
+        $verificar_13 = "incorrecto";
     }
-  
-    // Verificar la respuesta de la tercera pregunta
+
     $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-    if ($respuesta_14 === 'scope') {  
+    if ($respuesta_14 === 'return response.data;') {
         $verificar_14 = "correcto";
     } elseif ($respuesta_14 === '') {
         $verificar_14 = '';
     } else {
         $verificar_14 = "incorrecto";
     }
-  
-    // Verificar la respuesta de la cuarta pregunta
+
     $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-    if ($respuesta_15 === 'declaracion se hoistea') { 
+    if ($respuesta_15 === '} catch (error) {') {
         $verificar_15 = "correcto";
     } elseif ($respuesta_15 === '') {
         $verificar_15 = '';
     } else {
         $verificar_15 = "incorrecto";
     }
-  
-    // Verificar la respuesta de la quinta pregunta
+
     $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-    if ($respuesta_16 === 'asignacion no') {  
+    if ($respuesta_16 === 'console.error("Error fetching game:", error);') {
         $verificar_16 = "correcto";
     } elseif ($respuesta_16 === '') {
         $verificar_16 = '';
     } else {
         $verificar_16 = "incorrecto";
     }
-  
-    // Verificar la respuesta de la sexta pregunta
+
     $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-    if ($respuesta_17 === 'undefined') {  
+    if ($respuesta_17 === 'throw error;') {
         $verificar_17 = "correcto";
-        } elseif ($respuesta_17 === '') {
+    } elseif ($respuesta_17 === '') {
         $verificar_17 = '';
     } else {
         $verificar_17 = "incorrecto";
     }
-  
-    // Verificar la respuesta de la séptima pregunta
+
     $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-    if ($respuesta_18 === 'Temporal Dead Zone') {  
+    if ($respuesta_18 === '}') {
         $verificar_18 = "correcto";
     } elseif ($respuesta_18 === '') {
         $verificar_18 = '';
     } else {
         $verificar_18 = "incorrecto";
     }
-  
-    // Verificar la respuesta de la octava pregunta
+
     $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-    if ($respuesta_19 === 'TDZ') {  
+    if ($respuesta_19 === '}') {
         $verificar_19 = "correcto";
     } elseif ($respuesta_19 === '') {
         $verificar_19 = '';
     } else {
         $verificar_19 = "incorrecto";
     }
-  
-    // Verificar la respuesta de la novena pregunta
+
     $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
-    if ($respuesta_20 === 'ReferenceError') {  
+    if ($respuesta_20 === 'export async function createGame(gameData) {') {
         $verificar_20 = "correcto";
     } elseif ($respuesta_20 === '') {
         $verificar_20 = '';
     } else {
         $verificar_20 = "incorrecto";
     }
-  
-    // Verificar la respuesta de la décima pregunta
+
     $respuesta_21 = isset($_POST['respuesta_21']) ? $_POST['respuesta_21'] : '';
-    if ($respuesta_21 === 'hoistean completamente') {  
-         $verificar_21 = "correcto";
+    if ($respuesta_21 === 'try {') {
+        $verificar_21 = "correcto";
     } elseif ($respuesta_21 === '') {
         $verificar_21 = '';
     } else {
         $verificar_21 = "incorrecto";
     }
-  
-    // Verificar la respuesta de la undécima pregunta
+
     $respuesta_22 = isset($_POST['respuesta_22']) ? $_POST['respuesta_22'] : '';
-    if ($respuesta_22 === 'asignarse') {  
+    if ($respuesta_22 === 'const response = await axiosClient.post("/rest/games", gameData);') {
         $verificar_22 = "correcto";
     } elseif ($respuesta_22 === '') {
         $verificar_22 = '';
@@ -362,129 +279,107 @@ if ($_POST) {
         $verificar_22 = "incorrecto";
     }
 
-     // Verificar la respuesta de la primera pregunta
-   $respuesta_23 = isset($_POST['respuesta_23']) ? $_POST['respuesta_23'] : '';
-   if ($respuesta_23 === 'variables') {  
-       $verificar_23 = "correcto";
-   } elseif ($respuesta_23 === '') {
-       $verificar_23 = '';
-   } else {
-       $verificar_23 = "incorrecto";
-   }
+    $respuesta_23 = isset($_POST['respuesta_23']) ? $_POST['respuesta_23'] : '';
+    if ($respuesta_23 === 'return response.data;') {
+        $verificar_23 = "correcto";
+    } elseif ($respuesta_23 === '') {
+        $verificar_23 = '';
+    } else {
+        $verificar_23 = "incorrecto";
+    }
 
-   // Verificar la respuesta de la segunda pregunta
-   $respuesta_24 = isset($_POST['respuesta_24']) ? $_POST['respuesta_24'] : '';
-   if ($respuesta_24 === 'pasarse') {  
-       $verificar_24 = "correcto";
-   } elseif ($respuesta_24 === '') {
-       $verificar_24 = '';
-   } else {
-       $verificar_24 = "incorrecto";
-   }
+    $respuesta_24 = isset($_POST['respuesta_24']) ? $_POST['respuesta_24'] : '';
+    if ($respuesta_24 === '} catch (error) {') {
+        $verificar_24 = "correcto";
+    } elseif ($respuesta_24 === '') {
+        $verificar_24 = '';
+    } else {
+        $verificar_24 = "incorrecto";
+    }
 
-   // Verificar la respuesta de la tercera pregunta
-   $respuesta_25 = isset($_POST['respuesta_25']) ? $_POST['respuesta_25'] : '';
-   if ($respuesta_25 === 'argumentos') { 
-       $verificar_25 = "correcto";
-   } elseif ($respuesta_25 === '') {
-       $verificar_25 = '';
-   } else {
-       $verificar_25 = "incorrecto";
-   }
+    $respuesta_25 = isset($_POST['respuesta_25']) ? $_POST['respuesta_25'] : '';
+    if ($respuesta_25 === 'console.error("Error creating game:", error);') {
+        $verificar_25 = "correcto";
+    } elseif ($respuesta_25 === '') {
+        $verificar_25 = '';
+    } else {
+        $verificar_25 = "incorrecto";
+    }
 
-   // Verificar la respuesta de la cuarta pregunta
-   $respuesta_26 = isset($_POST['respuesta_26']) ? $_POST['respuesta_26'] : '';
-   if ($respuesta_26 === 'retornarse') {  
-       $verificar_26 = "correcto";
-   } elseif ($respuesta_26 === '') {
-       $verificar_26 = '';
-   } else {
-       $verificar_26 = "incorrecto";
-   }
+    $respuesta_26 = isset($_POST['respuesta_26']) ? $_POST['respuesta_26'] : '';
+    if ($respuesta_26 === 'throw error;') {
+        $verificar_26 = "correcto";
+    } elseif ($respuesta_26 === '') {
+        $verificar_26 = '';
+    } else {
+        $verificar_26 = "incorrecto";
+    }
 
-   // Verificar la respuesta de la quinta pregunta
-   $respuesta_27 = isset($_POST['respuesta_27']) ? $_POST['respuesta_27'] : '';
-   if ($respuesta_27 === 'function suma(a, b)'
-   || $respuesta_27 === 'function suma(a,b)'
-   ) {  
-       $verificar_27 = "correcto";
-   } elseif ($respuesta_27 === '') {
-       $verificar_27 = '';
-   } else {
-       $verificar_27 = "incorrecto";
-   }
+    $respuesta_27 = isset($_POST['respuesta_27']) ? $_POST['respuesta_27'] : '';
+    if ($respuesta_27 === '}') {
+        $verificar_27 = "correcto";
+    } elseif ($respuesta_27 === '') {
+        $verificar_27 = '';
+    } else {
+        $verificar_27 = "incorrecto";
+    }
 
-   // Verificar la respuesta de la sexta pregunta
-   $respuesta_28 = isset($_POST['respuesta_28']) ? $_POST['respuesta_28'] : '';
-   if ($respuesta_28 === 'return a + b;'
-   || $respuesta_28 === 'return a+b;'
-   ) {  
-       $verificar_28 = "correcto";
-   } elseif ($respuesta_28 === '') {
-       $verificar_28 = '';
-   } else {
-       $verificar_28 = "incorrecto";
-   }
+    $respuesta_28 = isset($_POST['respuesta_28']) ? $_POST['respuesta_28'] : '';
+    if ($respuesta_28 === '}') {
+        $verificar_28 = "correcto";
+    } elseif ($respuesta_28 === '') {
+        $verificar_28 = '';
+    } else {
+        $verificar_28 = "incorrecto";
+    }
 
-   // Verificar la respuesta de la séptima pregunta
-   $respuesta_29 = isset($_POST['respuesta_29']) ? $_POST['respuesta_29'] : '';
-   if ($respuesta_29 === 'Declaracion de funcion') {  
-       $verificar_29 = "correcto";
-   } elseif ($respuesta_29 === '') {
-       $verificar_29 = '';
-   } else {
-       $verificar_29 = "incorrecto";
-   }
+    $respuesta_29 = isset($_POST['respuesta_29']) ? $_POST['respuesta_29'] : '';
+    if ($respuesta_29 === 'export async function updateGame(id, gameData) {') {
+        $verificar_29 = "correcto";
+    } elseif ($respuesta_29 === '') {
+        $verificar_29 = '';
+    } else {
+        $verificar_29 = "incorrecto";
+    }
 
-   // Verificar la respuesta de la octava pregunta
-   $respuesta_30 = isset($_POST['respuesta_30']) ? $_POST['respuesta_30'] : '';
-   if ($respuesta_30 === 'Expresion de funcion') {  
-       $verificar_30 = "correcto";
-   } elseif ($respuesta_30 === '') {
-       $verificar_30 = '';
-   } else {
-       $verificar_30 = "incorrecto";
-   }
+    $respuesta_30 = isset($_POST['respuesta_30']) ? $_POST['respuesta_30'] : '';
+    if ($respuesta_30 === 'try {') {
+        $verificar_30 = "correcto";
+    } elseif ($respuesta_30 === '') {
+        $verificar_30 = '';
+    } else {
+        $verificar_30 = "incorrecto";
+    }
 
-   // Verificar la respuesta de la novena pregunta
-   $respuesta_31 = isset($_POST['respuesta_31']) ? $_POST['respuesta_31'] : '';
-   if ($respuesta_31 === 'const resta = function (a, b)'
-|| $respuesta_31 === 'const resta = function (a,b)'
-   ) {  
-       $verificar_31 = "correcto";
-   } elseif ($respuesta_31 === '') {
-       $verificar_31 = '';
-   } else {
-       $verificar_31 = "incorrecto";
-   }
+    $respuesta_31 = isset($_POST['respuesta_31']) ? $_POST['respuesta_31'] : '';
+    if ($respuesta_31 === 'const response = await axiosClient.put(`/rest/games/${id}`, gameData);') {
+        $verificar_31 = "correcto";
+    } elseif ($respuesta_31 === '') {
+        $verificar_31 = '';
+    } else {
+        $verificar_31 = "incorrecto";
+    }
 
-   // Verificar la respuesta de la décima pregunta
-   $respuesta_32 = isset($_POST['respuesta_32']) ? $_POST['respuesta_32'] : '';
-   if ($respuesta_32 === 'return a - b;') {  
-       $verificar_32 = "correcto";
-   } elseif ($respuesta_32 === '') {
-       $verificar_32 = '';
-   } else {
-       $verificar_32 = "incorrecto";
-   }
+    $respuesta_32 = isset($_POST['respuesta_32']) ? $_POST['respuesta_32'] : '';
+    if ($respuesta_32 === 'return response.data;') {
+        $verificar_32 = "correcto";
+    } elseif ($respuesta_32 === '') {
+        $verificar_32 = '';
+    } else {
+        $verificar_32 = "incorrecto";
+    }
 
-   // Verificar la respuesta de la undécima pregunta
-   $respuesta_33 = isset($_POST['respuesta_33']) ? $_POST['respuesta_33'] : '';
-   if ($respuesta_33 === 'Arrow functions') {  
-       $verificar_33 = "correcto";
-   } elseif ($respuesta_33 === '') {
-       $verificar_33 = '';
-   } else {
-       $verificar_33 = "incorrecto";
-   }
+    $respuesta_33 = isset($_POST['respuesta_33']) ? $_POST['respuesta_33'] : '';
+    if ($respuesta_33 === '} catch (error) {') {
+        $verificar_33 = "correcto";
+    } elseif ($respuesta_33 === '') {
+        $verificar_33 = '';
+    } else {
+        $verificar_33 = "incorrecto";
+    }
 
     $respuesta_34 = isset($_POST['respuesta_34']) ? $_POST['respuesta_34'] : '';
-    if ($respuesta_34 === 'const multiplicar = (a, b) => a * b;' ||
-    $respuesta_34 === 'const multiplicar = (a,b) => a * b;'
-    || $respuesta_34 === 'const multiplicar = (a, b) => a*b;'
-    || $respuesta_34 === 'const multiplicar = (a,b) => a*b;'
-
-    ) { 
+    if ($respuesta_34 === 'console.error("Error updating game:", error);') {
         $verificar_34 = "correcto";
     } elseif ($respuesta_34 === '') {
         $verificar_34 = '';
@@ -493,7 +388,7 @@ if ($_POST) {
     }
 
     $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
-    if ($respuesta_35 === 'no tienen su propio this') { 
+    if ($respuesta_35 === 'throw error;') {
         $verificar_35 = "correcto";
     } elseif ($respuesta_35 === '') {
         $verificar_35 = '';
@@ -502,16 +397,16 @@ if ($_POST) {
     }
 
     $respuesta_36 = isset($_POST['respuesta_36']) ? $_POST['respuesta_36'] : '';
-    if ($respuesta_36 === 'arguments') { 
+    if ($respuesta_36 === '}') {
         $verificar_36 = "correcto";
     } elseif ($respuesta_36 === '') {
-    $verificar_36 = '';
+        $verificar_36 = '';
     } else {
         $verificar_36 = "incorrecto";
     }
 
     $respuesta_37 = isset($_POST['respuesta_37']) ? $_POST['respuesta_37'] : '';
-    if ($respuesta_37 === 'function saludar(nombre = "invitado")') { 
+    if ($respuesta_37 === '}') {
         $verificar_37 = "correcto";
     } elseif ($respuesta_37 === '') {
         $verificar_37 = '';
@@ -520,7 +415,7 @@ if ($_POST) {
     }
 
     $respuesta_38 = isset($_POST['respuesta_38']) ? $_POST['respuesta_38'] : '';
-    if ($respuesta_38 === 'console.log("Hola " + nombre);') { 
+    if ($respuesta_38 === 'export async function deleteGame(id) {') {
         $verificar_38 = "correcto";
     } elseif ($respuesta_38 === '') {
         $verificar_38 = '';
@@ -529,7 +424,7 @@ if ($_POST) {
     }
 
     $respuesta_39 = isset($_POST['respuesta_39']) ? $_POST['respuesta_39'] : '';
-    if ($respuesta_39 === 'function sumaTodo(...nums)') { 
+    if ($respuesta_39 === 'try {') {
         $verificar_39 = "correcto";
     } elseif ($respuesta_39 === '') {
         $verificar_39 = '';
@@ -538,7 +433,7 @@ if ($_POST) {
     }
 
     $respuesta_40 = isset($_POST['respuesta_40']) ? $_POST['respuesta_40'] : '';
-    if ($respuesta_40 === 'return nums.reduce((acc, n) => acc + n, 0);') { 
+    if ($respuesta_40 === 'await axiosClient.delete(`/rest/games/${id}`);') {
         $verificar_40 = "correcto";
     } elseif ($respuesta_40 === '') {
         $verificar_40 = '';
@@ -547,7 +442,7 @@ if ($_POST) {
     }
 
     $respuesta_41 = isset($_POST['respuesta_41']) ? $_POST['respuesta_41'] : '';
-    if ($respuesta_41 === 'recordar') { 
+    if ($respuesta_41 === '} catch (error) {') {
         $verificar_41 = "correcto";
     } elseif ($respuesta_41 === '') {
         $verificar_41 = '';
@@ -556,7 +451,7 @@ if ($_POST) {
     }
 
     $respuesta_42 = isset($_POST['respuesta_42']) ? $_POST['respuesta_42'] : '';
-    if ($respuesta_42 === '1') { 
+    if ($respuesta_42 === 'console.error("Error deleting game:", error);') {
         $verificar_42 = "correcto";
     } elseif ($respuesta_42 === '') {
         $verificar_42 = '';
@@ -565,34 +460,35 @@ if ($_POST) {
     }
 
     $respuesta_43 = isset($_POST['respuesta_43']) ? $_POST['respuesta_43'] : '';
-    if ($respuesta_43 === '2') { 
+    if ($respuesta_43 === 'throw error;') {
         $verificar_43 = "correcto";
     } elseif ($respuesta_43 === '') {
         $verificar_43 = '';
     } else {
-    $verificar_43 = "incorrecto";
+        $verificar_43 = "incorrecto";
     }
 
     $respuesta_44 = isset($_POST['respuesta_44']) ? $_POST['respuesta_44'] : '';
-    if ($respuesta_44 === 'mantiene acceso') { 
+    if ($respuesta_44 === '}') {
         $verificar_44 = "correcto";
     } elseif ($respuesta_44 === '') {
-    $verificar_44 = '';
+        $verificar_44 = '';
     } else {
         $verificar_44 = "incorrecto";
     }
 
     $respuesta_45 = isset($_POST['respuesta_45']) ? $_POST['respuesta_45'] : '';
-    if ($respuesta_45 === 'inmediatamente') { 
+    if ($respuesta_45 === '}') {
         $verificar_45 = "correcto";
     } elseif ($respuesta_45 === '') {
-    $verificar_45 = '';
+        $verificar_45 = '';
     } else {
         $verificar_45 = "incorrecto";
     }
 
+
     $respuesta_46 = isset($_POST['respuesta_46']) ? $_POST['respuesta_46'] : '';
-    if ($respuesta_46 === 'creada') { 
+    if ($respuesta_46 === '51') { 
         $verificar_46 = "correcto";
     } elseif ($respuesta_46 === '') {
     $verificar_46 = '';
@@ -601,7 +497,7 @@ if ($_POST) {
     }
 
     $respuesta_47 = isset($_POST['respuesta_47']) ? $_POST['respuesta_47'] : '';
-    if ($respuesta_47 === '(function () {') { 
+    if ($respuesta_47 === '68') { 
         $verificar_47 = "correcto";
     } elseif ($respuesta_47 === '') {
         $verificar_47 = '';
@@ -610,7 +506,7 @@ if ($_POST) {
     }
 
     $respuesta_48 = isset($_POST['respuesta_48']) ? $_POST['respuesta_48'] : '';
-    if ($respuesta_48 === '})();') { 
+    if ($respuesta_48 === '85') { 
         $verificar_48 = "correcto";
     } elseif ($respuesta_48 === '') {
     $verificar_48 = '';
@@ -619,7 +515,7 @@ if ($_POST) {
     }
 
     $respuesta_49 = isset($_POST['respuesta_49']) ? $_POST['respuesta_49'] : '';
-    if ($respuesta_49 === 'parentesis') { 
+    if ($respuesta_49 === '102') { 
         $verificar_49 = "correcto";
     } elseif ($respuesta_49 === '') {
     $verificar_49 = '';
@@ -628,7 +524,7 @@ if ($_POST) {
     }
 
     $respuesta_50 = isset($_POST['respuesta_50']) ? $_POST['respuesta_50'] : '';
-    if ($respuesta_50 === 'convertirla') { 
+    if ($respuesta_50 === '119') { 
         $verificar_50 = "correcto";
     } elseif ($respuesta_50 === '') {
     $verificar_50 = '';
@@ -637,7 +533,7 @@ if ($_POST) {
     }
 
  $respuesta_51 = isset($_POST['respuesta_51']) ? $_POST['respuesta_51'] : '';
-if ($respuesta_51 === 'expresion') { 
+if ($respuesta_51 === '136') { 
     $verificar_51 = "correcto";
 } elseif ($respuesta_51 === '') {
     $verificar_51 = '';
@@ -646,7 +542,7 @@ if ($respuesta_51 === 'expresion') {
 }
 
  $respuesta_52 = isset($_POST['respuesta_52']) ? $_POST['respuesta_52'] : '';
-if ($respuesta_52 === 'se usan otros') { 
+if ($respuesta_52 === '153') { 
     $verificar_52 = "correcto";
 } elseif ($respuesta_52 === '') {
     $verificar_52 = '';
@@ -655,7 +551,7 @@ if ($respuesta_52 === 'se usan otros') {
 }
 
  $respuesta_53 = isset($_POST['respuesta_53']) ? $_POST['respuesta_53'] : '';
-if ($respuesta_53 === 'ejecutarla') { 
+if ($respuesta_53 === '170') { 
     $verificar_53 = "correcto";
 } elseif ($respuesta_53 === '') {
     $verificar_53 = '';
@@ -664,7 +560,7 @@ if ($respuesta_53 === 'ejecutarla') {
 }
 
  $respuesta_54 = isset($_POST['respuesta_54']) ? $_POST['respuesta_54'] : '';
-if ($respuesta_54 === 'function operar(a, b, fn)') { 
+if ($respuesta_54 === '187') { 
     $verificar_54 = "correcto";
 } elseif ($respuesta_54 === '') {
     $verificar_54 = '';
@@ -673,7 +569,7 @@ if ($respuesta_54 === 'function operar(a, b, fn)') {
 }
 
  $respuesta_55 = isset($_POST['respuesta_55']) ? $_POST['respuesta_55'] : '';
-if ($respuesta_55 === 'return fn(a, b);') { 
+if ($respuesta_55 === '204') { 
     $verificar_55 = "correcto";
 } elseif ($respuesta_55 === '') {
     $verificar_55 = '';
@@ -683,7 +579,7 @@ if ($respuesta_55 === 'return fn(a, b);') {
 
 
  $respuesta_56 = isset($_POST['respuesta_56']) ? $_POST['respuesta_56'] : '';
-if ($respuesta_56 === 'operar(2, 3, (x, y) => x * y);') { 
+if ($respuesta_56 === '36') { 
     $verificar_56 = "correcto";
 } elseif ($respuesta_56 === '') {
     $verificar_56 = '';
@@ -1292,17 +1188,21 @@ if ($respuesta_121 === '144') {
 
 <style>
  
+
+ 
     .seccion {
     /*width: 50%;*/    
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 270vh;
+    height: 250vh;
     }
 
 </style>
  
 <script>
+
+
 function handleSubmit(event) {
     event.preventDefault();
 
@@ -1582,77 +1482,39 @@ function ocultarMensaje4() {
 
     
 <div class="seccion izquierda"> 
+<p class="subtitulo">Completa los espacios en blanco con el código correcto</p>
+ 
+    <h2>Import</h2>
+    <pre>
+<input type="text" name="respuesta_1" value="<?php echo htmlspecialchars($respuesta_1); ?>" size="58">
+</pre>
+    <button type="submit">Verificar</button>
+        <?php echo $verificar_1 ?>
 
-   <h2>var</h2>
 
-  <p>Declara una variable con:</p>
+    <hr>
+ <img src="../../img/guia_458.png" alt="" width="800">
 
-  <ul>
-    <li>
-    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="20">    
-     </li>
-    <li>
-    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="20">    
-     </li>
-    <li>
-    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="20">    
-     </li>
-  </ul>
-
-  <pre>
-var x = 10;
-var x = 20;
-x = 30;
-  </pre>
-
-  <hr>
-
-  <h2>let</h2>
-
-  <p>Declara una variable con:</p>
-
-  <ul>
-    <li>
-    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="20">    
-     </li>
-    <li>
-    <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="20">    
-     </li>
-    <li>
-    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="20">    
-     </li>
-  </ul>
-
-  <pre>
-let nombre = "Ana";
-nombre = "Laura";
-  </pre>
-
-  <hr>
-
-  <h2>const</h2>
-
-  <p>Declara una variable con:</p>
-
-  <ul>
-    <li>
-    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="20">    
-     </li>
-    <li>
-    <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="20">    
-     </li>
-    <li>
-    <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="20">    
-     </li>
-  </ul>
-
-  <pre>
-const PI = 3.1416;
-  </pre>
-
-    <button type="submit">enviar</button>
-    <?php echo $verificar_1 ?>
-    <?php echo $verificar_2 ?>
+     <h1>Axios CRUD — API de Juegos</h1>
+ 
+ 
+ 
+    <hr>
+ 
+    <h2>getAllGames</h2>
+    <pre>
+<input type="text" name="respuesta_2" value="<?php echo htmlspecialchars($respuesta_2); ?>" size="42">
+    <input type="text" name="respuesta_3" value="<?php echo htmlspecialchars($respuesta_3); ?>" size="8">
+        <input type="text" name="respuesta_4" value="<?php echo htmlspecialchars($respuesta_4); ?>" size="56">
+        <input type="text" name="respuesta_5" value="<?php echo htmlspecialchars($respuesta_5); ?>" size="22">
+    <input type="text" name="respuesta_6" value="<?php echo htmlspecialchars($respuesta_6); ?>" size="20">
+        <input type="text" name="respuesta_7" value="<?php echo htmlspecialchars($respuesta_7); ?>" size="46">
+        <input type="text" name="respuesta_8" value="<?php echo htmlspecialchars($respuesta_8); ?>" size="14">
+    <input type="text" name="respuesta_9" value="<?php echo htmlspecialchars($respuesta_9); ?>" size="4">
+<input type="text" name="respuesta_10" value="<?php echo htmlspecialchars($respuesta_10); ?>" size="4">
+</pre>
+    <button type="submit">Verificar</button>
+            <?php echo $verificar_2 ?>
     <?php echo $verificar_3 ?>
     <?php echo $verificar_4 ?>
     <?php echo $verificar_5 ?>
@@ -1660,76 +1522,25 @@ const PI = 3.1416;
     <?php echo $verificar_7 ?>  
     <?php echo $verificar_8 ?>
     <?php echo $verificar_9 ?>
-    <hr>
-
-    <h2>5. Hoisting</h2>
-
-  <p>
-    El hoisting es el 
-    <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="14">
-      donde las 
-    <input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="14">
-      parecen 
-    <input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="8">
-    al 
-    <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="8">
-      de su 
-    <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="8">
-     .
-  </p>
-
-  <h3>Variables con var</h3>
-
-  <p>
-    La 
-    <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="21">
-     , pero la 
-    <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="17">
-     .
-  </p>
-
-  <pre>
-console.log(a); // <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="10"> 
-var a = 2;
-  </pre>
-
- 
-
-  <h3>Variables con let y const</h3>
-
-  <p>
-    También se hoistean, pero permanecen en la 
-    <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="21">
-      (
-    <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="4">    
-     )
-    hasta su declaración.
-  </p>
-
-  <pre>
-console.log(b); // <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="15"> 
-let b = 3;
-  </pre>
-
-  <h3>Funciones</h3>
-
-  <p>
-    Las declaraciones de función se 
-    <input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>" size="21">
-     .
-  </p>
-
-  <pre>
-saludar();
-
-function saludar() {
-    console.log("hola");
-}
-  </pre>
-
-    <button type="submit">Enviar</button>
     <?php echo $verificar_10 ?>
-    <?php echo $verificar_11 ?> 
+    <?php echo $verificar_11 ?>
+
+    <hr>
+ <img src="../../img/guia_459.png" alt="" width="800">
+
+    <h2>getGameById</h2>
+    <pre>
+<input type="text" name="respuesta_11" value="<?php echo htmlspecialchars($respuesta_11); ?>" size="44">
+    <input type="text" name="respuesta_12" value="<?php echo htmlspecialchars($respuesta_12); ?>" size="8">
+        <input type="text" name="respuesta_13" value="<?php echo htmlspecialchars($respuesta_13); ?>" size="60">
+        <input type="text" name="respuesta_14" value="<?php echo htmlspecialchars($respuesta_14); ?>" size="22">
+    <input type="text" name="respuesta_15" value="<?php echo htmlspecialchars($respuesta_15); ?>" size="20">
+        <input type="text" name="respuesta_16" value="<?php echo htmlspecialchars($respuesta_16); ?>" size="44">
+        <input type="text" name="respuesta_17" value="<?php echo htmlspecialchars($respuesta_17); ?>" size="14">
+    <input type="text" name="respuesta_18" value="<?php echo htmlspecialchars($respuesta_18); ?>" size="4">
+<input type="text" name="respuesta_19" value="<?php echo htmlspecialchars($respuesta_19); ?>" size="4">
+</pre>
+    <button type="submit">Verificar</button> 
     <?php echo $verificar_12 ?>
     <?php echo $verificar_13 ?>
     <?php echo $verificar_14 ?>
@@ -1738,86 +1549,34 @@ function saludar() {
     <?php echo $verificar_17 ?>
     <?php echo $verificar_18 ?>
     <?php echo $verificar_19 ?> 
-    <?php echo $verificar_20 ?>
-    <?php echo $verificar_21 ?>
     <hr>
 
+  
+   
+</div>
 
 
-    <h3>6. Funciones</h3>
-
-<p>
-Las funciones son bloques de código que realizan tareas. JavaScript trata las funciones como ciudadanos de primera clase 
-(pueden 
-<input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="11">
-  a 
-<input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="11">
- , 
-<input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="11">
-  como 
-<input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="11">
-  y 
-<input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="13">
- ).
-</p>
-
-<h4>
-<input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="18">    
-</h4>
-<p>Funcion suma</p>
-<pre>
-<code>
-<input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="21">
- {
-    <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="13">
-}
-
-console.log(suma(2, 3)); // 5
-</code>
-</pre>
-
-<h4>
-<input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="25">    
-   </h4>
-
-<pre>
-<code>
-<input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="31">
- {
-    <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="16">
-};
-
-console.log(resta(5, 2)); // 3
-</code>
-</pre>
-
-<h4>
-<input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="14">    
-  (=&gt;)</h4>
-
-<p>
-Sintaxis compacta introducida en ES6.
-</p>
-
-<pre>
-<code>
-
-<input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="41">
 
 
-console.log(multiplicar(3, 4)); // 12
-</code>
-</pre>
-
-<p>
-Diferencias clave: las arrow functions 
-<input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="21">
-  ni 
-<input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="11">
-  (útiles para callbacks y funciones pequeñas).
-</p>
+<div class="seccion derecha">
+    
  
-    <button type="submit">Enviar</button>
+  <img src="../../img/guia_460.png" alt="" width="800">
+    <h2>createGame</h2>
+    <pre>
+<input type="text" name="respuesta_20" value="<?php echo htmlspecialchars($respuesta_20); ?>" size="46">
+    <input type="text" name="respuesta_21" value="<?php echo htmlspecialchars($respuesta_21); ?>" size="8">
+        <input type="text" name="respuesta_22" value="<?php echo htmlspecialchars($respuesta_22); ?>" size="64">
+        <input type="text" name="respuesta_23" value="<?php echo htmlspecialchars($respuesta_23); ?>" size="22">
+    <input type="text" name="respuesta_24" value="<?php echo htmlspecialchars($respuesta_24); ?>" size="20">
+        <input type="text" name="respuesta_25" value="<?php echo htmlspecialchars($respuesta_25); ?>" size="46">
+        <input type="text" name="respuesta_26" value="<?php echo htmlspecialchars($respuesta_26); ?>" size="14">
+    <input type="text" name="respuesta_27" value="<?php echo htmlspecialchars($respuesta_27); ?>" size="4">
+<input type="text" name="respuesta_28" value="<?php echo htmlspecialchars($respuesta_28); ?>" size="4">
+</pre>
+    <button type="submit">Verificar</button>
+    <?php echo $verificar_20 ?>
+    <?php echo $verificar_21 ?>
     <?php echo $verificar_22 ?>
     <?php echo $verificar_23 ?>
     <?php echo $verificar_24 ?>
@@ -1825,7 +1584,23 @@ Diferencias clave: las arrow functions
     <?php echo $verificar_26 ?>
     <?php echo $verificar_27 ?>
     <?php echo $verificar_28 ?>
-    <?php echo $verificar_29 ?>
+ <hr>
+
+  <img src="../../img/guia_461.png" alt="" width="800">
+ <h2>updateGame</h2>
+    <pre>
+<input type="text" name="respuesta_29" value="<?php echo htmlspecialchars($respuesta_29); ?>" size="50">
+    <input type="text" name="respuesta_30" value="<?php echo htmlspecialchars($respuesta_30); ?>" size="8">
+        <input type="text" name="respuesta_31" value="<?php echo htmlspecialchars($respuesta_31); ?>" size="68">
+        <input type="text" name="respuesta_32" value="<?php echo htmlspecialchars($respuesta_32); ?>" size="22">
+    <input type="text" name="respuesta_33" value="<?php echo htmlspecialchars($respuesta_33); ?>" size="20">
+        <input type="text" name="respuesta_34" value="<?php echo htmlspecialchars($respuesta_34); ?>" size="46">
+        <input type="text" name="respuesta_35" value="<?php echo htmlspecialchars($respuesta_35); ?>" size="14">
+    <input type="text" name="respuesta_36" value="<?php echo htmlspecialchars($respuesta_36); ?>" size="4">
+<input type="text" name="respuesta_37" value="<?php echo htmlspecialchars($respuesta_37); ?>" size="4">
+</pre>
+    <button type="submit">Verificar</button>
+   <?php echo $verificar_29 ?>
     <?php echo $verificar_30 ?>
     <?php echo $verificar_31 ?>
     <?php echo $verificar_32 ?>
@@ -1833,590 +1608,37 @@ Diferencias clave: las arrow functions
     <?php echo $verificar_34 ?>
     <?php echo $verificar_35 ?>
     <?php echo $verificar_36 ?>
-    <hr>
-    <button onmousedown="mostrarMensaje()" onmouseup="ocultarMensaje()">Dato</button>
-    <div id="mensaje" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
-    <h3>Función normal</h3>
-
-<pre>
-<code>
-const persona = {
-    nombre: "Luis",
-
-    saludar: function () {
-        console.log(this.nombre);
-    }
-};
-
-persona.saludar();
-</code>
-</pre>
-
-<h4>Resultado</h4>
-
-<pre>
-<code>
-Luis
-</code>
-</pre>
-
-<p>
-Aquí <code>this</code> hace referencia al objeto <code>persona</code>.
-</p>
-
-<h3>Arrow function</h3>
-
-<pre>
-<code>
-const persona = {
-    nombre: "Luis",
-
-    saludar: () =&gt; {
-        console.log(this.nombre);
-    }
-};
-
-persona.saludar();
-</code>
-</pre>
-
-<h4>Resultado</h4>
-
-<pre>
-<code>
-undefined
-</code>
-</pre>
-
-<p>
-La arrow function no crea su propio <code>this</code>. 
-Toma el <code>this</code> del lugar donde fue creada.
-</p>
-
-<h3>¿Cuándo usar arrow functions?</h3>
-
-<p>
-Son útiles para funciones pequeñas y callbacks.
-</p>
-
-<h4>Ejemplo</h4>
-
-<pre>
-<code>
-const numeros = [1, 2, 3];
-
-const dobles = numeros.map(n =&gt; n * 2);
-
-console.log(dobles);
-</code>
-</pre>
-
-<h4>Resultado</h4>
-
-<pre>
-<code>
-[2, 4, 6]
-</code>
-</pre>
-
-<p>
-Con una función normal sería más largo:
-</p>
-
-<pre>
-<code>
-const dobles = numeros.map(function(n) {
-    return n * 2;
-});
-</code>
-</pre>
-
-<h3>¿Qué es <code>arguments</code>?</h3>
-
-<p>
-En funciones normales existe una variable especial llamada <code>arguments</code>.
-</p>
-
-<pre>
-<code>
-function prueba() {
-    console.log(arguments);
-}
-
-prueba(1, 2, 3);
-</code>
-</pre>
-
-<p>
-En arrow functions no existe <code>arguments</code>.
-</p>
-
-<pre>
-<code>
-const prueba = () =&gt; {
-    console.log(arguments);
-};
-</code>
-</pre>
-
-<p>
-Eso produce un error.
-</p>
-
-<h3>Resumen</h3>
-
-<table border="1">
-    <tr>
-        <th>Característica</th>
-        <th>Función normal</th>
-        <th>Arrow function</th>
-    </tr>
-
-    <tr>
-        <td>Tiene su propio this</td>
-        <td>Sí</td>
-        <td>No</td>
-    </tr>
-
-    <tr>
-        <td>Tiene arguments</td>
-        <td>Sí</td>
-        <td>No</td>
-    </tr>
-
-    <tr>
-        <td>Sintaxis corta</td>
-        <td>No</td>
-        <td>Sí</td>
-    </tr>
-
-    <tr>
-        <td>Buena para callbacks</td>
-        <td>Más larga</td>
-        <td>Sí</td>
-    </tr>
-</table>
-
-<h3>Regla práctica</h3>
-
-<ul>
-    <li>Usa arrow functions para funciones cortas y callbacks.</li>
-    <li>Usa funciones normales cuando necesites <code>this</code>.</li>
-</ul>
-    </div>
-</div>
-
-
-
-
-<div class="seccion derecha">
-    <button onmousedown="mostrarMensaje2()" onmouseup="ocultarMensaje2()">Dato</button>
-    <div id="mensaje" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
- <h3>Parámetros por defecto</h3>
-
-<p>
-Sirven para darle un valor automático a un parámetro si no se envía nada.
-</p>
-
-<h4>Ejemplo</h4>
-
-<pre>
-<code>
-function saludar(nombre = "invitado") {
-    console.log("Hola " + nombre);
-}
-</code>
-</pre>
-
-<p>
-Si llamas la función así:
-</p>
-
-<pre>
-<code>
-saludar();
-</code>
-</pre>
-
-<h4>Resultado</h4>
-
-<pre>
-<code>
-Hola invitado
-</code>
-</pre>
-
-<p>
-Como no se envió un nombre, se usa el valor por defecto:
-<code>"invitado"</code>.
-</p>
-
-<h4>Enviando un valor</h4>
-
-<pre>
-<code>
-saludar("Luis");
-</code>
-</pre>
-
-<h4>Resultado</h4>
-
-<pre>
-<code>
-Hola Luis
-</code>
-</pre>
-
-<h3>Rest parameter (...)</h3>
-
-<p>
-El operador <code>...</code> permite recibir muchos valores y guardarlos en un arreglo.
-</p>
-
-<h4>Ejemplo</h4>
-
-<pre>
-<code>
-function sumaTodo(...nums) {
-    return nums.reduce((acc, n) => acc + n, 0);
-}
-</code>
-</pre>
-
-<p>
-Aquí:
-</p>
-
-<pre>
-<code>
-...nums
-</code>
-</pre>
-
-<p>
-significa:
-</p>
-
-<blockquote>
-Guarda todos los argumentos en un arreglo llamado <code>nums</code>.
-</blockquote>
-
-<h4>Ejemplo de uso</h4>
-
-<pre>
-<code>
-sumaTodo(1, 2, 3, 4);
-</code>
-</pre>
-
-<p>
-Internamente:
-</p>
-
-<pre>
-<code>
-nums = [1, 2, 3, 4]
-</code>
-</pre>
-
-<h3>¿Qué hace reduce?</h3>
-
-<p>
-Esta parte:
-</p>
-
-<pre>
-<code>
-nums.reduce((acc, n) => acc + n, 0);
-</code>
-</pre>
-
-<p>
-va sumando todos los números.
-</p>
-
-<table border="1">
-    <tr>
-        <th>Iteración</th>
-        <th>acc</th>
-        <th>n</th>
-        <th>Resultado</th>
-    </tr>
-
-    <tr>
-        <td>Inicio</td>
-        <td>0</td>
-        <td>1</td>
-        <td>1</td>
-    </tr>
-
-    <tr>
-        <td>2</td>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-    </tr>
-
-    <tr>
-        <td>3</td>
-        <td>3</td>
-        <td>3</td>
-        <td>6</td>
-    </tr>
-
-    <tr>
-        <td>4</td>
-        <td>6</td>
-        <td>4</td>
-        <td>10</td>
-    </tr>
-</table>
-
-<h4>Resultado final</h4>
-
-<pre>
-<code>
-10
-</code>
-</pre>
-
-<h3>Resumen rápido</h3>
-
-<h4>Parámetro por defecto</h4>
-
-<pre>
-<code>
-function ejemplo(x = 5)
-</code>
-</pre>
-
-<p>
-Usa <code>5</code> si no se envía ningún valor.
-</p>
-
-<h4>Rest parameter</h4>
-
-<pre>
-<code>
-function ejemplo(...datos)
-</code>
-</pre>
-
-<p>
-Recibe muchos valores y los guarda en un arreglo.
-</p>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-<h4>Parámetros por defecto y rest</h4>
-
-<pre>
-<code>
-<input type="text" name="respuesta_37" value="<?php echo htmlspecialchars($respuesta_37 ?? '', ENT_QUOTES); ?>" size="38">
-  {
-    <input type="text" name="respuesta_38" value="<?php echo htmlspecialchars($respuesta_38 ?? '', ENT_QUOTES); ?>" size="35">
-}
-
-<input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="41">
-  {
-    // rest param
-    <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="45">
-}
-</code>
-</pre>
-
-<button type="submit">Enviar</button>
-<hr>
-<h4>Closure (cierres)</h4>
-
-<p>
-Una función puede 
-<input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="11">
-  el entorno donde fue creada.
-</p>
-
-<pre>
-<code>
-function contador() {
-    let cuenta = 0;
-
-    return function () {
-        cuenta++;
-        return cuenta;
-    };
-}
-
-const c = contador();
-
-console.log(c()); // <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="2"> 
-console.log(c()); // <input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="2">
-</code>
-</pre>
-
-<p>
-Eso es un closure: la función interna 
-<input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>" size="17">
-  a cuenta aunque la ejecución 
-de contador() haya terminado.
-</p>
-
-    <button type="submit">Enviar</button>
     <?php echo $verificar_37 ?>
-    <?php echo $verificar_38 ?>
+ 
+
+<hr>
+  <img src="../../img/guia_462.png" alt="" width="800">
+  <h2>deleteGame</h2>
+    <pre>
+<input type="text" name="respuesta_38" value="<?php echo htmlspecialchars($respuesta_38); ?>" size="44">
+    <input type="text" name="respuesta_39" value="<?php echo htmlspecialchars($respuesta_39); ?>" size="8">
+        <input type="text" name="respuesta_40" value="<?php echo htmlspecialchars($respuesta_40); ?>" size="52">
+    <input type="text" name="respuesta_41" value="<?php echo htmlspecialchars($respuesta_41); ?>" size="20">
+        <input type="text" name="respuesta_42" value="<?php echo htmlspecialchars($respuesta_42); ?>" size="46">
+        <input type="text" name="respuesta_43" value="<?php echo htmlspecialchars($respuesta_43); ?>" size="14">
+    <input type="text" name="respuesta_44" value="<?php echo htmlspecialchars($respuesta_44); ?>" size="4">
+<input type="text" name="respuesta_45" value="<?php echo htmlspecialchars($respuesta_45); ?>" size="4">
+</pre>
+    <button type="submit">Verificar</button>
+  <?php echo $verificar_38 ?>
     <?php echo $verificar_39 ?>
     <?php echo $verificar_40 ?>
     <?php echo $verificar_41 ?>
     <?php echo $verificar_42 ?>
     <?php echo $verificar_43 ?>
-    <?php echo $verificar_44 ?>
-
-    <hr>
-<h3>IIFE (Immediately Invoked Function Expression)</h3>
-
-<p>
-Una IIFE es una función que se ejecuta 
-<input type="text" name="respuesta_45" value="<?php echo $respuesta_45; ?>" size="14">
-  después de ser 
-<input type="text" name="respuesta_46" value="<?php echo $respuesta_46; ?>" size="8">
- .
-</p>
-
-<h4>Ejemplo</h4>
-
-<pre>
-<code>
-<input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="16">
-    console.log("Esto se ejecuta inmediatamente");
-<input type="text" name="respuesta_48" value="<?php echo $respuesta_48; ?>" size="8">
-</code>
-</pre>
-
-<h4>Resultado</h4>
-
-<pre>
-<code>
-Esto se ejecuta inmediatamente
-</code>
-</pre>
-
-<p>
-La función está entre 
-<input type="text" name="respuesta_49" value="<?php echo $respuesta_49; ?>" size="8">
-  para 
-<input type="text" name="respuesta_50" value="<?php echo $respuesta_50; ?>" size="8">
-  en una 
-<input type="text" name="respuesta_51" value="<?php echo $respuesta_51; ?>" size="8">
-  y al final 
-<input type="text" name="respuesta_52" value="<?php echo $respuesta_52; ?>" size="11">
-  paréntesis <code>()</code> para 
-<input type="text" name="respuesta_53" value="<?php echo $respuesta_53; ?>" size="8">
-  inmediatamente.
-</p>
-    <button type="submit">Enviar</button>
+    <?php echo $verificar_44 ?>  
     <?php echo $verificar_45 ?>
-    <?php echo $verificar_46 ?>
-    <?php echo $verificar_47 ?>
-    <?php echo $verificar_48 ?>
-    <?php echo $verificar_49 ?>
-    <?php echo $verificar_50 ?>
-    <?php echo $verificar_51 ?>
-    <?php echo $verificar_52 ?>
-    <?php echo $verificar_53 ?>
-<hr>
-<h3>Funciones como parámetros y retorno</h3>
-
-<p>
-En JavaScript las funciones pueden enviarse como parámetros a otras funciones.
-</p>
-
-<h4>Ejemplo</h4>
-
-<pre>
-<code>
-<input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>" size="25">
-  {
-    <input type="text" name="respuesta_55" value="<?php echo $respuesta_55; ?>" size="16">
-}
-
-<input type="text" name="respuesta_56" value="<?php echo $respuesta_56; ?>" size="31">
  
-</code>
-</pre>
-
-<h4>Resultado</h4>
-
-<pre>
-<code>
-6
-</code>
-</pre>
-
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_54 ?>
-    <?php echo $verificar_55 ?>
-    <?php echo $verificar_56 ?>
-<hr>
+    <hr>
  
-
-<p>
-Esto demuestra que en JavaScript las funciones pueden tratarse como valores.
-</p>
- <button onmousedown="mostrarMensaje3()" onmouseup="ocultarMensaje3()">Dato</button>
-    <div id="mensaje" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
- <p>
-Aquí:
-</p>
-
-<ul>
-    <li><code>a</code> vale 2</li>
-    <li><code>b</code> vale 3</li>
-    <li><code>fn</code> recibe una arrow function</li>
-</ul>
-
-<p>
-La función:
-</p>
-
-<pre>
-<code>
-(x, y) => x * y
-</code>
-</pre>
-
-<p>
-multiplica los dos valores.
-</p>
-
-<p>
-Entonces internamente ocurre algo parecido a:
-</p>
-
-<pre>
-<code>
-fn(2, 3)
-</code>
-</pre>
-
-<p>
-Resultado:
-</p>
-
-<pre>
-<code>
-2 * 3 = 6
-</code>
-</pre>
-    </div>
-
+ 
+ 
+ 
     <hr>
     <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
     <br>

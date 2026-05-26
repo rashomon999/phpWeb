@@ -29,11 +29,12 @@
 </head>
 <body>
     <div class="centered-container">
-        <a class="btn" href=".\Lenguajes\index.php">Lenguajes</a>
-        <a class="btn" href=".\cuestionarioLenguajes\index.php">cuestionario lenguajes</a>
-        <a class="btn" href=".\LenguajesRegulares\index.php">Lenguajes regulares</a>
-        <a class="btn" href=".\RNN\index.php">Recurrent neural network</a>
-        <a class="btn" href=".\Turing\index.php">Turing machine</a>
+        <a class="btn" href=".\Observer\index.php">Observer</a>
+        <a class="btn" href=".\Proxy\index.php">Proxy</a>
+        <a class="btn" href=".\Architectural\index.php">Architectural Tactics and Patterns</a>
+        <a class="btn" href=".\DistProcessing\index.php">concurrency design patterns</a>
+ 
+
     </div>
 </body>
 </html>

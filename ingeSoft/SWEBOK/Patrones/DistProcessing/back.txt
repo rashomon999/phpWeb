@@ -1,0 +1,157 @@
+  <svg width="100%" viewBox="0 0 680 420" role="img">
+  <title>Fork/Join Design Pattern - Structure Diagram</title>
+  <desc>UML class diagram showing ForkJoinMaster connected to ThreadPool (1 to 1), ForkJoinMaster connected to ForkJoinTask (1 to many), ThreadPool connected to Thread (1 to many), and ForkJoinTask with a self-referential composition.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arrowopen" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- ForkJoinMaster -->
+  <rect x="30" y="30" width="210" height="104" rx="4" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+  <rect x="30" y="30" width="210" height="30" rx="4" fill="#AFA9EC" stroke="#534AB7" stroke-width="0.5"/>
+  <text font-family="sans-serif" font-size="14" font-weight="500" fill="#26215C" x="135" y="50" text-anchor="middle" dominant-baseline="central">ForkJoinMaster</text>
+  <line x1="30" y1="60" x2="240" y2="60" stroke="#534AB7" stroke-width="0.5"/>
+  <text font-family="sans-serif" font-size="12" fill="#3C3489" x="42" y="77" dominant-baseline="central">-pool: ThreadPool</text>
+  <line x1="30" y1="90" x2="240" y2="90" stroke="#534AB7" stroke-width="0.5"/>
+  <text font-family="sans-serif" font-size="12" fill="#3C3489" x="42" y="104" dominant-baseline="central">+ForkJoinMaster(ForkJoinTask)</text>
+  <text font-family="sans-serif" font-size="12" fill="#3C3489" x="42" y="122" dominant-baseline="central">+invoke(): void</text>
+
+  <!-- ThreadPool -->
+  <rect x="450" y="30" width="190" height="44" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text font-family="sans-serif" font-size="14" font-weight="500" fill="#04342C" x="545" y="52" text-anchor="middle" dominant-baseline="central">ThreadPool</text>
+  <line x1="450" y1="60" x2="640" y2="60" stroke="#0F6E56" stroke-width="0.5"/>
+
+  <!-- Thread -->
+  <rect x="450" y="230" width="190" height="44" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text font-family="sans-serif" font-size="14" font-weight="500" fill="#04342C" x="545" y="252" text-anchor="middle" dominant-baseline="central">Thread</text>
+  <line x1="450" y1="262" x2="640" y2="262" stroke="#0F6E56" stroke-width="0.5"/>
+
+  <!-- ForkJoinTask -->
+  <rect x="30" y="250" width="210" height="104" rx="4" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+  <rect x="30" y="250" width="210" height="30" rx="4" fill="#F0997B" stroke="#993C1D" stroke-width="0.5"/>
+  <text font-family="sans-serif" font-size="14" font-weight="500" fill="#4A1B0C" x="135" y="270" text-anchor="middle" dominant-baseline="central">ForkJoinTask</text>
+  <line x1="30" y1="280" x2="240" y2="280" stroke="#993C1D" stroke-width="0.5"/>
+  <text font-family="sans-serif" font-size="12" fill="#712B13" x="42" y="298" dominant-baseline="central">+fork(): void</text>
+  <text font-family="sans-serif" font-size="12" fill="#712B13" x="42" y="316" dominant-baseline="central">+join(): Object</text>
+  <text font-family="sans-serif" font-size="12" fill="#712B13" x="42" y="334" dominant-baseline="central">+compute(): Object</text>
+
+  <!-- ForkJoinMaster to ThreadPool: 1 to 1 -->
+  <line x1="240" y1="52" x2="448" y2="52" stroke="#555" stroke-width="1" marker-end="url(#arrowopen)"/>
+  <text font-family="sans-serif" font-size="12" fill="#555" x="248" y="46" dominant-baseline="central">1</text>
+  <text font-family="sans-serif" font-size="12" fill="#555" x="430" y="46" dominant-baseline="central">1</text>
+
+  <!-- ThreadPool to Thread: 1 to * -->
+  <line x1="545" y1="74" x2="545" y2="228" stroke="#555" stroke-width="1" marker-end="url(#arrowopen)"/>
+  <text font-family="sans-serif" font-size="12" fill="#555" x="552" y="86" dominant-baseline="central">1</text>
+  <text font-family="sans-serif" font-size="12" fill="#555" x="552" y="218" dominant-baseline="central">*</text>
+
+  <!-- ForkJoinMaster to ForkJoinTask: 1 to * -->
+  <line x1="135" y1="134" x2="135" y2="248" stroke="#555" stroke-width="1" marker-end="url(#arrowopen)"/>
+  <text font-family="sans-serif" font-size="12" fill="#555" x="142" y="148" dominant-baseline="central">1</text>
+  <text font-family="sans-serif" font-size="12" fill="#555" x="142" y="236" dominant-baseline="central">*</text>
+
+  <!-- ForkJoinTask self-reference: 1 to * -->
+  <path d="M240 302 L290 302 L290 380 L135 380 L135 354" fill="none" stroke="#555" stroke-width="1" marker-end="url(#arrowopen)"/>
+  <text font-family="sans-serif" font-size="12" fill="#555" x="246" y="296" dominant-baseline="central">1</text>
+  <text font-family="sans-serif" font-size="12" fill="#555" x="246" y="372" dominant-baseline="central">*</text>
+
+  <!-- Caption -->
+  <text font-family="sans-serif" font-size="12" fill="#555" x="340" y="408" text-anchor="middle" dominant-baseline="central">Figure 3.14: Structure Diagram - Fork / Join Design Pattern</text>
+</svg>
+
+<svg width="100%" viewBox="25 0 680 430" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Fork/Join - Request Processing Sequence Diagram</title>
+  <desc>Sequence diagram showing AppClient invoking ForkJoinMaster, which executes a ForkJoinTask via ThreadPool and Thread, with fork and join alternatives.</desc>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- ── Lifeline labels ── -->
+  <!-- AppClient (stick figure) -->
+  <circle cx="52" cy="28" r="8" fill="none" stroke="#555" stroke-width="1.2"/>
+  <line x1="52" y1="36" x2="52" y2="58" stroke="#555" stroke-width="1.2"/>
+  <line x1="38" y1="44" x2="66" y2="44" stroke="#555" stroke-width="1.2"/>
+  <line x1="52" y1="58" x2="38" y2="72" stroke="#555" stroke-width="1.2"/>
+  <line x1="52" y1="58" x2="66" y2="72" stroke="#555" stroke-width="1.2"/>
+  <text font-family="sans-serif" font-size="11" fill="#444" x="52" y="84" text-anchor="middle">AppClient</text>
+
+  <!-- ForkJoinMaster:master -->
+  <rect x="140" y="10" width="148" height="28" rx="2" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.8"/>
+  <text font-family="sans-serif" font-size="11" font-weight="500" fill="#26215C" x="214" y="29" text-anchor="middle">ForkJoinMaster:master</text>
+
+  <!-- ThreadPool:pool -->
+  <rect x="328" y="10" width="110" height="28" rx="2" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.8"/>
+  <text font-family="sans-serif" font-size="11" font-weight="500" fill="#04342C" x="383" y="29" text-anchor="middle">ThreadPool:pool</text>
+
+  <!-- Thread:thread -->
+  <rect x="466" y="10" width="90" height="28" rx="2" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.8"/>
+  <text font-family="sans-serif" font-size="11" font-weight="500" fill="#04342C" x="511" y="29" text-anchor="middle">Thread:thread</text>
+
+  <!-- ForkJoinTask:task -->
+  <rect x="583" y="10" width="88" height="28" rx="2" fill="#FAECE7" stroke="#993C1D" stroke-width="0.8"/>
+  <text font-family="sans-serif" font-size="11" font-weight="500" fill="#4A1B0C" x="627" y="29" text-anchor="middle">ForkJoinTask:task</text>
+
+  <!-- ── Lifelines (dashed vertical) ── -->
+  <line x1="52"  y1="88"  x2="52"  y2="390" stroke="#888" stroke-width="0.8" stroke-dasharray="5 4"/>
+  <line x1="214" y1="38"  x2="214" y2="390" stroke="#888" stroke-width="0.8" stroke-dasharray="5 4"/>
+  <line x1="383" y1="38"  x2="383" y2="390" stroke="#888" stroke-width="0.8" stroke-dasharray="5 4"/>
+  <line x1="511" y1="38"  x2="511" y2="390" stroke="#888" stroke-width="0.8" stroke-dasharray="5 4"/>
+  <line x1="627" y1="38"  x2="627" y2="390" stroke="#888" stroke-width="0.8" stroke-dasharray="5 4"/>
+
+  <!-- ── Activation boxes ── -->
+  <!-- ForkJoinMaster active: rows 110..310 -->
+  <rect x="208" y="110" width="12" height="200" rx="1" fill="#AFA9EC" stroke="#534AB7" stroke-width="0.5"/>
+  <!-- ThreadPool active: rows 160..220 -->
+  <rect x="377" y="160" width="12" height="60" rx="1" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <!-- Thread active: rows 220..280 -->
+  <rect x="505" y="220" width="12" height="60" rx="1" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <!-- ForkJoinTask active: rows 280..370 -->
+  <rect x="621" y="280" width="12" height="90" rx="1" fill="#F5C4B3" stroke="#993C1D" stroke-width="0.5"/>
+
+  <!-- ── Messages ── -->
+  <!-- 1. AppClient -> ForkJoinMaster: ForkJoinMaster(ForkJoinTask) -->
+  <line x1="52" y1="115" x2="207" y2="115" stroke="#444" stroke-width="1" marker-end="url(#arr)"/>
+  <text font-family="sans-serif" font-size="10" fill="#333" x="58" y="110">ForkJoinMaster(ForkJoinTask)</text>
+
+  <!-- 2. AppClient -> ForkJoinMaster: invoke():void -->
+  <line x1="52" y1="145" x2="207" y2="145" stroke="#444" stroke-width="1" marker-end="url(#arr)"/>
+  <text font-family="sans-serif" font-size="10" fill="#333" x="58" y="140">invoke():void</text>
+
+  <!-- 3. ForkJoinMaster -> ThreadPool: execute(ForkJoinTask):void -->
+  <line x1="220" y1="165" x2="376" y2="165" stroke="#444" stroke-width="1" marker-end="url(#arr)"/>
+  <text font-family="sans-serif" font-size="10" fill="#333" x="226" y="160">execute(ForkJoinTask):void</text>
+
+  <!-- 4. ThreadPool -> Thread: run():void -->
+  <line x1="389" y1="225" x2="504" y2="225" stroke="#444" stroke-width="1" marker-end="url(#arr)"/>
+  <text font-family="sans-serif" font-size="10" fill="#333" x="395" y="220">run():void</text>
+
+  <!-- 5. Thread -> ForkJoinTask: compute():Object -->
+  <line x1="517" y1="285" x2="620" y2="285" stroke="#444" stroke-width="1" marker-end="url(#arr)"/>
+  <text font-family="sans-serif" font-size="10" fill="#333" x="521" y="280">compute():Object</text>
+
+  <!-- ── alt frame ── -->
+  <rect x="608" y="295" width="95" height="72" rx="2" fill="none" stroke="#888" stroke-width="0.8"/>
+  <rect x="608" y="295" width="28" height="14" rx="2" fill="#ddd" stroke="#888" stroke-width="0.5"/>
+  <text font-family="sans-serif" font-size="9" fill="#444" x="622" y="306" text-anchor="middle">alt</text>
+  <!-- divider inside alt -->
+  <line x1="608" y1="330" x2="672" y2="330" stroke="#aaa" stroke-width="0.5" stroke-dasharray="3 2"/>
+
+  <!-- fork():void label + arrow stub -->
+  <text font-family="sans-serif" font-size="10" fill="#333" x="644" y="319">fork():void</text>
+  <line x1="660" y1="317" x2="671" y2="317"   stroke-width="1" marker-end="url(#arr)"/>
+
+  <!-- join():Object label + arrow stub -->
+  <text font-family="sans-serif" font-size="10" fill="#333" x="640" y="349">join():Object</text>
+  <line x1="660" y1="347" x2="671" y2="347"   stroke-width="1" marker-end="url(#arr)"/>
+
+  <!-- ── Caption ── -->
+  <text font-family="sans-serif" font-size="11" fill="#555" x="340" y="415" text-anchor="middle">Figure 3.15: Request Processing Sequence Diagram - Fork / Join</text>
+</svg>
+
+ 

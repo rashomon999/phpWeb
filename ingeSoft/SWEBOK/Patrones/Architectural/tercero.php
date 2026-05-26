@@ -18,62 +18,85 @@ if ($_POST) {
     
     if ($mostrar_solucion === 'mostrar_solucion') {        
  
-    $respuesta_1  = 'alcance de funcion';
-    $respuesta_2  = 'permite redeclaracion';
-    $respuesta_3  = 'permite reasignacion';
-    $respuesta_4  = 'alcance de bloque';
-    $respuesta_5  = 'no permite redeclaracion';
-    $respuesta_6  = 'permite reasignacion';
-    $respuesta_7  = 'alcance de bloque';
-    $respuesta_8  = 'no permite redeclaracion';
-    $respuesta_9  = 'no permite reasignacion';
-    $respuesta_10 = 'comportamiento';
-    $respuesta_11 = 'declaraciones';
-    $respuesta_12 = 'moverse';
-    $respuesta_13 = 'inicio';
-    $respuesta_14 = 'scope';
-    $respuesta_15 = 'declaracion se hoistea';
-    $respuesta_16 = 'asignacion no';
-    $respuesta_17 = 'undefined';
-    $respuesta_18 = 'Temporal Dead Zone';
-    $respuesta_19 = 'TDZ';
-    $respuesta_20 = 'ReferenceError';
-    $respuesta_21 = 'hoistean completamente';
-    $respuesta_22 = 'asignarse';
-    $respuesta_23 = 'variables';
-    $respuesta_24 = 'pasarse';
-    $respuesta_25 = 'argumentos';
-    $respuesta_26 = 'retornarse';
-    $respuesta_27 = 'function suma(a, b)';
-    $respuesta_28 = 'return a + b;';
-    $respuesta_29 = 'Declaracion de funcion';
-    $respuesta_30 = 'Expresion de funcion';
-    $respuesta_31 = 'const resta = function (a, b)';
-    $respuesta_32 = 'return a - b;';
-    $respuesta_33 = 'Arrow functions';
-    $respuesta_34 = 'const multiplicar = (a, b) => a * b;';
-    $respuesta_35 = 'no tienen su propio this';
-    $respuesta_36 = 'arguments';
-    $respuesta_37 = 'function saludar(nombre = "invitado")';
-    $respuesta_38 = 'console.log("Hola " + nombre);';
-    $respuesta_39 = 'function sumaTodo(...nums)';
-    $respuesta_40 = 'return nums.reduce((acc, n) => acc + n, 0);';
-    $respuesta_41 = 'recordar';
-    $respuesta_42 = '1';
-    $respuesta_43 = '2';
-    $respuesta_44 = 'mantiene acceso';
-    $respuesta_45 = 'inmediatamente';
-    $respuesta_46 = 'creada';
-    $respuesta_47 = '(function () {';
-    $respuesta_48 = '})();';
-    $respuesta_49 = 'parentesis';
-    $respuesta_50 = 'convertirla';
-    $respuesta_51 = 'expresion';
-    $respuesta_52 = 'se usan otros';
-    $respuesta_53 = 'ejecutarla';
-    $respuesta_54 = 'function operar(a, b, fn)';
-    $respuesta_55 = 'return fn(a, b);';
-    $respuesta_56 = 'operar(2, 3, (x, y) => x * y);';
+        $respuesta_111 = '24'; 
+        $respuesta_112 = '36';
+        $respuesta_113 = '48';
+        $respuesta_114 = '60';
+        $respuesta_115 = '72';
+        $respuesta_116 = '84';
+        $respuesta_117 = '96';
+        $respuesta_118 = '108';
+        $respuesta_119 = '120';
+        $respuesta_120 = '132';
+        $respuesta_121 = '144';
+        
+ 
+        $respuesta_1 = '26';
+        $respuesta_2 = '39';
+        $respuesta_3 = '52';
+        $respuesta_4 = '65';
+        $respuesta_5 = '78';
+        $respuesta_6 = '91';
+        $respuesta_7 = '104';
+        $respuesta_8 = '117';
+        $respuesta_9 = '130';
+        $respuesta_10 = '143';
+        $respuesta_11 = '156';
+        
+ 
+        $respuesta_12 = '28';
+        $respuesta_13 = '42';
+        $respuesta_14 = '56';
+        $respuesta_15 = '70';
+        $respuesta_16 = '84';
+        $respuesta_17 = '98';
+        $respuesta_18 = '112';
+        $respuesta_19 = '126';
+        $respuesta_20 = '140';
+        $respuesta_21 = '154';
+        $respuesta_22 = '168';
+        
+ 
+        $respuesta_23 = '30';
+        $respuesta_24 = '45';
+        $respuesta_25 = '60';
+        $respuesta_26 = '75';
+        $respuesta_27 = '90';
+        $respuesta_28 = '105';
+        $respuesta_29 = '120';
+        $respuesta_30 = '135';
+        $respuesta_31 = '150';
+        $respuesta_32 = '165';
+        $respuesta_33 = '180';
+        
+ 
+        $respuesta_34 = '32';
+        $respuesta_35 = '48';
+        $respuesta_36 = '64';
+        $respuesta_37 = '80';
+        $respuesta_38 = '96';
+        $respuesta_39 = '112';
+        $respuesta_40 = '128';
+        $respuesta_41 = '144';
+        $respuesta_42 = '160';
+        $respuesta_43 = '176';
+        $respuesta_44 = '192';
+        
+ 
+        $respuesta_45 = '34';
+        $respuesta_46 = '51';
+        $respuesta_47 = '68';
+        $respuesta_48 = '85';
+        $respuesta_49 = '102';
+        $respuesta_50 = '119';
+        $respuesta_51 = '136';
+        $respuesta_52 = '153';
+        $respuesta_53 = '170';
+        $respuesta_54 = '187';
+        $respuesta_55 = '204';
+        
+ 
+        $respuesta_56 = '36';
         $respuesta_57 = '54';
         $respuesta_58 = '72';
         $respuesta_59 = '90';
@@ -143,7 +166,7 @@ if ($_POST) {
 
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === 'alcance de funcion') {  
+   if ($respuesta_1 === 'Broker') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -153,7 +176,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === 'permite redeclaracion') {  
+   if ($respuesta_2 === 'locateServer()') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -163,7 +186,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === 'permite reasignacion') {  
+   if ($respuesta_3 === 'locateClient()') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -173,7 +196,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === 'alcance de bloque') {  
+   if ($respuesta_4 === 'registerServer()') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -183,7 +206,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === 'no permite redeclaracion') {  
+   if ($respuesta_5 === 'unregisterServer()') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -193,7 +216,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === 'permite reasignacion') {  
+   if ($respuesta_6 === 'Client-Side Proxy') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -203,7 +226,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === 'alcance de bloque') {  
+   if ($respuesta_7 === 'pack_data()') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -213,7 +236,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === 'no permite redeclaracion') {  
+   if ($respuesta_8 === 'unpack_data()') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -223,7 +246,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === 'no permite reasignacion') {  
+   if ($respuesta_9 === 'send_request()') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -233,7 +256,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === 'comportamiento') {  
+   if ($respuesta_10 === 'return()') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -243,7 +266,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === 'declaraciones') {  
+   if ($respuesta_11 === 'Server-Side Proxy') {  
        $verificar_11 = "correcto";
    } elseif ($respuesta_11 === '') {
        $verificar_11 = '';
@@ -254,7 +277,7 @@ if ($_POST) {
 
     // Verificar la respuesta de la primera pregunta
     $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-    if ($respuesta_12 === 'moverse') {  
+    if ($respuesta_12 === 'pack_data()') {  
         $verificar_12 = "correcto";
     } elseif ($respuesta_12 === '') {
         $verificar_12 = '';
@@ -264,7 +287,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la segunda pregunta
     $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-    if ($respuesta_13 === 'inicio') { 
+    if ($respuesta_13 === 'unpack_data()') { 
         $verificar_13 = "correcto";
     } elseif ($respuesta_13 === '') {
         $verificar_13 = '';
@@ -274,7 +297,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la tercera pregunta
     $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-    if ($respuesta_14 === 'scope') {  
+    if ($respuesta_14 === 'call_service()') {  
         $verificar_14 = "correcto";
     } elseif ($respuesta_14 === '') {
         $verificar_14 = '';
@@ -284,7 +307,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la cuarta pregunta
     $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-    if ($respuesta_15 === 'declaracion se hoistea') { 
+    if ($respuesta_15 === 'send_response()') { 
         $verificar_15 = "correcto";
     } elseif ($respuesta_15 === '') {
         $verificar_15 = '';
@@ -294,7 +317,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la quinta pregunta
     $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-    if ($respuesta_16 === 'asignacion no') {  
+    if ($respuesta_16 === 'Client') {  
         $verificar_16 = "correcto";
     } elseif ($respuesta_16 === '') {
         $verificar_16 = '';
@@ -304,7 +327,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la sexta pregunta
     $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-    if ($respuesta_17 === 'undefined') {  
+    if ($respuesta_17 === 'call_server()') {  
         $verificar_17 = "correcto";
         } elseif ($respuesta_17 === '') {
         $verificar_17 = '';
@@ -314,7 +337,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la séptima pregunta
     $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-    if ($respuesta_18 === 'Temporal Dead Zone') {  
+    if ($respuesta_18 === 'start_task()') {  
         $verificar_18 = "correcto";
     } elseif ($respuesta_18 === '') {
         $verificar_18 = '';
@@ -324,7 +347,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la octava pregunta
     $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-    if ($respuesta_19 === 'TDZ') {  
+    if ($respuesta_19 === 'use_Broker_API()') {  
         $verificar_19 = "correcto";
     } elseif ($respuesta_19 === '') {
         $verificar_19 = '';
@@ -334,7 +357,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la novena pregunta
     $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
-    if ($respuesta_20 === 'ReferenceError') {  
+    if ($respuesta_20 === 'Bridge') {  
         $verificar_20 = "correcto";
     } elseif ($respuesta_20 === '') {
         $verificar_20 = '';
@@ -344,7 +367,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la décima pregunta
     $respuesta_21 = isset($_POST['respuesta_21']) ? $_POST['respuesta_21'] : '';
-    if ($respuesta_21 === 'hoistean completamente') {  
+    if ($respuesta_21 === 'pack_data()') {  
          $verificar_21 = "correcto";
     } elseif ($respuesta_21 === '') {
         $verificar_21 = '';
@@ -354,7 +377,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la undécima pregunta
     $respuesta_22 = isset($_POST['respuesta_22']) ? $_POST['respuesta_22'] : '';
-    if ($respuesta_22 === 'asignarse') {  
+    if ($respuesta_22 === 'unpack_data()') {  
         $verificar_22 = "correcto";
     } elseif ($respuesta_22 === '') {
         $verificar_22 = '';
@@ -364,7 +387,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
    $respuesta_23 = isset($_POST['respuesta_23']) ? $_POST['respuesta_23'] : '';
-   if ($respuesta_23 === 'variables') {  
+   if ($respuesta_23 === 'forward_message()') {  
        $verificar_23 = "correcto";
    } elseif ($respuesta_23 === '') {
        $verificar_23 = '';
@@ -374,7 +397,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_24 = isset($_POST['respuesta_24']) ? $_POST['respuesta_24'] : '';
-   if ($respuesta_24 === 'pasarse') {  
+   if ($respuesta_24 === 'transmit_message()') {  
        $verificar_24 = "correcto";
    } elseif ($respuesta_24 === '') {
        $verificar_24 = '';
@@ -384,7 +407,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_25 = isset($_POST['respuesta_25']) ? $_POST['respuesta_25'] : '';
-   if ($respuesta_25 === 'argumentos') { 
+   if ($respuesta_25 === 'Server') { 
        $verificar_25 = "correcto";
    } elseif ($respuesta_25 === '') {
        $verificar_25 = '';
@@ -394,7 +417,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_26 = isset($_POST['respuesta_26']) ? $_POST['respuesta_26'] : '';
-   if ($respuesta_26 === 'retornarse') {  
+   if ($respuesta_26 === 'initialize()') {  
        $verificar_26 = "correcto";
    } elseif ($respuesta_26 === '') {
        $verificar_26 = '';
@@ -404,9 +427,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_27 = isset($_POST['respuesta_27']) ? $_POST['respuesta_27'] : '';
-   if ($respuesta_27 === 'function suma(a, b)'
-   || $respuesta_27 === 'function suma(a,b)'
-   ) {  
+   if ($respuesta_27 === 'enter_main_loop()') {  
        $verificar_27 = "correcto";
    } elseif ($respuesta_27 === '') {
        $verificar_27 = '';
@@ -416,9 +437,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_28 = isset($_POST['respuesta_28']) ? $_POST['respuesta_28'] : '';
-   if ($respuesta_28 === 'return a + b;'
-   || $respuesta_28 === 'return a+b;'
-   ) {  
+   if ($respuesta_28 === 'run_service()') {  
        $verificar_28 = "correcto";
    } elseif ($respuesta_28 === '') {
        $verificar_28 = '';
@@ -428,7 +447,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_29 = isset($_POST['respuesta_29']) ? $_POST['respuesta_29'] : '';
-   if ($respuesta_29 === 'Declaracion de funcion') {  
+   if ($respuesta_29 === 'use_Broker_API()') {  
        $verificar_29 = "correcto";
    } elseif ($respuesta_29 === '') {
        $verificar_29 = '';
@@ -438,7 +457,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_30 = isset($_POST['respuesta_30']) ? $_POST['respuesta_30'] : '';
-   if ($respuesta_30 === 'Expresion de funcion') {  
+   if ($respuesta_30 === 'arquitectura orientada a servicios') {  
        $verificar_30 = "correcto";
    } elseif ($respuesta_30 === '') {
        $verificar_30 = '';
@@ -448,9 +467,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_31 = isset($_POST['respuesta_31']) ? $_POST['respuesta_31'] : '';
-   if ($respuesta_31 === 'const resta = function (a, b)'
-|| $respuesta_31 === 'const resta = function (a,b)'
-   ) {  
+   if ($respuesta_31 === 'SOA') {  
        $verificar_31 = "correcto";
    } elseif ($respuesta_31 === '') {
        $verificar_31 = '';
@@ -460,7 +477,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_32 = isset($_POST['respuesta_32']) ? $_POST['respuesta_32'] : '';
-   if ($respuesta_32 === 'return a - b;') {  
+   if ($respuesta_32 === 'enterprise service bus') {  
        $verificar_32 = "correcto";
    } elseif ($respuesta_32 === '') {
        $verificar_32 = '';
@@ -470,7 +487,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_33 = isset($_POST['respuesta_33']) ? $_POST['respuesta_33'] : '';
-   if ($respuesta_33 === 'Arrow functions') {  
+   if ($respuesta_33 === 'software') {  
        $verificar_33 = "correcto";
    } elseif ($respuesta_33 === '') {
        $verificar_33 = '';
@@ -479,12 +496,7 @@ if ($_POST) {
    }
 
     $respuesta_34 = isset($_POST['respuesta_34']) ? $_POST['respuesta_34'] : '';
-    if ($respuesta_34 === 'const multiplicar = (a, b) => a * b;' ||
-    $respuesta_34 === 'const multiplicar = (a,b) => a * b;'
-    || $respuesta_34 === 'const multiplicar = (a, b) => a*b;'
-    || $respuesta_34 === 'const multiplicar = (a,b) => a*b;'
-
-    ) { 
+    if ($respuesta_34 === 'interfaz') { 
         $verificar_34 = "correcto";
     } elseif ($respuesta_34 === '') {
         $verificar_34 = '';
@@ -493,7 +505,7 @@ if ($_POST) {
     }
 
     $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
-    if ($respuesta_35 === 'no tienen su propio this') { 
+    if ($respuesta_35 === 'usuario') { 
         $verificar_35 = "correcto";
     } elseif ($respuesta_35 === '') {
         $verificar_35 = '';
@@ -502,7 +514,7 @@ if ($_POST) {
     }
 
     $respuesta_36 = isset($_POST['respuesta_36']) ? $_POST['respuesta_36'] : '';
-    if ($respuesta_36 === 'arguments') { 
+    if ($respuesta_36 === 'la parte') { 
         $verificar_36 = "correcto";
     } elseif ($respuesta_36 === '') {
     $verificar_36 = '';
@@ -511,7 +523,7 @@ if ($_POST) {
     }
 
     $respuesta_37 = isset($_POST['respuesta_37']) ? $_POST['respuesta_37'] : '';
-    if ($respuesta_37 === 'function saludar(nombre = "invitado")') { 
+    if ($respuesta_37 === 'aplicacion interactiva') { 
         $verificar_37 = "correcto";
     } elseif ($respuesta_37 === '') {
         $verificar_37 = '';
@@ -520,7 +532,7 @@ if ($_POST) {
     }
 
     $respuesta_38 = isset($_POST['respuesta_38']) ? $_POST['respuesta_38'] : '';
-    if ($respuesta_38 === 'console.log("Hola " + nombre);') { 
+    if ($respuesta_38 === 'modifica') { 
         $verificar_38 = "correcto";
     } elseif ($respuesta_38 === '') {
         $verificar_38 = '';
@@ -529,7 +541,7 @@ if ($_POST) {
     }
 
     $respuesta_39 = isset($_POST['respuesta_39']) ? $_POST['respuesta_39'] : '';
-    if ($respuesta_39 === 'function sumaTodo(...nums)') { 
+    if ($respuesta_39 === 'mayor frecuencia') { 
         $verificar_39 = "correcto";
     } elseif ($respuesta_39 === '') {
         $verificar_39 = '';
@@ -538,7 +550,7 @@ if ($_POST) {
     }
 
     $respuesta_40 = isset($_POST['respuesta_40']) ? $_POST['respuesta_40'] : '';
-    if ($respuesta_40 === 'return nums.reduce((acc, n) => acc + n, 0);') { 
+    if ($respuesta_40 === 'mantener separadas') { 
         $verificar_40 = "correcto";
     } elseif ($respuesta_40 === '') {
         $verificar_40 = '';
@@ -547,7 +559,7 @@ if ($_POST) {
     }
 
     $respuesta_41 = isset($_POST['respuesta_41']) ? $_POST['respuesta_41'] : '';
-    if ($respuesta_41 === 'recordar') { 
+    if ($respuesta_41 === 'modificaciones') { 
         $verificar_41 = "correcto";
     } elseif ($respuesta_41 === '') {
         $verificar_41 = '';
@@ -556,7 +568,7 @@ if ($_POST) {
     }
 
     $respuesta_42 = isset($_POST['respuesta_42']) ? $_POST['respuesta_42'] : '';
-    if ($respuesta_42 === '1') { 
+    if ($respuesta_42 === 'software') { 
         $verificar_42 = "correcto";
     } elseif ($respuesta_42 === '') {
         $verificar_42 = '';
@@ -565,7 +577,7 @@ if ($_POST) {
     }
 
     $respuesta_43 = isset($_POST['respuesta_43']) ? $_POST['respuesta_43'] : '';
-    if ($respuesta_43 === '2') { 
+    if ($respuesta_43 === 'interfaz de usuario') { 
         $verificar_43 = "correcto";
     } elseif ($respuesta_43 === '') {
         $verificar_43 = '';
@@ -574,7 +586,7 @@ if ($_POST) {
     }
 
     $respuesta_44 = isset($_POST['respuesta_44']) ? $_POST['respuesta_44'] : '';
-    if ($respuesta_44 === 'mantiene acceso') { 
+    if ($respuesta_44 === 'resto del sistema') { 
         $verificar_44 = "correcto";
     } elseif ($respuesta_44 === '') {
     $verificar_44 = '';
@@ -583,7 +595,7 @@ if ($_POST) {
     }
 
     $respuesta_45 = isset($_POST['respuesta_45']) ? $_POST['respuesta_45'] : '';
-    if ($respuesta_45 === 'inmediatamente') { 
+    if ($respuesta_45 === 'usuarios') { 
         $verificar_45 = "correcto";
     } elseif ($respuesta_45 === '') {
     $verificar_45 = '';
@@ -592,7 +604,7 @@ if ($_POST) {
     }
 
     $respuesta_46 = isset($_POST['respuesta_46']) ? $_POST['respuesta_46'] : '';
-    if ($respuesta_46 === 'creada') { 
+    if ($respuesta_46 === 'desean') { 
         $verificar_46 = "correcto";
     } elseif ($respuesta_46 === '') {
     $verificar_46 = '';
@@ -601,7 +613,7 @@ if ($_POST) {
     }
 
     $respuesta_47 = isset($_POST['respuesta_47']) ? $_POST['respuesta_47'] : '';
-    if ($respuesta_47 === '(function () {') { 
+    if ($respuesta_47 === 'los datos') { 
         $verificar_47 = "correcto";
     } elseif ($respuesta_47 === '') {
         $verificar_47 = '';
@@ -610,7 +622,7 @@ if ($_POST) {
     }
 
     $respuesta_48 = isset($_POST['respuesta_48']) ? $_POST['respuesta_48'] : '';
-    if ($respuesta_48 === '})();') { 
+    if ($respuesta_48 === 'diferentes perspectivas') { 
         $verificar_48 = "correcto";
     } elseif ($respuesta_48 === '') {
     $verificar_48 = '';
@@ -619,7 +631,7 @@ if ($_POST) {
     }
 
     $respuesta_49 = isset($_POST['respuesta_49']) ? $_POST['respuesta_49'] : '';
-    if ($respuesta_49 === 'parentesis') { 
+    if ($respuesta_49 === 'grafico de barras') { 
         $verificar_49 = "correcto";
     } elseif ($respuesta_49 === '') {
     $verificar_49 = '';
@@ -628,7 +640,7 @@ if ($_POST) {
     }
 
     $respuesta_50 = isset($_POST['respuesta_50']) ? $_POST['respuesta_50'] : '';
-    if ($respuesta_50 === 'convertirla') { 
+    if ($respuesta_50 === 'grafico circular') { 
         $verificar_50 = "correcto";
     } elseif ($respuesta_50 === '') {
     $verificar_50 = '';
@@ -637,7 +649,7 @@ if ($_POST) {
     }
 
  $respuesta_51 = isset($_POST['respuesta_51']) ? $_POST['respuesta_51'] : '';
-if ($respuesta_51 === 'expresion') { 
+if ($respuesta_51 === 'representaciones') { 
     $verificar_51 = "correcto";
 } elseif ($respuesta_51 === '') {
     $verificar_51 = '';
@@ -646,7 +658,7 @@ if ($respuesta_51 === 'expresion') {
 }
 
  $respuesta_52 = isset($_POST['respuesta_52']) ? $_POST['respuesta_52'] : '';
-if ($respuesta_52 === 'se usan otros') { 
+if ($respuesta_52 === 'reflejar') { 
     $verificar_52 = "correcto";
 } elseif ($respuesta_52 === '') {
     $verificar_52 = '';
@@ -655,7 +667,7 @@ if ($respuesta_52 === 'se usan otros') {
 }
 
  $respuesta_53 = isset($_POST['respuesta_53']) ? $_POST['respuesta_53'] : '';
-if ($respuesta_53 === 'ejecutarla') { 
+if ($respuesta_53 === 'estado') { 
     $verificar_53 = "correcto";
 } elseif ($respuesta_53 === '') {
     $verificar_53 = '';
@@ -664,7 +676,7 @@ if ($respuesta_53 === 'ejecutarla') {
 }
 
  $respuesta_54 = isset($_POST['respuesta_54']) ? $_POST['respuesta_54'] : '';
-if ($respuesta_54 === 'function operar(a, b, fn)') { 
+if ($respuesta_54 === 'datos') { 
     $verificar_54 = "correcto";
 } elseif ($respuesta_54 === '') {
     $verificar_54 = '';
@@ -673,7 +685,7 @@ if ($respuesta_54 === 'function operar(a, b, fn)') {
 }
 
  $respuesta_55 = isset($_POST['respuesta_55']) ? $_POST['respuesta_55'] : '';
-if ($respuesta_55 === 'return fn(a, b);') { 
+if ($respuesta_55 === 'que contiene los datos de la aplicacion') { 
     $verificar_55 = "correcto";
 } elseif ($respuesta_55 === '') {
     $verificar_55 = '';
@@ -683,7 +695,7 @@ if ($respuesta_55 === 'return fn(a, b);') {
 
 
  $respuesta_56 = isset($_POST['respuesta_56']) ? $_POST['respuesta_56'] : '';
-if ($respuesta_56 === 'operar(2, 3, (x, y) => x * y);') { 
+if ($respuesta_56 === 'que muestra una parte de los datos subyacentes') { 
     $verificar_56 = "correcto";
 } elseif ($respuesta_56 === '') {
     $verificar_56 = '';
@@ -692,7 +704,7 @@ if ($respuesta_56 === 'operar(2, 3, (x, y) => x * y);') {
 }
 
  $respuesta_57 = isset($_POST['respuesta_57']) ? $_POST['respuesta_57'] : '';
-if ($respuesta_57 === '54') { 
+if ($respuesta_57 === 'interactua con el usuario') { 
     $verificar_57 = "correcto";
 } elseif ($respuesta_57 === '') {
     $verificar_57 = '';
@@ -701,7 +713,7 @@ if ($respuesta_57 === '54') {
 }
 
  $respuesta_58 = isset($_POST['respuesta_58']) ? $_POST['respuesta_58'] : '';
-if ($respuesta_58 === '72') { 
+if ($respuesta_58 === 'que media entre el modelo') { 
     $verificar_58 = "correcto";
 } elseif ($respuesta_58 === '') {
     $verificar_58 = '';
@@ -710,7 +722,7 @@ if ($respuesta_58 === '72') {
 }
 
  $respuesta_59 = isset($_POST['respuesta_59']) ? $_POST['respuesta_59'] : '';
-if ($respuesta_59 === '90') { 
+if ($respuesta_59 === 'la vista') { 
     $verificar_59 = "correcto";
 } elseif ($respuesta_59 === '') {
     $verificar_59 = '';
@@ -719,7 +731,7 @@ if ($respuesta_59 === '90') {
 }
 
  $respuesta_60 = isset($_POST['respuesta_60']) ? $_POST['respuesta_60'] : '';
-if ($respuesta_60 === '108') { 
+if ($respuesta_60 === 'administra las notificaciones de cambios de estado') { 
     $verificar_60 = "correcto";
 } elseif ($respuesta_60 === '') {
     $verificar_60 = '';
@@ -728,7 +740,7 @@ if ($respuesta_60 === '108') {
 }
 
  $respuesta_61 = isset($_POST['respuesta_61']) ? $_POST['respuesta_61'] : '';
-if ($respuesta_61 === '126') { 
+if ($respuesta_61 === 'no es apropiado para todas las situaciones') { 
     $verificar_61 = "correcto";
 } elseif ($respuesta_61 === '') {
     $verificar_61 = '';
@@ -737,7 +749,7 @@ if ($respuesta_61 === '126') {
 }
 
  $respuesta_62 = isset($_POST['respuesta_62']) ? $_POST['respuesta_62'] : '';
-if ($respuesta_62 === '144') { 
+if ($respuesta_62 === 'diseño') { 
     $verificar_62 = "correcto";
 } elseif ($respuesta_62 === '') {
     $verificar_62 = '';
@@ -746,7 +758,7 @@ if ($respuesta_62 === '144') {
 }
 
  $respuesta_63 = isset($_POST['respuesta_63']) ? $_POST['respuesta_63'] : '';
-if ($respuesta_63 === '162') { 
+if ($respuesta_63 === 'implementacion') { 
     $verificar_63 = "correcto";
 } elseif ($respuesta_63 === '') {
     $verificar_63 = '';
@@ -755,7 +767,7 @@ if ($respuesta_63 === '162') {
 }
 
  $respuesta_64 = isset($_POST['respuesta_64']) ? $_POST['respuesta_64'] : '';
-if ($respuesta_64 === '180') { 
+if ($respuesta_64 === 'tres tipos distintos') { 
     $verificar_64 = "correcto";
 } elseif ($respuesta_64 === '') {
     $verificar_64 = '';
@@ -764,7 +776,7 @@ if ($respuesta_64 === '180') {
 }
 
  $respuesta_65 = isset($_POST['respuesta_65']) ? $_POST['respuesta_65'] : '';
-if ($respuesta_65 === '198') { 
+if ($respuesta_65 === 'diversas') { 
     $verificar_65 = "correcto";
 } elseif ($respuesta_65 === '') {
     $verificar_65 = '';
@@ -773,7 +785,7 @@ if ($respuesta_65 === '198') {
 }
 
  $respuesta_66 = isset($_POST['respuesta_66']) ? $_POST['respuesta_66'] : '';
-if ($respuesta_66 === '216') { 
+if ($respuesta_66 === 'interaccion') { 
     $verificar_66 = "correcto";
 } elseif ($respuesta_66 === '') {
     $verificar_66 = '';
@@ -782,7 +794,7 @@ if ($respuesta_66 === '216') {
 }
 
  $respuesta_67 = isset($_POST['respuesta_67']) ? $_POST['respuesta_67'] : '';
-if ($respuesta_67 === '38') { 
+if ($respuesta_67 === 'costoso') { 
     $verificar_67 = "correcto";
 } elseif ($respuesta_67 === '') {
     $verificar_67 = '';
@@ -791,7 +803,7 @@ if ($respuesta_67 === '38') {
 }
 
  $respuesta_68 = isset($_POST['respuesta_68']) ? $_POST['respuesta_68'] : '';
-if ($respuesta_68 === '57') { 
+if ($respuesta_68 === 'no tener sentido') { 
     $verificar_68 = "correcto";
 } elseif ($respuesta_68 === '') {
     $verificar_68 = '';
@@ -800,7 +812,7 @@ if ($respuesta_68 === '57') {
 }
 
  $respuesta_69 = isset($_POST['respuesta_69']) ? $_POST['respuesta_69'] : '';
-if ($respuesta_69 === '76') { 
+if ($respuesta_69 === 'interfaces de usuario relativamente simples') { 
     $verificar_69 = "correcto";
 } elseif ($respuesta_69 === '') {
     $verificar_69 = '';
@@ -809,7 +821,7 @@ if ($respuesta_69 === '76') {
 }
 
  $respuesta_70 = isset($_POST['respuesta_70']) ? $_POST['respuesta_70'] : '';
-if ($respuesta_70 === '95') { 
+if ($respuesta_70 === 'correspondencia') { 
     $verificar_70 = "correcto";
 } elseif ($respuesta_70 === '') {
     $verificar_70 = '';
@@ -818,7 +830,7 @@ if ($respuesta_70 === '95') {
 }
 
  $respuesta_71 = isset($_POST['respuesta_71']) ? $_POST['respuesta_71'] : '';
-if ($respuesta_71 === '114') { 
+if ($respuesta_71 === 'abstracciones') { 
     $verificar_71 = "correcto";
 } elseif ($respuesta_71 === '') {
     $verificar_71 = '';
@@ -827,7 +839,7 @@ if ($respuesta_71 === '114') {
 }
 
  $respuesta_72 = isset($_POST['respuesta_72']) ? $_POST['respuesta_72'] : '';
-if ($respuesta_72 === '133') { 
+if ($respuesta_72 === 'kits comerciales') { 
     $verificar_72 = "correcto";
 } elseif ($respuesta_72 === '') {
     $verificar_72 = '';
@@ -836,7 +848,7 @@ if ($respuesta_72 === '133') {
 }
 
  $respuesta_73 = isset($_POST['respuesta_73']) ? $_POST['respuesta_73'] : '';
-if ($respuesta_73 === '152') { 
+if ($respuesta_73 === 'herramientas') { 
     $verificar_73 = "correcto";
 } elseif ($respuesta_73 === '') {
     $verificar_73 = '';
@@ -845,7 +857,7 @@ if ($respuesta_73 === '152') {
 }
 
  $respuesta_74 = isset($_POST['respuesta_74']) ? $_POST['respuesta_74'] : '';
-if ($respuesta_74 === '171') { 
+if ($respuesta_74 === 'interfaces de usuario') { 
     $verificar_74 = "correcto";
 } elseif ($respuesta_74 === '') {
     $verificar_74 = '';
@@ -854,7 +866,7 @@ if ($respuesta_74 === '171') {
 }
 
  $respuesta_75 = isset($_POST['respuesta_75']) ? $_POST['respuesta_75'] : '';
-if ($respuesta_75 === '190') { 
+if ($respuesta_75 === 'perfecta') { 
     $verificar_75 = "correcto";
 } elseif ($respuesta_75 === '') {
     $verificar_75 = '';
@@ -863,7 +875,7 @@ if ($respuesta_75 === '190') {
 }
 
  $respuesta_76 = isset($_POST['respuesta_76']) ? $_POST['respuesta_76'] : '';
-if ($respuesta_76 === '209') { 
+if ($respuesta_76 === 'separan') { 
     $verificar_76 = "correcto";
 } elseif ($respuesta_76 === '') {
     $verificar_76 = '';
@@ -872,7 +884,7 @@ if ($respuesta_76 === '209') {
 }
 
  $respuesta_77 = isset($_POST['respuesta_77']) ? $_POST['respuesta_77'] : '';
-if ($respuesta_77 === '228') { 
+if ($respuesta_77 === 'entrada') { 
     $verificar_77 = "correcto";
 } elseif ($respuesta_77 === '') {
     $verificar_77 = '';
@@ -881,7 +893,7 @@ if ($respuesta_77 === '228') {
 }
 
  $respuesta_78 = isset($_POST['respuesta_78']) ? $_POST['respuesta_78'] : '';
-if ($respuesta_78 === '40') { 
+if ($respuesta_78 === 'salida') { 
     $verificar_78 = "correcto";
 } elseif ($respuesta_78 === '') {
     $verificar_78 = '';
@@ -890,7 +902,7 @@ if ($respuesta_78 === '40') {
 }
 
  $respuesta_79 = isset($_POST['respuesta_79']) ? $_POST['respuesta_79'] : '';
-if ($respuesta_79 === '60') { 
+if ($respuesta_79 === 'funciones') { 
     $verificar_79 = "correcto";
 } elseif ($respuesta_79 === '') {
     $verificar_79 = '';
@@ -899,7 +911,7 @@ if ($respuesta_79 === '60') {
 }
 
  $respuesta_80 = isset($_POST['respuesta_80']) ? $_POST['respuesta_80'] : '';
-if ($respuesta_80 === '80') { 
+if ($respuesta_80 === 'combinadas') { 
     $verificar_80 = "correcto";
 } elseif ($respuesta_80 === '') {
     $verificar_80 = '';
@@ -908,7 +920,7 @@ if ($respuesta_80 === '80') {
 }
 
  $respuesta_81 = isset($_POST['respuesta_81']) ? $_POST['respuesta_81'] : '';
-if ($respuesta_81 === '100') { 
+if ($respuesta_81 === 'widgets individuales') { 
     $verificar_81 = "correcto";
 } elseif ($respuesta_81 === '') {
     $verificar_81 = '';
@@ -917,7 +929,7 @@ if ($respuesta_81 === '100') {
 }
 
     $respuesta_82 = isset($_POST['respuesta_82']) ? $_POST['respuesta_82'] : '';
-    if ($respuesta_82 === '120') { 
+    if ($respuesta_82 === 'incompatibilidad') { 
         $verificar_82 = "correcto";
     } elseif ($respuesta_82 === '') {
         $verificar_82 = '';
@@ -926,7 +938,7 @@ if ($respuesta_81 === '100') {
     }
 
     $respuesta_83 = isset($_POST['respuesta_83']) ? $_POST['respuesta_83'] : '';
-    if ($respuesta_83 === '140') { 
+    if ($respuesta_83 === 'arquitectura') { 
        $verificar_83 = "correcto";
     } elseif ($respuesta_83 === '') {
         $verificar_83 = '';
@@ -935,7 +947,7 @@ if ($respuesta_81 === '100') {
     }
 
     $respuesta_84 = isset($_POST['respuesta_84']) ? $_POST['respuesta_84'] : '';
-    if ($respuesta_84 === '160') { 
+    if ($respuesta_84 === 'kit de herramientas') { 
         $verificar_84 = "correcto";
     } elseif ($respuesta_84 === '') {
         $verificar_84 = '';
@@ -944,7 +956,7 @@ if ($respuesta_81 === '100') {
     }
 
     $respuesta_85 = isset($_POST['respuesta_85']) ? $_POST['respuesta_85'] : '';
-    if ($respuesta_85 === '180') { 
+    if ($respuesta_85 === 'interfaz de usuario') { 
         $verificar_85 = "correcto";
     } elseif ($respuesta_85 === '') {
         $verificar_85 = '';
@@ -953,7 +965,7 @@ if ($respuesta_81 === '100') {
     }
 
     $respuesta_86 = isset($_POST['respuesta_86']) ? $_POST['respuesta_86'] : '';
-    if ($respuesta_86 === '200') { 
+    if ($respuesta_86 === 'notifica') { 
         $verificar_86 = "correcto";
     } elseif ($respuesta_86 === '') {
         $verificar_86 = '';
@@ -962,7 +974,7 @@ if ($respuesta_81 === '100') {
     }
 
     $respuesta_87 = isset($_POST['respuesta_87']) ? $_POST['respuesta_87'] : '';
-    if ($respuesta_87 === '220') { 
+    if ($respuesta_87 === 'notifies') { 
         $verificar_87 = "correcto";
     } elseif ($respuesta_87 === '') {
         $verificar_87 = '';
@@ -971,7 +983,7 @@ if ($respuesta_81 === '100') {
     }
 
     $respuesta_88 = isset($_POST['respuesta_88']) ? $_POST['respuesta_88'] : '';
-    if ($respuesta_88 === '240') { 
+    if ($respuesta_88 === 'conecta instancias') { 
         $verificar_88 = "correcto";
     } elseif ($respuesta_88 === '') {
         $verificar_88 = '';
@@ -980,7 +992,7 @@ if ($respuesta_81 === '100') {
     }
 
  $respuesta_89 = isset($_POST['respuesta_89']) ? $_POST['respuesta_89'] : '';
-if ($respuesta_89 === '42') { 
+if ($respuesta_89 === 'la vista y el controlador') { 
     $verificar_89 = "correcto";
 } elseif ($respuesta_89 === '') {
     $verificar_89 = '';
@@ -989,7 +1001,7 @@ if ($respuesta_89 === '42') {
 }
 
  $respuesta_90 = isset($_POST['respuesta_90']) ? $_POST['respuesta_90'] : '';
-if ($respuesta_90 === '63') { 
+if ($respuesta_90 === 'al menos una instancia') { 
     $verificar_90 = "correcto";
 } elseif ($respuesta_90 === '') {
     $verificar_90 = '';
@@ -998,7 +1010,7 @@ if ($respuesta_90 === '63') {
 }
 
  $respuesta_91 = isset($_POST['respuesta_91']) ? $_POST['respuesta_91'] : '';
-if ($respuesta_91 === '84') { 
+if ($respuesta_91 === 'no debe interactuar directamente') { 
     $verificar_91 = "correcto";
 } elseif ($respuesta_91 === '') {
     $verificar_91 = '';
@@ -1007,7 +1019,7 @@ if ($respuesta_91 === '84') {
 }
 
  $respuesta_92 = isset($_POST['respuesta_92']) ? $_POST['respuesta_92'] : '';
-if ($respuesta_92 === '105') { 
+if ($respuesta_92 === 'no justificarse') { 
     $verificar_92 = "correcto";
 } elseif ($respuesta_92 === '') {
     $verificar_92 = '';
@@ -1016,7 +1028,7 @@ if ($respuesta_92 === '105') {
 }
 
  $respuesta_93 = isset($_POST['respuesta_93']) ? $_POST['respuesta_93'] : '';
-if ($respuesta_93 === '126') { 
+if ($respuesta_93 === 'no adaptarse bien') { 
     $verificar_93 = "correcto";
 } elseif ($respuesta_93 === '') {
     $verificar_93 = '';
@@ -1286,18 +1298,143 @@ if ($respuesta_121 === '144') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../style_2_0.css">
+    <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../../style_2_0.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
+     .wrapper {
+      max-width: 720px;
+      width: 100%;
+    }
  
+    h1 {
+      font-family: 'Playfair Display', 'Times New Roman', serif;
+      font-size: 1.9rem;
+      letter-spacing: 0.02em;
+      color: var(--accent);
+      margin-bottom: 0.3rem;
+    }
+ 
+    .subtitle {
+      font-size: 0.85rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #7a7060;
+      margin-bottom: 2rem;
+    }
+ 
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border-top: 2px solid var(--ink);
+      border-bottom: 2px solid var(--ink);
+    }
+ 
+    tr {
+      border-bottom: 1px solid var(--rule);
+    }
+ 
+    tr:last-child {
+      border-bottom: none;
+    }
+ 
+    td {
+      padding: 1rem 1.2rem;
+      vertical-align: top;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+ 
+    td:first-child {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      white-space: nowrap;
+      width: 130px;
+      padding-top: 1.1rem;
+    }
+ 
+    td:last-child {
+      border-left: 1px solid var(--rule);
+    }
+ 
+    em {
+      font-style: italic;
+      font-weight: 400;
+    }
+ 
+    p + p {
+      margin-top: 0.7rem;
+    }
+ 
+    tr:nth-child(even) td {
+      background: var(--highlight);
+    }
+
+
+   * { box-sizing: border-box; margin: 0; padding: 0; }
+  hola {
+    font-family: Georgia, serif;
+    background: #d4d0c8;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 24px;
+    min-height: 100vh;
+  }
+  .diagram {
+    background: #d4d0c8;
+    padding: 20px;
+    width: 780px;
+  }
+  .uml-class {
+    background: #fff;
+    border: 1.5px solid #222;
+    font-size: 13px;
+    font-family: Georgia, serif;
+    position: absolute;
+  }
+  .uml-class .header {
+    background: #fff;
+    border-bottom: 1.5px solid #222;
+    padding: 4px 8px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 13px;
+  }
+  .uml-class .body {
+    padding: 4px 8px;
+    line-height: 1.6;
+    font-size: 12px;
+  }
+  .canvas {
+    position: relative;
+    width: 740px;
+    height: 520px;
+  }
+  svg.lines {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    overflow: visible;
+    pointer-events: none;
+  }
+  .lbl {
+    font-size: 12px;
+    font-family: Georgia, serif;
+    fill: #111;
+  }
+
+
     .seccion {
     /*width: 50%;*/    
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 270vh;
+    height: 310vh;
     }
 
 </style>
@@ -1577,80 +1714,220 @@ function ocultarMensaje4() {
 </head>
 <body>  
 
-<form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
+<form action="./tercero.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
 <div class="form-container">
 
     
 <div class="seccion izquierda"> 
+ 
+<p>
+La versión original del patrón broker, tal como fue documentada por 
+Gamma, Helm, Johnson y Vlissides [Gamma 94], se muestra en la Figura 13.6.
+</p>
 
-   <h2>var</h2>
+<div class="diagram">
+  <div class="canvas">
 
-  <p>Declara una variable con:</p>
+    <!-- Broker (top center) -->
+    <div class="uml-class" style="left:280px; top:20px; width:180px;">
+      <div class="header">
+      <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="15">  
+       </div>
+      <div class="body">
+        +<input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="15">
+         <br>
+        +<input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="15">
+        <br>
+        +<input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="15">
+        <br>
+        +<input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="15">
+        
+      </div>
+    </div>
 
-  <ul>
-    <li>
-    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="20">    
-     </li>
-    <li>
-    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="20">    
-     </li>
-    <li>
-    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="20">    
-     </li>
-  </ul>
+    <!-- Client-Side Proxy (top left) -->
+    <div class="uml-class" style="left:20px; top:60px; width:160px;">
+      <div class="header">
+      <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="15">  
+       </div>
+      <div class="body">
+        +
+        <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="15">
+         <br>
+        +
+        <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="15">
+         <br>
+        +
+        <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="15">
+         <br>
+        +
+        <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="15">
+         
+      </div>
+    </div>
 
-  <pre>
-var x = 10;
-var x = 20;
-x = 30;
-  </pre>
+    <!-- Server-Side Proxy (top right) -->
+    <div class="uml-class" style="left:560px; top:60px; width:160px;">
+      <div class="header">
+      <input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="15">  
+       </div>
+      <div class="body">
+        +
+        <input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="15">
+         <br>
+        +
+        <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="15">
+         <br>
+        +
+        <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="15">
+         <br>
+        +
+        <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="15">
+         
+      </div>
+    </div>
 
-  <hr>
+    <!-- Client (bottom left) -->
+    <div class="uml-class" style="left:20px; top:350px; width:150px;">
+      <div class="header">
+      <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="15">  
+       </div>
+      <div class="body">
+        +<input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="15">
+         <br>
+        +
+        <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="15">
+         <br>
+        +
+        <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="15">
+         
+      </div>
+    </div>
 
-  <h2>let</h2>
+    <!-- Bridge (bottom center) -->
+    <div class="uml-class" style="left:270px; top:340px; width:180px;">
+      <div class="header">
+      <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="15">  
+       </div>
+      <div class="body">
+        +
+        <input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>" size="15">
+         <br>
+        +
+        <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="15">
+         <br>
+        +
+        <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="15">
+         <br>
+        +
+        <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="15">
+         
+      </div>
+    </div>
 
-  <p>Declara una variable con:</p>
+    <!-- Server (bottom right) -->
+    <div class="uml-class" style="left:555px; top:340px; width:165px;">
+      <div class="header">
+      <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="15">  
+       </div>
+      <div class="body">
+        +
+        <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="15">
+         <br>
+        +
+        <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="15">
+         <br>
+        +
+        <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="15">        
+         <br>
+        +
+        <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="15">
+         
+      </div>
+    </div>
 
-  <ul>
-    <li>
-    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="20">    
-     </li>
-    <li>
-    <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="20">    
-     </li>
-    <li>
-    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="20">    
-     </li>
-  </ul>
+    <!-- SVG connector lines -->
+    <svg class="lines">
 
-  <pre>
-let nombre = "Ana";
-nombre = "Laura";
-  </pre>
+      <!-- Broker ↔ Client-Side Proxy: horizontal line with multiplicity -->
+      <!-- Broker left edge ~280, center y ~55 | CSProxy right edge ~180, center y ~110 -->
+      <line x1="280" y1="65" x2="180" y2="100" stroke="#222" stroke-width="1.2"/>
+      <text class="lbl" x="170" y="58">-transfers</text>
+      <text class="lbl" x="248" y="58">1</text>
+      <text class="lbl" x="174" y="112">*</text>
 
-  <hr>
+      <!-- Broker ↔ Server-Side Proxy -->
+      <line x1="460" y1="65" x2="560" y2="100" stroke="#222" stroke-width="1.2"/>
+      <text class="lbl" x="462" y="58">1</text>
+      <text class="lbl" x="510" y="58">-transfers</text>
+      <text class="lbl" x="554" y="112">*</text>
 
-  <h2>const</h2>
+      <!-- Broker -call-> Bridge: vertical down, Broker bottom ~110 Bridge top ~340 -->
+      <line x1="370" y1="145" x2="370" y2="340" stroke="#222" stroke-width="1.2"/>
+      <text class="lbl" x="375" y="230">-call</text>
+      <text class="lbl" x="346" y="245">1</text>
+      <text class="lbl" x="346" y="335">0..1</text>
 
-  <p>Declara una variable con:</p>
+      <!-- Broker 1 — Client-Side Proxy 1 (horizontal inner) -->
+      <line x1="280" y1="85" x2="180" y2="85" stroke="#222" stroke-width="1.2"/>
+      <text class="lbl" x="200" y="80">1</text>
+      <text class="lbl" x="258" y="80">1</text>
 
-  <ul>
-    <li>
-    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="20">    
-     </li>
-    <li>
-    <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="20">    
-     </li>
-    <li>
-    <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="20">    
-     </li>
-  </ul>
+      <!-- Broker 1 — Server-Side Proxy 1 (horizontal inner) -->
+      <line x1="460" y1="85" x2="560" y2="85" stroke="#222" stroke-width="1.2"/>
+      <text class="lbl" x="462" y="80">1</text>
+      <text class="lbl" x="538" y="80">1</text>
 
-  <pre>
-const PI = 3.1416;
-  </pre>
+      <!-- Client-Side Proxy -call-> Client (vertical) -->
+      <line x1="100" y1="185" x2="100" y2="350" stroke="#222" stroke-width="1.2"/>
+      <text class="lbl" x="106" y="290">-call</text>
+      <text class="lbl" x="75" y="285">1</text>
+      <text class="lbl" x="75" y="355">*</text>
 
-    <button type="submit">enviar</button>
+      <!-- Client -uses-> Bridge (horizontal) -->
+      <line x1="170" y1="390" x2="270" y2="390" stroke="#222" stroke-width="1.2"/>
+      <text class="lbl" x="188" y="383">-uses</text>
+      <text class="lbl" x="258" y="403">*</text>
+
+      <!-- Server-Side Proxy -call-> Server (vertical) -->
+      <line x1="638" y1="185" x2="638" y2="340" stroke="#222" stroke-width="1.2"/>
+      <text class="lbl" x="644" y="290">-call</text>
+      <text class="lbl" x="616" y="285">1</text>
+      <text class="lbl" x="616" y="355">*</text>
+
+      <!-- Bridge -uses-> Server (horizontal) -->
+      <line x1="450" y1="395" x2="555" y2="395" stroke="#222" stroke-width="1.2"/>
+      <text class="lbl" x="465" y="388">-uses</text>
+
+    </svg>
+  </div>
+</div>
+<p>
+La primera implementación ampliamente utilizada del patrón broker fue 
+la <strong>Common Object Request Broker Architecture (CORBA)</strong>.
+</p>
+
+<p>
+Otros usos comunes de este patrón se encuentran en 
+<strong>Enterprise Java Beans (EJB)</strong> y en la plataforma 
+<strong>.NET</strong> de Microsoft; esencialmente, cualquier plataforma moderna 
+para proveedores y consumidores de servicios distribuidos implementa alguna forma 
+de broker.
+</p>
+
+<p>
+El enfoque de <strong>
+<input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="25">    
+  (
+  <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="3">  
+   )</strong> depende 
+crucialmente de los brokers, más comúnmente en la forma de un 
+<strong>
+<input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="15">    
+ </strong>.
+</p>
+
+<button type="submit">Enviar</button> 
     <?php echo $verificar_1 ?>
     <?php echo $verificar_2 ?>
     <?php echo $verificar_3 ?>
@@ -1660,74 +1937,6 @@ const PI = 3.1416;
     <?php echo $verificar_7 ?>  
     <?php echo $verificar_8 ?>
     <?php echo $verificar_9 ?>
-    <hr>
-
-    <h2>5. Hoisting</h2>
-
-  <p>
-    El hoisting es el 
-    <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="14">
-      donde las 
-    <input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="14">
-      parecen 
-    <input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="8">
-    al 
-    <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="8">
-      de su 
-    <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="8">
-     .
-  </p>
-
-  <h3>Variables con var</h3>
-
-  <p>
-    La 
-    <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="21">
-     , pero la 
-    <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="17">
-     .
-  </p>
-
-  <pre>
-console.log(a); // <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="10"> 
-var a = 2;
-  </pre>
-
- 
-
-  <h3>Variables con let y const</h3>
-
-  <p>
-    También se hoistean, pero permanecen en la 
-    <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="21">
-      (
-    <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="4">    
-     )
-    hasta su declaración.
-  </p>
-
-  <pre>
-console.log(b); // <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="15"> 
-let b = 3;
-  </pre>
-
-  <h3>Funciones</h3>
-
-  <p>
-    Las declaraciones de función se 
-    <input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>" size="21">
-     .
-  </p>
-
-  <pre>
-saludar();
-
-function saludar() {
-    console.log("hola");
-}
-  </pre>
-
-    <button type="submit">Enviar</button>
     <?php echo $verificar_10 ?>
     <?php echo $verificar_11 ?> 
     <?php echo $verificar_12 ?>
@@ -1740,84 +1949,6 @@ function saludar() {
     <?php echo $verificar_19 ?> 
     <?php echo $verificar_20 ?>
     <?php echo $verificar_21 ?>
-    <hr>
-
-
-
-    <h3>6. Funciones</h3>
-
-<p>
-Las funciones son bloques de código que realizan tareas. JavaScript trata las funciones como ciudadanos de primera clase 
-(pueden 
-<input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="11">
-  a 
-<input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="11">
- , 
-<input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="11">
-  como 
-<input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="11">
-  y 
-<input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="13">
- ).
-</p>
-
-<h4>
-<input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="18">    
-</h4>
-<p>Funcion suma</p>
-<pre>
-<code>
-<input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="21">
- {
-    <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="13">
-}
-
-console.log(suma(2, 3)); // 5
-</code>
-</pre>
-
-<h4>
-<input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="25">    
-   </h4>
-
-<pre>
-<code>
-<input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="31">
- {
-    <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="16">
-};
-
-console.log(resta(5, 2)); // 3
-</code>
-</pre>
-
-<h4>
-<input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="14">    
-  (=&gt;)</h4>
-
-<p>
-Sintaxis compacta introducida en ES6.
-</p>
-
-<pre>
-<code>
-
-<input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="41">
-
-
-console.log(multiplicar(3, 4)); // 12
-</code>
-</pre>
-
-<p>
-Diferencias clave: las arrow functions 
-<input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="21">
-  ni 
-<input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="11">
-  (útiles para callbacks y funciones pequeñas).
-</p>
- 
-    <button type="submit">Enviar</button>
     <?php echo $verificar_22 ?>
     <?php echo $verificar_23 ?>
     <?php echo $verificar_24 ?>
@@ -1829,499 +1960,86 @@ Diferencias clave: las arrow functions
     <?php echo $verificar_30 ?>
     <?php echo $verificar_31 ?>
     <?php echo $verificar_32 ?>
-    <?php echo $verificar_33 ?>
-    <?php echo $verificar_34 ?>
-    <?php echo $verificar_35 ?>
-    <?php echo $verificar_36 ?>
-    <hr>
-    <button onmousedown="mostrarMensaje()" onmouseup="ocultarMensaje()">Dato</button>
-    <div id="mensaje" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
-    <h3>Función normal</h3>
-
-<pre>
-<code>
-const persona = {
-    nombre: "Luis",
-
-    saludar: function () {
-        console.log(this.nombre);
-    }
-};
-
-persona.saludar();
-</code>
-</pre>
-
-<h4>Resultado</h4>
-
-<pre>
-<code>
-Luis
-</code>
-</pre>
-
-<p>
-Aquí <code>this</code> hace referencia al objeto <code>persona</code>.
-</p>
-
-<h3>Arrow function</h3>
-
-<pre>
-<code>
-const persona = {
-    nombre: "Luis",
-
-    saludar: () =&gt; {
-        console.log(this.nombre);
-    }
-};
-
-persona.saludar();
-</code>
-</pre>
-
-<h4>Resultado</h4>
-
-<pre>
-<code>
-undefined
-</code>
-</pre>
-
-<p>
-La arrow function no crea su propio <code>this</code>. 
-Toma el <code>this</code> del lugar donde fue creada.
-</p>
-
-<h3>¿Cuándo usar arrow functions?</h3>
-
-<p>
-Son útiles para funciones pequeñas y callbacks.
-</p>
-
-<h4>Ejemplo</h4>
-
-<pre>
-<code>
-const numeros = [1, 2, 3];
-
-const dobles = numeros.map(n =&gt; n * 2);
-
-console.log(dobles);
-</code>
-</pre>
-
-<h4>Resultado</h4>
-
-<pre>
-<code>
-[2, 4, 6]
-</code>
-</pre>
-
-<p>
-Con una función normal sería más largo:
-</p>
-
-<pre>
-<code>
-const dobles = numeros.map(function(n) {
-    return n * 2;
-});
-</code>
-</pre>
-
-<h3>¿Qué es <code>arguments</code>?</h3>
-
-<p>
-En funciones normales existe una variable especial llamada <code>arguments</code>.
-</p>
-
-<pre>
-<code>
-function prueba() {
-    console.log(arguments);
-}
-
-prueba(1, 2, 3);
-</code>
-</pre>
-
-<p>
-En arrow functions no existe <code>arguments</code>.
-</p>
-
-<pre>
-<code>
-const prueba = () =&gt; {
-    console.log(arguments);
-};
-</code>
-</pre>
-
-<p>
-Eso produce un error.
-</p>
-
-<h3>Resumen</h3>
-
-<table border="1">
-    <tr>
-        <th>Característica</th>
-        <th>Función normal</th>
-        <th>Arrow function</th>
-    </tr>
-
-    <tr>
-        <td>Tiene su propio this</td>
-        <td>Sí</td>
-        <td>No</td>
-    </tr>
-
-    <tr>
-        <td>Tiene arguments</td>
-        <td>Sí</td>
-        <td>No</td>
-    </tr>
-
-    <tr>
-        <td>Sintaxis corta</td>
-        <td>No</td>
-        <td>Sí</td>
-    </tr>
-
-    <tr>
-        <td>Buena para callbacks</td>
-        <td>Más larga</td>
-        <td>Sí</td>
-    </tr>
-</table>
-
-<h3>Regla práctica</h3>
-
-<ul>
-    <li>Usa arrow functions para funciones cortas y callbacks.</li>
-    <li>Usa funciones normales cuando necesites <code>this</code>.</li>
-</ul>
-    </div>
-</div>
-
-
-
-
-<div class="seccion derecha">
-    <button onmousedown="mostrarMensaje2()" onmouseup="ocultarMensaje2()">Dato</button>
-    <div id="mensaje" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
- <h3>Parámetros por defecto</h3>
-
-<p>
-Sirven para darle un valor automático a un parámetro si no se envía nada.
-</p>
-
-<h4>Ejemplo</h4>
-
-<pre>
-<code>
-function saludar(nombre = "invitado") {
-    console.log("Hola " + nombre);
-}
-</code>
-</pre>
-
-<p>
-Si llamas la función así:
-</p>
-
-<pre>
-<code>
-saludar();
-</code>
-</pre>
-
-<h4>Resultado</h4>
-
-<pre>
-<code>
-Hola invitado
-</code>
-</pre>
-
-<p>
-Como no se envió un nombre, se usa el valor por defecto:
-<code>"invitado"</code>.
-</p>
-
-<h4>Enviando un valor</h4>
-
-<pre>
-<code>
-saludar("Luis");
-</code>
-</pre>
-
-<h4>Resultado</h4>
-
-<pre>
-<code>
-Hola Luis
-</code>
-</pre>
-
-<h3>Rest parameter (...)</h3>
-
-<p>
-El operador <code>...</code> permite recibir muchos valores y guardarlos en un arreglo.
-</p>
-
-<h4>Ejemplo</h4>
-
-<pre>
-<code>
-function sumaTodo(...nums) {
-    return nums.reduce((acc, n) => acc + n, 0);
-}
-</code>
-</pre>
-
-<p>
-Aquí:
-</p>
-
-<pre>
-<code>
-...nums
-</code>
-</pre>
-
-<p>
-significa:
-</p>
-
-<blockquote>
-Guarda todos los argumentos en un arreglo llamado <code>nums</code>.
-</blockquote>
-
-<h4>Ejemplo de uso</h4>
-
-<pre>
-<code>
-sumaTodo(1, 2, 3, 4);
-</code>
-</pre>
-
-<p>
-Internamente:
-</p>
-
-<pre>
-<code>
-nums = [1, 2, 3, 4]
-</code>
-</pre>
-
-<h3>¿Qué hace reduce?</h3>
-
-<p>
-Esta parte:
-</p>
-
-<pre>
-<code>
-nums.reduce((acc, n) => acc + n, 0);
-</code>
-</pre>
-
-<p>
-va sumando todos los números.
-</p>
-
-<table border="1">
-    <tr>
-        <th>Iteración</th>
-        <th>acc</th>
-        <th>n</th>
-        <th>Resultado</th>
-    </tr>
-
-    <tr>
-        <td>Inicio</td>
-        <td>0</td>
-        <td>1</td>
-        <td>1</td>
-    </tr>
-
-    <tr>
-        <td>2</td>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-    </tr>
-
-    <tr>
-        <td>3</td>
-        <td>3</td>
-        <td>3</td>
-        <td>6</td>
-    </tr>
-
-    <tr>
-        <td>4</td>
-        <td>6</td>
-        <td>4</td>
-        <td>10</td>
-    </tr>
-</table>
-
-<h4>Resultado final</h4>
-
-<pre>
-<code>
-10
-</code>
-</pre>
-
-<h3>Resumen rápido</h3>
-
-<h4>Parámetro por defecto</h4>
-
-<pre>
-<code>
-function ejemplo(x = 5)
-</code>
-</pre>
-
-<p>
-Usa <code>5</code> si no se envía ningún valor.
-</p>
-
-<h4>Rest parameter</h4>
-
-<pre>
-<code>
-function ejemplo(...datos)
-</code>
-</pre>
-
-<p>
-Recibe muchos valores y los guarda en un arreglo.
-</p>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-<h4>Parámetros por defecto y rest</h4>
-
-<pre>
-<code>
-<input type="text" name="respuesta_37" value="<?php echo htmlspecialchars($respuesta_37 ?? '', ENT_QUOTES); ?>" size="38">
-  {
-    <input type="text" name="respuesta_38" value="<?php echo htmlspecialchars($respuesta_38 ?? '', ENT_QUOTES); ?>" size="35">
-}
-
-<input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="41">
-  {
-    // rest param
-    <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="45">
-}
-</code>
-</pre>
-
-<button type="submit">Enviar</button>
 <hr>
-<h4>Closure (cierres)</h4>
+<h3>Patrón Modelo-Vista-Controlador (<em>Model-View-Controller Pattern</em>)</h3>
 
 <p>
-Una función puede 
-<input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="11">
-  el entorno donde fue creada.
+<strong>Contexto:</strong>  
+El 
+<input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="8">
+  de 
+<input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="8">
+  de 
+<input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="8">
+  suele ser 
+<input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="8">
+  de una 
+<input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="21">
+que se 
+<input type="text" name="respuesta_38" value="<?php echo $respuesta_38; ?>" size="8">
+  con 
+<input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="15">
+.
 </p>
 
-<pre>
-<code>
-function contador() {
-    let cuenta = 0;
-
-    return function () {
-        cuenta++;
-        return cuenta;
-    };
-}
-
-const c = contador();
-
-console.log(c()); // <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="2"> 
-console.log(c()); // <input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="2">
-</code>
-</pre>
+<p>
+Por esta razón, es importante 
+<input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="15">
+  las 
+<input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="11">
+  del 
+<input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="8">
+  de 
+<input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="15">
+  del 
+<input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>" size="15">
+ .
+</p>
 
 <p>
-Eso es un closure: la función interna 
-<input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>" size="17">
-  a cuenta aunque la ejecución 
-de contador() haya terminado.
+Los 
+<input type="text" name="respuesta_45" value="<?php echo $respuesta_45; ?>" size="15">
+  a menudo 
+<input type="text" name="respuesta_46" value="<?php echo $respuesta_46; ?>" size="15">
+visualizar 
+<input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="15">
+  desde 
+<input type="text" name="respuesta_48" value="<?php echo $respuesta_48; ?>" size="15">
+ , 
+como un 
+<input type="text" name="respuesta_49" value="<?php echo $respuesta_49; ?>" size="15">
+  o un 
+<input type="text" name="respuesta_50" value="<?php echo $respuesta_50; ?>" size="15">
+ .
+</p>
+
+<p>
+Estas 
+<input type="text" name="respuesta_51" value="<?php echo $respuesta_51; ?>" size="15">
+  deben 
+<input type="text" name="respuesta_52" value="<?php echo $respuesta_52; ?>" size="15">
+  el 
+<input type="text" name="respuesta_53" value="<?php echo $respuesta_53; ?>" size="15">
+  actual de los 
+<input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>" size="15">
+ .
 </p>
 
     <button type="submit">Enviar</button>
+<?php echo $verificar_33 ?>
+    <?php echo $verificar_34 ?>
+    <?php echo $verificar_35 ?>
+    <?php echo $verificar_36 ?>
     <?php echo $verificar_37 ?>
     <?php echo $verificar_38 ?>
     <?php echo $verificar_39 ?>
     <?php echo $verificar_40 ?>
     <?php echo $verificar_41 ?>
+
+
     <?php echo $verificar_42 ?>
     <?php echo $verificar_43 ?>
-    <?php echo $verificar_44 ?>
-
-    <hr>
-<h3>IIFE (Immediately Invoked Function Expression)</h3>
-
-<p>
-Una IIFE es una función que se ejecuta 
-<input type="text" name="respuesta_45" value="<?php echo $respuesta_45; ?>" size="14">
-  después de ser 
-<input type="text" name="respuesta_46" value="<?php echo $respuesta_46; ?>" size="8">
- .
-</p>
-
-<h4>Ejemplo</h4>
-
-<pre>
-<code>
-<input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="16">
-    console.log("Esto se ejecuta inmediatamente");
-<input type="text" name="respuesta_48" value="<?php echo $respuesta_48; ?>" size="8">
-</code>
-</pre>
-
-<h4>Resultado</h4>
-
-<pre>
-<code>
-Esto se ejecuta inmediatamente
-</code>
-</pre>
-
-<p>
-La función está entre 
-<input type="text" name="respuesta_49" value="<?php echo $respuesta_49; ?>" size="8">
-  para 
-<input type="text" name="respuesta_50" value="<?php echo $respuesta_50; ?>" size="8">
-  en una 
-<input type="text" name="respuesta_51" value="<?php echo $respuesta_51; ?>" size="8">
-  y al final 
-<input type="text" name="respuesta_52" value="<?php echo $respuesta_52; ?>" size="11">
-  paréntesis <code>()</code> para 
-<input type="text" name="respuesta_53" value="<?php echo $respuesta_53; ?>" size="8">
-  inmediatamente.
-</p>
-    <button type="submit">Enviar</button>
+    <?php echo $verificar_44 ?>  
     <?php echo $verificar_45 ?>
     <?php echo $verificar_46 ?>
     <?php echo $verificar_47 ?>
@@ -2331,98 +2049,520 @@ La función está entre
     <?php echo $verificar_51 ?>
     <?php echo $verificar_52 ?>
     <?php echo $verificar_53 ?>
-<hr>
-<h3>Funciones como parámetros y retorno</h3>
-
-<p>
-En JavaScript las funciones pueden enviarse como parámetros a otras funciones.
-</p>
-
-<h4>Ejemplo</h4>
-
-<pre>
-<code>
-<input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>" size="25">
-  {
-    <input type="text" name="respuesta_55" value="<?php echo $respuesta_55; ?>" size="16">
-}
-
-<input type="text" name="respuesta_56" value="<?php echo $respuesta_56; ?>" size="31">
- 
-</code>
-</pre>
-
-<h4>Resultado</h4>
-
-<pre>
-<code>
-6
-</code>
-</pre>
-
-    <button type="submit">Enviar</button>
     <?php echo $verificar_54 ?>
-    <?php echo $verificar_55 ?>
-    <?php echo $verificar_56 ?>
-<hr>
- 
+    <hr>
+<p>
+<strong>Problema:</strong> 
+¿Cómo puede mantenerse separada la funcionalidad de la interfaz de usuario 
+de la funcionalidad de la aplicación y, aun así, responder a la entrada del usuario 
+o a cambios en los datos subyacentes de la aplicación?
+</p>
 
 <p>
-Esto demuestra que en JavaScript las funciones pueden tratarse como valores.
+¿Y cómo pueden crearse, mantenerse y coordinarse múltiples vistas de la interfaz 
+de usuario cuando cambian los datos subyacentes de la aplicación?
 </p>
- <button onmousedown="mostrarMensaje3()" onmouseup="ocultarMensaje3()">Dato</button>
-    <div id="mensaje" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
- <p>
-Aquí:
+
+<p>
+<strong>Solución:</strong> 
+El patrón modelo-vista-controlador (MVC) separa la funcionalidad de la aplicación 
+en tres tipos de componentes:
 </p>
 
 <ul>
-    <li><code>a</code> vale 2</li>
-    <li><code>b</code> vale 3</li>
-    <li><code>fn</code> recibe una arrow function</li>
+    <li>
+        Un <strong>modelo (<em>model</em>)</strong>, 
+        <input type="text" name="respuesta_55" value="<?php echo $respuesta_55; ?>" size="35">
+         .
+    </li>
+
+    <li>
+        Una <strong>vista (<em>view</em>)</strong>, 
+        <input type="text" name="respuesta_56" value="<?php echo $respuesta_56; ?>" size="21">
+          e 
+        <input type="text" name="respuesta_57" value="<?php echo $respuesta_57; ?>" size="15">
+         .
+    </li>
+
+    <li>
+        Un <strong>controlador (<em>controller</em>)</strong>, 
+        <input type="text" name="respuesta_58" value="<?php echo $respuesta_58; ?>" size="15">  
+        y 
+        <input type="text" name="respuesta_59" value="<?php echo $respuesta_59; ?>" size="15">
+         y 
+        <input type="text" name="respuesta_60" value="<?php echo $respuesta_60; ?>" size="15">
+         .
+    </li>
 </ul>
 
 <p>
-La función:
-</p>
-
-<pre>
-<code>
-(x, y) => x * y
-</code>
-</pre>
-
-<p>
-multiplica los dos valores.
+MVC 
+<input type="text" name="respuesta_61" value="<?php echo $respuesta_61; ?>" size="36">
+ .
 </p>
 
 <p>
-Entonces internamente ocurre algo parecido a:
+El 
+<input type="text" name="respuesta_62" value="<?php echo $respuesta_62; ?>" size="11">
+  e 
+<input type="text" name="respuesta_63" value="<?php echo $respuesta_63; ?>" size="11">
+  de 
+<input type="text" name="respuesta_64" value="<?php echo $respuesta_64; ?>" size="11">
+  de componentes, junto con sus 
+<input type="text" name="respuesta_65" value="<?php echo $respuesta_65; ?>" size="11">
+  formas de 
+<input type="text" name="respuesta_66" value="<?php echo $respuesta_66; ?>" size="11">
+ , puede resultar 
+<input type="text" name="respuesta_67" value="<?php echo $respuesta_67; ?>" size="11">
+ , y este costo puede 
+<input type="text" name="respuesta_68" value="<?php echo $respuesta_68; ?>" size="11">
+  para 
+<input type="text" name="respuesta_69" value="<?php echo $respuesta_69; ?>" size="41">
+ .
 </p>
-
-<pre>
-<code>
-fn(2, 3)
-</code>
-</pre>
 
 <p>
-Resultado:
+Además, la 
+<input type="text" name="respuesta_70" value="<?php echo $respuesta_70; ?>" size="11">
+  entre las 
+<input type="text" name="respuesta_71" value="<?php echo $respuesta_71; ?>" size="11">
+  de MVC y los 
+<input type="text" name="respuesta_72" value="<?php echo $respuesta_72; ?>" size="11">
+  de 
+<input type="text" name="respuesta_73" value="<?php echo $respuesta_73; ?>" size="11">
+  para 
+<input type="text" name="respuesta_74" value="<?php echo $respuesta_74; ?>" size="11">
+  no es 
+  <input type="text" name="respuesta_75" value="<?php echo $respuesta_75; ?>" size="8">
+   .
 </p>
 
-<pre>
-<code>
-2 * 3 = 6
-</code>
-</pre>
+<p>
+La vista y el controlador 
+<input type="text" name="respuesta_76" value="<?php echo $respuesta_76; ?>" size="8">
+  la 
+<input type="text" name="respuesta_77" value="<?php echo $respuesta_77; ?>" size="8">
+  y la 
+<input type="text" name="respuesta_78" value="<?php echo $respuesta_78; ?>" size="8">
+ , pero estas 
+<input type="text" name="respuesta_79" value="<?php echo $respuesta_79; ?>" size="8">
+  a menudo están 
+<input type="text" name="respuesta_80" value="<?php echo $respuesta_80; ?>" size="8">
+  en 
+<input type="text" name="respuesta_81" value="<?php echo $respuesta_81; ?>" size="15">
+ .
+</p>
+
+<p>
+Esto puede generar una 
+<input type="text" name="respuesta_82" value="<?php echo $respuesta_82; ?>" size="15">
+  conceptual entre la 
+<input type="text" name="respuesta_83" value="<?php echo $respuesta_83; ?>" size="15">
+  y el 
+<input type="text" name="respuesta_84" value="<?php echo $respuesta_84; ?>" size="15">
+  de 
+<input type="text" name="respuesta_85" value="<?php echo $respuesta_85; ?>" size="15">
+ .
+</p>
+
+<button type="submit">Enviar</button>
+<?php echo $verificar_55 ?>
+
+
+
+    <?php echo $verificar_56 ?>
+    <?php echo $verificar_57 ?>
+    <?php echo $verificar_58 ?>
+    <?php echo $verificar_59 ?>
+    <?php echo $verificar_60 ?>
+    <?php echo $verificar_61 ?>
+    <?php echo $verificar_62 ?>
+    <?php echo $verificar_63 ?>
+    <?php echo $verificar_64 ?>
+    <?php echo $verificar_65 ?>
+    <?php echo $verificar_66 ?>
+
+    <?php echo $verificar_67 ?>
+<?php echo $verificar_68 ?>
+<?php echo $verificar_69 ?>
+<?php echo $verificar_70 ?>
+<?php echo $verificar_71 ?>
+<?php echo $verificar_72 ?>
+<?php echo $verificar_73 ?>
+<?php echo $verificar_74 ?>
+<?php echo $verificar_75 ?>
+<?php echo $verificar_76 ?>
+<?php echo $verificar_77 ?>
+<?php echo $verificar_78 ?>
+<?php echo $verificar_79 ?>
+<?php echo $verificar_80 ?>
+<?php echo $verificar_81 ?>
+<?php echo $verificar_82 ?>
+<?php echo $verificar_83 ?>
+<?php echo $verificar_84 ?>
+<?php echo $verificar_85 ?>
+
+<hr>
+<p>
+La Tabla 13.3 resume la solución del patrón MVC.
+</p>
+
+<p>
+<strong>Tabla 13.3. Solución del Patrón Modelo-Vista-Controlador</strong>
+</p>
+
+
+    <table>
+      <tbody>
+        <tr>
+          <td>Descripción</td>
+          <td>
+            <p>El patrón MVC divide la funcionalidad del sistema en tres componentes: un modelo, una vista y un controlador que actúa como mediador entre el modelo y la vista.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>Elementos</td>
+          <td>
+            <p>El <em>modelo</em> es una representación de los datos o el estado de la aplicación, y contiene (o provee una interfaz hacia) la lógica de la aplicación.</p>
+            <p>La <em>vista</em> es un componente de interfaz de usuario que produce una representación del modelo para el usuario, permite alguna forma de entrada por parte del usuario, o ambas cosas.</p>
+            <p>El <em>controlador</em> gestiona la interacción entre el modelo y la vista, traduciendo las acciones del usuario en cambios sobre el modelo o sobre la vista.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>Relaciones</td>
+          <td>
+            <p>La relación <em>
+            <input type="text" name="respuesta_86" value="<?php echo $respuesta_86; ?>" size="15">    
+             </em>(
+            <input type="text" name="respuesta_87" value="<?php echo $respuesta_87; ?>" size="15">    
+             ) 
+            <input type="text" name="respuesta_88" value="<?php echo $respuesta_88; ?>" size="15">
+              del modelo, 
+            <input type="text" name="respuesta_89" value="<?php echo $respuesta_89; ?>" size="15">
+             , informando a los elementos sobre los cambios de estado relevantes.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>Restricciones</td>
+          <td>
+            <p>Debe existir 
+            <input type="text" name="respuesta_90" value="<?php echo $respuesta_90; ?>" size="15">    
+              de cada componente: modelo, vista y controlador.</p>
+            <p>El componente modelo 
+            <input type="text" name="respuesta_91" value="<?php echo $respuesta_91; ?>" size="28">    
+              con el controlador.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>Debilidades</td>
+          <td>
+            <p>La complejidad puede 
+            <input type="text" name="respuesta_92" value="<?php echo $respuesta_92; ?>" size="28">    
+              para interfaces de usuario simples.</p>
+            <p>Las abstracciones de modelo, vista y controlador pueden 
+            <input type="text" name="respuesta_93" value="<?php echo $respuesta_93; ?>" size="15">    
+              a algunos conjuntos de herramientas de interfaz de usuario.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+<button type="submit">Enviar</button>
+<?php echo $verificar_86 ?>
+<?php echo $verificar_87 ?>
+<?php echo $verificar_88 ?>
+<?php echo $verificar_89 ?>
+<?php echo $verificar_90 ?>
+<?php echo $verificar_91 ?>
+<?php echo $verificar_92 ?>
+<?php echo $verificar_93 ?>
+<hr>
+
+    <p>
+Puede haber, de hecho, muchas vistas y muchos controladores asociados a un modelo.
+</p>
+
+<p>
+Por ejemplo, un conjunto de datos de negocio puede representarse como columnas 
+de números en una hoja de cálculo, como un gráfico de dispersión o como un gráfico circular.
+</p>
+
+<p>
+Cada una de estas representaciones constituye una vista separada, y esta vista puede 
+actualizarse dinámicamente a medida que cambia el modelo 
+(por ejemplo, mostrando transacciones en vivo en un sistema de procesamiento de transacciones).
+</p>
+
+<p>
+Un modelo puede ser actualizado por diferentes controladores; por ejemplo, un mapa podría 
+ampliarse y desplazarse mediante movimientos del mouse, movimientos de trackball, pulsaciones 
+del teclado o comandos de voz; cada una de estas diferentes formas de entrada necesita ser 
+gestionada por un controlador.
+</p>
+
+ 
+
+</div>
+
+
+
+
+<div class="seccion derecha">
+ <p>
+Los componentes MVC están conectados entre sí mediante algún tipo de mecanismo de notificación, 
+como eventos o <em>callbacks</em>.
+</p>
+
+<p>
+Estas notificaciones contienen actualizaciones de estado.
+</p>
+
+<p>
+Un cambio en el modelo necesita comunicarse a las vistas para que puedan actualizarse.
+</p>
+
+<p>
+Un evento externo, como una entrada del usuario, necesita comunicarse al controlador, 
+el cual puede a su vez actualizar la vista y/o el modelo.
+</p>
+
+<p>
+Las notificaciones pueden ser de tipo <em>push</em> o <em>pull</em>.
+</p>
+
+<p>
+Debido a que estos componentes están débilmente acoplados, es fácil desarrollarlos 
+y probarlos en paralelo, y los cambios en uno de ellos tienen un impacto mínimo 
+sobre los demás.
+</p>
+
+<p>
+Las relaciones entre los componentes de MVC se muestran en la Figura 13.7.
+</p>
+
+
+<div style="font-family: Georgia, serif; padding: 20px 0;">
+  <div style="position:relative; width:620px; height:420px;">
+
+    <!-- Boxes -->
+    <div style="position:absolute; background:#6b7280; border-radius:14px; color:#fff; padding:12px 16px; left:190px; top:0; width:230px;">
+      <div style="font-size:16px; font-weight:bold; text-align:center; margin-bottom:8px;">Model</div>
+      <ul style="list-style:disc; padding-left:18px; font-size:11.5px; line-height:1.65;">
+        <li>Encapsulates application state</li>
+        <li>Responds to state queries</li>
+        <li>Exposes application functionality</li>
+        <li>Notifies views of changes</li>
+      </ul>
     </div>
 
-    <hr>
-    <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
-    <br>
-    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
-    <button type="submit"   >Mostrar Solución</button>
-         
+    <div style="position:absolute; background:#6b7280; border-radius:14px; color:#fff; padding:12px 16px; left:0; top:230px; width:235px;">
+      <div style="font-size:16px; font-weight:bold; text-align:center; margin-bottom:8px;">View</div>
+      <ul style="list-style:disc; padding-left:18px; font-size:11.5px; line-height:1.65;">
+        <li>Renders the models</li>
+        <li>Requests updates from models</li>
+        <li>Sends user gestures to controller</li>
+        <li>Allows controller to select view</li>
+      </ul>
+    </div>
+
+    <div style="position:absolute; background:#6b7280; border-radius:14px; color:#fff; padding:12px 16px; left:370px; top:230px; width:240px;">
+      <div style="font-size:16px; font-weight:bold; text-align:center; margin-bottom:8px;">Controller</div>
+      <ul style="list-style:disc; padding-left:18px; font-size:11.5px; line-height:1.65;">
+        <li>Defines application behavior</li>
+        <li>Maps user actions to model updates</li>
+        <li>Selects view for response</li>
+        <li>One for each functionality</li>
+      </ul>
+    </div>
+
+    <!-- SVG connectors -->
+    <svg style="position:absolute; top:0; left:0; width:100%; height:100%; overflow:visible; pointer-events:none;">
+      <defs>
+        <marker id="mvc-ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M0 0L10 5L0 10Z" fill="#444"/>
+        </marker>
+        <marker id="mvc-ahd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M0 0L10 5L0 10Z" fill="#777"/>
+        </marker>
+      </defs>
+
+      <!-- State Query: View → Model (solid, margen izquierdo) -->
+<polyline points="20,250 20,250 20,80 210,80"
+        fill="none" stroke="#444" stroke-width="5" marker-end="url(#mvc-ah)"/>
+      <text x="28" y="195" font-size="12" font-family="Georgia,serif" fill="#222" font-weight="bold">State</text>
+      <text x="28" y="210" font-size="12" font-family="Georgia,serif" fill="#222" font-weight="bold">Query</text>
+
+      <!-- Change Notification: Model → View (dashed) -->
+      <polyline points="210,112 210,165 148,165 148,230"
+        fill="none" stroke="#777" stroke-width="5" stroke-dasharray="10,6" marker-end="url(#mvc-ahd)"/>
+      <text x="155" y="158" font-size="12" font-family="Georgia,serif" fill="#222" font-weight="bold">Change</text>
+      <text x="155" y="172" font-size="12" font-family="Georgia,serif" fill="#222" font-weight="bold">Notification</text>
+
+      <!-- State Change: Controller → Model (solid, margen derecho) -->
+      <polyline points="570,265 570,265 570,60 420,60"
+        fill="none" stroke="#444" stroke-width="5" marker-end="url(#mvc-ah)"/>
+      <text x="530" y="195" font-size="12" font-family="Georgia,serif" fill="#222" font-weight="bold">State</text>
+      <text x="522" y="210" font-size="12" font-family="Georgia,serif" fill="#222" font-weight="bold">Change</text>
+
+      <!-- View Selection: Controller → View (solid) -->
+      <polyline points="370,278 235,278"
+        fill="none" stroke="#444" stroke-width="5" marker-end="url(#mvc-ah)"/>
+      <text x="264" y="270" font-size="12" font-family="Georgia,serif" fill="#222" font-weight="bold">View Selection</text>
+
+      <!-- User Gestures: View → Controller (dashed) -->
+      <polyline points="235,310 370,310"
+        fill="none" stroke="#777" stroke-width="5" stroke-dasharray="10,6" marker-end="url(#mvc-ahd)"/>
+      <text x="252" y="328" font-size="12" font-family="Georgia,serif" fill="#222" font-weight="bold">User Gestures</text>
+    </svg>
+  </div>
+
+  <!-- Leyenda -->
+  <div style="border:1.5px solid #aaa; border-radius:8px; padding:12px 20px; display:inline-flex; flex-direction:column; gap:10px; margin-top:16px;">
+    <span style="font-size:13px; font-weight:bold; font-family:Georgia,serif;">Key:</span>
+    <div style="display:flex; align-items:center; gap:12px; font-size:12px; font-family:Georgia,serif;">
+      <div style="width:90px; height:7px; background:#555; clip-path:polygon(0 20%,82% 20%,82% 0%,100% 50%,82% 100%,82% 80%,0 80%);"></div>
+      <span>Method Invocations</span>
+    </div>
+    <div style="display:flex; align-items:center; gap:12px; font-size:12px; font-family:Georgia,serif;">
+      <div style="width:90px; height:7px; background:repeating-linear-gradient(90deg,#777 0px,#777 8px,transparent 8px,transparent 13px); clip-path:polygon(0 20%,82% 20%,82% 0%,100% 50%,82% 100%,82% 80%,0 80%);"></div>
+      <span>Events</span>
+    </div>
+  </div>
+</div>
+
+
+<p><strong>Figura 13.7. El patrón modelo-vista-controlador</strong></p>
+
+<p>
+El patrón MVC es ampliamente utilizado en bibliotecas de interfaces de usuario 
+como las clases Swing de Java, el framework ASP.NET de Microsoft, el kit de desarrollo 
+de software Flex de Adobe, el framework Qt de Nokia y muchos otros.
+</p>
+
+<p>
+Como consecuencia, es común que una sola aplicación contenga muchas instancias de MVC 
+(a menudo una por cada objeto de interfaz de usuario).
+</p>
+
+
+<h3>Patrón Pipe-and-Filter</h3>
+
+<p>
+<strong>Contexto:</strong> 
+Muchos sistemas necesitan transformar flujos de elementos de datos discretos, 
+desde la entrada hasta la salida.
+</p>
+
+<p>
+Muchos tipos de transformaciones ocurren repetidamente en la práctica y, por lo tanto, 
+es deseable crear estas transformaciones como partes independientes y reutilizables.
+</p>
+
+<p>
+<strong>Problema:</strong> 
+Estos sistemas necesitan dividirse en componentes reutilizables y débilmente acoplados, 
+con mecanismos de interacción simples y genéricos.
+</p>
+
+<p>
+De esta manera, pueden combinarse flexiblemente entre sí.
+</p>
+
+<p>
+Los componentes, al ser genéricos y débilmente acoplados, pueden reutilizarse fácilmente.
+</p>
+
+<p>
+Los componentes, al ser independientes, pueden ejecutarse en paralelo.
+</p>
+
+<p>
+<strong>Solución:</strong> 
+El patrón de interacción en el patrón pipe-and-filter se caracteriza por transformaciones 
+sucesivas de flujos de datos.
+</p>
+
+<p>
+Los datos llegan a los puertos de entrada de un filtro, son transformados y luego se envían 
+a través de un pipe desde sus puertos de salida hacia el siguiente filtro.
+</p>
+
+<p>
+Un único filtro puede consumir datos desde uno o más puertos y producir datos hacia uno 
+o más puertos.
+</p>
+
+<p>
+Existen varias debilidades asociadas con el patrón pipe-and-filter.
+</p>
+
+<p>
+Por ejemplo, este patrón normalmente no es una buena elección para sistemas interactivos, 
+ya que no permite ciclos (los cuales son importantes para la retroalimentación del usuario).
+</p>
+
+<p>
+Además, tener grandes cantidades de filtros independientes puede añadir una cantidad 
+considerable de sobrecarga computacional, porque cada filtro se ejecuta como su propio 
+hilo o proceso.
+</p>
+
+<p>
+Asimismo, los sistemas pipe-and-filter pueden no ser apropiados para cálculos de larga duración 
+sin añadir alguna forma de funcionalidad de checkpoint/restore, ya que la falla de cualquier 
+filtro (o pipe) puede causar el fallo de toda la tubería.
+</p>
+
+<p>
+La solución del patrón pipe-and-filter se resume en la Tabla 13.4.
+</p>
+
+<p>
+<strong>Tabla 13.4. Solución del Patrón Pipe-and-Filter</strong>
+</p>
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>Descripción</td>
+      <td>
+        <p>Los datos se transforman desde las entradas externas de un sistema hasta sus salidas externas mediante una serie de transformaciones realizadas por sus filtros, conectados por tuberías (<em>pipes</em>).</p>
+      </td>
+    </tr>
+    <tr>
+      <td>Elementos</td>
+      <td>
+        <p><em>Filtro</em> (<em>Filter</em>), que es un componente que transforma los datos leídos en su(s) puerto(s) de entrada en datos escritos en su(s) puerto(s) de salida. Los filtros pueden ejecutarse de forma concurrente entre sí. Los filtros pueden transformar los datos de manera incremental; es decir, pueden comenzar a producir salida tan pronto como comienzan a procesar la entrada. Las características importantes incluyen las tasas de procesamiento, los formatos de datos de entrada/salida y la transformación ejecutada por el filtro.</p>
+        <p><em>Tubería</em> (<em>Pipe</em>), que es un conector que transporta datos desde el(los) puerto(s) de salida de un filtro hasta el(los) puerto(s) de entrada de otro filtro. Una tubería tiene una única fuente para su entrada y un único destino para su salida. Una tubería preserva la secuencia de elementos de datos y no altera los datos que pasan a través de ella. Las características importantes incluyen el tamaño del búfer, el protocolo de interacción, la velocidad de transmisión y el formato de los datos que pasan por la tubería.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>Relaciones</td>
+      <td>
+        <p>La relación de <em>conexión</em> (<em>attachment</em>) asocia la salida de los filtros con la entrada de las tuberías y viceversa.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>Restricciones</td>
+      <td>
+        <p>Las tuberías conectan los puertos de salida de los filtros con los puertos de entrada de otros filtros.</p>
+        <p>Los filtros conectados deben coincidir en el tipo de datos que se transfieren a través de la tubería de conexión.</p>
+        <p>Las especializaciones del patrón pueden restringir la asociación de componentes a un grafo acíclico o a una secuencia lineal, denominada a veces <em>pipeline</em>.</p>
+        <p>Otras especializaciones pueden establecer que los componentes tengan ciertos puertos con nombres definidos, como los puertos <em>stdin</em>, <em>stdout</em> y <em>stderr</em> de los filtros UNIX.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>Debilidades</td>
+      <td>
+        <p>El patrón tubería-filtro no suele ser una buena opción para sistemas interactivos.</p>
+        <p>Contar con un gran número de filtros independientes puede añadir una cantidad considerable de sobrecarga computacional.</p>
+        <p>Los sistemas tubería-filtro pueden no ser adecuados para cómputos de larga duración.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 </div>
 </div>
  </form>
@@ -2431,7 +2571,7 @@ Resultado:
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="segundo.php"
+        href="cuarto.php"
         role="button"
         width="50px"
         height="50px"
