@@ -18,126 +18,138 @@ if ($_POST) {
     
     if ($mostrar_solucion === 'mostrar_solucion') {        
  
-    // ============================================================
-    // Respuestas textuales (preguntas 1 a 49) – ya existentes
-    // ============================================================
-    $respuesta_1  = 'patron de diseño Master-Worker describe';
-    $respuesta_2  = 'ejecutar una coleccion de tareas independientes';
-    $respuesta_3  = 'tareas que pueden ejecutarse concurrentemente';
-    $respuesta_4  = 'un grupo de procesadores disponibles';
-    $respuesta_5  = 'llamados workers';
-    $respuesta_6  = 'la distribucion de tareas';
-    $respuesta_7  = 'procesadores puede realizarse';
-    $respuesta_8  = 'forma estatica o dinamica';
-    $respuesta_9  = 'fin';
-    $respuesta_10 = 'promover una carga computacional balanceada';
-    $respuesta_11 = 'problemas computacionales';
-    $respuesta_12 = 'resuelven dividiendolos';
-    $respuesta_13 = 'subproblemas independientes';
-    $respuesta_14 = 'de manera que';
-    $respuesta_15 = 'implementaciones';
-    $respuesta_16 = 'soluciones';
-    $respuesta_17 = 'ejecutarse';
-    $respuesta_18 = 'forma independiente y concurrente';
-    $respuesta_19 = 'independencia';
-    $respuesta_20 = 'subproblemas implica';
-    $respuesta_21 = 'las tareas asociadas';
-    $respuesta_22 = 'cada implementacion';
-    $respuesta_23 = 'no comparten datos de lectura y escritura';
-    $respuesta_24 = 'y las tareas no deben esperar los resultados';
-    $respuesta_25 = 'otras tareas';
-    $respuesta_26 = 'practicantes';
-    $respuesta_27 = 'aprovechar';
-    $respuesta_28 = 'recursos computacionales disponibles';
-    $respuesta_29 = 'concurrencia inherente sin incurrir';
-    $respuesta_30 = 'sobrecarga innecesaria';
-    $respuesta_31 = 'diseñarse';
-    $respuesta_32 = 'balancear la carga';
-    $respuesta_33 = 'unidades de procesamiento disponibles';
-    $respuesta_34 = 'soluciones';
-    $respuesta_35 = 'dividirse';
-    $respuesta_36 = 'tareas independientes';
-    $respuesta_37 = 'costo de inicializar workers';
-    $respuesta_38 = 'la transmision de datos';
-    $respuesta_39 = 'debe ser menor que el costo de la tarea';
-    $respuesta_40 = 'numero de tareas debe';
-    $respuesta_41 = 'mayor';
-    $respuesta_42 = 'las unidades de procesamiento disponibles';
-    $respuesta_43 = 'distribucion debe';
-    $respuesta_44 = 'dinamica';
-    $respuesta_45 = 'carga de cada tarea es desconocida';
-    $respuesta_46 = 'varia impredeciblemente';
-    $respuesta_47 = 'la carga disponible soportada';
-    $respuesta_48 = 'cada worker';
-    $respuesta_49 = 'desconocida';
+     // ============================================================
+    $respuesta_1   = 'patron de diseño Master-Worker describe';
+    $respuesta_2   = 'ejecutar una coleccion de tareas independientes';
+    $respuesta_3   = 'tareas que pueden ejecutarse concurrentemente';
+    $respuesta_4   = 'un grupo de procesadores disponibles';
+    $respuesta_5   = 'llamados workers';
+    $respuesta_6   = 'la distribucion de tareas';
+    $respuesta_7   = 'procesadores puede realizarse';
+    $respuesta_8   = 'forma estatica o dinamica';
+    $respuesta_9   = 'fin';
+    $respuesta_10  = 'promover una carga computacional balanceada';
+    $respuesta_11  = 'problemas computacionales';
+    $respuesta_12  = 'resuelven dividiendolos';
+    $respuesta_13  = 'subproblemas independientes';
+    $respuesta_14  = 'de manera que';
+    $respuesta_15  = 'implementaciones';
+    $respuesta_16  = 'soluciones';
+    $respuesta_17  = 'ejecutarse';
+    $respuesta_18  = 'forma independiente y concurrente';
+    $respuesta_19  = 'independencia';
+    $respuesta_20  = 'subproblemas implica';
+    $respuesta_21  = 'las tareas asociadas';
+    $respuesta_22  = 'cada implementacion';
+    $respuesta_23  = 'no comparten datos de lectura y escritura';
+    $respuesta_24  = 'y las tareas no deben esperar los resultados';
+    $respuesta_25  = 'otras tareas';
+    $respuesta_26  = 'practicantes';
+    $respuesta_27  = 'aprovechar';
+    $respuesta_28  = 'recursos computacionales disponibles';
+    $respuesta_29  = 'concurrencia inherente sin incurrir';
+    $respuesta_30  = 'sobrecarga innecesaria';
+    $respuesta_31  = 'diseñarse';
+    $respuesta_32  = 'balancear la carga';
+    $respuesta_33  = 'unidades de procesamiento disponibles';
+    $respuesta_34  = 'soluciones';
+    $respuesta_35  = 'dividirse';
+    $respuesta_36  = 'tareas independientes';
+    $respuesta_37  = 'costo de inicializar workers';
+    $respuesta_38  = 'la transmision de datos';
+    $respuesta_39  = 'debe ser menor que el costo de la tarea';
+    $respuesta_40  = 'numero de tareas debe';
+    $respuesta_41  = 'mayor';
+    $respuesta_42  = 'las unidades de procesamiento disponibles';
+    $respuesta_43  = 'distribucion debe';
+    $respuesta_44  = 'dinamica';
+    $respuesta_45  = 'carga de cada tarea es desconocida';
+    $respuesta_46  = 'varia impredeciblemente';
+    $respuesta_47  = 'la carga disponible soportada';
+    $respuesta_48  = 'cada worker';
+    $respuesta_49  = 'desconocida';
+    $respuesta_50  = 'tareas';
+    $respuesta_51  = 'independientes';
+    $respuesta_52  = 'El patron de diseño';
+    $respuesta_53  = 'aplica';
+    $respuesta_54  = 'las tareas no tienen dependencias entre si';
+    $respuesta_55  = 'las tareas deben rediseñarse';
+    $respuesta_56  = 'eliminar dichas dependencias';
+    $respuesta_57  = 'Compromisos';
+    $respuesta_58  = 'comunicacion de datos y carga';
+    $respuesta_59  = 'aplicar este patron de diseño';
+    $respuesta_60  = 'tamaño de la tarea debe';
+    $respuesta_61  = 'optimo';
+    $respuesta_62  = 'acuerdo';
+    $respuesta_63  = 'compromisos';
+    $respuesta_64  = 'la sobrecarga de distribucion';
+    $respuesta_65  = 'la carga implicada por la tarea';
+    $respuesta_66  = 'tamaño de las tareas en Master-Worker';
+    $respuesta_67  = 'variar de una tarea a otra';
+    $respuesta_68  = 'Numero impredecible de tareas y nodos procesadores';
+    $respuesta_69  = 'mayoria del tiempo no es posible';
+    $respuesta_70  = 'predicciones explicitas';
+    $respuesta_71  = 'entorno de ejecucion';
+    $respuesta_72  = 'hardware y software';
+    $respuesta_73  = 'procura lograr balanceo de carga incluso bajo entornos inciertos';
+    $respuesta_74  = 'asignando tareas';
+    $respuesta_75  = 'nodos procesadores inactivos';
+    $respuesta_76  = 'dinamica de Master-Worker';
+    $respuesta_77  = 'Fork-Join';
+    $respuesta_78  = 'El numero de tareas y nodos procesadores es conocido';
+    $respuesta_79  = 'el numero de tareas';
+    $respuesta_80  = 'la carga de los nodos procesadores';
+    $respuesta_81  = 'antes de la ejecucion';
+    $respuesta_82  = 'los practicantes pueden programar el software';
+    $respuesta_83  = 'asignar estaticamente las tareas';
+    $respuesta_84  = 'nodo procesador mas adecuado';
+    $respuesta_85  = 'garantizando balanceo de carga';
+    $respuesta_86  = 'objOne:Runnable';
+    $respuesta_87  = 'objTwo:Runnable';
+    $respuesta_88  = 'threadPool:ThreadPool';
+    $respuesta_89  = 'workerOne:Worker';
+    $respuesta_90  = 'workerTwo:Worker';
+    $respuesta_91  = 'execute()';
+    $respuesta_92  = 'execute()';
+    $respuesta_93  = 'returnPool()';
+    $respuesta_94  = 'execute()';
+    $respuesta_95  = 'execute()';
+    $respuesta_96  = 'returnPool()';
+    $respuesta_97  = 'Master';
+    $respuesta_98  = '-queue: Queue';
+    $respuesta_99  = '-global_results: Queue';
+    $respuesta_100 = '-workers: ThreadPool';
+    $respuesta_101 = '+create_tasks(): void';
+    $respuesta_102 = '+launch_workers(): void';
+    $respuesta_103 = '+getTask(): Object';
+    $respuesta_104 = '+addPartialResult(Object): void';
+    $respuesta_105 = '+processPartialResults(): Object';
+    $respuesta_106 = '+shutdown_workers(): void';
+    $respuesta_107 = 'Worker';
+    $respuesta_108 = '-request_task(): void';
+    $respuesta_109 = '+process_task(): void';
+    $respuesta_110 = '1';
+    $respuesta_111 = '1..*';
+    $respuesta_112 = 'Master';
+    $respuesta_113 = 'Master contiene la coleccion compartida';
+    $respuesta_114 = 'tareas';
+    $respuesta_115 = 'usualmente una cola';
+    $respuesta_116 = 'donde las tareas se almacenan despues';
+    $respuesta_117 = 'ser divididas';
+    $respuesta_118 = 'posee una segunda cola compartida';
+    $respuesta_119 = 'almacenan los resultados';
+    $respuesta_120 = 'los calculos realizados por los workers';
+    $respuesta_121 = 'el Master mantiene registradas las tareas';
+    $respuesta_122 = 'lanza los procesadores';
+    $respuesta_123 = 'recopila los resultados de los workers';
+    $respuesta_124 = 'producir el resultado final';
+    $respuesta_125 = 'Worker';
+    $respuesta_126 = 'Workers solicitan una tarea';
+    $respuesta_127 = 'la coleccion compartida de tareas registradas';
+    $respuesta_128 = 'cola del master y la procesan';
+    $respuesta_129 = 'resultados parciales del cálculo';
+    $respuesta_130 = 'master';
 
-    // ============================================================
-    // Respuestas textuales para preguntas 50 a 85 (según el else)
-    // ============================================================
-    $respuesta_50 = 'tareas';
-    $respuesta_51 = 'independientes';
-    $respuesta_52 = 'El patron de diseño';
-    $respuesta_53 = 'aplica';
-    $respuesta_54 = 'las tareas no tienen dependencias entre si';
-    $respuesta_55 = 'las tareas deben rediseñarse';
-    $respuesta_56 = 'eliminar dichas dependencias';
-    $respuesta_57 = 'Compromisos';
-    $respuesta_58 = 'comunicacion de datos y carga';
-    $respuesta_59 = 'aplicar este patron de diseño';
-    $respuesta_60 = 'tamaño de la tarea debe';
-    $respuesta_61 = 'optimo';
-    $respuesta_62 = 'acuerdo';
-    $respuesta_63 = 'compromisos';
-    $respuesta_64 = 'la sobrecarga de distribucion';
-    $respuesta_65 = 'la carga implicada por la tarea';
-    $respuesta_66 = 'tamaño de las tareas en Master-Worker';
-    $respuesta_67 = 'variar de una tarea a otra';
-    $respuesta_68 = 'Numero impredecible de tareas y nodos procesadores';
-    $respuesta_69 = 'mayoria del tiempo no es posible';
-    $respuesta_70 = 'predicciones explicitas';
-    $respuesta_71 = 'entorno de ejecucion';
-    $respuesta_72 = 'hardware y software';
-    $respuesta_73 = 'procura lograr balanceo de carga incluso bajo entornos inciertos';
-    $respuesta_74 = 'asignando tareas';
-    $respuesta_75 = 'nodos procesadores inactivos';
-    $respuesta_76 = 'dinamica de Master-Worker';
-    $respuesta_77 = 'Fork-Join';
-    $respuesta_78 = 'El numero de tareas y nodos procesadores es conocido';
-    $respuesta_79 = 'el numero de tareas';
-    $respuesta_80 = 'la carga de los nodos procesadores';
-    $respuesta_81 = 'antes de la ejecucion';
-    $respuesta_82 = 'los practicantes pueden programar el software';
-    $respuesta_83 = 'asignar estaticamente las tareas';
-    $respuesta_84 = 'nodo procesador mas adecuado';
-    $respuesta_85 = 'garantizando balanceo de carga';
-        $respuesta_86 = '200';
-        $respuesta_87 = '220';
-        $respuesta_88 = '240';
-        
- 
-        $respuesta_89 = '42';
-        $respuesta_90 = '63';
-        $respuesta_91 = '84';
-        $respuesta_92 = '105';
-        $respuesta_93 = '126';
-        $respuesta_94 = '147';
-        $respuesta_95 = '168';
-        $respuesta_96 = '189';
-        $respuesta_97 = '210';
-        $respuesta_98 = '231';
-        $respuesta_99 = '252';
-        
-         $respuesta_100 = '44';
-        $respuesta_101 = '66';
-        $respuesta_102 = '88';
-        $respuesta_103 = '110';
-        $respuesta_104 = '132'; 
-        $respuesta_105 = '154';
-        $respuesta_106 = '176';
-        $respuesta_107 = '198';
-        $respuesta_108 = '220';
-        $respuesta_109 = '242';
-        $respuesta_110 = '264';
         
         // Marcar todas como correctas
     for ($i = 1; $i <= 122; $i++) {
@@ -1078,7 +1090,7 @@ elseif ($respuesta_111 === '') { $verificar_111 = ''; }
 else { $verificar_111 = "incorrecto"; }
 
 $respuesta_112 = isset($_POST['respuesta_112']) ? $_POST['respuesta_112'] : '';
-if ($respuesta_112 === '36') {  
+if ($respuesta_112 === 'Master') {  
     $verificar_112 = "correcto";
 } elseif ($respuesta_112 === '') {
     $verificar_112 = '';
@@ -1232,7 +1244,7 @@ if ($respuesta_128 === 'cola del master y la procesan') {
 }
 
 $respuesta_129 = isset($_POST['respuesta_129']) ? $_POST['respuesta_129'] : '';
-if ($respuesta_129 === 'resultados parciales del cálculo') {  
+if ($respuesta_129 === 'resultados parciales del calculo') {  
     $verificar_129 = "correcto";
 } elseif ($respuesta_129 === '') {
     $verificar_129 = '';
@@ -1773,7 +1785,7 @@ Los
   deben 
 <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="8">
   los 
-<input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="21">
+<input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="32">
   y la 
 <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="31">
   en 
@@ -1826,11 +1838,11 @@ del problema de suma de elementos de vectores.
 <h4>Contexto</h4>
 <p>
 Los problemas cuyas 
-<input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="11">
+<input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="8">
   pueden 
-<input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="11">
+<input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="8">
   en 
-<input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="16">
+<input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="18">
   pueden aprovechar
 este patrón de diseño.
 </p>
@@ -1852,7 +1864,7 @@ Sin embargo, algunas particularidades deben evaluarse antes de implementarlo:
 
   <li>
     El 
-    <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="25">
+    <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="18">
       ser 
     <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="8">
       que 
@@ -1870,7 +1882,7 @@ Sin embargo, algunas particularidades deben evaluarse antes de implementarlo:
      ,
     <input type="text" name="respuesta_46" value="<?php echo $respuesta_46; ?>" size="21">
       o cuando 
-    <input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="31">
+    <input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="25">
       por 
     <input type="text" name="respuesta_48" value="<?php echo $respuesta_48; ?>" size="12">
     es 
@@ -1907,11 +1919,11 @@ Sin embargo, algunas particularidades deben evaluarse antes de implementarlo:
 <input type="text" name="respuesta_51" value="<?php echo $respuesta_51; ?>" size="11">
  </h5>
 <p>
-<input type="text" name="respuesta_52" value="<?php echo $respuesta_52; ?>" size="11">
+<input type="text" name="respuesta_52" value="<?php echo $respuesta_52; ?>" size="14">
   Master-Worker 
 <input type="text" name="respuesta_53" value="<?php echo $respuesta_53; ?>" size="8">
   cuando 
-<input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>" size="41">
+<input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>" size="37">
  .
 De lo contrario, 
 <input type="text" name="respuesta_55" value="<?php echo $respuesta_55; ?>" size="24">
@@ -1929,22 +1941,22 @@ De lo contrario,
 Para 
 <input type="text" name="respuesta_59" value="<?php echo $respuesta_59; ?>" size="26">
  , el 
-<input type="text" name="respuesta_60" value="<?php echo $respuesta_60; ?>" size="16">
+<input type="text" name="respuesta_60" value="<?php echo $respuesta_60; ?>" size="21">
   ser 
 <input type="text" name="respuesta_61" value="<?php echo $respuesta_61; ?>" size="7">
   de 
-<input type="text" name="respuesta_62" value="<?php echo $respuesta_62; ?>" size="26">
+<input type="text" name="respuesta_62" value="<?php echo $respuesta_62; ?>" size="8">
   con los 
-<input type="text" name="respuesta_63" value="<?php echo $respuesta_63; ?>" size="26">
+<input type="text" name="respuesta_63" value="<?php echo $respuesta_63; ?>" size="10">
   entre 
-<input type="text" name="respuesta_64" value="<?php echo $respuesta_64; ?>" size="26">
+<input type="text" name="respuesta_64" value="<?php echo $respuesta_64; ?>" size="24">
   y 
 <input type="text" name="respuesta_65" value="<?php echo $respuesta_65; ?>" size="26">
  ,
 dado que el 
-<input type="text" name="respuesta_66" value="<?php echo $respuesta_66; ?>" size="26">
+<input type="text" name="respuesta_66" value="<?php echo $respuesta_66; ?>" size="33">
   puede 
-<input type="text" name="respuesta_67" value="<?php echo $respuesta_67; ?>" size="26">
+<input type="text" name="respuesta_67" value="<?php echo $respuesta_67; ?>" size="21">
  .
 </p>
 
@@ -1969,13 +1981,13 @@ Sin embargo, Master-Worker
  ,
 <input type="text" name="respuesta_74" value="<?php echo $respuesta_74; ?>" size="16">
   a 
-<input type="text" name="respuesta_75" value="<?php echo $respuesta_75; ?>" size="16">
+<input type="text" name="respuesta_75" value="<?php echo $respuesta_75; ?>" size="24">
  .
 </p>
 
 <p>
 Este escenario corresponde a la versión 
-<input type="text" name="respuesta_76" value="<?php echo $respuesta_76; ?>" size="16">
+<input type="text" name="respuesta_76" value="<?php echo $respuesta_76; ?>" size="25">
   y también al patrón
 de diseño 
 <input type="text" name="respuesta_77" value="<?php echo $respuesta_77; ?>" size="8">
@@ -2041,6 +2053,7 @@ Cuando
 <?php echo $verificar_80 ?>
 <?php echo $verificar_81 ?>
 <?php echo $verificar_82 ?>
+<br>
 <?php echo $verificar_83 ?>
 <?php echo $verificar_84 ?>
 <?php echo $verificar_85 ?>
@@ -2112,93 +2125,71 @@ Este escenario corresponde a la versión estática de Master-Worker.
 
 <!-- respuesta_86: objOne:Runnable  (cabecera 1: x=10..130, y=10..48) -->
 <!-- left: 10/680=1.5%  top: 10/490=2%  width:120/680=17.6%  height:38/490=7.7% -->
-<input type="text" name="respuesta_86"
+ <input type="text" name="respuesta_86"
   value="<?php echo $respuesta_86; ?>"
   style="position:absolute; left:1.5%; top:2%; width:17.6%; height:7.7%;
-         font-size:9px; padding:1px 3px; border:1px solid #aaa;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
          background:#fffde7; box-sizing:border-box;"/>
 
-<!-- respuesta_87: objTwo:Runnable  (x=190..310, y=10..48) -->
 <input type="text" name="respuesta_87"
   value="<?php echo $respuesta_87; ?>"
   style="position:absolute; left:27.9%; top:2%; width:17.6%; height:7.7%;
-         font-size:9px; padding:1px 3px; border:1px solid #aaa;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
          background:#fffde7; box-sizing:border-box;"/>
 
-<!-- respuesta_88: threadPool:ThreadPool  (x=390..540, y=10..48) -->
 <input type="text" name="respuesta_88"
   value="<?php echo $respuesta_88; ?>"
   style="position:absolute; left:57.4%; top:2%; width:22.1%; height:7.7%;
-         font-size:9px; padding:1px 3px; border:1px solid #aaa;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
          background:#fffde7; box-sizing:border-box;"/>
 
-<!-- respuesta_89: workerOne:Worker  (x=560..670, y=10..48) -->
 <input type="text" name="respuesta_89"
   value="<?php echo $respuesta_89; ?>"
   style="position:absolute; left:82.4%; top:2%; width:16.2%; height:7.7%;
-         font-size:9px; padding:1px 3px; border:1px solid #aaa;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
          background:#fffde7; box-sizing:border-box;"/>
 
-<!-- respuesta_90: workerTwo:Worker  (x=560..670, y=270..308) -->
-<!-- top: 270/490=55.1% -->
 <input type="text" name="respuesta_90"
   value="<?php echo $respuesta_90; ?>"
   style="position:absolute; left:82.4%; top:55.1%; width:16.2%; height:7.7%;
-         font-size:9px; padding:1px 3px; border:1px solid #aaa;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
          background:#fffde7; box-sizing:border-box;"/>
 
-<!-- respuesta_91: execute() — objTwo→threadPool  (encima flecha y=122) -->
-<!-- Flecha va de x=256 a x=459, texto centrado en x≈357, y encima de 122 → y≈108 -->
-<!-- left: (357-55)/680=44.4%  top: 100/490=20.4%  width:110/680=16.2% -->
 <input type="text" name="respuesta_91"
   value="<?php echo $respuesta_91; ?>"
   style="position:absolute; left:44%; top:20%; width:16%; height:3%;
-         font-size:9px; padding:1px 3px; border:1px solid #aaa;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
          background:#fffde7; box-sizing:border-box;"/>
 
-<!-- respuesta_92: execute() — threadPool→workerOne  (encima flecha y=145) -->
-<!-- Flecha x=471..609, centro x≈540, y encima ≈132 -->
-<!-- left: (540-55)/680=71.3%  top: 124/490=25.3% -->
 <input type="text" name="respuesta_92"
   value="<?php echo $respuesta_92; ?>"
   style="position:absolute; left:71%; top:25%; width:14%; height:3%;
-         font-size:9px; padding:1px 3px; border:1px solid #aaa;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
          background:#fffde7; box-sizing:border-box;"/>
 
-<!-- respuesta_93: returnPool() — workerOne→threadPool  (encima flecha y=200) -->
-<!-- Flecha x=471..609 (inversa), centro x≈540, y encima ≈187 -->
-<!-- top: 185/490=37.8% -->
 <input type="text" name="respuesta_93"
   value="<?php echo $respuesta_93; ?>"
   style="position:absolute; left:71%; top:37%; width:16%; height:3%;
-         font-size:9px; padding:1px 3px; border:1px solid #aaa;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
          background:#fffde7; box-sizing:border-box;"/>
 
-<!-- respuesta_94: execute() — objOne→threadPool  (encima flecha y=307) -->
-<!-- Flecha x=76..459, centro x≈267, y encima ≈294 -->
-<!-- left: (267-55)/680=31.2%  top: 292/490=59.6% -->
 <input type="text" name="respuesta_94"
   value="<?php echo $respuesta_94; ?>"
   style="position:absolute; left:20%; top:58%; width:16%; height:3%;
-         font-size:9px; padding:1px 3px; border:1px solid #aaa;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
          background:#fffde7; box-sizing:border-box;"/>
 
-<!-- respuesta_95: execute() — threadPool→workerTwo  (encima flecha y=348) -->
-<!-- top: 336/490=68.6% -->
 <input type="text" name="respuesta_95"
   value="<?php echo $respuesta_95; ?>"
   style="position:absolute; left:71%; top:67%; width:14%; height:3%;
-         font-size:9px; padding:1px 3px; border:1px solid #aaa;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
          background:#fffde7; box-sizing:border-box;"/>
 
-<!-- respuesta_96: returnPool() — workerTwo→threadPool  (encima flecha y=388) -->
-<!-- top: 375/490=76.5% -->
 <input type="text" name="respuesta_96"
   value="<?php echo $respuesta_96; ?>"
   style="position:absolute; left:71%; top:76%; width:14%; height:3%;
-         font-size:9px; padding:1px 3px; border:1px solid #aaa;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
          background:#fffde7; box-sizing:border-box;"/>
-
 </div>
 
 
@@ -2228,7 +2219,7 @@ Este escenario corresponde a la versión estática de Master-Worker.
   <!-- header Master (texto eliminado → input) -->
   <rect x="20" y="20" width="360" height="32" rx="2" fill="white" stroke="#444" stroke-width="1"/>
   <!-- separador atributos / métodos -->
-  <line x1="20" y1="92" x2="380" y2="92" stroke="#444" stroke-width="0.7"/>
+  <line x1="20" y1="80" x2="380" y2="80" stroke="#444" stroke-width="0.7"/>
   <!-- líneas separadoras internas entre atributos -->
   <line x1="20" y1="108" x2="380" y2="108" stroke="#ddd" stroke-width="0.4"/>
   <line x1="20" y1="124" x2="380" y2="124" stroke="#ddd" stroke-width="0.4"/>
@@ -2266,80 +2257,93 @@ Este escenario corresponde a la versión estática de Master-Worker.
 <!-- respuesta_97: nombre clase Master -->
 <input type="text" name="respuesta_97"
   value="<?php echo $respuesta_97; ?>"
-  style="position:absolute; left:22%;  top:6.5%;  width:18%; height:9%; font-size:10px; padding:1px 3px; border:1px solid #aaa; background:#fffde7; box-sizing:border-box;"/>
+  style="position:absolute; left:22%; top:6.5%; width:18%; height:9%;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
+         background:#fffde7; box-sizing:border-box;"/>
 
-<!-- respuesta_98: -queue: Queue -->
 <input type="text" name="respuesta_98"
   value="<?php echo $respuesta_98; ?>"
-  style="position:absolute; left:4%;   top:22%;   width:28%; height:7%; font-size:10px; padding:1px 3px; border:1px solid #aaa; background:#fffde7; box-sizing:border-box;"/>
+  style="position:absolute; left:4%; top:26%; width:28%; height:7%;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
+         background:#fffde7; box-sizing:border-box;"/>
 
-<!-- respuesta_99: -global_results: Queue -->
 <input type="text" name="respuesta_99"
   value="<?php echo $respuesta_99; ?>"
-  style="position:absolute; left:4%;   top:29%;   width:34%; height:5%; font-size:10px; padding:1px 3px; border:1px solid #aaa; background:#fffde7; box-sizing:border-box;"/>
+  style="position:absolute; left:4%; top:33%; width:34%; height:5%;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
+         background:#fffde7; box-sizing:border-box;"/>
 
-<!-- respuesta_100: -workers: ThreadPool -->
 <input type="text" name="respuesta_100"
   value="<?php echo $respuesta_100; ?>"
-  style="position:absolute; left:4%;   top:34%;   width:30%; height:5%; font-size:10px; padding:1px 3px; border:1px solid #aaa; background:#fffde7; box-sizing:border-box;"/>
+  style="position:absolute; left:4%; top:38%; width:30%; height:5%;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
+         background:#fffde7; box-sizing:border-box;"/>
 
-<!-- respuesta_101: +create_tasks(): void -->
 <input type="text" name="respuesta_101"
   value="<?php echo $respuesta_101; ?>"
-  style="position:absolute; left:4%;   top:38%;   width:30%; height:5%; font-size:10px; padding:1px 3px; border:1px solid #aaa; background:#fffde7; box-sizing:border-box;"/>
+  style="position:absolute; left:4%; top:45%; width:30%; height:5%;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
+         background:#fffde7; box-sizing:border-box;"/>
 
-<!-- respuesta_102: +launch_workers(): void -->
 <input type="text" name="respuesta_102"
   value="<?php echo $respuesta_102; ?>"
-  style="position:absolute; left:4%;   top:45%;   width:30%; height:5%; font-size:10px; padding:1px 3px; border:1px solid #aaa; background:#fffde7; box-sizing:border-box;"/>
+  style="position:absolute; left:4%; top:52%; width:30%; height:5%;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
+         background:#fffde7; box-sizing:border-box;"/>
 
-<!-- respuesta_103: +getTask(): Object -->
 <input type="text" name="respuesta_103"
   value="<?php echo $respuesta_103; ?>"
-  style="position:absolute; left:4%;   top:52%;   width:26%; height:5%; font-size:10px; padding:1px 3px; border:1px solid #aaa; background:#fffde7; box-sizing:border-box;"/>
+  style="position:absolute; left:4%; top:58%; width:26%; height:5%;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
+         background:#fffde7; box-sizing:border-box;"/>
 
-<!-- respuesta_104: +addPartialResult(Object): void -->
 <input type="text" name="respuesta_104"
   value="<?php echo $respuesta_104; ?>"
-  style="position:absolute; left:4%;   top:60%;   width:40%; height:5%; font-size:10px; padding:1px 3px; border:1px solid #aaa; background:#fffde7; box-sizing:border-box;"/>
+  style="position:absolute; left:4%; top:64%; width:40%; height:5%;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
+         background:#fffde7; box-sizing:border-box;"/>
 
-<!-- respuesta_105: +processPartialResults(): Object -->
 <input type="text" name="respuesta_105"
   value="<?php echo $respuesta_105; ?>"
-  style="position:absolute; left:4%;   top:67%;   width:40%; height:5%; font-size:10px; padding:1px 3px; border:1px solid #aaa; background:#fffde7; box-sizing:border-box;"/>
+  style="position:absolute; left:4%; top:70%; width:40%; height:5%;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
+         background:#fffde7; box-sizing:border-box;"/>
 
-<!-- respuesta_106: +shutdown_workers(): void -->
 <input type="text" name="respuesta_106"
   value="<?php echo $respuesta_106; ?>"
-  style="position:absolute; left:4%;   top:75%;   width:34%; height:5%; font-size:10px; padding:1px 3px; border:1px solid #aaa; background:#fffde7; box-sizing:border-box;"/>
+  style="position:absolute; left:4%; top:76%; width:34%; height:5%;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
+         background:#fffde7; box-sizing:border-box;"/>
 
-<!-- ── INPUTS Worker ── -->
-
-<!-- respuesta_107: nombre clase Worker -->
 <input type="text" name="respuesta_107"
   value="<?php echo $respuesta_107; ?>"
-  style="position:absolute; left:77%;  top:31.5%; width:14%; height:9%; font-size:10px; padding:1px 3px; border:1px solid #aaa; background:#fffde7; box-sizing:border-box;"/>
+  style="position:absolute; left:77%; top:31.5%; width:14%; height:9%;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
+         background:#fffde7; box-sizing:border-box;"/>
 
-<!-- respuesta_108: -request_task(): void -->
 <input type="text" name="respuesta_108"
   value="<?php echo $respuesta_108; ?>"
-  style="position:absolute; left:74%;  top:42%;   width:22%; height:5%; font-size:10px; padding:1px 3px; border:1px solid #aaa; background:#fffde7; box-sizing:border-box;"/>
+  style="position:absolute; left:74%; top:42%; width:22%; height:5%;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
+         background:#fffde7; box-sizing:border-box;"/>
 
-<!-- respuesta_109: +process_task(): void -->
 <input type="text" name="respuesta_109"
   value="<?php echo $respuesta_109; ?>"
-  style="position:absolute; left:74%;  top:50%;   width:22%; height:5%; font-size:10px; padding:1px 3px; border:1px solid #aaa; background:#fffde7; box-sizing:border-box;"/>
+  style="position:absolute; left:74%; top:50%; width:22%; height:5%;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
+         background:#fffde7; box-sizing:border-box;"/>
 
-<!-- respuesta_110: multiplicidad 1 (lado Master) -->
 <input type="text" name="respuesta_110"
   value="<?php echo $respuesta_110; ?>"
-  style="position:absolute; left:56%;  top:40%;   width:5%;  height:6%; font-size:10px; padding:1px 2px; border:1px solid #aaa; background:#fffde7; box-sizing:border-box;"/>
+  style="position:absolute; left:56%; top:40%; width:5%; height:6%;
+         font-size:14px; padding:1px 2px; border:1px solid #aaa;
+         background:#fffde7; box-sizing:border-box;"/>
 
-<!-- respuesta_111: multiplicidad 1..* (lado Worker) -->
 <input type="text" name="respuesta_111"
   value="<?php echo $respuesta_111; ?>"
-  style="position:absolute; left:67%;  top:40%;   width:5%;  height:4%; font-size:10px; padding:1px 2px; border:1px solid #aaa; background:#fffde7; box-sizing:border-box;"/>
-
+  style="position:absolute; left:67%; top:40%; width:5%; height:4%;
+         font-size:14px; padding:1px 2px; border:1px solid #aaa;
+         background:#fffde7; box-sizing:border-box;"/>
 </div>
    
 
@@ -2368,8 +2372,8 @@ Este escenario corresponde a la versión estática de Master-Worker.
     
     <h4>Participantes</h4>
 
-<h5><input type="text" name="respuesta_112" value="<?php echo $respuesta_112; ?>" size="31">
-Master</h5>
+<h5><input type="text" name="respuesta_112" value="<?php echo $respuesta_112; ?>" size="8">
+ </h5>
 <p>
 El 
 <input type="text" name="respuesta_113" value="<?php echo $respuesta_113; ?>" size="36">
@@ -2378,7 +2382,7 @@ El
  , 
 <input type="text" name="respuesta_115" value="<?php echo $respuesta_115; ?>" size="18">
  ,
-<input type="text" name="respuesta_116" value="<?php echo $respuesta_116; ?>" size="31">
+<input type="text" name="respuesta_116" value="<?php echo $respuesta_116; ?>" size="33">
   de 
 <input type="text" name="respuesta_117" value="<?php echo $respuesta_117; ?>" size="10">
  .
@@ -2396,13 +2400,13 @@ También
 
 <p>
 En resumen, 
-<input type="text" name="respuesta_121" value="<?php echo $respuesta_121; ?>" size="33">
+<input type="text" name="respuesta_121" value="<?php echo $respuesta_121; ?>" size="35">
  , 
-<input type="text" name="respuesta_122" value="<?php echo $respuesta_122; ?>" size="33">
+<input type="text" name="respuesta_122" value="<?php echo $respuesta_122; ?>" size="18">
   (workers) y 
 <input type="text" name="respuesta_123" value="<?php echo $respuesta_123; ?>" size="33">
   para 
-<input type="text" name="respuesta_124" value="<?php echo $respuesta_124; ?>" size="33">
+<input type="text" name="respuesta_124" value="<?php echo $respuesta_124; ?>" size="21">
  .
 </p>
 
@@ -2413,16 +2417,16 @@ En resumen,
 Los 
 <input type="text" name="respuesta_126" value="<?php echo $respuesta_126; ?>" size="21"> 
   desde 
-<input type="text" name="respuesta_127" value="<?php echo $respuesta_127; ?>" size="8"> 
+<input type="text" name="respuesta_127" value="<?php echo $respuesta_127; ?>" size="40"> 
  
 en la 
-<input type="text" name="respuesta_128" value="<?php echo $respuesta_128; ?>" size="21"> 
+<input type="text" name="respuesta_128" value="<?php echo $respuesta_128; ?>" size="25"> 
  .
 </p>
 
 <p>
 Finalmente, los workers retornan 
-<input type="text" name="respuesta_129" value="<?php echo $respuesta_129; ?>" size="21"> 
+<input type="text" name="respuesta_129" value="<?php echo $respuesta_129; ?>" size="26"> 
   al 
 <input type="text" name="respuesta_130" value="<?php echo $respuesta_130; ?>" size="8"> 
  .
@@ -2444,6 +2448,7 @@ Finalmente, los workers retornan
 <?php echo $verificar_124 ?>
 <?php echo $verificar_125 ?>
 <?php echo $verificar_126 ?>
+<br>
 <?php echo $verificar_127 ?>
 <?php echo $verificar_128 ?>
 <?php echo $verificar_129 ?>

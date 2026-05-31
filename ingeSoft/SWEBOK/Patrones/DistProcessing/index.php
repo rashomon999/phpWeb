@@ -18,146 +18,132 @@ if ($_POST) {
     
     if ($mostrar_solucion === 'mostrar_solucion') {        
  
-        $respuesta_111 = '24'; 
-        $respuesta_112 = '36';
-        $respuesta_113 = '48';
-        $respuesta_114 = '60';
-        $respuesta_115 = '72';
-        $respuesta_116 = '84';
-        $respuesta_117 = '96';
-        $respuesta_118 = '108';
-        $respuesta_119 = '120';
-        $respuesta_120 = '132';
-        $respuesta_121 = '144';
-        
- 
-        $respuesta_1 = 'El patron de diseño thread pool facilita la gestion de hilos';
-        $respuesta_2 = '39';
-        $respuesta_3 = '52';
-        $respuesta_4 = '65';
-        $respuesta_5 = '78';
-        $respuesta_6 = '91';
-        $respuesta_7 = '104';
-        $respuesta_8 = '117';
-        $respuesta_9 = '130';
-        $respuesta_10 = '143';
-        $respuesta_11 = '156';
-        
- 
-        $respuesta_12 = '28';
-        $respuesta_13 = '42';
-        $respuesta_14 = '56';
-        $respuesta_15 = '70';
-        $respuesta_16 = '84';
-        $respuesta_17 = '98';
-        $respuesta_18 = '112';
-        $respuesta_19 = '126';
-        $respuesta_20 = '140';
-        $respuesta_21 = '154';
-        $respuesta_22 = '168';
-        
- 
-        $respuesta_23 = '30';
-        $respuesta_24 = '45';
-        $respuesta_25 = '60';
-        $respuesta_26 = '75';
-        $respuesta_27 = '90';
-        $respuesta_28 = '105';
-        $respuesta_29 = '120';
-        $respuesta_30 = '135';
-        $respuesta_31 = '150';
-        $respuesta_32 = '165';
-        $respuesta_33 = '180';
-        
- 
-        $respuesta_34 = '32';
-        $respuesta_35 = '48';
-        $respuesta_36 = '64';
-        $respuesta_37 = '80';
-        $respuesta_38 = '96';
-        $respuesta_39 = '112';
-        $respuesta_40 = '128';
-        $respuesta_41 = '144';
-        $respuesta_42 = '160';
-        $respuesta_43 = '176';
-        $respuesta_44 = '192';
-        
- 
-        $respuesta_45 = '34';
-        $respuesta_46 = '51';
-        $respuesta_47 = '68';
-        $respuesta_48 = '85';
-        $respuesta_49 = '102';
-        $respuesta_50 = '119';
-        $respuesta_51 = '136';
-        $respuesta_52 = '153';
-        $respuesta_53 = '170';
-        $respuesta_54 = '187';
-        $respuesta_55 = '204';
-        
- 
-        $respuesta_56 = '36';
-        $respuesta_57 = '54';
-        $respuesta_58 = '72';
-        $respuesta_59 = '90';
-        $respuesta_60 = '108';
-        $respuesta_61 = '126';
-        $respuesta_62 = '144';
-        $respuesta_63 = '162';
-        $respuesta_64 = '180';
-        $respuesta_65 = '198';
-        $respuesta_66 = '216';
-        
- 
-        $respuesta_67 = '38';
-        $respuesta_68 = '57';
-        $respuesta_69 = '76';
-        $respuesta_70 = '95';
-        $respuesta_71 = '114';
-        $respuesta_72 = '133';
-        $respuesta_73 = '152';
-        $respuesta_74 = '171';
-        $respuesta_75 = '190';
-        $respuesta_76 = '209';
-        $respuesta_77 = '228';
-        
- 
-        $respuesta_78 = '40';
-        $respuesta_79 = '60';
-        $respuesta_80 = '80';
-        $respuesta_81 = '100';
-        $respuesta_82 = '120';
-        $respuesta_83 = '140';
-        $respuesta_84 = '160';
-        $respuesta_85 = '180';
-        $respuesta_86 = '200';
-        $respuesta_87 = '220';
-        $respuesta_88 = '240';
-        
- 
-        $respuesta_89 = '42';
-        $respuesta_90 = '63';
-        $respuesta_91 = '84';
-        $respuesta_92 = '105';
-        $respuesta_93 = '126';
-        $respuesta_94 = '147';
-        $respuesta_95 = '168';
-        $respuesta_96 = '189';
-        $respuesta_97 = '210';
-        $respuesta_98 = '231';
-        $respuesta_99 = '252';
-        
-         $respuesta_100 = '44';
-        $respuesta_101 = '66';
-        $respuesta_102 = '88';
-        $respuesta_103 = '110';
-        $respuesta_104 = '132'; 
-        $respuesta_105 = '154';
-        $respuesta_106 = '176';
-        $respuesta_107 = '198';
-        $respuesta_108 = '220';
-        $respuesta_109 = '242';
-        $respuesta_110 = '264';
+     // =================================================================
+    // Respuestas correctas según las validaciones del else (preguntas 1 a 123)
+    // =================================================================
+    $respuesta_1   = 'El patron de diseño thread pool facilita la gestion de hilos';
+    $respuesta_2   = 'En entornos paralelos';
+    $respuesta_3   = 'donde algunas tareas pueden ejecutarse al mismo tiempo pero quiza en diferentes instanciaciones';
+    $respuesta_4   = 'en el mismo dispositivo';
+    $respuesta_5   = 'se deben usar hilos';
+    $respuesta_6   = 'Cada hilo ejecuta una tarea propia y comparte los recursos del dispositivo';
+    $respuesta_7   = 'Cuando muchos hilos se ejecutan concurrentemente en el mismo dispositivo';
+    $respuesta_8   = 'los recursos podrían no ser suficientes y sobrepasar la capacidad del dispositivo';
+    $respuesta_9   = 'concurrencia usualmente';
+    $respuesta_10  = 'implementa';
+    $respuesta_11  = 'varios hilos ejecutandose';
+    $respuesta_12  = 'dispositivo de computo';
+    $respuesta_13  = 'Sin embargo';
+    $respuesta_14  = 'cada uno de estos hilos consume recursos del dispositivo y';
+    $respuesta_15  = 'eventualmente';
+    $respuesta_16  = 'muchos hilos podrian sobrecargar el dispositivo';
+    $respuesta_17  = 'Gestionar estos hilos representa un problema';
+    $respuesta_18  = 'pueden reutilizarse los hilos';
+    $respuesta_19  = 'Cual seria la cantidad maxima o minima de hilos para el dispositivo';
+    $respuesta_20  = 'cada vez';
+    $respuesta_21  = 'la solucion de un problema requiere el uso';
+    $respuesta_22  = 'ejecucion concurrente de hilos';
+    $respuesta_23  = 'este patron puede utilizarse';
+    $respuesta_24  = 'hilos se usan';
+    $respuesta_25  = 'ejecutar varias tareas de computo independientes al mismo tiempo';
+    $respuesta_26  = 'estos hilos implican costos en tiempo';
+    $respuesta_27  = 'tiempo para iniciar un hilo';
+    $respuesta_28  = 'recursos';
+    $respuesta_29  = 'memoria y CPU';
+    $respuesta_30  = 'Este patron propone una solución que equilibra las implicaciones del uso de hilos';
+    $respuesta_31  = 'muchos otros patrones';
+    $respuesta_32  = 'implican el uso de hilos implementan';
+    $respuesta_33  = 'patron como parte de su solucion';
+    $respuesta_34  = 'leader/followers';
+    $respuesta_35  = 'master/workers';
+    $respuesta_36  = 'patron permite aprovechar';
+    $respuesta_37  = 'entorno multinucleo de una CPU';
+    $respuesta_38  = 'esto puede mejorar el rendimiento del sistema';
+    $respuesta_39  = 'tiene limitaciones';
+    $respuesta_40  = 'la dificultad de escalar la implementacion del patron';
+    $respuesta_41  = 'entorno distribuido';
+    $respuesta_42  = 'aplicar este patron usando muchos nodos de procesamiento';
+    $respuesta_43  = 'tareas deben';
+    $respuesta_44  = 'independientes';
+    $respuesta_45  = 'Cada una';
+    $respuesta_46  = 'tareas debe';
+    $respuesta_47  = 'ejecutarse completa';
+    $respuesta_48  = 'independientemente';
+    $respuesta_49  = 'hilo';
+    $respuesta_50  = 'Si existen dependencias';
+    $respuesta_51  = 'pueden ocurrir bloqueos mutuos';
+    $respuesta_52  = 'deadlocks';
+    $respuesta_53  = 'no llegar a ejecutarse';
+    $respuesta_54  = 'costo de creacion de hilos';
+    $respuesta_55  = 'relativamente alto';
+    $respuesta_56  = 'un hilo para cada tarea deberia';
+    $respuesta_57  = 'mas costoso que mantener';
+    $respuesta_58  = 'esperar hilos inactivos';
+    $respuesta_59  = 'tanto en terminos de tiempo como de recursos';
+    $respuesta_60  = 'diseñador debe configurar';
+    $respuesta_61  = 'cantidad optima de hilos dependiendo de la disponibilidad';
+    $respuesta_62  = 'recursos del dispositivo';
+    $respuesta_63  = 'de la capacidad de ejecucion al mismo tiempo';
+    $respuesta_64  = 'Esta relacion debe mantenerse dinamicamente';
+    $respuesta_65  = 'a medida que evoluciona';
+    $respuesta_66  = 'carga del dispositivo';
+    $respuesta_67  = 'Cantidad optima de hilos';
+    $respuesta_68  = 'Hilos no reutilizables';
+    $respuesta_69  = 'una tarea dura indefinidamente';
+    $respuesta_70  = 'hilo que ejecuta esta tarea no es reutilizable';
+    $respuesta_71  = 'puede que nunca termine de ejecutar la tarea';
+    $respuesta_72  = 'tipo de tarea';
+    $respuesta_73  = 'ejecutarse';
+    $respuesta_74  = 'un hilo fuera del pool';
+    $respuesta_75  = 'Worker';
+    $respuesta_76  = 'Responsable de ejecutar las tareas del ThreadPool';
+    $respuesta_77  = 'Este obtiene objetos Runnable desde su ThreadPool';
+    $respuesta_78  = 'ejecutando el metodo Runnable';
+    $respuesta_79  = 'Runnable';
+    $respuesta_80  = 'Representa la interfaz implementada';
+    $respuesta_81  = 'las tareas que el ThreadPool debe procesar';
+    $respuesta_82  = 'Esta interfaz especifica el metodo run';
+    $respuesta_83  = 'el cual es responsable de definir la tarea del objeto Runnable';
+    $respuesta_84  = 'ThreadPool';
+    $respuesta_85  = 'clase ThreadPool';
+    $respuesta_86  = 'responsable de gestionar los workers y las tareas';
+    $respuesta_87  = 'asi como su ejecucion';
+    $respuesta_88  = 'Esta clase asigna una tarea';
+    $respuesta_89  = 'cada worker';
+    $respuesta_90  = 'Cuando un worker finaliza la ejecucion';
+    $respuesta_91  = 'una tarea';
+    $respuesta_92  = 'puede solicitar';
+    $respuesta_93  = 'nueva tarea al thread pool';
+    $respuesta_94  = 'Executor';
+    $respuesta_95  = 'Representa la interfaz implementada';
+    $respuesta_96  = 'la clase ThreadPool';
+    $respuesta_97  = 'especifica el metodo execute';
+    $respuesta_98  = 'responsable de ejecutar la tarea del objeto Runnable';
+    $respuesta_99  = 'Executor';
+    $respuesta_100 = '+execute(runnableObject:Runnable)';
+    $respuesta_101 = 'ThreadPool';
+    $respuesta_102 = '+returnPool()';
+    $respuesta_103 = '+execute(runnableObject:Runnable)';
+    $respuesta_104 = 'Runnable';
+    $respuesta_105 = 'Worker';
+    $respuesta_106 = 'executes';
+    $respuesta_107 = 'Cada vez';
+    $respuesta_108 = 'llega una solicitud';
+    $respuesta_109 = 'se verifica si existen hilos inactivos';
+    $respuesta_110 = 'de lo contrario';
+    $respuesta_111 = 'si no se ha excedido';
+    $respuesta_112 = 'cantidad máxima de hilos';
+    $respuesta_113 = 'se crea un nuevo hilo';
+    $respuesta_114 = 'al menos un hilo disponible';
+    $respuesta_115 = 'procesar';
+    $respuesta_116 = 'solicitud';
+    $respuesta_117 = 'pool envia';
+    $respuesta_118 = 'solicitud';
+    $respuesta_119 = 'ejecutada';
+    $respuesta_120 = 'debe esperar hasta';
+    $respuesta_121 = 'hilo quede inactivo';
+    $respuesta_122 = 'el hilo regresa al pool como hilo inactivo';
+    $respuesta_123 = 'finaliza el procesamiento de la solicitud';
         
         // Marcar todas como correctas
     for ($i = 1; $i <= 123; $i++) {
@@ -236,7 +222,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === 'los recursos podrían no ser suficientes y sobrepasar la capacidad del dispositivo') {  
+   if ($respuesta_8 === 'los recursos podrian no ser suficientes y sobrepasar la capacidad del dispositivo') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -457,7 +443,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_30 = isset($_POST['respuesta_30']) ? $_POST['respuesta_30'] : '';
-   if ($respuesta_30 === 'Este patron propone una solución que equilibra las implicaciones del uso de hilos') {  
+   if ($respuesta_30 === 'Este patron propone una solucion que equilibra las implicaciones del uso de hilos') {  
        $verificar_30 = "correcto";
    } elseif ($respuesta_30 === '') {
        $verificar_30 = '';
@@ -1202,7 +1188,7 @@ if ($respuesta_111 === 'si no se ha excedido') {
 }
 
 $respuesta_112 = isset($_POST['respuesta_112']) ? $_POST['respuesta_112'] : '';
-if ($respuesta_112 === 'cantidad máxima de hilos') {  
+if ($respuesta_112 === 'cantidad maxima de hilos') {  
     $verificar_112 = "correcto";
 } elseif ($respuesta_112 === '') {
     $verificar_112 = '';
@@ -2038,7 +2024,7 @@ La
 En general, 
 <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="6">
   que 
-<input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>" size="41">
+<input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>" size="37">
   de 
 <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="26">
  , 
@@ -2180,7 +2166,7 @@ Aunque este
     <?php echo $verificar_53 ?>
 <hr>
 <h5>El 
-<input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>" size="14">    
+<input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>" size="21">    
     es 
 <input type="text" name="respuesta_55" value="<?php echo $respuesta_55; ?>" size="15">
  </h5>
@@ -2502,33 +2488,33 @@ La
   que 
 <input type="text" name="respuesta_108" value="<?php echo $respuesta_108; ?>" size="17">
  , 
-<input type="text" name="respuesta_109" value="<?php echo $respuesta_109; ?>" size="14">
+<input type="text" name="respuesta_109" value="<?php echo $respuesta_109; ?>" size="29">
  ; 
 <input type="text" name="respuesta_110" value="<?php echo $respuesta_110; ?>" size="14">
  ,
-<input type="text" name="respuesta_111" value="<?php echo $respuesta_111; ?>" size="14">
+<input type="text" name="respuesta_111" value="<?php echo $respuesta_111; ?>" size="16">
   la 
-<input type="text" name="respuesta_112" value="<?php echo $respuesta_112; ?>" size="14">
+<input type="text" name="respuesta_112" value="<?php echo $respuesta_112; ?>" size="21">
  , 
-<input type="text" name="respuesta_113" value="<?php echo $respuesta_113; ?>" size="12">
+<input type="text" name="respuesta_113" value="<?php echo $respuesta_113; ?>" size="16">
  .
 </p>
 
 <p>
 Si existe 
-<input type="text" name="respuesta_114" value="<?php echo $respuesta_114; ?>" size="21">
+<input type="text" name="respuesta_114" value="<?php echo $respuesta_114; ?>" size="23">
   para 
 <input type="text" name="respuesta_115" value="<?php echo $respuesta_115; ?>" size="6">
   una 
-<input type="text" name="respuesta_116" value="<?php echo $respuesta_116; ?>" size="12">
+<input type="text" name="respuesta_116" value="<?php echo $respuesta_116; ?>" size="8">
  , el 
-<input type="text" name="respuesta_117" value="<?php echo $respuesta_117; ?>" size="12">
+<input type="text" name="respuesta_117" value="<?php echo $respuesta_117; ?>" size="8">
   la 
-<input type="text" name="respuesta_118" value="<?php echo $respuesta_118; ?>" size="12">
+<input type="text" name="respuesta_118" value="<?php echo $respuesta_118; ?>" size="8">
   para ser 
 <input type="text" name="respuesta_119" value="<?php echo $respuesta_119; ?>" size="12">
  ; de lo contrario, la solicitud 
-<input type="text" name="respuesta_120" value="<?php echo $respuesta_120; ?>" size="12">
+<input type="text" name="respuesta_120" value="<?php echo $respuesta_120; ?>" size="14">
   que un 
 <input type="text" name="respuesta_121" value="<?php echo $respuesta_121; ?>" size="15">
  .
@@ -2557,6 +2543,7 @@ Finalmente,
 <?php echo $verificar_117 ?>
 <?php echo $verificar_118 ?>
 <?php echo $verificar_119 ?>
+<br>
 <?php echo $verificar_120 ?>
 <?php echo $verificar_121 ?>
 <?php echo $verificar_122 ?>

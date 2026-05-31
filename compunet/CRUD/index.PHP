@@ -190,7 +190,9 @@ if ($_POST) {
     }
 
     $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-    if ($respuesta_13 === 'const response = await axiosClient.get(`/rest/games/${id}`);') {
+    if ($respuesta_13 === 'const response = await axiosClient.get(`/rest/games/${id}`);'
+    ||  $respuesta_13 === 'const response = await axiosClient.get("/rest/games/${id}");'
+    ) {
         $verificar_13 = "correcto";
     } elseif ($respuesta_13 === '') {
         $verificar_13 = '';
@@ -1523,7 +1525,7 @@ function ocultarMensaje4() {
     <?php echo $verificar_8 ?>
     <?php echo $verificar_9 ?>
     <?php echo $verificar_10 ?>
-    <?php echo $verificar_11 ?>
+
 
     <hr>
  <img src="../../img/guia_459.png" alt="" width="800">
@@ -1541,6 +1543,7 @@ function ocultarMensaje4() {
 <input type="text" name="respuesta_19" value="<?php echo htmlspecialchars($respuesta_19); ?>" size="4">
 </pre>
     <button type="submit">Verificar</button> 
+    <?php echo $verificar_11 ?>
     <?php echo $verificar_12 ?>
     <?php echo $verificar_13 ?>
     <?php echo $verificar_14 ?>

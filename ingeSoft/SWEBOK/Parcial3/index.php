@@ -159,10 +159,31 @@ if ($_POST) {
         $respuesta_109 = '242';
         $respuesta_110 = '264';
         
-        // Marcar todas como correctas
-    for ($i = 1; $i <= 122; $i++) {
+        // Soluciones del SVG
+$respuesta_122 = 'Client';
+$respuesta_123 = 'ForkJoinMaster';
+$respuesta_124 = 'ThreadPool';
+$respuesta_125 = 'Worker';
+$respuesta_126 = 'Task';
+$respuesta_127 = 'Result';
+$respuesta_128 = 'request()';
+$respuesta_129 = 'compute()';
+$respuesta_130 = 'fork()';
+$respuesta_131 = 'execute()';
+$respuesta_132 = 'assign()';
+$respuesta_133 = 'run()';
+$respuesta_134 = 'join()';
+$respuesta_135 = 'for each worker';
+$respuesta_136 = 'submit task';
+$respuesta_137 = 'for each task';
+$respuesta_138 = 'collect result';
+
+// Cambiar el loop de marcar correctas hasta 138
+for ($i = 1; $i <= 138; $i++) {
     ${"verificar_$i"} = "correcto";
-    }
+}
+
+ 
 
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
@@ -1289,7 +1310,42 @@ if ($respuesta_121 === '144') {
 } else {
     $verificar_121 = "incorrecto";
 }
+
+
+// ===== INPUTS DEL DIAGRAMA SVG =====
+$answers = [
+    122 => 'Client',        // Header 1
+    123 => 'ForkJoinMaster',// Header 2
+    124 => 'ThreadPool',    // Header 3
+    125 => 'Worker',        // Header 4
+    126 => 'Task',          // Header 5
+    127 => 'Result',        // Header 6
+    128 => 'request()',     // Mensaje 1
+    129 => 'compute()',     // Mensaje 2
+    130 => 'fork()',        // Mensaje 3
+    131 => 'execute()',     // Mensaje 4
+    132 => 'assign()',      // Mensaje 5
+    133 => 'run()',         // Mensaje 6
+    134 => 'join()',        // Mensaje 7
+    135 => 'for each worker',  // Loop1-a
+    136 => 'submit task',      // Loop1-b
+    137 => 'for each task',    // Loop2-a
+    138 => 'collect result',   // Loop2-b
+];
+
+foreach ($answers as $i => $correct) {
+    ${"respuesta_$i"} = isset($_POST["respuesta_$i"]) ? $_POST["respuesta_$i"] : '';
+    if (${"respuesta_$i"} === $correct) {
+        ${"verificar_$i"} = "correcto";
+    } elseif (${"respuesta_$i"} === '') {
+        ${"verificar_$i"} = '';
+    } else {
+        ${"verificar_$i"} = "incorrecto";
+    }
 }
+
+}
+
 }
 ?>
 <!DOCTYPE html>
@@ -1627,323 +1683,300 @@ function ocultarMensaje4() {
 
  <h4>Complete el diagrama de secuencia del flujo normal de eventos del patrón ForkJoin</h4>
   <p>Coloque en cada espacio el elemento correcto tomado del banco de respuestas.</p>
- 
-  <!-- ════════════════════════════════════════════════════
-       WRAPPER: posición relativa para los inputs absolutos
-       Relación de aspecto: viewBox 1150 × 560  → 560/1150 ≈ 48.7 %
-       ════════════════════════════════════════════════════ -->
-  <div class="diagram-wrapper" id="diag"
-       style="position:relative; width:100%; padding-bottom:48.7%; display:block;">
- 
-    <svg style="position:absolute; top:0; left:0; width:100%; height:100%;"
-         viewBox="0 0 1150 560" xmlns="http://www.w3.org/2000/svg"
-         style="background:#fafafa; border:1px solid #ccc;">
- 
-      <defs>
-        <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5"
-                markerWidth="6" markerHeight="6" orient="auto">
-          <path d="M0 0L10 5L0 10Z" fill="#333"/>
-        </marker>
-      </defs>
- 
-      <!-- ══ CABECERAS ══ -->
- 
-      <!-- col1: actor (figura humana) -->
-      <circle cx="50" cy="16" r="9" fill="white" stroke="#555" stroke-width="1.2"/>
-      <line x1="50" y1="25" x2="50" y2="52" stroke="#555" stroke-width="1.2"/>
-      <line x1="34" y1="37" x2="66" y2="37" stroke="#555" stroke-width="1.2"/>
-      <line x1="50" y1="52" x2="36" y2="66" stroke="#555" stroke-width="1.2"/>
-      <line x1="50" y1="52" x2="64" y2="66" stroke="#555" stroke-width="1.2"/>
- 
-      <!-- col2: :ForkJoinMaster (doble rect = instancia) -->
-      <rect x="158" y="12" width="148" height="36" rx="2" fill="white" stroke="#555" stroke-width="1"/>
-      <rect x="162" y="16" width="148" height="36" rx="2" fill="white" stroke="#555" stroke-width="1"/>
-      <!-- respuesta_1 se posiciona encima via input absoluto -->
- 
-      <!-- col3: :ForkJoinTask -->
-      <rect x="358" y="16" width="130" height="36" rx="2" fill="white" stroke="#555" stroke-width="1"/>
-      <!-- respuesta_2 -->
- 
-      <!-- col4: :Thread -->
-      <rect x="535" y="16" width="100" height="36" rx="2" fill="white" stroke="#555" stroke-width="1"/>
-      <!-- respuesta_3 -->
- 
-      <!-- col5: :ThreadPool -->
-      <rect x="678" y="16" width="122" height="36" rx="2" fill="white" stroke="#555" stroke-width="1"/>
-      <!-- respuesta_4 -->
- 
-      <!-- col6: ForkJoinTask (2da instancia) -->
-      <rect x="844" y="16" width="130" height="36" rx="2" fill="white" stroke="#555" stroke-width="1"/>
-      <!-- respuesta_5 -->
- 
-      <!-- col7: ForkJoinMaster (2da instancia) -->
-      <rect x="1002" y="16" width="140" height="36" rx="2" fill="white" stroke="#555" stroke-width="1"/>
-      <!-- respuesta_6 -->
- 
-      <!-- ══ LIFELINES ══ -->
-      <line x1="50"   y1="68"  x2="50"   y2="548" stroke="#aaa" stroke-width="1" stroke-dasharray="6 4"/>
-      <line x1="236"  y1="52"  x2="236"  y2="548" stroke="#aaa" stroke-width="1" stroke-dasharray="6 4"/>
-      <line x1="423"  y1="52"  x2="423"  y2="548" stroke="#aaa" stroke-width="1" stroke-dasharray="6 4"/>
-      <line x1="585"  y1="52"  x2="585"  y2="548" stroke="#aaa" stroke-width="1" stroke-dasharray="6 4"/>
-      <line x1="739"  y1="52"  x2="739"  y2="548" stroke="#aaa" stroke-width="1" stroke-dasharray="6 4"/>
-      <line x1="909"  y1="52"  x2="909"  y2="548" stroke="#aaa" stroke-width="1" stroke-dasharray="6 4"/>
-      <line x1="1072" y1="52"  x2="1072" y2="548" stroke="#aaa" stroke-width="1" stroke-dasharray="6 4"/>
- 
-      <!-- ══ ACTIVATION BOXES ══ -->
-      <rect x="230" y="100" width="12" height="400" fill="white" stroke="#555" stroke-width="1"/>
-      <rect x="417" y="188" width="12" height="312" fill="white" stroke="#555" stroke-width="1"/>
-      <rect x="579" y="228" width="12" height="272" fill="white" stroke="#555" stroke-width="1"/>
-      <rect x="733" y="268" width="12" height="232" fill="white" stroke="#555" stroke-width="1"/>
-      <rect x="903" y="310" width="12" height="168" fill="white" stroke="#555" stroke-width="1"/>
-      <rect x="1066" y="330" width="12" height="148" fill="white" stroke="#555" stroke-width="1"/>
- 
-      <!-- ══ MENSAJES ══ -->
- 
-      <!-- 1. actor → :ForkJoinMaster : join()   y=112 -->
-      <line x1="50" y1="112" x2="230" y2="112" stroke="#333" stroke-width="1.3" marker-end="url(#arr)"/>
-      <!-- respuesta_7 encima: ~y=99 -->
- 
-      <!-- 2. actor → :ForkJoinMaster : compute()   y=152 -->
-      <line x1="50" y1="152" x2="230" y2="152" stroke="#333" stroke-width="1.3" marker-end="url(#arr)"/>
-      <!-- respuesta_8 encima: ~y=139 -->
- 
-      <!-- 3. :ForkJoinMaster crea :ForkJoinMaster obj en col3   y=192 -->
-      <line x1="242" y1="192" x2="358" y2="192" stroke="#333" stroke-width="1.2"
-            stroke-dasharray="5 3" marker-end="url(#arr)"/>
-      <!-- caja del objeto creado col3 -->
-      <rect x="358" y="180" width="130" height="24" rx="2" fill="white" stroke="#555" stroke-width="1"/>
-      <!-- respuesta_9 dentro de esa caja -->
- 
-      <!-- 4. :ForkJoinMaster → :ForkJoinTask : ForkJoinMaster(FT)   y=228 -->
-      <line x1="242" y1="228" x2="417" y2="228" stroke="#333" stroke-width="1.3" marker-end="url(#arr)"/>
-      <!-- respuesta_10 encima: ~y=215 -->
- 
-      <!-- 5. :ForkJoinTask crea :Thread obj en col4   y=248 -->
-      <line x1="429" y1="248" x2="535" y2="248" stroke="#333" stroke-width="1.2"
-            stroke-dasharray="5 3" marker-end="url(#arr)"/>
-      <rect x="535" y="236" width="100" height="24" rx="2" fill="white" stroke="#555" stroke-width="1"/>
-      <!-- respuesta_11 -->
- 
-      <!-- 6. :Thread crea :ThreadPool obj en col5   y=278 -->
-      <line x1="591" y1="278" x2="678" y2="278" stroke="#333" stroke-width="1.2"
-            stroke-dasharray="5 3" marker-end="url(#arr)"/>
-      <rect x="678" y="266" width="122" height="24" rx="2" fill="white" stroke="#555" stroke-width="1"/>
-      <!-- respuesta_12 -->
- 
-      <!-- 7. :ThreadPool crea :ForkJoinTask obj en col6   y=318 -->
-      <line x1="745" y1="318" x2="844" y2="318" stroke="#333" stroke-width="1.2"
-            stroke-dasharray="5 3" marker-end="url(#arr)"/>
-      <rect x="844" y="306" width="130" height="24" rx="2" fill="white" stroke="#555" stroke-width="1"/>
-      <!-- respuesta_13 -->
- 
-      <!-- 8. :ThreadPool → :ForkJoinTask col6 : invoke()   y=356 -->
-      <line x1="745" y1="356" x2="903" y2="356" stroke="#333" stroke-width="1.3" marker-end="url(#arr)"/>
-      <!-- respuesta_14 encima -->
- 
-      <!-- 9. :ThreadPool → :ForkJoinTask col6 : run()   y=394 -->
-      <line x1="745" y1="394" x2="903" y2="394" stroke="#333" stroke-width="1.3" marker-end="url(#arr)"/>
-      <!-- respuesta_15 encima -->
- 
-      <!-- 10. :ForkJoinTask col6 → :ForkJoinMaster col7 : join()   y=338 -->
-      <line x1="915" y1="338" x2="1066" y2="338" stroke="#333" stroke-width="1.3" marker-end="url(#arr)"/>
-      <!-- respuesta_16 encima -->
- 
-      <!-- 11. :ForkJoinTask col6 → :ForkJoinMaster col7 : execute(FT)   y=376 -->
-      <line x1="915" y1="376" x2="1066" y2="376" stroke="#333" stroke-width="1.3" marker-end="url(#arr)"/>
-      <!-- respuesta_17 encima -->
- 
-      <!-- Leyenda -->
-      <text x="576" y="542" text-anchor="middle" font-size="11"
-            font-style="italic" font-family="sans-serif" fill="#555">
-        Figure: Processing Sequence Diagram – ForkJoin Design Pattern
-      </text>
- 
-    </svg>
- 
-    <!-- ══════════════════════════════════════════════════════
-         INPUTS posicionados en % sobre el wrapper
-         Fórmula: left = x_svg / 1150 * 100 %
-                  top  = y_svg / 560  * 100 %   (560 = viewBox height)
-         ══════════════════════════════════════════════════════ -->
- 
-    <!-- respuesta_1 : :ForkJoinMaster cabecera col2
-         SVG rect: x=162, y=16, w=148, h=36
-         left=162/1150=14.1%  top=16/560=2.9%  w=148/1150=12.9%  h=36/560=6.4% -->
-    <input type="text" name="respuesta_1" id="respuesta_1"
-           value="<?php echo htmlspecialchars($respuesta_1); ?>"
-           placeholder=":ForkJoin..."
-           style="position:absolute; left:14.1%; top:2.9%; width:12.9%; height:6.4%;
-                  font-size:9px; padding:1px 3px; border:1px solid #aaa;
-                  background:#fffde7; box-sizing:border-box;"/>
- 
-    <!-- respuesta_2 : :ForkJoinTask cabecera col3
-         SVG rect: x=358, y=16, w=130 → left=31.1%, w=11.3% -->
-    <input type="text" name="respuesta_2" id="respuesta_2"
-           value="<?php echo htmlspecialchars($respuesta_2); ?>"
-           placeholder=":ForkJoin..."
-           style="position:absolute; left:31.1%; top:2.9%; width:11.3%; height:6.4%;
-                  font-size:9px; padding:1px 3px; border:1px solid #aaa;
-                  background:#fffde7; box-sizing:border-box;"/>
- 
-    <!-- respuesta_3 : :Thread cabecera col4
-         SVG rect: x=535, y=16, w=100 → left=46.5%, w=8.7% -->
-    <input type="text" name="respuesta_3" id="respuesta_3"
-           value="<?php echo htmlspecialchars($respuesta_3); ?>"
-           placeholder=":Thread"
-           style="position:absolute; left:46.5%; top:2.9%; width:8.7%; height:6.4%;
-                  font-size:9px; padding:1px 3px; border:1px solid #aaa;
-                  background:#fffde7; box-sizing:border-box;"/>
- 
-    <!-- respuesta_4 : :ThreadPool cabecera col5
-         SVG rect: x=678, y=16, w=122 → left=58.9%, w=10.6% -->
-    <input type="text" name="respuesta_4" id="respuesta_4"
-           value="<?php echo htmlspecialchars($respuesta_4); ?>"
-           placeholder=":ThreadPool"
-           style="position:absolute; left:58.9%; top:2.9%; width:10.6%; height:6.4%;
-                  font-size:9px; padding:1px 3px; border:1px solid #aaa;
-                  background:#fffde7; box-sizing:border-box;"/>
- 
-    <!-- respuesta_5 : :ForkJoinTask cabecera col6
-         SVG rect: x=844, y=16, w=130 → left=73.4%, w=11.3% -->
-    <input type="text" name="respuesta_5" id="respuesta_5"
-           value="<?php echo htmlspecialchars($respuesta_5); ?>"
-           placeholder=":ForkJoin..."
-           style="position:absolute; left:73.4%; top:2.9%; width:11.3%; height:6.4%;
-                  font-size:9px; padding:1px 3px; border:1px solid #aaa;
-                  background:#fffde7; box-sizing:border-box;"/>
- 
-    <!-- respuesta_6 : :ForkJoinMaster cabecera col7
-         SVG rect: x=1002, y=16, w=140 → left=87.1%, w=12.2% -->
-    <input type="text" name="respuesta_6" id="respuesta_6"
-           value="<?php echo htmlspecialchars($respuesta_6); ?>"
-           placeholder=":ForkJoin..."
-           style="position:absolute; left:87.1%; top:2.9%; width:12.2%; height:6.4%;
-                  font-size:9px; padding:1px 3px; border:1px solid #aaa;
-                  background:#fffde7; box-sizing:border-box;"/>
- 
-    <!-- respuesta_7 : join()   encima flecha y=112 → label ~y=99
-         Centro flecha: x=(50+230)/2=140 → left≈(140-60)/1150=7.0%  top=99/560=17.7% -->
-    <input type="text" name="respuesta_7" id="respuesta_7"
-           value="<?php echo htmlspecialchars($respuesta_7); ?>"
-           placeholder="mensaje..."
-           style="position:absolute; left:2%; top:17%; width:11%; height:4%;
-                  font-size:9px; padding:1px 3px; border:1px solid #aaa;
-                  background:#fffde7; box-sizing:border-box;"/>
- 
-    <!-- respuesta_8 : compute()   encima flecha y=152 → ~y=139
-         top=139/560=24.8% -->
-    <input type="text" name="respuesta_8" id="respuesta_8"
-           value="<?php echo htmlspecialchars($respuesta_8); ?>"
-           placeholder="mensaje..."
-           style="position:absolute; left:2%; top:24%; width:11%; height:4%;
-                  font-size:9px; padding:1px 3px; border:1px solid #aaa;
-                  background:#fffde7; box-sizing:border-box;"/>
- 
-    <!-- respuesta_9 : :ForkJoinMaster obj creado en caja col3 (y=180, h=24)
-         rect x=358, y=180 → left=31.1%, top=180/560=32.1% -->
-    <input type="text" name="respuesta_9" id="respuesta_9"
-           value="<?php echo htmlspecialchars($respuesta_9); ?>"
-           placeholder=":ForkJoin..."
-           style="position:absolute; left:31.1%; top:32.1%; width:11.3%; height:4.3%;
-                  font-size:9px; padding:1px 3px; border:1px solid #aaa;
-                  background:#fffde7; box-sizing:border-box;"/>
- 
-    <!-- respuesta_10 : ForkJoinMaster(FT)   encima flecha y=228 → ~y=215
-         flecha: x=242..417, centro≈330 → left=330/1150-2%=26.7%  top=215/560=38.4% -->
-    <input type="text" name="respuesta_10" id="respuesta_10"
-           value="<?php echo htmlspecialchars($respuesta_10); ?>"
-           placeholder="constructor..."
-           style="position:absolute; left:21%; top:37%; width:14%; height:4%;
-                  font-size:9px; padding:1px 3px; border:1px solid #aaa;
-                  background:#fffde7; box-sizing:border-box;"/>
- 
-    <!-- respuesta_11 : :Thread obj creado col4 (rect x=535, y=236)
-         left=535/1150=46.5%, top=236/560=42.1% -->
-    <input type="text" name="respuesta_11" id="respuesta_11"
-           value="<?php echo htmlspecialchars($respuesta_11); ?>"
-           placeholder=":Thread"
-           style="position:absolute; left:46.5%; top:42.1%; width:8.7%; height:4.3%;
-                  font-size:9px; padding:1px 3px; border:1px solid #aaa;
-                  background:#fffde7; box-sizing:border-box;"/>
- 
-    <!-- respuesta_12 : :ThreadPool obj creado col5 (rect x=678, y=266)
-         left=678/1150=58.9%, top=266/560=47.5% -->
-    <input type="text" name="respuesta_12" id="respuesta_12"
-           value="<?php echo htmlspecialchars($respuesta_12); ?>"
-           placeholder=":ThreadPool"
-           style="position:absolute; left:58.9%; top:47.5%; width:10.6%; height:4.3%;
-                  font-size:9px; padding:1px 3px; border:1px solid #aaa;
-                  background:#fffde7; box-sizing:border-box;"/>
- 
-    <!-- respuesta_13 : :ForkJoinTask obj creado col6 (rect x=844, y=306)
-         left=844/1150=73.4%, top=306/560=54.6% -->
-    <input type="text" name="respuesta_13" id="respuesta_13"
-           value="<?php echo htmlspecialchars($respuesta_13); ?>"
-           placeholder=":ForkJoin..."
-           style="position:absolute; left:73.4%; top:54.6%; width:11.3%; height:4.3%;
-                  font-size:9px; padding:1px 3px; border:1px solid #aaa;
-                  background:#fffde7; box-sizing:border-box;"/>
- 
-    <!-- respuesta_14 : invoke()   encima flecha y=356 → ~y=343
-         flecha: x=745..903, centro≈824 → left≈66%  top=343/560=61.3% -->
-    <input type="text" name="respuesta_14" id="respuesta_14"
-           value="<?php echo htmlspecialchars($respuesta_14); ?>"
-           placeholder="mensaje..."
-           style="position:absolute; left:65%; top:60%; width:10%; height:4%;
-                  font-size:9px; padding:1px 3px; border:1px solid #aaa;
-                  background:#fffde7; box-sizing:border-box;"/>
- 
-    <!-- respuesta_15 : run()   encima flecha y=394 → ~y=381
-         top=381/560=68.0% -->
-    <input type="text" name="respuesta_15" id="respuesta_15"
-           value="<?php echo htmlspecialchars($respuesta_15); ?>"
-           placeholder="mensaje..."
-           style="position:absolute; left:65%; top:67%; width:10%; height:4%;
-                  font-size:9px; padding:1px 3px; border:1px solid #aaa;
-                  background:#fffde7; box-sizing:border-box;"/>
- 
-    <!-- respuesta_16 : join()   encima flecha y=338 → ~y=325
-         flecha: x=915..1066, centro≈990 → left≈(990-60)/1150=80.9%
-         top=325/560=58.0% -->
-    <input type="text" name="respuesta_16" id="respuesta_16"
-           value="<?php echo htmlspecialchars($respuesta_16); ?>"
-           placeholder="mensaje..."
-           style="position:absolute; left:80%; top:57%; width:10%; height:4%;
-                  font-size:9px; padding:1px 3px; border:1px solid #aaa;
-                  background:#fffde7; box-sizing:border-box;"/>
- 
-    <!-- respuesta_17 : execute(FT)   encima flecha y=376 → ~y=363
-         top=363/560=64.8% -->
-    <input type="text" name="respuesta_17" id="respuesta_17"
-           value="<?php echo htmlspecialchars($respuesta_17); ?>"
-           placeholder="mensaje..."
-           style="position:absolute; left:80%; top:64%; width:10%; height:4%;
-                  font-size:9px; padding:1px 3px; border:1px solid #aaa;
-                  background:#fffde7; box-sizing:border-box;"/>
- 
-  </div><!-- /.diagram-wrapper -->
+  
+
+
+<svg style="width:100%; height:auto; display:block; margin-top:20px;"
+     viewBox="0 0 1150 400" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <marker id="arrR" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 1L10 5L0 9Z" fill="#333"/>
+    </marker>
+    <style>
+      .header-box { fill: #ffffff; stroke: #333333; stroke-width: 1; }
+      .header-top { fill: #5bc0de; stroke: #333333; stroke-width: 1; }
+      .lifeline { stroke: #666666; stroke-width: 1; stroke-dasharray: 4 4; }
+      .activation { fill: #7fd2ec; stroke: #333333; stroke-width: 1; }
+      .msg-line { stroke: #333333; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <rect width="1150" height="400" fill="#ffffff" stroke="#333333" stroke-width="1"/>
+
+  <!-- Actor (usuario) -->
+  <circle cx="35" cy="20" r="6" fill="white" stroke="#333" stroke-width="1.2"/>
+  <line x1="35" y1="26" x2="35" y2="42" stroke="#333" stroke-width="1.2"/>
+  <line x1="23" y1="32" x2="47" y2="32" stroke="#333" stroke-width="1.2"/>
+  <line x1="35" y1="42" x2="27" y2="55" stroke="#333" stroke-width="1.2"/>
+  <line x1="35" y1="42" x2="43" y2="55" stroke="#333" stroke-width="1.2"/>
+  <line x1="35" y1="55" x2="35" y2="385" stroke="#666666" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- Header 1: respuesta_122 -->
+  <rect x="165" y="15" width="120" height="30" class="header-box"/>
+  <rect x="165" y="15" width="120" height="5" class="header-top"/>
+  <rect x="280" y="15" width="5" height="30" class="header-top"/>
+  <foreignObject x="167" y="20" width="116" height="22">
+    <input xmlns="http://www.w3.org/1999/xhtml"
+           type="text"
+           id="respuesta_122" name="respuesta_122"
+           value="<?php echo htmlspecialchars($respuesta_122); ?>"
+           class="<?php echo $verificar_122; ?>"
+           style="width:100%;border:none;background:transparent;font-size:11px;font-family:sans-serif;text-align:center;outline:none;"/>
+  </foreignObject>
+  <line x1="225" y1="45" x2="225" y2="385" class="lifeline"/>
+
+  <!-- Header 2: respuesta_123 -->
+  <rect x="330" y="15" width="110" height="30" class="header-box"/>
+  <rect x="330" y="15" width="110" height="5" class="header-top"/>
+  <rect x="435" y="15" width="5" height="30" class="header-top"/>
+  <foreignObject x="332" y="20" width="106" height="22">
+    <input xmlns="http://www.w3.org/1999/xhtml"
+           type="text"
+           id="respuesta_123" name="respuesta_123"
+           value="<?php echo htmlspecialchars($respuesta_123); ?>"
+           class="<?php echo $verificar_123; ?>"
+           style="width:100%;border:none;background:transparent;font-size:11px;font-family:sans-serif;text-align:center;outline:none;"/>
+  </foreignObject>
+  <line x1="385" y1="45" x2="385" y2="385" class="lifeline"/>
+
+  <!-- Header 3: respuesta_124 -->
+  <rect x="480" y="15" width="110" height="30" class="header-box"/>
+  <rect x="480" y="15" width="110" height="5" class="header-top"/>
+  <rect x="585" y="15" width="5" height="30" class="header-top"/>
+  <foreignObject x="482" y="20" width="106" height="22">
+    <input xmlns="http://www.w3.org/1999/xhtml"
+           type="text"
+           id="respuesta_124" name="respuesta_124"
+           value="<?php echo htmlspecialchars($respuesta_124); ?>"
+           class="<?php echo $verificar_124; ?>"
+           style="width:100%;border:none;background:transparent;font-size:11px;font-family:sans-serif;text-align:center;outline:none;"/>
+  </foreignObject>
+  <line x1="535" y1="45" x2="535" y2="385" class="lifeline"/>
+
+  <!-- Header 4: respuesta_125 -->
+  <rect x="650" y="15" width="110" height="30" class="header-box"/>
+  <rect x="650" y="15" width="110" height="5" class="header-top"/>
+  <rect x="755" y="15" width="5" height="30" class="header-top"/>
+  <foreignObject x="652" y="20" width="106" height="22">
+    <input xmlns="http://www.w3.org/1999/xhtml"
+           type="text"
+           id="respuesta_125" name="respuesta_125"
+           value="<?php echo htmlspecialchars($respuesta_125); ?>"
+           class="<?php echo $verificar_125; ?>"
+           style="width:100%;border:none;background:transparent;font-size:11px;font-family:sans-serif;text-align:center;outline:none;"/>
+  </foreignObject>
+  <line x1="705" y1="45" x2="705" y2="385" class="lifeline"/>
+
+  <!-- Header 5: respuesta_126 -->
+  <rect x="800" y="15" width="110" height="30" class="header-box"/>
+  <rect x="800" y="15" width="110" height="5" class="header-top"/>
+  <rect x="905" y="15" width="5" height="30" class="header-top"/>
+  <foreignObject x="802" y="20" width="106" height="22">
+    <input xmlns="http://www.w3.org/1999/xhtml"
+           type="text"
+           id="respuesta_126" name="respuesta_126"
+           value="<?php echo htmlspecialchars($respuesta_126); ?>"
+           class="<?php echo $verificar_126; ?>"
+           style="width:100%;border:none;background:transparent;font-size:11px;font-family:sans-serif;text-align:center;outline:none;"/>
+  </foreignObject>
+  <line x1="855" y1="45" x2="855" y2="385" class="lifeline"/>
+
+  <!-- Header 6: respuesta_127 -->
+  <rect x="950" y="15" width="120" height="30" class="header-box"/>
+  <rect x="950" y="15" width="120" height="5" class="header-top"/>
+  <rect x="1065" y="15" width="5" height="30" class="header-top"/>
+  <foreignObject x="952" y="20" width="116" height="22">
+    <input xmlns="http://www.w3.org/1999/xhtml"
+           type="text"
+           id="respuesta_127" name="respuesta_127"
+           value="<?php echo htmlspecialchars($respuesta_127); ?>"
+           class="<?php echo $verificar_127; ?>"
+           style="width:100%;border:none;background:transparent;font-size:11px;font-family:sans-serif;text-align:center;outline:none;"/>
+  </foreignObject>
+  <line x1="1010" y1="45" x2="1010" y2="385" class="lifeline"/>
+
+  <!-- Barras de activación -->
+  <rect x="30" y="55" width="10" height="320" class="activation"/>
+  <rect x="220" y="85" width="10" height="290" class="activation"/>
+  <rect x="380" y="160" width="10" height="50" class="activation"/>
+  <rect x="530" y="190" width="10" height="35" class="activation"/>
+  <rect x="700" y="220" width="10" height="155" class="activation"/>
+  <rect x="850" y="240" width="10" height="30" class="activation"/>
+  <rect x="1005" y="260" width="10" height="115" class="activation"/>
+
+  <!-- Mensaje 1: respuesta_128 -->
+  <line x1="40" y1="90" x2="220" y2="90" class="msg-line" marker-end="url(#arrR)"/>
+  <foreignObject x="90" y="65" width="80" height="22">
+    <input xmlns="http://www.w3.org/1999/xhtml"
+           type="text"
+           id="respuesta_128" name="respuesta_128"
+           value="<?php echo htmlspecialchars($respuesta_128); ?>"
+           class="<?php echo $verificar_128; ?>"
+           style="width:100%;border:1px solid #ccc;font-size:10px;text-align:center;outline:none;"/>
+  </foreignObject>
+
+  <!-- Mensaje 2: respuesta_129 -->
+  <line x1="40" y1="125" x2="220" y2="125" class="msg-line" marker-end="url(#arrR)"/>
+  <foreignObject x="90" y="100" width="80" height="22">
+    <input xmlns="http://www.w3.org/1999/xhtml"
+           type="text"
+           id="respuesta_129" name="respuesta_129"
+           value="<?php echo htmlspecialchars($respuesta_129); ?>"
+           class="<?php echo $verificar_129; ?>"
+           style="width:100%;border:1px solid #ccc;font-size:10px;text-align:center;outline:none;"/>
+  </foreignObject>
+
+  <!-- Mensaje 3: respuesta_130 -->
+  <line x1="230" y1="160" x2="380" y2="160" class="msg-line" marker-end="url(#arrR)"/>
+  <rect x="255" y="145" width="110" height="25" fill="white" stroke="#333333"/>
+  <foreignObject x="257" y="148" width="106" height="20">
+    <input xmlns="http://www.w3.org/1999/xhtml"
+           type="text"
+           id="respuesta_130" name="respuesta_130"
+           value="<?php echo htmlspecialchars($respuesta_130); ?>"
+           class="<?php echo $verificar_130; ?>"
+           style="width:100%;border:none;background:transparent;font-size:10px;text-align:center;outline:none;"/>
+  </foreignObject>
+
+  <!-- Mensaje 4: respuesta_131 -->
+  <line x1="390" y1="190" x2="530" y2="190" class="msg-line" marker-end="url(#arrR)"/>
+  <rect x="415" y="175" width="100" height="25" fill="white" stroke="#333333"/>
+  <foreignObject x="417" y="178" width="96" height="20">
+    <input xmlns="http://www.w3.org/1999/xhtml"
+           type="text"
+           id="respuesta_131" name="respuesta_131"
+           value="<?php echo htmlspecialchars($respuesta_131); ?>"
+           class="<?php echo $verificar_131; ?>"
+           style="width:100%;border:none;background:transparent;font-size:10px;text-align:center;outline:none;"/>
+  </foreignObject>
+
+  <!-- Mensaje 5: respuesta_132 -->
+  <line x1="540" y1="220" x2="700" y2="220" class="msg-line" marker-end="url(#arrR)"/>
+  <rect x="565" y="205" width="90" height="25" fill="white" stroke="#333333"/>
+  <foreignObject x="567" y="208" width="86" height="20">
+    <input xmlns="http://www.w3.org/1999/xhtml"
+           type="text"
+           id="respuesta_132" name="respuesta_132"
+           value="<?php echo htmlspecialchars($respuesta_132); ?>"
+           class="<?php echo $verificar_132; ?>"
+           style="width:100%;border:none;background:transparent;font-size:10px;text-align:center;outline:none;"/>
+  </foreignObject>
+
+  <line x1="390" y1="235" x2="700" y2="235" class="msg-line" stroke-width="1"/>
+
+  <!-- Mensaje 6: respuesta_133 -->
+  <line x1="710" y1="250" x2="850" y2="250" class="msg-line" marker-end="url(#arrR)"/>
+  <rect x="735" y="235" width="95" height="25" fill="white" stroke="#333333"/>
+  <foreignObject x="737" y="238" width="91" height="20">
+    <input xmlns="http://www.w3.org/1999/xhtml"
+           type="text"
+           id="respuesta_133" name="respuesta_133"
+           value="<?php echo htmlspecialchars($respuesta_133); ?>"
+           class="<?php echo $verificar_133; ?>"
+           style="width:100%;border:none;background:transparent;font-size:10px;text-align:center;outline:none;"/>
+  </foreignObject>
+
+  <!-- Mensaje 7: respuesta_134 -->
+  <line x1="860" y1="270" x2="1005" y2="270" class="msg-line" marker-end="url(#arrR)"/>
+  <rect x="885" y="255" width="100" height="25" fill="white" stroke="#333333"/>
+  <foreignObject x="887" y="258" width="96" height="20">
+    <input xmlns="http://www.w3.org/1999/xhtml"
+           type="text"
+           id="respuesta_134" name="respuesta_134"
+           value="<?php echo htmlspecialchars($respuesta_134); ?>"
+           class="<?php echo $verificar_134; ?>"
+           style="width:100%;border:none;background:transparent;font-size:10px;text-align:center;outline:none;"/>
+  </foreignObject>
+
+  <!-- Loop 1 -->
+  <g transform="translate(675, 275)">
+    <rect width="150" height="85" fill="white" stroke="#333" stroke-width="1"/>
+    <polygon points="0,0 15,0 0,15" fill="white" stroke="#333" stroke-width="1"/>
+    <line x1="0" y1="15" x2="15" y2="15" stroke="#333" stroke-width="1"/>
+    <line x1="15" y1="0" x2="15" y2="15" stroke="#333" stroke-width="1"/>
+
+    <!-- Loop1-a: respuesta_135 -->
+    <path d="M 30,15 L 45,15 L 45,35 L 30,35" fill="none" stroke="#333" stroke-width="1.2" marker-end="url(#arrR)"/>
+    <rect x="30" y="20" width="5" height="15" fill="white" stroke="#333" stroke-width="1"/>
+    <foreignObject x="53" y="15" width="90" height="22">
+      <input xmlns="http://www.w3.org/1999/xhtml"
+             type="text"
+             id="respuesta_135" name="respuesta_135"
+             value="<?php echo htmlspecialchars($respuesta_135); ?>"
+             class="<?php echo $verificar_135; ?>"
+             style="width:100%;border:1px solid #ccc;font-size:10px;text-align:left;outline:none;"/>
+    </foreignObject>
+
+    <!-- Loop1-b: respuesta_136 -->
+    <path d="M 30,50 L 45,50 L 45,70 L 30,70" fill="none" stroke="#333" stroke-width="1.2" marker-end="url(#arrR)"/>
+    <rect x="30" y="55" width="5" height="15" fill="white" stroke="#333" stroke-width="1"/>
+    <foreignObject x="53" y="50" width="90" height="22">
+      <input xmlns="http://www.w3.org/1999/xhtml"
+             type="text"
+             id="respuesta_136" name="respuesta_136"
+             value="<?php echo htmlspecialchars($respuesta_136); ?>"
+             class="<?php echo $verificar_136; ?>"
+             style="width:100%;border:1px solid #ccc;font-size:10px;text-align:left;outline:none;"/>
+    </foreignObject>
+  </g>
+
+  <!-- Loop 2 -->
+  <g transform="translate(975, 275)">
+    <rect width="165" height="85" fill="white" stroke="#333" stroke-width="1"/>
+    <polygon points="0,0 15,0 0,15" fill="white" stroke="#333" stroke-width="1"/>
+    <line x1="0" y1="15" x2="15" y2="15" stroke="#333" stroke-width="1"/>
+    <line x1="15" y1="0" x2="15" y2="15" stroke="#333" stroke-width="1"/>
+
+    <!-- Loop2-a: respuesta_137 -->
+    <path d="M 35,15 L 50,15 L 50,35 L 35,35" fill="none" stroke="#333" stroke-width="1.2" marker-end="url(#arrR)"/>
+    <rect x="35" y="20" width="5" height="15" fill="white" stroke="#333" stroke-width="1"/>
+    <foreignObject x="58" y="15" width="100" height="22">
+      <input xmlns="http://www.w3.org/1999/xhtml"
+             type="text"
+             id="respuesta_137" name="respuesta_137"
+             value="<?php echo htmlspecialchars($respuesta_137); ?>"
+             class="<?php echo $verificar_137; ?>"
+             style="width:100%;border:1px solid #ccc;font-size:10px;text-align:left;outline:none;"/>
+    </foreignObject>
+
+    <!-- Loop2-b: respuesta_138 -->
+    <path d="M 35,50 L 50,50 L 50,70 L 35,70" fill="none" stroke="#333" stroke-width="1.2" marker-end="url(#arrR)"/>
+    <rect x="35" y="55" width="5" height="15" fill="white" stroke="#333" stroke-width="1"/>
+    <foreignObject x="58" y="50" width="100" height="22">
+      <input xmlns="http://www.w3.org/1999/xhtml"
+             type="text"
+             id="respuesta_138" name="respuesta_138"
+             value="<?php echo htmlspecialchars($respuesta_138); ?>"
+             class="<?php echo $verificar_138; ?>"
+             style="width:100%;border:1px solid #ccc;font-size:10px;text-align:left;outline:none;"/>
+    </foreignObject>
+  </g>
+
+</svg>
  
   <br>
   <button type="submit" class="btn btn-primary mt-2">Verificar</button>
-  <?php for ($i = 1; $i <= 17; $i++) { echo ' ' . ${"verificar_$i"}; } ?>
+ <?php echo $verificar_122 ?>
+<?php echo $verificar_123 ?>
+<?php echo $verificar_124 ?>
+<?php echo $verificar_125 ?>
+<?php echo $verificar_126 ?>
+<?php echo $verificar_127 ?>
+<?php echo $verificar_128 ?>
+<?php echo $verificar_129 ?>
+<?php echo $verificar_130 ?>
+<?php echo $verificar_131 ?>
+<?php echo $verificar_132 ?>
+<?php echo $verificar_133 ?>
+<?php echo $verificar_134 ?>
+<?php echo $verificar_135 ?>
+<?php echo $verificar_136 ?>
+<?php echo $verificar_137 ?>
+<?php echo $verificar_138 ?>
+<hr>
  
-  <!-- ══ BANCO DE RESPUESTAS ══ -->
-  <div class="banco mt-3">
-    <h6>Banco de respuestas:</h6>
-    <span class="etiqueta">compute()</span>
-    <span class="etiqueta">:ForkJoinMaster</span>
-    <span class="etiqueta">run()</span>
-    <span class="etiqueta">join()</span>
-    <span class="etiqueta">:ForkJoinTask</span>
-    <span class="etiqueta">ForkJoinMaster(FT)</span>
-    <span class="etiqueta">:Thread</span>
-    <span class="etiqueta">fork()</span>
-    <span class="etiqueta">:ThreadPool</span>
-    <span class="etiqueta">execute(FT)</span>
-    <span class="etiqueta">invoke()</span>
-    <span class="etiqueta">ForkJoinTask</span>
-    <span class="etiqueta">ForkJoinMaster</span>
-  </div>
+  
 </div>
 
 
