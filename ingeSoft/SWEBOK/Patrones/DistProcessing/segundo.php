@@ -2454,6 +2454,9 @@ Finalmente, los workers retornan
 <?php echo $verificar_129 ?>
 <?php echo $verificar_130 ?>
     <hr>
+
+
+    
     <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
     <br>
     <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">

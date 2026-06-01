@@ -18,146 +18,85 @@ if ($_POST) {
     
     if ($mostrar_solucion === 'mostrar_solucion') {        
  
-        $respuesta_111 = '24'; 
-        $respuesta_112 = '36';
-        $respuesta_113 = '48';
-        $respuesta_114 = '60';
-        $respuesta_115 = '72';
-        $respuesta_116 = '84';
-        $respuesta_117 = '96';
-        $respuesta_118 = '108';
-        $respuesta_119 = '120';
-        $respuesta_120 = '132';
-        $respuesta_121 = '144';
-        
- 
-        $respuesta_1 = '26';
-        $respuesta_2 = '39';
-        $respuesta_3 = '52';
-        $respuesta_4 = '65';
-        $respuesta_5 = '78';
-        $respuesta_6 = '91';
-        $respuesta_7 = '104';
-        $respuesta_8 = '117';
-        $respuesta_9 = '130';
-        $respuesta_10 = '143';
-        $respuesta_11 = '156';
-        
- 
-        $respuesta_12 = '28';
-        $respuesta_13 = '42';
-        $respuesta_14 = '56';
-        $respuesta_15 = '70';
-        $respuesta_16 = '84';
-        $respuesta_17 = '98';
-        $respuesta_18 = '112';
-        $respuesta_19 = '126';
-        $respuesta_20 = '140';
-        $respuesta_21 = '154';
-        $respuesta_22 = '168';
-        
- 
-        $respuesta_23 = '30';
-        $respuesta_24 = '45';
-        $respuesta_25 = '60';
-        $respuesta_26 = '75';
-        $respuesta_27 = '90';
-        $respuesta_28 = '105';
-        $respuesta_29 = '120';
-        $respuesta_30 = '135';
-        $respuesta_31 = '150';
-        $respuesta_32 = '165';
-        $respuesta_33 = '180';
-        
- 
-        $respuesta_34 = '32';
-        $respuesta_35 = '48';
-        $respuesta_36 = '64';
-        $respuesta_37 = '80';
-        $respuesta_38 = '96';
-        $respuesta_39 = '112';
-        $respuesta_40 = '128';
-        $respuesta_41 = '144';
-        $respuesta_42 = '160';
-        $respuesta_43 = '176';
-        $respuesta_44 = '192';
-        
- 
-        $respuesta_45 = '34';
-        $respuesta_46 = '51';
-        $respuesta_47 = '68';
-        $respuesta_48 = '85';
-        $respuesta_49 = '102';
-        $respuesta_50 = '119';
-        $respuesta_51 = '136';
-        $respuesta_52 = '153';
-        $respuesta_53 = '170';
-        $respuesta_54 = '187';
-        $respuesta_55 = '204';
-        
- 
-        $respuesta_56 = '36';
-        $respuesta_57 = '54';
-        $respuesta_58 = '72';
-        $respuesta_59 = '90';
-        $respuesta_60 = '108';
-        $respuesta_61 = '126';
-        $respuesta_62 = '144';
-        $respuesta_63 = '162';
-        $respuesta_64 = '180';
-        $respuesta_65 = '198';
-        $respuesta_66 = '216';
-        
- 
-        $respuesta_67 = '38';
-        $respuesta_68 = '57';
-        $respuesta_69 = '76';
-        $respuesta_70 = '95';
-        $respuesta_71 = '114';
-        $respuesta_72 = '133';
-        $respuesta_73 = '152';
-        $respuesta_74 = '171';
-        $respuesta_75 = '190';
-        $respuesta_76 = '209';
-        $respuesta_77 = '228';
-        
- 
-        $respuesta_78 = '40';
-        $respuesta_79 = '60';
-        $respuesta_80 = '80';
-        $respuesta_81 = '100';
-        $respuesta_82 = '120';
-        $respuesta_83 = '140';
-        $respuesta_84 = '160';
-        $respuesta_85 = '180';
-        $respuesta_86 = '200';
-        $respuesta_87 = '220';
-        $respuesta_88 = '240';
-        
- 
-        $respuesta_89 = '42';
-        $respuesta_90 = '63';
-        $respuesta_91 = '84';
-        $respuesta_92 = '105';
-        $respuesta_93 = '126';
-        $respuesta_94 = '147';
-        $respuesta_95 = '168';
-        $respuesta_96 = '189';
-        $respuesta_97 = '210';
-        $respuesta_98 = '231';
-        $respuesta_99 = '252';
-        
-         $respuesta_100 = '44';
-        $respuesta_101 = '66';
-        $respuesta_102 = '88';
-        $respuesta_103 = '110';
-        $respuesta_104 = '132'; 
-        $respuesta_105 = '154';
-        $respuesta_106 = '176';
-        $respuesta_107 = '198';
-        $respuesta_108 = '220';
-        $respuesta_109 = '242';
-        $respuesta_110 = '264';
+    $respuesta_1  = 'generaliza';
+    $respuesta_2  = 'necesidad';
+    $respuesta_3  = 'sincronizacion';
+    $respuesta_4  = 'sistemas';
+    $respuesta_5  = 'procesos concurrentes comparten';
+    $respuesta_6  = 'recurso';
+    $respuesta_7  = 'buffer fijo';
+    $respuesta_8  = 'una cola';
+    $respuesta_9  = 'coordinar';
+    $respuesta_10 = 'produccion';
+    $respuesta_11 = 'consumo';
+    $respuesta_12 = 'informacion generada';
+    $respuesta_13 = 'procesada';
+    $respuesta_14 = 'manera asincrona';
+    $respuesta_15 = 'procesamiento';
+    $respuesta_16 = 'solicitudes';
+    $respuesta_17 = 'realizarse';
+    $respuesta_18 = 'concurrente y asincrona';
+    $respuesta_19 = 'punto de llegada';
+    $respuesta_20 = 'evitar';
+    $respuesta_21 = 'perdida de solicitudes';
+    $respuesta_22 = 'produccion';
+    $respuesta_23 = 'consumo';
+    $respuesta_24 = 'solicitudes';
+    $respuesta_25 = 'coordinarse de alguna manera';
+    $respuesta_26 = 'Generacion';
+    $respuesta_27 = 'solicitudes';
+    $respuesta_28 = 'concurrente';
+    $respuesta_29 = 'asincrona';
+    $respuesta_30 = 'Procesamiento o atencion de solicitudes';
+    $respuesta_31 = 'existir mas de uno';
+    $respuesta_32 = 'Una cola responsable';
+    $respuesta_33 = 'coordinar las dos primeras partes';
+    $respuesta_34 = 'Los objetos/datos son producidos y consumidos de manera asincrona';
+    $respuesta_35 = 'Los objetos/datos pueden producirse';
+    $respuesta_36 = 'cuando no existen consumidores disponibles para procesarlos';
+    $respuesta_37 = 'Los objetos son producidos en cualquier momento';
+    $respuesta_38 = 'almacenan';
+    $respuesta_39 = 'estructura de datos compartida comun';
+    $respuesta_40 = 'esperan';
+    $respuesta_41 = 'procesados';
+    $respuesta_42 = 'consumidor disponible';
+    $respuesta_43 = 'Producer';
+    $respuesta_44 = 'entidades';
+    $respuesta_45 = 'producen objetos/datos';
+    $respuesta_46 = 'asincrona';
+    $respuesta_47 = 'hilos';
+    $respuesta_48 = 'procesados';
+    $respuesta_49 = 'Producer';
+    $respuesta_50 = 'creados';
+    $respuesta_51 = 'todos los consumidores';
+    $respuesta_52 = 'ocupados procesando';
+    $respuesta_53 = 'objetos';
+    $respuesta_54 = 'almacenan';
+    $respuesta_55 = 'una cola';
+    $respuesta_56 = 'el cliente';
+    $respuesta_57 = 'genera continua';
+    $respuesta_58 = 'ejecucion normal';
+    $respuesta_59 = 'Queue';
+    $respuesta_60 = 'Almacena';
+    $respuesta_61 = 'objetos/datos producidos';
+    $respuesta_62 = 'Producers hasta';
+    $respuesta_63 = 'objeto Consumer';
+    $respuesta_64 = 'retire de la cola';
+    $respuesta_65 = 'dequeue';
+    $respuesta_66 = 'procesarlos';
+    $respuesta_67 = 'tamaño maximo';
+    $respuesta_68 = 'Guarded Suspension';
+    $respuesta_69 = 'obliga';
+    $respuesta_70 = 'hilo productor';
+    $respuesta_71 = 'esperar hasta';
+    $respuesta_72 = 'hilo consumidor retire';
+    $respuesta_73 = 'objeto de la cola';
+    $respuesta_74 = 'Retira objetos de la cola para procesarlos';
+    $respuesta_75 = 'está vacia';
+    $respuesta_76 = 'objetos Consumer disponibles';
+    $respuesta_77 = 'esperar hasta';
+    $respuesta_78 = 'Producer inserte';
+    $respuesta_79 = 'objeto en la cola';
         
         // Marcar todas como correctas
     for ($i = 1; $i <= 122; $i++) {
@@ -1669,9 +1608,9 @@ Este problema expone la
   en 
 <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="11">
   donde muchos 
-<input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="21">
+<input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="29">
   un 
-<input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="11">
+<input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="8">
   común
 (por ejemplo, un 
 <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="11">
@@ -1688,7 +1627,7 @@ El patrón permite
   y el 
 <input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="11">
   de 
-<input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="16">
+<input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="18">
   y 
 <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="11">
   de 
@@ -1715,13 +1654,13 @@ El patrón permite
 <h4>Problema</h4>
 <p>
 En una amplia variedad de situaciones, el 
-<input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="9">
+<input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="11">
   de 
 <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="9">
   puede 
-<input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="14">
+<input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="8">
   de manera 
-<input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="14">
+<input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="21">
  , lo cual implica varias cuestiones.
 </p>
 
@@ -2019,116 +1958,107 @@ Si la cola
 <?php echo $verificar_79 ?>
 <hr>
 
- <svg width="100%" viewBox="15 0 680 600" role="img" xmlns="http://www.w3.org/2000/svg">
-  <title>Producer-Consumer Design Pattern - Structure Diagram</title>
-  <desc>Sequence diagram showing Producer, Queue, and Consumer interactions.</desc>
-
+ 
+ <svg width="100%" viewBox="0 0 720 540" xmlns="http://www.w3.org/2000/svg">
+  <title>Figure 3.16: Structure Diagram - Producer-Consumer Design Pattern</title>
+  
   <defs>
-    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <marker id="arrow-right" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9" fill="none" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
     </marker>
-    <marker id="arrl" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
-      <path d="M8 1L2 5L8 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <marker id="arrow-left" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 10 1 L 0 5 L 10 9" fill="none" stroke="#000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
     </marker>
   </defs>
 
-  <!-- ── Actor boxes ── -->
-  <!-- Producer (double border) -->
-  <rect x="60" y="12" width="90" height="28" rx="0" fill="#fff" stroke="#444" stroke-width="1.2"/>
-  <rect x="64" y="16" width="82" height="20" rx="0" fill="none" stroke="#444" stroke-width="0.7"/>
-  <text font-family="sans-serif" font-size="12" font-weight="500" fill="#222" x="105" y="30" text-anchor="middle">Producer</text>
+  <style>
+    .label { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; fill: #000; }
+    .guard { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; fill: #000; }
+    .box-text { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; fill: #000; text-decoration: underline; }
+    .caption { font-family: 'Times New Roman', Times, serif; font-size: 15px; font-weight: bold; font-style: italic; fill: #000; }
+    .frame-text { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: bold; fill: #000; }
+    .line-base { stroke: #000; stroke-width: 1.2; fill: none; }
+    .lifeline { stroke: #000; stroke-width: 1.2; stroke-dasharray: 6 6; fill: none; }
+  </style>
 
-  <!-- Queue (double border) -->
-  <rect x="295" y="12" width="74" height="28" rx="0" fill="#fff" stroke="#444" stroke-width="1.2"/>
-  <rect x="299" y="16" width="66" height="20" rx="0" fill="none" stroke="#444" stroke-width="0.7"/>
-  <text font-family="sans-serif" font-size="12" font-weight="500" fill="#222" x="332" y="30" text-anchor="middle">Queue</text>
+  <line class="lifeline" x1="100" y1="55" x2="100" y2="490" />
+  <line class="lifeline" x1="315" y1="55" x2="315" y2="490" />
+  <line class="lifeline" x1="500" y1="55" x2="500" y2="490" />
 
-  <!-- Consumer (triple stacked) -->
-  <rect x="537" y="6"  width="86" height="28" rx="0" fill="#fff" stroke="#444" stroke-width="1.2"/>
-  <rect x="533" y="10" width="86" height="28" rx="0" fill="#fff" stroke="#444" stroke-width="1.2"/>
-  <rect x="529" y="14" width="86" height="28" rx="0" fill="#fff" stroke="#444" stroke-width="1.2"/>
-  <text font-family="sans-serif" font-size="12" font-weight="500" fill="#222" x="572" y="32" text-anchor="middle">Consumer</text>
+  <g transform="translate(60, 20)">
+    <rect x="5" y="-5" width="80" height="35" fill="#fff" stroke="#000" stroke-width="1.2"/>
+    <rect x="0" y="0" width="80" height="35" fill="#fff" stroke="#000" stroke-width="1.2"/>
+    <text class="box-text" x="40" y="22" text-anchor="middle">Producer</text>
+  </g>
 
-  <!-- ── Lifelines (dashed, full length) ── -->
-  <line x1="105" y1="40" x2="105" y2="548" stroke="#777" stroke-width="1" stroke-dasharray="5 4"/>
-  <line x1="332" y1="40" x2="332" y2="548" stroke="#777" stroke-width="1" stroke-dasharray="5 4"/>
-  <line x1="572" y1="42" x2="572" y2="548" stroke="#777" stroke-width="1" stroke-dasharray="5 4"/>
+  <g transform="translate(280, 20)">
+    <rect x="0" y="0" width="70" height="35" fill="#fff" stroke="#000" stroke-width="1.2"/>
+    <rect x="3" y="3" width="64" height="29" fill="none" stroke="#000" stroke-width="1"/>
+    <text class="box-text" x="35" y="22" text-anchor="middle">Queue</text>
+  </g>
 
-  <!-- ── Activation bars (white filled rectangles over lifelines) ── -->
-  <!-- Producer: tall white bar -->
-  <rect x="98" y="65" width="14" height="472" rx="0" fill="#fff" stroke="#444" stroke-width="1.2"/>
-  <!-- Queue: tall white bar -->
-  <rect x="325" y="65" width="14" height="472" rx="0" fill="#fff" stroke="#444" stroke-width="1.2"/>
-  <!-- Consumer: tall white bar -->
-  <rect x="565" y="65" width="14" height="472" rx="0" fill="#fff" stroke="#444" stroke-width="1.2"/>
+  <g transform="translate(460, 20)">
+    <rect x="10" y="-10" width="80" height="35" fill="#fff" stroke="#000" stroke-width="1.2"/>
+    <rect x="5" y="-5" width="80" height="35" fill="#fff" stroke="#000" stroke-width="1.2"/>
+    <rect x="0" y="0" width="80" height="35" fill="#fff" stroke="#000" stroke-width="1.2"/>
+    <text class="box-text" x="40" y="22" text-anchor="middle">Consumer</text>
+  </g>
 
-  <!-- ── Outer LOOP frame ── -->
-  <rect x="22" y="55" width="666" height="484" rx="0" fill="none" stroke="#333" stroke-width="1.5"/>
-  <rect x="22" y="55" width="36" height="16" rx="0" fill="#fff" stroke="#333" stroke-width="1"/>
-  <text font-family="sans-serif" font-size="11" font-weight="bold" fill="#111" x="40" y="66" text-anchor="middle">Loop</text>
+  <rect x="30" y="75" width="630" height="400" fill="none" stroke="#000" stroke-width="1.5"/>
+  <polygon points="30,75 80,75 87,87 80,94 30,94" fill="#fff" stroke="#000" stroke-width="1.2"/>
+  <text class="frame-text" x="35" y="88">Loop</text>
 
-  <!-- ── ALT outer frame ── -->
-  <rect x="288" y="62" width="375" height="470" rx="0" fill="none" stroke="#333" stroke-width="1.2"/>
-  <rect x="288" y="62" width="26" height="15" rx="0" fill="#fff" stroke="#333" stroke-width="0.8"/>
-  <text font-family="sans-serif" font-size="10" font-weight="bold" fill="#111" x="301" y="72" text-anchor="middle">alt</text>
-  <text font-family="sans-serif" font-size="10" fill="#333" x="656" y="76" text-anchor="end">[available</text>
-  <text font-family="sans-serif" font-size="10" fill="#333" x="656" y="87" text-anchor="end">consumers]</text>
+  <rect x="94" y="95" width="12" height="365" fill="#fff" stroke="#000" stroke-width="1.2"/>
+  <rect x="309" y="95" width="12" height="365" fill="#fff" stroke="#000" stroke-width="1.2"/>
+  <rect x="494" y="95" width="12" height="365" fill="#fff" stroke="#000" stroke-width="1.2"/>
 
-  <!-- enqueue(): Producer → Queue -->
-  <line x1="112" y1="94" x2="324" y2="94" stroke="#222" stroke-width="1.2" marker-end="url(#arr)"/>
-  <text font-family="sans-serif" font-size="11" fill="#111" x="165" y="89">enqueue()</text>
+  <line class="line-base" x1="106" y1="110" x2="309" y2="110" marker-end="url(#arrow-right)"/>
+  <text class="label" x="140" y="105">enqueue()</text>
 
-  <!-- ── Inner ALT frame ── -->
-  <rect x="293" y="108" width="365" height="196" rx="0" fill="none" stroke="#333" stroke-width="1.2"/>
-  <rect x="293" y="108" width="26" height="15" rx="0" fill="#fff" stroke="#333" stroke-width="0.8"/>
-  <text font-family="sans-serif" font-size="10" font-weight="bold" fill="#111" x="306" y="118" text-anchor="middle">alt</text>
-  <text font-family="sans-serif" font-size="10" fill="#333" x="652" y="118" text-anchor="end">[queue size=0]</text>
+  <rect x="220" y="82" width="425" height="380" fill="none" stroke="#000" stroke-width="1.2"/>
+  <polygon points="220,82 265,82 272,92 265,101 220,101" fill="#fff" stroke="#000" stroke-width="1.2"/>
+  <text class="frame-text" x="225" y="95">alt</text>
+  <text class="guard" x="540" y="98">[available consumers]</text>
 
-  <!-- Inner LOOP frame -->
-  <rect x="298" y="122" width="110" height="52" rx="0" fill="none" stroke="#333" stroke-width="1"/>
-  <rect x="298" y="122" width="34" height="14" rx="0" fill="#fff" stroke="#333" stroke-width="0.7"/>
-  <text font-family="sans-serif" font-size="10" font-weight="bold" fill="#111" x="315" y="132" text-anchor="middle">Loop</text>
+  <g transform="translate(240, 125)">
+    <rect x="0" y="0" width="385" height="205" fill="none" stroke="#000" stroke-width="1.2"/>
+    <polygon points="0,0 45,0 52,10 45,20 0,20" fill="#fff" stroke="#000" stroke-width="1.2"/>
+    <text class="frame-text" x="5" y="14">alt</text>
+    <text class="guard" x="300" y="18">[queue size=0]</text>
 
-  <!-- size(): Consumer → Queue (arrow left) -->
-  <line x1="564" y1="152" x2="340" y2="152" stroke="#222" stroke-width="1.2" marker-end="url(#arrl)"/>
-  <text font-family="sans-serif" font-size="11" fill="#111" x="420" y="147">size()</text>
+    <g transform="translate(15, 30)">
+      <rect x="0" y="0" width="305" height="55" fill="none" stroke="#000" stroke-width="1.2"/>
+      <polygon points="0,0 50,0 57,10 50,19 0,19" fill="#fff" stroke="#000" stroke-width="1.2"/>
+      <text class="frame-text" x="5" y="13">Loop</text>
+      
+      <line class="line-base" x1="239" y1="40" x2="60" y2="40" marker-end="url(#arrow-left)"/>
+      <text class="label" x="125" y="34">size()</text>
+    </g>
 
-  <!-- [while size=0] box to the right of Consumer bar -->
-  <rect x="584" y="132" width="72" height="34" rx="0" fill="#fff" stroke="#555" stroke-width="0.8"/>
-  <text font-family="sans-serif" font-size="10" fill="#333" x="620" y="147" text-anchor="middle">[while</text>
-  <text font-family="sans-serif" font-size="10" fill="#333" x="620" y="159" text-anchor="middle">size=0]</text>
+    <text class="guard" x="330" y="60">[while</text>
+    <text class="guard" x="330" y="73">size=0]</text>
 
-  <!-- Dashed divider: inner alt -->
-  <line x1="293" y1="178" x2="658" y2="178" stroke="#555" stroke-width="1" stroke-dasharray="7 4"/>
-  <text font-family="sans-serif" font-size="10" fill="#333" x="652" y="190" text-anchor="end">[queue size&gt;0]</text>
+    <line x1="0" y1="105" x2="385" y2="105" stroke="#000" stroke-width="1.2" stroke-dasharray="6 4"/>
+    <text class="guard" x="300" y="122">[queue size&gt;0]</text>
 
-  <!-- dequeue(): Consumer → Queue (arrow left) -->
-  <line x1="564" y1="218" x2="340" y2="218" stroke="#222" stroke-width="1.2" marker-end="url(#arrl)"/>
-  <text font-family="sans-serif" font-size="11" fill="#111" x="415" y="213">dequeue()</text>
+    <line class="line-base" x1="254" y1="145" x2="75" y2="145" marker-end="url(#arrow-left)"/>
+    <text class="label" x="125" y="138">dequeue()</text>
 
-  <!-- process() self-call on Consumer: small box right + arrow left -->
-  <rect x="584" y="232" width="64" height="26" rx="0" fill="#fff" stroke="#555" stroke-width="0.8"/>
-  <text font-family="sans-serif" font-size="11" fill="#111" x="616" y="249" text-anchor="middle">process()</text>
-  <!-- L-shaped self arrow: right side of bar → box → back -->
-  <line x1="579" y1="238" x2="584" y2="238" stroke="#222" stroke-width="1.2"/>
-  <line x1="579" y1="252" x2="584" y2="252" stroke="#222" stroke-width="1.2" marker-end="url(#arrl)"/>
+    <path class="line-base" d="M 260,155 L 295,155 L 295,180 L 261,180" marker-end="url(#arrow-left)"/>
+    <text class="label" x="302" y="172">process()</text>
+  </g>
 
-  <!-- Dashed divider: outer alt -->
-  <line x1="288" y1="314" x2="663" y2="314" stroke="#444" stroke-width="1.2" stroke-dasharray="8 5"/>
-  <text font-family="sans-serif" font-size="10" fill="#333" x="656" y="327" text-anchor="end">[no available</text>
-  <text font-family="sans-serif" font-size="10" fill="#333" x="656" y="338" text-anchor="end">consumers]</text>
+  <line x1="220" y1="365" x2="645" y2="365" stroke="#000" stroke-width="1.2" stroke-dasharray="6 4"/>
+  <text class="guard" x="540" y="382">[no available consumers]</text>
 
-  <!-- store() self-call on Queue: small box right + arrow left -->
-  <rect x="344" y="368" width="52" height="26" rx="0" fill="#fff" stroke="#555" stroke-width="0.8"/>
-  <text font-family="sans-serif" font-size="11" fill="#111" x="370" y="385" text-anchor="middle">store()</text>
-  <!-- L-shaped self arrow -->
-  <line x1="339" y1="374" x2="344" y2="374" stroke="#222" stroke-width="1.2"/>
-  <line x1="339" y1="388" x2="344" y2="388" stroke="#222" stroke-width="1.2" marker-end="url(#arrl)"/>
+  <rect x="309" y="415" width="12" height="40" fill="#fff" stroke="#000" stroke-width="1.2"/>
 
-  <!-- ── Caption ── -->
-  <text font-family="sans-serif" font-size="11" fill="#555" x="345" y="582" text-anchor="middle">Figure 3.16: Structure Diagram - Producer-Consumer Design Pattern</text>
+  <path class="line-base" d="M 321,400 L 355,400 L 355,425 L 322,425" marker-end="url(#arrow-left)"/>
+  <text class="label" x="362" y="417">store()</text>
+
+  <text class="caption" x="345" y="515" text-anchor="middle">Figure 3.16: Structure Diagram - Producer-Consumer Design Pattern</text>
 </svg>
- 
+
  
 </div>
 
@@ -2255,7 +2185,7 @@ Si no existen tareas en la cola, los consumers esperan por tareas.
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="segundo.php"
+        href="sexto.php"
         role="button"
         width="50px"
         height="50px"

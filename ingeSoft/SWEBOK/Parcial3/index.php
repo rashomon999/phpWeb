@@ -18,60 +18,41 @@ if ($_POST) {
     
     if ($mostrar_solucion === 'mostrar_solucion') {        
  
-        $respuesta_111 = '24'; 
-        $respuesta_112 = '36';
-        $respuesta_113 = '48';
-        $respuesta_114 = '60';
-        $respuesta_115 = '72';
-        $respuesta_116 = '84';
-        $respuesta_117 = '96';
-        $respuesta_118 = '108';
-        $respuesta_119 = '120';
-        $respuesta_120 = '132';
-        $respuesta_121 = '144';
-        
- 
-        $respuesta_1 = '26';
-        $respuesta_2 = '39';
-        $respuesta_3 = '52';
-        $respuesta_4 = '65';
-        $respuesta_5 = '78';
-        $respuesta_6 = '91';
-        $respuesta_7 = '104';
-        $respuesta_8 = '117';
-        $respuesta_9 = '130';
-        $respuesta_10 = '143';
-        $respuesta_11 = '156';
-        
- 
-        $respuesta_12 = '28';
-        $respuesta_13 = '42';
-        $respuesta_14 = '56';
-        $respuesta_15 = '70';
-        $respuesta_16 = '84';
-        $respuesta_17 = '98';
-        $respuesta_18 = '112';
-        $respuesta_19 = '126';
-        $respuesta_20 = '140';
-        $respuesta_21 = '154';
-        $respuesta_22 = '168';
-        
- 
-        $respuesta_23 = '30';
-        $respuesta_24 = '45';
-        $respuesta_25 = '60';
-        $respuesta_26 = '75';
-        $respuesta_27 = '90';
-        $respuesta_28 = '105';
-        $respuesta_29 = '120';
-        $respuesta_30 = '135';
-        $respuesta_31 = '150';
-        $respuesta_32 = '165';
-        $respuesta_33 = '180';
-        
- 
-        $respuesta_34 = '32';
-        $respuesta_35 = '48';
+    $respuesta_1  = 'replicacion de datos globales';
+    $respuesta_2  = 'la fusion de los resultados de las tareas individuales en calculos globales';
+    $respuesta_3  = 'Separable Dependencies Design Pattern';
+    $respuesta_4  = 'Master';
+    $respuesta_5  = 'Worker';
+    $respuesta_6  = 'Task';
+    $respuesta_7  = 'ThreadPool';
+    $respuesta_8  = 'arquitectonica';
+    $respuesta_9  = 'proxy-cache';
+    $respuesta_10 = 'hay datos duplicables para ser consultados muchas veces por muchos cliente';
+    $respuesta_11 = 'hacer que los clientes interactuen con una copia de la receta guardada en nodos de procesamiento intermedio';
+    $respuesta_12 = 'Reliable messaging';
+    $respuesta_13 = 'Broker';
+    $respuesta_14 = 'Producers-Consumers';
+    $respuesta_15 = 'broker';
+    $respuesta_16 = 'hay multiples clientes de software que deben interactuar con multiples servidores de software;';
+    $respuesta_17 = 'la escogencia de cual servidor atiende a un cliente dado';
+    $respuesta_18 = 'se resuelve por un criterio dado';
+    $respuesta_19 = 'dinamicamente';
+    $respuesta_20 = 'hacer que tanto clientes como servidores se registren en el componente que resuelve que servidor debe atender a que cliente';
+    $respuesta_21 = 'Un patron de diseño arquitectonico aplicado en un contexto erroneo lo hace interpretar como un patron de diseño detallado,';
+    $respuesta_22 = 'mientras que lo contrario es falso';
+    $respuesta_23 = 'El alcance de la aplicacion de un patron de diseño detallado es bien localizado en una porcion delimitada y no significativa del sistema';
+    $respuesta_24 = 'Proxy-cache';
+    $respuesta_25 = 'Publisher-subscriber';
+    $respuesta_26 = 'Broker';
+    $respuesta_27 = 'detallada';
+    $respuesta_28 = 'publisher-suscriber';
+    $respuesta_29 = 'componentes de software interesados';
+    $respuesta_30 = 'enterarse de cambios de estado de otros componentes';
+    $respuesta_31 = 'siendo innecesario que estos ultimos conozcan la identidad';
+    $respuesta_32 = 'los primeros';
+    $respuesta_33 = 'hacer que los interesados se registren en los sensores';
+    $respuesta_34 = 'de modo que estos le notifiquen';
+    $respuesta_35 = 'los interesados cuando detecten algo importante';
         $respuesta_36 = '64';
         $respuesta_37 = '80';
         $respuesta_38 = '96';
@@ -166,17 +147,17 @@ $respuesta_124 = 'ThreadPool';
 $respuesta_125 = 'Worker';
 $respuesta_126 = 'Task';
 $respuesta_127 = 'Result';
-$respuesta_128 = 'request()';
-$respuesta_129 = 'compute()';
-$respuesta_130 = 'fork()';
-$respuesta_131 = 'execute()';
-$respuesta_132 = 'assign()';
+$respuesta_128 = 'ForkJoinMaster(FT)';
+$respuesta_129 = 'invoke()';
+$respuesta_130 = 'execute(FT)';
+$respuesta_131 = 'run()';
+$respuesta_132 = 'compute()';
 $respuesta_133 = 'run()';
-$respuesta_134 = 'join()';
-$respuesta_135 = 'for each worker';
-$respuesta_136 = 'submit task';
-$respuesta_137 = 'for each task';
-$respuesta_138 = 'collect result';
+$respuesta_134 = 'compute()';
+$respuesta_135 = 'fork()';
+$respuesta_136 = 'fork()';
+$respuesta_137 = 'join()';
+$respuesta_138 = 'join()';
 
 // Cambiar el loop de marcar correctas hasta 138
 for ($i = 1; $i <= 138; $i++) {
@@ -187,7 +168,7 @@ for ($i = 1; $i <= 138; $i++) {
 
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === '26') {  
+   if ($respuesta_1 === 'replicacion de datos globales') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -197,7 +178,7 @@ for ($i = 1; $i <= 138; $i++) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === '39') {  
+   if ($respuesta_2 === 'la fusion de los resultados de las tareas individuales en calculos globales') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -207,7 +188,7 @@ for ($i = 1; $i <= 138; $i++) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === '52') {  
+   if ($respuesta_3 === 'Separable Dependencies Design Pattern') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -217,7 +198,7 @@ for ($i = 1; $i <= 138; $i++) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === '65') {  
+   if ($respuesta_4 === 'Master') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -227,7 +208,7 @@ for ($i = 1; $i <= 138; $i++) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === '78') {  
+   if ($respuesta_5 === 'Worker') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -237,7 +218,7 @@ for ($i = 1; $i <= 138; $i++) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === '91') {  
+   if ($respuesta_6 === 'Task') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -247,7 +228,7 @@ for ($i = 1; $i <= 138; $i++) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === '104') {  
+   if ($respuesta_7 === 'ThreadPool') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -257,7 +238,7 @@ for ($i = 1; $i <= 138; $i++) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === '117') {  
+   if ($respuesta_8 === 'arquitectonica') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -267,7 +248,7 @@ for ($i = 1; $i <= 138; $i++) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === '130') {  
+   if ($respuesta_9 === 'proxy-cache') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -277,7 +258,7 @@ for ($i = 1; $i <= 138; $i++) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === '143') {  
+   if ($respuesta_10 === 'hay datos duplicables para ser consultados muchas veces por muchos cliente') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -287,7 +268,7 @@ for ($i = 1; $i <= 138; $i++) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === '156') {  
+   if ($respuesta_11 === 'hacer que los clientes interactuen con una copia de la receta guardada en nodos de procesamiento intermedio') {  
        $verificar_11 = "correcto";
    } elseif ($respuesta_11 === '') {
        $verificar_11 = '';
@@ -298,7 +279,7 @@ for ($i = 1; $i <= 138; $i++) {
 
     // Verificar la respuesta de la primera pregunta
     $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-    if ($respuesta_12 === '28') {  
+    if ($respuesta_12 === 'Reliable messaging') {  
         $verificar_12 = "correcto";
     } elseif ($respuesta_12 === '') {
         $verificar_12 = '';
@@ -308,7 +289,7 @@ for ($i = 1; $i <= 138; $i++) {
   
     // Verificar la respuesta de la segunda pregunta
     $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-    if ($respuesta_13 === '42') { 
+    if ($respuesta_13 === 'Broker') { 
         $verificar_13 = "correcto";
     } elseif ($respuesta_13 === '') {
         $verificar_13 = '';
@@ -318,7 +299,7 @@ for ($i = 1; $i <= 138; $i++) {
   
     // Verificar la respuesta de la tercera pregunta
     $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-    if ($respuesta_14 === '56') {  
+    if ($respuesta_14 === 'Producers-Consumers') {  
         $verificar_14 = "correcto";
     } elseif ($respuesta_14 === '') {
         $verificar_14 = '';
@@ -328,7 +309,7 @@ for ($i = 1; $i <= 138; $i++) {
   
     // Verificar la respuesta de la cuarta pregunta
     $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-    if ($respuesta_15 === '70') { 
+    if ($respuesta_15 === 'broker') { 
         $verificar_15 = "correcto";
     } elseif ($respuesta_15 === '') {
         $verificar_15 = '';
@@ -338,7 +319,7 @@ for ($i = 1; $i <= 138; $i++) {
   
     // Verificar la respuesta de la quinta pregunta
     $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-    if ($respuesta_16 === '84') {  
+    if ($respuesta_16 === 'hay multiples clientes de software que deben interactuar con multiples servidores de software') {  
         $verificar_16 = "correcto";
     } elseif ($respuesta_16 === '') {
         $verificar_16 = '';
@@ -348,7 +329,7 @@ for ($i = 1; $i <= 138; $i++) {
   
     // Verificar la respuesta de la sexta pregunta
     $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-    if ($respuesta_17 === '98') {  
+    if ($respuesta_17 === 'la escogencia de cual servidor atiende a un cliente dado') {  
         $verificar_17 = "correcto";
         } elseif ($respuesta_17 === '') {
         $verificar_17 = '';
@@ -358,7 +339,7 @@ for ($i = 1; $i <= 138; $i++) {
   
     // Verificar la respuesta de la séptima pregunta
     $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-    if ($respuesta_18 === '112') {  
+    if ($respuesta_18 === 'se resuelve por un criterio dado') {  
         $verificar_18 = "correcto";
     } elseif ($respuesta_18 === '') {
         $verificar_18 = '';
@@ -368,7 +349,7 @@ for ($i = 1; $i <= 138; $i++) {
   
     // Verificar la respuesta de la octava pregunta
     $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-    if ($respuesta_19 === '126') {  
+    if ($respuesta_19 === 'dinamicamente') {  
         $verificar_19 = "correcto";
     } elseif ($respuesta_19 === '') {
         $verificar_19 = '';
@@ -378,7 +359,7 @@ for ($i = 1; $i <= 138; $i++) {
   
     // Verificar la respuesta de la novena pregunta
     $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
-    if ($respuesta_20 === '140') {  
+    if ($respuesta_20 === 'hacer que tanto clientes como servidores se registren en el componente que resuelve que servidor debe atender a que cliente') {  
         $verificar_20 = "correcto";
     } elseif ($respuesta_20 === '') {
         $verificar_20 = '';
@@ -388,7 +369,7 @@ for ($i = 1; $i <= 138; $i++) {
   
     // Verificar la respuesta de la décima pregunta
     $respuesta_21 = isset($_POST['respuesta_21']) ? $_POST['respuesta_21'] : '';
-    if ($respuesta_21 === '154') {  
+    if ($respuesta_21 === 'Un patron de diseño arquitectonico aplicado en un contexto erroneo lo hace interpretar como un patron de diseño detallado') {  
          $verificar_21 = "correcto";
     } elseif ($respuesta_21 === '') {
         $verificar_21 = '';
@@ -398,7 +379,7 @@ for ($i = 1; $i <= 138; $i++) {
   
     // Verificar la respuesta de la undécima pregunta
     $respuesta_22 = isset($_POST['respuesta_22']) ? $_POST['respuesta_22'] : '';
-    if ($respuesta_22 === '168') {  
+    if ($respuesta_22 === 'mientras que lo contrario es falso') {  
         $verificar_22 = "correcto";
     } elseif ($respuesta_22 === '') {
         $verificar_22 = '';
@@ -408,7 +389,7 @@ for ($i = 1; $i <= 138; $i++) {
 
      // Verificar la respuesta de la primera pregunta
    $respuesta_23 = isset($_POST['respuesta_23']) ? $_POST['respuesta_23'] : '';
-   if ($respuesta_23 === '30') {  
+   if ($respuesta_23 === 'El alcance de la aplicacion de un patron de diseño detallado es bien localizado en una porcion delimitada y no significativa del sistema') {  
        $verificar_23 = "correcto";
    } elseif ($respuesta_23 === '') {
        $verificar_23 = '';
@@ -418,7 +399,7 @@ for ($i = 1; $i <= 138; $i++) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_24 = isset($_POST['respuesta_24']) ? $_POST['respuesta_24'] : '';
-   if ($respuesta_24 === '45') {  
+   if ($respuesta_24 === 'Proxy-cache') {  
        $verificar_24 = "correcto";
    } elseif ($respuesta_24 === '') {
        $verificar_24 = '';
@@ -428,7 +409,7 @@ for ($i = 1; $i <= 138; $i++) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_25 = isset($_POST['respuesta_25']) ? $_POST['respuesta_25'] : '';
-   if ($respuesta_25 === '60') { 
+   if ($respuesta_25 === 'Publisher-subscriber') { 
        $verificar_25 = "correcto";
    } elseif ($respuesta_25 === '') {
        $verificar_25 = '';
@@ -438,7 +419,7 @@ for ($i = 1; $i <= 138; $i++) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_26 = isset($_POST['respuesta_26']) ? $_POST['respuesta_26'] : '';
-   if ($respuesta_26 === '75') {  
+   if ($respuesta_26 === 'Broker') {  
        $verificar_26 = "correcto";
    } elseif ($respuesta_26 === '') {
        $verificar_26 = '';
@@ -448,7 +429,7 @@ for ($i = 1; $i <= 138; $i++) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_27 = isset($_POST['respuesta_27']) ? $_POST['respuesta_27'] : '';
-   if ($respuesta_27 === '90') {  
+   if ($respuesta_27 === 'detallada') {  
        $verificar_27 = "correcto";
    } elseif ($respuesta_27 === '') {
        $verificar_27 = '';
@@ -458,7 +439,7 @@ for ($i = 1; $i <= 138; $i++) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_28 = isset($_POST['respuesta_28']) ? $_POST['respuesta_28'] : '';
-   if ($respuesta_28 === '105') {  
+   if ($respuesta_28 === 'publisher-suscriber') {  
        $verificar_28 = "correcto";
    } elseif ($respuesta_28 === '') {
        $verificar_28 = '';
@@ -468,7 +449,7 @@ for ($i = 1; $i <= 138; $i++) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_29 = isset($_POST['respuesta_29']) ? $_POST['respuesta_29'] : '';
-   if ($respuesta_29 === '120') {  
+   if ($respuesta_29 === 'componentes de software interesados') {  
        $verificar_29 = "correcto";
    } elseif ($respuesta_29 === '') {
        $verificar_29 = '';
@@ -478,7 +459,7 @@ for ($i = 1; $i <= 138; $i++) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_30 = isset($_POST['respuesta_30']) ? $_POST['respuesta_30'] : '';
-   if ($respuesta_30 === '135') {  
+   if ($respuesta_30 === 'enterarse de cambios de estado de otros componentes') {  
        $verificar_30 = "correcto";
    } elseif ($respuesta_30 === '') {
        $verificar_30 = '';
@@ -488,7 +469,7 @@ for ($i = 1; $i <= 138; $i++) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_31 = isset($_POST['respuesta_31']) ? $_POST['respuesta_31'] : '';
-   if ($respuesta_31 === '150') {  
+   if ($respuesta_31 === 'siendo innecesario que estos ultimos conozcan la identidad') {  
        $verificar_31 = "correcto";
    } elseif ($respuesta_31 === '') {
        $verificar_31 = '';
@@ -498,7 +479,7 @@ for ($i = 1; $i <= 138; $i++) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_32 = isset($_POST['respuesta_32']) ? $_POST['respuesta_32'] : '';
-   if ($respuesta_32 === '165') {  
+   if ($respuesta_32 === 'los primeros') {  
        $verificar_32 = "correcto";
    } elseif ($respuesta_32 === '') {
        $verificar_32 = '';
@@ -508,7 +489,7 @@ for ($i = 1; $i <= 138; $i++) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_33 = isset($_POST['respuesta_33']) ? $_POST['respuesta_33'] : '';
-   if ($respuesta_33 === '180') {  
+   if ($respuesta_33 === 'hacer que los interesados se registren en los sensores') {  
        $verificar_33 = "correcto";
    } elseif ($respuesta_33 === '') {
        $verificar_33 = '';
@@ -517,7 +498,7 @@ for ($i = 1; $i <= 138; $i++) {
    }
 
     $respuesta_34 = isset($_POST['respuesta_34']) ? $_POST['respuesta_34'] : '';
-    if ($respuesta_34 === '32') { 
+    if ($respuesta_34 === 'de modo que estos le notifiquen') { 
         $verificar_34 = "correcto";
     } elseif ($respuesta_34 === '') {
         $verificar_34 = '';
@@ -526,7 +507,7 @@ for ($i = 1; $i <= 138; $i++) {
     }
 
     $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
-    if ($respuesta_35 === '48') { 
+    if ($respuesta_35 === 'los interesados cuando detecten algo importante') { 
         $verificar_35 = "correcto";
     } elseif ($respuesta_35 === '') {
         $verificar_35 = '';
@@ -1365,7 +1346,7 @@ foreach ($answers as $i => $correct) {
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 370vh;
+    height: 270vh;
     }
 
 </style>
@@ -1661,25 +1642,48 @@ function ocultarMensaje4() {
         procesamiento de un gran volumen de datos con la mejor latencia posible, y se
         puede seguir una estrategia de divide y vencerás, entonces el patrón de diseño
         más adecuado para aplicar, sabiendo que facilita la descomposición al eliminar
-        las dependencias entre tareas simples a través de la replicación de datos globales
-        y la fusión de los resultados de las tareas individuales en cálculos globales, es:
-        <strong>Separable Dependencies Design Pattern</strong>.
+        las dependencias entre tareas simples a través de la 
+        <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="26">
+         
+        y 
+        <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="66">
+         , es:
+        <strong>
+        <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="35">    
+         </strong>.
     </p>
 
     <h3>Componentes del patrón</h3>
 
     <ol>
-        <li>Master: <strong>VERDADERO</strong></li>
-        <li>Worker: <strong>VERDADERO</strong></li>
-        <li>Task: <strong>VERDADERO</strong></li>
+        <li>
+        <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="8">    
+         : <strong>VERDADERO</strong></li>
+        <li>
+        <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="8">    
+         : <strong>VERDADERO</strong></li>
+        <li>
+        <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="8">    
+         : <strong>VERDADERO</strong></li>
         <li>Thread: <strong>FALSO</strong></li>
-        <li>ThreadPool: <strong>VERDADERO</strong></li>
+        <li>
+        <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="8">    
+         : <strong>VERDADERO</strong></li>
         <li>ForkJoinMaster: <strong>FALSO</strong></li>
         <li>Queue: <strong>FALSO</strong></li>
         <li>Producer: <strong>FALSO</strong></li>
         <li>Consumer: <strong>FALSO</strong></li>
         <li>ForkJoinTask: <strong>FALSO</strong></li>
     </ol>
+     <button type="submit">Enviar</button> 
+    <?php echo $verificar_1 ?>
+    <?php echo $verificar_2 ?>
+    <?php echo $verificar_3 ?>
+    <?php echo $verificar_4 ?>
+    <?php echo $verificar_5 ?>
+    <?php echo $verificar_6 ?>
+    <?php echo $verificar_7 ?>  
+    <hr>
 
  <h4>Complete el diagrama de secuencia del flujo normal de eventos del patrón ForkJoin</h4>
   <p>Coloque en cada espacio el elemento correcto tomado del banco de respuestas.</p>
@@ -1722,7 +1726,7 @@ function ocultarMensaje4() {
            id="respuesta_122" name="respuesta_122"
            value="<?php echo htmlspecialchars($respuesta_122); ?>"
            class="<?php echo $verificar_122; ?>"
-           style="width:100%;border:none;background:transparent;font-size:11px;font-family:sans-serif;text-align:center;outline:none;"/>
+           style="width:100%;border:none;background:transparent;font-size:14px;font-family:sans-serif;text-align:center;outline:none;"/>
   </foreignObject>
   <line x1="225" y1="45" x2="225" y2="385" class="lifeline"/>
 
@@ -1736,7 +1740,7 @@ function ocultarMensaje4() {
            id="respuesta_123" name="respuesta_123"
            value="<?php echo htmlspecialchars($respuesta_123); ?>"
            class="<?php echo $verificar_123; ?>"
-           style="width:100%;border:none;background:transparent;font-size:11px;font-family:sans-serif;text-align:center;outline:none;"/>
+           style="width:100%;border:none;background:transparent;font-size:14px;font-family:sans-serif;text-align:center;outline:none;"/>
   </foreignObject>
   <line x1="385" y1="45" x2="385" y2="385" class="lifeline"/>
 
@@ -1750,7 +1754,7 @@ function ocultarMensaje4() {
            id="respuesta_124" name="respuesta_124"
            value="<?php echo htmlspecialchars($respuesta_124); ?>"
            class="<?php echo $verificar_124; ?>"
-           style="width:100%;border:none;background:transparent;font-size:11px;font-family:sans-serif;text-align:center;outline:none;"/>
+           style="width:100%;border:none;background:transparent;font-size:14px;font-family:sans-serif;text-align:center;outline:none;"/>
   </foreignObject>
   <line x1="535" y1="45" x2="535" y2="385" class="lifeline"/>
 
@@ -1764,7 +1768,7 @@ function ocultarMensaje4() {
            id="respuesta_125" name="respuesta_125"
            value="<?php echo htmlspecialchars($respuesta_125); ?>"
            class="<?php echo $verificar_125; ?>"
-           style="width:100%;border:none;background:transparent;font-size:11px;font-family:sans-serif;text-align:center;outline:none;"/>
+           style="width:100%;border:none;background:transparent;font-size:14px;font-family:sans-serif;text-align:center;outline:none;"/>
   </foreignObject>
   <line x1="705" y1="45" x2="705" y2="385" class="lifeline"/>
 
@@ -1778,7 +1782,7 @@ function ocultarMensaje4() {
            id="respuesta_126" name="respuesta_126"
            value="<?php echo htmlspecialchars($respuesta_126); ?>"
            class="<?php echo $verificar_126; ?>"
-           style="width:100%;border:none;background:transparent;font-size:11px;font-family:sans-serif;text-align:center;outline:none;"/>
+           style="width:100%;border:none;background:transparent;font-size:14px;font-family:sans-serif;text-align:center;outline:none;"/>
   </foreignObject>
   <line x1="855" y1="45" x2="855" y2="385" class="lifeline"/>
 
@@ -1792,7 +1796,7 @@ function ocultarMensaje4() {
            id="respuesta_127" name="respuesta_127"
            value="<?php echo htmlspecialchars($respuesta_127); ?>"
            class="<?php echo $verificar_127; ?>"
-           style="width:100%;border:none;background:transparent;font-size:11px;font-family:sans-serif;text-align:center;outline:none;"/>
+           style="width:100%;border:none;background:transparent;font-size:14px;font-family:sans-serif;text-align:center;outline:none;"/>
   </foreignObject>
   <line x1="1010" y1="45" x2="1010" y2="385" class="lifeline"/>
 
@@ -1807,13 +1811,13 @@ function ocultarMensaje4() {
 
   <!-- Mensaje 1: respuesta_128 -->
   <line x1="40" y1="90" x2="220" y2="90" class="msg-line" marker-end="url(#arrR)"/>
-  <foreignObject x="90" y="65" width="80" height="22">
+  <foreignObject x="70" y="65" width="130" height="22">
     <input xmlns="http://www.w3.org/1999/xhtml"
            type="text"
            id="respuesta_128" name="respuesta_128"
            value="<?php echo htmlspecialchars($respuesta_128); ?>"
            class="<?php echo $verificar_128; ?>"
-           style="width:100%;border:1px solid #ccc;font-size:10px;text-align:center;outline:none;"/>
+           style="width:100%;border:1px solid #ccc;font-size:14px;text-align:center;outline:none;"/>
   </foreignObject>
 
   <!-- Mensaje 2: respuesta_129 -->
@@ -1824,7 +1828,7 @@ function ocultarMensaje4() {
            id="respuesta_129" name="respuesta_129"
            value="<?php echo htmlspecialchars($respuesta_129); ?>"
            class="<?php echo $verificar_129; ?>"
-           style="width:100%;border:1px solid #ccc;font-size:10px;text-align:center;outline:none;"/>
+           style="width:100%;border:1px solid #ccc;font-size:14px;text-align:center;outline:none;"/>
   </foreignObject>
 
   <!-- Mensaje 3: respuesta_130 -->
@@ -1836,7 +1840,7 @@ function ocultarMensaje4() {
            id="respuesta_130" name="respuesta_130"
            value="<?php echo htmlspecialchars($respuesta_130); ?>"
            class="<?php echo $verificar_130; ?>"
-           style="width:100%;border:none;background:transparent;font-size:10px;text-align:center;outline:none;"/>
+           style="width:100%;border:none;background:transparent;font-size:14px;text-align:center;outline:none;"/>
   </foreignObject>
 
   <!-- Mensaje 4: respuesta_131 -->
@@ -1848,7 +1852,7 @@ function ocultarMensaje4() {
            id="respuesta_131" name="respuesta_131"
            value="<?php echo htmlspecialchars($respuesta_131); ?>"
            class="<?php echo $verificar_131; ?>"
-           style="width:100%;border:none;background:transparent;font-size:10px;text-align:center;outline:none;"/>
+           style="width:100%;border:none;background:transparent;font-size:14px;text-align:center;outline:none;"/>
   </foreignObject>
 
   <!-- Mensaje 5: respuesta_132 -->
@@ -1860,7 +1864,7 @@ function ocultarMensaje4() {
            id="respuesta_132" name="respuesta_132"
            value="<?php echo htmlspecialchars($respuesta_132); ?>"
            class="<?php echo $verificar_132; ?>"
-           style="width:100%;border:none;background:transparent;font-size:10px;text-align:center;outline:none;"/>
+           style="width:100%;border:none;background:transparent;font-size:14px;text-align:center;outline:none;"/>
   </foreignObject>
 
   <line x1="390" y1="235" x2="700" y2="235" class="msg-line" stroke-width="1"/>
@@ -1874,7 +1878,7 @@ function ocultarMensaje4() {
            id="respuesta_133" name="respuesta_133"
            value="<?php echo htmlspecialchars($respuesta_133); ?>"
            class="<?php echo $verificar_133; ?>"
-           style="width:100%;border:none;background:transparent;font-size:10px;text-align:center;outline:none;"/>
+           style="width:100%;border:none;background:transparent;font-size:14px;text-align:center;outline:none;"/>
   </foreignObject>
 
   <!-- Mensaje 7: respuesta_134 -->
@@ -1886,7 +1890,7 @@ function ocultarMensaje4() {
            id="respuesta_134" name="respuesta_134"
            value="<?php echo htmlspecialchars($respuesta_134); ?>"
            class="<?php echo $verificar_134; ?>"
-           style="width:100%;border:none;background:transparent;font-size:10px;text-align:center;outline:none;"/>
+           style="width:100%;border:none;background:transparent;font-size:14px;text-align:center;outline:none;"/>
   </foreignObject>
 
   <!-- Loop 1 -->
@@ -1905,7 +1909,7 @@ function ocultarMensaje4() {
              id="respuesta_135" name="respuesta_135"
              value="<?php echo htmlspecialchars($respuesta_135); ?>"
              class="<?php echo $verificar_135; ?>"
-             style="width:100%;border:1px solid #ccc;font-size:10px;text-align:left;outline:none;"/>
+             style="width:100%;border:1px solid #ccc;font-size:14px;text-align:left;outline:none;"/>
     </foreignObject>
 
     <!-- Loop1-b: respuesta_136 -->
@@ -1917,7 +1921,7 @@ function ocultarMensaje4() {
              id="respuesta_136" name="respuesta_136"
              value="<?php echo htmlspecialchars($respuesta_136); ?>"
              class="<?php echo $verificar_136; ?>"
-             style="width:100%;border:1px solid #ccc;font-size:10px;text-align:left;outline:none;"/>
+             style="width:100%;border:1px solid #ccc;font-size:14px;text-align:left;outline:none;"/>
     </foreignObject>
   </g>
 
@@ -1937,7 +1941,7 @@ function ocultarMensaje4() {
              id="respuesta_137" name="respuesta_137"
              value="<?php echo htmlspecialchars($respuesta_137); ?>"
              class="<?php echo $verificar_137; ?>"
-             style="width:100%;border:1px solid #ccc;font-size:10px;text-align:left;outline:none;"/>
+             style="width:100%;border:1px solid #ccc;font-size:14px;text-align:left;outline:none;"/>
     </foreignObject>
 
     <!-- Loop2-b: respuesta_138 -->
@@ -1949,7 +1953,7 @@ function ocultarMensaje4() {
              id="respuesta_138" name="respuesta_138"
              value="<?php echo htmlspecialchars($respuesta_138); ?>"
              class="<?php echo $verificar_138; ?>"
-             style="width:100%;border:1px solid #ccc;font-size:10px;text-align:left;outline:none;"/>
+             style="width:100%;border:1px solid #ccc;font-size:14px;text-align:left;outline:none;"/>
     </foreignObject>
   </g>
 
@@ -1975,16 +1979,424 @@ function ocultarMensaje4() {
 <?php echo $verificar_137 ?>
 <?php echo $verificar_138 ?>
 <hr>
- 
-  
+ <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+    <tr>
+        <th>Proyecto</th>
+        <td>Sistema de administración remota para máquinas de café</td>
+    </tr>
+
+    <tr>
+        <th>Escenario y contexto</th>
+        <td>
+            Agregar de manera remota un producto adicional a las recetas (productos)
+            de todas las máquinas de café del sistema, que cuenta con 3500 máquinas;
+            el sistema debe permitir agregarlo, interrumpiendo la operación de las
+            máquinas en no más de 2 minutos.
+        </td>
+    </tr>
+
+    <tr>
+        <th>Objetivo del negocio</th>
+        <td>
+            Aumentar el portafolio de productos para ofrecerle más opciones al cliente
+            y tener mayor oportunidad de venta. Minimizar costos operativos.
+        </td>
+    </tr>
+
+    <tr>
+        <th>QA's Relevantes</th>
+        <td>Configurabilidad, disponibilidad</td>
+    </tr>
+
+    <tr>
+        <th>Estímulo</th>
+        <td>Añadir nuevos productos (recetas) sin que implique nuevos ingredientes</td>
+    </tr>
+
+    <tr>
+        <th>Fuente de Estímulo</th>
+        <td>
+            El negocio lanza nuevo producto (bebida de café) para vender en sus máquinas.
+        </td>
+    </tr>
+
+    <tr>
+        <th>Artefacto(s)</th>
+        <td>
+            Componente producto/receta, componente de comunicación entre Máquina de Café
+            y AdminRemota (si lo hay), componente de interfaz de usuario de administración remota.
+        </td>
+    </tr>
+
+    <tr>
+        <th>Respuesta</th>
+        <td>
+            Producto nuevo agregado a las recetas de todas las máquinas de café.
+        </td>
+    </tr>
+
+    <tr>
+        <th>Medida de Respuesta</th>
+        <td>2 minutos (deadline)</td>
+    </tr>
+
+    <tr>
+        <th>Preguntas Relevantes</th>
+        <td></td>
+    </tr>
+
+    <tr>
+        <th>Otros Aspectos</th>
+        <td>
+            Un servidor puede actualizar a máximo 1000 máquinas de café al tiempo,
+            en 1.5 minutos.
+        </td>
+    </tr>
+</table>
+  <p>En el escenario descrito, un patrón de diseño que puede aplicarse en forma
+</p>
+
+
+ <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="11">
+    <br><br>
+ <button type="submit">Enviar</button>
+    <?php echo $verificar_8 ?>
+    <hr>
+    <p>para actualizar las recetas de una nueva bebida en todas las máquinas de café desde el administrador central se denomina</p>
+    <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="11">
+    <p>es aplicable (adaptada al problema) cuando:</p>
+    <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="69">
+    y la solución (adaptada al problema) establece que se debe:
+    <input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="100">
+
+        <br><br>
+ <button type="submit">Enviar</button>
+    <?php echo $verificar_8 ?>
+     <?php echo $verificar_9 ?>
+    <?php echo $verificar_10 ?>
+    <?php echo $verificar_11 ?> 
+    <hr>
+
 </div>
 
 
 
 
 <div class="seccion derecha">
+    <table border="1" cellspacing="0" cellpadding="8" style="border-collapse: collapse; width: 100%;">
+    <tr>
+        <td><strong>PROYECTO:</strong></td>
+        <td>Sistema de Control del MIO</td>
+    </tr>
+
+    <tr>
+        <td><strong>ESCENARIO QAW:</strong></td>
+        <td>
+            En la proyección del SITM-MIO se contará con 3000 buses en la ciudad, y ésta estará dividida en regiones
+            (e.g., norte, sur, oriente y occidente), cada región con su DataCenter.
+            Todos los buses enviarán sus datagramas (datos de los 40 sensores de cada bus) cada 20 segundos al
+            DataCenter que tengan más cercano, en cada momento.
+            Cada datagrama tiene un tipo de evento (accidente, movilidad lenta, etc.).
+            En cada DataCenter se reciben los datagramas en una cola, y cada tipo de datagrama es procesado por un
+            tipo de componente especializado respectivamente.
+            Con esta cantidad de mensajes, eventualmente los DataCenter pueden colapsar o perder datagramas.
+            Es crítico <strong>no perder ninguno</strong> de estos datagramas para mantener una operación con acción
+            oportuna frente a eventualidades de la misma, y lo que implica cada datagrama debe reflejarse
+            <strong>inmediatamente</strong> en el Administrador Centralizado.
+        </td>
+    </tr>
+
+    <tr>
+        <td><strong>META DE NEGOCIO:</strong></td>
+        <td>
+            Maximizar la confiabilidad y disponibilidad de las funciones de los DataCenter para no perder
+            datagramas y cumplir mejor los planes de servicio de operación.
+        </td>
+    </tr>
+</table>
+
+<br>
+
+<table border="1" cellspacing="0" cellpadding="8" style="border-collapse: collapse; width: 100%;">
+    <tr>
+        <td rowspan="8" style="writing-mode: vertical-rl; text-align: center;">
+            <strong>ELEMENTOS</strong>
+        </td>
+        <td><strong>ATRIBUTO DE CALIDAD:</strong></td>
+        <td>Confiabilidad / Concurrencia / Desempeño.</td>
+    </tr>
+
+    <tr>
+        <td><strong>ESTÍMULO:</strong></td>
+        <td>Muchos datagramas llegando a los DataCenter desde los buses, concurrentemente.</td>
+    </tr>
+
+    <tr>
+        <td><strong>FUENTE DE ESTÍMULO:</strong></td>
+        <td>
+            Operación de muchos buses rodando por la ciudad, cumpliendo con sus tareas en el plan de servicio de operación.
+        </td>
+    </tr>
+
+    <tr>
+        <td><strong>MEDIO AMBIENTE:</strong></td>
+        <td>Operación diaria del SITM-MIO.</td>
+    </tr>
+
+    <tr>
+        <td><strong>ARTEFACTOS:</strong></td>
+        <td>
+            Componentes encargados de enviar los datagramas en los buses,
+            componente que recibe los datagramas en los DataCenter.
+        </td>
+    </tr>
+
+    <tr>
+        <td><strong>RESPUESTA:</strong></td>
+        <td>
+            Los DataCenter reciben el 100% de los datagramas (no pierde ninguno)
+            y los procesan rápidamente.
+        </td>
+    </tr>
+
+    <tr>
+        <td><strong>MEDIDA DE LA RESPUESTA:</strong></td>
+        <td>
+            100% de los datagramas recibidos y procesados eficientemente.
+        </td>
+    </tr>
+
+    <tr>
+        <td><strong>PREGUNTAS / Aspectos relacionados:</strong></td>
+        <td>
+            Un nodo de procesamiento puede recibir y procesar simultáneamente
+            1000 datagramas sin perder ninguno.
+        </td>
+    </tr>
+</table>
+
+<p>Indique cúales patrones de diseño combinaría para satisfacer el escenario de QAW, y plantee en nu
+diagrama de deployment cómo los introduciría en su diseñо:</p>
+
+<input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="16">
+<input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="5">
+<input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="21">
+
+<br><br>
+<button type="submit">Enviar</button>
+<?php echo $verificar_12 ?>
+    <?php echo $verificar_13 ?>
+    <?php echo $verificar_14 ?>
+        <hr>
+
+    <p>
+    En los espacios en blanco, escriba todo en minúsculas, nombres en inglés.
+En la generalización del SITM-MIO, para una ciudad grande, se ha dividido la ciudad en 4 regiones: norte, sur, este y oeste. Estas regiones podrían
+cambiar cuando la ciudad crezca.
+    </p>
+
+    <p>
+Para el almacenamiento, se ha dispuesto que cada región tenga su centro de acopio de datos (DataCenter), de modo que los datos de tráfico de los
+BUSES que tansitan por una región deben almacenarse en el DataCenter respectivo, al igual que los datos de las ESTACIONES que pertenecen a dicha
+región.
+    </p>
+
+    <p>El patrón de diseño 
+    <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="8">
+    es aplicable (adaptado al problema) cuando:
+    </p>
+
+    <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="86">;
+    <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="51">,
+    <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="27">,
+    <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="11">
+    <p> 
+</p>
+
+    <p>
+    y la solución (adaptada al problema) establece que se debe:
+    </p>
+    <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="115">
+
+    <button type="submit">Enviar</button>
+     <?php echo $verificar_15 ?>
+    <?php echo $verificar_16 ?>
+    <?php echo $verificar_17 ?>
+    <?php echo $verificar_18 ?>
+    <?php echo $verificar_19 ?> 
+    <?php echo $verificar_20 ?>
+    <hr>
+    <p>Son diferencias entre un patrón de diseño arquitectónico y un patrón de diseño detallado:</p>
     
-     
+    <li>
+<input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>" size="115">,
+    <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="31">
+    </li> 
+
+    <li>
+<input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="125">
+    </li>
+
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_21 ?>
+    <?php echo $verificar_22 ?>
+    <?php echo $verificar_23 ?>
+
+    <hr>
+    <p>
+    Dado el siguiente escenario de QAW, cuáles patrones de diseño combinaría como los más
+adecuados para resolverlo?
+    </p>
+ 
+
+
+<table>
+<tr>
+    <th>Proyecto</th>
+    <td>Sistema de administración remota para máquinas de café</td>
+</tr>
+
+<tr>
+    <th>Escenario y contexto</th>
+    <td>
+        Agregar de manera remota un producto adicional a las recetas (productos) de todas las máquinas de café del sistema, que cuenta con 3500 máquinas; el sistema debe permitir agregarlo, interrumpiendo la operación de las máquinas en no más de 2 minutos.
+    </td>
+</tr>
+
+<tr>
+    <th>Objetivo del negocio</th>
+    <td>
+        Aumentar el portafolio de productos para ofrecerle más opciones al cliente y tener mayor oportunidad de venta. Minimizar costos operativos.
+    </td>
+</tr>
+
+<tr>
+    <th>QA’s Relevantes</th>
+    <td>
+        Configurabilidad, disponibilidad
+    </td>
+</tr>
+
+<tr>
+    <th>Estímulo</th>
+    <td>
+        Añadir nuevos productos (recetas) sin que implique nuevos ingredientes
+    </td>
+</tr>
+
+<tr>
+    <th>Fuente de Estímulo</th>
+    <td>
+        El negocio lanza nuevo producto (bebida de café) para vender en sus máquinas
+    </td>
+</tr>
+
+<tr>
+    <th>Artefacto(s)</th>
+    <td>
+        Componente producto/receta, componente de comunicación entre Máquina de Café y AdminRemota (si lo hay), componente de interfaz de usuario de administración remota.
+    </td>
+</tr>
+
+<tr>
+    <th>Respuesta</th>
+    <td>
+        Producto nuevo agregado a las recetas de todas las máquinas de café.
+    </td>
+</tr>
+
+<tr>
+    <th>Medida de Respuesta</th>
+    <td>
+        2 minutos (deadline)
+    </td>
+</tr>
+
+<tr>
+    <th>Preguntas Relevantes</th>
+    <td>
+        — 
+    </td>
+</tr>
+
+<tr>
+    <th>Otros Aspectos</th>
+    <td>
+        Un servidor puede actualizar a máximo 1000 máquinas de café al tiempo, en 1.5 minutos.
+    </td>
+</tr>
+
+</table>
+
+
+ <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="31">
+<input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="31">
+<input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="31">
+
+<br><br>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_24 ?>
+    <?php echo $verificar_25 ?>
+    <?php echo $verificar_26 ?>
+    <hr>
+    <p>
+    En los espacios en blanco, escriba todo en minúsculas, nombres en inglés.
+Considere el siguiente sistema de software de un avión que usted y su empresa han aceptado desarrollar:
+al
+Hay muchos sensores en los aviones, entre ellos de velocidad, altitud y presión de la cabina. Estos sensores deben estar continuamente enviando datos
+sistema central. Éste debe analizar la situación en cada momento, actualizando inmediatamente las visualizaciones del tablero de control
+correspondientes a los sensores conectados, identificar las situaciones de peligro, y en tal caso, informar a los componentes externos que se encargan
+de tratar estas situaciones (luces de alarma, sonidos de alarma, dispositivo de control de las máscaras de oxígeno, señales de alerta a torres de control
+cercanas).
+En el escenario descrito, el patrón de diseño que duede aplicarse en forma
+    </p>
+    <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="8">
+
+    <p>para resolver el problema dado, se denomina  
+    <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="15">
+y es aplicable (adaptado al problema) cuando:
+</p>
+
+hay 
+<input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="33">
+  en 
+<input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="51">
+  , 
+<input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="54">
+  de 
+<input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="11">
+ <!-- #region -->
+ 
+
+<p>
+y la solución (adaptada al problema) establece que se debe:
+</p>
+    <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="47">
+ , 
+ <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="31">
+  a 
+ <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="47">
+  
+    <br><br>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_27 ?>
+    <?php echo $verificar_28 ?>
+    <?php echo $verificar_29 ?>
+    <?php echo $verificar_30 ?>
+     <?php echo $verificar_31 ?>
+    <?php echo $verificar_32 ?>
+    <?php echo $verificar_33 ?>
+    <?php echo $verificar_34 ?>
+    <?php echo $verificar_35 ?>
+    <hr>
+
+    
+
+    <hr>
+    <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
+    <br>
+    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
+    <button type="submit"   >Mostrar Solución</button>
          
 </div>
 </div>

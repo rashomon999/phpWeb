@@ -1892,9 +1892,9 @@ El patrón Fork/Join está diseñado para
   que 
 <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="11">
   en 
-<input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="21">
+<input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="23">
   y 
-<input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="21">
+<input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="30">
   de 
 <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="23">
  .
@@ -1910,17 +1910,17 @@ Los
 <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="31">
  .
 Sin embargo, 
-<input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="23">
+<input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="31">
   de la 
-<input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="23">
+<input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="18">
  ,
 <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="11">
   una 
-<input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="23">
+<input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="15">
  , o 
-<input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="23">
+<input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="26">
   en 
-<input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="23">
+<input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="18">
  ,
 <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="37">
  .
@@ -1936,9 +1936,9 @@ Usualmente,
   o 
 <input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>" size="18">
   con 
-<input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="22">
+<input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="11">
   el 
-<input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="37">
+<input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="28">
   según 
 <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="26">
  .
@@ -2034,7 +2034,7 @@ El archivo original a ordenar se divide en
 <hr>
 <p>
 Por lo tanto, en este caso, 
-<input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="27">
+<input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="33">
   se 
 <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="8">
   cuando la 

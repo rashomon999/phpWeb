@@ -94,10 +94,10 @@ if ($_POST) {
     $respuesta_71  = 'compartir';
     $respuesta_72  = 'permite';
     $respuesta_73  = 'concurrencia';
-    $respuesta_74  = '171';
-    $respuesta_75  = '190';
-    $respuesta_76  = '209';
-    $respuesta_77  = '228';
+    $respuesta_74  = 'las tareas se clasifican';
+    $respuesta_75  = 'ejecutarse al mismo tiempo';
+    $respuesta_76  = 'aquellas que necesitan esperar';
+    $respuesta_77  = 'que otras tareas finalicen';
     $respuesta_78  = 'mecanismo';
     $respuesta_79  = 'permita compartir datos';
     $respuesta_80  = 'tareas concurrentes';
@@ -334,7 +334,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la séptima pregunta
     $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-    if ($respuesta_18 === 'condicion de terminación normalmente') {  
+    if ($respuesta_18 === 'condicion de terminacion normalmente') {  
         $verificar_18 = "correcto";
     } elseif ($respuesta_18 === '') {
         $verificar_18 = '';
@@ -803,7 +803,7 @@ if ($respuesta_73 === 'concurrencia') {
 }
 
  $respuesta_74 = isset($_POST['respuesta_74']) ? $_POST['respuesta_74'] : '';
-if ($respuesta_74 === '171') { 
+if ($respuesta_74 === 'las tareas se clasifican') { 
     $verificar_74 = "correcto";
 } elseif ($respuesta_74 === '') {
     $verificar_74 = '';
@@ -812,7 +812,7 @@ if ($respuesta_74 === '171') {
 }
 
  $respuesta_75 = isset($_POST['respuesta_75']) ? $_POST['respuesta_75'] : '';
-if ($respuesta_75 === '190') { 
+if ($respuesta_75 === 'ejecutarse al mismo tiempo') { 
     $verificar_75 = "correcto";
 } elseif ($respuesta_75 === '') {
     $verificar_75 = '';
@@ -821,7 +821,7 @@ if ($respuesta_75 === '190') {
 }
 
  $respuesta_76 = isset($_POST['respuesta_76']) ? $_POST['respuesta_76'] : '';
-if ($respuesta_76 === '209') { 
+if ($respuesta_76 === 'aquellas que necesitan esperar') { 
     $verificar_76 = "correcto";
 } elseif ($respuesta_76 === '') {
     $verificar_76 = '';
@@ -830,7 +830,7 @@ if ($respuesta_76 === '209') {
 }
 
  $respuesta_77 = isset($_POST['respuesta_77']) ? $_POST['respuesta_77'] : '';
-if ($respuesta_77 === '228') { 
+if ($respuesta_77 === 'que otras tareas finalicen') { 
     $verificar_77 = "correcto";
 } elseif ($respuesta_77 === '') {
     $verificar_77 = '';
@@ -1696,7 +1696,7 @@ Master / Worker.
 
   <li>
     Cuando 
-    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="21">
+    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="13">
       de 
     <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="21">
      , 
@@ -1757,11 +1757,11 @@ Este escenario describe cómo finaliza el patrón de diseño Master / Worker.
 
   <li>
     La 
-    <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="29">
+    <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="33">
       se 
     <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="5">
       cuando 
-    <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="21">
+    <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="28">
      ; sin embargo, existen 
     <input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>" size="29">
       puede
@@ -1880,70 +1880,70 @@ prefieren describir este comportamiento como un patrón de diseño completamente
 <input type="text" name="respuesta_24"
   value="<?php echo $respuesta_24; ?>"
   style="position:absolute; left:15.9%; top:3.6%; width:12.4%; height:7.6%;
-         font-size:9px; padding:1px 3px; border:1px solid #aaa;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
          background:#fffde7; box-sizing:border-box;"/>
 
 <!-- respuesta_25: cabecera Worker -->
 <input type="text" name="respuesta_25"
   value="<?php echo $respuesta_25; ?>"
   style="position:absolute; left:68.5%; top:3.6%; width:12.4%; height:7.6%;
-         font-size:9px; padding:1px 3px; border:1px solid #aaa;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
          background:#fffde7; box-sizing:border-box;"/>
 
 <!-- respuesta_26: create_tasks() -->
 <input type="text" name="respuesta_26"
   value="<?php echo $respuesta_26; ?>"
   style="position:absolute; left:25%; top:20%; width:22%; height:4%;
-         font-size:9px; padding:1px 3px; border:1px solid #aaa;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
          background:#fffde7; box-sizing:border-box;"/>
 
 <!-- respuesta_27: launch_workers() -->
 <input type="text" name="respuesta_27"
   value="<?php echo $respuesta_27; ?>"
   style="position:absolute; left:25%; top:29%; width:22%; height:4%;
-         font-size:9px; padding:1px 3px; border:1px solid #aaa;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
          background:#fffde7; box-sizing:border-box;"/>
 
 <!-- respuesta_28: request_task() Worker self-call -->
 <input type="text" name="respuesta_28"
   value="<?php echo $respuesta_28; ?>"
   style="position:absolute; left:77.6%; top:39%; width:20%; height:4%;
-         font-size:9px; padding:1px 3px; border:1px solid #aaa;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
          background:#fffde7; box-sizing:border-box;"/>
 
 <!-- respuesta_29: getTask() Worker→Master -->
 <input type="text" name="respuesta_29"
   value="<?php echo $respuesta_29; ?>"
   style="position:absolute; left:40%; top:47%; width:16%; height:4%;
-         font-size:9px; padding:1px 3px; border:1px solid #aaa;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
          background:#fffde7; box-sizing:border-box;"/>
 
 <!-- respuesta_30: process_task() Worker self-call -->
 <input type="text" name="respuesta_30"
   value="<?php echo $respuesta_30; ?>"
   style="position:absolute; left:77.6%; top:53%; width:20%; height:4%;
-         font-size:9px; padding:1px 3px; border:1px solid #aaa;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
          background:#fffde7; box-sizing:border-box;"/>
 
 <!-- respuesta_31: addPartialResult(Object) -->
 <input type="text" name="respuesta_31"
   value="<?php echo $respuesta_31; ?>"
   style="position:absolute; left:33%; top:63%; width:28%; height:4%;
-         font-size:9px; padding:1px 3px; border:1px solid #aaa;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
          background:#fffde7; box-sizing:border-box;"/>
 
 <!-- respuesta_32: processPartialResult() -->
 <input type="text" name="respuesta_32"
   value="<?php echo $respuesta_32; ?>"
   style="position:absolute; left:26%; top:75%; width:26%; height:4%;
-         font-size:9px; padding:1px 3px; border:1px solid #aaa;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
          background:#fffde7; box-sizing:border-box;"/>
 
 <!-- respuesta_33: shutdown_workers() -->
 <input type="text" name="respuesta_33"
   value="<?php echo $respuesta_33; ?>"
   style="position:absolute; left:26%; top:84%; width:26%; height:4%;
-         font-size:9px; padding:1px 3px; border:1px solid #aaa;
+         font-size:14px; padding:1px 3px; border:1px solid #aaa;
          background:#fffde7; box-sizing:border-box;"/>
 
  
@@ -2040,7 +2040,7 @@ El patrón de diseño Separable Dependencies soporta problemas donde estos desaf
 pueden 
 <input type="text" name="respuesta_53" value="<?php echo $respuesta_53; ?>" size="20">
  , es decir, 
-<input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>" size="33">
+<input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>" size="28">
   del 
 <input type="text" name="respuesta_55" value="<?php echo $respuesta_55; ?>" size="27">
  , 
@@ -2088,19 +2088,19 @@ de
 
 <ul>
   <li>
-    <input type="text" name="respuesta_60" value="<?php echo $respuesta_60; ?>" size="21">
+    <input type="text" name="respuesta_60" value="<?php echo $respuesta_60; ?>" size="15">
       de las 
-    <input type="text" name="respuesta_61" value="<?php echo $respuesta_61; ?>" size="21">
+    <input type="text" name="respuesta_61" value="<?php echo $respuesta_61; ?>" size="29">
      , y 
-    <input type="text" name="respuesta_62" value="<?php echo $respuesta_62; ?>" size="21">
+    <input type="text" name="respuesta_62" value="<?php echo $respuesta_62; ?>" size="41">
       (
-        <input type="text" name="respuesta_63" value="<?php echo $respuesta_63; ?>" size="21">
+        <input type="text" name="respuesta_63" value="<?php echo $respuesta_63; ?>" size="12">
        ).
   </li>
 
   <li>
     El 
-    <input type="text" name="respuesta_64" value="<?php echo $respuesta_64; ?>" size="21">
+    <input type="text" name="respuesta_64" value="<?php echo $respuesta_64; ?>" size="27">
       mediante la 
     <input type="text" name="respuesta_65" value="<?php echo $respuesta_65; ?>" size="21">
      
@@ -2132,16 +2132,16 @@ de
 
 <p>
 Primero, 
-<input type="text" name="respuesta_74" value="<?php echo $respuesta_73; ?>" size="8">
-las tareas se clasifican de acuerdo con sus dependencias:
+<input type="text" name="respuesta_74" value="<?php echo $respuesta_74; ?>" size="19">
+  de acuerdo con sus dependencias:
 las que pueden 
-<input type="text" name="respuesta_75" value="<?php echo $respuesta_73; ?>" size="8">
-ejecutarse al mismo tiempo y 
-<input type="text" name="respuesta_76" value="<?php echo $respuesta_73; ?>" size="8">
-aquellas que necesitan esperar
+<input type="text" name="respuesta_75" value="<?php echo $respuesta_75; ?>" size="23">
+  y 
+<input type="text" name="respuesta_76" value="<?php echo $respuesta_76; ?>" size="25">
+ 
 a 
-<input type="text" name="respuesta_77" value="<?php echo $respuesta_73; ?>" size="8">
-que otras tareas finalicen.
+<input type="text" name="respuesta_77" value="<?php echo $respuesta_77; ?>" size="23">
+ .
 </p>
 
 <p>
@@ -2150,7 +2150,7 @@ Segundo, se define un
   que 
 <input type="text" name="respuesta_79" value="<?php echo $respuesta_79; ?>" size="21">
   entre 
-<input type="text" name="respuesta_80" value="<?php echo $respuesta_80; ?>" size="8">
+<input type="text" name="respuesta_80" value="<?php echo $respuesta_80; ?>" size="16">
 (en este caso, 
 <input type="text" name="respuesta_81" value="<?php echo $respuesta_81; ?>" size="18">
  ).
@@ -2158,7 +2158,7 @@ Segundo, se define un
 
 <p>
 Por supuesto, 
-<input type="text" name="respuesta_82" value="<?php echo $respuesta_82; ?>" size="16">
+<input type="text" name="respuesta_82" value="<?php echo $respuesta_82; ?>" size="19">
   admiten soluciones con estas características.
 </p>
 
@@ -2274,181 +2274,134 @@ Por supuesto,
  
   <!-- respuesta_83 : "Master" — cabecera Master (rect y=20..56, cx=200)
        left=(200-65)/680=19.9%  top=20/480=4.2%  w=130/680=19.1% h=36/480=7.5% -->
-  <input type="text" name="respuesta_83"
-         value="<?php echo htmlspecialchars($respuesta_83); ?>"
-        
-         style="position:absolute; left:19.9%; top:4.2%; width:19.1%; height:7.5%;
-                font-size:10px; font-weight:bold; padding:1px 4px;
-                border:1px solid #aaa; background:#fffde7; box-sizing:border-box;
-                text-align:center;"/>
- 
-  <!-- respuesta_84 : "-queue: Queue <<Task>>"   y≈58..72 → top≈57/480=11.9% -->
-  <input type="text" name="respuesta_84"
-         value="<?php echo htmlspecialchars($respuesta_84); ?>"
-        
-         style="position:absolute; left:4.4%; top:11.9%; width:50%; height:5.2%;
-                font-size:9px; padding:1px 3px; border:1px solid #aaa;
-                background:#fffde7; box-sizing:border-box;"/>
- 
-  <!-- respuesta_85 : "-globalResult: DataMergedStructure"   y≈73..88 → top≈73/480=15.2% -->
-  <input type="text" name="respuesta_85"
-         value="<?php echo htmlspecialchars($respuesta_85); ?>"
-        
-         style="position:absolute; left:4.4%; top:15.2%; width:50%; height:5.2%;
-                font-size:9px; padding:1px 3px; border:1px solid #aaa;
-                background:#fffde7; box-sizing:border-box;"/>
- 
-  <!-- respuesta_86 : "-workers: ThreadPool"   y≈89..104 → top≈89/480=18.5% -->
-  <input type="text" name="respuesta_86"
-         value="<?php echo htmlspecialchars($respuesta_86); ?>"
-        
-         style="position:absolute; left:4.4%; top:18.5%; width:50%; height:5.2%;
-                font-size:9px; padding:1px 3px; border:1px solid #aaa;
-                background:#fffde7; box-sizing:border-box;"/>
- 
-  <!-- respuesta_87 : "+create_tasks(): void"   y≈105..120 → top≈105/480=21.9% -->
-  <input type="text" name="respuesta_87"
-         value="<?php echo htmlspecialchars($respuesta_87); ?>"
-        
-         style="position:absolute; left:4.4%; top:21.9%; width:50%; height:5.2%;
-                font-size:9px; padding:1px 3px; border:1px solid #aaa;
-                background:#fffde7; box-sizing:border-box;"/>
- 
-  <!-- respuesta_88 : "+launch_workers(): void"   y≈121..136 → top≈121/480=25.2% -->
-  <input type="text" name="respuesta_88"
-         value="<?php echo htmlspecialchars($respuesta_88); ?>"
-        
-         style="position:absolute; left:4.4%; top:25.2%; width:50%; height:5.2%;
-                font-size:9px; padding:1px 3px; border:1px solid #aaa;
-                background:#fffde7; box-sizing:border-box;"/>
- 
-  <!-- respuesta_89 : "+separateDependencies(): void"   y≈137..152 → top≈137/480=28.5% -->
-  <input type="text" name="respuesta_89"
-         value="<?php echo htmlspecialchars($respuesta_89); ?>"
-        
-         style="position:absolute; left:4.4%; top:28.5%; width:50%; height:5.2%;
-                font-size:9px; padding:1px 3px; border:1px solid #aaa;
-                background:#fffde7; box-sizing:border-box;"/>
- 
-  <!-- respuesta_90 : "+getTask(): Task"   y≈153..168 → top≈153/480=31.9% -->
-  <input type="text" name="respuesta_90"
-         value="<?php echo htmlspecialchars($respuesta_90); ?>"
-        
-         style="position:absolute; left:4.4%; top:31.9%; width:50%; height:5.2%;
-                font-size:9px; padding:1px 3px; border:1px solid #aaa;
-                background:#fffde7; box-sizing:border-box;"/>
- 
-  <!-- respuesta_91 : "+addPartialResult(Object): void"   y≈169..184 → top≈169/480=35.2% -->
-  <input type="text" name="respuesta_91"
-         value="<?php echo htmlspecialchars($respuesta_91); ?>"
-        
-         style="position:absolute; left:4.4%; top:35.2%; width:50%; height:5.2%;
-                font-size:9px; padding:1px 3px; border:1px solid #aaa;
-                background:#fffde7; box-sizing:border-box;"/>
- 
-  <!-- respuesta_92 : "+processResults(): void"   y≈185..200 → top≈185/480=38.5% -->
-  <input type="text" name="respuesta_92"
-         value="<?php echo htmlspecialchars($respuesta_92); ?>"
-        
-         style="position:absolute; left:4.4%; top:38.5%; width:50%; height:5.2%;
-                font-size:9px; padding:1px 3px; border:1px solid #aaa;
-                background:#fffde7; box-sizing:border-box;"/>
- 
-  <!-- respuesta_93 : "+shutdown_workers(): void"   y≈201..216 → top≈201/480=41.9% -->
-  <input type="text" name="respuesta_93"
-         value="<?php echo htmlspecialchars($respuesta_93); ?>"
-        
-         style="position:absolute; left:4.4%; top:41.9%; width:50%; height:5.2%;
-                font-size:9px; padding:1px 3px; border:1px solid #aaa;
-                background:#fffde7; box-sizing:border-box;"/>
- 
-  <!-- respuesta_94 : "Task" — cabecera Task (rect x=480..658, y=110..144)
-       left=(480+89-44)/680=77.2%  top=110/480=22.9%  w=88/680=12.9% h=34/480=7.1% -->
-  <input type="text" name="respuesta_94"
-         value="<?php echo htmlspecialchars($respuesta_94); ?>"
-        
-         style="position:absolute; left:74.4%; top:22.9%; width:18%; height:7.1%;
-                font-size:10px; font-weight:bold; padding:1px 4px;
-                border:1px solid #aaa; background:#fffde7; box-sizing:border-box;
-                text-align:center;"/>
- 
-  <!-- respuesta_95 : "-data: Data"   y≈145..160 → top≈145/480=30.2% -->
-  <input type="text" name="respuesta_95"
-         value="<?php echo htmlspecialchars($respuesta_95); ?>"
-        
-         style="position:absolute; left:71.3%; top:30.2%; width:25%; height:5.2%;
-                font-size:9px; padding:1px 3px; border:1px solid #aaa;
-                background:#fffde7; box-sizing:border-box;"/>
- 
-  <!-- respuesta_96 : "+createTask(Data): Task"   y≈169..186 → top≈169/480=35.2% -->
-  <input type="text" name="respuesta_96"
-         value="<?php echo htmlspecialchars($respuesta_96); ?>"
-        
-         style="position:absolute; left:71.3%; top:35.2%; width:25%; height:5.2%;
-                font-size:9px; padding:1px 3px; border:1px solid #aaa;
-                background:#fffde7; box-sizing:border-box;"/>
- 
-  <!-- respuesta_97 : "1" lado Master en línea Master→Task
-       SVG: x≈378, y≈143 → left=378/680=55.6%  top=137/480=28.5%  w pequeño -->
-  <input type="text" name="respuesta_97"
-         value="<?php echo htmlspecialchars($respuesta_97); ?>"
-        
-         style="position:absolute; left:54.7%; top:27.1%; width:3.5%; height:4.6%;
-                font-size:9px; padding:1px 2px; border:1px solid #aaa;
-                background:#fff9c4; box-sizing:border-box; text-align:center;"/>
- 
-  <!-- respuesta_98 : "1..*" lado Task en línea Master→Task
-       SVG: x≈452, y≈143 → left=452/680=66.5%  top=137/480=28.5% -->
-  <input type="text" name="respuesta_98"
-         value="<?php echo htmlspecialchars($respuesta_98); ?>"
-        
-         style="position:absolute; left:65.6%; top:27.1%; width:4.4%; height:4.6%;
-                font-size:9px; padding:1px 2px; border:1px solid #aaa;
-                background:#fff9c4; box-sizing:border-box; text-align:center;"/>
- 
-  <!-- respuesta_99 : "Worker" — cabecera Worker (rect x=120..360, y=370..404)
-       cx=240 → left=(240-60)/680=26.5%  top=370/480=77.1%  w=120/680=17.6% h=34/480=7.1% -->
-  <input type="text" name="respuesta_99"
-         value="<?php echo htmlspecialchars($respuesta_99); ?>"
-        
-         style="position:absolute; left:23.5%; top:77.1%; width:17.6%; height:7.1%;
-                font-size:10px; font-weight:bold; padding:1px 4px;
-                border:1px solid #aaa; background:#fffde7; box-sizing:border-box;
-                text-align:center;"/>
- 
-  <!-- respuesta_100 : "-requestTask(): Task"   y≈405..420 → top≈405/480=84.4% -->
-  <input type="text" name="respuesta_100"
-         value="<?php echo htmlspecialchars($respuesta_100); ?>"
-        
-         style="position:absolute; left:17.6%; top:84.4%; width:35%; height:5.2%;
-                font-size:9px; padding:1px 3px; border:1px solid #aaa;
-                background:#fffde7; box-sizing:border-box;"/>
- 
-  <!-- respuesta_101 : "+processTask(Task): void"   y≈421..436 → top≈421/480=87.7% -->
-  <input type="text" name="respuesta_101"
-         value="<?php echo htmlspecialchars($respuesta_101); ?>"
-        
-         style="position:absolute; left:17.6%; top:87.7%; width:35%; height:5.2%;
-                font-size:9px; padding:1px 3px; border:1px solid #aaa;
-                background:#fffde7; box-sizing:border-box;"/>
- 
-  <!-- respuesta_102 : "1" lado Master en línea Master→Worker
-       SVG: x≈206, y≈296 → left=206/680=30.3%  top=289/480=60.2% -->
-  <input type="text" name="respuesta_102"
-         value="<?php echo htmlspecialchars($respuesta_102); ?>"
-        
-         style="position:absolute; left:30.3%; top:59.2%; width:3.5%; height:4.6%;
-                font-size:9px; padding:1px 2px; border:1px solid #aaa;
-                background:#fff9c4; box-sizing:border-box; text-align:center;"/>
- 
-  <!-- respuesta_103 : "1..*" lado Worker en línea Master→Worker
-       SVG: x≈206, y≈360 → left=206/680=30.3%  top=353/480=73.5% -->
-  <input type="text" name="respuesta_103"
-         value="<?php echo htmlspecialchars($respuesta_103); ?>"
-        
-         style="position:absolute; left:30.3%; top:72.5%; width:4.4%; height:4.6%;
-                font-size:9px; padding:1px 2px; border:1px solid #aaa;
-                background:#fff9c4; box-sizing:border-box; text-align:center;"/>
+ <input type="text" name="respuesta_83"
+       value="<?php echo htmlspecialchars($respuesta_83); ?>"
+       style="position:absolute; left:19.9%; top:4.2%; width:19.1%; height:7.1%;
+              font-size:14px; font-weight:bold; padding:1px 4px;
+              border:1px solid #aaa; background:#fffde7; box-sizing:border-box;
+              text-align:center;"/>
+
+<input type="text" name="respuesta_84"
+       value="<?php echo htmlspecialchars($respuesta_84); ?>"
+       style="position:absolute; left:4.4%; top:11.9%; width:50%; height:4.5%;
+              font-size:14px; padding:1px 3px; border:1px solid #aaa;
+              background:#fffde7; box-sizing:border-box;"/>
+
+<input type="text" name="respuesta_85"
+       value="<?php echo htmlspecialchars($respuesta_85); ?>"
+       style="position:absolute; left:4.4%; top:15.5%; width:50%; height:4.5%;
+              font-size:14px; padding:1px 3px; border:1px solid #aaa;
+              background:#fffde7; box-sizing:border-box;"/>
+
+<input type="text" name="respuesta_86"
+       value="<?php echo htmlspecialchars($respuesta_86); ?>"
+       style="position:absolute; left:4.4%; top:20%; width:50%; height:4.5%;
+              font-size:14px; padding:1px 3px; border:1px solid #aaa;
+              background:#fffde7; box-sizing:border-box;"/>
+
+<input type="text" name="respuesta_87"
+       value="<?php echo htmlspecialchars($respuesta_87); ?>"
+       style="position:absolute; left:4.4%; top:24%; width:50%; height:4.5%;
+              font-size:14px; padding:1px 3px; border:1px solid #aaa;
+              background:#fffde7; box-sizing:border-box;"/>
+
+<input type="text" name="respuesta_88"
+       value="<?php echo htmlspecialchars($respuesta_88); ?>"
+       style="position:absolute; left:4.4%; top:29%; width:50%; height:4.5%;
+              font-size:14px; padding:1px 3px; border:1px solid #aaa;
+              background:#fffde7; box-sizing:border-box;"/>
+
+<input type="text" name="respuesta_89"
+       value="<?php echo htmlspecialchars($respuesta_89); ?>"
+       style="position:absolute; left:4.4%; top:34%; width:50%; height:4.5%;
+              font-size:14px; padding:1px 3px; border:1px solid #aaa;
+              background:#fffde7; box-sizing:border-box;"/>
+
+<input type="text" name="respuesta_90"
+       value="<?php echo htmlspecialchars($respuesta_90); ?>"
+       style="position:absolute; left:4.4%; top:39%; width:50%; height:4.5%;
+              font-size:14px; padding:1px 3px; border:1px solid #aaa;
+              background:#fffde7; box-sizing:border-box;"/>
+
+<input type="text" name="respuesta_91"
+       value="<?php echo htmlspecialchars($respuesta_91); ?>"
+       style="position:absolute; left:4.4%; top:44%; width:50%; height:4.5%;
+              font-size:14px; padding:1px 3px; border:1px solid #aaa;
+              background:#fffde7; box-sizing:border-box;"/>
+
+<input type="text" name="respuesta_92"
+       value="<?php echo htmlspecialchars($respuesta_92); ?>"
+       style="position:absolute; left:4.4%; top:49%; width:50%; height:4.5%;
+              font-size:14px; padding:1px 3px; border:1px solid #aaa;
+              background:#fffde7; box-sizing:border-box;"/>
+
+<input type="text" name="respuesta_93"
+       value="<?php echo htmlspecialchars($respuesta_93); ?>"
+       style="position:absolute; left:4.4%; top:54%; width:50%; height:4.5%;
+              font-size:14px; padding:1px 3px; border:1px solid #aaa;
+              background:#fffde7; box-sizing:border-box;"/>
+
+<input type="text" name="respuesta_94"
+       value="<?php echo htmlspecialchars($respuesta_94); ?>"
+       style="position:absolute; left:74.4%; top:22.9%; width:18%; height:7.1%;
+              font-size:14px; font-weight:bold; padding:1px 4px;
+              border:1px solid #aaa; background:#fffde7; box-sizing:border-box;
+              text-align:center;"/>
+
+<input type="text" name="respuesta_95"
+       value="<?php echo htmlspecialchars($respuesta_95); ?>"
+       style="position:absolute; left:71.3%; top:30.2%; width:25%; height:5.2%;
+              font-size:14px; padding:1px 3px; border:1px solid #aaa;
+              background:#fffde7; box-sizing:border-box;"/>
+
+<input type="text" name="respuesta_96"
+       value="<?php echo htmlspecialchars($respuesta_96); ?>"
+       style="position:absolute; left:71.3%; top:35.2%; width:25%; height:5.2%;
+              font-size:14px; padding:1px 3px; border:1px solid #aaa;
+              background:#fffde7; box-sizing:border-box;"/>
+
+<input type="text" name="respuesta_97"
+       value="<?php echo htmlspecialchars($respuesta_97); ?>"
+       style="position:absolute; left:54.7%; top:27.1%; width:3.5%; height:4.6%;
+              font-size:14px; padding:1px 2px; border:1px solid #aaa;
+              background:#fff9c4; box-sizing:border-box; text-align:center;"/>
+
+<input type="text" name="respuesta_98"
+       value="<?php echo htmlspecialchars($respuesta_98); ?>"
+       style="position:absolute; left:65.6%; top:27.1%; width:4.4%; height:4.6%;
+              font-size:14px; padding:1px 2px; border:1px solid #aaa;
+              background:#fff9c4; box-sizing:border-box; text-align:center;"/>
+
+<input type="text" name="respuesta_99"
+       value="<?php echo htmlspecialchars($respuesta_99); ?>"
+       style="position:absolute; left:23.5%; top:77.1%; width:17.6%; height:7.1%;
+              font-size:14px; font-weight:bold; padding:1px 4px;
+              border:1px solid #aaa; background:#fffde7; box-sizing:border-box;
+              text-align:center;"/>
+
+<input type="text" name="respuesta_100"
+       value="<?php echo htmlspecialchars($respuesta_100); ?>"
+       style="position:absolute; left:17.6%; top:84.4%; width:35%; height:5.2%;
+              font-size:14px; padding:1px 3px; border:1px solid #aaa;
+              background:#fffde7; box-sizing:border-box;"/>
+
+<input type="text" name="respuesta_101"
+       value="<?php echo htmlspecialchars($respuesta_101); ?>"
+       style="position:absolute; left:17.6%; top:89.7%; width:35%; height:5.2%;
+              font-size:14px; padding:1px 3px; border:1px solid #aaa;
+              background:#fffde7; box-sizing:border-box;"/>
+
+<input type="text" name="respuesta_102"
+       value="<?php echo htmlspecialchars($respuesta_102); ?>"
+       style="position:absolute; left:30.3%; top:59.2%; width:3.5%; height:4.6%;
+              font-size:14px; padding:1px 2px; border:1px solid #aaa;
+              background:#fff9c4; box-sizing:border-box; text-align:center;"/>
+
+<input type="text" name="respuesta_103"
+       value="<?php echo htmlspecialchars($respuesta_103); ?>"
+       style="position:absolute; left:30.3%; top:72.5%; width:4.4%; height:4.6%;
+              font-size:14px; padding:1px 2px; border:1px solid #aaa;
+              background:#fff9c4; box-sizing:border-box; text-align:center;"/>
  
 </div><!-- /.wrapper -->
 
@@ -2484,7 +2437,7 @@ Por supuesto,
  </h5>
 <p>
 Esta clase tiene las 
-<input type="text" name="respuesta_105" value="<?php echo $respuesta_105; ?>" size="16">
+<input type="text" name="respuesta_105" value="<?php echo $respuesta_105; ?>" size="21">
   que el master en el patrón de diseño
 Master / Worker (de la Sección 3.2.7):
 </p>
@@ -2499,7 +2452,7 @@ y recopila los resultados de los workers para producir el resultado final.”
 
 <p>
 En este patrón, esta clase tiene un 
-<input type="text" name="respuesta_106" value="<?php echo $respuesta_106; ?>" size="16">
+<input type="text" name="respuesta_106" value="<?php echo $respuesta_106; ?>" size="26">
  .
 El Master debe 
 <input type="text" name="respuesta_107" value="<?php echo $respuesta_107; ?>" size="14">
@@ -2513,7 +2466,7 @@ El Master debe
  </h5>
 <p>
 Esta clase tiene las 
-<input type="text" name="respuesta_110" value="<?php echo $respuesta_110; ?>" size="15">
+<input type="text" name="respuesta_110" value="<?php echo $respuesta_110; ?>" size="22">
   que el worker en el patrón de diseño
 Master / Worker (de la Sección 3.2.7):
 </p>
@@ -2531,9 +2484,9 @@ parciales del cálculo al master.”
 Es 
 <input type="text" name="respuesta_112" value="<?php echo $respuesta_112; ?>" size="8">
   de 
-<input type="text" name="respuesta_113" value="<?php echo $respuesta_113; ?>" size="15">
+<input type="text" name="respuesta_113" value="<?php echo $respuesta_113; ?>" size="10">
   las 
-<input type="text" name="respuesta_114" value="<?php echo $respuesta_114; ?>" size="8">
+<input type="text" name="respuesta_114" value="<?php echo $respuesta_114; ?>" size="26">
   en la 
 <input type="text" name="respuesta_115" value="<?php echo $respuesta_115; ?>" size="8">
   de los 
@@ -2541,7 +2494,7 @@ Es
   para 
 <input type="text" name="respuesta_117" value="<?php echo $respuesta_117; ?>" size="21">
  , 
-<input type="text" name="respuesta_118" value="<?php echo $respuesta_118; ?>" size="14">
+<input type="text" name="respuesta_118" value="<?php echo $respuesta_118; ?>" size="18">
   por 
 <input type="text" name="respuesta_119" value="<?php echo $respuesta_119; ?>" size="11">
  .
@@ -2600,12 +2553,12 @@ En el momento de la creación, las tareas deben ejecutarse con
 
 <ul>
   <li>
-    <input type="text" name="respuesta_124" value="<?php echo $respuesta_124; ?>" size="21">
+    <input type="text" name="respuesta_124" value="<?php echo $respuesta_124; ?>" size="29">
      .
   </li>
 
   <li>
-    <input type="text" name="respuesta_125" value="<?php echo $respuesta_125; ?>" size="21">
+    <input type="text" name="respuesta_125" value="<?php echo $respuesta_125; ?>" size="24">
      .
   </li>
 </ul>
@@ -2824,7 +2777,9 @@ El Master
 <?php echo $verificar_131 ?>
 <?php echo $verificar_132 ?>
 <?php echo $verificar_133 ?>
-    <hr>
+<?php echo $verificar_134 ?>
+
+<hr>
     <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
     <br>
     <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
