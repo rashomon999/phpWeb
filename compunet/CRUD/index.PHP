@@ -71,7 +71,8 @@ if ($_POST) {
         $respuesta_42 = 'console.error("Error deleting game:", error);';
         $respuesta_43 = 'throw error;';
         $respuesta_44 = '}';
-        $respuesta_45 = '}';
+        $respuesta_45 = '}'; 
+         $respuesta_46 = 'src/services/games.service.js'; 
         
         // Marcar todas como correctas
     for ($i = 1; $i <= 122; $i++) {
@@ -354,7 +355,7 @@ if ($_POST) {
     }
 
     $respuesta_31 = isset($_POST['respuesta_31']) ? $_POST['respuesta_31'] : '';
-    if ($respuesta_31 === 'const response = await axiosClient.put(`/rest/games/${id}`, gameData);') {
+    if ($respuesta_31 === 'const response = await axiosClient.put("/rest/games/${id}", gameData);') {
         $verificar_31 = "correcto";
     } elseif ($respuesta_31 === '') {
         $verificar_31 = '';
@@ -435,7 +436,7 @@ if ($_POST) {
     }
 
     $respuesta_40 = isset($_POST['respuesta_40']) ? $_POST['respuesta_40'] : '';
-    if ($respuesta_40 === 'await axiosClient.delete(`/rest/games/${id}`);') {
+    if ($respuesta_40 === 'await axiosClient.delete("/rest/games/${id}");') {
         $verificar_40 = "correcto";
     } elseif ($respuesta_40 === '') {
         $verificar_40 = '';
@@ -490,7 +491,7 @@ if ($_POST) {
 
 
     $respuesta_46 = isset($_POST['respuesta_46']) ? $_POST['respuesta_46'] : '';
-    if ($respuesta_46 === '51') { 
+    if ($respuesta_46 === 'src/services/games.service.js') { 
         $verificar_46 = "correcto";
     } elseif ($respuesta_46 === '') {
     $verificar_46 = '';
@@ -1484,6 +1485,11 @@ function ocultarMensaje4() {
 
     
 <div class="seccion izquierda"> 
+
+Esto se hace en: 
+<input type="text" name="respuesta_46" value="<?php echo htmlspecialchars($respuesta_46); ?>" size="27">
+
+
 <p class="subtitulo">Completa los espacios en blanco con el código correcto</p>
  
     <h2>Import</h2>
@@ -1492,6 +1498,7 @@ function ocultarMensaje4() {
 </pre>
     <button type="submit">Verificar</button>
         <?php echo $verificar_1 ?>
+        <?php echo $verificar_46 ?>
 
 
     <hr>
@@ -1564,7 +1571,7 @@ function ocultarMensaje4() {
 <div class="seccion derecha">
     
  
-  <img src="../../img/guia_460.png" alt="" width="800">
+  <img src="../../img/guia_461.png" alt="" width="800">
     <h2>createGame</h2>
     <pre>
 <input type="text" name="respuesta_20" value="<?php echo htmlspecialchars($respuesta_20); ?>" size="46">
@@ -1589,7 +1596,7 @@ function ocultarMensaje4() {
     <?php echo $verificar_28 ?>
  <hr>
 
-  <img src="../../img/guia_461.png" alt="" width="800">
+  <img src="../../img/guia_462.png" alt="" width="800">
  <h2>updateGame</h2>
     <pre>
 <input type="text" name="respuesta_29" value="<?php echo htmlspecialchars($respuesta_29); ?>" size="50">
@@ -1615,7 +1622,7 @@ function ocultarMensaje4() {
  
 
 <hr>
-  <img src="../../img/guia_462.png" alt="" width="800">
+  <img src="../../img/guia_463.png" alt="" width="800">
   <h2>deleteGame</h2>
     <pre>
 <input type="text" name="respuesta_38" value="<?php echo htmlspecialchars($respuesta_38); ?>" size="44">

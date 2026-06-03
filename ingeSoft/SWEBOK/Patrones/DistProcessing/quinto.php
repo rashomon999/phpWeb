@@ -1736,7 +1736,7 @@ Este patrón debe utilizarse cuando el problema puede separarse en tres partes:
   </li>
 
   <li>
-    <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="25">
+    <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="36">
      , del cual puede 
     <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="15">
      .
@@ -1745,7 +1745,7 @@ Este patrón debe utilizarse cuando el problema puede separarse en tres partes:
   <li>
     <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="16">
       de 
-    <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="21">
+    <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="31">
      .
   </li>
 </ul>
@@ -1771,7 +1771,7 @@ Este patrón debe utilizarse cuando el problema puede separarse en tres partes:
 Estos objetos se 
 <input type="text" name="respuesta_38" value="<?php echo $respuesta_38; ?>" size="8">
   en una 
-<input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="21">
+<input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="35">
 ,
 donde 
 <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="8">
@@ -1814,7 +1814,7 @@ donde
 Las 
 <input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>" size="8">
   que 
-<input type="text" name="respuesta_45" value="<?php echo $respuesta_45; ?>" size="15">
+<input type="text" name="respuesta_45" value="<?php echo $respuesta_45; ?>" size="21">
   de manera 
 <input type="text" name="respuesta_46" value="<?php echo $respuesta_46; ?>" size="8">
   (es decir, 
@@ -1830,9 +1830,9 @@ En ocasiones, los objetos
   son 
 <input type="text" name="respuesta_50" value="<?php echo $respuesta_50; ?>" size="8">
   cuando 
-<input type="text" name="respuesta_51" value="<?php echo $respuesta_51; ?>" size="16">
+<input type="text" name="respuesta_51" value="<?php echo $respuesta_51; ?>" size="19">
 están 
-<input type="text" name="respuesta_52" value="<?php echo $respuesta_52; ?>" size="14">
+<input type="text" name="respuesta_52" value="<?php echo $respuesta_52; ?>" size="18">
   otros 
 <input type="text" name="respuesta_53" value="<?php echo $respuesta_53; ?>" size="8">
  .
@@ -1846,7 +1846,7 @@ En esos casos, los objetos Producer se
   mientras
 <input type="text" name="respuesta_56" value="<?php echo $respuesta_56; ?>" size="8">
   que los 
-<input type="text" name="respuesta_57" value="<?php echo $respuesta_57; ?>" size="8">
+<input type="text" name="respuesta_57" value="<?php echo $respuesta_57; ?>" size="11">
   con su 
 <input type="text" name="respuesta_58" value="<?php echo $respuesta_58; ?>" size="16">
  .
@@ -1860,7 +1860,7 @@ En esos casos, los objetos Producer se
 <p>
 <input type="text" name="respuesta_60" value="<?php echo $respuesta_60; ?>" size="8">
   los 
-<input type="text" name="respuesta_61" value="<?php echo $respuesta_61; ?>" size="16">
+<input type="text" name="respuesta_61" value="<?php echo $respuesta_61; ?>" size="21">
   por los 
 <input type="text" name="respuesta_62" value="<?php echo $respuesta_62; ?>" size="16">
   que un 
@@ -1868,9 +1868,9 @@ En esos casos, los objetos Producer se
   los 
 <input type="text" name="respuesta_64" value="<?php echo $respuesta_64; ?>" size="16">
   (
-<input type="text" name="respuesta_65" value="<?php echo $respuesta_65; ?>" size="16">    
+<input type="text" name="respuesta_65" value="<?php echo $respuesta_65; ?>" size="9">    
  ) para 
-<input type="text" name="respuesta_66" value="<?php echo $respuesta_66; ?>" size="16">
+<input type="text" name="respuesta_66" value="<?php echo $respuesta_66; ?>" size="9">
  .
 </p>
 
@@ -1881,7 +1881,7 @@ Si la cola alcanza su
 <input type="text" name="respuesta_68" value="<?php echo $respuesta_68; ?>" size="16">
  ,
 el cual 
-<input type="text" name="respuesta_69" value="<?php echo $respuesta_69; ?>" size="16">
+<input type="text" name="respuesta_69" value="<?php echo $respuesta_69; ?>" size="8">
   al 
 <input type="text" name="respuesta_70" value="<?php echo $respuesta_70; ?>" size="16">
   a 
@@ -1895,7 +1895,7 @@ el cual
 
 <h5>Consumer</h5>
 <p>
-<input type="text" name="respuesta_74" value="<?php echo $respuesta_74; ?>" size="25">
+<input type="text" name="respuesta_74" value="<?php echo $respuesta_74; ?>" size="35">
  .
 </p>
 

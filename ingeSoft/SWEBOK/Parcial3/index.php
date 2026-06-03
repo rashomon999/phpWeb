@@ -141,12 +141,12 @@ if ($_POST) {
         $respuesta_110 = '264';
         
         // Soluciones del SVG
-$respuesta_122 = 'Client';
-$respuesta_123 = 'ForkJoinMaster';
-$respuesta_124 = 'ThreadPool';
-$respuesta_125 = 'Worker';
-$respuesta_126 = 'Task';
-$respuesta_127 = 'Result';
+$respuesta_122 = ':ForkJoinMaster';
+$respuesta_123 = 'ThreadPool';
+$respuesta_124 = ':Thread';
+$respuesta_125 = ':ForkJoinTask';
+$respuesta_126 = ':Thread';
+$respuesta_127 = ':ForkJoinTask';
 $respuesta_128 = 'ForkJoinMaster(FT)';
 $respuesta_129 = 'invoke()';
 $respuesta_130 = 'execute(FT)';
@@ -155,8 +155,8 @@ $respuesta_132 = 'compute()';
 $respuesta_133 = 'run()';
 $respuesta_134 = 'compute()';
 $respuesta_135 = 'fork()';
-$respuesta_136 = 'fork()';
-$respuesta_137 = 'join()';
+$respuesta_136 = 'join()';
+$respuesta_137 = 'fork()';
 $respuesta_138 = 'join()';
 
 // Cambiar el loop de marcar correctas hasta 138
@@ -258,7 +258,7 @@ for ($i = 1; $i <= 138; $i++) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === 'hay datos duplicables para ser consultados muchas veces por muchos cliente') {  
+   if ($respuesta_10 === 'hay datos duplicables para ser consultados muchas veces por muchos clientes') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -1298,7 +1298,7 @@ $answers = [
     122 => 'Client',        // Header 1
     123 => 'ForkJoinMaster',// Header 2
     124 => 'ThreadPool',    // Header 3
-    125 => 'Worker',        // Header 4
+    125 => ':ForkJoinTask',        // Header 4
     126 => 'Task',          // Header 5
     127 => 'Result',        // Header 6
     128 => 'request()',     // Mensaje 1

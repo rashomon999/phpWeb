@@ -1573,6 +1573,15 @@ if ($respuesta_151 === 'join():Object') {
 } else {
     $verificar_151 = "incorrecto";
 }
+
+$respuesta_152 = isset($_POST['respuesta_152']) ? $_POST['respuesta_152'] : '';
+if ($respuesta_152 === 'ForkJoinTasks asignadas por el ThreadPool') {
+    $verificar_152 = "correcto";
+} elseif ($respuesta_152 === '') {
+    $verificar_152 = '';
+} else {
+    $verificar_152 = "incorrecto";
+}
 }
 }
 ?>
@@ -2222,7 +2231,7 @@ Si se crean
 Sin embargo, si se crean 
 <input type="text" name="respuesta_90" value="<?php echo $respuesta_90; ?>" size="16">
  , 
-<input type="text" name="respuesta_91" value="<?php echo $respuesta_91; ?>" size="24">
+<input type="text" name="respuesta_91" value="<?php echo $respuesta_91; ?>" size="35">
  .
 </p>
 
@@ -2254,7 +2263,7 @@ Esta clase es
   de 
 <input type="text" name="respuesta_94" value="<?php echo $respuesta_94; ?>" size="8">
   un 
-<input type="text" name="respuesta_95" value="<?php echo $respuesta_95; ?>" size="31">
+<input type="text" name="respuesta_95" value="<?php echo $respuesta_95; ?>" size="41">
  .
 </p>
 
@@ -2312,7 +2321,10 @@ ThreadPool (ver sección 3.2.6).
 <input type="text" name="respuesta_111" value="<?php echo $respuesta_111; ?>" size="11">    
  </h5>
 <p>
-Es responsable de procesar las ForkJoinTasks asignadas por el ThreadPool.
+Es responsable de procesar las 
+<input type="text" name="respuesta_152" value="<?php echo $respuesta_152; ?>" size="36">    
+
+ .
 </p>
 
 <button type="submit">Enviar</button>
@@ -2331,11 +2343,13 @@ Es responsable de procesar las ForkJoinTasks asignadas por el ThreadPool.
 <?php echo $verificar_104 ?>
 <?php echo $verificar_105 ?>
 <?php echo $verificar_106 ?>
+<br><br>
 <?php echo $verificar_107 ?>
 <?php echo $verificar_108 ?>
 <?php echo $verificar_109 ?>
 <?php echo $verificar_110 ?>
 <?php echo $verificar_111 ?>
+<?php echo $verificar_152 ?>
 <hr>
  
 
@@ -2351,18 +2365,18 @@ Es responsable de procesar las ForkJoinTasks asignadas por el ThreadPool.
 
 <p>
 Una vez que el 
-<input type="text" name="respuesta_112" value="<?php echo $respuesta_112; ?>" size="21">
+<input type="text" name="respuesta_112" value="<?php echo $respuesta_112; ?>" size="23">
  , el 
-<input type="text" name="respuesta_113" value="<?php echo $respuesta_113; ?>" size="21">
+<input type="text" name="respuesta_113" value="<?php echo $respuesta_113; ?>" size="23">
  ,
 el cual 
-<input type="text" name="respuesta_114" value="<?php echo $respuesta_114; ?>" size="31">
+<input type="text" name="respuesta_114" value="<?php echo $respuesta_114; ?>" size="41">
  .
 </p>
 
 <p>
 Este método evalúa si 
-<input type="text" name="respuesta_115" value="<?php echo $respuesta_115; ?>" size="21">
+<input type="text" name="respuesta_115" value="<?php echo $respuesta_115; ?>" size="22">
  , dividida (forked) o unida (joined).
 </p>
 
@@ -2584,6 +2598,25 @@ las tareas deben
 </div><!-- /.wrapper -->
 
 <button type="submit">Enviar</button>
+<?php echo $verificar_123 ?>
+<?php echo $verificar_124 ?>
+<?php echo $verificar_125 ?>
+<?php echo $verificar_126 ?>
+<?php echo $verificar_127 ?>
+<?php echo $verificar_128 ?>
+<?php echo $verificar_129 ?>
+<?php echo $verificar_130 ?>
+<?php echo $verificar_131 ?>
+<?php echo $verificar_132 ?>
+<?php echo $verificar_133 ?>
+<?php echo $verificar_134 ?>
+<?php echo $verificar_135 ?>
+<?php echo $verificar_136 ?>
+<?php echo $verificar_137 ?>
+<?php echo $verificar_138 ?>
+<?php echo $verificar_139 ?>
+<?php echo $verificar_140 ?>
+<br><br>
 <?php echo $verificar_141 ?>
 <?php echo $verificar_142 ?>
 <?php echo $verificar_143 ?>
