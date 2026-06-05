@@ -1309,7 +1309,7 @@ if ($respuesta_121 === '144') {
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 300vh;
+    height: 230vh;
     }
 
 </style>
@@ -1589,116 +1589,137 @@ function ocultarMensaje4() {
 </head>
 <body>  
 
-<form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
+<form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
 <div class="form-container">
-
-    
 <div class="seccion izquierda"> 
- <h3>Alan Turing</h3>
+ <p><strong>Codificación de una máquina de Turing</strong></p>
 
 <ul>
-    <li>
-        Matemático, científico de la computación y criptógrafo inglés.
-    </li>
-
-    <li>
-        Propuso la Prueba de Turing.
-    </li>
-
-    <li>
-        Creador de la máquina de Turing, inspirada en el funcionamiento de una máquina de escribir.
-    </li>
-</ul>
-<h4>Finite Automaton</h4>
-<img src="../../../img/guia_439.png" alt="">
-<h4>Turing Machine</h4>
-<img src="../../../img/guia_440.png" alt="">
-
-<ul>
-    <li>
-        El cabezal situado sobre la cinta es un cabezal de lectura/escritura y puede moverse en ambas direcciones.
-    </li>
-
-    <li>
-        La escritura se realiza sobre la misma cinta utilizando la cadena de entrada.
-    </li>
+  <li>
+    Cada estado de Q = {q<sub>1</sub>, q<sub>2</sub>, ..., q<sub>n</sub>}
+    se codifica por medio de 1's así:
+    <ul>
+      <li>q<sub>1</sub> = 1</li>
+      <li>q<sub>2</sub> = 11</li>
+      <li>q<sub>3</sub> = 111</li>
+      <li>...</li>
+      <li>q<sub>n</sub> = 11...1 (con n unos)</li>
+    </ul>
+  </li>
+  <li>
+    Donde q<sub>1</sub> es el estado inicial y q<sub>2</sub> es el único
+    estado de aceptación.
+  </li>
 </ul>
 
-<p>
-<img src="../../../img/guia_441.png" alt="" width="300">
-<img src="../../../img/guia_442.png" alt="" width="280">
-<img src="../../../img/guia_443.png" alt="" width="300"> 
-</p>
-<p>
-<img src="../../../img/guia_444.png" alt="" width="300">
-<img src="../../../img/guia_445.png" alt="" width="280">
-<img src="../../../img/guia_446.png" alt="" width="300"> 
-</p>
-<p>
-<img src="../../../img/guia_447.png" alt="" width="300">
-<img src="../../../img/guia_448.png" alt="" width="280">
-<img src="../../../img/guia_449.png" alt="" width="300"> 
-</p>
-<p>
-<img src="../../../img/guia_450.png" alt="" width="300">
-</p>
+<p><strong>Codificación de una máquina de Turing</strong></p>
 
-<img src="../../../img/guia_451.png" alt="" >
 <ul>
-    <li>
-        La cinta contiene un símbolo en blanco, representado por B, que inicialmente llena toda la cinta.
-    </li>
+  <li>
+    Cada símbolo de la máquina se representa como:
+    $$\Gamma = \{\sigma_1,\sigma_2,\ldots,\sigma_m\}$$
+  </li>
+
+  <li>
+    Cada símbolo se codifica por medio de 1's así:
+    <ul>
+      <li>$$\sigma_1 = 1$$</li>
+      <li>$$\sigma_2 = 11$$</li>
+      <li>$$\sigma_3 = 111$$</li>
+      <li>$$\vdots$$</li>
+      <li>$$\sigma_n = 11\ldots1 \text{ (con n unos)}$$</li>
+    </ul>
+  </li>
+
+  <li>
+    Donde $$\sigma_1$$ es el símbolo en blanco <strong>(B)</strong>.
+  </li>
 </ul>
+<hr>
+
+<p><strong>Codificación de una máquina de Turing</strong></p>
+
 <ul>
-    <li>
-        La cadena de entrada se coloca sobre la cinta; los símbolos restantes son espacios en blanco B.
-    </li>
+  <li>
+    El alfabeto de cinta se representa como:
+    $$\Gamma = \{B, a, b, X, Y\}$$
+  </li>
+
+  <li>
+    La codificación por medio de 1's es:
+    <ul>
+      <li>$$B = 1$$</li>
+      <li>$$a = 11$$</li>
+      <li>$$b = 111$$</li>
+      <li>$$X = 1111$$</li>
+      <li>$$Y = 11111$$</li>
+    </ul>
+  </li>
 </ul>
 
-<h3>Transitions</h3>
-<img src="../../../img/guia_452.png" alt="" >
-<h3>Función de transición</h3>
-
-<p>
-    \[
-    \delta(q_1, a) = (q_2, X, R)
-    \]
-</p>
+<p><strong>Codificación de una máquina de Turing</strong></p>
 
 <ul>
-    <li>
-        En el estado <strong>q1</strong>, la máquina lee <strong>a</strong> de la cinta.
-    </li>
-
-    <li>
-        Luego escribe <strong>X</strong> en su lugar.
-    </li>
-
-    <li>
-        Finalmente, se mueve hacia la derecha.
-    </li>
+  <li>
+    Para indicar la dirección de movimiento de la cabeza lectora/escritora se utiliza la siguiente codificación:
+    <ul>
+      <li>$$L = 1 \quad \text{(Left / Izquierda)}$$</li>
+      <li>$$R = 11 \quad \text{(Right / Derecha)}$$</li>
+      <li>$$S = 111 \quad \text{(Stay / Permanecer)}$$</li>
+    </ul>
+  </li>
 </ul>
-<img src="../../../img/guia_453.png" alt="" >
-<h3>Función de transición</h3>
 
-<p>
-    \[
-    \delta(q_1, a) = (q_2, a, L)
-    \]
-</p>
+
+<p><strong>Codificación de una máquina de Turing</strong></p>
+    <hr>
+<ul>
+  <li>
+    Se codifican las transiciones de la máquina.
+  </li>
+
+  <li>
+    Cada elemento que define una transición se separa mediante un
+    <strong>0</strong>.
+  </li>
+
+  <li>
+    Asimismo, el símbolo
+    $$0$$
+    se utiliza para separar una transición de otra.
+  </li>
+</ul>
+
+<hr>
+
+<p><strong>Codificación de una máquina de Turing</strong></p>
 
 <ul>
-    <li>
-        En el estado <strong>q1</strong>, la máquina lee <strong>a</strong> de la cinta.
-    </li>
+  <li>
+    Se codifican las transiciones de la máquina.
+  </li>
 
-    <li>
-        Luego vuelve a escribir <strong>a</strong>.
-    </li>
+  <li>
+    Cada elemento que define una transición se separa mediante un
+    $$0$$.
+  </li>
 
-    <li>
-        Finalmente, se mueve hacia la izquierda.
-    </li>
+  <li>
+    Asimismo, el símbolo $$0$$ se utiliza para separar una transición de otra.
+  </li>
+
+  <li>
+    Si
+    $$Q=\{q_1,q_2,q_3,q_4\}$$
+    y
+    $$\Gamma=\{B,a,b,c\},$$
+    la transición
+    $$\delta(q_3,a)=(q_4,c,L)$$
+    se codifica como:
+    $$
+    111011011110111101
+    $$
+  </li>
 </ul>
 </div>
 
@@ -1707,157 +1728,8 @@ function ocultarMensaje4() {
 
 <div class="seccion derecha">
     
-    <p>
-    No significa “la primera <strong>a</strong>” ni “la segunda <strong>a</strong>” específicamente.
-  </p>
-
-  <p>
-    \[
-    \delta(q_1, a)
-    \]
-  </p>
-
-  <p>
-    se lee como:
-  </p>
-
-  <blockquote>
-    “Si la máquina está en el estado \( q_1 \) y el símbolo que está leyendo actualmente en la cinta es \( a \)...”
-  </blockquote>
-
-  <p><strong>La clave es:</strong></p>
-
-  <ul>
-    <li>La máquina solo mira la celda donde está el cabezal.</li>
-    <li>No busca todas las \( a \).</li>
-    <li>No importa si es la primera o la segunda globalmente.</li>
-    <li>Importa únicamente la posición actual del cabezal.</li>
-  </ul>
  
-  <img src="../../../img/guia_454.png" alt="" >
-
-<br>
-   <button onmousedown="mostrarMensaje()" onmouseup="ocultarMensaje()">Dato</button>
-    <div id="mensaje" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
- <h2>Explicación de las transiciones</h2>
-
-<p>
-Exacto, ahí está el punto clave 👍
-</p>
-
-<p>
-La transición:
-</p>
-
-\[
-\delta(q_1,a)
-\]
-
-<p>
-NO significa:
-</p>
-
-<blockquote>
-“haz esto una sola vez para todas las <strong>a</strong>”.
-</blockquote>
-
-<p>
-Significa:
-</p>
-
-<blockquote>
-“cada vez que estés en \( q_1 \) y debajo del cabezal haya una \( a \), haz esto”.
-</blockquote>
-
-<h3>Primera vez</h3>
-
-<div class="example">
-<code>B [a] a b b B</code>
-</div>
-
-<p>
-La máquina está en \( q_1 \) y lee \( a \).
-</p>
-
-<p>
-Entonces aplica:
-</p>
-
-\[
-\delta(q_1,a)=(q_1,d,R)
-\]
-
-<p>
-y queda:
-</p>
-
-<div class="example">
-<code>B d [a] b b B</code>
-</div>
-
-<h3>Segunda vez</h3>
-
-<p>
-Ahora el cabezal avanzó y quedó sobre OTRA \( a \).
-</p>
-
-<p>
-La máquina sigue en \( q_1 \).
-</p>
-
-<p>
-Entonces nuevamente se cumple:
-</p>
-
-<ul>
-  <li>estado actual = \( q_1 \)</li>
-  <li>símbolo leído = \( a \)</li>
-</ul>
-
-<p>
-Por eso vuelve a ejecutar la misma transición.
-</p>
-
-<h3>Tercera vez....(se repite)</h3>
-<h3>Idea intuitiva</h3>
-
-<p>
-Es como un ciclo:
-</p>
-
-<pre>
-mientras lea 'a' o 'b':
-    reemplazar por 'd'
-    mover derecha
-</pre>
-
-<p>
-Hasta que encuentra \( B \).
-</p>
-
-<p>
-Ahí cambia a:
-</p>
-
-\[
-q_2
-\]
-
-<p>
-y termina el proceso.
-</p>
-
-    </div>
-
-
-
- 
-    <hr>
-    <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
-    <br>
-    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
-    <button type="submit"   >Mostrar Solución</button>
-         
+    
 </div>
 </div>
  </form>

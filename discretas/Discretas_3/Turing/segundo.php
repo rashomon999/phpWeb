@@ -1929,6 +1929,48 @@ b/b,L
     <li>Se mueve a la izquierda.</li>
 </ol>
 
+<hr>
+
+ <p>
+        Cuando ves esto sobre una flecha:
+    </p>
+
+    <pre>
+a/a,R
+b/b,R
+    </pre>
+
+    <p>
+        significa que esa misma transición puede usarse en dos casos distintos:
+    </p>
+
+    <ul>
+        <li>Si lee <strong>a</strong>, hace <code>a/a,R</code>.</li>
+        <li>Si lee <strong>b</strong>, hace <code>b/b,R</code>.</li>
+    </ul>
+
+    <p>
+        Es una forma de abreviar dos transiciones.
+    </p>
+
+    <p>
+        Equivale a dibujar:
+    </p>
+
+    <pre>
+      a/a,R
+
+q1 ----------------&gt; q2
+
+      b/b,R
+
+q1 ----------------&gt; q2
+    </pre>
+
+    <p>
+        pero como ambas van del mismo estado al mismo estado, se escriben juntas sobre una sola flecha.
+    </p>
+
 
 </div>
 </div>
@@ -1938,7 +1980,7 @@ b/b,L
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="segundo.php"
+        href="tercero.php"
         role="button"
         width="50px"
         height="50px"
