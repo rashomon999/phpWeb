@@ -63,25 +63,14 @@ if ($_POST) {
     if ($mostrar_solucion === 'mostrar_solucion') {
         // Establecer todas las respuestas correctas para las tablas de multiplicar
         
-        // Tabla del 12
-        $respuesta_111 = '24';
-        $respuesta_112 = '36';
-        $respuesta_113 = '48';
-        $respuesta_114 = '60';
-        $respuesta_115 = '72';
-        $respuesta_116 = '84';
-        $respuesta_117 = '96';
-        $respuesta_118 = '108';
-        $respuesta_119 = '120';
-        $respuesta_120 = '132';
-        $respuesta_121 = '144';
+ 
         
         // Tabla del 13
-        $respuesta_1 = '26';
-        $respuesta_2 = '39';
-        $respuesta_3 = '52';
-        $respuesta_4 = '65';
-        $respuesta_5 = '78';
+        $respuesta_1 = 'menor';
+        $respuesta_2 = 'mayor';
+        $respuesta_3 = 'for i:=1 to r';
+        $respuesta_4 = 'n ≥ ci';
+        $respuesta_5 = 'no';
         $respuesta_6 = '91';
         $respuesta_7 = '104';
         $respuesta_8 = '117';
@@ -1681,6 +1670,12 @@ denominaciones son 25, 10, 5 y 1 centavo, tenemos <em>c₁ = 25</em>, <em>c₂ =
 <?php echo $verificar_4 ?>
 <?php echo $verificar_5 ?>
  
+    <button onmousedown="mostrarMensaje()" onmouseup="ocultarMensaje()">Ayuda</button>
+    <div id="mensaje" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
+        <img src="../../../../img/guia_469.png" alt="">
+
+    </div>
+
     </form>
 </div>
 
@@ -1689,7 +1684,11 @@ denominaciones son 25, 10, 5 y 1 centavo, tenemos <em>c₁ = 25</em>, <em>c₂ =
 
 <div class="seccion derecha">
     <form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off">
-   
+       <hr>
+    <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
+    <br>
+    <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
+    <button type="submit"   >Mostrar Solución</button>
         
     </form>
 </div>

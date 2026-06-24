@@ -1555,7 +1555,7 @@ function ocultarMensaje4() {
     Los sistemas de amortización se
     <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="10">
   con la tasa de interés
-<input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="13">
+<input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="16">
  .
     </p>
    
@@ -1565,7 +1565,7 @@ function ocultarMensaje4() {
     <?php echo $verificar_16 ?>
     <hr>
 
-
+    <p>Sistema de liquidacion de credito modelo Aleman</p>
     <div style="overflow-x:auto; padding: 1rem 0;">
   <table class="amort-table2">
     <thead>
@@ -1613,9 +1613,9 @@ function ocultarMensaje4() {
 
 <p>
     Los sistemas de amortización se liquidan con la tasa de interés
-<input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="10">
+<input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="16">
  . Como en el sistema Alemán el 
-<input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="10">
+<input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="7">
   a capital es 
 <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="10">
   desde la primera cuota, 

@@ -34,6 +34,9 @@
         <a class="btn" href=".\LenguajesRegulares\index.php">Lenguajes regulares</a>
         <a class="btn" href=".\RNN\index.php">Recurrent neural network</a>
         <a class="btn" href=".\Turing\index.php">Turing machine</a>
+        <br><br>
+        <a class="btn" href=".\sustentacion\index.php">sustentacion</a>
+
     </div>
 </body>
 </html>

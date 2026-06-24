@@ -715,7 +715,9 @@ if ($respuesta_59 === 'software/hardware') {
 }
 
  $respuesta_60 = isset($_POST['respuesta_60']) ? $_POST['respuesta_60'] : '';
-if ($respuesta_60 === 'Persistencia de Datos') { 
+if ($respuesta_60 === 'Persistencia de Datos'
+|| $respuesta_60 === 'Persistencia de datos'
+) { 
     $verificar_60 = "correcto";
 } elseif ($respuesta_60 === '') {
     $verificar_60 = '';
@@ -733,7 +735,11 @@ if ($respuesta_61 === 'Concurrencia') {
 }
 
  $respuesta_62 = isset($_POST['respuesta_62']) ? $_POST['respuesta_62'] : '';
-if ($respuesta_62 === 'Distribucion de Componentes') { 
+if ($respuesta_62 === 'Distribucion de Componentes'
+|| $respuesta_62 === 'Distribucion de componentes'
+|| $respuesta_62 === 'distribucion de componentes'
+
+) { 
     $verificar_62 = "correcto";
 } elseif ($respuesta_62 === '') {
     $verificar_62 = '';
@@ -742,7 +748,9 @@ if ($respuesta_62 === 'Distribucion de Componentes') {
 }
 
  $respuesta_63 = isset($_POST['respuesta_63']) ? $_POST['respuesta_63'] : '';
-if ($respuesta_63 === 'Control y Manejo de Eventos') { 
+if ($respuesta_63 === 'Control y Manejo de Eventos'
+|| $respuesta_63 === 'Control y manejo de eventos'
+) { 
     $verificar_63 = "correcto";
 } elseif ($respuesta_63 === '') {
     $verificar_63 = '';
@@ -760,7 +768,9 @@ if ($respuesta_64 === 'Seguridad') {
 }
 
  $respuesta_65 = isset($_POST['respuesta_65']) ? $_POST['respuesta_65'] : '';
-if ($respuesta_65 === 'Interaccion y Presentacion') { 
+if ($respuesta_65 === 'Interaccion y Presentacion'
+|| $respuesta_65 === 'Interaccion y presentacion'
+) { 
     $verificar_65 = "correcto";
 } elseif ($respuesta_65 === '') {
     $verificar_65 = '';
@@ -769,7 +779,9 @@ if ($respuesta_65 === 'Interaccion y Presentacion') {
 }
 
  $respuesta_66 = isset($_POST['respuesta_66']) ? $_POST['respuesta_66'] : '';
-if ($respuesta_66 === 'Manejo de Errores, Excepciones y Tolerancia a Fallas') { 
+if ($respuesta_66 === 'Manejo de Errores, Excepciones y Tolerancia a Fallas'
+|| $respuesta_66 === 'Manejo de errores, excepciones y tolerancia a fallas'
+) { 
     $verificar_66 = "correcto";
 } elseif ($respuesta_66 === '') {
     $verificar_66 = '';
@@ -877,7 +889,9 @@ if ($respuesta_77 === 'diseño') {
 }
 
  $respuesta_78 = isset($_POST['respuesta_78']) ? $_POST['respuesta_78'] : '';
-if ($respuesta_78 === 'Distribucion de componentes') { 
+if ($respuesta_78 === 'Distribucion de componentes'
+|| $respuesta_78 === 'distribucion de componentes'
+) { 
     $verificar_78 = "correcto";
 } elseif ($respuesta_78 === '') {
     $verificar_78 = '';
@@ -895,7 +909,9 @@ if ($respuesta_79 === 'relacionado') {
 }
 
  $respuesta_80 = isset($_POST['respuesta_80']) ? $_POST['respuesta_80'] : '';
-if ($respuesta_80 === 'diagrama de Deployment') { 
+if ($respuesta_80 === 'diagrama de Deployment'
+|| $respuesta_80 === 'diagrama de deployment'
+) { 
     $verificar_80 = "correcto";
 } elseif ($respuesta_80 === '') {
     $verificar_80 = '';
@@ -1578,7 +1594,7 @@ function ocultarMensaje4() {
 
     
 <div class="seccion izquierda"> 
-
+<h4>Arquitectura de Software</h4>
 <h5><input type="text" name="respuesta_60" value="<?php echo $respuesta_60; ?>" size="21"></h5>
 <p>
 Se centra en 

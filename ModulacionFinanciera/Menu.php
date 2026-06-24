@@ -38,6 +38,8 @@
         <br><br>
         <a class="btn" href=".\exposicion\index.php">Cuestionario exposicion</a>
 
+        <a class="btn" href=".\Proyectos\index.php">Proyectos</a>
+
     </div>
 </body>
 </html>

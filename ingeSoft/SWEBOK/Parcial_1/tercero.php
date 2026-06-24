@@ -108,7 +108,7 @@ if ($_POST) {
     $respuesta_74 = 'estructura';
     $respuesta_75 = 'sistema intensivo de software';
     $respuesta_76 = 'Define los componentes de software del sistema';
-    $respuesta_77 = 'las relaciones estáticas entre estos';
+    $respuesta_77 = 'las relaciones estaticas entre estos';
      $respuesta_78 = 'proceso';  
      $respuesta_79 = 'Producto';  
      $respuesta_80 = 'Diagramas de Deployment';  
@@ -143,7 +143,9 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === 'Proceso') {  
+   if ($respuesta_3 === 'Proceso'
+   || $respuesta_3 === 'proceso'
+   ) {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -153,7 +155,9 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === 'Producto') {  
+   if ($respuesta_4 === 'Producto'
+   || $respuesta_4 === 'producto'
+   ) {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -841,7 +845,7 @@ if ($respuesta_76 === 'Define los componentes de software del sistema') {
 }
 
  $respuesta_77 = isset($_POST['respuesta_77']) ? $_POST['respuesta_77'] : '';
-if ($respuesta_77 === 'las relaciones estáticas entre estos') { 
+if ($respuesta_77 === 'las relaciones estaticas entre estos') { 
     $verificar_77 = "correcto";
 } elseif ($respuesta_77 === '') {
     $verificar_77 = '';
@@ -870,7 +874,9 @@ if ($respuesta_79 === 'Producto'
 }
 
  $respuesta_80 = isset($_POST['respuesta_80']) ? $_POST['respuesta_80'] : '';
-if ($respuesta_80 === 'Diagramas de Deployment') { 
+if ($respuesta_80 === 'Diagramas de Deployment'
+|| $respuesta_80 === 'diagramas de deployment'
+) { 
     $verificar_80 = "correcto";
 } elseif ($respuesta_80 === '') {
     $verificar_80 = '';
@@ -879,7 +885,9 @@ if ($respuesta_80 === 'Diagramas de Deployment') {
 }
 
  $respuesta_81 = isset($_POST['respuesta_81']) ? $_POST['respuesta_81'] : '';
-if ($respuesta_81 === 'Diagramas de Secuencia') { 
+if ($respuesta_81 === 'Diagramas de Secuencia'
+|| $respuesta_81 === 'diagramas de secuencia'
+) { 
     $verificar_81 = "correcto";
 } elseif ($respuesta_81 === '') {
     $verificar_81 = '';
@@ -1268,7 +1276,7 @@ if ($respuesta_121 === '144') {
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 370vh;
+    height: 200vh;
     }
 
 </style>
@@ -1725,6 +1733,9 @@ Almacenamiento → NORMA
 
 </div>
     </section>
+
+     
+
     <hr>
 
     <p>
@@ -1737,11 +1748,92 @@ Almacenamiento → NORMA
      ) es
     <input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="8">
     </p>
+
+        
     <button type="submit">Enviar</button> 
     <?php echo $verificar_9 ?>
     <?php echo $verificar_10 ?>
     <?php echo $verificar_11 ?> 
     <?php echo $verificar_12 ?> 
+ 
+
+        <hr>
+    La estructura de procesamiento que favorece más la escalabilidad es
+    <input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="19">
+     .
+    <br><br>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_37 ?>
+ 
+<hr>
+    
+     <p>
+    La estructura de procesamiento que favorece más la 
+    <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="14">
+      (
+    <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="14">    
+     ,
+    <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="14">
+     ) es 
+    <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="19">
+     
+
+     </p>
+  <button onmousedown="mostrarMensaje2()" onmouseup="ocultarMensaje2()">Ayuda</button>
+    <section id="mensaje2" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
+    <img src="../../../img/guia_468.png" alt="">
+
+    </section>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_32 ?>
+    <?php echo $verificar_33 ?>
+    <?php echo $verificar_34 ?>
+    <?php echo $verificar_35 ?>
+
+        <hr>
+    <p>Como 
+<input type="text" name="respuesta_78" value="<?php echo $respuesta_78; ?>" size="8">     
+     , el diseño arquitectonico tiene como 
+    <input type="text" name="respuesta_38" value="<?php echo $respuesta_38; ?>" size="8">    
+     :</p>
+     
+    <p>
+    <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="25">    
+     , 
+    <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="9">
+     , 
+    <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="9">
+      y 
+    <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="9">
+     .</p>
+    
+    <p>
+    <input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="41">    
+     .</p>
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_78 ?>
+    <?php echo $verificar_38 ?>
+    <?php echo $verificar_39 ?>
+    <?php echo $verificar_40 ?>
+    <?php echo $verificar_41 ?>
+    <?php echo $verificar_42 ?>
+    <?php echo $verificar_43 ?>
+ 
+    <hr>
+    <P>La estructura de almacenamiento de la taxonomía de 
+    Flynn que favorece más la 
+    <input type="text" name="respuesta_65" value="<?php echo $respuesta_65; ?>" size="9">
+     , 
+    <input type="text" name="respuesta_66" value="<?php echo $respuesta_66; ?>" size="9">
+      y 
+    <input type="text" name="respuesta_67" value="<?php echo $respuesta_67; ?>" size="20">
+      es </P>
+    <input type="text" name="respuesta_68" value="<?php echo $respuesta_68; ?>" size="9">
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_65 ?>
+    <?php echo $verificar_66 ?>
+    <?php echo $verificar_67 ?>
+    <?php echo $verificar_68 ?>
     <hr>
     <p>
     El 
@@ -1814,28 +1906,20 @@ Almacenamiento → NORMA
      <?php echo $verificar_29 ?>
      <?php echo $verificar_30 ?>
      <?php echo $verificar_31 ?>
-     <hr>
-
-     <p>
-    La estructura de procesamiento que favorece más la 
-    <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="14">
-      (
-    <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="14">    
-     ,
-    <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="14">
-     ) es 
-    <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="19">
-     
-
-     </p>
-
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_32 ?>
-    <?php echo $verificar_33 ?>
-    <?php echo $verificar_34 ?>
-    <?php echo $verificar_35 ?>
+ 
     <hr>
-    <p>Cual es el aspecto clave diferencia estre UMA y NUMA: </p>
+   
+    
+    
+
+</div>
+
+
+
+
+<div class="seccion derecha">
+ 
+   <p>Cual es el aspecto clave diferencia estre UMA y NUMA: </p>
      
         En UMA el tiempo es 
         <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="19">
@@ -1844,67 +1928,8 @@ Almacenamiento → NORMA
     <button type="submit">Enviar</button>
     <?php echo $verificar_36 ?>
 
-    <hr>
-    La estructura de procesamiento que favorece más la escalabilidad es
-    <input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="19">
-     .
-    <br><br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_37 ?>
-    <hr>
-    <p>Como 
-<input type="text" name="respuesta_78" value="<?php echo $respuesta_78; ?>" size="8">     
-     , el diseño arquitectonico tiene como 
-    <input type="text" name="respuesta_38" value="<?php echo $respuesta_38; ?>" size="8">    
-     :</p>
-     
-    <p>
-    <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="25">    
-     , 
-    <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="9">
-     , 
-    <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="9">
-      y 
-    <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="9">
-     .</p>
-    
-    <p>
-    <input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="41">    
-     .</p>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_78 ?>
-    <?php echo $verificar_38 ?>
-    <?php echo $verificar_39 ?>
-    <?php echo $verificar_40 ?>
-    <?php echo $verificar_41 ?>
-    <?php echo $verificar_42 ?>
-    <?php echo $verificar_43 ?>
  
-
-    <hr>
-    El diseño de software tiene una definición dual, una que se da desde el punto de vista de 
-    <input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>" size="8">
-    y otra desde el 
-    punto de vista de 
-    <input type="text" name="respuesta_45" value="<?php echo $respuesta_45; ?>" size="8">
-    .
-    <br><br>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_44 ?>
-    <?php echo $verificar_45 ?>
-    <hr>
-    <p>Son responsabilidades del arquitecto de software:</p>
-    <p>
-    <input type="text" name="respuesta_46" value="<?php echo $respuesta_46; ?>" size="8">    
-      los 
-    <input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="11">
-      el 
-    <input type="text" name="respuesta_48" value="<?php echo $respuesta_48; ?>" size="16">
-     .</p>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_46 ?>
-    <?php echo $verificar_47 ?>
-    <?php echo $verificar_48 ?>
+  
     <hr>
     <p>¿Cuáles de las siguientes son relaciones de 
     <input type="text" name="respuesta_49" value="<?php echo $respuesta_49; ?>" size="12">    
@@ -1933,70 +1958,7 @@ Almacenamiento → NORMA
     <?php echo $verificar_53 ?>
     <?php echo $verificar_54 ?>
     <hr>
-    
-    
-
-</div>
-
-
-
-
-<div class="seccion derecha">
-    <p>Al diseñar una solución de software en la que se tengan requerimientos de atributos de calidad de 
-    <input type="text" name="respuesta_55" value="<?php echo $respuesta_55; ?>" size="9">    
-     , 
-    <input type="text" name="respuesta_56" value="<?php echo $respuesta_56; ?>" size="9">
-      y 
-    <input type="text" name="respuesta_57" value="<?php echo $respuesta_57; ?>" size="9">
-     , el esquema de procesamiento de la taxonomía de flynn más adecuado sería 
-    <input type="text" name="respuesta_58" value="<?php echo $respuesta_58; ?>" size="9">
-    y 
-    el de almacenamiento 
-    <input type="text" name="respuesta_59" value="<?php echo $respuesta_59; ?>" size="9">
-    .</p>
-      
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_55 ?>
-    <?php echo $verificar_56 ?>
-    <?php echo $verificar_57 ?>
-    <?php echo $verificar_58 ?>
-    <?php echo $verificar_59 ?>
-    <hr>
-    <p>
-    La estructura de 
-    <input type="text" name="respuesta_60" value="<?php echo $respuesta_60; ?>" size="11">
-      de la taxonomía de Flynn que favorece más la 
-    <input type="text" name="respuesta_61" value="<?php echo $respuesta_61; ?>" size="9">
-      y la 
-    <input type="text" name="respuesta_62" value="<?php echo $respuesta_62; ?>" size="11">
-      (
-    <input type="text" name="respuesta_63" value="<?php echo $respuesta_63; ?>" size="9">    
-     ) es 
-    <input type="text" name="respuesta_64" value="<?php echo $respuesta_64; ?>" size="9">
-    </p>
-
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_60 ?>
-    <?php echo $verificar_61 ?>
-    <?php echo $verificar_62 ?>
-    <?php echo $verificar_63 ?>
-    <?php echo $verificar_64 ?>
-    <hr>
-    <P>La estructura de almacenamiento de la taxonomía de 
-    Flynn que favorece más la 
-    <input type="text" name="respuesta_65" value="<?php echo $respuesta_65; ?>" size="9">
-     , 
-    <input type="text" name="respuesta_66" value="<?php echo $respuesta_66; ?>" size="9">
-      y 
-    <input type="text" name="respuesta_67" value="<?php echo $respuesta_67; ?>" size="20">
-      es </P>
-    <input type="text" name="respuesta_68" value="<?php echo $respuesta_68; ?>" size="9">
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_65 ?>
-    <?php echo $verificar_66 ?>
-    <?php echo $verificar_67 ?>
-    <?php echo $verificar_68 ?>
-    <hr>
+ 
     <P>
     ¿Qué 
     <input type="text" name="respuesta_72" value="<?php echo $respuesta_72; ?>" size="7"> 

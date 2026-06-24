@@ -18,89 +18,146 @@ if ($_POST) {
     
     if ($mostrar_solucion === 'mostrar_solucion') {        
  
- 
- 
-        $respuesta_1 = 'relaciono elementos';
-        $respuesta_2 = 'pertenecen a la especificacion';
-        $respuesta_3 = 'lenguaje';
-        $respuesta_4 = 'de manera errada';
-        $respuesta_5 = 'Sintáctico';
-        $respuesta_6 = 'diagrama de deployment';
-        $respuesta_7 = 'no modela correctamente';
-        $respuesta_8 = 'reglas del negocio/cliente';
-        $respuesta_9 = 'sematico';
-        $respuesta_10 = 'uso elementos';
-        $respuesta_11 = 'no pertenecen';
+        $respuesta_111 = '24'; 
+        $respuesta_112 = '36';
+        $respuesta_113 = '48';
+        $respuesta_114 = '60';
+        $respuesta_115 = '72';
+        $respuesta_116 = '84';
+        $respuesta_117 = '96';
+        $respuesta_118 = '108';
+        $respuesta_119 = '120';
+        $respuesta_120 = '132';
+        $respuesta_121 = '144';
         
  
-        $respuesta_12 = 'especificación de un lenguaje';
-        $respuesta_13 = 'lexico';
-           $respuesta_14 = 'SIMD';
-    $respuesta_15 = 'SISD';
-    $respuesta_16 = 'NUMA';
-    $respuesta_17 = 'Non-Uniform Memory Access';
-    $respuesta_18 = 'NORMA';
-    $respuesta_19 = 'No Remote Memory Access';
-    $respuesta_20 = 'SIMD';
-    $respuesta_21 = 'MISD';
-    $respuesta_22 = 'UMA';
-    $respuesta_23 = 'Uniform Memory Access';
-    $respuesta_24 = 'NORMA';
-    $respuesta_25 = 'distribuida';
-    $respuesta_26 = 'fisicamente compartida';
-    $respuesta_27 = 'fisicamente distribuida/logicamente compartida';
-    $respuesta_28 = 'Con interfaces bien definidas';
-    $respuesta_29 = 'Encapsulado';
-    $respuesta_30 = 'Reemplazable dentro de un contexto';
-    $respuesta_31 = 'Con propiedades externamente visibles';
-    $respuesta_32 = 'Modular';
-    $respuesta_33 = 'Reutilizable';
-    $respuesta_34 = 'operaciones';
-    $respuesta_35 = 'definiciones';
-    $respuesta_36 = 'diseño';
-    $respuesta_37 = 'basarse';
-    $respuesta_38 = 'conjunto minimo';
-    $respuesta_39 = 'no dependan de otras';
-    $respuesta_40 = 'su mismo nivel';
-    $respuesta_41 = 'Primitividad';
-    $respuesta_42 = 'Descomposicion y Modularizacion';
-    $respuesta_43 = 'diferentes funcionalidades';
-    $respuesta_44 = 'responsabilidades en diferentes componentes';
-    $respuesta_45 = 'Separar Interfaz de Implementacion';
-    $respuesta_46 = 'detalles internos';
-    $respuesta_47 = 'estructura y comportamiento';
-    $respuesta_48 = 'componente';
-    $respuesta_49 = 'ocultan mediante';
-    $respuesta_50 = 'especificacion';
-    $respuesta_51 = 'propiedades externamente visibles';
-    $respuesta_52 = 'Abstraccion';
-    $respuesta_53 = 'Generalizacion';
-    $respuesta_54 = 'definicion o concepto';
-    $respuesta_55 = 'proposito particular';
-    $respuesta_56 = 'en cuenta solamente';
-    $respuesta_57 = 'informacion relevante';
-    $respuesta_58 = 'Form Follows Function';
-    $respuesta_59 = 'detallados';
-    $respuesta_60 = 'globales del comportamiento';
-    $respuesta_61 = 'determinar la definicion';
-    $respuesta_62 = 'estructura mas adecuada';
-    $respuesta_63 = 'Acoplamiento';
-    $respuesta_64 = 'cuan interdependientes';
-    $respuesta_65 = 'los componentes o modulos';
-    $respuesta_66 = 'sistema';
-    $respuesta_67 = 'Encapsulacion';
-    $respuesta_68 = 'Agrupar';
-    $respuesta_69 = 'empaquetar';
-    $respuesta_70 = 'detalles internos';
-    $respuesta_71 = 'abstraccion';
-    $respuesta_72 = 'componente o modulo';
-    $respuesta_73 = 'escalabilidad';
-    $respuesta_74 = 'SIMD';
-    $respuesta_75 = 'define';
-    $respuesta_76 = 'La forma sigue a la funcion';
-    $respuesta_77 = 'ayuda a determinar';
-    $respuesta_78 = 'donde empezar';
-    $respuesta_79 = 'definir la arquitectura';
+        $respuesta_1 = '26';
+        $respuesta_2 = '39';
+        $respuesta_3 = '52';
+        $respuesta_4 = '65';
+        $respuesta_5 = '78';
+        $respuesta_6 = '91';
+        $respuesta_7 = '104';
+        $respuesta_8 = '117';
+        $respuesta_9 = '130';
+        $respuesta_10 = '143';
+        $respuesta_11 = '156';
+        
+ 
+        $respuesta_12 = '28';
+        $respuesta_13 = '42';
+        $respuesta_14 = '56';
+        $respuesta_15 = '70';
+        $respuesta_16 = '84';
+        $respuesta_17 = '98';
+        $respuesta_18 = '112';
+        $respuesta_19 = '126';
+        $respuesta_20 = '140';
+        $respuesta_21 = '154';
+        $respuesta_22 = '168';
+        
+ 
+        $respuesta_23 = '30';
+        $respuesta_24 = '45';
+        $respuesta_25 = '60';
+        $respuesta_26 = '75';
+        $respuesta_27 = '90';
+        $respuesta_28 = '105';
+        $respuesta_29 = '120';
+        $respuesta_30 = '135';
+        $respuesta_31 = '150';
+        $respuesta_32 = '165';
+        $respuesta_33 = '180';
+        
+ 
+        $respuesta_34 = '32';
+        $respuesta_35 = '48';
+        $respuesta_36 = '64';
+        $respuesta_37 = '80';
+        $respuesta_38 = '96';
+        $respuesta_39 = '112';
+        $respuesta_40 = '128';
+        $respuesta_41 = '144';
+        $respuesta_42 = '160';
+        $respuesta_43 = '176';
+        $respuesta_44 = '192';
+        
+ 
+        $respuesta_45 = '34';
+        $respuesta_46 = '51';
+        $respuesta_47 = '68';
+        $respuesta_48 = '85';
+        $respuesta_49 = '102';
+        $respuesta_50 = '119';
+        $respuesta_51 = '136';
+        $respuesta_52 = '153';
+        $respuesta_53 = '170';
+        $respuesta_54 = '187';
+        $respuesta_55 = '204';
+        
+ 
+        $respuesta_56 = '36';
+        $respuesta_57 = '54';
+        $respuesta_58 = '72';
+        $respuesta_59 = '90';
+        $respuesta_60 = '108';
+        $respuesta_61 = '126';
+        $respuesta_62 = '144';
+        $respuesta_63 = '162';
+        $respuesta_64 = '180';
+        $respuesta_65 = '198';
+        $respuesta_66 = '216';
+        
+ 
+        $respuesta_67 = '38';
+        $respuesta_68 = '57';
+        $respuesta_69 = '76';
+        $respuesta_70 = '95';
+        $respuesta_71 = '114';
+        $respuesta_72 = '133';
+        $respuesta_73 = '152';
+        $respuesta_74 = '171';
+        $respuesta_75 = '190';
+        $respuesta_76 = '209';
+        $respuesta_77 = '228';
+        
+ 
+        $respuesta_78 = '40';
+        $respuesta_79 = '60';
+        $respuesta_80 = '80';
+        $respuesta_81 = '100';
+        $respuesta_82 = '120';
+        $respuesta_83 = '140';
+        $respuesta_84 = '160';
+        $respuesta_85 = '180';
+        $respuesta_86 = '200';
+        $respuesta_87 = '220';
+        $respuesta_88 = '240';
+        
+ 
+        $respuesta_89 = '42';
+        $respuesta_90 = '63';
+        $respuesta_91 = '84';
+        $respuesta_92 = '105';
+        $respuesta_93 = '126';
+        $respuesta_94 = '147';
+        $respuesta_95 = '168';
+        $respuesta_96 = '189';
+        $respuesta_97 = '210';
+        $respuesta_98 = '231';
+        $respuesta_99 = '252';
+        
+         $respuesta_100 = '44';
+        $respuesta_101 = '66';
+        $respuesta_102 = '88';
+        $respuesta_103 = '110';
+        $respuesta_104 = '132'; 
+        $respuesta_105 = '154';
+        $respuesta_106 = '176';
+        $respuesta_107 = '198';
+        $respuesta_108 = '220';
+        $respuesta_109 = '242';
+        $respuesta_110 = '264';
         
         // Marcar todas como correctas
     for ($i = 1; $i <= 122; $i++) {
@@ -109,7 +166,7 @@ if ($_POST) {
 
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === 'relaciono elementos') {  
+   if ($respuesta_1 === '26') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -119,7 +176,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === 'pertenecen a la especificacion') {  
+   if ($respuesta_2 === '39') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -129,7 +186,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === 'lenguaje') {  
+   if ($respuesta_3 === '52') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -139,7 +196,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === 'de manera errada') {  
+   if ($respuesta_4 === '65') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -149,7 +206,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === 'sintactico') {  
+   if ($respuesta_5 === '78') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -159,7 +216,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === 'diagrama de deployment') {  
+   if ($respuesta_6 === '91') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -169,7 +226,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === 'no modela correctamente') {  
+   if ($respuesta_7 === '104') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -179,7 +236,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === 'reglas del negocio/cliente') {  
+   if ($respuesta_8 === '117') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -189,7 +246,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === 'semantico') {  
+   if ($respuesta_9 === '130') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -199,7 +256,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === 'uso elementos') {  
+   if ($respuesta_10 === '143') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -209,7 +266,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === 'no pertenecen') {  
+   if ($respuesta_11 === '156') {  
        $verificar_11 = "correcto";
    } elseif ($respuesta_11 === '') {
        $verificar_11 = '';
@@ -220,7 +277,7 @@ if ($_POST) {
 
     // Verificar la respuesta de la primera pregunta
     $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-    if ($respuesta_12 === 'especificacion de un lenguaje') {  
+    if ($respuesta_12 === '28') {  
         $verificar_12 = "correcto";
     } elseif ($respuesta_12 === '') {
         $verificar_12 = '';
@@ -230,7 +287,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la segunda pregunta
     $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-    if ($respuesta_13 === 'lexico') { 
+    if ($respuesta_13 === '42') { 
         $verificar_13 = "correcto";
     } elseif ($respuesta_13 === '') {
         $verificar_13 = '';
@@ -240,7 +297,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la tercera pregunta
     $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-    if ($respuesta_14 === 'SIMD') {  
+    if ($respuesta_14 === '56') {  
         $verificar_14 = "correcto";
     } elseif ($respuesta_14 === '') {
         $verificar_14 = '';
@@ -250,7 +307,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la cuarta pregunta
     $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-    if ($respuesta_15 === 'SISD') { 
+    if ($respuesta_15 === '70') { 
         $verificar_15 = "correcto";
     } elseif ($respuesta_15 === '') {
         $verificar_15 = '';
@@ -260,7 +317,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la quinta pregunta
     $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-    if ($respuesta_16 === 'NUMA') {  
+    if ($respuesta_16 === '84') {  
         $verificar_16 = "correcto";
     } elseif ($respuesta_16 === '') {
         $verificar_16 = '';
@@ -270,7 +327,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la sexta pregunta
     $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-    if ($respuesta_17 === 'Non-Uniform Memory Access') {  
+    if ($respuesta_17 === '98') {  
         $verificar_17 = "correcto";
         } elseif ($respuesta_17 === '') {
         $verificar_17 = '';
@@ -280,7 +337,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la séptima pregunta
     $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-    if ($respuesta_18 === 'NORMA') {  
+    if ($respuesta_18 === '112') {  
         $verificar_18 = "correcto";
     } elseif ($respuesta_18 === '') {
         $verificar_18 = '';
@@ -290,7 +347,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la octava pregunta
     $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-    if ($respuesta_19 === 'No Remote Memory Access') {  
+    if ($respuesta_19 === '126') {  
         $verificar_19 = "correcto";
     } elseif ($respuesta_19 === '') {
         $verificar_19 = '';
@@ -300,7 +357,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la novena pregunta
     $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
-    if ($respuesta_20 === 'SIMD') {  
+    if ($respuesta_20 === '140') {  
         $verificar_20 = "correcto";
     } elseif ($respuesta_20 === '') {
         $verificar_20 = '';
@@ -310,7 +367,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la décima pregunta
     $respuesta_21 = isset($_POST['respuesta_21']) ? $_POST['respuesta_21'] : '';
-    if ($respuesta_21 === 'MISD') {  
+    if ($respuesta_21 === '154') {  
          $verificar_21 = "correcto";
     } elseif ($respuesta_21 === '') {
         $verificar_21 = '';
@@ -320,7 +377,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la undécima pregunta
     $respuesta_22 = isset($_POST['respuesta_22']) ? $_POST['respuesta_22'] : '';
-    if ($respuesta_22 === 'UMA') {  
+    if ($respuesta_22 === '168') {  
         $verificar_22 = "correcto";
     } elseif ($respuesta_22 === '') {
         $verificar_22 = '';
@@ -330,7 +387,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
    $respuesta_23 = isset($_POST['respuesta_23']) ? $_POST['respuesta_23'] : '';
-   if ($respuesta_23 === 'Uniform Memory Access') {  
+   if ($respuesta_23 === '30') {  
        $verificar_23 = "correcto";
    } elseif ($respuesta_23 === '') {
        $verificar_23 = '';
@@ -340,7 +397,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_24 = isset($_POST['respuesta_24']) ? $_POST['respuesta_24'] : '';
-   if ($respuesta_24 === 'NORMA') {  
+   if ($respuesta_24 === '45') {  
        $verificar_24 = "correcto";
    } elseif ($respuesta_24 === '') {
        $verificar_24 = '';
@@ -350,7 +407,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_25 = isset($_POST['respuesta_25']) ? $_POST['respuesta_25'] : '';
-   if ($respuesta_25 === 'distribuida') { 
+   if ($respuesta_25 === '60') { 
        $verificar_25 = "correcto";
    } elseif ($respuesta_25 === '') {
        $verificar_25 = '';
@@ -360,7 +417,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_26 = isset($_POST['respuesta_26']) ? $_POST['respuesta_26'] : '';
-   if ($respuesta_26 === 'fisicamente compartida') {  
+   if ($respuesta_26 === '75') {  
        $verificar_26 = "correcto";
    } elseif ($respuesta_26 === '') {
        $verificar_26 = '';
@@ -370,7 +427,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_27 = isset($_POST['respuesta_27']) ? $_POST['respuesta_27'] : '';
-   if ($respuesta_27 === 'fisicamente distribuida/logicamente compartida') {  
+   if ($respuesta_27 === '90') {  
        $verificar_27 = "correcto";
    } elseif ($respuesta_27 === '') {
        $verificar_27 = '';
@@ -380,7 +437,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_28 = isset($_POST['respuesta_28']) ? $_POST['respuesta_28'] : '';
-   if ($respuesta_28 === 'Con interfaces bien definidas') {  
+   if ($respuesta_28 === '105') {  
        $verificar_28 = "correcto";
    } elseif ($respuesta_28 === '') {
        $verificar_28 = '';
@@ -390,7 +447,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_29 = isset($_POST['respuesta_29']) ? $_POST['respuesta_29'] : '';
-   if ($respuesta_29 === 'Encapsulado') {  
+   if ($respuesta_29 === '120') {  
        $verificar_29 = "correcto";
    } elseif ($respuesta_29 === '') {
        $verificar_29 = '';
@@ -400,7 +457,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_30 = isset($_POST['respuesta_30']) ? $_POST['respuesta_30'] : '';
-   if ($respuesta_30 === 'Reemplazable dentro de un contexto') {  
+   if ($respuesta_30 === '135') {  
        $verificar_30 = "correcto";
    } elseif ($respuesta_30 === '') {
        $verificar_30 = '';
@@ -410,7 +467,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_31 = isset($_POST['respuesta_31']) ? $_POST['respuesta_31'] : '';
-   if ($respuesta_31 === 'Con propiedades externamente visibles') {  
+   if ($respuesta_31 === '150') {  
        $verificar_31 = "correcto";
    } elseif ($respuesta_31 === '') {
        $verificar_31 = '';
@@ -420,7 +477,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_32 = isset($_POST['respuesta_32']) ? $_POST['respuesta_32'] : '';
-   if ($respuesta_32 === 'Modular') {  
+   if ($respuesta_32 === '165') {  
        $verificar_32 = "correcto";
    } elseif ($respuesta_32 === '') {
        $verificar_32 = '';
@@ -430,7 +487,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_33 = isset($_POST['respuesta_33']) ? $_POST['respuesta_33'] : '';
-   if ($respuesta_33 === 'Reutilizable') {  
+   if ($respuesta_33 === '180') {  
        $verificar_33 = "correcto";
    } elseif ($respuesta_33 === '') {
        $verificar_33 = '';
@@ -439,7 +496,7 @@ if ($_POST) {
    }
 
     $respuesta_34 = isset($_POST['respuesta_34']) ? $_POST['respuesta_34'] : '';
-    if ($respuesta_34 === 'operaciones') { 
+    if ($respuesta_34 === '32') { 
         $verificar_34 = "correcto";
     } elseif ($respuesta_34 === '') {
         $verificar_34 = '';
@@ -448,7 +505,7 @@ if ($_POST) {
     }
 
     $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
-    if ($respuesta_35 === 'definiciones') { 
+    if ($respuesta_35 === '48') { 
         $verificar_35 = "correcto";
     } elseif ($respuesta_35 === '') {
         $verificar_35 = '';
@@ -457,7 +514,7 @@ if ($_POST) {
     }
 
     $respuesta_36 = isset($_POST['respuesta_36']) ? $_POST['respuesta_36'] : '';
-    if ($respuesta_36 === 'diseño') { 
+    if ($respuesta_36 === '64') { 
         $verificar_36 = "correcto";
     } elseif ($respuesta_36 === '') {
     $verificar_36 = '';
@@ -466,7 +523,7 @@ if ($_POST) {
     }
 
     $respuesta_37 = isset($_POST['respuesta_37']) ? $_POST['respuesta_37'] : '';
-    if ($respuesta_37 === 'basarse') { 
+    if ($respuesta_37 === '80') { 
         $verificar_37 = "correcto";
     } elseif ($respuesta_37 === '') {
         $verificar_37 = '';
@@ -475,7 +532,7 @@ if ($_POST) {
     }
 
     $respuesta_38 = isset($_POST['respuesta_38']) ? $_POST['respuesta_38'] : '';
-    if ($respuesta_38 === 'conjunto minimo') { 
+    if ($respuesta_38 === '96') { 
         $verificar_38 = "correcto";
     } elseif ($respuesta_38 === '') {
         $verificar_38 = '';
@@ -484,7 +541,7 @@ if ($_POST) {
     }
 
     $respuesta_39 = isset($_POST['respuesta_39']) ? $_POST['respuesta_39'] : '';
-    if ($respuesta_39 === 'no dependan de otras') { 
+    if ($respuesta_39 === '112') { 
         $verificar_39 = "correcto";
     } elseif ($respuesta_39 === '') {
         $verificar_39 = '';
@@ -493,7 +550,7 @@ if ($_POST) {
     }
 
     $respuesta_40 = isset($_POST['respuesta_40']) ? $_POST['respuesta_40'] : '';
-    if ($respuesta_40 === 'su mismo nivel') { 
+    if ($respuesta_40 === '128') { 
         $verificar_40 = "correcto";
     } elseif ($respuesta_40 === '') {
         $verificar_40 = '';
@@ -502,7 +559,7 @@ if ($_POST) {
     }
 
     $respuesta_41 = isset($_POST['respuesta_41']) ? $_POST['respuesta_41'] : '';
-    if ($respuesta_41 === 'Primitividad') { 
+    if ($respuesta_41 === '144') { 
         $verificar_41 = "correcto";
     } elseif ($respuesta_41 === '') {
         $verificar_41 = '';
@@ -511,11 +568,7 @@ if ($_POST) {
     }
 
     $respuesta_42 = isset($_POST['respuesta_42']) ? $_POST['respuesta_42'] : '';
-    if ($respuesta_42 === 'Descomposicion y Modularizacion'
-    || $respuesta_42 === 'Descomposicion y modularizacion'
-    || $respuesta_42 === 'descomposicion y modularizacion'
-
-    ) { 
+    if ($respuesta_42 === '160') { 
         $verificar_42 = "correcto";
     } elseif ($respuesta_42 === '') {
         $verificar_42 = '';
@@ -524,7 +577,7 @@ if ($_POST) {
     }
 
     $respuesta_43 = isset($_POST['respuesta_43']) ? $_POST['respuesta_43'] : '';
-    if ($respuesta_43 === 'diferentes funcionalidades') { 
+    if ($respuesta_43 === '176') { 
         $verificar_43 = "correcto";
     } elseif ($respuesta_43 === '') {
         $verificar_43 = '';
@@ -533,7 +586,7 @@ if ($_POST) {
     }
 
     $respuesta_44 = isset($_POST['respuesta_44']) ? $_POST['respuesta_44'] : '';
-    if ($respuesta_44 === 'responsabilidades en diferentes componentes') { 
+    if ($respuesta_44 === '192') { 
         $verificar_44 = "correcto";
     } elseif ($respuesta_44 === '') {
     $verificar_44 = '';
@@ -542,11 +595,7 @@ if ($_POST) {
     }
 
     $respuesta_45 = isset($_POST['respuesta_45']) ? $_POST['respuesta_45'] : '';
-    if ($respuesta_45 === 'Separar Interfaz de Implementacion'
-    || $respuesta_45 === 'separar interfaz de implementacion'
-    || $respuesta_45 === 'Separar interfaz de implementacion'
-
-    ) { 
+    if ($respuesta_45 === '34') { 
         $verificar_45 = "correcto";
     } elseif ($respuesta_45 === '') {
     $verificar_45 = '';
@@ -555,7 +604,7 @@ if ($_POST) {
     }
 
     $respuesta_46 = isset($_POST['respuesta_46']) ? $_POST['respuesta_46'] : '';
-    if ($respuesta_46 === 'detalles internos') { 
+    if ($respuesta_46 === '51') { 
         $verificar_46 = "correcto";
     } elseif ($respuesta_46 === '') {
     $verificar_46 = '';
@@ -564,7 +613,7 @@ if ($_POST) {
     }
 
     $respuesta_47 = isset($_POST['respuesta_47']) ? $_POST['respuesta_47'] : '';
-    if ($respuesta_47 === 'estructura y comportamiento') { 
+    if ($respuesta_47 === '68') { 
         $verificar_47 = "correcto";
     } elseif ($respuesta_47 === '') {
         $verificar_47 = '';
@@ -573,7 +622,7 @@ if ($_POST) {
     }
 
     $respuesta_48 = isset($_POST['respuesta_48']) ? $_POST['respuesta_48'] : '';
-    if ($respuesta_48 === 'componente') { 
+    if ($respuesta_48 === '85') { 
         $verificar_48 = "correcto";
     } elseif ($respuesta_48 === '') {
     $verificar_48 = '';
@@ -582,7 +631,7 @@ if ($_POST) {
     }
 
     $respuesta_49 = isset($_POST['respuesta_49']) ? $_POST['respuesta_49'] : '';
-    if ($respuesta_49 === 'ocultan mediante') { 
+    if ($respuesta_49 === '102') { 
         $verificar_49 = "correcto";
     } elseif ($respuesta_49 === '') {
     $verificar_49 = '';
@@ -591,7 +640,7 @@ if ($_POST) {
     }
 
     $respuesta_50 = isset($_POST['respuesta_50']) ? $_POST['respuesta_50'] : '';
-    if ($respuesta_50 === 'especificacion') { 
+    if ($respuesta_50 === '119') { 
         $verificar_50 = "correcto";
     } elseif ($respuesta_50 === '') {
     $verificar_50 = '';
@@ -600,7 +649,7 @@ if ($_POST) {
     }
 
  $respuesta_51 = isset($_POST['respuesta_51']) ? $_POST['respuesta_51'] : '';
-if ($respuesta_51 === 'propiedades externamente visibles') { 
+if ($respuesta_51 === '136') { 
     $verificar_51 = "correcto";
 } elseif ($respuesta_51 === '') {
     $verificar_51 = '';
@@ -609,7 +658,7 @@ if ($respuesta_51 === 'propiedades externamente visibles') {
 }
 
  $respuesta_52 = isset($_POST['respuesta_52']) ? $_POST['respuesta_52'] : '';
-if ($respuesta_52 === 'Abstraccion') { 
+if ($respuesta_52 === '153') { 
     $verificar_52 = "correcto";
 } elseif ($respuesta_52 === '') {
     $verificar_52 = '';
@@ -618,7 +667,7 @@ if ($respuesta_52 === 'Abstraccion') {
 }
 
  $respuesta_53 = isset($_POST['respuesta_53']) ? $_POST['respuesta_53'] : '';
-if ($respuesta_53 === 'Generalizacion') { 
+if ($respuesta_53 === '170') { 
     $verificar_53 = "correcto";
 } elseif ($respuesta_53 === '') {
     $verificar_53 = '';
@@ -627,7 +676,7 @@ if ($respuesta_53 === 'Generalizacion') {
 }
 
  $respuesta_54 = isset($_POST['respuesta_54']) ? $_POST['respuesta_54'] : '';
-if ($respuesta_54 === 'definicion o concepto') { 
+if ($respuesta_54 === '187') { 
     $verificar_54 = "correcto";
 } elseif ($respuesta_54 === '') {
     $verificar_54 = '';
@@ -636,7 +685,7 @@ if ($respuesta_54 === 'definicion o concepto') {
 }
 
  $respuesta_55 = isset($_POST['respuesta_55']) ? $_POST['respuesta_55'] : '';
-if ($respuesta_55 === 'proposito particular') { 
+if ($respuesta_55 === '204') { 
     $verificar_55 = "correcto";
 } elseif ($respuesta_55 === '') {
     $verificar_55 = '';
@@ -646,7 +695,7 @@ if ($respuesta_55 === 'proposito particular') {
 
 
  $respuesta_56 = isset($_POST['respuesta_56']) ? $_POST['respuesta_56'] : '';
-if ($respuesta_56 === 'en cuenta solamente') { 
+if ($respuesta_56 === '36') { 
     $verificar_56 = "correcto";
 } elseif ($respuesta_56 === '') {
     $verificar_56 = '';
@@ -655,7 +704,7 @@ if ($respuesta_56 === 'en cuenta solamente') {
 }
 
  $respuesta_57 = isset($_POST['respuesta_57']) ? $_POST['respuesta_57'] : '';
-if ($respuesta_57 === 'informacion relevante') { 
+if ($respuesta_57 === '54') { 
     $verificar_57 = "correcto";
 } elseif ($respuesta_57 === '') {
     $verificar_57 = '';
@@ -664,11 +713,7 @@ if ($respuesta_57 === 'informacion relevante') {
 }
 
  $respuesta_58 = isset($_POST['respuesta_58']) ? $_POST['respuesta_58'] : '';
-if ($respuesta_58 === 'Form Follows Function'
-|| $respuesta_58 === 'Form follows function'
-|| $respuesta_58 === 'form follows function'
-
-) { 
+if ($respuesta_58 === '72') { 
     $verificar_58 = "correcto";
 } elseif ($respuesta_58 === '') {
     $verificar_58 = '';
@@ -677,7 +722,7 @@ if ($respuesta_58 === 'Form Follows Function'
 }
 
  $respuesta_59 = isset($_POST['respuesta_59']) ? $_POST['respuesta_59'] : '';
-if ($respuesta_59 === 'detallados') { 
+if ($respuesta_59 === '90') { 
     $verificar_59 = "correcto";
 } elseif ($respuesta_59 === '') {
     $verificar_59 = '';
@@ -686,7 +731,7 @@ if ($respuesta_59 === 'detallados') {
 }
 
  $respuesta_60 = isset($_POST['respuesta_60']) ? $_POST['respuesta_60'] : '';
-if ($respuesta_60 === 'globales del comportamiento') { 
+if ($respuesta_60 === '108') { 
     $verificar_60 = "correcto";
 } elseif ($respuesta_60 === '') {
     $verificar_60 = '';
@@ -695,7 +740,7 @@ if ($respuesta_60 === 'globales del comportamiento') {
 }
 
  $respuesta_61 = isset($_POST['respuesta_61']) ? $_POST['respuesta_61'] : '';
-if ($respuesta_61 === 'determinar la definicion') { 
+if ($respuesta_61 === '126') { 
     $verificar_61 = "correcto";
 } elseif ($respuesta_61 === '') {
     $verificar_61 = '';
@@ -704,7 +749,7 @@ if ($respuesta_61 === 'determinar la definicion') {
 }
 
  $respuesta_62 = isset($_POST['respuesta_62']) ? $_POST['respuesta_62'] : '';
-if ($respuesta_62 === 'estructura mas adecuada') { 
+if ($respuesta_62 === '144') { 
     $verificar_62 = "correcto";
 } elseif ($respuesta_62 === '') {
     $verificar_62 = '';
@@ -713,7 +758,7 @@ if ($respuesta_62 === 'estructura mas adecuada') {
 }
 
  $respuesta_63 = isset($_POST['respuesta_63']) ? $_POST['respuesta_63'] : '';
-if ($respuesta_63 === 'Acoplamiento') { 
+if ($respuesta_63 === '162') { 
     $verificar_63 = "correcto";
 } elseif ($respuesta_63 === '') {
     $verificar_63 = '';
@@ -722,7 +767,7 @@ if ($respuesta_63 === 'Acoplamiento') {
 }
 
  $respuesta_64 = isset($_POST['respuesta_64']) ? $_POST['respuesta_64'] : '';
-if ($respuesta_64 === 'cuan interdependientes') { 
+if ($respuesta_64 === '180') { 
     $verificar_64 = "correcto";
 } elseif ($respuesta_64 === '') {
     $verificar_64 = '';
@@ -731,7 +776,7 @@ if ($respuesta_64 === 'cuan interdependientes') {
 }
 
  $respuesta_65 = isset($_POST['respuesta_65']) ? $_POST['respuesta_65'] : '';
-if ($respuesta_65 === 'los componentes o modulos') { 
+if ($respuesta_65 === '198') { 
     $verificar_65 = "correcto";
 } elseif ($respuesta_65 === '') {
     $verificar_65 = '';
@@ -740,7 +785,7 @@ if ($respuesta_65 === 'los componentes o modulos') {
 }
 
  $respuesta_66 = isset($_POST['respuesta_66']) ? $_POST['respuesta_66'] : '';
-if ($respuesta_66 === 'sistema') { 
+if ($respuesta_66 === '216') { 
     $verificar_66 = "correcto";
 } elseif ($respuesta_66 === '') {
     $verificar_66 = '';
@@ -749,7 +794,7 @@ if ($respuesta_66 === 'sistema') {
 }
 
  $respuesta_67 = isset($_POST['respuesta_67']) ? $_POST['respuesta_67'] : '';
-if ($respuesta_67 === 'Encapsulacion') { 
+if ($respuesta_67 === '38') { 
     $verificar_67 = "correcto";
 } elseif ($respuesta_67 === '') {
     $verificar_67 = '';
@@ -758,7 +803,7 @@ if ($respuesta_67 === 'Encapsulacion') {
 }
 
  $respuesta_68 = isset($_POST['respuesta_68']) ? $_POST['respuesta_68'] : '';
-if ($respuesta_68 === 'Agrupar') { 
+if ($respuesta_68 === '57') { 
     $verificar_68 = "correcto";
 } elseif ($respuesta_68 === '') {
     $verificar_68 = '';
@@ -767,7 +812,7 @@ if ($respuesta_68 === 'Agrupar') {
 }
 
  $respuesta_69 = isset($_POST['respuesta_69']) ? $_POST['respuesta_69'] : '';
-if ($respuesta_69 === 'empaquetar') { 
+if ($respuesta_69 === '76') { 
     $verificar_69 = "correcto";
 } elseif ($respuesta_69 === '') {
     $verificar_69 = '';
@@ -776,7 +821,7 @@ if ($respuesta_69 === 'empaquetar') {
 }
 
  $respuesta_70 = isset($_POST['respuesta_70']) ? $_POST['respuesta_70'] : '';
-if ($respuesta_70 === 'detalles internos') { 
+if ($respuesta_70 === '95') { 
     $verificar_70 = "correcto";
 } elseif ($respuesta_70 === '') {
     $verificar_70 = '';
@@ -785,7 +830,7 @@ if ($respuesta_70 === 'detalles internos') {
 }
 
  $respuesta_71 = isset($_POST['respuesta_71']) ? $_POST['respuesta_71'] : '';
-if ($respuesta_71 === 'abstraccion') { 
+if ($respuesta_71 === '114') { 
     $verificar_71 = "correcto";
 } elseif ($respuesta_71 === '') {
     $verificar_71 = '';
@@ -794,7 +839,7 @@ if ($respuesta_71 === 'abstraccion') {
 }
 
  $respuesta_72 = isset($_POST['respuesta_72']) ? $_POST['respuesta_72'] : '';
-if ($respuesta_72 === 'componente o modulo') { 
+if ($respuesta_72 === '133') { 
     $verificar_72 = "correcto";
 } elseif ($respuesta_72 === '') {
     $verificar_72 = '';
@@ -803,7 +848,7 @@ if ($respuesta_72 === 'componente o modulo') {
 }
 
  $respuesta_73 = isset($_POST['respuesta_73']) ? $_POST['respuesta_73'] : '';
-if ($respuesta_73 === 'escalabilidad') { 
+if ($respuesta_73 === '152') { 
     $verificar_73 = "correcto";
 } elseif ($respuesta_73 === '') {
     $verificar_73 = '';
@@ -812,7 +857,7 @@ if ($respuesta_73 === 'escalabilidad') {
 }
 
  $respuesta_74 = isset($_POST['respuesta_74']) ? $_POST['respuesta_74'] : '';
-if ($respuesta_74 === 'SIMD') { 
+if ($respuesta_74 === '171') { 
     $verificar_74 = "correcto";
 } elseif ($respuesta_74 === '') {
     $verificar_74 = '';
@@ -821,7 +866,7 @@ if ($respuesta_74 === 'SIMD') {
 }
 
  $respuesta_75 = isset($_POST['respuesta_75']) ? $_POST['respuesta_75'] : '';
-if ($respuesta_75 === 'define') { 
+if ($respuesta_75 === '190') { 
     $verificar_75 = "correcto";
 } elseif ($respuesta_75 === '') {
     $verificar_75 = '';
@@ -830,7 +875,7 @@ if ($respuesta_75 === 'define') {
 }
 
  $respuesta_76 = isset($_POST['respuesta_76']) ? $_POST['respuesta_76'] : '';
-if ($respuesta_76 === 'La forma sigue a la funcion') { 
+if ($respuesta_76 === '209') { 
     $verificar_76 = "correcto";
 } elseif ($respuesta_76 === '') {
     $verificar_76 = '';
@@ -839,7 +884,7 @@ if ($respuesta_76 === 'La forma sigue a la funcion') {
 }
 
  $respuesta_77 = isset($_POST['respuesta_77']) ? $_POST['respuesta_77'] : '';
-if ($respuesta_77 === 'ayuda a determinar') { 
+if ($respuesta_77 === '228') { 
     $verificar_77 = "correcto";
 } elseif ($respuesta_77 === '') {
     $verificar_77 = '';
@@ -848,7 +893,7 @@ if ($respuesta_77 === 'ayuda a determinar') {
 }
 
  $respuesta_78 = isset($_POST['respuesta_78']) ? $_POST['respuesta_78'] : '';
-if ($respuesta_78 === 'donde empezar') { 
+if ($respuesta_78 === '40') { 
     $verificar_78 = "correcto";
 } elseif ($respuesta_78 === '') {
     $verificar_78 = '';
@@ -857,7 +902,7 @@ if ($respuesta_78 === 'donde empezar') {
 }
 
  $respuesta_79 = isset($_POST['respuesta_79']) ? $_POST['respuesta_79'] : '';
-if ($respuesta_79 === 'definir la arquitectura') { 
+if ($respuesta_79 === '60') { 
     $verificar_79 = "correcto";
 } elseif ($respuesta_79 === '') {
     $verificar_79 = '';
@@ -1264,7 +1309,7 @@ if ($respuesta_121 === '144') {
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 300vh;
+    height: 250vh;
     }
 
 </style>
@@ -1544,353 +1589,47 @@ function ocultarMensaje4() {
 </head>
 <body>  
 
-<form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
+<form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
 <div class="form-container">
 
     
 <div class="seccion izquierda"> 
 <p>
-Cuando 
-<input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="15">
-  que 
-<input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="26">
-  de un 
-<input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="13">
- , 
-<input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="13">
- , estoy cometiendo un error
-<input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="13">
- 
+ DistilBERT (Distilled Bidirectional Encoder Representations from Transformers) achieved the highest accuracy at 88%, 
+ outperforming all other models by a clear margin.
 </p>
-     <button type="submit">Enviar</button> 
-    <?php echo $verificar_1 ?>
-    <?php echo $verificar_2 ?>
-    <?php echo $verificar_3 ?>
-    <?php echo $verificar_4 ?>
-    <?php echo $verificar_5 ?>
-    <hr>
+ 
 <p>
-    Cuando hago un 
-    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="21">
-      (UML) que 
-    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="21">
-      las 
-    <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="21">
-     , estoy cometiendo un error
-    <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="13">
+Bi-LSTM (Bidirectional Long Short-Term Memory) (79.5%) and Dense NN (Dense Neural Network) (77%) showed strong results, 
+while Vanilla RNN (Vanilla Recurrent Neural Network) and the Dummy Classifier both remained at 50% — equivalent to 
+random guessing.
 
 </p>
 
-    <button type="submit">Enviar</button> 
-    <?php echo $verificar_6 ?>
-    <?php echo $verificar_7 ?>  
-    <?php echo $verificar_8 ?>
-    <?php echo $verificar_9 ?>
-    <hr>
-<p>Cuando 
-<input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="13">    
-  que 
-<input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="13">
-  a la 
-<input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="26">
- , estoy
-cometiendo un error
-<input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="13">
+<p>
+Transformer-based architecture (based on self-attention mechanism) proves most effective for tweet 
+sentiment classification.
+
 </p>
-    <button type="submit">Enviar</button> 
-    <?php echo $verificar_10 ?>
-    <?php echo $verificar_11 ?> 
-    <?php echo $verificar_12 ?>
-    <?php echo $verificar_13 ?>
-    <hr>
-    <h4>indique EL CONCEPTO:</h4>
-    <img src="../../../img/guia_396.png" alt="" width="700">
-    <br><br>
-    <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="6">
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_14 ?>
-    <hr>
-        <img src="../../../img/guia_397.png" alt="" width="700">
-    <br><br>
-    <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="6">
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_15 ?>
-    <hr>
-        <img src="../../../img/guia_398.png" alt="" width="700">
-    <br><br>
-    <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="6">
-    <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="25">
-    <p>
-    Esto es una memoria:
-      <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="41">    
-    </p>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_16 ?>
-    <?php echo $verificar_17 ?>
-     <?php echo $verificar_27 ?>
-     <hr>
-        <img src="../../../img/guia_399.png" alt="" width="700">
-    <br><br>
-    <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="6">
-    <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="23">
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_18 ?>
-    <?php echo $verificar_19 ?>
-    <hr>
-     <img src="../../../img/guia_400.png" alt="" width="700">
-    <br><br>
-    La estructura de una máquina
-    <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="6">
-     <button type="submit">Enviar</button>
-     <?php echo $verificar_20 ?>
-    <hr>
+
  
 
- </div>
+  
+</div>
 
 
 
 
 <div class="seccion derecha">
     
- <img src="../../../img/guia_401.png" alt="" width="700">
-    <br><br>
-    <input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>" size="6">
-     <button type="submit">Enviar</button>
-     <?php echo $verificar_21 ?>
-    <hr>
-     <img src="../../../img/guia_402.png" alt="" width="700">
-    <br><br>
-    <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="6">
-    <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="23">. 
-    <p>Esto es una memoria
-         <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="21">
-    </p>
-     <button type="submit">Enviar</button>
-     <?php echo $verificar_22 ?>
-    <?php echo $verificar_23 ?>
-    <?php echo $verificar_26 ?>
-  <hr>
-     <img src="../../../img/guia_403.png" alt="" width="700">
-    <br><br>
-    <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="6">
-    <p>Esto es una memoria:
-    <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="8">
-    </p>
-      <button type="submit">Enviar</button>
-     <?php echo $verificar_24 ?>
-    <?php echo $verificar_25 ?>
-    <hr>
-    <p>
-    <p>Un componente de software se define como un elemento:</p>
-    </p>
-    <p>
-    <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="31">
-    </p>
-    <p>
-    <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="31">
-    </p>
-    <p>
-    <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="31">
-    </p>
-    <p>
-    <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="35">
-    </p>
-    <p>
-    <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="35">
-    </p>
-    <p>
-    <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="35">
-    </p>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_28 ?>
-    <?php echo $verificar_29 ?>
-    <?php echo $verificar_30 ?>
-    <?php echo $verificar_31 ?>
-    <?php echo $verificar_32 ?>
-    <?php echo $verificar_33 ?>
-    <hr>
-    <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="12">
-    <p>
-    Las 
-    <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="8">
-      o 
-    <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="8">
-      en el 
-    <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="8">
-      deben 
-    <input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="8">
-      en el 
-    <input type="text" name="respuesta_38" value="<?php echo $respuesta_38; ?>" size="15">
-      de que 
-    <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="19">
-      de 
-    <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="12">
-     
-    </p>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_34 ?>
-    <?php echo $verificar_35 ?>
-    <?php echo $verificar_36 ?>
-    <?php echo $verificar_37 ?>
-    <?php echo $verificar_38 ?>
-    <?php echo $verificar_39 ?>
-    <?php echo $verificar_40 ?>
-    <?php echo $verificar_41 ?>
-    <hr>
-    <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="31">
-    <p>
-    Agrupar
-    <input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="21">
-       y 
-    <input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>" size="41">   
-     .
-    </p>
-        <button type="submit">Enviar</button>
- <?php echo $verificar_42 ?>
-    <?php echo $verificar_43 ?>
-    <?php echo $verificar_44 ?>
-    <hr>
-    <input type="text" name="respuesta_45" value="<?php echo $respuesta_45; ?>" size="41">
-    <p>
-    Los 
-    <input type="text" name="respuesta_46" value="<?php echo $respuesta_46; ?>" size="15">
-      de 
-    <input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="25">
-      (i.e., las operaciones) de un
-    <input type="text" name="respuesta_48" value="<?php echo $respuesta_48; ?>" size="8">
-      se 
-    <input type="text" name="respuesta_49" value="<?php echo $respuesta_49; ?>" size="13">
-      la 
-    <input type="text" name="respuesta_50" value="<?php echo $respuesta_50; ?>" size="11">
-      de las 
-    <input type="text" name="respuesta_51" value="<?php echo $respuesta_51; ?>" size="31">
-     .
-    </p>
-     <button type="submit">Enviar</button>
-      <?php echo $verificar_45 ?>
-    <?php echo $verificar_46 ?>
-    <?php echo $verificar_47 ?>
-    <?php echo $verificar_48 ?>
-    <?php echo $verificar_49 ?>
-    <?php echo $verificar_50 ?>
-    <?php echo $verificar_51 ?>
-    <hr>
-    <input type="text" name="respuesta_52" value="<?php echo $respuesta_52; ?>" size="31">
-    <p>
-    <input type="text" name="respuesta_53" value="<?php echo $respuesta_53; ?>" size="12">
-      de una 
-    <input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>" size="18">
-     , que para un 
-    <input type="text" name="respuesta_55" value="<?php echo $respuesta_55; ?>" size="14">
-     , tiene
-    <input type="text" name="respuesta_56" value="<?php echo $respuesta_56; ?>" size="17">
-      la 
-    <input type="text" name="respuesta_57" value="<?php echo $respuesta_57; ?>" size="17">
-     
-    </p>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_52 ?>
-    <?php echo $verificar_53 ?>
-    <?php echo $verificar_54 ?>
-    <?php echo $verificar_55 ?>
-    <?php echo $verificar_56 ?>
-    <?php echo $verificar_57 ?>
-    <hr>
-    <input type="text" name="respuesta_58" value="<?php echo $respuesta_58; ?>" size="17">
-    <p>
-    Los aspectos 
-    <input type="text" name="respuesta_59" value="<?php echo $respuesta_59; ?>" size="8">
-      y 
-    <input type="text" name="respuesta_60" value="<?php echo $respuesta_60; ?>" size="24">
-      (i.e., las operaciones) deben
-    <input type="text" name="respuesta_61" value="<?php echo $respuesta_61; ?>" size="21">
-      de la 
-    <input type="text" name="respuesta_62" value="<?php echo $respuesta_62; ?>" size="21">
-     .
-    </p>
-    <button type="submit">Enviar</button>
-     <?php echo $verificar_58 ?>
-    <?php echo $verificar_59 ?>
-    <?php echo $verificar_60 ?>
-    <?php echo $verificar_61 ?>
-    <?php echo $verificar_62 ?>
-    <hr>
-    <input type="text" name="respuesta_63" value="<?php echo $respuesta_63; ?>" size="17">
-    <p>
-    Determinación de 
-    <input type="text" name="respuesta_64" value="<?php echo $respuesta_64; ?>" size="21">
-      son 
-    <input type="text" name="respuesta_65" value="<?php echo $respuesta_65; ?>" size="25">
-      en un
-    <input type="text" name="respuesta_66" value="<?php echo $respuesta_66; ?>" size="7">
-     
-    </p>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_63 ?>
-    <?php echo $verificar_64 ?>
-    <?php echo $verificar_65 ?>
-    <?php echo $verificar_66 ?>
-    <hr>
-    <input type="text" name="respuesta_67" value="<?php echo $respuesta_67; ?>" size="15">
-    <p>
-    <input type="text" name="respuesta_68" value="<?php echo $respuesta_68; ?>" size="8">
-      y 
-    <input type="text" name="respuesta_69" value="<?php echo $respuesta_69; ?>" size="8">
-      los 
-    <input type="text" name="respuesta_70" value="<?php echo $respuesta_70; ?>" size="15">
-      de una 
-    <input type="text" name="respuesta_71" value="<?php echo $respuesta_71; ?>" size="8">
-      en un 
-    <input type="text" name="respuesta_72" value="<?php echo $respuesta_72; ?>" size="21">
-     . 
-    </p>
-    <button type="submit">Enviar</button>
-      <?php echo $verificar_67 ?>
-<?php echo $verificar_68 ?>
-<?php echo $verificar_69 ?>
-<?php echo $verificar_70 ?>
-<?php echo $verificar_71 ?>
-<?php echo $verificar_72 ?>
-<hr>
-    <p>
-    La estructura de procesamiento que favorece más la 
-    <input type="text" name="respuesta_73" value="<?php echo $respuesta_73; ?>" size="8">
-      es
-    <input type="text" name="respuesta_74" value="<?php echo $respuesta_74; ?>" size="8">
-    </p>
-
-
+  
  
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_73 ?>
-    <?php echo $verificar_74 ?>
     <hr>
-    <p>
-    El diseño arquitectónico de software es un proceso complejo. Siguiendo la ecuación de N.
-    Wirth que 
-    <input type="text" name="respuesta_75" value="<?php echo $respuesta_75; ?>" size="8">
-      el software, el principio de diseño 
-    <input type="text" name="respuesta_76" value="<?php echo $respuesta_76; ?>" size="22">
-      de software. es el que más
-    <input type="text" name="respuesta_77" value="<?php echo $respuesta_77; ?>" size="16">
-      por 
-    <input type="text" name="respuesta_78" value="<?php echo $respuesta_78; ?>" size="12">
-      a 
-    <input type="text" name="respuesta_79" value="<?php echo $respuesta_79; ?>" size="18">
-     .
-    </p>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_75 ?>
-<?php echo $verificar_76 ?>
-<?php echo $verificar_77 ?>
-<?php echo $verificar_78 ?>
-<?php echo $verificar_79 ?>
- <hr>
     <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
     <br>
     <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
     <button type="submit"   >Mostrar Solución</button>
+         
 </div>
 </div>
  </form>
@@ -1899,7 +1638,7 @@ cometiendo un error
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="tercero.php"
+        href="segundo.php"
         role="button"
         width="50px"
         height="50px"

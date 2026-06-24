@@ -87,7 +87,7 @@ $respuesta_66 = 'reconocido'; // No '216'
 
 $respuesta_67 = 'importante'; // No '38'
 $respuesta_68 = 'mantenimiento'; // No '57'
-$respuesta_69 = 'recibir';    // No '76'
+$respuesta_69 = 'Al recibir software';    // No '76'
 $respuesta_70 = 'documentacion'; // No '95'
 $respuesta_71 = 'ingeniero';  // No '114'
 $respuesta_72 = 'metodos';    // No '133'
@@ -199,7 +199,7 @@ $respuesta_171 = 'gestionar';
 $respuesta_172 = 'calidad';
 $respuesta_173 = 'examina';
 $respuesta_174 = 'bien';
-$respuesta_175 = 'formados';
+$respuesta_175 = 'formados estan';
 $respuesta_176 = 'gestion';
 $respuesta_177 = 'usar';
 $respuesta_178 = 'estado';
@@ -1572,7 +1572,9 @@ de la <input type="text" name="respuesta_162" value="<?php echo $respuesta_162; 
     de <input type="text" name="respuesta_165" value="<?php echo $respuesta_165; ?>" size="9"> de la Configuración 
     de Software, <input type="text" name="respuesta_166" value="<?php echo $respuesta_166; ?>" size="9"> de la Ingeniería
     de Software y <input type="text" name="respuesta_167" value="<?php echo $respuesta_167; ?>" size="9"> de Software.
-   Los <input type="text" name="respuesta_168" value="<?php echo $respuesta_168; ?>" size="9"> de CM de software se 
+   Los <input type="text" name="respuesta_168" value="<?php echo $respuesta_168; ?>" size="9"> de 
+   Gestión de la Configuración de Software
+   de software se 
    pueden <input type="text" name="respuesta_169" value="<?php echo $respuesta_169; ?>" size="9"> para 
    <input type="text" name="respuesta_170" value="<?php echo $respuesta_170; ?>" size="9"> y 
    <input type="text" name="respuesta_171" value="<?php echo $respuesta_171; ?>" size="9"> los requerimientos; la

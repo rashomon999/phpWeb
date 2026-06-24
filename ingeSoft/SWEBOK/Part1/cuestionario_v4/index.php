@@ -139,7 +139,9 @@ $respuesta_27 = 'fundamentos de la ingenieria';
    // Verificar la respuesta de la décima pregunta
 $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
 $respuesta_10_dos = strtolower($respuesta_10);
-if ($respuesta_10_dos === 'requerimientos de software') {
+if ($respuesta_10_dos === 'requerimientos de software'
+|| $respuesta_10_dos === 'Requerimientos de software'
+) {
     $verificar_10 = "correcto";
 } elseif ($respuesta_10_dos === '') {
     $verificar_10 = '';
@@ -150,7 +152,9 @@ if ($respuesta_10_dos === 'requerimientos de software') {
 // Verificar la respuesta de la undécima pregunta
 $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
 $respuesta_11_dos = strtolower($respuesta_11);
-if ($respuesta_11_dos === 'arquitectura de software') {
+if ($respuesta_11_dos === 'arquitectura de software'
+|| $respuesta_11_dos === 'Arquitectura de software'
+) {
     $verificar_11 = "correcto";
 } elseif ($respuesta_11_dos === '') {
     $verificar_11 = '';
@@ -161,7 +165,9 @@ if ($respuesta_11_dos === 'arquitectura de software') {
 // Diseño de software
 $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
 $respuesta_12_dos = strtolower($respuesta_12);
-if ($respuesta_12_dos === 'diseño de software') {
+if ($respuesta_12_dos === 'diseño de software'
+|| $respuesta_12_dos === 'Diseño de software'
+) {
     $verificar_12 = "correcto";
 } elseif ($respuesta_12_dos === '') {
     $verificar_12 = '';
@@ -171,7 +177,9 @@ if ($respuesta_12_dos === 'diseño de software') {
 
 // Construcción de software
 $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-if ($respuesta_13 === 'construccion de software') {
+if ($respuesta_13 === 'construccion de software'
+|| $respuesta_13 === 'Construccion de software'
+) {
     $verificar_13 = "correcto";
 } elseif ($respuesta_13 === '') {
     $verificar_13 = '';
@@ -181,7 +189,9 @@ if ($respuesta_13 === 'construccion de software') {
 
 // Pruebas de software
 $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-if ($respuesta_14 === 'pruebas de software') {
+if ($respuesta_14 === 'pruebas de software'
+|| $respuesta_14 === 'Pruebas de software'
+) {
     $verificar_14 = "correcto";
 } elseif ($respuesta_14 === '') {
     $verificar_14 = '';
@@ -191,7 +201,9 @@ if ($respuesta_14 === 'pruebas de software') {
 
 // Mantenimiento de software
 $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-if ($respuesta_15 === 'mantenimiento de software') {
+if ($respuesta_15 === 'mantenimiento de software'
+|| $respuesta_15 === 'Mantenimiento de software'
+) {
     $verificar_15 = "correcto";
 } elseif ($respuesta_15 === '') {
     $verificar_15 = '';
@@ -201,7 +213,9 @@ if ($respuesta_15 === 'mantenimiento de software') {
 
 // Gestión de configuración del software
 $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-if ($respuesta_16 === 'gestion de la configuracion del software') {
+if ($respuesta_16 === 'gestion de la configuracion del software'
+|| $respuesta_16 === 'Gestion de la configuracion del software'
+) {
     $verificar_16 = "correcto";
 } elseif ($respuesta_16 === '') {
     $verificar_16 = '';
@@ -211,7 +225,9 @@ if ($respuesta_16 === 'gestion de la configuracion del software') {
 
 // Gestión de ingeniería de software
 $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-if ($respuesta_17 === 'gestion de la ingenieria de software') {
+if ($respuesta_17 === 'gestion de la ingenieria de software'
+|| $respuesta_17 === 'Gestion de la ingenieria de software'
+) {
     $verificar_17 = "correcto";
 } elseif ($respuesta_17 === '') {
     $verificar_17 = '';
@@ -221,7 +237,9 @@ if ($respuesta_17 === 'gestion de la ingenieria de software') {
 
 // Proceso de ingeniería de software
 $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-if ($respuesta_18 === 'proceso de ingenieria de software') {
+if ($respuesta_18 === 'proceso de ingenieria de software'
+|| $respuesta_18 === 'Proceso de ingenieria de software'
+) {
     $verificar_18 = "correcto";
 } elseif ($respuesta_18 === '') {
     $verificar_18 = '';
@@ -231,7 +249,9 @@ if ($respuesta_18 === 'proceso de ingenieria de software') {
 
 // Modelos y métodos de ingeniería de software
 $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-if ($respuesta_19 === 'modelos y metodos de ingenieria de software') {
+if ($respuesta_19 === 'modelos y metodos de ingenieria de software'
+|| $respuesta_19 === 'Modelos y metodos de ingenieria de software'
+) {
     $verificar_19 = "correcto";
 } elseif ($respuesta_19 === '') {
     $verificar_19 = '';
@@ -241,7 +261,9 @@ if ($respuesta_19 === 'modelos y metodos de ingenieria de software') {
 
 // Calidad de software
 $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
-if ($respuesta_20 === 'calidad de software') {
+if ($respuesta_20 === 'calidad de software'
+|| $respuesta_20 === 'Calidad de software'
+) {
     $verificar_20 = "correcto";
 } elseif ($respuesta_20 === '') {
     $verificar_20 = '';
@@ -251,7 +273,9 @@ if ($respuesta_20 === 'calidad de software') {
 
 // Seguridad de software (nueva en V4.0)
 $respuesta_21 = isset($_POST['respuesta_21']) ? $_POST['respuesta_21'] : '';
-if ($respuesta_21 === 'seguridad de software') {
+if ($respuesta_21 === 'seguridad de software'
+|| $respuesta_21 === 'Seguridad de software'
+) {
     $verificar_21 = "correcto";
 } elseif ($respuesta_21 === '') {
     $verificar_21 = '';
@@ -261,7 +285,9 @@ if ($respuesta_21 === 'seguridad de software') {
 
 // Práctica profesional
 $respuesta_22 = isset($_POST['respuesta_22']) ? $_POST['respuesta_22'] : '';
-if ($respuesta_22 === 'practica profesional de la ingenieria de software') {
+if ($respuesta_22 === 'practica profesional de la ingenieria de software'
+|| $respuesta_22 === 'Practica profesional de la ingenieria de software'
+) {
     $verificar_22 = "correcto";
 } elseif ($respuesta_22 === '') {
     $verificar_22 = '';
@@ -271,7 +297,9 @@ if ($respuesta_22 === 'practica profesional de la ingenieria de software') {
 
 // Economía de la ingeniería
 $respuesta_23 = isset($_POST['respuesta_23']) ? $_POST['respuesta_23'] : '';
-if ($respuesta_23 === 'economia de la ingenieria de software') {
+if ($respuesta_23 === 'economia de la ingenieria de software'
+|| $respuesta_23 === 'economia de la ingenieria de software'
+) {
     $verificar_23 = "correcto";
 } elseif ($respuesta_23 === '') {
     $verificar_23 = '';
@@ -281,7 +309,9 @@ if ($respuesta_23 === 'economia de la ingenieria de software') {
 
 // Operaciones de ingeniería de software (nueva en V4.0)
 $respuesta_24 = isset($_POST['respuesta_24']) ? $_POST['respuesta_24'] : '';
-if ($respuesta_24 === 'operaciones de ingenieria de software') {
+if ($respuesta_24 === 'operaciones de ingenieria de software'
+|| $respuesta_24 === 'Operaciones de ingenieria de software'
+) {
     $verificar_24 = "correcto";
 } elseif ($respuesta_24 === '') {
     $verificar_24 = '';
@@ -291,7 +321,9 @@ if ($respuesta_24 === 'operaciones de ingenieria de software') {
 
 // Fundamentos de la computación
 $respuesta_25 = isset($_POST['respuesta_25']) ? $_POST['respuesta_25'] : '';
-if ($respuesta_25 === 'fundamentos de la computacion') {
+if ($respuesta_25 === 'fundamentos de la computacion'
+|| $respuesta_25 === 'Fundamentos de la computacion'
+) {
     $verificar_25 = "correcto";
 } elseif ($respuesta_25 === '') {
     $verificar_25 = '';
@@ -301,7 +333,9 @@ if ($respuesta_25 === 'fundamentos de la computacion') {
 
 // Fundamentos matemáticos
 $respuesta_26 = isset($_POST['respuesta_26']) ? $_POST['respuesta_26'] : '';
-if ($respuesta_26 === 'fundamentos matematicos') {
+if ($respuesta_26 === 'fundamentos matematicos'
+|| $respuesta_26 === 'Fundamentos matematicos'
+) {
     $verificar_26 = "correcto";
 } elseif ($respuesta_26 === '') {
     $verificar_26 = '';
@@ -311,7 +345,9 @@ if ($respuesta_26 === 'fundamentos matematicos') {
 
 // Fundamentos de la ingeniería
 $respuesta_27 = isset($_POST['respuesta_27']) ? $_POST['respuesta_27'] : '';
-if ($respuesta_27 === 'fundamentos de la ingenieria') {
+if ($respuesta_27 === 'fundamentos de la ingenieria'
+|| $respuesta_27 === 'Fundamentos de la ingenieria'
+) {
     $verificar_27 = "correcto";
 } elseif ($respuesta_27 === '') {
     $verificar_27 = '';

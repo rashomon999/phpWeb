@@ -154,7 +154,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   $respuesta_7 = strtolower($respuesta_7);
+
    if ($respuesta_7 === 'IX' || $respuesta_7 === '9') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
@@ -459,13 +459,17 @@ if ($_POST) {
      $respuesta_34_dos = str_replace(' ','',subject: $respuesta_34);
 
 
-if ($respuesta_34_dos === 'ifx>amtheni:=m+1') { 
+if ($respuesta_34_dos === 'ifx>amtheni:=m+1'
+|| $respuesta_34_dos === 'ifx>a[m]theni:=m+1'
+) { 
     $verificar_34 = "correcto";
 } elseif ($respuesta_34_dos === '') {
     $verificar_34 = '';
 } else {
     $verificar_34 = "incorrecto";
 }
+
+
 
  $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
       $respuesta_35_dos = str_replace(' ','',subject: $respuesta_35);
@@ -482,6 +486,8 @@ if ($respuesta_35_dos === 'elsej:=m') {
        $respuesta_36_dos = str_replace(' ','',subject: $respuesta_36);
 if ($respuesta_36_dos === 'ifx=aithenlocation:=i'
 || $respuesta_36_dos === 'ifai=xthenlocation:=i'
+|| $respuesta_36_dos === 'ifa[i]=xthenlocation:=i'
+|| $respuesta_36_dos === 'ifx=a[i]thenlocation:=i'
 ) { 
     $verificar_36 = "correcto";
 } elseif ($respuesta_36_dos === '') {
@@ -534,7 +540,9 @@ if ($respuesta_40_dos === 'forj:=1ton-i') {
  $respuesta_41 = isset($_POST['respuesta_41']) ? $_POST['respuesta_41'] : '';
   $respuesta_41_dos = str_replace(' ','',subject: $respuesta_41);
 
-if ($respuesta_41_dos === 'ifaj>aj+1then') { 
+if ($respuesta_41_dos === 'ifaj>aj+1then'
+|| $respuesta_41_dos === 'ifa[j]>a[j+1]then'
+) { 
     $verificar_41 = "correcto";
 } elseif ($respuesta_41_dos === '') {
     $verificar_41 = '';
@@ -545,7 +553,9 @@ if ($respuesta_41_dos === 'ifaj>aj+1then') {
   $respuesta_42 = isset($_POST['respuesta_42']) ? $_POST['respuesta_42'] : '';
     $respuesta_42_dos = str_replace(' ','',subject: $respuesta_42);
 
-if ($respuesta_42_dos === 'temp:=aj') { 
+if ($respuesta_42_dos === 'temp:=aj'
+|| $respuesta_42_dos === 'temp:=a[j]'
+) { 
     $verificar_42 = "correcto";
 } elseif ($respuesta_42_dos === '') {
     $verificar_42 = '';
@@ -556,7 +566,9 @@ if ($respuesta_42_dos === 'temp:=aj') {
  $respuesta_43 = isset($_POST['respuesta_43']) ? $_POST['respuesta_43'] : '';
  $respuesta_43_dos = str_replace(' ','',subject: $respuesta_43);
 
-if ($respuesta_43_dos === 'aj:=aj+1') { 
+if ($respuesta_43_dos === 'aj:=aj+1'
+|| $respuesta_43_dos === 'a[j]:=a[j+1]'
+) { 
     $verificar_43 = "correcto";
 } elseif ($respuesta_43_dos === '') {
     $verificar_43 = '';
@@ -569,7 +581,9 @@ if ($respuesta_43_dos === 'aj:=aj+1') {
  $respuesta_44 = isset($_POST['respuesta_44']) ? $_POST['respuesta_44'] : '';
   $respuesta_44_dos = str_replace(' ','',subject: $respuesta_44);
 
-if ($respuesta_44_dos === 'aj+1:=temp') { 
+if ($respuesta_44_dos === 'aj+1:=temp'
+|| $respuesta_44_dos === 'a[j+1]:=temp'
+) { 
     $verificar_44 = "correcto";
 } elseif ($respuesta_44_dos === '') {
     $verificar_44 = '';
@@ -604,7 +618,8 @@ if ($respuesta_46_dos === 'i:=1') {
      $respuesta_47_dos = str_replace(' ','',subject: $respuesta_47);
 
 if ($respuesta_47_dos === 'whileaj>ai'
-|| $respuesta_47_dos === 'whileai<aj'
+|| $respuesta_47_dos === 'whilea[j]>a[i]'
+|| $respuesta_47_dos === 'whilea[i]<a[j]'
 ) { 
     $verificar_47 = "correcto";
 } elseif ($respuesta_47_dos === '') {
@@ -627,7 +642,9 @@ if ($respuesta_48_dos === 'i:=i+1') {
  $respuesta_49 = isset($_POST['respuesta_49']) ? $_POST['respuesta_49'] : '';
        $respuesta_49_dos = str_replace(' ','',subject: $respuesta_49);
 
-if ($respuesta_49_dos === 'm:=aj') { 
+if ($respuesta_49_dos === 'm:=aj'
+|| $respuesta_49_dos === 'm:=a[j]'
+) { 
     $verificar_49 = "correcto";
 } elseif ($respuesta_49_dos === '') {
     $verificar_49 = '';
@@ -649,7 +666,9 @@ if ($respuesta_50_dos === 'fork:=0toj-i-1') {
  $respuesta_51 = isset($_POST['respuesta_51']) ? $_POST['respuesta_51'] : '';
          $respuesta_51_dos = str_replace(' ','',subject: $respuesta_51);
 
-if ($respuesta_51_dos === 'aj-k:=aj-k-1') { 
+if ($respuesta_51_dos === 'aj-k:=aj-k-1'
+|| $respuesta_51_dos === 'a[j-k]:=a[j-k-1]'
+) { 
     $verificar_51 = "correcto";
 } elseif ($respuesta_51_dos === '') {
     $verificar_51 = '';
@@ -660,7 +679,7 @@ if ($respuesta_51_dos === 'aj-k:=aj-k-1') {
  $respuesta_52 = isset($_POST['respuesta_52']) ? $_POST['respuesta_52'] : '';
           $respuesta_52_dos = str_replace(' ','',subject: $respuesta_52);
 
-if ($respuesta_52_dos === 'ai:=m') { 
+if ($respuesta_52_dos === 'a[i]:=m') { 
     $verificar_52 = "correcto";
 } elseif ($respuesta_52_dos === '') {
     $verificar_52 = '';
@@ -695,7 +714,9 @@ if ($respuesta_54_dos === 'j:=1') {
 
  $respuesta_55_dos = str_replace(' ','',subject: $respuesta_55);
 
-if ($respuesta_55_dos === 'while(j≤mandts+j=pj)') { 
+if ($respuesta_55_dos === 'while(j≤mandts+j=pj)'
+|| $respuesta_55_dos === 'while(j≤mandt[s+j]=p[j])'
+) { 
     $verificar_55 = "correcto";
 } elseif ($respuesta_55_dos === '') {
     $verificar_55 = '';
@@ -1250,9 +1271,9 @@ Es el valor que quieres buscar en la lista.
     <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="10">
     <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="10">
         <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="17">
-        <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="24">
+        <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="27">
         <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="11">
-    <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="28">
+    <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="30">
     <input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="18">
     return location{location is the subscript i of the term ai equal to x,
          or 0 if x is not found}
@@ -1302,11 +1323,11 @@ Es el valor que quieres buscar en la lista.
     <h3>EL ORDENAMIENTO BURBUJA</h3>
 <pre><code>procedure bubblesort(a1,… , an: real numbers with n ≥ 2)
     <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="18">
-        <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="18">
-            <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="18">
-                <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="11">
-                <input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="11">
-                <input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>" size="11">
+        <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="20">
+            <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="23">
+                <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="16">
+                <input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="16">
+                <input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>" size="16">
  
 </code></pre>
     <br>
@@ -1331,7 +1352,7 @@ Es el valor que quieres buscar en la lista.
         <input type="text" name="respuesta_48" value="<?php echo $respuesta_48; ?>" size="17">
     <input type="text" name="respuesta_49" value="<?php echo $respuesta_49; ?>" size="17">
     <input type="text" name="respuesta_50" value="<?php echo $respuesta_50; ?>" size="25">
-        <input type="text" name="respuesta_51" value="<?php echo $respuesta_51; ?>" size="17">
+        <input type="text" name="respuesta_51" value="<?php echo $respuesta_51; ?>" size="23">
     <input type="text" name="respuesta_52" value="<?php echo $respuesta_52; ?>" size="17">
 {a1,… , an is in increasing order}</code></pre>    
     <br>
@@ -2041,7 +2062,7 @@ string_match(11, 4, ('a','b','r','a','c','a','d','a','b','r','a'), ('a','b','r',
     tn, p1, p2,… , pm: characters)
         <input type="text" name="respuesta_53" value="<?php echo $respuesta_53; ?>" size="20">
             <input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>" size="17">
-            <input type="text" name="respuesta_55" value="<?php echo $respuesta_55; ?>" size="27">
+            <input type="text" name="respuesta_55" value="<?php echo $respuesta_55; ?>" size="34">
                 <input type="text" name="respuesta_56" value="<?php echo $respuesta_56; ?>" size="17">
             <input type="text" name="respuesta_57" value="<?php echo $respuesta_57; ?>" size="17"> print “s is a valid shift”
              </code></pre>

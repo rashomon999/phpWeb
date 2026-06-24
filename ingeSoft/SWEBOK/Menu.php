@@ -42,9 +42,10 @@
         <br><br>
                 <a class="btn" href=".\Parcial_1\index.php">Parcial 1</a>
                 <a class="btn" href=".\Parcial_2\index.php">Parcial 2</a>
+                <a class="btn" href=".\Parcial3\index.php">Parcial 3</a>
                 <a class="btn" href=".\Patrones\Menu.php">Patrones</a>
                 <a class="btn" href=".\Etica\index.php">Etica</a>
-                <a class="btn" href=".\Parcial3\index.php">Parcial 3</a>
+ 
 
                 
  

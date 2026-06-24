@@ -18,89 +18,55 @@ if ($_POST) {
     
     if ($mostrar_solucion === 'mostrar_solucion') {        
  
- 
- 
-        $respuesta_1 = 'relaciono elementos';
-        $respuesta_2 = 'pertenecen a la especificacion';
-        $respuesta_3 = 'lenguaje';
-        $respuesta_4 = 'de manera errada';
-        $respuesta_5 = 'Sintáctico';
-        $respuesta_6 = 'diagrama de deployment';
-        $respuesta_7 = 'no modela correctamente';
-        $respuesta_8 = 'reglas del negocio/cliente';
-        $respuesta_9 = 'sematico';
-        $respuesta_10 = 'uso elementos';
-        $respuesta_11 = 'no pertenecen';
-        
- 
-        $respuesta_12 = 'especificación de un lenguaje';
-        $respuesta_13 = 'lexico';
-           $respuesta_14 = 'SIMD';
-    $respuesta_15 = 'SISD';
-    $respuesta_16 = 'NUMA';
-    $respuesta_17 = 'Non-Uniform Memory Access';
-    $respuesta_18 = 'NORMA';
-    $respuesta_19 = 'No Remote Memory Access';
-    $respuesta_20 = 'SIMD';
-    $respuesta_21 = 'MISD';
-    $respuesta_22 = 'UMA';
-    $respuesta_23 = 'Uniform Memory Access';
-    $respuesta_24 = 'NORMA';
-    $respuesta_25 = 'distribuida';
-    $respuesta_26 = 'fisicamente compartida';
-    $respuesta_27 = 'fisicamente distribuida/logicamente compartida';
-    $respuesta_28 = 'Con interfaces bien definidas';
-    $respuesta_29 = 'Encapsulado';
-    $respuesta_30 = 'Reemplazable dentro de un contexto';
-    $respuesta_31 = 'Con propiedades externamente visibles';
-    $respuesta_32 = 'Modular';
-    $respuesta_33 = 'Reutilizable';
-    $respuesta_34 = 'operaciones';
-    $respuesta_35 = 'definiciones';
-    $respuesta_36 = 'diseño';
-    $respuesta_37 = 'basarse';
-    $respuesta_38 = 'conjunto minimo';
-    $respuesta_39 = 'no dependan de otras';
-    $respuesta_40 = 'su mismo nivel';
-    $respuesta_41 = 'Primitividad';
-    $respuesta_42 = 'Descomposicion y Modularizacion';
-    $respuesta_43 = 'diferentes funcionalidades';
-    $respuesta_44 = 'responsabilidades en diferentes componentes';
-    $respuesta_45 = 'Separar Interfaz de Implementacion';
-    $respuesta_46 = 'detalles internos';
-    $respuesta_47 = 'estructura y comportamiento';
-    $respuesta_48 = 'componente';
-    $respuesta_49 = 'ocultan mediante';
-    $respuesta_50 = 'especificacion';
-    $respuesta_51 = 'propiedades externamente visibles';
-    $respuesta_52 = 'Abstraccion';
-    $respuesta_53 = 'Generalizacion';
-    $respuesta_54 = 'definicion o concepto';
-    $respuesta_55 = 'proposito particular';
-    $respuesta_56 = 'en cuenta solamente';
-    $respuesta_57 = 'informacion relevante';
-    $respuesta_58 = 'Form Follows Function';
-    $respuesta_59 = 'detallados';
-    $respuesta_60 = 'globales del comportamiento';
-    $respuesta_61 = 'determinar la definicion';
-    $respuesta_62 = 'estructura mas adecuada';
-    $respuesta_63 = 'Acoplamiento';
-    $respuesta_64 = 'cuan interdependientes';
-    $respuesta_65 = 'los componentes o modulos';
-    $respuesta_66 = 'sistema';
-    $respuesta_67 = 'Encapsulacion';
-    $respuesta_68 = 'Agrupar';
-    $respuesta_69 = 'empaquetar';
-    $respuesta_70 = 'detalles internos';
-    $respuesta_71 = 'abstraccion';
-    $respuesta_72 = 'componente o modulo';
-    $respuesta_73 = 'escalabilidad';
-    $respuesta_74 = 'SIMD';
-    $respuesta_75 = 'define';
-    $respuesta_76 = 'La forma sigue a la funcion';
-    $respuesta_77 = 'ayuda a determinar';
-    $respuesta_78 = 'donde empezar';
-    $respuesta_79 = 'definir la arquitectura';
+    $respuesta_1  = 'flujos';
+    $respuesta_2  = 'valorar el proyecto';
+    $respuesta_3  = 'calculan';
+    $respuesta_4  = 'FLC';
+    $respuesta_5  = 'Flujo Libre de Caja';
+    $respuesta_6  = 'FCF Free Cash Flow';
+    $respuesta_7  = 'VPN > $0';
+    $respuesta_8  = 'TIR > TCO';
+    $respuesta_9  = 'complementario';
+    $respuesta_10 = 'Comparacion';
+    $respuesta_11 = 'seleccion';
+    $respuesta_12 = 'sistema de cuadrantes';
+    $respuesta_13 = 'comparacion';
+    $respuesta_14 = 'alternativas mutuamente excluyentes';
+    $respuesta_15 = 'con flujos';
+    $respuesta_16 = 'de Costos';
+    $respuesta_17 = 'nueva tecnologia';
+    $respuesta_18 = 'Anual Uniforme Equivalente';
+    $respuesta_19 = 'alternativa';
+    $respuesta_20 = 'costo anual equivalente constante';
+    $respuesta_21 = 'mismo servicio';
+    $respuesta_22 = 'menos costosa';
+    $respuesta_23 = 'menor CAUE';
+    $respuesta_24 = 'cuantificarse';
+    $respuesta_25 = 'Cableado';
+    $respuesta_26 = 'CPE';
+    $respuesta_27 = 'CAUE';
+    $respuesta_28 = 'presentes';
+    $respuesta_29 = 'ANUALES EQUIVALENTES';
+    $respuesta_30 = 'cuantificar';
+    $respuesta_31 = 'mantenimiento';
+    $respuesta_32 = 'operacion';
+    $respuesta_33 = 'BPN';
+    $respuesta_34 = 'Beneficio Presente Neto';
+    $respuesta_35 = 'valor presente';
+    $respuesta_36 = 'beneficios generados';
+    $respuesta_37 = 'menos';
+    $respuesta_38 = 'valor presente';
+    $respuesta_39 = 'sus costos';
+    $respuesta_40 = 'VPN';
+    $respuesta_41 = 'Valor Presente Neto';
+    $respuesta_42 = 'mayor que cero';
+    $respuesta_43 = 'mayor';
+    $respuesta_44 = 'BAUE';
+    $respuesta_45 = 'Beneficio Anual Uniforme Equivalente';
+    $respuesta_46 = 'beneficios netos';
+    $respuesta_47 = 'cantidad anual uniforme equivalente';
+    $respuesta_48 = 'alternativas';
+    $respuesta_49 = 'positivo';
         
         // Marcar todas como correctas
     for ($i = 1; $i <= 122; $i++) {
@@ -109,7 +75,7 @@ if ($_POST) {
 
     } else {
     $respuesta_1 = isset($_POST['respuesta_1']) ? $_POST['respuesta_1'] : '';
-   if ($respuesta_1 === 'relaciono elementos') {  
+   if ($respuesta_1 === 'flujos') {  
        $verificar_1 = "correcto";
    } elseif ($respuesta_1 === '') {
        $verificar_1 = '';
@@ -119,7 +85,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_2 = isset($_POST['respuesta_2']) ? $_POST['respuesta_2'] : '';
-   if ($respuesta_2 === 'pertenecen a la especificacion') {  
+   if ($respuesta_2 === 'valorar el proyecto') {  
        $verificar_2 = "correcto";
    } elseif ($respuesta_2 === '') {
        $verificar_2 = '';
@@ -129,7 +95,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_3 = isset($_POST['respuesta_3']) ? $_POST['respuesta_3'] : '';
-   if ($respuesta_3 === 'lenguaje') {  
+   if ($respuesta_3 === 'calculan') {  
        $verificar_3 = "correcto";
    } elseif ($respuesta_3 === '') {
        $verificar_3 = '';
@@ -139,7 +105,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_4 = isset($_POST['respuesta_4']) ? $_POST['respuesta_4'] : '';
-   if ($respuesta_4 === 'de manera errada') {  
+   if ($respuesta_4 === 'FLC') {  
        $verificar_4 = "correcto";
    } elseif ($respuesta_4 === '') {
        $verificar_4 = '';
@@ -149,7 +115,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_5 = isset($_POST['respuesta_5']) ? $_POST['respuesta_5'] : '';
-   if ($respuesta_5 === 'sintactico') {  
+   if ($respuesta_5 === 'Flujo Libre de Caja') {  
        $verificar_5 = "correcto";
    } elseif ($respuesta_5 === '') {
        $verificar_5 = '';
@@ -159,7 +125,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_6 = isset($_POST['respuesta_6']) ? $_POST['respuesta_6'] : '';
-   if ($respuesta_6 === 'diagrama de deployment') {  
+   if ($respuesta_6 === 'FCF Free Cash Flow') {  
        $verificar_6 = "correcto";
    } elseif ($respuesta_6 === '') {
        $verificar_6 = '';
@@ -169,7 +135,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_7 = isset($_POST['respuesta_7']) ? $_POST['respuesta_7'] : '';
-   if ($respuesta_7 === 'no modela correctamente') {  
+   if ($respuesta_7 === 'VPN > $0') {  
        $verificar_7 = "correcto";
    } elseif ($respuesta_7 === '') {
        $verificar_7 = '';
@@ -179,7 +145,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_8 = isset($_POST['respuesta_8']) ? $_POST['respuesta_8'] : '';
-   if ($respuesta_8 === 'reglas del negocio/cliente') {  
+   if ($respuesta_8 === 'TIR > TCO') {  
        $verificar_8 = "correcto";
    } elseif ($respuesta_8 === '') {
        $verificar_8 = '';
@@ -189,7 +155,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_9 = isset($_POST['respuesta_9']) ? $_POST['respuesta_9'] : '';
-   if ($respuesta_9 === 'semantico') {  
+   if ($respuesta_9 === 'complementario') {  
        $verificar_9 = "correcto";
    } elseif ($respuesta_9 === '') {
        $verificar_9 = '';
@@ -199,7 +165,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_10 = isset($_POST['respuesta_10']) ? $_POST['respuesta_10'] : '';
-   if ($respuesta_10 === 'uso elementos') {  
+   if ($respuesta_10 === 'Comparacion') {  
        $verificar_10 = "correcto";
    } elseif ($respuesta_10 === '') {
        $verificar_10 = '';
@@ -209,7 +175,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_11 = isset($_POST['respuesta_11']) ? $_POST['respuesta_11'] : '';
-   if ($respuesta_11 === 'no pertenecen') {  
+   if ($respuesta_11 === 'seleccion') {  
        $verificar_11 = "correcto";
    } elseif ($respuesta_11 === '') {
        $verificar_11 = '';
@@ -220,7 +186,7 @@ if ($_POST) {
 
     // Verificar la respuesta de la primera pregunta
     $respuesta_12 = isset($_POST['respuesta_12']) ? $_POST['respuesta_12'] : '';
-    if ($respuesta_12 === 'especificacion de un lenguaje') {  
+    if ($respuesta_12 === 'sistema de cuadrantes') {  
         $verificar_12 = "correcto";
     } elseif ($respuesta_12 === '') {
         $verificar_12 = '';
@@ -230,7 +196,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la segunda pregunta
     $respuesta_13 = isset($_POST['respuesta_13']) ? $_POST['respuesta_13'] : '';
-    if ($respuesta_13 === 'lexico') { 
+    if ($respuesta_13 === 'comparacion') { 
         $verificar_13 = "correcto";
     } elseif ($respuesta_13 === '') {
         $verificar_13 = '';
@@ -240,7 +206,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la tercera pregunta
     $respuesta_14 = isset($_POST['respuesta_14']) ? $_POST['respuesta_14'] : '';
-    if ($respuesta_14 === 'SIMD') {  
+    if ($respuesta_14 === 'alternativas mutuamente excluyentes') {  
         $verificar_14 = "correcto";
     } elseif ($respuesta_14 === '') {
         $verificar_14 = '';
@@ -250,7 +216,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la cuarta pregunta
     $respuesta_15 = isset($_POST['respuesta_15']) ? $_POST['respuesta_15'] : '';
-    if ($respuesta_15 === 'SISD') { 
+    if ($respuesta_15 === 'con flujos') { 
         $verificar_15 = "correcto";
     } elseif ($respuesta_15 === '') {
         $verificar_15 = '';
@@ -260,7 +226,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la quinta pregunta
     $respuesta_16 = isset($_POST['respuesta_16']) ? $_POST['respuesta_16'] : '';
-    if ($respuesta_16 === 'NUMA') {  
+    if ($respuesta_16 === 'de Costos') {  
         $verificar_16 = "correcto";
     } elseif ($respuesta_16 === '') {
         $verificar_16 = '';
@@ -270,7 +236,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la sexta pregunta
     $respuesta_17 = isset($_POST['respuesta_17']) ? $_POST['respuesta_17'] : '';
-    if ($respuesta_17 === 'Non-Uniform Memory Access') {  
+    if ($respuesta_17 === 'nueva tecnologia') {  
         $verificar_17 = "correcto";
         } elseif ($respuesta_17 === '') {
         $verificar_17 = '';
@@ -280,7 +246,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la séptima pregunta
     $respuesta_18 = isset($_POST['respuesta_18']) ? $_POST['respuesta_18'] : '';
-    if ($respuesta_18 === 'NORMA') {  
+    if ($respuesta_18 === 'Anual Uniforme Equivalente') {  
         $verificar_18 = "correcto";
     } elseif ($respuesta_18 === '') {
         $verificar_18 = '';
@@ -290,7 +256,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la octava pregunta
     $respuesta_19 = isset($_POST['respuesta_19']) ? $_POST['respuesta_19'] : '';
-    if ($respuesta_19 === 'No Remote Memory Access') {  
+    if ($respuesta_19 === 'alternativa') {  
         $verificar_19 = "correcto";
     } elseif ($respuesta_19 === '') {
         $verificar_19 = '';
@@ -300,7 +266,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la novena pregunta
     $respuesta_20 = isset($_POST['respuesta_20']) ? $_POST['respuesta_20'] : '';
-    if ($respuesta_20 === 'SIMD') {  
+    if ($respuesta_20 === 'costo anual equivalente constante') {  
         $verificar_20 = "correcto";
     } elseif ($respuesta_20 === '') {
         $verificar_20 = '';
@@ -310,7 +276,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la décima pregunta
     $respuesta_21 = isset($_POST['respuesta_21']) ? $_POST['respuesta_21'] : '';
-    if ($respuesta_21 === 'MISD') {  
+    if ($respuesta_21 === 'mismo servicio') {  
          $verificar_21 = "correcto";
     } elseif ($respuesta_21 === '') {
         $verificar_21 = '';
@@ -320,7 +286,7 @@ if ($_POST) {
   
     // Verificar la respuesta de la undécima pregunta
     $respuesta_22 = isset($_POST['respuesta_22']) ? $_POST['respuesta_22'] : '';
-    if ($respuesta_22 === 'UMA') {  
+    if ($respuesta_22 === 'menos costosa') {  
         $verificar_22 = "correcto";
     } elseif ($respuesta_22 === '') {
         $verificar_22 = '';
@@ -330,7 +296,7 @@ if ($_POST) {
 
      // Verificar la respuesta de la primera pregunta
    $respuesta_23 = isset($_POST['respuesta_23']) ? $_POST['respuesta_23'] : '';
-   if ($respuesta_23 === 'Uniform Memory Access') {  
+   if ($respuesta_23 === 'menor CAUE') {  
        $verificar_23 = "correcto";
    } elseif ($respuesta_23 === '') {
        $verificar_23 = '';
@@ -340,7 +306,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la segunda pregunta
    $respuesta_24 = isset($_POST['respuesta_24']) ? $_POST['respuesta_24'] : '';
-   if ($respuesta_24 === 'NORMA') {  
+   if ($respuesta_24 === 'cuantificarse') {  
        $verificar_24 = "correcto";
    } elseif ($respuesta_24 === '') {
        $verificar_24 = '';
@@ -350,7 +316,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la tercera pregunta
    $respuesta_25 = isset($_POST['respuesta_25']) ? $_POST['respuesta_25'] : '';
-   if ($respuesta_25 === 'distribuida') { 
+   if ($respuesta_25 === 'Cableado') { 
        $verificar_25 = "correcto";
    } elseif ($respuesta_25 === '') {
        $verificar_25 = '';
@@ -360,7 +326,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la cuarta pregunta
    $respuesta_26 = isset($_POST['respuesta_26']) ? $_POST['respuesta_26'] : '';
-   if ($respuesta_26 === 'fisicamente compartida') {  
+   if ($respuesta_26 === 'CPE') {  
        $verificar_26 = "correcto";
    } elseif ($respuesta_26 === '') {
        $verificar_26 = '';
@@ -370,7 +336,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la quinta pregunta
    $respuesta_27 = isset($_POST['respuesta_27']) ? $_POST['respuesta_27'] : '';
-   if ($respuesta_27 === 'fisicamente distribuida/logicamente compartida') {  
+   if ($respuesta_27 === 'CAUE') {  
        $verificar_27 = "correcto";
    } elseif ($respuesta_27 === '') {
        $verificar_27 = '';
@@ -380,7 +346,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la sexta pregunta
    $respuesta_28 = isset($_POST['respuesta_28']) ? $_POST['respuesta_28'] : '';
-   if ($respuesta_28 === 'Con interfaces bien definidas') {  
+   if ($respuesta_28 === 'presentes') {  
        $verificar_28 = "correcto";
    } elseif ($respuesta_28 === '') {
        $verificar_28 = '';
@@ -390,7 +356,9 @@ if ($_POST) {
 
    // Verificar la respuesta de la séptima pregunta
    $respuesta_29 = isset($_POST['respuesta_29']) ? $_POST['respuesta_29'] : '';
-   if ($respuesta_29 === 'Encapsulado') {  
+   if ($respuesta_29 === 'ANUALES EQUIVALENTES'
+   || $respuesta_29 === 'anuales equivalentes'
+   ) {  
        $verificar_29 = "correcto";
    } elseif ($respuesta_29 === '') {
        $verificar_29 = '';
@@ -400,7 +368,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la octava pregunta
    $respuesta_30 = isset($_POST['respuesta_30']) ? $_POST['respuesta_30'] : '';
-   if ($respuesta_30 === 'Reemplazable dentro de un contexto') {  
+   if ($respuesta_30 === 'cuantificar') {  
        $verificar_30 = "correcto";
    } elseif ($respuesta_30 === '') {
        $verificar_30 = '';
@@ -410,7 +378,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la novena pregunta
    $respuesta_31 = isset($_POST['respuesta_31']) ? $_POST['respuesta_31'] : '';
-   if ($respuesta_31 === 'Con propiedades externamente visibles') {  
+   if ($respuesta_31 === 'mantenimiento') {  
        $verificar_31 = "correcto";
    } elseif ($respuesta_31 === '') {
        $verificar_31 = '';
@@ -420,7 +388,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la décima pregunta
    $respuesta_32 = isset($_POST['respuesta_32']) ? $_POST['respuesta_32'] : '';
-   if ($respuesta_32 === 'Modular') {  
+   if ($respuesta_32 === 'operacion') {  
        $verificar_32 = "correcto";
    } elseif ($respuesta_32 === '') {
        $verificar_32 = '';
@@ -430,7 +398,7 @@ if ($_POST) {
 
    // Verificar la respuesta de la undécima pregunta
    $respuesta_33 = isset($_POST['respuesta_33']) ? $_POST['respuesta_33'] : '';
-   if ($respuesta_33 === 'Reutilizable') {  
+   if ($respuesta_33 === 'BPN') {  
        $verificar_33 = "correcto";
    } elseif ($respuesta_33 === '') {
        $verificar_33 = '';
@@ -439,7 +407,7 @@ if ($_POST) {
    }
 
     $respuesta_34 = isset($_POST['respuesta_34']) ? $_POST['respuesta_34'] : '';
-    if ($respuesta_34 === 'operaciones') { 
+    if ($respuesta_34 === 'Beneficio Presente Neto') { 
         $verificar_34 = "correcto";
     } elseif ($respuesta_34 === '') {
         $verificar_34 = '';
@@ -448,7 +416,7 @@ if ($_POST) {
     }
 
     $respuesta_35 = isset($_POST['respuesta_35']) ? $_POST['respuesta_35'] : '';
-    if ($respuesta_35 === 'definiciones') { 
+    if ($respuesta_35 === 'valor presente') { 
         $verificar_35 = "correcto";
     } elseif ($respuesta_35 === '') {
         $verificar_35 = '';
@@ -457,7 +425,7 @@ if ($_POST) {
     }
 
     $respuesta_36 = isset($_POST['respuesta_36']) ? $_POST['respuesta_36'] : '';
-    if ($respuesta_36 === 'diseño') { 
+    if ($respuesta_36 === 'beneficios generados') { 
         $verificar_36 = "correcto";
     } elseif ($respuesta_36 === '') {
     $verificar_36 = '';
@@ -466,7 +434,7 @@ if ($_POST) {
     }
 
     $respuesta_37 = isset($_POST['respuesta_37']) ? $_POST['respuesta_37'] : '';
-    if ($respuesta_37 === 'basarse') { 
+    if ($respuesta_37 === 'menos') { 
         $verificar_37 = "correcto";
     } elseif ($respuesta_37 === '') {
         $verificar_37 = '';
@@ -475,7 +443,7 @@ if ($_POST) {
     }
 
     $respuesta_38 = isset($_POST['respuesta_38']) ? $_POST['respuesta_38'] : '';
-    if ($respuesta_38 === 'conjunto minimo') { 
+    if ($respuesta_38 === 'valor presente') { 
         $verificar_38 = "correcto";
     } elseif ($respuesta_38 === '') {
         $verificar_38 = '';
@@ -484,7 +452,7 @@ if ($_POST) {
     }
 
     $respuesta_39 = isset($_POST['respuesta_39']) ? $_POST['respuesta_39'] : '';
-    if ($respuesta_39 === 'no dependan de otras') { 
+    if ($respuesta_39 === 'sus costos') { 
         $verificar_39 = "correcto";
     } elseif ($respuesta_39 === '') {
         $verificar_39 = '';
@@ -493,7 +461,7 @@ if ($_POST) {
     }
 
     $respuesta_40 = isset($_POST['respuesta_40']) ? $_POST['respuesta_40'] : '';
-    if ($respuesta_40 === 'su mismo nivel') { 
+    if ($respuesta_40 === 'VPN') { 
         $verificar_40 = "correcto";
     } elseif ($respuesta_40 === '') {
         $verificar_40 = '';
@@ -502,7 +470,7 @@ if ($_POST) {
     }
 
     $respuesta_41 = isset($_POST['respuesta_41']) ? $_POST['respuesta_41'] : '';
-    if ($respuesta_41 === 'Primitividad') { 
+    if ($respuesta_41 === 'Valor Presente Neto') { 
         $verificar_41 = "correcto";
     } elseif ($respuesta_41 === '') {
         $verificar_41 = '';
@@ -511,11 +479,7 @@ if ($_POST) {
     }
 
     $respuesta_42 = isset($_POST['respuesta_42']) ? $_POST['respuesta_42'] : '';
-    if ($respuesta_42 === 'Descomposicion y Modularizacion'
-    || $respuesta_42 === 'Descomposicion y modularizacion'
-    || $respuesta_42 === 'descomposicion y modularizacion'
-
-    ) { 
+    if ($respuesta_42 === 'mayor que cero') { 
         $verificar_42 = "correcto";
     } elseif ($respuesta_42 === '') {
         $verificar_42 = '';
@@ -524,7 +488,7 @@ if ($_POST) {
     }
 
     $respuesta_43 = isset($_POST['respuesta_43']) ? $_POST['respuesta_43'] : '';
-    if ($respuesta_43 === 'diferentes funcionalidades') { 
+    if ($respuesta_43 === 'mayor') { 
         $verificar_43 = "correcto";
     } elseif ($respuesta_43 === '') {
         $verificar_43 = '';
@@ -533,7 +497,7 @@ if ($_POST) {
     }
 
     $respuesta_44 = isset($_POST['respuesta_44']) ? $_POST['respuesta_44'] : '';
-    if ($respuesta_44 === 'responsabilidades en diferentes componentes') { 
+    if ($respuesta_44 === 'BAUE') { 
         $verificar_44 = "correcto";
     } elseif ($respuesta_44 === '') {
     $verificar_44 = '';
@@ -542,11 +506,7 @@ if ($_POST) {
     }
 
     $respuesta_45 = isset($_POST['respuesta_45']) ? $_POST['respuesta_45'] : '';
-    if ($respuesta_45 === 'Separar Interfaz de Implementacion'
-    || $respuesta_45 === 'separar interfaz de implementacion'
-    || $respuesta_45 === 'Separar interfaz de implementacion'
-
-    ) { 
+    if ($respuesta_45 === 'Beneficio Anual Uniforme Equivalente') { 
         $verificar_45 = "correcto";
     } elseif ($respuesta_45 === '') {
     $verificar_45 = '';
@@ -555,7 +515,7 @@ if ($_POST) {
     }
 
     $respuesta_46 = isset($_POST['respuesta_46']) ? $_POST['respuesta_46'] : '';
-    if ($respuesta_46 === 'detalles internos') { 
+    if ($respuesta_46 === 'beneficios netos') { 
         $verificar_46 = "correcto";
     } elseif ($respuesta_46 === '') {
     $verificar_46 = '';
@@ -564,7 +524,7 @@ if ($_POST) {
     }
 
     $respuesta_47 = isset($_POST['respuesta_47']) ? $_POST['respuesta_47'] : '';
-    if ($respuesta_47 === 'estructura y comportamiento') { 
+    if ($respuesta_47 === 'cantidad anual uniforme equivalente') { 
         $verificar_47 = "correcto";
     } elseif ($respuesta_47 === '') {
         $verificar_47 = '';
@@ -573,7 +533,7 @@ if ($_POST) {
     }
 
     $respuesta_48 = isset($_POST['respuesta_48']) ? $_POST['respuesta_48'] : '';
-    if ($respuesta_48 === 'componente') { 
+    if ($respuesta_48 === 'alternativas') { 
         $verificar_48 = "correcto";
     } elseif ($respuesta_48 === '') {
     $verificar_48 = '';
@@ -582,7 +542,7 @@ if ($_POST) {
     }
 
     $respuesta_49 = isset($_POST['respuesta_49']) ? $_POST['respuesta_49'] : '';
-    if ($respuesta_49 === 'ocultan mediante') { 
+    if ($respuesta_49 === 'positivo') { 
         $verificar_49 = "correcto";
     } elseif ($respuesta_49 === '') {
     $verificar_49 = '';
@@ -591,7 +551,7 @@ if ($_POST) {
     }
 
     $respuesta_50 = isset($_POST['respuesta_50']) ? $_POST['respuesta_50'] : '';
-    if ($respuesta_50 === 'especificacion') { 
+    if ($respuesta_50 === '119') { 
         $verificar_50 = "correcto";
     } elseif ($respuesta_50 === '') {
     $verificar_50 = '';
@@ -600,7 +560,7 @@ if ($_POST) {
     }
 
  $respuesta_51 = isset($_POST['respuesta_51']) ? $_POST['respuesta_51'] : '';
-if ($respuesta_51 === 'propiedades externamente visibles') { 
+if ($respuesta_51 === '136') { 
     $verificar_51 = "correcto";
 } elseif ($respuesta_51 === '') {
     $verificar_51 = '';
@@ -609,7 +569,7 @@ if ($respuesta_51 === 'propiedades externamente visibles') {
 }
 
  $respuesta_52 = isset($_POST['respuesta_52']) ? $_POST['respuesta_52'] : '';
-if ($respuesta_52 === 'Abstraccion') { 
+if ($respuesta_52 === '153') { 
     $verificar_52 = "correcto";
 } elseif ($respuesta_52 === '') {
     $verificar_52 = '';
@@ -618,7 +578,7 @@ if ($respuesta_52 === 'Abstraccion') {
 }
 
  $respuesta_53 = isset($_POST['respuesta_53']) ? $_POST['respuesta_53'] : '';
-if ($respuesta_53 === 'Generalizacion') { 
+if ($respuesta_53 === '170') { 
     $verificar_53 = "correcto";
 } elseif ($respuesta_53 === '') {
     $verificar_53 = '';
@@ -627,7 +587,7 @@ if ($respuesta_53 === 'Generalizacion') {
 }
 
  $respuesta_54 = isset($_POST['respuesta_54']) ? $_POST['respuesta_54'] : '';
-if ($respuesta_54 === 'definicion o concepto') { 
+if ($respuesta_54 === '187') { 
     $verificar_54 = "correcto";
 } elseif ($respuesta_54 === '') {
     $verificar_54 = '';
@@ -636,7 +596,7 @@ if ($respuesta_54 === 'definicion o concepto') {
 }
 
  $respuesta_55 = isset($_POST['respuesta_55']) ? $_POST['respuesta_55'] : '';
-if ($respuesta_55 === 'proposito particular') { 
+if ($respuesta_55 === '204') { 
     $verificar_55 = "correcto";
 } elseif ($respuesta_55 === '') {
     $verificar_55 = '';
@@ -646,7 +606,7 @@ if ($respuesta_55 === 'proposito particular') {
 
 
  $respuesta_56 = isset($_POST['respuesta_56']) ? $_POST['respuesta_56'] : '';
-if ($respuesta_56 === 'en cuenta solamente') { 
+if ($respuesta_56 === '36') { 
     $verificar_56 = "correcto";
 } elseif ($respuesta_56 === '') {
     $verificar_56 = '';
@@ -655,7 +615,7 @@ if ($respuesta_56 === 'en cuenta solamente') {
 }
 
  $respuesta_57 = isset($_POST['respuesta_57']) ? $_POST['respuesta_57'] : '';
-if ($respuesta_57 === 'informacion relevante') { 
+if ($respuesta_57 === '54') { 
     $verificar_57 = "correcto";
 } elseif ($respuesta_57 === '') {
     $verificar_57 = '';
@@ -664,11 +624,7 @@ if ($respuesta_57 === 'informacion relevante') {
 }
 
  $respuesta_58 = isset($_POST['respuesta_58']) ? $_POST['respuesta_58'] : '';
-if ($respuesta_58 === 'Form Follows Function'
-|| $respuesta_58 === 'Form follows function'
-|| $respuesta_58 === 'form follows function'
-
-) { 
+if ($respuesta_58 === '72') { 
     $verificar_58 = "correcto";
 } elseif ($respuesta_58 === '') {
     $verificar_58 = '';
@@ -677,7 +633,7 @@ if ($respuesta_58 === 'Form Follows Function'
 }
 
  $respuesta_59 = isset($_POST['respuesta_59']) ? $_POST['respuesta_59'] : '';
-if ($respuesta_59 === 'detallados') { 
+if ($respuesta_59 === '90') { 
     $verificar_59 = "correcto";
 } elseif ($respuesta_59 === '') {
     $verificar_59 = '';
@@ -686,7 +642,7 @@ if ($respuesta_59 === 'detallados') {
 }
 
  $respuesta_60 = isset($_POST['respuesta_60']) ? $_POST['respuesta_60'] : '';
-if ($respuesta_60 === 'globales del comportamiento') { 
+if ($respuesta_60 === '108') { 
     $verificar_60 = "correcto";
 } elseif ($respuesta_60 === '') {
     $verificar_60 = '';
@@ -695,7 +651,7 @@ if ($respuesta_60 === 'globales del comportamiento') {
 }
 
  $respuesta_61 = isset($_POST['respuesta_61']) ? $_POST['respuesta_61'] : '';
-if ($respuesta_61 === 'determinar la definicion') { 
+if ($respuesta_61 === '126') { 
     $verificar_61 = "correcto";
 } elseif ($respuesta_61 === '') {
     $verificar_61 = '';
@@ -704,7 +660,7 @@ if ($respuesta_61 === 'determinar la definicion') {
 }
 
  $respuesta_62 = isset($_POST['respuesta_62']) ? $_POST['respuesta_62'] : '';
-if ($respuesta_62 === 'estructura mas adecuada') { 
+if ($respuesta_62 === '144') { 
     $verificar_62 = "correcto";
 } elseif ($respuesta_62 === '') {
     $verificar_62 = '';
@@ -713,7 +669,7 @@ if ($respuesta_62 === 'estructura mas adecuada') {
 }
 
  $respuesta_63 = isset($_POST['respuesta_63']) ? $_POST['respuesta_63'] : '';
-if ($respuesta_63 === 'Acoplamiento') { 
+if ($respuesta_63 === '162') { 
     $verificar_63 = "correcto";
 } elseif ($respuesta_63 === '') {
     $verificar_63 = '';
@@ -722,7 +678,7 @@ if ($respuesta_63 === 'Acoplamiento') {
 }
 
  $respuesta_64 = isset($_POST['respuesta_64']) ? $_POST['respuesta_64'] : '';
-if ($respuesta_64 === 'cuan interdependientes') { 
+if ($respuesta_64 === '180') { 
     $verificar_64 = "correcto";
 } elseif ($respuesta_64 === '') {
     $verificar_64 = '';
@@ -731,7 +687,7 @@ if ($respuesta_64 === 'cuan interdependientes') {
 }
 
  $respuesta_65 = isset($_POST['respuesta_65']) ? $_POST['respuesta_65'] : '';
-if ($respuesta_65 === 'los componentes o modulos') { 
+if ($respuesta_65 === '198') { 
     $verificar_65 = "correcto";
 } elseif ($respuesta_65 === '') {
     $verificar_65 = '';
@@ -740,7 +696,7 @@ if ($respuesta_65 === 'los componentes o modulos') {
 }
 
  $respuesta_66 = isset($_POST['respuesta_66']) ? $_POST['respuesta_66'] : '';
-if ($respuesta_66 === 'sistema') { 
+if ($respuesta_66 === '216') { 
     $verificar_66 = "correcto";
 } elseif ($respuesta_66 === '') {
     $verificar_66 = '';
@@ -749,7 +705,7 @@ if ($respuesta_66 === 'sistema') {
 }
 
  $respuesta_67 = isset($_POST['respuesta_67']) ? $_POST['respuesta_67'] : '';
-if ($respuesta_67 === 'Encapsulacion') { 
+if ($respuesta_67 === '38') { 
     $verificar_67 = "correcto";
 } elseif ($respuesta_67 === '') {
     $verificar_67 = '';
@@ -758,7 +714,7 @@ if ($respuesta_67 === 'Encapsulacion') {
 }
 
  $respuesta_68 = isset($_POST['respuesta_68']) ? $_POST['respuesta_68'] : '';
-if ($respuesta_68 === 'Agrupar') { 
+if ($respuesta_68 === '57') { 
     $verificar_68 = "correcto";
 } elseif ($respuesta_68 === '') {
     $verificar_68 = '';
@@ -767,7 +723,7 @@ if ($respuesta_68 === 'Agrupar') {
 }
 
  $respuesta_69 = isset($_POST['respuesta_69']) ? $_POST['respuesta_69'] : '';
-if ($respuesta_69 === 'empaquetar') { 
+if ($respuesta_69 === '76') { 
     $verificar_69 = "correcto";
 } elseif ($respuesta_69 === '') {
     $verificar_69 = '';
@@ -776,7 +732,7 @@ if ($respuesta_69 === 'empaquetar') {
 }
 
  $respuesta_70 = isset($_POST['respuesta_70']) ? $_POST['respuesta_70'] : '';
-if ($respuesta_70 === 'detalles internos') { 
+if ($respuesta_70 === '95') { 
     $verificar_70 = "correcto";
 } elseif ($respuesta_70 === '') {
     $verificar_70 = '';
@@ -785,7 +741,7 @@ if ($respuesta_70 === 'detalles internos') {
 }
 
  $respuesta_71 = isset($_POST['respuesta_71']) ? $_POST['respuesta_71'] : '';
-if ($respuesta_71 === 'abstraccion') { 
+if ($respuesta_71 === '114') { 
     $verificar_71 = "correcto";
 } elseif ($respuesta_71 === '') {
     $verificar_71 = '';
@@ -794,7 +750,7 @@ if ($respuesta_71 === 'abstraccion') {
 }
 
  $respuesta_72 = isset($_POST['respuesta_72']) ? $_POST['respuesta_72'] : '';
-if ($respuesta_72 === 'componente o modulo') { 
+if ($respuesta_72 === '133') { 
     $verificar_72 = "correcto";
 } elseif ($respuesta_72 === '') {
     $verificar_72 = '';
@@ -803,7 +759,7 @@ if ($respuesta_72 === 'componente o modulo') {
 }
 
  $respuesta_73 = isset($_POST['respuesta_73']) ? $_POST['respuesta_73'] : '';
-if ($respuesta_73 === 'escalabilidad') { 
+if ($respuesta_73 === '152') { 
     $verificar_73 = "correcto";
 } elseif ($respuesta_73 === '') {
     $verificar_73 = '';
@@ -812,7 +768,7 @@ if ($respuesta_73 === 'escalabilidad') {
 }
 
  $respuesta_74 = isset($_POST['respuesta_74']) ? $_POST['respuesta_74'] : '';
-if ($respuesta_74 === 'SIMD') { 
+if ($respuesta_74 === '171') { 
     $verificar_74 = "correcto";
 } elseif ($respuesta_74 === '') {
     $verificar_74 = '';
@@ -821,7 +777,7 @@ if ($respuesta_74 === 'SIMD') {
 }
 
  $respuesta_75 = isset($_POST['respuesta_75']) ? $_POST['respuesta_75'] : '';
-if ($respuesta_75 === 'define') { 
+if ($respuesta_75 === '190') { 
     $verificar_75 = "correcto";
 } elseif ($respuesta_75 === '') {
     $verificar_75 = '';
@@ -830,7 +786,7 @@ if ($respuesta_75 === 'define') {
 }
 
  $respuesta_76 = isset($_POST['respuesta_76']) ? $_POST['respuesta_76'] : '';
-if ($respuesta_76 === 'La forma sigue a la funcion') { 
+if ($respuesta_76 === '209') { 
     $verificar_76 = "correcto";
 } elseif ($respuesta_76 === '') {
     $verificar_76 = '';
@@ -839,7 +795,7 @@ if ($respuesta_76 === 'La forma sigue a la funcion') {
 }
 
  $respuesta_77 = isset($_POST['respuesta_77']) ? $_POST['respuesta_77'] : '';
-if ($respuesta_77 === 'ayuda a determinar') { 
+if ($respuesta_77 === '228') { 
     $verificar_77 = "correcto";
 } elseif ($respuesta_77 === '') {
     $verificar_77 = '';
@@ -848,7 +804,7 @@ if ($respuesta_77 === 'ayuda a determinar') {
 }
 
  $respuesta_78 = isset($_POST['respuesta_78']) ? $_POST['respuesta_78'] : '';
-if ($respuesta_78 === 'donde empezar') { 
+if ($respuesta_78 === '40') { 
     $verificar_78 = "correcto";
 } elseif ($respuesta_78 === '') {
     $verificar_78 = '';
@@ -857,7 +813,7 @@ if ($respuesta_78 === 'donde empezar') {
 }
 
  $respuesta_79 = isset($_POST['respuesta_79']) ? $_POST['respuesta_79'] : '';
-if ($respuesta_79 === 'definir la arquitectura') { 
+if ($respuesta_79 === '60') { 
     $verificar_79 = "correcto";
 } elseif ($respuesta_79 === '') {
     $verificar_79 = '';
@@ -1253,8 +1209,8 @@ if ($respuesta_121 === '144') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas sobre simplificación de expresiones matemáticas</title>
-    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../style_2_0.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../style_2_0.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
@@ -1264,7 +1220,7 @@ if ($respuesta_121 === '144') {
     width: calc(50% - 7.5px);
     padding: 20px;
     box-sizing: border-box;
-    height: 300vh;
+    height: 310vh;
     }
 
 </style>
@@ -1544,191 +1500,445 @@ function ocultarMensaje4() {
 </head>
 <body>  
 
-<form action="./segundo.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
+<form action="./index.php" method="POST" onsubmit="handleSubmit(event)" autocomplete="off"> 
 <div class="form-container">
 
     
 <div class="seccion izquierda"> 
-<p>
-Cuando 
-<input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="15">
-  que 
-<input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="26">
-  de un 
-<input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="13">
- , 
-<input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="13">
- , estoy cometiendo un error
-<input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="13">
- 
-</p>
-     <button type="submit">Enviar</button> 
+    <p>
+    Los
+    <input type="text" name="respuesta_1" value="<?php echo $respuesta_1; ?>" size="4">
+      para 
+    <input type="text" name="respuesta_2" value="<?php echo $respuesta_2; ?>" size="14">
+      se 
+    <input type="text" name="respuesta_3" value="<?php echo $respuesta_3; ?>" size="8">
+      con 
+    <input type="text" name="respuesta_4" value="<?php echo $respuesta_4; ?>" size="2">
+    ,
+    <input type="text" name="respuesta_5" value="<?php echo $respuesta_5; ?>" size="14">
+     
+    (<input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="14">)
+     
+    </p>
+    <button type="submit">Enviar</button>
     <?php echo $verificar_1 ?>
     <?php echo $verificar_2 ?>
     <?php echo $verificar_3 ?>
     <?php echo $verificar_4 ?>
     <?php echo $verificar_5 ?>
-    <hr>
-<p>
-    Cuando hago un 
-    <input type="text" name="respuesta_6" value="<?php echo $respuesta_6; ?>" size="21">
-      (UML) que 
-    <input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="21">
-      las 
-    <input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="21">
-     , estoy cometiendo un error
-    <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="13">
-
-</p>
-
-    <button type="submit">Enviar</button> 
     <?php echo $verificar_6 ?>
+    <hr>
+    <br><br>
+    <img src="../../img/guia_467.png" alt="">
+ 
+   <p>
+    Proyectos 
+    <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="7">
+     : Corresponde a 
+    montar un negocio
+    nuevo o una nueva línea de negocio y obtener ganancias.
+   </p>
+
+   <p>
+    Inversión inicial ( - )
+A cambio recibe flujos de caja
+(dinero) en el futuro (+) 
+   </p>
+
+   <strong>Evaluación de viabilidad:</strong>
+    <p><input type="text" name="respuesta_7" value="<?php echo $respuesta_7; ?>" size="7"></p>
+    y
+    <p><input type="text" name="respuesta_8" value="<?php echo $respuesta_8; ?>" size="7"></p>
+
+ 
+
+    <h3>Análisis 
+    <input type="text" name="respuesta_9" value="<?php echo $respuesta_9; ?>" size="13">    
+     </h3>
+    <p>
+    Una vez determinada la viabilidad, se calculan y analizan los otros indicadores:
+    </p>
+    <ul>
+    <li>IR (Índice de Rentabilidad)</li>
+    <li>B/C (Relación Beneficio/Costo)</li>
+    <li>TVR o TIRM (Tasa de Valor de Reinversión o Tasa Interna de Retorno Modificada)</li>
+    <li>PR (Período de Recuperación)</li>
+    </ul>
+
+    <h3>
+      <input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="13">   
+      y 
+    <input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="13"> 
+     </h3>
+    <p>
+    Si el proyecto es viable, también se realiza:
+    </p>
+    <ul>
+    <li>El gráfico del 
+    <input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="18">     
+     .</li>
+    <li>La 
+    <input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="10">     
+      entre 
+    <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="31"> 
+     .</li>
+    </ul>
+
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_15 ?>
     <?php echo $verificar_7 ?>  
     <?php echo $verificar_8 ?>
     <?php echo $verificar_9 ?>
-    <hr>
-<p>Cuando 
-<input type="text" name="respuesta_10" value="<?php echo $respuesta_10; ?>" size="13">    
-  que 
-<input type="text" name="respuesta_11" value="<?php echo $respuesta_11; ?>" size="13">
-  a la 
-<input type="text" name="respuesta_12" value="<?php echo $respuesta_12; ?>" size="26">
- , estoy
-cometiendo un error
-<input type="text" name="respuesta_13" value="<?php echo $respuesta_13; ?>" size="13">
-</p>
-    <button type="submit">Enviar</button> 
     <?php echo $verificar_10 ?>
     <?php echo $verificar_11 ?> 
     <?php echo $verificar_12 ?>
     <?php echo $verificar_13 ?>
-    <hr>
-    <h4>indique EL CONCEPTO:</h4>
-    <img src="../../../img/guia_396.png" alt="" width="700">
-    <br><br>
-    <input type="text" name="respuesta_14" value="<?php echo $respuesta_14; ?>" size="6">
-    <button type="submit">Enviar</button>
     <?php echo $verificar_14 ?>
     <hr>
-        <img src="../../../img/guia_397.png" alt="" width="700">
-    <br><br>
-    <input type="text" name="respuesta_15" value="<?php echo $respuesta_15; ?>" size="6">
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_15 ?>
-    <hr>
-        <img src="../../../img/guia_398.png" alt="" width="700">
-    <br><br>
-    <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="6">
-    <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="25">
+
     <p>
-    Esto es una memoria:
-      <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="41">    
+    Proyectos 
+    <input type="text" name="respuesta_16" value="<?php echo $respuesta_16; ?>" size="7">
+    : Corresponden a
+    implementar una 
+    <input type="text" name="respuesta_17" value="<?php echo $respuesta_17; ?>" size="14">
+     , o una modernización,
+    reemplazar una parte ya existente en una empresa que ya
+    existe. (No se trata de iniciar un nuevo negocio).
     </p>
+
     <button type="submit">Enviar</button>
     <?php echo $verificar_16 ?>
     <?php echo $verificar_17 ?>
-     <?php echo $verificar_27 ?>
-     <hr>
-        <img src="../../../img/guia_399.png" alt="" width="700">
-    <br><br>
-    <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="6">
-    <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="23">
+
+    <hr>
+
+    <h2>¿Qué es el CAUE?</h2>
+
+<p>
+  <strong>CAUE (Costo 
+  <input type="text" name="respuesta_18" value="<?php echo $respuesta_18; ?>" size="23">  
+   )</strong> es un indicador económico
+  que convierte todos los costos de una 
+  <input type="text" name="respuesta_19" value="<?php echo $respuesta_19; ?>" size="8">
+    (inversión inicial, operación,
+  mantenimiento y valor de rescate) en un <strong>
+  <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="31">  
+   </strong>.
+</p>
+
+<p>
+  Se utiliza cuando se comparan alternativas que generan el 
+  <input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>" size="14">
+    o beneficio,
+  y el criterio es elegir la opción <strong>
+  <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="14">  
+   </strong>.
+</p>
+
+<h3>Regla de decisión</h3>
+<ul>
+  <li>Entre varias alternativas, se elige la que tenga el <strong>
+  <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="14">  
+   </strong>.</li>
+  <li>Mientras más pequeño sea el CAUE, menor es el costo anual de la alternativa.</li>
+</ul>
+
     <button type="submit">Enviar</button>
     <?php echo $verificar_18 ?>
-    <?php echo $verificar_19 ?>
-    <hr>
-     <img src="../../../img/guia_400.png" alt="" width="700">
-    <br><br>
-    La estructura de una máquina
-    <input type="text" name="respuesta_20" value="<?php echo $respuesta_20; ?>" size="6">
-     <button type="submit">Enviar</button>
-     <?php echo $verificar_20 ?>
+    <?php echo $verificar_19 ?> 
+    <?php echo $verificar_20 ?>
+    <?php echo $verificar_21 ?>
+    <?php echo $verificar_22 ?>
+    <?php echo $verificar_23 ?>
+
+<hr>
+
+<h1>Proyectos sin beneficios cuantificables</h1>
+
+<h2>Definición</h2>
+
+<p>
+  Son proyectos en los que la tecnología, la modernización o una nueva máquina
+  producen mejoras en la gestión o en el proceso, pero esas mejoras
+  <strong>no pueden 
+  <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="14">  
+    económicamente de forma directa</strong>.
+</p>
+
+<h3>Característica principal</h3>
+
+<p>
+  Se realiza una inversión para mejorar el funcionamiento de una organización,
+  pero dicha inversión no genera ingresos o ganancias medibles.
+</p>
+
+<hr>
+
+<h2>Ejemplos</h2>
+
+<h3>Universidad</h3>
+
+<p>Invertir en:</p>
+
+<ul>
+  <li>
+  <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="14">  
+   .</li>
+  <li>Redes.</li>
+  <li>Antenas.</li>
+  <li>Amplificadores.</li>
+</ul>
+
+<p>
+  Con el fin de mejorar la conectividad de la universidad.
+</p>
+
+ 
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_24 ?>
+    <?php echo $verificar_25 ?>
     <hr>
  
 
- </div>
+</div>
 
 
 
 
 <div class="seccion derecha">
-    
- <img src="../../../img/guia_401.png" alt="" width="700">
-    <br><br>
-    <input type="text" name="respuesta_21" value="<?php echo $respuesta_21; ?>" size="6">
-     <button type="submit">Enviar</button>
-     <?php echo $verificar_21 ?>
-    <hr>
-     <img src="../../../img/guia_402.png" alt="" width="700">
-    <br><br>
-    <input type="text" name="respuesta_22" value="<?php echo $respuesta_22; ?>" size="6">
-    <input type="text" name="respuesta_23" value="<?php echo $respuesta_23; ?>" size="23">. 
-    <p>Esto es una memoria
-         <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="21">
-    </p>
-     <button type="submit">Enviar</button>
-     <?php echo $verificar_22 ?>
-    <?php echo $verificar_23 ?>
+
+<h3>Empresa de transporte</h3>
+
+<p>Una empresa con una flota de vehículos puede:</p>
+
+<ul>
+  <li>Modernizar sus vehículos mediante GPS y geolocalizadores.</li>
+  <li>
+    Evaluar si conviene modernizar la flota actual o comprar nuevos vehículos
+    que ya incorporen esta tecnología.
+  </li>
+</ul>
+
+<hr>
+
+<h2>Flujo económico típico</h2>
+
+<ol>
+  <li>Se compra la maquinaria o tecnología.</li>
+  <li>
+    Durante su vida útil se incurre en:
+    <ul>
+      <li>Costos de operación.</li>
+      <li>Costos de mantenimiento.</li>
+    </ul>
+  </li>
+  <li>
+    Al final de la vida útil se recupera un valor mediante:
+    <ul>
+      <li>Venta de la maquinaria.</li>
+      <li>Venta de residuos o remanentes aprovechables.</li>
+    </ul>
+  </li>
+</ol>
+
+<hr>
+
+   <h2>Comparación de alternativas</h2>
+
+<p>
+  Cuando existen varias alternativas que cumplen la misma función,
+  desde el punto de vista económico es adecuado seleccionar la que tenga
+  los <strong>menores costos presentes</strong>.
+</p>
+
+<h3>Indicadores utilizados</h3>
+
+<ul>
+  <li><strong>
+  <input type="text" name="respuesta_26" value="<?php echo $respuesta_26; ?>" size="2">   
+   :</strong> Costo Presente Equivalente.</li>
+  <li><strong>
+  <input type="text" name="respuesta_27" value="<?php echo $respuesta_27; ?>" size="2">   
+   :</strong> Costo Anual Uniforme Equivalente.</li>
+</ul>
+
+    <button type="submit">Enviar</button>
     <?php echo $verificar_26 ?>
-  <hr>
-     <img src="../../../img/guia_403.png" alt="" width="700">
-    <br><br>
-    <input type="text" name="respuesta_24" value="<?php echo $respuesta_24; ?>" size="6">
-    <p>Esto es una memoria:
-    <input type="text" name="respuesta_25" value="<?php echo $respuesta_25; ?>" size="8">
+    <?php echo $verificar_27 ?>
+
+<hr>
+
+<h2>Regla de signos</h2>
+
+<p><strong>Se consideran con signo positivo (+):</strong></p>
+
+<ul>
+  <li>Compra de la tecnología.</li>
+  <li>Costos de mantenimiento.</li>
+  <li>Costos de operación.</li>
+</ul>
+
+<p><strong>Se consideran con signo negativo (−):</strong></p>
+
+<ul>
+  <li>Valor de venta o rescate al final de la vida útil.</li>
+  <li>Recuperaciones de valor del proyecto.</li>
+</ul>
+
+<hr>
+  
+<h2>Ejemplo de comparación</h2>
+
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Concepto</th>
+      <th>Máquina Semiautomática</th>
+      <th>Máquina Automática</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Inversión inicial</td>
+      <td>$1.500</td>
+      <td>$6.300</td>
+    </tr>
+    <tr>
+      <td>CPE</td>
+      <td>$21.469,89</td>
+      <td>$20.322,10</td>
+    </tr>
+    <tr>
+      <td>CAUE</td>
+      <td>$5.663,70</td>
+      <td>$5.360,92</td>
+    </tr>
+  </tbody>
+</table>
+
+    <h3>Conclusión</h3>
+
+    <p>
+    Aunque la máquina automática requiere una inversión inicial mayor,
+    al evaluar todos los costos durante su vida útil presenta un menor
+    costo equivalente.
     </p>
-      <button type="submit">Enviar</button>
-     <?php echo $verificar_24 ?>
-    <?php echo $verificar_25 ?>
+
+    <p>
+    Por lo tanto, se selecciona la <strong>máquina automática</strong>,
+    ya que tiene el <strong>menor CPE y CAUE</strong>, siendo la alternativa
+    económicamente más conveniente.
+    </p>
+
     <hr>
-    <p>
-    <p>Un componente de software se define como un elemento:</p>
-    </p>
-    <p>
-    <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="31">
-    </p>
-    <p>
-    <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="31">
-    </p>
-    <p>
-    <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="31">
-    </p>
-    <p>
-    <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="35">
-    </p>
-    <p>
-    <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="35">
-    </p>
-    <p>
-    <input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="35">
-    </p>
+    <p>INTERPRETACION DEL CPE: Adquirir esta tecnología AUTOMÁTICA, operarla, 
+    mantenerla y venderla al final equivale en términos 
+    <input type="text" name="respuesta_28" value="<?php echo $respuesta_28; ?>" size="10"> 
+     , como un análisis global de los 5 años a $20.322,10</p> 
+
+    <p>INTERPRETACION DEL CAUE: Adquirir esta tecnología AUTOMÁTICA, operarla, mantenerla y venderla al final equivale 
+    en términos 
+    <input type="text" name="respuesta_29" value="<?php echo $respuesta_29; ?>" size="18"> 
+     , corresponde a $5.360,92.  Ese dato se puede utilizar para comparar con una 
+    alternativa de alquiler anual.</p>
+
     <button type="submit">Enviar</button>
     <?php echo $verificar_28 ?>
     <?php echo $verificar_29 ?>
-    <?php echo $verificar_30 ?>
-    <?php echo $verificar_31 ?>
-    <?php echo $verificar_32 ?>
-    <?php echo $verificar_33 ?>
     <hr>
-    <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="12">
-    <p>
-    Las 
-    <input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="8">
-      o 
-    <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="8">
-      en el 
-    <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="8">
-      deben 
-    <input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="8">
-      en el 
-    <input type="text" name="respuesta_38" value="<?php echo $respuesta_38; ?>" size="15">
-      de que 
-    <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="19">
-      de 
-    <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="12">
-     
-    </p>
+
+
+
+    <h1>Proyectos con beneficios cuantificables</h1>
+
+<h2>Definición</h2>
+
+<p>
+  En este tipo de proyectos, la tecnología, la modernización o la adquisición
+  de una nueva máquina generan mejoras en los procesos y, además,
+  es posible <strong>
+  <input type="text" name="respuesta_30" value="<?php echo $respuesta_30; ?>" size="11">   
+    económicamente los beneficios o ahorros obtenidos</strong>
+  gracias a su implementación.
+</p>
+
     <button type="submit">Enviar</button>
+    <?php echo $verificar_30 ?>
+
+<hr>
+
+<h2>Flujo económico típico</h2>
+
+<ul>
+  <li>Compra de la tecnología o maquinaria.</li>
+  <li>Pago de costos de 
+  <input type="text" name="respuesta_31" value="<?php echo $respuesta_31; ?>" size="11">  
+   .</li>
+  <li>Pago de costos de 
+  <input type="text" name="respuesta_32" value="<?php echo $respuesta_32; ?>" size="11">  
+   .</li>
+  <li>Obtención de beneficios o ahorros generados por la implementación.</li>
+  <li>Recuperación de un valor residual mediante la venta del activo al final de su vida útil.</li>
+</ul>
+
+    <button type="submit">Enviar</button>
+     <?php echo $verificar_31 ?>
+    <?php echo $verificar_32 ?>
+<hr>
+
+<h2>Regla de signos</h2>
+
+<p>
+  Para la evaluación económica se consideran:
+</p>
+
+<ul>
+  <li><strong>Entradas (+):</strong> beneficios, ingresos o ahorros generados por el proyecto.</li>
+  <li><strong>Salidas (-):</strong> inversión inicial, costos de operación y costos de mantenimiento.</li>
+</ul>
+
+<p>
+  El objetivo es determinar cuál alternativa genera el mayor beneficio económico.
+</p>
+
+<hr>
+
+<h2>Indicadores utilizados</h2>
+
+<h3>
+<input type="text" name="respuesta_33" value="<?php echo $respuesta_33; ?>" size="2">    
+  (
+<input type="text" name="respuesta_34" value="<?php echo $respuesta_34; ?>" size="21">    
+ )</h3>
+
+<p>
+  El 
+  <input type="text"   value="<?php echo $respuesta_33; ?>" size="2"> 
+    representa el 
+    <input type="text" name="respuesta_35" value="<?php echo $respuesta_35; ?>" size="11"> 
+      de todos los 
+    <input type="text" name="respuesta_36" value="<?php echo $respuesta_36; ?>" size="17"> 
+      por el proyecto
+    <input type="text" name="respuesta_37" value="<?php echo $respuesta_37; ?>" size="5"> 
+    el 
+  <input type="text" name="respuesta_38" value="<?php echo $respuesta_38; ?>" size="16"> 
+    de todos 
+  <input type="text" name="respuesta_39" value="<?php echo $respuesta_39; ?>" size="11"> 
+   .
+</p>
+
+<p>
+  Es equivalente al concepto de 
+  <input type="text" name="respuesta_40" value="<?php echo $respuesta_40; ?>" size="2"> 
+    (
+  <input type="text" name="respuesta_41" value="<?php echo $respuesta_41; ?>" size="11">   
+   ), pero enfocado en la medición
+  de beneficios.
+</p>
+
+    <button type="submit">Enviar</button>
+     <?php echo $verificar_33 ?>
     <?php echo $verificar_34 ?>
     <?php echo $verificar_35 ?>
     <?php echo $verificar_36 ?>
@@ -1738,155 +1948,66 @@ cometiendo un error
     <?php echo $verificar_40 ?>
     <?php echo $verificar_41 ?>
     <hr>
-    <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="31">
-    <p>
-    Agrupar
-    <input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="21">
-       y 
-    <input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>" size="41">   
-     .
-    </p>
-        <button type="submit">Enviar</button>
- <?php echo $verificar_42 ?>
+<p>
+  <strong>Interpretación:</strong>
+</p>
+
+<ul>
+  <li>Si el 
+  <input type="text"   value="<?php echo $respuesta_33; ?>" size="2">  
+    es 
+    <input type="text" name="respuesta_42" value="<?php echo $respuesta_42; ?>" size="11">
+     , el proyecto genera beneficios netos.</li>
+  <li>Entre varias alternativas, se selecciona la que tenga el <strong>  
+   <input type="text" name="respuesta_43" value="<?php echo $respuesta_43; ?>" size="4"> 
+  <input type="text"   value="<?php echo $respuesta_33; ?>" size="2">
+  BPN</strong>.</li>
+</ul>
+
+<h3>
+<input type="text" name="respuesta_44" value="<?php echo $respuesta_44; ?>" size="4">    
+  (
+<input type="text" name="respuesta_45" value="<?php echo $respuesta_45; ?>" size="35">    
+ )</h3>
+
+<p>
+  El 
+  <input type="text"  value="<?php echo $respuesta_44; ?>" readonly size="4">
+    convierte todos los 
+    <input type="text" name="respuesta_46" value="<?php echo $respuesta_46; ?>" size="15"> 
+      del proyecto en una 
+    <input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="31"> 
+      durante la vida útil del proyecto.
+</p>
+
+<p>
+  Permite comparar 
+  <input type="text" name="respuesta_48" value="<?php echo $respuesta_48; ?>" size="11">
+    transformando sus beneficios en un valor anual constante.
+</p>
+
+<p>
+  <strong>Interpretación:</strong>
+</p>
+
+<ul>
+  <li>Un <input type="text"  value="<?php echo $respuesta_44; ?>" readonly size="4"> 
+  <input type="text" name="respuesta_49" value="<?php echo $respuesta_49; ?>" size="11">  
+    indica que el proyecto genera beneficios económicos.</li>
+  <li>Entre varias alternativas, se elige aquella con el <strong>mayor BAUE</strong>.</li>
+</ul>
+
+    <button type="submit">Enviar</button>
+    <?php echo $verificar_42 ?>
     <?php echo $verificar_43 ?>
-    <?php echo $verificar_44 ?>
-    <hr>
-    <input type="text" name="respuesta_45" value="<?php echo $respuesta_45; ?>" size="41">
-    <p>
-    Los 
-    <input type="text" name="respuesta_46" value="<?php echo $respuesta_46; ?>" size="15">
-      de 
-    <input type="text" name="respuesta_47" value="<?php echo $respuesta_47; ?>" size="25">
-      (i.e., las operaciones) de un
-    <input type="text" name="respuesta_48" value="<?php echo $respuesta_48; ?>" size="8">
-      se 
-    <input type="text" name="respuesta_49" value="<?php echo $respuesta_49; ?>" size="13">
-      la 
-    <input type="text" name="respuesta_50" value="<?php echo $respuesta_50; ?>" size="11">
-      de las 
-    <input type="text" name="respuesta_51" value="<?php echo $respuesta_51; ?>" size="31">
-     .
-    </p>
-     <button type="submit">Enviar</button>
-      <?php echo $verificar_45 ?>
+    <?php echo $verificar_44 ?>  
+    <?php echo $verificar_45 ?>
     <?php echo $verificar_46 ?>
     <?php echo $verificar_47 ?>
     <?php echo $verificar_48 ?>
     <?php echo $verificar_49 ?>
-    <?php echo $verificar_50 ?>
-    <?php echo $verificar_51 ?>
     <hr>
-    <input type="text" name="respuesta_52" value="<?php echo $respuesta_52; ?>" size="31">
-    <p>
-    <input type="text" name="respuesta_53" value="<?php echo $respuesta_53; ?>" size="12">
-      de una 
-    <input type="text" name="respuesta_54" value="<?php echo $respuesta_54; ?>" size="18">
-     , que para un 
-    <input type="text" name="respuesta_55" value="<?php echo $respuesta_55; ?>" size="14">
-     , tiene
-    <input type="text" name="respuesta_56" value="<?php echo $respuesta_56; ?>" size="17">
-      la 
-    <input type="text" name="respuesta_57" value="<?php echo $respuesta_57; ?>" size="17">
-     
-    </p>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_52 ?>
-    <?php echo $verificar_53 ?>
-    <?php echo $verificar_54 ?>
-    <?php echo $verificar_55 ?>
-    <?php echo $verificar_56 ?>
-    <?php echo $verificar_57 ?>
-    <hr>
-    <input type="text" name="respuesta_58" value="<?php echo $respuesta_58; ?>" size="17">
-    <p>
-    Los aspectos 
-    <input type="text" name="respuesta_59" value="<?php echo $respuesta_59; ?>" size="8">
-      y 
-    <input type="text" name="respuesta_60" value="<?php echo $respuesta_60; ?>" size="24">
-      (i.e., las operaciones) deben
-    <input type="text" name="respuesta_61" value="<?php echo $respuesta_61; ?>" size="21">
-      de la 
-    <input type="text" name="respuesta_62" value="<?php echo $respuesta_62; ?>" size="21">
-     .
-    </p>
-    <button type="submit">Enviar</button>
-     <?php echo $verificar_58 ?>
-    <?php echo $verificar_59 ?>
-    <?php echo $verificar_60 ?>
-    <?php echo $verificar_61 ?>
-    <?php echo $verificar_62 ?>
-    <hr>
-    <input type="text" name="respuesta_63" value="<?php echo $respuesta_63; ?>" size="17">
-    <p>
-    Determinación de 
-    <input type="text" name="respuesta_64" value="<?php echo $respuesta_64; ?>" size="21">
-      son 
-    <input type="text" name="respuesta_65" value="<?php echo $respuesta_65; ?>" size="25">
-      en un
-    <input type="text" name="respuesta_66" value="<?php echo $respuesta_66; ?>" size="7">
-     
-    </p>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_63 ?>
-    <?php echo $verificar_64 ?>
-    <?php echo $verificar_65 ?>
-    <?php echo $verificar_66 ?>
-    <hr>
-    <input type="text" name="respuesta_67" value="<?php echo $respuesta_67; ?>" size="15">
-    <p>
-    <input type="text" name="respuesta_68" value="<?php echo $respuesta_68; ?>" size="8">
-      y 
-    <input type="text" name="respuesta_69" value="<?php echo $respuesta_69; ?>" size="8">
-      los 
-    <input type="text" name="respuesta_70" value="<?php echo $respuesta_70; ?>" size="15">
-      de una 
-    <input type="text" name="respuesta_71" value="<?php echo $respuesta_71; ?>" size="8">
-      en un 
-    <input type="text" name="respuesta_72" value="<?php echo $respuesta_72; ?>" size="21">
-     . 
-    </p>
-    <button type="submit">Enviar</button>
-      <?php echo $verificar_67 ?>
-<?php echo $verificar_68 ?>
-<?php echo $verificar_69 ?>
-<?php echo $verificar_70 ?>
-<?php echo $verificar_71 ?>
-<?php echo $verificar_72 ?>
-<hr>
-    <p>
-    La estructura de procesamiento que favorece más la 
-    <input type="text" name="respuesta_73" value="<?php echo $respuesta_73; ?>" size="8">
-      es
-    <input type="text" name="respuesta_74" value="<?php echo $respuesta_74; ?>" size="8">
-    </p>
-
-
  
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_73 ?>
-    <?php echo $verificar_74 ?>
-    <hr>
-    <p>
-    El diseño arquitectónico de software es un proceso complejo. Siguiendo la ecuación de N.
-    Wirth que 
-    <input type="text" name="respuesta_75" value="<?php echo $respuesta_75; ?>" size="8">
-      el software, el principio de diseño 
-    <input type="text" name="respuesta_76" value="<?php echo $respuesta_76; ?>" size="22">
-      de software. es el que más
-    <input type="text" name="respuesta_77" value="<?php echo $respuesta_77; ?>" size="16">
-      por 
-    <input type="text" name="respuesta_78" value="<?php echo $respuesta_78; ?>" size="12">
-      a 
-    <input type="text" name="respuesta_79" value="<?php echo $respuesta_79; ?>" size="18">
-     .
-    </p>
-    <button type="submit">Enviar</button>
-    <?php echo $verificar_75 ?>
-<?php echo $verificar_76 ?>
-<?php echo $verificar_77 ?>
-<?php echo $verificar_78 ?>
-<?php echo $verificar_79 ?>
- <hr>
     <strong>si desea ver las soluciones escribir: mostrar_solucion</strong>
     <br>
     <input type="text" id="mostrar_solucion" name="mostrar_solucion"  value="<?php echo $mostrar_solucion?>">
@@ -1899,7 +2020,7 @@ cometiendo un error
         name="siguiente"
         id="siguiente"
         class="btn btn-primary"
-        href="tercero.php"
+        href="segundo.php"
         role="button"
         width="50px"
         height="50px"
