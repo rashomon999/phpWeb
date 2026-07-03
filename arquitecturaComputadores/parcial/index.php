@@ -1326,7 +1326,7 @@ function ocultarMensaje4() {
 
     
 <div class="seccion izquierda"> 
-
+<h4>jerarquía de memoria</h4>
  <div class="piramide">
 
     <div class="etiqueta-izq">

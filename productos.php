@@ -1,31 +1,23 @@
 <?php include("template/cabecera.php")?>
 
-<?php include("administrador/config/bd.php");
+<?php include("datos_libros.php");
 
-// Modifica esta consulta para filtrar solo productos principales
-$sentenciaSQL = $conexion->prepare("SELECT * FROM libros WHERE categoria = 'principal' ORDER BY nombre ASC");
-$sentenciaSQL->execute();
-$listaLibros = $sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
+$listaLibros = array_filter($libros, function($libro) {
+    return $libro['categoria'] === 'principal';
+});
 
-$links = ["arquitecturaComputadores/Menu.php","compunet/Menu.php",
+usort($listaLibros, function($a, $b) {
+    return strcmp($a['nombre'], $b['nombre']);
+});
 
- 
-"discretas/menu.php", 
-     
-    "Estadistica/Menu.php" 
-    ,"ingesoft/Menu.php",  "Ingles/Menu.php", 
-         "java/Menu.php", "Matematicas/Menu.php", "ModulacionFinanciera/Menu.php" ,"musica/Menu.php", 
-           "scala/Menu.php", "SistemaDatos/Menu.php", "Trading/Menu.php"
-          
-        ];
-
-echo "<p>Consulta SQL: <code>SELECT * FROM libros WHERE categoria = 'principal' ORDER BY nombre ASC;</code></p>";
+echo "<p>Materias principales cargadas sin base de datos.</p>";
 
 // Mensaje si no hay productos
 if(empty($listaLibros)) {
     echo '<div class="alert alert-info">No hay productos principales disponibles</div>';
 }
 ?>
+
 
 <?php foreach($listaLibros as $libro){ ?>
 <div class="col-md-3" style="margin:20px;">
@@ -34,13 +26,12 @@ if(empty($listaLibros)) {
             <h5 class="card-title"><?php echo $libro['nombre']?></h5>
             <img class="card-img-top" style="width:200px; height:150px; object-fit: contain;" src="./img/<?php echo $libro['imagen']?>" alt="<?php echo $libro['nombre']?>">
             <p class="card-text">Ejercicios para mejorar</p>
-            <a href="<?php echo current($links); ?>" class="btn btn-primary">Ver más</a>
+            <a href="<?php echo $libro['link']; ?>" class="btn btn-primary">Ver más</a>
         </div>
     </div>
 </div>
-<?php
-    next($links);
-}?>
+<?php }?>
+
 
 
 
