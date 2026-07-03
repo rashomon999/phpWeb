@@ -1215,7 +1215,7 @@ function ocultarMensaje4() {
 
 <button onmousedown="mostrarMensaje2()" onmouseup="ocultarMensaje2()">Ayuda</button>
     <div id="mensaje2" style="display: none; margin-top: 10px; padding: 10px; background-color: #f0f0f0;">
- 
+    <img src="../../../../img/guia_470.png" alt="">
     </div>
 
 
